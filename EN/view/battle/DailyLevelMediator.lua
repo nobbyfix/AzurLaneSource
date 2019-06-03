@@ -1,0 +1,240 @@
+slot0 = class("DailyLevelMediator", import("..base.ContextMediator"))
+slot0.ON_STAGE = "DailyLevelMediator:ON_STAGE"
+slot0.ON_CHALLENGE = "DailyLevelMediator:ON_CHALLENGE"
+slot0.ON_RESET_CHALLENGE = "DailyLevelMediator:ON_RESET_CHALLENGE"
+slot0.ON_CONTINUE_CHALLENGE = "DailyLevelMediator:ON_CONTINUE_CHALLENGE"
+slot0.ON_CHALLENGE_EDIT_FLEET = "DailyLevelMediator:ON_CHALLENGE_EDIT_FLEET"
+slot0.ON_REQUEST_CHALLENGE = "DailyLevelMediator:ON_REQUEST_CHALLENGE"
+slot0.ON_CHALLENGE_FLEET_CLEAR = "DailyLevelMediator.ON_CHALLENGE_FLEET_CLEAR"
+slot0.ON_CHALLENGE_FLEET_RECOMMEND = "DailyLevelMediator.ON_CHALLENGE_FLEET_RECOMMEND"
+slot0.ON_CHALLENGE_OPEN_DOCK = "DailyLevelMediator:ON_CHALLENGE_OPEN_DOCK"
+slot0.ON_CHALLENGE_OPEN_RANK = "DailyLevelMediator:ON_CHALLENGE_OPEN_RANK"
+
+function slot0.register(slot0)
+	slot0.viewComponent:setDailyCounts(getProxy(DailyLevelProxy).getRawData(slot1))
+
+	slot2 = getProxy(BayProxy)
+
+	slot2:setSelectShipId(nil)
+
+	slot0.ships = slot2:getRawData()
+
+	slot0.viewComponent:setShips(slot0.ships)
+	slot0.viewComponent:updateRes(slot4)
+	slot0:bind(uv0.ON_STAGE, function (slot0, slot1)
+		uv0.dailyLevelId = uv1.contextData.dailyLevelId
+
+		uv1:addSubLayers(Context.New({
+			mediator = PreCombatMediator,
+			viewComponent = PreCombatLayer,
+			data = {
+				stageId = slot1.id,
+				system = SYSTEM_ROUTINE
+			}
+		}))
+	end)
+
+	slot5 = getProxy(ChallengeProxy)
+	slot6 = slot5:getCurrentChallengeInfo()
+
+	slot0.viewComponent:setChallengeInfo(slot5:getCurrentChallengeInfo())
+	slot0:bind(uv0.ON_CHALLENGE, function ()
+		uv0.viewComponent:openChallengeView()
+	end)
+	slot0:bind(uv0.ON_CHALLENGE_EDIT_FLEET, function (slot0, slot1)
+		slot2 = uv0:getCurrentChallengeInfo()
+
+		slot2:setDamageRateID(slot1.damageRateID)
+		slot2:setLevelRateID(slot1.levelRateID)
+		uv0:updateChallenge(slot2)
+		uv1.viewComponent:openChallengeFleetEditView()
+	end)
+	slot0:bind(uv0.ON_CONTINUE_CHALLENGE, function ()
+		uv0:addSubLayers(Context.New({
+			mediator = ChallengePreCombatMediator,
+			viewComponent = ChallengePreCombatLayer,
+			data = {}
+		}))
+	end)
+	slot0:bind(uv0.ON_RESET_CHALLENGE, function ()
+		uv0:sendNotification(GAME.CHALLENGE_RESET)
+	end)
+	slot0:bind(uv0.ON_CHALLENGE_FLEET_CLEAR, function ()
+		uv0:clearEdittingFleet()
+		uv1.viewComponent:flushFleetEditButton()
+	end)
+	slot0:bind(uv0.ON_CHALLENGE_FLEET_RECOMMEND, function ()
+		uv0:recommendChallengeFleet()
+		uv1.viewComponent:flushFleetEditButton()
+	end)
+	slot0:bind(uv0.ON_REQUEST_CHALLENGE, function ()
+		slot1 = uv0:getCurrentChallengeInfo().getGSRateID(slot0)
+
+		for slot5 = 1, 4, 1 do
+			PlayerPrefs.SetInt("challengeShipUID_" .. slot5, nil)
+		end
+
+		for slot5 = 1, #slot0:getShips(), 1 do
+			PlayerPrefs.SetInt("challengeShipUID_" .. slot5, slot0:getShips()[slot5].id)
+		end
+
+		uv1:sendNotification(GAME.CHALLENGE_REQUEST, {
+			shipIDList = slot0:getShips(),
+			levelRate = slot0:getLevelRateID(),
+			damageRate = slot0:getDamageRateID(),
+			gsRate = slot1
+		})
+	end)
+	slot0:bind(uv0.ON_CHALLENGE_OPEN_RANK, function ()
+		uv0:sendNotification(GAME.GO_SCENE, SCENE.BILLBOARD, {
+			page = PowerRank.TYPE_CHALLENGE
+		})
+	end)
+	slot0:bind(uv0.ON_CHALLENGE_OPEN_DOCK, function (slot0, slot1)
+		slot3 = slot1.shipVO
+		slot4 = slot1.fleet
+
+		for slot12, slot13 in pairs(slot7) do
+			if slot13:getTeamType() ~= slot1.teamType or slot1.shipType ~= 0 and not table.contains({
+				slot1.shipType
+			}, slot13:getShipType()) then
+				table.insert({}, slot12)
+			end
+		end
+
+		slot9, slot10 = nil
+
+		if slot3 == nil then
+			slot9 = false
+			slot10 = nil
+		else
+			slot9 = true
+			slot10 = slot3.id
+		end
+
+		uv0.contextData.challenge = true
+		slot19.onShip, slot19.confirmSelect, slot19.onSelected = uv0:getDockCallbackFuncs(slot4, slot3)
+
+		uv0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
+			selectedMin = 0,
+			selectedMax = 1,
+			ignoredIds = slot8,
+			activeShipId = slot10,
+			leastLimitMsg = i18n("ship_formationMediator_leastLimit"),
+			quitTeam = slot9,
+			leftTopInfo = i18n("word_formation"),
+			onShip = slot12,
+			confirmSelect = slot13,
+			onSelected = slot14,
+			flags = {
+				inAdmiral = false,
+				inEvent = false,
+				inChallenge = true,
+				inFleet = false,
+				inClass = false,
+				inTactics = false,
+				inBackyard = false
+			}
+		})
+	end)
+
+	if slot0.contextData.loadBillBoard then
+		slot0.contextData.loadBillBoard = nil
+
+		slot0.viewComponent:emit(uv0.ON_CHALLENGE_OPEN_RANK)
+	end
+end
+
+function slot0.listNotificationInterests(slot0)
+	return {
+		PlayerProxy.UPDATED,
+		ChallengeProxy.PRECOMBAT,
+		ChallengeProxy.CHALLENGE_UPDATED,
+		GAME.CHALLENGE_REQUEST_DONE,
+		GAME.CHALLENGE_RESET_DONE
+	}
+end
+
+function slot0.handleNotification(slot0, slot1)
+	if slot1:getName() == PlayerProxy.UPDATED then
+		slot0.viewComponent:updateRes(slot1:getBody())
+	elseif slot2 == ChallengeProxy.PRECOMBAT then
+		slot0:addSubLayers(Context.New({
+			mediator = ChallengePreCombatMediator,
+			viewComponent = ChallengePreCombatLayer,
+			data = {
+				stageId = stage.id,
+				system = SYSTEM_ROUTINE
+			}
+		}))
+	elseif slot2 == GAME.CHALLENGE_REQUEST_DONE then
+		slot0:addSubLayers(Context.New({
+			mediator = ChallengePreCombatMediator,
+			viewComponent = ChallengePreCombatLayer,
+			data = {}
+		}))
+		slot0.viewComponent:closeChallengeFleetEditView()
+	elseif slot2 == GAME.CHALLENGE_RESET_DONE then
+		slot0.viewComponent:closeChallengeSettingView()
+		slot0.viewComponent:openChallengeSettingView()
+	elseif slot2 == ChallengeProxy.CHALLENGE_UPDATED then
+		slot0.viewComponent:setChallengeInfo(getProxy(ChallengeProxy).getCurrentChallengeInfo(slot4))
+	end
+end
+
+function slot0.getDockCallbackFuncs(slot0, slot1, slot2)
+	slot3 = getProxy(BayProxy)
+	slot6 = getProxy(ChallengeProxy).getCurrentChallengeInfo(slot4).getShips(slot5)
+
+	return function (slot0, slot1)
+		if uv0 and uv0:isSameKind(slot0) then
+			return true
+		end
+
+		for slot7, slot8 in pairs(uv1) do
+			if Challenge.shipTypeFixer(slot7:getShipType()) == Challenge.shipTypeFixer(slot0:getShipType()) then
+				slot3 = 0 + 1
+			end
+
+			if slot0:isSameKind(slot7) then
+				return false, i18n("event_same_type_not_allowed")
+			end
+		end
+
+		if uv0 and Challenge.shipTypeFixer(uv0:getShipType()) == slot2 then
+			slot3 = slot3 - 1
+		end
+
+		if Challenge.SAME_TYPE_LIMIT <= slot3 then
+			return false, i18n("challenge_fleet_type_fail")
+		end
+
+		return true
+	end, function (slot0, slot1, slot2)
+		slot1()
+	end, function (slot0)
+		if uv0 then
+			slot1 = nil
+
+			for slot5, slot6 in ipairs(uv1) do
+				if slot6.id == uv0.id then
+					slot1 = slot5
+
+					break
+				end
+			end
+
+			table.remove(uv1, slot1)
+		end
+
+		if #slot0 > 0 then
+			uv1[#uv1 + 1] = {
+				id = slot0[1]
+			}
+		end
+
+		uv2:updateChallenge(uv3)
+	end
+end
+
+return slot0

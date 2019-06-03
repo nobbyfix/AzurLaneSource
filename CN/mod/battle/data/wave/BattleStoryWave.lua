@@ -1,0 +1,41 @@
+ys = ys or {}
+ys.Battle.BattleStoryWave = class("BattleStoryWave", ys.Battle.BattleWaveInfo)
+ys.Battle.BattleStoryWave.__name = "BattleStoryWave"
+
+function ys.Battle.BattleStoryWave.Ctor(slot0)
+	uv0.super.Ctor(slot0)
+end
+
+function ys.Battle.BattleStoryWave.SetWaveData(slot0, slot1)
+	uv0.super.SetWaveData(slot0, slot1)
+
+	slot0._storyID = slot0._param.id
+end
+
+function ys.Battle.BattleStoryWave.DoWave(slot0)
+	uv0.super.DoWave(slot0)
+
+	slot1 = true
+
+	if slot0._param.progress then
+		slot2 = getProxy(ChapterProxy):getActiveChapter()
+
+		if math.min(slot2.progress + slot2:getConfig("progress_boss"), 100) < slot0._param.progress then
+			slot1 = false
+		end
+	end
+
+	if slot1 then
+		if pg.StoryMgr.GetInstance():Play(slot0._storyID, function (slot0)
+			if slot0 then
+				uv0:doFail()
+			else
+				uv0:doPass()
+			end
+		end) then
+			gcAll()
+		end
+	else
+		slot0:doPass()
+	end
+end
