@@ -2,11 +2,11 @@ slot0 = class("CombatLoadUI", import("..base.BaseUI"))
 slot0._loadObs = nil
 slot0.LOADING_ANIMA_DISTANCE = 1820
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "CombatLoadUI"
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot1 = slot0:findTF("loading")
 	slot0._loadingProgress = slot1:Find("loading_bar/progress"):GetComponent(typeof(Slider))
 	slot0._loadingProgress.value = 0
@@ -18,21 +18,22 @@ function slot0.init(slot0)
 	SetActive(slot0._loadingAnima, true)
 	SetActive(slot0._finishAnima, false)
 	slot0._finishAnima:GetComponent("DftAniEvent").SetEndEvent(slot2, function (slot0)
-		uv0:emit(CombatLoadMediator.FINISH, uv0._loadObs)
+		slot0:emit(CombatLoadMediator.FINISH, slot0._loadObs)
 	end)
 	setImageSprite(slot0._tf:Find("bg"), LoadSprite("loadingbg/bg_" .. math.random(1, BG_RANDOM_RANGE)))
 
 	slot0._tipsText = slot1:Find("tipsText"):GetComponent(typeof(Text))
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0:Preload()
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
+	return
 end
 
-function slot0.Preload(slot0)
+slot0.Preload = function (slot0)
 	PoolMgr.GetInstance():DestroyAllSprite()
 
 	slot0._loadObs = {}
@@ -111,11 +112,11 @@ function slot0.Preload(slot0)
 
 			slot13, slot13 = slot6:getFleetBattleBuffs(slot7)
 
-			uv0.addCommanderBuffRes(slot11)
-			uv0.addChapterBuffRes(slot10)
+			slot0.addCommanderBuffRes(slot11)
+			slot0.addChapterBuffRes(slot10)
 
 			if _.detect(slot6.fleets, function (slot0)
-				return slot0:getFleetType() == FleetType.Submarine and slot0:isValid() and slot0:inHuntingRange(uv0.line.row, uv0.line.column)
+				return slot0:getFleetType() == FleetType.Submarine and slot0:isValid() and slot0:inHuntingRange(slot0.line.row, slot0.line.column)
 			end) then
 				for slot16, slot17 in ipairs(slot12) do
 					table.insert(slot3, slot17)
@@ -123,26 +124,24 @@ function slot0.Preload(slot0)
 
 				slot16, slot16 = slot6:getFleetBattleBuffs(slot9)
 
-				uv0.addCommanderBuffRes(slot14)
-				uv0.addChapterBuffRes(slot13)
+				slot0.addCommanderBuffRes(slot14)
+				slot0.addChapterBuffRes(slot13)
 			end
 		elseif slot0.contextData.system == SYSTEM_HP_SHARE_ACT_BOSS then
-			slot7 = {}
-
 			if getProxy(FleetProxy).getActivityFleets(slot5)[slot0.contextData.actId][slot0.contextData.mainFleetId] then
+				for slot12, slot13 in ipairs(slot8) do
+					table.insert(slot3, slot2:getShipById(slot13))
+				end
+
+				slot0.addCommanderBuffRes(slot7:buildBattleBuffList())
+			end
+
+			if slot6[Fleet.SUBMARINE_FLEET_ID] then
 				for slot13, slot14 in ipairs(slot9) do
 					table.insert(slot3, slot2:getShipById(slot14))
 				end
 
-				uv0.addCommanderBuffRes(slot8:buildBattleBuffList())
-			end
-
-			if slot6[Fleet.SUBMARINE_FLEET_ID] then
-				for slot14, slot15 in ipairs(slot10) do
-					table.insert(slot3, slot2:getShipById(slot15))
-				end
-
-				uv0.addCommanderBuffRes(slot9:buildBattleBuffList())
+				slot0.addCommanderBuffRes(slot8:buildBattleBuffList())
 			end
 		elseif slot0.contextData.system == SYSTEM_SHAM then
 			for slot12, slot13 in ipairs(slot8) do
@@ -150,19 +149,31 @@ function slot0.Preload(slot0)
 			end
 
 			_.each(slot6:getChapterCell(slot7.line.row, slot7.line.column).rival.mainShips, function (slot0)
-				table.insert(uv0, slot0)
+				table.insert(slot0, slot0)
 			end)
 			_.each(slot6.getChapterCell(slot7.line.row, slot7.line.column).rival.vanguardShips, function (slot0)
-				table.insert(uv0, slot0)
+				table.insert(slot0, slot0)
 			end)
 		elseif slot0.contextData.system == SYSTEM_GUILD then
 			for slot12, slot13 in ipairs(slot8) do
 				table.insert(slot3, slot13)
 			end
 		elseif slot0.contextData.system == SYSTEM_CHALLENGE then
-			for slot12, slot13 in ipairs(slot8) do
-				table.insert(slot3, slot13)
+			ships = getProxy(ChallengeProxy).getUserChallengeInfo(slot5, slot0.contextData.mode).getRegularFleet(slot6).getShips(slot7, false)
+
+			for slot11, slot12 in ipairs(ships) do
+				table.insert(slot3, slot12)
 			end
+
+			slot0.addCommanderBuffRes(slot7:buildBattleBuffList())
+
+			ships = slot6:getSubmarineFleet().getShips(slot7, false)
+
+			for slot11, slot12 in ipairs(ships) do
+				table.insert(slot3, slot12)
+			end
+
+			slot0.addCommanderBuffRes(slot7:buildBattleBuffList())
 		elseif slot0.contextData.mainFleetId then
 			for slot11, slot12 in ipairs(slot7) do
 				table.insert(slot3, slot12)
@@ -279,7 +290,7 @@ function slot0.Preload(slot0)
 	slot0._tipsText.text = pg.server_language[math.random(#pg.server_language)].content
 end
 
-function slot0.addCommanderBuffRes(slot0)
+slot0.addCommanderBuffRes = function (slot0)
 	slot1 = ys.Battle.BattleResourceManager:GetInstance()
 
 	for slot5, slot6 in ipairs(slot0) do
@@ -289,7 +300,7 @@ function slot0.addCommanderBuffRes(slot0)
 	end
 end
 
-function slot0.addChapterBuffRes(slot0)
+slot0.addChapterBuffRes = function (slot0)
 	slot1 = ys.Battle.BattleResourceManager:GetInstance()
 
 	for slot5, slot6 in ipairs(slot0) do
@@ -299,15 +310,15 @@ function slot0.addChapterBuffRes(slot0)
 	end
 end
 
-function slot0.StartLoad(slot0, slot1, slot2, slot3)
+slot0.StartLoad = function (slot0, slot1, slot2, slot3)
 	slot0._toLoad[slot3] = 1
 
 	LoadAndInstantiateAsync(slot1, slot2, function (slot0)
-		uv0:LoadFinish(slot0, uv1)
+		slot0:LoadFinish(slot0, slot0.LoadFinish)
 	end)
 end
 
-function slot0.LoadFinish(slot0, slot1, slot2)
+slot0.LoadFinish = function (slot0, slot1, slot2)
 	slot0._loadObs.map = slot1
 	slot0._toLoad.map = nil
 

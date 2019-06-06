@@ -1,24 +1,24 @@
 slot0 = class("GuildMemberLayer", import("..base.BaseUI"))
 
-function slot0.setGuildVO(slot0, slot1)
+slot0.setGuildVO = function (slot0, slot1)
 	slot0.guildVO = slot1
 
 	slot0:setMemberVOs(slot1:getSortMember())
 end
 
-function slot0.setMemberVOs(slot0, slot1)
+slot0.setMemberVOs = function (slot0, slot1)
 	slot0.memberVOs = slot1
 end
 
-function slot0.setPlayerVO(slot0, slot1)
+slot0.setPlayerVO = function (slot0, slot1)
 	slot0.playerVO = slot1
 end
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "GuildMemberUI"
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.Timer = {}
 	slot0.rightPanel = slot0:findTF("right_panel")
 	slot0.rightPanelBlurBg = slot0:findTF("blur_bg", slot0.rightPanel)
@@ -97,11 +97,11 @@ function slot0.init(slot0)
 	})
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0:initMembers()
 	onButton(slot0, slot0.appiontPanel, function ()
-		uv0:closeButtons()
-		uv0:closeAppointPanel()
+		slot0:closeButtons()
+		slot0.closeButtons:closeAppointPanel()
 	end, SFX_PANEL)
 end
 
@@ -126,22 +126,22 @@ slot1 = {
 	}
 }
 
-function slot0.initMembers(slot0)
+slot0.initMembers = function (slot0)
 	pg.UIMgr:GetInstance():LoadingOn()
 
 	slot0.rectRect = slot0.rectView:GetComponent("LScrollRect")
 
-	function slot0.rectRect.onInitItem(slot0)
-		uv0:onInitItem(slot0)
+	slot0.rectRect.onInitItem = function (slot0)
+		slot0:onInitItem(slot0)
 	end
 
-	function slot0.rectRect.onUpdateItem(slot0, slot1)
-		uv0:onUpdateItem(slot0, slot1)
+	slot0.rectRect.onUpdateItem = function (slot0, slot1)
+		slot0:onUpdateItem(slot0, slot1)
 	end
 
-	function slot0.rectRect.onStart()
+	slot0.rectRect.onStart = function ()
 		pg.UIMgr:GetInstance():LoadingOff()
-		uv0:reloadPainting()
+		pg.UIMgr.GetInstance().LoadingOff:reloadPainting()
 	end
 
 	slot0.items = {}
@@ -149,7 +149,7 @@ function slot0.initMembers(slot0)
 	slot0:sortMembers()
 end
 
-function slot0.reloadPainting(slot0)
+slot0.reloadPainting = function (slot0)
 	for slot4, slot5 in pairs(slot0.items) do
 		if slot5.memberVO.id == slot0.memberVOs[1].id then
 			triggerButton(slot5.tf)
@@ -159,18 +159,18 @@ function slot0.reloadPainting(slot0)
 	end
 end
 
-function slot0.createMemberCard(slot0, slot1)
+slot0.createMemberCard = function (slot0, slot1)
 	function slot3(slot0, slot1)
-		if uv0.Timer[slot0] then
-			uv0.Timer[slot0]:Stop()
+		if slot0.Timer[slot0] then
+			slot0.Timer[slot0]:Stop()
 
-			uv0.Timer[slot0] = nil
+			slot0.Timer[slot0] = nil
 		end
 
-		uv0.Timer[slot0] = Timer.New(slot1, 1, -1)
+		slot0.Timer[slot0] = Timer.New(slot1, 1, -1)
 
-		uv0.Timer[slot0]:Start()
-		uv0.Timer[slot0].func()
+		slot0.Timer[slot0]:Start()
+		slot0.Timer[slot0].func()
 	end
 
 	return {
@@ -195,8 +195,8 @@ function slot0.createMemberCard(slot0, slot1)
 		borderTF = ()["tf"]:Find("selected"),
 		bg = ()["tf"]:Find("bg"),
 		update = function (slot0, slot1, slot2, slot3)
-			setActive(uv0.borderTF, slot3)
-			setActive(uv0.bg, not slot3)
+			setActive(slot0.borderTF, slot3)
+			setActive(slot0.bg, not slot3)
 
 			slot0.memberVO = slot1
 
@@ -205,12 +205,12 @@ function slot0.createMemberCard(slot0, slot1)
 				skin_id = slot1.skinId,
 				propose = slot1.proposeTime
 			}).getPainting(slot5), function (slot0)
-				if not IsNil(uv0.iconTF) then
-					uv0.iconTF.sprite = slot0
+				if not IsNil(slot0.iconTF) then
+					slot0.iconTF.sprite = slot0
 				end
 			end)
 
-			uv0.dutyTF.sprite = GetSpriteFromAtlas("dutyicon", slot1.duty)
+			slot0.dutyTF.sprite = GetSpriteFromAtlas("dutyicon", slot1.duty)
 
 			for slot11 = slot0.starsTF.childCount, pg.ship_data_statistics[slot1.icon].star - 1, 1 do
 				cloneTplTo(slot0.starTF, slot0.starsTF)
@@ -232,19 +232,19 @@ function slot0.createMemberCard(slot0, slot1)
 			setActive(slot0.iconCommonTF, not slot5.propose)
 
 			if not slot1:isOnline() then
-				uv0.offLineText.text = getOfflineTimeStamp(slot1.preOnLineTime)
+				slot0.offLineText.text = getOfflineTimeStamp(slot1.preOnLineTime)
 			end
 
-			setActive(uv0.maskTF, slot1.duty == GuildMember.DUTY_COMMANDER and slot2:inKickTime())
+			setActive(slot0.maskTF, slot1.duty == GuildMember.DUTY_COMMANDER and slot2:inKickTime())
 
 			if slot1.duty == GuildMember.DUTY_COMMANDER and slot2.inKickTime() then
-				uv1(slot1.id, function ()
-					if uv0:getKickLeftTime() > 0 then
-						uv1.timerTF.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
+				slot1(slot1.id, function ()
+					if slot0:getKickLeftTime() > 0 then
+						slot1.timerTF.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
 					else
-						uv1.timerTF.text = ""
+						slot1.timerTF.text = ""
 
-						setActive(uv1.maskTF, false)
+						setActive(slot1.maskTF, false)
 					end
 				end)
 			end
@@ -252,23 +252,23 @@ function slot0.createMemberCard(slot0, slot1)
 	}
 end
 
-function slot0.onInitItem(slot0, slot1)
+slot0.onInitItem = function (slot0, slot1)
 	onButton(slot0, slot0:createMemberCard(slot1).tf, function ()
-		setActive(uv0.borderTF, true)
+		setActive(slot0.borderTF, true)
 
-		if uv1.curItemId and uv1.curItemId ~= uv0.memberVO.id and uv1:getItemById(uv1.curItemId) then
+		if slot1.curItemId and slot1.curItemId ~= slot0.memberVO.id and slot1:getItemById(slot1.curItemId) then
 			setActive(slot0.borderTF, false)
 		end
 
-		uv1:loadPainting(uv0.memberVO)
+		slot1:loadPainting(slot0.memberVO)
 
-		uv1.curItemId = uv0.memberVO.id
+		slot1.curItemId = slot0.memberVO.id
 	end, SFX_PANEL)
 
 	slot0.items[slot1] = slot0.createMemberCard(slot1)
 end
 
-function slot0.getItemById(slot0, slot1)
+slot0.getItemById = function (slot0, slot1)
 	for slot5, slot6 in pairs(slot0.items) do
 		if slot6.memberVO.id == slot1 then
 			return slot6
@@ -276,7 +276,7 @@ function slot0.getItemById(slot0, slot1)
 	end
 end
 
-function slot0.loadPainting(slot0, slot1)
+slot0.loadPainting = function (slot0, slot1)
 	slot2 = slot1.duty
 	slot3 = slot0.guildVO:getDutyByMemberId(slot0.playerVO.id)
 
@@ -298,28 +298,28 @@ function slot0.loadPainting(slot0, slot1)
 	end)
 	onToggle(slot0, slot0.infoBtn, function (slot0)
 		if slot0 then
-			uv0.contextData.memberVO = uv1
+			slot0.contextData.memberVO = slot0.contextData
 
-			uv0:emit(GuildMemberMediator.OPEN_DESC_INFO, uv1)
+			slot0:emit(GuildMemberMediator.OPEN_DESC_INFO, slot0.emit)
 		end
 	end, SFX_PANEL)
 	onToggle(slot0, slot0.dutyBtn, function (slot0)
 		if slot0 then
-			if uv0.id == uv1.playerVO.id then
+			if slot0.id == slot1.playerVO.id then
 				return
 			end
 
-			uv1:showAppointPanel(uv0)
+			slot1:showAppointPanel(slot0)
 		end
 	end, SFX_PANEL)
 	onToggle(slot0, slot0.fireBtn, function (slot0)
 		if slot0 then
-			uv0:showFirePanel(uv1)
+			slot0:showFirePanel(slot0.showFirePanel)
 		end
 	end, SFX_PANEL)
 	onToggle(slot0, slot0.impeachBtn, function (slot0)
 		if slot0 then
-			uv0:showImpeachPanel(uv1)
+			slot0:showImpeachPanel(slot0.showImpeachPanel)
 		end
 	end, SFX_PANEL)
 	setActive(slot0.impeachBtn, slot3 == GuildMember.DUTY_DEPUTY_COMMANDER and slot2 == GuildMember.DUTY_COMMANDER and slot1:isLongOffLine())
@@ -336,7 +336,7 @@ slot2 = {
 	"normal"
 }
 
-function slot0.showAppointPanel(slot0, slot1)
+slot0.showAppointPanel = function (slot0, slot1)
 	slot0:openButtons(slot0.appiontPanel)
 
 	slot0.isShowAppoint = true
@@ -345,17 +345,27 @@ function slot0.showAppointPanel(slot0, slot1)
 	setActive(slot0.appiontPanel, true)
 
 	if slot0.selectedToggle then
-		setActive(slot0.selectedToggle:Find("Image"), false)
+		setActive(slot0.selectedToggle:Find("Image3"), false)
 	end
 
+	slot3 = slot0.guildVO:getEnableDuty(slot2, slot1.duty)
 	slot4 = nil
 
-	for slot8, slot9 in ipairs(uv0) do
-		setToggleEnabled(slot10, table.contains(slot0.guildVO:getEnableDuty(slot2, slot1.duty), slot8))
-		onToggle(slot0, slot0.dutyContainer:Find(slot9), function (slot0)
+	for slot8, slot9 in ipairs(slot0) do
+		slot11 = slot0.dutyContainer:Find(slot9).Find(slot10, "Text")
+
+		if slot1.duty == slot8 then
+			setText(slot11, i18n("guild_duty_tip_1"))
+		elseif not table.contains(slot3, slot8) then
+			setText(slot11, i18n("guild_duty_tip_2"))
+		end
+
+		setActive(slot11, not table.contains(slot3, slot8))
+		setToggleEnabled(slot10, table.contains(slot3, slot8))
+		onToggle(slot0, slot10, function (slot0)
 			if slot0 then
-				uv0 = uv1
-				uv2.selectedToggle = uv3
+				slot0 = slot1
+				slot2.selectedToggle = slot3
 			end
 		end, SFX_PANEL)
 	end
@@ -374,8 +384,8 @@ function slot0.showAppointPanel(slot0, slot1)
 		configId = slot1.icon,
 		skin_id = slot1.skinId
 	}).getPainting(slot7), function (slot0)
-		if not IsNil(uv0.iconTF) then
-			uv0.iconTF.sprite = slot0
+		if not IsNil(slot0.iconTF) then
+			slot0.iconTF.sprite = slot0
 		end
 	end)
 
@@ -390,11 +400,11 @@ function slot0.showAppointPanel(slot0, slot1)
 	slot0.levelTF.text = "Lv." .. slot1.level
 
 	onButton(slot0, slot0.confirmBtn, function ()
-		uv0:setDuty(uv1.id, uv2)
+		slot0:setDuty(slot1.id, )
 	end, SFX_CONFIRM)
 end
 
-function slot0.showFirePanel(slot0, slot1)
+slot0.showFirePanel = function (slot0, slot1)
 	slot0:openButtons(slot0.firePanel)
 
 	slot0.isShowFire = true
@@ -410,8 +420,8 @@ function slot0.showFirePanel(slot0, slot1)
 		configId = slot1.icon,
 		skin_id = slot1.skinId
 	}).getPainting(slot3), function (slot0)
-		if not IsNil(uv0.fireiconTF) then
-			uv0.fireiconTF.sprite = slot0
+		if not IsNil(slot0.fireiconTF) then
+			slot0.fireiconTF.sprite = slot0
 		end
 	end)
 
@@ -428,30 +438,30 @@ function slot0.showFirePanel(slot0, slot1)
 	slot0.firelevelTF.text = "Lv." .. slot1.level
 
 	onButton(slot0, slot0.fireconfirmBtn, function ()
-		if uv0.id == uv1.playerVO.id then
+		if slot0.id == slot1.playerVO.id then
 			return
 		end
 
 		pg.MsgboxMgr:GetInstance():ShowMsgBox({
 			content = i18n("guild_fire_tip"),
 			onYes = function ()
-				uv0:emit(GuildMemberMediator.FIRE, uv1.id)
-				uv0:closeButtons()
-				uv0:closeFirePanel()
+				slot0:emit(GuildMemberMediator.FIRE, slot1.id)
+				slot0.emit:closeButtons()
+				slot0.emit.closeButtons:closeFirePanel()
 			end
 		})
 	end, SFX_CONFIRM)
 	onButton(slot0, slot0.firecancelBtn, function ()
-		uv0:closeButtons()
-		uv0:closeFirePanel()
+		slot0:closeButtons()
+		slot0.closeButtons:closeFirePanel()
 	end, SFX_CONFIRM)
 	onButton(slot0, slot0.firePanel, function ()
-		uv0:closeButtons()
-		uv0:closeFirePanel()
+		slot0:closeButtons()
+		slot0.closeButtons:closeFirePanel()
 	end, SFX_CONFIRM)
 end
 
-function slot0.showImpeachPanel(slot0, slot1)
+slot0.showImpeachPanel = function (slot0, slot1)
 	slot0:openButtons(slot0.impeachPanel)
 
 	slot0.isShowImpeach = true
@@ -467,8 +477,8 @@ function slot0.showImpeachPanel(slot0, slot1)
 		configId = slot1.icon,
 		skin_id = slot1.skinId
 	}).getPainting(slot3), function (slot0)
-		if not IsNil(uv0.impeachiconTF) then
-			uv0.impeachiconTF.sprite = slot0
+		if not IsNil(slot0.impeachiconTF) then
+			slot0.impeachiconTF.sprite = slot0
 		end
 	end)
 
@@ -485,26 +495,26 @@ function slot0.showImpeachPanel(slot0, slot1)
 	slot0.impeachlevelTF.text = "Lv." .. slot1.level
 
 	onButton(slot0, slot0.impeachconfirmBtn, function ()
-		if uv0.id == uv1.playerVO.id then
+		if slot0.id == slot1.playerVO.id then
 			return
 		end
 
 		pg.MsgboxMgr:GetInstance():ShowMsgBox({
 			content = i18n("guild_impeach_tip"),
 			onYes = function ()
-				uv0:emit(GuildMemberMediator.IMPEACH, uv1.id)
-				uv0:closeButtons()
-				uv0:closeimpeachPanel()
+				slot0:emit(GuildMemberMediator.IMPEACH, slot1.id)
+				slot0.emit:closeButtons()
+				slot0.emit.closeButtons:closeimpeachPanel()
 			end
 		})
 	end, SFX_CONFIRM)
 	onButton(slot0, slot0.impeachcancelBtn, function ()
-		uv0:closeButtons()
-		uv0:closeimpeachPanel()
+		slot0:closeButtons()
+		slot0.closeButtons:closeimpeachPanel()
 	end, SFX_CONFIRM)
 	onButton(slot0, slot0.impeachPanel, function ()
-		uv0:closeButtons()
-		uv0:closeimpeachPanel()
+		slot0:closeButtons()
+		slot0.closeButtons:closeimpeachPanel()
 	end, SFX_CONFIRM)
 end
 
@@ -554,7 +564,7 @@ slot3 = {
 	}
 }
 
-function slot0.showInfoPanel(slot0, slot1)
+slot0.showInfoPanel = function (slot0, slot1)
 	slot0:openButtons(slot0.infoPanel)
 
 	slot0.isShowinfo = true
@@ -570,8 +580,8 @@ function slot0.showInfoPanel(slot0, slot1)
 		configId = slot0.contextData.memberVO.icon,
 		skin_id = slot0.contextData.memberVO.skinId
 	}).getPainting(slot4), function (slot0)
-		if not IsNil(uv0.infoiconTF) then
-			uv0.infoiconTF.sprite = slot0
+		if not IsNil(slot0.infoiconTF) then
+			slot0.infoiconTF.sprite = slot0
 		end
 	end)
 
@@ -587,13 +597,15 @@ function slot0.showInfoPanel(slot0, slot1)
 
 	slot0.infolevelTF.text = "Lv." .. slot2.level
 
-	for slot10, slot11 in ipairs(uv0) do
+	for slot10, slot11 in ipairs(slot0) do
 		slot12 = slot0.resumeInfo:GetChild(slot10 - 1)
 
 		setText(slot12:Find("tag"), slot11.tag)
 
+		slot13 = slot12:Find("tag (1)")
+
 		if slot11.type == 1 then
-			setText(slot12:Find("tag (1)"), slot1[slot11.value])
+			setText(slot13, slot1[slot11.value])
 		elseif slot11.type == 2 then
 			setText(slot13, string.format("%0.2f", math.max(slot1[slot11.value[2]], 0) / math.max(slot1[slot11.value[1]], 1) * 100) .. "%")
 		elseif slot11.type == 3 then
@@ -602,33 +614,33 @@ function slot0.showInfoPanel(slot0, slot1)
 	end
 
 	onButton(slot0, slot0.infoPanel, function ()
-		uv0:closeButtons()
-		uv0:closeInfoPanel()
+		slot0:closeButtons()
+		slot0.closeButtons:closeInfoPanel()
 	end, SFX_CONFIRM)
 end
 
-function slot0.closeInfoPanel(slot0)
+slot0.closeInfoPanel = function (slot0)
 	slot0.isShowinfo = nil
 
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.infoPanel, slot0._tf)
 	setActive(slot0.infoPanel, false)
 end
 
-function slot0.closeimpeachPanel(slot0)
+slot0.closeimpeachPanel = function (slot0)
 	slot0.isShowImpeach = nil
 
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.impeachPanel, slot0._tf)
 	setActive(slot0.impeachPanel, false)
 end
 
-function slot0.closeFirePanel(slot0)
+slot0.closeFirePanel = function (slot0)
 	slot0.isShowFire = nil
 
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.firePanel, slot0._tf)
 	setActive(slot0.firePanel, false)
 end
 
-function slot0.closeAppointPanel(slot0)
+slot0.closeAppointPanel = function (slot0)
 	slot0.isShowAppoint = nil
 
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.appiontPanel, slot0._tf)
@@ -636,23 +648,23 @@ function slot0.closeAppointPanel(slot0)
 	slot0:closeButtons()
 end
 
-function slot0.openButtons(slot0, slot1)
+slot0.openButtons = function (slot0, slot1)
 	slot0:closePrevPanel()
 	setParent(slot0.buttonsPanel, slot1)
 	setAnchoredPosition(slot0.buttonsPanel, Vector3(775, 285, 0))
 end
 
-function slot0.closeButtons(slot0)
+slot0.closeButtons = function (slot0)
 	slot0.toggleGroup:SetAllTogglesOff()
 	setParent(slot0.buttonsPanel, slot0._tf)
 	setAnchoredPosition(slot0.buttonsPanel, Vector3(-641, -380, 0))
 end
 
-function slot0.setDuty(slot0, slot1, slot2)
+slot0.setDuty = function (slot0, slot1, slot2)
 	slot0:emit(GuildMemberMediator.SET_DUTY, slot1, slot2)
 end
 
-function slot0.onUpdateItem(slot0, slot1, slot2)
+slot0.onUpdateItem = function (slot0, slot1, slot2)
 	if not slot0.items[slot2] then
 		slot0:onInitItem(slot2)
 
@@ -662,9 +674,9 @@ function slot0.onUpdateItem(slot0, slot1, slot2)
 	slot3:update(slot0.memberVOs[slot1 + 1], slot0.guildVO, slot0.memberVOs[slot1 + 1].id == slot0.curItemId)
 end
 
-function slot0.sortMembers(slot0)
+slot0.sortMembers = function (slot0)
 	if not slot0.sortIndex then
-		slot0.sortIndex = uv0[3]
+		slot0.sortIndex = slot0[3]
 	end
 
 	slot1 = slot0.sortIndex[1]
@@ -672,22 +684,22 @@ function slot0.sortMembers(slot0)
 
 	if slot0.selectAsc then
 		table.sort(slot0.memberVOs, function (slot0, slot1)
-			if slot0[uv0[1]] == slot1[uv0[1]] then
+			if slot0[slot0[1]] == slot1[slot0[1]] then
 				return slot1.duty < slot0.duty
-			elseif uv0[1] == "duty" then
-				return slot1[uv0[1]] < slot0[uv0[1]]
+			elseif slot0[1] == "duty" then
+				return slot1[slot0[1]] < slot0[slot0[1]]
 			else
-				return slot0[uv0[1]] < slot1[uv0[1]]
+				return slot0[slot0[1]] < slot1[slot0[1]]
 			end
 		end)
 	else
 		table.sort(slot0.memberVOs, function (slot0, slot1)
-			if slot0[uv0[1]] == slot1[uv0[1]] then
+			if slot0[slot0[1]] == slot1[slot0[1]] then
 				return slot0.duty < slot1.duty
-			elseif uv0[1] == "duty" then
-				return slot0[uv0[1]] < slot1[uv0[1]]
+			elseif slot0[1] == "duty" then
+				return slot0[slot0[1]] < slot1[slot0[1]]
 			else
-				return slot1[uv0[1]] < slot0[uv0[1]]
+				return slot1[slot0[1]] < slot0[slot0[1]]
 			end
 		end)
 	end
@@ -695,7 +707,7 @@ function slot0.sortMembers(slot0)
 	slot0.rectRect:SetTotalCount(#slot0.memberVOs, 0)
 end
 
-function slot0.showSortPanel(slot0)
+slot0.showSortPanel = function (slot0)
 	slot0.isShowSortPanel = true
 
 	setActive(slot0.sortPanel, true)
@@ -705,20 +717,20 @@ function slot0.showSortPanel(slot0)
 	end
 end
 
-function slot0.closeSortPanel(slot0)
+slot0.closeSortPanel = function (slot0)
 	slot0.isShowSortPanel = nil
 
 	setActive(slot0.sortPanel, false)
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	if not slot0:closePrevPanel() then
 		playSoundEffect(SFX_CANCEL)
-		slot0:emit(uv0.ON_BACK)
+		slot0:emit(slot0.ON_BACK)
 	end
 end
 
-function slot0.closePrevPanel(slot0)
+slot0.closePrevPanel = function (slot0)
 	if slot0.isShowAppoint then
 		slot0:closeAppointPanel()
 	elseif slot0.isShowFire then
@@ -734,7 +746,7 @@ function slot0.closePrevPanel(slot0)
 	return true
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	pg.UIMgr.GetInstance():UnOverlayPanel(slot0.rightPanel, slot0._tf)
 	slot0:closeAppointPanel()
 	slot0:closeFirePanel()

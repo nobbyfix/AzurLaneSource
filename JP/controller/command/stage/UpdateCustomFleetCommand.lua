@@ -9,11 +9,13 @@ class("UpdateCustomFleetCommand", pm.SimpleCommand).execute = function (slot0, s
 	for slot16, slot17 in ipairs(slot10) do
 		slot18 = {}
 		slot19 = {}
+		slot20 = {}
 		slot21 = {}
 		slot22 = {}
 
 		for slot26, slot27 in ipairs(slot17) do
 			if pg.ship_data_by_type[slot6[slot27]:getShipType()].team_type == TeamType.Vanguard then
+				slot20[#slot20 + 1] = slot27
 			elseif slot29 == TeamType.Main then
 				slot19[#slot19 + 1] = slot27
 			elseif slot29 == TeamType.Submarine then
@@ -23,8 +25,8 @@ class("UpdateCustomFleetCommand", pm.SimpleCommand).execute = function (slot0, s
 
 		for slot27, slot28 in pairs(slot23) do
 			table.insert(slot22, {
-				id = slot27,
-				commanderid = slot28
+				pos = slot27,
+				id = slot28
 			})
 		end
 
@@ -41,8 +43,8 @@ class("UpdateCustomFleetCommand", pm.SimpleCommand).execute = function (slot0, s
 		elite_fleet_list = slot12
 	}, 13108, function (slot0)
 		if slot0.result == 0 then
-			if uv0 ~= nil then
-				uv0()
+			if slot0 ~= nil then
+				slot0()
 			end
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("update_custom_fleet", slot0.result))

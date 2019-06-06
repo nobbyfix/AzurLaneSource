@@ -11,7 +11,7 @@ slot1 = {
 	[ActivityConst.MONTH_SIGN_ACTIVITY_ID] = {
 		uiName = "monthsignpage",
 		className = "MonthSignPage",
-		uiName2 = "monthSignPage_special"
+		uiName2 = "monthsignpage_special"
 	},
 	[ActivityConst.CHARGE_AWARD_ACTIVITY_ID] = {
 		className = "ChargeAwardPage",
@@ -52,15 +52,15 @@ slot1 = {
 }
 slot2 = {}
 
-function slot0.preload(slot0, slot1)
+slot0.preload = function (slot0, slot1)
 	slot1()
 end
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "ActivityMainUI"
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	if slot0.bonusWindow and isActive(slot0.bonusWindow._tf) then
 		slot0.bonusWindow:Hide()
 
@@ -73,12 +73,12 @@ function slot0.onBackPressed(slot0)
 		return
 	end
 
-	slot0:emit(uv0.ON_BACK_PRESSED)
+	slot0:emit(slot0.ON_BACK_PRESSED)
 end
 
 slot3 = nil
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.btnBack = slot0:findTF("blur_panel/adapt/top/back_btn")
 	slot0.pageContainer = slot0:findTF("pages")
 	slot0.tabs = slot0:findTF("scroll/viewport/content")
@@ -88,13 +88,16 @@ function slot0.init(slot0)
 	setActive(slot0.tab, false)
 
 	slot0.shareData = ActivityShareData.New()
-	uv0 = require("GameCfg.activity.EntranceData")
-	slot0.pageDic = {}
+	slot2 = tonumber(pg.TimeMgr.GetInstance():DescClientTime(slot1, "%m"))
+	slot3 = pg.activity_template[ActivityConst.MONTH_SIGN_ACTIVITY_ID].config_client[1]
+	require("GameCfg.activity.EntranceData").pageDic = {}
 
-	for slot7, slot8 in pairs(uv1) do
+	for slot7, slot8 in pairs(slot1) do
 		if getProxy(ActivityProxy):getActivityById(slot7) and not slot9:isEnd() and slot9:isShow() then
-			if slot7 == ActivityConst.MONTH_SIGN_ACTIVITY_ID and tonumber(pg.TimeMgr.GetInstance():DescClientTime(slot1, "%m")) == pg.activity_template[ActivityConst.MONTH_SIGN_ACTIVITY_ID].config_client[1] then
-				import("view.activity.subPages." .. slot8.className).New(slot0.pageContainer, slot0.event, slot0.contextData):SetUIName(slot8.uiName2)
+			slot11 = import("view.activity.subPages." .. slot8.className).New(slot0.pageContainer, slot0.event, slot0.contextData)
+
+			if slot7 == ActivityConst.MONTH_SIGN_ACTIVITY_ID and slot2 == slot3 then
+				slot11:SetUIName(slot8.uiName2)
 			else
 				slot11:SetUIName(slot8.uiName)
 			end
@@ -106,26 +109,26 @@ function slot0.init(slot0)
 	end
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	onButton(slot0, slot0.btnBack, function ()
-		uv0:emit(uv1.ON_BACK)
+		slot0:emit(slot1.ON_BACK)
 	end, SOUND_BACK)
 	slot0:updateEntrances()
 end
 
-function slot0.setPlayer(slot0, slot1)
+slot0.setPlayer = function (slot0, slot1)
 	slot0.shareData:SetPlayer(slot1)
 end
 
-function slot0.setFlagShip(slot0, slot1)
+slot0.setFlagShip = function (slot0, slot1)
 	slot0.shareData:SetFlagShip(slot1)
 end
 
-function slot0.setAllActivity(slot0, slot1)
+slot0.setAllActivity = function (slot0, slot1)
 	slot0.allActivity = slot1
 end
 
-function slot0.updateTaskLayers(slot0)
+slot0.updateTaskLayers = function (slot0)
 	if not slot0.activity then
 		return
 	end
@@ -133,7 +136,7 @@ function slot0.updateTaskLayers(slot0)
 	slot0:updateActivity(slot0.activity)
 end
 
-function slot0.setActivities(slot0, slot1)
+slot0.setActivities = function (slot0, slot1)
 	slot0.activities = slot1 or {}
 	slot0.activity = nil
 
@@ -147,12 +150,12 @@ function slot0.setActivities(slot0, slot1)
 	slot0:flushTabs()
 end
 
-function slot0.updateActivity(slot0, slot1)
+slot0.updateActivity = function (slot0, slot1)
 	slot0.allActivity[slot1.id] = slot1
 
 	if not slot1:isShow() then
-		if uv0[slot1.id] then
-			slot1 = getProxy(ActivityProxy):getActivityById(uv0[slot1.id])
+		if slot0[slot1.id] then
+			slot1 = getProxy(ActivityProxy):getActivityById(slot0[slot1.id])
 		else
 			return
 		end
@@ -170,16 +173,16 @@ function slot0.updateActivity(slot0, slot1)
 	end
 end
 
-function slot0.updateEntrances(slot0)
+slot0.updateEntrances = function (slot0)
 	slot0.entranceList:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
 			slot4 = "empty"
 
 			removeOnButton(slot2)
 
-			if uv0[slot1 + 1] and table.getCount(slot3) ~= 0 and slot3.isShow() then
-				onButton(uv1, slot2, function ()
-					uv0:emit(uv1.event, uv1.data[1], uv1.data[2])
+			if slot0[slot1 + 1] and table.getCount(slot3) ~= 0 and slot3.isShow() then
+				onButton(slot1, slot2, function ()
+					slot0:emit(slot1.event, slot1.data[1], slot1.data[2])
 				end, SFX_PANEL)
 
 				slot4 = slot3.banner
@@ -188,30 +191,30 @@ function slot0.updateEntrances(slot0)
 			LoadImageSpriteAsync("activitybanner/" .. slot4, slot2)
 		end
 	end)
-	slot0.entranceList:align(math.max(#_.select(uv0, function (slot0)
+	slot0.entranceList:align(math.max(#_.select(slot0, function (slot0)
 		return slot0.isShow and slot0.isShow()
 	end), 5))
 end
 
-function slot0.flushTabs(slot0)
+slot0.flushTabs = function (slot0)
 	if not slot0.tabsList then
 		slot0.tabsList = UIItemList.New(slot0.tabs, slot0.tab)
 
 		slot0.tabsList:make(function (slot0, slot1, slot2)
 			if slot0 == UIItemList.EventUpdate then
-				if uv0.pageDic[uv0.activities[slot1 + 1].id] ~= nil then
+				if slot0.pageDic[slot0.activities[slot1 + 1].id] ~= nil then
 					if slot3:getConfig("title_res_tag") then
-						setImageSprite(uv0:findTF("off/text", slot2), GetSpriteFromAtlas("ui/activityui_atlas", slot5 .. "_text") or GetSpriteFromAtlas("ui/activityui_atlas", "activity_text"), true)
-						setImageSprite(uv0:findTF("on/text", slot2), GetSpriteFromAtlas("ui/activityui_atlas", slot5 .. "_text_selected") or GetSpriteFromAtlas("ui/activityui_atlas", "activity_text_selected"), true)
-						setActive(uv0:findTF("red", slot2), slot3:readyToAchieve())
-						onToggle(uv0, slot2, function (slot0)
+						setImageSprite(slot0:findTF("off/text", slot2), GetSpriteFromAtlas("ui/activityui_atlas", slot5 .. "_text") or GetSpriteFromAtlas("ui/activityui_atlas", "activity_text"), true)
+						setImageSprite(slot0:findTF("on/text", slot2), GetSpriteFromAtlas("ui/activityui_atlas", slot5 .. "_text_selected") or GetSpriteFromAtlas("ui/activityui_atlas", "activity_text_selected"), true)
+						setActive(slot0:findTF("red", slot2), slot3:readyToAchieve())
+						onToggle(slot0, slot2, function (slot0)
 							if slot0 then
-								uv0:selectActivity(uv1.id)
+								slot0:selectActivity(slot1.id)
 							end
 						end, SFX_PANEL)
 					else
-						onToggle(uv0, slot2, function (slot0)
-							uv0:loadActivityPanel(slot0, uv1)
+						onToggle(slot0, slot2, function (slot0)
+							slot0:loadActivityPanel(slot0, slot0.loadActivityPanel)
 						end, SFX_PANEL)
 					end
 				end
@@ -222,9 +225,9 @@ function slot0.flushTabs(slot0)
 	slot0.tabsList:align(#slot0.activities)
 end
 
-function slot0.selectActivity(slot0, slot1)
+slot0.selectActivity = function (slot0, slot1)
 	if (_.detect(slot0.activities, function (slot0)
-		return slot0.id == uv0
+		return slot0.id == slot0
 	end) or slot0.activities[1]) and (not slot0.activity or slot0.activity.id ~= slot2.id) then
 		slot0.pageDic[slot2.id].Load(slot3)
 		slot0.pageDic[slot2.id].ActionInvoke(slot3, "Flush", slot2)
@@ -241,11 +244,11 @@ function slot0.selectActivity(slot0, slot1)
 	end
 end
 
-function slot0.verifyTabs(slot0)
+slot0.verifyTabs = function (slot0)
 	triggerToggle(slot0.tabs:GetChild(table.indexof(slot0.activities, slot0.activity) - 1), true)
 end
 
-function slot0.loadActivityPanel(slot0, slot1, slot2)
+slot0.loadActivityPanel = function (slot0, slot1, slot2)
 	slot4 = nil
 
 	if slot2:getConfig("type") == ActivityConst.ACTIVITY_TYPE_HITMONSTERNIAN then
@@ -264,33 +267,33 @@ function slot0.loadActivityPanel(slot0, slot1, slot2)
 	end
 end
 
-function slot0.getBonusWindow(slot0, slot1)
+slot0.getBonusWindow = function (slot0, slot1)
 	if not slot0:findTF("bonusWindow") then
 		PoolMgr.GetInstance():GetUI("ActivitybonusWindow", true, function (slot0)
-			SetParent(slot0, uv0._tf, false)
+			SetParent(slot0, slot0._tf, false)
 
-			slot0.name = uv1
+			slot0.name = SetParent
 
-			uv2(slot0)
+			slot0(slot0)
 		end)
 	else
 		slot1(slot3)
 	end
 end
 
-function slot0.ShowBonusWindow(slot0, slot1)
+slot0.ShowBonusWindow = function (slot0, slot1)
 	if not slot0.bonusWindow then
 		slot0:getBonusWindow(function (slot0)
-			uv0.bonusWindow = PtAwardWindow.New(tf(slot0), uv0)
+			slot0.bonusWindow = PtAwardWindow.New(tf(slot0), slot0)
 
-			uv0.bonusWindow:Show(uv1)
+			slot0.bonusWindow:Show(slot0.bonusWindow.Show)
 		end)
 	else
 		slot0.bonusWindow:Show(slot1)
 	end
 end
 
-function slot0.HideBonusWindow(slot0)
+slot0.HideBonusWindow = function (slot0)
 	if not slot0.bonusWindow then
 		return
 	end
@@ -298,19 +301,19 @@ function slot0.HideBonusWindow(slot0)
 	slot0.bonusWindow:Hide()
 end
 
-function slot0.ShowTaskBoundsWindow(slot0, slot1)
+slot0.ShowTaskBoundsWindow = function (slot0, slot1)
 	if not slot0.taskBoundsWindow then
 		slot0:getBonusWindow(function (slot0)
-			uv0.taskBoundsWindow = TaskAwardWindow.New(tf(slot0), uv0)
+			slot0.taskBoundsWindow = TaskAwardWindow.New(tf(slot0), slot0)
 
-			uv0.taskBoundsWindow:Show(uv1)
+			slot0.taskBoundsWindow:Show(slot0.taskBoundsWindow.Show)
 		end)
 	else
 		slot0.taskBoundsWindow:Show(slot1)
 	end
 end
 
-function slot0.HideTaskBoundsWindow(slot0)
+slot0.HideTaskBoundsWindow = function (slot0)
 	if not slot0.taskBoundsWindow then
 		return
 	end
@@ -318,19 +321,19 @@ function slot0.HideTaskBoundsWindow(slot0)
 	slot0.taskBoundsWindow:Hide()
 end
 
-function slot0.ShowReturnerBoundsWindow(slot0, slot1)
+slot0.ShowReturnerBoundsWindow = function (slot0, slot1)
 	if not slot0.returnerAwardWindow then
 		slot0:getBonusWindow(function (slot0)
-			uv0.returnerAwardWindow = ReturnerAwardWindow.New(tf(slot0), uv0)
+			slot0.returnerAwardWindow = ReturnerAwardWindow.New(tf(slot0), slot0)
 
-			uv0.returnerAwardWindow:Show(uv1)
+			slot0.returnerAwardWindow:Show(slot0.returnerAwardWindow.Show)
 		end)
 	else
 		slot0.returnerAwardWindow:Show(slot1)
 	end
 end
 
-function slot0.HideReturnerAwardWindow(slot0)
+slot0.HideReturnerAwardWindow = function (slot0)
 	if not slot0.returnerAwardWindow then
 		return
 	end
@@ -338,7 +341,7 @@ function slot0.HideReturnerAwardWindow(slot0)
 	slot0.returnerAwardWindow:Hide()
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	slot0.shareData = nil
 
 	for slot4, slot5 in pairs(slot0.pageDic) do

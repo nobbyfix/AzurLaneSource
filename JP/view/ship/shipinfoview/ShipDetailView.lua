@@ -1,15 +1,15 @@
 slot0 = class("ShipDetailView", import("...base.BaseSubView"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "ShipDetailView"
 end
 
-function slot0.OnInit(slot0)
+slot0.OnInit = function (slot0)
 	slot0:InitDetail()
 	slot0:InitEvent()
 end
 
-function slot0.InitDetail(slot0)
+slot0.InitDetail = function (slot0)
 	slot0.mainPanel = slot0._parentTf.parent
 	slot0.detailPanel = slot0._tf
 	slot0.attrs = slot0.detailPanel:Find("attrs")
@@ -63,67 +63,73 @@ function slot0.InitDetail(slot0)
 	slot0.onSelected = false
 end
 
-function slot0.InitEvent(slot0)
+slot0.InitEvent = function (slot0)
 	onButton(slot0, slot0.fashionToggle, function (slot0)
-		uv0:emit(ShipViewConst.SWITCH_TO_PAGE, ShipViewConst.PAGE.FASHION)
+		slot0:emit(ShipViewConst.SWITCH_TO_PAGE, ShipViewConst.PAGE.FASHION)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.propertyIcons, function ()
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			type = MSGBOX_TYPE_HELP,
 			helps = pg.gametip.help_shipinfo_attr.tip,
 			onClose = function ()
+				return
 			end
 		})
 	end)
 	onToggle(slot0, slot0.commonTagToggle, function (slot0)
-		if uv0:GetShipVO().preferenceTag == Ship.PREFERENCE_TAG_COMMON ~= slot0 then
-			uv0:emit(ShipMainMediator.ON_TAG, uv0:GetShipVO().id, (slot1 ~= Ship.PREFERENCE_TAG_COMMON or Ship.PREFERENCE_TAG_NONE) and Ship.PREFERENCE_TAG_COMMON)
+		if slot0:GetShipVO().preferenceTag == Ship.PREFERENCE_TAG_COMMON ~= slot0 then
+			slot0:emit(ShipMainMediator.ON_TAG, slot0:GetShipVO().id, (slot1 ~= Ship.PREFERENCE_TAG_COMMON or Ship.PREFERENCE_TAG_NONE) and Ship.PREFERENCE_TAG_COMMON)
 		end
 	end)
 	onButton(slot0, slot0.lockBtn, function ()
-		uv0:emit(ShipMainMediator.ON_LOCK, {
-			uv0:GetShipVO().id
-		}, uv0:GetShipVO().LOCK_STATE_LOCK)
+		slot0:emit(ShipMainMediator.ON_LOCK, {
+			slot0:GetShipVO().id
+		}, slot0:GetShipVO().LOCK_STATE_LOCK)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.unlockBtn, function ()
-		uv0:emit(ShipMainMediator.ON_LOCK, {
-			uv0:GetShipVO().id
-		}, uv0:GetShipVO().LOCK_STATE_UNLOCK)
+		slot0:emit(ShipMainMediator.ON_LOCK, {
+			slot0:GetShipVO().id
+		}, slot0:GetShipVO().LOCK_STATE_UNLOCK)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.viewBtn, function ()
 		Input.multiTouchEnabled = true
 
-		uv0:emit(ShipViewConst.PAINT_VIEW, true)
+		Input:emit(ShipViewConst.PAINT_VIEW, true)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.evaluationBtn, function ()
-		uv0:emit(ShipMainMediator.OPEN_EVALUATION, uv0:GetShipVO():getGroupId(), uv0:GetShipVO():isActivityNpc())
+		slot0:emit(ShipMainMediator.OPEN_EVALUATION, slot0:GetShipVO():getGroupId(), slot0:GetShipVO():isActivityNpc())
 	end, SFX_PANEL)
 	onButton(slot0, slot0.profileBtn, function ()
-		uv0:emit(ShipMainMediator.OPEN_SHIPPROFILE, uv0:GetShipVO():getGroupId(), uv0:GetShipVO():isRemoulded())
+		slot0:emit(ShipMainMediator.OPEN_SHIPPROFILE, slot0:GetShipVO():getGroupId(), slot0:GetShipVO():isRemoulded())
 	end, SFX_PANEL)
 	onButton(slot0, slot0.intimacyTF, function ()
-		if uv0:GetShipVO():isActivityNpc() then
+		if slot0:GetShipVO():isActivityNpc() then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("npc_propse_tip"))
 
 			return
 		end
 
-		uv0:emit(ShipViewConst.HIDE_SHIP_WORD)
-		uv0:emit(ShipMainMediator.PROPOSE, uv0:GetShipVO().id, function ()
+		if LOCK_PROPOSE then
+			return
+		end
+
+		slot0:emit(ShipViewConst.HIDE_SHIP_WORD)
+		slot0.emit:emit(ShipMainMediator.PROPOSE, slot0:GetShipVO().id, function ()
+			return
 		end)
 	end)
 	onButton(slot0, slot0.equipments, function ()
-		uv0:emit(ShipViewConst.SWITCH_TO_PAGE, ShipViewConst.PAGE.EQUIPMENT)
+		slot0:emit(ShipViewConst.SWITCH_TO_PAGE, ShipViewConst.PAGE.EQUIPMENT)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.showRecordBtn, function ()
-		if not uv0.isShowRecord then
-			uv0:displayRecordPanel()
+		if not slot0.isShowRecord then
+			slot0:displayRecordPanel()
 		else
-			uv0:CloseRecordPanel()
+			slot0:CloseRecordPanel()
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.unloadAllBtn, function ()
-		slot0, slot1 = Ship.canModifyShip(uv0:GetShipVO())
+		slot0, slot1 = Ship.canModifyShip(slot0:GetShipVO())
 
 		if not slot0 then
 			pg.TipsMgr:GetInstance():ShowTips(slot1)
@@ -131,18 +137,18 @@ function slot0.InitEvent(slot0)
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = i18n("ship_unequip_all_tip"),
 				onYes = function ()
-					uv0:emit(ShipMainMediator.UNEQUIP_FROM_SHIP_ALL, uv0:GetShipVO().id)
+					slot0:emit(ShipMainMediator.UNEQUIP_FROM_SHIP_ALL, slot0:GetShipVO().id)
 				end
 			})
 		end
 	end, SFX_PANEL)
 end
 
-function slot0.SetShareData(slot0, slot1)
+slot0.SetShareData = function (slot0, slot1)
 	slot0.shareData = slot1
 end
 
-function slot0.GetShipVO(slot0)
+slot0.GetShipVO = function (slot0)
 	if slot0.shareData and slot0.shareData.shipVO then
 		return slot0.shareData.shipVO
 	end
@@ -150,9 +156,11 @@ function slot0.GetShipVO(slot0)
 	return nil
 end
 
-function slot0.OnSelected(slot0, slot1)
+slot0.OnSelected = function (slot0, slot1)
+	slot2 = pg.UIMgr.GetInstance()
+
 	if slot1 then
-		pg.UIMgr.GetInstance():OverlayPanelPB(slot0._parentTf, {
+		slot2:OverlayPanelPB(slot0._parentTf, {
 			pbList = {
 				slot0.detailPanel:Find("attrs"),
 				slot0.detailPanel:Find("equipments")
@@ -167,7 +175,7 @@ function slot0.OnSelected(slot0, slot1)
 	slot0.onSelected = slot1
 end
 
-function slot0.UpdateUI(slot0)
+slot0.UpdateUI = function (slot0)
 	slot1 = slot0:GetShipVO()
 
 	slot0:UpdateIntimacy(slot1)
@@ -177,11 +185,11 @@ function slot0.UpdateUI(slot0)
 	slot0:UpdatePreferenceTag()
 end
 
-function slot0.UpdateIntimacy(slot0, slot1)
+slot0.UpdateIntimacy = function (slot0, slot1)
 	slot7, slot3, slot4 = slot1:getIntimacyDetail()
 
 	setImageSprite(slot0.intimacyTF, slot5, true)
-	setActive(slot0.intimacyTF, true)
+	setActive(slot0.intimacyTF, not LOCK_PROPOSE)
 
 	slot6 = 1
 
@@ -196,13 +204,13 @@ function slot0.UpdateIntimacy(slot0, slot1)
 	slot0.intimacyTF:GetComponent(typeof(Image)).color = Color.New(1, 1, 1, slot6)
 end
 
-function slot0.UpdateDetail(slot0, slot1)
+slot0.UpdateDetail = function (slot0, slot1)
 	slot0.shipDetailLogicPanel:flush(slot1)
 	removeOnButton(slot2)
 
 	if table.contains(TeamType.SubShipType, slot1:getShipType()) then
 		onButton(slot0, slot2, function ()
-			uv0:emit(ShipViewConst.DISPLAY_HUNTING_RANGE, true)
+			slot0:emit(ShipViewConst.DISPLAY_HUNTING_RANGE, true)
 		end, SFX_PANEL)
 	end
 
@@ -210,30 +218,33 @@ function slot0.UpdateDetail(slot0, slot1)
 	setActive(slot0.profileBtn, not slot1:isActivityNpc())
 end
 
-function slot0.UpdateEquipments(slot0, slot1)
+slot0.UpdateEquipments = function (slot0, slot1)
 	removeAllChildren(slot0.equipmentsGrid)
 
+	slot2 = slot1:getActiveEquipments()
+
 	for slot6, slot7 in ipairs(slot1.equipments) do
-		slot8 = slot1:getActiveEquipments()[slot6]
+		slot8 = slot2[slot6]
+		slot9 = nil
 
 		if slot7 then
-			updateEquipment(slot0:findTF("IconTpl", nil), slot7)
+			updateEquipment(slot0:findTF("IconTpl", slot9), slot7)
 			onButton(slot0, cloneTplTo(slot0.detailEqupimentTpl, slot0.equipmentsGrid), function ()
-				uv0:emit(BaseUI.ON_EQUIPMENT, {
+				slot0:emit(BaseUI.ON_EQUIPMENT, {
 					type = EquipmentInfoMediator.TYPE_SHIP,
-					shipId = uv0:GetShipVO().id,
-					pos = uv1
+					shipId = slot0:GetShipVO().id,
+					pos = slot0
 				})
 			end, SFX_UI_DOCKYARD_EQUIPADD)
 		else
 			onButton(slot0, cloneTplTo(slot0.emptyGridTpl, slot0.equipmentsGrid), function ()
-				uv0:emit(ShipViewConst.SWITCH_TO_PAGE, ShipViewConst.PAGE.EQUIPMENT)
+				slot0:emit(ShipViewConst.SWITCH_TO_PAGE, ShipViewConst.PAGE.EQUIPMENT)
 			end, SFX_UI_DOCKYARD_EQUIPADD)
 		end
 	end
 end
 
-function slot0.UpdateLock(slot0)
+slot0.UpdateLock = function (slot0)
 	if slot0:GetShipVO():GetLockState() == slot0:GetShipVO().LOCK_STATE_UNLOCK then
 		setActive(slot0.lockBtn, true)
 		setActive(slot0.unlockBtn, false)
@@ -245,7 +256,7 @@ end
 
 slot1 = 0.2
 
-function slot0.displayRecordPanel(slot0)
+slot0.displayRecordPanel = function (slot0)
 	if not slot0:GetShipVO() then
 		return
 	end
@@ -257,13 +268,13 @@ function slot0.displayRecordPanel(slot0)
 
 	for slot4, slot5 in ipairs(slot0.recordBtns) do
 		onButton(slot0, slot5, function ()
-			uv0:emit(ShipMainMediator.ON_RECORD_EQUIPMENT, uv0:GetShipVO().id, uv1, 1)
+			slot0:emit(ShipMainMediator.ON_RECORD_EQUIPMENT, slot0:GetShipVO().id, slot0, 1)
 		end, SFX_PANEL)
 	end
 
 	for slot4, slot5 in ipairs(slot0.equipRecordBtns) do
 		onButton(slot0, slot5, function ()
-			uv0:emit(ShipMainMediator.ON_RECORD_EQUIPMENT, uv0:GetShipVO().id, uv1, 2)
+			slot0:emit(ShipMainMediator.ON_RECORD_EQUIPMENT, slot0:GetShipVO().id, slot0, 2)
 		end, SFX_PANEL)
 	end
 
@@ -272,7 +283,7 @@ function slot0.displayRecordPanel(slot0)
 	end
 end
 
-function slot0.CloseRecordPanel(slot0)
+slot0.CloseRecordPanel = function (slot0)
 	if slot0.isShowRecord then
 		slot0.isShowRecord = nil
 
@@ -281,11 +292,12 @@ function slot0.CloseRecordPanel(slot0)
 	end
 end
 
-function slot0.UpdateRecordEquipments(slot0, slot1)
+slot0.UpdateRecordEquipments = function (slot0, slot1)
 	slot2 = slot0.recordEquipmentsTFs[slot1]
+	slot4 = slot0:GetShipVO():getEquipmentRecord(slot0.shareData.player.id)[slot1] or {}
 
 	for slot8 = 1, 5, 1 do
-		if tonumber(slot0:GetShipVO():getEquipmentRecord(slot0.shareData.player.id)[slot1] or {}[slot8]) then
+		if tonumber(slot4[slot8]) then
 			if slot9 == -1 then
 				slot10 = false
 			else
@@ -293,60 +305,218 @@ function slot0.UpdateRecordEquipments(slot0, slot1)
 			end
 		end
 
+		slot11 = slot2:Find("equipment_" .. slot8)
+
 		setActive(slot13, slot10)
-		setActive(slot2:Find("equipment_" .. slot8):Find("empty"), not slot10)
+		setActive(slot11:Find("empty"), not slot10)
 
 		if slot10 then
-			slot14 = slot0.equipmentProxy:getEquipmentById(slot9)
+			if not slot0:GetShipVO().equipments[slot8] or slot15.id ~= slot9 then
+				slot16 = false
 
-			setActive(slot13:Find("tip"), not (slot0:GetShipVO().equipments[slot8] and slot15.id == slot9 or false) and (not slot14 or slot14.count <= 0))
+				if false then
+					slot16 = false
+				end
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 73-73, warpins: 1 ---
+				slot16 = true
+
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 74-75, warpins: 3 ---
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 76-77, warpins: 1 ---
+				if slot14 and slot14.count > 0 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 82-83, warpins: 2 ---
+					slot17 = false
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 84-84, warpins: 2 ---
+					slot17 = true
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+				--- END OF BLOCK #2 ---
+
+
+
+			end
+
+			slot14 = slot0.equipmentProxy:getEquipmentById(slot9)
+			slot16 = (slot0.GetShipVO().equipments[slot8] and slot15.id == slot9) or false
+
+			setActive(slot13:Find("tip"), not ((slot0.GetShipVO().equipments[slot8] and slot15.id == slot9) or false) and (not slot14 or slot14.count <= 0))
 			updateEquipment(slot0:findTF("IconTpl", slot13), Equipment.New({
 				id = slot9
 			}))
 
-			if not (slot0.GetShipVO().equipments[slot8] and slot15.id == slot9 or false) and (not slot14 or slot14.count <= 0) then
+			if not ((slot0.GetShipVO().equipments[slot8] and slot15.id == slot9) or false) and (not slot14 or slot14.count <= 0) then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 106-112, warpins: 1 ---
 				onButton(slot0, slot13, function ()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-12, warpins: 1 ---
 					pg.TipsMgr:GetInstance():ShowTips(i18n("ship_quick_change_nofreeequip"))
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end, SFX_PANEL)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 113-115, warpins: 1 ---
 			removeOnButton(slot13)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 	end
 end
 
-function slot0.UpdatePreferenceTag(slot0)
+slot0.UpdatePreferenceTag = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = triggerToggle
 	slot2 = slot0.commonTagToggle
 
 	if slot0:GetShipVO().preferenceTag ~= Ship.PREFERENCE_TAG_COMMON then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 11-12, warpins: 1 ---
 		slot3 = false
+		--- END OF BLOCK #0 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 13-13, warpins: 1 ---
 		slot3 = true
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 14-15, warpins: 2 ---
 	slot1(slot2, slot3)
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
-function slot0.DoLeveUpAnim(slot0, slot1, slot2, slot3)
+slot0.DoLeveUpAnim = function (slot0, slot1, slot2, slot3)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0.shipDetailLogicPanel:doLeveUpAnim(slot1, slot2, slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
-function slot0.OnDestroy(slot0)
+slot0.OnDestroy = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
 	removeAllChildren(slot0.equipmentsGrid)
 
 	if slot0.recordPanel then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 7-14, warpins: 1 ---
 		if LeanTween.isTweening(go(slot0.recordPanel)) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 15-20, warpins: 1 ---
 			LeanTween.cancel(go(slot0.recordPanel))
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 21-22, warpins: 2 ---
 		slot0.recordPanel = nil
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 23-33, warpins: 2 ---
 	slot0.shipDetailLogicPanel:clear()
 	slot0.shipDetailLogicPanel:detach()
 
 	slot0.shareData = nil
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 return slot0
