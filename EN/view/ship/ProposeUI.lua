@@ -136,7 +136,6 @@ function slot2(slot0)
 	slot1 = slot1.review
 
 	if slot1 then
-		-- Nothing
 	end
 
 	slot1 = slot0.commonTF
@@ -192,10 +191,10 @@ function slot2(slot0)
 
 			slot0(slot1)
 
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.emit
-			slot2 = uv1
+			slot2 = slot1
 			slot2 = slot2.ON_CLOSE
 
 			slot0(slot1, slot2)
@@ -234,20 +233,20 @@ function slot2(slot0)
 		slot3 = slot3(slot4, slot5)
 
 		function slot4()
-			slot0 = uv0
+			slot0 = slot0
 			slot0 = slot0.proposeEndFlag
 
 			if slot0 then
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.DisplayRenamePanel
 
 				slot0(slot1)
 			else
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.emit
-				slot2 = uv1
+				slot2 = slot1
 				slot2 = slot2.ON_CLOSE
 
 				slot0(slot1, slot2)
@@ -266,20 +265,20 @@ function slot2(slot0)
 		slot3 = slot3(slot4, slot5)
 
 		function slot4()
-			slot0 = uv0
+			slot0 = slot0
 			slot0 = slot0.proposeEndFlag
 
 			if slot0 then
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.DisplayRenamePanel
 
 				slot0(slot1)
 			else
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.emit
-				slot2 = uv1
+				slot2 = slot1
 				slot2 = slot2.ON_CLOSE
 
 				slot0(slot1, slot2)
@@ -326,7 +325,7 @@ function slot2(slot0)
 
 			slot1(slot2)
 
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.exited
 
 			if slot1 then
@@ -335,7 +334,7 @@ function slot2(slot0)
 				slot1 = slot1()
 				slot2 = slot1
 				slot1 = slot1.ReturnUI
-				slot3 = uv1
+				slot3 = slot1
 				slot4 = slot0
 
 				slot1(slot2, slot3, slot4)
@@ -343,7 +342,7 @@ function slot2(slot0)
 				return
 			end
 
-			slot1 = uv0
+			slot1 = slot0
 			slot2 = tf
 			slot3 = slot0
 			slot2 = slot2(slot3)
@@ -352,221 +351,221 @@ function slot2(slot0)
 			slot2 = tf
 			slot3 = slot0
 			slot2 = slot2(slot3)
-			slot3 = uv0
+			slot3 = slot0
 			slot4 = slot3
 			slot3 = slot3.findTF
 			slot5 = "window"
 
 			slot1(slot2, slot3(slot4, slot5))
 
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "intimacy/icon"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.intimacyTF = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "intimacy/value"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.intimacyValueTF = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "button"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.button = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "desc"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.intimacyDesc = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "descPic/desc_time"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.intimacydescTime = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "descPic"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.intimacyDescPic = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "desc_buff"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.intimacyBuffDesc = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "paintMask/paint"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1._paintingTF = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "intimacy/achieved"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.intimacyAchieved = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "intimacy/no_achieved"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.intimacyNoAchieved = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "ringCount/achieved"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.ringAchieved = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "ringCount/no_achieved"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.ringNoAchieved = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "ringCount/value"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.ringValue = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "title1/Text"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.nameTF = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "title2/Text"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.shipNameTF = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "Camp"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.campTF = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "done"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.doneTF = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "CampSprite"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.window
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.CampSprite = slot2
 			slot1 = setActive
-			slot2 = uv0
+			slot2 = slot0
 			slot2 = slot2.window
 			slot3 = true
 
 			slot1(slot2, slot3)
 
 			slot1 = setText
-			slot2 = uv0
+			slot2 = slot0
 			slot2 = slot2.nameTF
-			slot3 = uv0
+			slot3 = slot0
 			slot3 = slot3.player
 			slot3 = slot3.name
 
 			slot1(slot2, slot3)
 
 			slot1 = setText
-			slot2 = uv0
+			slot2 = slot0
 			slot2 = slot2.shipNameTF
-			slot3 = uv0
+			slot3 = slot0
 			slot3 = slot3.shipVO
 			slot4 = slot3
 			slot3 = slot3.getName
 
 			slot1(slot2, slot3(slot4))
 
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.CampSprite
 
 			if slot1 then
 				slot1 = getImageSprite
-				slot2 = uv0
+				slot2 = slot0
 				slot3 = slot2
 				slot2 = slot2.findTF
 				slot4 = Nation
 				slot4 = slot4.Nation2Print
-				slot5 = uv2
+				slot5 = slot2
 				slot4 = slot4(slot5)
-				slot5 = uv0
+				slot5 = slot0
 				slot5 = slot5.CampSprite
 				slot1 = slot1(slot2(slot3, slot4, slot5))
 
 				if not slot1 then
 					slot2 = warning
 					slot3 = "找不到印花, shipConfigId: "
-					slot4 = uv0
+					slot4 = slot0
 					slot4 = slot4.shipVO
 					slot4 = slot4.configId
 					slot3 = slot3 .. slot4
@@ -574,14 +573,14 @@ function slot2(slot0)
 					slot2(slot3)
 
 					slot2 = setActive
-					slot3 = uv0
+					slot3 = slot0
 					slot3 = slot3.campTF
 					slot4 = false
 
 					slot2(slot3, slot4)
 				else
 					slot2 = setImageSprite
-					slot3 = uv0
+					slot3 = slot0
 					slot3 = slot3.campTF
 					slot4 = slot1
 					slot5 = false
@@ -589,7 +588,7 @@ function slot2(slot0)
 					slot2(slot3, slot4, slot5)
 
 					slot2 = setActive
-					slot3 = uv0
+					slot3 = slot0
 					slot3 = slot3.campTF
 					slot4 = true
 
@@ -597,7 +596,7 @@ function slot2(slot0)
 				end
 			end
 
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.shipVO
 			slot2 = slot1
 			slot1 = slot1.getIntimacyDetail
@@ -607,7 +606,7 @@ function slot2(slot0)
 			slot6 = slot1
 			slot4 = slot4(slot5, slot6)
 			slot5 = setImageSprite
-			slot6 = uv0
+			slot6 = slot0
 			slot6 = slot6.intimacyTF
 			slot7 = slot4
 			slot8 = true
@@ -615,14 +614,14 @@ function slot2(slot0)
 			slot5(slot6, slot7, slot8)
 
 			slot5 = setActive
-			slot6 = uv0
+			slot6 = slot0
 			slot6 = slot6.intimacyTF
 			slot7 = true
 
 			slot5(slot6, slot7)
 
 			slot5 = setText
-			slot6 = uv0
+			slot6 = slot0
 			slot6 = slot6.intimacyValueTF
 			slot7 = i18n
 			slot8 = "propose_intimacy_tip"
@@ -634,7 +633,7 @@ function slot2(slot0)
 
 			if slot3 >= slot5 then
 				slot5 = setTextColor
-				slot6 = uv0
+				slot6 = slot0
 				slot6 = slot6.intimacyValueTF
 				slot7 = Color
 				slot7 = slot7.white
@@ -642,26 +641,25 @@ function slot2(slot0)
 				slot5(slot6, slot7)
 			end
 
-			slot5 = not uv0.shipVO.propose and slot2 <= slot3
+			slot5 = not slot0.shipVO.propose and slot2 <= slot3
 
-			setActive(uv0.button, not uv0.shipVO.propose)
+			setActive(slot0.button, not slot0.shipVO.propose)
 
 			slot6 = setActive
-			slot7 = uv0.intimacyAchieved
+			slot7 = slot0.intimacyAchieved
+			slot8 = slot0.shipVO.propose
 
-			if not uv0.shipVO.propose then
-				slot8 = slot3 >= 100
+			if not slot8 then
+				slot6(slot7, slot3 >= 100)
+
+				slot6 = setActive
+				slot7 = slot0.intimacyNoAchieved
 			end
 
-			slot6(slot7, slot8)
-
-			slot6 = setActive
-			slot7 = uv0
-			slot7 = slot7.intimacyNoAchieved
 			slot8 = 100
 
 			if slot3 < slot8 then
-				slot8 = uv0
+				slot8 = slot0
 				slot8 = slot8.shipVO
 				slot8 = slot8.propose
 				slot8 = not slot8
@@ -675,32 +673,30 @@ function slot2(slot0)
 
 			slot6(slot7, slot8)
 
-			slot6 = uv0
+			slot6 = slot0
 			slot6 = slot6.bagProxy
 			slot7 = slot6
 			slot6 = slot6.getItemCountById
 			slot8 = ITEM_ID_FOR_PROPOSE
 			slot6 = slot6(slot7, slot8)
 			slot7 = setActive
-			slot8 = uv0
+			slot8 = slot0
 			slot8 = slot8.ringAchieved
-			slot9 = uv0
+			slot9 = slot0
 			slot9 = slot9.shipVO
 			slot9 = slot9.propose
 
 			if not slot9 then
-				slot9 = slot6 > 0
+				slot7(slot8, slot6 > 0)
+
+				slot7 = setActive
+				slot8 = slot0.ringNoAchieved
 			end
 
-			slot7(slot8, slot9)
-
-			slot7 = setActive
-			slot8 = uv0
-			slot8 = slot8.ringNoAchieved
 			slot9 = 0
 
 			if slot6 <= slot9 then
-				slot9 = uv0
+				slot9 = slot0
 				slot9 = slot9.shipVO
 				slot9 = slot9.propose
 				slot9 = not slot9
@@ -714,7 +710,7 @@ function slot2(slot0)
 
 			slot7(slot8, slot9)
 
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.shipVO
 			slot7 = slot7.propose
 
@@ -723,7 +719,7 @@ function slot2(slot0)
 
 				if slot6 > slot7 then
 					slot7 = setTextColor
-					slot8 = uv0
+					slot8 = slot0
 					slot8 = slot8.ringValue
 					slot9 = Color
 					slot9 = slot9.white
@@ -732,32 +728,33 @@ function slot2(slot0)
 				end
 			end
 
-			setActive(uv0.doneTF, uv0.shipVO.propose)
+			setActive(slot0.doneTF, slot0.shipVO.propose)
 
-			uv0.button:GetComponent(typeof(Button)).interactable = slot6 > 0 and slot5
-			slot7, slot8 = uv0.shipVO:getInitmacyInfo()
+			slot0.button:GetComponent(typeof(Button)).interactable = slot6 > 0 and slot5
+			slot7, slot8 = slot0.shipVO:getInitmacyInfo()
+			slot9 = slot0.shipVO.propose
 
-			if uv0.shipVO.propose then
-				slot9 = uv0
+			if slot9 then
+				slot9 = slot0
 				slot9 = slot9.intimacyDescPic
 
 				if slot9 then
 					slot9 = setActive
-					slot10 = uv0
+					slot10 = slot0
 					slot10 = slot10.intimacyDescPic
 					slot11 = true
 
 					slot9(slot10, slot11)
 
 					slot9 = setActive
-					slot10 = uv0
+					slot10 = slot0
 					slot10 = slot10.intimacyDesc
 					slot11 = false
 
 					slot9(slot10, slot11)
 
 					slot9 = setText
-					slot10 = uv0
+					slot10 = slot0
 					slot10 = slot10.intimacydescTime
 					slot11 = pg
 					slot11 = slot11.TimeMgr
@@ -765,7 +762,7 @@ function slot2(slot0)
 					slot11 = slot11()
 					slot12 = slot11
 					slot11 = slot11.DescTime
-					slot13 = uv0
+					slot13 = slot0
 					slot13 = slot13.shipVO
 					slot13 = slot13.proposeTime
 					slot14 = "%B.%d,    %y"
@@ -773,19 +770,19 @@ function slot2(slot0)
 
 					slot9(slot10, slot11(slot12, slot13, slot14, slot15))
 				else
-					slot9 = uv0
+					slot9 = slot0
 					slot9 = slot9.intimacyDesc
 
 					if slot9 then
 						slot9 = setActive
-						slot10 = uv0
+						slot10 = slot0
 						slot10 = slot10.intimacyDesc
 						slot11 = true
 
 						slot9(slot10, slot11)
 
 						slot9 = GetComponent
-						slot10 = uv0
+						slot10 = slot0
 						slot10 = slot10.intimacyDesc
 						slot11 = "VerticalText"
 						slot9 = slot9(slot10, slot11)
@@ -797,7 +794,7 @@ function slot2(slot0)
 							slot10 = true
 							slot9.enabled = slot10
 							slot10 = setText
-							slot11 = uv0
+							slot11 = slot0
 							slot11 = slot11.intimacyDesc
 							slot12 = i18n
 							slot13 = "intimacy_desc_propose_vertical"
@@ -807,7 +804,7 @@ function slot2(slot0)
 							slot14 = slot14()
 							slot15 = slot14
 							slot14 = slot14.ChieseDescTime
-							slot16 = uv0
+							slot16 = slot0
 							slot16 = slot16.shipVO
 							slot16 = slot16.proposeTime
 							slot17 = true
@@ -815,7 +812,7 @@ function slot2(slot0)
 							slot10(slot11, slot12(slot13, slot14(slot15, slot16, slot17)))
 						else
 							slot10 = setText
-							slot11 = uv0
+							slot11 = slot0
 							slot11 = slot11.intimacyDesc
 							slot12 = i18n
 							slot13 = "intimacy_desc_propose"
@@ -825,10 +822,10 @@ function slot2(slot0)
 							slot14 = slot14()
 							slot15 = slot14
 							slot14 = slot14.DescTime
-							slot16 = uv0
+							slot16 = slot0
 							slot16 = slot16.shipVO
 							slot16 = slot16.proposeTime
-							slot17 = "%Y年%m月%d日"
+							slot17 = "%m/%d/%Y"
 							slot18 = true
 
 							slot10(slot11, slot12(slot13, slot14(slot15, slot16, slot17, slot18)))
@@ -836,11 +833,11 @@ function slot2(slot0)
 					end
 				end
 			else
-				slot9 = uv1
+				slot9 = slot1
 
 				if slot9 == "ProposeJpUI" then
 					slot9 = GetComponent
-					slot10 = uv0
+					slot10 = slot0
 					slot10 = slot10.intimacyDesc
 					slot11 = "VerticalText"
 					slot9 = slot9(slot10, slot11)
@@ -854,35 +851,35 @@ function slot2(slot0)
 					end
 				end
 
-				slot9 = uv0
+				slot9 = slot0
 				slot9 = slot9.intimacyDescPic
 
 				if slot9 then
 					slot9 = setActive
-					slot10 = uv0
+					slot10 = slot0
 					slot10 = slot10.intimacyDescPic
 					slot11 = false
 
 					slot9(slot10, slot11)
 				end
 
-				slot9 = uv0
+				slot9 = slot0
 				slot9 = slot9.intimacyDesc
 
 				if slot9 then
 					slot9 = setActive
-					slot10 = uv0
+					slot10 = slot0
 					slot10 = slot10.intimacyDesc
 					slot11 = true
 
 					slot9(slot10, slot11)
 
 					slot9 = setText
-					slot10 = uv0
+					slot10 = slot0
 					slot10 = slot10.intimacyDesc
 					slot11 = i18n
 					slot12 = slot8
-					slot13 = uv0
+					slot13 = slot0
 					slot13 = slot13.shipVO
 					slot13 = slot13.name
 
@@ -891,7 +888,7 @@ function slot2(slot0)
 			end
 
 			slot9 = setText
-			slot10 = uv0
+			slot10 = slot0
 			slot10 = slot10.intimacyBuffDesc
 			slot11 = "*"
 			slot12 = i18n
@@ -903,7 +900,7 @@ function slot2(slot0)
 
 			slot9(slot10, slot11)
 
-			slot9 = uv0
+			slot9 = slot0
 			slot10 = slot9
 			slot9 = slot9.loadChar
 
@@ -915,21 +912,21 @@ function slot2(slot0)
 			slot9 = slot9()
 			slot10 = slot9
 			slot9 = slot9.BlurPanel
-			slot11 = uv0
+			slot11 = slot0
 			slot11 = slot11._tf
 
 			slot9(slot10, slot11)
 
 			slot9 = onButton
-			slot10 = uv0
-			slot11 = uv0
+			slot10 = slot0
+			slot11 = slot0
 			slot11 = slot11.button
 
 			function slot12()
-				slot0 = uv0
+				slot0 = slot0
 
 				if slot0 then
-					slot0 = uv1
+					slot0 = slot1
 					slot1 = 1
 
 					if slot0 < slot1 then
@@ -950,7 +947,7 @@ function slot2(slot0)
 
 					slot0 = Ship
 					slot0 = slot0.canProposeShip
-					slot1 = uv2
+					slot1 = slot2
 					slot1 = slot1.shipVO
 					slot0, slot1 = slot0(slot1)
 
@@ -978,12 +975,12 @@ function slot2(slot0)
 					slot4 = {}
 					slot5 = i18n
 					slot6 = "word_propose_cost_tip"
-					slot7 = uv1
+					slot7 = slot1
 					slot5 = slot5(slot6, slot7)
 					slot4.content = slot5
 
 					function slot5()
-						slot0 = uv0
+						slot0 = slot0
 						slot0 = slot0.intimacydescTime
 
 						if slot0 then
@@ -995,7 +992,7 @@ function slot2(slot0)
 							slot0 = slot0.GetServerTime
 							slot0 = slot0(slot1)
 							slot1 = setText
-							slot2 = uv0
+							slot2 = slot0
 							slot2 = slot2.intimacydescTime
 							slot3 = pg
 							slot3 = slot3.TimeMgr
@@ -1010,27 +1007,27 @@ function slot2(slot0)
 							slot1(slot2, slot3(slot4, slot5, slot6, slot7))
 						end
 
-						slot0 = uv0
+						slot0 = slot0
 						slot1 = slot0
 						slot0 = slot0.setMask
 						slot2 = true
 
 						slot0(slot1, slot2)
 
-						slot0 = uv0
+						slot0 = slot0
 						slot1 = slot0
 						slot0 = slot0.hideWindow
 
 						slot0(slot1)
 
-						slot0 = uv0
+						slot0 = slot0
 						slot1 = slot0
 						slot0 = slot0.showProposePanel
 
 						slot0(slot1)
 
 						slot0 = setActive
-						slot1 = uv0
+						slot1 = slot0
 						slot1 = slot1.window
 						slot2 = false
 
@@ -1041,10 +1038,10 @@ function slot2(slot0)
 
 					slot2(slot3, slot4)
 				else
-					slot0 = uv2
+					slot0 = slot2
 					slot1 = slot0
 					slot0 = slot0.emit
-					slot2 = uv3
+					slot2 = slot3
 					slot2 = slot2.ON_CLOSE
 
 					slot0(slot1, slot2)
@@ -1233,7 +1230,7 @@ function slot2(slot0)
 
 	function slot4()
 		slot0 = setActive
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.churchLight
 		slot2 = false
 
@@ -1246,52 +1243,210 @@ end
 slot0.showbgChurch = slot2
 
 function slot2(slot0, slot1, slot2)
-	LeanTween.alphaCanvas(slot5, slot4, slot2):setFrom(slot1 and 1 or 0)
+	LeanTween.alphaCanvas(slot5, slot4, slot2):setFrom((slot1 and 1) or 0)
 	setActive(slot0.bgAdd, true)
 end
 
 slot0.showbgAdd = slot2
 
 function slot2(slot0, slot1, slot2)
-	LeanTween.alphaCanvas(slot5, slot4, slot2):setFrom(slot1 and 1 or 0):setOnComplete(System.Action(function ()
-		if uv0 then
-			setActive(uv1.blackBG, false)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot3 = (slot1 and 1) or 0
+
+	LeanTween.alphaCanvas(slot5, slot4, slot2):setFrom((slot1 and 1) or 0):setOnComplete(System.Action(function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		if slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-8, warpins: 1 ---
+			setActive(slot1.blackBG, false)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 9-9, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end))
 	setActive(slot0.blackBG, true)
+
+	return
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot3 = 1
+
+	if 1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-5, warpins: 1 ---
+		slot3 = 0
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 8-9, warpins: 1 ---
+	slot4 = 0
+
+	if 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 10-10, warpins: 1 ---
+		slot4 = 1
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 11-39, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+
+
 end
 
 slot0.showBlackBG = slot2
 
 function slot2(slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = false
 
 	function slot4()
-		slot0 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = slot0
 
 		if slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-4, warpins: 1 ---
 			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
-		uv0 = true
-		slot0 = uv1
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 5-8, warpins: 2 ---
+		slot0 = true
+		slot0 = slot1
 
 		if slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 9-10, warpins: 1 ---
 			slot0 = 0
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 11-11, warpins: 1 ---
 			slot0 = 1
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
-		slot1 = uv1
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 12-14, warpins: 2 ---
+		slot1 = slot1
 
 		if slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 15-16, warpins: 1 ---
 			slot1 = 1
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 17-17, warpins: 1 ---
 			slot1 = 0
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 18-35, warpins: 2 ---
 		slot2 = GetOrAddComponent
-		slot3 = uv2
+		slot3 = slot2
 		slot3 = slot3.targetActorTF
 		slot4 = typeof
 		slot5 = CanvasGroup
@@ -1300,38 +1455,77 @@ function slot2(slot0, slot1, slot2)
 		slot3 = slot3.alphaCanvas
 		slot4 = slot2
 		slot5 = slot1
-		slot6 = uv3
+		slot6 = slot3
 		slot3 = slot3(slot4, slot5, slot6)
 		slot4 = slot3
 		slot3 = slot3.setFrom
 		slot5 = slot0
 
 		slot3(slot4, slot5)
+
+		return
+		--- END OF BLOCK #3 ---
+
+
+
 	end
 
 	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-10, warpins: 1 ---
 		slot6 = slot0
 		slot5 = slot0.loadChar
 		slot7 = slot0.targetActorTF
 		slot8 = "duihua"
 
 		function slot9()
-			slot0 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-3, warpins: 1 ---
+			slot0 = slot0
 
 			slot0()
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
 		slot5(slot6, slot7, slot8, slot9)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 11-14, warpins: 2 ---
 	slot5 = slot4
 
 	slot5()
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 slot0.showPainting = slot2
 
 function slot2(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-41, warpins: 1 ---
 	slot2 = setActive
 	slot4 = slot0
 	slot3 = slot0.findTF
@@ -1373,25 +1567,43 @@ function slot2(slot0, slot1)
 	slot5 = slot5.Action
 
 	function slot6()
-		slot0 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot0 = slot0
 		slot0 = slot0.l2dChar
 		slot1 = slot0
 		slot0 = slot0.SetAction
 		slot2 = pg
 		slot2 = slot2.AssistantInfo
 		slot2 = slot2.action2Id
-		slot3 = uv1
+		slot3 = slot1
 		slot2 = slot2[slot3]
 
 		slot0(slot1, slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot3(slot4, slot5(slot6))
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 slot0.showLive2D = slot2
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = GetOrAddComponent
 	slot2 = slot0.window
 	slot3 = typeof
@@ -1415,17 +1627,35 @@ function slot2(slot0)
 	slot4 = slot4.Action
 
 	function slot5()
-		slot0 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = slot0
 		slot1 = true
 		slot0.interactable = slot1
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot2(slot3, slot4(slot5))
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 slot0.hideWindow = slot2
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = true
 	slot0.proposeEndFlag = slot1
 	slot2 = slot0
@@ -1449,6 +1679,9 @@ function slot2(slot0)
 	slot2 = slot0.intimacyDescPic
 
 	if slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 18-33, warpins: 1 ---
 		slot2 = setActive
 		slot3 = slot0.intimacyDesc
 		slot4 = false
@@ -1467,10 +1700,20 @@ function slot2(slot0)
 		slot5 = CanvasGroup
 		slot2 = slot2(slot3, slot4(slot5))
 		slot1 = slot2
+		--- END OF BLOCK #0 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 34-36, warpins: 1 ---
 		slot2 = slot0.intimacyDesc
 
 		if slot2 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 37-44, warpins: 1 ---
 			slot2 = GetComponent
 			slot3 = slot0.intimacyDesc
 			slot4 = typeof
@@ -1478,12 +1721,18 @@ function slot2(slot0)
 			slot2 = slot2(slot3, slot4(slot5))
 
 			if slot2 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 45-50, warpins: 1 ---
 				slot2 = GetComponent
 				slot3 = slot0.intimacyDesc
 				slot4 = "VerticalText"
 				slot2 = slot2(slot3, slot4)
 
 				if slot2 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 51-68, warpins: 1 ---
 					slot2 = setText
 					slot3 = slot0.intimacyDesc
 					slot4 = i18n
@@ -1500,7 +1749,14 @@ function slot2(slot0)
 					slot10 = true
 
 					slot2(slot3, slot4(slot5, slot6(slot7, slot8, slot9, slot10)))
+					--- END OF BLOCK #0 ---
+
+
+
 				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 69-85, warpins: 1 ---
 					slot2 = setText
 					slot3 = slot0.intimacyDesc
 					slot4 = i18n
@@ -1517,18 +1773,50 @@ function slot2(slot0)
 					slot10 = true
 
 					slot2(slot3, slot4(slot5, slot6(slot7, slot8, slot9, slot10)))
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 86-92, warpins: 2 ---
 				slot2 = GetOrAddComponent
 				slot3 = slot0.intimacyDesc
 				slot4 = typeof
 				slot5 = CanvasGroup
 				slot2 = slot2(slot3, slot4(slot5))
 				slot1 = slot2
+				--- END OF BLOCK #1 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 93-140, warpins: 4 ---
 	slot2 = setText
 	slot3 = slot0.intimacyBuffDesc
 	slot4 = ""
@@ -1569,9 +1857,12 @@ function slot2(slot0)
 	slot5 = slot5.Action
 
 	function slot6()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-11, warpins: 1 ---
 		slot0 = LeanTween
 		slot0 = slot0.alphaCanvas
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = 1
 		slot3 = 2
 		slot0 = slot0(slot1, slot2, slot3)
@@ -1580,6 +1871,12 @@ function slot2(slot0)
 		slot2 = 0
 
 		slot0(slot1, slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot3(slot4, slot5(slot6))
@@ -1591,23 +1888,41 @@ function slot2(slot0)
 	slot5 = slot5.Action
 
 	function slot6()
-		slot0 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = slot0
 
 		if not slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-4, warpins: 1 ---
 			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
-		slot0 = uv0
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 5-29, warpins: 2 ---
+		slot0 = slot0
 		slot1 = true
 		slot0.interactable = slot1
 		slot0 = setActive
-		slot1 = uv1
+		slot1 = slot1
 		slot1 = slot1.doneTF
 		slot2 = true
 
 		slot0(slot1, slot2)
 
-		slot0 = uv1
+		slot0 = slot1
 		slot1 = slot0
 		slot0 = slot0.setMask
 		slot2 = false
@@ -1615,7 +1930,7 @@ function slot2(slot0)
 		slot0(slot1, slot2)
 
 		slot0 = setActive
-		slot1 = uv1
+		slot1 = slot1
 		slot2 = slot1
 		slot1 = slot1.findTF
 		slot3 = "close_end"
@@ -1628,16 +1943,31 @@ function slot2(slot0)
 		slot1 = SFX_UI_SEAL
 
 		slot0(slot1)
+
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
 	slot3 = slot3(slot4, slot5(slot6))
 	slot4 = slot3.id
 	slot0.delayTId = slot4
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 slot0.stampWindow = slot2
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = ShipGroup
 	slot1 = slot1.getProposeSkin
 	slot2 = slot0.shipGroupID
@@ -1646,9 +1976,15 @@ function slot2(slot0)
 	slot1 = slot0.proposeSkin
 
 	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 9-11, warpins: 1 ---
 		slot1 = slot0.actorPainting
 
 		if slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 12-21, warpins: 1 ---
 			slot1 = PoolMgr
 			slot1 = slot1.GetInstance
 			slot1 = slot1()
@@ -1661,12 +1997,34 @@ function slot2(slot0)
 
 			slot1 = nil
 			slot0.actorPainting = slot1
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 22-34, warpins: 3 ---
 	function slot1()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-57, warpins: 1 ---
 		function slot0()
-			slot0 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-62, warpins: 1 ---
+			slot0 = slot0
 			slot0 = slot0.handTF
 			slot1 = slot0
 			slot0 = slot0.GetComponent
@@ -1681,7 +2039,7 @@ function slot2(slot0)
 			slot5 = 0
 			slot1 = slot1(slot2, slot3, slot4, slot5)
 			slot0.color = slot1
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.bgAddAnimation
 			slot2 = 2
@@ -1695,13 +2053,22 @@ function slot2(slot0)
 			slot2 = slot2.Action
 
 			function slot3()
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-7, warpins: 1 ---
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.showPainting
 				slot2 = true
 				slot3 = 1.5
 
 				slot0(slot1, slot2, slot3)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
 			slot0(slot1, slot2(slot3))
@@ -1713,13 +2080,22 @@ function slot2(slot0)
 			slot2 = slot2.Action
 
 			function slot3()
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-7, warpins: 1 ---
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.showPainting
 				slot2 = false
 				slot3 = 1
 
 				slot0(slot1, slot2, slot3)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
 			slot0(slot1, slot2(slot3))
@@ -1731,11 +2107,14 @@ function slot2(slot0)
 			slot2 = slot2.Action
 
 			function slot3()
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-55, warpins: 1 ---
 				slot0 = setAnchoredPosition
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1.handTF
 				slot2 = {}
-				slot3 = uv0
+				slot3 = slot0
 				slot3 = slot3.handTF
 				slot3 = slot3.rect
 				slot3 = slot3.height
@@ -1744,7 +2123,7 @@ function slot2(slot0)
 				slot0(slot1, slot2)
 
 				slot0 = setAnchoredPosition
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1.ringTF
 				slot2 = {
 					x = -195,
@@ -1754,27 +2133,27 @@ function slot2(slot0)
 				slot0(slot1, slot2)
 
 				slot0 = setActive
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1.proposePanel
 				slot2 = true
 
 				slot0(slot1, slot2)
 
 				slot0 = setActive
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1.transHand
 				slot2 = true
 
 				slot0(slot1, slot2)
 
-				slot0 = uv0
+				slot0 = slot0
 				slot0 = slot0.ringBoxCG
 				slot1 = 0
 				slot0.alpha = slot1
 				slot0 = LeanTween
 				slot0 = slot0.alpha
 				slot1 = rtf
-				slot2 = uv0
+				slot2 = slot0
 				slot2 = slot2.handTF
 				slot1 = slot1(slot2)
 				slot2 = 1
@@ -1785,7 +2164,7 @@ function slot2(slot0)
 				slot0 = LeanTween
 				slot0 = slot0.moveY
 				slot1 = rtf
-				slot2 = uv0
+				slot2 = slot0
 				slot2 = slot2.handTF
 				slot1 = slot1(slot2)
 				slot2 = 0
@@ -1797,9 +2176,12 @@ function slot2(slot0)
 				slot2 = slot2.Action
 
 				function slot3()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-19, warpins: 1 ---
 					slot0 = LeanTween
 					slot0 = slot0.alphaCanvas
-					slot1 = uv0
+					slot1 = slot0
 					slot1 = slot1.ringBoxCG
 					slot2 = 1
 					slot3 = 1.5
@@ -1814,7 +2196,10 @@ function slot2(slot0)
 					slot2 = slot2.Action
 
 					function slot3()
-						slot0 = uv0
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 1-10, warpins: 1 ---
+						slot0 = slot0
 						slot1 = slot0
 						slot0 = slot0.setMask
 						slot2 = false
@@ -1822,16 +2207,34 @@ function slot2(slot0)
 						slot0(slot1, slot2)
 
 						slot0 = triggerButton
-						slot1 = uv0
+						slot1 = slot0
 						slot1 = slot1.ringBoxTF
 
 						slot0(slot1)
+
+						return
+						--- END OF BLOCK #0 ---
+
+
+
 					end
 
 					slot0(slot1, slot2(slot3))
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
 				slot0(slot1, slot2(slot3))
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
 			slot0(slot1, slot2(slot3))
@@ -1843,13 +2246,22 @@ function slot2(slot0)
 			slot2 = slot2.Action
 
 			function slot3()
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-7, warpins: 1 ---
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.showBlackBG
 				slot2 = false
 				slot3 = 1.2
 
 				slot0(slot1, slot2, slot3)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
 			slot0(slot1, slot2(slot3))
@@ -1861,21 +2273,36 @@ function slot2(slot0)
 			slot2 = slot2.Action
 
 			function slot3()
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-7, warpins: 1 ---
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.showBlackBG
 				slot2 = true
 				slot3 = 1.2
 
 				slot0(slot1, slot2, slot3)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
 			slot0(slot1, slot2(slot3))
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
 		slot1 = LeanTween
 		slot1 = slot1.scale
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.door
 		slot3 = Vector3
 		slot4 = 2.1
@@ -1886,14 +2313,20 @@ function slot2(slot0)
 
 		slot1(slot2, slot3, slot4)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.doorAni
 		slot2 = slot1
 		slot1 = slot1.SetActionCallBack
 
 		function slot3(slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-2, warpins: 1 ---
 			if slot0 == "FINISH" then
-				slot1 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 3-26, warpins: 1 ---
+				slot1 = slot0
 				slot1 = slot1.doorAni
 				slot2 = slot1
 				slot1 = slot1.SetActionCallBack
@@ -1902,13 +2335,13 @@ function slot2(slot0)
 				slot1(slot2, slot3)
 
 				slot1 = setActive
-				slot2 = uv0
+				slot2 = slot0
 				slot2 = slot2.door
 				slot3 = false
 
 				slot1(slot2, slot3)
 
-				slot1 = uv0
+				slot1 = slot0
 				slot2 = slot1
 				slot1 = slot1.showBlackBG
 				slot3 = true
@@ -1917,16 +2350,34 @@ function slot2(slot0)
 				slot1(slot2, slot3, slot4)
 
 				slot1 = setActive
-				slot2 = uv0
+				slot2 = slot0
 				slot2 = slot2.doorLightBG
 				slot3 = false
 
 				slot1(slot2, slot3)
 
-				slot1 = uv1
+				slot1 = slot1
 
 				slot1()
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 27-27, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
 		end
 
 		slot1(slot2, slot3)
@@ -1938,13 +2389,22 @@ function slot2(slot0)
 		slot3 = slot3.Action
 
 		function slot4()
-			slot0 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-7, warpins: 1 ---
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.showbgAdd
 			slot2 = false
 			slot3 = 2
 
 			slot0(slot1, slot2, slot3)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
 		slot1(slot2, slot3(slot4))
@@ -1952,7 +2412,7 @@ function slot2(slot0)
 		slot1 = LeanTween
 		slot1 = slot1.alpha
 		slot2 = rtf
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3.doorLightBG
 		slot2 = slot2(slot3)
 		slot3 = 1
@@ -1964,7 +2424,7 @@ function slot2(slot0)
 
 		slot1(slot2, slot3)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = slot1
 		slot1 = slot1.showBlackBG
 		slot3 = false
@@ -1972,7 +2432,7 @@ function slot2(slot0)
 
 		slot1(slot2, slot3, slot4)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.doorAni
 		slot2 = slot1
 		slot1 = slot1.SetAction
@@ -1985,6 +2445,12 @@ function slot2(slot0)
 		slot2 = SFX_UI_DOOR
 
 		slot1(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot2 = pg
@@ -2001,6 +2467,9 @@ function slot2(slot0)
 	slot2 = slot0.proposePanel
 
 	if not slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 35-45, warpins: 1 ---
 		slot2 = "ProposeRingUI"
 		slot3 = PoolMgr
 		slot3 = slot3.GetInstance
@@ -2011,6 +2480,9 @@ function slot2(slot0)
 		slot6 = true
 
 		function slot7(slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-12, warpins: 1 ---
 			slot1 = pg
 			slot1 = slot1.UIMgr
 			slot2 = slot1
@@ -2021,43 +2493,80 @@ function slot2(slot0)
 
 			slot1(slot2)
 
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.exited
 
 			if slot1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 13-21, warpins: 1 ---
 				slot1 = PoolMgr
 				slot1 = slot1.GetInstance
 				slot1 = slot1()
 				slot2 = slot1
 				slot1 = slot1.ReturnUI
-				slot3 = uv1
+				slot3 = slot1
 				slot4 = slot0
 
 				slot1(slot2, slot3, slot4)
 
 				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
-			slot1 = uv0
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 22-30, warpins: 1 ---
+			slot1 = slot0
 			slot2 = tf
 			slot3 = slot0
 			slot2 = slot2(slot3)
 			slot1.proposePanel = slot2
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.weddingReview
 
 			if slot1 then
-				slot1 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 31-34, warpins: 1 ---
+				slot1 = slot0
 				slot1 = slot1.reviewSkinID
 
 				if not slot1 then
-					slot1 = uv0
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 35-37, warpins: 2 ---
+					slot1 = slot0
 					slot1 = slot1.shipVO
 					slot1 = slot1.skinId
+					--- END OF BLOCK #0 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
-			slot2 = uv0
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 38-54, warpins: 2 ---
+			slot2 = slot0
 			slot3 = pg
 			slot3 = slot3.ship_skin_template
 			slot3 = slot3[slot1]
@@ -2074,30 +2583,82 @@ function slot2(slot0)
 			slot3 = SPECIAL_PROPOSE
 
 			if slot3 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 55-58, warpins: 1 ---
 				slot3 = SPECIAL_PROPOSE
 				slot3 = slot3[1]
 
 				if slot3 == slot2 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 59-63, warpins: 1 ---
 					slot3 = ipairs
 					slot4 = SPECIAL_PROPOSE
 					slot4 = slot4[2]
 					slot3, slot4, slot5 = slot3(slot4)
 
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 64-71, warpins: 0 ---
 					for slot6, slot7 in slot3, slot4, slot5 do
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 64-66, warpins: 1 ---
 						slot8 = slot7[1]
 
 						if slot8 == slot1 then
-							slot8 = uv0
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 67-69, warpins: 1 ---
+							slot8 = slot0
 							slot9 = slot7[2]
 							slot8.handId = slot9
+							--- END OF BLOCK #0 ---
+
+
+
 						end
+						--- END OF BLOCK #0 ---
+
+						FLOW; TARGET BLOCK #1
+
+
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #1 70-71, warpins: 3 ---
+						--- END OF BLOCK #1 ---
+
+
+
 					end
+					--- END OF BLOCK #1 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
-			slot3 = uv0
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #3 72-261, warpins: 3 ---
+			slot3 = slot0
 			slot4 = "ProposeHand_"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.handId
 			slot4 = slot4 .. slot5
 			slot3.handName = slot4
@@ -2106,44 +2667,47 @@ function slot2(slot0)
 			slot3 = slot3()
 			slot4 = slot3
 			slot3 = slot3.GetUI
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.handName
 			slot6 = true
 
 			function slot7(slot0)
-				slot1 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-71, warpins: 1 ---
+				slot1 = slot0
 				slot2 = tf
 				slot3 = slot0
 				slot2 = slot2(slot3)
 				slot1.transHand = slot2
 				slot1 = setParent
-				slot2 = uv0
+				slot2 = slot0
 				slot2 = slot2.transHand
-				slot3 = uv0
+				slot3 = slot0
 				slot3 = slot3.proposePanel
 
 				slot1(slot2, slot3)
 
-				slot1 = uv0
-				slot2 = uv0
+				slot1 = slot0
+				slot2 = slot0
 				slot3 = slot2
 				slot2 = slot2.findTF
 				slot4 = "hand"
-				slot5 = uv0
+				slot5 = slot0
 				slot5 = slot5.transHand
 				slot2 = slot2(slot3, slot4, slot5)
 				slot1.handTF = slot2
-				slot1 = uv0
-				slot2 = uv0
+				slot1 = slot0
+				slot2 = slot0
 				slot3 = slot2
 				slot2 = slot2.findTF
 				slot4 = "ring"
-				slot5 = uv0
+				slot5 = slot0
 				slot5 = slot5.transHand
 				slot2 = slot2(slot3, slot4, slot5)
 				slot1.ringTF = slot2
-				slot1 = uv0
-				slot2 = uv0
+				slot1 = slot0
+				slot2 = slot0
 				slot2 = slot2.ringTF
 				slot3 = slot2
 				slot2 = slot2.GetComponent
@@ -2151,35 +2715,41 @@ function slot2(slot0)
 				slot5 = Animator
 				slot2 = slot2(slot3, slot4(slot5))
 				slot1.ringAnim = slot2
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1.ringAnim
 				slot2 = false
 				slot1.enabled = slot2
-				slot1 = uv0
-				slot2 = uv0
+				slot1 = slot0
+				slot2 = slot0
 				slot3 = slot2
 				slot2 = slot2.findTF
 				slot4 = "ring_light"
-				slot5 = uv0
+				slot5 = slot0
 				slot5 = slot5.ringTF
 				slot2 = slot2(slot3, slot4, slot5)
 				slot1.ringLight = slot2
-				slot1 = uv0
+				slot1 = slot0
 				slot2 = GetOrAddComponent
-				slot3 = uv0
+				slot3 = slot0
 				slot3 = slot3.ringLight
 				slot4 = typeof
 				slot5 = CanvasGroup
 				slot2 = slot2(slot3, slot4(slot5))
 				slot1.ringLightCG = slot2
-				slot1 = uv0
+				slot1 = slot0
 				slot2 = GetOrAddComponent
-				slot3 = uv0
+				slot3 = slot0
 				slot3 = slot3.ringTF
 				slot4 = typeof
 				slot5 = CanvasGroup
 				slot2 = slot2(slot3, slot4(slot5))
 				slot1.ringCG = slot2
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
 			slot3(slot4, slot5, slot6, slot7)
@@ -2188,66 +2758,66 @@ function slot2(slot0)
 			slot4 = tf
 			slot5 = slot0
 			slot4 = slot4(slot5)
-			slot5 = uv0
+			slot5 = slot0
 			slot6 = slot5
 			slot5 = slot5.findTF
 			slot7 = "contain"
 
 			slot3(slot4, slot5(slot6, slot7))
 
-			slot3 = uv0
-			slot4 = uv0
+			slot3 = slot0
+			slot4 = slot0
 			slot5 = slot4
 			slot4 = slot4.findTF
 			slot6 = "ringBox"
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.proposePanel
 			slot4 = slot4(slot5, slot6, slot7)
 			slot3.ringBoxTF = slot4
-			slot3 = uv0
-			slot4 = uv0
+			slot3 = slot0
+			slot4 = slot0
 			slot5 = slot4
 			slot4 = slot4.findTF
 			slot6 = "full"
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.ringBoxTF
 			slot4 = slot4(slot5, slot6, slot7)
 			slot3.ringBoxFull = slot4
-			slot3 = uv0
+			slot3 = slot0
 			slot4 = GetOrAddComponent
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.ringBoxTF
 			slot6 = typeof
 			slot7 = CanvasGroup
 			slot4 = slot4(slot5, slot6(slot7))
 			slot3.ringBoxCG = slot4
-			slot3 = uv0
-			slot4 = uv0
+			slot3 = slot0
+			slot4 = slot0
 			slot5 = slot4
 			slot4 = slot4.findTF
 			slot6 = "before"
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.proposePanel
 			slot4 = slot4(slot5, slot6, slot7)
 			slot3.churchBefore = slot4
-			slot3 = uv0
-			slot4 = uv0
+			slot3 = slot0
+			slot4 = slot0
 			slot5 = slot4
 			slot4 = slot4.findTF
 			slot6 = "light"
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.churchBefore
 			slot4 = slot4(slot5, slot6, slot7)
 			slot3.churchLight = slot4
 			slot3 = setParent
-			slot4 = uv0
+			slot4 = slot0
 			slot4 = slot4.churchLight
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5._tf
 
 			slot3(slot4, slot5)
 
-			slot3 = uv0
+			slot3 = slot0
 			slot3 = slot3.churchLight
 			slot4 = slot3
 			slot3 = slot3.SetSiblingIndex
@@ -2255,73 +2825,73 @@ function slot2(slot0)
 
 			slot3(slot4, slot5)
 
-			slot3 = uv0
-			slot4 = uv0
+			slot3 = slot0
+			slot4 = slot0
 			slot5 = slot4
 			slot4 = slot4.findTF
 			slot6 = "blackbg"
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.churchBefore
 			slot4 = slot4(slot5, slot6, slot7)
 			slot3.blackBG = slot4
-			slot3 = uv0
-			slot4 = uv0
+			slot3 = slot0
+			slot4 = slot0
 			slot5 = slot4
 			slot4 = slot4.findTF
 			slot6 = "door_light"
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.churchBefore
 			slot4 = slot4(slot5, slot6, slot7)
 			slot3.doorLightBG = slot4
-			slot3 = uv0
-			slot4 = uv0
+			slot3 = slot0
+			slot4 = slot0
 			slot5 = slot4
 			slot4 = slot4.findTF
 			slot6 = "door"
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.churchBefore
 			slot4 = slot4(slot5, slot6, slot7)
 			slot3.door = slot4
-			slot3 = uv0
+			slot3 = slot0
 			slot4 = GetOrAddComponent
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.door
 			slot6 = "SpineAnimUI"
 			slot4 = slot4(slot5, slot6)
 			slot3.doorAni = slot4
 			slot3 = setParent
-			slot4 = uv0
+			slot4 = slot0
 			slot4 = slot4.churchBefore
-			slot5 = uv0
+			slot5 = slot0
 			slot6 = slot5
 			slot5 = slot5.findTF
 			slot7 = "contain"
 
 			slot3(slot4, slot5(slot6, slot7))
 
-			slot3 = uv0
-			slot4 = uv0
+			slot3 = slot0
+			slot4 = slot0
 			slot5 = slot4
 			slot4 = slot4.findTF
 			slot6 = "tip"
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.proposePanel
 			slot4 = slot4(slot5, slot6, slot7)
 			slot3.ringTipTF = slot4
-			slot3 = uv0
+			slot3 = slot0
 			slot4 = GetOrAddComponent
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.ringTipTF
 			slot6 = typeof
 			slot7 = CanvasGroup
 			slot4 = slot4(slot5, slot6(slot7))
 			slot3.ringTipCG = slot4
 			slot3 = setText
-			slot4 = uv0
+			slot4 = slot0
 			slot5 = slot4
 			slot4 = slot4.findTF
 			slot6 = "Text"
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.ringTipTF
 			slot4 = slot4(slot5, slot6, slot7)
 			slot5 = i18n
@@ -2330,11 +2900,11 @@ function slot2(slot0)
 			slot3(slot4, slot5(slot6))
 
 			slot3 = setActive
-			slot4 = uv0
+			slot4 = slot0
 			slot5 = slot4
 			slot4 = slot4.findTF
 			slot6 = "finger"
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7.ringTipTF
 			slot4 = slot4(slot5, slot6, slot7)
 			slot5 = false
@@ -2342,25 +2912,43 @@ function slot2(slot0)
 			slot3(slot4, slot5)
 
 			slot3 = onButton
-			slot4 = uv0
-			slot5 = uv0
+			slot4 = slot0
+			slot5 = slot0
 			slot5 = slot5.ringBoxTF
 
 			function slot6()
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-4, warpins: 1 ---
+				slot0 = slot0
 				slot0 = slot0.ringBoxClicked
 
 				if slot0 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 5-5, warpins: 1 ---
 					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
-				slot0 = uv0
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 6-25, warpins: 1 ---
+				slot0 = slot0
 				slot1 = true
 				slot0.ringBoxClicked = slot1
 				slot0 = LeanTween
 				slot0 = slot0.alpha
 				slot1 = rtf
-				slot2 = uv0
+				slot2 = slot0
 				slot2 = slot2.ringBoxFull
 				slot1 = slot1(slot2)
 				slot2 = 0
@@ -2372,6 +2960,9 @@ function slot2(slot0)
 				slot2 = slot2.Action
 
 				function slot3()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-9, warpins: 1 ---
 					slot0 = LeanTween
 					slot0 = slot0.delayedCall
 					slot1 = 0.1
@@ -2379,11 +2970,14 @@ function slot2(slot0)
 					slot2 = slot2.Action
 
 					function slot3()
-						slot0 = uv0
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 1-19, warpins: 1 ---
+						slot0 = slot0
 						slot0 = slot0.ringAnim
 						slot1 = true
 						slot0.enabled = slot1
-						slot0 = uv0
+						slot0 = slot0
 						slot0 = slot0.ringAnim
 						slot1 = slot0
 						slot0 = slot0.Play
@@ -2398,7 +2992,10 @@ function slot2(slot0)
 						slot2 = slot2.Action
 
 						function slot3()
-							slot0 = uv0
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 1-25, warpins: 1 ---
+							slot0 = slot0
 							slot0 = slot0.ringAnim
 							slot1 = slot0
 							slot0 = slot0.Play
@@ -2408,7 +3005,7 @@ function slot2(slot0)
 
 							slot0 = LeanTween
 							slot0 = slot0.alphaCanvas
-							slot1 = uv0
+							slot1 = slot0
 							slot1 = slot1.ringTipCG
 							slot2 = 1
 							slot3 = 1.5
@@ -2423,49 +3020,90 @@ function slot2(slot0)
 							slot2 = slot2.Action
 
 							function slot3()
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 1-16, warpins: 1 ---
 								slot0 = setActive
-								slot1 = uv0
+								slot1 = slot0
 								slot2 = slot1
 								slot1 = slot1.findTF
 								slot3 = "finger"
-								slot4 = uv0
+								slot4 = slot0
 								slot4 = slot4.ringTipTF
 								slot1 = slot1(slot2, slot3, slot4)
 								slot2 = true
 
 								slot0(slot1, slot2)
 
-								slot0 = uv0
+								slot0 = slot0
 								slot1 = slot0
 								slot0 = slot0.enableRingDrag
 								slot2 = true
 
 								slot0(slot1, slot2)
+
+								return
+								--- END OF BLOCK #0 ---
+
+
+
 							end
 
 							slot0(slot1, slot2(slot3))
+
+							return
+							--- END OF BLOCK #0 ---
+
+
+
 						end
 
 						slot0(slot1, slot2(slot3))
+
+						return
+						--- END OF BLOCK #0 ---
+
+
+
 					end
 
 					slot0(slot1, slot2(slot3))
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
 				slot0(slot1, slot2(slot3))
+
+				return
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 26-26, warpins: 2 ---
+				--- END OF BLOCK #2 ---
+
+
+
 			end
 
 			slot3(slot4, slot5, slot6)
 
 			slot3 = LoadImageSpriteAsync
-			slot4 = uv0
+			slot4 = slot0
 			slot4 = slot4.bgName
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.storybg
 
 			slot3(slot4, slot5)
 
-			slot3 = uv0
+			slot3 = slot0
 			slot3 = slot3.storybg
 			slot4 = Vector3
 			slot5 = 1.2
@@ -2476,40 +3114,120 @@ function slot2(slot0)
 			slot3 = onNextTick
 
 			function slot4()
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-4, warpins: 1 ---
+				slot0 = slot0
 				slot0 = slot0.exited
 
 				if slot0 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 5-5, warpins: 1 ---
 					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
-				slot0 = uv1
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 6-8, warpins: 2 ---
+				slot0 = slot1
 
 				slot0()
+
+				return
+				--- END OF BLOCK #1 ---
+
+
+
 			end
 
 			slot3(slot4)
+
+			return
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #4 262-262, warpins: 2 ---
+			--- END OF BLOCK #4 ---
+
+
+
 		end
 
 		slot3(slot4, slot5, slot6, slot7)
 
 		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 46-47, warpins: 1 ---
 	slot2 = slot1
 
 	slot2()
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 48-49, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+
+
 end
 
 slot0.showProposePanel = slot2
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isRingOn
 
 	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-4, warpins: 1 ---
 		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-29, warpins: 1 ---
 	slot1 = setActive
 	slot2 = slot0.ringTipTF
 	slot3 = false
@@ -2527,43 +3245,83 @@ function slot2(slot0)
 	slot2 = slot1.SetEndEvent
 
 	function slot4(slot0)
-		slot1 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot1 = slot0
 		slot1 = slot1.ringAnim
 		slot2 = false
 		slot1.enabled = slot2
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = false
 		slot1.isRingOn = slot2
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.weddingReview
 
 		if not slot1 then
-			slot1 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 12-21, warpins: 1 ---
+			slot1 = slot0
 			slot2 = slot1
 			slot1 = slot1.emit
 			slot3 = ProposeMediator
 			slot3 = slot3.ON_PROPOSE
-			slot4 = uv0
+			slot4 = slot0
 			slot4 = slot4.shipVO
 			slot4 = slot4.id
 
 			slot1(slot2, slot3, slot4)
+			--- END OF BLOCK #0 ---
+
+
+
 		else
-			slot1 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 22-26, warpins: 1 ---
+			slot1 = slot0
 			slot2 = slot1
 			slot1 = slot1.RingFadeout
 
 			function slot3()
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-6, warpins: 1 ---
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.displayShipWord
 				slot2 = "propose"
 
 				slot0(slot1, slot2)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
 			slot1(slot2, slot3)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 27-27, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
 	slot2(slot3, slot4)
@@ -2577,27 +3335,68 @@ function slot2(slot0)
 	slot4 = "wear"
 
 	slot2(slot3, slot4)
+
+	return
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 30-30, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 slot0.ringOn = slot2
 
 function slot2(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.press
 
 	if not slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-6, warpins: 1 ---
 		slot3 = slot0
 		slot2 = slot0.addRingDragListenter
 
 		slot2(slot3)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 7-9, warpins: 2 ---
 	slot2 = slot0.press
 	slot2.enabled = slot1
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 slot0.enableRingDrag = slot2
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = GetOrAddComponent
 	slot2 = slot0.proposePanel
 	slot3 = "EventTriggerListener"
@@ -2609,6 +3408,14 @@ function slot2(slot0)
 	slot2 = slot2.AddBeginDragFunc
 
 	function slot4()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-1, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot2(slot3, slot4)
@@ -2618,40 +3425,79 @@ function slot2(slot0)
 	slot2 = slot2.AddDragFunc
 
 	function slot4(slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
 		slot2 = slot1.position
-		slot3 = uv0
+		slot3 = slot0
 
 		if not slot3 then
-			uv0 = slot2
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 5-5, warpins: 1 ---
+			slot0 = slot2
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 6-12, warpins: 2 ---
 		slot3 = slot2.y
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.y
 		slot3 = slot3 - slot4
 		slot4 = 100
 
 		if slot3 > slot4 then
-			slot3 = uv1
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 13-26, warpins: 1 ---
+			slot3 = slot1
 			slot4 = slot3
 			slot3 = slot3.setMask
 			slot5 = true
 
 			slot3(slot4, slot5)
 
-			slot3 = uv1
+			slot3 = slot1
 			slot4 = slot3
 			slot3 = slot3.ringOn
 
 			slot3(slot4)
 
-			slot3 = uv1
+			slot3 = slot1
 			slot4 = slot3
 			slot3 = slot3.enableRingDrag
 			slot5 = false
 
 			slot3(slot4, slot5)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 27-27, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
 	slot2(slot3, slot4)
@@ -2661,14 +3507,31 @@ function slot2(slot0)
 	slot2 = slot2.AddDragEndFunc
 
 	function slot4(slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-1, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot2(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 slot0.addRingDragListenter = slot2
 
 function slot2(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-52, warpins: 1 ---
 	slot2 = LeanTween
 	slot2 = slot2.alphaCanvas
 	slot3 = slot0.ringLightCG
@@ -2708,13 +3571,37 @@ function slot2(slot0, slot1)
 	slot4 = slot4.Action
 
 	function slot5()
-		slot0 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = slot0
 
 		if slot0 then
-			slot0 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-5, warpins: 1 ---
+			slot0 = slot0
 
 			slot0()
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 6-6, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
 	slot2(slot3, slot4(slot5))
@@ -2726,13 +3613,22 @@ function slot2(slot0, slot1)
 	slot4 = slot4.Action
 
 	function slot5()
-		slot0 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.showbgAdd
 		slot2 = false
 		slot3 = 1.8
 
 		slot0(slot1, slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot2(slot3, slot4(slot5))
@@ -2744,28 +3640,46 @@ function slot2(slot0, slot1)
 	slot4 = slot4.Action
 
 	function slot5()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-12, warpins: 1 ---
 		slot0 = setActive
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.proposePanel
 		slot2 = false
 
 		slot0(slot1, slot2)
 
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.showbgAdd
 		slot2 = true
 		slot3 = 2
 
 		slot0(slot1, slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot2(slot3, slot4(slot5))
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 slot0.RingFadeout = slot2
 
 function slot2(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = ShipGroup
 	slot2 = slot2.getDefaultSkin
 	slot3 = slot0.shipGroupID
@@ -2779,19 +3693,55 @@ function slot2(slot0, slot1)
 	slot7 = slot0.reviewSkinID
 
 	if slot7 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 14-15, warpins: 1 ---
 		slot6 = slot0.reviewSkinID
+		--- END OF BLOCK #0 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 16-18, warpins: 1 ---
 		slot7 = slot0.proposeSkin
 
 		if slot7 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 19-21, warpins: 1 ---
 			slot7 = slot0.proposeSkin
 			slot6 = slot7.id
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 22-23, warpins: 1 ---
 			slot7 = slot0.shipVO
 			slot6 = slot7.skinId
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 24-34, warpins: 3 ---
 	slot7 = Ship
 	slot7 = slot7.getCVCalibrate
 	slot8 = slot6
@@ -2804,30 +3754,60 @@ function slot2(slot0, slot1)
 	slot8(slot9, slot10)
 
 	if slot4 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 35-38, warpins: 1 ---
 		function slot8()
-			slot0 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0 = slot0
 			slot0 = slot0._currentVoice
 
 			if slot0 then
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 5-10, warpins: 1 ---
+				slot0 = slot0
 				slot0 = slot0._currentVoice
 				slot1 = slot0
 				slot0 = slot0.Stop
 				slot2 = true
 
 				slot0(slot1, slot2)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
-			slot0 = uv0
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 11-16, warpins: 2 ---
+			slot0 = slot0
 			slot1 = playSoundEffect
-			slot2 = uv1
+			slot2 = slot1
 			slot1 = slot1(slot2)
 			slot0._currentVoice = slot1
+
+			return
+			--- END OF BLOCK #1 ---
+
+
+
 		end
 
 		slot9 = slot0.l2dChar
 
 		if slot9 and slot7 and slot7 ~= 0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 43-53, warpins: 1 ---
 			slot9 = LeanTween
 			slot9 = slot9.delayedCall
 			slot10 = slot7
@@ -2835,30 +3815,82 @@ function slot2(slot0, slot1)
 			slot11 = slot11.Action
 
 			function slot12()
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-6, warpins: 1 ---
+				slot0 = slot0
 
 				slot0()
 
-				slot0 = uv1
+				slot0 = slot1
 				slot1 = nil
 				slot0._delayVoiceTweenID = slot1
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
 			slot9 = slot9(slot10, slot11(slot12))
 			slot10 = slot9.id
 			slot0._delayVoiceTweenID = slot10
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 54-55, warpins: 3 ---
 			slot9 = slot8
 
 			slot9()
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 56-56, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
 	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 57-58, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 slot0.displayShipWord = slot2
 
 function slot2(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
 	function slot2()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-14, warpins: 1 ---
 		slot0 = ResourceMgr
 		slot0 = slot0.Inst
 		slot1 = slot0
@@ -2866,36 +3898,58 @@ function slot2(slot0, slot1)
 		slot2 = "live2d/"
 		slot3 = string
 		slot3 = slot3.lower
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.paintingName
 		slot3 = slot3(slot4)
 		slot2 = slot2 .. slot3
 		slot0 = slot0(slot1, slot2)
 
 		if slot0 then
-			slot0 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 15-20, warpins: 1 ---
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.showLive2D
 			slot2 = "wedding"
 
 			slot0(slot1, slot2)
+			--- END OF BLOCK #0 ---
+
+
+
 		else
-			slot0 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 21-26, warpins: 1 ---
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.showPainting
 			slot2 = true
 			slot3 = 2
 
 			slot0(slot1, slot2, slot3)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 27-80, warpins: 2 ---
 		slot0 = ShipGroup
 		slot0 = slot0.getDefaultShipNameByGroupID
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.shipGroupID
 		slot0 = slot0(slot1)
 		slot1 = setText
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.targetNameTF
 		slot3 = slot2
 		slot2 = slot2.Find
@@ -2906,29 +3960,29 @@ function slot2(slot0, slot1)
 		slot1(slot2, slot3)
 
 		slot1 = setText
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.storyContent
 		slot3 = ""
 
 		slot1(slot2, slot3)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.storyCG
 		slot2 = 0
 		slot1.alpha = slot2
 		slot1 = setActive
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.storyTF
 		slot3 = true
 
 		slot1(slot2, slot3)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = false
 		slot1.initStory = slot2
 		slot1 = LeanTween
 		slot1 = slot1.alphaCanvas
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.storyCG
 		slot3 = 1
 		slot4 = 1
@@ -2947,15 +4001,18 @@ function slot2(slot0, slot1)
 		slot3 = slot3.Action
 
 		function slot4()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-14, warpins: 1 ---
 			slot0 = setTextEN
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.storyContent
-			slot2 = uv1
+			slot2 = slot1
 
 			slot0(slot1, slot2)
 
 			slot0 = findTF
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.targetActorTF
 			slot2 = "fitter"
 			slot0 = slot0(slot1, slot2)
@@ -2963,10 +4020,13 @@ function slot2(slot0, slot1)
 			slot1 = 0
 
 			if slot0 > slot1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 15-29, warpins: 1 ---
 				slot0 = Ship
 				slot0 = slot0.SetExpression
 				slot1 = findTF
-				slot2 = uv0
+				slot2 = slot0
 				slot2 = slot2.targetActorTF
 				slot3 = "fitter"
 				slot1 = slot1(slot2, slot3)
@@ -2974,57 +4034,99 @@ function slot2(slot0, slot1)
 				slot1 = slot1.GetChild
 				slot3 = 0
 				slot1 = slot1(slot2, slot3)
-				slot2 = uv0
+				slot2 = slot0
 				slot2 = slot2.paintingName
 				slot3 = "propose"
 
 				slot0(slot1, slot2, slot3)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 30-53, warpins: 2 ---
 			slot0 = setText
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.storyContent
-			slot2 = uv1
+			slot2 = slot1
 
 			slot0(slot1, slot2)
 
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = true
 			slot0.onWords = slot1
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.TypeWriter
 
 			slot0(slot1)
 
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = true
 			slot0.initStory = slot1
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.setMask
 			slot2 = false
 
 			slot0(slot1, slot2)
 
-			slot0 = uv0
+			slot0 = slot0
 			slot0 = slot0.weddingReview
 
 			if not slot0 then
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 54-57, warpins: 1 ---
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.showTip
 
 				slot0(slot1)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 58-58, warpins: 2 ---
+			return
+			--- END OF BLOCK #2 ---
+
+
+
 		end
 
 		slot1(slot2, slot3(slot4))
+
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
 	slot3 = slot0.storyTF
 
 	if not slot3 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-15, warpins: 1 ---
 		slot3 = "ProposeStoryUI"
 		slot4 = PoolMgr
 		slot4 = slot4.GetInstance
@@ -3035,6 +4137,9 @@ function slot2(slot0, slot1)
 		slot7 = true
 
 		function slot8(slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-12, warpins: 1 ---
 			slot1 = pg
 			slot1 = slot1.UIMgr
 			slot2 = slot1
@@ -3045,24 +4150,39 @@ function slot2(slot0, slot1)
 
 			slot1(slot2)
 
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.exited
 
 			if slot1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 13-21, warpins: 1 ---
 				slot1 = PoolMgr
 				slot1 = slot1.GetInstance
 				slot1 = slot1()
 				slot2 = slot1
 				slot1 = slot1.ReturnUI
-				slot3 = uv1
+				slot3 = slot1
 				slot4 = slot0
 
 				slot1(slot2, slot3, slot4)
 
 				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
-			slot1 = uv0
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 22-100, warpins: 1 ---
+			slot1 = slot0
 			slot2 = tf
 			slot3 = slot0
 			slot2 = slot2(slot3)
@@ -3071,32 +4191,32 @@ function slot2(slot0, slot1)
 			slot2 = tf
 			slot3 = slot0
 			slot2 = slot2(slot3)
-			slot3 = uv0
+			slot3 = slot0
 			slot4 = slot3
 			slot3 = slot3.findTF
 			slot5 = "contain"
 
 			slot1(slot2, slot3(slot4, slot5))
 
-			slot1 = uv0
+			slot1 = slot0
 			slot2 = GetOrAddComponent
-			slot3 = uv0
+			slot3 = slot0
 			slot3 = slot3.storyTF
 			slot4 = typeof
 			slot5 = CanvasGroup
 			slot2 = slot2(slot3, slot4(slot5))
 			slot1.storyCG = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "dialogue/main/content"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.storyTF
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.storyContent = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot2 = slot2.storyContent
 			slot3 = slot2
 			slot2 = slot2.GetComponent
@@ -3104,63 +4224,96 @@ function slot2(slot0, slot1)
 			slot5 = Typewriter
 			slot2 = slot2(slot3, slot4(slot5))
 			slot1.typeWriter = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "dialogue/main/name_left"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.storyTF
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1.targetNameTF = slot2
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
 			slot4 = "changeName_panel"
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.storyTF
 			slot2 = slot2(slot3, slot4, slot5)
 			slot1._renamePanel = slot2
 			slot1 = setActive
-			slot2 = uv0
+			slot2 = slot0
 			slot2 = slot2._renamePanel
 			slot3 = false
 
 			slot1(slot2, slot3)
 
 			slot1 = onButton
-			slot2 = uv0
-			slot3 = uv0
+			slot2 = slot0
+			slot3 = slot0
 			slot3 = slot3.storyTF
 
 			function slot4()
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-4, warpins: 1 ---
+				slot0 = slot0
 				slot0 = slot0.inTypeWritter
 
 				if slot0 then
-					slot0 = uv0
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 5-12, warpins: 1 ---
+					slot0 = slot0
 					slot0 = slot0.typeWriter
 					slot1 = slot0
 					slot0 = slot0.setSpeed
-					slot2 = uv0
+					slot2 = slot0
 					slot2 = slot2.typeWritterSpeedUp
 
 					slot0(slot1, slot2)
 
 					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
-				slot0 = uv0
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 13-16, warpins: 1 ---
+				slot0 = slot0
 				slot0 = slot0.initStory
 
 				if not slot0 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 17-17, warpins: 1 ---
 					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 18-39, warpins: 1 ---
 				slot0 = LeanTween
 				slot0 = slot0.alphaCanvas
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1.storyCG
 				slot2 = 0
 				slot3 = 1
@@ -3175,33 +4328,57 @@ function slot2(slot0, slot1)
 				slot2 = slot2.Action
 
 				function slot3()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-6, warpins: 1 ---
 					slot0 = setActive
-					slot1 = uv0
+					slot1 = slot0
 					slot1 = slot1.storyTF
 					slot2 = false
 
 					slot0(slot1, slot2)
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
 				slot0(slot1, slot2(slot3))
 
-				slot0 = uv0
+				slot0 = slot0
 				slot0 = slot0._currentVoice
 
 				if slot0 then
-					slot0 = uv0
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 40-45, warpins: 1 ---
+					slot0 = slot0
 					slot0 = slot0._currentVoice
 					slot1 = slot0
 					slot0 = slot0.Stop
 					slot2 = true
 
 					slot0(slot1, slot2)
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
-				slot0 = uv0
+				--- END OF BLOCK #2 ---
+
+				FLOW; TARGET BLOCK #3
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #3 46-62, warpins: 2 ---
+				slot0 = slot0
 				slot1 = nil
 				slot0._currentVoice = slot1
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.setMask
 				slot2 = true
@@ -3215,31 +4392,84 @@ function slot2(slot0, slot1)
 				slot2 = slot2.Action
 
 				function slot3()
-					slot0 = uv0
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-4, warpins: 1 ---
+					slot0 = slot0
 					slot0 = slot0.weddingReview
 
 					if slot0 then
-						slot0 = uv0
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 5-9, warpins: 1 ---
+						slot0 = slot0
 						slot1 = slot0
 						slot0 = slot0.close
 
 						slot0(slot1)
+						--- END OF BLOCK #0 ---
+
+
+
 					else
-						slot0 = uv0
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 10-17, warpins: 1 ---
+						slot0 = slot0
 						slot1 = slot0
 						slot0 = slot0.initChangeNamePanel
 
 						slot0(slot1)
 
-						slot0 = uv0
+						slot0 = slot0
 						slot1 = slot0
 						slot0 = slot0.stampWindow
 
 						slot0(slot1)
+						--- END OF BLOCK #0 ---
+
+
+
 					end
+
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 18-18, warpins: 2 ---
+					return
+					--- END OF BLOCK #1 ---
+
+
+
 				end
 
 				slot0(slot1, slot2(slot3))
+
+				return
+				--- END OF BLOCK #3 ---
+
+				FLOW; TARGET BLOCK #4
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #4 63-63, warpins: 2 ---
+				--- END OF BLOCK #4 ---
+
+				FLOW; TARGET BLOCK #5
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #5 64-64, warpins: 2 ---
+				--- END OF BLOCK #5 ---
+
+
+
 			end
 
 			slot1(slot2, slot3, slot4)
@@ -3247,38 +4477,103 @@ function slot2(slot0, slot1)
 			slot1 = onNextTick
 
 			function slot2()
-				slot0 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-4, warpins: 1 ---
+				slot0 = slot0
 				slot0 = slot0.exited
 
 				if slot0 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 5-5, warpins: 1 ---
 					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
-				slot0 = uv1
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 6-8, warpins: 2 ---
+				slot0 = slot1
 
 				slot0()
+
+				return
+				--- END OF BLOCK #1 ---
+
+
+
 			end
 
 			slot1(slot2)
 
-			slot1 = uv0
+			slot1 = slot0
 			slot2 = true
 			slot1.loadFinish = slot2
+
+			return
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 101-101, warpins: 2 ---
+			--- END OF BLOCK #2 ---
+
+
+
 		end
 
 		slot4(slot5, slot6, slot7, slot8)
 
 		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 16-17, warpins: 1 ---
 	slot3 = slot2
 
 	slot3()
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 18-19, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 slot0.showStoryUI = slot2
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = 0.1
 	slot2 = true
 	slot0.inTypeWritter = slot2
@@ -3300,83 +4595,194 @@ function slot2(slot0)
 	slot2 = slot0.typeWriter
 
 	function slot3()
-		slot0 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = slot0
 		slot1 = false
 		slot0.inTypeWritter = slot1
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = nil
 		slot0.typeWritterSpeedUp = slot1
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot2.endFunc = slot3
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 slot0.TypeWriter = slot2
 
 function slot2(slot0, slot1, slot2, slot3)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
 	if not slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 3-3, warpins: 1 ---
 		slot1 = slot0._paintingTF
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 4-5, warpins: 2 ---
 	if not slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 6-6, warpins: 1 ---
 		slot2 = "wedding"
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 7-10, warpins: 2 ---
 	function slot4()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = IsNil
-		slot1 = uv0
+		slot1 = slot0
 		slot0 = slot0(slot1)
 
 		if not slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 6-22, warpins: 1 ---
 			slot0 = findTF
-			slot1 = uv0
+			slot1 = slot0
 			slot2 = "fitter"
 			slot0 = slot0(slot1, slot2)
 			slot1 = GetOrAddComponent
 			slot2 = slot0
 			slot3 = "PaintingScaler"
 			slot1 = slot1(slot2, slot3)
-			slot2 = uv1
+			slot2 = slot1
 			slot1.FrameName = slot2
 			slot2 = 1
 			slot1.Tween = slot2
 			slot2 = setParent
-			slot3 = uv2
+			slot3 = slot2
 			slot3 = slot3.actorPainting
 			slot4 = slot0
 
 			slot2(slot3, slot4)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 23-23, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
 	slot5 = slot0.actorPainting
 
 	if not slot5 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 11-13, warpins: 1 ---
 		slot5 = slot0.reviewSkinID
 
 		if slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 14-20, warpins: 1 ---
 			slot5 = pg
 			slot5 = slot5.ship_skin_template
 			slot6 = slot0.reviewSkinID
 			slot5 = slot5[slot6]
 			slot5 = slot5.painting
 			slot0.paintingName = slot5
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 21-23, warpins: 1 ---
 			slot5 = slot0.proposeSkin
 
 			if slot5 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 24-27, warpins: 1 ---
 				slot5 = slot0.proposeSkin
 				slot5 = slot5.painting
 				slot0.paintingName = slot5
+				--- END OF BLOCK #0 ---
+
+
+
 			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 28-32, warpins: 1 ---
 				slot5 = slot0.shipVO
 				slot6 = slot5
 				slot5 = slot5.getPainting
 				slot5 = slot5(slot6)
 				slot0.paintingName = slot5
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 33-54, warpins: 3 ---
 		slot5 = PoolMgr
 		slot5 = slot5.GetInstance
 		slot5 = slot5()
@@ -3386,6 +4792,9 @@ function slot2(slot0, slot1, slot2, slot3)
 		slot8 = true
 
 		function slot9(slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-9, warpins: 1 ---
 			slot1 = findTF
 			slot2 = slot0
 			slot3 = "Touch"
@@ -3395,40 +4804,91 @@ function slot2(slot0, slot1, slot2, slot3)
 			slot2 = slot2(slot3)
 
 			if not slot2 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 10-13, warpins: 1 ---
 				slot2 = setActive
 				slot3 = slot1
 				slot4 = false
 
 				slot2(slot3, slot4)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 14-19, warpins: 2 ---
 			slot2 = findTF
 			slot3 = slot0
 			slot4 = "hx"
 			slot2 = slot2(slot3, slot4)
 
 			if slot2 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 20-25, warpins: 1 ---
 				slot3 = setActive
 				slot4 = slot2
 				slot5 = HXSet
 				slot5 = slot5.isHx
 
 				slot3(slot4, slot5())
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
-			slot3 = uv0
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 26-32, warpins: 2 ---
+			slot3 = slot0
 			slot3.actorPainting = slot0
-			slot3 = uv1
+			slot3 = slot1
 
 			slot3()
 
-			slot3 = uv2
+			slot3 = slot2
 
 			if slot3 then
-				slot3 = uv2
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 33-34, warpins: 1 ---
+				slot3 = slot2
 
 				slot3()
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #3 35-35, warpins: 2 ---
+			return
+			--- END OF BLOCK #3 ---
+
+
+
 		end
 
 		slot5(slot6, slot7, slot8, slot9)
@@ -3446,22 +4906,57 @@ function slot2(slot0, slot1, slot2, slot3)
 		slot5 = slot5(slot6, slot7)
 
 		if slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 55-59, warpins: 1 ---
 			slot6 = slot0
 			slot5 = slot0.createLive2D
 			slot7 = slot0.paintingName
 
 			slot5(slot6, slot7)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #1 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 60-61, warpins: 1 ---
 		slot5 = slot4
 
 		slot5()
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 62-63, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
 end
 
 slot0.loadChar = slot2
 
 function slot2(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.Live2DMgr
 	slot2 = slot2.GetInstance
@@ -3471,23 +4966,41 @@ function slot2(slot0, slot1)
 	slot4 = slot1
 
 	function slot5(slot0)
-		slot1 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot1 = slot0
 		slot1 = slot1.exited
 
 		if slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 5-8, warpins: 1 ---
 			slot1 = Destroy
 			slot2 = slot0
 
 			slot1(slot2)
 
 			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
-		slot1 = uv0
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 9-34, warpins: 1 ---
+		slot1 = slot0
 		slot2 = slot1
 		slot1 = slot1.findTF
 		slot3 = "live2d"
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.targetActorTF
 		slot1 = slot1(slot2, slot3, slot4)
 		slot2 = UIUtil
@@ -3508,27 +5021,63 @@ function slot2(slot0, slot1)
 		slot3(slot4, slot5, slot6)
 
 		slot3 = nil
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.reviewSkinID
 
 		if slot4 then
-			slot4 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 35-37, warpins: 1 ---
+			slot4 = slot0
 			slot3 = slot4.reviewSkinID
+			--- END OF BLOCK #0 ---
+
+
+
 		else
-			slot4 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 38-41, warpins: 1 ---
+			slot4 = slot0
 			slot4 = slot4.proposeSkin
 
 			if slot4 then
-				slot4 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 42-45, warpins: 1 ---
+				slot4 = slot0
 				slot4 = slot4.proposeSkin
 				slot3 = slot4.id
+				--- END OF BLOCK #0 ---
+
+
+
 			else
-				slot4 = uv0
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 46-48, warpins: 1 ---
+				slot4 = slot0
 				slot4 = slot4.shipVO
 				slot3 = slot4.skinId
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 49-99, warpins: 3 ---
 		slot4 = BuildVector3
 		slot5 = pg
 		slot5 = slot5.ship_skin_template
@@ -3552,39 +5101,63 @@ function slot2(slot0, slot1)
 		slot6 = slot2.localScale
 		slot4 = slot4(slot5, slot6)
 		slot2.localScale = slot4
-		slot4 = uv0
+		slot4 = slot0
 		slot5 = GetComponent
 		slot6 = slot0
 		slot7 = "Live2dChar"
 		slot5 = slot5(slot6, slot7)
 		slot4.l2dChar = slot5
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.l2dChar
-		slot5 = uv1
+		slot5 = slot1
 		slot4.name = slot5
 		slot4 = pg
 		slot4 = slot4.AssistantInfo
 		slot4 = slot4.action2Id
 		slot4 = slot4.idle
-		slot5 = uv0
+		slot5 = slot0
 		slot5 = slot5.l2dChar
 
 		function slot6(slot0)
-			slot1 = uv0
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-3, warpins: 1 ---
+			slot1 = slot0
 
 			if slot1 ~= slot0 then
-				slot1 = uv1
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 4-9, warpins: 1 ---
+				slot1 = slot1
 				slot1 = slot1.l2dChar
 				slot2 = slot1
 				slot1 = slot1.SetAction
-				slot3 = uv0
+				slot3 = slot0
 
 				slot1(slot2, slot3)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 10-10, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
 		end
 
 		slot5.FinishAction = slot6
-		slot5 = uv0
+		slot5 = slot0
 		slot5 = slot5.l2dChar
 		slot6 = slot5
 		slot5 = slot5.SetAction
@@ -3596,6 +5169,9 @@ function slot2(slot0, slot1)
 		slot6 = 18
 
 		if slot5 > slot6 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 100-106, warpins: 1 ---
 			slot5 = pg
 			slot5 = slot5.ship_skin_template
 			slot5 = slot5[slot3]
@@ -3603,6 +5179,9 @@ function slot2(slot0, slot1)
 			slot7 = slot5.lip_smoothing
 
 			if slot6 and slot6 ~= 0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 109-117, warpins: 1 ---
 				slot9 = slot1
 				slot8 = slot1.GetChild
 				slot10 = 0
@@ -3612,9 +5191,24 @@ function slot2(slot0, slot1)
 				slot10 = "CubismCriSrcMouthInput"
 				slot8 = slot8(slot9, slot10)
 				slot8.Gain = slot6
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 118-119, warpins: 3 ---
 			if slot7 and slot7 ~= 0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 122-130, warpins: 1 ---
 				slot9 = slot1
 				slot8 = slot1.GetChild
 				slot10 = 0
@@ -3624,22 +5218,76 @@ function slot2(slot0, slot1)
 				slot10 = "CubismCriSrcMouthInput"
 				slot8 = slot8(slot9, slot10)
 				slot8.Smoothing = slot7
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #1 ---
+
+
+
 		end
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 131-132, warpins: 4 ---
+		return
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 133-133, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+
+
 	end
 
 	slot2(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 slot0.createLive2D = slot2
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.proposeSkin
 
 	if not slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-4, warpins: 1 ---
 		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-56, warpins: 2 ---
 	slot3 = slot0
 	slot2 = slot0.findTF
 	slot4 = "tip"
@@ -3696,11 +5344,20 @@ function slot2(slot0)
 	slot7 = 4
 
 	slot5(slot6, slot7)
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 slot0.showTip = slot2
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-95, warpins: 1 ---
 	slot1 = setText
 	slot2 = slot0._renamePanel
 	slot3 = slot2
@@ -3776,9 +5433,12 @@ function slot2(slot0)
 	slot3 = slot0._renameConfirmBtn
 
 	function slot4()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-28, warpins: 1 ---
 		slot0 = getInputText
 		slot1 = findTF
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2._renamePanel
 		slot3 = "frame/name_field"
 		slot0 = slot0(slot1(slot2, slot3))
@@ -3788,23 +5448,29 @@ function slot2(slot0)
 		slot1 = slot1()
 		slot2 = slot1
 		slot1 = slot1.setSwitchShipName
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3._renameToggle
 		slot3 = slot3.isOn
 
 		slot1(slot2, slot3)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = slot1
 		slot1 = slot1.emit
 		slot3 = ProposeMediator
 		slot3 = slot3.RENAME_SHIP
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.shipVO
 		slot4 = slot4.id
 		slot5 = slot0
 
 		slot1(slot2, slot3, slot4, slot5)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot5 = SFX_CONFIRM
@@ -3816,18 +5482,24 @@ function slot2(slot0)
 	slot3 = slot0._renameRevert
 
 	function slot4()
-		slot0 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = slot0
 		slot0 = slot0.shipVO
 		slot1 = slot0
 		slot0 = slot0.isRemoulded
 		slot0 = slot0(slot1)
 
 		if slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 8-21, warpins: 1 ---
 			slot0 = HXSet
 			slot0 = slot0.hxLan
 			slot1 = pg
 			slot1 = slot1.ship_skin_template
-			slot2 = uv0
+			slot2 = slot0
 			slot2 = slot2.shipVO
 			slot3 = slot2
 			slot2 = slot2.getRemouldSkinId
@@ -3837,25 +5509,50 @@ function slot2(slot0)
 			slot0 = slot0(slot1)
 
 			if not slot0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 22-28, warpins: 2 ---
 				slot0 = pg
 				slot0 = slot0.ship_data_statistics
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1.shipVO
 				slot1 = slot1.configId
 				slot0 = slot0[slot1]
 				slot0 = slot0.name
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 29-37, warpins: 2 ---
 		slot1 = setInputText
 		slot2 = findTF
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3._renamePanel
 		slot4 = "frame/name_field"
 		slot2 = slot2(slot3, slot4)
 		slot3 = slot0
 
 		slot1(slot2, slot3)
+
+		return
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
 	slot5 = SFX_PANEL
@@ -3867,11 +5564,20 @@ function slot2(slot0)
 	slot3 = slot0._renameCancelBtn
 
 	function slot4()
-		slot0 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.close
 
 		slot0(slot1)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot5 = SFX_CANCEL
@@ -3883,32 +5589,59 @@ function slot2(slot0)
 	slot3 = slot0._closeBtn
 
 	function slot4()
-		slot0 = uv0
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.close
 
 		slot0(slot1)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot5 = SFX_CANCEL
 
 	slot1(slot2, slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 slot0.initChangeNamePanel = slot2
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0
 	slot1 = slot0.emit
-	slot3 = uv0
+	slot3 = slot0
 	slot3 = slot3.ON_CLOSE
 
 	slot1(slot2, slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 slot0.close = slot2
 
 function slot2(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = setParent
 	slot2 = slot0._renamePanel
 	slot3 = slot0._tf
@@ -3933,6 +5666,12 @@ function slot2(slot0)
 	slot4 = slot1
 
 	slot2(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 slot0.DisplayRenamePanel = slot2
