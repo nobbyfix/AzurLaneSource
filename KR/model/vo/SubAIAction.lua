@@ -1,6 +1,6 @@
 slot0 = class("SubAIAction", import(".BaseVO"))
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.line = {
 		row = slot1.ai_pos.row,
 		column = slot1.ai_pos.column
@@ -23,12 +23,12 @@ function slot0.Ctor(slot0, slot1)
 
 	_.each(slot1.map_update, function (slot0)
 		if slot0.item_type ~= ChapterConst.AttachNone and slot0.item_type ~= ChapterConst.AttachBorn and slot0.item_type ~= ChapterConst.AttachBorn_Sub and (slot0.item_type ~= ChapterConst.AttachStory or slot0.item_data ~= ChapterConst.StoryTrigger) then
-			table.insert(uv0.cellUpdates, slot0.item_type == ChapterConst.AttachChampion and ChapterChampion.New(slot0) or ChapterCell.New(slot0))
+			table.insert(slot0.cellUpdates, (slot0.item_type == ChapterConst.AttachChampion and ChapterChampion.New(slot0)) or ChapterCell.New(slot0))
 		end
 	end)
 end
 
-function slot0.applyTo(slot0, slot1, slot2)
+slot0.applyTo = function (slot0, slot1, slot2)
 	if slot1:getFleet(FleetType.Submarine, slot0.line.row, slot0.line.column) then
 		return slot0:applyToFleet(slot1, slot3, slot2)
 	end
@@ -36,7 +36,7 @@ function slot0.applyTo(slot0, slot1, slot2)
 	return false, "can not find any submarine at: [" .. slot0.line.row .. ", " .. slot0.line.column .. "]"
 end
 
-function slot0.applyToFleet(slot0, slot1, slot2, slot3)
+slot0.applyToFleet = function (slot0, slot1, slot2, slot3)
 	slot4 = 0
 
 	if not slot2:isValid() then
@@ -51,7 +51,7 @@ function slot0.applyToFleet(slot0, slot1, slot2, slot3)
 		end
 
 		if not _.detect(slot0.cellUpdates, function (slot0)
-			return slot0.row == uv0.target.row and slot0.column == uv0.target.column
+			return slot0.row == slot0.target.row and slot0.column == slot0.target.column
 		end) then
 			return false, "can not find cell update at: [" .. slot0.target.row .. ", " .. slot0.target.column .. "]"
 		end
@@ -72,7 +72,7 @@ function slot0.applyToFleet(slot0, slot1, slot2, slot3)
 		end
 	elseif #slot0.movePath > 0 then
 		if _.any(slot0.movePath, function (slot0)
-			return not uv0:getChapterCell(slot0.row, slot0.column) or not slot1.walkable
+			return not slot0:getChapterCell(slot0.row, slot0.column) or not slot1.walkable
 		end) then
 			return false, "invalide move path"
 		end
@@ -87,6 +87,28 @@ function slot0.applyToFleet(slot0, slot1, slot2, slot3)
 	end
 
 	return true, slot5
+end
+
+slot0.PlayAIAction = function (slot0, slot1, slot2, slot3)
+	if slot1:getFleetIndex(FleetType.Submarine, slot0.line.row, slot0.line.column) then
+		if slot0.target then
+			slot7 = "-" .. _.detect(slot0.cellUpdates, function (slot0)
+				return slot0.row == slot0.target.row and slot0.column == slot0.target.column
+			end).data / 100 .. "%"
+
+			slot2.viewComponent:doPlayStrikeAnim(slot1:getTorpedoShip(slot5), "SubTorpedoUI", function ()
+				slot0.viewComponent:strikeEnemy(slot1.target, , )
+			end)
+
+			return
+		end
+
+		if #slot0.movePath > 0 then
+			slot2.viewComponent.grid:moveSub(slot4, slot0.movePath, Clone(slot0.movePath), slot3)
+		else
+			slot3()
+		end
+	end
 end
 
 return slot0

@@ -13,16 +13,20 @@ slot0.FACTION_NAME = {
 	i18n("guild_faction_cszz")
 }
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.member = {}
+	slot2 = ipairs
+	slot3 = slot1.member or {}
 
-	for slot5, slot6 in ipairs(slot1.member or {}) do
+	for slot5, slot6 in slot2(slot3) do
 		slot0.member[GuildMember.New(slot6).id] = GuildMember.New(slot6)
 	end
 
 	slot0.logInfo = {}
+	slot2 = ipairs
+	slot3 = slot1.log or {}
 
-	for slot5, slot6 in ipairs(slot1.log or {}) do
+	for slot5, slot6 in slot2(slot3) do
 		table.insert(slot0.logInfo, GuildLogInfo.New(slot6))
 	end
 
@@ -31,7 +35,7 @@ function slot0.Ctor(slot0, slot1)
 	slot0:updateBaseInfo(slot1)
 end
 
-function slot0.updateBaseInfo(slot0, slot1)
+slot0.updateBaseInfo = function (slot0, slot1)
 	slot0.id = slot1.base or {}.id
 	slot0.policy = slot1.base or .policy
 	slot0.faction = slot1.base or .faction
@@ -59,8 +63,10 @@ function slot0.updateBaseInfo(slot0, slot1)
 	end
 
 	slot0.buffList = {}
+	slot4 = ipairs
+	slot5 = slot2.buff_list or {}
 
-	for slot7, slot8 in ipairs(slot2.buff_list or {}) do
+	for slot7, slot8 in slot4(slot5) do
 		slot0.buffList[slot8.buff_id] = {
 			id = slot8.buff_id,
 			level = slot8.level
@@ -73,70 +79,70 @@ function slot0.updateBaseInfo(slot0, slot1)
 	slot0.contributeFlag = 0
 end
 
-function slot0.setJoinColdTime(slot0, slot1)
+slot0.setJoinColdTime = function (slot0, slot1)
 	slot0.joinColdTime = slot1
 end
 
-function slot0.setContributeFlag(slot0, slot1)
+slot0.setContributeFlag = function (slot0, slot1)
 	slot0.contributeFlag = slot1
 end
 
-function slot0.updateBuff(slot0, slot1, slot2)
+slot0.updateBuff = function (slot0, slot1, slot2)
 	slot0.buffList[slot1] = {
 		id = slot1,
 		level = slot2
 	}
 end
 
-function slot0.updateMaxGold(slot0, slot1)
+slot0.updateMaxGold = function (slot0, slot1)
 	slot0.maxGoldAddition = slot0.maxGoldAddition + slot1
 end
 
-function slot0.updateMaxOil(slot0, slot1)
+slot0.updateMaxOil = function (slot0, slot1)
 	slot0.maxOilAddition = slot0.maxOilAddition + slot1
 end
 
-function slot0.addFacilityLogs(slot0, slot1)
+slot0.addFacilityLogs = function (slot0, slot1)
 	table.insert(slot0.facilityLogs, slot1)
 end
 
-function slot0.isContributed(slot0)
+slot0.isContributed = function (slot0)
 	return slot0.contributeFlag == 1
 end
 
-function slot0.inJoinColdTime(slot0)
+slot0.inJoinColdTime = function (slot0)
 	return pg.TimeMgr.GetInstance():GetServerTime() < slot0.joinColdTime
 end
 
-function slot0.resetGuildContributeFlag(slot0)
+slot0.resetGuildContributeFlag = function (slot0)
 	slot0.contributeFlag = 0
 end
 
-function slot0.markGuildContributeFlag(slot0)
+slot0.markGuildContributeFlag = function (slot0)
 	slot0.contributeFlag = 1
 end
 
-function slot0.consumeResource(slot0, slot1)
+slot0.consumeResource = function (slot0, slot1)
 	slot0.resource = math.max(slot0.resource - slot1, 0)
 end
 
-function slot0.getFacilityConfig(slot0)
+slot0.getFacilityConfig = function (slot0)
 	return pg.guild_facility_template
 end
 
-function slot0.updateFacility(slot0, slot1)
+slot0.updateFacility = function (slot0, slot1)
 	slot0.facilitys[slot1.id] = slot1
 end
 
-function slot0.getFacilityById(slot0, slot1)
+slot0.getFacilityById = function (slot0, slot1)
 	return slot0.facilitys[slot1]
 end
 
-function slot0.updateResource(slot0, slot1)
+slot0.updateResource = function (slot0, slot1)
 	slot0.resource = slot1
 end
 
-function slot0.getFinishTime(slot0)
+slot0.getFinishTime = function (slot0)
 	if slot0.finishTime and slot0.finishTime > 0 then
 		return "10:00:01"
 	else
@@ -144,85 +150,89 @@ function slot0.getFinishTime(slot0)
 	end
 end
 
-function slot0.setkickLeaderTime(slot0, slot1)
+slot0.setkickLeaderTime = function (slot0, slot1)
 	slot0.kickLeaderTime = slot1
 end
 
-function slot0.getKickLeftTime(slot0)
+slot0.getKickLeftTime = function (slot0)
 	return slot0.kickLeaderTime - pg.TimeMgr.GetInstance():GetServerTime()
 end
 
-function slot0.inKickTime(slot0)
+slot0.inKickTime = function (slot0)
 	return slot0.kickLeaderTime ~= 0
 end
 
-function slot0.getAssistantMaxCount(slot0)
+slot0.getAssistantMaxCount = function (slot0)
 	return pg.guild_data_level[slot0.level].assistant_commander
 end
 
-function slot0.getAssistantCount(slot0)
+slot0.getAssistantCount = function (slot0)
+	slot1 = 0
+
 	for slot5, slot6 in pairs(slot0.member) do
 		if slot6.duty == GuildMember.DUTY_DEPUTY_COMMANDER then
-			slot1 = 0 + 1
+			slot1 = slot1 + 1
 		end
 	end
 
 	return slot1
 end
 
-function slot0.setMemberCount(slot0, slot1)
+slot0.setMemberCount = function (slot0, slot1)
 	slot0.memberCount = slot1
 end
 
-function slot0.getSortMember(slot0)
+slot0.getSortMember = function (slot0)
+	slot1 = {}
+
 	for slot5, slot6 in pairs(slot0.member) do
-		table.insert({}, slot6)
+		table.insert(slot1, slot6)
 	end
 
 	return slot1
 end
 
-function slot0.getUIName(slot0)
-	if slot0.faction == uv0.FACTION_TYPE_BLHX then
+slot0.getUIName = function (slot0)
+	if slot0.faction == slot0.FACTION_TYPE_BLHX then
 		return "NewGuildBlueUI"
-	elseif slot0.faction == uv0.FACTION_TYPE_CSZZ then
+	elseif slot0.faction == slot0.FACTION_TYPE_CSZZ then
 		return "NewGuildRedUI"
 	end
 end
 
-function slot0.getFacilityUIName(slot0)
-	if slot0.faction == uv0.FACTION_TYPE_BLHX then
+slot0.getFacilityUIName = function (slot0)
+	if slot0.faction == slot0.FACTION_TYPE_BLHX then
 		return "GuildFacilityBlueUI"
-	elseif slot0.faction == uv0.FACTION_TYPE_CSZZ then
+	elseif slot0.faction == slot0.FACTION_TYPE_CSZZ then
 		return "GuildFacilityRedUI"
 	end
 end
 
-function slot0.getMainUIName(slot0)
-	if slot0.faction == uv0.FACTION_TYPE_BLHX then
+slot0.getMainUIName = function (slot0)
+	if slot0.faction == slot0.FACTION_TYPE_BLHX then
 		return "GuildMainBlueUI"
-	elseif slot0.faction == uv0.FACTION_TYPE_CSZZ then
+	elseif slot0.faction == slot0.FACTION_TYPE_CSZZ then
 		return "GuildMainRedUI"
 	end
 end
 
-function slot0.getBgName(slot0)
-	if slot0.faction == uv0.FACTION_TYPE_BLHX then
+slot0.getBgName = function (slot0)
+	if slot0.faction == slot0.FACTION_TYPE_BLHX then
 		return "bg/bg_guild_blue"
-	elseif slot0.faction == uv0.FACTION_TYPE_CSZZ then
+	elseif slot0.faction == slot0.FACTION_TYPE_CSZZ then
 		return "bg/bg_guild_red"
 	end
 end
 
-function slot0.getApplyUIName(slot0)
-	if slot0.faction == uv0.FACTION_TYPE_BLHX then
+slot0.getApplyUIName = function (slot0)
+	if slot0.faction == slot0.FACTION_TYPE_BLHX then
 		return "GuildApplyBlueUI"
-	elseif slot0.faction == uv0.FACTION_TYPE_CSZZ then
+	elseif slot0.faction == slot0.FACTION_TYPE_CSZZ then
 		return "GuildApplyRedUI"
 	end
 end
 
-function slot0.addLog(slot0, slot1)
+slot0.addLog = function (slot0, slot1)
 	table.insert(slot0.logInfo, 1, slot1)
 
 	if #slot0.logInfo > 100 then
@@ -230,15 +240,15 @@ function slot0.addLog(slot0, slot1)
 	end
 end
 
-function slot0.getLogs(slot0)
+slot0.getLogs = function (slot0)
 	return slot0.logInfo
 end
 
-function slot0.getMemberById(slot0, slot1)
+slot0.getMemberById = function (slot0, slot1)
 	return slot0.member[slot1]
 end
 
-function slot0.modifyMember(slot0, slot1)
+slot0.modifyMember = function (slot0, slot1)
 	if slot1.duty == 0 then
 		slot0:deleteMember(slot1.id)
 
@@ -252,19 +262,19 @@ function slot0.modifyMember(slot0, slot1)
 	end
 end
 
-function slot0.updateMember(slot0, slot1)
+slot0.updateMember = function (slot0, slot1)
 	slot0.member[slot1.id] = slot1
 end
 
-function slot0.addMember(slot0, slot1)
+slot0.addMember = function (slot0, slot1)
 	slot0.member[slot1.id] = slot1
 end
 
-function slot0.deleteMember(slot0, slot1)
+slot0.deleteMember = function (slot0, slot1)
 	slot0.member[slot1] = nil
 end
 
-function slot0.getDutyByMemberId(slot0, slot1)
+slot0.getDutyByMemberId = function (slot0, slot1)
 	for slot5, slot6 in pairs(slot0.member) do
 		if slot6.id == slot1 then
 			return slot6.duty
@@ -272,63 +282,65 @@ function slot0.getDutyByMemberId(slot0, slot1)
 	end
 end
 
-function slot0.setId(slot0, slot1)
+slot0.setId = function (slot0, slot1)
 	slot0.id = slot1
 end
 
-function slot0.setName(slot0, slot1)
+slot0.setName = function (slot0, slot1)
 	slot0.name = slot1
 end
 
-function slot0.getPolicyName(slot0)
-	return uv0.POLICY_NAME[slot0.policy]
+slot0.getPolicyName = function (slot0)
+	return slot0.POLICY_NAME[slot0.policy]
 end
 
-function slot0.getFactionName(slot0)
-	return uv0.FACTION_NAME[slot0.faction]
+slot0.getFactionName = function (slot0)
+	return slot0.FACTION_NAME[slot0.faction]
 end
 
-function slot0.getName(slot0)
+slot0.getName = function (slot0)
 	return slot0.name
 end
 
-function slot0.setPolicy(slot0, slot1)
+slot0.setPolicy = function (slot0, slot1)
 	slot0.policy = slot1
 end
 
-function slot0.getPolicy(slot0)
+slot0.getPolicy = function (slot0)
 	return slot0.policy
 end
 
-function slot0.setFaction(slot0, slot1)
+slot0.setFaction = function (slot0, slot1)
 	slot0.faction = slot1
 end
 
-function slot0.getFaction(slot0)
+slot0.getFaction = function (slot0)
 	return slot0.faction
 end
 
-function slot0.setManifesto(slot0, slot1)
+slot0.setManifesto = function (slot0, slot1)
 	slot0.manifesto = slot1
 end
 
-function slot0.getManifesto(slot0)
+slot0.getManifesto = function (slot0)
 	return slot0.manifesto or ""
 end
 
 slot1 = 86400
 
-function slot0.inChangefactionTime(slot0)
-	if slot0.changeFactionTime ~= 0 and slot0.changeFactionTime - pg.TimeMgr.GetInstance():GetServerTime() >= 0 then
+slot0.inChangefactionTime = function (slot0)
+	slot1 = slot0.changeFactionTime - pg.TimeMgr.GetInstance():GetServerTime()
+
+	if slot0.changeFactionTime ~= 0 and slot1 >= 0 then
 		return true
 	end
 end
 
-function slot0.changeFactionLeftTime(slot0)
+slot0.changeFactionLeftTime = function (slot0)
 	return pg.TimeMgr.GetInstance():parseTimeFrom(slot0.changeFactionTime - pg.TimeMgr.GetInstance():GetServerTime())
 end
 
-function slot0.getLevelMaxExp(slot0)
+slot0.getLevelMaxExp = function (slot0)
 	if not pg.guild_data_level[slot0.level] then
 		return slot1[slot1.all[#slot1.all]].exp
 	else
@@ -336,7 +348,7 @@ function slot0.getLevelMaxExp(slot0)
 	end
 end
 
-function slot0.getMaxMember(slot0)
+slot0.getMaxMember = function (slot0)
 	if not pg.guild_data_level[slot0.level] then
 		return slot1[slot1.all[#slot1.all]].exp
 	else
@@ -344,15 +356,15 @@ function slot0.getMaxMember(slot0)
 	end
 end
 
-function slot0.updateExp(slot0, slot1)
+slot0.updateExp = function (slot0, slot1)
 	slot0.exp = slot1
 end
 
-function slot0.updateLevel(slot0, slot1)
+slot0.updateLevel = function (slot0, slot1)
 	slot0.level = slot1
 end
 
-function slot0.getCommader(slot0)
+slot0.getCommader = function (slot0)
 	for slot4, slot5 in pairs(slot0.member) do
 		if slot5.duty == GuildMember.DUTY_COMMANDER then
 			return slot5
@@ -360,7 +372,7 @@ function slot0.getCommader(slot0)
 	end
 end
 
-function slot0.getCommaderName(slot0)
+slot0.getCommaderName = function (slot0)
 	if slot0:getCommader() then
 		return slot1.name
 	else
@@ -368,30 +380,30 @@ function slot0.getCommaderName(slot0)
 	end
 end
 
-function slot0.setAnnounce(slot0, slot1)
+slot0.setAnnounce = function (slot0, slot1)
 	slot0.announce = slot1
 end
 
-function slot0.getEnableDuty(slot0, slot1, slot2)
+slot0.getEnableDuty = function (slot0, slot1, slot2)
 	slot3 = {}
 
 	if slot1 == GuildMember.DUTY_COMMANDER then
 		if slot0:getAssistantMaxCount() == slot0:getAssistantCount() then
-			slot3 = slot2 == GuildMember.DUTY_DEPUTY_COMMANDER and {
+			slot3 = (slot2 == GuildMember.DUTY_DEPUTY_COMMANDER and {
 				GuildMember.DUTY_COMMANDER,
 				GuildMember.DYTY_PICKED,
 				GuildMember.DUTY_ORDINARY
-			} or {
+			}) or {
 				GuildMember.DYTY_PICKED,
 				GuildMember.DUTY_ORDINARY
 			}
 		else
-			slot3 = slot2 == GuildMember.DUTY_DEPUTY_COMMANDER and {
+			slot3 = (slot2 == GuildMember.DUTY_DEPUTY_COMMANDER and {
 				GuildMember.DUTY_COMMANDER,
 				GuildMember.DUTY_DEPUTY_COMMANDER,
 				GuildMember.DYTY_PICKED,
 				GuildMember.DUTY_ORDINARY
-			} or {
+			}) or {
 				GuildMember.DUTY_DEPUTY_COMMANDER,
 				GuildMember.DYTY_PICKED,
 				GuildMember.DUTY_ORDINARY
@@ -415,7 +427,7 @@ function slot0.getEnableDuty(slot0, slot1, slot2)
 	return slot3
 end
 
-function slot0.warpChatInfo(slot0, slot1)
+slot0.warpChatInfo = function (slot0, slot1)
 	slot2, slot3 = wordVer(slot1.content, {
 		isReplace = true
 	})
@@ -423,10 +435,14 @@ function slot0.warpChatInfo(slot0, slot1)
 	if GuildMember.New(slot1.player) then
 		slot4:setDuty(slot5)
 		string.gsub(slot3, ChatConst.EmojiCodeMatch, function (slot0)
-			uv0 = tonumber(slot0)
+			slot0 = tonumber(slot0)
 		end)
 
 		if nil then
+			if slot6 == 64 then
+				slot6 = 66
+			end
+
 			if pg.emoji_template[slot6] then
 				slot3 = slot7.desc
 			else

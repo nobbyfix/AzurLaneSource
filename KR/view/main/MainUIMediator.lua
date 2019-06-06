@@ -47,8 +47,10 @@ slot0.ON_MONOPOLY = "MainUIMediator:ON_MONOPOLY"
 slot0.ON_BLACKWHITE = "MainUIMediator:ON_BLACKWHITE"
 slot0.ON_MEMORYBOOK = "MainUIMediator:ON_MEMORYBOOK"
 
-function slot0.register(slot0)
-	getProxy(BayProxy):setSelectShipId(nil)
+slot0.register = function (slot0)
+	slot1 = getProxy(BayProxy)
+
+	slot1:setSelectShipId(nil)
 	slot0.viewComponent:setShips(slot2)
 	slot0.viewComponent:setFlagShip(slot5)
 	slot0.viewComponent:updatePlayerInfo(slot4)
@@ -56,9 +58,9 @@ function slot0.register(slot0)
 
 	slot6 = getProxy(TaskProxy)
 	slot10 = _.any(slot9, function (slot0)
-		slot3 = uv0:getTaskById(slot0:getTaskShip() and uv0:getAcademyTask(slot1.groupId) or nil)
+		slot3 = slot0:getTaskById((slot0:getTaskShip() and slot0:getAcademyTask(slot1.groupId)) or nil)
 
-		return slot1 and ((slot0.getTaskShip() and uv0.getAcademyTask(slot1.groupId) or nil) and not slot3 and not uv0:getFinishTaskById(slot0.getTaskShip() and uv0.getAcademyTask(slot1.groupId) or nil) or slot3 and slot3:isFinish())
+		return slot1 and ((((slot0.getTaskShip() and slot0.getAcademyTask(slot1.groupId)) or nil) and not slot3 and not slot0:getFinishTaskById((slot0.getTaskShip() and slot0.getAcademyTask(slot1.groupId)) or nil)) or (slot3 and slot3:isFinish()))
 	end)
 	slot11 = false
 
@@ -66,7 +68,9 @@ function slot0.register(slot0)
 		slot11 = true
 	end
 
-	if slot10 or slot11 or getProxy(CollectionProxy):unclaimTrophyCount() > 0 then
+	slot13 = getProxy(CollectionProxy):unclaimTrophyCount() > 0
+
+	if slot10 or slot11 or slot13 then
 		slot0:updateCourseNotices()
 	end
 
@@ -86,40 +90,40 @@ function slot0.register(slot0)
 	slot0:updateSettingsNotice()
 	slot0:updateExSkinNotice()
 	slot0:updateCommanderNotices(getProxy(CommanderProxy).haveFinishedBox(slot15))
-	slot0:bind(uv0.ON_MONOPOLY, function (slot0)
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.ON_MONOPOLY, function (slot0)
+		slot0:addSubLayers(Context.New({
 			mediator = MonopolyMediator,
 			viewComponent = MonopolyLayer
 		}))
 	end)
-	slot0:bind(uv0.OPEN_COMMANDER, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.COMMANDROOM)
+	slot0:bind(slot0.OPEN_COMMANDER, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.COMMANDROOM)
 	end)
 	slot0.viewComponent:updateTraningCampBtn()
 	slot0.viewComponent:updateRefluxBtn()
-	slot0:bind(uv0.OPEN_TRANINGCAMP, function ()
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.TRAININGCAMP)
+	slot0:bind(slot0.OPEN_TRANINGCAMP, function ()
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.TRAININGCAMP)
 	end)
-	slot0:bind(uv0.ON_BOSS_BATTLE, function ()
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.ACT_BOSS_BATTLE, {
+	slot0:bind(slot0.ON_BOSS_BATTLE, function ()
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.ACT_BOSS_BATTLE, {
 			showAni = true
 		})
 	end)
-	slot0:bind(uv0.ON_TASK_OPEN, function (slot0, slot1)
+	slot0:bind(slot0.ON_TASK_OPEN, function (slot0, slot1)
 		if not getProxy(TaskProxy):isFinishPrevTasks(slot1) then
 			return
 		end
 
-		uv0:sendNotification(GAME.TRIGGER_TASK, slot1)
+		slot0:sendNotification(GAME.TRIGGER_TASK, slot1)
 	end)
-	slot0:bind(uv0.ON_SHIP_DETAIL, function (slot0, slot1)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.SHIPINFO, {
+	slot0:bind(slot0.ON_SHIP_DETAIL, function (slot0, slot1)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.SHIPINFO, {
 			shipId = slot1.id
 		})
 	end)
-	slot0:bind(uv0.OPEN_CHUANWUSTART, function (slot0, slot1)
+	slot0:bind(slot0.OPEN_CHUANWUSTART, function (slot0, slot1)
 		if slot1 == DockyardScene.MODE_OVERVIEW then
-			uv0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
+			slot0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
 				showTagNoBlock = true,
 				mode = slot1,
 				flags = {
@@ -131,7 +135,7 @@ function slot0.register(slot0)
 				}
 			})
 		elseif slot1 == DockyardScene.MODE_DESTROY then
-			uv0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
+			slot0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
 				blockLock = true,
 				prevFlag = false,
 				mode = slot1,
@@ -140,23 +144,23 @@ function slot0.register(slot0)
 			})
 		end
 	end)
-	slot0:bind(uv0.OPEN_LEVEL, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
+	slot0:bind(slot0.OPEN_LEVEL, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
 			chapterId = getProxy(ChapterProxy).getActiveChapter(slot1) and slot2.id,
 			mapIdx = slot2 and slot2:getConfig("map")
 		})
 	end)
-	slot0:bind(uv0.OPEN_BIANDUI, function (slot0, slot1)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.BIANDUI, {
+	slot0:bind(slot0.OPEN_BIANDUI, function (slot0, slot1)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.BIANDUI, {
 			fleetId = slot1
 		})
 	end)
-	slot0:bind(uv0.OPEN_BACKYARD, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.BACKYARD, {
+	slot0:bind(slot0.OPEN_BACKYARD, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.BACKYARD, {
 			fromMain = true
 		})
 	end)
-	slot0:bind(uv0.OPEN_GUILD, function (slot0)
+	slot0:bind(slot0.OPEN_GUILD, function (slot0)
 		if getProxy(PlayerProxy) and slot1:getData() then
 			slot3, slot4 = pg.SystemOpenMgr:GetInstance():isOpenSystem(slot2.level, "NewGuildMediator")
 
@@ -168,56 +172,56 @@ function slot0.register(slot0)
 		end
 
 		if getProxy(GuildProxy):getData() then
-			uv0:sendNotification(GAME.GO_SCENE, SCENE.GUILD)
+			slot0:sendNotification(GAME.GO_SCENE, SCENE.GUILD)
 		else
-			uv0:sendNotification(GAME.GO_SCENE, SCENE.NEWGUILD)
+			slot0:sendNotification(GAME.GO_SCENE, SCENE.NEWGUILD)
 		end
 	end)
-	slot0:bind(uv0.OPEN_COLLECT_SHIP, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.COLLECTSHIP)
+	slot0:bind(slot0.OPEN_COLLECT_SHIP, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.COLLECTSHIP)
 	end)
-	slot0:bind(uv0.OPEN_ARMORYSCENE, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.EQUIPSCENE)
+	slot0:bind(slot0.OPEN_ARMORYSCENE, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.EQUIPSCENE)
 	end)
-	slot0:bind(uv0.GETBOAT, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.GETBOAT)
+	slot0:bind(slot0.GETBOAT, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.GETBOAT)
 	end)
-	slot0:bind(uv0.OPEN_MAIL, function (slot0)
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.OPEN_MAIL, function (slot0)
+		slot0:addSubLayers(Context.New({
 			mediator = MailMediator,
 			viewComponent = MailLayer,
 			onRemoved = function ()
-				uv0.viewComponent:enablePartialBlur()
+				slot0.viewComponent:enablePartialBlur()
 			end
 		}))
 	end)
-	slot0:bind(uv0.TMP_DEBUG, function (slot0)
-		uv0:sendNotification(GAME.BEGIN_STAGE, {
+	slot0:bind(slot0.TMP_DEBUG, function (slot0)
+		slot0:sendNotification(GAME.BEGIN_STAGE, {
 			system = SYSTEM_DEBUG
 		})
 	end)
-	slot0:bind(uv0.OPEN_TASK, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.TASK)
+	slot0:bind(slot0.OPEN_TASK, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.TASK)
 	end)
-	slot0:bind(uv0.OPEN_CHATVIEW, function (slot0)
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.OPEN_CHATVIEW, function (slot0)
+		slot0:addSubLayers(Context.New({
 			mediator = NotificationMediator,
 			viewComponent = NotificationLayer,
 			onRemoved = function ()
-				uv0:updateChat()
-				uv0.viewComponent:enablePartialBlur()
+				slot0:updateChat()
+				slot0.updateChat.viewComponent:enablePartialBlur()
 			end
 		}))
 	end)
-	slot0:bind(uv0.OPEN_SCHOOLSCENE, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.NAVALACADEMYSCENE)
+	slot0:bind(slot0.OPEN_SCHOOLSCENE, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.NAVALACADEMYSCENE)
 	end)
-	slot0:bind(uv0.OPEN_SETTINGS, function (slot0)
-		uv0.CanUpdateCV = false
+	slot0:bind(slot0.OPEN_SETTINGS, function (slot0)
+		slot0.CanUpdateCV = false
 
-		uv1:sendNotification(GAME.GO_SCENE, SCENE.SETTINGS)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.SETTINGS)
 	end)
-	slot0:bind(uv0.OPEN_RANK, function (slot0)
+	slot0:bind(slot0.OPEN_RANK, function (slot0)
 		if getProxy(PlayerProxy) and slot1:getData() then
 			slot3, slot4 = pg.SystemOpenMgr:GetInstance():isOpenSystem(slot2.level, "BillboardMediator")
 
@@ -228,43 +232,43 @@ function slot0.register(slot0)
 			end
 		end
 
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.BILLBOARD, {
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.BILLBOARD, {
 			index = PowerRank.TYPE_POWER
 		})
 	end)
-	slot0:bind(uv0.OPEN_PLAYER_INFO_LAYER, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.PLAYER_INFO)
+	slot0:bind(slot0.OPEN_PLAYER_INFO_LAYER, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.PLAYER_INFO)
 	end)
-	slot0:bind(uv0.OPEN_ACTIVITY_PANEL, function (slot0, slot1)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY, {
+	slot0:bind(slot0.OPEN_ACTIVITY_PANEL, function (slot0, slot1)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY, {
 			id = slot1
 		})
 	end)
-	slot0:bind(uv0.OPEN_FRIEND, function ()
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.FRIEND)
+	slot0:bind(slot0.OPEN_FRIEND, function ()
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.FRIEND)
 	end)
-	slot0:bind(uv0.GO_MALL, function ()
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.CHARGE, {
+	slot0:bind(slot0.GO_MALL, function ()
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.CHARGE, {
 			wrap = ChargeScene.TYPE_MENU
 		})
 	end)
-	slot0:bind(uv0.OPEN_EVENT, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.EVENT)
+	slot0:bind(slot0.OPEN_EVENT, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.EVENT)
 	end)
-	slot0:bind(uv0.GO_SCENE, function (slot0, slot1)
-		uv0:sendNotification(GAME.GO_SCENE, slot1[1], slot1[2])
+	slot0:bind(slot0.GO_SCENE, function (slot0, slot1)
+		slot0:sendNotification(GAME.GO_SCENE, slot1[1], slot1[2])
 	end)
-	slot0:bind(uv0.OPEN_COMMISSION_INFO, function (slot0)
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.OPEN_COMMISSION_INFO, function (slot0)
+		slot0:addSubLayers(Context.New({
 			viewComponent = CommissionInfoLayer,
 			mediator = CommissionInfoMediator,
 			onRemoved = function ()
-				uv0.viewComponent:enablePartialBlur()
+				slot0.viewComponent:enablePartialBlur()
 			end
 		}))
 	end)
-	slot0:bind(uv0.OPEN_SHOP_LAYER, function (slot0)
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.OPEN_SHOP_LAYER, function (slot0)
+		slot0:addSubLayers(Context.New({
 			mediator = ShopsMediator,
 			viewComponent = ShopsLayer,
 			data = {
@@ -272,24 +276,24 @@ function slot0.register(slot0)
 			}
 		}))
 	end)
-	slot0:bind(uv0.OPEN_MONTH_CARD_SET, function (slot0)
+	slot0:bind(slot0.OPEN_MONTH_CARD_SET, function (slot0)
 		if getProxy(PlayerProxy).getRawData(slot1):getCardById(VipCard.MONTH) and not slot3:isExpire() then
-			uv0:addSubLayers(Context.New({
+			slot0:addSubLayers(Context.New({
 				viewComponent = MonthCardSetLayer,
 				mediator = MonthCardSetMediator
 			}))
 		end
 	end)
-	slot0:bind(uv0.OPEN_SNAPSHOT, function (slot0, slot1)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.SNAPSHOT, slot1)
+	slot0:bind(slot0.OPEN_SNAPSHOT, function (slot0, slot1)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.SNAPSHOT, slot1)
 	end)
-	slot0:bind(uv0.OPEN_BULLETINBOARD, function (slot0, slot1)
+	slot0:bind(slot0.OPEN_BULLETINBOARD, function (slot0, slot1)
 		if #getProxy(ServerNoticeProxy).getServerNotices(slot2, false) > 0 then
-			uv0:addSubLayers(Context.New({
+			slot0:addSubLayers(Context.New({
 				mediator = BulletinBoardMediator,
 				viewComponent = BulletinBoardLayer,
 				onRemoved = function ()
-					uv0.viewComponent:enablePartialBlur()
+					slot0.viewComponent:enablePartialBlur()
 				end
 			}))
 		else
@@ -297,42 +301,42 @@ function slot0.register(slot0)
 		end
 	end)
 	slot0.viewComponent:updateActivityMapBtn(slot7:getActivityByType(ActivityConst.ACTIVITY_TYPE_ZPROJECT))
-	slot0:bind(uv0.ON_BLACKWHITE, function ()
-		uv0.viewComponent:disableTraningCampAndRefluxTip()
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.ON_BLACKWHITE, function ()
+		slot0.viewComponent:disableTraningCampAndRefluxTip()
+		slot0.viewComponent.disableTraningCampAndRefluxTip:addSubLayers(Context.New({
 			viewComponent = BlackWhiteGridLayer,
 			mediator = BlackWhiteGridMediator
 		}))
 	end)
-	slot0:bind(uv0.ON_MEMORYBOOK, function ()
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.ON_MEMORYBOOK, function ()
+		slot0:addSubLayers(Context.New({
 			viewComponent = MemoryBookLayer,
 			mediator = MemoryBookMediator
 		}))
 	end)
-	slot0:bind(uv0.ON_ACTIVITY, function (slot0, slot1)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY, {
+	slot0:bind(slot0.ON_ACTIVITY, function (slot0, slot1)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY, {
 			id = slot1
 		})
 	end)
-	slot0:bind(uv0.ON_ACTIVITY_MAP, function (slot0, slot1)
+	slot0:bind(slot0.ON_ACTIVITY_MAP, function (slot0, slot1)
 		slot8.mapIdx, slot8.chapterId = getProxy(ChapterProxy):getLastMapForActivity()
 
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
 			chapterId = slot3,
 			mapIdx = slot2
 		})
 	end)
-	slot0:bind(uv0.ON_ACTIVITY_PT, function (slot0, slot1)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY, {
+	slot0:bind(slot0.ON_ACTIVITY_PT, function (slot0, slot1)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY, {
 			id = slot1
 		})
 	end)
-	slot0:bind(uv0.ON_ANNIVERSARY, function ()
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.ANNIVERSARY)
+	slot0:bind(slot0.ON_ANNIVERSARY, function ()
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.ANNIVERSARY)
 	end)
-	slot0:bind(uv0.ON_LOTTERY, function (slot0, slot1)
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.ON_LOTTERY, function (slot0, slot1)
+		slot0:addSubLayers(Context.New({
 			viewComponent = LotteryLayer,
 			mediator = LotteryMediator,
 			data = {
@@ -340,8 +344,8 @@ function slot0.register(slot0)
 			}
 		}))
 	end)
-	slot0:bind(uv0.OPEN_SCROLL, function (slot0, slot1)
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.OPEN_SCROLL, function (slot0, slot1)
+		slot0:addSubLayers(Context.New({
 			mediator = InvestigationMediator,
 			viewComponent = InvestigationLayer,
 			data = {
@@ -349,10 +353,10 @@ function slot0.register(slot0)
 			}
 		}))
 	end)
-	slot0:bind(uv0.OPEN_TECHNOLOGY, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.SELTECHNOLOGY)
+	slot0:bind(slot0.OPEN_TECHNOLOGY, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.SELTECHNOLOGY)
 	end)
-	slot0:bind(uv0.ON_VOTE, function ()
+	slot0:bind(slot0.ON_VOTE, function ()
 		if not getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_VOTE) or slot1:isEnd() then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("common_activity_not_start"))
 
@@ -367,11 +371,11 @@ function slot0.register(slot0)
 			return
 		end
 
-		uv0:sendNotification(GAME.REQUEST_VOTE_INFO, {
+		slot0:sendNotification(GAME.REQUEST_VOTE_INFO, {
 			activityId = slot1.id,
 			configId = slot2,
 			callback = function ()
-				uv0:sendNotification(GAME.GO_SCENE, SCENE.VOTE)
+				slot0:sendNotification(GAME.GO_SCENE, SCENE.VOTE)
 			end
 		})
 	end)
@@ -390,15 +394,18 @@ function slot0.register(slot0)
 		slot0:updateGuildNotices()
 	end
 
-	slot0:bind(uv0.ON_TOUCHSHIP, function (slot0, slot1)
+	slot0:bind(slot0.ON_TOUCHSHIP, function (slot0, slot1)
 		slot2 = getProxy(TaskProxy)
+		slot3 = getProxy(ActivityProxy)
 
 		for slot7, slot8 in ipairs(pg.task_data_trigger.all) do
 			v = pg.task_data_trigger[slot8]
 
 			if v.group_id == slot1 then
-				if getProxy(ActivityProxy):getActivityById(v.activity_id) and not slot11:isEnd() and not slot2:getTaskById(v.args[1][2]) and not slot2:getFinishTaskById(v.args[1][2]) then
-					uv0:sendNotification(GAME.ACTIVITY_OPERATION, {
+				slot10 = v.args[1][2]
+
+				if slot3:getActivityById(v.activity_id) and not slot11:isEnd() and not slot2:getTaskById(slot10) and not slot2:getFinishTaskById(slot10) then
+					slot0:sendNotification(GAME.ACTIVITY_OPERATION, {
 						cmd = 1,
 						activity_id = slot9
 					})
@@ -416,98 +423,100 @@ function slot0.register(slot0)
 	end
 end
 
-function slot0.onBluePrintNotify(slot0)
+slot0.onBluePrintNotify = function (slot0)
 	slot3, slot4 = pg.SystemOpenMgr:GetInstance():isOpenSystem(getProxy(PlayerProxy):getData().level, "TechnologyMediator")
 
-	slot0.viewComponent:notifyTechnology(OPEN_TEC_TREE_SYSTEM and getProxy(TechnologyNationProxy):getShowRedPointTag() or (SelectTechnologyMediator.onBlueprintNotify() or SelectTechnologyMediator.onTechnologyNotify()) and slot3)
+	slot0.viewComponent:notifyTechnology((OPEN_TEC_TREE_SYSTEM and getProxy(TechnologyNationProxy):getShowRedPointTag()) or ((SelectTechnologyMediator.onBlueprintNotify() or SelectTechnologyMediator.onTechnologyNotify()) and slot3))
 
 	if getProxy(TechnologyProxy):getBuildingBluePrint() then
 		slot9 = false
 
 		for slot13, slot14 in ipairs(slot8) do
 			if slot7:getTaskOpenTimeStamp(slot14) <= pg.TimeMgr.GetInstance():GetServerTime() then
-				if not (getProxy(TaskProxy):getTaskById(slot14) or getProxy(TaskProxy):getFinishTaskById(slot14)) and getProxy(TaskProxy):isFinishPrevTasks(slot14) then
+				slot17 = getProxy(TaskProxy):isFinishPrevTasks(slot14)
+
+				if not (getProxy(TaskProxy):getTaskById(slot14) or getProxy(TaskProxy):getFinishTaskById(slot14)) and slot17 then
 					slot9 = true
 
-					slot0.viewComponent:emit(uv0.ON_TASK_OPEN, slot14)
+					slot0.viewComponent:emit(slot0.ON_TASK_OPEN, slot14)
 				end
 			end
 		end
 
-		if slot9 and not uv0.DontNotifyBluePrintTaskAgain then
+		if slot9 and not slot0.DontNotifyBluePrintTaskAgain then
 			pg.MsgboxMgr:GetInstance():ShowMsgBox({
 				content = i18n("blueprint_task_update_tip", slot7:getShipVO():getConfig("name")),
 				weight = LayerWeightConst.SECOND_LAYER,
 				onYes = function ()
-					uv0:sendNotification(GAME.GO_SCENE, SCENE.SHIPBLUEPRINT)
+					slot0:sendNotification(GAME.GO_SCENE, SCENE.SHIPBLUEPRINT)
 				end,
 				onNo = function ()
-					uv0.DontNotifyBluePrintTaskAgain = true
+					slot0.DontNotifyBluePrintTaskAgain = true
 				end
 			})
 		end
 	end
 end
 
-function slot0.updateAttireTip(slot0)
+slot0.updateAttireTip = function (slot0)
 	slot0.viewComponent:updateAttireBtn(_.any(getProxy(AttireProxy):needTip(), function (slot0)
 		return slot0 == true
 	end))
 end
 
-function slot0.navalAcademyNotices(slot0)
+slot0.navalAcademyNotices = function (slot0)
 	getProxy(NavalAcademyProxy):notification()
 end
 
-function slot0.updateTaskNotices(slot0)
+slot0.updateTaskNotices = function (slot0)
 	slot1 = getProxy(TaskProxy)
 
 	slot0.viewComponent:updateTaskNotices(slot1:getCanReceiveCount(), slot1:getNotFinishCount())
 end
 
-function slot0.updateCourseNotices(slot0, slot1)
+slot0.updateCourseNotices = function (slot0, slot1)
 	slot0.viewComponent:updateLessonNotices(slot1)
 end
 
-function slot0.updateCommanderNotices(slot0, slot1)
+slot0.updateCommanderNotices = function (slot0, slot1)
 	slot0.viewComponent:updateCommanderNotices(slot1)
 end
 
-function slot0.updateGuildNotices(slot0)
+slot0.updateGuildNotices = function (slot0)
 	slot1 = getProxy(GuildProxy)
 
 	slot0.viewComponent:updateGuildNotices(slot1.eventTip or slot1:isNoticesApply())
 end
 
-function slot0.updateCommissionNotices(slot0)
+slot0.updateCommissionNotices = function (slot0)
 	slot3 = getProxy(NavalAcademyProxy)
 
 	slot0.viewComponent:updateCommissionNotices(getProxy(EventProxy).hasFinishState(slot1) or slot3:GetOilVO().isCommissionNotify(slot6, getProxy(PlayerProxy).getData(slot4).oilField) or slot3:GetGoldVO().isCommissionNotify(slot7, getProxy(PlayerProxy).getData(slot4).goldField))
 end
 
-function slot0.updateBackYardNotices(slot0)
+slot0.updateBackYardNotices = function (slot0)
 	slot1 = getProxy(DormProxy)
 
 	slot0.viewComponent:updateBackYardNotices(slot1:isLackOfFood() or slot1:havePopEvent())
 end
 
-function slot0.updateMailAttachmentNotices(slot0, slot1)
+slot0.updateMailAttachmentNotices = function (slot0, slot1)
 	slot0.viewComponent:updateMailAttachmentCount(getProxy(MailProxy).GetAttachmentCount(slot2))
 end
 
-function slot0.updateFriendNotification(slot0)
+slot0.updateFriendNotification = function (slot0)
 	slot0.viewComponent:friendNotification(getProxy(NotificationProxy).getRequestCount(slot1) > 0 or getProxy(FriendProxy):getNewMsgCount() > 0)
 end
 
-function slot0.updateBuildNotices(slot0)
+slot0.updateBuildNotices = function (slot0)
 	slot0.viewComponent:updateBuildNotices(getProxy(BuildShipProxy):getFinishCount())
 end
 
-function slot0.updateCollectNotices(slot0)
+slot0.updateCollectNotices = function (slot0)
 	slot0.viewComponent:updateCollectNotices(getProxy(CollectionProxy):hasFinish())
 end
 
-function slot0.updateChat(slot0)
+slot0.updateChat = function (slot0)
 	slot1 = {}
 
 	if not getProxy(ChatProxy) then
@@ -515,68 +524,68 @@ function slot0.updateChat(slot0)
 	end
 
 	_.each(slot2:getRawData(), function (slot0)
-		table.insert(uv0, slot0)
+		table.insert(slot0, slot0)
 	end)
 
 	if getProxy(GuildProxy):getRawData() then
 		_.each(slot3:getChatMsgs(), function (slot0)
-			table.insert(uv0, slot0)
+			table.insert(slot0, slot0)
 		end)
 	end
 
 	_.each(getProxy(FriendProxy).getCacheMsgList(slot4), function (slot0)
-		table.insert(uv0, slot0)
+		table.insert(slot0, slot0)
 	end)
 
 	slot6 = NotificationLayer.ChannelBits.recv
 	slot7 = bit.lshift(1, ChatConst.ChannelAll)
 
 	slot0.viewComponent:updateChat(_.slice(_.filter(_(slot1):chain():filter(function (slot0)
-		return not uv0:isInBlackList(slot0.playerId)
+		return not slot0:isInBlackList(slot0.playerId)
 	end):sort(function (slot0, slot1)
 		return slot0.timestamp < slot1.timestamp
 	end):value(), function (slot0)
-		return uv0 == uv1 or bit.band(uv0, bit.lshift(1, slot0.type)) > 0
+		return slot0 ==  or bit.band(slot0, bit.lshift(1, slot0.type)) > 0
 	end), #_.filter(_(slot1).chain().filter(function (slot0)
-		return not uv0.isInBlackList(slot0.playerId)
+		return not slot0.isInBlackList(slot0.playerId)
 	end).sort(function (slot0, slot1)
 		return slot0.timestamp < slot1.timestamp
 	end).value(), function (slot0)
-		return uv0 == uv1 or bit.band(uv0, bit.lshift(1, slot0.type)) > 0
+		return slot0 ==  or bit.band(slot0, bit.lshift(1, slot0.type)) > 0
 	end) - 4 + 1, 4))
 end
 
-function slot0.updateBanner(slot0)
+slot0.updateBanner = function (slot0)
 	slot0.viewComponent:updateBanner(getProxy(ActivityProxy):getBannerDisplays())
 end
 
-function slot0.updateEvent(slot0)
+slot0.updateEvent = function (slot0)
 	slot0.viewComponent:updateEvent(getProxy(EventProxy))
 end
 
-function slot0.updateSeverNotices(slot0)
+slot0.updateSeverNotices = function (slot0)
 	slot1 = getProxy(ServerNoticeProxy)
 
 	slot0.viewComponent:updateSeverNotices(#slot1:getServerNotices(false) > 0 and not slot1:isStopMainTip())
 end
 
-function slot0.updateSettingsNotice(slot0)
-	slot0.viewComponent:updateSettingsNotice(uv0.CanUpdateCV)
+slot0.updateSettingsNotice = function (slot0)
+	slot0.viewComponent:updateSettingsNotice(slot0.CanUpdateCV)
 end
 
-function slot0.updateExSkinNotice(slot0)
+slot0.updateExSkinNotice = function (slot0)
 	slot0.viewComponent:updateExSkinBtn(_.select(_.values(slot2), function (slot0)
 		return slot0:isExpireType() and not slot0:isExpired()
 	end))
 end
 
-function slot0.updateExSkinOverDue(slot0)
+slot0.updateExSkinOverDue = function (slot0)
 	if #getProxy(ShipSkinProxy).getOverDueSkins(slot1) > 0 then
 		slot0.viewComponent:showOverDueExSkins(slot2)
 	end
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		PlayerProxy.UPDATED,
 		BayProxy.SHIP_REMOVED,
@@ -621,7 +630,7 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == PlayerProxy.UPDATED then
@@ -658,6 +667,7 @@ function slot0.handleNotification(slot0, slot1)
 			if not pg.StoryMgr.GetInstance():IsPlayed("FANGAN1") then
 				slot0:sendNotification(GAME.GO_SCENE, SCENE.SELTECHNOLOGY)
 				pg.StoryMgr:GetInstance():Play("FANGAN1", function ()
+					return
 				end, true)
 			else
 				slot0:handleEnterMainUI()
@@ -694,14 +704,13 @@ function slot0.handleNotification(slot0, slot1)
 	elseif GAME.BOSS_EVENT_START_DONE == slot2 then
 		slot0:updateGuildNotices()
 	elseif ActivityProxy.ACTIVITY_OPERATION_DONE == slot2 then
-		-- Nothing
 	elseif TaskProxy.TASK_ADDED == slot2 then
 		slot0.viewComponent:stopCurVoice()
 	elseif slot2 == GAME.CHAPTER_OP_DONE then
 		if slot3.items and #slot3.items > 0 then
 			slot0.viewComponent:emit(BaseUI.ON_AWARD, {
 				items = slot3.items
-			}, slot0.retreateMapType == Map.ESCORT and AwardInfoLayer.TITLE.ESCORT or nil)
+			}, (slot0.retreateMapType == Map.ESCORT and AwardInfoLayer.TITLE.ESCORT) or nil)
 		end
 	elseif slot2 == CommanderProxy.COMMANDER_BOX_FINISHED then
 		slot0:updateCommanderNotices(true)
@@ -712,9 +721,7 @@ function slot0.handleNotification(slot0, slot1)
 	elseif slot2 == NewShipMediator.OPEN then
 		slot0.viewComponent:stopCurVoice()
 	elseif slot2 == GAME.OPEN_MSGBOX_DONE then
-		-- Nothing
 	elseif slot2 == GAME.CLOSE_MSGBOX_DONE then
-		-- Nothing
 	elseif slot2 == TechnologyConst.UPDATE_REDPOINT_ON_TOP then
 		slot0:onBluePrintNotify()
 	elseif slot2 == GAME.HANDLE_OVERDUE_ATTIRE_DONE then
@@ -722,7 +729,7 @@ function slot0.handleNotification(slot0, slot1)
 	end
 end
 
-function slot0.onChapterTimeUp(slot0)
+slot0.onChapterTimeUp = function (slot0)
 	if getProxy(ChapterProxy):getActiveChapter() and not slot2:inWartime() then
 		slot0.retreateMapType = slot2:getMapType()
 
@@ -733,36 +740,36 @@ function slot0.onChapterTimeUp(slot0)
 	end
 end
 
-function slot0.handleEnterMainUI(slot0)
+slot0.handleEnterMainUI = function (slot0)
 	slot0:updateSeverNotices()
 
 	if pg.SeriesGuideMgr:GetInstance():isEnd() then
 		slot1 = nil
 
 		function slot2()
-			if coroutine.status(uv0) == "suspended" then
-				slot0, slot1 = coroutine.resume(uv0)
+			if coroutine.status(coroutine.status) == "suspended" then
+				slot0, slot1 = coroutine.resume(coroutine.resume)
 			end
 		end
 
 		coroutine.resume(coroutine.create(function ()
-			uv0:playStroys(function ()
-				onNextTick(uv0)
+			slot0:playStroys(function ()
+				onNextTick(onNextTick)
 			end)
 			coroutine.yield()
-			uv0:handleReturnAwardAct()
-			uv0:handleReturnAwardAct()
-			uv0:accepetActivityTask()
-			uv0:tryRequestColoring()
+			coroutine.yield:handleReturnAwardAct()
+			coroutine.yield.handleReturnAwardAct:handleReturnAwardAct()
+			coroutine.yield.handleReturnAwardAct.handleReturnAwardAct:accepetActivityTask()
+			coroutine.yield.handleReturnAwardAct.handleReturnAwardAct.accepetActivityTask:tryRequestColoring()
 
 			if getProxy(ActivityProxy):findNextAutoActivity() then
-				uv0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY)
+				slot0:sendNotification(GAME.GO_SCENE, SCENE.ACTIVITY)
 
 				return
 			end
 
 			if slot0:findRefluxAutoActivity() then
-				uv0:sendNotification(GAME.GO_SCENE, SCENE.REFLUX)
+				slot0:sendNotification(GAME.GO_SCENE, SCENE.REFLUX)
 
 				return
 			end
@@ -770,45 +777,48 @@ function slot0.handleEnterMainUI(slot0)
 			if #getProxy(ServerNoticeProxy).getServerNotices(slot3, false) > 0 and not slot3:getStopRemind() and not slot3.__autoPopped then
 				slot3.__autoPopped = true
 
-				uv0:addSubLayers(Context.New({
+				slot0:addSubLayers(Context.New({
 					mediator = BulletinBoardMediator,
 					viewComponent = BulletinBoardLayer
 				}))
 			else
-				uv0:tryPlayGuide()
+				slot0:tryPlayGuide()
 			end
 
-			uv0:onChapterTimeUp()
+			slot0:onChapterTimeUp()
 
 			if not LOCK_SUBMARINE then
-				uv0:tryRequestMainSub()
+				slot0:tryRequestMainSub()
 			end
 
-			uv0:tryRequestVersion()
-			uv0:checkCV()
-			uv0:storyStorageFix()
-			uv0:onBluePrintNotify()
+			slot0:tryRequestVersion()
+			slot0:checkCV()
+			slot0:storyStorageFix()
+			slot0:onBluePrintNotify()
 			getProxy(TaskProxy).pushAutoSubmitTask(slot5)
-			uv0:handlingSpecialActs()
-			uv0:handlingActivityBtn()
-			uv0:handleOverdueAttire()
-			uv0:updateExSkinOverDue()
+			slot0:handlingSpecialActs()
+			slot0:handlingActivityBtn()
+			slot0:handleOverdueAttire()
+			slot0:updateExSkinOverDue()
 		end))
 	end
 end
 
-function slot0.playStroys(slot0, slot1)
+slot0.playStroys = function (slot0, slot1)
+	slot3 = {}
+	slot4 = pg.StoryMgr:GetInstance()
+
 	for slot8, slot9 in pairs(slot2) do
-		if slot9:getConfig("story_id") and slot10 ~= "" and not pg.StoryMgr:GetInstance():IsPlayed(slot10) then
-			table.insert({}, function (slot0)
-				uv0:Play(uv1, slot0, true, true)
+		if slot9:getConfig("story_id") and slot10 ~= "" and not slot4:IsPlayed(slot10) then
+			table.insert(slot3, function (slot0)
+				slot0:Play(slot0.Play, slot0, true, true)
 			end)
 		end
 	end
 
 	if getProxy(PlayerProxy):getData().level >= 40 and not slot4:IsPlayed("ZHIHUIMIAO1") then
 		table.insert(slot3, function (slot0)
-			uv0:Play("ZHIHUIMIAO1", slot0, true, true)
+			slot0:Play("ZHIHUIMIAO1", slot0, true, true)
 		end)
 	end
 
@@ -823,14 +833,16 @@ function slot0.playStroys(slot0, slot1)
 				slot14 = 0
 			end
 
+			slot15 = math.floor(slot14 / slot5.data4 * 10000)
+
 			for slot19, slot20 in pairs(slot11) do
-				if slot20[1] < math.floor(slot14 / slot5.data4 * 10000) then
+				if slot20[1] < slot15 then
 					break
 				end
 
 				if slot20[2] and slot21 ~= "" and not slot4:IsPlayed(slot21) then
 					table.insert(slot3, function (slot0)
-						uv0:Play(uv1, slot0, true, true)
+						slot0:Play(slot0.Play, slot0, true, true)
 					end)
 				end
 			end
@@ -842,19 +854,15 @@ function slot0.playStroys(slot0, slot1)
 		slot9 = slot6.getConfig("config_client").npc[2]
 		slot10 = {
 			function (slot0)
-				if uv0 == "" or pg.StoryMgr:GetInstance():IsPlayed(uv0) then
+				if slot0 == "" or pg.StoryMgr:GetInstance():IsPlayed(slot0) then
 					slot0()
 				else
-					pg.StoryMgr:GetInstance():Play(uv0, slot0, true, true)
+					pg.StoryMgr:GetInstance():Play(slot0, slot0, true, true)
 				end
 			end,
 			function (slot0)
-				if not getProxy(TaskProxy):getTaskById(uv0) then
-					slot2 = slot1:getFinishTaskById(uv0)
-				end
-
-				if slot2 and slot2:isFinish() and not slot2:isReceive() then
-					uv1:sendNotification(GAME.FETCH_NPC_SHIP, {
+				if (getProxy(TaskProxy):getTaskById(slot0) or slot1:getFinishTaskById(slot0)) and slot2:isFinish() and not slot2:isReceive() then
+					slot1:sendNotification(GAME.FETCH_NPC_SHIP, {
 						taskId = slot2.id,
 						callback = slot0
 					})
@@ -865,14 +873,14 @@ function slot0.playStroys(slot0, slot1)
 		}
 
 		table.insert(slot3, function (slot0)
-			seriesAsync(uv0, slot0)
+			seriesAsync(slot0, slot0)
 		end)
 	end
 
 	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_PUZZLA) and not slot7:isEnd() then
 		if type(slot7:getConfig("config_client")) == "table" and slot8[2] and type(slot8[2]) == "string" and not pg.StoryMgr:GetInstance():IsPlayed(slot8[2]) then
 			table.insert(slot3, function (slot0)
-				uv0:Play(uv1[2], slot0, true, true)
+				slot0:Play(slot1[2], slot0, true, true)
 			end)
 		end
 	end
@@ -880,32 +888,17 @@ function slot0.playStroys(slot0, slot1)
 	seriesAsync(slot3, slot1)
 end
 
-function slot0.tryPlayGuide(slot0)
+slot0.tryPlayGuide = function (slot0)
+	slot2 = getProxy(FleetProxy):getFleetById(11)
 	slot3 = {}
 	slot4 = true
 
-	if getProxy(TaskProxy):getTaskById(10302) and slot1:isFinish() and not slot1:isReceive() and getProxy(FleetProxy):getFleetById(11):isEmpty() then
-		slot7 = pg.StoryMgr:GetInstance()
-		slot6 = pg.StoryMgr.GetInstance().PlayGuide
-		slot8 = "NG002"
-
-		if not _.any(getProxy(BayProxy):getShips(), function (slot0)
-			if slot0 then
-				if slot0.configId ~= 308031 then
-					slot1 = false
-				else
-					slot1 = true
-				end
-			end
-
-			return slot1
-		end) or not {} then
-			slot9 = {
-				1
-			}
-		end
-
-		slot6(slot7, slot8, slot9)
+	if getProxy(TaskProxy):getTaskById(10302) and slot1:isFinish() and not slot1:isReceive() and slot2:isEmpty() then
+		pg.StoryMgr:GetInstance():PlayGuide("NG002", (_.any(getProxy(BayProxy):getShips(), function (slot0)
+			return slot0 and slot0.configId == 308031
+		end) and {}) or {
+			1
+		})
 
 		slot4 = pg.GuideMgr:GetInstance():isPlayed("NG002")
 	end
@@ -923,19 +916,19 @@ function slot0.tryPlayGuide(slot0)
 	end
 end
 
-function slot0.tryRequestMainSub(slot0)
+slot0.tryRequestMainSub = function (slot0)
 	if getProxy(ChapterProxy).subNextReqTime < pg.TimeMgr.GetInstance():GetServerTime() then
 		slot0:sendNotification(GAME.SUB_CHAPTER_FETCH)
 	end
 end
 
-function slot0.tryRequestVersion(slot0)
+slot0.tryRequestVersion = function (slot0)
 	if PLATFORM_CODE == PLATFORM_US and VersionMgr.Inst:OnProxyUsing() then
 		return
 	end
 
-	if UpdateMgr.Inst.currentVersion.Major > 0 and (not uv0.lastRequestVersionTime or Time.realtimeSinceStartup - uv0.lastRequestVersionTime > 1800) then
-		uv0.lastRequestVersionTime = Time.realtimeSinceStartup
+	if UpdateMgr.Inst.currentVersion.Major > 0 and (not slot0.lastRequestVersionTime or Time.realtimeSinceStartup - slot0.lastRequestVersionTime > 1800) then
+		slot0.lastRequestVersionTime = Time.realtimeSinceStartup
 
 		pg.UIMgr.GetInstance():LoadingOn()
 
@@ -944,9 +937,7 @@ function slot0.tryRequestVersion(slot0)
 		VersionMgr.Inst:FetchVersion(function (slot0)
 			pg.UIMgr.GetInstance():LoadingOff()
 
-			uv0 = false
-
-			if UpdateMgr.Inst.currentVersion.Build < slot0.Build then
+			if UpdateMgr.Inst.currentVersion.Build < false.Build then
 				pg.MsgboxMgr.GetInstance():ShowMsgBox({
 					modal = true,
 					hideNo = true,
@@ -961,46 +952,45 @@ function slot0.tryRequestVersion(slot0)
 				})
 			end
 		end)
+		LeanTween.delayedCall(3, System.Action(function ()
+			if slot0 then
+				pg.UIMgr.GetInstance():LoadingOff()
+			end
+		end))
 	end
-
-	LeanTween.delayedCall(3, System.Action(function ()
-		if onFetching then
-			pg.UIMgr.GetInstance():LoadingOff()
-		end
-	end))
 end
 
-function slot0.checkCV(slot0)
-	if uv0.CVChecked then
+slot0.checkCV = function (slot0)
+	if slot0.CVChecked then
 		return
 	end
 
-	uv0.CVChecked = true
+	slot0.CVChecked = true
 
 	CVUpdateMgr.Inst.CheckD(slot1)
 
 	slot2 = nil
 
 	Timer.New(function ()
-		if uv0.state == DownloadState.CheckToUpdate then
-			uv1.CanUpdateCV = true
+		if slot0.state == DownloadState.CheckToUpdate then
+			slot1.CanUpdateCV = true
 
-			if uv2.viewComponent and not uv2.viewComponent.exited then
-				uv2:updateSettingsNotice()
+			if slot2.viewComponent and not slot2.viewComponent.exited then
+				slot2:updateSettingsNotice()
 			end
 		end
 
-		if uv0.state ~= DownloadState.None then
-			uv3:Stop()
+		if slot0.state ~= DownloadState.None then
+			slot3:Stop()
 		end
 	end, 0.5, -1):Start()
 end
 
-function slot0.storyStorageFix(slot0)
+slot0.storyStorageFix = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-91, warpins: 1 ---
-	if uv0.StoryFixedOnce then
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if slot0.StoryFixedOnce then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 5-5, warpins: 1 ---
@@ -1011,26 +1001,47 @@ function slot0.storyStorageFix(slot0)
 
 	end
 
-	uv0.StoryFixedOnce = true
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 6-26, warpins: 1 ---
+	slot0.StoryFixedOnce = true
 	slot2 = slot0:getFixStoryList(5001, 5020, {})
 
 	if getProxy(ActivityProxy):getActivityById(ActivityConst.JYHZ_ACTIVITY_ID) and not slot3:isEnd() then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 32-79, warpins: 1 ---
+		--- BLOCK #0 32-50, warpins: 1 ---
+		slot5 = getProxy(PlayerProxy).getRawData(slot4)
+		slot8 = nil
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 51-79, warpins: 0 ---
 		for slot12 = #_.flatten(slot6), 1, -1 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 51-79, warpins: 2 ---
+			--- BLOCK #0 51-57, warpins: 2 ---
 			if pg.task_data_template[slot7[slot12]].story_id and #slot15 > 0 then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 62-67, warpins: 1 ---
-				if nil then
+				slot16 = slot5:IsPlayed(slot15)
+
+				if slot8 then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 68-69, warpins: 1 ---
-					if not getProxy(PlayerProxy).getRawData(slot4):IsPlayed(slot15) then
+					if not slot16 then
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 70-75, warpins: 1 ---
@@ -1070,15 +1081,31 @@ function slot0.storyStorageFix(slot0)
 			end
 			--- END OF BLOCK #0 ---
 
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 79-79, warpins: 6 ---
+			--- END OF BLOCK #1 ---
+
 
 
 		end
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 80-83, warpins: 3 ---
 	if #slot2 > 0 then
 
 		-- Decompilation error in this vicinity:
@@ -1087,7 +1114,7 @@ function slot0.storyStorageFix(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-9, warpins: 1 ---
-			uv0:sendNotification(GAME.STORY_UPDATE, {
+			slot0:sendNotification(GAME.STORY_UPDATE, {
 				storyId = slot0
 			})
 
@@ -1103,34 +1130,60 @@ function slot0.storyStorageFix(slot0)
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 89-90, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 91-91, warpins: 2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-function slot0.getFixStoryByStoryId(slot0, slot1, slot2, slot3)
+slot0.getFixStoryByStoryId = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-62, warpins: 1 ---
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot5 = getProxy(PlayerProxy).getRawData(slot4)
+	slot6 = {}
 	slot7 = false
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 13-48, warpins: 0 ---
 	for slot11, slot12 in ipairs(slot1) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 13-48, warpins: 1 ---
+		--- BLOCK #0 13-14, warpins: 1 ---
 		if slot3 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 15-20, warpins: 1 ---
-			if not getProxy(PlayerProxy).getRawData(slot4):IsPlayed(slot12) then
+			if not slot5:IsPlayed(slot12) then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 21-27, warpins: 1 ---
 				slot7 = true
 
-				table.insert({}, slot12)
+				table.insert(slot6, slot12)
 				--- END OF BLOCK #0 ---
 
 
@@ -1179,94 +1232,160 @@ function slot0.getFixStoryByStoryId(slot0, slot1, slot2, slot3)
 		end
 		--- END OF BLOCK #0 ---
 
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 47-48, warpins: 6 ---
+		--- END OF BLOCK #1 ---
+
 
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 49-50, warpins: 1 ---
 	if slot7 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 51-61, warpins: 1 ---
+		--- BLOCK #0 51-54, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 55-61, warpins: 0 ---
 		for slot11, slot12 in ipairs(slot6) do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 55-61, warpins: 1 ---
+			--- BLOCK #0 55-59, warpins: 1 ---
 			table.insert(slot2, slot12)
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 60-61, warpins: 2 ---
+			--- END OF BLOCK #1 ---
 
 
 
 		end
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 62-62, warpins: 2 ---
 	return slot2
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-function slot0.getFixStoryList(slot0, slot1, slot2, slot3)
+slot0.getFixStoryList = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-61, warpins: 1 ---
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = getProxy(TaskProxy)
 	slot6 = getProxy(PlayerProxy):getRawData()
-
-	if not slot3 then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 12-12, warpins: 1 ---
-		slot3 = {}
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
+	slot3 = slot3 or {}
 	slot7 = 0
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 13-17, warpins: 2 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 18-32, warpins: 0 ---
 	for slot11 = slot2, slot1, -1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 18-32, warpins: 2 ---
-		if not slot4:getFinishTaskById(slot11) then
+		--- BLOCK #0 28-29, warpins: 2 ---
+		if slot4:getFinishTaskById(slot11) or slot4:getTaskById(slot11) then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 24-27, warpins: 1 ---
-			slot12 = slot4:getTaskById(slot11)
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		if slot12 then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 30-32, warpins: 1 ---
+			--- BLOCK #0 30-31, warpins: 1 ---
 			slot7 = slot11
 
-			break
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 32-32, warpins: 1 ---
+			break
+			--- END OF BLOCK #1 ---
 
 
 
 		end
 		--- END OF BLOCK #0 ---
 
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 32-32, warpins: 1 ---
+		--- END OF BLOCK #1 ---
+
 
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 33-36, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 37-60, warpins: 0 ---
 	for slot11 = slot7, slot1, -1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 37-60, warpins: 2 ---
+		--- BLOCK #0 37-41, warpins: 2 ---
 		if pg.task_data_template[slot11] and slot12.story_id and #slot13 > 0 and not slot6:IsPlayed(slot13) then
 
 			-- Decompilation error in this vicinity:
@@ -1279,18 +1398,34 @@ function slot0.getFixStoryList(slot0, slot1, slot2, slot3)
 		end
 		--- END OF BLOCK #0 ---
 
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 60-60, warpins: 5 ---
+		--- END OF BLOCK #1 ---
+
 
 
 	end
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 61-61, warpins: 1 ---
 	return slot3
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-function slot0.accepetActivityTask(slot0)
+slot0.accepetActivityTask = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -1303,10 +1438,10 @@ function slot0.accepetActivityTask(slot0)
 
 end
 
-function slot0.tryRequestColoring(slot0)
+slot0.tryRequestColoring = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-24, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_COLORING_ALPHA) and not slot1:isEnd() then
 
 		-- Decompilation error in this vicinity:
@@ -1320,14 +1455,22 @@ function slot0.tryRequestColoring(slot0)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 24-24, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.handlingSpecialActs(slot0)
+slot0.handlingSpecialActs = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -1340,7 +1483,7 @@ function slot0.handlingSpecialActs(slot0)
 
 end
 
-function slot0.handlingActivityBtn(slot0)
+slot0.handlingActivityBtn = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -1353,7 +1496,7 @@ function slot0.handlingActivityBtn(slot0)
 
 end
 
-function slot0.remove(slot0)
+slot0.remove = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -1366,11 +1509,11 @@ function slot0.remove(slot0)
 
 end
 
-function slot0.handleReturnAwardAct(slot0)
+slot0.handleReturnAwardAct = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-46, warpins: 1 ---
-	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_RETURN_AWARD) and not slot1:isEnd() and getProxy(PlayerProxy):getRawData().level >= 15 and (slot1.data1 == 0 or slot1.data1 == 1 and slot1.data2 == 0) then
+	--- BLOCK #0 1-10, warpins: 1 ---
+	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_RETURN_AWARD) and not slot1:isEnd() and getProxy(PlayerProxy):getRawData().level >= 15 and (slot1.data1 == 0 or (slot1.data1 == 1 and slot1.data2 == 0)) then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 35-45, warpins: 2 ---
@@ -1384,14 +1527,22 @@ function slot0.handleReturnAwardAct(slot0)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 46-46, warpins: 6 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.handleOverdueAttire(slot0)
+slot0.handleOverdueAttire = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-6, warpins: 1 ---

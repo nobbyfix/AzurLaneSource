@@ -1,20 +1,23 @@
 slot0 = class("GameMediator", pm.Mediator)
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		GAME.GO_SCENE,
 		GAME.LOAD_SCENE_DONE
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
+	slot3 = slot1:getBody()
+	slot4 = nil
+
 	if slot1:getName() == GAME.GO_SCENE then
 		Context.New():extendData(slot1:getType())
 
-		if slot1:getBody() == SCENE.LOGIN then
-			nil.mediator = LoginMediator
-			nil.viewComponent = LoginScene
-			nil.cleanStack = true
+		if slot3 == SCENE.LOGIN then
+			slot4.mediator = LoginMediator
+			slot4.viewComponent = LoginScene
+			slot4.cleanStack = true
 		elseif slot3 == SCENE.CREATE_PLAYER then
 			slot4.mediator = NewPlayerMediator
 			slot4.viewComponent = NewPlayerScene
@@ -25,7 +28,6 @@ function slot0.handleNotification(slot0, slot1)
 			slot4.mediator = BuildShipMediator
 			slot4.viewComponent = BuildShipScene
 		elseif slot3 == SCENE.CHANGEEQUIP then
-			-- Nothing
 		elseif slot3 == SCENE.BACKYARD then
 			slot4.mediator = BackYardMediator
 			slot4.viewComponent = BackYardScene
@@ -189,6 +191,9 @@ function slot0.handleNotification(slot0, slot1)
 		elseif slot3 == SCENE.TECHNOLOGY_TREE_SCENE then
 			slot4.mediator = TechnologyTreeMediator
 			slot4.viewComponent = TechnologyTreeScene
+		elseif slot3 == SCENE.CHALLENGE_MAIN_SCENE then
+			slot4.mediator = ChallengeMainMediator
+			slot4.viewComponent = ChallengeMainScene
 		elseif slot3 == SCENE.ATTIRE then
 			slot4.mediator = AttireMediator
 			slot4.viewComponent = AttireScene

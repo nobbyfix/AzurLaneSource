@@ -16,79 +16,79 @@ slot0.ON_EQUIPMENT = "BaseUI:ON_EQUIPMENT"
 slot0.ON_SHIP_EXP = "BaseUI.ON_SHIP_EXP"
 slot0.ON_BACK_PRESSED = "BaseUI:ON_BACK_PRESS"
 
-function slot0.Ctor(slot0)
-	uv0.super.Ctor(slot0)
+slot0.Ctor = function (slot0)
+	slot0.super.Ctor(slot0)
 
 	slot0._isLoaded = false
 	slot0._go = nil
 	slot0._tf = nil
 end
 
-function slot0.setContextData(slot0, slot1)
+slot0.setContextData = function (slot0, slot1)
 	slot0.contextData = slot1
 end
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return nil
 end
 
-function slot0.getGroupName(slot0)
+slot0.getGroupName = function (slot0)
 	return nil
 end
 
-function slot0.getBGM(slot0)
+slot0.getBGM = function (slot0)
 	return nil
 end
 
-function slot0.preload(slot0, slot1)
+slot0.preload = function (slot0, slot1)
 	slot1()
 end
 
-function slot0.loadUISync(slot0, slot1)
+slot0.loadUISync = function (slot0, slot1)
 	LoadAndInstantiateSync("UI", slot1, true, false).transform:SetParent(pg.UIMgr:GetInstance().UIMain.transform, false)
 
 	return LoadAndInstantiateSync("UI", slot1, true, false)
 end
 
-function slot0.load(slot0)
+slot0.load = function (slot0)
 	slot1 = nil
 	slot2 = Time.realtimeSinceStartup
 
 	seriesAsync({
 		function (slot0)
-			PoolMgr.GetInstance():GetUI(uv0:getUIName(), true, function (slot0)
-				uv0 = slot0
+			PoolMgr.GetInstance():GetUI(slot0:getUIName(), true, function (slot0)
+				slot0 = slot0
 
-				uv1()
+				slot1()
 			end)
 		end,
 		function (slot0)
-			uv0:preload(slot0)
+			slot0:preload(slot0)
 		end
 	}, function ()
-		print("load " .. uv0.name .. " time cost: " .. Time.realtimeSinceStartup - uv1)
+		print("load " .. slot0.name .. " time cost: " .. Time.realtimeSinceStartup - "load ")
 
-		if uv2:getBGM() then
+		if slot2:getBGM() then
 			playBGM(slot0)
 		end
 
-		uv0.transform:SetParent(pg.UIMgr:GetInstance().UIMain.transform, false)
-		uv0:SetActive(true)
-		uv2:onUILoaded(uv0)
+		slot0.transform:SetParent(pg.UIMgr:GetInstance().UIMain.transform, false)
+		slot0:SetActive(true)
+		slot0.SetActive:onUILoaded(slot0)
 	end)
 end
 
-function slot0.isLoaded(slot0)
+slot0.isLoaded = function (slot0)
 	return slot0._isLoaded
 end
 
-function slot0.getGroupNameFromData(slot0)
+slot0.getGroupNameFromData = function (slot0)
 	slot1 = nil
 
 	return (slot0.contextData == nil or not slot0.contextData.LayerWeightMgr_groupName or slot0.contextData.LayerWeightMgr_groupName) and slot0:getGroupName()
 end
 
-function slot0.getWeightFromData(slot0)
+slot0.getWeightFromData = function (slot0)
 	slot1 = nil
 
 	if slot0.contextData ~= nil and slot0.contextData.LayerWeightMgr_weight then
@@ -98,11 +98,11 @@ function slot0.getWeightFromData(slot0)
 	return slot1
 end
 
-function slot0.isLayer(slot0)
+slot0.isLayer = function (slot0)
 	return slot0.contextData ~= nil and slot0.contextData.isLayer
 end
 
-function slot0.addToLayerMgr(slot0)
+slot0.addToLayerMgr = function (slot0)
 	pg.LayerWeightMgr.GetInstance():Add2Overlay(LayerWeightConst.UI_TYPE_SYSTEM, slot0._tf, {
 		globalBlur = false,
 		groupName = slot0:getGroupNameFromData(),
@@ -110,7 +110,7 @@ function slot0.addToLayerMgr(slot0)
 	})
 end
 
-function slot0.onUILoaded(slot0, slot1)
+slot0.onUILoaded = function (slot0, slot1)
 	slot0._go = slot1
 	slot0._tf = slot1 and slot1.transform
 	slot0.animTF = slot0:findTF("blur_panel")
@@ -143,53 +143,55 @@ function slot0.onUILoaded(slot0, slot1)
 		slot0:findTF("mainPanel/top/option"),
 		slot0:findTF("bg/top/option"),
 		slot0:findTF("blur_container/adapt/top/title/option"),
-		slot0:findTF("blur_container/adapt/top/option")
+		slot0:findTF("blur_container/adapt/top/option"),
+		slot0:findTF("ForNorth/top/option")
 	}
 
 	slot0:init()
-	setActive(slot0._tf, not slot0.event:chectConnect(uv0.LOADED))
-	slot0:emit(uv0.LOADED)
+	setActive(slot0._tf, not slot0.event:chectConnect(slot0.LOADED))
+	slot0:emit(slot0.LOADED)
 end
 
-function slot0.onUIAnimEnd(slot0, slot1)
+slot0.onUIAnimEnd = function (slot0, slot1)
 	slot1()
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
+	return
 end
 
-function slot0.quckExitFunc(slot0)
-	slot0:emit(uv0.ON_HOME)
+slot0.quckExitFunc = function (slot0)
+	slot0:emit(slot0.ON_HOME)
 end
 
-function slot0.quickExit(slot0)
+slot0.quickExit = function (slot0)
 	for slot4, slot5 in pairs(slot0.optionBtns) do
 		if not IsNil(slot5) then
 			onButton(slot0, slot5, function ()
-				uv0:quckExitFunc()
+				slot0:quckExitFunc()
 			end, SFX_PANEL)
 		end
 	end
 end
 
-function slot0.enter(slot0)
+slot0.enter = function (slot0)
 	slot0:quickExit()
 	slot0:prepareAnimtion()
 	setActive(slot0._tf, true)
 
 	function slot1()
-		uv0:emit(uv1.DID_ENTER)
-		uv0:didEnter()
-		uv0:emit(uv1.AVALIBLE)
-		uv0:onUIAnimEnd(function ()
+		slot0:emit(slot1.DID_ENTER)
+		slot0.emit:didEnter()
+		slot0.emit.didEnter:emit(slot1.AVALIBLE)
+		slot0.emit.didEnter.emit:onUIAnimEnd(function ()
 			pg.SeriesGuideMgr:GetInstance():start({
-				view = uv0.__cname,
+				view = slot0.__cname,
 				code = {
 					pg.SeriesGuideMgr.CODES.MAINUI
 				}
 			})
 			pg.GuideMgr:GetInstance():onSceneAnimDone({
-				view = uv0.__cname
+				view = slot0.__cname
 			})
 		end)
 	end
@@ -197,7 +199,9 @@ function slot0.enter(slot0)
 	slot2 = false
 
 	if slot0.animTF ~= nil then
-		if slot0.animTF:GetComponent(typeof(Animation)) ~= nil and slot0.animTF:GetComponent(typeof(UIEventTrigger)) ~= nil then
+		slot4 = slot0.animTF:GetComponent(typeof(UIEventTrigger))
+
+		if slot0.animTF:GetComponent(typeof(Animation)) ~= nil and slot4 ~= nil then
 			if slot3:get_Item("enter") == nil then
 				print("cound not found enter animation")
 			else
@@ -215,7 +219,7 @@ function slot0.enter(slot0)
 	end
 end
 
-function slot0.prepareAnimtion(slot0)
+slot0.prepareAnimtion = function (slot0)
 	if slot0.animTF then
 		slot2 = slot0.animTF:Find("top_bg")
 		slot3 = slot0.animTF:Find("adapt/left_length")
@@ -231,37 +235,42 @@ function slot0.prepareAnimtion(slot0)
 	end
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
+	return
 end
 
-function slot0.closeView(slot0)
+slot0.closeView = function (slot0)
 	slot0:emit(BaseUI.ON_CLOSE)
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
+	return
 end
 
-function slot0.exit(slot0)
+slot0.exit = function (slot0)
 	slot0.exited = true
 
 	pg.DelegateInfo.Dispose(slot0)
 
+	function slot1()
+		slot0:willExit()
+		slot0.willExit:detach()
+		pg.GuideMgr:GetInstance():onSceneExit({
+			view = slot0.__cname
+		})
+		pg.GuideMgr.GetInstance().onSceneExit:emit(slot1.DID_EXIT)
+	end
+
 	if not false then
-		function ()
-			uv0:willExit()
-			uv0:detach()
-			pg.GuideMgr:GetInstance():onSceneExit({
-				view = uv0.__cname
-			})
-			uv0:emit(uv1.DID_EXIT)
-		end()
+		slot1()
 	end
 end
 
-function slot0.attach(slot0, slot1)
+slot0.attach = function (slot0, slot1)
+	return
 end
 
-function slot0.detach(slot0, slot1)
+slot0.detach = function (slot0, slot1)
 	slot0._isLoaded = false
 
 	pg.LayerWeightMgr.GetInstance():DelFromOverlay(slot0._tf)
@@ -278,15 +287,15 @@ function slot0.detach(slot0, slot1)
 	end
 end
 
-function slot0.findGO(slot0, slot1, slot2)
+slot0.findGO = function (slot0, slot1, slot2)
 	return findGO(slot2 or slot0._go, slot1)
 end
 
-function slot0.findTF(slot0, slot1, slot2)
+slot0.findTF = function (slot0, slot1, slot2)
 	return findTF(slot2 or slot0._tf, slot1)
 end
 
-function slot0.getTpl(slot0, slot1, slot2)
+slot0.getTpl = function (slot0, slot1, slot2)
 	slot3 = slot0:findTF(slot1, slot2)
 
 	slot3:SetParent(slot0._tf, false)
@@ -295,7 +304,7 @@ function slot0.getTpl(slot0, slot1, slot2)
 	return slot3
 end
 
-function slot0.setSpriteTo(slot0, slot1, slot2, slot3)
+slot0.setSpriteTo = function (slot0, slot1, slot2, slot3)
 	slot2:GetComponent(typeof(Image)).sprite = slot0:findTF(slot1):GetComponent(typeof(Image)).sprite
 
 	if slot3 then
@@ -303,12 +312,12 @@ function slot0.setSpriteTo(slot0, slot1, slot2, slot3)
 	end
 end
 
-function slot0.setImageAmount(slot0, slot1, slot2)
+slot0.setImageAmount = function (slot0, slot1, slot2)
 	slot1:GetComponent(typeof(Image)).fillAmount = slot2
 end
 
-function slot0.onBackPressed(slot0)
-	slot0:emit(uv0.ON_BACK_PRESSED)
+slot0.onBackPressed = function (slot0)
+	slot0:emit(slot0.ON_BACK_PRESSED)
 end
 
 return slot0

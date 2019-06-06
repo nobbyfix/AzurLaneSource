@@ -140,6 +140,8 @@ slot0.BISMARCK_PT_SHOP_ID = 20197
 slot0.XIMU_LOGIN_ID = 20204
 slot0.SANDIEGO_PT_ID = 20205
 slot0.ANNIVERSARY_ID = 318
+slot0.ACTIVITY_ID_CHALLENGE_RANK = 20209
+slot0.ACTIVITY_ID_CHALLENGE = 20210
 slot0.PINTU_TASK_ID = 10000
 slot0.ELITE_AWARD_ACTIVITY_ID = 20135
 slot0.HIDE_PT_PANELS = false
@@ -184,9 +186,9 @@ slot0.LIMIT_SKIN_SHOP_TIME = {
 	}
 }
 
-function slot0.BBRule(slot0)
+slot0.BBRule = function (slot0)
 	_.each(slot0, function (slot0)
-		uv0[slot0] = uv0[slot0] + 1
+		slot0[slot0] = slot0[slot0] + 1
 	end)
 
 	slot2 = 7

@@ -21,19 +21,19 @@ slot0.ObjectiveList = {
 	"battle_result_defeat_all_enemys"
 }
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "BattleResultUI"
 end
 
-function slot0.setRivalVO(slot0, slot1)
+slot0.setRivalVO = function (slot0, slot1)
 	slot0.rivalVO = slot1
 end
 
-function slot0.setRank(slot0, slot1, slot2)
+slot0.setRank = function (slot0, slot1, slot2)
 	slot0.player = slot1
 	slot0.season = slot2
 
-	setText(slot0._playerName, slot0.player.name)
+	setText(slot0._playerName, "<color=#FFFFFF>" .. slot0.player.name .. "</color><size=32> / C O M M A N D E R</size>")
 
 	slot4, slot5 = SeasonInfo.getNextMilitaryRank(slot2.score, slot2.rank)
 
@@ -48,14 +48,14 @@ function slot0.setRank(slot0, slot1, slot2)
 	slot0.calcPlayerProgress = slot0.calcPlayerRank
 end
 
-function slot0.setShips(slot0, slot1)
+slot0.setShips = function (slot0, slot1)
 	slot0.shipVOs = slot1
 end
 
-function slot0.setPlayer(slot0, slot1)
+slot0.setPlayer = function (slot0, slot1)
 	slot0.player = slot1
 
-	setText(slot0._playerName, slot0.player.name)
+	setText(slot0._playerName, "<color=#FFFFFF>" .. slot0.player.name .. "</color><size=32> / C O M M A N D E R</size>")
 	setText(slot0._playerLv, "Lv." .. slot0.player.level)
 
 	slot0._playerExpProgress:GetComponent(typeof(Image)).fillAmount = slot0.player.exp / getConfigFromLevel1(pg.user_level, slot0.player.level).exp_interval
@@ -70,11 +70,11 @@ function slot0.setPlayer(slot0, slot1)
 	slot3 = slot0.contextData.extraBuffList
 end
 
-function slot0.setExpBuff(slot0, slot1)
+slot0.setExpBuff = function (slot0, slot1)
 	slot0.expBuff = slot1
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0._grade = slot0:findTF("grade")
 	slot0._gradeLabel = slot0:findTF("label", slot0._grade)
 	slot0._gradeLabelImg = slot0._gradeLabel:GetComponent(typeof(Image))
@@ -135,7 +135,7 @@ function slot0.init(slot0)
 	setActive(slot0:findTF("jieuan01/BG/bg_victory", slot0._bg), slot0.contextData.score > 0)
 	setActive(slot0:findTF("jieuan01/BG/bg_fail", slot0._bg), not (slot0.contextData.score > 0))
 
-	if slot0.contextData.score > 0 then
+	if slot9 then
 		slot4 = "battlescore/battle_score_" .. slot6 .. "/letter_" .. slot6
 		slot5 = "battlescore/battle_score_" .. slot1[slot7 + 1] .. "/label_" .. slot1[slot7 + 1]
 	else
@@ -158,16 +158,21 @@ function slot0.init(slot0)
 	slot0._delayLeanList = {}
 end
 
-function slot0.displayerCommanders(slot0, slot1)
+slot0.displayerCommanders = function (slot0, slot1)
 	slot0.commanderExps = slot0.contextData.commanderExps or {}
 	slot2 = getProxy(CommanderProxy)
 
 	removeAllChildren(slot0._cmdContainer)
 
 	slot3 = nil
-	slot3 = slot1 and (slot0.commanderExps.submarineCMD or {}) or slot0.commanderExps.surfaceCMD or {}
 
-	setActive(slot0._cmdExp, true)
+	if slot1 then
+		slot3 = slot0.commanderExps.submarineCMD or {}
+	else
+		slot3 = slot0.commanderExps.surfaceCMD or {}
+
+		setActive(slot0._cmdExp, true)
+	end
 
 	for slot7, slot8 in ipairs(slot3) do
 		slot9 = slot2:getCommanderById(slot8.commander_id)
@@ -179,16 +184,12 @@ function slot0.displayerCommanders(slot0, slot1)
 		setText(slot10:Find("exp/exp_text"), "+" .. slot8.exp)
 
 		slot11 = nil
-		slot10:Find("exp/exp_progress"):GetComponent(typeof(Image)).fillAmount = slot9:isMaxLevel() and 1 or slot8.curExp / slot9:getNextLevelExp()
+		slot10:Find("exp/exp_progress"):GetComponent(typeof(Image)).fillAmount = (slot9:isMaxLevel() and 1) or slot8.curExp / slot9:getNextLevelExp()
 	end
 end
 
-function slot0.didEnter(slot0)
-	if slot0.contextData.system and slot0.contextData.system == SYSTEM_DUEL then
-		setText(slot0._levelText, slot0.rivalVO.name)
-	else
-		setText(slot0._levelText, pg.expedition_data_template[slot0.contextData.stageId].name)
-	end
+slot0.didEnter = function (slot0)
+	slot0:setStageName()
 
 	slot0._gradeUpperLeftPos = rtf(slot0._grade).localPosition
 	rtf(slot0._grade).localPosition = Vector3(0, 25, 0)
@@ -198,36 +199,46 @@ function slot0.didEnter(slot0)
 
 	slot0._grade.transform.localScale = Vector3(1.5, 1.5, 0)
 
-	LeanTween.scale(slot0._grade, Vector3(0.88, 0.88, 1), uv0.DURATION_WIN_SCALE):setOnComplete(System.Action(function ()
-		SetActive(uv0._levelText, true)
-		uv0:rankAnimaFinish()
+	LeanTween.scale(slot0._grade, Vector3(0.88, 0.88, 1), slot0.DURATION_WIN_SCALE):setOnComplete(System.Action(function ()
+		SetActive(slot0._levelText, true)
+		SetActive:rankAnimaFinish()
 	end))
 
 	slot0._tf:GetComponent(typeof(Image)).color = Color.New(0, 0, 0, 0.5)
 
 	SetActive(slot0._atkBG, false)
 	onToggle(slot0, slot0._subToggle, function (slot0)
-		SetActive(uv0:findTF("switchFleet/off", uv0._leftPanel), not slot0)
-		SetActive(uv0:findTF("switchFleet/on", uv0._leftPanel), slot0)
-		SetActive(uv0._subExpResult, not slot0)
-		SetActive(uv0._expResult, slot0)
-		setActive(uv0:findTF("off", uv0._subToggle), not slot0)
-		uv0:displayerCommanders(not slot0)
+		SetActive(slot0:findTF("switchFleet/off", slot0._leftPanel), not slot0)
+		SetActive(slot0:findTF("switchFleet/on", slot0._leftPanel), slot0)
+		SetActive(slot0._subExpResult, not slot0)
+		SetActive(slot0._expResult, slot0)
+		setActive(slot0:findTF("off", slot0._subToggle), not slot0)
+		slot0:displayerCommanders(not slot0)
 	end, SFX_PANEL)
 
-	slot0._stateFlag = uv0.STATE_RANK_ANIMA
+	slot0._stateFlag = slot0.STATE_RANK_ANIMA
 
 	onButton(slot0, slot0._skipBtn, function ()
-		uv0:skip()
+		slot0:skip()
 	end, SFX_CONFIRM)
 end
 
-function slot0.rankAnimaFinish(slot0)
+slot0.setStageName = function (slot0)
+	if slot0.contextData.system and slot0.contextData.system == SYSTEM_DUEL then
+		setText(slot0._levelText, slot0.rivalVO.name)
+	else
+		setText(slot0._levelText, pg.expedition_data_template[slot0.contextData.stageId].name)
+	end
+end
+
+slot0.rankAnimaFinish = function (slot0)
 	SetActive(slot1, true)
 
 	local function slot4(slot0)
 		if type(slot0) == "table" then
-			uv1:setCondition(i18n(uv0.ObjectiveList[slot0[1]], slot0[2]), uv0.objectiveCheck(slot0[1], uv1.contextData))
+			slot1 = i18n(slot0.ObjectiveList[slot0[1]], slot0[2])
+
+			slot1:setCondition(slot1, slot0.objectiveCheck(slot0[1], slot1.contextData))
 		end
 	end
 
@@ -235,15 +246,15 @@ function slot0.rankAnimaFinish(slot0)
 	slot4(pg.expedition_data_template[slot0.contextData.stageId].objective_2)
 	slot4(pg.expedition_data_template[slot0.contextData.stageId].objective_3)
 	table.insert(slot0._delayLeanList, LeanTween.delayedCall(1, System.Action(function ()
-		uv0._stateFlag = uv1.STATE_REPORTED
+		slot0._stateFlag = slot1.STATE_REPORTED
 
-		SetActive(uv0:findTF("jieuan01/tips", uv0._bg), true)
+		SetActive(slot0:findTF("jieuan01/tips", slot0._bg), true)
 	end)).id)
 
-	slot0._stateFlag = uv0.STATE_REPORT
+	slot0._stateFlag = slot0.STATE_REPORT
 end
 
-function slot0.objectiveCheck(slot0, slot1)
+slot0.objectiveCheck = function (slot0, slot1)
 	if slot0 == 1 or slot0 == 4 or slot0 == 8 then
 		return slot1.score > 1
 	elseif slot0 == 2 or slot0 == 3 then
@@ -257,7 +268,7 @@ function slot0.objectiveCheck(slot0, slot1)
 	end
 end
 
-function slot0.setCondition(slot0, slot1, slot2)
+slot0.setCondition = function (slot0, slot1, slot2)
 	slot3 = cloneTplTo(slot0._conditionTpl, slot0._conditionContainer)
 
 	setActive(slot3, false)
@@ -276,37 +287,37 @@ function slot0.setCondition(slot0, slot1, slot2)
 	slot0:setSpriteTo(slot4, slot3:Find("checkBox"), true)
 
 	if slot0._conditionContainer.childCount - 1 > 0 then
-		table.insert(slot0._delayLeanList, LeanTween.delayedCall(uv0.CONDITIONS_FREQUENCE * slot6, System.Action(function ()
-			setActive(uv0, true)
+		table.insert(slot0._delayLeanList, LeanTween.delayedCall(slot0.CONDITIONS_FREQUENCE * slot6, System.Action(function ()
+			setActive(setActive, true)
 		end)).id)
 	else
 		setActive(slot3, true)
 	end
 end
 
-function slot0.showRewardInfo(slot0)
-	slot0._stateFlag = uv0.STATE_REWARD
+slot0.showRewardInfo = function (slot0)
+	slot0._stateFlag = slot0.STATE_REWARD
 
 	SetActive(slot0:findTF("jieuan01/tips", slot0._bg), false)
 	setParent(slot0._tf, slot0.UIMain)
 
 	slot1 = nil
 	slot1 = coroutine.create(function ()
-		slot0 = uv0.contextData.drops
+		slot0 = slot0.contextData.drops
 
 		if getProxy(ActivityProxy):getActivityById(ActivityConst.UTAWARERU_ACTIVITY_PT_ID) and not slot2:isEnd() then
 			slot3 = slot2:getConfig("config_client").pt_id
 
 			if _.detect(slot1:getActivitiesByType(ActivityConst.ACTIVITY_TYPE_PT_RANK), function (slot0)
-				return slot0:getConfig("config_id") == uv0
+				return slot0:getConfig("config_id") == slot0
 			end):getData1() >= 1500 then
 				slot4 = slot4 - 1500
 				slot0 = _.filter(slot0, function (slot0)
-					return slot0.dropType ~= DROP_TYPE_RESOURCE or slot0.id ~= uv0
+					return slot0.dropType ~= DROP_TYPE_RESOURCE or slot0.id ~= slot0
 				end)
 
 				if _.detect(slot0, function (slot0)
-					return slot0.dropType == DROP_TYPE_RESOURCE and slot0.id == uv0
+					return slot0.dropType == DROP_TYPE_RESOURCE and slot0.id == slot0
 				end) and slot4 < slot5.count then
 					slot5.count = slot5.count - slot4
 
@@ -317,63 +328,67 @@ function slot0.showRewardInfo(slot0)
 
 		slot3 = {}
 
-		for slot7, slot8 in ipairs(uv0.contextData.drops) do
+		for slot7, slot8 in ipairs(slot0.contextData.drops) do
 			table.insert(slot3, slot8)
 		end
 
-		for slot7, slot8 in ipairs(uv0.contextData.extraDrops) do
+		for slot7, slot8 in ipairs(slot0.contextData.extraDrops) do
 			slot8.riraty = true
 
 			table.insert(slot3, slot8)
 		end
 
 		slot4 = false
-		slot5 = uv0.contextData.extraBuffList
+		slot5 = slot0.contextData.extraBuffList
 
 		if table.getCount(slot0) > 0 then
-			uv0:emit(BaseUI.ON_AWARD, {
+			slot0:emit(BaseUI.ON_AWARD, {
 				items = slot0,
-				onYes = uv1
+				onYes = slot1
 			})
 			coroutine.yield()
 
 			for slot12 = math.max(1, #getProxy(BayProxy).getNewShip(slot7, true) - #_.filter(slot3, function (slot0)
 				return slot0.type == DROP_TYPE_SHIP
 			end) + 1), #getProxy(BayProxy).getNewShip(slot7, true), 1 do
-				if PlayerPrefs.GetInt(DISPLAY_SHIP_GET_EFFECT) == 1 or slot8[slot12].virgin or ShipRarity.Purple <= slot8[slot12]:getRarity() then
-					uv0:emit(BattleResultMediator.GET_NEW_SHIP, slot13, uv1)
+				slot14 = PlayerPrefs.GetInt(DISPLAY_SHIP_GET_EFFECT) == 1 or slot8[slot12].virgin or ShipRarity.Purple <= slot8[slot12]:getRarity()
+
+				if slot14 then
+					slot0:emit(BattleResultMediator.GET_NEW_SHIP, slot13, slot1)
 					coroutine.yield()
 				end
 			end
 		end
 
-		setParent(uv0._tf, uv0.overlay)
-		uv0:displayBG()
+		setParent(slot0._tf, slot0.overlay)
+		slot0:displayBG()
 	end)
 
+
+	-- Decompilation error in this vicinity:
 	function ()
-		if uv0 and coroutine.status(uv0) == "suspended" then
-			slot0, slot1 = coroutine.resume(uv0)
+		if slot0 and coroutine.status(coroutine.status) == "suspended" then
+			slot0, slot1 = coroutine.resume(coroutine.resume)
 		end
 	end()
 end
 
-function slot0.displayBG(slot0)
+slot0.displayBG = function (slot0)
 	SetActive(slot0:findTF("Xyz", slot0._grade), false)
 	SetActive(slot0:findTF("label", slot0._grade), true)
-	LeanTween.moveX(rtf(slot0._conditions), 1300, uv0.DURATION_MOVE)
-	LeanTween.scale(slot0._grade, Vector3(0.6, 0.6, 0), uv0.DURATION_MOVE)
-	LeanTween.moveLocal(go(slot1), slot0._gradeUpperLeftPos, uv0.DURATION_MOVE):setOnComplete(System.Action(function ()
-		uv0:displayShips()
-		uv0:displayPlayerInfo()
-		uv0:displayerCommanders()
+	LeanTween.moveX(rtf(slot0._conditions), 1300, slot0.DURATION_MOVE)
+	LeanTween.scale(slot0._grade, Vector3(0.6, 0.6, 0), slot0.DURATION_MOVE)
+	LeanTween.moveLocal(go(slot1), slot0._gradeUpperLeftPos, slot0.DURATION_MOVE):setOnComplete(System.Action(function ()
+		slot0:displayShips()
+		slot0.displayShips:displayPlayerInfo()
+		slot0.displayShips.displayPlayerInfo:displayerCommanders()
 
-		uv0._stateFlag = uv1.STATE_DISPLAY
+		slot0.displayShips.displayPlayerInfo.displayerCommanders._stateFlag = slot0.displayShips.displayPlayerInfo.STATE_DISPLAY
 	end))
 	setActive(slot0:findTF("jieuan01/Bomb", slot0._bg), false)
 end
 
-function slot0.displayPlayerInfo(slot0)
+slot0.displayPlayerInfo = function (slot0)
 	slot1 = slot0:calcPlayerProgress()
 
 	SetActive(slot0._leftPanel, true)
@@ -382,13 +397,13 @@ function slot0.displayPlayerInfo(slot0)
 	slot0._main:GetComponent("Animator").enabled = true
 
 	table.insert(slot0._delayLeanList, LeanTween.moveX(rtf(slot0._leftPanel), 0, 0.5):setOnComplete(System.Action(function ()
-		table.insert(uv0._delayLeanList, LeanTween.value(go(uv0._tf), 0, uv1, 1):setOnUpdate(System.Action_float(function (slot0)
-			setText(uv0._playerBonusExp, "+" .. math.floor(slot0))
+		table.insert(slot0._delayLeanList, LeanTween.value(go(slot0._tf), 0, , 1):setOnUpdate(System.Action_float(function (slot0)
+			setText(slot0._playerBonusExp, "+" .. math.floor(slot0))
 		end)).id)
 	end)).id)
 end
 
-function slot0.calcPlayerExp(slot0)
+slot0.calcPlayerExp = function (slot0)
 	slot2 = slot0.contextData.oldPlayer.level
 	slot3 = slot0.player.level
 	slot4 = slot0.player.exp - slot0.contextData.oldPlayer.exp
@@ -405,13 +420,13 @@ function slot0.calcPlayerExp(slot0)
 	return slot4
 end
 
-function slot0.calcPlayerRank(slot0)
+slot0.calcPlayerRank = function (slot0)
 	slot2 = slot0.contextData.oldRank.score
 
 	return slot0.season.score - slot0.contextData.oldRank.score
 end
 
-function slot0.displayShips(slot0)
+slot0.displayShips = function (slot0)
 	slot0._expTFs = {}
 	slot0._nameTxts = {}
 	slot0._initExp = {}
@@ -442,15 +457,15 @@ function slot0.displayShips(slot0)
 
 	SetActive(slot0._atkToggle, #(slot0.contextData.prefabFleet or slot0.contextData.oldMainShips) > 6)
 
-	if #(slot0.contextData.prefabFleet or slot0.contextData.oldMainShips) > 6 then
+	if #slot6 > 6 then
 		onToggle(slot0, slot0._atkToggle, function (slot0)
-			SetActive(uv0._atkContainer, slot0)
-			SetActive(uv0._atkContainerNext, not slot0)
+			SetActive(slot0._atkContainer, slot0)
+			SetActive(slot0._atkContainerNext, not slot0)
 
 			if slot0 then
-				uv0:skipAtkAnima(uv0._atkContainerNext)
+				slot0:skipAtkAnima(slot0._atkContainerNext)
 			else
-				uv0:skipAtkAnima(uv0._atkContainer)
+				slot0:skipAtkAnima(slot0._atkContainer)
 			end
 		end, SFX_PANEL)
 	end
@@ -555,74 +570,308 @@ function slot0.displayShips(slot0)
 			end
 
 			function slot47()
-				SetActive(uv0, true)
-				SetActive(uv1, uv2:getIntimacy() < uv3:getIntimacy())
-				SetActive(uv4, uv3:getIntimacy() < uv2:getIntimacy())
 
-				slot1 = getExpByRarityFromLv1(uv5, uv3.level)
-				uv6.fillAmount = uv2:getExp() / getExpByRarityFromLv1(uv5, uv2.level)
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-16, warpins: 1 ---
+				SetActive(SetActive, true)
 
-				if uv2.level < uv3.level then
-					slot2 = 0
+				slot0 = SetActive
+				slot1 = SetActive
+				slot2 = true:getIntimacy() < true:getIntimacy()
 
-					for slot6 = uv2.level, uv3.level - 1, 1 do
-						slot2 = slot2 + getExpByRarityFromLv1(uv5, slot6)
+				SetActive(SetActive, true.getIntimacy() < true.getIntimacy())
+				SetActive(slot4, true.getIntimacy() < true.getIntimacy():getIntimacy() < true.getIntimacy() < true.getIntimacy():getIntimacy())
+
+				slot1 = getExpByRarityFromLv1(slot5, slot3.level)
+				slot6.fillAmount = true.getIntimacy() < true.getIntimacy().getIntimacy() < true.getIntimacy() < true.getIntimacy().getIntimacy():getExp() / getExpByRarityFromLv1(slot5, true.getIntimacy() < true.getIntimacy().getIntimacy() < true.getIntimacy() < true.getIntimacy().getIntimacy().level)
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 17-18, warpins: 1 ---
+				slot2 = false
+
+				if false then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 19-19, warpins: 1 ---
+					slot2 = true
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 20-32, warpins: 2 ---
+				--- END OF BLOCK #2 ---
+
+				FLOW; TARGET BLOCK #4
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #3 33-34, warpins: 1 ---
+				slot2 = false
+
+				if false then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 35-35, warpins: 1 ---
+					slot2 = true
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #3 ---
+
+				FLOW; TARGET BLOCK #4
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #4 36-59, warpins: 2 ---
+				if slot6.level < true.getIntimacy() < true.getIntimacy().getIntimacy() < true.getIntimacy() < true.getIntimacy().getIntimacy().getExp() / getExpByRarityFromLv1(slot5, true.getIntimacy() < true.getIntimacy().getIntimacy() < true.getIntimacy() < true.getIntimacy().getIntimacy().level).level then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 60-67, warpins: 1 ---
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 68-73, warpins: 0 ---
+					for slot6 = slot2.level, slot3.level - 1, 1 do
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 68-73, warpins: 2 ---
+						slot2 = slot2 + getExpByRarityFromLv1(slot5, slot6)
+						--- END OF BLOCK #0 ---
+
+
+
 					end
 
-					uv7:PlayAnimation(uv8, 0, slot2 + uv3:getExp() - uv2:getExp(), 1, 0, function (slot0)
-						setText(uv0, "+" .. math.ceil(slot0))
+					--- END OF BLOCK #1 ---
+
+					FLOW; TARGET BLOCK #2
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #2 74-107, warpins: 1 ---
+					slot7:PlayAnimation(slot8, 0, (slot2 + slot3:getExp()) - slot2:getExp(), 1, 0, function (slot0)
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 1-10, warpins: 1 ---
+						setText(slot0, "+" .. math.ceil(slot0))
+
+						return
+						--- END OF BLOCK #0 ---
+
+
+
 					end)
 
 					function slot3(slot0)
-						SetActive(uv0, true)
-						SetActive(uv1, true)
-						LeanTween.moveY(rtf(uv0), uv0.localPosition.y + 30, 0.5):setOnComplete(System.Action(function ()
-							SetActive(uv0, false)
 
-							uv0.localPosition = uv1
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 1-30, warpins: 1 ---
+						SetActive(slot0, true)
+						SetActive(SetActive, true)
+						LeanTween.moveY(rtf(slot0), slot0.localPosition.y + 30, 0.5):setOnComplete(System.Action(function ()
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 1-11, warpins: 1 ---
+							SetActive(SetActive, false)
+
+							SetActive.localPosition = SetActive
 
 							playSoundEffect(SFX_BOAT_LEVEL_UP)
+
+							return
+							--- END OF BLOCK #0 ---
+
+
+
 						end))
 
-						if slot0 <= uv2.level then
-							setText(uv3, slot0)
+						if slot0 <= LeanTween.moveY(rtf(slot0), slot0.localPosition.y + 30, 0.5).setOnComplete.level then
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 31-34, warpins: 1 ---
+							setText(slot3, slot0)
+							--- END OF BLOCK #0 ---
+
+
+
 						end
+
+						--- END OF BLOCK #0 ---
+
+						FLOW; TARGET BLOCK #1
+
+
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #1 35-36, warpins: 2 ---
+						return
+						--- END OF BLOCK #1 ---
+
+
+
 					end
 
-					slot4 = uv2.level
+					slot4 = slot2.level
 
+
+					-- Decompilation error in this vicinity:
 					function (slot0, slot1, slot2, slot3)
-						LeanTween.value(go(uv0), slot0, slot1, slot2):setOnUpdate(System.Action_float(function (slot0)
-							uv0.fillAmount = slot0
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 1-25, warpins: 1 ---
+						LeanTween.value(go(slot0), slot0, slot1, slot2):setOnUpdate(System.Action_float(function (slot0)
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 1-3, warpins: 1 ---
+							slot0.fillAmount = slot0
+
+							return
+							--- END OF BLOCK #0 ---
+
+
+
 						end)):setOnComplete(System.Action(function ()
-							uv0 = uv0 + 1
 
-							if uv1 then
-								uv2(uv0)
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 1-6, warpins: 1 ---
+							slot0 = slot0 + 1
+
+							if slot1 then
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 7-9, warpins: 1 ---
+								slot2(slot2)
+								--- END OF BLOCK #0 ---
+
+
+
 							end
 
-							if uv3.level == uv0 then
-								if uv0 == uv3:getMaxLevel() then
-									uv4.fillAmount = 1
+							--- END OF BLOCK #0 ---
+
+							FLOW; TARGET BLOCK #1
+
+
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #1 10-14, warpins: 2 ---
+							if slot3.level ==  then
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 15-21, warpins: 1 ---
+								if slot0 == slot3:getMaxLevel() then
+
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 22-25, warpins: 1 ---
+									slot4.fillAmount = 1
+									--- END OF BLOCK #0 ---
+
+
+
 								else
-									uv5(0, uv3:getExp() / uv6, 1, false)
+
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 26-37, warpins: 1 ---
+									slot5(0, slot3:getExp() / slot6, 1, false)
+									--- END OF BLOCK #0 ---
+
+
+
 								end
-							elseif uv0 < uv3.level then
-								uv5(0, 1, 0.7, true)
+								--- END OF BLOCK #0 ---
+
+
+
+							else
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 38-42, warpins: 1 ---
+								if slot3.level <  then
+
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 43-48, warpins: 1 ---
+									slot5(0, 1, 0.7, true)
+									--- END OF BLOCK #0 ---
+
+
+
+								end
+								--- END OF BLOCK #0 ---
+
+
+
 							end
+
+							--- END OF BLOCK #1 ---
+
+							FLOW; TARGET BLOCK #2
+
+
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #2 49-49, warpins: 4 ---
+							return
+							--- END OF BLOCK #2 ---
+
+
+
 						end))
-					end(uv2:getExp() / slot0, 1, 0.7, true)
+
+						return
+						--- END OF BLOCK #0 ---
+
+
+
+					end(slot2:getExp() / slot0, 1, 0.7, true)
 
 					return
+					--- END OF BLOCK #2 ---
+
+
+
 				end
 
-				setText(uv9, "+" .. math.ceil(uv3:getExp() - uv2:getExp()))
+				--- END OF BLOCK #4 ---
 
-				if uv2.level == uv2:getMaxLevel() then
+				FLOW; TARGET BLOCK #5
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #5 108-133, warpins: 1 ---
+				slot2 = math.ceil(slot3:getExp() - slot2:getExp())
+
+				setText(slot9, "+" .. slot2)
+
+				if slot2.level == slot2:getMaxLevel() then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 134-138, warpins: 1 ---
-					uv6.fillAmount = 1
+					slot6.fillAmount = 1
 
 					return
 					--- END OF BLOCK #0 ---
@@ -631,11 +880,19 @@ function slot0.displayShips(slot0)
 
 				end
 
-				uv7:PlayAnimation(uv8, uv2:getExp() / slot0, uv3:getExp() / slot0, 1, 0, function (slot0)
+				--- END OF BLOCK #5 ---
+
+				FLOW; TARGET BLOCK #6
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #6 139-156, warpins: 2 ---
+				slot7:PlayAnimation(slot8, slot2:getExp() / slot0, slot3:getExp() / slot0, 1, 0, function (slot0)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 1-3, warpins: 1 ---
-					uv0.fillAmount = slot0
+					slot0.fillAmount = slot0
 
 					return
 					--- END OF BLOCK #0 ---
@@ -643,13 +900,25 @@ function slot0.displayShips(slot0)
 
 
 				end)
+				--- END OF BLOCK #6 ---
+
+				FLOW; TARGET BLOCK #7
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #7 157-158, warpins: 2 ---
+				--- END OF BLOCK #7 ---
+
+
+
 			end
 
 			slot27:GetComponent(typeof(DftAniEvent)).SetTriggerEvent(slot48, function (slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-3, warpins: 1 ---
-				uv0()
+				slot0()
 
 				return
 				--- END OF BLOCK #0 ---
@@ -680,7 +949,7 @@ function slot0.displayShips(slot0)
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 1-5, warpins: 1 ---
-						setActive(uv0, true)
+						setActive(slot0, true)
 
 						return
 						--- END OF BLOCK #0 ---
@@ -719,7 +988,7 @@ function slot0.displayShips(slot0)
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 1-5, warpins: 1 ---
-						setActive(uv0, true)
+						setActive(slot0, true)
 
 						return
 						--- END OF BLOCK #0 ---
@@ -760,31 +1029,95 @@ function slot0.displayShips(slot0)
 			slot28[#slot28 + 1] = function ()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 74-94, warpins: 2 ---
-				uv0:GetComponent(typeof(Animator)).enabled = false
+				--- BLOCK #0 1-54, warpins: 1 ---
+				slot0:GetComponent(typeof(Animator)).enabled = false
 
-				SetActive(uv0, true)
-				SetActive(uv1, true)
-				SetActive(uv2, true)
+				SetActive(SetActive, true)
+				SetActive(SetActive, true)
+				SetActive(true, true)
 
-				uv0:GetComponent(typeof(CanvasGroup)).alpha = 1
+				SetActive:GetComponent(typeof(CanvasGroup)).alpha = 1
 
-				LeanTween.cancel(go(uv3))
-				LeanTween.cancel(go(uv0))
-				SetActive(uv4, uv5:getIntimacy() < uv6:getIntimacy())
-				SetActive(uv7, uv6:getIntimacy() < uv5:getIntimacy())
+				LeanTween.cancel(go(slot3))
+				LeanTween.cancel(go(LeanTween.cancel))
 
-				uv1.localPosition = Vector3(0, 0, 0)
+				slot0 = SetActive
+				slot1 = slot4
 
-				setText(uv8, uv6.level)
+				if slot5:getIntimacy() >= slot6:getIntimacy() then
 
-				if uv5.level == uv5:getMaxLevel() then
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 55-56, warpins: 1 ---
+					slot2 = false
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 57-57, warpins: 1 ---
+					slot2 = true
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 58-70, warpins: 2 ---
+				slot0(slot1, slot2)
+
+				slot0 = SetActive
+				slot1 = slot7
+
+				if slot6:getIntimacy() >= slot5:getIntimacy() then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 71-72, warpins: 1 ---
+					slot2 = false
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 73-73, warpins: 1 ---
+					slot2 = true
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 74-94, warpins: 2 ---
+				slot0(slot1, slot2)
+
+				slot1.localPosition = Vector3(0, 0, 0)
+
+				setText(slot8, slot6.level)
+
+				if slot5.level == slot5:getMaxLevel() then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 95-115, warpins: 1 ---
-					setText(uv9, "+" .. math.ceil(uv6:getExp() - uv5:getExp()))
+					setText(slot9, "+" .. math.ceil(slot6:getExp() - slot6:getExp()))
 
-					uv10.fillAmount = 1
+					slot10.fillAmount = 1
 					--- END OF BLOCK #0 ---
 
 
@@ -793,7 +1126,7 @@ function slot0.displayShips(slot0)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 116-121, warpins: 1 ---
-					if uv5.level < uv6.level then
+					if slot5.level < slot6.level then
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 122-129, warpins: 1 ---
@@ -807,11 +1140,11 @@ function slot0.displayShips(slot0)
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #1 130-135, warpins: 0 ---
-						for slot4 = uv5.level, uv6.level - 1, 1 do
+						for slot4 = slot5.level, slot6.level - 1, 1 do
 
 							-- Decompilation error in this vicinity:
 							--- BLOCK #0 130-135, warpins: 2 ---
-							slot0 = slot0 + getExpByRarityFromLv1(uv11, slot4)
+							slot0 = slot0 + getExpByRarityFromLv1(slot11, slot4)
 							--- END OF BLOCK #0 ---
 
 
@@ -826,7 +1159,7 @@ function slot0.displayShips(slot0)
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #2 136-151, warpins: 1 ---
-						setText(uv9, "+" .. slot0 + uv6:getExp() - uv5:getExp())
+						setText(slot9, "+" .. (slot0 + slot6:getExp()) - slot6:getExp())
 						--- END OF BLOCK #2 ---
 
 
@@ -835,7 +1168,7 @@ function slot0.displayShips(slot0)
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 152-168, warpins: 1 ---
-						setText(uv9, "+" .. math.ceil(uv6:getExp() - uv5:getExp()))
+						setText(slot9, "+" .. math.ceil(slot6:getExp() - slot6:getExp()))
 						--- END OF BLOCK #0 ---
 
 
@@ -850,25 +1183,25 @@ function slot0.displayShips(slot0)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #1 169-180, warpins: 2 ---
-					uv10.fillAmount = uv6:getExp() / getExpByRarityFromLv1(uv11, uv6.level)
+					slot10.fillAmount = slot6:getExp() / getExpByRarityFromLv1(slot11, slot6.level)
 					--- END OF BLOCK #1 ---
 
 
 
 				end
 
-				--- END OF BLOCK #0 ---
+				--- END OF BLOCK #2 ---
 
-				FLOW; TARGET BLOCK #1
+				FLOW; TARGET BLOCK #3
 
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 181-185, warpins: 2 ---
-				SetActive(uv3, false)
+				--- BLOCK #3 181-185, warpins: 2 ---
+				SetActive(slot3, false)
 
 				return
-				--- END OF BLOCK #1 ---
+				--- END OF BLOCK #3 ---
 
 
 
@@ -903,7 +1236,7 @@ function slot0.displayShips(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-4, warpins: 1 ---
-			uv0._stateFlag = uv1
+			slot0._stateFlag = slot0
 
 			return
 			--- END OF BLOCK #0 ---
@@ -927,11 +1260,11 @@ function slot0.displayShips(slot0)
 
 	end
 
-	slot11(slot9, uv0.STATE_DISPLAYED)
-	slot11(slot10, uv0.STATE_SUB_DISPLAYED)
+	slot11(slot9, slot0.STATE_DISPLAYED)
+	slot11(slot10, slot0.STATE_SUB_DISPLAYED)
 end
 
-function slot0.setAtkAnima(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot0.setAtkAnima = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-44, warpins: 1 ---
@@ -970,11 +1303,11 @@ function slot0.setAtkAnima(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-3, warpins: 1 ---
-		if uv0 then
+		if slot0 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 4-8, warpins: 1 ---
-			setActive(uv1._mvpFX, true)
+			setActive(slot1._mvpFX, true)
 			--- END OF BLOCK #0 ---
 
 
@@ -989,11 +1322,11 @@ function slot0.setAtkAnima(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #1 9-27, warpins: 2 ---
-		LeanTween.value(go(uv2), 0, uv3, uv3):setOnUpdate(System.Action_float(function (slot0)
+		LeanTween.value(go(go), 0, , ):setOnUpdate(System.Action_float(function (slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-9, warpins: 1 ---
-			uv0:GetComponent(typeof(Image)).fillAmount = slot0
+			slot0:GetComponent(typeof(Image)).fillAmount = slot0
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1002,15 +1335,15 @@ function slot0.setAtkAnima(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot
 
 		end))
 
-		if uv5 ~= 0 then
+		if 0 ~= 0 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 28-59, warpins: 1 ---
-			LeanTween.value(go(uv2), 0, uv6, uv3):setOnUpdate(System.Action_float(function (slot0)
+			LeanTween.value(go(go), 0, slot6, ):setOnUpdate(System.Action_float(function (slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-8, warpins: 1 ---
-				setText(uv0, math.floor(slot0))
+				setText(slot0, math.floor(slot0))
 
 				return
 				--- END OF BLOCK #0 ---
@@ -1018,11 +1351,11 @@ function slot0.setAtkAnima(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot
 
 
 			end))
-			LeanTween.value(go(uv2), 0, uv8, uv3):setOnUpdate(System.Action_float(function (slot0)
+			LeanTween.value(go(go), 0, slot8, ):setOnUpdate(System.Action_float(function (slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-8, warpins: 1 ---
-				setText(uv0, math.floor(slot0))
+				setText(slot0, math.floor(slot0))
 
 				return
 				--- END OF BLOCK #0 ---
@@ -1059,7 +1392,7 @@ function slot0.setAtkAnima(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-5, warpins: 1 ---
-			setActive(uv0, true)
+			setActive(slot0, true)
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1094,16 +1427,16 @@ function slot0.setAtkAnima(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-43, warpins: 1 ---
-		uv0:GetComponent(typeof(Image)).fillAmount = uv1
+		slot0:GetComponent(typeof(Image)).fillAmount = slot0
 
-		setText(uv2, uv3)
-		setText(uv4, uv5)
+		setText(typeof, slot3)
+		setText(slot4, slot5)
 
-		uv6.localPosition = Vector3(280, 46, 0)
-		uv6:GetComponent(typeof(Animator)).enabled = false
+		slot6.localPosition = Vector3(280, 46, 0)
+		slot6:GetComponent(typeof(Animator)).enabled = false
 
-		setActive(uv6, true)
-		setActive(uv7._mvpFX, true)
+		setActive(slot6, true)
+		setActive(slot7._mvpFX, true)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1140,7 +1473,7 @@ function slot0.setAtkAnima(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot
 
 end
 
-function slot0.skipAtkAnima(slot0, slot1)
+slot0.skipAtkAnima = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-4, warpins: 1 ---
@@ -1205,7 +1538,7 @@ function slot0.skipAtkAnima(slot0, slot1)
 
 end
 
-function slot0.showPainting(slot0)
+slot0.showPainting = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-10, warpins: 1 ---
@@ -1216,18 +1549,37 @@ function slot0.showPainting(slot0)
 	if slot0.contextData.score > 1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 15-36, warpins: 2 ---
-		slot0.paintingName = slot0.mvpShipVO or slot0.flagShipVO:getPainting()
+		--- BLOCK #0 11-13, warpins: 1 ---
+		if not slot0.mvpShipVO then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 14-14, warpins: 1 ---
+			slot3 = slot0.flagShipVO
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 15-36, warpins: 2 ---
+		slot0.paintingName = slot3:getPainting()
 
 		setPaintingPrefabAsync(slot0._painting, slot0.paintingName, "jiesuan", function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-9, warpins: 1 ---
-			if findTF(uv0._painting, "fitter").childCount > 0 then
+			if findTF(slot0._painting, "fitter").childCount > 0 then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 10-24, warpins: 1 ---
-				Ship.SetExpression(findTF(uv0._painting, "fitter"):GetChild(0), uv0.paintingName, "win_mvp")
+				Ship.SetExpression(findTF(slot0._painting, "fitter"):GetChild(0), slot0.paintingName, "win_mvp")
 				--- END OF BLOCK #0 ---
 
 
@@ -1249,10 +1601,10 @@ function slot0.showPainting(slot0)
 
 		end)
 
-		slot1, slot2 = Ship.getWords(slot0.mvpShipVO or slot0.flagShipVO.skinId, "win_mvp")
+		slot1, slot2 = Ship.getWords(slot3.skinId, "win_mvp")
 
 		SetActive(slot0._failPainting, false)
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
 
 
@@ -1314,13 +1666,13 @@ function slot0.showPainting(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-28, warpins: 1 ---
-		LeanTween.scale(rtf(uv0._chat.gameObject), Vector3.New(1, 1, 1), 0.3):setEase(LeanTweenType.easeOutBack):setOnComplete(System.Action(function ()
+		LeanTween.scale(rtf(slot0._chat.gameObject), Vector3.New(1, 1, 1), 0.3):setEase(LeanTweenType.easeOutBack):setOnComplete(System.Action(function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-25, warpins: 1 ---
-			uv0._statisticsBtn:GetComponent("Button").enabled = true
-			uv0._confirmBtn:GetComponent("Button").enabled = true
-			uv0._atkBG:GetComponent("Button").enabled = true
+			slot0._statisticsBtn:GetComponent("Button").enabled = true
+			slot0._statisticsBtn.GetComponent("Button")._confirmBtn:GetComponent("Button").enabled = true
+			slot0._statisticsBtn.GetComponent("Button")._confirmBtn.GetComponent("Button")._atkBG:GetComponent("Button").enabled = true
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1343,7 +1695,7 @@ function slot0.showPainting(slot0)
 
 end
 
-function slot0.hidePainting(slot0)
+slot0.hidePainting = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-55, warpins: 1 ---
@@ -1357,7 +1709,7 @@ function slot0.hidePainting(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-6, warpins: 1 ---
-		SetActive(uv0._painting, false)
+		SetActive(slot0._painting, false)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1373,7 +1725,7 @@ function slot0.hidePainting(slot0)
 
 end
 
-function slot0.skip(slot0)
+slot0.skip = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-4, warpins: 1 ---
@@ -1412,7 +1764,7 @@ function slot0.skip(slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #2 11-15, warpins: 1 ---
-	if slot0._stateFlag == uv0.STATE_RANK_ANIMA then
+	if slot0._stateFlag == slot0.STATE_RANK_ANIMA then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 16-16, warpins: 1 ---
@@ -1424,7 +1776,7 @@ function slot0.skip(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 17-21, warpins: 1 ---
-		if slot0._stateFlag == uv0.STATE_REPORT then
+		if slot0._stateFlag == slot0.STATE_REPORT then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 22-23, warpins: 1 ---
@@ -1485,7 +1837,7 @@ function slot0.skip(slot0)
 			--- BLOCK #3 38-49, warpins: 1 ---
 			SetActive(slot0:findTF("jieuan01/tips", slot0._bg), true)
 
-			slot0._stateFlag = uv0.STATE_REPORTED
+			slot0._stateFlag = slot0.STATE_REPORTED
 			--- END OF BLOCK #3 ---
 
 
@@ -1494,7 +1846,7 @@ function slot0.skip(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 50-54, warpins: 1 ---
-			if slot0._stateFlag == uv0.STATE_REPORTED then
+			if slot0._stateFlag == slot0.STATE_REPORTED then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 55-58, warpins: 1 ---
@@ -1507,7 +1859,7 @@ function slot0.skip(slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 59-63, warpins: 1 ---
-				if slot0._stateFlag == uv0.STATE_REWARD then
+				if slot0._stateFlag == slot0.STATE_REWARD then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 64-64, warpins: 1 ---
@@ -1519,7 +1871,7 @@ function slot0.skip(slot0)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 65-69, warpins: 1 ---
-					if slot0._stateFlag == uv0.STATE_DISPLAY then
+					if slot0._stateFlag == slot0.STATE_DISPLAY then
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 70-73, warpins: 1 ---
@@ -1559,7 +1911,7 @@ function slot0.skip(slot0)
 						-- Decompilation error in this vicinity:
 						--- BLOCK #2 78-91, warpins: 1 ---
 						slot0._skipExp = nil
-						slot0._stateFlag = uv0.STATE_DISPLAYED
+						slot0._stateFlag = slot0.STATE_DISPLAYED
 
 						setText(slot0._playerBonusExp, "+" .. slot0:calcPlayerProgress())
 						--- END OF BLOCK #2 ---
@@ -1570,7 +1922,7 @@ function slot0.skip(slot0)
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 92-96, warpins: 1 ---
-						if slot0._stateFlag == uv0.STATE_DISPLAYED then
+						if slot0._stateFlag == slot0.STATE_DISPLAYED then
 
 							-- Decompilation error in this vicinity:
 							--- BLOCK #0 97-100, warpins: 1 ---
@@ -1583,7 +1935,7 @@ function slot0.skip(slot0)
 
 							-- Decompilation error in this vicinity:
 							--- BLOCK #0 101-105, warpins: 1 ---
-							if slot0._stateFlag == uv0.STATE_SUB_DISPLAY then
+							if slot0._stateFlag == slot0.STATE_SUB_DISPLAY then
 
 								-- Decompilation error in this vicinity:
 								--- BLOCK #0 106-109, warpins: 1 ---
@@ -1623,7 +1975,7 @@ function slot0.skip(slot0)
 								-- Decompilation error in this vicinity:
 								--- BLOCK #2 114-119, warpins: 1 ---
 								slot0._subSkipExp = nil
-								slot0._stateFlag = uv0.STATE_SUB_DISPLAYED
+								slot0._stateFlag = slot0.STATE_SUB_DISPLAYED
 								--- END OF BLOCK #2 ---
 
 
@@ -1632,7 +1984,7 @@ function slot0.skip(slot0)
 
 								-- Decompilation error in this vicinity:
 								--- BLOCK #0 120-124, warpins: 1 ---
-								if slot0._stateFlag == uv0.STATE_SUB_DISPLAYED then
+								if slot0._stateFlag == slot0.STATE_SUB_DISPLAYED then
 
 									-- Decompilation error in this vicinity:
 									--- BLOCK #0 125-127, warpins: 1 ---
@@ -1693,11 +2045,11 @@ function slot0.skip(slot0)
 
 end
 
-function slot0.playSubExEnter(slot0)
+slot0.playSubExEnter = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot0._stateFlag = uv0.STATE_SUB_DISPLAY
+	slot0._stateFlag = slot0.STATE_SUB_DISPLAY
 
 	if slot0._subFirstExpTF then
 
@@ -1735,22 +2087,54 @@ function slot0.playSubExEnter(slot0)
 
 end
 
-function slot0.showRightBottomPanel(slot0)
+slot0.showRightBottomPanel = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 17-41, warpins: 2 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
 	SetActive(slot0._skipBtn, false)
 	SetActive(slot0._rightBottomPanel, true)
-	SetActive(slot0._subToggle, slot0._subFirstExpTF ~= nil)
+
+	slot1 = SetActive
+	slot2 = slot0._subToggle
+
+	if slot0._subFirstExpTF == nil then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 14-15, warpins: 1 ---
+		slot3 = false
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 16-16, warpins: 1 ---
+		slot3 = true
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 17-41, warpins: 2 ---
+	slot1(slot2, slot3)
 	onButton(slot0, slot0._statisticsBtn, function ()
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-6, warpins: 1 ---
-		if uv0._atkBG.gameObject.activeSelf then
+		if slot0._atkBG.gameObject.activeSelf then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 7-11, warpins: 1 ---
-			uv0:closeStatistics()
+			slot0:closeStatistics()
 			--- END OF BLOCK #0 ---
 
 
@@ -1759,7 +2143,7 @@ function slot0.showRightBottomPanel(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 12-15, warpins: 1 ---
-			uv0:showStatistics()
+			slot0:showStatistics()
 			--- END OF BLOCK #0 ---
 
 
@@ -1784,11 +2168,11 @@ function slot0.showRightBottomPanel(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-6, warpins: 1 ---
-		if uv0.contextData.system == SYSTEM_DUEL then
+		if slot0.contextData.system == SYSTEM_DUEL then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 7-13, warpins: 1 ---
-			uv0:emit(BattleResultMediator.ON_BACK_TO_DUEL_SCENE)
+			slot0:emit(BattleResultMediator.ON_BACK_TO_DUEL_SCENE)
 			--- END OF BLOCK #0 ---
 
 
@@ -1797,7 +2181,7 @@ function slot0.showRightBottomPanel(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 14-19, warpins: 1 ---
-			uv0:emit(BattleResultMediator.ON_BACK_TO_LEVEL_SCENE)
+			slot0:emit(BattleResultMediator.ON_BACK_TO_LEVEL_SCENE)
 			--- END OF BLOCK #0 ---
 
 
@@ -1822,7 +2206,7 @@ function slot0.showRightBottomPanel(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-5, warpins: 1 ---
-		uv0:closeStatistics()
+		slot0:closeStatistics()
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1835,13 +2219,13 @@ function slot0.showRightBottomPanel(slot0)
 	slot0._subFirstExpTF = nil
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.showStatistics(slot0)
+slot0.showStatistics = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-53, warpins: 1 ---
@@ -1858,7 +2242,7 @@ function slot0.showStatistics(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-6, warpins: 1 ---
-		SetActive(uv0._atkContainer, true)
+		SetActive(slot0._atkContainer, true)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1874,7 +2258,7 @@ function slot0.showStatistics(slot0)
 
 end
 
-function slot0.closeStatistics(slot0)
+slot0.closeStatistics = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-48, warpins: 1 ---
@@ -1891,7 +2275,7 @@ function slot0.closeStatistics(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-6, warpins: 1 ---
-		SetActive(uv0._atkBG, false)
+		SetActive(slot0._atkBG, false)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1907,7 +2291,7 @@ function slot0.closeStatistics(slot0)
 
 end
 
-function slot0.enabledStatisticsGizmos(slot0, slot1)
+slot0.enabledStatisticsGizmos = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-17, warpins: 1 ---
@@ -1921,7 +2305,7 @@ function slot0.enabledStatisticsGizmos(slot0, slot1)
 
 end
 
-function slot0.PlayAnimation(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot0.PlayAnimation = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-20, warpins: 1 ---
@@ -1929,7 +2313,7 @@ function slot0.PlayAnimation(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		uv0(slot0)
+		slot0(slot0)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1945,11 +2329,11 @@ function slot0.PlayAnimation(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-5, warpins: 1 ---
-	if slot0._stateFlag == uv0.STATE_RANK_ANIMA then
+	if slot0._stateFlag == slot0.STATE_RANK_ANIMA then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 6-6, warpins: 1 ---
@@ -1961,7 +2345,7 @@ function slot0.onBackPressed(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 7-11, warpins: 1 ---
-		if slot0._stateFlag == uv0.STATE_REPORT then
+		if slot0._stateFlag == slot0.STATE_REPORT then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 12-15, warpins: 1 ---
@@ -1974,7 +2358,7 @@ function slot0.onBackPressed(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 16-20, warpins: 1 ---
-			if slot0._stateFlag == uv0.STATE_DISPLAY then
+			if slot0._stateFlag == slot0.STATE_DISPLAY then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 21-24, warpins: 1 ---
@@ -2019,7 +2403,7 @@ function slot0.onBackPressed(slot0)
 
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-13, warpins: 1 ---

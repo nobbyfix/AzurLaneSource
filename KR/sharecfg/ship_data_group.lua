@@ -8323,23 +8323,25 @@ pg.ship_data_group = {
 	[233] = {
 		nationality = 4,
 		hide = 0,
-		trans_skin = 306059,
+		trans_skin = 401019,
 		handbook_type = 0,
 		redirect_id = 101,
 		code = 233,
 		type = 1,
 		index_id = 258,
 		group_type = 40101,
-		trans_type = 0,
+		trans_type = 1,
 		trans_radar_chart = {
-			"E",
+			"C",
+			"A",
 			"E",
 			"A",
-			"D",
 			"B",
-			"C"
+			"D"
 		},
-		trans_skill = {},
+		trans_skill = {
+			12280
+		},
 		description = {
 			{
 				"지원 교환 (훈장을 소비하며, 랜덤 출현한다)",
@@ -8778,16 +8780,25 @@ pg.ship_data_group = {
 	[241] = {
 		nationality = 4,
 		hide = 0,
-		trans_skin = 0,
+		trans_skin = 402049,
 		handbook_type = 0,
 		redirect_id = 101,
 		code = 241,
 		type = 2,
 		index_id = 272,
 		group_type = 40204,
-		trans_type = 0,
-		trans_radar_chart = {},
-		trans_skill = {},
+		trans_type = 2,
+		trans_radar_chart = {
+			"B",
+			"A",
+			"E",
+			"B",
+			"A",
+			"C"
+		},
+		trans_skill = {
+			12290
+		},
 		description = {
 			{
 				"도감 업적 달성",
@@ -10593,3 +10604,5 @@ pg.ship_data_group = {
 		20012
 	}
 }
+
+return

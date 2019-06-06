@@ -709,11 +709,11 @@ pg.gametip = {
 		key = "word_torpedo"
 	},
 	["word_ air_defense_artillery"] = {
-		tip = "대공포 ",
+		tip = "대공포",
 		key = "word_ air_defense_artillery"
 	},
 	word_air_defense_artillery = {
-		tip = "대공포 ",
+		tip = "대공포",
 		key = "word_air_defense_artillery"
 	},
 	word_device = {
@@ -1010,7 +1010,7 @@ pg.gametip = {
 		key = "battle_battleMediator_existFight"
 	},
 	battle_battleMediator_clear_warning = {
-		tip = "battle_battleMediator_clear_warning，自行配置",
+		tip = "챌린지 모드에서 퇴장하시겠습니까？\n퇴장 후에<color=#92fc63>도전은 초기화되며</color>，\n포인트는 해당 스테이지 시작 전까지 통계되어 합산됩니다.",
 		key = "battle_battleMediator_clear_warning"
 	},
 	battle_battleMediator_quest_exist = {
@@ -3586,7 +3586,7 @@ pg.gametip = {
 		key = "long_time_offline"
 	},
 	dont_send_message_frequently = {
-		tip = "발신 간격을 주의해주세요 ",
+		tip = "발신 간격을 주의해주세요",
 		key = "dont_send_message_frequently"
 	},
 	no_activity = {
@@ -5675,6 +5675,14 @@ pg.gametip = {
 		tip = "제명했습니다.",
 		key = "guild_fire_succeed"
 	},
+	guild_duty_tip_1 = {
+		tip = "<color=#7FAFFF>현재 직급</color>",
+		key = "guild_duty_tip_1"
+	},
+	guild_duty_tip_2 = {
+		tip = "<color=#C3C3C3>위임 불가</color>",
+		key = "guild_duty_tip_2"
+	},
 	battle_repair_special_tip = {
 		tip = "<color=#92fc63>응급 수리 소대</color>를 사용하시겠습니까?",
 		key = "battle_repair_special_tip"
@@ -5876,7 +5884,7 @@ pg.gametip = {
 		key = "elite_condition_air"
 	},
 	elite_condition_antisub = {
-		tip = "反潜总值",
+		tip = "대잠합계",
 		key = "elite_condition_antisub"
 	},
 	elite_condition_dodge = {
@@ -6138,7 +6146,7 @@ pg.gametip = {
 		key = "ship_remould_warning_303154"
 	},
 	ship_remould_warning_402134 = {
-		tip = "개조를 완료하면 첫 [장비] 칸에 장착가능한 장비 <color=#92fc63>[헬리콥터]</color>가 추가됩니다.\n 계속하시겠습니까? ",
+		tip = "개조를 완료하면 첫 [장비] 칸에 장착가능한 장비 <color=#92fc63>[헬리콥터]</color>가 추가됩니다.\n 계속하시겠습니까?",
 		key = "ship_remould_warning_402134"
 	},
 	word_soundfiles_download_title = {
@@ -6645,6 +6653,10 @@ pg.gametip = {
 	words_display_ship_get_effect = {
 		tip = "중복 캐릭터 획득 안내",
 		key = "words_display_ship_get_effect"
+	},
+	words_show_touch_effect = {
+		tip = "화면 터치 특수효과 표시",
+		key = "words_show_touch_effect"
 	},
 	activity_puzzle_get1 = {
 		tip = "획득 방식：퍼즐 임무 7",
@@ -7185,9 +7197,57 @@ pg.gametip = {
 		tip = "<size=23>훈련 중</size>",
 		key = "word_status_train"
 	},
+	challenge_rule = {
+		key = "challenge_rule",
+		tip = {
+			{
+				info = [[
+挑战模式规则
+
+玩家仅能编成一名前排角色进行挑战
+仅有前排角色会受到伤害，当前排角色被击沉时，挑战失败
+后排角色中，不能出现两名以上相同定位的角色
+*战列、战巡视为相同定位的角色
+*正航、轻航视为相同定位的角色
+挑战模式不消耗石油与舰娘心情，不限制挑战次数。
+
+玩家可自行选择关卡的附加限制难度，难度提高获得的挑战分数：
+等级限制，关卡敌方等级
+受伤倍率，增加敌方造成的伤害]]
+			}
+		}
+	},
+	challenge_exit_warning = {
+		tip = "스테이지 전투 중 퇴장하면, 도전은 초기화되며 바로 해당 스테이지 전까지의 포인트를 결산합니다. \n 퇴장하시겠습니까? ",
+		key = "challenge_exit_warning"
+	},
+	challenge_fleet_type_fail = {
+		tip = "이미 같은 함종인 두 명의 캐릭터를 선택하였습니다.",
+		key = "challenge_fleet_type_fail"
+	},
+	challenge_current_level = {
+		tip = "현재 스테이지: 제 $1 라운드",
+		key = "challenge_current_level"
+	},
+	challenge_current_score = {
+		tip = "누적 포인트: $1",
+		key = "challenge_current_score"
+	},
+	challenge_total_score = {
+		tip = "최고 포인트: $1",
+		key = "challenge_total_score"
+	},
+	challenge_current_progress = {
+		tip = "챌린드 모드 제 $1 라운드",
+		key = "challenge_current_progress"
+	},
 	challenge_count_unlimit = {
-		tip = "<size=28>无限制</size>",
+		tip = "<size=28>무한제</size>",
 		key = "challenge_count_unlimit"
+	},
+	challenge_no_fleet = {
+		tip = "사용 가능한 함대가 없어 출격할 수 없습니다.",
+		key = "challenge_no_fleet"
 	},
 	equipment_skin_unload = {
 		tip = "장착 해제된 장비 스킨이 창고에 보관됩니다.",
@@ -8598,127 +8658,9 @@ pg.gametip = {
 			{
 				icon = {
 					path = "",
-					atlas = "helpbg/commander_info"
+					atlas = "helpbg/commander_build"
 				}
 			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_ability1"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_ability2"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_ability3"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_up"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_skill1"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_skill2"
-				}
-			},
-			disableScroll = true,
-			pageMode = true,
-			defaultpage = 1,
-			ImageMode = true,
-			windowSize = {
-				x = 1263,
-				y = 873
-			},
-			windowPos = {
-				y = -70
-			},
-			helpSize = {
-				x = 1176,
-				y = 1024
-			}
-		}
-	},
-	help_commander_play = {
-		key = "help_commander_play",
-		tip = {
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_info"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_ability1"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_ability2"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_ability3"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_up"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_skill1"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_skill2"
-				}
-			},
-			disableScroll = true,
-			pageMode = true,
-			defaultpage = 5,
-			ImageMode = true,
-			windowSize = {
-				x = 1263,
-				y = 873
-			},
-			windowPos = {
-				y = -70
-			},
-			helpSize = {
-				x = 1176,
-				y = 1024
-			}
-		}
-	},
-	help_commander_ability = {
-		key = "help_commander_ability",
-		tip = {
 			{
 				icon = {
 					path = "",
@@ -8778,8 +8720,144 @@ pg.gametip = {
 			}
 		}
 	},
+	help_commander_play = {
+		key = "help_commander_play",
+		tip = {
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_build"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_info"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_ability1"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_ability2"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_ability3"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_up"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_skill1"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_skill2"
+				}
+			},
+			disableScroll = true,
+			pageMode = true,
+			defaultpage = 4,
+			ImageMode = true,
+			windowSize = {
+				x = 1263,
+				y = 873
+			},
+			windowPos = {
+				y = -70
+			},
+			helpSize = {
+				x = 1176,
+				y = 1024
+			}
+		}
+	},
+	help_commander_ability = {
+		key = "help_commander_ability",
+		tip = {
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_build"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_info"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_ability1"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_ability2"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_ability3"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_up"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_skill1"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_skill2"
+				}
+			},
+			disableScroll = true,
+			pageMode = true,
+			defaultpage = 3,
+			ImageMode = true,
+			windowSize = {
+				x = 1263,
+				y = 873
+			},
+			windowPos = {
+				y = -70
+			},
+			helpSize = {
+				x = 1176,
+				y = 1024
+			}
+		}
+	},
 	story_skip_confirm = {
-		tip = "아직 감상하지 않은 스토리를 스킵하겠습니까?\n스킵한 스토리는「도감」→「회상」에서 확인할 수 있습니다.",
+		tip = "아직 감상하지 않은 스토리를 스킵 하겠습니까?\n스킵한 스토리는<color=#A1E400FF>도감>회상</COLOR>에서 확인할 수 있습니다.",
 		key = "story_skip_confirm"
 	},
 	commander_ability_replace_warning = {
@@ -8793,6 +8871,48 @@ pg.gametip = {
 				icon = {
 					path = "",
 					atlas = "helpbg/commander_build"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_info"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_ability1"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_ability2"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_ability3"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_up"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_skill1"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/commander_skill2"
 				}
 			},
 			disableScroll = true,
@@ -9446,7 +9566,7 @@ pg.gametip = {
 		}
 	},
 	trophy_achieved = {
-		tip = "훈장 잠금해제! ",
+		tip = "훈장 잠금해제!",
 		key = "trophy_achieved"
 	},
 	text_shop = {
@@ -10060,7 +10180,7 @@ UID: 사령부에서 각 지휘관에게 전달한 고유의 신분 증명
 		}
 	},
 	attire_time_stamp = {
-		tip = "$1일 $2시간 $3분 ",
+		tip = "$1일 $2시간 $3분",
 		key = "attire_time_stamp"
 	},
 	warning_pray_build_pool = {
@@ -10130,7 +10250,7 @@ UID: 사령부에서 각 지휘관에게 전달한 고유의 신분 증명
 		}
 	},
 	bismarck_award_tip = {
-		tip = "모든 조건을 달성하면 보상을 획득하실 수 있습니다 ",
+		tip = "모든 조건을 달성하면 보상을 획득하실 수 있습니다",
 		key = "bismarck_award_tip"
 	},
 	bismarck_chapter_desc = {
@@ -10152,5 +10272,174 @@ UID: 사령부에서 각 지휘관에게 전달한 고유의 신분 증명
 	returner_match_tip = {
 		tip = "\"매치 후, 랜덤으로 시스템 중 한 명의 발령자의 UID와 자동 연동하여, '확인'버튼을 클릭하면 바로 연동됩니다.<color=#FF5C5C>변경할 수 없습니다</color>, 연동하시겠습니까?\"",
 		key = "returner_match_tip"
+	},
+	challenge_help = {
+		key = "challenge_help",
+		tip = {
+			{
+				info = " [유저 소개]"
+			},
+			{
+				info = " 한계 챌린지는 함대 실력이 비교적 높은 지휘관을 위한 도전 \n콘텐츠입니다.\n"
+			},
+			{
+				info = "[모드 설명]"
+			},
+			{
+				info = " 1. 한계 챌린지는 일반과 무한 모드 두 모드로 나뉩니다"
+			},
+			{
+				info = " 2. 일반 모드에서 지휘관은 상대에게 도전하여 포인트를 \n획득할 수 있고,지정된 최고 포인트 달성 시, 보상을 수령할 \n수 있으며 최대 다섯 스테이지를 도전할 수 있습니다"
+			},
+			{
+				info = [[
+ 3. 무한 모드에서 지휘관은 상대에게 무한으로 도전할 수 
+있으며, 클리어한 스테이지 수가 많을수록 적이 강해집니다. 
+무한 모드에서는 포인트를 획득할 수 없으며, 보상도 없습니다. 
+무한 모드는 일반 모드를 클리어한 후 개방됩니다]]
+			},
+			{
+				info = " 4. 두 모드 모두 연속 전투 콘텐츠로 매 전투 종료 후\n 함선의 상태가 다음 전투에 이어집니다. 매 전투마다 잠수함\n지원은 단 1회 뿐이며, 매 전투 종료 시마다 갱신됩니다"
+			},
+			{
+				info = [[
+ 5. 한계 챌린지 중에는 연료를 소모하지 않으며, 함선의 
+호감도 소모하지 않고, 전투 승부가 개인 데이터 통계에 
+합산되지도 않으며, 함선 경험치와 지 휘냥 경험치도 
+획득하지 않습니다]]
+			},
+			{
+				info = " 6. 일반 모드와 무한 모드의 편성은 통용되지 않으며, \n지휘관이 각각 설정해야만 합니다"
+			},
+			{
+				info = " 7. 챌린지 과정 중, 유저는 편성을 변경할 수 없으며\n긴급 수리를 사용할 수 없습니다"
+			},
+			{
+				info = [[
+ 8. 전투가 종료된 후 다음 전투를 시작하기 전에 메인 
+화면으로 돌아갈 수 있으며, 전투 중 나가기, 연결 끊김,
+게임 닫기 등의 조작은 곧바로 현재의 포인트를 결산하며 
+해당 전투는 종료됩니다.
+]]
+			},
+			{
+				info = " [결산 및 새로고침 설명]"
+			},
+			{
+				info = " 1. 한계 챌린지 오픈 기간은 매주 일요일 23:59:59까지 이며\n, 종료 후 새로운 챌린지를 시작합니다"
+			},
+			{
+				info = " 2. 챌린지 종료 시, 이번 챌린지의 최고 포인트를 결산하며, \n초기 화를 진행합니다 ; 동시에 무한 모드의 진입 조건 역시 \n초기화됩니다"
+			},
+			{
+				info = [[
+ 3. 새로운 챌린지가 오픈되면, 챌린지 상대와 순서에 변화가 
+발생합니다 주의 : 챌린지 초기화 후, 만일 지난 챌린지에 
+미결산 전투가 있을 시, 해당 챌린지 데이터는 통계에 합산하지 
+않습니다. 그러니 지휘관들께서는 합리적으로 챌린지
+시간을 계획해주시길 바랍니다]]
+			},
+			{
+				info = " 4. 한계 챌린지는 이벤트 기간 종료 후 잠시 중단되며,\n일정 시간 후 재오픈 될 것입니다. 새롭게 열린 한계 챌린지 \n내용과 보상은 모두 변화가 있을 것입니다."
+			}
+		}
+	},
+	challenge_casual_reset = {
+		tip = "지난 챌린지가 정상적으로 종료되지 않았습니다, 데이터가 곧 결산됩니다.\n누적 포인트:$1",
+		key = "challenge_casual_reset"
+	},
+	challenge_infinite_reset = {
+		tip = "지난 챌린지가 정상적으로 종료되지 않았습니다, 데이터가 곧 결산됩니다.\n클리어 스테이지:$1",
+		key = "challenge_infinite_reset"
+	},
+	challenge_normal_reset = {
+		tip = "이번 챌린지를 종료하시겠습니까?",
+		key = "challenge_normal_reset"
+	},
+	challenge_casual_click_switch = {
+		tip = "현재 모드:일반 모드\n누적 포인트:$1\n모드를 전환하시겠습니까?",
+		key = "challenge_casual_click_switch"
+	},
+	challenge_infinite_click_switch = {
+		tip = "현재 모드:무한 모드\n현재 스테이지:$1\n모드를 전환하시겠습니까?",
+		key = "challenge_infinite_click_switch"
+	},
+	challenge_season_update = {
+		tip = "신규 챌린지가 이미 개방되었습니다.",
+		key = "challenge_season_update"
+	},
+	challenge_season_update_casual_clear = {
+		tip = "\"누적 포인트:$1\n신규 챌린지가 이미 개방되었습니다. 이번 챌린지 데이터는 통계에 합산되지 않습니다.\n계속 도전하시겠습니까?\"",
+		key = "challenge_season_update_casual_clear"
+	},
+	challenge_season_update_infinite_clear = {
+		tip = "\"현재 스테이지:$1\n신규 챌린지가 이미 개방되었습니다. 이번 챌린지 데이터는 통계에 합산되지 않습니다.\n계속 도전하시겠습니까?\"",
+		key = "challenge_season_update_infinite_clear"
+	},
+	challenge_season_update_casual_switch = {
+		tip = [[
+"현재 모드:일반 모드
+누적 포인트:$1
+신규 챌린지가 이미 개방되었습니다. 이번 챌린지 데이터는 통계에 합산되지 않습니다.
+현재 포인트를 결산하고 모드를 전환하시겠습니까??"]],
+		key = "challenge_season_update_casual_switch"
+	},
+	challenge_season_update_infinite_switch = {
+		tip = [[
+"현재 모드:무한 모드
+현재 스테이지:$1
+신규 챌린지가 이미 개방되었습니다. 이번 챌린지 데이터는 통계에 합산되지 않습니다.
+현재 포인트를 결산하고 모드를 전환하시겠습니까??"]],
+		key = "challenge_season_update_infinite_switch"
+	},
+	challenge_combat_score = {
+		tip = "현 스테이지 포인트：$1",
+		key = "challenge_combat_score"
+	},
+	challenge_share_progress = {
+		tip = "이번 한계 챌린지 진도:",
+		key = "challenge_share_progress"
+	},
+	challenge_share = {
+		tip = "스테이지",
+		key = "challenge_share"
+	},
+	challenge_expire_warn = {
+		tip = "신규 챌린지가 이미 개방되었습니다. 이번 챌린지 데이터는 통계에 합산되지 않습니다.",
+		key = "challenge_expire_warn"
+	},
+	challenge_normal_tip = {
+		tip = "스테이지 클리어와 최고 포인트 기록 갱신에 도전하고, 보상을 획득하세요!",
+		key = "challenge_normal_tip"
+	},
+	challenge_unlimited_tip = {
+		tip = "자신의 한계에 도전하고, 더 많은 스테이지를 돌파하세요!",
+		key = "challenge_unlimited_tip"
+	},
+	commander_prefab_rename_success = {
+		tip = "이름 변경 성공",
+		key = "commander_prefab_rename_success"
+	},
+	commander_prefab_name = {
+		tip = "미리 설정한 편대 $1",
+		key = "commander_prefab_name"
+	},
+	commander_prefab_rename_time = {
+		tip = "$1 초 후 이름을 변경할 수 있습니다.",
+		key = "commander_prefab_rename_time"
+	},
+	commander_build_solt_deficiency = {
+		tip = "잔여 공간이 없습니다.",
+		key = "commander_build_solt_deficiency"
+	},
+	commander_select_box_tip = {
+		tip = "총 $1 개 냥박스 선택, 훈련 시작 후 취소할 수 없습니다. 확인 하시겠습니까?",
+		key = "commander_select_box_tip"
+	},
+	challenge_end_tip = {
+		tip = "이벤트가 종료되었습니다.",
+		key = "challenge_end_tip"
 	}
 }
+
+return

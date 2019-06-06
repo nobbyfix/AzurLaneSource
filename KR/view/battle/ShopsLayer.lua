@@ -6,11 +6,11 @@ slot0.TYPE_GUILD = "guild"
 slot0.TYPE_SHAM_SHOP = "sham"
 slot0.TYPE_ESCORT_SHOP = "escort"
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "shopsUI"
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.bgs = {}
 	slot0.top = slot0:findTF("blur_panel/adapt/top")
 	slot0.goodTF = slot0:getTpl("frame/item_tpl")
@@ -20,6 +20,7 @@ function slot0.init(slot0)
 	slot0.skinBtn = slot0:findTF("frame/skin_btn")
 	slot0.chat = slot0:findTF("frame/chat")
 	slot0.chatText = slot0:findTF("Text", slot0.chat)
+	slot0.buzhihuoTouch = slot0:findTF("paint_touch")
 	slot0.activityBg = slot0:findTF("activity_bg")
 	slot0.backBtn = slot0:findTF("back_button", slot0.top)
 	slot0.painting = slot0:findTF("paint")
@@ -38,26 +39,26 @@ function slot0.init(slot0)
 	slot0.cards = {}
 end
 
-function slot0.setMilitaryShop(slot0, slot1)
+slot0.setMilitaryShop = function (slot0, slot1)
 	slot0.militaryShop = slot1
 
 	slot0:updateMilitaryShop()
 end
 
-function slot0.setGuildShop(slot0, slot1)
+slot0.setGuildShop = function (slot0, slot1)
 	slot0.guildShop = slot1
 	slot0.guildShopRefreshTime = slot1.nextRefreshTime
 end
 
-function slot0.setShamShop(slot0, slot1)
+slot0.setShamShop = function (slot0, slot1)
 	slot0.shamShop = slot1
 end
 
-function slot0.setEscortShop(slot0, slot1)
+slot0.setEscortShop = function (slot0, slot1)
 	slot0.escortShop = slot1
 end
 
-function slot0.updatePlayer(slot0, slot1)
+slot0.updatePlayer = function (slot0, slot1)
 	slot0.player = slot1
 	slot0.exploit = slot1.exploit
 
@@ -67,7 +68,7 @@ function slot0.updatePlayer(slot0, slot1)
 	slot0:updateGuildRes()
 end
 
-function slot0.blurView(slot0)
+slot0.blurView = function (slot0)
 	pg.UIMgr.GetInstance():OverlayPanelPB(slot0.viewContainer, {
 		pbList = {
 			slot0:findTF("blurBg", slot0.viewContainer)
@@ -75,20 +76,20 @@ function slot0.blurView(slot0)
 	})
 end
 
-function slot0.unBlurView(slot0)
+slot0.unBlurView = function (slot0)
 	pg.UIMgr.GetInstance():UnOverlayPanel(slot0.viewContainer, slot0.frame)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0.millitaryShopCfg = pg.arena_data_shop[1]
 
 	onButton(slot0, slot0.backBtn, function ()
 		if getProxy(ContextProxy):getCurrentContext() and slot1.scene == SCENE.SHOP then
-			uv0:emit(uv1.ON_BACK, nil, 0.3)
+			slot0:emit(slot1.ON_BACK, nil, 0.3)
 		elseif slot1 and slot1.scene == SCENE.CHARGE then
-			uv0:emit(ShopsMediator.GO_MALL, ChargeScene.TYPE_MENU)
+			slot0:emit(ShopsMediator.GO_MALL, ChargeScene.TYPE_MENU)
 		else
-			uv0:emit(uv1.ON_CLOSE, 0.3)
+			slot0:emit(slot1.ON_CLOSE, 0.3)
 		end
 	end, SFX_CANCEL)
 	setActive(slot0:findTF("stamp"), getProxy(TaskProxy):mingshiTouchFlagEnabled())
@@ -101,38 +102,39 @@ function slot0.didEnter(slot0)
 		getProxy(TaskProxy):dealMingshiTouchFlag(4)
 	end, SFX_CONFIRM)
 	onButton(slot0, slot0.switchBtn, function ()
-		slot0 = ChargeScene.TYPE_MENU
-
-		if uv0.contextData ~= nil and uv0.contextData.chargePage ~= nil then
-			slot0 = uv0.contextData.chargePage
+		if slot0.contextData ~= nil and slot0.contextData.chargePage ~= nil then
+			slot0 = slot0.contextData.chargePage
 		end
 
-		uv0:emit(ShopsMediator.GO_MALL, slot0)
+		slot0:emit(ShopsMediator.GO_MALL, slot0)
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.skinBtn, function ()
-		uv0:emit(ShopsMediator.ON_SKIN_SHOP)
+		slot0:emit(ShopsMediator.ON_SKIN_SHOP)
 	end, SFX_PANEL)
 	onButton(slot0, slot0:findTF("refresh_btn", slot0.militaryShopTF), function ()
-		if uv0.militaryShop.refreshCount - 1 >= #uv0.millitaryShopCfg.refresh_price then
+		if slot0.militaryShop.refreshCount - 1 >= #slot0.millitaryShopCfg.refresh_price then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("shopStreet_refresh_max_count"))
 
 			return
 		end
 
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
-			content = i18n("refresh_shopStreet_question", i18n("word_gem_icon"), uv0.millitaryShopCfg.refresh_price[uv0.militaryShop.refreshCount] or uv0.millitaryShopCfg.refresh_price[#uv0.millitaryShopCfg.refresh_price], uv0.militaryShop.refreshCount - 1),
+			content = i18n("refresh_shopStreet_question", i18n("word_gem_icon"), slot0.millitaryShopCfg.refresh_price[slot0.militaryShop.refreshCount] or slot0.millitaryShopCfg.refresh_price[#slot0.millitaryShopCfg.refresh_price], slot0.millitaryShopCfg.refresh_price[slot0.militaryShop.refreshCount] or slot0.millitaryShopCfg.refresh_price[#slot0.millitaryShopCfg.refresh_price].militaryShop.refreshCount - 1),
 			onYes = function ()
-				if uv0.player:getTotalGem() < uv1 then
+				if slot0.player:getTotalGem() < slot0.player then
 					pg.TipsMgr:GetInstance():ShowTips(i18n("common_no_resource"))
 
 					return
 				else
-					uv0:emit(ShopsMediator.REFRESH_MILITARY_SHOP)
+					slot0:emit(ShopsMediator.REFRESH_MILITARY_SHOP)
 				end
 			end
 		})
 	end, SFX_PANEL)
 	setActive(slot0.chat, false)
+	onButton(slot0, slot0.buzhihuoTouch, function ()
+		slot0:showRandomShipWord(pg.navalacademy_shoppingstreet_template[1].words_touch, false, "touch")
+	end, SFX_PANEL)
 
 	slot0.toggles = {}
 	slot2 = slot0:getTpl("activity", slot0.bottomPanel:Find("toggle_list"))
@@ -147,119 +149,119 @@ function slot0.didEnter(slot0)
 		if not slot8:isEnd() then
 			onToggle(slot0, cloneTplTo(slot2, slot1, slot8.activityId), function (slot0)
 				if slot0 then
-					uv0.curPage = uv1.TYPE_ACTIVITY
+					slot0.curPage = slot1.TYPE_ACTIVITY
 
-					uv0:intActivityShop(uv2.activityId)
-					uv0:updatePainting(uv1.TYPE_ACTIVITY)
+					slot0:intActivityShop(slot2.activityId)
+					slot0:updatePainting(slot1.TYPE_ACTIVITY)
 				end
 			end, SFX_PANEL)
 		end
 	end
 
 	eachChild(slot1, function (slot0)
-		uv0.toggles[slot0.name] = slot0
+		slot0.toggles[slot0.name] = slot0
 	end)
-	onToggle(slot0, slot0.toggles[uv0.TYPE_GUILD], function (slot0)
+	onToggle(slot0, slot0.toggles[slot0.TYPE_GUILD], function (slot0)
 		if slot0 then
-			if uv0.curPage == uv1.TYPE_GUILD then
+			if slot0.curPage == slot1.TYPE_GUILD then
 				return
 			end
 
-			if uv0.guildShop then
-				uv0:initGuildShop()
+			if slot0.guildShop then
+				slot0:initGuildShop()
 			else
-				uv0:emit(ShopsMediator.GET_GUILD_SHOP)
+				slot0:emit(ShopsMediator.GET_GUILD_SHOP)
 			end
 
-			if uv0.curPage == nil or uv0.curPage == uv1.TYPE_ACTIVITY then
-				uv0:showRandomShipWord(pg.navalacademy_shoppingstreet_template[1].words_enter, true, "enter")
+			if slot0.curPage == nil or slot0.curPage == slot1.TYPE_ACTIVITY then
+				slot0:showRandomShipWord(pg.navalacademy_shoppingstreet_template[1].words_enter, true, "enter")
 			end
 
-			uv0.curPage = uv1.TYPE_GUILD
+			slot0.curPage = slot1.TYPE_GUILD
 
-			uv0:updatePainting(uv1.TYPE_GUILD)
+			slot0:updatePainting(slot1.TYPE_GUILD)
 		end
 	end, SFX_PANEL)
-	onToggle(slot0, slot0.toggles[uv0.TYPE_MILITARY_SHOP], function (slot0)
+	onToggle(slot0, slot0.toggles[slot0.TYPE_MILITARY_SHOP], function (slot0)
 		if slot0 then
-			if uv0.curPage == uv1.TYPE_MILITARY_SHOP then
+			if slot0.curPage == slot1.TYPE_MILITARY_SHOP then
 				return
 			end
 
-			if not uv0.player then
+			if not slot0.player then
 				return
 			end
 
-			slot1, slot2 = pg.SystemOpenMgr:GetInstance():isOpenSystem(uv0.player.level, "MilitaryExerciseMediator")
+			slot1, slot2 = pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0.player.level, "MilitaryExerciseMediator")
 
 			if not slot1 then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("military_shop_no_open_tip"))
 
-				if uv0:getCurrPage() then
-					triggerToggle(uv0.toggles[slot3], true)
+				if slot0:getCurrPage() then
+					triggerToggle(slot0.toggles[slot3], true)
 				end
 
 				return
 			end
 
-			if uv0.curPage == nil or uv0.curPage == uv1.TYPE_ACTIVITY then
-				uv0:showRandomShipWord(pg.navalacademy_shoppingstreet_template[1].words_enter, true, "enter")
+			if slot0.curPage == nil or slot0.curPage == slot1.TYPE_ACTIVITY then
+				slot0:showRandomShipWord(pg.navalacademy_shoppingstreet_template[1].words_enter, true, "enter")
 			end
 
-			uv0.curPage = uv1.TYPE_MILITARY_SHOP
+			slot0.curPage = slot1.TYPE_MILITARY_SHOP
 
-			uv0:updatePainting(uv1.TYPE_MILITARY_SHOP)
+			slot0:updatePainting(slot1.TYPE_MILITARY_SHOP)
 		end
 	end, SFX_PANEL)
-	onToggle(slot0, slot0.toggles[uv0.TYPE_SHOP_STREET], function (slot0)
+	onToggle(slot0, slot0.toggles[slot0.TYPE_SHOP_STREET], function (slot0)
 		if slot0 then
-			if uv0.curPage == uv1.TYPE_SHOP_STREET then
+			if slot0.curPage == slot1.TYPE_SHOP_STREET then
 				return
 			end
 
-			if uv0.curPage == nil or uv0.curPage == uv1.TYPE_ACTIVITY then
-				uv0:showRandomShipWord(pg.navalacademy_shoppingstreet_template[1].words_enter, true, "enter")
+			if slot0.curPage == nil or slot0.curPage == slot1.TYPE_ACTIVITY then
+				slot0:showRandomShipWord(pg.navalacademy_shoppingstreet_template[1].words_enter, true, "enter")
 			end
 
-			uv0.curPage = uv1.TYPE_SHOP_STREET
+			slot0.curPage = slot1.TYPE_SHOP_STREET
 
-			uv0:updatePainting(uv1.TYPE_SHOP_STREET)
+			slot0:updatePainting(slot1.TYPE_SHOP_STREET)
 		end
 	end, SFX_PANEL)
-	setActive(slot0.toggles[uv0.TYPE_SHAM_SHOP], not LOCK_SHAM_CHAPTER and slot0.shamShop:isOpen())
-	onToggle(slot0, slot0.toggles[uv0.TYPE_SHAM_SHOP], function (slot0)
+	setActive(slot0.toggles[slot0.TYPE_SHAM_SHOP], not LOCK_SHAM_CHAPTER and slot0.shamShop:isOpen())
+	onToggle(slot0, slot0.toggles[slot0.TYPE_SHAM_SHOP], function (slot0)
 		if slot0 then
-			slot1, slot2 = pg.SystemOpenMgr:GetInstance():isOpenSystem(uv0.player.level, "ShamShop")
+			slot1, slot2 = pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0.player.level, "ShamShop")
 
 			if not slot1 then
 				pg.TipsMgr:GetInstance():ShowTips(slot2)
 
-				if uv0:getCurrPage() then
-					triggerToggle(uv0.toggles[slot3], true)
+				if slot0:getCurrPage() then
+					triggerToggle(slot0.toggles[slot3], true)
 				end
 
 				return
 			end
 
-			if uv0.curPage == uv1.TYPE_SHAM_SHOP then
+			if slot0.curPage == slot1.TYPE_SHAM_SHOP then
 				return
 			end
 
-			if uv0.curPage == nil or uv0.curPage == uv1.TYPE_ACTIVITY then
-				uv0:showRandomShipWord(pg.navalacademy_shoppingstreet_template[1].words_enter, true, "enter")
+			if slot0.curPage == nil or slot0.curPage == slot1.TYPE_ACTIVITY then
+				slot0:showRandomShipWord(pg.navalacademy_shoppingstreet_template[1].words_enter, true, "enter")
 			end
 
-			uv0.curPage = uv1.TYPE_SHAM_SHOP
+			slot0.curPage = slot1.TYPE_SHAM_SHOP
 
-			uv0:updateShamShop()
-			uv0:updateShamRes()
-			uv0:updatePainting(uv1.TYPE_SHAM_SHOP)
+			slot0:updateShamShop()
+			slot0:updateShamRes()
+			slot0:updatePainting(slot1.TYPE_SHAM_SHOP)
 		end
 	end, SFX_PANEL)
 
 	slot0.warp = slot0.contextData.warp
 
-	if slot0.warp == uv0.TYPE_SHAM_SHOP then
+	if slot0.warp == slot0.TYPE_SHAM_SHOP then
 		slot5, slot6 = pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0.player.level, "ShamShop")
 
 		if not slot5 then
@@ -275,20 +277,20 @@ function slot0.didEnter(slot0)
 		end
 	end
 
-	if (not slot0.warp or slot0.warp == uv0.TYPE_ACTIVITY) and #slot3 > 0 then
+	if (not slot0.warp or slot0.warp == slot0.TYPE_ACTIVITY) and #slot3 > 0 then
 		if slot0.contextData.actId and slot0.toggles[tostring(slot0.contextData.actId)] then
 			triggerToggle(slot0.toggles[tostring(slot0.contextData.actId)], true)
 		else
 			triggerToggle(slot0.toggles[tostring(slot3[#slot3].activityId)], true)
 		end
 	else
-		slot0.warp = slot0.warp or uv0.TYPE_SHOP_STREET
+		slot0.warp = slot0.warp or slot0.TYPE_SHOP_STREET
 
 		triggerToggle(slot0.toggles[slot0.warp], true)
 	end
 
 	onButton(slot0, slot0:findTF("refresh_btn", slot0.shopStreetTF), function ()
-		if not ShoppingStreet.getRiseShopId(ShopArgs.ShoppingStreetUpgrade, uv0.shopStreet.flashCount) then
+		if not ShoppingStreet.getRiseShopId(ShopArgs.ShoppingStreetUpgrade, slot0.shopStreet.flashCount) then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("shopStreet_refresh_max_count"))
 
 			return
@@ -298,16 +300,16 @@ function slot0.didEnter(slot0)
 			yesText = "text_confirm",
 			hideNo = false,
 			noText = "text_cancel",
-			content = i18n("refresh_shopStreet_question", i18n("word_" .. id2res(pg.shop_template[slot0].resource_type) .. "_icon"), pg.shop_template[slot0].resource_num, uv0.shopStreet.flashCount),
+			content = i18n("refresh_shopStreet_question", i18n("word_" .. id2res(pg.shop_template[slot0].resource_type) .. "_icon"), pg.shop_template[slot0].resource_num, slot0.shopStreet.flashCount),
 			onYes = function ()
-				uv0:emit(ShopsMediator.REFRESH_SHOP_STREET, uv1)
+				slot0:emit(ShopsMediator.REFRESH_SHOP_STREET, slot0)
 			end
 		})
 	end, SFX_PANEL)
 	slot0:blurView()
 end
 
-function slot0.updatePainting(slot0, slot1)
+slot0.updatePainting = function (slot0, slot1)
 	if slot0.patingName ~= slot0:getPaintingName(slot1) then
 		if slot2 then
 			retPaintingPrefab(slot0.painting, slot2)
@@ -315,10 +317,12 @@ function slot0.updatePainting(slot0, slot1)
 
 		setPaintingPrefabAsync(slot0.painting, slot3, "chuanwu")
 	end
+
+	setActive(slot0.buzhihuoTouch, slot3 == "buzhihuo_shop")
 end
 
-function slot0.getPaintingName(slot0, slot1)
-	if slot1 == uv0.TYPE_ACTIVITY then
+slot0.getPaintingName = function (slot0, slot1)
+	if slot1 == slot0.TYPE_ACTIVITY then
 		slot0.patingName = "aijiang_pt"
 	else
 		slot0.patingName = "buzhihuo_shop"
@@ -327,15 +331,15 @@ function slot0.getPaintingName(slot0, slot1)
 	return slot0.patingName
 end
 
-function slot0.getCurrPage(slot0)
-	if slot0.curPage == uv0.TYPE_ACTIVITY then
+slot0.getCurrPage = function (slot0)
+	if slot0.curPage == slot0.TYPE_ACTIVITY then
 		return tostring(slot0.currActivityShop.activityId)
 	else
 		return slot0.curPage
 	end
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	playSoundEffect(SFX_CANCEL)
 
 	if not IsNil(slot0.singleBoxTF) and isActive(slot0.singleBoxTF) then
@@ -353,11 +357,11 @@ function slot0.onBackPressed(slot0)
 	triggerButton(slot0.backBtn)
 end
 
-function slot0.randomShipWord(slot0, slot1)
+slot0.randomShipWord = function (slot0, slot1)
 	return string.split(slot1, "|")[math.random(#string.split(slot1, "|"))], math.random(#string.split(slot1, "|"))
 end
 
-function slot0.clearShipWord(slot0)
+slot0.clearShipWord = function (slot0)
 	if slot0.wordTweenId then
 		LeanTween.cancel(slot0.wordTweenId)
 
@@ -369,7 +373,7 @@ function slot0.clearShipWord(slot0)
 	setActive(slot0.chat, false)
 end
 
-function slot0.showRandomShipWord(slot0, slot1, slot2, slot3)
+slot0.showRandomShipWord = function (slot0, slot1, slot2, slot3)
 	if not slot0.chatFlag or slot2 then
 		slot0.chatFlag = true
 
@@ -394,42 +398,42 @@ function slot0.showRandomShipWord(slot0, slot1, slot2, slot3)
 		end
 
 		slot0.wordTweenId = LeanTween.scale(slot0.chat.gameObject, Vector3.New(1, 1, 1), slot4):setFrom(Vector3.New(0, 0, 0)):setEase(LeanTweenType.easeOutBack):setOnComplete(System.Action(function ()
-			if IsNil(uv0.chat) then
+			if IsNil(slot0.chat) then
 				return
 			end
 
-			uv0.wordTweenId = LeanTween.scale(uv0.chat.gameObject, Vector3.New(0, 0, 1), uv1):setFrom(Vector3.New(1, 1, 1)):setEase(LeanTweenType.easeInBack):setDelay(uv2):setOnComplete(System.Action(function ()
-				if IsNil(uv0.chat) then
+			slot0.wordTweenId = LeanTween.scale(slot0.chat.gameObject, Vector3.New(0, 0, 1), LeanTween.scale):setFrom(Vector3.New(1, 1, 1)):setEase(LeanTweenType.easeInBack):setDelay(LeanTween.scale(slot0.chat.gameObject, Vector3.New(0, 0, 1), LeanTween.scale).setFrom(Vector3.New(1, 1, 1)).setEase(LeanTweenType.easeInBack)):setOnComplete(System.Action(function ()
+				if IsNil(slot0.chat) then
 					return
 				end
 
-				uv0:clearShipWord()
+				slot0:clearShipWord()
 			end)).uniqueId
 		end)).uniqueId
 	end
 end
 
-function slot0.playCV(slot0, slot1)
+slot0.playCV = function (slot0, slot1)
 	if "event:/cv/shop/" .. slot1 then
 		function slot3()
-			uv0:stopCV()
+			slot0:stopCV()
 
-			uv0._currentVoice = playSoundEffect(uv1)
+			slot0.stopCV._currentVoice = playSoundEffect(playSoundEffect)
 		end
 
 		if slot0.loadedCVBankName then
 			slot3()
 		else
 			pg.CriMgr:LoadCV("shop", function ()
-				slot0 = pg.CriMgr.GetCVBankName(uv0)
+				slot0 = pg.CriMgr.GetCVBankName(pg.CriMgr.GetCVBankName)
 
-				if uv1.exited then
+				if pg.CriMgr.GetCVBankName.exited then
 					pg.CriMgr.UnloadCVBank(slot0)
 				else
-					uv2()
+					slot2()
 
-					if uv1._currentVoice then
-						uv1.loadedCVBankName = slot0
+					if slot2._currentVoice then
+						slot1.loadedCVBankName = slot0
 					end
 				end
 			end)
@@ -437,17 +441,17 @@ function slot0.playCV(slot0, slot1)
 	end
 end
 
-function slot0.updateExploit(slot0)
+slot0.updateExploit = function (slot0)
 	setText(slot0:findTF("res_exploit/bg/Text", slot0.top), slot0.exploit)
 end
 
-function slot0.updateActivityRes(slot0)
+slot0.updateActivityRes = function (slot0)
 	if slot0.currActivityShop then
 		setText(slot0:findTF("res_battery/Text", slot0.top), slot0.player[id2res(slot0.currActivityShop:getResId())])
 	end
 end
 
-function slot0.updateMilitaryShop(slot0)
+slot0.updateMilitaryShop = function (slot0)
 	removeAllChildren(slot1)
 
 	slot0.milGoodsTFs = {}
@@ -465,17 +469,17 @@ function slot0.updateMilitaryShop(slot0)
 				yesText = "text_buy",
 				type = MSGBOX_TYPE_SINGLE_ITEM,
 				drop = {
-					id = uv0:getConfig("effect_args")[1],
-					type = uv0:getConfig("type")
+					id = slot0:getConfig("effect_args")[1],
+					type = slot0:getConfig("type")
 				},
 				onYes = function ()
-					if not uv0:canPurchase() then
+					if not slot0:canPurchase() then
 						pg.TipsMgr:GetInstance():ShowTips(i18n("buy_countLimit"))
 
 						return
 					end
 
-					uv1:emit(ShopsMediator.BUY_ITEM, uv0.id, 1)
+					slot1:emit(ShopsMediator.BUY_ITEM, slot0.id, 1)
 				end
 			})
 		end, SFX_PANEL)
@@ -484,7 +488,7 @@ function slot0.updateMilitaryShop(slot0)
 	slot0:addRefreshTimer(slot0.militaryShop.nextTime + 1)
 end
 
-function slot0.stopCV(slot0)
+slot0.stopCV = function (slot0)
 	if slot0._currentVoice then
 		slot0._currentVoice:Stop(true)
 	end
@@ -492,16 +496,16 @@ function slot0.stopCV(slot0)
 	slot0._currentVoice = nil
 end
 
-function slot0.addRefreshTimer(slot0, slot1)
+slot0.addRefreshTimer = function (slot0, slot1)
 	slot2()
 
 	slot3 = slot0:findTF("timer_bg/Text", slot0.militaryShopTF)
 	slot0.refreshTimer = Timer.New(function ()
-		if uv0 - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
-			uv1()
-			uv2:emit(ShopsMediator.GET_MILITARY_SHOP)
+		if slot0 - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
+			slot1()
+			slot2:emit(ShopsMediator.GET_MILITARY_SHOP)
 		else
-			setText(uv3, pg.TimeMgr.GetInstance():DescCDTime(slot0))
+			setText(slot0, pg.TimeMgr.GetInstance():DescCDTime(slot0))
 		end
 	end, 1, -1)
 
@@ -509,11 +513,11 @@ function slot0.addRefreshTimer(slot0, slot1)
 	slot0.refreshTimer.func()
 end
 
-function slot0.setShopStreet(slot0, slot1)
+slot0.setShopStreet = function (slot0, slot1)
 	slot0.shopStreet = slot1
 end
 
-function slot0.updateShopStreet(slot0, slot1)
+slot0.updateShopStreet = function (slot0, slot1)
 	slot2 = pg.navalacademy_shoppingstreet_template[slot1.level]
 
 	slot0:displayShopSteet(1)
@@ -528,14 +532,14 @@ function slot0.updateShopStreet(slot0, slot1)
 	end
 
 	slot0.shopStreetTimer = Timer.New(function ()
-		if uv0:isUpdateGoods() then
-			uv1.shopStreetTimer:Stop()
+		if slot0:isUpdateGoods() then
+			slot1.shopStreetTimer:Stop()
 
-			uv1.shopStreetTimer = nil
+			slot1.shopStreetTimer.shopStreetTimer = nil
 
-			uv1:emit(ShopsMediator.GET_SHOP_STREEET)
+			nil:emit(ShopsMediator.GET_SHOP_STREEET)
 		else
-			setText(uv2, pg.TimeMgr:GetInstance():DescCDTime(uv0.nextFlashTime - pg.TimeMgr.GetInstance():GetServerTime()))
+			setText(setText, pg.TimeMgr:GetInstance():DescCDTime(slot0.nextFlashTime - pg.TimeMgr.GetInstance():GetServerTime()))
 		end
 	end, 1, -1)
 
@@ -545,12 +549,12 @@ end
 slot1 = 2
 slot2 = 5
 
-function slot0.displayShopSteet(slot0, slot1)
-	if math.floor(#slot0.shopStreet.goods / uv0) < #slot0.shopStreet.goods / uv0 then
+slot0.displayShopSteet = function (slot0, slot1)
+	if math.floor(#slot0.shopStreet.goods / slot0) < #slot0.shopStreet.goods / slot0 then
 		slot2 = math.floor(slot2) + 1
 	end
 
-	slot3 = math.max(uv1, slot2) * uv0
+	slot3 = math.max(slot1, slot2) * slot0
 
 	removeAllChildren(slot4)
 
@@ -573,29 +577,29 @@ function slot0.displayShopSteet(slot0, slot1)
 					showOwned = true,
 					type = MSGBOX_TYPE_SINGLE_ITEM,
 					drop = {
-						id = uv0:getConfig("effect_args")[1],
-						type = uv0:getConfig("type")
+						id = slot0:getConfig("effect_args")[1],
+						type = slot0:getConfig("type")
 					},
 					onYes = function ()
-						if not uv0:canPurchase() then
+						if not slot0:canPurchase() then
 							pg.TipsMgr:GetInstance():ShowTips(i18n("buy_countLimit"))
 
 							return
 						end
 
-						if uv0:getConfig("resource_type") == 4 or slot0 == 14 then
-							slot1 = uv1.player:getResById(slot0)
+						if slot0:getConfig("resource_type") == 4 or slot0 == 14 then
+							slot1 = slot1.player:getResById(slot0)
 
 							pg.MsgboxMgr.GetInstance():ShowMsgBox({
-								content = i18n("charge_scene_buy_confirm", uv0:getConfig("resource_num") * uv0.discount / 100, Item.New({
-									id = uv0:getConfig("effect_args")[1]
+								content = i18n("charge_scene_buy_confirm", slot0:getConfig("resource_num") * slot0.discount / 100, Item.New({
+									id = slot0:getConfig("effect_args")[1]
 								}):getConfig("name")),
 								onYes = function ()
-									uv0:emit(ShopsMediator.BUY_ITEM, uv1.id, 1)
+									slot0:emit(ShopsMediator.BUY_ITEM, slot1.id, 1)
 								end
 							})
 						else
-							uv1:emit(ShopsMediator.BUY_ITEM, uv0.id, 1)
+							slot1:emit(ShopsMediator.BUY_ITEM, slot0.id, 1)
 						end
 					end
 				})
@@ -607,11 +611,11 @@ function slot0.displayShopSteet(slot0, slot1)
 	end
 end
 
-function slot0.setActivityShops(slot0, slot1)
+slot0.setActivityShops = function (slot0, slot1)
 	slot0.activityShops = slot1
 end
 
-function slot0.updateActivityShop(slot0, slot1, slot2)
+slot0.updateActivityShop = function (slot0, slot1, slot2)
 	slot0.activityShops[slot1] = slot2
 
 	if slot0.currActivityShop and slot0.currActivityShop.id == slot2.id then
@@ -619,7 +623,7 @@ function slot0.updateActivityShop(slot0, slot1, slot2)
 	end
 end
 
-function slot0.intActivityShop(slot0, slot1)
+slot0.intActivityShop = function (slot0, slot1)
 	if not slot0.activityShops[slot1] or slot0.currActivityShop == slot2 then
 		return
 	end
@@ -643,9 +647,9 @@ function slot0.intActivityShop(slot0, slot1)
 			slot4 = ActivityGoodsCard.New(slot2)
 
 			slot4:update(slot3)
-			table.insert(uv1.activityCards, slot4)
-			onButton(uv1, slot4.tr, function ()
-				uv0:showMsxBox(uv1)
+			table.insert(slot1.activityCards, slot4)
+			onButton(slot1, slot4.tr, function ()
+				slot0:showMsxBox(slot0)
 			end, SFX_PANEL)
 		end
 	end)
@@ -674,7 +678,7 @@ function slot0.intActivityShop(slot0, slot1)
 	setActive(slot0.activityBg, true)
 end
 
-function slot0.showMsxBox(slot0, slot1)
+slot0.showMsxBox = function (slot0, slot1)
 	if slot1:getConfig("num_limit") == 1 or slot1:getConfig("commodity_type") == 4 then
 		slot0:openSingleBox(slot1)
 	else
@@ -682,7 +686,7 @@ function slot0.showMsxBox(slot0, slot1)
 	end
 end
 
-function slot0.openSingleBox(slot0, slot1)
+slot0.openSingleBox = function (slot0, slot1)
 	slot2 = {
 		id = slot1:getConfig("commodity_id"),
 		type = slot1:getConfig("commodity_type"),
@@ -698,20 +702,20 @@ function slot0.openSingleBox(slot0, slot1)
 		slot0.singleItemOwnLabelTF = slot0:findTF("icon_bg/own/label", slot0.singleItemTF)
 
 		onButton(slot0, slot0:findTF("window/actions/cancel_btn", slot0.singleBoxTF), function ()
-			uv0:closeSingleBox()
+			slot0:closeSingleBox()
 		end, SFX_CANCEL)
 		onButton(slot0, slot0.singleBoxTF, function ()
-			uv0:closeSingleBox()
+			slot0:closeSingleBox()
 		end, SFX_CANCEL)
 		onButton(slot0, slot0:findTF("window/top/btnBack", slot0.singleBoxTF), function ()
-			uv0:closeSingleBox()
+			slot0:closeSingleBox()
 		end, SFX_CANCEL)
 	end
 
 	pg.UIMgr.GetInstance():BlurPanel(slot0.singleBoxTF)
 	onButton(slot0, slot0:findTF("window/actions/confirm_btn", slot0.singleBoxTF), function ()
-		uv0:purchase(uv1, 1)
-		uv0:closeSingleBox()
+		slot0:purchase(slot0, 1)
+		slot0.purchase:closeSingleBox()
 	end, SFX_CANCEL)
 	updateDrop(slot0.singleItemTF, slot2)
 
@@ -728,7 +732,7 @@ function slot0.openSingleBox(slot0, slot1)
 	slot0:unBlurView()
 end
 
-function slot0.closeSingleBox(slot0)
+slot0.closeSingleBox = function (slot0)
 	if slot0.singleBoxTF then
 		pg.UIMgr.GetInstance():UnblurPanel(slot0.singleBoxTF, slot0._tf)
 		setActive(slot0.singleBoxTF, false)
@@ -736,7 +740,7 @@ function slot0.closeSingleBox(slot0)
 	end
 end
 
-function slot0.purchase(slot0, slot1, slot2)
+slot0.purchase = function (slot0, slot1, slot2)
 	if not slot1:canPurchase() then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("buy_countLimit"))
 
@@ -751,16 +755,16 @@ function slot0.purchase(slot0, slot1, slot2)
 		return
 	end
 
-	if slot0.curPage == uv0.TYPE_ACTIVITY then
+	if slot0.curPage == slot0.TYPE_ACTIVITY then
 		slot0:emit(ShopsMediator.ACTIVITY_OPERATION, slot0.currActivityShop.activityId, 1, slot1.id, slot2)
-	elseif slot0.curPage == uv0.TYPE_SHAM_SHOP then
+	elseif slot0.curPage == slot0.TYPE_SHAM_SHOP then
 		slot0:emit(ShopsMediator.BUY_SHAM_ITEM, slot1.id, slot2)
-	elseif slot0.curPage == uv0.TYPE_ESCORT_SHOP then
+	elseif slot0.curPage == slot0.TYPE_ESCORT_SHOP then
 		slot0:emit(ShopsMediator.BUY_ESCORT_ITEM, slot1.id, slot2)
 	end
 end
 
-function slot0.initMsgBox(slot0, slot1)
+slot0.initMsgBox = function (slot0, slot1)
 	slot2 = {
 		id = slot1:getConfig("commodity_id"),
 		type = slot1:getConfig("commodity_type"),
@@ -774,9 +778,9 @@ function slot0.initMsgBox(slot0, slot1)
 	end
 
 	function slot6(slot0)
-		uv1.countTF.text = math.min(math.max(slot0, 1), uv0)
-		uv1.curCount = math.min(math.max(slot0, 1), uv0)
-		uv1.itemCountTF.text = math.min(math.max(slot0, 1), uv0) * uv2:getConfig("num")
+		math.min(math.max(slot0, 1), ).countTF.text = math.min(math.max(slot0, 1), )
+		math.min(math.max(slot0, 1), ).countTF.curCount = math.min(math.max(slot0, 1), )
+		math.min(math.max(slot0, 1), ).countTF.itemCountTF.text = math.min(math.max(slot0, 1), ) * math.max(slot0, 1):getConfig("num")
 	end
 
 	if not slot0.msgBoxTF then
@@ -794,10 +798,10 @@ function slot0.initMsgBox(slot0, slot1)
 		slot0.ownerLabelTF = slot0:findTF("icon_bg/own/label", slot0.topItem)
 
 		onButton(slot0, slot0:findTF("actions/cancel_button", slot0.msgBoxTF), function ()
-			uv0:closeActivityMsg()
+			slot0:closeActivityMsg()
 		end, SFX_PANEL)
 		onButton(slot0, slot0.msgBoxTF, function ()
-			uv0:closeActivityMsg()
+			slot0:closeActivityMsg()
 		end, SFX_PANEL)
 	end
 
@@ -806,17 +810,17 @@ function slot0.initMsgBox(slot0, slot1)
 	slot7 = 0.5
 
 	onButton(slot0, slot0:findTF("actions/confirm_button", slot0.msgBoxTF), function ()
-		uv0:purchase(uv1, uv0.curCount)
-		uv0:closeActivityMsg()
+		slot0:purchase(slot0, slot0.curCount)
+		slot0.purchase:closeActivityMsg()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.leftBtn, function ()
-		uv0(uv1.curCount - 1)
+		slot0(slot1.curCount - 1)
 	end)
 	onButton(slot0, slot0.rightBtn, function ()
-		uv0(uv1.curCount + 1)
+		slot0(slot1.curCount + 1)
 	end)
 	onButton(slot0, slot0.maxBtn, function ()
-		uv0(uv1)
+		slot0(slot1)
 	end)
 	slot6(1)
 	setActive(slot0.msgBoxTF, true)
@@ -835,7 +839,7 @@ function slot0.initMsgBox(slot0, slot1)
 	slot0:unBlurView()
 end
 
-function slot0.closeActivityMsg(slot0)
+slot0.closeActivityMsg = function (slot0)
 	if slot0.msgBoxTF then
 		pg.UIMgr.GetInstance():UnblurPanel(slot0.msgBoxTF, slot0._tf)
 		setActive(slot0.msgBoxTF, false)
@@ -843,13 +847,13 @@ function slot0.closeActivityMsg(slot0)
 	end
 end
 
-function slot0.updateGuildRes(slot0)
+slot0.updateGuildRes = function (slot0)
 	if not IsNil(slot0.guildResTxt) then
 		slot0.guildResTxt.text = slot0.player.guildCoin
 	end
 end
 
-function slot0.initGuildShop(slot0)
+slot0.initGuildShop = function (slot0)
 	if not slot0.guildShop or slot0.isInitGuildShop then
 		return
 	end
@@ -862,15 +866,15 @@ function slot0.initGuildShop(slot0)
 	slot0:resetGuildCards()
 	slot0:updateGuildRes()
 	onButton(slot0, slot0:findTF("refresh_btn", slot0.guildShopTF), function ()
-		if not ShoppingStreet.getRiseShopId(ShopArgs.guildShopFlash, uv0.guildShop.refreshCount) then
+		if not ShoppingStreet.getRiseShopId(ShopArgs.guildShopFlash, slot0.guildShop.refreshCount) then
 			return
 		end
 
-		uv0:emit(ShopsMediator.BUY_ITEM, slot0, 1)
+		slot0:emit(ShopsMediator.BUY_ITEM, slot0, 1)
 	end, SFX_PANEL)
 end
 
-function slot0.addGuidTimer(slot0)
+slot0.addGuidTimer = function (slot0)
 	if not slot0.isInitGuildShop then
 		return
 	end
@@ -882,14 +886,14 @@ function slot0.addGuidTimer(slot0)
 	end
 
 	slot0.guildTimer = Timer.New(function ()
-		if uv0.guildShop.nextRefreshTime - pg.TimeMgr.GetInstance():GetServerTime() > 0 then
-			uv0.guildTimerTxt.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
+		if slot0.guildShop.nextRefreshTime - pg.TimeMgr.GetInstance():GetServerTime() > 0 then
+			slot0.guildTimerTxt.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
 		else
-			uv0.guildTimerTxt.text = ""
+			slot0.guildTimerTxt.text = ""
 
-			uv0.guildTimer:Stop()
+			slot0.guildTimer:Stop()
 
-			uv0.guildTimer = nil
+			slot0.guildTimer = nil
 		end
 	end, 1, -1)
 
@@ -897,13 +901,13 @@ function slot0.addGuidTimer(slot0)
 	slot0.guildTimer.func()
 end
 
-function slot0.closeMsgBox(slot0)
+slot0.closeMsgBox = function (slot0)
 	if pg.MsgboxMgr:GetInstance()._go.activeSelf then
 		slot1:hide()
 	end
 end
 
-function slot0.initGuildGoodsCards(slot0)
+slot0.initGuildGoodsCards = function (slot0)
 	if not slot0.isInitGuildShop then
 		return
 	end
@@ -929,17 +933,17 @@ function slot0.initGuildGoodsCards(slot0)
 					yesText = "text_buy",
 					type = MSGBOX_TYPE_SINGLE_ITEM,
 					drop = {
-						id = uv0:getConfig("effect_args")[1],
-						type = uv0:getConfig("type")
+						id = slot0:getConfig("effect_args")[1],
+						type = slot0:getConfig("type")
 					},
 					onYes = function ()
-						if not uv0:canPurchase() then
+						if not slot0:canPurchase() then
 							pg.TipsMgr:GetInstance():ShowTips(i18n("buy_countLimit"))
 
 							return
 						end
 
-						uv1:emit(ShopsMediator.BUY_ITEM, uv0.id, 1)
+						slot1:emit(ShopsMediator.BUY_ITEM, slot0.id, 1)
 					end
 				})
 			end, SFX_PANEL)
@@ -949,7 +953,7 @@ function slot0.initGuildGoodsCards(slot0)
 	end
 end
 
-function slot0.updateGuildCard(slot0)
+slot0.updateGuildCard = function (slot0)
 	if not slot0.isInitGuildShop then
 		return
 	end
@@ -961,12 +965,12 @@ function slot0.updateGuildCard(slot0)
 	end
 end
 
-function slot0.resetGuildCards(slot0)
+slot0.resetGuildCards = function (slot0)
 	slot0:initGuildGoodsCards()
 	slot0:addGuidTimer()
 end
 
-function slot0.updateShamShop(slot0)
+slot0.updateShamShop = function (slot0)
 	if not slot0.shamItemList then
 		slot0.shamItemList = UIItemList.New(slot0:findTF("scrollView/view", slot0.shamShopTF), slot0.goodActivityTF)
 	end
@@ -974,12 +978,12 @@ function slot0.updateShamShop(slot0)
 	slot0.shamItemList:make(function (slot0, slot1, slot2)
 		slot3 = ActivityGoodsCard.New(slot2)
 
-		slot3:update(slot4, uv1.TYPE_SHAM_SHOP)
-		onButton(uv2, slot3.tr, function ()
-			if uv0:getConfig("num_limit") == 1 or uv0:getConfig("commodity_type") == 4 then
-				uv1:openSingleBox(uv0)
+		slot3:update(slot4, slot1.TYPE_SHAM_SHOP)
+		onButton(slot2, slot3.tr, function ()
+			if slot0:getConfig("num_limit") == 1 or slot0:getConfig("commodity_type") == 4 then
+				slot1:openSingleBox(slot1.openSingleBox)
 			else
-				uv1:initMsgBox(uv0)
+				slot1:initMsgBox(slot1.initMsgBox)
 			end
 		end, SFX_PANEL)
 	end)
@@ -987,11 +991,11 @@ function slot0.updateShamShop(slot0)
 	setText(slot0:findTF("time/day", slot0.shamShopTF), slot0.shamShop:getRestDays())
 end
 
-function slot0.updateShamRes(slot0)
+slot0.updateShamRes = function (slot0)
 	setText(slot0:findTF("res_nano/Text", slot0.top), getProxy(BagProxy).getItemCountById(slot1, ChapterConst.ShamMoneyItem))
 end
 
-function slot0.updateEscortShop(slot0)
+slot0.updateEscortShop = function (slot0)
 	if not slot0.escortItemList then
 		slot0.escortItemList = UIItemList.New(slot0:findTF("scrollView/view", slot0.escortShopTF), slot0.goodActivityTF)
 	end
@@ -1000,11 +1004,11 @@ function slot0.updateEscortShop(slot0)
 		slot3 = ActivityGoodsCard.New(slot2)
 
 		slot3:update(slot4)
-		onButton(uv1, slot3.tr, function ()
-			if uv0:getConfig("num_limit") == 1 or uv0:getConfig("commodity_type") == 4 then
-				uv1:openSingleBox(uv0)
+		onButton(slot1, slot3.tr, function ()
+			if slot0:getConfig("num_limit") == 1 or slot0:getConfig("commodity_type") == 4 then
+				slot1:openSingleBox(slot1.openSingleBox)
 			else
-				uv1:initMsgBox(uv0)
+				slot1:initMsgBox(slot1.initMsgBox)
 			end
 		end, SFX_PANEL)
 	end)
@@ -1012,11 +1016,11 @@ function slot0.updateEscortShop(slot0)
 	setText(slot0:findTF("time/day", slot0.escortShopTF), slot0.escortShop:getRestDays())
 end
 
-function slot0.updateEscortRes(slot0)
+slot0.updateEscortRes = function (slot0)
 	setText(slot0:findTF("res_nano/Text", slot0.top), getProxy(BagProxy).getItemCountById(slot1, ChapterConst.EscortMoneyItem))
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	for slot4, slot5 in ipairs(slot0.cards) do
 		slot5:dispose()
 	end

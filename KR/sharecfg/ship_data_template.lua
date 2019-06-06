@@ -44971,6 +44971,7 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			10380,
+			12280,
 			29171
 		},
 		hide_buff_list = {
@@ -45017,6 +45018,7 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			10380,
+			12280,
 			29171
 		},
 		hide_buff_list = {
@@ -45063,6 +45065,7 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			10380,
+			12280,
 			29171
 		},
 		hide_buff_list = {
@@ -45109,6 +45112,7 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			10380,
+			12280,
 			29172
 		},
 		hide_buff_list = {
@@ -47625,6 +47629,7 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			1052,
+			12290,
 			23121
 		},
 		hide_buff_list = {
@@ -47671,6 +47676,7 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			1052,
+			12290,
 			23121
 		},
 		hide_buff_list = {
@@ -47717,6 +47723,7 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			1052,
+			12290,
 			23121
 		},
 		hide_buff_list = {
@@ -47763,6 +47770,7 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			1052,
+			12290,
 			23122
 		},
 		hide_buff_list = {
@@ -61073,3 +61081,5 @@ pg.ship_data_template = {
 		999014
 	}
 }
+
+return

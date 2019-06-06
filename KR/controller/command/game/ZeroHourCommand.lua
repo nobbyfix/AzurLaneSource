@@ -1,5 +1,7 @@
 class("ZeroHourCommand", pm.SimpleCommand).execute = function (slot0, slot1)
-	getProxy(PlayerProxy).getData(slot2):resetBuyOilCount()
+	slot3 = getProxy(PlayerProxy).getData(slot2)
+
+	slot3:resetBuyOilCount()
 
 	for slot7, slot8 in pairs(slot3.vipCards) do
 		if slot8:isExpire() then
@@ -86,12 +88,16 @@ class("ZeroHourCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 
 	_.each(slot23, function (slot0)
 		if slot0 and not slot0:isEnd() and slot0:getConfig("config_id") == 3 then
+			slot1 = slot0:getConfig("config_data")
+
 			if slot0.data1 < pg.TimeMgr.GetInstance():GetServerTime() then
-				if slot0.data3 == 0 or slot4 < math.clamp(slot2:DiffDay(slot0.data1, slot2:GetServerTime()) + 1, 1, #slot0:getConfig("config_data")) and _.all(_.flatten({
-					slot0.getConfig("config_data")[slot4]
+				slot3 = math.clamp(slot2:DiffDay(slot0.data1, slot2:GetServerTime()) + 1, 1, #slot1)
+
+				if slot0.data3 == 0 or (slot4 < slot3 and _.all(_.flatten({
+					slot1[slot4]
 				}), function (slot0)
-					return uv0:getFinishTaskById(slot0) ~= nil
-				end) then
+					return slot0:getFinishTaskById(slot0) ~= nil
+				end)) then
 					pg.m02:sendNotification(GAME.ACTIVITY_OPERATION, {
 						cmd = 1,
 						activity_id = slot0.id
@@ -110,6 +116,10 @@ class("ZeroHourCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 
 	if slot22:getActivityByType(ActivityConst.ACTIVITY_TYPE_MONOPOLY) and not slot25:isEnd() then
 		slot22:updateActivity(slot25)
+	end
+
+	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_CHALLENGE) or not slot26:isEnd() then
+		slot0:sendNotification(GAME.CHALLENGE2_INFO, {})
 	end
 end
 

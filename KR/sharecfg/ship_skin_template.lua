@@ -9069,7 +9069,7 @@ pg.ship_skin_template = {
 		painting_hx = "",
 		air_bullet_skin = "",
 		hand_id = 14,
-		shop_type_id = 0,
+		shop_type_id = 2,
 		lip_smoothing = 0,
 		l2d_animations = "",
 		bullet_skin_main = "",
@@ -50479,6 +50479,107 @@ pg.ship_skin_template = {
 			}
 		}
 	},
+	[401019] = {
+		name = "Z1·改 ",
+		ship_group = 40101,
+		illustrator2 = -1,
+		bg = "",
+		bullet_skin_secondary = "",
+		painting = "Z1_g",
+		painting_hx = "",
+		air_bullet_skin = "",
+		hand_id = 13,
+		shop_type_id = 0,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bullet_skin_main = "",
+		isSwimsuit = 0,
+		skin_type = 2,
+		id = 401019,
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "Z1_g",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		desc = "흠~ 이게 바로 개조인가…? 괜찮네! 기뻐해, 지휘관! 더 강해진 Z1님만 있다면 뭐든 문제 없을 거야! ",
+		voice_actor = 17,
+		air_bomb_skin = "",
+		illustrator = 10,
+		rarity_bg = "",
+		isHX = 0,
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					0.68,
+					0.96,
+					0
+				}
+			},
+			torpedo = {
+				{
+					0.011,
+					0,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					0.61,
+					0.87,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.5,
+							2.24,
+							0
+						}
+					}
+				}
+			}
+		}
+	},
 	[401020] = {
 		name = "Z2",
 		ship_group = 40102,
@@ -52775,7 +52876,7 @@ pg.ship_skin_template = {
 		}
 	},
 	[402039] = {
-		name = "쾰른・改 ",
+		name = "쾰른·改 ",
 		ship_group = 40203,
 		illustrator2 = -1,
 		bg = "",
@@ -52996,6 +53097,114 @@ pg.ship_skin_template = {
 						{
 							-0.64,
 							2.606,
+							-0.472
+						}
+					}
+				}
+			}
+		}
+	},
+	[402049] = {
+		name = "라이프치히·改 ",
+		ship_group = 40204,
+		illustrator2 = -1,
+		bg = "",
+		bullet_skin_secondary = "",
+		painting = "laibixi_g",
+		painting_hx = "",
+		air_bullet_skin = "",
+		hand_id = 13,
+		shop_type_id = 0,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bullet_skin_main = "",
+		isSwimsuit = 0,
+		skin_type = 2,
+		id = 402049,
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "laibixi_g",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		desc = "물고기 씨가 전보다 강해진 것 같아요, 난 변화라고는 별로 없는데……설마 물고기 씨가 날 대신해 강해진 걸까요…!? ",
+		voice_actor = 78,
+		air_bomb_skin = "",
+		illustrator = 1,
+		rarity_bg = "",
+		isHX = 0,
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					1.19,
+					1.15,
+					0
+				}
+			},
+			vicegun = {
+				{
+					1.19,
+					1.15,
+					0
+				}
+			},
+			torpedo = {
+				{
+					0.239,
+					-0.109,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					1.19,
+					1.17,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.64,
+							2.462,
 							-0.472
 						}
 					}
@@ -72784,6 +72993,7 @@ pg.ship_skin_template = {
 		312013,
 		401010,
 		401011,
+		401019,
 		401020,
 		401180,
 		401190,
@@ -72806,6 +73016,7 @@ pg.ship_skin_template = {
 		402030,
 		402039,
 		402040,
+		402049,
 		403010,
 		403030,
 		403031,
@@ -72986,3 +73197,5 @@ pg.ship_skin_template = {
 		999010
 	}
 }
+
+return

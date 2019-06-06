@@ -1,10 +1,10 @@
 slot0 = class("BillboardScene", import("..base.BaseUI"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "BillboardUI"
 end
 
-function slot0.updateRankList(slot0, slot1, slot2, slot3, slot4)
+slot0.updateRankList = function (slot0, slot1, slot2, slot3, slot4)
 	if not slot0.rankVOs then
 		slot0.rankVOs = {}
 	end
@@ -26,7 +26,7 @@ function slot0.updateRankList(slot0, slot1, slot2, slot3, slot4)
 	slot0.playerRankVOs[slot1] = slot3
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.blurPanel = slot0:findTF("blur_panel")
 	slot0.rankRect = slot0:findTF("main/frame/ranks"):GetComponent("LScrollRect")
 	slot0.playerRankTF = slot0:findTF("main/frame/player_rank")
@@ -54,8 +54,10 @@ function slot0.init(slot0)
 	if #_.filter(getProxy(ActivityProxy):getActivitiesByType(ActivityConst.ACTIVITY_TYPE_PT_RANK), function (slot0)
 		return not slot0:isEnd() and tonumber(slot0:getConfig("config_data")) > 0
 	end) > 1 then
+		slot2 = slot0.toggles[3]
+
 		for slot6, slot7 in pairs(slot1) do
-			slot0.ptToggles[slot7.id] = cloneTplTo(slot0.toggles[3], slot0.toggles[3].parent)
+			slot0.ptToggles[slot7.id] = cloneTplTo(slot2, slot2.parent)
 		end
 
 		slot0.toggles[3] = nil
@@ -65,7 +67,7 @@ function slot0.init(slot0)
 
 	slot0.rankRect.decelerationRate = 0.07
 
-	if (slot0.contextData.page or 1) == PowerRank.TYPE_EXTRA_CHAPTER then
+	if (slot0.contextData.page or PowerRank.TYPE_POWER) == PowerRank.TYPE_EXTRA_CHAPTER then
 		setActive(slot0.leftPanel, false)
 		setAnchoredPosition(slot0.mainPanel, Vector3(0, -35.5, 0))
 		setImageSprite(slot0.extraChapterBg, GetSpriteFromAtlas("commonbg/bg_fengshan", ""))
@@ -74,29 +76,11 @@ function slot0.init(slot0)
 	setActive(slot0.extraChapterBg, slot2 == PowerRank.TYPE_EXTRA_CHAPTER)
 end
 
-function slot0.updateToggles(slot0)
+slot0.updateToggles = function (slot0)
 	for slot4, slot5 in pairs(slot0.toggles) do
 		slot6 = nil
 
-		if slot4 == PowerRank.TYPE_POWER then
-			slot6 = true
-		elseif slot4 == PowerRank.TYPE_COLLECTION then
-			slot6 = true
-		elseif slot4 == PowerRank.TYPE_PT then
-			slot6 = getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_PT_RANK) and not slot7:isEnd()
-		elseif slot4 == PowerRank.TYPE_PLEDGE then
-			slot6 = getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_CHALLENGE_RANK) and not slot7:isEnd()
-		elseif slot4 == PowerRank.TYPE_CHALLENGE then
-			slot6 = false
-		elseif slot4 == PowerRank.TYPE_EXTRA_CHAPTER then
-			slot6 = getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_EXTRA_CHAPTER_RANK) and not slot7:isEnd()
-		elseif slot4 == PowerRank.TYPE_ACT_BOSS_BATTLE then
-			slot6 = getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE) and not slot7:isEnd()
-		elseif slot4 == PowerRank.TYPE_MILITARY_RANK then
-			slot6 = true
-		end
-
-		setActive(slot5, slot6)
+		setActive(slot5, (not PowerRank.typeInfo[slot4].act_type or PowerRank:getActivityByRankType(slot4)) and slot4 ~= PowerRank.TYPE_PLEDGE)
 	end
 
 	for slot4, slot5 in pairs(slot0.ptToggles) do
@@ -110,15 +94,15 @@ function slot0.updateToggles(slot0)
 	slot0.toggleScrollRect:GetComponent(typeof(ScrollRect)).enabled = slot0.toggleScrollRect.rect.height < slot0.toggleContainer.rect.height
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	onButton(slot0, slot0:findTF("back_btn", slot0.topPanel), function ()
-		uv0:emit(uv1.ON_BACK)
+		slot0:emit(slot1.ON_BACK)
 	end, SFX_CANCEL)
 
 	for slot4, slot5 in pairs(slot0.toggles) do
 		onToggle(slot0, slot5, function (slot0)
 			if slot0 then
-				uv1:switchPage(uv0, PowerRank:getActivityIdByRankType(uv0))
+				slot1:switchPage(slot0, checkExist(PowerRank:getActivityByRankType(slot0), "id"))
 			end
 		end, SFX_PANEL)
 	end
@@ -126,37 +110,37 @@ function slot0.didEnter(slot0)
 	for slot4, slot5 in pairs(slot0.ptToggles) do
 		onToggle(slot0, slot5, function (slot0)
 			if slot0 then
-				uv0:switchPage(PowerRank.TYPE_PT, uv1)
+				slot0:switchPage(PowerRank.TYPE_PT, slot0.switchPage)
 			end
 		end, SFX_PANEL)
 	end
 
 	slot0.cards = {}
 
-	function slot0.rankRect.onInitItem(slot0)
-		uv0:onInintItem(slot0)
+	slot0.rankRect.onInitItem = function (slot0)
+		slot0:onInintItem(slot0)
 	end
 
-	function slot0.rankRect.onUpdateItem(slot0, slot1)
-		uv0:onUpdateItem(slot0, slot1)
+	slot0.rankRect.onUpdateItem = function (slot0, slot1)
+		slot0:onUpdateItem(slot0, slot1)
 	end
 
 	slot0.playerCard = RankCard.New(slot0.playerRankTF, RankCard.TYPE_SELF)
 
-	triggerToggle(slot0.toggles[slot0.contextData.page or 1], true)
+	triggerToggle(slot0.toggles[slot0.contextData.page or PowerRank.TYPE_POWER], true)
 end
 
-function slot0.onInintItem(slot0, slot1)
+slot0.onInintItem = function (slot0, slot1)
 	onButton(slot0, RankCard.New(slot1, RankCard.TYPE_OTHER)._tf, function ()
-		if uv0.rankVO.type == PowerRank.TYPE_MILITARY_RANK then
-			uv1:emit(BillboardMediator.OPEN_RIVAL_INFO, uv0.rankVO.id)
+		if slot0.rankVO.type == PowerRank.TYPE_MILITARY_RANK then
+			slot1:emit(BillboardMediator.OPEN_RIVAL_INFO, slot0.rankVO.id)
 		end
 	end)
 
 	slot0.cards[slot1] = RankCard.New(slot1, RankCard.TYPE_OTHER)
 end
 
-function slot0.onUpdateItem(slot0, slot1, slot2)
+slot0.onUpdateItem = function (slot0, slot1, slot2)
 	if not slot0.cards[slot2] then
 		slot0:onInintItem(slot2)
 
@@ -166,15 +150,16 @@ function slot0.onUpdateItem(slot0, slot1, slot2)
 	slot3:update(slot0.displayRankVOs[slot1 + 1])
 end
 
-function slot0.filter(slot0, slot1, slot2)
+slot0.filter = function (slot0, slot1, slot2)
 	if slot1 ~= slot0.page then
 		return
 	end
 
 	slot4 = nil
+	slot4 = (PowerRank.TYPE_PT ~= slot1 or slot0.ptRanks[slot2]) and slot0.rankVOs[slot0.page]
 	slot0.displayRankVOs = {}
 
-	for slot8, slot9 in ipairs((PowerRank.TYPE_PT ~= slot1 or slot0.ptRanks[slot2]) and slot0.rankVOs[slot0.page]) do
+	for slot8, slot9 in ipairs(slot4) do
 		table.insert(slot0.displayRankVOs, slot9)
 	end
 
@@ -182,7 +167,7 @@ function slot0.filter(slot0, slot1, slot2)
 	slot0.playerCard:update(slot0.playerRankVOs[slot0.page])
 end
 
-function slot0.switchPage(slot0, slot1, slot2)
+slot0.switchPage = function (slot0, slot1, slot2)
 	if slot0.page == slot1 and slot1 ~= PowerRank.TYPE_PT then
 		return
 	end
@@ -202,13 +187,16 @@ function slot0.switchPage(slot0, slot1, slot2)
 	slot0:updateScoreTitle(slot0.page)
 end
 
-function slot0.updateScoreTitle(slot0, slot1)
+slot0.updateScoreTitle = function (slot0, slot1)
+	slot2 = slot0:findTF("main/frame/title")
+	slot3 = PowerRank:getTitleWord(slot1)
+
 	for slot7 = 1, 4, 1 do
-		setText(slot0:findTF("main/frame/title"):GetChild(slot7 - 1), PowerRank:getTitleWord(slot1)[slot7])
+		setText(slot2:GetChild(slot7 - 1), slot3[slot7])
 	end
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	for slot4, slot5 in ipairs(slot0.cards) do
 		slot5:dispose()
 	end
