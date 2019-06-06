@@ -1,6 +1,6 @@
 slot0 = class("ChapterAIAction", import(".BaseVO"))
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.line = {
 		row = slot1.ai_pos.row,
 		column = slot1.ai_pos.column
@@ -30,12 +30,12 @@ function slot0.Ctor(slot0, slot1)
 
 	_.each(slot1.map_update, function (slot0)
 		if slot0.item_type ~= ChapterConst.AttachNone and slot0.item_type ~= ChapterConst.AttachBorn and slot0.item_type ~= ChapterConst.AttachBorn_Sub and (slot0.item_type ~= ChapterConst.AttachStory or slot0.item_data ~= ChapterConst.StoryTrigger) then
-			table.insert(uv0.cellUpdates, slot0.item_type == ChapterConst.AttachChampion and ChapterChampion.New(slot0) or ChapterCell.New(slot0))
+			table.insert(slot0.cellUpdates, (slot0.item_type == ChapterConst.AttachChampion and ChapterChampion.New(slot0)) or ChapterCell.New(slot0))
 		end
 	end)
 end
 
-function slot0.applyTo(slot0, slot1, slot2)
+slot0.applyTo = function (slot0, slot1, slot2)
 	if slot1:getChampion(slot0.line.row, slot0.line.column) then
 		return slot0:applyToChampion(slot1, slot3, slot2)
 	end
@@ -47,7 +47,7 @@ function slot0.applyTo(slot0, slot1, slot2)
 	return false, "can not find any object at: [" .. slot0.line.row .. ", " .. slot0.line.column .. "]"
 end
 
-function slot0.applyToChampion(slot0, slot1, slot2, slot3)
+slot0.applyToChampion = function (slot0, slot1, slot2, slot3)
 	if slot2.flag == 1 then
 		return false, "can not apply ai to dead champion at: [" .. slot0.line.row .. ", " .. slot0.line.column .. "]"
 	end
@@ -60,7 +60,7 @@ function slot0.applyToChampion(slot0, slot1, slot2, slot3)
 		end
 	elseif #slot0.movePath > 0 then
 		if _.any(slot0.movePath, function (slot0)
-			return not uv0:getChapterCell(slot0.row, slot0.column) or not slot1.walkable
+			return not slot0:getChapterCell(slot0.row, slot0.column) or not slot1.walkable
 		end) then
 			return false, "invalide move path"
 		end
@@ -68,9 +68,10 @@ function slot0.applyToChampion(slot0, slot1, slot2, slot3)
 		if not slot3 then
 			slot2.row = slot0.movePath[#slot0.movePath].row
 			slot2.column = slot0.movePath[#slot0.movePath].column
+			slot4 = bit.bor(slot4, ChapterConst.DirtyChampion)
 
 			if slot1:existFleet(FleetType.Submarine, slot2.row, slot2.column) then
-				slot4 = bit.bor(bit.bor(slot4, ChapterConst.DirtyChampion), ChapterConst.DirtyFleet)
+				slot4 = bit.bor(slot4, ChapterConst.DirtyFleet)
 			end
 		end
 	end
@@ -78,7 +79,7 @@ function slot0.applyToChampion(slot0, slot1, slot2, slot3)
 	return true, slot4
 end
 
-function slot0.applyToCoastalGun(slot0, slot1, slot2, slot3)
+slot0.applyToCoastalGun = function (slot0, slot1, slot2, slot3)
 	if slot2.flag == 1 then
 		return false, "can not apply ai to dead coastalgun at: [" .. slot0.line.row .. ", " .. slot0.line.column .. "]"
 	end
@@ -91,24 +92,46 @@ function slot0.applyToCoastalGun(slot0, slot1, slot2, slot3)
 
 	if not slot3 then
 		slot5:increaseSlowSpeedFactor()
+
+		slot4 = bit.bor(slot4, ChapterConst.DirtyFleet)
+
 		_.each(slot0.cellUpdates, function (slot0)
 			if isa(slot0, ChapterChampion) then
-				uv0:mergeChampion(slot0)
+				slot0:mergeChampion(slot0)
 
-				uv1 = bit.bor(uv1, ChapterConst.DirtyChampion)
+				slot1 = bit.bor(bit.bor, ChapterConst.DirtyChampion)
 			else
-				uv0:mergeChapterCell(slot0)
+				slot0:mergeChapterCell(slot0)
 
-				uv1 = bit.bor(uv1, ChapterConst.DirtyAttachment)
+				slot1 = bit.bor(bit.bor, ChapterConst.DirtyAttachment)
 			end
 		end)
 
 		if #slot0.cellUpdates > 0 then
-			slot4 = bit.bor(bit.bor(slot4, ChapterConst.DirtyFleet), ChapterConst.DirtyAutoAction)
+			slot4 = bit.bor(slot4, ChapterConst.DirtyAutoAction)
 		end
 	end
 
 	return true, slot4
+end
+
+slot0.PlayAIAction = function (slot0, slot1, slot2, slot3)
+	if slot1:getChampionIndex(slot0.line.row, slot0.line.column) then
+		if #slot0.movePath > 0 then
+			slot2.viewComponent.grid:moveChampion(slot4, slot0.movePath, Clone(slot0.movePath), slot3)
+		else
+			slot3()
+		end
+
+		return
+	end
+
+	if slot1:getChapterCell(slot0.line.row, slot0.line.column) and slot5.attachment == ChapterConst.AttachLandbase and pg.land_based_template[slot5.attachmentId].type == ChapterConst.LBCoastalGun then
+		slot2.viewComponent:doPlayAnim("coastalgun", function (slot0)
+			setActive(slot0, false)
+			slot0.viewComponent:easeMoveDown(slot2.viewComponent.grid.cellFleets[slot0:getFleetIndex(FleetType.Normal, slot1.stgTarget.row, slot1.stgTarget.column)].tf.position, slot0.viewComponent)
+		end)
+	end
 end
 
 return slot0

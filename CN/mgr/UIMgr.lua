@@ -4,7 +4,7 @@ pg.UIMgr._loadPanel = nil
 pg.UIMgr.CameraLevel = 1
 pg.UIMgr.CameraOverlay = 2
 
-function pg.UIMgr.Init(slot0, slot1)
+pg.UIMgr.Init = function (slot0, slot1)
 	print("initializing ui manager...")
 
 	slot2 = GameObject.Find("UICamera")
@@ -17,18 +17,18 @@ function pg.UIMgr.Init(slot0, slot1)
 	slot3 = GameObject.Find("LevelCamera")
 	slot4 = GameObject.Find("OverlayCamera")
 	slot0.cameraBlurs = {
-		[uv0.CameraLevel] = {
+		[slot0.CameraLevel] = {
 			slot3:GetComponent("BlurOptimized"),
 			slot3:GetComponent("UIStaticBlur")
 		},
-		[uv0.CameraOverlay] = {
+		[slot0.CameraOverlay] = {
 			slot4:GetComponent("BlurOptimized"),
 			slot4:GetComponent("UIStaticBlur")
 		}
 	}
 	slot0.cameraBlurCounters = {
-		[uv0.CameraLevel] = 0,
-		[uv0.CameraOverlay] = 0
+		[slot0.CameraLevel] = 0,
+		[slot0.CameraOverlay] = 0
 	}
 	slot0._debugPanel = DebugPanel.New()
 
@@ -36,65 +36,69 @@ function pg.UIMgr.Init(slot0, slot1)
 	seriesAsync({
 		function (slot0)
 			ResourceMgr.Inst:loadAssetBundleAsync("ui/commonui_atlas", function (slot0)
-				uv0._common_ui_bundle = slot0
+				slot0._common_ui_bundle = slot0
 
-				uv1()
+				slot0()
 			end)
 		end,
 		function (slot0)
 			ResourceMgr.Inst:loadAssetBundleAsync("skinicon", function (slot0)
-				uv0._skinicon_bundle = slot0
+				slot0._skinicon_bundle = slot0
 
-				uv1()
+				slot0()
 			end)
 		end,
 		function (slot0)
 			ResourceMgr.Inst:loadAssetBundleAsync("attricon", function (slot0)
-				uv0._attricon_bundle = slot0
+				slot0._attricon_bundle = slot0
 
-				uv1()
+				slot0()
 			end)
 		end,
 		function (slot0)
-			uv0:SetActive(true)
+			slot0:SetActive(true)
 
-			uv1._loadPanel = LoadingPanel.New(slot0)
+			slot0.SetActive._loadPanel = LoadingPanel.New(slot0)
 		end,
 		function (slot0)
 			PoolMgr.GetInstance():GetUI("ClickEffect", true, function (slot0)
-				setParent(slot0, uv0.OverlayEffect)
-				SetActive(uv0.OverlayEffect, true)
-				uv1()
+				setParent(slot0, slot0.OverlayEffect)
+				SetActive(slot0.OverlayEffect, 
+				-- Decompilation error in this vicinity:
+				PlayerPrefs.GetInt(SHOW_TOUCH_EFFECT, 1) > 0)
+
+				-- Decompilation error in this vicinity:
+				PlayerPrefs.GetInt(SHOW_TOUCH_EFFECT, 1) > 0()
 			end)
 		end
 	}, slot1)
 end
 
-function pg.UIMgr.Loading(slot0, slot1)
+pg.UIMgr.Loading = function (slot0, slot1)
 	slot0._loadPanel:appendInfo(slot1)
 end
 
-function pg.UIMgr.LoadingOn(slot0, slot1)
+pg.UIMgr.LoadingOn = function (slot0, slot1)
 	slot0._loadPanel:on(slot1)
 end
 
-function pg.UIMgr.displayLoadingBG(slot0, slot1)
+pg.UIMgr.displayLoadingBG = function (slot0, slot1)
 	slot0._loadPanel:displayBG(slot1)
 end
 
-function pg.UIMgr.LoadingOff(slot0)
+pg.UIMgr.LoadingOff = function (slot0)
 	slot0._loadPanel:off()
 end
 
-function pg.UIMgr.OnLoading(slot0)
+pg.UIMgr.OnLoading = function (slot0)
 	return slot0._loadPanel:onLoading()
 end
 
-function pg.UIMgr.LoadingRetainCount(slot0)
+pg.UIMgr.LoadingRetainCount = function (slot0)
 	return slot0._loadPanel:getRetainCount()
 end
 
-function pg.UIMgr.AddDebugButton(slot0, slot1, slot2)
+pg.UIMgr.AddDebugButton = function (slot0, slot1, slot2)
 	slot0._debugPanel:addCustomBtn(slot1, slot2)
 end
 
@@ -110,7 +114,7 @@ pg.UIMgr._normalColor = Color(255, 255, 255, 1)
 pg.UIMgr._darkColor = Color(255, 255, 255, 0.5)
 pg.UIMgr._firstPos = Vector3.zero
 
-function pg.UIMgr.AttachStickOb(slot0, slot1)
+pg.UIMgr.AttachStickOb = function (slot0, slot1)
 	slot0.hrz = 0
 	slot0.vtc = 0
 	slot0.fingerId = -1
@@ -122,7 +126,7 @@ function pg.UIMgr.AttachStickOb(slot0, slot1)
 	slot0._stickCom.StickBorderRate = 1
 
 	slot0._stickCom:SetStickFunc(function (slot0, slot1)
-		uv0:UpdateStick(slot0, slot1)
+		slot0:UpdateStick(slot0, slot1)
 	end)
 
 	slot0._firstPos = slot2.localPosition
@@ -131,24 +135,24 @@ function pg.UIMgr.AttachStickOb(slot0, slot1)
 	slot0:SetActive(true)
 end
 
-function pg.UIMgr.SetActive(slot0, slot1)
+pg.UIMgr.SetActive = function (slot0, slot1)
 	slot0._stickActive = slot1
 end
 
-function pg.UIMgr.Marching(slot0)
+pg.UIMgr.Marching = function (slot0)
 	slot1 = ys.Battle.BattleConfig
 
 	LeanTween.value(go(slot0._stick), 0, 0.625, 1.8):setOnUpdate(System.Action_float(function (slot0)
-		uv0.hrz = uv1.START_SPEED_CONST_B * (slot0 - uv1.START_SPEED_CONST_A) * (slot0 - uv1.START_SPEED_CONST_A)
+		slot0.hrz = slot1.START_SPEED_CONST_B * (slot0 - slot1.START_SPEED_CONST_A) * (slot0 - slot1.START_SPEED_CONST_A)
 	end)):setOnComplete(System.Action(function ()
-		uv0.hrz = 0
+		slot0.hrz = 0
 	end))
 end
 
-function pg.UIMgr.UpdateStick(slot0, slot1, slot2)
+pg.UIMgr.UpdateStick = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-66, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if not slot0._stickActive then
 
 		-- Decompilation error in this vicinity:
@@ -160,6 +164,14 @@ function pg.UIMgr.UpdateStick(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-6, warpins: 2 ---
 	if slot2 == -2 then
 
 		-- Decompilation error in this vicinity:
@@ -193,12 +205,20 @@ function pg.UIMgr.UpdateStick(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 24-32, warpins: 3 ---
 	slot1.z = 0
 
 	if slot0._maxbianjieSqr < slot1.SqrMagnitude(slot3) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 33-53, warpins: 1 ---
+		--- BLOCK #0 33-43, warpins: 1 ---
 		if slot1 - slot3 / math.sqrt(slot4) * slot0._maxbianjie ~= slot0._firstPos then
 
 			-- Decompilation error in this vicinity:
@@ -210,10 +230,18 @@ function pg.UIMgr.UpdateStick(slot0, slot1, slot2)
 
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 45-53, warpins: 2 ---
 		slot0._stick.localPosition = slot5
 
 		slot0:SetOutput(slot3.x, slot3.y, slot2)
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
 
 
@@ -230,17 +258,25 @@ function pg.UIMgr.UpdateStick(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 66-66, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-function pg.UIMgr.SetOutput(slot0, slot1, slot2, slot3)
+pg.UIMgr.SetOutput = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-36, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.hrz = slot1
 	slot0.vtc = slot2
 
@@ -252,8 +288,8 @@ function pg.UIMgr.SetOutput(slot0, slot1, slot2, slot3)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 10-18, warpins: 1 ---
-			slot0._areaImg.color = uv0._normalColor
-			slot0._stickImg.color = uv0._normalColor
+			slot0._areaImg.color = slot0._normalColor
+			slot0._stickImg.color = slot0._normalColor
 			--- END OF BLOCK #0 ---
 
 
@@ -266,36 +302,52 @@ function pg.UIMgr.SetOutput(slot0, slot1, slot2, slot3)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 19-34, warpins: 1 ---
+		--- BLOCK #0 19-22, warpins: 1 ---
 		if slot0.fingerId >= 0 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 23-30, warpins: 1 ---
-			slot0._areaImg.color = uv0._darkColor
-			slot0._stickImg.color = uv0._darkColor
+			slot0._areaImg.color = slot0._darkColor
+			slot0._stickImg.color = slot0._darkColor
 			--- END OF BLOCK #0 ---
 
 
 
 		end
 
-		slot0._stick.localPosition = Vector3.zero
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 31-34, warpins: 2 ---
+		slot0._stick.localPosition = Vector3.zero
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 35-36, warpins: 3 ---
 	slot0.fingerId = slot3
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function pg.UIMgr.ClearStick(slot0)
+pg.UIMgr.ClearStick = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-17, warpins: 1 ---
@@ -321,39 +373,55 @@ slot4 = nil
 slot5 = {}
 slot6 = false
 
-function pg.UIMgr.OverlayPanel(slot0, slot1, slot2)
+pg.UIMgr.OverlayPanel = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 4-17, warpins: 2 ---
+	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 or {}.globalBlur = false
 
-	uv0.LayerWeightMgr.GetInstance():Add2Overlay(LayerWeightConst.UI_TYPE_SUB, slot1, slot2 or )
+	slot0.LayerWeightMgr.GetInstance():Add2Overlay(LayerWeightConst.UI_TYPE_SUB, slot1, slot2 or )
 
 	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 4-17, warpins: 2 ---
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function pg.UIMgr.UnOverlayPanel(slot0, slot1, slot2)
+pg.UIMgr.UnOverlayPanel = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 11-12, warpins: 2 ---
-	uv0.LayerWeightMgr.GetInstance():DelFromOverlay(slot1, slot2 or slot0.UIMain)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot0.LayerWeightMgr.GetInstance():DelFromOverlay(slot1, slot2 or slot0.UIMain)
 
 	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 11-12, warpins: 2 ---
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function pg.UIMgr.BlurPanel(slot0, slot1, slot2, slot3)
+pg.UIMgr.BlurPanel = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-59, warpins: 1 ---
-	if uv0[slot1] then
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if slot0[slot1] then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 5-5, warpins: 1 ---
@@ -364,8 +432,16 @@ function pg.UIMgr.BlurPanel(slot0, slot1, slot2, slot3)
 
 	end
 
-	uv0[slot1] = true
-	uv1 = uv1 + 1
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 6-13, warpins: 2 ---
+	slot0[slot1] = true
+	slot1 = slot1 + 1
 
 	if slot2 then
 
@@ -402,23 +478,39 @@ function pg.UIMgr.BlurPanel(slot0, slot1, slot2, slot3)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 40-41, warpins: 3 ---
 	slot3 or {}.globalBlur = true
 
-	uv2.LayerWeightMgr.GetInstance():Add2Overlay(LayerWeightConst.UI_TYPE_SUB, slot1, slot3 or )
+	slot2.LayerWeightMgr.GetInstance():Add2Overlay(LayerWeightConst.UI_TYPE_SUB, slot1, slot3 or )
 	slot0:UpdatePBEnable()
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 43-59, warpins: 2 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-function pg.UIMgr.UnblurPanel(slot0, slot1, slot2)
+pg.UIMgr.UnblurPanel = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-35, warpins: 1 ---
-	if not uv0[slot1] then
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if not slot0[slot1] then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 5-5, warpins: 1 ---
@@ -429,10 +521,17 @@ function pg.UIMgr.UnblurPanel(slot0, slot1, slot2)
 
 	end
 
-	uv0[slot1] = nil
-	uv1 = uv1 - 1
+	--- END OF BLOCK #0 ---
 
-	if uv1 == 0 then
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 6-14, warpins: 2 ---
+	slot0[slot1] = nil
+
+	if slot1 - 1 == 0 then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 15-20, warpins: 1 ---
@@ -444,39 +543,62 @@ function pg.UIMgr.UnblurPanel(slot0, slot1, slot2)
 
 	end
 
-	uv2.LayerWeightMgr.GetInstance():DelFromOverlay(slot1, slot2 or slot0.UIMain)
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 21-29, warpins: 2 ---
+	slot2.LayerWeightMgr.GetInstance():DelFromOverlay(slot1, slot2 or slot0.UIMain)
 	slot0:UpdatePBEnable()
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 31-35, warpins: 2 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-function pg.UIMgr.OverlayPanelPB(slot0, slot1, slot2)
+pg.UIMgr.OverlayPanelPB = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 4-17, warpins: 2 ---
+	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 or {}.globalBlur = false
 
-	uv0.LayerWeightMgr.GetInstance():Add2Overlay(LayerWeightConst.UI_TYPE_SUB, slot1, slot2 or )
+	slot0.LayerWeightMgr.GetInstance():Add2Overlay(LayerWeightConst.UI_TYPE_SUB, slot1, slot2 or )
 
 	return
 	--- END OF BLOCK #0 ---
 
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 4-17, warpins: 2 ---
+	--- END OF BLOCK #1 ---
+
 
 
 end
 
-function pg.UIMgr.PartialBlurTfs(slot0, slot1)
+pg.UIMgr.PartialBlurTfs = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-6, warpins: 1 ---
-	uv0 = true
-	uv1 = slot1
+	slot1 = slot1
 
-	slot0:UpdatePBEnable()
+	true:UpdatePBEnable()
 
 	return
 	--- END OF BLOCK #0 ---
@@ -485,14 +607,13 @@ function pg.UIMgr.PartialBlurTfs(slot0, slot1)
 
 end
 
-function pg.UIMgr.ShutdownPartialBlur(slot0)
+pg.UIMgr.ShutdownPartialBlur = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-7, warpins: 1 ---
-	uv0 = false
-	uv1 = {}
+	slot1 = {}
 
-	slot0:UpdatePBEnable()
+	false:UpdatePBEnable()
 
 	return
 	--- END OF BLOCK #0 ---
@@ -501,33 +622,65 @@ function pg.UIMgr.ShutdownPartialBlur(slot0)
 
 end
 
-function pg.UIMgr.RevertPBMaterial(slot0, slot1)
+pg.UIMgr.RevertPBMaterial = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-27, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-26, warpins: 0 ---
 	for slot5, slot6 in ipairs(slot1) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 24-26, warpins: 2 ---
-		slot6:GetComponent(typeof(Image)).material = enabled and Material.New(Shader.Find("UI/Default")) or nil
+		--- BLOCK #0 5-13, warpins: 1 ---
+		slot6:GetComponent(typeof(Image)).material = (enabled and Material.New(Shader.Find("UI/Default"))) or nil
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 24-24, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 25-26, warpins: 2 ---
+		--- END OF BLOCK #2 ---
 
 
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 27-27, warpins: 1 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-function pg.UIMgr.UpdatePBEnable(slot0)
+pg.UIMgr.UpdatePBEnable = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 10-82, warpins: 3 ---
-	if uv0 and uv1 == 0 then
+	--- BLOCK #0 10-11, warpins: 3 ---
+	if slot0 and slot1 == 0 then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 12-23, warpins: 1 ---
@@ -541,37 +694,93 @@ function pg.UIMgr.UpdatePBEnable(slot0)
 
 	end
 
-	if not IsNil(uv2) then
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 24-28, warpins: 2 ---
+	if not IsNil(IsNil) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 48-48, warpins: 2 ---
-		uv2:GetComponent(typeof(Image)).material = slot1 and Material.New(Shader.Find("UI/PartialBlur")) or nil
+		--- BLOCK #0 29-37, warpins: 1 ---
+		slot2:GetComponent(typeof(Image)).material = (slot1 and Material.New(Shader.Find("UI/PartialBlur"))) or nil
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 48-48, warpins: 2 ---
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	if uv3 ~= nil then
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 49-51, warpins: 2 ---
+	if slot3 ~= nil then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 52-76, warpins: 1 ---
-		for slot5, slot6 in ipairs(uv3) do
+		--- BLOCK #0 52-55, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 56-76, warpins: 0 ---
+		for slot5, slot6 in ipairs(slot3) do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 74-76, warpins: 2 ---
-			slot6:GetComponent(typeof(Image)).material = slot1 and Material.New(Shader.Find("UI/PartialBlur")) or nil
+			--- BLOCK #0 56-63, warpins: 1 ---
+			slot6:GetComponent(typeof(Image)).material = (slot1 and Material.New(Shader.Find("UI/PartialBlur"))) or nil
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 74-74, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 75-76, warpins: 2 ---
+			--- END OF BLOCK #2 ---
 
 
 
 		end
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 77-78, warpins: 2 ---
 	if not slot1 then
 
 		-- Decompilation error in this vicinity:
@@ -583,25 +792,35 @@ function pg.UIMgr.UpdatePBEnable(slot0)
 
 	end
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 82-82, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-function pg.UIMgr.BlurCamera(slot0, slot1, slot2)
+pg.UIMgr.BlurCamera = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-32, warpins: 1 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot3 = slot0.cameraBlurs[slot1][1]
+	slot4 = slot0.cameraBlurs[slot1][2]
 	slot0.cameraBlurCounters[slot1] = slot0.cameraBlurCounters[slot1] + 1
 
 	if slot2 then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 14-18, warpins: 1 ---
-		slot0.cameraBlurs[slot1][1].enabled = false
-		slot0.cameraBlurs[slot1][2].enabled = true
+		slot3.enabled = false
+		slot4.enabled = true
 		--- END OF BLOCK #0 ---
 
 
@@ -631,17 +850,25 @@ function pg.UIMgr.BlurCamera(slot0, slot1, slot2)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 32-32, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function pg.UIMgr.UnblurCamera(slot0, slot1, slot2)
+pg.UIMgr.UnblurCamera = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 4-36, warpins: 2 ---
+	--- BLOCK #0 4-6, warpins: 2 ---
 	if (slot2 or 1) <= 0 then
 
 		-- Decompilation error in this vicinity:
@@ -653,6 +880,14 @@ function pg.UIMgr.UnblurCamera(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 9-25, warpins: 2 ---
 	slot0.cameraBlurCounters[slot1] = slot0.cameraBlurCounters[slot1] - slot2
 	slot0.cameraBlurCounters[slot1] = math.max(slot0.cameraBlurCounters[slot1], 0)
 
@@ -668,9 +903,19 @@ function pg.UIMgr.UnblurCamera(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 36-36, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
+
+return

@@ -1,6 +1,6 @@
 slot0 = class("EquipmentInfoLayer", import("..base.BaseUI"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "EquipmentInfoUI"
 end
 
@@ -27,7 +27,7 @@ slot0.pos = {
 	}
 }
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.toggles = {}
 
 	for slot5, slot6 in ipairs(slot1) do
@@ -44,27 +44,27 @@ function slot0.init(slot0)
 	setActive(slot0.sample, false)
 end
 
-function slot0.setEquipment(slot0, slot1)
+slot0.setEquipment = function (slot0, slot1)
 	slot0.equipmentVO = slot1
 end
 
-function slot0.setShip(slot0, slot1, slot2)
+slot0.setShip = function (slot0, slot1, slot2)
 	slot0.shipVO = slot1
 	slot0.oldShipVO = slot2
 end
 
-function slot0.setPlayer(slot0, slot1)
+slot0.setPlayer = function (slot0, slot1)
 	slot0.player = slot1
 end
 
-function slot0.setRevertItem(slot0, slot1)
+slot0.setRevertItem = function (slot0, slot1)
 	slot0.revertItemVO = slot1 or Item.New({
 		count = 0,
 		id = Item.REVERT_EQUIPMENT_ID
 	})
 end
 
-function slot0.checkOverGold(slot0, slot1)
+slot0.checkOverGold = function (slot0, slot1)
 	if slot0.player:GoldMax(_.detect(slot1, function (slot0)
 		return slot0.type == DROP_TYPE_RESOURCE and slot0.id == 1
 	end).count or 0) then
@@ -76,7 +76,7 @@ function slot0.checkOverGold(slot0, slot1)
 	return true
 end
 
-function slot0.setDestroyCount(slot0, slot1)
+slot0.setDestroyCount = function (slot0, slot1)
 	if slot0.destroyCount ~= math.clamp(slot1, 1, slot0.equipmentVO.count) then
 		slot0.destroyCount = slot1
 
@@ -84,18 +84,18 @@ function slot0.setDestroyCount(slot0, slot1)
 	end
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot1 = defaultValue(slot0.contextData.type, EquipmentInfoMediator.TYPE_DEFAULT)
 	slot0.isShowUnique = table.contains(EquipmentInfoMediator.SHOW_UNIQUE, slot1)
 
 	onButton(slot0, slot0._tf, function ()
-		if isActive(uv0.destroyPanel) then
-			triggerToggle(uv0.toggles.defaultPanel, true)
+		if isActive(slot0.destroyPanel) then
+			triggerToggle(slot0.toggles.defaultPanel, true)
 
 			return
 		end
 
-		uv0:emit(uv1.ON_CLOSE)
+		slot0:emit(slot1.ON_CLOSE)
 	end, SOUND_BACK)
 	slot0:initAndSetBtn(slot1)
 
@@ -114,9 +114,9 @@ function slot0.didEnter(slot0)
 	})
 end
 
-function slot0.initAndSetBtn(slot0, slot1)
+slot0.initAndSetBtn = function (slot0, slot1)
 	if slot1 == EquipmentInfoMediator.TYPE_DEFAULT or slot1 == EquipmentInfoMediator.TYPE_SHIP then
-		slot0.defaultEquipTF = slot0:findTF("equipment", slot0.defaultPanel) or slot0:cloneSampleTo(slot0.defaultPanel, uv0.Middle, "equipment")
+		slot0.defaultEquipTF = slot0:findTF("equipment", slot0.defaultPanel) or slot0:cloneSampleTo(slot0.defaultPanel, slot0.Middle, "equipment")
 		slot0.defaultReplaceBtn = slot0:findTF("actions/action_button_3", slot0.defaultPanel)
 		slot0.defaultDestroyBtn = slot0:findTF("actions/action_button_1", slot0.defaultPanel)
 		slot0.defaultEnhanceBtn = slot0:findTF("actions/action_button_2", slot0.defaultPanel)
@@ -124,7 +124,7 @@ function slot0.initAndSetBtn(slot0, slot1)
 		slot0.defaultRevertBtn = slot0:findTF("info/equip/revert_btn", slot0.defaultEquipTF)
 
 		onButton(slot0, slot0.defaultReplaceBtn, function ()
-			slot0, slot1 = Ship.canModifyShip(uv0.shipVO)
+			slot0, slot1 = Ship.canModifyShip(slot0.shipVO)
 
 			if not slot0 then
 				pg.TipsMgr:GetInstance():ShowTips(slot1)
@@ -132,11 +132,11 @@ function slot0.initAndSetBtn(slot0, slot1)
 				return
 			end
 
-			uv0:emit(EquipmentInfoMediator.ON_CHANGE)
+			slot0:emit(EquipmentInfoMediator.ON_CHANGE)
 		end, SFX_PANEL)
 		onButton(slot0, slot0.defaultEnhanceBtn, function ()
-			if uv0.shipVO then
-				slot0, slot1 = Ship.canModifyShip(uv0.shipVO)
+			if slot0.shipVO then
+				slot0, slot1 = Ship.canModifyShip(slot0.shipVO)
 
 				if not slot0 then
 					pg.TipsMgr:GetInstance():ShowTips(slot1)
@@ -145,10 +145,10 @@ function slot0.initAndSetBtn(slot0, slot1)
 				end
 			end
 
-			uv0:emit(EquipmentInfoMediator.ON_INTENSIFY)
+			slot0:emit(EquipmentInfoMediator.ON_INTENSIFY)
 		end, SFX_PANEL)
 		onButton(slot0, slot0.defaultUnloadBtn, function ()
-			slot0, slot1 = Ship.canModifyShip(uv0.shipVO)
+			slot0, slot1 = Ship.canModifyShip(slot0.shipVO)
 
 			if not slot0 then
 				pg.TipsMgr:GetInstance():ShowTips(slot1)
@@ -156,47 +156,47 @@ function slot0.initAndSetBtn(slot0, slot1)
 				return
 			end
 
-			uv0:emit(EquipmentInfoMediator.ON_UNEQUIP)
+			slot0:emit(EquipmentInfoMediator.ON_UNEQUIP)
 		end, SFX_UI_DOCKYARD_EQUIPOFF)
 		onButton(slot0, slot0.defaultDestroyBtn, function ()
-			triggerToggle(uv0.toggles.destroyPanel, true)
+			triggerToggle(slot0.toggles.destroyPanel, true)
 
-			if not uv0.initDestroyPanel then
-				uv0:initAndSetBtn(uv1.PANEL_DESTROY)
+			if not triggerToggle.initDestroyPanel then
+				slot0:initAndSetBtn(slot1.PANEL_DESTROY)
 			end
 
-			uv0:updateEquipmentPanel(uv0.destroyEquipTF, uv0.equipmentVO)
+			slot0:updateEquipmentPanel(slot0.destroyEquipTF, slot0.equipmentVO)
 
-			if uv0.equipmentVO.count > 0 then
-				uv0:setDestroyCount(1)
+			if slot0.updateEquipmentPanel.equipmentVO.count > 0 then
+				slot0:setDestroyCount(1)
 			end
 		end, SFX_PANEL)
 		onButton(slot0, slot0.defaultRevertBtn, function ()
-			triggerToggle(uv0.toggles.revertPanel, true)
+			triggerToggle(slot0.toggles.revertPanel, true)
 
-			if not uv0.initRevertPanel then
-				uv0:initAndSetBtn(uv1.PANEL_REVERT)
+			if not triggerToggle.initRevertPanel then
+				slot0:initAndSetBtn(slot1.PANEL_REVERT)
 			end
 
-			uv0:updateRevertPanel()
+			slot0:updateRevertPanel()
 		end, SFX_PANEL)
 	elseif slot1 == EquipmentInfoMediator.TYPE_REPLACE then
-		slot0.replaceSrcEquipTF = slot0:findTF("equipment", slot0.replacePanel) or slot0:cloneSampleTo(slot0.replacePanel, uv0.Left, "equipment")
-		slot0.replaceDstEquipTF = slot0:findTF("equipment_on_ship", slot0.replacePanel) or slot0:cloneSampleTo(slot0.replacePanel, uv0.Right, "equipment_on_ship")
+		slot0.replaceSrcEquipTF = slot0:findTF("equipment", slot0.replacePanel) or slot0:cloneSampleTo(slot0.replacePanel, slot0.Left, "equipment")
+		slot0.replaceDstEquipTF = slot0:findTF("equipment_on_ship", slot0.replacePanel) or slot0:cloneSampleTo(slot0.replacePanel, slot0.Right, "equipment_on_ship")
 		slot0.replaceCancelBtn = slot0:findTF("actions/cancel_button", slot0.replacePanel)
 		slot0.replaceConfirmBtn = slot0:findTF("actions/action_button_2", slot0.replacePanel)
 
 		onButton(slot0, slot0.replaceCancelBtn, function ()
-			if isActive(uv0.destroyPanel) then
-				triggerToggle(uv0.toggles.defaultPanel, true)
+			if isActive(slot0.destroyPanel) then
+				triggerToggle(slot0.toggles.defaultPanel, true)
 
 				return
 			end
 
-			uv0:emit(uv1.ON_CLOSE)
+			slot0:emit(slot1.ON_CLOSE)
 		end, SFX_CANCEL)
 		onButton(slot0, slot0.replaceConfirmBtn, function ()
-			slot0, slot1 = uv0.shipVO:canEquipAtPos(uv0.equipmentVO, uv0.contextData.pos)
+			slot0, slot1 = slot0.shipVO:canEquipAtPos(slot0.equipmentVO, slot0.contextData.pos)
 
 			if not slot0 then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("equipment_equipmentInfoLayer_error_canNotEquip", slot1))
@@ -204,18 +204,18 @@ function slot0.initAndSetBtn(slot0, slot1)
 				return
 			end
 
-			uv0:emit(EquipmentInfoMediator.ON_EQUIP)
+			slot0:emit(EquipmentInfoMediator.ON_EQUIP)
 		end, SFX_UI_DOCKYARD_EQUIPADD)
 	elseif slot1 == EquipmentInfoMediator.TYPE_DISPLAY then
-		slot0.displayEquipTF = slot0:findTF("equipment", slot0.displayPanel) or slot0:cloneSampleTo(slot0.displayPanel, uv0.Middle, "equipment")
+		slot0.displayEquipTF = slot0:findTF("equipment", slot0.displayPanel) or slot0:cloneSampleTo(slot0.displayPanel, slot0.Middle, "equipment")
 		slot0.displayMoveBtn = slot0:findTF("actions/move_button", slot0.displayPanel)
 
 		onButton(slot0, slot0.displayMoveBtn, function ()
-			uv0:emit(EquipmentInfoMediator.ON_MOVE, uv0.shipVO.id)
+			slot0:emit(EquipmentInfoMediator.ON_MOVE, slot0.shipVO.id)
 		end)
-	elseif slot1 == uv0.PANEL_DESTROY then
+	elseif slot1 == slot0.PANEL_DESTROY then
 		slot0.initDestroyPanel = true
-		slot0.destroyEquipTF = slot0:findTF("equipment", slot0.destroyPanel) or slot0:cloneSampleTo(slot0.destroyPanel, uv0.Left, "equipment")
+		slot0.destroyEquipTF = slot0:findTF("equipment", slot0.destroyPanel) or slot0:cloneSampleTo(slot0.destroyPanel, slot0.Left, "equipment")
 		slot0.destroyCounter = slot0:findTF("destroy", slot0.destroyPanel)
 		slot0.destroyValue = slot0:findTF("count/number_panel/value", slot0.destroyCounter)
 		slot0.destroyLeftButton = slot0:findTF("count/number_panel/left", slot0.destroyCounter)
@@ -226,50 +226,50 @@ function slot0.initAndSetBtn(slot0, slot1)
 		slot0.destroyConfirmBtn = slot0:findTF("actions/destroy_button", slot0.destroyPanel)
 
 		onButton(slot0, slot0.destroyLeftButton, function ()
-			uv0:setDestroyCount(uv0.destroyCount - 1)
+			slot0:setDestroyCount(slot0.destroyCount - 1)
 		end, SFX_PANEL)
 		onButton(slot0, slot0.destroyRightButton, function ()
-			uv0:setDestroyCount(uv0.destroyCount + 1)
+			slot0:setDestroyCount(slot0.destroyCount + 1)
 		end, SFX_PANEL)
 		onButton(slot0, slot0:findTF("count/max", slot0.destroyCounter), function ()
-			uv0:setDestroyCount(uv0.equipmentVO.count)
+			slot0:setDestroyCount(slot0.equipmentVO.count)
 		end, SFX_PANEL)
 		onButton(slot0, slot0.destroyCancelBtn, function ()
-			triggerToggle(uv0.toggles.defaultPanel, true)
+			triggerToggle(slot0.toggles.defaultPanel, true)
 		end, SFX_CANCEL)
 		onButton(slot0, slot0.destroyConfirmBtn, function ()
-			if not uv0:checkOverGold(uv0.awards) then
+			if not slot0:checkOverGold(slot0.awards) then
 				return
 			end
 
-			if uv0.equipmentVO:isImportance() then
-				uv0:showDestoryMsgbox(slot0)
+			if slot0.equipmentVO:isImportance() then
+				slot0:showDestoryMsgbox(slot0)
 			else
-				uv0:emit(EquipmentInfoMediator.ON_DESTROY, uv0.destroyCount)
+				slot0:emit(EquipmentInfoMediator.ON_DESTROY, slot0.destroyCount)
 			end
 		end, SFX_UI_EQUIPMENT_RESOLVE)
-	elseif slot1 == uv0.PANEL_REVERT then
+	elseif slot1 == slot0.PANEL_REVERT then
 		slot0.initRevertPanel = true
-		slot0.revertEquipTF = slot0:findTF("equipment", slot0.revertPanel) or slot0:cloneSampleTo(slot0.revertPanel, uv0.Left, "equipment")
+		slot0.revertEquipTF = slot0:findTF("equipment", slot0.revertPanel) or slot0:cloneSampleTo(slot0.revertPanel, slot0.Left, "equipment")
 		slot0.revertAwardContainer = slot0:findTF("item_panel/got/list", slot0.revertPanel)
 		slot0.revertCancelBtn = slot0:findTF("actions/cancel_button", slot0.revertPanel)
 		slot0.revertConfirmBtn = slot0:findTF("actions/revert_button", slot0.revertPanel)
 		slot0.itemTpl = slot0:getTpl("item_panel/got/item", slot0.revertPanel)
 
 		onButton(slot0, slot0.revertCancelBtn, function ()
-			triggerToggle(uv0.toggles.defaultPanel, true)
+			triggerToggle(slot0.toggles.defaultPanel, true)
 		end, SFX_CANCEL)
 		onButton(slot0, slot0.revertConfirmBtn, function ()
-			if not uv0:checkOverGold(uv0.awards) then
+			if not slot0:checkOverGold(slot0.awards) then
 				return
 			end
 
-			uv0:emit(EquipmentInfoMediator.ON_REVERT, uv0.equipmentVO.id)
+			slot0:emit(EquipmentInfoMediator.ON_REVERT, slot0.equipmentVO.id)
 		end, SFX_UI_EQUIPMENT_RESOLVE)
 	end
 end
 
-function slot0.updateOperation1(slot0)
+slot0.updateOperation1 = function (slot0)
 	triggerToggle(slot0.toggles.defaultPanel, true)
 	slot0:updateEquipmentPanel(slot0.defaultEquipTF, slot0.equipmentVO)
 	setActive(slot0.defaultRevertBtn, slot0.fromEquipmentView and slot0.equipmentVO.config.level > 1 and slot0.revertItemVO.count > 0)
@@ -278,7 +278,7 @@ function slot0.updateOperation1(slot0)
 	setActive(slot0.defaultDestroyBtn, slot0.contextData.destroy and slot0.equipmentVO.count > 0)
 end
 
-function slot0.updateOperation2(slot0)
+slot0.updateOperation2 = function (slot0)
 	triggerToggle(slot0.toggles.defaultPanel, true)
 	slot0:updateEquipmentPanel(slot0.defaultEquipTF, slot0.shipVO:getEquip(slot0.contextData.pos))
 	setActive(slot0.defaultDestroyBtn, false)
@@ -292,18 +292,18 @@ function slot0.updateOperation2(slot0)
 	end
 end
 
-function slot0.updateOperation3(slot0)
+slot0.updateOperation3 = function (slot0)
 	triggerToggle(slot0.toggles.replacePanel, true)
 	slot0:updateEquipmentPanel(slot0.replaceSrcEquipTF, slot1)
 	slot0:updateEquipmentPanel(slot0.replaceDstEquipTF, slot2, slot0.shipVO:getEquip(slot0.contextData.pos))
-	setActive(slot0:findTF("head", slot0.replaceSrcEquipTF), slot0.oldShipVO)
+	setActive(slot0:findTF("head", slot0.replaceDstEquipTF), slot0.oldShipVO)
 
 	if slot0.oldShipVO then
 		setImageSprite(findTF(slot3, "Image"), LoadSprite("qicon/" .. slot0.oldShipVO:getPainting()))
 	end
 end
 
-function slot0.updateOperation4(slot0)
+slot0.updateOperation4 = function (slot0)
 	triggerToggle(slot0.toggles.displayPanel, true)
 	slot0:updateEquipmentPanel(slot0.displayEquipTF, slot0.equipmentVO)
 	setActive(slot0.displayMoveBtn, slot0.shipVO)
@@ -314,20 +314,22 @@ function slot0.updateOperation4(slot0)
 	end
 end
 
-function slot0.updateRevertPanel(slot0)
+slot0.updateRevertPanel = function (slot0)
 	slot0:updateEquipmentPanel(slot0.revertEquipTF, slot2, slot1, true)
 	slot0:updateOperationAward(slot0.revertAwardContainer, slot0.itemTpl, slot0.equipmentVO:getRevertAwards())
 end
 
-function slot0.updateDestroyCount(slot0)
+slot0.updateDestroyCount = function (slot0)
 	setText(slot0.destroyValue, slot1)
 
 	slot2 = {}
+	slot3 = 0
 
 	if pg.equip_data_template[slot0.equipmentVO.config.id] then
-		slot3 = 0 + (slot4.destory_gold or 0) * slot1
+		slot5 = slot4.destory_item or {}
+		slot3 = slot3 + (slot4.destory_gold or 0) * slot1
 
-		for slot10, slot11 in ipairs(slot4.destory_item or {}) do
+		for slot10, slot11 in ipairs(slot5) do
 			table.insert(slot2, {
 				type = DROP_TYPE_ITEM,
 				id = slot11[1],
@@ -345,7 +347,7 @@ function slot0.updateDestroyCount(slot0)
 	slot0:updateOperationAward(slot0.destroyBonusList, slot0.destroyBonusItem, slot2)
 end
 
-function slot0.updateOperationAward(slot0, slot1, slot2, slot3)
+slot0.updateOperationAward = function (slot0, slot1, slot2, slot3)
 	slot0.awards = slot3
 
 	if slot1.childCount == 0 then
@@ -359,7 +361,7 @@ function slot0.updateOperationAward(slot0, slot1, slot2, slot3)
 
 		updateDrop(slot8, slot9)
 		onButton(slot0, slot8, function ()
-			uv0:emit(uv1.ON_DROP, uv2)
+			slot0:emit(slot1.ON_DROP, )
 		end, SFX_PANEL)
 		setText(findTF(slot8, "name_panel/name"), getText(findTF(slot8, "name")))
 		setText(findTF(slot8, "name_panel/number"), " x " .. getText(findTF(slot8, "icon_bg/count")))
@@ -367,8 +369,8 @@ function slot0.updateOperationAward(slot0, slot1, slot2, slot3)
 	end
 end
 
-function slot0.updateEquipmentPanel(slot0, slot1, slot2, slot3, slot4)
-	slot5 = slot3 and slot3:GetProperties(true) or nil
+slot0.updateEquipmentPanel = function (slot0, slot1, slot2, slot3, slot4)
+	slot5 = (slot3 and slot3:GetProperties(true)) or nil
 
 	setActive(slot6, slot2)
 	setActive(slot0:findTF("empty", slot1), not slot2)
@@ -399,17 +401,17 @@ function slot0.updateEquipmentPanel(slot0, slot1, slot2, slot3, slot4)
 		slot11 = slot2.config.tech or 1
 
 		eachChild(setActive, function (slot0)
-			setActive(slot0, tostring(uv0) == slot0.gameObject.name)
+			setActive(slot0, tostring(slot0) == slot0.gameObject.name)
 		end)
-		setText(slot9:Find("speciality/Text"), slot2.config.speciality ~= "无" and slot2.config.speciality or i18n1("—"))
+		setText(slot9:Find("speciality/Text"), (slot2.config.speciality ~= "无" and slot2.config.speciality) or i18n1("—"))
 
-		slot16 = findTF(slot2.config.speciality ~= "无" and slot2.config.speciality or i18n1("—"), "attr")
+		slot16 = findTF((slot2.config.speciality ~= "无" and slot2.config.speciality) or i18n1("—"), "attr")
 		slot18 = slot2:GetProperties(true)
-		slot21 = EquipType.isAircraft(slot2.configId) and pg.aircraft_template[slot2.configId].weapon_ID or {}
+		slot21 = (EquipType.isAircraft(slot2.configId) and pg.aircraft_template[slot2.configId].weapon_ID) or {}
 
 		setActive(findTF(slot9.Find("speciality/Text"), "skill"), slot2:GetSkill())
 
-		if slot2.GetSkill() then
+		if slot19 then
 			setText(slot22, i18n("skill"))
 			setText(slot23, setColorStr(slot19.name, "#FFDE00FF"))
 			setText(findTF(slot17, "value/Text"), getSkillDescGet(slot19.id))
@@ -423,11 +425,12 @@ function slot0.updateEquipmentPanel(slot0, slot1, slot2, slot3, slot4)
 		end)
 
 		for slot26, slot27 in pairs(slot18) do
-			slot29 = findTF(0 + 1 <= slot15.childCount and slot15:GetChild(0 - 1) or cloneTplTo(slot16, slot15), "name")
+			slot29 = findTF((slot22 + 1 <= slot15.childCount and slot15:GetChild(slot22 - 1)) or cloneTplTo(slot16, slot15), "name")
+			slot32 = findTF(findTF((slot22 + 1 <= slot15.childCount and slot15.GetChild(slot22 - 1)) or cloneTplTo(slot16, slot15), "value"), "down")
 
-			if findTF(slot30, "up") and findTF(findTF(0 + 1 <= slot15.childCount and slot15.GetChild(0 - 1) or cloneTplTo(slot16, slot15), "value"), "down") then
+			if findTF(slot30, "up") and slot32 then
 				setActive(slot31, false)
-				setActive(findTF(findTF(0 + 1 <= slot15.childCount and slot15.GetChild(0 - 1) or cloneTplTo(slot16, slot15), "value"), "down"), false)
+				setActive(slot32, false)
 			end
 
 			setActive(slot28, slot27)
@@ -446,6 +449,28 @@ function slot0.updateEquipmentPanel(slot0, slot1, slot2, slot3, slot4)
 								if slot27.type == AttributeType.SonarInterval then
 									setActive(slot31, slot27.value < slot5[slot37].value)
 									setActive(slot32, slot5[slot37].value < slot27.value)
+
+									break
+								end
+
+								if slot27.type == AttributeType.Damage then
+									slot38 = 0
+									slot39 = 0
+
+									if string.match(slot27.value, i18n("word_secondseach")) == string.match(slot5[slot37].value, i18n("word_secondseach")) then
+										if slot40 == i18n("word_secondseach") then
+											slot38 = string.gsub(slot27.value, slot40, "")
+											slot39 = string.gsub(slot5[slot37].value, slot40, "")
+										else
+											slot42, slot43 = string.match(string.gsub(slot27.value, " ", ""), "(%d+)x(%d+)")
+											slot38 = (slot42 or 0) * (slot43 or 0)
+											slot44, slot45 = string.match(string.gsub(slot5[slot37].value, " ", ""), "(%d+)x(%d+)")
+											slot39 = (slot44 or 0) * (slot45 or 0)
+										end
+
+										setActive(slot31, tonumber(slot39) < tonumber(slot38))
+										setActive(slot32, tonumber(slot38) < tonumber(slot39))
+									end
 
 									break
 								end
@@ -476,8 +501,8 @@ function slot0.updateEquipmentPanel(slot0, slot1, slot2, slot3, slot4)
 						setText(slot30, setColorStr(slot33 .. "s", COLOR_YELLOW) .. i18n("word_secondseach"))
 
 						if slot5 and slot26 < #slot5 and slot5[slot26] then
-							setActive(slot31, slot33 - (slot0.shipVO and slot0.shipVO:calcWeaponCD(slot3) or slot3:getWeaponCD()) < 0)
-							setActive(slot32, slot33 - (slot0.shipVO and slot0.shipVO.calcWeaponCD(slot3) or slot3.getWeaponCD()) > 0)
+							setActive(slot31, slot33 - ((slot0.shipVO and slot0.shipVO:calcWeaponCD(slot3)) or slot3:getWeaponCD()) < 0)
+							setActive(slot32, slot33 - ((slot0.shipVO and slot0.shipVO.calcWeaponCD(slot3)) or slot3.getWeaponCD()) > 0)
 						end
 					else
 						setText(slot29, AttributeType.Type2Name(slot27.type))
@@ -535,11 +560,12 @@ function slot0.updateEquipmentPanel(slot0, slot1, slot2, slot3, slot4)
 		end
 
 		for slot26, slot27 in ipairs(slot21) do
-			slot29 = findTF(slot22 + 1 <= slot15.childCount and slot15:GetChild(slot22 - 1) or cloneTplTo(slot16, slot15), "name")
+			slot29 = findTF((slot22 + 1 <= slot15.childCount and slot15:GetChild(slot22 - 1)) or cloneTplTo(slot16, slot15), "name")
+			slot32 = findTF(findTF((slot22 + 1 <= slot15.childCount and slot15.GetChild(slot22 - 1)) or cloneTplTo(slot16, slot15), "value"), "down")
 
-			if findTF(slot30, "up") and findTF(findTF(slot22 + 1 <= slot15.childCount and slot15.GetChild(slot22 - 1) or cloneTplTo(slot16, slot15), "value"), "down") then
+			if findTF(slot30, "up") and slot32 then
 				setActive(slot31, false)
-				setActive(findTF(findTF(slot22 + 1 <= slot15.childCount and slot15.GetChild(slot22 - 1) or cloneTplTo(slot16, slot15), "value"), "down"), false)
+				setActive(slot32, false)
 			end
 
 			setActive(slot28, true)
@@ -551,22 +577,24 @@ function slot0.updateEquipmentPanel(slot0, slot1, slot2, slot3, slot4)
 		setActive(slot14, true)
 		setActive(slot23, false)
 
-		slot26 = slot2.config.part_sub and #slot2.config.part_sub or 0
+		function slot24(slot0)
+			slot1 = nil
+
+			for slot5, slot6 in ipairs(slot0) do
+				slot1 = (slot1 or pg.ship_data_by_type[slot6].type_name) and slot1 .. "  " .. pg.ship_data_by_type[slot6].type_name
+			end
+
+			return slot1
+		end
+
+		slot26 = (slot2.config.part_sub and #slot2.config.part_sub) or 0
 		slot28 = findTF(slot23, "attrs/attr_2")
 
-		setActive(findTF(slot23, "attrs/attr_1"), (slot2.config.part_main and #slot2.config.part_main or 0) > 0)
+		setActive(findTF(slot23, "attrs/attr_1"), ((slot2.config.part_main and #slot2.config.part_main) or 0) > 0)
 
-		if (slot2.config.part_main and #slot2.config.part_main or 0) > 0 then
+		if slot25 > 0 then
 			setText(slot0:findTF("name", slot27), i18n("equip_part_title"))
-			setText(slot0:findTF("value", slot27), function (slot0)
-				slot1 = nil
-
-				for slot5, slot6 in ipairs(slot0) do
-					slot1 = (slot1 or pg.ship_data_by_type[slot6].type_name) and slot1 .. "  " .. pg.ship_data_by_type[slot6].type_name
-				end
-
-				return slot1
-			end(slot2.config.part_main))
+			setText(slot0:findTF("value", slot27), slot24(slot2.config.part_main))
 		end
 
 		setActive(slot28, slot26 > 0)
@@ -591,18 +619,18 @@ function slot0.updateEquipmentPanel(slot0, slot1, slot2, slot3, slot4)
 			slot31 = {}
 
 			slot30:AddPointDownFunc(function (slot0, slot1)
-				uv0.x = slot1.position.x
-				uv0.y = slot1.position.y
+				slot0.x = slot1.position.x
+				slot0.y = slot1.position.y
 			end)
 			slot30:AddPointUpFunc(function (slot0, slot1)
-				uv0.x = slot1.position.x - uv0.x
-				uv0.y = slot1.position.y - uv0.y
+				slot0.x = slot1.position.x - slot0.x
+				slot0.y = slot1.position.y - slot0.y
 
-				if math.abs(uv0.x) < 0.01 and math.abs(uv0.y) < 0.01 then
-					uv1.showPart[uv2] = not uv1.showPart[uv2]
+				if math.abs(slot0.x) < 0.01 and math.abs(slot0.y) < 0.01 then
+					slot1.showPart[] = not slot1.showPart[slot1.showPart]
 
-					setActive(uv3, not uv1.showPart[uv2])
-					setActive(uv4, uv1.showPart[uv2])
+					setActive(slot1.showPart, not slot1.showPart[setActive])
+					setActive(not slot1.showPart[setActive], slot1.showPart[setActive])
 				end
 			end)
 		end
@@ -611,7 +639,7 @@ function slot0.updateEquipmentPanel(slot0, slot1, slot2, slot3, slot4)
 	end
 end
 
-function slot0.showDestoryMsgbox(slot0, slot1)
+slot0.showDestoryMsgbox = function (slot0, slot1)
 	slot0.isOpenDestoryMsgbox = true
 
 	setActive(slot0.destroyMsgBox, true)
@@ -627,7 +655,7 @@ function slot0.showDestoryMsgbox(slot0, slot1)
 
 	setText(slot0.destroyMsgboxIntro, i18n("destory_important_equipment_tip", slot1.config.name))
 	onButton(slot0, slot0.destroyMsgBoxConfirmBtn, function ()
-		if not getInputText(uv0.destroyMsgBoxInput) or slot0 == "" then
+		if not getInputText(slot0.destroyMsgBoxInput) or slot0 == "" then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("word_should_input"))
 
 			return
@@ -639,31 +667,31 @@ function slot0.showDestoryMsgbox(slot0, slot1)
 			return
 		end
 
-		if slot0 ~= uv1.config.name then
+		if slot0 ~= slot1.config.name then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("destory_important_equipment_input_erro"))
 
 			return
 		end
 
-		uv0:emit(EquipmentInfoMediator.ON_DESTROY, 1)
-		uv0:closeDestoryMsgbox()
+		slot0:emit(EquipmentInfoMediator.ON_DESTROY, 1)
+		slot0:closeDestoryMsgbox()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.destroyMsgBoxCancelBtn, function ()
-		uv0:closeDestoryMsgbox()
+		slot0:closeDestoryMsgbox()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.destoryMsgboxBackBtn, function ()
-		uv0:closeDestoryMsgbox()
+		slot0:closeDestoryMsgbox()
 	end, SFX_PANEL)
 end
 
-function slot0.closeDestoryMsgbox(slot0)
+slot0.closeDestoryMsgbox = function (slot0)
 	slot0.isOpenDestoryMsgbox = nil
 
 	setActive(slot0.destroyMsgBox, false)
 end
 
-function slot0.cloneSampleTo(slot0, slot1, slot2, slot3, slot4)
-	cloneTplTo(slot0.sample, slot1, slot3).localPosition = Vector3.New(uv0.pos[slot2][1], uv0.pos[slot2][2], uv0.pos[slot2][3])
+slot0.cloneSampleTo = function (slot0, slot1, slot2, slot3, slot4)
+	cloneTplTo(slot0.sample, slot1, slot3).localPosition = Vector3.New(slot0.pos[slot2][1], slot0.pos[slot2][2], slot0.pos[slot2][3])
 
 	if slot4 then
 		slot5:SetSiblingIndex(slot4)
@@ -672,11 +700,11 @@ function slot0.cloneSampleTo(slot0, slot1, slot2, slot3, slot4)
 	return slot5
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	if slot0.isOpenDestoryMsgbox then
 		slot0:closeDestoryMsgbox()
 
@@ -689,7 +717,7 @@ function slot0.onBackPressed(slot0)
 		return
 	end
 
-	slot0:emit(uv0.ON_CLOSE)
+	slot0:emit(slot0.ON_CLOSE)
 end
 
 return slot0

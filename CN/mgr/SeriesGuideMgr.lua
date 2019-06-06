@@ -4,7 +4,7 @@ slot1 = false
 slot2 = 29
 
 function log(...)
-	if uv0 then
+	if slot0 then
 		print(...)
 	end
 end
@@ -19,26 +19,26 @@ pg.SeriesGuideMgr.CODES = {
 	MAINUI = 2
 }
 
-function pg.SeriesGuideMgr.isRunning(slot0)
-	return slot0.state == uv0.BUSY
+pg.SeriesGuideMgr.isRunning = function (slot0)
+	return slot0.state == slot0.BUSY
 end
 
-function pg.SeriesGuideMgr.isNotFinish(slot0)
+pg.SeriesGuideMgr.isNotFinish = function (slot0)
 	if getProxy(PlayerProxy) then
 		return slot1:getRawData().guideIndex < 28
 	end
 end
 
-function pg.SeriesGuideMgr.loadGuide(slot0, slot1)
+pg.SeriesGuideMgr.loadGuide = function (slot0, slot1)
 	return require("GameCfg.guide.newguide." .. slot1)
 end
 
-function pg.SeriesGuideMgr.getStepConfig(slot0, slot1)
+pg.SeriesGuideMgr.getStepConfig = function (slot0, slot1)
 	return slot0.guideCfgs[slot1]
 end
 
-function pg.SeriesGuideMgr.Init(slot0, slot1)
-	slot0.state = uv0.IDLE
+pg.SeriesGuideMgr.Init = function (slot0, slot1)
+	slot0.state = slot0.IDLE
 	slot0.guideCfgs = slot0:loadGuide("SG001")
 	slot0.guideMgr = pg.GuideMgr.GetInstance()
 	slot0.protocols = {}
@@ -47,50 +47,50 @@ function pg.SeriesGuideMgr.Init(slot0, slot1)
 	slot1()
 end
 
-function pg.SeriesGuideMgr.dispatch(slot0, slot1)
+pg.SeriesGuideMgr.dispatch = function (slot0, slot1)
 	if slot0:canPlay(slot1) then
 		slot0.guideMgr:mask()
 	end
 end
 
-function pg.SeriesGuideMgr.start(slot0, slot1)
+pg.SeriesGuideMgr.start = function (slot0, slot1)
 	if slot0:canPlay(slot1) then
-		slot0.state = uv0.BUSY
+		slot0.state = slot0.BUSY
 
 		slot0.guideMgr:unMask()
 
 		slot0.stepConfig = slot0:getStepConfig(slot0.currIndex)
 
 		function slot2(slot0)
-			uv0.state = uv1.IDLE
-			uv0.protocols = {}
+			slot0.state = slot1.IDLE
+			slot0.protocols = {}
 
-			if not uv0.stepConfig.interrupt then
-				uv0:doNextStep(uv0.currIndex, slot0)
+			if not slot0.stepConfig.interrupt then
+				slot0:doNextStep(slot0.currIndex, slot0)
 			end
 		end
 
 		slot0:doGuideStep(slot1, function (slot0, slot1)
-			if uv0.stepConfig.end_segment and slot1 then
-				uv0.guideMgr:play(uv0.stepConfig.end_segment, uv1.code, function ()
-					uv0(uv1)
+			if slot0.stepConfig.end_segment and slot1 then
+				slot0.guideMgr:play(slot0.stepConfig.end_segment, slot1.code, function ()
+					slot0(slot1)
 				end)
 			else
-				uv2(slot0)
+				slot2(slot0)
 			end
 		end)
 	end
 end
 
-function pg.SeriesGuideMgr.doGuideStep(slot0, slot1, slot2)
+pg.SeriesGuideMgr.doGuideStep = function (slot0, slot1, slot2)
 	if slot0.stepConfig.condition then
 		slot3, slot4 = slot0:checkCondition(slot1)
 		slot5 = slot0.currIndex < slot4
 
 		slot0:updateIndex(slot4, function ()
-			uv0({
-				uv1
-			}, uv2)
+			slot0({
+				slot1
+			}, slot1)
 		end)
 
 		return
@@ -101,40 +101,44 @@ function pg.SeriesGuideMgr.doGuideStep(slot0, slot1, slot2)
 
 	seriesAsync({
 		function (slot0)
-			uv0.guideMgr:play(uv1, uv2.code, slot0, function ()
-				uv0:updateIndex(uv1)
+			slot0.guideMgr:play(slot0.guideMgr.play, slot2.code, slot0, function ()
+				slot0:updateIndex(slot0)
 			end)
-			uv0.guideMgr:mask()
+			slot0.guideMgr:mask()
 		end,
 		function (slot0)
-			if _.any(uv0.protocols, function (slot0)
-				return slot0.protocol == uv0
+			if _.any(slot0.protocols, function (slot0)
+				return slot0.protocol == slot0
 			end) then
 				slot0()
 
 				return
 			end
 
-			function uv0.onReceiceProtocol(slot0)
-				if slot0 == uv0 then
-					uv1.onReceiceProtocol = nil
+			slot0.onReceiceProtocol = function (slot0)
+				if slot0 == slot0 then
+					slot1.onReceiceProtocol = 
+					-- Decompilation error in this vicinity:
+					nil
 
-					uv2()
+
+					-- Decompilation error in this vicinity:
+					nil()
 				end
 			end
 		end,
 		function (slot0)
-			uv0.guideMgr:unMask()
-			uv0:increaseIndex(slot0)
+			slot0.guideMgr:unMask()
+			slot0:increaseIndex(slot0)
 		end
 	}, function ()
-		uv0({
-			uv1.CODES.GUIDER
+		slot0({
+			slot1.CODES.GUIDER
 		}, true)
 	end)
 end
 
-function pg.SeriesGuideMgr.getSegmentIndex(slot0)
+pg.SeriesGuideMgr.getSegmentIndex = function (slot0)
 	slot1 = 1
 
 	if slot0.stepConfig.getSegment then
@@ -146,10 +150,10 @@ end
 
 slot4 = 1
 
-function pg.SeriesGuideMgr.checkCondition(slot0, slot1)
+pg.SeriesGuideMgr.checkCondition = function (slot0, slot1)
 	slot3, slot4 = nil
 
-	if slot0.stepConfig.condition.arg[1] == uv0 then
+	if slot0.stepConfig.condition.arg[1] == slot0 then
 		slot4, slot3 = slot0:checkPtotocol({
 			protocol = slot5[2],
 			func = slot2.condition.func
@@ -159,26 +163,26 @@ function pg.SeriesGuideMgr.checkCondition(slot0, slot1)
 	return slot4, slot3
 end
 
-function pg.SeriesGuideMgr.checkPtotocol(slot0, slot1, slot2)
+pg.SeriesGuideMgr.checkPtotocol = function (slot0, slot1, slot2)
 	slot3 = slot1.protocol
 
 	return slot1.func(slot2.view, _.select(slot0.protocols, function (slot0)
-		return slot0.protocol == uv0
+		return slot0.protocol == slot0
 	end)[1] or {}.args)
 end
 
-function pg.SeriesGuideMgr.increaseIndex(slot0, slot1)
+pg.SeriesGuideMgr.increaseIndex = function (slot0, slot1)
 	slot0:updateIndex(slot0.currIndex + 1, slot1)
 end
 
-function pg.SeriesGuideMgr.updateIndex(slot0, slot1, slot2)
+pg.SeriesGuideMgr.updateIndex = function (slot0, slot1, slot2)
 	pg.m02:sendNotification(GAME.UPDATE_GUIDE_INDEX, {
 		index = slot1,
 		callback = slot2
 	})
 end
 
-function pg.SeriesGuideMgr.doNextStep(slot0, slot1, slot2)
+pg.SeriesGuideMgr.doNextStep = function (slot0, slot1, slot2)
 	slot0.stepConfig = nil
 
 	if slot0:isEnd() then
@@ -193,11 +197,11 @@ function pg.SeriesGuideMgr.doNextStep(slot0, slot1, slot2)
 	end
 end
 
-function pg.SeriesGuideMgr.isEnd(slot0)
+pg.SeriesGuideMgr.isEnd = function (slot0)
 	return slot0.currIndex > #slot0.guideCfgs or not ENABLE_GUIDE
 end
 
-function pg.SeriesGuideMgr.receiceProtocol(slot0, slot1, slot2, slot3)
+pg.SeriesGuideMgr.receiceProtocol = function (slot0, slot1, slot2, slot3)
 	table.insert(slot0.protocols, {
 		protocol = slot1,
 		args = slot2,
@@ -209,8 +213,8 @@ function pg.SeriesGuideMgr.receiceProtocol(slot0, slot1, slot2, slot3)
 	end
 end
 
-function pg.SeriesGuideMgr.canPlay(slot0, slot1)
-	if slot0.state ~= uv0.IDLE then
+pg.SeriesGuideMgr.canPlay = function (slot0, slot1)
+	if slot0.state ~= slot0.IDLE then
 		log("guider is busy")
 
 		return false
@@ -249,21 +253,37 @@ function pg.SeriesGuideMgr.canPlay(slot0, slot1)
 	return true
 end
 
-function pg.SeriesGuideMgr.setPlayer(slot0, slot1)
+pg.SeriesGuideMgr.setPlayer = function (slot0, slot1)
 	slot0.player = slot1
 	slot0.currIndex = slot0.player.guideIndex
 
 	slot0:compatibleOldPlayer()
 end
 
-function pg.SeriesGuideMgr.dispose(slot0)
+pg.SeriesGuideMgr.dispose = function (slot0)
 	slot0.player = nil
 	slot0.protocols = {}
-	slot0.state = uv0.IDLE
+	slot0.state = slot0.IDLE
 end
 
-function pg.SeriesGuideMgr.compatibleOldPlayer(slot0)
+pg.SeriesGuideMgr.compatibleOldPlayer = function (slot0)
 	if not slot0.player then
+		return
+	end
+
+	function slot1()
+		slot0 = getProxy(PlayerProxy)
+		slot1 = slot0:getData()
+		slot1.guideIndex = slot0
+
+		slot0:updatePlayer(slot1)
+		slot1:setPlayer(slot1)
+		slot1:updateIndex(slot1.guideIndex)
+	end
+
+	if slot0.player.level >= 5 and slot0.player.guideIndex < slot0 then
+		slot1()
+
 		return
 	end
 
@@ -271,13 +291,9 @@ function pg.SeriesGuideMgr.compatibleOldPlayer(slot0)
 		pg.StoryMgr:GetInstance():PlayGuide("FixGuide")
 
 		if slot0.player.guideIndex > 1 and slot0.player.guideIndex < 101 then
-			slot1 = getProxy(PlayerProxy)
-			slot2 = slot1:getData()
-			slot2.guideIndex = uv0
-
-			slot1:updatePlayer(slot2)
-			slot0:setPlayer(slot2)
-			slot0:updateIndex(slot2.guideIndex)
+			slot0:finish()
 		end
 	end
 end
+
+return

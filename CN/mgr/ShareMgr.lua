@@ -10,29 +10,29 @@ pg.ShareMgr.TypePhoto = 7
 pg.ShareMgr.TypeReflux = 8
 pg.ShareMgr.TypeCommander = 9
 pg.ShareMgr.TypeColoring = 10
-pg.ShareMgr.TypeNewShipDesignSSR = 11
+pg.ShareMgr.TypeChallenge = 11
 pg.ShareMgr.PANEL_TYPE_BLACK = 1
 pg.ShareMgr.PANEL_TYPE_PINK = 2
 
-function pg.ShareMgr.Init(slot0)
+pg.ShareMgr.Init = function (slot0)
 	PoolMgr.GetInstance():GetUI("ShareUI", false, function (slot0)
-		uv0.go = slot0
+		slot0.go = slot0
 
-		uv0.go:SetActive(false)
+		slot0.go:SetActive(false)
 
-		uv0.tr = slot0.transform
-		uv0.panelBlack = uv0.tr:Find("panel")
-		uv0.panelPink = uv0.tr:Find("panel_pink")
-		uv0.decks = {
-			uv0.tr:Find("deck"),
-			uv0.tr:Find("deck_right"),
-			uv0.tr:Find("deck_blue")
+		slot0.tr = slot0.transform
+		slot0.panelBlack = slot0.tr:Find("panel")
+		slot0.panelPink = slot0.tr:Find("panel_pink")
+		slot0.decks = {
+			slot0.tr:Find("deck"),
+			slot0.tr:Find("deck_right"),
+			slot0.tr:Find("deck_blue")
 		}
 
-		setActive(uv0.panelBlack, false)
-		setActive(uv0.panelPink, false)
+		setActive(slot0.panelBlack, false)
+		setActive(slot0.panelPink, false)
 
-		for slot4, slot5 in pairs(uv0.decks) do
+		for slot4, slot5 in pairs(slot0.decks) do
 			setActive(slot5, false)
 		end
 	end)
@@ -43,9 +43,9 @@ function pg.ShareMgr.Init(slot0)
 	slot0.cacheMoveComps = {}
 end
 
-function pg.ShareMgr.Share(slot0, slot1, slot2)
+pg.ShareMgr.Share = function (slot0, slot1, slot2)
 	if not isAiriJP() and not WBManager.IsSupportShare() then
-		uv0.TipsMgr:GetInstance():ShowTips("指挥官，当前平台暂不支持分享功能哦")
+		slot0.TipsMgr:GetInstance():ShowTips("指挥官，当前平台暂不支持分享功能哦")
 
 		return
 	end
@@ -54,48 +54,48 @@ function pg.ShareMgr.Share(slot0, slot1, slot2)
 		slot0:Init()
 	end
 
-	if (slot2 or uv1.PANEL_TYPE_BLACK) == uv1.PANEL_TYPE_BLACK then
+	if (slot2 or slot1.PANEL_TYPE_BLACK) == slot1.PANEL_TYPE_BLACK then
 		slot0.panel = slot0.panelBlack
-	elseif slot2 == uv1.PANEL_TYPE_PINK then
+	elseif slot2 == slot1.PANEL_TYPE_PINK then
 		slot0.panel = slot0.panelPink
 	end
 
-	setActive(slot0.panelBlack, slot2 == uv1.PANEL_TYPE_BLACK)
-	setActive(slot0.panelPink, slot2 == uv1.PANEL_TYPE_PINK)
+	setActive(slot0.panelBlack, slot2 == slot1.PANEL_TYPE_BLACK)
+	setActive(slot0.panelPink, slot2 == slot1.PANEL_TYPE_PINK)
 
 	slot4 = getProxy(PlayerProxy):getRawData()
 
 	SetActive(slot0.decks, true)
-	setText(slot0.decks[uv0.share_template[slot1].deck or 1].Find(slot0.decks, "name"), slot4 and slot4.name or "")
-	setText(slot0.decks[uv0.share_template[slot1].deck or 1].Find(slot0.decks, "server"), "所在服务器：" .. (getProxy(ServerProxy):getRawData()[getProxy(UserProxy):getRawData() and slot2 == uv1.PANEL_TYPE_PINK.server or 0] and getProxy(ServerProxy).getRawData()[getProxy(UserProxy).getRawData() and slot2 == uv1.PANEL_TYPE_PINK.server or 0].name or ""))
-	setText(slot0.decks[uv0.share_template[slot1].deck or 1].Find(slot0.decks, "lv"), slot4.level)
+	setText(slot0.decks[slot0.share_template[slot1].deck or 1].Find(slot0.decks, "name"), (slot4 and slot4.name) or "")
+	setText(slot0.decks[slot0.share_template[slot1].deck or 1].Find(slot0.decks, "server"), "所在服务器：" .. ((getProxy(ServerProxy):getRawData()[(getProxy(UserProxy):getRawData() and slot2 == slot1.PANEL_TYPE_PINK.server) or 0] and getProxy(ServerProxy).getRawData()[(getProxy(UserProxy).getRawData() and slot2 == slot1.PANEL_TYPE_PINK.server) or 0].name) or ""))
+	setText(slot0.decks[slot0.share_template[slot1].deck or 1].Find(slot0.decks, "lv"), slot4.level)
 
-	slot0.decks[uv0.share_template[slot1].deck or 1].anchoredPosition3D = Vector3(uv0.share_template[slot1].qrcode_location[1], uv0.share_template[slot1].qrcode_location[2], -100)
-	slot0.decks[uv0.share_template[slot1].deck or 1].anchoredPosition = Vector2(uv0.share_template[slot1].qrcode_location[1], uv0.share_template[slot1].qrcode_location[2])
+	slot0.decks[slot0.share_template[slot1].deck or 1].anchoredPosition3D = Vector3(slot0.share_template[slot1].qrcode_location[1], slot0.share_template[slot1].qrcode_location[2], -100)
+	slot0.decks[slot0.share_template[slot1].deck or 1].anchoredPosition = Vector2(slot0.share_template[slot1].qrcode_location[1], slot0.share_template[slot1].qrcode_location[2])
 
 	setParent(slot0.decks, slot11, false)
-	slot0.decks[uv0.share_template[slot1].deck or 1].SetAsLastSibling(slot0.decks)
-	_.each(uv0.share_template[slot1].hidden_comps, function (slot0)
+	slot0.decks[slot0.share_template[slot1].deck or 1].SetAsLastSibling(slot0.decks)
+	_.each(slot0.share_template[slot1].hidden_comps, function (slot0)
 		if not IsNil(GameObject.Find(slot0)) and slot1.activeSelf then
-			table.insert(uv0.cacheComps, slot1)
+			table.insert(slot0.cacheComps, slot1)
 			slot1:SetActive(false)
 		end
 	end)
-	_.each(uv0.share_template[slot1].show_comps, function (slot0)
+	_.each(slot0.share_template[slot1].show_comps, function (slot0)
 		print("showpath:" .. slot0)
 
 		if not IsNil(GameObject.Find(slot0)) and not slot1.activeSelf then
 			print("showpath111:" .. slot0)
-			table.insert(uv0.cacheShowComps, slot1)
+			table.insert(slot0.cacheShowComps, slot1)
 			slot1:SetActive(true)
 		end
 	end)
-	_.each(uv0.share_template[slot1].move_comps, function (slot0)
+	_.each(slot0.share_template[slot1].move_comps, function (slot0)
 		print("movepath:" .. slot0.path)
 
 		if not IsNil(GameObject.Find(slot0.path)) then
 			print("movepath:" .. slot0.path, slot4, slot0.y)
-			table.insert(uv0.cacheMoveComps, {
+			table.insert(slot0.cacheMoveComps, {
 				slot1,
 				slot1.transform.anchoredPosition.x,
 				slot1.transform.anchoredPosition.y
@@ -108,16 +108,17 @@ function pg.ShareMgr.Share(slot0, slot1, slot2)
 	end)
 
 	slot14 = nil
+	slot14 = (1.7777777777777777 >= Screen.width / Screen.height or ScreenShooter.New(math.floor(Screen.height * slot12), Screen.height, TextureFormat.ARGB32)) and ScreenShooter.New(Screen.width, math.floor(Screen.width / slot12), TextureFormat.ARGB32)
 
 	if isAiriJP() then
-		slot15 = (1.7777777777777777 >= Screen.width / Screen.height or ScreenShooter.New(math.floor(Screen.height * slot12), Screen.height, TextureFormat.ARGB32)) and ScreenShooter.New(Screen.width, math.floor(Screen.width / slot12), TextureFormat.ARGB32):TakePhoto(slot10)
+		slot15 = slot14:TakePhoto(slot10)
 
 		slot15:LoadImage(slot16)
 		AiriSdkMgr.inst:ShareCustomScreenshot(slot3.description, slot15)
-		uv0.UIMgr.GetInstance():LoadingOn()
+		slot0.UIMgr.GetInstance():LoadingOn()
 
 		time = Timer.New(function ()
-			uv0.UIMgr.GetInstance():LoadingOff()
+			slot0.UIMgr.GetInstance():LoadingOff()
 		end, 2, 0, 1)
 
 		time:Start()
@@ -125,7 +126,7 @@ function pg.ShareMgr.Share(slot0, slot1, slot2)
 		print("截图位置: " .. slot0.screenshot)
 		slot0:Show(slot3)
 	else
-		uv0.TipsMgr:GetInstance():ShowTips("截图失败")
+		slot0.TipsMgr:GetInstance():ShowTips("截图失败")
 	end
 
 	setParent(slot9, slot0.tr, false)
@@ -151,27 +152,29 @@ function pg.ShareMgr.Share(slot0, slot1, slot2)
 	slot0.cacheMoveComps = {}
 end
 
-function pg.ShareMgr.Show(slot0, slot1)
+pg.ShareMgr.Show = function (slot0, slot1)
 	slot0.go:SetActive(true)
-	uv0.UIMgr.GetInstance():BlurPanel(slot0.panel)
-	uv0.DelegateInfo.New(slot0)
+	slot0.UIMgr.GetInstance():BlurPanel(slot0.panel)
+	slot0.DelegateInfo.New(slot0)
 	onButton(slot0, slot0.panel:Find("main/top/btnBack"), slot2)
 	onButton(slot0, slot0.panel:Find("main/buttons/weibo"), function ()
-		WBManager.Inst:Share(uv0.description, uv1.screenshot, function (slot0, slot1)
+		WBManager.Inst:Share(slot0.description, slot1.screenshot, function (slot0, slot1)
 			if slot0 and slot1 == 0 then
-				uv0.TipsMgr:GetInstance():ShowTips("分享成功")
+				slot0.TipsMgr:GetInstance():ShowTips("分享成功")
 			end
 		end)
-		uv3()
+		slot1.screenshot()
 	end)
 	onButton(slot0, slot0.panel:Find("main/buttons/weixin"), function ()
-		WXManager.Inst:Share(uv0.description, uv1.screenshot, function (slot0, slot1)
+		WXManager.Inst:Share(slot0.description, slot1.screenshot, function (slot0, slot1)
 			if slot0 and slot1 == 0 then
-				uv0.TipsMgr:GetInstance():ShowTips("分享成功")
+				slot0.TipsMgr:GetInstance():ShowTips("分享成功")
 			elseif slot1 == 99 then
-				uv0.TipsMgr:GetInstance():ShowTips("指挥官，你没有安装微信客户端哦")
+				slot0.TipsMgr:GetInstance():ShowTips("指挥官，你没有安装微信客户端哦")
 			end
 		end)
-		uv3()
+		slot1.screenshot()
 	end)
 end
+
+return

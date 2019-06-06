@@ -1,18 +1,18 @@
 slot0 = class("NewCommanderScene", import("..base.BaseUI"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "GetCommanderUI"
 end
 
-function slot0.getBGM(slot0)
+slot0.getBGM = function (slot0)
 	return "backyard"
 end
 
-function slot0.setCommander(slot0, slot1)
+slot0.setCommander = function (slot0, slot1)
 	slot0.commanderVO = slot1
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.bgTF = slot0:findTF("main/bg")
 	slot0.clickTF = slot0:findTF("click")
 	slot0.paintTF = slot0:findTF("main/paint")
@@ -29,8 +29,8 @@ function slot0.init(slot0)
 	slot0.talentsTF = slot0:findTF("content/talents", slot0.infoTF)
 	slot0.talentsList = UIItemList.New(slot0.talentsTF, slot0.talentsTF:Find("talent"))
 	slot0.dateTF = slot0:findTF("content/copyright/Text", slot0.infoTF)
-	slot0.treePanel = CommanderTreePanel.New(slot0:findTF("tree_panel"))
-	slot0.msgbox = CommaderMsgBox.New(slot0:findTF("box_msg_panel"))
+	slot0.treePanel = CommanderTreePage.New(slot0._tf, slot0.event)
+	slot0.msgbox = CommanderMsgBoxPage.New(slot0._tf, slot0.event)
 	slot0.antor = slot0._tf:GetComponent(typeof(Animator))
 	slot0.getEffect = slot0:findTF("main/effect")
 	slot0.skipAnim = true
@@ -38,17 +38,28 @@ function slot0.init(slot0)
 	if pg.GuideMgr:GetInstance()._go.activeSelf then
 		slot0.skipAnim = false
 	end
+
+	setParent(slot0._tf, pg.UIMgr:GetInstance().OverlayMain)
 end
 
-function slot0.openTreePanel(slot0, slot1)
-	slot0.treePanel:openTreePanel(slot1)
+slot0.openTreePanel = function (slot0, slot1)
+	function slot2()
+		slot0.treePanel:ActionInvoke("openTreePanel", slot0.treePanel)
+	end
+
+	if slot0.treePanel:GetLoaded() then
+		slot2()
+	else
+		slot0.treePanel:Load()
+		slot0.treePanel:AddLoadedCallback(slot2)
+	end
 end
 
-function slot0.closeTreePanel(slot0)
-	slot0.treePanel:closeTreePanel()
+slot0.closeTreePanel = function (slot0)
+	slot0.treePanel:ActionInvoke("closeTreePanel")
 end
 
-function slot0.enterAnim(slot0)
+slot0.enterAnim = function (slot0)
 	slot0.antor:SetBool("play", true)
 
 	slot0.isAnim = true
@@ -58,82 +69,93 @@ function slot0.enterAnim(slot0)
 	slot1 = slot0._tf:GetComponent(typeof(DftAniEvent))
 
 	slot1:SetTriggerEvent(function (slot0)
-		if uv0.commanderVO:isSSR() then
-			uv0:playerEffect()
+		if slot0.commanderVO:isSSR() then
+			slot0:playerEffect()
 		end
 	end)
 	slot1:SetEndEvent(function ()
-		uv0.isAnim = false
+		slot0.isAnim = false
 
-		setActive(uv0.clickTF, true)
+		setActive(slot0.clickTF, true)
 	end)
 end
 
-function slot0.playerEffect(slot0)
+slot0.playerEffect = function (slot0)
 	PoolMgr.GetInstance():GetUI("AL_zhihuimiao_zhipian", true, function (slot0)
-		uv0.effect = slot0
+		slot0.effect = slot0
 
-		SetParent(slot0, uv0._tf)
+		SetParent(slot0, slot0._tf)
 		setActive(slot0, true)
 	end)
 end
 
-function slot0.openMsgBox(slot0, slot1)
+slot0.openMsgBox = function (slot0, slot1)
 	slot0.isShowMsgBox = true
 
-	slot0.msgbox:openMsgBox(slot1)
+	function slot2()
+		slot0.msgbox:ActionInvoke("OnUpdate", slot0.msgbox)
+	end
+
+	if slot0.msgbox:GetLoaded() then
+		slot2()
+	else
+		slot0.msgbox:Load()
+		slot0.msgbox:AddLoadedCallback(slot2)
+	end
 end
 
-function slot0.closeMsgBox(slot0)
+slot0.closeMsgBox = function (slot0)
 	slot0.isShowMsgBox = nil
 
-	slot0.msgbox:closeMsgBox()
+	slot0.msgbox:ActionInvoke("Hide")
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0:updateInfo(function ()
-		uv0:enterAnim()
+		slot0:enterAnim()
 	end)
 	onButton(slot0, slot0.shareBtn, function ()
 		pg.ShareMgr:GetInstance():Share(pg.ShareMgr.TypeCommander)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.lockBtn, function ()
-		uv0:emit(NewCommanderMediator.ON_LOCK, uv0.commanderVO.id, 1 - uv0.commanderVO:getLock())
+		slot0 = slot0.commanderVO:getLock()
+
+		slot0:emit(NewCommanderMediator.ON_LOCK, slot0.commanderVO.id, 1 - slot0)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.clickTF, function ()
-		if uv0.isAnim then
-			uv0.antor:SetBool("play", false)
+		if slot0.isAnim then
+			slot0.antor:SetBool("play", false)
 
-			if uv0.commanderVO:isSSR() and not uv0.effect then
-				uv0:playerEffect()
+			if slot0.antor.SetBool.commanderVO:isSSR() and not slot0.effect then
+				slot0:playerEffect()
 			end
 
-			uv0.isAnim = nil
-		elseif uv0.commanderVO:isSSR() and not uv0.commanderVO:isLocked() then
-			uv0:openMsgBox({
+			slot0.isAnim = nil
+		elseif slot0.commanderVO:isSSR() and not slot0.commanderVO:isLocked() then
+			slot0:openMsgBox({
 				content = i18n("commander_lock_tip"),
 				onYes = function ()
-					uv0:emit(NewCommanderMediator.ON_LOCK, uv0.commanderVO.id, 1)
-					uv0:emit(uv1.ON_CLOSE)
+					slot0:emit(NewCommanderMediator.ON_LOCK, slot0.commanderVO.id, 1)
+					slot0.emit:emit(slot1.ON_CLOSE)
 				end,
 				onNo = function ()
-					uv0:emit(uv1.ON_CLOSE)
+					slot0:emit(slot1.ON_CLOSE)
 				end
 			})
 		else
-			uv0:emit(uv1.ON_CLOSE)
+			slot0:emit(slot1.ON_CLOSE)
 		end
 	end, SFX_CANCEL)
 end
 
-function slot0.updateLockState(slot0, slot1)
+slot0.updateLockState = function (slot0, slot1)
 	setActive(slot0.lockBtn:Find("image"), slot1 == 0)
 	onButton(slot0, slot0.lockBtn, function ()
-		uv1:emit(NewCommanderMediator.ON_LOCK, uv1.commanderVO.id, 1 - uv0)
+		slot1:emit(NewCommanderMediator.ON_LOCK, slot1.commanderVO.id, 1 - slot0)
 	end, SFX_PANEL)
 end
 
-function slot0.updateInfo(slot0, slot1)
+slot0.updateInfo = function (slot0, slot1)
 	slot0:updateLockState(slot0.commanderVO.getLock(slot2))
 
 	slot0.nameTF.text = slot0.commanderVO.getName(slot2)
@@ -154,41 +176,55 @@ function slot0.updateInfo(slot0, slot1)
 	end
 end
 
-function slot0.updateAbilitys(slot0)
+slot0.updateAbilitys = function (slot0)
 	slot2 = slot0.commanderVO.getAbilitys(slot1)
 
 	eachChild(slot0.abilitysTF, function (slot0)
-		setText(slot0:Find("slider/point"), uv0[go(slot0).name].value)
+		setText(slot0:Find("slider/point"), slot0[go(slot0).name].value)
 
-		slot0:Find("slider"):GetComponent(typeof(Slider)).value = uv0[go(slot0).name].value / CommanderConst.MAX_ABILITY
+		slot0:Find("slider"):GetComponent(typeof(Slider)).value = slot0[go(slot0).name].value / CommanderConst.MAX_ABILITY
 	end)
 end
 
-function slot0.updateTalents(slot0)
+slot0.updateTalents = function (slot0)
 	slot2 = slot0.commanderVO.getTalents(slot1)
 
 	slot0.talentsList:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			setActive(slot2:Find("empty"), not uv0[slot1 + 1])
-			setActive(slot2:Find("icon"), uv0[slot1 + 1])
+			setActive(slot2:Find("empty"), not slot0[slot1 + 1])
+			setActive(slot2:Find("icon"), slot0[slot1 + 1])
 
-			if uv0[slot1 + 1] then
+			if slot0[slot1 + 1] then
 				GetImageSpriteFromAtlasAsync("CommanderTalentIcon/" .. slot3:getConfig("icon"), "", slot2:Find("icon"))
 			end
 
-			onButton(uv1, slot2, function ()
-				uv0:openTreePanel(uv1)
+			onButton(slot1, slot2, function ()
+				slot0:openTreePanel(slot0)
 			end, SFX_PANEL)
 		end
 	end)
 	slot0.talentsList:align(3)
 end
 
-function slot0.willExit(slot0)
+slot0.onBackPressed = function (slot0)
+	if slot0.isShowMsgBox then
+		slot0:closeMsgBox()
+
+		return
+	end
+end
+
+slot0.willExit = function (slot0)
+	slot0.treePanel:Destroy()
+	slot0.msgbox:Destroy()
 	retPaintingPrefab(slot0.paintTF, slot0.painting:getPainting())
 
 	if slot0.effect then
 		PoolMgr.GetInstance():ReturnUI("AL_zhihuimiao_zhipian", slot0.effect)
+	end
+
+	if slot0.contextData.onExit then
+		slot0.contextData.onExit()
 	end
 end
 

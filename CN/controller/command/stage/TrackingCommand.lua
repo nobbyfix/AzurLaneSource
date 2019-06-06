@@ -1,10 +1,11 @@
 class("TrackingCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	slot2 = slot1:getBody()
+	slot3 = slot2.chapterId
 	slot4 = slot2.fleetIds
 	slot5 = slot2.operationItem or 0
 	slot6 = slot2.loopFlag or 0
 
-	if getProxy(ChapterProxy).getChapterById(slot7, slot2.chapterId).active then
+	if getProxy(ChapterProxy).getChapterById(slot7, slot3).active then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("levelScene_strategying"))
 
 		return
@@ -26,7 +27,9 @@ class("TrackingCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		return
 	end
 
-	if slot8:getConfig("type") == Chapter.CustomFleet and not slot8:isActivity() and not getProxy(DailyLevelProxy):IsEliteEnabled() then
+	slot14 = getProxy(DailyLevelProxy)
+
+	if slot8:getConfig("type") == Chapter.CustomFleet and not slot8:isActivity() and not slot14:IsEliteEnabled() then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("common_elite_no_quota"))
 
 		return
@@ -40,11 +43,13 @@ class("TrackingCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		if slot8:singleEliteFleetVertify(slot22) then
 			slot24 = {}
 			slot25 = {}
+			slot26 = {}
 			slot27 = {}
 			slot28 = {}
 
 			for slot32, slot33 in ipairs(slot23) do
 				if pg.ship_data_by_type[slot10[slot33]:getShipType()].team_type == TeamType.Vanguard then
+					slot26[#slot26 + 1] = slot33
 				elseif slot35 == TeamType.Main then
 					slot25[#slot25 + 1] = slot33
 				elseif slot35 == TeamType.Submarine then
@@ -54,8 +59,8 @@ class("TrackingCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 
 			for slot33, slot34 in pairs(slot29) do
 				table.insert(slot28, {
-					id = slot33,
-					commanderid = slot34
+					pos = slot33,
+					id = slot34
 				})
 			end
 
@@ -84,33 +89,33 @@ class("TrackingCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		loop_flag = slot6
 	}, 13102, function (slot0)
 		if slot0.result == 0 then
-			uv0:consume({
-				oil = uv1
+			slot0:consume({
+				oil = slot0.consume
 			})
-			uv2:updatePlayer(uv0)
-			uv3:update(slot0.current_chapter)
+			slot0:updatePlayer(slot0)
+			slot3:update(slot0.current_chapter)
 
-			for slot4, slot5 in pairs(uv3.cells) do
+			for slot4, slot5 in pairs(slot3.cells) do
 				if ChapterConst.NeedMarkAsLurk(slot5) then
 					slot5.trait = ChapterConst.TraitLurk
 				end
 			end
 
-			for slot4, slot5 in ipairs(uv3.champions) do
+			for slot4, slot5 in ipairs(slot3.champions) do
 				slot5.trait = ChapterConst.TraitLurk
 			end
 
-			uv4:updateChapter(uv3)
+			slot4:updateChapter(slot3)
 
-			if uv3:getMapType() == Map.ESCORT then
+			if slot3:getMapType() == Map.ESCORT then
 				getProxy(ChapterProxy).escortChallengeTimes = getProxy(ChapterProxy).escortChallengeTimes + 1
 			end
 
-			uv5:sendNotification(GAME.TRACKING_DONE, uv3)
-			uv5:sendNotification(ChapterProxy.CHAPTER_EXTAR_FLAG_UPDATED, uv3.extraFlagList)
+			slot5:sendNotification(GAME.TRACKING_DONE, )
+			slot5:sendNotification(ChapterProxy.CHAPTER_EXTAR_FLAG_UPDATED, slot3.extraFlagList)
 		elseif slot0.result == 1 then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("levelScene_tracking_error_retry"))
-			uv5:sendNotification(GAME.CHAPTER_OP, {
+			slot5:sendNotification(GAME.CHAPTER_OP, {
 				type = ChapterConst.OpRetreat
 			})
 		elseif slot0.result == 3010 then
