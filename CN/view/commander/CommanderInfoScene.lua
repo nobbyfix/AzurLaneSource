@@ -184,6 +184,11 @@ slot0.didEnter = function (slot0)
 	slot0:updateBg(slot0.commanderVO)
 	slot0:updateRes()
 	slot0:updateGold()
+	addSlip(SLIP_TYPE_HRZ, slot0.paintTF, function ()
+		slot0:emit(CommanderInfoMediator.ON_PREV)
+	end, function ()
+		slot0:emit(CommanderInfoMediator.ON_NEXT)
+	end)
 end
 
 slot0.checkFirstHelp = function (slot0)
