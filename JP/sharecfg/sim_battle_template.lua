@@ -249,7 +249,9 @@ pg.sim_battle_template = {
 			10028,
 			10029,
 			10030,
-			10031
+			10031,
+			10032,
+			10033
 		}
 	},
 	{
@@ -490,3 +492,5 @@ pg.sim_battle_template = {
 		12
 	}
 }
+
+return

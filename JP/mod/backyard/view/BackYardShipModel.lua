@@ -35,7 +35,7 @@ slot4 = {
 	}
 }
 
-function slot0.Ctor(slot0, slot1, slot2)
+slot0.Ctor = function (slot0, slot1, slot2)
 	pg.DelegateInfo.New(slot0)
 
 	slot0.go = slot1
@@ -47,26 +47,30 @@ function slot0.Ctor(slot0, slot1, slot2)
 	slot0.speed = slot0.cfg.backyard_speed
 
 	LoadAndInstantiateAsync("sfurniture", "modelmask", function (slot0)
-		SetParent(slot0, uv0.tf)
+		if not slot0.tf then
+			return
+		end
 
-		uv0.bodyMask = tf(slot0)
+		SetParent(slot0, slot0.tf)
 
-		uv0.bodyMask:SetSiblingIndex(0)
+		slot0.bodyMask = tf(slot0)
+
+		slot0.bodyMask:SetSiblingIndex(0)
 		SetActive(slot0, false)
 	end, true, true)
 end
 
-function slot0.updateBoatVO(slot0, slot1)
+slot0.updateBoatVO = function (slot0, slot1)
 	slot0.boatVO = slot1
 end
 
-function slot0.onLoadSlotModel(slot0, slot1)
+slot0.onLoadSlotModel = function (slot0, slot1)
 	slot0.viewComponent = slot1
 	slot2 = slot1:findTF("resources")
 
 	pg.ViewUtils.SetLayer(slot0.tf, Layer.UI)
 
-	slot0.tf.localScale = Vector3(uv0, uv0, 1)
+	slot0.tf.localScale = Vector3(slot0, slot0, 1)
 	slot0.model = slot0.tf:Find("model")
 	slot0.model.localScale = Vector3(1, 1, 1)
 	slot0.floorGrid = slot1.floorContain
@@ -94,58 +98,58 @@ function slot0.onLoadSlotModel(slot0, slot1)
 	slot0.actionCallback = {}
 end
 
-function slot0.showChat(slot0, slot1, slot2, slot3, slot4)
+slot0.showChat = function (slot0, slot1, slot2, slot3, slot4)
 	LeanTween.scale(tf(slot1), slot2, 0.5):setEase(LeanTweenType.easeOutBack):setDelay(slot3):setOnComplete(System.Action(function ()
-		uv0()
+		slot0()
 	end))
 end
 
-function slot0.loadChat(slot0, slot1)
+slot0.loadChat = function (slot0, slot1)
 	slot0.chatTF = cloneTplTo(slot1, slot0.go)
 	slot2 = findTF(slot0.chatTF, "Text")
 	slot0.chatTF.localPosition = Vector2(145, 290)
 	slot0.chatTF.localScale = Vector3(0, 0, 0)
 end
 
-function slot0.loadClick(slot0, slot1)
+slot0.loadClick = function (slot0, slot1)
 	slot0.clickTF = cloneTplTo(slot1, slot0.go)
 	slot0.clickTF.localPosition = Vector2(0, 130)
 	slot0.clickTF.localScale = Vector2(1, 1, 1)
 
 	onButton(slot0, slot0.clickTF, function ()
-		if uv0.boatVO:hasInterActionFurnitrue() then
+		if slot0.boatVO:hasInterActionFurnitrue() then
 			return
 		end
 
-		if uv0.boatVO:hasSpineInterAction() then
+		if slot0.boatVO:hasSpineInterAction() then
 			return
 		end
 
-		if uv0.stageId or uv0.archId then
+		if slot0.stageId or slot0.archId then
 			return
 		end
 
-		if uv0.boatVO:hasSpineExtra() then
+		if slot0.boatVO:hasSpineExtra() then
 			return
 		end
 
 		playSoundEffect(SFX_BOAT_CLICK)
-		uv0:switchAnimation("touch")
+		playSoundEffect:switchAnimation("touch")
 
-		if uv0.inimacyTF.gameObject.activeSelf == true or uv0.moneyTF.gameObject.activeSelf == true then
+		if playSoundEffect.switchAnimation.inimacyTF.gameObject.activeSelf == true or slot0.moneyTF.gameObject.activeSelf == true then
 			return
 		end
 
-		setButtonEnabled(uv0.clickTF, false)
-		uv0:showChat(uv0.chatTF, Vector3(1 / uv1, 1 / uv1), 0, function ()
-			uv0:showChat(uv0.chatTF, Vector3(0, 0, 0), 2, function ()
-				setButtonEnabled(uv0.clickTF, true)
+		setButtonEnabled(slot0.clickTF, false)
+		setButtonEnabled:showChat(slot0.chatTF, Vector3(1 / slot1, 1 / slot1), 0, function ()
+			slot0:showChat(slot0.chatTF, Vector3(0, 0, 0), 2, function ()
+				setButtonEnabled(slot0.clickTF, true)
 			end)
 		end)
 	end)
 end
 
-function slot0.loadExp(slot0, slot1)
+slot0.loadExp = function (slot0, slot1)
 	slot0.expTF = cloneTplTo(slot1, slot0.go)
 	slot0.moneyAdditionTF = findTF(slot0.expTF, "money")
 	slot0.inimacyAdditionTF = findTF(slot0.expTF, "intimacy")
@@ -155,10 +159,12 @@ function slot0.loadExp(slot0, slot1)
 	slot0:changeInnerDir(1)
 end
 
-function slot0.updateModelDir(slot0)
+slot0.updateModelDir = function (slot0)
 	if slot0.spineFurniture then
+		slot2 = slot0.spineFurniture:hasSpineShipBodyMask()
+
 		if slot0.spineFurniture:getSpineAniScale() then
-			slot0.model.localScale = Vector3(slot0.spineFurniture:hasSpineShipBodyMask() and slot0.spineFurniture.dir == 2 and slot1 * -1 or slot1, 1, 1)
+			slot0.model.localScale = Vector3((slot2 and slot0.spineFurniture.dir == 2 and slot1 * -1) or slot1, 1, 1)
 		end
 
 		if slot2 then
@@ -167,11 +173,11 @@ function slot0.updateModelDir(slot0)
 	end
 end
 
-function slot0.updateExpTFScale(slot0, slot1)
-	slot0.expTF.localScale = Vector3(1 / uv0 * slot1, 1 / uv0, 1)
+slot0.updateExpTFScale = function (slot0, slot1)
+	slot0.expTF.localScale = Vector3(1 / slot0 * slot1, 1 / slot0, 1)
 end
 
-function slot0.changeInnerDir(slot0, slot1)
+slot0.changeInnerDir = function (slot0, slot1)
 	slot0:updateExpTFScale(slot1)
 
 	if slot0.bodyMask and go(slot0.bodyMask).activeSelf then
@@ -179,43 +185,43 @@ function slot0.changeInnerDir(slot0, slot1)
 	end
 end
 
-function slot0.loadInimacy(slot0, slot1)
+slot0.loadInimacy = function (slot0, slot1)
 	slot0.inimacyTF = cloneTplTo(slot1, slot0.go)
 	slot0.inimacyTF.localPosition = Vector2(145, 290)
-	slot0.inimacyTF.localScale = Vector2(1 / uv0, 1 / uv0)
+	slot0.inimacyTF.localScale = Vector2(1 / slot0, 1 / slot0)
 
 	floatAni(slot0.inimacyTF, 20, 1)
 	slot0:updateInimacy(slot0.boatVO:hasInimacy())
 end
 
-function slot0.loadMoeny(slot0, slot1)
+slot0.loadMoeny = function (slot0, slot1)
 	slot0.moneyTF = cloneTplTo(slot1, slot0.go)
 	slot0.moneyTF.localPosition = Vector2(145, 290)
-	slot0.moneyTF.localScale = Vector2(1 / uv0, 1 / uv0)
+	slot0.moneyTF.localScale = Vector2(1 / slot0, 1 / slot0)
 
 	floatAni(slot0.moneyTF, 20, 1)
 	slot0:updateMoney(slot0.boatVO:hasMoney())
 end
 
-function slot0.loadShadow(slot0, slot1, slot2)
+slot0.loadShadow = function (slot0, slot1, slot2)
 	slot0.shadowTF = cloneTplTo(slot1, slot2)
 	slot0.shadowTF.localPosition = slot0.tf.localPosition
 	slot0.shadowTF.localScale = Vector2(1, 1)
 end
 
-function slot0.updateShadowPos(slot0)
+slot0.updateShadowPos = function (slot0)
 	if IsNil(slot0.shadowTF) then
 		return
 	end
 
 	if slot0.archId then
-		slot0.shadowTF.localPosition = uv0.turnTransformLocalPos(slot0.tf.localPosition, slot0.viewComponent.furnitureModals[slot0.archId].Find(slot1, "childs"), slot0.floorGrid)
+		slot0.shadowTF.localPosition = slot0.turnTransformLocalPos(slot0.tf.localPosition, slot0.viewComponent.furnitureModals[slot0.archId].Find(slot1, "childs"), slot0.floorGrid)
 	else
 		slot0.shadowTF.localPosition = slot0.tf.localPosition
 	end
 end
 
-function slot0.updateShadowTF(slot0, slot1)
+slot0.updateShadowTF = function (slot0, slot1)
 	if IsNil(slot0.shadowTF) then
 		return
 	end
@@ -227,21 +233,21 @@ function slot0.updateShadowTF(slot0, slot1)
 	end
 end
 
-function slot0.updateBottomGridPos(slot0, slot1)
+slot0.updateBottomGridPos = function (slot0, slot1)
 	if slot1 then
 		SetActive(slot0.shipGridContainer, true)
 
-		slot0.shipGrid.localPosition = uv0.getLocalPos(slot1)
+		slot0.shipGrid.localPosition = slot0.getLocalPos(slot1)
 	end
 end
 
-function slot0.addBoatDragListenter(slot0)
+slot0.addBoatDragListenter = function (slot0)
 	slot1 = GetOrAddComponent(slot0.go, "EventTriggerListener")
 	slot0.dragTrigger = slot1
 	slot2 = nil
 
 	slot1:AddBeginDragFunc(function (slot0, slot1)
-		if not isAiriJP() and uv0.viewComponent.zoom.pinching then
+		if not isAiriJP() and slot0.viewComponent.zoom.pinching then
 			return
 		end
 
@@ -249,68 +255,68 @@ function slot0.addBoatDragListenter(slot0)
 			return
 		end
 
-		uv0.viewComponent.dragShip = slot0
+		slot0.viewComponent.dragShip = slot0
 
-		uv0.viewComponent:enableZoom(false)
+		slot0.viewComponent:enableZoom(false)
 		playSoundEffect(SFX_BOAT_DRAG)
 
-		uv1 = uv0.boatVO:getPosition()
-		uv0.isMove = nil
+		slot1 = slot0.boatVO:getPosition()
+		slot0.isMove = nil
 
-		if uv0.boatVO:hasSpineInterAction() then
-			uv0:breakSpineAnim()
+		if slot0.boatVO:hasSpineInterAction() then
+			slot0:breakSpineAnim()
 		end
 
-		if uv0.boatVO:hasSpineExtra() then
-			uv0.viewComponent:emit(BackyardMainMediator.ON_CLEAR_SPINR_EXTRA, uv0.boatVO.id, uv0.boatVO.spineExtra)
+		if slot0.boatVO:hasSpineExtra() then
+			slot0.viewComponent:emit(BackyardMainMediator.ON_CLEAR_SPINR_EXTRA, slot0.boatVO.id, slot0.boatVO.spineExtra)
 		end
 
-		if uv0.boatVO:hasInterActionFurnitrue() then
-			uv0:clearInterAction()
+		if slot0.boatVO:hasInterActionFurnitrue() then
+			slot0:clearInterAction()
 		end
 
-		uv0.spineAnimUI:SetAction("tuozhuai2", 0)
-		uv0:closeBodyMask()
-		uv0.viewComponent:emit(BackyardMainMediator.CANCEL_SHIP_MOVE, uv0.boatVO.id)
-		uv0:removeItem()
-		SetParent(uv0.tf, uv0.floorGrid)
-		tf(uv0.go):SetAsLastSibling()
-		uv0:changeInnerDir(Mathf.Sign(uv0.tf.localScale.x))
-		uv0:changeGridColor(BackYardConst.BACKYARD_GREEN)
-		uv0:updateBottomGridPos(uv0.boatVO:getPosition())
-		uv0:updateShadowPos()
+		slot0.spineAnimUI:SetAction("tuozhuai2", 0)
+		slot0:closeBodyMask()
+		slot0.viewComponent:emit(BackyardMainMediator.CANCEL_SHIP_MOVE, slot0.boatVO.id)
+		slot0:removeItem()
+		SetParent(slot0.tf, slot0.floorGrid)
+		tf(slot0.go):SetAsLastSibling()
+		slot0:changeInnerDir(Mathf.Sign(slot0.tf.localScale.x))
+		slot0:changeGridColor(BackYardConst.BACKYARD_GREEN)
+		slot0:updateBottomGridPos(slot0.boatVO:getPosition())
+		slot0:updateShadowPos()
 	end)
 	slot1:AddDragFunc(function (slot0, slot1)
-		if uv0.viewComponent.dragShip == slot0 then
-			tf(uv0.go).localPosition = Vector3(uv1.getLocalPos(slot3).x, uv1.getLocalPos(slot3).y + uv2, 0)
+		if slot0.viewComponent.dragShip == slot0 then
+			tf(slot0.go).localPosition = Vector3(slot1.getLocalPos(slot3).x, slot1.getLocalPos(slot3).y + slot2, 0)
 
-			uv0:updateShadowPos()
+			slot0:updateShadowPos()
 
-			slot5, slot6 = uv0.viewComponent.houseVO:canMoveBoat(uv0.boatVO.id, uv1.getMapPos(slot2))
+			slot5, slot6 = slot0.viewComponent.houseVO:canMoveBoat(slot0.boatVO.id, slot1.getMapPos(slot2))
 
-			uv0:changeGridColor((slot5 or uv0.viewComponent.furnitureVOs[slot6] and uv0.viewComponent.furnitureVOs[slot6]:canTriggerInteraction()) and BackYardConst.BACKYARD_GREEN or BackYardConst.BACKYARD_RED)
-			uv0:updateBottomGridPos(slot3)
+			slot0:changeGridColor(((slot5 or (slot0.viewComponent.furnitureVOs[slot6] and slot0.viewComponent.furnitureVOs[slot6]:canTriggerInteraction())) and BackYardConst.BACKYARD_GREEN) or BackYardConst.BACKYARD_RED)
+			slot0:updateBottomGridPos(slot3)
 		end
 	end)
 	slot1:AddDragEndFunc(function (slot0, slot1)
-		if uv0.viewComponent.dragShip == slot0 then
-			uv0.viewComponent.dragShip = nil
+		if slot0.viewComponent.dragShip == slot0 then
+			slot0.viewComponent.dragShip = nil
 
-			uv0.viewComponent:enableZoom(true)
-			uv0:endDrag(uv2, uv1.getMapPos(slot2))
-			uv0:updateShadowPos()
+			slot0.viewComponent:enableZoom(true)
+			slot0:endDrag(slot1.change2ScrPos(slot0.floorGrid, slot1.position), slot1.getMapPos(slot2))
+			slot0:updateShadowPos()
 			playSoundEffect(SFX_BOAT_DRAG)
 
-			if uv0.save then
-				uv0.save = nil
+			if slot0.save then
+				slot0.save = nil
 
-				uv0.viewComponent:emit(BackyardMainMediator.SAVE_FURNITURE, false)
+				slot0.viewComponent:emit(BackyardMainMediator.SAVE_FURNITURE, false)
 			end
 		end
 	end)
 end
 
-function slot0.endDrag(slot0, slot1, slot2)
+slot0.endDrag = function (slot0, slot1, slot2)
 	slot4, slot5 = slot0.viewComponent.houseVO.canPutShip(slot3, slot0.boatVO.id, slot2)
 
 	if slot0.viewComponent.houseVO:getArchByPos(slot2) and (slot6:canInterAction() or slot6:canInterActionSpine()) and slot6:canInterActionShipGroup(slot0.boatVO.gruopId) then
@@ -320,7 +326,7 @@ function slot0.endDrag(slot0, slot1, slot2)
 	else
 		slot0:clearStage()
 
-		tf(slot0.go).localPosition = Vector3(uv0.getLocalPos(slot2).x, uv0.getLocalPos(slot2).y + uv1, 0)
+		tf(slot0.go).localPosition = Vector3(slot0.getLocalPos(slot2).x, slot0.getLocalPos(slot2).y + slot1, 0)
 		slot0.isMove = nil
 
 		SetActive(slot0.shipGridContainer, false)
@@ -331,10 +337,13 @@ function slot0.endDrag(slot0, slot1, slot2)
 	end
 end
 
-function slot0.triggerInterAction(slot0, slot1, slot2)
-	if slot2 and slot0.viewComponent.furnitureVOs[slot2]:canInterActionShipGroup(slot0.boatVO.gruopId) and slot0.viewComponent.furnitureVOs[slot2]:isInterActionSpine() and slot0.viewComponent.furnitureVOs[slot2]:canInterActionSpine() then
+slot0.triggerInterAction = function (slot0, slot1, slot2)
+	slot4 = slot0.boatVO
+	slot5 = slot0.viewComponent.furnitureVOs[slot2]
+
+	if slot2 and slot5:canInterActionShipGroup(slot4.gruopId) and slot5:isInterActionSpine() and slot5:canInterActionSpine() then
 		slot0:clearStage()
-		slot0.viewComponent:emit(BackyardMainMediator.INTERACTION_SPINE, slot0.boatVO.id, slot0.viewComponent.furnitureVOs[slot2].id)
+		slot0.viewComponent:emit(BackyardMainMediator.INTERACTION_SPINE, slot0.boatVO.id, slot5.id)
 	elseif slot2 and slot5:canInterActionShipGroup(slot4.gruopId) and slot5:isInterActionSpine() and slot5:canInterActionSpineExtra() then
 		slot0:clearStage()
 		slot0.viewComponent:emit(BackyardMainMediator.ON_SPINE_EXTRA, slot4.id, slot2)
@@ -382,27 +391,29 @@ function slot0.triggerInterAction(slot0, slot1, slot2)
 		if slot6 and slot6:canInterActionShipGroup(slot4.gruopId) and slot6:isInterActionSpine() and slot6:canInterActionSpine() then
 			slot0.viewComponent:emit(BackyardMainMediator.INTERACTION_SPINE, slot0.boatVO.id, slot6.id)
 		else
-			LeanTween.moveLocal(slot0.go, Vector3(uv0.getLocalPos(slot1).x, uv0.getLocalPos(slot1).y + uv1, 0), 0):setOnComplete(System.Action(function ()
-				uv0.isMove = nil
+			LeanTween.moveLocal(slot0.go, Vector3(slot0.getLocalPos(slot1).x, slot0.getLocalPos(slot1).y + slot1, 0), 0):setOnComplete(System.Action(function ()
+				slot0.isMove = nil
 
-				SetActive(uv0.shipGridContainer, false)
-				uv0:changeGridColor(BackYardConst.BACKYARD_GREEN)
-				uv0.spineAnimUI:SetAction("stand2", 0)
-				uv0.viewComponent:emit(BackyardMainMediator.END_DRAG_SHIP, uv1.id, uv2)
+				SetActive(slot0.shipGridContainer, false)
+				SetActive:changeGridColor(BackYardConst.BACKYARD_GREEN)
+				SetActive.changeGridColor.spineAnimUI:SetAction("stand2", 0)
+				SetActive.changeGridColor.spineAnimUI.SetAction.viewComponent:emit(BackyardMainMediator.END_DRAG_SHIP, slot1.id, )
 			end))
 		end
 	end
 end
 
-function slot0.InterActionSortSibling(slot0, slot1)
+slot0.InterActionSortSibling = function (slot0, slot1)
+	slot2 = slot0.viewComponent.furnitureModals[slot1]
+	slot5 = slot0.viewComponent.furnitureVOs[slot1].getConfig(slot3, "interAction")
 	slot6 = {}
 	slot7 = false
 
 	for slot11, slot12 in pairs(slot4) do
 		slot13 = nil
 
-		if slot0.viewComponent.furnitureVOs[slot1].getConfig(slot3, "interAction")[slot11][5] and slot0.viewComponent.furnitureVOs[slot1].getConfig(slot3, "interAction")[slot11][5] == BackyardBoatVO.INTERACTION_TYPE_AFTER then
-			slot13 = slot0.viewComponent.furnitureModals[slot1]:Find("icon/char_" .. slot12)
+		if slot5[slot11][5] and slot5[slot11][5] == BackyardBoatVO.INTERACTION_TYPE_AFTER then
+			slot13 = slot2:Find("icon/char_" .. slot12)
 			slot7 = true
 		else
 			slot13 = slot2:Find("char_" .. slot12)
@@ -434,11 +445,11 @@ function slot0.InterActionSortSibling(slot0, slot1)
 	end
 end
 
-function slot0.changeGridColor(slot0, slot1)
+slot0.changeGridColor = function (slot0, slot1)
 	slot0.shipGridImg.color = slot1
 end
 
-function slot0.createItem(slot0, slot1)
+slot0.createItem = function (slot0, slot1)
 	if not IsNil(slot0.tf) then
 		slot2 = nil
 		slot3 = (not slot0.archId or slot0.viewComponent:getMap({
@@ -457,7 +468,7 @@ function slot0.createItem(slot0, slot1)
 	end
 end
 
-function slot0.removeItem(slot0)
+slot0.removeItem = function (slot0)
 	if slot0.item then
 		slot1 = nil
 
@@ -471,23 +482,23 @@ function slot0.removeItem(slot0)
 	end
 end
 
-function slot0.updatePosition(slot0, slot1)
+slot0.updatePosition = function (slot0, slot1)
 	slot0:removeItem()
 	slot0:createItem(slot0.boatVO:getPosition())
 
 	slot2 = nil
-	slot0.tf.localPosition = Vector3((not slot0.archId or slot0:calcOnFurnitureLPos(slot1, slot0.archId)) and (not slot0.stageId or slot0:calcOnFurnitureLPos(slot1, slot0.stageId)) and uv0.getLocalPos(slot1).x, (not slot0.archId or slot0.calcOnFurnitureLPos(slot1, slot0.archId)) and (not slot0.stageId or slot0.calcOnFurnitureLPos(slot1, slot0.stageId)) and uv0.getLocalPos(slot1).y + uv1, 0)
+	slot0.tf.localPosition = Vector3((not slot0.archId or slot0:calcOnFurnitureLPos(slot1, slot0.archId)) and (not slot0.stageId or slot0:calcOnFurnitureLPos(slot1, slot0.stageId)) and slot0.getLocalPos(slot1).x, (not slot0.archId or slot0.calcOnFurnitureLPos(slot1, slot0.archId)) and (not slot0.stageId or slot0.calcOnFurnitureLPos(slot1, slot0.stageId)) and slot0.getLocalPos(slot1).y + slot1, 0)
 
 	slot0:updateShadowTF(true)
 	slot0:updateShadowPos()
 end
 
-function slot0.setAction(slot0, slot1)
+slot0.setAction = function (slot0, slot1)
 	slot0.spineAnimUI:SetAction(slot1, 0)
 end
 
-function slot0.updateInterActionPos(slot0, slot1, slot2)
-	uv0.print("start interaction..................")
+slot0.updateInterActionPos = function (slot0, slot1, slot2)
+	slot0.print("start interaction..................")
 	slot0:removeItem()
 
 	slot3 = slot0.viewComponent.furnitureModals[slot1.id]
@@ -497,19 +508,19 @@ function slot0.updateInterActionPos(slot0, slot1, slot2)
 		slot0:showBodyMask(slot9, slot1.dir)
 	end
 
-	SetParent(slot0.tf, slot8 and slot8 == BackyardBoatVO.INTERACTION_TYPE_AFTER and slot3:Find("icon") or slot3)
+	SetParent(slot0.tf, (slot8 and slot8 == BackyardBoatVO.INTERACTION_TYPE_AFTER and slot3:Find("icon")) or slot3)
 
 	if slot6 or {
 		1,
 		1
 	}[3] then
-		slot0.tf.localScale = Vector3(slot3.localScale.x * -1 * uv1, uv1, 1)
+		slot0.tf.localScale = Vector3(slot3.localScale.x * -1 * slot1, slot1, 1)
 
 		slot0:updateExpTFScale(-1)
 	elseif slot1:getConfig("dir") == 1 and slot3.localScale.x < 0 then
-		slot0.tf.localScale = Vector3(1 * uv1, uv1 * slot11[2], 1)
+		slot0.tf.localScale = Vector3(1 * slot1, slot1 * slot11[2], 1)
 	else
-		slot0.tf.localScale = Vector3(uv1 * slot11[1], uv1 * slot11[2], 1)
+		slot0.tf.localScale = Vector3(slot1 * slot11[1], slot1 * slot11[2], 1)
 
 		slot0:updateExpTFScale(slot3.localScale.x * slot11[1])
 	end
@@ -532,17 +543,17 @@ function slot0.updateInterActionPos(slot0, slot1, slot2)
 	SetActive(slot0.shipGridContainer, false)
 end
 
-function slot0.clearInterAction(slot0)
-	uv0.print("clear interaction.............")
+slot0.clearInterAction = function (slot0)
+	slot0.print("clear interaction.............")
 
 	if slot0.viewComponent.furnitureModals[slot0.boatVO:getInterActionFurnitrueId()]:Find(BackYardConst.FURNITRUE_MASK_ORDER_NAME .. slot0.viewComponent.furnitureVOs[slot0.boatVO.getInterActionFurnitrueId()].getOrderByShipId(slot3, slot0.boatVO.id)) then
 		setActive(slot5, false)
 	end
 end
 
-function slot0.updateSpineInterAction(slot0, slot1)
+slot0.updateSpineInterAction = function (slot0, slot1)
 	SetActive(slot0.shipGridContainer, false)
-	uv0.print(" start spine interaciton...............")
+	slot0.print(" start spine interaciton...............")
 	slot0:removeItem()
 
 	slot0.spineFurniture = slot1
@@ -557,7 +568,7 @@ function slot0.updateSpineInterAction(slot0, slot1)
 	slot0:updateShadowTF(false)
 	SetParent(slot0.tf, slot2, true)
 
-	slot0.tf.localScale = Vector3(uv1, uv1, 1)
+	slot0.tf.localScale = Vector3(slot1, slot1, 1)
 
 	if slot1:getSpineAniPos() then
 		slot0.tf.anchoredPosition = slot3
@@ -584,108 +595,116 @@ function slot0.updateSpineInterAction(slot0, slot1)
 		slot0.viewComponent.blockEvent = true
 	end
 
-	if slot1:getPreheatAnim() then
-		slot0:playPreHeatAnim(slot1, slot10, function ()
-			if uv0:hasAnimator() then
-				uv1:startSpineAnimator(uv0)
-			end
+	function slot9()
+		if slot0:hasAnimator() then
+			slot1:startSpineAnimator(slot1.startSpineAnimator)
+		end
 
-			if uv0:isFollowFurnitrueAnim() then
-				uv1:playAnimsFollowFurniture(uv0)
-			else
-				uv1:playAnims(uv0)
-			end
-		end)
+		if slot0:isFollowFurnitrueAnim() then
+			slot1:playAnimsFollowFurniture(slot1.playAnimsFollowFurniture)
+		else
+			slot1:playAnims(slot1.playAnims)
+		end
+	end
+
+	if slot1:getPreheatAnim() then
+		slot0:playPreHeatAnim(slot1, slot10, slot9)
 	else
 		slot9()
 	end
 end
 
-function slot0.playPreHeatAnim(slot0, slot1, slot2, slot3)
+slot0.playPreHeatAnim = function (slot0, slot1, slot2, slot3)
 	setActive(slot0.tf, false)
 	slot0.roles[2].SetActionCallBack(slot4, function (slot0)
 		if slot0 == "finish" then
-			uv0:SetActionCallBack(nil)
-			uv1()
-			setActive(uv2.tf, true)
+			slot0:SetActionCallBack(nil)
+			slot0.SetActionCallBack()
+			setActive(slot0.tf, true)
 		end
 	end)
 	slot0.roles[2]:SetAction(slot2, 0)
 end
 
-function slot0.playAnimsFollowFurniture(slot0, slot1)
+slot0.playAnimsFollowFurniture = function (slot0, slot1)
 	slot2 = slot1:getSpineAnims()
 	slot3 = slot0.roles[2]
 	slot4 = nil
 
 	function slot5(slot0)
-		if slot0 > #uv0 then
-			uv1:SetActionCallBack(nil)
+		if slot0 > #slot0 then
+			slot1:SetActionCallBack(nil)
 
-			slot1, slot2 = uv2:isLoopSpineInterAction()
+			slot1, slot2 = slot1:isLoopSpineInterAction()
 
 			if slot1 then
 				if slot2 == BackyardFurnitureVO.INTERACTION_LOOP_TYPE_ALL then
-					uv3()
-				elseif slot2 == BackyardFurnitureVO.INTERACTION_LOOP_TYPE_LAST_ONE and uv2:hasAnimator() then
-					uv4:endSpineAnimator(uv2)
-					uv4:setSpineAnimtorParent(uv2)
+					slot3()
+				elseif slot2 == BackyardFurnitureVO.INTERACTION_LOOP_TYPE_LAST_ONE and slot2:hasAnimator() then
+					slot4:endSpineAnimator(slot2)
+					slot4:setSpineAnimtorParent(slot2)
 				end
-			elseif uv2:hasTailAction() then
-				uv4.viewComponent.blockEvent = nil
+			elseif slot2:hasTailAction() then
+				slot4.viewComponent.blockEvent = nil
 
-				uv4:playTailActions(uv2)
+				nil:playTailActions(slot2)
 			else
-				uv4:clearSpine()
-				uv4:updateShadowTF(true)
-				uv4:updateShadowPos()
-				uv4.viewComponent:emit(BackyardMainMediator.ADD_BOAT_MOVE, uv4.boatVO.id, true)
+				slot4:clearSpine()
+				slot4:updateShadowTF(true)
+				slot4:updateShadowPos()
+				slot4.viewComponent:emit(BackyardMainMediator.ADD_BOAT_MOVE, slot4.boatVO.id, true)
 			end
 		else
-			if type(uv0[slot0][1]) == "table" then
+			if type(slot0[slot0][1]) == "table" then
 				slot1 = slot1[math.random(1, #slot1)]
 			end
 
-			uv1:SetAction(slot1, 0)
+			slot1:SetAction(slot1, 0)
 
-			if uv4.roles[1] then
-				uv4.roles[1]:SetAction(slot1, 0)
+			if slot4.roles[1] then
+				slot4.roles[1]:SetAction(slot1, 0)
 			end
 
-			if uv4.roles[3] then
-				uv4.roles[3]:SetAction(slot1, 0)
+			if slot4.roles[3] then
+				slot4.roles[3]:SetAction(slot1, 0)
 			end
 
-			if uv4.bodyMask then
-				uv4.bodyMask:GetComponent(typeof(Image)).enabled = not uv0[slot0][2]
+			if slot4.bodyMask then
+				slot4.bodyMask:GetComponent(typeof(Image)).enabled = not slot0[slot0][2]
 			end
 
-			uv4:callActionCB("update", slot1)
+			slot4:callActionCB("update", slot1)
 		end
 	end
 
+
+	-- Decompilation error in this vicinity:
 	function ()
-		if uv0:hasAnimator() then
-			uv1:endSpineAnimator(uv0)
-			uv1:startSpineAnimator(uv0)
+		if slot0:hasAnimator() then
+			slot1:endSpineAnimator(slot1.endSpineAnimator)
+			slot1:startSpineAnimator(slot1.startSpineAnimator)
 		end
 
-		uv1:callActionCB("end")
+		slot1:callActionCB("end")
 
 		slot0 = 1
 
-		uv2:SetActionCallBack(function (slot0)
+		local function slot3(slot0)
 			if slot0 == "finish" then
-				uv0 = uv0 + 1
 
-				uv1(uv0)
+				-- Decompilation error in this vicinity:
+				slot0 + 1(
+				-- Decompilation error in this vicinity:
+				slot0 + 1)
 			end
-		end)
-		uv3(1)
+		end
+
+		"end":SetActionCallBack(slot3)
+		slot3(1)
 	end()
 end
 
-function slot0.pauseAnim(slot0)
+slot0.pauseAnim = function (slot0)
 	for slot4, slot5 in pairs(slot0.roles) do
 		slot5:SetActionCallBack(nil)
 		slot5:SetAction(slot0:getSpineNormalAction(slot5), 0)
@@ -694,22 +713,22 @@ function slot0.pauseAnim(slot0)
 	slot0:endSpineAnimator(slot0.spineFurniture)
 end
 
-function slot0.registerActionCB(slot0, slot1, slot2, slot3)
+slot0.registerActionCB = function (slot0, slot1, slot2, slot3)
 	slot0.actionCallback[slot1] = {
 		updateCb = slot2,
 		endCb = slot3
 	}
 end
 
-function slot0.removeAllActionCB(slot0)
+slot0.removeAllActionCB = function (slot0)
 	slot0.actionCallback = {}
 end
 
-function slot0.removeActionCB(slot0, slot1)
+slot0.removeActionCB = function (slot0, slot1)
 	slot0.actionCallback[slot1] = nil
 end
 
-function slot0.callActionCB(slot0, slot1, slot2)
+slot0.callActionCB = function (slot0, slot1, slot2)
 	for slot6, slot7 in pairs(slot0.actionCallback) do
 		if slot1 == "update" then
 			slot7.updateCb(slot2)
@@ -719,7 +738,7 @@ function slot0.callActionCB(slot0, slot1, slot2)
 	end
 end
 
-function slot0.resumeAnim(slot0)
+slot0.resumeAnim = function (slot0)
 	if slot0.spineFurniture:isFollowFurnitrueAnim() then
 		slot0:playAnimsFollowFurniture(slot1)
 	else
@@ -727,7 +746,7 @@ function slot0.resumeAnim(slot0)
 	end
 end
 
-function slot0.playAnims(slot0, slot1)
+slot0.playAnims = function (slot0, slot1)
 	slot2 = slot1:getSpineAnims()
 	slot3 = 0
 	slot4, slot5, slot6, slot7 = nil
@@ -735,91 +754,99 @@ function slot0.playAnims(slot0, slot1)
 	function slot7(slot0)
 		slot0:SetActionCallBack(nil)
 
-		slot1, slot2 = uv0:isLoopSpineInterAction()
+		slot1, slot2 = slot0:isLoopSpineInterAction()
 
 		if not slot1 then
-			slot0:SetAction(uv1:getSpineNormalAction(slot0), 0)
+			slot0:SetAction(slot1:getSpineNormalAction(slot0), 0)
 		end
 
-		if uv2 == #uv1.roles then
+		if slot2 == #slot1.roles then
 			if slot1 then
-				uv1:callActionCB("end")
+				slot1:callActionCB("end")
 
 				if slot2 == BackyardFurnitureVO.INTERACTION_LOOP_TYPE_ALL then
-					uv3()
-				elseif slot2 == BackyardFurnitureVO.INTERACTION_LOOP_TYPE_LAST_ONE and uv0:hasAnimator() then
-					uv1:endSpineAnimator(uv0)
-					uv1:setSpineAnimtorParent(uv0)
+					slot3()
+				elseif slot2 == BackyardFurnitureVO.INTERACTION_LOOP_TYPE_LAST_ONE and slot0:hasAnimator() then
+					slot1:endSpineAnimator(slot0)
+					slot1:setSpineAnimtorParent(slot0)
 				end
-			elseif uv0:hasTailAction() then
-				uv1.viewComponent.blockEvent = nil
+			elseif slot0:hasTailAction() then
+				slot1.viewComponent.blockEvent = nil
 
-				uv1:playTailActions(uv0)
+				slot1:playTailActions(slot0)
 			else
-				uv1:clearSpine()
-				uv1:updateShadowTF(true)
-				uv1:updateShadowPos()
-				uv1.viewComponent:emit(BackyardMainMediator.ADD_BOAT_MOVE, uv1.boatVO.id, true)
+				slot1:clearSpine()
+				slot1:updateShadowTF(true)
+				slot1:updateShadowPos()
+				slot1.viewComponent:emit(BackyardMainMediator.ADD_BOAT_MOVE, slot1.boatVO.id, true)
 			end
 		end
 	end
 
 	function slot6(slot0, slot1)
-		if slot1 > #uv0 then
-			uv1 = uv1 + 1
+		if slot1 > #slot0 then
+			slot1 = 
+			-- Decompilation error in this vicinity:
+			slot1 + 1
 
-			uv2(slot0)
+
+			-- Decompilation error in this vicinity:
+			slot1 + 1(slot0)
 		else
-			uv3(slot0, slot1, function ()
-				uv0 = uv0 + 1
+			slot3(slot0, slot1, function ()
+				slot0 = slot0 + 1
 
-				uv1(uv2, uv0)
+				slot1(slot2, slot1)
 			end)
 		end
 	end
 
 	function slot5(slot0, slot1, slot2)
-		if type(uv0[slot1][1]) == "table" then
+		if type(slot0[slot1][1]) == "table" then
 			slot3 = slot3[math.random(1, #slot3)]
 		end
 
-		uv1:callActionCB("update", slot3)
+		slot1:callActionCB("update", slot3)
 
-		if slot0 == uv1.roles[1] and uv0[slot1][3] then
-			slot3 = uv0[slot1][3]
+		if slot0 == slot1.roles[1] and slot0[slot1][3] then
+			slot3 = slot0[slot1][3]
 		end
 
-		if slot0 == uv1.roles[1] and uv2:getUniqueShipAction(slot3, uv1.boatVO.skinId) then
+		if slot0 == slot1.roles[1] and slot2:getUniqueShipAction(slot3, slot1.boatVO.skinId) then
 			slot3 = slot4
 		end
 
 		slot0:SetAction(slot3, 0)
 
-		if _.detect(uv3, function (slot0)
-			return slot0[1] == uv0 and uv1.id == slot0[3]
+		if _.detect(slot3, function (slot0)
+			return slot0[1] == slot0 and slot1.id == slot0[3]
 		end) then
 			slot5 = slot4[2]
 
-			if uv1.timer[slot0] then
-				uv1.timer[slot0]:Stop()
+			if slot1.timer[slot0] then
+				slot1.timer[slot0]:Stop()
 
-				uv1.timer[slot0] = nil
+				slot1.timer[slot0] = nil
 			end
 
-			uv1.timer[slot0] = Timer.New(function ()
-				uv0.timer[uv1]:Stop()
+			slot1.timer[slot0] = Timer.New(function ()
+				slot0.timer[slot1]:Stop()
 
-				uv0.timer[uv1] = nil
+				slot0.timer[slot1].Stop.timer[slot0.timer[slot1]] = 
+				-- Decompilation error in this vicinity:
+				nil
 
-				uv2()
+
+				-- Decompilation error in this vicinity:
+				nil()
 			end, slot5, 1)
 
-			uv1.timer[slot0]:Start()
+			slot1.timer[slot0]:Start()
 		else
 			slot0:SetActionCallBack(function (slot0)
 				if slot0 == "finish" then
-					uv0:SetActionCallBack(nil)
-					uv1()
+					slot0:SetActionCallBack(nil)
+					slot0.SetActionCallBack()
 				end
 			end)
 		end
@@ -827,38 +854,84 @@ function slot0.playAnims(slot0, slot1)
 
 	slot0.timer = {}
 
+
+	-- Decompilation error in this vicinity:
 	function ()
-		if uv0:hasAnimator() then
-			uv1:endSpineAnimator(uv0)
-			uv1:startSpineAnimator(uv0)
+		if slot0:hasAnimator() then
+			slot1:endSpineAnimator(slot1.endSpineAnimator)
+			slot1:startSpineAnimator(slot1.startSpineAnimator)
 		end
 
-		uv2 = 0
+		slot2 = 0
 
-		for slot3, slot4 in pairs(uv1.roles) do
-			uv3(slot4, 1, function ()
-				uv0 = uv0 + 1
+		for slot3, slot4 in pairs(slot1.roles) do
+			slot3(slot4, 1, function ()
+				slot0 = slot0 + 1
 
-				uv1(uv2, uv0)
+				slot1(slot2, slot1)
 			end)
 		end
 	end()
 end
 
-function slot0.playTailActions(slot0, slot1)
+slot0.playTailActions = function (slot0, slot1)
+	slot2 = slot1:getTailAction()
+
 	for slot6, slot7 in pairs(slot0.roles) do
-		slot7:SetAction(slot1:getTailAction(), 0)
+		slot7:SetAction(slot2, 0)
 	end
 end
 
-function slot0.startSpineAnimator(slot0, slot1, slot2)
+slot0.startSpineAnimator = function (slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot2 = slot2 or 0
 	slot0.animtorNameIndex = slot0.animtorNameIndex or math.random(1, #slot1:getAnimtorControlName(slot2 or 0))
 	slot6 = slot0.viewComponent.furnitureModals[slot1.id]:Find(slot0.animtorNameIndex or math.random(1, #slot1.getAnimtorControlName(slot2 or 0)))
 	slot7 = slot6:GetComponent(typeof(Animator))
 
 	SetParent(slot0.tf, slot6)
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot2 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 4-14, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 15-19, warpins: 1 ---
+	slot5 = math.random(1, #slot1.getAnimtorControlName(slot2 or 0))
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 20-44, warpins: 2 ---
 	if slot1:hasAnimatorMask() then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 45-74, warpins: 1 ---
 		slot8 = slot1:getAnimatorMaskConfig()
 		slot9 = slot3:Find("mask")
 		slot9.sizeDelta = Vector2(slot8[1][1], slot8[1][2])
@@ -866,146 +939,604 @@ function slot0.startSpineAnimator(slot0, slot1, slot2)
 
 		setActive(slot9, true)
 		SetParent(slot6, slot9)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 75-82, warpins: 2 ---
 	if slot6:GetComponent(typeof(DftAniEvent)) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 83-92, warpins: 1 ---
 		slot9 = 1
 
 		slot8:SetTriggerEvent(function (slot0)
-			if uv0.localScale.x < 0 then
-				uv1 = -1
 
-				uv2:changeInnerDir(1)
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-6, warpins: 1 ---
+			if slot0.localScale.x < 0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 7-12, warpins: 1 ---
+				slot1 = -1
+
+				slot2:changeInnerDir(1)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 13-13, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
 		end)
 		slot8:SetEndEvent(function (slot0)
-			if uv0 == -1 then
-				uv1:changeInnerDir(-1)
 
-				uv0 = 1
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-3, warpins: 1 ---
+			if slot0 == -1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 4-9, warpins: 1 ---
+				slot1:changeInnerDir(-1)
+
+				slot0 = 1
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 10-10, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
 		end)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 93-98, warpins: 2 ---
 	setActive(slot6, true)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
 end
 
-function slot0.endSpineAnimator(slot0, slot1, slot2)
+slot0.endSpineAnimator = function (slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if not slot0.animtorNameIndex then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-4, warpins: 1 ---
 		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-6, warpins: 2 ---
 	if not slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 7-7, warpins: 1 ---
 		slot2 = 0
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 8-9, warpins: 2 ---
 	if slot1 and slot1:hasAnimator() and slot0.viewComponent.furnitureModals[slot1.id] then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 21-31, warpins: 1 ---
 		slot4 = nil
+		slot5 = slot1:getAnimtorControlGoName(slot2, slot0.animtorNameIndex)
 
 		if slot1:hasAnimatorMask() then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 32-51, warpins: 1 ---
 			setActive(slot6, false)
-			SetParent(slot3:Find("mask/" .. slot1:getAnimtorControlGoName(slot2, slot0.animtorNameIndex)), slot3)
+			SetParent(slot3:Find("mask/" .. slot5), slot3)
+			--- END OF BLOCK #0 ---
+
+
+
 		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 52-56, warpins: 1 ---
 			slot4 = slot3:Find(slot5)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 57-64, warpins: 2 ---
 		if slot4:GetComponent(typeof(DftAniEvent)) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 65-72, warpins: 1 ---
 			slot6:SetTriggerEvent(nil)
 			slot6:SetTriggerEvent(nil)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 73-76, warpins: 2 ---
 		setActive(slot4, false)
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 77-79, warpins: 4 ---
 	slot0.animtorNameIndex = nil
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
 end
 
-function slot0.setSpineAnimtorParent(slot0, slot1)
+slot0.setSpineAnimtorParent = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
 	if slot1 and slot1:hasAnimator() and slot0.viewComponent.furnitureModals[slot1.id] then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 14-18, warpins: 1 ---
 		SetParent(slot0.tf, slot2, true)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 19-19, warpins: 4 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
-function slot0.breakSpineAnim(slot0, slot1)
+slot0.breakSpineAnim = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0.roles and #slot0.roles > 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 9-14, warpins: 1 ---
 		slot2 = 0
 
 		function slot3(slot0)
-			uv0 = uv0 + 1
 
-			slot0:SetAction(slot1, 0)
-			slot0:SetActionCallBack(nil)
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-23, warpins: 1 ---
+			slot0 + 1.SetAction(slot0, slot1, 0)
+			slot0 + 1.SetActionCallBack(slot0, nil)
 
-			if uv0 == #uv1.roles then
-				uv1:clearSpine()
+			if slot0 + 1 == #slot1.roles then
 
-				if uv2 then
-					uv2()
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 24-30, warpins: 1 ---
+				slot1:clearSpine()
+
+				if slot1.clearSpine then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 31-32, warpins: 1 ---
+					slot2()
+					--- END OF BLOCK #0 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 33-33, warpins: 3 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 15-37, warpins: 0 ---
 		for slot7, slot8 in pairs(slot0.roles) do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 15-21, warpins: 1 ---
 			slot8:SetActionCallBack(nil)
 
 			if slot0.breakActionName then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 22-31, warpins: 1 ---
 				slot8:SetAction(slot0.breakActionName, 0)
 				slot8:SetActionCallBack(function (slot0)
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-2, warpins: 1 ---
 					if slot0 == "finish" then
-						uv0(uv1)
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 3-5, warpins: 1 ---
+						slot0(slot0)
+						--- END OF BLOCK #0 ---
+
+
+
 					end
+
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 6-6, warpins: 2 ---
+					return
+					--- END OF BLOCK #1 ---
+
+
+
 				end)
+				--- END OF BLOCK #0 ---
+
+
+
 			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 32-34, warpins: 1 ---
 				slot3(slot8)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 35-35, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 36-37, warpins: 2 ---
+			--- END OF BLOCK #2 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 38-38, warpins: 1 ---
 		return
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 39-40, warpins: 2 ---
 	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 41-42, warpins: 1 ---
 		slot1()
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 43-44, warpins: 3 ---
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
-function slot0.getSpineNormalAction(slot0, slot1)
+slot0.getSpineNormalAction = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot1 == slot0.spineAnimUI then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-6, warpins: 1 ---
 		return "stand2"
-	elseif slot0.spineFurniture then
-		slot2, slot3 = slot0.spineFurniture:getSpineName()
+		--- END OF BLOCK #0 ---
 
-		if not slot3 or not slot3 then
-			slot4 = "normal"
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 7-9, warpins: 1 ---
+		if slot0.spineFurniture then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 10-15, warpins: 1 ---
+			slot2, slot3 = slot0.spineFurniture:getSpineName()
+
+			if not slot3 or not slot3 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 18-18, warpins: 2 ---
+				slot4 = "normal"
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 19-19, warpins: 2 ---
+			return slot4
+			--- END OF BLOCK #1 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
 
-		return slot4
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 20-21, warpins: 3 ---
 	return "stand2"
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
-function slot0.clearSpine(slot0)
+slot0.clearSpine = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0.viewComponent:emit(BackyardMainMediator.CLEAR_SPINE, slot0.boatVO.id)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
-function slot0.clearSpineInteraction(slot0, slot1)
-	uv0.print("clear spine interaction.............")
+slot0.clearSpineInteraction = function (slot0, slot1)
 
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0.print("clear spine interaction.............")
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 9-49, warpins: 0 ---
 	for slot5, slot6 in pairs(slot0.roles) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 9-23, warpins: 1 ---
 		slot6:SetActionCallBack(nil)
 		slot6:SetAction(slot0:getSpineNormalAction(slot6), 0)
 
 		if slot5 == 3 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 24-32, warpins: 1 ---
 			setActive(tf(go(slot6)).parent, false)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 33-35, warpins: 2 ---
 		if slot0.timer and slot0.timer[slot6] then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 40-47, warpins: 1 ---
 			slot0.timer[slot6]:Stop()
 
 			slot0.timer[slot6] = nil
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 48-49, warpins: 4 ---
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 50-71, warpins: 1 ---
 	slot0.roles = {}
 	slot0.model.localScale = Vector3(1, 1, 1)
 
@@ -1013,22 +1544,49 @@ function slot0.clearSpineInteraction(slot0, slot1)
 	SetParent(slot0.tf, slot0.viewComponent.floorContain, true)
 
 	if slot0.spineFurniture and slot0.spineFurniture:getSpineAniPos() then
-		slot0.tf.localPosition = uv0.getLocalPos(slot0.spineFurniture:getSpineAinTriggerPos())
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 78-87, warpins: 1 ---
+		slot0.tf.localPosition = slot0.getLocalPos(slot0.spineFurniture:getSpineAinTriggerPos())
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 88-110, warpins: 3 ---
 	slot0:closeBodyMask()
 
 	slot0.spineFurniture = nil
 	slot0.breakActionName = nil
-	slot0.tf.localScale = Vector3(uv1, uv1, 1)
+	slot0.tf.localScale = Vector3(slot1, slot1, 1)
 	slot0.tf.eulerAngles = Vector3(0, 0, 0)
 	slot0.save = slot1
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
 end
 
-function slot0.updateStageInterAction(slot0, slot1)
+slot0.updateStageInterAction = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.boatVO:getStageId()
 
 	if slot1 and slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 9-51, warpins: 1 ---
 		slot0.isMove = false
 
 		slot0:removeItem()
@@ -1043,175 +1601,583 @@ function slot0.updateStageInterAction(slot0, slot1)
 		slot0.spineAnimUI:SetAction("stand2", 0)
 
 		if slot0.viewComponent.maps[slot2] then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 52-60, warpins: 1 ---
 			slot0.viewComponent.maps[slot3].afterSortFunc(slot0.viewComponent.maps[slot3].sortedItems)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 61-73, warpins: 2 ---
 		slot0.viewComponent:emit(BackyardMainMediator.ADD_MOVE_FURNITURE, slot0.boatVO.id, slot3)
 		slot0:updateShadowTF(false)
+		--- END OF BLOCK #1 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 74-74, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
-function slot0.clearStageInterAction(slot0)
+slot0.clearStageInterAction = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0.stageId = nil
 
 	SetParent(slot0.tf, slot0.floorGrid)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
-function slot0.clearStage(slot0)
+slot0.clearStage = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0.stageId then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-11, warpins: 1 ---
 		slot0.viewComponent:emit(BackyardMainMediator.CLEAR_STAGE_INTERACTION, slot0.boatVO.id)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
-function slot0.updateArchInterAction(slot0, slot1)
+slot0.updateArchInterAction = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0:removeItem()
 
 	if slot0.nextPosition then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 7-12, warpins: 1 ---
 		slot0.targetLPosition = slot0:calcOnFurnitureLPos(slot0.nextPosition, slot1)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 13-31, warpins: 2 ---
 	slot0.archId = slot1
 
 	SetParent(slot0.tf, slot0.viewComponent.furnitureModals[slot1].Find(slot2, "childs"), true)
 
 	if slot0.viewComponent.furnitureModals[slot1]:Find(BackYardConst.ARCH_MASK_NAME) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 32-38, warpins: 1 ---
 		slot3:SetAsLastSibling()
 		setActive(slot3, true)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 39-46, warpins: 2 ---
 	slot0:createItem(slot0.boatVO:getPosition())
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
-function slot0.clearArchInterAction(slot0)
+slot0.clearArchInterAction = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0:removeItem()
 
 	if slot0.nextPosition then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 7-9, warpins: 1 ---
 		if slot0.stageId then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 10-16, warpins: 1 ---
 			slot0.targetLPosition = slot0:calcOnFurnitureLPos(slot0.nextPosition, slot0.stageId)
+			--- END OF BLOCK #0 ---
+
+
+
 		else
-			slot0.targetLPosition = uv0.getLocalPos(slot0.nextPosition)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 17-21, warpins: 1 ---
+			slot0.targetLPosition = slot0.getLocalPos(slot0.nextPosition)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 22-24, warpins: 3 ---
 	if slot0.stageId then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 25-37, warpins: 1 ---
 		SetParent(slot0.tf, slot0.viewComponent.furnitureModals[slot0.stageId].Find(slot1, "childs"), true)
+		--- END OF BLOCK #0 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 38-42, warpins: 1 ---
 		SetParent(slot0.tf, slot0.floorGrid, true)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 43-53, warpins: 2 ---
 	if slot0.viewComponent.furnitureModals[slot0.archId]:Find(BackYardConst.ARCH_MASK_NAME) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 54-57, warpins: 1 ---
 		setActive(slot2, false)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 58-67, warpins: 2 ---
 	slot0.archId = nil
 
 	slot0:createItem(slot0.boatVO:getPosition())
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
 end
 
-function slot0.calcOnFurnitureLPos(slot0, slot1, slot2)
-	return uv0.turnTransformLocalPos(uv0.getLocalPos(slot1), slot0.floorGrid, slot0.viewComponent.furnitureModals[slot2].Find(slot3, "childs"))
+slot0.calcOnFurnitureLPos = function (slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-17, warpins: 1 ---
+	return slot0.turnTransformLocalPos(slot0.getLocalPos(slot1), slot0.floorGrid, slot0.viewComponent.furnitureModals[slot2].Find(slot3, "childs"))
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
-function slot0.moveOnFurniture(slot0, slot1, slot2, slot3)
+slot0.moveOnFurniture = function (slot0, slot1, slot2, slot3)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0.stageId
 	slot5 = nil
 
 	if slot0.archId then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 6-12, warpins: 1 ---
 		slot5 = slot0:calcOnFurnitureLPos(slot1, slot0.archId)
+		--- END OF BLOCK #0 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 13-18, warpins: 1 ---
 		slot5 = slot0:calcOnFurnitureLPos(slot1, slot0.stageId)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 19-26, warpins: 2 ---
 	slot0:startMove(slot5, slot1, slot2, slot3)
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
-function slot0.move(slot0, slot1, slot2, slot3)
+slot0.move = function (slot0, slot1, slot2, slot3)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = nil
 
 	if slot0.archId then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-11, warpins: 1 ---
 		slot4 = slot0:calcOnFurnitureLPos(slot1, slot0.archId)
+		--- END OF BLOCK #0 ---
+
+
+
 	else
-		slot4 = uv0.getLocalPos(slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 12-16, warpins: 1 ---
+		slot4 = slot0.getLocalPos(slot1)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 17-24, warpins: 2 ---
 	slot0:startMove(slot4, slot1, slot2, slot3)
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
-function slot0.startMove(slot0, slot1, slot2, slot3, slot4)
+slot0.startMove = function (slot0, slot1, slot2, slot3, slot4)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot5 = math.floor(1 / slot0.speed)
 	slot0.nextPosition = slot2
 	slot0.targetLPosition = slot1
 
 	if not slot0.isMove then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 11-18, warpins: 1 ---
 		slot0.spineAnimUI:SetAction("walk", 0)
 
 		slot0.isMove = true
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot7 = uv0.getSign
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 19-28, warpins: 2 ---
+	slot7 = slot0.getSign
 
 	if (slot2.x >= slot0.boatVO:getPosition().x or slot2.y ~= slot6.y) and (slot2.x ~= slot6.x or slot6.y >= slot2.y) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 41-42, warpins: 2 ---
 		slot8 = false
+		--- END OF BLOCK #0 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 43-43, warpins: 2 ---
 		slot8 = true
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 44-48, warpins: 2 ---
 	slot7 = slot7(slot8)
 	slot8 = 1
 
 	if slot0.stageId then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 49-54, warpins: 1 ---
 		slot8 = slot0.viewComponent.furnitureModals[slot0.stageId].localScale.x
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot0.tf.localScale = Vector3(uv1 * slot7 * slot8, uv1, 1)
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 55-90, warpins: 2 ---
+	slot0.tf.localScale = Vector3(slot1 * slot7 * slot8, slot1, 1)
 
 	slot0:changeInnerDir(slot7)
 
 	slot0.moveNextTimer = Timer.New(function ()
-		if uv0.moveNextTimer then
-			uv0.moveNextTimer:Stop()
 
-			uv0.moveNextTimer = nil
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
+		if slot0.moveNextTimer then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 5-12, warpins: 1 ---
+			slot0.moveNextTimer:Stop()
+
+			slot0.moveNextTimer.Stop.moveNextTimer = nil
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
-		uv0.viewComponent:emit(BackyardMainMediator.ON_HALF_MOVE, uv0.boatVO.id, uv1)
+		--- END OF BLOCK #0 ---
 
-		if uv0.targetLPosition ~= uv2 then
-			LeanTween.cancel(uv0.go)
-			uv3(uv0.targetLPosition)
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 13-28, warpins: 2 ---
+		slot0.viewComponent:emit(BackyardMainMediator.ON_HALF_MOVE, slot0.boatVO.id, slot0.viewComponent)
+
+		if slot0.viewComponent.emit.targetLPosition ~= BackyardMainMediator.ON_HALF_MOVE then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 29-37, warpins: 1 ---
+			LeanTween.cancel(slot0.go)
+			slot3(slot0.targetLPosition)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
-		uv0:removeItem()
-		uv0:createItem(uv1)
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 38-47, warpins: 2 ---
+		slot0:removeItem()
+		slot0.removeItem:createItem(slot0.removeItem)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
 	end, slot5 / 2, 1)
 
 	slot0.moveNextTimer:Start()
 
 	slot0.shadowTF.localScale = Vector2(slot7, 1)
 
-	function (slot0)
-		uv0.shadowTF.localScale = Vector2(uv1, 1)
-
-		LeanTween.moveLocal(uv0.go, Vector3(slot0.x, slot0.y + uv2, 0), uv3):setOnUpdate(System.Action_float(function (slot0)
-			uv0:updateShadowPos()
-		end)):setOnComplete(System.Action(function ()
-			if uv0 then
-				uv1.spineAnimUI:SetAction("stand2", 0)
-
-				uv1.isMove = nil
-			end
-
-			if uv2 then
-				uv2()
-			end
-		end))
-	end(slot1)
-end
-
-function slot0.cancelMove(slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-34, warpins: 1 ---
+	function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-35, warpins: 1 ---
+		slot0.shadowTF.localScale = Vector2(slot0.shadowTF, 1)
+
+		LeanTween.moveLocal(slot0.go, Vector3(slot0.x, slot0.y + slot2, 0), ):setOnUpdate(System.Action_float(function (slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-5, warpins: 1 ---
+			slot0:updateShadowPos()
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end)):setOnComplete(System.Action(function ()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-3, warpins: 1 ---
+			if slot0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 4-13, warpins: 1 ---
+				slot1.spineAnimUI:SetAction("stand2", 0)
+
+				slot1.spineAnimUI.isMove = nil
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 14-16, warpins: 2 ---
+			if slot2 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 17-18, warpins: 1 ---
+				slot2()
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 19-19, warpins: 2 ---
+			return
+			--- END OF BLOCK #2 ---
+
+
+
+		end))
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end(slot1)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot0.cancelMove = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0.moveNextTimer then
 
 		-- Decompilation error in this vicinity:
@@ -1225,6 +2191,14 @@ function slot0.cancelMove(slot0)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 10-15, warpins: 2 ---
 	if LeanTween.isTweening(slot0.go) then
 
 		-- Decompilation error in this vicinity:
@@ -1236,6 +2210,14 @@ function slot0.cancelMove(slot0)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 20-22, warpins: 2 ---
 	if slot0.isMove then
 
 		-- Decompilation error in this vicinity:
@@ -1249,19 +2231,27 @@ function slot0.cancelMove(slot0)
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 31-34, warpins: 2 ---
 	slot0:updateShadowPos()
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-function slot0.acquireEffect(slot0, slot1, slot2)
+slot0.acquireEffect = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-85, warpins: 1 ---
+	--- BLOCK #0 1-2, warpins: 1 ---
 	if slot1 == 0 then
 
 		-- Decompilation error in this vicinity:
@@ -1273,6 +2263,14 @@ function slot0.acquireEffect(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 4-8, warpins: 1 ---
 	if IsNil(slot0.expTF) then
 
 		-- Decompilation error in this vicinity:
@@ -1284,6 +2282,14 @@ function slot0.acquireEffect(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 10-14, warpins: 1 ---
 	slot3 = nil
 
 	if slot2 == BackYardConst.ADDITION_TYPE_MONEY then
@@ -1337,6 +2343,22 @@ function slot0.acquireEffect(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 33-38, warpins: 4 ---
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 39-47, warpins: 0 ---
 	for slot7 = 0, slot0.expTF.childCount - 1, 1 do
 
 		-- Decompilation error in this vicinity:
@@ -1348,6 +2370,14 @@ function slot0.acquireEffect(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 48-83, warpins: 1 ---
 	setActive(slot3, true)
 	setText(findTF(slot3, "Text"), slot1)
 	LeanTween.cancel(slot0.expTF.gameObject)
@@ -1355,9 +2385,9 @@ function slot0.acquireEffect(slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-9, warpins: 1 ---
-		setActive(uv0, false)
+		setActive(setActive, false)
 
-		uv1.expTF.localPosition = uv2
+		slot1.expTF.localPosition = false
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1367,16 +2397,32 @@ function slot0.acquireEffect(slot0, slot1, slot2)
 	end))
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 84-84, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 85-85, warpins: 2 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-function slot0.playIntimacyEffect(slot0)
+slot0.playIntimacyEffect = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-23, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0.hasEffect then
 
 		-- Decompilation error in this vicinity:
@@ -1388,6 +2434,14 @@ function slot0.playIntimacyEffect(slot0)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-22, warpins: 1 ---
 	slot0.hasEffect = true
 
 	ResourceMgr.Inst:getAssetAsync("Effect/Heart", "", UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
@@ -1397,22 +2451,22 @@ function slot0.playIntimacyEffect(slot0)
 		slot1 = Instantiate(slot0)
 
 		pg.ViewUtils.SetLayer(tf(slot1), Layer.UI)
-		tf(slot1):SetParent(uv0.tf, false)
+		tf(slot1):SetParent(slot0.tf, false)
 
 		tf(slot1).localPosition = Vector3(0, 200, -100)
 		tf(slot1).localScale = Vector3(100, 100, 100)
-		uv0.removeEffectTimer = Timer.New(function ()
+		slot0.removeEffectTimer = Timer.New(function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-16, warpins: 1 ---
-			Destroy(uv0)
+			Destroy(Destroy)
 
-			uv0 = nil
+			slot0 = nil
 
-			uv1.removeEffectTimer:Stop()
+			slot1.removeEffectTimer:Stop()
 
-			uv1.removeEffectTimer = nil
-			uv1.hasEffect = nil
+			slot1.removeEffectTimer.removeEffectTimer = nil
+			nil.hasEffect = nil
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1421,7 +2475,7 @@ function slot0.playIntimacyEffect(slot0)
 
 		end, 2, 1)
 
-		uv0.removeEffectTimer:Start()
+		slot0.removeEffectTimer:Start()
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1431,13 +2485,21 @@ function slot0.playIntimacyEffect(slot0)
 	end), true, true)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 23-23, warpins: 2 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-function slot0.updateInimacy(slot0, slot1)
+slot0.updateInimacy = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-12, warpins: 1 ---
@@ -1445,22 +2507,30 @@ function slot0.updateInimacy(slot0, slot1)
 	onButton(slot0, slot0.inimacyTF, function ()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-37, warpins: 1 ---
-		if not uv0.boatVO:hasInterActionFurnitrue() and not uv0.boatVO:hasSpineInterAction() and not uv0.boatVO:hasSpineExtra() then
+		--- BLOCK #0 1-7, warpins: 1 ---
+		if not slot0.boatVO:hasInterActionFurnitrue() and not slot0.boatVO:hasSpineInterAction() and not slot0.boatVO:hasSpineExtra() then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 22-26, warpins: 1 ---
-			uv0:switchAnimation("motou")
+			slot0:switchAnimation("motou")
 			--- END OF BLOCK #0 ---
 
 
 
 		end
 
-		uv0.viewComponent:emit(BackyardMainMediator.ADD_INTIMACY, uv0.boatVO.id)
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 27-37, warpins: 4 ---
+		slot0.viewComponent:emit(BackyardMainMediator.ADD_INTIMACY, slot0.boatVO.id)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
 
 
@@ -1473,7 +2543,7 @@ function slot0.updateInimacy(slot0, slot1)
 
 end
 
-function slot0.updateMoney(slot0, slot1)
+slot0.updateMoney = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-12, warpins: 1 ---
@@ -1481,22 +2551,30 @@ function slot0.updateMoney(slot0, slot1)
 	onButton(slot0, slot0.moneyTF, function ()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-37, warpins: 1 ---
-		if not uv0.boatVO:hasInterActionFurnitrue() and not uv0.boatVO:hasSpineInterAction() and not uv0.boatVO:hasSpineExtra() then
+		--- BLOCK #0 1-7, warpins: 1 ---
+		if not slot0.boatVO:hasInterActionFurnitrue() and not slot0.boatVO:hasSpineInterAction() and not slot0.boatVO:hasSpineExtra() then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 22-26, warpins: 1 ---
-			uv0:switchAnimation("motou")
+			slot0:switchAnimation("motou")
 			--- END OF BLOCK #0 ---
 
 
 
 		end
 
-		uv0.viewComponent:emit(BackyardMainMediator.ADD_MONEY, uv0.boatVO.id)
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 27-37, warpins: 4 ---
+		slot0.viewComponent:emit(BackyardMainMediator.ADD_MONEY, slot0.boatVO.id)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
 
 
@@ -1509,10 +2587,10 @@ function slot0.updateMoney(slot0, slot1)
 
 end
 
-function slot0.switchAnimation(slot0, slot1)
+slot0.switchAnimation = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-33, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0.isAnim then
 
 		-- Decompilation error in this vicinity:
@@ -1524,6 +2602,14 @@ function slot0.switchAnimation(slot0, slot1)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-32, warpins: 1 ---
 	slot0.isAnim = true
 	slot0.canvasGroup.blocksRaycasts = false
 
@@ -1535,42 +2621,58 @@ function slot0.switchAnimation(slot0, slot1)
 	slot0.spineAnimUI:SetActionCallBack(function (slot0)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-33, warpins: 1 ---
+		--- BLOCK #0 1-2, warpins: 1 ---
 		if slot0 == "finish" then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 3-32, warpins: 1 ---
-			uv0.spineAnimUI:SetAction("stand2", 0)
-			uv0.viewComponent:emit(BackyardMainMediator.ADD_BOAT_MOVE, uv0.boatVO.id)
+			slot0.spineAnimUI:SetAction("stand2", 0)
+			slot0.viewComponent:emit(BackyardMainMediator.ADD_BOAT_MOVE, slot0.boatVO.id)
 
-			uv0.isAnim = false
-			uv0.canvasGroup.blocksRaycasts = true
+			slot0.isAnim = false
+			slot0.canvasGroup.blocksRaycasts = true
 
-			uv0.spineAnimUI:SetActionCallBack(nil)
+			slot0.spineAnimUI:SetActionCallBack(nil)
 			--- END OF BLOCK #0 ---
 
 
 
 		end
 
-		return
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 33-33, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
 
 
 
 	end)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 33-33, warpins: 2 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-function slot0.addSpineExtra(slot0, slot1, slot2)
+slot0.addSpineExtra = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-73, warpins: 1 ---
+	--- BLOCK #0 1-53, warpins: 1 ---
 	SetActive(slot0.shipGridContainer, false)
 	slot0:removeItem()
 	slot0:updateShadowTF(false)
@@ -1579,7 +2681,7 @@ function slot0.addSpineExtra(slot0, slot1, slot2)
 
 	SetParent(slot0.tf, slot3, true)
 
-	slot0.tf.localScale = Vector3(uv0 * slot5[3][1], uv0 * slot5[3][2], 1)
+	slot0.tf.localScale = Vector3(slot0 * slot5[3][1], slot0 * slot5[3][2], 1)
 	slot0.tf.anchoredPosition = Vector3(slot5[2][1], slot5[2][2], 0)
 
 	if slot0.viewComponent.furnitureVOs[slot1]:hasAnimator() then
@@ -1593,6 +2695,14 @@ function slot0.addSpineExtra(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 59-64, warpins: 2 ---
 	if slot4:getSpineExtraBodyMask(slot2) ~= nil and #slot6 > 0 then
 
 		-- Decompilation error in this vicinity:
@@ -1604,17 +2714,25 @@ function slot0.addSpineExtra(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 73-73, warpins: 3 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-function slot0.clearSpineExtra(slot0, slot1, slot2)
+slot0.clearSpineExtra = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-38, warpins: 1 ---
+	--- BLOCK #0 1-23, warpins: 1 ---
 	SetParent(slot0.tf, slot0.viewComponent.floorContain, true)
 
 	slot3 = slot0.viewComponent.furnitureModals[slot1]
@@ -1632,19 +2750,27 @@ function slot0.clearSpineExtra(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 31-38, warpins: 3 ---
 	slot0.tf.eulerAngles = Vector3(0, 0, 0)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.showBodyMask(slot0, slot1, slot2)
+slot0.showBodyMask = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-93, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot1[1]
 	slot4 = slot1[2][1]
 	slot5 = slot1[2][2]
@@ -1669,6 +2795,14 @@ function slot0.showBodyMask(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 32-34, warpins: 2 ---
 	if not slot1[4] then
 
 		-- Decompilation error in this vicinity:
@@ -1680,6 +2814,14 @@ function slot0.showBodyMask(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 36-37, warpins: 2 ---
 	if slot2 ~= 1 or not slot3 then
 
 		-- Decompilation error in this vicinity:
@@ -1691,6 +2833,14 @@ function slot0.showBodyMask(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 41-61, warpins: 2 ---
 	slot0.isShowBodyMask = true
 
 	setActive(slot0.bodyMask, true)
@@ -1710,6 +2860,14 @@ function slot0.showBodyMask(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 65-84, warpins: 2 ---
 	slot8.localPosition = slot9(-1 * slot10 * slot7[1], -1 * slot7[2], 0)
 	rtf(slot0.bodyMask).sizeDelta = Vector2(slot4, slot5)
 	slot9 = slot0
@@ -1726,20 +2884,28 @@ function slot0.showBodyMask(slot0, slot1, slot2)
 
 	end
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 88-93, warpins: 2 ---
 	slot8(slot9, slot10)
 	SetParent(slot0.model, slot0.bodyMask)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-function slot0.closeBodyMask(slot0, slot1)
+slot0.closeBodyMask = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-58, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if not slot0.bodyMask or not slot0.isShowBodyMask then
 
 		-- Decompilation error in this vicinity:
@@ -1751,6 +2917,14 @@ function slot0.closeBodyMask(slot0, slot1)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 8-40, warpins: 2 ---
 	setActive(slot0.bodyMask, false)
 	SetParent(slot0.model, slot0.tf)
 	slot0.model:SetSiblingIndex(1)
@@ -1769,6 +2943,14 @@ function slot0.closeBodyMask(slot0, slot1)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 44-53, warpins: 2 ---
 	if slot0.bodyMask:GetComponent(typeof(Image)).enabled == false then
 
 		-- Decompilation error in this vicinity:
@@ -1780,41 +2962,81 @@ function slot0.closeBodyMask(slot0, slot1)
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 56-58, warpins: 2 ---
 	slot0.isShowBodyMask = nil
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-function slot0.dispose(slot0)
+slot0.dispose = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-93, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0.timer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 4-14, warpins: 1 ---
+		--- BLOCK #0 4-7, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 8-12, warpins: 0 ---
 		for slot4, slot5 in pairs(slot0.timer) do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 8-12, warpins: 1 ---
+			--- BLOCK #0 8-10, warpins: 1 ---
 			slot5:Stop()
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 11-12, warpins: 2 ---
+			--- END OF BLOCK #1 ---
 
 
 
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 13-14, warpins: 1 ---
 		slot0.timer = nil
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
 
 
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 15-17, warpins: 2 ---
 	if slot0.dragTrigger then
 
 		-- Decompilation error in this vicinity:
@@ -1828,6 +3050,14 @@ function slot0.dispose(slot0)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 23-30, warpins: 2 ---
 	pg.DelegateInfo.Dispose(slot0)
 
 	if slot0.moveNextTimer then
@@ -1843,6 +3073,14 @@ function slot0.dispose(slot0)
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 37-39, warpins: 2 ---
 	if slot0.removeEffectTimer then
 
 		-- Decompilation error in this vicinity:
@@ -1856,6 +3094,14 @@ function slot0.dispose(slot0)
 
 	end
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 46-51, warpins: 2 ---
 	if LeanTween.isTweening(slot0.go) then
 
 		-- Decompilation error in this vicinity:
@@ -1867,6 +3113,14 @@ function slot0.dispose(slot0)
 
 	end
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 56-61, warpins: 2 ---
 	slot0.canvasGroup.blocksRaycasts = true
 
 	if slot0.spineAnimUI then
@@ -1880,6 +3134,14 @@ function slot0.dispose(slot0)
 
 	end
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 67-69, warpins: 2 ---
 	if slot0.shadowTF then
 
 		-- Decompilation error in this vicinity:
@@ -1891,12 +3153,20 @@ function slot0.dispose(slot0)
 
 	end
 
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 73-93, warpins: 2 ---
 	slot0:closeBodyMask(true)
 	PoolMgr.GetInstance():ReturnSpineChar(slot0.boatVO:getPrefab(), go(slot0.model))
 	Destroy(slot0.go)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #7 ---
 
 
 

@@ -2,7 +2,7 @@ slot0 = class("BackYardHouseVO")
 slot0.MAX_SIZE_X = 23
 slot0.MAX_SIZE_Y = 23
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.level = slot1.level or 1
 	slot0.ships = slot1.ships or {}
 	slot0.furnitures = slot1.furnitures or {}
@@ -22,17 +22,19 @@ function slot0.Ctor(slot0, slot1)
 	end
 end
 
-function slot0.getMaze(slot0, slot1)
+slot0.getMaze = function (slot0, slot1)
 	slot2 = {}
 
-	for slot6 = uv0.MAX_SIZE_X, 0, -1 do
-		for slot11 = uv0.MAX_SIZE_Y, 0, -1 do
+	for slot6 = slot0.MAX_SIZE_X, 0, -1 do
+		slot7 = {}
+
+		for slot11 = slot0.MAX_SIZE_Y, 0, -1 do
 			if slot1 and slot1.x == slot6 and slot1.y == slot11 then
-				table.insert({}, 0)
+				table.insert(slot7, 0)
 			elseif slot11 < slot0.startY or slot6 < slot0.startX then
 				table.insert(slot7, 1)
 			else
-				table.insert(slot7, slot0:canMoveBoat(nil, Vector2(slot6, slot11)) and 0 or 1)
+				table.insert(slot7, (slot0:canMoveBoat(nil, Vector2(slot6, slot11)) and 0) or 1)
 			end
 		end
 
@@ -42,38 +44,60 @@ function slot0.getMaze(slot0, slot1)
 	return slot2
 end
 
-function slot0.printMaze(slot0)
+slot0.printMaze = function (slot0)
 	for slot5, slot6 in ipairs(slot1) do
+		slot7 = ""
+
 		for slot11, slot12 in ipairs(slot6) do
-			slot7 = "" .. " " .. slot12
+			slot7 = slot7 .. " " .. slot12
 		end
 
 		print(slot7)
 	end
 end
 
-function slot0.addFurniture(slot0, slot1)
+slot0.addFurniture = function (slot0, slot1)
 	slot0.furnitures[slot1.id] = slot1
 end
 
-function slot0.getExpandId(slot0)
+slot0.getFurnAndPaperIds = function (slot0)
+	slot1 = {}
+
+	for slot5, slot6 in pairs(slot0.furnitures) do
+		table.insert(slot1, slot6.id)
+	end
+
+	if slot0.wallPaper then
+		table.insert(slot1, slot0.wallPaper.id)
+	end
+
+	if slot0.floorPaper then
+		table.insert(slot1, slot0.floorPaper.id)
+	end
+
+	return slot1
+end
+
+slot0.getExpandId = function (slot0)
+	slot1 = slot0.level - 1
+
 	for slot5, slot6 in ipairs(slot0.expandIds) do
-		if slot0.shopCfg[slot6].limit_args[1][2] == slot0.level - 1 then
+		if slot0.shopCfg[slot6].limit_args[1][2] == slot1 then
 			return slot6
 		end
 	end
 end
 
-function slot0.setBound(slot0)
+slot0.setBound = function (slot0)
 	slot0.startX = 12 - (slot0.level - 1) * 4
 	slot0.startY = 12 - (slot0.level - 1) * 4
-	slot0.endX = uv0.MAX_SIZE_X
-	slot0.endY = uv0.MAX_SIZE_Y
+	slot0.endX = slot0.MAX_SIZE_X
+	slot0.endY = slot0.MAX_SIZE_Y
 	slot0.wallX = slot0.endX + 1
 	slot0.wallY = slot0.endY + 1
 end
 
-function slot0.checkBound(slot0, slot1)
+slot0.checkBound = function (slot0, slot1)
 	for slot5, slot6 in ipairs(slot1) do
 		if slot6.x < slot0.startX or slot6.y < slot0.startY or slot0.endX < slot6.x or slot0.endY < slot6.y then
 			return false
@@ -83,39 +107,41 @@ function slot0.checkBound(slot0, slot1)
 	return true
 end
 
-function slot0.updateLevel(slot0, slot1)
+slot0.updateLevel = function (slot0, slot1)
 	slot0.level = slot1
 
 	slot0:setBound(slot1)
 end
 
-function slot0.setPreFurnitures(slot0, slot1)
+slot0.setPreFurnitures = function (slot0, slot1)
 	slot0.perFurnitures = slot1
 end
 
-function slot0.getPreFurnitures(slot0)
+slot0.getPreFurnitures = function (slot0)
 	return slot0.perFurnitures
 end
 
-function slot0.setPerWallPaper(slot0, slot1)
+slot0.setPerWallPaper = function (slot0, slot1)
 	slot0.perWallPaper = slot1
 end
 
-function slot0.getPerWallPaper(slot0)
+slot0.getPerWallPaper = function (slot0)
 	return slot0.perWallPaper
 end
 
-function slot0.setPerFloorPaper(slot0, slot1)
+slot0.setPerFloorPaper = function (slot0, slot1)
 	slot0.perFloorPaper = slot1
 end
 
-function slot0.getPerFloorPaper(slot0)
+slot0.getPerFloorPaper = function (slot0)
 	return slot0.perFloorPaper
 end
 
-function slot0.getSortPreFurnitures(slot0)
+slot0.getSortPreFurnitures = function (slot0)
+	slot2 = {}
+
 	for slot6, slot7 in pairs(slot1) do
-		table.insert({}, slot7)
+		table.insert(slot2, slot7)
 	end
 
 	table.sort(slot2, function (slot0, slot1)
@@ -125,9 +151,11 @@ function slot0.getSortPreFurnitures(slot0)
 	return slot2
 end
 
-function slot0.getSortFurnitures(slot0)
+slot0.getSortFurnitures = function (slot0)
+	slot2 = {}
+
 	for slot6, slot7 in pairs(slot1) do
-		table.insert({}, slot7)
+		table.insert(slot2, slot7)
 	end
 
 	table.sort(slot2, function (slot0, slot1)
@@ -137,23 +165,23 @@ function slot0.getSortFurnitures(slot0)
 	return slot2
 end
 
-function slot0.hasChangeFloorPaper(slot0)
-	if not slot0.perFloorPaper and not slot0.floorPaper or slot0.perFloorPaper and slot0.floorPaper and slot0.perFloorPaper.id == slot0.floorPaper.id then
+slot0.hasChangeFloorPaper = function (slot0)
+	if (not slot0.perFloorPaper and not slot0.floorPaper) or (slot0.perFloorPaper and slot0.floorPaper and slot0.perFloorPaper.id == slot0.floorPaper.id) then
 		return false
 	end
 
 	return true
 end
 
-function slot0.hasChangeWallPaper(slot0)
-	if not slot0.perWallPaper and not slot0.wallPaper or slot0.perWallPaper and slot0.wallPaper and slot0.perWallPaper.id == slot0.wallPaper.id then
+slot0.hasChangeWallPaper = function (slot0)
+	if (not slot0.perWallPaper and not slot0.wallPaper) or (slot0.perWallPaper and slot0.wallPaper and slot0.perWallPaper.id == slot0.wallPaper.id) then
 		return false
 	end
 
 	return true
 end
 
-function slot0.hasChangeFurnitures(slot0)
+slot0.hasChangeFurnitures = function (slot0)
 	for slot4, slot5 in pairs(slot0.furnitures) do
 		if slot0:isChangeFurniture(slot5) or slot0:isAddFurniture(slot5) then
 			return true
@@ -177,7 +205,7 @@ function slot0.hasChangeFurnitures(slot0)
 	return false
 end
 
-function slot0.isChangeFurniture(slot0, slot1)
+slot0.isChangeFurniture = function (slot0, slot1)
 	if slot0.perFurnitures[slot1.id] then
 		if slot0.perFurnitures[slot1.id].dir ~= slot1.dir then
 			return true
@@ -209,7 +237,7 @@ function slot0.isChangeFurniture(slot0, slot1)
 	end
 end
 
-function slot0.isAddFurniture(slot0, slot1)
+slot0.isAddFurniture = function (slot0, slot1)
 	if not slot0.perFurnitures[slot1.id] then
 		return true
 	end
@@ -217,7 +245,7 @@ function slot0.isAddFurniture(slot0, slot1)
 	return false
 end
 
-function slot0.isRemoveFurnitrue(slot0, slot1)
+slot0.isRemoveFurnitrue = function (slot0, slot1)
 	for slot5, slot6 in pairs(slot0.furnitures) do
 		if slot1.id == slot5 then
 			return false
@@ -227,17 +255,19 @@ function slot0.isRemoveFurnitrue(slot0, slot1)
 	return true
 end
 
-function slot0.getFanceScaleByLevel(slot0)
+slot0.getFanceScaleByLevel = function (slot0)
 	return 0.52 + 0.16 * math.min(slot0.level, 3)
 end
 
-function slot0.canMoveFurniture(slot0, slot1, slot2)
+slot0.canMoveFurniture = function (slot0, slot1, slot2)
 	return _.all(slot0.furnitures[slot1].getOccupyGrid(slot3, slot2), function (slot0)
-		return uv1:checkShips(slot1, slot0) and uv1:checkFurnitruesWithOutChild(slot0, uv2)
+		slot1 = slot0:getSpineId()
+
+		return slot1:checkShips(slot1, slot0) and slot1:checkFurnitruesWithOutChild(slot0, slot1:checkShips(slot0))
 	end)
 end
 
-function slot0.canMoveBoat(slot0, slot1, slot2)
+slot0.canMoveBoat = function (slot0, slot1, slot2)
 	if slot0:checkShips(slot1, slot2) then
 		return slot0:checkFurnitruesWithOutChild(slot2)
 	else
@@ -245,7 +275,7 @@ function slot0.canMoveBoat(slot0, slot1, slot2)
 	end
 end
 
-function slot0.checkShips(slot0, slot1, slot2)
+slot0.checkShips = function (slot0, slot1, slot2)
 	if slot0:isBound(slot2) then
 		return false
 	end
@@ -271,9 +301,11 @@ function slot0.checkShips(slot0, slot1, slot2)
 	return true
 end
 
-function slot0.checkFurnitruesWithOutChild(slot0, slot1, slot2)
+slot0.checkFurnitruesWithOutChild = function (slot0, slot1, slot2)
 	for slot6, slot7 in pairs(slot0.furnitures) do
-		if (not slot2 or slot2 ~= slot7.id) and slot7:getPosition() and not slot7:isMat() and not slot7:hasParent() then
+		slot8 = slot7:getPosition()
+
+		if (not slot2 or slot2 ~= slot7.id) and slot8 and not slot7:isMat() and not slot7:hasParent() then
 			for slot13, slot14 in ipairs(slot9) do
 				if slot1.x == slot14.x and slot14.y == slot1.y then
 					return false, slot7.id
@@ -285,7 +317,7 @@ function slot0.checkFurnitruesWithOutChild(slot0, slot1, slot2)
 	return true
 end
 
-function slot0.checkFurnitruesWithChild(slot0, slot1)
+slot0.checkFurnitruesWithChild = function (slot0, slot1)
 	_.sort(slot2, function (slot0, slot1)
 		return slot1.parent < slot0.parent
 	end)
@@ -303,7 +335,7 @@ function slot0.checkFurnitruesWithChild(slot0, slot1)
 	return true
 end
 
-function slot0.canPutShip(slot0, slot1, slot2)
+slot0.canPutShip = function (slot0, slot1, slot2)
 	if slot0:checkShips(slot1, slot2) then
 		return slot0:checkFurnitruesWithChild(slot2)
 	else
@@ -311,7 +343,7 @@ function slot0.canPutShip(slot0, slot1, slot2)
 	end
 end
 
-function slot0.isBound(slot0, slot1)
+slot0.isBound = function (slot0, slot1)
 	if slot0.endX < slot1.x or slot1.x < slot0.startX then
 		return true
 	end
@@ -323,53 +355,53 @@ function slot0.isBound(slot0, slot1)
 	return false
 end
 
-function slot0.getFloorScaleByLevel(slot0)
+slot0.getFloorScaleByLevel = function (slot0)
 	return (slot0.level + 2) * 0.25 - 0.005
 end
 
-function slot0.setWallPaper(slot0, slot1)
+slot0.setWallPaper = function (slot0, slot1)
 	slot0.wallPaper = slot1
 end
 
-function slot0.getWallPaper(slot0)
+slot0.getWallPaper = function (slot0)
 	return slot0.wallPaper
 end
 
-function slot0.setFloorPaper(slot0, slot1)
+slot0.setFloorPaper = function (slot0, slot1)
 	slot0.floorPaper = slot1
 end
 
-function slot0.getFloorPaper(slot0)
+slot0.getFloorPaper = function (slot0)
 	return slot0.floorPaper
 end
 
-function slot0.getAlreadyPutFurn(slot0)
-	slot1 = {
-		[slot6.id] = slot6
-	}
+slot0.getAlreadyPutFurn = function (slot0)
+	slot1 = {}
 
 	for slot5, slot6 in pairs(slot0.furnitures) do
 		if pg.furniture_data_template[slot5].type ~= Furniture.TYPE_WALLPAPER and slot7 ~= Furniture.TYPE_FLOORPAPER and not not slot6.position then
+			slot1[slot6.id] = slot6
 		end
 	end
 
 	return slot1
 end
 
-function slot0.getShips(slot0)
+slot0.getShips = function (slot0)
 	return Clone(slot0.ships)
 end
 
-function slot0.getShipPosById(slot0, slot1)
+slot0.getShipPosById = function (slot0, slot1)
 	return slot0.ships[slot1]:getPosition()
 end
 
-function slot0.getSingleByRamdom(slot0, slot1)
+slot0.getSingleByRamdom = function (slot0, slot1)
 	slot2, slot6 = slot0:getEmptyGridCount()
+	slot4 = {}
 
 	for slot8, slot9 in pairs(slot3) do
 		if slot0:canMoveBoat(slot1, slot9) then
-			table.insert({}, slot9)
+			table.insert(slot4, slot9)
 		end
 	end
 
@@ -380,11 +412,11 @@ function slot0.getSingleByRamdom(slot0, slot1)
 	end
 end
 
-function slot0.totalGridCount(slot0)
+slot0.totalGridCount = function (slot0)
 	return (slot0.endX - slot0.startX + 1) * (slot0.endY - slot0.startY + 1)
 end
 
-function slot0.hasEmptyGrid(slot0)
+slot0.hasEmptyGrid = function (slot0)
 	if #slot0:getEmptyFloorGrid(1, 1) > 0 then
 		return true
 	else
@@ -392,7 +424,7 @@ function slot0.hasEmptyGrid(slot0)
 	end
 end
 
-function slot0.getEmptyGridCount(slot0)
+slot0.getEmptyGridCount = function (slot0)
 	slot1 = 0
 	slot2 = {}
 
@@ -409,20 +441,20 @@ function slot0.getEmptyGridCount(slot0)
 	return slot1, slot2
 end
 
-function slot0.getEmptyFloorGrid(slot0, slot1, slot2)
+slot0.getEmptyFloorGrid = function (slot0, slot1, slot2)
 	slot3 = {}
 
 	function slot4(slot0, slot1)
-		for slot5 = slot0, slot0 - uv0 + 1, -1 do
-			for slot9 = slot1, slot1 - uv1 + 1, -1 do
-				if uv2:isOccupyFurnPos(slot5, slot9) then
-					uv3 = {}
+		for slot5 = slot0, slot0 - slot0 + 1, -1 do
+			for slot9 = slot1, slot1 - slot1 + 1, -1 do
+				if slot2:isOccupyFurnPos(slot5, slot9) then
+					slot3 = {}
 
 					return false
 				else
-					table.insert(uv3, Vector2(slot5, slot9))
+					table.insert(slot3, Vector2(slot5, slot9))
 
-					if #uv3 == uv0 * uv1 then
+					if #slot3 == slot0 * slot1 then
 						return true
 					end
 				end
@@ -430,8 +462,8 @@ function slot0.getEmptyFloorGrid(slot0, slot1, slot2)
 		end
 	end
 
-	for slot8 = slot0.endX, slot1 + slot0.startX - 1, -1 do
-		for slot12 = slot0.endY, slot2 + slot0.startY - 1, -1 do
+	for slot8 = slot0.endX, (slot1 + slot0.startX) - 1, -1 do
+		for slot12 = slot0.endY, (slot2 + slot0.startY) - 1, -1 do
 			if slot4(slot8, slot12) then
 				return slot3
 			end
@@ -441,7 +473,7 @@ function slot0.getEmptyFloorGrid(slot0, slot1, slot2)
 	return slot3
 end
 
-function slot0.isLegalPos(slot0, slot1, slot2)
+slot0.isLegalPos = function (slot0, slot1, slot2)
 	slot3 = true
 	slot0.curPos = slot2
 	slot4 = slot1:getOccupyGrid(slot2)
@@ -458,8 +490,10 @@ function slot0.isLegalPos(slot0, slot1, slot2)
 
 		if slot0.localedParent and table.getCount(slot0.localedParent.child) ~= 0 then
 			for slot9, slot10 in pairs(slot0.localedParent.child) do
+				slot11 = slot0.furnitures[slot9]
+
 				for slot15, slot16 in ipairs(slot4) do
-					if slot1.id ~= slot0.furnitures[slot9].id and slot0.furnitures[slot9]:isOccupy(slot16.x, slot16.y) then
+					if slot1.id ~= slot11.id and slot11:isOccupy(slot16.x, slot16.y) then
 						table.insert(slot5, slot15)
 
 						slot3 = false
@@ -482,9 +516,11 @@ function slot0.isLegalPos(slot0, slot1, slot2)
 	return slot3, slot5
 end
 
-function slot0.findInterActionFurnitrue(slot0, slot1, slot2)
+slot0.findInterActionFurnitrue = function (slot0, slot1, slot2)
+	slot3 = slot0.ships[slot2]
+
 	for slot7, slot8 in pairs(slot0.furnitures) do
-		if slot8:canInterActionShipGroup(slot0.ships[slot2].gruopId) and slot8:canInterAction() and not slot8:isLock() then
+		if slot8:canInterActionShipGroup(slot3.gruopId) and slot8:canInterAction() and not slot8:isLock() then
 			for slot13, slot14 in ipairs(slot9) do
 				if slot14.x == slot1.x and slot14.y == slot1.y then
 					return slot8
@@ -494,9 +530,11 @@ function slot0.findInterActionFurnitrue(slot0, slot1, slot2)
 	end
 end
 
-function slot0.findInterActionStage(slot0, slot1, slot2)
+slot0.findInterActionStage = function (slot0, slot1, slot2)
+	slot3 = slot0.ships[slot2]
+
 	for slot7, slot8 in pairs(slot0.furnitures) do
-		if slot8:canInterActionShipGroup(slot0.ships[slot2].gruopId) and slot8:isStageFurniture() and slot0:getCanMovePosOnFurnitrue(nil, slot8.id) then
+		if slot8:canInterActionShipGroup(slot3.gruopId) and slot8:isStageFurniture() and slot0:getCanMovePosOnFurnitrue(nil, slot8.id) then
 			for slot13, slot14 in ipairs(slot9) do
 				if slot14.x == slot1.x and slot14.y == slot1.y then
 					return slot8
@@ -506,7 +544,7 @@ function slot0.findInterActionStage(slot0, slot1, slot2)
 	end
 end
 
-function slot0.findInterActionSpineFurnitrue(slot0, slot1)
+slot0.findInterActionSpineFurnitrue = function (slot0, slot1)
 	for slot5, slot6 in pairs(slot0.furnitures) do
 		if slot6:canInterActionSpine() and not slot6:isLock() then
 			for slot11, slot12 in ipairs(slot7) do
@@ -518,39 +556,34 @@ function slot0.findInterActionSpineFurnitrue(slot0, slot1)
 	end
 end
 
-function slot0.isIllegalPos(slot0, slot1, slot2)
+slot0.isIllegalPos = function (slot0, slot1, slot2)
 	slot3, slot4 = slot0:canMoveBoat(nil, slot1)
 
-	if slot3 or not slot3 and slot4 == slot2 then
+	if slot3 or (not slot3 and slot4 == slot2) then
 		return false
 	end
 
 	return true
 end
 
-function slot0.isOccupyFurnPos(slot0, slot1, slot2, slot3)
+slot0.isOccupyFurnPos = function (slot0, slot1, slot2, slot3)
 	slot0.localedParent = nil
 	slot4 = false
 
 	function slot5()
-		if uv0 and uv0:isFloor() and uv1:isBound(Vector2(uv2, uv3)) then
+		if slot0 and slot0:isFloor() and slot1:isBound(Vector2(Vector2, )) then
 			return true
 		end
 
-		for slot3, slot4 in pairs(uv1.furnitures) do
-			if uv0 and uv0.id == slot4.id then
-				-- Nothing
-			elseif not uv0 or not uv0:isMat() then
+		for slot3, slot4 in pairs(slot1.furnitures) do
+			if slot0 and slot0.id == slot4.id then
+			elseif not slot0 or not slot0:isMat() then
 				if slot4:isMat() then
-					-- Nothing
-				elseif not uv0 or not uv0:isWallMat() then
+				elseif not slot0 or not slot0:isWallMat() then
 					if slot4:isWallMat() then
-						-- Nothing
-					elseif uv0 and uv0:isChild(slot4) then
-						-- Nothing
-					elseif uv0 and slot4:hasParent() and not uv0:isSameParent(slot4) then
-						-- Nothing
-					elseif slot4:isOccupy(uv2, uv3) then
+					elseif slot0 and slot0:isChild(slot4) then
+					elseif slot0 and slot4:hasParent() and not slot0:isSameParent(slot4) then
+					elseif slot4:isOccupy(slot2, slot3) then
 						return true
 					end
 				end
@@ -584,7 +617,7 @@ function slot0.isOccupyFurnPos(slot0, slot1, slot2, slot3)
 	end
 end
 
-function slot0.canPutOn(slot0, slot1, slot2)
+slot0.canPutOn = function (slot0, slot1, slot2)
 	slot3 = slot1:getConfig("size")
 	slot4 = slot2:getConfig("size")
 
@@ -597,7 +630,7 @@ function slot0.canPutOn(slot0, slot1, slot2)
 	return false
 end
 
-function slot0.isLocatedOnFurn(slot0, slot1, slot2, slot3)
+slot0.isLocatedOnFurn = function (slot0, slot1, slot2, slot3)
 	if slot1:isMat() or slot1:isWallMat() then
 		return false
 	end
@@ -637,18 +670,19 @@ function slot0.isLocatedOnFurn(slot0, slot1, slot2, slot3)
 	end
 end
 
-function slot0.isLocaledAndPutOn(slot0, slot1, slot2)
+slot0.isLocaledAndPutOn = function (slot0, slot1, slot2)
 	return slot0.localedParent
 end
 
-function slot0.isCoincide(slot0, slot1, slot2)
+slot0.isCoincide = function (slot0, slot1, slot2)
 	slot3 = slot2:getCanPutOnGrid(slot2:getPosition())
 	slot5 = slot1
+	slot4 = slot1.getOccupyGrid
 	slot6 = slot0.curPos or slot1:getPosition()
 	slot5 = slot1:getOccupyGridCount()
 	slot6 = 0
 
-	for slot10, slot11 in ipairs(slot1.getOccupyGrid) do
+	for slot10, slot11 in ipairs(slot4) do
 		for slot15, slot16 in ipairs(slot3) do
 			if slot16.x == slot11.x and slot16.y == slot11.y then
 				slot6 = slot6 + 1
@@ -661,14 +695,14 @@ function slot0.isCoincide(slot0, slot1, slot2)
 	return slot6 == slot5
 end
 
-function slot0.getWallEmptyGrids(slot0, slot1, slot2)
+slot0.getWallEmptyGrids = function (slot0, slot1, slot2)
 	if slot2 == BackyardFurnitureVO.WALL_DIR_ALL or slot2 == BackyardFurnitureVO.WALL_DIR_LEFT then
 		slot3 = slot0.wallY
 
 		for slot7 = slot0.startX, slot0.wallX - slot1, 2 do
 			slot8 = true
 
-			for slot12 = slot7, slot7 + slot1 - 1, 1 do
+			for slot12 = slot7, (slot7 + slot1) - 1, 1 do
 				if slot0:isOccupyFurnPos(slot12, slot3) then
 					slot8 = false
 				end
@@ -686,7 +720,7 @@ function slot0.getWallEmptyGrids(slot0, slot1, slot2)
 		for slot7 = slot0.startY, slot0.wallY - slot1, 2 do
 			slot8 = true
 
-			for slot12 = slot7, slot7 + slot1 - 1, 1 do
+			for slot12 = slot7, (slot7 + slot1) - 1, 1 do
 				if slot0:isOccupyFurnPos(slot3, slot12) then
 					slot8 = false
 				end
@@ -699,7 +733,7 @@ function slot0.getWallEmptyGrids(slot0, slot1, slot2)
 	end
 end
 
-function slot0.canRotate(slot0, slot1)
+slot0.canRotate = function (slot0, slot1)
 	slot2 = Clone(slot1)
 
 	slot2:updateDir()
@@ -708,25 +742,26 @@ function slot0.canRotate(slot0, slot1)
 
 	if slot0:isLegalPos(slot2, slot2:getPosition()) then
 		slot5, slot6 = slot0:isLocatedOnFurn(slot2, slot2:getPosition().x, slot2.getPosition().y)
-		slot3 = not slot5 or not slot2:hasParent() or slot0:canPutOn(slot2, slot6)
+		slot0.localedParent = nil
+
+		return not slot5 or not slot2:hasParent() or slot0:canPutOn(slot2, slot6)
 	end
-
-	slot0.localedParent = nil
-
-	return slot3
 end
 
-function slot0.sortWallFurns(slot0)
+slot0.sortWallFurns = function (slot0)
 	slot1 = {}
 	slot2 = {}
+	slot3 = {}
 
 	for slot7, slot8 in pairs(slot0.furnitures) do
+		slot9 = slot8:getPosition()
+
 		if not slot8:isFloor() then
 			if slot8:isWallMat() then
-				table.insert({}, {
+				table.insert(slot3, {
 					id = slot7,
 					configId = slot8.configId,
-					pos = slot8:getPosition()
+					pos = slot9
 				})
 			elseif not BackyardFurnitureVO.isRightWall(slot9) then
 				table.insert(slot1, {
@@ -754,7 +789,7 @@ function slot0.sortWallFurns(slot0)
 	slot4 = pg.furniture_data_template
 
 	table.sort(slot3, function (slot0, slot1)
-		if uv0[slot0.configId].size[1] == uv0[slot1.configId].size[1] then
+		if slot0[slot0.configId].size[1] == slot0[slot1.configId].size[1] then
 			return slot0.id < slot1.id
 		else
 			return slot2 < slot3
@@ -764,7 +799,7 @@ function slot0.sortWallFurns(slot0)
 	return slot1, slot2, slot3
 end
 
-function slot0.limitWallFurnWidth(slot0, slot1, slot2)
+slot0.limitWallFurnWidth = function (slot0, slot1, slot2)
 	if slot2:isFloor() then
 		return slot1
 	end
@@ -781,11 +816,13 @@ function slot0.limitWallFurnWidth(slot0, slot1, slot2)
 	return slot6
 end
 
-function slot0.limiteWallPos(slot0, slot1)
+slot0.limiteWallPos = function (slot0, slot1)
+	slot2 = slot1
+
 	if not BackyardFurnitureVO.isRightWall(slot1) then
 		if slot1.y ~= slot0.wallY then
-			slot1.x = slot1.x - (slot1.y - slot0.wallY)
-			slot1.y = slot0.wallY
+			slot2.x = slot1.x - (slot1.y - slot0.wallY)
+			slot2.y = slot0.wallY
 		end
 
 		if (slot1.x + slot1.y) % 2 ~= 0 then
@@ -807,11 +844,11 @@ function slot0.limiteWallPos(slot0, slot1)
 	end
 end
 
-function slot0.isLimitWallBound(slot0, slot1, slot2)
+slot0.isLimitWallBound = function (slot0, slot1, slot2)
 	slot4, slot5 = slot1:getSize()
 
 	for slot9, slot10 in ipairs(slot3) do
-		if slot2.x < slot0.startY or slot2.y < slot0.startY or not BackyardFurnitureVO.isRightWall(slot2) and slot10.y < slot0.wallY or BackyardFurnitureVO.isRightWall(slot2) and slot10.x < slot0.wallY then
+		if slot2.x < slot0.startY or slot2.y < slot0.startY or (not BackyardFurnitureVO.isRightWall(slot2) and slot10.y < slot0.wallY) or (BackyardFurnitureVO.isRightWall(slot2) and slot10.x < slot0.wallY) then
 			return false
 		elseif slot1:isRightType() and not BackyardFurnitureVO.isRightWall(slot2) then
 			return false
@@ -823,7 +860,7 @@ function slot0.isLimitWallBound(slot0, slot1, slot2)
 	return true
 end
 
-function slot0.getWallBound(slot0, slot1, slot2)
+slot0.getWallBound = function (slot0, slot1, slot2)
 	slot3, slot4 = slot2:getSize()
 
 	if slot2:isLeftType() and BackyardFurnitureVO.isRightWall(slot1) then
@@ -837,10 +874,13 @@ function slot0.getWallBound(slot0, slot1, slot2)
 	end
 end
 
-function slot0.getCountByIndex(slot0, slot1)
+slot0.getCountByIndex = function (slot0, slot1)
+	slot2 = 0
+	slot3 = Furniture.INDEX_TO_TYPES[slot1]
+
 	for slot7, slot8 in pairs(slot0.furnitures) do
-		if table.contains(Furniture.INDEX_TO_TYPES[slot1], slot8:getConfig("type")) then
-			slot2 = 0 + 1
+		if table.contains(slot3, slot8:getConfig("type")) then
+			slot2 = slot2 + 1
 		end
 	end
 
@@ -855,7 +895,7 @@ function slot0.getCountByIndex(slot0, slot1)
 	return slot2
 end
 
-function slot0.getIndexByType(slot0)
+slot0.getIndexByType = function (slot0)
 	for slot4, slot5 in ipairs(Furniture.INDEX_TO_TYPES) do
 		if table.contains(slot5, slot0) then
 			return slot4
@@ -863,48 +903,44 @@ function slot0.getIndexByType(slot0)
 	end
 end
 
-function slot0.canPutFurniture(slot0, slot1)
+slot0.canPutFurniture = function (slot0, slot1)
 	if slot1:getConfig("type") == 4 or slot2 == 1 then
 		return true
 	end
 
-	return slot0:getCountByIndex(slot3) < pg.dorm_data_template[slot0.level].limit[uv0.getIndexByType(slot2)]
+	return slot0:getCountByIndex(slot3) < pg.dorm_data_template[slot0.level].limit[slot0.getIndexByType(slot2)]
 end
 
-function slot0.getSameConfigIdFurnitrues(slot0, slot1)
+slot0.getSameConfigIdFurnitrues = function (slot0, slot1)
+	slot2 = {}
+
 	for slot6, slot7 in pairs(slot0.furnitures) do
 		if slot7:getConfig("id") == slot1 then
-			table.insert({}, slot7)
+			table.insert(slot2, slot7)
 		end
 	end
 
 	return slot2
 end
 
-function slot0.getSameConfigIdCount(slot0, slot1)
+slot0.getSameConfigIdCount = function (slot0, slot1)
 	return table.getCount(slot0:getSameConfigIdFurnitrues(slot1))
 end
 
-function slot0.canMoveBoatOnFurniture(slot0, slot1, slot2, slot3)
+slot0.canMoveBoatOnFurniture = function (slot0, slot1, slot2, slot3)
 	if slot0.furnitures[slot2]:isStageFurniture() then
 		slot5 = {}
 
 		for slot9, slot10 in pairs(slot4.child) do
 			if slot0.furnitures[slot9] then
 				_.each(slot11:getOccupyGridForShip(slot11:getPosition()), function (slot0)
-					table.insert(uv0, slot0)
+					table.insert(slot0, slot0)
 				end)
 			end
 		end
 
 		if _.any(slot5, function (slot0)
-			if uv0.x ~= slot0.x or uv0.y ~= slot0.y then
-				slot1 = false
-			else
-				slot1 = true
-			end
-
-			return slot1
+			return slot0.x == slot0.x and slot0.y == slot0.y
 		end) then
 			return false
 		end
@@ -924,13 +960,7 @@ function slot0.canMoveBoatOnFurniture(slot0, slot1, slot2, slot3)
 		end
 
 		if _.any(slot4:getCanPutOnGrid(slot4.position), function (slot0)
-			if uv0 ~= slot0 then
-				slot1 = false
-			else
-				slot1 = true
-			end
-
-			return slot1
+			return slot0 == slot0
 		end) then
 			return true
 		end
@@ -939,17 +969,19 @@ function slot0.canMoveBoatOnFurniture(slot0, slot1, slot2, slot3)
 	return false
 end
 
-function slot0.getAllArch(slot0)
+slot0.getAllArch = function (slot0)
+	slot1 = {}
+
 	for slot5, slot6 in pairs(slot0.furnitures) do
 		if slot6:isArch() then
-			table.insert({}, slot6)
+			table.insert(slot1, slot6)
 		end
 	end
 
 	return slot1
 end
 
-function slot0.getArchByPos(slot0, slot1)
+slot0.getArchByPos = function (slot0, slot1)
 	for slot6, slot7 in pairs(slot2) do
 		for slot12, slot13 in pairs(slot8) do
 			if slot13.x == slot1.x and slot13.y == slot1.y then
@@ -959,21 +991,18 @@ function slot0.getArchByPos(slot0, slot1)
 	end
 end
 
-function slot0.getCanMoveNearerPosOnFurnitrue(slot0, slot1, slot2)
+slot0.getCanMoveNearerPosOnFurnitrue = function (slot0, slot1, slot2)
+	slot6 = slot0.ships[slot1].getPosition(slot5)
 	slot7 = nil
 
 	function slot8(slot0, slot1)
-		if Vector2.Distance(uv0, slot1) >= Vector2.Distance(uv0, slot0) then
-			slot4 = false
-		else
-			slot4 = true
-		end
-
-		return slot4
+		return Vector2.Distance(slot0, slot1) < Vector2.Distance(slot0, slot0)
 	end
 
 	for slot12, slot13 in pairs(slot4) do
-		if not slot0.ships[slot1].getPosition(slot5) and slot0:canMoveBoatOnFurniture(slot1, slot2, slot13) then
+		slot14 = slot0:canMoveBoatOnFurniture(slot1, slot2, slot13)
+
+		if not slot6 and slot14 then
 			return slot13
 		elseif slot6 and slot14 then
 			if not slot7 then
@@ -987,7 +1016,7 @@ function slot0.getCanMoveNearerPosOnFurnitrue(slot0, slot1, slot2)
 	return slot7
 end
 
-function slot0.getCanMovePosOnFurnitrue(slot0, slot1, slot2)
+slot0.getCanMovePosOnFurnitrue = function (slot0, slot1, slot2)
 	for slot8, slot9 in pairs(slot4) do
 		if slot0:canMoveBoatOnFurniture(slot1, slot2, slot9) then
 			return slot9
@@ -997,19 +1026,24 @@ function slot0.getCanMovePosOnFurnitrue(slot0, slot1, slot2)
 	return nil
 end
 
-function slot0.getMoveableFurnitures(slot0)
+slot0.getMoveableFurnitures = function (slot0)
+	slot1 = {}
+
 	for slot5, slot6 in pairs(slot0.furnitures) do
 		if slot6:isMoveable() then
-			table.insert({}, slot6)
+			table.insert(slot1, slot6)
 		end
 	end
 
 	return slot1
 end
 
-function slot0.getSaveData(slot0)
-	slot1 = {
-		[slot5] = {
+slot0.getSaveData = function (slot0)
+	slot1 = {}
+
+	for slot5, slot6 in pairs(slot0.furnitures) do
+		slot10 = slot6:getPosition()
+		slot1[slot5] = {
 			id = slot5,
 			configId = slot6.configId,
 			position = Vector2(slot10.x, slot10.y),
@@ -1020,10 +1054,6 @@ function slot0.getSaveData(slot0)
 			parent = slot6.parent,
 			floor = slot6.floor
 		}
-	}
-
-	for slot5, slot6 in pairs(slot0.furnitures) do
-		slot10 = slot6:getPosition()
 	end
 
 	if slot0.wallPaper then
