@@ -1,6 +1,6 @@
 slot0 = class("ChargeCard")
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.go = slot1
 	slot0.tr = tf(slot1)
 	slot0.icon = slot0.tr:Find("item_icon")
@@ -41,7 +41,7 @@ function slot0.Ctor(slot0, slot1)
 	setActive(slot0.countDown, false)
 end
 
-function slot0.update(slot0, slot1, slot2, slot3)
+slot0.update = function (slot0, slot1, slot2, slot3)
 	slot0.goods = slot1
 
 	setActive(slot0.desc, true)
@@ -64,7 +64,7 @@ function slot0.update(slot0, slot1, slot2, slot3)
 	slot0:destoryTimer()
 end
 
-function slot0.updateCharge(slot0, slot1, slot2, slot3)
+slot0.updateCharge = function (slot0, slot1, slot2, slot3)
 	setActive(slot0.tag, true)
 	setActive(slot0.mask, false)
 	setActive(slot0.maskState, false)
@@ -72,20 +72,11 @@ function slot0.updateCharge(slot0, slot1, slot2, slot3)
 	slot0.tipText.text = ""
 
 	setText(slot0.desc, "")
-	setActive(slot0.tag, ((table.contains(slot3, slot1.id) or slot1:firstPayDouble()) and 4 or slot1:getConfig("tag")) > 0)
+	setActive(slot0.tag, (((table.contains(slot3, slot1.id) or slot1:firstPayDouble()) and 4) or slot1:getConfig("tag")) > 0)
 
-	if ((table.contains(slot3, slot1.id) or slot1.firstPayDouble()) and 4 or slot1.getConfig("tag")) > 0 then
+	if slot6 > 0 then
 		for slot10, slot11 in ipairs(slot0.tags) do
-			slot12 = setActive
-			slot13 = slot11
-
-			if slot10 ~= slot6 then
-				slot14 = false
-			else
-				slot14 = true
-			end
-
-			slot12(slot13, slot14)
+			setActive(slot11, slot10 == slot6)
 		end
 	end
 
@@ -100,39 +91,24 @@ function slot0.updateCharge(slot0, slot1, slot2, slot3)
 		slot0:updateImport(slot1:getConfig("display"), slot1:getConfig("descrip"))
 	end
 
+	slot9 = slot1.buyCount
 	slot10 = slot1:getLimitCount()
 
 	if slot1:getConfig("limit_type") == 2 then
-		setText(slot0.limitText, i18n("charge_limit_all", slot10 - slot1.buyCount, slot10))
-		setActive(slot0.mask, slot10 - slot1.buyCount <= 0)
+		setText(slot0.limitText, i18n("charge_limit_all", slot10 - slot9, slot10))
+		setActive(slot0.mask, slot10 - slot9 <= 0)
 	else
 		setText(slot0.limitText, "")
 	end
 
 	if slot1:isMonthCard() then
 		if slot2:getCardById(VipCard.MONTH) and not slot11:isExpire() then
-			slot14 = math.floor((slot11:getLeftDate() - pg.TimeMgr.GetInstance():GetServerTime()) / 86400)
-
-			if not slot1:getConfig("limit_arg") then
-				slot15 = 0
-			end
-
-			slot16 = setActive
-			slot17 = slot0.mask
-
-			if slot15 >= slot14 then
-				slot18 = false
-			else
-				slot18 = true
-			end
-
-			slot16(slot17, slot18)
-			setText(slot0.limitText, i18n("charge_month_card_lefttime_tip", slot14))
+			setActive(slot0.mask, (slot1:getConfig("limit_arg") or 0) < math.floor((slot11:getLeftDate() - pg.TimeMgr.GetInstance():GetServerTime()) / 86400))
+			setText(slot0.limitText, i18n("charge_month_card_lefttime_tip", math.floor((slot11.getLeftDate() - pg.TimeMgr.GetInstance().GetServerTime()) / 86400)))
 		end
 
-		setText(slot0.desc, string.gsub(slot1:getConfig("descrip"), "$1", slot4 and slot1:getConfig("gem") or slot1:getConfig("extra_gem")))
+		setText(slot0.desc, string.gsub(slot1:getConfig("descrip"), "$1", (slot4 and slot1:getConfig("gem")) or slot1:getConfig("extra_gem")))
 	elseif slot1:isGiftBox() then
-		-- Nothing
 	elseif slot1:isGem() then
 		setActive(slot0.tipTF, true)
 
@@ -144,7 +120,6 @@ function slot0.updateCharge(slot0, slot1, slot2, slot3)
 			setActive(slot0.tipTF, false)
 		end
 	elseif slot1:isItemBox() then
-		-- Nothing
 	end
 
 	slot0.resCount.text = "x" .. slot1:getConfig("gem")
@@ -153,45 +128,28 @@ function slot0.updateCharge(slot0, slot1, slot2, slot3)
 
 	LoadSpriteAsync("chargeicon/" .. slot1:getConfig("picture"), function (slot0)
 		if slot0 then
-			uv0.iconTF.sprite = slot0
+			slot0.iconTF.sprite = slot0
 		end
 	end)
 	setButtonEnabled(slot0.tr, not isActive(slot0.mask))
 end
 
-function slot0.updateGemItem(slot0, slot1, slot2)
+slot0.updateGemItem = function (slot0, slot1, slot2)
 	setActive(slot0.mask, false)
 	setActive(slot0.maskState, false)
 	setText(slot0.limitText, "")
 
 	slot0.tipText.text = ""
 	slot3 = slot1:getLimitCount()
-
-	if not slot1.buyCount then
-		slot4 = 0
-	end
+	slot4 = slot1.buyCount or 0
 
 	if slot3 > 0 then
 		setText(slot0.limitText, i18n("charge_limit_all", slot3 - slot4, slot3))
-
-		slot5 = setActive
-		slot6 = slot0.mask
-
-		if slot3 > slot4 then
-			slot7 = false
-		else
-			slot7 = true
-		end
-
-		slot5(slot6, slot7)
+		setActive(slot0.mask, slot3 <= slot4)
 	end
 
 	if slot1:getConfig("group_limit") > 0 then
-		if not slot1:getConfig("group_type") then
-			slot6 = 0
-		end
-
-		if slot6 == 1 then
+		if (slot1:getConfig("group_type") or 0) == 1 then
 			setText(slot0.limitText, i18n("charge_limit_daily", slot5 - slot1.groupCount, slot5))
 		elseif slot6 == 2 then
 			setText(slot0.limitText, i18n("charge_limit_weekly", slot5 - slot1.groupCount, slot5))
@@ -204,30 +162,11 @@ function slot0.updateGemItem(slot0, slot1, slot2)
 	setActive(slot0.count, false)
 	setActive(slot0.icon, true)
 	setText(slot0.desc, "")
-
-	slot7 = setActive
-	slot8 = slot0.tag
-
-	if slot1:getConfig("tag") <= 0 then
-		slot9 = false
-	else
-		slot9 = true
-	end
-
-	slot7(slot8, slot9)
+	setActive(slot0.tag, slot1:getConfig("tag") > 0)
 
 	if slot6 > 0 then
 		for slot10, slot11 in ipairs(slot0.tags) do
-			slot12 = setActive
-			slot13 = slot11
-
-			if slot10 ~= slot6 then
-				slot14 = false
-			else
-				slot14 = true
-			end
-
-			slot12(slot13, slot14)
+			setActive(slot11, slot10 == slot6)
 		end
 	end
 
@@ -243,7 +182,7 @@ function slot0.updateGemItem(slot0, slot1, slot2)
 
 		LoadSpriteAsync(slot8.icon, function (slot0)
 			if slot0 then
-				uv0.iconTF.sprite = slot0
+				slot0.iconTF.sprite = slot0
 			end
 		end)
 	end
@@ -251,11 +190,13 @@ function slot0.updateGemItem(slot0, slot1, slot2)
 	setButtonEnabled(slot0.tr, not isActive(slot0.mask))
 end
 
-function slot0.updateImport(slot0, slot1, slot2)
+slot0.updateImport = function (slot0, slot1, slot2)
 	setActive(slot0.important, true)
 
+	slot3 = {}
+
 	for slot7, slot8 in ipairs(slot1) do
-		table.insert({}, {
+		table.insert(slot3, {
 			type = slot8[1],
 			id = slot8[2],
 			count = slot8[3]
@@ -263,9 +204,11 @@ function slot0.updateImport(slot0, slot1, slot2)
 	end
 
 	for slot7 = 1, slot0.grid.childCount, 1 do
+		slot8 = slot0.grid:GetChild(slot7 - 1)
+
 		if slot7 <= #slot3 then
-			setActive(slot0.grid:GetChild(slot7 - 1), true)
-			updateDrop(slot0.grid.GetChild(slot7 - 1), slot3[slot7])
+			setActive(slot8, true)
+			updateDrop(slot8, slot3[slot7])
 		else
 			setActive(slot8, false)
 		end
@@ -274,51 +217,47 @@ function slot0.updateImport(slot0, slot1, slot2)
 	setText(slot0.importantTip, string.gsub(slot2, "$1", #slot3))
 end
 
-function slot0.updateCountdown(slot0, slot1)
+slot0.updateCountdown = function (slot0, slot1)
 	slot2 = false
 
 	if slot1 then
 		slot3 = pg.TimeMgr.GetInstance()
 
-		if slot3:DiffDay(slot3:GetServerTime(), os.time(slot1)) >= 365 then
-			slot2 = false
-		else
-			slot2 = true
-		end
+		setActive(slot0.countDown, slot3:DiffDay(slot3:GetServerTime(), pg.TimeMgr:GetInstance():Table2ServerTime(slot1)) < 365)
+
+		slot3 = pg.TimeMgr:GetInstance()
+
+		slot4()
+
+		slot5 = os.time(slot1)
+		slot0.updateTimer = Timer.New(function ()
+			if slot0:LaterThan(os.server_date("*t", slot0), ) then
+				slot2()
+			end
+
+			if slot3 - slot0 < 0 then
+				slot2 = 0
+			end
+
+			if math.floor(slot2 / 86400) > 0 then
+				setText(slot4.countDownTm, i18n("skin_remain_time") .. slot3 .. i18n("word_date"))
+			elseif math.floor(slot2 / 3600) > 0 then
+				setText(slot4.countDownTm, i18n("skin_remain_time") .. slot4 .. i18n("word_hour"))
+			elseif math.floor(slot2 / 60) > 0 then
+				setText(slot4.countDownTm, i18n("skin_remain_time") .. slot5 .. i18n("word_minute"))
+			else
+				setText(slot4.countDownTm, i18n("skin_remain_time") .. slot2 .. i18n("word_second"))
+			end
+		end, 1, -1)
+
+		slot0.updateTimer:Start()
+		slot0.updateTimer.func()
+
+		return
 	end
-
-	setActive(slot0.countDown, slot2)
-
-	slot3 = pg.TimeMgr:GetInstance()
-
-	slot4()
-
-	slot5 = os.time(slot1)
-	slot0.updateTimer = Timer.New(function ()
-		if uv0:LaterThan(os.server_date("*t", slot0), uv1) then
-			uv2()
-		end
-
-		if uv3 - slot0 < 0 then
-			slot2 = 0
-		end
-
-		if math.floor(slot2 / 86400) > 0 then
-			setText(uv4.countDownTm, i18n("skin_remain_time") .. slot3 .. i18n("word_date"))
-		elseif math.floor(slot2 / 3600) > 0 then
-			setText(uv4.countDownTm, i18n("skin_remain_time") .. slot4 .. i18n("word_hour"))
-		elseif math.floor(slot2 / 60) > 0 then
-			setText(uv4.countDownTm, i18n("skin_remain_time") .. slot5 .. i18n("word_minute"))
-		else
-			setText(uv4.countDownTm, i18n("skin_remain_time") .. slot2 .. i18n("word_second"))
-		end
-	end, 1, -1)
-
-	slot0.updateTimer:Start()
-	slot0.updateTimer.func()
 end
 
-function slot0.destoryTimer(slot0)
+slot0.destoryTimer = function (slot0)
 	if slot0.updateTimer then
 		slot0.updateTimer:Stop()
 

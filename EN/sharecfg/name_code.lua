@@ -427,8 +427,8 @@ pg.name_code = {
 	},
 	{
 		id = 86,
-		name = "Junyo",
-		code = "Junyo"
+		name = "Junyou",
+		code = "Junyou"
 	},
 	{
 		id = 87,
@@ -866,3 +866,5 @@ pg.name_code = {
 		code = "AI-Type Fusou Production"
 	}
 }
+
+return

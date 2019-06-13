@@ -1,8 +1,19 @@
 pg = pg or {}
-pg.StoryMgr = singletonClass("StoryMgr")
-pg.StoryMgr.ENABLE = true
+slot0 = pg
+slot1 = singletonClass
+slot2 = "StoryMgr"
+slot1 = slot1(slot2)
+slot0.StoryMgr = slot1
+slot0 = pg
+slot0 = slot0.StoryMgr
+slot1 = PlayerPrefs
+slot1 = slot1.GetInt
+slot2 = "storyEnable"
+slot1 = slot1(slot2)
+slot2 = true
+slot0.ENABLE = slot2
 
-if PlayerPrefs.GetInt("storyEnable") == 1 then
+if slot1 == 1 then
 	slot2 = false
 	slot0.ENABLE = slot2
 end
@@ -20,7 +31,7 @@ slot7 = {}
 slot8 = {}
 
 function slot9(slot0)
-	slot1 = uv0
+	slot1 = slot0
 	slot2 = "load story: "
 	slot3 = slot0.id
 	slot2 = slot2 .. slot3
@@ -29,12 +40,12 @@ function slot9(slot0)
 
 	slot1 = table
 	slot1 = slot1.insert
-	slot2 = uv1
+	slot2 = slot1
 	slot3 = slot0
 
 	slot1(slot2, slot3)
 
-	slot1 = uv2
+	slot1 = slot2
 	slot2 = slot0.id
 	slot1[slot2] = slot0
 end
@@ -47,7 +58,7 @@ slot10 = {
 }
 
 function slot11(slot0, slot1)
-	slot2 = uv0
+	slot2 = slot0
 	slot3 = PLATFORM_CODE
 	slot2 = slot2[slot3]
 
@@ -114,15 +125,15 @@ function slot15(slot0, slot1)
 	slot5 = true
 
 	function slot6(slot0)
-		slot1 = uv0
+		slot1 = slot0
 		slot1._go = slot0
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = slot1
 		slot1 = slot1.Load
 
 		slot1(slot2)
 
-		slot1 = uv1
+		slot1 = slot1
 
 		slot1()
 	end
@@ -392,6 +403,7 @@ end
 slot0.IsPlayed = slot15
 
 function slot15(slot0)
+	return
 end
 
 slot0.Reset = slot15
@@ -437,7 +449,7 @@ function slot16(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot6 = slot6(slot7)
 	slot7 = table
 	slot7 = slot7.contains
-	slot8 = uv0
+	slot8 = slot0
 	slot9 = slot6.viewComponent
 	slot9 = slot9.__cname
 	slot7 = slot7(slot8, slot9)
@@ -459,9 +471,11 @@ slot0.PlayOnTaskAdded = slot16
 
 function slot16(slot0, slot1, slot2, slot3)
 	slot4 = slot3 or function ()
+		return
 	end
+	slot5 = slot0:IsPlayed(slot1)
 
-	if slot0:IsPlayed(slot1) then
+	if slot5 then
 		slot5 = slot4
 
 		slot5()
@@ -494,21 +508,31 @@ function slot16(slot0, slot1, slot2, slot3)
 		slot6 = PLATFORM_US
 
 		if slot5 == slot6 then
+			slot5 = getProxy
+			slot6 = PlayerProxy
+			slot5 = slot5(slot6)
+			slot6 = slot5
+			slot5 = slot5.getData
+			slot5 = slot5(slot6)
+
 			if slot1 == "SYG001" then
-				slot5 = SendAiriJPTracking
-				slot6 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_2
+				slot6 = SendAiriJPTracking
+				slot7 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_2
+				slot8 = slot5.id
 
-				slot5(slot6)
+				slot6(slot7, slot8)
 			elseif slot1 == "SYG003" then
-				slot5 = SendAiriJPTracking
-				slot6 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_3
+				slot6 = SendAiriJPTracking
+				slot7 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_3
+				slot8 = slot5.id
 
-				slot5(slot6)
+				slot6(slot7, slot8)
 			elseif slot1 == "SYG006" then
-				slot5 = SendAiriJPTracking
-				slot6 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_4
+				slot6 = SendAiriJPTracking
+				slot7 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_4
+				slot8 = slot5.id
 
-				slot5(slot6)
+				slot6(slot7, slot8)
 			end
 		end
 	end
@@ -566,7 +590,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot7 = ChapterProxy
 	slot6 = slot6(slot7)
 	slot7 = false
-	slot8 = uv0
+	slot8 = slot0
 	slot8 = slot8()
 
 	if slot8 and slot6 then
@@ -591,8 +615,9 @@ function slot17(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 	slot0.force = slot3 or slot7
+	slot8 = slot0.storyId
 
-	if slot0.storyId then
+	if slot8 then
 		slot9 = slot0
 		slot8 = slot0.addQuery
 		slot10 = slot1
@@ -606,23 +631,21 @@ function slot17(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 	slot0.storyId = slot1
-	slot8 = uv1
+	slot8 = slot1
 	slot10 = slot0
 	slot9 = slot0.GetStoryByName
 	slot11 = slot1
 
 	slot8(slot9(slot10, slot11))
 
-	slot8 = uv2
+	slot8 = slot2
 	slot8 = slot8[slot1]
-	slot9 = uv3
+	slot9 = slot3
 
 	if slot9 then
 		slot9 = true
 	else
-		slot9 = slot8.type
-		slot10 = uv4
-		slot9 = slot9 ~= slot10
+		slot9 = slot8.type ~= slot4
 	end
 
 	if slot9 then
@@ -692,38 +715,38 @@ function slot17(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot12 = slot8
 
 	function slot13()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = true
 		slot0.keepSeletedOptions = slot1
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.nextEpisode
 
 		if slot0 then
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.isRecall
 			slot0 = slot0(slot1)
 
 			if not slot0 then
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.Play
-				slot2 = uv0
+				slot2 = slot0
 				slot2 = slot2.nextEpisode
 
 				slot0(slot1, slot2)
 			end
 		end
 
-		slot0 = uv1
+		slot0 = slot1
 
 		if slot0 then
-			slot0 = uv1
+			slot0 = slot1
 
 			slot0()
 		end
 
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = false
 		slot0.keepSeletedOptions = slot1
 	end
@@ -749,14 +772,14 @@ end
 slot0.getSelectedOptions = slot17
 
 function slot17(slot0, slot1)
-	slot2 = uv0
+	slot2 = slot0
 	slot4 = slot0
 	slot3 = slot0.GetStoryByName
 	slot5 = slot1
 
 	slot2(slot3(slot4, slot5))
 
-	slot2 = uv1
+	slot2 = slot1
 	slot2 = slot2[slot1]
 
 	if not slot2 then
@@ -764,7 +787,7 @@ function slot17(slot0, slot1)
 		slot4 = "no story:"
 		slot5 = slot1
 		slot6 = "|"
-		slot7 = uv1
+		slot7 = slot1
 		slot7 = #slot7
 		slot4 = slot4 .. slot5 .. slot6 .. slot7
 
@@ -924,8 +947,9 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 		SetActive(slot0.options, false)
 
 		slot0.optionsBg.transform.localPosition = Vector3(1485, 40)
+		slot7 = type(slot1.jumpto)
 
-		if type(slot1.jumpto) == "string" then
+		if slot7 == "string" then
 			slot7 = slot1.jumpto
 			slot0.nextEpisode = slot7
 		end
@@ -991,7 +1015,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 
 	function slot9()
 		slot0 = ipairs
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.scripts
 		slot0, slot1, slot2 = slot0(slot1)
 
@@ -1009,102 +1033,104 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 			slot5 = slot4.optionFlag
 
 			if slot5 then
-				slot5 = uv1
+				slot5 = slot1
 				slot5 = slot5.optionFlag
 				slot6 = slot4.optionFlag
 
 				if slot5 ~= slot6 then
-					-- Nothing
 				end
 			else
-				slot5 = uv2
+				slot5 = slot2
 
 				if slot5 then
 					slot5 = slot4.compulsory
 
 					if slot5 then
-						slot5 = uv1
+						slot5 = slot1
 						slot6 = slot5
 						slot5 = slot5.isRecall
 						slot5 = slot5(slot6)
 
 						if slot5 then
-							-- Nothing
 						end
 					end
 				else
-					uv2 = false
+					slot2 = false
 					slot5 = true
 					slot6 = setActive
-					slot7 = uv1
+					slot7 = slot1
 					slot7 = slot7._flash
 					slot8 = false
 
 					slot6(slot7, slot8)
 
-					slot6 = uv1
+					slot6 = slot1
 					slot7 = false
 					slot6.blackSkip = slot7
 					slot6 = slot4.mode
 
 					if not slot6 then
-						slot6 = uv0
+						slot6 = slot0
 						slot6 = slot6.mode
 					end
 
-					slot7 = uv3
+					slot7 = slot3
 					slot7 = slot7.ASIDE
 
 					if slot6 == slot7 then
 						slot7 = slot4.flashout
 
 						if slot7 then
-							slot7 = uv1
+							slot7 = slot1
 							slot8 = slot7
 							slot7 = slot7.flashout
 							slot9 = slot4
 
 							function slot10()
-								uv0:initAside(uv1)
+								slot0:initAside(slot0)
 
-								if table.getCount(uv1.sequence or {}) == 0 then
-									uv2 = nil
+								slot0 = table.getCount(slot0.sequence or {})
+
+								if slot0 == 0 then
+									slot2 = nil
 								end
 							end
 
 							slot7(slot8, slot9, slot10)
 						else
-							uv1:initAside(slot4)
+							slot1:initAside(slot4)
 
-							if table.getCount(slot4.sequence or {}) == 0 then
+							slot7 = table.getCount(slot4.sequence or {})
+
+							if slot7 == 0 then
 								slot5 = nil
 							end
 						end
 					else
-						slot7 = uv3
+						slot7 = slot3
 						slot7 = slot7.DIALOG
 
 						if slot6 == slot7 then
 							slot7 = slot4.flashout
 
 							if slot7 then
-								slot7 = uv1
+								slot7 = slot1
 								slot8 = slot7
 								slot7 = slot7.flashout
 								slot9 = slot4
 
 								function slot10()
-									slot0 = uv0
+									slot0 = slot0
 									slot1 = slot0
 									slot0 = slot0.initDialog
-									slot2 = uv1
+									slot2 = slot1
 
 									slot0(slot1, slot2)
 								end
 
 								slot7(slot8, slot9, slot10)
 							else
-								slot7 = uv1
+								slot7 = slot1
 								slot8 = slot7
 								slot7 = slot7.initDialog
 								slot9 = slot4
@@ -1112,30 +1138,30 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 								slot7(slot8, slot9)
 							end
 						else
-							slot7 = uv3
+							slot7 = slot3
 							slot7 = slot7.BG
 
 							if slot6 == slot7 then
 								slot7 = slot4.flashout
 
 								if slot7 then
-									slot7 = uv1
+									slot7 = slot1
 									slot8 = slot7
 									slot7 = slot7.flashout
 									slot9 = slot4
 
 									function slot10()
-										slot0 = uv0
+										slot0 = slot0
 										slot1 = slot0
 										slot0 = slot0.initBg
-										slot2 = uv1
+										slot2 = slot1
 
 										slot0(slot1, slot2)
 									end
 
 									slot7(slot8, slot9, slot10)
 								else
-									slot7 = uv1
+									slot7 = slot1
 									slot8 = slot7
 									slot7 = slot7.initBg
 									slot9 = slot4
@@ -1152,39 +1178,39 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 						slot7 = slot4.typewriter
 
 						if not slot7 then
-							slot7 = uv1
+							slot7 = slot1
 							slot8 = slot7
 							slot7 = slot7.initOptions
 							slot9 = slot4
 
 							function slot10()
-								slot0 = uv0
+								slot0 = slot0
 
 								slot0()
 							end
 
 							slot7(slot8, slot9, slot10)
 						else
-							slot7 = uv1
+							slot7 = slot1
 
 							function slot8()
-								slot0 = uv0
+								slot0 = slot0
 								slot0 = slot0.storyId
 
 								if slot0 == nil then
 									return
 								end
 
-								slot0 = uv0
+								slot0 = slot0
 								slot1 = nil
 								slot0.typeWriteCallback = slot1
-								slot0 = uv0
+								slot0 = slot0
 								slot1 = slot0
 								slot0 = slot0.initOptions
-								slot2 = uv1
+								slot2 = slot1
 
 								function slot3()
-									slot0 = uv0
+									slot0 = slot0
 
 									slot0()
 								end
@@ -1199,7 +1225,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 					slot7 = slot4.effects
 
 					if slot7 then
-						slot7 = uv1
+						slot7 = slot1
 						slot8 = slot7
 						slot7 = slot7.setEffects
 						slot9 = slot4.effects
@@ -1208,7 +1234,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 					end
 
 					slot7 = SetActive
-					slot8 = uv1
+					slot8 = slot1
 					slot8 = slot8.nextTF
 					slot9 = true
 
@@ -1230,7 +1256,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 
 							slot7(slot8, slot9)
 
-							slot7 = uv1
+							slot7 = slot1
 							slot8 = true
 							slot7.stopBGM = slot8
 							slot7 = LeanTween
@@ -1240,11 +1266,11 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 							slot9 = slot9.Action
 
 							function slot10()
-								slot0 = uv0
-								slot1 = uv1
+								slot0 = slot0
+								slot1 = slot1
 								slot1 = slot1.bgm
 								slot0.bgm = slot1
-								slot0 = uv0
+								slot0 = slot0
 								slot1 = nil
 								slot0.stopBGM = slot1
 								slot0 = pg
@@ -1253,7 +1279,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 								slot0 = slot0()
 								slot1 = slot0
 								slot0 = slot0.PlayBGM
-								slot2 = uv1
+								slot2 = slot1
 								slot2 = slot2.bgm
 								slot3 = true
 
@@ -1262,10 +1288,10 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 
 							slot7(slot8, slot9(slot10))
 						else
-							slot7 = uv1
+							slot7 = slot1
 							slot8 = slot4.bgm
 							slot7.bgm = slot8
-							slot7 = uv1
+							slot7 = slot1
 							slot8 = nil
 							slot7.stopBGM = slot8
 							slot7 = pg
@@ -1293,7 +1319,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 
 							slot7(slot8, slot9)
 
-							slot7 = uv1
+							slot7 = slot1
 							slot8 = true
 							slot7.stopBGM = slot8
 						end
@@ -1302,7 +1328,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 					slot7 = slot4.flash
 
 					if slot7 then
-						slot7 = uv1
+						slot7 = slot1
 						slot7 = slot7._flash
 						slot8 = slot7
 						slot7 = slot7.GetComponent
@@ -1329,14 +1355,14 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 						end
 
 						slot7.color = slot8
-						slot8 = uv1
+						slot8 = slot1
 						slot8 = slot8._flashCG
 						slot9 = slot4.flash
 						slot9 = slot9.alpha
 						slot9 = slot9[1]
 						slot8.alpha = slot9
 						slot8 = setActive
-						slot9 = uv1
+						slot9 = slot1
 						slot9 = slot9._flash
 						slot10 = true
 
@@ -1351,7 +1377,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 							slot12 = LeanTween
 							slot12 = slot12.alpha
 							slot13 = rtf
-							slot14 = uv1
+							slot14 = slot1
 							slot14 = slot14._flash
 							slot13 = slot13(slot14)
 							slot14 = slot4.flash
@@ -1398,25 +1424,25 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 								slot0 = LeanTween
 								slot0 = slot0.alpha
 								slot1 = rtf
-								slot2 = uv0
+								slot2 = slot0
 								slot2 = slot2._flash
 								slot1 = slot1(slot2)
-								slot2 = uv1
+								slot2 = slot1
 								slot2 = slot2.flash
 								slot2 = slot2.alpha
 								slot2 = slot2[1]
-								slot3 = uv1
+								slot3 = slot1
 								slot3 = slot3.flash
 								slot3 = slot3.dur
 
 								if slot3 then
-									slot3 = uv1
+									slot3 = slot1
 									slot3 = slot3.flash
 									slot3 = slot3.dur
 									slot3 = slot3 / 2
 
 									if not slot3 then
-										slot3 = uv1
+										slot3 = slot1
 										slot3 = slot3.flash
 										slot3 = slot3.dur2
 									end
@@ -1425,7 +1451,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 								slot0 = slot0(slot1, slot2, slot3)
 								slot1 = slot0
 								slot0 = slot0.setFrom
-								slot2 = uv1
+								slot2 = slot1
 								slot2 = slot2.flash
 								slot2 = slot2.alpha
 								slot2 = slot2[2]
@@ -1440,14 +1466,14 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 								slot2 = slot2.Action
 
 								function slot3()
-									slot0 = uv0
-									slot1 = uv1
+									slot0 = slot0
+									slot1 = slot1
 									slot1 = slot1.flash
 									slot1 = slot1.number
 
 									if slot1 <= slot0 then
 										slot0 = setActive
-										slot1 = uv2
+										slot1 = slot2
 										slot1 = slot1._flash
 										slot2 = false
 
@@ -1458,7 +1484,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 								slot0 = slot0(slot1, slot2(slot3))
 								slot1 = slot0
 								slot0 = slot0.setDelay
-								slot2 = uv1
+								slot2 = slot1
 								slot2 = slot2.flash
 								slot2 = slot2.wait
 
@@ -1472,7 +1498,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 					slot7 = slot4.flashN
 
 					if slot7 then
-						slot7 = uv1
+						slot7 = slot1
 						slot7 = slot7._flash
 						slot8 = slot7
 						slot7 = slot7.GetComponent
@@ -1506,7 +1532,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 
 						slot7.color = slot8
 						slot8 = setActive
-						slot9 = uv1
+						slot9 = slot1
 						slot9 = slot9._flash
 						slot10 = true
 
@@ -1518,8 +1544,8 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 						slot8, slot9, slot10 = slot8(slot9)
 
 						for slot11, slot12 in slot8, slot9, slot10 do
-							LeanTween.value(go(uv1._flash), slot12[1], slot12[2], slot12[3]):setDelay(slot12[4] or 0):setUseEstimatedTime(true):setOnUpdate(System.Action_float(function (slot0)
-								uv0._flashCG.alpha = slot0
+							LeanTween.value(go(slot1._flash), slot12[1], slot12[2], slot12[3]):setDelay(slot12[4] or 0):setUseEstimatedTime(true):setOnUpdate(System.Action_float(function (slot0)
+								slot0._flashCG.alpha = slot0
 							end))
 						end
 					end
@@ -1527,11 +1553,18 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 					slot7 = slot4.dialogShake
 
 					if slot7 then
-						uv1.interactive = false
+						slot1.interactive = false
+						slot8 = LeanTween.moveX(slot1._dialogue, slot4.dialogShake.x, slot4.dialogShake.speed):setDelay(slot4.dialogShake.delay or 0):setLoopPingPong(slot4.dialogShake.number)
+						slot7 = LeanTween.moveX(slot1._dialogue, slot4.dialogShake.x, slot4.dialogShake.speed).setDelay(slot4.dialogShake.delay or 0).setLoopPingPong(slot4.dialogShake.number).setOnComplete
+						slot9 = System.Action
 
-						LeanTween.moveX(uv1._dialogue, slot4.dialogShake.x, slot4.dialogShake.speed):setDelay(slot4.dialogShake.delay or 0):setLoopPingPong(slot4.dialogShake.number):setOnComplete(System.Action(function ()
-							uv0.interactive = true
-						end))
+						function slot10()
+							slot0 = slot0
+							slot1 = true
+							slot0.interactive = slot1
+						end
+
+						slot7(slot8, slot9(slot10))
 					end
 
 					slot7 = slot4.soundeffect
@@ -1547,15 +1580,15 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 							slot9 = slot9.Action
 
 							function slot10()
-								slot0 = uv0
-								slot1 = uv1
+								slot0 = slot0
+								slot1 = slot1
 								slot1 = slot1.bgm
 								slot0.bgm = slot1
-								slot0 = uv0
+								slot0 = slot0
 								slot1 = nil
 								slot0.stopBGM = slot1
 								slot0 = playSoundEffect
-								slot1 = uv1
+								slot1 = slot1
 								slot1 = slot1.soundeffect
 
 								slot0(slot1)
@@ -1589,11 +1622,11 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 							slot0 = onNextTick
 
 							function slot1()
-								slot0 = uv0
+								slot0 = slot0
 								slot0 = slot0.stopBGM
 
 								if not slot0 then
-									slot0 = uv0
+									slot0 = slot0
 									slot0 = slot0.bgm
 
 									if slot0 then
@@ -1617,7 +1650,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 									end
 								end
 
-								slot0 = uv1
+								slot0 = slot1
 
 								slot0()
 							end
@@ -1635,7 +1668,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 					slot7 = slot7(slot8)
 
 					if slot7 == "string" then
-						slot7 = uv1
+						slot7 = slot1
 						slot8 = slot4.jumpto
 						slot7.nextEpisode = slot8
 
@@ -1647,7 +1680,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 					slot7 = slot7(slot8)
 
 					if slot7 == "function" then
-						slot7 = uv1
+						slot7 = slot1
 						slot8 = slot4.jumpto
 						slot8 = slot8()
 						slot7.nextEpisode = slot8
@@ -1667,7 +1700,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 			end
 		end
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.continueBgm
 
 		if not slot0 then
@@ -1699,7 +1732,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 
 		slot0(slot1)
 
-		slot0 = uv1
+		slot0 = slot1
 		slot0 = slot0.skipBtn
 		slot1 = slot0
 		slot0 = slot0.GetComponent
@@ -1708,112 +1741,112 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 		slot0 = slot0(slot1, slot2(slot3))
 		slot1 = true
 		slot0.interactable = slot1
-		slot0 = uv2
+		slot0 = slot2
 
 		if not slot0 then
-			slot0 = uv0
+			slot0 = slot0
 			slot0 = slot0.fadeOut
 
 			if slot0 then
-				slot0 = uv0
+				slot0 = slot0
 				slot0 = slot0.noWaitFade
 
 				if slot0 then
-					slot0 = uv5
+					slot0 = slot5
 
 					if slot0 then
-						slot0 = uv5
+						slot0 = slot5
 
 						slot0()
 
-						slot0 = uv1
+						slot0 = slot1
 						slot1 = slot0
 						slot0 = slot0.fadeOut
-						slot2 = uv0
+						slot2 = slot0
 						slot2 = slot2.fadeType
-						slot3 = uv0
+						slot3 = slot0
 						slot3 = slot3.fadeOut
 
 						slot0(slot1, slot2, slot3)
 					end
 				else
-					slot0 = uv1
+					slot0 = slot1
 					slot1 = slot0
 					slot0 = slot0.fadeOut
-					slot2 = uv0
+					slot2 = slot0
 					slot2 = slot2.fadeType
-					slot3 = uv0
+					slot3 = slot0
 					slot3 = slot3.fadeOut
-					slot4 = uv5
+					slot4 = slot5
 
 					slot0(slot1, slot2, slot3, slot4)
 				end
 
-				uv2 = true
+				slot2 = true
 			end
 		else
-			slot0 = uv2
+			slot0 = slot2
 
 			if not slot0 then
-				slot0 = uv0
+				slot0 = slot0
 				slot0 = slot0.occlusion
 
 				if slot0 then
-					slot0 = uv1
+					slot0 = slot1
 					slot1 = true
 					slot0.occlusion = slot1
-					slot0 = uv1
+					slot0 = slot1
 					slot1 = Timer
 					slot1 = slot1.New
 
 					function slot2()
-						slot0 = uv0
+						slot0 = slot0
 						slot1 = slot0
 						slot0 = slot0.EndStory
 
 						slot0(slot1)
 
-						slot0 = uv0
+						slot0 = slot0
 						slot0 = slot0.blackScreenTimer
 						slot1 = slot0
 						slot0 = slot0.Stop
 
 						slot0(slot1)
 
-						slot0 = uv0
+						slot0 = slot0
 						slot1 = nil
 						slot0.blackScreenTimer = slot1
-						slot0 = uv0
+						slot0 = slot0
 						slot1 = nil
 						slot0.occlusion = slot1
-						slot0 = uv1
+						slot0 = slot1
 
 						if slot0 then
-							slot0 = uv1
+							slot0 = slot1
 
 							slot0()
 						end
 					end
 
-					slot3 = uv0
+					slot3 = slot0
 					slot3 = slot3.occlusion
 					slot4 = 1
 					slot1 = slot1(slot2, slot3, slot4)
 					slot0.blackScreenTimer = slot1
-					slot0 = uv1
+					slot0 = slot1
 					slot0 = slot0.blackScreenTimer
 					slot1 = slot0
 					slot0 = slot0.Start
 
 					slot0(slot1)
 
-					uv2 = true
+					slot2 = true
 				end
 			else
-				slot0 = uv1
+				slot0 = slot1
 				slot1 = slot0
 				slot0 = slot0.EndStory
-				slot2 = uv5
+				slot2 = slot5
 
 				slot0(slot1, slot2)
 			end
@@ -1840,14 +1873,14 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 	slot10 = slot0.skipBtn
 
 	function slot11()
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.interactive
 
 		if slot0 then
-			slot0 = uv1
+			slot0 = slot1
 
 			if slot0 then
-				slot0 = uv0
+				slot0 = slot0
 				slot0 = slot0.blackSkip
 
 				if not slot0 then
@@ -1857,16 +1890,16 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 		end
 
 		function slot0()
-			slot0 = uv0
+			slot0 = slot0
 			slot0 = slot0.inTypeWritter
 
 			if slot0 then
-				slot0 = uv0
+				slot0 = slot0
 				slot0 = slot0.typeWritterSpeedUp
 				slot1 = Time
 				slot1 = slot1.timeScale
 				slot0 = slot0 * slot1
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1.typeWriter
 				slot2 = slot1
 				slot1 = slot1.setSpeed
@@ -1876,7 +1909,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 			end
 
 			slot0 = go
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1._go
 			slot0 = slot0(slot1)
 			slot1 = slot0
@@ -1900,7 +1933,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 				slot5(slot6, slot7)
 			end
 
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.skipBtn
 			slot2 = slot1
 			slot1 = slot1.GetComponent
@@ -1909,13 +1942,13 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 			slot1 = slot1(slot2, slot3(slot4))
 			slot2 = false
 			slot1.interactable = slot2
-			uv1 = true
-			slot1 = uv2
+			slot1 = true
+			slot1 = slot2
 
 			slot1()
 		end
 
-		slot1 = uv3
+		slot1 = slot3
 
 		if slot1 then
 			slot1 = slot0
@@ -1931,7 +1964,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 			slot1 = slot1.ShowMsgBox
 			slot3 = {}
 			slot4 = rtf
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5._go
 			slot4 = slot4(slot5)
 			slot3.parent = slot4
@@ -1941,7 +1974,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 			slot3.content = slot4
 
 			function slot4()
-				slot0 = uv0
+				slot0 = slot0
 
 				slot0()
 			end
@@ -1959,16 +1992,16 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 	slot10 = slot0._go
 
 	function slot11()
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.inTypeWritter
 
 		if slot0 then
-			slot0 = uv0
+			slot0 = slot0
 			slot0 = slot0.typeWritterSpeedUp
 			slot1 = Time
 			slot1 = slot1.timeScale
 			slot0 = slot0 * slot1
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.typeWriter
 			slot2 = slot1
 			slot1 = slot1.setSpeed
@@ -1979,74 +2012,74 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 			return
 		end
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.interactive
 
 		if not slot0 then
 			return
 		end
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.blankScreen
 
 		if slot0 then
 			return
 		end
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.occlusion
 
 		if slot0 then
 			return
 		end
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.inflashin
 
 		if slot0 then
 			return
 		end
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.inflashout
 
 		if slot0 then
 			return
 		end
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.inAction
 
 		if slot0 then
 			return
 		end
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.inFadeOut
 
 		if slot0 then
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = false
 			slot0.inFadeOut = slot1
 			slot0 = LeanTween
 			slot0 = slot0.cancel
 			slot1 = go
-			slot2 = uv0
+			slot2 = slot0
 			slot2 = slot2._curtain
 
 			slot0(slot1(slot2))
 
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.EndStory
-			slot2 = uv1
+			slot2 = slot1
 
 			slot0(slot1, slot2)
 
 			return
 		end
 
-		slot0 = uv2
+		slot0 = slot2
 
 		slot0()
 	end
@@ -2070,18 +2103,20 @@ function slot17(slot0, slot1, slot2, slot3)
 
 			setActive(slot4, true)
 			LeanTween.value(go(slot4), 1, 0, slot2):setUseEstimatedTime(true):setOnUpdate(System.Action_float(function (slot0)
-				uv0.alpha = slot0
-				uv1._effectCG.alpha = slot0
+				slot0.alpha = slot0
+				slot0._effectCG.alpha = slot0
 			end)):setOnComplete(System.Action(function ()
-				if uv0.inFadeOut then
-					uv0:EndStory(uv1)
+				if slot0.inFadeOut then
+					slot0:EndStory(slot0)
 
-					uv0.inFadeOut = false
+					slot0.EndStory.inFadeOut = false
 				end
 			end))
 			LeanTween.alpha(rtf(slot0._go), 0, slot2):setUseEstimatedTime(true)
 
-			if go(slot0._asideContainer).activeSelf then
+			slot6 = go(slot0._asideContainer).activeSelf
+
+			if slot6 then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 64-68, warpins: 1 ---
@@ -2127,59 +2162,59 @@ function slot17(slot0, slot1, slot2, slot3)
 
 
 			end
-
-			slot6 = go
-			slot7 = slot0._asideContainer2
-			slot6 = slot6(slot7)
-			slot6 = slot6.activeSelf
-
-			if slot6 then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 90-94, warpins: 1 ---
-				slot6 = 1
-				slot7 = slot0._asideContainer2
-				slot7 = slot7.childCount
-				slot8 = 1
-
-				--- END OF BLOCK #0 ---
-
-				FLOW; TARGET BLOCK #1
-
-
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #1 95-109, warpins: 0 ---
-				for slot9 = slot6, slot7, slot8 do
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 95-109, warpins: 2 ---
-					slot10 = LeanTween
-					slot10 = slot10.textAlpha
-					slot11 = slot0._asideContainer2
-					slot12 = slot11
-					slot11 = slot11.GetChild
-					slot13 = slot9 - 1
-					slot11 = slot11(slot12, slot13)
-					slot12 = 0
-					slot13 = slot2
-					slot10 = slot10(slot11, slot12, slot13)
-					slot11 = slot10
-					slot10 = slot10.setUseEstimatedTime
-					slot12 = true
-
-					slot10(slot11, slot12)
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-				--- END OF BLOCK #1 ---
-
-
-
-			end
 		end
+	end
+
+	slot6 = go
+	slot7 = slot0._asideContainer2
+	slot6 = slot6(slot7)
+	slot6 = slot6.activeSelf
+
+	if slot6 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 90-94, warpins: 1 ---
+		slot6 = 1
+		slot7 = slot0._asideContainer2
+		slot7 = slot7.childCount
+		slot8 = 1
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 95-109, warpins: 0 ---
+		for slot9 = slot6, slot7, slot8 do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 95-109, warpins: 2 ---
+			slot10 = LeanTween
+			slot10 = slot10.textAlpha
+			slot11 = slot0._asideContainer2
+			slot12 = slot11
+			slot11 = slot11.GetChild
+			slot13 = slot9 - 1
+			slot11 = slot11(slot12, slot13)
+			slot12 = 0
+			slot13 = slot2
+			slot10 = slot10(slot11, slot12, slot13)
+			slot11 = slot10
+			slot10 = slot10.setUseEstimatedTime
+			slot12 = true
+
+			slot10(slot11, slot12)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
 	slot6 = go
@@ -2220,10 +2255,19 @@ function slot17(slot0, slot1)
 		if slot2 == 1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 11-13, warpins: 2 ---
+			--- BLOCK #0 7-9, warpins: 2 ---
 			slot2 = slot0._asideContainer or slot0._asideContainer2
+			slot3 = slot1.asideType
 
-			if slot1.asideType then
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 11-13, warpins: 2 ---
+			if slot3 then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 14-16, warpins: 1 ---
@@ -2232,10 +2276,10 @@ function slot17(slot0, slot1)
 				if slot3 == 1 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 53-55, warpins: 2 ---
+					--- BLOCK #0 17-19, warpins: 2 ---
 					slot3 = slot0._asideTpl or slot0._asideTpl2
 
-					uv0("enter aside mode............")
+					slot0("enter aside mode............")
 					SetActive(slot2, true)
 					setActive(slot0._curtain, true)
 
@@ -2247,8 +2291,33 @@ function slot17(slot0, slot1)
 					setActive(slot0._subBg, false)
 
 					slot4 = slot1.bgSpeed or 0.5
+					slot5 = slot1.bgFade
 
-					if slot1.bgFade then
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 21-35, warpins: 2 ---
+					--- END OF BLOCK #1 ---
+
+					FLOW; TARGET BLOCK #2
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #2 37-51, warpins: 2 ---
+					--- END OF BLOCK #2 ---
+
+					FLOW; TARGET BLOCK #3
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #3 53-55, warpins: 2 ---
+					if slot5 then
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 56-58, warpins: 1 ---
@@ -2257,14 +2326,14 @@ function slot17(slot0, slot1)
 						if slot5 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 87-95, warpins: 2 ---
+							--- BLOCK #0 59-85, warpins: 1 ---
 							slot0.interactive = false
 
 							LeanTween.value(go(slot0._bg), 1, 0, slot4):setUseEstimatedTime(true):setOnUpdate(System.Action_float(function (slot0)
 
 								-- Decompilation error in this vicinity:
 								--- BLOCK #0 1-4, warpins: 1 ---
-								uv0._bgCG.alpha = slot0
+								slot0._bgCG.alpha = slot0
 
 								return
 								--- END OF BLOCK #0 ---
@@ -2275,10 +2344,10 @@ function slot17(slot0, slot1)
 
 								-- Decompilation error in this vicinity:
 								--- BLOCK #0 1-12, warpins: 1 ---
-								uv0.interactive = true
-								uv0.preBg = nil
+								slot0.interactive = true
+								slot0.preBg = nil
 
-								setActive(uv0._bg, false)
+								setActive(slot0._bg, false)
 
 								return
 								--- END OF BLOCK #0 ---
@@ -2287,6 +2356,14 @@ function slot17(slot0, slot1)
 
 							end))
 							--- END OF BLOCK #0 ---
+
+							FLOW; TARGET BLOCK #1
+
+
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #1 87-95, warpins: 2 ---
+							--- END OF BLOCK #1 ---
 
 
 
@@ -2311,7 +2388,7 @@ function slot17(slot0, slot1)
 
 
 					end
-					--- END OF BLOCK #0 ---
+					--- END OF BLOCK #3 ---
 
 
 
@@ -2321,7 +2398,7 @@ function slot17(slot0, slot1)
 
 
 			end
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #1 ---
 
 
 
@@ -2363,11 +2440,11 @@ function slot17(slot0, slot1)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-9, warpins: 1 ---
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = true
 				slot0.interactive = slot1
 				slot0 = SetActive
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1._dialogue
 				slot2 = false
 
@@ -2416,10 +2493,9 @@ function slot17(slot0, slot1)
 	function slot5()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 9-10, warpins: 2 ---
-		slot0 = 0
+		--- BLOCK #0 1-7, warpins: 1 ---
 		slot1 = nil
-		slot2, slot3, slot4 = ipairs(uv0.sequence or {})
+		slot2, slot3, slot4 = ipairs(slot0.sequence or {})
 
 		--- END OF BLOCK #0 ---
 
@@ -2428,32 +2504,7 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 11-52, warpins: 0 ---
-		for slot5, slot6 in slot2, slot3, slot4 do
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 41-50, warpins: 2 ---
-			slot7 = cloneTplTo(uv1, uv2)
-
-			setActive(slot7, true)
-			setText(slot7, slot8)
-			setTextAlpha(slot7, 0)
-
-			slot1 = LeanTween.textAlpha(slot7, 1, uv0.sequenceSpd or 1):setDelay(slot0):setUseEstimatedTime(true)
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 51-52, warpins: 2 ---
-			--- END OF BLOCK #1 ---
-
-
-
-		end
-
+		--- BLOCK #1 9-10, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
@@ -2461,68 +2512,35 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 53-65, warpins: 1 ---
-		slot2 = setAnchoredPosition
-		slot3 = uv3
-		slot3 = slot3._asideSignDate
-		slot4 = Vector3
-		slot5 = 292
-		slot6 = -635.4
-		slot7 = 0
-
-		slot2(slot3, slot4(slot5, slot6, slot7))
-
-		slot2 = uv0
-		slot2 = slot2.signDate
-
-		if slot2 then
+		--- BLOCK #2 11-52, warpins: 0 ---
+		for slot5, slot6 in slot2, slot3, slot4 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 91-105, warpins: 2 ---
-			setText(uv3._asideSignDate, uv0.signDate[1])
-			setTextAlpha(uv3._asideSignDate, 0)
+			--- BLOCK #0 11-39, warpins: 1 ---
+			slot7 = cloneTplTo(slot1, slot2)
 
-			slot1 = LeanTween.textAlpha(uv3._asideSignDate, 1, uv0.sequenceSpd or 1):setDelay(slot0):setUseEstimatedTime(true)
+			setActive(slot7, true)
+			setText(slot7, slot8)
+			setTextAlpha(slot7, 0)
 
-			if uv0.signDate[3] then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 106-121, warpins: 1 ---
-				slot2 = setAnchoredPosition
-				slot3 = uv3
-				slot3 = slot3._asideSignDate
-				slot4 = Vector3
-				slot5 = uv0
-				slot5 = slot5.signDate
-				slot5 = slot5[3]
-				slot5 = slot5[1]
-				slot6 = uv0
-				slot6 = slot6.signDate
-				slot6 = slot6[3]
-				slot6 = slot6[2]
-				slot7 = 0
-
-				slot2(slot3, slot4(slot5, slot6, slot7))
-				--- END OF BLOCK #0 ---
-
-
-
-			end
+			slot1 = LeanTween.textAlpha(slot7, 1, slot0.sequenceSpd or 1):setDelay(slot0):setUseEstimatedTime(true)
 			--- END OF BLOCK #0 ---
 
+			FLOW; TARGET BLOCK #1
 
 
-		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 122-126, warpins: 1 ---
-			slot2 = setText
-			slot3 = uv3
-			slot3 = slot3._asideSignDate
-			slot4 = ""
+			--- BLOCK #1 41-50, warpins: 2 ---
+			--- END OF BLOCK #1 ---
 
-			slot2(slot3, slot4)
-			--- END OF BLOCK #0 ---
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 51-52, warpins: 2 ---
+			--- END OF BLOCK #2 ---
 
 
 
@@ -2535,7 +2553,90 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 127-128, warpins: 3 ---
+		--- BLOCK #3 53-65, warpins: 1 ---
+		slot2 = setAnchoredPosition
+		slot3 = slot3
+		slot3 = slot3._asideSignDate
+		slot4 = Vector3
+		slot5 = 292
+		slot6 = -635.4
+		slot7 = 0
+
+		slot2(slot3, slot4(slot5, slot6, slot7))
+
+		slot2 = slot0
+		slot2 = slot2.signDate
+
+		if slot2 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 66-89, warpins: 1 ---
+			setText(slot3._asideSignDate, slot0.signDate[1])
+			setTextAlpha(slot3._asideSignDate._asideSignDate, 0)
+
+			slot1 = LeanTween.textAlpha(slot3._asideSignDate._asideSignDate._asideSignDate, 1, slot0.sequenceSpd or 1):setDelay(slot0):setUseEstimatedTime(true)
+			slot2 = slot0.signDate[3]
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 91-105, warpins: 2 ---
+			if slot2 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 106-121, warpins: 1 ---
+				slot2 = setAnchoredPosition
+				slot3 = slot3
+				slot3 = slot3._asideSignDate
+				slot4 = Vector3
+				slot5 = slot0
+				slot5 = slot5.signDate
+				slot5 = slot5[3]
+				slot5 = slot5[1]
+				slot6 = slot0
+				slot6 = slot6.signDate
+				slot6 = slot6[3]
+				slot6 = slot6[2]
+				slot7 = 0
+
+				slot2(slot3, slot4(slot5, slot6, slot7))
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #1 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 122-126, warpins: 1 ---
+			slot2 = setText
+			slot3 = slot3
+			slot3 = slot3._asideSignDate
+			slot4 = ""
+
+			slot2(slot3, slot4)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 127-128, warpins: 3 ---
 		if slot1 then
 
 			-- Decompilation error in this vicinity:
@@ -2549,10 +2650,10 @@ function slot17(slot0, slot1)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-7, warpins: 1 ---
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = true
 				slot0.interactive = slot1
-				slot0 = uv1
+				slot0 = slot1
 				slot0 = slot0.autoComplete
 
 				if slot0 then
@@ -2560,7 +2661,7 @@ function slot17(slot0, slot1)
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 8-11, warpins: 1 ---
 					slot0 = triggerButton
-					slot1 = uv0
+					slot1 = slot0
 					slot1 = slot1._go
 
 					slot0(slot1)
@@ -2592,16 +2693,16 @@ function slot17(slot0, slot1)
 
 		end
 
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #4 ---
 
-		FLOW; TARGET BLOCK #4
+		FLOW; TARGET BLOCK #5
 
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 136-136, warpins: 2 ---
+		--- BLOCK #5 136-136, warpins: 2 ---
 		return
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #5 ---
 
 
 
@@ -2621,7 +2722,7 @@ function slot17(slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-3, warpins: 1 ---
-			slot0 = uv0
+			slot0 = slot0
 
 			slot0()
 
@@ -2657,8 +2758,18 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 139-141, warpins: 2 ---
-	if table.getCount(slot1.sequence or {}) == 0 then
+	--- BLOCK #3 133-137, warpins: 2 ---
+	slot6 = table.getCount(slot1.sequence or {})
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 139-141, warpins: 2 ---
+	if slot6 == 0 then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 142-143, warpins: 1 ---
@@ -2670,14 +2781,14 @@ function slot17(slot0, slot1)
 
 	end
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #5
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 144-146, warpins: 2 ---
+	--- BLOCK #5 144-146, warpins: 2 ---
 	slot6 = slot1.bgName
 
 	if slot6 then
@@ -2700,103 +2811,113 @@ function slot17(slot0, slot1)
 		slot6(slot7, slot8)
 
 		slot6 = slot1.useBg2
-		--- END OF BLOCK #0 ---
-
-		FLOW; TARGET BLOCK #1
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 165-194, warpins: 2 ---
-		slot0._bg2 or slot0._bg1.GetComponent(slot6, typeof(Image)).color = Color.New(1, 1, 1)
-
-		setActive(slot0._bg, true)
-		setActive(slot6, true)
-		setImageSprite(slot0._bg2 or slot0._bg1, LoadSprite("bg/" .. slot1.bgName))
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #2 195-197, warpins: 2 ---
-		slot6 = slot1.bgShadow
 
 		if slot6 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 198-228, warpins: 1 ---
-			slot6 = bgTF
-			slot7 = slot6
-			slot6 = slot6.GetComponent
-			slot8 = typeof
-			slot9 = Image
-			slot6 = slot6(slot7, slot8(slot9))
-			slot7 = LeanTween
-			slot7 = slot7.value
-			slot8 = go
-			slot9 = bgTF
-			slot8 = slot8(slot9)
-			slot9 = slot1.bgShadow
-			slot9 = slot9[1]
-			slot10 = slot1.bgShadow
-			slot10 = slot10[2]
-			slot11 = slot1.bgShadow
-			slot11 = slot11[3]
-			slot7 = slot7(slot8, slot9, slot10, slot11)
-			slot8 = slot7
-			slot7 = slot7.setUseEstimatedTime
-			slot9 = true
-			slot7 = slot7(slot8, slot9)
-			slot8 = slot7
-			slot7 = slot7.setOnUpdate
-			slot9 = System
-			slot9 = slot9.Action_float
+			--- BLOCK #0 161-163, warpins: 1 ---
+			slot0._bg2 or slot0._bg1.GetComponent(slot6, typeof(Image)).color = Color.New(1, 1, 1)
 
-			function slot10(slot0)
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-9, warpins: 1 ---
-				slot1 = uv0
-				slot2 = Color
-				slot2 = slot2.New
-				slot3 = slot0
-				slot4 = slot0
-				slot5 = slot0
-				slot2 = slot2(slot3, slot4, slot5)
-				slot1.color = slot2
-
-				return
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			slot7(slot8, slot9(slot10))
+			setActive(slot0._bg, true)
+			setActive(slot6, true)
+			setImageSprite(slot0._bg2 or slot0._bg1, LoadSprite("bg/" .. slot1.bgName))
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 165-194, warpins: 2 ---
+			--- END OF BLOCK #1 ---
 
 
 
 		end
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #0 ---
 
 
 
 	end
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #6
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 229-230, warpins: 2 ---
+	--- BLOCK #6 195-197, warpins: 2 ---
+	slot6 = slot1.bgShadow
+
+	if slot6 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 198-228, warpins: 1 ---
+		slot6 = bgTF
+		slot7 = slot6
+		slot6 = slot6.GetComponent
+		slot8 = typeof
+		slot9 = Image
+		slot6 = slot6(slot7, slot8(slot9))
+		slot7 = LeanTween
+		slot7 = slot7.value
+		slot8 = go
+		slot9 = bgTF
+		slot8 = slot8(slot9)
+		slot9 = slot1.bgShadow
+		slot9 = slot9[1]
+		slot10 = slot1.bgShadow
+		slot10 = slot10[2]
+		slot11 = slot1.bgShadow
+		slot11 = slot11[3]
+		slot7 = slot7(slot8, slot9, slot10, slot11)
+		slot8 = slot7
+		slot7 = slot7.setUseEstimatedTime
+		slot9 = true
+		slot7 = slot7(slot8, slot9)
+		slot8 = slot7
+		slot7 = slot7.setOnUpdate
+		slot9 = System
+		slot9 = slot9.Action_float
+
+		function slot10(slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-9, warpins: 1 ---
+			slot1 = slot0
+			slot2 = Color
+			slot2 = slot2.New
+			slot3 = slot0
+			slot4 = slot0
+			slot5 = slot0
+			slot2 = slot2(slot3, slot4, slot5)
+			slot1.color = slot2
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot7(slot8, slot9(slot10))
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 229-230, warpins: 2 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -2808,7 +2929,7 @@ function slot17(slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-39, warpins: 1 ---
-	slot2 = uv0
+	slot2 = slot0
 	slot3 = "enter dialogue mode............"
 
 	slot2(slot3)
@@ -2915,7 +3036,7 @@ function slot17(slot0, slot1)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-4, warpins: 1 ---
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1._bgCG
 				slot1.alpha = slot0
 
@@ -2960,14 +3081,14 @@ function slot17(slot0, slot1)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-12, warpins: 1 ---
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = true
 				slot0.interactive = slot1
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = nil
 				slot0.preBg = slot1
 				slot0 = setActive
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1._bg
 				slot2 = false
 
@@ -3180,7 +3301,7 @@ function slot17(slot0, slot1)
 		--- BLOCK #1 14-18, warpins: 2 ---
 		slot1 = setActive
 		slot2 = slot0
-		slot3 = uv0
+		slot3 = slot0
 
 		if slot0 ~= slot3 then
 
@@ -3727,19 +3848,19 @@ function slot17(slot0, slot1)
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 1-13, warpins: 1 ---
 						slot0 = setActive
-						slot1 = uv0
+						slot1 = slot0
 						slot2 = true
 
 						slot0(slot1, slot2)
 
 						slot0 = setActive
-						slot1 = uv1
+						slot1 = slot1
 						slot1 = slot1._main
 						slot2 = true
 
 						slot0(slot1, slot2)
 
-						slot0 = uv1
+						slot0 = slot1
 						slot1 = true
 						slot0.interactive = slot1
 
@@ -3781,10 +3902,10 @@ function slot17(slot0, slot1)
 				slot2 = Ship
 				slot2 = slot2.SetExpression
 				slot3 = slot0
-				slot4 = uv0
+				slot4 = slot0
 				slot5 = "default"
 				slot2 = slot2(slot3, slot4, slot5)
-				slot3 = uv1
+				slot3 = slot1
 				slot3 = slot3.expression
 
 				if slot3 then
@@ -3793,9 +3914,9 @@ function slot17(slot0, slot1)
 					--- BLOCK #0 15-25, warpins: 1 ---
 					slot3 = GetSpriteFromAtlas
 					slot4 = "paintingface/"
-					slot5 = uv0
+					slot5 = slot0
 					slot4 = slot4 .. slot5
-					slot5 = uv1
+					slot5 = slot1
 					slot5 = slot5.expression
 					slot3 = slot3(slot4, slot5)
 					slot4 = setActive
@@ -3805,7 +3926,7 @@ function slot17(slot0, slot1)
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 26-27, warpins: 1 ---
-						slot6 = uv1
+						slot6 = slot1
 						slot6 = slot6.expression
 						--- END OF BLOCK #0 ---
 
@@ -3853,7 +3974,7 @@ function slot17(slot0, slot1)
 					--- BLOCK #0 39-43, warpins: 1 ---
 					slot4 = setActive
 					slot5 = slot3
-					slot6 = uv1
+					slot6 = slot1
 					slot6 = slot6.actorShadow
 
 					slot4(slot5, slot6)
@@ -3872,7 +3993,7 @@ function slot17(slot0, slot1)
 				-- Decompilation error in this vicinity:
 				--- BLOCK #2 44-50, warpins: 2 ---
 				slot4 = defaultValue
-				slot5 = uv1
+				slot5 = slot1
 				slot5 = slot5.recordPaint
 				slot6 = true
 				slot4 = slot4(slot5, slot6)
@@ -3881,8 +4002,8 @@ function slot17(slot0, slot1)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 51-55, warpins: 1 ---
-					slot4 = uv2
-					slot5 = uv3
+					slot4 = slot2
+					slot5 = slot3
 					slot5 = slot5.CENTER
 
 					if slot4 == slot5 then
@@ -3918,7 +4039,7 @@ function slot17(slot0, slot1)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #3 59-62, warpins: 3 ---
-				slot5 = uv1
+				slot5 = slot1
 				slot5 = slot5.actorScale
 
 				if not slot5 then
@@ -3940,14 +4061,14 @@ function slot17(slot0, slot1)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #4 64-67, warpins: 2 ---
-				slot6 = uv1
+				slot6 = slot1
 				slot6 = slot6.dir
 
 				if slot6 then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 68-72, warpins: 1 ---
-					slot6 = uv1
+					slot6 = slot1
 					slot6 = slot6.dir
 					slot7 = 0
 
@@ -3984,7 +4105,7 @@ function slot17(slot0, slot1)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #5 76-87, warpins: 2 ---
-				slot7 = uv4
+				slot7 = slot4
 				slot7 = slot7.transform
 				slot8 = Vector3
 				slot9 = slot6 * slot5
@@ -3992,36 +4113,36 @@ function slot17(slot0, slot1)
 				slot11 = slot5
 				slot8 = slot8(slot9, slot10, slot11)
 				slot7.localScale = slot8
-				slot7 = uv5
+				slot7 = slot5
 				slot7 = slot7.preStep
 
 				if slot7 then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 88-94, warpins: 1 ---
-					slot7 = uv5
+					slot7 = slot5
 					slot7 = slot7.preStep
 					slot7 = slot7.side
-					slot8 = uv1
+					slot8 = slot1
 					slot8 = slot8.side
 
 					if slot7 == slot8 then
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 95-100, warpins: 1 ---
-						slot7 = uv1
+						slot7 = slot1
 						slot7 = slot7.side
-						slot8 = uv3
+						slot8 = slot3
 						slot8 = slot8.CENTER
 
 						if slot7 ~= slot8 then
 
 							-- Decompilation error in this vicinity:
 							--- BLOCK #0 101-111, warpins: 1 ---
-							slot7 = uv5
+							slot7 = slot5
 							slot8 = slot7
 							slot7 = slot7.getTagetActorTF
-							slot9 = uv1
+							slot9 = slot1
 							slot9 = slot9.side
 							slot7, slot8, slot9 = slot7(slot8, slot9)
 							slot10 = setActive
@@ -4055,23 +4176,23 @@ function slot17(slot0, slot1)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #6 112-115, warpins: 4 ---
-				slot7 = uv5
+				slot7 = slot5
 				slot7 = slot7.targetActorTF
 
 				if slot7 then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 116-121, warpins: 1 ---
-					slot7 = uv3
+					slot7 = slot3
 					slot7 = slot7.CENTER
-					slot8 = uv1
+					slot8 = slot1
 					slot8 = slot8.side
 
 					if slot7 ~= slot8 then
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 122-125, warpins: 1 ---
-						slot7 = uv1
+						slot7 = slot1
 						slot7 = slot7.hideOther
 
 						if not slot7 then
@@ -4079,26 +4200,26 @@ function slot17(slot0, slot1)
 							-- Decompilation error in this vicinity:
 							--- BLOCK #0 126-140, warpins: 1 ---
 							slot7 = setActive
-							slot8 = uv5
+							slot8 = slot5
 							slot8 = slot8.targetActorTF
 							slot9 = true
 
 							slot7(slot8, slot9)
 
-							slot7 = uv5
+							slot7 = slot5
 							slot8 = slot7
 							slot7 = slot7.setFade
-							slot9 = uv5
+							slot9 = slot5
 							slot9 = slot9.targetActorTF
 							slot10 = 1
-							slot11 = uv6
+							slot11 = slot6
 							slot11 = slot11.alpha
 
 							if not slot11 then
 
 								-- Decompilation error in this vicinity:
 								--- BLOCK #0 141-141, warpins: 1 ---
-								slot11 = uv7
+								slot11 = slot7
 								--- END OF BLOCK #0 ---
 
 
@@ -4113,14 +4234,14 @@ function slot17(slot0, slot1)
 
 							-- Decompilation error in this vicinity:
 							--- BLOCK #1 142-145, warpins: 2 ---
-							slot12 = uv6
+							slot12 = slot6
 							slot12 = slot12.time
 
 							if not slot12 then
 
 								-- Decompilation error in this vicinity:
 								--- BLOCK #0 146-146, warpins: 1 ---
-								slot12 = uv8
+								slot12 = slot8
 								--- END OF BLOCK #0 ---
 
 
@@ -4160,26 +4281,26 @@ function slot17(slot0, slot1)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #7 148-152, warpins: 4 ---
-				slot7 = uv5
+				slot7 = slot5
 				slot7 = slot7.targetActorTF
-				slot8 = uv4
+				slot8 = slot4
 
 				if slot7 ~= slot8 then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 153-160, warpins: 1 ---
-					slot7 = uv5
+					slot7 = slot5
 					slot8 = slot7
 					slot7 = slot7.setFade
-					slot9 = uv4
-					slot10 = uv6
+					slot9 = slot4
+					slot10 = slot6
 					slot10 = slot10.alpha
 
 					if not slot10 then
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 161-161, warpins: 1 ---
-						slot10 = uv7
+						slot10 = slot7
 						--- END OF BLOCK #0 ---
 
 
@@ -4195,14 +4316,14 @@ function slot17(slot0, slot1)
 					-- Decompilation error in this vicinity:
 					--- BLOCK #1 162-166, warpins: 2 ---
 					slot11 = 1
-					slot12 = uv6
+					slot12 = slot6
 					slot12 = slot12.time
 
 					if not slot12 then
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 167-167, warpins: 1 ---
-						slot12 = uv8
+						slot12 = slot8
 						--- END OF BLOCK #0 ---
 
 
@@ -4219,8 +4340,8 @@ function slot17(slot0, slot1)
 					--- BLOCK #2 168-171, warpins: 2 ---
 					slot7(slot8, slot9, slot10, slot11, slot12)
 
-					slot7 = uv5
-					slot8 = uv4
+					slot7 = slot5
+					slot8 = slot4
 					slot7.targetActorTF = slot8
 					--- END OF BLOCK #2 ---
 
@@ -4317,15 +4438,64 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #2 377-381, warpins: 2 ---
+				--- BLOCK #2 347-366, warpins: 2 ---
+				slot12 = tf
+				slot13 = slot4
+				slot12 = tf(slot4)
+				slot12 = tf(slot4).localPosition
+				slot13 = LeanTween
+				slot13 = LeanTween.move
+				slot14 = rtf
+				slot15 = slot4
 				slot14 = rtf(slot4)
+				slot15 = Vector3
+				slot16 = tf(slot4).localPosition.x
+				slot16 = tf(slot4).localPosition.x + slot10
+				slot17 = tf(slot4).localPosition.y
 				slot17 = tf(slot4).localPosition.y + slot11
 				slot18 = 0
 				slot15 = Vector3(tf(slot4).localPosition.x + slot10, slot17, slot18)
+				slot16 = slot1.shake
+				slot16 = slot1.shake.speed
 				slot16 = slot1.shake.speed or 1
 
 				LeanTween.move(slot14, slot15, 1 / slot16):setLoopPingPong(slot1.shake.number or 1):setUseEstimatedTime(true)
+
 				--- END OF BLOCK #2 ---
+
+				FLOW; TARGET BLOCK #4
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #3 367-367, warpins: 1 ---
+				slot16 = 1
+				--- END OF BLOCK #3 ---
+
+				FLOW; TARGET BLOCK #4
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #4 368-375, warpins: 2 ---
+				--- END OF BLOCK #4 ---
+
+				FLOW; TARGET BLOCK #6
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #5 376-376, warpins: 1 ---
+				slot15 = 1
+				--- END OF BLOCK #5 ---
+
+				FLOW; TARGET BLOCK #6
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #6 377-381, warpins: 2 ---
+				--- END OF BLOCK #6 ---
 
 
 
@@ -5063,7 +5233,7 @@ function slot17(slot0, slot1)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 1-4, warpins: 1 ---
-					slot0 = uv0
+					slot0 = slot0
 					slot1 = nil
 					slot0.inAction = slot1
 
@@ -5217,9 +5387,9 @@ function slot17(slot0, slot1)
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = setText
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.content
-		slot2 = uv1
+		slot2 = slot1
 		slot2 = slot2.say
 
 		if not slot2 then
@@ -5243,17 +5413,17 @@ function slot17(slot0, slot1)
 		--- BLOCK #1 9-13, warpins: 2 ---
 		slot0(slot1, slot2)
 
-		slot0 = uv1
+		slot0 = slot1
 		slot0 = slot0.typewriter
 
 		if slot0 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 14-18, warpins: 1 ---
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.TypeWriter
-			slot2 = uv1
+			slot2 = slot1
 
 			slot0(slot1, slot2)
 			--- END OF BLOCK #0 ---
@@ -5291,7 +5461,7 @@ function slot17(slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-3, warpins: 1 ---
-			slot0 = uv0
+			slot0 = slot0
 
 			slot0()
 
@@ -5470,7 +5640,7 @@ function slot17(slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1._flashCG
 		slot1.alpha = slot0
 
@@ -5491,13 +5661,13 @@ function slot17(slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = uv0
+		slot0 = slot0
 
 		if slot0 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 4-5, warpins: 1 ---
-			slot0 = uv0
+			slot0 = slot0
 
 			slot0()
 			--- END OF BLOCK #0 ---
@@ -5514,7 +5684,7 @@ function slot17(slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #1 6-9, warpins: 2 ---
-		slot0 = uv1
+		slot0 = slot1
 		slot1 = nil
 		slot0.inflashin = slot1
 
@@ -5628,7 +5798,7 @@ function slot17(slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1._flashCG
 		slot1.alpha = slot0
 
@@ -5649,13 +5819,13 @@ function slot17(slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = uv0
+		slot0 = slot0
 
 		if slot0 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 4-5, warpins: 1 ---
-			slot0 = uv0
+			slot0 = slot0
 
 			slot0()
 			--- END OF BLOCK #0 ---
@@ -5672,7 +5842,7 @@ function slot17(slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #1 6-9, warpins: 2 ---
-		slot0 = uv1
+		slot0 = slot1
 		slot1 = nil
 		slot0.inflashout = slot1
 
@@ -5766,13 +5936,13 @@ function slot17(slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-10, warpins: 1 ---
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = false
 		slot0.inTypeWritter = slot1
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = nil
 		slot0.typeWritterSpeedUp = slot1
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.typeWriteCallback
 
 		if slot0 then
@@ -5819,7 +5989,7 @@ function slot17(slot0, slot1)
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2, slot3, slot4 = nil
-	slot5 = uv0
+	slot5 = slot0
 	slot5 = slot5.LEFT
 
 	if slot1 == slot5 then
@@ -5837,7 +6007,7 @@ function slot17(slot0, slot1)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 10-13, warpins: 1 ---
-		slot5 = uv0
+		slot5 = slot0
 		slot5 = slot5.RIGHT
 
 		if slot1 == slot5 then
@@ -5855,7 +6025,7 @@ function slot17(slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 18-21, warpins: 1 ---
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.CENTER
 
 			if slot1 == slot5 then
@@ -6086,7 +6256,7 @@ function slot17(slot0, slot1, slot2, slot3)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 73-73, warpins: 1 ---
-		slot18 = uv0
+		slot18 = slot0
 		--- END OF BLOCK #0 ---
 
 
@@ -6127,13 +6297,13 @@ function slot17(slot0, slot1, slot2, slot3)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = uv0
+		slot0 = slot0
 
 		if slot0 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 4-5, warpins: 1 ---
-			slot0 = uv0
+			slot0 = slot0
 
 			slot0()
 			--- END OF BLOCK #0 ---
@@ -6151,19 +6321,19 @@ function slot17(slot0, slot1, slot2, slot3)
 		-- Decompilation error in this vicinity:
 		--- BLOCK #1 6-17, warpins: 2 ---
 		slot0 = setActive
-		slot1 = uv1
+		slot1 = slot1
 		slot2 = false
 
 		slot0(slot1, slot2)
 
 		slot0 = setActive
-		slot1 = uv2
+		slot1 = slot2
 		slot2 = true
 
 		slot0(slot1, slot2)
 
-		slot0 = uv1
-		slot1 = uv3
+		slot0 = slot1
+		slot1 = slot3
 		slot0.anchoredPosition = slot1
 
 		return
@@ -6185,7 +6355,7 @@ function slot17(slot0, slot1, slot2, slot3)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 103-103, warpins: 1 ---
-		slot18 = uv0
+		slot18 = slot0
 		--- END OF BLOCK #0 ---
 
 
@@ -6299,7 +6469,7 @@ function slot17(slot0, slot1)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1._curtainCG
 		slot1.alpha = slot0
 
@@ -6389,28 +6559,28 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 		--- BLOCK #1 33-58, warpins: 2 ---
 		slot5 = table
 		slot5 = slot5.insert
-		slot6 = uv0
+		slot6 = slot0
 		slot7 = slot2
 
 		slot5(slot6, slot7)
 
 		slot5 = table
 		slot5 = slot5.insert
-		slot6 = uv0
+		slot6 = slot0
 		slot7 = slot4
 
 		slot5(slot6, slot7)
 
 		slot5 = table
 		slot5 = slot5.insert
-		slot6 = uv1
+		slot6 = slot1
 		slot7 = slot0
 
 		slot5(slot6, slot7)
 
 		slot5 = table
 		slot5 = slot5.insert
-		slot6 = uv1
+		slot6 = slot1
 		slot7 = slot3
 
 		slot5(slot6, slot7)
@@ -6438,7 +6608,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 			slot6.color = slot7
 			slot7 = table
 			slot7 = slot7.insert
-			slot8 = uv0
+			slot8 = slot0
 			slot9 = slot6
 
 			slot7(slot8, slot9)
@@ -6533,14 +6703,14 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 						--- BLOCK #0 116-125, warpins: 1 ---
 						slot13 = table
 						slot13 = slot13.insert
-						slot14 = uv0
+						slot14 = slot0
 						slot15 = slot12
 
 						slot13(slot14, slot15)
 
 						slot13 = table
 						slot13 = slot13.insert
-						slot14 = uv1
+						slot14 = slot1
 						slot15 = slot11
 
 						slot13(slot14, slot15)
@@ -6695,7 +6865,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot1 = ipairs
-		slot2 = uv0
+		slot2 = slot0
 		slot1, slot2, slot3 = slot1(slot2)
 
 		--- END OF BLOCK #0 ---
@@ -6769,7 +6939,7 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = true
 		slot0.interactive = slot1
 
@@ -6795,7 +6965,7 @@ function slot17(slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-38, warpins: 1 ---
-	slot2 = uv0
+	slot2 = slot0
 	slot3 = "enter bg mode............"
 
 	slot2(slot3)
@@ -6998,7 +7168,7 @@ function slot17(slot0, slot1)
 		slot5 = LeanTween
 		slot5 = slot5.value
 		slot6 = go
-		slot7 = uv0
+		slot7 = slot0
 		slot7 = slot7._bg
 		slot6 = slot6(slot7)
 		slot7 = slot0
@@ -7018,7 +7188,7 @@ function slot17(slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-4, warpins: 1 ---
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1._bgCG
 			slot1.alpha = slot0
 
@@ -7062,13 +7232,13 @@ function slot17(slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-3, warpins: 1 ---
-			slot0 = uv0
+			slot0 = slot0
 
 			if slot0 then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 4-5, warpins: 1 ---
-				slot0 = uv0
+				slot0 = slot0
 
 				slot0()
 				--- END OF BLOCK #0 ---
@@ -7236,22 +7406,22 @@ function slot17(slot0, slot1)
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 1-12, warpins: 1 ---
 					slot0 = setImageSprite
-					slot1 = uv0
-					slot2 = uv1
+					slot1 = slot0
+					slot2 = slot1
 
 					slot0(slot1, slot2)
 
-					slot0 = uv2
+					slot0 = slot2
 					slot1 = 0
 					slot2 = 1
-					slot3 = uv3
+					slot3 = slot3
 					slot4 = 0
 
 					function slot5()
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 1-4, warpins: 1 ---
-						slot0 = uv0
+						slot0 = slot0
 						slot1 = true
 						slot0.interactive = slot1
 
@@ -7380,27 +7550,27 @@ function slot17(slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = true
 			slot0.interactive = slot1
-			slot0 = uv1
+			slot0 = slot1
 			slot0 = slot0.blankScreen
 
 			if slot0 then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 8-29, warpins: 1 ---
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = true
 				slot0.blankScreen = slot1
 				slot0 = SetActive
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1._curtain
 				slot2 = true
 
 				slot0(slot1, slot2)
 
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = Timer
 				slot1 = slot1.New
 
@@ -7409,17 +7579,17 @@ function slot17(slot0, slot1)
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 1-13, warpins: 1 ---
 					slot0 = SetActive
-					slot1 = uv0
+					slot1 = slot0
 					slot1 = slot1._curtain
 					slot2 = false
 
 					slot0(slot1, slot2)
 
-					slot0 = uv0
+					slot0 = slot0
 					slot1 = nil
 					slot0.blankScreen = slot1
 					slot0 = triggerButton
-					slot1 = uv0
+					slot1 = slot0
 					slot1 = slot1._go
 
 					slot0(slot1)
@@ -7431,12 +7601,12 @@ function slot17(slot0, slot1)
 
 				end
 
-				slot3 = uv1
+				slot3 = slot1
 				slot3 = slot3.blankScreen
 				slot4 = 1
 				slot1 = slot1(slot2, slot3, slot4)
 				slot0.blankScreenTimer = slot1
-				slot0 = uv0
+				slot0 = slot0
 				slot0 = slot0.blankScreenTimer
 				slot1 = slot0
 				slot0 = slot0.Start
@@ -7764,7 +7934,7 @@ function slot17(slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 10-18, warpins: 1 ---
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5[slot4]
 			slot5 = slot5.ship_group
 			slot6 = ShipGroup
@@ -7776,7 +7946,7 @@ function slot17(slot0, slot1)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 19-22, warpins: 1 ---
-				slot7 = uv0
+				slot7 = slot0
 				slot7 = slot7[slot4]
 				slot2 = slot7.name
 				--- END OF BLOCK #0 ---
@@ -7806,7 +7976,7 @@ function slot17(slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #1 28-31, warpins: 2 ---
-			slot7 = uv0
+			slot7 = slot0
 			slot7 = slot7[slot4]
 			slot3 = slot7.painting
 			--- END OF BLOCK #1 ---
@@ -7999,7 +8169,7 @@ function slot17(slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-15, warpins: 1 ---
-	slot3 = uv0
+	slot3 = slot0
 	slot4 = "enter bg Options............"
 
 	slot3(slot4)
@@ -8117,36 +8287,36 @@ function slot17(slot0, slot1, slot2)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.hideOptions
-			slot2 = uv1
+			slot2 = slot1
 
 			function slot3()
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-15, warpins: 1 ---
-				slot0 = uv0
-				slot1 = uv1
+				slot0 = slot0
+				slot1 = slot1
 				slot1 = slot1.flag
 				slot0.optionFlag = slot1
 				slot0 = table
 				slot0 = slot0.insert
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1.selectedOptions
-				slot2 = uv0
+				slot2 = slot0
 				slot2 = slot2.optionFlag
 
 				slot0(slot1, slot2)
 
-				slot0 = uv2
+				slot0 = slot2
 				slot0 = slot0()
 
 				if slot0 then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 16-17, warpins: 1 ---
-					slot0 = uv2
+					slot0 = slot2
 
 					slot0()
 					--- END OF BLOCK #0 ---
@@ -8344,7 +8514,7 @@ function slot17(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.optionsCg
 		slot1.alpha = slot0
 
@@ -8367,7 +8537,7 @@ function slot17(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-15, warpins: 1 ---
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.skipBtn
 		slot1 = slot0
 		slot0 = slot0.GetComponent
@@ -8376,7 +8546,7 @@ function slot17(slot0)
 		slot0 = slot0(slot1, slot2(slot3))
 		slot1 = true
 		slot0.interactable = slot1
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.optionsCg
 		slot1 = true
 		slot0.interactable = slot1
@@ -8526,7 +8696,7 @@ function slot17(slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.optionsCg
 		slot1.alpha = slot0
 
@@ -8556,7 +8726,7 @@ function slot17(slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-29, warpins: 1 ---
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.skipBtn
 		slot1 = slot0
 		slot0 = slot0.GetComponent
@@ -8565,12 +8735,12 @@ function slot17(slot0, slot1, slot2)
 		slot0 = slot0(slot1, slot2(slot3))
 		slot1 = true
 		slot0.interactable = slot1
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.optionsCg
 		slot1 = true
 		slot0.interactable = slot1
 		slot0 = setActive
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.options
 		slot2 = false
 
@@ -8579,18 +8749,18 @@ function slot17(slot0, slot1, slot2)
 		slot0 = LeanTween
 		slot0 = slot0.cancel
 		slot1 = go
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.optionsBg
 
 		slot0(slot1(slot2))
 
-		slot0 = uv1
+		slot0 = slot1
 
 		if slot0 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 30-31, warpins: 1 ---
-			slot0 = uv1
+			slot0 = slot1
 
 			slot0()
 			--- END OF BLOCK #0 ---
@@ -8759,9 +8929,9 @@ function slot17(slot0, slot1)
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-8, warpins: 1 ---
 				slot0 = findTF
-				slot1 = uv0
+				slot1 = slot0
 				slot1 = slot1._effectPanel
-				slot2 = uv1
+				slot2 = slot1
 				slot2 = slot2.name
 				slot0 = slot0(slot1, slot2)
 
@@ -8769,9 +8939,9 @@ function slot17(slot0, slot1)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 9-15, warpins: 1 ---
-					slot1 = uv0
+					slot1 = slot0
 					slot1 = slot1.effectObjs
-					slot2 = uv1
+					slot2 = slot1
 					slot2 = slot2.name
 					slot1 = slot1[slot2]
 
@@ -8781,19 +8951,19 @@ function slot17(slot0, slot1)
 						--- BLOCK #0 16-22, warpins: 1 ---
 						slot2 = LoadAndInstantiateAsync
 						slot3 = "ui"
-						slot4 = uv1
+						slot4 = slot1
 						slot4 = slot4.name
 
 						function slot5(slot0)
 
 							-- Decompilation error in this vicinity:
 							--- BLOCK #0 1-35, warpins: 1 ---
-							slot1 = uv0
+							slot1 = slot0
 							slot1 = slot1.name
 							slot0.name = slot1
 							slot1 = setParent
 							slot2 = slot0
-							slot3 = uv1
+							slot3 = slot1
 							slot3 = slot3._effectPanel
 							slot3 = slot3.transform
 
@@ -8801,28 +8971,28 @@ function slot17(slot0, slot1)
 
 							slot1 = setActive
 							slot2 = slot0
-							slot3 = uv0
+							slot3 = slot0
 							slot3 = slot3.active
 
 							slot1(slot2, slot3)
 
-							slot1 = uv1
+							slot1 = slot1
 							slot1 = slot1.effectObjs
-							slot2 = uv0
+							slot2 = slot0
 							slot2 = slot2.name
 							slot3 = {}
 							slot1[slot2] = slot3
-							slot1 = uv1
+							slot1 = slot1
 							slot1 = slot1.effectObjs
-							slot2 = uv0
+							slot2 = slot0
 							slot2 = slot2.name
 							slot1 = slot1[slot2]
-							slot2 = uv0
+							slot2 = slot0
 							slot2 = slot2.name
 							slot1[1] = slot2
-							slot1 = uv1
+							slot1 = slot1
 							slot1 = slot1.effectObjs
-							slot2 = uv0
+							slot2 = slot0
 							slot2 = slot2.name
 							slot1 = slot1[slot2]
 							slot1[2] = slot0
@@ -8845,7 +9015,7 @@ function slot17(slot0, slot1)
 						--- BLOCK #0 23-28, warpins: 1 ---
 						slot2 = setActive
 						slot3 = slot1[2]
-						slot4 = uv1
+						slot4 = slot1
 						slot4 = slot4.active
 
 						slot2(slot3, slot4)
@@ -8864,28 +9034,28 @@ function slot17(slot0, slot1)
 					--- BLOCK #0 29-37, warpins: 1 ---
 					slot1 = SetActive
 					slot2 = slot0
-					slot3 = uv1
+					slot3 = slot1
 					slot3 = slot3.active
 
 					slot1(slot2, slot3)
 
-					slot1 = uv1
+					slot1 = slot1
 					slot1 = slot1.active
 
 					if not slot1 then
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 38-41, warpins: 1 ---
-						slot1 = uv1
+						slot1 = slot1
 						slot1 = slot1.destory
 
 						if slot1 then
 
 							-- Decompilation error in this vicinity:
 							--- BLOCK #0 42-48, warpins: 1 ---
-							slot1 = uv0
+							slot1 = slot0
 							slot1 = slot1.effectObjs
-							slot2 = uv1
+							slot2 = slot1
 							slot2 = slot2.name
 							slot1 = slot1[slot2]
 
@@ -8895,18 +9065,18 @@ function slot17(slot0, slot1)
 								--- BLOCK #0 49-63, warpins: 1 ---
 								slot1 = Object
 								slot1 = slot1.Destroy
-								slot2 = uv0
+								slot2 = slot0
 								slot2 = slot2.effectObjs
-								slot3 = uv1
+								slot3 = slot1
 								slot3 = slot3.name
 								slot2 = slot2[slot3]
 								slot2 = slot2[2]
 
 								slot1(slot2)
 
-								slot1 = uv0
+								slot1 = slot0
 								slot1 = slot1.effectObjs
-								slot2 = uv1
+								slot2 = slot1
 								slot2 = slot2.name
 								slot3 = nil
 								slot1[slot2] = slot3
@@ -9452,7 +9622,7 @@ function slot17(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = table
 	slot1 = slot1.getCount
-	slot2 = uv0
+	slot2 = slot0
 	slot1 = slot1(slot2)
 	slot2 = 0
 
@@ -9460,11 +9630,11 @@ function slot17(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 8-16, warpins: 1 ---
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1[1]
 		slot2 = table
 		slot2 = slot2.remove
-		slot3 = uv0
+		slot3 = slot0
 		slot4 = 1
 
 		slot2(slot3, slot4)
@@ -9513,7 +9683,7 @@ function slot17(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = table
 	slot3 = slot3.insert
-	slot4 = uv0
+	slot4 = slot0
 	slot5 = {}
 	slot5[1] = slot1
 	slot5[2] = slot2
@@ -9544,3 +9714,5 @@ function slot17(slot0)
 end
 
 slot0.isActive = slot17
+
+return
