@@ -1,23 +1,23 @@
 slot0 = class("ShipUpgradeLayer2", import("..base.BaseUI"))
 slot1 = 3
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "ShipBreakOutUI"
 end
 
-function slot0.setShips(slot0, slot1)
+slot0.setShips = function (slot0, slot1)
 	slot0.shipVOs = slot1
 end
 
-function slot0.setItems(slot0, slot1)
+slot0.setItems = function (slot0, slot1)
 	slot0.items = slot1
 end
 
-function slot0.setPlayer(slot0, slot1)
+slot0.setPlayer = function (slot0, slot1)
 	slot0.player = slot1
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.leftPanel = slot0:findTF("blur_panel/left_panel")
 	slot0.stages = slot0:findTF("stageScrollRect/stages", slot0.leftPanel)
 	slot0.stagesSnap = slot0:findTF("stageScrollRect", slot0.leftPanel):GetComponent("HorizontalScrollSnap")
@@ -53,23 +53,23 @@ function slot0.init(slot0)
 	slot0:playLoadingAni()
 end
 
-function slot0.loadChar(slot0)
+slot0.loadChar = function (slot0)
 	if not slot0.shipPrefab then
 		pg.UIMgr:GetInstance():LoadingOn()
 		PoolMgr.GetInstance():GetSpineChar(slot0.shipVO:getPrefab(), true, function (slot0)
 			pg.UIMgr:GetInstance():LoadingOff()
 
-			uv0.shipPrefab = uv1
-			uv0.shipModel = slot0
+			slot0.shipPrefab = slot0
+			slot0.shipModel = slot0
 			tf(slot0).localScale = Vector3(0.8, 0.8, 1)
 
 			slot0:GetComponent("SpineAnimUI"):SetAction("stand", 0)
-			setParent(slot0, uv0.qCharaContain)
+			setParent(slot0, slot0.qCharaContain)
 		end)
 	end
 end
 
-function slot0.recycleSpineChar(slot0)
+slot0.recycleSpineChar = function (slot0)
 	if slot0.shipPrefab and slot0.shipModel then
 		PoolMgr.GetInstance():ReturnSpineChar(slot0.shipPrefab, slot0.shipModel)
 
@@ -78,39 +78,41 @@ function slot0.recycleSpineChar(slot0)
 	end
 end
 
-function slot0.enabledToggles(slot0, slot1)
+slot0.enabledToggles = function (slot0, slot1)
 	eachChild(slot0.toggles, function (slot0)
-		slot0:GetComponent("Toggle").enabled = uv0
+		slot0:GetComponent("Toggle").enabled = slot0
 	end)
 end
 
-function slot0.addDragListenter(slot0)
+slot0.addDragListenter = function (slot0)
 	slot1 = GetOrAddComponent(slot0._tf, "EventTriggerListener")
 	slot0.dragTrigger = slot1
 	slot2 = nil
 	slot3 = 0
 
 	slot1:AddBeginDragFunc(function ()
-		uv0 = nil
-		uv1 = 0
+		slot0 = nil
+		slot1 = 0
 	end)
 	slot1:AddDragFunc(function (slot0, slot1)
-		if not uv0 then
-			uv0 = slot1.position
+		slot2 = slot1.position
+
+		if not slot0 then
+			slot0 = slot2
 		end
 
-		uv1 = slot2.x - uv0.x
+		slot1 = slot2.x - slot0.x
 	end)
 	slot1:AddDragEndFunc(function (slot0, slot1)
-		if uv0 < -50 then
-			uv1:emit(ShipUpgradeMediator2.NEXTSHIP, -1)
-		elseif uv0 > 50 then
-			uv1:emit(ShipUpgradeMediator2.NEXTSHIP)
+		if slot0 < -50 then
+			slot1:emit(ShipUpgradeMediator2.NEXTSHIP, -1)
+		elseif slot0 > 50 then
+			slot1:emit(ShipUpgradeMediator2.NEXTSHIP)
 		end
 	end)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0.UIMgr = pg.UIMgr.GetInstance()
 
 	slot0.UIMgr:BlurPanel(slot0._tf, false, {
@@ -119,61 +121,15 @@ function slot0.didEnter(slot0)
 	})
 	slot0:addDragListenter()
 	onButton(slot0, slot0.seaLoading, function ()
-		if not uv0.previewer then
-			uv0:showBarrage()
+		if not slot0.previewer then
+			slot0:showBarrage()
 		end
 	end)
 	onButton(slot0, slot0.breakOutBtn, function ()
-		if uv0.shipVO:isActivityNpc() then
+		if slot0.shipVO:isActivityNpc() then
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = i18n("npc_breakout_tip"),
-				onYes = function ()
-					slot0, slot1 = Ship.canModifyShip(uv0.shipVO)
-
-					if not slot0 then
-						pg.TipsMgr:GetInstance():ShowTips(slot1)
-
-						return
-					end
-
-					if uv0.breakCfg.level == 0 then
-						pg.TipsMgr:GetInstance():ShowTips(i18n("ship_upgradeStar_maxLevel"))
-
-						return
-					end
-
-					if uv0.shipVO.level < uv0.breakCfg.level then
-						pg.TipsMgr:GetInstance():ShowTips(i18n("ship_upgradeStar_error_lvLimit"))
-
-						return
-					end
-
-					if not uv0.isEnoughItems then
-						pg.TipsMgr:GetInstance():ShowTips(i18n("ship_upgradeStar_error_noEnoughMatrail"))
-
-						return
-					end
-
-					if uv0.player.gold < uv0.breakCfg.use_gold then
-						GoShoppingMsgBox(i18n("switch_to_shop_tip_2", i18n("word_gold")), ChargeScene.TYPE_ITEM, {
-							{
-								59001,
-								uv0.breakCfg.use_gold - uv0.player.gold,
-								uv0.breakCfg.use_gold
-							}
-						})
-
-						return
-					end
-
-					if not uv0.contextData.materialShipIds or table.getCount(uv0.contextData.materialShipIds) == 0 then
-						pg.TipsMgr:GetInstance():ShowTips(i18n("ship_upgradeStar_select_material_tip"))
-
-						return
-					end
-
-					uv0:emit(ShipUpgradeMediator2.UPGRADE_SHIP, uv0.contextData.materialShipIds)
-				end
+				onYes = slot0
 			})
 		else
 			slot0()
@@ -182,10 +138,15 @@ function slot0.didEnter(slot0)
 	slot0:initMaterialShips()
 end
 
-function slot0.getSameGroupShips(slot0)
+slot0.getSameGroupShips = function (slot0)
+	slot1 = {}
+	slot2 = slot0.shipVO:getRarity()
+
 	for slot6, slot7 in pairs(slot0.shipVOs) do
-		if slot7.id ~= slot0.shipVO.id and not slot7.inFleet and not slot7.inBackyard and not slot7.inClass and not slot7.inEvent and not slot7.inAdmiral and not slot7.inExercise and slot7.lockState ~= Ship.LOCK_STATE_LOCK and pg.ship_data_template[slot7.configId].group_type == slot0.breakCfg.use_char or slot7:isTestShip() and slot7:canUseTestShip(slot0.shipVO:getRarity()) then
-			table.insert({}, slot7)
+		slot8 = pg.ship_data_template[slot7.configId].group_type
+
+		if (slot7.id ~= slot0.shipVO.id and not slot7.inFleet and not slot7.inBackyard and not slot7.inClass and not slot7.inEvent and not slot7.inAdmiral and not slot7.inExercise and slot7.lockState ~= Ship.LOCK_STATE_LOCK and slot8 == slot0.breakCfg.use_char) or (slot7:isTestShip() and slot7:canUseTestShip(slot2)) then
+			table.insert(slot1, slot7)
 		end
 	end
 
@@ -200,7 +161,7 @@ function slot0.getSameGroupShips(slot0)
 	return slot1
 end
 
-function slot0.getMaterialShip(slot0, slot1)
+slot0.getMaterialShip = function (slot0, slot1)
 	slot2 = nil
 
 	for slot6 = #slot1, 1, -1 do
@@ -214,7 +175,7 @@ function slot0.getMaterialShip(slot0, slot1)
 	return slot2 or #slot1
 end
 
-function slot0.setShip(slot0, slot1)
+slot0.setShip = function (slot0, slot1)
 	slot0.shipVO = slot1
 	slot0.shipTempCfg = pg.ship_data_template
 	slot0.shipBreakOutCfg = pg.ship_data_breakout
@@ -233,39 +194,42 @@ function slot0.setShip(slot0, slot1)
 	slot0:loadChar()
 end
 
-function slot0.getStages(slot0)
+slot0.getStages = function (slot0)
+	slot1 = {}
+	slot2 = math.floor(slot0.shipVO.configId / 10)
+
 	for slot6 = 1, 4, 1 do
-		table.insert({}, tonumber(math.floor(slot0.shipVO.configId / 10) .. slot6))
+		table.insert(slot1, tonumber(slot2 .. slot6))
 	end
 
 	return slot1
 end
 
-function slot0.updateStagesScrollView(slot0)
-	if table.indexof(slot0.breakIds, slot0.shipVO.configId) and slot1 >= 1 and slot1 <= uv0 then
+slot0.updateStagesScrollView = function (slot0)
+	if table.indexof(slot0.breakIds, slot0.shipVO.configId) and slot1 >= 1 and slot1 <= slot0 then
 		slot0:findTF("stage" .. slot1, slot0.stages).GetComponent(slot2, typeof(Toggle)).isOn = true
 	end
 end
 
-function slot0.updateBattleView(slot0)
-	if #slot0.breakIds < uv0 then
+slot0.updateBattleView = function (slot0)
+	if #slot0.breakIds < slot0 then
 		return
 	end
 
-	for slot4 = 1, uv0, 1 do
+	for slot4 = 1, slot0, 1 do
 		slot6 = slot0.shipBreakOutCfg[slot0.breakIds[slot4]]
 
 		onToggle(slot0, slot0:findTF("stage" .. slot4, slot0.stages), function (slot0)
 			if slot0 then
-				setText(uv0.breakView, uv0.shipBreakOutCfg[uv1].breakout_view)
-				uv0:switchStage(uv1)
+				setText(slot0.breakView, slot0.shipBreakOutCfg[setText].breakout_view)
+				slot0:switchStage(slot0.switchStage)
 			end
 		end, SFX_PANEL)
 	end
 
 	slot0:findTF("stage1", slot0.stages).GetComponent(slot1, typeof(Toggle)).group:SetAllTogglesOff()
 
-	if math.clamp(table.indexof(slot0.breakIds, slot0.shipVO.configId), 1, uv0) and slot2 >= 1 and slot2 <= uv0 then
+	if math.clamp(table.indexof(slot0.breakIds, slot0.shipVO.configId), 1, slot0) and slot2 >= 1 and slot2 <= slot0 then
 		triggerToggle(slot0:findTF("stage" .. slot2, slot0.stages), true)
 	end
 end
@@ -279,21 +243,21 @@ slot2 = {
 	"antisub"
 }
 
-function slot0.showBarrage(slot0)
+slot0.showBarrage = function (slot0)
 	slot0.previewer = WeaponPreviewer.New(slot0.rawImage)
 
 	slot0.previewer:configUI(slot0.healTF)
 	slot0.previewer:setDisplayWeapon(slot0:getWaponIdsById(slot0.breakOutId))
 	slot0.previewer:load(40000, slot0.shipVO, slot0:getAllWeaponIds(), function ()
-		uv0:stopLoadingAni()
+		slot0:stopLoadingAni()
 	end)
 end
 
-function slot0.getWaponIdsById(slot0, slot1)
+slot0.getWaponIdsById = function (slot0, slot1)
 	return slot0.shipBreakOutCfg[slot1].weapon_ids
 end
 
-function slot0.switchStage(slot0, slot1)
+slot0.switchStage = function (slot0, slot1)
 	if slot0.breakOutId == slot1 then
 		return
 	end
@@ -305,9 +269,11 @@ function slot0.switchStage(slot0, slot1)
 	end
 end
 
-function slot0.getAllWeaponIds(slot0)
+slot0.getAllWeaponIds = function (slot0)
+	slot1 = {}
+
 	for slot5, slot6 in ipairs(slot0.breakIds) do
-		setmetatable({}, {
+		setmetatable(slot1, {
 			__add = function (slot0, slot1)
 				for slot5, slot6 in ipairs(slot0) do
 					if not table.contains(slot1, slot6) then
@@ -319,29 +285,32 @@ function slot0.getAllWeaponIds(slot0)
 			end
 		})
 
-		slot1 =  + Clone(slot0.shipBreakOutCfg[slot6].weapon_ids)
+		slot1 = slot1 + Clone(slot0.shipBreakOutCfg[slot6].weapon_ids)
 	end
 
 	return slot1
 end
 
-function slot0.updateBreakOutView(slot0, slot1)
+slot0.updateBreakOutView = function (slot0, slot1)
 	slot0.breakCfg = slot0.shipBreakOutCfg[slot1.configId]
 
 	for slot5, slot6 in ipairs(slot0.itemTFs) do
 		setActive(slot6, false)
 	end
 
+	slot2 = slot1:getShipProperties()
 	Clone(slot1).configId = slot0.breakCfg.breakout_id
 	slot4 = {}
+	slot5 = slot0.breakCfg.breakout_id == 0
+	slot6 = slot1:getBattleTotalExpend()
 	slot7, slot8 = nil
 
 	setText(slot9, "")
 	setText(slot0.tipDeactive:Find("values/value"), "")
 
-	if slot0.breakCfg.breakout_id == 0 then
-		slot4 = slot1:getShipProperties()
-		slot7 = slot1:getBattleTotalExpend()
+	if slot5 then
+		slot4 = slot2
+		slot7 = slot6
 
 		setText(slot9, i18n("word_level_upperLimit"))
 	else
@@ -353,19 +322,21 @@ function slot0.updateBreakOutView(slot0, slot1)
 		setText(slot9, i18n("word_level_require"))
 	end
 
+	function slot11(slot0, slot1)
+		setText(slot0:Find("name"), slot1.name)
+		setText(slot0:Find("value"), slot1.preAttr)
+
+		slot4 = nil
+
+		setText(slot0:Find("value1"), (slot1.afterAttr ~= 0 or setColorStr(slot1.afterAttr, "#FFFFFFFF")) and setColorStr(slot1.afterAttr, COLOR_GREEN))
+		setActive(slot0:Find("addition"), slot1.afterAttr - slot1.preAttr ~= 0)
+		setText(slot0.Find("addition"), "(+" .. slot1.afterAttr - slot1.preAttr .. ")")
+	end
+
 	slot12 = 0
 
 	if slot8 and slot8 ~= slot0.shipTempCfg[slot1.configId].max_level then
-		function (slot0, slot1)
-			setText(slot0:Find("name"), slot1.name)
-			setText(slot0:Find("value"), slot1.preAttr)
-
-			slot4 = nil
-
-			setText(slot0:Find("value1"), (slot1.afterAttr ~= 0 or setColorStr(slot1.afterAttr, "#FFFFFFFF")) and setColorStr(slot1.afterAttr, COLOR_GREEN))
-			setActive(slot0:Find("addition"), slot1.afterAttr - slot1.preAttr ~= 0)
-			setText(slot0.Find("addition"), "(+" .. slot1.afterAttr - slot1.preAttr .. ")")
-		end(slot0:findTF("attr_1", slot0.attrs), {
+		slot11(slot0:findTF("attr_1", slot0.attrs), {
 			preAttr = slot0.shipTempCfg[slot1.configId].max_level,
 			afterAttr = slot8,
 			name = i18n("word_level_upperLimit")
@@ -374,15 +345,15 @@ function slot0.updateBreakOutView(slot0, slot1)
 		slot12 = 1
 	end
 
-	for slot16 = 1, #uv0, 1 do
+	for slot16 = 1, #slot0, 1 do
 		slot11(slot0:findTF("attr_" .. slot12 + slot16, slot0.attrs), {
-			preAttr = math.floor(slot2[uv0[slot16]]),
-			afterAttr = math.floor(slot4[uv0[slot16]]),
-			name = i18n("word_attr_" .. uv0[slot16])
+			preAttr = math.floor(slot2[slot0[slot16]]),
+			afterAttr = math.floor(slot4[slot0[slot16]]),
+			name = i18n("word_attr_" .. slot0[slot16])
 		})
 	end
 
-	if slot12 + #uv0 < 7 then
+	if slot12 + #slot0 < 7 then
 		slot11(slot0:findTF("attr_7", slot0.attrs), {
 			preAttr = slot6,
 			afterAttr = slot7,
@@ -419,33 +390,32 @@ function slot0.updateBreakOutView(slot0, slot1)
 	slot0:initMaterialShips()
 end
 
-function slot0.initMaterialShips(slot0)
+slot0.initMaterialShips = function (slot0)
+	slot1 = slot0.breakCfg.use_char_num
+
 	for slot5 = 1, 3, 1 do
-		SetActive(slot0.itemTFs[slot5], slot5 <= slot0.breakCfg.use_char_num)
+		SetActive(slot0.itemTFs[slot5], slot5 <= slot1)
 
 		slot6 = slot0.itemTFs[slot5]:Find("add")
+		slot7 = slot0.itemTFs[slot5]:Find("IconTpl")
+		slot8 = slot0.contextData.materialShipIds
 
-		if slot5 <= slot0.breakCfg.use_char_num and slot0.contextData.materialShipIds and slot0.contextData.materialShipIds[slot5] then
-			Ship.New({
-				configId = slot0.shipVOs[slot0.contextData.materialShipIds[slot5]].configId,
-				propose = slot0.shipVOs[slot0.contextData.materialShipIds[slot5]].proposeTime
-			}).remoulded = slot0.shipVOs[slot0.contextData.materialShipIds[slot5]].isRemoulded(slot9)
-
-			updateShip(slot0.itemTFs[slot5]:Find("IconTpl"), slot10, {
+		if slot5 <= slot1 and slot8 and slot8[slot5] then
+			updateShip(slot7, slot9, {
 				initStar = true
 			})
-			SetActive(slot0.itemTFs[slot5].Find("IconTpl"), true)
+			SetActive(slot7, true)
 		else
 			SetActive(slot7, false)
 		end
 
 		onButton(slot0, slot0.itemTFs[slot5], function ()
-			uv0:emit(ShipUpgradeMediator2.ON_SELECT_SHIP, uv0.shipVO, uv1)
+			slot0:emit(ShipUpgradeMediator2.ON_SELECT_SHIP, slot0.shipVO, slot0)
 		end)
 	end
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	slot0.UIMgr:UnblurPanel(slot0._tf, slot0.UIMain)
 	slot0:recycleSpineChar()
 
@@ -462,15 +432,15 @@ function slot0.willExit(slot0)
 	end
 end
 
-function slot0.playLoadingAni(slot0)
+slot0.playLoadingAni = function (slot0)
 	setActive(slot0.seaLoading, true)
 end
 
-function slot0.stopLoadingAni(slot0)
+slot0.stopLoadingAni = function (slot0)
 	setActive(slot0.seaLoading, false)
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	slot0:emit(BaseUI.ON_BACK_PRESSED, true)
 end
 

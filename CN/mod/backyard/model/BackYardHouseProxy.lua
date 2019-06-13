@@ -28,27 +28,62 @@ slot0.ON_REMOVE_FURNTURE_MOVE = "BackYardHouseProxy_ON_REMOVE_FURNTURE_MOVE"
 slot0.CLEAE_SPINE_INTERACTION = "BackYardHouseProxy_CLEAE_SPINE_INTERACTION"
 slot0.ON_SPINE_EXTRA_INTERACTION = "BackYardHouseProxy_ON_SPINE_EXTRA_INTERACTION"
 slot0.ON_CLEAR_SPINE_EXTRA_INTERACTION = "BackYardHouseProxy_ON_CLEAR_SPINE_EXTRA_INTERACTION"
+slot0.APPLY_EFFECT = "BackYardHouseProxy_APPLY_EFFECT"
+slot0.DISABLE_EFFECT = "BackYardHouseProxy_DISABLE_EFFECT"
 slot1 = require("Mod/BackYard/view/BackYardTool")
+slot2 = pg.furniture_compose_template
 
-function slot0.onRegister(slot0)
+slot0.onRegister = function (slot0)
 	slot0.event = {}
 	slot0.delayTimer = {}
 	slot0.timer = {}
 	slot0.moveNextTimer = {}
 	slot0.furnitrueTimers = {}
+	slot0.effects = {}
+	slot0.applyingEffects = {}
 
 	for slot4, slot5 in pairs(slot0.data.ships) do
 		slot0:initShipPos(slot4)
 	end
 
+	for slot4, slot5 in ipairs(slot0.all) do
+		table.insert(slot0.effects, BackyardEffectCompose.New({
+			id = slot5
+		}))
+	end
+
 	if BackYardConst.DEBUG then
 		slot0._escapeAITimer = pg.TimeMgr.GetInstance():AddTimer("escapeTimer", 0, UnityEngine.Time.fixedDeltaTime, function ()
-			uv0:Update()
+			slot0:Update()
 		end)
 	end
 end
 
-function slot0.existShip(slot0, slot1)
+slot0.checkEffect = function (slot0)
+	slot1 = {}
+	slot2 = slot0.data:getFurnAndPaperIds()
+
+	for slot6, slot7 in ipairs(slot0.effects) do
+		if slot7:match(slot2) and not table.contains(slot1, slot7) then
+			table.insert(slot1, slot7)
+		end
+	end
+
+	_.each(slot0.applyingEffects, function (slot0)
+		if not table.contains(slot0, slot0) then
+			table.removebyvalue(slot1.applyingEffects, slot0)
+			table.removebyvalue:sendNotification(slot2.DISABLE_EFFECT, slot0)
+		end
+	end)
+	_.each(slot1, function (slot0)
+		if not table.contains(slot0.applyingEffects, slot0) then
+			table.insert(slot0.applyingEffects, slot0)
+			slot0:sendNotification(slot1.APPLY_EFFECT, slot0)
+		end
+	end)
+end
+
+slot0.existShip = function (slot0, slot1)
 	for slot5, slot6 in pairs(slot0.data.ships) do
 		if slot6.id == slot1 then
 			return true
@@ -58,7 +93,7 @@ function slot0.existShip(slot0, slot1)
 	return false
 end
 
-function slot0.Update(slot0)
+slot0.Update = function (slot0)
 	if Input.GetKey(KeyCode.A) then
 		slot0:moveNext(1)
 	elseif Input.GetKey(KeyCode.W) then
@@ -70,7 +105,7 @@ function slot0.Update(slot0)
 	end
 end
 
-function slot0.moveNext(slot0, slot1)
+slot0.moveNext = function (slot0, slot1)
 	slot2 = nil
 
 	for slot6, slot7 in pairs(slot0.data.ships) do
@@ -79,7 +114,7 @@ function slot0.moveNext(slot0, slot1)
 		break
 	end
 
-	slot0:sendNotification(uv0.BACKYARD_SHIP_MOVE, {
+	slot0:sendNotification(slot0.BACKYARD_SHIP_MOVE, {
 		isLastStep = true,
 		id = slot2.id,
 		pos = slot2:getSurroundGrid()[slot1]
@@ -92,40 +127,40 @@ function slot0.moveNext(slot0, slot1)
 	end
 
 	slot0.testTimer = Timer.New(function ()
-		uv0.testTimer:Stop()
+		slot0.testTimer:Stop()
 
-		uv0.testTimer = nil
+		slot0.testTimer.Stop.testTimer = nil
 
-		uv0.data.ships[uv1.id]:setLockPosition(nil)
-		uv0:changeShipPos(uv1.id, uv2)
+		slot0.testTimer.Stop.data.ships[nil.id]:setLockPosition(nil)
+		slot0.testTimer.Stop.data.ships[nil.id].setLockPosition:changeShipPos(slot1.id, )
 	end, slot2:getSpeed(), 1)
 
 	slot0.testTimer:Start()
 end
 
-function slot0.changeShipPos(slot0, slot1, slot2)
+slot0.changeShipPos = function (slot0, slot1, slot2)
 	slot0.data.ships[slot1].setPosition(slot3, slot2)
-	slot0:sendNotification(uv0.SHIP_POS_CHANGE, slot3)
+	slot0:sendNotification(slot0.SHIP_POS_CHANGE, slot3)
 	slot0:updateArchState(slot0.data.ships[slot1], slot2)
 end
 
-function slot0.initShipPos(slot0, slot1)
+slot0.initShipPos = function (slot0, slot1)
 	slot0.data.ships[slot1]:setPosition(slot0.data:getSingleByRamdom(slot1))
 end
 
-function slot0.onMoveHalf(slot0, slot1, slot2)
+slot0.onMoveHalf = function (slot0, slot1, slot2)
 	slot0:updateArchState(slot0.data.ships[slot1], slot2)
 end
 
-function slot0.addShip(slot0, slot1)
+slot0.addShip = function (slot0, slot1)
 	slot0.data.ships[slot1.id] = slot1
 
 	slot0:initShipPos(slot1.id)
-	slot0:sendNotification(uv0.BACKYARD_ADD_SHIP, slot1)
+	slot0:sendNotification(slot0.BACKYARD_ADD_SHIP, slot1)
 	slot0:updateHouse(slot0.data)
 end
 
-function slot0.exitShipById(slot0, slot1)
+slot0.exitShipById = function (slot0, slot1)
 	slot0:cancelShipMove(slot1)
 	slot0:clearInterAction(slot1)
 
@@ -145,23 +180,23 @@ function slot0.exitShipById(slot0, slot1)
 
 	slot0.data.ships[slot1] = nil
 
-	slot0:sendNotification(uv0.BACKYARD_EXIT_SHIP, slot3)
+	slot0:sendNotification(slot0.BACKYARD_EXIT_SHIP, slot3)
 	slot0:updateHouse(slot0.data)
 end
 
-function slot0.clearInterAction(slot0, slot1)
+slot0.clearInterAction = function (slot0, slot1)
 	if slot0.data.ships[slot1]:hasInterActionFurnitrue() then
 		slot2:setInterActionFurnitrueId(nil)
 		slot0.data.furnitures[slot2:getInterActionFurnitrueId()].clearInterAction(slot4, slot1)
-		slot0:sendNotification(uv0.BACKYARD_FURNITURE_UPDATED, Clone(slot0.data.furnitures[slot2.getInterActionFurnitrueId()]))
+		slot0:sendNotification(slot0.BACKYARD_FURNITURE_UPDATED, Clone(slot0.data.furnitures[slot2.getInterActionFurnitrueId()]))
 		slot0:updateHouse(slot0.data)
-		slot0:sendNotification(uv0.CLEAR_BGM, {
+		slot0:sendNotification(slot0.CLEAR_BGM, {
 			furnitureId = slot2.getInterActionFurnitrueId()
 		})
 	end
 end
 
-function slot0.addInterAction(slot0, slot1, slot2)
+slot0.addInterAction = function (slot0, slot1, slot2)
 	if slot0.data.ships[slot1]:hasInterActionFurnitrue() then
 		slot0:clearInterAction(slot1)
 	end
@@ -171,25 +206,25 @@ function slot0.addInterAction(slot0, slot1, slot2)
 	slot3:setInterActionFurnitrueId(slot2)
 	slot0:cancelShipMove(slot1)
 	slot0.data.furnitures[slot2].setInterActionShipId(slot4, slot1, slot5)
-	slot0:sendNotification(uv0.BACKYARD_FURNITURE_UPDATED, Clone(slot0.data.furnitures[slot2]))
+	slot0:sendNotification(slot0.BACKYARD_FURNITURE_UPDATED, Clone(slot0.data.furnitures[slot2]))
 	slot0:updateHouse(slot0.data)
-	slot0:sendNotification(uv0.BACKYARD_INTERACTION_DONE, {
+	slot0:sendNotification(slot0.BACKYARD_INTERACTION_DONE, {
 		shipId = slot1,
 		furnitureId = slot2,
 		order = slot0.data.furnitures[slot2].getInterActionOrder(slot4)
 	})
-	slot0:sendNotification(uv0.CHANGE_BGM, {
+	slot0:sendNotification(slot0.CHANGE_BGM, {
 		furnitureId = slot2
 	})
 end
 
-function slot0.addSpineInterAction(slot0, slot1, slot2)
+slot0.addSpineInterAction = function (slot0, slot1, slot2)
 	if slot0.data.ships[slot1].getPosition(slot3).x == slot0.data.furnitures[slot2].getSpineAinTriggerPos(slot4).x and slot6.y == slot5.y then
 		slot0:cancelShipMove(slot1)
 		slot4:setSpineId(slot1)
 		slot3:setSpineId(slot2)
 		slot3:reduceRate()
-		slot0:sendNotification(uv0.SPINE_INTERACTION_START, {
+		slot0:sendNotification(slot0.SPINE_INTERACTION_START, {
 			shipId = slot1,
 			furnitureId = slot2
 		})
@@ -198,29 +233,29 @@ function slot0.addSpineInterAction(slot0, slot1, slot2)
 			slot0:addMoveForFurniture(slot4.id, slot3:getSpeed())
 		end
 
-		slot0:sendNotification(uv0.CHANGE_BGM, {
+		slot0:sendNotification(slot0.CHANGE_BGM, {
 			furnitureId = slot2
 		})
 	elseif not slot0.data:isIllegalPos(slot5, slot2) then
-		if uv1.getPaths(slot0.data:getMaze(slot5), slot6.x, slot6.y, slot5.x, slot5.y) and #slot7 > 0 then
+		if slot1.getPaths(slot0.data:getMaze(slot5), slot6.x, slot6.y, slot5.x, slot5.y) and #slot7 > 0 then
 			slot0:cancelShipMove(slot1)
 			slot4:setSpineId(slot1)
 			slot3:setLockPathList(slot7)
 			slot0:shipSeriesMove(slot3, slot7, function ()
-				uv0:setSpineId(uv1)
-				uv0:clearLockPathList()
-				uv0:reduceRate()
-				uv2:sendNotification(uv3.SPINE_INTERACTION_START, {
-					shipId = uv4,
-					furnitureId = uv1
+				slot0:setSpineId(slot0)
+				slot0.setSpineId:clearLockPathList()
+				slot0.setSpineId.clearLockPathList:reduceRate()
+				slot2:sendNotification(slot3.SPINE_INTERACTION_START, {
+					shipId = slot4,
+					furnitureId = slot2
 				})
 
-				if uv5:isMoveable() then
-					uv2:addMoveForFurniture(uv5.id, uv0:getSpeed())
+				if slot5:isMoveable() then
+					slot2:addMoveForFurniture(slot5.id, slot0:getSpeed())
 				end
 
-				uv2:sendNotification(uv3.CHANGE_BGM, {
-					furnitureId = uv1
+				slot2:sendNotification(slot3.CHANGE_BGM, {
+					furnitureId = slot2
 				})
 			end)
 		end
@@ -229,7 +264,7 @@ function slot0.addSpineInterAction(slot0, slot1, slot2)
 	end
 end
 
-function slot0.addMoveForFurniture(slot0, slot1, slot2)
+slot0.addMoveForFurniture = function (slot0, slot1, slot2)
 	slot0:removeFurntureMove(slot1)
 
 	slot0.furnitrueTimers[slot1] = Timer.New(function ()
@@ -238,7 +273,7 @@ function slot0.addMoveForFurniture(slot0, slot1, slot2)
 		slot2 = nil
 
 		for slot6, slot7 in pairs(slot1) do
-			if uv0.data:canMoveFurniture(uv1, slot7) then
+			if slot0.data:canMoveFurniture(slot1, slot7) then
 				slot2 = slot7
 
 				break
@@ -246,24 +281,24 @@ function slot0.addMoveForFurniture(slot0, slot1, slot2)
 		end
 
 		if slot2 then
-			uv0:changeFurniturePos(uv1, slot2, uv2)
+			slot0:changeFurniturePos(slot1, slot2, slot2)
 		end
 	end, slot0:getFurnitureById(slot1):getSpineSpeed() * slot2, -1)
 
 	slot0.furnitrueTimers[slot1]:Start()
 end
 
-function slot0.removeFurntureMove(slot0, slot1)
+slot0.removeFurntureMove = function (slot0, slot1)
 	if slot0.furnitrueTimers[slot1] then
 		slot0.furnitrueTimers[slot1]:Stop()
 
 		slot0.furnitrueTimers[slot1] = nil
 
-		pg.backyard:sendNotification(uv0.ON_REMOVE_FURNTURE_MOVE)
+		pg.backyard:sendNotification(slot0.ON_REMOVE_FURNTURE_MOVE)
 	end
 end
 
-function slot0.clearSpineInterAction(slot0, slot1)
+slot0.clearSpineInterAction = function (slot0, slot1)
 	slot2 = slot0.data.ships[slot1]
 	slot3 = nil
 
@@ -288,18 +323,20 @@ function slot0.clearSpineInterAction(slot0, slot1)
 			slot5 = true
 		end
 
-		slot0:sendNotification(uv0.CLEAE_SPINE_INTERACTION, {
+		slot0:sendNotification(slot0.CLEAE_SPINE_INTERACTION, {
 			furnitureId = slot4.id,
 			shipId = slot1,
 			save = slot5
 		})
-		slot0:sendNotification(uv0.CLEAR_BGM, {
+		slot0:sendNotification(slot0.CLEAR_BGM, {
 			furnitureId = slot3
 		})
 
 		if slot4:hasSpineExtra() then
+			slot6 = {}
+
 			for slot10, slot11 in pairs(slot4:getShipExtra()) do
-				table.insert({}, slot11)
+				table.insert(slot6, slot11)
 				slot0:clearSpineExtraInterAction(slot11, slot4.id)
 			end
 
@@ -313,25 +350,25 @@ function slot0.clearSpineInterAction(slot0, slot1)
 	end
 end
 
-function slot0.addSpineExtraInterAction(slot0, slot1, slot2)
+slot0.addSpineExtraInterAction = function (slot0, slot1, slot2)
 	slot0.data.ships[slot1].addSpineExtra(slot3, slot2)
-	slot0:sendNotification(uv0.ON_SPINE_EXTRA_INTERACTION, {
+	slot0:sendNotification(slot0.ON_SPINE_EXTRA_INTERACTION, {
 		shipId = slot1,
 		furnitureId = slot2,
 		pos = slot0.data.furnitures[slot2].addSpineExtra(slot4, slot1)
 	})
 end
 
-function slot0.clearSpineExtraInterAction(slot0, slot1, slot2)
+slot0.clearSpineExtraInterAction = function (slot0, slot1, slot2)
 	slot0.data.ships[slot1].removeSpineExtra(slot3)
-	slot0:sendNotification(uv0.ON_CLEAR_SPINE_EXTRA_INTERACTION, {
+	slot0:sendNotification(slot0.ON_CLEAR_SPINE_EXTRA_INTERACTION, {
 		shipId = slot1,
 		furnitureId = slot2,
 		pos = slot0.data.furnitures[slot2].removeSpineExtra(slot4, slot1)
 	})
 end
 
-function slot0.setStageInteraction(slot0, slot1, slot2)
+slot0.setStageInteraction = function (slot0, slot1, slot2)
 	slot4 = nil
 
 	if slot0.data.ships[slot1]:hasInterActionFurnitrue() then
@@ -344,11 +381,11 @@ function slot0.setStageInteraction(slot0, slot1, slot2)
 		slot0:changeShipPos(slot1, slot5)
 		slot3:setStageId(slot2)
 		slot0.data.furnitures[slot2].setStageShip(slot6, slot3.id)
-		slot0:sendNotification(uv0.STAGE_INTERACTION_START, {
+		slot0:sendNotification(slot0.STAGE_INTERACTION_START, {
 			shipId = slot1,
 			position = slot5
 		})
-		slot0:sendNotification(uv0.CHANGE_BGM, {
+		slot0:sendNotification(slot0.CHANGE_BGM, {
 			furnitureId = slot2
 		})
 	elseif slot3:getPosition() then
@@ -360,26 +397,26 @@ function slot0.setStageInteraction(slot0, slot1, slot2)
 	end
 end
 
-function slot0.setArchInteraction(slot0, slot1, slot2)
+slot0.setArchInteraction = function (slot0, slot1, slot2)
 	slot3 = slot0.data.furnitures[slot2]
 
 	slot0.data.ships[slot1].setArchId(slot4, slot2)
-	slot0:sendNotification(uv0.ADD_ARCH_INTERACTION, {
+	slot0:sendNotification(slot0.ADD_ARCH_INTERACTION, {
 		furnitureId = slot2,
 		shipId = slot1
 	})
 end
 
-function slot0.clearArchInteraction(slot0, slot1)
+slot0.clearArchInteraction = function (slot0, slot1)
 	if slot0.data.ships[slot1]:getArchId() then
 		slot2:setArchId(nil)
-		slot0:sendNotification(uv0.CLEAR_ARCH_INTERACTION, {
+		slot0:sendNotification(slot0.CLEAR_ARCH_INTERACTION, {
 			shipId = slot1
 		})
 	end
 end
 
-function slot0.addMoveOnFurnitrue(slot0, slot1, slot2, slot3)
+slot0.addMoveOnFurnitrue = function (slot0, slot1, slot2, slot3)
 	if not BackYardConst.DEBUG then
 		slot5 = slot0.data.furnitures[slot2]
 		slot7 = 0
@@ -391,37 +428,37 @@ function slot0.addMoveOnFurnitrue(slot0, slot1, slot2, slot3)
 		end
 
 		slot0.timer[slot6] = Timer.New(function ()
-			if uv0.moveNextTimer[uv1] then
-				uv0.moveNextTimer[uv1].func()
+			if slot0.moveNextTimer[slot1] then
+				slot0.moveNextTimer[slot1].func()
 			end
 
-			slot1 = uv2:getSurroundGrid()
+			slot1 = slot2:getSurroundGrid()
 
 			slot2()
 
 			if #{} == 0 then
-				uv0:sendNotification(uv4.CANCEL_SHIP_MOVE, {
-					id = uv1
+				slot0:sendNotification(slot4.CANCEL_SHIP_MOVE, {
+					id = slot1
 				})
 
 				return
 			end
 
-			uv5 = uv5 + 1
+			slot0:moveShip(slot1, slot4, slot0)
 
-			uv0:moveShip(uv1, slot4, uv6)
-			uv0:sendNotification(uv4.MOVE_ON_FURNTURE, {
-				id = uv1,
+			-- Decompilation error in this vicinity:
+			slot5 + 1(slot0, slot7, {
+				id = slot1,
 				position = slot0[math.random(1, #slot0)],
-				isLastStep = uv7 <= uv5
+				isLastStep = slot4.MOVE_ON_FURNTURE <= slot0.sendNotification
 			})
 
-			if uv7 <= uv5 then
-				uv0.timer[uv1]:Stop()
+			if slot7 <= slot5 then
+				slot0.timer[slot1]:Stop()
 
-				uv0.timer[uv1] = nil
+				slot0.timer[slot1] = nil
 
-				uv0:addMoveOnFurnitrue(uv8, uv3)
+				slot0:addMoveOnFurnitrue(slot8, slot3)
 			end
 		end, slot9 + 0.01, -1)
 
@@ -432,36 +469,38 @@ function slot0.addMoveOnFurnitrue(slot0, slot1, slot2, slot3)
 		end
 
 		slot0.delayTimer[slot6] = Timer.New(function ()
-			uv0.timer[uv1]:Start()
-			uv0.delayTimer[uv1]:Stop()
+			slot0.timer[slot1]:Start()
+			slot0.timer[slot1].Start.delayTimer[slot0.timer[slot1]]:Stop()
 
-			uv0.delayTimer[uv1] = nil
-		end, slot3 and 0.0001 or math.random(2, 8), 1)
+			slot0.timer[slot1].Start.delayTimer[slot0.timer[slot1]].Stop.delayTimer[slot0.timer[slot1].Start.delayTimer[slot0.timer[slot1]]] = nil
+		end, (slot3 and 0.0001) or math.random(2, 8), 1)
 
 		slot0.delayTimer[slot6]:Start()
 	end
 end
 
-function slot0.clearStageInteraction(slot0, slot1)
+slot0.clearStageInteraction = function (slot0, slot1)
 	if slot0.data.furnitures[slot0.data.ships[slot1].getStageId(slot2)] then
 		slot4:clearStageShip(slot1)
 		slot2:setStageId(nil)
-		slot0:sendNotification(uv0.CLEAR_STAGE_INTERACTION, {
+		slot0:sendNotification(slot0.CLEAR_STAGE_INTERACTION, {
 			shipId = slot1
 		})
-		slot0:sendNotification(uv0.CLEAR_BGM, {
+		slot0:sendNotification(slot0.CLEAR_BGM, {
 			furnitureId = slot3
 		})
 	end
 end
 
-function slot0.addShipMove(slot0, slot1, slot2)
+slot0.addShipMove = function (slot0, slot1, slot2)
+	slot3 = slot0.data.ships[slot1]
+
 	if not BackYardConst.DEBUG then
-		slot0:shipRomdonMove(slot0.data.ships[slot1], slot2)
+		slot0:shipRomdonMove(slot3, slot2)
 	end
 end
 
-function slot0.shipSeriesMove(slot0, slot1, slot2, slot3)
+slot0.shipSeriesMove = function (slot0, slot1, slot2, slot3)
 	slot5 = #slot2
 	slot6 = 0
 	slot7 = slot1:getSpeed()
@@ -471,27 +510,27 @@ function slot0.shipSeriesMove(slot0, slot1, slot2, slot3)
 	end
 
 	slot0.timer[slot4] = Timer.New(function ()
-		if uv0.moveNextTimer[uv1] then
-			uv0.moveNextTimer[uv1].func()
+		if slot0.moveNextTimer[slot1] then
+			slot0.moveNextTimer[slot1].func()
 		end
 
-		uv2 = uv2 + 1
-
-		uv0:moveShip(uv1, uv3[uv2], uv5, function ()
-			if uv0 and uv1 then
-				uv1()
+		local function slot7()
+			if slot0 and slot1 then
+				slot1()
 			end
-		end)
-		uv0:sendNotification(uv7.BACKYARD_SHIP_MOVE, {
-			id = uv1,
-			pos = uv3[uv2],
-			isLastStep = uv4 <= uv2
+		end
+
+		slot3[slot2]:moveShip(slot4 <= slot2 + 1, slot3[slot2], , slot7)
+		slot3[slot2]:sendNotification(slot7.BACKYARD_SHIP_MOVE, {
+			id = slot4 <= slot2 + 1,
+			pos = slot3[slot2],
+			isLastStep = slot4 <= slot2 + 1
 		})
 
-		if uv4 <= uv2 then
-			uv0.timer[uv1]:Stop()
+		if slot7.BACKYARD_SHIP_MOVE <= slot3[slot2].sendNotification then
+			slot0.timer[slot1]:Stop()
 
-			uv0.timer[uv1] = nil
+			slot0.timer[slot1] = nil
 		end
 	end, slot7 + 0.01, -1)
 
@@ -499,7 +538,7 @@ function slot0.shipSeriesMove(slot0, slot1, slot2, slot3)
 	slot0.timer[slot4].func()
 end
 
-function slot0.shipRomdonMove(slot0, slot1, slot2)
+slot0.shipRomdonMove = function (slot0, slot1, slot2)
 	slot4 = 0
 	slot5 = math.random(1, 5)
 	slot6 = slot1:getSpeed()
@@ -509,43 +548,42 @@ function slot0.shipRomdonMove(slot0, slot1, slot2)
 	end
 
 	slot0.timer[slot3] = Timer.New(function ()
-		if uv0.moveNextTimer[uv1] then
-			uv0.moveNextTimer[uv1].func()
+		if slot0.moveNextTimer[slot1] then
+			slot0.moveNextTimer[slot1].func()
 		end
 
-		slot0 = {}
-		slot2 = uv2:getPosition()
+		slot2 = slot2:getPosition()
 
-		if uv0:randomInterAction(uv1, uv2:getSurroundGrid()) then
+		if slot0:randomInterAction(slot2:getSurroundGrid(), ) then
 			return
 		end
 
 		slot3()
 
 		if #slot0 == 0 then
-			uv0:sendNotification(uv3.CANCEL_SHIP_MOVE, {
-				id = uv1
+			slot0:sendNotification(slot3.CANCEL_SHIP_MOVE, {
+				id = slot1
 			})
 
 			return
 		end
 
-		uv4 = uv4 + 1
+		slot4 = slot4 + 1
 
-		uv0:moveShip(uv1, slot5, uv5)
-		uv0:sendNotification(uv3.BACKYARD_SHIP_MOVE, {
-			id = uv1,
+		slot0:moveShip(slot1, slot5, slot5)
+		slot6(slot0, slot3.BACKYARD_SHIP_MOVE, {
+			id = slot1,
 			pos = slot0[math.random(1, #slot0)],
-			isLastStep = uv6 <= uv4
+			isLastStep = slot0.sendNotification <= math.random(1, #slot0)
 		})
 
-		if uv6 <= uv4 then
-			uv2:riseRate()
-			uv0.timer[uv1]:Stop()
+		if slot4 <=  then
+			slot2:riseRate()
+			slot0.timer[slot1]:Stop()
 
-			uv0.timer[uv1] = nil
+			slot0.timer[slot1] = nil
 
-			uv0:addShipMove(uv1)
+			slot0:addShipMove(slot1)
 		end
 	end, slot6 + 0.01, -1)
 
@@ -556,43 +594,45 @@ function slot0.shipRomdonMove(slot0, slot1, slot2)
 	end
 
 	slot0.delayTimer[slot3] = Timer.New(function ()
-		uv0.timer[uv1]:Start()
-		uv0.delayTimer[uv1]:Stop()
+		slot0.timer[slot1]:Start()
+		slot0.timer[slot1].Start.delayTimer[slot0.timer[slot1]]:Stop()
 
-		uv0.delayTimer[uv1] = nil
-	end, slot2 and 0.0001 or math.random(10, 20), 1)
+		slot0.timer[slot1].Start.delayTimer[slot0.timer[slot1]].Stop.delayTimer[slot0.timer[slot1].Start.delayTimer[slot0.timer[slot1]]] = nil
+	end, (slot2 and 0.0001) or math.random(10, 20), 1)
 
 	slot0.delayTimer[slot3]:Start()
 end
 
-function slot0.updateArchState(slot0, slot1, slot2)
-	if slot1:getArchId() and not slot0.data:getArchByPos(slot2) then
+slot0.updateArchState = function (slot0, slot1, slot2)
+	slot3 = slot0.data:getArchByPos(slot2)
+
+	if slot1:getArchId() and not slot3 then
 		slot0:clearArchInteraction(slot1.id)
 	elseif not slot1:getArchId() and slot3 then
 		slot0:setArchInteraction(slot1.id, slot3.id)
 	end
 end
 
-function slot0.moveShip(slot0, slot1, slot2, slot3, slot4)
+slot0.moveShip = function (slot0, slot1, slot2, slot3, slot4)
 	slot0.data.ships[slot1].setLockPosition(slot5, slot2)
 
 	slot0.moveNextTimer[slot1] = Timer.New(function ()
-		uv0.moveNextTimer[uv1]:Stop()
+		slot0.moveNextTimer[slot1]:Stop()
 
-		uv0.moveNextTimer[uv1] = nil
+		slot0.moveNextTimer[slot1].Stop.moveNextTimer[slot0.moveNextTimer[slot1]] = nil
 
-		uv0.data.ships[uv1]:setLockPosition(nil)
-		uv0:changeShipPos(uv1, uv2)
+		slot0.moveNextTimer[slot1].Stop.moveNextTimer.data.ships[slot0.moveNextTimer[slot1]]:setLockPosition(nil)
+		slot0.moveNextTimer[slot1].Stop.moveNextTimer.data.ships[slot0.moveNextTimer[slot1]].setLockPosition:changeShipPos(slot0.moveNextTimer[slot1].Stop.moveNextTimer.data.ships[slot0.moveNextTimer[slot1]].setLockPosition, )
 
-		if uv3 then
-			uv3()
+		if slot0.moveNextTimer[slot1].Stop.moveNextTimer.data.ships[slot0.moveNextTimer[slot1]].setLockPosition then
+			slot3()
 		end
 	end, slot3, 1)
 
 	slot0.moveNextTimer[slot1]:Start()
 end
 
-function slot0.cancelShipMove(slot0, slot1)
+slot0.cancelShipMove = function (slot0, slot1)
 	if slot0.delayTimer[slot1] then
 		slot0.delayTimer[slot1]:Stop()
 
@@ -611,13 +651,13 @@ function slot0.cancelShipMove(slot0, slot1)
 
 	slot0:clearSpineInterAction(slot1)
 	slot0:clearArchInteraction(slot1)
-	slot0:sendNotification(uv0.CANCEL_SHIP_MOVE, {
+	slot0:sendNotification(slot0.CANCEL_SHIP_MOVE, {
 		id = slot1
 	})
 end
 
-function slot0.randomInterAction(slot0, slot1, slot2)
-	if uv0.isHappen(slot0.data.ships[slot1].getRate(slot3)) then
+slot0.randomInterAction = function (slot0, slot1, slot2)
+	if slot0.isHappen(slot0.data.ships[slot1].getRate(slot3)) then
 		for slot8, slot9 in ipairs(slot2) do
 			if slot0.data:findInterActionFurnitrue(slot9, slot1) then
 				slot0:addInterAction(slot1, slot10.id)
@@ -634,57 +674,46 @@ function slot0.randomInterAction(slot0, slot1, slot2)
 	return false
 end
 
-function slot0.shipHarvest(slot0, slot1, slot2)
+slot0.shipHarvest = function (slot0, slot1, slot2)
 	if not slot0.data.ships[slot1.id] then
 		return
 	end
 
 	slot0.data.ships[slot1.id].setInimacy(slot3, slot1.inimacy)
 	slot0.data.ships[slot1.id].setMoney(slot3, slot1.money)
-	slot0:sendNotification(uv0.BACKYARD_SHIP_HARVEST, {
+	slot0:sendNotification(slot0.BACKYARD_SHIP_HARVEST, {
 		ship = slot0.data.ships[slot1.id]
 	})
 end
 
-function slot0.updateHouse(slot0, slot1)
+slot0.updateHouse = function (slot0, slot1)
 	slot0.data = slot1
 
-	slot0:sendNotification(uv0.HOUSE_UPDATE, slot0.data)
+	slot0:sendNotification(slot0.HOUSE_UPDATE, slot0.data)
 end
 
-function slot0.recordPerFurnitures(slot0)
+slot0.recordPerFurnitures = function (slot0)
 	slot0.data:setPreFurnitures(Clone(slot0.data.furnitures))
 	slot0.data:setPerWallPaper(Clone(slot0.data.wallPaper))
 	slot0.data:setPerFloorPaper(Clone(slot0.data.floorPaper))
 end
 
-function slot0.clearPreRecord(slot0)
+slot0.clearPreRecord = function (slot0)
 	slot0.data:setPreFurnitures({})
 	slot0.data:setPerWallPaper()
 	slot0.data:setPerFloorPaper()
 end
 
-function slot0.restoreFurnitures(slot0)
+slot0.restoreFurnitures = function (slot0)
 	slot2 = {}
 	slot3 = {}
 
 	for slot7, slot8 in pairs(slot1) do
-		if not slot0.data:isAddFurniture(slot8) then
-			slot10 = slot0.data:isChangeFurniture(slot8)
-		else
-			slot10 = false
-
-			if false then
-				slot10 = true
-			end
-		end
+		slot10 = not slot0.data:isAddFurniture(slot8) and slot0.data:isChangeFurniture(slot8)
 
 		if (slot9 or slot10) and not slot8:hasParent() then
 			slot11 = pairs
-
-			if not slot8.child then
-				slot12 = {}
-			end
+			slot12 = slot8.child or {}
 
 			for slot14, slot15 in slot11(slot12) do
 				table.insert(slot3, slot14)
@@ -692,7 +721,7 @@ function slot0.restoreFurnitures(slot0)
 
 			table.insert(slot3, slot8.id)
 			table.insert(slot2, function (slot0)
-				uv0:removeFurniture(uv1.id)
+				slot0:removeFurniture(slot1.id)
 				slot0()
 			end)
 		end
@@ -701,8 +730,8 @@ function slot0.restoreFurnitures(slot0)
 	for slot8, slot9 in pairs(slot4) do
 		if not slot0.data.furnitures[slot9.id] or table.contains(slot3, slot9.id) then
 			table.insert(slot2, function (slot0)
-				uv0:clearInterActions()
-				uv1:addFurniture(uv0, slot0)
+				slot0:clearInterActions()
+				slot0.clearInterActions:addFurniture(slot0, slot0)
 			end)
 		end
 	end
@@ -710,12 +739,12 @@ function slot0.restoreFurnitures(slot0)
 	if slot0.data:hasChangeFloorPaper() then
 		if slot0.data:getPerFloorPaper() then
 			table.insert(slot2, function (slot0)
-				uv0:replacePaper(uv1)
+				slot0:replacePaper(slot0.replacePaper)
 				slot0()
 			end)
 		else
 			table.insert(slot2, function (slot0)
-				uv0:removeFloorPaper()
+				slot0:removeFloorPaper()
 				slot0()
 			end)
 		end
@@ -724,12 +753,12 @@ function slot0.restoreFurnitures(slot0)
 	if slot0.data:hasChangeWallPaper() then
 		if slot0.data:getPerWallPaper() then
 			table.insert(slot2, function (slot0)
-				uv0:replacePaper(uv1)
+				slot0:replacePaper(slot0.replacePaper)
 				slot0()
 			end)
 		else
 			table.insert(slot2, function (slot0)
-				uv0:removeWallPaper()
+				slot0:removeWallPaper()
 				slot0()
 			end)
 		end
@@ -739,39 +768,35 @@ function slot0.restoreFurnitures(slot0)
 		pg.UIMgr:GetInstance():LoadingOn()
 		seriesAsync(slot2, function ()
 			pg.UIMgr:GetInstance():LoadingOff()
-			uv0:sendNotification(uv1.BACKYARD_RESTORED)
+			pg.UIMgr.GetInstance().LoadingOff:sendNotification(slot1.BACKYARD_RESTORED)
 		end)
 	else
-		slot0:sendNotification(uv0.BACKYARD_RESTORED)
+		slot0:sendNotification(slot0.BACKYARD_RESTORED)
 	end
 end
 
-function slot0.changeFurniturePos(slot0, slot1, slot2, slot3)
+slot0.changeFurniturePos = function (slot0, slot1, slot2, slot3)
 	if not slot2 then
 		return
 	end
 
-	if not slot3 then
-		slot3 = 0
-	end
-
 	slot0.data.furnitures[slot1]:setPosition(slot2)
-	slot0:sendNotification(uv0.BACKYARD_FURNITURE_POS_CHANGE, {
+	slot0:sendNotification(slot0.BACKYARD_FURNITURE_POS_CHANGE, {
 		furniture = Clone(slot0.data.furnitures[slot1]),
-		time = slot3,
+		time = slot3 or 0,
 		prevPos = slot0.data.furnitures[slot1]:getPosition()
 	})
 	slot0:updateHouse(slot0.data)
 end
 
-function slot0.initFloorFurniturePos(slot0, slot1, slot2)
+slot0.initFloorFurniturePos = function (slot0, slot1, slot2)
 	if not slot1:getPosition() then
 		slot3 = nil
 		slot4, slot5 = slot1:getSize()
 
 		if not slot1:isMat() then
 			if #slot0.data:getEmptyFloorGrid(slot4, slot5) == 0 then
-				slot0:sendNotification(uv0.BACKYARD_CANT_PUT)
+				slot0:sendNotification(slot0.BACKYARD_CANT_PUT)
 
 				return
 			end
@@ -779,7 +804,7 @@ function slot0.initFloorFurniturePos(slot0, slot1, slot2)
 			slot3 = slot6[#slot6]
 		else
 			if slot0.data.endX - slot0.data.startX < slot4 - 1 or slot0.data.endY - slot0.data.startY < slot5 - 1 then
-				slot0:sendNotification(uv0.BACKYARD_CANT_PUT)
+				slot0:sendNotification(slot0.BACKYARD_CANT_PUT)
 
 				return
 			end
@@ -792,18 +817,18 @@ function slot0.initFloorFurniturePos(slot0, slot1, slot2)
 
 	slot0.data.furnitures[slot1.id] = slot1
 
-	slot0:sendNotification(uv0.BACKYARD_ADD_FURNITURE, {
+	slot0:sendNotification(slot0.BACKYARD_ADD_FURNITURE, {
 		furniture = slot1,
 		callback = slot2
 	})
 end
 
-function slot0.initWallFurnitruePos(slot0, slot1, slot2)
+slot0.initWallFurnitruePos = function (slot0, slot1, slot2)
 	if not slot1:getPosition() then
 		slot7, slot4 = slot1:getSize()
 
 		if not slot0.data:getWallEmptyGrids(slot3, slot1:getConfig("belong")) then
-			slot0:sendNotification(uv0.BACKYARD_CANT_PUT)
+			slot0:sendNotification(slot0.BACKYARD_CANT_PUT)
 
 			return
 		end
@@ -813,27 +838,27 @@ function slot0.initWallFurnitruePos(slot0, slot1, slot2)
 
 	slot0.data.furnitures[slot1.id] = slot1
 
-	slot0:sendNotification(uv0.BACKYARD_ADD_FURNITURE, {
+	slot0:sendNotification(slot0.BACKYARD_ADD_FURNITURE, {
 		furniture = slot1,
 		callback = slot2
 	})
 end
 
-function slot0.getFurnitureById(slot0, slot1)
+slot0.getFurnitureById = function (slot0, slot1)
 	return slot0.data.furnitures[slot1]
 end
 
-function slot0.replacePaper(slot0, slot1)
+slot0.replacePaper = function (slot0, slot1)
 	if slot1:isWallPaper() then
 		slot0.data:setWallPaper(slot1)
-		slot0:sendNotification(uv0.PAPER_REPLACE, {
+		slot0:sendNotification(slot0.PAPER_REPLACE, {
 			prePaper = Clone(slot0.data.wallPaper),
 			furniture = slot1,
 			type = Furniture.TYPE_WALLPAPER
 		})
 	else
 		slot0.data:setFloorPaper(slot1)
-		slot0:sendNotification(uv0.PAPER_REPLACE, {
+		slot0:sendNotification(slot0.PAPER_REPLACE, {
 			prePaper = Clone(slot0.data.floorPaper),
 			furniture = slot1,
 			type = Furniture.TYPE_FLOORPAPER
@@ -843,7 +868,7 @@ function slot0.replacePaper(slot0, slot1)
 	slot0:updateHouse(slot0.data)
 end
 
-function slot0.addFurniture(slot0, slot1, slot2)
+slot0.addFurniture = function (slot0, slot1, slot2)
 	if slot1:isPaper() then
 		slot0:replacePaper(slot1)
 
@@ -856,32 +881,32 @@ function slot0.addFurniture(slot0, slot1, slot2)
 
 	if slot1:isFloor() then
 		slot0:initFloorFurniturePos(slot1, function ()
-			uv0:updateHouse(uv0.data)
+			slot0:updateHouse(slot0.data)
 
-			if uv1 then
-				uv1()
+			if slot0 then
+				slot1()
 			end
 		end)
 	else
 		slot0:initWallFurnitruePos(slot1, function ()
-			uv0:updateHouse(uv0.data)
+			slot0:updateHouse(slot0.data)
 
-			if uv1 then
-				uv1()
+			if slot0 then
+				slot1()
 			end
 		end)
 	end
 end
 
-function slot0.changeFurnitureDir(slot0, slot1, slot2)
+slot0.changeFurnitureDir = function (slot0, slot1, slot2)
 	slot0.data.furnitures[slot1]:setDir(slot2)
-	slot0:sendNotification(uv0.BACKYARD_FURNITURE_DIR_CHANGE, {
+	slot0:sendNotification(slot0.BACKYARD_FURNITURE_DIR_CHANGE, {
 		furniture = slot0.data.furnitures[slot1]
 	})
 	slot0:updateHouse(slot0.data)
 end
 
-function slot0.removeFurniture(slot0, slot1)
+slot0.removeFurniture = function (slot0, slot1)
 	slot0:sendNotification(BACKYARD.REMOVE_ITEM, Clone(slot0.data.furnitures[slot1]))
 
 	slot3 = Clone(slot2)
@@ -899,11 +924,11 @@ function slot0.removeFurniture(slot0, slot1)
 
 	slot0.data.furnitures[slot1] = nil
 
-	slot0:sendNotification(uv0.BACKYARD_FURNITURE_REMOVE, slot3)
+	slot0:sendNotification(slot0.BACKYARD_FURNITURE_REMOVE, slot3)
 	slot0:updateHouse(slot0.data)
 end
 
-function slot0.clearInterActions(slot0, slot1)
+slot0.clearInterActions = function (slot0, slot1)
 	if slot1:hasInterActionShipId() then
 		for slot6, slot7 in ipairs(slot2) do
 			slot0:clearInterAction(slot7)
@@ -927,10 +952,12 @@ function slot0.clearInterActions(slot0, slot1)
 	end
 end
 
-function slot0.removeAllFurniture(slot0)
+slot0.removeAllFurniture = function (slot0)
+	slot1 = {}
+
 	for slot5, slot6 in pairs(slot0.data.furnitures) do
 		if not slot6:hasParent() then
-			table.insert({}, slot5)
+			table.insert(slot1, slot5)
 		end
 	end
 
@@ -941,48 +968,48 @@ function slot0.removeAllFurniture(slot0)
 	slot0.data.furnitures = {}
 end
 
-function slot0.removePaper(slot0)
+slot0.removePaper = function (slot0)
 	slot0:removeWallPaper()
 	slot0:removeFloorPaper()
 end
 
-function slot0.removeWallPaper(slot0)
+slot0.removeWallPaper = function (slot0)
 	if slot0.data.wallPaper == nil then
 		return
 	end
 
 	slot0.data.wallPaper = nil
 
-	slot0:sendNotification(uv0.PAPER_REPLACE, {
+	slot0:sendNotification(slot0.PAPER_REPLACE, {
 		prePaper = Clone(slot0.data.wallPaper),
 		type = Furniture.TYPE_WALLPAPER
 	})
 	slot0:updateHouse(slot0.data)
 end
 
-function slot0.removeFloorPaper(slot0)
+slot0.removeFloorPaper = function (slot0)
 	if slot0.data.floorPaper == nil then
 		return
 	end
 
 	slot0.data.floorPaper = nil
 
-	slot0:sendNotification(uv0.PAPER_REPLACE, {
+	slot0:sendNotification(slot0.PAPER_REPLACE, {
 		prePaper = Clone(slot0.data.floorPaper),
 		type = Furniture.TYPE_FLOORPAPER
 	})
 	slot0:updateHouse(slot0.data)
 end
 
-function slot0.updateHouseLevel(slot0, slot1)
+slot0.updateHouseLevel = function (slot0, slot1)
 	slot0.data:updateLevel(slot1)
 	slot0:updateHouse(slot0.data)
-	slot0:sendNotification(uv0.HOUSE_LEVEL_UP, {
+	slot0:sendNotification(slot0.HOUSE_LEVEL_UP, {
 		level = slot1
 	})
 end
 
-function slot0.onRemove(slot0)
+slot0.onRemove = function (slot0)
 	for slot4, slot5 in pairs(slot0.data.ships) do
 		slot0:cancelShipMove(slot4)
 	end
@@ -998,14 +1025,8 @@ function slot0.onRemove(slot0)
 	slot0.furnitrueTimers = nil
 end
 
-function slot0.isHappen(slot0)
-	if math.random(1, 100) >= slot0 then
-		slot2 = false
-	else
-		slot2 = true
-	end
-
-	return slot2
+slot0.isHappen = function (slot0)
+	return math.random(1, 100) < slot0
 end
 
 return slot0
