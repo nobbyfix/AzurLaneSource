@@ -423,7 +423,7 @@ function setFrame(slot0, slot1, slot2)
 			if string.sub(slot1, 1, 1) == "0" then
 				slot3.offsetMin = Vector2(-8, -8.5)
 				slot3.offsetMax = Vector2(8, 8)
-			elseif slot2 == "frame7" then
+			elseif slot2 == "frame6" or slot2 == "frame7" then
 				slot3.offsetMin = Vector2(-16.5, -2.5)
 				slot3.offsetMax = Vector2(3.5, 16.5)
 			elseif slot2 == "frame_npc" then

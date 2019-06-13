@@ -184,6 +184,11 @@ slot0.didEnter = function (slot0)
 	slot0:updateBg(slot0.commanderVO)
 	slot0:updateRes()
 	slot0:updateGold()
+	addSlip(SLIP_TYPE_HRZ, slot0.paintTF, function ()
+		slot0:emit(CommanderInfoMediator.ON_PREV)
+	end, function ()
+		slot0:emit(CommanderInfoMediator.ON_NEXT)
+	end)
 end
 
 slot0.checkFirstHelp = function (slot0)
@@ -221,7 +226,7 @@ slot0.switchPage = function (slot0, slot1)
 	end
 
 	if slot1 == slot0.PAGE_PLAY and slot0.commanderVO.inBattle then
-		slot0.toggleTFs[slot0.page]:GetComponent("Toggle").isOn = true
+		slot0.toggleTFs[slot0.PAGE_TALENT]:GetComponent("Toggle").isOn = true
 
 		pg.TipsMgr:GetInstance():ShowTips(i18n("commander_is_in_battle"))
 

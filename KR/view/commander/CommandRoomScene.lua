@@ -850,11 +850,32 @@ end
 slot0.SwitchPage = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot0:emit(CommandRoomMediator.ON_DETAIL, slot0.conmmanderId, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	if slot0.commanderVOs[slot0.conmmanderId].inBattle and slot1 == CommanderInfoScene.PAGE_PLAY then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 11-22, warpins: 1 ---
+		pg.TipsMgr:GetInstance():ShowTips(i18n("commander_is_in_battle"))
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 23-30, warpins: 3 ---
+	slot0:emit(CommandRoomMediator.ON_DETAIL, slot2, slot1)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
 
 
