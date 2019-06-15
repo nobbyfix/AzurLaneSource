@@ -632,7 +632,7 @@ slot0.initProfile = function (slot0)
 	slot0.skinViewport = slot0:findTF("Viewport", slot0.skinScroll)
 	slot0.skinList = slot0:findTF("skin_container", slot0.skinViewport)
 
-	if #slot0.groupSkinList == 1 or slot0.showTrans then
+	if #slot0.groupSkinList == 1 then
 		setActive(slot0.skinList, false)
 	else
 		slot0.spaceY = GetComponent(slot0.skinList, typeof(GridLayoutGroup)).spacing.y

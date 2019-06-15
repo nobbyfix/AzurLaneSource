@@ -100,6 +100,8 @@ slot0.checkToggleActive = function (slot0, slot1)
 		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip()
 	elseif slot1 == ShipViewConst.PAGE.REMOULD then
 		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip() and pg.ship_data_trans[slot0.shipVO.groupId]
+	elseif slot1 == ShipViewConst.PAGE.FASHION then
+		return true
 	else
 		return false
 	end
