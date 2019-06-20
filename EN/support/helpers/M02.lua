@@ -456,7 +456,7 @@ function setFrame(slot0, slot1, slot2)
 			if string.sub(slot1, 1, 1) == "0" then
 				slot3.offsetMin = Vector2(-8, -8.5)
 				slot3.offsetMax = Vector2(8, 8)
-			elseif slot2 == "frame7" then
+			elseif slot2 == "frame6" or slot2 == "frame7" then
 				slot3.offsetMin = Vector2(-16.5, -2.5)
 				slot3.offsetMax = Vector2(3.5, 16.5)
 			elseif slot2 == "frame_npc" then
@@ -466,8 +466,8 @@ function setFrame(slot0, slot1, slot2)
 				slot3.offsetMin = Vector2(-11, -12)
 				slot3.offsetMax = Vector2(14, 14)
 			else
-				slot3.offsetMin = Vector2(-16.5, -2.5)
-				slot3.offsetMax = Vector2(3.5, 16.5)
+				slot3.offsetMin = Vector2(-2.5, -4.5)
+				slot3.offsetMax = Vector2(3, 4.5)
 			end
 		end
 
@@ -487,28 +487,40 @@ function setIconColorful(slot0, slot1, slot2)
 		if findTF(slot0, "icon_bg/" .. slot0 .. "(Clone)") then
 			setActive(slot2, slot1)
 		elseif slot1 then
-			PoolMgr.GetInstance():GetPrefab("ui/" .. string.lower(slot0), "", true, function (slot0)
-				setParent(slot0, slot0:Find("icon_bg"))
+			LoadAndInstantiateAsync("ui", string.lower(slot0), function (slot0)
+				if IsNil(slot0) then
+					Object.Destroy(slot0)
+				else
+					setParent(slot0, slot0:Find("icon_bg"))
 
-				if slot0:Find("icon_bg/stars") then
-					slot1:SetAsLastSibling()
+					if slot0:Find("icon_bg/stars") then
+						slot1:SetAsLastSibling()
+					end
+
+					setActive(slot0, slot1)
 				end
-
-				setActive(slot0, slot1)
 			end)
 		end
 	end
 
-	slot4 = {
-		[5] = {
-			name = "Item_duang5",
-			active = slot2.fromAwardLayer and slot1 >= 5
-		},
-		[6] = {
-			name = "IconColorful",
-			active = not slot2.noIconColorful and slot1 == 6
+	slot4 = nil
+
+	if slot2.fromAwardLayer then
+		slot4 = {
+			[5] = {
+				name = "Item_duang5",
+				active = slot2.fromAwardLayer and slot1 >= 5
+			}
 		}
-	}
+		slot2.fromAwardLayer = false
+	else
+		slot4 = {
+			[6] = {
+				name = "IconColorful",
+				active = not slot2.noIconColorful and slot1 == 6
+			}
+		}
+	end
 
 	for slot8, slot9 in pairs(slot4) do
 		slot3(slot9.name, slot9.active)
@@ -570,7 +582,7 @@ function updateEquipment(slot0, slot1, slot2)
 		setText(slot9, (slot8 > 0 and slot8) or "")
 	end
 
-	setIconColorful(slot0, slot2.dropRarity or slot1.config.rarity, slot2)
+	setIconColorful(slot0, slot1.config.rarity, slot2)
 end
 
 function updateItem(slot0, slot1, slot2)
@@ -592,7 +604,7 @@ function updateItem(slot0, slot1, slot2)
 		setText(slot7, HXSet.hxLan(slot3.name))
 	end
 
-	setIconColorful(slot0, slot2.dropRarity or slot3.rarity + 1, slot2)
+	setIconColorful(slot0, slot3.rarity + 1, slot2)
 end
 
 function updateWorldItem(slot0, slot1, slot2)
@@ -607,134 +619,129 @@ function updateWorldItem(slot0, slot1, slot2)
 		setText(slot6, HXSet.hxLan(slot3.name))
 	end
 
-	setIconColorful(slot0, slot2.dropRarity or slot3.rarity + 1, slot2)
+	setIconColorful(slot0, slot3.rarity + 1, slot2)
 end
 
 function updateShip(slot0, slot1, slot2)
-	slot3 = slot2 or {}
-	slot4 = slot1:getRarity()
+	slot3 = slot1:rarity2bgPrint()
+	slot4 = slot1:getPainting()
+	slot5 = getProxy(ShipSkinProxy)
 
-	if slot1.remoulded then
-		slot4 = slot4 + 1
-	end
-
-	slot5 = slot1:rarity2bgPrint()
-	slot6 = slot1:getPainting()
-	slot7 = getProxy(ShipSkinProxy)
-
-	if slot3.anonymous then
-		slot5 = "1"
-		slot6 = "unknown"
+	if slot2 or {}.anonymous then
+		slot3 = "1"
+		slot4 = "unknown"
 	end
 
 	if findTF(slot0, "icon_bg/new") then
-		if slot3.isSkin then
-			setActive(slot8, not slot7:hasOldSkin(slot1.skinId))
+		if slot2.isSkin then
+			setActive(slot6, not slot5:hasOldSkin(slot1.skinId))
 		else
-			setActive(slot8, slot1.virgin)
+			setActive(slot6, slot1.virgin)
 		end
 	end
 
-	setImageSprite(findTF(slot0, "icon_bg"), GetSpriteFromAtlas("weaponframes", "bg" .. ((slot3.isSkin and "-skin") or slot5)))
+	setImageSprite(findTF(slot0, "icon_bg"), GetSpriteFromAtlas("weaponframes", "bg" .. ((slot2.isSkin and "-skin") or slot3)))
 
-	slot10 = findTF(slot0, "icon_bg/frame")
-	slot11 = nil
+	slot8 = findTF(slot0, "icon_bg/frame")
+	slot9 = nil
 
 	if slot1.isNpc then
-		slot11 = "frame_npc"
+		slot9 = "frame_npc"
 	elseif slot1.propose then
-		slot11 = "frame_prop"
-	elseif slot3.isSkin then
-		slot11 = "frame7"
+		slot9 = "frame_prop"
+	elseif slot2.isSkin then
+		slot9 = "frame7"
 	end
 
-	setFrame(slot10, slot5, slot11)
+	setFrame(slot8, slot3, slot9)
 
-	if slot3.gray then
-		setGray(slot9, true, true)
-	end
-
-	GetImageSpriteFromAtlasAsync((slot3.Q and "QIcon/") or "SquareIcon/" .. slot6, "", findTF(slot0, "icon_bg/icon"))
-
-	if findTF(slot0, "icon_bg/lv") then
-		setActive(slot13, not slot1.isNpc)
-
-		if not slot1.isNpc and findTF(slot13, "Text") and slot1.level then
-			setText(slot14, slot1.level)
-		end
-	end
-
-	if not IsNil(findTF(slot0, "name")) then
-		setActive(slot14, not slot3.hideName)
-
-		if not slot3.hideName then
-			setText(slot14, slot1:getName())
-		end
-	end
-
-	setStars(slot3.initStar, slot0, slot1:getStar())
-
-	if findTF(slot0, "ship_type") then
-		setActive(slot15, true)
-
-		slot15:GetComponent(typeof(Image)).sprite = GetSpriteFromAtlas("shiptype", shipType2print(slot1:getShipType()))
-	end
-
-	if not IsNil(slot9:Find("npc")) then
-		if slot8 and go(slot8).activeSelf then
-			setActive(slot16, false)
-		else
-			setActive(slot16, slot1:isActivityNpc())
-		end
-	end
-
-	setIconColorful(slot0, slot3.dropRarity or (slot3.isSkin and 5) or slot4, slot3)
-end
-
-function updateCommander(slot0, slot1, slot2)
-	slot5 = ShipRarity.Rarity2Print(slot4)
-	slot6 = slot1:getPainting()
-
-	if slot2 or {}.anonymous then
-		slot5 = 1
-		slot6 = "unknown"
-	end
-
-	setImageSprite(findTF(slot0, "icon_bg"), GetSpriteFromAtlas("weaponframes", "bg" .. ((slot3.isSkin and "-skin") or slot5)))
-	setFrame(findTF(slot0, "icon_bg/frame"), slot5)
-
-	if slot3.gray then
+	if slot2.gray then
 		setGray(slot7, true, true)
 	end
 
-	GetImageSpriteFromAtlasAsync((slot3.Q and "QIcon/") or "SquareIcon/" .. slot6, "", findTF(slot0, "icon_bg/icon"))
+	GetImageSpriteFromAtlasAsync((slot2.Q and "QIcon/") or "SquareIcon/" .. slot4, "", findTF(slot0, "icon_bg/icon"))
 
 	if findTF(slot0, "icon_bg/lv") then
-		setActive(slot10, true)
+		setActive(slot11, not slot1.isNpc)
 
-		if findTF(slot10, "Text") and slot1.level then
-			setText(slot11, slot1.level)
+		if not slot1.isNpc and findTF(slot11, "Text") and slot1.level then
+			setText(slot12, slot1.level)
 		end
 	end
 
 	if not IsNil(findTF(slot0, "name")) then
-		setActive(slot11, not slot3.hideName)
+		setActive(slot12, not slot2.hideName)
 
-		if not slot3.hideName then
-			setText(slot11, slot1:getName())
+		if not slot2.hideName then
+			setText(slot12, slot1:getName())
 		end
 	end
 
-	setStars(slot3.initStar, slot0, slot1:getStar())
+	setStars(slot2.initStar, slot0, slot1:getStar())
 
 	if findTF(slot0, "ship_type") then
-		setActive(slot12, true)
+		setActive(slot13, true)
 
-		slot12:GetComponent(typeof(Image)).sprite = GetSpriteFromAtlas("shiptype", shipType2print(slot1:getShipType()))
+		slot13:GetComponent(typeof(Image)).sprite = GetSpriteFromAtlas("shiptype", shipType2print(slot1:getShipType()))
+	end
+
+	if not IsNil(slot7:Find("npc")) then
+		if slot6 and go(slot6).activeSelf then
+			setActive(slot14, false)
+		else
+			setActive(slot14, slot1:isActivityNpc())
+		end
+	end
+
+	setIconColorful(slot0, (slot2.isSkin and 5) or slot1:getRarity(), slot2)
+end
+
+function updateCommander(slot0, slot1, slot2)
+	slot4 = ShipRarity.Rarity2Print(slot3)
+	slot5 = slot1:getPainting()
+
+	if slot2 or {}.anonymous then
+		slot4 = 1
+		slot5 = "unknown"
+	end
+
+	setImageSprite(findTF(slot0, "icon_bg"), GetSpriteFromAtlas("weaponframes", "bg" .. ((slot2.isSkin and "-skin") or slot4)))
+	setFrame(findTF(slot0, "icon_bg/frame"), slot4)
+
+	if slot2.gray then
+		setGray(slot6, true, true)
+	end
+
+	GetImageSpriteFromAtlasAsync((slot2.Q and "QIcon/") or "SquareIcon/" .. slot5, "", findTF(slot0, "icon_bg/icon"))
+
+	if findTF(slot0, "icon_bg/lv") then
+		setActive(slot9, true)
+
+		if findTF(slot9, "Text") and slot1.level then
+			setText(slot10, slot1.level)
+		end
+	end
+
+	if not IsNil(findTF(slot0, "name")) then
+		setActive(slot10, not slot2.hideName)
+
+		if not slot2.hideName then
+			setText(slot10, slot1:getName())
+		end
+	end
+
+	setStars(slot2.initStar, slot0, slot1:getStar())
+
+	if findTF(slot0, "ship_type") then
+		setActive(slot11, true)
+
+		slot11:GetComponent(typeof(Image)).sprite = GetSpriteFromAtlas("shiptype", shipType2print(slot1:getShipType()))
 	end
 end
 
 function updateStrategy(slot0, slot1, slot2)
+	slot2 = slot2 or {}
+
 	setImageSprite(findTF(slot0, "icon_bg"), GetSpriteFromAtlas("weaponframes", "bg" .. ItemRarity.Rarity2Print(ItemRarity.Gray)))
 	setFrame(findTF(slot0, "icon_bg/frame"), slot4)
 	GetImageSpriteFromAtlasAsync("strategyicon/" .. pg.strategy_data_template[slot1.id].icon, "", findTF(slot0, "icon_bg/icon"))
@@ -744,7 +751,7 @@ function updateStrategy(slot0, slot1, slot2)
 		setText(slot6, HXSet.hxLan(slot3.name))
 	end
 
-	setIconColorful(slot0, slot2.dropRarity or 1, slot2)
+	setIconColorful(slot0, 1, slot2)
 end
 
 function updateFurniture(slot0, slot1, slot2)
@@ -759,7 +766,7 @@ function updateFurniture(slot0, slot1, slot2)
 		setText(slot6, HXSet.hxLan(slot3.name))
 	end
 
-	setIconColorful(slot0, slot2.dropRarity or slot3.comfortable + 1, slot2)
+	setIconColorful(slot0, slot3.rarity + 1, slot2)
 end
 
 slot3 = nil
@@ -837,134 +844,136 @@ function getDropInfo(slot0)
 end
 
 function updateDrop(slot0, slot1, slot2)
+	slot2 = slot2 or {}
 	slot3 = type
-	slot4 = slot2 or {}
-	slot5 = slot1.type or slot1.dropType
+	slot4 = slot1.type or slot1.dropType
+	slot5 = ""
 	slot6 = ""
-	slot7 = ""
 
 	if slot0:Find("icon_bg/IconColorful(Clone)") then
-		setActive(slot8, false)
+		setActive(slot7, false)
 	end
 
 	if slot0:Find("icon_bg/frame/specialFrame") then
-		setActive(slot9, false)
+		setActive(slot8, false)
 
 		slot0:Find("icon_bg/frame"):GetComponent(typeof(Image)).enabled = true
 	end
 
 	setIconOrFrameSize(findTF(slot0, "icon_bg/icon"))
 
-	slot4.dropRarity = getDropRarity(slot1)
+	if slot2.fromAwardLayer then
+		setIconColorful(slot0, getDropRarity(slot1), slot2)
+	end
 
-	if slot5 ~= DROP_TYPE_SHIP then
+	if slot4 ~= DROP_TYPE_SHIP then
 		if not IsNil(slot0:Find("ship_type")) then
-			setActive(slot10, false)
+			setActive(slot9, false)
 		end
 
 		if not IsNil(slot0:Find("icon_bg/new")) then
-			setActive(slot11, false)
+			setActive(slot10, false)
 		end
 
 		if not IsNil(slot0:Find("icon_bg/npc")) then
-			setActive(slot12, false)
+			setActive(slot11, false)
 		end
 	end
 
-	if slot5 ~= DROP_TYPE_EQUIP and not IsNil(slot0:Find("icon_bg/slv")) then
-		setActive(slot10, false)
+	if slot4 ~= DROP_TYPE_EQUIP and not IsNil(slot0:Find("icon_bg/slv")) then
+		setActive(slot9, false)
 	end
 
-	if slot5 == DROP_TYPE_RESOURCE then
-		slot7 = pg.item_data_statistics[id2ItemId(slot1.id)].display
+	if slot4 == DROP_TYPE_RESOURCE then
+		slot6 = pg.item_data_statistics[id2ItemId(slot1.id)].display
 
 		updateItem(slot0, Item.New({
 			id = id2ItemId(slot1.id)
-		}), slot4)
-	elseif slot5 == DROP_TYPE_ITEM then
-		slot7 = pg.item_data_statistics[slot1.id].display
+		}), slot2)
+	elseif slot4 == DROP_TYPE_ITEM then
+		slot6 = pg.item_data_statistics[slot1.id].display
 
 		updateItem(slot0, Item.New({
 			id = slot1.id
-		}), slot4)
-	elseif slot5 == DROP_TYPE_EQUIP then
-		slot7 = pg.equip_data_statistics[slot1.id].descrip
+		}), slot2)
+	elseif slot4 == DROP_TYPE_EQUIP then
+		slot6 = pg.equip_data_statistics[slot1.id].descrip
 
 		updateEquipment(slot0, Equipment.New({
 			id = slot1.id
-		}), slot4)
-	elseif slot5 == DROP_TYPE_SIREN_EQUIP then
-		slot7 = pg.equip_data_statistics[getProxy(EquipmentProxy).getEquipmentById(slot10, slot1.id).configId].descrip
+		}), slot2)
+	elseif slot4 == DROP_TYPE_SIREN_EQUIP then
+		slot6 = pg.equip_data_statistics[getProxy(EquipmentProxy).getEquipmentById(slot9, slot1.id).configId].descrip
 
-		updateEquipment(slot0, getProxy(EquipmentProxy).getEquipmentById(slot10, slot1.id), slot4)
-	elseif slot5 == DROP_TYPE_SHIP then
-		slot7 = Ship.getWords(pg.ship_data_statistics[slot1.id].skin_id, "drop_descrip") or i18n("ship_drop_desc_default")
-		slot11 = Ship.New({
+		updateEquipment(slot0, getProxy(EquipmentProxy).getEquipmentById(slot9, slot1.id), slot2)
+	elseif slot4 == DROP_TYPE_SHIP then
+		slot6 = Ship.getWords(pg.ship_data_statistics[slot1.id].skin_id, "drop_descrip") or i18n("ship_drop_desc_default")
+		slot10 = Ship.New({
 			configId = slot1.id,
 			skin_id = slot1.skinId,
 			propose = slot1.propose
 		})
-		slot11.remoulded = slot1.remoulded
-		slot11.virgin = slot1.virgin
+		slot10.remoulded = slot1.remoulded
+		slot10.virgin = slot1.virgin
 
-		updateShip(slot0, slot11, slot4)
-	elseif slot5 == DROP_TYPE_NPC_SHIP then
-		slot7 = Ship.getWords(pg.ship_data_statistics[getProxy(BayProxy):getShipById(slot1.id).configId].skin_id, "drop_descrip") or i18n("ship_drop_desc_default")
+		updateShip(slot0, slot10, slot2)
+	elseif slot4 == DROP_TYPE_NPC_SHIP then
+		slot6 = Ship.getWords(pg.ship_data_statistics[getProxy(BayProxy):getShipById(slot1.id).configId].skin_id, "drop_descrip") or i18n("ship_drop_desc_default")
 
-		updateShip(slot0, slot10, slot4)
-	elseif slot5 == DROP_TYPE_FURNITURE then
-		slot7 = pg.furniture_data_template[slot1.id].describe
+		updateShip(slot0, slot9, slot2)
+	elseif slot4 == DROP_TYPE_FURNITURE then
+		slot6 = pg.furniture_data_template[slot1.id].describe
 
-		updateFurniture(slot0, slot1.id, slot4)
-	elseif slot5 == DROP_TYPE_STRATEGY then
-		slot7 = pg.strategy_data_template[slot1.id].desc
+		updateFurniture(slot0, slot1.id, slot2)
+	elseif slot4 == DROP_TYPE_STRATEGY then
+		slot6 = pg.strategy_data_template[slot1.id].desc
 
 		updateStrategy(slot0, Item.New({
 			id = slot1.id
-		}), slot4)
-	elseif slot5 == DROP_TYPE_SKIN then
-		slot7 = Ship.getWords(slot1.id, "drop_descrip")
-		slot4.isSkin = true
+		}), slot2)
+	elseif slot4 == DROP_TYPE_SKIN then
+		slot6 = Ship.getWords(slot1.id, "drop_descrip")
+		slot2.isSkin = true
 
 		updateShip(slot0, Ship.New({
 			configId = tonumber(pg.ship_skin_template[slot1.id].ship_group .. "1"),
 			skin_id = slot1.id
-		}), slot4)
-	elseif slot5 == DROP_TYPE_EQUIPMENT_SKIN then
+		}), slot2)
+	elseif slot4 == DROP_TYPE_EQUIPMENT_SKIN then
 		updateEquipmentSkin(slot0, {
 			rarity = pg.equip_skin_template[slot1.id].rarity,
 			icon = pg.equip_skin_template[slot1.id].icon,
 			name = pg.equip_skin_template[slot1.id].name,
 			count = slot1.count
-		}, slot4)
-	elseif slot5 == DROP_TYPE_VITEM then
-		slot7 = pg.item_data_statistics[slot1.id].display
+		}, slot2)
+	elseif slot4 == DROP_TYPE_VITEM then
+		slot6 = pg.item_data_statistics[slot1.id].display
 
 		updateItem(slot0, Item.New({
 			id = slot1.id
-		}), slot4)
-	elseif slot5 == DROP_TYPE_WORLD_ITEM then
-		slot7 = pg.world_item_data_template[slot1.id].display
+		}), slot2)
+	elseif slot4 == DROP_TYPE_WORLD_ITEM then
+		slot6 = pg.world_item_data_template[slot1.id].display
 
 		updateWorldItem(slot0, WorldItem.New({
 			id = slot1.id
-		}), slot4)
-	elseif slot5 == DROP_TYPE_CHAT_FRAME then
+		}), slot2)
+	elseif slot4 == DROP_TYPE_CHAT_FRAME then
 		updateAttire(slot0, AttireConst.TYPE_CHAT_FRAME, pg.item_data_chat[slot1.id])
-	elseif slot5 == DROP_TYPE_ICON_FRAME then
+	elseif slot4 == DROP_TYPE_ICON_FRAME then
 		updateAttire(slot0, AttireConst.TYPE_ICON_FRAME, pg.item_data_frame[slot1.id])
 	end
 
-	slot1.cfg = slot6
-	slot1.desc = slot7
+	slot1.cfg = slot5
+	slot1.desc = slot6
 
 	if slot1.count and (slot3(slot1.count) ~= "number" or slot1.count > 0) then
 		if not IsNil(findTF(slot0, "icon_bg/count")) then
-			SetActive(slot10, true)
-			setText(slot10, slot1.count)
+			SetActive(slot9, true)
+			setText(slot9, slot1.count)
 		end
 	elseif not IsNil(findTF(slot0, "icon_bg/count")) then
-		SetActive(slot10, false)
+		SetActive(slot9, false)
 	end
 end
 
@@ -1035,7 +1044,7 @@ function updateEquipmentSkin(slot0, slot1, slot2)
 	end
 
 	setText(findTF(slot0, "icon_bg/count"), ((slot1.count or 0) > 0 and (slot1.count or 0)) or "")
-	setIconColorful(slot0, slot2.dropRarity or slot1.rarity, slot2)
+	setIconColorful(slot0, slot1.rarity, slot2)
 end
 
 function getDropRarity(slot0)
@@ -1436,7 +1445,7 @@ function filterSpecChars(slot0)
 		elseif slot9 == 227 and PLATFORM_CODE == PLATFORM_JP then
 			slot11 = string.byte(slot0, slot8 + 2)
 
-			if string.byte(slot0, slot8 + 1) and slot11 and slot10 > 128 and slot10 <= 191 and slot11 > 128 and slot11 <= 191 then
+			if string.byte(slot0, slot8 + 1) and slot11 and slot10 > 128 and slot10 <= 191 and slot11 >= 128 and slot11 <= 191 then
 				slot8 = slot8 + 2
 
 				table.insert(slot1, string.char(slot9, slot10, slot11))
@@ -4298,13 +4307,13 @@ function setRectShipCardFrame(slot0, slot1, slot2)
 
 end
 
-function flushShipCard(slot0, slot1)
+function flushShipCard(slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-68, warpins: 1 ---
-	setImageSprite(slot3, GetSpriteFromAtlas("bg/star_level_card_" .. slot2, ""))
+	--- BLOCK #0 1-73, warpins: 1 ---
+	setImageSprite(slot4, GetSpriteFromAtlas("bg/star_level_card_" .. slot3, ""))
 
-	slot4 = findTF(slot0, "content/ship_icon"):GetComponent("Image")
+	findTF(slot0, "content/ship_icon"):GetComponent("Image").sprite = GetSpriteFromAtlas("shipYardIcon/unknown", "")
 
 	LoadSpriteAsync("shipYardIcon/" .. slot1:getPainting(), function (slot0)
 
@@ -4313,8 +4322,26 @@ function flushShipCard(slot0, slot1)
 		if slot0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 4-5, warpins: 1 ---
-			slot1.sprite = slot0
+			--- BLOCK #0 4-6, warpins: 1 ---
+			if slot1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 7-12, warpins: 1 ---
+				slot1(slot0, slot0.configId)
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 13-14, warpins: 1 ---
+				slot2.sprite = slot0
+				--- END OF BLOCK #0 ---
+
+
+
+			end
 			--- END OF BLOCK #0 ---
 
 
@@ -4328,31 +4355,31 @@ function flushShipCard(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 6-6, warpins: 2 ---
+		--- BLOCK #1 15-15, warpins: 3 ---
 		return
 		--- END OF BLOCK #1 ---
 
 
 
 	end)
-	setImageSprite(slot6, GetSpriteFromAtlas("shiptype", shipType2print(slot1:getShipType())))
+	setImageSprite(slot7, GetSpriteFromAtlas("shiptype", shipType2print(slot1:getShipType())))
 	setText(findTF(slot0, "content/dockyard/lv/Text"), defaultValue(slot1.level, 1))
 
-	slot8 = setShipCardFrame
-	slot9 = findTF(slot0, "content/front/frame")
-	slot10 = slot1:rarity2bgPrint()
+	slot9 = setShipCardFrame
+	slot10 = findTF(slot0, "content/front/frame")
+	slot11 = slot1:rarity2bgPrint()
 
 	if slot1.propose then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 69-74, warpins: 1 ---
-		slot11 = "prop"
+		--- BLOCK #0 74-79, warpins: 1 ---
+		slot12 = "prop"
 
-		if not slot1:isBluePrintShip() or not slot2 then
+		if not slot1:isBluePrintShip() or not slot3 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 77-77, warpins: 2 ---
-			slot12 = ""
+			--- BLOCK #0 82-82, warpins: 2 ---
+			slot13 = ""
 			--- END OF BLOCK #0 ---
 
 
@@ -4366,12 +4393,12 @@ function flushShipCard(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 78-80, warpins: 2 ---
-		if not (slot11 .. slot12) then
+		--- BLOCK #1 83-85, warpins: 2 ---
+		if not (slot12 .. slot13) then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 81-81, warpins: 2 ---
-			slot11 = nil
+			--- BLOCK #0 86-86, warpins: 2 ---
+			slot12 = nil
 			--- END OF BLOCK #0 ---
 
 
@@ -4390,15 +4417,15 @@ function flushShipCard(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 82-105, warpins: 2 ---
-	slot8(slot9, slot10, slot11)
+	--- BLOCK #1 87-110, warpins: 2 ---
+	slot9(slot10, slot11, slot12)
 
-	slot8 = findTF(slot0, "content/front/stars")
+	slot9 = findTF(slot0, "content/front/stars")
 
-	setActive(slot8, true)
+	setActive(slot9, true)
 
-	slot9 = findTF(slot8, "star_tpl")
-	slot11 = slot1:getStar()
+	slot10 = findTF(slot9, "star_tpl")
+	slot12 = slot1:getStar()
 
 	--- END OF BLOCK #1 ---
 
@@ -4407,12 +4434,12 @@ function flushShipCard(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 106-110, warpins: 0 ---
-	for slot16 = slot8.childCount, slot1:getMaxStar() - 1, 1 do
+	--- BLOCK #2 111-115, warpins: 0 ---
+	for slot17 = slot9.childCount, slot1:getMaxStar() - 1, 1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 106-110, warpins: 2 ---
-		cloneTplTo(slot9, slot8)
+		--- BLOCK #0 111-115, warpins: 2 ---
+		cloneTplTo(slot10, slot9)
 		--- END OF BLOCK #0 ---
 
 
@@ -4426,7 +4453,7 @@ function flushShipCard(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 111-115, warpins: 1 ---
+	--- BLOCK #3 116-120, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -4434,19 +4461,19 @@ function flushShipCard(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 116-151, warpins: 0 ---
-	for slot16 = 0, slot8.childCount - 1, 1 do
+	--- BLOCK #4 121-156, warpins: 0 ---
+	for slot17 = 0, slot9.childCount - 1, 1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 116-124, warpins: 2 ---
-		slot19 = slot8:GetChild(slot16).gameObject
-		slot18 = slot8.GetChild(slot16).gameObject.SetActive
+		--- BLOCK #0 121-129, warpins: 2 ---
+		slot20 = slot9:GetChild(slot17).gameObject
+		slot19 = slot9.GetChild(slot17).gameObject.SetActive
 
-		if slot16 >= slot12 then
+		if slot17 >= slot13 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 125-126, warpins: 1 ---
-			slot20 = false
+			--- BLOCK #0 130-131, warpins: 1 ---
+			slot21 = false
 			--- END OF BLOCK #0 ---
 
 
@@ -4454,8 +4481,8 @@ function flushShipCard(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 127-127, warpins: 1 ---
-			slot20 = true
+			--- BLOCK #0 132-132, warpins: 1 ---
+			slot21 = true
 			--- END OF BLOCK #0 ---
 
 
@@ -4469,17 +4496,17 @@ function flushShipCard(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 128-135, warpins: 2 ---
-		slot18(slot19, slot20)
+		--- BLOCK #1 133-140, warpins: 2 ---
+		slot19(slot20, slot21)
 
-		slot18 = SetActive
-		slot19 = slot17:Find("star_tpl")
+		slot19 = SetActive
+		slot20 = slot18:Find("star_tpl")
 
-		if slot16 >= slot11 then
+		if slot17 >= slot12 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 136-137, warpins: 1 ---
-			slot20 = false
+			--- BLOCK #0 141-142, warpins: 1 ---
+			slot21 = false
 			--- END OF BLOCK #0 ---
 
 
@@ -4487,8 +4514,8 @@ function flushShipCard(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 138-138, warpins: 1 ---
-			slot20 = true
+			--- BLOCK #0 143-143, warpins: 1 ---
+			slot21 = true
 			--- END OF BLOCK #0 ---
 
 
@@ -4502,17 +4529,17 @@ function flushShipCard(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 139-146, warpins: 2 ---
-		slot18(slot19, slot20)
+		--- BLOCK #2 144-151, warpins: 2 ---
+		slot19(slot20, slot21)
 
-		slot18 = SetActive
-		slot19 = slot17:Find("star_empty_tpl")
+		slot19 = SetActive
+		slot20 = slot18:Find("star_empty_tpl")
 
-		if slot11 > slot16 then
+		if slot12 > slot17 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 147-148, warpins: 1 ---
-			slot20 = false
+			--- BLOCK #0 152-153, warpins: 1 ---
+			slot21 = false
 			--- END OF BLOCK #0 ---
 
 
@@ -4520,8 +4547,8 @@ function flushShipCard(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 149-149, warpins: 1 ---
-			slot20 = true
+			--- BLOCK #0 154-154, warpins: 1 ---
+			slot21 = true
 			--- END OF BLOCK #0 ---
 
 
@@ -4535,8 +4562,8 @@ function flushShipCard(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 150-151, warpins: 2 ---
-		slot18(slot19, slot20)
+		--- BLOCK #3 155-156, warpins: 2 ---
+		slot19(slot20, slot21)
 		--- END OF BLOCK #3 ---
 
 
@@ -4550,22 +4577,22 @@ function flushShipCard(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 152-160, warpins: 1 ---
-	slot13 = findTF(slot0, "content/front/bg_other")
-	slot14 = nil
-	slot15 = false
+	--- BLOCK #5 157-165, warpins: 1 ---
+	slot14 = findTF(slot0, "content/front/bg_other")
+	slot15 = nil
+	slot16 = false
 
 	if slot1.propose then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 161-166, warpins: 1 ---
-		slot16 = "duang_6_jiehun"
+		--- BLOCK #0 166-171, warpins: 1 ---
+		slot17 = "duang_6_jiehun"
 
 		if slot1:isBluePrintShip() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 167-168, warpins: 1 ---
-			slot17 = "_tuzhi"
+			--- BLOCK #0 172-173, warpins: 1 ---
+			slot18 = "_tuzhi"
 			--- END OF BLOCK #0 ---
 
 
@@ -4573,8 +4600,8 @@ function flushShipCard(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 169-169, warpins: 1 ---
-			slot17 = ""
+			--- BLOCK #0 174-174, warpins: 1 ---
+			slot18 = ""
 			--- END OF BLOCK #0 ---
 
 
@@ -4588,8 +4615,8 @@ function flushShipCard(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 170-171, warpins: 2 ---
-		slot14 = slot16 .. slot17
+		--- BLOCK #1 175-176, warpins: 2 ---
+		slot15 = slot17 .. slot18
 		--- END OF BLOCK #1 ---
 
 
@@ -4597,12 +4624,12 @@ function flushShipCard(slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 172-176, warpins: 1 ---
+		--- BLOCK #0 177-181, warpins: 1 ---
 		if slot1:getRarity() == 6 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 177-177, warpins: 1 ---
-			slot14 = "duang_6"
+			--- BLOCK #0 182-182, warpins: 1 ---
+			slot15 = "duang_6"
 			--- END OF BLOCK #0 ---
 
 
@@ -4621,14 +4648,14 @@ function flushShipCard(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 178-179, warpins: 3 ---
-	if slot14 then
+	--- BLOCK #6 183-184, warpins: 3 ---
+	if slot15 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 180-188, warpins: 1 ---
-		slot16 = slot14 .. "(Clone)"
+		--- BLOCK #0 185-193, warpins: 1 ---
+		slot17 = slot15 .. "(Clone)"
 
-		eachChild(slot13, function (slot0)
+		eachChild(slot14, function (slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-6, warpins: 1 ---
@@ -4711,11 +4738,11 @@ function flushShipCard(slot0, slot1)
 
 		end)
 
-		if not slot15 then
+		if not slot16 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 189-200, warpins: 1 ---
-			PoolMgr.GetInstance():GetPrefab("effect/" .. slot14, "", true, function (slot0)
+			--- BLOCK #0 194-205, warpins: 1 ---
+			PoolMgr.GetInstance():GetPrefab("effect/" .. slot15, "", true, function (slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-5, warpins: 1 ---
@@ -4739,7 +4766,7 @@ function flushShipCard(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 201-201, warpins: 2 ---
+		--- BLOCK #1 206-206, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -4753,8 +4780,8 @@ function flushShipCard(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 202-207, warpins: 2 ---
-	setActive(slot13, slot14)
+	--- BLOCK #7 207-212, warpins: 2 ---
+	setActive(slot14, slot15)
 
 	return
 	--- END OF BLOCK #7 ---

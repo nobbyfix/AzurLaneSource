@@ -1,4 +1,8 @@
 slot0 = class("CommanderTalentPanel", import("...base.BasePanel"))
+slot1 = 1
+slot2 = 2
+slot3 = 3
+slot4 = 4
 
 slot0.init = function (slot0)
 	slot0.resetTimeTF = slot0:findTF("frame/point/reset_frame/reset_time")
@@ -43,6 +47,7 @@ slot0.init = function (slot0)
 
 	slot0.uilist = UIItemList.New(slot0:findTF("frame/talents/content"), slot0:findTF("frame/talents/content/talent_tpl"))
 	slot0.resetPoint = false
+	slot0.scrollTxts = {}
 end
 
 slot0.inChapter = function (slot0, slot1)
@@ -186,41 +191,60 @@ slot0.update = function (slot0, slot1)
 end
 
 slot0.updateTalents = function (slot0)
+	slot0:clearScrollTxts(slot0)
+
 	slot2 = slot0.commanderVO.getTalents(slot1)
 
 	slot0.uilist:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			slot0:updateTalentCard(slot2, slot1[slot1 + 1])
+			slot0:updateTalentCard(slot2, slot1[slot1 + 1], slot2)
 		end
 	end)
 	slot0.uilist:align(CommanderConst.MAX_TELENT_COUNT)
 end
 
-slot0.updateTalentCard = function (slot0, slot1, slot2)
-	slot3 = slot1:Find("unlock")
-	slot4 = slot1:Find("lock")
+slot0.updateTalentCard = function (slot0, slot1, slot2, slot3)
+	slot4 = slot1:Find("unlock")
+	slot5 = slot1:Find("lock")
+	slot0.scrollTxts[slot3] = {}
 
 	if slot2 then
-		GetImageSpriteFromAtlasAsync("CommanderTalentIcon/" .. slot2:getConfig("icon"), "", slot3:Find("icon"))
+		GetImageSpriteFromAtlasAsync("CommanderTalentIcon/" .. slot2:getConfig("icon"), "", slot4:Find("icon"))
 
-		if slot3:Find("tree_btn") then
-			onButton(slot0, slot3:Find("tree_btn"), function ()
+		if slot4:Find("tree_btn") then
+			onButton(slot0, slot4:Find("tree_btn"), function ()
 				slot0.parent:openTreePanel(slot0.parent)
 			end, SFX_PANEL)
 		end
 
-		setText(slot3:Find("name_bg/Text"), slot2:getConfig("name"))
-		setText(slot3:Find("desc"), slot2:getConfig("desc"))
+		setText(slot4:Find("name_bg/Text"), slot2:getConfig("name"))
+
+		slot6 = ScrollTxt.New(slot4:Find("desc"), slot4:Find("desc/Text"))
+
+		slot6:setText(slot2:getConfig("desc"))
+		table.insert(slot0.scrollTxts[slot3], slot6)
 	end
 
-	setActive(slot3, slot2)
+	setActive(slot4, slot2)
 
-	if slot4 then
-		setActive(slot4, not slot2)
+	if slot5 then
+		setActive(slot5, not slot2)
 	end
 end
 
+slot0.clearScrollTxts = function (slot0, slot1)
+	slot2 = ipairs
+	slot3 = slot0.scrollTxts[slot1] or {}
+
+	for slot5, slot6 in slot2(slot3) do
+		slot6:clear()
+	end
+
+	slot0.scrollTxts = {}
+end
+
 slot0.openUseagePanel = function (slot0)
+	slot0:clearScrollTxts(slot0)
 	setActive(slot0.usagePanel, true)
 	slot0.usagePanel:SetAsLastSibling()
 	removeOnButton(slot0.usageConfirmBtn)
@@ -238,14 +262,14 @@ slot0.openUseagePanel = function (slot0)
 					if slot0 and (not slot0 or slot0.id ~= slot1.id) then
 						slot0 = slot1
 
-						slot2:updateTalentCard(slot2.usageTalent, slot2.updateTalentCard)
+						slot2:updateTalentCard(slot2.usageTalent, slot2.updateTalentCard, )
 						slot2(slot2.usageCostIconTF, slot2.updateTalentCard:getConfig("cost") > 0)
 						slot2(slot2.usageCostTxtTF, slot1 > 0)
 
 						slot2.usageCostTxt.text = slot1
 
-						setActive(slot2.usageConfirmUpgrade, slot2.usageCostTxtTF:hasTalent(slot1))
-						setActive(slot2.usageConfirmILearned, not slot2.usageCostTxtTF:hasTalent(slot1))
+						setActive(slot2.usageConfirmUpgrade, slot1 > 0:hasTalent(slot1))
+						setActive(slot2.usageConfirmILearned, not slot1 > 0.hasTalent:hasTalent(slot1))
 					end
 				end, SFX_PANEL)
 				setActive(slot2:Find("up"), slot4)
@@ -272,11 +296,12 @@ slot0.closeUsagePanel = function (slot0)
 end
 
 slot0.openResetPanel = function (slot0)
+	slot0:clearScrollTxts(slot0)
 	setActive(slot0.resetPanel, true)
 	slot0.resetPanel:SetAsLastSibling()
 	slot0.resetList:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			slot0:updateTalentCard(slot2, slot1[slot1 + 1])
+			slot0:updateTalentCard(slot2, slot1[slot1 + 1], slot2)
 		end
 	end)
 	slot0.resetList:align(#slot0.commanderVO.getTalentOrigins(slot1))
@@ -292,6 +317,7 @@ slot0.closeResetPanel = function (slot0)
 end
 
 slot0.openReplacePanel = function (slot0, slot1)
+	slot0:clearScrollTxts(slot0)
 	setActive(slot0.replacePanel, true)
 	slot0.replacePanel:SetAsLastSibling()
 	slot0.replaceList:make(function (slot0, slot1, slot2)
@@ -336,6 +362,10 @@ end
 
 slot0.exit = function (slot0)
 	slot0:removeTimer()
+	slot0:clearScrollTxts(slot0)
+	slot0:clearScrollTxts(slot0.clearScrollTxts)
+	slot0:clearScrollTxts(slot0)
+	slot0:clearScrollTxts(slot0)
 end
 
 return slot0

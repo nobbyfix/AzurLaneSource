@@ -1,9 +1,7 @@
-slot0 = class("ChallengeMainMediator", import("..base.ContextMediator"))
+slot0 = class("ChallengePassedMediator", import("..base.ContextMediator"))
 
 slot0.register = function (slot0)
-	slot0:bind(ChallengeConst.OPEN_CHALLENGE_MAIN_SCENE, function (slot0)
-		slot0:sendNotification(GAME.GO_SCENE, SCENE.CHALLENGE_MAIN_SCENE)
-	end)
+	return
 end
 
 slot0.listNotificationInterests = function (slot0)

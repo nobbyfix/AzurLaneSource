@@ -92,7 +92,6 @@ slot0.initUI = function (slot0)
 	slot0.militaryExerciseBtn = slot0:findTF("btn_pvp", slot0.eventContainer)
 	slot0.shamBtn = slot0:findTF("sham_button", slot0.eventContainer)
 	slot0.mirrorBtn = slot0:findTF("btn_mirror", slot0.eventContainer)
-	slot0.escortBtn = slot0:findTF("btn_escort", slot0.eventContainer)
 	slot0.activityBtn = slot0:findTF("event_btns/activity_btn", slot0.rightChapter)
 	slot0.ptTotal = slot0:findTF("event_btns/pt_text", slot0.rightChapter)
 	slot0.ticketTxt = slot0:findTF("event_btns/tickets/Text", slot0.rightChapter)
@@ -382,29 +381,6 @@ slot0.didEnter = function (slot0)
 		getProxy(ChapterProxy):setRemasterTip(false)
 		SetActive(slot0.remasterTipTF, false)
 	end, SFX_PANEL)
-	onButton(slot0, slot0.escortBtn, function ()
-		if slot0:isfrozen() then
-			return
-		end
-
-		slot0, slot1 = pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0.player.level, "Escort")
-
-		if not slot0 then
-			pg.TipsMgr:GetInstance():ShowTips(slot1)
-
-			return
-		end
-
-		if not slot0.contextData.map:isEscort() then
-			if #getProxy(ChapterProxy).escortMaps == 0 or _.any(slot4, function (slot0)
-				return slot0:shouldFetch()
-			end) then
-				slot0:emit(LevelMediator2.ON_FETCH_ESCORT)
-			else
-				slot0:setMap(slot4[1].id)
-			end
-		end
-	end, SFX_PANEL)
 	onButton(slot0, slot0.signalBtn, function ()
 		if slot0:isfrozen() then
 			return
@@ -418,15 +394,6 @@ slot0.didEnter = function (slot0)
 	setGray(slot0.dailyBtn, not pg.SystemOpenMgr.GetInstance().isOpenSystem(slot0.player.level, "DailyLevelMediator"), true)
 	setActive(slot0:findTF("lock", slot0.militaryExerciseBtn), not pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0.player.level, "MilitaryExerciseMediator"))
 	setGray(slot0.militaryExerciseBtn, not pg.SystemOpenMgr.GetInstance().isOpenSystem(slot0.player.level, "MilitaryExerciseMediator"), true)
-
-	if OPEN_ESCORT then
-		setActive(slot0:findTF("lock", slot0.escortBtn), not pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0.player.level, "Escort"))
-		setGray(slot0.escortBtn, not pg.SystemOpenMgr.GetInstance().isOpenSystem(slot0.player.level, "Escort"), true)
-		setActive(slot0.escortBtn, true)
-	else
-		setActive(slot0.escortBtn, false)
-	end
-
 	setActive(slot0.shamBtn, not ChapterConst.ActivateMirror and getProxy(ChapterProxy).getShamChapter(slot6):isOpen())
 
 	if slot8 then
@@ -3089,11 +3056,51 @@ slot0.updateMap = function (slot0)
 			if not IsNil(slot0.map) and slot1 == slot0.contextData.map then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 13-30, warpins: 1 ---
+				--- BLOCK #0 13-24, warpins: 1 ---
 				setImageSprite(slot0.map, slot0, true)
 
-				slot0.float.sizeDelta = slot0.map.sizeDelta
-				slot0.float.localPosition = slot0.map.localPosition
+				if not setImageSprite:isEscort() then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 25-50, warpins: 1 ---
+					slot0.map.pivot = Vector2(0, 0)
+					slot0.float.sizeDelta = Vector2(GetComponent(slot0.map, "Image").preferredWidth, GetComponent(slot0.map, "Image").preferredHeight)
+					slot0.float.localPosition = slot0.map.localPosition
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 51-78, warpins: 1 ---
+					slot0.map.pivot = Vector2(0.5, 0.5)
+					slot3 = 1
+
+					if slot0.map.rect.width / slot0.map.rect.height < slot0._tf.rect.width / slot0._tf.rect.height then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 79-92, warpins: 1 ---
+						slot0.escortChapters.localScale = Vector3(slot0._tf.rect.width / 1280, , 1)
+						--- END OF BLOCK #0 ---
+
+
+
+					else
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 93-105, warpins: 1 ---
+						slot0.escortChapters.localScale = Vector3(slot0._tf.rect.height / 720, , 1)
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+
+
+				end
 				--- END OF BLOCK #0 ---
 
 
@@ -3107,7 +3114,7 @@ slot0.updateMap = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 31-31, warpins: 3 ---
+			--- BLOCK #1 106-106, warpins: 5 ---
 			return
 			--- END OF BLOCK #1 ---
 
@@ -3196,8 +3203,8 @@ slot0.updateMap = function (slot0)
 	if slot1:isEscort() then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 110-114, warpins: 1 ---
-		clearImageSprite(slot0.chapterNoTitle, nil)
+		--- BLOCK #0 110-118, warpins: 1 ---
+		setImageSprite(slot0.chapterNoTitle, GetSpriteFromAtlas("chapterno", "chapterex"), true)
 		--- END OF BLOCK #0 ---
 
 
@@ -3205,7 +3212,7 @@ slot0.updateMap = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 115-127, warpins: 1 ---
+		--- BLOCK #0 119-131, warpins: 1 ---
 		setImageSprite(slot0.chapterNoTitle, GetSpriteFromAtlas("chapterno", "chapter" .. slot1:getMapTitleNumber()), true)
 		--- END OF BLOCK #0 ---
 
@@ -3220,7 +3227,7 @@ slot0.updateMap = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 128-155, warpins: 2 ---
+	--- BLOCK #4 132-159, warpins: 2 ---
 	setActive(slot0.topChapter:Find("type_chapter"), not slot1:isEscort())
 	setActive(slot0.topChapter:Find("type_escort"), slot1:isEscort())
 	slot0:updateEscortInfo()
@@ -3228,7 +3235,7 @@ slot0.updateMap = function (slot0)
 	if not slot0.contextData.chapterVO or not slot7.active then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 159-170, warpins: 2 ---
+		--- BLOCK #0 163-174, warpins: 2 ---
 		slot0:updateMapItems()
 		slot0:switchDifficulty()
 		slot0:updateActivityBtns()
@@ -3246,22 +3253,22 @@ slot0.updateMap = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 171-174, warpins: 2 ---
+	--- BLOCK #5 175-178, warpins: 2 ---
 	if slot0.contextData.openChapterId then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 175-180, warpins: 1 ---
+		--- BLOCK #0 179-184, warpins: 1 ---
 		if slot0.chapterTFsById[slot0.contextData.openChapterId] then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 181-194, warpins: 1 ---
+			--- BLOCK #0 185-198, warpins: 1 ---
 			slot10 = slot8:Find("sub")
 			slot11 = triggerButton
 
 			if not isActive(slot8:Find("main")) or not slot9 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 197-197, warpins: 2 ---
+				--- BLOCK #0 201-201, warpins: 2 ---
 				slot12 = slot10
 				--- END OF BLOCK #0 ---
 
@@ -3276,7 +3283,7 @@ slot0.updateMap = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 198-198, warpins: 2 ---
+			--- BLOCK #1 202-202, warpins: 2 ---
 			slot11(slot12)
 			--- END OF BLOCK #1 ---
 
@@ -3291,7 +3298,7 @@ slot0.updateMap = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 199-201, warpins: 2 ---
+		--- BLOCK #1 203-205, warpins: 2 ---
 		slot0.contextData.openChapterId = nil
 		--- END OF BLOCK #1 ---
 
@@ -3306,7 +3313,7 @@ slot0.updateMap = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 202-203, warpins: 2 ---
+	--- BLOCK #6 206-207, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -3652,20 +3659,20 @@ end
 slot0.updateEscortItem = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-36, warpins: 1 ---
+	--- BLOCK #0 1-38, warpins: 1 ---
 	slot1.name = "chapter_" .. slot3.id
-	slot1.anchoredPosition = Vector2(slot0.escortChapters.rect.width * tonumber(pg.escort_template[slot2].pos_x), slot0.escortChapters.rect.height * tonumber(pg.escort_template[slot2].pos_y))
-	slot7 = slot1:Find("fighting")
+	slot1.anchoredPosition = Vector2(GetComponent(slot0.map, "Image").preferredWidth * (tonumber(pg.escort_template[slot2].pos_x) - 0.5), GetComponent(slot0.map, "Image").preferredHeight * (tonumber(pg.escort_template[slot2].pos_y) - 0.5))
+	slot8 = slot1:Find("fighting")
 
 	if getProxy(ChapterProxy).getActiveChapter(slot5) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 37-40, warpins: 1 ---
+		--- BLOCK #0 39-42, warpins: 1 ---
 		if slot6.id ~= slot3.id then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 41-42, warpins: 1 ---
-			slot8 = false
+			--- BLOCK #0 43-44, warpins: 1 ---
+			slot9 = false
 			--- END OF BLOCK #0 ---
 
 
@@ -3673,8 +3680,8 @@ slot0.updateEscortItem = function (slot0, slot1, slot2, slot3)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 43-43, warpins: 1 ---
-			slot8 = true
+			--- BLOCK #0 45-45, warpins: 1 ---
+			slot9 = true
 			--- END OF BLOCK #0 ---
 
 
@@ -3693,16 +3700,16 @@ slot0.updateEscortItem = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 44-55, warpins: 3 ---
-	setActive(slot7, slot8)
+	--- BLOCK #1 46-57, warpins: 3 ---
+	setActive(slot8, slot9)
 	slot0:DeleteTween("fighting" .. slot3.id)
 
-	if slot8 then
+	if slot9 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 56-80, warpins: 1 ---
-		setImageAlpha(slot7, 1)
-		slot0:RecordTween("fighting" .. slot3.id, LeanTween.alpha(slot7, 0, 0.5):setEase(LeanTweenType.easeInOutSine):setLoopPingPong().uniqueId)
+		--- BLOCK #0 58-82, warpins: 1 ---
+		setImageAlpha(slot8, 1)
+		slot0:RecordTween("fighting" .. slot3.id, LeanTween.alpha(slot8, 0, 0.5):setEase(LeanTweenType.easeInOutSine):setLoopPingPong().uniqueId)
 		--- END OF BLOCK #0 ---
 
 
@@ -3716,11 +3723,11 @@ slot0.updateEscortItem = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 81-113, warpins: 2 ---
+	--- BLOCK #2 83-115, warpins: 2 ---
 	GetImageSpriteFromAtlasAsync("levelmap/mapquad/" .. slot4.pic, "", slot1, true)
 
-	slot9 = slot1:Find("anim")
-	slot11 = {
+	slot10 = slot1:Find("anim")
+	slot12 = {
 		Color.green,
 		Color.yellow,
 		Color.red
@@ -3729,8 +3736,8 @@ slot0.updateEscortItem = function (slot0, slot1, slot2, slot3)
 	if not table.indexof(pg.gameset.gardroad_count.description[1], slot2) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 114-114, warpins: 1 ---
-		slot12 = 1
+		--- BLOCK #0 116-116, warpins: 1 ---
+		slot13 = 1
 		--- END OF BLOCK #0 ---
 
 
@@ -3744,8 +3751,8 @@ slot0.updateEscortItem = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 115-126, warpins: 2 ---
-	slot12 = slot11[slot12]
+	--- BLOCK #3 117-128, warpins: 2 ---
+	slot13 = slot12[slot13]
 
 	--- END OF BLOCK #3 ---
 
@@ -3754,12 +3761,12 @@ slot0.updateEscortItem = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 127-129, warpins: 0 ---
-	for slot17 = 0, slot9:GetComponentsInChildren(typeof(Image)).Length - 1, 1 do
+	--- BLOCK #4 129-131, warpins: 0 ---
+	for slot18 = 0, slot10:GetComponentsInChildren(typeof(Image)).Length - 1, 1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 127-129, warpins: 2 ---
-		slot13[slot17].color = slot12
+		--- BLOCK #0 129-131, warpins: 2 ---
+		slot14[slot18].color = slot13
 		--- END OF BLOCK #0 ---
 
 
@@ -3773,8 +3780,8 @@ slot0.updateEscortItem = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 130-141, warpins: 1 ---
-	setImageColor(slot1, slot12)
+	--- BLOCK #5 132-143, warpins: 1 ---
+	setImageColor(slot1, slot13)
 	onButton(slot0, slot1, function ()
 
 		-- Decompilation error in this vicinity:
@@ -4052,34 +4059,28 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 134-220, warpins: 1 ---
+		--- BLOCK #0 134-154, warpins: 1 ---
 		setActive(slot5, true)
 		setActive(slot6, false)
 
-		slot7 = findTF(slot5, "circle/clear_flag")
-		slot9 = GetOrAddComponent(slot8, "CanvasGroup")
+		slot8 = findTF(slot5, "info/bk/fordark")
+		slot9 = setActive
+		slot10 = findTF(slot5, "circle/fordark")
 
-		setText(findTF(slot8, "Text"), i18n("tag_level_fighting"))
-
-		slot11 = GetOrAddComponent(slot10, "CanvasGroup")
-
-		setText(findTF(slot10, "Text"), i18n("tag_level_oni"))
-
-		slot12 = findTF(slot5, "circle/progress")
-		slot13 = findTF(slot5, "circle/progress_text")
-		slot14 = findTF(slot5, "circle/stars")
-
-		setText(findTF(slot5, "info/bk/title_form/title_index"), slot4.chapter_name .. "  ")
-		setText(findTF(slot5, "info/bk/title_form/title"), string.split(slot4.name, "|")[1])
-
-		slot16 = setText
-		slot17 = findTF(slot5, "info/bk/title_form/title_en")
-
-		if not string.split(slot4.name, "|")[2] then
+		if slot4.icon_outline ~= 1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 221-221, warpins: 1 ---
-			slot18 = ""
+			--- BLOCK #0 155-156, warpins: 1 ---
+			slot11 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 157-157, warpins: 1 ---
+			slot11 = true
 			--- END OF BLOCK #0 ---
 
 
@@ -4093,43 +4094,27 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 222-246, warpins: 2 ---
-		slot16(slot17, slot18)
-		setFillAmount(slot12, slot2.progress / 100)
-		setText(slot13, string.format("%d%%", slot2.progress))
-		setActive(slot14, slot2:existAchieve())
+		--- BLOCK #1 158-163, warpins: 2 ---
+		slot9(slot10, slot11)
 
-		if slot2:existAchieve() then
+		slot9 = setActive
+		slot10 = slot8
+
+		if slot4.icon_outline ~= 1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 247-250, warpins: 1 ---
+			--- BLOCK #0 164-165, warpins: 1 ---
+			slot11 = false
 			--- END OF BLOCK #0 ---
 
-			FLOW; TARGET BLOCK #1
 
 
+		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 251-267, warpins: 0 ---
-			for slot19, slot20 in ipairs(slot2.achieves) do
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 251-265, warpins: 1 ---
-				setActive(slot14:Find("star" .. slot19 .. "/light"), ChapterConst.IsAchieved(slot20))
-				--- END OF BLOCK #0 ---
-
-				FLOW; TARGET BLOCK #1
-
-
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #1 266-267, warpins: 2 ---
-				--- END OF BLOCK #1 ---
-
-
-
-			end
-			--- END OF BLOCK #1 ---
+			--- BLOCK #0 166-166, warpins: 1 ---
+			slot11 = true
+			--- END OF BLOCK #0 ---
 
 
 
@@ -4142,81 +4127,33 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 268-294, warpins: 2 ---
-		slot0:DeleteTween("fighting" .. slot2.id)
-		setActive(slot8, false)
-		setActive(slot10, false)
-		setActive(slot7, false)
-		setActive(slot13, true)
+		--- BLOCK #2 167-246, warpins: 2 ---
+		slot9(slot10, slot11)
 
-		if not slot2:isUnlock() and not slot2:activeAlways() then
+		slot9 = findTF(slot5, "circle/clear_flag")
+		slot11 = GetOrAddComponent(slot10, "CanvasGroup")
+
+		setText(findTF(slot10, "Text"), i18n("tag_level_fighting"))
+
+		slot13 = GetOrAddComponent(slot12, "CanvasGroup")
+
+		setText(findTF(slot12, "Text"), i18n("tag_level_oni"))
+
+		slot14 = findTF(slot5, "circle/progress")
+		slot15 = findTF(slot5, "circle/progress_text")
+		slot16 = findTF(slot5, "circle/stars")
+
+		setText(findTF(slot5, "info/bk/title_form/title_index"), slot4.chapter_name .. "  ")
+		setText(findTF(slot5, "info/bk/title_form/title"), string.split(slot4.name, "|")[1])
+
+		slot18 = setText
+		slot19 = findTF(slot5, "info/bk/title_form/title_en")
+
+		if not string.split(slot4.name, "|")[2] then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 300-304, warpins: 1 ---
-			setActive(slot5, false)
-			--- END OF BLOCK #0 ---
-
-
-
-		else
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 305-311, warpins: 2 ---
-			setActive(slot5, true)
-
-			if slot2.active then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 312-316, warpins: 1 ---
-				if slot2:existOni() then
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 317-318, warpins: 1 ---
-					slot8 = slot10
-					slot9 = slot11
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-
-				--- END OF BLOCK #0 ---
-
-				FLOW; TARGET BLOCK #1
-
-
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #1 319-350, warpins: 2 ---
-				setActive(slot8, true)
-
-				slot9.alpha = 1
-
-				slot0:RecordTween("fighting" .. slot2.id, LeanTween.alphaCanvas(slot9, 0, 0.5):setFrom(1):setEase(LeanTweenType.easeInOutSine):setLoopPingPong().uniqueId)
-				--- END OF BLOCK #1 ---
-
-
-
-			else
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 351-355, warpins: 1 ---
-				if slot2:isClear() then
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 356-363, warpins: 1 ---
-					setActive(slot7, true)
-					setActive(slot13, false)
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-				--- END OF BLOCK #0 ---
-
-
-
-			end
+			--- BLOCK #0 247-247, warpins: 1 ---
+			slot20 = ""
 			--- END OF BLOCK #0 ---
 
 
@@ -4230,17 +4167,154 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 364-430, warpins: 4 ---
-		setActive(slot16, false)
+		--- BLOCK #3 248-272, warpins: 2 ---
+		slot18(slot19, slot20)
+		setFillAmount(slot14, slot2.progress / 100)
+		setText(slot15, string.format("%d%%", slot2.progress))
+		setActive(slot16, slot2:existAchieve())
 
-		slot19 = findTF(slot5, "circle")
+		if slot2:existAchieve() then
 
-		LeanTween.cancel(go(slot19))
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 273-276, warpins: 1 ---
+			--- END OF BLOCK #0 ---
 
-		slot19.localScale = Vector3.zero
+			FLOW; TARGET BLOCK #1
 
-		LeanTween.scale(slot19, Vector3(1, 1, 1), 0.2):setDelay(0.3)
-		setAnchoredPosition(slot20, {
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 277-293, warpins: 0 ---
+			for slot21, slot22 in ipairs(slot2.achieves) do
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 277-291, warpins: 1 ---
+				setActive(slot16:Find("star" .. slot21 .. "/light"), ChapterConst.IsAchieved(slot22))
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 292-293, warpins: 2 ---
+				--- END OF BLOCK #1 ---
+
+
+
+			end
+			--- END OF BLOCK #1 ---
+
+
+
+		end
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 294-320, warpins: 2 ---
+		slot0:DeleteTween("fighting" .. slot2.id)
+		setActive(slot10, false)
+		setActive(slot12, false)
+		setActive(slot9, false)
+		setActive(slot15, true)
+
+		if not slot2:isUnlock() and not slot2:activeAlways() then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 326-330, warpins: 1 ---
+			setActive(slot5, false)
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 331-337, warpins: 2 ---
+			setActive(slot5, true)
+
+			if slot2.active then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 338-342, warpins: 1 ---
+				if slot2:existOni() then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 343-344, warpins: 1 ---
+					slot10 = slot12
+					slot11 = slot13
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 345-376, warpins: 2 ---
+				setActive(slot10, true)
+
+				slot11.alpha = 1
+
+				slot0:RecordTween("fighting" .. slot2.id, LeanTween.alphaCanvas(slot11, 0, 0.5):setFrom(1):setEase(LeanTweenType.easeInOutSine):setLoopPingPong().uniqueId)
+				--- END OF BLOCK #1 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 377-381, warpins: 1 ---
+				if slot2:isClear() then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 382-389, warpins: 1 ---
+					setActive(slot9, true)
+					setActive(slot15, false)
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #5 390-456, warpins: 4 ---
+		setActive(slot18, false)
+
+		slot21 = findTF(slot5, "circle")
+
+		LeanTween.cancel(go(slot21))
+
+		slot21.localScale = Vector3.zero
+
+		LeanTween.scale(slot21, Vector3(1, 1, 1), 0.2):setDelay(0.3)
+		setAnchoredPosition(slot22, {
 			x = -1 * slot5:Find("info").rect.width
 		})
 		shiftPanel(findTF(slot5, "info/bk"), 0, nil, 0.4, 0.4, true, true, nil, function ()
@@ -4295,21 +4369,21 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 		if slot2:isTriesLimit() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 431-462, warpins: 1 ---
-			slot21 = slot2:getConfig("count")
+			--- BLOCK #0 457-488, warpins: 1 ---
+			slot23 = slot2:getConfig("count")
 
-			setText(slot16:Find("label"), i18n("levelScene_chapter_count_tip"))
+			setText(slot18:Find("label"), i18n("levelScene_chapter_count_tip"))
 
-			slot23 = setText
-			slot24 = slot16:Find("Text")
-			slot25 = setColorStr
-			slot26 = slot21 - slot2:getTodayDefeatCount() .. "/" .. slot21
+			slot25 = setText
+			slot26 = slot18:Find("Text")
+			slot27 = setColorStr
+			slot28 = slot23 - slot2:getTodayDefeatCount() .. "/" .. slot23
 
-			if slot21 > slot2:getTodayDefeatCount() or not COLOR_RED then
+			if slot23 > slot2:getTodayDefeatCount() or not COLOR_RED then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 466-466, warpins: 2 ---
-				slot27 = COLOR_GREEN
+				--- BLOCK #0 492-492, warpins: 2 ---
+				slot29 = COLOR_GREEN
 				--- END OF BLOCK #0 ---
 
 
@@ -4323,45 +4397,8 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 467-468, warpins: 2 ---
-			slot23(slot24, slot25(slot26, slot27))
-			--- END OF BLOCK #1 ---
-
-
-
-		end
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #4 469-477, warpins: 2 ---
-		slot22 = 0
-
-		--- END OF BLOCK #4 ---
-
-		FLOW; TARGET BLOCK #5
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #5 478-484, warpins: 0 ---
-		for slot26, slot27 in ipairs(slot21) do
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 478-482, warpins: 1 ---
-			slot22 = slot22 + pg.expedition_data_template[slot27].bonus_time
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 483-484, warpins: 2 ---
+			--- BLOCK #1 493-494, warpins: 2 ---
+			slot25(slot26, slot27(slot28, slot29))
 			--- END OF BLOCK #1 ---
 
 
@@ -4375,19 +4412,8 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #6 485-491, warpins: 1 ---
-		slot23 = findTF(slot5, "mark")
-
-		if not slot0.markRawPos then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 492-493, warpins: 1 ---
-			slot0.markRawPos = slot23.anchoredPosition
-			--- END OF BLOCK #0 ---
-
-
-
-		end
+		--- BLOCK #6 495-503, warpins: 2 ---
+		slot24 = 0
 
 		--- END OF BLOCK #6 ---
 
@@ -4396,25 +4422,21 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #7 494-508, warpins: 2 ---
-		slot23.anchoredPosition = slot0.markRawPos
-		slot24 = math.max(slot22 - slot2.todayDefeatCount, 0)
-
-		if slot0.contextData.map:isRemaster() or slot22 <= 0 or slot24 <= 0 then
+		--- BLOCK #7 504-510, warpins: 0 ---
+		for slot28, slot29 in ipairs(slot23) do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 515-516, warpins: 3 ---
-			slot25 = false
+			--- BLOCK #0 504-508, warpins: 1 ---
+			slot24 = slot24 + pg.expedition_data_template[slot29].bonus_time
 			--- END OF BLOCK #0 ---
 
+			FLOW; TARGET BLOCK #1
 
 
-		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 517-517, warpins: 1 ---
-			slot25 = true
-			--- END OF BLOCK #0 ---
+			--- BLOCK #1 509-510, warpins: 2 ---
+			--- END OF BLOCK #1 ---
 
 
 
@@ -4427,21 +4449,73 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #8 518-533, warpins: 2 ---
-		slot26 = slot2:getOniChapterInfo()
+		--- BLOCK #8 511-517, warpins: 1 ---
+		slot25 = findTF(slot5, "mark")
 
-		setActive(slot23:Find("bonus"), slot25)
-		setActive(slot23, slot25)
-
-		if slot25 then
+		if not slot0.markRawPos then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 534-575, warpins: 1 ---
-			slot28 = slot23.anchoredPosition.y
-			slot23:GetComponent(typeof(CanvasGroup)).alpha = 0
+			--- BLOCK #0 518-519, warpins: 1 ---
+			slot0.markRawPos = slot25.anchoredPosition
+			--- END OF BLOCK #0 ---
 
-			LeanTween.cancel(go(slot23))
-			LeanTween.value(go(slot23), 0, 1, 0.2):setOnUpdate(System.Action_float(function (slot0)
+
+
+		end
+
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #9 520-534, warpins: 2 ---
+		slot25.anchoredPosition = slot0.markRawPos
+		slot26 = math.max(slot24 - slot2.todayDefeatCount, 0)
+
+		if slot0.contextData.map:isRemaster() or slot24 <= 0 or slot26 <= 0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 541-542, warpins: 3 ---
+			slot27 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 543-543, warpins: 1 ---
+			slot27 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #10 544-559, warpins: 2 ---
+		slot28 = slot2:getOniChapterInfo()
+
+		setActive(slot25:Find("bonus"), slot27)
+		setActive(slot25, slot27)
+
+		if slot27 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 560-601, warpins: 1 ---
+			slot30 = slot25.anchoredPosition.y
+			slot25:GetComponent(typeof(CanvasGroup)).alpha = 0
+
+			LeanTween.cancel(go(slot25))
+			LeanTween.value(go(slot25), 0, 1, 0.2):setOnUpdate(System.Action_float(function (slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-10, warpins: 1 ---
@@ -4460,15 +4534,15 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		end
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #10 ---
 
-		FLOW; TARGET BLOCK #9
+		FLOW; TARGET BLOCK #11
 
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #9 576-576, warpins: 2 ---
-		--- END OF BLOCK #9 ---
+		--- BLOCK #11 602-602, warpins: 2 ---
+		--- END OF BLOCK #11 ---
 
 
 
@@ -4481,14 +4555,14 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 577-583, warpins: 2 ---
+	--- BLOCK #2 603-609, warpins: 2 ---
 	slot7 = onButton
 	slot8 = slot0
 
 	if not isActive(slot5) or not slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 586-586, warpins: 2 ---
+		--- BLOCK #0 612-612, warpins: 2 ---
 		slot9 = slot6
 		--- END OF BLOCK #0 ---
 
@@ -4503,7 +4577,7 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 587-591, warpins: 2 ---
+	--- BLOCK #3 613-617, warpins: 2 ---
 	slot7(slot8, slot9, function ()
 
 		-- Decompilation error in this vicinity:
@@ -8429,10 +8503,9 @@ slot0.doPlayStrikeAnim = function (slot0, slot1, slot2, slot3)
 	PoolMgr.GetInstance():GetPainting(slot1:getPainting(), true, function (slot0)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = slot0
-
-		slot1()
+		--- BLOCK #0 1-12, warpins: 1 ---
+		Ship.SetExpression(slot0, slot1:getPainting())
+		slot0()
 
 		return
 		--- END OF BLOCK #0 ---

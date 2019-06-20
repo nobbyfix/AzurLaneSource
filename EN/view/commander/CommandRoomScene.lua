@@ -206,12 +206,16 @@ slot0.updateReserveBtn = function (slot0)
 end
 
 slot0.UpdateBoxesBtn = function (slot0)
-	if not IsNil(slot0:findTF("boxes_btn/Text", slot0.boxTF)) then
-		setText(slot1, #_.select(slot0.boxes, function (slot0)
-			return CommanderBox.STATE_WAITING < slot0:getState()
-		end) .. "/" .. #slot0.boxes)
+	if not IsNil(slot0:findTF("boxes_btn/tip/Text", slot0.boxTF)) then
+		slot2 = 0
+
+		for slot7, slot8 in ipairs(slot3) do
+			print("v:" .. slot8:getState())
+		end
+
+		setText(slot1, #slot3)
 		setActive(slot0:findTF("boxes_btn/tip", slot0.boxTF), _.any(slot0.boxes, function (slot0)
-			return slot0:getState() == CommanderBox.STATE_FINISHED
+			return slot0:getState() == CommanderBox.STATE_FINISHED or slot0:getState() == CommanderBox.STATE_EMPTY
 		end))
 	end
 end
@@ -616,8 +620,9 @@ slot0.paintingView = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 8-57, warpins: 1 ---
+	--- BLOCK #1 8-61, warpins: 1 ---
 	slot0.detailPage:tweenHide(slot1)
+	slot0.detailPage:onPaintingView()
 	LeanTween.moveY(rtf(slot0.topPanel), slot0.topPanel.localPosition.y - 300, slot1)
 	LeanTween.moveX(rtf(slot0.leftPanel), -300, slot1)
 	LeanTween.moveX(rtf(slot0.rightPanel), 1000, slot1)
@@ -795,7 +800,7 @@ slot0.paintingView = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 58-58, warpins: 2 ---
+	--- BLOCK #2 62-62, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 
@@ -824,7 +829,8 @@ slot0.MainView = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 8-55, warpins: 2 ---
+	--- BLOCK #1 8-59, warpins: 2 ---
+	slot0.detailPage:onExitPaintingView()
 	LeanTween.moveY(rtf(slot0.topPanel), 0, slot1)
 	LeanTween.moveX(rtf(slot0.leftPanel), 0, slot1)
 	LeanTween.moveX(rtf(slot0.rightPanel), 0, slot1)
@@ -844,11 +850,32 @@ end
 slot0.SwitchPage = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot0:emit(CommandRoomMediator.ON_DETAIL, slot0.conmmanderId, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	if slot0.commanderVOs[slot0.conmmanderId].inBattle and slot1 == CommanderInfoScene.PAGE_PLAY then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 11-22, warpins: 1 ---
+		pg.TipsMgr:GetInstance():ShowTips(i18n("commander_is_in_battle"))
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 23-30, warpins: 3 ---
+	slot0:emit(CommandRoomMediator.ON_DETAIL, slot2, slot1)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
 
 
@@ -1223,11 +1250,38 @@ slot0.initCommandersPanel = function (slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 78-83, warpins: 3 ---
-				if slot0.mode == slot1.MODE_SELECT and slot0.conmmanderId and slot0.contextData.maxCount == 1 and slot2.commanderVO and slot2.commanderVO.id == slot0.conmmanderId then
+				if slot0.mode == slot1.MODE_SELECT and slot0.conmmanderId and slot0.contextData.maxCount == 1 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 102-106, warpins: 1 ---
-					slot0:checkCommander(slot2.commanderVO)
+					--- BLOCK #0 93-95, warpins: 1 ---
+					if slot2.commanderVO and slot2.commanderVO.id == slot0.conmmanderId then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 102-107, warpins: 1 ---
+						slot0:checkCommander(slot2.commanderVO)
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 108-113, warpins: 3 ---
+					if slot0.mode == slot1.MODE_SELECT and not slot0.activeCommanderId and slot0.contextData.maxCount == 1 and slot0 == 0 and slot2.commanderVO ~= nil then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 128-130, warpins: 1 ---
+						triggerButton(slot2.infoTF)
+						--- END OF BLOCK #0 ---
+
+
+
+					end
 					--- END OF BLOCK #0 ---
 
 
@@ -1251,11 +1305,11 @@ slot0.initCommandersPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 107-112, warpins: 10 ---
+		--- BLOCK #2 131-136, warpins: 13 ---
 		if slot0.mode == slot1.MODE_SELECT and slot0.contextData.activeGroupId then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 118-128, warpins: 1 ---
+			--- BLOCK #0 142-152, warpins: 1 ---
 			setActive(slot2.expUp, slot2.commanderVO:isSameGroup(slot0.contextData.activeGroupId))
 			--- END OF BLOCK #0 ---
 
@@ -1270,7 +1324,7 @@ slot0.initCommandersPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 129-132, warpins: 3 ---
+		--- BLOCK #3 153-156, warpins: 3 ---
 		setActive(slot2.formationTF, slot3 and slot3.inFleet and not slot3.inBattle)
 		setActive(slot2.inbattleTF, slot3 and slot3.inBattle)
 		setActive(slot2.mark2, slot2.commanderVO and slot0.conmmanderId == slot2.commanderVO.id)
@@ -1284,7 +1338,7 @@ slot0.initCommandersPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 138-142, warpins: 3 ---
+		--- BLOCK #4 162-166, warpins: 3 ---
 		--- END OF BLOCK #4 ---
 
 		FLOW; TARGET BLOCK #5
@@ -1292,7 +1346,7 @@ slot0.initCommandersPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #5 144-149, warpins: 2 ---
+		--- BLOCK #5 168-173, warpins: 2 ---
 		--- END OF BLOCK #5 ---
 
 		FLOW; TARGET BLOCK #6
@@ -1300,7 +1354,7 @@ slot0.initCommandersPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #6 159-164, warpins: 3 ---
+		--- BLOCK #6 183-188, warpins: 3 ---
 		--- END OF BLOCK #6 ---
 
 		FLOW; TARGET BLOCK #7
@@ -1308,7 +1362,7 @@ slot0.initCommandersPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #7 199-200, warpins: 5 ---
+		--- BLOCK #7 223-224, warpins: 5 ---
 		--- END OF BLOCK #7 ---
 
 
@@ -1707,12 +1761,32 @@ slot0.updateSelecteds = function (slot0)
 	if slot0.contextData.activeCommander then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 41-59, warpins: 1 ---
+		--- BLOCK #0 41-50, warpins: 1 ---
 		slot2 = Clone(slot0.contextData.activeCommander)
+		slot3 = 0
 
+		if slot0.contextData.maxCount > 1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 51-56, warpins: 1 ---
+			slot3 = CommanderPlayPanel.getSkillExpAndCommanderExp(slot2, slot0.selecteds)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 57-66, warpins: 2 ---
 		slot2:addExp(slot3)
 		slot0.detailPage:ActionInvoke("updatePreView", slot2)
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
 
 
@@ -1725,7 +1799,7 @@ slot0.updateSelecteds = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 60-60, warpins: 2 ---
+	--- BLOCK #4 67-67, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 

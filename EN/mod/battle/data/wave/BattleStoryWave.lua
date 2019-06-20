@@ -2,25 +2,25 @@ ys = ys or {}
 ys.Battle.BattleStoryWave = class("BattleStoryWave", ys.Battle.BattleWaveInfo)
 ys.Battle.BattleStoryWave.__name = "BattleStoryWave"
 
-function ys.Battle.BattleStoryWave.Ctor(slot0)
-	uv0.super.Ctor(slot0)
+ys.Battle.BattleStoryWave.Ctor = function (slot0)
+	slot0.super.Ctor(slot0)
 end
 
-function ys.Battle.BattleStoryWave.SetWaveData(slot0, slot1)
-	uv0.super.SetWaveData(slot0, slot1)
+ys.Battle.BattleStoryWave.SetWaveData = function (slot0, slot1)
+	slot0.super.SetWaveData(slot0, slot1)
 
 	slot0._storyID = slot0._param.id
 end
 
-function ys.Battle.BattleStoryWave.DoWave(slot0)
-	uv0.super.DoWave(slot0)
+ys.Battle.BattleStoryWave.DoWave = function (slot0)
+	slot0.super.DoWave(slot0)
 
 	slot1 = true
 
 	if slot0._param.progress then
-		slot2 = getProxy(ChapterProxy):getActiveChapter()
-
-		if math.min(slot2.progress + slot2:getConfig("progress_boss"), 100) < slot0._param.progress then
+		if not getProxy(ChapterProxy):getActiveChapter() then
+			slot1 = false
+		elseif math.min(slot2.progress + slot2:getConfig("progress_boss"), 100) < slot0._param.progress then
 			slot1 = false
 		end
 	end
@@ -28,9 +28,9 @@ function ys.Battle.BattleStoryWave.DoWave(slot0)
 	if slot1 then
 		if pg.StoryMgr.GetInstance():Play(slot0._storyID, function (slot0)
 			if slot0 then
-				uv0:doFail()
+				slot0:doFail()
 			else
-				uv0:doPass()
+				slot0:doPass()
 			end
 		end) then
 			gcAll()
@@ -39,3 +39,5 @@ function ys.Battle.BattleStoryWave.DoWave(slot0)
 		slot0:doPass()
 	end
 end
+
+return

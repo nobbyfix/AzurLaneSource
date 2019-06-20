@@ -79,15 +79,19 @@ slot0.init = function (slot0)
 	slot0.detailPage:AddLoadedCallback(function ()
 		slot0.detailPage:ActionInvoke("HideExp")
 	end)
+
+	slot0.titleTF = slot0:findTF("blur_panel/top/title/Text")
+	slot0.titlePlayTF = slot0:findTF("blur_panel/top/title/Text_Play")
+
 	slot0:enterAnim()
 end
 
 slot0.opeRenamePanel = function (slot0, slot1)
-	function slot2()
+	function slot2(slot0)
 		slot0:openMsgBox({
-			content = i18n("commander_rename_warning", name),
+			content = i18n("commander_rename_warning", slot0),
 			onYes = function ()
-				slot0:emit(CommanderInfoMediator.ON_RENAME, commander.id, name)
+				slot0:emit(CommanderInfoMediator.ON_RENAME, slot1.id, )
 			end
 		})
 	end
@@ -136,18 +140,16 @@ slot0.updateBg = function (slot0, slot1)
 	end
 end
 
-slot1 = 0.3
+slot1 = 0.2
 
 slot0.enterAnim = function (slot0)
-	LeanTween.moveLocalX(go(slot0.pagesTF), 0, slot0):setFrom(876):setOnComplete(System.Action(function ()
-		return
-	end))
+	LeanTween.alphaCanvas(slot1, 1, slot0):setFrom(0)
 end
 
 slot0.exitAnim = function (slot0, slot1)
-	LeanTween.moveLocalX(go(slot0.pagesTF), 876, slot0):setFrom(0):setOnComplete(System.Action(function ()
-		slot0()
-	end))
+	if slot1 then
+		slot1()
+	end
 end
 
 slot0.didEnter = function (slot0)
@@ -182,6 +184,11 @@ slot0.didEnter = function (slot0)
 	slot0:updateBg(slot0.commanderVO)
 	slot0:updateRes()
 	slot0:updateGold()
+	addSlip(SLIP_TYPE_HRZ, slot0.paintTF, function ()
+		slot0:emit(CommanderInfoMediator.ON_PREV)
+	end, function ()
+		slot0:emit(CommanderInfoMediator.ON_NEXT)
+	end)
 end
 
 slot0.checkFirstHelp = function (slot0)
@@ -189,9 +196,7 @@ slot0.checkFirstHelp = function (slot0)
 		return
 	end
 
-	if slot0.page == slot0.PAGE_DETAIL then
-		checkFirstHelpShow("help_commander_info")
-	elseif slot0.page == slot0.PAGE_PLAY then
+	if slot0.page == slot0.PAGE_PLAY then
 		checkFirstHelpShow("help_commander_play")
 	elseif slot0.page == slot0.PAGE_TALENT then
 		checkFirstHelpShow("help_commander_ability")
@@ -213,12 +218,15 @@ slot0.initToggles = function (slot0)
 end
 
 slot0.switchPage = function (slot0, slot1)
+	setActive(slot0.titleTF, slot1 ~= slot0.PAGE_PLAY)
+	setActive(slot0.titlePlayTF, slot1 == slot0.PAGE_PLAY)
+
 	if slot0.page == slot1 then
 		return
 	end
 
 	if slot1 == slot0.PAGE_PLAY and slot0.commanderVO.inBattle then
-		slot0.toggleTFs[slot0.page]:GetComponent("Toggle").isOn = true
+		slot0.toggleTFs[slot0.PAGE_TALENT]:GetComponent("Toggle").isOn = true
 
 		pg.TipsMgr:GetInstance():ShowTips(i18n("commander_is_in_battle"))
 

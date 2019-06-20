@@ -549,7 +549,7 @@ slot0.updateCommanderTF = function (slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 55-55, warpins: 2 ---
-			slot4 = "0"
+			slot4 = slot2.exp
 			--- END OF BLOCK #0 ---
 
 

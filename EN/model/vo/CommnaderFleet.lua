@@ -7,7 +7,7 @@ end
 
 slot0.Update = function (slot0, slot1)
 	slot0.id = slot1.id
-	slot0.name = slot1.name or i18n1("预设编队" .. slot0.id)
+	slot0.name = slot1.name or i18n("commander_prefab_name", slot0.id)
 	slot0.commanders = slot1.commanders or {}
 	slot0.renameTime = 0
 end
@@ -17,7 +17,7 @@ slot0.canRename = function (slot0)
 		return true
 	end
 
-	return false, i18n1(string.format("%d秒后可以继续改名", slot2))
+	return false, i18n("commander_prefab_rename_time", slot2)
 end
 
 slot0.updateCommander = function (slot0, slot1, slot2)

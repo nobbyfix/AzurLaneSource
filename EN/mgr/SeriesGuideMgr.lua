@@ -291,7 +291,7 @@ pg.SeriesGuideMgr.compatibleOldPlayer = function (slot0)
 		pg.StoryMgr:GetInstance():PlayGuide("FixGuide")
 
 		if slot0.player.guideIndex > 1 and slot0.player.guideIndex < 101 then
-			slot0:finish()
+			slot1()
 		end
 	end
 end

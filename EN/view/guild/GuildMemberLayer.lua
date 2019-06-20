@@ -345,7 +345,7 @@ slot0.showAppointPanel = function (slot0, slot1)
 	setActive(slot0.appiontPanel, true)
 
 	if slot0.selectedToggle then
-		setActive(slot0.selectedToggle:Find("Image"), false)
+		setActive(slot0.selectedToggle:Find("Image3"), false)
 	end
 
 	slot3 = slot0.guildVO:getEnableDuty(slot2, slot1.duty)

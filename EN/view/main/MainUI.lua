@@ -59,6 +59,7 @@ slot0.BG_TIMES = {
 }
 slot0.BUFFTEXT_SHOW_TIME = 7
 slot2 = nil
+slot3 = pg.ship_spine_shift
 
 slot0.getUIName = function (slot0)
 	return "MainUI"
@@ -127,6 +128,7 @@ slot0.init = function (slot0)
 	slot0._ActivityBtns = slot0:findTF("linkBtns", slot0._rightPanel)
 	slot0._activitySummaryBtn = slot0:findTF("activityButton", slot0._ActivityBtns)
 	slot0._activityMapBtn = slot0:findTF("activity_map_btn", slot0._ActivityBtns)
+	slot0._acitivtyEscortBtn = slot0:findTF("activity_escort", slot0._ActivityBtns)
 	slot0._bottomPanel = slot0:findTF("toTop/frame/bottomPanel")
 	slot0._dockBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/dockBtn")
 	slot0._equipBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/equipButton")
@@ -631,6 +633,16 @@ slot0.updateActivityMapBtn = function (slot0, slot1)
 	end
 end
 
+slot0.updateActivityEscort = function (slot0)
+	setActive(slot0._acitivtyEscortBtn, OPEN_ESCORT)
+
+	if OPEN_ESCORT then
+		onButton(slot0, slot0._acitivtyEscortBtn, function ()
+			slot0:emit(MainUIMediator.OPEN_ESCORT)
+		end)
+	end
+end
+
 slot0.updateActivityPtBtn = function (slot0, slot1)
 	setActive(slot0._activityPtBtn, slot1 and not slot1:isEnd())
 
@@ -757,7 +769,6 @@ slot0.switchForm = function (slot0, slot1)
 			slot0:ejectGimmick(slot0._commanderPanel, slot0.REVERT_HERIZONTAL_VERTICAL)
 			slot0:ejectGimmick(slot0._commanderPanelbg, slot0.REVERT_HERIZONTAL_VERTICAL)
 			slot0:paintMove(slot0.PAINT_DEFAULT_POS_X, "mainNormal", true, 0)
-			setActive(slot0:findTF("Sea/vert"), true)
 		elseif slot1 == slot0.STATE_ALL_HIDE then
 			slot0:concealGimmick(slot0._bottomPanel, slot0.DIRECTION_DOWN)
 			slot0:concealGimmick(slot0._btmbg, slot0.DIRECTION_DOWN)
@@ -768,7 +779,6 @@ slot0.switchForm = function (slot0, slot1)
 			slot0:concealGimmick(slot0._commanderPanel, slot0.DIRECTION_UP_LEFT)
 			slot0:concealGimmick(slot0._commanderPanelbg, slot0.DIRECTION_UP_LEFT)
 			slot0:paintMove(slot0._paintingOffset, "mainFullScreen", true, 0, 0)
-			setActive(slot0:findTF("Sea/vert"), false)
 		end
 	end
 end
@@ -4767,18 +4777,34 @@ slot0.loadChar = function (slot0, slot1)
 		PoolMgr.GetInstance():GetSpineChar(slot1, true, function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-43, warpins: 1 ---
+			--- BLOCK #0 1-24, warpins: 1 ---
 			pg.UIMgr:GetInstance():LoadingOff()
 
 			slot0.shipModel = slot0
 			tf(slot0).localScale = Vector3(0.75, 0.75, 1)
-			tf(slot0).localPosition = Vector3(0, -130, 0)
+			tf(slot0).localPosition = Vector3((tf(slot0)[Vector3(0.75, 0.75, 1)] and slot1.mainui_shift[1]) or 0, (slot1 and slot1.mainui_shift[2]) or 0, 0)
 
 			setParent(slot0, slot0._icon)
 			slot0:GetComponent("SpineAnimUI"):SetAction("normal", 0)
 
 			return
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 30-31, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 37-61, warpins: 2 ---
+			--- END OF BLOCK #2 ---
 
 
 

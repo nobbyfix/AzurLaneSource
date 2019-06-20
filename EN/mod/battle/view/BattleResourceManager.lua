@@ -7,13 +7,13 @@ slot5 = singletonClass("BattleResourceManager")
 ys.Battle.BattleResourceManager = slot5
 slot5.__name = "BattleResourceManager"
 
-function slot5.Ctor(slot0)
+slot5.Ctor = function (slot0)
 	slot0.rotateScriptMap = setmetatable({}, {
 		__mode = "kv"
 	})
 end
 
-function slot5.Init(slot0)
+slot5.Init = function (slot0)
 	slot0._preloadList = {}
 	slot0._resCacheList = {}
 	slot0._allPool = {}
@@ -30,18 +30,18 @@ function slot5.Init(slot0)
 	slot0._battleCVList = {}
 end
 
-function slot5.Clear(slot0)
+slot5.Clear = function (slot0)
 	for slot4, slot5 in pairs(slot0._allPool) do
 		slot5:Dispose()
 	end
 
 	for slot4, slot5 in pairs(slot0._resCacheList) do
 		if string.find(slot4, "Char/") then
-			uv0.ClearCharRes(slot4, slot5)
+			slot0.ClearCharRes(slot4, slot5)
 		elseif string.find(slot4, "painting/") then
-			uv0.ClearPaintingRes(slot4, slot5)
+			slot0.ClearPaintingRes(slot4, slot5)
 		else
-			uv1.Destroy(slot5)
+			slot1.Destroy(slot5)
 		end
 	end
 
@@ -68,91 +68,95 @@ function slot5.Clear(slot0)
 	slot0._battleCVList = {}
 end
 
-function slot5.GetBulletPath(slot0)
+slot5.GetBulletPath = function (slot0)
 	return "Item/" .. slot0
 end
 
-function slot5.GetCharacterPath(slot0)
+slot5.GetCharacterPath = function (slot0)
 	return "Char/" .. slot0
 end
 
-function slot5.GetCharacterGoPath(slot0)
+slot5.GetCharacterGoPath = function (slot0)
 	return "chargo/" .. slot0
 end
 
-function slot5.GetAircraftIconPath(slot0)
+slot5.GetAircraftIconPath = function (slot0)
 	return "AircraftIcon/" .. slot0
 end
 
-function slot5.GetFXPath(slot0)
+slot5.GetFXPath = function (slot0)
 	return "Effect/" .. slot0
 end
 
-function slot5.GetPaintingPath(slot0)
+slot5.GetPaintingPath = function (slot0)
 	return "painting/" .. slot0
 end
 
-function slot5.GetHrzIcon(slot0)
+slot5.GetHrzIcon = function (slot0)
 	return "herohrzicon/" .. slot0
 end
 
-function slot5.GetSquareIcon(slot0)
+slot5.GetSquareIcon = function (slot0)
 	return "squareicon/" .. slot0
 end
 
-function slot5.GetQIcon(slot0)
+slot5.GetQIcon = function (slot0)
 	return "qicon/" .. slot0
 end
 
-function slot5.GetCommanderHrzIconPath(slot0)
+slot5.GetCommanderHrzIconPath = function (slot0)
 	return "commanderhrz/" .. slot0
 end
 
-function slot5.GetShipTypeIconPath(slot0)
+slot5.GetShipTypeIconPath = function (slot0)
 	return "shiptype/" .. slot0
 end
 
-function slot5.GetMapPath(slot0)
+slot5.GetMapPath = function (slot0)
 	return "Map/" .. slot0
 end
 
-function slot5.GetUIPath(slot0)
+slot5.GetUIPath = function (slot0)
 	return "UI/" .. slot0
 end
 
-function slot5.GetResName(slot0)
-	while string.find(slot0, "%/") do
+slot5.GetResName = function (slot0)
+	slot2 = string.find(slot0, "%/")
+
+	while slot2 do
 		slot2 = string.find(string.sub(slot1, slot2 + 1), "%/")
 	end
 
 	return slot1
 end
 
-function slot5.ClearCharRes(slot0, slot1)
+slot5.ClearCharRes = function (slot0, slot1)
 	slot3 = slot1:GetComponent("SkeletonRenderer").skeletonDataAsset
 
-	if not PoolMgr.GetInstance():IsSpineSkelCached(uv0.GetResName(slot0)) then
+	if not PoolMgr.GetInstance():IsSpineSkelCached(slot0:GetResName()) then
 		UIUtil.ClearSharedMaterial(slot1)
 	end
 
-	uv1.Destroy(slot1)
+	slot1:Destroy()
 end
 
-function slot5.ClearPaintingRes(slot0, slot1)
-	PoolMgr.GetInstance():ReturnPainting(uv0.GetResName(slot0), slot1)
+slot5.ClearPaintingRes = function (slot0, slot1)
+	PoolMgr.GetInstance():ReturnPainting(slot0:GetResName(), slot1)
 end
 
-function slot5.DestroyOb(slot0, slot1)
+slot5.DestroyOb = function (slot0, slot1)
 	if slot0._ob2Pool[slot1] then
 		slot2:Recycle(slot1)
 	else
-		uv0.Destroy(slot1)
+		slot0.Destroy(slot1)
 	end
 end
 
-function slot5.popPool(slot0, slot1, slot2)
+slot5.popPool = function (slot0, slot1, slot2)
+	slot3 = slot1:GetObject()
+
 	if not slot2 then
-		slot1:GetObject().transform.parent = nil
+		slot3.transform.parent = nil
 	end
 
 	slot0._ob2Pool[slot3] = slot1
@@ -160,7 +164,7 @@ function slot5.popPool(slot0, slot1, slot2)
 	return slot3
 end
 
-function slot5.InstCharacter(slot0, slot1, slot2)
+slot5.InstCharacter = function (slot0, slot1, slot2)
 	if slot0._allPool[slot0.GetCharacterPath(slot1)] then
 		slot2(slot0:popPool(slot4))
 	elseif slot0._resCacheList[slot3] ~= nil then
@@ -168,35 +172,34 @@ function slot5.InstCharacter(slot0, slot1, slot2)
 		slot2(slot0:popPool(slot4))
 	else
 		slot0:LoadSpineAsset(slot1, function (slot0)
-			if not uv0._poolRoot then
-				uv1.ClearCharRes(uv2, slot0)
+			if not slot0._poolRoot then
+				slot1.ClearCharRes(slot2, slot0)
 
 				return
 			end
 
-			slot1 = SpineAnim.AnimChar(uv3, slot0)
+			slot1 = SpineAnim.AnimChar(slot3, slot0)
 
 			slot1:SetActive(false)
-			uv0:InitPool(uv2, slot1)
-
-			uv4 = uv0._allPool[uv2]
-
-			uv5(uv0:popPool(uv4))
+			slot0:InitPool(slot0.InitPool, slot1)
+			slot1(slot0:popPool(slot0._allPool[]))
 		end)
 	end
 end
 
-function slot5.LoadSpineAsset(slot0, slot1, slot2)
+slot5.LoadSpineAsset = function (slot0, slot1, slot2)
+	slot3 = slot0.GetCharacterPath(slot1)
+
 	if not PoolMgr.GetInstance():IsSpineSkelCached(slot1) then
-		ResourceMgr.Inst:getAssetAsync(slot0.GetCharacterPath(slot1), slot1 .. "_SkeletonData", UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
-			uv0(slot0)
+		ResourceMgr.Inst:getAssetAsync(slot3, slot1 .. "_SkeletonData", UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
+			slot0(slot0)
 		end), true, true)
 	else
 		PoolMgr.GetInstance():GetSpineSkel(slot1, true, slot2)
 	end
 end
 
-function slot5.InstAirCharacter(slot0, slot1, slot2)
+slot5.InstAirCharacter = function (slot0, slot1, slot2)
 	if slot0._allPool[slot0.GetCharacterGoPath(slot1)] then
 		slot2(slot0:popPool(slot4))
 	elseif slot0._resCacheList[slot3] ~= nil then
@@ -204,22 +207,19 @@ function slot5.InstAirCharacter(slot0, slot1, slot2)
 		slot2(slot0:popPool(slot4))
 	else
 		ResourceMgr.Inst:getAssetAsync(slot3, slot1, UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
-			if not uv0._poolRoot then
-				uv1.Destroy(slot0)
+			if not slot0._poolRoot then
+				slot1.Destroy(slot0)
 
 				return
 			else
-				uv0:InitPool(uv2, slot0)
-
-				uv3 = uv0._allPool[uv2]
-
-				uv4(uv0:popPool(uv3))
+				slot0:InitPool(slot0, slot0)
+				slot0(slot0:popPool(slot0._allPool[slot0]))
 			end
 		end), true, true)
 	end
 end
 
-function slot5.InstBullet(slot0, slot1, slot2)
+slot5.InstBullet = function (slot0, slot1, slot2)
 	if slot0._allPool[slot0.GetBulletPath(slot1)] then
 		slot2(slot0:popPool(slot4, true))
 
@@ -231,16 +231,17 @@ function slot5.InstBullet(slot0, slot1, slot2)
 		return true
 	else
 		ResourceMgr.Inst:getAssetAsync(slot3, slot1, UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
-			if uv0._poolRoot then
-				uv1.Destroy(slot0)
+			if slot0._poolRoot then
+				slot1.Destroy(slot0)
 
 				return
 			else
-				uv0:InitPool(uv2, slot0)
+				slot0:InitPool(slot0, slot0)
 
-				uv3 = uv0._allPool[uv2]
-
-				uv4(uv0:popPool(uv3, true))
+				-- Decompilation error in this vicinity:
+				true(slot0:popPool(slot0._allPool[slot0], 
+				-- Decompilation error in this vicinity:
+				true))
 			end
 		end), true, true)
 
@@ -248,7 +249,7 @@ function slot5.InstBullet(slot0, slot1, slot2)
 	end
 end
 
-function slot5.InstFX(slot0, slot1)
+slot5.InstFX = function (slot0, slot1)
 	slot3 = nil
 
 	if slot0._allPool[slot0.GetFXPath(slot1)] then
@@ -259,12 +260,12 @@ function slot5.InstFX(slot0, slot1)
 		slot3 = slot0:popPool(slot0._allPool[slot2])
 	else
 		ResourceMgr.Inst:getAssetAsync(slot2, slot1, UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
-			if not uv0._poolRoot then
-				uv1.Destroy(slot0)
+			if not slot0._poolRoot then
+				slot1.Destroy(slot0)
 
 				return
 			else
-				uv0:InitPool(uv2, slot0)
+				slot0:InitPool(slot0, slot0)
 			end
 		end), true, true)
 		GameObject(slot1 .. "临时假obj"):SetActive(false)
@@ -275,19 +276,19 @@ function slot5.InstFX(slot0, slot1)
 	return slot3
 end
 
-function slot5.InstSkillPaintingUI(slot0)
+slot5.InstSkillPaintingUI = function (slot0)
 	slot0._ob2Pool[slot0._allPool["UI/SkillPainting"].GetObject(slot1)] = slot0._allPool["UI/SkillPainting"]
 
 	return slot0._allPool["UI/SkillPainting"].GetObject(slot1)
 end
 
-function slot5.InstKizunaJamming(slot0)
+slot5.InstKizunaJamming = function (slot0)
 	slot0._ob2Pool[slot0._allPool["UI/KizunaJamming"].GetObject(slot1)] = slot0._allPool["UI/KizunaJamming"]
 
 	return slot0._allPool["UI/KizunaJamming"].GetObject(slot1)
 end
 
-function slot5.InstPainting(slot0, slot1)
+slot5.InstPainting = function (slot0, slot1)
 	slot3 = nil
 
 	if slot0._allPool[slot0.GetPaintingPath(slot1)] then
@@ -299,7 +300,7 @@ function slot5.InstPainting(slot0, slot1)
 	return slot3
 end
 
-function slot5.InstMap(slot0, slot1)
+slot5.InstMap = function (slot0, slot1)
 	slot3 = nil
 
 	if slot0._allPool[slot0.GetMapPath(slot1)] then
@@ -313,35 +314,35 @@ function slot5.InstMap(slot0, slot1)
 	return slot3
 end
 
-function slot5.GetCharacterIcon(slot0, slot1)
-	return slot0._resCacheList[uv0.GetHrzIcon(slot1)]
+slot5.GetCharacterIcon = function (slot0, slot1)
+	return slot0._resCacheList[slot0.GetHrzIcon(slot1)]
 end
 
-function slot5.GetCharacterSquareIcon(slot0, slot1)
-	return slot0._resCacheList[uv0.GetSquareIcon(slot1)]
+slot5.GetCharacterSquareIcon = function (slot0, slot1)
+	return slot0._resCacheList[slot0.GetSquareIcon(slot1)]
 end
 
-function slot5.GetCharacterQIcon(slot0, slot1)
-	return slot0._resCacheList[uv0.GetQIcon(slot1)]
+slot5.GetCharacterQIcon = function (slot0, slot1)
+	return slot0._resCacheList[slot0.GetQIcon(slot1)]
 end
 
-function slot5.GetAircraftIcon(slot0, slot1)
-	return slot0._resCacheList[uv0.GetAircraftIconPath(slot1)]
+slot5.GetAircraftIcon = function (slot0, slot1)
+	return slot0._resCacheList[slot0.GetAircraftIconPath(slot1)]
 end
 
-function slot5.GetShipTypeIcon(slot0, slot1)
-	return slot0._resCacheList[uv0.GetShipTypeIconPath(slot1)]
+slot5.GetShipTypeIcon = function (slot0, slot1)
+	return slot0._resCacheList[slot0.GetShipTypeIconPath(slot1)]
 end
 
-function slot5.GetCommanderHrzIcon(slot0, slot1)
-	return slot0._resCacheList[uv0.GetCommanderHrzIconPath(slot1)]
+slot5.GetCommanderHrzIcon = function (slot0, slot1)
+	return slot0._resCacheList[slot0.GetCommanderHrzIconPath(slot1)]
 end
 
-function slot5.GetShader(slot0, slot1)
+slot5.GetShader = function (slot0, slot1)
 	return slot0._shaders[slot1]
 end
 
-function slot5.AddPreloadResource(slot0, slot1)
+slot5.AddPreloadResource = function (slot0, slot1)
 	if type(slot1) == "string" then
 		slot0._preloadList[slot1] = false
 	elseif type(slot1) == "table" then
@@ -351,55 +352,56 @@ function slot5.AddPreloadResource(slot0, slot1)
 	end
 end
 
-function slot5.AddPreloadCV(slot0, slot1)
+slot5.AddPreloadCV = function (slot0, slot1)
 	if Ship.getCVKeyID(slot1) > 0 then
 		slot0._battleCVList[slot2] = pg.CriMgr.GetBattleCVBankName(slot2)
 	end
 end
 
-function slot5.StartPreload(slot0, slot1, slot2)
+slot5.StartPreload = function (slot0, slot1, slot2)
 	slot3 = 0
+	slot4 = 0
 
 	for slot8, slot9 in pairs(slot0._preloadList) do
-		slot4 = 0 + 1
+		slot4 = slot4 + 1
 	end
 
 	for slot8, slot9 in pairs(slot0._battleCVList) do
 		slot4 = slot4 + 1
 	end
 
-	for slot8, slot9 in pairs(uv0.BATTLE_SHADER) do
+	for slot8, slot9 in pairs(slot0.BATTLE_SHADER) do
 		slot4 = slot4 + 1
 	end
 
-	for slot9, slot10 in pairs(slot0._battleCVList) do
-		pg.CriMgr:LoadBattleCV(slot9, function ()
-			if not uv0._poolRoot then
-				return
-			end
+	function slot5()
+		if not slot0._poolRoot then
+			return
+		end
 
-			uv1 = uv1 + 1
+		if slot2 < slot1 + 1 then
+			return
+		end
 
-			if uv2 < uv1 then
-				return
-			end
+		if slot3 then
+			slot3(slot1)
+		end
 
-			if uv3 then
-				uv3(uv1)
-			end
+		if slot1 == slot2 then
+			slot0._preloadList = nil
 
-			if uv1 == uv2 then
-				uv0._preloadList = nil
-
-				uv4()
-			end
-		end)
+			slot4()
+		end
 	end
 
-	for slot9, slot10 in pairs(uv0.BATTLE_SHADER) do
+	for slot9, slot10 in pairs(slot0._battleCVList) do
+		pg.CriMgr:LoadBattleCV(slot9, slot5)
+	end
+
+	for slot9, slot10 in pairs(slot0.BATTLE_SHADER) do
 		ResourceMgr.Inst:LoadAssetAsync(pg.ShaderMgr.GetInstance().shaders, slot10, UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
-			uv0._shaders[uv1] = slot0
-			uv2 = uv2 + 1
+			slot0._shaders[] = slot0
+			slot2 = slot2 + 1
 		end), false, false)
 	end
 
@@ -409,119 +411,120 @@ function slot5.StartPreload(slot0, slot1, slot2)
 		elseif string.find(slot9, "herohrzicon/") or string.find(slot9, "qicon/") or string.find(slot9, "squareicon/") or string.find(slot9, "commanderhrz/") or string.find(slot9, "AircraftIcon/") then
 			ResourceMgr.Inst:getAssetAsync(slot9, "", typeof(Sprite), UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
 				if slot0 == nil then
-					print("资源预加载失败，检查以下目录：>>" .. uv0 .. "<<")
+					print("资源预加载失败，检查以下目录：>>" .. slot0 .. "<<")
 				else
-					if not uv1._poolRoot then
-						uv2.Destroy(slot0)
+					if not slot1._poolRoot then
+						slot2.Destroy(slot0)
 
 						return
 					end
 
-					if uv1._resCacheList then
-						uv1._resCacheList[uv0] = slot0
+					if slot1._resCacheList then
+						slot1._resCacheList[slot0] = slot0
 					end
 				end
 
-				uv3()
+				slot3()
 			end), true, true)
 		elseif string.find(slot9, "shiptype/") then
 			ResourceMgr.Inst:getAssetAsync("shiptype", string.split(slot9, "/")[2], typeof(Sprite), UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
 				if slot0 == nil then
-					print("资源预加载失败，检查以下目录：>>" .. uv0 .. "<<")
+					print("资源预加载失败，检查以下目录：>>" .. slot0 .. "<<")
 				else
-					if not uv1._poolRoot then
-						uv2.Destroy(slot0)
+					if not slot1._poolRoot then
+						slot2.Destroy(slot0)
 
 						return
 					end
 
-					if uv1._resCacheList then
-						uv1._resCacheList[uv0] = slot0
+					if slot1._resCacheList then
+						slot1._resCacheList[slot0] = slot0
 					end
 				end
 
-				uv3()
+				slot3()
 			end), true, true)
 		elseif string.find(slot9, "painting/") then
 			PoolMgr.GetInstance():GetPainting(slot11, true, function (slot0)
 				if slot0 == nil then
-					print("资源预加载失败，检查以下目录：>>" .. uv0 .. "<<")
+					print("资源预加载失败，检查以下目录：>>" .. slot0 .. "<<")
 				else
-					if not uv1._poolRoot then
-						uv2.ClearPaintingRes(uv0, slot0)
+					if not slot1._poolRoot then
+						slot2.ClearPaintingRes(slot0, slot0)
 
 						return
 					end
 
+					Ship.SetExpression(slot0, slot3)
 					slot0:SetActive(false)
 
-					if uv1._resCacheList then
-						uv1._resCacheList[uv0] = slot0
+					if slot0.SetActive._resCacheList then
+						slot1._resCacheList[slot0] = slot0
 					end
 				end
 
-				uv3()
+				slot4()
 			end)
 		elseif string.find(slot9, "Char/") then
 			slot0:LoadSpineAsset(slot11, function (slot0)
 				if slot0 == nil then
-					print("资源预加载失败，检查以下目录：>>" .. uv0 .. "<<")
+					print("资源预加载失败，检查以下目录：>>" .. slot0 .. "<<")
 				else
-					if not uv1._poolRoot then
-						uv2.ClearCharRes(uv0, slot0)
+					if not slot1._poolRoot then
+						slot2.ClearCharRes(slot0, slot0)
 
 						return
 					end
 
-					SpineAnim.AnimChar(uv3, slot0):SetActive(false)
+					SpineAnim.AnimChar(slot3, slot0):SetActive(false)
 
-					if uv1._resCacheList then
-						uv1._resCacheList[uv0] = slot0
+					if SpineAnim.AnimChar(slot3, slot0).SetActive._resCacheList then
+						slot1._resCacheList[slot0] = slot0
 					end
 				end
 
-				uv1:InitPool(uv0, slot0)
-				uv4()
+				slot1:InitPool(slot0, slot0)
+				slot0()
 			end)
 		elseif string.find(slot9, "UI/") then
 			LoadAndInstantiateAsync("UI", slot11, function (slot0)
 				if slot0 == nil then
-					print("资源预加载失败，检查以下目录：>>" .. uv0 .. "<<")
+					print("资源预加载失败，检查以下目录：>>" .. slot0 .. "<<")
 				else
-					if not uv1._poolRoot then
-						uv2.Destroy(slot0)
+					if not slot1._poolRoot then
+						slot2.Destroy(slot0)
 
 						return
 					end
 
 					slot0:SetActive(false)
 
-					if uv1._resCacheList then
-						uv1._resCacheList[uv0] = slot0
+					if slot0.SetActive._resCacheList then
+						slot1._resCacheList[slot0] = slot0
 					end
 				end
 
-				uv1:InitPool(uv0, slot0)
-				uv3()
+				slot1:InitPool(slot0, slot0)
+				slot0()
 			end, true, true)
 		else
 			ResourceMgr.Inst:getAssetAsync(slot9, slot11, UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
 				if slot0 == nil then
-					print("资源预加载失败，检查以下目录：>>" .. uv0 .. "<<")
+					print("资源预加载失败，检查以下目录：>>" .. slot0 .. "<<")
 				else
-					if not uv1._poolRoot then
-						uv2.Destroy(slot0)
+					if not slot1._poolRoot then
+						slot2.Destroy(slot0)
 
 						return
 					end
 
-					if uv1._resCacheList then
-						uv1._resCacheList[uv0] = slot0
+					if slot1._resCacheList then
+						slot1._resCacheList[slot0] = slot0
 					end
 				end
 
-				uv1:InitPool(uv0, slot0)
-				uv3()
+				slot1:InitPool(slot0, slot0)
+				slot0()
 			end), true, true)
 		end
 	end
@@ -531,15 +534,15 @@ end
 
 slot6 = Vector3(0, 10000, 0)
 
-function slot5.HideBullet(slot0)
-	slot0.transform.position = uv0
+slot5.HideBullet = function (slot0)
+	slot0.transform.position = slot0
 end
 
-function slot5.InitParticleSystemCB(slot0)
+slot5.InitParticleSystemCB = function (slot0)
 	pg.EffectMgr.GetInstance():CommonEffectEvent(slot0)
 end
 
-function slot5.InitPool(slot0, slot1, slot2)
+slot5.InitPool = function (slot0, slot1, slot2)
 	slot3 = slot0._poolRoot.transform
 
 	if string.find(slot1, "Item/") then
@@ -548,7 +551,7 @@ function slot5.InitPool(slot0, slot1, slot2)
 		else
 			slot4 = pg.Pool.New(slot0._bulletContainer.transform, slot2, 20, 20, true, true)
 
-			slot4:SetRecycleFuncs(uv0.HideBullet)
+			slot4:SetRecycleFuncs(slot0.HideBullet)
 			slot4:InitSize()
 
 			slot0._allPool[slot1] = slot4
@@ -565,7 +568,7 @@ function slot5.InitPool(slot0, slot1, slot2)
 
 			slot5 = pg.Pool.New(slot3, slot2, slot4, 20, false, false)
 
-			slot5:SetInitFuncs(uv0.InitParticleSystemCB)
+			slot5:SetInitFuncs(slot0.InitParticleSystemCB)
 			slot5:InitSize()
 
 			slot0._allPool[slot1] = slot5
@@ -597,7 +600,7 @@ function slot5.InitPool(slot0, slot1, slot2)
 	end
 end
 
-function slot5.GetRotateScript(slot0, slot1, slot2)
+slot5.GetRotateScript = function (slot0, slot1, slot2)
 	if slot0.rotateScriptMap[slot1] then
 		return slot3[slot1]
 	end
@@ -607,131 +610,142 @@ function slot5.GetRotateScript(slot0, slot1, slot2)
 	return GetOrAddComponent(slot1, "BulletRotation")
 end
 
-function slot5.GetCommonResource()
+slot5.GetCommonResource = function ()
 	return {
-		uv0.GetFXPath(uv1.Battle.BattleCharacterFactory.MOVE_WAVE_FX_NAME),
-		uv0.GetFXPath(uv1.Battle.BattleCharacterFactory.BOMB_FX_NAME),
-		uv0.GetFXPath(uv1.Battle.BattleBossCharacterFactory.BOMB_FX_NAME),
-		uv0.GetFXPath(uv1.Battle.BattleAircraftCharacterFactory.BOMB_FX_NAME),
-		uv0.GetFXPath("AlertArea"),
-		uv0.GetFXPath("TorAlert"),
-		uv0.GetFXPath("SquareAlert"),
-		uv0.GetFXPath("AntiAirArea"),
-		uv0.GetFXPath("AntiSubArea"),
-		uv0.GetFXPath("shock"),
-		uv0.GetFXPath("qianting_chushui"),
-		uv0.GetFXPath(uv2.PLAYER_SUB_BUBBLE_FX),
-		uv0.GetUIPath("SkillPainting")
+		slot0.GetFXPath(slot1.Battle.BattleCharacterFactory.MOVE_WAVE_FX_NAME),
+		slot0.GetFXPath(slot1.Battle.BattleCharacterFactory.BOMB_FX_NAME),
+		slot0.GetFXPath(slot1.Battle.BattleBossCharacterFactory.BOMB_FX_NAME),
+		slot0.GetFXPath(slot1.Battle.BattleAircraftCharacterFactory.BOMB_FX_NAME),
+		slot0.GetFXPath("AlertArea"),
+		slot0.GetFXPath("TorAlert"),
+		slot0.GetFXPath("SquareAlert"),
+		slot0.GetFXPath("AntiAirArea"),
+		slot0.GetFXPath("AntiSubArea"),
+		slot0.GetFXPath("shock"),
+		slot0.GetFXPath("qianting_chushui"),
+		slot0.GetFXPath("qianting_chushui".PLAYER_SUB_BUBBLE_FX),
+		slot0.GetUIPath("SkillPainting")
 	}
 end
 
-function slot5.GetDisplayCommonResource()
+slot5.GetDisplayCommonResource = function ()
 	return {
-		uv0.GetFXPath(uv1.Battle.BattleCharacterFactory.MOVE_WAVE_FX_NAME),
-		uv0.GetFXPath(uv1.Battle.BattleCharacterFactory.BOMB_FX_NAME)
+		slot0.GetFXPath(slot1.Battle.BattleCharacterFactory.MOVE_WAVE_FX_NAME),
+		slot0.GetFXPath(slot1.Battle.BattleCharacterFactory.BOMB_FX_NAME)
 	}
 end
 
-function slot5.GetMapResource(slot0)
+slot5.GetMapResource = function (slot0)
 	slot1 = {}
 
-	for slot6, slot7 in ipairs(uv0.Battle.BattleMap.LAYERS) do
+	for slot6, slot7 in ipairs(slot0.Battle.BattleMap.LAYERS) do
 		for slot12, slot13 in ipairs(slot8) do
-			slot1[#slot1 + 1] = uv1.GetMapPath(slot13)
+			slot1[#slot1 + 1] = slot1.GetMapPath(slot13)
 		end
 	end
 
 	return slot1
 end
 
-function slot5.GetBuffResource()
+slot5.GetBuffResource = function ()
+	slot0 = {}
+
 	for slot5, slot6 in ipairs(slot1) do
+		slot0[#slot0 + 1] = slot0.GetFXPath(slot6)
 	end
 
 	return slot0
 end
 
-function slot5.GetShipResource(slot0, slot1, slot2)
+slot5.GetShipResource = function (slot0, slot1, slot2)
 	slot3 = {}
+	slot4 = slot0:GetPlayerShipTmpDataFromID()
 
 	if slot1 == nil or slot1 == 0 then
-		slot1 = uv0.GetPlayerShipTmpDataFromID(slot0).skin_id
+		slot1 = slot4.skin_id
 	end
 
-	slot5 = uv0.GetPlayerShipSkinDataFromID(slot1)
-	slot3[#slot3 + 1] = uv1.GetCharacterPath(slot5.prefab)
-	slot3[#slot3 + 1] = uv1.GetHrzIcon(slot5.painting)
-	slot3[#slot3 + 1] = uv1.GetQIcon(slot5.painting)
-	slot3[#slot3 + 1] = uv1.GetSquareIcon(slot5.painting)
+	slot5 = slot0.GetPlayerShipSkinDataFromID(slot1)
+	slot3[#slot3 + 1] = slot1.GetCharacterPath(slot5.prefab)
+	slot3[#slot3 + 1] = slot1.GetHrzIcon(slot5.painting)
+	slot3[#slot3 + 1] = slot1.GetQIcon(slot5.painting)
+	slot3[#slot3 + 1] = slot1.GetSquareIcon(slot5.painting)
 
-	if slot2 and uv0.GetShipTypeTmp(slot4.type).team_type == TeamType.Main then
-		slot3[#slot3 + 1] = uv1.GetPaintingPath(slot5.painting)
+	if slot2 and slot0.GetShipTypeTmp(slot4.type).team_type == TeamType.Main then
+		slot3[#slot3 + 1] = slot1.GetPaintingPath(slot5.painting)
 	end
 
 	return slot3
 end
 
-function slot5.GetEnemyResource(slot0)
-	for slot6, slot7 in ipairs(uv0.GetMonsterTmpDataFromID(slot0).appear_fx) do
-		slot1[#slot1 + 1] = uv1.GetFXPath(slot7)
+slot5.GetEnemyResource = function (slot0)
+	slot2 = slot0:GetMonsterTmpDataFromID()
+
+	for slot6, slot7 in ipairs(slot2.appear_fx) do
+		slot1[#slot1 + 1] = slot1.GetFXPath(slot7)
 	end
 
 	for slot6, slot7 in ipairs(slot2.smoke) do
 		for slot12, slot13 in ipairs(slot8) do
-			slot1[#slot1 + 1] = uv1.GetFXPath(slot13[1])
+			slot1[#slot1 + 1] = slot1.GetFXPath(slot13[1])
 		end
 	end
 
-	slot1[#slot1 + 1] = uv1.GetFXPath(slot2.bubble_fx)
+	slot1[#slot1 + 1] = slot1.GetFXPath(slot2.bubble_fx)
 
 	if string.find(slot2.icon, "danchuan") == nil then
-		slot1[#slot1 + 1] = uv1.GetHrzIcon(slot2.icon)
-		slot1[#slot1 + 1] = uv1.GetQIcon(slot2.icon)
-		slot1[#slot1 + 1] = uv1.GetSquareIcon(slot2.icon)
+		slot1[#slot1 + 1] = slot1.GetHrzIcon(slot2.icon)
+		slot1[#slot1 + 1] = slot1.GetQIcon(slot2.icon)
+		slot1[#slot1 + 1] = slot1.GetSquareIcon(slot2.icon)
 	end
 
 	return slot1
 end
 
-function slot5.GetWeaponResource(slot0, slot1)
+slot5.GetWeaponResource = function (slot0, slot1)
+	slot2 = {}
+
 	if slot0 == -1 then
-		return {}
+		return slot2
 	end
 
-	if uv0.GetWeaponPropertyDataFromID(slot0).type == uv1.EquipmentType.MAIN_CANNON or slot3.type == uv1.EquipmentType.SUB_CANNON or slot3.type == uv1.EquipmentType.TORPEDO or slot3.type == uv1.EquipmentType.ANTI_AIR or slot3.type == uv1.EquipmentType.POINT_HIT_AND_LOCK or slot3.type == uv1.EquipmentType.BOMBER_PRE_CAST_ALERT or slot3.type == uv1.EquipmentType.DEPTH_CHARGE or slot3.type == uv1.EquipmentType.MANUAL_TORPEDO or slot3.type == uv1.EquipmentType.DISPOSABLE_TORPEDO or slot3.type == uv1.EquipmentType.BEAM then
+	if slot0:GetWeaponPropertyDataFromID().type == slot1.EquipmentType.MAIN_CANNON or slot3.type == slot1.EquipmentType.SUB_CANNON or slot3.type == slot1.EquipmentType.TORPEDO or slot3.type == slot1.EquipmentType.ANTI_AIR or slot3.type == slot1.EquipmentType.POINT_HIT_AND_LOCK or slot3.type == slot1.EquipmentType.BOMBER_PRE_CAST_ALERT or slot3.type == slot1.EquipmentType.DEPTH_CHARGE or slot3.type == slot1.EquipmentType.MANUAL_TORPEDO or slot3.type == slot1.EquipmentType.DISPOSABLE_TORPEDO or slot3.type == slot1.EquipmentType.BEAM then
 		for slot7, slot8 in ipairs(slot3.bullet_ID) do
 			for slot13, slot14 in ipairs(slot9) do
 				slot2[#slot2 + 1] = slot14
 			end
 		end
-	elseif slot3.type == uv1.EquipmentType.SCOUT or slot3.type == uv1.EquipmentType.PASSIVE_SCOUT then
-		slot2 = uv2.GetAircraftResource(slot0, nil, slot1)
-	elseif slot3.type == uv1.EquipmentType.PREVIEW_ARICRAFT then
+	elseif slot3.type == slot1.EquipmentType.SCOUT or slot3.type == slot1.EquipmentType.PASSIVE_SCOUT then
+		slot2 = slot2.GetAircraftResource(slot0, nil, slot1)
+	elseif slot3.type == slot1.EquipmentType.PREVIEW_ARICRAFT then
 		for slot7, slot8 in ipairs(slot3.bullet_ID) do
-			slot2 = uv2.GetAircraftResource(slot8, nil, slot1)
+			slot2 = slot2.GetAircraftResource(slot8, nil, slot1)
 		end
 	end
 
-	slot2[#slot2 + 1] = uv2.GetFXPath(slot3.fire_fx)
+	slot2[#slot2 + 1] = slot2.GetFXPath(slot3.fire_fx)
 
 	if slot3.precast_param.fx then
-		slot2[#slot2 + 1] = uv2.GetFXPath(slot3.precast_param.fx)
+		slot2[#slot2 + 1] = slot2.GetFXPath(slot3.precast_param.fx)
 	end
 
 	return slot2
 end
 
-function slot5.GetEquipResource(slot0, slot1)
+slot5.GetEquipResource = function (slot0, slot1)
+	slot2 = {}
+
 	if slot1 ~= 0 then
-		if uv0.Battle.BattleDataFunction.GetEquipSkinDataFromID(slot1).ship_skin_id ~= 0 then
+		if slot0.Battle.BattleDataFunction.GetEquipSkinDataFromID(slot1).ship_skin_id ~= 0 then
+			slot2[#slot2 + 1] = slot1.GetCharacterPath(slot0.Battle.BattleDataFunction.GetPlayerShipSkinDataFromID(slot4).prefab)
 		end
 
 		if slot3.attachment_combat_scene ~= "" then
-			slot2[#slot2 + 1] = uv1.GetFXPath(slot5)
+			slot2[#slot2 + 1] = slot1.GetFXPath(slot5)
 		end
 	end
 
-	slot5 = uv0.Battle.BattleDataFunction.GetWeaponDataFromID(slot0).skill_id
+	slot5 = slot0.Battle.BattleDataFunction.GetWeaponDataFromID(slot0).skill_id
 
 	for slot9, slot10 in ipairs(slot4) do
 		for slot15, slot16 in ipairs(slot11) do
@@ -748,19 +762,21 @@ function slot5.GetEquipResource(slot0, slot1)
 	return slot2
 end
 
-function slot5.GetBulletResource(slot0, slot1)
+slot5.GetBulletResource = function (slot0, slot1)
+	slot2 = {}
 	slot4 = nil
-	slot4 = ((slot1 or 0) == 0 or uv0.GetEquipSkin(slot1 or 0)) and uv0.GetBulletTmpDataFromID(slot0).modle_ID
+	slot4 = ((slot1 or 0) == 0 or slot0.GetEquipSkin(slot1 or 0)) and slot0:GetBulletTmpDataFromID().modle_ID
 
-	if uv0.GetBulletTmpDataFromID(slot0).type == uv1.BulletType.BEAM then
+	if slot3.type == slot1.BulletType.BEAM then
+		slot2[#slot2 + 1] = slot2.GetFXPath(slot3.modle_ID)
 	else
-		slot2[#slot2 + 1] = uv2.GetBulletPath(slot4)
+		slot2[#slot2 + 1] = slot2.GetBulletPath(slot4)
 	end
 
-	slot2[#slot2 + 1] = uv2.GetFXPath(slot3.hit_fx)
-	slot2[#slot2 + 1] = uv2.GetFXPath(slot3.miss_fx)
-	slot2[#slot2 + 1] = uv2.GetFXPath(slot3.track_fx)
-	slot2[#slot2 + 1] = uv2.GetFXPath(slot3.alert_fx)
+	slot2[#slot2 + 1] = slot2.GetFXPath(slot3.hit_fx)
+	slot2[#slot2 + 1] = slot2.GetFXPath(slot3.miss_fx)
+	slot2[#slot2 + 1] = slot2.GetFXPath(slot3.track_fx)
+	slot2[#slot2 + 1] = slot2.GetFXPath(slot3.alert_fx)
 
 	if slot3.extra_param.shrapnel then
 		for slot8, slot9 in ipairs(slot3.extra_param.shrapnel) do
@@ -772,7 +788,7 @@ function slot5.GetBulletResource(slot0, slot1)
 
 	for slot8, slot9 in ipairs(slot3.attach_buff) do
 		if slot9.effect_id then
-			slot2[#slot2 + 1] = uv2.GetFXPath(slot9.effect_id)
+			slot2[#slot2 + 1] = slot2.GetFXPath(slot9.effect_id)
 		end
 
 		if slot9.buff_id then
@@ -785,29 +801,32 @@ function slot5.GetBulletResource(slot0, slot1)
 	return slot2
 end
 
-function slot5.GetAircraftResource(slot0, slot1, slot2)
-	slot4 = uv0.GetAircraftTmpDataFromID(slot0)
+slot5.GetAircraftResource = function (slot0, slot1, slot2)
+	slot3 = {}
+	slot2 = slot2 or 0
+	slot4 = slot0:GetAircraftTmpDataFromID()
 	slot5 = nil
 
-	if (slot2 or 0) ~= 0 then
-		slot5, bullet, torpedo, bomb = uv0.GetEquipSkin(slot2)
+	if slot2 ~= 0 then
+		slot5, bullet, torpedo, bomb = slot0.GetEquipSkin(slot2)
 
 		if bullet ~= "" then
+			slot3[#slot3 + 1] = slot1.GetBulletPath(bullet)
 		end
 
 		if torpedo ~= "" then
-			slot3[#slot3 + 1] = uv1.GetBulletPath(torpedo)
+			slot3[#slot3 + 1] = slot1.GetBulletPath(torpedo)
 		end
 
 		if bomb ~= "" then
-			slot3[#slot3 + 1] = uv1.GetBulletPath(bomb)
+			slot3[#slot3 + 1] = slot1.GetBulletPath(bomb)
 		end
 	else
 		slot5 = slot4.model_ID
 	end
 
-	slot3[#slot3 + 1] = uv1.GetCharacterGoPath(slot5)
-	slot3[#slot3 + 1] = uv1.GetAircraftIconPath(slot4.model_ID)
+	slot3[#slot3 + 1] = slot1.GetCharacterGoPath(slot5)
+	slot3[#slot3 + 1] = slot1.GetAircraftIconPath(slot4.model_ID)
 
 	if type(slot1 or slot4.weapon_ID) == "table" then
 		for slot10, slot11 in ipairs(slot6) do
@@ -824,7 +843,7 @@ function slot5.GetAircraftResource(slot0, slot1, slot2)
 	return slot3
 end
 
-function slot5.GetCommanderResource(slot0)
+slot5.GetCommanderResource = function (slot0)
 	slot3 = slot0[1].getSkills(slot2)[1]:getLevel()
 
 	for slot7, slot8 in ipairs(slot0[2]) do
@@ -836,19 +855,19 @@ function slot5.GetCommanderResource(slot0)
 	return slot1
 end
 
-function slot5.GetStageResource(slot0)
+slot5.GetStageResource = function (slot0)
 	slot2 = {}
 	slot3 = {}
 
-	for slot7, slot8 in ipairs(uv0.Battle.BattleDataFunction.GetDungeonTmpDataByID(slot0).stages) do
+	for slot7, slot8 in ipairs(slot0.Battle.BattleDataFunction.GetDungeonTmpDataByID(slot0).stages) do
 		for slot12, slot13 in ipairs(slot8.waves) do
-			if slot13.triggerType == uv0.Battle.BattleConst.WaveTriggerType.NORMAL then
+			if slot13.triggerType == slot0.Battle.BattleConst.WaveTriggerType.NORMAL then
 				for slot17, slot18 in ipairs(slot13.spawn) do
 					for slot23, slot24 in ipairs(slot19) do
 						slot2[#slot2 + 1] = slot24
 					end
 
-					slot20 = Clone(uv0.Battle.BattleDataFunction.GetMonsterTmpDataFromID(slot18.monsterTemplateID).equipment_list)
+					slot20 = Clone(slot0.Battle.BattleDataFunction.GetMonsterTmpDataFromID(slot18.monsterTemplateID).equipment_list)
 					slot21 = Clone(slot18.buffList) or {}
 
 					if slot18.phase then
@@ -870,9 +889,9 @@ function slot5.GetStageResource(slot0)
 					for slot25, slot26 in ipairs(slot21) do
 						print(slot26)
 
-						for slot31, slot32 in pairs(uv0.Battle.BattleDataFunction.GetBuffTemplate(slot26, 1).effect_list) do
-							if slot32.arg_list.skill_id and uv0.Battle.BattleDataFunction.NeedSkillPainting(slot33) then
-								slot2[#slot2 + 1] = uv1.GetPaintingPath(uv2.GetMonsterTmpDataFromID(slot18.monsterTemplateID).icon)
+						for slot31, slot32 in pairs(slot0.Battle.BattleDataFunction.GetBuffTemplate(slot26, 1).effect_list) do
+							if slot32.arg_list.skill_id and slot0.Battle.BattleDataFunction.NeedSkillPainting(slot33) then
+								slot2[#slot2 + 1] = slot1.GetPaintingPath(slot2.GetMonsterTmpDataFromID(slot18.monsterTemplateID).icon)
 
 								break
 							end
@@ -892,10 +911,12 @@ function slot5.GetStageResource(slot0)
 							slot2[#slot2 + 1] = slot24
 						end
 
-						for slot24, slot25 in ipairs(slot18.buffList or {}) do
-							for slot30, slot31 in pairs(uv0.Battle.BattleDataFunction.GetBuffTemplate(slot25, 1).effect_list) do
-								if slot31.arg_list.skill_id and uv0.Battle.BattleDataFunction.NeedSkillPainting(slot32) then
-									slot2[#slot2 + 1] = uv1.GetPaintingPath(uv2.GetMonsterTmpDataFromID(slot18.monsterTemplateID).icon)
+						slot20 = slot18.buffList or {}
+
+						for slot24, slot25 in ipairs(slot20) do
+							for slot30, slot31 in pairs(slot0.Battle.BattleDataFunction.GetBuffTemplate(slot25, 1).effect_list) do
+								if slot31.arg_list.skill_id and slot0.Battle.BattleDataFunction.NeedSkillPainting(slot32) then
+									slot2[#slot2 + 1] = slot1.GetPaintingPath(slot2.GetMonsterTmpDataFromID(slot18.monsterTemplateID).icon)
 
 									break
 								end
@@ -909,7 +930,7 @@ function slot5.GetStageResource(slot0)
 						end
 					end
 				end
-			elseif slot13.triggerType == uv0.Battle.BattleConst.WaveTriggerType.AID then
+			elseif slot13.triggerType == slot0.Battle.BattleConst.WaveTriggerType.AID then
 				slot15 = slot13.triggerParams.main_unitList
 
 				if slot13.triggerParams.vanguard_unitList then
@@ -931,8 +952,8 @@ function slot5.GetStageResource(slot0)
 						slot3[#slot3 + 1] = slot21.skinId
 					end
 				end
-			elseif slot13.triggerType == uv0.Battle.BattleConst.WaveTriggerType.JAMMING then
-				slot2[#slot2 + 1] = uv1.GetKizunaJammingUI()
+			elseif slot13.triggerType == slot0.Battle.BattleConst.WaveTriggerType.JAMMING then
+				slot2[#slot2 + 1] = slot1.GetKizunaJammingUI()
 			end
 
 			if slot13.airFighter ~= nil then
@@ -948,14 +969,14 @@ function slot5.GetStageResource(slot0)
 	return slot2, slot3
 end
 
-function slot5.GetKizunaJammingUI()
-	return uv0.GetUIPath("KizunaJamming")
+slot5.GetKizunaJammingUI = function ()
+	return slot0.GetUIPath("KizunaJamming")
 end
 
-function slot5.GetEquipSkinPreviewRes(slot0)
+slot5.GetEquipSkinPreviewRes = function (slot0)
 	slot1 = {}
 
-	for slot6, slot7 in ipairs(uv0.GetEquipSkinDataFromID(slot0).weapon_ids) do
+	for slot6, slot7 in ipairs(slot0:GetEquipSkinDataFromID().weapon_ids) do
 		for slot12, slot13 in ipairs(slot8) do
 			slot1[#slot1 + 1] = slot13
 		end
@@ -963,22 +984,22 @@ function slot5.GetEquipSkinPreviewRes(slot0)
 
 	function slot3(slot0)
 		if slot0 ~= "" then
-			uv0[#uv0 + 1] = uv1.GetBulletPath(slot0)
+			slot0[#slot0 + 1] = slot1.GetBulletPath(slot0)
 		end
 	end
 
-	slot4, slot5, slot6, slot7 = uv0.GetEquipSkin(slot0)
+	slot4, slot5, slot6, slot7 = slot0:GetEquipSkin()
 
 	if _.any({
 		EquipType.FighterAircraft,
 		EquipType.TorpedoAircraft,
 		EquipType.BomberAircraft
 	}, function (slot0)
-		return table.contains(uv0.equip_type, slot0)
+		return table.contains(slot0.equip_type, slot0)
 	end) then
-		slot1[#slot1 + 1] = uv1.GetCharacterGoPath(slot4)
+		slot1[#slot1 + 1] = slot1.GetCharacterGoPath(slot4)
 	else
-		slot1[#slot1 + 1] = uv1.GetBulletPath(slot4)
+		slot1[#slot1 + 1] = slot1.GetBulletPath(slot4)
 	end
 
 	slot3(slot5)
@@ -988,19 +1009,19 @@ function slot5.GetEquipSkinPreviewRes(slot0)
 	return slot1
 end
 
-function slot5.GetEquipSkinBulletRes(slot0)
+slot5.GetEquipSkinBulletRes = function (slot0)
 	slot1 = {}
-	slot2, slot3, slot4, slot5 = uv0.GetEquipSkin(slot0)
+	slot2, slot3, slot4, slot5 = slot0:GetEquipSkin()
 
 	function slot6(slot0)
 		if slot0 ~= "" then
-			uv0[#uv0 + 1] = uv1.GetBulletPath(slot0)
+			slot0[#slot0 + 1] = slot1.GetBulletPath(slot0)
 		end
 	end
 
 	slot8 = false
 
-	for slot12, slot13 in ipairs(uv0.GetEquipSkinDataFromID(slot0).equip_type) do
+	for slot12, slot13 in ipairs(slot0:GetEquipSkinDataFromID().equip_type) do
 		if table.contains(EquipType.AircraftSkinType, slot13) then
 			slot8 = true
 		end
@@ -1008,7 +1029,7 @@ function slot5.GetEquipSkinBulletRes(slot0)
 
 	if slot8 then
 		if slot2 ~= "" then
-			slot1[#slot1 + 1] = uv1.GetCharacterGoPath(slot2)
+			slot1[#slot1 + 1] = slot1.GetCharacterGoPath(slot2)
 		end
 	else
 		slot6(slot2)
@@ -1021,11 +1042,11 @@ function slot5.GetEquipSkinBulletRes(slot0)
 	return slot1
 end
 
-function slot5.GetAidUnitsRes(slot0)
+slot5.GetAidUnitsRes = function (slot0)
 	slot1 = {}
 
 	for slot5, slot6 in ipairs(slot0) do
-		slot7 = uv0.GetShipResource(slot6.tmpID, nil, true)
+		slot7 = slot0.GetShipResource(slot6.tmpID, nil, true)
 
 		for slot11, slot12 in ipairs(slot6.equipment) do
 			if slot12 ~= 0 then
@@ -1050,3 +1071,5 @@ function slot5.GetAidUnitsRes(slot0)
 
 	return slot1
 end
+
+return

@@ -192,7 +192,18 @@ pg.TimeMgr.ServerTimeClientDesc = function (slot0, slot1, slot2)
 end
 
 pg.TimeMgr.ServerTimeServerDesc = function (slot0, slot1, slot2)
-	return os.date(slot2 or "%Y/%m/%d %H:%M:%S", slot1 - slot0._AnchorDelta)
+	if os.date(slot2 or "%Y/%m/%d %H:%M:%S", slot1 - slot0._AnchorDelta).isdst then
+		return os.date(slot2, slot1 - slot0._AnchorDelta)
+	else
+		return os.date(slot2, slot1 - (slot0._sAnchorTime - os.time({
+			hour = 0,
+			month = 1,
+			year = 1970,
+			min = 0,
+			sec = 0,
+			day = 5
+		})))
+	end
 end
 
 pg.TimeMgr.GetNextTime = function (slot0, slot1, slot2, slot3, slot4)

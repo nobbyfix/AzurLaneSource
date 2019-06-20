@@ -888,7 +888,10 @@ slot0.initPauseWindow = function (slot0)
 					if slot5 == SYSTEM_CHALLENGE then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 152-152, warpins: 1 ---
+						--- BLOCK #0 152-168, warpins: 1 ---
+						setText(slot3, "SP")
+						setText(slot4, slot0._chapter:getNextExpedition().chapter_name[2])
+						setActive(slot0.LeftTimeContainer, true)
 						--- END OF BLOCK #0 ---
 
 
@@ -922,7 +925,7 @@ slot0.initPauseWindow = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 152-200, warpins: 6 ---
+	--- BLOCK #2 169-217, warpins: 6 ---
 	onButton(slot0, slot0:findTF("window/button_container/leave", slot0.pauseWindow), function ()
 
 		-- Decompilation error in this vicinity:

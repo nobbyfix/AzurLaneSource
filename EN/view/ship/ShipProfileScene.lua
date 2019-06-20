@@ -40,6 +40,7 @@ end
 slot0.reloadCVKey = function (slot0)
 	slot0.currentSkin = slot0.groupSkinList[1]
 	slot0.currentSkinWord = pg.ship_skin_words[slot0.currentSkin.id]
+	slot0.currentSkinWordEx = pg.ship_skin_words_extra[slot0.currentSkin.id]
 
 	if slot0.currentSkinWord.voice_key >= 0 then
 		slot1 = Ship.getCVKeyID(slot0.currentSkin.id)
@@ -264,6 +265,8 @@ slot0.switchLive2d = function (slot0, slot1)
 				if slot0.l2dChar and slot0.l2dChar.state == Live2D.STATE_LOADING then
 					return
 				end
+
+				slot0.chatFlag = false
 
 				slot0:switchLive2d(not slot0.live2dChecked)
 				slot0.switchLive2d:switchVoiceList(slot0.live2dChecked)
@@ -688,6 +691,8 @@ slot0.initProfile = function (slot0)
 					slot0.prevSelected = slot2:Find("selected")
 
 					setActive(slot0.prevSelected, true)
+
+					setActive.chatFlag = false
 				end)
 			else
 				slot12:setText(HXSet.hxLan(slot10.name))
@@ -723,6 +728,10 @@ slot0.initProfile = function (slot0)
 	if slot0.shipGroup.married == 1 then
 		setActive(slot4, true)
 		onButton(slot0, slot4, function ()
+			if slot0._currentVoice then
+				slot0._currentVoice:Stop(true)
+			end
+
 			slot0:emit(slot1.WEDDING_REVIEW, {
 				group = slot0.shipGroup,
 				skinID = slot0.currentSkin.id
@@ -1032,6 +1041,10 @@ slot0.appendVoiceButton = function (slot0, slot1, slot2)
 
 	onButton(slot0, slot8, function ()
 		if slot0 then
+			if slot1.l2dChar and slot1.live2dChecked and slot1.chatFlag then
+				return
+			end
+
 			if slot1._currentVoice then
 				slot1._currentVoice:Stop(true)
 			end
@@ -1051,15 +1064,63 @@ slot0.appendVoiceButton = function (slot0, slot1, slot2)
 			end
 
 			if slot1.live2dChecked and slot1.l2dChar then
-				slot1.l2dChar:TriggerAction(slot5.l2d_action, true)
+				slot1.l2dChar:TriggerAction(slot5.l2d_action)
 			end
 		else
 			pg.TipsMgr:GetInstance():ShowTips(slot6)
 		end
 	end)
+	slot0:appendVoiceExButton(slot1, slot6)
 end
 
-slot0.showChat = function (slot0, slot1, slot2)
+slot0.appendVoiceExButton = function (slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	slot4 = (slot2 and "main") or slot1.key
+	slot6 = slot0.shipGroup.maxIntimacy / 100 + ((slot0.shipGroup.married and slot0.shipGroup.married * 1000) or 0)
+
+	for slot10, slot11 in ipairs(slot5) do
+		if slot11[1] <= slot6 then
+			if slot2 and slot2 > #string.split(slot11[2], "|") then
+				return
+			end
+
+			slot12 = cloneTplTo(slot0.voiceTpl, slot0.voiceContainer)
+
+			setActive(slot12, true)
+			setText(slot0:findTF("Text", slot12), slot1.voice_name .. "Ex")
+			onButton(slot0, slot12, function ()
+				if slot0.l2dChar and slot0.live2dChecked and slot0.chatFlag then
+					return
+				end
+
+				if slot0._currentVoice then
+					slot0._currentVoice:Stop(true)
+				end
+
+				if slot1 == "headtouch" and textContent == nil then
+					LeanTween.cancel(slot0.chat.gameObject)
+
+					LeanTween.cancel.chat.localScale = Vector3(0, 0)
+				else
+					slot0:showChat(slot0, , slot3[1])
+				end
+
+				if slot0.characterModel then
+					slot0 = nil
+
+					(slot4.spine_action == "" and "stand") or slot4.spine_action.characterModel:GetComponent(typeof(SpineAnimUI)):SetAction((slot4.spine_action == "" and "stand") or slot4.spine_action, 0)
+				end
+
+				if slot0.live2dChecked and slot0.l2dChar then
+					slot0.l2dChar:SetAction(pg.AssistantInfo.action2Id[slot4.l2d_action])
+				end
+			end)
+		end
+	end
+end
+
+slot0.showChat = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -1070,7 +1131,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 96-99, warpins: 2 ---
+	--- BLOCK #1 11-15, warpins: 3 ---
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -1078,7 +1139,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 101-102, warpins: 2 ---
+	--- BLOCK #2 112-115, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -1086,7 +1147,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 107-111, warpins: 3 ---
+	--- BLOCK #3 117-118, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -1094,7 +1155,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 151-153, warpins: 2 ---
+	--- BLOCK #4 123-127, warpins: 3 ---
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -1102,7 +1163,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 160-162, warpins: 2 ---
+	--- BLOCK #5 167-169, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
@@ -1110,7 +1171,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 175-190, warpins: 3 ---
+	--- BLOCK #6 176-178, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
@@ -1118,7 +1179,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 198-202, warpins: 2 ---
+	--- BLOCK #7 191-206, warpins: 3 ---
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
@@ -1126,17 +1187,37 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 222-255, warpins: 2 ---
-	slot3, slot4, slot5, slot6 = nil
+	--- BLOCK #8 214-218, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #9 238-271, warpins: 2 ---
+	if slot0.l2dChar and slot0.live2dChecked and slot0.chatFlag then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 10-10, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot0.chatFlag = true
+	slot4, slot5, slot6, slot7 = nil
 
 	if slot2 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 4-11, warpins: 1 ---
+		--- BLOCK #0 16-23, warpins: 1 ---
 		if findTF(slot0.painting, "fitter").childCount > 0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 12-26, warpins: 1 ---
+			--- BLOCK #0 24-38, warpins: 1 ---
 			Ship.SetExpression(findTF(slot0.painting, "fitter"):GetChild(0), slot0.paintingName, "main_" .. slot2)
 			--- END OF BLOCK #0 ---
 
@@ -1151,10 +1232,10 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 27-52, warpins: 2 ---
-		slot3, slot4 = Ship.getWords(slot0.currentSkin.id, "main", slot2)
-		slot5 = Ship.getCVCalibrate(slot0.currentSkin.id, "main", slot2)
-		slot6 = Ship.getL2dSoundEffect(slot0.currentSkin.id, "main", slot2)
+		--- BLOCK #1 39-66, warpins: 2 ---
+		slot4, slot5 = Ship.getWords(slot0.currentSkin.id, "main", slot2, nil, slot3)
+		slot6 = Ship.getCVCalibrate(slot0.currentSkin.id, "main", slot2)
+		slot7 = Ship.getL2dSoundEffect(slot0.currentSkin.id, "main", slot2)
 		--- END OF BLOCK #1 ---
 
 
@@ -1162,11 +1243,11 @@ slot0.showChat = function (slot0, slot1, slot2)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 53-60, warpins: 1 ---
+		--- BLOCK #0 67-74, warpins: 1 ---
 		if findTF(slot0.painting, "fitter").childCount > 0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 61-73, warpins: 1 ---
+			--- BLOCK #0 75-87, warpins: 1 ---
 			Ship.SetExpression(findTF(slot0.painting, "fitter"):GetChild(0), slot0.paintingName, slot1)
 			--- END OF BLOCK #0 ---
 
@@ -1181,34 +1262,34 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 74-95, warpins: 2 ---
-		slot3, slot4 = Ship.getWords(slot0.currentSkin.id, slot1)
-		slot5 = Ship.getCVCalibrate(slot0.currentSkin.id, slot1)
-		slot6 = Ship.getL2dSoundEffect(slot0.currentSkin.id, slot1)
+		--- BLOCK #1 88-111, warpins: 2 ---
+		slot4, slot5 = Ship.getWords(slot0.currentSkin.id, slot1, nil, nil, slot3)
+		slot6 = Ship.getCVCalibrate(slot0.currentSkin.id, slot1)
+		slot7 = Ship.getL2dSoundEffect(slot0.currentSkin.id, slot1)
 		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	slot7 = slot0.CHAT_SHOW_TIME
+	slot8 = slot0.CHAT_SHOW_TIME
 
 	if not slot0.live2dChecked then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 100-100, warpins: 1 ---
-		slot5 = 0
+		--- BLOCK #0 116-116, warpins: 1 ---
+		slot6 = 0
 		--- END OF BLOCK #0 ---
 
 
 
 	end
 
-	if slot5 and slot5 > 0 then
+	if slot6 and slot6 > 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 106-106, warpins: 1 ---
-		slot7 = slot7 + slot5
+		--- BLOCK #0 122-122, warpins: 1 ---
+		slot8 = slot8 + slot6
 		--- END OF BLOCK #0 ---
 
 
@@ -1218,11 +1299,11 @@ slot0.showChat = function (slot0, slot1, slot2)
 	if slot0.currentSkinWord.voice_key >= 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 112-114, warpins: 1 ---
+		--- BLOCK #0 128-130, warpins: 1 ---
 		if slot0._currentVoice then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 115-119, warpins: 1 ---
+			--- BLOCK #0 131-135, warpins: 1 ---
 			slot0._currentVoice:Stop(true)
 			--- END OF BLOCK #0 ---
 
@@ -1237,8 +1318,8 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 120-123, warpins: 2 ---
-		function slot8()
+		--- BLOCK #1 136-139, warpins: 2 ---
+		function slot9()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-9, warpins: 1 ---
@@ -1284,7 +1365,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 		if slot0._delayVoiceTweenID then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 124-129, warpins: 1 ---
+			--- BLOCK #0 140-145, warpins: 1 ---
 			LeanTween.cancel(slot0._delayVoiceTweenID)
 
 			slot0._delayVoiceTweenID = nil
@@ -1301,12 +1382,12 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 130-132, warpins: 2 ---
-		if slot0.l2dChar and slot5 and slot5 ~= 0 then
+		--- BLOCK #2 146-148, warpins: 2 ---
+		if slot0.l2dChar and slot6 and slot6 ~= 0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 137-147, warpins: 1 ---
-			slot0._delayVoiceTweenID = LeanTween.delayedCall(slot5, System.Action(function ()
+			--- BLOCK #0 153-163, warpins: 1 ---
+			slot0._delayVoiceTweenID = LeanTween.delayedCall(slot6, System.Action(function ()
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-6, warpins: 1 ---
@@ -1327,8 +1408,8 @@ slot0.showChat = function (slot0, slot1, slot2)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 148-149, warpins: 3 ---
-			slot8()
+			--- BLOCK #0 164-165, warpins: 3 ---
+			slot9()
 			--- END OF BLOCK #0 ---
 
 
@@ -1341,7 +1422,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 150-150, warpins: 2 ---
+		--- BLOCK #3 166-166, warpins: 2 ---
 		--- END OF BLOCK #3 ---
 
 
@@ -1351,7 +1432,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 	if slot0._delayL2dSeID then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 154-159, warpins: 1 ---
+		--- BLOCK #0 170-175, warpins: 1 ---
 		LeanTween.cancel(slot0._delayL2dSeID)
 
 		slot0._delayL2dSeID = nil
@@ -1361,11 +1442,11 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 	end
 
-	if slot0.l2dChar and slot6 then
+	if slot0.l2dChar and slot7 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 165-174, warpins: 1 ---
-		slot0._delayL2dSeID = LeanTween.delayedCall(slot6[2], System.Action(function ()
+		--- BLOCK #0 181-190, warpins: 1 ---
+		slot0._delayL2dSeID = LeanTween.delayedCall(slot7[2], System.Action(function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-10, warpins: 1 ---
@@ -1385,13 +1466,13 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 	end
 
-	setTextEN(slot0.chatText, slot3)
+	setTextEN(slot0.chatText, slot4)
 
 	if CHAT_POP_STR_LEN < #slot0.chatText:GetComponent(typeof(Text)).text then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 191-194, warpins: 1 ---
-		slot8.alignment = TextAnchor.MiddleLeft
+		--- BLOCK #0 207-210, warpins: 1 ---
+		slot9.alignment = TextAnchor.MiddleLeft
 		--- END OF BLOCK #0 ---
 
 
@@ -1399,19 +1480,19 @@ slot0.showChat = function (slot0, slot1, slot2)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 195-197, warpins: 1 ---
-		slot8.alignment = TextAnchor.MiddleCenter
+		--- BLOCK #0 211-213, warpins: 1 ---
+		slot9.alignment = TextAnchor.MiddleCenter
 		--- END OF BLOCK #0 ---
 
 
 
 	end
 
-	if slot0.initChatBgH < slot8.preferredHeight + 120 then
+	if slot0.initChatBgH < slot9.preferredHeight + 120 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 203-212, warpins: 1 ---
-		slot0.chatBg.sizeDelta = Vector2.New(slot0.chatBg.sizeDelta.x, slot9)
+		--- BLOCK #0 219-228, warpins: 1 ---
+		slot0.chatBg.sizeDelta = Vector2.New(slot0.chatBg.sizeDelta.x, slot10)
 		--- END OF BLOCK #0 ---
 
 
@@ -1419,7 +1500,7 @@ slot0.showChat = function (slot0, slot1, slot2)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 213-221, warpins: 1 ---
+		--- BLOCK #0 229-237, warpins: 1 ---
 		slot0.chatBg.sizeDelta = Vector2.New(slot0.chatBg.sizeDelta.x, slot0.initChatBgH)
 		--- END OF BLOCK #0 ---
 
@@ -1430,15 +1511,26 @@ slot0.showChat = function (slot0, slot1, slot2)
 	LeanTween.cancel(slot0.chat.gameObject)
 
 	slot0.chat.localScale = Vector3(0, 0)
-	slot11 = LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME):setEase(LeanTweenType.easeOutBack)
-	slot10 = LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME).setEase(LeanTweenType.easeOutBack).setDelay
-	slot12 = (slot5 and slot5) or 0
+	slot12 = LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME):setEase(LeanTweenType.easeOutBack)
+	slot11 = LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME).setEase(LeanTweenType.easeOutBack).setDelay
+	slot13 = (slot6 and slot6) or 0
 
-	slot10(LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME).setEase(LeanTweenType.easeOutBack), slot12):setOnComplete(System.Action(function ()
+	slot11(LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME).setEase(LeanTweenType.easeOutBack), slot13):setOnComplete(System.Action(function ()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-29, warpins: 1 ---
-		LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(0, 0, 1), slot0.CHAT_ANIMATION_TIME):setEase(LeanTweenType.easeInBack):setDelay(slot0.CHAT_ANIMATION_TIME + LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(0, 0, 1), slot0.CHAT_ANIMATION_TIME).setEase(LeanTweenType.easeInBack))
+		--- BLOCK #0 1-36, warpins: 1 ---
+		LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(0, 0, 1), slot0.CHAT_ANIMATION_TIME):setEase(LeanTweenType.easeInBack):setDelay(slot0.CHAT_ANIMATION_TIME + LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(0, 0, 1), slot0.CHAT_ANIMATION_TIME).setEase(LeanTweenType.easeInBack)):setOnComplete(System.Action(function ()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0.chatFlag = false
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end))
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1449,33 +1541,41 @@ slot0.showChat = function (slot0, slot1, slot2)
 
 	return
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #11
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #9 256-257, warpins: 1 ---
-	if not slot5 then
+	--- BLOCK #10 272-273, warpins: 1 ---
+	if not slot6 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 258-258, warpins: 2 ---
-		slot12 = 0
+		--- BLOCK #0 274-274, warpins: 2 ---
+		slot13 = 0
 		--- END OF BLOCK #0 ---
 
 
 
 	end
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #11
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #10 259-268, warpins: 2 ---
-	--- END OF BLOCK #10 ---
+	--- BLOCK #11 275-284, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #12 285-285, warpins: 2 ---
+	--- END OF BLOCK #12 ---
 
 
 

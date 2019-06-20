@@ -2553,24 +2553,14 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 53-65, warpins: 1 ---
-		slot2 = setAnchoredPosition
-		slot3 = slot3
-		slot3 = slot3._asideSignDate
-		slot4 = Vector3
-		slot5 = 292
-		slot6 = -635.4
-		slot7 = 0
-
-		slot2(slot3, slot4(slot5, slot6, slot7))
-
+		--- BLOCK #3 53-56, warpins: 1 ---
 		slot2 = slot0
 		slot2 = slot2.signDate
 
 		if slot2 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 66-89, warpins: 1 ---
+			--- BLOCK #0 57-80, warpins: 1 ---
 			setText(slot3._asideSignDate, slot0.signDate[1])
 			setTextAlpha(slot3._asideSignDate._asideSignDate, 0)
 
@@ -2584,11 +2574,11 @@ function slot17(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 91-105, warpins: 2 ---
+			--- BLOCK #1 82-96, warpins: 2 ---
 			if slot2 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 106-121, warpins: 1 ---
+				--- BLOCK #0 97-112, warpins: 1 ---
 				slot2 = setAnchoredPosition
 				slot3 = slot3
 				slot3 = slot3._asideSignDate
@@ -2616,7 +2606,7 @@ function slot17(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 122-126, warpins: 1 ---
+			--- BLOCK #0 113-117, warpins: 1 ---
 			slot2 = setText
 			slot3 = slot3
 			slot3 = slot3._asideSignDate
@@ -2636,11 +2626,11 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 127-128, warpins: 3 ---
+		--- BLOCK #4 118-119, warpins: 3 ---
 		if slot1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 129-135, warpins: 1 ---
+			--- BLOCK #0 120-126, warpins: 1 ---
 			slot3 = slot1
 			slot2 = slot1.setOnComplete
 			slot4 = System
@@ -2700,7 +2690,7 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #5 136-136, warpins: 2 ---
+		--- BLOCK #5 127-127, warpins: 2 ---
 		return
 		--- END OF BLOCK #5 ---
 
@@ -2853,55 +2843,40 @@ function slot17(slot0, slot1)
 	if slot6 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 198-228, warpins: 1 ---
-		slot6 = bgTF
-		slot7 = slot6
-		slot6 = slot6.GetComponent
-		slot8 = typeof
-		slot9 = Image
-		slot6 = slot6(slot7, slot8(slot9))
-		slot7 = LeanTween
-		slot7 = slot7.value
-		slot8 = go
-		slot9 = bgTF
-		slot8 = slot8(slot9)
-		slot9 = slot1.bgShadow
-		slot9 = slot9[1]
-		slot10 = slot1.bgShadow
-		slot10 = slot10[2]
-		slot11 = slot1.bgShadow
-		slot11 = slot11[3]
-		slot7 = slot7(slot8, slot9, slot10, slot11)
-		slot8 = slot7
-		slot7 = slot7.setUseEstimatedTime
-		slot9 = true
-		slot7 = slot7(slot8, slot9)
-		slot8 = slot7
-		slot7 = slot7.setOnUpdate
-		slot9 = System
-		slot9 = slot9.Action_float
+		--- BLOCK #0 198-200, warpins: 1 ---
+		slot6 = slot1.useBg2
 
-		function slot10(slot0)
+		if slot6 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-9, warpins: 1 ---
-			slot1 = slot0
-			slot2 = Color
-			slot2 = slot2.New
-			slot3 = slot0
-			slot4 = slot0
-			slot5 = slot0
-			slot2 = slot2(slot3, slot4, slot5)
-			slot1.color = slot2
+			--- BLOCK #0 201-203, warpins: 1 ---
+			slot7 = slot0._bg2 or slot0._bg1.GetComponent(slot6, typeof(Image))
 
-			return
+			LeanTween.value(go(slot6), slot1.bgShadow[1], slot1.bgShadow[2], slot1.bgShadow[3]):setUseEstimatedTime(true):setOnUpdate(System.Action_float(function (slot0)
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-9, warpins: 1 ---
+				slot0.color = Color.New(slot0, slot0, slot0)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
+			end))
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 205-234, warpins: 2 ---
+			--- END OF BLOCK #1 ---
 
 
 
 		end
-
-		slot7(slot8, slot9(slot10))
 		--- END OF BLOCK #0 ---
 
 
@@ -2915,7 +2890,7 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 229-230, warpins: 2 ---
+	--- BLOCK #7 235-236, warpins: 2 ---
 	return
 	--- END OF BLOCK #7 ---
 

@@ -41,6 +41,7 @@ slot0.OPEN_SNAPSHOT = "MainUIMediator:OPEN_SNAPSHOT"
 slot0.OPEN_TRANINGCAMP = "MainUIMediator:OPEN_TRANINGCAMP"
 slot0.OPEN_COMMANDER = "MainUIMediator:OPEN_COMMANDER"
 slot0.OPEN_BULLETINBOARD = "MainUIMediator:OPEN_BULLETINBOARD"
+slot0.OPEN_ESCORT = "event open escort"
 slot0.OPEN_TECHNOLOGY = "MainUIMediator:OPEN_TECHNOLOGY"
 slot0.ON_BOSS_BATTLE = "MainUIMediator:ON_BOSS_BATTLE"
 slot0.ON_MONOPOLY = "MainUIMediator:ON_MONOPOLY"
@@ -301,7 +302,6 @@ slot0.register = function (slot0)
 			pg.TipsMgr:GetInstance():ShowTips(i18n("no_notice_tip"))
 		end
 	end)
-	slot0.viewComponent:updateActivityMapBtn(slot7:getActivityByType(ActivityConst.ACTIVITY_TYPE_ZPROJECT))
 	slot0:bind(slot0.ON_BLACKWHITE, function ()
 		slot0.viewComponent:disableTraningCampAndRefluxTip()
 		slot0.viewComponent.disableTraningCampAndRefluxTip:addSubLayers(Context.New({
@@ -400,15 +400,13 @@ slot0.register = function (slot0)
 		slot3 = getProxy(ActivityProxy)
 
 		for slot7, slot8 in ipairs(pg.task_data_trigger.all) do
-			v = pg.task_data_trigger[slot8]
+			if pg.task_data_trigger[slot8].group_id == slot1 then
+				slot11 = slot9.args[1][2]
 
-			if v.group_id == slot1 then
-				slot10 = v.args[1][2]
-
-				if slot3:getActivityById(v.activity_id) and not slot11:isEnd() and not slot2:getTaskById(slot10) and not slot2:getFinishTaskById(slot10) then
+				if slot3:getActivityById(slot9.activity_id) and not slot12:isEnd() and not slot2:getTaskById(slot11) and not slot2:getFinishTaskById(slot11) then
 					slot0:sendNotification(GAME.ACTIVITY_OPERATION, {
 						cmd = 1,
-						activity_id = slot9
+						activity_id = slot10
 					})
 
 					return
@@ -416,12 +414,26 @@ slot0.register = function (slot0)
 			end
 		end
 	end)
+	slot0:bind(slot0.OPEN_ESCORT, function ()
+		slot2, slot3 = pg.SystemOpenMgr:GetInstance():isOpenSystem(getProxy(PlayerProxy).getRawData(slot0).level, "Escort")
+
+		if not slot2 then
+			pg.TipsMgr:GetInstance():ShowTips(slot3)
+
+			return
+		end
+
+		slot0:escortHandler()
+	end)
 
 	if getProxy(MailProxy).total >= 1000 then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("warning_mail_max_2"))
 	elseif slot19.total >= 950 then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("warning_mail_max_1", slot19.total))
 	end
+
+	slot0.viewComponent:updateActivityMapBtn(slot7:getActivityByType(ActivityConst.ACTIVITY_TYPE_ZPROJECT))
+	slot0.viewComponent:updateActivityEscort()
 end
 
 slot0.onBluePrintNotify = function (slot0)
@@ -627,7 +639,8 @@ slot0.listNotificationInterests = function (slot0)
 		GAME.OPEN_MSGBOX_DONE,
 		GAME.CLOSE_MSGBOX_DONE,
 		TechnologyConst.UPDATE_REDPOINT_ON_TOP,
-		GAME.HANDLE_OVERDUE_ATTIRE_DONE
+		GAME.HANDLE_OVERDUE_ATTIRE_DONE,
+		GAME.ESCORT_FETCH_DONE
 	}
 end
 
@@ -727,6 +740,8 @@ slot0.handleNotification = function (slot0, slot1)
 		slot0:onBluePrintNotify()
 	elseif slot2 == GAME.HANDLE_OVERDUE_ATTIRE_DONE then
 		slot0.viewComponent:showOverDueAttire(slot3)
+	elseif slot2 == GAME.ESCORT_FETCH_DONE then
+		slot0:escortHandler()
 	end
 end
 
@@ -1551,6 +1566,65 @@ slot0.handleOverdueAttire = function (slot0)
 
 	return
 	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot0.escortHandler = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-7, warpins: 1 ---
+	if #getProxy(ChapterProxy).escortMaps == 0 or _.any(slot2, function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		return slot0:shouldFetch()
+		--- END OF BLOCK #0 ---
+
+
+
+	end) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 15-20, warpins: 2 ---
+		slot0:sendNotification(GAME.ESCORT_FETCH)
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 21-34, warpins: 1 ---
+		pg.m02:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
+			chapterId = slot1:getActiveChapter() and slot3.id,
+			mapIdx = slot2[1].id
+		})
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 36-40, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 41-41, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 

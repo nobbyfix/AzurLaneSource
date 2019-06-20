@@ -60,6 +60,11 @@ slot0.InitUI = function (slot0)
 	end, SFX_PANEL)
 end
 
+slot0.hidePrefabButtons = function (slot0)
+	setActive(slot0.restAllBtn, false)
+	setActive(slot0.quickBtn, false)
+end
+
 slot0.update = function (slot0, slot1, slot2, slot3)
 	slot0.callback = slot3
 
@@ -102,11 +107,16 @@ end
 
 slot0.UpdatePrefabFleet = function (slot0, slot1, slot2, slot3)
 	onInputEndEdit(slot0, slot4, function ()
-		if getInputText(getInputText) and slot0 ~= "" and slot0 ~= slot1 and slot2.callback then
-			slot2.callback({
+		slot0 = getInputText(getInputText)
+
+		if getInputText.callback then
+			slot1.callback({
 				type = LevelUIConst.COMMANDER_OP_RENAME,
-				id = LevelUIConst.COMMANDER_OP_RENAME.id,
-				str = slot0
+				id = slot2.id,
+				str = slot0,
+				onFailed = function ()
+					setInputText(setInputText, )
+				end
 			})
 		end
 	end)

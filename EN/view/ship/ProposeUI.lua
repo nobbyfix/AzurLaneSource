@@ -4854,9 +4854,18 @@ function slot2(slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 26-32, warpins: 2 ---
+			--- BLOCK #2 26-39, warpins: 2 ---
 			slot3 = slot0
 			slot3.actorPainting = slot0
+			slot3 = Ship
+			slot3 = slot3.SetExpression
+			slot4 = slot0
+			slot4 = slot4.actorPainting
+			slot5 = slot0
+			slot5 = slot5.paintingName
+
+			slot3(slot4, slot5)
+
 			slot3 = slot1
 
 			slot3()
@@ -4866,7 +4875,7 @@ function slot2(slot0, slot1, slot2, slot3)
 			if slot3 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 33-34, warpins: 1 ---
+				--- BLOCK #0 40-41, warpins: 1 ---
 				slot3 = slot2
 
 				slot3()
@@ -4883,7 +4892,7 @@ function slot2(slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 35-35, warpins: 2 ---
+			--- BLOCK #3 42-42, warpins: 2 ---
 			return
 			--- END OF BLOCK #3 ---
 

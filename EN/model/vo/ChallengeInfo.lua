@@ -19,6 +19,18 @@ slot0.UpdateChallengeInfo = function (slot0, slot1)
 	slot0._buffList = slot1.buff_list
 end
 
+slot0.checkRecord = function (slot0, slot1)
+	slot3 = slot1:getScore()
+
+	if slot1:getMode() == ChallengeProxy.MODE_CASUAL then
+		slot0._activityMaxScore = math.max(slot3, slot0._activityMaxScore)
+		slot0._seasonMaxScore = math.max(slot3, slot0._seasonMaxScore)
+	end
+
+	slot0._activityMaxLevel = math.max(slot4, slot0._activityMaxLevel)
+	slot0._seasonMaxLevel = math.max(slot1:getLevel() - 1, slot0._seasonMaxLevel)
+end
+
 slot0.getGradeList = function (slot0)
 	return {
 		activityMaxScore = slot0._activityMaxScore,
