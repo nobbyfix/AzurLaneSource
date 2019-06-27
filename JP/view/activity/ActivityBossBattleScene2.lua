@@ -49,19 +49,19 @@ slot2[4] = slot3
 slot0.phaseColor = slot2
 
 function slot2(slot0)
-	slot1 = uv0
+	slot1 = slot0
 	slot1 = slot1.phaseColor
 	slot2 = slot0.phase
 	slot1 = slot1[slot2]
 	slot1 = slot1[1]
 	slot1 = slot1 / 255
-	slot2 = uv0
+	slot2 = slot0
 	slot2 = slot2.phaseColor
 	slot3 = slot0.phase
 	slot2 = slot2[slot3]
 	slot2 = slot2[2]
 	slot2 = slot2 / 255
-	slot3 = uv0
+	slot3 = slot0
 	slot3 = slot3.phaseColor
 	slot4 = slot0.phase
 	slot3 = slot3[slot4]
@@ -133,12 +133,12 @@ function slot2(slot0, slot1, slot2, slot3, slot4)
 		slot12 = slot12(slot13, slot14, slot15)
 
 		function slot13()
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.emit
-			slot2 = uv1
+			slot2 = slot1
 			slot2 = slot2.ON_DROP
-			slot3 = uv2
+			slot3 = slot2
 
 			slot0(slot1, slot2, slot3)
 		end
@@ -254,11 +254,11 @@ function slot2(slot0, slot1)
 
 	if slot2 then
 		function slot2()
-			slot0 = uv0
+			slot0 = slot0
 			slot0 = slot0.isdead
 
 			if slot0 then
-				slot0 = uv0
+				slot0 = slot0
 				slot0 = slot0.stageList
 				slot0 = slot0[0]
 
@@ -266,13 +266,16 @@ function slot2(slot0, slot1)
 			end
 
 			slot0 = ipairs
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.stageList
 			slot0, slot1, slot2 = slot0(slot1)
 
 			for slot3, slot4 in slot0, slot1, slot2 do
-				if uv0.bossHP < slot4[1][1] + (slot3 == 1 and 1 or 0) then
-					slot5 = uv0
+				slot5 = slot0.bossHP
+				slot6 = slot4[1][1] + ((slot3 == 1 and 1) or 0)
+
+				if slot5 < slot6 then
+					slot5 = slot0
 					slot5 = slot5.bossHP
 					slot6 = slot4[1]
 					slot6 = slot6[2]
@@ -477,7 +480,7 @@ function slot2(slot0)
 	slot1 = slot0.fleetEditPanel
 
 	function slot2()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.hideFleetEdit
 
@@ -488,7 +491,7 @@ function slot2(slot0)
 	slot1 = slot0.fleetEditPanel
 
 	function slot2()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.commitEdit
 
@@ -499,18 +502,18 @@ function slot2(slot0)
 	slot1 = slot0.fleetEditPanel
 
 	function slot2()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.commitEdit
 
 		slot0(slot1)
 
 		function slot0()
-			slot0 = uv0
+			slot0 = slot0
 			slot0 = slot0.isdead
 
 			if slot0 then
-				slot0 = uv0
+				slot0 = slot0
 				slot0 = slot0.stageList
 				slot0 = slot0[0]
 
@@ -518,13 +521,16 @@ function slot2(slot0)
 			end
 
 			slot0 = ipairs
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.stageList
 			slot0, slot1, slot2 = slot0(slot1)
 
 			for slot3, slot4 in slot0, slot1, slot2 do
-				if uv0.bossHP < slot4[1][1] + (slot3 == 1 and 1 or 0) then
-					slot5 = uv0
+				slot5 = slot0.bossHP
+				slot6 = slot4[1][1] + ((slot3 == 1 and 1) or 0)
+
+				if slot5 < slot6 then
+					slot5 = slot0
 					slot5 = slot5.bossHP
 					slot6 = slot4[1]
 					slot6 = slot6[2]
@@ -538,7 +544,7 @@ function slot2(slot0)
 			end
 		end
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = slot1
 		slot1 = slot1.emit
 		slot3 = ActivityBossBattleMediator2
@@ -552,7 +558,7 @@ function slot2(slot0)
 	slot1 = slot0.fleetEditPanel
 
 	function slot2(slot0, slot1)
-		slot2 = uv0
+		slot2 = slot0
 		slot3 = slot2
 		slot2 = slot2.openShipInfo
 		slot4 = slot0
@@ -604,12 +610,12 @@ slot0.init = slot2
 
 function slot2(slot0)
 	function slot1()
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.titleEffect
 
 		if slot0 then
 			slot0 = setActive
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.titleEffect
 			slot2 = false
 
@@ -617,21 +623,21 @@ function slot2(slot0)
 		end
 
 		slot0 = setActive
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.titleTF
 		slot2 = true
 
 		slot0(slot1, slot2)
 
 		slot0 = setActive
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.top
 		slot2 = true
 
 		slot0(slot1, slot2)
 
 		slot0 = setActive
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.mainTF
 		slot2 = true
 
@@ -654,7 +660,7 @@ function slot2(slot0)
 	slot2.showAni = slot3
 
 	function slot2()
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.titleEffect
 		slot1 = slot0
 		slot0 = slot0.GetComponent
@@ -665,14 +671,14 @@ function slot2(slot0)
 
 		function slot3(slot0)
 			slot1 = setActive
-			slot2 = uv0
+			slot2 = slot0
 			slot2 = slot2.titleEffect
 			slot3 = false
 
 			slot1(slot2, slot3)
 
 			slot1 = setActive
-			slot2 = uv0
+			slot2 = slot0
 			slot2 = slot2.titleTF
 			slot3 = true
 
@@ -685,11 +691,11 @@ function slot2(slot0)
 		slot1 = slot0.SetTriggerEvent
 
 		function slot3(slot0)
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.anim
 			slot2 = true
 			slot1.enabled = slot2
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.anim
 			slot2 = slot1
 			slot1 = slot1.Play
@@ -703,7 +709,7 @@ function slot2(slot0)
 		slot1(slot2, slot3)
 
 		slot1 = setActive
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.titleEffect
 		slot3 = true
 
@@ -722,27 +728,27 @@ function slot2(slot0)
 		slot6 = true
 
 		function slot7(slot0)
-			slot1 = uv0
+			slot1 = slot0
 			slot1.titleEffect = slot0
 			slot1 = setParent
-			slot2 = uv0
+			slot2 = slot0
 			slot2 = slot2.titleEffect
-			slot3 = uv0
+			slot3 = slot0
 			slot3 = slot3._tf
 
 			slot1(slot2, slot3)
 
-			slot1 = uv1
+			slot1 = slot1
 
 			slot1()
 
 			slot1 = onButton
-			slot2 = uv0
-			slot3 = uv0
+			slot2 = slot0
+			slot3 = slot0
 			slot3 = slot3.titleEffect
 
 			function slot4()
-				slot0 = uv0
+				slot0 = slot0
 
 				slot0()
 			end
@@ -766,10 +772,10 @@ function slot2(slot0)
 	slot3 = slot0.backBtn
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.emit
-		slot2 = uv1
+		slot2 = slot1
 		slot2 = slot2.ON_BACK
 
 		slot0(slot1, slot2)
@@ -784,7 +790,7 @@ function slot2(slot0)
 	slot3 = slot0.awardBtn
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.showAwards
 
@@ -800,7 +806,7 @@ function slot2(slot0)
 	slot3 = slot0.battleBtn
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.tryBattle
 
@@ -816,24 +822,24 @@ function slot2(slot0)
 	slot3 = slot0.formationBtn
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.fleetEditPanel
 		slot1 = slot0
 		slot0 = slot0.attach
-		slot2 = uv0
+		slot2 = slot0
 
 		slot0(slot1, slot2)
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.fleetEditPanel
 		slot1 = slot0
 		slot0 = slot0.setFleets
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.fleet
 
 		slot0(slot1, slot2)
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.fleetEditPanel
 		slot1 = slot0
 		slot0 = slot0.set
@@ -848,7 +854,7 @@ function slot2(slot0)
 		slot0 = slot0()
 		slot1 = slot0
 		slot0 = slot0.BlurPanel
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.fleetEditPanel
 		slot2 = slot2._tf
 
@@ -864,7 +870,7 @@ function slot2(slot0)
 	slot3 = slot0.rankTF
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.emit
 		slot2 = ActivityBossBattleMediator2
@@ -940,18 +946,18 @@ function slot2(slot0)
 	slot3 = nil
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 
 		if slot0 then
 			slot0 = coroutine
 			slot0 = slot0.status
-			slot1 = uv0
+			slot1 = slot0
 			slot0 = slot0(slot1)
 
 			if slot0 == "suspended" then
 				slot0 = coroutine
 				slot0 = slot0.resume
-				slot1 = uv0
+				slot1 = slot0
 				slot0, slot1 = slot0(slot1)
 			end
 		end
@@ -962,19 +968,22 @@ function slot2(slot0)
 
 	function slot6()
 		slot0 = ipairs
-		slot1 = uv0
+		slot1 = slot0
 		slot0, slot1, slot2 = slot0(slot1)
 
 		for slot3, slot4 in slot0, slot1, slot2 do
-			if uv1.bossHP >= slot4[1] + (slot3 == 1 and 1 or 0) then
+			slot5 = slot1.bossHP
+			slot6 = slot4[1] + ((slot3 == 1 and 1) or 0)
+
+			if slot5 >= slot6 then
 				slot5 = slot4[1]
 
 				if slot5 == 0 then
-					slot5 = uv1
+					slot5 = slot1
 					slot5 = slot5.isdead
 
 					if slot5 then
-						slot5 = uv1
+						slot5 = slot1
 						slot5 = slot5.player
 						slot6 = slot5
 						slot5 = slot5.IsPlayed
@@ -982,11 +991,11 @@ function slot2(slot0)
 						slot5 = slot5(slot6, slot7)
 
 						if not slot5 then
-							slot5 = uv2
+							slot5 = slot2
 							slot6 = slot5
 							slot5 = slot5.Play
 							slot7 = slot4[2]
-							slot8 = uv3
+							slot8 = slot3
 
 							slot5(slot6, slot7, slot8)
 
@@ -1083,10 +1092,12 @@ function slot2(slot0)
 		setActive(slot0:findTF("monument/item", slot8), defaultValue(slot0.monument[5 - slot7], 0) == 0)
 		setActive(slot0:findTF("monument/time", slot8), defaultValue(slot0.monument[5 - slot7], 0) > 0)
 
-		if slot0.monument[5 - slot7] then
+		slot9 = slot0.monument[5 - slot7]
+
+		if slot9 then
 			slot9 = slot0.timeMgr
 			slot10 = slot9
-			slot9 = slot9.DescClientTime
+			slot9 = slot9.CTimeDescC
 			slot11 = slot0.monument
 			slot12 = 5 - slot7
 			slot11 = slot11[slot12]
@@ -1133,7 +1144,7 @@ function slot2(slot0)
 		slot3 = slot0.bonusWindow
 
 		function slot4()
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.closeAwards
 
@@ -1153,7 +1164,7 @@ function slot2(slot0)
 		slot3 = slot3(slot4, slot5)
 
 		function slot4()
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.closeAwards
 
@@ -1192,17 +1203,17 @@ function slot2(slot0)
 		slot1 = slot1.make
 
 		function slot3(slot0, slot1, slot2)
-			slot3 = uv0
+			slot3 = slot0
 			slot3 = slot3.taskList
 			slot4 = slot1 + 1
 			slot3 = slot3[slot4]
 			slot3 = slot3[1]
-			slot4 = uv0
+			slot4 = slot0
 			slot4 = slot4.taskList
 			slot5 = slot1 + 1
 			slot4 = slot4[slot5]
 			slot4 = slot4[2]
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5.taskProxy
 			slot6 = slot5
 			slot5 = slot5.getTaskById
@@ -1210,7 +1221,7 @@ function slot2(slot0)
 			slot5 = slot5(slot6, slot7)
 
 			if not slot5 then
-				slot5 = uv0
+				slot5 = slot0
 				slot5 = slot5.taskProxy
 				slot6 = slot5
 				slot5 = slot5.getFinishTaskById
@@ -1299,16 +1310,16 @@ function slot2(slot0)
 				slot8(slot9, slot10)
 
 				slot8 = onButton
-				slot9 = uv0
+				slot9 = slot0
 				slot10 = slot2
 
 				function slot11()
-					slot0 = uv0
+					slot0 = slot0
 					slot1 = slot0
 					slot0 = slot0.emit
-					slot2 = uv1
+					slot2 = slot1
 					slot2 = slot2.ON_DROP
-					slot3 = uv2
+					slot3 = slot2
 
 					slot0(slot1, slot2, slot3)
 				end
@@ -1324,14 +1335,28 @@ function slot2(slot0)
 			slot6 = slot6.EventUpdate
 
 			if slot0 == slot6 then
-				setActive(slot2:Find("target"), uv0.bossHP <= slot3)
-				setActive(slot2:Find("mask"), slot3 < uv0.bossHP)
-				setActive(slot2:Find("award/mask"), slot5:isReceive())
+				setActive(slot2:Find("target"), slot0.bossHP <= slot3)
+				setActive(slot2:Find("mask"), slot3 < slot0.bossHP)
 
 				slot6 = setActive
-				slot7 = slot2:Find("award/mask_can")
+				slot8 = slot2
+				slot7 = slot2.Find
+				slot9 = "award/mask"
+				slot7 = slot7(slot8, slot9)
+				slot9 = slot5
+				slot8 = slot5.isReceive
 
-				if uv0.bossHP <= slot3 then
+				slot6(slot7, slot8(slot9))
+
+				slot6 = setActive
+				slot8 = slot2
+				slot7 = slot2.Find
+				slot9 = "award/mask_can"
+				slot7 = slot7(slot8, slot9)
+				slot8 = slot0
+				slot8 = slot8.bossHP
+
+				if slot8 <= slot3 then
 					slot9 = slot5
 					slot8 = slot5.isFinish
 					slot8 = slot8(slot9)
@@ -1564,12 +1589,12 @@ function slot2(slot0, slot1, slot2, slot3)
 	slot7 = slot4[2]
 
 	function slot8()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.emit
 		slot2 = ActivityBossBattleMediator2
 		slot2 = slot2.ON_GET
-		slot3 = uv1
+		slot3 = slot1
 		slot3 = slot3.id
 
 		slot0(slot1, slot2, slot3)
@@ -1662,18 +1687,18 @@ function slot2(slot0, slot1)
 	slot2 = nil
 
 	function slot2(slot0)
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = slot1
 		slot1 = slot1.emit
 		slot3 = ActivityBossBattleMediator2
 		slot3 = slot3.ON_SELECT_COMMANDER
-		slot4 = uv1
+		slot4 = slot1
 		slot4 = slot4.id
 		slot5 = slot0
 
 		slot1(slot2, slot3, slot4, slot5)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = slot1
 		slot1 = slot1.hideFleetEdit
 

@@ -6,23 +6,8 @@ class("AddItemCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		slot5:addResources({
 			[id2res(slot2.id)] = slot2.count
 		})
-		slot7(getProxy(ActivityProxy):getActivitiesByType(ActivityConst.ACTIVITY_TYPE_PT_RANK))
 		slot4:updatePlayer(slot5)
-
-		for slot12, slot13 in ipairs(slot8) do
-			if slot2.id == slot13:getDataConfig("pt") and not slot13:isEnd() then
-				slot13.data1 = slot2.count + slot13.data1
-
-				slot6:updateActivity(slot13)
-
-				break
-			end
-		end
-
-		return
-	end
-
-	if slot2.dropType == DROP_TYPE_ITEM then
+	elseif slot2.dropType == DROP_TYPE_ITEM then
 		slot3 = getProxy(BagProxy)
 
 		if Item.New({
@@ -40,8 +25,10 @@ class("AddItemCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 					slot6:updateActivity(slot7)
 				end
 			elseif slot5 == 2 or slot5 == 3 then
+				slot6 = getProxy(VoteProxy)
+
 				if slot5 == 2 then
-					getProxy(VoteProxy).votes = getProxy(VoteProxy).votes + slot4.count
+					slot6.votes = slot6.votes + slot4.count
 				elseif slot5 == 3 then
 					slot6.loves = slot6.loves + slot4.count
 				end
@@ -56,15 +43,19 @@ class("AddItemCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			elseif slot5 == 7 then
 				getProxy(ChapterProxy).remasterTickets = math.min(getProxy(ChapterProxy).remasterTickets + slot2.count, pg.gameset.reactivity_ticket_max.key_value)
 			elseif slot5 == 9 then
+				slot6 = getProxy(ActivityProxy)
+
 				if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_MONOPOLY) then
 					slot7.data1_list[1] = slot7.data1_list[1] + slot2.count
 
-					getProxy(ActivityProxy):updateActivity(slot7)
+					slot6:updateActivity(slot7)
 				end
 			elseif slot5 == 10 then
+				slot6 = getProxy(ActivityProxy)
+
 				if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_MEMORYBOOK) and not table.contains(slot7.data1_list, slot2.id) then
 					table.insert(slot7.data1_list, slot2.id)
-					getProxy(ActivityProxy):updateActivity(slot7)
+					slot6:updateActivity(slot7)
 				end
 			end
 		else
@@ -73,9 +64,7 @@ class("AddItemCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	elseif slot2.dropType == DROP_TYPE_EQUIP then
 		getProxy(EquipmentProxy):addEquipmentById(slot2.id, slot2.count)
 	elseif slot2.dropType == DROP_TYPE_SHIP then
-		-- Nothing
 	elseif slot2.dropType == DROP_TYPE_SIREN_EQUIP then
-		-- Nothing
 	elseif slot2.dropType == DROP_TYPE_FURNITURE then
 		slot3 = getProxy(DormProxy)
 
@@ -129,6 +118,8 @@ class("AddItemCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		})
 		getProxy(AttireProxy).addAttireFrame(slot3, slot5)
 		pg.ToastMgr:GetInstance():ShowToast(pg.ToastMgr.TYPE_ATTIRE, slot5)
+	elseif slot2.dropType == DROP_TYPE_EMOJI then
+		getProxy(EmojiProxy):addNewEmojiID(slot2.id)
 	else
 		print("can not handle this type>>" .. slot2.dropType)
 	end

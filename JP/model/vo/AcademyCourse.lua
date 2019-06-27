@@ -4,7 +4,7 @@ slot0.MaxStudyTime = 43200
 slot0.MaxStudentSlot = 5
 slot0.MinEnergy = 30
 
-function slot0.GetProficiencyAchieved(slot0, slot1, slot2, slot3)
+slot0.GetProficiencyAchieved = function (slot0, slot1, slot2, slot3)
 	if math.floor(slot2 / 60) == 0 then
 		return 0, _.map(slot3, function ()
 			return 0
@@ -12,51 +12,47 @@ function slot0.GetProficiencyAchieved(slot0, slot1, slot2, slot3)
 	end
 
 	return math.min(slot1, slot4 * slot0.proficency_cost_per_min), _.map(slot5, function (slot0)
-		return math.min(slot0, math.floor(uv0 * uv1["proficency_to_exp_rant_" .. #uv2] / 100))
+		return math.min(slot0, math.floor((slot0 * slot1["proficency_to_exp_rant_" .. #slot2]) / 100))
 	end)
 end
 
-function slot0.Ctor(slot0)
+slot0.Ctor = function (slot0)
 	slot0.proficiency = 0
 	slot0.students = {}
 	slot0.timestamp = 0
 end
 
-function slot0.bindConfigTable(slot0)
+slot0.bindConfigTable = function (slot0)
 	return pg.class_upgrade_group
 end
 
-function slot0.getConfig(slot0, slot1)
+slot0.getConfig = function (slot0, slot1)
 	return slot0:bindConfigTable()[slot0:getDay()][slot1]
 end
 
-function slot0.getDay(slot0)
+slot0.getDay = function (slot0)
 	slot1 = slot0.timestamp
 
 	if not slot0:inClass() then
 		slot1 = pg.TimeMgr.GetInstance():GetServerTime()
 	end
 
-	if os.server_date("*t", slot1).wday - 1 == 0 then
-		slot2 = 7
-	end
-
-	return slot2
+	return pg.TimeMgr.GetInstance():GetServerTimestampWeek(slot1)
 end
 
-function slot0.getExtraRate(slot0)
-	return slot0:getDay() == 7 and 2 or 1
+slot0.getExtraRate = function (slot0)
+	return (slot0:getDay() == 7 and 2) or 1
 end
 
-function slot0.existCourse(slot0)
+slot0.existCourse = function (slot0)
 	return slot0:bindConfigTable()[slot0:getDay()] and slot2.id and slot2.id > 0
 end
 
-function slot0.inClass(slot0)
+slot0.inClass = function (slot0)
 	return slot0.timestamp > 0
 end
 
-function slot0.update(slot0, slot1)
+slot0.update = function (slot0, slot1)
 	slot0.proficiency = slot1.proficiency
 	slot0.students = _.map(slot1.students, function (slot0)
 		return slot0

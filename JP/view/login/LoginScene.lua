@@ -1,37 +1,37 @@
 slot0 = class("LoginScene", import("..base.BaseUI"))
 slot1 = 1
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "LoginUI2"
 end
 
-function slot0.getBGM(slot0)
+slot0.getBGM = function (slot0)
 	return "login"
 end
 
-function slot0.preload(slot0, slot1)
+slot0.preload = function (slot0, slot1)
 	slot0.iconSpries = {}
 
 	ResourceMgr.Inst:loadAssetBundleAsync("ui/LoginUI2_atlas", function (slot0)
-		table.insert(uv0.iconSpries, ResourceMgr.Inst:LoadAssetSync(slot0, "statu_green", typeof(Sprite), true, false))
-		table.insert(uv0.iconSpries, ResourceMgr.Inst:LoadAssetSync(slot0, "statu_gray", typeof(Sprite), true, false))
-		table.insert(uv0.iconSpries, ResourceMgr.Inst:LoadAssetSync(slot0, "statu_red", typeof(Sprite), true, false))
-		table.insert(uv0.iconSpries, ResourceMgr.Inst:LoadAssetSync(slot0, "statu_org", typeof(Sprite), true, false))
+		table.insert(slot0.iconSpries, ResourceMgr.Inst:LoadAssetSync(slot0, "statu_green", typeof(Sprite), true, false))
+		table.insert(slot0.iconSpries, ResourceMgr.Inst:LoadAssetSync(slot0, "statu_gray", typeof(Sprite), true, false))
+		table.insert(slot0.iconSpries, ResourceMgr.Inst:LoadAssetSync(slot0, "statu_red", typeof(Sprite), true, false))
+		table.insert(slot0.iconSpries, ResourceMgr.Inst:LoadAssetSync(slot0, "statu_org", typeof(Sprite), true, false))
 
-		if uv1 then
-			uv1()
+		if table.insert then
+			slot1()
 		end
 	end)
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.version = slot0:findTF("version")
 	slot0.version:GetComponent("Text").text = "ver " .. UpdateMgr.Inst.currentVersion:ToString()
 	slot0.bgLay = slot0:findTF("bg_lay")
 	slot0.accountBtn = slot0:findTF("bg_lay/buttons/account_button")
 	slot0.pressToLogin = GetOrAddComponent(slot0:findTF("background/press_to_login"), "CanvasGroup")
 
-	LeanTween.alphaCanvas(slot0.pressToLogin, 0.25, uv0):setFrom(1):setEase(LeanTweenType.easeInOutSine):setLoopPingPong()
+	LeanTween.alphaCanvas(slot0.pressToLogin, 0.25, slot0):setFrom(1):setEase(LeanTweenType.easeInOutSine):setLoopPingPong()
 
 	slot0.currentServer = slot0:findTF("current_server")
 	slot0.loginPanel = slot0:findTF("login_panel")
@@ -106,7 +106,7 @@ function slot0.init(slot0)
 	setText(findTF(slot0.currentServer, "server_name"), "")
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	playSoundEffect(SFX_CANCEL)
 
 	if isActive(slot0.serversPanel) then
@@ -126,7 +126,7 @@ function slot0.onBackPressed(slot0)
 	BilibiliSdkMgr.inst:onBackPressed()
 end
 
-function slot0.showUserAgreement(slot0, slot1)
+slot0.showUserAgreement = function (slot0, slot1)
 	slot2 = nil
 
 	if PLATFORM_CODE == PLATFORM_CH then
@@ -143,12 +143,12 @@ function slot0.showUserAgreement(slot0, slot1)
 	setActive(slot0.airijpPanel, true)
 	setText(slot0.userAgreenTF:Find("window/container/scrollrect/content/Text"), require("ShareCfg.UserAgreement").content)
 	onButton(slot0, slot0.userAgreenConfirmTF, function ()
-		if uv0 then
-			setActive(uv1.userAgreenTF, false)
-			pg.UIMgr.GetInstance():UnblurPanel(uv1.userAgreenTF, uv1._tf)
+		if slot0 then
+			setActive(slot1.userAgreenTF, false)
+			pg.UIMgr.GetInstance():UnblurPanel(slot1.userAgreenTF, slot1._tf)
 
-			if uv2 then
-				uv2()
+			if slot1.userAgreenTF then
+				slot2()
 
 				if isAiriJP() then
 					AiriLogin()
@@ -160,21 +160,22 @@ function slot0.showUserAgreement(slot0, slot1)
 		end
 	end)
 	onScroll(slot0, slot0.userAgreenTF:Find("window/container/scrollrect"), function (slot0)
-		if slot0.y <= 0.01 and not uv0 then
-			uv0 = true
+		if slot0.y <= 0.01 and not slot0 then
+			slot0 = true
 
 			if PLATFORM_CODE == PLATFORM_CH then
-				uv1.userAgreenConfirmTF:GetComponent(typeof(Image)).color = Color.New(1, 1, 1, 1)
+				slot1.userAgreenConfirmTF:GetComponent(typeof(Image)).color = Color.New(1, 1, 1, 1)
 			end
 		end
 	end)
 end
 
-function slot0.setBg(slot0)
+slot0.setBg = function (slot0)
 	slot1 = "login"
+	slot2 = pg.TimeMgr.GetInstance():CurrentSTimeDesc("%Y%m%d")
 
 	for slot6, slot7 in ipairs(SPECIAL_DATE) do
-		if slot7[1] == pg.TimeMgr.GetInstance():ServerTimeDesc("%Y%m%d") then
+		if slot7[1] == slot2 then
 			slot1 = slot7[2]
 		end
 	end
@@ -182,29 +183,29 @@ function slot0.setBg(slot0)
 	setImageSprite(slot0._bg, LoadSprite("loadingbg/" .. slot1))
 end
 
-function slot0.setCriBg(slot0)
+slot0.setCriBg = function (slot0)
 	LoadAndInstantiateAsync("effect", "loginbg", function (slot0)
 		if slot0 then
-			slot0.transform.SetParent(slot1, uv0._bg.transform, false)
+			slot0.transform.SetParent(slot1, slot0._bg.transform, false)
 			slot0.transform:SetAsFirstSibling()
 		end
 	end)
 end
 
-function slot0.setUserData(slot0, slot1)
+slot0.setUserData = function (slot0, slot1)
 	setActive(slot0.airiUidTxt, true)
 	setText(slot0.airiUidTxt, "uid: " .. slot1.arg2)
 end
 
-function slot0.setLastLogin(slot0, slot1)
+slot0.setLastLogin = function (slot0, slot1)
 	slot0.lastLoginUser = slot1
 end
 
-function slot0.setAutoLogin(slot0)
+slot0.setAutoLogin = function (slot0)
 	slot0.autoLoginEnabled = true
 end
 
-function slot0.setLastLoginServer(slot0, slot1)
+slot0.setLastLoginServer = function (slot0, slot1)
 	if not slot1 then
 		return
 	end
@@ -214,32 +215,32 @@ function slot0.setLastLoginServer(slot0, slot1)
 	slot0.lastLoginServer = slot1
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	onButton(slot0, slot0.closeUserAgreenTF, function ()
-		setActive(uv0.userAgreenTF, false)
-		pg.UIMgr.GetInstance():UnblurPanel(uv0.userAgreenTF, uv0._tf)
+		setActive(slot0.userAgreenTF, false)
+		pg.UIMgr.GetInstance():UnblurPanel(slot0.userAgreenTF, slot0._tf)
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.userDisagreeConfirmTF, function ()
-		setActive(uv0.userAgreenTF, false)
-		pg.UIMgr.GetInstance():UnblurPanel(uv0.userAgreenTF, uv0._tf)
+		setActive(slot0.userAgreenTF, false)
+		pg.UIMgr.GetInstance():UnblurPanel(slot0.userAgreenTF, slot0._tf)
 	end)
 	onButton(slot0, slot0.loginButton, function ()
-		if uv0.autoLoginEnabled and uv0.lastLoginUser then
-			uv0.event:emit(LoginMediator.ON_LOGIN, uv0.lastLoginUser)
+		if slot0.autoLoginEnabled and slot0.lastLoginUser then
+			slot0.event:emit(LoginMediator.ON_LOGIN, slot0.lastLoginUser)
 
 			return
 		end
 
-		if getInputText(uv0.loginUsername) == "" then
+		if getInputText(slot0.loginUsername) == "" then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginScene_error_noUserName"))
-			ActivateInputField(uv0.loginUsername)
+			ActivateInputField(slot0.loginUsername)
 
 			return
 		end
 
-		if getInputText(uv0.loginPassword) == "" then
+		if getInputText(slot0.loginPassword) == "" then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginScene_error_noPassword"))
-			ActivateInputField(uv0.loginPassword)
+			ActivateInputField(slot0.loginPassword)
 
 			return
 		end
@@ -249,42 +250,42 @@ function slot0.didEnter(slot0)
 			arg1 = slot0,
 			arg2 = slot1
 		}) then
-			uv0.event:emit(LoginMediator.ON_LOGIN, slot2)
+			slot0.event:emit(LoginMediator.ON_LOGIN, slot2)
 		end
 	end, SFX_CONFIRM)
 	onButton(slot0, slot0.forgetButton, function ()
 		pg.TipsMgr:GetInstance():ShowTips(i18n("word_systemClose"))
 	end, SFX_MAIN)
 	onButton(slot0, slot0.registerButton, function ()
-		setInputText(uv0.registerPassword, "")
-		setInputText(uv0.registerPassword2, "")
-		uv0:switchToRegister()
+		setInputText(slot0.registerPassword, "")
+		setInputText(slot0.registerPassword2, "")
+		setInputText:switchToRegister()
 	end, SFX_MAIN)
 	onButton(slot0, slot0.confirmButton, function ()
-		if getInputText(uv0.registerUsername) == "" then
+		if getInputText(slot0.registerUsername) == "" then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginScene_error_noUserName"))
-			ActivateInputField(uv0.registerUsername)
+			ActivateInputField(slot0.registerUsername)
 
 			return
 		end
 
-		if getInputText(uv0.registerPassword) == "" then
+		if getInputText(slot0.registerPassword) == "" then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginScene_error_noPassword"))
-			ActivateInputField(uv0.registerPassword)
+			ActivateInputField(slot0.registerPassword)
 
 			return
 		end
 
-		if getInputText(uv0.registerPassword2) ~= slot1 then
+		if getInputText(slot0.registerPassword2) ~= slot1 then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginScene_error_diffPassword"))
-			ActivateInputField(uv0.registerPassword2)
+			ActivateInputField(slot0.registerPassword2)
 
 			return
 		end
 
-		if getInputText(uv0.registerEmail) == "" then
+		if getInputText(slot0.registerEmail) == "" then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginScene_error_noMailBox"))
-			ActivateInputField(uv0.registerEmail)
+			ActivateInputField(slot0.registerEmail)
 
 			return
 		end
@@ -295,17 +296,17 @@ function slot0.didEnter(slot0)
 			arg2 = slot1,
 			arg3 = slot3
 		}) then
-			uv0.event:emit(LoginMediator.ON_REGISTER, slot4)
+			slot0.event:emit(LoginMediator.ON_REGISTER, slot4)
 		end
 	end, SFX_CONFIRM)
 	onButton(slot0, slot0.serviceBtn, function ()
 		pg.TipsMgr:GetInstance():ShowTips(i18n("word_systemClose"))
 	end, SFX_MAIN)
 	onButton(slot0, slot0.cancelButton, function ()
-		uv0:switchToLogin()
+		slot0:switchToLogin()
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.accountBtn, function ()
-		uv0:switchToLogin()
+		slot0:switchToLogin()
 	end, SFX_MAIN)
 
 	function slot1()
@@ -317,10 +318,10 @@ function slot0.didEnter(slot0)
 					BilibiliSdkMgr.inst:login(0)
 				end
 			else
-				uv0:switchToTencentLogin()
+				slot0:switchToTencentLogin()
 			end
 		else
-			uv0:switchToLogin()
+			slot0:switchToLogin()
 		end
 	end
 
@@ -328,50 +329,50 @@ function slot0.didEnter(slot0)
 		Application.OpenURL("http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/gameNetTag/4028c08b58bd467b0158bd8bd80d062a")
 	end, SFX_PANEL)
 	onButton(slot0, slot0.currentServer, function ()
-		if table.getCount(uv0.serverList or {}) == 0 then
-			uv1()
+		if slot0(slot0.serverList or {}) == 0 then
+			slot1()
 		else
-			pg.UIMgr.GetInstance():BlurPanel(uv0.serversPanel)
-			setActive(uv0.serversPanel, true)
+			pg.UIMgr.GetInstance():BlurPanel(slot0.serversPanel)
+			setActive(slot0.serversPanel, true)
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.serversPanel, function ()
-		pg.UIMgr.GetInstance():UnblurPanel(uv0.serversPanel, uv0._tf)
-		setActive(uv0.serversPanel, false)
+		pg.UIMgr.GetInstance():UnblurPanel(slot0.serversPanel, slot0._tf)
+		setActive(slot0.serversPanel, false)
 	end, SFX_CANCEL)
 	onButton(slot0, slot0:findTF("background"), function ()
-		if not uv0.initFinished then
+		if not slot0.initFinished then
 			return
 		end
 
-		if go(uv0.pressToLogin).activeSelf then
-			if table.getCount(uv0.serverList or {}) == 0 then
-				uv1()
+		if go(slot0.pressToLogin).activeSelf then
+			if slot0(slot0.serverList or {}) == 0 then
+				slot1()
 
 				return
 			end
 
-			if not uv0.lastLoginServer then
+			if not slot0.lastLoginServer then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginScene_choiseServer"))
 
 				return
 			end
 
-			if uv0.lastLoginServer.status == Server.STATUS.VINDICATE or uv0.lastLoginServer.status == Server.STATUS.FULL then
+			if slot0.lastLoginServer.status == Server.STATUS.VINDICATE or slot0.lastLoginServer.status == Server.STATUS.FULL then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginScene_server_disabled"))
 
 				return
 			end
 
-			uv0.event:emit(LoginMediator.ON_SERVER, uv0.lastLoginServer)
+			slot0.event:emit(LoginMediator.ON_SERVER, slot0.lastLoginServer)
 			playSoundEffect(SFX_CONFIRM)
 		end
 	end)
 	onInputChanged(slot0, slot0.loginUsername, function ()
-		uv0.autoLoginEnabled = false
+		slot0.autoLoginEnabled = false
 	end)
 	onInputChanged(slot0, slot0.loginPassword, function ()
-		uv0.autoLoginEnabled = false
+		slot0.autoLoginEnabled = false
 	end)
 	onButton(slot0, slot0.qqLoginBtn, function ()
 		BilibiliSdkMgr.inst:login(1)
@@ -383,7 +384,7 @@ function slot0.didEnter(slot0)
 		playSoundEffect(SFX_CONFIRM)
 
 		if not getProxy(SettingsProxy):getUserAgreement() then
-			uv0.event:emit(LoginMediator.ON_LOGIN_PROCESS)
+			slot0.event:emit(LoginMediator.ON_LOGIN_PROCESS)
 		else
 			AiriLogin()
 			pg.UIMgr.GetInstance():LoadingOn()
@@ -399,21 +400,24 @@ function slot0.didEnter(slot0)
 
 				slot0:deleteUserAreement()
 				slot0:clearAllReadHelp()
-				uv0.event:emit(LoginMediator.ON_LOGIN_PROCESS)
+				slot0.event:emit(LoginMediator.ON_LOGIN_PROCESS)
 				pg.TipsMgr:GetInstance():ShowTips(i18n("clear_transcode_cache_success"))
 			end,
 			onNo = function ()
+				return
 			end
 		})
 	end)
 	onButton(slot0, slot0.transcodeLoginBtn, function ()
-		setActive(uv0.transcodeAlert, true)
+		setActive(slot0.transcodeAlert, true)
 	end)
 	onButton(slot0, slot0.twitterLoginBtn, function ()
 		LoginWithSocial(AIRI_PLATFORM_TWITTER)
 	end)
 	onButton(slot0, slot0.tcSureBtn, function ()
-		if uv0.uidTxt.text == "" or uv0.transcodeTxt.text == "" then
+		slot1 = slot0.transcodeTxt.text
+
+		if slot0.uidTxt.text == "" or slot1 == "" then
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				hideNo = true,
 				content = i18n("transcode_empty_tip")
@@ -424,23 +428,23 @@ function slot0.didEnter(slot0)
 		end
 	end)
 	onButton(slot0, slot0.transcodeAlert, function ()
-		setActive(uv0.transcodeAlert, false)
+		setActive(slot0.transcodeAlert, false)
 	end)
 	slot0:checkVersion()
 
 	if PLAY_OPENING then
 		onButton(slot0, slot0.opBtn, function ()
-			if uv0.initFinished then
-				uv0:playOpening(true)
+			if slot0.initFinished then
+				slot0:playOpening(true)
 			end
 		end)
 
 		if PlayerPrefs.GetString("op_ver", "") ~= OP_VERSION then
 			slot0:playOpening(true, function ()
 				PlayerPrefs.SetString("op_ver", OP_VERSION)
-				uv0:playExtraVoice()
+				PlayerPrefs.SetString:playExtraVoice()
 
-				uv0.initFinished = true
+				PlayerPrefs.SetString.playExtraVoice.initFinished = true
 			end)
 
 			return
@@ -452,7 +456,7 @@ function slot0.didEnter(slot0)
 	slot0.initFinished = true
 end
 
-function slot0.checkVersion(slot0)
+slot0.checkVersion = function (slot0)
 	if PathMgr.FileExists(PathMgr.getStreamAssetsPath() .. "/" .. "version.txt") and PathMgr.FileExists(PathMgr.getStreamAssetsPath() .. "/" .. "hashes.csv") and System.Version.New(PathMgr.ReadAllText(PathMgr.getStreamingAsset("version.txt"))).CompareTo(slot1, UpdateMgr.Inst.serverVersion) < 0 then
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			content = "当前游戏不是最新版本，请重启游戏进行更新",
@@ -463,23 +467,23 @@ function slot0.checkVersion(slot0)
 	end
 end
 
-function slot0.playExtraVoice(slot0)
+slot0.playExtraVoice = function (slot0)
 	if pg.gameset.login_extra_voice.description and #slot1 > 0 then
 		pg.CriMgr.GetInstance():LoadCueSheet("cv-" .. slot3, function ()
-			if uv0.exited then
-				uv1:UnloadCueSheet(uv2)
+			if slot0.exited then
+				slot1:UnloadCueSheet(slot2)
 
 				return
 			end
 
-			uv0.loginCueSheet = uv2
+			slot0.loginCueSheet = slot2
 
-			uv1:PlayCV(uv2, "extra")
+			slot2:PlayCV(slot2, "extra")
 		end)
 	end
 end
 
-function slot0.unloadExtraVoice(slot0)
+slot0.unloadExtraVoice = function (slot0)
 	if slot0.loginCueSheet then
 		pg.CriMgr.GetInstance():UnloadCueSheet(slot0.loginCueSheet)
 
@@ -487,7 +491,7 @@ function slot0.unloadExtraVoice(slot0)
 	end
 end
 
-function slot0.autoLogin(slot0)
+slot0.autoLogin = function (slot0)
 	if slot0.lastLoginUser then
 		if slot0.autoLoginEnabled then
 			slot0.event:emit(LoginMediator.ON_LOGIN, slot0.lastLoginUser)
@@ -530,35 +534,35 @@ slot2 = {
 	}
 }
 
-function slot0.updateServerTF(slot0, slot1, slot2)
+slot0.updateServerTF = function (slot0, slot1, slot2)
 	setText(findTF(slot1, "name"), "-  " .. slot2.name .. "  -")
 	setImageSprite(findTF(slot1, "statu"), slot0.iconSpries[slot2.status + 1], true)
 
-	findTF(slot1, "statu_1"):GetComponent("Image").color = Color.New(uv0[slot2.status + 1][1], uv0[slot2.status + 1][2], uv0[slot2.status + 1][3], uv0[slot2.status + 1][4])
+	findTF(slot1, "statu_1"):GetComponent("Image").color = Color.New(slot0[slot2.status + 1][1], slot0[slot2.status + 1][2], slot0[slot2.status + 1][3], slot0[slot2.status + 1][4])
 
 	setActive(findTF(slot1, "mark"), slot2.isLogined)
 	setActive(slot0:findTF("tag_new", slot1), slot2.isNew)
 	setActive(slot0:findTF("tag_hot", slot1), slot2.isHot)
 	onButton(slot0, slot1, function ()
-		if uv0.status == Server.STATUS.VINDICATE then
+		if slot0.status == Server.STATUS.VINDICATE then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginScene_server_vindicate"))
 
 			return
 		end
 
-		if uv0.status == Server.STATUS.FULL then
+		if slot0.status == Server.STATUS.FULL then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginScene_server_full"))
 
 			return
 		end
 
-		uv1:setLastLoginServer(uv0)
-		pg.UIMgr.GetInstance():UnblurPanel(uv1.serversPanel, uv1._tf)
-		setActive(uv1.serversPanel, false)
+		slot1:setLastLoginServer(slot1.setLastLoginServer)
+		pg.UIMgr.GetInstance():UnblurPanel(slot1.serversPanel, slot1._tf)
+		setActive(pg.UIMgr.GetInstance().serversPanel, false)
 	end, SFX_CONFIRM)
 end
 
-function slot0.updateAdviceServer(slot0)
+slot0.updateAdviceServer = function (slot0)
 	if not slot0.recentTF or not slot0.adviceTF then
 		return
 	end
@@ -576,7 +580,7 @@ function slot0.updateAdviceServer(slot0)
 	end
 end
 
-function slot0.updateServerList(slot0, slot1)
+slot0.updateServerList = function (slot0, slot1)
 	slot0.serverList = slot1
 
 	removeAllChildren(slot0.servers)
@@ -586,7 +590,7 @@ function slot0.updateServerList(slot0, slot1)
 	end
 end
 
-function slot0.switchToTencentLogin(slot0)
+slot0.switchToTencentLogin = function (slot0)
 	setActive(slot0.tencentPanel, true)
 	setActive(slot0.accountBtn, false)
 	setActive(slot0.pressToLogin, false)
@@ -599,7 +603,7 @@ function slot0.switchToTencentLogin(slot0)
 	setActive(slot0.transcodeAlert, false)
 end
 
-function slot0.switchToAiriJPLogin(slot0)
+slot0.switchToAiriJPLogin = function (slot0)
 	setActive(slot0.bgLay, false)
 	setActive(slot0.airiUidTxt, false)
 	setActive(slot0.airijpPanel, true)
@@ -613,7 +617,7 @@ function slot0.switchToAiriJPLogin(slot0)
 	setActive(slot0.transcodeAlert, false)
 end
 
-function slot0.switchToLogin(slot0)
+slot0.switchToLogin = function (slot0)
 	setActive(slot0.bgLay, false)
 	setActive(slot0.tencentPanel, false)
 	setActive(slot0.accountBtn, false)
@@ -627,7 +631,7 @@ function slot0.switchToLogin(slot0)
 	setActive(slot0.transcodeAlert, false)
 end
 
-function slot0.switchToRegister(slot0)
+slot0.switchToRegister = function (slot0)
 	setActive(slot0.bgLay, false)
 	setActive(slot0.tencentPanel, false)
 	setActive(slot0.accountBtn, false)
@@ -641,7 +645,7 @@ function slot0.switchToRegister(slot0)
 	setActive(slot0.transcodeAlert, false)
 end
 
-function slot0.switchToServer(slot0)
+slot0.switchToServer = function (slot0)
 	setActive(slot0.bgLay, true)
 	slot0:updateAdviceServer()
 	setActive(slot0.tencentPanel, false)
@@ -656,25 +660,25 @@ function slot0.switchToServer(slot0)
 	setActive(slot0.transcodeAlert, false)
 end
 
-function slot0.SwitchToWaitPanel(slot0, slot1)
+slot0.SwitchToWaitPanel = function (slot0, slot1)
 	slot3 = slot0:findTF("window/content", slot2)
 	slot0.waitTimer = nil
 	slot4 = 0
 	slot5 = slot1
 	slot0.waitTimer = Timer.New(function ()
-		setText(uv0, i18n("login_wait_tip", uv1))
+		setText(setText, i18n("login_wait_tip", setText))
 
-		uv2 = uv2 - 1
+		slot2 = slot2 - 1
 
 		if math.random(0, 1) == 1 then
-			uv1 = uv2
+			slot1 = slot2
 		end
 
-		if uv2 <= 0 then
-			triggerButton(uv3:findTF("background"))
-			uv3.waitTimer:Stop()
+		if slot2 <= 0 then
+			triggerButton(slot3:findTF("background"))
+			slot3.waitTimer:Stop()
 
-			uv3.waitTimer = nil
+			"background".waitTimer = nil
 		end
 	end, 1, -1)
 
@@ -683,7 +687,7 @@ function slot0.SwitchToWaitPanel(slot0, slot1)
 	setActive(slot0:findTF("Msgbox"), true)
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	if slot0.waitTimer then
 		slot0.waitTimer:Stop()
 
@@ -695,79 +699,79 @@ function slot0.willExit(slot0)
 	end
 end
 
-function slot0.playOpening(slot0, slot1, slot2, slot3)
+slot0.playOpening = function (slot0, slot1, slot2, slot3)
 	pg.CriMgr.GetInstance():stopBGM()
 
 	function slot4()
-		setActive(uv0.openingTF, false)
+		setActive(slot0.openingTF, false)
 
-		uv0.openingAni.enabled = false
+		setActive.openingAni.enabled = false
 
-		if uv0.criAni then
-			uv0.criAni:Stop()
+		if setActive.openingAni.criAni then
+			slot0.criAni:Stop()
 		end
 
-		if uv0.openingTF then
-			pg.UIMgr.GetInstance():UnOverlayPanel(uv0.openingTF.transform, uv0._tf)
-			Destroy(uv0.openingTF)
+		if slot0.openingTF then
+			pg.UIMgr.GetInstance():UnOverlayPanel(slot0.openingTF.transform, slot0._tf)
+			Destroy(slot0.openingTF)
 
-			uv0.openingTF = nil
+			Destroy.openingTF = nil
 		end
 
-		if uv1 then
-			uv1()
+		if slot1 then
+			slot1()
 		end
 
-		uv0.cg.alpha = 1
+		slot0.cg.alpha = 1
 
 		pg.CriMgr.GetInstance():resumeNormalBGM()
 	end
 
 	function slot5()
-		if not uv0.cg then
-			uv0.cg = GetOrAddComponent(uv0._tf, "CanvasGroup")
+		if not slot0.cg then
+			slot0.cg = GetOrAddComponent(slot0._tf, "CanvasGroup")
 		end
 
-		uv0.cg.alpha = 0
+		slot0.cg.alpha = 0
 
-		setActive(uv0.openingTF, true)
+		setActive(slot0.openingTF, true)
 
-		uv0.openingAni.enabled = true
+		setActive.openingAni.enabled = true
 
-		onButton(uv0, uv0.openingTF, function ()
-			if uv0 then
-				uv1()
+		onButton(onButton, slot0.openingTF, function ()
+			if slot0 then
+				slot1()
 			end
 		end)
 
-		slot0 = uv0.openingTF:GetComponent("DftAniEvent")
+		slot0 = onButton.openingTF:GetComponent("DftAniEvent")
 
 		slot0:SetStartEvent(function (slot0)
-			if uv0.criAni then
-				uv0.criAni:Play()
+			if slot0.criAni then
+				slot0.criAni:Play()
 			end
 		end)
 		slot0:SetEndEvent(function (slot0)
-			uv0()
+			slot0()
 		end)
-		setActive(uv0.openingTF, true)
+		setActive(slot0.openingTF, true)
 	end
 
 	if IsNil(slot0.openingTF) then
 		LoadAndInstantiateAsync("ui", "opening", function (slot0)
 			slot0:SetActive(false)
 
-			uv0.openingTF = slot0
+			slot0.openingTF = slot0
 
-			pg.UIMgr.GetInstance():OverlayPanel(uv0.openingTF.transform)
+			pg.UIMgr.GetInstance():OverlayPanel(slot0.openingTF.transform)
 
-			uv0.criAni = uv0.openingTF:GetComponent("CriManaEffectUI")
+			slot0.criAni = slot0.openingTF:GetComponent("CriManaEffectUI")
 
-			setActive(uv0.openingTF, false)
+			setActive(slot0.openingTF, false)
 
-			uv0.openingAni = uv0.openingTF:GetComponent("Animator")
+			slot0.openingAni = slot0.openingTF:GetComponent("Animator")
 
-			uv1()
+			slot0()
 		end)
 	else
 		slot5()

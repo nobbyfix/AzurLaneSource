@@ -115,7 +115,7 @@ slot0.didEnter = function (slot0)
 		slot0:enterAnim()
 	end)
 	onButton(slot0, slot0.shareBtn, function ()
-		pg.ShareMgr:GetInstance():Share(pg.ShareMgr.TypeCommander)
+		pg.ShareMgr:GetInstance():Share(pg.ShareMgr.TypeCommander, pg.ShareMgr.PANEL_TYPE_PINK)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.lockBtn, function ()
 		slot0 = slot0.commanderVO:getLock()
@@ -169,7 +169,7 @@ slot0.updateInfo = function (slot0, slot1)
 
 	slot0:updateAbilitys()
 	slot0:updateTalents()
-	setText(slot0.dateTF, pg.TimeMgr.GetInstance():ServerTimeDesc("%y%m%d"))
+	setText(slot0.dateTF, pg.TimeMgr.GetInstance():CurrentSTimeDesc("%y%m%d"))
 
 	if slot1 then
 		slot1()

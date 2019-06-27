@@ -761,14 +761,13 @@ function slot2(slot0)
 					slot11 = slot11.GetInstance
 					slot11 = slot11()
 					slot12 = slot11
-					slot11 = slot11.DescTime
+					slot11 = slot11.STimeDescS
 					slot13 = slot0
 					slot13 = slot13.shipVO
 					slot13 = slot13.proposeTime
 					slot14 = "%B.%d,    %y"
-					slot15 = true
 
-					slot9(slot10, slot11(slot12, slot13, slot14, slot15))
+					slot9(slot10, slot11(slot12, slot13, slot14))
 				else
 					slot9 = slot0
 					slot9 = slot9.intimacyDesc
@@ -999,12 +998,11 @@ function slot2(slot0)
 							slot3 = slot3.GetInstance
 							slot3 = slot3()
 							slot4 = slot3
-							slot3 = slot3.DescTime
+							slot3 = slot3.STimeDescS
 							slot5 = slot0
 							slot6 = "%B.%d,    %y"
-							slot7 = true
 
-							slot1(slot2, slot3(slot4, slot5, slot6, slot7))
+							slot1(slot2, slot3(slot4, slot5, slot6))
 						end
 
 						slot0 = slot0
@@ -2564,7 +2562,7 @@ function slot2(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 38-54, warpins: 2 ---
+			--- BLOCK #2 38-55, warpins: 2 ---
 			slot2 = slot0
 			slot3 = pg
 			slot3 = slot3.ship_skin_template
@@ -2576,22 +2574,23 @@ function slot2(slot0)
 			slot2 = slot2.GetInstance
 			slot2 = slot2()
 			slot3 = slot2
-			slot2 = slot2.ServerTimeDesc
+			slot2 = slot2.CurrentSTimeDesc
 			slot4 = "%Y%m%d"
-			slot2 = slot2(slot3, slot4)
+			slot5 = true
+			slot2 = slot2(slot3, slot4, slot5)
 			slot3 = SPECIAL_PROPOSE
 
 			if slot3 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 55-58, warpins: 1 ---
+				--- BLOCK #0 56-59, warpins: 1 ---
 				slot3 = SPECIAL_PROPOSE
 				slot3 = slot3[1]
 
 				if slot3 == slot2 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 59-63, warpins: 1 ---
+					--- BLOCK #0 60-64, warpins: 1 ---
 					slot3 = ipairs
 					slot4 = SPECIAL_PROPOSE
 					slot4 = slot4[2]
@@ -2604,17 +2603,17 @@ function slot2(slot0)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #1 64-71, warpins: 0 ---
+					--- BLOCK #1 65-72, warpins: 0 ---
 					for slot6, slot7 in slot3, slot4, slot5 do
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 64-66, warpins: 1 ---
+						--- BLOCK #0 65-67, warpins: 1 ---
 						slot8 = slot7[1]
 
 						if slot8 == slot1 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 67-69, warpins: 1 ---
+							--- BLOCK #0 68-70, warpins: 1 ---
 							slot8 = slot0
 							slot9 = slot7[2]
 							slot8.handId = slot9
@@ -2630,7 +2629,7 @@ function slot2(slot0)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #1 70-71, warpins: 3 ---
+						--- BLOCK #1 71-72, warpins: 3 ---
 						--- END OF BLOCK #1 ---
 
 
@@ -2654,7 +2653,7 @@ function slot2(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 72-261, warpins: 3 ---
+			--- BLOCK #3 73-262, warpins: 3 ---
 			slot3 = slot0
 			slot4 = "ProposeHand_"
 			slot5 = slot0
@@ -3159,7 +3158,7 @@ function slot2(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #4 262-262, warpins: 2 ---
+			--- BLOCK #4 263-263, warpins: 2 ---
 			--- END OF BLOCK #4 ---
 
 

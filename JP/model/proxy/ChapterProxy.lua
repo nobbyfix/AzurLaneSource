@@ -11,31 +11,33 @@ slot0.GUILD_CHAPTER_UPDATED = "ChapterProxy:GUILD_CHAPTER_UPDATED"
 slot0.LAST_MAP_FOR_ACTIVITY = "last_map_for_activity"
 slot0.LAST_MAP = "last_map"
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
 	slot0:on(13001, function (slot0)
-		slot1 = {
-			[slot5] = slot6
-		}
+		slot1 = {}
+		slot2 = pairs
+		slot3 = slot0.data or {}
 
-		for slot5, slot6 in pairs(uv0.data or {}) do
+		for slot5, slot6 in slot2(slot3) do
 			if slot6:getPlayType() == ChapterConst.TypeMainSub then
+				slot1[slot5] = slot6
 			end
 		end
 
-		uv0.mapEliteFleetCache = {}
-		uv0.mapEliteCommanderCache = {}
+		slot0.mapEliteFleetCache = {}
+		slot0.mapEliteCommanderCache = {}
+		slot2 = {}
 
 		for slot6, slot7 in ipairs(slot0.fleet_list) do
-			table.insert(({
-				[slot7.map_id] = ()[slot7.map_id] or {}
-			})[slot7.map_id], slot7)
+			slot2[slot7.map_id] = slot2[slot7.map_id] or {}
+
+			table.insert(slot2[slot7.map_id], slot7)
 		end
 
 		for slot6, slot7 in pairs(slot2) do
-			uv0.mapEliteFleetCache[slot6], uv0.mapEliteCommanderCache[slot6] = Chapter.BuildEliteFleetList(slot7)
+			slot0.mapEliteFleetCache[slot6], slot0.mapEliteCommanderCache[slot6] = Chapter.BuildEliteFleetList(slot7)
 		end
 
-		uv0.data = {}
+		slot0.data = {}
 
 		for slot6, slot7 in ipairs(slot0.chapter_list) do
 			if not pg.chapter_template[slot7.id] then
@@ -43,61 +45,61 @@ function slot0.register(slot0)
 			else
 				slot8 = Chapter.New(slot7)
 
-				slot8:setEliteFleetList(uv0.mapEliteFleetCache[slot8:getConfig("map")] or {
+				slot8:setEliteFleetList(slot0.mapEliteFleetCache[slot8:getConfig("map")] or {
 					{},
 					{},
 					{}
 				})
-				slot8:setEliteCommanders(uv0.mapEliteCommanderCache[slot9] or {
+				slot8:setEliteCommanders(slot0.mapEliteCommanderCache[slot9] or {
 					{},
 					{},
 					{}
 				})
 
-				if uv0.data[slot8.id] then
-					uv0:updateChapter(slot8)
+				if slot0.data[slot8.id] then
+					slot0:updateChapter(slot8)
 				else
-					uv0:addChapter(slot8)
+					slot0:addChapter(slot8)
 				end
 			end
 		end
 
 		for slot6, slot7 in pairs(slot1) do
-			if uv0.data[slot6] then
+			if slot0.data[slot6] then
 				slot8.expireTime = slot7.expireTime
 				slot8.awardIndex = slot7.awardIndex
 			else
-				uv0.data[slot6] = slot7
+				slot0.data[slot6] = slot7
 			end
 		end
 
 		if slot0.current_chapter and slot0.current_chapter.id > 0 then
-			uv0.data[slot3] or Chapter.New({
+			slot0.data[slot3] or Chapter.New({
 				id = slot3
 			}):update(slot0.current_chapter)
 
-			if uv0.data[slot3] then
-				uv0:updateChapter(slot4)
+			if slot0.data[slot3] then
+				slot0:updateChapter(slot4)
 			else
-				uv0:addChapter(slot4)
+				slot0:addChapter(slot4)
 			end
 		end
 
-		uv0.repairTimes = slot0.daily_repair_count
+		slot0.repairTimes = slot0.daily_repair_count
 
 		if slot0.react_chapter then
-			uv0.remasterId = slot0.react_chapter.active_id
-			uv0.remasterTime = slot0.react_chapter.active_timestamp
-			uv0.remasterTickets = slot0.react_chapter.count
-			uv0.remasterDailyCount = slot0.react_chapter.daily_count
-			uv0.remasterTip = uv0.remasterDailyCount <= 1
+			slot0.remasterId = slot0.react_chapter.active_id
+			slot0.remasterTime = slot0.react_chapter.active_timestamp
+			slot0.remasterTickets = slot0.react_chapter.count
+			slot0.remasterDailyCount = slot0.react_chapter.daily_count
+			slot0.remasterTip = slot0.remasterDailyCount <= 1
 		end
 
-		Map.lastMap = uv0:getLastMap(uv1.LAST_MAP)
-		Map.lastMapForActivity = uv0:getLastMap(uv1.LAST_MAP_FOR_ACTIVITY)
+		Map.lastMap = slot0:getLastMap(slot1.LAST_MAP)
+		Map.lastMapForActivity = slot0:getLastMap(slot1.LAST_MAP_FOR_ACTIVITY)
 	end)
 	slot0:on(13105, function (slot0)
-		if uv0:getActiveChapter() then
+		if slot0:getActiveChapter() then
 			slot2 = 0
 
 			if _.any(slot0.ai_list, function (slot0)
@@ -115,10 +117,12 @@ function slot0.register(slot0)
 			if #slot0.map_update > 0 then
 				_.each(slot0.map_update, function (slot0)
 					if slot0.item_type == ChapterConst.AttachStory and slot0.item_data == ChapterConst.StoryTrigger then
-						if _.detect(uv0.cellAttachments, function (slot0)
-							return slot0.row == uv0.row and slot0.column == uv0.column
+						slot1 = ChapterCell.New(slot0)
+
+						if _.detect(slot0.cellAttachments, function (slot0)
+							return slot0.row == slot0.row and slot0.column == slot0.column
 						end) then
-							if slot2.flag == 3 and ChapterCell.New(slot0).flag == 4 and pg.map_event_template[slot2.attachmentId].gametip ~= "" then
+							if slot2.flag == 3 and slot1.flag == 4 and pg.map_event_template[slot2.attachmentId].gametip ~= "" then
 								pg.TipsMgr:GetInstance():ShowTips(i18n(slot3))
 							end
 
@@ -127,14 +131,14 @@ function slot0.register(slot0)
 							slot2.flag = slot1.flag
 							slot2.data = slot1.data
 						else
-							table.insert(uv0.cellAttachments, slot1)
+							table.insert(slot0.cellAttachments, slot1)
 						end
 
 						return
 					end
 
 					if slot0.item_type ~= ChapterConst.AttachNone and slot0.item_type ~= ChapterConst.AttachBorn and slot0.item_type ~= ChapterConst.AttachBorn_Sub and slot0.item_type ~= ChapterConst.AttachOni_Target and slot0.item_type ~= ChapterConst.AttachOni then
-						uv0:mergeChapterCell(ChapterCell.New(slot0))
+						slot0:mergeChapterCell(ChapterCell.New(slot0))
 					end
 				end)
 
@@ -143,7 +147,7 @@ function slot0.register(slot0)
 
 			if #slot0.ai_list > 0 then
 				_.each(slot0.ai_list, function (slot0)
-					uv0:mergeChampion(ChapterChampion.New(slot0))
+					slot0:mergeChampion(ChapterChampion.New(slot0))
 				end)
 
 				slot2 = bit.bor(slot2, bit.bor(ChapterConst.DirtyChampion, ChapterConst.DirtyAutoAction))
@@ -152,10 +156,10 @@ function slot0.register(slot0)
 			if #slot0.add_flag_list > 0 or #slot0.del_flag_list > 0 then
 				slot2 = bit.bor(slot2, ChapterConst.DirtyStrategy)
 
-				uv0:updateExtraFlag(slot1, slot0.add_flag_list, slot0.del_flag_list)
+				slot0:updateExtraFlag(slot1, slot0.add_flag_list, slot0.del_flag_list)
 			end
 
-			uv0:updateChapter(slot1, slot2)
+			slot0:updateChapter(slot1, slot2)
 		end
 	end)
 
@@ -163,40 +167,44 @@ function slot0.register(slot0)
 	slot0.shamShop = ShamBattleShop.New(0, {})
 
 	slot0:on(23001, function (slot0)
+		slot1 = slot0.sim_id
+
 		if not ChapterConst.ActivateMirror then
-			if not slot0.sim_id or not pg.sim_battle_template[slot0.sim_id] then
-				slot1 = os.server_date("*t", pg.TimeMgr.GetInstance():GetServerTime()).month
+			if not slot1 or not pg.sim_battle_template[slot1] then
+				slot1 = pg.TimeMgr.GetInstance():STimeDescS(pg.TimeMgr.GetInstance():GetServerTime(), "*t").month
 			end
 
-			uv0.shamShop:update(slot1, slot0.shop_list or {})
+			slot0.shamShop:update(slot1, slot0.shop_list or {})
 
-			uv0.shamChapter.simId = slot1
+			slot0.shamChapter.simId = slot1
 		elseif not pg.sim_battle_template[slot1] then
-			uv0.shamShop = nil
+			slot0.shamShop = nil
 		else
-			uv0.shamShop:update(slot1, slot0.shop_list or {})
+			slot0.shamShop:update(slot1, slot0.shop_list or {})
 		end
 
-		uv0.shamChapter.shamResetCount = slot0.sham_count
+		slot0.shamChapter.shamResetCount = slot0.sham_count
 
-		if uv0.shamChapter:isFirstDay() and uv0.shamChapter.shamResetCount == 0 then
-			uv0.shamChapter.shamResetCount = 1
+		if slot0.shamChapter:isFirstDay() and slot0.shamChapter.shamResetCount == 0 then
+			slot0.shamChapter.shamResetCount = 1
 		end
 
-		uv0.shamChapter.repairTimes = slot0.daily_repair_count
+		slot0.shamChapter.repairTimes = slot0.daily_repair_count
 
 		if slot0.current_sham and slot0.current_sham.id > 0 and pg.sham_battle_template[slot0.current_sham.id] then
-			uv0.shamChapter:update(slot0.current_sham)
+			slot0.shamChapter:update(slot0.current_sham)
 		else
-			uv0:localLoadShamChapter()
+			slot0:localLoadShamChapter()
 		end
 	end)
 	slot0:on(23009, function (slot0)
+		slot1 = slot0:getShamChapter()
+
 		if #slot0.cell_list > 0 then
 			_.each(slot0.cell_list, function (slot0)
-				uv0:mergeChapterCell(ChapterCell.New(slot0))
+				slot0:mergeChapterCell(ChapterCell.New(slot0))
 			end)
-			uv0:updateShamChapter(uv0:getShamChapter(), bit.bor(ChapterConst.DirtyAttachment, ChapterConst.DirtyAutoAction))
+			slot0:updateShamChapter(slot1, bit.bor(ChapterConst.DirtyAttachment, ChapterConst.DirtyAutoAction))
 		end
 	end)
 
@@ -204,23 +212,25 @@ function slot0.register(slot0)
 
 	slot0:on(61001, function (slot0)
 		if slot0 ~= nil then
-			uv0.guildChapter = GuildChapter.New()
-			uv0.guildChapter.shamResetCount = slot0.guild_count
-			uv0.guildChapter.repairTimes = slot0.daily_repair_count
+			slot0.guildChapter = GuildChapter.New()
+			slot0.guildChapter.shamResetCount = slot0.guild_count
+			slot0.guildChapter.repairTimes = slot0.daily_repair_count
 
 			if slot0.current_guild and slot0.current_guild.id > 0 and pg.sham_battle_template[slot0.current_guild.id] then
-				uv0.guildChapter:update(slot0.current_guild)
+				slot0.guildChapter:update(slot0.current_guild)
 			else
-				uv0:localLoadGuildChapter()
+				slot0:localLoadGuildChapter()
 			end
 		end
 	end)
 	slot0:on(61009, function (slot0)
+		slot1 = slot0:guildChapter()
+
 		if #slot0.cell_list > 0 then
 			_.each(slot0.cell_list, function (slot0)
-				uv0:mergeChapterCell(ChapterCell.New(slot0))
+				slot0:mergeChapterCell(ChapterCell.New(slot0))
 			end)
-			uv0:updateGuildChapter(uv0:guildChapter(), bit.bor(ChapterConst.DirtyAttachment, ChapterConst.DirtyAutoAction))
+			slot0:updateGuildChapter(slot1, bit.bor(ChapterConst.DirtyAttachment, ChapterConst.DirtyAutoAction))
 		end
 	end)
 
@@ -234,18 +244,18 @@ function slot0.register(slot0)
 	slot0.subProgress = 1
 end
 
-function slot0.buildRemasterMaps(slot0)
+slot0.buildRemasterMaps = function (slot0)
 	slot2 = pg.TimeMgr.GetInstance()
 
 	_.each(pg.re_map_template.all, function (slot0)
-		if pg.re_map_template[slot0].time == "always" or uv0:parseTimeFromConfig(slot2[2], true) <= uv0:GetServerTime() and uv0:GetServerTime() <= uv0:parseTimeFromConfig(slot2[3], true) then
+		if pg.re_map_template[slot0].time == "always" or (slot0:parseTimeFromConfig(slot2[2], true) <= slot0:GetServerTime() and slot0:GetServerTime() <= slot0:parseTimeFromConfig(slot2[3], true)) then
 			_.each(slot1.config_data, function (slot0)
-				if not uv0[pg.chapter_template[slot0].map] then
+				if not slot0[pg.chapter_template[slot0].map] then
 					Map.New({
 						id = slot1
-					}):setRemaster(uv1.id)
+					}):setRemaster(slot1.id)
 
-					uv0[slot1] = Map.New()
+					slot0[slot1] = Map.New()
 				end
 			end)
 		end
@@ -254,29 +264,29 @@ function slot0.buildRemasterMaps(slot0)
 	return {}
 end
 
-function slot0.getActiveRemaster(slot0)
+slot0.getActiveRemaster = function (slot0)
 	if slot0.remasterId and slot0.remasterId > 0 and pg.TimeMgr.GetInstance():GetServerTime() < slot0.remasterTime then
 		return slot0.remasterId
 	end
 end
 
-function slot0.getMaxEscortChallengeTimes(slot0)
+slot0.getMaxEscortChallengeTimes = function (slot0)
 	return pg.gameset.gardroad_count.key_value
 end
 
-function slot0.buildEscortMaps(slot0)
+slot0.buildEscortMaps = function (slot0)
 	slot1 = {}
 
 	if OPEN_ESCORT then
 		_.each(pg.escort_map_template.all, function (slot0)
-			table.insert(uv0, EscortInfo.New(slot0))
+			table.insert(slot0, EscortInfo.New(slot0))
 		end)
 
 		for slot5, slot6 in ipairs(pg.gameset.gardroad_count.description[1]) do
 			slot7 = pg.chapter_template[slot6]
 
 			table.insert(_.detect(slot1, function (slot0)
-				return slot0.id == uv0.map
+				return slot0.id == slot0.map
 			end).chapters, {
 				escortId = slot6,
 				chapter = Chapter.New({
@@ -289,11 +299,11 @@ function slot0.buildEscortMaps(slot0)
 	slot0.escortMaps = slot1
 end
 
-function slot0.resetEscortChallengeTimes(slot0)
+slot0.resetEscortChallengeTimes = function (slot0)
 	slot0.escortChallengeTimes = 0
 end
 
-function slot0.checkMirrorCount(slot0)
+slot0.checkMirrorCount = function (slot0)
 	if slot0.shamChapter == nil then
 		return
 	end
@@ -303,7 +313,7 @@ function slot0.checkMirrorCount(slot0)
 	end
 end
 
-function slot0.addChapterListener(slot0, slot1)
+slot0.addChapterListener = function (slot0, slot1)
 	if not slot1.dueTime or not slot0.timers then
 		return
 	end
@@ -315,22 +325,22 @@ function slot0.addChapterListener(slot0, slot1)
 	end
 
 	function slot3()
-		uv0.data[uv1.id].dueTime = nil
+		slot0.data[slot1.id].dueTime = nil
 
-		uv0.data[uv1.id]:display("times'up")
-		uv0:sendNotification(uv2.CHAPTER_UPDATED, {
+		slot0.data[slot1.id].data[nil.id]:display("times'up")
+		slot0.data[slot1.id].data[nil.id].display:sendNotification("times'up".CHAPTER_UPDATED, {
 			dirty = 0,
-			chapter = uv0.data[uv1.id]:clone()
+			chapter = slot0.data[slot1.id]:clone()
 		})
-		uv0:sendNotification(uv2.CHAPTER_TIMESUP)
+		slot0.data[slot1.id].data[nil.id].display.sendNotification:sendNotification("times'up".CHAPTER_UPDATED.CHAPTER_TIMESUP)
 	end
 
 	if slot1.dueTime - pg.TimeMgr.GetInstance():GetServerTime() > 0 then
 		slot0.timers[slot1.id] = Timer.New(function ()
-			uv0()
-			uv1.timers[uv2.id]:Stop()
+			slot0()
+			slot1.timers[slot2.id]:Stop()
 
-			uv1.timers[uv2.id] = nil
+			slot1.timers[slot2.id] = nil
 		end, slot2, 1)
 
 		slot0.timers[slot1.id]:Start()
@@ -339,7 +349,7 @@ function slot0.addChapterListener(slot0, slot1)
 	end
 end
 
-function slot0.removeChapterListener(slot0, slot1)
+slot0.removeChapterListener = function (slot0, slot1)
 	if slot0.timers[slot1] then
 		slot0.timers[slot1]:Stop()
 
@@ -347,7 +357,7 @@ function slot0.removeChapterListener(slot0, slot1)
 	end
 end
 
-function slot0.remove(slot0)
+slot0.remove = function (slot0)
 	for slot4, slot5 in pairs(slot0.timers) do
 		slot5:Stop()
 	end
@@ -355,25 +365,26 @@ function slot0.remove(slot0)
 	slot0.timers = nil
 end
 
-function slot0.existChapter(slot0, slot1)
+slot0.existChapter = function (slot0, slot1)
 	return slot0.data[slot1] ~= nil
 end
 
-function slot0.getChapterById(slot0, slot1)
+slot0.getChapterById = function (slot0, slot1)
 	if slot0.data[slot1] then
 		return slot0.data[slot1]:clone()
 	else
 		slot2 = Chapter.New({
 			id = slot1
 		})
+		slot3 = slot2:getConfig("map")
 
 		if slot2:getConfig("type") == Chapter.CustomFleet then
-			slot2:setEliteFleetList(slot0.mapEliteFleetCache[slot2:getConfig("map")] or {
+			slot2:setEliteFleetList(slot0.mapEliteFleetCache[slot3] or {
 				{},
 				{},
 				{}
 			})
-			slot2:setEliteCommanders(slot0.mapEliteCommanderCache[slot2.getConfig("map")] or {
+			slot2:setEliteCommanders(slot0.mapEliteCommanderCache[slot3] or {
 				{},
 				{},
 				{}
@@ -382,7 +393,9 @@ function slot0.getChapterById(slot0, slot1)
 			slot4 = getProxy(BayProxy):getRawData()
 
 			for slot8, slot9 in ipairs(slot2:getEliteFleetList()) do
-				while #slot9 > 0 do
+				slot10 = #slot9
+
+				while slot10 > 0 do
 					if slot4[slot9[slot10]] == nil then
 						table.remove(slot9, slot10)
 					end
@@ -396,17 +409,17 @@ function slot0.getChapterById(slot0, slot1)
 	end
 end
 
-function slot0.addChapter(slot0, slot1)
+slot0.addChapter = function (slot0, slot1)
 	slot0.data[slot1.id] = slot1:clone()
 
 	slot0:addChapterListener(slot1)
-	slot0.facade:sendNotification(uv0.CHAPTER_ADDED, {
+	slot0.facade:sendNotification(slot0.CHAPTER_ADDED, {
 		dirty = -1,
 		chapter = slot1:clone()
 	})
 end
 
-function slot0.updateChapter(slot0, slot1, slot2)
+slot0.updateChapter = function (slot0, slot1, slot2)
 	slot3 = slot0.data[slot1.id]
 	slot0.data[slot1.id] = slot1:clone()
 
@@ -416,7 +429,7 @@ function slot0.updateChapter(slot0, slot1, slot2)
 		slot0:addChapterListener(slot1)
 	end
 
-	slot0.facade:sendNotification(uv0.CHAPTER_UPDATED, {
+	slot0.facade:sendNotification(slot0.CHAPTER_UPDATED, {
 		chapter = slot1:clone(),
 		dirty = defaultValue(slot2, 0)
 	})
@@ -426,38 +439,40 @@ function slot0.updateChapter(slot0, slot1, slot2)
 	end
 end
 
-function slot0.updateExtraFlag(slot0, slot1, slot2, slot3)
+slot0.updateExtraFlag = function (slot0, slot1, slot2, slot3)
 	if not slot1:updateExtraFlags(slot2, slot3) then
 		return
 	end
 
+	slot5 = {}
+
 	for slot9, slot10 in ipairs(slot2) do
-		table.insert({}, slot10)
+		table.insert(slot5, slot10)
 	end
 
 	slot0.extraFlagUpdate = true
 
-	slot0.facade:sendNotification(uv0.CHAPTER_EXTAR_FLAG_UPDATED, slot5)
+	slot0.facade:sendNotification(slot0.CHAPTER_EXTAR_FLAG_UPDATED, slot5)
 end
 
-function slot0.extraFlagUpdated(slot0)
+slot0.extraFlagUpdated = function (slot0)
 	slot0.extraFlagUpdate = false
 end
 
-function slot0.removeChapter(slot0, slot1)
+slot0.removeChapter = function (slot0, slot1)
 	if slot0.data[slot1] then
 		slot0:removeChapterListener(slot1)
 
 		slot0.data[slot1] = nil
 
-		slot0.facade:sendNotification(uv0.CHAPTER_REMOVED, {
+		slot0.facade:sendNotification(slot0.CHAPTER_REMOVED, {
 			dirty = -1,
 			chapter = slot0.data[slot1]
 		})
 	end
 end
 
-function slot0.duplicateEliteFleet(slot0, slot1, slot2)
+slot0.duplicateEliteFleet = function (slot0, slot1, slot2)
 	if slot1:getConfig("type") == Chapter.CustomFleet then
 		slot1:EliteShipTypeFilter()
 
@@ -478,12 +493,14 @@ function slot0.duplicateEliteFleet(slot0, slot1, slot2)
 	end
 end
 
-function slot0.getSameMapChapters(slot0, slot1)
+slot0.getSameMapChapters = function (slot0, slot1)
 	slot2 = {}
 
 	if slot1:getConfig("type") == Chapter.CustomFleet then
+		slot3 = slot1:getConfig("map")
+
 		for slot7, slot8 in pairs(slot0.data) do
-			if slot8:getConfig("map") == slot1:getConfig("map") and slot8.configId ~= slot1.configId then
+			if slot8:getConfig("map") == slot3 and slot8.configId ~= slot1.configId then
 				table.insert(slot2, slot8)
 			end
 		end
@@ -492,15 +509,17 @@ function slot0.getSameMapChapters(slot0, slot1)
 	return slot2
 end
 
-function slot0.getMaps(slot0)
-	slot1 = {
-		[slot11.id] = slot11
-	}
+slot0.getMaps = function (slot0)
+	slot1 = {}
+	slot2 = pg.expedition_data_by_map
+	slot3 = (OPEN_REMASTER and slot0:buildRemasterMaps()) or {}
+	slot5 = slot0:getActiveChapter() and slot4:getConfig("map")
 
-	for slot9, slot10 in ipairs(pg.expedition_data_by_map.all) do
-		if not OPEN_REMASTER and slot0:buildRemasterMaps() or {}[slot10] or Map.New({
+	for slot9, slot10 in ipairs(slot2.all) do
+		if not slot3[slot10] or Map.New({
 			id = slot10
-		}):isInValidMap() or (slot0:getActiveChapter() and slot4:getConfig("map")) == slot11.id then
+		}):isInValidMap() or slot5 == slot11.id then
+			slot1[slot11.id] = slot11
 		end
 	end
 
@@ -510,7 +529,9 @@ function slot0.getMaps(slot0)
 		if slot1[slot8[slot13].map] then
 			if slot0.data[slot14.id] then
 				for slot20, slot21 in ipairs(slot16:getEliteFleetList()) do
-					while #slot21 > 0 do
+					slot22 = #slot21
+
+					while slot22 > 0 do
 						if slot7[slot21[slot22]] == nil then
 							table.remove(slot21, slot22)
 						end
@@ -547,15 +568,23 @@ function slot0.getMaps(slot0)
 		end
 	end
 
+	slot9 = true
+	slot11 = getProxy(PlayerProxy).getData(slot10)
+	slot12 = nil
+
 	for slot16, slot17 in ipairs(slot2.all) do
 		if slot1[slot17] then
-			slot18:updateChapters(nil)
+			slot19 = slot1[slot17 + 1]
+
+			slot18:updateChapters(slot12)
+
+			slot20 = slot18:getConfig("level_limit")
 
 			if slot18:getMapType() == Map.SCENARIO then
-				slot18:setUnlock(true and slot18:getConfig("level_limit") <= getProxy(PlayerProxy).getData(slot10).level)
+				slot18:setUnlock(slot9 and slot20 <= slot11.level)
 
-				if slot1[slot17 + 1] then
-					slot9 = slot18:isClear() and slot1[slot17 + 1]:getConfig("level_limit") <= getProxy(PlayerProxy).getData(slot10).level
+				if slot19 then
+					slot9 = slot18:isClear() and slot19:getConfig("level_limit") <= slot11.level
 				else
 					slot9 = slot18:isClear()
 				end
@@ -578,7 +607,7 @@ function slot0.getMaps(slot0)
 	return slot1
 end
 
-function slot0.getActiveChapter(slot0)
+slot0.getActiveChapter = function (slot0)
 	for slot4, slot5 in pairs(slot0.data) do
 		if slot5.active then
 			return slot5:clone()
@@ -586,7 +615,7 @@ function slot0.getActiveChapter(slot0)
 	end
 end
 
-function slot0.getNonActActiveChapter(slot0)
+slot0.getNonActActiveChapter = function (slot0)
 	for slot4, slot5 in pairs(slot0.data) do
 		if not slot5:isActivity() and slot5.active then
 			return slot5:clone()
@@ -594,7 +623,7 @@ function slot0.getNonActActiveChapter(slot0)
 	end
 end
 
-function slot0.getActActiveChapter(slot0)
+slot0.getActActiveChapter = function (slot0)
 	for slot4, slot5 in pairs(slot0.data) do
 		if slot5:isActivity() and slot5.active then
 			return slot5:clone()
@@ -602,10 +631,12 @@ function slot0.getActActiveChapter(slot0)
 	end
 end
 
-function slot0.getUnlockActMapBytype(slot0, slot1, slot2, slot3)
+slot0.getUnlockActMapBytype = function (slot0, slot1, slot2, slot3)
+	slot4 = {}
+
 	for slot9, slot10 in pairs(slot5) do
 		if slot10:getConfig("type") == slot1 and slot10:getConfig("on_activity") == slot2 then
-			table.insert({}, slot10)
+			table.insert(slot4, slot10)
 		end
 	end
 
@@ -634,7 +665,7 @@ function slot0.getUnlockActMapBytype(slot0, slot1, slot2, slot3)
 	return slot4[1]
 end
 
-function slot0.getLastMapForActivity(slot0)
+slot0.getLastMapForActivity = function (slot0)
 	slot2, slot3 = nil
 
 	if getProxy(ChapterProxy):getActActiveChapter() then
@@ -643,15 +674,17 @@ function slot0.getLastMapForActivity(slot0)
 	else
 		slot4 = slot0:getMaps()
 
-		if Map.lastMapForActivity and slot4[Map.lastMapForActivity] and slot4[Map.lastMapForActivity]:isActivity() and function (slot0)
+		function slot5(slot0)
 			return getProxy(ActivityProxy):getActivityById(slot0:getConfig("on_activity")) and not slot2:isEnd()
-		end(slot4[Map.lastMapForActivity]) then
+		end
+
+		if Map.lastMapForActivity and slot4[Map.lastMapForActivity] and slot4[Map.lastMapForActivity]:isActivity() and slot5(slot4[Map.lastMapForActivity]) then
 			slot3 = Map.lastMapForActivity
 		else
 			if Map.lastMapForActivity then
 				Map.lastMapForActivity = nil
 
-				slot0:recordLastMap(uv0.LAST_MAP_FOR_ACTIVITY, 0)
+				slot0:recordLastMap(slot0.LAST_MAP_FOR_ACTIVITY, 0)
 			end
 
 			table.sort(slot6, function (slot0, slot1)
@@ -660,14 +693,14 @@ function slot0.getLastMapForActivity(slot0)
 
 			if #getProxy(ActivityProxy):getActivitiesByType(ActivityConst.ACTIVITY_TYPE_ZPROJECT) > 0 then
 				_.each(slot6, function (slot0)
-					if _.all(_.select(_.values(uv0), function (slot0)
-						return slot0:getConfig("on_activity") == uv0.id
+					if _.all(_.select(_.values(slot0), function (slot0)
+						return slot0:getConfig("on_activity") == slot0.id
 					end), function (slot0)
 						return slot0:isActivity() and slot0:getConfig("type") == Map.EVENT
 					end) then
 						_.each(slot1, function (slot0)
 							if slot0:isUnlock() then
-								uv0 = slot0.id
+								slot0 = slot0.id
 							end
 						end)
 					elseif _.any(slot1, function (slot0)
@@ -675,41 +708,50 @@ function slot0.getLastMapForActivity(slot0)
 					end) then
 						_.each(slot1, function (slot0)
 							if slot0:getConfig("type") == Map.ACTIVITY_EASY and slot0:isUnlock() then
-								uv0 = slot0.id
+								slot0 = slot0.id
 							end
 						end)
 					else
 						_.each(slot1, function (slot0)
 							if slot0:getConfig("type") == Map.ACTIVITY_HARD and slot0:isUnlock() then
-								uv0 = slot0.id
+								slot0 = slot0.id
 							end
 						end)
 					end
 				end)
 			end
 
-			slot3 = slot3 or ActivityConst.ACTIVITY_BATTLE_MAP_ID
+			slot3 = slot3 or checkExist(slot6, {
+				1
+			}, {
+				"getConfig",
+				{
+					"config_data"
+				}
+			}, {
+				1
+			})
 		end
 	end
 
 	return slot3, slot2
 end
 
-function slot0.inWarTime(slot0)
+slot0.inWarTime = function (slot0)
 	if slot0:getActiveChapter() then
 		return slot1:inWartime()
 	end
 end
 
-function slot0.isInVaildFleet(slot0)
+slot0.isInVaildFleet = function (slot0)
 	return not slot0:getActiveChapter() or not slot1.fleet:isValid()
 end
 
-function slot0.checkNextFleet(slot0)
+slot0.checkNextFleet = function (slot0)
 	return not slot0:getActiveChapter() or slot1.fleet:isValid() or slot1:getNextValidIndex() <= 0
 end
 
-function slot0.inChapterLine(slot0, slot1)
+slot0.inChapterLine = function (slot0, slot1)
 	if slot0:getActiveChapter() and slot2.fleet.line.row == slot1.row and slot2.fleet.line.column == slot1.column then
 		if slot1.attachment and slot1.flag then
 			return slot0:getChapterCell(slot1)
@@ -719,13 +761,13 @@ function slot0.inChapterLine(slot0, slot1)
 	end
 end
 
-function slot0.getChapterCell(slot0, slot1)
+slot0.getChapterCell = function (slot0, slot1)
 	if slot0:getActiveChapter() then
 		return slot2:getChapterCell(slot1.row, slot1.column).attachment == slot1.attachment and slot3.flag == slot1.flag
 	end
 end
 
-function slot0.updateActiveChapterShips(slot0)
+slot0.updateActiveChapterShips = function (slot0)
 	for slot4, slot5 in pairs(slot0.data) do
 		if slot5.active then
 			_.each(slot5.fleets, function (slot0)
@@ -735,29 +777,35 @@ function slot0.updateActiveChapterShips(slot0)
 	end
 end
 
-function slot0.resetRepairTimes(slot0)
+slot0.resetRepairTimes = function (slot0)
 	slot0.repairTimes = 0
 end
 
-function slot0.getUseableEliteMap(slot0)
+slot0.getUseableEliteMap = function (slot0)
+	slot2 = {}
+
 	for slot6, slot7 in pairs(slot1) do
 		if slot7:getMapType() == Map.ELITE and slot7:isEliteEnabled() then
+			slot2[#slot2 + 1] = slot7
 		end
 	end
 
 	return slot2
 end
 
-function slot0.getUseableActivityMap(slot0)
+slot0.getUseableActivityMap = function (slot0)
+	slot2 = {}
+
 	for slot6, slot7 in pairs(slot1) do
 		if slot7:getMapType() == Map.ACTIVITY_HARD then
+			slot2[#slot2 + 1] = slot7
 		end
 	end
 
 	return slot2
 end
 
-function slot0.getUseableMaxEliteMap(slot0)
+slot0.getUseableMaxEliteMap = function (slot0)
 	if #slot0:getUseableEliteMap() == 0 then
 		return false
 	end
@@ -769,7 +817,7 @@ function slot0.getUseableMaxEliteMap(slot0)
 	return slot1[1]
 end
 
-function slot0.eliteFleetRecommend(slot0, slot1, slot2)
+slot0.eliteFleetRecommend = function (slot0, slot1, slot2)
 	slot3 = getProxy(BayProxy)
 	slot4 = slot1:getEliteFleetList()[slot2]
 	slot6 = {}
@@ -794,16 +842,20 @@ function slot0.eliteFleetRecommend(slot0, slot1, slot2)
 		end
 	end
 
+	slot11 = {
+		[TeamType.Main] = slot6,
+		[TeamType.Vanguard] = slot7,
+		[TeamType.Submarine] = slot8
+	}
+
 	for slot15, slot16 in ipairs(slot4) do
 		slot20 = 0
+		slot21 = nil
+		slot20 = (table.contains(slot11[pg.ship_data_by_type[slot9[slot16].getShipType(slot17)].team_type], slot9[slot16].getShipType(slot17)) and slot18) or 0
 
-		for slot25, slot26 in ipairs(nil) do
-			if slot26 == (table.contains(({
-				[TeamType.Main] = slot6,
-				[TeamType.Vanguard] = slot7,
-				[TeamType.Submarine] = slot8
-			})[pg.ship_data_by_type[slot9[slot16].getShipType(slot17)].team_type], slot9[slot16].getShipType(slot17)) and slot18 or 0) then
-				table.remove(nil, slot25)
+		for slot25, slot26 in ipairs(slot21) do
+			if slot26 == slot20 then
+				table.remove(slot21, slot25)
 
 				break
 			end
@@ -811,9 +863,9 @@ function slot0.eliteFleetRecommend(slot0, slot1, slot2)
 	end
 
 	function slot12(slot0)
-		if uv0:getEliteRecommendShip(slot0, uv1) then
-			uv1[#uv1 + 1] = slot1.id
-			uv2[#uv2 + 1] = slot1.id
+		if slot0:getEliteRecommendShip(slot0, slot0.getEliteRecommendShip) then
+			slot1[#slot1 + 1] = slot1.id
+			slot1.id[#slot2 + 1] = slot1.id
 		end
 	end
 
@@ -824,12 +876,10 @@ function slot0.eliteFleetRecommend(slot0, slot1, slot2)
 			if type(slot17) == "string" then
 				slot18 = Clone(ShipType.BundleList[slot17])
 			elseif type(slot17) == "number" then
-				slot18 = (slot17 ~= 0 or TeamType.MainShipType) and {
+				slot12((slot17 ~= 0 or TeamType.MainShipType) and {
 					slot17
-				}
+				})
 			end
-
-			slot12(slot18)
 		end
 
 		for slot16, slot17 in ipairs(slot7) do
@@ -838,12 +888,10 @@ function slot0.eliteFleetRecommend(slot0, slot1, slot2)
 			if type(slot17) == "string" then
 				slot18 = Clone(ShipType.BundleList[slot17])
 			elseif type(slot17) == "number" then
-				slot18 = (slot17 ~= 0 or TeamType.VanguardShipType) and {
+				slot12((slot17 ~= 0 or TeamType.VanguardShipType) and {
 					slot17
-				}
+				})
 			end
-
-			slot12(slot18)
 		end
 	else
 		for slot16, slot17 in ipairs(slot8) do
@@ -852,96 +900,94 @@ function slot0.eliteFleetRecommend(slot0, slot1, slot2)
 			if type(slot17) == "string" then
 				slot18 = Clone(ShipType.BundleList[slot17])
 			elseif type(slot17) == "number" then
-				slot18 = (slot17 ~= 0 or TeamType.SubShipType) and {
+				slot12((slot17 ~= 0 or TeamType.SubShipType) and {
 					slot17
-				}
+				})
 			end
-
-			slot12(slot18)
 		end
 	end
 end
 
-function slot0.isClear(slot0, slot1)
+slot0.isClear = function (slot0, slot1)
 	return slot0:getChapterById(slot1) and slot2:isClear()
 end
 
-function slot0.getShamChapter(slot0)
+slot0.getShamChapter = function (slot0)
 	return Clone(slot0.shamChapter)
 end
 
-function slot0.updateShamChapter(slot0, slot1, slot2)
+slot0.updateShamChapter = function (slot0, slot1, slot2)
 	slot0.shamChapter = slot1
 
-	slot0.facade:sendNotification(uv0.SHAM_CHAPTER_UPDATED, {
+	slot0.facade:sendNotification(slot0.SHAM_CHAPTER_UPDATED, {
 		shamChapter = slot1:clone(),
 		dirty = defaultValue(slot2, 0)
 	})
 	slot0.shamChapter.fleet:clearShipHpChange()
 end
 
-function slot0.updateShamChapterShips(slot0)
+slot0.updateShamChapterShips = function (slot0)
 	slot0.shamChapter:flushShips()
 end
 
-function slot0.localSaveShamChapter(slot0)
+slot0.localSaveShamChapter = function (slot0)
 	slot0.shamChapter:localSaveChapter()
 end
 
-function slot0.resetShamChapter(slot0)
+slot0.resetShamChapter = function (slot0)
 	slot0.shamChapter.shamResetCount = 0
 	slot0.shamChapter.repairTimes = 0
 end
 
-function slot0.getShamShop(slot0)
+slot0.getShamShop = function (slot0)
 	return Clone(slot0.shamShop)
 end
 
-function slot0.updateShamShop(slot0, slot1)
+slot0.updateShamShop = function (slot0, slot1)
 	slot0.shamShop = slot1
 
-	slot0:sendNotification(uv0.SHAM_SHOP_UPDATED)
+	slot0:sendNotification(slot0.SHAM_SHOP_UPDATED)
 end
 
-function slot0.localLoadShamChapter(slot0)
+slot0.localLoadShamChapter = function (slot0)
 	slot0.shamChapter:localLoadChapter()
 end
 
-function slot0.getGuildChapter(slot0)
+slot0.getGuildChapter = function (slot0)
 	return Clone(slot0.guildChapter)
 end
 
-function slot0.localLoadGuildChapter(slot0)
+slot0.localLoadGuildChapter = function (slot0)
 	slot0.guildChapter:localLoadChapter()
 end
 
-function slot0.localSaveGuildChapter(slot0)
+slot0.localSaveGuildChapter = function (slot0)
 	slot0.guildChapter:localSaveChapter()
 end
 
-function slot0.updateGuildChapter(slot0, slot1, slot2)
+slot0.updateGuildChapter = function (slot0, slot1, slot2)
 	slot0.guildChapter = slot1
 
-	slot0.facade:sendNotification(uv0.GUILD_CHAPTER_UPDATED, {
+	slot0.facade:sendNotification(slot0.GUILD_CHAPTER_UPDATED, {
 		guildChapter = slot1:clone(),
 		dirty = defaultValue(slot2, 0)
 	})
 	slot0.guildChapter.fleet:clearShipHpChange()
 end
 
-function slot0.updateGuildChapterShips(slot0)
+slot0.updateGuildChapterShips = function (slot0)
 	if slot0.guildChapter then
 		slot0.guildChapter:flushShips()
 	end
 end
 
-function slot0.recordLastMap(slot0, slot1, slot2)
+slot0.recordLastMap = function (slot0, slot1, slot2)
 	slot3 = false
 
-	if slot1 == uv0.LAST_MAP_FOR_ACTIVITY then
+	if slot1 == slot0.LAST_MAP_FOR_ACTIVITY then
 		Map.lastMapForActivity = slot2
 		slot3 = true
-	elseif slot1 == uv0.LAST_MAP and slot2 ~= Map.lastMap then
+	elseif slot1 == slot0.LAST_MAP and slot2 ~= Map.lastMap then
 		Map.lastMap = slot2
 		slot3 = true
 	end
@@ -952,21 +998,21 @@ function slot0.recordLastMap(slot0, slot1, slot2)
 	end
 end
 
-function slot0.getLastMap(slot0, slot1)
+slot0.getLastMap = function (slot0, slot1)
 	if PlayerPrefs.GetInt(slot1 .. getProxy(PlayerProxy):getRawData().id) ~= 0 then
 		return slot3
 	end
 end
 
-function slot0.getEscortShop(slot0)
+slot0.getEscortShop = function (slot0)
 	return Clone(slot0.escortShop)
 end
 
-function slot0.updateEscortShop(slot0, slot1)
+slot0.updateEscortShop = function (slot0, slot1)
 	slot0.escortShop = slot1
 end
 
-function slot0.removeEscortChapter(slot0, slot1)
+slot0.removeEscortChapter = function (slot0, slot1)
 	for slot5, slot6 in pairs(slot0.escortMaps) do
 		for slot10 = #slot6.chapters, 1, -1 do
 			if slot6.chapters[slot10].chapter.id == slot1 then
@@ -976,13 +1022,13 @@ function slot0.removeEscortChapter(slot0, slot1)
 	end
 end
 
-function slot0.recordLastMap(slot0, slot1, slot2)
+slot0.recordLastMap = function (slot0, slot1, slot2)
 	slot3 = false
 
-	if slot1 == uv0.LAST_MAP_FOR_ACTIVITY then
+	if slot1 == slot0.LAST_MAP_FOR_ACTIVITY then
 		Map.lastMapForActivity = slot2
 		slot3 = true
-	elseif slot1 == uv0.LAST_MAP and slot2 ~= Map.lastMap then
+	elseif slot1 == slot0.LAST_MAP and slot2 ~= Map.lastMap then
 		Map.lastMap = slot2
 		slot3 = true
 	end
@@ -993,13 +1039,13 @@ function slot0.recordLastMap(slot0, slot1, slot2)
 	end
 end
 
-function slot0.getLastMap(slot0, slot1)
+slot0.getLastMap = function (slot0, slot1)
 	if PlayerPrefs.GetInt(slot1 .. getProxy(PlayerProxy):getRawData().id) ~= 0 then
 		return slot3
 	end
 end
 
-function slot0.getChapterCommandes(slot0)
+slot0.getChapterCommandes = function (slot0)
 	slot1 = {}
 
 	for slot5, slot6 in pairs(slot0.data) do
@@ -1013,7 +1059,7 @@ function slot0.getChapterCommandes(slot0)
 	return slot1
 end
 
-function slot0.getFleetCommander(slot0, slot1, slot2)
+slot0.getFleetCommander = function (slot0, slot1, slot2)
 	for slot6, slot7 in pairs(slot0.data) do
 		if slot7.id == slot1 then
 			for slot12, slot13 in pairs(slot8) do
@@ -1025,7 +1071,7 @@ function slot0.getFleetCommander(slot0, slot1, slot2)
 	end
 end
 
-function slot0.getOtherFleetCommander(slot0, slot1, slot2)
+slot0.getOtherFleetCommander = function (slot0, slot1, slot2)
 	slot3 = {}
 
 	for slot7, slot8 in pairs(slot0.data) do
@@ -1041,16 +1087,19 @@ function slot0.getOtherFleetCommander(slot0, slot1, slot2)
 	return slot3
 end
 
-function slot0.getSubAidFlag(slot0)
+slot0.getSubAidFlag = function (slot0)
+	slot1 = ys.Battle.BattleConst.SubAidFlag
+	slot2 = slot0.fleet
+
 	if _.detect(slot0.fleets, function (slot0)
-		return slot0:getFleetType() == FleetType.Submarine and slot0:isValid() and slot0:inHuntingRange(uv0.line.row, uv0.line.column)
+		return slot0:getFleetType() == FleetType.Submarine and slot0:isValid() and slot0:inHuntingRange(slot0.line.row, slot0.line.column)
 	end) then
 		slot5 = getProxy(PlayerProxy).getRawData(slot4)
-		slot6, slot7 = slot0:getFleetCost(slot0.fleet)
+		slot6, slot7 = slot0:getFleetCost(slot2)
 		slot8, slot9 = slot0:getFleetAmmo(slot3)
 
 		if slot9 <= 0 then
-			return ys.Battle.BattleConst.SubAidFlag.AMMO_EMPTY
+			return slot1.AMMO_EMPTY
 		elseif slot5.oil < slot3:getSummonCost() + slot7.oil then
 			return slot1.OIL_EMPTY
 		else
@@ -1061,19 +1110,19 @@ function slot0.getSubAidFlag(slot0)
 	end
 end
 
-function slot0.ifShowRemasterTip(slot0)
+slot0.ifShowRemasterTip = function (slot0)
 	return slot0.remasterTip
 end
 
-function slot0.setRemasterTip(slot0, slot1)
+slot0.setRemasterTip = function (slot0, slot1)
 	slot0.remasterTip = slot1
 end
 
-function slot0.updateRemasterTicketsNum(slot0, slot1)
+slot0.updateRemasterTicketsNum = function (slot0, slot1)
 	slot0.remasterTickets = slot1
 end
 
-function slot0.updateDailyCount(slot0)
+slot0.updateDailyCount = function (slot0)
 	slot0.remasterDailyCount = slot0.remasterDailyCount + 2
 end
 

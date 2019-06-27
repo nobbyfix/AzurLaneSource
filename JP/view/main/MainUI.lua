@@ -790,7 +790,6 @@ slot0.switchForm = function (slot0, slot1)
 			slot0:ejectGimmick(slot0._commanderPanel, slot0.REVERT_HERIZONTAL_VERTICAL)
 			slot0:ejectGimmick(slot0._commanderPanelbg, slot0.REVERT_HERIZONTAL_VERTICAL)
 			slot0:paintMove(slot0.PAINT_DEFAULT_POS_X, "mainNormal", true, 0)
-			setActive(slot0:findTF("Sea/vert"), true)
 		elseif slot1 == slot0.STATE_ALL_HIDE then
 			slot0:concealGimmick(slot0._bottomPanel, slot0.DIRECTION_DOWN)
 			slot0:concealGimmick(slot0._btmbg, slot0.DIRECTION_DOWN)
@@ -801,7 +800,6 @@ slot0.switchForm = function (slot0, slot1)
 			slot0:concealGimmick(slot0._commanderPanel, slot0.DIRECTION_UP_LEFT)
 			slot0:concealGimmick(slot0._commanderPanelbg, slot0.DIRECTION_UP_LEFT)
 			slot0:paintMove(slot0._paintingOffset, "mainFullScreen", true, 0, 0)
-			setActive(slot0:findTF("Sea/vert"), false)
 		end
 	end
 end
@@ -3108,14 +3106,119 @@ slot0.updateSeverNotices = function (slot0, slot1)
 
 end
 
-slot0.updateSettingsNotice = function (slot0, slot1)
+slot0.UpdateBtnTips = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-9, warpins: 1 ---
-	setActive(slot0._settingBtn:Find("tip"), slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = false
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 6-10, warpins: 0 ---
+	for slot7, slot8 in pairs(slot2) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 6-7, warpins: 1 ---
+		slot3 = slot3 or slot8
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 9-10, warpins: 3 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 11-15, warpins: 1 ---
+	setActive(slot1, slot3)
 
 	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot4 = {}
+
+slot0.updateSettingsNotice = function (slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	if slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 3-5, warpins: 1 ---
+		slot0[slot2] = slot1
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 6-9, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 10-13, warpins: 0 ---
+		for slot6, slot7 in pairs(slot0) do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 10-11, warpins: 1 ---
+			slot0[slot6] = slot1
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 12-13, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+
+
+		end
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 14-23, warpins: 2 ---
+	slot0:UpdateBtnTips(slot0._settingBtn:Find("tip"), slot0)
+
+	return
+	--- END OF BLOCK #1 ---
 
 
 
@@ -3174,7 +3277,7 @@ slot0.notifyActivitySummary = function (slot0, slot1, slot2)
 		slot0.emit(slot1, MainUIMediator.GO_SCENE, {
 			SCENE.ACTIVITY,
 			{
-				id = (slot0.emit and slot1.id) or ActivityConst.DEFAULT_JUMP_ID
+				id = slot0.emit and slot1.id
 			}
 		})
 
@@ -3186,7 +3289,7 @@ slot0.notifyActivitySummary = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 20-23, warpins: 2 ---
+		--- BLOCK #1 16-19, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 

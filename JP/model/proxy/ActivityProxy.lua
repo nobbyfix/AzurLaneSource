@@ -229,7 +229,7 @@ slot0.findNextAutoActivity = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 15-126, warpins: 0 ---
+	--- BLOCK #1 15-130, warpins: 0 ---
 	for slot7, slot8 in ipairs(slot0:getPanelActivities()) do
 
 		-- Decompilation error in this vicinity:
@@ -344,11 +344,11 @@ slot0.findNextAutoActivity = function (slot0)
 					if slot9 == ActivityConst.ACTIVITY_TYPE_MONTHSIGN then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 94-102, warpins: 1 ---
-						if os.server_date("*t", slot3).year ~= slot8.data1 or slot10.month ~= slot8.data2 then
+						--- BLOCK #0 94-106, warpins: 1 ---
+						if pg.TimeMgr.GetInstance():STimeDescS(slot3, "*t").year ~= slot8.data1 or slot10.month ~= slot8.data2 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 107-114, warpins: 2 ---
+							--- BLOCK #0 111-118, warpins: 2 ---
 							slot8.data1 = slot10.year
 							slot8.data2 = slot10.month
 							slot8.data1_list = {}
@@ -361,7 +361,7 @@ slot0.findNextAutoActivity = function (slot0)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #1 115-115, warpins: 2 ---
+							--- BLOCK #1 119-119, warpins: 2 ---
 							break
 							--- END OF BLOCK #1 ---
 
@@ -370,7 +370,7 @@ slot0.findNextAutoActivity = function (slot0)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #2 115-115, warpins: 0 ---
+							--- BLOCK #2 119-119, warpins: 0 ---
 							--- END OF BLOCK #2 ---
 
 
@@ -378,11 +378,11 @@ slot0.findNextAutoActivity = function (slot0)
 						else
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 116-122, warpins: 1 ---
+							--- BLOCK #0 120-126, warpins: 1 ---
 							if not table.contains(slot8.data1_list, slot10.day) then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 123-124, warpins: 1 ---
+								--- BLOCK #0 127-128, warpins: 1 ---
 								slot1 = slot8
 
 								--- END OF BLOCK #0 ---
@@ -392,7 +392,7 @@ slot0.findNextAutoActivity = function (slot0)
 
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #1 125-125, warpins: 1 ---
+								--- BLOCK #1 129-129, warpins: 1 ---
 								break
 								--- END OF BLOCK #1 ---
 
@@ -431,7 +431,7 @@ slot0.findNextAutoActivity = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 125-126, warpins: 13 ---
+		--- BLOCK #1 129-130, warpins: 13 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -445,7 +445,7 @@ slot0.findNextAutoActivity = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 127-127, warpins: 5 ---
+	--- BLOCK #2 131-131, warpins: 5 ---
 	return slot1
 	--- END OF BLOCK #2 ---
 
