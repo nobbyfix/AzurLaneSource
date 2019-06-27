@@ -48,7 +48,6 @@ slot0.initUI = function (slot0)
 	slot0.canvasGroup.blocksRaycasts = not slot0.canvasGroup.blocksRaycasts
 	slot0.canvasGroup.blocksRaycasts = not slot0.canvasGroup.blocksRaycasts
 	slot0.topChapter = slot0:findTF("top_chapter", slot0.topPanel)
-	slot0.topChapterLine = slot0:findTF("main/title_chapter_lines")
 	slot0.chapterName = slot0:findTF("title_chapter/name", slot0.topChapter)
 	slot0.chapterNoTitle = slot0:findTF("title_chapter/chapter", slot0.topChapter)
 	slot0.resChapter = slot0:findTF("resources", slot0.topChapter)
@@ -56,7 +55,6 @@ slot0.initUI = function (slot0)
 
 	slot0.resPanel:setParent(slot0.resChapter, false)
 	setActive(slot0.topChapter, true)
-	setActive(slot0.topChapterLine, true)
 
 	slot0.leftChapter = slot0:findTF("main/left_chapter")
 	slot0.leftCanvasGroup = slot0.leftChapter:GetComponent(typeof(CanvasGroup))
@@ -1515,15 +1513,12 @@ slot0.updateActivityBtns = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #13 220-225, warpins: 2 ---
-	if ActivityConst.BATTLE_MAP_TYPE == Map.SINGLE_MAP then
+	--- BLOCK #13 220-226, warpins: 2 ---
+	if slot0.contextData.map:getMapTitleNumber() ~= "EX" then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 226-242, warpins: 1 ---
-		setActive(slot0.ptTotal, false)
-		setActive(slot0.actExchangeShopBtn, false)
-		setActive(slot0.mirrorBtn, false)
-		setActive(slot0.eventContainer, true)
+		--- BLOCK #0 227-228, warpins: 1 ---
+		slot15 = false
 		--- END OF BLOCK #0 ---
 
 
@@ -1531,132 +1526,8 @@ slot0.updateActivityBtns = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 243-248, warpins: 1 ---
-		if ActivityConst.BATTLE_MAP_TYPE == Map.MUTIL_MAP then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 249-254, warpins: 1 ---
-			slot15 = setActive
-			slot16 = slot0.ptTotal
-
-			if not ActivityConst.HIDE_PT_PANELS then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 255-257, warpins: 1 ---
-				if slot0.ptActivity and not slot0.ptActivity:isEnd() and slot1 then
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 266-267, warpins: 1 ---
-					slot17 = not slot2
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-				--- END OF BLOCK #0 ---
-
-
-
-			else
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 268-269, warpins: 2 ---
-				slot17 = false
-
-				if false then
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 270-270, warpins: 0 ---
-					slot17 = true
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 271-275, warpins: 5 ---
-			slot15(slot16, slot17)
-
-			slot15 = setActive
-			slot16 = slot0.actExchangeShopBtn
-
-			if slot1 then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 276-279, warpins: 1 ---
-				if not ActivityConst.HIDE_PT_PANELS then
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 280-281, warpins: 1 ---
-					if slot4 then
-
-						-- Decompilation error in this vicinity:
-						--- BLOCK #0 282-283, warpins: 1 ---
-						slot17 = not slot2
-						--- END OF BLOCK #0 ---
-
-
-
-					end
-					--- END OF BLOCK #0 ---
-
-
-
-				else
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 284-285, warpins: 1 ---
-					slot17 = false
-
-					if false then
-
-						-- Decompilation error in this vicinity:
-						--- BLOCK #0 286-286, warpins: 0 ---
-						slot17 = true
-						--- END OF BLOCK #0 ---
-
-
-
-					end
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			--- END OF BLOCK #1 ---
-
-			FLOW; TARGET BLOCK #2
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #2 287-295, warpins: 5 ---
-			slot15(slot16, slot17)
-			setActive(slot0.mirrorBtn, false)
-			setActive(slot0.eventContainer, not slot1)
-			--- END OF BLOCK #2 ---
-
-
-
-		end
+		--- BLOCK #0 229-229, warpins: 1 ---
+		slot15 = true
 		--- END OF BLOCK #0 ---
 
 
@@ -1670,16 +1541,28 @@ slot0.updateActivityBtns = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #14 296-297, warpins: 3 ---
-	if not slot11 or not slot14 then
+	--- BLOCK #14 230-233, warpins: 2 ---
+	slot16 = setActive
+	slot17 = slot0.ptTotal
+
+	if slot1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 300-301, warpins: 2 ---
-		if not slot11 then
+		--- BLOCK #0 234-235, warpins: 1 ---
+		if not slot2 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 302-303, warpins: 1 ---
-			slot15 = slot13
+			--- BLOCK #0 236-237, warpins: 1 ---
+			if slot15 and not ActivityConst.HIDE_PT_PANELS and slot0.ptActivity then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 245-250, warpins: 1 ---
+				slot18 = not slot0.ptActivity:isEnd()
+				--- END OF BLOCK #0 ---
+
+
+
+			end
 			--- END OF BLOCK #0 ---
 
 
@@ -1687,14 +1570,14 @@ slot0.updateActivityBtns = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 304-305, warpins: 1 ---
-			slot15 = false
+			--- BLOCK #0 251-252, warpins: 2 ---
+			slot18 = false
 
 			if false then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 306-306, warpins: 0 ---
-				slot15 = true
+				--- BLOCK #0 253-253, warpins: 0 ---
+				slot18 = true
 				--- END OF BLOCK #0 ---
 
 
@@ -1718,21 +1601,64 @@ slot0.updateActivityBtns = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #15 307-308, warpins: 4 ---
-	if slot7 and slot1 and not slot10 and slot15 then
+	--- BLOCK #15 254-258, warpins: 6 ---
+	slot16(slot17, slot18)
+
+	slot16 = setActive
+	slot17 = slot0.actExchangeShopBtn
+
+	if slot1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 315-319, warpins: 1 ---
-		setActive(slot0.actExtraBtnAnim, true)
-		--- END OF BLOCK #0 ---
+		--- BLOCK #0 259-260, warpins: 1 ---
+		if not slot2 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 261-262, warpins: 1 ---
+			if slot15 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 263-266, warpins: 1 ---
+				if not ActivityConst.HIDE_PT_PANELS then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 267-268, warpins: 1 ---
+					slot18 = slot4
+					--- END OF BLOCK #0 ---
 
 
 
-	else
+				end
+				--- END OF BLOCK #0 ---
 
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 320-323, warpins: 4 ---
-		setActive(slot0.actExtraBtnAnim, false)
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 269-270, warpins: 2 ---
+			slot18 = false
+
+			if false then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 271-271, warpins: 0 ---
+				slot18 = true
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
 		--- END OF BLOCK #0 ---
 
 
@@ -1746,15 +1672,37 @@ slot0.updateActivityBtns = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #16 324-331, warpins: 2 ---
-	slot0:updateCountDown()
-	slot0:registerActBtn()
+	--- BLOCK #16 272-276, warpins: 5 ---
+	slot16(slot17, slot18)
 
-	if slot1 and not slot10 then
+	slot16 = setActive
+	slot17 = slot0.eventContainer
+
+	if slot1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 334-337, warpins: 1 ---
-		Map.lastMapForActivity = slot0.contextData.mapIdx
+		--- BLOCK #0 277-278, warpins: 1 ---
+		slot18 = not slot15
+
+		if not slot15 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 279-280, warpins: 0 ---
+			slot18 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 281-281, warpins: 1 ---
+		slot18 = true
 		--- END OF BLOCK #0 ---
 
 
@@ -1768,9 +1716,110 @@ slot0.updateActivityBtns = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #17 338-339, warpins: 3 ---
-	return
+	--- BLOCK #17 282-288, warpins: 3 ---
+	slot16(slot17, slot18)
+	setActive(slot0.mirrorBtn, false)
+
+	if not slot11 or not slot14 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 291-292, warpins: 2 ---
+		if not slot11 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 293-294, warpins: 1 ---
+			slot16 = slot13
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 295-296, warpins: 1 ---
+			slot16 = false
+
+			if false then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 297-297, warpins: 0 ---
+				slot16 = true
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
 	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #18 298-299, warpins: 4 ---
+	if slot7 and slot1 and not slot10 and slot16 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 306-310, warpins: 1 ---
+		setActive(slot0.actExtraBtnAnim, true)
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 311-314, warpins: 4 ---
+		setActive(slot0.actExtraBtnAnim, false)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #19 315-322, warpins: 2 ---
+	slot0:updateCountDown()
+	slot0:registerActBtn()
+
+	if slot1 and not slot10 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 325-328, warpins: 1 ---
+		Map.lastMapForActivity = slot0.contextData.mapIdx
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #20 329-330, warpins: 3 ---
+	return
+	--- END OF BLOCK #20 ---
 
 
 
@@ -3458,14 +3507,14 @@ slot0.updateMapItems = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 65-77, warpins: 2 ---
+	--- BLOCK #3 65-75, warpins: 2 ---
 	setActive(slot0.chapters, false)
 	setActive(slot0.escortChapters, false)
 
-	if slot1:isEscort() then
+	if OPEN_ESCORT and slot1:isEscort() then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 78-104, warpins: 1 ---
+		--- BLOCK #0 81-107, warpins: 1 ---
 		setActive(slot0.escortChapters, true)
 
 		slot6 = UIItemList.New(slot0.escortChapters, slot0.escortChapterTpl)
@@ -3552,7 +3601,7 @@ slot0.updateMapItems = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 105-133, warpins: 1 ---
+	--- BLOCK #4 108-136, warpins: 2 ---
 	setActive(slot0.chapters, true)
 
 	slot0.chapterTFsById = {}
@@ -3649,7 +3698,7 @@ slot0.updateMapItems = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 134-135, warpins: 2 ---
+	--- BLOCK #5 137-138, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 
@@ -4422,12 +4471,25 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #7 504-510, warpins: 0 ---
+		--- BLOCK #7 504-519, warpins: 0 ---
 		for slot28, slot29 in ipairs(slot23) do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 504-508, warpins: 1 ---
-			slot24 = slot24 + pg.expedition_data_template[slot29].bonus_time
+			--- BLOCK #0 504-511, warpins: 1 ---
+			slot31 = math.max
+			slot32 = slot24
+
+			if not pg.expedition_activity_template[slot29] or not slot30.bonus_time then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 515-515, warpins: 2 ---
+				slot33 = 0
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
 			--- END OF BLOCK #0 ---
 
 			FLOW; TARGET BLOCK #1
@@ -4435,8 +4497,17 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 509-510, warpins: 2 ---
+			--- BLOCK #1 516-517, warpins: 2 ---
+			slot24 = slot31(slot32, slot33)
 			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 518-519, warpins: 2 ---
+			--- END OF BLOCK #2 ---
 
 
 
@@ -4449,13 +4520,13 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #8 511-517, warpins: 1 ---
+		--- BLOCK #8 520-526, warpins: 1 ---
 		slot25 = findTF(slot5, "mark")
 
 		if not slot0.markRawPos then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 518-519, warpins: 1 ---
+			--- BLOCK #0 527-528, warpins: 1 ---
 			slot0.markRawPos = slot25.anchoredPosition
 			--- END OF BLOCK #0 ---
 
@@ -4470,14 +4541,14 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #9 520-534, warpins: 2 ---
+		--- BLOCK #9 529-543, warpins: 2 ---
 		slot25.anchoredPosition = slot0.markRawPos
 		slot26 = math.max(slot24 - slot2.todayDefeatCount, 0)
 
 		if slot0.contextData.map:isRemaster() or slot24 <= 0 or slot26 <= 0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 541-542, warpins: 3 ---
+			--- BLOCK #0 550-551, warpins: 3 ---
 			slot27 = false
 			--- END OF BLOCK #0 ---
 
@@ -4486,7 +4557,7 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 543-543, warpins: 1 ---
+			--- BLOCK #0 552-552, warpins: 1 ---
 			slot27 = true
 			--- END OF BLOCK #0 ---
 
@@ -4501,7 +4572,7 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #10 544-559, warpins: 2 ---
+		--- BLOCK #10 553-568, warpins: 2 ---
 		slot28 = slot2:getOniChapterInfo()
 
 		setActive(slot25:Find("bonus"), slot27)
@@ -4510,7 +4581,7 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 		if slot27 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 560-601, warpins: 1 ---
+			--- BLOCK #0 569-610, warpins: 1 ---
 			slot30 = slot25.anchoredPosition.y
 			slot25:GetComponent(typeof(CanvasGroup)).alpha = 0
 
@@ -4541,7 +4612,7 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #11 602-602, warpins: 2 ---
+		--- BLOCK #11 611-611, warpins: 2 ---
 		--- END OF BLOCK #11 ---
 
 
@@ -4555,14 +4626,14 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 603-609, warpins: 2 ---
+	--- BLOCK #2 612-618, warpins: 2 ---
 	slot7 = onButton
 	slot8 = slot0
 
 	if not isActive(slot5) or not slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 612-612, warpins: 2 ---
+		--- BLOCK #0 621-621, warpins: 2 ---
 		slot9 = slot6
 		--- END OF BLOCK #0 ---
 
@@ -4577,7 +4648,7 @@ slot0.updateMapItem = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 613-617, warpins: 2 ---
+	--- BLOCK #3 622-626, warpins: 2 ---
 	slot7(slot8, slot9, function ()
 
 		-- Decompilation error in this vicinity:
@@ -6390,7 +6461,7 @@ slot0.switchToMap = function (slot0)
 	--- BLOCK #1 11-20, warpins: 2 ---
 	slot3 = getProxy(ChapterProxy)
 
-	if slot1:getMapType() == Map.ESCORT and (#slot3.escortMaps == 0 or _.any(slot4, function (slot0)
+	if slot1:getMapType() == Map.ESCORT and OPEN_ESCORT and (#slot3.escortMaps == 0 or _.any(slot4, function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-3, warpins: 1 ---
@@ -6402,7 +6473,7 @@ slot0.switchToMap = function (slot0)
 	end)) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 32-38, warpins: 2 ---
+		--- BLOCK #0 35-41, warpins: 2 ---
 		slot0:emit(LevelMediator2.ON_FETCH_ESCORT)
 
 		return
@@ -6419,11 +6490,11 @@ slot0.switchToMap = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 39-48, warpins: 3 ---
+	--- BLOCK #2 42-51, warpins: 4 ---
 	if slot3.subNextReqTime < pg.TimeMgr.GetInstance():GetServerTime() then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 49-55, warpins: 1 ---
+		--- BLOCK #0 52-58, warpins: 1 ---
 		slot0:emit(LevelMediator2.ON_FETCH_SUB_CHAPTER)
 
 		return
@@ -6440,7 +6511,7 @@ slot0.switchToMap = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 56-188, warpins: 2 ---
+	--- BLOCK #3 59-187, warpins: 2 ---
 	slot0:frozen()
 	slot0:destroyGrid()
 	slot0:RecordTween("mapScale", LeanTween.value(go(slot0.map), slot0.map.localScale, Vector3.New(1, 1, 1), slot0):setOnUpdateVector3(function (slot0)
@@ -6504,7 +6575,6 @@ slot0.switchToMap = function (slot0)
 	end):setEase(LeanTweenType.easeOutSine)
 	slot0:RecordTween("mapPivot", slot5.uniqueId)
 	setActive(slot0.topChapter, true)
-	setActive(slot0.topChapterLine, true)
 	setActive(slot0.leftChapter, true)
 	setActive(slot0.rightChapter, true)
 	shiftPanel(slot0.leftChapter, 0, 0, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
@@ -6516,7 +6586,7 @@ slot0.switchToMap = function (slot0)
 	if slot0.ambushWarning and slot0.ambushWarning.activeSelf then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 193-200, warpins: 1 ---
+		--- BLOCK #0 192-199, warpins: 1 ---
 		slot0.ambushWarning:SetActive(false)
 		slot0:unfrozen()
 		--- END OF BLOCK #0 ---
@@ -6532,7 +6602,7 @@ slot0.switchToMap = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 201-214, warpins: 3 ---
+	--- BLOCK #4 200-213, warpins: 3 ---
 	slot0:onSubLayerContextChange()
 	slot0:setChapter(nil)
 	slot0:updateEscortInfo()
@@ -6540,7 +6610,7 @@ slot0.switchToMap = function (slot0)
 	if slot2 == ChapterConst.TypeSham then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 215-229, warpins: 1 ---
+		--- BLOCK #0 214-228, warpins: 1 ---
 		slot0.contextData.mapIdx = slot0.contextData.chapterMapIdx
 		slot0.contextData.chapterMapIdx = nil
 
@@ -6552,11 +6622,11 @@ slot0.switchToMap = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 230-233, warpins: 1 ---
+		--- BLOCK #0 229-232, warpins: 1 ---
 		if slot2 == ChapterConst.TypeNone then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 234-245, warpins: 1 ---
+			--- BLOCK #0 233-244, warpins: 1 ---
 			slot0:updateMapItems()
 			slot0:switchDifficulty()
 			slot0:updateActivityBtns()
@@ -6579,7 +6649,7 @@ slot0.switchToMap = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 246-247, warpins: 3 ---
+	--- BLOCK #5 245-246, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 

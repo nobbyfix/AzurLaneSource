@@ -82,11 +82,11 @@ slot0.didEnter = function (slot0)
 	onButton(slot0, slot0.btnBack, function ()
 		if slot0.selectedItem then
 			slot0:easeOut(function ()
-				slot0 = slot0 + 0.3
+				slot0:emit(slot1.ON_BACK)
 			end)
+		else
+			slot0:emit(slot1.ON_BACK)
 		end
-
-		slot0:emit(slot1.ON_BACK, nil, slot0)
 	end, SFX_CANCEL)
 	setActive(slot0:findTF("stamp"), getProxy(TaskProxy):mingshiTouchFlagEnabled())
 

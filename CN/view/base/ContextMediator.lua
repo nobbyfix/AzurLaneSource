@@ -1,48 +1,48 @@
 slot0 = class("ContextMediator", pm.Mediator)
 
-function slot0.Ctor(slot0, slot1)
-	uv0.super.Ctor(slot0, nil, slot1)
+slot0.Ctor = function (slot0, slot1)
+	slot0.super.Ctor(slot0, nil, slot1)
 end
 
-function slot0.onRegister(slot0)
+slot0.onRegister = function (slot0)
 	slot0.event = {}
 
 	slot0:bind(BaseUI.ON_BACK_PRESSED, function (slot0, slot1)
-		uv0:onBackPressed(slot1)
+		slot0:onBackPressed(slot1)
 	end)
 	slot0:bind(BaseUI.AVALIBLE, function (slot0, slot1)
-		uv0:onUIAvalible()
+		slot0:onUIAvalible()
 	end)
 	slot0:bind(BaseUI.ON_BACK, function (slot0, slot1, slot2)
 		if slot2 and slot2 > 0 then
 			pg.UIMgr:GetInstance():LoadingOn(false)
 			LeanTween.delayedCall(slot2, System.Action(function ()
 				pg.UIMgr:GetInstance():LoadingOff()
-				uv0:sendNotification(GAME.GO_BACK, nil, uv1)
+				pg.UIMgr.GetInstance().LoadingOff:sendNotification(GAME.GO_BACK, nil, pg.UIMgr.GetInstance().LoadingOff)
 			end))
 		else
-			uv0:sendNotification(GAME.GO_BACK, nil, slot1)
+			slot0:sendNotification(GAME.GO_BACK, nil, slot1)
 		end
 	end)
 	slot0:bind(BaseUI.ON_HOME, function (slot0)
 		if getProxy(ContextProxy).getCurrentContext(slot1):retriveLastChild() and slot3 ~= slot2 then
-			uv0:sendNotification(GAME.REMOVE_LAYERS, {
+			slot0:sendNotification(GAME.REMOVE_LAYERS, {
 				context = slot3
 			})
 		end
 
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.MAINUI)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.MAINUI)
 	end)
 	slot0:bind(BaseUI.ON_CLOSE, function (slot0)
-		if getProxy(ContextProxy).getCurrentContext(slot1):getContextByMediator(uv0.class) then
-			uv0:sendNotification(GAME.REMOVE_LAYERS, {
+		if getProxy(ContextProxy).getCurrentContext(slot1):getContextByMediator(slot0.class) then
+			slot0:sendNotification(GAME.REMOVE_LAYERS, {
 				context = slot3
 			})
 		end
 	end)
 	slot0:bind(BaseUI.ON_DROP, function (slot0, slot1, slot2)
 		if slot1.type == DROP_TYPE_EQUIP then
-			uv0:addSubLayers(Context.New({
+			slot0:addSubLayers(Context.New({
 				mediator = EquipmentInfoMediator,
 				viewComponent = EquipmentInfoLayer,
 				data = {
@@ -56,7 +56,8 @@ function slot0.onRegister(slot0)
 				type = MSGBOX_TYPE_SINGLE_ITEM,
 				drop = slot1,
 				onNo = slot2,
-				onYes = slot2
+				onYes = slot2,
+				weight = LayerWeightConst.TOP_LAYER
 			})
 		end
 	end)
@@ -68,14 +69,15 @@ function slot0.onRegister(slot0)
 			content = slot1.content,
 			item2Row = slot1.item2Row,
 			itemFunc = function (slot0)
-				uv0.viewComponent:emit(BaseUI.ON_DROP, slot0, function ()
-					uv0.viewComponent:emit(BaseUI.ON_DROP_LIST, uv1)
+				slot0.viewComponent:emit(BaseUI.ON_DROP, slot0, function ()
+					slot0.viewComponent:emit(BaseUI.ON_DROP_LIST, slot0.viewComponent)
 				end)
-			end
+			end,
+			weight = LayerWeightConst.TOP_LAYER
 		})
 	end)
 	slot0:bind(BaseUI.ON_ITEM, function (slot0, slot1)
-		uv0:addSubLayers(Context.New({
+		slot0:addSubLayers(Context.New({
 			mediator = ItemInfoMediator,
 			viewComponent = ItemInfoLayer,
 			data = {
@@ -88,7 +90,7 @@ function slot0.onRegister(slot0)
 		}))
 	end)
 	slot0:bind(BaseUI.ON_SHIP, function (slot0, slot1)
-		uv0:addSubLayers(Context.New({
+		slot0:addSubLayers(Context.New({
 			mediator = ItemInfoMediator,
 			viewComponent = ItemInfoLayer,
 			data = {
@@ -111,7 +113,7 @@ function slot0.onRegister(slot0)
 			return
 		end
 
-		uv0:addSubLayers(Context.New({
+		slot0:addSubLayers(Context.New({
 			mediator = AwardInfoMediator,
 			viewComponent = AwardInfoLayer,
 			data = {
@@ -125,44 +127,43 @@ function slot0.onRegister(slot0)
 	slot0:bind(BaseUI.ON_ACHIEVE, function (slot0, slot1, slot2)
 		slot3 = nil
 		slot3 = coroutine.create(function ()
-			if table.getCount(uv0) > 0 then
-				uv1.viewComponent:emit(BaseUI.ON_AWARD, {
-					items = uv0,
-					onYes = uv2
+			if table.getCount(table.getCount) > 0 then
+				slot1.viewComponent:emit(BaseUI.ON_AWARD, {
+					items = slot0,
+					onYes = BaseUI.ON_AWARD
 				})
 				coroutine.yield()
 				_.each(slot1, function (slot0)
-					table.insert(uv0, uv1:getShipById(slot0.id))
+					table.insert(slot0, slot1:getShipById(slot0.id))
 				end)
 
-				for slot7 = math.max(1, #getProxy(BayProxy).getNewShip(slot2, true) - (#_.filter(uv0, function (slot0)
+				for slot7 = math.max(1, #getProxy(BayProxy).getNewShip(slot2, true) - (#_.filter(_.filter, function (slot0)
 					return slot0.type == DROP_TYPE_SHIP
-				end) + #_.filter(uv0, function (slot0)
+				end) + #_.filter(slot0, function (slot0)
 					return slot0.type == DROP_TYPE_NPC_SHIP
 				end)) + 1), #getProxy(BayProxy).getNewShip(slot2, true), 1 do
-					uv1:addSubLayers(Context.New({
+					slot1:addSubLayers(Context.New({
 						mediator = NewShipMediator,
 						viewComponent = NewShipLayer,
 						data = {
 							ship = slot3[slot7]
 						},
-						onRemoved = uv2
+						onRemoved = slot2
 					}))
 					coroutine.yield()
 				end
 
-				for slot7, slot8 in pairs(uv0) do
+				for slot7, slot8 in pairs(slot0) do
 					if slot8.type == DROP_TYPE_SKIN then
 						if pg.ship_skin_template[slot8.id].skin_type == Ship.SKIN_TYPE_REMAKE then
-							-- Nothing
 						elseif not getProxy(ShipSkinProxy):hasOldSkin(slot8.id) then
-							uv1:addSubLayers(Context.New({
+							slot1:addSubLayers(Context.New({
 								mediator = NewSkinMediator,
 								viewComponent = NewSkinLayer,
 								data = {
 									skinId = slot8.id
 								},
-								onRemoved = uv2
+								onRemoved = slot2
 							}))
 						end
 
@@ -171,28 +172,30 @@ function slot0.onRegister(slot0)
 				end
 			end
 
-			if uv3 then
-				uv3()
+			if slot3 then
+				slot3()
 			end
 		end)
 
+
+		-- Decompilation error in this vicinity:
 		function ()
-			if uv0 and coroutine.status(uv0) == "suspended" then
-				slot0, slot1 = coroutine.resume(uv0)
+			if slot0 and coroutine.status(coroutine.status) == "suspended" then
+				slot0, slot1 = coroutine.resume(coroutine.resume)
 			end
 		end()
 	end)
 	slot0:bind(BaseUI.ON_EQUIPMENT, function (slot0, slot1)
 		slot1.type = defaultValue(slot1.type, EquipmentInfoMediator.TYPE_DEFAULT)
 
-		uv0:addSubLayers(Context.New({
+		slot0:addSubLayers(Context.New({
 			mediator = EquipmentInfoMediator,
 			viewComponent = EquipmentInfoLayer,
 			data = slot1
 		}))
 	end)
 	slot0:bind(BaseUI.ON_SHIP_EXP, function (slot0, slot1, slot2)
-		uv0:addSubLayers(Context.New({
+		slot0:addSubLayers(Context.New({
 			mediator = ShipExpMediator,
 			viewComponent = ShipExpLayer,
 			data = slot1,
@@ -202,17 +205,19 @@ function slot0.onRegister(slot0)
 	slot0:register()
 end
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
+	return
 end
 
-function slot0.onUIAvalible(slot0)
+slot0.onUIAvalible = function (slot0)
+	return
 end
 
-function slot0.setContextData(slot0, slot1)
+slot0.setContextData = function (slot0, slot1)
 	slot0.contextData = slot1
 end
 
-function slot0.bind(slot0, slot1, slot2)
+slot0.bind = function (slot0, slot1, slot2)
 	slot0.viewComponent.event:connect(slot1, slot2)
 	table.insert(slot0.event, {
 		event = slot1,
@@ -220,7 +225,7 @@ function slot0.bind(slot0, slot1, slot2)
 	})
 end
 
-function slot0.onRemove(slot0)
+slot0.onRemove = function (slot0)
 	slot0:remove()
 
 	for slot4, slot5 in ipairs(slot0.event) do
@@ -230,10 +235,11 @@ function slot0.onRemove(slot0)
 	slot0.event = {}
 end
 
-function slot0.remove(slot0)
+slot0.remove = function (slot0)
+	return
 end
 
-function slot0.addSubLayers(slot0, slot1, slot2, slot3)
+slot0.addSubLayers = function (slot0, slot1, slot2, slot3)
 	slot6 = getProxy(ContextProxy).getCurrentContext(slot4):getContextByMediator(slot0.class)
 
 	if slot2 then
@@ -246,14 +252,14 @@ function slot0.addSubLayers(slot0, slot1, slot2, slot3)
 		parentContext = slot6,
 		context = slot1,
 		callback = function ()
-			if uv0 then
-				uv0()
+			if slot0 then
+				slot0()
 			end
 		end
 	})
 end
 
-function slot0.blockEvents(slot0)
+slot0.blockEvents = function (slot0)
 	if slot0.event then
 		for slot4, slot5 in ipairs(slot0.event) do
 			slot0.viewComponent.event:block(slot5.event, slot5.callback)
@@ -261,7 +267,7 @@ function slot0.blockEvents(slot0)
 	end
 end
 
-function slot0.unblockEvents(slot0)
+slot0.unblockEvents = function (slot0)
 	if slot0.event then
 		for slot4, slot5 in ipairs(slot0.event) do
 			slot0.viewComponent.event:unblock(slot5.event, slot5.callback)
@@ -269,17 +275,17 @@ function slot0.unblockEvents(slot0)
 	end
 end
 
-function slot0.onBackPressed(slot0, slot1)
+slot0.onBackPressed = function (slot0, slot1)
 	playSoundEffect(SFX_CANCEL)
 
+	slot2 = getProxy(ContextProxy)
+
 	if slot1 then
-		if getProxy(ContextProxy):getContextByMediator(slot0.class).parent and pg.m02:retrieveMediator(getProxy(ContextProxy).getContextByMediator(slot0.class).mediator.__cname) and slot4.viewComponent then
+		if slot2:getContextByMediator(slot0.class).parent and pg.m02:retrieveMediator(slot3.mediator.__cname) and slot4.viewComponent then
 			slot4.viewComponent:onBackPressed()
 		end
-	elseif slot3.scene then
-		slot0.viewComponent:emit(BaseUI.ON_BACK)
 	else
-		slot0.viewComponent:emit(BaseUI.ON_CLOSE)
+		slot0.viewComponent:closeView()
 	end
 end
 

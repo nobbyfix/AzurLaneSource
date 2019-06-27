@@ -11,9 +11,11 @@ slot2 = pg.item_data_template
 slot3 = pg.shop_template
 
 function slot4(slot0)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
-		slot0._go = uv0
-		slot0._tf = tf(uv0)
+		slot0._go = slot0
+		slot0._tf = tf(slot0)
 		slot0.mask = slot0._tf:Find("mask")
 		slot0.count = slot0._tf:Find("count"):GetComponent(typeof(Text))
 		slot0.name = slot0._tf:Find("name_bg/Text"):GetComponent(typeof(Text))
@@ -27,7 +29,7 @@ function slot4(slot0)
 			setActive(slot0.mask, slot1.count == 0)
 
 			slot0.count.text = slot1.count
-			slot0.name.text = slot1.count == 0 and setColorStr(i18n("word_food") .. uv0[slot1.id].usage_arg[1], "#2f2d2b") or setColorStr(i18n("word_food") .. uv0[slot1.id].usage_arg[1], "#4E3E42FF")
+			slot0.name.text = (slot1.count == 0 and setColorStr(i18n("word_food") .. slot0[slot1.id].usage_arg[1], "#2f2d2b")) or setColorStr(i18n("word_food") .. slot0[slot1.id].usage_arg[1], "#4E3E42FF")
 
 			if slot0.foodVOId ~= slot1.id then
 				slot0.foodVOId = slot1.id
@@ -36,6 +38,7 @@ function slot4(slot0)
 			end
 		end,
 		Dispose = function (slot0)
+			return
 		end
 	})
 
@@ -43,11 +46,13 @@ function slot4(slot0)
 end
 
 function slot5(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
-		slot0._go = uv0
-		slot0._tf = tf(uv0)
+		slot0._go = slot0
+		slot0._tf = tf(slot0)
 		slot0.parent = slot0._tf.parent
-		slot0.overlay = uv1
+		slot0.overlay = slot0._tf.parent
 		slot0.foodItem = slot0._tf:Find("frame")
 		slot0.foodName = slot0._tf:Find("frame/name"):GetComponent(typeof(Text))
 		slot0.foodDesc = slot0._tf:Find("frame/desc"):GetComponent(typeof(Text))
@@ -63,10 +68,10 @@ function slot5(slot0, slot1)
 		slot0.cancelBtn = slot0._tf:Find("frame/cancel_btn")
 
 		onButton(nil, slot0._tf, function ()
-			uv0:Hide()
+			slot0:Hide()
 		end, SFX_PANEL)
 		onButton(nil, slot0.cancelBtn, function ()
-			uv0:Hide()
+			slot0:Hide()
 		end, SFX_PANEL)
 	end({
 		Show = function (slot0, slot1, slot2)
@@ -78,47 +83,49 @@ function slot5(slot0, slot1)
 
 			updateItem(slot0.foodItem, slot1)
 
-			slot0.total.text = uv0[slot1:getConfig("shop_id")].resource_num * 1
+			slot0.total.text = slot0[slot1:getConfig("shop_id")].resource_num * 1
 			slot0.totalIcon.sprite = LoadSprite("props/" .. id2res(slot5))
 			slot0.countValue.text = 1
 
 			onButton(nil, slot0.minusBtn, function ()
-				if uv0 <= 1 then
+				if slot0 <= 1 then
 					return
 				end
 
-				uv0 = uv0 - 1
-				uv1.countValue.text = uv0
-				uv1.total.text = uv2 * uv0
+				slot0 = slot0 - 1
+				slot1.countValue.text = slot1.countValue
+				slot1.total.text = slot2 * slot1.total
 			end, SFX_PANEL)
 			onButton(nil, slot0.addBtn, function ()
-				if uv0 == 999 then
-					pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buyCountLimit", uv0))
+				if slot0 == 999 then
+					pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buyCountLimit", pg.TipsMgr.GetInstance().ShowTips))
 
 					return
 				end
 
-				uv0 = uv0 > 999 and 999 or uv0 + 1
-				uv1.countValue.text = uv0
-				uv1.total.text = uv2 * uv0
+				slot0 = (slot0 > 999 and 999) or slot0 + 1
+				slot0 = slot0
+				slot1.countValue.text = slot1.countValue
+				slot1.total.text = slot2 * slot1.total
 			end, SFX_PANEL)
 			onButton(nil, slot0.tenBtn, function ()
-				if uv0 == 999 then
-					pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buyCountLimit", uv0))
+				if slot0 == 999 then
+					pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buyCountLimit", pg.TipsMgr.GetInstance().ShowTips))
 
 					return
 				end
 
-				uv0 = uv0 + 10 >= 999 and 999 or uv0 + 10
-				uv1.countValue.text = uv0
-				uv1.total.text = uv2 * uv0
+				slot0 = (slot0 + 10 >= 999 and 999) or slot0 + 10
+				slot0 = slot0
+				slot1.countValue.text = slot1.countValue
+				slot1.total.text = slot2 * slot1.total
 			end, SFX_PANEL)
 			onButton(nil, slot0.confirmBtn, function ()
-				uv0({
-					count = uv1,
-					resourceType = uv2,
-					resourceNum = uv3,
-					shopId = uv4
+				slot0({
+					count = slot1,
+					resourceType = slot1,
+					resourceNum = slot3,
+					shopId = slot4
 				})
 			end, SFX_CONFIRM)
 		end,
@@ -139,11 +146,13 @@ function slot5(slot0, slot1)
 end
 
 function slot6(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
-		slot0._go = uv0
-		slot0._tf = tf(uv0)
+		slot0._go = slot0
+		slot0._tf = tf(slot0)
 		slot0.parent = slot0._tf.parent
-		slot0.overlay = uv1
+		slot0.overlay = slot0._tf.parent
 		slot0.icon = slot0._tf:Find("frame/tip/icon"):GetComponent(typeof(Image))
 		slot0.consume = slot0._tf:Find("frame/tip/Text"):GetComponent(typeof(Text))
 		slot0.desc = slot0._tf:Find("frame/desc"):GetComponent(typeof(Text))
@@ -151,10 +160,10 @@ function slot6(slot0, slot1)
 		slot0.cancelBtn = slot0._tf:Find("frame/cancel_btn")
 
 		onButton(nil, slot0.cancelBtn, function ()
-			uv0:Hide()
+			slot0:Hide()
 		end, SFX_PANEL)
 		onButton(nil, slot0._tf, function ()
-			uv0:Hide()
+			slot0:Hide()
 		end, SFX_PANEL)
 	end({
 		Show = function (slot0, slot1, slot2, slot3)
@@ -162,14 +171,14 @@ function slot6(slot0, slot1)
 			setActive(slot0._tf, true)
 
 			slot0.icon.sprite = LoadSprite("props/" .. id2res(slot5))
-			slot0.consume.text = uv0[slot1].resource_num
-			slot0.desc.text = i18n("backyard_backyardGranaryLayer_foodMaxIncreaseNotice", slot2, slot2 + uv0[slot1].num)
+			slot0.consume.text = slot0[slot1].resource_num
+			slot0.desc.text = i18n("backyard_backyardGranaryLayer_foodMaxIncreaseNotice", slot2, slot2 + slot0[slot1].num)
 
 			onButton(nil, slot0.addBtn, function ()
-				uv0({
-					resType = uv1,
-					resCount = uv2,
-					shopId = uv3
+				slot0({
+					resType = slot1,
+					resCount = slot1,
+					shopId = slot3
 				})
 			end, SFX_CONFIRM)
 		end,
@@ -186,41 +195,41 @@ function slot6(slot0, slot1)
 	return 
 end
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "BackyardGranaryUI"
 end
 
-function slot0.setIsRemind(slot0, slot1)
+slot0.setIsRemind = function (slot0, slot1)
 	slot0.remindEndTime = slot1
 end
 
-function slot0.setFoodVOs(slot0, slot1)
+slot0.setFoodVOs = function (slot0, slot1)
 	slot0.foodVOs = slot1
 end
 
-function slot0.setPlayerVO(slot0, slot1)
+slot0.setPlayerVO = function (slot0, slot1)
 	slot0.playerVO = slot1
 end
 
-function slot0.setDormVO(slot0, slot1)
+slot0.setDormVO = function (slot0, slot1)
 	slot0.dormVO = slot1
 	slot0.capacity = slot1:getConfig("capacity") + slot0.dormVO.dorm_food_max
 end
 
-function slot0.setTrainShipVOs(slot0, slot1)
+slot0.setTrainShipVOs = function (slot0, slot1)
 	slot0.addExpShipVOs = slot1
 end
 
-function slot0.getFoodVOById(slot0, slot1)
+slot0.getFoodVOById = function (slot0, slot1)
 	return _.detect(slot0.foodVOs, function (slot0)
-		return slot0.id == uv0
+		return slot0.id == slot0
 	end) or Item.New({
 		count = 0,
 		id = slot1
 	})
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.itemList = UIItemList.New(slot0:findTF("foodPanel/frame/scrollview/content"), slot0:findTF("foodPanel/frame/scrollview/foodtpl"))
 	slot0.foodPanel = slot0:findTF("foodPanel")
 	slot0.stock = slot0:findTF("frame/top/stock", slot0.foodPanel)
@@ -230,23 +239,24 @@ function slot0.init(slot0)
 	slot0.chatContain = slot0:findTF("paint/chat_bg/chat_contain", slot0.foodPanel)
 	slot0.bottomText = slot0:findTF("paint/chat_bg/bottom_text", slot0.foodPanel)
 	slot0.paint = findTF(slot0.foodPanel, "paint/lenggui")
+	slot1 = slot0.paint:GetComponent("SpineAnimUI")
 
-	slot0.paint:GetComponent("SpineAnimUI").SetAction(slot1, "animation", 0)
+	slot1:SetAction("animation", 0)
 
 	slot0._overlayUIMain = pg.UIMgr:GetInstance().OverlayMain
-	slot0.foodMsgBox = uv0(slot0:findTF("shopPanel"), slot0._overlayUIMain)
-	slot0.extendPanel = uv1(slot0:findTF("extendPanel"), slot0._overlayUIMain)
+	slot0.foodMsgBox = slot0(slot0:findTF("shopPanel"), slot0._overlayUIMain)
+	slot0.extendPanel = slot1(slot0:findTF("extendPanel"), slot0._overlayUIMain)
 	slot0.extendBtn = slot0:findTF("frame/top/extend_btn", slot0.foodPanel)
 
 	pg.UIMgr.GetInstance():BlurPanel(slot0.foodPanel)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	onButton(slot0, slot0.foodPanel:Find("bg"), function ()
-		uv0:emit(uv1.ON_CLOSE)
+		slot0:emit(slot1.ON_CLOSE)
 	end, SOUND_BACK)
 	onButton(slot0, slot0.extendBtn, function ()
-		uv0:openExtendPanel()
+		slot0:openExtendPanel()
 	end, SFX_PANEL)
 
 	slot0.cards = {}
@@ -256,42 +266,44 @@ function slot0.didEnter(slot0)
 	slot0:initItems()
 end
 
-function slot0.initItems(slot0)
+slot0.initItems = function (slot0)
 	slot0.itemList:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventInit then
-			if not uv1.cards[uv0[slot1 + 1]] then
-				uv1.cards[slot3] = uv2(slot2)
+			if not slot1.cards[slot0[slot1 + 1]] then
+				slot1.cards[slot3] = slot2(slot2)
 			end
 
-			onButton(uv1, slot4.mask, function ()
-				uv0:openFoodShop(uv1.foodVO)
+			onButton(slot1, slot4.mask, function ()
+				slot0:openFoodShop(slot1.foodVO)
 			end, SFX_PANEL)
-			onButton(uv1, slot4.addTF, function ()
-				uv0:openFoodShop(uv1.foodVO)
+			onButton(slot1, slot4.addTF, function ()
+				slot0:openFoodShop(slot1.foodVO)
 			end, SFX_PANEL)
 			pressPersistTrigger(slot4.icon, 0.5, function (slot0)
-				uv0:updateConsume(slot0, uv1)
+				slot0:updateConsume(slot0, slot0.updateConsume)
 			end, function ()
-				uv0:updateTotalConsume(uv1)
+				slot0:updateTotalConsume(slot0)
 			end, true, true, 0.15, SFX_PANEL)
 		end
 	end)
-	slot0.itemList:align(#uv0)
+	slot0.itemList:align(#slot0)
 	slot0:updateItems()
 end
 
-function slot0.updateItems(slot0)
-	for slot4, slot5 in pairs(uv0) do
+slot0.updateItems = function (slot0)
+	for slot4, slot5 in pairs(slot0) do
 		slot0.cards[slot5]:Update(slot0:getFoodVOById(slot5))
 	end
 end
 
-function slot0.updateConsume(slot0, slot1, slot2)
+slot0.updateConsume = function (slot0, slot1, slot2)
 	if not slot0.dormClone then
 		slot0.dormClone = Clone(slot0.dormVO)
 	end
 
-	if slot0.dormClone.food ~= slot0.capacity and slot0.capacity < slot0.dormClone.food + uv0[slot2.foodVO.id].usage_arg[1] and slot0.remindEndTime < pg.TimeMgr.GetInstance():GetServerTime() then
+	slot3 = slot0[slot2.foodVO.id].usage_arg[1]
+
+	if slot0.dormClone.food ~= slot0.capacity and slot0.capacity < slot0.dormClone.food + slot3 and slot0.remindEndTime < pg.TimeMgr.GetInstance():GetServerTime() then
 		pg.MsgboxMgr:GetInstance():ShowMsgBox({
 			showStopRemind = true,
 			type = MSGBOX_TYPE_SINGLE_ITEM,
@@ -300,10 +312,10 @@ function slot0.updateConsume(slot0, slot1, slot2)
 			drop = {
 				type = DROP_TYPE_ITEM,
 				id = slot2.foodVO.id,
-				count = i18n("common_food") .. ":" .. uv0[slot2.foodVO.id].usage_arg[1]
+				count = i18n("common_food") .. ":" .. slot3
 			},
 			onYes = function ()
-				uv0:emit(BackyardGranaryMediator.USE_FOOD, uv1.foodVO.id, 1, uv2.stopRemindToggle.isOn)
+				slot0:emit(BackyardGranaryMediator.USE_FOOD, slot1.foodVO.id, 1, slot2.stopRemindToggle.isOn)
 			end
 		})
 
@@ -342,10 +354,29 @@ function slot0.updateConsume(slot0, slot1, slot2)
 
 	slot2:Update(slot4)
 	slot0:updateDorm(slot0.dormClone)
-	pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_addFood_ok", slot3))
+	slot0:showStockAdd(slot3)
 end
 
-function slot0.updateTotalConsume(slot0, slot1)
+slot0.showStockAdd = function (slot0, slot1)
+	if not slot0.stockAddTpl then
+		slot0.stockAddContainter = slot0:findTF("frame/top/stockAddCont", slot0.foodPanel)
+		slot0.stockAddAddTpl = slot0:findTF("stockAdd", slot0.stockAddContainter)
+	end
+
+	slot2 = cloneTplTo(slot0.stockAddAddTpl, slot0.stockAddContainter)
+
+	setText(slot2, "+" .. slot1)
+
+	if slot2:GetComponent(typeof(DftAniEvent)) then
+		slot3:SetEndEvent(function (slot0)
+			Destroy(slot0)
+		end)
+	end
+
+	setActive(slot2, true)
+end
+
+slot0.updateTotalConsume = function (slot0, slot1)
 	slot0.dormClone = nil
 
 	if slot0.count == 0 then
@@ -357,9 +388,9 @@ function slot0.updateTotalConsume(slot0, slot1)
 	slot0:emit(BackyardGranaryMediator.USE_FOOD, slot1.foodVO.id, slot2)
 end
 
-function slot0.openFoodShop(slot0, slot1)
+slot0.openFoodShop = function (slot0, slot1)
 	slot0.foodMsgBox:Show(slot1, function (slot0)
-		if uv0.playerVO[id2res(slot0.resourceType)] < slot0.resourceNum * slot0.count then
+		if slot0.playerVO[id2res(slot0.resourceType)] < slot0.resourceNum * slot0.count then
 			if slot0.resourceType == 4 then
 				GoShoppingMsgBox(i18n("switch_to_shop_tip_3", i18n("word_gem")), ChargeScene.TYPE_DIAMOND)
 			else
@@ -369,12 +400,12 @@ function slot0.openFoodShop(slot0, slot1)
 			return
 		end
 
-		uv0:emit(BackyardGranaryMediator.BUY_FOOD, slot0.shopId, slot0.count)
-		uv0.foodMsgBox:Hide()
+		slot0:emit(BackyardGranaryMediator.BUY_FOOD, slot0.shopId, slot0.count)
+		slot0.foodMsgBox:Hide()
 	end)
 end
 
-function slot0.openExtendPanel(slot0)
+slot0.openExtendPanel = function (slot0)
 	if not ShoppingStreet.getRiseShopId(ShopArgs.BackyardFoodExtend, slot0.dormVO.food_extend_count) then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buy_max_count"))
 
@@ -382,21 +413,21 @@ function slot0.openExtendPanel(slot0)
 	end
 
 	slot0.extendPanel:Show(slot1, slot0.capacity, function (slot0)
-		if uv0.playerVO[id2res(slot0.resType)] < slot0.resCount then
+		if slot0.playerVO[id2res(slot0.resType)] < slot0.resCount then
 			if slot0.resType == 4 then
 				GoShoppingMsgBox(i18n("switch_to_shop_tip_3", i18n("word_gem")), ChargeScene.TYPE_DIAMOND)
 			else
 				pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_error_entendFail"))
 			end
 		else
-			uv0:emit(BackyardGranaryMediator.EXTEND_GRANARY, slot0.shopId, 1)
+			slot0:emit(BackyardGranaryMediator.EXTEND_GRANARY, slot0.shopId, 1)
 		end
 
-		uv0.extendPanel:Hide()
+		slot0.extendPanel:Hide()
 	end)
 end
 
-function slot0.updateDorm(slot0, slot1)
+slot0.updateDorm = function (slot0, slot1)
 	if not slot1 then
 		return
 	end
@@ -407,7 +438,7 @@ function slot0.updateDorm(slot0, slot1)
 	slot0:calFoodLeftTime(slot1)
 end
 
-function slot0.calFoodLeftTime(slot0, slot1)
+slot0.calFoodLeftTime = function (slot0, slot1)
 	if slot0.timer then
 		slot0.timer:Stop()
 
@@ -416,13 +447,15 @@ function slot0.calFoodLeftTime(slot0, slot1)
 
 	slot2 = table.getCount(slot0.addExpShipVOs)
 
+	function slot3(slot0)
+		SetActive(slot0.leftTimeTF, true)
+		SetActive(slot0.chatContain, false)
+		SetActive(slot0.bottomText, false)
+		setText(slot0.leftTimeTF, slot0)
+	end
+
 	if slot1.food <= 0 then
-		function (slot0)
-			SetActive(uv0.leftTimeTF, true)
-			SetActive(uv0.chatContain, false)
-			SetActive(uv0.bottomText, false)
-			setText(uv0.leftTimeTF, slot0)
-		end(i18n("backyard_backyardGranaryLayer_word"))
+		slot3(i18n("backyard_backyardGranaryLayer_word"))
 
 		return
 	end
@@ -442,21 +475,21 @@ function slot0.calFoodLeftTime(slot0, slot1)
 	slot4 = findTF(slot0.chatContain, "time"):GetComponent(typeof(Text))
 	slot5 = slot1:getFoodLeftTime()
 	slot0.timer = Timer.New(function ()
-		uv1.text = pg.TimeMgr:GetInstance():DescCDTime(math.ceil(uv0) - pg.TimeMgr:GetInstance():GetServerTime())
+		pg.TimeMgr:GetInstance():GetServerTime().text = pg.TimeMgr:GetInstance():DescCDTime(math.ceil(math.ceil) - pg.TimeMgr.GetInstance().GetServerTime())
 
-		if math.ceil(uv0) - pg.TimeMgr.GetInstance().GetServerTime() <= 0 then
-			uv2.timer:Stop()
+		if math.ceil(math.ceil) - pg.TimeMgr.GetInstance().GetServerTime() <= 0 then
+			slot2.timer:Stop()
 
-			uv2.timer = nil
+			slot2.timer.timer = nil
 
-			uv3(i18n("backyard_backyardGranaryLayer_word"))
+			slot3(i18n("backyard_backyardGranaryLayer_word"))
 		end
 	end, 1, -1)
 
 	slot0.timer:Start()
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	for slot4, slot5 in pairs(slot0.cards) do
 		slot5:Dispose()
 	end

@@ -237,6 +237,8 @@ slot0.init = function (slot0)
 		slot0.filterTag = DockyardScene.filterTag or Ship.PREFERENCE_TAG_NONE
 	end
 
+	triggerToggle(findTF(slot0.topPanel, "preference_toggle"), slot0.filterTag == Ship.PREFERENCE_TAG_COMMON)
+
 	slot0.tmpSort = 2
 	slot0.tmpAsc = false
 	slot0.tmpIndexFlag = {}
@@ -1431,7 +1433,7 @@ end
 slot0.uiExitAnimating = function (slot0)
 	if slot0.mode == slot0.MODE_OVERVIEW then
 	else
-		shiftPanel(slot0.selectPanel, nil, -1 * slot0.selectPanel.rect.height, dur, delay, true, true)
+		shiftPanel(slot0.selectPanel, nil, -1 * slot0.selectPanel.rect.height, 0.3, 0, true, true)
 	end
 end
 
@@ -1440,13 +1442,7 @@ slot0.back = function (slot0)
 		return
 	end
 
-	slot0:uiExitAnimating()
-
-	if slot0.contextData.isLayer then
-		slot0:emit(slot0.ON_CLOSE)
-	else
-		slot0:emit(slot0.ON_BACK, nil, 0.3)
-	end
+	slot0:closeView()
 end
 
 slot0.cancelAnimating = function (slot0)

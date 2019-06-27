@@ -1,17 +1,32 @@
 slot0 = class("EquipUpgradeMediator", import("..base.ContextMediator"))
 slot0.EQUIPMENT_UPGRDE = "EquipUpgradeMediator:EQUIPMENT_UPGRDE"
 slot0.REPLACE_EQUIP = "EquipUpgradeMediator:REPLACE_EQUIP"
+slot0.ON_ITEM = "EquipUpgradeMediator:ON_ITEM"
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
 	slot0.bagProxy = getProxy(BagProxy)
 
 	slot0.viewComponent:setItems(slot1)
 	slot0.viewComponent:updateRes(getProxy(PlayerProxy).getData(slot2))
-	slot0:bind(uv0.EQUIPMENT_UPGRDE, function (slot0)
-		uv0:sendNotification(GAME.UPGRADE_EQUIPMENTS, {
-			shipId = uv0.contextData.shipId,
-			pos = uv0.contextData.pos,
-			equipmentId = uv0.contextData.equipmentId
+	slot0:bind(slot0.EQUIPMENT_UPGRDE, function (slot0)
+		slot0:sendNotification(GAME.UPGRADE_EQUIPMENTS, {
+			shipId = slot0.contextData.shipId,
+			pos = slot0.contextData.pos,
+			equipmentId = slot0.contextData.equipmentId
+		})
+	end)
+	slot0:bind(slot0.ON_ITEM, function (slot0, slot1)
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
+			yesText = "text_confirm",
+			hideNo = true,
+			content = "",
+			type = MSGBOX_TYPE_SINGLE_ITEM,
+			drop = {
+				type = DROP_TYPE_ITEM,
+				id = slot1,
+				cfg = pg.item_data_statistics[slot1]
+			},
+			weight = LayerWeightConst.TOP_LAYER
 		})
 	end)
 
@@ -24,7 +39,7 @@ function slot0.register(slot0)
 	end
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		GAME.UPGRADE_EQUIPMENTS_DONE,
 		BagProxy.ITEM_UPDATED,
@@ -32,7 +47,7 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == GAME.UPGRADE_EQUIPMENTS_DONE then

@@ -33,6 +33,8 @@ slot0.init = function (slot0)
 	slot0.descChallengeText = slot0:findTF("Text", slot0.descChallengeNum)
 	slot0.fleetEditView = slot0:findTF("fleet_edit")
 	slot0.resource = slot0:findTF("resource")
+	slot0.rightBtn = slot0:findTF("arrows/arrow1")
+	slot0.leftBtn = slot0:findTF("arrows/arrow2")
 
 	slot0:initItems()
 end
@@ -66,9 +68,15 @@ slot0.didEnter = function (slot0)
 		if slot0.descMode then
 			slot0:enableDescMode(false)
 		else
-			slot0:emit(slot1.ON_BACK, nil, 0.1)
+			slot0:emit(slot1.ON_BACK)
 		end
 	end, SFX_CANCEL)
+	onButton(slot0, slot0.leftBtn, function ()
+		slot0:flipToSpecificCard(slot0:getNextCardId(true))
+	end)
+	onButton(slot0, slot0.rightBtn, function ()
+		slot0:flipToSpecificCard(slot0:getNextCardId(false))
+	end)
 	slot0:displayDailyLevels()
 
 	if slot0.contextData.dailyLevelId then
@@ -80,23 +88,24 @@ end
 
 slot0.initItems = function (slot0)
 	slot0.dailyLevelTFs = {}
+	slot0.dailyList = _.reverse(Clone(pg.expedition_daily_template.all))
 
-	for slot6, slot7 in pairs(slot2) do
-		if table.contains(pg.expedition_daily_template[slot7].weekday, tonumber(slot0:getWeek())) then
-			table.remove(slot2, slot6)
-			table.insert(slot2, math.ceil(#slot1.all / 2), slot7)
+	for slot5, slot6 in pairs(slot0.dailyList) do
+		if table.contains(pg.expedition_daily_template[slot6].weekday, tonumber(slot0:getWeek())) then
+			table.remove(slot0.dailyList, slot5)
+			table.insert(slot0.dailyList, math.ceil(#slot1.all / 2), slot6)
 
 			break
 		end
 	end
 
 	if slot0.contextData.dailyLevelId then
-		table.removebyvalue(slot2, slot3)
-		table.insert(slot2, math.ceil(#slot1.all / 2), slot0.contextData.dailyLevelId)
+		table.removebyvalue(slot0.dailyList, slot2)
+		table.insert(slot0.dailyList, math.ceil(#slot1.all / 2), slot0.contextData.dailyLevelId)
 	end
 
-	for slot6, slot7 in pairs(slot2) do
-		slot0.dailyLevelTFs[slot7] = cloneTplTo(slot0.dailylevelTpl, slot0.content, slot7)
+	for slot5, slot6 in pairs(slot0.dailyList) do
+		slot0.dailyLevelTFs[slot6] = cloneTplTo(slot0.dailylevelTpl, slot0.content, slot6)
 	end
 end
 
@@ -110,14 +119,18 @@ slot0.displayDailyLevels = function (slot0)
 	end
 
 	slot0.centerAniItem = nil
+	slot0.centerCardId = nil
 	slot0.checkAniTimer = Timer.New(function ()
 		for slot3, slot4 in pairs(slot0.dailyLevelTFs) do
 			slot6 = slot4.localScale.x >= 0.98
 
-			if slot0.centerAniItem == slot4 then
+			if slot0.centerAniItem == slot4 and slot6 then
 				return
 			else
-				slot0.centerAniItem = slot4
+				if slot6 then
+					slot0.centerAniItem = slot4
+					slot0.centerCardId = slot3
+				end
 
 				if slot0:findTF("icon/card", slot4) then
 					setActive(slot0:findTF("effect", slot7), slot6)
@@ -141,6 +154,20 @@ slot0.tryOpenDesc = function (slot0, slot1)
 	else
 		pg.TipsMgr:GetInstance():ShowTips(slot3.tips)
 	end
+end
+
+slot0.getNextCardId = function (slot0, slot1)
+	slot2 = table.indexof(slot0.dailyList, slot0.centerCardId)
+
+	if slot1 then
+		if slot2 - 1 <= 0 then
+			slot2 = #slot0.dailyList or slot2
+		end
+	elseif slot2 + 1 > #slot0.dailyList then
+		slot2 = 1
+	end
+
+	return slot0.dailyList[slot2]
 end
 
 slot0.initDailyLevel = function (slot0, slot1)
@@ -514,6 +541,63 @@ slot0.enableDescMode = function (slot0, slot1)
 
 
 	end
+end
+
+slot0.flipToSpecificCard = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot2 = slot0.content:GetComponent(typeof(EnhancelScrollView))
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 12-25, warpins: 0 ---
+	for slot6, slot7 in pairs(slot0.dailyLevelTFs) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 12-13, warpins: 1 ---
+		if slot1 == slot6 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 14-23, warpins: 1 ---
+			slot2:SetHorizontalTargetItemIndex(slot7:GetComponent(typeof(EnhanceItem)).scrollViewItemIndex)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 24-25, warpins: 3 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 26-26, warpins: 1 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 slot0.clearTween = function (slot0)

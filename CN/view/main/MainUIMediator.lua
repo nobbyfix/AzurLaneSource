@@ -320,7 +320,14 @@ slot0.register = function (slot0)
 		})
 	end)
 	slot0:bind(slot0.ON_ACTIVITY_MAP, function (slot0, slot1)
-		slot8.mapIdx, slot8.chapterId = getProxy(ChapterProxy):getLastMapForActivity()
+		slot2, slot3 = getProxy(ChapterProxy):getLastMapForActivity()
+		slot4 = slot2 and getProxy(ActivityProxy):getActivityById(pg.expedition_data_by_map[slot2].on_activity)
+
+		if not slot4 or slot4:isEnd() then
+			pg.TipsMgr:GetInstance():ShowTips(i18n("common_activity_end"))
+
+			return
+		end
 
 		slot0:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
 			chapterId = slot3,
@@ -582,7 +589,8 @@ slot0.updateSeverNotices = function (slot0)
 end
 
 slot0.updateSettingsNotice = function (slot0)
-	slot0.viewComponent:updateSettingsNotice(slot0.CanUpdateCV)
+	slot0.viewComponent:updateSettingsNotice(slot0.CanUpdateCV, "CVupdate")
+	slot0.viewComponent:updateSettingsNotice(PlayerPrefs.GetFloat("firstIntoOtherPanel") == 0, "SecondaryPassword")
 end
 
 slot0.updateExSkinNotice = function (slot0)
@@ -990,7 +998,7 @@ slot0.checkCV = function (slot0)
 			slot1.CanUpdateCV = true
 
 			if slot2.viewComponent and not slot2.viewComponent.exited then
-				slot2:updateSettingsNotice()
+				slot2:updateSettingsNotice(nil, "CVupdate")
 			end
 		end
 
