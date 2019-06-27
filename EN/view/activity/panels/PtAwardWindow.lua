@@ -1,6 +1,6 @@
 slot0 = class("PtAwardWindow")
 
-function slot0.Ctor(slot0, slot1, slot2)
+slot0.Ctor = function (slot0, slot1, slot2)
 	slot0._tf = slot1
 	slot0.binder = slot2
 	slot0.UIlist = UIItemList.New(slot0._tf:Find("window/panel/list"), slot0._tf:Find("window/panel/list/item"))
@@ -9,10 +9,10 @@ function slot0.Ctor(slot0, slot1, slot2)
 	slot0.closeBtn = slot0._tf:Find("window/top/btnBack")
 
 	onButton(slot0.binder, slot0._tf, function ()
-		uv0:Hide()
+		slot0:Hide()
 	end, SFX_PANEL)
 	onButton(slot0.binder, slot0.closeBtn, function ()
-		uv0:Hide()
+		slot0:Hide()
 	end, SFX_PANEL)
 end
 
@@ -21,36 +21,48 @@ function slot1(slot0, slot1, slot2, slot3)
 		if slot0 == UIItemList.EventUpdate then
 			setText(slot2:Find("title/Text"), "PHASE " .. slot1 + 1)
 			setText(slot2:Find("target/Text"), slot4)
-			setText(slot2:Find("target/title"), uv2.resTitle)
+			setText(slot2:Find("target/title"), slot2.resTitle)
 			updateDrop(slot2:Find("award"), slot5, {
 				hideName = true
 			})
-			onButton(uv2.binder, slot2:Find("award"), function ()
-				uv0.binder:emit(BaseUI.ON_DROP, uv1)
+			onButton(slot2.binder, slot2:Find("award"), function ()
+				slot0.binder:emit(BaseUI.ON_DROP, slot0.binder)
 			end, SFX_PANEL)
-			setActive(slot2:Find("award/mask"), slot1 + 1 <= uv3)
+			setActive(slot2:Find("award/mask"), slot1 + 1 <= slot0[slot1 + 1])
 		end
 	end)
 	slot0.UIlist:align(#slot1)
 end
 
-function slot0.Show(slot0, slot1)
-	slot0.cntTitle = i18n("pt_total_count", slot7)
-	slot0.resTitle = i18n("pt_count", slot7)
+slot0.Show = function (slot0, slot1)
+	slot2 = slot1.dropList
+	slot3 = slot1.targets
+	slot4 = slot1.level
+	slot5 = slot1.count
+	slot7 = pg.item_data_statistics[id2ItemId(slot1.resId)].name
 
-	uv0(slot0, slot2, slot1.targets, slot1.level)
+	if slot1.type == 2 then
+		slot0.cntTitle = i18n("pt_total_count", i18n("pt_cosume", slot7))
+		slot0.resTitle = i18n("pt_count", i18n("pt_cosume", slot7))
+	else
+		slot0.cntTitle = i18n("pt_total_count", slot7)
+		slot0.resTitle = i18n("pt_count", slot7)
+	end
 
-	slot0.totalTxt.text = slot1.count
+	slot0(slot0, slot2, slot3, slot4)
+
+	slot0.totalTxt.text = slot5
 	slot0.totalTitleTxt.text = slot0.cntTitle
 
+	Canvas.ForceUpdateCanvases()
 	setActive(slot0._tf, true)
 end
 
-function slot0.Hide(slot0)
+slot0.Hide = function (slot0)
 	setActive(slot0._tf, false)
 end
 
-function slot0.Dispose(slot0)
+slot0.Dispose = function (slot0)
 	slot0:Hide()
 	removeOnButton(slot0._tf)
 	removeOnButton(slot0.closeBtn)

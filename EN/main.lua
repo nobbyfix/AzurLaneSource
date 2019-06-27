@@ -13,7 +13,6 @@ math.randomseed(os.time())
 CSharpVersion = NetConst.GatewayState
 
 print("C# Ver. " .. CSharpVersion)
-print("test")
 
 PLATFORM = LuaHelper.GetPlatformInt()
 PLATFORM_CH = 1
@@ -28,7 +27,9 @@ if PLATFORM_CODE == PLATFORM_US then
 end
 
 function luaIdeDebugFunc()
-	breakInfoFun = require("LuaDebugjit")("localhost", 7003)
+	breakInfoFun = 
+	-- Decompilation error in this vicinity:
+	require("LuaDebugjit")("localhost", 7003)
 	time = Timer.New(breakInfoFun, 0.5, -1, 1)
 
 	time:Start()
@@ -37,7 +38,9 @@ end
 SDK_EXIT_CODE = 99
 
 function luaIdeDebugFunc()
-	breakInfoFun = require("LuaDebugjit")("localhost", 7003)
+	breakInfoFun = 
+	-- Decompilation error in this vicinity:
+	require("LuaDebugjit")("localhost", 7003)
 	time = Timer.New(breakInfoFun, 0.5, -1, 1)
 
 	time:Start()
@@ -105,8 +108,10 @@ function OnApplicationExit()
 		return
 	end
 
+	slot3 = pg.MsgboxMgr.GetInstance() and slot2:getMsgBoxOb()
+
 	if pg.StoryMgr.GetInstance() and slot4.storyId then
-		if pg.MsgboxMgr.GetInstance() and slot2:getMsgBoxOb() and pg.MsgboxMgr.GetInstance() and slot2.getMsgBoxOb().activeSelf then
+		if slot3 and slot3.activeSelf then
 			playSoundEffect(SFX_CANCEL)
 			triggerButton(slot2._closeBtn)
 		end
@@ -164,6 +169,7 @@ function OnApplicationExit()
 end
 
 function OnReceiveMemoryWarning()
+	return
 end
 
 function PressBack()
@@ -313,11 +319,14 @@ seriesAsync({
 			end,
 			function (slot0)
 				pg.ToastMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
+				pg.SecondaryPWDMgr.GetInstance():Init(slot0)
 			end
 		}, slot0)
 	end
 }, function (slot0)
-	print("loading cost: " .. os.clock() - uv0)
+	print("loading cost: " .. os.clock() - slot0)
 	CameraUtil.SetOnlyAdaptMainCam(true)
 	VersionMgr.Inst:DestroyUI()
 
@@ -351,3 +360,5 @@ seriesAsync({
 		end)
 	end
 end)
+
+return

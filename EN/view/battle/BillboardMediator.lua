@@ -9,7 +9,9 @@ slot0.register = function (slot0)
 	slot1 = getProxy(BillboardProxy)
 	slot2 = slot0.contextData.page or PowerRank.TYPE_POWER
 
-	slot0.viewComponent:updateRankList(slot0.contextData.page or PowerRank.TYPE_POWER, slot4, getProxy(BillboardProxy):getPlayerRankData(slot0.contextData.page or PowerRank.TYPE_POWER, slot0.contextData.act_id or checkExist(PowerRank:getActivityByRankType(slot0.contextData.page or PowerRank.TYPE_POWER), "id")), slot0.contextData.act_id or checkExist(PowerRank.getActivityByRankType(slot0.contextData.page or PowerRank.TYPE_POWER), "id"))
+	slot0.viewComponent:updateRankList(slot0.contextData.page or PowerRank.TYPE_POWER, slot4, getProxy(BillboardProxy):getPlayerRankData(slot0.contextData.page or PowerRank.TYPE_POWER, slot0.contextData.act_id or checkExist(PowerRank:getActivityByRankType(slot0.contextData.page or PowerRank.TYPE_POWER), {
+		"id"
+	})), slot0.contextData.act_id or checkExist(PowerRank.getActivityByRankType(slot0.contextData.page or PowerRank.TYPE_POWER), ))
 	slot0:bind(slot0.FETCH_RANKS, function (slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
@@ -92,7 +94,7 @@ slot0.register = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #3 14-21, warpins: 1 ---
-	slot3 = checkExist(PowerRank.getActivityByRankType(slot0.contextData.page or PowerRank.TYPE_POWER), "id")
+	slot3 = checkExist(PowerRank.getActivityByRankType(slot0.contextData.page or PowerRank.TYPE_POWER), )
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4

@@ -3,17 +3,15 @@ ScrollTxt._speed = 10
 ScrollTxt._delayTime = 0.5
 ScrollTxt._padding = 4
 
-function ScrollTxt.Ctor(slot0, slot1, slot2, slot3, slot4, slot5)
+ScrollTxt.Ctor = function (slot0, slot1, slot2, slot3, slot4, slot5)
 	slot0._mask = GetOrAddComponent(slot1, typeof(RectMask2D))
 
 	if slot4 == nil then
-		-- Nothing
 	end
 
 	slot0._vertical = slot4
 
 	if slot3 == nil then
-		-- Nothing
 	end
 
 	slot0._notSensitive = slot3
@@ -23,22 +21,28 @@ function ScrollTxt.Ctor(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot0._txt = slot2:GetComponent(typeof(Text))
 	slot0._txtRTF = slot2:GetComponent(typeof(RectTransform))
+
+	slot0:setBaseSize(slot0._txtRTF)
+
 	slot0._txtRect = slot0._txtRTF.rect
 end
 
-function ScrollTxt.changeToScroll(slot0, slot1)
-	slot2 = cloneTplTo(slot1, slot1)
+ScrollTxt.changeToScroll = function (slot0, slot1)
 	slot1:GetComponent(typeof(Text)).enabled = false
-	slot2.localScale = Vector3.one
-	slot2.anchorMin = Vector2(0.5, 0.5)
-	slot2.anchorMax = Vector2(0.5, 0.5)
-	slot2.localPosition = Vector3.zero
-	ScrollTxt.New(slot1, slot2)._txtIsClone = true
+	ScrollTxt.New(slot1, cloneTplTo(slot1, slot1))._txtIsClone = true
 
-	return ScrollTxt.New(slot1, slot2)
+	return ScrollTxt.New(slot1, cloneTplTo(slot1, slot1))
 end
 
-function ScrollTxt.setText(slot0, slot1)
+ScrollTxt.setBaseSize = function (slot0, slot1)
+	slot1.localScale = Vector3.one
+	slot1.anchorMin = Vector2(0.5, 0.5)
+	slot1.anchorMax = Vector2(0.5, 0.5)
+	slot1.pivot = Vector2(0.5, 0.5)
+	slot1.anchoredPosition = Vector2.zero
+end
+
+ScrollTxt.setText = function (slot0, slot1)
 	slot0:clear()
 
 	slot0._txt.text = tostring(slot1)
@@ -46,34 +50,34 @@ function ScrollTxt.setText(slot0, slot1)
 	slot0:begin()
 end
 
-function ScrollTxt.delayBegin(slot0)
+ScrollTxt.delayBegin = function (slot0)
 	slot0.timer = Timer.New(function ()
-		uv0:begin()
+		slot0:begin()
 	end, 0.1, 1):Start()
 end
 
-function ScrollTxt.preCalFunc(slot0)
+ScrollTxt.preCalFunc = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-129, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = nil
 
 	if slot0._vertical then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 7-21, warpins: 1 ---
-		slot0._txtRTF.sizeDelta = Vector2.New(slot0._txtRTF.sizeDelta.x, slot0._txt.preferredHeight)
-
+		--- BLOCK #0 5-9, warpins: 1 ---
 		if slot0:checkOverlength() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 22-49, warpins: 1 ---
+			--- BLOCK #0 10-46, warpins: 1 ---
+			slot0._txtRTF.sizeDelta = Vector2.New(slot0._maskRTF.rect.width, slot0._txt.preferredHeight)
+
 			slot0:setMaskEnable(true)
 
 			slot0._topLimit = (slot0._txt.preferredHeight - slot0._maskRTF.rect.height) * 0.5 + slot0._padding
 			slot0._bottomLimit = -((slot0._txt.preferredHeight - slot0._maskRTF.rect.height) * 0.5 + slot0._padding)
 			slot0._tweenTime = ((slot0._txt.preferredHeight - slot0._maskRTF.rect.height) * 0.5 + slot0._padding) / slot0._speed
-			slot0._txtRTF.localPosition = Vector3.New(slot0._txtRTF.localPosition.x, slot0._bottomLimit, slot0._txtRTF.localPosition.z)
+			slot0._txtRTF.anchoredPosition = Vector2.New(0, slot0._bottomLimit)
 			--- END OF BLOCK #0 ---
 
 
@@ -81,10 +85,12 @@ function ScrollTxt.preCalFunc(slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 50-62, warpins: 1 ---
+			--- BLOCK #0 47-66, warpins: 1 ---
+			slot0._txtRTF.sizeDelta = Vector2.New(slot0._maskRTF.rect.width, slot0._maskRTF.rect.height)
+
 			slot0:setMaskEnable(false)
 
-			slot0._txtRTF.localPosition = Vector3.New(slot2.x, 0, slot2.z)
+			slot0._txtRTF.anchoredPosition = Vector2.zero
 			--- END OF BLOCK #0 ---
 
 
@@ -97,19 +103,19 @@ function ScrollTxt.preCalFunc(slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 63-67, warpins: 1 ---
+		--- BLOCK #0 67-71, warpins: 1 ---
 		if slot0:checkOverlength() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 68-105, warpins: 1 ---
-			slot0._txtRTF.sizeDelta = Vector2.New(slot0._txt.preferredWidth, slot0._txtRTF.sizeDelta.y)
+			--- BLOCK #0 72-108, warpins: 1 ---
+			slot0._txtRTF.sizeDelta = Vector2.New(slot0._txt.preferredWidth, slot0._maskRTF.rect.height)
 
 			slot0:setMaskEnable(true)
 
 			slot0._leftLimit = -((slot0._txt.preferredWidth - slot0._maskRTF.rect.width) * 0.5 + slot0._padding)
 			slot0._rightLimit = (slot0._txt.preferredWidth - slot0._maskRTF.rect.width) * 0.5 + slot0._padding
 			slot0._tweenTime = ((slot0._txt.preferredWidth - slot0._maskRTF.rect.width) * 0.5 + slot0._padding) / slot0._speed
-			slot0._txtRTF.localPosition = Vector3.New(slot0._rightLimit, slot2.y, slot2.z)
+			slot0._txtRTF.anchoredPosition = Vector2.New(slot0._rightLimit, 0)
 			--- END OF BLOCK #0 ---
 
 
@@ -117,12 +123,12 @@ function ScrollTxt.preCalFunc(slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 106-128, warpins: 1 ---
-			slot0._txtRTF.sizeDelta = Vector2.New(slot0._maskRTF.rect.width, slot0._txtRTF.sizeDelta.y)
+			--- BLOCK #0 109-127, warpins: 1 ---
+			slot0._txtRTF.sizeDelta = Vector2.New(slot0._maskRTF.rect.width, slot0._maskRTF.rect.height)
 
 			slot0:setMaskEnable(false)
 
-			slot0._txtRTF.localPosition = Vector3.New(0, slot2.y, slot2.z)
+			slot0._txtRTF.anchoredPosition = Vector2.zero
 			--- END OF BLOCK #0 ---
 
 
@@ -134,17 +140,25 @@ function ScrollTxt.preCalFunc(slot0)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 128-128, warpins: 4 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function ScrollTxt.begin(slot0)
+ScrollTxt.begin = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-35, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
 	if IsNil(slot0._maskRTF) or IsNil(slot0._txt) then
 
 		-- Decompilation error in this vicinity:
@@ -156,6 +170,14 @@ function ScrollTxt.begin(slot0)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 12-17, warpins: 2 ---
 	slot0:preCalFunc()
 
 	if slot0._vertical then
@@ -196,48 +218,80 @@ function ScrollTxt.begin(slot0)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 35-35, warpins: 4 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-function ScrollTxt.checkOverlength(slot0)
+ScrollTxt.checkOverlength = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-37, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0._vertical then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 19-20, warpins: 2 ---
+		--- BLOCK #0 4-8, warpins: 1 ---
 		return slot0._maskRTF.rect.height ~= 0 and slot0._maskRTF.rect.height < slot0._txt.preferredHeight
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 19-20, warpins: 2 ---
+		--- END OF BLOCK #1 ---
 
 
 
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 21-36, warpins: 1 ---
+		--- BLOCK #0 21-25, warpins: 1 ---
 		return slot0._maskRTF.rect.width ~= 0 and slot0._maskRTF.rect.width < slot0._txt.preferredWidth
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 36-36, warpins: 2 ---
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 37-37, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function ScrollTxt.startTween(slot0)
+ScrollTxt.startTween = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-35, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
 	if IsNil(slot0._maskRTF) or IsNil(slot0._txt) then
 
 		-- Decompilation error in this vicinity:
@@ -249,17 +303,25 @@ function ScrollTxt.startTween(slot0)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 12-34, warpins: 1 ---
 	LeanTween.moveX(slot0._txtRTF, slot0._leftLimit, slot0._tweenTime):setFrom(slot0._rightLimit):setDelay(slot0._delayTime):setOnComplete(System.Action(function ()
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-14, warpins: 1 ---
-		LeanTween.delayedCall(go(uv0._txtRTF), uv0._delayTime, System.Action(function ()
+		LeanTween.delayedCall(go(slot0._txtRTF), slot0._delayTime, System.Action(function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-18, warpins: 1 ---
-			uv0._txtRTF.localPosition = Vector3.New(uv0._rightLimit, uv0._txtRTF.localPosition.y, uv0._txtRTF.localPosition.z)
+			--- BLOCK #0 1-14, warpins: 1 ---
+			slot0._txtRTF.anchoredPosition = Vector2.New(slot0._rightLimit, 0)
 
-			uv0:startTween()
+			slot0._txtRTF:startTween()
 
 			return
 			--- END OF BLOCK #0 ---
@@ -276,16 +338,24 @@ function ScrollTxt.startTween(slot0)
 	end))
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 35-35, warpins: 2 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-function ScrollTxt.startTweenVertical(slot0)
+ScrollTxt.startTweenVertical = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-35, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
 	if IsNil(slot0._maskRTF) or IsNil(slot0._txt) then
 
 		-- Decompilation error in this vicinity:
@@ -297,17 +367,25 @@ function ScrollTxt.startTweenVertical(slot0)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 12-34, warpins: 1 ---
 	LeanTween.moveY(slot0._txtRTF, slot0._topLimit, slot0._tweenTime):setFrom(slot0._bottomLimit):setDelay(slot0._delayTime):setOnComplete(System.Action(function ()
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-14, warpins: 1 ---
-		LeanTween.delayedCall(go(uv0._txtRTF), uv0._delayTime, System.Action(function ()
+		LeanTween.delayedCall(go(slot0._txtRTF), slot0._delayTime, System.Action(function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-18, warpins: 1 ---
-			uv0._txtRTF.localPosition = Vector3.New(uv0._txtRTF.localPosition.x, uv0._bottomLimit, uv0._txtRTF.localPosition.z)
+			--- BLOCK #0 1-14, warpins: 1 ---
+			slot0._txtRTF.anchoredPosition = Vector2.New(0, slot0._bottomLimit)
 
-			uv0:startTweenVertical()
+			slot0._txtRTF:startTweenVertical()
 
 			return
 			--- END OF BLOCK #0 ---
@@ -324,16 +402,24 @@ function ScrollTxt.startTweenVertical(slot0)
 	end))
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 35-35, warpins: 2 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-function ScrollTxt.setMaskEnable(slot0, slot1)
+ScrollTxt.setMaskEnable = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-27, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if not slot0._notSensitive and slot0._mask then
 
 		-- Decompilation error in this vicinity:
@@ -366,17 +452,25 @@ function ScrollTxt.setMaskEnable(slot0, slot1)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 27-27, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function ScrollTxt.clear(slot0)
+ScrollTxt.clear = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-21, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
 	if not IsNil(slot0._txtRTF) then
 
 		-- Decompilation error in this vicinity:
@@ -388,6 +482,14 @@ function ScrollTxt.clear(slot0)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 12-14, warpins: 2 ---
 	if slot0.timer ~= nil then
 
 		-- Decompilation error in this vicinity:
@@ -401,17 +503,25 @@ function ScrollTxt.clear(slot0)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 21-21, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-function ScrollTxt.destroy(slot0)
+ScrollTxt.destroy = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-26, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0:clear()
 
 	if slot0._txtIsClone then
@@ -427,12 +537,20 @@ function ScrollTxt.destroy(slot0)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 20-26, warpins: 2 ---
 	slot0._txt = nil
 	slot0._txtRTF = nil
 	slot0._txtRect = nil
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
 
 

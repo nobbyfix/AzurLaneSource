@@ -53,6 +53,7 @@ slot0.init = function (slot0)
 	slot0.lessonPanel = slot0:findTF("blurOther/lessonPanel/frame")
 	slot0.lessonMask = slot0:findTF("blurOther/lessonPanel")
 	slot0.lessonSelBtn = slot0:findTF("confirm_btn", slot0.lessonPanel)
+	slot0.lessonCancelBtn = slot0:findTF("cancel_btn", slot0.lessonPanel)
 	slot0.lessonContent = slot0:findTF("bg/lessons/content", slot0.lessonPanel)
 	slot0.UIMain = GameObject.Find("/OverlayCamera/Overlay/UIMain")
 	slot0.nameTxts = {}
@@ -64,7 +65,7 @@ slot0.didEnter = function (slot0)
 	slot0.lessonOverTimer = {}
 
 	onButton(slot0, slot0.backBtn, function ()
-		slot0:emit(slot1.ON_CLOSE)
+		slot0:closeView()
 	end, SFX_CANCEL)
 	setActive(slot0:findTF("stamp", slot0.mainPanel), getProxy(TaskProxy):mingshiTouchFlagEnabled())
 
@@ -81,7 +82,7 @@ slot0.didEnter = function (slot0)
 			helps = pg.gametip.tactics_lesson_system_introduce.tip
 		})
 	end, SFX_PANEL)
-	onButton(slot0, slot0.lessonMask, function ()
+	onButton(slot0, slot0.lessonCancelBtn, function ()
 		slot0:closeLessonSel()
 		slot0.closeLessonSel:unblurView()
 	end, SFX_PANEL)
@@ -193,12 +194,18 @@ slot0.addStudent = function (slot0, slot1, slot2, slot3)
 			coroutine.yield()
 		end
 
-		slot1:showLessonSel(slot2, slot1.select)
+		local function slot4()
+			slot0.select = nil
+
+			slot0:addStudent(slot0, , )
+		end
+
+		slot1:showLessonSel(slot2, slot1.select, slot4)
 		coroutine.yield()
 
-		slot1.studentVOs[slot3] = slot2
+		slot1.studentVOs[slot4] = slot2
 
-		slot3:updateStudentTF(slot2.id, )
+		slot4:updateStudentTF(slot2.id, )
 	end)
 
 	slot0.select()
@@ -1111,14 +1118,31 @@ slot0.showSkillSel = function (slot0, slot1, slot2)
 
 end
 
-slot0.updateSkill = function (slot0, slot1, slot2, slot3)
+slot0.updateSkill = function (slot0, slot1, slot2, slot3, slot4)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-22, warpins: 1 ---
-	setActive(slot4, slot3)
-	setActive(slot5, not slot3)
-	setToggleEnabled(slot2, slot3 and slot3.isLearn)
-	setActive(findTF(slot2, "frame/mask"), slot3 and not slot3.isLearn)
+	--- BLOCK #0 1-20, warpins: 1 ---
+	setActive(slot5, slot3)
+	setActive(slot0:findTF("frame/empty", slot2), not slot3)
+
+	if not slot4 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 21-24, warpins: 1 ---
+		setToggleEnabled(slot2, slot3 and slot3.isLearn)
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 26-26, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
 
 	--- END OF BLOCK #0 ---
 
@@ -1127,7 +1151,9 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 24-31, warpins: 2 ---
+	--- BLOCK #1 27-33, warpins: 2 ---
+	setActive(findTF(slot2, "frame/mask"), slot3 and not slot3.isLearn)
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -1135,18 +1161,18 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 34-36, warpins: 2 ---
+	--- BLOCK #2 36-38, warpins: 2 ---
 	if slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 37-60, warpins: 1 ---
-		setText(findTF(slot4, "name_contain/name"), slot3.name)
-		LoadImageSpriteAsync("skillicon/" .. slot3.icon, findTF(slot4, "icon"))
-		setText(findTF(slot4, "name_contain/level_contain/label"), (slot3.isLearn and "lv") or "")
-		setText(findTF(slot4, "name_contain/level_contain/Text"), (slot3.isLearn and slot3.level) or "")
-		setText(findTF(slot4, "next_contain/label"), (slot3.isLearn and "NEXT:") or "")
+		--- BLOCK #0 39-62, warpins: 1 ---
+		setText(findTF(slot5, "name_contain/name"), slot3.name)
+		LoadImageSpriteAsync("skillicon/" .. slot3.icon, findTF(slot5, "icon"))
+		setText(findTF(slot5, "name_contain/level_contain/label"), (slot3.isLearn and "lv") or "")
+		setText(findTF(slot5, "name_contain/level_contain/Text"), (slot3.isLearn and slot3.level .. ((slot3.additionLevel and "<color=#A9F548FF>+" .. slot3.additionLevel .. "</color>") or "")) or "")
+		setText(findTF(slot5, "next_contain/label"), (slot3.isLearn and "NEXT:") or "")
 
-		slot6 = nil
+		slot8 = nil
 
 		--- END OF BLOCK #0 ---
 
@@ -1155,7 +1181,7 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 64-72, warpins: 2 ---
+		--- BLOCK #1 66-69, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
@@ -1163,7 +1189,7 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 77-85, warpins: 2 ---
+		--- BLOCK #2 77-84, warpins: 2 ---
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
@@ -1171,19 +1197,27 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 89-93, warpins: 2 ---
+		--- BLOCK #3 91-99, warpins: 2 ---
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 103-107, warpins: 2 ---
 		if slot3.isLearn then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 94-110, warpins: 1 ---
-			slot7 = getConfigFromLevel1(pg.skill_need_exp, slot3.level)
-			slot8 = findTF(slot4, "next_contain/Text")
+			--- BLOCK #0 108-124, warpins: 1 ---
+			slot9 = getConfigFromLevel1(pg.skill_need_exp, slot3.level)
+			slot10 = findTF(slot5, "next_contain/Text")
 
 			if slot3.level == pg.skill_data_template[slot3.id].max_level then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 111-115, warpins: 1 ---
-				setText(slot8, "MAX")
+				--- BLOCK #0 125-129, warpins: 1 ---
+				setText(slot10, "MAX")
 				--- END OF BLOCK #0 ---
 
 
@@ -1191,8 +1225,8 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 116-122, warpins: 1 ---
-				setText(slot8, slot3.exp .. "/" .. slot7.exp)
+				--- BLOCK #0 130-137, warpins: 1 ---
+				setText(slot10, "<color=#A9F548FF>" .. slot3.exp .. "</color>/" .. slot9.exp)
 				--- END OF BLOCK #0 ---
 
 
@@ -1206,8 +1240,8 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 123-134, warpins: 2 ---
-			setText(findTF(slot4, "desc"), Student.getSkillDesc(slot3.id, slot3.level))
+			--- BLOCK #1 138-149, warpins: 2 ---
+			setText(findTF(slot5, "desc"), Student.getSkillDesc(slot3.id, slot3.level))
 			--- END OF BLOCK #1 ---
 
 
@@ -1215,27 +1249,8 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 135-141, warpins: 1 ---
-			setText(findTF(slot4, "desc"), slot3.desc)
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #4 142-162, warpins: 2 ---
-		if 26 - math.floor((#findTF(slot4, "desc"):GetComponent(typeof(Text)).text - 160) / 40) < 20 then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 163-163, warpins: 1 ---
-			slot8 = 20
+			--- BLOCK #0 150-156, warpins: 1 ---
+			setText(findTF(slot5, "desc"), slot3.desc)
 			--- END OF BLOCK #0 ---
 
 
@@ -1249,12 +1264,12 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #5 164-166, warpins: 2 ---
-		if slot8 > 28 then
+		--- BLOCK #5 157-177, warpins: 2 ---
+		if 26 - math.floor((#findTF(slot5, "desc"):GetComponent(typeof(Text)).text - 160) / 40) < 20 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 167-167, warpins: 1 ---
-			slot8 = 28
+			--- BLOCK #0 178-178, warpins: 1 ---
+			slot10 = 20
 			--- END OF BLOCK #0 ---
 
 
@@ -1268,69 +1283,97 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #6 168-175, warpins: 2 ---
-		slot7.fontSize = slot8
-
-		onToggle(slot0, slot2, function (slot0)
+		--- BLOCK #6 179-181, warpins: 2 ---
+		if slot10 > 28 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-4, warpins: 1 ---
-			if not slot0.isLearn then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 5-5, warpins: 1 ---
-				return
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 6-7, warpins: 2 ---
-			if slot0 then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 8-10, warpins: 1 ---
-				slot1.selectedSkillIndex = slot2
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			--- END OF BLOCK #1 ---
-
-			FLOW; TARGET BLOCK #2
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #2 11-11, warpins: 2 ---
-			return
-			--- END OF BLOCK #2 ---
-
-
-
-		end)
-
-		if slot1 == 1 then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 176-179, warpins: 1 ---
-			triggerToggle(slot2, true)
+			--- BLOCK #0 182-182, warpins: 1 ---
+			slot10 = 28
 			--- END OF BLOCK #0 ---
 
 
 
 		end
+
 		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #7 183-185, warpins: 2 ---
+		slot9.fontSize = slot10
+
+		if not slot4 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 186-192, warpins: 1 ---
+			onToggle(slot0, slot2, function (slot0)
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-4, warpins: 1 ---
+				if not slot0.isLearn then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 5-5, warpins: 1 ---
+					return
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 6-7, warpins: 2 ---
+				if slot0 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 8-10, warpins: 1 ---
+					slot1.selectedSkillIndex = slot2
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 11-11, warpins: 2 ---
+				return
+				--- END OF BLOCK #2 ---
+
+
+
+			end)
+
+			if slot1 == 1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 193-196, warpins: 1 ---
+				triggerToggle(slot2, true)
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #7 ---
 
 
 
@@ -1343,7 +1386,7 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 180-181, warpins: 3 ---
+	--- BLOCK #3 197-198, warpins: 4 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -1368,7 +1411,7 @@ slot0.closeSkllSel = function (slot0)
 
 end
 
-slot0.showLessonSel = function (slot0, slot1, slot2)
+slot0.showLessonSel = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-20, warpins: 1 ---
@@ -1378,7 +1421,7 @@ slot0.showLessonSel = function (slot0, slot1, slot2)
 
 	setActive(slot0.lessonMask, true)
 
-	slot4 = slot0.lessonContent:Find("bg")
+	slot5 = slot0.lessonContent:Find("bg")
 
 	if slot0.lessonContent.childCount > #slot0.itemVOs then
 
@@ -1392,11 +1435,11 @@ slot0.showLessonSel = function (slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #1 26-34, warpins: 0 ---
-		for slot8 = slot3 - 1, #slot0.itemVOs, -1 do
+		for slot9 = slot4 - 1, #slot0.itemVOs, -1 do
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 26-34, warpins: 2 ---
-			setActive(slot0.lessonContent:GetChild(slot8), false)
+			setActive(slot0.lessonContent:GetChild(slot9), false)
 			--- END OF BLOCK #0 ---
 
 
@@ -1426,11 +1469,11 @@ slot0.showLessonSel = function (slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #1 42-46, warpins: 0 ---
-		for slot8 = 1, #slot0.itemVOs - slot3, 1 do
+		for slot9 = 1, #slot0.itemVOs - slot4, 1 do
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 42-46, warpins: 2 ---
-			cloneTplTo(slot4, slot0.lessonContent)
+			cloneTplTo(slot5, slot0.lessonContent)
 			--- END OF BLOCK #0 ---
 
 
@@ -1449,82 +1492,30 @@ slot0.showLessonSel = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 47-71, warpins: 2 ---
-	slot5 = slot0.shipVOs[slot1.shipId].configId
-	slot8 = slot0:findTF("skill/skilltpl_1", slot0.lessonMask)
-	slot9 = getSkillConfig(slot6)
+	--- BLOCK #1 47-66, warpins: 2 ---
+	slot6 = slot0.shipVOs[slot1.shipId].configId
+	slot7 = slot1:getSkillId(slot0.shipVOs[slot1.shipId])
+	slot8 = slot0.shipVOs[slot1.shipId]
+	slot9 = slot0:findTF("skill/skilltpl_1", slot0.lessonMask)
 
-	if slot0.shipVOs[slot1.shipId].skills[slot1:getSkillId(slot0.shipVOs[slot1.shipId])] then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 72-100, warpins: 1 ---
-		slot0:updateSkill(k, slot8, {
-			isLearn = true,
-			id = slot6,
-			name = getSkillName(slot6),
-			icon = slot9.icon,
-			desc = getSkillDesc(slot6, slot7.skills[slot6].level),
-			level = slot7.skills[slot6].level,
-			exp = slot7.skills[slot6].exp
-		})
-		--- END OF BLOCK #0 ---
-
-
-
-	else
+	if slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 101-120, warpins: 1 ---
-		slot0:updateSkill(k, slot8, {
-			isLearn = false,
-			id = slot6,
-			name = getSkillName(slot6),
-			icon = slot9.icon,
-			desc = getSkillDesc(slot6, slot7.skills[slot6].level)
-		})
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #2 121-125, warpins: 2 ---
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #3 126-180, warpins: 0 ---
-	for slot13 = 1, #slot0.itemVOs, 1 do
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 126-150, warpins: 2 ---
-		slot14 = slot0.lessonContent:GetChild(slot13 - 1)
-
-		updateItem(slot14, slot15)
-		SetActive(slot14:Find("addition"), slot0:getLessonAddition(slot6, slot0.itemVOs[slot13].id) > 1)
-		setText(slot17, slot16 * 100 .. "%exp")
-		setText(findTF(slot14, "icon_bg/count"), slot15.count)
-		onToggle(slot0, slot14, function (slot0)
+		--- BLOCK #0 67-71, warpins: 1 ---
+		onButton(slot0, slot9, function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-2, warpins: 1 ---
-			if slot0 then
+			--- BLOCK #0 1-13, warpins: 1 ---
+			slot0:closeLessonSel()
+
+			slot0.closeLessonSel.selectedLessonId = nil
+			slot0.closeLessonSel.lessonTime = nil
+
+			if nil then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 3-13, warpins: 1 ---
-				slot0.selectedLessonId = slot1.id
-
-				slot0:updateLessonInfo(slot0, slot1.id)
+				--- BLOCK #0 14-15, warpins: 1 ---
+				slot1()
 				--- END OF BLOCK #0 ---
 
 
@@ -1538,7 +1529,75 @@ slot0.showLessonSel = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 14-14, warpins: 2 ---
+			--- BLOCK #1 16-16, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
+		end)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 72-83, warpins: 2 ---
+	slot10 = getSkillConfig(slot7)
+
+	slot11(nil)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 84-138, warpins: 0 ---
+	for slot15 = 1, #slot0.itemVOs, 1 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 84-108, warpins: 2 ---
+		slot16 = slot0.lessonContent:GetChild(slot15 - 1)
+
+		updateItem(slot16, slot17)
+		SetActive(slot16:Find("addition"), slot0:getLessonAddition(slot7, slot0.itemVOs[slot15].id) > 1)
+		setText(slot19, slot18 * 100 .. "%exp")
+		setText(findTF(slot16, "icon_bg/count"), slot17.count)
+		onToggle(slot0, slot16, function (slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-2, warpins: 1 ---
+			if slot0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 3-17, warpins: 1 ---
+				slot0.selectedLessonId = slot1.id
+
+				slot0:updateLessonInfo(slot0, slot1.id)
+				slot0(slot1.id)
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 18-18, warpins: 2 ---
 			return
 			--- END OF BLOCK #1 ---
 
@@ -1553,12 +1612,12 @@ slot0.showLessonSel = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 154-174, warpins: 2 ---
-		if slot13 == 1 then
+		--- BLOCK #1 112-132, warpins: 2 ---
+		if slot15 == 1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 175-178, warpins: 1 ---
-			triggerToggle(slot14, true)
+			--- BLOCK #0 133-136, warpins: 1 ---
+			triggerToggle(slot16, true)
 			--- END OF BLOCK #0 ---
 
 
@@ -1571,7 +1630,7 @@ slot0.showLessonSel = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 179-180, warpins: 2 ---
+		--- BLOCK #2 137-138, warpins: 2 ---
 		--- END OF BLOCK #2 ---
 
 
@@ -1585,7 +1644,7 @@ slot0.showLessonSel = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 181-188, warpins: 1 ---
+	--- BLOCK #4 139-146, warpins: 1 ---
 	onButton(slot0, slot0.lessonSelBtn, function ()
 
 		-- Decompilation error in this vicinity:

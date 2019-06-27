@@ -100,6 +100,8 @@ slot0.checkToggleActive = function (slot0, slot1)
 		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip()
 	elseif slot1 == ShipViewConst.PAGE.REMOULD then
 		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip() and pg.ship_data_trans[slot0.shipVO.groupId]
+	elseif slot1 == ShipViewConst.PAGE.FASHION then
+		return true
 	else
 		return false
 	end
@@ -183,12 +185,11 @@ slot0.initShip = function (slot0)
 
 	setActive(slot0.shipInfo, true)
 
-	slot0.painting = slot0:findTF("painting", slot0.shipInfo)
-	slot0.painting2 = slot0:findTF("painting2", slot0.shipInfo)
 	slot0.tablePainting = {
-		slot0.painting,
-		slot0.painting2
+		slot0:findTF("painting", slot0.shipInfo),
+		slot0:findTF("painting2", slot0.shipInfo)
 	}
+	slot0.nowPainting = nil
 	slot0.isRight = true
 	slot0.blurPanel = slot0:findTF("blur_panel")
 	slot0.common = slot0.blurPanel:Find("adapt")
@@ -210,7 +211,7 @@ slot0.initShip = function (slot0)
 	slot0.character = slot0:findTF("main/character")
 	slot0.chat = slot0:findTF("main/character/chat")
 	slot0.chatBg = slot0:findTF("main/character/chat/chatbgtop")
-	slot0.chatText = slot0:findTF("main/character/chat/Text")
+	slot0.chatText = slot0:findTF("Text", slot0.chat)
 	rtf(slot0.chat).localScale = Vector3.New(0, 0, 1)
 	slot0.initChatBgH = slot0.chatText.sizeDelta.y
 	slot0.initfontSize = slot0.chatText:GetComponent(typeof(Text)).fontSize
@@ -611,8 +612,8 @@ slot0.displayShipWord = function (slot0, slot1, slot2)
 
 		slot3 = slot0.chatText:GetComponent(typeof(Text))
 
-		if findTF(slot0.painting, "fitter").childCount > 0 then
-			Ship.SetExpression(findTF(slot0.painting, "fitter"):GetChild(0), slot0.paintingCode, slot1)
+		if findTF(slot0.nowPainting, "fitter").childCount > 0 then
+			Ship.SetExpression(findTF(slot0.nowPainting, "fitter"):GetChild(0), slot0.paintingCode, slot1)
 		end
 
 		slot8, slot5 = Ship.getWords(slot0.shipVO.skinId, slot1, nil, nil, slot0.shipVO:getIntimacy() / 100 + ((slot0.shipVO.propose and 1000) or 0))
@@ -636,9 +637,15 @@ slot0.displayShipWord = function (slot0, slot1, slot2)
 			slot3.alignment = TextAnchor.MiddleCenter
 		end
 
-		slot6 = slot0
+		if slot0.initChatBgH < slot3.preferredHeight + 120 then
+			slot0.chatBg.sizeDelta = Vector2.New(slot0.chatBg.sizeDelta.x, slot6)
+		else
+			slot0.chatBg.sizeDelta = Vector2.New(slot0.chatBg.sizeDelta.x, slot0.initChatBgH)
+		end
 
-		function slot7()
+		slot7 = slot0
+
+		function slot8()
 			if slot0.chatFlag then
 				if slot0.chatani1Id then
 					LeanTween.cancel(slot0.chatani1Id)
@@ -657,7 +664,7 @@ slot0.displayShipWord = function (slot0, slot1, slot2)
 		end
 
 		if slot5 then
-			function slot8()
+			function slot9()
 				if slot0._currentVoice then
 					slot0._currentVoice:Stop(true)
 				end
@@ -672,7 +679,7 @@ slot0.displayShipWord = function (slot0, slot1, slot2)
 			end
 
 			if slot0.loadedCVBankName then
-				slot8()
+				slot9()
 			else
 				pg.CriMgr:LoadCV(Ship.getCVKeyID(slot0.shipVO.skinId), function ()
 					slot0 = pg.CriMgr.GetCVBankName(pg.CriMgr.GetCVBankName)
@@ -689,7 +696,7 @@ slot0.displayShipWord = function (slot0, slot1, slot2)
 				end)
 			end
 		else
-			slot7()
+			slot8()
 		end
 	end
 end
@@ -866,12 +873,12 @@ slot0.switchPainting = function (slot0)
 		slot0.paintingFrameName = "chuanwu"
 	end
 
-	slot1 = GetOrAddComponent(findTF(slot0.painting, "fitter"), "PaintingScaler")
+	slot1 = GetOrAddComponent(findTF(slot0.nowPainting, "fitter"), "PaintingScaler")
 
 	slot1:Snapshoot()
 
 	slot1.FrameName = slot0.paintingFrameName
-	slot2 = LeanTween.value(go(slot0.painting), 0, 1, slot0):setOnUpdate(System.Action_float(function (slot0)
+	slot2 = LeanTween.value(go(slot0.nowPainting), 0, 1, slot0):setOnUpdate(System.Action_float(function (slot0)
 		slot0.Tween = slot0
 		slot0.chat.localPosition = Vector3(slot1.character.localPosition.x + 100, slot1.chat.localPosition.y, 0)
 	end)):setEase(LeanTweenType.easeInOutSine)
@@ -1066,8 +1073,9 @@ slot0.loadPainting = function (slot0, slot1)
 	if slot0.paintingCode and slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 104-115, warpins: 1 ---
+		--- BLOCK #0 104-116, warpins: 1 ---
 		slot6 = slot5:GetComponent(typeof(RectTransform))
+		slot0.nowPainting = slot5
 		slot7 = setPaintingPrefabAsync
 		slot8 = slot5
 		slot9 = slot0.paintingCode
@@ -1107,7 +1115,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 116-116, warpins: 1 ---
+		--- BLOCK #1 117-117, warpins: 1 ---
 		slot10 = "chuanwu"
 		--- END OF BLOCK #1 ---
 
@@ -1116,7 +1124,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 117-161, warpins: 2 ---
+		--- BLOCK #2 118-162, warpins: 2 ---
 		--- END OF BLOCK #2 ---
 
 
@@ -1130,7 +1138,9 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 162-167, warpins: 3 ---
+	--- BLOCK #7 163-171, warpins: 3 ---
+	print("gg")
+
 	slot0.LoadShipVOId = slot0.shipVO.id
 	slot0.LoadPaintingCode = slot1
 
@@ -1142,7 +1152,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 168-168, warpins: 2 ---
+	--- BLOCK #8 172-172, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -1150,7 +1160,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #9 169-169, warpins: 2 ---
+	--- BLOCK #9 173-173, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
 
@@ -1806,7 +1816,7 @@ slot0.paintView = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 96-196, warpins: 1 ---
+	--- BLOCK #8 96-193, warpins: 1 ---
 	slot1[#slot1 + 1] = slot0.chat
 
 	openPortrait()
@@ -1816,16 +1826,15 @@ slot0.paintView = function (slot0)
 
 	slot0.mainMask:PerformClipping()
 
-	slot5 = slot0:getPaintingFromTable(false)
-	slot6 = slot5.anchoredPosition.x
-	slot7 = slot5.anchoredPosition.y
+	slot6 = slot0.nowPainting.anchoredPosition.x
+	slot7 = slot0.nowPainting.anchoredPosition.y
 	slot10 = slot0._tf.rect.width / UnityEngine.Screen.width
 	slot11 = slot0._tf.rect.height / UnityEngine.Screen.height
-	slot12 = slot5.rect.width / 2
-	slot13 = slot5.rect.height / 2
+	slot12 = slot0.nowPainting.rect.width / 2
+	slot13 = slot0.nowPainting.rect.height / 2
 	slot14, slot15 = nil
 
-	GetOrAddComponent(slot0.background, "MultiTouchZoom").SetZoomTarget(slot16, slot0.painting)
+	GetOrAddComponent(slot0.background, "MultiTouchZoom").SetZoomTarget(slot16, slot0.nowPainting)
 
 	slot17 = GetOrAddComponent(slot0.background, "EventTriggerListener")
 	slot18 = true
@@ -1912,9 +1921,9 @@ slot0.paintView = function (slot0)
 	slot17:AddBeginDragFunc(function (slot0, slot1)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-36, warpins: 1 ---
+		--- BLOCK #0 1-30, warpins: 1 ---
 		slot0 = false
-		slot5 = slot1.position.x *  - slot1.position.x - tf(slot4:getPaintingFromTable(false)).localPosition.x.position.y * slot6 - slot7 - tf(slot4.getPaintingFromTable:getPaintingFromTable(false)).localPosition.y
+		slot5 = slot1.position.x *  - slot1.position.x - tf(slot4.nowPainting).localPosition.x.position.y * slot6 - slot7 - tf(slot4.nowPainting.nowPainting).localPosition.y
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1929,8 +1938,8 @@ slot0.paintView = function (slot0)
 		if slot0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 4-38, warpins: 1 ---
-			tf(slot1:getPaintingFromTable(false)).localPosition = Vector3(slot1.position.x * slot2 - slot3 - slot4, slot1.position.y * slot5 -  - slot1.position.y * slot5, -22)
+			--- BLOCK #0 4-32, warpins: 1 ---
+			tf(slot1.nowPainting).localPosition = Vector3(slot1.position.x * slot2 - slot3 - slot4, slot1.position.y * slot5 -  - slot1.position.y * slot5, -22)
 			--- END OF BLOCK #0 ---
 
 
@@ -1944,7 +1953,7 @@ slot0.paintView = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 39-39, warpins: 2 ---
+		--- BLOCK #1 33-33, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 
@@ -2030,18 +2039,18 @@ slot0.paintView = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 44-93, warpins: 1 ---
+		--- BLOCK #3 44-84, warpins: 1 ---
 		closePortrait()
 
-		slot0:getPaintingFromTable(false).localScale = Vector3(1, 1, 1)
+		slot0.nowPainting.localScale = Vector3(1, 1, 1)
 
-		setAnchoredPosition(slot0:getPaintingFromTable(false), {
-			x = false,
+		setAnchoredPosition(slot0.nowPainting, {
+			x = 1,
 			y = 1
 		})
 
 		slot0.background:GetComponent("Button").enabled = false
-		slot0:getPaintingFromTable(false):GetComponent("CanvasGroup").blocksRaycasts = true
+		slot0.nowPainting:GetComponent("CanvasGroup").blocksRaycasts = true
 		slot0.mainMask.enabled = true
 
 		slot0.mainMask:PerformClipping()
@@ -2058,11 +2067,11 @@ slot0.paintView = function (slot0)
 	SwitchPanel(slot0.shipInfo, slot2, nil, slot1 * 2):setOnComplete(System.Action(function ()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-26, warpins: 1 ---
+		--- BLOCK #0 1-23, warpins: 1 ---
 		slot0.enabled = true
 		true.enabled = true
 		slot2.background:GetComponent("Button").enabled = true
-		slot2:getPaintingFromTable(false):GetComponent("CanvasGroup").blocksRaycasts = false
+		slot2.nowPainting:GetComponent("CanvasGroup").blocksRaycasts = false
 
 		return
 		--- END OF BLOCK #0 ---
@@ -2294,8 +2303,8 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 81-87, warpins: 1 ---
-		retPaintingPrefab(slot0:getPaintingFromTable(false), slot0.paintingCode)
+		--- BLOCK #2 81-84, warpins: 1 ---
+		retPaintingPrefab(slot0.nowPainting, slot0.paintingCode)
 		--- END OF BLOCK #2 ---
 
 
@@ -2309,7 +2318,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 88-117, warpins: 2 ---
+	--- BLOCK #2 85-114, warpins: 2 ---
 	slot0.shipDetailView:Destroy()
 	slot0.shipFashionView:Destroy()
 	slot0.shipEquipView:Destroy()
@@ -2321,7 +2330,7 @@ slot0.willExit = function (slot0)
 	if slot0.energyTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 118-123, warpins: 1 ---
+		--- BLOCK #0 115-120, warpins: 1 ---
 		slot0.energyTimer:Stop()
 
 		slot0.energyTimer = nil
@@ -2338,11 +2347,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 124-126, warpins: 2 ---
+	--- BLOCK #3 121-123, warpins: 2 ---
 	if slot0.chatTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 127-132, warpins: 1 ---
+		--- BLOCK #0 124-129, warpins: 1 ---
 		slot0.chatTimer:Stop()
 
 		slot0.chatTimer = nil
@@ -2359,11 +2368,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 133-135, warpins: 2 ---
+	--- BLOCK #4 130-132, warpins: 2 ---
 	if slot0._currentVoice then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 136-140, warpins: 1 ---
+		--- BLOCK #0 133-137, warpins: 1 ---
 		slot0._currentVoice:Stop(true)
 		--- END OF BLOCK #0 ---
 
@@ -2378,13 +2387,13 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 141-145, warpins: 2 ---
+	--- BLOCK #5 138-142, warpins: 2 ---
 	slot0._currentVoice = nil
 
 	if slot0.loadedCVBankName then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 146-152, warpins: 1 ---
+		--- BLOCK #0 143-149, warpins: 1 ---
 		pg.CriMgr.UnloadCVBank(slot0.loadedCVBankName)
 
 		slot0.loadedCVBankName = nil
@@ -2401,13 +2410,13 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 153-158, warpins: 2 ---
+	--- BLOCK #6 150-155, warpins: 2 ---
 	cameraPaintViewAdjust(false)
 
 	if slot0.tweens then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 159-161, warpins: 1 ---
+		--- BLOCK #0 156-158, warpins: 1 ---
 		cancelTweens(slot0.tweens)
 		--- END OF BLOCK #0 ---
 
@@ -2422,11 +2431,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 162-164, warpins: 2 ---
+	--- BLOCK #7 159-161, warpins: 2 ---
 	if slot0.scrollTxt then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 165-168, warpins: 1 ---
+		--- BLOCK #0 162-165, warpins: 1 ---
 		slot0.scrollTxt:destroy()
 		--- END OF BLOCK #0 ---
 
@@ -2441,7 +2450,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 169-180, warpins: 2 ---
+	--- BLOCK #8 166-177, warpins: 2 ---
 	pg.UIMgr.GetInstance():UnOverlayPanel(slot0.blurPanel, slot0._tf)
 
 	slot0.shareData = nil
