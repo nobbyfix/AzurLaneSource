@@ -820,7 +820,7 @@ function slot2(slot0)
 							slot14 = slot14.GetInstance
 							slot14 = slot14()
 							slot15 = slot14
-							slot14 = slot14.DescTime
+							slot14 = slot14.STimeDescS
 							slot16 = slot0
 							slot16 = slot16.shipVO
 							slot16 = slot16.proposeTime
@@ -1730,7 +1730,7 @@ function slot2(slot0)
 				if slot2 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 51-68, warpins: 1 ---
+					--- BLOCK #0 51-67, warpins: 1 ---
 					slot2 = setText
 					slot3 = slot0.intimacyDesc
 					slot4 = i18n
@@ -1740,13 +1740,12 @@ function slot2(slot0)
 					slot6 = slot6.GetInstance
 					slot6 = slot6()
 					slot7 = slot6
-					slot6 = slot6.DescTime
+					slot6 = slot6.ChieseDescTime
 					slot8 = slot0.shipVO
 					slot8 = slot8.proposeTime
-					slot9 = "%m/%d/%Y"
-					slot10 = true
+					slot9 = true
 
-					slot2(slot3, slot4(slot5, slot6(slot7, slot8, slot9, slot10)))
+					slot2(slot3, slot4(slot5, slot6(slot7, slot8, slot9)))
 					--- END OF BLOCK #0 ---
 
 
@@ -1754,7 +1753,7 @@ function slot2(slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 69-85, warpins: 1 ---
+					--- BLOCK #0 68-84, warpins: 1 ---
 					slot2 = setText
 					slot3 = slot0.intimacyDesc
 					slot4 = i18n
@@ -1764,7 +1763,7 @@ function slot2(slot0)
 					slot6 = slot6.GetInstance
 					slot6 = slot6()
 					slot7 = slot6
-					slot6 = slot6.DescTime
+					slot6 = slot6.STimeDescS
 					slot8 = slot0.shipVO
 					slot8 = slot8.proposeTime
 					slot9 = "%m/%d/%Y"
@@ -1784,7 +1783,7 @@ function slot2(slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 86-92, warpins: 2 ---
+				--- BLOCK #1 85-91, warpins: 2 ---
 				slot2 = GetOrAddComponent
 				slot3 = slot0.intimacyDesc
 				slot4 = typeof
@@ -1814,7 +1813,7 @@ function slot2(slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 93-140, warpins: 4 ---
+	--- BLOCK #1 92-139, warpins: 4 ---
 	slot2 = setText
 	slot3 = slot0.intimacyBuffDesc
 	slot4 = ""
@@ -2576,7 +2575,7 @@ function slot2(slot0)
 			slot2 = slot2()
 			slot3 = slot2
 			slot2 = slot2.CurrentSTimeDesc
-			slot4 = "%Y%m%d"
+			slot4 = "%m/%d/%Y"
 			slot5 = true
 			slot2 = slot2(slot3, slot4, slot5)
 			slot3 = SPECIAL_PROPOSE
@@ -4002,14 +4001,7 @@ function slot2(slot0, slot1)
 		function slot4()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-14, warpins: 1 ---
-			slot0 = setTextEN
-			slot1 = slot0
-			slot1 = slot1.storyContent
-			slot2 = slot1
-
-			slot0(slot1, slot2)
-
+			--- BLOCK #0 1-9, warpins: 1 ---
 			slot0 = findTF
 			slot1 = slot0
 			slot1 = slot1.targetActorTF
@@ -4021,7 +4013,7 @@ function slot2(slot0, slot1)
 			if slot0 > slot1 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 15-29, warpins: 1 ---
+				--- BLOCK #0 10-24, warpins: 1 ---
 				slot0 = Ship
 				slot0 = slot0.SetExpression
 				slot1 = findTF
@@ -4051,7 +4043,7 @@ function slot2(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 30-53, warpins: 2 ---
+			--- BLOCK #1 25-48, warpins: 2 ---
 			slot0 = setText
 			slot1 = slot0
 			slot1 = slot1.storyContent
@@ -4084,7 +4076,7 @@ function slot2(slot0, slot1)
 			if not slot0 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 54-57, warpins: 1 ---
+				--- BLOCK #0 49-52, warpins: 1 ---
 				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.showTip
@@ -4103,7 +4095,7 @@ function slot2(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 58-58, warpins: 2 ---
+			--- BLOCK #2 53-53, warpins: 2 ---
 			return
 			--- END OF BLOCK #2 ---
 

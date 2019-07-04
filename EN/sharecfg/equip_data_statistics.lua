@@ -12904,7 +12904,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[7340] = {
-		name = "双联装203mm主炮Mle1924(潜艇用)",
+		name = "Submarine-mounted Twin 203mm Cannon (Mle 1924)",
 		type = 3,
 		id = 7340,
 		tech = 0,

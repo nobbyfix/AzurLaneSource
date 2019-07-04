@@ -9631,7 +9631,7 @@ Returning Commanders:
 				info = "The Secondary Password feature's purpose is to ensure that only the account's owner can perform certain actions. The owner can make it necessary to enter the correct password to retire ships or scrap gear, for instance."
 			},
 			{
-				info = "'1. This feature can be turned on and off in the Settings menu."
+				info = "1. This feature can be turned on and off in the Settings menu."
 			},
 			{
 				info = "2. When you enable this feature, you need to create a new password. In order to turn the feature off, you will first need to input the password you created."
@@ -9667,6 +9667,10 @@ Returning Commanders:
 	secondarypassword_illegal_tip = {
 		tip = "Contains sensitive info, please re-enter ",
 		key = "secondarypassword_illegal_tip"
+	},
+	pt_cosume = {
+		tip = "Cost:$1",
+		key = "pt_cosume"
 	},
 	secondarypassword_confirm_tips = {
 		tip = "Would you like to set <color=#FFDE38>\"%s\"</color> as your Secondary Password hint? ",

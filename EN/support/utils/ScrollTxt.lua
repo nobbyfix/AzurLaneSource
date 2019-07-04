@@ -47,7 +47,7 @@ ScrollTxt.setText = function (slot0, slot1)
 
 	slot0._txt.text = tostring(slot1)
 
-	slot0:begin()
+	slot0:delayBegin()
 end
 
 ScrollTxt.delayBegin = function (slot0)
