@@ -5,7 +5,7 @@ pg.ship_data_create_material = {
 		name = "특형함",
 		build_anim = "building",
 		type = 1,
-		ship_icon = "3",
+		ship_icon = "1",
 		build_voice = "",
 		use_item = 20001,
 		number_1 = 2,
@@ -15,7 +15,8 @@ pg.ship_data_create_material = {
 			"<color=#ffde38>SS Rare</color>：7%",
 			"<color=#d797ff>S Rare</color>：12%",
 			"<color=#3dc6ff>Rare</color>：51%",
-			"Normal：30%"
+			"Normal：30%",
+			"<color=#d797ff>글로리어스</color>：2.5%(<color=#92fc63>up!</color>)"
 		}
 	},
 	{
@@ -23,7 +24,7 @@ pg.ship_data_create_material = {
 		name = "소형함",
 		build_anim = "building",
 		type = 1,
-		ship_icon = "1",
+		ship_icon = "2",
 		build_voice = "",
 		use_item = 20001,
 		number_1 = 1,
@@ -33,9 +34,7 @@ pg.ship_data_create_material = {
 			"<color=#ffde38>SS Rare</color>：7%",
 			"<color=#d797ff>S Rare</color>：12%",
 			"<color=#3dc6ff>Rare</color>：26%",
-			"Normal：55%",
-			"<color=#d797ff>꼬마 헬레나</color>：2.5%(<color=#92fc63>up!</color>)",
-			"<color=#d797ff>꼬마 클리블랜드</color>：2.5%(<color=#92fc63>up!</color>)"
+			"Normal：55%"
 		}
 	},
 	{
@@ -43,7 +42,7 @@ pg.ship_data_create_material = {
 		name = "중형함",
 		build_anim = "building",
 		type = 1,
-		ship_icon = "2",
+		ship_icon = "3",
 		build_voice = "",
 		use_item = 20001,
 		number_1 = 2,
@@ -72,12 +71,13 @@ pg.ship_data_create_material = {
 			"<color=#d797ff>S Rare</color>：12%",
 			"<color=#3dc6ff>Rare</color>：51%",
 			"Normal：30%",
-			"<color=#ffde38>비스마르크</color>：2%(<color=#92fc63>up!</color>)",
-			"<color=#ffde38>킹 조지 5세</color>：0.5%",
-			"<color=#d797ff>U-556</color>：2.5%(<color=#92fc63>up!</color>)",
-			"<color=#d797ff>U-73</color>：2.5%(<color=#92fc63>up!</color>)",
-			"<color=#d797ff>Z36</color>：2.5%(<color=#92fc63>up!</color>)",
-			"<color=#3dc6ff>에코</color>：5%(<color=#92fc63>up!</color>)"
+			"<color=#ffde38>쇼카쿠</color>：2.0%(<color=#92fc63>up!</color>)",
+			"<color=#ffde38>즈이카쿠</color>：0.7%",
+			"<color=#ffde38>유키카제</color>：2.0%(<color=#92fc63>up!</color>)",
+			"<color=#d797ff>노와키</color>：4.0%(<color=#92fc63>up!</color>)",
+			"<color=#d797ff>모가미</color>：2.5%(<color=#92fc63>up!</color>)",
+			"<color=#3dc6ff>이세</color>：6.75%(<color=#92fc63>up!</color>)",
+			"<color=#3dc6ff>휴가</color>：6.75%(<color=#92fc63>up!</color>)"
 		}
 	},
 	{
@@ -103,7 +103,7 @@ pg.ship_data_create_material = {
 		name = "특형함·희망",
 		build_anim = "building",
 		type = 2,
-		ship_icon = "3",
+		ship_icon = "1",
 		build_voice = "",
 		use_item = 20001,
 		number_1 = 2,
@@ -121,7 +121,7 @@ pg.ship_data_create_material = {
 		name = "소형함·희망",
 		build_anim = "building",
 		type = 2,
-		ship_icon = "1",
+		ship_icon = "2",
 		build_voice = "",
 		use_item = 20001,
 		number_1 = 1,
@@ -139,7 +139,7 @@ pg.ship_data_create_material = {
 		name = "중형함·희망",
 		build_anim = "building",
 		type = 2,
-		ship_icon = "2",
+		ship_icon = "3",
 		build_voice = "",
 		use_item = 20001,
 		number_1 = 2,
@@ -163,3 +163,5 @@ pg.ship_data_create_material = {
 		8
 	}
 }
+
+return

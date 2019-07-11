@@ -52,6 +52,38 @@ slot1 = {
 	[ActivityConst.ANNIVERSARY_ID] = {
 		className = "SecondAnniversaryPage",
 		uiName = "secondanniversarypage"
+	},
+	[ActivityConst.SIPEI_PAGE_ID] = {
+		className = "SipeiTaskPage",
+		uiName = "sipeitaskpage"
+	},
+	[ActivityConst.GLORY_PAGE_ID] = {
+		className = "GloryTaskPage",
+		uiName = "glorytaskpage"
+	},
+	[ActivityConst.FRANCE_RE_MAIN] = {
+		className = "FranceRestartMainPage",
+		uiName = "francerestartmainpage"
+	},
+	[ActivityConst.FRANCE_RE_PT] = {
+		className = "FranceRestartPtPage",
+		uiName = "francerestartptpage"
+	},
+	[ActivityConst.FRANCE_RE_OIL] = {
+		className = "FranceRestartOilPage",
+		uiName = "francerestartoilpage"
+	},
+	[ActivityConst.HONGRAN_RE_PREVIEW_ID] = {
+		className = "HongranPreviewPage",
+		uiName = "hongranpreviewpage"
+	},
+	[ActivityConst.HONGRAN_RE_PT_ID] = {
+		className = "HongranPtPage",
+		uiName = "hongranptpage"
+	},
+	[ActivityConst.JAVELIN_COMIC_NINE_DAY_TASK] = {
+		className = "JavelinComicSkinPage",
+		uiName = "javelincomicskinpage"
 	}
 }
 slot2 = {}
@@ -65,16 +97,12 @@ slot0.getUIName = function (slot0)
 end
 
 slot0.onBackPressed = function (slot0)
-	if slot0.bonusWindow and isActive(slot0.bonusWindow._tf) then
-		slot0.bonusWindow:Hide()
+	for slot4, slot5 in pairs(slot0.windowList) do
+		if isActive(slot5._tf) then
+			slot0:HideWindow(slot5.class)
 
-		return
-	end
-
-	if slot0.taskBoundsWindow and isActive(slot0.taskBoundsWindow._tf) then
-		slot0.taskBoundsWindow:Hide()
-
-		return
+			return
+		end
 	end
 
 	slot0:emit(slot0.ON_BACK_PRESSED)
@@ -88,11 +116,12 @@ slot0.init = function (slot0)
 	slot0.tabs = slot0:findTF("scroll/viewport/content")
 	slot0.tab = slot0:findTF("tab", slot0.tabs)
 	slot0.entranceList = UIItemList.New(slot0:findTF("enter/viewport/content"), slot0:findTF("enter/viewport/content/btn"))
+	slot0.windowList = {}
 
 	setActive(slot0.tab, false)
 
 	slot0.shareData = ActivityShareData.New()
-	slot2 = tonumber(pg.TimeMgr.GetInstance():DescClientTime(slot1, "%m"))
+	slot2 = tonumber(pg.TimeMgr.GetInstance():CTimeDescC(slot1, "%m"))
 	slot3 = pg.activity_template[ActivityConst.MONTH_SIGN_ACTIVITY_ID].config_client[1]
 	require("GameCfg.activity.EntranceData").pageDic = {}
 
@@ -118,6 +147,7 @@ slot0.didEnter = function (slot0)
 		slot0:emit(slot1.ON_BACK)
 	end, SOUND_BACK)
 	slot0:updateEntrances()
+	slot0:emit(ActivityMediator.SHOW_NEXT_ACTIVITY)
 end
 
 slot0.setPlayer = function (slot0, slot1)
@@ -172,8 +202,7 @@ slot0.updateActivity = function (slot0, slot1)
 	if slot0.activity and slot0.activity.id == slot1.id then
 		slot0.activity = slot1
 
-		slot0.pageDic[slot1.id].ActionInvoke(slot3, "Flush", slot1)
-		slot0:verifyTabs()
+		slot0.pageDic[slot1.id]:ActionInvoke("Flush", slot1)
 	end
 end
 
@@ -213,7 +242,7 @@ slot0.flushTabs = function (slot0)
 						setActive(slot0:findTF("red", slot2), slot3:readyToAchieve())
 						onToggle(slot0, slot2, function (slot0)
 							if slot0 then
-								slot0:selectActivity(slot1.id)
+								slot0:selectActivity(slot0.selectActivity)
 							end
 						end, SFX_PANEL)
 					else
@@ -230,26 +259,32 @@ slot0.flushTabs = function (slot0)
 end
 
 slot0.selectActivity = function (slot0, slot1)
-	if (_.detect(slot0.activities, function (slot0)
-		return slot0.id == slot0
-	end) or slot0.activities[1]) and (not slot0.activity or slot0.activity.id ~= slot2.id) then
-		slot0.pageDic[slot2.id].Load(slot3)
-		slot0.pageDic[slot2.id].ActionInvoke(slot3, "Flush", slot2)
-		slot0.pageDic[slot2.id]:ActionInvoke("ShowOrHide", true)
+	if slot1 and (not slot0.activity or slot0.activity.id ~= slot1.id) then
+		slot0.pageDic[slot1.id].Load(slot2)
+		slot0.pageDic[slot1.id].ActionInvoke(slot2, "Flush", slot1)
+		slot0.pageDic[slot1.id]:ActionInvoke("ShowOrHide", true)
 
-		if slot0.activity and slot0.activity.id ~= slot2.id then
+		if slot0.activity and slot0.activity.id ~= slot1.id then
 			slot0.pageDic[slot0.activity.id]:ActionInvoke("ShowOrHide", false)
 		end
 
-		slot0.activity = slot2
-		slot0.contextData.id = slot2.id
-
-		slot0:verifyTabs()
+		slot0.activity = slot1
+		slot0.contextData.id = slot1.id
 	end
 end
 
-slot0.verifyTabs = function (slot0)
-	triggerToggle(slot0.tabs:GetChild(table.indexof(slot0.activities, slot0.activity) - 1), true)
+slot0.verifyTabs = function (slot0, slot1)
+	slot2 = 1
+
+	for slot6, slot7 in ipairs(slot0.activities) do
+		if slot7.id == slot1 then
+			slot2 = slot6
+
+			break
+		end
+	end
+
+	triggerToggle(slot0.tabs:GetChild(slot2 - 1), true)
 end
 
 slot0.loadActivityPanel = function (slot0, slot1, slot2)
@@ -271,8 +306,8 @@ slot0.loadActivityPanel = function (slot0, slot1, slot2)
 	end
 end
 
-slot0.getBonusWindow = function (slot0, slot1)
-	if not slot0:findTF("bonusWindow") then
+slot0.getBonusWindow = function (slot0, slot1, slot2)
+	if not slot0:findTF(slot1) then
 		PoolMgr.GetInstance():GetUI("ActivitybonusWindow", true, function (slot0)
 			SetParent(slot0, slot0._tf, false)
 
@@ -281,68 +316,28 @@ slot0.getBonusWindow = function (slot0, slot1)
 			slot0(slot0)
 		end)
 	else
-		slot1(slot3)
+		slot2(slot3)
 	end
 end
 
-slot0.ShowBonusWindow = function (slot0, slot1)
-	if not slot0.bonusWindow then
-		slot0:getBonusWindow(function (slot0)
-			slot0.bonusWindow = PtAwardWindow.New(tf(slot0), slot0)
+slot0.ShowWindow = function (slot0, slot1, slot2)
+	if not slot0.windowList[slot1.__cname] then
+		slot0:getBonusWindow(slot3, function (slot0)
+			slot0.windowList[] = slot2.New(tf(slot0), slot0)
 
-			slot0.bonusWindow:Show(slot0.bonusWindow.Show)
+			slot0.windowList[]:Show(slot2.New(tf(slot0), slot0))
 		end)
 	else
-		slot0.bonusWindow:Show(slot1)
+		slot0.windowList[slot3]:Show(slot2)
 	end
 end
 
-slot0.HideBonusWindow = function (slot0)
-	if not slot0.bonusWindow then
+slot0.HideWindow = function (slot0, slot1)
+	if not slot0.windowList[slot1.__cname] then
 		return
 	end
 
-	slot0.bonusWindow:Hide()
-end
-
-slot0.ShowTaskBoundsWindow = function (slot0, slot1)
-	if not slot0.taskBoundsWindow then
-		slot0:getBonusWindow(function (slot0)
-			slot0.taskBoundsWindow = TaskAwardWindow.New(tf(slot0), slot0)
-
-			slot0.taskBoundsWindow:Show(slot0.taskBoundsWindow.Show)
-		end)
-	else
-		slot0.taskBoundsWindow:Show(slot1)
-	end
-end
-
-slot0.HideTaskBoundsWindow = function (slot0)
-	if not slot0.taskBoundsWindow then
-		return
-	end
-
-	slot0.taskBoundsWindow:Hide()
-end
-
-slot0.ShowReturnerBoundsWindow = function (slot0, slot1)
-	if not slot0.returnerAwardWindow then
-		slot0:getBonusWindow(function (slot0)
-			slot0.returnerAwardWindow = ReturnerAwardWindow.New(tf(slot0), slot0)
-
-			slot0.returnerAwardWindow:Show(slot0.returnerAwardWindow.Show)
-		end)
-	else
-		slot0.returnerAwardWindow:Show(slot1)
-	end
-end
-
-slot0.HideReturnerAwardWindow = function (slot0)
-	if not slot0.returnerAwardWindow then
-		return
-	end
-
-	slot0.returnerAwardWindow:Hide()
+	slot0.windowList[slot2]:Hide()
 end
 
 slot0.willExit = function (slot0)
@@ -352,12 +347,8 @@ slot0.willExit = function (slot0)
 		slot5:Destroy()
 	end
 
-	if slot0.bonusWindow then
-		slot0.bonusWindow:Dispose()
-	end
-
-	if slot0.taskBoundsWindow then
-		slot0.taskBoundsWindow:Dispose()
+	for slot4, slot5 in pairs(slot0.windowList) do
+		slot5:Dispose()
 	end
 end
 

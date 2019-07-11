@@ -42,9 +42,8 @@ slot0.setRank = function (slot0, slot1, slot2)
 
 	slot0._playerExpProgress:GetComponent(typeof(Image)).fillAmount = slot2.score / slot5
 
-	setText(slot0._playerBonusExp, i18n("word_rankScore") .. "+0")
+	setText(slot0._playerBonusExp, "+0")
 
-	slot0.playerProgressLabel = i18n("word_rankScore") .. "+"
 	slot0.calcPlayerProgress = slot0.calcPlayerRank
 end
 
@@ -64,7 +63,7 @@ slot0.setPlayer = function (slot0, slot1)
 		slot0._playerExpProgress:GetComponent(typeof(Image)).fillAmount = 1
 	end
 
-	setText(slot0._playerBonusExp, "0")
+	setText(slot0._playerBonusExp, "+0")
 
 	slot0.calcPlayerProgress = slot0.calcPlayerExp
 	slot3 = slot0.contextData.extraBuffList
@@ -1209,15 +1208,17 @@ slot0.displayShips = function (slot0)
 		end
 	end
 
-	local function slot11(slot0, slot1)
+	slot9[#slot9].GetComponent(slot11, typeof(DftAniEvent)).SetEndEvent(slot12, function (slot0)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-3, warpins: 1 ---
-		if #slot0 == 0 then
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0._stateFlag = slot1.STATE_DISPLAYED
+
+		if not slot0._subFirstExpTF then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 4-4, warpins: 1 ---
-			return
+			--- BLOCK #0 9-12, warpins: 1 ---
+			slot0:skip()
 			--- END OF BLOCK #0 ---
 
 
@@ -1231,12 +1232,25 @@ slot0.displayShips = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 5-18, warpins: 1 ---
-		slot0[#slot0].GetComponent(slot2, typeof(DftAniEvent)):SetEndEvent(function (slot0)
+		--- BLOCK #1 13-13, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
+	end)
+
+	if #slot10 > 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 500-511, warpins: 1 ---
+		slot10[#slot10].GetComponent(slot13, typeof(DftAniEvent)):SetEndEvent(function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-4, warpins: 1 ---
-			slot0._stateFlag = slot0
+			--- BLOCK #0 1-9, warpins: 1 ---
+			slot0._stateFlag = slot1.STATE_SUB_DISPLAYED
+
+			slot0:skip()
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1244,24 +1258,11 @@ slot0.displayShips = function (slot0)
 
 
 		end)
-
-		return
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #2 19-19, warpins: 2 ---
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #0 ---
 
 
 
 	end
-
-	slot11(slot9, slot0.STATE_DISPLAYED)
-	slot11(slot10, slot0.STATE_SUB_DISPLAYED)
 end
 
 slot0.setAtkAnima = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
@@ -1909,11 +1910,22 @@ slot0.skip = function (slot0)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #2 78-91, warpins: 1 ---
+						--- BLOCK #2 78-93, warpins: 1 ---
 						slot0._skipExp = nil
 						slot0._stateFlag = slot0.STATE_DISPLAYED
 
 						setText(slot0._playerBonusExp, "+" .. slot0:calcPlayerProgress())
+
+						if not slot0._subFirstExpTF then
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 94-97, warpins: 1 ---
+							slot0:playSubExEnter()
+							--- END OF BLOCK #0 ---
+
+
+
+						end
 						--- END OF BLOCK #2 ---
 
 
@@ -1921,11 +1933,12 @@ slot0.skip = function (slot0)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 92-96, warpins: 1 ---
+						--- BLOCK #0 98-102, warpins: 1 ---
 						if slot0._stateFlag == slot0.STATE_DISPLAYED then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 97-100, warpins: 1 ---
+							--- BLOCK #0 103-114, warpins: 1 ---
+							setText(slot0._playerBonusExp, "+" .. slot0:calcPlayerProgress())
 							slot0:playSubExEnter()
 							--- END OF BLOCK #0 ---
 
@@ -1934,11 +1947,11 @@ slot0.skip = function (slot0)
 						else
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 101-105, warpins: 1 ---
+							--- BLOCK #0 115-119, warpins: 1 ---
 							if slot0._stateFlag == slot0.STATE_SUB_DISPLAY then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 106-109, warpins: 1 ---
+								--- BLOCK #0 120-123, warpins: 1 ---
 								--- END OF BLOCK #0 ---
 
 								FLOW; TARGET BLOCK #1
@@ -1946,11 +1959,11 @@ slot0.skip = function (slot0)
 
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #1 110-113, warpins: 0 ---
+								--- BLOCK #1 124-127, warpins: 0 ---
 								for slot4, slot5 in ipairs(slot0._subSkipExp) do
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #0 110-111, warpins: 1 ---
+									--- BLOCK #0 124-125, warpins: 1 ---
 									slot5()
 									--- END OF BLOCK #0 ---
 
@@ -1959,7 +1972,7 @@ slot0.skip = function (slot0)
 
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #1 112-113, warpins: 2 ---
+									--- BLOCK #1 126-127, warpins: 2 ---
 									--- END OF BLOCK #1 ---
 
 
@@ -1973,7 +1986,7 @@ slot0.skip = function (slot0)
 
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #2 114-119, warpins: 1 ---
+								--- BLOCK #2 128-133, warpins: 1 ---
 								slot0._subSkipExp = nil
 								slot0._stateFlag = slot0.STATE_SUB_DISPLAYED
 								--- END OF BLOCK #2 ---
@@ -1983,11 +1996,11 @@ slot0.skip = function (slot0)
 							else
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 120-124, warpins: 1 ---
+								--- BLOCK #0 134-138, warpins: 1 ---
 								if slot0._stateFlag == slot0.STATE_SUB_DISPLAYED then
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #0 125-127, warpins: 1 ---
+									--- BLOCK #0 139-141, warpins: 1 ---
 									slot0:showRightBottomPanel()
 									--- END OF BLOCK #0 ---
 
@@ -2037,7 +2050,7 @@ slot0.skip = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 128-128, warpins: 9 ---
+	--- BLOCK #3 142-142, warpins: 10 ---
 	return
 	--- END OF BLOCK #3 ---
 

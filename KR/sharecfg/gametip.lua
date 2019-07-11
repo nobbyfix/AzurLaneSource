@@ -2110,7 +2110,7 @@ pg.gametip = {
 		key = "main_notificationLayer_searchInput"
 	},
 	main_notificationLayer_noInput = {
-		tip = "송신할 메시지가 없습니다.",
+		tip = "메시지를 입력해주세요.",
 		key = "main_notificationLayer_noInput"
 	},
 	main_notificationLayer_noFriend = {
@@ -2990,10 +2990,10 @@ pg.gametip = {
 				info = "상선 호위 플레이 방법"
 			},
 			{
-				info = " 1. 개최 기간: 2월 21일~28일；"
+				info = " 1. 개최 기간: 6월 14일~27일；"
 			},
 			{
-				info = " 2. 상선 호위는 출현하는 적 함대와 기뢰에 대처하여 수송선단이\n목표 지점에 도착할 때까지 호위하는 스테이지입니다."
+				info = " 2. 상선 호위는 출현하는 적 함대와 기뢰에 대처하여 \n 수송선단이 목표 지점에 도착할 때까지 호위하는 \n스테이지입니다."
 			},
 			{
 				info = [[
@@ -3874,7 +3874,7 @@ pg.gametip = {
 		key = "friend_send_msg_erro_tip"
 	},
 	friend_send_msg_null_tip = {
-		tip = "송신할 메시지가 없습니다.",
+		tip = "메시지를 입력해주세요.",
 		key = "friend_send_msg_null_tip"
 	},
 	friend_search_succeed = {
@@ -5584,7 +5584,7 @@ pg.gametip = {
 		key = "guild_faction_change_tip"
 	},
 	guild_msg_is_null = {
-		tip = "송신할 메시지가 없습니다.",
+		tip = "메시지를 입력해주세요.",
 		key = "guild_msg_is_null"
 	},
 	guild_log_new_guild_join = {
@@ -6042,7 +6042,7 @@ pg.gametip = {
 		key = "inform_select_type"
 	},
 	inform_chat_msg = {
-		tip = "송신할 메시지가 없습니다.",
+		tip = "메시지를 입력해주세요.",
 		key = "inform_chat_msg"
 	},
 	inform_sueecss_tip = {
@@ -6378,7 +6378,7 @@ pg.gametip = {
 		key = "word_rename_time_warning"
 	},
 	word_propose_cost_tip = {
-		tip = "<size=22>서약 시 「서약의 반지」를 <color=#92fc63>1</color>개 소모합니다. (보유 수：<color=#92fc63>$1</color>)</size>\n\n<size=20>*서약을 진행한 함선은 전속 함선이 되어 이름을 변경할 수 있고, 추가로 능력치가 <color=#92fc63>3%</color> 강화됩니다.</size>",
+		tip = "<size=30>서약 시 「서약의 반지」를 <color=#92fc63>1</color>개 소모합니다. (보유 수：<color=#92fc63>$1</color>)</size>\n\n<size=30>*서약을 진행한 함선은 전속 함선이 되어 이름을 변경할 수 있고, 추가로 능력치가 <color=#92fc63>3%</color> 강화됩니다.</size>",
 		key = "word_propose_cost_tip"
 	},
 	evaluate_too_loog = {
@@ -6657,6 +6657,10 @@ pg.gametip = {
 	words_show_touch_effect = {
 		tip = "화면 터치 특수효과 표시",
 		key = "words_show_touch_effect"
+	},
+	words_bg_fit_mode = {
+		tip = "이미지는 최소 화면에 적합합니다. ",
+		key = "words_bg_fit_mode"
 	},
 	activity_puzzle_get1 = {
 		tip = "획득 방식：퍼즐 임무 7",
@@ -6969,7 +6973,8 @@ pg.gametip = {
 화요일 『순양함 코스 : 탄약의 선택법ver.1.03』
 수요일 『전함 코스 : 대함거포 독트린의 우위성』
 목요일 『항공모함 코스 : 공해 통합 작전 포지셔닝』
-금요일 『구축함 및 잠수함 코스 : 원숭이라도 알기 쉬운 전술학!』
+금요일 『구축함 및 잠수함 코스 : 원숭이라도 알기 쉬운 
+전술학!』
 토요일 『순양함 코스 : 화력을 최대로 하는 노하우 ver.2.2』
 
 일요일에는 수업에 참가할 수 없지만, 출격 시 얻을 수 있는
@@ -7745,7 +7750,6 @@ pg.gametip = {
 		tip = {
 			{
 				info = [[
-
 리서치 시작
 1. 「스페셜 프로젝트」함선의개발 개방 조건을 달성하면, 
 함선을 개발할 수 있습니다.
@@ -7780,16 +7784,19 @@ pg.gametip = {
 「스페셜 프로젝트」함선의 강화
 1. 「스페셜 프로젝트」함선을 획득하면,
 해당 함선의 강화 기능이 개방됩니다.
-2. 강화는 함선의 「강화 유닛」을 소모하여 진행할 수 있습니다.
-3. 「강화 유닛」은 과학연구실에서 연구하여 획득하실 수 있습니다.
+2. 강화는 함선의 「강화 유닛」을 소모하여 진행할 수 
+있습니다.
+3. 「강화 유닛」은 과학연구실에서 연구하여 획득하실 수 
+있습니다.
 4. 강화를 하면「스페셜 프로젝트」함선의 스탯이 증가합니다.
 또한, 일정한 강화 레벨에 도달하면 한 층 더
 업그레이드 된 강화 효과를  얻을 수 있습니다.
 
 「스페셜 프로젝트」함선의 최대 레벨에 관하여
- 「스페셜 프로젝트」함선은 한계돌파를 진행하지 않아도 레벨을
-100 이상으로 올릴 수 있으며, 최대 레벨 상승에는 물자와
-성정 유닛을 소비하는 「인식 각성」을 진행하셔야 합니다.]]
+ 「스페셜 프로젝트」함선은 한계돌파를 진행하지 않아도 
+레벨을 100 이상으로 올릴 수 있으며, 최대 레벨 상승에는 
+물자와성정 유닛을 소비하는 「인식 각성」을 진행하셔야 
+합니다.]]
 			}
 		}
 	},
@@ -7880,27 +7887,30 @@ pg.gametip = {
 구조신호 발신지 탐색에 관해
 ・구조신호 발신지 탐색 버튼을 터치하여 신호의 발신 해역을 
 확인할 수 있습니다. 
-・발신 해역이 확인되면, 구조임무(해역)에 출격할 수 있게 됩니다.
-・구조임무(해역)은 구조신호를 탐색하는 것으로 각 장에 한 번
-까지 출현합니다.
-(구조임무는 「제3장」, 「제4장」…과 같은 형태로 출현합니다)
+・발신 해역이 확인되면, 구조임무(해역)에 출격할 수 있게 
+됩니다.
+・구조임무(해역)은 구조신호를 탐색하는 것으로 각 장에 
+한 번 까지 출현합니다.
+(구조임무는 「제3장」, 「제4장」…과 같은 형태로 
+출현합니다)
 ・구조임무(해역)은 12시간 이내에 클리어하지 않는 경우,
 해역에서 사라져 출격할 수 없게 됩니다.
 
 탐색 감도
 ・탐색 감도는 탐색할 수 있는 해역 범위에 영향을 줍니다.
-・탐색 감도가 1인 경우에는 제3장 해역의 구조임무만 출현합니다.
-・탐색 감도가 1씩 올라갈 때 마다, 수신 가능한 범위가 넓어져 더욱 
-깊은 해역의 구조임무도 출현하게 됩니다. 
-・현재 출격 가능한 최심부의 구조임무 해역을 S랭크로 클리어 하면
-탐색 감도가 1 상승하게 되며,
+・탐색 감도가 1인 경우에는 제3장 해역의 구조임무만 
+출현합니다.
+・탐색 감도가 1씩 올라갈 때 마다, 수신 가능한 범위가 
+넓어져 더욱 깊은 해역의 구조임무도 출현하게 됩니다. 
+・현재 출격 가능한 최심부의 구조임무 해역을 S랭크로 클리어 
+하면 탐색 감도가 1 상승하게 되며,
 ・탐색 감도는 최대 8까지 올라갑니다. 탐색 감도가 높아지면 
 높아질수록, 지원임무로 출현하는 보수가 더욱 좋아집니다.
 
 전투 조우
-・구조임무에선 적의 잠수함이 출현합니다. 선봉(전열)함대에 대잠 
-장비를 장비한 구축함이나 경순양함을 배치한 후 해역에 출격할 수 
-있도록 하여 주십시오.]]
+・구조임무에선 적의 잠수함이 출현합니다. 
+선봉(전열)함대에 대잠 장비를 장비한 구축함이나 경순양함을 
+배치한 후 해역에 출격할 수 있도록 하여 주십시오.]]
 			}
 		}
 	},
@@ -8545,7 +8555,7 @@ pg.gametip = {
 		key = "commander_skill_point_noengough"
 	},
 	buildship_new_tip = {
-		tip = "비스마르크, U-556, Z36, U-73, 에코 한정기간 출현 확률 UP！",
+		tip = "쇼카쿠,유키카제,노와키,모가미 한정기간 출현 확률 UP！",
 		key = "buildship_new_tip"
 	},
 	buildship_heavy_tip = {
@@ -8553,7 +8563,7 @@ pg.gametip = {
 		key = "buildship_heavy_tip"
 	},
 	buildship_light_tip = {
-		tip = "[꼬마 헬레나], [꼬마 클리블랜드] 출현 확률 UP! ",
+		tip = "소형함 : 구축함, 경순양함, 경항모, 공작함, 모니터함 등을 건조 가능",
 		key = "buildship_light_tip"
 	},
 	buildship_special_tip = {
@@ -9817,8 +9827,8 @@ P.S. 아군의 대공은 효율적으로 적의 제공수치를 낮춘다!
 ・함대 기술이란
 
  함대 기술 기능이란, 함선을 모아 고레벨을 달성하여 함대 
-전체를 강화하는 효과를 얻는 시스템입니다. 강화 효과는 【한계
-돌파를 3회 이상 실행한 함선】에 적용됩니다. 
+전체를 강화하는 효과를 얻는 시스템입니다. 강화 효과는 
+【한계 돌파를 3회 이상 실행한 함선】에 적용됩니다. 
 
 ※이른바 「모항의 함선들을 편애 없이 골고루 키우는 것」에
 혜택이 가는 시스템입니다. 
@@ -9829,26 +9839,27 @@ P.S. 아군의 대공은 효율적으로 적의 제공수치를 낮춘다!
 「함대 기술」에 대해
 
  함대 기술이란, 함선을 육성함으로써 함대 전체에 강화 효과를
-주는 시스템입니다. 함대 기술 화면에선, 실제 역사에 따른 기술의
-발전 순서(Tier)에 따라 함선의 수집 및 기술 습득 상황을 확인할 수
-있습니다. 아래 조건을 달성하면, 대응되는 함선 강화 효과를 얻을 수 
-있습니다. 
+주는 시스템입니다. 함대 기술 화면에선, 실제 역사에 따른 
+기술의 발전 순서(Tier)에 따라 함선의 수집 및 기술 습득 
+상황을 확인할 수 있습니다. 아래 조건을 달성하면, 대응되는 
+함선 강화 효과를 얻을 수  있습니다. 
 ・함선을 도감에 등록한다
 ・함선의 레벨을 120으로 만든다.
 
-※같은 종류의 함선은 각각의 강화 효과를 한 번씩만 얻을 수 있습
-니다. 
+※같은 종류의 함선은 각각의 강화 효과를 한 번씩만 얻을 수 
+있습 니다. 
 
 「진영 기술」에 대해
 
- 진영 기술이란, 각 진영의 「기술 레벨」에 따라 함대 전체에 강화 
-효과를 주는 시스템입니다. 
-・진영 기술 항목의 '상세'를 터치하면, 이 항목의 강화 효과, 현재
-의 기술 레벨을 확인할 수 있습니다. 
-・기술 항목의 기술 레벨을 상승시키면, 강화 효과를 더욱 올릴 수 
-있습니다. 
-・기술 레벨을 상승시키려면 「물자」를 소비해야 하며, 추가로
-해당 진영 의 「기술 Pt」가 일정 수치 이상이어야 합니다. 
+ 진영 기술이란, 각 진영의 「기술 레벨」에 따라 함대 전체에 
+강화 효과를 주는 시스템입니다. 
+・진영 기술 항목의 '상세'를 터치하면, 이 항목의 강화 효과,
+현재 의 기술 레벨을 확인할 수 있습니다. 
+・기술 항목의 기술 레벨을 상승시키면, 강화 효과를 더욱 올릴 
+수 있습니다. 
+・기술 레벨을 상승시키려면 「물자」를 소비해야 하며, 
+추가로 해당 진영 의 「기술 Pt」가 일정 수치 이상이어야 
+합니다. 
  또한, 기술 레벨의 상승은 동시에 하나의 진영에서만 실행할 수
 있습니다. 
 
@@ -10439,6 +10450,188 @@ UID: 사령부에서 각 지휘관에게 전달한 고유의 신분 증명
 	challenge_end_tip = {
 		tip = "이벤트가 종료되었습니다.",
 		key = "challenge_end_tip"
+	},
+	pass_times = {
+		tip = "클리어 횟수 ",
+		key = "pass_times"
+	},
+	list_empty_tip_billboardui = {
+		tip = "랭킹 데이터 없음",
+		key = "list_empty_tip_billboardui"
+	},
+	list_empty_tip_equipmentdesignui = {
+		tip = "설계도 미획득",
+		key = "list_empty_tip_equipmentdesignui"
+	},
+	list_empty_tip_storehouseui_equip = {
+		tip = "조건에 맞는 장비 없음",
+		key = "list_empty_tip_storehouseui_equip"
+	},
+	list_empty_tip_storehouseui_item = {
+		tip = "재료 미획득",
+		key = "list_empty_tip_storehouseui_item"
+	},
+	list_empty_tip_eventui = {
+		tip = "진행 가능한 의뢰 없음",
+		key = "list_empty_tip_eventui"
+	},
+	list_empty_tip_guildrequestui = {
+		tip = "함대 신청 없음",
+		key = "list_empty_tip_guildrequestui"
+	},
+	list_empty_tip_joinguildui = {
+		tip = "조건에 맞는 함대 없음",
+		key = "list_empty_tip_joinguildui"
+	},
+	list_empty_tip_friendui = {
+		tip = "친구 없음",
+		key = "list_empty_tip_friendui"
+	},
+	list_empty_tip_friendui_search = {
+		tip = "조건에 맞는 지휘관 찾을 수 없음",
+		key = "list_empty_tip_friendui_search"
+	},
+	list_empty_tip_friendui_request = {
+		tip = "친구 신청 없음",
+		key = "list_empty_tip_friendui_request"
+	},
+	list_empty_tip_friendui_black = {
+		tip = "블랙 리스트 없음",
+		key = "list_empty_tip_friendui_black"
+	},
+	list_empty_tip_dockyardui = {
+		tip = "조건에 맞는 함선 없음",
+		key = "list_empty_tip_dockyardui"
+	},
+	list_empty_tip_taskscene = {
+		tip = "진행 중인 임무 없음",
+		key = "list_empty_tip_taskscene"
+	},
+	empty_tip_mailboxui = {
+		tip = "우편 미획득",
+		key = "empty_tip_mailboxui"
+	},
+	words_settings_unlock_ship = {
+		tip = "캐릭터 잠금 해제",
+		key = "words_settings_unlock_ship"
+	},
+	words_settings_resolve_equip = {
+		tip = "장비 분해",
+		key = "words_settings_resolve_equip"
+	},
+	words_settings_unlock_commander = {
+		tip = "지휘냥 잠금 해제",
+		key = "words_settings_unlock_commander"
+	},
+	words_settings_create_inherit = {
+		tip = "상속 코드 생성",
+		key = "words_settings_create_inherit"
+	},
+	tips_fail_secondarypwd_much_times = {
+		tip = "2차 비밀번호 오류 횟수 초과. <color=#92FC63>%s</color>후 다시 시도해 보세요.",
+		key = "tips_fail_secondarypwd_much_times"
+	},
+	words_desc_unlock = {
+		tip = "해당 조작은 비밀번호 입력 확인이 필요합니다.",
+		key = "words_desc_unlock"
+	},
+	words_desc_resolve_equip = {
+		tip = "해당 조작은 비밀번호 입력 확인이 필요합니다.",
+		key = "words_desc_resolve_equip"
+	},
+	words_desc_create_inherit = {
+		tip = "해당 조작은 비밀번호 입력 확인이 필요합니다.",
+		key = "words_desc_create_inherit"
+	},
+	words_desc_close_password = {
+		tip = "2차 비밀번호를 사용 중지하려면 비밀번호를 입력해주세요.",
+		key = "words_desc_close_password"
+	},
+	words_desc_change_settings = {
+		tip = "2차 비밀번호 제한 범위를 변경하려면 비밀번호를 입력하세요.",
+		key = "words_desc_change_settings"
+	},
+	words_set_password = {
+		tip = "비밀번호 설정",
+		key = "words_set_password"
+	},
+	words_information = {
+		tip = "정보",
+		key = "words_information"
+	},
+	secondarypassword_incorrectpwd_error = {
+		tip = "비밀번호가 정확하지 않습니다. 재시도 가능 횟수: <color=FF5C5CFF>%d</color>회",
+		key = "secondarypassword_incorrectpwd_error"
+	},
+	secondary_password_help = {
+		key = "secondary_password_help",
+		tip = {
+			{
+				info = "2차 비밀번호는 지휘관 계정 내 자산을 보호하는 비밀번호 \n시스템입니다.\n"
+			},
+			{
+				info = [[
+1. 2차 비밀번호를 설정한 경우, 캐릭터 잠금 해제, 장비 분해, 
+지휘냥 잠금 해제 시 2차 비밀번호의 제한을 받습니다.；
+ 주의: 중요한 장비, SSR급 이상 장비, 강화
+등급+10의 장비 분해 시 2차 비밀번호의 제한을 받습니다.；
+]]
+			},
+			{
+				info = [[
+2. 이상 언급된 조작 중, 지휘관은 각 해당 조작에 대해 2차 
+비밀번호의
+제한을 둘 것인지 설정할 수 있습니다.；
+]]
+			},
+			{
+				info = [[
+3. 2차 비밀번호 설정 후, 매번 로그인 기간 동안, 처음으로 
+해당되는 조작 시 2차 비밀번호를 입력해야 합니다. 
+정확한 비밀번호를 입력한 후 해당 조작을
+진행할 수 있습니다.；
+만약 한 번의 로그인 기간 내 정확한 2차 비밀번호를 입력하여 
+해당되는 조작 진행 시 재입력할 필요는 없어집니다.；
+]]
+			},
+			{
+				info = [[
+4. 2차 비밀번호가 기억나지 않는다면 해당 시스템을 해제할 
+수 없으며, 동시에 해제 또는 재설정을 통해 2차 비밀번호를 
+수정할 수 없습니다. 따라서 비밀번호 기억에 도움을 줄 수 있는
+효과적인 비밀번호 알림을 설정해 주시기 바랍니다.；
+]]
+			},
+			{
+				info = [[
+5. 2차 비밀번호가 기억나지 않을 경우, 고객 센터를 통해 2차 
+비밀번호를 재설정 해야하며, 또 다시 재설정을 하기 위해서는 
+30일의 간격이 필요합니다.
+]]
+			}
+		}
+	},
+	comic_help = {
+		key = "comic_help",
+		tip = {
+			{
+				info = "1. 매일 임무를 완성하여 만화 퍼즐 조각을 획득할 수 있습니다. 퍼즐 조각을 수령한 후에 좌측\n만화에서 대응되는 위치에 자동으로 색이 입혀집니다."
+			},
+			{
+				info = "2. 9개의 만화 퍼즐 조각을 모두 획득한 후에는 , 좌측 만화가 전체적으로 \n색이 변하며, 자동으로 재블린 코스튬을 획득합니다."
+			},
+			{
+				info = "3. 매일 임무는 1개의 퍼즐 조각 보상이 포함되어 있고, 만화 전부에 색을 입히고 싶다면\n모든 임무를 완성해야 합니다."
+			}
+		}
+	},
+	secondarypassword_illegal_tip = {
+		tip = "부적합한 내용입니다. 다시 입력해 주세요. ",
+		key = "secondarypassword_illegal_tip"
+	},
+	secondarypassword_confirm_tips = {
+		tip = "비밀번호 입력 알림을 다시 확인해 주세요.\n<color=#FFDE38>“%s”</color>",
+		key = "secondarypassword_confirm_tips"
 	}
 }
 

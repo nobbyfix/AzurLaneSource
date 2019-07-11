@@ -583,12 +583,13 @@ pg.fleet_tech_ship_class = {
 	},
 	[20202] = {
 		shiptype = 2,
-		name = "사우샘프턴급",
+		name = "사우스햄튼급",
 		t_level = 7,
 		id = 20202,
 		t_level_1 = 46,
 		nation = 2,
 		ships = {
+			20207,
 			20208,
 			20219
 		}
@@ -931,6 +932,7 @@ pg.fleet_tech_ship_class = {
 		t_level_1 = 74,
 		nation = 3,
 		ships = {
+			30116,
 			30117,
 			30118,
 			30120,
@@ -964,6 +966,7 @@ pg.fleet_tech_ship_class = {
 		nation = 3,
 		ships = {
 			30130,
+			30131,
 			30179
 		}
 	},
@@ -1055,6 +1058,18 @@ pg.fleet_tech_ship_class = {
 			30204,
 			30205,
 			30209
+		}
+	},
+	[30203] = {
+		shiptype = 2,
+		name = "모가미급",
+		t_level = 7,
+		id = 30203,
+		t_level_1 = 83,
+		nation = 3,
+		ships = {
+			30210,
+			30211
 		}
 	},
 	[30204] = {
@@ -1808,6 +1823,7 @@ pg.fleet_tech_ship_class = {
 		30112,
 		30201,
 		30202,
+		30203,
 		30204,
 		30205,
 		30301,

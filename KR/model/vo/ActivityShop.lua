@@ -1,12 +1,11 @@
 slot0 = class("ActivityShop", import(".BaseVO"))
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.activityId = slot1.id
-	slot2 = {
-		[slot7] = slot1.data2_list[slot6]
-	}
+	slot2 = {}
 
 	for slot6, slot7 in ipairs(slot1.data1_list) do
+		slot2[slot7] = slot1.data2_list[slot6]
 	end
 
 	slot0.goods = {}
@@ -23,13 +22,15 @@ function slot0.Ctor(slot0, slot1)
 	slot0.type = ShopArgs.ShopActivity
 end
 
-function slot0.getSortGoods(slot0)
+slot0.getSortGoods = function (slot0)
+	slot1 = {}
+
 	for slot5, slot6 in pairs(slot0.goods) do
-		table.insert({}, slot6)
+		table.insert(slot1, slot6)
 	end
 
 	table.sort(slot1, function (slot0, slot1)
-		if (slot0:canPurchase() and 1 or 0) == (slot1:canPurchase() and 1 or 0) then
+		if ((slot0:canPurchase() and 1) or 0) == ((slot1:canPurchase() and 1) or 0) then
 			if slot0:getConfig("order") == slot1:getConfig("order") then
 				return slot0.id < slot1.id
 			else
@@ -43,23 +44,23 @@ function slot0.getSortGoods(slot0)
 	return slot1
 end
 
-function slot0.bindConfigTable(slot0)
+slot0.bindConfigTable = function (slot0)
 	return pg.activity_shop_template
 end
 
-function slot0.getGoodsById(slot0, slot1)
+slot0.getGoodsById = function (slot0, slot1)
 	return slot0.goods[slot1]
 end
 
-function slot0.isEnd(slot0)
+slot0.isEnd = function (slot0)
 	return not getProxy(ActivityProxy):getActivityById(slot0.activityId) or slot1:isEnd()
 end
 
-function slot0.getOpenTime(slot0)
+slot0.getOpenTime = function (slot0)
 	return string.format("%d.%d.%d~%d.%d.%d", pg.activity_template[slot0.activityId].time[2][1][1], pg.activity_template[slot0.activityId].time[2][1][2], pg.activity_template[slot0.activityId].time[2][1][3], pg.activity_template[slot0.activityId].time[3][1][1], pg.activity_template[slot0.activityId].time[3][1][2], pg.activity_template[slot0.activityId].time[3][1][3])
 end
 
-function slot0.getStartTime(slot0)
+slot0.getStartTime = function (slot0)
 	if slot0:isEnd() then
 		return 0
 	end
@@ -67,7 +68,7 @@ function slot0.getStartTime(slot0)
 	return getProxy(ActivityProxy):getActivityById(slot0.activityId):getStartTime()
 end
 
-function slot0.getBgPath(slot0)
+slot0.getBgPath = function (slot0)
 	return slot1.config_client[1], Color.New(pg.activity_template[slot0.activityId].config_client[2] or {
 		255,
 		255,
@@ -76,7 +77,11 @@ function slot0.getBgPath(slot0)
 	}[1], pg.activity_template[slot0.activityId].config_client[2] or [2], pg.activity_template[slot0.activityId].config_client[2] or [3], pg.activity_template[slot0.activityId].config_client[2] or [4])
 end
 
-function slot0.getResId(slot0)
+slot0.getToggleImage = function (slot0)
+	return pg.activity_template[slot0.activityId].config_client.toggle or "huodongdduihuan_butten"
+end
+
+slot0.getResId = function (slot0)
 	slot1 = nil
 
 	for slot5, slot6 in pairs(slot0.goods) do

@@ -154,225 +154,227 @@ function slot15(slot0)
 	slot1 = slot1.Find
 	slot2 = "Overlay/UIOverlay"
 	slot1 = slot1(slot2)
+	slot0.UIOverlay = slot1
+	slot1 = slot0._go
+	slot1 = slot1.transform
+	slot2 = slot1
+	slot1 = slot1.SetParent
+	slot3 = slot0.UIOverlay
+	slot3 = slot3.transform
+	slot4 = false
+
+	slot1(slot2, slot3, slot4)
+
+	slot1 = findTF
 	slot2 = slot0._go
-	slot2 = slot2.transform
-	slot3 = slot2
-	slot2 = slot2.SetParent
-	slot4 = slot1.transform
-	slot5 = false
+	slot3 = "curtain"
+	slot1 = slot1(slot2, slot3)
+	slot0._curtain = slot1
+	slot1 = slot0._curtain
+	slot2 = slot1
+	slot1 = slot1.GetComponent
+	slot3 = typeof
+	slot4 = CanvasGroup
+	slot1 = slot1(slot2, slot3(slot4))
+	slot0._curtainCG = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "options_panel/options/option_tpl"
+	slot1 = slot1(slot2, slot3)
+	slot0._option_tpl = slot1
+	slot1 = slot0._option_tpl
+	slot2 = slot1
+	slot1 = slot1.SetParent
+	slot3 = tf
+	slot4 = slot0._go
+	slot3 = slot3(slot4)
+	slot4 = false
 
-	slot2(slot3, slot4, slot5)
+	slot1(slot2, slot3, slot4)
 
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "curtain"
-	slot2 = slot2(slot3, slot4)
-	slot0._curtain = slot2
-	slot2 = slot0._curtain
-	slot3 = slot2
-	slot2 = slot2.GetComponent
-	slot4 = typeof
-	slot5 = CanvasGroup
-	slot2 = slot2(slot3, slot4(slot5))
-	slot0._curtainCG = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "options_panel/options/option_tpl"
-	slot2 = slot2(slot3, slot4)
-	slot0._option_tpl = slot2
+	slot1 = SetActive
 	slot2 = slot0._option_tpl
-	slot3 = slot2
-	slot2 = slot2.SetParent
-	slot4 = tf
-	slot5 = slot0._go
-	slot4 = slot4(slot5)
-	slot5 = false
+	slot3 = false
 
-	slot2(slot3, slot4, slot5)
+	slot1(slot2, slot3)
 
-	slot2 = SetActive
-	slot3 = slot0._option_tpl
-	slot4 = false
-
-	slot2(slot3, slot4)
-
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "dialogue"
-	slot2 = slot2(slot3, slot4)
-	slot0._dialogue = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "aside"
-	slot2 = slot2(slot3, slot4)
-	slot0._asideContainer = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "aside_txt_tpl"
-	slot2 = slot2(slot3, slot4)
-	slot0._asideTpl = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "aside_2"
-	slot2 = slot2(slot3, slot4)
-	slot0._asideContainer2 = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "aside_txt_tpl_2"
-	slot2 = slot2(slot3, slot4)
-	slot0._asideTpl2 = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "aside_sign_date"
-	slot2 = slot2(slot3, slot4)
-	slot0._asideSignDate = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "bg"
-	slot2 = slot2(slot3, slot4)
-	slot0._bg = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "bg/bg_type1"
-	slot2 = slot2(slot3, slot4)
-	slot0._bg1 = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "bg/bg_type2"
-	slot2 = slot2(slot3, slot4)
-	slot0._bg2 = slot2
-	slot2 = GetOrAddComponent
-	slot3 = slot0._bg
-	slot4 = typeof
-	slot5 = CanvasGroup
-	slot2 = slot2(slot3, slot4(slot5))
-	slot0._bgCG = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "dialogue/main"
-	slot2 = slot2(slot3, slot4)
-	slot0._main = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "dialogue/main/content"
-	slot2 = slot2(slot3, slot4)
-	slot0.content = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "dialogue/main/next"
-	slot2 = slot2(slot3, slot4)
-	slot0.nextTF = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "dialogue/actor/actor_left"
-	slot2 = slot2(slot3, slot4)
-	slot0.actorLeft = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "dialogue/main/name_left"
-	slot2 = slot2(slot3, slot4)
-	slot0.nameLeft = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "dialogue/actor/actor_right"
-	slot2 = slot2(slot3, slot4)
-	slot0.actorRight = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "dialogue/main/name_right"
-	slot2 = slot2(slot3, slot4)
-	slot0.nameRight = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "dialogue/actor/actor_middle"
-	slot2 = slot2(slot3, slot4)
-	slot0.actorMiddle = slot2
-	slot2 = {}
-	slot3 = slot0.actorLeft
-	slot2[1] = slot3
-	slot3 = slot0.actorRight
-	slot2[2] = slot3
-	slot3 = slot0.actorMiddle
-	slot2[3] = slot3
-	slot0.actors = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "options_panel"
-	slot2 = slot2(slot3, slot4)
-	slot0.options = slot2
-	slot2 = slot0.options
-	slot3 = slot2
-	slot2 = slot2.GetComponent
-	slot4 = typeof
-	slot5 = CanvasGroup
-	slot2 = slot2(slot3, slot4(slot5))
-	slot0.optionsCg = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "options_panel/options"
-	slot2 = slot2(slot3, slot4)
-	slot0.optionsContainer = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "options_panel/bg"
-	slot2 = slot2(slot3, slot4)
-	slot0.optionsBg = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "skip_button"
-	slot2 = slot2(slot3, slot4)
-	slot0.skipBtn = slot2
-	slot2 = slot0.content
-	slot3 = slot2
-	slot2 = slot2.GetComponent
-	slot4 = typeof
-	slot5 = Typewriter
-	slot2 = slot2(slot3, slot4(slot5))
-	slot0.typeWriter = slot2
-	slot2 = findTF
-	slot3 = slot0._bg
-	slot4 = "sub"
-	slot2 = slot2(slot3, slot4)
-	slot0._subBg = slot2
-	slot2 = setActive
-	slot3 = slot0._subBg
-	slot4 = false
-
-	slot2(slot3, slot4)
-
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "effect"
-	slot2 = slot2(slot3, slot4)
-	slot0._effectPanel = slot2
-	slot2 = GetOrAddComponent
-	slot3 = slot0._effectPanel
-	slot4 = "CanvasGroup"
-	slot2 = slot2(slot3, slot4)
-	slot0._effectCG = slot2
-	slot2 = findTF
-	slot3 = slot0._go
-	slot4 = "flash"
-	slot2 = slot2(slot3, slot4)
-	slot0._flash = slot2
-	slot2 = slot0._flash
-	slot3 = slot2
-	slot2 = slot2.GetComponent
-	slot4 = typeof
-	slot5 = CanvasGroup
-	slot2 = slot2(slot3, slot4(slot5))
-	slot0._flashCG = slot2
-	slot2 = {}
-	slot0.effectObjs = slot2
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "dialogue"
+	slot1 = slot1(slot2, slot3)
+	slot0._dialogue = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "aside"
+	slot1 = slot1(slot2, slot3)
+	slot0._asideContainer = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "aside_txt_tpl"
+	slot1 = slot1(slot2, slot3)
+	slot0._asideTpl = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "aside_2"
+	slot1 = slot1(slot2, slot3)
+	slot0._asideContainer2 = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "aside_txt_tpl_2"
+	slot1 = slot1(slot2, slot3)
+	slot0._asideTpl2 = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "aside_sign_date"
+	slot1 = slot1(slot2, slot3)
+	slot0._asideSignDate = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "bg"
+	slot1 = slot1(slot2, slot3)
+	slot0._bg = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "bg/bg_type1"
+	slot1 = slot1(slot2, slot3)
+	slot0._bg1 = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "bg/bg_type2"
+	slot1 = slot1(slot2, slot3)
+	slot0._bg2 = slot1
+	slot1 = GetOrAddComponent
+	slot2 = slot0._bg
+	slot3 = typeof
+	slot4 = CanvasGroup
+	slot1 = slot1(slot2, slot3(slot4))
+	slot0._bgCG = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "dialogue/main"
+	slot1 = slot1(slot2, slot3)
+	slot0._main = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "dialogue/main/content"
+	slot1 = slot1(slot2, slot3)
+	slot0.content = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "dialogue/main/next"
+	slot1 = slot1(slot2, slot3)
+	slot0.nextTF = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "dialogue/actor/actor_left"
+	slot1 = slot1(slot2, slot3)
+	slot0.actorLeft = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "dialogue/main/name_left"
+	slot1 = slot1(slot2, slot3)
+	slot0.nameLeft = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "dialogue/actor/actor_right"
+	slot1 = slot1(slot2, slot3)
+	slot0.actorRight = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "dialogue/main/name_right"
+	slot1 = slot1(slot2, slot3)
+	slot0.nameRight = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "dialogue/actor/actor_middle"
+	slot1 = slot1(slot2, slot3)
+	slot0.actorMiddle = slot1
+	slot1 = {}
 	slot2 = slot0.actorLeft
-	slot2 = slot2.localPosition
-	slot0.posActorLeft = slot2
-	slot2 = slot0.actorMiddle
-	slot2 = slot2.localPosition
-	slot0.posActorMiddle = slot2
+	slot1[1] = slot2
 	slot2 = slot0.actorRight
-	slot2 = slot2.localPosition
-	slot0.posActorRight = slot2
+	slot1[2] = slot2
+	slot2 = slot0.actorMiddle
+	slot1[3] = slot2
+	slot0.actors = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "options_panel"
+	slot1 = slot1(slot2, slot3)
+	slot0.options = slot1
+	slot1 = slot0.options
+	slot2 = slot1
+	slot1 = slot1.GetComponent
+	slot3 = typeof
+	slot4 = CanvasGroup
+	slot1 = slot1(slot2, slot3(slot4))
+	slot0.optionsCg = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "options_panel/options"
+	slot1 = slot1(slot2, slot3)
+	slot0.optionsContainer = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "options_panel/bg"
+	slot1 = slot1(slot2, slot3)
+	slot0.optionsBg = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "skip_button"
+	slot1 = slot1(slot2, slot3)
+	slot0.skipBtn = slot1
+	slot1 = slot0.content
+	slot2 = slot1
+	slot1 = slot1.GetComponent
+	slot3 = typeof
+	slot4 = Typewriter
+	slot1 = slot1(slot2, slot3(slot4))
+	slot0.typeWriter = slot1
+	slot1 = findTF
+	slot2 = slot0._bg
+	slot3 = "sub"
+	slot1 = slot1(slot2, slot3)
+	slot0._subBg = slot1
+	slot1 = setActive
+	slot2 = slot0._subBg
+	slot3 = false
+
+	slot1(slot2, slot3)
+
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "effect"
+	slot1 = slot1(slot2, slot3)
+	slot0._effectPanel = slot1
+	slot1 = GetOrAddComponent
+	slot2 = slot0._effectPanel
+	slot3 = "CanvasGroup"
+	slot1 = slot1(slot2, slot3)
+	slot0._effectCG = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "flash"
+	slot1 = slot1(slot2, slot3)
+	slot0._flash = slot1
+	slot1 = slot0._flash
+	slot2 = slot1
+	slot1 = slot1.GetComponent
+	slot3 = typeof
+	slot4 = CanvasGroup
+	slot1 = slot1(slot2, slot3(slot4))
+	slot0._flashCG = slot1
+	slot1 = {}
+	slot0.effectObjs = slot1
+	slot1 = slot0.actorLeft
+	slot1 = slot1.localPosition
+	slot0.posActorLeft = slot1
+	slot1 = slot0.actorMiddle
+	slot1 = slot1.localPosition
+	slot0.posActorMiddle = slot1
+	slot1 = slot0.actorRight
+	slot1 = slot1.localPosition
+	slot0.posActorRight = slot1
 end
 
 slot0.Load = slot15
@@ -507,21 +509,31 @@ function slot16(slot0, slot1, slot2, slot3)
 		slot6 = PLATFORM_US
 
 		if slot5 == slot6 then
+			slot5 = getProxy
+			slot6 = PlayerProxy
+			slot5 = slot5(slot6)
+			slot6 = slot5
+			slot5 = slot5.getData
+			slot5 = slot5(slot6)
+
 			if slot1 == "SYG001" then
-				slot5 = SendAiriJPTracking
-				slot6 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_2
+				slot6 = SendAiriJPTracking
+				slot7 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_2
+				slot8 = slot5.id
 
-				slot5(slot6)
+				slot6(slot7, slot8)
 			elseif slot1 == "SYG003" then
-				slot5 = SendAiriJPTracking
-				slot6 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_3
+				slot6 = SendAiriJPTracking
+				slot7 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_3
+				slot8 = slot5.id
 
-				slot5(slot6)
+				slot6(slot7, slot8)
 			elseif slot1 == "SYG006" then
-				slot5 = SendAiriJPTracking
-				slot6 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_4
+				slot6 = SendAiriJPTracking
+				slot7 = AIRIJP_TRACKING_TUTORIAL_COMPLETE_4
+				slot8 = slot5.id
 
-				slot5(slot6)
+				slot6(slot7, slot8)
 			end
 		end
 	end
@@ -1954,9 +1966,18 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 			slot3 = {}
 			slot4 = rtf
 			slot5 = slot0
-			slot5 = slot5._go
+			slot5 = slot5.UIOverlay
 			slot4 = slot4(slot5)
 			slot3.parent = slot4
+			slot4 = GetComponent
+			slot5 = slot0
+			slot5 = slot5._go
+			slot6 = typeof
+			slot7 = Canvas
+			slot4 = slot4(slot5, slot6(slot7))
+			slot4 = slot4.sortingOrder
+			slot4 = slot4 + 1
+			slot3.canvasOrder = slot4
 			slot4 = i18n
 			slot5 = "story_skip_confirm"
 			slot4 = slot4(slot5)
@@ -7897,7 +7918,12 @@ function slot17(slot0, slot1)
 		if slot4 > slot5 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 10-18, warpins: 1 ---
+			--- BLOCK #0 10-21, warpins: 1 ---
+			slot5 = print
+			slot6 = slot4
+
+			slot5(slot6)
+
 			slot5 = slot0
 			slot5 = slot5[slot4]
 			slot5 = slot5.ship_group
@@ -7909,7 +7935,7 @@ function slot17(slot0, slot1)
 			if not slot6 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 19-22, warpins: 1 ---
+				--- BLOCK #0 22-25, warpins: 1 ---
 				slot7 = slot0
 				slot7 = slot7[slot4]
 				slot2 = slot7.name
@@ -7920,7 +7946,7 @@ function slot17(slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 23-27, warpins: 1 ---
+				--- BLOCK #0 26-30, warpins: 1 ---
 				slot7 = Ship
 				slot7 = slot7.getShipName
 				slot8 = slot6.id
@@ -7939,7 +7965,7 @@ function slot17(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 28-31, warpins: 2 ---
+			--- BLOCK #1 31-34, warpins: 2 ---
 			slot7 = slot0
 			slot7 = slot7[slot4]
 			slot3 = slot7.painting
@@ -7950,11 +7976,11 @@ function slot17(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 32-33, warpins: 1 ---
+			--- BLOCK #0 35-36, warpins: 1 ---
 			if slot4 == 0 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 34-42, warpins: 1 ---
+				--- BLOCK #0 37-45, warpins: 1 ---
 				slot5 = getProxy
 				slot6 = PlayerProxy
 				slot5 = slot5(slot6)
@@ -7970,11 +7996,11 @@ function slot17(slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 43-44, warpins: 1 ---
+				--- BLOCK #0 46-47, warpins: 1 ---
 				if slot4 == -1 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 45-49, warpins: 1 ---
+					--- BLOCK #0 48-52, warpins: 1 ---
 					slot5 = getProxy
 					slot6 = PlayerProxy
 					slot5 = slot5(slot6)
@@ -7982,7 +8008,7 @@ function slot17(slot0, slot1)
 					if slot5 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 50-64, warpins: 1 ---
+						--- BLOCK #0 53-67, warpins: 1 ---
 						slot7 = slot5
 						slot6 = slot5.getData
 						slot6 = slot6(slot7)
@@ -8031,13 +8057,13 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 65-67, warpins: 6 ---
+	--- BLOCK #1 68-70, warpins: 6 ---
 	slot5 = slot1.actorName
 
 	if slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 68-72, warpins: 1 ---
+		--- BLOCK #0 71-75, warpins: 1 ---
 		slot5 = HXSet
 		slot5 = slot5.hxLan
 		slot6 = slot1.actorName
@@ -8056,13 +8082,13 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 73-75, warpins: 2 ---
+	--- BLOCK #2 76-78, warpins: 2 ---
 	slot5 = slot1.painting
 
 	if not slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 76-76, warpins: 1 ---
+		--- BLOCK #0 79-79, warpins: 1 ---
 		slot5 = {}
 		--- END OF BLOCK #0 ---
 
@@ -8077,13 +8103,13 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 77-79, warpins: 2 ---
+	--- BLOCK #3 80-82, warpins: 2 ---
 	slot6 = slot1.nameColor
 
 	if slot6 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 80-85, warpins: 1 ---
+		--- BLOCK #0 83-88, warpins: 1 ---
 		slot6 = setColorStr
 		slot7 = slot2
 		slot8 = slot1.nameColor
@@ -8092,7 +8118,7 @@ function slot17(slot0, slot1)
 		if not slot6 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 86-90, warpins: 2 ---
+			--- BLOCK #0 89-93, warpins: 2 ---
 			slot6 = setColorStr
 			slot7 = slot2
 			slot8 = COLOR_WHITE
@@ -8116,7 +8142,7 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 91-93, warpins: 2 ---
+	--- BLOCK #4 94-96, warpins: 2 ---
 	slot6 = slot2
 	slot7 = slot3
 

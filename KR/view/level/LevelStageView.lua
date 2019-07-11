@@ -2055,7 +2055,7 @@ slot0.updateStageStrategy = function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-26, warpins: 1 ---
-		shiftPanel(shiftPanel, 30, nil, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
+		shiftPanel(shiftPanel, 0, nil, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
 		shiftPanel(shiftPanel, slot1.rect.width + 200, nil, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
 
 		return

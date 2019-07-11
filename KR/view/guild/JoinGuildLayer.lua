@@ -1,19 +1,19 @@
 slot0 = class("JoinGuildLayer", import("..base.BaseUI"))
 slot2 = i18n("guild_search_list_max_count", slot1)
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "JoinGuildUI"
 end
 
-function slot0.setGuildVOs(slot0, slot1)
+slot0.setGuildVOs = function (slot0, slot1)
 	slot0.guildVOs = slot1
 end
 
-function slot0.setPlayerVO(slot0, slot1)
+slot0.setPlayerVO = function (slot0, slot1)
 	slot0.playerVO = slot1
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.guildViewRect = slot0:findTF("add_panel/view")
 	slot0.refreshBtn = slot0:findTF("add_panel/center/refresh")
 	slot0.searchBtn = slot0:findTF("add_panel/center/search")
@@ -24,12 +24,18 @@ function slot0.init(slot0)
 	slot0.sortBtnTpl = slot0:getTpl("add_panel/sort_panel/mask/content/tpl")
 	slot0.sortPanel = slot0:findTF("add_panel/sort_panel")
 	slot0.UIMgr = pg.UIMgr.GetInstance()
+	slot0.listEmptyTF = slot0:findTF("empty")
 
-	setText(slot0:findTF("tip"), uv0)
+	setActive(slot0.listEmptyTF, false)
+
+	slot0.listEmptyTxt = slot0:findTF("Text", slot0.listEmptyTF)
+
+	setText(slot0.listEmptyTxt, i18n("list_empty_tip_joinguildui"))
+	setText(slot0:findTF("tip"), slot0)
 	slot0:initGuildList()
 end
 
-function slot0.getTheme(slot0)
+slot0.getTheme = function (slot0)
 	if slot0 == Guild.FACTION_TYPE_BLHX then
 		return "blue"
 	elseif slot0 == Guild.FACTION_TYPE_CSZZ then
@@ -37,12 +43,12 @@ function slot0.getTheme(slot0)
 	end
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	onButton(slot0, slot0.refreshBtn, function ()
-		uv0:emit(JoinGuildMediator.REFRESH)
+		slot0:emit(JoinGuildMediator.REFRESH)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.backBtn, function ()
-		uv0:emit(uv1.ON_CLOSE)
+		slot0:emit(slot1.ON_CLOSE)
 	end, SOUND_BACK)
 	onButton(slot0, slot0.searchBtn, function ()
 		if wordVer(slot0) > 0 then
@@ -51,21 +57,21 @@ function slot0.didEnter(slot0)
 			return
 		end
 
-		uv0:emit(JoinGuildMediator.SEARCH, slot0)
+		slot0:emit(JoinGuildMediator.SEARCH, slot0)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.sortBtn, function ()
-		if go(uv0.sortPanel).activeSelf then
-			uv0:closeSortPanel()
+		if go(slot0.sortPanel).activeSelf then
+			slot0:closeSortPanel()
 		else
-			uv0:openSortPanel()
+			slot0:openSortPanel()
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.sortPanel, function ()
-		uv0:closeSortPanel()
+		slot0:closeSortPanel()
 	end, SFX_PANEL)
 end
 
-function slot0.openSortPanel(slot0)
+slot0.openSortPanel = function (slot0)
 	slot0.isOpenSortPanel = true
 
 	setActive(slot0.sortPanel, true)
@@ -112,38 +118,38 @@ slot3 = {
 }
 slot4 = {}
 
-function slot0.initSort(slot0)
-	for slot4, slot5 in ipairs(uv0) do
+slot0.initSort = function (slot0)
+	for slot4, slot5 in ipairs(slot0) do
 		slot6 = cloneTplTo(slot0.sortBtnTpl, slot0.sortBtnContainer)
 
 		setImageSprite(slot6:Find("Image"), slot7, true)
 		onToggle(slot0, slot6, function (slot0)
 			if slot0 then
-				uv0:filter(uv1)
-				setActive(uv0.sortPanel, false)
+				slot0:filter(slot0.filter)
+				setActive(slot0.sortPanel, false)
 			end
 		end)
 	end
 
-	for slot4, slot5 in ipairs(uv1) do
+	for slot4, slot5 in ipairs(ipairs) do
 		slot6 = cloneTplTo(slot0.sortBtnTpl, slot0.sortBtnContainer)
 
 		setText(slot6:Find("Text"), slot5[2])
 		onToggle(slot0, slot6, function (slot0)
 			if slot0 then
-				uv0:sortGuilds(uv1[1])
+				slot0:sortGuilds(slot1[1])
 			end
 		end)
 	end
 end
 
-function slot0.closeSortPanel(slot0)
+slot0.closeSortPanel = function (slot0)
 	slot0.isOpenSortPanel = nil
 
 	setActive(slot0.sortPanel, false)
 end
 
-function slot0.createGuildCard(slot0, slot1)
+slot0.createGuildCard = function (slot0, slot1)
 	return {
 		go = slot1,
 		tf = tf(slot1),
@@ -169,54 +175,54 @@ function slot0.createGuildCard(slot0, slot1)
 			end
 
 			slot2 = JoinGuildLayer.getTheme(slot1:getFaction())
-			uv0.bg.sprite = GetSpriteFromAtlas("ui/JoinGuildUI_atlas", "bar_" .. slot2)
-			uv0.applyBg.sprite = GetSpriteFromAtlas("ui/JoinGuildUI_atlas", "apply_" .. slot2)
-			uv0.iconTF.sprite = GetSpriteFromAtlas("ui/JoinGuildUI_atlas", "icon_" .. slot2)
-			uv0.nameBG.sprite = GetSpriteFromAtlas("ui/JoinGuildUI_atlas", "name_" .. slot2)
-			uv0.print.sprite = GetSpriteFromAtlas("ui/JoinGuildUI_atlas", "bar_bg_" .. slot2)
-			slot0.lvTF.color = slot2 == "red" and slot0.colorRed or slot0.colorBlue
-			uv0.lvLabelTF.color = slot2 == "red" and slot0.colorRed or slot0.colorBlue
-			uv0.flagLabel.color = slot2 == "red" and slot0.colorRed or slot0.colorBlue
-			uv0.policyLabel.color = slot2 == "red" and slot0.colorRed or slot0.colorBlue
+			slot0.bg.sprite = GetSpriteFromAtlas("ui/JoinGuildUI_atlas", "bar_" .. slot2)
+			slot0.applyBg.sprite = GetSpriteFromAtlas("ui/JoinGuildUI_atlas", "apply_" .. slot2)
+			slot0.iconTF.sprite = GetSpriteFromAtlas("ui/JoinGuildUI_atlas", "icon_" .. slot2)
+			slot0.nameBG.sprite = GetSpriteFromAtlas("ui/JoinGuildUI_atlas", "name_" .. slot2)
+			slot0.print.sprite = GetSpriteFromAtlas("ui/JoinGuildUI_atlas", "bar_bg_" .. slot2)
+			slot0.lvTF.color = (slot2 == "red" and slot0.colorRed) or slot0.colorBlue
+			slot0.lvLabelTF.color = (slot2 == "red" and slot0.colorRed) or slot0.colorBlue
+			slot0.flagLabel.color = (slot2 == "red" and slot0.colorRed) or slot0.colorBlue
+			slot0.policyLabel.color = (slot2 == "red" and slot0.colorRed) or slot0.colorBlue
 			slot0.guildVO = slot1
 			slot0.nameTF.text = slot1:getName()
-			slot0.lvTF.text = slot1.level < 9 and "0" .. slot1.level or slot1.level
+			slot0.lvTF.text = (slot1.level < 9 and "0" .. slot1.level) or slot1.level
 			slot0.countTF.text = slot1.memberCount .. "/" .. slot1:getMaxMember()
-			uv0.flagName.text = slot1:getCommader().name
-			uv0.policy.text = slot1:getPolicyName()
+			slot0.flagName.text = slot1:getCommader().name
+			slot0.policy.text = slot1:getPolicyName()
 		end
 	}
 end
 
-function slot0.initGuildList(slot0)
+slot0.initGuildList = function (slot0)
 	slot0.viewRect = slot0.guildViewRect:GetComponent("LScrollRect")
 
-	function slot0.viewRect.onInitItem(slot0)
-		uv0:onInitItem(slot0)
+	slot0.viewRect.onInitItem = function (slot0)
+		slot0:onInitItem(slot0)
 	end
 
-	function slot0.viewRect.onUpdateItem(slot0, slot1)
-		uv0:onUpdateItem(slot0, slot1)
+	slot0.viewRect.onUpdateItem = function (slot0, slot1)
+		slot0:onUpdateItem(slot0, slot1)
 	end
 
 	slot0.items = {}
 end
 
-function slot0.onInitItem(slot0, slot1)
+slot0.onInitItem = function (slot0, slot1)
 	slot0.items[slot1] = slot0:createGuildCard(slot1)
 
 	onButton(slot0, slot0.items[slot1].applyBtn, function ()
-		if uv0.playerVO:inGuildCDTime() then
+		if slot0.playerVO:inGuildCDTime() then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("guild_leave_cd_time"))
 
 			return
 		end
 
-		uv0:showApply(uv0.items[uv1].guildVO)
+		slot0:showApply(slot0.items[slot0].guildVO)
 	end, SFX_PANEL)
 end
 
-function slot0.onUpdateItem(slot0, slot1, slot2)
+slot0.onUpdateItem = function (slot0, slot1, slot2)
 	if not slot0.items[slot2] then
 		slot0:onInitItem(slot2)
 
@@ -226,22 +232,25 @@ function slot0.onUpdateItem(slot0, slot1, slot2)
 	slot3:update(slot0.sortVOs[slot1 + 1])
 end
 
-function slot0.sortGuilds(slot0, slot1)
+slot0.sortGuilds = function (slot0, slot1)
 	slot0.sortVOs = Clone(slot0.guildVOs) or {}
 
 	table.sort(slot0.sortVOs, function (slot0, slot1)
-		if not uv0 then
+		if not slot0 then
 			return slot0.id < slot1.id
-		elseif slot0[uv0] == slot1[uv0] then
+		elseif slot0[slot0] == slot1[slot0] then
 			return slot0.id < slot1.id
 		else
-			return slot1[uv0] < slot0[uv0]
+			return slot1[slot0] < slot0[slot0]
 		end
 	end)
 	slot0.viewRect:SetTotalCount(#slot0.sortVOs, 0)
+	setActive(slot0.listEmptyTF, #slot0.sortVOs <= 0)
 end
 
-function slot0.filter(slot0, slot1)
+slot0.filter = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
 	slot0.sortVOs = {}
 	slot3 = _.all(slot0.sortVOs, function (slot0)
 		return slot0:getFaction() == Guild.FACTION_TYPE_CSZZ
@@ -252,9 +261,10 @@ function slot0.filter(slot0, slot1)
 	slot0.contextData.filterData = slot2
 
 	slot0.viewRect:SetTotalCount(#slot0.sortVOs, 0)
+	setActive(slot0.listEmptyTF, #slot0.sortVOs <= 0)
 end
 
-function slot0.showApply(slot0, slot1)
+slot0.showApply = function (slot0, slot1)
 	if slot0.isShowApply then
 		slot0:closeApply()
 	end
@@ -264,14 +274,14 @@ function slot0.showApply(slot0, slot1)
 
 	if IsNil(slot0.appPanel) then
 		PoolMgr.GetInstance():GetUI(slot2, true, function (slot0)
-			slot0.name = uv0
-			uv1.appPanel = tf(slot0)
+			slot0.name = slot0
+			slot0.appPanel = tf(slot0)
 
-			setActive(uv1.appPanel, true)
-			setParent(uv1.appPanel, uv1._tf)
-			uv1:initApplyPanel()
-			uv1:updateApplyPanel(uv2)
-			uv1.UIMgr:BlurPanel(uv1.appPanel)
+			setActive(slot1.appPanel, true)
+			setParent(slot1.appPanel, slot1._tf)
+			setParent:initApplyPanel()
+			setParent.initApplyPanel:updateApplyPanel(setParent.initApplyPanel)
+			setParent.initApplyPanel.updateApplyPanel.UIMgr:BlurPanel(slot1.appPanel)
 		end)
 	else
 		setActive(slot0.appPanel, true)
@@ -287,10 +297,9 @@ function slot0.showApply(slot0, slot1)
 	slot0.preUIName = slot2
 end
 
-function slot0.initApplyPanel(slot0)
+slot0.initApplyPanel = function (slot0)
 	slot0.iconTF = findTF(slot0.appPanel, "panel/frame/policy_container/input_frame/shipicon/icon"):GetComponent(typeof(Image))
-	slot0.frontNormal = findTF(slot0.appPanel, "panel/frame/policy_container/input_frame/shipicon/frame_common")
-	slot0.frontProp = findTF(slot0.appPanel, "panel/frame/policy_container/input_frame/shipicon/frame_marry")
+	slot0.circle = findTF(slot0.appPanel, "panel/frame/policy_container/input_frame/shipicon/frame")
 	slot0.manifesto = findTF(slot0.appPanel, "panel/frame/policy_container/input_frame/Text"):GetComponent(typeof(Text))
 	slot0.starsTF = findTF(slot0.appPanel, "panel/frame/policy_container/input_frame/shipicon/stars")
 	slot0.starTF = findTF(slot0.appPanel, "panel/frame/policy_container/input_frame/shipicon/stars/star")
@@ -303,11 +312,13 @@ function slot0.initApplyPanel(slot0)
 	slot0.policyTF = findTF(slot0.appPanel, "panel/frame/policy_container/policy/Text"):GetComponent(typeof(Text))
 end
 
-function slot0.updateApplyPanel(slot0, slot1)
-	LoadSpriteAsync("QIcon/" .. Ship.New({
+slot0.updateApplyPanel = function (slot0, slot1)
+	slot2 = Ship.New({
 		configId = slot1:getCommader().icon
-	}):getPainting(), function (slot0)
-		uv0.iconTF.sprite = slot0
+	})
+
+	LoadSpriteAsync("QIcon/" .. slot2:getPainting(), function (slot0)
+		slot0.iconTF.sprite = slot0
 	end)
 
 	slot0.manifesto.text = slot1.manifesto
@@ -321,13 +332,25 @@ function slot0.updateApplyPanel(slot0, slot1)
 	end
 
 	slot0.nameTF.text = slot1.name
-	slot0.levelTF.text = slot1.level < 9 and "0" .. slot1.level or slot1.level
+	slot0.levelTF.text = (slot1.level < 9 and "0" .. slot1.level) or slot1.level
 	slot0.countTF.text = slot1.memberCount .. "/" .. slot1:getMaxMember()
 	slot0.flagName.text = slot1:getCommader().name
 	slot0.policyTF.text = slot1:getPolicyName()
 
-	setActive(slot0.frontNormal, false)
-	setActive(slot0.frontProp, false)
+	PoolMgr.GetInstance():GetPrefab("IconFrame/" .. ((slot1.level < 9 and "0" .. slot1.level) or slot1.level), (slot1.level < 9 and "0" .. slot1.level) or slot1.level, true, function (slot0)
+		if IsNil(slot0._tf) then
+			return
+		end
+
+		if slot0.circle then
+			slot0.name = slot1
+			findTF(slot0.transform, "icon").GetComponent(slot1, typeof(Image)).raycastTarget = false
+
+			setParent(slot0, slot0.circle, false)
+		else
+			PoolMgr.GetInstance():ReturnPrefab("IconFrame/" .. slot1, PoolMgr.GetInstance().ReturnPrefab, slot0)
+		end
+	end)
 	onButton(slot0, slot0.applyBtn, function ()
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			onNo = true,
@@ -337,34 +360,38 @@ function slot0.updateApplyPanel(slot0, slot1)
 			placeholder = i18n("guild_request_msg_placeholder"),
 			title = i18n("guild_request_msg_title"),
 			onYes = function (slot0)
-				uv0:emit(JoinGuildMediator.APPLY, uv1.id, slot0)
+				slot0:emit(JoinGuildMediator.APPLY, slot1.id, slot0)
 			end
 		})
 	end, SFX_PANEL)
 	onButton(slot0, slot0.cancelBtn, function ()
-		uv0:closeApply()
+		slot0:closeApply()
 	end, SFX_PANEL)
 end
 
-function slot0.closeApply(slot0)
+slot0.closeApply = function (slot0)
 	slot0.isShowApply = nil
 
 	slot0.UIMgr:UnblurPanel(slot0.appPanel, slot0._tf)
 	setActive(slot0.appPanel, false)
+
+	if slot0.circle.childCount > 0 then
+		PoolMgr.GetInstance():ReturnPrefab("IconFrame/" .. slot0.circle:GetChild(0).gameObject.name, slot0.circle.GetChild(0).gameObject.name, slot0.circle.GetChild(0).gameObject)
+	end
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	if slot0.isOpenSortPanel then
 		slot0:closeSortPanel()
 	elseif slot0.isShowApply then
 		slot0:closeApply()
 	else
 		playSoundEffect(SFX_CANCEL)
-		slot0:emit(uv0.ON_CLOSE)
+		slot0:emit(slot0.ON_CLOSE)
 	end
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	if not IsNil(slot0.appPanel) then
 		slot0:closeApply()
 	end

@@ -17,7 +17,7 @@ slot0.EQUIP_BAG_SIZE_ITEM = 59100
 slot0.SHIP_BAG_SIZE_ITEM = 59101
 slot0.COMMANDER_BAG_SIZE_ITEM = 59114
 
-function slot0.Ctor(slot0, slot1, slot2)
+slot0.Ctor = function (slot0, slot1, slot2)
 	slot0.id = slot1.goods_id or slot1.shop_id or slot1.id
 	slot0.configId = slot0.id
 	slot0.discount = slot1.discount or 100
@@ -26,27 +26,27 @@ function slot0.Ctor(slot0, slot1, slot2)
 	slot0.groupCount = slot1.groupCount or 0
 end
 
-function slot0.bindConfigTable(slot0)
-	if slot0.type == uv0.TYPE_CHARGE then
+slot0.bindConfigTable = function (slot0)
+	if slot0.type == slot0.TYPE_CHARGE then
 		return pg.pay_data_display
-	elseif slot0.type == uv0.TYPE_ACTIVITY or slot0.type == uv0.TYPE_SHAM_BATTLE or slot0.type == uv0.TYPE_ESCORT then
+	elseif slot0.type == slot0.TYPE_ACTIVITY or slot0.type == slot0.TYPE_SHAM_BATTLE or slot0.type == slot0.TYPE_ESCORT then
 		return pg.activity_shop_template
-	elseif slot0.type == uv0.TYPE_ACTIVITY_EXTRA then
+	elseif slot0.type == slot0.TYPE_ACTIVITY_EXTRA then
 		return pg.activity_shop_extra
 	else
 		return pg.shop_template
 	end
 end
 
-function slot0.isChargeType(slot0)
-	return slot0.type == uv0.TYPE_CHARGE
+slot0.isChargeType = function (slot0)
+	return slot0.type == slot0.TYPE_CHARGE
 end
 
-function slot0.reduceBuyCount(slot0)
+slot0.reduceBuyCount = function (slot0)
 	slot0.buyCount = slot0.buyCount - 1
 end
 
-function slot0.increaseBuyCount(slot0)
+slot0.increaseBuyCount = function (slot0)
 	if not slot0.buyCount then
 		slot0.buyCount = 0
 	end
@@ -54,11 +54,11 @@ function slot0.increaseBuyCount(slot0)
 	slot0.buyCount = slot0.buyCount + 1
 end
 
-function slot0.addBuyCount(slot0, slot1)
+slot0.addBuyCount = function (slot0, slot1)
 	slot0.buyCount = slot0.buyCount + slot1
 end
 
-function slot0.canPurchase(slot0)
+slot0.canPurchase = function (slot0)
 	if slot0.type == slot0.TYPE_MILITARY then
 		return slot0.buyCount == 0
 	elseif slot0.type == slot0.TYPE_CHARGE or slot0.type == slot0.TYPE_GIFT_PACKAGE or slot0.type == slot0.TYPE_SKIN then
@@ -79,19 +79,23 @@ function slot0.canPurchase(slot0)
 
 			return slot0.buyCount < slot0:getConfig("num_limit")
 		elseif slot1 == DROP_TYPE_FURNITURE then
-			return getProxy(DormProxy):getFurnitrueCount(slot2) < pg.furniture_data_template[slot0:getConfig("commodity_id")].count and slot0.buyCount < slot0:getConfig("num_limit")
+			slot2 = slot0:getConfig("commodity_id")
+
+			print(slot2)
+
+			return getProxy(DormProxy):getFurnitrueCount(slot2) < pg.furniture_data_template[slot2].count and slot0.buyCount < slot0:getConfig("num_limit")
 		else
 			return slot0.buyCount < slot0:getConfig("num_limit")
 		end
 	end
 end
 
-function slot0.hasDiscount(slot0)
+slot0.hasDiscount = function (slot0)
 	return slot0.discount < 100
 end
 
-function slot0.isDisCount(slot0)
-	if slot0.type ~= uv0.TYPE_CHARGE and slot0.type ~= uv0.TYPE_ACTIVITY and slot0.type ~= uv0.TYPE_ACTIVITY_EXTRA and slot0.type ~= uv0.TYPE_SHAM_BATTLE and slot0.type ~= slot0.TYPE_ESCORT then
+slot0.isDisCount = function (slot0)
+	if slot0.type ~= slot0.TYPE_CHARGE and slot0.type ~= slot0.TYPE_ACTIVITY and slot0.type ~= slot0.TYPE_ACTIVITY_EXTRA and slot0.type ~= slot0.TYPE_SHAM_BATTLE and slot0.type ~= slot0.TYPE_ESCORT then
 		slot2 = true
 
 		if table.getCount(slot0:getConfig("discount_time")) ~= 0 then
@@ -104,7 +108,7 @@ function slot0.isDisCount(slot0)
 	return false
 end
 
-function slot0.isLevelLimit(slot0, slot1, slot2)
+slot0.isLevelLimit = function (slot0, slot1, slot2)
 	slot3, slot4 = slot0:getLevelLimit()
 
 	if slot2 and slot4 then
@@ -114,7 +118,7 @@ function slot0.isLevelLimit(slot0, slot1, slot2)
 	return slot3 > 0 and slot1 < slot3
 end
 
-function slot0.getLevelLimit(slot0)
+slot0.getLevelLimit = function (slot0)
 	for slot5, slot6 in ipairs(slot1) do
 		if slot6[1] == "level" then
 			return slot6[2], slot6[3]
@@ -124,59 +128,60 @@ function slot0.getLevelLimit(slot0)
 	return 0
 end
 
-function slot0.isTimeLimit(slot0)
+slot0.isTimeLimit = function (slot0)
 	return slot0:getLimitCount() <= 0 or slot1 < slot0.buyCount
 end
 
-function slot0.firstPayDouble(slot0)
+slot0.firstPayDouble = function (slot0)
 	return slot0:isChargeType() and slot0:getConfig("first_pay_double") ~= 0
 end
 
-function slot0.hasExtraGem(slot0)
+slot0.hasExtraGem = function (slot0)
 	return slot0:getConfig("extra_gem") ~= 0
 end
 
-function slot0.isGiftBox(slot0)
-	return slot0:getConfig("extra_service") == uv0.GIFT_BOX
+slot0.isGiftBox = function (slot0)
+	return slot0:getConfig("extra_service") == slot0.GIFT_BOX
 end
 
-function slot0.isMonthCard(slot0)
-	return slot0:getConfig("extra_service") == uv0.MONTH_CARD
+slot0.isMonthCard = function (slot0)
+	return slot0:getConfig("extra_service") == slot0.MONTH_CARD
 end
 
-function slot0.isGem(slot0)
-	return slot0:getConfig("extra_service") == uv0.GEM
+slot0.isGem = function (slot0)
+	return slot0:getConfig("extra_service") == slot0.GEM
 end
 
-function slot0.isItemBox(slot0)
+slot0.isItemBox = function (slot0)
 	if slot0.id == 10 then
-		-- Nothing
 	end
 
-	return slot0:getConfig("extra_service") == uv0.ITEM_BOX
+	return slot0:getConfig("extra_service") == slot0.ITEM_BOX
 end
 
-function slot0.isGiftPackage(slot0)
-	return slot0.type == uv0.TYPE_GIFT_PACKAGE
+slot0.isGiftPackage = function (slot0)
+	return slot0.type == slot0.TYPE_GIFT_PACKAGE
 end
 
-function slot0.getSkinId(slot0)
-	if slot0.type == uv0.TYPE_ACTIVITY_EXTRA or slot0.type == uv0.TYPE_ACTIVITY then
+slot0.getSkinId = function (slot0)
+	if slot0.type == slot0.TYPE_ACTIVITY_EXTRA or slot0.type == slot0.TYPE_ACTIVITY then
 		return slot0:getConfig("commodity_id")
-	elseif slot0.type == uv0.TYPE_SKIN then
+	elseif slot0.type == slot0.TYPE_SKIN then
 		return slot0:getConfig("effect_args")[1]
 	end
 end
 
-function slot0.getKey(slot0)
+slot0.getKey = function (slot0)
 	return slot0.id .. "_" .. slot0.type
 end
 
-function slot0.getLimitCount(slot0)
-	if slot0.type == uv0.TYPE_CHARGE then
+slot0.getLimitCount = function (slot0)
+	if slot0.type == slot0.TYPE_CHARGE then
 		return slot0:getConfig("limit_arg")
 	else
-		for slot5, slot6 in ipairs(slot0:getConfig("limit_args") or {}) do
+		slot1 = slot0:getConfig("limit_args") or {}
+
+		for slot5, slot6 in ipairs(slot1) do
 			if slot6[1] == "time" then
 				return slot6[2]
 			end
@@ -186,15 +191,15 @@ function slot0.getLimitCount(slot0)
 	return 0
 end
 
-function slot0.updateBuyCount(slot0, slot1)
+slot0.updateBuyCount = function (slot0, slot1)
 	slot0.buyCount = slot1
 end
 
-function slot0.updateGroupCount(slot0, slot1)
+slot0.updateGroupCount = function (slot0, slot1)
 	slot0.groupCount = slot1
 end
 
-function slot0.inTime(slot0)
+slot0.inTime = function (slot0)
 	if not slot0:getConfig("time") then
 		return true
 	end

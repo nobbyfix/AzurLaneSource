@@ -4,7 +4,7 @@ slot0.STATE_EMPTY = 1
 slot0.STATE_ACTIVE = 2
 slot0.STATE_FINISHED = 3
 
-function slot0.Ctor(slot0, slot1, slot2)
+slot0.Ctor = function (slot0, slot1, slot2)
 	slot0._go = slot1
 	slot0._parent = slot2
 	slot0._viewComponent = slot2._viewComponent
@@ -14,84 +14,85 @@ function slot0.Ctor(slot0, slot1, slot2)
 	pg.DelegateInfo.New(slot0)
 end
 
-function slot0.updateEventItems(slot0, slot1, slot2)
-	for slot6, slot7 in pairs(slot0.timers or {}) do
+slot0.updateEventItems = function (slot0, slot1, slot2)
+	slot3 = pairs
+	slot4 = slot0.timers or {}
+
+	for slot6, slot7 in slot3(slot4) do
 		slot7:Stop()
 	end
 
 	function slot3(slot0)
-		slot1 = uv0.STATE_LOCK
-
-		if uv1 < slot0 then
-			slot1 = uv0.STATE_LOCK
-		elseif slot0 > #uv2 then
-			return uv0.STATE_EMPTY
-		elseif uv2[slot0].state == EventInfo.StateFinish then
-			return uv0.STATE_FINISHED
-		elseif uv2[slot0].state == EventInfo.StateActive then
-			return uv0.STATE_ACTIVE
+		if slot0.STATE_LOCK < slot0 then
+			slot1 = slot0.STATE_LOCK
+		elseif slot0 > #slot2 then
+			return slot0.STATE_EMPTY
+		elseif slot2[slot0].state == EventInfo.StateFinish then
+			return slot0.STATE_FINISHED
+		elseif slot2[slot0].state == EventInfo.StateActive then
+			return slot0.STATE_ACTIVE
 		end
 
 		return slot1
 	end
 
 	slot0.uilist:make(function (slot0, slot1, slot2)
-		if uv0(slot3) == uv1.STATE_LOCK then
-			setText(slot2:Find("lock/Text"), i18n("commission_no_open") .. "\n" .. i18n("commission_open_tip", uv2:getChapterByCount(slot3).chapter_name))
-		elseif slot4 == uv1.STATE_EMPTY then
+		if slot0(slot3) == slot1.STATE_LOCK then
+			setText(slot2:Find("lock/Text"), i18n("commission_no_open") .. "\n" .. i18n("commission_open_tip", slot2:getChapterByCount(slot3).chapter_name))
+		elseif slot4 == slot1.STATE_EMPTY then
 			setText(slot2:Find("unlock/name_bg/Text"), i18n("commission_idle"))
-			onButton(uv2, slot2:Find("unlock/leisure/go_btn"), function ()
-				uv0._viewComponent:emit(CommissionInfoMediator.ON_ACTIVE_EVENT)
+			onButton(slot2, slot2:Find("unlock/leisure/go_btn"), function ()
+				slot0._viewComponent:emit(CommissionInfoMediator.ON_ACTIVE_EVENT)
 			end, SFX_PANEL)
-			onButton(uv2, slot2, function ()
-				triggerButton(uv0:Find("unlock/leisure/go_btn"))
+			onButton(slot2, slot2, function ()
+				triggerButton(slot0:Find("unlock/leisure/go_btn"))
 			end, SFX_PANEL)
-		elseif slot4 == uv1.STATE_FINISHED then
-			setText(slot2:Find("unlock/name_bg/Text"), uv3[slot3].template.title)
-			onButton(uv2, slot2:Find("unlock/finished/finish_btn"), function ()
-				uv0._viewComponent:emit(CommissionInfoMediator.FINISH_EVENT, uv1)
+		elseif slot4 == slot1.STATE_FINISHED then
+			setText(slot2:Find("unlock/name_bg/Text"), slot3[slot3].template.title)
+			onButton(slot2, slot2:Find("unlock/finished/finish_btn"), function ()
+				slot0._viewComponent:emit(CommissionInfoMediator.FINISH_EVENT, slot0._viewComponent)
 			end, SFX_PANEL)
-			onButton(uv2, slot2, function ()
-				triggerButton(uv0:Find("unlock/finished/finish_btn"))
+			onButton(slot2, slot2, function ()
+				triggerButton(slot0:Find("unlock/finished/finish_btn"))
 			end, SFX_PANEL)
-		elseif slot4 == uv1.STATE_ACTIVE then
-			setText(slot2:Find("unlock/name_bg/Text"), uv3[slot3].template.title)
+		elseif slot4 == slot1.STATE_ACTIVE then
+			setText(slot2:Find("unlock/name_bg/Text"), slot3[slot3].template.title)
 
 			slot6 = slot2:Find("unlock/ongoging/time"):GetComponent(typeof(Text))
-			slot7 = uv3[slot3].finishTime + 2
+			slot7 = slot3[slot3].finishTime + 2
 
-			if uv2.timers[uv3[slot3].id] then
-				uv2.timers[slot5.id]:Stop()
+			if slot2.timers[slot3[slot3].id] then
+				slot2.timers[slot5.id]:Stop()
 
-				uv2.timers[slot5.id] = nil
+				slot2.timers[slot5.id] = nil
 			end
 
-			uv2.timers[slot5.id] = Timer.New(function ()
-				if uv0 - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
-					uv1.timers[uv2.id]:Stop()
+			slot2.timers[slot5.id] = Timer.New(function ()
+				if slot0 - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
+					slot1.timers[slot2.id]:Stop()
 
-					uv1.timers[uv2.id] = nil
+					slot1.timers[slot2.id].Stop.timers[slot1.timers[slot2.id].id] = nil
 
-					uv1._parent:update()
+					slot1.timers[slot2.id].Stop.timers._parent:update()
 				else
-					uv3.text = pg.TimeMgr:GetInstance():DescCDTime(slot0)
+					slot3.text = pg.TimeMgr:GetInstance():DescCDTime(slot0)
 				end
 			end, 1, -1)
 
-			uv2.timers[slot5.id]:Start()
-			uv2.timers[slot5.id].func()
+			slot2.timers[slot5.id]:Start()
+			slot2.timers[slot5.id].func()
 		end
 
-		setActive(slot2:Find("unlock"), slot4 ~= uv1.STATE_LOCK)
-		setActive(slot2:Find("lock"), slot4 == uv1.STATE_LOCK)
-		setActive(slot2:Find("unlock/leisure"), slot4 == uv1.STATE_EMPTY)
-		setActive(slot2:Find("unlock/ongoging"), slot4 == uv1.STATE_ACTIVE)
-		setActive(slot2:Find("unlock/finished"), slot4 == uv1.STATE_FINISHED)
+		setActive(slot2:Find("unlock"), slot4 ~= slot1.STATE_LOCK)
+		setActive(slot2:Find("lock"), slot4 == slot1.STATE_LOCK)
+		setActive(slot2:Find("unlock/leisure"), slot4 == slot1.STATE_EMPTY)
+		setActive(slot2:Find("unlock/ongoging"), slot4 == slot1.STATE_ACTIVE)
+		setActive(slot2:Find("unlock/finished"), slot4 == slot1.STATE_FINISHED)
 	end)
 	slot0.uilist:align(4)
 end
 
-function slot0.getChapterByCount(slot0, slot1)
+slot0.getChapterByCount = function (slot0, slot1)
 	for slot6, slot7 in pairs(pg.chapter_template.all) do
 		if slot2[slot7].collection_team == slot1 then
 			return slot2[slot7]
@@ -99,17 +100,21 @@ function slot0.getChapterByCount(slot0, slot1)
 	end
 end
 
-function slot0.updateClassItems(slot0, slot1, slot2)
-	for slot6, slot7 in pairs(slot0.timers or {}) do
+slot0.updateClassItems = function (slot0, slot1, slot2)
+	slot3 = pairs
+	slot4 = slot0.timers or {}
+
+	for slot6, slot7 in slot3(slot4) do
 		slot7:Stop()
 	end
 
 	slot0.uilist:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
 			slot3 = false
+			slot5 = slot2:Find("unlock/name_bg")
 
-			if uv0[slot1 + 1] then
-				slot2:Find("unlock/name_bg").sizeDelta = Vector2(267, 45)
+			if slot0[slot1 + 1] then
+				slot5.sizeDelta = Vector2(267, 45)
 				slot8 = slot2:Find("unlock/ongoging/time"):GetComponent(typeof(Text))
 				slot9 = slot4:getShipVO()
 				slot10 = nil
@@ -117,46 +122,42 @@ function slot0.updateClassItems(slot0, slot1, slot2)
 				setText(slot2:Find("unlock/name_bg/Text"), slot4:getSkillName())
 
 				if pg.TimeMgr.GetInstance():GetServerTime() < slot4:getFinishTime() then
-					uv1.timers[slot4.id] = Timer.New(function ()
-						if uv0 - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
-							uv1._parent:update()
-							uv1.timers[uv2.id]:Stop()
+					slot1.timers[slot4.id] = Timer.New(function ()
+						if slot0 - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
+							slot1._parent:update()
+							slot1._parent.update.timers[slot1._parent.id]:Stop()
 						else
-							uv3.text = pg.TimeMgr:GetInstance():DescCDTime(slot0)
+							slot3.text = pg.TimeMgr:GetInstance():DescCDTime(slot0)
 						end
 					end, 1, -1)
 
-					uv1.timers[slot4.id]:Start()
-					uv1.timers[slot4.id]:func()
+					slot1.timers[slot4.id]:Start()
+					slot1.timers[slot4.id]:func()
 
 					slot10 = slot2:Find("unlock/ongoging/shipicon")
 				else
 					slot3 = true
 
-					onButton(uv1, slot2:Find("unlock/finished/finish_btn"), function ()
-						uv0._viewComponent:emit(CommissionInfoMediator.FINISH_CLASS, uv1.id, Student.CANCEL_TYPE_AUTO)
+					onButton(slot1, slot2:Find("unlock/finished/finish_btn"), function ()
+						slot0._viewComponent:emit(CommissionInfoMediator.FINISH_CLASS, slot1.id, Student.CANCEL_TYPE_AUTO)
 					end, SFX_PANEL)
-					onButton(uv1, slot2, function ()
-						triggerButton(uv0:Find("unlock/finished/finish_btn"))
+					onButton(slot1, slot2, function ()
+						triggerButton(slot0:Find("unlock/finished/finish_btn"))
 					end, SFX_PANEL)
 
 					slot10 = slot2:Find("unlock/finished/shipicon")
 				end
 
-				updateDrop(slot10, {
-					type = DROP_TYPE_SHIP,
-					id = slot9:getConfig("id"),
-					skinId = slot9.skinId
-				})
+				updateShip(slot10, slot9)
 			else
 				slot5.sizeDelta = Vector2(400, 45)
 
 				setText(slot2:Find("unlock/name_bg/Text"), i18n("commission_idle"))
-				onButton(uv1, slot2:Find("unlock/leisure/go_btn"), function ()
-					uv0._viewComponent:emit(CommissionInfoMediator.ON_ACTIVE_CLASS)
+				onButton(slot1, slot2:Find("unlock/leisure/go_btn"), function ()
+					slot0._viewComponent:emit(CommissionInfoMediator.ON_ACTIVE_CLASS)
 				end, SFX_PANEL)
-				onButton(uv1, slot2, function ()
-					triggerButton(uv0:Find("unlock/leisure/go_btn"))
+				onButton(slot1, slot2, function ()
+					triggerButton(slot0:Find("unlock/leisure/go_btn"))
 				end, SFX_PANEL)
 			end
 
@@ -170,8 +171,11 @@ function slot0.updateClassItems(slot0, slot1, slot2)
 	slot0.uilist:align(slot2)
 end
 
-function slot0.updateTechItems(slot0, slot1, slot2)
-	for slot6, slot7 in pairs(slot0.timers or {}) do
+slot0.updateTechItems = function (slot0, slot1, slot2)
+	slot3 = pairs
+	slot4 = slot0.timers or {}
+
+	for slot6, slot7 in slot3(slot4) do
 		slot7:Stop()
 	end
 
@@ -181,31 +185,33 @@ function slot0.updateTechItems(slot0, slot1, slot2)
 	slot0.uilist:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
 			function slot5()
-				setText(uv0:Find("unlock/desc/name_bg/Text"), uv1:getConfig("name"))
+				slot1 = slot0:Find("unlock/desc/name_bg/Text")
 
-				if uv1:hasCondition() then
-					setText(uv0:Find("unlock/desc/task_bg/Text"), getProxy(TaskProxy):getTaskById(uv1:getTaskId()) or getProxy(TaskProxy):getFinishTaskById(slot0):getConfig("desc") .. "(" .. getProxy(TaskProxy).getTaskById(uv1.getTaskId()) or getProxy(TaskProxy).getFinishTaskById(slot0):getProgress() .. "/" .. getProxy(TaskProxy).getTaskById(uv1.getTaskId()) or getProxy(TaskProxy).getFinishTaskById(slot0):getConfig("target_num") .. ")")
+				setText(slot1, slot1:getConfig("name"))
+
+				if slot1:hasCondition() then
+					setText(slot0:Find("unlock/desc/task_bg/Text"), getProxy(TaskProxy):getTaskById(slot1:getTaskId()) or getProxy(TaskProxy):getFinishTaskById(slot0):getConfig("desc") .. "(" .. getProxy(TaskProxy).getTaskById(slot1.getTaskId()) or getProxy(TaskProxy).getFinishTaskById(slot0):getProgress() .. "/" .. getProxy(TaskProxy).getTaskById(slot1.getTaskId()) or getProxy(TaskProxy).getFinishTaskById(slot0):getConfig("target_num") .. ")")
 				end
 			end
 
-			if uv0[slot1 + 1].state == Technology.STATE_IDLE then
+			if slot0[slot1 + 1].state == Technology.STATE_IDLE then
 				setText(slot2:Find("unlock/desc/name_bg/Text"), i18n("commission_idle"))
-				onButton(uv1, slot2:Find("unlock/leisure/go_btn"), function ()
-					uv0._viewComponent:emit(CommissionInfoMediator.ON_ACTIVE_TECH)
+				onButton(slot1, slot2:Find("unlock/leisure/go_btn"), function ()
+					slot0._viewComponent:emit(CommissionInfoMediator.ON_ACTIVE_TECH)
 				end, SFX_PANEL)
-				onButton(uv1, slot2, function ()
-					triggerButton(uv0:Find("unlock/leisure/go_btn"))
+				onButton(slot1, slot2, function ()
+					triggerButton(slot0:Find("unlock/leisure/go_btn"))
 				end, SFX_PANEL)
 			elseif slot4 == Technology.STATE_FINISHED then
 				slot5()
-				onButton(uv1, slot2:Find("unlock/finished/finish_btn"), function ()
-					uv0._viewComponent:emit(CommissionInfoMediator.ON_TECH_FINISHED, {
-						id = uv1.id,
-						pool_id = uv1.poolId
+				onButton(slot1, slot2:Find("unlock/finished/finish_btn"), function ()
+					slot0._viewComponent:emit(CommissionInfoMediator.ON_TECH_FINISHED, {
+						id = slot1.id,
+						pool_id = slot1.poolId
 					})
 				end, SFX_PANEL)
-				onButton(uv1, slot2, function ()
-					triggerButton(uv0:Find("unlock/finished/finish_btn"))
+				onButton(slot1, slot2, function ()
+					triggerButton(slot0:Find("unlock/finished/finish_btn"))
 				end, SFX_PANEL)
 			elseif slot4 == Technology.STATE_STARTING then
 				slot5()
@@ -213,17 +219,17 @@ function slot0.updateTechItems(slot0, slot1, slot2)
 				slot6 = slot2:Find("unlock/ongoging/time"):GetComponent(typeof(Text))
 
 				if pg.TimeMgr.GetInstance():GetServerTime() < slot3:getFinishTime() then
-					uv1.timers[slot3.id] = Timer.New(function ()
-						if uv0:getFinishTime() - pg.TimeMgr.GetInstance():GetServerTime() > 0 then
-							uv1.text = pg.TimeMgr:GetInstance():DescCDTime(slot0)
+					slot1.timers[slot3.id] = Timer.New(function ()
+						if slot0:getFinishTime() - pg.TimeMgr.GetInstance():GetServerTime() > 0 then
+							slot1.text = pg.TimeMgr:GetInstance():DescCDTime(slot0)
 						else
-							uv2.timers[uv0.id]:Stop()
-							uv2._parent:update()
+							slot2.timers[slot0.id]:Stop()
+							slot2._parent:update()
 						end
 					end, 1, -1)
 
-					uv1.timers[slot3.id]:Start()
-					uv1.timers[slot3.id].func()
+					slot1.timers[slot3.id]:Start()
+					slot1.timers[slot3.id].func()
 				else
 					slot6.text = "00:00:00"
 				end
@@ -240,8 +246,11 @@ function slot0.updateTechItems(slot0, slot1, slot2)
 	slot0.uilist:align(slot2)
 end
 
-function slot0.clear(slot0)
-	for slot4, slot5 in pairs(slot0.timers or {}) do
+slot0.clear = function (slot0)
+	slot1 = pairs
+	slot2 = slot0.timers or {}
+
+	for slot4, slot5 in slot1(slot2) do
 		slot5:Stop()
 	end
 

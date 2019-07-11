@@ -19,8 +19,13 @@ return {
 	},
 	{
 		banner = "build_bisimai",
-		event = ActivityMediator.GO_BUILD_BISIMAI,
-		data = {},
+		event = ActivityMediator.EVENT_GO_SCENE,
+		data = {
+			SCENE.GETBOAT,
+			{
+				projectName = BuildShipScene.PROJECTS.ACTIVITY
+			}
+		},
 		isShow = function ()
 			return getProxy(ActivityProxy):getActivityById(ActivityConst.BUILD_BISMARCK_ID) and not slot0:isEnd()
 		end
@@ -51,10 +56,89 @@ return {
 	{
 		banner = "banai_shop",
 		event = ActivityMediator.GO_SHOPS_LAYER,
-		data = {},
+		data = {
+			{
+				warp = "activity",
+				actId = ActivityConst.BISMARCK_PT_SHOP_ID
+			}
+		},
 		isShow = function ()
 			return getProxy(ActivityProxy):getActivityById(ActivityConst.BISMARCK_PT_SHOP_ID) and not slot0:isEnd()
 		end
 	},
-	{}
+	{
+		banner = "bili_shop",
+		event = ActivityMediator.GO_SHOPS_LAYER,
+		data = {
+			{
+				warp = "activity",
+				actId = ActivityConst.BILIBILI_PT_SHOP_ID
+			}
+		},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityById(ActivityConst.BILIBILI_PT_SHOP_ID) and not slot0:isEnd()
+		end
+	},
+	{},
+	{
+		banner = "commom_build",
+		event = ActivityMediator.EVENT_GO_SCENE,
+		data = {
+			SCENE.GETBOAT,
+			{
+				projectName = BuildShipScene.PROJECTS.ACTIVITY
+			}
+		},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityById(ActivityConst.FRANCE_RE_BUILD) and not slot0:isEnd()
+		end
+	},
+	{
+		banner = "commom_pt_shop",
+		event = ActivityMediator.GO_SHOPS_LAYER,
+		data = {
+			{
+				warp = "activity",
+				actId = ActivityConst.FRANCE_RE_PT_SHOP
+			}
+		},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityById(ActivityConst.FRANCE_RE_PT_SHOP) and not slot0:isEnd()
+		end
+	},
+	{
+		banner = "commom_skin_shop",
+		event = ActivityMediator.EVENT_GO_SCENE,
+		data = {
+			SCENE.SKINSHOP
+		},
+		isShow = function ()
+			return pg.TimeMgr:GetInstance():inTime({
+				{
+					{
+						2019,
+						6,
+						27
+					},
+					{
+						0,
+						0,
+						0
+					}
+				},
+				{
+					{
+						2019,
+						7,
+						10
+					},
+					{
+						23,
+						59,
+						59
+					}
+				}
+			})
+		end
+	}
 }

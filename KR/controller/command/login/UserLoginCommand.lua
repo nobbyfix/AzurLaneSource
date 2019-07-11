@@ -7,22 +7,20 @@ class("UserLoginCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		slot3 = PLATFORM_LOCAL
 	end
 
-	print("platformCode", slot3)
-
 	if not slot2.arg4 then
 		slot2.arg4 = "0"
 	end
 
 	print("sessionid -- : " .. slot2.arg4)
-	print("login_type:", slot2.type, "arg1:", slot2.arg1, "arg2:", slot2.arg2, "arg3:", slot2.arg4 == "0" and slot2.arg3 or slot2.arg4, "arg4:", slot3, "check_key:", HashUtil.CalcMD5(slot2.arg1 .. AABBUDUD), "device:", PLATFORM)
+	print("login_type:", slot2.type, "arg1:", slot2.arg1, "arg2:", slot2.arg2, "arg3:", (slot2.arg4 == "0" and slot2.arg3) or slot2.arg4, "arg4:", slot3, "check_key:", HashUtil.CalcMD5(slot2.arg1 .. AABBUDUD), "device:", PLATFORM)
 	pg.ConnectionMgr.GetInstance():Connect(NetConst.GATEWAY_HOST, NetConst.GATEWAY_PORT, function ()
 		pg.ConnectionMgr.GetInstance():Send(10020, {
-			login_type = uv0.type,
-			arg1 = uv0.arg1,
-			arg2 = uv0.arg2,
-			arg3 = uv1,
-			arg4 = uv2,
-			check_key = HashUtil.CalcMD5(uv0.arg1 .. AABBUDUD),
+			login_type = slot0.type,
+			arg1 = slot0.arg1,
+			arg2 = slot0.arg2,
+			arg3 = slot1,
+			arg4 = slot2,
+			check_key = HashUtil.CalcMD5(slot0.arg1 .. AABBUDUD),
 			device = PLATFORM
 		}, 10021, function (slot0)
 			print("disconnect from gateway...")
@@ -35,11 +33,16 @@ class("UserLoginCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			end
 
 			if slot0.result == 0 then
-				uv0.id = slot0.account_id
-				uv0.uid = slot0.account_id
-				uv0.token = slot0.server_ticket
+				slot0.id = slot0.account_id
+				slot0.uid = slot0.account_id
+				slot0.token = slot0.server_ticket
 
-				getProxy(UserProxy).setLastLogin(slot1, uv0)
+				getProxy(UserProxy).setLastLogin(slot1, slot0)
+
+				slot2 = {}
+				slot3 = {
+					"*all gate info :"
+				}
 
 				for slot7, slot8 in ipairs(slot0.serverlist) do
 					slot9 = Server.New({
@@ -53,15 +56,17 @@ class("UserLoginCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 						tag_state = slot8.tag_state,
 						sort = slot8.sort
 					})
+					slot3[#slot3 + 1] = slot8.proxy_ip .. ":" .. slot8.proxy_port
+					slot3[#slot3 + 1] = slot8.ip .. ":" .. slot8.port
 
 					slot9:display()
-					table.insert({}, slot9)
+					table.insert(slot2, slot9)
 				end
 
 				print(table.concat(slot3, "\n"))
-				getProxy(ServerProxy).setServers(slot4, slot2, uv0.uid)
+				getProxy(ServerProxy).setServers(slot4, slot2, slot0.uid)
 				getProxy(GatewayNoticeProxy).setGatewayNotices(slot5, slot0.notice_list)
-				uv1.facade:sendNotification(GAME.USER_LOGIN_SUCCESS, uv0)
+				slot1.facade:sendNotification(GAME.USER_LOGIN_SUCCESS, slot0)
 				pg.PushNotificationMgr.GetInstance():cancelAll()
 				print("user logined............", #slot2)
 			elseif slot0.result == 13 then
@@ -73,7 +78,7 @@ class("UserLoginCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			elseif slot0.result == 6 then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("login_game_login_full"))
 			else
-				uv1.facade:sendNotification(GAME.USER_LOGIN_FAILED, slot0.result)
+				slot1.facade:sendNotification(GAME.USER_LOGIN_FAILED, slot0.result)
 			end
 		end, false)
 	end)

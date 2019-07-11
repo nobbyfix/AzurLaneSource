@@ -347,20 +347,20 @@ function slot1(slot0)
 	slot3 = slot0.backBtn
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.isOpenRivalInfoPanel
 
 		if slot0 then
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.closeRivalInfoPanel
 
 			slot0(slot1)
 		else
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.emit
-			slot2 = uv1
+			slot2 = slot1
 			slot2 = slot2.ON_BACK
 
 			slot0(slot1, slot2)
@@ -427,7 +427,7 @@ function slot1(slot0)
 	slot3 = slot3(slot4, slot5)
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.emit
 		slot2 = MilitaryExerciseMediator
@@ -448,7 +448,7 @@ function slot1(slot0)
 	slot3 = slot3(slot4, slot5)
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.emit
 		slot2 = MilitaryExerciseMediator
@@ -469,7 +469,7 @@ function slot1(slot0)
 	slot3 = slot3(slot4, slot5)
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = true
 		slot0.isOpenAwards = slot1
 		slot0 = pg
@@ -478,27 +478,27 @@ function slot1(slot0)
 		slot0 = slot0()
 		slot1 = slot0
 		slot0 = slot0.BlurPanel
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.awardPanel
 
 		slot0(slot1, slot2)
 
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.isInitAward
 
 		if not slot0 then
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.initAwards
 
 			slot0(slot1)
 
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = true
 			slot0.isInitAward = slot1
 		else
 			slot0 = setActive
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.awardPanel
 			slot2 = true
 
@@ -518,7 +518,7 @@ function slot1(slot0)
 	slot3 = slot3(slot4, slot5)
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.emit
 		slot2 = MilitaryExerciseMediator
@@ -533,7 +533,7 @@ function slot1(slot0)
 
 	slot1 = slot0.contextData
 	slot1 = slot1.mode
-	slot2 = uv0
+	slot2 = slot0
 	slot2 = slot2.TYPE_SHOP
 
 	if slot1 == slot2 then
@@ -605,7 +605,7 @@ function slot1(slot0, slot1)
 	slot4 = slot4.New
 
 	function slot5()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = pg
 		slot1 = slot1.TimeMgr
 		slot1 = slot1.GetInstance
@@ -626,13 +626,13 @@ function slot1(slot0, slot1)
 			slot3 = slot0
 			slot1, slot2, slot3, slot4 = slot1(slot2, slot3)
 			slot5 = setText
-			slot6 = uv1
+			slot6 = slot1
 			slot7 = slot1
 
 			slot5(slot6, slot7)
 
 			slot5 = setText
-			slot6 = uv2
+			slot6 = slot2
 			slot7 = string
 			slot7 = slot7.format
 			slot8 = "%02d:%02d:%02d"
@@ -643,13 +643,13 @@ function slot1(slot0, slot1)
 			slot5(slot6, slot7(slot8, slot9, slot10, slot11))
 		else
 			slot1 = setText
-			slot2 = uv1
+			slot2 = slot1
 			slot3 = 0
 
 			slot1(slot2, slot3)
 
 			slot1 = setText
-			slot2 = uv2
+			slot2 = slot2
 			slot3 = string
 			slot3 = slot3.format
 			slot4 = "%02d:%02d:%02d"
@@ -659,14 +659,14 @@ function slot1(slot0, slot1)
 
 			slot1(slot2, slot3(slot4, slot5, slot6, slot7))
 
-			slot1 = uv3
+			slot1 = slot3
 			slot1 = slot1.leftTimeTimer
 			slot2 = slot1
 			slot1 = slot1.Stop
 
 			slot1(slot2)
 
-			slot1 = uv3
+			slot1 = slot3
 			slot2 = nil
 			slot1.leftTimeTimer = slot2
 		end
@@ -723,7 +723,7 @@ function slot1(slot0, slot1)
 	slot3 = slot3.New
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = pg
 		slot1 = slot1.TimeMgr
 		slot1 = slot1.GetInstance
@@ -736,7 +736,7 @@ function slot1(slot0, slot1)
 
 		if slot0 > slot1 then
 			slot1 = setText
-			slot2 = uv1
+			slot2 = slot1
 			slot3 = i18n
 			slot4 = "exercise_count_recover_tip"
 			slot5 = pg
@@ -749,14 +749,14 @@ function slot1(slot0, slot1)
 
 			slot1(slot2, slot3(slot4, slot5(slot6, slot7)))
 		else
-			slot1 = uv2
+			slot1 = slot2
 			slot1 = slot1.recoverTimer
 			slot2 = slot1
 			slot1 = slot1.Stop
 
 			slot1(slot2)
 
-			slot1 = uv2
+			slot1 = slot2
 			slot2 = nil
 			slot1.recoverTimer = slot2
 		end
@@ -783,25 +783,15 @@ slot0.updateRecoverTime = slot1
 function slot1(slot0)
 	function slot1(slot0, slot1, slot2)
 		slot3 = cloneTplTo
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.shipTpl
 		slot5 = slot1
 		slot3 = slot3(slot4, slot5)
 		slot4 = slot0.configId
 		slot5 = slot0.skinId
-		slot6 = updateDrop
+		slot6 = updateShip
 		slot7 = slot3
-		slot8 = {}
-		slot9 = DROP_TYPE_SHIP
-		slot8.type = slot9
-		slot8.id = slot4
-		slot8.skinId = slot5
-		slot9 = slot0.proposeTime
-		slot8.propose = slot9
-		slot10 = slot0
-		slot9 = slot0.isRemoulded
-		slot9 = slot9(slot10)
-		slot8.remoulded = slot9
+		slot8 = slot0
 		slot9 = {
 			initStar = true
 		}
@@ -818,17 +808,17 @@ function slot1(slot0)
 		slot6(slot7, slot8)
 
 		slot6 = onButton
-		slot7 = uv0
+		slot7 = slot0
 		slot8 = slot3
 
 		function slot9()
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.emit
 			slot2 = MilitaryExerciseMediator
 			slot2 = slot2.OPEN_DOCKYARD
-			slot3 = uv1
-			slot4 = uv2
+			slot3 = slot1
+			slot4 = slot2
 			slot4 = slot4.id
 
 			slot0(slot1, slot2, slot3, slot4)
@@ -884,7 +874,7 @@ function slot1(slot0)
 			slot10 = slot10(slot11, slot12)
 
 			function slot11()
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.emit
 				slot2 = MilitaryExerciseMediator
@@ -937,7 +927,7 @@ function slot1(slot0)
 			slot10 = slot10(slot11, slot12)
 
 			function slot11()
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.emit
 				slot2 = MilitaryExerciseMediator
@@ -1092,7 +1082,9 @@ function slot1(slot0)
 	for slot4 = slot1, slot2, slot3 do
 		setActive(slot0.rivalTFs[slot4], slot4 <= #slot0.rivalVOs)
 
-		if slot4 <= #slot0.rivalVOs then
+		slot6 = #slot0.rivalVOs
+
+		if slot4 <= slot6 then
 			slot7 = slot0
 			slot6 = slot0.updateRival
 			slot8 = slot4
@@ -1233,12 +1225,12 @@ function slot1(slot0, slot1)
 	slot9 = slot2
 
 	function slot10()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.emit
 		slot2 = MilitaryExerciseMediator
 		slot2 = slot2.OPEN_RIVAL_INFO
-		slot3 = uv1
+		slot3 = slot1
 
 		slot0(slot1, slot2, slot3)
 	end
@@ -1266,7 +1258,7 @@ function slot1(slot0)
 	slot3 = slot3(slot4, slot5, slot6)
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.closeAwards
 
@@ -1349,13 +1341,13 @@ function slot1(slot0)
 	slot8(slot9, slot10(slot11))
 
 	function slot8(slot0, slot1)
-		slot2 = uv0
+		slot2 = slot0
 		slot3 = slot2
 		slot2 = slot2.findTF
 		slot4 = "awards"
 		slot5 = slot0
 		slot2 = slot2(slot3, slot4, slot5)
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3.rankCfg
 		slot3 = slot3[slot1]
 		slot4 = setText
@@ -1375,7 +1367,7 @@ function slot1(slot0)
 
 		for slot7, slot8 in slot4, slot5, slot6 do
 			slot9 = cloneTplTo
-			slot10 = uv1
+			slot10 = slot1
 			slot11 = slot2
 			slot9 = slot9(slot10, slot11)
 			slot10 = updateDrop
@@ -1391,29 +1383,29 @@ function slot1(slot0)
 			slot10(slot11, slot12)
 
 			slot10 = onButton
-			slot11 = uv0
+			slot11 = slot0
 			slot13 = slot9
 			slot12 = slot9.Find
 			slot14 = "icon_bg"
 			slot12 = slot12(slot13, slot14)
 
 			function slot13()
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.emit
 				slot2 = BaseUI
 				slot2 = slot2.ON_ITEM
-				slot3 = uv1
+				slot3 = slot1
 				slot3 = slot3[1]
 
 				if slot3 == 1 then
 					slot3 = id2ItemId
-					slot4 = uv1
+					slot4 = slot1
 					slot4 = slot4[2]
 					slot3 = slot3(slot4)
 
 					if not slot3 then
-						slot3 = uv1
+						slot3 = slot1
 						slot3 = slot3[2]
 					end
 				end
@@ -1507,7 +1499,7 @@ function slot1(slot0)
 
 		slot2 = slot0
 		slot1 = slot0.emit
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3.ON_BACK
 
 		slot1(slot2, slot3)

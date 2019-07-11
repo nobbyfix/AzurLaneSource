@@ -1623,8 +1623,8 @@ slot0.checkCommander = function (slot0, slot1)
 		if slot0.contextData.activeCommander then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 84-91, warpins: 1 ---
-			slot0.detailPage:ActionInvoke("updatePreviewAddition", slot0.contextData.activeCommander)
+			--- BLOCK #0 84-92, warpins: 1 ---
+			slot0.detailPage:ActionInvoke("updatePreviewAddition", slot0.contextData.activeCommander, true)
 			--- END OF BLOCK #0 ---
 
 
@@ -1637,11 +1637,11 @@ slot0.checkCommander = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 92-95, warpins: 1 ---
+		--- BLOCK #0 93-96, warpins: 1 ---
 		if slot3 <= #slot0.selecteds then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 96-108, warpins: 1 ---
+			--- BLOCK #0 97-109, warpins: 1 ---
 			pg.TipsMgr:GetInstance():ShowTips(i18n("commander_select_max"))
 
 			return
@@ -1663,7 +1663,7 @@ slot0.checkCommander = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 109-118, warpins: 4 ---
+	--- BLOCK #4 110-119, warpins: 4 ---
 	table.insert(slot0.selecteds, slot1.id)
 	slot0:updateSelecteds()
 
@@ -1675,7 +1675,7 @@ slot0.checkCommander = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 119-119, warpins: 2 ---
+	--- BLOCK #5 120-120, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
@@ -1683,7 +1683,7 @@ slot0.checkCommander = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 120-120, warpins: 2 ---
+	--- BLOCK #6 121-121, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 
@@ -1783,10 +1783,18 @@ slot0.updateSelecteds = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 57-66, warpins: 2 ---
+		--- BLOCK #1 57-69, warpins: 2 ---
 		slot2:addExp(slot3)
-		slot0.detailPage:ActionInvoke("updatePreView", slot2)
+		slot0.detailPage:ActionInvoke("updatePreView", slot2, slot0.contextData.maxCount == 1)
 		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 73-73, warpins: 2 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -1799,7 +1807,7 @@ slot0.updateSelecteds = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 67-67, warpins: 2 ---
+	--- BLOCK #4 74-74, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 

@@ -6,22 +6,22 @@ slot4 = 3
 slot5 = 0.5
 slot6 = 11
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "ShipMainScene"
 end
 
-function slot0.preload(slot0, slot1)
+slot0.preload = function (slot0, slot1)
 	slot3 = getProxy(BayProxy).getShipById(slot2, slot0.contextData.shipId)
 
 	parallelAsync({
 		function (slot0)
-			GetSpriteFromAtlasAsync("bg/star_level_bg_" .. uv0:getShipBgPrint(), "", slot0)
+			GetSpriteFromAtlasAsync("bg/star_level_bg_" .. slot0:getShipBgPrint(), "", slot0)
 		end,
 		function (slot0)
 			if not PoolMgr.GetInstance():HasCacheUI("ShipDetailView") then
 				slot1:GetUI(slot2, true, function (slot0)
-					uv0:ReturnUI(uv1, slot0)
-					uv2()
+					slot0:ReturnUI(slot0.ReturnUI, slot0)
+					slot0()
 				end)
 			else
 				slot0()
@@ -30,7 +30,7 @@ function slot0.preload(slot0, slot1)
 	}, slot1)
 end
 
-function slot0.setPlayer(slot0, slot1)
+slot0.setPlayer = function (slot0, slot1)
 	slot0.player = slot1
 
 	slot0:GetShareData():SetPlayer(slot1)
@@ -40,11 +40,11 @@ function slot0.setPlayer(slot0, slot1)
 	end
 end
 
-function slot0.setShipList(slot0, slot1)
+slot0.setShipList = function (slot0, slot1)
 	slot0.shipList = slot1
 end
 
-function slot0.setShip(slot0, slot1)
+slot0.setShip = function (slot0, slot1)
 	slot0:GetShareData():SetShipVO(slot1)
 
 	slot2 = false
@@ -81,7 +81,7 @@ function slot0.setShip(slot0, slot1)
 	slot0:setToggleEnable()
 end
 
-function slot0.setToggleEnable(slot0)
+slot0.setToggleEnable = function (slot0)
 	for slot4, slot5 in pairs(slot0.togglesList) do
 		setActive(slot5, slot0:checkToggleActive(slot4))
 	end
@@ -89,7 +89,7 @@ function slot0.setToggleEnable(slot0)
 	setActive(slot0.technologyToggle, slot0.shipVO:isBluePrintShip())
 end
 
-function slot0.checkToggleActive(slot0, slot1)
+slot0.checkToggleActive = function (slot0, slot1)
 	if slot1 == ShipViewConst.PAGE.DETAIL then
 		return true
 	elseif slot1 == ShipViewConst.PAGE.EQUIPMENT then
@@ -100,40 +100,42 @@ function slot0.checkToggleActive(slot0, slot1)
 		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip()
 	elseif slot1 == ShipViewConst.PAGE.REMOULD then
 		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip() and pg.ship_data_trans[slot0.shipVO.groupId]
+	elseif slot1 == ShipViewConst.PAGE.FASHION then
+		return true
 	else
 		return false
 	end
 end
 
-function slot0.setSkinList(slot0, slot1)
+slot0.setSkinList = function (slot0, slot1)
 	slot0.shipFashionView:ActionInvoke("SetSkinList", slot1)
 end
 
-function slot0.updateLock(slot0)
+slot0.updateLock = function (slot0)
 	slot0.shipDetailView:ActionInvoke("UpdateLock")
 end
 
-function slot0.updatePreferenceTag(slot0)
+slot0.updatePreferenceTag = function (slot0)
 	slot0.shipDetailView:ActionInvoke("UpdatePreferenceTag")
 end
 
-function slot0.closeRecordPanel(slot0)
+slot0.closeRecordPanel = function (slot0)
 	slot0.shipDetailView:ActionInvoke("CloseRecordPanel")
 end
 
-function slot0.updateRecordEquipments(slot0, slot1)
+slot0.updateRecordEquipments = function (slot0, slot1)
 	slot0.shipDetailView:UpdateRecordEquipments(slot1)
 end
 
-function slot0.setModPanel(slot0, slot1)
+slot0.setModPanel = function (slot0, slot1)
 	slot0.modPanel = slot1
 end
 
-function slot0.setMaxLevelHelpFlag(slot0, slot1)
+slot0.setMaxLevelHelpFlag = function (slot0, slot1)
 	slot0.maxLevelHelpFlag = slot1
 end
 
-function slot0.checkMaxLevelHelp(slot0)
+slot0.checkMaxLevelHelp = function (slot0)
 	if not slot0.maxLevelHelpFlag and slot0.shipVO and slot0.shipVO:isReachNextMaxLevel() then
 		slot0:openHelpPage()
 
@@ -143,7 +145,7 @@ function slot0.checkMaxLevelHelp(slot0)
 	end
 end
 
-function slot0.GetShareData(slot0)
+slot0.GetShareData = function (slot0)
 	if not slot0.shareData then
 		slot0.shareData = ShipViewShareData.New(slot0.contextData)
 
@@ -159,16 +161,16 @@ function slot0.GetShareData(slot0)
 	return slot0.shareData
 end
 
-function slot0.hasFashion(slot0)
+slot0.hasFashion = function (slot0)
 	return slot0.shareData:HasFashion()
 end
 
-function slot0.DisplayRenamePanel(slot0, slot1)
+slot0.DisplayRenamePanel = function (slot0, slot1)
 	slot0.shipChangeNameView:Load()
 	slot0.shipChangeNameView:ActionInvoke("DisplayRenamePanel", slot1)
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0:initShip()
 	slot0:initPages()
 	slot0:initEvents()
@@ -178,17 +180,16 @@ function slot0.init(slot0)
 	Input.multiTouchEnabled = false
 end
 
-function slot0.initShip(slot0)
+slot0.initShip = function (slot0)
 	slot0.shipInfo = slot0:findTF("main/character")
 
 	setActive(slot0.shipInfo, true)
 
-	slot0.painting = slot0:findTF("painting", slot0.shipInfo)
-	slot0.painting2 = slot0:findTF("painting2", slot0.shipInfo)
 	slot0.tablePainting = {
-		slot0.painting,
-		slot0.painting2
+		slot0:findTF("painting", slot0.shipInfo),
+		slot0:findTF("painting2", slot0.shipInfo)
 	}
+	slot0.nowPainting = nil
 	slot0.isRight = true
 	slot0.blurPanel = slot0:findTF("blur_panel")
 	slot0.common = slot0.blurPanel:Find("adapt")
@@ -210,7 +211,7 @@ function slot0.initShip(slot0)
 	slot0.character = slot0:findTF("main/character")
 	slot0.chat = slot0:findTF("main/character/chat")
 	slot0.chatBg = slot0:findTF("main/character/chat/chatbgtop")
-	slot0.chatText = slot0:findTF("main/character/chat/Text")
+	slot0.chatText = slot0:findTF("Text", slot0.chat)
 	rtf(slot0.chat).localScale = Vector3.New(0, 0, 1)
 	slot0.initChatBgH = slot0.chatBg.sizeDelta.y
 
@@ -224,7 +225,7 @@ function slot0.initShip(slot0)
 	tf(slot0._resPanel._go):SetParent(tf(slot0._playerResOb), false)
 end
 
-function slot0.initPages(slot0)
+slot0.initPages = function (slot0)
 	ShipViewConst.currentPage = nil
 	slot0.background = slot0:findTF("background")
 
@@ -282,74 +283,74 @@ function slot0.initPages(slot0)
 	}
 
 	onButton(slot0, slot0.shipName, function ()
-		if uv0.shipVO.propose then
+		if slot0.shipVO.propose then
 			if not pg.PushNotificationMgr.GetInstance():isEnableShipName() then
 				pg.TipsMgr.GetInstance():ShowTips(i18n("word_rename_switch_tip"))
 
 				return
 			end
 
-			if uv0.shipVO.renameTime + 2592000 - pg.TimeMgr.GetInstance():GetServerTime() > 0 then
+			if (slot0.shipVO.renameTime + 2592000) - pg.TimeMgr.GetInstance():GetServerTime() > 0 then
 				if math.floor(slot0 / 60 / 60 / 24) < 1 then
 					slot1 = 1
 				end
 
 				pg.TipsMgr.GetInstance():ShowTips(i18n("word_rename_time_tip", slot1))
 			else
-				uv0:DisplayRenamePanel(true)
+				slot0:DisplayRenamePanel(true)
 			end
 		end
 	end, SFX_PANEL)
 end
 
-function slot0.initEvents(slot0)
+slot0.initEvents = function (slot0)
 	slot0:bind(ShipViewConst.SWITCH_TO_PAGE, function (slot0, slot1)
-		uv0:gotoPage(slot1)
+		slot0:gotoPage(slot1)
 	end)
 	slot0:bind(ShipViewConst.LOAD_PAINTING, function (slot0, slot1)
-		uv0:loadPainting(slot1)
+		slot0:loadPainting(slot1)
 	end)
 	slot0:bind(ShipViewConst.LOAD_PAINTING_BG, function (slot0, slot1, slot2)
-		uv0:loadSkinBg(slot1, slot2, uv0.isSpBg)
+		slot0:loadSkinBg(slot1, slot2, slot0.isSpBg)
 	end)
 	slot0:bind(ShipViewConst.HIDE_SHIP_WORD, function (slot0)
-		uv0:hideShipWord()
+		slot0:hideShipWord()
 	end)
 	slot0:bind(ShipViewConst.SET_CLICK_ENABLE, function (slot0, slot1)
-		uv0.mainCanvasGroup.blocksRaycasts = slot1
-		uv0.commonCanvasGroup.blocksRaycasts = slot1
+		slot0.mainCanvasGroup.blocksRaycasts = slot1
+		slot0.commonCanvasGroup.blocksRaycasts = slot1
 	end)
 	slot0:bind(ShipViewConst.SHOW_CUSTOM_MSG, function (slot0, slot1)
-		uv0.shipCustomMsgBox:Load()
-		uv0.shipCustomMsgBox:ActionInvoke("showCustomMsgBox", slot1)
+		slot0.shipCustomMsgBox:Load()
+		slot0.shipCustomMsgBox:ActionInvoke("showCustomMsgBox", slot1)
 	end)
 	slot0:bind(ShipViewConst.HIDE_CUSTOM_MSG, function (slot0)
-		uv0.shipCustomMsgBox:ActionInvoke("hideCustomMsgBox")
+		slot0.shipCustomMsgBox:ActionInvoke("hideCustomMsgBox")
 	end)
 	slot0:bind(ShipViewConst.DISPLAY_HUNTING_RANGE, function (slot0, slot1)
 		if slot1 then
-			uv0.shipHuntingRangeView:Load()
-			uv0.shipHuntingRangeView:ActionInvoke("DisplayHuntingRange")
+			slot0.shipHuntingRangeView:Load()
+			slot0.shipHuntingRangeView:ActionInvoke("DisplayHuntingRange")
 		else
-			uv0.shipHuntingRangeView:HideHuntingRange()
+			slot0.shipHuntingRangeView:HideHuntingRange()
 		end
 	end)
 	slot0:bind(ShipViewConst.PAINT_VIEW, function (slot0, slot1)
 		if slot1 then
-			uv0:paintView()
+			slot0:paintView()
 		else
-			uv0:hidePaintView(true)
+			slot0:hidePaintView(true)
 		end
 	end)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0:addRingDragListenter()
 	onButton(slot0, slot0:findTF("top/back_btn", slot0.common), function ()
-		GetOrAddComponent(uv0._tf, typeof(CanvasGroup)).interactable = false
+		GetOrAddComponent(slot0._tf, typeof(CanvasGroup)).interactable = false
 
 		LeanTween.delayedCall(0.3, System.Action(function ()
-			uv0:emit(uv1.ON_BACK)
+			slot0:emit(slot1.ON_BACK)
 		end))
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.npcFlagTF, function ()
@@ -362,47 +363,47 @@ function slot0.didEnter(slot0)
 	slot0.helpBtn = slot0:findTF("help_btn", slot0.common)
 
 	onButton(slot0, slot0.helpBtn, function ()
-		uv0:openHelpPage(ShipViewConst.currentPage)
+		slot0:openHelpPage(ShipViewConst.currentPage)
 	end, SFX_PANEL)
 
 	for slot4, slot5 in pairs(slot0.togglesList) do
 		if slot5 == slot0.upgradeToggle or slot5 == slot0.remouldToggle or slot5 == slot0.equipmentToggle then
 			onToggle(slot0, slot5, function (slot0)
 				if slot0 then
-					if LeanTween.isTweening(go(uv0.chat)) then
-						LeanTween.cancel(go(uv0.chat))
+					if LeanTween.isTweening(go(slot0.chat)) then
+						LeanTween.cancel(go(slot0.chat))
 					end
 
-					rtf(uv0.chat).localScale = Vector3.New(0, 0, 1)
-					uv0.chatFlag = false
+					rtf(slot0.chat).localScale = Vector3.New(0, 0, 1)
+					slot0.chatFlag = false
 
-					uv0:switchToPage(uv1)
+					slot0:switchToPage(slot0.switchToPage)
 				end
 			end, SFX_PANEL)
 		else
 			onToggle(slot0, slot5, function (slot0)
 				if slot0 then
-					uv0:switchToPage(uv1)
+					slot0:switchToPage(slot0.switchToPage)
 				end
 			end, SFX_PANEL)
 		end
 	end
 
 	onButton(slot0, slot0.technologyToggle, function ()
-		uv0:emit(ShipMainMediator.ON_TECHNOLOGY, uv0.shipVO)
+		slot0:emit(ShipMainMediator.ON_TECHNOLOGY, slot0.shipVO)
 	end, SFX_PANEL)
 	onButton(slot0, tf(slot0.character), function ()
 		if ShipViewConst.currentPage ~= ShipViewConst.PAGE.FASHION then
-			uv0:displayShipWord("detail")
+			slot0:displayShipWord("detail")
 		end
 	end)
 	onButton(slot0, slot0.energyTF, function ()
-		uv0:showEnergyDesc()
+		slot0:showEnergyDesc()
 	end)
 	pg.UIMgr.GetInstance():OverlayPanel(slot0.blurPanel, {
 		groupName = LayerWeightConst.GROUP_SHIPINFOUI
 	})
-	slot0:gotoPage(slot0:checkToggleActive(slot0.contextData.page) and slot0.contextData.page or ShipViewConst.PAGE.DETAIL)
+	slot0:gotoPage((slot0:checkToggleActive(slot0.contextData.page) and slot0.contextData.page) or ShipViewConst.PAGE.DETAIL)
 
 	if ShipViewConst.currentPage == ShipViewConst.PAGE.DETAIL then
 		slot0:displayShipWord(slot0:getInitmacyWords())
@@ -410,7 +411,7 @@ function slot0.didEnter(slot0)
 	end
 end
 
-function slot0.openHelpPage(slot0, slot1)
+slot0.openHelpPage = function (slot0, slot1)
 	if slot1 == ShipViewConst.PAGE.EQUIPMENT then
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			type = MSGBOX_TYPE_HELP,
@@ -450,26 +451,26 @@ function slot0.openHelpPage(slot0, slot1)
 	end
 end
 
-function slot0.showAwakenCompleteAni(slot0, slot1)
+slot0.showAwakenCompleteAni = function (slot0, slot1)
 	function slot2()
-		uv0.awakenAni:SetActive(true)
+		slot0.awakenAni:SetActive(true)
 
-		uv0.awakenPlay = true
+		slot0.awakenAni.SetActive.awakenPlay = true
 
-		onButton(uv0, uv0.awakenAni, function ()
-			uv0.awakenAni:GetComponent("Animator"):SetBool("endFlag", true)
+		onButton(onButton, slot0.awakenAni, function ()
+			slot0.awakenAni:GetComponent("Animator"):SetBool("endFlag", true)
 		end)
 
-		slot0 = tf(uv0.awakenAni)
+		slot0 = tf(slot0.awakenAni)
 
 		pg.UIMgr.GetInstance():BlurPanel(slot0)
-		setText(uv0:findTF("window/desc", uv0.awakenAni), uv1)
+		setText(slot0:findTF("window/desc", slot0.awakenAni), setText)
 		slot0:GetComponent("DftAniEvent"):SetEndEvent(function (slot0)
-			uv0.awakenAni:GetComponent("Animator"):SetBool("endFlag", false)
-			pg.UIMgr.GetInstance():UnblurPanel(uv1, uv0.common)
-			uv0.awakenAni:SetActive(false)
+			slot0.awakenAni:GetComponent("Animator"):SetBool("endFlag", false)
+			pg.UIMgr.GetInstance():UnblurPanel(pg.UIMgr.GetInstance().UnblurPanel, slot0.common)
+			slot0.awakenAni:SetActive(false)
 
-			uv0.awakenPlay = false
+			slot0.awakenPlay = false
 		end)
 	end
 
@@ -481,16 +482,16 @@ function slot0.showAwakenCompleteAni(slot0, slot1)
 		PoolMgr.GetInstance():GetUI("AwakenCompleteWindows", true, function (slot0)
 			slot0:SetActive(true)
 
-			uv0.awakenAni = slot0
+			slot0.awakenAni = slot0
 
-			uv1()
+			slot0()
 		end)
 	else
 		slot2()
 	end
 end
 
-function slot0.updatePreference(slot0, slot1)
+slot0.updatePreference = function (slot0, slot1)
 	slot0.scrollTxt = ScrollTxt.New(slot0.shipName:Find("nameRect/name_mask"), slot0.shipName:Find("nameRect/name_mask/Text"))
 
 	slot0.scrollTxt:setText(slot3)
@@ -505,8 +506,10 @@ function slot0.updatePreference(slot0, slot1)
 	setActive(slot0.energyTF, true)
 	removeAllChildren(slot5)
 
+	slot6 = slot1:getStar()
+
 	for slot11 = 1, slot1:getMaxStar(), 1 do
-		setActive(cloneTplTo(slot0.shipInfoStarTpl, slot5, "star_" .. slot11):Find("star_tpl"), slot11 <= slot1:getStar())
+		setActive(cloneTplTo(slot0.shipInfoStarTpl, slot5, "star_" .. slot11):Find("star_tpl"), slot11 <= slot6)
 		setActive(slot12:Find("empty_star_tpl"), true)
 	end
 
@@ -522,51 +525,53 @@ function slot0.updatePreference(slot0, slot1)
 	setImageSprite(slot0:findTF("type", slot0.shipName), slot8, true)
 end
 
-function slot0.doUpgradeMaxLeveAnim(slot0, slot1, slot2, slot3)
+slot0.doUpgradeMaxLeveAnim = function (slot0, slot1, slot2, slot3)
 	slot0.inUpgradeAnim = true
 
 	slot0.shipDetailView:DoLeveUpAnim(slot1, slot2, function ()
-		if uv0 then
-			uv0()
+		if slot0 then
+			slot0()
 		end
 
-		uv1.inUpgradeAnim = nil
+		slot1.inUpgradeAnim = nil
 	end)
 end
 
-function slot0.addRingDragListenter(slot0)
+slot0.addRingDragListenter = function (slot0)
 	slot1 = GetOrAddComponent(slot0._tf, "EventTriggerListener")
 	slot2 = nil
 	slot3 = 0
 	slot4 = nil
 
 	slot1:AddBeginDragFunc(function ()
-		uv0 = 0
-		uv1 = nil
+		slot0 = 0
+		slot1 = nil
 	end)
 	slot1:AddDragFunc(function (slot0, slot1)
-		if not uv0.inPaintingView then
-			if not uv1 then
-				uv1 = slot1.position
+		if not slot0.inPaintingView then
+			slot2 = slot1.position
+
+			if not slot1 then
+				slot1 = slot2
 			end
 
-			uv2 = slot2.x - uv1.x
+			slot2 = slot2.x - slot1.x
 		end
 	end)
 	slot1:AddDragEndFunc(function (slot0, slot1)
-		if not uv0.inPaintingView then
-			if uv1 < -50 then
-				if not uv0.isLoading then
-					uv0:emit(ShipMainMediator.NEXTSHIP, -1)
+		if not slot0.inPaintingView then
+			if slot1 < -50 then
+				if not slot0.isLoading then
+					slot0:emit(ShipMainMediator.NEXTSHIP, -1)
 				end
-			elseif uv1 > 50 and not uv0.isLoading then
-				uv0:emit(ShipMainMediator.NEXTSHIP)
+			elseif slot1 > 50 and not slot0.isLoading then
+				slot0:emit(ShipMainMediator.NEXTSHIP)
 			end
 		end
 	end)
 end
 
-function slot0.showEnergyDesc(slot0)
+slot0.showEnergyDesc = function (slot0)
 	if slot0.energyTimer then
 		return
 	end
@@ -578,16 +583,16 @@ function slot0.showEnergyDesc(slot0)
 	setText(slot0.energyText, i18n(slot2))
 
 	slot0.energyTimer = Timer.New(function ()
-		setActive(uv0.energyDescTF, false)
-		uv0.energyTimer:Stop()
+		setActive(slot0.energyDescTF, false)
+		setActive.energyTimer:Stop()
 
-		uv0.energyTimer = nil
+		setActive.energyTimer.Stop.energyTimer = nil
 	end, 2, 1)
 
 	slot0.energyTimer:Start()
 end
 
-function slot0.displayShipWord(slot0, slot1, slot2)
+slot0.displayShipWord = function (slot0, slot1, slot2)
 	if ShipViewConst.currentPage == ShipViewConst.PAGE.EQUIPMENT or ShipViewConst.currentPage == ShipViewConst.PAGE.UPGRADE then
 		rtf(slot0.chat).localScale = Vector3.New(0, 0, 1)
 
@@ -604,13 +609,13 @@ function slot0.displayShipWord(slot0, slot1, slot2)
 
 		slot0.chat:SetAsLastSibling()
 
-		if findTF(slot0.painting, "fitter").childCount > 0 then
-			Ship.SetExpression(findTF(slot0.painting, "fitter"):GetChild(0), slot0.paintingCode, slot1)
+		if findTF(slot0.nowPainting, "fitter").childCount > 0 then
+			Ship.SetExpression(findTF(slot0.nowPainting, "fitter"):GetChild(0), slot0.paintingCode, slot1)
 		end
 
-		slot7, slot4 = Ship.getWords(slot0.shipVO.skinId, slot1)
+		slot7, slot4 = Ship.getWords(slot0.shipVO.skinId, slot1, nil, nil, slot0.shipVO:getIntimacy() / 100 + ((slot0.shipVO.propose and 1000) or 0))
 
-		setText(slot0.chatText, slot3)
+		setText(slot0.chatText, Ship.getWords)
 
 		if CHAT_POP_STR_LEN < #slot0.chatText:GetComponent(typeof(Text)).text then
 			slot5.alignment = TextAnchor.MiddleLeft
@@ -618,62 +623,71 @@ function slot0.displayShipWord(slot0, slot1, slot2)
 			slot5.alignment = TextAnchor.MiddleCenter
 		end
 
-		slot6 = uv0
+		if slot0.initChatBgH < slot5.preferredHeight + 120 then
+			slot0.chatBg.sizeDelta = Vector2.New(slot0.chatBg.sizeDelta.x, slot6)
+		else
+			slot0.chatBg.sizeDelta = Vector2.New(slot0.chatBg.sizeDelta.x, slot0.initChatBgH)
+		end
 
-		function slot7()
-			if uv0.chatFlag then
-				if uv0.chatani1Id then
-					LeanTween.cancel(uv0.chatani1Id)
+		slot7 = slot0
+
+		function slot8()
+			if slot0.chatFlag then
+				if slot0.chatani1Id then
+					LeanTween.cancel(slot0.chatani1Id)
 				end
 
-				if uv0.chatani2Id then
-					LeanTween.cancel(uv0.chatani2Id)
+				if slot0.chatani2Id then
+					LeanTween.cancel(slot0.chatani2Id)
 				end
 			end
 
-			uv0.chatani1Id = LeanTween.scale(rtf(uv0.chat.gameObject), Vector3.New(1, 1, 1), uv1):setEase(LeanTweenType.easeOutBack):setOnComplete(System.Action(function ()
-				uv0.chatani2Id = LeanTween.scale(rtf(uv0.chat.gameObject), Vector3.New(0, 0, 1), uv1):setEase(LeanTweenType.easeInBack):setDelay(uv1 + uv2):setOnComplete(System.Action(function ()
-					uv0.chatFlag = nil
+			slot0.chatani1Id = LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(1, 1, 1), LeanTween.scale):setEase(LeanTweenType.easeOutBack):setOnComplete(System.Action(function ()
+				slot0.chatani2Id = LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(0, 0, 1), LeanTween.scale):setEase(LeanTweenType.easeInBack):setDelay(slot1 + LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(0, 0, 1), LeanTween.scale).setEase(LeanTweenType.easeInBack)):setOnComplete(System.Action(function ()
+					slot0.chatFlag = nil
 				end)).uniqueId
 			end)).uniqueId
 		end
 
 		if slot4 then
+			function slot9()
+				if slot0._currentVoice then
+					slot0._currentVoice:Stop(true)
+				end
+
+				nil._currentVoice, slot0 = playSoundEffect(slot1)
+
+				if slot3 then
+					slot2 = long2int(slot0.length) * 0.001
+				end
+
+				slot3()
+			end
+
 			if slot0.loadedCVBankName then
-				function ()
-					if uv0._currentVoice then
-						uv0._currentVoice:Stop(true)
-					end
-
-					slot0 = nil
-					uv0._currentVoice, slot0 = playSoundEffect(uv1)
-
-					if slot3 then
-						uv2 = long2int(slot0.length) * 0.001
-					end
-
-					uv3()
-				end()
+				slot9()
 			else
 				pg.CriMgr:LoadCV(Ship.getCVKeyID(slot0.shipVO.skinId), function ()
-					if uv1.exited then
-						pg.CriMgr.UnloadCVBank(pg.CriMgr.GetCVBankName(uv0))
-					else
-						uv2()
+					slot0 = pg.CriMgr.GetCVBankName(pg.CriMgr.GetCVBankName)
 
-						if uv1._currentVoice then
-							uv1.loadedCVBankName = slot0
+					if pg.CriMgr.GetCVBankName.exited then
+						pg.CriMgr.UnloadCVBank(slot0)
+					else
+						slot2()
+
+						if slot2._currentVoice then
+							slot1.loadedCVBankName = slot0
 						end
 					end
 				end)
 			end
 		else
-			slot7()
+			slot8()
 		end
 	end
 end
 
-function slot0.startChatTimer(slot0)
+slot0.startChatTimer = function (slot0)
 	if slot0.chatFlag then
 		return
 	end
@@ -685,13 +699,13 @@ function slot0.startChatTimer(slot0)
 	end
 
 	slot0.chatTimer = Timer.New(function ()
-		uv0:displayShipWord(uv0:getInitmacyWords())
-	end, uv0, 1)
+		slot0:displayShipWord(slot0:getInitmacyWords())
+	end, slot0, 1)
 
 	slot0.chatTimer:Start()
 end
 
-function slot0.hideShipWord(slot0)
+slot0.hideShipWord = function (slot0)
 	if slot0.chatFlag then
 		if slot0.chatani1Id then
 			LeanTween.cancel(slot0.chatani1Id)
@@ -701,8 +715,8 @@ function slot0.hideShipWord(slot0)
 			LeanTween.cancel(slot0.chatani2Id)
 		end
 
-		LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(0, 0, 1), uv0):setEase(LeanTweenType.easeInBack):setOnComplete(System.Action(function ()
-			uv0.chatFlag = nil
+		LeanTween.scale(rtf(slot0.chat.gameObject), Vector3.New(0, 0, 1), slot0):setEase(LeanTweenType.easeInBack):setOnComplete(System.Action(function ()
+			slot0.chatFlag = nil
 		end))
 	end
 
@@ -711,7 +725,7 @@ function slot0.hideShipWord(slot0)
 	end
 end
 
-function slot0.gotoPage(slot0, slot1)
+slot0.gotoPage = function (slot0, slot1)
 	if slot1 == ShipViewConst.PAGE.FASHION then
 		slot0:switchToPage(slot1)
 	else
@@ -719,88 +733,88 @@ function slot0.gotoPage(slot0, slot1)
 	end
 end
 
-function slot0.switchToPage(slot0, slot1, slot2)
+slot0.switchToPage = function (slot0, slot1, slot2)
 	function slot3(slot0, slot1)
 		if slot0 == ShipViewConst.PAGE.DETAIL then
-			shiftPanel(uv0.detailContainer, slot1 and {
-				uv0.detailContainer.rect.width + 200,
+			shiftPanel(slot0.detailContainer, (slot1 and {
+				slot0.detailContainer.rect.width + 200,
 				0
-			} or {
+			}) or {
 				0,
-				uv0.detailContainer.rect.width + 200
-			}[2], 0, uv1, 0):setFrom(slot1 and  or [1])
+				slot0.detailContainer.rect.width + 200
+			}[2], 0, slot1, 0):setFrom((slot1 and ) or [1])
 		elseif slot0 == ShipViewConst.PAGE.EQUIPMENT then
-			shiftPanel(uv0.equipLCon, slot1 and {
-				-(uv0.equipLCon.rect.width + 190),
+			shiftPanel(slot0.equipLCon, (slot1 and {
+				-(slot0.equipLCon.rect.width + 190),
 				190
-			} or {
+			}) or {
 				190,
-				-(uv0.equipLCon.rect.width + 190)
-			}[2], 0, uv1, 0):setFrom(slot1 and  or [1])
-			shiftPanel(uv0.equipRCon, slot1 and {
-				uv0.equipRCon.rect.width,
+				-(slot0.equipLCon.rect.width + 190)
+			}[2], 0, slot1, 0):setFrom((slot1 and ) or [1])
+			shiftPanel(slot0.equipRCon, (slot1 and {
+				slot0.equipRCon.rect.width,
 				10
-			} or {
+			}) or {
 				10,
-				uv0.equipRCon.rect.width
-			}[2], 0, uv1, 0):setFrom(slot1 and  or [1])
+				slot0.equipRCon.rect.width
+			}[2], 0, slot1, 0):setFrom((slot1 and ) or [1])
 		elseif slot0 == ShipViewConst.PAGE.FASHION then
-			shiftPanel(uv0.fashionContainer, slot1 and {
-				uv0.fashionContainer.rect.width + 150,
+			shiftPanel(slot0.fashionContainer, (slot1 and {
+				slot0.fashionContainer.rect.width + 150,
 				0
-			} or {
+			}) or {
 				0,
-				uv0.fashionContainer.rect.width + 150
-			}[2], 0, uv1, 0):setFrom(slot1 and  or [1])
-			uv0.shipFashionView:ActionInvoke("UpdateFashion")
+				slot0.fashionContainer.rect.width + 150
+			}[2], 0, slot1, 0):setFrom((slot1 and ) or [1])
+			slot0.shipFashionView:ActionInvoke("UpdateFashion")
 		elseif slot0 == ShipViewConst.PAGE.INTENSIFY then
 			if slot1 then
-				uv0:emit(ShipMainMediator.OPEN_INTENSIFY)
+				slot0:emit(ShipMainMediator.OPEN_INTENSIFY)
 			else
-				uv0:emit(ShipMainMediator.CLOSE_INTENSIFY)
+				slot0:emit(ShipMainMediator.CLOSE_INTENSIFY)
 			end
 		elseif slot0 == ShipViewConst.PAGE.UPGRADE then
 			if slot1 then
-				uv0:emit(ShipMainMediator.ON_UPGRADE)
+				slot0:emit(ShipMainMediator.ON_UPGRADE)
 			else
-				uv0:emit(ShipMainMediator.CLOSE_UPGRADE)
+				slot0:emit(ShipMainMediator.CLOSE_UPGRADE)
 			end
 		elseif slot0 == ShipViewConst.PAGE.REMOULD then
 			if slot1 then
-				uv0:emit(ShipMainMediator.OPEN_REMOULD)
+				slot0:emit(ShipMainMediator.OPEN_REMOULD)
 			else
-				uv0:emit(ShipMainMediator.CLOSE_REMOULD)
+				slot0:emit(ShipMainMediator.CLOSE_REMOULD)
 			end
 		end
 
-		uv0:blurPage(slot0, slot1)
+		slot0:blurPage(slot0, slot1)
 
 		if slot0 ~= ShipViewConst.PAGE.FASHION then
-			uv0.fashionSkinId = uv0.shipVO.skinId
+			slot0.fashionSkinId = slot0.shipVO.skinId
 
-			uv0:loadPainting(uv0.shipVO:getPainting())
+			slot0:loadPainting(slot0.shipVO:getPainting())
 		end
 
-		if uv0.bgEffect[uv0.shipVO:getRarity()] then
+		if slot0.bgEffect[slot0.shipVO:getRarity()] then
 			setActive(slot2, slot0 ~= ShipViewConst.PAGE.REMOULD)
 		end
 
-		setActive(uv0.helpBtn, slot0 ~= ShipViewConst.PAGE.REMOULD)
+		setActive(slot0.helpBtn, slot0 ~= ShipViewConst.PAGE.REMOULD)
 	end
 
 	function switchHandler()
-		if uv0 == ShipViewConst.currentPage and uv1 then
-			uv2(uv0, true)
-		elseif uv0 ~= ShipViewConst.currentPage then
+		if slot0 == ShipViewConst.currentPage and slot1 then
+			slot2(slot2, true)
+		elseif slot0 ~= ShipViewConst.currentPage then
 			if ShipViewConst.currentPage then
-				uv2(ShipViewConst.currentPage, false)
+				slot2(ShipViewConst.currentPage, false)
 			end
 
-			ShipViewConst.currentPage = uv0
-			uv3.contextData.page = uv0
+			ShipViewConst.currentPage = ShipViewConst
+			slot3.contextData.page = slot3.contextData
 
-			uv2(uv0, true)
-			uv3:switchPainting()
+			slot2(slot2, true)
+			slot3:switchPainting()
 		end
 	end
 
@@ -816,7 +830,7 @@ function slot0.switchToPage(slot0, slot1, slot2)
 	end
 end
 
-function slot0.blurPage(slot0, slot1, slot2)
+slot0.blurPage = function (slot0, slot1, slot2)
 	slot3 = pg.UIMgr.GetInstance()
 
 	if slot1 == ShipViewConst.PAGE.DETAIL then
@@ -826,43 +840,40 @@ function slot0.blurPage(slot0, slot1, slot2)
 	elseif slot1 == ShipViewConst.PAGE.FASHION then
 		slot0.shipFashionView:ActionInvoke("OnSelected", slot2)
 	elseif slot1 == ShipViewConst.PAGE.INTENSIFY then
-		-- Nothing
 	elseif slot1 == ShipViewConst.PAGE.UPGRADE then
-		-- Nothing
 	elseif slot1 == ShipViewConst.PAGE.REMOULD then
-		-- Nothing
 	end
 end
 
-function slot0.switchPainting(slot0)
+slot0.switchPainting = function (slot0)
 	setActive(slot0.shipInfo, ShipViewConst.currentPage ~= ShipViewConst.PAGE.REMOULD)
 	setActive(slot0.shipName, ShipViewConst.currentPage ~= ShipViewConst.PAGE.REMOULD)
 
 	if ShipViewConst.currentPage == ShipViewConst.PAGE.EQUIPMENT then
-		shiftPanel(slot0.shipInfo, -20, 0, uv0, 0)
+		shiftPanel(slot0.shipInfo, -20, 0, slot0, 0)
 
 		slot0.paintingFrameName = "zhuangbei"
 	else
-		shiftPanel(slot0.shipInfo, -460, 0, uv0, 0)
+		shiftPanel(slot0.shipInfo, -460, 0, slot0, 0)
 
 		slot0.paintingFrameName = "chuanwu"
 	end
 
-	slot1 = GetOrAddComponent(findTF(slot0.painting, "fitter"), "PaintingScaler")
+	slot1 = GetOrAddComponent(findTF(slot0.nowPainting, "fitter"), "PaintingScaler")
 
 	slot1:Snapshoot()
 
 	slot1.FrameName = slot0.paintingFrameName
-	slot2 = LeanTween.value(go(slot0.painting), 0, 1, uv0):setOnUpdate(System.Action_float(function (slot0)
-		uv0.Tween = slot0
-		uv1.chat.localPosition = Vector3(uv1.character.localPosition.x + 100, uv1.chat.localPosition.y, 0)
+	slot2 = LeanTween.value(go(slot0.nowPainting), 0, 1, slot0):setOnUpdate(System.Action_float(function (slot0)
+		slot0.Tween = slot0
+		slot0.chat.localPosition = Vector3(slot1.character.localPosition.x + 100, slot1.chat.localPosition.y, 0)
 	end)):setEase(LeanTweenType.easeInOutSine)
 end
 
-function slot0.setPreOrNext(slot0, slot1)
+slot0.setPreOrNext = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-2, warpins: 1 ---
 	if slot1 then
 
 		-- Decompilation error in this vicinity:
@@ -883,17 +894,25 @@ function slot0.setPreOrNext(slot0, slot1)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 8-8, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.loadPainting(slot0, slot1)
+slot0.loadPainting = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-169, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0.isLoading == true then
 
 		-- Decompilation error in this vicinity:
@@ -905,17 +924,49 @@ function slot0.loadPainting(slot0, slot1)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-8, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 9-16, warpins: 0 ---
 	for slot5, slot6 in pairs(slot0.tablePainting) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 9-16, warpins: 1 ---
+		--- BLOCK #0 9-14, warpins: 1 ---
 		slot6.localScale = Vector3(1, 1, 1)
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 15-16, warpins: 2 ---
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 17-19, warpins: 1 ---
 	if slot0.LoadShipVOId and slot0.LoadShipVOId == slot0.shipVO.id and slot0.LoadPaintingCode == slot1 then
 
 		-- Decompilation error in this vicinity:
@@ -927,6 +978,14 @@ function slot0.loadPainting(slot0, slot1)
 
 	end
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 29-32, warpins: 3 ---
 	slot2 = 0
 
 	if slot0.isRight then
@@ -949,6 +1008,14 @@ function slot0.loadPainting(slot0, slot1)
 
 	end
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 36-44, warpins: 2 ---
 	slot0.isLoading = true
 	slot4 = slot0.paintingCode
 
@@ -962,9 +1029,9 @@ function slot0.loadPainting(slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-8, warpins: 1 ---
-			retPaintingPrefab(uv0, uv1)
+			retPaintingPrefab(retPaintingPrefab, )
 
-			uv2.isLoading = false
+			retPaintingPrefab.isLoading = false
 
 			return
 			--- END OF BLOCK #0 ---
@@ -978,20 +1045,33 @@ function slot0.loadPainting(slot0, slot1)
 
 	end
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 94-101, warpins: 2 ---
 	slot5 = slot0:getPaintingFromTable(true)
 	slot0.paintingCode = slot1
 
 	if slot0.paintingCode and slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 117-161, warpins: 2 ---
+		--- BLOCK #0 104-116, warpins: 1 ---
 		slot6 = slot5:GetComponent(typeof(RectTransform))
+		slot0.nowPainting = slot5
+		slot7 = setPaintingPrefabAsync
+		slot8 = slot5
+		slot9 = slot0.paintingCode
+		slot10 = slot0.paintingFrameName or "chuanwu"
 
-		setPaintingPrefabAsync(slot5, slot0.paintingCode, slot0.paintingFrameName or "chuanwu", function ()
+		setPaintingPrefabAsync(slot8, slot9, slot10, function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-14, warpins: 1 ---
-			Ship.SetExpression(findTF(uv0, "fitter"):GetChild(0), uv1.paintingCode)
+			Ship.SetExpression(findTF(slot0, "fitter"):GetChild(0), slot1.paintingCode)
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1004,7 +1084,7 @@ function slot0.loadPainting(slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-4, warpins: 1 ---
-			uv0.isLoading = false
+			slot0.isLoading = false
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1013,26 +1093,70 @@ function slot0.loadPainting(slot0, slot1)
 
 		end))
 		LeanTween.alphaCanvas(setPaintingPrefabAsync, 1, 0.3):setFrom(0):setUseEstimatedTime(true)
+
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 117-117, warpins: 1 ---
+		slot10 = "chuanwu"
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 118-162, warpins: 2 ---
+		--- END OF BLOCK #2 ---
 
 
 
 	end
 
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 163-171, warpins: 3 ---
+	print("gg")
+
 	slot0.LoadShipVOId = slot0.shipVO.id
 	slot0.LoadPaintingCode = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #8 172-172, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #9 173-173, warpins: 2 ---
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-function slot0.getPaintingFromTable(slot0, slot1)
+slot0.getPaintingFromTable = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-41, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0.tablePainting == nil then
 
 		-- Decompilation error in this vicinity:
@@ -1046,10 +1170,26 @@ function slot0.getPaintingFromTable(slot0, slot1)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 8-12, warpins: 2 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 13-40, warpins: 0 ---
 	for slot5 = 1, #slot0.tablePainting, 1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 13-40, warpins: 2 ---
+		--- BLOCK #0 13-20, warpins: 2 ---
 		if findTF(slot0.tablePainting[slot5], "fitter").childCount == 0 then
 
 			-- Decompilation error in this vicinity:
@@ -1089,21 +1229,37 @@ function slot0.getPaintingFromTable(slot0, slot1)
 		end
 		--- END OF BLOCK #0 ---
 
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 40-40, warpins: 6 ---
+		--- END OF BLOCK #1 ---
+
 
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 41-41, warpins: 1 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
+slot0.loadSkinBg = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-128, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if not slot0.bgEffect then
 
 		-- Decompilation error in this vicinity:
@@ -1115,17 +1271,25 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 6-8, warpins: 2 ---
 	if slot0.shipSkinBg ~= slot1 or slot0.isDesign ~= slot2 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 12-126, warpins: 2 ---
+		--- BLOCK #0 12-16, warpins: 2 ---
 		slot0.shipSkinBg = slot1
 		slot0.isDesign = slot2
 
 		if slot0.isDesign then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 17-41, warpins: 1 ---
+			--- BLOCK #0 17-19, warpins: 1 ---
 			if slot0.designBg and slot0.designName ~= "raritydesign" .. slot0.shipVO:getRarity() then
 
 				-- Decompilation error in this vicinity:
@@ -1139,6 +1303,14 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 
 			end
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 39-41, warpins: 3 ---
 			if not slot0.designBg then
 
 				-- Decompilation error in this vicinity:
@@ -1147,10 +1319,10 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 1-42, warpins: 1 ---
-					uv0.designBg = slot0
-					uv0.designName = "raritydesign" .. uv0.shipVO:getRarity()
+					slot0.designBg = slot0
+					slot0.designName = "raritydesign" .. slot0.shipVO:getRarity()
 
-					slot0.transform:SetParent(uv0._tf, false)
+					slot0.transform:SetParent(slot0._tf, false)
 
 					slot0.transform.localPosition = Vector3(1, 1, 1)
 					slot0.transform.localScale = Vector3(1, 1, 1)
@@ -1178,14 +1350,14 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 
 
 			end
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #1 ---
 
 
 
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 62-119, warpins: 1 ---
+			--- BLOCK #0 62-64, warpins: 1 ---
 			if slot0.designBg then
 
 				-- Decompilation error in this vicinity:
@@ -1197,18 +1369,36 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 
 			end
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 69-72, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 73-119, warpins: 0 ---
 			for slot7 = 1, 5, 1 do
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 73-119, warpins: 2 ---
+				--- BLOCK #0 73-80, warpins: 2 ---
+				slot8 = slot0.shipVO:getRarity()
+
 				if slot0.bgEffect[slot7] then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 81-99, warpins: 1 ---
+					--- BLOCK #0 81-85, warpins: 1 ---
 					slot9 = setActive
 					slot10 = slot0.bgEffect[slot7]
 
-					if slot7 == slot0.shipVO:getRarity() and ShipViewConst.currentPage ~= ShipViewConst.PAGE.REMOULD then
+					if slot7 == slot8 and ShipViewConst.currentPage ~= ShipViewConst.PAGE.REMOULD then
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 93-94, warpins: 1 ---
@@ -1239,8 +1429,16 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 
 					end
 
-					slot9(slot10, slot11)
 					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 98-99, warpins: 3 ---
+					slot9(slot10, slot11)
+					--- END OF BLOCK #1 ---
 
 
 
@@ -1255,10 +1453,10 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 						PoolMgr.GetInstance():GetUI("al_bg02_" .. slot8 - 1, true, function (slot0)
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 1-44, warpins: 1 ---
-							uv0.bgEffect[uv1] = slot0
+							--- BLOCK #0 1-39, warpins: 1 ---
+							slot0.bgEffect[] = slot0
 
-							slot0.transform:SetParent(uv0._tf, false)
+							slot0.transform:SetParent(slot0._tf, false)
 
 							slot0.transform.localPosition = Vector3(0, 0, 0)
 							slot0.transform.localScale = Vector3(1, 1, 1)
@@ -1288,10 +1486,18 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 
 							end
 
+							--- END OF BLOCK #0 ---
+
+							FLOW; TARGET BLOCK #1
+
+
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #1 43-44, warpins: 2 ---
 							slot1(slot2, slot3)
 
 							return
-							--- END OF BLOCK #0 ---
+							--- END OF BLOCK #1 ---
 
 
 
@@ -1308,50 +1514,82 @@ function slot0.loadSkinBg(slot0, slot1, slot2, slot3)
 				end
 				--- END OF BLOCK #0 ---
 
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 118-119, warpins: 5 ---
+				--- END OF BLOCK #1 ---
+
 
 
 			end
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #2 ---
 
 
 
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 120-126, warpins: 3 ---
 		GetSpriteFromAtlasAsync("bg/star_level_bg_" .. slot1, "", function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-15, warpins: 1 ---
-			if not uv0.exited and uv0.shipSkinBg == uv1 then
+			--- BLOCK #0 1-4, warpins: 1 ---
+			if not slot0.exited and slot0.shipSkinBg ==  then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 10-14, warpins: 1 ---
-				setImageSprite(uv0.background, slot0)
+				setImageSprite(slot0.background, slot0)
 				--- END OF BLOCK #0 ---
 
 
 
 			end
 
-			return
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 15-15, warpins: 3 ---
+			return
+			--- END OF BLOCK #1 ---
 
 
 
 		end)
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 127-128, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-function slot0.getInitmacyWords(slot0)
+slot0.getInitmacyWords = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-15, warpins: 1 ---
@@ -1362,18 +1600,44 @@ function slot0.getInitmacyWords(slot0)
 
 end
 
-function slot0.paintView(slot0)
+slot0.paintView = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-196, warpins: 1 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0.character:GetComponent("Image").enabled = false
 	slot0.inPaintingView = true
 	slot1 = {}
+	slot2 = slot0._tf.childCount
+	slot3 = 0
 
-	while slot0._tf.childCount > 0 do
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 14-15, warpins: 2 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 16-41, warpins: 0 ---
+	while slot2 > slot3 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 16-41, warpins: 1 ---
+		--- BLOCK #0 16-16, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 17-25, warpins: 1 ---
 		if slot0._tf:GetChild(slot3).gameObject.activeSelf and slot4 ~= slot0.main and slot4 ~= slot0.background then
 
 			-- Decompilation error in this vicinity:
@@ -1387,17 +1651,68 @@ function slot0.paintView(slot0)
 
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 39-40, warpins: 4 ---
 		slot3 = slot3 + 1
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 41-41, warpins: 4 ---
+		--- END OF BLOCK #3 ---
 
 
 
 	end
 
-	while slot0.main.childCount > 0 do
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 41-43, warpins: 1 ---
+	slot2 = slot0.main.childCount
+	slot3 = 0
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 44-45, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 46-68, warpins: 0 ---
+	while slot2 > slot3 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 46-68, warpins: 1 ---
+		--- BLOCK #0 46-46, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 47-55, warpins: 1 ---
 		if slot0.main:GetChild(slot3).gameObject.activeSelf and slot4 ~= slot0.shipInfo then
 
 			-- Decompilation error in this vicinity:
@@ -1411,17 +1726,49 @@ function slot0.paintView(slot0)
 
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 66-67, warpins: 3 ---
 		slot3 = slot3 + 1
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 68-68, warpins: 3 ---
+		--- END OF BLOCK #3 ---
 
 
 
 	end
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 68-79, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 80-95, warpins: 0 ---
 	for slot8 = 1, tf(pg.UIMgr:GetInstance().OverlayMain).childCount, 1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 80-95, warpins: 2 ---
+		--- BLOCK #0 80-87, warpins: 2 ---
 		if slot4:GetChild(slot8 - 1).gameObject.activeSelf then
 
 			-- Decompilation error in this vicinity:
@@ -1436,10 +1783,26 @@ function slot0.paintView(slot0)
 		end
 		--- END OF BLOCK #0 ---
 
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 95-95, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
 
 
 	end
 
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #8 96-193, warpins: 1 ---
 	slot1[#slot1 + 1] = slot0.chat
 
 	openPortrait()
@@ -1449,16 +1812,15 @@ function slot0.paintView(slot0)
 
 	slot0.mainMask:PerformClipping()
 
-	slot5 = slot0:getPaintingFromTable(false)
-	slot6 = slot5.anchoredPosition.x
-	slot7 = slot5.anchoredPosition.y
+	slot6 = slot0.nowPainting.anchoredPosition.x
+	slot7 = slot0.nowPainting.anchoredPosition.y
 	slot10 = slot0._tf.rect.width / UnityEngine.Screen.width
 	slot11 = slot0._tf.rect.height / UnityEngine.Screen.height
-	slot12 = slot5.rect.width / 2
-	slot13 = slot5.rect.height / 2
+	slot12 = slot0.nowPainting.rect.width / 2
+	slot13 = slot0.nowPainting.rect.height / 2
 	slot14, slot15 = nil
 
-	GetOrAddComponent(slot0.background, "MultiTouchZoom").SetZoomTarget(slot16, slot0.painting)
+	GetOrAddComponent(slot0.background, "MultiTouchZoom").SetZoomTarget(slot16, slot0.nowPainting)
 
 	slot17 = GetOrAddComponent(slot0.background, "EventTriggerListener")
 	slot18 = true
@@ -1467,13 +1829,13 @@ function slot0.paintView(slot0)
 	slot17:AddPointDownFunc(function (slot0)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-19, warpins: 1 ---
+		--- BLOCK #0 1-4, warpins: 1 ---
 		if Input.touchCount == 1 or Application.isEditor then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 9-11, warpins: 2 ---
-			uv0 = true
-			uv1 = true
+			slot0 = true
+			slot1 = true
 			--- END OF BLOCK #0 ---
 
 
@@ -1486,8 +1848,8 @@ function slot0.paintView(slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 17-18, warpins: 1 ---
-				uv1 = false
-				uv0 = false
+				slot1 = false
+				slot0 = false
 				--- END OF BLOCK #0 ---
 
 
@@ -1499,8 +1861,16 @@ function slot0.paintView(slot0)
 
 		end
 
-		return
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 19-19, warpins: 3 ---
+		return
+		--- END OF BLOCK #1 ---
 
 
 
@@ -1508,20 +1878,28 @@ function slot0.paintView(slot0)
 	slot17:AddPointUpFunc(function (slot0)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-7, warpins: 1 ---
+		--- BLOCK #0 1-5, warpins: 1 ---
 		if Input.touchCount <= 2 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 6-6, warpins: 1 ---
-			uv0 = true
+			slot0 = true
 			--- END OF BLOCK #0 ---
 
 
 
 		end
 
-		return
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 7-7, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
 
 
 
@@ -1529,10 +1907,9 @@ function slot0.paintView(slot0)
 	slot17:AddBeginDragFunc(function (slot0, slot1)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-36, warpins: 1 ---
-		uv0 = false
-		uv1 = slot1.position.x * uv2 - uv3 - tf(uv4:getPaintingFromTable(false)).localPosition.x
-		uv5 = slot1.position.y * uv6 - uv7 - tf(uv4:getPaintingFromTable(false)).localPosition.y
+		--- BLOCK #0 1-30, warpins: 1 ---
+		slot0 = false
+		slot5 = slot1.position.x *  - slot1.position.x - tf(slot4.nowPainting).localPosition.x.position.y * slot6 - slot7 - tf(slot4.nowPainting.nowPainting).localPosition.y
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1543,21 +1920,28 @@ function slot0.paintView(slot0)
 	slot17:AddDragFunc(function (slot0, slot1)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-39, warpins: 1 ---
-		if uv0 then
+		--- BLOCK #0 1-3, warpins: 1 ---
+		if slot0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 4-38, warpins: 1 ---
-			slot2 = tf(uv1:getPaintingFromTable(false)).localPosition
-			tf(uv1:getPaintingFromTable(false)).localPosition = Vector3(slot1.position.x * uv2 - uv3 - uv4, slot1.position.y * uv5 - uv6 - uv7, -22)
+			--- BLOCK #0 4-32, warpins: 1 ---
+			tf(slot1.nowPainting).localPosition = Vector3(slot1.position.x * slot2 - slot3 - slot4, slot1.position.y * slot5 -  - slot1.position.y * slot5, -22)
 			--- END OF BLOCK #0 ---
 
 
 
 		end
 
-		return
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 33-33, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
 
 
 
@@ -1566,7 +1950,7 @@ function slot0.paintView(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-5, warpins: 1 ---
-		uv0:hidePaintView()
+		slot0:hidePaintView()
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1575,11 +1959,11 @@ function slot0.paintView(slot0)
 
 	end, SFX_CANCEL)
 
-	function uv0.hidePaintView(slot0, slot1)
+	slot0.hidePaintView = function (slot0, slot1)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-93, warpins: 1 ---
-		if not slot1 and not uv0 then
+		--- BLOCK #0 1-2, warpins: 1 ---
+		if not slot1 and not slot0 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 6-6, warpins: 1 ---
@@ -1590,37 +1974,69 @@ function slot0.paintView(slot0)
 
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 7-37, warpins: 3 ---
 		slot0.character:GetComponent("Image").enabled = true
 		Input.multiTouchEnabled = false
 
 		setActive(slot0.common, true)
-		SwitchPanel(slot0.shipInfo, -460, nil, uv1 * 2)
+		SwitchPanel(slot0.shipInfo, -460, nil, slot1 * 2)
 
-		uv2.enabled = false
-		uv3.enabled = false
+		SwitchPanel.enabled = false
+		false.enabled = false
 
-		for slot5, slot6 in ipairs(uv4) do
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 38-43, warpins: 0 ---
+		for slot5, slot6 in ipairs(slot4) do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 38-43, warpins: 1 ---
+			--- BLOCK #0 38-41, warpins: 1 ---
 			setActive(slot6, true)
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 42-43, warpins: 2 ---
+			--- END OF BLOCK #1 ---
 
 
 
 		end
 
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 44-84, warpins: 1 ---
 		closePortrait()
 
-		slot0:getPaintingFromTable(false).localScale = Vector3(1, 1, 1)
+		slot0.nowPainting.localScale = Vector3(1, 1, 1)
 
-		setAnchoredPosition(slot0:getPaintingFromTable(false), {
-			x = uv5,
-			y = uv6
+		setAnchoredPosition(slot0.nowPainting, {
+			x = 1,
+			y = 1
 		})
 
 		slot0.background:GetComponent("Button").enabled = false
-		slot0:getPaintingFromTable(false):GetComponent("CanvasGroup").blocksRaycasts = true
+		slot0.nowPainting:GetComponent("CanvasGroup").blocksRaycasts = true
 		slot0.mainMask.enabled = true
 
 		slot0.mainMask:PerformClipping()
@@ -1628,20 +2044,20 @@ function slot0.paintView(slot0)
 		slot0.inPaintingView = false
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
 
 
 
 	end
 
-	SwitchPanel(slot0.shipInfo, uv2, nil, uv1 * 2):setOnComplete(System.Action(function ()
+	SwitchPanel(slot0.shipInfo, slot2, nil, slot1 * 2):setOnComplete(System.Action(function ()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-26, warpins: 1 ---
-		uv0.enabled = true
-		uv1.enabled = true
-		uv2.background:GetComponent("Button").enabled = true
-		uv2:getPaintingFromTable(false):GetComponent("CanvasGroup").blocksRaycasts = false
+		--- BLOCK #0 1-23, warpins: 1 ---
+		slot0.enabled = true
+		true.enabled = true
+		slot2.background:GetComponent("Button").enabled = true
+		slot2.nowPainting:GetComponent("CanvasGroup").blocksRaycasts = false
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1651,16 +2067,16 @@ function slot0.paintView(slot0)
 	end))
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-58, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0.inUpgradeAnim then
 
 		-- Decompilation error in this vicinity:
@@ -1672,6 +2088,14 @@ function slot0.onBackPressed(slot0)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-7, warpins: 2 ---
 	if slot0.awakenPlay then
 
 		-- Decompilation error in this vicinity:
@@ -1683,6 +2107,14 @@ function slot0.onBackPressed(slot0)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 9-12, warpins: 2 ---
 	if slot0.shipChangeNameView.isOpenRenamePanel then
 
 		-- Decompilation error in this vicinity:
@@ -1696,6 +2128,14 @@ function slot0.onBackPressed(slot0)
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 20-23, warpins: 2 ---
 	if slot0.shipCustomMsgBox.isShowCustomMsgBox then
 
 		-- Decompilation error in this vicinity:
@@ -1709,6 +2149,14 @@ function slot0.onBackPressed(slot0)
 
 	end
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 30-33, warpins: 2 ---
 	if slot0.shipHuntingRangeView.onSelected then
 
 		-- Decompilation error in this vicinity:
@@ -1722,6 +2170,14 @@ function slot0.onBackPressed(slot0)
 
 	end
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 40-42, warpins: 2 ---
 	if slot0.inPaintingView then
 
 		-- Decompilation error in this vicinity:
@@ -1735,20 +2191,28 @@ function slot0.onBackPressed(slot0)
 
 	end
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 48-58, warpins: 2 ---
 	playSoundEffect(SFX_CANCEL)
 	triggerButton(slot0:findTF("top/back_btn", slot0.common))
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-180, warpins: 1 ---
+	--- BLOCK #0 1-24, warpins: 1 ---
 	Input.multiTouchEnabled = true
 
 	pg.UIMgr.GetInstance():UnOverlayPanel(slot0.chat, slot0.character)
@@ -1766,6 +2230,14 @@ function slot0.willExit(slot0)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 33-58, warpins: 2 ---
 	slot0.intensifyToggle:GetComponent("Toggle").onValueChanged:RemoveAllListeners()
 	slot0.upgradeToggle:GetComponent("Toggle").onValueChanged:RemoveAllListeners()
 	LeanTween.cancel(slot0.chat.gameObject)
@@ -1773,11 +2245,19 @@ function slot0.willExit(slot0)
 	if slot0.paintingCode then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 59-87, warpins: 1 ---
+		--- BLOCK #0 59-63, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 64-80, warpins: 0 ---
 		for slot4 = 1, #slot0.tablePainting, 1 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 64-80, warpins: 2 ---
+			--- BLOCK #0 64-73, warpins: 2 ---
 			if LeanTween.isTweening(go(slot0.tablePainting[slot4])) then
 
 				-- Decompilation error in this vicinity:
@@ -1790,17 +2270,41 @@ function slot0.willExit(slot0)
 			end
 			--- END OF BLOCK #0 ---
 
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 80-80, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
 
 
 		end
 
-		retPaintingPrefab(slot0:getPaintingFromTable(false), slot0.paintingCode)
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 81-84, warpins: 1 ---
+		retPaintingPrefab(slot0.nowPainting, slot0.paintingCode)
+		--- END OF BLOCK #2 ---
 
 
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 85-114, warpins: 2 ---
 	slot0.shipDetailView:Destroy()
 	slot0.shipFashionView:Destroy()
 	slot0.shipEquipView:Destroy()
@@ -1812,7 +2316,7 @@ function slot0.willExit(slot0)
 	if slot0.energyTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 118-123, warpins: 1 ---
+		--- BLOCK #0 115-120, warpins: 1 ---
 		slot0.energyTimer:Stop()
 
 		slot0.energyTimer = nil
@@ -1822,10 +2326,18 @@ function slot0.willExit(slot0)
 
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 121-123, warpins: 2 ---
 	if slot0.chatTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 127-132, warpins: 1 ---
+		--- BLOCK #0 124-129, warpins: 1 ---
 		slot0.chatTimer:Stop()
 
 		slot0.chatTimer = nil
@@ -1835,10 +2347,18 @@ function slot0.willExit(slot0)
 
 	end
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 130-132, warpins: 2 ---
 	if slot0._currentVoice then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 136-140, warpins: 1 ---
+		--- BLOCK #0 133-137, warpins: 1 ---
 		slot0._currentVoice:Stop(true)
 		--- END OF BLOCK #0 ---
 
@@ -1846,12 +2366,20 @@ function slot0.willExit(slot0)
 
 	end
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 138-142, warpins: 2 ---
 	slot0._currentVoice = nil
 
 	if slot0.loadedCVBankName then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 146-152, warpins: 1 ---
+		--- BLOCK #0 143-149, warpins: 1 ---
 		pg.CriMgr.UnloadCVBank(slot0.loadedCVBankName)
 
 		slot0.loadedCVBankName = nil
@@ -1861,12 +2389,20 @@ function slot0.willExit(slot0)
 
 	end
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 150-155, warpins: 2 ---
 	cameraPaintViewAdjust(false)
 
 	if slot0.tweens then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 159-161, warpins: 1 ---
+		--- BLOCK #0 156-158, warpins: 1 ---
 		cancelTweens(slot0.tweens)
 		--- END OF BLOCK #0 ---
 
@@ -1874,10 +2410,18 @@ function slot0.willExit(slot0)
 
 	end
 
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 159-161, warpins: 2 ---
 	if slot0.scrollTxt then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 165-168, warpins: 1 ---
+		--- BLOCK #0 162-165, warpins: 1 ---
 		slot0.scrollTxt:destroy()
 		--- END OF BLOCK #0 ---
 
@@ -1885,12 +2429,20 @@ function slot0.willExit(slot0)
 
 	end
 
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #8 166-177, warpins: 2 ---
 	pg.UIMgr.GetInstance():UnOverlayPanel(slot0.blurPanel, slot0._tf)
 
 	slot0.shareData = nil
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #8 ---
 
 
 

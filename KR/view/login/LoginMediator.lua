@@ -3,42 +3,45 @@ slot0.ON_LOGIN = "LoginMediator:ON_LOGIN"
 slot0.ON_REGISTER = "LoginMediator:ON_REGISTER"
 slot0.ON_SERVER = "LoginMediator:ON_SERVER"
 
-function slot0.register(slot0)
-	slot0:bind(uv0.ON_LOGIN, function (slot0, slot1)
-		uv0:sendNotification(GAME.USER_LOGIN, slot1)
+slot0.register = function (slot0)
+	slot0:bind(slot0.ON_LOGIN, function (slot0, slot1)
+		slot0:sendNotification(GAME.USER_LOGIN, slot1)
 	end)
-	slot0:bind(uv0.ON_REGISTER, function (slot0, slot1)
-		uv0:sendNotification(GAME.USER_REGISTER, slot1)
+	slot0:bind(slot0.ON_REGISTER, function (slot0, slot1)
+		slot0:sendNotification(GAME.USER_REGISTER, slot1)
 	end)
-	slot0:bind(uv0.ON_SERVER, function (slot0, slot1)
-		uv0:sendNotification(GAME.SERVER_LOGIN, slot1)
+	slot0:bind(slot0.ON_SERVER, function (slot0, slot1)
+		slot0:sendNotification(GAME.SERVER_LOGIN, slot1)
 	end)
 
 	slot1 = getProxy(SettingsProxy)
 	slot0.process = coroutine.wrap(function ()
-		if not uv0:getUserAgreement() then
-			uv0:setUserAgreement()
+		if not slot0:getUserAgreement() then
+			slot0:setUserAgreement()
 		end
 
 		slot0 = nil
 
 		if isPlatform() then
 			if isTencent() then
-				uv1.viewComponent:switchToTencentLogin()
+				slot1.viewComponent:switchToTencentLogin()
 			else
-				uv1.viewComponent:switchToServer()
+				slot1.viewComponent:switchToServer()
 			end
 		else
-			uv1.viewComponent:switchToLogin()
-			uv1.viewComponent:setLastLogin(getProxy(UserProxy).getLastLoginUser(slot1))
+			slot1.viewComponent:switchToLogin()
+
+			slot1 = getProxy(UserProxy)
+
+			slot1.viewComponent:setLastLogin(slot1:getLastLoginUser())
 		end
 
-		uv1:CheckMaintain()
+		slot1:CheckMaintain()
 		coroutine.yield()
 
-		if uv1.contextData.code then
-			if uv1.contextData.code ~= 0 then
-				pg.MsgboxMgr.GetInstance():ShowMsgBox({
+		if coroutine.yield.contextData.code then
+			if slot1.contextData.code ~= 0 then
+				slot1(pg.MsgboxMgr.GetInstance(), {
 					modal = true,
 					hideNo = true,
 					content = ({
@@ -50,7 +53,7 @@ function slot0.register(slot0)
 						i18n("login_loginMediator_serverLoginErro"),
 						i18n("login_loginMediator_vertifyFail"),
 						[99] = i18n("login_loginMediator_dataExpired")
-					})[uv1.contextData.code] or i18n("login_loginMediator_kickUndefined", uv1.contextData.code)
+					})[slot1.contextData.code] or i18n("login_loginMediator_kickUndefined", slot1.contextData.code)
 				})
 			end
 
@@ -61,55 +64,55 @@ function slot0.register(slot0)
 					slot0.arg2 = ""
 				end
 
-				uv1.viewComponent:setLastLogin(slot0)
+				slot1.viewComponent:setLastLogin(slot0)
 			end
 		else
-			uv1.viewComponent:setAutoLogin()
+			slot1.viewComponent:setAutoLogin()
 		end
 
-		if uv1.contextData.loginPlatform then
+		if slot1.contextData.loginPlatform then
 			pg.SDKMgr:GetInstance():login(0)
 		elseif isTencent() then
 			pg.SDKMgr:GetInstance():tryTencLogin()
 		end
 
-		uv1.viewComponent:autoLogin()
+		slot1.viewComponent:autoLogin()
 	end)
 
 	slot0.process()
 end
 
-function slot0.CheckMaintain(slot0)
+slot0.CheckMaintain = function (slot0)
 	slot1 = -1
 	slot2 = 0
 	slot3 = 1
 	slot4 = 2
 
 	VersionMgr.Inst:GetServerState(function (slot0)
-		if slot0 == uv0 then
+		if slot0 == slot0 then
 			pg.MsgboxMgr:GetInstance():ShowMsgBox({
 				content = i18n("login_loginMediator_kickServerClose"),
 				onNo = function ()
-					uv0.process()
+					slot0.process()
 				end,
 				onYes = function ()
-					uv0.process()
+					slot0.process()
 				end
 			})
-		elseif slot0 == uv2 then
+		elseif slot0 == slot2 then
 			print("All servers working well. thanks God.")
-			uv1.process()
-		elseif slot0 == uv3 then
+			print.process()
+		elseif slot0 == slot3 then
 			print("Check server maintain state failed. but it doesnt matter. keep going.")
-			uv1.process()
+			print.process()
 		else
 			print("no servers working. anyway. you should have a try. ")
-			uv1.process()
+			print.process()
 		end
 	end)
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		GAME.USER_LOGIN_SUCCESS,
 		GAME.USER_LOGIN_FAILED,
@@ -125,9 +128,11 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
+	slot3 = slot1:getBody()
+
 	if slot1:getName() == ServerProxy.SERVERS_UPDATED then
-		slot0.viewComponent:updateServerList(slot1:getBody())
+		slot0.viewComponent:updateServerList(slot3)
 	elseif slot2 == GAME.USER_LOGIN_SUCCESS then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("login_loginMediator_loginSuccess"))
 		slot0.viewComponent:setLastLoginServer(slot5)
@@ -145,7 +150,7 @@ function slot0.handleNotification(slot0, slot1)
 			hideNo = true,
 			content = i18n("login_loginMediator_quest_RegisterSuccess"),
 			onYes = function ()
-				uv0:sendNotification(GAME.USER_LOGIN, uv1)
+				slot0:sendNotification(GAME.USER_LOGIN, slot0)
 			end
 		})
 	elseif slot2 == GAME.SERVER_LOGIN_SUCCESS then
@@ -154,7 +159,6 @@ function slot0.handleNotification(slot0, slot1)
 				system = SYSTEM_PROLOGUE
 			})
 		else
-			slot0:blockEvents()
 			slot0.facade:sendNotification(GAME.LOAD_PLAYER_DATA, {
 				id = slot3.uid
 			})
@@ -171,16 +175,16 @@ function slot0.handleNotification(slot0, slot1)
 			hideNo = true,
 			content = errorTip("login_loginMediator_userLoginFail_error", slot3),
 			onYes = function ()
-				if uv0 == 20 then
-					uv1.viewComponent:switchToRegister()
-				elseif uv0 == 3 or uv0 == 6 then
-					uv1.viewComponent:switchToServer()
-				elseif uv0 == 1 or uv0 == 9 or uv0 == 11 or uv0 == 12 then
-					uv1.viewComponent:switchToLogin()
+				if slot0 == 20 then
+					slot1.viewComponent:switchToRegister()
+				elseif slot0 == 3 or slot0 == 6 then
+					slot1.viewComponent:switchToServer()
+				elseif slot0 == 1 or slot0 == 9 or slot0 == 11 or slot0 == 12 then
+					slot1.viewComponent:switchToLogin()
 				elseif isPlatform() then
-					uv1.viewComponent:switchToServer()
+					slot1.viewComponent:switchToServer()
 				else
-					uv1.viewComponent:switchToLogin()
+					slot1.viewComponent:switchToLogin()
 				end
 			end
 		})
@@ -191,9 +195,9 @@ function slot0.handleNotification(slot0, slot1)
 			content = errorTip("login_loginMediator_serverLoginFail", slot3),
 			onYes = function ()
 				if isPlatform() then
-					uv0.viewComponent:switchToServer()
+					slot0.viewComponent:switchToServer()
 				else
-					uv0.viewComponent:switchToLogin()
+					slot0.viewComponent:switchToLogin()
 				end
 			end
 		})

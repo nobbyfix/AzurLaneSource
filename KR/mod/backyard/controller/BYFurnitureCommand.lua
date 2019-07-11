@@ -3,8 +3,10 @@ class("BYFurnitureCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		return
 	end
 
+	slot4 = getBackYardProxy(BackYardHouseProxy)
+
 	if slot2.name == BACKYARD.FURNITURE_ADD then
-		getBackYardProxy(BackYardHouseProxy):addFurniture(BackyardFurnitureVO.New(slot2.furniture), slot2.callback)
+		slot4:addFurniture(BackyardFurnitureVO.New(slot2.furniture), slot2.callback)
 	elseif slot3 == BACKYARD.CLEAR_FURNITURE then
 		slot4:removeAllFurniture()
 		slot4:removePaper()
@@ -18,7 +20,10 @@ class("BYFurnitureCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			pg.backyard:sendNotification(BACKYARD.REMOVE_ITEM, Clone(slot6))
 
 			if slot6:hasStageShip() then
-				for slot14, slot15 in pairs(slot6:getStageShip() or {}) do
+				slot11 = pairs
+				slot12 = slot6:getStageShip() or {}
+
+				for slot14, slot15 in slot11(slot12) do
 					slot16 = nil
 					slot17 = slot6:getPosition()
 					slot18 = slot8:getShipPosById(slot15)
@@ -64,9 +69,10 @@ class("BYFurnitureCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 
 			if slot7 then
 				slot11 = slot4:getFurnitureById(slot7)
+				slot12 = slot11:getPosition()
 
 				if slot11.dir == 2 then
-					slot11.child[slot8.id] = Vector2(slot6.y - slot11:getPosition().y, slot6.x - slot11.getPosition().x)
+					slot11.child[slot8.id] = Vector2(slot6.y - slot12.y, slot6.x - slot12.x)
 				else
 					slot11.child[slot8.id] = Vector2(slot6.x - slot12.x, slot6.y - slot12.y)
 				end
@@ -78,7 +84,10 @@ class("BYFurnitureCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			slot11(slot8)
 
 			if slot8:hasStageShip() then
-				for slot16, slot17 in pairs(slot8:getStageShip() or {}) do
+				slot13 = pairs
+				slot14 = slot8:getStageShip() or {}
+
+				for slot16, slot17 in slot13(slot14) do
 					slot4:changeShipPos(slot17, Vector2(slot6.x + Vector2(slot10:getShipPosById(slot17).x - slot9.x, slot10.getShipPosById(slot17).y - slot9.y).x, slot6.y + Vector2(slot10.getShipPosById(slot17).x - slot9.x, slot10.getShipPosById(slot17).y - slot9.y).y))
 				end
 			end
@@ -91,7 +100,7 @@ class("BYFurnitureCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 				pg.MsgboxMgr.GetInstance():ShowMsgBox({
 					content = i18n("backyard_ship_on_furnitrue"),
 					onYes = function ()
-						uv0:removeFurniture(uv1)
+						slot0:removeFurniture(slot0)
 					end
 				})
 			else
@@ -103,6 +112,7 @@ class("BYFurnitureCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 				tip = slot2.tip
 			})
 			slot4:clearPreRecord()
+			slot4:checkEffect()
 		elseif slot3 == BACKYARD.REPALCE_PAPER then
 			slot4:replacePaper(slot2.furniture)
 		elseif slot3 == BACKYARD.OPEN_DECORATION then
@@ -123,6 +133,8 @@ class("BYFurnitureCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			elseif slot5 == 4 then
 				slot4:removeFloorPaper()
 			end
+		elseif slot3 == BACKYARD.CHECK_EFFECT then
+			slot4:checkEffect()
 		end
 	end
 end

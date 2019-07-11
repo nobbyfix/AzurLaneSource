@@ -10,21 +10,21 @@ slot0.GUILD_BOSS = 7
 slot0.ACT_EXTRA = 8
 slot0.ESCORT = 9
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.configId = slot1.id
 	slot0.id = slot0.configId
 	slot0.chapters = slot1.chapters or {}
 	slot0.unlock = false
 end
 
-function slot0.bindConfigTable(slot0)
+slot0.bindConfigTable = function (slot0)
 	return pg.expedition_data_by_map
 end
 
-function slot0.isInValidMap(slot0)
+slot0.isInValidMap = function (slot0)
 	slot1 = slot0:getMapType()
 
-	if not slot0:isRemaster() and (slot1 == uv0.ACTIVITY_EASY or slot1 == uv0.ACTIVITY_HARD or uv0.ACT_EXTRA == slot1) then
+	if not slot0:isRemaster() and (slot1 == slot0.ACTIVITY_EASY or slot1 == slot0.ACTIVITY_HARD or slot0.ACT_EXTRA == slot1) then
 		if slot0:getConfig("on_activity") == 0 then
 			return true
 		end
@@ -35,55 +35,55 @@ function slot0.isInValidMap(slot0)
 	end
 end
 
-function slot0.setUnlock(slot0, slot1)
+slot0.setUnlock = function (slot0, slot1)
 	slot0.unlock = slot1
 end
 
-function slot0.isUnlock(slot0)
+slot0.isUnlock = function (slot0)
 	return slot0.unlock
 end
 
-function slot0.setRemaster(slot0, slot1)
+slot0.setRemaster = function (slot0, slot1)
 	slot0.remasterId = slot1
 end
 
-function slot0.isRemaster(slot0)
+slot0.isRemaster = function (slot0)
 	return slot0.remasterId ~= nil
 end
 
-function slot0.getMapType(slot0)
+slot0.getMapType = function (slot0)
 	return slot0:getConfig("type")
 end
 
-function slot0.getMapTitleNumber(slot0)
+slot0.getMapTitleNumber = function (slot0)
 	return slot0:getConfig("title")
 end
 
-function slot0.setBindMapVO(slot0, slot1)
+slot0.setBindMapVO = function (slot0, slot1)
 	slot0.bindingMap = slot1
 end
 
-function slot0.getBindMap(slot0)
+slot0.getBindMap = function (slot0)
 	return slot0:getConfig("bind_map")
 end
 
-function slot0.updateChapter(slot0, slot1)
+slot0.updateChapter = function (slot0, slot1)
 	slot0.chapters[slot1.id] = slot1
 end
 
-function slot0.removeChapter(slot0, slot1)
+slot0.removeChapter = function (slot0, slot1)
 	slot0.chapters[slot1] = nil
 end
 
-function slot0.getChapters(slot0)
+slot0.getChapters = function (slot0)
 	return slot0.chapters
 end
 
-function slot0.getChapter(slot0, slot1)
+slot0.getChapter = function (slot0, slot1)
 	return slot0.chapters[slot1]
 end
 
-function slot0.getActiveChapter(slot0)
+slot0.getActiveChapter = function (slot0)
 	for slot4, slot5 in pairs(slot0.chapters) do
 		if slot5.active then
 			return slot5
@@ -91,21 +91,25 @@ function slot0.getActiveChapter(slot0)
 	end
 end
 
-function slot0.updateChapters(slot0, slot1)
+slot0.updateChapters = function (slot0, slot1)
 	for slot5, slot6 in pairs(slot0.chapters) do
 		if slot6:getConfig("pre_chapter") == 0 then
 			slot6:setUnlock(true)
-		elseif not slot0:isRemaster() and slot6:getConfig("act_id") > 0 then
-			slot6:setUnlock(getProxy(ActivityProxy):getActivityById(slot6.getConfig("act_id")) and not slot10:isEnd() and getProxy(ChapterProxy):getChapterById(slot7):isClear())
-		elseif not slot0.chapters[slot7] then
-			slot6:setUnlock(slot1 and slot1:isClear())
 		else
-			slot6:setUnlock(slot9:isClear())
+			slot8 = slot6:getConfig("act_id")
+
+			if not slot0:isRemaster() and slot8 > 0 then
+				slot6:setUnlock(getProxy(ActivityProxy):getActivityById(slot8) and not slot10:isEnd() and getProxy(ChapterProxy):getChapterById(slot7):isClear())
+			elseif not slot0.chapters[slot7] then
+				slot6:setUnlock(slot1 and slot1:isClear())
+			else
+				slot6:setUnlock(slot9:isClear())
+			end
 		end
 	end
 end
 
-function slot0.isClear(slot0)
+slot0.isClear = function (slot0)
 	for slot4, slot5 in pairs(slot0.chapters) do
 		if not slot5:isClear() then
 			return false
@@ -115,10 +119,24 @@ function slot0.isClear(slot0)
 	return true
 end
 
-function slot0.isEliteEnabled(slot0)
+slot0.isEliteEnabled = function (slot0)
 	slot1 = nil
 
-	for slot5, slot6 in pairs((slot0:getMapType() ~= uv0.ELITE or slot0.bindingMap.chapters) and slot0.chapters) do
+	if slot0:getMapType() == slot0.ELITE then
+		if not slot0.bindingMap then
+			return false
+		end
+
+		if not slot0.bindingMap.bindingMap then
+			return false
+		end
+
+		slot1 = slot0.bindingMap.chapters
+	else
+		slot1 = slot0.chapters
+	end
+
+	for slot5, slot6 in pairs(slot1) do
 		if not slot6:isClear() or not slot6:isAllAchieve() then
 			return false
 		end
@@ -127,20 +145,17 @@ function slot0.isEliteEnabled(slot0)
 	return true
 end
 
-function slot0.isAnyChapterUnlocked(slot0)
+slot0.isAnyChapterUnlocked = function (slot0)
 	return _.any(_.values(slot0.chapters), function (slot0)
 		return slot0:isUnlock()
 	end)
 end
 
-slot0.SINGLE_MAP = 1
-slot0.MUTIL_MAP = 2
-
-function slot0.isActivity(slot0)
+slot0.isActivity = function (slot0)
 	return slot0:getConfig("type") == Map.EVENT or slot1 == Map.ACTIVITY_HARD or slot1 == Map.ACTIVITY_EASY or slot1 == Map.ACT_EXTRA
 end
 
-function slot0.isClearForActivity(slot0)
+slot0.isClearForActivity = function (slot0)
 	for slot4, slot5 in pairs(slot0.chapters) do
 		if not slot5:isClear() then
 			return false
@@ -150,34 +165,33 @@ function slot0.isClearForActivity(slot0)
 	return true
 end
 
-function slot0.isActExtra(slot0)
-	return slot0:getConfig("type") == uv0.ACT_EXTRA
+slot0.isActExtra = function (slot0)
+	return slot0:getConfig("type") == slot0.ACT_EXTRA
 end
 
-function slot0.isGuildBoss(slot0)
+slot0.isGuildBoss = function (slot0)
 	return slot0:getConfig("type") == Map.GUILD_BOSS
 end
 
-function slot0.isSham(slot0)
+slot0.isSham = function (slot0)
 	return slot0:getConfig("type") == Map.SHAM
 end
 
-function slot0.isEscort(slot0)
+slot0.isEscort = function (slot0)
 	return slot0:getConfig("type") == Map.ESCORT
 end
 
-function slot0.existHardMap(slot0)
+slot0.existHardMap = function (slot0)
 	slot1 = 10
+	slot2 = slot0:getConfigTable()
 
-	if slot0:getConfigTable() ~= nil then
-		while slot0.getConfigTable() ~= nil and slot1 > 0 do
-			if slot2.type == uv0.ACTIVITY_HARD or slot2.type == uv0.ELITE then
-				return true
-			end
-
-			slot2 = pg.expedition_data_by_map[slot2.bind_map]
-			slot1 = slot1 - 1
+	while slot2 ~= nil and slot1 > 0 do
+		if slot2.type == slot0.ACTIVITY_HARD or slot2.type == slot0.ELITE then
+			return true
 		end
+
+		slot2 = pg.expedition_data_by_map[slot2.bind_map]
+		slot1 = slot1 - 1
 	end
 
 	return false
