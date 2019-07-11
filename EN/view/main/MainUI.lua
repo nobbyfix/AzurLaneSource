@@ -351,17 +351,13 @@ slot0.updateTraningCampBtn = function (slot0)
 	slot4 = false
 
 	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_GUIDE_TASKS) and not slot1:isEnd() then
-		print("+++++++++++" .. tostring(slot1:getConfig("config_data")[1]))
-		print(getProxy(ChapterProxy):getChapterById(slot5))
-
-		slot3 = getProxy(ChapterProxy).getChapterById(slot5) and slot6:isClear()
+		slot3 = getProxy(ChapterProxy):getChapterById(slot1:getConfig("config_data")[1]) and slot6:isClear()
 		slot8 = getProxy(TaskProxy)
 		slot4 = _.any(_.flatten(slot1:getConfig("config_data")[3]), function (slot0)
 			return slot0:getTaskById(slot0) and slot1:isFinish() and not slot1:isReceive()
 		end)
 	end
 
-	print("=========== " .. tostring(slot2) .. tostring(slot3))
 	setActive(slot0.traingCampBtn:Find("xinshou01"), slot4)
 
 	slot0.openTraningCamp = slot2 and slot3
@@ -608,8 +604,11 @@ slot0.onBackPressed = function (slot0)
 	if slot0._currentState == slot0.STATE_ALL_HIDE then
 		slot0:switchForm(slot0.STATE_MAIN)
 	else
-		BilibiliSdkMgr.inst:onBackPressed()
 		pg.PushNotificationMgr.GetInstance():PushAll()
+
+		if PLATFORM_CODE == PLATFORM_US then
+			PressBack()
+		end
 	end
 end
 

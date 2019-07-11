@@ -6,16 +6,17 @@ slot0.RECOVER_UP_TWELVE_HOUR = 12
 slot0.INIT_POINT = pg.arena_data_rank[1].point
 slot0.ONE_SEASON_TIME = 1209600
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.score = slot1.score or 0
 	slot0.rank = slot1.rank
 	slot0.fightCount = slot1.fight_count
 	slot0.resetTime = slot1.fight_count_reset_time
 	slot0.flashTargetCount = slot1.flash_target_count + 1
-	slot0.score = slot0.score + uv0.INIT_POINT
+	slot0.score = slot0.score + slot0.INIT_POINT
+	slot2 = {}
 
 	for slot6, slot7 in ipairs(slot1.vanguard_ship_id_list) do
-		table.insert({}, slot7)
+		table.insert(slot2, slot7)
 	end
 
 	for slot6, slot7 in ipairs(slot1.main_ship_id_list) do
@@ -34,69 +35,72 @@ function slot0.Ctor(slot0, slot1)
 	slot0.preRivals = slot0.rivals
 end
 
-function slot0.getFlashCount(slot0)
+slot0.getFlashCount = function (slot0)
 	return slot0.flashTargetCount
 end
 
-function slot0.increaseFlashCount(slot0)
+slot0.increaseFlashCount = function (slot0)
 	slot0.flashTargetCount = slot0.flashTargetCount + 1
 end
 
-function slot0.resetFlashCount(slot0)
+slot0.resetFlashCount = function (slot0)
 	slot0.flashTargetCount = 0
 end
 
-function slot0.getconsumeGem(slot0)
+slot0.getconsumeGem = function (slot0)
 	return slot0.getMilitaryRank(slot0.score, slot0.rank).refresh_price[slot0.flashTargetCount] or slot1.refresh_price[#slot1.refresh_price]
 end
 
-function slot0.updateRank(slot0, slot1)
+slot0.updateRank = function (slot0, slot1)
 	slot0.rank = slot1
 end
 
-function slot0.updateScore(slot0, slot1)
+slot0.updateScore = function (slot0, slot1)
 	slot0.score = slot1
 end
 
-function slot0.getRivals(slot0)
+slot0.getRivals = function (slot0)
 	return Clone(slot0.rivals)
 end
 
-function slot0.updateRivals(slot0, slot1)
+slot0.updateRivals = function (slot0, slot1)
 	slot0.preRivals = slot0.rivals
 	slot0.rivals = slot1
 end
 
-function slot0.updateFleet(slot0, slot1)
+slot0.updateFleet = function (slot0, slot1)
 	slot0.fleet = slot1
 end
 
-function slot0.canExercise(slot0)
+slot0.canExercise = function (slot0)
 	return slot0.fightCount > 0
 end
 
-function slot0.reduceExerciseCount(slot0)
+slot0.reduceExerciseCount = function (slot0)
 	slot0.fightCount = slot0.fightCount - 1
 end
 
-function slot0.updateExerciseCount(slot0, slot1)
-	slot0.fightCount = math.min(slot0.fightCount + slot1, uv0.MAX_FIGHTCOUNT)
+slot0.updateExerciseCount = function (slot0, slot1)
+	slot0.fightCount = math.min(slot0.fightCount + slot1, slot0.MAX_FIGHTCOUNT)
 end
 
-function slot0.setExerciseCount(slot0, slot1)
+slot0.setExerciseCount = function (slot0, slot1)
 	slot0.fightCount = slot1
 end
 
-function slot0.updateResetTime(slot0, slot1)
+slot0.updateResetTime = function (slot0, slot1)
 	slot0.resetTime = slot1
 end
 
-function slot0.getMilitaryRank(slot0, slot1)
+slot0.getMilitaryRank = function (slot0, slot1)
 	slot2 = nil
 
 	for slot7 = #pg.arena_data_rank.all, 1, -1 do
+		slot9 = slot3[slot3.all[slot7]].point
+		slot10 = slot3[slot3.all[slot7]].order
+
 		if slot3[slot3.all[slot7]].order ~= 0 then
-			if slot1 <= slot3[slot3.all[slot7]].order and slot3[slot3.all[slot7]].point <= slot0 then
+			if slot1 <= slot10 and slot9 <= slot0 then
 				slot2 = slot3[slot8]
 
 				break
@@ -111,35 +115,31 @@ function slot0.getMilitaryRank(slot0, slot1)
 	return slot2 or slot3[slot3.all[1]]
 end
 
-function slot0.getNextMilitaryRank(slot0, slot1)
-	return pg.arena_data_rank[uv0.getMilitaryRank(slot0, slot1).id + 1] or pg.arena_data_rank[#pg.arena_data_rank.all].name, pg.arena_data_rank[uv0.getMilitaryRank(slot0, slot1).id + 1] or pg.arena_data_rank[#pg.arena_data_rank.all].point
+slot0.getNextMilitaryRank = function (slot0, slot1)
+	return pg.arena_data_rank[slot0:getMilitaryRank(slot1).id + 1] or pg.arena_data_rank[#pg.arena_data_rank.all].name, pg.arena_data_rank[slot0.getMilitaryRank(slot1).id + 1] or pg.arena_data_rank[#pg.arena_data_rank.all].point
 end
 
-function slot0.maxRankScore()
+slot0.maxRankScore = function ()
 	return pg.arena_data_rank[pg.arena_data_rank.all[#pg.arena_data_rank.all]].name, pg.arena_data_rank[pg.arena_data_rank.all[#pg.arena_data_rank.all]].point
 end
 
-function slot0.getEmblem(slot0, slot1)
-	if math.max(uv0.getMilitaryRank(slot0, slot1).id, 1) > 14 then
-		slot2 = 14
-	end
-
-	return slot2
+slot0.getEmblem = function (slot0, slot1)
+	return math.min(math.max(slot0:getMilitaryRank(slot1).id, 1), 14)
 end
 
-function slot0.getMainShipIds(slot0)
+slot0.getMainShipIds = function (slot0)
 	return slot0.fleet.mainShips
 end
 
-function slot0.getVanguardShipIds(slot0)
+slot0.getVanguardShipIds = function (slot0)
 	return slot0.fleet.vanguardShips
 end
 
-function slot0.getMainFleetShipCount(slot0)
+slot0.getMainFleetShipCount = function (slot0)
 	return table.getCount(slot0.mainShips)
 end
 
-function slot0.getVanguardShipsShipCount(slot0)
+slot0.getVanguardShipsShipCount = function (slot0)
 	return table.getCount(slot0.vanguardShips)
 end
 

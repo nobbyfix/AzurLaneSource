@@ -114,6 +114,7 @@ slot0.init = function (slot0)
 	slot0._conditions = slot0:findTF("main/conditions")
 	slot0._conditionContainer = slot0:findTF("bg16/list", slot0._conditions)
 	slot0._conditionTpl = slot0:findTF("bg16/conditionTpl", slot0._conditions)
+	slot0._conditionSubTpl = slot0:findTF("bg16/conditionSubTpl", slot0._conditions)
 	slot0._cmdExp = slot0:findTF("commanderExp", slot0._leftPanel)
 	slot0._cmdContainer = slot0:findTF("commander_container", slot0._cmdExp)
 	slot0._cmdTpl = slot0:findTF("commander_tpl", slot0._cmdExp)
@@ -269,7 +270,10 @@ slot0.setCondition = function (slot0, slot1, slot2)
 	slot4 = nil
 	slot5 = slot3:Find("text"):GetComponent(typeof(Text))
 
-	if slot2 then
+	if slot2 == nil then
+		slot4 = "resources/condition_check"
+		slot5.text = setColorStr(slot1, "#FFFFFFFF")
+	elseif slot2 == true then
 		slot4 = "resources/condition_done"
 		slot5.text = setColorStr(slot1, "#FFFFFFFF")
 	else
@@ -425,7 +429,6 @@ slot0.displayShips = function (slot0)
 	slot0._subSkipExp = {}
 	slot0._subCardAnimaFuncList = {}
 	slot1 = {}
-	slot2 = slot0.contextData.prefabFleet or slot0.shipVOs
 
 	for slot6, slot7 in ipairs(slot2) do
 		slot1[slot7.id] = slot7
@@ -446,7 +449,7 @@ slot0.displayShips = function (slot0)
 	slot0._subAtkTplList = {}
 	slot7, slot8 = nil
 
-	SetActive(slot0._atkToggle, #(slot0.contextData.prefabFleet or slot0.contextData.oldMainShips) > 6)
+	SetActive(slot0._atkToggle, #slot0.contextData.oldMainShips > 6)
 
 	if #slot6 > 6 then
 		onToggle(slot0, slot0._atkToggle, function (slot0)
@@ -922,11 +925,11 @@ slot0.displayShips = function (slot0)
 			if slot18 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 441-442, warpins: 1 ---
+				--- BLOCK #0 433-434, warpins: 1 ---
 				if not slot8 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 443-444, warpins: 1 ---
+					--- BLOCK #0 435-436, warpins: 1 ---
 					slot0._subFirstExpTF = slot27
 					--- END OF BLOCK #0 ---
 
@@ -935,7 +938,7 @@ slot0.displayShips = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 445-454, warpins: 1 ---
+					--- BLOCK #0 437-446, warpins: 1 ---
 					slot8:GetComponent(typeof(DftAniEvent)):SetEndEvent(function (slot0)
 
 						-- Decompilation error in this vicinity:
@@ -961,7 +964,7 @@ slot0.displayShips = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 455-456, warpins: 2 ---
+				--- BLOCK #1 447-448, warpins: 2 ---
 				slot8 = slot27
 				--- END OF BLOCK #1 ---
 
@@ -970,11 +973,11 @@ slot0.displayShips = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 457-458, warpins: 1 ---
+				--- BLOCK #0 449-450, warpins: 1 ---
 				if slot7 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 459-469, warpins: 1 ---
+					--- BLOCK #0 451-461, warpins: 1 ---
 					slot7:GetComponent(typeof(DftAniEvent)):SetEndEvent(function (slot0)
 
 						-- Decompilation error in this vicinity:
@@ -994,7 +997,7 @@ slot0.displayShips = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 470-473, warpins: 1 ---
+					--- BLOCK #0 462-465, warpins: 1 ---
 					setActive(slot27, true)
 					--- END OF BLOCK #0 ---
 
@@ -1009,7 +1012,7 @@ slot0.displayShips = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 474-474, warpins: 2 ---
+				--- BLOCK #1 466-466, warpins: 2 ---
 				slot7 = slot27
 				--- END OF BLOCK #1 ---
 
@@ -1200,43 +1203,52 @@ slot0.displayShips = function (slot0)
 		end
 	end
 
-	slot9[#slot9].GetComponent(slot11, typeof(DftAniEvent)).SetEndEvent(slot12, function (slot0)
+	if slot9[#slot9] then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-8, warpins: 1 ---
-		slot0._stateFlag = slot1.STATE_DISPLAYED
-
-		if not slot0._subFirstExpTF then
+		--- BLOCK #0 480-489, warpins: 1 ---
+		slot11:GetComponent(typeof(DftAniEvent)):SetEndEvent(function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 9-12, warpins: 1 ---
-			slot0:skip()
+			--- BLOCK #0 1-8, warpins: 1 ---
+			slot0._stateFlag = slot1.STATE_DISPLAYED
+
+			if not slot0._subFirstExpTF then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 9-12, warpins: 1 ---
+				slot0:skip()
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
 			--- END OF BLOCK #0 ---
 
+			FLOW; TARGET BLOCK #1
 
 
-		end
 
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 13-13, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
+		end)
 		--- END OF BLOCK #0 ---
 
-		FLOW; TARGET BLOCK #1
 
 
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 13-13, warpins: 2 ---
-		return
-		--- END OF BLOCK #1 ---
-
-
-
-	end)
+	end
 
 	if #slot10 > 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 500-511, warpins: 1 ---
-		slot10[#slot10].GetComponent(slot13, typeof(DftAniEvent)):SetEndEvent(function (slot0)
+		--- BLOCK #0 494-505, warpins: 1 ---
+		slot10[#slot10].GetComponent(slot12, typeof(DftAniEvent)):SetEndEvent(function (slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-9, warpins: 1 ---

@@ -10,8 +10,6 @@ slot0.getBGM = function (slot0)
 	return "level"
 end
 
-slot3 = 501
-
 slot0.init = function (slot0)
 	slot0.topPanel = slot0:findTF("blur_panel/adapt/top")
 	slot0.backBtn = slot0:findTF("back_button", slot0.topPanel)
@@ -27,20 +25,14 @@ slot0.init = function (slot0)
 	slot0.dailylevelTpl = slot0:getTpl("list_panel/list/captertpl")
 	slot0.descPanel = slot0:findTF("desc_panel")
 	slot0.descMain = slot0:findTF("main_mask/main", slot0.descPanel)
-	slot0.descChallengeNum = slot0:findTF("challenge_count", slot0.descMain)
-	slot0.descChallengeText = slot0:findTF("Text", slot0.descChallengeNum)
 	slot0.stageTpl = slot0:getTpl("scrollview/content/stagetpl", slot0.descMain)
 	slot0.stageContain = slot0:findTF("scrollview/content", slot0.descMain)
 	slot0.arrows = slot0:findTF("arrows")
 	slot0.itemTpl = slot0:getTpl("item_tpl")
-	slot0.challengeStageView = slot0:findTF("stage_info")
-	slot0.challengeSetting = slot0:findTF("panel/setting", slot0.challengeStageView)
-	slot0.challengeBrief = slot0:findTF("panel/progress", slot0.challengeStageView)
-
-	onButton(slot0, slot0:findTF("panel/btnBack", slot0.challengeStageView), function ()
-		slot0:closeChallengeSettingView()
-	end)
-
+	slot0.descChallengeNum = slot0:findTF("challenge_count", slot0.descMain)
+	slot0.descChallengeText = slot0:findTF("Text", slot0.descChallengeNum)
+	slot0.challengeQuotaDaily = slot0:findTF("challenge_count/label", slot0.descMain)
+	slot0.challengeQuotaWeekly = slot0:findTF("challenge_count/week_label", slot0.descMain)
 	slot0.fleetEditView = slot0:findTF("fleet_edit")
 	slot0.resource = slot0:findTF("resource")
 	slot0.rightBtn = slot0:findTF("arrows/arrow1")
@@ -59,10 +51,6 @@ end
 
 slot0.setShips = function (slot0, slot1)
 	slot0.shipVOs = slot1
-end
-
-slot0.setChallengeInfo = function (slot0, slot1)
-	slot0.challengeInfo = slot1
 end
 
 slot0.updateRes = function (slot0, slot1)
@@ -98,6 +86,8 @@ slot0.didEnter = function (slot0)
 	else
 		slot0:enableDescMode(false)
 	end
+
+	slot0:tryPlayGuide()
 end
 
 slot0.initItems = function (slot0)
@@ -203,16 +193,7 @@ slot0.initDailyLevel = function (slot0, slot1)
 		tf(slot0).localPosition = Vector3.zero
 		tf(slot0).name = "card"
 	end)
-
-	if slot0 == slot1 then
-		slot6 = 0
-
-		if slot0.challengeInfo then
-			setText(findTF(slot3, "Text"), slot0.challengeInfo.maxScore or 0)
-		end
-	else
-		setText(findTF(slot3, "Text"), "")
-	end
+	setText(findTF(slot3, "Text"), "")
 
 	slot6 = findTF(slot3, "count")
 	slot7 = slot0.dailyCounts[slot1] or 0
@@ -245,6 +226,8 @@ slot0.displayStageList = function (slot0, slot1)
 		setText(slot0.descChallengeText, string.format("%d/%d", slot2.limit_time - slot3, slot2.limit_time))
 	end
 
+	setActive(slot0.challengeQuotaDaily, slot2.limit_type == 1)
+	setActive(slot0.challengeQuotaWeekly, slot2.limit_type == 2)
 	removeAllChildren(slot0.stageContain)
 
 	slot0.stageTFs = {}
@@ -256,241 +239,12 @@ slot0.displayStageList = function (slot0, slot1)
 			level = slot9[2]
 		}
 
-		if slot1 == slot0 then
+		if slot1 == CHALLENGE_CARD_ID then
 			slot0:updateChallenge(slot12)
 		else
 			slot0:updateStage(slot12)
 		end
 	end
-end
-
-slot0.updateChallenge = function (slot0, slot1)
-	slot2 = getProxy(ChallengeProxy):getChallenge(slot1.id)
-
-	setText(findTF(slot3, "left_panel/name"), "挑战模式")
-	setText(findTF(slot3, "left_panel/lv/Text"), "Lv." .. slot1.level)
-	setActive(findTF(slot3, "left_panel/class"), false)
-	setImageSprite(slot3, getImageSprite(findTF(slot0.resource, "challenge_bg")))
-	setActive(findTF(slot3, "score"), true)
-	setActive(slot0:findTF("mask", slot3), slot0.player.level < slot1.level)
-
-	if slot0.player.level < slot1.level then
-		setText(slot0:findTF("msg/msg_contain/Text", slot4), "Lv." .. slot1.level .. " ")
-		setText(findTF(slot3, "score"), "- - -")
-	else
-		setText(findTF(slot3, "score"), comma_value(getProxy(ChallengeProxy):getCurrentChallengeInfo().maxScore))
-	end
-
-	onButton(slot0, slot3, function ()
-		if slot1.player.level < slot0.level then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("dailyLevel_unopened"))
-
-			return
-		end
-
-		slot1:emit(DailyLevelMediator.ON_CHALLENGE, slot1.emit)
-	end, SFX_PANEL)
-end
-
-slot0.openChallengeView = function (slot0)
-	if slot0.challengeInfo:isActive() then
-		slot0:openChallengeBriefingView()
-	else
-		slot0:openChallengeSettingView()
-	end
-
-	onButton(slot0, slot0:findTF("panel/right/rule_btn", slot0.challengeStageView), function ()
-		pg.MsgboxMgr.GetInstance():ShowMsgBox({
-			type = MSGBOX_TYPE_HELP,
-			helps = i18n("challenge_rule")
-		})
-	end, SFX_PANEL)
-
-	slot1 = slot0.challengeInfo:getCurrentChallengeTemplate()
-
-	setImageSprite(slot0:findTF("panel/head/Image", slot0.challengeStageView), LoadSprite("qicon/" .. slot1.char_icon[1]))
-	setText(slot2, slot1.chapter_name[1])
-	setText(slot3, slot1.chapter_name[2])
-	setText(slot4, slot1.chapter_name[3])
-	setText(slot0:findTF("panel/intro", slot0.challengeStageView), slot1.chapter_description)
-end
-
-slot0.openChallengeBriefingView = function (slot0)
-	setActive(slot0.challengeStageView, true)
-	setActive(slot0.challengeBrief, true)
-	setActive(slot0.challengeSetting, false)
-	setText(slot1, i18n("challenge_current_progress", slot0.challengeInfo.challengeLevel))
-	setText(slot0:findTF("score/level", slot0.challengeBrief), slot0.challengeInfo.currentScore)
-	onButton(slot0, slot0:findTF("reset_button", slot0.challengeBrief), function ()
-		slot0:emit(DailyLevelMediator.ON_RESET_CHALLENGE)
-	end)
-	onButton(slot0, slot0:findTF("continue_button", slot0.challengeBrief), function ()
-		slot0:emit(DailyLevelMediator.ON_CONTINUE_CHALLENGE)
-	end)
-end
-
-slot0.openChallengeSettingView = function (slot0)
-	setActive(slot0.challengeStageView, true)
-	setActive(slot0.challengeBrief, false)
-	setActive(slot0.challengeSetting, true)
-
-	local function slot1(slot0, slot1, slot2, slot3, slot4)
-		slot5 = slot0:GetComponent(typeof(Slider))
-		slot6 = findTF(slot0, "Fill Area/Fill"):GetComponent(typeof(Image))
-		slot7 = #slot3
-
-		onSlider(slot0, slot0, function (slot0)
-			slot0.fillAmount = (slot0 - 1) / (slot1 - 1)
-
-			setText(slot1 - 1, "X " .. slot2[slot0].rate)
-			setText("X " .. slot2[slot0].rate, slot2[slot0].content)
-		end)
-
-		slot8 = 1
-
-		for slot12, slot13 in ipairs(slot3) do
-			if slot13.rate == slot4 then
-				slot8 = slot12
-			end
-		end
-
-		setSlider(slot5, 1, slot7, slot8)
-		slot5.onValueChanged:Invoke(slot8)
-	end
-
-	slot1(slot0:findTF("meters/damage_slider/Slider", slot0.challengeSetting), slot0:findTF("meters/damage_slider/rate", slot0.challengeSetting), slot0:findTF("meters/damage_slider/value", slot0.challengeSetting), ChallengeProxy.rateConfigData[ChallengeProxy.RATE_FACTOR_DAMAGE], slot0.challengeInfo:getDamageRate() or ChallengeProxy.rateConfigData[ChallengeProxy.RATE_FACTOR_DAMAGE][1])
-	slot1(slot0:findTF("meters/level_slider/Slider", slot0.challengeSetting), slot0:findTF("meters/level_slider/rate", slot0.challengeSetting), slot0:findTF("meters/level_slider/value", slot0.challengeSetting), ChallengeProxy.rateConfigData[ChallengeProxy.RATE_FACTOR_LEVEL], slot0.challengeInfo:getLevelRate() or ChallengeProxy.rateConfigData[ChallengeProxy.RATE_FACTOR_LEVEL][1])
-	onButton(slot0, slot0:findTF("start_button", slot0.challengeSetting), function ()
-		slot4:emit(DailyLevelMediator.ON_CHALLENGE_EDIT_FLEET, {
-			damageRateID = slot0[slot1:GetComponent(typeof(Slider)).value].id,
-			levelRateID = slot1[typeof:GetComponent(typeof(Slider)).value].id
-		})
-	end)
-	pg.UIMgr.GetInstance():BlurPanel(slot0.challengeStageView)
-end
-
-slot0.closeChallengeSettingView = function (slot0)
-	setActive(slot0.challengeStageView, false)
-	pg.UIMgr.GetInstance():UnblurPanel(slot0.challengeStageView, slot0._tf)
-end
-
-slot0.openChallengeFleetEditView = function (slot0)
-	slot0:closeChallengeSettingView()
-	setActive(slot0.fleetEditView, true)
-
-	slot1 = findTF(slot0.fleetEditView, "panel/fleet")
-
-	slot0:flushFleetEditButton()
-	onButton(slot0, findTF(slot0.fleetEditView, "panel/bg/btnBack"), function ()
-		slot0:closeChallengeFleetEditView()
-		slot0.closeChallengeFleetEditView:openChallengeView()
-
-		slot0.closeChallengeFleetEditView.openChallengeView.contextData.challenge = nil
-	end)
-	pg.UIMgr.GetInstance():BlurPanel(slot0.fleetEditView)
-end
-
-slot0.closeChallengeFleetEditView = function (slot0)
-	setActive(slot0.fleetEditView, false)
-	pg.UIMgr.GetInstance():UnblurPanel(slot0.fleetEditView, slot0._tf)
-end
-
-slot0.flushFleetEditButton = function (slot0)
-	slot2 = findTF(slot0.fleetEditView, "panel/fleet")
-	slot3 = slot0.challengeInfo.getShips(slot1)
-
-	local function slot4(slot0, slot1, slot2)
-		slot3 = {}
-
-		removeAllChildren(slot4)
-
-		for slot8, slot9 in ipairs(slot0) do
-			slot3[slot1.shipVOs[slot9.id]] = true
-		end
-
-		slot5 = findTF(slot0, "shiptpl")
-		slot6 = findTF(slot0, "emptytpl")
-
-		for slot10, slot11 in ipairs(slot2) do
-			if slot11 == -1 then
-				break
-			end
-
-			slot12, slot13 = nil
-			slot14 = true
-
-			if slot11 == 0 then
-				for slot18, slot19 in pairs(slot3) do
-					if slot19 and slot1 == slot18:getTeamType() then
-						slot13 = slot18
-
-						break
-					end
-				end
-			end
-
-			if slot13 then
-				slot15 = cloneTplTo(slot5, slot4)
-
-				setActive(slot15, true)
-				updateShip(slot15, slot13)
-
-				slot12 = findTF(slot15, "icon_bg")
-				slot3[slot13] = false
-				slot14 = false
-			end
-
-			if slot14 then
-				slot15 = cloneTplTo(slot6, slot4)
-
-				setActive(slot15, true)
-
-				slot12 = findTF(slot15, "icon_bg")
-
-				setActive(slot1:findTF("ship_type_icon", slot15), false)
-			end
-
-			onButton(slot1, slot12, function ()
-				slot0:closeChallengeFleetEditView()
-
-				slot0.closeChallengeFleetEditView.contextData.challenge = nil
-
-				slot0.closeChallengeFleetEditView.contextData:emit(DailyLevelMediator.ON_CHALLENGE_OPEN_DOCK, {
-					shipType = slot1,
-					fleet = slot2,
-					shipVO = slot3,
-					teamType = slot3
-				})
-			end)
-		end
-
-		return true
-	end
-
-	slot9 = slot4(slot2, "main", slot7)
-	slot10 = slot4(slot2, "vanguard", slot8)
-
-	setText(findTF(slot0.fleetEditView, "panel/gear_score/text"), math.floor(slot0.challengeInfo.getFleetGS(slot1)))
-	setText(findTF(slot0.fleetEditView, "panel/rateList/difficulty/text"), "x " .. slot0.challengeInfo.getDifficultyRate(slot1))
-
-	slot11, slot12 = slot0.challengeInfo.getGSRateID(slot1)
-
-	setActive(findTF(slot0.fleetEditView, "panel/rateList/gs"), false)
-	onButton(slot0, findTF(slot0.fleetEditView, "panel/start_button"), function ()
-		if slot0 and slot1 then
-			slot2.contextData.challenge = nil
-
-			slot2:emit(DailyLevelMediator.ON_REQUEST_CHALLENGE, {})
-		else
-			pg.TipsMgr:GetInstance():ShowTips(i18n("elite_disable_unsatisfied"))
-		end
-	end)
-	onButton(slot0, slot5, function ()
-		slot0:emit(DailyLevelMediator.ON_CHALLENGE_FLEET_CLEAR, {})
-	end)
-	onButton(slot0, slot0:findTF("recommendation", slot2), function ()
-		slot0:emit(DailyLevelMediator.ON_CHALLENGE_FLEET_RECOMMEND, {})
-	end)
 end
 
 slot0.updateStage = function (slot0, slot1)
@@ -852,6 +606,41 @@ slot0.flipToSpecificCard = function (slot0, slot1)
 
 end
 
+slot0.tryPlayGuide = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-12, warpins: 1 ---
+	if pg.StoryMgr:GetInstance():IsPlayed("NG0015") then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 13-13, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 14-29, warpins: 2 ---
+	triggerButton(slot0:findTF("help_btn"))
+	pg.m02:sendNotification(GAME.STORY_UPDATE, {
+		storyId = slot2
+	})
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
 slot0.clearTween = function (slot0)
 
 	-- Decompilation error in this vicinity:
@@ -939,10 +728,9 @@ slot0.clearTween = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 17-26, warpins: 1 ---
+	--- BLOCK #3 17-23, warpins: 1 ---
 	slot1(slot0.listPanel)
 	slot1(slot0.descMain)
-	slot1(slot0.descChallengeNum)
 
 	return
 	--- END OF BLOCK #3 ---
@@ -954,15 +742,13 @@ end
 slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot0:closeChallengeSettingView()
-	slot0:closeChallengeFleetEditView()
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0:clearTween()
 
 	if slot0.checkAniTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 13-18, warpins: 1 ---
+		--- BLOCK #0 7-12, warpins: 1 ---
 		slot0.checkAniTimer:Stop()
 
 		slot0.checkAniTimer = nil
@@ -979,11 +765,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 19-21, warpins: 2 ---
+	--- BLOCK #1 13-15, warpins: 2 ---
 	if slot0.resPanel then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 22-27, warpins: 1 ---
+		--- BLOCK #0 16-21, warpins: 1 ---
 		slot0.resPanel:exit()
 
 		slot0.resPanel = nil
@@ -1000,7 +786,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 28-28, warpins: 2 ---
+	--- BLOCK #2 22-22, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 

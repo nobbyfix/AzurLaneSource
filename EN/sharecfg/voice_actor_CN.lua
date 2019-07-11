@@ -743,5 +743,15 @@ pg.voice_actor_CN = {
 	{
 		actor_name = "Yanagihara Kanako",
 		code = 186
+	},
+	{
+		actor_name = "Ayumi Mano",
+		code = 187
+	},
+	{
+		actor_name = "Hitomi Ohwada",
+		code = 188
 	}
 }
+
+return

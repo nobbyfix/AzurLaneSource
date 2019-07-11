@@ -66,12 +66,7 @@ slot0.setShip = function (slot0, slot1)
 	end
 
 	slot0.shipVO = slot1
-	slot0.isSpBg = pg.ship_skin_template[slot0.shipVO.skinId].rarity_bg and slot3.rarity_bg ~= ""
 
-	slot0:updatePreference(slot1)
-	slot0.shipDetailView:ActionInvoke("UpdateUI")
-	slot0.shipFashionView:ActionInvoke("UpdateUI")
-	slot0.shipEquipView:ActionInvoke("UpdateUI")
 	setActive(slot0.npcFlagTF, slot1:isActivityNpc())
 
 	if slot2 and not slot0:checkToggleActive(ShipViewConst.currentPage) then
@@ -79,6 +74,13 @@ slot0.setShip = function (slot0, slot1)
 	end
 
 	slot0:setToggleEnable()
+
+	slot0.isSpBg = pg.ship_skin_template[slot0.shipVO.skinId].rarity_bg and slot3.rarity_bg ~= ""
+
+	slot0:updatePreference(slot1)
+	slot0.shipDetailView:ActionInvoke("UpdateUI")
+	slot0.shipFashionView:ActionInvoke("UpdateUI")
+	slot0.shipEquipView:ActionInvoke("UpdateUI")
 end
 
 slot0.setToggleEnable = function (slot0)
@@ -101,7 +103,7 @@ slot0.checkToggleActive = function (slot0, slot1)
 	elseif slot1 == ShipViewConst.PAGE.REMOULD then
 		return not slot0.shipVO:isTestShip() and not slot0.shipVO:isBluePrintShip() and pg.ship_data_trans[slot0.shipVO.groupId]
 	elseif slot1 == ShipViewConst.PAGE.FASHION then
-		return true
+		return slot0:hasFashion()
 	else
 		return false
 	end
@@ -1138,9 +1140,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 163-171, warpins: 3 ---
-	print("gg")
-
+	--- BLOCK #7 163-168, warpins: 3 ---
 	slot0.LoadShipVOId = slot0.shipVO.id
 	slot0.LoadPaintingCode = slot1
 
@@ -1152,7 +1152,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 172-172, warpins: 2 ---
+	--- BLOCK #8 169-169, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -1160,7 +1160,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #9 173-173, warpins: 2 ---
+	--- BLOCK #9 170-170, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
 
