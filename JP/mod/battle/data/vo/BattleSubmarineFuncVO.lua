@@ -4,17 +4,22 @@ slot2 = ys.Battle.BattleVariable
 ys.Battle.BattleSubmarineFuncVO = class("BattleSubmarineFuncVO")
 ys.Battle.BattleSubmarineFuncVO.__name = "BattleSubmarineFuncVO"
 
-function ys.Battle.BattleSubmarineFuncVO.Ctor(slot0, slot1)
-	uv0.EventDispatcher.AttachEventDispatcher(slot0)
+ys.Battle.BattleSubmarineFuncVO.Ctor = function (slot0, slot1)
+	slot0.EventDispatcher.AttachEventDispatcher(slot0)
 
 	slot0._isOverLoad = false
 	slot0._current = slot1
-	slot0._max = slot1
+	slot0._defaultMax = slot1
+	slot0._active = true
+
+	slot0:ResetMax()
 end
 
-function ys.Battle.BattleSubmarineFuncVO.Update(slot0, slot1)
-	if slot0._current < slot0._max then
+ys.Battle.BattleSubmarineFuncVO.Update = function (slot0, slot1)
+	if slot0._active and slot0._current < slot0._max then
 		if slot0._max <= slot1 - slot0._reloadStartTime then
+			slot0:ResetMax()
+
 			slot0._current = slot0._max
 			slot0._reloadStartTime = nil
 
@@ -25,32 +30,42 @@ function ys.Battle.BattleSubmarineFuncVO.Update(slot0, slot1)
 	end
 end
 
-function ys.Battle.BattleSubmarineFuncVO.ResetCurrent(slot0)
+ys.Battle.BattleSubmarineFuncVO.SetActive = function (slot0, slot1)
+	slot0._active = slot1
+end
+
+ys.Battle.BattleSubmarineFuncVO.ResetCurrent = function (slot0)
 	slot0._current = 0
 	slot0._reloadStartTime = pg.TimeMgr.GetInstance():GetCombatTime()
 
 	slot0:DispatchOverLoadChange()
 end
 
-function ys.Battle.BattleSubmarineFuncVO.SetMax(slot0, slot1)
+ys.Battle.BattleSubmarineFuncVO.ResetMax = function (slot0)
+	slot0._max = slot0._defaultMax
+end
+
+ys.Battle.BattleSubmarineFuncVO.SetMax = function (slot0, slot1)
 	slot0._max = slot1
 end
 
-function ys.Battle.BattleSubmarineFuncVO.GetMax(slot0)
+ys.Battle.BattleSubmarineFuncVO.GetMax = function (slot0)
 	return slot0._max
 end
 
-function ys.Battle.BattleSubmarineFuncVO.GetCurrent(slot0)
+ys.Battle.BattleSubmarineFuncVO.GetCurrent = function (slot0)
 	return slot0._current
 end
 
-function ys.Battle.BattleSubmarineFuncVO.IsOverLoad(slot0)
+ys.Battle.BattleSubmarineFuncVO.IsOverLoad = function (slot0)
 	return slot0._current < slot0._max
 end
 
-function ys.Battle.BattleSubmarineFuncVO.GetNextTimeStamp(slot0)
+ys.Battle.BattleSubmarineFuncVO.GetNextTimeStamp = function (slot0)
+	slot1 = nil
+
 	if #slot0._chargingList > 0 then
-		tiemStampB = slot0._chargingList[1].GetReloadFinishTimeStamp(nil)
+		tiemStampB = slot0._chargingList[1].GetReloadFinishTimeStamp(slot1)
 
 		for slot5, slot6 in ipairs(slot0._chargingList) do
 			tiemStampB = slot1:GetReloadFinishTimeStamp()
@@ -65,14 +80,16 @@ function ys.Battle.BattleSubmarineFuncVO.GetNextTimeStamp(slot0)
 	return tiemStampB
 end
 
-function ys.Battle.BattleSubmarineFuncVO.DispatchOverLoadChange(slot0)
-	slot0:DispatchEvent(uv0.Event.New(uv0.Battle.BattleEvent.OVER_LOAD_CHANGE))
+ys.Battle.BattleSubmarineFuncVO.DispatchOverLoadChange = function (slot0)
+	slot0:DispatchEvent(slot0.Event.New(slot0.Battle.BattleEvent.OVER_LOAD_CHANGE))
 end
 
-function ys.Battle.BattleSubmarineFuncVO.Dispose(slot0)
+ys.Battle.BattleSubmarineFuncVO.Dispose = function (slot0)
 	pg.TimeMgr.GetInstance():RemoveBattleTimer(slot0._focusTimer)
 
 	slot0._focusTimer = nil
 
-	uv0.EventDispatcher.DetachEventDispatcher(slot0)
+	slot0.EventDispatcher.DetachEventDispatcher(slot0)
 end
+
+return

@@ -7,7 +7,7 @@ ys.Battle.BattleBuffEffect.FX_TYPE_MOD_ATTR = 1
 ys.Battle.BattleBuffEffect.FX_TYPE_CASTER = 2
 ys.Battle.BattleBuffEffect.FX_TYPE_LINK = 3
 
-function ys.Battle.BattleBuffEffect.Ctor(slot0, slot1)
+ys.Battle.BattleBuffEffect.Ctor = function (slot0, slot1)
 	slot0._tempData = Clone(slot1)
 	slot0._type = slot0._tempData.type
 	slot0._quota = slot0._tempData.arg_list.quota or -1
@@ -22,11 +22,11 @@ function ys.Battle.BattleBuffEffect.Ctor(slot0, slot1)
 	slot0:SetActive()
 end
 
-function ys.Battle.BattleBuffEffect.GetEffectType(slot0)
-	return uv0.FX_TYPE_NOR
+ys.Battle.BattleBuffEffect.GetEffectType = function (slot0)
+	return slot0.FX_TYPE_NOR
 end
 
-function ys.Battle.BattleBuffEffect.HaveQuota(slot0)
+ys.Battle.BattleBuffEffect.HaveQuota = function (slot0)
 	if slot0._quota == 0 then
 		return false
 	else
@@ -34,7 +34,7 @@ function ys.Battle.BattleBuffEffect.HaveQuota(slot0)
 	end
 end
 
-function ys.Battle.BattleBuffEffect.ConfigHPTrigger(slot0)
+ys.Battle.BattleBuffEffect.ConfigHPTrigger = function (slot0)
 	slot0._hpUpperBound = slot0._tempData.arg_list.hpUpperBound
 	slot0._hpLowerBound = slot0._tempData.arg_list.hpLowerBound
 
@@ -50,48 +50,51 @@ function ys.Battle.BattleBuffEffect.ConfigHPTrigger(slot0)
 	slot0._hpOutInterval = slot1.hpOutInterval
 end
 
-function ys.Battle.BattleBuffEffect.SetCaster(slot0, slot1)
+ys.Battle.BattleBuffEffect.SetCaster = function (slot0, slot1)
 	slot0._caster = slot1
 end
 
-function ys.Battle.BattleBuffEffect.SetCommander(slot0, slot1)
+ys.Battle.BattleBuffEffect.SetCommander = function (slot0, slot1)
 	slot0._commander = slot1
 end
 
-function ys.Battle.BattleBuffEffect.SetBullet(slot0, slot1)
+ys.Battle.BattleBuffEffect.SetBullet = function (slot0, slot1)
+	return
 end
 
-function ys.Battle.BattleBuffEffect.SetArgs(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.SetArgs = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.BattleBuffEffect.SetOrb(slot0)
+ys.Battle.BattleBuffEffect.SetOrb = function (slot0)
+	return
 end
 
-function ys.Battle.BattleBuffEffect.Trigger(slot0, slot1, slot2, slot3, slot4)
+ys.Battle.BattleBuffEffect.Trigger = function (slot0, slot1, slot2, slot3, slot4)
 	slot0[slot1](slot0, slot2, slot3, slot4)
 end
 
-function ys.Battle.BattleBuffEffect.onAttach(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onAttach = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onRemove(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onRemove = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onOtherBuffRemove(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onOtherBuffRemove = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onUpdate(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onUpdate = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onStack(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onStack = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onBulletHit(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onBulletHit = function (slot0, slot1, slot2, slot3)
 	if not slot0:equipIndexRequire(slot3.equipIndex) then
 		return
 	end
@@ -99,7 +102,7 @@ function ys.Battle.BattleBuffEffect.onBulletHit(slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onBeHit(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onBeHit = function (slot0, slot1, slot2, slot3)
 	if slot0._behit then
 		if slot0._behit.damage_type == slot3.weaponType and slot0._behit.bullet_type == slot3.bulletType then
 			slot0:onTrigger(slot1, slot2)
@@ -109,7 +112,7 @@ function ys.Battle.BattleBuffEffect.onBeHit(slot0, slot1, slot2, slot3)
 	end
 end
 
-function ys.Battle.BattleBuffEffect.onFire(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onFire = function (slot0, slot1, slot2, slot3)
 	if not slot0:equipIndexRequire(slot3.equipIndex) then
 		return
 	end
@@ -117,7 +120,7 @@ function ys.Battle.BattleBuffEffect.onFire(slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onCombo(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onCombo = function (slot0, slot1, slot2, slot3)
 	if not slot0:equipIndexRequire(slot3.equipIndex) then
 		return
 	end
@@ -132,7 +135,7 @@ function ys.Battle.BattleBuffEffect.onCombo(slot0, slot1, slot2, slot3)
 	end
 end
 
-function ys.Battle.BattleBuffEffect.equipIndexRequire(slot0, slot1)
+ys.Battle.BattleBuffEffect.equipIndexRequire = function (slot0, slot1)
 	if not slot0._indexRequire then
 		return true
 	else
@@ -146,7 +149,7 @@ function ys.Battle.BattleBuffEffect.equipIndexRequire(slot0, slot1)
 	end
 end
 
-function ys.Battle.BattleBuffEffect.ammoRequire(slot0, slot1)
+ys.Battle.BattleBuffEffect.ammoRequire = function (slot0, slot1)
 	if not slot0._ammoTypeRequire then
 		return true
 	elseif not slot1:GetWeaponByIndex(slot0._ammoIndexRequire) or slot2:GetPrimalAmmoType() ~= slot0._ammoTypeRequire then
@@ -156,47 +159,47 @@ function ys.Battle.BattleBuffEffect.ammoRequire(slot0, slot1)
 	end
 end
 
-function ys.Battle.BattleBuffEffect.onWeaponSteday(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onWeaponSteday = function (slot0, slot1, slot2, slot3)
 	slot0:onFire(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onChargeWeaponFire(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onChargeWeaponFire = function (slot0, slot1, slot2, slot3)
 	slot0:onFire(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onTorpedoWeaponFire(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onTorpedoWeaponFire = function (slot0, slot1, slot2, slot3)
 	slot0:onFire(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onAntiAirWeaponFire(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onAntiAirWeaponFire = function (slot0, slot1, slot2, slot3)
 	slot0:onFire(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onAllInStrike(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onAllInStrike = function (slot0, slot1, slot2, slot3)
 	slot0:onFire(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onAllInStrikeSteady(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onAllInStrikeSteady = function (slot0, slot1, slot2, slot3)
 	slot0:onFire(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onChargeWeaponReady(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onChargeWeaponReady = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onManualTorpedoReady(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onManualTorpedoReady = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onAirAssistReady(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onAirAssistReady = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onDying(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onDying = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onFriendlyAircraftDying(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onFriendlyAircraftDying = function (slot0, slot1, slot2, slot3)
 	if slot0._tempData.arg_list.templateID then
 		if slot3.unit.GetTemplateID(slot4) == slot0._tempData.arg_list.templateID then
 			slot0:onTrigger(slot1, slot2)
@@ -206,11 +209,11 @@ function ys.Battle.BattleBuffEffect.onFriendlyAircraftDying(slot0, slot1, slot2,
 	end
 end
 
-function ys.Battle.BattleBuffEffect.onFriendlyShipDying(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onFriendlyShipDying = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onFoeAircraftDying(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onFoeAircraftDying = function (slot0, slot1, slot2, slot3)
 	if slot0._tempData.arg_list.inside then
 		if not slot1:GetFleetVO():GetFleetAntiAirWeapon():IsOutOfRange(slot3.unit) then
 			slot0:onTrigger(slot1, slot2)
@@ -224,7 +227,7 @@ function ys.Battle.BattleBuffEffect.onFoeAircraftDying(slot0, slot1, slot2, slot
 	end
 end
 
-function ys.Battle.BattleBuffEffect.onFoeDying(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onFoeDying = function (slot0, slot1, slot2, slot3)
 	if slot0._tempData.arg_list.killer then
 		if slot0:killerRequire(slot0._tempData.arg_list.killer, slot3.killer, slot1) then
 			slot0:onTrigger(slot1, slot2)
@@ -234,11 +237,12 @@ function ys.Battle.BattleBuffEffect.onFoeDying(slot0, slot1, slot2, slot3)
 	end
 end
 
-function ys.Battle.BattleBuffEffect.killerRequire(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.killerRequire = function (slot0, slot1, slot2, slot3)
 	slot4, slot5 = nil
+	slot4 = ((slot2.__name == slot0.Battle.BattlePlayerUnit.__name or slot6 == slot0.Battle.BattleNPCUnit.__name or slot6 == slot0.Battle.BattleEnemyUnit.__name or slot6 == slot0.Battle.BattleAircraftUnit.__name or slot6 == slot0.Battle.BattleAirFighterUnit.__name) and slot2) or slot2:GetHost()
 
-	if (slot2.__name == uv0.Battle.BattlePlayerUnit.__name or slot6 == uv0.Battle.BattleNPCUnit.__name or slot6 == uv0.Battle.BattleEnemyUnit.__name or slot6 == uv0.Battle.BattleAircraftUnit.__name or slot6 == uv0.Battle.BattleAirFighterUnit.__name) and slot2 or slot2:GetHost() then
-		if slot4.__name == uv0.Battle.BattleAircraftUnit.__name then
+	if slot4 then
+		if slot4.__name == slot0.Battle.BattleAircraftUnit.__name then
 			slot5 = slot4:GetMotherUnit()
 		else
 			slot5 = slot4
@@ -259,31 +263,35 @@ function ys.Battle.BattleBuffEffect.killerRequire(slot0, slot1, slot2, slot3)
 	return false
 end
 
-function ys.Battle.BattleBuffEffect.onStartGame(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onStartGame = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onFlagShip(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onFlagShip = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onConsort(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onConsort = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onLeader(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onLeader = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onRear(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onRear = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onSubLeader(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onSubLeader = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onBulletCollide(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onSubConsort = function (slot0, slot1, slot2)
+	slot0:onTrigger(slot1, slot2)
+end
+
+ys.Battle.BattleBuffEffect.onBulletCollide = function (slot0, slot1, slot2, slot3)
 	if not slot0:equipIndexRequire(slot3.equipIndex) then
 		return
 	end
@@ -291,7 +299,7 @@ function ys.Battle.BattleBuffEffect.onBulletCollide(slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onBombBulletBang(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onBombBulletBang = function (slot0, slot1, slot2, slot3)
 	if not slot0:equipIndexRequire(slot3.equipIndex) then
 		return
 	end
@@ -299,7 +307,7 @@ function ys.Battle.BattleBuffEffect.onBombBulletBang(slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onBulletHitBefore(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onBulletHitBefore = function (slot0, slot1, slot2, slot3)
 	if slot0._behit then
 		if slot0._behit.damage_type == slot3.weaponType and slot0._behit.bullet_type == slot3.bulletType then
 			slot0:onTrigger(slot1, slot2)
@@ -309,7 +317,7 @@ function ys.Battle.BattleBuffEffect.onBulletHitBefore(slot0, slot1, slot2, slot3
 	end
 end
 
-function ys.Battle.BattleBuffEffect.onBulletCreate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onBulletCreate = function (slot0, slot1, slot2, slot3)
 	if not slot0:equipIndexRequire(slot3.equipIndex) then
 		return
 	end
@@ -317,19 +325,19 @@ function ys.Battle.BattleBuffEffect.onBulletCreate(slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onChargeWeaponBulletCreate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onChargeWeaponBulletCreate = function (slot0, slot1, slot2, slot3)
 	slot0:onBulletCreate(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onTorpedoWeaponBulletCreate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onTorpedoWeaponBulletCreate = function (slot0, slot1, slot2, slot3)
 	slot0:onBulletCreate(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onAntiAirWeaponBulletCreate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onAntiAirWeaponBulletCreate = function (slot0, slot1, slot2, slot3)
 	slot0:onBulletCreate(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onInternalBulletCreate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onInternalBulletCreate = function (slot0, slot1, slot2, slot3)
 	if not slot0:equipIndexRequire(slot3.equipIndex) then
 		return
 	end
@@ -337,7 +345,7 @@ function ys.Battle.BattleBuffEffect.onInternalBulletCreate(slot0, slot1, slot2, 
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onManualBulletCreate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onManualBulletCreate = function (slot0, slot1, slot2, slot3)
 	if not slot0:equipIndexRequire(slot3.equipIndex) then
 		return
 	end
@@ -345,17 +353,17 @@ function ys.Battle.BattleBuffEffect.onManualBulletCreate(slot0, slot1, slot2, sl
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onTakeDamage(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onTakeDamage = function (slot0, slot1, slot2, slot3)
 	if slot0:damageAttrRequire(slot3.damageAttr) then
 		slot0:onTrigger(slot1, slot2, slot3)
 	end
 end
 
-function ys.Battle.BattleBuffEffect.onTakeHealing(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onTakeHealing = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.damageAttrRequire(slot0, slot1)
+ys.Battle.BattleBuffEffect.damageAttrRequire = function (slot0, slot1)
 	if not slot0._damageAttrRequire or table.contains(slot0._damageAttrRequire, slot1) then
 		return true
 	else
@@ -363,14 +371,13 @@ function ys.Battle.BattleBuffEffect.damageAttrRequire(slot0, slot1)
 	end
 end
 
-function ys.Battle.BattleBuffEffect.hpIntervalRequire(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.hpIntervalRequire = function (slot0, slot1, slot2)
 	if slot0._hpUpperBound == nil and slot0._hpLowerBound == nil then
 		return true
 	end
 
 	if slot2 then
 		if slot0._hpSigned == 0 then
-			-- Nothing
 		elseif slot2 * slot0._hpSigned < 0 then
 			return false
 		end
@@ -389,113 +396,117 @@ function ys.Battle.BattleBuffEffect.hpIntervalRequire(slot0, slot1, slot2)
 	return slot3
 end
 
-function ys.Battle.BattleBuffEffect.onHPRatioUpdate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onHPRatioUpdate = function (slot0, slot1, slot2, slot3)
 	if slot0:hpIntervalRequire(slot1:GetHPRate(), slot3.dHP) then
 		slot0:doOnHPRatioUpdate(slot1, slot2, slot3)
 	end
 end
 
-function ys.Battle.BattleBuffEffect.onFriendlyHpRatioUpdate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onFriendlyHpRatioUpdate = function (slot0, slot1, slot2, slot3)
 	if slot0:hpIntervalRequire(slot3.unit.GetHPRate(slot4), slot3.dHP) then
 		slot0:doOnHPRatioUpdate(slot1, slot2, slot3)
 	end
 end
 
-function ys.Battle.BattleBuffEffect.onTeammateHpRatioUpdate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onTeammateHpRatioUpdate = function (slot0, slot1, slot2, slot3)
 	slot0:onFriendlyHpRatioUpdate(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onBulletKill(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onBulletKill = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onBattleBuffCount(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onBattleBuffCount = function (slot0, slot1, slot2, slot3)
 	if slot3.buffFX.GetCountType(slot4) == slot0._countType and slot0:onTrigger(slot1, slot2) ~= "overheat" then
 		slot4:ResetCount()
 	end
 end
 
-function ys.Battle.BattleBuffEffect.onDamagePrevent(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onDamagePrevent = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onShieldBroken(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.onShieldBroken = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end
 
-function ys.Battle.BattleBuffEffect.onTrigger(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onTrigger = function (slot0, slot1, slot2, slot3)
 	if slot0._quota > 0 then
 		slot0._quota = slot0._quota - 1
 	end
 end
 
-function ys.Battle.BattleBuffEffect.doOnHPRatioUpdate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.doOnHPRatioUpdate = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.doOnFriendlyHPRatioUpdate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.doOnFriendlyHPRatioUpdate = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onSubmarineDive(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onSubmarineDive = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onSubmarineRaid(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onSubmarineRaid = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onSubmarineFloat(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onSubmarineFloat = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onSubmarineRetreat(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onSubmarineRetreat = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onSubmarineAid(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onSubmarineAid = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onSubmarinFreeDive(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onSubmarinFreeDive = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onSubmarinFreeFloat(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onSubmarinFreeFloat = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.onAntiSubHateChain(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onSubmarineFreeSpecial = function (slot0, slot1, slot2, slot3)
+	slot0:onTrigger(slot1, slot2, slot3)
+end
+
+ys.Battle.BattleBuffEffect.onAntiSubHateChain = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, attach)
 end
 
-function ys.Battle.BattleBuffEffect.onRetreat(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.onRetreat = function (slot0, slot1, slot2, slot3)
 	slot0:onTrigger(slot1, slot2, slot3)
 end
 
-function ys.Battle.BattleBuffEffect.Clear(slot0)
+ys.Battle.BattleBuffEffect.Clear = function (slot0)
 	slot0._commander = nil
 end
 
-function ys.Battle.BattleBuffEffect.getTargetList(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffEffect.getTargetList = function (slot0, slot1, slot2, slot3)
 	if type(slot2) == "string" then
-		if uv0.Battle.BattleTargetChoise[slot2] == nil then
+		if slot0.Battle.BattleTargetChoise[slot2] == nil then
 			return slot0:GetListByAttr(slot1, slot2)
 		else
-			return uv0.Battle.BattleTargetChoise[slot2](slot1, slot3)
+			return slot0.Battle.BattleTargetChoise[slot2](slot1, slot3)
 		end
 	elseif type(slot2) == "table" then
 		slot4 = nil
 
 		for slot8, slot9 in ipairs(slot2) do
-			slot4 = uv0.Battle.BattleTargetChoise[slot9](slot1, slot3, slot4)
+			slot4 = slot0.Battle.BattleTargetChoise[slot9](slot1, slot3, slot4)
 		end
 
 		return slot4
 	end
 end
 
-function ys.Battle.BattleBuffEffect.GetListByAttr(slot0, slot1, slot2)
+ys.Battle.BattleBuffEffect.GetListByAttr = function (slot0, slot1, slot2)
 	slot3 = slot2:split("_")
 	slot4 = slot3[1]
 	slot5 = slot3[2]
@@ -503,16 +514,16 @@ function ys.Battle.BattleBuffEffect.GetListByAttr(slot0, slot1, slot2)
 	slot8 = {}
 
 	if slot3[4] == "Help" then
-		slot8 = uv0.Battle.BattleTargetChoise.TargetAllHelp(slot1)
+		slot8 = slot0.Battle.BattleTargetChoise.TargetAllHelp(slot1)
 	elseif slot7 == "Harm" then
-		slot8 = uv0.Battle.BattleTargetChoise.TargetAllHarm(slot1)
+		slot8 = slot0.Battle.BattleTargetChoise.TargetAllHarm(slot1)
 	end
 
 	table.sort(slot8, function (slot0, slot1)
-		if uv0 == "H" and #uv1 > 1 then
-			return slot1._attr[uv2] < slot0._attr[uv2]
-		elseif uv0 == "L" and #uv1 > 1 then
-			return slot0._attr[uv2] < slot1._attr[uv2]
+		if slot0 == "H" and #slot1 > 1 then
+			return slot1._attr[slot0._attr[]] < slot0._attr[]
+		elseif slot0 == "L" and #slot1 > 1 then
+			return slot0._attr[] < slot1._attr[slot0._attr[]]
 		end
 	end)
 
@@ -525,33 +536,36 @@ function ys.Battle.BattleBuffEffect.GetListByAttr(slot0, slot1, slot2)
 	return slot9
 end
 
-function ys.Battle.BattleBuffEffect.IsHappen(slot0, slot1)
+ys.Battle.BattleBuffEffect.IsHappen = function (slot0, slot1)
 	return math.random(100) < slot1
 end
 
-function ys.Battle.BattleBuffEffect.IsActive(slot0)
+ys.Battle.BattleBuffEffect.IsActive = function (slot0)
 	return slot0._isActive
 end
 
-function ys.Battle.BattleBuffEffect.SetActive(slot0)
+ys.Battle.BattleBuffEffect.SetActive = function (slot0)
 	slot0._isActive = true
 end
 
-function ys.Battle.BattleBuffEffect.NotActive(slot0)
+ys.Battle.BattleBuffEffect.NotActive = function (slot0)
 	slot0._isActive = false
 end
 
-function ys.Battle.BattleBuffEffect.IsLock(slot0)
+ys.Battle.BattleBuffEffect.IsLock = function (slot0)
 	return slot0._isLock
 end
 
-function ys.Battle.BattleBuffEffect.SetLock(slot0)
+ys.Battle.BattleBuffEffect.SetLock = function (slot0)
 	slot0._isLock = true
 end
 
-function ys.Battle.BattleBuffEffect.NotLock(slot0)
+ys.Battle.BattleBuffEffect.NotLock = function (slot0)
 	slot0._isLock = false
 end
 
-function ys.Battle.BattleBuffEffect.Dispose(slot0)
+ys.Battle.BattleBuffEffect.Dispose = function (slot0)
+	return
 end
+
+return

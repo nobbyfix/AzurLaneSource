@@ -1,6 +1,6 @@
 slot0 = class("BYBoatCommand", pm.SimpleCommand)
 
-function slot0.execute(slot0, slot1)
+slot0.execute = function (slot0, slot1)
 	if not slot1:getBody() then
 		return
 	end
@@ -14,8 +14,10 @@ function slot0.execute(slot0, slot1)
 	elseif slot3 == BACKYARD.CANCEL_BOAT_MOVE then
 		slot4:cancelShipMove(slot2.id)
 	elseif slot3 == BACKYARD.END_DRAG_BOAT then
+		slot5 = slot2.id
+
 		if slot4:getData():getArchByPos(slot2.pos) then
-			slot4:setArchInteraction(slot2.id, slot7.id)
+			slot4:setArchInteraction(slot5, slot7.id)
 		end
 
 		slot4:changeShipPos(slot5, slot6)
@@ -40,12 +42,16 @@ function slot0.execute(slot0, slot1)
 		slot4:changeShipPos(slot5, slot8)
 		slot4:addSpineInterAction(slot2.shipId, slot2.furnitureId)
 	elseif slot3 == BACKYARD.INTERACTION_STAGE then
-		if slot2.shipId and slot2.furnitureId then
-			slot4:setStageInteraction(slot5, slot2.furnitureId)
+		slot6 = slot2.furnitureId
+
+		if slot2.shipId and slot6 then
+			slot4:setStageInteraction(slot5, slot6)
 		end
 	elseif slot3 == BACKYARD.ADD_MOVE_ON_FURNITURE then
-		if slot2.shipId and slot2.furnitureId then
-			slot4:addMoveOnFurnitrue(slot5, slot2.furnitureId)
+		slot6 = slot2.furnitureId
+
+		if slot2.shipId and slot6 then
+			slot4:addMoveOnFurnitrue(slot5, slot6)
 		end
 	elseif slot3 == BACKYARD.CLEAR_STAGE_INTERACTION then
 		slot4:clearStageInteraction(slot2.shipId)
@@ -56,9 +62,11 @@ function slot0.execute(slot0, slot1)
 	elseif slot3 == BACKYARD.CLEAR_SPINE_EXTRA then
 		slot4:clearSpineExtraInterAction(slot2.shipId, slot2.furnitureId)
 	elseif slot3 == BACKYARD.SHIP_ADDED then
+		slot5 = slot2.id
+
 		if not slot0.house:getSingleByRamdom() then
 			pg.m02:sendNotification(GAME.EXIT_SHIP, {
-				shipId = slot2.id,
+				shipId = slot5,
 				callback = function ()
 					pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_notPosition_shipExit"))
 				end
@@ -68,10 +76,16 @@ function slot0.execute(slot0, slot1)
 		end
 	elseif slot3 == BACKYARD.SHIP_EXITED then
 		slot4:exitShipById(slot2.id)
+	elseif slot3 == BACKYARD.INTERACTION_TRANSPORT then
+		slot4:InterActionTransport(slot2.shipId, slot2.furnitureId)
+	elseif slot3 == BACKYARD.INTERACTION_TRANSPORT_AGAIN then
+		slot4:InterActionTransportAgain(slot2.shipId, slot2.furnitureId)
+	elseif slot3 == BACKYARD.INTERACTION_TRANSPORT_END then
+		slot4:InterActionTransportEnd(slot2.shipId, slot2.furnitureId)
 	end
 end
 
-function slot0.checkStageInterActionPos(slot0, slot1)
+slot0.checkStageInterActionPos = function (slot0, slot1)
 	if slot0.house:canMoveBoatOnFurniture(slot1.id, slot1:getStageId(), slot1:getPosition()) then
 		slot0.backYardHouseProxy:changeShipPos(slot2, slot4)
 		slot0.backYardHouseProxy:addMoveOnFurnitrue(slot2, slot3)
@@ -84,7 +98,7 @@ function slot0.checkStageInterActionPos(slot0, slot1)
 	end
 end
 
-function slot0.checkShipPos(slot0, slot1)
+slot0.checkShipPos = function (slot0, slot1)
 	slot2 = slot1.id
 	slot3 = slot1:getPosition()
 	slot4 = false
@@ -103,7 +117,7 @@ function slot0.checkShipPos(slot0, slot1)
 	end
 end
 
-function slot0.setPositionForShip(slot0, slot1)
+slot0.setPositionForShip = function (slot0, slot1)
 	if slot0.house:getSingleByRamdom() then
 		slot0.backYardHouseProxy:changeShipPos(slot1, slot2)
 		slot0.backYardHouseProxy:addShipMove(slot1)
@@ -112,7 +126,7 @@ function slot0.setPositionForShip(slot0, slot1)
 			shipId = slot1,
 			callback = function ()
 				pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_notPosition_shipExit"))
-				uv0.backYardHouseProxy:exitShipById(uv1)
+				pg.TipsMgr.GetInstance().ShowTips.backYardHouseProxy:exitShipById(pg.TipsMgr.GetInstance().ShowTips.backYardHouseProxy)
 			end
 		})
 	end

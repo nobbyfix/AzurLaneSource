@@ -139,8 +139,6 @@ slot8.InitData = function (slot0, slot1)
 		slot0._repressEnemyHpRant = slot2.repressEnemyHpRant
 	end
 
-	slot0._dropInfo = slot3.Battle.BattleDrops.New(slot1.DropInfoList)
-
 	slot0:InitStageData()
 
 	slot0._cldSystem = slot3.Battle.BattleCldSystem.New(slot0)
@@ -228,10 +226,6 @@ slot8.Clear = function (slot0)
 	slot0._cldSystem:Dispose()
 
 	slot0._cldSystem = nil
-
-	slot0._dropInfo:Dispose()
-
-	slot0._dropInfo = nil
 	slot0._dungeonInfo = nil
 	slot0._flagShipUnit = nil
 	slot0._friendlyShipList = nil
@@ -258,12 +252,6 @@ slot8.DeactiveProxy = function (slot0)
 end
 
 slot8.InitUserShipsData = function (slot0, slot1, slot2, slot3, slot4)
-	if slot0._battleInitData.battleType == SYSTEM_SUBMARINE_RUN then
-		for slot8, slot9 in ipairs(slot4) do
-			slot0:SpawnManualSub(slot9, slot3)
-		end
-	end
-
 	for slot8, slot9 in ipairs(slot2) do
 		slot10 = slot0:SpawnVanguard(slot9, slot3)
 	end
@@ -272,7 +260,17 @@ slot8.InitUserShipsData = function (slot0, slot1, slot2, slot3, slot4)
 		slot10 = slot0:SpawnMain(slot9, slot3)
 	end
 
-	slot0:GetFleetByIFF(slot3):SetSubUnitData(slot4)
+	slot5 = slot0:GetFleetByIFF(slot3)
+
+	if slot0._battleInitData.battleType == SYSTEM_SUBMARINE_RUN or slot6 == SYSTEM_SUB_ROUTINE then
+		for slot10, slot11 in ipairs(slot4) do
+			slot0:SpawnManualSub(slot11, slot3)
+		end
+
+		slot5:ShiftManualSub()
+	else
+		slot5:SetSubUnitData(slot4)
+	end
 end
 
 slot8.SetSubmarinAidData = function (slot0)
@@ -771,7 +769,7 @@ slot8.SpawnManualSub = function (slot0, slot1, slot2)
 	slot0:GetFleetByIFF(slot2).AddManualSubmarine(slot5, slot4)
 	slot0._cldSystem:InitShipCld(slot4)
 	slot0:DispatchEvent(slot1.Event.New(slot2.ADD_UNIT, {
-		type = slot0.UnitType.PLAYER_UNIT,
+		type = slot0.UnitType.SUB_UNIT,
 		unit = slot4
 	}))
 
@@ -906,7 +904,7 @@ slot8.KillUnit = function (slot0, slot1)
 			if table.contains(TeamType.SubShipType, slot2:GetTemplate().type) then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 79-82, warpins: 1 ---
+				--- BLOCK #0 79-83, warpins: 1 ---
 				slot0:UpdateHostileSubmarine(false)
 				--- END OF BLOCK #0 ---
 
@@ -918,40 +916,18 @@ slot8.KillUnit = function (slot0, slot1)
 
 
 		end
-
 		--- END OF BLOCK #0 ---
-
-		FLOW; TARGET BLOCK #1
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 83-87, warpins: 3 ---
-		if slot5 ~= slot1.UnitDeathReason.LEAVE and (slot0._dropInfo:CreateDrops(slot2:GetTemplateID()).itemCount ~= nil or slot7.resourceCount ~= nil) then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 102-119, warpins: 2 ---
-			slot0._dropInfo:DispatchEvent(slot2.Event.New(slot3.ENEMY_DROP, {
-				scenePos = slot2:GetPosition(),
-				drops = slot7
-			}))
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-		--- END OF BLOCK #1 ---
 
 
 
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 120-123, warpins: 1 ---
+		--- BLOCK #0 84-87, warpins: 1 ---
 		if slot4 == slot0.FRIENDLY_CODE then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 124-126, warpins: 1 ---
+			--- BLOCK #0 88-90, warpins: 1 ---
 			slot0._friendlyShipList[slot1] = nil
 			--- END OF BLOCK #0 ---
 
@@ -971,7 +947,7 @@ slot8.KillUnit = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 127-145, warpins: 5 ---
+	--- BLOCK #3 91-109, warpins: 5 ---
 	slot0:DispatchEvent(slot2.Event.New(slot3.REMOVE_UNIT, {
 		UID = slot1,
 		type = slot3,
@@ -1249,15 +1225,14 @@ slot8.generatePlayerUnit = function (slot0, slot1, slot2, slot3, slot4)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 22-44, warpins: 2 ---
-	slot10 = slot2.CreateBattleUnitData(slot5, slot3.UnitType.PLAYER_UNIT, slot2, slot1.tmpID, slot1.skinId, slot1.equipment, slot6, slot7, slot0._completelyRepress, slot0._repressReduce, nil, slot1.baseList, slot1.preloasList)
-	slot9 = slot2.CreateBattleUnitData(slot5, slot3.UnitType.PLAYER_UNIT, slot2, slot1.tmpID, slot1.skinId, slot1.equipment, slot6, slot7, slot0._completelyRepress, slot0._repressReduce, nil, slot1.baseList, slot1.preloasList).InitCurrentHP
+	--- BLOCK #1 22-29, warpins: 2 ---
+	slot8 = slot2.UnitType.PLAYER_UNIT
 
-	if not slot1.initHPRate then
+	if slot0._battleInitData.battleType == SYSTEM_SUBMARINE_RUN or slot9 == SYSTEM_SUB_ROUTINE then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 45-45, warpins: 1 ---
-		slot11 = 1
+		--- BLOCK #0 33-35, warpins: 2 ---
+		slot8 = slot2.UnitType.SUB_UNIT
 		--- END OF BLOCK #0 ---
 
 
@@ -1271,38 +1246,15 @@ slot8.generatePlayerUnit = function (slot0, slot1, slot2, slot3, slot4)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 46-67, warpins: 2 ---
-	slot9(slot10, slot11)
-	slot8:SetRarity(slot1.rarity)
-	slot8:SetShipName(slot1.name)
+	--- BLOCK #2 36-56, warpins: 2 ---
+	slot12 = slot3.CreateBattleUnitData(slot5, slot8, slot2, slot1.tmpID, slot1.skinId, slot1.equipment, slot6, slot7, slot0._completelyRepress, slot0._repressReduce, nil, slot1.baseList, slot1.preloasList)
+	slot11 = slot3.CreateBattleUnitData(slot5, slot8, slot2, slot1.tmpID, slot1.skinId, slot1.equipment, slot6, slot7, slot0._completelyRepress, slot0._repressReduce, nil, slot1.baseList, slot1.preloasList).InitCurrentHP
 
-	slot0._unitList[slot5] = slot8
-
-	slot0:setShipUnitBound(slot8)
-
-	if slot8:GetIFF() == slot0.FRIENDLY_CODE then
+	if not slot1.initHPRate then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 68-70, warpins: 1 ---
-		slot0._friendlyShipList[slot5] = slot8
-		--- END OF BLOCK #0 ---
-
-
-
-	else
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 71-77, warpins: 1 ---
-		if slot8:GetIFF() == slot0.FOE_CODE then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 78-79, warpins: 1 ---
-			slot0._foeShipList[slot5] = slot8
-			--- END OF BLOCK #0 ---
-
-
-
-		end
+		--- BLOCK #0 57-57, warpins: 1 ---
+		slot13 = 1
 		--- END OF BLOCK #0 ---
 
 
@@ -1316,15 +1268,60 @@ slot8.generatePlayerUnit = function (slot0, slot1, slot2, slot3, slot4)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 80-105, warpins: 3 ---
-	slot8:SetPosition(slot3)
-	slot2.InitUnitSkill(slot1, slot8)
-	slot2.InitEquipSkill(slot1.equipment, slot8, Ship.WEAPON_COUNT)
-	slot2.InitCommanderSkill(slot4, slot8)
-	slot8:SetGearScore(slot1.shipGS)
+	--- BLOCK #3 58-79, warpins: 2 ---
+	slot11(slot12, slot13)
+	slot10:SetRarity(slot1.rarity)
+	slot10:SetShipName(slot1.name)
 
-	return slot8
+	slot0._unitList[slot5] = slot10
+
+	slot0:setShipUnitBound(slot10)
+
+	if slot10:GetIFF() == slot0.FRIENDLY_CODE then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 80-82, warpins: 1 ---
+		slot0._friendlyShipList[slot5] = slot10
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 83-89, warpins: 1 ---
+		if slot10:GetIFF() == slot0.FOE_CODE then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 90-91, warpins: 1 ---
+			slot0._foeShipList[slot5] = slot10
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 92-117, warpins: 3 ---
+	slot10:SetPosition(slot3)
+	slot3.InitUnitSkill(slot1, slot10)
+	slot3.InitEquipSkill(slot1.equipment, slot10, Ship.WEAPON_COUNT)
+	slot3.InitCommanderSkill(slot4, slot10)
+	slot10:SetGearScore(slot1.shipGS)
+
+	return slot10
+	--- END OF BLOCK #4 ---
 
 
 
@@ -1403,17 +1400,6 @@ slot8.GetCountDown = function (slot0)
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-2, warpins: 1 ---
 	return slot0._countDown
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot8.GetDropInfo = function (slot0)
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-2, warpins: 1 ---
-	return slot0._dropInfo
 	--- END OF BLOCK #0 ---
 
 
@@ -2980,13 +2966,68 @@ slot8.SubmarineStrike = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 29-48, warpins: 1 ---
+	--- BLOCK #3 29-38, warpins: 1 ---
 	slot2:SubWarcry()
-	slot2:GetSubList()[1].TriggerBuff(slot5, slot0.BuffEffectType.ON_SUB_LEADER)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 39-55, warpins: 0 ---
+	for slot8, slot9 in ipairs(slot4) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 39-40, warpins: 1 ---
+		if slot8 == 1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 41-47, warpins: 1 ---
+			slot9:TriggerBuff(slot0.BuffEffectType.ON_SUB_LEADER)
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 48-53, warpins: 1 ---
+			slot9:TriggerBuff(slot0.BuffEffectType.ON_SUB_CONSORT)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 54-55, warpins: 3 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 56-63, warpins: 1 ---
+	slot5 = slot4[1]
+
 	slot2:GetSubAidVO():Cast()
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 

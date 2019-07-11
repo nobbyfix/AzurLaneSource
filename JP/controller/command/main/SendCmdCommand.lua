@@ -20,9 +20,27 @@ class("SendCmdCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 					})
 				end
 			end
-		elseif slot2.arg1 == "clear" and slot2.arg2 == "buffer" then
-			PlayerPrefs.DeleteAll()
-			PlayerPrefs.Save()
+		elseif slot2.arg1 == "clear" then
+			if slot2.arg2 == "buffer" then
+				PlayerPrefs.DeleteAll()
+				PlayerPrefs.Save()
+			end
+		elseif slot2.arg1 == "enemykill" then
+			slot3 = nil
+
+			if slot2.arg2 == "on" then
+				slot3 = 1
+
+				PlayerPrefs.SetInt("chapter_skip_battle", 1)
+				PlayerPrefs.Save()
+			elseif slot2.arg2 == "off" then
+				slot3 = 0
+
+				PlayerPrefs.SetInt("chapter_skip_battle", 0)
+				PlayerPrefs.Save()
+			end
+
+			pg.TipsMgr:GetInstance():ShowTips((slot3 == 1 and "已开启战斗跳略") or "已关闭战斗跳略")
 		end
 
 		return
@@ -38,15 +56,15 @@ class("SendCmdCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		arg3 = slot2.arg3
 	}, 11101, function (slot0)
 		print("response: " .. slot0.msg)
-		uv0:sendNotification(GAME.SEND_CMD_DONE, slot0.msg)
+		slot0:sendNotification(GAME.SEND_CMD_DONE, slot0.msg)
 
-		if uv1 == "into" and string.find(slot0.msg, "Result:ok") then
+		if slot0.sendNotification == "into" and string.find(slot0.msg, "Result:ok") then
 			ys.Battle.BattleState.GenerateVertifyData()
-			uv0:sendNotification(GAME.GO_SCENE, SCENE.COMBATLOAD, {
+			slot0:sendNotification(GAME.GO_SCENE, SCENE.COMBATLOAD, {
 				token = 99,
 				mainFleetId = 1,
 				prefabFleet = {},
-				stageId = tonumber(uv2),
+				stageId = tonumber(tonumber),
 				system = SYSTEM_TEST,
 				drops = {}
 			})
