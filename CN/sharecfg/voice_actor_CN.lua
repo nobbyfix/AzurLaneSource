@@ -743,5 +743,15 @@ pg.voice_actor_CN = {
 	{
 		actor_name = "柳原可奈子",
 		code = 186
+	},
+	{
+		actor_name = "真野步",
+		code = 187
+	},
+	{
+		actor_name = "大和田仁美",
+		code = 188
 	}
 }
+
+return

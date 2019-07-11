@@ -1,40 +1,41 @@
 slot0 = class("SpineCellView")
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.go = slot1
 	slot0.tf = slot0.go.transform
 	slot0.tfShip = slot0.tf:Find("ship")
+	slot0.validate = true
 	slot0._attachmentList = {}
 end
 
-function slot0.getOrder(slot0)
+slot0.getOrder = function (slot0)
 	return 0
 end
 
-function slot0.getLine(slot0)
+slot0.getLine = function (slot0)
 	return slot0.line
 end
 
-function slot0.setLine(slot0, slot1)
+slot0.setLine = function (slot0, slot1)
 	slot0.line = {
 		row = slot1.row,
 		column = slot1.column
 	}
 end
 
-function slot0.getPrefab(slot0)
+slot0.getPrefab = function (slot0)
 	return slot0.prefab
 end
 
-function slot0.setPrefab(slot0, slot1)
+slot0.setPrefab = function (slot0, slot1)
 	slot0.prefab = slot1
 end
 
-function slot0.getAction(slot0)
+slot0.getAction = function (slot0)
 	return slot0.action
 end
 
-function slot0.setAction(slot0, slot1)
+slot0.setAction = function (slot0, slot1)
 	slot0.action = slot1
 
 	if slot0.anim then
@@ -42,11 +43,11 @@ function slot0.setAction(slot0, slot1)
 	end
 end
 
-function slot0.getModel(slot0)
+slot0.getModel = function (slot0)
 	return slot0.model
 end
 
-function slot0.setModel(slot0, slot1)
+slot0.setModel = function (slot0, slot1)
 	slot1.transform.name = "model"
 	slot1.transform.GetComponent(slot2, "SkeletonGraphic").raycastTarget = false
 
@@ -63,63 +64,102 @@ function slot0.setModel(slot0, slot1)
 	slot0:setAction(slot0:getAction())
 end
 
-function slot0.setAttachment(slot0, slot1)
+slot0.setAttachment = function (slot0, slot1)
 	slot0._attachmentInfo = slot1
 end
 
-function slot0.loadSpine(slot0, slot1)
+slot0.loadSpine = function (slot0, slot1)
+	if slot0.lastPrefab == slot0:getPrefab() then
+		if slot1 then
+			slot1()
+		end
+
+		return
+	end
+
 	slot0:unloadSpine()
+
+	function slot3()
+		for slot3, slot4 in pairs(slot0._attachmentInfo) do
+			if slot4.attachment_combat_ui[1] ~= "" then
+				ResourceMgr.Inst:getAssetAsync("Effect/" .. slot5, slot5, UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
+					if slot0 ~= slot1:getPrefab() or not slot1.validate then
+						Object.Destroy(slot0)
+
+						return
+					end
+
+					slot1 = Object.Instantiate(slot0)
+					slot1._attachmentList[] = slot1
+
+					tf(slot1):SetParent(tf(model))
+
+					tf(slot1).localPosition = BuildVector3(slot3.attachment_combat_ui[2])
+				end), true, true)
+			end
+		end
+	end
+
 	PoolMgr.GetInstance():GetSpineChar(slot0:getPrefab(), true, function (slot0)
-		if uv0 ~= uv1:getPrefab() then
-			PoolMgr.GetInstance():ReturnSpineChar(uv0, slot0)
+		if slot0 ~= slot1:getPrefab() or not slot1.validate then
+			PoolMgr.GetInstance():ReturnSpineChar(slot0, slot0)
 
 			return
 		end
 
-		uv1:setModel(slot0)
+		slot1:setModel(slot0)
 
-		if uv2 then
-			uv2()
+		if slot1 then
+			slot2()
 		end
 
-		if uv1._attachmentInfo then
-			for slot4, slot5 in pairs(uv1._attachmentInfo) do
-				if slot5.attachment_combat_ui[1] ~= "" then
-					ResourceMgr.Inst:getAssetAsync("Effect/" .. slot6, slot6, UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
-						if uv0 == uv1:getPrefab() then
-							slot1 = Object.Instantiate(slot0)
-							uv1._attachmentList[#uv1._attachmentList + 1] = slot1
-
-							tf(slot1):SetParent(tf(uv2))
-
-							tf(slot1).localPosition = BuildVector3(uv3.attachment_combat_ui[2])
-						end
-					end), true, true)
-				end
-			end
+		if slot1._attachmentInfo then
+			slot3()
 		end
+
+		slot1:OnLoadSpine()
 	end)
+
+	slot0.lastPrefab = slot0.getPrefab()
 end
 
-function slot0.unloadSpine(slot0)
+slot0.OnLoadSpine = function (slot0)
+	return
+end
+
+slot0.unloadSpine = function (slot0)
 	if slot0.prefab and slot0.model then
+		slot0:SetSpineVisible(true)
+		slot0:setAction(ChapterConst.ShipIdleAction)
+		slot0:ClearAttachments()
 		PoolMgr.GetInstance():ReturnSpineChar(slot0.prefab, slot0.model)
 
 		slot0.model = nil
 	end
 end
 
-function slot0.clear(slot0)
+slot0.ClearAttachments = function (slot0)
+	for slot4, slot5 in pairs(slot0._attachmentList) do
+		Object.Destroy(slot5)
+	end
+
+	slot0._attachmentList = {}
+end
+
+slot0.SetSpineVisible = function (slot0, slot1)
+	if not slot0.model then
+		return
+	end
+
+	slot2:GetComponent("SkeletonGraphic").color = Color.New(1, 1, 1, (slot1 and 1) or 0)
+end
+
+slot0.clear = function (slot0)
 	slot0:unloadSpine()
 
 	slot0.prefab = nil
 	slot0.anim = nil
-
-	for slot4, slot5 in ipairs(slot0._attachmentList) do
-		Object.Destroy(slot5)
-	end
-
-	slot0._attachmentList = nil
+	slot0.validate = nil
 end
 
 return slot0

@@ -31,6 +31,8 @@ slot0.init = function (slot0)
 	slot0.itemTpl = slot0:getTpl("item_tpl")
 	slot0.descChallengeNum = slot0:findTF("challenge_count", slot0.descMain)
 	slot0.descChallengeText = slot0:findTF("Text", slot0.descChallengeNum)
+	slot0.challengeQuotaDaily = slot0:findTF("challenge_count/label", slot0.descMain)
+	slot0.challengeQuotaWeekly = slot0:findTF("challenge_count/week_label", slot0.descMain)
 	slot0.fleetEditView = slot0:findTF("fleet_edit")
 	slot0.resource = slot0:findTF("resource")
 	slot0.rightBtn = slot0:findTF("arrows/arrow1")
@@ -84,6 +86,8 @@ slot0.didEnter = function (slot0)
 	else
 		slot0:enableDescMode(false)
 	end
+
+	slot0:tryPlayGuide()
 end
 
 slot0.initItems = function (slot0)
@@ -222,6 +226,8 @@ slot0.displayStageList = function (slot0, slot1)
 		setText(slot0.descChallengeText, string.format("%d/%d", slot2.limit_time - slot3, slot2.limit_time))
 	end
 
+	setActive(slot0.challengeQuotaDaily, slot2.limit_type == 1)
+	setActive(slot0.challengeQuotaWeekly, slot2.limit_type == 2)
 	removeAllChildren(slot0.stageContain)
 
 	slot0.stageTFs = {}
@@ -595,6 +601,41 @@ slot0.flipToSpecificCard = function (slot0, slot1)
 	--- BLOCK #2 26-26, warpins: 1 ---
 	return
 	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot0.tryPlayGuide = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-12, warpins: 1 ---
+	if pg.StoryMgr:GetInstance():IsPlayed("NG0015") then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 13-13, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 14-29, warpins: 2 ---
+	triggerButton(slot0:findTF("help_btn"))
+	pg.m02:sendNotification(GAME.STORY_UPDATE, {
+		storyId = slot2
+	})
+
+	return
+	--- END OF BLOCK #1 ---
 
 
 

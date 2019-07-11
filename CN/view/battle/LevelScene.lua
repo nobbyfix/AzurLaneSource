@@ -647,8 +647,7 @@ slot0.updateChapterVO = function (slot0, slot1, slot2)
 			slot5 = true
 
 			if slot0.grid then
-				slot0.grid:clearFleets()
-				slot0.grid:initFleets()
+				slot0.grid:RefreshFleetCells()
 
 				slot4 = true
 			end
@@ -675,7 +674,7 @@ slot0.updateChapterVO = function (slot0, slot1, slot2)
 
 			if slot0.grid then
 				if slot2 >= 0 and bit.band(slot2, ChapterConst.DirtyFleet) <= 0 then
-					slot0.grid:updateFleet(slot1.findex)
+					slot0.grid:updateFleet(slot1.fleets[slot1.findex].id)
 				end
 
 				slot0.grid:updateAttachments()
@@ -3111,10 +3110,11 @@ slot0.updateMap = function (slot0)
 				if not setImageSprite:isEscort() then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 25-50, warpins: 1 ---
-					slot0.map.pivot = Vector2(0, 0)
-					slot0.float.sizeDelta = Vector2(GetComponent(slot0.map, "Image").preferredWidth, GetComponent(slot0.map, "Image").preferredHeight)
-					slot0.float.localPosition = slot0.map.localPosition
+					--- BLOCK #0 25-51, warpins: 1 ---
+					slot1 = GetComponent(slot0.map, "Image")
+					slot0.map.pivot = Vector2(0.5, 0.5)
+					slot0.float.pivot = Vector2(0.5, 0.5)
+					slot0.float.localPosition = Vector2(0, 0)
 					--- END OF BLOCK #0 ---
 
 
@@ -3122,14 +3122,15 @@ slot0.updateMap = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 51-78, warpins: 1 ---
+					--- BLOCK #0 52-86, warpins: 1 ---
 					slot0.map.pivot = Vector2(0.5, 0.5)
+					slot0.float.pivot = Vector2(0.5, 0.5)
 					slot3 = 1
 
 					if slot0.map.rect.width / slot0.map.rect.height < slot0._tf.rect.width / slot0._tf.rect.height then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 79-92, warpins: 1 ---
+						--- BLOCK #0 87-100, warpins: 1 ---
 						slot0.escortChapters.localScale = Vector3(slot0._tf.rect.width / 1280, , 1)
 						--- END OF BLOCK #0 ---
 
@@ -3138,7 +3139,7 @@ slot0.updateMap = function (slot0)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 93-105, warpins: 1 ---
+						--- BLOCK #0 101-113, warpins: 1 ---
 						slot0.escortChapters.localScale = Vector3(slot0._tf.rect.height / 720, , 1)
 						--- END OF BLOCK #0 ---
 
@@ -3163,7 +3164,7 @@ slot0.updateMap = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 106-106, warpins: 5 ---
+			--- BLOCK #1 114-114, warpins: 5 ---
 			return
 			--- END OF BLOCK #1 ---
 
@@ -5704,12 +5705,14 @@ slot0.updateFleetEdit = function (slot0, slot1, slot2)
 	if slot0.levelFleetView and slot0.levelFleetView:GetLoaded() then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 10-17, warpins: 1 ---
-		if slot0.contextData.map:getChapter(slot1) and slot0.levelFleetView.chapter.id == slot4.id then
+		--- BLOCK #0 10-13, warpins: 1 ---
+		slot3 = slot0.contextData.map
+
+		if slot1 and slot0.levelFleetView.chapter.id == slot1.id then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 24-29, warpins: 1 ---
-			slot0.levelFleetView:ActionInvoke("setOnHard", slot4)
+			--- BLOCK #0 20-25, warpins: 1 ---
+			slot0.levelFleetView:ActionInvoke("setOnHard", slot1)
 			--- END OF BLOCK #0 ---
 
 
@@ -5723,12 +5726,12 @@ slot0.updateFleetEdit = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 30-31, warpins: 3 ---
-		if slot4 and slot0.levelCMDFormationView and slot0.levelCMDFormationView:GetLoaded() then
+		--- BLOCK #1 26-27, warpins: 3 ---
+		if slot1 and slot0.levelCMDFormationView and slot0.levelCMDFormationView:GetLoaded() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 41-50, warpins: 1 ---
-			slot0.levelCMDFormationView:ActionInvoke("updateFleet", slot4:wrapEliteFleet(slot2))
+			--- BLOCK #0 37-46, warpins: 1 ---
+			slot0.levelCMDFormationView:ActionInvoke("updateFleet", slot1:wrapEliteFleet(slot2))
 			--- END OF BLOCK #0 ---
 
 
@@ -5747,7 +5750,7 @@ slot0.updateFleetEdit = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 51-51, warpins: 6 ---
+	--- BLOCK #1 47-47, warpins: 6 ---
 	return
 	--- END OF BLOCK #1 ---
 
@@ -6511,7 +6514,7 @@ slot0.switchToMap = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 59-187, warpins: 2 ---
+	--- BLOCK #3 59-188, warpins: 2 ---
 	slot0:frozen()
 	slot0:destroyGrid()
 	slot0:RecordTween("mapScale", LeanTween.value(go(slot0.map), slot0.map.localScale, Vector3.New(1, 1, 1), slot0):setOnUpdateVector3(function (slot0)
@@ -6558,7 +6561,7 @@ slot0.switchToMap = function (slot0)
 
 	end)):setEase(LeanTweenType.easeOutSine).uniqueId)
 
-	slot5 = LeanTween.value(go(slot0.map), slot0.map.pivot, Vector2.zero, slot0)
+	slot5 = LeanTween.value(go(slot0.map), slot0.map.pivot, Vector2(0.5, 0.5), slot0)
 
 	slot5:setOnUpdateVector2(function (slot0)
 
@@ -6580,13 +6583,13 @@ slot0.switchToMap = function (slot0)
 	shiftPanel(slot0.leftChapter, 0, 0, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
 	shiftPanel(slot0.rightChapter, 0, 0, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
 	shiftPanel(slot0.topChapter, 0, 0, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
-	slot0.levelStageView:ShiftPanelToChapter(0)
+	slot0.levelStageView:ShiftStagePanelOut()
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.topPanel, slot0._tf)
 
 	if slot0.ambushWarning and slot0.ambushWarning.activeSelf then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 192-199, warpins: 1 ---
+		--- BLOCK #0 193-200, warpins: 1 ---
 		slot0.ambushWarning:SetActive(false)
 		slot0:unfrozen()
 		--- END OF BLOCK #0 ---
@@ -6602,7 +6605,7 @@ slot0.switchToMap = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 200-213, warpins: 3 ---
+	--- BLOCK #4 201-214, warpins: 3 ---
 	slot0:onSubLayerContextChange()
 	slot0:setChapter(nil)
 	slot0:updateEscortInfo()
@@ -6610,7 +6613,7 @@ slot0.switchToMap = function (slot0)
 	if slot2 == ChapterConst.TypeSham then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 214-228, warpins: 1 ---
+		--- BLOCK #0 215-229, warpins: 1 ---
 		slot0.contextData.mapIdx = slot0.contextData.chapterMapIdx
 		slot0.contextData.chapterMapIdx = nil
 
@@ -6622,11 +6625,11 @@ slot0.switchToMap = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 229-232, warpins: 1 ---
+		--- BLOCK #0 230-233, warpins: 1 ---
 		if slot2 == ChapterConst.TypeNone then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 233-244, warpins: 1 ---
+			--- BLOCK #0 234-245, warpins: 1 ---
 			slot0:updateMapItems()
 			slot0:switchDifficulty()
 			slot0:updateActivityBtns()
@@ -6649,7 +6652,7 @@ slot0.switchToMap = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 245-246, warpins: 3 ---
+	--- BLOCK #5 246-247, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -9667,13 +9670,14 @@ end
 slot0.openCommanderPanel = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-3, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = nil
+	slot5 = slot2.id
 
 	if not slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 4-5, warpins: 1 ---
+		--- BLOCK #0 5-6, warpins: 1 ---
 		function slot4(slot0)
 
 			-- Decompilation error in this vicinity:
@@ -9687,7 +9691,65 @@ slot0.openCommanderPanel = function (slot0, slot1, slot2, slot3)
 					fleetId = slot2.id
 				}
 
-				slot0:emit(LevelMediator2.ON_SELECT_COMMANDER, slot0.pos, slot2.id, slot0.emit)
+				slot0:emit(LevelMediator2.ON_SELECT_COMMANDER, slot0.pos, slot2.id, )
+				slot0:closeCommanderPanel()
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 30-46, warpins: 1 ---
+				slot0:emit(LevelMediator2.ON_COMMANDER_OP, {
+					FleetType = LevelUIConst.FLEET_TYPE_SELECT,
+					data = slot0,
+					fleetId = slot2.id,
+					chapterId = slot1
+				}, )
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 47-47, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 7-7, warpins: 1 ---
+		function slot4(slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-5, warpins: 1 ---
+			if slot0.type == LevelUIConst.COMMANDER_OP_ADD then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 6-29, warpins: 1 ---
+				slot0.contextData.eliteCommanderSelected = {
+					index = slot1,
+					pos = slot0.pos,
+					chapterId = 
+				}
+
+				slot0:emit(LevelMediator2.ON_SELECT_ELITE_COMMANDER, slot0.emit, slot0.pos, )
 				slot0:closeCommanderPanel()
 				--- END OF BLOCK #0 ---
 
@@ -9698,11 +9760,11 @@ slot0.openCommanderPanel = function (slot0, slot1, slot2, slot3)
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 30-45, warpins: 1 ---
 				slot0:emit(LevelMediator2.ON_COMMANDER_OP, {
-					FleetType = LevelUIConst.FLEET_TYPE_SELECT,
+					FleetType = LevelUIConst.FLEET_TYPE_EDIT,
 					data = slot0,
-					fleetId = slot2.id,
-					chapterId = slot0.emit
-				})
+					index = slot1,
+					chapterId = slot2
+				}, )
 				--- END OF BLOCK #0 ---
 
 
@@ -9727,64 +9789,6 @@ slot0.openCommanderPanel = function (slot0, slot1, slot2, slot3)
 
 
 
-	else
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 6-6, warpins: 1 ---
-		function slot4(slot0)
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-5, warpins: 1 ---
-			if slot0.type == LevelUIConst.COMMANDER_OP_ADD then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 6-29, warpins: 1 ---
-				slot0.contextData.eliteCommanderSelected = {
-					index = slot1,
-					pos = slot0.pos,
-					chapterId = 
-				}
-
-				slot0:emit(LevelMediator2.ON_SELECT_ELITE_COMMANDER, slot0.emit, slot0.pos, slot0)
-				slot0:closeCommanderPanel()
-				--- END OF BLOCK #0 ---
-
-
-
-			else
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 30-44, warpins: 1 ---
-				slot0:emit(LevelMediator2.ON_COMMANDER_OP, {
-					FleetType = LevelUIConst.FLEET_TYPE_EDIT,
-					data = slot0,
-					index = slot1,
-					chapterId = slot0
-				})
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 45-45, warpins: 2 ---
-			return
-			--- END OF BLOCK #1 ---
-
-
-
-		end
-		--- END OF BLOCK #0 ---
-
-
-
 	end
 
 	--- END OF BLOCK #0 ---
@@ -9794,7 +9798,7 @@ slot0.openCommanderPanel = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 7-32, warpins: 2 ---
+	--- BLOCK #1 8-33, warpins: 2 ---
 	slot0.levelCMDFormationView = LevelCMDFormationView.New(slot0.topPanel, slot0.event, slot0.contextData)
 
 	slot0.levelCMDFormationView:Load()
@@ -10365,13 +10369,13 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #11 156-196, warpins: 2 ---
+	--- BLOCK #11 156-200, warpins: 2 ---
 	LeanTween.cancel(go(slot0.damageText))
 
 	slot0.map.localScale = Vector3.one
-	slot0.map.pivot = Vector2.zero
+	slot0.map.pivot = Vector2(0.5, 0.5)
 	slot0.float.localScale = Vector3.one
-	slot0.float.pivot = Vector2.zero
+	slot0.float.pivot = Vector2(0.5, 0.5)
 
 	clearImageSprite(slot0.map)
 	_.each(slot0.cloudRTFs, function (slot0)
@@ -10391,11 +10395,11 @@ slot0.willExit = function (slot0)
 	if getProxy(ChapterProxy) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 197-203, warpins: 1 ---
+		--- BLOCK #0 201-207, warpins: 1 ---
 		if not slot0.contextData.map:isActivity() and not slot2:isSham() and not slot2:isGuildBoss() and not slot2:isEscort() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 219-224, warpins: 1 ---
+			--- BLOCK #0 223-228, warpins: 1 ---
 			slot1:recordLastMap(ChapterProxy.LAST_MAP, slot2.id)
 			--- END OF BLOCK #0 ---
 
@@ -10410,11 +10414,11 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 225-228, warpins: 5 ---
+		--- BLOCK #1 229-232, warpins: 5 ---
 		if Map.lastMapForActivity then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 229-235, warpins: 1 ---
+			--- BLOCK #0 233-239, warpins: 1 ---
 			slot1:recordLastMap(ChapterProxy.LAST_MAP_FOR_ACTIVITY, Map.lastMapForActivity)
 			--- END OF BLOCK #0 ---
 
@@ -10434,7 +10438,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #12 236-236, warpins: 3 ---
+	--- BLOCK #12 240-240, warpins: 3 ---
 	return
 	--- END OF BLOCK #12 ---
 

@@ -2,7 +2,7 @@ slot0 = class("BackyardBoatVO")
 slot0.INTERACTION_TYPE_BEFORE = 0
 slot0.INTERACTION_TYPE_AFTER = 1
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.id = slot1.id
 	slot0.configId = slot1.configId
 	slot0.gruopId = pg.ship_data_template[slot0.configId].group_type
@@ -12,8 +12,8 @@ function slot0.Ctor(slot0, slot1)
 	slot0.money = slot1.state_info_4
 	slot0.energy = slot1.energy
 	slot0.skinId = slot1.skinId
-	slot0.furnitureId = slot1.furnitureId
 	slot0.lockPathList = {}
+	slot0.furnitureId = slot1.furnitureId
 	slot0.spineId = slot1.spineId
 	slot0.stageId = slot1.stageId
 	slot0.spineExtra = nil
@@ -21,147 +21,147 @@ function slot0.Ctor(slot0, slot1)
 	slot0.rate = slot1.rate or 100
 end
 
-function slot0.hasSpineExtra(slot0)
+slot0.hasSpineExtra = function (slot0)
 	return slot0.spineExtra ~= nil
 end
 
-function slot0.getSpineExtraId(slot0)
+slot0.getSpineExtraId = function (slot0)
 	return slot0.spineExtra
 end
 
-function slot0.addSpineExtra(slot0, slot1)
+slot0.addSpineExtra = function (slot0, slot1)
 	slot0.spineExtra = slot1
 end
 
-function slot0.removeSpineExtra(slot0)
+slot0.removeSpineExtra = function (slot0)
 	slot0.spineExtra = nil
 end
 
-function slot0.setArchId(slot0, slot1)
+slot0.setArchId = function (slot0, slot1)
 	slot0.archId = slot1
 end
 
-function slot0.getArchId(slot0)
+slot0.getArchId = function (slot0)
 	return slot0.archId
 end
 
-function slot0.setStageId(slot0, slot1)
+slot0.setStageId = function (slot0, slot1)
 	slot0.stageId = slot1
 end
 
-function slot0.getStageId(slot0)
+slot0.getStageId = function (slot0)
 	return slot0.stageId
 end
 
-function slot0.inStageFurniture(slot0)
+slot0.inStageFurniture = function (slot0)
 	return slot0.stageId ~= nil
 end
 
-function slot0.getRate(slot0)
+slot0.getRate = function (slot0)
 	return slot0.rate
 end
 
-function slot0.reduceRate(slot0)
+slot0.reduceRate = function (slot0)
 	slot0.rate = 0
 end
 
-function slot0.riseRate(slot0)
+slot0.riseRate = function (slot0)
 	slot0.rate = math.min(slot0.rate + 5, 50)
 end
 
-function slot0.getSpeed(slot0)
+slot0.getSpeed = function (slot0)
 	return math.floor(1 / pg.ship_data_statistics[slot0.configId].backyard_speed)
 end
 
-function slot0.setLockPathList(slot0, slot1)
+slot0.setLockPathList = function (slot0, slot1)
 	slot0.lockPathList = slot1
 end
 
-function slot0.setSpineId(slot0, slot1)
+slot0.setSpineId = function (slot0, slot1)
 	slot0.spineId = slot1
 end
 
-function slot0.getSpineId(slot0)
+slot0.getSpineId = function (slot0)
 	return slot0.spineId
 end
 
-function slot0.clearSpineId(slot0)
+slot0.clearSpineId = function (slot0)
 	slot0.spineId = nil
 end
 
-function slot0.hasSpineInterAction(slot0)
+slot0.hasSpineInterAction = function (slot0)
 	return slot0.spineId ~= nil
 end
 
-function slot0.getLockPathList(slot0)
+slot0.getLockPathList = function (slot0)
 	return slot0.lockPathList
 end
 
-function slot0.clearLockPathList(slot0)
+slot0.clearLockPathList = function (slot0)
 	slot0.lockPathList = {}
 end
 
-function slot0.hasInterActionFurnitrue(slot0)
+slot0.hasInterActionFurnitrue = function (slot0)
 	return slot0.furnitureId ~= nil
 end
 
-function slot0.setInterActionFurnitrueId(slot0, slot1)
+slot0.setInterActionFurnitrueId = function (slot0, slot1)
 	slot0.furnitureId = slot1
 end
 
-function slot0.getInterActionFurnitrueId(slot0)
+slot0.getInterActionFurnitrueId = function (slot0)
 	return slot0.furnitureId
 end
 
-function slot0.setPosition(slot0, slot1)
+slot0.setPosition = function (slot0, slot1)
 	slot0.position = slot1
 end
 
-function slot0.setLockPosition(slot0, slot1)
+slot0.setLockPosition = function (slot0, slot1)
 	slot0.lockPosition = slot1
 end
 
-function slot0.setInimacy(slot0, slot1)
+slot0.setInimacy = function (slot0, slot1)
 	slot0.inimacy = slot1
 end
 
-function slot0.hasInimacy(slot0)
+slot0.hasInimacy = function (slot0)
 	return slot0.inimacy ~= 0
 end
 
-function slot0.hasMoney(slot0)
+slot0.hasMoney = function (slot0)
 	return slot0.money ~= 0
 end
 
-function slot0.setMoney(slot0, slot1)
+slot0.setMoney = function (slot0, slot1)
 	slot0.money = slot1
 end
 
-function slot0.getLockPosition(slot0)
+slot0.getLockPosition = function (slot0)
 	return slot0.lockPosition
 end
 
-function slot0.getPosition(slot0)
+slot0.getPosition = function (slot0)
 	return slot0.position
 end
 
-function slot0.getConfig(slot0, slot1)
+slot0.getConfig = function (slot0, slot1)
 	return pg.ship_data_statistics[slot0.configId][slot1]
 end
 
-function slot0.getPrefab(slot0)
+slot0.getPrefab = function (slot0)
 	return slot0.rawShip:getPrefab()
 end
 
-function slot0.getAttachmentPrefab(slot0)
+slot0.getAttachmentPrefab = function (slot0)
 	return slot0.rawShip:getAttachmentPrefab()
 end
 
-function slot0.getPainting(slot0)
+slot0.getPainting = function (slot0)
 	return slot0.rawShip:getPainting()
 end
 
-function slot0.getSurroundGrid(slot0)
+slot0.getSurroundGrid = function (slot0)
 	slot1 = slot0:getPosition()
 
 	table.insert(slot2, Vector2(slot1.x, slot1.y + 1))

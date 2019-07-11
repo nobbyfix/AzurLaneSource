@@ -27,6 +27,7 @@ slot0.AirDominate = "AirDominate"
 slot0.OxyMax = "oxy_max"
 slot0.OxyCost = "oxy_cost"
 slot0.OxyRecovery = "oxy_recovery"
+slot0.OxyRecoveryBench = "oxy_recovery_bench"
 slot0.OxyAttackDuration = "attack_duration"
 slot0.OxyRaidDistance = "raid_distance"
 slot0.SonarRange = "sonarRange"
@@ -34,7 +35,7 @@ slot0.SonarInterval = "sonarInterval"
 slot0.SonarDuration = "sonarDuration"
 slot0.Tactics = "tactics"
 
-function slot0.Type2Name(slot0)
+slot0.Type2Name = function (slot0)
 	return i18n("attribute_" .. slot0)
 end
 
@@ -55,8 +56,8 @@ slot0.eliteConditionCompare = {
 	[-1] = i18n("common_compare_smaller")
 }
 
-function slot0.EliteCondition2Name(slot0)
-	return uv0.eliteCondition[slot0]
+slot0.EliteCondition2Name = function (slot0)
+	return slot0.eliteCondition[slot0]
 end
 
 return slot0

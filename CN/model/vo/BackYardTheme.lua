@@ -3,7 +3,7 @@ slot0.TYPE_SYSTEM = 1
 slot0.TYPE_USER = 2
 slot0.MAX_USER_THEME = 5
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.id = slot1.id
 	slot0.configId = slot1.id
 	slot0.name = slot1.name or ""
@@ -13,7 +13,6 @@ function slot0.Ctor(slot0, slot1)
 		slot0:initTheme(slot4)
 
 		if slot0:isSameConfigId(slot0.furnitures) then
-			print("check theme" .. slot0.id)
 			slot0:checkSystemTheme()
 		end
 	else
@@ -21,7 +20,7 @@ function slot0.Ctor(slot0, slot1)
 	end
 end
 
-function slot0.isSameConfigId(slot0, slot1)
+slot0.isSameConfigId = function (slot0, slot1)
 	for slot5, slot6 in ipairs(slot1) do
 		for slot10, slot11 in ipairs(slot1) do
 			if slot5 ~= slot10 and slot6.id == slot11.id then
@@ -33,13 +32,15 @@ function slot0.isSameConfigId(slot0, slot1)
 	return false
 end
 
-function slot0.checkSystemTheme(slot0)
+slot0.checkSystemTheme = function (slot0)
+	slot1 = getProxy(DormProxy)
 	slot2 = {}
+	slot3 = {}
 
 	for slot7, slot8 in pairs(slot0.furnitruesByIds) do
-		if not getProxy(DormProxy):getFurniById(slot7) then
+		if not slot1:getFurniById(slot7) then
 			if slot8.parent ~= 0 then
-				table.insert({}, {
+				table.insert(slot3, {
 					pid = slot8.parent,
 					id = slot7
 				})
@@ -70,19 +71,18 @@ function slot0.checkSystemTheme(slot0)
 	end
 end
 
-function slot0.initTheme(slot0, slot1)
+slot0.initTheme = function (slot0, slot1)
 	slot2 = getProxy(DormProxy).floor
 	slot0.furnitures = {}
 
 	for slot6, slot7 in ipairs(slot1.furniture_put_list) do
-		slot8 = {
-			[tonumber(slot13.id)] = {
+		slot8 = {}
+
+		for slot12, slot13 in ipairs(slot7.child) do
+			slot8[tonumber(slot13.id)] = {
 				x = slot13.x,
 				y = slot13.y
 			}
-		}
-
-		for slot12, slot13 in ipairs(slot7.child) do
 		end
 
 		table.insert(slot0.furnitures, BackyardFurnitureVO.New({
@@ -101,13 +101,14 @@ function slot0.initTheme(slot0, slot1)
 	slot0.furnitruesByIds = slot0:getThemeFurnitures(slot1)
 end
 
-function slot0.getThemeFurnitures(slot0, slot1)
+slot0.getThemeFurnitures = function (slot0, slot1)
 	slot2 = getProxy(DormProxy):getData().level
 	slot3 = {}
+	slot4 = {}
 
 	for slot8, slot9 in ipairs(slot0.furnitures) do
-		if ({})[tonumber(slot9.id)] then
-			()[tonumber(slot9.id)].count = ()[tonumber(slot9.id)].count + 1
+		if slot4[tonumber(slot9.id)] then
+			slot4[tonumber(slot9.id)].count = slot4[tonumber(slot9.id)].count + 1
 		else
 			slot4[tonumber(slot9.id)] = {
 				count = 1,
@@ -128,15 +129,15 @@ function slot0.getThemeFurnitures(slot0, slot1)
 	})
 end
 
-function slot0.bindConfigTable(slot0)
+slot0.bindConfigTable = function (slot0)
 	return pg.backyard_theme_template
 end
 
-function slot0.isUnLock(slot0, slot1)
+slot0.isUnLock = function (slot0, slot1)
 	return slot0:getConfig("deblocking") <= slot1.level
 end
 
-function slot0.isBought(slot0, slot1)
+slot0.isBought = function (slot0, slot1)
 	if slot0.type == slot0.TYPE_SYSTEM then
 		for slot5, slot6 in pairs(slot0:getConfig("ids")) do
 			if not slot1[slot6] then
@@ -148,21 +149,25 @@ function slot0.isBought(slot0, slot1)
 	return true
 end
 
-function slot0.getRemainFurIds(slot0, slot1)
+slot0.getRemainFurIds = function (slot0, slot1)
+	slot2 = {}
+
 	for slot6, slot7 in pairs(slot0:getConfig("ids")) do
-		if not slot1[slot7] and Furniture.New({
+		slot8 = Furniture.New({
 			id = slot7
-		}):inTime() then
-			table.insert({}, slot7)
+		})
+
+		if not slot1[slot7] and slot8:inTime() then
+			table.insert(slot2, slot7)
 		end
 	end
 
 	return slot2
 end
 
-function slot0.getSystemThemeFurnitures(slot0, slot1)
+slot0.getSystemThemeFurnitures = function (slot0, slot1)
 	pcall(function ()
-		uv0 = require("GameCfg.backyardTheme.theme_" .. uv1.id)
+		slot0 = require("GameCfg.backyardTheme.theme_" .. slot1.id)
 	end)
 
 	return _.select(nil or require("GameCfg.backyardTheme.theme_empty")["furnitures_" .. slot1] or {}, function (slot0)
@@ -170,11 +175,12 @@ function slot0.getSystemThemeFurnitures(slot0, slot1)
 	end)
 end
 
-function slot0.isOccupyed(slot0, slot1, slot2)
+slot0.isOccupyed = function (slot0, slot1, slot2)
 	slot3 = {}
+	slot4 = slot1.furnitures
 
 	for slot9, slot10 in pairs(slot5) do
-		if slot1.furnitures[slot10.id] and slot11.floor ~= 0 and slot11.floor ~= slot2 then
+		if slot4[slot10.id] and slot11.floor ~= 0 and slot11.floor ~= slot2 then
 			return true
 		end
 	end
@@ -182,22 +188,22 @@ function slot0.isOccupyed(slot0, slot1, slot2)
 	return false
 end
 
-function slot0.getUsableFurnituresForFloor(slot0, slot1, slot2)
+slot0.getUsableFurnituresForFloor = function (slot0, slot1, slot2)
 	slot3 = {}
-	slot4 = {
-		[slot9.id] = slot9
-	}
+	slot4 = {}
 
 	for slot8, slot9 in pairs(slot1.furnitures) do
 		if slot9.floor ~= slot2 then
+			slot4[slot9.id] = slot9
 		end
 	end
 
+	slot6 = {}
 	slot7 = {}
 
 	for slot11, slot12 in pairs(slot5) do
 		if slot4[slot12.id] then
-			table.insert({}, slot12.id)
+			table.insert(slot6, slot12.id)
 
 			for slot17, slot18 in pairs(slot12.child) do
 				table.insert(slot6, slot17)
@@ -224,9 +230,11 @@ function slot0.getUsableFurnituresForFloor(slot0, slot1, slot2)
 	return slot3
 end
 
-function slot0.isUsing(slot0, slot1)
+slot0.isUsing = function (slot0, slot1)
+	slot2 = Clone(slot1.furnitures)
+
 	if slot1.wallPaper then
-		Clone(slot1.furnitures)[slot1.wallPaper.id] = slot1.wallPaper
+		slot2[slot1.wallPaper.id] = slot1.wallPaper
 	end
 
 	if slot1.floorPaper then
@@ -264,7 +272,7 @@ function slot0.isUsing(slot0, slot1)
 	return true
 end
 
-function slot0.getName(slot0)
+slot0.getName = function (slot0)
 	if slot0.type == slot0.TYPE_SYSTEM then
 		return slot0:getConfig("name")
 	end
@@ -272,7 +280,7 @@ function slot0.getName(slot0)
 	return slot0.name
 end
 
-function slot0.getIcon(slot0)
+slot0.getIcon = function (slot0)
 	if slot0.type == slot0.TYPE_SYSTEM then
 		return slot0:getConfig("icon")
 	else
@@ -280,7 +288,7 @@ function slot0.getIcon(slot0)
 	end
 end
 
-function slot0.isOverTime(slot0)
+slot0.isOverTime = function (slot0)
 	if slot0.type == slot0.TYPE_SYSTEM then
 		return _.all(slot0:getConfig("ids"), function (slot0)
 			return not Furniture.New({
@@ -290,7 +298,7 @@ function slot0.isOverTime(slot0)
 	end
 end
 
-function slot0.getDesc(slot0)
+slot0.getDesc = function (slot0)
 	if slot0.type == slot0.TYPE_SYSTEM then
 		return slot0:getConfig("desc")
 	elseif slot0.type == slot0.TYPE_USER then
@@ -298,12 +306,14 @@ function slot0.getDesc(slot0)
 	end
 end
 
-function slot0.isMatchSearchKey(slot0, slot1)
+slot0.isMatchSearchKey = function (slot0, slot1)
 	if not slot1 or slot1 == "" then
 		return true
 	end
 
-	if string.find(slot0:getDesc(), slot1) or string.find(slot0:getName(), slot1) then
+	slot3 = slot0:getName()
+
+	if string.find(slot0:getDesc(), slot1) or string.find(slot3, slot1) then
 		return true
 	end
 
