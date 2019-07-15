@@ -1,16 +1,16 @@
 slot0 = class("LevelSignalView", import("..base.BaseSubView"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "LevelSignalView"
 end
 
-function slot0.OnInit(slot0)
+slot0.OnInit = function (slot0)
 	slot0:InitUI()
 	setActive(slot0._tf, true)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf)
 end
 
-function slot0.OnDestroy(slot0)
+slot0.OnDestroy = function (slot0)
 	if slot0.timers then
 		_.each(slot0.timers, function (slot0)
 			slot0:Stop()
@@ -26,13 +26,13 @@ function slot0.OnDestroy(slot0)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf, slot0._parentTF)
 end
 
-function slot0.setCBFunc(slot0, slot1, slot2, slot3)
+slot0.setCBFunc = function (slot0, slot1, slot2, slot3)
 	slot0.onSearch = slot1
 	slot0.onGo = slot2
 	slot0.onCancel = slot3
 end
 
-function slot0.InitUI(slot0)
+slot0.InitUI = function (slot0)
 	slot0.btnBack = slot0:findTF("panel/btnBack")
 	slot0.intensity = slot0:findTF("panel/intensity/nums")
 	slot0.area = slot0:findTF("panel/area")
@@ -46,7 +46,7 @@ function slot0.InitUI(slot0)
 	setActive(slot0.item, false)
 end
 
-function slot0.set(slot0, slot1, slot2, slot3)
+slot0.set = function (slot0, slot1, slot2, slot3)
 	slot0.maps = slot1
 	slot0.subRefreshCount = slot2
 	slot0.subProgress = slot3
@@ -59,14 +59,14 @@ function slot0.set(slot0, slot1, slot2, slot3)
 		})
 	end, SFX_PANEL)
 	onButton(slot0, slot0.btnBack, function ()
-		if uv0.onCancel then
-			uv0.onCancel()
+		if slot0.onCancel then
+			slot0.onCancel()
 		end
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.btnStart, function ()
-		if uv0.subRefreshCount > 0 then
-			if uv0.onSearch then
-				uv0.onSearch()
+		if slot0.subRefreshCount > 0 then
+			if slot0.onSearch then
+				slot0.onSearch()
 			end
 		else
 			pg.TipsMgr.GetInstance():ShowTips(i18n("levelScene_sub_refresh_count_not_enough"))
@@ -74,7 +74,7 @@ function slot0.set(slot0, slot1, slot2, slot3)
 	end, SFX_CONFIRM)
 end
 
-function slot0.flush(slot0)
+slot0.flush = function (slot0)
 	setText(slot0.signals, slot0.subRefreshCount)
 	setText(slot0.area, i18n("levelScene_search_area", math.min(slot0.subProgress, #_.filter(pg.expedition_data_by_map.all, function (slot0)
 		return type(pg.expedition_data_by_map[slot0].drop_by_map_display) == "table" and #slot1 > 0
@@ -86,7 +86,7 @@ function slot0.flush(slot0)
 	_.each(slot0.maps, function (slot0)
 		for slot4, slot5 in pairs(slot0.chapters) do
 			if slot5:getPlayType() == ChapterConst.TypeMainSub and slot5:isValid() then
-				table.insert(uv0, slot5)
+				table.insert(slot0, slot5)
 			end
 		end
 	end)
@@ -108,22 +108,22 @@ function slot0.flush(slot0)
 			slot4 = slot2:Find("time")
 
 			local function slot5()
-				if math.max(uv0.expireTime - uv1:GetServerTime(), 0) > 0 then
-					setText(uv2, uv1:DescCDTime(slot0))
-				elseif not uv0.active then
-					uv0:clearSubChapter()
-					getProxy(ChapterProxy):updateChapter(uv0)
+				if math.max(slot0.expireTime - slot1:GetServerTime(), 0) > 0 then
+					setText(slot2, slot1:DescCDTime(slot0))
+				elseif not slot0.active then
+					slot0:clearSubChapter()
+					getProxy(ChapterProxy):updateChapter(slot0)
 				end
 			end
 
-			uv2.timers[slot1 + 1] = Timer.New(slot5, 1, -1)
+			slot2.timers[slot1 + 1] = Timer.New(slot5, 1, -1)
 
-			uv2.timers[slot1 + 1]:Start()
+			slot2.timers[slot1 + 1]:Start()
 			slot5()
-			setText(slot2:Find("name"), i18n("chapter_no", uv0[slot1 + 1]:getConfig("map")))
-			onButton(uv2, slot2:Find("go"), function ()
-				if uv0.onGo then
-					uv0.onGo(uv1)
+			setText(slot2:Find("name"), i18n("chapter_no", slot0[slot1 + 1]:getConfig("map")))
+			onButton(slot2, slot2:Find("go"), function ()
+				if slot0.onGo then
+					slot0.onGo(slot1)
 				end
 			end, SFX_PANEL)
 		end

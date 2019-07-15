@@ -10,9 +10,11 @@ class("UpdateTaskProgressCommand", pm.SimpleCommand).execute = function (slot0, 
 
 	if slot8:getConfig("sub_type") == 2001 then
 		slot5 = Task.TASK_PROGRESS_UPDATE
+		slot11 = slot4.target_id
+		slot12 = slot4.target_num
 
 		for slot18, slot19 in pairs(slot14) do
-			if (table.contains(slot4.target_id, slot19.id) or #slot4.target_id == 0) and slot19:getShipCount() == slot4.target_num then
+			if (table.contains(slot11, slot19.id) or #slot11 == 0) and slot19:getShipCount() == slot12 then
 				slot10 = true
 
 				break
@@ -22,11 +24,14 @@ class("UpdateTaskProgressCommand", pm.SimpleCommand).execute = function (slot0, 
 		slot6 = slot12
 	elseif slot9 == 2002 then
 		slot5 = Task.TASK_PROGRESS_UPDATE
+		slot12 = slot4.target_id[1]
+		slot13 = slot4.target_id[2]
 		slot14 = slot4.target_num
+		slot17 = 0
 
 		for slot21, slot22 in pairs(slot16) do
-			if slot22:getShipCount() == slot4.target_id[2] and slot4.target_id[1] <= slot22:avgLevel() then
-				slot17 = 0 + 1
+			if slot22:getShipCount() == slot13 and slot12 <= slot22:avgLevel() then
+				slot17 = slot17 + 1
 			end
 		end
 
@@ -50,13 +55,13 @@ class("UpdateTaskProgressCommand", pm.SimpleCommand).execute = function (slot0, 
 		}
 	}, 20010, function (slot0)
 		if slot0.result == 0 then
-			if uv0 == Task.TASK_PROGRESS_UPDATE then
-				uv1:updateProgress(uv2)
-			elseif uv0 == Task.TASK_PROGRESS_APPEND then
-				uv1:updateProgress(uv1.progress + uv2)
+			if slot0 == Task.TASK_PROGRESS_UPDATE then
+				slot1:updateProgress(slot1)
+			elseif slot0 == Task.TASK_PROGRESS_APPEND then
+				slot1:updateProgress(slot1.progress + slot2)
 			end
 
-			uv3:updateTask(uv1)
+			slot3:updateTask(slot3.updateTask)
 		end
 	end)
 end

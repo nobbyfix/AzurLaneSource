@@ -3,51 +3,51 @@ slot0.INACTIVE = 1
 slot0.ACTIVE = 2
 slot0.FINISH = 3
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.type = slot1.build_id
 	slot0.time = slot1.time
 	slot0.finishTime = slot1.finish_time
 	slot0.state = slot0.INACTIVE
 end
 
-function slot0.setId(slot0, slot1)
+slot0.setId = function (slot0, slot1)
 	slot0.id = slot1
 end
 
-function slot0.setState(slot0, slot1)
+slot0.setState = function (slot0, slot1)
 	slot0.state = slot1
 end
 
-function slot0.isFinish(slot0)
+slot0.isFinish = function (slot0)
 	return slot0.finishTime <= pg.TimeMgr.GetInstance():GetServerTime()
 end
 
-function slot0.finish(slot0)
+slot0.finish = function (slot0)
 	slot0.time = 0
 	slot0.finishTime = pg.TimeMgr.GetInstance():GetServerTime()
 	slot0.state = slot0.FINISH
 end
 
-function slot0.active(slot0)
+slot0.active = function (slot0)
 	slot0.finishTime = pg.TimeMgr.GetInstance():GetServerTime() + slot0.time
 	slot0.state = slot0.ACTIVE
 end
 
-function slot0.setIsStart(slot0, slot1)
+slot0.setIsStart = function (slot0, slot1)
 	slot0.isStart = slot1
 end
 
-function slot0.getLeftTime(slot0)
+slot0.getLeftTime = function (slot0)
 	return slot0.finishTime - pg.TimeMgr.GetInstance():GetServerTime()
 end
 
-function slot0.getBuildConsume(slot0, slot1, slot2)
+slot0.getBuildConsume = function (slot0, slot1, slot2)
 	slot4 = nil
 
 	return (slot1 ~= 1 or pg.draw_data_template[slot0].use_gem_1[math.min(slot2 + 1, #pg.draw_data_template[slot0].use_gem_1)]) and pg.draw_data_template[slot0].use_gem_10[math.min(slot2 + 1, #pg.draw_data_template[slot0].use_gem_10)]
 end
 
-function slot0.canBuildShipByBuildId(slot0, slot1)
+slot0.canBuildShipByBuildId = function (slot0, slot1)
 	slot1 = slot1 or 1
 
 	if not pg.ship_data_create_material[slot0] then
@@ -58,8 +58,10 @@ function slot0.canBuildShipByBuildId(slot0, slot1)
 		return false, i18n("ship_buildShip_not_position")
 	end
 
+	slot5 = {}
+
 	if getProxy(PlayerProxy).getData(slot6).gold < slot2.use_gold * slot1 then
-		table.insert({}, {
+		table.insert(slot5, {
 			59001,
 			slot2.use_gold * slot1 - slot7.gold,
 			slot2.use_gold * slot1
@@ -68,9 +70,10 @@ function slot0.canBuildShipByBuildId(slot0, slot1)
 
 	if not getProxy(BagProxy).getData(slot8)[slot2.use_item] or slot9[slot2.use_item].count < slot2.number_1 * slot1 then
 		slot10 = slot2.number_1 * slot1
+		slot11 = slot2.use_item
 
 		if slot9[slot2.use_item] then
-			slot10 = slot2.number_1 * slot1 - slot9[slot2.use_item].count
+			slot10 = slot2.number_1 * slot1 - slot9[slot11].count
 		end
 
 		table.insert(slot5, {
@@ -87,7 +90,7 @@ function slot0.canBuildShipByBuildId(slot0, slot1)
 	return true
 end
 
-function slot0.canQuickBuildShip(slot0)
+slot0.canQuickBuildShip = function (slot0)
 	if not getProxy(BuildShipProxy):getBuildShip(slot0) then
 		return false, i18n("ship_buildShipImmediately_error_noSHip")
 	end

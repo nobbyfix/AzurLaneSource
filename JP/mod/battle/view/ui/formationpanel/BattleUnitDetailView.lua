@@ -3,17 +3,18 @@ slot1 = class("BattleUnitDetailView")
 ys.Battle.BattleUnitDetailView = slot1
 slot1.__name = "BattleUnitDetailView"
 
-function slot1.Ctor(slot0)
+slot1.Ctor = function (slot0)
+	return
 end
 
-function slot1.SetUnit(slot0, slot1)
+slot1.SetUnit = function (slot0, slot1)
 	slot0._unit = slot1
 	slot0._UIDTxt.text = slot0._unit:GetUniqueID()
 	slot0._TIDTxt.text = slot0._unit:GetTemplateID()
 	slot0._LVTxt.text = slot0._unit:GetAttrByName("level")
 end
 
-function slot1.Update(slot0)
+slot1.Update = function (slot0)
 	slot0._HPTxt.text = slot0._unit._currentHP .. "/" .. slot0._unit:GetMaxHP()
 	slot0._SLDTxt.text = 0
 	slot0._CPTxt.text = slot0._unit.GetAttrByName(slot1, "cannonPower")
@@ -28,11 +29,11 @@ function slot1.Update(slot0)
 	slot0._VLCTxt.text = slot0._unit:GetAttrByName("velocity")
 end
 
-function slot1.UpdatePos(slot0, slot1)
+slot1.UpdatePos = function (slot0, slot1)
 	slot0._tf.position = slot1
 end
 
-function slot1.ConfigSkin(slot0, slot1)
+slot1.ConfigSkin = function (slot0, slot1)
 	slot0._go = slot1
 	slot0._tf = slot1.transform
 	slot0._UIDTxt = slot1.transform.Find(slot2, "uniqueIDText"):GetComponent(typeof(Text))
@@ -54,8 +55,10 @@ function slot1.ConfigSkin(slot0, slot1)
 	SetActive(slot0._go, true)
 end
 
-function slot1.Dispose(slot0)
+slot1.Dispose = function (slot0)
 	slot0._unit = nil
 
 	GameObject.Destroy(slot0._go)
 end
+
+return

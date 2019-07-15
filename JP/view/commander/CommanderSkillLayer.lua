@@ -1,10 +1,10 @@
 slot0 = class("CommanderSkillLayer", import("..base.BaseUI"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "CommanderSkillUI"
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.backBtn = slot0:findTF("top/btnBack")
 	slot0.skillInfoName = slot0:findTF("panel/bg/skill_name")
 	slot0.skillInfoLv = slot0:findTF("panel/bg/skill_lv")
@@ -16,34 +16,37 @@ function slot0.init(slot0)
 
 	setText(slot0.skillInfoName, slot0.contextData.skill.getConfig(slot1, "name"))
 	setText(slot0.skillInfoLv, "Lv." .. slot0.contextData.skill.getLevel(slot1))
+
+	slot2 = slot0.contextData.skill.getConfig(slot1, "lv")
+
 	setActive(slot0.skillDescTF, false)
 
 	for slot6, slot7 in ipairs(slot0.contextData.skill.getConfig(slot1, "desc")) do
-		setText(findTF(slot8, "Lv"), slot0.contextData.skill.getConfig(slot1, "lv") < slot7[1] and "<color=#a3a2a2>" .. "Lv." .. slot7[1] .. "</color>" or "Lv." .. slot7[1])
-		setText(findTF(slot8, "Desc"), slot0.contextData.skill.getConfig(slot1, "lv") < slot7[1] and "<color=#a3a2a2>" .. slot7[2] .. "</color>" or slot7[2])
+		setText(findTF(slot8, "Lv"), (slot2 < slot7[1] and "<color=#a3a2a2>" .. "Lv." .. slot7[1] .. "</color>") or "Lv." .. slot7[1])
+		setText(findTF(slot8, "Desc"), (slot2 < slot7[1] and "<color=#a3a2a2>" .. slot7[2] .. "</color>") or slot7[2])
 	end
 
 	GetImageSpriteFromAtlasAsync("commanderskillicon/" .. slot1:getConfig("icon"), "", slot0.skillInfoIcon)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	onButton(slot0, slot0._tf, function ()
-		uv0:emit(uv1.ON_CLOSE)
+		slot0:emit(slot1.ON_CLOSE)
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.backBtn, function ()
-		uv0:emit(uv1.ON_CLOSE)
+		slot0:emit(slot1.ON_CLOSE)
 	end, SFX_CANCEL)
 	onButton(slot0, slot0:findTF("panel/buttonList/ok_button"), function ()
-		uv0:emit(uv1.ON_CLOSE)
+		slot0:emit(slot1.ON_CLOSE)
 	end, SFX_CONFIRM)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf)
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	triggerButton(slot0.backBtn)
 end
 

@@ -16,14 +16,14 @@ class("StopTechnologyCommand", pm.SimpleCommand).execute = function (slot0, slot
 		refresh_id = slot4
 	}, 63006, function (slot0)
 		if slot0.result == 0 then
-			uv0:reset()
+			slot0:reset()
 
-			if uv0:hasCondition() and uv0:getTaskId() then
+			if slot0:hasCondition() and slot0:getTaskId() then
 				getProxy(TaskProxy):removeTaskById(slot1)
 			end
 
-			uv1:updateTechnology(uv0)
-			uv2:sendNotification(GAME.STOP_TECHNOLOGY_DONE)
+			slot1:updateTechnology(slot0)
+			slot1:sendNotification(GAME.STOP_TECHNOLOGY_DONE)
 		else
 			pg.TipsMgr:GetInstance():ShowTips(i18n("blueprint_stop_erro") .. slot0.result)
 		end

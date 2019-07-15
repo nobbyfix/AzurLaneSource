@@ -17,7 +17,7 @@ class("FetchChallengeCommand", pm.SimpleCommand).execute = function (slot0, slot
 			end
 
 			if slot2:isClear() then
-				uv0:sendNotification(GAME.CHALLENGE_RESET)
+				slot0:sendNotification(GAME.CHALLENGE_RESET)
 			end
 		end
 	end)

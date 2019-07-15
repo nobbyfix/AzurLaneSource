@@ -2,12 +2,13 @@ class("EquipToShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	slot2 = slot1:getBody()
 	slot3 = slot2.equipmentId
 	slot5 = slot2.pos
+	slot6 = slot2.callback
 
 	if getProxy(BayProxy):getShipById(slot2.shipId) == nil then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("ship_error_noShip", slot4))
 
-		if slot2.callback then
-			slot2.callback(100)
+		if slot6 then
+			slot6(100)
 		end
 
 		return
@@ -38,34 +39,36 @@ class("EquipToShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		type = slot10:GetCategory()
 	}, 12007, function (slot0)
 		if slot0.result == 0 then
-			uv2:getEquipmentById(uv3).count = 1
+			slot0:getEquipmentById(slot0).count = 1
 
-			if uv0:getEquip(uv1) then
+			if slot0:getEquip(slot0.getEquip) then
+				slot3 = pg.equip_skin_template
+
 				if slot1:hasSkin() then
-					if _.any(pg.equip_skin_template[slot1.skinId].equip_type, function (slot0)
-						return slot0 == uv0.config.type
+					if _.any(slot3[slot1.skinId].equip_type, function (slot0)
+						return slot0 == slot0.config.type
 					end) then
 						slot2.skinId = slot1.skinId
 					else
-						uv2:addEquipmentSkin(slot1.skinId, 1)
+						slot2:addEquipmentSkin(slot1.skinId, 1)
 						pg.TipsMgr:GetInstance():ShowTips(i18n("equipment_skin_unmatch_equipment"))
 					end
 
 					slot1.skinId = 0
 				end
 
-				uv2:addEquipment(slot1)
+				slot2:addEquipment(slot1)
 			end
 
-			uv0:updateEquip(uv1, slot2)
-			uv4:updateShip(uv0)
-			uv2:removeEquipmentById(uv3, 1)
-			uv5:sendNotification(GAME.EQUIP_TO_SHIP_DONE, uv0)
+			slot0:updateEquip(slot1, slot2)
+			slot0:updateShip(slot0)
+			slot2:removeEquipmentById(slot2.removeEquipmentById, 1)
+			slot5:sendNotification(GAME.EQUIP_TO_SHIP_DONE, slot0)
 			pg.TipsMgr:GetInstance():ShowTips(i18n("ship_equipToShip_ok", slot2.config.name), "green")
 			playSoundEffect(SFX_UI_DOCKYARD_EQUIPON)
 
-			if uv6 then
-				uv6()
+			if "green" then
+				slot6()
 			end
 
 			return
@@ -73,8 +76,8 @@ class("EquipToShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 
 		pg.TipsMgr:GetInstance():ShowTips(errorTip("ship_equipToShip", slot0.result))
 
-		if uv6 then
-			uv6()
+		if slot6 then
+			slot6()
 		end
 	end)
 end

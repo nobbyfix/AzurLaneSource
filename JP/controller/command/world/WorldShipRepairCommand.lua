@@ -11,12 +11,12 @@ class("WorldShipRepairCommand", pm.SimpleCommand).execute = function (slot0, slo
 		ship_list = slot3
 	}, 33408, function (slot0)
 		if slot0.result == 0 then
-			_.each(uv0, function (slot0)
-				uv0:GetShip(slot0):Repair()
+			_.each(slot0, function (slot0)
+				slot0:GetShip(slot0):Repair()
 			end)
-			uv2:RemoveItem(WorldItem.MoneyId, uv3)
-			uv4:sendNotification(GAME.WORLD_SHIP_REPAIR_DONE, {
-				shipIds = uv0
+			slot0:RemoveItem(WorldItem.MoneyId, )
+			slot4:sendNotification(GAME.WORLD_SHIP_REPAIR_DONE, {
+				shipIds = slot0
 			})
 		else
 			pg.TipsMgr.GetInstance():ShowTips(errorTip("world_ship_repair_err_", slot0.result))

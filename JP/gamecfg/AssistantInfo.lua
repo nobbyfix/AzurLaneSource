@@ -147,34 +147,37 @@ pg.AssistantInfo = {
 		2 = "TouchBody"
 	},
 	enable = function ()
-		return uv0 and not isAiriJP()
+		return slot0 and not isAiriJP()
 	end,
 	getAssistantTouchEvents = function (slot0)
-		if uv0.enable() and uv0.assistantTouchParts[slot0] == "TouchSpecial" then
+		if slot0.enable() and slot0.assistantTouchParts[slot0] == "TouchSpecial" then
 			slot0 = 1
 		end
 
-		return uv0.assistantTouchEvents[slot0]
+		return slot0.assistantTouchEvents[slot0]
 	end,
 	getPaintingTouchEvents = function (slot0)
-		if uv0.enable() and uv0.PaintingTouchParts[slot0] == "TouchSpecial" then
+		if slot0.enable() and slot0.PaintingTouchParts[slot0] == "TouchSpecial" then
 			slot0 = "1"
 		end
 
-		return uv0.PaintingTouchParts[slot0]
+		return slot0.PaintingTouchParts[slot0]
 	end,
 	isDisableSpecialClick = function (slot0)
-		if uv0.enable() and slot0 == "touch2" then
+		if slot0.enable() and slot0 == "touch2" then
 			return true
 		end
 
 		return false
 	end,
 	filterAssistantEvents = function (slot0, slot1)
+		slot2 = {}
+		slot3 = Ship.getMainwordsCount(slot1)
+
 		for slot7, slot8 in ipairs(slot0) do
 			if string.split(slot10, "_")[1] == "main" then
-				if tonumber(slot11[2]) <= Ship.getMainwordsCount(slot1) then
-					table.insert({}, slot8)
+				if tonumber(slot11[2]) <= slot3 then
+					table.insert(slot2, slot8)
 				end
 			else
 				table.insert(slot2, slot8)
@@ -2023,3 +2026,5 @@ pg.AssistantInfo = {
 	}
 }
 slot2 = true
+
+return

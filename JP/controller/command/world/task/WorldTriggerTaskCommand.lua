@@ -27,18 +27,18 @@ class("WorldTriggerTaskCommand", pm.SimpleCommand).execute = function (slot0, sl
 			slot1 = WorldTask.New(slot0.task)
 			slot1.new = 1
 
-			uv0:addTask(slot1)
+			slot0:addTask(slot1)
 			pg.TipsMgr.GetInstance():ShowTips("接取任务：" .. slot1.id)
 
 			if #slot1.config.task_op > 0 then
 				pg.StoryMgr.GetInstance():Play(slot1.config.task_op)
 			end
 
-			if uv1 then
-				uv1()
+			if slot1 then
+				slot1()
 			end
 
-			uv2:AddLog(WorldLog.TypeTask, {
+			slot2:AddLog(WorldLog.TypeTask, {
 				task = slot1.id
 			})
 		else

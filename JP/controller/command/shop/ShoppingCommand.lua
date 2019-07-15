@@ -56,9 +56,11 @@ class("ShoppingCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	slot11 = false
 
 	if slot5.resource_num ~= -1 then
+		slot12 = slot5.resource_num * slot4
+
 		if slot10 and slot5.genre == ShopArgs.ShoppingStreetLimit then
 			slot11 = true
-			slot12 = math.ceil(slot10:getGoodsById(slot3).discount / 100 * slot5.resource_num * slot4)
+			slot12 = math.ceil(slot10:getGoodsById(slot3).discount / 100 * slot12)
 		end
 	elseif slot12 == -1 and slot5.effect_args == ShopArgs.EffectShopStreetLevel then
 		slot12 = pg.navalacademy_shoppingstreet_template[slot10.level].lv_up_cost[2] * slot4
@@ -117,10 +119,10 @@ class("ShoppingCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		if slot0.result == 0 then
 			slot1 = {}
 
-			if uv0.type ~= 0 then
-				if uv0.is_auto_use == 1 then
+			if slot0.type ~= 0 then
+				if slot0.is_auto_use == 1 then
 					for slot5, slot6 in ipairs(slot0.drop_list) do
-						uv1:sendNotification(GAME.ADD_ITEM, Item.New({
+						slot1:sendNotification(GAME.ADD_ITEM, Item.New({
 							type = slot6.type,
 							id = slot6.id,
 							count = slot6.number
@@ -128,58 +130,58 @@ class("ShoppingCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 						table.insert(slot1, Item.New())
 					end
 				else
-					slot2 = uv0.num
+					slot2 = slot0.num
 
-					if uv0.num == -1 and uv0.genre == ShopArgs.BuyOil then
-						slot2 = ShopArgs.getOilByLevel(uv2:getData().level)
+					if slot0.num == -1 and slot0.genre == ShopArgs.BuyOil then
+						slot2 = ShopArgs.getOilByLevel(slot2:getData().level)
 					end
 
-					uv1:sendNotification(GAME.ADD_ITEM, Item.New({
-						type = uv0.type,
-						id = uv0.effect_args[1],
-						count = slot2 * uv3
+					slot1:sendNotification(GAME.ADD_ITEM, Item.New({
+						type = slot0.type,
+						id = slot0.effect_args[1],
+						count = slot2 * slot3
 					}))
 					table.insert(slot1, Item.New())
 				end
 
 				pg.TipsMgr:GetInstance():ShowTips(i18n("common_buy_success"))
-			elseif uv0.type == 0 then
-				uv1:sendNotification(GAME.EXTEND, {
-					id = uv4,
-					count = uv3
+			elseif slot0.type == 0 then
+				slot1:sendNotification(GAME.EXTEND, {
+					id = slot4,
+					count = slot1
 				})
 			end
 
-			uv2:getData().consume(slot2, {
-				[id2res(uv0.resource_type)] = uv5
+			slot2:getData().consume(slot2, {
+				[id2res(slot0.resource_type)] = 
 			})
 
-			if uv0.genre == ShopArgs.BuyOil then
+			if slot0.genre == ShopArgs.BuyOil then
 				slot2:increaseBuyOilCount()
 			end
 
-			uv2:updatePlayer(slot2)
+			slot2:updatePlayer(slot2)
 
 			slot3 = nil
 
-			if uv6 then
-				slot4 = uv7:getShopStreet()
+			if slot6 then
+				slot4 = slot7:getShopStreet()
 				slot3 = slot4.type
 
-				slot4:getGoodsById(uv4).reduceBuyCount(slot5)
-				uv7:setShopStreet(slot4)
+				slot4:getGoodsById(slot4).reduceBuyCount(slot5)
+				slot5:setShopStreet(slot4)
 
 				if slot1[1].type == DROP_TYPE_ITEM and slot6:isEquipmentSkinBox() then
-					uv1:sendNotification(GAME.USE_ITEM, {
+					slot1:sendNotification(GAME.USE_ITEM, {
 						skip_check = true,
 						count = 1,
 						id = slot6.id
 					})
 				end
-			elseif uv0.genre == ShopArgs.ArenaShopLimit then
+			elseif slot0.genre == ShopArgs.ArenaShopLimit then
 				slot4 = getProxy(ShopsProxy)
 				slot5 = slot4:getMeritorousShop()
-				slot6 = slot5:getGoodsById(uv4)
+				slot6 = slot5:getGoodsById(slot4)
 
 				slot6:increaseBuyCount()
 				slot5:updateGoods(slot6)
@@ -187,54 +189,50 @@ class("ShoppingCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 				slot3 = slot5.type
 
 				slot4:updateMeritorousShop(slot5)
-			elseif uv0.genre == ShopArgs.GiftPackage then
-				uv7:GetNormalByID(uv4):increaseBuyCount()
-			elseif uv0.genre == ShopArgs.SkinShop then
+			elseif slot0.genre == ShopArgs.GiftPackage then
+				slot7:GetNormalByID(slot7.GetNormalByID):increaseBuyCount()
+			elseif slot0.genre == ShopArgs.SkinShop then
 				getProxy(ShipSkinProxy):addSkin(ShipSkin.New({
-					id = uv0.effect_args[1]
+					id = slot0.effect_args[1]
 				}))
-			elseif uv0.genre == ShopArgs.SkinShopTimeLimit then
-				if getProxy(ShipSkinProxy):getSkinById(uv0.effect_args[1]) and slot6:isExpireType() then
+			elseif slot0.genre == ShopArgs.SkinShopTimeLimit then
+				if getProxy(ShipSkinProxy):getSkinById(slot0.effect_args[1]) and slot6:isExpireType() then
 					slot5:addSkin(ShipSkin.New({
 						id = slot4,
-						end_time = uv0.time_second * uv3 + slot6.endTime
+						end_time = slot0.time_second * slot3 + slot6.endTime
 					}))
 				elseif not slot6 then
 					slot5:addSkin(ShipSkin.New({
 						id = slot4,
-						end_time = uv0.time_second * uv3 + pg.TimeMgr.GetInstance():GetServerTime()
+						end_time = slot0.time_second * slot3 + pg.TimeMgr.GetInstance():GetServerTime()
 					}))
 				end
-			elseif uv0.genre == ShopArgs.guildShop then
+			elseif slot0.genre == ShopArgs.guildShop then
 				slot4 = getProxy(ShopsProxy):getGuildShop()
 
-				slot4:getGoodsById(uv4).reduceBuyCount(slot5)
-				uv7:updateGuildShop(slot4)
+				slot4:getGoodsById(slot4).reduceBuyCount(slot5)
+				slot5:updateGuildShop(slot4)
 			end
 
-			if uv0.group > 0 then
-				uv7:updateNormalGroupList(uv0.group, uv0.group_buy_count)
+			if slot0.group > 0 then
+				slot7:updateNormalGroupList(slot0.group, slot0.group_buy_count)
 			end
 
-			if uv0.effect_args == ShopArgs.EffecetShipBagSize then
+			if slot0.effect_args == ShopArgs.EffecetShipBagSize then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("shop_extendship_success"))
 			end
 
-			if uv0.effect_args == ShopArgs.EffecetEquipBagSize then
+			if slot0.effect_args == ShopArgs.EffecetEquipBagSize then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("shop_extendequip_success"))
 			end
 
-			if uv0.effect_args == ShopArgs.EffectCommanderBagSize then
+			if slot0.effect_args == ShopArgs.EffectCommanderBagSize then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("shop_extendcommander_success"))
 			end
 
-			uv1:sendNotification(GAME.SHOPPING_DONE, {
-				id = uv4,
-				shopType = slot3,
-				normalList = uv7:GetNormalList(),
-				normalGroupList = uv7:GetNormalGroupList(),
-				awards = uv0.is_auto_use == 1 and slot1 or {}
-			})
+			slot7.awards = (slot0.is_auto_use == 1 and slot1) or {}
+
+			slot4(slot1, GAME.SHOPPING_DONE, slot7)
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("", slot0.result))
 		end

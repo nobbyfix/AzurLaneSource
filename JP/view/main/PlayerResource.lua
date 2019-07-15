@@ -2,15 +2,15 @@ slot0 = class("PlayerResource", import("..base.BaseUI"))
 slot1 = 12
 slot0.GO_MALL = "PlayerResource:GO_MALL"
 
-function slot0.Ctor(slot0)
-	uv0.super.Ctor(slot0)
+slot0.Ctor = function (slot0)
+	slot0.super.Ctor(slot0)
 	PoolMgr.GetInstance():GetUI("ResPanel", false, function (slot0)
 		slot0.transform:SetParent(pg.UIMgr:GetInstance().UIMain.transform, false)
-		uv0:onUILoaded(slot0)
+		slot0:onUILoaded(slot0)
 	end)
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.goldMax = slot0:findTF("gold_max_value")
 	slot0.goldValue = slot0:findTF("gold_value")
 	slot0.goldAddBtn = slot0:findTF("gold")
@@ -32,7 +32,7 @@ function slot0.init(slot0)
 			drop = {
 				id = 1,
 				type = DROP_TYPE_RESOURCE,
-				count = uv0[uv1].num
+				count = slot0[slot1].num
 			},
 			weight = LayerWeightConst.TOP_LAYER,
 			custom = {
@@ -53,7 +53,7 @@ function slot0.init(slot0)
 					onCallback = function ()
 						pg.m02:sendNotification(GAME.SHOPPING, {
 							count = 1,
-							id = uv0
+							id = pg.m02.sendNotification
 						})
 					end
 				}
@@ -61,7 +61,7 @@ function slot0.init(slot0)
 		})
 	end, SFX_PANEL)
 	onButton(slot0, slot0.oilAddBtn, function ()
-		if not ShoppingStreet.getRiseShopId(ShopArgs.BuyOil, uv0.player.buyOilCount) then
+		if not ShoppingStreet.getRiseShopId(ShopArgs.BuyOil, slot0.player.buyOilCount) then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("common_today_buy_limit"))
 
 			return
@@ -70,16 +70,16 @@ function slot0.init(slot0)
 		slot2 = pg.shop_template[slot0].num
 
 		if pg.shop_template[slot0].num == -1 and slot1.genre == ShopArgs.BuyOil then
-			slot2 = ShopArgs.getOilByLevel(uv0.player.level)
+			slot2 = ShopArgs.getOilByLevel(slot0.player.level)
 		end
 
-		if uv0.player.buyOilCount < pg.gameset.buy_oil_limit.key_value then
+		if slot0.player.buyOilCount < pg.gameset.buy_oil_limit.key_value then
 			pg.MsgboxMgr:GetInstance():ShowMsgBox({
 				type = MSGBOX_TYPE_SINGLE_ITEM,
 				windowSize = {
 					y = 570
 				},
-				content = i18n("oil_buy_tip", slot1.resource_num, slot2, uv0.player.buyOilCount),
+				content = i18n("oil_buy_tip", slot1.resource_num, slot2, slot0.player.buyOilCount),
 				drop = {
 					id = 2,
 					type = DROP_TYPE_RESOURCE,
@@ -88,7 +88,7 @@ function slot0.init(slot0)
 				onYes = function ()
 					pg.m02:sendNotification(GAME.SHOPPING, {
 						count = 1,
-						id = uv0
+						id = pg.m02.sendNotification
 					})
 				end,
 				weight = LayerWeightConst.TOP_LAYER
@@ -107,19 +107,21 @@ function slot0.init(slot0)
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.gemAddBtn, function ()
+		function slot0()
+			if not pg.m02:hasMediator(ChargeMediator.__cname) then
+				pg.m02:sendNotification(GAME.GO_SCENE, SCENE.CHARGE, {
+					wrap = ChargeScene.TYPE_DIAMOND
+				})
+			else
+				pg.m02:sendNotification(slot0.GO_MALL)
+			end
+		end
+
 		if isAiriJP() then
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				yesText = "text_buy",
-				content = i18n("word_diamond_tip", uv1.player:getFreeGem(), uv1.player:getChargeGem(), uv1.player:getTotalGem()),
-				onYes = function ()
-					if not pg.m02:hasMediator(ChargeMediator.__cname) then
-						pg.m02:sendNotification(GAME.GO_SCENE, SCENE.CHARGE, {
-							wrap = ChargeScene.TYPE_DIAMOND
-						})
-					else
-						pg.m02:sendNotification(uv0.GO_MALL)
-					end
-				end,
+				content = i18n("word_diamond_tip", slot1.player:getFreeGem(), slot1.player:getChargeGem(), slot1.player:getTotalGem()),
+				onYes = slot0,
 				alignment = TextAnchor.UpperLeft
 			})
 		else
@@ -128,11 +130,11 @@ function slot0.init(slot0)
 	end, SFX_PANEL)
 end
 
-function slot0.setParent(slot0, slot1, slot2)
+slot0.setParent = function (slot0, slot1, slot2)
 	setParent(slot0._go, slot1, slot2)
 end
 
-function slot0.setResources(slot0, slot1)
+slot0.setResources = function (slot0, slot1)
 	slot0.player = slot1
 
 	setText(slot0.goldMax, "MAX: " .. slot3)
@@ -142,7 +144,7 @@ function slot0.setResources(slot0, slot1)
 	setText(slot0.gemValue, slot1:getTotalGem())
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	PoolMgr.GetInstance():ReturnUI("ResPanel", slot0._go)
 end
 

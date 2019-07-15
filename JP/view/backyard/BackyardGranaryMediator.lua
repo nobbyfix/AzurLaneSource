@@ -3,27 +3,27 @@ slot0.USE_FOOD = "BackyardGranaryMediator:USE_FOOD"
 slot0.BUY_FOOD = "BackyardGranaryMediator:BUY_FOOD"
 slot0.EXTEND_GRANARY = "BackyardGranaryMediator:EXTEND_GRANARY"
 
-function slot0.register(slot0)
-	slot0:bind(uv0.USE_FOOD, function (slot0, slot1, slot2, slot3)
+slot0.register = function (slot0)
+	slot0:bind(slot0.USE_FOOD, function (slot0, slot1, slot2, slot3)
 		if slot3 then
-			uv0:setBackyardRemind()
-			uv1.viewComponent:setIsRemind(uv0:getBackyardRemind())
+			slot0:setBackyardRemind()
+			slot1.viewComponent:setIsRemind(slot0:getBackyardRemind())
 		end
 
-		uv1:sendNotification(GAME.USE_ITEM, {
+		slot1:sendNotification(GAME.USE_ITEM, {
 			id = slot1,
 			count = slot2
 		})
 	end)
 	slot0.viewComponent:setIsRemind(getProxy(SettingsProxy).getBackyardRemind(slot1))
-	slot0:bind(uv0.BUY_FOOD, function (slot0, slot1, slot2)
-		uv0:sendNotification(GAME.SHOPPING, {
+	slot0:bind(slot0.BUY_FOOD, function (slot0, slot1, slot2)
+		slot0:sendNotification(GAME.SHOPPING, {
 			id = slot1,
 			count = slot2
 		})
 	end)
-	slot0:bind(uv0.EXTEND_GRANARY, function (slot0, slot1, slot2)
-		uv0:sendNotification(GAME.SHOPPING, {
+	slot0:bind(slot0.EXTEND_GRANARY, function (slot0, slot1, slot2)
+		slot0:sendNotification(GAME.SHOPPING, {
 			id = slot1,
 			count = slot2
 		})
@@ -37,7 +37,7 @@ function slot0.register(slot0)
 	slot0.viewComponent:setDormVO(slot0.dormProxy:getData())
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		BagProxy.ITEM_UPDATED,
 		BagProxy.ITEM_ADDED,
@@ -46,7 +46,7 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == BagProxy.ITEM_UPDATED or slot2 == BagProxy.ITEM_ADDED then

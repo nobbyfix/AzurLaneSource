@@ -15,6 +15,7 @@ function slot4(slot0)
 			slot0.animator:SetInteger("hp", slot1)
 		end,
 		dispose = function (slot0)
+			return
 		end
 	}
 end
@@ -31,6 +32,7 @@ function slot5(slot0)
 			slot0.animator:SetInteger("hp", slot1)
 		end,
 		dispose = function (slot0)
+			return
 		end
 	}
 end
@@ -94,10 +96,10 @@ function slot6(slot0)
 			}
 		},
 		init = function (slot0, slot1)
-			slot0.monsterVO = uv0({
+			slot0.monsterVO = slot0({
 				go = slot0.monsterGo
 			})
-			slot0.protagonistVO = uv1(slot0.protagonistGo)
+			slot0.protagonistVO = slot1(slot0.protagonistGo)
 
 			slot0:update(slot1)
 		end,
@@ -108,11 +110,11 @@ function slot6(slot0)
 				setActive(slot0.curtainTF, false)
 				slot1()
 			else
-				LeanTween.color(slot0.curtainTF, Color.white, uv0):setFromColor(Color.black):setOnComplete(System.Action(function ()
-					setActive(uv0.startLabel, true)
-					blinkAni(uv0.startLabel, uv1, 2):setOnComplete(System.Action(function ()
-						LeanTween.alpha(uv0.curtainTF, 0, uv1):setFrom(1)
-						LeanTween.alpha(uv0.startLabel, 0, uv1):setFrom(1):setOnComplete(System.Action(uv2))
+				LeanTween.color(slot0.curtainTF, Color.white, slot0):setFromColor(Color.black):setOnComplete(System.Action(function ()
+					setActive(slot0.startLabel, true)
+					blinkAni(slot0.startLabel, , 2):setOnComplete(System.Action(function ()
+						LeanTween.alpha(slot0.curtainTF, 0, ):setFrom(1)
+						LeanTween.alpha(slot0.startLabel, 0, ):setFrom(1):setOnComplete(System.Action(System.Action))
 					end))
 				end))
 				slot0:setPlayAnimFlag()
@@ -121,8 +123,8 @@ function slot6(slot0)
 		update = function (slot0, slot1, slot2)
 			slot4 = slot1:getDataConfig("hp")
 			slot0.stageVO = {
-				leftAttackCnt = slot0.isFake and slot1.data2 or slot1:getCountForHitMonster(),
-				preHp = slot0.stageVO and slot0.stageVO.hp or math.max(slot4 - slot1.data3, 0),
+				leftAttackCnt = (slot0.isFake and slot1.data2) or slot1:getCountForHitMonster(),
+				preHp = (slot0.stageVO and slot0.stageVO.hp) or math.max(slot4 - slot1.data3, 0),
 				hp = math.max(slot4 - slot1.data3, 0),
 				maxHp = slot4,
 				storys = slot1:getDataConfig("story")
@@ -138,15 +140,15 @@ function slot6(slot0)
 			slot0:removeTimer()
 
 			slot0.timer = Timer.New(function ()
-				uv0:updateActionStr("")
-				uv0:removeTimer()
+				slot0:updateActionStr("")
+				slot0.updateActionStr:removeTimer()
 			end, 1.5, 1)
 
 			slot0.timer:Start()
 			slot0:updateActionStr(slot0.actionStr .. slot1)
 
 			if _.detect(slot0.actions, function (slot0)
-				return slot0[1] == uv0.actionStr
+				return slot0[1] == slot0.actionStr
 			end) and slot2 then
 				slot2(slot3[2], slot3[3])
 			end
@@ -165,15 +167,16 @@ function slot6(slot0)
 		end,
 		play = function (slot0, slot1)
 			slot0.inAnim = true
+			slot2 = slot0.stageVO
 
 			function slot3(slot0)
-				LeanTween.value(uv1.hpTF.gameObject, slot1, slot2, 0.3):setOnUpdate(System.Action_float(function (slot0)
-					uv0.hpTF.value = slot0
+				LeanTween.value(slot1.hpTF.gameObject, slot1, slot2, 0.3):setOnUpdate(System.Action_float(function (slot0)
+					slot0.hpTF.value = slot0
 				end)):setOnComplete(System.Action(function ()
-					uv0.attackTF.text = uv1.leftAttackCnt
-					uv0.inAnim = false
+					slot0.attackTF.text = slot1.leftAttackCnt
+					slot0.attackTF.inAnim = false
 
-					uv0:triggerStory(uv2)
+					slot0.attackTF:triggerStory(slot2)
 				end))
 			end
 
@@ -181,18 +184,22 @@ function slot6(slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 7-32, warpins: 1 ---
-				slot0.protagonistVO:playAnim(slot4, slot0.stageVO.hp)
-				slot0.monsterVO:playAnim(slot5, slot0.stageVO.hp)
+				slot0.protagonistVO:playAnim(slot4, slot2.hp)
+				slot0.monsterVO:playAnim(slot5, slot2.hp)
 
 				slot0.animTimer = Timer.New(function ()
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 1-13, warpins: 1 ---
-					uv0.animTimer:Stop()
+					slot0.animTimer:Stop()
 
-					uv0.animTimer = nil
+					slot0.animTimer.Stop.animTimer = 
+					-- Decompilation error in this vicinity:
+					nil
 
-					uv1(uv2.callback)
+
+					-- Decompilation error in this vicinity:
+					nil(slot2.callback)
 
 					return
 					--- END OF BLOCK #0 ---
@@ -222,7 +229,7 @@ function slot6(slot0)
 		removeTimer = function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-10, warpins: 1 ---
+			--- BLOCK #0 1-3, warpins: 1 ---
 			if slot0.timer then
 
 				-- Decompilation error in this vicinity:
@@ -236,8 +243,16 @@ function slot6(slot0)
 
 			end
 
-			return
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 10-10, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
 
 
 
@@ -245,9 +260,17 @@ function slot6(slot0)
 		isShowAnim = function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 28-28, warpins: 2 ---
+			--- BLOCK #0 1-24, warpins: 1 ---
 			return tonumber(PlayerPrefs.GetString("HitMonsterNianLayer" .. getProxy(PlayerProxy):getRawData().id, "0")) < pg.TimeMgr.GetInstance():GetServerTime()
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 28-28, warpins: 2 ---
+			--- END OF BLOCK #1 ---
 
 
 
@@ -268,9 +291,17 @@ function slot6(slot0)
 		isEnd = function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 9-9, warpins: 2 ---
+			--- BLOCK #0 1-5, warpins: 1 ---
 			return slot0.stageVO.hp <= 0
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 9-9, warpins: 2 ---
+			--- END OF BLOCK #1 ---
 
 
 
@@ -292,9 +323,17 @@ function slot6(slot0)
 		isEnable = function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 9-9, warpins: 2 ---
+			--- BLOCK #0 1-5, warpins: 1 ---
 			return slot0.stageVO.leftAttackCnt > 0
 			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 9-9, warpins: 2 ---
+			--- END OF BLOCK #1 ---
 
 
 
@@ -302,7 +341,7 @@ function slot6(slot0)
 		triggerStory = function (slot0, slot1)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 4-46, warpins: 2 ---
+			--- BLOCK #0 1-2, warpins: 1 ---
 			slot1 = slot1 or function ()
 
 				-- Decompilation error in this vicinity:
@@ -316,39 +355,81 @@ function slot6(slot0)
 			slot2 = false
 			slot4 = pg.StoryMgr:GetInstance()
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 4-16, warpins: 2 ---
 			if type(slot0.stageVO.storys) == "table" then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 17-41, warpins: 1 ---
+				--- BLOCK #0 17-20, warpins: 1 ---
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 21-41, warpins: 0 ---
 				for slot8, slot9 in pairs(slot3) do
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 21-41, warpins: 1 ---
-					if slot0.stageVO.hp <= slot9[1] and not slot4:IsPlayed(slot9[2]) then
+					--- BLOCK #0 21-26, warpins: 1 ---
+					slot11 = slot9[2]
+
+					if slot0.stageVO.hp <= slot9[1] and not slot4:IsPlayed(slot11) then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 33-40, warpins: 1 ---
+						--- BLOCK #0 33-39, warpins: 1 ---
 						slot2 = true
 
-						slot4:Play(slot9[2], slot1)
+						slot4:Play(slot11, slot1)
 
-						break
 						--- END OF BLOCK #0 ---
+
+						FLOW; TARGET BLOCK #1
+
+
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #1 40-40, warpins: 1 ---
+						break
+						--- END OF BLOCK #1 ---
 
 
 
 					end
 					--- END OF BLOCK #0 ---
 
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 40-41, warpins: 3 ---
+					--- END OF BLOCK #1 ---
+
 
 
 				end
-				--- END OF BLOCK #0 ---
+				--- END OF BLOCK #1 ---
 
 
 
 			end
 
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 42-43, warpins: 3 ---
 			if not slot2 then
 
 				-- Decompilation error in this vicinity:
@@ -360,8 +441,16 @@ function slot6(slot0)
 
 			end
 
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #3 46-46, warpins: 2 ---
 			return
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #3 ---
 
 
 
@@ -369,7 +458,7 @@ function slot6(slot0)
 		dispose = function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-23, warpins: 1 ---
+			--- BLOCK #0 1-14, warpins: 1 ---
 			slot0:removeTimer()
 			slot0.monsterVO:dispose()
 			slot0.protagonistVO:dispose()
@@ -387,10 +476,18 @@ function slot6(slot0)
 
 			end
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 21-23, warpins: 2 ---
 			slot0.stageVO = nil
 
 			return
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #1 ---
 
 
 
@@ -400,7 +497,7 @@ function slot6(slot0)
 	return 
 end
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -411,10 +508,10 @@ function slot0.getUIName(slot0)
 
 end
 
-function slot0.setActivity(slot0, slot1)
+slot0.setActivity = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-12, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0.activityVO = Clone(slot1)
 
 	if slot0.onActivityUpdate then
@@ -430,14 +527,22 @@ function slot0.setActivity(slot0, slot1)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-13, warpins: 1 ---
@@ -451,12 +556,12 @@ function slot0.init(slot0)
 
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot0.triggers = {}
-	slot0.stage = uv0(slot0._tf)
+	slot0.stage = slot0(slot0._tf)
 
 	slot0.stage:init(slot0.activityVO)
 
@@ -470,14 +575,14 @@ function slot0.didEnter(slot0)
 			function (slot0)
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-21, warpins: 1 ---
-				uv0.onActivityUpdate = slot0
+				--- BLOCK #0 1-7, warpins: 1 ---
+				slot0.onActivityUpdate = slot0
 
-				if uv0.stage.isFake then
+				if slot0.stage.isFake then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 8-14, warpins: 1 ---
-					uv0:emit(HitMonsterNianMediator.ON_FAKE_HIT)
+					slot0:emit(HitMonsterNianMediator.ON_FAKE_HIT)
 					--- END OF BLOCK #0 ---
 
 
@@ -486,15 +591,23 @@ function slot0.didEnter(slot0)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 15-20, warpins: 1 ---
-					uv0:emit(HitMonsterNianMediator.ON_HIT)
+					slot0:emit(HitMonsterNianMediator.ON_HIT)
 					--- END OF BLOCK #0 ---
 
 
 
 				end
 
-				return
 				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 21-21, warpins: 2 ---
+				return
+				--- END OF BLOCK #1 ---
 
 
 
@@ -503,9 +616,9 @@ function slot0.didEnter(slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-14, warpins: 1 ---
-				uv0.stage:update(uv0.activityVO, {
-					action = uv1,
-					action1 = uv2,
+				slot0.stage:update(slot0.activityVO, {
+					action = slot1,
+					action1 = slot0.stage,
 					callback = slot0
 				})
 
@@ -518,22 +631,30 @@ function slot0.didEnter(slot0)
 			function (slot0)
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-12, warpins: 1 ---
-				if not uv0.stage:isEnable() then
+				--- BLOCK #0 1-7, warpins: 1 ---
+				if not slot0.stage:isEnable() then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 8-9, warpins: 1 ---
-					uv1()
+					slot1()
 					--- END OF BLOCK #0 ---
 
 
 
 				end
 
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 10-12, warpins: 2 ---
 				slot0()
 
 				return
-				--- END OF BLOCK #0 ---
+				--- END OF BLOCK #1 ---
 
 
 
@@ -541,24 +662,32 @@ function slot0.didEnter(slot0)
 			function (slot0)
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-16, warpins: 1 ---
-				if uv0.contextData.onAaward then
+				--- BLOCK #0 1-5, warpins: 1 ---
+				if slot0.contextData.onAaward then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 6-13, warpins: 1 ---
-					uv0.contextData.onAaward()
+					slot0.contextData.onAaward()
 
-					uv0.contextData.onAaward = nil
+					slot0.contextData.onAaward = nil
 					--- END OF BLOCK #0 ---
 
 
 
 				end
 
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 14-16, warpins: 2 ---
 				slot0()
 
 				return
-				--- END OF BLOCK #0 ---
+				--- END OF BLOCK #1 ---
 
 
 
@@ -576,12 +705,12 @@ function slot0.didEnter(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-19, warpins: 1 ---
-		uv0:clearEvents()
-		uv0:reigsterEvent(uv0.attackA, function ()
+		slot0:clearEvents()
+		slot0.clearEvents:reigsterEvent(slot0.attackA, function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-8, warpins: 1 ---
-			uv0.stage:receiveAction("A", uv1)
+			slot0.stage:receiveAction("A", slot0.stage)
 
 			return
 			--- END OF BLOCK #0 ---
@@ -589,11 +718,11 @@ function slot0.didEnter(slot0)
 
 
 		end)
-		uv0:reigsterEvent(uv0.attackB, function ()
+		slot0.clearEvents.reigsterEvent:reigsterEvent(slot0.attackB, function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-8, warpins: 1 ---
-			uv0.stage:receiveAction("B", uv1)
+			slot0.stage:receiveAction("B", slot0.stage)
 
 			return
 			--- END OF BLOCK #0 ---
@@ -616,7 +745,7 @@ function slot0.didEnter(slot0)
 
 end
 
-function slot0.reigsterEvent(slot0, slot1, slot2)
+slot0.reigsterEvent = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-30, warpins: 1 ---
@@ -628,20 +757,28 @@ function slot0.reigsterEvent(slot0, slot1, slot2)
 	slot6:AddPointDownFunc(function (slot0, slot1)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-8, warpins: 1 ---
-		if uv0 then
+		--- BLOCK #0 1-3, warpins: 1 ---
+		if slot0 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 4-7, warpins: 1 ---
-			setActive(uv1, false)
+			setActive(slot1, false)
 			--- END OF BLOCK #0 ---
 
 
 
 		end
 
-		return
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 8-8, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
 
 
 
@@ -649,8 +786,8 @@ function slot0.reigsterEvent(slot0, slot1, slot2)
 	slot6:AddPointUpFunc(function (slot0, slot1)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-52, warpins: 1 ---
-		if uv0.stage:isEnd() then
+		--- BLOCK #0 1-7, warpins: 1 ---
+		if slot0.stage:isEnd() then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 8-27, warpins: 1 ---
@@ -660,11 +797,11 @@ function slot0.reigsterEvent(slot0, slot1, slot2)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 1-18, warpins: 1 ---
-					uv0.data2 = 100
-					uv0.data3 = 0
+					slot0.data2 = 100
+					slot0.data3 = 0
 
-					uv1.stage:restart(uv0)
-					uv1:setActivity(uv0)
+					slot1.stage:restart(slot1.stage.restart)
+					slot1.stage:setActivity(slot1.stage.setActivity)
 
 					return
 					--- END OF BLOCK #0 ---
@@ -673,7 +810,7 @@ function slot0.reigsterEvent(slot0, slot1, slot2)
 
 				end
 			})
-			setActive(uv2, true)
+			setActive(setActive, true)
 			--- END OF BLOCK #0 ---
 
 
@@ -682,17 +819,17 @@ function slot0.reigsterEvent(slot0, slot1, slot2)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 28-30, warpins: 1 ---
-			if uv3 then
+			if slot3 then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 31-37, warpins: 1 ---
-				setActive(uv2, true)
+				setActive(setActive, true)
 
-				if uv4 then
+				if true then
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 38-40, warpins: 1 ---
-					uv4()
+					slot4()
 					--- END OF BLOCK #0 ---
 
 
@@ -718,8 +855,16 @@ function slot0.reigsterEvent(slot0, slot1, slot2)
 
 		end
 
-		return
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 52-52, warpins: 4 ---
+		return
+		--- END OF BLOCK #1 ---
 
 
 
@@ -733,29 +878,53 @@ function slot0.reigsterEvent(slot0, slot1, slot2)
 
 end
 
-function slot0.clearEvents(slot0)
+slot0.clearEvents = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-9, warpins: 0 ---
 	for slot4, slot5 in ipairs(slot0.triggers) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 5-9, warpins: 1 ---
+		--- BLOCK #0 5-7, warpins: 1 ---
 		ClearEventTrigger(slot5)
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 8-9, warpins: 2 ---
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 10-10, warpins: 1 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-8, warpins: 1 ---

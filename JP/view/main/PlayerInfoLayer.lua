@@ -1,27 +1,27 @@
 slot0 = class("PlayerInfoLayer", import("..base.BaseUI"))
 slot0.MAX_MEDAL_DISPLAY = 5
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "AdmiralUI"
 end
 
-function slot0.setPlayer(slot0, slot1)
+slot0.setPlayer = function (slot0, slot1)
 	slot0:updatePlayerInfo(slot1)
 end
 
-function slot0.updatePlayerInfo(slot0, slot1)
+slot0.updatePlayerInfo = function (slot0, slot1)
 	slot0.player = slot1
 end
 
-function slot0.setShipCount(slot0, slot1)
+slot0.setShipCount = function (slot0, slot1)
 	slot0.shipCount = slot1 or 0
 end
 
-function slot0.setFleetGearScore(slot0, slot1)
+slot0.setFleetGearScore = function (slot0, slot1)
 	slot0.fleetGS = slot1
 end
 
-function slot0.setFlagShip(slot0, slot1)
+slot0.setFlagShip = function (slot0, slot1)
 	slot0.flagShip = slot1
 
 	slot0:updatePainting(slot1)
@@ -30,23 +30,25 @@ function slot0.setFlagShip(slot0, slot1)
 	slot0:updateSwichSkinBtn(slot1)
 end
 
-function slot0.setCollectionRate(slot0, slot1)
+slot0.setCollectionRate = function (slot0, slot1)
 	slot0.collectionRate = slot1
 end
 
-function slot0.setMilitaryExercise(slot0, slot1)
+slot0.setMilitaryExercise = function (slot0, slot1)
 	slot0.seasonInfo = slot1
 end
 
-function slot0.setTrophyList(slot0, slot1)
+slot0.setTrophyList = function (slot0, slot1)
 	slot0.trophyList = slot1
 end
 
-function slot0.OffsetSource(slot0, slot1, slot2)
+slot0.OffsetSource = function (slot0, slot1, slot2)
+	slot5 = GetComponent(GetComponent(slot3, "Image").canvas, "RectTransform").rect.width
+	slot6 = GetComponent(GetComponent(slot3, "Image").canvas, "RectTransform").rect.height
 	slot8 = 0
 
-	if GetComponent(slot0.rightPanel.parent, "AspectRatioFitter") and GetComponent(GetComponent(slot3, "Image").canvas, "RectTransform").rect.width > slot7.aspectRatio * GetComponent(GetComponent(slot3, "Image").canvas, "RectTransform").rect.height then
-		slot8 = (GetComponent(GetComponent(slot3, "Image").canvas, "RectTransform").rect.width - slot10) / slot9
+	if GetComponent(slot0.rightPanel.parent, "AspectRatioFitter") and slot5 > slot7.aspectRatio * slot6 then
+		slot8 = (slot5 - slot10) / slot9
 	end
 
 	slot10 = GetComponent(slot1, "RectTransform")
@@ -54,7 +56,7 @@ function slot0.OffsetSource(slot0, slot1, slot2)
 	setAnchoredPosition(slot10, Vector3(-(slot3.rect.width * slot0.rightPanel.localScale.x + slot2 + slot8), slot10.localPosition.y, slot10.localPosition.z))
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.topPanel = slot0:findTF("blur_panel/adapt/top")
 	slot0.rightPanel = slot0:findTF("blur_panel/adapt/right_panel")
 	slot0.leftPanel = slot0:findTF("blur_panel/adapt/left_panel")
@@ -81,23 +83,23 @@ function slot0.init(slot0)
 	slot0.attireBtn = slot0:findTF("btn_attire", slot0.rightPanel)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0:uiStartAnimating()
 	onButton(slot0, slot0.backBtn, function ()
-		uv0:uiExitAnimating()
-		uv0:emit(uv1.ON_BACK, nil, 0.5)
+		slot0:uiExitAnimating()
+		slot0.uiExitAnimating:emit(slot1.ON_BACK, nil, 0.5)
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.attireBtn, function ()
-		uv0:emit(PlayerInfoMediator.ON_ATTIRE)
+		slot0:emit(PlayerInfoMediator.ON_ATTIRE)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.replaceBtn, function ()
-		uv0:emit(PlayerInfoMediator.CHANGE_PAINT, uv0.player.character)
+		slot0:emit(PlayerInfoMediator.CHANGE_PAINT, slot0.player.character)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.swichSkinBtn, function ()
-		uv0:emit(PlayerInfoMediator.CHANGE_SKIN, uv0.flagShip)
+		slot0:emit(PlayerInfoMediator.CHANGE_SKIN, slot0.flagShip)
 	end)
 	onButton(slot0, slot0.writeBtn, function ()
-		activateInputField(uv0.inputField)
+		activateInputField(slot0.inputField)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.shareBtn, function ()
 		pg.ShareMgr.GetInstance():Share(pg.ShareMgr.TypeAdmira)
@@ -105,21 +107,21 @@ function slot0.didEnter(slot0)
 	onInputEndEdit(slot0, slot0.inputField, function (slot0)
 		if wordVer(slot0) > 0 then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("playerinfo_mask_word"))
-			activateInputField(uv0.inputField)
+			activateInputField(slot0.inputField)
 
 			return
 		end
 
-		if not slot0 or uv0.manifesto == slot0 then
+		if not slot0 or slot0.manifesto == slot0 then
 			return
 		end
 
-		uv0.manifesto = slot0
+		slot0.manifesto = slot0
 
-		uv0:emit(PlayerInfoMediator.CHANGE_MANIFESTO, slot0)
+		slot0:emit(PlayerInfoMediator.CHANGE_MANIFESTO, slot0)
 	end)
 	onButton(slot0, slot0.modifyNameBtn, function ()
-		slot0, slot1 = uv0.player:canModifyName()
+		slot0, slot1 = slot0.player:canModifyName()
 
 		if not slot0 then
 			pg.TipsMgr:GetInstance():ShowTips(slot1)
@@ -127,7 +129,7 @@ function slot0.didEnter(slot0)
 			return
 		end
 
-		uv0:openChangePlayerNamePanel()
+		slot0:openChangePlayerNamePanel()
 	end, SFX_PANEL)
 
 	slot0.medalList = slot0:findTF("medalList/container", slot0.topPanel)
@@ -138,77 +140,81 @@ function slot0.didEnter(slot0)
 	slot0.manifesto = slot0.player.manifesto
 end
 
-function slot0.initChangePlayerNamePanel(slot0, slot1)
+slot0.initChangePlayerNamePanel = function (slot0, slot1)
 	PoolMgr.GetInstance():GetUI("AdmiralUIChangeNamePanel", true, function (slot0)
 		slot0.name = "changeName_panel"
-		uv0.changeNamePanel = rtf(slot0)
+		slot0.changeNamePanel = rtf(slot0)
 
-		setParent(uv0.changeNamePanel, uv0._tf)
-		setActive(uv0.changeNamePanel, false)
+		setParent(slot0.changeNamePanel, slot0._tf)
+		setActive(slot0.changeNamePanel, false)
 
-		uv0.changeNameTip = uv0:findTF("frame/border/tip", uv0.changeNamePanel):GetComponent(typeof(Text))
-		uv0.changeNameConfirmBtn = uv0:findTF("frame/queren", uv0.changeNamePanel)
-		uv0.changeNameCancelBtn = uv0:findTF("frame/cancel", uv0.changeNamePanel)
-		uv0.changeNameInputField = uv0:findTF("frame/name_field", uv0.changeNamePanel)
+		slot0.changeNameTip = slot0:findTF("frame/border/tip", slot0.changeNamePanel):GetComponent(typeof(Text))
+		slot0.changeNameConfirmBtn = slot0:findTF("frame/queren", slot0.changeNamePanel)
+		slot0.changeNameCancelBtn = slot0:findTF("frame/cancel", slot0.changeNamePanel)
+		slot0.changeNameInputField = slot0:findTF("frame/name_field", slot0.changeNamePanel)
 
-		SetActive(uv0.changeNamePanel, false)
-		onButton(uv0, uv0.changeNameConfirmBtn, function ()
-			uv0:emit(PlayerInfoMediator.ON_CHANGE_PLAYER_NAME, getInputText(uv0.changeNameInputField))
-			setInputText(uv0.changeNameInputField, "")
+		SetActive(slot0.changeNamePanel, false)
+		onButton(slot0, slot0.changeNameConfirmBtn, function ()
+			slot0 = getInputText(slot0.changeNameInputField)
+
+			slot0:emit(PlayerInfoMediator.ON_CHANGE_PLAYER_NAME, slot0)
+			setInputText(slot0.changeNameInputField, "")
 		end, SFX_PANEL)
-		onButton(uv0, uv0.changeNameCancelBtn, function ()
-			uv0:closeChangePlayerNamePanel()
+		onButton(slot0, slot0.changeNameCancelBtn, function ()
+			slot0:closeChangePlayerNamePanel()
 		end, SFX_PANEL)
-		onButton(uv0, uv0.changeNamePanel, function ()
-			uv0:closeChangePlayerNamePanel()
+		onButton(slot0, slot0.changeNamePanel, function ()
+			slot0:closeChangePlayerNamePanel()
 		end, SFX_PANEL)
 
-		uv0.isInitChangeNamePanel = true
+		slot0.isInitChangeNamePanel = true
 
-		uv1()
+		slot0()
 	end)
 end
 
-function slot0.openChangePlayerNamePanel(slot0)
+slot0.openChangePlayerNamePanel = function (slot0)
+	function slot1()
+		slot0.isOpenChangeNamePanel = true
+
+		SetActive(slot0.changeNamePanel, true)
+
+		slot1 = nil
+		slot2 = 0
+
+		if SetActive.player:getModifyNameComsume()[1] == DROP_TYPE_RESOURCE then
+			slot1 = Item.New({
+				id = id2ItemId(slot0[2]),
+				type = DROP_TYPE_ITEM,
+				count = slot0[3]
+			})
+			slot2 = slot0.player:getResById(slot0[2])
+		elseif slot0[1] == DROP_TYPE_ITEM then
+			slot1 = Item.New({
+				id = slot0[2],
+				type = DROP_TYPE_ITEM,
+				count = slot0[3]
+			})
+			slot2 = getProxy(BagProxy):getItemCountById(slot0[2])
+		end
+
+		slot0.changeNameTip.text = i18n("player_name_change_windows_tip", slot1:getConfig("name"), slot2 .. "/" .. slot0[3])
+	end
+
 	if not slot0.changeNamePanel then
-		slot0:initChangePlayerNamePanel(function ()
-			uv0.isOpenChangeNamePanel = true
-
-			SetActive(uv0.changeNamePanel, true)
-
-			slot1 = nil
-			slot2 = 0
-
-			if uv0.player:getModifyNameComsume()[1] == DROP_TYPE_RESOURCE then
-				slot1 = Item.New({
-					id = id2ItemId(slot0[2]),
-					type = DROP_TYPE_ITEM,
-					count = slot0[3]
-				})
-				slot2 = uv0.player:getResById(slot0[2])
-			elseif slot0[1] == DROP_TYPE_ITEM then
-				slot1 = Item.New({
-					id = slot0[2],
-					type = DROP_TYPE_ITEM,
-					count = slot0[3]
-				})
-				slot2 = getProxy(BagProxy):getItemCountById(slot0[2])
-			end
-
-			uv0.changeNameTip.text = i18n("player_name_change_windows_tip", slot1:getConfig("name"), slot2 .. "/" .. slot0[3])
-		end)
+		slot0:initChangePlayerNamePanel(slot1)
 	else
 		slot1()
 	end
 end
 
-function slot0.closeChangePlayerNamePanel(slot0)
+slot0.closeChangePlayerNamePanel = function (slot0)
 	slot0.isOpenChangeNamePanel = nil
 
 	SetActive(slot0.changeNamePanel, false)
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	if isActive(GameObject.Find("OverlayCamera/Overlay/UIMain/DialogPanel")) then
 		triggerButton(slot1.transform:Find("dialog/title/back"))
 
@@ -223,11 +229,11 @@ function slot0.onBackPressed(slot0)
 	end
 end
 
-function slot0.updateAttireBtn(slot0, slot1)
+slot0.updateAttireBtn = function (slot0, slot1)
 	setActive(slot0.attireBtn:Find("tip"), slot1)
 end
 
-function slot0.uiStartAnimating(slot0)
+slot0.uiStartAnimating = function (slot0)
 	setAnchoredPosition(slot0.topPanel, {
 		y = 100
 	})
@@ -258,28 +264,28 @@ function slot0.uiStartAnimating(slot0)
 	shiftPanel(slot0:findTF("greet", slot0.rightPanel), 0, nil, nil, 0.35, true, true)
 end
 
-function slot0.uiExitAnimating(slot0)
+slot0.uiExitAnimating = function (slot0)
 	shiftPanel(slot0.leftPanel, -1280, nil, 0.4, 0.08, true, true)
 	shiftPanel(slot0.rightPanel, 1280, nil, 0.4, 0.08, true, true)
 	shiftPanel(slot0.topPanel, nil, 100, 0.2, 0.2, true, true)
 	shiftPanel(slot0.bottomPanel, nil, -248, nil, 0.1, true, true)
 end
 
-function slot0.updateManifesto(slot0)
+slot0.updateManifesto = function (slot0)
 	setInputText(slot0.inputField, slot0.player.manifesto)
 end
 
-function slot0.updatePainting(slot0, slot1)
+slot0.updatePainting = function (slot0, slot1)
 	setPaintingPrefabAsync(slot0.paintContain, slot1:getPainting(), "kanban")
 end
 
-function slot0.updateFashion(slot0)
+slot0.updateFashion = function (slot0)
 	setPaintingPrefabAsync(slot0.paintContain, slot0.skin.painting, "kanban")
 	slot0:updateLive2DState()
 	slot0:updateBGState()
 end
 
-function slot0.updateLive2DState(slot0)
+slot0.updateLive2DState = function (slot0)
 	slot1 = "live2d/" .. string.lower(slot0.flagShip:getPainting())
 	slot3 = getProxy(SettingsProxy).IsLive2dEnable(slot2)
 
@@ -294,7 +300,7 @@ function slot0.updateLive2DState(slot0)
 		setActive(slot0.live2dToggle:Find("on"), false)
 		setActive(slot0.live2dToggle:Find("off"), true)
 		onButton(slot0, slot0.live2dBtn, function ()
-			uv0:UpdateF(uv1, true)
+			slot0:UpdateF(slot0, true)
 		end, SFX_PANEL)
 	elseif slot6 == DownloadState.Updating then
 		setActive(slot0.live2dBtn, true)
@@ -310,8 +316,8 @@ function slot0.updateLive2DState(slot0)
 			setActive(slot0.live2dToggle:Find("on"), slot8)
 			setActive(slot0.live2dToggle:Find("off"), not slot3)
 			onButton(slot0, slot0.live2dBtn, function ()
-				uv0:SetLive2dEnable(not uv1)
-				uv2:updateLive2DState()
+				slot0:SetLive2dEnable(not slot1)
+				slot2:updateLive2DState()
 			end, SFX_PANEL)
 		end
 	end
@@ -324,14 +330,14 @@ function slot0.updateLive2DState(slot0)
 
 	if slot6 == DownloadState.CheckToUpdate or slot6 == DownloadState.UpdateFailure or slot6 == DownloadState.Updating then
 		slot0.live2dTimer = Timer.New(function ()
-			uv0:updateLive2DState()
+			slot0:updateLive2DState()
 		end, 0.5, 1)
 
 		slot0.live2dTimer:Start()
 	end
 end
 
-function slot0.updateSwichSkinBtn(slot0, slot1)
+slot0.updateSwichSkinBtn = function (slot0, slot1)
 	if slot0:isCurrentShipExistSkin(slot1.groupId) then
 		setActive(slot0.swichSkinBtn, true)
 	else
@@ -339,7 +345,7 @@ function slot0.updateSwichSkinBtn(slot0, slot1)
 	end
 end
 
-function slot0.isCurrentShipExistSkin(slot0, slot1)
+slot0.isCurrentShipExistSkin = function (slot0, slot1)
 	if slot1 then
 		if #slot0:getGroupSkinList(slot1) > 1 then
 			return true
@@ -349,12 +355,14 @@ function slot0.isCurrentShipExistSkin(slot0, slot1)
 	end
 end
 
-function slot0.getGroupSkinList(slot0, slot1)
+slot0.getGroupSkinList = function (slot0, slot1)
 	slot2 = ShipGroup.getSkinList(slot1)
 
 	if pg.ship_data_trans[slot1] and not slot0.flagShip:isRemoulded() then
+		slot3 = ShipGroup.GetGroupConfig(slot1).trans_skin
+
 		for slot7 = #slot2, 1, -1 do
-			if slot2[slot7].id == ShipGroup.GetGroupConfig(slot1).trans_skin then
+			if slot2[slot7].id == slot3 then
 				table.remove(slot2, slot7)
 
 				break
@@ -363,14 +371,16 @@ function slot0.getGroupSkinList(slot0, slot1)
 	end
 
 	for slot6 = #slot2, 1, -1 do
-		if slot2[slot6].show_time and (type(slot7.show_time) == "string" and slot7.show_time == "stop" or type(slot7.show_time) == "table" and not pg.TimeMgr:GetInstance():inTime(slot7.show_time)) then
+		if slot2[slot6].show_time and ((type(slot7.show_time) == "string" and slot7.show_time == "stop") or (type(slot7.show_time) == "table" and not pg.TimeMgr:GetInstance():inTime(slot7.show_time))) then
 			table.remove(slot2, slot6)
 		end
 	end
 
 	if PLATFORM_CODE == PLATFORM_CH then
+		slot3 = pg.gameset.big_seven_old_skin_timestamp.key_value
+
 		for slot7 = #slot2, 1, -1 do
-			if slot2[slot7].skin_type == 3 and pg.gameset.big_seven_old_skin_timestamp.key_value < slot0.flagShip.createTime then
+			if slot2[slot7].skin_type == 3 and slot3 < slot0.flagShip.createTime then
 				table.remove(slot2, slot7)
 			end
 		end
@@ -379,29 +389,31 @@ function slot0.getGroupSkinList(slot0, slot1)
 	return slot2
 end
 
-function slot0.updateBGState(slot0)
+slot0.updateBGState = function (slot0)
+	slot2 = getProxy(SettingsProxy).IsBGEnable(slot1)
+
 	if slot0.flagShip:getShipBgPrint() ~= slot0.flagShip:rarity2bgPrintForGet() then
 		setActive(slot0.showBgBtn, true)
-		setActive(slot0.showBgToggle:Find("on"), getProxy(SettingsProxy).IsBGEnable(slot1))
-		setActive(slot0.showBgToggle:Find("off"), not getProxy(SettingsProxy).IsBGEnable(slot1))
+		setActive(slot0.showBgToggle:Find("on"), slot2)
+		setActive(slot0.showBgToggle:Find("off"), not slot2)
 		removeOnButton(slot0.showBgBtn)
 		onButton(slot0, slot0.showBgBtn, function ()
-			uv0 = not uv0
+			slot0 = not slot0
 
-			uv1:SetBGEnable(uv0)
-			setActive(uv2.showBgToggle:Find("on"), uv0)
-			setActive(uv2.showBgToggle:Find("off"), not uv0)
+			slot1:SetBGEnable(slot1.SetBGEnable)
+			setActive(slot2.showBgToggle:Find("on"), setActive)
+			setActive(slot2.showBgToggle:Find("off"), not slot0)
 		end, SFX_PANEL)
 	else
 		setActive(slot0.showBgBtn, false)
 	end
 end
 
-function slot0.updateFleetGSView(slot0)
+slot0.updateFleetGSView = function (slot0)
 	setText(slot0:findTF("basic/info_list/score/value", slot0.rightPanel), slot0.fleetGS)
 end
 
-function slot0.initPlayerInfo(slot0)
+slot0.initPlayerInfo = function (slot0)
 	if math.max(slot0.player.maxRank, 1) > 14 then
 		slot2 = 14
 	end
@@ -422,8 +434,10 @@ function slot0.initPlayerInfo(slot0)
 	setText(findTF(slot7, "title/lv_bg/Text"), "LV." .. slot1.level)
 	setText(findTF(slot7, "title/exp"), slot0.player.exp .. "/" .. slot9)
 
+	slot10 = slot0:findTF("basic/info_list", slot0.rightPanel)
+
 	for slot14, slot15 in ipairs(slot5) do
-		setText(findTF(slot0:findTF("basic/info_list", slot0.rightPanel):GetChild(slot14 - 1), "value"), slot15 or 0)
+		setText(findTF(slot10:GetChild(slot14 - 1), "value"), slot15 or 0)
 	end
 
 	LoadImageSpriteAsync("emblem/" .. slot13, slot11, true)
@@ -441,25 +455,25 @@ function slot0.initPlayerInfo(slot0)
 	slot0:setLanguages()
 end
 
-function slot0.updateMedalDisplay(slot0, slot1)
+slot0.updateMedalDisplay = function (slot0, slot1)
 	slot0.selectedMedalList = slot0.player.displayTrophyList
 
 	removeAllChildren(slot0.medalList)
 
-	for slot6 = 1, math.min(#slot0.selectedMedalList, uv0.MAX_MEDAL_DISPLAY), 1 do
+	for slot6 = 1, math.min(#slot0.selectedMedalList, slot0.MAX_MEDAL_DISPLAY), 1 do
 		LoadImageSpriteAsync("medal/s_" .. pg.medal_template[slot0.selectedMedalList[slot6]].icon, slot0:findTF("icon", cloneTplTo(slot0.medalTpl, slot0.medalList)), true)
 	end
 
 	setActive(slot0.addMedalBtn, false)
 end
 
-function slot0.updatePlayerName(slot0)
+slot0.updatePlayerName = function (slot0)
 	slot0.selectedMedalList = Clone(slot0.player.displayTrophyList)
 
 	setText(findTF(slot1, "title/name_bg/Text"), slot0.player.name)
 end
 
-function slot0.setLanguages(slot0)
+slot0.setLanguages = function (slot0)
 	setText(slot0:findTF("info_panel/bg1/title_name", slot0.rightPanel), i18n("friend_resume_title"))
 	setText(slot0:findTF("statistics/bg2/title_name", slot0.rightPanel), i18n("friend_resume_data_title"))
 	setText(slot0:findTF("statistics/exp_panel/ship_count/name", slot0.rightPanel), i18n("friend_resume_ship_count"))
@@ -472,7 +486,7 @@ function slot0.setLanguages(slot0)
 	setText(slot0:findTF("basic/info_list/score/name", slot0.rightPanel), i18n("friend_resume_fleet_gs"))
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	if slot0.tweens then
 		cancelTweens(slot0.tweens)
 	end

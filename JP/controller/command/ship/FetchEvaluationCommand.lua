@@ -9,13 +9,13 @@ class("FetchEvaluationCommand", pm.SimpleCommand).execute = function (slot0, slo
 		pg.ConnectionMgr.GetInstance():Send(17101, {
 			ship_group_id = slot2
 		}, 17102, function (slot0)
-			if slot0.ship_discuss and slot1.ship_group_id == uv0 then
-				if uv1 then
-					uv1.evaluation = ShipEvaluation.New(slot1)
-					uv1.lastReqStamp = pg.TimeMgr.GetInstance():GetServerTime()
+			if slot0.ship_discuss and slot1.ship_group_id == slot0 then
+				if slot1 then
+					slot1.evaluation = ShipEvaluation.New(slot1)
+					slot1.lastReqStamp = pg.TimeMgr.GetInstance():GetServerTime()
 
-					uv2:updateShipGroup(uv1)
-					uv3:sendNotification(GAME.FETCH_EVALUATION_DONE, uv0)
+					slot1:updateShipGroup(slot1)
+					slot1:sendNotification(GAME.FETCH_EVALUATION_DONE, slot0)
 				end
 			else
 				pg.TipsMgr:GetInstance():ShowTips(errorTip("fetch_ship_eva", slot0.result))

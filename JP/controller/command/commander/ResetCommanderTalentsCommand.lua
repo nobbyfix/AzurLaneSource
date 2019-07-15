@@ -10,8 +10,8 @@ class("ResetCommanderTalentsCommand", pm.SimpleCommand).execute = function (slot
 	end
 
 	if #slot5:getTalentOrigins() == #slot5:getTalents() and _.all(slot6, function (slot0)
-		return _.any(uv0, function (slot0)
-			return slot0.id == uv0.id
+		return _.any(slot0, function (slot0)
+			return slot0.id == slot0.id
 		end)
 	end) then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("commander_reset_talent_is_not_need"))
@@ -29,16 +29,16 @@ class("ResetCommanderTalentsCommand", pm.SimpleCommand).execute = function (slot
 		commanderid = slot3
 	}, 25015, function (slot0)
 		if slot0.result == 0 then
-			uv0:consume({
-				gold = uv1
+			slot0:consume({
+				gold = slot0.consume
 			})
-			uv2:updatePlayer(uv0)
-			uv3:resetTalents()
-			uv3:updatePt(0)
-			uv3:updateNotLearnedList({})
-			uv4:updateCommander(uv3)
-			uv3:updateAbilityTime(pg.TimeMgr.GetInstance():GetServerTime())
-			uv5:sendNotification(GAME.COMMANDER_RESET_TALENTS_DONE)
+			slot0:updatePlayer(slot0)
+			slot3:resetTalents()
+			slot3:updatePt(0)
+			slot3:updateNotLearnedList({})
+			slot4:updateCommander()
+			slot3:updateAbilityTime(pg.TimeMgr.GetInstance():GetServerTime())
+			slot5:sendNotification(GAME.COMMANDER_RESET_TALENTS_DONE)
 			pg.TipsMgr:GetInstance():ShowTips(i18n("commander_reset_talent_success"))
 		else
 			pg.TipsMgr:GetInstance():ShowTips(i18n("commander_reset_talent_erro", slot0.result))

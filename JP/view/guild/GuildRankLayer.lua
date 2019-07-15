@@ -1,18 +1,18 @@
 slot0 = class("GuildRankLayer", import("..base.BaseUI"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "GuildRankUI"
 end
 
-function slot0.setGuildEvet(slot0, slot1)
+slot0.setGuildEvet = function (slot0, slot1)
 	slot0.guildEvent = slot1
 end
 
-function slot0.setSelfGuild(slot0, slot1)
+slot0.setSelfGuild = function (slot0, slot1)
 	slot0.selfGuildVO = slot1
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.mainLayer = pg.UIMgr.GetInstance().UIMain
 	slot0.topPanel = slot0:findTF("bg/top")
 	slot0.awardBtn = slot0:findTF("bg/guild_panel/award_btn")
@@ -32,29 +32,29 @@ function slot0.init(slot0)
 	slot0.awardRank = slot0:findTF("bg/award_panel/rank_container/Text")
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf)
 	onButton(slot0, slot0:findTF("btnBack", slot0.topPanel), function (slot0)
-		if uv0.inAwardPage then
-			uv0:closeAwards()
+		if slot0.inAwardPage then
+			slot0:closeAwards()
 		else
-			uv0:emit(uv1.ON_CLOSE)
+			slot0:emit(slot1.ON_CLOSE)
 		end
 	end, SOUND_BACK)
 	onButton(slot0, slot0._tf, function ()
-		if uv0.inAwardPage then
-			uv0:closeAwards()
+		if slot0.inAwardPage then
+			slot0:closeAwards()
 		else
-			uv0:emit(uv1.ON_CLOSE)
+			slot0:emit(slot1.ON_CLOSE)
 		end
 	end, SOUND_BACK)
 	onButton(slot0, slot0.awardBtn, function ()
-		uv0:showAwards()
+		slot0:showAwards()
 	end, SOUND_BACK)
 	slot0:disPlayerRank()
 end
 
-function slot0.disPlayerRank(slot0)
+slot0.disPlayerRank = function (slot0)
 	slot0.guildTFs = {}
 
 	if slot0.guildEvent and not slot0.guildEvent:isEnd() then
@@ -74,12 +74,12 @@ function slot0.disPlayerRank(slot0)
 	end
 end
 
-function slot0.updateGuild(slot0, slot1, slot2)
+slot0.updateGuild = function (slot0, slot1, slot2)
 	setText(findTF(slot4, "name"), slot1.name)
 	setText(findTF(slot4, "container/name"), slot1.playerName)
 	setText(findTF(slot4, "container/policy"), slot1.totalDamage)
 	setText(findTF(slot4, "count_container/count"), slot1:getFinishTime())
-	setText(findTF(slot0.guildTFs[slot1.id], "value"), slot0.selfGuildVO.id == slot1.id and slot0.guildEvent:getRank() or slot2)
+	setText(findTF(slot0.guildTFs[slot1.id], "value"), (slot0.selfGuildVO.id == slot1.id and slot0.guildEvent:getRank()) or slot2)
 	setText(findTF(slot4, "lv/Text"), slot1.level)
 
 	slot5 = JoinGuildLayer.getTheme(slot1:getFaction())
@@ -90,7 +90,7 @@ function slot0.updateGuild(slot0, slot1, slot2)
 	setActive(slot4:Find("check_mark"), slot0.selfGuildVO.id == slot1.id)
 end
 
-function slot0.showAwards(slot0)
+slot0.showAwards = function (slot0)
 	slot0.inAwardPage = true
 
 	setActive(slot0.awardPanel, true)
@@ -107,7 +107,7 @@ function slot0.showAwards(slot0)
 	setText(slot0.awardRank, slot0.guildEvent:getRank())
 end
 
-function slot0.updateAward(slot0, slot1, slot2)
+slot0.updateAward = function (slot0, slot1, slot2)
 	setText(slot1:Find("Text"), slot2.desc)
 
 	for slot6, slot7 in ipairs(slot2.award_display) do
@@ -119,14 +119,14 @@ function slot0.updateAward(slot0, slot1, slot2)
 	end
 end
 
-function slot0.closeAwards(slot0)
+slot0.closeAwards = function (slot0)
 	slot0.inAwardPage = nil
 
 	setActive(slot0.awardPanel, false)
 	setActive(slot0.guildPanel, true)
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf, slot0.mainLayer)
 end
 

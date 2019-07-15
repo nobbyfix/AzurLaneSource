@@ -19,15 +19,15 @@ class("ClickMingShiCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		state = 0
 	}, 11507, function (slot0)
 		if slot0.result == 0 then
-			uv0.chargeExp = uv0.chargeExp + 5
-			uv0.mingshiflag = uv0.mingshiflag + 1
+			slot0.chargeExp = slot0.chargeExp + 5
+			slot0.mingshiflag = slot0.mingshiflag + 1
 
-			uv1:sendNotification(GAME.CLICK_MING_SHI_SUCCESS)
+			slot0:sendNotification(GAME.CLICK_MING_SHI_SUCCESS)
 		else
-			uv0.mingshiflag = 2
+			slot0.mingshiflag = 2
 		end
 
-		uv2:updatePlayer(uv0)
+		slot2:updatePlayer(slot0)
 	end)
 end
 

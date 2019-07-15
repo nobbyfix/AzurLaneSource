@@ -4,7 +4,7 @@ class("TriggerTaskCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	}, 20008, function (slot0)
 		if slot0.result == 0 then
 			getProxy(TaskProxy):addTask(Task.New({
-				id = uv0
+				id = slot0
 			}))
 		end
 	end)

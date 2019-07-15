@@ -11,26 +11,29 @@ slot1.LAYERS = {
 	"sea"
 }
 
-function slot1.Ctor(slot0, slot1)
+slot1.Ctor = function (slot0, slot1)
 	slot0._go = GameObject.New("scenes")
 	slot0.mapLayerCtrls = {}
 	slot0.materialList = {}
+	slot2 = pg.map_data[slot1]
 
-	for slot6, slot7 in ipairs(uv0.LAYERS) do
+	for slot6, slot7 in ipairs(slot0.LAYERS) do
 		setParent(slot8, slot0._go, false)
 
-		GetOrAddComponent(slot8, "MapLayerCtrl").leftBorder = pg.map_data[slot1].range_left
-		GetOrAddComponent(slot8, "MapLayerCtrl").rightBorder = pg.map_data[slot1].range_right
-		slot9.speedToLeft = pg.map_data[slot1][slot7 .. "_speed"] or 0
+		GetOrAddComponent(slot8, "MapLayerCtrl").leftBorder = slot2.range_left
+		GetOrAddComponent(slot8, "MapLayerCtrl").rightBorder = slot2.range_right
+		slot9.speedToLeft = slot2[slot7 .. "_speed"] or 0
 		slot9.speedScaler = 1
+		slot11 = string.split(slot2[slot7 .. "_pos"], ";")
+		slot12 = string.split(slot2[slot7 .. "_scale"], ";")
 
 		for slot16, slot17 in ipairs(slot10) do
-			slot18 = uv1.Battle.BattleResourceManager:GetInstance():InstMap(slot17)
+			slot18 = slot1.Battle.BattleResourceManager:GetInstance():InstMap(slot17)
 
 			setParent(slot18, slot8, false)
 
-			tf(slot18).localPosition = string2vector3(string.split(pg.map_data[slot1][slot7 .. "_pos"], ";")[slot16])
-			tf(slot18).localScale = string2vector3(string.split(pg.map_data[slot1][slot7 .. "_scale"], ";")[slot16])
+			tf(slot18).localPosition = string2vector3(slot11[slot16])
+			tf(slot18).localScale = string2vector3(slot12[slot16])
 
 			if slot18:GetComponent(typeof(MeshRenderer)) then
 				table.insert(slot0.materialList, {
@@ -57,7 +60,7 @@ function slot1.Ctor(slot0, slot1)
 	return slot0._go
 end
 
-function slot1.ShiftSurface(slot0, slot1, slot2, slot3, slot4)
+slot1.ShiftSurface = function (slot0, slot1, slot2, slot3, slot4)
 	if slot0._shiftTimer then
 		return
 	end
@@ -74,47 +77,49 @@ function slot1.ShiftSurface(slot0, slot1, slot2, slot3, slot4)
 	end
 
 	slot0._shiftTimer = pg.TimeMgr.GetInstance():AddBattleTimer("", -1, slot3, function ()
-		if (uv0 - uv1) * uv2 > 0 then
-			uv3.Battle.BattleVariable.AppendMapFactor("seaSurfaceShift", uv1)
-			uv4:UpdateMapOffset()
-			uv4:UpdateSpeedScaler()
+		if (slot0 - slot1) * slot2 > 0 then
+			slot3.Battle.BattleVariable.AppendMapFactor("seaSurfaceShift", )
+			slot4:UpdateMapOffset()
+			slot4:UpdateSpeedScaler()
 
-			uv1 = uv1 + uv2
+			slot1 = slot4 + slot2
 		else
-			pg.TimeMgr.GetInstance():RemoveBattleTimer(uv4._shiftTimer)
+			pg.TimeMgr.GetInstance():RemoveBattleTimer(slot4._shiftTimer)
 
-			uv4._shiftTimer = nil
+			slot4._shiftTimer = nil
 
-			if uv5 then
-				uv5()
+			if slot5 then
+				slot5()
 			end
 		end
 	end, true)
 end
 
-function slot1.UpdateSpeedScaler(slot0)
-	slot0:setSpeedScaler(uv0.Battle.BattleVariable.MapSpeedRatio)
+slot1.UpdateSpeedScaler = function (slot0)
+	slot0:setSpeedScaler(slot0.Battle.BattleVariable.MapSpeedRatio)
 end
 
-function slot1.UpdateBufferAlpha(slot0, slot1)
+slot1.UpdateBufferAlpha = function (slot0, slot1)
 	slot0._bufferRenderer.color = Color.New(1, 1, 1, slot1 * 0.1)
 end
 
-function slot1.setSpeedScaler(slot0, slot1)
+slot1.setSpeedScaler = function (slot0, slot1)
 	for slot5, slot6 in ipairs(slot0.mapLayerCtrls) do
 		slot6.speedScaler = slot1
 	end
 end
 
-function slot1.UpdateMapOffset(slot0)
+slot1.UpdateMapOffset = function (slot0)
+	slot2 = -0.0005 * slot0.Battle.BattleVariable.MapSpeedRatio
+
 	for slot6, slot7 in ipairs(slot0.materialList) do
-		slot7.offset.x = slot7.offset.x + -0.0005 * uv0.Battle.BattleVariable.MapSpeedRatio
+		slot7.offset.x = slot7.offset.x + slot2
 
 		slot7.material:SetTextureOffset("_SeaTex", slot7.offset)
 	end
 end
 
-function slot1.Dispose(slot0)
+slot1.Dispose = function (slot0)
 	if slot0._shiftTimer then
 		pg.TimeMgr.GetInstance():RemoveBattleTimer(slot0._shiftTimer)
 	end
@@ -128,10 +133,12 @@ function slot1.Dispose(slot0)
 	end
 end
 
-function slot1.GetMapResNames(slot0, slot1)
+slot1.GetMapResNames = function (slot0, slot1)
 	return string.split(pg.map_data[slot0][slot1 .. "_shot"], ";")
 end
 
-function slot1.setActive(slot0, slot1)
+slot1.setActive = function (slot0, slot1)
 	SetActive(slot0._go, slot1)
 end
+
+return

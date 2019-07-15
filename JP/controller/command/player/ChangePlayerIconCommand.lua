@@ -7,13 +7,14 @@ class("ChangePlayerIcon", pm.SimpleCommand).execute = function (slot0, slot1)
 		if slot0.result == 0 then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("player_changePlayerIcon_ok"))
 
-			slot2 = getProxy(BayProxy).getShipById(slot1, uv0)
-			uv1.character = uv0
-			uv1.icon = slot2.configId
-			uv1.skinId = slot2.skinId
+			slot1 = getProxy(BayProxy)
+			slot2 = slot1:getShipById(slot0)
+			slot1.character = slot0
+			slot1.icon = slot2.configId
+			slot1.skinId = slot2.skinId
 
-			uv2:updatePlayer(uv1)
-			uv3:sendNotification(GAME.CHANGE_PLAYER_ICON_DONE, {
+			slot2:updatePlayer(slot1)
+			slot2.updatePlayer:sendNotification(GAME.CHANGE_PLAYER_ICON_DONE, {
 				ship = slot2
 			})
 		else

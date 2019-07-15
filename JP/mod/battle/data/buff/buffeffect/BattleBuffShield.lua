@@ -2,11 +2,11 @@ ys = ys or {}
 ys.Battle.BattleBuffShield = class("BattleBuffShield", ys.Battle.BattleBuffEffect)
 ys.Battle.BattleBuffShield.__name = "BattleBuffShield"
 
-function ys.Battle.BattleBuffShield.Ctor(slot0, slot1)
-	uv0.super.Ctor(slot0, slot1)
+ys.Battle.BattleBuffShield.Ctor = function (slot0, slot1)
+	slot0.super.Ctor(slot0, slot1)
 end
 
-function ys.Battle.BattleBuffShield.SetArgs(slot0, slot1, slot2)
+ys.Battle.BattleBuffShield.SetArgs = function (slot0, slot1, slot2)
 	slot0._number = slot0._tempData.arg_list.number or 0
 	slot0._maxHPRatio = slot3.maxHPRatio or 0
 
@@ -19,11 +19,11 @@ function ys.Battle.BattleBuffShield.SetArgs(slot0, slot1, slot2)
 	slot0._shield = slot0:CalcNumber(slot1)
 end
 
-function ys.Battle.BattleBuffShield.onStack(slot0, slot1, slot2)
+ys.Battle.BattleBuffShield.onStack = function (slot0, slot1, slot2)
 	slot0._shield = slot0:CalcNumber(slot1)
 end
 
-function ys.Battle.BattleBuffShield.onTakeDamage(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffShield.onTakeDamage = function (slot0, slot1, slot2, slot3)
 	slot0._shield = slot0._shield - slot3.damage
 
 	if slot0._shield > 0 then
@@ -35,9 +35,11 @@ function ys.Battle.BattleBuffShield.onTakeDamage(slot0, slot1, slot2, slot3)
 	end
 end
 
-function ys.Battle.BattleBuffShield.CalcNumber(slot0, slot1)
+ys.Battle.BattleBuffShield.CalcNumber = function (slot0, slot1)
 	slot2, slot3 = slot1:GetHP()
 	slot4, slot5 = slot0._caster:GetHP()
 
 	return math.max(0, math.floor(slot3 * slot0._maxHPRatio + slot0._number + slot0._casterMaxHPRatio * slot5))
 end
+
+return

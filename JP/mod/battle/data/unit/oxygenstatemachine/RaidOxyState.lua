@@ -3,32 +3,34 @@ slot1 = ys.Battle.BattleConst
 ys.Battle.RaidOxyState = class("RaidOxyState", ys.Battle.IOxyState)
 ys.Battle.RaidOxyState.__name = "RaidOxyState"
 
-function ys.Battle.RaidOxyState.Ctor(slot0)
-	uv0.super.Ctor(slot0)
+ys.Battle.RaidOxyState.Ctor = function (slot0)
+	slot0.super.Ctor(slot0)
 end
 
-function ys.Battle.RaidOxyState.GetWeaponUseableList(slot0)
+ys.Battle.RaidOxyState.GetWeaponUseableList = function (slot0)
 	return {
-		uv0.OXY_STATE.DIVE
+		slot0.OXY_STATE.DIVE
 	}
 end
 
-function ys.Battle.RaidOxyState.GetDiveState(slot0)
-	return uv0.OXY_STATE.DIVE
+ys.Battle.RaidOxyState.GetDiveState = function (slot0)
+	return slot0.OXY_STATE.DIVE
 end
 
-function ys.Battle.RaidOxyState.GetBubbleFlag(slot0)
+ys.Battle.RaidOxyState.GetBubbleFlag = function (slot0)
 	return true
 end
 
-function ys.Battle.RaidOxyState.IsVisible(slot0)
+ys.Battle.RaidOxyState.IsVisible = function (slot0)
 	return false
 end
 
-function ys.Battle.RaidOxyState.GetBarVisible(slot0)
+ys.Battle.RaidOxyState.GetBarVisible = function (slot0)
 	return true
 end
 
-function ys.Battle.RaidOxyState.RunMode(slot0)
+ys.Battle.RaidOxyState.RunMode = function (slot0)
 	return false
 end
+
+return

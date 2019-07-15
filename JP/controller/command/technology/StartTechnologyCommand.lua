@@ -23,17 +23,17 @@ class("StartTechnologyCommand", pm.SimpleCommand).execute = function (slot0, slo
 	}, 63002, function (slot0)
 		if slot0.result == 0 then
 			for slot5, slot6 in ipairs(slot1) do
-				uv1:sendNotification(GAME.CONSUME_ITEM, Item.New({
+				slot1:sendNotification(GAME.CONSUME_ITEM, Item.New({
 					type = slot6[1],
 					id = slot6[2],
 					count = slot6[3]
 				}))
 			end
 
-			uv0:start()
-			uv2:updateTechnology(uv0)
-			uv1:sendNotification(GAME.START_TECHNOLOGY_DONE, {
-				technologyId = uv0.id
+			slot0:start()
+			slot0.start:updateTechnology(slot0)
+			slot1:sendNotification(GAME.START_TECHNOLOGY_DONE, {
+				technologyId = slot0.id
 			})
 			pg.TipsMgr:GetInstance():ShowTips(i18n("technology_start_up"))
 		else

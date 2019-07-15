@@ -1,7 +1,7 @@
 slot0 = class("ShipGroup", import(".BaseVO"))
 slot0.REQ_INTERVAL = 60
 
-function slot0.GetGroupConfig(slot0)
+slot0.GetGroupConfig = function (slot0)
 	for slot4, slot5 in pairs(pg.ship_data_group) do
 		if slot5.group_type == slot0 then
 			return slot5
@@ -9,7 +9,7 @@ function slot0.GetGroupConfig(slot0)
 	end
 end
 
-function slot0.getDefaultShipConfig(slot0)
+slot0.getDefaultShipConfig = function (slot0)
 	slot1 = nil
 
 	for slot5 = 4, 1, -1 do
@@ -21,11 +21,11 @@ function slot0.getDefaultShipConfig(slot0)
 	return slot1
 end
 
-function slot0.getDefaultShipNameByGroupID(slot0)
-	return uv0.getDefaultShipConfig(slot0).name
+slot0.getDefaultShipNameByGroupID = function (slot0)
+	return slot0:getDefaultShipConfig().name
 end
 
-function slot0.IsBluePrintGroup(slot0)
+slot0.IsBluePrintGroup = function (slot0)
 	return table.contains(pg.ship_data_blueprint.all, slot0)
 end
 
@@ -35,49 +35,50 @@ slot0.STATE_UNLOCK = 2
 slot0.ENABLE_SKIP_TO_CHAPTER = true
 slot1 = pg.ship_data_group
 
-function slot0.getState(slot0, slot1, slot2)
-	if uv0.ENABLE_SKIP_TO_CHAPTER then
+slot0.getState = function (slot0, slot1, slot2)
+	if slot0.ENABLE_SKIP_TO_CHAPTER then
 		if slot2 and not slot1 then
-			return uv0.STATE_LOCK
+			return slot0.STATE_LOCK
 		end
 
-		if uv1[slot0] then
-			if not uv1[slot0].hide then
-				return uv0.STATE_LOCK
+		if slot1[slot0] then
+			if not slot1[slot0].hide then
+				return slot0.STATE_LOCK
 			end
 
 			if slot3.hide == 1 then
-				return uv0.STATE_LOCK
+				return slot0.STATE_LOCK
 			elseif slot3.hide ~= 0 then
-				return uv0.STATE_LOCK
+				return slot0.STATE_LOCK
 			end
 		end
 
 		if slot1 then
-			return uv0.STATE_UNLOCK
+			return slot0.STATE_UNLOCK
 		else
-			if not uv1[slot0] then
-				return uv0.STATE_LOCK
+			if not slot1[slot0] then
+				return slot0.STATE_LOCK
 			end
 
+			slot5 = getProxy(ChapterProxy)
 			slot6 = nil
 
 			if slot3.redirect_id ~= 0 then
-				slot6 = getProxy(ChapterProxy):getChapterById(slot4)
+				slot6 = slot5:getChapterById(slot4)
 			end
 
-			if slot4 == 0 or slot6 and slot6:isClear() then
-				return uv0.STATE_NOTGET
+			if slot4 == 0 or (slot6 and slot6:isClear()) then
+				return slot0.STATE_NOTGET
 			else
-				return uv0.STATE_LOCK
+				return slot0.STATE_LOCK
 			end
 		end
 	else
-		return slot1 and uv0.STATE_UNLOCK or uv0.STATE_LOCK
+		return (slot1 and slot0.STATE_UNLOCK) or slot0.STATE_LOCK
 	end
 end
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.id = slot1.id
 	slot0.star = slot1.star
 	slot0.hearts = slot1.heart_count
@@ -88,21 +89,21 @@ function slot0.Ctor(slot0, slot1)
 	slot0.evaluation = nil
 	slot0.lastReqStamp = 0
 	slot0.trans = false
-	slot2 = uv0.getDefaultShipConfig(slot0.id)
+	slot2 = slot0.getDefaultShipConfig(slot0.id)
 	slot0.shipConfig = setmetatable({}, {
 		__index = function (slot0, slot1)
-			return uv0[slot1]
+			return slot0[slot1]
 		end
 	})
-	slot3 = uv0.GetGroupConfig(slot0.id)
+	slot3 = slot0.GetGroupConfig(slot0.id)
 	slot0.groupConfig = setmetatable({}, {
 		__index = function (slot0, slot1)
-			return uv0[slot1]
+			return slot0[slot1]
 		end
 	})
 end
 
-function slot0.getName(slot0, slot1)
+slot0.getName = function (slot0, slot1)
 	slot2 = slot0.shipConfig.name
 
 	if slot1 and slot0.trans then
@@ -112,23 +113,25 @@ function slot0.getName(slot0, slot1)
 	return slot2
 end
 
-function slot0.getNation(slot0)
+slot0.getNation = function (slot0)
 	return slot0.shipConfig.nationality
 end
 
-function slot0.getRarity(slot0, slot1)
+slot0.getRarity = function (slot0, slot1)
+	slot2 = slot0.shipConfig.rarity
+
 	if slot1 and slot0.trans then
-		slot2 = slot0.shipConfig.rarity + 1
+		slot2 = slot2 + 1
 	end
 
 	return slot2
 end
 
-function slot0.getTeamType(slot0)
+slot0.getTeamType = function (slot0)
 	return pg.ship_data_by_type[slot0:getShipType()].team_type
 end
 
-function slot0.getPainting(slot0, slot1)
+slot0.getPainting = function (slot0, slot1)
 	slot2 = slot0.shipConfig.skin_id
 
 	if slot1 and slot0.trans then
@@ -138,7 +141,7 @@ function slot0.getPainting(slot0, slot1)
 	return pg.ship_skin_template[slot2].painting
 end
 
-function slot0.getShipType(slot0, slot1)
+slot0.getShipType = function (slot0, slot1)
 	slot2 = slot0.shipConfig.type
 
 	if slot1 and slot0.trans and Ship.getTransformShipId(slot0.shipConfig.id) then
@@ -148,7 +151,7 @@ function slot0.getShipType(slot0, slot1)
 	return slot2
 end
 
-function slot0.getShipConfigId(slot0, slot1)
+slot0.getShipConfigId = function (slot0, slot1)
 	slot2 = slot0.shipConfig.id
 
 	if slot1 and slot0.trans and Ship.getTransformShipId(slot0.shipConfig.id) then
@@ -158,17 +161,19 @@ function slot0.getShipConfigId(slot0, slot1)
 	return slot2
 end
 
-function slot0.getSkinList(slot0)
+slot0.getSkinList = function (slot0)
+	slot1 = {}
+
 	for slot5, slot6 in ipairs(pg.ship_skin_template.all) do
 		if pg.ship_skin_template[slot6].ship_group == slot0 then
-			table.insert({}, slot7)
+			table.insert(slot1, slot7)
 		end
 	end
 
 	return slot1
 end
 
-function slot0.getDefaultSkin(slot0)
+slot0.getDefaultSkin = function (slot0)
 	for slot4, slot5 in ipairs(pg.ship_skin_template.all) do
 		if pg.ship_skin_template[slot5].ship_group == slot0 and slot6.skin_type == Ship.SKIN_TYPE_DEFAULT then
 			return slot6
@@ -176,7 +181,7 @@ function slot0.getDefaultSkin(slot0)
 	end
 end
 
-function slot0.getProposeSkin(slot0)
+slot0.getProposeSkin = function (slot0)
 	for slot4, slot5 in ipairs(pg.ship_skin_template.all) do
 		if pg.ship_skin_template[slot5].ship_group == slot0 and slot6.skin_type == Ship.SKIN_TYPE_PROPOSE then
 			return slot6
@@ -186,7 +191,7 @@ function slot0.getProposeSkin(slot0)
 	return nil
 end
 
-function slot0.getModSkin(slot0)
+slot0.getModSkin = function (slot0)
 	if pg.ship_data_trans[slot0] then
 		return pg.ship_skin_template[slot1.skin_id]
 	end
@@ -194,19 +199,19 @@ function slot0.getModSkin(slot0)
 	return nil
 end
 
-function slot0.updateMaxIntimacy(slot0, slot1)
+slot0.updateMaxIntimacy = function (slot0, slot1)
 	slot0.maxIntimacy = math.max(slot1, slot0.maxIntimacy)
 end
 
-function slot0.updateMarriedFlag(slot0)
+slot0.updateMarriedFlag = function (slot0)
 	slot0.married = 1
 end
 
-function slot0.isBluePrintGroup(slot0)
-	return uv0.IsBluePrintGroup(slot0.id)
+slot0.isBluePrintGroup = function (slot0)
+	return slot0.IsBluePrintGroup(slot0.id)
 end
 
-function slot0.getBluePrintChangeSkillList(slot0)
+slot0.getBluePrintChangeSkillList = function (slot0)
 	return pg.ship_data_blueprint[slot0.id].change_skill
 end
 

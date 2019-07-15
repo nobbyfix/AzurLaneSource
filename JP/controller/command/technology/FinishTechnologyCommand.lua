@@ -14,26 +14,30 @@ class("FinishTechnologyCommand", pm.SimpleCommand).execute = function (slot0, sl
 		refresh_id = slot4
 	}, 63004, function (slot0)
 		if slot0.result == 0 then
-			uv0:reset()
-			uv1:updateTechnology(uv0)
+			slot0:reset()
+			slot0.reset:updateTechnology(slot0)
+
+			slot1 = {}
 
 			for slot5, slot6 in ipairs(slot0.drop_list) do
-				uv2:sendNotification(GAME.ADD_ITEM, Item.New(slot6))
-				table.insert({}, Item.New(slot6))
+				slot2:sendNotification(GAME.ADD_ITEM, Item.New(slot6))
+				table.insert(slot1, Item.New(slot6))
 			end
+
+			slot2 = {}
 
 			for slot6, slot7 in ipairs(slot0.common_list) do
-				uv2:sendNotification(GAME.ADD_ITEM, Item.New(slot7))
-				table.insert({}, Item.New(slot7))
+				slot2:sendNotification(GAME.ADD_ITEM, Item.New(slot7))
+				table.insert(slot2, Item.New(slot7))
 			end
 
-			if uv0:hasCondition() and uv0:getTaskId() then
+			if slot0:hasCondition() and slot0:getTaskId() then
 				getProxy(TaskProxy):removeTaskById(slot3)
 			end
 
-			uv1:updateTechnologys(slot0)
-			uv2:sendNotification(GAME.FINISH_TECHNOLOGY_DONE, {
-				technologyId = uv0.id,
+			slot1:updateTechnologys(slot0)
+			slot2:sendNotification(GAME.FINISH_TECHNOLOGY_DONE, {
+				technologyId = slot0.id,
 				items = slot1,
 				commons = slot2
 			})

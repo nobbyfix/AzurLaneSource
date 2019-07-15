@@ -2,7 +2,7 @@ slot0 = class("ShipRemouldMediator", import("..base.ContextMediator"))
 slot0.REMOULD_SHIP = "ShipRemouldMediator:REMOULD_SHIP"
 slot0.ON_SELECTE_SHIP = "ShipRemouldMediator:ON_SELECTE_SHIP"
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
 	slot1 = getProxy(BayProxy)
 
 	slot0.viewComponent:setShipVO(slot2)
@@ -12,27 +12,31 @@ function slot0.register(slot0)
 	slot0.bagProxy = getProxy(BagProxy)
 
 	slot0.viewComponent:setItems(slot0.bagProxy:getData())
-	slot0:bind(uv0.REMOULD_SHIP, function (slot0, slot1, slot2, slot3)
-		if uv0.contextData.materialShipIds and table.getCount(uv0.contextData.materialShipIds) > 1 then
+	slot0:bind(slot0.REMOULD_SHIP, function (slot0, slot1, slot2, slot3)
+		if slot0.contextData.materialShipIds and table.getCount(slot0.contextData.materialShipIds) > 1 then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("remould_ship_count_more"))
 
 			return
 		end
 
-		uv0:sendNotification(GAME.REMOULD_SHIP, {
+		slot0:sendNotification(GAME.REMOULD_SHIP, {
 			shipId = slot1,
 			remouldId = slot2,
-			materialIds = uv0.contextData.materialShipIds or {}
+			materialIds = slot0.contextData.materialShipIds or {}
 		})
 	end)
-	slot0:bind(uv0.ON_SELECTE_SHIP, function (slot0, slot1)
-		for slot8, slot9 in pairs(uv0) do
-			if pg.ship_data_template[slot9.configId].group_type ~= pg.ship_data_template[slot1.configId].group_type and not slot9:isTestShip() or slot1.id == slot9.id or slot9:isTestShip() and not slot9:canUseTestShip(slot1:getConfig("rarity")) then
-				table.insert({}, slot9.id)
+	slot0:bind(slot0.ON_SELECTE_SHIP, function (slot0, slot1)
+		slot2 = {}
+		slot3 = pg.ship_data_template
+		slot4 = slot1:getConfig("rarity")
+
+		for slot8, slot9 in pairs(slot0) do
+			if (slot3[slot9.configId].group_type ~= slot3[slot1.configId].group_type and not slot9:isTestShip()) or slot1.id == slot9.id or (slot9:isTestShip() and not slot9:canUseTestShip(slot4)) then
+				table.insert(slot2, slot9.id)
 			end
 		end
 
-		uv1:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
+		slot1:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
 			selectedMin = 1,
 			skipSelect = true,
 			selectedMax = 1,
@@ -41,17 +45,17 @@ function slot0.register(slot0)
 				inActivity = true
 			},
 			ignoredIds = slot2,
-			selectedIds = uv1.contextData.materialShipIds or {},
+			selectedIds = slot1.contextData.materialShipIds or {},
 			onShip = Ship.canDestroyShip,
 			onSelected = function (slot0)
-				uv0.contextData.materialShipIds = slot0
+				slot0.contextData.materialShipIds = slot0
 			end,
 			confirmSelect = function (slot0, slot1, slot2)
-				if not _.all(slot3(slot0, uv0), function (slot0)
+				if not _.all(slot3(slot0, slot0), function (slot0)
 					return slot0 == ""
 				end) then
 					pg.MsgboxMgr.GetInstance():ShowMsgBox({
-						content = i18n("destroy_eliteship_tip", string.gsub(table.concat(slot4, ""), "$1", slot4[1] == "" and "" or "、")),
+						content = i18n("destroy_eliteship_tip", string.gsub(table.concat(slot4, ""), "$1", (slot4[1] == "" and "") or "、")),
 						onYes = slot1
 					})
 				else
@@ -62,7 +66,7 @@ function slot0.register(slot0)
 	end)
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		GAME.REMOULD_SHIP_DONE,
 		PlayerProxy.UPDATED,
@@ -70,7 +74,7 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == GAME.REMOULD_SHIP_DONE then

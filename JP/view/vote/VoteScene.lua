@@ -22,17 +22,17 @@ slot0.raceShipIndex = {
 	})
 }
 
-function slot0.setVoteInfo(slot0, slot1, slot2, slot3)
+slot0.setVoteInfo = function (slot0, slot1, slot2, slot3)
 	slot0.votes = slot1
 	slot0.loves = slot2
 	slot0.voteGroup = slot3
 end
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "VoteUI"
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.overlay = slot0:findTF("overlay")
 	slot0.btnBack = slot0:findTF("top/back", slot0.overlay)
 	slot0.panelPrimary = slot0:findTF("primary", slot0.overlay)
@@ -71,16 +71,16 @@ function slot0.init(slot0)
 	slot0.btnIndex = slot0:findTF("main/index/index_button", slot0.panelRace)
 	slot0.raceShips = slot0:findTF("main/ship_container", slot0.panelRace):GetComponent("LScrollRect")
 
-	function slot0.raceShips.onInitItem(slot0)
-		uv0:onInitShip(slot0)
+	slot0.raceShips.onInitItem = function (slot0)
+		slot0:onInitShip(slot0)
 	end
 
-	function slot0.raceShips.onUpdateItem(slot0, slot1)
-		uv0:onUpdateShip(slot0, slot1)
+	slot0.raceShips.onUpdateItem = function (slot0, slot1)
+		slot0:onUpdateShip(slot0, slot1)
 	end
 
-	function slot0.raceShips.onReturnItem(slot0, slot1)
-		uv0:onReturnShip(slot0, slot1)
+	slot0.raceShips.onReturnItem = function (slot0, slot1)
+		slot0:onReturnShip(slot0, slot1)
 	end
 
 	slot0.raceShipItems = {}
@@ -118,21 +118,21 @@ function slot0.init(slot0)
 	setActive(slot0.panelVote, false)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0:displayEntryView()
 	onButton(slot0, slot0.btnBack, function ()
-		if isActive(uv0.panelRace) then
-			setActive(uv0.panelRace, false)
-			setActive(uv0.racePaint, false)
-			uv0:displayEntryView()
+		if isActive(slot0.panelRace) then
+			setActive(slot0.panelRace, false)
+			setActive(slot0.racePaint, false)
+			setActive:displayEntryView()
 		else
-			uv0:emit(BaseUI.ON_BACK)
+			slot0:emit(BaseUI.ON_BACK)
 		end
 	end, SFX_CANCEL)
 	pg.UIMgr.GetInstance():BlurPanel(slot0.overlay)
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	playSoundEffect(SFX_CANCEL)
 
 	if slot0.currentVoteShip then
@@ -144,7 +144,7 @@ function slot0.onBackPressed(slot0)
 	triggerButton(slot0.btnBack)
 end
 
-function slot0.displayEntryView(slot0)
+slot0.displayEntryView = function (slot0)
 	if slot0.voteGroup:getConfig("type") == VoteConst.RacePrimary then
 		setActive(slot0.panelPrimary, true)
 		slot0:updatePrimaryPanel()
@@ -154,15 +154,15 @@ function slot0.displayEntryView(slot0)
 	end
 end
 
-function slot0.onInitShip(slot0, slot1)
+slot0.onInitShip = function (slot0, slot1)
 	onButton(slot0, VoteShipItem.New(slot1).go, function ()
-		uv1:openVotePanel(uv0.voteShip)
+		slot1:openVotePanel(slot0.voteShip)
 	end, SFX_PANEL)
 
 	slot0.raceShipItems[slot1] = VoteShipItem.New(slot1)
 end
 
-function slot0.onUpdateShip(slot0, slot1, slot2)
+slot0.onUpdateShip = function (slot0, slot1, slot2)
 	if not slot0.raceShipItems[slot2] then
 		slot0:onInitShip(slot2)
 
@@ -172,13 +172,13 @@ function slot0.onUpdateShip(slot0, slot1, slot2)
 	slot3:update(slot0.raceShipFiltered[slot1 + 1])
 end
 
-function slot0.onReturnShip(slot0, slot1, slot2)
+slot0.onReturnShip = function (slot0, slot1, slot2)
 	if slot0.raceShipItems and slot0.raceShipItems[slot2] then
 		slot3:clear()
 	end
 end
 
-function slot0.updatePrimaryPanel(slot0)
+slot0.updatePrimaryPanel = function (slot0)
 	setText(slot0.primaryVotes, "X" .. slot0.votes)
 	setText(slot0.primaryLoves, "X" .. slot0.loves)
 
@@ -186,35 +186,36 @@ function slot0.updatePrimaryPanel(slot0)
 
 	slot2:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			setActive(slot2:Find("rank"), uv0[slot1 + 1].rank <= 3)
+			setActive(slot2:Find("rank"), slot0[slot1 + 1].rank <= 3)
 
 			if slot3.rank <= 3 then
-				setImageSprite(slot2:Find("rank"), getImageSprite(uv1.res:Find("rank" .. slot3.rank)))
+				setImageSprite(slot2:Find("rank"), getImageSprite(slot1.res:Find("rank" .. slot3.rank)))
 			end
 
 			setImageSprite(slot4, slot5)
 			LoadSpriteAsync("herohrzicon/" .. slot3.shipVO:getPainting(), function (slot0)
-				if not uv0.exited and uv1 == uv2[uv3 + 1] then
-					setImageSprite(uv4, slot0, true)
+				if not slot0.exited and slot1 == slot2[slot3 + 1] then
+					setImageSprite(slot4, slot0, true)
 				end
 			end)
 			setText(slot2:Find("black/ticket_number"), slot3.votes)
-			onButton(uv1, slot2, function ()
+			onButton(slot1, slot2, function ()
+				return
 			end, SFX_PANEL)
 		end
 	end)
 	slot2:align(#_.slice(slot0.voteGroup:getList(), 1, VoteConst.PrimayDisplayMax))
 	onButton(slot0, slot0.btnPrimary, function ()
-		setActive(uv0.panelPrimary, false)
-		setActive(uv0.panelRace, true)
-		setActive(uv0.racePaint, true)
-		uv0:updateRacePanel()
+		setActive(slot0.panelPrimary, false)
+		setActive(slot0.panelRace, true)
+		setActive(slot0.racePaint, true)
+		setActive:updateRacePanel()
 	end, SFX_PANEL)
 	setText(slot0.primaryTime, slot0.voteGroup:getVoteTimeStr())
 	setImageSprite(slot0.primaryTitle, getImageSprite(slot0.res:Find("group" .. slot0.voteGroup:getVoteGroupChar())), true)
 end
 
-function slot0.updateFinalPanel(slot0)
+slot0.updateFinalPanel = function (slot0)
 	setText(slot0.finalVotes, "X" .. slot0.votes)
 	setText(slot0.finalLoves, "X" .. slot0.loves)
 
@@ -222,21 +223,21 @@ function slot0.updateFinalPanel(slot0)
 
 	slot2:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			setActive(slot2:Find("rank"), uv0[slot1 + 1].rank <= 3)
+			setActive(slot2:Find("rank"), slot0[slot1 + 1].rank <= 3)
 
 			if slot3.rank <= 3 then
-				setImageSprite(slot2:Find("rank"), getImageSprite(uv1.res:Find("rank" .. slot3.rank)))
+				setImageSprite(slot2:Find("rank"), getImageSprite(slot1.res:Find("rank" .. slot3.rank)))
 			end
 
 			setImageSprite(slot4, slot5)
 			LoadSpriteAsync("herohrzicon/" .. slot3.shipVO:getPainting(), function (slot0)
-				if not uv0.exited and uv1 == uv2[uv3 + 1] then
-					setImageSprite(uv4, slot0, true)
+				if not slot0.exited and slot1 == slot2[slot3 + 1] then
+					setImageSprite(slot4, slot0, true)
 				end
 			end)
 			setText(slot2:Find("black/ticket_number"), slot3.votes)
-			onButton(uv1, slot2, function ()
-				uv0:openVotePanel(uv1)
+			onButton(slot1, slot2, function ()
+				slot0:openVotePanel(slot0)
 			end, SFX_PANEL)
 		end
 	end)
@@ -244,7 +245,7 @@ function slot0.updateFinalPanel(slot0)
 	setText(slot0.finalTime, slot0.voteGroup:getVoteTimeStr())
 end
 
-function slot0.updateRacePanel(slot0)
+slot0.updateRacePanel = function (slot0)
 	slot0.raceNameDic = {}
 
 	setText(slot0.raceVotes, "X" .. slot0.votes)
@@ -259,9 +260,9 @@ function slot0.updateRacePanel(slot0)
 		if slot0 == UIItemList.EventUpdate then
 			slot4 = nil
 
-			setText(slot2:Find("rank"), uv0[slot1 + 1].rank)
-			(uv1.raceNameDic[slot2] ~= nil or ScrollTxt.New(slot2:Find("name_mask"), slot2:Find("name_mask/name"))) and uv1.raceNameDic[slot2]:setText(uv0[slot1 + 1].shipVO:getName())
-			setText(slot2:Find("number"), uv0[slot1 + 1].votes)
+			setText(slot2:Find("rank"), slot0[slot1 + 1].rank)
+			(slot1.raceNameDic[slot2] ~= nil or ScrollTxt.New(slot2:Find("name_mask"), slot2:Find("name_mask/name"))) and slot1.raceNameDic[slot2]:setText(slot0[slot1 + 1].shipVO:getName())
+			setText(slot2:Find("number"), slot0[slot1 + 1].votes)
 		end
 	end)
 	slot2:align(#_.slice(slot0.voteGroup:getList(), 1, VoteConst.PrimayDisplayMax))
@@ -270,53 +271,53 @@ function slot0.updateRacePanel(slot0)
 
 	slot0:sortFilterRaceShips()
 	onButton(slot0, slot0.btnOrder, function ()
-		uv0.raceShipOrderAsc = not uv0.raceShipOrderAsc
+		slot0.raceShipOrderAsc = not slot0.raceShipOrderAsc
 
-		uv1:sortFilterRaceShips()
+		not slot0.raceShipOrderAsc:sortFilterRaceShips()
 	end, SFX_CONFIRM)
 	onButton(slot0, slot0.btnIndex, function ()
-		pg.UIMgr.GetInstance():UnblurPanel(uv0.overlay, uv0._tf)
-		uv0:emit(VoteMediator.ON_INDEX, {
-			display = uv1.raceShipIndex.display,
-			sort = uv1.raceShipIndex.sort,
-			index = uv1.raceShipIndex.index,
-			camp = uv1.raceShipIndex.camp,
-			rarity = uv1.raceShipIndex.rarity,
+		pg.UIMgr.GetInstance():UnblurPanel(slot0.overlay, slot0._tf)
+		pg.UIMgr.GetInstance().UnblurPanel:emit(VoteMediator.ON_INDEX, {
+			display = slot1.raceShipIndex.display,
+			sort = slot1.raceShipIndex.sort,
+			index = slot1.raceShipIndex.index,
+			camp = slot1.raceShipIndex.camp,
+			rarity = slot1.raceShipIndex.rarity,
 			callback = function (slot0)
-				uv0.raceShipIndex.sort = slot0.sort
-				uv0.raceShipIndex.index = slot0.index
-				uv0.raceShipIndex.camp = slot0.camp
-				uv0.raceShipIndex.rarity = slot0.rarity
+				slot0.raceShipIndex.sort = slot0.sort
+				slot0.raceShipIndex.index = slot0.index
+				slot0.raceShipIndex.camp = slot0.camp
+				slot0.raceShipIndex.rarity = slot0.rarity
 
-				uv1:sortFilterRaceShips()
+				slot0.raceShipIndex:sortFilterRaceShips()
 			end
 		}, function ()
-			pg.UIMgr.GetInstance():BlurPanel(uv0.overlay)
+			pg.UIMgr.GetInstance():BlurPanel(slot0.overlay)
 		end)
 	end, SFX_PANEL)
 end
 
-function slot0.sortFilterRaceShips(slot0)
-	setActive(slot0.btnOrder:Find("asc"), uv0.raceShipOrderAsc)
-	setActive(slot0.btnOrder:Find("desc"), not uv0.raceShipOrderAsc)
+slot0.sortFilterRaceShips = function (slot0)
+	setActive(slot0.btnOrder:Find("asc"), slot0.raceShipOrderAsc)
+	setActive(slot0.btnOrder:Find("desc"), not slot0.raceShipOrderAsc)
 	setImageSprite(slot0.btnIndex:Find("Image"), slot3, true)
 
 	slot0.raceShipFiltered = _.filter(slot0.raceShipAll, function (slot0)
-		return IndexConst.filterByIndex(slot0.shipVO, uv0.raceShipIndex.index) and IndexConst.filterByCamp(slot0.shipVO, uv0.raceShipIndex.camp) and IndexConst.filterByRarity(slot0.shipVO, uv0.raceShipIndex.rarity)
+		return IndexConst.filterByIndex(slot0.shipVO, slot0.raceShipIndex.index) and IndexConst.filterByCamp(slot0.shipVO, slot0.raceShipIndex.camp) and IndexConst.filterByRarity(slot0.shipVO, slot0.raceShipIndex.rarity)
 	end)
 
 	IndexConst.sortByOrder(slot0.raceShipFiltered, slot0.raceShipIndex.sort, slot0.raceShipOrderAsc)
 	slot0.raceShips:SetTotalCount(#slot0.raceShipFiltered)
 end
 
-function slot0.openVotePanel(slot0, slot1)
+slot0.openVotePanel = function (slot0, slot1)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.overlay, slot0._tf)
 	pg.UIMgr.GetInstance():BlurPanel(slot0.panelVote)
 	setActive(slot0.panelVote, true)
 	slot0:updateVotePanel(slot1)
 end
 
-function slot0.closeVotePanel(slot0)
+slot0.closeVotePanel = function (slot0)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.panelVote, slot0._tf)
 	pg.UIMgr.GetInstance():BlurPanel(slot0.overlay)
 	setActive(slot0.panelVote, false)
@@ -324,11 +325,11 @@ function slot0.closeVotePanel(slot0)
 	slot0.currentVoteShip = nil
 end
 
-function slot0.updateVotePanel(slot0, slot1)
+slot0.updateVotePanel = function (slot0, slot1)
 	setImageSprite(slot0.voteIcon, slot2)
 	LoadSpriteAsync("herohrzicon/" .. slot1.shipVO:getPainting(), function (slot0)
-		if not uv0.exited then
-			setImageSprite(uv0.voteIcon, slot0, true)
+		if not slot0.exited then
+			setImageSprite(slot0.voteIcon, slot0, true)
 		end
 	end)
 	setText(slot0.textVoteCount, slot1.votes)
@@ -340,43 +341,45 @@ function slot0.updateVotePanel(slot0, slot1)
 	setText(slot0.textVoteTip, i18n("vote_rank_in_current_server"))
 	setGray(slot0.btnVote, slot0.voteGroup:getConfig("type") == VoteConst.RacePrimary and slot1.ivoted, true)
 	onButton(slot0, slot0.btnVote, function ()
-		if not uv0 or not uv1.ivoted then
-			if uv2.votes <= 0 then
+		if not slot0 or not slot1.ivoted then
+			if slot2.votes <= 0 then
 				pg.TipsMgr.GetInstance():ShowTips(i18n("vote_not_enough"))
 
 				return
 			end
 
-			uv2:emit(VoteMediator.ON_VOTE, {
+			slot2:emit(VoteMediator.ON_VOTE, {
 				cmd = 1,
-				activity_id = uv2.voteGroup.activityId,
-				arg1 = uv2.voteGroup.configId,
-				arg2 = uv1.group
+				activity_id = slot2.voteGroup.activityId,
+				arg1 = slot2.voteGroup.configId,
+				arg2 = slot1.group
 			})
 		end
 	end, SFX_CONFIRM)
 	onButton(slot0, slot0.btnLove, function ()
-		if not uv0.ivoted then
+		if not slot0.ivoted then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("vote_love_limit"))
 
 			return
 		end
 
-		if uv1.loves <= 0 then
+		if slot1.loves <= 0 then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("vote_love_not_enough"))
 
 			return
 		end
 
-		if uv2.DontRemindLove then
-			function ()
-				uv0:emit(VoteMediator.ON_VOTE, {
-					cmd = 2,
-					activity_id = uv0.voteGroup.activityId,
-					arg1 = uv0.voteGroup.configId,
-					arg2 = uv1.group
-				})
-			end()
+		function slot0()
+			slot0:emit(VoteMediator.ON_VOTE, {
+				cmd = 2,
+				activity_id = slot0.voteGroup.activityId,
+				arg1 = slot0.voteGroup.configId,
+				arg2 = slot1.group
+			})
+		end
+
+		if slot2.DontRemindLove then
+			slot0()
 		else
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				modal = true,
@@ -384,21 +387,21 @@ function slot0.updateVotePanel(slot0, slot1)
 				content = i18n("vote_love_confirm"),
 				stopRamindContent = i18n("common_dont_remind_dur_login"),
 				onYes = function ()
-					uv0.DontRemindLove = uv1.stopRemindToggle.isOn
+					slot0.DontRemindLove = slot1.stopRemindToggle.isOn
 
-					uv2()
+					slot2()
 				end
 			})
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.panelVote, function ()
-		uv0:closeVotePanel()
+		slot0:closeVotePanel()
 	end)
 
 	slot0.currentVoteShip = slot1
 end
 
-function slot0.onVoteGroupUpdate(slot0)
+slot0.onVoteGroupUpdate = function (slot0)
 	if isActive(slot0.panelPrimary) then
 		slot0:updatePrimaryPanel()
 	end
@@ -416,7 +419,7 @@ function slot0.onVoteGroupUpdate(slot0)
 	end
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	for slot4, slot5 in pairs(slot0.raceShipItems) do
 		slot5:clear()
 	end

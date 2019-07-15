@@ -1,6 +1,6 @@
 slot0 = class("GoodsCard")
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	pg.DelegateInfo.New(slot0)
 
 	slot0.go = slot1
@@ -21,11 +21,11 @@ function slot0.Ctor(slot0, slot1)
 	slot0.maskTip = i18n("buy_countLimit")
 
 	onButton(slot0, slot0.mask, function ()
-		pg.TipsMgr:GetInstance():ShowTips(uv0.maskTip)
+		pg.TipsMgr:GetInstance():ShowTips(slot0.maskTip)
 	end, SFX_PANEL)
 end
 
-function slot0.setGroupMask(slot0, slot1)
+slot0.setGroupMask = function (slot0, slot1)
 	slot3 = slot0.goodsVO:getConfig("group_limit") > 0 and slot2 <= slot1
 
 	if isActive(slot0.mask) then
@@ -40,7 +40,7 @@ function slot0.setGroupMask(slot0, slot1)
 	end
 end
 
-function slot0.setLevelMask(slot0, slot1)
+slot0.setLevelMask = function (slot0, slot1)
 	slot2 = slot0.goodsVO:getLevelLimit(slot1)
 	slot3 = slot0.goodsVO:isLevelLimit(slot1)
 
@@ -59,7 +59,7 @@ function slot0.setLevelMask(slot0, slot1)
 	end
 end
 
-function slot0.update(slot0, slot1)
+slot0.update = function (slot0, slot1)
 	slot0.goodsVO = slot1
 	slot2, slot3 = slot0.goodsVO:canPurchase()
 
@@ -101,22 +101,20 @@ function slot0.update(slot0, slot1)
 			id = slot5[1],
 			count = slot1:getConfig("num")
 		})
+		setText(slot0.nameTxt, shortenString(()["cfg"].name or "??", 6))
 
-		slot6 = ()["cfg"].name or "??"
+		slot7 = ""
+		slot8 = slot1:getConfig("resource_num")
 	end
-
-	setText(slot0.nameTxt, shortenString(slot6, 6))
-
-	slot7 = ""
 
 	if slot1:getConfig("genre") == ShopArgs.ShoppingStreetLimit then
 		slot7 = 100 - slot1.discount .. "%OFF"
-		slot8 = slot1:getConfig("resource_num") * slot1.discount / 100
+		slot8 = slot8 * slot1.discount / 100
 	end
 
 	setActive(slot0.discountTF, false)
 
-	slot0.discountTF = slot1.activityDiscount and findTF(slot0.tr, "item/discount_activity") or findTF(slot0.tr, "item/discount")
+	slot0.discountTF = (slot1.activityDiscount and findTF(slot0.tr, "item/discount_activity")) or findTF(slot0.tr, "item/discount")
 	slot0.discountTextTF = findTF(slot0.discountTF, "Text"):GetComponent(typeof(Text))
 
 	setActive(slot0.discountTF, slot1:hasDiscount())
@@ -127,7 +125,7 @@ function slot0.update(slot0, slot1)
 	GetImageSpriteFromAtlasAsync(pg.item_data_statistics[id2ItemId(slot1:getConfig("resource_type"))].icon, "", tf(slot0.resIconTF))
 end
 
-function slot0.dispose(slot0)
+slot0.dispose = function (slot0)
 	pg.DelegateInfo.Dispose(slot0)
 end
 

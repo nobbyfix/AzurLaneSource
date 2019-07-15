@@ -2,23 +2,23 @@ ys = ys or {}
 ys.Battle.BattleBuffShiftBullet = class("BattleBuffShiftBullet", ys.Battle.BattleBuffEffect)
 ys.Battle.BattleBuffShiftBullet.__name = "BattleBuffShiftBullet"
 
-function ys.Battle.BattleBuffShiftBullet.Ctor(slot0, slot1)
-	uv0.super.Ctor(slot0, slot1)
+ys.Battle.BattleBuffShiftBullet.Ctor = function (slot0, slot1)
+	slot0.super.Ctor(slot0, slot1)
 end
 
-function ys.Battle.BattleBuffShiftBullet.SetArgs(slot0, slot1, slot2)
+ys.Battle.BattleBuffShiftBullet.SetArgs = function (slot0, slot1, slot2)
 	slot0._bulletID = slot0._tempData.arg_list.bullet_id
 end
 
-function ys.Battle.BattleBuffShiftBullet.onAttach(slot0, slot1, slot2)
+ys.Battle.BattleBuffShiftBullet.onAttach = function (slot0, slot1, slot2)
 	slot0:shiftBullet(slot1, slot0._bulletID)
 end
 
-function ys.Battle.BattleBuffShiftBullet.onRemove(slot0, slot1, slot2)
+ys.Battle.BattleBuffShiftBullet.onRemove = function (slot0, slot1, slot2)
 	slot0:shiftBullet(slot1)
 end
 
-function ys.Battle.BattleBuffShiftBullet.shiftBullet(slot0, slot1, slot2)
+ys.Battle.BattleBuffShiftBullet.shiftBullet = function (slot0, slot1, slot2)
 	slot3 = slot1:GetAllWeapon()
 
 	for slot7, slot8 in ipairs(slot0._indexRequire) do
@@ -33,3 +33,5 @@ function ys.Battle.BattleBuffShiftBullet.shiftBullet(slot0, slot1, slot2)
 		end
 	end
 end
+
+return

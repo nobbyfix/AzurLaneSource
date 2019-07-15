@@ -1,13 +1,13 @@
 slot0 = class("ChatBubble")
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.tf = tf(slot1)
 	slot0.isLoadChatBg = false
 
 	slot0:init()
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.nameTF = findTF(slot0.tf, "desc/name"):GetComponent("Text")
 	slot0.face = findTF(slot0.tf, "face/content")
 	slot0.circle = findTF(slot0.tf, "shipicon/frame")
@@ -20,7 +20,7 @@ function slot0.init(slot0)
 	slot0.chatBgWidth = 665
 end
 
-function slot0.update(slot0, slot1)
+slot0.update = function (slot0, slot1)
 	if slot0.data == slot1 then
 		return
 	end
@@ -69,64 +69,64 @@ function slot0.update(slot0, slot1)
 	slot0.headTF.color = Color.New(1, 1, 1, 0)
 
 	LoadSpriteAsync("qicon/" .. slot3:getPainting(), function (slot0)
-		if not IsNil(uv0.headTF) then
-			uv0.headTF.color = Color.white
-			uv0.headTF.sprite = slot0 or LoadSprite("heroicon/unknown")
+		if not IsNil(slot0.headTF) then
+			slot0.headTF.color = Color.white
+			slot0.headTF.sprite = slot0 or LoadSprite("heroicon/unknown")
 		end
 	end)
 	PoolMgr.GetInstance():GetPrefab("IconFrame/" .. slot11, AttireFrame.attireFrameRes(slot3, slot2, AttireConst.TYPE_ICON_FRAME, slot5), true, function (slot0)
-		if IsNil(uv0.tf) then
+		if IsNil(slot0.tf) then
 			return
 		end
 
-		if uv0.circle and uv0.data then
-			slot0.name = uv1
+		if slot0.circle and slot0.data then
+			slot0.name = slot1
 			findTF(slot0.transform, "icon").GetComponent(slot1, typeof(Image)).raycastTarget = false
 
-			setParent(slot0, uv0.circle, false)
+			setParent(slot0, slot0.circle, false)
 		else
-			PoolMgr.GetInstance():ReturnPrefab("IconFrame/" .. uv1, uv1, slot0)
+			PoolMgr.GetInstance():ReturnPrefab("IconFrame/" .. slot1, PoolMgr.GetInstance().ReturnPrefab, slot0)
 		end
 	end)
 
 	if slot1.emojiId then
 		PoolMgr.GetInstance():GetPrefab("emoji/" .. pg.emoji_template[slot1.emojiId].pic, pg.emoji_template[slot1.emojiId].pic, true, function (slot0)
-			if IsNil(uv0.tf) then
+			if IsNil(slot0.tf) then
 				return
 			end
 
-			if uv0.face and uv0.data then
-				slot0.name = uv1.pic
+			if slot0.face and slot0.data then
+				slot0.name = slot1.pic
 
 				if slot0:GetComponent("Animator") then
 					slot1.enabled = true
 				end
 
-				setParent(slot0, uv0.face, false)
+				setParent(slot0, slot0.face, false)
 
 				rtf(slot0).sizeDelta = Vector2.New(180, 180)
 			else
-				PoolMgr.GetInstance():ReturnPrefab("emoji/" .. uv1.pic, uv1.pic, slot0)
+				PoolMgr.GetInstance():ReturnPrefab("emoji/" .. slot1.pic, slot1.pic, slot0)
 			end
 		end)
 	else
 		PoolMgr.GetInstance():GetPrefab("ChatFrame/" .. slot12, AttireFrame.attireFrameRes(slot3, slot2, AttireConst.TYPE_CHAT_FRAME, slot5), true, function (slot0)
-			if IsNil(uv0.tf) then
+			if IsNil(slot0.tf) then
 				return
 			end
 
-			if uv0.tf and uv0.data then
-				slot0.name = uv1
+			if slot0.tf and slot0.data then
+				slot0.name = slot1
 
-				setParent(slot0, uv0.tf, false)
+				setParent(slot0, slot0.tf, false)
 				tf(slot0):SetAsFirstSibling()
 
 				tf(slot0):Find("Text"):GetComponent(typeof(Text)).supportRichText = false
-				tf(slot0).Find("Text").GetComponent(typeof(Text)).text = uv2.content
-				uv0.isLoadChatBg = true
-				slot0:GetComponent(typeof(LayoutElement)).preferredWidth = uv0.chatBgWidth
+				tf(slot0).Find("Text").GetComponent(typeof(Text)).text = false.content
+				slot0.isLoadChatBg = true
+				slot0:GetComponent(typeof(LayoutElement)).preferredWidth = slot0.chatBgWidth
 			else
-				PoolMgr.GetInstance():ReturnPrefab("ChatFrame/" .. uv1, uv1, slot0)
+				PoolMgr.GetInstance():ReturnPrefab("ChatFrame/" .. slot1, PoolMgr.GetInstance().ReturnPrefab, slot0)
 			end
 		end)
 	end
@@ -134,7 +134,7 @@ function slot0.update(slot0, slot1)
 	setActive(slot0.face.parent, slot1.emojiId)
 end
 
-function slot0.dispose(slot0)
+slot0.dispose = function (slot0)
 	if slot0.face.childCount > 0 then
 		PoolMgr.GetInstance():ReturnPrefab("emoji/" .. slot0.face:GetChild(0).gameObject.name, slot0.face.GetChild(0).gameObject.name, slot0.face.GetChild(0).gameObject)
 	end

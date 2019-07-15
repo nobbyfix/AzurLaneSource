@@ -1,6 +1,6 @@
 slot0 = class("UserProxy", import(".NetProxy"))
 
-function slot0.setLastLogin(slot0, slot1)
+slot0.setLastLogin = function (slot0, slot1)
 	if slot1.type == 1 then
 		PlayerPrefs.SetString("user.type", "1")
 		PlayerPrefs.SetString("user.arg1", slot1.arg1)
@@ -27,27 +27,30 @@ function slot0.setLastLogin(slot0, slot1)
 	slot0:clearTranscode()
 end
 
-function slot0.getLastLoginUser(slot0)
+slot0.getLastLoginUser = function (slot0)
+	slot3 = PlayerPrefs.GetString("user.arg2")
+	slot4 = PlayerPrefs.GetString("user.arg3")
+
 	print("last login:", tonumber(PlayerPrefs.GetString("user.type")), " arg1:", PlayerPrefs.GetString("user.arg1"))
 
-	if tonumber(PlayerPrefs.GetString("user.type")) ~= "" and slot2 ~= "" and PlayerPrefs.GetString("user.arg2") ~= "" then
+	if tonumber(PlayerPrefs.GetString("user.type")) ~= "" and slot2 ~= "" and slot3 ~= "" then
 		return User.New({
 			type = slot1,
 			arg1 = slot2,
-			arg2 = PlayerPrefs.GetString("user.arg2"),
-			arg3 = PlayerPrefs.GetString("user.arg3")
+			arg2 = slot3,
+			arg3 = slot4
 		})
 	end
 
 	return nil
 end
 
-function slot0.saveTranscode(slot0, slot1)
+slot0.saveTranscode = function (slot0, slot1)
 	PlayerPrefs.SetString("transcode", slot1)
 	PlayerPrefs.Save()
 end
 
-function slot0.getTranscode(slot0)
+slot0.getTranscode = function (slot0)
 	if PlayerPrefs.GetString("transcode") then
 		return slot1
 	end
@@ -55,7 +58,7 @@ function slot0.getTranscode(slot0)
 	return ""
 end
 
-function slot0.clearTranscode(slot0)
+slot0.clearTranscode = function (slot0)
 	PlayerPrefs.DeleteKey("transcode")
 end
 

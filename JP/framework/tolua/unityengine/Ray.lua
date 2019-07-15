@@ -4,20 +4,20 @@ UnityEngine.Ray = {
 	direction = Vector3.zero,
 	origin = Vector3.zero,
 	__index = function (slot0, slot1)
-		if uv0(uv1, slot1) == nil and uv0(uv2, slot1) ~= nil then
+		if slot0(slot1, slot1) == nil and slot0(slot2, slot1) ~= nil then
 			return slot2(slot0)
 		end
 
 		return slot2
 	end,
 	__call = function (slot0, slot1, slot2)
-		return uv0.New(slot1, slot2)
+		return slot0.New(slot1, slot2)
 	end,
 	New = function (slot0, slot1)
-		uv0({
+		slot0({
 			direction = slot0:Normalize(),
 			origin = slot1
-		}, uv1)
+		}, slot1)
 
 		return 
 	end,

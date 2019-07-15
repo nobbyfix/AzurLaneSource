@@ -2,66 +2,81 @@ ys = ys or {}
 ys.Battle.DivingState = class("DivingState", ys.Battle.IUnitState)
 ys.Battle.DivingState.__name = "DivingState"
 
-function ys.Battle.DivingState.Ctor(slot0)
-	uv0.super.Ctor()
+ys.Battle.DivingState.Ctor = function (slot0)
+	slot0.super.Ctor()
 end
 
-function ys.Battle.DivingState.AddIdleState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddIdleState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.AddMoveState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddMoveState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.AddMoveLeftState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddMoveLeftState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.AddAttackState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddAttackState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.AddDeadState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddDeadState = function (slot0, slot1, slot2)
 	slot1:OnDeadState()
 end
 
-function ys.Battle.DivingState.AddSkillState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddSkillState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.AddSpellState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddSpellState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.AddVictoryState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddVictoryState = function (slot0, slot1, slot2)
 	slot1:OnVictoryState()
 end
 
-function ys.Battle.DivingState.AddVictorySwimState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddVictorySwimState = function (slot0, slot1, slot2)
 	slot1:OnVictorySwimState()
 end
 
-function ys.Battle.DivingState.AddStandState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddStandState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.AddDiveState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddDiveState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.AddDiveLeftState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddDiveLeftState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.AddInterruptState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddInterruptState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.AddDivingState(slot0, slot1, slot2)
+ys.Battle.DivingState.AddDivingState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.DivingState.OnTrigger(slot0, slot1)
+ys.Battle.DivingState.OnTrigger = function (slot0, slot1)
+	return
 end
 
-function ys.Battle.DivingState.OnStart(slot0, slot1)
+ys.Battle.DivingState.OnStart = function (slot0, slot1)
+	return
 end
 
-function ys.Battle.DivingState.OnEnd(slot0, slot1)
-	slot1:ChangeOxyState(uv0.Battle.OxyState.STATE_DIVE)
+ys.Battle.DivingState.OnEnd = function (slot0, slot1)
+	slot1:ChangeOxyState(slot0.Battle.OxyState.STATE_DIVE)
 	slot1:ChangeToMoveState()
 end
 
-function ys.Battle.DivingState.CacheWeapon(slot0)
+ys.Battle.DivingState.CacheWeapon = function (slot0)
 	return false
 end
+
+return

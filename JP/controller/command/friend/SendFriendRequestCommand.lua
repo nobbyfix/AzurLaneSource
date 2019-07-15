@@ -31,7 +31,7 @@ class("SendFriendRequestCommand", pm.SimpleCommand).execute = function (slot0, s
 		content = slot4
 	}, 50004, function (slot0)
 		if slot0.result == 0 then
-			uv0:sendNotification(GAME.FRIEND_SEND_REQUEST_DONE, uv1)
+			slot0:sendNotification(GAME.FRIEND_SEND_REQUEST_DONE, slot0.sendNotification)
 			pg.TipsMgr:GetInstance():ShowTips(i18n("friend_sendFriendRequest_success"))
 		elseif slot0.result == 1 then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("friend_sendFriendRequest_success"))

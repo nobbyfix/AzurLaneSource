@@ -5,47 +5,48 @@ slot3 = class("BattleInheritDungeonCommand", ys.Battle.BattleSingleDungeonComman
 ys.Battle.BattleInheritDungeonCommand = slot3
 slot3.__name = "BattleInheritDungeonCommand"
 
-function slot3.Ctor(slot0)
-	uv0.super.Ctor(slot0)
+slot3.Ctor = function (slot0)
+	slot0.super.Ctor(slot0)
 end
 
-function slot3.initWaveModule(slot0)
-	slot0._waveUpdater = uv0.Battle.BattleWaveUpdater.New(function (slot0, slot1, slot2)
-		uv0._dataProxy:SpawnMonster(slot0, slot1, slot2, uv1.Battle.BattleConfig.FOE_CODE)
+slot3.initWaveModule = function (slot0)
+	slot0._waveUpdater = slot0.Battle.BattleWaveUpdater.New(function (slot0, slot1, slot2)
+		slot0._dataProxy:SpawnMonster(slot0, slot1, slot2, slot1.Battle.BattleConfig.FOE_CODE)
 	end, function (slot0)
-		uv0._dataProxy:SpawnAirFighter(slot0)
+		slot0._dataProxy:SpawnAirFighter(slot0)
 	end, function ()
-		if uv0._vertifyFail then
+		if slot0._vertifyFail then
 			pg.m02:sendNotification(GAME.CHEATER_MARK, {
-				reason = uv0._vertifyFail
+				reason = slot0._vertifyFail
 			})
 
 			return
 		end
 
-		uv0._dataProxy:CalcSingleDungeonScoreAtEnd(uv0._userFleet)
-		uv0:calcDamageData()
-		uv0._state:BattleEnd()
+		slot0._dataProxy:CalcSingleDungeonScoreAtEnd(slot0._userFleet)
+		slot0._dataProxy.CalcSingleDungeonScoreAtEnd:calcDamageData()
+		slot0._dataProxy.CalcSingleDungeonScoreAtEnd.calcDamageData._state:BattleEnd()
 	end, function (slot0, slot1, slot2, slot3, slot4)
-		uv0._dataProxy:SpawnCubeArea(uv1.Battle.BattleConst.AOEField.SURFACE, -1, slot0, slot1, slot2, slot3, slot4)
+		slot0._dataProxy:SpawnCubeArea(slot1.Battle.BattleConst.AOEField.SURFACE, -1, slot0, slot1, slot2, slot3, slot4)
 	end)
 end
 
-function slot3.onInitBattle(slot0)
-	uv0.super.onInitBattle(slot0)
+slot3.onInitBattle = function (slot0)
+	slot0.super.onInitBattle(slot0)
 
-	slot0._specificEnemyList = uv1.Battle.BattleDataFunction.GetSpecificEnemyList(slot0._dataProxy:GetInitData().ActID, slot0._dataProxy.GetInitData().StageTmpId)
+	slot1 = slot0._dataProxy:GetInitData()
+	slot0._specificEnemyList = slot1.Battle.BattleDataFunction.GetSpecificEnemyList(slot1.ActID, slot1.StageTmpId)
 end
 
-function slot3.onAddUnit(slot0, slot1)
-	uv0.super.onAddUnit(slot0, slot1)
+slot3.onAddUnit = function (slot0, slot1)
+	slot0.super.onAddUnit(slot0, slot1)
 
 	if table.contains(slot0._specificEnemyList, slot1.Data.unit:GetTemplateID()) then
 		slot0._dataProxy:InitSpecificEnemyStatistics(slot2)
 	end
 end
 
-function slot3.onPlayerShutDown(slot0, slot1)
+slot3.onPlayerShutDown = function (slot0, slot1)
 	if slot0._state:GetState() ~= slot0._state.BATTLE_STATE_FIGHT then
 		return
 	end
@@ -65,7 +66,7 @@ function slot3.onPlayerShutDown(slot0, slot1)
 	end
 end
 
-function slot3.onUpdateCountDown(slot0, slot1)
+slot3.onUpdateCountDown = function (slot0, slot1)
 	if slot0._dataProxy:GetCountDown() <= 0 then
 		slot0._dataProxy:EnemyEscape()
 		slot0._dataProxy:CalcSingleDungeonScoreAtEnd(slot0._userFleet)
@@ -74,6 +75,8 @@ function slot3.onUpdateCountDown(slot0, slot1)
 	end
 end
 
-function slot3.calcDamageData(slot0)
+slot3.calcDamageData = function (slot0)
 	slot0._dataProxy:CalcSpecificEnemyInfo(slot0._dataProxy:GetInitData().ActID)
 end
+
+return

@@ -1,23 +1,23 @@
 slot0 = class("ActivityBossBattleScene", import("..base.BaseUI"))
 slot1 = pg.expedition_data_template
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "ActivityBossBattleUI"
 end
 
-function slot0.getBGM(slot0)
+slot0.getBGM = function (slot0)
 	return "main"
 end
 
-function slot0.setTaskAct(slot0, slot1)
+slot0.setTaskAct = function (slot0, slot1)
 	slot0.taskAct = slot1
 end
 
-function slot0.setFleet(slot0, slot1)
+slot0.setFleet = function (slot0, slot1)
 	slot0.fleet = slot1
 end
 
-function slot0.setPlayer(slot0, slot1)
+slot0.setPlayer = function (slot0, slot1)
 	slot0.player = slot1
 
 	slot0._resPanel:setResources(slot1)
@@ -25,14 +25,14 @@ function slot0.setPlayer(slot0, slot1)
 	slot0.pt = slot0.player:getResource(113)
 end
 
-function slot0.setActivity(slot0, slot1)
+slot0.setActivity = function (slot0, slot1)
 	slot0.activity = slot1
 	slot2 = slot0.activity.data1KeyValueList[1] or {}
 	slot0.stages = _.map(slot3, function (slot0)
 		return {
 			config = slot1,
 			count = slot0[2],
-			useageCount = uv1[uv0[slot0[1]].id] or 0
+			useageCount = slot1[slot0[slot0[1]].id] or 0
 		}
 	end)
 	slot0.fStage = table.remove(slot0.stages, 1)
@@ -48,7 +48,7 @@ function slot0.setActivity(slot0, slot1)
 	slot0:initStages()
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.backBtn = slot0:findTF("top/back")
 	slot0.mainTF = slot0:findTF("main")
 	slot0.forewordTF = slot0:findTF("foreword")
@@ -76,18 +76,18 @@ function slot0.init(slot0)
 	setActive(slot0.bonusWindow, false)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	onButton(slot0, slot0.awardBtn, function ()
-		uv0:showAwards()
+		slot0:showAwards()
 	end)
 	onButton(slot0, slot0.backBtn, function ()
-		uv0:emit(uv1.ON_BACK)
+		slot0:emit(slot1.ON_BACK)
 	end, SOUND_BACK)
 	onButton(slot0, slot0.forwordBattleBtn, function ()
-		if not uv0.inTime then
+		if not slot0.inTime then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("common_activity_end"))
 		else
-			uv0:emit(ActivityBossBattleMediator.ON_STAGE, uv0.fStage.config.id, true)
+			slot0:emit(ActivityBossBattleMediator.ON_STAGE, slot0.fStage.config.id, true)
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.helpBtn, function ()
@@ -97,11 +97,11 @@ function slot0.didEnter(slot0)
 		})
 	end, SFX_PANEL)
 	onButton(slot0, slot0.rankBtn, function ()
-		uv0:emit(ActivityBossBattleMediator.ON_RANK)
+		slot0:emit(ActivityBossBattleMediator.ON_RANK)
 	end, SFX_PANEL)
 end
 
-function slot0.initStages(slot0)
+slot0.initStages = function (slot0)
 	slot1 = table.contains(slot0.activity.data1_list, slot0.fStage.config.id)
 
 	setActive(slot0.mainTF, slot1)
@@ -114,27 +114,30 @@ function slot0.initStages(slot0)
 	end
 end
 
-function slot0.updateMain(slot0)
+slot0.updateMain = function (slot0)
 	slot2 = pg.extraenemy_template[slot0.bossId]
+	slot3 = slot0.maxHp <= slot0.damage
 
 	slot0.stageList:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			onButton(uv0, slot2, function ()
-				if not uv0 and uv1.useageCount == uv1.count then
+			slot3 = slot0.stages[slot1 + 1]
+
+			onButton(slot0, slot2, function ()
+				if not slot0 and slot1.useageCount == slot1.count then
 					pg.TipsMgr:GetInstance():ShowTips(i18n("common_count_noenough"))
 
 					return
 				end
 
-				if not uv2.inTime then
+				if not slot2.inTime then
 					pg.TipsMgr:GetInstance():ShowTips(i18n("common_activity_end"))
 				else
-					uv2:emit(ActivityBossBattleMediator.ON_STAGE, uv1.config.id)
+					slot2:emit(ActivityBossBattleMediator.ON_STAGE, slot1.config.id)
 				end
 			end, SFX_PANEL)
 
 			if slot2:Find("bonusTip") then
-				setActive(slot2:Find("bonusTip"), uv0.stages[slot1 + 1].useageCount < (slot1 < 2 and 20 or 40))
+				setActive(slot2:Find("bonusTip"), slot3.useageCount < ((slot1 < 2 and 20) or 40))
 			end
 		end
 	end)
@@ -142,7 +145,7 @@ function slot0.updateMain(slot0)
 
 	slot0.ptTxt.text = slot0.pt
 
-	if slot0.maxHp <= slot0.damage then
+	if slot3 then
 		slot0.slider.value = 1
 		slot0.sliderTxt.text = "100.00"
 	else
@@ -156,28 +159,28 @@ function slot0.updateMain(slot0)
 	setActive(slot0.label2, slot3)
 end
 
-function slot0.updateForwrod(slot0)
+slot0.updateForwrod = function (slot0)
 	slot1 = slot0.fleet:GetCostSum()
 end
 
-function slot0.showAwards(slot0)
+slot0.showAwards = function (slot0)
 	setActive(slot0.bonusWindow, true)
 
 	if not slot0.awardList then
 		slot0.awardList = UIItemList.New(slot0.bonusWindow:Find("window/scrollview/list"), slot0.bonusWindow:Find("window/scrollview/list/item"))
 
 		onButton(slot0, slot0.bonusWindow, function ()
-			uv0:closeAwards()
+			slot0:closeAwards()
 		end, SFX_PANEL)
 		onButton(slot0, slot0.bonusWindow:Find("window/top/btnBack"), function ()
-			uv0:closeAwards()
+			slot0:closeAwards()
 		end, SFX_PANEL)
 	end
 
 	slot0.awardList:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
 			slot4 = Task.New({
-				id = uv0[slot1 + 1]
+				id = slot0[slot1 + 1]
 			})
 
 			setText(slot2:Find("title/Text"), "PHASE" .. slot1 + 1)
@@ -185,13 +188,13 @@ function slot0.showAwards(slot0)
 			updateDrop(slot2:Find("award"), slot6)
 			setActive(slot2:Find("award/mask"), (getProxy(TaskProxy):getTaskById(slot4.id) or slot7:getFinishTaskById(slot4.id)) and getProxy(TaskProxy).getTaskById(slot4.id) or slot7.getFinishTaskById(slot4.id):isReceive())
 			setActive(slot2:Find("award/mask_can"), (getProxy(TaskProxy).getTaskById(slot4.id) or slot7.getFinishTaskById(slot4.id)) and getProxy(TaskProxy).getTaskById(slot4.id) or slot7.getFinishTaskById(slot4.id):isFinish() and not getProxy(TaskProxy).getTaskById(slot4.id) or slot7.getFinishTaskById(slot4.id):isReceive())
-			onButton(uv1, slot2, function ()
+			onButton(slot1, slot2, function ()
 				pg.MsgboxMgr.GetInstance():ShowMsgBox({
 					yesText = "text_confirm",
 					hideNo = true,
 					content = "",
 					type = MSGBOX_TYPE_SINGLE_ITEM,
-					drop = uv0
+					drop = pg.MsgboxMgr.GetInstance().ShowMsgBox
 				})
 			end, SFX_PANEL)
 		end
@@ -200,11 +203,11 @@ function slot0.showAwards(slot0)
 	slot0.awardList:align(#slot0.taskAct:getConfig("config_data"))
 end
 
-function slot0.closeAwards(slot0)
+slot0.closeAwards = function (slot0)
 	setActive(slot0.bonusWindow, false)
 end
 
-function slot0.updateTaskBtn(slot0)
+slot0.updateTaskBtn = function (slot0)
 	setActive(slot4, slot2)
 	setActive(slot5, _.all(slot1, function (slot0)
 		return getProxy(TaskProxy):getFinishTaskById(slot0) ~= nil
@@ -219,12 +222,13 @@ function slot0.updateTaskBtn(slot0)
 		end)
 
 		onButton(slot0, slot4, function ()
-			uv0:emit(ActivityBossBattleMediator.ON_GET, uv1)
+			slot0:emit(ActivityBossBattleMediator.ON_GET, slot0)
 		end, SFX_PANEL)
 	end
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
+	return
 end
 
 return slot0

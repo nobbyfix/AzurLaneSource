@@ -5,17 +5,19 @@ slot0.DURATION_GRADE_LAST = 1.5
 slot0.DURATION_MOVE = 0.7
 slot0.DURATION_WIN_SCALE = 0.7
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "BattleResultUI"
 end
 
-function slot0.setPlayer(slot0)
+slot0.setPlayer = function (slot0)
+	return
 end
 
-function slot0.setShips(slot0)
+slot0.setShips = function (slot0)
+	return
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0._grade = slot0:findTF("grade")
 	slot0._gradeLabel = slot0:findTF("label", slot0._grade)
 	slot0._gradeLabelImg = slot0._gradeLabel:GetComponent(typeof(Image))
@@ -40,11 +42,11 @@ function slot0.init(slot0)
 	slot0.overlay = pg.UIMgr:GetInstance().OverlayMain
 	slot1 = nil
 
-	LoadImageSpriteAsync("battlescore/" .. (slot0.contextData.score < 4 and "grade_label_b" or "grade_label_s"), slot0._gradeLabel, true)
+	LoadImageSpriteAsync("battlescore/" .. ((slot0.contextData.score < 4 and "grade_label_b") or "grade_label_s"), slot0._gradeLabel, true)
 	SetActive(slot0._levelText, false)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	setText(slot0._levelText, pg.expedition_data_template[slot0.contextData.stageId].name)
 
 	slot0._gradeUpperLeftPos = rtf(slot0._grade).localPosition
@@ -57,12 +59,12 @@ function slot0.didEnter(slot0)
 
 	shiftPanel(slot0._rankBG, nil, 10, 0.7, nil)
 	LeanTween.scale(slot0._rankBG, Vector3(1, 1, 1), 0.7)
-	LeanTween.value(go(slot0._tf), 0, 1, uv0.DURATION_WIN_FADE_IN):setOnUpdate(System.Action_float(function (slot0)
-		uv0._gradeLabelImg.color = Color.New(1, 1, 1, 1)
+	LeanTween.value(go(slot0._tf), 0, 1, slot0.DURATION_WIN_FADE_IN):setOnUpdate(System.Action_float(function (slot0)
+		slot0._gradeLabelImg.color = Color.New(1, 1, 1, 1)
 	end))
-	LeanTween.scale(slot0._grade, Vector3(0.88, 0.88, 1), uv0.DURATION_WIN_SCALE):setEase(LeanTweenType.easeInExpo):setOnComplete(System.Action(function ()
-		SetActive(uv0._levelText, true)
-		uv0:rankAnimaFinish()
+	LeanTween.scale(slot0._grade, Vector3(0.88, 0.88, 1), slot0.DURATION_WIN_SCALE):setEase(LeanTweenType.easeInExpo):setOnComplete(System.Action(function ()
+		SetActive(slot0._levelText, true)
+		SetActive:rankAnimaFinish()
 	end))
 
 	slot0._tf:GetComponent(typeof(Image)).color = Color.New(0, 0, 0, 0.5)
@@ -75,11 +77,11 @@ function slot0.didEnter(slot0)
 	slot0._stateFlag = "rankAnima"
 end
 
-function slot0.rankAnimaFinish(slot0)
+slot0.rankAnimaFinish = function (slot0)
 	onButton(slot0, slot0._bg, function ()
-		uv0._bg:GetComponent("Button").enabled = false
+		slot0._bg:GetComponent("Button").enabled = false
 
-		uv0:displayBG()
+		slot0._bg.GetComponent("Button"):displayBG()
 	end, SFX_CONFIRM)
 	SetActive(slot0:findTF("main/tips"), true)
 	SetActive(slot0:findTF("main/condition"), false)
@@ -87,28 +89,28 @@ function slot0.rankAnimaFinish(slot0)
 	slot0._stateFlag = "report"
 end
 
-function slot0.displayBG(slot0)
+slot0.displayBG = function (slot0)
 	SetActive(slot0:findTF("main/tips"), false)
-	LeanTween.scale(slot0._grade, Vector3(0.6, 0.6, 1), uv0.DURATION_MOVE)
-	LeanTween.moveLocal(go(slot1), slot0._gradeUpperLeftPos, uv0.DURATION_MOVE)
+	LeanTween.scale(slot0._grade, Vector3(0.6, 0.6, 1), slot0.DURATION_MOVE)
+	LeanTween.moveLocal(go(slot1), slot0._gradeUpperLeftPos, slot0.DURATION_MOVE)
 	SetActive(slot0._skipBtn, true)
 	slot0:displayScore()
 	onButton(slot0, slot0._skipBtn, function ()
-		uv0:skip()
+		slot0:skip()
 	end, SFX_CONFIRM)
 
 	slot0._stateFlag = "display"
 end
 
-function slot0.displayScore(slot0)
+slot0.displayScore = function (slot0)
 	SetActive(slot0._dodgem, true)
 	LeanTween.value(go(slot0._tf), 0, slot0.contextData.statistics.dodgemResult.score, 1):setOnUpdate(System.Action_float(function (slot0)
-		setText(uv0._scoreText, math.floor(slot0))
+		setText(slot0._scoreText, math.floor(slot0))
 	end)):setDelay(1):setOnComplete(System.Action(function ()
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-5, warpins: 1 ---
-		uv0:showRightBottomPanel()
+		slot0:showRightBottomPanel()
 
 		return
 		--- END OF BLOCK #0 ---
@@ -120,7 +122,7 @@ function slot0.displayScore(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-9, warpins: 1 ---
-		setText(uv0._comboText, math.floor(slot0))
+		setText(slot0._comboText, math.floor(slot0))
 
 		return
 		--- END OF BLOCK #0 ---
@@ -130,7 +132,7 @@ function slot0.displayScore(slot0)
 	end))
 end
 
-function slot0.skip(slot0)
+slot0.skip = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-24, warpins: 1 ---
@@ -146,7 +148,7 @@ function slot0.skip(slot0)
 
 end
 
-function slot0.showRightBottomPanel(slot0)
+slot0.showRightBottomPanel = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-18, warpins: 1 ---
@@ -156,7 +158,7 @@ function slot0.showRightBottomPanel(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-7, warpins: 1 ---
-		uv0:emit(BattleResultMediator.ON_BACK_TO_LEVEL_SCENE)
+		slot0:emit(BattleResultMediator.ON_BACK_TO_LEVEL_SCENE)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -174,10 +176,10 @@ function slot0.showRightBottomPanel(slot0)
 
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-22, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0._stateFlag == "rankAnima" then
 
 		-- Decompilation error in this vicinity:
@@ -233,14 +235,22 @@ function slot0.onBackPressed(slot0)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 22-22, warpins: 4 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-15, warpins: 1 ---

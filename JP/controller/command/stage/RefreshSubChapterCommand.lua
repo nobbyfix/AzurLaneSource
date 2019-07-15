@@ -5,7 +5,7 @@ class("RefreshSubChapterCommand", pm.SimpleCommand).execute = function (slot0, s
 		if slot0.result == 0 then
 			getProxy(ChapterProxy).subRefreshCount = getProxy(ChapterProxy).subRefreshCount - 1
 
-			uv0:sendNotification(GAME.SUB_CHAPTER_REFRESH_DONE, Chapter.New({
+			slot0:sendNotification(GAME.SUB_CHAPTER_REFRESH_DONE, Chapter.New({
 				id = slot0.chapter_id.chapter_id,
 				active_time = slot0.chapter_id.active_time,
 				index = slot0.chapter_id.index

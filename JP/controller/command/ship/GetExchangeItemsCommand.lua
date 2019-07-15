@@ -5,9 +5,10 @@ class("GetExchangeItemsCommand", pm.SimpleCommand).execute = function (slot0, sl
 		type = 0
 	}, 16107, function (slot0)
 		slot1 = getProxy(BuildShipProxy)
+		slot2 = {}
 
 		for slot6, slot7 in ipairs(slot0.item_shop_id_list) do
-			table.insert({}, {
+			table.insert(slot2, {
 				isFetched = false,
 				id = slot7
 			})
@@ -23,11 +24,11 @@ class("GetExchangeItemsCommand", pm.SimpleCommand).execute = function (slot0, sl
 
 		slot1:updateExchangeItemList(slot0.item_flash_time, slot2)
 
-		if uv0 and uv0 == 1 then
+		if slot0 and slot0 == 1 then
 			slot1:addExChangeItemTimer()
 		end
 
-		uv1:sendNotification(GAME.GET_EXCHANGE_ITEMS_DONE)
+		slot1:sendNotification(GAME.GET_EXCHANGE_ITEMS_DONE)
 	end)
 end
 

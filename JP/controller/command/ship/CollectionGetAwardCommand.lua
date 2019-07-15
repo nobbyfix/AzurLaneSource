@@ -25,9 +25,11 @@ class("CollectionGetAwardCommand", pm.SimpleCommand).execute = function (slot0, 
 		award_index = slot4
 	}, 17006, function (slot0)
 		if slot0.result == 0 then
-			getProxy(CollectionProxy).updateAward(slot1, uv0, uv1)
+			slot1 = getProxy(CollectionProxy)
 
-			if pg.storeup_data_template[uv0].award_display[uv1][1] == DROP_TYPE_RESOURCE then
+			slot1:updateAward(slot0, slot1)
+
+			if pg.storeup_data_template[slot0].award_display[slot1][1] == DROP_TYPE_RESOURCE then
 				slot4 = getProxy(PlayerProxy)
 				slot5 = slot4:getData()
 
@@ -40,7 +42,6 @@ class("CollectionGetAwardCommand", pm.SimpleCommand).execute = function (slot0, 
 			elseif slot3[1] == DROP_TYPE_EQUIP then
 				getProxy(EquipmentProxy):addEquipmentById(slot3[2], slot3[3])
 			elseif slot3[1] == DROP_TYPE_SIREN_EQUIP then
-				-- Nothing
 			elseif slot3[1] == DROP_TYPE_SHIP then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("collection_award_ship", pg.ship_data_statistics[slot3[2]].name))
 			elseif slot3[1] == DROP_TYPE_FURNITURE then
@@ -55,8 +56,8 @@ class("CollectionGetAwardCommand", pm.SimpleCommand).execute = function (slot0, 
 				id = slot3[2],
 				count = slot3[3]
 			}))
-			uv2:sendNotification(GAME.COLLECT_GET_AWARD_DONE, {
-				id = uv0,
+			slot2:sendNotification(GAME.COLLECT_GET_AWARD_DONE, {
+				id = slot0,
 				items = {}
 			})
 			pg.TipsMgr:GetInstance():ShowTips(i18n("word_takeOk"))

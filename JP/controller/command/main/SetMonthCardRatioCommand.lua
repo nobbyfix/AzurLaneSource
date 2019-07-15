@@ -4,7 +4,7 @@ class("SetMonthCardRatioCommand", pm.SimpleCommand).execute = function (slot0, s
 	}, 11602, function (slot0)
 		if slot0.result == 0 then
 			if getProxy(PlayerProxy).getData(slot1):getCardById(VipCard.MONTH) and not slot3:isExpire() then
-				slot3.data = uv0
+				slot3.data = slot0
 
 				slot2:addVipCard(slot3)
 				slot1:updatePlayer(slot2)

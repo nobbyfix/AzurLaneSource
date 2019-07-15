@@ -11,6 +11,7 @@ return {
 			}
 		}
 		slot6 = {}
+		slot7 = 1
 		slot8 = 0
 		slot10 = 0
 		slot11 = table.getn(slot0[1])
@@ -18,11 +19,12 @@ return {
 		slot13 = {}
 		slot14 = 1
 
-		while 1 > 0 do
+		while slot7 > 0 do
+			slot15 = slot5[slot7].f
 			slot14 = slot7
 
 			for slot19 = slot7, 1, -1 do
-				if slot5[slot19].f < slot5[slot7].f then
+				if slot5[slot19].f < slot15 then
 					slot15 = slot5[slot19].f
 					slot14 = slot19
 				end
@@ -88,14 +90,16 @@ return {
 				slot19 = false
 			end
 
+			slot10 = slot13.g + 1
+
 			for slot23 = 1, slot7, 1 do
-				if slot16 and slot5[slot23].x == slot13.x + 1 and slot5[slot23].y == slot13.y and slot13.g + 1 < slot5[slot23].g then
+				if slot16 and slot5[slot23].x == slot13.x + 1 and slot5[slot23].y == slot13.y and slot10 < slot5[slot23].g then
 					table.insert(slot5, slot23, {
 						x = slot13.x + 1,
 						y = slot13.y,
-						g = slot13.g + 1,
-						h = math.abs(slot13.x + 1 - slot3) + math.abs(slot13.y - slot4),
-						f = slot13.g + 1 + math.abs(slot13.x + 1 - slot3) + math.abs(slot13.y - slot4),
+						g = slot10,
+						h = math.abs((slot13.x + 1) - slot3) + math.abs(slot13.y - slot4),
+						f = slot10 + math.abs((slot13.x + 1) - slot3) + math.abs(slot13.y - slot4),
 						par = slot8
 					})
 
@@ -120,8 +124,8 @@ return {
 						x = slot13.x,
 						y = slot13.y + 1,
 						g = slot10,
-						h = math.abs(slot13.x - slot3) + math.abs(slot13.y + 1 - slot4),
-						f = slot10 + math.abs(slot13.x - slot3) + math.abs(slot13.y + 1 - slot4),
+						h = math.abs(slot13.x - slot3) + math.abs((slot13.y + 1) - slot4),
+						f = slot10 + math.abs(slot13.x - slot3) + math.abs((slot13.y + 1) - slot4),
 						par = slot8
 					})
 
@@ -147,8 +151,8 @@ return {
 					x = slot13.x + 1,
 					y = slot13.y,
 					g = slot10,
-					h = math.abs(slot13.x + 1 - slot3) + math.abs(slot13.y - slot4),
-					f = slot10 + math.abs(slot13.x + 1 - slot3) + math.abs(slot13.y - slot4),
+					h = math.abs((slot13.x + 1) - slot3) + math.abs(slot13.y - slot4),
+					f = slot10 + math.abs((slot13.x + 1) - slot3) + math.abs(slot13.y - slot4),
 					par = slot8
 				})
 			end
@@ -169,8 +173,8 @@ return {
 					x = slot13.x,
 					y = slot13.y + 1,
 					g = slot10,
-					h = math.abs(slot13.x - slot3) + math.abs(slot13.y + 1 - slot4),
-					f = slot10 + math.abs(slot13.x - slot3) + math.abs(slot13.y + 1 - slot4),
+					h = math.abs(slot13.x - slot3) + math.abs((slot13.y + 1) - slot4),
+					f = slot10 + math.abs(slot13.x - slot3) + math.abs((slot13.y + 1) - slot4),
 					par = slot8
 				})
 			end
@@ -206,8 +210,10 @@ return {
 
 		table.insert({}, 1, table.getn(slot0))
 
-		while slot2[1] > 1 do
-			table.insert(slot2, slot4 + 1, slot0[slot2[slot4 + 1 - 1]].par)
+		slot4 = 1
+
+		while slot2[slot4] > 1 do
+			table.insert(slot2, slot4 + 1, slot0[slot2[(slot4 + 1) - 1]].par)
 		end
 
 		for slot8 = table.getn(slot2), 1, -1 do

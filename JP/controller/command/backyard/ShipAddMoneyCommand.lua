@@ -4,7 +4,7 @@ class("ShipAddMoneyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	}, 19014, function (slot0)
 		if slot0.result == 0 then
 			slot1 = getProxy(BayProxy)
-			slot2 = slot1:getShipById(uv0)
+			slot2 = slot1:getShipById(slot0)
 			slot2.state_info_4 = 0
 
 			slot1:updateShip(slot2)
@@ -23,7 +23,7 @@ class("ShipAddMoneyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 				pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_shipAddMoney_ok", slot2:getName(), slot3))
 			end
 
-			uv1:sendNotification(GAME.BACKYARD_ADD_MONEY_DONE)
+			slot1:sendNotification(GAME.BACKYARD_ADD_MONEY_DONE)
 
 			if pg.backyard then
 				pg.backyard:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {

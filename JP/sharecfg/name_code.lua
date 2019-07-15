@@ -866,3 +866,5 @@ pg.name_code = {
 		code = "量産型フソウ級.verAI"
 	}
 }
+
+return

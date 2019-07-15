@@ -34,7 +34,7 @@ class("ModShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			slot1 = {}
 			slot2 = getProxy(EquipmentProxy)
 
-			for slot6, slot7 in ipairs(uv0) do
+			for slot6, slot7 in ipairs(slot0) do
 				for slot11, slot12 in ipairs(slot7.equipments) do
 					if slot12 then
 						if slot12:hasSkin() then
@@ -55,17 +55,17 @@ class("ModShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 					end
 				end
 
-				uv1:removeShip(slot7)
+				slot1:removeShip(slot7)
 			end
 
 			for slot7, slot8 in pairs(slot3) do
-				uv2:addModAttrExp(slot7, slot8)
+				slot2:addModAttrExp(slot7, slot8)
 			end
 
-			uv1:updateShip(uv2)
-			uv3:sendNotification(GAME.MOD_SHIP_DONE, {
-				oldShip = uv4,
-				newShip = uv2,
+			slot1:updateShip(slot2)
+			slot3:sendNotification(GAME.MOD_SHIP_DONE, {
+				oldShip = slot4,
+				newShip = slot2,
 				equipments = slot1
 			})
 		else

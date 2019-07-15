@@ -180,8 +180,8 @@ function AiriSocialLogin(slot0, slot1, slot2)
 					user = User.New({
 						type = 1,
 						arg1 = PLATFORM_AIRIJP,
-						arg2 = uv0,
-						arg3 = uv1
+						arg2 = slot0,
+						arg3 = 
 					})
 				})
 			end
@@ -224,3 +224,5 @@ function getDeviceId()
 		return ""
 	end
 end
+
+return

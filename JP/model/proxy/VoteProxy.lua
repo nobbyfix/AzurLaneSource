@@ -1,14 +1,14 @@
 slot0 = class("VoteProxy", import(".NetProxy"))
 slot0.VOTE_GROUP_UPDATE = "VoteProxy:VOTE_GROUP_UPDATE"
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
 	slot0.votes = 0
 	slot0.loves = 0
 	slot0.voteGroup = nil
 	slot0.lastRequestTime = 0
 end
 
-function slot0.initVoteGroup(slot0, slot1, slot2, slot3)
+slot0.initVoteGroup = function (slot0, slot1, slot2, slot3)
 	slot0.votes = slot3.daily_vote
 	slot0.loves = slot3.love_vote
 	slot4 = {}
@@ -21,12 +21,13 @@ function slot0.initVoteGroup(slot0, slot1, slot2, slot3)
 	end
 
 	_.each(slot5, function (slot0)
-		VoteShip.New({
+		slot1 = VoteShip.New({
 			votes = 0,
 			group = slot0
-		}).ivoted = table.contains(uv0.daily_ship_list, slot0)
+		})
+		slot1.ivoted = table.contains(slot0.daily_ship_list, slot0)
 
-		table.insert(uv1, VoteShip.New())
+		table.insert(slot1, slot1)
 	end)
 
 	slot7 = VoteGroup.New(slot1.id, slot2)
@@ -36,28 +37,28 @@ function slot0.initVoteGroup(slot0, slot1, slot2, slot3)
 	slot0.voteGroup = slot7
 end
 
-function slot0.updateRankInfo(slot0, slot1)
+slot0.updateRankInfo = function (slot0, slot1)
 	slot2 = {}
 
 	_.each(slot1.list, function (slot0)
-		uv0[slot0.id] = slot0.count
+		slot0[slot0.id] = slot0.count
 	end)
 	_.each(slot0.voteGroup:getList(), function (slot0)
-		if uv0[slot0.group] then
-			slot0.votes = uv0[slot0.group]
+		if slot0[slot0.group] then
+			slot0.votes = slot0[slot0.group]
 		end
 	end)
 	slot0.voteGroup:sortList()
 end
 
-function slot0.getVoteGroup(slot0)
+slot0.getVoteGroup = function (slot0)
 	return Clone(slot0.voteGroup)
 end
 
-function slot0.setVoteGroup(slot0, slot1)
+slot0.setVoteGroup = function (slot0, slot1)
 	slot0.voteGroup = slot1
 
-	slot0:sendNotification(uv0.VOTE_GROUP_UPDATE)
+	slot0:sendNotification(slot0.VOTE_GROUP_UPDATE)
 end
 
 return slot0
