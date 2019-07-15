@@ -1,10 +1,10 @@
 slot0 = class("ShipCustomMsgBox", import("...base.BaseSubView"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "ShipCustomMsgBox"
 end
 
-function slot0.OnInit(slot0)
+slot0.OnInit = function (slot0)
 	slot0.customMsgbox = slot0._tf
 	slot0.msgBoxItemPanel = slot0.customMsgbox:Find("frame/bg/item_panel")
 	slot0.msgboxItemContains = slot0.customMsgbox:Find("frame/bg/item_panel/items")
@@ -21,33 +21,33 @@ function slot0.OnInit(slot0)
 	slot0.settings = {}
 
 	onButton(slot0, slot0.msgBoxConfirmBtn, function ()
-		if uv0.settings.onYes then
-			uv0.settings.onYes()
+		if slot0.settings.onYes then
+			slot0.settings.onYes()
 		else
-			uv0:hideCustomMsgBox()
+			slot0:hideCustomMsgBox()
 		end
 	end, SFX_PANEL)
 	SetActive(slot0.msgBoxCancelBtn, not defaultValue(slot0.settings.hideNO, false))
 	onButton(slot0, slot0.msgBoxCancelBtn, function ()
-		if uv0.settings.onCancel then
-			uv0.settings.onCancel()
+		if slot0.settings.onCancel then
+			slot0.settings.onCancel()
 		else
-			uv0:hideCustomMsgBox()
+			slot0:hideCustomMsgBox()
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.customMsgbox, function ()
-		uv0:hideCustomMsgBox()
+		slot0:hideCustomMsgBox()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.msgBtnBack, function ()
-		uv0:hideCustomMsgBox()
+		slot0:hideCustomMsgBox()
 	end, SFX_CANCEL)
 end
 
-function slot0.SetShareData(slot0, slot1)
+slot0.SetShareData = function (slot0, slot1)
 	slot0.shareData = slot1
 end
 
-function slot0.showCustomMsgBox(slot0, slot1)
+slot0.showCustomMsgBox = function (slot0, slot1)
 	slot0.isShowCustomMsgBox = true
 	slot0.settings = slot1
 
@@ -77,7 +77,7 @@ function slot0.showCustomMsgBox(slot0, slot1)
 					slot11 = getProxy(BagProxy):getItemCountById(slot10.id)
 				end
 
-				setText(slot9:Find("icon_bg/count"), slot11 .. "/" .. (slot11 < slot10.count and "<color=#ff5c5c>" .. slot10.count .. "</color>" or "<color=#92fc63FF>" .. slot10.count .. "</color>"))
+				setText(slot9:Find("icon_bg/count"), slot11 .. "/" .. ((slot11 < slot10.count and "<color=#ff5c5c>" .. slot10.count .. "</color>") or "<color=#92fc63FF>" .. slot10.count .. "</color>"))
 			end
 		end
 
@@ -88,13 +88,13 @@ function slot0.showCustomMsgBox(slot0, slot1)
 	end
 end
 
-function slot0.hideCustomMsgBox(slot0)
+slot0.hideCustomMsgBox = function (slot0)
 	slot0.isShowCustomMsgBox = nil
 
 	SetActive(slot0.customMsgbox, false)
 end
 
-function slot0.OnDestroy(slot0)
+slot0.OnDestroy = function (slot0)
 	pg.UIMgr.GetInstance():UnOverlayPanel(slot0.customMsgbox, slot0._tf)
 
 	slot0.shareData = nil

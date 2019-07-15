@@ -7,40 +7,40 @@ slot0.REMOVE_PAPER = "BackYardGarnitureMediator:REMOVE_PAPER"
 slot0.SAVE_THEME = "BackYardGarnitureMediator:SAVE_THEME"
 slot0.DELETE_THEME = "BackYardGarnitureMediator:DELETE_THEME"
 
-function slot0.register(slot0)
-	slot0:bind(uv0.ADD_FURNITURE, function (slot0, slot1, slot2)
+slot0.register = function (slot0)
+	slot0:bind(slot0.ADD_FURNITURE, function (slot0, slot1, slot2)
 		pg.backyard:sendNotification(BACKYARD.COMMAND_BACKYARD_FURNITURE, {
 			name = BACKYARD.FURNITURE_ADD,
 			furniture = slot1,
 			callback = slot2
 		})
 	end)
-	slot0:bind(uv0.REMOVE_PAPER, function (slot0, slot1)
+	slot0:bind(slot0.REMOVE_PAPER, function (slot0, slot1)
 		pg.backyard:sendNotification(BACKYARD.COMMAND_BACKYARD_FURNITURE, {
 			name = BACKYARD.REMOVE_PAPER,
 			type = slot1
 		})
 	end)
-	slot0:bind(uv0.SAVE_FURNITURE, function (slot0)
+	slot0:bind(slot0.SAVE_FURNITURE, function (slot0)
 		pg.backyard:sendNotification(BACKYARD.GARNITURE_SAVE)
 	end)
-	slot0:bind(uv0.ClEAR_FURNITURE, function (slot0, slot1)
+	slot0:bind(slot0.ClEAR_FURNITURE, function (slot0, slot1)
 		pg.backyard:sendNotification(BACKYARD.GARNITURE_CLEAR, {
 			tip = slot1
 		})
 	end)
-	slot0:bind(uv0.OPEN_SHOP, function (slot0)
-		uv0:sendNotification(GAME.OPEN_BACKYARD_SHOP)
+	slot0:bind(slot0.OPEN_SHOP, function (slot0)
+		slot0:sendNotification(GAME.OPEN_BACKYARD_SHOP)
 	end)
-	slot0:bind(uv0.SAVE_THEME, function (slot0, slot1, slot2)
-		uv0:sendNotification(GAME.SAVE_DORMTHEME, {
+	slot0:bind(slot0.SAVE_THEME, function (slot0, slot1, slot2)
+		slot0:sendNotification(GAME.SAVE_DORMTHEME, {
 			id = slot1,
 			name = slot2,
 			furnitureputList = getBackYardProxy(BackYardHouseProxy):getData().getSaveData(slot3)
 		})
 	end)
-	slot0:bind(uv0.DELETE_THEME, function (slot0, slot1)
-		uv0:sendNotification(GAME.DELETE_BACKYARD_THEME, slot1)
+	slot0:bind(slot0.DELETE_THEME, function (slot0, slot1)
+		slot0:sendNotification(GAME.DELETE_BACKYARD_THEME, slot1)
 	end)
 
 	slot6, slot7 = slot0:packHouse(getBackYardProxy(BackYardHouseProxy).getData(slot1))
@@ -62,7 +62,7 @@ function slot0.register(slot0)
 	end
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		BackyardMainMediator.USED_FURNITURE,
 		BackyardMainMediator.NONUSED_FURNITURE,
@@ -73,10 +73,14 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
+	slot3 = slot1:getBody()
+
 	if slot1:getName() == BackyardMainMediator.USED_FURNITURE or slot2 == BackyardMainMediator.NONUSED_FURNITURE then
+		slot4 = slot0.dormProxy:getFurniById(slot3)
+
 		if slot2 == BackyardMainMediator.NONUSED_FURNITURE then
-			slot0.dormProxy:getFurniById(slot1:getBody()):updatePosition(Vector2(0, 0))
+			slot4:updatePosition(Vector2(0, 0))
 		else
 			slot4:updatePosition(nil)
 		end
@@ -98,11 +102,12 @@ function slot0.handleNotification(slot0, slot1)
 	end
 end
 
-function slot0.packHouse(slot0, slot1)
+slot0.packHouse = function (slot0, slot1)
+	slot2 = Clone(slot1)
 	slot3 = getProxy(DormProxy)
 
 	for slot9, slot10 in pairs(slot5) do
-		Clone(slot1):addFurniture(BackyardFurnitureVO.New(slot10))
+		slot2:addFurniture(BackyardFurnitureVO.New(slot10))
 	end
 
 	if slot2.wallPaper then

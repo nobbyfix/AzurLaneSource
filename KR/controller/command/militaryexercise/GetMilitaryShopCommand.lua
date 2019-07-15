@@ -3,7 +3,7 @@ class("GetMilitaryShopCommand", pm.SimpleCommand).execute = function (slot0, slo
 		type = 0
 	}, 18101, function (slot0)
 		getProxy(ShopsProxy).addMeritorousShop(slot2, slot1)
-		uv0:sendNotification(GAME.GET_MILITARY_SHOP_DONE, Clone(MeritorousShop.New({
+		slot0:sendNotification(GAME.GET_MILITARY_SHOP_DONE, Clone(MeritorousShop.New({
 			id = 1,
 			good_list = slot0.arena_shop_list,
 			refreshCount = slot0.flash_count,

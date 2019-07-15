@@ -7,7 +7,7 @@ class("RenameShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		return
 	end
 
-	slot7 = slot6:isRemoulded() and HXSet.hxLan(pg.ship_skin_template[slot6:getRemouldSkinId()].name) or pg.ship_data_statistics[slot6.configId].name
+	slot7 = (slot6:isRemoulded() and HXSet.hxLan(pg.ship_skin_template[slot6:getRemouldSkinId()].name)) or pg.ship_data_statistics[slot6.configId].name
 
 	if HXSet.hxLan(slot6:getName()) == slot4 then
 		slot0:sendNotification(GAME.RENAME_SHIP_DONE, {
@@ -33,18 +33,18 @@ class("RenameShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	end
 
 	function slot8()
-		pg.ConnectionMgr.GetInstance():Send(12034, {
-			ship_id = uv0,
-			name = uv1 == uv2 and "" or uv1
+		slot0(slot1, slot2, {
+			ship_id = slot0,
+			name = (pg.ConnectionMgr.GetInstance() == 12034 and "") or slot1
 		}, 12035, function (slot0)
 			if slot0.result == 0 then
-				uv0.name = uv1
-				uv0.renameTime = pg.TimeMgr.GetInstance():GetServerTime()
+				slot0.name = slot0
+				slot0.renameTime = pg.TimeMgr.GetInstance():GetServerTime()
 
-				uv2:updateShip(uv0)
-				uv3:sendNotification(BayProxy.SHIP_UPDATED, uv0)
-				uv3:sendNotification(GAME.RENAME_SHIP_DONE, {
-					ship = uv0
+				pg.TimeMgr.GetInstance().GetServerTime():updateShip(slot0)
+				slot3:sendNotification(BayProxy.SHIP_UPDATED, slot0)
+				slot3:sendNotification(GAME.RENAME_SHIP_DONE, {
+					ship = slot0
 				})
 			else
 				pg.TipsMgr:GetInstance():ShowTips(errorTip("ship_renameShip", slot0.result))
@@ -55,7 +55,7 @@ class("RenameShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	pg.MsgboxMgr.GetInstance():ShowMsgBox({
 		content = i18n("word_rename_time_warning", HXSet.hxLan(slot6:getName()), slot4),
 		onYes = function ()
-			uv0()
+			slot0()
 		end
 	})
 end

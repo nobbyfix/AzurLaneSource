@@ -17,13 +17,14 @@ class("StartLearnTacticsCommand", pm.SimpleCommand).execute = function (slot0, s
 		item_id = slot4
 	}, 22202, function (slot0)
 		if slot0.result == 0 then
+			slot1 = getProxy(NavalAcademyProxy)
 			slot3 = Student.New(slot0.class_info)
 
 			slot3:setTime(slot2)
-			slot3:setLesson(uv0)
-			getProxy(NavalAcademyProxy).addStudent(slot1, slot3)
-			uv1:removeItemById(uv2.id, 1)
-			uv3:sendNotification(GAME.START_TO_LEARN_TACTICS_DONE)
+			slot3:setLesson(slot0)
+			slot1:addStudent(slot3)
+			slot1:removeItemById(slot2.id, 1)
+			slot3:sendNotification(GAME.START_TO_LEARN_TACTICS_DONE)
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("lesson_endToLearn", slot0.result))
 		end

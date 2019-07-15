@@ -12,11 +12,12 @@ class("FinishBluePrintCommand", pm.SimpleCommand).execute = function (slot0, slo
 	}, 63203, function (slot0)
 		if slot0.result == 0 then
 			slot1 = Ship.New(slot0.ship)
+			slot2 = getProxy(BayProxy)
 
-			getProxy(BayProxy).addShip(slot2, slot1)
-			uv0:unlock(slot1.id)
-			uv1:updateBluePrint(uv0)
-			uv2:sendNotification(GAME.FINISH_SHIP_BLUEPRINT_DONE, {
+			slot2:addShip(slot1)
+			slot0:unlock(slot1.id)
+			slot1:updateBluePrint(slot0)
+			slot2:sendNotification(GAME.FINISH_SHIP_BLUEPRINT_DONE, {
 				ship = slot1
 			})
 		else

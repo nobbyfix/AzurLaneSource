@@ -23,7 +23,7 @@ slot21 = {
 }
 slot24 = ({
 	__index = function (slot0, slot1)
-		if uv0(uv1, slot1) == nil and uv0(uv2, slot1) ~= nil then
+		if slot0(slot1, slot1) == nil and slot0(slot2, slot1) ~= nil then
 			return slot2(slot0)
 		end
 
@@ -33,26 +33,26 @@ slot24 = ({
 		if slot1 == "eulerAngles" then
 			slot0:SetEuler(slot2)
 		else
-			uv0(slot0, slot1, slot2)
+			slot0(slot0, slot1, slot2)
 		end
 	end,
 	New = function (slot0, slot1, slot2, slot3)
-		uv0({
+		slot0({
 			x = slot0 or 0,
 			y = slot1 or 0,
 			z = slot2 or 0,
 			w = slot3 or 0
-		}, uv1)
+		}, slot1)
 
 		return 
 	end,
 	__call = function (slot0, slot1, slot2, slot3, slot4)
-		uv0({
+		slot0({
 			x = slot1 or 0,
 			y = slot2 or 0,
 			z = slot3 or 0,
 			w = slot4 or 0
-		}, uv1)
+		}, slot1)
 
 		return 
 	end,
@@ -63,7 +63,7 @@ slot24 = ({
 		slot0.w = slot4 or 0
 	end,
 	Clone = function (slot0)
-		return uv0(slot0.x, slot0.y, slot0.z, slot0.w)
+		return slot0(slot0.x, slot0.y, slot0.z, slot0.w)
 	end,
 	Get = function (slot0)
 		return slot0.x, slot0.y, slot0.z, slot0.w
@@ -72,32 +72,42 @@ slot24 = ({
 		return slot0.x * slot1.x + slot0.y * slot1.y + slot0.z * slot1.z + slot0.w * slot1.w
 	end,
 	Angle = function (slot0, slot1)
-		if uv0.Dot(slot0, slot1) < 0 then
+		if slot0:Dot(slot1) < 0 then
 			slot2 = -slot2
 		end
 
-		return uv1(uv2(slot2, 1)) * 2 * 57.29578
+		return slot1(slot2(slot2, 1)) * 2 * 57.29578
 	end,
 	AngleAxis = function (slot0, slot1)
 		slot2 = slot1:Normalize()
-		slot3 = uv1(slot0)
+		slot3 = slot1(slot0)
 
-		return uv3(slot2.x * slot3, slot2.y * slot3, slot2.z * slot3, uv2(slot0))
+		return slot3(slot2.x * slot3, slot2.y * slot3, slot2.z * slot3, slot2(slot0))
 	end,
 	Equals = function (slot0, slot1)
 		return slot0.x == slot1.x and slot0.y == slot1.y and slot0.z == slot1.z and slot0.w == slot1.w
 	end,
 	Euler = function (slot0, slot1, slot2)
-		slot3 = uv0(slot0)
-		slot4 = uv0(slot1)
-		slot5 = uv0(slot2)
+		slot3 = slot0(slot0)
+		slot4 = slot0(slot1)
+		slot5 = slot0(slot2)
 
-		uv2({
-			x = uv1(slot1 * 0.0087266462599716) * slot3 * uv1(slot2 * 0.0087266462599716) + slot4 * uv1(slot0 * 0.0087266462599716) * slot5,
-			y = slot4 * uv1(slot0 * 0.0087266462599716) * uv1(slot2 * 0.0087266462599716) - uv1(slot1 * 0.0087266462599716) * slot3 * slot5,
-			z = uv1(slot1 * 0.0087266462599716) * uv1(slot0 * 0.0087266462599716) * slot5 - slot4 * slot3 * uv1(slot2 * 0.0087266462599716),
-			w = uv1(slot1 * 0.0087266462599716) * uv1(slot0 * 0.0087266462599716) * uv1(slot2 * 0.0087266462599716) + slot4 * slot3 * slot5
-		}, uv3)
+
+		-- Decompilation error in this vicinity:
+		slot1(slot2 * 0.0087266462599716)({
+			x = slot1(slot1 * 0.0087266462599716) * slot3 * 
+			-- Decompilation error in this vicinity:
+			slot1(slot2 * 0.0087266462599716) + slot4 * slot1(slot0 * 0.0087266462599716) * slot5,
+			y = slot4 * slot1(slot0 * 0.0087266462599716) * 
+			-- Decompilation error in this vicinity:
+			slot1(slot2 * 0.0087266462599716) - slot1(slot1 * 0.0087266462599716) * slot3 * slot5,
+			z = slot1(slot1 * 0.0087266462599716) * slot1(slot0 * 0.0087266462599716) * slot5 - slot4 * slot3 * 
+			-- Decompilation error in this vicinity:
+			slot1(slot2 * 0.0087266462599716),
+			w = slot1(slot1 * 0.0087266462599716) * slot1(slot0 * 0.0087266462599716) * 
+			-- Decompilation error in this vicinity:
+			slot1(slot2 * 0.0087266462599716) + slot4 * slot3 * slot5
+		}, slot3)
 
 		return 
 	end,
@@ -108,12 +118,12 @@ slot24 = ({
 			slot1 = slot1.x
 		end
 
-		slot4 = uv0(slot1)
-		slot5 = uv1(slot1)
-		slot6 = uv0(slot2)
-		slot7 = uv1(slot2)
-		slot8 = uv0(slot3)
-		slot9 = uv1(slot3)
+		slot4 = slot0(slot1)
+		slot5 = slot1(slot1)
+		slot6 = slot0(slot2)
+		slot7 = slot1(slot2)
+		slot8 = slot0(slot3)
+		slot9 = slot1(slot3)
 		slot0.w = slot7 * slot5 * slot9 + slot6 * slot4 * slot8
 		slot0.x = slot7 * slot4 * slot9 + slot6 * slot5 * slot8
 		slot0.y = slot6 * slot5 * slot9 - slot7 * slot4 * slot8
@@ -130,27 +140,27 @@ slot24 = ({
 	end,
 	SetNormalize = function (slot0)
 		if slot0.x * slot0.x + slot0.y * slot0.y + slot0.z * slot0.z + slot0.w * slot0.w ~= 1 and slot1 > 0 then
-			slot0.x = slot0.x * 1 / uv0(slot1)
-			slot0.y = slot0.y * 1 / uv0(slot1)
-			slot0.z = slot0.z * 1 / uv0(slot1)
-			slot0.w = slot0.w * 1 / uv0(slot1)
+			slot0.x = slot0.x * 1 / slot0(slot1)
+			slot0.y = slot0.y * 1 / slot0(slot1)
+			slot0.z = slot0.z * 1 / slot0(slot1)
+			slot0.w = slot0.w * 1 / slot0(slot1)
 		end
 	end,
 	FromToRotation = function (slot0, slot1)
-		slot2 = uv0.New()
+		slot2 = slot0.New()
 
 		slot2:SetFromToRotation(slot0, slot1)
 
 		return slot2
 	end,
 	SetFromToRotation1 = function (slot0, slot1, slot2)
-		if uv0.Dot(slot3, slot2:Normalize()) > -0.999999 then
-			slot0:Set(uv0.Cross(slot3, slot4) * 1 / uv1((1 + slot5) * 2).x, uv0.Cross(slot3, slot4) * 1 / uv1((1 + slot5) * 2).y, uv0.Cross(slot3, slot4) * 1 / uv1((1 + slot5) * 2).z, uv1((1 + slot5) * 2) * 0.5)
+		if slot0.Dot(slot3, slot2:Normalize()) > -0.999999 then
+			slot0:Set(slot0.Cross(slot3, slot4) * 1 / slot1((1 + slot5) * 2).x, slot0.Cross(slot3, slot4) * 1 / slot1((1 + slot5) * 2).y, slot0.Cross(slot3, slot4) * 1 / slot1((1 + slot5) * 2).z, slot1((1 + slot5) * 2) * 0.5)
 		elseif slot5 > 0.999999 then
-			return uv2(0, 0, 0, 1)
+			return slot2(0, 0, 0, 1)
 		else
-			if uv0.Cross(uv0.right, slot3).SqrMagnitude(slot6) < 1e-06 then
-				slot6 = uv0.Cross(uv0.forward, slot3)
+			if slot0.Cross(slot0.right, slot3).SqrMagnitude(slot6) < 1e-06 then
+				slot6 = slot0.Cross(slot0.forward, slot3)
 			end
 
 			slot0:Set(slot6.x, slot6.y, slot6.z, 0)
@@ -161,7 +171,7 @@ slot24 = ({
 		return slot0
 	end,
 	SetFromToRotation = function (slot0, slot1, slot2)
-		if uv0.Dot(slot1, slot2:Normalize()) > 0.999999 then
+		if slot0.Dot(slot1, slot2:Normalize()) > 0.999999 then
 			slot0:Set(0, 0, 0, 1)
 		elseif slot3 < -0.999999 then
 			if ({
@@ -175,11 +185,11 @@ slot24 = ({
 				slot5 = slot4[1] * slot4[1] + slot4[3] * slot4[3]
 			end
 
-			slot4[1] = slot4[1] * 1 / uv1(slot5)
-			slot4[2] = slot4[2] * 1 / uv1(slot5)
-			slot4[3] = slot4[3] * 1 / uv1(slot5)
+			slot4[1] = slot4[1] * 1 / slot1(slot5)
+			slot4[2] = slot4[2] * 1 / slot1(slot5)
+			slot4[3] = slot4[3] * 1 / slot1(slot5)
 
-			uv2({
+			slot2({
 				{
 					-slot1.x * slot1.x + ({
 						slot4[2] * slot1.z - slot4[3] * slot1.y,
@@ -201,29 +211,29 @@ slot24 = ({
 				}
 			}, slot0)
 		else
-			slot4 = uv0.Cross(slot1, slot2)
+			slot4 = slot0.Cross(slot1, slot2)
 
-			uv2({
+			slot2({
 				{
-					slot3 + (1 - slot3) / uv0.Dot(slot4, slot4) * slot4.x * slot4.x,
-					(1 - slot3) / uv0.Dot(slot4, slot4) * slot4.x * slot4.y - slot4.z,
-					(1 - slot3) / uv0.Dot(slot4, slot4) * slot4.x * slot4.z + slot4.y
+					slot3 + (1 - slot3) / slot0.Dot(slot4, slot4) * slot4.x * slot4.x,
+					(1 - slot3) / slot0.Dot(slot4, slot4) * slot4.x * slot4.y - slot4.z,
+					(1 - slot3) / slot0.Dot(slot4, slot4) * slot4.x * slot4.z + slot4.y
 				},
 				{
-					(1 - slot3) / uv0.Dot(slot4, slot4) * slot4.x * slot4.y + slot4.z,
-					slot3 + (1 - slot3) / uv0.Dot(slot4, slot4) * slot4.y * slot4.y,
-					(1 - slot3) / uv0.Dot(slot4, slot4) * slot4.z * slot4.y - slot4.x
+					(1 - slot3) / slot0.Dot(slot4, slot4) * slot4.x * slot4.y + slot4.z,
+					slot3 + (1 - slot3) / slot0.Dot(slot4, slot4) * slot4.y * slot4.y,
+					(1 - slot3) / slot0.Dot(slot4, slot4) * slot4.z * slot4.y - slot4.x
 				},
 				{
-					(1 - slot3) / uv0.Dot(slot4, slot4) * slot4.x * slot4.z - slot4.y,
-					(1 - slot3) / uv0.Dot(slot4, slot4) * slot4.z * slot4.y + slot4.x,
-					slot3 + (1 - slot3) / uv0.Dot(slot4, slot4) * slot4.z * slot4.z
+					(1 - slot3) / slot0.Dot(slot4, slot4) * slot4.x * slot4.z - slot4.y,
+					(1 - slot3) / slot0.Dot(slot4, slot4) * slot4.z * slot4.y + slot4.x,
+					slot3 + (1 - slot3) / slot0.Dot(slot4, slot4) * slot4.z * slot4.z
 				}
 			}, slot0)
 		end
 	end,
 	Inverse = function (slot0)
-		slot1 = uv0.New()
+		slot1 = slot0.New()
 		slot1.x = -slot0.x
 		slot1.y = -slot0.y
 		slot1.z = -slot0.z
@@ -232,19 +242,19 @@ slot24 = ({
 		return slot1
 	end,
 	Lerp = function (slot0, slot1, slot2)
-		slot2 = uv0(slot2, 0, 1)
+		slot2 = slot0(slot2, 0, 1)
 		slot3 = {
 			w = 1,
 			z = 0,
 			x = 0,
-			y = 0,
-			x = slot0.x + slot2 * (-slot1.x - slot0.x),
-			y = slot0.y + slot2 * (-slot1.y - slot0.y),
-			z = slot0.z + slot2 * (-slot1.z - slot0.z),
-			w = slot0.w + slot2 * (-slot1.w - slot0.w)
+			y = 0
 		}
 
-		if uv1.Dot(slot0, slot1) < 0 then
+		if slot1.Dot(slot0, slot1) < 0 then
+			slot3.x = slot0.x + slot2 * (-slot1.x - slot0.x)
+			slot3.y = slot0.y + slot2 * (-slot1.y - slot0.y)
+			slot3.z = slot0.z + slot2 * (-slot1.z - slot0.z)
+			slot3.w = slot0.w + slot2 * (-slot1.w - slot0.w)
 		else
 			slot3.x = slot0.x + (slot1.x - slot0.x) * slot2
 			slot3.y = slot0.y + (slot1.y - slot0.y) * slot2
@@ -252,8 +262,8 @@ slot24 = ({
 			slot3.w = slot0.w + (slot1.w - slot0.w) * slot2
 		end
 
-		uv1.SetNormalize(slot3)
-		uv2(slot3, uv1)
+		slot1.SetNormalize(slot3)
+		slot2(slot3, slot1)
 
 		return slot3
 	end,
@@ -264,12 +274,13 @@ slot24 = ({
 			return nil
 		end
 
-		slot3 = uv1.Cross(slot1 or uv0, slot0 / slot2)
+		slot3 = slot1 or slot0 / slot2:Cross(slot0 / slot2)
 
 		slot3:SetNormalize()
 
-		if uv1.Cross(slot1 or uv0, slot0 / slot2).x + uv1.Cross(slot0 / slot2, slot3).y + slot0 / slot2.z > 0 then
-			slot10 = uv3(nil, nil, (slot3.y - slot1.x) * 0.5 / uv2(slot4), 0.5 / uv2(slot4) * (slot4 + 1))
+		if slot1 or slot0 / slot2:Cross(slot0 / slot2).x + slot1 or slot0 / slot2.Cross(slot0 / slot2, slot3).y + slot0 / slot2.z > 0 then
+			slot5, slot6, slot7, slot8 = nil
+			slot10 = slot3(slot5, slot6, (slot3.y - slot1.x) * 0.5 / slot2(slot4), 0.5 / slot2(slot4) * (slot4 + 1))
 
 			slot10:SetNormalize()
 
@@ -307,10 +318,10 @@ slot24 = ({
 				slot7 = 3
 			end
 
-			slot6[slot7] = 0.5 / uv2(slot10) * (slot5[slot7][slot7] - slot5[uv4[slot7]][uv4[slot7]] - slot5[uv4[uv4[slot7]]][uv4[uv4[slot7]]] + 1)
-			slot6[uv4[slot7]] = (slot5[uv4[slot7]][slot7] + slot5[slot7][uv4[slot7]]) * 0.5 / uv2(slot10)
-			slot6[uv4[uv4[slot7]]] = (slot5[uv4[uv4[slot7]]][slot7] + slot5[slot7][uv4[uv4[slot7]]]) * 0.5 / uv2(slot10)
-			slot13 = uv3(slot6[1], slot6[2], slot6[3], (slot5[uv4[uv4[slot7]]][uv4[slot7]] - slot5[uv4[slot7]][uv4[uv4[slot7]]]) * 0.5 / uv2(slot10))
+			slot6[slot7] = 0.5 / slot2(slot10) * (slot5[slot7][slot7] - slot5[slot4[slot7]][slot4[slot7]] - slot5[slot4[slot4[slot7]]][slot4[slot4[slot7]]] + 1)
+			slot6[slot4[slot7]] = (slot5[slot4[slot7]][slot7] + slot5[slot7][slot4[slot7]]) * 0.5 / slot2(slot10)
+			slot6[slot4[slot4[slot7]]] = (slot5[slot4[slot4[slot7]]][slot7] + slot5[slot7][slot4[slot4[slot7]]]) * 0.5 / slot2(slot10)
+			slot13 = slot3(slot6[1], slot6[2], slot6[3], (slot5[slot4[slot4[slot7]]][slot4[slot7]] - slot5[slot4[slot7]][slot4[slot4[slot7]]]) * 0.5 / slot2(slot10))
 
 			slot13:SetNormalize()
 
@@ -330,53 +341,53 @@ slot24 = ({
 			slot2 = 1
 		end
 
-		return uv0(slot0, slot1, slot2)
+		return slot0(slot0, slot1, slot2)
 	end,
 	RotateTowards = function (slot0, slot1, slot2)
-		if uv0.Angle(slot0, slot1) == 0 then
+		if slot0:Angle(slot1) == 0 then
 			return slot1
 		end
 
-		return uv2(slot0, slot1, uv1(1, slot2 / slot3))
+		return slot2(slot0, slot1, slot1(1, slot2 / slot3))
 	end,
 	ToAngleAxis = function (slot0)
-		if uv1(2 * uv0(slot0.w), 0) then
-			return slot1 * 57.29578, uv2.New(1, 0, 0)
+		if slot1(2 * slot0(slot0.w), 0) then
+			return slot1 * 57.29578, slot2.New(1, 0, 0)
 		end
 
-		return slot1 * 57.29578, uv2.New(slot0.x * 1 / uv3(1 - uv3(slot0.w)), slot0.y * 1 / uv3(1 - uv3(slot0.w)), slot0.z * 1 / uv3(1 - uv3(slot0.w)))
+		return slot1 * 57.29578, slot2.New(slot0.x * 1 / slot3(1 - slot3(slot0.w)), slot0.y * 1 / slot3(1 - slot3(slot0.w)), slot0.z * 1 / slot3(1 - slot3(slot0.w)))
 	end,
 	ToEulerAngles = function (slot0)
 		if 2 * (slot0.y * slot0.z - slot0.w * slot0.x) < 0.999 then
 			if slot5 > -0.999 then
-				slot6 = uv0.New(-uv1(slot5), uv2(2 * (slot1 * slot3 + slot4 * slot2), 1 - 2 * (slot1 * slot1 + slot2 * slot2)), uv2(2 * (slot1 * slot2 + slot4 * slot3), 1 - 2 * (slot1 * slot1 + slot3 * slot3)))
+				slot6 = slot0.New(-slot1(slot5), slot2(2 * (slot1 * slot3 + slot4 * slot2), 1 - 2 * (slot1 * slot1 + slot2 * slot2)), slot2(2 * (slot1 * slot2 + slot4 * slot3), 1 - 2 * (slot1 * slot1 + slot3 * slot3)))
 
-				uv3(slot6)
-				slot6:Mul(uv4)
+				slot3(slot6)
+				slot6:Mul(slot4)
 
 				return slot6
 			else
-				slot6 = uv0.New(uv5, uv2(2 * (slot1 * slot2 - slot4 * slot3), 1 - 2 * (slot2 * slot2 + slot3 * slot3)), 0)
+				slot6 = slot0.New(slot5, slot2(2 * (slot1 * slot2 - slot4 * slot3), 1 - 2 * (slot2 * slot2 + slot3 * slot3)), 0)
 
-				uv3(slot6)
-				slot6:Mul(uv4)
+				slot3(slot6)
+				slot6:Mul(slot4)
 
 				return slot6
 			end
 		else
-			slot6 = uv0.New(-uv5, uv2(-2 * (slot1 * slot2 - slot4 * slot3), 1 - 2 * (slot2 * slot2 + slot3 * slot3)), 0)
+			slot6 = slot0.New(-slot5, slot2(-2 * (slot1 * slot2 - slot4 * slot3), 1 - 2 * (slot2 * slot2 + slot3 * slot3)), 0)
 
-			uv3(slot6)
-			slot6:Mul(uv4)
+			slot3(slot6)
+			slot6:Mul(slot4)
 
 			return slot6
 		end
 	end,
 	Forward = function (slot0)
-		return slot0:MulVec3(uv0)
+		return slot0:MulVec3(slot0)
 	end,
 	MulVec3 = function (slot0, slot1)
-		slot2 = uv0.New()
+		slot2 = slot0.New()
 		slot2.x = (1 - (slot0.y * slot0.y * 2 + slot0.z * slot0.z * 2)) * slot1.x + (slot0.x * slot0.y * 2 - slot0.w * slot0.z * 2) * slot1.y + (slot0.x * slot0.z * 2 + slot0.w * slot0.y * 2) * slot1.z
 		slot2.y = (slot0.x * slot0.y * 2 + slot0.w * slot0.z * 2) * slot1.x + (1 - (slot0.x * slot0.x * 2 + slot0.z * slot0.z * 2)) * slot1.y + (slot0.y * slot0.z * 2 - slot0.w * slot0.x * 2) * slot1.z
 		slot2.z = (slot0.x * slot0.z * 2 - slot0.w * slot0.y * 2) * slot1.x + (slot0.y * slot0.z * 2 + slot0.w * slot0.x * 2) * slot1.y + (1 - (slot0.x * slot0.x * 2 + slot0.y * slot0.y * 2)) * slot1.z
@@ -384,17 +395,17 @@ slot24 = ({
 		return slot2
 	end,
 	__mul = function (slot0, slot1)
-		if uv0 == uv1(slot1) then
-			return uv0.New(slot0.w * slot1.x + slot0.x * slot1.w + slot0.y * slot1.z - slot0.z * slot1.y, slot0.w * slot1.y + slot0.y * slot1.w + slot0.z * slot1.x - slot0.x * slot1.z, slot0.w * slot1.z + slot0.z * slot1.w + slot0.x * slot1.y - slot0.y * slot1.x, slot0.w * slot1.w - slot0.x * slot1.x - slot0.y * slot1.y - slot0.z * slot1.z)
-		elseif uv2 == uv1(slot1) then
+		if slot0 == slot1(slot1) then
+			return slot0.New((slot0.w * slot1.x + slot0.x * slot1.w + slot0.y * slot1.z) - slot0.z * slot1.y, (slot0.w * slot1.y + slot0.y * slot1.w + slot0.z * slot1.x) - slot0.x * slot1.z, (slot0.w * slot1.z + slot0.z * slot1.w + slot0.x * slot1.y) - slot0.y * slot1.x, slot0.w * slot1.w - slot0.x * slot1.x - slot0.y * slot1.y - slot0.z * slot1.z)
+		elseif slot2 == slot1(slot1) then
 			return slot0:MulVec3(slot1)
 		end
 	end,
 	__unm = function (slot0)
-		return uv0.New(-slot0.x, -slot0.y, -slot0.z, -slot0.w)
+		return slot0.New(-slot0.x, -slot0.y, -slot0.z, -slot0.w)
 	end,
 	__eq = function (slot0, slot1)
-		return uv0.Dot(slot0, slot1) > 0.999999
+		return slot0:Dot(slot1) > 0.999999
 	end,
 	__tostring = function (slot0)
 		return "[" .. slot0.x .. "," .. slot0.y .. "," .. slot0.z .. "," .. slot0.w .. "]"
@@ -403,10 +414,10 @@ slot24 = ({
 
 function slot25(slot0, slot1)
 	if slot0[1][1] + slot0[2][2] + slot0[3][3] > 0 then
-		slot1.w = 0.5 * uv0(slot2 + 1)
-		slot1.x = (slot0[3][2] - slot0[2][3]) * 0.5 / uv0(slot2 + 1)
-		slot1.y = (slot0[1][3] - slot0[3][1]) * 0.5 / uv0(slot2 + 1)
-		slot1.z = (slot0[2][1] - slot0[1][2]) * 0.5 / uv0(slot2 + 1)
+		slot1.w = 0.5 * slot0(slot2 + 1)
+		slot1.x = (slot0[3][2] - slot0[2][3]) * 0.5 / slot0(slot2 + 1)
+		slot1.y = (slot0[1][3] - slot0[3][1]) * 0.5 / slot0(slot2 + 1)
+		slot1.z = (slot0[2][1] - slot0[1][2]) * 0.5 / slot0(slot2 + 1)
 
 		slot1:SetNormalize()
 	else
@@ -425,11 +436,11 @@ function slot25(slot0, slot1)
 			slot3 = 3
 		end
 
-		slot4[slot3] = 0.5 / uv0(slot7) * (slot0[slot3][slot3] - slot0[uv1[slot3]][uv1[slot3]] - slot0[uv1[uv1[slot3]]][uv1[uv1[slot3]]] + 1)
-		slot4[uv1[slot3]] = (slot0[uv1[slot3]][slot3] + slot0[slot3][uv1[slot3]]) * 0.5 / uv0(slot7)
-		slot4[uv1[uv1[slot3]]] = (slot0[uv1[uv1[slot3]]][slot3] + slot0[slot3][uv1[uv1[slot3]]]) * 0.5 / uv0(slot7)
+		slot4[slot3] = 0.5 / slot0(slot7) * (slot0[slot3][slot3] - slot0[slot1[slot3]][slot1[slot3]] - slot0[slot1[slot1[slot3]]][slot1[slot1[slot3]]] + 1)
+		slot4[slot1[slot3]] = (slot0[slot1[slot3]][slot3] + slot0[slot3][slot1[slot3]]) * 0.5 / slot0(slot7)
+		slot4[slot1[slot1[slot3]]] = (slot0[slot1[slot1[slot3]]][slot3] + slot0[slot3][slot1[slot1[slot3]]]) * 0.5 / slot0(slot7)
 
-		slot1:Set(slot4[1], slot4[2], slot4[3], (slot0[uv1[uv1[slot3]]][uv1[slot3]] - slot0[uv1[slot3]][uv1[uv1[slot3]]]) * 0.5 / uv0(slot7))
+		slot1:Set(slot4[1], slot4[2], slot4[3], (slot0[slot1[slot1[slot3]]][slot1[slot3]] - slot0[slot1[slot3]][slot1[slot1[slot3]]]) * 0.5 / slot0(slot7))
 		slot1:SetNormalize()
 	end
 end
@@ -437,40 +448,52 @@ end
 function slot26(slot0, slot1, slot2)
 	if slot0.x * slot1.x + slot0.y * slot1.y + slot0.z * slot1.z + slot0.w * slot1.w < 0 then
 		slot3 = -slot3
-		slot1 = uv0({
+		slot1 = slot0({
 			x = -slot1.x,
 			y = -slot1.y,
 			z = -slot1.z,
 			w = -slot1.w
-		}, uv1)
+		}, slot1)
 	end
 
 	if slot3 < 0.95 then
-		slot4 = uv2(slot3)
+		slot4 = slot2(slot3)
 
-		uv0({
-			x = slot0.x * uv3((1 - slot2) * slot4) * 1 / uv3(slot4) + slot1.x * uv3(slot2 * slot4) * 1 / uv3(slot4),
-			y = slot0.y * uv3((1 - slot2) * slot4) * 1 / uv3(slot4) + slot1.y * uv3(slot2 * slot4) * 1 / uv3(slot4),
-			z = slot0.z * uv3((1 - slot2) * slot4) * 1 / uv3(slot4) + slot1.z * uv3(slot2 * slot4) * 1 / uv3(slot4),
-			w = slot0.w * uv3((1 - slot2) * slot4) * 1 / uv3(slot4) + slot1.w * uv3(slot2 * slot4) * 1 / uv3(slot4)
-		}, uv1)
+
+		-- Decompilation error in this vicinity:
+		{
+			x = slot0.x * slot3((1 - slot2) * slot4) * 1 / slot3(slot4) + slot1.x * slot3(slot2 * slot4) * 1 / slot3(slot4),
+			y = slot0.y * slot3((1 - slot2) * slot4) * 1 / slot3(slot4) + slot1.y * slot3(slot2 * slot4) * 1 / slot3(slot4),
+			z = slot0.z * slot3((1 - slot2) * slot4) * 1 / slot3(slot4) + slot1.z * slot3(slot2 * slot4) * 1 / slot3(slot4),
+			w = slot0.w * slot3((1 - slot2) * slot4) * 1 / slot3(slot4) + slot1.w * slot3(slot2 * slot4) * 1 / slot3(slot4)
+		}(
+		-- Decompilation error in this vicinity:
+		, slot1)
 
 		return 
+		-- Decompilation error in this vicinity:
+
 	else
-		uv1.SetNormalize(slot0)
-		uv0({
+		slot1.SetNormalize(slot0)
+
+		-- Decompilation error in this vicinity:
+		{
 			x = slot0.x + slot2 * (slot1.x - slot0.x),
 			y = slot0.y + slot2 * (slot1.y - slot0.y),
 			z = slot0.z + slot2 * (slot1.z - slot0.z),
 			w = slot0.w + slot2 * (slot1.w - slot0.w)
-		}, uv1)
+		}(
+		-- Decompilation error in this vicinity:
+		, slot1)
 
 		return 
+		-- Decompilation error in this vicinity:
+
 	end
 end
 
 function slot27(slot0, slot1)
-	return uv0(slot0 - slot1) < 1e-06
+	return slot0(slot0 - slot1) < 1e-06
 end
 
 slot29 = Mathf.PI * 0.5
@@ -478,27 +501,27 @@ slot31 = -0.0001
 slot32 = 2 * Mathf.PI - 0.0001
 
 function slot33(slot0)
-	if slot0.x < uv0 then
-		slot0.x = slot0.x + uv1
-	elseif uv2 < slot0.x then
-		slot0.x = slot0.x - uv1
+	if slot0.x < slot0 then
+		slot0.x = slot0.x + 
+	elseif slot2 < slot0.x then
+		slot0.x = slot0.x - 
 	end
 
-	if slot0.y < uv0 then
-		slot0.y = slot0.y + uv1
-	elseif uv2 < slot0.y then
-		slot0.y = slot0.y - uv1
+	if slot0.y < slot0 then
+		slot0.y = slot0.y + 
+	elseif slot2 < slot0.y then
+		slot0.y = slot0.y - 
 	end
 
-	if slot0.z < uv0 then
-		slot0.z = slot0.z + uv1
-	elseif uv2 < slot0.z then
-		slot0.z = slot0.z + uv1
+	if slot0.z < slot0 then
+		slot0.z = slot0.z + 
+	elseif slot2 < slot0.z then
+		slot0.z = slot0.z + 
 	end
 end
 
 tolua.initget(slot22).identity = function ()
-	return uv0(0, 0, 0, 1)
+	return slot0(0, 0, 0, 1)
 end
 
 tolua.initget(slot22).eulerAngles = ()["ToEulerAngles"]

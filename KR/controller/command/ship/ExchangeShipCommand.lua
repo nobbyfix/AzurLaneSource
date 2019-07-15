@@ -21,13 +21,17 @@ class("ExchangeShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		flash_time = slot4:getExchangeFlashTime()
 	}, 16103, function (slot0)
 		if slot0.result == 0 then
-			uv0:removeItemById(ITEM_ID_SILVER_HOOK, uv1)
+			slot0:removeItemById(ITEM_ID_SILVER_HOOK, slot0.removeItemById)
+
+			slot2 = Ship.New(slot0.ship_info)
+
 			getProxy(BayProxy).addShip(slot1, slot2)
 
-			uv2:getExchangeShipByIndex(uv3).isFetched = true
+			slot3 = slot2:getExchangeShipByIndex(slot2.getExchangeShipByIndex)
+			slot3.isFetched = true
 
-			uv2:updateExchangeShip(uv3, slot3)
-			uv4:sendNotification(GAME.EXCHANGE_SHIP_DONE, Ship.New(slot0.ship_info))
+			slot2:updateExchangeShip(slot3, slot3)
+			slot2.updateExchangeShip:sendNotification(GAME.EXCHANGE_SHIP_DONE, slot2)
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("ship_exchange_erro", slot0.result))
 		end

@@ -40,8 +40,10 @@ class("PutFurnitureCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 
 		slot5:updateFurniture(slot17)
 
+		slot19 = {}
+
 		for slot23, slot24 in pairs(slot16.child) do
-			table.insert({}, {
+			table.insert(slot19, {
 				id = tostring(slot23),
 				x = slot24.x,
 				y = slot24.y

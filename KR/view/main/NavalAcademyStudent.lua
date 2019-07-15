@@ -5,14 +5,14 @@ slot0.ShipState = {
 	Walk = "Walk"
 }
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0._go = slot1
 	slot0._tf = slot1.transform
 
 	slot0:init()
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.chat = slot0._tf:Find("chat")
 	slot0.chatFace = slot0.chat:Find("face")
 	slot0.chatTask = slot0.chat:Find("task")
@@ -23,23 +23,23 @@ function slot0.init(slot0)
 	setActive(slot0.clickArea, true)
 end
 
-function slot0.attach(slot0)
+slot0.attach = function (slot0)
 	slot0.exited = false
 
 	setActive(slot0._go, true)
 	pg.DelegateInfo.New(slot0)
 end
 
-function slot0.setPathFinder(slot0, slot1)
+slot0.setPathFinder = function (slot0, slot1)
 	slot0.pathFinder = slot1
 end
 
-function slot0.setCallBack(slot0, slot1, slot2)
+slot0.setCallBack = function (slot0, slot1, slot2)
 	slot0.onStateChange = slot1
 	slot0.onTask = slot2
 end
 
-function slot0.updateStudent(slot0, slot1, slot2)
+slot0.updateStudent = function (slot0, slot1, slot2)
 	if slot1.hide then
 		setActive(slot0._go, false)
 
@@ -59,31 +59,31 @@ function slot0.updateStudent(slot0, slot1, slot2)
 		slot0._tf.anchoredPosition = Vector2.New(slot0.currentPoint.x, slot0.currentPoint.y)
 
 		PoolMgr.GetInstance():GetSpineChar(slot0.prefab, true, function (slot0)
-			if uv0 ~= uv1.prefab then
-				PoolMgr.GetInstance():ReturnSpineChar(uv0, slot0)
+			if slot0 ~= slot1.prefab then
+				PoolMgr.GetInstance():ReturnSpineChar(slot0, slot0)
 
 				return
 			end
 
-			uv1.model = slot0
-			uv1.model.transform.localScale = Vector3(0.5, 0.5, 1)
-			uv1.model.transform.localPosition = Vector3.zero
+			slot1.model = slot0
+			slot1.model.transform.localScale = Vector3(0.5, 0.5, 1)
+			slot1.model.transform.model.transform.localPosition = Vector3.zero
 
-			uv1.model.transform:SetParent(uv1._tf, false)
-			uv1.model.transform:SetSiblingIndex(1)
+			slot1.model.transform.model.transform.model.transform:SetParent(slot1._tf, false)
+			slot1.model.transform.model.transform.model.transform.SetParent.model.transform:SetSiblingIndex(1)
 
-			uv1.anim = uv1.model:GetComponent(typeof(SpineAnimUI))
+			slot1.model.transform.model.transform.model.transform.SetParent.model.transform.SetSiblingIndex.anim = slot1.model:GetComponent(typeof(SpineAnimUI))
 
-			uv1:updateState(uv2.ShipState.Idle)
-			onButton(uv1, uv1.chat, function ()
-				uv0:onClickShip()
+			slot1.model.transform.model.transform.model.transform.SetParent.model.transform.SetSiblingIndex:updateState(slot2.ShipState.Idle)
+			onButton(onButton, slot1.chat, function ()
+				slot0:onClickShip()
 			end)
 		end)
 	end
 
 	onButton(slot0, slot0.clickArea, function ()
-		if not IsNil(uv0.model) then
-			uv0:updateState(uv1.ShipState.Touch)
+		if not IsNil(slot0.model) then
+			slot0:updateState(slot1.ShipState.Touch)
 		end
 	end)
 
@@ -105,7 +105,7 @@ function slot0.updateStudent(slot0, slot1, slot2)
 	end
 end
 
-function slot0.updateState(slot0, slot1)
+slot0.updateState = function (slot0, slot1)
 	if slot0.state ~= slot1 then
 		slot0.state = slot1
 
@@ -118,44 +118,44 @@ function slot0.updateState(slot0, slot1)
 	end
 end
 
-function slot0.updateAction(slot0)
+slot0.updateAction = function (slot0)
 	if not IsNil(slot0.anim) then
-		if slot0.state == uv0.ShipState.Walk then
+		if slot0.state == slot0.ShipState.Walk then
 			slot0.anim:SetAction("walk", 0)
-		elseif slot0.state == uv0.ShipState.Idle then
+		elseif slot0.state == slot0.ShipState.Idle then
 			slot0.anim:SetAction("stand2", 0)
-		elseif slot0.state == uv0.ShipState.Touch then
+		elseif slot0.state == slot0.ShipState.Touch then
 			slot0.anim:SetAction("touch", 0)
 			slot0.anim:SetActionCallBack(function (slot0)
-				uv0:updateState(uv1.ShipState.Idle)
+				slot0:updateState(slot1.ShipState.Idle)
 			end)
 		end
 	end
 end
 
-function slot0.updateLogic(slot0)
+slot0.updateLogic = function (slot0)
 	slot0:clearLogic()
 
-	if slot0.state == uv0.ShipState.Walk then
+	if slot0.state == slot0.ShipState.Walk then
 		LeanTween.value(slot0._go, 0, 1, Vector3.Distance(slot1, slot2) / 15):setOnUpdate(System.Action_float(function (slot0)
-			uv0._tf.anchoredPosition3D = Vector3.Lerp(uv1, uv2, slot0)
-			uv0._tf.localScale.x = uv0.currentPoint.x < uv0.targetPoint.x and 1 or -1
-			uv0._tf.localScale = uv0._tf.localScale
-			uv0.chat.localScale.x = uv0.currentPoint.x < uv0.targetPoint.x and 1 or -1
-			uv0.chat.localScale = uv0.chat.localScale
-			uv0.chat.anchoredPosition.x = (uv0.currentPoint.x < uv0.targetPoint.x and 1 or -1) * math.abs(uv0.chat.anchoredPosition.x)
-			uv0.chat.anchoredPosition = uv0.chat.anchoredPosition
+			slot0._tf.anchoredPosition3D = Vector3.Lerp(slot0._tf, Vector3.Lerp, slot0)
+			slot0._tf.localScale.x = (slot0.currentPoint.x < slot0.targetPoint.x and 1) or -1
+			slot0._tf.localScale = slot0._tf.localScale
+			slot0.chat.localScale.x = (slot0.currentPoint.x < slot0.targetPoint.x and 1) or -1
+			slot0.chat.localScale = slot0.chat.localScale
+			slot0.chat.anchoredPosition.x = ((slot0.currentPoint.x < slot0.targetPoint.x and 1) or -1) * math.abs(slot0.chat.anchoredPosition.x)
+			slot0.chat.anchoredPosition = slot0.chat.anchoredPosition
 		end)):setOnComplete(System.Action(function ()
-			uv0.currentPoint = uv0.targetPoint
-			uv0.targetPoint = uv0.pathFinder:getPoint(uv0.currentPoint.nexts[math.random(1, #uv0.currentPoint.nexts)])
+			slot0.currentPoint = slot0.targetPoint
+			slot0.targetPoint = slot0.pathFinder:getPoint(slot0.currentPoint.nexts[math.random(1, #slot0.currentPoint.nexts)])
 
-			uv0:updateState(uv1.ShipState.Idle)
+			slot0:updateState(slot1.ShipState.Idle)
 		end))
 
 		return
 	end
 
-	if slot0.state == uv0.ShipState.Idle then
+	if slot0.state == slot0.ShipState.Idle then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 61-76, warpins: 1 ---
@@ -163,7 +163,7 @@ function slot0.updateLogic(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-8, warpins: 1 ---
-			uv0:updateState(uv1.ShipState.Walk)
+			slot0:updateState(slot1.ShipState.Walk)
 
 			return
 			--- END OF BLOCK #0 ---
@@ -181,7 +181,7 @@ function slot0.updateLogic(slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 77-82, warpins: 1 ---
-		if slot0.state == uv0.ShipState.Touch then
+		if slot0.state == slot0.ShipState.Touch then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 83-85, warpins: 1 ---
@@ -198,10 +198,10 @@ function slot0.updateLogic(slot0)
 	end
 end
 
-function slot0.onClickShip(slot0)
+slot0.onClickShip = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if slot0.onTask then
 
 		-- Decompilation error in this vicinity:
@@ -213,17 +213,25 @@ function slot0.onClickShip(slot0)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 8-8, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.clearLogic(slot0)
+slot0.clearLogic = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	LeanTween.cancel(slot0._go)
 
 	if slot0.idleTimer then
@@ -239,17 +247,25 @@ function slot0.clearLogic(slot0)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 14-14, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.clear(slot0)
+slot0.clear = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-38, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0:clearLogic()
 
 	if not IsNil(slot0.model) then
@@ -264,6 +280,14 @@ function slot0.clear(slot0)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 22-38, warpins: 2 ---
 	slot0.shipVO = nil
 	slot0.prefab = nil
 	slot0.model = nil
@@ -274,16 +298,16 @@ function slot0.clear(slot0)
 	slot0.state = nil
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.detach(slot0)
+slot0.detach = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-18, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	if not slot0.exited then
 
 		-- Decompilation error in this vicinity:
@@ -299,8 +323,16 @@ function slot0.detach(slot0)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 18-18, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 

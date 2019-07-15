@@ -1,21 +1,21 @@
 slot0 = class("PrayPoolSuccessView", import("..base.BaseSubView"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "PrayPoolSuccessView"
 end
 
-function slot0.OnInit(slot0)
+slot0.OnInit = function (slot0)
 	slot0:initData()
 	slot0:initUI()
 	slot0:updateUI()
 	slot0:Show()
 end
 
-function slot0.OnDestroy(slot0)
+slot0.OnDestroy = function (slot0)
 	slot0.buildMsgBox:hide()
 end
 
-function slot0.OnBackPress(slot0)
+slot0.OnBackPress = function (slot0)
 	if isActive(slot0.boxTF) then
 		slot0.buildMsgBox:hide()
 
@@ -23,7 +23,7 @@ function slot0.OnBackPress(slot0)
 	end
 end
 
-function slot0.initData(slot0)
+slot0.initData = function (slot0)
 	slot0.prayProxy = getProxy(PrayProxy)
 	slot0.poolType = slot0.prayProxy:getSelectedPoolType()
 	slot0.playerProxy = getProxy(PlayerProxy)
@@ -35,13 +35,13 @@ function slot0.initData(slot0)
 	slot0.buildShipProxy = getProxy(BuildShipProxy)
 end
 
-function slot0.initUI(slot0)
+slot0.initUI = function (slot0)
 	slot0.shipTF = {
 		slot0:findTF("Ship1"),
 		slot0:findTF("Ship2")
 	}
 	slot0.boxTF = slot0:findTF("build_msg")
-	slot0.buildMsgBox = uv0.MsgBox(slot0.boxTF)
+	slot0.buildMsgBox = slot0.MsgBox(slot0.boxTF)
 	slot0.buildBtn = slot0:findTF("BuildBtn")
 	slot0.buildCubeNumText = slot0:findTF("BuildInfo/CubeNum")
 	slot0.buildGoldNumText = slot0:findTF("BuildInfo/GoldNum")
@@ -50,25 +50,25 @@ function slot0.initUI(slot0)
 	slot0.material2 = slot0:findTF("material2")
 
 	onButton(slot0, slot0.buildBtn, function ()
-		uv0.buildMsgBox:show(math.max(1, _.min({
-			math.floor(uv0.playerProxy:getData().gold / pg.ship_data_create_material[pg.activity_ship_create[uv0.poolType].create_id].use_gold),
-			math.floor(uv0.bagProxy:getItemById(uv0.useItem).count / pg.ship_data_create_material[pg.activity_ship_create[uv0.poolType].create_id].number_1),
+		slot0.buildMsgBox:show(math.max(1, _.min({
+			math.floor(slot0.playerProxy:getData().gold / pg.ship_data_create_material[pg.activity_ship_create[slot0.poolType].create_id].use_gold),
+			math.floor(slot0.bagProxy:getItemById(slot0.useItem).count / pg.ship_data_create_material[pg.activity_ship_create[slot0.poolType].create_id].number_1),
 			MAX_BUILD_WORK_COUNT - table.getCount(slot5)
 		})), function (slot0)
-			if uv0 < slot0 or uv1.gold < slot0 * uv2.use_gold or uv3.count < slot0 * uv2.number_1 then
+			if slot0 < slot0 or slot1.gold < slot0 * slot2.use_gold or slot3.count < slot0 * slot2.number_1 then
 				return false
 			end
 
 			return true
 		end, function (slot0)
-			uv0:emit(PrayPoolConst.START_BUILD_SHIP_EVENT, uv1.id, slot0)
+			slot0:emit(PrayPoolConst.START_BUILD_SHIP_EVENT, slot1.id, slot0)
 		end, function (slot0)
-			return i18n("build_ship_tip", slot0, uv0.name, slot0 * uv0.use_gold, slot0 * uv0.number_1, uv1(slot0) and COLOR_GREEN or COLOR_RED)
+			return i18n("build_ship_tip", slot0, slot0.name, slot1, slot0 * slot0.number_1, (slot1(slot0) and COLOR_GREEN) or COLOR_RED)
 		end)
 	end, SFX_UI_BUILDING_STARTBUILDING)
 end
 
-function slot0.updateUI(slot0)
+slot0.updateUI = function (slot0)
 	slot0:updatePaint(slot1)
 
 	slot2 = nil
@@ -80,29 +80,29 @@ function slot0.updateUI(slot0)
 	setText(slot0.buildGoldNumText, pg.ship_data_create_material[pg.activity_ship_create[slot0.poolType].create_id].use_gold)
 end
 
-function slot0.updatePaint(slot0, slot1)
+slot0.updatePaint = function (slot0, slot1)
 	for slot5 = 1, 2, 1 do
 		setPaintingPrefabAsync(slot11, Ship.getPaintingName(slot6), "build", slot12)
-		setImageColor(slot13, uv0.Rarity_To_Light_Color_1[pg.ship_data_statistics[slot1[slot5]].rarity])
-		setImageColor(slot14, uv0.Rarity_To_Light_Color_1[pg.ship_data_statistics[slot1[slot5]].rarity])
-		setImageColor(slot15, uv0.Rarity_To_Light_Color_1[pg.ship_data_statistics[slot1[slot5]].rarity])
-		setImageColor(slot16, uv0.Rarity_To_Light_Color_2[pg.ship_data_statistics[slot1[slot5]].rarity])
+		setImageColor(slot13, slot0.Rarity_To_Light_Color_1[pg.ship_data_statistics[slot1[slot5]].rarity])
+		setImageColor(slot14, slot0.Rarity_To_Light_Color_1[pg.ship_data_statistics[slot1[slot5]].rarity])
+		setImageColor(slot15, slot0.Rarity_To_Light_Color_1[pg.ship_data_statistics[slot1[slot5]].rarity])
+		setImageColor(slot16, slot0.Rarity_To_Light_Color_2[pg.ship_data_statistics[slot1[slot5]].rarity])
 		setText(slot17, slot7)
 		setText(slot18, slot8)
 		setImageSprite(slot0:findTF("Rarity/NumImg", slot10), GetSpriteFromAtlas("ui/praybuildsuccesspage_atlas", "ratio_" .. pg.ship_data_statistics[slot1[slot5]].rarity), true)
 	end
 end
 
-function slot0.MsgBox(slot0)
+slot0.MsgBox = function (slot0)
 	pg.DelegateInfo.New(slot1)
 
 	function slot2(slot0, slot1)
-		uv0.valueTxt.text = slot0
+		slot0.valueTxt.text = slot0
 
 		if slot1 then
-			uv0.text.text = slot1(slot0)
+			slot0.text.text = slot1(slot0)
 		else
-			uv0.text.text = ""
+			slot0.text.text = ""
 		end
 	end
 
@@ -126,40 +126,48 @@ function slot0.MsgBox(slot0)
 			slot0.inited = true
 
 			onButton(slot0, slot0._tf, function ()
-				uv0:hide()
+				slot0:hide()
 			end, SFX_PANEL)
 			onButton(slot0, slot0.cancenlBtn, function ()
-				uv0:hide()
+				slot0:hide()
 			end, SFX_PANEL)
 			onButton(slot0, slot0.confirmBtn, function ()
-				if uv0.onConfirm then
-					uv0.onConfirm(uv0.count)
+				if slot0.onConfirm then
+					slot0.onConfirm(slot0.count)
 				end
 
-				uv0:hide()
+				slot0:hide()
 			end, SFX_PANEL)
 			onButton(slot0, slot0.closeBtn, function ()
-				uv0:hide()
+				slot0:hide()
 			end, SFX_PANEL)
 			onButton(slot0, slot0.minusBtn, function ()
-				if uv0:verifyCount(uv0.count - 1) then
-					uv0.count = math.max(uv0.count - 1, 1)
+				if slot0:verifyCount(slot0.count - 1) then
+					slot0.count = 
+					-- Decompilation error in this vicinity:
+					math.max(slot0.count - 1, 1)
 
-					uv1(uv0.count, uv0.updateText)
+
+					-- Decompilation error in this vicinity:
+					math.max(slot0.count - 1, 1)(slot0.count, slot0.updateText)
 				end
 			end, SFX_PANEL)
 			onButton(slot0, slot0.addBtn, function ()
-				if uv0:verifyCount(uv0.count + 1) then
-					uv0.count = math.min(uv0.count + 1, uv0.max)
+				if slot0:verifyCount(slot0.count + 1) then
+					slot0.count = 
+					-- Decompilation error in this vicinity:
+					math.min(slot0.count + 1, slot0.max)
 
-					uv1(uv0.count, uv0.updateText)
+
+					-- Decompilation error in this vicinity:
+					math.min(slot0.count + 1, slot0.max)(slot0.count, slot0.updateText)
 				end
 			end, SFX_PANEL)
 			onButton(slot0, slot0.maxBtn, function ()
-				if uv0:verifyCount(uv0.max) then
-					uv0.count = uv0.max
+				if slot0:verifyCount(slot0.max) then
+					slot0.count = slot0.max
 
-					uv1(uv0.count, uv0.updateText)
+					slot0.max(slot0.count, slot0.updateText)
 				end
 			end, SFX_PANEL)
 		end,
@@ -181,8 +189,8 @@ function slot0.MsgBox(slot0)
 			slot0.count = 1
 			slot0.updateText = slot4
 
-			uv0(slot0.count, slot4)
-			setActive(uv1._go, true)
+			slot0(slot0.count, slot4)
+			setActive(slot1._go, true)
 
 			if not slot0.inited then
 				slot0:init()
@@ -199,7 +207,7 @@ function slot0.MsgBox(slot0)
 				slot0.max = 1
 				slot0.verify = nil
 
-				setActive(uv0._go, false)
+				setActive(slot0._go, false)
 				pg.UIMgr.GetInstance():UnblurPanel(slot0._tf, slot0.buildUI)
 			end
 		end,

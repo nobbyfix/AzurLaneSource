@@ -2,11 +2,11 @@ slot0 = class("ShipExpLayer", import("..base.BaseUI"))
 slot0.TypeDefault = 0
 slot0.TypeClass = 1
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "ShipExpUI"
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0._grade = slot0:findTF("grade")
 	slot0._gradeLabel = slot0:findTF("label", slot0._grade)
 	slot0._levelText = slot0:findTF("Text", slot0._grade)
@@ -21,12 +21,12 @@ function slot0.init(slot0)
 	setActive(slot0._topBar, false)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0.tweenTFs = {}
 	slot0.timerId = {}
 
 	onButton(slot0, slot0._skipBtn, function ()
-		uv0:skip()
+		slot0:skip()
 	end, SFX_CONFIRM)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf, false, {
 		weight = LayerWeightConst.THIRD_LAYER
@@ -34,15 +34,15 @@ function slot0.didEnter(slot0)
 	slot0:display()
 end
 
-function slot0.display(slot0)
+slot0.display = function (slot0)
 	setActive(slot0._grade, true)
 	setText(slot0._levelText, slot0.contextData.title)
 
-	if slot0.contextData.type == uv0.TypeClass then
+	if slot0.contextData.type == slot0.TypeClass then
 		setActive(slot0._gradeLabel, false)
 	else
 		setActive(slot0._gradeLabel, true)
-		LoadImageSpriteAsync("battlescore/" .. (slot0.contextData.isCri and "grade_label_task_perfect" or "grade_label_task_complete"), slot0._gradeLabel, true)
+		LoadImageSpriteAsync("battlescore/" .. ((slot0.contextData.isCri and "grade_label_task_perfect") or "grade_label_task_complete"), slot0._gradeLabel, true)
 	end
 
 	setActive(slot0._topBar, slot0.contextData.top)
@@ -59,11 +59,10 @@ function slot0.display(slot0)
 	slot0._nameTxts = {}
 	slot0._skipExp = {}
 	slot0._maxRightDelay = 0
-	slot2 = {
-		[slot7.id] = slot7
-	}
+	slot2 = {}
 
 	for slot6, slot7 in ipairs(slot0.contextData.newShips) do
+		slot2[slot7.id] = slot7
 	end
 
 	slot4 = 0.5
@@ -89,51 +88,51 @@ function slot0.display(slot0)
 		slot0._maxRightDelay = math.max(slot0._maxRightDelay, slot2[slot9.id].level - slot9.level + slot8 * 0.5)
 
 		function slot22()
-			SetActive(uv0, true)
+			SetActive(SetActive, true)
 
-			slot1 = uv2:getLevelExpConfig().exp
-			uv3:GetComponent(typeof(Image)).fillAmount = uv1.exp / uv1:getLevelExpConfig().exp
+			slot3:GetComponent(typeof(Image)).fillAmount = slot1.exp / SetActive:getLevelExpConfig().exp
 
-			if uv1.level < uv2.level then
-				for slot6 = uv1.level, uv2.level - 1, 1 do
-					slot2 = 0 + uv1:getLevelExpConfig(slot6).exp
+			if slot1.level < slot2.level then
+				for slot6 = slot1.level, slot2.level - 1, 1 do
+					slot2 = slot2 + slot1:getLevelExpConfig(slot6).exp
 				end
 
-				uv4:PlayAnimation(uv5, 0, slot2 + uv2.exp - uv1.exp, 1, 0, function (slot0)
-					setText(uv0, "+" .. math.ceil(slot0))
+				slot4:PlayAnimation(slot5, 0, (slot2 + slot2.exp) - slot1.exp, 1, 0, function (slot0)
+					setText(slot0, "+" .. math.ceil(slot0))
 				end)
 
 				function slot3(slot0)
-					SetActive(uv0, true)
-					SetActive(uv1, true)
-					LeanTween.moveY(rtf(uv0), uv0.localPosition.y + 30, 0.5):setOnComplete(System.Action(function ()
-						SetActive(uv0, false)
+					SetActive(slot0, true)
+					SetActive(SetActive, true)
+					LeanTween.moveY(rtf(slot0), slot0.localPosition.y + 30, 0.5):setOnComplete(System.Action(function ()
+						SetActive(SetActive, false)
 
-						uv0.localPosition = uv1
+						SetActive.localPosition = SetActive
 
 						playSoundEffect(SFX_BOAT_LEVEL_UP)
 					end))
-					setText(uv2, slot0)
-					table.insert(uv3.tweenTFs, uv0)
+					setText(setText, slot0)
+					table.insert(setText.tweenTFs, slot0)
 				end
 
-				LeanTween.value(go(uv5), uv1.exp / slot0, 1, 0.5):setOnUpdate(System.Action_float(function (slot0)
-					uv0:GetComponent(typeof(Image)).fillAmount = slot0
+				LeanTween.value(go(go), slot1.exp / slot0, 1, 0.5):setOnUpdate(System.Action_float(function (slot0)
+					slot0:GetComponent(typeof(Image)).fillAmount = slot0
 				end)):setOnComplete(System.Action(function ()
-					uv1(uv0.level + 1)
+					slot1(slot0.level + 1)
 
+					slot0 = slot0.level + 1 + 1
 					slot1 = 0.1
 
-					while uv0.level + 1 + 1 <= uv2.level do
+					while slot0 <= slot2.level do
 						slot2 = slot0
 
-						LeanTween.value(go(uv3), 0, 1, 1):setOnUpdate(System.Action_float(function (slot0)
-							uv0:GetComponent(typeof(Image)).fillAmount = slot0
+						LeanTween.value(go(slot3), 0, 1, 1):setOnUpdate(System.Action_float(function (slot0)
+							slot0:GetComponent(typeof(Image)).fillAmount = slot0
 						end)):setDelay(slot1):setOnComplete(System.Action(function ()
 
 							-- Decompilation error in this vicinity:
 							--- BLOCK #0 1-4, warpins: 1 ---
-							uv0(uv1)
+							slot0(slot1)
 
 							return
 							--- END OF BLOCK #0 ---
@@ -146,16 +145,16 @@ function slot0.display(slot0)
 						slot0 = slot0 + 1
 					end
 
-					uv5.timerId[uv0.id] = pg.TimeMgr:GetInstance():AddTimer("delayTimer", slot1, 0, function ()
+					slot5.timerId[slot0.id] = pg.TimeMgr:GetInstance():AddTimer("delayTimer", slot1, 0, function ()
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 1-38, warpins: 1 ---
-						if uv0.level == uv0:getMaxLevel() then
+						--- BLOCK #0 1-8, warpins: 1 ---
+						if slot0.level == slot0:getMaxLevel() then
 
 							-- Decompilation error in this vicinity:
 							--- BLOCK #0 9-23, warpins: 1 ---
-							uv1:GetComponent(typeof(Image)).fillAmount = 1
-							uv2._skipExp[uv3] = false
+							slot1:GetComponent(typeof(Image)).fillAmount = 1
+							slot2._skipExp[Image] = false
 
 							return
 							--- END OF BLOCK #0 ---
@@ -164,12 +163,20 @@ function slot0.display(slot0)
 
 						end
 
-						uv2:PlayAnimation(uv4, 0, uv0.exp / uv5, 0.5, 0, function (slot0)
+						--- END OF BLOCK #0 ---
+
+						FLOW; TARGET BLOCK #1
+
+
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #1 24-37, warpins: 1 ---
+						slot2:PlayAnimation(slot4, 0, slot0.exp / slot5, 0.5, 0, function (slot0)
 
 							-- Decompilation error in this vicinity:
 							--- BLOCK #0 1-14, warpins: 1 ---
-							uv0:GetComponent(typeof(Image)).fillAmount = slot0
-							uv1._skipExp[uv2] = false
+							slot0:GetComponent(typeof(Image)).fillAmount = slot0
+							slot0.GetComponent(typeof(Image))._skipExp[slot0] = false
 
 							return
 							--- END OF BLOCK #0 ---
@@ -179,25 +186,33 @@ function slot0.display(slot0)
 						end)
 
 						return
-						--- END OF BLOCK #0 ---
+						--- END OF BLOCK #1 ---
+
+						FLOW; TARGET BLOCK #2
+
+
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #2 38-38, warpins: 2 ---
+						--- END OF BLOCK #2 ---
 
 
 
 					end)
 				end))
-				table.insert(uv4.tweenTFs, uv5)
+				table.insert(slot4.tweenTFs, )
 
 				return
 			end
 
-			setText(uv6, "+" .. math.ceil(uv2:getExp() - uv1:getExp()))
+			setText(slot6, "+" .. math.ceil(slot2:getExp() - slot1:getExp()))
 
-			if uv1.level == uv1:getMaxLevel() then
+			if slot1.level == slot1:getMaxLevel() then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 122-137, warpins: 1 ---
-				uv3:GetComponent(typeof(Image)).fillAmount = 1
-				uv4._skipExp[uv10] = false
+				slot3:GetComponent(typeof(Image)).fillAmount = 1
+				slot4._skipExp[slot10] = false
 
 				return
 				--- END OF BLOCK #0 ---
@@ -206,12 +221,12 @@ function slot0.display(slot0)
 
 			end
 
-			uv4:PlayAnimation(uv5, uv1.exp / slot0, uv2.exp / slot0, 1, 0, function (slot0)
+			slot4:PlayAnimation(slot5, slot1.exp / slot0, slot2.exp / slot0, 1, 0, function (slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-14, warpins: 1 ---
-				uv0:GetComponent(typeof(Image)).fillAmount = slot0
-				uv1._skipExp[uv2] = false
+				slot0:GetComponent(typeof(Image)).fillAmount = slot0
+				slot0.GetComponent(typeof(Image))._skipExp[slot0] = false
 
 				return
 				--- END OF BLOCK #0 ---
@@ -224,20 +239,20 @@ function slot0.display(slot0)
 		slot0._skipExp[slot8] = function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-147, warpins: 1 ---
-			LeanTween.cancel(go(uv0))
-			LeanTween.cancel(go(uv1))
-			SetActive(uv1, true)
-			SetActive(uv2, true)
-			setText(uv3, uv4.level)
+			--- BLOCK #0 1-33, warpins: 1 ---
+			LeanTween.cancel(go(LeanTween.cancel))
+			LeanTween.cancel(go(go))
+			SetActive(go, true)
+			SetActive(true, true)
+			setText(slot3, slot4.level)
 
-			if uv5.level == uv5:getMaxLevel() then
+			if slot5.level == slot5:getMaxLevel() then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 34-60, warpins: 1 ---
-				setText(uv6, "+" .. math.ceil(uv4:getExp() - uv5:getExp()))
+				setText(slot6, "+" .. math.ceil(slot4:getExp() - slot4:getExp()))
 
-				uv7:GetComponent(typeof(Image)).fillAmount = 1
+				slot7:GetComponent(typeof(Image)).fillAmount = 1
 				--- END OF BLOCK #0 ---
 
 
@@ -245,24 +260,42 @@ function slot0.display(slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 61-123, warpins: 1 ---
-				if uv5.level < uv4.level then
+				--- BLOCK #0 61-66, warpins: 1 ---
+				if slot5.level < slot4.level then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 67-94, warpins: 1 ---
-					for slot4 = uv5.level, uv4.level - 1, 1 do
+					--- BLOCK #0 67-74, warpins: 1 ---
+					slot0 = 0
+
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 75-82, warpins: 0 ---
+					for slot4 = slot5.level, slot4.level - 1, 1 do
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 75-82, warpins: 2 ---
-						slot0 = 0 + uv5:getLevelExpConfig(slot4).exp
+						slot0 = slot0 + slot5:getLevelExpConfig(slot4).exp
 						--- END OF BLOCK #0 ---
 
 
 
 					end
 
-					setText(uv6, "+" .. slot0 + uv4.exp - uv5.exp)
-					--- END OF BLOCK #0 ---
+					--- END OF BLOCK #1 ---
+
+					FLOW; TARGET BLOCK #2
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #2 83-94, warpins: 1 ---
+					setText(slot6, "+" .. (slot0 + slot4.exp) - slot5.exp)
+					--- END OF BLOCK #2 ---
 
 
 
@@ -270,27 +303,43 @@ function slot0.display(slot0)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 95-107, warpins: 1 ---
-					setText(uv6, "+" .. math.ceil(uv4.exp - uv5.exp))
+					setText(slot6, "+" .. math.ceil(slot4.exp - slot5.exp))
 					--- END OF BLOCK #0 ---
 
 
 
 				end
 
-				uv7:GetComponent(typeof(Image)).fillAmount = uv4.exp / uv4:getLevelExpConfig().exp
 				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 108-123, warpins: 2 ---
+				slot7:GetComponent(typeof(Image)).fillAmount = slot4.exp / slot4:getLevelExpConfig().exp
+				--- END OF BLOCK #1 ---
 
 
 
 			end
 
-			SetActive(uv0, false)
+			--- END OF BLOCK #0 ---
 
-			uv1:GetComponent("CanvasGroup").alpha = 1
-			rtf(uv1).anchoredPosition = Vector2(rtf(uv1).anchoredPosition.x, 0)
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 124-147, warpins: 2 ---
+			SetActive(SetActive, false)
+
+			SetActive:GetComponent("CanvasGroup").alpha = 1
+			rtf(1).anchoredPosition = Vector2(rtf(slot1).anchoredPosition.x, 0)
 
 			return
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #1 ---
 
 
 
@@ -303,8 +352,8 @@ function slot0.display(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-7, warpins: 1 ---
-			setActive(uv0, true)
-			uv1()
+			setActive(setActive, true)
+			setActive()
 
 			return
 			--- END OF BLOCK #0 ---
@@ -317,7 +366,7 @@ function slot0.display(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-3, warpins: 1 ---
-			uv0.alpha = slot0
+			slot0.alpha = slot0
 
 			return
 			--- END OF BLOCK #0 ---
@@ -328,10 +377,10 @@ function slot0.display(slot0)
 	end
 end
 
-function slot0.skip(slot0)
+slot0.skip = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-30, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	if _.any(slot0._skipExp, function (slot0)
 
 		-- Decompilation error in this vicinity:
@@ -344,11 +393,19 @@ function slot0.skip(slot0)
 	end) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 8-24, warpins: 1 ---
+		--- BLOCK #0 8-12, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 13-23, warpins: 0 ---
 		for slot4 = 1, #slot0._skipExp, 1 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 13-23, warpins: 2 ---
+			--- BLOCK #0 13-16, warpins: 2 ---
 			if slot0._skipExp[slot4] then
 
 				-- Decompilation error in this vicinity:
@@ -363,10 +420,26 @@ function slot0.skip(slot0)
 			end
 			--- END OF BLOCK #0 ---
 
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 23-23, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
 
 
 		end
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 24-24, warpins: 1 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -381,14 +454,22 @@ function slot0.skip(slot0)
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 30-30, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot0.PlayAnimation(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot0.PlayAnimation = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-25, warpins: 1 ---
@@ -396,7 +477,7 @@ function slot0.PlayAnimation(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		uv0(slot0)
+		slot0(slot0)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -413,14 +494,22 @@ function slot0.PlayAnimation(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-66, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-20, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.tweenTFs) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 5-20, warpins: 1 ---
+		--- BLOCK #0 5-12, warpins: 1 ---
 		if LeanTween.isTweening(go(slot5)) then
 
 			-- Decompilation error in this vicinity:
@@ -433,25 +522,73 @@ function slot0.willExit(slot0)
 		end
 		--- END OF BLOCK #0 ---
 
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 19-20, warpins: 3 ---
+		--- END OF BLOCK #1 ---
+
 
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 21-26, warpins: 1 ---
 	slot0.tweenTFs = nil
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 27-37, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.timerId) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 27-37, warpins: 1 ---
+		--- BLOCK #0 27-35, warpins: 1 ---
 		pg.TimeMgr:GetInstance():RemoveTimer(slot5)
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 36-37, warpins: 2 ---
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 38-44, warpins: 1 ---
 	slot0.timerId = nil
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 45-55, warpins: 0 ---
 	for slot4 = #slot0._nameTxts, 1, -1 do
 
 		-- Decompilation error in this vicinity:
@@ -464,12 +601,20 @@ function slot0.willExit(slot0)
 
 	end
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 56-66, warpins: 1 ---
 	slot0._nameTxts = nil
 
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #6 ---
 
 
 

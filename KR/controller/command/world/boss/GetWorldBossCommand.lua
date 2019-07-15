@@ -9,7 +9,7 @@ class("GetWorldBossCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			getProxy(WorldProxy).GetWorld(slot1).worldBossProxy = slot3
 
 			slot3:Setup(slot0)
-			uv0:sendNotification(GAME.WORLD_GET_BOSS_DONE)
+			slot0:sendNotification(GAME.WORLD_GET_BOSS_DONE)
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("world_activate_error_", slot0.result))
 		end

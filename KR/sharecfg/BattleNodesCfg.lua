@@ -401,3 +401,5 @@ pg.BattleNodesCfg = {
 		_parallel = false
 	}
 }
+
+return

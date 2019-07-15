@@ -13,25 +13,25 @@ class("EndToLearnCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			slot8 = {}
 
 			_.each(slot0.awards, function (slot0)
-				uv0[slot0.ship_id] = slot0.exp
-				uv1[slot0.ship_id] = slot0.energy
+				slot0[slot0.ship_id] = slot0.exp
+				slot0[slot0.ship_id] = slot0.energy
 			end)
 			_.each(slot10, function (slot0)
-				slot0:addExp(uv0[slot0.id] or 0)
-				slot0:cosumeEnergy(uv1[slot0.id] or 0)
-				uv2:updateShip(slot0)
+				slot0:addExp(slot0[slot0.id] or 0)
+				slot0:addExp(slot0.addExp[slot0.id] or 0)
+				slot0:updateShip(slot0)
 			end)
 
 			slot3.students = {}
 			slot3.timestamp = 0
 
 			slot1:setCourse(slot3)
-			uv0:sendNotification(GAME.CLASS_STOP_COURSE_DONE, {
+			slot0:sendNotification(GAME.CLASS_STOP_COURSE_DONE, {
 				title = slot3:getConfig("name_show"),
 				oldProficiency = slot3.proficiency,
 				newProficiency = math.max(slot3.proficiency - slot0.proficiency, 0),
 				oldStudents = _.map(slot3.students, function (slot0)
-					return uv0:getShipById(slot0)
+					return slot0:getShipById(slot0)
 				end),
 				newStudents = Clone(slot9)
 			})

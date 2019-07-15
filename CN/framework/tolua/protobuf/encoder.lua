@@ -1,6 +1,7 @@
 slot1 = table
 slot2 = ipairs
 slot3 = assert
+slot4 = require("pb")
 slot5 = require("protobuf.wire_format")
 
 module("protobuf.encoder")
@@ -90,7 +91,7 @@ function _SignedVarintSize(slot0)
 end
 
 function _TagSize(slot0)
-	return _VarintSize(uv0.PackTag(slot0, 0))
+	return _VarintSize(slot0:PackTag(0))
 end
 
 function _SimpleSizer(slot0)
@@ -101,26 +102,28 @@ function _SimpleSizer(slot0)
 			slot4 = _VarintSize
 
 			return function (slot0)
-				for slot5, slot6 in uv0(slot0) do
-					slot1 = 0 + uv1(slot6)
+				slot1 = 0
+
+				for slot5, slot6 in slot0(slot0) do
+					slot1 = slot1 + slot1(slot6)
 				end
 
-				return slot1 + uv2(slot1) + uv3
+				return slot1 + slot2(slot1) + slot1
 			end
 			return
 		end
 
 		if slot1 then
 			return function (slot0)
-				for slot5, slot6 in uv1(slot0) do
-					slot1 = uv0 * #slot0 + uv2(slot6)
+				for slot5, slot6 in slot1(slot0) do
+					slot1 = slot1 + slot2(slot6)
 				end
 
 				return slot1
 			end
 		else
 			return function (slot0)
-				return uv0 + uv1(slot0)
+				return slot0 + slot1(slot0)
 			end
 		end
 	end
@@ -134,26 +137,28 @@ function _ModifiedSizer(slot0, slot1)
 			slot4 = _VarintSize
 
 			return function (slot0)
-				for slot5, slot6 in uv0(slot0) do
-					slot1 = 0 + uv1(uv2(slot6))
+				slot1 = 0
+
+				for slot5, slot6 in slot0(slot0) do
+					slot1 = slot1 + slot1(slot2(slot6))
 				end
 
-				return slot1 + uv3(slot1) + uv4
+				return slot1 + slot3(slot1) + slot4
 			end
 			return
 		end
 
 		if slot1 then
 			return function (slot0)
-				for slot5, slot6 in uv1(slot0) do
-					slot1 = uv0 * #slot0 + uv2(uv3(slot6))
+				for slot5, slot6 in slot1(slot0) do
+					slot1 = slot1 + slot2(slot3(slot6))
 				end
 
 				return slot1
 			end
 		else
 			return function (slot0)
-				return uv0 + uv1(uv2(slot0))
+				return slot0 + slot1(slot1(slot0))
 			end
 		end
 	end
@@ -167,32 +172,32 @@ function _FixedSizer(slot0)
 			slot4 = _VarintSize
 
 			return function (slot0)
-				return #slot0 * uv0 + uv1(slot1) + uv2
+				return #slot0 * slot0 + slot1(slot1) + 
 			end
 			return
 		end
 
 		if slot1 then
-			slot4 = uv0 + slot3
+			slot4 = slot0 + slot3
 
 			return function (slot0)
-				return #slot0 * uv0
+				return #slot0 * slot0
 			end
 		else
-			slot4 = uv0 + slot3
+			slot4 = slot0 + slot3
 
 			return function (slot0)
-				return uv0
+				return slot0
 			end
 		end
 	end
 end
 
 Int32Sizer = _SimpleSizer(_SignedVarintSize)
-Int64Sizer = _SimpleSizer(require("pb").signed_varint_size)
+Int64Sizer = _SimpleSizer(slot4.signed_varint_size)
 EnumSizer = Int32Sizer
 UInt32Sizer = _SimpleSizer(_VarintSize)
-UInt64Sizer = _SimpleSizer(require("pb").varint_size)
+UInt64Sizer = _SimpleSizer(slot4.varint_size)
 SInt32Sizer = _ModifiedSizer(_SignedVarintSize, slot5.ZigZagEncode32)
 SInt64Sizer = SInt32Sizer
 Fixed32Sizer = _FixedSizer(4)
@@ -209,15 +214,15 @@ function StringSizer(slot0, slot1, slot2)
 
 	if slot1 then
 		return function (slot0)
-			for slot5, slot6 in uv1(slot0) do
-				slot1 = uv0 * #slot0 + uv2(#slot6) + #slot6
+			for slot5, slot6 in slot1(slot0) do
+				slot1 = slot1 + slot2(#slot6) + #slot6
 			end
 
 			return slot1
 		end
 	else
 		return function (slot0)
-			return uv0 + uv1(#slot0) + #slot0
+			return slot0 + slot1(#slot0) + #slot0
 		end
 	end
 end
@@ -228,15 +233,15 @@ function BytesSizer(slot0, slot1, slot2)
 
 	if slot1 then
 		return function (slot0)
-			for slot5, slot6 in uv1(slot0) do
-				slot1 = uv0 * #slot0 + uv2(#slot6) + #slot6
+			for slot5, slot6 in slot1(slot0) do
+				slot1 = slot1 + slot2(#slot6) + #slot6
 			end
 
 			return slot1
 		end
 	else
 		return function (slot0)
-			return uv0 + uv1(#slot0) + #slot0
+			return slot0 + slot1(#slot0) + #slot0
 		end
 	end
 end
@@ -247,66 +252,70 @@ function MessageSizer(slot0, slot1, slot2)
 
 	if slot1 then
 		return function (slot0)
-			for slot5, slot6 in uv1(slot0) do
-				slot1 = uv0 * #slot0 + uv2(slot6:ByteSize()) + slot6.ByteSize()
+			for slot5, slot6 in slot1(slot0) do
+				slot1 = slot1 + slot2(slot6:ByteSize()) + slot6.ByteSize()
 			end
 
 			return slot1
 		end
 	else
 		return function (slot0)
-			return uv0 + uv1(slot0:ByteSize()) + slot0.ByteSize()
+			slot1 = slot0:ByteSize()
+
+			return slot0 + slot1(slot1) + slot1
 		end
 	end
 end
 
 function _VarintBytes(slot0)
-	uv0(slot2, slot0)
+	slot0(slot2, slot0)
 
-	return uv1.concat({})
+	return slot1.concat({})
 end
 
 function TagBytes(slot0, slot1)
-	return _VarintBytes(uv0.PackTag(slot0, slot1))
+	return _VarintBytes(slot0:PackTag(slot1))
 end
 
 function _SimpleEncoder(slot0, slot1, slot2)
 	return function (slot0, slot1, slot2)
 		if slot2 then
-			slot3 = TagBytes(slot0, uv0.WIRETYPE_LENGTH_DELIMITED)
-			slot4 = uv1
+			slot3 = TagBytes(slot0, slot0.WIRETYPE_LENGTH_DELIMITED)
+			slot4 = slot1
 
 			return function (slot0, slot1)
-				slot0(uv0)
+				slot0(slot0)
 
-				for slot6, slot7 in uv1(slot1) do
-					slot2 = 0 + uv2(slot7)
+				slot2 = 0
+
+				for slot6, slot7 in slot1(slot1) do
+					slot2 = slot2 + slot2(slot7)
 				end
 
-				uv3(slot0, slot2)
+				slot3(slot0, slot2)
 
 				for slot6 in slot1 do
-					uv4(slot0, slot6)
+					slot4(slot0, slot6)
 				end
 			end
 			return
 		end
 
 		if slot1 then
-			slot3 = TagBytes(slot0, uv5)
+			slot3 = TagBytes(slot0, slot5)
 
 			return function (slot0, slot1)
-				for slot5, slot6 in uv0(slot1) do
-					slot0(uv1)
-					uv2(slot0, slot6)
+				for slot5, slot6 in slot0(slot1) do
+					slot0(slot1)
+					slot2(slot0, slot6)
 				end
 			end
 		else
-			slot3 = TagBytes(slot0, uv5)
+			slot3 = TagBytes(slot0, slot5)
 
 			return function (slot0, slot1)
-				slot0(uv0)
-				uv1(slot0, slot1)
+				slot0(slot0)
+				slot1(slot0, slot1)
 			end
 		end
 	end
@@ -315,40 +324,42 @@ end
 function _ModifiedEncoder(slot0, slot1, slot2, slot3)
 	return function (slot0, slot1, slot2)
 		if slot2 then
-			slot3 = TagBytes(slot0, uv0.WIRETYPE_LENGTH_DELIMITED)
-			slot4 = uv1
+			slot3 = TagBytes(slot0, slot0.WIRETYPE_LENGTH_DELIMITED)
+			slot4 = slot1
 
 			return function (slot0, slot1)
-				slot0(uv0)
+				slot0(slot0)
 
-				for slot6, slot7 in uv1(slot1) do
-					slot2 = 0 + uv2(uv3(slot7))
+				slot2 = 0
+
+				for slot6, slot7 in slot1(slot1) do
+					slot2 = slot2 + slot2(slot3(slot7))
 				end
 
-				uv4(slot0, slot2)
+				slot4(slot0, slot2)
 
-				for slot6, slot7 in uv1(slot1) do
-					uv5(slot0, uv3(slot7))
+				for slot6, slot7 in slot1(slot1) do
+					slot5(slot0, slot3(slot7))
 				end
 			end
 			return
 		end
 
 		if slot1 then
-			slot3 = TagBytes(slot0, uv6)
+			slot3 = TagBytes(slot0, slot6)
 
 			return function (slot0, slot1)
-				for slot5, slot6 in uv0(slot1) do
-					slot0(uv1)
-					uv2(slot0, uv3(slot6))
+				for slot5, slot6 in slot0(slot1) do
+					slot0(slot1)
+					slot2(slot0, slot3(slot6))
 				end
 			end
 		else
-			slot3 = TagBytes(slot0, uv6)
+			slot3 = TagBytes(slot0, slot6)
 
 			return function (slot0, slot1)
-				slot0(uv0)
-				uv1(slot0, uv2(slot1))
+				slot0(slot0)
+				slot1(slot0, slot1(slot1))
 			end
 		end
 	end
@@ -356,38 +367,38 @@ end
 
 function _StructPackEncoder(slot0, slot1, slot2)
 	return function (slot0, slot1, slot2)
-		slot3 = uv0.struct_pack
+		slot3 = slot0.struct_pack
 
 		if slot2 then
-			slot4 = TagBytes(slot0, uv1.WIRETYPE_LENGTH_DELIMITED)
-			slot5 = uv2
+			slot4 = TagBytes(slot0, slot1.WIRETYPE_LENGTH_DELIMITED)
+			slot5 = slot2
 
 			return function (slot0, slot1)
-				slot0(uv0)
-				uv1(slot0, #slot1 * uv2)
+				slot0(slot0)
+				slot1(slot0, #slot1 * slot1)
 
-				for slot5, slot6 in uv3(slot1) do
-					uv4(slot0, uv5, slot6)
+				for slot5, slot6 in slot0(slot1) do
+					slot4(slot0, slot5, slot6)
 				end
 			end
 			return
 		end
 
 		if slot1 then
-			slot4 = TagBytes(slot0, uv6)
+			slot4 = TagBytes(slot0, slot6)
 
 			return function (slot0, slot1)
-				for slot5, slot6 in uv0(slot1) do
-					slot0(uv1)
-					uv2(slot0, uv3, slot6)
+				for slot5, slot6 in slot0(slot1) do
+					slot0(slot1)
+					slot2(slot0, slot3, slot6)
 				end
 			end
 		else
-			slot4 = TagBytes(slot0, uv6)
+			slot4 = TagBytes(slot0, slot6)
 
 			return function (slot0, slot1)
-				slot0(uv0)
-				uv1(slot0, uv2, slot1)
+				slot0(slot0)
+				slot1(slot0, slot1, slot1)
 			end
 		end
 	end
@@ -412,18 +423,18 @@ function BoolEncoder(slot0, slot1, slot2)
 	slot4 = ""
 
 	if slot2 then
-		slot5 = TagBytes(slot0, uv0.WIRETYPE_LENGTH_DELIMITED)
-		slot6 = uv1
+		slot5 = TagBytes(slot0, slot0.WIRETYPE_LENGTH_DELIMITED)
+		slot6 = slot1
 
 		return function (slot0, slot1)
-			slot0(uv0)
-			uv1(slot0, #slot1)
+			slot0(slot0)
+			slot1(slot0, #slot1)
 
-			for slot5, slot6 in uv2(slot1) do
+			for slot5, slot6 in slot1(slot1) do
 				if slot6 then
-					slot0(uv3)
+					slot0(slot3)
 				else
-					slot0(uv4)
+					slot0(slot4)
 				end
 			end
 		end
@@ -431,50 +442,50 @@ function BoolEncoder(slot0, slot1, slot2)
 	end
 
 	if slot1 then
-		slot5 = TagBytes(slot0, uv0.WIRETYPE_VARINT)
+		slot5 = TagBytes(slot0, slot0.WIRETYPE_VARINT)
 
 		return function (slot0, slot1)
-			for slot5, slot6 in uv0(slot1) do
-				slot0(uv1)
+			for slot5, slot6 in slot0(slot1) do
+				slot0(slot1)
 
 				if slot6 then
-					slot0(uv2)
+					slot0(slot2)
 				else
-					slot0(uv3)
+					slot0(slot3)
 				end
 			end
 		end
 	else
-		slot5 = TagBytes(slot0, uv0.WIRETYPE_VARINT)
+		slot5 = TagBytes(slot0, slot0.WIRETYPE_VARINT)
 
 		return function (slot0, slot1)
-			slot0(uv0)
+			slot0(slot0)
 
 			if slot1 then
-				return slot0(uv1)
+				return slot0(slot1)
 			end
 
-			return slot0(uv2)
+			return slot0(slot0)
 		end
 	end
 end
 
 function StringEncoder(slot0, slot1, slot2)
-	slot3 = TagBytes(slot0, uv0.WIRETYPE_LENGTH_DELIMITED)
-	slot4 = uv1
+	slot3 = TagBytes(slot0, slot0.WIRETYPE_LENGTH_DELIMITED)
+	slot4 = slot1
 
 	if slot1 then
 		return function (slot0, slot1)
-			for slot5, slot6 in uv0(slot1) do
-				slot0(uv1)
-				uv2(slot0, #slot6)
+			for slot5, slot6 in slot0(slot1) do
+				slot0(slot1)
+				slot2(slot0, #slot6)
 				slot0(slot6)
 			end
 		end
 	else
 		return function (slot0, slot1)
-			slot0(uv0)
-			uv1(slot0, #slot1)
+			slot0(slot0)
+			slot1(slot0, #slot1)
 
 			return slot0(slot1)
 		end
@@ -482,21 +493,21 @@ function StringEncoder(slot0, slot1, slot2)
 end
 
 function BytesEncoder(slot0, slot1, slot2)
-	slot3 = TagBytes(slot0, uv0.WIRETYPE_LENGTH_DELIMITED)
-	slot4 = uv1
+	slot3 = TagBytes(slot0, slot0.WIRETYPE_LENGTH_DELIMITED)
+	slot4 = slot1
 
 	if slot1 then
 		return function (slot0, slot1)
-			for slot5, slot6 in uv0(slot1) do
-				slot0(uv1)
-				uv2(slot0, #slot6)
+			for slot5, slot6 in slot0(slot1) do
+				slot0(slot1)
+				slot2(slot0, #slot6)
 				slot0(slot6)
 			end
 		end
 	else
 		return function (slot0, slot1)
-			slot0(uv0)
-			uv1(slot0, #slot1)
+			slot0(slot0)
+			slot1(slot0, #slot1)
 
 			return slot0(slot1)
 		end
@@ -504,23 +515,25 @@ function BytesEncoder(slot0, slot1, slot2)
 end
 
 function MessageEncoder(slot0, slot1, slot2)
-	slot3 = TagBytes(slot0, uv0.WIRETYPE_LENGTH_DELIMITED)
-	slot4 = uv1
+	slot3 = TagBytes(slot0, slot0.WIRETYPE_LENGTH_DELIMITED)
+	slot4 = slot1
 
 	if slot1 then
 		return function (slot0, slot1)
-			for slot5, slot6 in uv0(slot1) do
-				slot0(uv1)
-				uv2(slot0, slot6:ByteSize())
+			for slot5, slot6 in slot0(slot1) do
+				slot0(slot1)
+				slot2(slot0, slot6:ByteSize())
 				slot6:_InternalSerialize(slot0)
 			end
 		end
 	else
 		return function (slot0, slot1)
-			slot0(uv0)
-			uv1(slot0, slot1:ByteSize())
+			slot0(slot0)
+			slot1(slot0, slot1:ByteSize())
 
 			return slot1:_InternalSerialize(slot0)
 		end
 	end
 end
+
+return

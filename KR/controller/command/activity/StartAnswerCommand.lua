@@ -5,11 +5,11 @@ class("StartAnswerCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	}, 26012, function (slot0)
 		if slot0.result == 0 then
 			_.each(slot0.question_list, function (slot0)
-				table.insert(uv0, Answer.New(slot0.id, slot0.answer))
+				table.insert(slot0, Answer.New(slot0.id, slot0.answer))
 			end)
-			uv0:sendNotification(GAME.ANSWER_START_DONE, {
-				subject = uv1,
-				answers = {}
+			slot0:sendNotification(GAME.ANSWER_START_DONE, {
+				subject = {},
+				answers = 
 			})
 
 			return

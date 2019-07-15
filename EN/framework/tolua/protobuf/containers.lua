@@ -6,15 +6,17 @@ slot3 = error
 module("protobuf.containers")
 
 function RepeatedCompositeFieldContainer(slot0, slot1)
-	return uv0({
+	return slot0({
 		_listener = slot0,
 		_message_descriptor = slot1
-	}, uv1)
+	}, slot1)
 end
 
 function RepeatedScalarFieldContainer(slot0, slot1)
-	return uv0({
+	return slot0({
 		_listener = slot0,
 		_type_checker = slot1
-	}, uv1)
+	}, slot1)
 end
+
+return

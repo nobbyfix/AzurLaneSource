@@ -1,28 +1,28 @@
 slot0 = class("LevelStrategyView", import("..base.BaseSubView"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "LevelStrategyView"
 end
 
-function slot0.OnInit(slot0)
+slot0.OnInit = function (slot0)
 	slot0:InitUI()
 	setActive(slot0._tf, true)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf)
 end
 
-function slot0.OnDestroy(slot0)
+slot0.OnDestroy = function (slot0)
 	slot0.onConfirm = nil
 	slot0.onCancel = nil
 
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf, slot0._parentTF)
 end
 
-function slot0.setCBFunc(slot0, slot1, slot2)
+slot0.setCBFunc = function (slot0, slot1, slot2)
 	slot0.onConfirm = slot1
 	slot0.onCancel = slot2
 end
 
-function slot0.InitUI(slot0)
+slot0.InitUI = function (slot0)
 	slot0.icon = slot0:findTF("window/panel/item/icon_bg/icon")
 	slot0.count = slot0:findTF("window/panel/item/icon_bg/count")
 	slot0.name = slot0:findTF("window/panel/item/name")
@@ -35,7 +35,7 @@ function slot0.InitUI(slot0)
 	slot0.txUse = findTF(slot0.btnUse, "use")
 end
 
-function slot0.set(slot0, slot1)
+slot0.set = function (slot0, slot1)
 	slot0.strategy = slot1
 
 	GetImageSpriteFromAtlasAsync("strategyicon/" .. pg.strategy_data_template[slot1.id].icon, "", slot0.icon)
@@ -55,18 +55,18 @@ function slot0.set(slot0, slot1)
 	setText(slot0.name, slot2.name)
 	setText(slot0.desc, slot2.desc)
 	onButton(slot0, slot0.btnBack, function ()
-		if uv0.onCancel then
-			uv0.onCancel()
+		if slot0.onCancel then
+			slot0.onCancel()
 		end
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.btnCancel, function ()
-		if uv0.onCancel then
-			uv0.onCancel()
+		if slot0.onCancel then
+			slot0.onCancel()
 		end
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.btnUse, function ()
-		if uv0.onConfirm then
-			uv0.onConfirm()
+		if slot0.onConfirm then
+			slot0.onConfirm()
 		end
 	end, SFX_CONFIRM)
 end

@@ -3,35 +3,35 @@ slot0.StateNone = 0
 slot0.StateActive = 1
 slot0.StateFinish = 2
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.id = slot1.id
 	slot0.template = pg.collection_template[slot0.id]
 	slot0.finishTime = slot1.finish_time
 	slot0.overTime = slot1.over_time
 	slot0.shipIds = slot1.ship_id_list or {}
 	slot0.ships = {}
-	slot0.state = uv0.StateNone
+	slot0.state = slot0.StateNone
 
 	if slot0.finishTime == 0 then
-		slot0.state = uv0.StateNone
+		slot0.state = slot0.StateNone
 	elseif pg.TimeMgr.GetInstance():GetServerTime() <= slot0.finishTime then
-		slot0.state = uv0.StateActive
+		slot0.state = slot0.StateActive
 	else
-		slot0.state = uv0.StateFinish
+		slot0.state = slot0.StateFinish
 	end
 end
 
-function slot0.reachNum(slot0)
+slot0.reachNum = function (slot0)
 	return slot0.template.ship_num <= #slot0.ships
 end
 
-function slot0.reachLevel(slot0)
+slot0.reachLevel = function (slot0)
 	return #slot0.ships > 0 and _.any(slot0.ships, function (slot0)
-		return uv0.template.ship_lv <= slot0.level
+		return slot0.template.ship_lv <= slot0.level
 	end)
 end
 
-function slot0.reachTypes(slot0)
+slot0.reachTypes = function (slot0)
 	if table.getCount(slot0.ships) == 0 then
 		return false
 	end
@@ -49,22 +49,22 @@ function slot0.reachTypes(slot0)
 	return slot1
 end
 
-function slot0.getOilConsume(slot0)
+slot0.getOilConsume = function (slot0)
 	return slot0.template.oil or 0
 end
 
-function slot0.updateTime(slot0)
+slot0.updateTime = function (slot0)
 	slot1 = false
 
-	if slot0.state == uv0.StateActive and slot0.finishTime < pg.TimeMgr.GetInstance():GetServerTime() then
-		slot0.state = uv0.StateFinish
+	if slot0.state == slot0.StateActive and slot0.finishTime < pg.TimeMgr.GetInstance():GetServerTime() then
+		slot0.state = slot0.StateFinish
 		slot1 = true
 	end
 
 	return slot1
 end
 
-function slot0.getTypesStr(slot0)
+slot0.getTypesStr = function (slot0)
 	slot3 = false
 
 	if #slot0.template.ship_type == #pg.ship_data_by_type.all then
@@ -82,8 +82,10 @@ function slot0.getTypesStr(slot0)
 	if slot3 then
 		return i18n("event_type_unlimit")
 	else
+		slot4 = ""
+
 		for slot8, slot9 in ipairs(slot2) do
-			slot4 = "" .. slot1[slot9].type_name .. (slot8 == #slot0.template.ship_type and "" or ", ")
+			slot4 = slot4 .. slot1[slot9].type_name .. ((slot8 == #slot0.template.ship_type and "") or ", ")
 		end
 
 		return i18n("event_condition_ship_type", slot4)

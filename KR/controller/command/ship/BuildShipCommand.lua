@@ -16,21 +16,23 @@ class("BuildShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		count = slot4
 	}, 12003, function (slot0)
 		if slot0.result == 0 then
-			getProxy(BagProxy).removeItemById(slot2, pg.ship_data_create_material[uv0].use_item, pg.ship_data_create_material[uv0].number_1 * uv1)
+			getProxy(BagProxy).removeItemById(slot2, pg.ship_data_create_material[slot0].use_item, pg.ship_data_create_material[slot0].number_1 * slot1)
 
 			slot3 = getProxy(PlayerProxy)
 			slot4 = slot3:getData()
 
 			slot4:consume({
-				gold = pg.ship_data_create_material[uv0].use_gold * uv1
+				gold = pg.ship_data_create_material[slot0].use_gold * slot1
 			})
 			slot3:updatePlayer(slot4)
 
+			slot5 = getProxy(BuildShipProxy)
+
 			for slot9, slot10 in ipairs(slot0.build_info) do
-				getProxy(BuildShipProxy):addBuildShip(BuildShip.New(slot10))
+				slot5:addBuildShip(BuildShip.New(slot10))
 			end
 
-			uv2:sendNotification(GAME.BUILD_SHIP_DONE)
+			slot2:sendNotification(GAME.BUILD_SHIP_DONE)
 			pg.TipsMgr:GetInstance():ShowTips(i18n("ship_buildShipMediator_startBuild"))
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("ship_buildShip_error", slot0.result))

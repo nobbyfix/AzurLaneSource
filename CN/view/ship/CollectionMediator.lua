@@ -1,6 +1,6 @@
 slot0 = class("CollectionMediator", import("..base.ContextMediator"))
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
 	slot0.collectionProxy = getProxy(CollectionProxy)
 
 	slot0.viewComponent:setShipGroups(slot0.collectionProxy:getGroups())
@@ -10,25 +10,25 @@ function slot0.register(slot0)
 	slot0.viewComponent:setPlayer(getProxy(PlayerProxy).getRawData(slot1))
 	slot0.viewComponent:setProposeList(getProxy(BayProxy).getProposeGroupList(slot2))
 	slot0:bind(CollectionScene.GET_AWARD, function (slot0, slot1, slot2)
-		uv0:sendNotification(GAME.COLLECT_GET_AWARD, {
+		slot0:sendNotification(GAME.COLLECT_GET_AWARD, {
 			id = slot1,
 			index = slot2
 		})
 	end)
 	slot0:bind(CollectionScene.SHOW_DETAIL, function (slot0, slot1, slot2)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.SHIP_PROFILE, {
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.SHIP_PROFILE, {
 			showTrans = slot1,
 			groupId = slot2
 		})
 	end)
 	slot0:bind(CollectionScene.ACTIVITY_OP, function (slot0, slot1)
-		uv0:sendNotification(GAME.ACTIVITY_OPERATION, slot1)
+		slot0:sendNotification(GAME.ACTIVITY_OPERATION, slot1)
 	end)
 	slot0:bind(CollectionScene.BEGIN_STAGE, function (slot0, slot1)
-		uv0:sendNotification(GAME.BEGIN_STAGE, slot1)
+		slot0:sendNotification(GAME.BEGIN_STAGE, slot1)
 	end)
 	slot0:bind(CollectionScene.ON_INDEX, function (slot0, slot1)
-		uv0:addSubLayers(Context.New({
+		slot0:addSubLayers(Context.New({
 			mediator = IndexMediator,
 			viewComponent = IndexLayer,
 			data = slot1
@@ -42,34 +42,34 @@ function slot0.register(slot0)
 				pg.MsgboxMgr:GetInstance():ShowMsgBox({
 					content = i18n("collect_chapter_is_activation"),
 					onYes = function ()
-						uv0.chapterId = uv1
+						slot0.chapterId = slot1
 
-						uv0:sendNotification(GAME.CHAPTER_OP, {
+						slot0:sendNotification(GAME.CHAPTER_OP, {
 							type = ChapterConst.OpRetreat
 						})
 					end
 				})
 			else
-				uv0:GoLevelScene(slot1)
+				slot0:GoLevelScene(slot1)
 			end
 		else
 			pg.TipsMgr:GetInstance():ShowTips(i18n("acquisitionmode_is_not_open"))
 		end
 	end)
 	slot0:bind(CollectionScene.GO_SCENE, function (slot0, slot1, slot2)
-		uv0:sendNotification(GAME.GO_SCENE, slot1, slot2)
+		slot0:sendNotification(GAME.GO_SCENE, slot1, slot2)
 	end)
 	slot0.viewComponent:updateCollectNotices(slot0.collectionProxy:hasFinish())
 end
 
-function slot0.GoLevelScene(slot0, slot1)
+slot0.GoLevelScene = function (slot0, slot1)
 	if getProxy(ChapterProxy):getChapterById(slot1) then
 		slot4 = {
-			mapIdx = slot3:getConfig("map"),
-			chapterId = slot3.id
+			mapIdx = slot3:getConfig("map")
 		}
 
 		if slot3.active then
+			slot4.chapterId = slot3.id
 		else
 			slot4.openChapterId = slot1
 		end
@@ -78,7 +78,7 @@ function slot0.GoLevelScene(slot0, slot1)
 	end
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		CollectionProxy.AWARDS_UPDATE,
 		GAME.COLLECT_GET_AWARD_DONE,
@@ -88,9 +88,11 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
+	slot3 = slot1:getBody()
+
 	if slot1:getName() == CollectionProxy.AWARDS_UPDATE then
-		slot0.viewComponent:setAwards(slot1:getBody())
+		slot0.viewComponent:setAwards(slot3)
 	elseif slot2 == GAME.COLLECT_GET_AWARD_DONE then
 		slot0.viewComponent:sortDisplay()
 		slot0.viewComponent:updateCollectNotices(slot0.collectionProxy:hasFinish())

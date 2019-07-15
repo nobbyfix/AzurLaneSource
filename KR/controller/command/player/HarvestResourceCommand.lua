@@ -10,29 +10,23 @@ class("HarvestResourceCommand", pm.SimpleCommand).execute = function (slot0, slo
 		type = slot2
 	}, 11014, function (slot0)
 		if slot0.result == 0 then
-			slot2 = 0
-
-			if uv0 - uv1[uv2] < uv1[uv2 .. "Field"] then
-				slot2 = slot1
-
-				uv1:addResources({
-					[uv2] = slot1
+			if slot0 - slot1[] < slot1[slot2 .. "Field"] then
+				slot1:addResources({
+					[slot2] = slot1
 				})
 
-				uv1[uv2 .. "Field"] = uv1[uv2 .. "Field"] - slot1
+				slot1[slot2 .. "Field"] = slot1[slot2 .. "Field"] - slot1
 			else
-				slot2 = uv1[uv2 .. "Field"]
-
-				uv1:addResources({
-					[uv2] = uv1[uv2 .. "Field"]
+				slot1:addResources({
+					[slot1[slot2 .. "Field"]] = slot1[slot2 .. "Field"]
 				})
 
-				uv1[uv2 .. "Field"] = 0
+				slot1[slot2 .. "Field"] = 0
 			end
 
-			uv3:updatePlayer(uv1)
-			uv4:sendNotification(GAME.HARVEST_RES_DONE, {
-				type = uv5,
+			slot3:updatePlayer(slot1)
+			slot3:sendNotification(GAME.HARVEST_RES_DONE, {
+				type = GAME.HARVEST_RES_DONE,
 				outPut = slot2
 			})
 			playSoundEffect(SFX_UI_ACADEMY_GETMATERIAL)

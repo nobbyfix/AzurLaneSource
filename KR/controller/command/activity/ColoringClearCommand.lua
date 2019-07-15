@@ -4,8 +4,10 @@ class("ColoringClearCommand", pm.SimpleCommand).execute = function (slot0, slot1
 		id = slot1.getBody().id
 	}, 26007, function (slot0)
 		if slot0.result == 0 then
-			getProxy(ColoringProxy).getColorGroup(slot1, uv0).clearFill(slot2)
-			uv1:sendNotification(GAME.COLORING_CLEAR_DONE)
+			slot1 = getProxy(ColoringProxy)
+
+			slot1:getColorGroup(slot0).clearFill(slot2)
+			slot1:sendNotification(GAME.COLORING_CLEAR_DONE)
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("coloring_clear", slot0.result))
 		end

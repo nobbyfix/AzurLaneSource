@@ -4,7 +4,7 @@ pg.LayerWeightMgr.DEBUG = false
 pg.LayerWeightMgr.ADAPT_TAG = "(Adapt)"
 pg.LayerWeightMgr.RECYCLE_ADAPT_TAG = "recycleAdapt"
 
-function pg.LayerWeightMgr.Init(slot0, slot1)
+pg.LayerWeightMgr.Init = function (slot0, slot1)
 	slot0.uiOrigin = tf(instantiate(slot3))
 	slot0.uiOrigin.name = "UIOrigin"
 
@@ -23,7 +23,7 @@ function pg.LayerWeightMgr.Init(slot0, slot1)
 	end
 end
 
-function pg.LayerWeightMgr.Add2Overlay(slot0, slot1, slot2, slot3)
+pg.LayerWeightMgr.Add2Overlay = function (slot0, slot1, slot2, slot3)
 	slot3.type = slot1
 	slot3.ui = slot2
 	slot3.pbList = slot3.pbList or {}
@@ -34,7 +34,7 @@ function pg.LayerWeightMgr.Add2Overlay(slot0, slot1, slot2, slot3)
 		return
 	end
 
-	if slot1 == LayerWeightConst.UI_TYPE_SYSTEM and #slot0.storeUIs > 0 or slot1 == LayerWeightConst.UI_TYPE_SUB then
+	if (slot1 == LayerWeightConst.UI_TYPE_SYSTEM and #slot0.storeUIs > 0) or slot1 == LayerWeightConst.UI_TYPE_SUB then
 		slot0:Log("ui：" .. slot2.gameObject.name .. " 加入了ui层级管理, weight:" .. slot3.weight)
 		slot0:DelList(slot2)
 		table.insert(slot0.storeUIs, slot3)
@@ -42,7 +42,7 @@ function pg.LayerWeightMgr.Add2Overlay(slot0, slot1, slot2, slot3)
 	end
 end
 
-function pg.LayerWeightMgr.DelFromOverlay(slot0, slot1, slot2)
+pg.LayerWeightMgr.DelFromOverlay = function (slot0, slot1, slot2)
 	if slot1.gameObject.name == "ResPanel(Clone)" then
 		return
 	end
@@ -53,15 +53,15 @@ function pg.LayerWeightMgr.DelFromOverlay(slot0, slot1, slot2)
 		slot0:CheckRecycleAdaptObj(slot3.ui, slot2)
 
 		if slot3.pbList ~= nil then
-			uv0.UIMgr.GetInstance():RevertPBMaterial(slot3.pbList)
-			uv0.UIMgr.GetInstance():ShutdownPartialBlur()
+			slot0.UIMgr.GetInstance():RevertPBMaterial(slot3.pbList)
+			slot0.UIMgr.GetInstance():ShutdownPartialBlur()
 		end
 	end
 
 	slot0:LayerSortHandler()
 end
 
-function pg.LayerWeightMgr.DelList(slot0, slot1)
+pg.LayerWeightMgr.DelList = function (slot0, slot1)
 	slot2 = nil
 
 	for slot6 = #slot0.storeUIs, 1, -1 do
@@ -77,7 +77,7 @@ function pg.LayerWeightMgr.DelList(slot0, slot1)
 	return slot2
 end
 
-function pg.LayerWeightMgr.LayerSortHandler(slot0)
+pg.LayerWeightMgr.LayerSortHandler = function (slot0)
 	slot0:SortStoreUIs()
 
 	slot1 = false
@@ -89,6 +89,7 @@ function pg.LayerWeightMgr.LayerSortHandler(slot0)
 	slot7 = 0
 
 	for slot11 = #slot0.storeUIs, 1, -1 do
+		slot13 = slot0.storeUIs[slot11].type
 		slot14 = slot0.storeUIs[slot11].ui
 		slot15 = slot0.storeUIs[slot11].pbList
 		slot16 = slot0.storeUIs[slot11].globalBlur
@@ -97,7 +98,7 @@ function pg.LayerWeightMgr.LayerSortHandler(slot0)
 		slot19 = slot0.storeUIs[slot11].blurLevelCamera
 		slot20 = slot11 == #slot0.storeUIs
 
-		if slot0.storeUIs[slot11].type == LayerWeightConst.UI_TYPE_SYSTEM then
+		if slot13 == LayerWeightConst.UI_TYPE_SYSTEM then
 			slot1 = true
 		end
 
@@ -110,16 +111,18 @@ function pg.LayerWeightMgr.LayerSortHandler(slot0)
 			slot5 = slot19
 		end
 
+		function slot21()
+			slot0:ShowOrHideTF(slot0, true)
+			slot0.ShowOrHideTF:SetToOverlayParent(slot0.ShowOrHideTF, , )
+
+			if not slot0.ShowOrHideTF and #slot5 > 0 then
+				table.insertto(slot6, slot5)
+			end
+		end
+
 		if slot13 == LayerWeightConst.UI_TYPE_SUB then
 			if slot20 then
-				function ()
-					uv0:ShowOrHideTF(uv1, true)
-					uv0:SetToOverlayParent(uv1, uv2, uv3)
-
-					if not uv4 and #uv5 > 0 then
-						table.insertto(uv6, uv5)
-					end
-				end()
+				slot21()
 			elseif slot3 ~= nil and slot3 == slot17 then
 				slot21()
 			else
@@ -131,7 +134,7 @@ function pg.LayerWeightMgr.LayerSortHandler(slot0)
 					slot0:ShowOrHideTF(slot14, true)
 
 					if #slot15 > 0 then
-						uv0.UIMgr.GetInstance():RevertPBMaterial(slot15)
+						slot0.UIMgr.GetInstance():RevertPBMaterial(slot15)
 					end
 				end
 			end
@@ -139,19 +142,19 @@ function pg.LayerWeightMgr.LayerSortHandler(slot0)
 	end
 
 	if #slot2 > 0 then
-		uv0.UIMgr.GetInstance():PartialBlurTfs(slot2)
+		slot0.UIMgr.GetInstance():PartialBlurTfs(slot2)
 	else
-		uv0.UIMgr.GetInstance():ShutdownPartialBlur()
+		slot0.UIMgr.GetInstance():ShutdownPartialBlur()
 	end
 
 	if slot5 then
-		uv0.UIMgr.GetInstance():BlurCamera(uv0.UIMgr.CameraLevel)
+		slot0.UIMgr.GetInstance():BlurCamera(slot0.UIMgr.CameraLevel)
 	else
-		uv0.UIMgr.GetInstance():UnblurCamera(uv0.UIMgr.CameraLevel)
+		slot0.UIMgr.GetInstance():UnblurCamera(slot0.UIMgr.CameraLevel)
 	end
 end
 
-function pg.LayerWeightMgr.SetToOverlayParent(slot0, slot1, slot2, slot3)
+pg.LayerWeightMgr.SetToOverlayParent = function (slot0, slot1, slot2, slot3)
 	slot4 = nil
 
 	if slot2 == LayerWeightConst.OVERLAY_UI_ADAPT then
@@ -171,7 +174,7 @@ function pg.LayerWeightMgr.SetToOverlayParent(slot0, slot1, slot2, slot3)
 	end
 end
 
-function pg.LayerWeightMgr.SetToOrigin(slot0, slot1, slot2)
+pg.LayerWeightMgr.SetToOrigin = function (slot0, slot1, slot2)
 	SetParent((slot0:GetAdaptObjFromUI(slot1) == nil or slot1.parent) and slot1, slot0.uiOrigin, false)
 
 	if slot2 ~= nil then
@@ -179,7 +182,7 @@ function pg.LayerWeightMgr.SetToOrigin(slot0, slot1, slot2)
 	end
 end
 
-function pg.LayerWeightMgr.SortStoreUIs(slot0)
+pg.LayerWeightMgr.SortStoreUIs = function (slot0)
 	slot0:Log("-----------------------------------------")
 
 	slot2 = {}
@@ -198,11 +201,11 @@ function pg.LayerWeightMgr.SortStoreUIs(slot0)
 	slot0:Log("-----------------------------------------")
 end
 
-function pg.LayerWeightMgr.ShowOrHideTF(slot0, slot1, slot2)
-	GetOrAddComponent(slot1, typeof(CanvasGroup)).alpha = slot2 and 1 or 0
+pg.LayerWeightMgr.ShowOrHideTF = function (slot0, slot1, slot2)
+	GetOrAddComponent(slot1, typeof(CanvasGroup)).alpha = (slot2 and 1) or 0
 end
 
-function pg.LayerWeightMgr.GetAdaptObj(slot0)
+pg.LayerWeightMgr.GetAdaptObj = function (slot0)
 	slot1 = nil
 
 	if #slot0.adaptPool > 0 then
@@ -230,7 +233,7 @@ function pg.LayerWeightMgr.GetAdaptObj(slot0)
 	return slot1
 end
 
-function pg.LayerWeightMgr.CheckRecycleAdaptObj(slot0, slot1, slot2)
+pg.LayerWeightMgr.CheckRecycleAdaptObj = function (slot0, slot1, slot2)
 	slot3 = slot0:GetAdaptObjFromUI(slot1)
 
 	if slot2 ~= nil then
@@ -242,7 +245,7 @@ function pg.LayerWeightMgr.CheckRecycleAdaptObj(slot0, slot1, slot2)
 			table.insert(slot0.adaptPool, slot3)
 			SetParent(slot3, slot0.OverlayAdapt, false)
 
-			slot3.name = uv0.RECYCLE_ADAPT_TAG
+			slot3.name = slot0.RECYCLE_ADAPT_TAG
 
 			SetActive(slot3, false)
 		else
@@ -251,7 +254,7 @@ function pg.LayerWeightMgr.CheckRecycleAdaptObj(slot0, slot1, slot2)
 	end
 end
 
-function pg.LayerWeightMgr.GetAdaptObjFromUI(slot0, slot1)
+pg.LayerWeightMgr.GetAdaptObjFromUI = function (slot0, slot1)
 	if slot1.parent ~= nil and slot1.parent.name == slot0:GetAdatpObjName(slot1) then
 		return slot1.parent
 	end
@@ -259,14 +262,16 @@ function pg.LayerWeightMgr.GetAdaptObjFromUI(slot0, slot1)
 	return nil
 end
 
-function pg.LayerWeightMgr.GetAdatpObjName(slot0, slot1)
-	return slot1.name .. uv0.ADAPT_TAG
+pg.LayerWeightMgr.GetAdatpObjName = function (slot0, slot1)
+	return slot1.name .. slot0.ADAPT_TAG
 end
 
-function pg.LayerWeightMgr.Log(slot0, slot1)
-	if not uv0.DEBUG then
+pg.LayerWeightMgr.Log = function (slot0, slot1)
+	if not slot0.DEBUG then
 		return
 	end
 
 	print(slot1)
 end
+
+return

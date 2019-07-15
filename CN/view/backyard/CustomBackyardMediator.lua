@@ -1,14 +1,15 @@
 slot0 = class("CustomBackyardMediator", import("..base.ContextMediator"))
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
 	slot1 = {}
 	slot5 = {}
 	slot6, slot7 = nil
 
 	for slot11, slot12 in pairs(slot4) do
 		slot13 = Furniture.New(slot12)
+		slot14 = slot13:getConfig("type")
 
-		if slot13.position and slot13:getConfig("type") == Furniture.TYPE_WALLPAPER then
+		if slot13.position and slot14 == Furniture.TYPE_WALLPAPER then
 			slot6 = BackyardFurnitureVO.New(slot13)
 		elseif slot13.position and slot14 == Furniture.TYPE_FLOORPAPER then
 			slot7 = BackyardFurnitureVO.New(slot13)
@@ -30,47 +31,47 @@ function slot0.register(slot0)
 	slot9:registerCommand(BACKYARD.COMMAND_BACKYARD_BOAT, BYBoatCommand)
 	slot0.viewComponent:setHouse(slot9:retrieveProxy(BackYardHouseProxy.__cname).getData(slot10))
 	slot0:bind(BackyardMainMediator.END_DRAG_SHIP, function (slot0, slot1, slot2)
-		uv0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
+		slot0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
 			name = BACKYARD.END_DRAG_BOAT,
 			id = slot1,
 			pos = slot2
 		})
 	end)
 	slot0:bind(BackyardMainMediator.ADD_BOAT_MOVE, function (slot0, slot1)
-		uv0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
+		slot0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
 			name = BACKYARD.ADD_BOAT_MOVE,
 			id = slot1
 		})
 	end)
 	slot0:bind(BackyardMainMediator.CANCEL_SHIP_MOVE, function (slot0, slot1)
-		uv0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
+		slot0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
 			name = BACKYARD.CANCEL_BOAT_MOVE,
 			id = slot1
 		})
 	end)
 	slot0:bind(BackyardMainMediator.INTERACTION, function (slot0, slot1, slot2)
-		uv0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
+		slot0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
 			name = BACKYARD.INTERACTION,
 			shipId = slot1,
 			furnitureId = slot2
 		})
 	end)
 	slot0:bind(BackyardMainMediator.INTERACTION_SPINE, function (slot0, slot1, slot2)
-		uv0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
+		slot0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
 			name = BACKYARD.INTERACTION_SPINE,
 			shipId = slot1,
 			furnitureId = slot2
 		})
 	end)
 	slot0:bind(BackyardMainMediator.CLEAR_SPINE, function (slot0, slot1)
-		uv0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
+		slot0:sendNotification(BACKYARD.COMMAND_BACKYARD_BOAT, {
 			name = BACKYARD.CLEAR_SPINE,
 			shipId = slot1
 		})
 	end)
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		BackYardHouseProxy.BACKYARD_SHIP_MOVE,
 		BackYardHouseProxy.BACKYARD_EXIT_SHIP,
@@ -81,7 +82,7 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == BackYardHouseProxy.BACKYARD_SHIP_MOVE then
@@ -99,7 +100,7 @@ function slot0.handleNotification(slot0, slot1)
 	end
 end
 
-function slot0.remove(slot0)
+slot0.remove = function (slot0)
 	slot1 = slot0:getFacade()
 
 	slot1:removeProxy(BackYardHouseProxy.__cname)

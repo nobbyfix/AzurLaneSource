@@ -4,7 +4,7 @@ class("GuildQuitCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	}, 60019, function (slot0)
 		if slot0.result == 0 then
 			getProxy(GuildProxy).exitGuild(slot1)
-			uv0:sendNotification(GAME.GUILD_QUIT_DONE)
+			slot0:sendNotification(GAME.GUILD_QUIT_DONE)
 
 			slot2 = getProxy(PlayerProxy)
 			slot3 = slot2:getData()

@@ -12,8 +12,10 @@ slot0({
 }, )
 
 function slot(slot0, slot1)
-	return uv0({
+	return slot0({
 		func = slot0,
 		obj = slot1
-	}, uv1)
+	}, slot1)
 end
+
+return

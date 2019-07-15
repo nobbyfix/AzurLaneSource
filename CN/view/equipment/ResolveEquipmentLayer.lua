@@ -1,20 +1,20 @@
 slot0 = class("ResolveEquipmentLayer", import("..base.BaseUI"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "ResolveEquipmentUI"
 end
 
-function slot0.setPlayer(slot0, slot1)
+slot0.setPlayer = function (slot0, slot1)
 	slot0.player = slot1
 end
 
-function slot0.setEquipments(slot0, slot1)
+slot0.setEquipments = function (slot0, slot1)
 	slot0.equipmentVOs = slot1
 
 	slot0:setEquipmentByIds(slot1)
 end
 
-function slot0.setEquipmentByIds(slot0, slot1)
+slot0.setEquipmentByIds = function (slot0, slot1)
 	slot0.equipmentVOByIds = {}
 
 	for slot5, slot6 in ipairs(slot1) do
@@ -22,7 +22,7 @@ function slot0.setEquipmentByIds(slot0, slot1)
 	end
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.mainPanel = slot0:findTF("main")
 
 	setActive(slot0.mainPanel, true)
@@ -45,62 +45,64 @@ function slot0.init(slot0)
 	setActive(slot0.destroyBonusItem, false)
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0:initEquipments()
 	onButton(slot0, slot0.backBtn, function ()
-		uv0:emit(uv1.ON_CLOSE)
+		slot0:emit(slot1.ON_CLOSE)
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.cancelBtn, function ()
-		uv0:emit(uv1.ON_CLOSE)
+		slot0:emit(slot1.ON_CLOSE)
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.okBtn, function ()
-		if not _.all(uv0:hasEliteEquips(uv0.selectedIds, uv0.equipmentVOByIds), function (slot0)
+		local function slot0()
+			if #slot0.selectedIds <= 0 then
+				pg.TipsMgr:GetInstance():ShowTips(i18n("err_resloveequip_nochoice"))
+
+				return
+			end
+
+			setActive(slot0.mainPanel, false)
+			setActive(slot0.destroyConfirm, true)
+			setActive:displayDestroyBonus()
+		end
+
+		if not _.all(slot0:hasEliteEquips(slot0.selectedIds, slot0.equipmentVOByIds), function (slot0)
 			return slot0 == ""
 		end) then
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
-				content = i18n("destroy_eliteequipment_tip", string.gsub(table.concat(slot1, ""), "$1", slot1[1] == "" and "" or ",")),
-				onYes = function ()
-					if #uv0.selectedIds <= 0 then
-						pg.TipsMgr:GetInstance():ShowTips(i18n("err_resloveequip_nochoice"))
-
-						return
-					end
-
-					setActive(uv0.mainPanel, false)
-					setActive(uv0.destroyConfirm, true)
-					uv0:displayDestroyBonus()
-				end
+				content = i18n("destroy_eliteequipment_tip", string.gsub(table.concat(slot1, ""), "$1", (slot1[1] == "" and "") or ",")),
+				onYes = slot0
 			})
 		else
 			slot0()
 		end
 	end, SFX_CONFIRM)
 	onButton(slot0, findTF(slot0.destroyConfirm, "actions/cancel_button"), function ()
-		setActive(uv0.destroyConfirm, false)
-		setActive(uv0.mainPanel, true)
-		pg.UIMgr.GetInstance():UnblurPanel(uv0.destroyConfirm, uv0._tf)
+		setActive(slot0.destroyConfirm, false)
+		setActive(slot0.mainPanel, true)
+		pg.UIMgr.GetInstance():UnblurPanel(slot0.destroyConfirm, slot0._tf)
 	end, SFX_CANCEL)
 	onButton(slot0, findTF(slot0.destroyConfirm, "actions/destroy_button"), function ()
-		uv0:emit(ResolveEquipmentMediator.ON_RESOLVE, uv0.selectedIds)
-		setActive(uv0.destroyConfirm, false)
-		pg.UIMgr.GetInstance():UnblurPanel(uv0.destroyConfirm, uv0._tf)
-		setActive(uv0.mainPanel, false)
-		uv0:unselecteAllEquips()
+		slot0:emit(ResolveEquipmentMediator.ON_RESOLVE, slot0.selectedIds)
+		setActive(slot0.destroyConfirm, false)
+		pg.UIMgr.GetInstance():UnblurPanel(slot0.destroyConfirm, slot0._tf)
+		setActive(slot0.mainPanel, false)
+		setActive:unselecteAllEquips()
 	end, SFX_UI_EQUIPMENT_RESOLVE)
 	onToggle(slot0, slot0.selecteAllTF, function (slot0)
-		if uv0.isManual then
+		if slot0.isManual then
 			return
 		end
 
 		if slot0 then
-			uv0:selecteAllEquips()
+			slot0:selecteAllEquips()
 		else
-			uv0:unselecteAllEquips()
+			slot0:unselecteAllEquips()
 		end
 	end, SFX_PANEL)
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	playSoundEffect(SFX_CANCEL)
 
 	if isActive(slot0.destroyConfirm) then
@@ -112,7 +114,7 @@ function slot0.onBackPressed(slot0)
 	triggerButton(slot0.cancelBtn)
 end
 
-function slot0.selectedLowRarityEquipment(slot0)
+slot0.selectedLowRarityEquipment = function (slot0)
 	slot0.selectedIds = {}
 
 	for slot4, slot5 in ipairs(slot0.equipmentVOs) do
@@ -124,7 +126,7 @@ function slot0.selectedLowRarityEquipment(slot0)
 	slot0:updateSelected()
 end
 
-function slot0.selecteAllEquips(slot0)
+slot0.selecteAllEquips = function (slot0)
 	slot0.selectedIds = {}
 
 	for slot4, slot5 in ipairs(slot0.equipmentVOs) do
@@ -134,20 +136,22 @@ function slot0.selecteAllEquips(slot0)
 	slot0:updateSelected()
 end
 
-function slot0.unselecteAllEquips(slot0)
+slot0.unselecteAllEquips = function (slot0)
 	slot0.selectedIds = {}
 
 	slot0:updateSelected()
 end
 
-function slot0.displayDestroyBonus(slot0)
+slot0.displayDestroyBonus = function (slot0)
 	slot1 = {}
+	slot2 = 0
 
 	for slot6, slot7 in ipairs(slot0.selectedIds) do
 		if pg.equip_data_template[slot7[1]] then
-			slot2 = 0 + (slot8.destory_gold or 0) * slot7[2]
+			slot9 = slot8.destory_item or {}
+			slot2 = slot2 + (slot8.destory_gold or 0) * slot7[2]
 
-			for slot14, slot15 in ipairs(slot8.destory_item or {}) do
+			for slot14, slot15 in ipairs(slot9) do
 				slot16 = false
 
 				for slot20, slot21 in ipairs(slot1) do
@@ -209,11 +213,11 @@ function slot0.displayDestroyBonus(slot0)
 
 		setText(slot7:Find("name"), slot12)
 		onButton(slot0, slot7, function ()
-			if uv0.type == DROP_TYPE_RESOURCE or uv0.type == DROP_TYPE_ITEM then
-				uv1:emit(AwardInfoMediator.ON_ITEM, uv0.cfg.id)
-			elseif uv0.type == DROP_TYPE_EQUIP then
-				uv1:emit(uv2.ON_EQUIPMENT, {
-					equipmentId = uv0.cfg.id,
+			if slot0.type == DROP_TYPE_RESOURCE or slot0.type == DROP_TYPE_ITEM then
+				slot1:emit(AwardInfoMediator.ON_ITEM, slot0.cfg.id)
+			elseif slot0.type == DROP_TYPE_EQUIP then
+				slot1:emit(slot2.ON_EQUIPMENT, {
+					equipmentId = slot0.cfg.id,
 					type = EquipmentInfoMediator.TYPE_DISPLAY
 				})
 			end
@@ -221,20 +225,20 @@ function slot0.displayDestroyBonus(slot0)
 	end
 end
 
-function slot0.hasEliteEquips(slot0, slot1, slot2)
+slot0.hasEliteEquips = function (slot0, slot1, slot2)
 	function slot4(slot0, slot1)
-		if not _.include(uv0, slot0) then
-			uv0[slot1] = slot0
+		if not _.include(slot0, slot0) then
+			slot0[slot1] = slot0
 		end
 	end
 
 	_.each(slot1, function (slot0)
-		if uv0[slot0[1]].config.level > 1 then
-			uv1(i18n("destroy_high_intensify_tip"), 2)
+		if slot0[slot0[1]].config.level > 1 then
+			slot1(i18n("destroy_high_intensify_tip"), 2)
 		end
 
 		if slot2.config.rarity >= 4 then
-			uv1(i18n("destroy_high_rarity_tip"), 1)
+			slot1(i18n("destroy_high_rarity_tip"), 1)
 		end
 	end)
 
@@ -244,17 +248,17 @@ function slot0.hasEliteEquips(slot0, slot1, slot2)
 	}
 end
 
-function slot0.initEquipments(slot0)
-	function slot0.viewRect.onInitItem(slot0)
-		uv0:onInitItem(slot0)
+slot0.initEquipments = function (slot0)
+	slot0.viewRect.onInitItem = function (slot0)
+		slot0:onInitItem(slot0)
 	end
 
-	function slot0.viewRect.onUpdateItem(slot0, slot1)
-		uv0:onUpdateItem(slot0, slot1)
+	slot0.viewRect.onUpdateItem = function (slot0, slot1)
+		slot0:onUpdateItem(slot0, slot1)
 	end
 
-	function slot0.viewRect.onStart()
-		uv0:selectedLowRarityEquipment()
+	slot0.viewRect.onStart = function ()
+		slot0:selectedLowRarityEquipment()
 	end
 
 	slot0.cards = {}
@@ -262,7 +266,7 @@ function slot0.initEquipments(slot0)
 	slot0:filterEquipments()
 end
 
-function slot0.filterEquipments(slot0)
+slot0.filterEquipments = function (slot0)
 	table.sort(slot0.equipmentVOs, function (slot0, slot1)
 		if slot0.config.rarity == slot1.config.rarity then
 			return slot0.id < slot1.id
@@ -273,20 +277,20 @@ function slot0.filterEquipments(slot0)
 	slot0.viewRect:SetTotalCount(#slot0.equipmentVOs, -1)
 end
 
-function slot0.onInitItem(slot0, slot1)
+slot0.onInitItem = function (slot0, slot1)
 	slot2 = EquipmentItem.New(slot1)
 
 	onButton(slot0, slot2.go, function ()
-		uv0:selectEquip(uv1.equipmentVO, uv1.equipmentVO.count)
+		slot0:selectEquip(slot1.equipmentVO, slot1.equipmentVO.count)
 	end, SFX_PANEL)
 	onButton(slot0, slot2.reduceBtn, function ()
-		uv0:selectEquip(uv1.equipmentVO, 1)
+		slot0:selectEquip(slot1.equipmentVO, 1)
 	end, SFX_PANEL)
 
 	slot0.cards[slot1] = slot2
 end
 
-function slot0.onUpdateItem(slot0, slot1, slot2)
+slot0.onUpdateItem = function (slot0, slot1, slot2)
 	if not slot0.cards[slot2] then
 		slot0:onInitItem(slot2)
 
@@ -296,7 +300,7 @@ function slot0.onUpdateItem(slot0, slot1, slot2)
 	slot3:update(slot0.equipmentVOs[slot1 + 1], true)
 end
 
-function slot0.isSelectedAll(slot0)
+slot0.isSelectedAll = function (slot0)
 	for slot4, slot5 in pairs(slot0.equipmentVOByIds) do
 		slot6 = false
 
@@ -314,7 +318,7 @@ function slot0.isSelectedAll(slot0)
 	return true
 end
 
-function slot0.selectEquip(slot0, slot1, slot2)
+slot0.selectEquip = function (slot0, slot1, slot2)
 	if not slot0:checkDestroyGold(slot1, slot2) then
 		return
 	end
@@ -353,7 +357,7 @@ function slot0.selectEquip(slot0, slot1, slot2)
 	slot0.isManual = nil
 end
 
-function slot0.updateSelected(slot0)
+slot0.updateSelected = function (slot0)
 	for slot4, slot5 in pairs(slot0.cards) do
 		if slot5.equipmentVO then
 			slot6 = false
@@ -373,12 +377,15 @@ function slot0.updateSelected(slot0)
 	end
 end
 
-function slot0.checkDestroyGold(slot0, slot1, slot2)
+slot0.checkDestroyGold = function (slot0, slot1, slot2)
+	slot3 = 0
 	slot4 = false
 
 	for slot8, slot9 in pairs(slot0.selectedIds) do
+		slot10 = slot9[2]
+
 		if pg.equip_data_template[slot9[1]] then
-			slot3 = 0 + (slot11.destory_gold or 0) * slot9[2]
+			slot3 = slot3 + (slot11.destory_gold or 0) * slot10
 		end
 
 		if slot1 and slot9[1] == slot1.configId then
@@ -399,7 +406,7 @@ function slot0.checkDestroyGold(slot0, slot1, slot2)
 	return true
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf, pg.UIMgr.GetInstance().UIMain)
 end
 

@@ -32,28 +32,28 @@ class("SubmitTaskCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		choice_award = slot4
 	}, 20006, function (slot0)
 		if slot0.result == 0 then
-			if uv0:getConfig("sub_type") == TASK_SUB_TYPE_GIVE_ITEM then
-				getProxy(BagProxy):removeItemById(tonumber(slot1), tonumber(uv0:getConfig("target_num")))
-			elseif uv0:getConfig("sub_type") == TASK_SUB_TYPE_GIVE_VIRTUAL_ITEM then
-				getProxy(ActivityProxy):removeVitemById(uv0:getConfig("target_id_for_client"), uv0:getConfig("target_num"))
-			elseif uv0:getConfig("sub_type") == TASK_SUB_TYPE_PLAYER_RES then
+			if slot0:getConfig("sub_type") == TASK_SUB_TYPE_GIVE_ITEM then
+				getProxy(BagProxy):removeItemById(tonumber(slot1), tonumber(slot0:getConfig("target_num")))
+			elseif slot0:getConfig("sub_type") == TASK_SUB_TYPE_GIVE_VIRTUAL_ITEM then
+				getProxy(ActivityProxy):removeVitemById(slot0:getConfig("target_id_for_client"), slot0:getConfig("target_num"))
+			elseif slot0:getConfig("sub_type") == TASK_SUB_TYPE_PLAYER_RES then
 				slot3 = getProxy(PlayerProxy)
 				slot4 = slot3:getData()
 
 				slot4:consume({
-					[id2res(uv0:getConfig("target_id_for_client"))] = uv0:getConfig("target_num")
+					[id2res(slot0:getConfig("target_id_for_client"))] = slot0:getConfig("target_num")
 				})
 				slot3:updatePlayer(slot4)
 			end
 
 			for slot5 = #PlayerConst.tranOwnShipSkin(slot0.award_list), 1, -1 do
 				if slot1[slot5].type ~= DROP_TYPE_SHIP then
-					uv1:sendNotification(GAME.ADD_ITEM, slot6)
+					slot1:sendNotification(GAME.ADD_ITEM, slot6)
 				end
 
 				if slot6.type == DROP_TYPE_ITEM and pg.item_data_statistics[slot6.id].virtual_type == 6 then
 					if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_REFLUX) then
-						slot9[uv0.id] = (slot8.data1KeyValueList[1][uv0.id] or 0) + slot6.count
+						slot9[slot0.id] = (slot8.data1KeyValueList[1][slot0.id] or 0) + slot6.count
 
 						slot7:updateActivity(slot8)
 					end
@@ -62,17 +62,17 @@ class("SubmitTaskCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 				end
 			end
 
-			if uv0:getConfig("type") ~= 8 then
-				uv2:removeTask(uv0)
+			if slot0:getConfig("type") ~= 8 then
+				slot2:removeTask(slot0)
 			else
-				uv0.submitTime = 1
+				slot0.submitTime = 1
 
-				uv2:updateTask(uv0)
+				slot0:updateTask(slot0)
 			end
 
-			uv1:sendNotification(GAME.SUBMIT_TASK_DONE, slot1)
+			slot1:sendNotification(GAME.SUBMIT_TASK_DONE, slot1)
 
-			if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_TASK_LIST_MONITOR) and not slot3:isEnd() and table.contains(slot3:getConfig("config_data")[1] or {}, uv0.id) then
+			if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_TASK_LIST_MONITOR) and not slot3:isEnd() and table.contains(slot3:getConfig("config_data")[1] or {}, slot0.id) then
 				slot2:monitorTaskList(slot3)
 			end
 		else

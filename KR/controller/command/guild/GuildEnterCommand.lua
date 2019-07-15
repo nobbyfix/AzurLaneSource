@@ -1,8 +1,9 @@
 class("GuildEnterCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	slot2 = slot1:getBody()
 	slot3 = getProxy(GuildProxy)
+	slot5 = slot3:getGuildEvent()
 
-	if not slot3:getData() or not slot3:getGuildEvent() then
+	if not slot3:getData() or not slot5 then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("common_activity_end"))
 
 		return
@@ -17,7 +18,9 @@ class("GuildEnterCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		guild_id = slot4.id
 	}, 61003, function (slot0)
 		if slot0.result == 0 then
-			getProxy(ChapterProxy).getGuildChapter(slot1):update(slot0.current_guild)
+			slot2 = getProxy(ChapterProxy).getGuildChapter(slot1)
+
+			slot2:update(slot0.current_guild)
 
 			for slot6, slot7 in pairs(slot2.cells) do
 				if ChapterConst.NeedMarkAsLurk(slot7) then
@@ -26,9 +29,9 @@ class("GuildEnterCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			end
 
 			slot1:updateGuildChapter(slot2)
-			uv0:reduceCount()
-			uv1:updateGuildEvent(uv0)
-			uv2:sendNotification(GAME.GUILD_ENTER_DONE, slot2)
+			slot0:reduceCount()
+			slot1:updateGuildEvent(slot0)
+			slot2:sendNotification(GAME.GUILD_ENTER_DONE, slot2)
 		else
 			if slot0.result == 3 then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("sham_enter_error_friend_ship_expired"))
@@ -49,7 +52,7 @@ class("GuildEnterCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 				pg.TipsMgr:GetInstance():ShowTips(errorTip("sham_enter_error", slot0.result))
 			end
 
-			uv2:sendNotification(GAME.GUIlD_ENTER_ERROR, slot0.result)
+			slot2:sendNotification(GAME.GUIlD_ENTER_ERROR, slot0.result)
 		end
 	end)
 end

@@ -1,6 +1,6 @@
 slot0 = class("MemoryCard")
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.go = slot1
 	slot0.tf = slot1.transform
 	slot0.lock = findTF(slot0.tf, "lock")
@@ -14,14 +14,14 @@ function slot0.Ctor(slot0, slot1)
 	slot0.itemIndexTF = findTF(slot0.tf, "id")
 end
 
-function slot0.update(slot0, slot1, slot2)
+slot0.update = function (slot0, slot1, slot2)
 	slot0.isGroup = slot1
 	slot0.info = slot2
 
 	slot0:flush()
 end
 
-function slot0.flush(slot0)
+slot0.flush = function (slot0)
 	setActive(slot0.lock, false)
 	setActive(slot0.normal, false)
 	setActive(slot0.group, false)
@@ -31,11 +31,12 @@ function slot0.flush(slot0)
 		setText(slot0.groupTitle, HXSet.hxLan(slot0.info.title))
 		GetImageSpriteFromAtlasAsync("memoryicon/" .. slot0.info.icon, "", slot0.group, true)
 
+		slot1 = 0
 		slot2 = #slot0.info.memories
 
 		for slot6, slot7 in ipairs(slot0.info.memories) do
 			if pg.memory_template[slot7].is_open == 1 or pg.StoryMgr.GetInstance():IsPlayed(slot8.story, true) then
-				slot1 = 0 + 1
+				slot1 = slot1 + 1
 			end
 		end
 
@@ -59,7 +60,8 @@ function slot0.flush(slot0)
 	end
 end
 
-function slot0.clear(slot0)
+slot0.clear = function (slot0)
+	return
 end
 
 return slot0

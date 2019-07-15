@@ -11,21 +11,21 @@ slot2 = RaycastBits
 slot4 = tolua.initget(slot3)
 UnityEngine.RaycastHit = {
 	__index = function (slot0, slot1)
-		if uv0(uv1, slot1) == nil and uv0(uv2, slot1) ~= nil then
+		if slot0(slot1, slot1) == nil and slot0(slot2, slot1) ~= nil then
 			return slot2(slot0)
 		end
 
 		return slot2
 	end,
 	New = function (slot0, slot1, slot2, slot3, slot4, slot5)
-		uv0({
+		slot0({
 			collider = slot0,
 			distance = slot1,
 			normal = slot2,
 			point = slot3,
 			rigidbody = slot4,
 			transform = slot5
-		}, uv1)
+		}, slot1)
 
 		return 
 	end,
@@ -46,16 +46,18 @@ UnityEngine.RaycastHit = {
 		slot0.transform = nil
 	end,
 	GetMask = function (...)
+		slot1 = 0
+
 		for slot5 = 1, #{
 			...
 		}, 1 do
-			if (uv0[slot0[slot5]] or 0) ~= 0 then
-				slot1 = 0 + slot6
+			if (slot0[slot0[slot5]] or 0) ~= 0 then
+				slot1 = slot1 + slot6
 			end
 		end
 
 		if slot1 == 0 then
-			slot1 = uv0.all
+			slot1 = slot0.all
 		end
 
 		return slot1

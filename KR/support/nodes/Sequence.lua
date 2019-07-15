@@ -6,7 +6,7 @@ slot0._list = nil
 slot0.Center = nil
 slot0._wait = false
 
-function slot0.Ctor(slot0, slot1, slot2)
+slot0.Ctor = function (slot0, slot1, slot2)
 	slot0.Name = slot1
 	slot0._list = ys.LinkList.New()
 	slot0.Center = slot2
@@ -14,29 +14,31 @@ function slot0.Ctor(slot0, slot1, slot2)
 	slot2:AddSeq(slot0)
 end
 
-function slot0.Dispose(slot0)
-	for slot5 = 1, slot0._list.Count, 1 do
-		slot0._list.Head.Data:Dispose()
+slot0.Dispose = function (slot0)
+	slot1 = slot0._list.Head
 
-		slot1 = slot0._list.Head.Next
+	for slot5 = 1, slot0._list.Count, 1 do
+		slot1.Data:Dispose()
+
+		slot1 = slot1.Next
 	end
 
 	slot0._list:Clear()
 end
 
-function slot0.Add(slot0, slot1)
+slot0.Add = function (slot0, slot1)
 	slot0._list:AddLast(slot1)
 end
 
-function slot0.Wait(slot0)
+slot0.Wait = function (slot0)
 	slot0._wait = true
 end
 
-function slot0.Resume(slot0)
+slot0.Resume = function (slot0)
 	slot0._wait = false
 end
 
-function slot0.Update(slot0)
+slot0.Update = function (slot0)
 	if slot0._wait then
 		return false
 	end
@@ -58,12 +60,16 @@ function slot0.Update(slot0)
 	return true
 end
 
-function slot0.IsFinish(slot0)
+slot0.IsFinish = function (slot0)
+	slot1 = slot0._list.Head
+
 	for slot5 = 1, slot0._list.Count, 1 do
-		if not slot0._list.Head.Data.Finish then
+		if not slot1.Data.Finish then
 			return false
 		end
 	end
 
 	return true
 end
+
+return

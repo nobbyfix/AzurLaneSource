@@ -6860,3 +6860,5 @@ pg.sham_battle_template = {
 		90000
 	}
 }
+
+return

@@ -4,18 +4,22 @@ class("RevertEquipmentCommand", pm.SimpleCommand).execute = function (slot0, slo
 	}, 14011, function (slot0)
 		if slot0.result == 0 then
 			slot1 = getProxy(EquipmentProxy)
-			slot2 = slot1:getEquipmentById(uv0)
+			slot2 = slot1:getEquipmentById(slot0)
 
 			slot1:removeEquipmentById(slot2.id, 1)
 			slot1:addEquipmentById(slot2:GetRootEquipment().id, slot2.GetRootEquipment().count)
 			getProxy(BagProxy).removeItemById(slot4, Item.REVERT_EQUIPMENT_ID, 1)
 
-			for slot10, slot11 in pairs(slot2:getRevertAwards() or {}) do
-				uv1:sendNotification(GAME.ADD_ITEM, Item.New(slot11))
-				table.insert({}, slot11)
+			slot6 = {}
+			slot7 = pairs
+			slot8 = slot2:getRevertAwards() or {}
+
+			for slot10, slot11 in slot7(slot8) do
+				slot1:sendNotification(GAME.ADD_ITEM, Item.New(slot11))
+				table.insert(slot6, slot11)
 			end
 
-			uv1:sendNotification(GAME.REVERT_EQUIPMENT_DONE, {
+			slot1:sendNotification(GAME.REVERT_EQUIPMENT_DONE, {
 				awards = slot6
 			})
 		else

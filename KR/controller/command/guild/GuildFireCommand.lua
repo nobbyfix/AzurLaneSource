@@ -11,11 +11,9 @@ class("GuildFireCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		player_id = slot2
 	}, 60015, function (slot0)
 		if slot0.result == 0 then
-			uv0 = uv1:getData()
-
-			uv0:deleteMember(uv2)
-			uv1:updateGuild(uv0)
-			uv3:sendNotification(GAME.GUILD_FIRE_DONE)
+			slot0:deleteMember(slot0)
+			slot0.deleteMember:updateGuild(slot0)
+			slot3:sendNotification(GAME.GUILD_FIRE_DONE)
 			pg.TipsMgr:GetInstance():ShowTips(i18n("guild_fire_succeed"))
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("guild_fire_erro", slot0.result))

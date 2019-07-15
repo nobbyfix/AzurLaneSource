@@ -296,3 +296,5 @@ ys.Battle.BattleConst.ManualWeaponIndex = {
 	TORPEDO = 2,
 	AIR_ASSIST = 3
 }
+
+return

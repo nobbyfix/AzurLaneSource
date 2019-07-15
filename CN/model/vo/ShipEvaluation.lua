@@ -1,6 +1,6 @@
 slot0 = class("ShipEvaluation", import(".BaseVO"))
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.id = slot1.ship_group_id
 	slot0.hearts = slot1.heart_count
 	slot0.evaCount = slot1.discuss_count
@@ -22,7 +22,7 @@ function slot0.Ctor(slot0, slot1)
 	slot0:sortEvas()
 end
 
-function slot0.sortEvas(slot0)
+slot0.sortEvas = function (slot0)
 	slot0.evas = _.sort(slot0.evas, function (slot0, slot1)
 		if slot0.good_count - slot0.bad_count == slot1.good_count - slot1.bad_count then
 			return slot1.id < slot0.id
@@ -33,8 +33,8 @@ function slot0.sortEvas(slot0)
 	slot2 = _(slot0.evas):chain():slice(math.min(2, #slot0.evas) + 1, #slot0.evas - math.min(2, #slot0.evas)):sort(function (slot0, slot1)
 		slot3 = slot1.good_count - slot1.bad_count
 
-		if slot0.good_count - slot0.bad_count <= -5 or slot1.good_count - slot1.bad_count <= -5 then
-			return slot1.good_count - slot1.bad_count < slot2
+		if slot0.good_count - slot0.bad_count <= -5 or slot3 <= -5 then
+			return slot3 < slot2
 		else
 			return slot1.id < slot0.id
 		end
@@ -43,9 +43,17 @@ function slot0.sortEvas(slot0)
 	for slot6 = 1, #slot0.evas, 1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 45-47, warpins: 2 ---
+		--- BLOCK #0 38-41, warpins: 2 ---
 		slot0.evas[slot6].hot = slot6 <= slot1
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 45-47, warpins: 2 ---
 		if slot1 < slot6 then
 
 			-- Decompilation error in this vicinity:
@@ -56,15 +64,15 @@ function slot0.sortEvas(slot0)
 
 
 		end
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
-		FLOW; TARGET BLOCK #1
+		FLOW; TARGET BLOCK #2
 
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 52-52, warpins: 2 ---
-		--- END OF BLOCK #1 ---
+		--- BLOCK #2 52-52, warpins: 2 ---
+		--- END OF BLOCK #2 ---
 
 
 

@@ -3,14 +3,15 @@ slot1 = ys.Battle.BattleConst
 ys.Battle.BattleBulletFactory = singletonClass("BattleBulletFactory")
 ys.Battle.BattleBulletFactory.__name = "BattleBulletFactory"
 
-function ys.Battle.BattleBulletFactory.Ctor(slot0)
+ys.Battle.BattleBulletFactory.Ctor = function (slot0)
+	return
 end
 
-function ys.Battle.BattleBulletFactory.RecyleTempModel(slot0, slot1)
+ys.Battle.BattleBulletFactory.RecyleTempModel = function (slot0, slot1)
 	slot0._tempGOPool:Recycle(slot1)
 end
 
-function ys.Battle.BattleBulletFactory.Clear(slot0)
+ys.Battle.BattleBulletFactory.Clear = function (slot0)
 	if slot0._tempGOPool then
 		slot0._tempGOPool:Dispose()
 
@@ -18,7 +19,7 @@ function ys.Battle.BattleBulletFactory.Clear(slot0)
 	end
 end
 
-function ys.Battle.BattleBulletFactory.CreateBullet(slot0, slot1, slot2, slot3, slot4, slot5)
+ys.Battle.BattleBulletFactory.CreateBullet = function (slot0, slot1, slot2, slot3, slot4, slot5)
 	slot2:SetOutRangeCallback(slot0.OutRangeFunc)
 
 	slot6 = slot0:MakeBullet()
@@ -34,27 +35,27 @@ function ys.Battle.BattleBulletFactory.CreateBullet(slot0, slot1, slot2, slot3, 
 	return slot6
 end
 
-function ys.Battle.BattleBulletFactory.GetSceneMediator(slot0)
-	return uv0.Battle.BattleState:GetInstance():GetSceneMediator()
+ys.Battle.BattleBulletFactory.GetSceneMediator = function (slot0)
+	return slot0.Battle.BattleState:GetInstance():GetSceneMediator()
 end
 
-function ys.Battle.BattleBulletFactory.GetDataProxy(slot0)
-	return uv0.Battle.BattleDataProxy:GetInstance()
+ys.Battle.BattleBulletFactory.GetDataProxy = function (slot0)
+	return slot0.Battle.BattleDataProxy:GetInstance()
 end
 
-function ys.Battle.BattleBulletFactory.GetFXPool(slot0)
-	return uv0.Battle.BattleFXPool:GetInstance()
+ys.Battle.BattleBulletFactory.GetFXPool = function (slot0)
+	return slot0.Battle.BattleFXPool:GetInstance()
 end
 
-function ys.Battle.BattleBulletFactory.GetBulletPool(slot0)
-	return uv0.Battle.BattleResourceManager:GetInstance()
+ys.Battle.BattleBulletFactory.GetBulletPool = function (slot0)
+	return slot0.Battle.BattleResourceManager:GetInstance()
 end
 
-function ys.Battle.BattleBulletFactory.OutRangeFunc(slot0)
-	uv0.GetDataProxy():RemoveBulletUnit(slot0:GetUniqueID())
+ys.Battle.BattleBulletFactory.OutRangeFunc = function (slot0)
+	slot0.GetDataProxy():RemoveBulletUnit(slot0:GetUniqueID())
 end
 
-function ys.Battle.BattleBulletFactory.GetTempGOPool(slot0)
+ys.Battle.BattleBulletFactory.GetTempGOPool = function (slot0)
 	if slot0._tempGOPool == nil then
 		slot1 = GameObject("temp_bullet_OBJ")
 
@@ -67,7 +68,7 @@ function ys.Battle.BattleBulletFactory.GetTempGOPool(slot0)
 	return slot0._tempGOPool
 end
 
-function ys.Battle.BattleBulletFactory.PlayFireFX(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+ys.Battle.BattleBulletFactory.PlayFireFX = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	slot7 = slot2:GetWeaponTempData().effect_move == 1
 
 	if slot4 == "" or slot4 == nil then
@@ -84,7 +85,7 @@ function ys.Battle.BattleBulletFactory.PlayFireFX(slot0, slot1, slot2, slot3, sl
 			slot9 = slot11:Add(slot3)
 		end
 
-		if slot5 == uv0.UnitDir.LEFT then
+		if slot5 == slot0.UnitDir.LEFT then
 			slot8.transform.localEulerAngles.y = 180
 			slot8.transform.localEulerAngles = slot8.transform.localEulerAngles
 		end
@@ -93,60 +94,62 @@ function ys.Battle.BattleBulletFactory.PlayFireFX(slot0, slot1, slot2, slot3, sl
 	end
 end
 
-function ys.Battle.BattleBulletFactory.MakeBullet(slot0)
+ys.Battle.BattleBulletFactory.MakeBullet = function (slot0)
 	return nil
 end
 
-function ys.Battle.BattleBulletFactory.MakeModel(slot0, slot1, slot2)
+ys.Battle.BattleBulletFactory.MakeModel = function (slot0, slot1, slot2)
 	return nil
 end
 
-function ys.Battle.BattleBulletFactory.MakeBombPreCastAlter(slot0, slot1, slot2)
+ys.Battle.BattleBulletFactory.MakeBombPreCastAlter = function (slot0, slot1, slot2)
 	return slot0:MakeModel(slot1, slot2)
 end
 
-function ys.Battle.BattleBulletFactory.MakeModelAfterBombPreCastAlert(slot0, slot1)
+ys.Battle.BattleBulletFactory.MakeModelAfterBombPreCastAlert = function (slot0, slot1)
 	return nil
 end
 
-function ys.Battle.BattleBulletFactory.MakeTrack(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBulletFactory.MakeTrack = function (slot0, slot1, slot2, slot3)
 	slot1:AddTrack(slot2)
 	pg.EffectMgr.GetInstance():PlayBattleEffect(slot2, slot3, true)
 end
 
-function ys.Battle.BattleBulletFactory.RemoveBullet(slot0, slot1)
+ys.Battle.BattleBulletFactory.RemoveBullet = function (slot0, slot1)
 	slot1:Dispose()
 end
 
-function ys.Battle.BattleBulletFactory.GetFactoryList()
-	if uv0._factoryList == nil then
-		uv0._factoryList = {
-			[uv1.BulletType.CANNON] = uv2.Battle.BattleCannonBulletFactory.GetInstance(),
-			[uv1.BulletType.BOMB] = uv2.Battle.BattleBombBulletFactory.GetInstance(),
-			[uv1.BulletType.TORPEDO] = uv2.Battle.BattleTorpedoBulletFactory.GetInstance(),
-			[uv1.BulletType.DIRECT] = uv2.Battle.BattleDirectBulletFactory.GetInstance(),
-			[uv1.BulletType.SHRAPNEL] = uv2.Battle.BattleShrapnelBulletFactory.GetInstance(),
-			[uv1.BulletType.ANTI_AIR] = uv2.Battle.BattleAntiAirBulletFactory.GetInstance(),
-			[uv1.BulletType.ANTI_SEA] = uv2.Battle.BattleAntiSeaBulletFactory.GetInstance(),
-			[uv1.BulletType.STRAY] = uv2.Battle.BattleStrayBulletFactory.GetInstance(),
-			[uv1.BulletType.EFFECT] = uv2.Battle.BattleEffectBulletFactory.GetInstance(),
-			[uv1.BulletType.BEAM] = uv2.Battle.BattleBeamBulletFactory.GetInstance(),
-			[uv1.BulletType.G_BULLET] = uv2.Battle.BattleGravitationBulletFactory.GetInstance()
+ys.Battle.BattleBulletFactory.GetFactoryList = function ()
+	if slot0._factoryList == nil then
+		slot0._factoryList = {
+			[slot1.BulletType.CANNON] = slot2.Battle.BattleCannonBulletFactory.GetInstance(),
+			[slot1.BulletType.BOMB] = slot2.Battle.BattleBombBulletFactory.GetInstance(),
+			[slot1.BulletType.TORPEDO] = slot2.Battle.BattleTorpedoBulletFactory.GetInstance(),
+			[slot1.BulletType.DIRECT] = slot2.Battle.BattleDirectBulletFactory.GetInstance(),
+			[slot1.BulletType.SHRAPNEL] = slot2.Battle.BattleShrapnelBulletFactory.GetInstance(),
+			[slot1.BulletType.ANTI_AIR] = slot2.Battle.BattleAntiAirBulletFactory.GetInstance(),
+			[slot1.BulletType.ANTI_SEA] = slot2.Battle.BattleAntiSeaBulletFactory.GetInstance(),
+			[slot1.BulletType.STRAY] = slot2.Battle.BattleStrayBulletFactory.GetInstance(),
+			[slot1.BulletType.EFFECT] = slot2.Battle.BattleEffectBulletFactory.GetInstance(),
+			[slot1.BulletType.BEAM] = slot2.Battle.BattleBeamBulletFactory.GetInstance(),
+			[slot1.BulletType.G_BULLET] = slot2.Battle.BattleGravitationBulletFactory.GetInstance()
 		}
 	end
 
-	return uv0._factoryList
+	return slot0._factoryList
 end
 
-function ys.Battle.BattleBulletFactory.DestroyFactory()
-	uv0._factoryList = nil
+ys.Battle.BattleBulletFactory.DestroyFactory = function ()
+	slot0._factoryList = nil
 end
 
-function ys.Battle.BattleBulletFactory.NeutralizeBullet()
-	uv0.Battle.BattleAntiAirBulletFactory.GetInstance():NeutralizeBullet()
-	uv0.Battle.BattleAntiSeaBulletFactory.GetInstance():NeutralizeBullet()
+ys.Battle.BattleBulletFactory.NeutralizeBullet = function ()
+	slot0.Battle.BattleAntiAirBulletFactory.GetInstance():NeutralizeBullet()
+	slot0.Battle.BattleAntiAirBulletFactory.GetInstance().NeutralizeBullet.Battle.BattleAntiSeaBulletFactory.GetInstance():NeutralizeBullet()
 end
 
-function ys.Battle.BattleBulletFactory.GetRandomBone(slot0)
+ys.Battle.BattleBulletFactory.GetRandomBone = function (slot0)
 	return slot0[math.floor(math.Random(0, #slot0)) + 1]
 end
+
+return

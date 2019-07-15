@@ -21,9 +21,9 @@ class("ActivityMemoryOPCommand", pm.SimpleCommand).execute = function (slot0, sl
 		arg1 = slot3
 	}, 11203, function (slot0)
 		if slot0.result == 0 then
-			table.insert(uv0.data2_list, uv1)
-			uv2:updateActivity(uv0)
-			uv3:sendNotification(GAME.MEMORYBOOK_UNLOCK_DONE, uv1)
+			table.insert(slot0.data2_list, table.insert)
+			slot0.data2_list:updateActivity(slot0)
+			slot3:sendNotification(GAME.MEMORYBOOK_UNLOCK_DONE, slot3.sendNotification)
 		else
 			print(slot0.result)
 		end

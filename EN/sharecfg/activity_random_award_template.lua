@@ -1419,3 +1419,5 @@ pg.activity_random_award_template = {
 		16
 	}
 }
+
+return

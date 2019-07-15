@@ -17,12 +17,15 @@ class("WorldSubmitTaskCommand", pm.SimpleCommand).execute = function (slot0, slo
 	end
 
 	function slot12(slot0, slot1, slot2)
+		slot3 = {}
+		slot4 = {}
+
 		for slot9, slot10 in ipairs(slot5) do
-			table.insert({}, Clone(slot10))
+			table.insert(slot3, Clone(slot10))
 			slot10:setIntimacy(slot10:getIntimacy() + slot2)
 			slot10:addExp(slot1)
 			getProxy(BayProxy):updateShip(slot10)
-			table.insert({}, slot10)
+			table.insert(slot4, slot10)
 		end
 
 		return {
@@ -39,30 +42,35 @@ class("WorldSubmitTaskCommand", pm.SimpleCommand).execute = function (slot0, slo
 			slot2 = slot0.exp
 			slot3 = slot0.intimacy
 
-			if uv0:isSharing() then
+			if slot0:isSharing() then
 				for slot8, slot9 in pairs(slot4) do
-					table.insert(slot1, uv2(slot9, slot2, slot3))
+					table.insert(slot1, slot2(slot9, slot2, slot3))
 				end
 			else
-				table.insert(slot1, uv2(slot4, slot2, slot3))
+				table.insert(slot1, slot2(slot4, slot2, slot3))
 			end
 
+			slot4 = {}
+
 			for slot8, slot9 in ipairs(slot0.drops) do
-				table.insert({}, slot10)
-				uv4:sendNotification(GAME.ADD_ITEM, Item.New({
+				table.insert(slot4, slot10)
+				slot4:sendNotification(GAME.ADD_ITEM, Item.New({
 					type = slot9.type,
 					id = slot9.id,
 					count = slot9.number
 				}))
 			end
 
-			uv0:commited()
-			uv5:updateTask(uv0)
-			uv5:riseTaskFinishCount()
-			nil()
+			slot0:commited()
+			slot0.commited:updateTask(slot0)
+			slot0.commited.updateTask:riseTaskFinishCount()
 
-			if uv6 then
-				uv6()
+			slot5 = nil
+
+			slot5()
+
+			if slot5 then
+				slot6()
 			end
 
 			return

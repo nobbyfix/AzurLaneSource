@@ -30,7 +30,7 @@ slot2 = {
 	}
 }
 
-function slot0.Ctor(slot0, slot1, slot2)
+slot0.Ctor = function (slot0, slot1, slot2)
 	slot0._go = go(slot1)
 	slot0._tf = slot1
 	slot0._type = slot2
@@ -47,24 +47,24 @@ function slot0.Ctor(slot0, slot1, slot2)
 	slot0.levelTxt = findTF(slot0.iconTF, "level_bg/Text"):GetComponent(typeof(Text))
 end
 
-function slot0.update(slot0, slot1)
+slot0.update = function (slot0, slot1)
 	slot0.rankVO = slot1
 	slot0.nameTF.text = slot1.name
 	slot0.numberTF.text = slot1:getRank()
-	slot4 = slot1.getRank() > 0 and slot2 or 4
+	slot4 = (slot1.getRank() > 0 and slot2) or 4
 	slot0.levelTxt.text = "Lv." .. slot1.lv
 
 	setActive(slot0.NumImgTF, math.min(setActive, 4) < 4)
 	setImageSprite(slot0.frameTF, GetSpriteFromAtlas("billboardframe", "bg" .. math.min))
 	setImageSprite(slot0.NumImgTF, GetSpriteFromAtlas("billboardframe", "bgn" .. math.min), true)
 
-	slot0.frameBgTF.color = Color.New(uv0[math.min][1], uv0[math.min][2], uv0[math.min][3])
+	slot0.frameBgTF.color = Color.New(slot0[math.min][1], slot0[math.min][2], slot0[math.min][3])
 
-	if slot0._type == uv1.TYPE_OTHER then
+	if slot0._type == slot1.TYPE_OTHER then
 		setActive(slot0.numberTF, slot3 >= 4)
 
-		slot0.scoreTF.text = setColorStr(slot1:getPowerTxt(), uv2[slot3])
-	elseif slot0._type == uv1.TYPE_SELF then
+		slot0.scoreTF.text = setColorStr(slot1:getPowerTxt(), slot2[slot3])
+	elseif slot0._type == slot1.TYPE_SELF then
 		setActive(slot0.numberTF, slot2 ~= 0 and slot3 >= 4)
 		setActive(slot0.notonlistTF, slot2 == 0)
 
@@ -102,14 +102,15 @@ function slot0.update(slot0, slot1)
 	TweenItemAlphaAndWhite(slot0._go)
 end
 
-function slot0.clear(slot0)
+slot0.clear = function (slot0)
 	setActive(slot0.notonlistTF, false)
 
 	slot0.scoreTF.text = 0
 	slot0.numberTF.text = 0
 end
 
-function slot0.dispose(slot0, ...)
+slot0.dispose = function (slot0, ...)
+	return
 end
 
 return slot0

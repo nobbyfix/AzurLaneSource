@@ -5,9 +5,9 @@ slot0.Purple = 4
 slot0.Gold = 5
 slot0.SSR = 6
 
-function slot0.Rarity2Print(slot0)
-	if not uv0.prints then
-		uv0.prints = {
+slot0.Rarity2Print = function (slot0)
+	if not slot0.prints then
+		slot0.prints = {
 			nil,
 			"1",
 			"2",
@@ -17,12 +17,12 @@ function slot0.Rarity2Print(slot0)
 		}
 	end
 
-	return uv0.prints[slot0]
+	return slot0.prints[slot0]
 end
 
-function slot0.Rarity2HexColor(slot0)
-	if not uv0.colors then
-		uv0.colors = {
+slot0.Rarity2HexColor = function (slot0)
+	if not slot0.colors then
+		slot0.colors = {
 			"FFFFFFFF",
 			"FFFFFFFF",
 			"41D7FFFF",
@@ -32,12 +32,12 @@ function slot0.Rarity2HexColor(slot0)
 		}
 	end
 
-	return uv0.colors[slot0]
+	return slot0.colors[slot0]
 end
 
-function slot0.Rarity2FrameColor(slot0)
-	if not uv0.frameColors then
-		uv0.frameColors = {
+slot0.Rarity2FrameColor = function (slot0)
+	if not slot0.frameColors then
+		slot0.frameColors = {
 			Color(0.7411764705882353, 0.7411764705882353, 0.7411764705882353, 1),
 			Color(0.7411764705882353, 0.7411764705882353, 0.7411764705882353, 1),
 			Color(0.396078431372549, 0.7803921568627451, 1, 1),
@@ -47,10 +47,10 @@ function slot0.Rarity2FrameColor(slot0)
 		}
 	end
 
-	return uv0.frameColors[slot0]
+	return slot0.frameColors[slot0]
 end
 
-function slot0.SSRGradient(slot0)
+slot0.SSRGradient = function (slot0)
 	return "<material=outline c=#00000040 x=1 y=1><material=gradient from=#FF0000 to=#00FF00 x=1 y=1>" .. slot0 .. "</material></material>"
 end
 

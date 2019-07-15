@@ -3,11 +3,11 @@ slot1 = require("string")
 slot2 = require("math")
 
 require("socket.core").connect4 = function (slot0, slot1, slot2, slot3)
-	return uv0.connect(slot0, slot1, slot2, slot3, "inet")
+	return slot0:connect(slot1, slot2, slot3, "inet")
 end
 
 require("socket.core").connect6 = function (slot0, slot1, slot2, slot3)
-	return uv0.connect(slot0, slot1, slot2, slot3, "inet6")
+	return slot0:connect(slot1, slot2, slot3, "inet6")
 end
 
 require("socket.core").bind = function (slot0, slot1, slot2)
@@ -15,7 +15,7 @@ require("socket.core").bind = function (slot0, slot1, slot2)
 		slot0 = "0.0.0.0"
 	end
 
-	slot3, slot4 = uv0.dns.getaddrinfo(slot0)
+	slot3, slot4 = slot0.dns.getaddrinfo(slot0)
 
 	if not slot3 then
 		return nil, slot4
@@ -24,11 +24,11 @@ require("socket.core").bind = function (slot0, slot1, slot2)
 	slot5, slot6 = nil
 	slot4 = "no info on address"
 
-	for slot10, slot11 in uv1.ipairs(slot3) do
+	for slot10, slot11 in slot1.ipairs(slot3) do
 		if slot11.family == "inet" then
-			slot5, slot4 = uv0.tcp4()
+			slot5, slot4 = slot0.tcp4()
 		else
-			slot5, slot4 = uv0.tcp6()
+			slot5, slot4 = slot0.tcp6()
 		end
 
 		if not slot5 then
@@ -59,14 +59,14 @@ require("socket.core").try = require("socket.core").newtry()
 
 require("socket.core").choose = function (slot0)
 	return function (slot0, slot1, slot2)
-		if uv0.type(slot0) ~= "string" then
+		if slot0:type() ~= "string" then
 			slot2 = slot1
 			slot1 = slot0
 			slot0 = "default"
 		end
 
-		if not uv1[slot0 or "nil"] then
-			uv0.error("unknown key (" .. uv0.tostring(slot0) .. ")", 3)
+		if not slot1[slot0 or "nil"] then
+			slot0.error("unknown key (" .. slot0:tostring() .. ")", 3)
 		else
 			return slot3(slot1, slot2)
 		end
@@ -75,26 +75,26 @@ end
 
 require("socket.core").sourcet = {
 	["by-length"] = function (slot0, slot1)
-		return uv0.setmetatable({
+		return slot0.setmetatable({
 			getfd = function ()
-				return uv0:getfd()
+				return slot0:getfd()
 			end,
 			dirty = function ()
-				return uv0:dirty()
+				return slot0:dirty()
 			end
 		}, {
 			__call = function ()
-				if uv0 <= 0 then
+				if slot0 <= 0 then
 					return nil
 				end
 
-				slot1, slot2 = uv3:receive(uv1.min(uv2.BLOCKSIZE, uv0))
+				slot1, slot2 = slot3:receive(slot1.min(slot2.BLOCKSIZE, slot1.min))
 
 				if slot2 then
 					return nil, slot2
 				end
 
-				uv0 = uv0 - uv4.len(slot1)
+				slot0 = slot0 - slot4.len(slot1)
 
 				return slot1
 			end
@@ -103,27 +103,27 @@ require("socket.core").sourcet = {
 	["until-closed"] = function (slot0)
 		slot1 = nil
 
-		return uv0.setmetatable({
+		return slot0.setmetatable({
 			getfd = function ()
-				return uv0:getfd()
+				return slot0:getfd()
 			end,
 			dirty = function ()
-				return uv0:dirty()
+				return slot0:dirty()
 			end
 		}, {
 			__call = function ()
-				if uv0 then
+				if slot0 then
 					return nil
 				end
 
-				slot0, slot1, slot2 = uv1:receive(uv2.BLOCKSIZE)
+				slot0, slot1, slot2 = slot1:receive(slot2.BLOCKSIZE)
 
 				if not slot1 then
 					return slot0
 				elseif slot1 == "closed" then
-					uv1:close()
+					slot1:close()
 
-					uv0 = 1
+					slot0 = 1
 
 					return slot2
 				else
@@ -136,37 +136,37 @@ require("socket.core").sourcet = {
 }
 require("socket.core").sinkt = {
 	["close-when-done"] = function (slot0)
-		return uv0.setmetatable({
+		return slot0.setmetatable({
 			getfd = function ()
-				return uv0:getfd()
+				return slot0:getfd()
 			end,
 			dirty = function ()
-				return uv0:dirty()
+				return slot0:dirty()
 			end
 		}, {
 			__call = function (slot0, slot1, slot2)
 				if not slot1 then
-					uv0:close()
+					slot0:close()
 
 					return 1
 				else
-					return uv0:send(slot1)
+					return slot0:send(slot1)
 				end
 			end
 		})
 	end,
 	["keep-open"] = function (slot0)
-		return uv0.setmetatable({
+		return slot0.setmetatable({
 			getfd = function ()
-				return uv0:getfd()
+				return slot0:getfd()
 			end,
 			dirty = function ()
-				return uv0:dirty()
+				return slot0:dirty()
 			end
 		}, {
 			__call = function (slot0, slot1, slot2)
 				if slot1 then
-					return uv0:send(slot1)
+					return slot0:send(slot1)
 				else
 					return 1
 				end

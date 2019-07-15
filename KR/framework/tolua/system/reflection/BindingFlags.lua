@@ -24,10 +24,12 @@ System.Reflection.BindingFlags = {
 	PutDispProperty = 16384,
 	IgnoreCase = 1,
 	GetMask = function (...)
+		slot1 = 0
+
 		for slot5 = 1, #{
 			...
 		}, 1 do
-			slot1 = 0 + slot0[slot5]
+			slot1 = slot1 + slot0[slot5]
 		end
 
 		return slot1

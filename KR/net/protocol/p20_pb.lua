@@ -435,3 +435,5 @@ task_add = slot0.Message(TASK_ADD)
 task_info = slot0.Message(TASK_INFO)
 task_progress = slot0.Message(TASK_PROGRESS)
 task_update = slot0.Message(TASK_UPDATE)
+
+return

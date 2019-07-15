@@ -3,7 +3,7 @@ slot0.TypeCard = 1
 slot0.TypeTrans = 2
 slot1 = pg.ship_data_group
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.go = slot1
 	slot0.tr = slot1.transform
 	slot0.btn = GetOrAddComponent(slot1, "Button")
@@ -26,29 +26,31 @@ function slot0.Ctor(slot0, slot1)
 	slot0.imageUnknown = findTF(slot0.tr, "unknown"):GetComponent(typeof(Image))
 end
 
-function slot0.update(slot0, slot1, slot2, slot3, slot4, slot5)
-	if slot0.code ~= slot1 or slot0.shipGroup ~= slot2 or slot0.showTrans ~= slot3 or slot0.propose ~= slot4 or slot0.state ~= ShipGroup.getState(slot5, slot2, slot3) then
+slot0.update = function (slot0, slot1, slot2, slot3, slot4, slot5)
+	slot6 = ShipGroup.getState(slot5, slot2, slot3)
+
+	if slot0.code ~= slot1 or slot0.shipGroup ~= slot2 or slot0.showTrans ~= slot3 or slot0.propose ~= slot4 or slot0.state ~= slot6 then
 		slot0.code = slot1
 		slot0.shipGroup = slot2
 		slot0.showTrans = slot3
 		slot0.propose = slot4
-		slot0.state = ShipGroup.getState(slot5, slot2, slot3)
-		slot0.config = uv0[slot5]
+		slot0.state = slot6
+		slot0.config = slot0[slot5]
 
 		slot0:flush()
 	end
 end
 
-function slot0.flush(slot0)
+slot0.flush = function (slot0)
 	if slot0.shipGroup then
 		slot2 = slot1.shipConfig
 		slot3 = slot1:getRarity(slot0.showTrans)
-		slot0.imageBg.sprite = GetSpriteFromAtlas("bg/star_level_card_" .. (slot1:isBluePrintGroup() and "0" or ""), "")
+		slot0.imageBg.sprite = GetSpriteFromAtlas("bg/star_level_card_" .. ((slot1:isBluePrintGroup() and "0") or ""), "")
 		slot0.iconShip.sprite = GetSpriteFromAtlas("shipYardIcon/unknown", "")
 
 		LoadSpriteAsync("shipYardIcon/" .. slot5, function (slot0)
-			if uv0.go then
-				uv0.iconShip.sprite = slot0
+			if slot0.go then
+				slot0.iconShip.sprite = slot0
 			end
 		end)
 
@@ -56,26 +58,26 @@ function slot0.flush(slot0)
 
 		slot0.labelName:setText(slot1:getName(slot0.showTrans))
 
-		slot0.labelHeart.text = slot1.hearts > 999 and "999" or tostring(slot1.hearts)
+		slot0.labelHeart.text = (slot1.hearts > 999 and "999") or tostring(slot1.hearts)
 
 		setActive(slot0.labelHeartPlus, slot1.hearts > 999)
 
-		slot0.labelHeart.color = slot1.iheart and Color.New(1, 0.6, 0.6) or Color.New(1, 1, 1)
-		slot0.labelHeartIcon.color = slot1.iheart and Color.New(1, 0.6, 0.6) or Color.New(1, 1, 1)
-		slot0.labelHeartPlus.color = slot1.iheart and Color.New(1, 0.6, 0.6) or Color.New(1, 1, 1)
+		slot0.labelHeart.color = (slot1.iheart and Color.New(1, 0.6, 0.6)) or Color.New(1, 1, 1)
+		slot0.labelHeartIcon.color = (slot1.iheart and Color.New(1, 0.6, 0.6)) or Color.New(1, 1, 1)
+		slot0.labelHeartPlus.color = (slot1.iheart and Color.New(1, 0.6, 0.6)) or Color.New(1, 1, 1)
 
-		setShipCardFrame(slot0.shipFrameImg, slot1.isBluePrintGroup() and "0" or "")
+		setShipCardFrame(slot0.shipFrameImg, (slot1.isBluePrintGroup() and "0") or "")
 	end
 
 	slot0.content:SetActive(slot1)
 	slot0.imageUnknown.gameObject:SetActive(not slot1)
 
-	slot0.btn.targetGraphic = slot1 and slot0.imageFrame or slot0.imageUnknown
+	slot0.btn.targetGraphic = (slot1 and slot0.imageFrame) or slot0.imageUnknown
 
 	setActive(slot0.ringTF, slot0.propose)
 end
 
-function slot0.clear(slot0)
+slot0.clear = function (slot0)
 	slot0.labelName:clear()
 
 	slot0.shipGroup = nil

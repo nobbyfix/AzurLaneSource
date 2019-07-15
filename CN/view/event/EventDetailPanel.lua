@@ -1,7 +1,7 @@
 EventConst = require("view/event/EventConst")
 slot0 = class("EventDetailPanel")
 
-function slot0.Ctor(slot0, slot1, slot2)
+slot0.Ctor = function (slot0, slot1, slot2)
 	pg.DelegateInfo.New(slot0)
 
 	slot0.go = slot1
@@ -21,33 +21,33 @@ function slot0.Ctor(slot0, slot1, slot2)
 	slot0.shipItems = {}
 
 	eachChild(slot0.leftShips, function (slot0)
-		table.insert(uv0.shipItems, 1, slot0)
+		table.insert(slot0.shipItems, 1, slot0)
 	end)
 	eachChild(slot0.rightShips, function (slot0)
-		table.insert(uv0.shipItems, 4, slot0)
+		table.insert(slot0.shipItems, 4, slot0)
 	end)
 	onButton(slot0, slot0.btn, function ()
-		uv0:onFuncClick()
+		slot0:onFuncClick()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.recommentBtn, function ()
-		uv0.dispatch(EventConst.EVENT_RECOMMEND, uv0.event)
+		slot0.dispatch(EventConst.EVENT_RECOMMEND, slot0.event)
 	end)
 end
 
-function slot0.Update(slot0, slot1, slot2)
+slot0.Update = function (slot0, slot1, slot2)
 	slot0.index = slot1
 	slot0.event = slot2
 
 	slot0:Flush()
 end
 
-function slot0.Flush(slot0)
+slot0.Flush = function (slot0)
 	eachChild(slot0.btn, function (slot0)
-		if uv0.event.state == EventInfo.StateNone and slot0.name == "start" then
+		if slot0.event.state == EventInfo.StateNone and slot0.name == "start" then
 			SetActive(slot0, true)
-		elseif uv0.event.state == EventInfo.StateActive and slot0.name == "giveup" then
+		elseif slot0.event.state == EventInfo.StateActive and slot0.name == "giveup" then
 			SetActive(slot0, true)
-		elseif uv0.event.state == EventInfo.StateFinish and slot0.name == "finish" then
+		elseif slot0.event.state == EventInfo.StateFinish and slot0.name == "finish" then
 			SetActive(slot0, true)
 		else
 			SetActive(slot0, false)
@@ -73,20 +73,20 @@ function slot0.Flush(slot0)
 	setText(slot0.consume, slot0.event:getOilConsume())
 
 	for slot12, slot13 in ipairs(slot0.shipItems) do
-		SetActive(slot13:Find("shiptpl"), slot12 <= #slot0.event.ships)
-		SetActive(slot13:Find("emptytpl"), not (slot12 <= #slot0.event.ships))
+		SetActive(slot13:Find("shiptpl"), slot12 <= #slot4)
+		SetActive(slot13:Find("emptytpl"), not (slot12 <= #slot4))
 
-		if slot12 <= #slot0.event.ships then
+		if slot16 then
 			updateShip(slot14, slot4[slot12], {
 				initStar = true
 			})
 			setText(findTF(slot14, "icon_bg/lv/Text"), slot4[slot12].level)
 			onButton(slot0, slot14:Find("icon_bg"), function ()
-				uv0:onRemoveClick(uv1)
+				slot0:onRemoveClick(slot0)
 			end, SFX_PANEL)
 		else
 			onButton(slot0, slot15, function ()
-				uv0:onChangeClick()
+				slot0:onChangeClick()
 			end)
 		end
 	end
@@ -100,24 +100,24 @@ function slot0.Flush(slot0)
 	end
 end
 
-function slot0.setConditionStr(slot0, slot1, slot2)
-	return slot2 and setColorStr(slot1, COLOR_YELLOW) or setColorStr(slot1, "#F35842FF")
+slot0.setConditionStr = function (slot0, slot1, slot2)
+	return (slot2 and setColorStr(slot1, COLOR_YELLOW)) or setColorStr(slot1, "#F35842FF")
 end
 
-function slot0.Clear(slot0)
+slot0.Clear = function (slot0)
 	pg.DelegateInfo.Dispose(slot0)
 	slot0.condition1:destroy()
 	slot0.condition2:destroy()
 	slot0.condition3:destroy()
 end
 
-function slot0.onChangeClick(slot0)
+slot0.onChangeClick = function (slot0)
 	if slot0.event.state == EventInfo.StateNone then
 		slot0.dispatch(EventConst.EVENT_OPEN_DOCK, slot0.event)
 	end
 end
 
-function slot0.onRemoveClick(slot0, slot1)
+slot0.onRemoveClick = function (slot0, slot1)
 	if slot0.event.state == EventInfo.StateNone then
 		table.remove(slot0.event.shipIds, slot1)
 		table.remove(slot0.event.ships, slot1)
@@ -125,7 +125,7 @@ function slot0.onRemoveClick(slot0, slot1)
 	end
 end
 
-function slot0.onFuncClick(slot0)
+slot0.onFuncClick = function (slot0)
 	if slot0.event.state == EventInfo.StateNone then
 		slot0.dispatch(EventConst.EVENT_START, slot0.event)
 	elseif slot0.event.state == EventInfo.StateActive then
@@ -135,7 +135,7 @@ function slot0.onFuncClick(slot0)
 	end
 end
 
-function slot0.findTF(slot0, slot1)
+slot0.findTF = function (slot0, slot1)
 	return findTF(slot0.tr, slot1)
 end
 

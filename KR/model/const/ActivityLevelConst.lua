@@ -1,6 +1,6 @@
 slot0 = class("ActivityLevelConst")
 
-function slot0.hasExtraMap(slot0)
+slot0.hasExtraMap = function (slot0)
 	for slot4, slot5 in pairs(slot0) do
 		if slot5:isActExtra() then
 			return slot5
@@ -10,7 +10,7 @@ function slot0.hasExtraMap(slot0)
 	return nil
 end
 
-function slot0.isClearMaps(slot0, slot1)
+slot0.isClearMaps = function (slot0, slot1)
 	for slot5, slot6 in pairs(slot0) do
 		if slot6:getConfig("type") == slot1 and not slot6:isClearForActivity() then
 			return false
@@ -20,15 +20,17 @@ function slot0.isClearMaps(slot0, slot1)
 	return true
 end
 
-function slot0.canSwitchToEx(slot0, slot1)
+slot0.canSwitchToEx = function (slot0, slot1)
+	function slot2(slot0)
+		if slot0[pg.chapter_template[slot0].map] then
+			return slot2:getChapter(slot0):isClear()
+		end
+	end
+
 	slot3 = false
 
 	for slot7, slot8 in pairs(slot1.chapters) do
-		if slot8:getConfig("pre_chapter") == 0 or function (slot0)
-			if uv0[pg.chapter_template[slot0].map] then
-				return slot2:getChapter(slot0):isClear()
-			end
-		end(slot9) then
+		if slot8:getConfig("pre_chapter") == 0 or slot2(slot9) then
 			slot3 = true
 		end
 
@@ -38,10 +40,12 @@ function slot0.canSwitchToEx(slot0, slot1)
 	return slot3
 end
 
-function slot0.getMapsByType(slot0, slot1, slot2)
+slot0.getMapsByType = function (slot0, slot1, slot2)
+	slot3 = {}
+
 	for slot7, slot8 in pairs(slot0) do
 		if slot8:getConfig("type") == slot1 and slot8:getConfig("on_activity") == slot2 then
-			table.insert({}, slot8)
+			table.insert(slot3, slot8)
 		end
 	end
 
@@ -52,7 +56,7 @@ function slot0.getMapsByType(slot0, slot1, slot2)
 	return slot3
 end
 
-function slot0.getMapsByActivityType(slot0, slot1)
+slot0.getMapsByActivityType = function (slot0, slot1)
 	slot2 = getProxy(ActivityProxy):getActivitiesByType(slot1)
 	slot3 = {}
 
@@ -73,11 +77,11 @@ function slot0.getMapsByActivityType(slot0, slot1)
 	return slot3
 end
 
-function slot0.isExtraBossChapter(slot0, slot1)
+slot0.isExtraBossChapter = function (slot0, slot1)
 	return slot0:getConfig("config_data")[1] == slot1
 end
 
-function slot0.getExtraChapterSocre(slot0, slot1, slot2, slot3)
+slot0.getExtraChapterSocre = function (slot0, slot1, slot2, slot3)
 	if not slot3 or slot3:isEnd() then
 		return 0, 0
 	end
@@ -92,9 +96,11 @@ function slot0.getExtraChapterSocre(slot0, slot1, slot2, slot3)
 	return math.floor(slot5), math.floor(slot3:getData1() or 0)
 end
 
-function slot0.getShipsPower(slot0)
+slot0.getShipsPower = function (slot0)
+	slot1 = 0
+
 	for slot5, slot6 in pairs(slot0) do
-		slot1 = 0 + math.floor(slot6:getShipCombatPower())
+		slot1 = slot1 + math.floor(slot6:getShipCombatPower())
 	end
 
 	return slot1

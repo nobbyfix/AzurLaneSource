@@ -4,39 +4,40 @@ slot0.OPEN_TASK = "GuildEventMediator:OPEN_TASK"
 slot0.OPEN_RANK = "GuildEventMediator:OPEN_RANK"
 slot0.ON_PRE_COMBAT = "GuildEventMediator:ON_PRE_COMBAT"
 
-function slot0.register(slot0)
-	getProxy(GuildProxy).eventTip = nil
+slot0.register = function (slot0)
+	slot1 = getProxy(GuildProxy)
+	slot1.eventTip = nil
 
 	slot0.viewComponent:setEvent(slot2)
 	slot0.viewComponent:setPlayerVO(slot4)
-	slot0:bind(uv0.GET_RANK_LIST, function (slot0)
-		uv0:sendNotification(GAME.GET_GUILD_MEMBER_RANK)
+	slot0:bind(slot0.GET_RANK_LIST, function (slot0)
+		slot0:sendNotification(GAME.GET_GUILD_MEMBER_RANK)
 	end)
-	slot0:bind(uv0.OPEN_TASK, function (slot0)
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.OPEN_TASK, function (slot0)
+		slot0:addSubLayers(Context.New({
 			viewComponent = GuildTaskLayer,
 			mediator = GuildTaskMediator
 		}))
 	end)
-	slot0:bind(uv0.OPEN_RANK, function (slot0)
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.OPEN_RANK, function (slot0)
+		slot0:addSubLayers(Context.New({
 			viewComponent = GuildRankLayer,
 			mediator = GuildRankMediator
 		}))
 	end)
-	slot0:bind(uv0.ON_PRE_COMBAT, function (slot0)
+	slot0:bind(slot0.ON_PRE_COMBAT, function (slot0)
 		if not getProxy(ChapterProxy):getGuildChapter() then
 			return
 		end
 
 		if slot2.active then
-			uv0:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
+			slot0:sendNotification(GAME.GO_SCENE, SCENE.LEVEL, {
 				chapterId = slot2 and slot2.id,
 				mapIdx = slot2 and slot2:getConfig("map"),
 				chapterVO = slot2
 			})
 		else
-			uv0:addSubLayers(Context.New({
+			slot0:addSubLayers(Context.New({
 				mediator = GuildPreCombatMediator,
 				viewComponent = GuildPreCombatLayer,
 				data = {
@@ -47,13 +48,13 @@ function slot0.register(slot0)
 	end)
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		GuildProxy.UPDATED_EVENT
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == GuildProxy.UPDATED_EVENT then

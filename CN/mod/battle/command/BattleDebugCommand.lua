@@ -5,37 +5,39 @@ slot3 = class("BattleDebugCommand", ys.MVC.Command)
 ys.Battle.BattleDebugCommand = slot3
 slot3.__name = "BattleDebugCommand"
 
-function slot3.Ctor(slot0)
-	uv0.super.Ctor(slot0)
+slot3.Ctor = function (slot0)
+	slot0.super.Ctor(slot0)
 end
 
-function slot3.Initialize(slot0)
+slot3.Initialize = function (slot0)
 	slot0:Init()
-	uv0.super.Initialize(slot0)
+	slot0.super.Initialize(slot0)
 
-	slot0._dataProxy = slot0._state:GetProxyByName(uv1.Battle.BattleDataProxy.__name)
-	slot0._uiMediator = slot0._state:GetMediatorByName(uv1.Battle.BattleUIMediator.__name)
+	slot0._dataProxy = slot0._state:GetProxyByName(slot1.Battle.BattleDataProxy.__name)
+	slot0._uiMediator = slot0._state:GetMediatorByName(slot1.Battle.BattleUIMediator.__name)
 
 	slot0:AddEvent()
 end
 
-function slot3.DoPrologue(slot0)
+slot3.DoPrologue = function (slot0)
+
+	-- Decompilation error in this vicinity:
 	function ()
-		uv0._uiMediator:OpeningEffect(function ()
-			uv0._uiMediator:ShowAutoBtn()
-			uv0._uiMediator:ShowTimer()
-			uv0._state:ChangeState(uv1.Battle.BattleState.BATTLE_STATE_FIGHT)
+		slot0._uiMediator:OpeningEffect(function ()
+			slot0._uiMediator:ShowAutoBtn()
+			slot0._uiMediator.ShowAutoBtn._uiMediator:ShowTimer()
+			slot0._uiMediator.ShowAutoBtn._uiMediator.ShowTimer._state:ChangeState(slot1.Battle.BattleState.BATTLE_STATE_FIGHT)
 		end)
-		uv0._dataProxy:InitAllFleetUnitsWeaponCD()
-		uv0._dataProxy:TirggerBattleStartBuffs()
+		slot0._uiMediator.OpeningEffect._dataProxy:InitAllFleetUnitsWeaponCD()
+		slot0._uiMediator.OpeningEffect._dataProxy.InitAllFleetUnitsWeaponCD._dataProxy:TirggerBattleStartBuffs()
 	end()
 end
 
-function slot3.Init(slot0)
+slot3.Init = function (slot0)
 	slot0._unitDataList = {}
 end
 
-function slot3.Clear(slot0)
+slot3.Clear = function (slot0)
 	for slot4, slot5 in pairs(slot0._unitDataList) do
 		slot0:UnregisterUnitEvent(slot5)
 
@@ -43,68 +45,67 @@ function slot3.Clear(slot0)
 	end
 end
 
-function slot3.Reinitialize(slot0)
+slot3.Reinitialize = function (slot0)
 	slot0._state:Deactive()
 	slot0:Clear()
 	slot0:Init()
 end
 
-function slot3.Dispose(slot0)
-	uv0.Battle.BattleDataProxy.Update = uv0.Battle.BattleDebugConsole.ProxyUpdateNormal
-	uv0.Battle.BattleDataProxy.UpdateAutoComponent = uv0.Battle.BattleDebugConsole.ProxyUpdateAutoComponentNormal
+slot3.Dispose = function (slot0)
+	slot0.Battle.BattleDataProxy.Update = slot0.Battle.BattleDebugConsole.ProxyUpdateNormal
+	slot0.Battle.BattleDataProxy.UpdateAutoComponent = slot0.Battle.BattleDebugConsole.ProxyUpdateAutoComponentNormal
 
 	slot0:Clear()
 	slot0:RemoveEvent()
-	uv1.super.Dispose(slot0)
+	slot0.RemoveEvent.super.Dispose(slot0)
 end
 
-function slot3.AddEvent(slot0)
-	slot0._dataProxy:RegisterEventListener(slot0, uv0.STAGE_DATA_INIT_FINISH, slot0.onInitBattle)
-	slot0._dataProxy:RegisterEventListener(slot0, uv0.ADD_UNIT, slot0.onAddUnit)
-	slot0._dataProxy:RegisterEventListener(slot0, uv0.REMOVE_UNIT, slot0.onRemoveUnit)
-	slot0._dataProxy:RegisterEventListener(slot0, uv0.SHUT_DOWN_PLAYER, slot0.onPlayerShutDown)
+slot3.AddEvent = function (slot0)
+	slot0._dataProxy:RegisterEventListener(slot0, slot0.STAGE_DATA_INIT_FINISH, slot0.onInitBattle)
+	slot0._dataProxy:RegisterEventListener(slot0, slot0.ADD_UNIT, slot0.onAddUnit)
+	slot0._dataProxy:RegisterEventListener(slot0, slot0.REMOVE_UNIT, slot0.onRemoveUnit)
+	slot0._dataProxy:RegisterEventListener(slot0, slot0.SHUT_DOWN_PLAYER, slot0.onPlayerShutDown)
 end
 
-function slot3.RemoveEvent(slot0)
-	slot0._dataProxy:UnregisterEventListener(slot0, uv0.STAGE_DATA_INIT_FINISH)
-	slot0._dataProxy:UnregisterEventListener(slot0, uv0.ADD_UNIT)
-	slot0._dataProxy:UnregisterEventListener(slot0, uv0.REMOVE_UNIT)
-	slot0._dataProxy:UnregisterEventListener(slot0, uv0.SHUT_DOWN_PLAYER)
+slot3.RemoveEvent = function (slot0)
+	slot0._dataProxy:UnregisterEventListener(slot0, slot0.STAGE_DATA_INIT_FINISH)
+	slot0._dataProxy:UnregisterEventListener(slot0, slot0.ADD_UNIT)
+	slot0._dataProxy:UnregisterEventListener(slot0, slot0.REMOVE_UNIT)
+	slot0._dataProxy:UnregisterEventListener(slot0, slot0.SHUT_DOWN_PLAYER)
 end
 
-function slot3.onInitBattle(slot0)
-	slot0._userFleet = slot0._dataProxy:GetFleetByIFF(uv0.Battle.BattleConfig.FRIENDLY_CODE)
+slot3.onInitBattle = function (slot0)
+	slot0._userFleet = slot0._dataProxy:GetFleetByIFF(slot0.Battle.BattleConfig.FRIENDLY_CODE)
 end
 
-function slot3.onAddUnit(slot0, slot1)
+slot3.onAddUnit = function (slot0, slot1)
 	slot0:RegisterUnitEvent(slot3)
 
 	slot0._unitDataList[slot1.Data.unit:GetUniqueID()] = slot1.Data.unit
 
-	if slot1.Data.type ~= uv0.Battle.BattleConst.UnitType.ENEMY_UNIT and slot2 ~= uv0.Battle.BattleConst.UnitType.BOSS_UNIT and slot2 == uv0.Battle.BattleConst.UnitType.NPC_UNIT then
-		-- Nothing
+	if slot1.Data.type ~= slot0.Battle.BattleConst.UnitType.ENEMY_UNIT and slot2 ~= slot0.Battle.BattleConst.UnitType.BOSS_UNIT and slot2 == slot0.Battle.BattleConst.UnitType.NPC_UNIT then
 	end
 end
 
-function slot3.RegisterUnitEvent(slot0, slot1)
-	slot1:RegisterEventListener(slot0, uv0.WILL_DIE, slot0.onWillDie)
-	slot1:RegisterEventListener(slot0, uv0.DYING, slot0.onUnitDying)
+slot3.RegisterUnitEvent = function (slot0, slot1)
+	slot1:RegisterEventListener(slot0, slot0.WILL_DIE, slot0.onWillDie)
+	slot1:RegisterEventListener(slot0, slot0.DYING, slot0.onUnitDying)
 
-	if slot1:GetUnitType() == uv1.Battle.BattleConst.UnitType.PLAYER_UNIT then
-		slot1:RegisterEventListener(slot0, uv0.SHUT_DOWN_PLAYER, slot0.onShutDownPlayer)
+	if slot1:GetUnitType() == slot1.Battle.BattleConst.UnitType.PLAYER_UNIT then
+		slot1:RegisterEventListener(slot0, slot0.SHUT_DOWN_PLAYER, slot0.onShutDownPlayer)
 	end
 end
 
-function slot3.UnregisterUnitEvent(slot0, slot1)
-	slot1:UnregisterEventListener(slot0, uv0.WILL_DIE)
-	slot1:UnregisterEventListener(slot0, uv0.DYING)
+slot3.UnregisterUnitEvent = function (slot0, slot1)
+	slot1:UnregisterEventListener(slot0, slot0.WILL_DIE)
+	slot1:UnregisterEventListener(slot0, slot0.DYING)
 
-	if slot1:GetUnitType() == uv1.Battle.BattleConst.UnitType.PLAYER_UNIT then
-		slot1:UnregisterEventListener(slot0, uv0.SHUT_DOWN_PLAYER)
+	if slot1:GetUnitType() == slot1.Battle.BattleConst.UnitType.PLAYER_UNIT then
+		slot1:UnregisterEventListener(slot0, slot0.SHUT_DOWN_PLAYER)
 	end
 end
 
-function slot3.onRemoveUnit(slot0, slot1)
+slot3.onRemoveUnit = function (slot0, slot1)
 	if slot0._unitDataList[slot1.Data.UID] == nil then
 		return
 	end
@@ -114,42 +115,46 @@ function slot3.onRemoveUnit(slot0, slot1)
 	slot0._unitDataList[slot2] = nil
 end
 
-function slot3.onPlayerShutDown(slot0, slot1)
+slot3.onPlayerShutDown = function (slot0, slot1)
 	if slot1.Data.unit == slot0._userFleet:GetMainList() == 0 then
 		slot0._dataProxy:KillAllAirStrike()
 		slot0._dataProxy:KillAllEnemy()
-		slot0._dataProxy:CLSBullet(uv0.Battle.BattleConfig.FRIENDLY_CODE)
-		slot0._dataProxy:CLSBullet(uv0.Battle.BattleConfig.FOE_CODE)
+		slot0._dataProxy:CLSBullet(slot0.Battle.BattleConfig.FRIENDLY_CODE)
+		slot0._dataProxy:CLSBullet(slot0.Battle.BattleConfig.FOE_CODE)
 
 		for slot7, slot8 in ipairs(slot3) do
-			slot0._dataProxy:SpawnMain(slot8, uv0.Battle.BattleConfig.FRIENDLY_CODE)
+			slot0._dataProxy:SpawnMain(slot8, slot0.Battle.BattleConfig.FRIENDLY_CODE)
 		end
 	end
 
 	if #slot0._userFleet:GetScoutList() == 0 then
 		slot0._dataProxy:KillAllAirStrike()
 		slot0._dataProxy:KillAllEnemy()
-		slot0._dataProxy:CLSBullet(uv0.Battle.BattleConfig.FRIENDLY_CODE)
-		slot0._dataProxy:CLSBullet(uv0.Battle.BattleConfig.FOE_CODE)
+		slot0._dataProxy:CLSBullet(slot0.Battle.BattleConfig.FRIENDLY_CODE)
+		slot0._dataProxy:CLSBullet(slot0.Battle.BattleConfig.FOE_CODE)
 
 		for slot7, slot8 in ipairs(slot3) do
-			slot0._dataProxy:SpawnVanguard(slot8, uv0.Battle.BattleConfig.FRIENDLY_CODE)
+			slot0._dataProxy:SpawnVanguard(slot8, slot0.Battle.BattleConfig.FRIENDLY_CODE)
 		end
 	end
 end
 
-function slot3.onUnitDying(slot0, slot1)
+slot3.onUnitDying = function (slot0, slot1)
 	slot0._dataProxy:KillUnit(slot1.Dispatcher.GetUniqueID(slot2))
 end
 
-function slot3.onWillDie(slot0, slot1)
+slot3.onWillDie = function (slot0, slot1)
 	slot0._dataProxy:CalcBattleScoreWhenDead(slot2)
 
-	if slot1.Dispatcher:IsBoss() and not slot0._dataProxy:IsThereBoss() then
+	slot3 = slot0._dataProxy:IsThereBoss()
+
+	if slot1.Dispatcher:IsBoss() and not slot3 then
 		slot0._dataProxy:KillAllEnemy()
 	end
 end
 
-function slot3.onShutDownPlayer(slot0, slot1)
+slot3.onShutDownPlayer = function (slot0, slot1)
 	slot0._dataProxy:ShutdownPlayerUnit(slot1.Dispatcher.GetUniqueID(slot2))
 end
+
+return

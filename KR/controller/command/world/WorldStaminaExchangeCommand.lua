@@ -6,13 +6,14 @@ class("WorldStaminaExchangeCommand", pm.SimpleCommand).execute = function (slot0
 		type = 1
 	}, 33109, function (slot0)
 		if slot0.result == 0 then
-			player = getProxy(PlayerProxy).getRawData(slot1)
+			slot1 = getProxy(PlayerProxy)
+			player = slot1:getRawData()
 
 			player:consume({
-				oil = uv0
+				oil = slot0
 			})
-			uv1:ExchangeStamina(uv2)
-			uv3:sendNotification(GAME.WORLD_STAMINA_EXCHANGE_DONE)
+			slot1:ExchangeStamina(slot1.ExchangeStamina)
+			slot1:sendNotification(GAME.WORLD_STAMINA_EXCHANGE_DONE)
 		else
 			pg.TipsMgr.GetInstance():ShowTips(errorTip("world_stamina_exchange_err_", slot0.result))
 		end

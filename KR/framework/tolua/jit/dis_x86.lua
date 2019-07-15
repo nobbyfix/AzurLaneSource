@@ -1453,10 +1453,10 @@ function slot22(slot0, slot1, slot2)
 
 	if slot0.hexdump > 0 then
 		for slot10 = slot0.start, slot4 - 1, 1 do
-			slot5 = slot5 .. uv0("%02X", uv1(slot3, slot10, slot10))
+			slot5 = slot5 .. slot0("%02X", slot1(slot3, slot10, slot10))
 		end
 
-		slot5 = slot6 < #slot5 and uv2(slot5, 1, slot6) .. ". " or slot5 .. uv3(" ", slot6 - #slot5 + 2)
+		slot5 = (slot6 < #slot5 and slot2(slot5, 1, slot6) .. ". ") or slot5 .. slot3(" ", slot6 - #slot5 + 2)
 	end
 
 	if slot2 then
@@ -1479,16 +1479,17 @@ function slot22(slot0, slot1, slot2)
 	end
 
 	if slot0.rex then
-		slot7 = (slot0.rexw and "w" or "") .. (slot0.rexr and "r" or "") .. (slot0.rexx and "x" or "") .. (slot0.rexb and "b" or "") .. (slot0.vexl and "l" or "")
+		slot7 = (slot0.rexw and "w") or ""
+		slot7 = slot7 .. ((slot0.rexr and "r") or "") .. ((slot0.rexx and "x") or "") .. ((slot0.rexb and "b") or "") .. ((slot0.vexl and "l") or "")
 
 		if slot0.vexv and slot0.vexv ~= 0 then
-			slot7 = (slot0.rexw and "w" or "") .. (slot0.rexr and "r" or "") .. (slot0.rexx and "x" or "") .. (slot0.rexb and "b" or "") .. (slot0.vexl and "l" or "") .. "v" .. slot0.vexv
+			slot7 = slot7 .. "v" .. slot0.vexv
 		end
 
 		if slot7 ~= "" then
-			slot1 = slot0.rex .. "." .. slot7 .. " " .. uv4(slot1, "^ ", "")
+			slot1 = slot0.rex .. "." .. slot7 .. " " .. slot4(slot1, "^ ", "")
 		elseif slot0.rex == "vex" then
-			slot1 = uv4("v" .. slot1, "^v ", "")
+			slot1 = slot4("v" .. slot1, "^v ", "")
 		end
 
 		slot0.rexw = false
@@ -1501,8 +1502,8 @@ function slot22(slot0, slot1, slot2)
 	end
 
 	if slot0.seg then
-		slot7, slot8 = uv4(slot1, "%[", "[" .. slot0.seg .. ":")
-		slot1 = slot8 == 0 and slot0.seg .. " " .. slot1 or slot7
+		slot7, slot8 = slot4(slot1, "%[", "[" .. slot0.seg .. ":")
+		slot1 = (slot8 == 0 and slot0.seg .. " " .. slot1) or slot7
 		slot0.seg = false
 	end
 
@@ -1515,7 +1516,7 @@ function slot22(slot0, slot1, slot2)
 		slot1 = slot1 .. "\t->" .. slot8
 	end
 
-	slot0.out(uv0("%08x  %s%s\n", slot0.addr + slot0.start, slot5, slot1))
+	slot0.out(slot0("%08x  %s%s\n", slot0.addr + slot0.start, slot5, slot1))
 
 	slot0.mrm = false
 	slot0.vexv = false
@@ -1540,32 +1541,32 @@ end
 function slot24(slot0)
 	slot0.pos = slot0.stop + 1
 
-	uv0(slot0)
+	slot0(slot0)
 
-	return uv1(slot0, "(incomplete)")
+	return slot0(slot0, "(incomplete)")
 end
 
 function slot25(slot0)
-	uv0(slot0)
+	slot0(slot0)
 
-	return uv1(slot0, "(unknown)")
+	return slot0(slot0, "(unknown)")
 end
 
 function slot26(slot0, slot1, slot2)
-	if slot0.stop < slot1 + slot2 - 1 then
-		return uv0(slot0)
+	if slot0.stop < (slot1 + slot2) - 1 then
+		return slot0(slot0)
 	end
 
 	slot3 = slot0.code
 
 	if slot2 == 1 then
-		return uv1(slot0.code, slot1, slot1)
+		return slot1(slot3, slot1, slot1)
 	elseif slot2 == 2 then
-		slot4, slot5 = uv1(slot3, slot1, slot1 + 1)
+		slot4, slot5 = slot1(slot3, slot1, slot1 + 1)
 
 		return slot4 + slot5 * 256
 	else
-		slot4, slot5, slot6, slot7 = uv1(slot3, slot1, slot1 + 3)
+		slot4, slot5, slot6, slot7 = slot1(slot3, slot1, slot1 + 3)
 		slot0.imm = slot4 + slot5 * 256 + slot6 * 65536 + slot7 * 16777216
 
 		return slot4 + slot5 * 256 + slot6 * 65536 + slot7 * 16777216
@@ -1579,7 +1580,7 @@ local function slot27(slot0, slot1, slot2)
 	slot14 = slot0.stop
 	slot15 = slot0.vexl
 
-	for slot19 in uv0(slot2, ".") do
+	for slot19 in slot0(slot2, ".") do
 		slot20 = nil
 
 		if slot19 == "V" or slot19 == "U" then
@@ -1589,13 +1590,9 @@ local function slot27(slot0, slot1, slot2)
 			elseif slot0.o16 then
 				slot5 = "W"
 				slot0.o16 = false
-			elseif slot19 == "U" and slot0.x64 then
-				slot5 = "Q"
 			else
-				slot5 = "D"
+				slot4 = slot1[(slot19 == "U" and slot0.x64 and "Q") or "D"]
 			end
-
-			slot4 = uv1[slot5]
 		elseif slot19 == "T" then
 			if slot0.rexw then
 				slot5 = "Q"
@@ -1604,85 +1601,110 @@ local function slot27(slot0, slot1, slot2)
 				slot5 = "D"
 			end
 
-			slot4 = uv1[slot5]
+			slot4 = slot1[slot5]
 		elseif slot19 == "B" then
 			slot5 = "B"
-			slot4 = slot0.rex and uv1.B64 or uv1.B
-		elseif uv2(slot19, "[WDQMXYFG]") then
+			slot4 = (slot0.rex and slot1.B64) or slot1.B
+		elseif slot2(slot19, "[WDQMXYFG]") then
 			if slot19 == "X" and slot15 then
 				slot5 = "Y"
 				slot0.vexl = false
 			end
 
-			slot4 = uv1[slot5]
+			slot4 = slot1[slot5]
 		elseif slot19 == "P" then
 			slot0.o16 = false
 
-			if (slot0.o16 and "X" or "M") == "X" and slot15 then
+			if ((slot0.o16 and "X") or "M") == "X" and slot15 then
 				slot5 = "Y"
 				slot0.vexl = false
 			end
 
-			slot4 = uv1[slot5]
+			slot4 = slot1[slot5]
 		elseif slot19 == "S" then
-			slot1 = slot1 .. uv3(slot5)
+			slot1 = slot1 .. slot3(slot5)
 		elseif slot19 == "s" then
-			if not uv4(slot0, slot13, 1) then
+			if not slot4(slot0, slot13, 1) then
 				return
 			end
 
-			slot20 = slot21 <= 127 and uv5("+0x%02x", slot21) or uv5("-0x%02x", 256 - slot21)
+			slot20 = (slot21 <= 127 and slot5("+0x%02x", slot21)) or slot5("-0x%02x", 256 - slot21)
 			slot13 = slot13 + 1
 		elseif slot19 == "u" then
-			if not uv4(slot0, slot13, 1) then
+			if not slot4(slot0, slot13, 1) then
 				return
 			end
 
-			slot20 = uv5("0x%02x", slot21)
+			slot20 = slot5("0x%02x", slot21)
 			slot13 = slot13 + 1
 		elseif slot19 == "b" then
-			if not uv4(slot0, slot13, 1) then
+			if not slot4(slot0, slot13, 1) then
 				return
 			end
 
 			slot20 = slot4[slot21 / 16 + 1]
 			slot13 = slot13 + 1
 		elseif slot19 == "w" then
-			if not uv4(slot0, slot13, 2) then
+			if not slot4(slot0, slot13, 2) then
 				return
 			end
 
-			slot20 = uv5("0x%x", slot21)
+			slot20 = slot5("0x%x", slot21)
 			slot13 = slot13 + 2
 		elseif slot19 == "o" then
 			if slot0.x64 then
-				if not uv4(slot0, slot13, 4) then
+				if not slot4(slot0, slot13, 4) then
 					return
 				end
 
-				if not uv4(slot0, slot13 + 4, 4) then
+				if not slot4(slot0, slot13 + 4, 4) then
 					return
 				end
 
-				slot20 = uv5("[0x%08x%08x]", slot22, slot21)
+				slot20 = slot5("[0x%08x%08x]", slot22, slot21)
 				slot13 = slot13 + 8
 			else
-				if not uv4(slot0, slot13, 4) then
+				if not slot4(slot0, slot13, 4) then
 					return
 				end
 
-				slot20 = uv5("[0x%08x]", slot21)
+				slot20 = slot5("[0x%08x]", slot21)
 				slot13 = slot13 + 4
 			end
 		elseif slot19 == "i" or slot19 == "I" then
-			slot20 = (uv6[slot5] ~= 8 or not slot0.x64 or slot19 ~= "I" or uv5("0x%08x%08x", slot23, slot22)) and (slot5 ~= "Q" or slot22 >= 0 and slot22 <= 2147483647 or uv5(4294967296.0 - slot22 > 65535 and "-0x%08x" or "-0x%x", slot22)) and uv5(slot22 > 65535 and "0x%08x" or "0x%x", slot22)
+			if slot6[slot5] == 8 and slot0.x64 and slot19 == "I" then
+				if not slot4(slot0, slot13, 4) then
+					return
+				end
+
+				if not slot4(slot0, slot13 + 4, 4) then
+					return
+				end
+
+				slot20 = slot5("0x%08x%08x", slot23, slot22)
+			else
+				if slot21 == 8 then
+					slot21 = 4
+				end
+
+				if not slot4(slot0, slot13, slot21) then
+					return
+				end
+
+				if slot5 == "Q" and (slot22 < 0 or slot22 > 2147483647) then
+					slot20 = slot5((4294967296.0 - slot22 > 65535 and "-0x%08x") or "-0x%x", slot22)
+				else
+					slot20 = slot5((slot22 > 65535 and "0x%08x") or "0x%x", slot22)
+				end
+			end
+
 			slot13 = slot13 + slot21
 		elseif slot19 == "j" then
-			if uv6[slot5] == 8 then
+			if slot6[slot5] == 8 then
 				slot21 = 4
 			end
 
-			if not uv4(slot0, slot13, slot21) then
+			if not slot4(slot0, slot13, slot21) then
 				return
 			end
 
@@ -1699,17 +1721,17 @@ local function slot27(slot0, slot1, slot2)
 			slot0.imm = slot22
 
 			if slot5 == "W" then
-				slot20 = uv5("word 0x%04x", slot22 % 65536)
+				slot20 = slot5("word 0x%04x", slot22 % 65536)
 			elseif slot0.x64 then
-				slot20 = uv5("0x%02x%06x", (slot22 - slot22 % 16777216) / 16777216, slot22 % 16777216)
+				slot20 = slot5("0x%02x%06x", (slot22 - slot22 % 16777216) / 16777216, slot22 % 16777216)
 			else
-				slot20 = "0x" .. uv7(slot22)
+				slot20 = "0x" .. slot7(slot22)
 			end
 		elseif slot19 == "R" then
-			slot21 = uv8(slot12, slot13 - 1, slot13 - 1) % 8
+			slot21 = slot8(slot12, slot13 - 1, slot13 - 1) % 8
 
 			if slot0.rexb then
-				slot21 = uv8(slot12, slot13 - 1, slot13 - 1) % 8 + 8
+				slot21 = slot21 + 8
 				slot0.rexb = false
 			end
 
@@ -1726,23 +1748,23 @@ local function slot27(slot0, slot1, slot2)
 			if not slot6 then
 				if not slot0.mrm then
 					if slot14 < slot13 then
-						return uv9(slot0)
+						return slot9(slot0)
 					end
 
-					slot6 = uv8(slot12, slot13, slot13)
+					slot6 = slot8(slot12, slot13, slot13)
 					slot13 = slot13 + 1
 				end
 
 				slot11 = ""
 
-				if ((slot6 - slot6 % 8) / 8 - (slot6 - slot6 % 8) / 8 % 8) / 8 < 3 then
+				if ((slot6 - slot6 % 8) / 8 - ((slot6 - slot6 % 8) / 8) % 8) / 8 < 3 then
 					if slot8 == 4 then
 						if slot14 < slot13 then
-							return uv9(slot0)
+							return slot9(slot0)
 						end
 
 						slot13 = slot13 + 1
-						slot9 = ((uv8(slot12, slot13 + 1, ) - uv8(slot12, slot13 + 1, ) % 8) / 8 - (uv8(slot12, slot13 + 1, ) - uv8(slot12, slot13 + 1, ) % 8) / 8 % 8) / 8
+						slot9 = ((slot8(slot12, slot13, slot13) - slot8(slot12, slot13, slot13) % 8) / 8 - ((slot8(slot12, slot13, slot13) - slot8(slot12, slot13, slot13) % 8) / 8) % 8) / 8
 
 						if slot0.rexx then
 							slot10 = slot10 + 8
@@ -1759,7 +1781,7 @@ local function slot27(slot0, slot1, slot2)
 							slot21 = 4
 						end
 
-						if not uv4(slot0, slot13, slot21) then
+						if not slot4(slot0, slot13, slot21) then
 							return
 						end
 
@@ -1767,24 +1789,16 @@ local function slot27(slot0, slot1, slot2)
 							slot8 = nil
 						end
 
-						if slot8 or slot10 or not slot9 and slot0.x64 and not slot0.a32 then
+						if slot8 or slot10 or (not slot9 and slot0.x64 and not slot0.a32) then
 							if slot21 == 1 and slot22 > 127 then
-								slot11 = uv5("-0x%x", 256 - slot22)
+								slot11 = slot5("-0x%x", 256 - slot22)
 							elseif slot22 >= 0 and slot22 <= 2147483647 then
-								slot11 = uv5("+0x%x", slot22)
+								slot11 = slot5("+0x%x", slot22)
 							else
-								slot11 = uv5("-0x%x", 4294967296.0 - slot22)
+								slot11 = slot5("-0x%x", 4294967296.0 - slot22)
 							end
 						else
-							slot23 = uv5
-
-							if slot0.x64 and not slot0.a32 and (slot22 < 0 or slot22 > 2147483647) then
-								slot24 = "0xffffffff%08x"
-							else
-								slot24 = "0x%08x"
-							end
-
-							slot11 = slot23(slot24, slot22)
+							slot11 = slot5((slot0.x64 and not slot0.a32 and (slot22 < 0 or slot22 > 2147483647) and "0xffffffff%08x") or "0x%08x", slot22)
 						end
 
 						slot13 = slot13 + slot21
@@ -1806,7 +1820,7 @@ local function slot27(slot0, slot1, slot2)
 				if slot6 == 3 then
 					slot20 = slot4[slot8 + 1]
 				else
-					slot21 = slot0.a32 and uv1.D or slot0.aregs
+					slot21 = (slot0.a32 and slot1.D) or slot0.aregs
 					slot22 = ""
 					slot23 = ""
 
@@ -1830,18 +1844,17 @@ local function slot27(slot0, slot1, slot2)
 						end
 					end
 
-					slot20 = uv5("[%s%s%s]", slot22, slot23, slot11)
+					slot20 = slot5("[%s%s%s]", slot22, slot23, slot11)
 				end
 
-				if slot6 < 3 and (not uv2(slot2, "[aRrgp]") or uv2(slot2, "t")) then
-					slot20 = uv10[slot5] .. " " .. slot20
+				if slot6 < 3 and (not slot2(slot2, "[aRrgp]") or slot2(slot2, "t")) then
+					slot20 = slot10[slot5] .. " " .. slot20
 				end
 			elseif slot19 == "r" then
 				slot20 = slot4[slot7 + 1]
 			elseif slot19 == "g" then
-				slot20 = uv11[slot7 + 1]
+				slot20 = slot11[slot7 + 1]
 			elseif slot19 == "p" then
-				-- Nothing
 			elseif slot19 == "f" then
 				slot20 = "st" .. slot8
 			elseif slot19 == "x" then
@@ -1863,20 +1876,19 @@ local function slot27(slot0, slot1, slot2)
 			elseif slot19 == "l" then
 				slot15 = false
 			elseif slot19 == "t" then
-				-- Nothing
 			else
 				error("bad pattern `" .. slot2 .. "'")
 			end
 		end
 
 		if slot20 then
-			slot3 = slot3 and slot3 .. ", " .. slot20 or slot20
+			slot3 = (slot3 and slot3 .. ", " .. slot20) or slot20
 		end
 	end
 
 	slot0.pos = slot13
 
-	return uv12(slot0, slot1, slot3)
+	return slot12(slot0, slot1, slot3)
 end
 
 slot28 = nil
@@ -1888,7 +1900,7 @@ function slot29(slot0)
 		end
 
 		slot0.pos = slot2 + 1
-		slot0.mrm = uv0(slot0.code, slot2, slot2)
+		slot0.mrm = slot0(slot0.code, slot2, slot2)
 	end
 
 	return slot1
@@ -1896,14 +1908,14 @@ end
 
 function slot30(slot0, slot1, slot2)
 	if not slot1 then
-		return uv0(slot0)
+		return slot0(slot0)
 	end
 
-	if uv1(slot1, "%|") then
+	if slot1(slot1, "%|") then
 		slot3 = nil
 
 		if slot0.rep then
-			slot3 = slot0.rep == "rep" and "%|([^%|]*)" or "%|[^%|]*%|[^%|]*%|([^%|]*)"
+			slot3 = (slot0.rep == "rep" and "%|([^%|]*)") or "%|[^%|]*%|[^%|]*%|([^%|]*)"
 			slot0.rep = false
 		elseif slot0.o16 then
 			slot3 = "%|[^%|]*%|([^%|]*)"
@@ -1912,43 +1924,43 @@ function slot30(slot0, slot1, slot2)
 			slot3 = "^[^%|]*"
 		end
 
-		if not uv1(slot1, slot3) then
-			return uv0(slot0)
+		if not slot1(slot1, slot3) then
+			return slot0(slot0)
 		end
 	end
 
-	if uv1(slot1, "%$") then
-		if not uv2(slot0) then
-			return uv3(slot0)
+	if slot1(slot1, "%$") then
+		if not slot2(slot0) then
+			return slot3(slot0)
 		end
 
-		if uv1(slot1, slot3 >= 192 and "^[^%$]*" or "%$(.*)") == "" then
-			return uv0(slot0)
+		if slot1(slot1, (slot3 >= 192 and "^[^%$]*") or "%$(.*)") == "" then
+			return slot0(slot0)
 		end
 	end
 
 	if slot1 == "" then
-		return uv0(slot0)
+		return slot0(slot0)
 	end
 
-	slot3, slot4 = uv1(slot1, "^([a-z0-9 ]*)(.*)")
+	slot3, slot4 = slot1(slot1, "^([a-z0-9 ]*)(.*)")
 
 	if slot4 == "" and slot2 then
 		slot4 = slot2
 	end
 
-	return uv4[uv5(slot4, 1, 1)](slot0, slot3, slot4)
+	return slot4[slot5(slot4, 1, 1)](slot0, slot3, slot4)
 end
 
 function slot31(slot0, slot1)
 	slot0.pos = slot0.pos + 1
 
-	return uv1(slot0, slot1[uv0(slot0.code, slot0.pos, )])
+	return slot1(slot0, slot1[slot0(slot0.code, slot0.pos, )])
 end
 
 slot28 = {
 	[""] = function (slot0, slot1, slot2)
-		return uv0(slot0, slot1)
+		return slot0(slot0, slot1)
 	end,
 	B = slot27,
 	W = slot27,
@@ -1964,68 +1976,68 @@ slot28 = {
 	G = slot27,
 	Y = slot27,
 	[":"] = function (slot0, slot1, slot2)
-		slot0[slot2 == ":" and slot1 or uv0(slot2, 2)] = slot1
+		slot0[(slot2 == ":" and slot1) or slot0(slot2, 2)] = slot1
 
 		if slot0.pos - slot0.start > 5 then
-			return uv1(slot0)
+			return slot1(slot0)
 		end
 	end,
 	["*"] = function (slot0, slot1, slot2)
-		return uv0[slot1](slot0, slot1, uv1(slot2, 2))
+		return slot0[slot1](slot0, slot1, slot1(slot2, 2))
 	end,
 	["!"] = function (slot0, slot1, slot2)
-		if not uv0(slot0) then
-			return uv1(slot0)
+		if not slot0(slot0) then
+			return slot1(slot0)
 		end
 
-		return uv2(slot0, uv3[slot1][(slot3 - slot3 % 8) / 8 % 8 + 1], uv4(slot2, 2))
+		return slot2(slot0, slot3[slot1][((slot3 - slot3 % 8) / 8) % 8 + 1], slot2(slot2, 2))
 	end,
 	sz = function (slot0, slot1, slot2)
 		if slot0.o16 then
 			slot0.o16 = false
 		else
-			slot2 = uv0(slot2, ",(.*)")
+			slot2 = slot0(slot2, ",(.*)")
 
-			if slot0.rexw and uv0(slot2, ",(.*)") then
+			if slot0.rexw and slot0(slot2, ",(.*)") then
 				slot2 = slot3
 				slot0.rexw = false
 			end
 		end
 
-		return uv1(slot0, uv0(slot2, "^[^,]*"))
+		return slot1(slot0, slot0(slot2, "^[^,]*"))
 	end,
 	opc2 = function (slot0, slot1, slot2)
-		return uv0(slot0, uv1)
+		return slot0(slot0, slot1)
 	end,
 	opc3 = function (slot0, slot1, slot2)
-		return uv0(slot0, uv1[slot2])
+		return slot0(slot0, slot1[slot2])
 	end,
 	vm = function (slot0, slot1, slot2)
-		return uv0(slot0, uv1[slot0.mrm])
+		return slot0(slot0, slot1[slot0.mrm])
 	end,
 	fp = function (slot0, slot1, slot2)
-		if not uv0(slot0) then
-			return uv1(slot0)
+		if not slot0(slot0) then
+			return slot1(slot0)
 		end
 
-		slot5 = slot2 * 8 + (slot3 - slot3 % 8) / 8 % 8
+		slot5 = slot2 * 8 + ((slot3 - slot3 % 8) / 8) % 8
 
 		if slot3 >= 192 then
 			slot5 = slot5 + 64
 		end
 
-		if uv3(uv2[slot5]) == "table" then
+		if slot3(slot2[slot5]) == "table" then
 			slot6 = slot6[slot4 + 1]
 		end
 
-		return uv4(slot0, slot6)
+		return slot4(slot0, slot6)
 	end,
 	rex = function (slot0, slot1, slot2)
 		if slot0.rex then
-			return uv0(slot0)
+			return slot0(slot0)
 		end
 
-		for slot6 in uv1(slot2, ".") do
+		for slot6 in slot1(slot2, ".") do
 			slot0["rex" .. slot6] = true
 		end
 
@@ -2033,7 +2045,7 @@ slot28 = {
 	end,
 	vex = function (slot0, slot1, slot2)
 		if slot0.rex then
-			return uv0(slot0)
+			return slot0(slot0)
 		end
 
 		slot0.rex = "vex"
@@ -2044,8 +2056,8 @@ slot28 = {
 			slot3 = slot3 - 1
 		end
 
-		if not uv1(slot0.code, slot3, slot3) then
-			return uv2(slot0)
+		if not slot1(slot0.code, slot3, slot3) then
+			return slot2(slot0)
 		end
 
 		slot3 = slot3 + 1
@@ -2057,9 +2069,9 @@ slot28 = {
 		slot5 = 1
 
 		if slot2 == "3" then
-			slot4 = ((slot4 - slot4 % 32) / 32 - (slot4 - slot4 % 32) / 32 % 2) / 2
+			slot4 = ((slot4 - slot4 % 32) / 32 - ((slot4 - slot4 % 32) / 32) % 2) / 2
 
-			if (slot4 - slot4 % 32) / 32 % 2 == 0 then
+			if ((slot4 - slot4 % 32) / 32) % 2 == 0 then
 				slot0.rexb = true
 			end
 
@@ -2067,8 +2079,8 @@ slot28 = {
 				slot0.rexx = true
 			end
 
-			if not uv1(slot0.code, slot3, slot3) then
-				return uv2(slot0)
+			if not slot1(slot0.code, slot3, slot3) then
+				return slot2(slot0)
 			end
 
 			slot3 = slot3 + 1
@@ -2082,13 +2094,13 @@ slot28 = {
 		slot6 = nil
 
 		if slot5 == 1 then
-			slot6 = uv3
+			slot6 = slot3
 		elseif slot5 == 2 then
-			slot6 = uv4.38
+			slot6 = slot4.38
 		elseif slot5 == 3 then
-			slot6 = uv4.3a
+			slot6 = slot4.3a
 		else
-			return uv0(slot0)
+			return slot0(slot0)
 		end
 
 		slot4 = (slot4 - slot4 % 4) / 4
@@ -2109,94 +2121,317 @@ slot28 = {
 
 		slot0.vexv = (-1 - slot4) % 16
 
-		return uv5(slot0, slot6)
+		return slot5(slot0, slot6)
 	end,
 	nop = function (slot0, slot1, slot2)
-		return uv0(slot0, slot0.rex and slot2 or "nop")
+		return slot0(slot0, (slot0.rex and slot2) or "nop")
 	end,
 	emms = function (slot0, slot1, slot2)
 		if slot0.rex ~= "vex" then
-			return uv0(slot0, "emms")
+			return slot0(slot0, "emms")
 		elseif slot0.vexl then
 			slot0.vexl = false
 
-			return uv0(slot0, "zeroall")
+			return slot0(slot0, "zeroall")
 		else
-			return uv0(slot0, "zeroupper")
+			return slot0(slot0, "zeroupper")
 		end
 	end
 }
 
 function slot32(slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = slot1 or 0
 	slot0.start = (slot1 or 0) + 1
 	slot0.pos = (slot1 or 0) + 1
-	slot0.stop = slot2 and slot1 + slot2 or #slot0.code
+	slot0.stop = (slot2 and slot1 + slot2) or #slot0.code
 	slot0.imm = nil
 	slot0.mrm = false
 
-	uv0(slot0)
+	slot0(slot0)
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot1 = 0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 4-5, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 6-8, warpins: 1 ---
+	if not (slot1 + slot2) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 9-10, warpins: 2 ---
+		slot3 = #slot0.code
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 11-21, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 22-24, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 25-31, warpins: 0 ---
 	while slot0.pos <= slot3 do
-		uv1(slot0, slot0.map1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 25-25, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 26-30, warpins: 1 ---
+		slot1(slot0, slot0.map1)
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 31-31, warpins: 1 ---
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 31-34, warpins: 1 ---
 	if slot0.pos ~= slot0.start then
-		uv2(slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 35-37, warpins: 1 ---
+		slot2(slot0)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #8 38-38, warpins: 2 ---
+	return
+	--- END OF BLOCK #8 ---
+
+
+
 end
 
 return {
 	create = function (slot0, slot1, slot2)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
 		slot3 = {
 			code = slot0
 		}
 
 		if not slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 5-5, warpins: 1 ---
 			slot4 = 0
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 6-9, warpins: 2 ---
 		slot3.addr = slot4 - 1
 
 		if not slot2 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 10-11, warpins: 1 ---
 			slot4 = io.write
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 12-26, warpins: 2 ---
 		slot3.out = slot4
 		slot3.symtab = {}
-		slot3.disass = uv0
+		slot3.disass = slot0
 		slot3.hexdump = 16
 		slot3.x64 = false
-		slot3.map1 = uv1
-		slot3.aregs = uv2.D
+		slot3.map1 = slot1
+		slot3.aregs = slot2.D
 
 		return slot3
+		--- END OF BLOCK #2 ---
+
+
+
 	end,
 	create64 = function (slot0, slot1, slot2)
-		slot3 = uv0(slot0, slot1, slot2)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-13, warpins: 1 ---
+		slot3 = slot0(slot0, slot1, slot2)
 		slot3.x64 = true
-		slot3.map1 = uv1
-		slot3.aregs = uv2.Q
+		slot3.map1 = slot1
+		slot3.aregs = slot2.Q
 
 		return slot3
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	disass = function (slot0, slot1, slot2)
-		uv0(slot0, slot1, slot2):disass()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0(slot0, slot1, slot2):disass()
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	disass64 = function (slot0, slot1, slot2)
-		uv0(slot0, slot1, slot2):disass()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0(slot0, slot1, slot2):disass()
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end,
 	regname = function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
 		if slot0 < 8 then
-			return uv0.D[slot0 + 1]
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-8, warpins: 1 ---
+			return slot0.D[slot0 + 1]
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
-		return uv0.X[slot0 - 7]
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 9-13, warpins: 2 ---
+		return slot0.X[slot0 - 7]
+		--- END OF BLOCK #1 ---
+
+
+
 	end,
 	regname64 = function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
 		if slot0 < 16 then
-			return uv0.Q[slot0 + 1]
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-8, warpins: 1 ---
+			return slot0.Q[slot0 + 1]
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
-		return uv0.X[slot0 - 15]
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 9-13, warpins: 2 ---
+		return slot0.X[slot0 - 15]
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 }

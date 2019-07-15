@@ -9,33 +9,33 @@ slot4.FOCUS_PILOT = "FOCUS_PILOT"
 slot4.TWEEN_TO_CHARACTER = "TWEEN_TO_CHARACTER"
 slot4.FOLLOW_GESTURE = "FOLLOW_GESTURE"
 
-function slot4.Ctor(slot0)
-	uv0.EventDispatcher.AttachEventDispatcher(slot0)
+slot4.Ctor = function (slot0)
+	slot0.EventDispatcher.AttachEventDispatcher(slot0)
 
 	slot0._camera = GameObject.Find("MainCamera"):GetComponent(typeof(Camera))
 	slot0._cameraTF = slot0._camera.transform
 	slot0._uiCamera = GameObject.Find("UICamera"):GetComponent(typeof(Camera))
 end
 
-function slot4.Initialize(slot0)
-	slot0._cameraTF.localPosition = uv0.CAMERA_INIT_POS
+slot4.Initialize = function (slot0)
+	slot0._cameraTF.localPosition = slot0.CAMERA_INIT_POS
 
-	uv1.UpdateCameraPositionArgs()
+	slot0._cameraTF.UpdateCameraPositionArgs()
 	slot0:setArrowPoint()
 
-	slot0._boundFix = uv2.Battle.BattleCameraBoundFixDecorate.New()
-	slot0._followPilot = uv2.Battle.BattleCameraFollowPilot.New()
-	slot0._focusCharacter = uv2.Battle.BattleCameraFocusChar.New()
-	slot0._fromTo = uv2.Battle.BattleCameraTween.New()
-	slot0._gesture = uv2.Battle.BattleCameraFollowGesture.New()
+	slot0._boundFix = slot2.Battle.BattleCameraBoundFixDecorate.New()
+	slot0._followPilot = slot2.Battle.BattleCameraFollowPilot.New()
+	slot0._focusCharacter = slot2.Battle.BattleCameraFocusChar.New()
+	slot0._fromTo = slot2.Battle.BattleCameraTween.New()
+	slot0._gesture = slot2.Battle.BattleCameraFollowGesture.New()
 
 	slot0:active()
 	slot0:SwitchCameraPos()
 
-	slot0._uiMediator = uv2.Battle.BattleState:GetInstance():GetMediatorByName(uv2.Battle.BattleUIMediator.__name)
+	slot0._uiMediator = slot2.Battle.BattleState:GetInstance():GetMediatorByName(slot2.Battle.BattleUIMediator.__name)
 end
 
-function slot4.Clear(slot0)
+slot4.Clear = function (slot0)
 	LeanTween.cancel(go(slot0._camera))
 	slot0:deactive()
 	slot0:StopShake()
@@ -50,46 +50,46 @@ function slot4.Clear(slot0)
 	slot0._uiMediator = nil
 end
 
-function slot4.SetMapData(slot0, slot1, slot2, slot3, slot4)
+slot4.SetMapData = function (slot0, slot1, slot2, slot3, slot4)
 	slot0._boundFix:SetMapData(slot1, slot2, slot3, slot4)
-	slot0._followPilot:SetGoldenRation(slot0._camera:ScreenToWorldPoint(Vector3(uv0._actualWidth * uv1.CAMERA_GOLDEN_RATE, 0, 0)).x)
+	slot0._followPilot:SetGoldenRation(slot0._camera:ScreenToWorldPoint(Vector3(slot0._actualWidth * slot1.CAMERA_GOLDEN_RATE, 0, 0)).x)
 end
 
-function slot4.SetFocusFleet(slot0, slot1)
+slot4.SetFocusFleet = function (slot0, slot1)
 	slot0._followPilot:SetFleetVO(slot1)
 
 	slot0._cameraTF.position = slot0._boundFix:GetCameraPos(slot0._followPilot:GetCameraPos())
 
-	uv0.UpdateCameraPositionArgs()
+	slot0.UpdateCameraPositionArgs()
 end
 
-function slot4.SetCameraSilder(slot0, slot1)
+slot4.SetCameraSilder = function (slot0, slot1)
 	slot0._gesture:SetGestureComponent(slot1)
 end
 
-function slot4.SwitchCameraPos(slot0, slot1)
+slot4.SwitchCameraPos = function (slot0, slot1)
 	if slot1 == "TWEEN_TO_CHARACTER" then
-		function slot0._currentCameraPos()
-			return uv0._fromTo:GetCameraPos()
+		slot0._currentCameraPos = function ()
+			return slot0._fromTo:GetCameraPos()
 		end
 	elseif slot1 == "FOLLOW_GESTURE" then
-		function slot0._currentCameraPos()
-			return uv0._boundFix:GetCameraPos(uv0._gesture:GetCameraPos(uv0._cameraTF.position))
+		slot0._currentCameraPos = function ()
+			return slot0._boundFix:GetCameraPos(slot0._gesture:GetCameraPos(slot0._cameraTF.position))
 		end
 	else
-		function slot0._currentCameraPos()
-			return uv0._boundFix:GetCameraPos(uv0._followPilot:GetCameraPos())
+		slot0._currentCameraPos = function ()
+			return slot0._boundFix:GetCameraPos(slot0._followPilot:GetCameraPos())
 		end
 	end
 end
 
-function slot4.GetS2WPoint(slot0, slot1)
+slot4.GetS2WPoint = function (slot0, slot1)
 	return slot0._camera:ScreenToWorldPoint(slot1)
 end
 
-function slot4.setArrowPoint(slot0)
-	slot0._arrowLeftBottomPos = slot0._uiCamera:ScreenToWorldPoint(uv0._leftBottomVector) + Vector3(slot1, slot1, 0)
-	slot0._arrowRightTopPos = slot0._uiCamera:ScreenToWorldPoint(uv0._rightTopVector) - Vector3(1, , 0)
+slot4.setArrowPoint = function (slot0)
+	slot0._arrowLeftBottomPos = slot0._uiCamera:ScreenToWorldPoint(slot0._leftBottomVector) + Vector3(slot1, slot1, 0)
+	slot0._arrowRightTopPos = slot0._uiCamera:ScreenToWorldPoint(slot0._rightTopVector) - Vector3(1, , 0)
 	slot0._arrowCenterPos = (slot0._arrowLeftBottomPos + slot0._arrowRightTopPos) * 0.5
 	slot0._arrowFieldHalfWidth = slot0._arrowRightTopPos.x - slot0._arrowCenterPos.x
 	slot0._arrowRightHorizon = slot0._arrowRightTopPos.x + 4
@@ -98,11 +98,11 @@ function slot4.setArrowPoint(slot0)
 	slot0._arrowLeftHorizon = slot0._arrowLeftBottomPos.x - 4
 end
 
-function slot4.Update(slot0)
+slot4.Update = function (slot0)
 	if slot0._cameraTF.position.x ~= slot0:GetCameraPoint().x or slot2.z ~= slot1 then
 		slot0._cameraTF.position = slot1
 
-		uv0.UpdateCameraPositionArgs()
+		slot0.UpdateCameraPositionArgs()
 	end
 
 	if slot0._shakeInfo then
@@ -110,7 +110,7 @@ function slot4.Update(slot0)
 	end
 end
 
-function slot4.StartShake(slot0, slot1)
+slot4.StartShake = function (slot0, slot1)
 	if slot0._shakeInfo ~= nil then
 		return
 	end
@@ -131,11 +131,11 @@ function slot4.StartShake(slot0, slot1)
 	}
 end
 
-function slot4.StopShake(slot0)
+slot4.StopShake = function (slot0)
 	slot0._shakeInfo = nil
 end
 
-function slot4.DoShake(slot0)
+slot4.DoShake = function (slot0)
 	slot0._shakeInfo._count = slot0._shakeInfo._count + 1
 	slot0._shakeInfo._elapsed = slot0._shakeInfo._elapsed + Time.deltaTime
 
@@ -155,54 +155,137 @@ function slot4.DoShake(slot0)
 	end
 end
 
-function slot4.active(slot0)
+slot4.active = function (slot0)
 	UpdateBeat:Add(slot0.Update, slot0)
 end
 
-function slot4.deactive(slot0)
+slot4.deactive = function (slot0)
 	UpdateBeat:Remove(slot0.Update, slot0)
 end
 
-function slot4.CutInPainting(slot0, slot1, slot2)
-	slot0:DispatchEvent(uv0.Event.New(uv1.SHOW_PAINTING, {
+slot4.CutInPainting = function (slot0, slot1, slot2)
+	slot0:DispatchEvent(slot0.Event.New(slot1.SHOW_PAINTING, {
 		caster = slot1,
 		speed = slot2
 	}))
 end
 
-function slot4.BulletTime(slot0, slot1, slot2, slot3)
-	slot0:DispatchEvent(uv0.Event.New(uv1.BULLET_TIME, {
+slot4.BulletTime = function (slot0, slot1, slot2, slot3)
+	slot0:DispatchEvent(slot0.Event.New(slot1.BULLET_TIME, {
 		key = slot1,
 		speed = slot2,
 		exemptUnit = slot3
 	}))
-	uv0.Battle.BattleState:GetInstance():ScaleTimer(slot2)
+	slot0.Battle.BattleState:GetInstance():ScaleTimer(slot2)
 
 	if slot0._uiMediator:GetAppearFX() ~= nil then
 		slot0._uiMediator:GetAppearFX():GetComponent(typeof(Animator)).speed = 1 / (slot2 or 1)
 	end
 end
 
-function slot4.ZoomCamara(slot0, slot1, slot2, slot3, slot4)
+slot4.ZoomCamara = function (slot0, slot1, slot2, slot3, slot4)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 4-5, warpins: 2 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 8-9, warpins: 2 ---
 	if not slot3 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 3-3, warpins: 1 ---
 		slot3 = 1.6
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	if not slot2 then
-		slot2 = uv0.CAMERA_SIZE
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 6-7, warpins: 1 ---
+		slot2 = slot0.CAMERA_SIZE
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	if slot4 then
-		LeanTween.value(go(slot0._camera), slot1 or slot0._camera.orthographicSize, slot2, slot3):setOnUpdate(System.Action_float(function (slot0)
-			uv0._camera.orthographicSize = slot0
-		end)):setEase(LeanTweenType.easeOutExpo)
-	end
-end
+	slot1 = slot1 or slot0._camera.orthographicSize
+	slot5 = LeanTween.value(go(slot0._camera), slot1 or slot0._camera.orthographicSize, slot2, slot3):setOnUpdate(System.Action_float(function (slot0)
 
-function slot4.FocusCharacter(slot0, slot1, slot2, slot3, slot4, slot5)
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0._camera.orthographicSize = slot0
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end))
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #4
+
+
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-94, warpins: 1 ---
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot1 = slot0._camera.orthographicSize
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 12-29, warpins: 2 ---
+	if slot4 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 30-34, warpins: 1 ---
+		slot5:setEase(LeanTweenType.easeOutExpo)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 35-36, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot4.FocusCharacter = function (slot0, slot1, slot2, slot3, slot4, slot5)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0:StopShake()
 
 	if not delay then
@@ -216,6 +299,14 @@ function slot4.FocusCharacter(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 8-14, warpins: 2 ---
 	delay = slot6
 	slot6 = {
 		unit = slot1,
@@ -234,6 +325,14 @@ function slot4.FocusCharacter(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 16-26, warpins: 2 ---
 	slot6.skill = slot7
 
 	LeanTween.cancel(go(slot0._camera))
@@ -243,7 +342,7 @@ function slot4.FocusCharacter(slot0, slot1, slot2, slot3, slot4, slot5)
 	if slot1 ~= nil then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 27-54, warpins: 1 ---
+		--- BLOCK #0 27-37, warpins: 1 ---
 		slot0._focusCharacter:SetUnit(slot1)
 
 		slot8 = slot0._focusCharacter:GetCameraPos()
@@ -259,23 +358,31 @@ function slot4.FocusCharacter(slot0, slot1, slot2, slot3, slot4, slot5)
 
 		end
 
-		slot0._fromTo:SetFromTo(slot0._camera, slot7, slot8, slot2, delay, slot5)
-		slot0:SwitchCameraPos(uv0.TWEEN_TO_CHARACTER)
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 39-54, warpins: 2 ---
+		slot0._fromTo:SetFromTo(slot0._camera, slot7, slot8, slot2, delay, slot5)
+		slot0:SwitchCameraPos(slot0.TWEEN_TO_CHARACTER)
+		--- END OF BLOCK #1 ---
 
 
 
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 55-82, warpins: 1 ---
+		--- BLOCK #0 55-65, warpins: 1 ---
 		slot8 = slot0._boundFix:GetCameraPos(slot0._followPilot:GetCameraPos())
 
 		function slot9()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-5, warpins: 1 ---
-			uv0:SwitchCameraPos()
+			slot0:SwitchCameraPos()
 
 			return
 			--- END OF BLOCK #0 ---
@@ -295,35 +402,51 @@ function slot4.FocusCharacter(slot0, slot1, slot2, slot3, slot4, slot5)
 
 		end
 
-		slot0._fromTo:SetFromTo(slot0._camera, slot7, slot8, slot2, delay, slot5, slot9)
-		slot0:SwitchCameraPos(uv0.TWEEN_TO_CHARACTER)
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 67-82, warpins: 2 ---
+		slot0._fromTo:SetFromTo(slot0._camera, slot7, slot8, slot2, delay, slot5, slot9)
+		slot0:SwitchCameraPos(slot0.TWEEN_TO_CHARACTER)
+		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	slot0:DispatchEvent(uv1.Event.New(uv2.CAMERA_FOCUS, slot6))
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 83-94, warpins: 2 ---
+	slot0:DispatchEvent(slot1.Event.New(slot2.CAMERA_FOCUS, slot6))
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-function slot4.ResetFocus(slot0)
+slot4.ResetFocus = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-50, warpins: 1 ---
 	slot0:StopShake()
 	LeanTween.cancel(go(slot0._camera))
 	LeanTween.cancel(go(slot0._uiCamera))
-	LeanTween.move(go(slot0._camera), slot1, uv0.CAM_RESET_DURATION):setOnUpdate(System.Action_float(function (slot0)
+	LeanTween.move(go(slot0._camera), slot1, slot0.CAM_RESET_DURATION):setOnUpdate(System.Action_float(function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		uv0.UpdateCameraPositionArgs()
+		slot0.UpdateCameraPositionArgs()
 
 		return
 		--- END OF BLOCK #0 ---
@@ -331,7 +454,7 @@ function slot4.ResetFocus(slot0)
 
 
 	end))
-	slot0:DispatchEvent(uv2.Event.New(uv3.CAMERA_FOCUS_RESET, {}))
+	slot0:DispatchEvent(slot2.Event.New(slot3.CAMERA_FOCUS_RESET, {}))
 
 	return
 	--- END OF BLOCK #0 ---
@@ -340,10 +463,10 @@ function slot4.ResetFocus(slot0)
 
 end
 
-function slot4.GetCharacterArrowBarPosition(slot0, slot1, slot2)
+slot4.GetCharacterArrowBarPosition = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-75, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0._arrowLeftBottomPos
 	slot4 = slot0._arrowRightTopPos
 	slot5 = slot0._arrowCenterPos
@@ -360,7 +483,7 @@ function slot4.GetCharacterArrowBarPosition(slot0, slot1, slot2)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 23-61, warpins: 4 ---
+		--- BLOCK #0 23-30, warpins: 4 ---
 		slot6 = slot1.y - slot5.y
 		slot7, slot8, slot9, slot10 = nil
 
@@ -386,6 +509,14 @@ function slot4.GetCharacterArrowBarPosition(slot0, slot1, slot2)
 
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 40-45, warpins: 2 ---
 		if slot4.y < slot6 / slot10 * slot0._arrowFieldHalfWidth then
 
 			-- Decompilation error in this vicinity:
@@ -415,6 +546,14 @@ function slot4.GetCharacterArrowBarPosition(slot0, slot1, slot2)
 
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 60-61, warpins: 3 ---
 		if slot2 then
 
 			-- Decompilation error in this vicinity:
@@ -436,20 +575,28 @@ function slot4.GetCharacterArrowBarPosition(slot0, slot1, slot2)
 
 
 		end
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
 
 
 
 	end
 
-	return
 	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 75-75, warpins: 3 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
 end
 
-function slot4.GetCameraPoint(slot0)
+slot4.GetCameraPoint = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -460,7 +607,7 @@ function slot4.GetCameraPoint(slot0)
 
 end
 
-function slot4.GetArrowCenterPos(slot0)
+slot4.GetArrowCenterPos = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -471,7 +618,7 @@ function slot4.GetArrowCenterPos(slot0)
 
 end
 
-function slot4.GetCamera(slot0)
+slot4.GetCamera = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -481,3 +628,5 @@ function slot4.GetCamera(slot0)
 
 
 end
+
+return

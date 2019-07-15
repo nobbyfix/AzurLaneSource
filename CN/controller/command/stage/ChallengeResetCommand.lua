@@ -14,7 +14,7 @@ class("ChallengeResetCommand", pm.SimpleCommand).execute = function (slot0, slot
 
 			slot2:updateChallenge(slot1)
 			slot2:SetPlayerPrefsChallengeFleet(slot1)
-			uv0:sendNotification(GAME.CHALLENGE_RESET_DONE)
+			slot0:sendNotification(GAME.CHALLENGE_RESET_DONE)
 		end
 	end)
 end

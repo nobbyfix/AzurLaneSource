@@ -6,7 +6,7 @@ class("GetGuildEventCommand", pm.SimpleCommand).execute = function (slot0, slot1
 	pg.ConnectionMgr.GetInstance():Send(60042, {
 		guild_id = slot3.id
 	}, 60043, function (slot0)
-		uv0:sendNotification(GAME.GET_GUILD_EVENT_DONE)
+		slot0:sendNotification(GAME.GET_GUILD_EVENT_DONE)
 	end)
 end
 

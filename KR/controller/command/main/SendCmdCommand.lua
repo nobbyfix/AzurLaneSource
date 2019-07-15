@@ -38,15 +38,15 @@ class("SendCmdCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		arg3 = slot2.arg3
 	}, 11101, function (slot0)
 		print("response: " .. slot0.msg)
-		uv0:sendNotification(GAME.SEND_CMD_DONE, slot0.msg)
+		slot0:sendNotification(GAME.SEND_CMD_DONE, slot0.msg)
 
-		if uv1 == "into" and string.find(slot0.msg, "Result:ok") then
+		if slot0.sendNotification == "into" and string.find(slot0.msg, "Result:ok") then
 			ys.Battle.BattleState.GenerateVertifyData()
-			uv0:sendNotification(GAME.GO_SCENE, SCENE.COMBATLOAD, {
+			slot0:sendNotification(GAME.GO_SCENE, SCENE.COMBATLOAD, {
 				token = 99,
 				mainFleetId = 1,
 				prefabFleet = {},
-				stageId = tonumber(uv2),
+				stageId = tonumber(tonumber),
 				system = SYSTEM_TEST,
 				drops = {}
 			})

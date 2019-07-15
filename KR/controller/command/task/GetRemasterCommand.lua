@@ -12,12 +12,12 @@ class("GetRemasterCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			if pg.gameset.reactivity_ticket_max.key_value < slot1.remasterTickets + pg.gameset.reactivity_ticket_daily.key_value then
 				slot1:updateRemasterTicketsNum(slot3)
 
-				slot4 = slot2 - slot3 == 2 and 0 or 1
+				slot4 = (slot2 - slot3 == 2 and 0) or 1
 			else
 				slot1:updateRemasterTicketsNum(slot1.remasterTickets + pg.gameset.reactivity_ticket_daily.key_value)
 			end
 
-			uv0:sendNotification(GAME.GET_REMASTER_TICKETS_DONE, {
+			slot0:sendNotification(GAME.GET_REMASTER_TICKETS_DONE, {
 				{
 					type = DROP_TYPE_ITEM,
 					id = ITEM_ID_REACT_CHAPTER_TICKET,

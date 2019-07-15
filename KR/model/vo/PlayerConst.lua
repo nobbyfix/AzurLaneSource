@@ -94,7 +94,7 @@ function slot2(slot0, slot1, slot2)
 	slot5 = 0
 	slot3 = slot3(slot4, slot5)
 	slot2 = slot3
-	slot3 = uv0
+	slot3 = slot0
 	slot4 = slot0
 	slot5 = slot1
 	slot6 = slot2
@@ -111,7 +111,7 @@ function slot2(slot0, slot1, slot2)
 	slot5 = 0
 	slot3 = slot3(slot4, slot5)
 	slot2 = slot3
-	slot3 = uv0
+	slot3 = slot0
 	slot4 = slot0
 	slot5 = slot1
 	slot6 = -slot2

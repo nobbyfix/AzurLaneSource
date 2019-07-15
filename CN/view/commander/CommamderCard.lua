@@ -1,6 +1,6 @@
 slot0 = class("CommamderCard")
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0._go = slot1
 	slot0._tf = tf(slot1)
 	slot0.infoTF = slot0._tf:Find("info")
@@ -30,23 +30,23 @@ function slot0.Ctor(slot0, slot1)
 	setActive(slot0.inbattleTF, false)
 end
 
-function slot0.clearSelected(slot0)
+slot0.clearSelected = function (slot0)
 	setActive(slot0.mark1, false)
 	setActive(slot0.mark2, false)
 	setActive(slot0.expUp, false)
 end
 
-function slot0.selectedAnim(slot0)
+slot0.selectedAnim = function (slot0)
 	if slot0.anim then
 		slot0.aniEvent:SetEndEvent(function (slot0)
-			uv0.anim.enabled = false
+			slot0.anim.enabled = false
 		end)
 
 		slot0.anim.enabled = true
 	end
 end
 
-function slot0.update(slot0, slot1)
+slot0.update = function (slot0, slot1)
 	if slot1 then
 		slot0.commanderVO = slot1
 
@@ -60,14 +60,15 @@ function slot0.update(slot0, slot1)
 	setActive(slot0.quitTF, slot1 and slot1.id == 0)
 end
 
-function slot0.updateCommander(slot0)
+slot0.updateCommander = function (slot0)
 	slot0.nameTF.text = slot0.commanderVO.getName(slot1)
 	slot0.levelTF.text = slot0.commanderVO.level
 
 	GetImageSpriteFromAtlasAsync("commandericon/" .. slot0.commanderVO.getPainting(slot1), "", slot0.iconTF)
 end
 
-function slot0.clear(slot0)
+slot0.clear = function (slot0)
+	return
 end
 
 return slot0

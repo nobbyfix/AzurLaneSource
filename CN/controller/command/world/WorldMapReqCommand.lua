@@ -8,11 +8,11 @@ class("WorldMapReqCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("world_map_req_error_", slot0.result))
 		end
 
-		if uv0.callback then
-			uv0.callback(slot0.result)
+		if slot0.callback then
+			slot0.callback(slot0.result)
 		end
 
-		uv1:sendNotification(GAME.WORLD_MAP_REQ_DONE, {
+		slot1:sendNotification(GAME.WORLD_MAP_REQ_DONE, {
 			result = slot0.result
 		})
 	end)

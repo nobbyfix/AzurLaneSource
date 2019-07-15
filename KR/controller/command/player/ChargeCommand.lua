@@ -1,7 +1,8 @@
 class("ChargeCommand", pm.SimpleCommand).execute = function (slot0, slot1)
+	slot3 = slot1:getBody().shopId
 	slot5 = getProxy(ShopsProxy):getFirstChargeList() or {}
 
-	if not slot1:getBody().shopId then
+	if not slot3 then
 		return
 	end
 
@@ -17,7 +18,7 @@ class("ChargeCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			slot3 = getProxy(PlayerProxy).getData(slot2)
 			slot7 = 0
 
-			pg.SDKMgr:GetInstance():pay(uv0:getConfig("id_str"), uv0:getConfig("money") * 100, uv0:getConfig("name"), uv0:isMonthCard() and 1 or uv0:firstPayDouble() and uv1 and uv0:getConfig("gem") * 2 or uv0:getConfig("gem") + uv0:getConfig("extra_gem"), slot0.pay_id, uv0:getConfig("subject"), "-" .. slot3.id .. "-" .. slot8, slot3.name, slot3.level)
+			pg.SDKMgr:GetInstance():pay(slot0:getConfig("id_str"), slot0:getConfig("money") * 100, slot0:getConfig("name"), (slot0:isMonthCard() and 1) or (slot0:firstPayDouble() and slot1 and slot0:getConfig("gem") * 2) or slot0:getConfig("gem") + slot0:getConfig("extra_gem"), slot0.pay_id, slot0:getConfig("subject"), "-" .. slot3.id .. "-" .. slot8, slot3.name, slot3.level)
 			getProxy(ShopsProxy):addWaitTimer()
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("charge_erro", slot0.result))

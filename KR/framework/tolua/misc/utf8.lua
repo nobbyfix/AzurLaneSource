@@ -3,7 +3,7 @@ function slot1(slot0, slot1, slot2, slot3)
 end
 
 function slot2(slot0, slot1, slot2, slot3)
-	if not uv0.isvalid(slot0, slot1) then
+	if not slot0:isvalid(slot1) then
 		return slot3
 	end
 end
@@ -42,11 +42,13 @@ return {
 	end,
 	next = ()["next_raw"],
 	byte_indices = function (slot0, slot1)
-		return uv0.next, slot0, slot1
+		return slot0.next, slot0, slot1
 	end,
 	len = function (slot0)
-		for slot5 in uv0.byte_indices(slot0) do
-			slot1 = 0 + 1
+		slot1 = 0
+
+		for slot5 in slot0:byte_indices() do
+			slot1 = slot1 + 1
 		end
 
 		return slot1
@@ -56,8 +58,10 @@ return {
 			return
 		end
 
-		for slot6 in uv0.byte_indices(slot0) do
-			if 0 + 1 == slot1 then
+		slot2 = 0
+
+		for slot6 in slot0:byte_indices() do
+			if slot2 + 1 == slot1 then
 				return slot6
 			end
 		end
@@ -67,9 +71,13 @@ return {
 			return
 		end
 
-		for slot6 in uv0.byte_indices(slot0) do
+		slot2 = 0
+
+		for slot6 in slot0:byte_indices() do
+			slot2 = slot2 + 1
+
 			if slot6 == slot1 then
-				return 0 + 1
+				return slot2
 			end
 		end
 
@@ -80,9 +88,9 @@ return {
 			return
 		end
 
-		slot2, slot3 = uv0.next(slot0)
+		slot2, slot3 = slot0:next()
 
-		for slot7, slot8 in uv0.byte_indices(slot0) do
+		for slot7, slot8 in slot0:byte_indices() do
 			if slot7 == slot1 then
 				return slot2, slot3
 			end
@@ -99,11 +107,11 @@ return {
 	end,
 	byte_indices_reverse = function (slot0, slot1)
 		if #slot0 < 200 then
-			return uv0.prev, slot0, slot1
+			return slot0.prev, slot0, slot1
 		else
 			slot2 = {}
 
-			for slot6 in uv0.byte_indices(slot0) do
+			for slot6 in slot0:byte_indices() do
 				if slot1 and slot1 <= slot6 then
 					break
 				end
@@ -114,17 +122,18 @@ return {
 			slot3 = #slot2 + 1
 
 			return function ()
-				uv0 = uv0 - 1
+				slot0 = slot0 - 1
 
-				return uv1[uv0]
+				return slot1[]
 			end
 		end
 	end,
 	sub = function (slot0, slot1, slot2)
+		slot3 = 0
 		slot4, slot5 = nil
 
-		for slot9 in uv0.byte_indices(slot0) do
-			if 0 + 1 == slot1 then
+		for slot9 in slot0:byte_indices() do
+			if slot3 + 1 == slot1 then
 				slot4 = slot9
 			end
 
@@ -149,7 +158,7 @@ return {
 		end
 
 		for slot6 = 1, #slot2, 1 do
-			if slot0:byte(slot1 + slot6 - 1) ~= slot2:byte(slot6) then
+			if slot0:byte((slot1 + slot6) - 1) ~= slot2:byte(slot6) then
 				return false
 			end
 		end
@@ -158,16 +167,19 @@ return {
 	end,
 	count = function (slot0, slot1)
 		slot2 = 0
+		slot3 = 1
 
-		while 1 do
-			if uv0.contains(slot0, slot3, slot1) then
+		while slot3 do
+			if slot0:contains(slot3, slot1) then
 				slot2 = slot2 + 1
 
 				if slot3 + #slot1 > #slot0 then
 					break
+
+					if false then
+						slot3 = slot0:next(slot3)
+					end
 				end
-			else
-				slot3 = uv0.next(slot0, slot3)
 			end
 		end
 
@@ -215,39 +227,40 @@ return {
 	end,
 	next_valid = function (slot0, slot1)
 		slot2 = nil
-		slot1, slot2 = uv0.next_raw(slot0, slot1)
+		slot1, slot2 = slot0:next_raw(slot1)
 
-		if slot1 then
-			while slot1 and (not slot2 or not uv0.isvalid(slot0, slot1)) do
-				slot1, slot2 = uv0.next(slot0, slot1)
-			end
+		while slot1 and (not slot2 or not slot0:isvalid(slot1)) do
+			slot1, slot2 = slot0:next(slot1)
 		end
 
 		return slot1
 	end,
 	valid_byte_indices = function (slot0)
-		return uv0.next_valid, slot0
+		return slot0.next_valid, slot0
 	end,
 	validate = function (slot0)
-		for slot4, slot5 in uv0.byte_indices(slot0) do
-			if not slot5 or not uv0.isvalid(slot0, slot4) then
+		for slot4, slot5 in slot0:byte_indices() do
+			if not slot5 or not slot0:isvalid(slot4) then
 				error(string.format("invalid utf8 char at #%d", slot4))
 			end
 		end
 	end,
 	replace = function (slot0, slot1, ...)
 		if type(slot1) == "table" then
-			return uv0.replace(slot0, uv1, slot1)
+			return slot0:replace(slot1, slot1)
 		end
 
 		if slot0 == "" then
 			return slot0
 		end
 
-		for slot7 in uv0.byte_indices(slot0) do
-			if slot1(slot0, slot7, (uv0.next(slot0, slot7) or #slot0 + 1) - 1, ...) then
-				table.insert({}, slot0:sub(1, slot7 - 1))
-				table.insert(, slot9)
+		slot2 = {}
+		slot3 = 1
+
+		for slot7 in slot0:byte_indices() do
+			if slot1(slot0, slot7, (slot0:next(slot7) or #slot0 + 1) - 1, ...) then
+				table.insert(slot2, slot0:sub(slot3, slot7 - 1))
+				table.insert(slot2, slot9)
 
 				slot3 = slot8
 			end
@@ -258,6 +271,6 @@ return {
 		return table.concat(slot2)
 	end,
 	sanitize = function (slot0, slot1)
-		return uv0.replace(slot0, uv1, slot1 or "�")
+		return slot0:replace(slot1 or "�", )
 	end
 }

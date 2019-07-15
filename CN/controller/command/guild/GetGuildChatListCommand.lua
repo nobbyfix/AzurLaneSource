@@ -9,14 +9,16 @@ class("GetGuildChatListCommand", pm.SimpleCommand).execute = function (slot0, sl
 	pg.ConnectionMgr.GetInstance():Send(60100, {
 		count = slot3
 	}, 60101, function (slot0)
-		uv0.isGetChatMsg = true
+		slot0.isGetChatMsg = true
 		slot1 = {}
+		slot2 = ipairs
+		slot3 = slot0.chat_list or {}
 
-		for slot5, slot6 in ipairs(slot0.chat_list or {}) do
-			uv0:addMsg(uv1:warpChatInfo(slot6))
+		for slot5, slot6 in slot2(slot3) do
+			slot0:addMsg(slot1:warpChatInfo(slot6))
 		end
 
-		uv2:sendNotification(GAME.GET_GUILD_CHAT_LIST_DONE)
+		slot2:sendNotification(GAME.GET_GUILD_CHAT_LIST_DONE)
 	end)
 end
 

@@ -1,21 +1,21 @@
 function ilist(slot0)
-	return uv0.next, slot0, slot0
+	return slot0.next, slot0, slot0
 end
 
 function rilist(slot0)
-	return uv0.prev, slot0, slot0
+	return slot0.prev, slot0, slot0
 end
 
 setmetatable({
 	__index = ,
 	new = function (slot0)
-		return uv0({
+		return slot0({
 			_next = 0,
 			length = 0,
 			_prev = 0,
 			_prev = ,
 			_next = 
-		}, uv1)
+		}, )
 	end,
 	clear = function (slot0)
 		slot0._next = slot0
@@ -130,14 +130,16 @@ setmetatable({
 			return slot0:push(slot1)
 		end
 
+		slot3 = {
+			_next = 0,
+			removed = false,
+			_prev = 0,
+			value = slot1
+		}
+
 		if slot2._next then
-			slot2._next._prev = {
-				_next = 0,
-				removed = false,
-				_prev = 0,
-				value = slot1,
-				_next = slot2._next
-			}
+			slot2._next._prev = slot3
+			slot3._next = slot2._next
 		else
 			slot0.last = slot3
 		end
@@ -155,8 +157,10 @@ setmetatable({
 		return slot0._prev.value
 	end,
 	clone = function (slot0)
-		for slot5, slot6 in uv0.next, slot0, slot0 do
-			uv0:new():push(slot6)
+		slot1 = slot0:new()
+
+		for slot5, slot6 in slot0.next, slot0, slot0 do
+			slot1:push(slot6)
 		end
 
 		return slot1

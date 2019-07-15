@@ -1,4 +1,5 @@
 class("BackYardShipAddExpCommand", pm.SimpleCommand).execute = function (slot0, slot1)
+	slot2 = slot1:getBody()
 	slot5 = getProxy(BayProxy)
 	slot6 = {}
 	slot7 = {}
@@ -9,14 +10,14 @@ class("BackYardShipAddExpCommand", pm.SimpleCommand).execute = function (slot0, 
 			slot14 = Clone(slot13)
 
 			if slot13.level ~= slot13:getMaxLevel() then
-				slot13:addExp(slot1:getBody())
+				slot13:addExp(slot2)
 				slot5:updateShip(slot13)
 
 				if pg.backyard then
 					pg.backyard:sendNotification(BACKYARD.BOAT_ADDITION_DONE, {
 						type = BackYardConst.ADDITION_TYPE_EXP,
 						id = slot13.id,
-						exp = slot1.getBody()
+						exp = slot2
 					})
 				end
 			end

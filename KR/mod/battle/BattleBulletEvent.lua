@@ -6,3 +6,5 @@ ys.Battle.BattleBulletEvent = {
 	OUT_RANGE = "OUT_RANGE",
 	SPLIT = "SPLIT"
 }
+
+return

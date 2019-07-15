@@ -1,6 +1,6 @@
 GraphPath = class("GraphPath")
 
-function GraphPath.Ctor(slot0, slot1)
+GraphPath.Ctor = function (slot0, slot1)
 	slot0.points = {}
 
 	for slot5, slot6 in pairs(slot1.Points) do
@@ -12,17 +12,21 @@ function GraphPath.Ctor(slot0, slot1)
 	end
 
 	for slot5, slot6 in pairs(slot1.Edges) do
-		if slot0.points[slot6.p1] and slot0.points[slot6.p2] and slot7 ~= slot0.points[slot6.p2] then
+		slot8 = slot0.points[slot6.p2]
+
+		if slot0.points[slot6.p1] and slot8 and slot7 ~= slot8 then
 			table.insert(slot7.nexts, slot6.p2)
-			table.insert(slot0.points[slot6.p2].nexts, slot6.p1)
+			table.insert(slot8.nexts, slot6.p1)
 		end
 	end
 end
 
-function GraphPath.getRandomPoint(slot0)
+GraphPath.getRandomPoint = function (slot0)
 	return _.values(slot0.points)[math.random(1, #_.values(slot0.points))]
 end
 
-function GraphPath.getPoint(slot0, slot1)
+GraphPath.getPoint = function (slot0, slot1)
 	return slot0.points[slot1]
 end
+
+return

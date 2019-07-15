@@ -18,22 +18,22 @@ slot6 = tolua.initget(slot5)
 UnityEngine.TouchPhase = TouchPhase
 UnityEngine.Touch = {
 	__index = function (slot0, slot1)
-		if uv0(uv1, slot1) == nil and uv0(uv2, slot1) ~= nil then
+		if slot0(slot1, slot1) == nil and slot0(slot2, slot1) ~= nil then
 			return slot2(slot0)
 		end
 
 		return slot2
 	end,
 	New = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
-		return uv0({
+		return slot0({
 			fingerId = slot0 or 0,
-			position = slot1 or uv1,
-			rawPosition = slot2 or uv1,
-			deltaPosition = slot3 or uv1,
+			position = slot1 or slot1,
+			rawPosition = slot2 or slot1,
+			deltaPosition = slot3 or slot1,
 			deltaTime = slot4 or 0,
 			tapCount = slot5 or 0,
 			phase = slot6 or 0
-		}, uv2)
+		}, slot2)
 	end,
 	Init = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 		slot0.fingerId = slot1
@@ -50,16 +50,18 @@ UnityEngine.Touch = {
 		slot0.deltaPosition = nil
 	end,
 	GetMask = function (...)
+		slot1 = 0
+
 		for slot5 = 1, #{
 			...
 		}, 1 do
-			if (uv0[slot0[slot5]] or 0) ~= 0 then
-				slot1 = 0 + slot6
+			if (slot0[slot0[slot5]] or 0) ~= 0 then
+				slot1 = slot1 + slot6
 			end
 		end
 
 		if slot1 == 0 then
-			slot1 = uv0.all
+			slot1 = slot0.all
 		end
 
 		return slot1

@@ -8,9 +8,10 @@ class("ReserveCommanderBoxCommand", pm.SimpleCommand).execute = function (slot0,
 	end
 
 	slot7 = getProxy(PlayerProxy).getData(slot6)
+	slot8 = 0
 
-	for slot12 = slot5, slot5 + slot3 - 1, 1 do
-		slot8 = 0 + CommanderConst.getBoxComsume(slot12)
+	for slot12 = slot5, (slot5 + slot3) - 1, 1 do
+		slot8 = slot8 + CommanderConst.getBoxComsume(slot12)
 	end
 
 	if slot7.gold < slot8 then
@@ -23,22 +24,24 @@ class("ReserveCommanderBoxCommand", pm.SimpleCommand).execute = function (slot0,
 		type = slot3
 	}, 25019, function (slot0)
 		if slot0.result == 0 then
-			uv0:consume({
-				gold = uv1
+			slot0:consume({
+				gold = slot0.consume
 			})
-			uv2:updatePlayer(uv0)
+			slot0:updatePlayer(slot0)
+
+			slot1 = {}
 
 			for slot5, slot6 in ipairs(slot0.awards) do
-				table.insert({}, slot7)
-				uv3:sendNotification(GAME.ADD_ITEM, Item.New({
+				table.insert(slot1, slot7)
+				slot3:sendNotification(GAME.ADD_ITEM, Item.New({
 					type = slot6.type,
 					id = slot6.id,
 					count = slot6.number
 				}))
 			end
 
-			uv4:updateBoxUseCnt(uv5)
-			uv3:sendNotification(GAME.COMMANDER_RESERVE_BOX_DONE, {
+			slot4:updateBoxUseCnt(slot5)
+			slot4:sendNotification(GAME.COMMANDER_RESERVE_BOX_DONE, {
 				awards = slot1
 			})
 		else

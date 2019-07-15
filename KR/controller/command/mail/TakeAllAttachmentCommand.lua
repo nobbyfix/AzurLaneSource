@@ -24,24 +24,24 @@ class("TakeAllAttachmentCommand", pm.SimpleCommand).execute = function (slot0, s
 	}, 30005, function (slot0)
 		for slot5, slot6 in ipairs(slot1) do
 			if slot6.readFlag == 0 then
-				uv0:removeMail(slot6)
+				slot0:removeMail(slot6)
 			elseif slot6.attachFlag == slot6.ATTACHMENT_EXIST then
 				slot6.readFlag = 2
 				slot6.attachFlag = slot6.ATTACHMENT_TAKEN
 
-				uv0:updateMail(slot6)
+				slot0:updateMail(slot6)
 			end
 		end
 
 		for slot5, slot6 in ipairs(slot0.attachment_list) do
-			uv1:sendNotification(GAME.ADD_ITEM, MailAttachment.New(slot6))
+			slot1:sendNotification(GAME.ADD_ITEM, MailAttachment.New(slot6))
 		end
 
-		uv0:unpdateExistAttachment(slot2)
-		uv1:sendNotification(GAME.OPEN_MAIL_ATTACHMENT, {
+		slot0:unpdateExistAttachment(slot2)
+		slot1:sendNotification(GAME.OPEN_MAIL_ATTACHMENT, {
 			items = slot0.attachment_list
 		})
-		uv1:sendNotification(GAME.TAKE_ALL_ATTACHMENT_DONE)
+		slot1:sendNotification(GAME.TAKE_ALL_ATTACHMENT_DONE)
 	end)
 end
 

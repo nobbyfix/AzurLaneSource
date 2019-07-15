@@ -4,7 +4,7 @@ slot0.DetailType1 = 1
 slot0.DetailType2 = 2
 slot1 = 0.5
 
-function slot0.Ctor(slot0, slot1, slot2)
+slot0.Ctor = function (slot0, slot1, slot2)
 	slot0.go = slot1
 	slot0.tf = slot1.transform
 	slot0.nameTF = slot0.tf:Find("content/request_info/name"):GetComponent(typeof(Text))
@@ -25,7 +25,7 @@ function slot0.Ctor(slot0, slot1, slot2)
 	slot0.selectedGo:SetActive(false)
 end
 
-function slot0.update(slot0, slot1, slot2)
+slot0.update = function (slot0, slot1, slot2)
 	if slot0.shipVO ~= slot1 then
 		slot0.shipVO = slot1
 
@@ -41,14 +41,14 @@ function slot0.update(slot0, slot1, slot2)
 	end
 end
 
-function slot0.updateSelected(slot0, slot1)
+slot0.updateSelected = function (slot0, slot1)
 	slot0.selected = slot1
 
 	slot0.selectedGo:SetActive(slot0.selected)
 
 	if slot0.selected then
 		if not slot0.selectedTwId then
-			slot0.selectedTwId = LeanTween.alpha(slot0.selectedGo.transform, 1, uv0):setFrom(0):setEase(LeanTweenType.easeInOutSine):setLoopPingPong().uniqueId
+			slot0.selectedTwId = LeanTween.alpha(slot0.selectedGo.transform, 1, slot0):setFrom(0):setEase(LeanTweenType.easeInOutSine):setLoopPingPong().uniqueId
 		end
 	elseif slot0.selectedTwId then
 		LeanTween.cancel(slot0.selectedTwId)
@@ -57,10 +57,10 @@ function slot0.updateSelected(slot0, slot1)
 	end
 end
 
-function slot0.flush(slot0)
+slot0.flush = function (slot0)
 	if slot0.shipVO then
 		LoadSpriteAsync("qicon/" .. slot0.shipVO:getPainting(), function (slot0)
-			uv0.iconTF.sprite = slot0
+			slot0.iconTF.sprite = slot0
 		end)
 		setActive(slot0.propose, slot0.shipVO.propose)
 
@@ -86,14 +86,14 @@ function slot0.flush(slot0)
 	end
 end
 
-function slot0.updateDetail(slot0, slot1)
+slot0.updateDetail = function (slot0, slot1)
 	slot0.detailType = slot1
 
 	slot0:flushDetail()
 end
 
-function slot0.flushDetail(slot0)
-	if tobool(slot0.shipVO) and uv0.DetailType0 < slot0.detailType then
+slot0.flushDetail = function (slot0)
+	if tobool(slot0.shipVO) and slot0.DetailType0 < slot0.detailType then
 		slot3 = slot1:getShipProperties()
 		slot4 = {
 			"name",
@@ -110,17 +110,19 @@ function slot0.flushDetail(slot0)
 
 		for slot9 = 1, 6, 1 do
 			slot10 = slot0.detailLayoutTr:GetChild(slot9 - 1)
+			slot11 = slot10:GetChild(0):GetComponent("Text")
+			slot12 = slot10:GetChild(1):GetComponent("Text")
 
-			if slot0.detailType == uv0.DetailType1 then
+			if slot0.detailType == slot0.DetailType1 then
 				if slot9 == 1 then
-					slot10:GetChild(0):GetComponent("Text").alignment = TextAnchor.MiddleCenter
-					slot10.GetChild(0).GetComponent("Text").text = slot0.shipVO:getName()
-					slot10:GetChild(1):GetComponent("Text").text = ""
+					slot11.alignment = TextAnchor.MiddleCenter
+					slot11.text = slot0.shipVO:getName()
+					slot12.text = ""
 				else
 					slot11.text = AttributeType.Type2Name(slot13)
 					slot12.text = tostring(math.floor(slot3[slot4[slot9]]))
 				end
-			elseif slot0.detailType == uv0.DetailType2 then
+			elseif slot0.detailType == slot0.DetailType2 then
 				if slot9 == 6 then
 					slot11.text = "<color=#92fc63FF>" .. i18n("word_synthesize_power") .. "</color>"
 					slot12.text = tostring(math.floor(slot5))
@@ -142,10 +144,10 @@ function slot0.flushDetail(slot0)
 		end
 	end
 
-	setActive(slot0.detail, slot2 and uv0.DetailType0 < slot0.detailType)
+	setActive(slot0.detail, slot2 and slot0.DetailType0 < slot0.detailType)
 end
 
-function slot0.clear(slot0)
+slot0.clear = function (slot0)
 	if slot0.selectedTwId then
 		LeanTween.cancel(slot0.selectedTwId)
 

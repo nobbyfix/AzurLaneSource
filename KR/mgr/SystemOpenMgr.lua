@@ -3,17 +3,19 @@ pg.SystemOpenMgr = singletonClass("SystemOpenMgr")
 slot1 = true
 slot2 = pg.open_systems_limited
 
-function pg.SystemOpenMgr.Init(slot0, slot1)
+pg.SystemOpenMgr.Init = function (slot0, slot1)
 	print("initializing SystemOpenMgr manager...")
 	slot1()
 end
 
 slot3 = pm.Facade.sendNotification
 
-function pm.Facade.sendNotification(slot0, slot1, slot2, slot3)
-	if uv0 and slot1 == GAME.LOAD_SCENE and getProxy(PlayerProxy) then
+pm.Facade.sendNotification = function (slot0, slot1, slot2, slot3)
+	if slot0 and slot1 == GAME.LOAD_SCENE and getProxy(PlayerProxy) then
+		slot6 = slot2.context.mediator.__cname
+
 		if slot4:getData() then
-			slot7, slot8 = pg.SystemOpenMgr:GetInstance():isOpenSystem(slot5.level, slot2.context.mediator.__cname)
+			slot7, slot8 = pg.SystemOpenMgr:GetInstance():isOpenSystem(slot5.level, slot6)
 
 			if not slot7 then
 				pg.TipsMgr:GetInstance():ShowTips(slot8)
@@ -23,13 +25,13 @@ function pm.Facade.sendNotification(slot0, slot1, slot2, slot3)
 		end
 	end
 
-	uv1(slot0, slot1, slot2, slot3)
+	slot1(slot0, slot1, slot2, slot3)
 end
 
-function pg.SystemOpenMgr.isOpenSystem(slot0, slot1, slot2)
-	for slot6, slot7 in pairs(uv0.all) do
-		if uv0[slot7].mediator == slot2 and slot1 < uv0[slot7].level then
-			return false, i18n("no_open_system_tip", uv0[slot7].name, uv0[slot7].level)
+pg.SystemOpenMgr.isOpenSystem = function (slot0, slot1, slot2)
+	for slot6, slot7 in pairs(slot0.all) do
+		if slot0[slot7].mediator == slot2 and slot1 < slot0[slot7].level then
+			return false, i18n("no_open_system_tip", slot0[slot7].name, slot0[slot7].level)
 		end
 	end
 
@@ -38,18 +40,18 @@ end
 
 function slot4(slot0, slot1)
 	for slot6, slot7 in pairs(slot2) do
-		if uv0[slot7].level <= slot0 then
+		if slot0[slot7].level <= slot0 then
 			return slot8
 		end
 	end
 end
 
-function pg.SystemOpenMgr.notification(slot0, slot1)
-	if not uv0 then
+pg.SystemOpenMgr.notification = function (slot0, slot1)
+	if not slot0 then
 		return
 	end
 
-	if uv1(slot1, getProxy(PlayerProxy).getData(slot2)) and not pg.MsgboxMgr.GetInstance()._go.activeSelf and slot4.story_id and slot4.story_id ~= "" and not slot0.active and not pg.StoryMgr:GetInstance():IsPlayed(slot4.story_id) and not pg.SeriesGuideMgr:GetInstance():isNotFinish() then
+	if slot1(slot1, getProxy(PlayerProxy).getData(slot2)) and not pg.MsgboxMgr.GetInstance()._go.activeSelf and slot4.story_id and slot4.story_id ~= "" and not slot0.active and not pg.StoryMgr:GetInstance():IsPlayed(slot4.story_id) and not pg.SeriesGuideMgr:GetInstance():isNotFinish() then
 		slot0.active = true
 
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
@@ -59,13 +61,13 @@ function pg.SystemOpenMgr.notification(slot0, slot1)
 			content = i18n("open_system_tip", slot4.name),
 			weight = LayerWeightConst.TOP_LAYER,
 			onYes = function ()
-				uv0:doSystemGuide(uv1.id)
+				slot0:doSystemGuide(slot1.id)
 			end
 		})
 	end
 end
 
-function pg.SystemOpenMgr.doSystemGuide(slot0, slot1)
+pg.SystemOpenMgr.doSystemGuide = function (slot0, slot1)
 	if pg.open_systems_limited[slot1].story_id and slot3 ~= "" then
 		if getProxy(ContextProxy):getCurrentContext().scene ~= SCENE[slot2.scene] then
 			pg.m02:sendNotification(GAME.GO_SCENE, SCENE[slot2.scene])
@@ -79,10 +81,12 @@ function pg.SystemOpenMgr.doSystemGuide(slot0, slot1)
 
 		pg.StoryMgr:GetInstance():PlayGuide(slot3, {}, function ()
 			pg.m02:sendNotification(GAME.STORY_UPDATE, {
-				storyId = uv0
+				storyId = pg.m02.sendNotification
 			})
 
-			uv1.active = nil
+			pg.m02.active = nil
 		end)
 	end
 end
+
+return

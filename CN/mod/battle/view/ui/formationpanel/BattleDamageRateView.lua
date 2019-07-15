@@ -2,21 +2,22 @@ ys = ys or {}
 ys.Battle.BattleDamageRateView = class("BattleDamageRateView")
 ys.Battle.BattleDamageRateView.__name = "BattleDamageRateView"
 
-function ys.Battle.BattleDamageRateView.Ctor(slot0, slot1)
+ys.Battle.BattleDamageRateView.Ctor = function (slot0, slot1)
 	slot0._go = slot1
 	slot0.tick_bar = slot1.transform:Find("tick_bar"):GetComponent(typeof(Image))
 	slot0.tickBarOb = slot0.tick_bar.gameObject
 	slot0.tick_bar.fillAmount = 0
 end
 
-function ys.Battle.BattleDamageRateView.UpdateScore(slot0, slot1, slot2)
+ys.Battle.BattleDamageRateView.UpdateScore = function (slot0, slot1, slot2)
 	LeanTween.cancel(slot0.tickBarOb)
 	LeanTween.value(slot0.tickBarOb, slot0.tick_bar.fillAmount, slot3, 0.5):setOnUpdate(System.Action_float(function (slot0)
-		uv0.tick_bar.fillAmount = slot0
+		slot0.tick_bar.fillAmount = slot0
 	end))
 end
 
-function ys.Battle.BattleDamageRateView.CalScore(slot0, slot1, slot2)
+ys.Battle.BattleDamageRateView.CalScore = function (slot0, slot1, slot2)
+	slot3 = pg.expedition_data_template[slot2]
 	slot5 = {
 		0,
 		0.445,
@@ -27,7 +28,7 @@ function ys.Battle.BattleDamageRateView.CalScore(slot0, slot1, slot2)
 	slot6 = 0
 
 	for slot10, slot11 in ipairs(slot4) do
-		if slot1 < pg.expedition_data_template[slot2][slot11] then
+		if slot1 < slot3[slot11] then
 			break
 		end
 
@@ -36,9 +37,21 @@ function ys.Battle.BattleDamageRateView.CalScore(slot0, slot1, slot2)
 
 	slot7 = 0
 
-	return slot6 < #slot4 and (slot5[slot6 + 1] - slot5[slot6]) * (slot1 - slot8) / (slot3[slot4[slot6 + 1]] - slot8) + slot5[slot6] or 1
+	if slot6 < #slot4 then
+		if slot3[slot4[slot6]] < 0 then
+			slot8 = 0
+		end
+
+		slot7 = (slot5[slot6 + 1] - slot5[slot6]) * (slot1 - slot8) / (slot3[slot4[slot6 + 1]] - slot8) + slot5[slot6]
+	else
+		slot7 = 1
+	end
+
+	return slot7
 end
 
-function ys.Battle.BattleDamageRateView.Dispose(slot0)
+ys.Battle.BattleDamageRateView.Dispose = function (slot0)
 	LeanTween.cancel(slot0.tickBarOb)
 end
+
+return

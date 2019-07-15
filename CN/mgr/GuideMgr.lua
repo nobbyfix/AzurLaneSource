@@ -1,6 +1,4 @@
-slot0 = pg
-slot0 = slot0 or {}
-pg = slot0
+pg = pg or {}
 slot0 = pg
 slot1 = singletonClass
 slot2 = "GuideMgr"
@@ -34,7 +32,7 @@ function slot7(slot0, slot1)
 
 	slot2(slot3)
 
-	slot2 = uv0
+	slot2 = slot0
 	slot2 = slot2.MANAGER_STATE
 	slot2 = slot2.LOADING
 	slot0.managerState = slot2
@@ -49,9 +47,9 @@ function slot7(slot0, slot1)
 	slot5 = true
 
 	function slot6(slot0)
-		slot1 = uv0
+		slot1 = slot0
 		slot1._go = slot0
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1._go
 		slot2 = slot1
 		slot1 = slot1.SetActive
@@ -59,67 +57,67 @@ function slot7(slot0, slot1)
 
 		slot1(slot2, slot3)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = tf
 		slot3 = GameObject
 		slot3 = slot3.Find
 		slot4 = "Overlay/UIOverlay"
 		slot2 = slot2(slot3(slot4))
 		slot1.UIOverlay = slot2
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1._go
 		slot1 = slot1.transform
 		slot2 = slot1
 		slot1 = slot1.SetParent
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3.UIOverlay
 		slot4 = false
 
 		slot1(slot2, slot3, slot4)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = findTF
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3._go
 		slot4 = "Guider"
 		slot2 = slot2(slot3, slot4)
 		slot1.guiderTF = slot2
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = findTF
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3.guiderTF
 		slot4 = "mode1"
 		slot2 = slot2(slot3, slot4)
 		slot1.styleTF1 = slot2
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = findTF
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3.guiderTF
 		slot4 = "mode2"
 		slot2 = slot2(slot3, slot4)
 		slot1.styleTF2 = slot2
-		slot1 = uv0
-		slot2 = uv0
+		slot1 = slot0
+		slot2 = slot0
 		slot2 = slot2.styleTF2
 		slot2 = slot2.sizeDelta
 		slot2 = slot2.y
 		slot1.initChatBgH = slot2
 		slot1 = SetActive
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.guiderTF
 		slot3 = false
 
 		slot1(slot2, slot3)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = findTF
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3._go
 		slot4 = "BG"
 		slot2 = slot2(slot3, slot4)
 		slot1._bg = slot2
-		slot1 = uv0
-		slot2 = uv0
+		slot1 = slot0
+		slot2 = slot0
 		slot2 = slot2._bg
 		slot3 = slot2
 		slot2 = slot2.GetComponent
@@ -127,64 +125,64 @@ function slot7(slot0, slot1)
 		slot5 = CanvasGroup
 		slot2 = slot2(slot3, slot4(slot5))
 		slot1.bgAlpha = slot2
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.bgAlpha
 		slot2 = 0.2
 		slot1.alpha = slot2
-		slot1 = uv0
-		slot2 = uv0
+		slot1 = slot0
+		slot2 = slot0
 		slot2 = slot2._bg
 		slot3 = slot2
 		slot2 = slot2.Find
 		slot4 = "close_btn"
 		slot2 = slot2(slot3, slot4)
 		slot1._closeBtn = slot2
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = GetOrAddComponent
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3._closeBtn
 		slot4 = typeof
 		slot5 = UILongPressTrigger
 		slot2 = slot2(slot3, slot4(slot5))
 		slot1.uiLongPress = slot2
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.uiLongPress
 		slot2 = 10
 		slot1.longPressThreshold = slot2
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = findTF
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3._go
 		slot4 = "finger"
 		slot2 = slot2(slot3, slot4)
 		slot1.fingerTF = slot2
 		slot1 = SetActive
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.fingerTF
 		slot3 = false
 
 		slot1(slot2, slot3)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = findTF
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3._go
 		slot4 = "wTask"
 		slot2 = slot2(slot3, slot4)
 		slot1.wTask = slot2
 		slot1 = setActive
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.wTask
 		slot3 = false
 
 		slot1(slot2, slot3)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = {}
 		slot1.fingerSprites = slot2
 		slot1 = eachChild
 		slot2 = findTF
-		slot3 = uv0
+		slot3 = slot0
 		slot3 = slot3._go
 		slot4 = "resources"
 		slot2 = slot2(slot3, slot4)
@@ -198,7 +196,7 @@ function slot7(slot0, slot1)
 			slot1 = slot1.sprite
 			slot2 = table
 			slot2 = slot2.insert
-			slot3 = uv0
+			slot3 = slot0
 			slot3 = slot3.fingerSprites
 			slot4 = slot1
 
@@ -207,24 +205,24 @@ function slot7(slot0, slot1)
 
 		slot1(slot2, slot3)
 
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = nil
 		slot1.sceneFunc = slot2
-		slot1 = uv0
+		slot1 = slot0
 		slot2 = true
 		slot1.inited = slot2
-		slot1 = uv0
-		slot2 = uv0
+		slot1 = slot0
+		slot2 = slot0
 		slot3 = slot2
 		slot2 = slot2.Finder
 		slot2 = slot2(slot3)
 		slot1.finder = slot2
-		slot1 = uv0
-		slot2 = uv1
+		slot1 = slot0
+		slot2 = slot1
 		slot2 = slot2.MANAGER_STATE
 		slot2 = slot2.IDLE
 		slot1.managerState = slot2
-		slot1 = uv2
+		slot1 = slot2
 
 		slot1()
 	end
@@ -235,18 +233,7 @@ end
 slot0.Init = slot7
 
 function slot7(slot0)
-	slot1 = slot0.managerState
-	slot2 = uv0
-	slot2 = slot2.MANAGER_STATE
-	slot2 = slot2.BUSY
-
-	if slot1 ~= slot2 then
-		slot1 = false
-	else
-		slot1 = true
-	end
-
-	return slot1
+	return slot0.managerState == slot0.MANAGER_STATE.BUSY
 end
 
 slot0.isRuning = slot7
@@ -295,7 +282,7 @@ function slot7(slot0)
 	end
 
 	slot1 = slot0.managerState
-	slot2 = uv0
+	slot2 = slot0
 	slot2 = slot2.MANAGER_STATE
 	slot2 = slot2.BUSY
 
@@ -407,7 +394,7 @@ end
 slot0.isPlayed = slot7
 
 function slot7(slot0, slot1, slot2, slot3, slot4)
-	slot5 = uv0
+	slot5 = slot0
 	slot5 = slot5.ENABLE_GUIDE
 
 	if not slot5 then
@@ -463,12 +450,12 @@ function slot7(slot0, slot1, slot2, slot3, slot4)
 					if slot1 == "table" then
 						slot1 = _
 						slot1 = slot1.any
-						slot2 = uv0
+						slot2 = slot0
 
 						function slot3(slot0)
 							slot1 = table
 							slot1 = slot1.contains
-							slot2 = uv0
+							slot2 = slot0
 							slot2 = slot2.code
 							slot3 = slot0
 
@@ -479,7 +466,7 @@ function slot7(slot0, slot1, slot2, slot3, slot4)
 					else
 						slot1 = table
 						slot1 = slot1.contains
-						slot2 = uv0
+						slot2 = slot0
 						slot3 = slot0.code
 
 						return slot1(slot2, slot3)
@@ -493,21 +480,10 @@ function slot7(slot0, slot1, slot2, slot3, slot4)
 			slot0.curEvents = slot7
 		end
 
-		slot9 = slot0
-		slot8 = slot0.prepareGuider
-		slot10 = slot3
-
-		slot8(slot9, slot10)
+		slot0:prepareGuider(slot3)
 
 		slot8 = {}
-		slot9 = ipairs
-		slot10 = slot0.curEvents
-
-		if not slot10 then
-			slot10 = {}
-		end
-
-		slot9, slot10, slot11 = slot9(slot10)
+		slot9, slot10, slot11 = ipairs(slot0.curEvents or {})
 
 		for slot12, slot13 in slot9, slot10, slot11 do
 			slot14 = table
@@ -516,35 +492,35 @@ function slot7(slot0, slot1, slot2, slot3, slot4)
 
 			function slot16(slot0)
 				function slot1()
-					slot0 = uv0
+					slot0 = slot0
 					slot0 = slot0.managerState
-					slot1 = uv1
+					slot1 = slot1
 					slot1 = slot1.MANAGER_STATE
 					slot1 = slot1.IDLE
 
 					if slot0 ~= slot1 then
-						slot0 = uv0
+						slot0 = slot0
 						slot1 = {}
 						slot0.scenes = slot1
-						slot0 = uv2
+						slot0 = slot2
 
 						slot0()
 					else
-						slot0 = uv0
+						slot0 = slot0
 						slot0 = slot0.erroCallback
 
 						slot0()
 
-						slot0 = uv0
+						slot0 = slot0
 						slot1 = nil
 						slot0.erroCallback = slot1
 					end
 				end
 
-				slot2 = uv0
+				slot2 = slot0
 				slot3 = slot2
 				slot2 = slot2.doCurrEvent
-				slot4 = uv2
+				slot4 = slot2
 				slot5 = slot1
 
 				slot2(slot3, slot4, slot5)
@@ -553,7 +529,7 @@ function slot7(slot0, slot1, slot2, slot3, slot4)
 			slot14(slot15, slot16)
 		end
 
-		slot9 = uv0
+		slot9 = slot0
 		slot9 = slot9.MANAGER_STATE
 		slot9 = slot9.BUSY
 		slot0.managerState = slot9
@@ -561,10 +537,10 @@ function slot7(slot0, slot1, slot2, slot3, slot4)
 		slot10 = slot8
 
 		function slot11()
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.endGuider
-			slot2 = uv1
+			slot2 = slot1
 
 			slot0(slot1, slot2)
 		end
@@ -618,10 +594,10 @@ function slot7(slot0, slot1)
 	slot2 = slot2.AddListener
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.endGuider
-		slot2 = uv1
+		slot2 = slot1
 
 		slot0(slot1, slot2)
 	end
@@ -633,43 +609,43 @@ slot0.prepareGuider = slot7
 
 function slot7(slot0, slot1, slot2)
 	function slot3(slot0)
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.waitScene
 
 		if slot1 then
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.waitScene
 
 			if slot1 ~= "" then
 				slot1 = table
 				slot1 = slot1.contains
-				slot2 = uv1
+				slot2 = slot1
 				slot2 = slot2.scenes
-				slot3 = uv0
+				slot3 = slot0
 				slot3 = slot3.waitScene
 				slot1 = slot1(slot2, slot3)
 
 				if not slot1 then
-					slot1 = uv1
+					slot1 = slot1
 
 					function slot2(slot0)
-						slot1 = uv0
+						slot1 = slot0
 						slot1 = slot1.waitScene
 
 						if slot1 ~= slot0 then
 							slot1 = table
 							slot1 = slot1.contains
-							slot2 = uv1
+							slot2 = slot1
 							slot2 = slot2.sceneStore
-							slot3 = uv0
+							slot3 = slot0
 							slot3 = slot3.waitScene
 							slot1 = slot1(slot2, slot3)
 
 							if slot1 then
-								slot1 = uv1
+								slot1 = slot1
 								slot2 = nil
 								slot1.sceneFunc = slot2
-								slot1 = uv2
+								slot1 = slot2
 
 								slot1()
 							end
@@ -677,7 +653,7 @@ function slot7(slot0, slot1, slot2)
 					end
 
 					slot1.sceneFunc = slot2
-					slot1 = uv1
+					slot1 = slot1
 					slot1 = slot1.sceneFunc
 
 					slot1()
@@ -691,68 +667,68 @@ function slot7(slot0, slot1, slot2)
 	end
 
 	function slot4()
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.hideui
 
 		if slot0 then
-			slot0 = uv1
+			slot0 = slot1
 			slot1 = slot0
 			slot0 = slot0.hideUI
-			slot2 = uv0
-			slot3 = uv2
+			slot2 = slot0
+			slot3 = slot2
 
 			slot0(slot1, slot2, slot3)
 		else
-			slot0 = uv0
+			slot0 = slot0
 			slot0 = slot0.stories
 
 			if slot0 then
-				slot0 = uv1
+				slot0 = slot1
 				slot1 = slot0
 				slot0 = slot0.playStories
-				slot2 = uv0
-				slot3 = uv2
+				slot2 = slot0
+				slot3 = slot2
 
 				slot0(slot1, slot2, slot3)
 			else
-				slot0 = uv0
+				slot0 = slot0
 				slot0 = slot0.notifies
 
 				if slot0 then
-					slot0 = uv1
+					slot0 = slot1
 					slot1 = slot0
 					slot0 = slot0.sendNotifies
-					slot2 = uv0
-					slot3 = uv2
+					slot2 = slot0
+					slot3 = slot2
 
 					slot0(slot1, slot2, slot3)
 				else
-					slot0 = uv0
+					slot0 = slot0
 					slot0 = slot0.showSign
 
 					if slot0 then
-						slot0 = uv1
+						slot0 = slot1
 						slot1 = slot0
 						slot0 = slot0.showSign
-						slot2 = uv0
+						slot2 = slot0
 						slot2 = slot2.showSign
-						slot3 = uv2
+						slot3 = slot2
 
 						slot0(slot1, slot2, slot3)
 					else
-						slot0 = uv0
+						slot0 = slot0
 						slot0 = slot0.doNothing
 
 						if slot0 then
-							slot0 = uv2
+							slot0 = slot2
 
 							slot0()
 						else
-							slot0 = uv1
+							slot0 = slot1
 							slot1 = slot0
 							slot0 = slot0.findUI
-							slot2 = uv0
-							slot3 = uv2
+							slot2 = slot0
+							slot3 = slot2
 
 							slot0(slot1, slot2, slot3)
 						end
@@ -769,8 +745,8 @@ function slot7(slot0, slot1, slot2)
 		slot5 = slot5.New
 
 		function slot6()
-			slot0 = uv0
-			slot1 = uv1
+			slot0 = slot0
+			slot1 = slot1
 
 			slot0(slot1)
 		end
@@ -796,16 +772,16 @@ slot0.doCurrEvent = slot7
 
 function slot7(slot0, slot1, slot2)
 	function slot3()
-		slot0 = uv0
+		slot0 = slot0
 		slot0 = slot0.duration
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.pos
-		slot2 = uv0
+		slot2 = slot0
 		slot2 = slot2.signType
 		slot3 = nil
 
 		if slot2 == 1 then
-			slot4 = uv1
+			slot4 = slot1
 			slot3 = slot4.wTask
 		end
 
@@ -848,18 +824,18 @@ function slot7(slot0, slot1, slot2)
 
 		slot4(slot5, slot6)
 
-		slot4 = uv1
+		slot4 = slot1
 		slot5 = Timer
 		slot5 = slot5.New
 
 		function slot6()
 			slot0 = setActive
-			slot1 = uv0
+			slot1 = slot0
 			slot2 = false
 
 			slot0(slot1, slot2)
 
-			slot0 = uv1
+			slot0 = slot1
 
 			slot0()
 		end
@@ -869,7 +845,7 @@ function slot7(slot0, slot1, slot2)
 		slot9 = 1
 		slot5 = slot5(slot6, slot7, slot8, slot9)
 		slot4.signTimer = slot5
-		slot4 = uv1
+		slot4 = slot1
 		slot4 = slot4.signTimer
 		slot5 = slot4
 		slot4 = slot4.Start
@@ -900,9 +876,9 @@ function slot7(slot0, slot1, slot2)
 			slot1 = slot1.m02
 			slot2 = slot1
 			slot1 = slot1.sendNotification
-			slot3 = uv0
+			slot3 = slot0
 			slot3 = slot3.notify
-			slot4 = uv0
+			slot4 = slot0
 			slot4 = slot4.body
 
 			slot1(slot2, slot3, slot4)
@@ -919,11 +895,11 @@ function slot7(slot0, slot1, slot2)
 	slot5 = slot3
 
 	function slot6()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.finishCurrEvent
-		slot2 = uv1
-		slot3 = uv2
+		slot2 = slot1
+		slot3 = slot2
 
 		slot0(slot1, slot2, slot3)
 	end
@@ -951,7 +927,7 @@ function slot7(slot0, slot1, slot2)
 			slot1 = slot1()
 			slot2 = slot1
 			slot1 = slot1.Play
-			slot3 = uv0
+			slot3 = slot0
 			slot4 = slot0
 			slot5 = true
 
@@ -965,11 +941,11 @@ function slot7(slot0, slot1, slot2)
 	slot5 = slot3
 
 	function slot6()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.finishCurrEvent
-		slot2 = uv1
-		slot3 = uv2
+		slot2 = slot1
+		slot3 = slot2
 
 		slot0(slot1, slot2, slot3)
 	end
@@ -991,31 +967,31 @@ function slot7(slot0, slot1, slot2)
 		slot10 = slot3
 
 		function slot11(slot0)
-			slot1 = uv0
+			slot1 = slot0
 			slot1 = slot1.finder
 			slot2 = slot1
 			slot1 = slot1.SearchTimely
 			slot3 = {}
-			slot4 = uv1
+			slot4 = slot1
 			slot4 = slot4.path
 			slot3.path = slot4
-			slot4 = uv1
+			slot4 = slot1
 			slot4 = slot4.delay
 			slot3.delay = slot4
-			slot4 = uv1
+			slot4 = slot1
 			slot4 = slot4.pathIndex
 			slot3.pathIndex = slot4
 
 			function slot4(slot0)
 				slot1 = SetActive
 				slot2 = slot0
-				slot3 = uv0
+				slot3 = slot0
 				slot3 = slot3.ishide
 				slot3 = not slot3
 
 				slot1(slot2, slot3)
 
-				slot1 = uv1
+				slot1 = slot1
 
 				slot1()
 			end
@@ -1023,10 +999,10 @@ function slot7(slot0, slot1, slot2)
 			slot3.found = slot4
 
 			function slot4()
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.endGuider
-				slot2 = uv1
+				slot2 = slot1
 
 				slot0(slot1, slot2)
 			end
@@ -1043,11 +1019,11 @@ function slot7(slot0, slot1, slot2)
 	slot5 = slot3
 
 	function slot6()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.finishCurrEvent
-		slot2 = uv1
-		slot3 = uv2
+		slot2 = slot1
+		slot3 = slot2
 
 		slot0(slot1, slot2, slot3)
 	end
@@ -1062,7 +1038,7 @@ function slot7(slot0, slot1, slot2)
 	slot4 = {}
 
 	function slot5(slot0)
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.baseui
 
 		if not slot1 then
@@ -1073,34 +1049,34 @@ function slot7(slot0, slot1, slot2)
 			return
 		end
 
-		slot1 = uv1
+		slot1 = slot1
 		slot1 = slot1.finder
 		slot2 = slot1
 		slot1 = slot1.Search
 		slot3 = {}
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.baseui
 		slot4 = slot4.path
 		slot3.path = slot4
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.baseui
 		slot4 = slot4.delay
 		slot3.delay = slot4
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.baseui
 		slot4 = slot4.pathIndex
 		slot3.pathIndex = slot4
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.baseui
 		slot4 = slot4.conditionData
 		slot3.conditionData = slot4
 		slot3.found = slot0
 
 		function slot4()
-			slot0 = uv0
+			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.endGuider
-			slot2 = uv1
+			slot2 = slot1
 
 			slot0(slot1, slot2)
 		end
@@ -1113,7 +1089,7 @@ function slot7(slot0, slot1, slot2)
 	slot4[1] = slot5
 
 	function slot5(slot0)
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.ui
 
 		if not slot1 then
@@ -1124,25 +1100,25 @@ function slot7(slot0, slot1, slot2)
 			return
 		end
 
-		uv1 = false
-		slot1 = uv2
+		slot1 = false
+		slot1 = slot2
 		slot1 = slot1.finder
 		slot2 = slot1
 		slot1 = slot1.Search
 		slot3 = {}
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.ui
 		slot4 = slot4.path
 		slot3.path = slot4
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.ui
 		slot4 = slot4.delay
 		slot3.delay = slot4
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.ui
 		slot4 = slot4.pathIndex
 		slot3.pathIndex = slot4
-		slot4 = uv0
+		slot4 = slot0
 		slot4 = slot4.ui
 		slot4 = slot4.conditionData
 		slot3.conditionData = slot4
@@ -1153,37 +1129,37 @@ function slot7(slot0, slot1, slot2)
 
 			slot1()
 
-			slot1 = uv0
-			slot2 = uv0
+			slot1 = slot0
+			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.cloneGO
 			slot4 = slot0.gameObject
-			slot5 = uv0
+			slot5 = slot0
 			slot5 = slot5._go
 			slot5 = slot5.transform
-			slot6 = uv1
+			slot6 = slot1
 			slot6 = slot6.ui
 			slot2 = slot2(slot3, slot4, slot5, slot6)
 			slot1.cloneTarget = slot2
-			slot1 = uv0
+			slot1 = slot0
 			slot2 = slot1
 			slot1 = slot1.addUIEventTrigger
 			slot3 = slot0
-			slot4 = uv1
-			slot5 = uv2
+			slot4 = slot1
+			slot5 = slot2
 
 			slot1(slot2, slot3, slot4, slot5)
 
-			slot1 = uv0
+			slot1 = slot0
 			slot2 = slot1
 			slot1 = slot1.setFinger
 			slot3 = slot0
-			slot4 = uv1
+			slot4 = slot1
 			slot4 = slot4.ui
 
 			slot1(slot2, slot3, slot4)
 
-			slot1 = uv3
+			slot1 = slot3
 
 			slot1()
 		end
@@ -1191,23 +1167,23 @@ function slot7(slot0, slot1, slot2)
 		slot3.found = slot4
 
 		function slot4()
-			slot0 = uv0
+			slot0 = slot0
 			slot0 = slot0.ui
 			slot0 = slot0.notfoundSkip
 
 			if slot0 then
-				slot0 = uv1
+				slot0 = slot1
 				slot1 = slot0
 				slot0 = slot0.finishCurrEvent
-				slot2 = uv0
-				slot3 = uv2
+				slot2 = slot0
+				slot3 = slot2
 
 				slot0(slot1, slot2, slot3)
 			else
-				slot0 = uv1
+				slot0 = slot1
 				slot1 = slot0
 				slot0 = slot0.endGuider
-				slot2 = uv2
+				slot2 = slot2
 
 				slot0(slot1, slot2)
 			end
@@ -1223,12 +1199,12 @@ function slot7(slot0, slot1, slot2)
 	slot6 = slot4
 
 	function slot7()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.updateUIStyle
-		slot2 = uv1
-		slot3 = uv2
-		slot4 = uv3
+		slot2 = slot1
+		slot3 = slot2
+		slot4 = slot3
 
 		slot0(slot1, slot2, slot3, slot4)
 	end
@@ -1239,14 +1215,7 @@ end
 slot0.findUI = slot7
 
 function slot7(slot0, slot1, slot2, slot3)
-	slot4 = slot0.bgAlpha
-	slot5 = slot1.alpha
-
-	if not slot5 then
-		slot5 = 0.2
-	end
-
-	slot4.alpha = slot5
+	slot0.bgAlpha.alpha = slot1.alpha or 0.2
 	slot4 = SetActive
 	slot5 = slot0.guiderTF
 	slot6 = slot1.style
@@ -1284,16 +1253,16 @@ function slot7(slot0, slot1, slot2, slot3)
 			slot6.pathIndex = slot7
 
 			function slot7(slot0)
-				slot1 = uv0
-				slot2 = uv0
+				slot1 = slot0
+				slot2 = slot0
 				slot3 = slot2
 				slot2 = slot2.cloneGO
 				slot4 = go
 				slot5 = slot0
 				slot4 = slot4(slot5)
-				slot5 = uv0
+				slot5 = slot0
 				slot5 = slot5.UIOverlay
-				slot6 = uv1
+				slot6 = slot1
 				slot6 = slot6.style
 				slot6 = slot6.ui
 				slot2 = slot2(slot3, slot4, slot5, slot6)
@@ -1303,7 +1272,7 @@ function slot7(slot0, slot1, slot2, slot3)
 			slot6.found = slot7
 
 			function slot7()
-				slot0 = uv0
+				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.endGuider
 
@@ -1321,19 +1290,19 @@ function slot7(slot0, slot1, slot2, slot3)
 	slot6 = slot0._go
 
 	function slot7()
-		slot0 = uv0
+		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.finishCurrEvent
-		slot2 = uv1
-		slot3 = uv2
+		slot2 = slot1
+		slot3 = slot2
 
 		slot0(slot1, slot2, slot3)
 
-		slot0 = uv1
+		slot0 = slot1
 		slot0 = slot0.style
 
 		if slot0 then
-			slot0 = uv1
+			slot0 = slot1
 			slot0 = slot0.style
 			slot0 = slot0.scene
 
@@ -1345,7 +1314,7 @@ function slot7(slot0, slot1, slot2, slot3)
 				slot2 = GAME
 				slot2 = slot2.GO_SCENE
 				slot3 = SCENE
-				slot4 = uv1
+				slot4 = slot1
 				slot4 = slot4.style
 				slot4 = slot4.scene
 				slot3 = slot3[slot4]
@@ -1369,70 +1338,20 @@ end
 slot0.updateUIStyle = slot7
 
 function slot7(slot0, slot1)
-	slot2 = slot1.style
+	slot3 = slot1.style or {}.dir or 1
+	slot5 = slot1.style or .posX or 0
+	slot6 = slot1.style or .posY or 0
 
-	if not slot2 then
-		slot2 = {}
-	end
-
-	slot3 = slot2.dir
-
-	if not slot3 then
-		slot3 = 1
-	end
-
-	slot4 = slot2.mode
-
-	if not slot4 then
-		slot4 = 1
-	end
-
-	slot5 = slot2.posX
-
-	if not slot5 then
-		slot5 = 0
-	end
-
-	slot6 = slot2.posY
-
-	if not slot6 then
-		slot6 = 0
-	end
-
-	slot7 = SetActive
-	slot8 = slot0.styleTF1
-	slot9 = uv0
-	slot9 = slot9.MODE1
-
-	if slot4 ~= slot9 then
-		slot9 = false
-	else
-		slot9 = true
-	end
-
-	slot7(slot8, slot9)
-
-	slot7 = SetActive
-	slot8 = slot0.styleTF2
-	slot9 = uv0
-	slot9 = slot9.MODE2
-
-	if slot4 ~= slot9 then
-		slot9 = false
-	else
-		slot9 = true
-	end
-
-	slot7(slot8, slot9)
+	SetActive(slot0.styleTF1, (slot1.style or .mode or 1) == slot0.MODE1)
+	SetActive(slot0.styleTF2, (slot1.style or .mode or 1) == slot0.MODE2)
 
 	slot7 = nil
-	slot8 = uv0
-	slot8 = slot8.MODE1
+	slot8 = slot0.MODE1
 
 	if slot4 == slot8 then
 		slot7 = slot0.styleTF1
 	else
-		slot8 = uv0
+		slot8 = slot0
 		slot8 = slot8.MODE2
 
 		if slot4 == slot8 then
@@ -1457,32 +1376,12 @@ function slot7(slot0, slot1)
 	end
 
 	slot7.localScale = slot8
-	slot10 = slot7
-	slot9 = slot7.Find
-	slot11 = "content"
-	slot9 = slot9(slot10, slot11)
+	slot9 = slot7:Find("content")
 	slot9.localScale = slot8
-	slot10 = slot2.text
 
-	if not slot10 then
-		slot10 = ""
-	end
+	setText(slot9, HXSet.hxLan(slot10))
 
-	slot11 = setText
-	slot12 = slot9
-	slot13 = HXSet
-	slot13 = slot13.hxLan
-	slot14 = slot10
-
-	slot11(slot12, slot13(slot14))
-
-	slot12 = slot9
-	slot11 = slot9.GetComponent
-	slot13 = typeof
-	slot14 = Text
-	slot11 = slot11(slot12, slot13(slot14))
-	slot12 = slot11.text
-	slot12 = #slot12
+	slot12 = #slot9:GetComponent(typeof(Text)).text
 	slot13 = CHAT_POP_STR_LEN_MIDDLE
 
 	if slot13 < slot12 then
@@ -1497,7 +1396,7 @@ function slot7(slot0, slot1)
 
 	slot12 = slot11.preferredHeight
 	slot12 = slot12 + 120
-	slot13 = uv0
+	slot13 = slot0
 	slot13 = slot13.MODE2
 
 	if slot4 == slot13 then
@@ -1581,7 +1480,7 @@ function slot7(slot0)
 
 		if not slot3 then
 			if slot1 and slot1 ~= -1 then
-				slot3 = uv0
+				slot3 = slot0
 				slot4 = tf
 				slot5 = slot2
 				slot4 = slot4(slot5)
@@ -1622,7 +1521,7 @@ function slot7(slot0)
 	end
 
 	function slot4(slot0, slot1)
-		slot2 = uv0
+		slot2 = slot0
 		slot3 = slot0
 		slot4 = -1
 		slot2 = slot2(slot3, slot4)
@@ -1657,133 +1556,42 @@ function slot7(slot0)
 	end
 
 	function slot5(slot0, slot1)
-		slot3 = slot0
-		slot2 = slot0.Clear
+		slot0:Clear()
 
-		slot2(slot3)
-
-		slot2 = 0.5
 		slot3 = 20
 		slot4 = 0
-		slot5 = slot1.delay
-
-		if not slot5 then
-			slot5 = 0
-		end
-
-		slot6 = Timer
-		slot6 = slot6.New
-
-		function slot7()
-			slot0 = uv0
-			slot1 = uv1
+		slot5 = slot1.delay or 0
+		slot0.findUITimer = Timer.New(function ()
 			slot0 = slot0 + slot1
-			uv0 = slot0
-			slot0 = pg
-			slot0 = slot0.UIMgr
-			slot0 = slot0.GetInstance
-			slot0 = slot0()
-			slot1 = slot0
-			slot0 = slot0.OnLoading
-			slot0 = slot0(slot1)
 
-			if slot0 then
+			if pg.UIMgr.GetInstance():OnLoading() then
 				return
 			end
 
-			slot0 = uv0
-			slot1 = uv2
-
-			if slot1 < slot0 then
-				slot0 = uv3
-
-				if slot0 == 0 then
-					slot0 = print
-					slot1 = "not found ui >>"
-					slot2 = uv4
-					slot2 = slot2.path
-
-					slot0(slot1, slot2)
-
-					slot0 = uv5
-					slot1 = slot0
-					slot0 = slot0.Clear
-
-					slot0(slot1)
-
-					slot0 = uv4
-					slot0 = slot0.notFound
-
-					slot0()
+			if slot2 < slot0 then
+				if slot3 == 0 then
+					print("not found ui >>", slot4.path)
+					slot5:Clear()
+					slot4.notFound()
 
 					return
 				end
 
 				slot0 = nil
-				slot1 = uv4
-				slot1 = slot1.conditionData
 
-				if slot1 ~= nil then
-					slot1 = uv6
-					slot2 = uv4
-					slot2 = slot2.path
-					slot3 = uv4
-					slot3 = slot3.conditionData
-					slot1 = slot1(slot2, slot3)
-					slot0 = slot1
-				else
-					slot1 = uv7
-					slot2 = uv4
-					slot2 = slot2.path
-					slot3 = uv4
-					slot3 = slot3.pathIndex
-					slot1 = slot1(slot2, slot3)
-					slot0 = slot1
+				if (slot4.conditionData == nil or slot6(slot4.path, slot4.conditionData)) and slot7(slot4.path, slot4.pathIndex) and go(slot0).activeInHierarchy then
+					slot5:Clear()
+					slot4.found(slot0)
+
+					return
 				end
 
-				if slot0 then
-					slot1 = go
-					slot2 = slot0
-					slot1 = slot1(slot2)
-					slot1 = slot1.activeInHierarchy
-
-					if slot1 then
-						slot1 = uv5
-						slot2 = slot1
-						slot1 = slot1.Clear
-
-						slot1(slot2)
-
-						slot1 = uv4
-						slot1 = slot1.found
-						slot2 = slot0
-
-						slot1(slot2)
-
-						return
-					end
-				end
-
-				slot1 = uv3
-				slot1 = slot1 - 1
-				uv3 = slot1
+				slot3 = slot3 - 1
 			end
-		end
+		end, 0.5, -1)
 
-		slot8 = slot2
-		slot9 = -1
-		slot6 = slot6(slot7, slot8, slot9)
-		slot0.findUITimer = slot6
-		slot6 = slot0.findUITimer
-		slot7 = slot6
-		slot6 = slot6.Start
-
-		slot6(slot7)
-
-		slot6 = slot0.findUITimer
-		slot6 = slot6.func
-
-		slot6()
+		slot0.findUITimer:Start()
+		slot0.findUITimer.func()
 	end
 
 	slot1.Search = slot5
@@ -1794,7 +1602,7 @@ function slot7(slot0)
 
 		slot2(slot3)
 
-		slot2 = uv0
+		slot2 = slot0
 		slot3 = slot1.path
 		slot4 = slot1.pathIndex
 		slot2 = slot2(slot3, slot4)
@@ -1922,61 +1730,61 @@ function slot7(slot0, slot1, slot2, slot3)
 
 				function slot6()
 					slot0 = IsNil
-					slot1 = uv0
+					slot1 = slot0
 					slot0 = slot0(slot1)
 
 					if not slot0 then
 						slot0 = IsNil
-						slot1 = uv1
+						slot1 = slot1
 						slot0 = slot0(slot1)
 
 						if not slot0 then
-							slot0 = uv1
-							slot1 = uv0
+							slot0 = slot1
+							slot1 = slot0
 							slot1 = slot1.transform
 							slot1 = slot1.position
 							slot0.position = slot1
-							slot0 = uv1
+							slot0 = slot1
 							slot0 = slot0.localPosition
-							slot1 = uv1
+							slot1 = slot1
 							slot2 = Vector3
 							slot3 = slot0.x
 							slot4 = slot0.y
 							slot5 = 0
 							slot2 = slot2(slot3, slot4, slot5)
 							slot1.localPosition = slot2
-							slot1 = uv0
+							slot1 = slot0
 							slot1 = slot1.transform
 							slot1 = slot1.localScale
-							slot2 = uv1
+							slot2 = slot1
 							slot3 = Vector3
 							slot4 = slot1.x
 							slot5 = slot1.y
 							slot6 = slot1.z
 							slot3 = slot3(slot4, slot5, slot6)
 							slot2.localScale = slot3
-							slot2 = uv2
+							slot2 = slot2
 							slot2 = slot2.image
 
 							if slot2 then
 								slot2 = type
-								slot3 = uv2
+								slot3 = slot2
 								slot3 = slot3.image
 								slot2 = slot2(slot3)
 
 								if slot2 == "table" then
 									slot2 = nil
-									slot3 = uv2
+									slot3 = slot2
 									slot3 = slot3.image
 									slot3 = slot3.isChild
 
 									if slot3 then
 										slot3 = tf
-										slot4 = uv0
+										slot4 = slot0
 										slot3 = slot3(slot4)
 										slot4 = slot3
 										slot3 = slot3.Find
-										slot5 = uv2
+										slot5 = slot2
 										slot5 = slot5.image
 										slot5 = slot5.source
 										slot3 = slot3(slot4, slot5)
@@ -1984,32 +1792,32 @@ function slot7(slot0, slot1, slot2, slot3)
 									else
 										slot3 = GameObject
 										slot3 = slot3.Find
-										slot4 = uv2
+										slot4 = slot2
 										slot4 = slot4.image
 										slot4 = slot4.source
 										slot3 = slot3(slot4)
 										slot2 = slot3
 									end
 
-									slot3 = uv2
+									slot3 = slot2
 									slot3 = slot3.image
 									slot3 = slot3.isRelative
 									slot4 = nil
 
 									if slot3 then
-										slot5 = uv2
+										slot5 = slot2
 										slot5 = slot5.image
 										slot5 = slot5.target
 
 										if slot5 == "" then
-											slot4 = uv1
+											slot4 = slot1
 										else
 											slot5 = tf
-											slot6 = uv1
+											slot6 = slot1
 											slot5 = slot5(slot6)
 											slot6 = slot5
 											slot5 = slot5.Find
-											slot7 = uv2
+											slot7 = slot2
 											slot7 = slot7.image
 											slot7 = slot7.target
 											slot5 = slot5(slot6, slot7)
@@ -2018,7 +1826,7 @@ function slot7(slot0, slot1, slot2, slot3)
 									else
 										slot5 = GameObject
 										slot5 = slot5.Find
-										slot6 = uv2
+										slot6 = slot2
 										slot6 = slot6.image
 										slot6 = slot6.target
 										slot5 = slot5(slot6)
@@ -2093,20 +1901,7 @@ function slot7(slot0, slot1, slot2, slot3)
 		slot5 = slot3.pos
 
 		if slot5 then
-			slot5 = Vector3
-			slot6 = slot3.pos
-			slot6 = slot6.x
-			slot7 = slot3.pos
-			slot7 = slot7.y
-			slot8 = slot3.pos
-			slot8 = slot8.z
-
-			if not slot8 then
-				slot8 = 0
-			end
-
-			slot5 = slot5(slot6, slot7, slot8)
-			slot4.localPosition = slot5
+			slot4.localPosition = Vector3(slot3.pos.x, slot3.pos.y, slot3.pos.z or 0)
 		else
 			slot5 = slot1.transform
 			slot5 = slot5.position
@@ -2120,18 +1915,7 @@ function slot7(slot0, slot1, slot2, slot3)
 			slot4.localPosition = slot6
 		end
 
-		slot5 = slot3.scale
-
-		if not slot5 then
-			slot5 = 1
-		end
-
-		slot6 = Vector3
-		slot7 = slot5
-		slot8 = slot5
-		slot9 = slot5
-		slot6 = slot6(slot7, slot8, slot9)
-		slot4.localScale = slot6
+		slot4.localScale = Vector3(slot3.scale or 1, , )
 		slot6 = slot3.eulerAngles
 
 		if slot6 then
@@ -2175,38 +1959,25 @@ function slot7(slot0, slot1, slot2)
 	slot5 = slot2.scale
 
 	if slot5 then
-		slot5 = slot2.scale
-		slot5 = 1 / slot5
+		slot0.fingerTF.localScale = Vector3(1 / slot2.scale or 1, , 1)
+		slot6 = slot2.fingerPos
 
-		if not slot5 then
-			slot5 = 1
-		end
-	end
-
-	slot6 = slot0.fingerTF
-	slot7 = Vector3
-	slot8 = slot5
-	slot9 = slot5
-	slot10 = 1
-	slot7 = slot7(slot8, slot9, slot10)
-	slot6.localScale = slot7
-	slot6 = slot2.fingerPos
-
-	if slot6 then
-		slot6 = Vector3
-		slot7 = slot2.fingerPos
-		slot7 = slot7.posX
-		slot8 = slot2.fingerPos
-		slot8 = slot8.posY
-		slot9 = 0
-		slot6 = slot6(slot7, slot8, slot9)
-
-		if not slot6 then
+		if slot6 then
 			slot6 = Vector3
-			slot7 = slot3
-			slot8 = -slot4
+			slot7 = slot2.fingerPos
+			slot7 = slot7.posX
+			slot8 = slot2.fingerPos
+			slot8 = slot8.posY
 			slot9 = 0
 			slot6 = slot6(slot7, slot8, slot9)
+
+			if not slot6 then
+				slot6 = Vector3
+				slot7 = slot3
+				slot8 = -slot4
+				slot9 = 0
+				slot6 = slot6(slot7, slot8, slot9)
+			end
 		end
 	end
 
@@ -2303,38 +2074,27 @@ function slot7(slot0, slot1, slot2, slot3)
 
 	slot8 = slot4.triggerType
 
-	if slot8 then
-		slot8 = slot4.triggerType
-		slot8 = slot8[1]
-
-		if not slot8 then
-			slot8 = uv0
-		end
-	end
-
-	slot9 = uv0
-
-	if slot8 == slot9 then
+	if slot8 and (slot4.triggerType[1] or slot0) == slot0 then
 		slot9 = onButton
 		slot10 = slot0
 		slot11 = slot6
 
 		function slot12()
 			slot0 = IsNil
-			slot1 = uv0
+			slot1 = slot0
 			slot0 = slot0(slot1)
 
 			if not slot0 then
-				slot0 = uv1
+				slot0 = slot1
 				slot1 = slot0
 				slot0 = slot0.finishCurrEvent
-				slot2 = uv2
-				slot3 = uv3
+				slot2 = slot2
+				slot3 = slot3
 
 				slot0(slot1, slot2, slot3)
 
 				slot0 = triggerButton
-				slot1 = uv0
+				slot1 = slot0
 
 				slot0(slot1)
 			end
@@ -2350,7 +2110,7 @@ function slot7(slot0, slot1, slot2, slot3)
 
 		slot9(slot10, slot11)
 	else
-		slot9 = uv1
+		slot9 = slot1
 
 		if slot8 == slot9 then
 			slot9 = onToggle
@@ -2360,29 +2120,12 @@ function slot7(slot0, slot1, slot2, slot3)
 			function slot12(slot0)
 				if slot0 then
 					slot1 = IsNil
-					slot2 = uv0
+					slot2 = slot0
 					slot1 = slot1(slot2)
 
 					if not slot1 then
-						slot1 = uv1
-						slot2 = slot1
-						slot1 = slot1.finishCurrEvent
-						slot3 = uv2
-						slot4 = uv3
-
-						slot1(slot2, slot3, slot4)
-
-						slot1 = triggerToggle
-						slot2 = uv0
-						slot3 = uv4
-						slot3 = slot3.triggerType
-						slot3 = slot3[2]
-
-						if not slot3 then
-							slot3 = true
-						end
-
-						slot1(slot2, slot3)
+						slot1:finishCurrEvent(slot1, )
+						triggerToggle(slot0, slot4.triggerType[2] or true)
 					end
 				end
 			end
@@ -2397,7 +2140,7 @@ function slot7(slot0, slot1, slot2, slot3)
 
 			slot9(slot10, slot11)
 		else
-			slot9 = uv2
+			slot9 = slot2
 
 			if slot8 == slot9 then
 				slot10 = slot5
@@ -2415,11 +2158,11 @@ function slot7(slot0, slot1, slot2, slot3)
 
 				function slot13(slot0, slot1)
 					slot2 = IsNil
-					slot3 = uv0
+					slot3 = slot0
 					slot2 = slot2(slot3)
 
 					if not slot2 then
-						slot2 = uv1
+						slot2 = slot1
 						slot3 = slot2
 						slot2 = slot2.OnPointerDown
 						slot4 = slot1
@@ -2434,20 +2177,20 @@ function slot7(slot0, slot1, slot2, slot3)
 				slot11 = slot10.AddPointUpFunc
 
 				function slot13(slot0, slot1)
-					slot2 = uv0
+					slot2 = slot0
 					slot3 = slot2
 					slot2 = slot2.finishCurrEvent
-					slot4 = uv1
-					slot5 = uv2
+					slot4 = slot1
+					slot5 = slot2
 
 					slot2(slot3, slot4, slot5)
 
 					slot2 = IsNil
-					slot3 = uv3
+					slot3 = slot3
 					slot2 = slot2(slot3)
 
 					if not slot2 then
-						slot2 = uv4
+						slot2 = slot4
 						slot3 = slot2
 						slot2 = slot2.OnPointerUp
 						slot4 = slot1
@@ -2461,7 +2204,7 @@ function slot7(slot0, slot1, slot2, slot3)
 				return
 			end
 
-			slot9 = uv3
+			slot9 = slot3
 
 			if slot8 == slot9 then
 				slot10 = slot6
@@ -2487,15 +2230,15 @@ function slot7(slot0, slot1, slot2, slot3)
 
 				function slot12(slot0, slot1)
 					slot2 = IsNil
-					slot3 = uv0
+					slot3 = slot0
 					slot2 = slot2(slot3)
 
 					if not slot2 then
-						slot2 = uv1
+						slot2 = slot1
 						slot3 = slot2
 						slot2 = slot2.finishCurrEvent
-						slot4 = uv2
-						slot5 = uv3
+						slot4 = slot2
+						slot5 = slot3
 
 						slot2(slot3, slot4, slot5)
 					end
@@ -2503,7 +2246,7 @@ function slot7(slot0, slot1, slot2, slot3)
 
 				slot10(slot11, slot12)
 			else
-				slot9 = uv4
+				slot9 = slot4
 
 				if slot8 == slot9 then
 					slot10 = slot6
@@ -2528,11 +2271,11 @@ function slot7(slot0, slot1, slot2, slot3)
 					slot10 = slot9.AddPointUpFunc
 
 					function slot12(slot0, slot1)
-						slot2 = uv0
+						slot2 = slot0
 						slot3 = slot2
 						slot2 = slot2.finishCurrEvent
-						slot4 = uv1
-						slot5 = uv2
+						slot4 = slot1
+						slot5 = slot2
 
 						slot2(slot3, slot4, slot5)
 					end
@@ -2792,12 +2535,12 @@ end
 slot0.unMask = slot8
 
 function slot8(slot0, slot1)
-	slot2 = uv0
+	slot2 = slot0
 	slot3 = slot0
 
 	slot2(slot3)
 
-	slot2 = uv1
+	slot2 = slot1
 	slot2 = slot2.MANAGER_STATE
 	slot2 = slot2.IDLE
 	slot0.managerState = slot2
@@ -2826,7 +2569,7 @@ function slot8(slot0)
 	if slot1 then
 		slot1 = slot0.managerState
 		slot0.prevState = slot1
-		slot1 = uv0
+		slot1 = slot0
 		slot1 = slot1.MANAGER_STATE
 		slot1 = slot1.BREAK
 		slot0.managerState = slot1
@@ -2877,3 +2620,5 @@ function slot8(slot0)
 end
 
 slot0.onReconneceted = slot8
+
+return

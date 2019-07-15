@@ -6,23 +6,23 @@ slot6.size = ({
 	center = Vector3.zero,
 	extents = Vector3.zero,
 	__index = function (slot0, slot1)
-		if uv0(uv1, slot1) == nil and uv0(uv2, slot1) ~= nil then
+		if slot0(slot1, slot1) == nil and slot0(slot2, slot1) ~= nil then
 			return slot2(slot0)
 		end
 
 		return slot2
 	end,
 	__call = function (slot0, slot1, slot2)
-		return uv0({
+		return slot0({
 			center = slot1,
 			extents = slot2 * 0.5
-		}, uv1)
+		}, slot1)
 	end,
 	New = function (slot0, slot1)
-		return uv0({
+		return slot0({
 			center = slot0,
 			extents = slot1 * 0.5
-		}, uv1)
+		}, slot1)
 	end,
 	Get = function (slot0)
 		return slot0.center, slot0:GetSize()
@@ -50,11 +50,11 @@ slot6.size = ({
 		slot0.center = slot1 + slot0.extents
 	end,
 	Encapsulate = function (slot0, slot1)
-		slot0:SetMinMax(uv0.Min(slot0:GetMin(), slot1), uv0.Max(slot0:GetMax(), slot1))
+		slot0:SetMinMax(slot0.Min(slot0:GetMin(), slot1), slot0.Max(slot0:GetMax(), slot1))
 	end,
 	Expand = function (slot0, slot1)
-		if uv0(slot1) == "number" then
-			slot0.extents:Add(uv1.New(slot1 * 0.5, , ))
+		if slot0(slot1) == "number" then
+			slot0.extents:Add(slot1.New(slot1 * 0.5, , ))
 		else
 			slot0.extents:Add(slot1 * 0.5)
 		end

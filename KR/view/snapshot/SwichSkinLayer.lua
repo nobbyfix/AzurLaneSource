@@ -1,31 +1,32 @@
 slot0 = class("SwichSkinLayer", import("..base.BaseUI"))
 
-function slot0.setShip(slot0, slot1)
+slot0.setShip = function (slot0, slot1)
 	slot0.shipVO = slot1
 end
 
-function slot0.setShipSkin(slot0, slot1)
+slot0.setShipSkin = function (slot0, slot1)
 	slot0.shipVO.skinId = slot1
 end
 
-function slot0.setSkinList(slot0, slot1)
+slot0.setSkinList = function (slot0, slot1)
 	slot0.skinList = slot1
 	slot0.skins = slot0:getGroupSkinList(slot0.shipVO.groupId)
 	slot0.owns = slot0:getGroupOwnSkins(slot0.shipVO.groupId)
 end
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "SwichSkinLayer"
 end
 
-function slot0.back(slot0)
-	slot0:emit(uv0.ON_CLOSE)
+slot0.back = function (slot0)
+	slot0:emit(slot0.ON_CLOSE)
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
+	return
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	slot0:initSelectSkinPanel()
 
 	if slot0.shipVO and #slot0.skins > 1 then
@@ -33,14 +34,14 @@ function slot0.didEnter(slot0)
 	end
 end
 
-function slot0.initSelectSkinPanel(slot0)
+slot0.initSelectSkinPanel = function (slot0)
 	slot0.skinPanel = slot0._tf
 
 	onButton(slot0, slot1, function ()
-		uv0:back()
+		slot0:back()
 	end)
 	onButton(slot0, slot2, function ()
-		uv0:back()
+		slot0:back()
 	end)
 
 	slot0.skinScroll = slot0:findTF("select_skin/style_scroll", slot0.skinPanel)
@@ -52,7 +53,7 @@ function slot0.initSelectSkinPanel(slot0)
 	slot0.skinCardMap = {}
 end
 
-function slot0.openSelectSkinPanel(slot0)
+slot0.openSelectSkinPanel = function (slot0)
 	for slot4 = slot0.skinContainer.childCount, #slot0.skins - 1, 1 do
 		cloneTplTo(slot0.skinCard, slot0.skinContainer)
 	end
@@ -64,148 +65,1006 @@ function slot0.openSelectSkinPanel(slot0)
 	slot1 = slot0.skinContainer.childCount
 
 	for slot5, slot6 in ipairs(slot0.skins) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 35-43, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 51-57, warpins: 2 ---
 		if not slot0.skinCardMap[slot0.skinContainer:GetChild(slot5 - 1)] then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 44-50, warpins: 1 ---
 			slot0.skinCardMap[slot7] = ShipSkinCard.New(slot7.gameObject)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
-		slot8:updateData(slot0.shipVO, slot6, slot0.shipVO:proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or slot0.shipVO:getRemouldSkinId() == slot6.id and slot0.shipVO:isRemoulded() or slot6.skin_type == 3)
-		slot8:updateSkin(slot6, slot0.shipVO.proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or slot0.shipVO.getRemouldSkinId() == slot6.id and slot0.shipVO.isRemoulded() or slot6.skin_type == 3)
+		slot9 = slot0.shipVO:getRemouldSkinId() == slot6.id and slot0.shipVO:isRemoulded()
+
+		slot8:updateData(slot0.shipVO, slot6, slot0.shipVO:proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or (slot0.shipVO.getRemouldSkinId() == slot6.id and slot0.shipVO.isRemoulded()) or slot6.skin_type == 3)
+		slot8:updateSkin(slot6, slot0.shipVO.proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or (slot0.shipVO.getRemouldSkinId() == slot6.id and slot0.shipVO.isRemoulded()) or slot6.skin_type == 3)
 		slot8:updateUsing(slot0.shipVO.skinId == slot6.id)
 		removeOnButton(slot7)
 
-		slot14 = (slot6.shop_id > 0 and pg.shop_template[slot6.shop_id] or nil) and not pg.TimeMgr.GetInstance():inTime(slot6.shop_id > 0 and pg.shop_template[slot6.shop_id] or nil.time)
+		slot14 = ((slot6.shop_id > 0 and pg.shop_template[slot6.shop_id]) or nil) and not pg.TimeMgr.GetInstance():inTime((slot6.shop_id > 0 and pg.shop_template[slot6.shop_id]) or nil.time)
 		slot15 = slot6.id == slot0.shipVO.skinId
-		slot16 = slot6.id == slot0.shipVO:getConfig("skin_id") or ((slot0.shipVO:proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or slot0.shipVO:getRemouldSkinId() == slot6.id and slot0.shipVO:isRemoulded()) and 1 or 0) >= 1 or slot6.skin_type == 3
+		slot16 = slot6.id == slot0.shipVO:getConfig("skin_id") or (((slot0.shipVO:proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or (slot0.shipVO:getRemouldSkinId() == slot6.id and slot0.shipVO:isRemoulded())) and 1) or 0) >= 1 or slot6.skin_type == 3
 
 		onButton(slot0, slot7, function ()
-			if uv0 then
-				uv1:back()
-			elseif uv2 then
-				slot1 = uv1
-				slot0 = uv1.emit
-				slot2 = SwichSkinMediator.CHANGE_SKIN
-				slot3 = uv1.shipVO.id
 
-				if uv3.id == uv1.shipVO:getConfig("skin_id") then
-					slot4 = 0
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-3, warpins: 1 ---
+			if slot0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 4-8, warpins: 1 ---
+				slot1:back()
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 9-11, warpins: 1 ---
+				if slot2 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 12-29, warpins: 1 ---
+					slot0 = slot1.emit
+					slot2 = SwichSkinMediator.CHANGE_SKIN
+
+					if slot3.id == slot1.shipVO:getConfig("skin_id") then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 30-31, warpins: 1 ---
+						slot4 = 0
+						--- END OF BLOCK #0 ---
+
+
+
+					else
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 32-33, warpins: 1 ---
+						slot4 = slot3.id
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 34-39, warpins: 2 ---
+					slot0(slot1, slot2, slot3, slot4)
+					slot1:back()
+					--- END OF BLOCK #1 ---
+
+
+
 				else
-					slot4 = uv3.id
-				end
 
-				slot0(slot1, slot2, slot3, slot4)
-				uv1:back()
-			elseif uv4 then
-				if uv5 then
-					pg.TipsMgr.GetInstance():ShowTips(i18n("common_skin_out_of_stock"))
-				else
-					slot0 = true
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 40-42, warpins: 1 ---
+					if slot4 then
 
-					if HXSet.isHx() then
-						if pg.shop_template[uv4.id].isHX == 1 then
-							slot0 = false
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 43-45, warpins: 1 ---
+						if slot5 then
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 46-56, warpins: 1 ---
+							pg.TipsMgr.GetInstance():ShowTips(i18n("common_skin_out_of_stock"))
+							--- END OF BLOCK #0 ---
+
+
+
 						else
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 57-62, warpins: 1 ---
 							slot0 = true
-						end
-					end
 
-					if slot0 then
-						slot1 = Goods.New({
-							shop_id = uv4.id
-						}, Goods.TYPE_SKIN)
+							if HXSet.isHx() then
 
-						if slot1:isDisCount() then
-							slot2 = slot1:getConfig("resource_num") * (100 - slot1:getConfig("discount")) / 100
-						end
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 63-70, warpins: 1 ---
+								if pg.shop_template[slot4.id].isHX == 1 then
 
-						pg.MsgboxMgr.GetInstance():ShowMsgBox({
-							content = i18n("text_buy_fashion_tip", slot2, HXSet.hxLan(uv3.name)),
-							onYes = function ()
-								uv0:emit(SwichSkinMediator.BUY_ITEM, uv1.id, 1)
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 71-72, warpins: 1 ---
+									slot0 = false
+									--- END OF BLOCK #0 ---
+
+
+
+								else
+
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 73-73, warpins: 1 ---
+									slot0 = true
+									--- END OF BLOCK #0 ---
+
+
+
+								end
+								--- END OF BLOCK #0 ---
+
+
+
 							end
-						})
+
+							--- END OF BLOCK #0 ---
+
+							FLOW; TARGET BLOCK #1
+
+
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #1 74-75, warpins: 3 ---
+							if slot0 then
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 76-93, warpins: 1 ---
+								slot1 = Goods.New({
+									shop_id = slot4.id
+								}, Goods.TYPE_SKIN)
+								slot2 = slot1:getConfig("resource_num")
+
+								if slot1:isDisCount() then
+
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 94-100, warpins: 1 ---
+									slot2 = slot2 * (100 - slot1:getConfig("discount")) / 100
+									--- END OF BLOCK #0 ---
+
+
+
+								end
+
+								--- END OF BLOCK #0 ---
+
+								FLOW; TARGET BLOCK #1
+
+
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #1 101-120, warpins: 2 ---
+								pg.MsgboxMgr.GetInstance():ShowMsgBox({
+									content = i18n("text_buy_fashion_tip", slot2, HXSet.hxLan(slot3.name)),
+									onYes = function ()
+
+										-- Decompilation error in this vicinity:
+										--- BLOCK #0 1-10, warpins: 1 ---
+										slot0:emit(SwichSkinMediator.BUY_ITEM, slot1.id, 1)
+
+										return
+										--- END OF BLOCK #0 ---
+
+
+
+									end
+								})
+								--- END OF BLOCK #1 ---
+
+
+
+							end
+							--- END OF BLOCK #1 ---
+
+
+
+						end
+						--- END OF BLOCK #0 ---
+
+
+
 					end
+					--- END OF BLOCK #0 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 121-121, warpins: 6 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
 		end)
 		setActive(slot7, true)
-	end
-end
 
-function slot0.isCurrentShipExistSkin(slot0, slot1)
-	if slot1 then
-		if #slot0.skins > 1 then
-			return true
-		elseif #slot0.skins == 1 then
-			return false
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 58-62, warpins: 1 ---
+		slot9 = slot0.shipVO.isRemoulded()
+
+		if slot0.shipVO.isRemoulded() then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 63-64, warpins: 1 ---
+			slot9 = false
+
+			if false then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 65-65, warpins: 0 ---
+				slot9 = true
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 66-72, warpins: 3 ---
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 73-79, warpins: 1 ---
+		if not table.contains(slot0.skinList, slot6.id) and not slot9 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 82-84, warpins: 1 ---
+			if slot6.skin_type ~= 3 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 85-86, warpins: 1 ---
+				slot10 = false
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 87-87, warpins: 1 ---
+				slot10 = true
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #5 88-105, warpins: 5 ---
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #6 106-107, warpins: 1 ---
+		slot13 = false
+
+		if false then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 108-108, warpins: 1 ---
+			slot13 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #7 109-119, warpins: 2 ---
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #8 120-124, warpins: 1 ---
+		slot11 = slot0.shipVO.isRemoulded()
+
+		if slot0.shipVO.isRemoulded() then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 125-126, warpins: 1 ---
+			slot11 = false
+
+			if false then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 127-127, warpins: 0 ---
+				slot11 = true
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #9 128-134, warpins: 3 ---
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #10 135-141, warpins: 1 ---
+		if table.contains(slot0.skinList, slot6.id) or slot11 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 144-145, warpins: 3 ---
+			slot12 = 1
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 146-146, warpins: 1 ---
+			slot12 = 0
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #10 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #11 147-150, warpins: 2 ---
+		--- END OF BLOCK #11 ---
+
+		FLOW; TARGET BLOCK #13
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #12 151-156, warpins: 1 ---
+		if not pg.shop_template[slot6.shop_id] then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 157-157, warpins: 2 ---
+			slot13 = nil
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #12 ---
+
+		FLOW; TARGET BLOCK #13
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #13 158-159, warpins: 2 ---
+		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #15
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #14 160-168, warpins: 1 ---
+		slot14 = not pg.TimeMgr.GetInstance().inTime((slot6.shop_id > 0 and pg.shop_template[slot6.shop_id]) or nil.time)
+		--- END OF BLOCK #14 ---
+
+		FLOW; TARGET BLOCK #15
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #15 169-173, warpins: 2 ---
+		--- END OF BLOCK #15 ---
+
+		FLOW; TARGET BLOCK #17
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #16 174-175, warpins: 1 ---
+		slot15 = false
+
+		if false then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 176-176, warpins: 1 ---
+			slot15 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #16 ---
+
+		FLOW; TARGET BLOCK #17
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #17 177-184, warpins: 2 ---
+		--- END OF BLOCK #17 ---
+
+		FLOW; TARGET BLOCK #19
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #18 185-187, warpins: 1 ---
+		if slot12 < 1 and slot6.skin_type ~= 3 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 191-192, warpins: 1 ---
+			slot16 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 193-193, warpins: 3 ---
+			slot16 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #18 ---
+
+		FLOW; TARGET BLOCK #19
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #19 194-204, warpins: 2 ---
+		--- END OF BLOCK #19 ---
+
+		FLOW; TARGET BLOCK #20
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #20 205-206, warpins: 2 ---
+		--- END OF BLOCK #20 ---
+
+
+
 	end
 end
 
-function slot0.getGroupSkinList(slot0, slot1)
+slot0.isCurrentShipExistSkin = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 3-7, warpins: 1 ---
+		if #slot0.skins > 1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 8-10, warpins: 1 ---
+			return true
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 11-14, warpins: 1 ---
+			if #slot0.skins == 1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 15-16, warpins: 1 ---
+				return false
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 17-17, warpins: 4 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
+slot0.getGroupSkinList = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = ShipGroup.getSkinList(slot1)
 
 	if pg.ship_data_trans[slot1] and not slot0.shipVO:isRemoulded() then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 16-24, warpins: 1 ---
+		slot3 = ShipGroup.GetGroupConfig(slot1).trans_skin
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 25-35, warpins: 0 ---
 		for slot7 = #slot2, 1, -1 do
-			if slot2[slot7].id == ShipGroup.GetGroupConfig(slot1).trans_skin then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 25-28, warpins: 2 ---
+			if slot2[slot7].id == slot3 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 29-34, warpins: 1 ---
 				table.remove(slot2, slot7)
 
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 35-35, warpins: 1 ---
 				break
+				--- END OF BLOCK #1 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 35-35, warpins: 1 ---
+			--- END OF BLOCK #1 ---
+
+
+
 		end
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 36-39, warpins: 4 ---
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 40-73, warpins: 0 ---
 	for slot6 = #slot2, 1, -1 do
-		if slot2[slot6].show_time and (type(slot7.show_time) == "string" and slot7.show_time == "stop" or type(slot7.show_time) == "table" and not pg.TimeMgr:GetInstance():inTime(slot7.show_time)) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 40-43, warpins: 2 ---
+		if slot2[slot6].show_time and ((type(slot7.show_time) == "string" and slot7.show_time == "stop") or (type(slot7.show_time) == "table" and not pg.TimeMgr:GetInstance():inTime(slot7.show_time))) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 68-72, warpins: 2 ---
 			table.remove(slot2, slot6)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 73-73, warpins: 4 ---
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 74-77, warpins: 1 ---
 	if PLATFORM_CODE == PLATFORM_CH then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 78-85, warpins: 1 ---
+		slot3 = pg.gameset.big_seven_old_skin_timestamp.key_value
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 86-99, warpins: 0 ---
 		for slot7 = #slot2, 1, -1 do
-			if slot2[slot7].skin_type == 3 and pg.gameset.big_seven_old_skin_timestamp.key_value < slot0.shipVO.createTime then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 86-89, warpins: 2 ---
+			if slot2[slot7].skin_type == 3 and slot3 < slot0.shipVO.createTime then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 94-98, warpins: 1 ---
 				table.remove(slot2, slot7)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 99-99, warpins: 3 ---
+			--- END OF BLOCK #1 ---
+
+
+
 		end
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 100-104, warpins: 2 ---
 	if HXSet.isHx() then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 105-108, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 109-122, warpins: 0 ---
 		for slot6 = #slot2, 1, -1 do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 109-116, warpins: 2 ---
 			if pg.ship_skin_template[slot2[slot6].id].isHX == 1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 117-121, warpins: 1 ---
 				table.remove(slot2, slot6)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 122-122, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+
+
 		end
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 123-123, warpins: 2 ---
 	return slot2
+	--- END OF BLOCK #5 ---
+
+
+
 end
 
-function slot0.getGroupOwnSkins(slot0, slot1)
+slot0.getGroupOwnSkins = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot0.skinList
 
 	if getProxy(CollectionProxy):getShipGroup(slot1) then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 12-19, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 20-52, warpins: 0 ---
 		for slot9, slot10 in ipairs(slot5) do
-			if slot10.skin_type == Ship.SKIN_TYPE_DEFAULT or table.contains(slot3, slot10.id) or slot10.skin_type == Ship.SKIN_TYPE_REMAKE and slot4.trans or slot10.skin_type == Ship.SKIN_TYPE_PROPOSE and slot4.married == 1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 20-24, warpins: 1 ---
+			if slot10.skin_type == Ship.SKIN_TYPE_DEFAULT or table.contains(slot3, slot10.id) or (slot10.skin_type == Ship.SKIN_TYPE_REMAKE and slot4.trans) or (slot10.skin_type == Ship.SKIN_TYPE_PROPOSE and slot4.married == 1) then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 48-50, warpins: 4 ---
 				slot2[slot10.id] = true
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 51-52, warpins: 4 ---
+			--- END OF BLOCK #1 ---
+
+
+
 		end
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 53-57, warpins: 2 ---
 	if HXSet.isHx() then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 58-61, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 62-75, warpins: 0 ---
 		for slot8 = #slot2, 1, -1 do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 62-69, warpins: 2 ---
 			if pg.ship_skin_template[slot2[slot8].id].isHX == 1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 70-74, warpins: 1 ---
 				table.remove(slot2, slot8)
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 75-75, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+
+
 		end
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 76-76, warpins: 2 ---
 	return slot2
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-9, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.skinCardMap) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-7, warpins: 1 ---
 		slot5:clear()
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 8-9, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
 	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 10-10, warpins: 1 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 return slot0

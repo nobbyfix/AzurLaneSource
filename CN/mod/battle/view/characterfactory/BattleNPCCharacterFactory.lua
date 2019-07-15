@@ -3,13 +3,13 @@ slot1 = singletonClass("BattleNPCCharacterFactory", ys.Battle.BattleEnemyCharact
 ys.Battle.BattleNPCCharacterFactory = slot1
 slot1.__name = "BattleNPCCharacterFactory"
 
-function slot1.Ctor(slot0)
-	uv0.super.Ctor(slot0)
+slot1.Ctor = function (slot0)
+	slot0.super.Ctor(slot0)
 
-	slot0.HP_BAR_NAME = uv1.Battle.BattleHPBarManager.HP_BAR_FOE
+	slot0.HP_BAR_NAME = slot0.super.Ctor.Battle.BattleHPBarManager.HP_BAR_FOE
 end
 
-function slot1.CreateCharacter(slot0, slot1)
+slot1.CreateCharacter = function (slot0, slot1)
 	slot4 = slot0:MakeCharacter()
 
 	slot4:SetFactory(slot0)
@@ -32,44 +32,49 @@ function slot1.CreateCharacter(slot0, slot1)
 	return slot4
 end
 
-function slot1.MakeModel(slot0, slot1)
+slot1.MakeModel = function (slot0, slot1)
 	slot2 = slot1:GetUnitData()
 
 	function slot3(slot0)
-		uv0:AddModel(slot0)
-		uv0:CameraOrthogonal(uv2.Battle.BattleCameraUtil:GetInstance():GetCamera())
-		uv1:GetSceneMediator().AddEnemyCharacter(slot1, uv0)
-		uv1:MakeUIComponentContainer(uv0)
-		uv1:MakeFXContainer(uv0)
-		uv1:MakePopNumPool(uv0)
-		uv1:MakeBloodBar(uv0)
-		uv1:MakeWaveFX(uv0)
-		uv1:MakeSmokeFX(uv0)
-		uv1:MakeArrowBar(uv0)
+		slot0:AddModel(slot0)
+
+		slot1 = slot0.AddModel:GetSceneMediator()
+
+		slot0:CameraOrthogonal(slot2.Battle.BattleCameraUtil:GetInstance():GetCamera())
+		slot1:AddEnemyCharacter(slot0)
+		slot1:MakeUIComponentContainer(slot0)
+		slot1:MakeFXContainer(slot0)
+		slot1:MakePopNumPool(slot0)
+		slot1:MakeBloodBar(slot0)
+		slot1:MakeWaveFX(slot0)
+		slot1:MakeSmokeFX(slot0)
+		slot1:MakeArrowBar(slot0)
 
 		for slot6, slot7 in ipairs(slot2) do
-			uv0:AddFX(slot7)
+			slot0:AddFX(slot7)
 		end
 
-		uv0:MakeVisible()
+		slot0:MakeVisible()
 	end
 
 	slot0:GetCharacterPool():InstCharacter(slot1:GetModleID(), function (slot0)
-		uv0(slot0)
+		slot0(slot0)
 	end)
 end
 
-function slot1.MakeCharacter(slot0)
-	return uv0.Battle.BattleNPCCharacter.New()
+slot1.MakeCharacter = function (slot0)
+	return slot0.Battle.BattleNPCCharacter.New()
 end
 
-function slot1.MakeBloodBar(slot0, slot1)
+slot1.MakeBloodBar = function (slot0, slot1)
 	slot3 = slot0:GetHPBarPool():GetHPBar(slot0.HP_BAR_NAME).transform
 
 	if slot1:GetHPColor() then
-		slot0.GetHPBarPool().GetHPBar(slot0.HP_BAR_NAME).transform:Find("blood"):GetComponent(typeof(Image)).color = slot4
+		slot3:Find("blood"):GetComponent(typeof(Image)).color = slot4
 	end
 
 	slot1:AddHPBar(slot2)
 	slot1:UpdateHPBarPostition()
 end
+
+return

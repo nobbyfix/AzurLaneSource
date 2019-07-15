@@ -1,16 +1,16 @@
 slot0 = class("ColoringProxy", import(".NetProxy"))
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
 	slot0.colorGroups = {}
 	slot0.colorItems = {}
 end
 
-function slot0.netUpdateData(slot0, slot1)
+slot0.netUpdateData = function (slot0, slot1)
 	slot0.startTime = slot1.start_time
 	slot2 = {}
 
 	_.each(slot1.award_list, function (slot0)
-		uv0[slot0.id] = _.map(slot0.award_list, function (slot0)
+		slot0[slot0.id] = _.map(slot0.award_list, function (slot0)
 			return {
 				type = slot0.type,
 				id = slot0.id,
@@ -30,21 +30,21 @@ function slot0.netUpdateData(slot0, slot1)
 	_.each(slot3, function (slot0)
 		ColorGroup.New(slot1):setHasAward(slot0[2] > 0)
 
-		if slot1 == uv0.id then
-			_.each(uv0.cell_list, function (slot0)
-				uv0:setFill(slot0.row, slot0.column, slot0.color)
+		if slot1 == slot0.id then
+			_.each(slot0.cell_list, function (slot0)
+				slot0:setFill(slot0.row, slot0.column, slot0.color)
 			end)
 		end
 
-		slot3:setDrops(uv1[slot1] or {})
+		slot3:setDrops(slot1[slot1] or {})
 
-		if #(uv1[slot1] or ) > 0 then
+		if #(slot1[slot1] or ) > 0 then
 			slot3:setState(ColorGroup.StateAchieved)
-		elseif slot1 < uv0.id or slot3:isAllFill() then
+		elseif slot1 < slot0.id or slot3:isAllFill() then
 			slot3:setState(ColorGroup.StateFinish)
 		end
 
-		table.insert(uv2.colorGroups, slot3)
+		table.insert(slot2.colorGroups, slot3)
 	end)
 
 	slot6 = 0
@@ -63,7 +63,7 @@ function slot0.netUpdateData(slot0, slot1)
 		end
 	end
 
-	slot0.colorGroups[slot6 + 1]:setState(slot6 == 0 and ColorGroup.StateColoring or ColorGroup.StateLock)
+	slot0.colorGroups[slot6 + 1]:setState((slot6 == 0 and ColorGroup.StateColoring) or ColorGroup.StateLock)
 
 	for slot10 = slot6 + 2, #slot0.colorGroups, 1 do
 		if not slot0.colorGroups[slot10]:getState() then
@@ -80,21 +80,21 @@ function slot0.netUpdateData(slot0, slot1)
 	end
 end
 
-function slot0.getColorItems(slot0)
+slot0.getColorItems = function (slot0)
 	return slot0.colorItems
 end
 
-function slot0.getColorGroups(slot0)
+slot0.getColorGroups = function (slot0)
 	return slot0.colorGroups
 end
 
-function slot0.getColorGroup(slot0, slot1)
+slot0.getColorGroup = function (slot0, slot1)
 	return _.detect(slot0.colorGroups, function (slot0)
-		return slot0.id == uv0
+		return slot0.id == slot0
 	end)
 end
 
-function slot0.checkState(slot0)
+slot0.checkState = function (slot0)
 	slot1 = false
 
 	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_COLORING_ALPHA) and not slot3:isEnd() then

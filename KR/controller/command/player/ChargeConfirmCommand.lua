@@ -12,20 +12,20 @@ class("ChargeConfirmCommand", pm.SimpleCommand).execute = function (slot0, slot1
 		end
 
 		if slot0.result == 0 then
-			uv0:removeChargeTimer(uv1)
-			uv2:sendNotification(GAME.CHARGE_SUCCESS, {
+			slot0:removeChargeTimer(slot0.removeChargeTimer)
+			slot0:sendNotification(GAME.CHARGE_SUCCESS, {
 				shopId = slot0.shop_id,
-				payId = uv1,
+				payId = slot1,
 				gem = slot0.gem,
 				gem_free = slot0.gem_free
 			})
 		elseif slot0.result == 4 then
-			uv2:sendNotification(GAME.CHARGE_CONFIRM_FAILED, {
-				payId = uv1,
-				bsId = uv3
+			slot2:sendNotification(GAME.CHARGE_CONFIRM_FAILED, {
+				payId = slot1,
+				bsId = GAME.CHARGE_CONFIRM_FAILED
 			})
 		else
-			uv0:removeChargeTimer(uv1)
+			slot0:removeChargeTimer(slot0.removeChargeTimer)
 
 			if slot0.result ~= 1 then
 				pg.TipsMgr:GetInstance():ShowTips(errorTip("charge_erro", slot0.result))

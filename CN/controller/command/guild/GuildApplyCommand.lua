@@ -1,7 +1,8 @@
 class("GuildApplyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	slot3 = slot1:getBody().id
+	slot4 = slot1.getBody().content or ""
 
-	if wordVer(slot1.getBody().content or "") > 0 then
+	if wordVer(slot4) > 0 then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("friend_msg_forbid"))
 
 		return
@@ -12,7 +13,7 @@ class("GuildApplyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		content = slot4
 	}, 60006, function (slot0)
 		if slot0.result == 0 then
-			uv0:sendNotification(GAME.GUILD_APPLY_DONE)
+			slot0:sendNotification(GAME.GUILD_APPLY_DONE)
 			pg.TipsMgr:GetInstance():ShowTips(i18n("guild_apply_sucess"))
 		elseif slot0.result == 4 then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("guild_join_cd"))

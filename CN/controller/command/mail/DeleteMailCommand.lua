@@ -9,10 +9,10 @@ class("DeleteMailCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		id = slot2
 	}, 30007, function (slot0)
 		for slot4, slot5 in ipairs(slot0.id_list) do
-			uv0:removeMailById(slot5)
+			slot0:removeMailById(slot5)
 		end
 
-		uv1:sendNotification(GAME.DELETE_MAIL_DONE)
+		slot1:sendNotification(GAME.DELETE_MAIL_DONE)
 	end)
 end
 

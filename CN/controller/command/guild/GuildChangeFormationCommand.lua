@@ -8,14 +8,14 @@ class("GuildChangeFormationCommand", pm.SimpleCommand).execute = function (slot0
 			slot1 = getProxy(ChapterProxy)
 			slot2 = slot1:getGuildChapter()
 
-			slot2:updateFleetShips(uv0)
+			slot2:updateFleetShips(slot0)
 			slot1:updateGuildChapter(slot2, bit.bor(ChapterConst.DirtyFleet, ChapterConst.DirtyStrategy))
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("sham_change_formation_error", slot0.result))
 		end
 
-		if uv1 then
-			uv1(slot0.result)
+		if slot1 then
+			slot1(slot0.result)
 		end
 	end)
 end

@@ -84,3 +84,5 @@ pg.guild_contribution_template = {
 		9
 	}
 }
+
+return

@@ -86,13 +86,13 @@ slot5 = {
 
 return {
 	New = function ()
-		uv0({
+		slot0({
 			handlers_block = {},
-			handlers = uv2.New(),
-			pre_emit_funcs = uv2.New(),
-			post_emit_funcs = uv2.New(),
+			handlers = slot2.New(),
+			pre_emit_funcs = slot2.New(),
+			post_emit_funcs = slot2.New(),
 			signal_stopped = false
-		}, uv1)
+		}, slot0)
 
 		return 
 	end

@@ -10,8 +10,10 @@ class("SaveDormThemeCommand", pm.SimpleCommand).execute = function (slot0, slot1
 	slot6 = {}
 
 	for slot10, slot11 in pairs(slot2.furnitureputList) do
+		slot12 = {}
+
 		for slot16, slot17 in pairs(slot11.child) do
-			table.insert({}, {
+			table.insert(slot12, {
 				id = tostring(slot16),
 				x = slot17.x,
 				y = slot17.y
@@ -35,8 +37,10 @@ class("SaveDormThemeCommand", pm.SimpleCommand).execute = function (slot0, slot1
 		furniture_put_list = slot6
 	}, 19021, function (slot0)
 		if slot0.result == 0 then
-			getProxy(DormProxy).AddTheme(slot1, uv0)
-			uv1:sendNotification(GAME.SAVE_DORMTHEME_DONE)
+			slot1 = getProxy(DormProxy)
+
+			slot1:AddTheme(slot0)
+			slot1:sendNotification(GAME.SAVE_DORMTHEME_DONE)
 			pg.TipsMgr:GetInstance():ShowTips("保存成功")
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("", slot0.result))

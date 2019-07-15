@@ -7,95 +7,97 @@ ys.Battle.BattleBeamUnit.BEAM_STATE_READY = "ready"
 ys.Battle.BattleBeamUnit.BEAM_STATE_ATTACK = "attack"
 ys.Battle.BattleBeamUnit.BEAM_STATE_FINISH = "finish"
 
-function ys.Battle.BattleBeamUnit.Ctor(slot0, slot1, slot2)
+ys.Battle.BattleBeamUnit.Ctor = function (slot0, slot1, slot2)
 	slot0._bulletID = slot1
 	slot0._beamInfoID = slot2
 	slot0._cldList = {}
-	slot0._beamState = uv0.BEAM_STATE_READY
+	slot0._beamState = slot0.BEAM_STATE_READY
 end
 
-function ys.Battle.BattleBeamUnit.IsBeamActive(slot0)
+ys.Battle.BattleBeamUnit.IsBeamActive = function (slot0)
 	return slot0._aoe:GetActiveFlag()
 end
 
-function ys.Battle.BattleBeamUnit.ClearBeam(slot0)
-	slot0._beamState = uv0.BEAM_STATE_FINISH
+ys.Battle.BattleBeamUnit.ClearBeam = function (slot0)
+	slot0._beamState = slot0.BEAM_STATE_FINISH
 	slot0._aoe = nil
 	slot0._cldList = {}
 	slot0._nextDamageTime = nil
 end
 
-function ys.Battle.BattleBeamUnit.SetAoeData(slot0, slot1)
+ys.Battle.BattleBeamUnit.SetAoeData = function (slot0, slot1)
 	slot0._aoe = slot1
-	slot0._beamTemp = uv0.GetBarrageTmpDataFromID(slot0._beamInfoID)
-	slot0._bulletTemp = uv0.GetBulletTmpDataFromID(slot0._bulletID)
+	slot0._beamTemp = slot0.GetBarrageTmpDataFromID(slot0._beamInfoID)
+	slot0._bulletTemp = slot0.GetBulletTmpDataFromID(slot0._bulletID)
 	slot0._angle = slot0._beamTemp.angle
 
 	slot0._aoe:SetAngle(slot0._angle)
 end
 
-function ys.Battle.BattleBeamUnit.getAngleRatio(slot0)
-	return uv0.GetSpeedRatio(slot0._aoe:GetTimeRationExemptKey(), slot0._aoe:GetIFF())
+ys.Battle.BattleBeamUnit.getAngleRatio = function (slot0)
+	return slot0.GetSpeedRatio(slot0._aoe:GetTimeRationExemptKey(), slot0._aoe:GetIFF())
 end
 
-function ys.Battle.BattleBeamUnit.GetAoeData(slot0)
+ys.Battle.BattleBeamUnit.GetAoeData = function (slot0)
 	return slot0._aoe
 end
 
-function ys.Battle.BattleBeamUnit.UpdateBeamPos(slot0, slot1)
+ys.Battle.BattleBeamUnit.UpdateBeamPos = function (slot0, slot1)
 	slot0._aoe:SetPosition(Vector3(slot1.x + slot0._beamTemp.offset_x, 0, slot1.z + slot0._beamTemp.offset_z))
 end
 
-function ys.Battle.BattleBeamUnit.UpdateBeamAngle(slot0)
+ys.Battle.BattleBeamUnit.UpdateBeamAngle = function (slot0)
 	slot0._angle = slot0._angle + slot0._beamTemp.delta_angle * slot0:getAngleRatio()
 
 	slot0._aoe:SetAngle(slot0._angle)
 end
 
-function ys.Battle.BattleBeamUnit.AddCldUnit(slot0, slot1)
+ys.Battle.BattleBeamUnit.AddCldUnit = function (slot0, slot1)
 	slot0._cldList[slot1:GetUniqueID()] = slot1
 end
 
-function ys.Battle.BattleBeamUnit.RemoveCldUnit(slot0, slot1)
+ys.Battle.BattleBeamUnit.RemoveCldUnit = function (slot0, slot1)
 	slot0._cldList[slot1:GetUniqueID()] = nil
 end
 
-function ys.Battle.BattleBeamUnit.ChangeBeamState(slot0, slot1)
+ys.Battle.BattleBeamUnit.ChangeBeamState = function (slot0, slot1)
 	slot0._beamState = slot1
 end
 
-function ys.Battle.BattleBeamUnit.GetBeamState(slot0)
+ys.Battle.BattleBeamUnit.GetBeamState = function (slot0)
 	return slot0._beamState
 end
 
-function ys.Battle.BattleBeamUnit.GetCldUnitList(slot0)
+ys.Battle.BattleBeamUnit.GetCldUnitList = function (slot0)
 	return slot0._cldList
 end
 
-function ys.Battle.BattleBeamUnit.BeginFocus(slot0)
+ys.Battle.BattleBeamUnit.BeginFocus = function (slot0)
 	slot0._nextDamageTime = pg.TimeMgr.GetInstance():GetCombatTime() + slot0._beamTemp.senior_delay
 end
 
-function ys.Battle.BattleBeamUnit.DealDamage(slot0)
+ys.Battle.BattleBeamUnit.DealDamage = function (slot0)
 	slot0._nextDamageTime = pg.TimeMgr.GetInstance():GetCombatTime() + slot0._beamTemp.delta_delay
 end
 
-function ys.Battle.BattleBeamUnit.CanDealDamage(slot0)
+ys.Battle.BattleBeamUnit.CanDealDamage = function (slot0)
 	return slot0._nextDamageTime < pg.TimeMgr.GetInstance():GetCombatTime()
 end
 
-function ys.Battle.BattleBeamUnit.GetFXID(slot0)
+ys.Battle.BattleBeamUnit.GetFXID = function (slot0)
 	return slot0._bulletTemp.hit_fx
 end
 
-function ys.Battle.BattleBeamUnit.GetSFXID(slot0)
+ys.Battle.BattleBeamUnit.GetSFXID = function (slot0)
 	return slot0._bulletTemp.hit_sfx
 end
 
-function ys.Battle.BattleBeamUnit.GetBulletID(slot0)
+ys.Battle.BattleBeamUnit.GetBulletID = function (slot0)
 	return slot0._bulletID
 end
 
-function ys.Battle.BattleBeamUnit.GetBeamInfoID(slot0)
+ys.Battle.BattleBeamUnit.GetBeamInfoID = function (slot0)
 	return slot0._beamInfoID
 end
+
+return

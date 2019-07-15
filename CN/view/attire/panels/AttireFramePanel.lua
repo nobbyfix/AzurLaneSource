@@ -1,6 +1,6 @@
 slot0 = class("AttireFramePanel", import("...base.BaseSubView"))
 
-function slot0.Card(slot0)
+slot0.Card = function (slot0)
 	function slot3(slot0, slot1, slot2)
 		slot0.state = slot1:getState()
 
@@ -12,9 +12,11 @@ function slot0.Card(slot0)
 		setActive(slot0.tags[2], slot0.state == AttireFrame.STATE_UNLOCK and slot1:isNew())
 	end
 
+
+	-- Decompilation error in this vicinity:
 	function (slot0)
-		slot0._go = uv0
-		slot0._tf = tf(uv0)
+		slot0._go = slot0
+		slot0._tf = tf(slot0)
 		slot0.mark = slot0._tf:Find("info/mark")
 		slot0.print5 = slot0._tf:Find("prints/line5")
 		slot0.print6 = slot0._tf:Find("prints/line6")
@@ -36,7 +38,7 @@ function slot0.Card(slot0)
 			slot0.attireFrame = slot1
 
 			if not slot0:isEmpty() then
-				uv0(slot0, slot1, slot2)
+				slot0(slot0, slot1, slot2)
 			end
 
 			setActive(slot0.infoTF, not slot4)
@@ -48,34 +50,33 @@ function slot0.Card(slot0)
 			slot3 = slot1:getType()
 
 			PoolMgr.GetInstance():GetPrefab(slot1:getIcon(), slot1:getPrefabName(), true, function (slot0)
-				if not uv0.icon then
-					slot1 = nil
-
-					if uv1 == AttireConst.TYPE_ICON_FRAME then
-						slot1 = IconFrame.GetIcon(uv2)
-					elseif uv1 == AttireConst.TYPE_CHAT_FRAME then
-						slot1 = ChatFrame.GetIcon(uv2)
+				if not slot0.icon then
+					if nil == AttireConst.TYPE_ICON_FRAME then
+						slot1 = IconFrame.GetIcon(IconFrame.GetIcon)
+					elseif slot1 == AttireConst.TYPE_CHAT_FRAME then
+						slot1 = ChatFrame.GetIcon(ChatFrame.GetIcon)
 					end
 
-					PoolMgr.GetInstance():ReturnPrefab(slot1, uv2, slot0)
+					PoolMgr.GetInstance():ReturnPrefab(slot1, PoolMgr.GetInstance().ReturnPrefab, slot0)
 				else
-					slot0.name = uv2
+					slot0.name = slot2
 
-					setParent(slot0, uv0.icon, false)
+					setParent(slot0, slot0.icon, false)
 
-					slot2 = uv3:getState() == AttireFrame.STATE_LOCK
+					slot2 = slot3:getState() == AttireFrame.STATE_LOCK
 
-					uv4(slot0)
+					slot4(slot0)
 				end
 			end)
 		end,
 		ReturnIconFrame = function (slot0, slot1)
 			eachChild(slot0.icon, function (slot0)
+				slot1 = slot0.gameObject.name
 				slot2 = nil
 
-				if uv0 == AttireConst.TYPE_ICON_FRAME then
-					slot2 = IconFrame.GetIcon(slot0.gameObject.name)
-				elseif uv0 == AttireConst.TYPE_CHAT_FRAME then
+				if slot0 == AttireConst.TYPE_ICON_FRAME then
+					slot2 = IconFrame.GetIcon(slot1)
+				elseif slot0 == AttireConst.TYPE_CHAT_FRAME then
 					slot2 = ChatFrame.GetIcon(slot1)
 				end
 
@@ -86,28 +87,31 @@ function slot0.Card(slot0)
 			setActive(slot0.mark, slot1)
 		end,
 		Dispose = function (slot0)
+			return
 		end
 	})
 
 	return 
 end
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
+	return
 end
 
-function slot0.GetData(slot0)
+slot0.GetData = function (slot0)
+	return
 end
 
-function slot0.OnInit(slot0)
+slot0.OnInit = function (slot0)
 	slot0.listPanel = slot0:findTF("list_panel")
 	slot0.scolrect = slot0:findTF("scrollrect", slot0.listPanel):GetComponent("LScrollRect")
 
-	function slot0.scolrect.onInitItem(slot0)
-		uv0:OnInitItem(slot0)
+	slot0.scolrect.onInitItem = function (slot0)
+		slot0:OnInitItem(slot0)
 	end
 
-	function slot0.scolrect.onUpdateItem(slot0, slot1)
-		uv0:OnUpdateItem(slot0, slot1)
+	slot0.scolrect.onUpdateItem = function (slot0, slot1)
+		slot0:OnUpdateItem(slot0, slot1)
 	end
 
 	slot0.cards = {}
@@ -115,10 +119,11 @@ function slot0.OnInit(slot0)
 	slot0.totalCount = slot0:findTF("total_count/Text"):GetComponent(typeof(Text))
 end
 
-function slot0.OnInitItem(slot0, slot1)
+slot0.OnInitItem = function (slot0, slot1)
+	return
 end
 
-function slot0.OnUpdateItem(slot0, slot1, slot2)
+slot0.OnUpdateItem = function (slot0, slot1, slot2)
 	if not slot0.cards[slot2] then
 		slot0:OnInitItem(slot2)
 
@@ -128,7 +133,7 @@ function slot0.OnUpdateItem(slot0, slot1, slot2)
 	slot3:Update(slot0.displayVOs[slot1 + 1], slot0.playerVO, slot1 < slot0.scolrect.content:GetComponent(typeof(GridLayoutGroup)).constraintCount)
 end
 
-function slot0.Update(slot0, slot1, slot2)
+slot0.Update = function (slot0, slot1, slot2)
 	slot0.playerVO = slot2
 	slot0.rawAttireVOs = slot1
 	slot0.displayVOs, ownedCnt = slot0:GetDisplayVOs()
@@ -138,19 +143,22 @@ function slot0.Update(slot0, slot1, slot2)
 	slot0.totalCount.text = ownedCnt
 end
 
-function slot0.GetDisplayVOs(slot0)
+slot0.GetDisplayVOs = function (slot0)
+	slot1 = {}
+	slot2 = 0
+
 	for slot6, slot7 in pairs(slot0:GetData()) do
-		table.insert({}, slot7)
+		table.insert(slot1, slot7)
 
 		if slot7:getState() == AttireFrame.STATE_UNLOCK and slot7.id > 0 then
-			slot2 = 0 + 1
+			slot2 = slot2 + 1
 		end
 	end
 
 	return slot1, slot2
 end
 
-function slot0.Filter(slot0)
+slot0.Filter = function (slot0)
 	if #slot0.displayVOs == 0 then
 		return
 	end
@@ -158,7 +166,7 @@ function slot0.Filter(slot0)
 	slot1 = slot0.playerVO:getAttireByType(slot0.displayVOs[1]:getType())
 
 	table.sort(slot0.displayVOs, function (slot0, slot1)
-		if (uv0 == slot0.id and 1 or 0) == (uv0 == slot1.id and 1 or 0) then
+		if ((slot0 == slot0.id and 1) or 0) == ((slot0 == slot1.id and 1) or 0) then
 			if slot0:getState() == slot1:getState() then
 				return slot5 < slot4
 			else
@@ -186,7 +194,7 @@ function slot0.Filter(slot0)
 	slot0.scolrect:SetTotalCount(#slot0.displayVOs, -1)
 end
 
-function slot0.UpdateDesc(slot0, slot1)
+slot0.UpdateDesc = function (slot0, slot1)
 	if slot1:isEmpty() then
 		return
 	end
@@ -197,11 +205,11 @@ function slot0.UpdateDesc(slot0, slot1)
 
 	slot0.descPanel:Update(slot1.attireFrame, slot0.playerVO)
 	onButton(slot0, slot0.descPanel.applyBtn, function ()
-		uv1:emit(AttireMediator.ON_APPLY, uv0.attireFrame:getType(), uv0.attireFrame.id)
+		slot0.attireFrame:emit(AttireMediator.ON_APPLY, slot0.attireFrame:getType(), slot0.attireFrame.id)
 	end, SFX_PANEL)
 end
 
-function slot0.OnDestroy(slot0)
+slot0.OnDestroy = function (slot0)
 	slot0.descPanel:Dispose()
 end
 

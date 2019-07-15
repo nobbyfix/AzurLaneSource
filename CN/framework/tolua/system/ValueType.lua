@@ -14,7 +14,9 @@ slot0 = {
 }
 
 function AddValueType(slot0, slot1)
-	uv0[slot0] = slot1
+	slot0[slot0] = slot1
 end
 
 GetLuaValueType = slot1()
+
+return

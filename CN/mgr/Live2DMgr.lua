@@ -2,7 +2,7 @@ pg = pg or {}
 pg.Live2DMgr = singletonClass("Live2DMgr")
 this = pg.Live2DMgr
 
-function this.GetLive2DModelAsync(slot0, slot1, slot2)
+this.GetLive2DModelAsync = function (slot0, slot1, slot2)
 	slot0:AddRefCount(slot1)
 	LoadAndInstantiateAsync("live2d", slot1, function (slot0)
 		if CSharpVersion < 18 and slot0 ~= nil then
@@ -10,21 +10,21 @@ function this.GetLive2DModelAsync(slot0, slot1, slot2)
 			slot0.GetComponent(tolua.findtype("Live2D.Cubism.Framework.Physics.CubismPhysicsController")).enabled = true
 		end
 
-		uv0(slot0)
+		slot0(slot0)
 	end)
 end
 
-function this.TryReleaseLive2dRes(slot0, slot1)
+this.TryReleaseLive2dRes = function (slot0, slot1)
 	if slot0:SubRefCount(slot1) then
 		slot0:ReleaseLive2dRes(slot1)
 	end
 end
 
-function this.ReleaseLive2dRes(slot0, slot1)
+this.ReleaseLive2dRes = function (slot0, slot1)
 	ResourceMgr.Inst:ClearBundleRef("live2d/" .. slot1, true, true)
 end
 
-function this.AddRefCount(slot0, slot1)
+this.AddRefCount = function (slot0, slot1)
 	if not slot0.refCounterDic then
 		slot0.refCounterDic = {}
 	end
@@ -36,7 +36,7 @@ function this.AddRefCount(slot0, slot1)
 	end
 end
 
-function this.SubRefCount(slot0, slot1)
+this.SubRefCount = function (slot0, slot1)
 	if slot0.refCounterDic and slot0.refCounterDic[slot1] then
 		slot0.refCounterDic[slot1] = slot0.refCounterDic[slot1] - 1
 
@@ -51,3 +51,5 @@ function this.SubRefCount(slot0, slot1)
 
 	return false
 end
+
+return

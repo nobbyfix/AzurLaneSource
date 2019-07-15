@@ -3,11 +3,11 @@ slot1 = class("BattleSpecialWeapon", ys.Battle.BattleWeaponUnit)
 ys.Battle.BattleSpecialWeapon = slot1
 slot1.__name = "BattleSpecialWeapon"
 
-function slot1.Ctor(slot0)
-	uv0.super.Ctor(slot0)
+slot1.Ctor = function (slot0)
+	slot0.super.Ctor(slot0)
 end
 
-function slot1.CheckPreCast(slot0)
+slot1.CheckPreCast = function (slot0)
 	slot1 = slot0._dataProxy:GetSeqCenter()
 
 	if not slot0._tmpData.bullet_ID[1] then
@@ -18,7 +18,7 @@ function slot1.CheckPreCast(slot0)
 		return true
 	end
 
-	slot4 = uv0.Battle.NodeData.New(slot0._host, {
+	slot4 = slot0.Battle.NodeData.New(slot0._host, {
 		weapon = slot0
 	}, slot3)
 
@@ -33,10 +33,10 @@ function slot1.CheckPreCast(slot0)
 	return true
 end
 
-function slot1.Fire(slot0)
+slot1.Fire = function (slot0)
 	slot2 = slot0._tmpData.bullet_ID[1]
 	slot4 = slot0._dataProxy:GetSeqCenter().NewSeq(slot1, "cast")
-	slot5 = uv0.Battle.NodeData.New(slot0._host, slot3, slot4)
+	slot5 = slot0.Battle.NodeData.New(slot0._host, slot3, slot4)
 
 	pg.NodeMgr.GetInstance():GenNode(slot5, pg.BattleNodesCfg[slot0._tmpData.barrage_ID[1]], slot4)
 	slot0._host:SetCurNodeList(slot5:GetAllSeq())
@@ -45,9 +45,11 @@ function slot1.Fire(slot0)
 	slot0._castInfo = nil
 
 	slot0:CheckAndShake()
-	slot4:Add(uv0.Battle.CallbackNode.New(function ()
-		uv0:EnterCoolDown()
+	slot4:Add(slot0.Battle.CallbackNode.New(function ()
+		slot0:EnterCoolDown()
 	end))
 
 	return true
 end
+
+return

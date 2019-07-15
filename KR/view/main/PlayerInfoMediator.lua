@@ -9,9 +9,9 @@ slot0.ON_CHANGE_PLAYER_NAME = "PlayerInfoMediator:ON_CHANGE_PLAYER_NAME"
 slot0.ON_CHANGE_MEDAL_DISPLAY = "PlayerInfoMediator:ON_CHANGE_MEDAL_DISPLAY"
 slot0.ON_ATTIRE = "PlayerInfoMediator:ON_ATTIRE"
 
-function slot0.register(slot0)
-	slot0:bind(uv0.ON_CHANGE_PLAYER_NAME, function (slot0, slot1)
-		uv0:sendNotification(GAME.CHANGE_PLAYER_NAME, {
+slot0.register = function (slot0)
+	slot0:bind(slot0.ON_CHANGE_PLAYER_NAME, function (slot0, slot1)
+		slot0:sendNotification(GAME.CHANGE_PLAYER_NAME, {
 			name = slot1
 		})
 	end)
@@ -52,28 +52,28 @@ function slot0.register(slot0)
 		end
 	end
 
-	slot0:bind(uv0.CHANGE_PAINT, function (slot0, slot1)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
+	slot0:bind(slot0.CHANGE_PAINT, function (slot0, slot1)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
 			selectedMax = 1,
-			flags = uv1,
-			ignoredIds = uv2,
+			flags = slot1,
+			ignoredIds = slot2,
 			onShip = function (slot0)
-				if uv0 == slot0.id then
+				if slot0 == slot0.id then
 					return false, i18n("playerinfo_ship_is_already_flagship")
 				end
 
 				return true
 			end,
 			onSelected = function (slot0)
-				uv0.contextData.shipIdToAdd = slot0[1]
+				slot0.contextData.shipIdToAdd = slot0[1]
 			end
 		})
 	end)
-	slot0:bind(uv0.GO_BACKYARD, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.BACKYARD)
+	slot0:bind(slot0.GO_BACKYARD, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.BACKYARD)
 	end)
-	slot0:bind(uv0.CHANGE_SKIN, function (slot0, slot1)
-		uv0:addSubLayers(Context.New({
+	slot0:bind(slot0.CHANGE_SKIN, function (slot0, slot1)
+		slot0:addSubLayers(Context.New({
 			mediator = SwichSkinMediator,
 			viewComponent = SwichSkinLayer,
 			data = {
@@ -81,16 +81,16 @@ function slot0.register(slot0)
 			}
 		}), nil)
 	end)
-	slot0:bind(uv0.GO_COLLECTION, function (slot0)
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.COLLECTSHIP)
+	slot0:bind(slot0.GO_COLLECTION, function (slot0)
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.COLLECTSHIP)
 	end)
-	slot0:bind(uv0.CHANGE_MANIFESTO, function (slot0, slot1)
-		uv0:sendNotification(GAME.CHANGE_PLAYER_MANIFESTO, {
+	slot0:bind(slot0.CHANGE_MANIFESTO, function (slot0, slot1)
+		slot0:sendNotification(GAME.CHANGE_PLAYER_MANIFESTO, {
 			manifesto = slot1
 		})
 	end)
-	slot0:bind(uv0.ON_ATTIRE, function ()
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.ATTIRE)
+	slot0:bind(slot0.ON_ATTIRE, function ()
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.ATTIRE)
 	end)
 
 	if slot0.contextData.shipIdToAdd then
@@ -101,8 +101,8 @@ function slot0.register(slot0)
 
 	slot0.viewComponent:setFleetGearScore(slot10)
 	slot0.viewComponent:updateFleetGSView()
-	slot0:bind(uv0.ON_CHANGE_MEDAL_DISPLAY, function (slot0, slot1)
-		uv0:sendNotification(GAME.CHANGE_PLAYER_MEDAL_DISPLAY, {
+	slot0:bind(slot0.ON_CHANGE_MEDAL_DISPLAY, function (slot0, slot1)
+		slot0:sendNotification(GAME.CHANGE_PLAYER_MEDAL_DISPLAY, {
 			medalList = slot1
 		})
 	end)
@@ -111,7 +111,7 @@ function slot0.register(slot0)
 	end))
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		PlayerProxy.UPDATED,
 		GAME.CHANGE_PLAYER_ICON_DONE,
@@ -122,9 +122,11 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
+	slot3 = slot1:getBody()
+
 	if slot1:getName() == PlayerProxy.UPDATED then
-		slot0.viewComponent:setPlayer(slot1:getBody())
+		slot0.viewComponent:setPlayer(slot3)
 	elseif slot2 == GAME.CHANGE_PLAYER_ICON_DONE then
 		slot0.shipVO = slot3.ship
 

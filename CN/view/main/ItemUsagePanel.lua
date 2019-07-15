@@ -3,7 +3,7 @@ slot0.SINGLE = 1
 slot0.BATCH = 2
 slot0.INFO = 3
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	pg.DelegateInfo.New(slot0)
 
 	slot0._go = slot1
@@ -33,14 +33,14 @@ function slot0.Ctor(slot0, slot1)
 	slot0.batchText = slot0.batchUseBtn:Find("text")
 
 	onButton(slot0, slot0.backBtn, function ()
-		uv0:Close()
+		slot0:Close()
 	end, SFX_PANEL)
 	onButton(slot0, slot0._go, function ()
-		uv0:Close()
+		slot0:Close()
 	end, SFX_PANEL)
 end
 
-function slot0.Open(slot0, slot1)
+slot0.Open = function (slot0, slot1)
 	slot0.settings = slot1 or {}
 
 	slot0:Update(slot1 or )
@@ -48,7 +48,7 @@ function slot0.Open(slot0, slot1)
 	setActive(slot0._go, true)
 end
 
-function slot0.Close(slot0)
+slot0.Close = function (slot0)
 	slot0.settings = nil
 
 	setActive(slot0._go, false)
@@ -58,7 +58,7 @@ function slot0.Close(slot0)
 	removeOnButton(slot0.confirmBtn)
 end
 
-function slot0.Update(slot0, slot1)
+slot0.Update = function (slot0, slot1)
 	updateDrop(slot0.itemTF, {
 		type = DROP_TYPE_WORLD_ITEM,
 		id = slot1.id,
@@ -68,65 +68,65 @@ function slot0.Update(slot0, slot1)
 	setText(slot0.itemName, slot1:getConfig("name"))
 end
 
-function slot0.UpdateAction(slot0, slot1)
+slot0.UpdateAction = function (slot0, slot1)
 	slot2 = slot0.settings
 
-	setActive(slot0.useBtn, (slot0.settings.mode or uv0.SINGLE) == uv0.SINGLE)
-	setActive(slot0.batchUseBtn, (slot0.settings.mode or uv0.SINGLE) == uv0.BATCH)
-	setActive(slot0.useOneBtn, (slot0.settings.mode or uv0.SINGLE) == uv0.BATCH)
-	setActive(slot0.confirmBtn, (slot0.settings.mode or uv0.SINGLE) == uv0.INFO)
+	setActive(slot0.useBtn, (slot0.settings.mode or slot0.SINGLE) == slot0.SINGLE)
+	setActive(slot0.batchUseBtn, (slot0.settings.mode or slot0.SINGLE) == slot0.BATCH)
+	setActive(slot0.useOneBtn, (slot0.settings.mode or slot0.SINGLE) == slot0.BATCH)
+	setActive(slot0.confirmBtn, (slot0.settings.mode or slot0.SINGLE) == slot0.INFO)
 
-	if (slot0.settings.mode or uv0.SINGLE) == uv0.SINGLE then
+	if slot3 == slot0.SINGLE then
 		onButton(slot0, slot0.useBtn, function ()
-			if uv0.count == 0 then
+			if slot0.count == 0 then
 				return
 			end
 
-			if uv1.onUse then
-				uv1.onUse()
+			if slot1.onUse then
+				slot1.onUse()
 			end
 
-			uv2:Close()
+			slot2:Close()
 		end, SFX_PANEL)
 	else
-		if slot3 == uv0.BATCH then
+		if slot3 == slot0.BATCH then
 			setText(slot0.batchText, slot4)
 			onButton(slot0, slot0.batchUseBtn, function ()
-				if uv0.count == 0 then
+				if slot0.count == 0 then
 					return
 				end
 
-				if uv1.onUseBatch then
-					uv1.onUseBatch(uv2)
+				if slot1.onUseBatch then
+					slot1.onUseBatch(slot2)
 				end
 
-				uv3:Close()
+				slot3:Close()
 			end, SFX_PANEL)
 			onButton(slot0, slot0.useOneBtn, function ()
-				if uv0.count == 0 then
+				if slot0.count == 0 then
 					return
 				end
 
-				if uv1.onUseOne then
-					uv1.onUseOne()
+				if slot1.onUseOne then
+					slot1.onUseOne()
 				end
 
-				uv2:Close()
+				slot2:Close()
 			end, SFX_PANEL)
 			setActive(slot0.batchUseBtn, math.min(slot1.count, 10) > 1)
 
 			return
 		end
 
-		if slot3 == uv0.INFO then
+		if slot3 == slot0.INFO then
 			onButton(slot0, slot0.confirmBtn, function ()
-				uv0:Close()
+				slot0:Close()
 			end, SFX_PANEL)
 		end
 	end
 end
 
-function slot0.Dispose(slot0)
+slot0.Dispose = function (slot0)
 	pg.DelegateInfo.Dispose(slot0)
 	slot0:Close()
 end

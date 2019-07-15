@@ -2,7 +2,7 @@ slot0 = class("SwichSkinMediator", import("..base.ContextMediator"))
 slot0.CHANGE_SKIN = "SwichSkinMediator:CHANGE_SKIN"
 slot0.BUY_ITEM = "SwichSkinMediator:BUY_ITEM"
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
 	slot0.shipVO = slot0.contextData.shipVO
 
 	if slot0.shipVO then
@@ -10,21 +10,21 @@ function slot0.register(slot0)
 		slot0.viewComponent:setSkinList(getProxy(ShipSkinProxy).getSkinList(slot1))
 	end
 
-	slot0:bind(uv0.CHANGE_SKIN, function (slot0, slot1, slot2)
-		uv0:sendNotification(GAME.SET_SHIP_SKIN, {
+	slot0:bind(slot0.CHANGE_SKIN, function (slot0, slot1, slot2)
+		slot0:sendNotification(GAME.SET_SHIP_SKIN, {
 			shipId = slot1,
 			skinId = slot2
 		})
 	end)
-	slot0:bind(uv0.BUY_ITEM, function (slot0, slot1, slot2)
-		uv0:sendNotification(GAME.SHOPPING, {
+	slot0:bind(slot0.BUY_ITEM, function (slot0, slot1, slot2)
+		slot0:sendNotification(GAME.SHOPPING, {
 			id = slot1,
 			count = slot2
 		})
 	end)
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		ShipSkinProxy.SHIP_SKINS_UPDATE,
 		GAME.SHOPPING_DONE,
@@ -32,7 +32,7 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == GAME.SHOPPING_DONE then

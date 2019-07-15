@@ -69,7 +69,7 @@ return {
 					return Vector3(math.sin(slot1) * 8, -0.5, math.cos(slot0 * 0.5) * 8)
 				end,
 				rotationFun = function (slot0)
-					return Vector3(0, slot0 * ys.Battle.BattleConfig.SHIELD_ROTATE_CONST / 6 + 90, 0)
+					return Vector3(0, (slot0 * ys.Battle.BattleConfig.SHIELD_ROTATE_CONST) / 6 + 90, 0)
 				end
 			}
 		},
@@ -103,7 +103,7 @@ return {
 					return Vector3(math.sin(slot1) * 5, -0.5, math.cos(slot0 * 1.5 + ys.Battle.BattleConfig.SHIELD_CENTER_CONST) * 5)
 				end,
 				rotationFun = function (slot0)
-					return Vector3(0, slot0 * ys.Battle.BattleConfig.SHIELD_ROTATE_CONST / 2 - 90, 0)
+					return Vector3(0, (slot0 * ys.Battle.BattleConfig.SHIELD_ROTATE_CONST) / 2 - 90, 0)
 				end
 			}
 		},

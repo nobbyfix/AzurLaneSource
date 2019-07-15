@@ -16,24 +16,26 @@ class("CancelLearnTacticsCommand", pm.SimpleCommand).execute = function (slot0, 
 		type = slot4
 	}, 22204, function (slot0)
 		if slot0.result == 0 then
-			uv0:addSkillExp(Clone(uv0.skills[uv1]).id, slot0.exp)
-			uv2:updateShip(uv0)
-			uv3:deleteStudent(uv4)
-			uv5:sendNotification(GAME.CANCEL_LEARN_TACTICS_DONE, {
-				id = uv4,
-				shipId = uv6.shipId,
+			slot1 = Clone(slot0.skills[Clone])
+
+			slot0:addSkillExp(slot1.id, slot0.exp)
+			slot0.addSkillExp:updateShip(slot0)
+			slot0.addSkillExp:deleteStudent(slot0)
+			slot5:sendNotification(GAME.CANCEL_LEARN_TACTICS_DONE, {
+				id = slot4,
+				shipId = slot4.shipId,
 				totalExp = slot0.exp,
-				oldSkill = Clone(uv0.skills[uv1]),
-				newSkill = uv0.skills[uv1],
-				onConfirm = uv7,
-				newShipVO = uv0
+				oldSkill = slot1,
+				newSkill = slot0.skills[slot1],
+				onConfirm = slot7,
+				newShipVO = slot0
 			})
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("lesson_endToLearn", slot0.result))
 		end
 
-		if uv8 ~= nil then
-			uv8()
+		if slot8 ~= nil then
+			slot8()
 		end
 	end)
 end

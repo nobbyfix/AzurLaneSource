@@ -6,34 +6,34 @@ ys.Battle.BattleEffectArea = slot3
 slot3.__name = "BattleEffectArea"
 slot4 = Vector3(0, 3.5, -5)
 
-function slot3.Ctor(slot0, slot1, slot2)
+slot3.Ctor = function (slot0, slot1, slot2)
 	slot0._go = slot1
 	slot0._aoeData = slot2
 
 	slot0:Init()
 end
 
-function slot3.SetStatic(slot0)
+slot3.SetStatic = function (slot0)
 	slot0._static = true
 end
 
-function slot3.Init(slot0)
+slot3.Init = function (slot0)
 	slot0._tf = slot0._go.transform
 	slot0._areaType = slot0._aoeData:GetAreaType()
 
-	if slot0._areaType == uv0.AreaType.CUBE then
+	if slot0._areaType == slot0.AreaType.CUBE then
 		slot0.UpdateScale = slot0.updateCubeScale
-	elseif slot0._areaType == uv0.AreaType.COLUMN then
+	elseif slot0._areaType == slot0.AreaType.COLUMN then
 		slot0.UpdateScale = slot0.updateColumnScale
 	end
 
-	if slot0._aoeData:GetIFF() == uv1.FOE_CODE then
-		function slot0.GetAngle()
-			return 180 - uv0._aoeData:GetAngle()
+	if slot0._aoeData:GetIFF() == slot1.FOE_CODE then
+		slot0.GetAngle = function ()
+			return 180 - slot0._aoeData:GetAngle()
 		end
 	else
-		function slot0.GetAngle()
-			return uv0._aoeData:GetAngle()
+		slot0.GetAngle = function ()
+			return slot0._aoeData:GetAngle()
 		end
 	end
 
@@ -42,35 +42,37 @@ function slot3.Init(slot0)
 	slot0:UpdateRotation()
 end
 
-function slot3.Update(slot0)
+slot3.Update = function (slot0)
 	if not slot0._static then
 		slot0:UpdatePosition()
 		slot0:UpdateRotation()
 	end
 end
 
-function slot3.updateCubeScale(slot0)
+slot3.updateCubeScale = function (slot0)
 	slot0._tf.localScale = Vector3(slot0._aoeData:GetWidth() * slot0._aoeData:GetIFF(), 0, slot0._aoeData:GetHeight())
 end
 
-function slot3.updateColumnScale(slot0)
+slot3.updateColumnScale = function (slot0)
 	slot0._tf.localScale = Vector3(slot0._aoeData:GetRange(), 0, )
 end
 
-function slot3.UpdatePosition(slot0)
-	slot0._tf.position = slot0._aoeData:GetPosition() + uv0
+slot3.UpdatePosition = function (slot0)
+	slot0._tf.position = slot0._aoeData:GetPosition() + slot0
 end
 
-function slot3.UpdateRotation(slot0)
+slot3.UpdateRotation = function (slot0)
 	slot0._tf.localEulerAngles = Vector3(0, slot0:GetAngle(), 0)
 end
 
-function slot3.Dispose(slot0)
-	uv0.Battle.BattleResourceManager:GetInstance():DestroyOb(slot0._go)
+slot3.Dispose = function (slot0)
+	slot0.Battle.BattleResourceManager:GetInstance():DestroyOb(slot0._go)
 
 	slot0._go = nil
 end
 
-function slot3.ResetScale(slot0)
+slot3.ResetScale = function (slot0)
 	slot0._tf.localScale = Vector3(1, 1, 1)
 end
+
+return

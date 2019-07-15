@@ -8,48 +8,48 @@ slot0.ON_MORE_OLDER = "MailMediator:ON_MORE_OLDER"
 slot0.ON_MORE_NEWER = "MailMediator:ON_MORE_NEWER"
 slot0.ON_CHANGE_IMP = "MailMediator:ON_CHANGE_IMP"
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
 	slot1 = getProxy(MailProxy)
 
-	slot0:bind(uv0.ON_OPEN, function (slot0, slot1)
-		uv0:sendNotification(GAME.OPEN_MAIL, slot1)
+	slot0:bind(slot0.ON_OPEN, function (slot0, slot1)
+		slot0:sendNotification(GAME.OPEN_MAIL, slot1)
 	end)
-	slot0:bind(uv0.ON_TAKE, function (slot0, slot1)
-		uv0:sendNotification(GAME.TAKE_ATTACHMENT, slot1)
+	slot0:bind(slot0.ON_TAKE, function (slot0, slot1)
+		slot0:sendNotification(GAME.TAKE_ATTACHMENT, slot1)
 	end)
-	slot0:bind(uv0.ON_TAKE_ALL, function (slot0)
-		if #uv0:getMailAttachments() > 0 then
-			uv1.viewComponent:showMsgBox({
+	slot0:bind(slot0.ON_TAKE_ALL, function (slot0)
+		if #slot0:getMailAttachments() > 0 then
+			slot1.viewComponent:showMsgBox({
 				content = i18n("take_all_mail", #slot1),
 				onYes = function ()
-					uv0:sendNotification(GAME.TAKE_ALL_ATTACHMENT)
+					slot0:sendNotification(GAME.TAKE_ALL_ATTACHMENT)
 				end,
-				items = uv1:getAllAttachment()
+				items = slot1:getAllAttachment()
 			})
 		else
 			pg.TipsMgr:GetInstance():ShowTips(i18n("take_nothing"))
 		end
 	end)
-	slot0:bind(uv0.ON_DELETE, function (slot0, slot1)
-		uv0:sendNotification(GAME.DELETE_MAIL, slot1)
+	slot0:bind(slot0.ON_DELETE, function (slot0, slot1)
+		slot0:sendNotification(GAME.DELETE_MAIL, slot1)
 	end)
-	slot0:bind(uv0.ON_DELETE_ALL, function (slot0)
-		uv0:sendNotification(GAME.DELETE_ALL_MAIL)
+	slot0:bind(slot0.ON_DELETE_ALL, function (slot0)
+		slot0:sendNotification(GAME.DELETE_ALL_MAIL)
 	end)
-	slot0:bind(uv0.ON_MORE_NEWER, function (slot0)
-		uv1:sendNotification(GAME.GET_MAIL_LIST, {
-			splitId = uv0:getNewestMail() and slot1.id or 0,
-			type = slot1 and 1 or 0
+	slot0:bind(slot0.ON_MORE_NEWER, function (slot0)
+		slot1:sendNotification(GAME.GET_MAIL_LIST, {
+			splitId = (slot0:getNewestMail() and slot1.id) or 0,
+			type = (slot1 and 1) or 0
 		})
 	end)
-	slot0:bind(uv0.ON_MORE_OLDER, function (slot0)
-		uv1:sendNotification(GAME.GET_MAIL_LIST, {
-			splitId = uv0:getOldestMail() and slot1.id or 0,
-			type = slot1 and 2 or 0
+	slot0:bind(slot0.ON_MORE_OLDER, function (slot0)
+		slot1:sendNotification(GAME.GET_MAIL_LIST, {
+			splitId = (slot0:getOldestMail() and slot1.id) or 0,
+			type = (slot1 and 2) or 0
 		})
 	end)
-	slot0:bind(uv0.ON_CHANGE_IMP, function (slot0, slot1, slot2)
-		uv0:sendNotification(GAME.CHANGE_MAIL_IMP_FLAG, {
+	slot0:bind(slot0.ON_CHANGE_IMP, function (slot0, slot1, slot2)
+		slot0:sendNotification(GAME.CHANGE_MAIL_IMP_FLAG, {
 			id = slot1,
 			flag = slot2
 		})
@@ -66,13 +66,13 @@ function slot0.register(slot0)
 		})
 	elseif slot1.dirty then
 		slot0:sendNotification(GAME.GET_MAIL_LIST, {
-			splitId = slot1:getNewestMail() and slot2.id or 0,
-			type = slot2 and 1 or 0
+			splitId = (slot1:getNewestMail() and slot2.id) or 0,
+			type = (slot2 and 1) or 0
 		})
 	end
 end
 
-function slot0.getAllAttachment(slot0)
+slot0.getAllAttachment = function (slot0)
 	slot1 = {}
 
 	table.sort(_.map(slot2, function (slot0)
@@ -94,7 +94,7 @@ function slot0.getAllAttachment(slot0)
 	end)
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		GAME.OPEN_MAIL_DONE,
 		GAME.DELETE_MAIL_DONE,
@@ -111,9 +111,11 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
+	slot3 = slot1:getBody()
+
 	if slot1:getName() == MailProxy.MAIL_ADDED then
-		slot0.viewComponent:addMail(slot1:getBody())
+		slot0.viewComponent:addMail(slot3)
 	elseif slot2 == MailProxy.MAIL_UPDATED then
 		slot0.viewComponent:updateMail(slot3)
 	elseif slot2 == MailProxy.MAIL_REMOVED then
@@ -128,13 +130,15 @@ function slot0.handleNotification(slot0, slot1)
 		pg.TipsMgr:GetInstance():ShowTips(i18n("main_mailMediator_mailDelete"))
 	elseif slot2 == GAME.OPEN_MAIL_ATTACHMENT_DONE then
 		if DROP_TYPE_SHIP == slot3.type then
+			slot4 = {}
+
 			for slot9 = 1, #getProxy(BayProxy):getNewShip(true), 1 do
-				table.insert({}, function (slot0)
-					uv0:addSubLayers(Context.New({
+				table.insert(slot4, function (slot0)
+					slot0:addSubLayers(Context.New({
 						mediator = NewShipMediator,
 						viewComponent = NewShipLayer,
 						data = {
-							ship = uv1[uv2]
+							ship = slot1[slot0]
 						},
 						onRemoved = slot0
 					}))
@@ -142,8 +146,8 @@ function slot0.handleNotification(slot0, slot1)
 			end
 
 			seriesAsync(slot4, function ()
-				if uv0.callback then
-					uv0.callback()
+				if slot0.callback then
+					slot0.callback()
 				end
 			end)
 
@@ -152,8 +156,8 @@ function slot0.handleNotification(slot0, slot1)
 
 		if DROP_TYPE_ITEM == slot3.type and slot3.items and #slot4 > 0 then
 			slot0.viewComponent:emit(BaseUI.ON_ACHIEVE, slot4, function ()
-				if uv0.callback then
-					uv0.callback()
+				if slot0.callback then
+					slot0.callback()
 				end
 			end)
 		end

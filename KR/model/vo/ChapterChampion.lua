@@ -1,6 +1,6 @@
 slot0 = class("ChapterChampion", import(".BaseVO"))
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.row = slot1.pos.row
 	slot0.column = slot1.pos.column
 	slot0.id = slot1.item_id
@@ -13,7 +13,7 @@ function slot0.Ctor(slot0, slot1)
 	slot0.rotation = Quaternion.identity
 end
 
-function slot0.bindConfigTable(slot0)
+slot0.bindConfigTable = function (slot0)
 	if slot0.attachment == ChapterConst.AttachOni then
 		return pg.specialunit_template
 	else
@@ -21,7 +21,7 @@ function slot0.bindConfigTable(slot0)
 	end
 end
 
-function slot0.getPrefab(slot0)
+slot0.getPrefab = function (slot0)
 	if slot0.attachment == ChapterConst.AttachOni then
 		return slot0:getConfig("prefab")
 	else
@@ -29,19 +29,19 @@ function slot0.getPrefab(slot0)
 	end
 end
 
-function slot0.getFleetType(slot0)
+slot0.getFleetType = function (slot0)
 	if slot0.attachment == ChapterConst.AttachOni then
 		return FleetType.Normal
 	else
-		return slot0:getConfig("type") == 13 and FleetType.Submarine or FleetType.Normal
+		return (slot0:getConfig("type") == 13 and FleetType.Submarine) or FleetType.Normal
 	end
 end
 
-function slot0.getPoolType(slot0)
-	return slot0.attachment == ChapterConst.AttachOni and "oni" or "common"
+slot0.getPoolType = function (slot0)
+	return (slot0.attachment == ChapterConst.AttachOni and "oni") or "common"
 end
 
-function slot0.getScale(slot0)
+slot0.getScale = function (slot0)
 	if slot0.attachment == ChapterConst.AttachOni then
 		return 200
 	else
@@ -49,9 +49,9 @@ function slot0.getScale(slot0)
 	end
 end
 
-function slot0.inAlertRange(slot0, slot1, slot2)
+slot0.inAlertRange = function (slot0, slot1, slot2)
 	return _.any(slot0:getConfig("alert_range"), function (slot0)
-		return slot0[1] + uv0.row == uv1 and slot0[2] + uv0.column == uv2
+		return slot0[1] + slot0.row ==  and slot0[2] + slot0.column == slot0.column
 	end)
 end
 

@@ -10,27 +10,27 @@ class("SubmitAnswerCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		if slot0.result == 0 then
 			slot2 = getProxy(AnswerProxy)
 
-			slot2:setScore(uv1, math.max(uv2, slot2:getScore(uv1) or 0))
-			uv0:sendNotification(GAME.ANSWER_SUBMIT_DONE, {
-				success = true,
-				subject = uv1,
-				score = uv2,
-				drops = _.map(slot0.drop_list, function (slot0)
-					if ({
-						type = slot0.type,
-						id = slot0.id,
-						count = slot0.number
-					})["type"] ~= DROP_TYPE_SHIP then
-						uv0:sendNotification(GAME.ADD_ITEM, Item.New(slot1))
-					end
+			slot2:setScore(_.map(slot0.drop_list, function (slot0)
+				if ({
+					type = slot0.type,
+					id = slot0.id,
+					count = slot0.number
+				})["type"] ~= DROP_TYPE_SHIP then
+					slot0:sendNotification(GAME.ADD_ITEM, Item.New(slot1))
+				end
 
-					return slot1
-				end),
-				virgin = not slot2.getScore(uv1)
+				return slot1
+			end), math.max(slot2, slot2:getScore(slot1) or 0))
+			slot0:sendNotification(GAME.ANSWER_SUBMIT_DONE, {
+				success = true,
+				subject = slot1,
+				score = slot2,
+				drops = slot1,
+				virgin = not slot2.getScore(slot1)
 			})
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("submit_answer", slot0.result))
-			uv0:sendNotification(GAME.ANSWER_SUBMIT_DONE, {
+			slot0:sendNotification(GAME.ANSWER_SUBMIT_DONE, {
 				success = false
 			})
 		end

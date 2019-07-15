@@ -1,6 +1,6 @@
 slot0 = class("ChapterCell")
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.walkable = true
 	slot0.row = slot1.pos.row
 	slot0.column = slot1.pos.column
@@ -17,51 +17,51 @@ function slot0.Ctor(slot0, slot1)
 		slot2 = {}
 
 		_.each(slot1.item_state, function (slot0)
-			uv0[slot0.id] = slot0.hp_rant
+			slot0[slot0.id] = slot0.hp_rant
 		end)
 
 		slot3 = ShamRival.New(slot1.item_info)
 
 		_.each(slot3.vanguardShips, function (slot0)
-			slot0.hpRant = uv0[slot0.id] or 10000
+			slot0.hpRant = slot0[slot0.id] or 10000
 		end)
 		_.each(slot3.mainShips, function (slot0)
-			slot0.hpRant = uv0[slot0.id] or 10000
+			slot0.hpRant = slot0[slot0.id] or 10000
 		end)
 
 		slot0.rival = slot3
 	end
 end
 
-function slot0.updateFlagList(slot0, slot1)
+slot0.updateFlagList = function (slot0, slot1)
 	slot0.flagList = slot1.flag_list
 end
 
-function slot0.checkHadFlag(slot0, slot1)
+slot0.checkHadFlag = function (slot0, slot1)
 	return table.contains(slot0.flagList, slot1)
 end
 
-function slot0.Line2Name(slot0, slot1)
+slot0.Line2Name = function (slot0, slot1)
 	return "chapter_cell_" .. slot0 .. "_" .. slot1
 end
 
-function slot0.Line2QuadName(slot0, slot1)
+slot0.Line2QuadName = function (slot0, slot1)
 	return "chapter_cell_quad_" .. slot0 .. "_" .. slot1
 end
 
-function slot0.Line2MarkName(slot0, slot1, slot2)
+slot0.Line2MarkName = function (slot0, slot1, slot2)
 	return "chapter_cell_mark_" .. slot0 .. "_" .. slot1 .. "#" .. slot2
 end
 
-function slot0.MinMaxLine2QuadName(slot0, slot1, slot2, slot3)
+slot0.MinMaxLine2QuadName = function (slot0, slot1, slot2, slot3)
 	return "chapter_cell_quad_" .. slot0 .. "_" .. slot1 .. "_" .. slot2 .. "_" .. slot3
 end
 
-function slot0.Line2RivalName(slot0, slot1, slot2)
+slot0.Line2RivalName = function (slot0, slot1, slot2)
 	return "rival_" .. slot1 .. "_" .. slot2
 end
 
-function slot0.LineAround(slot0, slot1, slot2)
+slot0.LineAround = function (slot0, slot1, slot2)
 	slot3 = {}
 
 	for slot7 = -slot2, slot2, 1 do

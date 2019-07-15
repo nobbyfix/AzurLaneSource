@@ -1,8 +1,10 @@
 class("RemouldShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	slot2 = slot1:getBody()
+	slot3 = slot2.shipId
+	slot4 = slot2.remouldId
 	slot5 = slot2.materialIds or {}
 
-	if not slot2.shipId or not slot2.remouldId then
+	if not slot3 or not slot4 then
 		return
 	end
 
@@ -20,8 +22,11 @@ class("RemouldShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		return
 	end
 
-	for slot19, slot20 in ipairs(slot8.use_item[slot13 + 1] or {}) do
-		if getProxy(BagProxy):getItemCountById(slot20[1]) < slot20[2] then
+	slot14 = slot8.use_item[slot13 + 1] or {}
+	slot15 = getProxy(BagProxy)
+
+	for slot19, slot20 in ipairs(slot14) do
+		if slot15:getItemCountById(slot20[1]) < slot20[2] then
 			pg.TipsMgr:GetInstance():ShowTips(i18n("common_no_item_1"))
 
 			return
@@ -64,27 +69,30 @@ class("RemouldShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		material_id = slot5
 	}, 12012, function (slot0)
 		if slot0.result == 0 then
-			if uv0 then
-				uv1.transforms[uv2].level = uv1.transforms[uv2].level + 1
+			if slot0 then
+				slot1.transforms[].level = slot1.transforms[slot2].level + 1
 			else
-				uv1.transforms[uv2] = {
+				slot1.transforms[slot2] = {
 					level = 1,
-					id = uv2
+					id = slot2
 				}
 			end
 
-			slot2 = getProxy(NavalAcademyProxy).getStudentByShipId(slot1, uv3)
+			slot2 = getProxy(NavalAcademyProxy).getStudentByShipId(slot1, )
 
-			_.each(uv4.ship_id, function (slot0)
-				if slot0[1] == uv0.configId then
-					slot2 = uv0.skills
-					uv0.configId = slot0[2]
-					uv0.skills = {}
+			local function slot5(slot0)
+				if slot0[1] == slot0.configId then
+					slot2 = slot0.skills
+					slot0.configId = slot0[2]
+					slot0.skills = {}
+					slot3 = pg.ship_data_template[slot0.configId].buff_list
 
-					if uv1 then
-						if not table.contains(pg.ship_data_template[uv0.configId].buff_list, uv1:getSkillId(uv0)) and pg.ship_data_template[uv0.configId].buff_list[table.indexof(pg.ship_data_template[uv0.configId].buff_list, slot4)] ~= slot4 then
-							uv1:updateSkillId(pg.ship_data_template[uv0.configId].buff_list[table.indexof(pg.ship_data_template[uv0.configId].buff_list, slot4)])
-							uv2:updateStudent(uv1)
+					if pg.ship_data_template[slot0.configId].buff_list then
+						slot6 = slot3[table.indexof(slot1, slot4)]
+
+						if not table.contains(slot3, slot1:getSkillId(slot0)) and slot6 ~= slot4 then
+							slot1:updateSkillId(slot6)
+							slot2:updateStudent(slot1)
 						end
 					end
 
@@ -93,93 +101,105 @@ class("RemouldShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 							slot9 = {
 								exp = 0,
 								level = 1,
-								id = slot8,
-								level = slot10.level,
-								exp = slot10.exp
+								id = slot8
 							}
 
 							if slot2[slot1[slot7]] then
+								slot9.level = slot10.level
+								slot9.exp = slot10.exp
 							end
 
 							pg.TipsMgr:GetInstance():ShowTips(i18n("ship_remould_material_unlock_skill", pg.skill_data_template[slot8].name))
 						end
 
-						uv0.skills[slot9.id] = slot9
+						slot0.skills[slot9.id] = slot9
 					end
 
-					if slot2[11720] and not uv0.skills[11720] then
-						uv0.skills[11720] = slot2[11720]
+					if slot2[11720] and not slot0.skills[11720] then
+						slot0.skills[11720] = slot2[11720]
 					end
 				end
-			end)
+			end
 
-			for slot6, slot7 in pairs(uv4.use_item[uv5] or {}) do
-				uv6:removeItemById(slot7[1], slot7[2])
+			_.each(slot1.ship_id, slot5)
+
+			slot3 = pairs
+			slot4 = slot1.ship_id.use_item[slot5] or {}
+
+			for slot6, slot7 in slot3(slot4) do
+				slot6:removeItemById(slot7[1], slot7[2])
 			end
 
 			slot3 = getProxy(PlayerProxy)
 			slot4 = slot3:getData()
 
 			slot4:consume({
-				gold = uv4.use_gold
+				gold = slot4.use_gold
 			})
 			slot3:updatePlayer(slot4)
 
-			if uv4.skin_id ~= 0 then
-				uv1:updateSkinId(uv4.skin_id)
-				table.insert({}, {
+			slot5 = {}
+
+			if slot4.skin_id ~= 0 then
+				slot1:updateSkinId(slot4.skin_id)
+				table.insert(slot5, {
 					count = 1,
 					type = DROP_TYPE_SKIN,
-					id = uv4.skin_id
+					id = slot4.skin_id
 				})
 
-				if getProxy(CollectionProxy):getShipGroup(uv1.groupId) and not slot7.trans then
+				if getProxy(CollectionProxy):getShipGroup(slot1.groupId) and not slot7.trans then
 					slot7.trans = true
 
 					slot6:updateShipGroup(slot7)
 				end
 			end
 
-			if uv4.skill_id ~= 0 and not uv1.skills[uv4.skill_id] then
-				uv1.skills[uv4.skill_id] = {
+			if slot4.skill_id ~= 0 and not slot1.skills[slot4.skill_id] then
+				slot1.skills[slot4.skill_id] = {
 					exp = 0,
 					level = 1,
-					id = uv4.skill_id
+					id = slot4.skill_id
 				}
 
-				pg.TipsMgr:GetInstance():ShowTips(i18n("ship_remould_material_unlock_skill", HXSet.hxLan(pg.skill_data_template[uv4.skill_id].name)))
+				pg.TipsMgr:GetInstance():ShowTips(i18n("ship_remould_material_unlock_skill", HXSet.hxLan(pg.skill_data_template[slot4.skill_id].name)))
 			end
 
-			uv1:updateName()
-			uv7:updateShip(uv1)
+			slot1:updateName()
+			slot1:updateShip(slot1)
 
-			for slot9, slot10 in ipairs(uv8 or {}) do
-				uv7:removeShipById(slot10)
+			slot6 = ipairs
+			slot7 = slot1 or {}
+
+			for slot9, slot10 in slot6(slot7) do
+				slot7:removeShipById(slot10)
 			end
 
 			slot6 = nil
 			slot6 = coroutine.create(function ()
-				for slot3, slot4 in ipairs(uv0.equipments) do
-					if slot4 and not uv0:canEquipAtPos(slot4, slot3) then
-						uv1:sendNotification(GAME.UNEQUIP_FROM_SHIP, {
-							shipId = uv0.id,
+				for slot3, slot4 in ipairs(slot0.equipments) do
+					if slot4 and not slot0:canEquipAtPos(slot4, slot3) then
+						slot1:sendNotification(GAME.UNEQUIP_FROM_SHIP, {
+							shipId = slot0.id,
 							pos = slot3,
-							callback = uv2
+							callback = slot2
 						})
 						coroutine.yield()
 					end
 				end
 
-				uv1:sendNotification(GAME.REMOULD_SHIP_DONE, {
-					ship = uv3:getShipById(uv4),
-					id = uv5,
-					awards = uv6
+				slot1:sendNotification(GAME.REMOULD_SHIP_DONE, {
+					ship = slot3:getShipById(slot3.getShipById),
+					id = slot5,
+					awards = slot3.getShipById
 				})
 			end)
 
+
+			-- Decompilation error in this vicinity:
 			function ()
-				if uv0 and coroutine.status(uv0) == "suspended" then
-					slot0, slot1 = coroutine.resume(uv0)
+				if slot0 and coroutine.status(coroutine.status) == "suspended" then
+					slot0, slot1 = coroutine.resume(coroutine.resume)
 				end
 			end()
 

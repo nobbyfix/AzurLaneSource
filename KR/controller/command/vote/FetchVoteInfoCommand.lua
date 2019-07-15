@@ -4,7 +4,7 @@ class("FetchVoteInfoCommand", pm.SimpleCommand).execute = function (slot0, slot1
 	pg.ConnectionMgr.GetInstance():Send(17201, {
 		type = 0
 	}, 17202, function (slot0)
-		uv0.callback(slot0)
+		slot0:callback()
 	end)
 end
 

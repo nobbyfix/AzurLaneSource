@@ -14,26 +14,25 @@ class("ShipExitCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		slot1 = 0
 
 		if slot0.result == 0 then
-			if uv0.state == Ship.STATE_REST then
-				-- Nothing
+			if slot0.state == Ship.STATE_REST then
 			elseif slot2 == Ship.STATE_TRAIN then
-				uv0.state_info_2 = uv0:getTotalExp()
+				slot0.state_info_2 = slot0:getTotalExp()
 			end
 
-			uv0:updateStateInfo34(0, 0)
-			uv1:exitYardById(uv2)
-			uv0:updateState(Ship.STATE_NORMAL)
-			uv3:updateShip(uv0)
+			slot0:updateStateInfo34(0, 0)
+			slot1:exitYardById(slot2)
+			slot0:updateState(Ship.STATE_NORMAL)
+			slot0.updateState:updateShip(slot0)
 
 			slot1 = slot0.exp
 
-			uv4:sendNotification(GAME.EXIT_SHIP_DONE, uv0)
+			slot0.updateState:sendNotification(GAME.EXIT_SHIP_DONE, slot0)
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("backyard_shipExit", slot0.result))
 		end
 
-		if uv5 ~= nil then
-			uv5(slot1)
+		if slot5 ~= nil then
+			slot5(slot1)
 		end
 	end)
 end

@@ -5,9 +5,9 @@ slot0.Purple = 4
 slot0.Gold = 5
 slot0.SSR = 6
 
-function slot0.Rarity2Print(slot0)
-	if not uv0.prints then
-		uv0.prints = {
+slot0.Rarity2Print = function (slot0)
+	if not slot0.prints then
+		slot0.prints = {
 			"1",
 			"1",
 			"2",
@@ -19,7 +19,7 @@ function slot0.Rarity2Print(slot0)
 		}
 	end
 
-	return uv0.prints[slot0]
+	return slot0.prints[slot0]
 end
 
 return slot0

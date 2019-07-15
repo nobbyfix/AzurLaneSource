@@ -15,30 +15,30 @@ ReadTag = slot6.read_tag
 local function slot15(slot0, slot1)
 	return function (slot0, slot1, slot2, slot3, slot4)
 		if slot2 then
-			slot5 = uv0
+			slot5 = slot0
 
 			return function (slot0, slot1, slot2, slot3, slot4)
-				if slot4[uv0] == nil then
-					slot4[uv0] = uv1(slot3)
+				if slot4[slot0] == nil then
+					slot4[slot0] = slot1(slot3)
 				end
 
 				slot6 = nil
-				slot6, slot1 = uv2(slot0, slot1)
+				slot6, slot1 = slot2(slot0, slot1)
 
 				if slot2 < slot7 + slot8 then
-					uv3("Truncated message.")
+					slot3("Truncated message.")
 				end
 
 				slot7 = nil
 
 				while slot1 < slot6 do
-					slot7, slot1 = uv4(slot0, slot1)
+					slot7, slot1 = slot4(slot0, slot1)
 					slot5[#slot5 + 1] = slot8
 				end
 
 				if slot6 < slot1 then
 					slot5:remove(#slot5)
-					uv3("Packed element was truncated.")
+					slot3("Packed element was truncated.")
 				end
 
 				return slot1
@@ -47,22 +47,22 @@ local function slot15(slot0, slot1)
 		end
 
 		if slot1 then
-			slot6 = #uv3.TagBytes(slot0, uv4)
-			slot7 = uv5.sub
+			slot6 = #slot3.TagBytes(slot0, slot4)
+			slot7 = slot5.sub
 
 			return function (slot0, slot1, slot2, slot3, slot4)
-				if slot4[uv0] == nil then
-					slot4[uv0] = uv1(slot3)
+				if slot4[slot0] == nil then
+					slot4[slot0] = slot1(slot3)
 				end
 
 				while true do
-					slot10, slot7 = uv2(slot0, slot1)
+					slot10, slot7 = slot2(slot0, slot1)
 
 					slot5:append(slot6)
 
-					if uv4(slot0, slot7 + 1, slot7 + uv3) ~= uv5 or slot2 <= slot7 then
+					if slot4(slot0, slot7 + 1, slot7 + slot3) ~= slot5 or slot2 <= slot7 then
 						if slot2 < slot7 then
-							uv6("Truncated message.")
+							slot6("Truncated message.")
 						end
 
 						return slot7
@@ -71,12 +71,12 @@ local function slot15(slot0, slot1)
 			end
 		else
 			return function (slot0, slot1, slot2, slot3, slot4)
-				slot4[uv0], slot1 = uv1(slot0, slot1)
+				slot4[slot0], slot1 = slot1(slot0, slot1)
 
 				if slot2 < slot7 then
-					slot4[uv0] = nil
+					slot4[slot0] = nil
 
-					uv2("Truncated message.")
+					slot2("Truncated message.")
 				end
 
 				return slot1
@@ -86,18 +86,18 @@ local function slot15(slot0, slot1)
 end
 
 local function slot16(slot0, slot1, slot2)
-	return uv0(slot0, function (slot0, slot1)
-		slot5, slot5 = uv0(slot0, slot1)
+	return slot0(slot0, function (slot0, slot1)
+		slot5, slot5 = slot0(slot0, slot1)
 
-		return uv1(slot2), slot3
+		return slot1(slot2), slot3
 	end)
 end
 
 local function slot17(slot0, slot1, slot2)
-	slot3 = uv0.struct_unpack
+	slot3 = slot0.struct_unpack
 
-	return uv1(slot0, function (slot0, slot1)
-		return uv1(uv2, slot0, slot1), slot1 + uv0
+	return slot1(slot0, function (slot0, slot1)
+		return slot1(slot2, slot0, slot1), slot1 + slot0
 	end)
 end
 
@@ -119,28 +119,28 @@ BoolDecoder = slot16(slot8.WIRETYPE_VARINT, slot6.varint_decoder, function (slot
 end)
 
 function StringDecoder(slot0, slot1, slot2, slot3, slot4)
-	slot5 = uv0
-	slot6 = uv1.sub
+	slot5 = slot0
+	slot6 = slot1.sub
 
 	if slot1 then
-		slot8 = #uv2.TagBytes(slot0, uv3.WIRETYPE_LENGTH_DELIMITED)
+		slot8 = #slot2.TagBytes(slot0, slot3.WIRETYPE_LENGTH_DELIMITED)
 
 		return function (slot0, slot1, slot2, slot3, slot4)
-			if slot4[uv0] == nil then
-				slot4[uv0] = uv1(slot3)
+			if slot4[slot0] == nil then
+				slot4[slot0] = slot1(slot3)
 			end
 
 			while true do
 				slot6, slot7 = nil
-				slot6, slot1 = uv2(slot0, slot1)
+				slot6, slot1 = slot2(slot0, slot1)
 
 				if slot2 < slot9 + slot8 then
-					uv3("Truncated string.")
+					slot3("Truncated string.")
 				end
 
-				slot5:append(uv4(slot0, slot1 + 1, slot7))
+				slot5:append(slot4(slot0, slot1 + 1, slot7))
 
-				if uv4(slot0, slot7 + 1, slot7 + uv5) ~= uv6 or slot7 == slot2 then
+				if slot4(slot0, slot7 + 1, slot7 + slot5) ~= slot6 or slot7 == slot2 then
 					return slot7
 				end
 			end
@@ -150,41 +150,41 @@ function StringDecoder(slot0, slot1, slot2, slot3, slot4)
 
 	return function (slot0, slot1, slot2, slot3, slot4)
 		slot5, slot6 = nil
-		slot5, slot1 = uv0(slot0, slot1)
+		slot5, slot1 = slot0(slot0, slot1)
 
 		if slot2 < slot8 + slot7 then
-			uv1("Truncated string.")
+			slot1("Truncated string.")
 		end
 
-		slot4[uv2] = uv3(slot0, slot1 + 1, slot6)
+		slot4[slot2] = slot3(slot0, slot1 + 1, slot6)
 
 		return slot6
 	end
 end
 
 function BytesDecoder(slot0, slot1, slot2, slot3, slot4)
-	slot5 = uv0
-	slot6 = uv1.sub
+	slot5 = slot0
+	slot6 = slot1.sub
 
 	if slot1 then
-		slot8 = #uv2.TagBytes(slot0, uv3.WIRETYPE_LENGTH_DELIMITED)
+		slot8 = #slot2.TagBytes(slot0, slot3.WIRETYPE_LENGTH_DELIMITED)
 
 		return function (slot0, slot1, slot2, slot3, slot4)
-			if slot4[uv0] == nil then
-				slot4[uv0] = uv1(slot3)
+			if slot4[slot0] == nil then
+				slot4[slot0] = slot1(slot3)
 			end
 
 			while true do
 				slot6, slot7 = nil
-				slot6, slot1 = uv2(slot0, slot1)
+				slot6, slot1 = slot2(slot0, slot1)
 
 				if slot2 < slot9 + slot8 then
-					uv3("Truncated string.")
+					slot3("Truncated string.")
 				end
 
-				slot5:append(uv4(slot0, slot1 + 1, slot7))
+				slot5:append(slot4(slot0, slot1 + 1, slot7))
 
-				if uv4(slot0, slot7 + 1, slot7 + uv5) ~= uv6 or slot7 == slot2 then
+				if slot4(slot0, slot7 + 1, slot7 + slot5) ~= slot6 or slot7 == slot2 then
 					return slot7
 				end
 			end
@@ -194,43 +194,43 @@ function BytesDecoder(slot0, slot1, slot2, slot3, slot4)
 
 	return function (slot0, slot1, slot2, slot3, slot4)
 		slot5, slot6 = nil
-		slot5, slot1 = uv0(slot0, slot1)
+		slot5, slot1 = slot0(slot0, slot1)
 
 		if slot2 < slot8 + slot7 then
-			uv1("Truncated string.")
+			slot1("Truncated string.")
 		end
 
-		slot4[uv2] = uv3(slot0, slot1 + 1, slot6)
+		slot4[slot2] = slot3(slot0, slot1 + 1, slot6)
 
 		return slot6
 	end
 end
 
 function MessageDecoder(slot0, slot1, slot2, slot3, slot4)
-	slot5 = uv0
-	slot6 = uv1.sub
+	slot5 = slot0
+	slot6 = slot1.sub
 
 	if slot1 then
-		slot8 = #uv2.TagBytes(slot0, uv3.WIRETYPE_LENGTH_DELIMITED)
+		slot8 = #slot2.TagBytes(slot0, slot3.WIRETYPE_LENGTH_DELIMITED)
 
 		return function (slot0, slot1, slot2, slot3, slot4)
-			if slot4[uv0] == nil then
-				slot4[uv0] = uv1(slot3)
+			if slot4[slot0] == nil then
+				slot4[slot0] = slot1(slot3)
 			end
 
 			while true do
 				slot6, slot7 = nil
-				slot6, slot1 = uv2(slot0, slot1)
+				slot6, slot1 = slot2(slot0, slot1)
 
 				if slot2 < slot9 + slot8 then
-					uv3("Truncated message.")
+					slot3("Truncated message.")
 				end
 
 				if slot5:add():_InternalParse(slot0, slot1, slot7) ~= slot7 then
-					uv3("Unexpected end-group tag.")
+					slot3("Unexpected end-group tag.")
 				end
 
-				if uv5(slot0, slot7 + 1, slot7 + uv4) ~= uv6 or slot7 == slot2 then
+				if slot5(slot0, slot7 + 1, slot7 + slot4) ~= slot6 or slot7 == slot2 then
 					return slot7
 				end
 			end
@@ -239,19 +239,19 @@ function MessageDecoder(slot0, slot1, slot2, slot3, slot4)
 	end
 
 	return function (slot0, slot1, slot2, slot3, slot4)
-		if slot4[uv0] == nil then
-			slot4[uv0] = uv1(slot3)
+		if slot4[slot0] == nil then
+			slot4[slot0] = slot1(slot3)
 		end
 
 		slot6, slot7 = nil
-		slot6, slot1 = uv2(slot0, slot1)
+		slot6, slot1 = slot2(slot0, slot1)
 
 		if slot2 < slot9 + slot8 then
-			uv3("Truncated message.")
+			slot3("Truncated message.")
 		end
 
 		if slot5:_InternalParse(slot0, slot1, slot7) ~= slot7 then
-			uv3("Unexpected end-group tag.")
+			slot3("Unexpected end-group tag.")
 		end
 
 		return slot7
@@ -260,14 +260,14 @@ end
 
 function _SkipVarint(slot0, slot1, slot2)
 	slot3 = nil
-	slot3, slot1 = uv0(slot0, slot1)
+	slot3, slot1 = slot0(slot0, slot1)
 
 	return slot5
 end
 
 function _SkipFixed64(slot0, slot1, slot2)
 	if slot2 < slot1 + 8 then
-		uv0("Truncated message.")
+		slot0("Truncated message.")
 	end
 
 	return slot1
@@ -275,10 +275,10 @@ end
 
 function _SkipLengthDelimited(slot0, slot1, slot2)
 	slot3 = nil
-	slot3, slot1 = uv0(slot0, slot1)
+	slot3, slot1 = slot0(slot0, slot1)
 
 	if slot2 < slot5 + slot4 then
-		uv1("Truncated message.")
+		slot1("Truncated message.")
 	end
 
 	return slot1
@@ -286,33 +286,25 @@ end
 
 function _SkipFixed32(slot0, slot1, slot2)
 	if slot2 < slot1 + 4 then
-		uv0("Truncated message.")
+		slot0("Truncated message.")
 	end
 
 	return slot1
 end
 
 function _RaiseInvalidWireType(slot0, slot1, slot2)
-	uv0("Tag had invalid wire type.")
+	slot0("Tag had invalid wire type.")
 end
 
 function _FieldSkipper()
-	slot0 = {
-		_SkipVarint,
-		_SkipFixed64,
-		_SkipLengthDelimited,
-		_SkipGroup,
-		_EndGroup,
-		_SkipFixed32,
-		_RaiseInvalidWireType,
-		_RaiseInvalidWireType
-	}
-	slot1 = uv0.byte
-	slot2 = uv0.sub
+	slot1 = slot0.byte
+	slot2 = slot0.sub
 
 	return function (slot0, slot1, slot2, slot3)
-		return uv2[uv0(uv1(slot3, 1, 1)) % 8 + 1](slot0, slot1, slot2)
+		return slot2[slot0(slot1(slot3, 1, 1)) % 8 + 1](slot0, slot1, slot2)
 	end
 end
 
 SkipField = _FieldSkipper()
+
+return

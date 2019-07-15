@@ -26,10 +26,8 @@ slot3 = {
 			slot1 = slot0.first
 
 			return function ()
-				while uv0 <= uv1.last do
-					uv0 = uv0 + 1
-
-					if uv1.data[uv0] then
+				while slot0 <= slot1.last do
+					if slot0 + 1 then
 						return slot0
 					end
 				end
@@ -43,7 +41,7 @@ slot3 = {
 			slot0.data[slot0.data_position[slot1]] = nil
 			slot0.data_position[slot1] = nil
 
-			uv0(slot0)
+			slot0(slot0)
 		end
 	}
 }
@@ -60,11 +58,11 @@ end
 
 return {
 	New = function ()
-		return uv0({
+		return slot0({
 			first = 1,
 			last = 0,
 			data = {},
 			data_position = {}
-		}, uv1)
+		}, )
 	end
 }

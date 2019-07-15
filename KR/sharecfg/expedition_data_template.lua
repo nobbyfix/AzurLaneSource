@@ -139168,7 +139168,7 @@ pg.expedition_data_template = {
 			},
 			{
 				2,
-				54023
+				54024
 			},
 			{
 				2,
