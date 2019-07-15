@@ -17,47 +17,49 @@ pg.ToastMgr.ToastInfo = {
 	}
 }
 
-function pg.ToastMgr.Init(slot0, slot1)
+pg.ToastMgr.Init = function (slot0, slot1)
 	PoolMgr.GetInstance():GetUI("ToastUI", true, function (slot0)
-		uv0._go = slot0
+		slot0._go = slot0
 
-		uv0._go:SetActive(false)
+		slot0._go:SetActive(false)
 
-		uv0._tf = uv0._go.transform
-		uv0.container = uv0._tf:Find("container")
+		slot0._tf = slot0._go.transform
+		slot0.container = slot0._tf:Find("container")
 
-		uv0._go.transform:SetParent(pg.UIMgr:GetInstance().OverlayMain.transform, false)
+		slot0._go.transform:SetParent(pg.UIMgr:GetInstance().OverlayMain.transform, false)
 
-		uv0.pools = {}
+		slot0.pools = {}
 		slot2 = {}
 
-		for slot6, slot7 in pairs(uv1.ToastInfo) do
+		for slot6, slot7 in pairs(slot1.ToastInfo) do
 			for slot11, slot12 in pairs(slot7) do
 				slot2[slot11 .. "Tpl"] = slot12
 			end
 		end
 
 		for slot6, slot7 in pairs(slot2) do
-			setActive(uv0._tf:Find("resources/" .. slot7), false)
+			setActive(slot0._tf:Find("resources/" .. slot7), false)
 
-			uv0.pools[slot6] = uv2.New(uv0._tf.Find("resources/" .. slot7).gameObject, 5)
+			slot0.pools[slot6] = slot2.New(slot0._tf.Find("resources/" .. slot7).gameObject, 5)
 		end
 
-		uv0:ResetUIDandHistory()
+		slot0:ResetUIDandHistory()
 
-		if uv3 then
-			uv3()
+		if slot0.ResetUIDandHistory then
+			slot3()
 		end
 	end)
 end
 
-function pg.ToastMgr.ResetUIDandHistory(slot0)
+pg.ToastMgr.ResetUIDandHistory = function (slot0)
 	slot0.completedJob = 0
 	slot0.actionJob = 0
 	slot0.buffer = {}
 end
 
-function pg.ToastMgr.ShowToast(slot0, slot1, slot2)
+pg.ToastMgr.ShowToast = function (slot0, slot1, slot2)
+	slot3 = #slot0.buffer
+
 	table.insert(slot0.buffer, {
 		state = 0,
 		type = slot1,
@@ -65,12 +67,12 @@ function pg.ToastMgr.ShowToast(slot0, slot1, slot2)
 	})
 	setActive(slot0._tf, true)
 
-	if #slot0.buffer == 1 or slot0.buffer[#slot0.buffer].state >= 2 then
+	if #slot0.buffer == 1 or slot0.buffer[slot3].state >= 2 then
 		slot0:Toast()
 	end
 end
 
-function pg.ToastMgr.Toast(slot0)
+pg.ToastMgr.Toast = function (slot0)
 	if slot0.actionJob >= #slot0.buffer then
 		return
 	end
@@ -86,30 +88,30 @@ function pg.ToastMgr.Toast(slot0)
 	slot0.buffer[slot0.actionJob].state = 1
 
 	slot0["Update" .. slot0.buffer[slot0.actionJob].type](slot0, slot0.buffer[slot0.actionJob], function ()
-		uv0.state = 2
+		slot0.state = 2
 
-		uv1:Toast()
+		2:Toast()
 	end, function ()
-		uv0.state = 3
+		slot0.state = 3
 
-		if uv1.buffer[uv2 + 1] and uv1.buffer[uv2 + 1].state < 1 then
-			uv1:Toast()
+		if slot1.buffer[slot2 + 1] and slot1.buffer[slot2 + 1].state < 1 then
+			slot1:Toast()
 		end
 
-		uv1.completedJob = uv1.completedJob + 1
+		slot1.completedJob = slot1.completedJob + 1
 
-		if uv1.completedJob >= #uv1.buffer then
-			uv1:ResetUIDandHistory()
-			setActive(uv1._tf, false)
+		if slot1.completedJob >= #slot1.completedJob + 1.buffer then
+			slot1:ResetUIDandHistory()
+			setActive(slot1._tf, false)
 
-			for slot3, slot4 in pairs(uv1.pools) do
+			for slot3, slot4 in pairs(slot1._tf.pools) do
 				slot4:ClearItems(false)
 			end
 		end
 	end)
 end
 
-function pg.ToastMgr.GetAndSet(slot0, slot1, slot2)
+pg.ToastMgr.GetAndSet = function (slot0, slot1, slot2)
 	slot3 = slot0.pools[slot1 .. "Tpl"]:Dequeue()
 
 	setActive(slot3, true)
@@ -119,24 +121,24 @@ function pg.ToastMgr.GetAndSet(slot0, slot1, slot2)
 	return slot3
 end
 
-function pg.ToastMgr.UpdateAttire(slot0, slot1, slot2, slot3)
+pg.ToastMgr.UpdateAttire = function (slot0, slot1, slot2, slot3)
 	slot4 = slot0:GetAndSet(slot1.type, slot0.container)
 	slot5 = slot4:GetComponent(typeof(DftAniEvent))
 
 	slot5:SetTriggerEvent(function (slot0)
-		if uv0 then
-			uv0()
+		if slot0 then
+			slot0()
 		end
 
-		uv1:SetTriggerEvent(nil)
+		slot1:SetTriggerEvent(nil)
 	end)
 	slot5:SetEndEvent(function (slot0)
-		setActive(uv0, false)
-		uv1.pools[uv2.type .. "Tpl"]:Enqueue(uv0)
-		uv3:SetEndEvent(nil)
+		setActive(slot0, false)
+		setActive.pools[slot0.type .. "Tpl"]:Enqueue(slot0)
+		slot3:SetEndEvent(nil)
 
-		if uv4 then
-			uv4()
+		if slot4 then
+			slot4()
 		end
 	end)
 	slot4:GetComponent(typeof(Animation)):Play("attire")
@@ -150,7 +152,7 @@ pg.ToastMgr.FADE_OUT_TIME = 1
 pg.ToastMgr.SHOW_TIME = 1.5
 pg.ToastMgr.DELAY_TIME = 0.3
 
-function pg.ToastMgr.UpdateTecpoint(slot0, slot1, slot2, slot3)
+pg.ToastMgr.UpdateTecpoint = function (slot0, slot1, slot2, slot3)
 	slot7 = slot1.info.attr
 	slot8 = slot1.info.value
 	GetComponent(slot0:GetAndSet("Point", slot0.container).transform, "CanvasGroup").alpha = 0
@@ -173,61 +175,61 @@ function pg.ToastMgr.UpdateTecpoint(slot0, slot1, slot2, slot3)
 	end
 
 	function slot11()
-		if uv0 then
-			uv0()
+		if slot0 then
+			slot0()
 		end
 
-		if uv1 then
-			uv1()
+		if slot1 then
+			slot1()
 		end
 	end
 
 	slot13 = GetComponent(slot9, "CanvasGroup")
 
 	function slot15()
-		LeanTween.moveX(rtf(uv0), 0, uv1.FADE_OUT_TIME)
-		LeanTween.value(uv0, 1, 0, uv1.FADE_OUT_TIME):setOnUpdate(System.Action_float(uv2)):setOnComplete(System.Action(function ()
-			setActive(uv0, false)
-			uv1.pools.PointTpl:Enqueue(uv0)
+		LeanTween.moveX(rtf(slot0), 0, slot1.FADE_OUT_TIME)
+		LeanTween.value(LeanTween.value, 1, 0, slot1.FADE_OUT_TIME):setOnUpdate(System.Action_float(System.Action_float)):setOnComplete(System.Action(function ()
+			setActive(setActive, false)
+			slot1.pools.PointTpl:Enqueue(slot1.pools.PointTpl.Enqueue)
 
-			if not uv2 then
-				uv3()
+			if not slot1.pools.PointTpl.Enqueue then
+				slot3()
 			end
 		end))
 	end
 
-	LeanTween.value(slot12, 0, 1, uv0.FADE_TIME):setOnUpdate(System.Action_float(slot14)):setOnComplete(System.Action(function ()
-		LeanTween.delayedCall(uv0, uv1.SHOW_TIME, System.Action(uv2))
+	LeanTween.value(slot12, 0, 1, slot0.FADE_TIME):setOnUpdate(System.Action_float(slot14)):setOnComplete(System.Action(function ()
+		LeanTween.delayedCall(LeanTween.delayedCall, slot1.SHOW_TIME, System.Action(slot1.SHOW_TIME))
 	end))
 
 	function itemDisplay(slot0, slot1, slot2)
 		slot3 = GetComponent(slot0.transform, "CanvasGroup")
 
 		function slot5()
-			LeanTween.moveX(rtf(uv0), 0, uv1.FADE_OUT_TIME)
-			LeanTween.value(uv0, 1, 0, uv1.FADE_OUT_TIME):setOnUpdate(System.Action_float(uv2)):setOnComplete(System.Action(function ()
-				setActive(uv0, false)
-				uv1.pools.BuffTpl:Enqueue(uv0)
+			LeanTween.moveX(rtf(slot0), 0, slot1.FADE_OUT_TIME)
+			LeanTween.value(LeanTween.value, 1, 0, slot1.FADE_OUT_TIME):setOnUpdate(System.Action_float(System.Action_float)):setOnComplete(System.Action(function ()
+				setActive(setActive, false)
+				slot1.pools.BuffTpl:Enqueue(slot1.pools.BuffTpl.Enqueue)
 
-				if uv2 then
-					uv3()
+				if slot1.pools.BuffTpl.Enqueue then
+					slot3()
 				end
 			end))
 		end
 
-		LeanTween.value(slot0, 0, 1, uv0.FADE_TIME):setOnUpdate(System.Action_float(slot4)):setOnComplete(System.Action(function ()
-			LeanTween.delayedCall(uv0, uv1.SHOW_TIME + (uv1.FADE_OUT_TIME - uv1.DELAY_TIME) * uv2, System.Action(uv3))
+		LeanTween.value(slot0, 0, 1, slot0.FADE_TIME):setOnUpdate(System.Action_float(slot4)):setOnComplete(System.Action(function ()
+			LeanTween.delayedCall(LeanTween.delayedCall, slot1.SHOW_TIME + (slot1.FADE_OUT_TIME - slot1.DELAY_TIME) * slot1.SHOW_TIME, System.Action(System.Action))
 		end))
 	end
 
 	for slot19, slot20 in ipairs(slot10) do
-		LeanTween.delayedCall(slot12, slot19 * uv0.DELAY_TIME, System.Action(function ()
-			itemDisplay(uv0, uv1, uv1 == #uv2)
+		LeanTween.delayedCall(slot12, slot19 * slot0.DELAY_TIME, System.Action(function ()
+			slot0(slot1, slot2, itemDisplay == #slot2)
 		end))
 	end
 end
 
-function pg.ToastMgr.UpdateTrophy(slot0, slot1, slot2, slot3)
+pg.ToastMgr.UpdateTrophy = function (slot0, slot1, slot2, slot3)
 	playSoundEffect(slot1.info.sound or SFX_UI_TIP)
 
 	slot4 = slot0:GetAndSet(slot1.type, slot0.container)
@@ -241,11 +243,11 @@ function pg.ToastMgr.UpdateTrophy(slot0, slot1, slot2, slot3)
 
 	LeanTween.moveX(rtf(slot6), 0, 0.5)
 	LeanTween.moveX(rtf(slot6), -550, 0.5):setDelay(5):setOnComplete(System.Action(function ()
-		setActive(uv0, false)
-		uv1.pools[uv2.type .. "Tpl"]:Enqueue(uv0)
+		setActive(setActive, false)
+		slot1.pools[slot2.type .. "Tpl"]:Enqueue(slot1.pools[slot2.type .. "Tpl"].Enqueue)
 
-		if uv3 then
-			uv3()
+		if slot3 then
+			slot3()
 		end
 	end))
 
@@ -254,7 +256,7 @@ function pg.ToastMgr.UpdateTrophy(slot0, slot1, slot2, slot3)
 	end
 end
 
-function pg.ToastMgr.Dispose(slot0)
+pg.ToastMgr.Dispose = function (slot0)
 	setActive(slot0._tf, false)
 	slot0:ResetUIDandHistory()
 
@@ -262,3 +264,5 @@ function pg.ToastMgr.Dispose(slot0)
 		slot5:Clear(false)
 	end
 end
+
+return

@@ -17,7 +17,7 @@ class("ChangeChatRoomCommand", pm.SimpleCommand).execute = function (slot0, slot
 		return
 	end
 
-	if uv0 < slot2 then
+	if slot0 < slot2 then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("main_notificationLayer_roomId_invaild"))
 
 		return
@@ -27,12 +27,12 @@ class("ChangeChatRoomCommand", pm.SimpleCommand).execute = function (slot0, slot
 		room_id = slot2
 	}, 11402, function (slot0)
 		if slot0.result == 0 then
-			uv0:changeChatRoom(slot0.room_id or uv1)
-			uv2:updatePlayer(uv0)
-			getProxy(ChatProxy).clearMsg(uv0.changeChatRoom)
-			uv3:sendNotification(GAME.CHANGE_CHAT_ROOM_DONE, uv0)
+			slot0:changeChatRoom(slot0.room_id or slot0.changeChatRoom)
+			slot0:updatePlayer(slot0)
+			getProxy(ChatProxy).clearMsg(slot0.changeChatRoom)
+			slot0.changeChatRoom:sendNotification(GAME.CHANGE_CHAT_ROOM_DONE, slot0)
 		elseif slot0.result == 6 then
-			uv3:sendNotification(GAME.CHAT_ROOM_MAX_NUMBER)
+			slot3:sendNotification(GAME.CHAT_ROOM_MAX_NUMBER)
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("player_change_chat_room_erro", slot0.result))
 		end

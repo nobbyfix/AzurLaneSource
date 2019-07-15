@@ -18,20 +18,22 @@ class("FetchNpcShipCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		choice_award = {}
 	}, 20006, function (slot0)
 		if slot0.result == 0 then
+			slot1 = {}
+
 			for slot5, slot6 in ipairs(slot0.award_list) do
-				table.insert({}, Item.New({
+				table.insert(slot1, Item.New({
 					type = slot6.type,
 					id = slot6.id,
 					count = slot6.number or slot6.count
 				}))
 			end
 
-			uv0.submitTime = 1
+			slot0.submitTime = 1
 
-			uv1:updateTask(uv0)
-			uv2:sendNotification(GAME.FETCH_NPC_SHIP_DONE, {
+			slot1:updateTask(slot0)
+			slot1.updateTask:sendNotification(GAME.FETCH_NPC_SHIP_DONE, {
 				items = slot1,
-				callback = uv3
+				callback = slot1.updateTask
 			})
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("task_submitTask", slot0.result))

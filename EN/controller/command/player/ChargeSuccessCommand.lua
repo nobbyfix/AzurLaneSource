@@ -5,9 +5,10 @@ class("ChargeSuccessCommand", pm.SimpleCommand).execute = function (slot0, slot1
 	slot7 = Goods.New({
 		shop_id = slot2.shopId
 	}, Goods.TYPE_CHARGE)
+	slot9 = getProxy(PlayerProxy).getData(slot8)
 
 	if slot2.gem > 0 then
-		getProxy(PlayerProxy).getData(slot8):addResources({
+		slot9:addResources({
 			chargeGem = slot5
 		})
 	end
@@ -36,11 +37,12 @@ class("ChargeSuccessCommand", pm.SimpleCommand).execute = function (slot0, slot1
 
 	slot8:updatePlayer(slot9)
 
+	slot11 = getProxy(ShopsProxy):getChargedList() or {}
 	slot12 = false
 
-	for slot16, slot17 in pairs(getProxy(ShopsProxy):getChargedList() or {}) do
+	for slot16, slot17 in pairs(slot11) do
 		if slot17.id == slot3 then
-			getProxy(ShopsProxy).getChargedList() or [slot16]:increaseBuyCount()
+			slot11[slot16]:increaseBuyCount()
 
 			slot12 = true
 

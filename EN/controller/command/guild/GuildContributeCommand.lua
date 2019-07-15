@@ -25,24 +25,26 @@ class("GuildContributeCommand", pm.SimpleCommand).execute = function (slot0, slo
 		project_id = slot3
 	}, 62050, function (slot0)
 		if slot0.result == 0 then
-			for slot5, slot6 in ipairs(slot0.award_list or {}) do
-				uv0:sendNotification(GAME.ADD_ITEM, Item.New({
+			slot1 = {}
+			slot2 = ipairs
+			slot3 = slot0.award_list or {}
+
+			for slot5, slot6 in slot2(slot3) do
+				slot0:sendNotification(GAME.ADD_ITEM, Item.New({
 					type = slot6.type,
 					id = slot6.id,
 					count = slot6.number
 				}))
-				table.insert({}, )
+				table.insert(slot1, )
 			end
 
-			uv1 = uv2:getData()
-
-			uv1:markGuildContributeFlag()
-			uv2:updateGuild(uv1)
-			uv3:consume({
-				[id2res(uv4)] = uv5
+			slot1:markGuildContributeFlag()
+			slot1.markGuildContributeFlag:updateGuild(slot1)
+			slot1.markGuildContributeFlag:consume({
+				[id2res(slot4)] = 
 			})
-			uv6:updatePlayer(uv3)
-			uv0:sendNotification(GAME.GUILD_CONTRIBUTE_RES_DONE, slot1)
+			slot6:updatePlayer(slot6)
+			slot0:sendNotification(GAME.GUILD_CONTRIBUTE_RES_DONE, slot2:getData())
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("sham_change_formation_error", slot0.result))
 		end

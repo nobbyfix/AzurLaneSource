@@ -9,7 +9,9 @@ class("ShamEnterCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		friend_ship_id = slot2.friend_ship_id
 	}, 23003, function (slot0)
 		if slot0.result == 0 then
-			getProxy(ChapterProxy).getShamChapter(slot1):update(slot0.current_sham)
+			slot2 = getProxy(ChapterProxy).getShamChapter(slot1)
+
+			slot2:update(slot0.current_sham)
 
 			for slot6, slot7 in pairs(slot2.cells) do
 				if ChapterConst.NeedMarkAsLurk(slot7) then
@@ -18,7 +20,7 @@ class("ShamEnterCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			end
 
 			slot1:updateShamChapter(slot2)
-			uv0:sendNotification(GAME.SHAM_ENTER_DONE, slot2)
+			slot0:sendNotification(GAME.SHAM_ENTER_DONE, slot2)
 		else
 			if slot0.result == 3 then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("sham_enter_error_friend_ship_expired"))
@@ -39,7 +41,7 @@ class("ShamEnterCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 				pg.TipsMgr:GetInstance():ShowTips(errorTip("sham_enter_error", slot0.result))
 			end
 
-			uv0:sendNotification(GAME.SHAM_ENTER_ERROR, slot0.result)
+			slot0:sendNotification(GAME.SHAM_ENTER_ERROR, slot0.result)
 		end
 	end)
 end

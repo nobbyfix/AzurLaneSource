@@ -10,7 +10,7 @@ class("DeleteAllMailCommand", pm.SimpleCommand).execute = function (slot0, slot1
 			end
 		end
 
-		uv0:sendNotification(GAME.DELETE_ALL_MAIL_DONE)
+		slot0:sendNotification(GAME.DELETE_ALL_MAIL_DONE)
 	end)
 end
 

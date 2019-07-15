@@ -129,13 +129,15 @@ function AiriJPLogin(slot0)
 	pg.UIMgr.GetInstance():LoadingOff()
 
 	if AiriResultCodeHandler(slot0.R_CODE) then
+
+		-- Decompilation error in this vicinity:
 		function ()
 			pg.m02:sendNotification(GAME.PLATFORM_LOGIN_DONE, {
 				user = User.New({
 					type = 1,
 					arg1 = PLATFORM_AIRIUS,
-					arg2 = uv0.UID,
-					arg3 = uv0.ACCESS_TOKEN
+					arg2 = slot0.UID,
+					arg3 = slot0.ACCESS_TOKEN
 				})
 			})
 		end()
@@ -246,3 +248,5 @@ function OnAppPauseForSDK(slot0)
 		AiriSdkMgr.AiriSDKInst:OnResume()
 	end
 end
+
+return

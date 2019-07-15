@@ -3,50 +3,54 @@ pg.SendWindow = class("SendWindow")
 slot2 = nil
 slot3 = false
 
-function pg.SendWindow.Ctor(slot0, slot1, slot2)
+pg.SendWindow.Ctor = function (slot0, slot1, slot2)
 	slot0.connectionMgr = slot1
 	slot0.packetIdx = defaultValue(slot2, 0)
 
-	if Application.isEditor and not uv0 then
-		uv0 = true
+	if Application.isEditor and not slot0 then
+		slot0 = true
 
-		DebugMgr.Inst.onRequestResend:AddListener(uv1.onRequestResend)
+		DebugMgr.Inst.onRequestResend:AddListener(slot1.onRequestResend)
 	end
 
 	slot0.isSending = false
 	slot0.toSends = {}
 	slot0.retryCount = 0
-	uv2 = {}
+	slot2 = {}
 end
 
-function pg.SendWindow.setPacketIdx(slot0, slot1)
+pg.SendWindow.setPacketIdx = function (slot0, slot1)
 	slot0.packetIdx = slot1
 end
 
-function pg.SendWindow.getPacketIdx(slot0)
+pg.SendWindow.getPacketIdx = function (slot0)
 	return slot0.packetIdx
 end
 
-function pg.SendWindow.incPacketIdx(slot0)
+pg.SendWindow.incPacketIdx = function (slot0)
 	slot0.packetIdx = slot0.packetIdx + 1
 end
 
 if Application.isEditor then
-	function slot1.serialize(slot0)
+	slot1.serialize = function (slot0)
+		slot1 = ""
+
 		if type(slot0) == "number" then
-			slot1 = "" .. slot0
+			slot1 = slot1 .. slot0
 		elseif slot2 == "boolean" then
 			slot1 = slot1 .. tostring(slot0)
 		elseif slot2 == "string" then
 			slot1 = slot1 .. string.format("%q", slot0)
 		elseif slot2 == "table" then
+			slot1 = slot1 .. "{\n"
+
 			for slot6, slot7 in pairs(slot0) do
-				slot1 = slot1 .. "{\n" .. "[" .. uv0.serialize(slot6) .. "]=" .. uv0.serialize(slot7) .. ",\n"
+				slot1 = slot1 .. "[" .. slot0.serialize(slot6) .. "]=" .. slot0.serialize(slot7) .. ",\n"
 			end
 
 			if getmetatable(slot0) ~= nil and type(slot3.__index) == "table" then
 				for slot7, slot8 in pairs(slot3.__index) do
-					slot1 = slot1 .. "[" .. uv0.serialize(slot7) .. "]=" .. uv0.serialize(slot8) .. ",\n"
+					slot1 = slot1 .. "[" .. slot0.serialize(slot7) .. "]=" .. slot0.serialize(slot8) .. ",\n"
 				end
 			end
 
@@ -62,7 +66,7 @@ if Application.isEditor then
 		return slot1
 	end
 
-	function slot1.unserialize(slot0)
+	slot1.unserialize = function (slot0)
 		if type(slot0) == "nil" or slot0 == "" then
 			return nil
 		elseif slot1 == "number" or slot1 == "string" or slot1 == "boolean" then
@@ -81,22 +85,22 @@ if Application.isEditor then
 	end
 end
 
-function slot1.Queue(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot1.Queue = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	table.insert(slot0.toSends, {
 		slot1,
 		slot2,
 		slot3,
 		slot4 and function (slot0)
-			table.remove(uv0.toSends, 1)
+			table.remove(slot0.toSends, 1)
 
 			if Application.isEditor then
-				DebugMgr.Inst:PushProtoSent(uv1, uv2.serialize(uv3) or "", uv4)
+				slot1(slot2, slot3, slot2.serialize(DebugMgr.Inst.PushProtoSent) or "", )
 			end
 
-			uv5(slot0)
+			slot5(slot0)
 
 			if slot0 and slot0.result and slot0.result == 0 then
-				uv6.SeriesGuideMgr:GetInstance():receiceProtocol(uv4, uv3, slot0)
+				slot6.SeriesGuideMgr:GetInstance():receiceProtocol(slot4, , slot0)
 			end
 		end,
 		slot5,
@@ -110,7 +114,7 @@ function slot1.Queue(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	slot0:StartSend()
 end
 
-function slot1.StartSend(slot0)
+slot1.StartSend = function (slot0)
 	if #slot0.toSends > 0 then
 		slot0:Send(unpack(slot0.toSends[1]))
 	else
@@ -118,7 +122,7 @@ function slot1.StartSend(slot0)
 	end
 end
 
-function slot1.Send(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	slot0.isSending = true
 	slot0.currentCS = slot1
 
@@ -132,55 +136,58 @@ function slot1.Send(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 		slot0.connectionMgr.needStartSend = true
 
 		slot0.connectionMgr:Reconnect(function ()
+			return
 		end)
 
 		return
 	end
 
+	slot5 = defaultValue(slot5, true)
 	slot6 = defaultValue(slot6, true)
+	slot8 = slot0:getPacketIdx()
 
 	if slot3 ~= nil then
-		uv0.UIMgr.GetInstance():LoadingOn()
+		slot0.UIMgr.GetInstance():LoadingOn()
 
 		slot9 = nil
 
-		uv1[defaultValue(slot5, true) and slot3 .. "_" .. slot0:getPacketIdx() or slot3] = function (slot0)
-			uv0.isSending = false
+		slot1[(slot5 and slot3 .. "_" .. slot8) or slot3] = function (slot0)
+			slot0.isSending = false
 
-			uv1.UIMgr.GetInstance():LoadingOff()
-			uv0.connectionMgr:resetHBTimer()
+			slot0.UIMgr.GetInstance():LoadingOff()
+			slot0.connectionMgr:resetHBTimer()
 
-			if uv0.timer then
-				uv0.timer:Stop()
+			if slot0.timer then
+				slot0.timer:Stop()
 
-				uv0.timer = nil
+				slot0.timer = nil
 			end
 
-			uv2(slot0)
+			slot2(slot0)
 
-			if uv3 and not uv0.isSending and #uv0.toSends > 0 then
-				uv0:StartSend()
+			if slot3 and not slot0.isSending and #slot0.toSends > 0 then
+				slot0:StartSend()
 			end
 		end
 
 		slot0.timer = Timer.New(function ()
-			uv0.UIMgr.GetInstance():LoadingOff()
+			slot0.UIMgr.GetInstance():LoadingOff()
 
-			uv1[uv2] = nil
+			slot0.UIMgr.GetInstance()[slot2] = nil
 
-			uv3:setPacketIdx(uv4)
+			slot3:setPacketIdx(slot4)
 
-			if uv3.retryCount > 3 then
-				uv3.connectionMgr.onDisconnected(false, DISCONNECT_TIME_OUT)
+			if slot3.retryCount > 3 then
+				slot3.connectionMgr.onDisconnected(false, DISCONNECT_TIME_OUT)
 
-				uv3.retryCount = 0
+				slot3.retryCount = 0
 			end
 
-			warning("Network is timedOut, resend: " .. uv4 .. ", protocal: " .. uv5)
+			warning("Network is timedOut, resend: " .. slot4 .. ", protocal: " .. slot5)
 
-			uv3.retryCount = uv3.retryCount + 1
+			slot3.retryCount = slot3.retryCount + 1
 
-			uv3:StartSend()
+			slot3:StartSend()
 		end, SEND_TIMEOUT, 1)
 
 		slot0.timer:Start()
@@ -188,12 +195,14 @@ function slot1.Send(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 		slot5 = false
 	end
 
+
+	-- Decompilation error in this vicinity:
 	function (slot0, slot1)
 		for slot5, slot6 in pairs(slot1) do
 			if type(slot6) == "table" then
 				for slot10, slot11 in ipairs(slot6) do
 					if slot0[slot5].add then
-						uv0(slot0[slot5]:add(), slot11)
+						slot0(slot0[slot5]:add(), slot11)
 					else
 						slot0[slot5]:append(slot11)
 					end
@@ -202,14 +211,14 @@ function slot1.Send(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 				slot0[slot5] = slot6
 			end
 		end
-	end(uv0.Packer.GetInstance():GetProtocolWithName("cs_" .. slot1).GetMessage(slot9), slot2)
+	end(slot0.Packer.GetInstance():GetProtocolWithName("cs_" .. slot1).GetMessage(slot9), slot2)
 
 	if slot5 then
-		slot7:Send(uv0.Packer.GetInstance():Pack(slot8, slot9:GetId(), slot11))
+		slot7:Send(slot0.Packer.GetInstance():Pack(slot8, slot9:GetId(), slot11))
 		print("Network sent protocol: " .. slot1 .. " with idx: " .. slot8)
 		slot0:incPacketIdx()
 	else
-		slot7:Send(uv0.Packer.GetInstance():Pack(0, slot9:GetId(), slot11))
+		slot7:Send(slot0.Packer.GetInstance():Pack(0, slot9:GetId(), slot11))
 		print("Network sent protocol: " .. slot1 .. " without idx")
 	end
 
@@ -217,7 +226,7 @@ function slot1.Send(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 		table.remove(slot0.toSends, 1)
 
 		if Application.isEditor then
-			DebugMgr.Inst:PushProtoSent(slot1, uv2.serialize(slot2) or "", 0)
+			DebugMgr.Inst:PushProtoSent(slot1, slot2:serialize() or "", 0)
 		end
 
 		if #slot0.toSends > 0 then
@@ -228,7 +237,7 @@ function slot1.Send(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	end
 end
 
-function slot1.stopTimer(slot0)
+slot1.stopTimer = function (slot0)
 	if slot0.timer then
 		slot0.timer:Stop()
 
@@ -236,29 +245,32 @@ function slot1.stopTimer(slot0)
 	end
 end
 
-function slot1.onData(slot0)
+slot1.onData = function (slot0)
 	print("Network Receive idx: " .. slot0.idx .. " cmd: " .. slot0.cmd)
 
-	if uv1[slot0.cmd .. "_" .. slot0.idx] then
-		uv1[slot2](uv0.Packer.GetInstance():Unpack(slot0.cmd, slot0:getLuaStringBuffer()))
+	if slot1[slot0.cmd .. "_" .. slot0.idx] then
+		slot1[slot2](slot1)
 
-		uv1[slot2] = nil
-	elseif uv1[slot0.cmd] then
-		uv1[slot0.cmd](slot1)
+		slot1[slot2] = nil
+	elseif slot1[slot0.cmd] then
+		slot1[slot0.cmd](slot1)
 
-		uv1[slot0.cmd] = nil
+		slot1[slot0.cmd] = nil
 	end
 end
 
 if Application.isEditor then
-	function slot1.onRequestResend(slot0)
-		if uv0.unserialize(slot0.sndState) then
+	slot1.onRequestResend = function (slot0)
+		if slot0.unserialize(slot0.sndState) then
 			if slot0.scProNr > 0 then
-				uv1.ConnectionMgr.GetInstance():Send(slot0.csProNr, slot1, slot0.scProNr, function (slot0)
+				slot1.ConnectionMgr.GetInstance():Send(slot0.csProNr, slot1, slot0.scProNr, function (slot0)
+					return
 				end)
 			else
-				uv1.ConnectionMgr.GetInstance():Send(slot0.csProNr, slot1)
+				slot1.ConnectionMgr.GetInstance():Send(slot0.csProNr, slot1)
 			end
 		end
 	end
 end
+
+return

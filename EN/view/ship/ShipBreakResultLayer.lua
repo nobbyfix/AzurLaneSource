@@ -1,10 +1,10 @@
 slot0 = class("ShipBreakResultLayer", import("..base.BaseUI"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "ShipBreakResultUI"
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0.frame = slot0:findTF("frame")
 	slot0.attrPanel = slot0:findTF("right_panel/top/attrs")
 	slot0.rarePanel = slot0:findTF("right_panel/top/rare")
@@ -21,9 +21,9 @@ function slot0.init(slot0)
 	slot0._paintingShadowTF = slot0:findTF("shadow")
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	onButton(slot0, slot0._tf, function ()
-		uv0:emit(uv1.ON_CLOSE)
+		slot0:emit(slot1.ON_CLOSE)
 	end, SFX_CANCEL)
 end
 
@@ -35,16 +35,22 @@ slot1 = {
 	"air"
 }
 
-function slot0.updateStatistics(slot0)
-	for slot9, slot10 in ipairs(uv0) do
-		slot11 = slot0.attrPanel:GetChild(slot9 - 1)
+slot0.updateStatistics = function (slot0)
+	slot3 = intProperties(slot0.contextData.newShip.getShipProperties(slot1))
+	slot4 = intProperties(slot0.contextData.oldShip.getShipProperties(slot2))
+	slot5 = slot0.attrPanel
+
+	for slot9, slot10 in ipairs(slot0) do
+		slot11 = slot5:GetChild(slot9 - 1)
 
 		setText(slot11:Find("name"), AttributeType.Type2Name(slot10))
-		setText(slot11:Find("value"), intProperties(slot0.contextData.oldShip.getShipProperties(slot2))[slot10])
-		setText(slot11:Find("value1"), intProperties(slot0.contextData.newShip.getShipProperties(slot1))[slot10])
+		setText(slot11:Find("value"), slot4[slot10])
+		setText(slot11:Find("value1"), slot3[slot10])
 
-		if intProperties(slot0.contextData.newShip.getShipProperties(slot1))[slot10] - intProperties(slot0.contextData.oldShip.getShipProperties(slot2))[slot10] == 0 then
-			setActive(slot11:Find("addition"), false)
+		slot12 = slot11:Find("addition")
+
+		if slot3[slot10] - slot4[slot10] == 0 then
+			setActive(slot12, false)
 		else
 			setText(slot12, "+" .. slot13)
 		end
@@ -56,17 +62,20 @@ function slot0.updateStatistics(slot0)
 	setText(slot6:Find("value"), slot7)
 	setText(slot6:Find("value1"), slot8)
 
+	slot9 = slot6:Find("addition")
+
 	if math.abs(slot1:getBattleTotalExpend() - slot2:getBattleTotalExpend()) == 0 then
-		setActive(slot6:Find("addition"), false)
+		setActive(slot9, false)
 	else
 		setText(slot9, "+" .. slot10)
 	end
 
 	slot11 = slot1:getStar()
+	slot13 = slot0.rarePanel:Find("stars_from")
 	slot14 = slot0.rarePanel:Find("stars_to")
 
 	for slot18 = 1, slot2:getStar(), 1 do
-		setActive(slot0.rarePanel:Find("stars_from"):GetChild(slot18 - 1), true)
+		setActive(slot13:GetChild(slot18 - 1), true)
 	end
 
 	for slot18 = 1, slot11, 1 do
@@ -75,37 +84,37 @@ function slot0.updateStatistics(slot0)
 
 	setPaintingPrefabAsync(slot0.paintContain, slot1:getPainting(), "chuanwu")
 	setPaintingPrefabAsync(slot0._paintingShadowTF, slot1:getPainting(), "chuanwu", function ()
-		findTF(uv0._paintingShadowTF, "fitter"):GetChild(0):GetComponent("Image").color = Color.New(0, 0, 0)
+		findTF(slot0._paintingShadowTF, "fitter"):GetChild(0):GetComponent("Image").color = Color.New(0, 0, 0)
 	end)
 	pg.UIMgr:GetInstance():LoadingOn()
 	PoolMgr.GetInstance():GetSpineChar(slot15, true, function (slot0)
 		pg.UIMgr:GetInstance():LoadingOff()
 
-		uv0.shipPrefab = uv1
-		uv0.shipModel = slot0
+		slot0.shipPrefab = slot0
+		slot0.shipModel = slot0
 		tf(slot0).localScale = Vector3(1, 1, 1)
 
 		slot0:GetComponent("SpineAnimUI"):SetAction("stand", 0)
-		setParent(slot0, uv0.qCharaContain)
+		setParent(slot0, slot0.qCharaContain)
 	end)
 	GetSpriteFromAtlasAsync("newshipbg/bg_" .. slot1:rarity2bgPrintForGet(), "", function (slot0)
-		setImageSprite(uv0._tf, slot0, false)
+		setImageSprite(slot0._tf, slot0, false)
 	end)
 
-	slot20, slot17 = Ship.getWords(slot1.skinId, "upgrade", nil, nil, slot1:getIntimacy() / 100 + (slot1.propose and 1000 or 0))
+	slot20, slot17 = Ship.getWords(slot1.skinId, "upgrade", nil, nil, slot1:getIntimacy() / 100 + ((slot1.propose and 1000) or 0))
 
 	setWidgetTextEN(slot0._chat, Ship.getWords)
 
-	"upgrade".alignment = CHAT_POP_STR_LEN < #slot0:findTF("Text", slot0._chat):GetComponent(typeof(Text)).text and TextAnchor.MiddleLeft or TextAnchor.MiddleCenter
+	"upgrade".alignment = (CHAT_POP_STR_LEN < #slot0:findTF("Text", slot0._chat):GetComponent(typeof(Text)).text and TextAnchor.MiddleLeft) or TextAnchor.MiddleCenter
 	slot0._chat.transform.localScale = Vector3(0, 0, 1)
 	slot0.delayTId = LeanTween.delayedCall(0.6, System.Action(function ()
-		SetActive(uv0._chat, true)
-		LeanTween.scale(rtf(uv0._chat), Vector3.New(1, 1, 1), 0.3):setEase(LeanTweenType.easeOutBack)
-		uv0:voice(uv1)
+		SetActive(slot0._chat, true)
+		LeanTween.scale(rtf(slot0._chat), Vector3.New(1, 1, 1), 0.3):setEase(LeanTweenType.easeOutBack)
+		LeanTween.scale(rtf(slot0._chat), Vector3.New(1, 1, 1), 0.3).setEase:voice(LeanTween.scale(rtf(slot0._chat), Vector3.New(1, 1, 1), 0.3).setEase)
 	end)).id
 
 	GetSpriteFromAtlasAsync("newshipbg/bg_" .. slot1.rarity2bgPrintForGet(slot20), "", function (slot0)
-		setImageSprite(uv0._bg, slot0)
+		setImageSprite(slot0._bg, slot0)
 	end)
 
 	if slot1.isBluePrintShip(slot20) then
@@ -117,10 +126,10 @@ function slot0.updateStatistics(slot0)
 
 		if not slot0.designBg then
 			PoolMgr.GetInstance():GetUI("raritydesign" .. slot20:getRarity(), true, function (slot0)
-				uv0.designBg = slot0
-				uv0.designName = "raritydesign" .. uv1:getRarity()
+				slot0.designBg = slot0
+				slot0.designName = "raritydesign" .. slot1:getRarity()
 
-				slot0.transform:SetParent(uv0._shake, false)
+				slot0.transform:SetParent(slot0._shake, false)
 
 				slot0.transform.localPosition = Vector3(1, 1, 1)
 				slot0.transform.localScale = Vector3(1, 1, 1)
@@ -136,7 +145,7 @@ function slot0.updateStatistics(slot0)
 	end
 
 	PoolMgr.GetInstance():GetUI("tupo_" .. slot20:getRarity(), true, function (slot0)
-		slot0.transform:SetParent(uv0._tf, false)
+		slot0.transform:SetParent(slot0._tf, false)
 
 		slot0.transform.localPosition = Vector3(1, 1, 1)
 		slot0.transform.localScale = Vector3(1, 1, 1)
@@ -145,7 +154,7 @@ function slot0.updateStatistics(slot0)
 		setActive(slot0, true)
 	end)
 	PoolMgr.GetInstance():GetUI("tupo", true, function (slot0)
-		slot0.transform:SetParent(uv0._tf, false)
+		slot0.transform:SetParent(slot0._tf, false)
 
 		slot0.transform.localPosition = Vector3(1, 1, 1)
 		slot0.transform.localScale = Vector3(1, 1, 1)
@@ -155,37 +164,41 @@ function slot0.updateStatistics(slot0)
 	end)
 end
 
-function slot0.voice(slot0, slot1)
+slot0.voice = function (slot0, slot1)
 	if not slot1 then
 		return
 	end
 
-	if slot0.loadedCVBankName then
-		function ()
-			if uv0._currentVoice then
-				uv0._currentVoice:Stop(true)
-			end
+	function slot2()
+		if slot0._currentVoice then
+			slot0._currentVoice:Stop(true)
+		end
 
-			uv0._currentVoice = playSoundEffect(uv1)
-		end()
+		slot0._currentVoice = playSoundEffect(playSoundEffect)
+	end
+
+	if slot0.loadedCVBankName then
+		slot2()
 	else
 		pg.CriMgr:LoadCV(Ship.getCVKeyID(slot0.contextData.newShip.skinId), function ()
-			if uv1.exited then
-				pg.CriMgr.UnloadCVBank(pg.CriMgr.GetCVBankName(uv0))
-			else
-				uv1.loadedCVBankName = slot0
+			slot0 = pg.CriMgr.GetCVBankName(pg.CriMgr.GetCVBankName)
 
-				uv2()
+			if pg.CriMgr.GetCVBankName.exited then
+				pg.CriMgr.UnloadCVBank(slot0)
+			else
+				slot1.loadedCVBankName = slot0
+
+				slot2()
 			end
 
-			uv1.loadedCVBankName = slot0
+			slot1.loadedCVBankName = slot0
 
-			uv2()
+			slot2()
 		end)
 	end
 end
 
-function slot0.recycleSpineChar(slot0)
+slot0.recycleSpineChar = function (slot0)
 	if slot0.shipPrefab and slot0.shipModel then
 		PoolMgr.GetInstance():ReturnSpineChar(slot0.shipPrefab, slot0.shipModel)
 
@@ -194,7 +207,7 @@ function slot0.recycleSpineChar(slot0)
 	end
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	if slot0.delayTId then
 		LeanTween.cancel(slot0.delayTId)
 	end

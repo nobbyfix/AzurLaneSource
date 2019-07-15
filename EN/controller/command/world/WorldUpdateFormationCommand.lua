@@ -14,35 +14,35 @@ class("WorldUpdateFormationCommand", pm.SimpleCommand).execute = function (slot0
 		end)
 	}, 33406, function (slot0)
 		if slot0.result == 0 then
-			_.each(uv0.list, function (slot0)
-				slot1 = uv0:GetFleet(slot0.fleetId)
+			_.each(slot0.list, function (slot0)
+				slot1 = slot0:GetFleet(slot0.fleetId)
 				slot5 = {}
 
 				_.each(slot2, function (slot0)
-					uv0[slot0.id] = true
+					slot0[slot0.id] = true
 				end)
 				_.each(slot1:GetShips(true), function (slot0)
-					if not uv0[slot0.id] then
-						uv1:AddShip(slot0)
+					if not slot0[slot0.id] then
+						slot1:AddShip(slot0)
 					end
 				end)
-				_.each(uv0:GetPort().GetShips(slot3), function (slot0)
-					if uv0[slot0.id] then
-						uv0[slot0.id] = uv1:RemoveShip(slot0.id)
+				_.each(slot0:GetPort().GetShips(slot3), function (slot0)
+					if slot0[slot0.id] then
+						slot0[slot0.id] = slot1:RemoveShip(slot0.id)
 					end
 				end)
 				_.each(slot4, function (slot0)
-					if slot0.id ~= uv0.id then
+					if slot0.id ~= slot0.id then
 						_.each(slot0:GetShips(true), function (slot0)
-							if uv0[slot0.id] then
-								uv0[slot0.id] = uv1:RemoveShip(slot0.id)
+							if slot0[slot0.id] then
+								slot0[slot0.id] = slot1:RemoveShip(slot0.id)
 							end
 						end)
 					end
 				end)
 				slot1:UpdateShips(slot2)
-				uv1:VerifyFormation()
-				uv1:AddLog(WorldLog.TypeEditFleet, {
+				slot1:VerifyFormation()
+				slot1:AddLog(WorldLog.TypeEditFleet, {
 					fleet = slot1.id
 				})
 			end)
@@ -50,8 +50,8 @@ class("WorldUpdateFormationCommand", pm.SimpleCommand).execute = function (slot0
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("world_update_formation_err", slot0.result))
 		end
 
-		if uv0.callback then
-			uv0.callback()
+		if slot0.callback then
+			slot0.callback()
 		end
 	end)
 end

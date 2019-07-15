@@ -1,10 +1,10 @@
 FrameListener = class("FrameListener")
 
-function FrameListener.Ctor(slot0)
+FrameListener.Ctor = function (slot0)
 	slot0.jobs = {}
 end
 
-function FrameListener.UnShift(slot0, ...)
+FrameListener.UnShift = function (slot0, ...)
 	for slot5 = #{
 		...
 	}, 1, -1 do
@@ -14,7 +14,7 @@ function FrameListener.UnShift(slot0, ...)
 	slot0:TryStart()
 end
 
-function FrameListener.Push(slot0, ...)
+FrameListener.Push = function (slot0, ...)
 	for slot5 = 1, #{
 		...
 	}, 1 do
@@ -24,7 +24,7 @@ function FrameListener.Push(slot0, ...)
 	slot0:TryStart()
 end
 
-function FrameListener.Remove(slot0, slot1)
+FrameListener.Remove = function (slot0, slot1)
 	for slot5, slot6 in ipairs(slot0.jobs) do
 		if slot6 == slot1 then
 			table.remove(slot0.jobs, slot5)
@@ -35,7 +35,7 @@ function FrameListener.Remove(slot0, slot1)
 	end
 end
 
-function FrameListener.TryStart(slot0)
+FrameListener.TryStart = function (slot0)
 	if not slot0.running and #slot0.jobs > 0 then
 		slot0.running = true
 
@@ -43,7 +43,7 @@ function FrameListener.TryStart(slot0)
 	end
 end
 
-function FrameListener.TryStop(slot0)
+FrameListener.TryStop = function (slot0)
 	if slot0.running and #slot0.jobs == 0 then
 		UpdateBeat:Remove(slot0.Update, slot0)
 
@@ -51,10 +51,12 @@ function FrameListener.TryStop(slot0)
 	end
 end
 
-function FrameListener.Update(slot0)
+FrameListener.Update = function (slot0)
 	if #slot0.jobs == 0 then
 		slot0:TryStop()
 	else
+
+		-- Decompilation error in this vicinity:
 		table.remove(slot0.jobs, 1)()
 	end
 end

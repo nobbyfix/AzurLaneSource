@@ -6,12 +6,13 @@ class("OpenAttachmentCommand", pm.SimpleCommand).execute = function (slot0, slot
 		return slot0.type == DROP_TYPE_ITEM and table.contains(ITEM_ID_FUDAIS, slot0.id)
 	end)
 	slot9 = getProxy(BayProxy)
+	slot10 = {}
 
 	if _.any(slot1.getBody().items or , function (slot0)
 		return slot0.type == DROP_TYPE_SHIP
 	end) then
-		table.insert({}, function (slot0)
-			uv0:sendNotification(GAME.OPEN_MAIL_ATTACHMENT_DONE, {
+		table.insert(slot10, function (slot0)
+			slot0:sendNotification(GAME.OPEN_MAIL_ATTACHMENT_DONE, {
 				type = DROP_TYPE_SHIP,
 				callback = slot0
 			})
@@ -23,18 +24,18 @@ class("OpenAttachmentCommand", pm.SimpleCommand).execute = function (slot0, slot
 			for slot19 = 1, slot15.number, 1 do
 				table.insert(slot10, function (slot0)
 					onNextTick(function ()
-						uv0:sendNotification(GAME.USE_FUDAI_ITEM, {
+						slot0:sendNotification(GAME.USE_FUDAI_ITEM, {
 							count = 1,
-							id = uv1.id,
+							id = slot1.id,
 							callback = function (slot0)
 								if slot0 and #slot0 > 0 then
-									uv0:sendNotification(GAME.OPEN_MAIL_ATTACHMENT_DONE, {
+									slot0:sendNotification(GAME.OPEN_MAIL_ATTACHMENT_DONE, {
 										type = DROP_TYPE_ITEM,
 										items = slot0,
-										callback = uv1
+										callback = slot0.sendNotification
 									})
 								else
-									uv1()
+									slot1()
 								end
 							end
 						})

@@ -4,26 +4,26 @@ slot2 = pg.effect_offset
 ys.Battle.BattleShelterData = class("BattleShelterData")
 ys.Battle.BattleShelterData.__name = "BattleShelterData"
 
-function ys.Battle.BattleShelterData.Ctor(slot0, slot1)
+ys.Battle.BattleShelterData.Ctor = function (slot0, slot1)
 	slot0._id = slot1
 end
 
-function ys.Battle.BattleShelterData.SetIFF(slot0, slot1)
+ys.Battle.BattleShelterData.SetIFF = function (slot0, slot1)
 	slot0._IFF = slot1
 end
 
-function ys.Battle.BattleShelterData.SetArgs(slot0, slot1, slot2, slot3, slot4, slot5)
+ys.Battle.BattleShelterData.SetArgs = function (slot0, slot1, slot2, slot3, slot4, slot5)
 	slot0._duration = slot2
-	slot0._bulletType = uv0.Battle.BattleConst.BulletType.CANNON
+	slot0._bulletType = slot0.Battle.BattleConst.BulletType.CANNON
 	slot0._count = slot1
 	slot0._effect = slot5
 	slot0._doWhenHit = "intercept"
-	slot0._wall = uv0.Battle.BattleDataProxy:GetInstance():SpawnWall(slot0, function (slot0)
-		if slot0:GetType() == uv0._bulletType and uv0:IsWallActive() then
-			uv0:DoWhenHit(slot0)
+	slot0._wall = slot0.Battle.BattleDataProxy:GetInstance():SpawnWall(slot0, function (slot0)
+		if slot0:GetType() == slot0._bulletType and slot0:IsWallActive() then
+			slot0:DoWhenHit(slot0)
 		end
 
-		return uv0._count > 0
+		return slot0._count > 0
 	end, slot3, {
 		0,
 		0,
@@ -32,20 +32,20 @@ function ys.Battle.BattleShelterData.SetArgs(slot0, slot1, slot2, slot3, slot4, 
 	slot0._centerPos = slot4
 end
 
-function ys.Battle.BattleShelterData.SetStartTimeStamp(slot0, slot1)
+ys.Battle.BattleShelterData.SetStartTimeStamp = function (slot0, slot1)
 	slot0._startTimeStamp = slot1
 end
 
-function ys.Battle.BattleShelterData.Update(slot0, slot1)
+ys.Battle.BattleShelterData.Update = function (slot0, slot1)
 	if slot0._duration < slot1 - slot0._startTimeStamp then
 		slot0._startTimeStamp = nil
 	end
 end
 
-function ys.Battle.BattleShelterData.DoWhenHit(slot0, slot1)
+ys.Battle.BattleShelterData.DoWhenHit = function (slot0, slot1)
 	if slot0._doWhenHit == "intercept" then
 		slot1:Intercepted()
-		uv0.Battle.BattleDataProxy:GetInstance():RemoveBulletUnit(slot1:GetUniqueID())
+		slot0.Battle.BattleDataProxy:GetInstance():RemoveBulletUnit(slot1:GetUniqueID())
 
 		slot0._count = slot0._count - 1
 	elseif slot0._doWhenHit == "reflect" and slot0:GetIFF() ~= slot1:GetIFF() then
@@ -55,26 +55,28 @@ function ys.Battle.BattleShelterData.DoWhenHit(slot0, slot1)
 	end
 end
 
-function ys.Battle.BattleShelterData.GetUniqueID(slot0)
+ys.Battle.BattleShelterData.GetUniqueID = function (slot0)
 	return slot0._id
 end
 
-function ys.Battle.BattleShelterData.GetIFF(slot0)
+ys.Battle.BattleShelterData.GetIFF = function (slot0)
 	return slot0._IFF
 end
 
-function ys.Battle.BattleShelterData.GetFXID(slot0)
+ys.Battle.BattleShelterData.GetFXID = function (slot0)
 	return slot0._effect
 end
 
-function ys.Battle.BattleShelterData.GetPosition(slot0)
+ys.Battle.BattleShelterData.GetPosition = function (slot0)
 	return slot0._centerPos
 end
 
-function ys.Battle.BattleShelterData.Deactive(slot0)
-	uv0.Battle.BattleDataProxy:GetInstance():RemoveWall(slot0._wall:GetUniqueID())
+ys.Battle.BattleShelterData.Deactive = function (slot0)
+	slot0.Battle.BattleDataProxy:GetInstance():RemoveWall(slot0._wall:GetUniqueID())
 end
 
-function ys.Battle.BattleShelterData.IsWallActive(slot0)
+ys.Battle.BattleShelterData.IsWallActive = function (slot0)
 	return slot0._count > 0 and slot0._startTimeStamp
 end
+
+return

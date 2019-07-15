@@ -1,30 +1,29 @@
 pg = pg or {}
 pg.Tool = class("Tool")
 
-function pg.Tool.Seq(slot0)
-	slot1 = {
-		[slot5] = slot5
-	}
+pg.Tool.Seq = function (slot0)
+	slot1 = {}
 
 	for slot5 = 1, slot0, 1 do
+		slot1[slot5] = slot5
 	end
 
 	return slot1
 end
 
-function pg.Tool.Swap(slot0, slot1, slot2)
+pg.Tool.Swap = function (slot0, slot1, slot2)
 	slot0[slot1] = slot0[slot2]
 	slot0[slot2] = slot0[slot1]
 end
 
-function pg.Tool.RandomMN(slot0, slot1)
+pg.Tool.RandomMN = function (slot0, slot1)
 	slot2 = {}
-	slot4 = #uv0.Tool.Seq(slot0)
+	slot4 = #slot0.Tool.Seq(slot0)
 
 	for slot8 = 1, slot1, 1 do
-		slot2[slot8] = slot3[math.random(#uv0.Tool.Seq(slot0))]
+		slot2[slot8] = slot3[math.random(slot4)]
 
-		uv0.Tool.Swap(slot3, math.random(#uv0.Tool.Seq(slot0)), slot4)
+		slot0.Tool.Swap(slot3, math.random(slot4), slot4)
 
 		slot4 = slot4 - 1
 	end
@@ -32,15 +31,15 @@ function pg.Tool.RandomMN(slot0, slot1)
 	return slot2
 end
 
-function pg.Tool.FilterY(slot0)
+pg.Tool.FilterY = function (slot0)
 	return Vector3(slot0.x, 0, slot0.z)
 end
 
-function pg.Tool.FilterZ(slot0)
+pg.Tool.FilterZ = function (slot0)
 	return Vector3(slot0.x, slot0.y, 0)
 end
 
-function pg.Tool.GetShortName(slot0, slot1, slot2)
+pg.Tool.GetShortName = function (slot0, slot1, slot2)
 	if slot0 == nil or slot1 == nil then
 		return
 	end
@@ -70,8 +69,8 @@ function pg.Tool.GetShortName(slot0, slot1, slot2)
 		slot14 = nil
 
 		if slot13 > 0 then
-			slot14 = string.sub(slot3, slot11, slot11 + slot13 - 1)
-			slot11 = slot11 + slot13 - 1
+			slot14 = string.sub(slot3, slot11, (slot11 + slot13) - 1)
+			slot11 = (slot11 + slot13) - 1
 		end
 
 		if slot13 == 1 then
@@ -105,6 +104,8 @@ function pg.Tool.GetShortName(slot0, slot1, slot2)
 	return slot0
 end
 
-function pg.Tool.Distances(slot0, slot1, slot2, slot3)
+pg.Tool.Distances = function (slot0, slot1, slot2, slot3)
 	return 2 * math.asin(math.sqrt(math.pow(math.sin((slot0 / 180 * math.pi - slot2 / 180 * math.pi) / 2), 2) + math.cos(slot4) * math.cos(slot5) * math.pow(math.sin((slot1 / 180 * math.pi - slot3 / 180 * math.pi) / 2), 2))) * 6378.137
 end
+
+return

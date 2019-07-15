@@ -5,7 +5,7 @@ slot0.ON_CANCEL = "NavalTacticsMediator:ON_CANCEL"
 slot0.ON_SHOPPING = "NavalTacticsMediator:ON_SHOPPING"
 slot1 = 10
 
-function slot0.register(slot0)
+slot0.register = function (slot0)
 	slot0.viewComponent:setShips(slot2)
 
 	slot0.bagProxy = getProxy(BagProxy)
@@ -24,19 +24,20 @@ function slot0.register(slot0)
 	end
 
 	slot0.viewComponent:setStudents(slot4)
-	slot0:bind(uv1.OPEN_DOCKYARD, function (slot0, slot1, slot2, slot3)
-		uv0.contextData.students = slot2
+	slot0:bind(slot1.OPEN_DOCKYARD, function (slot0, slot1, slot2, slot3)
+		slot0.contextData.students = slot2
+		slot4 = {}
 
-		for slot8, slot9 in pairs(uv1:getStudents()) do
-			table.insert({}, slot9.shipId)
+		for slot8, slot9 in pairs(slot1:getStudents()) do
+			table.insert(slot4, slot9.shipId)
 		end
 
 		PoolMgr.GetInstance():AddTempCache("DockyardUI", "NavalAcademyUI")
-		uv0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
 			selectedMax = 1,
 			ignoredIds = slot4,
 			activeShipId = activeShipId,
-			prevPage = uv0.__cname,
+			prevPage = slot0.__cname,
 			flags = {
 				inExercise = true,
 				inChapter = false,
@@ -61,32 +62,32 @@ function slot0.register(slot0)
 				return true
 			end,
 			onSelected = function (slot0)
-				if uv0 and slot0[1] then
-					for slot4, slot5 in pairs(uv1) do
-						if uv0 == slot5 then
-							uv2.contextData.students[slot4] = nil
+				if slot0 and slot0[1] then
+					for slot4, slot5 in pairs(pairs) do
+						if slot0 == slot5 then
+							slot2.contextData.students[slot4] = nil
 						end
 					end
 				end
 
-				uv2.contextData.shipToLesson = {
+				slot2.contextData.shipToLesson = {
 					shipId = slot0[1],
-					index = uv3
+					index = slot0[1]
 				}
 			end
 		})
 	end)
-	slot0:bind(uv1.ON_START, function (slot0, slot1)
-		uv0:sendNotification(GAME.START_TO_LEARN_TACTICS, slot1)
+	slot0:bind(slot1.ON_START, function (slot0, slot1)
+		slot0:sendNotification(GAME.START_TO_LEARN_TACTICS, slot1)
 	end)
-	slot0:bind(uv1.ON_CANCEL, function (slot0, slot1, slot2)
-		uv0:sendNotification(GAME.CANCEL_LEARN_TACTICS, {
+	slot0:bind(slot1.ON_CANCEL, function (slot0, slot1, slot2)
+		slot0:sendNotification(GAME.CANCEL_LEARN_TACTICS, {
 			shipId = slot1,
 			type = slot2
 		})
 	end)
-	slot0:bind(uv1.ON_SHOPPING, function (slot0, slot1)
-		uv0:sendNotification(GAME.SHOPPING, {
+	slot0:bind(slot1.ON_SHOPPING, function (slot0, slot1)
+		slot0:sendNotification(GAME.SHOPPING, {
 			count = 1,
 			id = slot1
 		})
@@ -102,7 +103,7 @@ function slot0.register(slot0)
 	slot0.viewComponent:setPlayer(getProxy(PlayerProxy):getData())
 end
 
-function slot0.listNotificationInterests(slot0)
+slot0.listNotificationInterests = function (slot0)
 	return {
 		NavalAcademyProxy.START_LEARN_TACTICS,
 		GAME.CANCEL_LEARN_TACTICS_DONE,
@@ -111,14 +112,16 @@ function slot0.listNotificationInterests(slot0)
 	}
 end
 
-function slot0.handleNotification(slot0, slot1)
+slot0.handleNotification = function (slot0, slot1)
+	slot3 = slot1:getBody()
+
 	if slot1:getName() == NavalAcademyProxy.START_LEARN_TACTICS then
-		slot0.viewComponent:updateStudentVO(slot1:getBody())
+		slot0.viewComponent:updateStudentVO(slot3)
 	elseif slot2 == GAME.CANCEL_LEARN_TACTICS_DONE then
 		slot0.viewComponent:updateShipVO(slot3.newShipVO)
 		slot0.viewComponent:addDeleteStudentQueue(slot3.id, slot3.totalExp, slot3.oldSkill, slot3.newSkill)
 	elseif slot2 == BagProxy.ITEM_UPDATED then
-		slot0.viewComponent:setItemVOs(slot0.bagProxy:getItemsByType(uv0))
+		slot0.viewComponent:setItemVOs(slot0.bagProxy:getItemsByType(slot0))
 	elseif slot2 == NavalAcademyProxy.SKILL_CLASS_POS_UPDATED then
 		slot0.viewComponent:setSKillClassNum(slot3)
 		slot0.viewComponent:updateLockStudentPos(slot3, true)

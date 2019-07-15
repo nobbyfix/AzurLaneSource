@@ -4,7 +4,7 @@ class("GetSummaryInfoCommand", pm.SimpleCommand).execute = function (slot0, slot
 	}, 26022, function (slot0)
 		if slot0.result == 0 then
 			getProxy(PlayerProxy).setSummaryInfo(slot2, slot1)
-			uv0:sendNotification(GAME.GET_PLAYER_SUMMARY_INFO_DONE, Clone(Summary.New(slot0)))
+			slot0:sendNotification(GAME.GET_PLAYER_SUMMARY_INFO_DONE, Clone(Summary.New(slot0)))
 		end
 	end)
 end

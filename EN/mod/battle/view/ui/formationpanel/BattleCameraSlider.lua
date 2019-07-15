@@ -5,13 +5,13 @@ slot2 = class("BattleCameraSlider")
 ys.Battle.BattleCameraSlider = slot2
 slot2.__name = "BattleCameraSlider"
 
-function slot2.Ctor(slot0, slot1)
+slot2.Ctor = function (slot0, slot1)
 	slot0._go = slot1
 
 	slot0:Init()
 end
 
-function slot2.Init(slot0)
+slot2.Init = function (slot0)
 	SetActive(slot0._go, true)
 
 	slot0._distY = 0
@@ -19,15 +19,15 @@ function slot2.Init(slot0)
 	slot0._dirY = 0
 	slot0._dirX = 0
 	slot0._isPress = false
-	slot0._screenHeight = uv0.Battle.BattleVariable._actualHeight
-	slot0._screenWidth = uv0.Battle.BattleVariable._actualWidth
+	slot0._screenHeight = slot0.Battle.BattleVariable._actualHeight
+	slot0._screenWidth = slot0.Battle.BattleVariable._actualWidth
 
 	slot0._go:GetComponent("StickController"):SetStickFunc(function (slot0, slot1)
-		uv0:updateStick(slot0, slot1)
+		slot0:updateStick(slot0, slot1)
 	end)
 end
 
-function slot2.updateStick(slot0, slot1, slot2)
+slot2.updateStick = function (slot0, slot1, slot2)
 	slot0._initX = false
 	slot0._initY = false
 
@@ -37,10 +37,12 @@ function slot2.updateStick(slot0, slot1, slot2)
 		slot0._isPress = false
 	else
 		slot0._isPress = true
+		slot3 = slot1.x
+		slot4 = slot1.y
 
 		if slot0._startX == nil then
-			slot0._startX = slot1.x
-			slot0._startY = slot1.y
+			slot0._startX = slot3
+			slot0._startY = slot4
 			slot0._initX = true
 			slot0._initY = true
 		else
@@ -71,14 +73,16 @@ function slot2.updateStick(slot0, slot1, slot2)
 	slot0._lastPosY = slot1.y
 end
 
-function slot2.GetDistance(slot0)
+slot2.GetDistance = function (slot0)
 	return slot0._distX, slot0._distY
 end
 
-function slot2.IsFirstPress(slot0)
+slot2.IsFirstPress = function (slot0)
 	return slot0._initX, slot0._initY
 end
 
-function slot2.IsPress(slot0)
+slot2.IsPress = function (slot0)
 	return slot0._isPress
 end
+
+return

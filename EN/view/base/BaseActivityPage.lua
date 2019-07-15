@@ -1,18 +1,18 @@
 slot0 = class("BaseActivityPage", import(".BaseSubView"))
 
-function slot0.SetShareData(slot0, slot1)
+slot0.SetShareData = function (slot0, slot1)
 	slot0.shareData = slot1
 end
 
-function slot0.SetUIName(slot0, slot1)
+slot0.SetUIName = function (slot0, slot1)
 	slot0._uiName = slot1
 end
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return slot0._uiName
 end
 
-function slot0.Flush(slot0, slot1)
+slot0.Flush = function (slot0, slot1)
 	slot2 = slot0.activity == nil
 	slot0.activity = slot1
 
@@ -29,27 +29,32 @@ function slot0.Flush(slot0, slot1)
 	slot0:OnUpdateFlush()
 end
 
-function slot0.ShowOrHide(slot0, slot1)
+slot0.ShowOrHide = function (slot0, slot1)
 	SetActive(slot0._go, slot1)
 end
 
-function slot0.GetBgImg(slot0)
+slot0.GetBgImg = function (slot0)
 	return slot0.activity:getConfig("bg")[1]
 end
 
-function slot0.OnInit(slot0)
+slot0.OnInit = function (slot0)
+	return
 end
 
-function slot0.OnDataSetting(slot0)
+slot0.OnDataSetting = function (slot0)
+	return
 end
 
-function slot0.OnFirstFlush(slot0)
+slot0.OnFirstFlush = function (slot0)
+	return
 end
 
-function slot0.OnUpdateFlush(slot0)
+slot0.OnUpdateFlush = function (slot0)
+	return
 end
 
-function slot0.OnDestroy(slot0)
+slot0.OnDestroy = function (slot0)
+	return
 end
 
 return slot0

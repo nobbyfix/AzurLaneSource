@@ -5,9 +5,9 @@ class("GetActivityShopCommand", pm.SimpleCommand).execute = function (slot0, slo
 
 	_.each(slot5, function (slot0)
 		if slot0 and not slot0:isEnd() then
-			uv0[slot0.id] = ActivityShop.New(slot0)
+			slot0[slot0.id] = ActivityShop.New(slot0)
 
-			uv1:addActivityShops(uv0)
+			slot1:addActivityShops(slot0)
 		end
 	end)
 	slot0:sendNotification(GAME.GET_ACTIVITY_SHOP_DONE)

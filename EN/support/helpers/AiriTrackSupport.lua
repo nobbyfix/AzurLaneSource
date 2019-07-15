@@ -93,3 +93,5 @@ function SendAiriJPTracking(slot0, slot1, slot2)
 		AiriSdkMgr.inst:UserEventUpload(slot3)
 	end
 end
+
+return

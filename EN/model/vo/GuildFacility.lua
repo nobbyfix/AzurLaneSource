@@ -3,31 +3,31 @@ slot0.MAX_OIL_ADDITION = 1
 slot0.MAX_GOLD_ADDITION = 2
 slot0.BUFF_ADDITION = 3
 
-function slot0.Ctor(slot0, slot1)
+slot0.Ctor = function (slot0, slot1)
 	slot0.id = slot1.id
 	slot0.configId = slot0.id
 	slot0.level = slot1.level
 end
 
-function slot0.bindConfigTable(slot0)
+slot0.bindConfigTable = function (slot0)
 	return pg.guild_facility_template
 end
 
-function slot0.isMaxLevel(slot0)
+slot0.isMaxLevel = function (slot0)
 	return slot0.level > 0 and #slot0:getConfig("levels") <= slot0.level
 end
 
-function slot0.getLevelCfg(slot0)
+slot0.getLevelCfg = function (slot0)
 	return slot0:getConfig("levels")[slot0.level]
 end
 
-function slot0.getNextLevelCfg(slot0)
+slot0.getNextLevelCfg = function (slot0)
 	if slot0.level + 1 <= #slot0:getConfig("levels") then
 		return slot1[slot2]
 	end
 end
 
-function slot0.canUpgrade(slot0, slot1, slot2)
+slot0.canUpgrade = function (slot0, slot1, slot2)
 	if slot0:isMaxLevel() then
 		return false, i18n("guid_facility_level_max")
 	elseif slot1 < slot0:getUpgradeConsume() then
@@ -39,19 +39,19 @@ function slot0.canUpgrade(slot0, slot1, slot2)
 	return true
 end
 
-function slot0.upgrade(slot0)
+slot0.upgrade = function (slot0)
 	if not slot0:isMaxLevel() then
 		slot0.level = slot0.level + 1
 	end
 end
 
-function slot0.getUpgradeConsume(slot0)
+slot0.getUpgradeConsume = function (slot0)
 	if slot0:getNextLevelCfg() then
 		return slot1[2]
 	end
 end
 
-function slot0.getAddition(slot0)
+slot0.getAddition = function (slot0)
 	if slot0.level == 0 then
 		return 0
 	end
@@ -59,18 +59,20 @@ function slot0.getAddition(slot0)
 	return slot0:getLevelCfg()[1]
 end
 
-function slot0.getAdditionDesc(slot0)
+slot0.getAdditionDesc = function (slot0)
 	if slot0:getAddition() == 0 then
 		return i18n("guild_facility_no_addition")
 	end
 
-	if slot0:getConfig("type") == uv0.MAX_OIL_ADDITION then
+	if slot0:getConfig("type") == slot0.MAX_OIL_ADDITION then
 		return i18n("guild_facility_oil_addition", slot1)
-	elseif slot2 == uv0.MAX_GOLD_ADDITION then
+	elseif slot2 == slot0.MAX_GOLD_ADDITION then
 		return i18n("guild_facility_gold_addition", slot1)
-	elseif slot2 == uv0.BUFF_ADDITION then
+	elseif slot2 == slot0.BUFF_ADDITION then
+		slot3 = ""
+
 		for slot7, slot8 in ipairs(slot0:getConfig("buffs")) do
-			slot3 = "" .. getSkillDesc(slot8, slot1)
+			slot3 = slot3 .. getSkillDesc(slot8, slot1)
 		end
 
 		return slot3

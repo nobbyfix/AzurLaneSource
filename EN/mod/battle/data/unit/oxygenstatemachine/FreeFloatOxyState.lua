@@ -3,37 +3,39 @@ slot1 = ys.Battle.BattleConst
 ys.Battle.FreeFloatOxyState = class("FreeFloatOxyState", ys.Battle.IOxyState)
 ys.Battle.FreeFloatOxyState.__name = "FreeFloatOxyState"
 
-function ys.Battle.FreeFloatOxyState.Ctor(slot0)
-	uv0.super.Ctor(slot0)
+ys.Battle.FreeFloatOxyState.Ctor = function (slot0)
+	slot0.super.Ctor(slot0)
 end
 
-function ys.Battle.FreeFloatOxyState.GetWeaponUseableList(slot0)
+ys.Battle.FreeFloatOxyState.GetWeaponUseableList = function (slot0)
 	return {
-		uv0.OXY_STATE.DIVE,
-		uv0.OXY_STATE.FLOAT
+		slot0.OXY_STATE.DIVE,
+		slot0.OXY_STATE.FLOAT
 	}
 end
 
-function ys.Battle.FreeFloatOxyState.GetDiveState(slot0)
-	return uv0.OXY_STATE.FLOAT
+ys.Battle.FreeFloatOxyState.GetDiveState = function (slot0)
+	return slot0.OXY_STATE.FLOAT
 end
 
-function ys.Battle.FreeFloatOxyState.GetBubbleFlag(slot0)
+ys.Battle.FreeFloatOxyState.GetBubbleFlag = function (slot0)
 	return false
 end
 
-function ys.Battle.FreeFloatOxyState.DoUpdateOxy(slot0, slot1)
+ys.Battle.FreeFloatOxyState.DoUpdateOxy = function (slot0, slot1)
 	slot1:OxyRecover()
 end
 
-function ys.Battle.FreeFloatOxyState.IsVisible(slot0)
+ys.Battle.FreeFloatOxyState.IsVisible = function (slot0)
 	return true
 end
 
-function ys.Battle.FreeFloatOxyState.GetBarVisible(slot0)
+ys.Battle.FreeFloatOxyState.GetBarVisible = function (slot0)
 	return true
 end
 
-function ys.Battle.FreeFloatOxyState.RunMode(slot0)
+ys.Battle.FreeFloatOxyState.RunMode = function (slot0)
 	return true
 end
+
+return

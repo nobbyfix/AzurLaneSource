@@ -2,21 +2,23 @@ ys = ys or {}
 ys.Battle.SpellState = class("SpellState", ys.Battle.IUnitState)
 ys.Battle.SpellState.__name = "SpellState"
 
-function ys.Battle.SpellState.Ctor(slot0)
-	uv0.super.Ctor()
+ys.Battle.SpellState.Ctor = function (slot0)
+	slot0.super.Ctor()
 end
 
-function ys.Battle.SpellState.AddIdleState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddIdleState = function (slot0, slot1, slot2)
 	slot1:OnIdleState()
 end
 
-function ys.Battle.SpellState.AddMoveState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddMoveState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.SpellState.AddMoveLeftState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddMoveLeftState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.SpellState.AddAttackState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddAttackState = function (slot0, slot1, slot2)
 	if slot1:GetTarget():GetSpeed().x >= 0 then
 		slot1:OnAttackState(slot2)
 	else
@@ -24,49 +26,60 @@ function ys.Battle.SpellState.AddAttackState(slot0, slot1, slot2)
 	end
 end
 
-function ys.Battle.SpellState.AddDeadState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddDeadState = function (slot0, slot1, slot2)
 	slot1:OnDeadState()
 end
 
-function ys.Battle.SpellState.AddSkillState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddSkillState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.SpellState.AddSpellState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddSpellState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.SpellState.AddVictoryState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddVictoryState = function (slot0, slot1, slot2)
 	slot1:OnVictoryState()
 end
 
-function ys.Battle.SpellState.AddVictorySwimState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddVictorySwimState = function (slot0, slot1, slot2)
 	slot1:OnVictorySwimState()
 end
 
-function ys.Battle.SpellState.AddStandState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddStandState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.SpellState.AddDiveState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddDiveState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.SpellState.AddDiveLeftState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddDiveLeftState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.SpellState.AddInterruptState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddInterruptState = function (slot0, slot1, slot2)
 	slot1:OnInterruptState()
 end
 
-function ys.Battle.SpellState.AddDivingState(slot0, slot1, slot2)
+ys.Battle.SpellState.AddDivingState = function (slot0, slot1, slot2)
+	return
 end
 
-function ys.Battle.SpellState.OnTrigger(slot0, slot1)
+ys.Battle.SpellState.OnTrigger = function (slot0, slot1)
+	return
 end
 
-function ys.Battle.SpellState.OnStart(slot0, slot1)
+ys.Battle.SpellState.OnStart = function (slot0, slot1)
+	return
 end
 
-function ys.Battle.SpellState.OnEnd(slot0, slot1)
+ys.Battle.SpellState.OnEnd = function (slot0, slot1)
+	return
 end
 
-function ys.Battle.SpellState.CacheWeapon(slot0)
+ys.Battle.SpellState.CacheWeapon = function (slot0)
 	return true
 end
+
+return

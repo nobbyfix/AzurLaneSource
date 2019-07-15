@@ -3,19 +3,19 @@ ys.Battle.BattleBuffCastSkill = class("BattleBuffCastSkill", ys.Battle.BattleBuf
 ys.Battle.BattleBuffCastSkill.__name = "BattleBuffCastSkill"
 ys.Battle.BattleBuffCastSkill.FX_TYPE = ys.Battle.BattleBuffEffect.FX_TYPE_CASTER
 
-function ys.Battle.BattleBuffCastSkill.Ctor(slot0, slot1)
-	uv0.super.Ctor(slot0, slot1)
+ys.Battle.BattleBuffCastSkill.Ctor = function (slot0, slot1)
+	slot0.super.Ctor(slot0, slot1)
 end
 
-function ys.Battle.BattleBuffCastSkill.GetEffectType(slot0)
-	return uv0.FX_TYPE
+ys.Battle.BattleBuffCastSkill.GetEffectType = function (slot0)
+	return slot0.FX_TYPE
 end
 
-function ys.Battle.BattleBuffCastSkill.GetGroupData(slot0)
+ys.Battle.BattleBuffCastSkill.GetGroupData = function (slot0)
 	return slot0._group
 end
 
-function ys.Battle.BattleBuffCastSkill.SetArgs(slot0, slot1, slot2)
+ys.Battle.BattleBuffCastSkill.SetArgs = function (slot0, slot1, slot2)
 	slot0._level = slot2:GetLv()
 	slot0._skill_id = slot0._tempData.arg_list.skill_id
 	slot0._target = slot0._tempData.arg_list.target or "TargetSelf"
@@ -32,28 +32,28 @@ function ys.Battle.BattleBuffCastSkill.SetArgs(slot0, slot1, slot2)
 	slot0._group = slot3.group
 end
 
-function ys.Battle.BattleBuffCastSkill.onBulletCreate(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffCastSkill.onBulletCreate = function (slot0, slot1, slot2, slot3)
 	if not slot0:equipIndexRequire(slot3.equipIndex) then
 		return
 	end
 
 	slot3._bullet:SetBuffFun(slot0._tempData.arg_list.bulletTrigger, function (slot0, slot1)
 		if slot0 and slot0:IsAlive() then
-			uv0:castSkill(slot0, slot1)
+			slot0:castSkill(slot0, slot1)
 		end
 	end)
 end
 
-function ys.Battle.BattleBuffCastSkill.onTrigger(slot0, slot1, slot2, slot3)
+ys.Battle.BattleBuffCastSkill.onTrigger = function (slot0, slot1, slot2, slot3)
 	return slot0:castSkill(slot1, slot3)
 end
 
-function ys.Battle.BattleBuffCastSkill.castSkill(slot0, slot1, slot2)
+ys.Battle.BattleBuffCastSkill.castSkill = function (slot0, slot1, slot2)
 	if slot0:IsInCD(pg.TimeMgr.GetInstance():GetCombatTime()) then
 		return "overheat"
 	end
 
-	if not uv0.Battle.BattleFormulas.IsHappen(slot0._rant) then
+	if not slot0.Battle.BattleFormulas.IsHappen(slot0._rant) then
 		return "chance"
 	end
 
@@ -72,7 +72,7 @@ function ys.Battle.BattleBuffCastSkill.castSkill(slot0, slot1, slot2)
 	end
 
 	if slot0._check_weapon then
-		if #uv1.GetEquipmentList(slot1, slot0._tempData.arg_list) < slot0._minWeaponNumber then
+		if #slot1:GetEquipmentList(slot0._tempData.arg_list) < slot0._minWeaponNumber then
 			return "check"
 		end
 
@@ -84,12 +84,12 @@ function ys.Battle.BattleBuffCastSkill.castSkill(slot0, slot1, slot2)
 	if slot0._hpUpperBound or slot0._hpLowerBound then
 		slot4 = nil
 
-		if not slot0:hpIntervalRequire((slot2 and slot2.unit or slot1:GetHPRate()) and slot2.unit:GetHPRate()) then
+		if not slot0:hpIntervalRequire(((slot2 and slot2.unit) or slot1:GetHPRate()) and slot2.unit:GetHPRate()) then
 			return "check"
 		end
 	end
 
-	uv1.super.onTrigger(slot0, slot1)
+	slot1.super.onTrigger(slot0, slot1)
 
 	for slot8, slot9 in ipairs(slot4) do
 		slot10 = true
@@ -97,7 +97,7 @@ function ys.Battle.BattleBuffCastSkill.castSkill(slot0, slot1, slot2)
 		if slot0._group then
 			for slot15, slot16 in pairs(slot11) do
 				for slot20, slot21 in ipairs(slot16._effectList) do
-					if slot21:GetEffectType() == uv1.FX_TYPE and slot21:GetGroupData() and slot21:GetGroupData().id == slot0._group.id and slot0._group.level < slot22.level then
+					if slot21:GetEffectType() == slot1.FX_TYPE and slot21:GetGroupData() and slot21:GetGroupData().id == slot0._group.id and slot0._group.level < slot22.level then
 						slot10 = false
 
 						break
@@ -114,12 +114,12 @@ function ys.Battle.BattleBuffCastSkill.castSkill(slot0, slot1, slot2)
 	slot0:enterCoolDown(slot3)
 end
 
-function ys.Battle.BattleBuffCastSkill.IsInCD(slot0, slot1)
+ys.Battle.BattleBuffCastSkill.IsInCD = function (slot0, slot1)
 	return slot1 < slot0._nextEffectTime
 end
 
-function ys.Battle.BattleBuffCastSkill.spell(slot0, slot1)
-	slot0._skill = slot0._skill or uv0.Battle.BattleSkillUnit.GenerateSpell(slot0._skill_id, slot0._level, slot1, attData)
+ys.Battle.BattleBuffCastSkill.spell = function (slot0, slot1)
+	slot0._skill = slot0._skill or slot0.Battle.BattleSkillUnit.GenerateSpell(slot0._skill_id, slot0._level, slot1, attData)
 
 	if attach and attach.target then
 		slot0._skill:SetTarget({
@@ -130,35 +130,38 @@ function ys.Battle.BattleBuffCastSkill.spell(slot0, slot1)
 	slot0._skill:Cast(slot1, slot0._commander)
 end
 
-function ys.Battle.BattleBuffCastSkill.enterCoolDown(slot0, slot1)
+ys.Battle.BattleBuffCastSkill.enterCoolDown = function (slot0, slot1)
 	if slot0._time and slot0._time > 0 then
 		slot0._nextEffectTime = slot1 + slot0._time
 	end
 end
 
-function ys.Battle.BattleBuffCastSkill.Clear(slot0)
-	uv0.super.Clear(slot0)
+ys.Battle.BattleBuffCastSkill.Clear = function (slot0)
+	slot0.super.Clear(slot0)
 
 	if slot0._skill then
 		slot0._skill:Clear()
 	end
 end
 
-function ys.Battle.BattleBuffCastSkill.GetEquipmentList(slot0, slot1)
-	slot3 = {
-		[slot7] = slot8
-	}
+ys.Battle.BattleBuffCastSkill.GetEquipmentList = function (slot0, slot1)
+	slot3 = {}
 
 	for slot7, slot8 in ipairs(slot2) do
+		slot3[slot7] = slot8
 	end
 
-	while #slot3 > 0 do
+	slot4 = #slot3
+
+	while slot4 > 0 do
 		slot6 = true
 
 		if not slot3[slot4].equipment then
 			slot6 = false
 		else
-			if slot1.weapon_group and not table.contains(slot1.weapon_group, uv0.Battle.BattleDataFunction.GetEquipDataTemplate(slot5.id).group) then
+			slot7 = slot0.Battle.BattleDataFunction.GetEquipDataTemplate(slot5.id)
+
+			if slot1.weapon_group and not table.contains(slot1.weapon_group, slot7.group) then
 				slot6 = false
 			end
 
@@ -180,3 +183,5 @@ function ys.Battle.BattleBuffCastSkill.GetEquipmentList(slot0, slot1)
 
 	return slot3
 end
+
+return

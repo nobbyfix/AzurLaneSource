@@ -26,10 +26,10 @@ class("SetGuildDutyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		duty_id = slot4
 	}, 60013, function (slot0)
 		if slot0.result == 0 then
-			slot1 = uv0:getMemberById(uv1)
+			slot1 = slot0:getMemberById(slot0.getMemberById)
 
-			slot1:setDuty(uv2)
-			uv3:sendNotification(GAME.SET_GUILD_DUTY_DONE, slot1)
+			slot1:setDuty(slot1.setDuty)
+			slot1:sendNotification(GAME.SET_GUILD_DUTY_DONE, slot1)
 			pg.TipsMgr:GetInstance():ShowTips(i18n("guild_set_duty_sucess"))
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("guild_setduty_erro", slot0.result))

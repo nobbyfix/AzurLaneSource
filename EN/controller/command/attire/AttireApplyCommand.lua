@@ -10,9 +10,9 @@ class("AttireApplyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		type = slot4
 	}, 11006, function (slot0)
 		if slot0.result == 0 then
-			uv0:updateAttireFrame(uv1, uv2)
-			uv3:updatePlayer(uv0)
-			uv4:sendNotification(GAME.ATTIRE_APPLY_DONE)
+			slot0:updateAttireFrame(slot0.updateAttireFrame, slot0)
+			slot3:updatePlayer(slot0)
+			slot4:sendNotification(GAME.ATTIRE_APPLY_DONE)
 		else
 			print(slot0.result)
 		end

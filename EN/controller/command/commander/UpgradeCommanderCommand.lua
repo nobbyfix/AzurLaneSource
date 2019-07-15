@@ -1,6 +1,6 @@
 slot0 = class("UpgradeCommanderCommand", pm.SimpleCommand)
 
-function slot0.execute(slot0, slot1)
+slot0.execute = function (slot0, slot1)
 	slot2 = slot1:getBody()
 	slot4 = slot2.materialIds
 	slot5 = slot2.skillId
@@ -22,7 +22,7 @@ function slot0.execute(slot0, slot1)
 	slot10 = getProxy(FleetProxy).getCommandersInFleet(slot9)
 
 	if _.any(slot4, function (slot0)
-		return table.contains(uv0, slot0)
+		return table.contains(slot0, slot0)
 	end) then
 		pg.TipsMgr:GetInstance():ShowTips(i18n("commander_anyone_is_in_fleet"))
 
@@ -32,7 +32,7 @@ function slot0.execute(slot0, slot1)
 	if getProxy(ChapterProxy):getActiveChapter() then
 		_.each(slot11.fleets, function (slot0)
 			if _.any(_.values(slot1), function (slot0)
-				return slot0.id == uv0
+				return slot0.id == slot0
 			end) then
 				pg.TipsMgr:GetInstance():ShowTips(i18n("commander_is_in_battle"))
 
@@ -69,22 +69,22 @@ function slot0.execute(slot0, slot1)
 		materialid = slot4
 	}, 25009, function (slot0)
 		if slot0.result == 0 then
-			uv0:addExp(uv1)
-			uv2:addExp(uv3)
-			uv4:consume({
-				gold = uv5
+			slot0:addExp(slot1)
+			slot0.addExp:addExp(slot0.addExp)
+			slot4:consume({
+				gold = slot5
 			})
-			uv6:updatePlayer(uv4)
-			uv7:updateCommander(uv0)
-			uv8:sendNotification(GAME.COMMANDER_UPGRADE_DONE, {
-				commander = uv0,
-				oldCommander = Clone(uv0)
+			slot6:updatePlayer()
+			slot7:updateCommander(slot0)
+			slot8:sendNotification(GAME.COMMANDER_UPGRADE_DONE, {
+				commander = slot0,
+				oldCommander = Clone(slot0)
 			})
 
-			for slot5, slot6 in ipairs(uv9) do
-				uv7:removeCommanderById(slot6)
-				uv8:clearHardChapterCommanders(slot6)
-				uv8:clearActivityCommanders(slot6)
+			for slot5, slot6 in ipairs(slot9) do
+				slot7:removeCommanderById(slot6)
+				slot7:clearHardChapterCommanders(slot6)
+				slot7:clearActivityCommanders(slot6)
 			end
 		else
 			pg.TipsMgr:GetInstance():ShowTips(i18n("commander_play_erro", slot0.result))
@@ -92,7 +92,7 @@ function slot0.execute(slot0, slot1)
 	end)
 end
 
-function slot0.clearHardChapterCommanders(slot0, slot1)
+slot0.clearHardChapterCommanders = function (slot0, slot1)
 	for slot7, slot8 in pairs(slot3) do
 		for slot13, slot14 in pairs(slot9) do
 			for slot18, slot19 in pairs(slot14) do
@@ -105,7 +105,7 @@ function slot0.clearHardChapterCommanders(slot0, slot1)
 	end
 end
 
-function slot0.clearActivityCommanders(slot0, slot1)
+slot0.clearActivityCommanders = function (slot0, slot1)
 	getProxy(FleetProxy):removeActivityFleetCommander(slot1)
 end
 

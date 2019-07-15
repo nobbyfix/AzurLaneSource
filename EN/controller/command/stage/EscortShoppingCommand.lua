@@ -29,21 +29,22 @@ class("EscortShoppingCommand", pm.SimpleCommand).execute = function (slot0, slot
 	}, 23011, function (slot0)
 		if slot0.result == 0 then
 			table.insert(slot1, {
-				type = uv0.commodity_type,
-				id = uv0.commodity_id,
-				count = uv1 * uv0.num
+				type = slot0.commodity_type,
+				id = slot0.commodity_id,
+				count = slot1 * slot0.num
 			})
 			_.each(slot1, function (slot0)
-				uv0:sendNotification(GAME.ADD_ITEM, Item.New(slot0))
+				slot0:sendNotification(GAME.ADD_ITEM, Item.New(slot0))
 			end)
 
-			slot2 = uv3:getEscortShop()
+			slot2 = slot1:getEscortShop()
+			slot3 = slot2:getGoodsById(slot4)
 
-			slot2:getGoodsById(uv4).addBuyCount(slot3, uv1)
-			uv3:updateEscortShop(slot2)
-			reducePlayerOwn(uv0.resource_category, uv0.resource_type, uv0.resource_num * uv1)
-			uv2:sendNotification(GAME.ESCORT_SHOPPING_DONE, {
-				awards = {}
+			slot3:addBuyCount(slot1)
+			slot3:updateEscortShop(slot2)
+			reducePlayerOwn(slot0.resource_category, slot0.resource_type, slot0.resource_num * {})
+			slot2:sendNotification(GAME.ESCORT_SHOPPING_DONE, {
+				awards = 
 			})
 		end
 	end)

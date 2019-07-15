@@ -1,25 +1,25 @@
 slot0 = class("SingleBuffDetailLayer", import("..base.BaseUI"))
 
-function slot0.getUIName(slot0)
+slot0.getUIName = function (slot0)
 	return "TechnologyTreeSingleBuffDetailUI"
 end
 
-function slot0.init(slot0)
+slot0.init = function (slot0)
 	slot0:initData()
 	slot0:findUI()
 end
 
-function slot0.didEnter(slot0)
+slot0.didEnter = function (slot0)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf)
 	slot0:addListener()
 	slot0:updateDetail()
 end
 
-function slot0.willExit(slot0)
+slot0.willExit = function (slot0)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
 end
 
-function slot0.initData(slot0)
+slot0.initData = function (slot0)
 	slot0.groupID = slot0.contextData.groupID
 	slot0.maxLV = slot0.contextData.maxLV
 	slot0.star = slot0.contextData.star
@@ -48,7 +48,7 @@ function slot0.initData(slot0)
 	}
 end
 
-function slot0.findUI(slot0)
+slot0.findUI = function (slot0)
 	slot0.backBtn = slot0:findTF("BG")
 	slot0.detailPanel = slot0:findTF("DetailPanel")
 	slot0.baseImg = slot0:findTF("BaseImg", slot0.detailPanel)
@@ -70,22 +70,22 @@ function slot0.findUI(slot0)
 	slot0.allStarPointText = slot0:findTF("Info/AllStarTop/Point/PointNumText", slot0.detailPanel)
 end
 
-function slot0.onBackPressed(slot0)
+slot0.onBackPressed = function (slot0)
 	triggerButton(slot0.backBtn)
 end
 
-function slot0.addListener(slot0)
+slot0.addListener = function (slot0)
 	onButton(slot0, slot0.backBtn, function ()
-		uv0:emit(uv1.ON_CLOSE)
+		slot0:emit(slot1.ON_CLOSE)
 	end, SFX_CANCEL)
 end
 
-function slot0.updateDetail(slot0)
+slot0.updateDetail = function (slot0)
 	LoadSpriteAsync("shipmodels/" .. slot0.shipPaintName, function (slot0)
 		if slot0 then
-			setImageSprite(uv0.modelImg, slot0, true)
+			setImageSprite(slot0.modelImg, slot0, true)
 
-			rtf(uv0.modelImg).pivot = getSpritePivot(slot0)
+			rtf(slot0.modelImg).pivot = getSpritePivot(slot0)
 		end
 	end)
 	setImageSprite(slot0.baseImg, GetSpriteFromAtlas("shipraritybaseicon", "base_" .. slot0.rarity))
@@ -114,8 +114,8 @@ function slot0.updateDetail(slot0)
 			setTextColor(slot4, slot9)
 			setText(slot5, ShipType.Type2Name(slot8))
 			setTextColor(slot5, slot9)
-			setText(slot6, AttributeType.Type2Name(pg.attribute_info_by_type[uv2].name))
-			setText(slot7, "+" .. uv3)
+			setText(slot6, AttributeType.Type2Name(pg.attribute_info_by_type[slot2].name))
+			setText(slot7, "+" .. slot0:findTF("Symbol/Left", slot2))
 			setActive(slot2, true)
 		end
 	end)
@@ -127,17 +127,19 @@ function slot0.updateDetail(slot0)
 
 	slot10:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			slot3 = uv0:findTF("Symbol/Left", slot2)
-			slot4 = uv0:findTF("Symbol/Right", slot2)
-			slot5 = uv0:findTF("TypeText", slot2)
-			slot6 = uv0:findTF("AttrText", slot2)
-			slot7 = uv0:findTF("ValueText", slot2)
+			slot3 = slot0:findTF("Symbol/Left", slot2)
+			slot4 = slot0:findTF("Symbol/Right", slot2)
+			slot5 = slot0:findTF("TypeText", slot2)
+			slot6 = slot0:findTF("AttrText", slot2)
+			slot7 = slot0:findTF("ValueText", slot2)
+			slot8 = slot0:findTF("BG", slot2)
+			slot9 = slot1[slot1 + 1]
 			slot10 = nil
 
-			if uv0.maxLV == 120 then
-				slot10 = uv0.typeToColor[uv1[slot1 + 1]]
+			if slot0.maxLV == 120 then
+				slot10 = slot0.typeToColor[slot9]
 
-				setGray(uv0:findTF("BG", slot2), false)
+				setGray(slot8, false)
 			else
 				setTextColor(slot7, slot10)
 				setTextColor(slot6, slot10)
@@ -148,8 +150,8 @@ function slot0.updateDetail(slot0)
 			setTextColor(slot4, slot10)
 			setText(slot5, ShipType.Type2Name(slot9))
 			setTextColor(slot5, slot10)
-			setText(slot6, AttributeType.Type2Name(pg.attribute_info_by_type[uv2].name))
-			setText(slot7, "+" .. uv3)
+			setText(slot6, AttributeType.Type2Name(pg.attribute_info_by_type[slot2].name))
+			setText(slot7, "+" .. slot3)
 			setActive(slot2, true)
 		end
 	end)

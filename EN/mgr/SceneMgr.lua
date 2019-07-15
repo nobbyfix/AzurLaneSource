@@ -1,36 +1,39 @@
 pg = pg or {}
 pg.SceneMgr = singletonClass("SceneMgr")
 
-function pg.SceneMgr.prepare(slot0, slot1, slot2, slot3)
+pg.SceneMgr.prepare = function (slot0, slot1, slot2, slot3)
 	slot4 = slot2.viewComponent.New()
 
 	slot4:setContextData(slot2.data)
 
 	slot5 = nil
 
+	function slot5()
+		slot0.event:disconnect(BaseUI.LOADED, slot0.event)
+
+		slot0 = slot2.mediator.New(slot2.mediator.New)
+
+		slot0:setContextData(slot2.data)
+		slot3:registerMediator(slot0)
+		slot4(slot0)
+	end
+
 	if slot4:isLoaded() then
-		function ()
-			uv0.event:disconnect(BaseUI.LOADED, uv1)
-
-			slot0 = uv2.mediator.New(uv0)
-
-			slot0:setContextData(uv2.data)
-			uv3:registerMediator(slot0)
-			uv4(slot0)
-		end()
+		slot5()
 	else
 		slot4.event:connect(BaseUI.LOADED, slot5)
 		slot4:load()
 	end
 end
 
-function pg.SceneMgr.prepareLayer(slot0, slot1, slot2, slot3, slot4)
+pg.SceneMgr.prepareLayer = function (slot0, slot1, slot2, slot3, slot4)
 	slot5 = {}
+	slot6 = {}
 
 	if slot2 ~= nil then
 		if slot2:getContextByMediator(slot3.mediator) then
 			print("mediator already exist: " .. slot3.mediator.__cname)
-			slot4({})
+			slot4(slot6)
 
 			return
 		end
@@ -45,28 +48,31 @@ function pg.SceneMgr.prepareLayer(slot0, slot1, slot2, slot3, slot4)
 
 	slot7 = nil
 
+
+	-- Decompilation error in this vicinity:
 	function ()
-		if #uv0 > 0 then
-			for slot4, slot5 in ipairs(table.remove(uv0, 1).children) do
-				table.insert(uv0, slot5)
+		if #slot0 > 0 then
+			for slot4, slot5 in ipairs(table.remove(table.remove, 1).children) do
+				table.insert(slot0, slot5)
 			end
 
-			slot3 = uv1:retrieveMediator(slot0.parent.mediator.__cname).getViewComponent(slot2)
+			slot2 = slot1:retrieveMediator(slot0.parent.mediator.__cname)
+			slot3 = slot2:getViewComponent()
 
-			uv2:prepare(uv1, slot0, function (slot0)
-				slot0.viewComponent:attach(uv0)
-				table.insert(uv1, slot0)
-				uv2()
+			slot2:prepare(slot0.parent, slot0, function (slot0)
+				slot0.viewComponent:attach(slot0)
+				table.insert(table.insert, slot0)
+				table.insert()
 			end)
 
 			return
 		end
 
-		uv5(uv3)
+		slot5(slot3)
 	end()
 end
 
-function pg.SceneMgr.enter(slot0, slot1, slot2)
+pg.SceneMgr.enter = function (slot0, slot1, slot2)
 	if #slot1 == 0 then
 		slot2()
 	end
@@ -77,24 +83,23 @@ function pg.SceneMgr.enter(slot0, slot1, slot2)
 		slot10 = nil
 
 		slot8.viewComponent.event:connect(BaseUI.AVALIBLE, function ()
-			uv0.event:disconnect(BaseUI.AVALIBLE, uv1)
+			slot0.event:disconnect(BaseUI.AVALIBLE, slot0.event)
 
-			uv2 = uv2 - 1
-
-			if uv2 == 0 then
-				uv3()
+			if slot2 - 1 == 0 then
+				slot3()
 			end
 		end)
 		slot8.viewComponent:enter()
 	end
 end
 
-function pg.SceneMgr.removeLayer(slot0, slot1, slot2, slot3)
+pg.SceneMgr.removeLayer = function (slot0, slot1, slot2, slot3)
+	slot4 = {
+		slot2
+	}
 	slot5 = {}
 
-	while #{
-		slot2
-	} > 0 do
+	while #slot4 > 0 do
 		if table.remove(slot4, 1).mediator then
 			table.insert(slot5, slot6)
 		end
@@ -110,14 +115,16 @@ function pg.SceneMgr.removeLayer(slot0, slot1, slot2, slot3)
 		slot2.parent:removeChild(slot2)
 	end
 
+	slot6 = {}
+
 	for slot10 = #slot5, 1, -1 do
 		slot12 = slot1:removeMediator(slot5[slot10].mediator.__cname)
 
-		table.insert({}, function (slot0)
-			if uv0 then
-				uv1:remove(uv0:getViewComponent(), function ()
-					uv0:onContextRemoved()
-					uv1()
+		table.insert(slot6, function (slot0)
+			if slot0 then
+				slot1:remove(slot0:getViewComponent(), function ()
+					slot0:onContextRemoved()
+					slot0()
 				end)
 			else
 				slot0()
@@ -128,14 +135,14 @@ function pg.SceneMgr.removeLayer(slot0, slot1, slot2, slot3)
 	seriesAsync(slot6, slot3)
 end
 
-function pg.SceneMgr.remove(slot0, slot1, slot2)
+pg.SceneMgr.remove = function (slot0, slot1, slot2)
 	slot3 = nil
 
 	function slot3()
-		uv0.event:disconnect(BaseUI.DID_EXIT, uv1)
-		uv0.event:clear()
-		uv2:gc(uv0)
-		uv3()
+		slot0.event:disconnect(BaseUI.DID_EXIT, slot0.event)
+		slot0.event.disconnect.event:clear()
+		slot2:gc(slot2.gc)
+		slot0.event()
 	end
 
 	if slot1 == nil then
@@ -146,10 +153,12 @@ function pg.SceneMgr.remove(slot0, slot1, slot2)
 	end
 end
 
-function pg.SceneMgr.gc(slot0, slot1)
+pg.SceneMgr.gc = function (slot0, slot1)
 	table.clear(slot1)
 
 	slot1.exited = true
 
 	gcAll()
 end
+
+return

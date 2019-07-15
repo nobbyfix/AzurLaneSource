@@ -3,7 +3,7 @@ slot0.STATE_LOADING = 0
 slot0.STATE_INITED = 1
 slot0.STATE_DISPOSE = 2
 
-function slot0.live2dData(slot0)
+slot0.live2dData = function (slot0)
 	{
 		SetData = function (slot0, slot1)
 			slot0.ship = slot1.ship
@@ -57,9 +57,9 @@ end
 
 function slot4(slot0, slot1, slot2)
 	if not slot0.live2dAction or slot2 then
-		slot0.liveCom:SetAction(uv0.action2Id[slot1])
+		slot0.liveCom:SetAction(slot0.action2Id[slot1])
 
-		if uv0.action2Id[slot1] then
+		if slot0.action2Id[slot1] then
 			slot0.live2dAction = true
 		end
 	end
@@ -82,64 +82,64 @@ function slot6(slot0, slot1)
 	slot0._tf.localPosition = slot0.live2dData.position
 	slot0.liveCom = slot1:GetComponent(typeof(Live2dChar))
 
-	slot0.liveCom:SetReactMotions(uv0.idleActions)
+	slot0.liveCom:SetReactMotions(slot0.idleActions)
 	slot0.liveCom:SetAction(slot2)
 
-	function slot0.liveCom.FinishAction(slot0)
-		uv0.live2dAction = nil
+	slot0.liveCom.FinishAction = function (slot0)
+		slot0.live2dAction = nil
 
-		uv0.liveCom:SetAction(uv1.idleActions[math.ceil(math.random(#uv1.idleActions))])
+		slot0.liveCom:SetAction(slot1.idleActions[math.ceil(math.random(#slot1.idleActions))])
 	end
 
-	slot0.liveCom:SetTouchParts(uv0.assistantTouchParts)
+	slot0.liveCom:SetTouchParts(slot0.assistantTouchParts)
 
 	slot0.liveCom.name = slot0.live2dData:GetShipName()
 
 	setActive(slot0.live2dData.parent, true)
-	uv1(slot0)
-	uv2(slot0)
-	uv3(slot0)
+	slot1(slot0)
+	slot2(slot0)
+	slot2(slot0)
 
-	slot0.state = uv4.STATE_INITED
+	slot0.state = slot4.STATE_INITED
 end
 
-function slot0.Ctor(slot0, slot1, slot2)
-	slot0.state = uv0.STATE_LOADING
+slot0.Ctor = function (slot0, slot1, slot2)
+	slot0.state = slot0.STATE_LOADING
 	slot0.live2dData = slot1
-	uv1 = pg.AssistantInfo
+	slot1 = pg.AssistantInfo
 
 	pg.Live2DMgr.GetInstance():GetLive2DModelAsync(slot0.live2dData:GetShipName(), function (slot0)
-		if uv0.state == uv1.STATE_DISPOSE then
+		if slot0.state == slot1.STATE_DISPOSE then
 			Destroy(slot0)
-			pg.Live2DMgr.GetInstance():TryReleaseLive2dRes(uv2)
+			pg.Live2DMgr.GetInstance():TryReleaseLive2dRes(pg.Live2DMgr.GetInstance())
 
 			return
 		end
 
-		uv3(uv0, slot0)
+		slot3(slot0, slot0)
 
-		if uv4 then
-			uv4()
+		if slot4 then
+			slot4()
 		end
 	end)
 end
 
-function slot0.GetTouchPart(slot0)
+slot0.GetTouchPart = function (slot0)
 	return slot0.liveCom:GetTouchPart()
 end
 
-function slot0.TriggerAction(slot0, slot1, slot2)
-	uv0(slot0, slot1, slot2)
+slot0.TriggerAction = function (slot0, slot1, slot2)
+	slot0(slot0, slot1, slot2)
 end
 
-function slot0.Dispose(slot0)
-	if slot0.state == uv0.STATE_INITED then
+slot0.Dispose = function (slot0)
+	if slot0.state == slot0.STATE_INITED then
 		Destroy(slot0._go)
 
 		slot0.liveCom.FinishAction = nil
 	end
 
-	slot0.state = uv0.STATE_DISPOSE
+	slot0.state = slot0.STATE_DISPOSE
 
 	pg.Live2DMgr.GetInstance():TryReleaseLive2dRes(slot0.live2dData:GetShipName())
 

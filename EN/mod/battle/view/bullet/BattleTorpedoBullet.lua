@@ -4,32 +4,34 @@ slot2 = ys.Battle.BattleResourceManager
 ys.Battle.BattleTorpedoBullet = class("BattleTorpedoBullet", ys.Battle.BattleBullet)
 ys.Battle.BattleTorpedoBullet.__name = "BattleTorpedoBullet"
 
-function ys.Battle.BattleTorpedoBullet.Ctor(slot0)
-	uv0.super.Ctor(slot0)
+ys.Battle.BattleTorpedoBullet.Ctor = function (slot0)
+	slot0.super.Ctor(slot0)
 end
 
-function ys.Battle.BattleTorpedoBullet.Dispose(slot0)
+ys.Battle.BattleTorpedoBullet.Dispose = function (slot0)
 	if slot0._alert then
 		slot0._alert:Dispose()
 	end
 
-	uv0.super.Dispose(slot0)
+	slot0.super.Dispose(slot0)
 end
 
-function ys.Battle.BattleTorpedoBullet.Advance(slot0)
+ys.Battle.BattleTorpedoBullet.Advance = function (slot0)
 	slot0._speed = slot0._speed * 2
 end
 
-function ys.Battle.BattleTorpedoBullet.GetZExtraOffset(slot0)
+ys.Battle.BattleTorpedoBullet.GetZExtraOffset = function (slot0)
 	return 0
 end
 
-function ys.Battle.BattleTorpedoBullet.MakeAlert(slot0, slot1)
-	slot0._alert = uv0.Battle.TorAlert.New(slot1)
+ys.Battle.BattleTorpedoBullet.MakeAlert = function (slot0, slot1)
+	slot0._alert = slot0.Battle.TorAlert.New(slot1)
 
 	slot0._alert:SetPosition(slot0._bulletData:GetPosition(), slot0._bulletData:GetYAngle())
 end
 
-function ys.Battle.BattleTorpedoBullet.Neutrailze(slot0)
+ys.Battle.BattleTorpedoBullet.Neutrailze = function (slot0)
 	SetActive(slot0._go, false)
 end
+
+return

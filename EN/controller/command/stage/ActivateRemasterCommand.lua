@@ -4,12 +4,12 @@ class("ActivateRemasterCommand", pm.SimpleCommand).execute = function (slot0, sl
 	}, 13502, function (slot0)
 		if slot0.result == 0 then
 			slot1 = getProxy(ChapterProxy)
-			slot1.remasterId = uv0.id
+			slot1.remasterId = slot0.id
 			slot1.remasterTime = pg.TimeMgr.GetInstance():GetServerTime() + pg.gameset.reactivity_time.key_value
 			slot1.remasterTickets = slot1.remasterTickets - 1
 
-			uv0.callback()
-			uv1:sendNotification(GAME.ACTIVATE_REMASTER_DONE)
+			slot0.callback()
+			slot1:sendNotification(GAME.ACTIVATE_REMASTER_DONE)
 		else
 			pg.TipsMgr.GetInstance():ShowTips(errorTip("activate_remaster_error_", slot0.result))
 		end

@@ -1,7 +1,7 @@
 slot0 = class("RepairPanel", import("..base.BasePanel"))
 
-function slot0.init(slot0)
-	uv0.super.init(slot0)
+slot0.init = function (slot0)
+	slot0.super.init(slot0)
 
 	slot0.desc = slot0:findTF("window/desc")
 	slot0.descFree = slot0:findTF("window/text_free")
@@ -17,7 +17,7 @@ function slot0.init(slot0)
 	slot0.onCancel = nil
 end
 
-function slot0.set(slot0, slot1, slot2, slot3, slot4)
+slot0.set = function (slot0, slot1, slot2, slot3, slot4)
 	slot0.repairTimes = slot1
 	slot0.freeTimes = slot2
 	slot0.chargeTimes = slot3
@@ -35,18 +35,18 @@ function slot0.set(slot0, slot1, slot2, slot3, slot4)
 	setButtonEnabled(slot0.confirm, slot0.repairTimes < slot0.freeTimes + slot0.chargeTimes)
 	setGray(slot0.confirm, not (slot0.repairTimes < slot0.freeTimes + slot0.chargeTimes), true)
 	onButton(slot0, slot0.back, function ()
-		if uv0.onCancel then
-			uv0.onCancel()
+		if slot0.onCancel then
+			slot0.onCancel()
 		end
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.cancel, function ()
-		if uv0.onCancel then
-			uv0.onCancel()
+		if slot0.onCancel then
+			slot0.onCancel()
 		end
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.confirm, function ()
-		if uv0.onConfirm then
-			uv0.onConfirm()
+		if slot0.onConfirm then
+			slot0.onConfirm()
 		end
 	end, SFX_CONFIRM)
 end

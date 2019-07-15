@@ -15,15 +15,18 @@ class("ProposeCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		ship_id = slot3
 	}, 12033, function (slot0)
 		if slot0.result == 0 then
-			uv0:removeItemById(ITEM_ID_FOR_PROPOSE, 1)
+			slot0:removeItemById(ITEM_ID_FOR_PROPOSE, 1)
 
-			uv1.propose = true
-			uv1.proposeTime = pg.TimeMgr.GetInstance():GetServerTime()
+			slot0.removeItemById.propose = true
+			slot0.removeItemById.proposeTime = pg.TimeMgr.GetInstance():GetServerTime()
 
-			uv2:updateShip(uv1)
-			getProxy(CollectionProxy).shipGroups[uv1.groupId].updateMarriedFlag(slot2)
-			uv3:sendNotification(GAME.PROPOSE_SHIP_DONE, {
-				ship = uv1
+			pg.TimeMgr.GetInstance().GetServerTime():updateShip(pg.TimeMgr.GetInstance().GetServerTime().updateShip)
+
+			slot1 = getProxy(CollectionProxy)
+
+			slot1.shipGroups[slot1.groupId].updateMarriedFlag(slot2)
+			slot1.shipGroups[slot1.groupId].updateMarriedFlag:sendNotification(GAME.PROPOSE_SHIP_DONE, {
+				ship = slot1
 			})
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("ship_proposeShip", slot0.result))

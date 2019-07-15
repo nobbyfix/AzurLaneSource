@@ -5,7 +5,7 @@ class("UpdateCommonFlagCommand", pm.SimpleCommand).execute = function (slot0, sl
 		if getProxy(PlayerProxy) then
 			slot2 = slot1:getData()
 
-			slot2:UpdateCommonFlag(uv0)
+			slot2:UpdateCommonFlag(slot0)
 			slot1:updatePlayer(slot2)
 		end
 	end)

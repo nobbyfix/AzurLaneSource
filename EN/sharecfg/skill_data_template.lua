@@ -22126,7 +22126,7 @@ pg.skill_data_template = {
 		}
 	},
 	[18100] = {
-		desc_get = "After the battle begins and every 30s after that: deploys 4 rotating shields that can each block up to 8 hits. Shields last for <color=#92fc63FF5></color>s (<color=#92fc63FF15></color>s when fully upgraded.)",
+		desc_get = "After the battle begins and every 30s after that: deploys 4 rotating shields that can each block up to 8 hits. Shields last for <color=#92fc63FF>5</color>s (<color=#92fc63FF>15</color>s when fully upgraded.)",
 		name = "Well-Rounded Armor+",
 		desc = "After the battle begins and every 30s after that: deploys 4 rotating shields that can each block up to 8 hits. Shields last for $1s.",
 		type = 2,

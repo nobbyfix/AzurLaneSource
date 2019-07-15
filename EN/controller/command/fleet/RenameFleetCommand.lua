@@ -21,8 +21,8 @@ class("FleetRenameCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		name = slot4
 	}, 12105, function (slot0)
 		if slot0.result == 0 then
-			uv0:renameFleet(uv1, uv2)
-			uv3:sendNotification(GAME.RENAME_FLEET_DONE)
+			slot0:renameFleet(slot0.renameFleet, slot0)
+			slot3:sendNotification(GAME.RENAME_FLEET_DONE)
 		else
 			pg.TipsMgr:GetInstance():ShowTips(ERROR_MESSAGE[slot0.result])
 		end

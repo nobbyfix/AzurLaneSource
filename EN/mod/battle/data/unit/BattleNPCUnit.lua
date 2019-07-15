@@ -6,11 +6,11 @@ slot4 = ys.Battle.BattleAttr
 slot5 = ys.Battle.BattleUnitEvent
 ys.Battle.BattleNPCUnit = class("BattleNPCUnit", ys.Battle.BattleEnemyUnit)
 
-function ys.Battle.BattleNPCUnit.SetTemplate(slot0, slot1, slot2)
-	uv0.super.SetTemplate(slot0, slot1)
+ys.Battle.BattleNPCUnit.SetTemplate = function (slot0, slot1, slot2)
+	slot0.super.SetTemplate(slot0, slot1)
 
 	slot0._tmpData = setmetatable({}, {
-		__index = uv1.Battle.BattleDataFunction.GetMonsterTmpDataFromID(slot0._tmpID)
+		__index = slot1.Battle.BattleDataFunction.GetMonsterTmpDataFromID(slot0._tmpID)
 	})
 
 	if slot2.template then
@@ -22,7 +22,7 @@ function ys.Battle.BattleNPCUnit.SetTemplate(slot0, slot1, slot2)
 	end
 
 	if slot2.attr then
-		uv2.SetAttr(slot0, slot2.attr)
+		slot2.SetAttr(slot0, slot2.attr)
 	else
 		slot0:SetAttr()
 	end
@@ -30,3 +30,5 @@ function ys.Battle.BattleNPCUnit.SetTemplate(slot0, slot1, slot2)
 	slot0:SetCurrentHP(slot2.currentHP or slot0:GetMaxHP())
 	slot0:InitCldComponent()
 end
+
+return

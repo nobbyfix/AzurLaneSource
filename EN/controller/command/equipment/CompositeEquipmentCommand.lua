@@ -37,18 +37,18 @@ class("CompositeEquipmentCommand", pm.SimpleCommand).execute = function (slot0, 
 		num = slot3
 	}, 14007, function (slot0)
 		if slot0.result == 0 then
-			uv0:addEquipmentById(uv1.equip_id, uv2)
-			uv3:consume({
-				gold = uv1.gold_num * uv2
+			slot0:addEquipmentById(slot1.equip_id, slot0)
+			slot3:consume({
+				gold = slot1.gold_num * slot3
 			})
-			uv4:updatePlayer(uv3)
-			uv5:removeItemById(uv1.material_id, uv1.material_num * uv2)
-			uv6:sendNotification(GAME.COMPOSITE_EQUIPMENT_DONE, {
+			slot4:updatePlayer()
+			slot5:removeItemById(slot1.material_id, slot1.material_num * slot5)
+			slot6:sendNotification(GAME.COMPOSITE_EQUIPMENT_DONE, {
 				equipment = Equipment.New({
-					id = uv1.equip_id
+					id = slot1.equip_id
 				}),
-				count = uv2,
-				composeId = uv7
+				count = slot2,
+				composeId = slot1.equip_id
 			})
 		else
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("equipment_compositeEquipment", slot0.result))

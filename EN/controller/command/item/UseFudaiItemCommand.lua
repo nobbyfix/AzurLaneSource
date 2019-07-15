@@ -21,22 +21,20 @@ class("UseFudaiItemCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		count = slot4
 	}, 15003, function (slot0)
 		if slot0.result == 0 then
-			slot1 = {}
+			slot0:removeItemById({}, slot0.removeItemById)
 
-			uv0:removeItemById(uv1, uv2)
-
-			if uv3.usage == ItemUsage.DROP then
+			if slot3.usage == ItemUsage.DROP then
 				for slot5, slot6 in pairs(slot1) do
-					uv4:sendNotification(GAME.ADD_ITEM, slot6)
+					slot4:sendNotification(GAME.ADD_ITEM, slot6)
 				end
 			end
 
-			if uv5 then
-				uv5(slot1)
+			if slot5 then
+				slot5(slot1)
 			end
 		else
-			if uv5 then
-				uv5({})
+			if slot5 then
+				slot5({})
 			end
 
 			pg.TipsMgr:GetInstance():ShowTips(errorTip("", slot0.result))
