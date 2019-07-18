@@ -1,0 +1,350 @@
+pg = pg or {}
+pg.ConnectionMgr = singletonClass("ConnectionMgr")
+slot2 = createLog("ConnectionMgr", LOG_CONNECTION)
+slot3, slot4, slot5, slot6 = nil
+slot7 = false
+slot8 = {}
+slot9, slot10, slot11, slot12 = nil
+pg.ConnectionMgr.needStartSend = false
+
+pg.ConnectionMgr.Connect = function (slot0, slot1, slot2, slot3, slot4)
+	slot0.erroCode = slot4
+
+	slot2.UIMgr.GetInstance():LoadingOn()
+	slot1.onConnected:AddListener(function ()
+
+		-- Decompilation error in this vicinity:
+		slot0.UIMgr.GetInstance():LoadingOff()
+
+		-- Decompilation error in this vicinity:
+		slot0.UIMgr.GetInstance()("Network Connected.")
+
+		slot2 = slot3
+		slot4 = slot5
+		slot0 = slot6 or slot0.SendWindow.New(slot7, 0)
+
+		slot8.onData:AddListener(slot6.onData)
+
+		slot9 = true
+		slot10 = false
+
+		slot11()
+		slot7:resetHBTimer()
+	end)
+	slot1.onData:AddListener(slot0.onData)
+	slot1.onError:AddListener(slot0.onError)
+	slot1.onDisconnected:AddListener(slot0.onDisconnected)
+
+	slot8 = true
+
+	slot1:Connect()
+end
+
+pg.ConnectionMgr.ConnectByDomain = function (slot0, slot1, slot2)
+	slot0:Connect(LuaHelper.getHostByDomain(slot1), DEFAULT_PORT, slot2)
+end
+
+pg.ConnectionMgr.Reconnect = function (slot0, slot1)
+	if not slot0 or not slot1 then
+		warning("Network is not connected.")
+
+		return
+	end
+
+	if slot2 then
+		warning("connecting, please wait...")
+
+		return
+	end
+
+	slot3 = slot1
+
+	slot0:stopHBTimer()
+	slot4:stopTimer()
+	slot0:Connect(slot0:GetLastHost(), slot0:GetLastPort(), function ()
+		slot1 = getProxy(UserProxy).getData(slot0)
+
+		if BilibiliSdkMgr.inst.channelUID == "" then
+			slot2 = PLATFORM_LOCAL
+		end
+
+		if not slot1 or not slot1:isLogin() then
+			if slot0.currentCS == 10020 and slot1 ~= DISCONNECT_TIME_OUT then
+				slot2.needStartSend = false
+
+				slot0:StartSend()
+			else
+				slot3.m02:sendNotification(GAME.LOGOUT, {
+					code = 3
+				})
+			end
+
+			return
+		end
+
+		slot0:Send(10022, {
+			platform = slot2,
+			account_id = slot1.uid,
+			server_ticket = slot1.token,
+			serverid = slot1.server,
+			check_key = HashUtil.CalcMD5(slot1.token .. AABBUDUD),
+			device_id = getDeviceId()
+		}, 10023, function (slot0)
+			if slot0.result == 0 then
+				print("reconnect success: " .. slot0.user_id, " - ", slot0.server_ticket)
+
+				slot0.token = slot0.server_ticket
+
+				slot0:setLastLogin(slot0)
+				slot2()
+
+				if slot0 ~= DISCONNECT_TIME_OUT and slot4:getPacketIdx() > 0 then
+					slot5.needStartSend = false
+
+					slot4:Send(11001, {
+						timestamp = 1
+					}, 11002, function (slot0)
+						slot0.TimeMgr.GetInstance():SetServerTime(slot0.timestamp, slot0.monday_0oclock_timestamp)
+						slot0.m02:sendNotification(GAME.CHANGE_CHAT_ROOM, 0)
+					end)
+				elseif slot5.needStartSend then
+					slot5.needStartSend = false
+
+					slot4:StartSend()
+				end
+
+				slot3 = nil
+
+				slot6.SecondaryPWDMgr:GetInstance():FetchData()
+				slot6.GuideMgr:GetInstance():onReconneceted()
+			else
+				print("reconnect failed: " .. slot0.result)
+				slot6.m02:sendNotification(GAME.LOGOUT, {
+					code = 99,
+					tip = slot0.result
+				})
+			end
+		end, false, false)
+	end)
+end
+
+pg.ConnectionMgr.onDisconnected = function (slot0, slot1)
+	slot0("Network onDisconnected: " .. tostring(slot0))
+
+	slot1 = slot1
+
+	if slot0 then
+		if not slot0 then
+			slot2.onDisconnected:RemoveAllListeners()
+		end
+
+		slot2:Dispose()
+
+		slot2 = nil
+	end
+
+	if slot0 then
+		slot3 = false
+	end
+
+	if slot4 then
+		slot5.UIMgr.GetInstance():LoadingOff()
+	end
+
+	slot4 = false
+end
+
+pg.ConnectionMgr.onData = function (slot0)
+	if slot0[slot0.cmd] then
+		slot1 = slot1.Packer.GetInstance():Unpack(slot0.cmd, slot0:getLuaStringBuffer())
+
+		for slot5, slot6 in ipairs(slot0[slot0.cmd]) do
+			slot6(slot1)
+		end
+	end
+end
+
+pg.ConnectionMgr.onError = function (slot0)
+	slot0.UIMgr.GetInstance():LoadingOff()
+
+	-- Decompilation error in this vicinity:
+	tostring(slot0)("Network Error: " .. 
+	-- Decompilation error in this vicinity:
+	tostring(slot0))
+
+	if "Network Error: " .. 
+	-- Decompilation error in this vicinity:
+	tostring(slot0) then
+		slot2:Dispose()
+
+		slot2 = nil
+	end
+
+	function slot1()
+		slot0.m02.sendNotification(slot1, GAME.LOGOUT, {
+			code = slot1.erroCode or 3
+		})
+	end
+
+	function slot2()
+		return
+	end
+
+	if slot4 then
+		slot4 = false
+		slot2 = slot5
+	end
+
+	slot0.ConnectionMgr.GetInstance():CheckProxyCounter()
+
+	if slot6 and slot7 then
+		slot0.ConnectionMgr.GetInstance():stopHBTimer()
+
+		if table.contains({
+			"NotSocket"
+		}, slot0) then
+			slot0.ConnectionMgr.GetInstance():Reconnect(slot2)
+		else
+			slot0.MsgboxMgr.GetInstance():ShowMsgBox({
+				modal = true,
+				content = i18n("reconnect_tip", slot0),
+				onYes = function ()
+					slot0.ConnectionMgr.GetInstance():Reconnect(slot0.ConnectionMgr.GetInstance())
+				end,
+				onNo = slot1,
+				weight = LayerWeightConst.TOP_LAYER
+			})
+			slot0.GuideMgr:GetInstance():onDisconnected()
+		end
+	else
+		slot1()
+	end
+end
+
+pg.ConnectionMgr.Send = function (slot0, slot1, slot2, slot3, slot4, slot5)
+	if not slot0 then
+		warning("Network is not connected. msgid " .. slot1)
+		slot1.m02:sendNotification(GAME.LOGOUT, {
+			code = 5
+		})
+
+		return
+	end
+
+	slot2:Queue(slot1, slot2, slot3, slot4, slot5)
+end
+
+pg.ConnectionMgr.setPacketIdx = function (slot0, slot1)
+	slot0:setPacketIdx(slot1)
+end
+
+pg.ConnectionMgr.On = function (slot0, slot1, slot2)
+	if slot0[slot1] == nil then
+		slot0[slot1] = {}
+	end
+
+	table.insert(slot0[slot1], slot2)
+end
+
+pg.ConnectionMgr.Off = function (slot0, slot1, slot2)
+	if slot0[slot1] == nil then
+		return
+	end
+
+	if slot2 == nil then
+		slot0[slot1] = nil
+	else
+		for slot6, slot7 in ipairs(slot0[slot1]) do
+			if slot7 == slot2 then
+				table.remove(slot0[slot1], slot6)
+
+				break
+			end
+		end
+	end
+end
+
+pg.ConnectionMgr.Disconnect = function (slot0)
+	slot0:stopHBTimer()
+
+	slot0 = 
+	-- Decompilation error in this vicinity:
+	{}
+
+
+	-- Decompilation error in this vicinity:
+	("Manually Disconnect !!!")
+
+	if "Manually Disconnect !!!" then
+		slot2:Dispose()
+
+		slot2 = nil
+	end
+
+	slot3 = nil
+	slot4 = nil
+	lastProxyHost = nil
+	lastProxyPort = nil
+	slot5 = nil
+	slot6 = false
+end
+
+pg.ConnectionMgr.getConnection = function (slot0)
+	return slot0
+end
+
+pg.ConnectionMgr.isConnecting = function (slot0)
+	return slot0
+end
+
+pg.ConnectionMgr.isConnected = function (slot0)
+	return slot0
+end
+
+pg.ConnectionMgr.stopHBTimer = function (slot0)
+	if slot0 then
+		slot0:Stop()
+
+		slot0 = nil
+	end
+end
+
+pg.ConnectionMgr.resetHBTimer = function (slot0)
+	slot0:stopHBTimer()
+	slot0:Start()
+end
+
+slot13 = 0
+slot14 = 2
+slot15, slot16 = nil
+
+pg.ConnectionMgr.SetProxyHost = function (slot0, slot1, slot2)
+	slot0 = slot1
+	slot1 = slot2
+end
+
+pg.ConnectionMgr.GetLastHost = function (slot0)
+	if VersionMgr.Inst:OnProxyUsing() and slot0 ~= nil and slot0 ~= "" then
+		return slot0
+	end
+
+	return slot1
+end
+
+pg.ConnectionMgr.GetLastPort = function (slot0)
+	if VersionMgr.Inst:OnProxyUsing() and slot0 ~= nil and slot0 ~= 0 then
+		return slot0
+	end
+
+	return slot1
+end
+
+pg.ConnectionMgr.CheckProxyCounter = function (slot0)
+	slot0 = slot0 + 1
+
+	if not VersionMgr.Inst:OnProxyUsing() and slot0 ==  then
+		VersionMgr.Inst:SetUseProxy(true)
+	end
+end
+
+return

@@ -1,0 +1,21 @@
+return {
+	"gantanhao",
+	"Health",
+	"jineng",
+	"Shield",
+	"zhuoshao",
+	"jinengchufablue",
+	"jinengchufared",
+	"shield02",
+	"feijiyingzi",
+	"Darkness",
+	"hongsebuff",
+	"ginbuli_skill",
+	"kinbuli_skill",
+	"EVDdowm",
+	"Pojia01",
+	"zhihuiRing02",
+	"fangkongRing02",
+	"zhihuiRing02_buff",
+	"bisimai_buff"
+}
