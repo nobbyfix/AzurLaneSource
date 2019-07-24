@@ -112,18 +112,19 @@ slot0.AddListener = function (slot0)
 		slot0:emit(LevelUIConst.SWITCH_TO_MAP)
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.retreatBtn, function ()
-		slot1 = "levelScene_whether_to_retreat"
+		slot1 = slot0.contextData.map
+		slot2 = "levelScene_whether_to_retreat"
 
 		if slot0.contextData.chapterVO:existOni() then
-			slot1 = "levelScene_oni_retreat"
+			slot2 = "levelScene_oni_retreat"
 		elseif slot0:isPlayingWithBombEnemy() then
-			slot1 = "levelScene_bomb_retreat"
-		elseif slot0:getPlayType() == ChapterConst.TypeTransport then
-			slot1 = "levelScene_escort_retreat"
+			slot2 = "levelScene_bomb_retreat"
+		elseif slot0:getPlayType() == ChapterConst.TypeTransport and not slot1:isSkirmish() then
+			slot2 = "levelScene_escort_retreat"
 		end
 
 		slot0:HandleShowMsgBox({
-			content = i18n(slot1),
+			content = i18n(slot2),
 			onYes = function ()
 				slot0:emit(LevelMediator2.ON_OP, {
 					type = ChapterConst.OpRetreat
@@ -3863,76 +3864,26 @@ slot0.tryAutoAction = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 37-48, warpins: 2 ---
+		--- BLOCK #4 37-42, warpins: 2 ---
 		slot2 = slot0:isPlayingWithBombEnemy()
 
-		if (slot0:findChapterCell(ChapterConst.AttachBoss) and slot3.flag == 1) or slot0:existOni() then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 58-66, warpins: 2 ---
-			if slot0:getDefeatStory(slot0.defeatCount) and type(slot5) == "number" and not pg.StoryMgr.GetInstance():IsPlayed(slot5) then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 82-97, warpins: 1 ---
-				pg.m02:sendNotification(GAME.STORY_UPDATE, {
-					storyId = slot5
-				})
-				slot1:emit(LevelMediator2.ON_PERFORM_COMBAT, slot5)
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 98-99, warpins: 4 ---
-			if slot5 and type(slot5) == "string" then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 105-112, warpins: 1 ---
-				pg.StoryMgr.GetInstance():Play(slot5)
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-			--- END OF BLOCK #1 ---
-
-
-
-		end
-
-		--- END OF BLOCK #4 ---
-
-		FLOW; TARGET BLOCK #5
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #5 113-114, warpins: 4 ---
 		if slot0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 115-122, warpins: 1 ---
+			--- BLOCK #0 43-50, warpins: 1 ---
 			slot1:emit(LevelUIConst.FROZEN)
 
 			if slot1 or slot2 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 125-127, warpins: 2 ---
-				slot4 = nil
+				--- BLOCK #0 53-55, warpins: 2 ---
+				slot3 = nil
 
 				if slot1 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 128-128, warpins: 1 ---
-					slot4 = "SpUnit"
+					--- BLOCK #0 56-56, warpins: 1 ---
+					slot3 = "SpUnit"
 					--- END OF BLOCK #0 ---
 
 
@@ -3946,12 +3897,12 @@ slot0.tryAutoAction = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 129-130, warpins: 2 ---
+				--- BLOCK #1 57-58, warpins: 2 ---
 				if slot2 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 131-131, warpins: 1 ---
-					slot4 = "SpBomb"
+					--- BLOCK #0 59-59, warpins: 1 ---
+					slot3 = "SpBomb"
 					--- END OF BLOCK #0 ---
 
 
@@ -3965,12 +3916,12 @@ slot0.tryAutoAction = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #2 132-133, warpins: 2 ---
-				if slot4 then
+				--- BLOCK #2 60-61, warpins: 2 ---
+				if slot3 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 134-142, warpins: 1 ---
-					slot1:doPlayAnim(slot4, function (slot0)
+					--- BLOCK #0 62-70, warpins: 1 ---
+					slot1:doPlayAnim(slot3, function (slot0)
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 1-7, warpins: 1 ---
@@ -3997,12 +3948,12 @@ slot0.tryAutoAction = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #3 143-148, warpins: 2 ---
-				if slot0:getSpAppearStory() and #slot5 > 0 then
+				--- BLOCK #3 71-76, warpins: 2 ---
+				if slot0:getSpAppearStory() and #slot4 > 0 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 153-165, warpins: 1 ---
-					pg.StoryMgr.GetInstance():Play(slot5, function ()
+					--- BLOCK #0 81-93, warpins: 1 ---
+					pg.StoryMgr.GetInstance():Play(slot4, function ()
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 1-6, warpins: 1 ---
@@ -4053,7 +4004,7 @@ slot0.tryAutoAction = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 166-175, warpins: 1 ---
+				--- BLOCK #0 94-103, warpins: 1 ---
 				slot1:emit(LevelUIConst.DO_TRACKING, slot2)
 				coroutine.yield()
 				--- END OF BLOCK #0 ---
@@ -4069,11 +4020,11 @@ slot0.tryAutoAction = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 176-180, warpins: 4 ---
+			--- BLOCK #1 104-108, warpins: 4 ---
 			if not slot1.contextData.chapterVO then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 181-182, warpins: 1 ---
+				--- BLOCK #0 109-110, warpins: 1 ---
 				return
 				--- END OF BLOCK #0 ---
 
@@ -4088,14 +4039,14 @@ slot0.tryAutoAction = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 183-194, warpins: 2 ---
+			--- BLOCK #2 111-122, warpins: 2 ---
 			slot1:tryPlayChapterStory()
 
-			if slot0:findChapterCell(ChapterConst.AttachBoss) and slot4.trait == ChapterConst.TraitLurk then
+			if slot0:findChapterCell(ChapterConst.AttachBoss) and slot3.trait == ChapterConst.TraitLurk then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 200-209, warpins: 1 ---
-				slot1.grid:focusOnCell(slot4, slot2)
+				--- BLOCK #0 128-137, warpins: 1 ---
+				slot1.grid:focusOnCell(slot3, slot2)
 				coroutine.yield()
 				--- END OF BLOCK #0 ---
 
@@ -4110,7 +4061,7 @@ slot0.tryAutoAction = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 210-255, warpins: 3 ---
+			--- BLOCK #3 138-183, warpins: 3 ---
 			slot1:updateTrait(ChapterConst.TraitVirgin)
 			slot1.grid:updateAttachments()
 			slot1.grid:updateChampions()
@@ -4125,18 +4076,18 @@ slot0.tryAutoAction = function (slot0)
 
 		end
 
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #4 ---
 
-		FLOW; TARGET BLOCK #6
+		FLOW; TARGET BLOCK #5
 
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #6 256-261, warpins: 2 ---
+		--- BLOCK #5 184-189, warpins: 2 ---
 		if not slot1:doSafeCheck() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 262-268, warpins: 1 ---
+			--- BLOCK #0 190-196, warpins: 1 ---
 			slot1.grid:updateQuadCells(ChapterConst.QuadStateNormal)
 			--- END OF BLOCK #0 ---
 
@@ -4144,16 +4095,16 @@ slot0.tryAutoAction = function (slot0)
 
 		end
 
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #5 ---
 
-		FLOW; TARGET BLOCK #7
+		FLOW; TARGET BLOCK #6
 
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #7 269-269, warpins: 2 ---
+		--- BLOCK #6 197-197, warpins: 2 ---
 		return
-		--- END OF BLOCK #7 ---
+		--- END OF BLOCK #6 ---
 
 
 
@@ -4191,8 +4142,8 @@ slot0.tryPlayChapterStory = function (slot0)
 					if PlayerPrefs.GetInt("help_displayed_on_" .. slot0.id, 0) == 0 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 11-24, warpins: 1 ---
-						triggerButton(GameObject.Find("OverlayCamera/Overlay/UIMain/top/bottom_stage/help_button"))
+						--- BLOCK #0 11-22, warpins: 1 ---
+						triggerButton(slot1.helpBtn)
 						PlayerPrefs.SetInt("help_displayed_on_" .. slot0.id, 1)
 						--- END OF BLOCK #0 ---
 
@@ -4207,7 +4158,7 @@ slot0.tryPlayChapterStory = function (slot0)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #1 25-25, warpins: 2 ---
+					--- BLOCK #1 23-23, warpins: 2 ---
 					return
 					--- END OF BLOCK #1 ---
 
@@ -4239,8 +4190,8 @@ slot0.tryPlayChapterStory = function (slot0)
 			if slot4 == 1 and pg.map_event_list[slot1.id] and pg.map_event_list[slot1.id].help_open == 1 and PlayerPrefs.GetInt("help_displayed_on_" .. slot1.id, 0) == 0 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 83-95, warpins: 1 ---
-				triggerButton(GameObject.Find("OverlayCamera/Overlay/UIMain/top/bottom_stage/help_button"))
+				--- BLOCK #0 83-92, warpins: 1 ---
+				triggerButton(slot0.helpBtn)
 				PlayerPrefs.SetInt("help_displayed_on_" .. slot1.id, 1)
 				--- END OF BLOCK #0 ---
 
@@ -4260,11 +4211,11 @@ slot0.tryPlayChapterStory = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 96-101, warpins: 7 ---
+		--- BLOCK #1 93-98, warpins: 7 ---
 		if slot1:getConfig("story_refresh_boss") and slot5 ~= "" and slot1:bossRefreshed() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 109-116, warpins: 1 ---
+			--- BLOCK #0 106-113, warpins: 1 ---
 			pg.StoryMgr.GetInstance():Play(slot5)
 			--- END OF BLOCK #0 ---
 
@@ -4284,11 +4235,11 @@ slot0.tryPlayChapterStory = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 117-123, warpins: 5 ---
+	--- BLOCK #1 114-120, warpins: 5 ---
 	if slot1:getPlayType() == ChapterConst.TypeMainSub then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 124-133, warpins: 1 ---
+		--- BLOCK #0 121-130, warpins: 1 ---
 		pg.StoryMgr:GetInstance():PlayGuide("NG003")
 		--- END OF BLOCK #0 ---
 
@@ -4297,11 +4248,11 @@ slot0.tryPlayChapterStory = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 134-136, warpins: 1 ---
+		--- BLOCK #0 131-133, warpins: 1 ---
 		if slot1.id == 1160002 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 137-145, warpins: 1 ---
+			--- BLOCK #0 134-142, warpins: 1 ---
 			pg.StoryMgr:GetInstance():PlayGuide("NG0011")
 			--- END OF BLOCK #0 ---
 
@@ -4321,7 +4272,7 @@ slot0.tryPlayChapterStory = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 146-147, warpins: 3 ---
+	--- BLOCK #2 143-144, warpins: 3 ---
 	return
 	--- END OF BLOCK #2 ---
 

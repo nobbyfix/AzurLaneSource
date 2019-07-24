@@ -414,4 +414,8 @@ slot0.doTeleportSub = function (slot0)
 	}
 end
 
+slot0.doEnemyRound = function (slot0)
+	slot0.chapter:IncreaseRound()
+end
+
 return slot0

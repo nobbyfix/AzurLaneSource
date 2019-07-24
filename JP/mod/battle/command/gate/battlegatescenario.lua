@@ -161,6 +161,8 @@ function slot1(slot0, slot1)
 		slot1.system = slot2
 		slot2 = slot0.key
 		slot1.token = slot2
+		slot2 = slot0.exitCallback
+		slot1.exitCallback = slot2
 		slot2 = slot10
 		slot3 = slot2
 		slot2 = slot2.sendNotification
@@ -558,7 +560,7 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 24-92, warpins: 3 ---
+		--- BLOCK #2 24-95, warpins: 3 ---
 		slot2 = slot2
 		slot2 = slot2.addShipsExp
 		slot3 = slot0.ship_exp_list
@@ -604,6 +606,9 @@ function slot1(slot0, slot1)
 		slot6 = slot0.result
 		slot5.result = slot6
 		slot5.extraDrops = slot4
+		slot6 = slot3
+		slot6 = slot6.exitCallback
+		slot5.exitCallback = slot6
 		slot6 = slot2
 		slot7 = slot6
 		slot6 = slot6.sendNotification
@@ -645,11 +650,11 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 93-100, warpins: 0 ---
+		--- BLOCK #3 96-103, warpins: 0 ---
 		for slot12, slot13 in slot9, slot10, slot11 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 93-97, warpins: 1 ---
+			--- BLOCK #0 96-100, warpins: 1 ---
 			slot15 = slot13
 			slot14 = slot13.isUnlock
 			slot14 = slot14(slot15)
@@ -657,7 +662,7 @@ function slot1(slot0, slot1)
 			if slot14 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 98-98, warpins: 1 ---
+				--- BLOCK #0 101-101, warpins: 1 ---
 				slot8 = slot13.id
 				--- END OF BLOCK #0 ---
 
@@ -671,7 +676,7 @@ function slot1(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 99-100, warpins: 3 ---
+			--- BLOCK #1 102-103, warpins: 3 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -685,7 +690,7 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 101-115, warpins: 1 ---
+		--- BLOCK #4 104-118, warpins: 1 ---
 		slot9 = slot8
 		slot10 = slot9
 		slot9 = slot9.updateChapter
@@ -710,11 +715,11 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #5 116-123, warpins: 0 ---
+		--- BLOCK #5 119-126, warpins: 0 ---
 		for slot13, slot14 in slot10, slot11, slot12 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 116-120, warpins: 1 ---
+			--- BLOCK #0 119-123, warpins: 1 ---
 			slot16 = slot14
 			slot15 = slot14.isUnlock
 			slot15 = slot15(slot16)
@@ -722,7 +727,7 @@ function slot1(slot0, slot1)
 			if slot15 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 121-121, warpins: 1 ---
+				--- BLOCK #0 124-124, warpins: 1 ---
 				slot9 = slot14.id
 				--- END OF BLOCK #0 ---
 
@@ -736,7 +741,7 @@ function slot1(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 122-123, warpins: 3 ---
+			--- BLOCK #1 125-126, warpins: 3 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -750,14 +755,14 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #6 124-127, warpins: 1 ---
+		--- BLOCK #6 127-130, warpins: 1 ---
 		slot10 = Map
 		slot10 = slot10.lastMap
 
 		if slot10 and slot9 ~= slot8 and slot8 < slot9 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 132-134, warpins: 1 ---
+			--- BLOCK #0 135-137, warpins: 1 ---
 			slot10 = Map
 			slot11 = true
 			slot10.autoNextPage = slot11
@@ -774,7 +779,7 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #7 135-135, warpins: 4 ---
+		--- BLOCK #7 138-138, warpins: 4 ---
 		return
 		--- END OF BLOCK #7 ---
 
