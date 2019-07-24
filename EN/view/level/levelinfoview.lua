@@ -299,8 +299,6 @@ slot0.getChapterAwards = function (slot0)
 		end
 	end
 
-	print("\n" .. PrintTable(slot5))
-
 	return slot2
 end
 
