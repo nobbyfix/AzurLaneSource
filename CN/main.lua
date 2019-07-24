@@ -152,6 +152,10 @@ function OnApplicationExit()
 		return
 	end
 
+	if pg.goldExchangeMgr then
+		pg.goldExchangeMgr:willExit()
+	end
+
 	slot11:onBackPressed()
 end
 
@@ -253,6 +257,7 @@ function PayFailed(slot0, slot1)
 	end
 end
 
+pg.goldExchangeMgr = nil
 slot2 = os.clock()
 
 seriesAsync({

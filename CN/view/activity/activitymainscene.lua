@@ -92,6 +92,10 @@ slot1 = {
 	[ActivityConst.I56_SKIN_ACTIVITY_ID] = {
 		className = "I56SkinPage",
 		uiName = "i56skinPage"
+	},
+	[ActivityConst.ACTIVITY_ID_US_SKIRMISH] = {
+		className = "USSkirmishPage",
+		uiName = "usskirmishpage"
 	}
 }
 slot2 = {}
@@ -102,6 +106,10 @@ end
 
 slot0.getUIName = function (slot0)
 	return "ActivityMainUI"
+end
+
+slot0.getBGM = function (slot0)
+	return "main"
 end
 
 slot0.onBackPressed = function (slot0)

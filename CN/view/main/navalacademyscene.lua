@@ -1468,17 +1468,26 @@ slot0.onTask = function (slot0, slot1, slot2)
 			if slot4:getActivityByType(ActivityConst.ACTIVITY_TYPE_ZPROJECT) and _.detect(slot8:getConfig("config_data"), function (slot0)
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-8, warpins: 1 ---
-				return pg.chapter_template[slot0].npc_data[3] == slot0
+				--- BLOCK #0 1-9, warpins: 1 ---
+				return _.any(pg.chapter_template[slot0].npc_data, function (slot0)
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-7, warpins: 1 ---
+					return pg.npc_squad_template[slot0].task_id == slot0
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 11-11, warpins: 2 ---
+					--- END OF BLOCK #1 ---
+
+
+
+				end)
 				--- END OF BLOCK #0 ---
-
-				FLOW; TARGET BLOCK #1
-
-
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #1 12-12, warpins: 2 ---
-				--- END OF BLOCK #1 ---
 
 
 

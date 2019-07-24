@@ -26,6 +26,8 @@ ys.Battle.BattleStoryWave.DoWave = function (slot0)
 	end
 
 	if slot1 then
+		pg.MsgboxMgr.GetInstance():hide()
+
 		if pg.StoryMgr.GetInstance():Play(slot0._storyID, function (slot0)
 			if slot0 then
 				slot0:doFail()
