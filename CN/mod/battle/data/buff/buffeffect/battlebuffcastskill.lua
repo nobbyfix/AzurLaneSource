@@ -29,6 +29,7 @@ ys.Battle.BattleBuffCastSkill.SetArgs = function (slot0, slot1, slot2)
 	slot0._minWeaponNumber = slot3.minWeaponNumber or 0
 	slot0._maxWeaponNumber = slot3.maxWeaponNumber or 10000
 	slot0._rant = slot3.rant or 10000
+	slot0._streak = slot3.streakRange
 	slot0._group = slot3.group
 end
 
@@ -89,6 +90,10 @@ ys.Battle.BattleBuffCastSkill.castSkill = function (slot0, slot1, slot2)
 		end
 	end
 
+	if slot0._streak and not slot1.GetWinningStreak(slot0._streak) then
+		return "check"
+	end
+
 	slot1.super.onTrigger(slot0, slot1)
 
 	for slot8, slot9 in ipairs(slot4) do
@@ -142,6 +147,10 @@ ys.Battle.BattleBuffCastSkill.Clear = function (slot0)
 	if slot0._skill then
 		slot0._skill:Clear()
 	end
+end
+
+ys.Battle.BattleBuffCastSkill.GetWinningStreak = function (slot0)
+	return slot0[1] <= slot0.Battle.BattleDataProxy:GetInstance():GetWinningStreak() and slot1 < slot0[2]
 end
 
 ys.Battle.BattleBuffCastSkill.GetEquipmentList = function (slot0, slot1)

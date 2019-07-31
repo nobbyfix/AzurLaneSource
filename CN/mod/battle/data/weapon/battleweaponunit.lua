@@ -42,12 +42,12 @@ slot6.SetPotentialFactor = function (slot0, slot1)
 	end
 end
 
-slot6.SetEquipmentInfo = function (slot0, slot1)
-	slot0._nationality = slot1
+slot6.GetEquipmentLabel = function (slot0)
+	return slot0._equipmentLabelList or {}
 end
 
-slot6.GetNationality = function (slot0)
-	return slot0._nationality or 0
+slot6.SetEquipmentLabel = function (slot0, slot1)
+	slot0._equipmentLabelList = slot1
 end
 
 slot6.SetTemplateData = function (slot0, slot1)

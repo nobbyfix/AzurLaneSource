@@ -3948,22 +3948,32 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 33-38, warpins: 2 ---
-				slot3 = findTF
-				slot4 = slot0
-				slot5 = "shadow"
-				slot3 = slot3(slot4, slot5)
+				--- BLOCK #1 33-36, warpins: 2 ---
+				slot3 = slot1
+				slot3 = slot3.paingtingGray
 
 				if slot3 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 39-43, warpins: 1 ---
-					slot4 = setActive
-					slot5 = slot3
-					slot6 = slot1
-					slot6 = slot6.actorShadow
+					--- BLOCK #0 37-41, warpins: 1 ---
+					slot3 = setGray
+					slot4 = slot0
+					slot5 = true
 
-					slot4(slot5, slot6)
+					slot3(slot4, slot5)
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 42-45, warpins: 1 ---
+					slot3 = setGray
+					slot4 = slot0
+					slot5 = false
+
+					slot3(slot4, slot5)
 					--- END OF BLOCK #0 ---
 
 
@@ -3977,40 +3987,22 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #2 44-50, warpins: 2 ---
-				slot4 = defaultValue
-				slot5 = slot1
-				slot5 = slot5.recordPaint
-				slot6 = true
-				slot4 = slot4(slot5, slot6)
+				--- BLOCK #2 46-51, warpins: 2 ---
+				slot3 = findTF
+				slot4 = slot0
+				slot5 = "shadow"
+				slot3 = slot3(slot4, slot5)
 
-				if slot4 then
+				if slot3 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 51-55, warpins: 1 ---
-					slot4 = slot2
+					--- BLOCK #0 52-56, warpins: 1 ---
+					slot4 = setActive
 					slot5 = slot3
-					slot5 = slot5.CENTER
+					slot6 = slot1
+					slot6 = slot6.actorShadow
 
-					if slot4 == slot5 then
-
-						-- Decompilation error in this vicinity:
-						--- BLOCK #0 56-57, warpins: 1 ---
-						slot4 = false
-						--- END OF BLOCK #0 ---
-
-
-
-					else
-
-						-- Decompilation error in this vicinity:
-						--- BLOCK #0 58-58, warpins: 1 ---
-						slot4 = true
-						--- END OF BLOCK #0 ---
-
-
-
-					end
+					slot4(slot5, slot6)
 					--- END OF BLOCK #0 ---
 
 
@@ -4024,15 +4016,40 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #3 59-62, warpins: 3 ---
+				--- BLOCK #3 57-63, warpins: 2 ---
+				slot4 = defaultValue
 				slot5 = slot1
-				slot5 = slot5.actorScale
+				slot5 = slot5.recordPaint
+				slot6 = true
+				slot4 = slot4(slot5, slot6)
 
-				if not slot5 then
+				if slot4 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 63-63, warpins: 1 ---
-					slot5 = 1
+					--- BLOCK #0 64-68, warpins: 1 ---
+					slot4 = slot2
+					slot5 = slot3
+					slot5 = slot5.CENTER
+
+					if slot4 == slot5 then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 69-70, warpins: 1 ---
+						slot4 = false
+						--- END OF BLOCK #0 ---
+
+
+
+					else
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 71-71, warpins: 1 ---
+						slot4 = true
+						--- END OF BLOCK #0 ---
+
+
+
+					end
 					--- END OF BLOCK #0 ---
 
 
@@ -4046,37 +4063,15 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #4 64-67, warpins: 2 ---
-				slot6 = slot1
-				slot6 = slot6.dir
+				--- BLOCK #4 72-75, warpins: 3 ---
+				slot5 = slot1
+				slot5 = slot5.actorScale
 
-				if slot6 then
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 68-72, warpins: 1 ---
-					slot6 = slot1
-					slot6 = slot6.dir
-					slot7 = 0
-
-					if slot6 < slot7 then
-
-						-- Decompilation error in this vicinity:
-						--- BLOCK #0 73-74, warpins: 1 ---
-						slot6 = -1
-						--- END OF BLOCK #0 ---
-
-
-
-					end
-					--- END OF BLOCK #0 ---
-
-
-
-				else
+				if not slot5 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 75-75, warpins: 2 ---
-					slot6 = 1
+					--- BLOCK #0 76-76, warpins: 1 ---
+					slot5 = 1
 					--- END OF BLOCK #0 ---
 
 
@@ -4090,7 +4085,51 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #5 76-87, warpins: 2 ---
+				--- BLOCK #5 77-80, warpins: 2 ---
+				slot6 = slot1
+				slot6 = slot6.dir
+
+				if slot6 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 81-85, warpins: 1 ---
+					slot6 = slot1
+					slot6 = slot6.dir
+					slot7 = 0
+
+					if slot6 < slot7 then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 86-87, warpins: 1 ---
+						slot6 = -1
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 88-88, warpins: 2 ---
+					slot6 = 1
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #5 ---
+
+				FLOW; TARGET BLOCK #6
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #6 89-100, warpins: 2 ---
 				slot7 = slot4
 				slot7 = slot7.transform
 				slot8 = Vector3
@@ -4105,7 +4144,7 @@ function slot17(slot0, slot1)
 				if slot7 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 88-94, warpins: 1 ---
+					--- BLOCK #0 101-107, warpins: 1 ---
 					slot7 = slot5
 					slot7 = slot7.preStep
 					slot7 = slot7.side
@@ -4115,7 +4154,7 @@ function slot17(slot0, slot1)
 					if slot7 == slot8 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 95-100, warpins: 1 ---
+						--- BLOCK #0 108-113, warpins: 1 ---
 						slot7 = slot1
 						slot7 = slot7.side
 						slot8 = slot3
@@ -4124,7 +4163,7 @@ function slot17(slot0, slot1)
 						if slot7 ~= slot8 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 101-111, warpins: 1 ---
+							--- BLOCK #0 114-124, warpins: 1 ---
 							slot7 = slot5
 							slot8 = slot7
 							slot7 = slot7.getTagetActorTF
@@ -4154,21 +4193,21 @@ function slot17(slot0, slot1)
 
 				end
 
-				--- END OF BLOCK #5 ---
+				--- END OF BLOCK #6 ---
 
-				FLOW; TARGET BLOCK #6
+				FLOW; TARGET BLOCK #7
 
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #6 112-115, warpins: 4 ---
+				--- BLOCK #7 125-128, warpins: 4 ---
 				slot7 = slot5
 				slot7 = slot7.targetActorTF
 
 				if slot7 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 116-121, warpins: 1 ---
+					--- BLOCK #0 129-134, warpins: 1 ---
 					slot7 = slot3
 					slot7 = slot7.CENTER
 					slot8 = slot1
@@ -4177,14 +4216,14 @@ function slot17(slot0, slot1)
 					if slot7 ~= slot8 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 122-125, warpins: 1 ---
+						--- BLOCK #0 135-138, warpins: 1 ---
 						slot7 = slot1
 						slot7 = slot7.hideOther
 
 						if not slot7 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 126-140, warpins: 1 ---
+							--- BLOCK #0 139-153, warpins: 1 ---
 							slot7 = setActive
 							slot8 = slot5
 							slot8 = slot8.targetActorTF
@@ -4204,7 +4243,7 @@ function slot17(slot0, slot1)
 							if not slot11 then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 141-141, warpins: 1 ---
+								--- BLOCK #0 154-154, warpins: 1 ---
 								slot11 = slot7
 								--- END OF BLOCK #0 ---
 
@@ -4219,14 +4258,14 @@ function slot17(slot0, slot1)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #1 142-145, warpins: 2 ---
+							--- BLOCK #1 155-158, warpins: 2 ---
 							slot12 = slot6
 							slot12 = slot12.time
 
 							if not slot12 then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 146-146, warpins: 1 ---
+								--- BLOCK #0 159-159, warpins: 1 ---
 								slot12 = slot8
 								--- END OF BLOCK #0 ---
 
@@ -4241,7 +4280,7 @@ function slot17(slot0, slot1)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #2 147-147, warpins: 2 ---
+							--- BLOCK #2 160-160, warpins: 2 ---
 							slot7(slot8, slot9, slot10, slot11, slot12)
 							--- END OF BLOCK #2 ---
 
@@ -4259,14 +4298,14 @@ function slot17(slot0, slot1)
 
 				end
 
-				--- END OF BLOCK #6 ---
+				--- END OF BLOCK #7 ---
 
-				FLOW; TARGET BLOCK #7
+				FLOW; TARGET BLOCK #8
 
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #7 148-152, warpins: 4 ---
+				--- BLOCK #8 161-165, warpins: 4 ---
 				slot7 = slot5
 				slot7 = slot7.targetActorTF
 				slot8 = slot4
@@ -4274,7 +4313,7 @@ function slot17(slot0, slot1)
 				if slot7 ~= slot8 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 153-160, warpins: 1 ---
+					--- BLOCK #0 166-173, warpins: 1 ---
 					slot7 = slot5
 					slot8 = slot7
 					slot7 = slot7.setFade
@@ -4285,7 +4324,7 @@ function slot17(slot0, slot1)
 					if not slot10 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 161-161, warpins: 1 ---
+						--- BLOCK #0 174-174, warpins: 1 ---
 						slot10 = slot7
 						--- END OF BLOCK #0 ---
 
@@ -4300,7 +4339,7 @@ function slot17(slot0, slot1)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #1 162-166, warpins: 2 ---
+					--- BLOCK #1 175-179, warpins: 2 ---
 					slot11 = 1
 					slot12 = slot6
 					slot12 = slot12.time
@@ -4308,7 +4347,7 @@ function slot17(slot0, slot1)
 					if not slot12 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 167-167, warpins: 1 ---
+						--- BLOCK #0 180-180, warpins: 1 ---
 						slot12 = slot8
 						--- END OF BLOCK #0 ---
 
@@ -4323,7 +4362,7 @@ function slot17(slot0, slot1)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #2 168-171, warpins: 2 ---
+					--- BLOCK #2 181-184, warpins: 2 ---
 					slot7(slot8, slot9, slot10, slot11, slot12)
 
 					slot7 = slot5
@@ -4335,16 +4374,16 @@ function slot17(slot0, slot1)
 
 				end
 
-				--- END OF BLOCK #7 ---
+				--- END OF BLOCK #8 ---
 
-				FLOW; TARGET BLOCK #8
+				FLOW; TARGET BLOCK #9
 
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #8 172-172, warpins: 2 ---
+				--- BLOCK #9 185-185, warpins: 2 ---
 				return
-				--- END OF BLOCK #8 ---
+				--- END OF BLOCK #9 ---
 
 
 
