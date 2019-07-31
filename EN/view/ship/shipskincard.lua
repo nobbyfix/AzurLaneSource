@@ -29,7 +29,7 @@ slot0.updateSkin = function (slot0, slot1, slot2)
 
 		setActive(slot0.nameBar, true)
 		setActive(slot0.effectBar, false)
-		setText(slot0.name, HXSet.hxLan(slot1.name))
+		setText(slot0.name, shortenString(HXSet.hxLan(slot1.name), 7))
 		setActive(slot0.bgMark, not slot2)
 
 		if not slot2 then
@@ -69,7 +69,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 	if slot0.ship == slot1 and slot0.skin == slot2 and slot0.own ~= slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 10-36, warpins: 3 ---
+		--- BLOCK #0 10-39, warpins: 3 ---
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -77,7 +77,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 47-52, warpins: 3 ---
+		--- BLOCK #1 50-55, warpins: 3 ---
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
@@ -85,7 +85,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 112-121, warpins: 5 ---
+		--- BLOCK #2 115-124, warpins: 5 ---
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
@@ -93,7 +93,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 122-130, warpins: 0 ---
+		--- BLOCK #3 125-133, warpins: 0 ---
 		--- END OF BLOCK #3 ---
 
 		FLOW; TARGET BLOCK #4
@@ -101,11 +101,11 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 131-148, warpins: 1 ---
+		--- BLOCK #4 134-151, warpins: 1 ---
 		if slot0.skin.id ~= slot0.ship:getConfig("skin_id") then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 37-38, warpins: 1 ---
+			--- BLOCK #0 40-41, warpins: 1 ---
 			slot4 = false
 			--- END OF BLOCK #0 ---
 
@@ -114,7 +114,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 39-39, warpins: 1 ---
+			--- BLOCK #0 42-42, warpins: 1 ---
 			slot4 = true
 			--- END OF BLOCK #0 ---
 
@@ -123,7 +123,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 40-41, warpins: 2 ---
+			--- BLOCK #1 43-44, warpins: 2 ---
 			--- END OF BLOCK #1 ---
 
 			FLOW; TARGET BLOCK #1
@@ -131,19 +131,19 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 42-43, warpins: 1 ---
+			--- BLOCK #2 45-46, warpins: 1 ---
 			slot5 = not slot3
 
 			if not slot3 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 44-45, warpins: 1 ---
+				--- BLOCK #0 47-48, warpins: 1 ---
 				slot5 = false
 
 				if false then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 46-46, warpins: 0 ---
+					--- BLOCK #0 49-49, warpins: 0 ---
 					slot5 = true
 					--- END OF BLOCK #0 ---
 
@@ -167,7 +167,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 		setActive(slot0.nameBar, true)
 		setActive(slot0.effectBar, false)
-		setText(slot0.name, HXSet.hxLan(slot2.name))
+		setText(slot0.name, shortenString(HXSet.hxLan(slot2.name), 7))
 
 		slot4 = slot0.skin.id == slot0.ship:getConfig("skin_id")
 
@@ -176,7 +176,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 		if not (slot0.skin.id == slot0.ship.getConfig("skin_id")) and not slot3 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 53-69, warpins: 1 ---
+			--- BLOCK #0 56-72, warpins: 1 ---
 			setActive(slot0.picNotBuy, false)
 			setActive(slot0.picActivity, false)
 			setActive(slot0.picPropose, false)
@@ -184,7 +184,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 			if slot2.skin_type == Ship.SKIN_TYPE_PROPOSE then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 70-74, warpins: 1 ---
+				--- BLOCK #0 73-77, warpins: 1 ---
 				setActive(slot0.picPropose, true)
 				--- END OF BLOCK #0 ---
 
@@ -193,11 +193,11 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 75-79, warpins: 1 ---
+				--- BLOCK #0 78-82, warpins: 1 ---
 				if slot0.skin.shop_id > 0 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 80-84, warpins: 1 ---
+					--- BLOCK #0 83-87, warpins: 1 ---
 					setActive(slot0.picNotBuy, true)
 					--- END OF BLOCK #0 ---
 
@@ -206,7 +206,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 85-93, warpins: 1 ---
+					--- BLOCK #0 88-96, warpins: 1 ---
 					if _.any(pg.activity_shop_template.all, function (slot0)
 
 						-- Decompilation error in this vicinity:
@@ -284,7 +284,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 					end) then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 103-107, warpins: 2 ---
+						--- BLOCK #0 106-110, warpins: 2 ---
 						setActive(slot0.picActivity, true)
 						--- END OF BLOCK #0 ---
 
@@ -293,7 +293,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 108-111, warpins: 1 ---
+						--- BLOCK #0 111-114, warpins: 1 ---
 						setActive(slot0.picActivity, true)
 						--- END OF BLOCK #0 ---
 
@@ -321,7 +321,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 		for slot9 = 0, slot0.tags.childCount - 1, 1 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 122-130, warpins: 2 ---
+			--- BLOCK #0 125-133, warpins: 2 ---
 			setActive(slot0.tags:GetChild(slot9), false)
 			--- END OF BLOCK #0 ---
 
@@ -352,11 +352,11 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #5 149-153, warpins: 1 ---
+		--- BLOCK #5 152-156, warpins: 1 ---
 		if slot6.isExpireType() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 154-157, warpins: 1 ---
+			--- BLOCK #0 157-160, warpins: 1 ---
 			slot7 = not slot6.isExpired()
 			--- END OF BLOCK #0 ---
 
@@ -371,11 +371,11 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #6 158-168, warpins: 3 ---
+		--- BLOCK #6 161-171, warpins: 3 ---
 		if slot0.skinTimer then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 169-172, warpins: 1 ---
+			--- BLOCK #0 172-175, warpins: 1 ---
 			slot0.skinTimer:Stop()
 			--- END OF BLOCK #0 ---
 
@@ -390,11 +390,11 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #7 173-174, warpins: 2 ---
+		--- BLOCK #7 176-177, warpins: 2 ---
 		if slot7 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 175-188, warpins: 1 ---
+			--- BLOCK #0 178-191, warpins: 1 ---
 			slot0.skinTimer = Timer.New(function ()
 
 				-- Decompilation error in this vicinity:
@@ -422,7 +422,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #8 189-189, warpins: 2 ---
+		--- BLOCK #8 192-192, warpins: 2 ---
 		--- END OF BLOCK #8 ---
 
 

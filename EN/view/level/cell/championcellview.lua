@@ -12,4 +12,8 @@ slot0.getOrder = function (slot0)
 	return 2
 end
 
+slot0.SetActive = function (slot0, slot1)
+	slot0.go:SetActive(slot1)
+end
+
 return slot0

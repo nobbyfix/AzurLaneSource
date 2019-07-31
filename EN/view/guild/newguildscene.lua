@@ -160,13 +160,43 @@ slot0.selectFaction = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 6-18, warpins: 1 ---
+		--- BLOCK #1 6-14, warpins: 1 ---
 		slot1:setFaction(Guild.FACTION_TYPE_BLHX)
-		slot2()
+
+		if Guild.FACTION_TYPE_BLHX then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 15-17, warpins: 1 ---
+			slot2()
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 18-18, warpins: 1 ---
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 19-23, warpins: 1 ---
 		slot3(slot4, function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-1, warpins: 1 ---
+			--- BLOCK #0 1-2, warpins: 1 ---
+			slot0 = nil
+
 			return
 			--- END OF BLOCK #0 ---
 
@@ -175,15 +205,23 @@ slot0.selectFaction = function (slot0, slot1, slot2)
 		end)
 
 		return
-		--- END OF BLOCK #1 ---
+		--- END OF BLOCK #2 ---
 
-		FLOW; TARGET BLOCK #2
+		FLOW; TARGET BLOCK #3
 
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 19-19, warpins: 2 ---
-		--- END OF BLOCK #2 ---
+		--- BLOCK #3 24-24, warpins: 2 ---
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 25-25, warpins: 2 ---
+		--- END OF BLOCK #4 ---
 
 
 
@@ -210,13 +248,43 @@ slot0.selectFaction = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 6-18, warpins: 1 ---
+		--- BLOCK #1 6-14, warpins: 1 ---
 		slot1:setFaction(Guild.FACTION_TYPE_CSZZ)
-		slot2()
+
+		if Guild.FACTION_TYPE_CSZZ then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 15-17, warpins: 1 ---
+			slot2()
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 18-18, warpins: 1 ---
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 19-23, warpins: 1 ---
 		slot3(slot4, function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-1, warpins: 1 ---
+			--- BLOCK #0 1-2, warpins: 1 ---
+			slot0 = nil
+
 			return
 			--- END OF BLOCK #0 ---
 
@@ -225,15 +293,23 @@ slot0.selectFaction = function (slot0, slot1, slot2)
 		end)
 
 		return
-		--- END OF BLOCK #1 ---
+		--- END OF BLOCK #2 ---
 
-		FLOW; TARGET BLOCK #2
+		FLOW; TARGET BLOCK #3
 
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 19-19, warpins: 2 ---
-		--- END OF BLOCK #2 ---
+		--- BLOCK #3 24-24, warpins: 2 ---
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 25-25, warpins: 2 ---
+		--- END OF BLOCK #4 ---
 
 
 
