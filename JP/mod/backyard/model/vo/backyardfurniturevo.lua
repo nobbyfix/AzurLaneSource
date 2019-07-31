@@ -501,6 +501,10 @@ slot0.setDir = function (slot0, slot1)
 	slot0.dir = slot1
 end
 
+slot0.isSameDir = function (slot0, slot1)
+	return slot0.dir == slot1
+end
+
 slot0.getConfig = function (slot0, slot1)
 	return pg.furniture_data_template[slot0.configId][slot1]
 end
