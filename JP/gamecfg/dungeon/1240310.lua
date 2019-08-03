@@ -239,7 +239,7 @@ return {
 							delay = 0,
 							chance = 1,
 							corrdinate = {
-								30,
+								15,
 								0,
 								55
 							},

@@ -2,14 +2,14 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttr",
+				type = "BattleBuffAddAttrRatio",
 				trigger = {
 					"onAttach",
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "dodgeRateExtra"
+					number = 2000,
+					attr = "dodgeRate"
 				}
 			}
 		}
@@ -17,14 +17,14 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttr",
+				type = "BattleBuffAddAttrRatio",
 				trigger = {
 					"onAttach",
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.122,
-					attr = "dodgeRateExtra"
+					number = 2220,
+					attr = "dodgeRate"
 				}
 			}
 		}
@@ -32,14 +32,14 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttr",
+				type = "BattleBuffAddAttrRatio",
 				trigger = {
 					"onAttach",
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.144,
-					attr = "dodgeRateExtra"
+					number = 2440,
+					attr = "dodgeRate"
 				}
 			}
 		}
@@ -47,14 +47,14 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttr",
+				type = "BattleBuffAddAttrRatio",
 				trigger = {
 					"onAttach",
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.166,
-					attr = "dodgeRateExtra"
+					number = 2660,
+					attr = "dodgeRate"
 				}
 			}
 		}
@@ -62,14 +62,14 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttr",
+				type = "BattleBuffAddAttrRatio",
 				trigger = {
 					"onAttach",
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.188,
-					attr = "dodgeRateExtra"
+					number = 2880,
+					attr = "dodgeRate"
 				}
 			}
 		}
@@ -77,14 +77,14 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttr",
+				type = "BattleBuffAddAttrRatio",
 				trigger = {
 					"onAttach",
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.21,
-					attr = "dodgeRateExtra"
+					number = 3100,
+					attr = "dodgeRate"
 				}
 			}
 		}
@@ -92,14 +92,14 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttr",
+				type = "BattleBuffAddAttrRatio",
 				trigger = {
 					"onAttach",
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.232,
-					attr = "dodgeRateExtra"
+					number = 3320,
+					attr = "dodgeRate"
 				}
 			}
 		}
@@ -107,14 +107,14 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttr",
+				type = "BattleBuffAddAttrRatio",
 				trigger = {
 					"onAttach",
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.254,
-					attr = "dodgeRateExtra"
+					number = 3540,
+					attr = "dodgeRate"
 				}
 			}
 		}
@@ -122,14 +122,14 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttr",
+				type = "BattleBuffAddAttrRatio",
 				trigger = {
 					"onAttach",
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.276,
-					attr = "dodgeRateExtra"
+					number = 3760,
+					attr = "dodgeRate"
 				}
 			}
 		}
@@ -137,19 +137,19 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttr",
+				type = "BattleBuffAddAttrRatio",
 				trigger = {
 					"onAttach",
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.3,
-					attr = "dodgeRateExtra"
+					number = 4000,
+					attr = "dodgeRate"
 				}
 			}
 		}
 	},
-	name = "回避率上升",
+	name = "机动上升",
 	init_effect = "jinengchufared",
 	id = 12531,
 	time = 5,
@@ -168,14 +168,14 @@ return {
 	},
 	effect_list = {
 		{
-			type = "BattleBuffAddAttr",
+			type = "BattleBuffAddAttrRatio",
 			trigger = {
 				"onAttach",
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "dodgeRateExtra"
+				number = 2000,
+				attr = "dodgeRate"
 			}
 		}
 	}

@@ -44,20 +44,6 @@ return {
 				skill_id = 12441,
 				target = "TargetSelf",
 				streakRange = {
-					8,
-					100
-				}
-			}
-		},
-		{
-			type = "BattleBuffCastSkill",
-			trigger = {
-				"onStartGame"
-			},
-			arg_list = {
-				skill_id = 12441,
-				target = "TargetSelf",
-				streakRange = {
 					7,
 					100
 				}

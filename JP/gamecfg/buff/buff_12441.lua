@@ -8,7 +8,7 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 50,
+					number = 100,
 					attr = "cannonPower"
 				}
 			},
@@ -18,107 +18,7 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					countTarget = 8,
-					countType = 12440
-				}
-			}
-		}
-	},
-	{
-		effect_list = {
-			{
-				type = "BattleBuffAddAttrRatio",
-				trigger = {
-					"onAttach",
-					"onStack"
-				},
-				arg_list = {
-					number = 60,
-					attr = "cannonPower"
-				}
-			},
-			{
-				type = "BattleBuffCount",
-				trigger = {
-					"onStack"
-				},
-				arg_list = {
-					countTarget = 8,
-					countType = 12440
-				}
-			}
-		}
-	},
-	{
-		effect_list = {
-			{
-				type = "BattleBuffAddAttrRatio",
-				trigger = {
-					"onAttach",
-					"onStack"
-				},
-				arg_list = {
-					number = 70,
-					attr = "cannonPower"
-				}
-			},
-			{
-				type = "BattleBuffCount",
-				trigger = {
-					"onStack"
-				},
-				arg_list = {
-					countTarget = 8,
-					countType = 12440
-				}
-			}
-		}
-	},
-	{
-		effect_list = {
-			{
-				type = "BattleBuffAddAttrRatio",
-				trigger = {
-					"onAttach",
-					"onStack"
-				},
-				arg_list = {
-					number = 80,
-					attr = "cannonPower"
-				}
-			},
-			{
-				type = "BattleBuffCount",
-				trigger = {
-					"onStack"
-				},
-				arg_list = {
-					countTarget = 8,
-					countType = 12440
-				}
-			}
-		}
-	},
-	{
-		effect_list = {
-			{
-				type = "BattleBuffAddAttrRatio",
-				trigger = {
-					"onAttach",
-					"onStack"
-				},
-				arg_list = {
-					number = 95,
-					attr = "cannonPower"
-				}
-			},
-			{
-				type = "BattleBuffCount",
-				trigger = {
-					"onStack"
-				},
-				arg_list = {
-					countTarget = 8,
+					countTarget = 7,
 					countType = 12440
 				}
 			}
@@ -143,7 +43,7 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					countTarget = 8,
+					countTarget = 7,
 					countType = 12440
 				}
 			}
@@ -158,7 +58,7 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 125,
+					number = 120,
 					attr = "cannonPower"
 				}
 			},
@@ -168,7 +68,32 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					countTarget = 8,
+					countTarget = 7,
+					countType = 12440
+				}
+			}
+		}
+	},
+	{
+		effect_list = {
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					number = 130,
+					attr = "cannonPower"
+				}
+			},
+			{
+				type = "BattleBuffCount",
+				trigger = {
+					"onStack"
+				},
+				arg_list = {
+					countTarget = 7,
 					countType = 12440
 				}
 			}
@@ -193,7 +118,7 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					countTarget = 8,
+					countTarget = 7,
 					countType = 12440
 				}
 			}
@@ -208,7 +133,7 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 170,
+					number = 160,
 					attr = "cannonPower"
 				}
 			},
@@ -218,7 +143,7 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					countTarget = 8,
+					countTarget = 7,
 					countType = 12440
 				}
 			}
@@ -233,7 +158,7 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 200,
+					number = 175,
 					attr = "cannonPower"
 				}
 			},
@@ -243,7 +168,82 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					countTarget = 8,
+					countTarget = 7,
+					countType = 12440
+				}
+			}
+		}
+	},
+	{
+		effect_list = {
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					number = 195,
+					attr = "cannonPower"
+				}
+			},
+			{
+				type = "BattleBuffCount",
+				trigger = {
+					"onStack"
+				},
+				arg_list = {
+					countTarget = 7,
+					countType = 12440
+				}
+			}
+		}
+	},
+	{
+		effect_list = {
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					number = 220,
+					attr = "cannonPower"
+				}
+			},
+			{
+				type = "BattleBuffCount",
+				trigger = {
+					"onStack"
+				},
+				arg_list = {
+					countTarget = 7,
+					countType = 12440
+				}
+			}
+		}
+	},
+	{
+		effect_list = {
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					number = 250,
+					attr = "cannonPower"
+				}
+			},
+			{
+				type = "BattleBuffCount",
+				trigger = {
+					"onStack"
+				},
+				arg_list = {
+					countTarget = 7,
 					countType = 12440
 				}
 			}
@@ -254,7 +254,7 @@ return {
 	time = 0,
 	picture = "",
 	desc = "属性提升",
-	stack = 8,
+	stack = 7,
 	id = 12441,
 	icon = 12440,
 	last_effect = "",
