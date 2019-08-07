@@ -8968,73 +8968,19 @@ function slot17(slot0, slot1)
 				if not slot0 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 9-15, warpins: 1 ---
+					--- BLOCK #0 9-17, warpins: 1 ---
 					slot1 = slot0
 					slot1 = slot1.effectObjs
 					slot2 = slot1
 					slot2 = slot2.name
 					slot1 = slot1[slot2]
+					slot2 = slot0
+					slot2 = slot2.isLoadingEffect
 
-					if not slot1 then
+					if slot2 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 16-22, warpins: 1 ---
-						slot2 = LoadAndInstantiateAsync
-						slot3 = "ui"
-						slot4 = slot1
-						slot4 = slot4.name
-
-						function slot5(slot0)
-
-							-- Decompilation error in this vicinity:
-							--- BLOCK #0 1-35, warpins: 1 ---
-							slot1 = slot0
-							slot1 = slot1.name
-							slot0.name = slot1
-							slot1 = setParent
-							slot2 = slot0
-							slot3 = slot1
-							slot3 = slot3._effectPanel
-							slot3 = slot3.transform
-
-							slot1(slot2, slot3)
-
-							slot1 = setActive
-							slot2 = slot0
-							slot3 = slot0
-							slot3 = slot3.active
-
-							slot1(slot2, slot3)
-
-							slot1 = slot1
-							slot1 = slot1.effectObjs
-							slot2 = slot0
-							slot2 = slot2.name
-							slot3 = {}
-							slot1[slot2] = slot3
-							slot1 = slot1
-							slot1 = slot1.effectObjs
-							slot2 = slot0
-							slot2 = slot2.name
-							slot1 = slot1[slot2]
-							slot2 = slot0
-							slot2 = slot2.name
-							slot1[1] = slot2
-							slot1 = slot1
-							slot1 = slot1.effectObjs
-							slot2 = slot0
-							slot2 = slot2.name
-							slot1 = slot1[slot2]
-							slot1[2] = slot0
-
-							return
-							--- END OF BLOCK #0 ---
-
-
-
-						end
-
-						slot2(slot3, slot4, slot5)
+						--- BLOCK #0 18-18, warpins: 1 ---
 						--- END OF BLOCK #0 ---
 
 
@@ -9042,13 +8988,92 @@ function slot17(slot0, slot1)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 23-28, warpins: 1 ---
-						slot2 = setActive
-						slot3 = slot1[2]
-						slot4 = slot1
-						slot4 = slot4.active
+						--- BLOCK #0 19-20, warpins: 1 ---
+						if not slot1 then
 
-						slot2(slot3, slot4)
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 21-30, warpins: 1 ---
+							slot2 = slot0
+							slot3 = true
+							slot2.isLoadingEffect = slot3
+							slot2 = LoadAndInstantiateAsync
+							slot3 = "ui"
+							slot4 = slot1
+							slot4 = slot4.name
+
+							function slot5(slot0)
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 1-38, warpins: 1 ---
+								slot1 = slot0
+								slot2 = nil
+								slot1.isLoadingEffect = slot2
+								slot1 = slot1
+								slot1 = slot1.name
+								slot0.name = slot1
+								slot1 = setParent
+								slot2 = slot0
+								slot3 = slot0
+								slot3 = slot3._effectPanel
+								slot3 = slot3.transform
+
+								slot1(slot2, slot3)
+
+								slot1 = setActive
+								slot2 = slot0
+								slot3 = slot1
+								slot3 = slot3.active
+
+								slot1(slot2, slot3)
+
+								slot1 = slot0
+								slot1 = slot1.effectObjs
+								slot2 = slot1
+								slot2 = slot2.name
+								slot3 = {}
+								slot1[slot2] = slot3
+								slot1 = slot0
+								slot1 = slot1.effectObjs
+								slot2 = slot1
+								slot2 = slot2.name
+								slot1 = slot1[slot2]
+								slot2 = slot1
+								slot2 = slot2.name
+								slot1[1] = slot2
+								slot1 = slot0
+								slot1 = slot1.effectObjs
+								slot2 = slot1
+								slot2 = slot2.name
+								slot1 = slot1[slot2]
+								slot1[2] = slot0
+
+								return
+								--- END OF BLOCK #0 ---
+
+
+
+							end
+
+							slot2(slot3, slot4, slot5)
+							--- END OF BLOCK #0 ---
+
+
+
+						else
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 31-36, warpins: 1 ---
+							slot2 = setActive
+							slot3 = slot1[2]
+							slot4 = slot1
+							slot4 = slot4.active
+
+							slot2(slot3, slot4)
+							--- END OF BLOCK #0 ---
+
+
+
+						end
 						--- END OF BLOCK #0 ---
 
 
@@ -9061,7 +9086,7 @@ function slot17(slot0, slot1)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 29-37, warpins: 1 ---
+					--- BLOCK #0 37-45, warpins: 1 ---
 					slot1 = SetActive
 					slot2 = slot0
 					slot3 = slot1
@@ -9075,14 +9100,14 @@ function slot17(slot0, slot1)
 					if not slot1 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 38-41, warpins: 1 ---
+						--- BLOCK #0 46-49, warpins: 1 ---
 						slot1 = slot1
 						slot1 = slot1.destory
 
 						if slot1 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 42-48, warpins: 1 ---
+							--- BLOCK #0 50-56, warpins: 1 ---
 							slot1 = slot0
 							slot1 = slot1.effectObjs
 							slot2 = slot1
@@ -9092,7 +9117,7 @@ function slot17(slot0, slot1)
 							if slot1 then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 49-63, warpins: 1 ---
+								--- BLOCK #0 57-71, warpins: 1 ---
 								slot1 = Object
 								slot1 = slot1.Destroy
 								slot2 = slot0
@@ -9138,7 +9163,7 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 64-64, warpins: 6 ---
+				--- BLOCK #1 72-72, warpins: 7 ---
 				return
 				--- END OF BLOCK #1 ---
 

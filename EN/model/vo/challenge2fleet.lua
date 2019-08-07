@@ -82,6 +82,16 @@ slot0.updateShips = function (slot0, slot1)
 	end)
 end
 
+slot0.updateShipsHP = function (slot0, slot1, slot2)
+	if slot0.ships[slot1] then
+		slot3.hpRant = slot2
+
+		return true
+	else
+		return false
+	end
+end
+
 slot0.getCommanders = function (slot0)
 	return slot0.commanderList
 end
@@ -103,6 +113,57 @@ slot0.switchShip = function (slot0, slot1, slot2)
 		slot0[slot5][slot6] = slot0[slot3][slot4]
 		slot0[slot3][slot4] = slot0[slot5][slot6]
 	end
+end
+
+slot0.buildBattleBuffList = function (slot0)
+	slot1 = {}
+	slot2, slot3 = FleetSkill.triggerMirrorSkill(slot0, FleetSkill.TypeBattleBuff)
+
+	if slot2 and #slot2 > 0 then
+		slot4 = {}
+
+		for slot8, slot9 in ipairs(slot2) do
+			slot4[slot11] = slot4[slot0:findCommanderBySkillId(slot3[slot8].id)] or {}
+
+			table.insert(slot4[slot11], slot9)
+		end
+
+		for slot8, slot9 in pairs(slot4) do
+			table.insert(slot1, {
+				slot8,
+				slot9
+			})
+		end
+	end
+
+	for slot8, slot9 in pairs(slot4) do
+		for slot14, slot15 in ipairs(slot10) do
+			if #slot15:getBuffsAddition() > 0 then
+				slot17 = nil
+
+				for slot21, slot22 in ipairs(slot1) do
+					if slot22[1] == slot9 then
+						slot17 = slot22[2]
+
+						break
+					end
+				end
+
+				if not slot17 then
+					table.insert(slot1, {
+						slot9,
+						{}
+					})
+				end
+
+				for slot21, slot22 in ipairs(slot16) do
+					table.insert(slot17, slot22)
+				end
+			end
+		end
+	end
+
+	return slot1
 end
 
 return slot0

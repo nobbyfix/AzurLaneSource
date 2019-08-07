@@ -1955,36 +1955,56 @@ slot0.addSpineExtra = function (slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 52-68, warpins: 0 ---
+			--- BLOCK #1 52-75, warpins: 0 ---
 			for slot12, slot13 in ipairs(slot5:getShipExtra()) do
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 52-66, warpins: 1 ---
-				slot0.shipModels[slot13].addSpineExtra(slot14, slot1, slot12)
-				slot8:registerActionCB(slot13, function (slot0)
+				--- BLOCK #0 52-55, warpins: 1 ---
+				slot14 = slot0.shipModels[slot13]
+
+				if slot13 ~= slot2 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 1-7, warpins: 1 ---
-					slot0:setAction(slot0, 0)
-
-					return
+					--- BLOCK #0 56-60, warpins: 1 ---
+					slot14:pauseAnim(slot12)
 					--- END OF BLOCK #0 ---
 
 
 
-				end, function ()
+				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 1-13, warpins: 1 ---
-					slot0:endSpineAnimator(slot0, )
-					slot0.endSpineAnimator:startSpineAnimator(slot0.endSpineAnimator, )
+					--- BLOCK #0 61-71, warpins: 1 ---
+					slot14:addSpineExtra(slot1, slot12)
+					slot8:registerActionCB(slot13, function (slot0)
 
-					return
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 1-7, warpins: 1 ---
+						slot0:setAction(slot0, 0)
+
+						return
+						--- END OF BLOCK #0 ---
+
+
+
+					end, function ()
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 1-13, warpins: 1 ---
+						slot0:endSpineAnimator(slot0, )
+						slot0.endSpineAnimator:startSpineAnimator(slot0.endSpineAnimator, )
+
+						return
+						--- END OF BLOCK #0 ---
+
+
+
+					end)
 					--- END OF BLOCK #0 ---
 
 
 
-				end)
+				end
 				--- END OF BLOCK #0 ---
 
 				FLOW; TARGET BLOCK #1
@@ -1992,8 +2012,16 @@ slot0.addSpineExtra = function (slot0, slot1, slot2, slot3)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 67-68, warpins: 2 ---
+				--- BLOCK #1 72-73, warpins: 2 ---
 				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 74-75, warpins: 2 ---
+				--- END OF BLOCK #2 ---
 
 
 
@@ -2006,7 +2034,7 @@ slot0.addSpineExtra = function (slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 69-71, warpins: 1 ---
+			--- BLOCK #2 76-78, warpins: 1 ---
 			slot8:resumeAnim()
 			--- END OF BLOCK #2 ---
 
@@ -2020,7 +2048,7 @@ slot0.addSpineExtra = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 72-72, warpins: 2 ---
+		--- BLOCK #1 79-79, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -2034,7 +2062,7 @@ slot0.addSpineExtra = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 73-73, warpins: 2 ---
+	--- BLOCK #1 80-80, warpins: 2 ---
 	return
 	--- END OF BLOCK #1 ---
 
