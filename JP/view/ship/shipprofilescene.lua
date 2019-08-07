@@ -38,7 +38,7 @@ slot0.preload = function (slot0, slot1)
 end
 
 slot0.reloadCVKey = function (slot0)
-	slot0.currentSkin = slot0.groupSkinList[1]
+	slot0.currentSkin = slot0.currentSkin or slot0.groupSkinList[1]
 	slot0.currentSkinWord = pg.ship_skin_words[slot0.currentSkin.id]
 	slot0.currentSkinWordEx = pg.ship_skin_words_extra[slot0.currentSkin.id]
 

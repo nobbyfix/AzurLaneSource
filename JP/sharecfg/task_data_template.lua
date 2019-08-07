@@ -63505,7 +63505,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 91130,
-		type = 36,
+		type = 6,
 		name = "俾斯麦角色收集总任务",
 		count_inherit = 0,
 		desc = "実績取得後に報酬を獲得可能 ",
@@ -63544,7 +63544,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 91131,
-		type = 36,
+		type = 6,
 		name = "俾斯麦家具收集总任务",
 		count_inherit = 0,
 		desc = "実績取得後に報酬を獲得可能 ",
@@ -63584,7 +63584,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "角色收集：俾斯麦",
 		count_inherit = 0,
 		desc = "[ビスマルク]を3回限界突破する",
@@ -63610,7 +63610,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "角色收集：乔治五世",
 		count_inherit = 0,
 		desc = "[キング・ジョージ5世]を3回限界突破する",
@@ -63636,7 +63636,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "角色收集：U556",
 		count_inherit = 0,
 		desc = "[U-556]を3回限界突破する",
@@ -63662,7 +63662,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "角色收集：Z36",
 		count_inherit = 0,
 		desc = "[Z36]を3回限界突破する",
@@ -63688,7 +63688,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "角色收集：U73",
 		count_inherit = 0,
 		desc = "[U-73]を3回限界突破する",
@@ -63714,7 +63714,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "角色收集：回声",
 		count_inherit = 0,
 		desc = "[エコー]を3回限界突破する",
@@ -63740,7 +63740,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集1",
 		count_inherit = 0,
 		desc = "家具を入手：鉄血楽章・床 ",
@@ -63766,7 +63766,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集2",
 		count_inherit = 0,
 		desc = "家具を入手：鉄血楽章・壁紙 ",
@@ -63792,7 +63792,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集3",
 		count_inherit = 0,
 		desc = "家具を入手： 古いプロジェクター",
@@ -63818,7 +63818,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集4",
 		count_inherit = 0,
 		desc = "家具を入手： フロアランプ",
@@ -63844,7 +63844,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集5",
 		count_inherit = 0,
 		desc = "家具を入手： フェザーカーペット",
@@ -63870,7 +63870,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集6",
 		count_inherit = 0,
 		desc = "家具を入手： フェザーカーペット・大",
@@ -63896,7 +63896,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集7",
 		count_inherit = 0,
 		desc = "家具を入手：紋章のカーペット ",
@@ -63922,7 +63922,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集8",
 		count_inherit = 0,
 		desc = "家具を入手：ガラスの収納棚",
@@ -63948,7 +63948,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集9",
 		count_inherit = 0,
 		desc = "家具を入手：トランペット",
@@ -63974,7 +63974,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集10",
 		count_inherit = 0,
 		desc = "家具を入手：ランプ付きサイドボード",
@@ -64000,7 +64000,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集11",
 		count_inherit = 0,
 		desc = "家具を入手：木製の靴棚",
@@ -64026,7 +64026,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集12",
 		count_inherit = 0,
 		desc = "家具を入手：レコードコレクション",
@@ -64052,7 +64052,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集13",
 		count_inherit = 0,
 		desc = "家具を入手：饅頭軍楽隊",
@@ -64078,7 +64078,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集14",
 		count_inherit = 0,
 		desc = "家具を入手：饅頭儀仗兵",
@@ -64104,7 +64104,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集15",
 		count_inherit = 0,
 		desc = "家具を入手：レコードプレイヤー",
@@ -64130,7 +64130,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集16",
 		count_inherit = 0,
 		desc = "家具を入手：騎士の大鎧",
@@ -64156,7 +64156,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集17",
 		count_inherit = 0,
 		desc = "家具を入手：らせん階段",
@@ -64182,7 +64182,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集18",
 		count_inherit = 0,
 		desc = "家具を入手：優雅のピアノ",
@@ -64208,7 +64208,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集19",
 		count_inherit = 0,
 		desc = "家具を入手：くるみ割り兵士・剣",
@@ -64234,7 +64234,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集20",
 		count_inherit = 0,
 		desc = "家具を入手：くるみ割り兵士・銃",
@@ -64260,7 +64260,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集21",
 		count_inherit = 0,
 		desc = "家具を入手：懐かしい本棚 ",
@@ -64286,7 +64286,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集22",
 		count_inherit = 0,
 		desc = "家具を入手：鉄血の旌旗 ",
@@ -64312,7 +64312,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集23",
 		count_inherit = 0,
 		desc = "家具を入手：座椅子 ",
@@ -64338,7 +64338,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集24",
 		count_inherit = 0,
 		desc = "家具を入手：クッション付き椅子 ",
@@ -64364,7 +64364,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集25",
 		count_inherit = 0,
 		desc = "家具を入手：鉄血執務チェア",
@@ -64390,7 +64390,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集26",
 		count_inherit = 0,
 		desc = "家具を入手：ピアノ椅子",
@@ -64416,7 +64416,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集27",
 		count_inherit = 0,
 		desc = "家具を入手：常緑の盆栽",
@@ -64442,7 +64442,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集28",
 		count_inherit = 0,
 		desc = "家具を入手：スモールテーブル",
@@ -64468,7 +64468,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集29",
 		count_inherit = 0,
 		desc = "家具を入手：木製コーヒーテーブル",
@@ -64494,7 +64494,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集30",
 		count_inherit = 0,
 		desc = "家具を入手：ワインテーブル",
@@ -64520,7 +64520,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集31",
 		count_inherit = 0,
 		desc = "家具を入手：鉄血執務机",
@@ -64546,7 +64546,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集32",
 		count_inherit = 0,
 		desc = "家具を入手：鉄血の読書机",
@@ -64572,7 +64572,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集33",
 		count_inherit = 0,
 		desc = "家具を入手：鉄血のロウソク台",
@@ -64598,7 +64598,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集34",
 		count_inherit = 0,
 		desc = "家具を入手：鉄血の玉座",
@@ -64624,7 +64624,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集35",
 		count_inherit = 0,
 		desc = "家具を入手：ナイトライト",
@@ -64650,7 +64650,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集36",
 		count_inherit = 0,
 		desc = "家具を入手：コールドアルコール",
@@ -64676,7 +64676,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集37",
 		count_inherit = 0,
 		desc = "家具を入手：鉄血の石膏像",
@@ -64702,7 +64702,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集38",
 		count_inherit = 0,
 		desc = "家具を入手：黒カーテンの大窓",
@@ -64728,7 +64728,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集39",
 		count_inherit = 0,
 		desc = "家具を入手：壁ランプ",
@@ -64754,7 +64754,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集40",
 		count_inherit = 0,
 		desc = "家具を入手：額縁セット",
@@ -64780,7 +64780,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集41",
 		count_inherit = 0,
 		desc = "家具を入手：鉄血クロス",
@@ -64806,7 +64806,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集42",
 		count_inherit = 0,
 		desc = "家具を入手：豪華鉄血クロス",
@@ -64832,7 +64832,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集43",
 		count_inherit = 0,
 		desc = "家具を入手：装飾アート ",
@@ -64858,7 +64858,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集44",
 		count_inherit = 0,
 		desc = "家具を入手：豪華なゲート",
@@ -64884,7 +64884,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集45",
 		count_inherit = 0,
 		desc = "家具を入手：ロングフラッグ",
@@ -64910,7 +64910,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集46",
 		count_inherit = 0,
 		desc = "家具を入手：指導者の写真 ",
@@ -64936,7 +64936,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "家具收集47",
 		count_inherit = 0,
 		desc = "家具を入手：木製の服掛け",
@@ -65012,6 +65012,38 @@ pg.task_data_template = {
 			{
 				14,
 				201,
+				1
+			}
+		}
+	},
+	[14671] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 91191,
+		type = 6,
+		name = "『限界挑战II』-积分任务",
+		count_inherit = 0,
+		desc = "PT",
+		target_id_2 = "",
+		sub_type = 103,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 14671,
+		target_num = 8800,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				14,
+				202,
 				1
 			}
 		}
@@ -66274,938 +66306,6 @@ pg.task_data_template = {
 			}
 		}
 	},
-	[14810] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 91370,
-		type = 36,
-		name = "『新美系活动』-日常建造",
-		count_inherit = 0,
-		desc = "3回建造する",
-		target_id_2 = "",
-		sub_type = 30,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14810,
-		target_num = 3,
-		fix_task = 0,
-		target_id = "0",
-		open_need = {},
-		award_display = {
-			{
-				2,
-				59134,
-				300
-			}
-		}
-	},
-	[14811] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 91371,
-		type = 36,
-		name = "『新美系活动』-日常出击",
-		count_inherit = 0,
-		desc = "艦隊を出撃させ、15回勝利せよ！",
-		target_id_2 = "",
-		sub_type = 20,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14811,
-		target_num = 15,
-		fix_task = 0,
-		target_id = "0",
-		open_need = {},
-		award_display = {
-			{
-				2,
-				59134,
-				300
-			}
-		}
-	},
-	[14812] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 91372,
-		type = 36,
-		name = "『新美系活动』-日常困难本",
-		count_inherit = 0,
-		desc = "通常海域ハードを1回クリアする",
-		target_id_2 = "",
-		sub_type = 21,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14812,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			10101,
-			10102,
-			10103,
-			10104,
-			10201,
-			10202,
-			10203,
-			10204,
-			10301,
-			10302,
-			10303,
-			10304,
-			10401,
-			10402,
-			10403,
-			10404,
-			10501,
-			10502,
-			10503,
-			10504,
-			10601,
-			10602,
-			10603,
-			10604,
-			10701,
-			10702,
-			10703,
-			10704,
-			10801,
-			10802,
-			10803,
-			10804,
-			10901,
-			10902,
-			10903,
-			10904
-		},
-		open_need = {},
-		award_display = {
-			{
-				2,
-				59134,
-				100
-			}
-		}
-	},
-	[14813] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 91373,
-		type = 6,
-		name = "『新美系活动』』通关A1/C1",
-		count_inherit = 0,
-		desc = "イベントステージA1かC1をクリア",
-		target_id_2 = "",
-		sub_type = 1020,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14814",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14813,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250001,
-			1250011
-		},
-		open_need = {},
-		award_display = {
-			{
-				2,
-				20001,
-				1
-			},
-			{
-				1,
-				1,
-				600
-			},
-			{
-				2,
-				59134,
-				200
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14814] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91374,
-		type = 6,
-		name = "『新美系活动』通关A2/C2",
-		count_inherit = 0,
-		desc = "イベントステージA2かC2をクリア",
-		target_id_2 = "",
-		sub_type = 1020,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14815",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14814,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250002,
-			1250012
-		},
-		open_need = {},
-		award_display = {
-			{
-				2,
-				20001,
-				1
-			},
-			{
-				1,
-				1,
-				600
-			},
-			{
-				2,
-				59134,
-				400
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14815] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91375,
-		type = 6,
-		name = "『新美系活动』通关A3/C3",
-		count_inherit = 0,
-		desc = "イベントステージA3かC3をクリア",
-		target_id_2 = "",
-		sub_type = 1020,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14816",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14815,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250003,
-			1250013
-		},
-		open_need = {},
-		award_display = {
-			{
-				2,
-				20001,
-				2
-			},
-			{
-				1,
-				1,
-				1500
-			},
-			{
-				2,
-				59134,
-				600
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14816] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91376,
-		type = 6,
-		name = "『新美系活动』通关B1/D1",
-		count_inherit = 0,
-		desc = "イベントステージB1かD1をクリア",
-		target_id_2 = "",
-		sub_type = 1020,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14817",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14816,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250004,
-			1250014
-		},
-		open_need = {},
-		award_display = {
-			{
-				2,
-				20001,
-				1
-			},
-			{
-				1,
-				1,
-				600
-			},
-			{
-				2,
-				59134,
-				400
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14817] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91377,
-		type = 6,
-		name = "『新美系活动』通关B2/D2",
-		count_inherit = 0,
-		desc = "イベントステージB2かD2をクリア",
-		target_id_2 = "",
-		sub_type = 1020,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14818",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14817,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250005,
-			1250015
-		},
-		open_need = {},
-		award_display = {
-			{
-				2,
-				20001,
-				1
-			},
-			{
-				1,
-				1,
-				600
-			},
-			{
-				2,
-				59134,
-				600
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14818] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91378,
-		type = 6,
-		name = "『新美系活动』通关B3/D3",
-		count_inherit = 0,
-		desc = "イベントステージB3かD3をクリア",
-		target_id_2 = "",
-		sub_type = 1020,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14819",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14818,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250006,
-			1250016
-		},
-		open_need = {},
-		award_display = {
-			{
-				2,
-				20001,
-				2
-			},
-			{
-				1,
-				1,
-				1500
-			},
-			{
-				2,
-				59134,
-				800
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14819] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91379,
-		type = 6,
-		name = "『新美系活动』通关D0",
-		count_inherit = 0,
-		desc = "イベントステージSPをクリア",
-		target_id_2 = "",
-		sub_type = 1020,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "0",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 1250017,
-		id = 14819,
-		target_num = 1,
-		fix_task = 0,
-		target_id = "1250017",
-		open_need = {},
-		award_display = {
-			{
-				2,
-				20001,
-				2
-			},
-			{
-				1,
-				1,
-				1500
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14820] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 91380,
-		type = 6,
-		name = "『新美系活动』通关D3",
-		count_inherit = 0,
-		desc = "イベントステージD3をクリア",
-		target_id_2 = "",
-		sub_type = 1020,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "0",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 1250016,
-		id = 14820,
-		target_num = 1,
-		fix_task = 0,
-		target_id = "1250016",
-		open_need = {},
-		award_display = {
-			{
-				5,
-				148,
-				1
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14821] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 91381,
-		type = 6,
-		name = "『新美系活动』A1/C1的3星",
-		count_inherit = 0,
-		desc = "A1かC1の作戦目標(星3つ)を全て達成!",
-		target_id_2 = "",
-		sub_type = 1021,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14822",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14821,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250001,
-			1250011
-		},
-		open_need = {},
-		award_display = {
-			{
-				1,
-				2,
-				500
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14822] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91382,
-		type = 6,
-		name = "『新美系活动』A2/C2的3星",
-		count_inherit = 0,
-		desc = "A2かC2の作戦目標(星3つ)を全て達成!",
-		target_id_2 = "",
-		sub_type = 1021,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14823",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14822,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250002,
-			1250012
-		},
-		open_need = {},
-		award_display = {
-			{
-				4,
-				100001,
-				1
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14823] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91383,
-		type = 6,
-		name = "『新美系活动』A3/C3的3星",
-		count_inherit = 0,
-		desc = "A3かC3の作戦目標(星3つ)を全て達成!",
-		target_id_2 = "",
-		sub_type = 1021,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14824",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14823,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250003,
-			1250013
-		},
-		open_need = {},
-		award_display = {
-			{
-				2,
-				18033,
-				1
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14824] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91384,
-		type = 6,
-		name = "『新美系活动』B1/D1的3星",
-		count_inherit = 0,
-		desc = "B1かD1の作戦目標(星3つ)を全て達成!",
-		target_id_2 = "",
-		sub_type = 1021,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14825",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14824,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250004,
-			1250014
-		},
-		open_need = {},
-		award_display = {
-			{
-				1,
-				2,
-				500
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14825] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91385,
-		type = 6,
-		name = "『新美系活动』B2/D2的3星",
-		count_inherit = 0,
-		desc = "B2かD2の作戦目標(星3つ)を全て達成!",
-		target_id_2 = "",
-		sub_type = 1021,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "14826",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14825,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250005,
-			1250015
-		},
-		open_need = {},
-		award_display = {
-			{
-				4,
-				100011,
-				1
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14826] = {
-		is_head = 0,
-		guild_coin_award = 0,
-		award = 91386,
-		type = 6,
-		name = "『新美系活动』B3/D3的3星",
-		count_inherit = 0,
-		desc = "B3かD3の作戦目標(星3つ)を全て達成!",
-		target_id_2 = "",
-		sub_type = 1021,
-		added_tip = 0,
-		story_icon = "",
-		award_choice = "",
-		level = 10,
-		next_task = "0",
-		visibility = 1,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14826,
-		target_num = 1,
-		fix_task = 0,
-		target_id = {
-			1250006,
-			1250016
-		},
-		open_need = {},
-		award_display = {
-			{
-				2,
-				18033,
-				1
-			}
-		},
-		scene = {
-			"ACTIVITY_MAP"
-		}
-	},
-	[14827] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 91387,
-		type = 36,
-		name = "『新美系活动』角色收集总任务",
-		count_inherit = 0,
-		desc = "実績取得後に報酬を獲得可能",
-		target_id_2 = "",
-		sub_type = 90,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 0,
-		story_id = "",
-		target_id_for_client = 0,
-		id = 14827,
-		target_num = 7,
-		fix_task = 0,
-		target_id = {
-			14828,
-			14829,
-			14830,
-			14831,
-			14832,
-			14833,
-			14834
-		},
-		open_need = {},
-		award_display = {
-			{
-				2,
-				54005,
-				5
-			}
-		}
-	},
-	[14828] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 0,
-		type = 36,
-		name = "『新美系活动』角色收集：阿拉巴马",
-		count_inherit = 0,
-		desc = "[アラバマ]を3回限界突破する",
-		target_id_2 = "",
-		sub_type = 35,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 0,
-		story_id = "",
-		target_id_for_client = 105204,
-		id = 14828,
-		target_num = 1,
-		fix_task = 0,
-		target_id = "105204",
-		open_need = {},
-		award_display = {}
-	},
-	[14829] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 0,
-		type = 36,
-		name = "『新美系活动』角色收集：棘鳍",
-		count_inherit = 0,
-		desc = "[カヴァラ]を3回限界突破する",
-		target_id_2 = "",
-		sub_type = 35,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 0,
-		story_id = "",
-		target_id_for_client = 108034,
-		id = 14829,
-		target_num = 1,
-		fix_task = 0,
-		target_id = "108034",
-		open_need = {},
-		award_display = {}
-	},
-	[14830] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 0,
-		type = 36,
-		name = "『新美系活动』角色收集：巴尔的摩",
-		count_inherit = 0,
-		desc = "[ボルチモア]を3回限界突破する",
-		target_id_2 = "",
-		sub_type = 35,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 0,
-		story_id = "",
-		target_id_for_client = 103164,
-		id = 14830,
-		target_num = 1,
-		fix_task = 0,
-		target_id = "103164",
-		open_need = {},
-		award_display = {}
-	},
-	[14831] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 0,
-		type = 36,
-		name = "『新美系活动』角色收集：巴丹",
-		count_inherit = 0,
-		desc = "[バターン]を3回限界突破する",
-		target_id_2 = "",
-		sub_type = 35,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 0,
-		story_id = "",
-		target_id_for_client = 107294,
-		id = 14831,
-		target_num = 1,
-		fix_task = 0,
-		target_id = "107294",
-		open_need = {},
-		award_display = {}
-	},
-	[14832] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 0,
-		type = 36,
-		name = "『新美系活动』角色收集：伯明翰",
-		count_inherit = 0,
-		desc = "[バーミンガム]を3回限界突破する",
-		target_id_2 = "",
-		sub_type = 35,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 0,
-		story_id = "",
-		target_id_for_client = 102234,
-		id = 14832,
-		target_num = 1,
-		fix_task = 0,
-		target_id = "102234",
-		open_need = {},
-		award_display = {}
-	},
-	[14833] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 0,
-		type = 36,
-		name = "『新美系活动』角色收集：艾尔温",
-		count_inherit = 0,
-		desc = "[エールウィン]を3回限界突破する",
-		target_id_2 = "",
-		sub_type = 35,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 0,
-		story_id = "",
-		target_id_for_client = 101404,
-		id = 14833,
-		target_num = 1,
-		fix_task = 0,
-		target_id = "101404",
-		open_need = {},
-		award_display = {}
-	},
-	[14834] = {
-		is_head = 1,
-		guild_coin_award = 0,
-		award = 0,
-		type = 36,
-		name = "『新美系活动』角色收集：圣胡安",
-		count_inherit = 0,
-		desc = "[サンフアン]を3回限界突破する",
-		target_id_2 = "",
-		sub_type = 35,
-		added_tip = 0,
-		story_icon = "",
-		scene = "",
-		award_choice = "",
-		level = 1,
-		next_task = "0",
-		visibility = 0,
-		story_id = "",
-		target_id_for_client = 102224,
-		id = 14834,
-		target_num = 1,
-		fix_task = 0,
-		target_id = "102224",
-		open_need = {},
-		award_display = {}
-	},
 	[14780] = {
 		is_head = 0,
 		guild_coin_award = 0,
@@ -68094,7 +67194,6 @@ pg.task_data_template = {
 		sub_type = 1020,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14814",
@@ -68125,6 +67224,9 @@ pg.task_data_template = {
 				59134,
 				200
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14814] = {
@@ -68139,7 +67241,6 @@ pg.task_data_template = {
 		sub_type = 1020,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14815",
@@ -68170,6 +67271,9 @@ pg.task_data_template = {
 				59134,
 				400
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14815] = {
@@ -68184,7 +67288,6 @@ pg.task_data_template = {
 		sub_type = 1020,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14816",
@@ -68215,6 +67318,9 @@ pg.task_data_template = {
 				59134,
 				600
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14816] = {
@@ -68229,7 +67335,6 @@ pg.task_data_template = {
 		sub_type = 1020,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14817",
@@ -68260,6 +67365,9 @@ pg.task_data_template = {
 				59134,
 				400
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14817] = {
@@ -68274,7 +67382,6 @@ pg.task_data_template = {
 		sub_type = 1020,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14818",
@@ -68305,6 +67412,9 @@ pg.task_data_template = {
 				59134,
 				600
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14818] = {
@@ -68319,7 +67429,6 @@ pg.task_data_template = {
 		sub_type = 1020,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14819",
@@ -68350,6 +67459,9 @@ pg.task_data_template = {
 				59134,
 				800
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14819] = {
@@ -68364,7 +67476,6 @@ pg.task_data_template = {
 		sub_type = 1020,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "0",
@@ -68387,6 +67498,9 @@ pg.task_data_template = {
 				1,
 				1500
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14820] = {
@@ -68401,7 +67515,6 @@ pg.task_data_template = {
 		sub_type = 1020,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "0",
@@ -68419,6 +67532,9 @@ pg.task_data_template = {
 				148,
 				1
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14821] = {
@@ -68433,7 +67549,6 @@ pg.task_data_template = {
 		sub_type = 1021,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14822",
@@ -68454,6 +67569,9 @@ pg.task_data_template = {
 				2,
 				500
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14822] = {
@@ -68468,7 +67586,6 @@ pg.task_data_template = {
 		sub_type = 1021,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14823",
@@ -68489,6 +67606,9 @@ pg.task_data_template = {
 				100001,
 				1
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14823] = {
@@ -68503,7 +67623,6 @@ pg.task_data_template = {
 		sub_type = 1021,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14824",
@@ -68524,6 +67643,9 @@ pg.task_data_template = {
 				18033,
 				1
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14824] = {
@@ -68538,7 +67660,6 @@ pg.task_data_template = {
 		sub_type = 1021,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14825",
@@ -68559,6 +67680,9 @@ pg.task_data_template = {
 				2,
 				500
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14825] = {
@@ -68573,7 +67697,6 @@ pg.task_data_template = {
 		sub_type = 1021,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "14826",
@@ -68594,6 +67717,9 @@ pg.task_data_template = {
 				100011,
 				1
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14826] = {
@@ -68608,7 +67734,6 @@ pg.task_data_template = {
 		sub_type = 1021,
 		added_tip = 0,
 		story_icon = "",
-		scene = "",
 		award_choice = "",
 		level = 10,
 		next_task = "0",
@@ -68629,13 +67754,16 @@ pg.task_data_template = {
 				18033,
 				1
 			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
 		}
 	},
 	[14827] = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 91387,
-		type = 36,
+		type = 6,
 		name = "『新美系活动』角色收集总任务",
 		count_inherit = 0,
 		desc = "実績取得後に報酬を獲得可能",
@@ -68675,7 +67803,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "『新美系活动』角色收集：阿拉巴马",
 		count_inherit = 0,
 		desc = "[アラバマ]を3回限界突破する",
@@ -68701,7 +67829,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "『新美系活动』角色收集：棘鳍",
 		count_inherit = 0,
 		desc = "[カヴァラ]を3回限界突破する",
@@ -68727,7 +67855,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "『新美系活动』角色收集：巴尔的摩",
 		count_inherit = 0,
 		desc = "[ボルチモア]を3回限界突破する",
@@ -68753,7 +67881,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "『新美系活动』角色收集：巴丹",
 		count_inherit = 0,
 		desc = "[バターン]を3回限界突破する",
@@ -68779,7 +67907,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "『新美系活动』角色收集：伯明翰",
 		count_inherit = 0,
 		desc = "[バーミンガム]を3回限界突破する",
@@ -68805,7 +67933,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "『新美系活动』角色收集：艾尔温",
 		count_inherit = 0,
 		desc = "[エールウィン]を3回限界突破する",
@@ -68831,7 +67959,7 @@ pg.task_data_template = {
 		is_head = 1,
 		guild_coin_award = 0,
 		award = 0,
-		type = 36,
+		type = 6,
 		name = "『新美系活动』角色收集：圣胡安",
 		count_inherit = 0,
 		desc = "[サンフアン]を3回限界突破する",
@@ -68852,6 +67980,230 @@ pg.task_data_template = {
 		target_id = "102224",
 		open_need = {},
 		award_display = {}
+	},
+	[14840] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 91483,
+		type = 26,
+		name = "吸血鬼登录复刻1",
+		count_inherit = 0,
+		desc = "敵中枢艦隊を3回撃破せよ！",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "XIXUEGUI1",
+		target_id_for_client = 0,
+		id = 14840,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				300
+			}
+		}
+	},
+	[14841] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 91484,
+		type = 26,
+		name = "吸血鬼登录复刻2",
+		count_inherit = 0,
+		desc = "敵中枢艦隊を3回撃破せよ！",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "XIXUEGUI2",
+		target_id_for_client = 0,
+		id = 14841,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				17013,
+				3
+			}
+		}
+	},
+	[14842] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 91485,
+		type = 26,
+		name = "吸血鬼登录复刻3",
+		count_inherit = 0,
+		desc = "敵中枢艦隊を3回撃破せよ！",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "XIXUEGUI3",
+		target_id_for_client = 0,
+		id = 14842,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				17033,
+				3
+			}
+		}
+	},
+	[14843] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 91486,
+		type = 26,
+		name = "吸血鬼登录复刻4",
+		count_inherit = 0,
+		desc = "敵中枢艦隊を3回撃破せよ！",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 14843,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				17023,
+				3
+			}
+		}
+	},
+	[14844] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 91487,
+		type = 26,
+		name = "吸血鬼登录复刻5",
+		count_inherit = 0,
+		desc = "敵中枢艦隊を3回撃破せよ！",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "XIXUEGUI4",
+		target_id_for_client = 0,
+		id = 14844,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				17043,
+				3
+			}
+		}
+	},
+	[14845] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 91488,
+		type = 26,
+		name = "吸血鬼登录复刻6",
+		count_inherit = 0,
+		desc = "敵中枢艦隊を3回撃破せよ！",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 14845,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				17003,
+				3
+			}
+		}
+	},
+	[14846] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 91489,
+		type = 26,
+		name = "吸血鬼登录复刻7",
+		count_inherit = 0,
+		desc = "敵中枢艦隊を3回撃破せよ！",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "XIXUEGUI5",
+		target_id_for_client = 0,
+		id = 14846,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				7,
+				201232,
+				1
+			}
+		}
 	},
 	[30201] = {
 		is_head = 1,
@@ -77803,6 +77155,7 @@ pg.task_data_template = {
 		14657,
 		14658,
 		14670,
+		14671,
 		14730,
 		14731,
 		14732,
@@ -77838,31 +77191,6 @@ pg.task_data_template = {
 		14772,
 		14773,
 		14774,
-		14810,
-		14811,
-		14812,
-		14813,
-		14814,
-		14815,
-		14816,
-		14817,
-		14818,
-		14819,
-		14820,
-		14821,
-		14822,
-		14823,
-		14824,
-		14825,
-		14826,
-		14827,
-		14828,
-		14829,
-		14830,
-		14831,
-		14832,
-		14833,
-		14834,
 		14780,
 		14781,
 		14782,
@@ -77910,6 +77238,13 @@ pg.task_data_template = {
 		14832,
 		14833,
 		14834,
+		14840,
+		14841,
+		14842,
+		14843,
+		14844,
+		14845,
+		14846,
 		30201,
 		30202,
 		31001,
