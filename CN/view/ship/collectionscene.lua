@@ -307,6 +307,10 @@ slot0.initIndexPanel = function (slot0)
 end
 
 slot0.onInitCard = function (slot0, slot1)
+	if slot0.exited then
+		return
+	end
+
 	onButton(slot0, CollectionShipCard.New(slot1).go, function ()
 		if slot0.state == ShipGroup.STATE_UNLOCK then
 			LeanTween.delayedCall(0.2, System.Action(function ()
@@ -409,6 +413,10 @@ slot0.closeSkipableMsgBox = function (slot0)
 end
 
 slot0.onUpdateCard = function (slot0, slot1, slot2)
+	if slot0.exited then
+		return
+	end
+
 	if not slot0.cardItems[slot2] then
 		slot0:onInitCard(slot2)
 
@@ -587,6 +595,10 @@ slot0.initDisplayPanel = function (slot0)
 end
 
 slot0.initFavoriteCard = function (slot0, slot1)
+	if slot0.exited then
+		return
+	end
+
 	slot2 = FavoriteCard.New(slot1, slot0.charTpl)
 
 	onButton(slot0, slot2.awardTF, function ()
@@ -608,6 +620,10 @@ slot0.initFavoriteCard = function (slot0, slot1)
 end
 
 slot0.updateFavoriteCard = function (slot0, slot1, slot2)
+	if slot0.exited then
+		return
+	end
+
 	if not slot0.favoriteCards[slot2] then
 		slot0:initFavoriteCard(slot2)
 
@@ -734,6 +750,10 @@ slot0.initMemoryPanel = function (slot0)
 end
 
 slot0.onInitMemory = function (slot0, slot1)
+	if slot0.exited then
+		return
+	end
+
 	onButton(slot0, MemoryCard.New(slot1).go, function ()
 		if slot0.info then
 			if slot0.isGroup then
@@ -748,6 +768,10 @@ slot0.onInitMemory = function (slot0, slot1)
 end
 
 slot0.onUpdateMemory = function (slot0, slot1, slot2)
+	if slot0.exited then
+		return
+	end
+
 	if not slot0.memoryItems[slot2] then
 		slot0:onInitMemory(slot2)
 
