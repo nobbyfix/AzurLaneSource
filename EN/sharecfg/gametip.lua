@@ -9770,7 +9770,7 @@ Would you like to change modes?]],
 		key = "challenge_share_progress"
 	},
 	challenge_share = {
-		tip = "关",
+		tip = "Stage ",
 		key = "challenge_share"
 	},
 	challenge_expire_warn = {
