@@ -55733,7 +55733,7 @@ pg.ship_data_statistics = {
 		tag_list = {}
 	},
 	[201161] = {
-		name = "勇敢",
+		name = "Hardy",
 		type = 1,
 		personality = 2,
 		oxy_max = 0,
@@ -55861,7 +55861,7 @@ pg.ship_data_statistics = {
 		tag_list = {}
 	},
 	[201162] = {
-		name = "勇敢",
+		name = "Hardy",
 		type = 1,
 		personality = 2,
 		oxy_max = 0,
@@ -55989,7 +55989,7 @@ pg.ship_data_statistics = {
 		tag_list = {}
 	},
 	[201163] = {
-		name = "勇敢",
+		name = "Hardy",
 		type = 1,
 		personality = 2,
 		oxy_max = 0,
@@ -56117,7 +56117,7 @@ pg.ship_data_statistics = {
 		tag_list = {}
 	},
 	[201164] = {
-		name = "勇敢",
+		name = "Hardy",
 		type = 1,
 		personality = 2,
 		oxy_max = 0,
@@ -56245,7 +56245,7 @@ pg.ship_data_statistics = {
 		tag_list = {}
 	},
 	[201201] = {
-		name = "猎人",
+		name = "Hunter",
 		type = 1,
 		personality = 2,
 		oxy_max = 0,
@@ -56373,7 +56373,7 @@ pg.ship_data_statistics = {
 		tag_list = {}
 	},
 	[201202] = {
-		name = "猎人",
+		name = "Hunter",
 		type = 1,
 		personality = 2,
 		oxy_max = 0,
@@ -56501,7 +56501,7 @@ pg.ship_data_statistics = {
 		tag_list = {}
 	},
 	[201203] = {
-		name = "猎人",
+		name = "Hunter",
 		type = 1,
 		personality = 2,
 		oxy_max = 0,
@@ -56629,7 +56629,7 @@ pg.ship_data_statistics = {
 		tag_list = {}
 	},
 	[201204] = {
-		name = "猎人",
+		name = "Hunter",
 		type = 1,
 		personality = 2,
 		oxy_max = 0,

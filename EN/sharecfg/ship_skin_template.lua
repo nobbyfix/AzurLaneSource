@@ -19966,7 +19966,7 @@ pg.ship_skin_template = {
 	},
 	[201160] = {
 		ship_group = 20116,
-		name = "勇敢",
+		name = "Hardy",
 		bg = "",
 		illustrator2 = -1,
 		bullet_skin_secondary = "",
@@ -20065,7 +20065,7 @@ pg.ship_skin_template = {
 	},
 	[201200] = {
 		ship_group = 20120,
-		name = "猎人",
+		name = "Hunter",
 		bg = "",
 		illustrator2 = -1,
 		bullet_skin_secondary = "",
