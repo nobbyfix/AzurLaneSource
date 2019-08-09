@@ -89,7 +89,7 @@ return {
 							delay = 0,
 							chance = 0.5,
 							corrdinate = {
-								30,
+								20,
 								0,
 								55
 							},
