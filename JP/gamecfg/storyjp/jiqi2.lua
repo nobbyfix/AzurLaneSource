@@ -140,7 +140,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "と、カヴァラを明石を貸してから数時間――",
+			say = "と、カヴァラを明石に貸してから数時間――",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -334,7 +334,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "簡単に言うと、明石のミスで倉庫はゴチャゴチャになって、その原状回復に手伝ってきた。",
+			say = "簡単に言うと、明石のミスで倉庫はゴチャゴチャになって、その原状回復を手伝ってきたという。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

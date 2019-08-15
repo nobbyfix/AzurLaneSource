@@ -170,7 +170,7 @@ slot2.DoAttack = function (slot0, slot1)
 
 	slot0:EnterCoolDown()
 	slot0:TriggerBuffOnFire()
-	slot0.Battle.BattleCameraUtil:GetInstance():StartShake(pg.shake_template[slot1.ShakeType.FIRE])
+	slot0.Battle.BattleCameraUtil.GetInstance():StartShake(pg.shake_template[slot1.ShakeType.FIRE])
 end
 
 slot2.Spawn = function (slot0, slot1, slot2)

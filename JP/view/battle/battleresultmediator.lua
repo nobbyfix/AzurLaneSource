@@ -241,7 +241,7 @@ slot0.showExtraChapterActSocre = function (slot0)
 				slot11 = slot10
 			end
 
-			pg.MsgboxMgr:GetInstance():ShowMsgBox({
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				hideNo = true,
 				content = i18n("extra_chapter_socre_tip", slot10, slot11, slot12)
 			})

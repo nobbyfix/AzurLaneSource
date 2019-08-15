@@ -338,7 +338,7 @@ slot0.goPage = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #2 15-18, warpins: 3 ---
-	if isAiriJP() then
+	if PLATFORM_CODE == PLATFORM_JP then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 19-24, warpins: 1 ---
@@ -685,14 +685,31 @@ slot0.initDamondsData = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 9-21, warpins: 0 ---
+	--- BLOCK #1 9-41, warpins: 0 ---
 	for slot5, slot6 in pairs(pg.pay_data_display.all) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 9-19, warpins: 1 ---
-		table.insert(slot0.damondItemVOs, Goods.New({
-			shop_id = slot6
-		}, Goods.TYPE_CHARGE))
+		--- BLOCK #0 9-12, warpins: 1 ---
+		if (PLATFORM_CODE == PLATFORM_JP or PLATFORM_CODE == PLATFORM_US) and pg.SdkMgr.GetInstance():CheckAudit() and slot6 == 1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 28-28, warpins: 1 ---
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 29-39, warpins: 3 ---
+			table.insert(slot0.damondItemVOs, Goods.New({
+				shop_id = slot6
+			}, Goods.TYPE_CHARGE))
+			--- END OF BLOCK #0 ---
+
+
+
+		end
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -700,7 +717,7 @@ slot0.initDamondsData = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 20-21, warpins: 2 ---
+		--- BLOCK #1 40-41, warpins: 3 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -714,7 +731,7 @@ slot0.initDamondsData = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 22-27, warpins: 1 ---
+	--- BLOCK #2 42-47, warpins: 1 ---
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -722,15 +739,15 @@ slot0.initDamondsData = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 28-44, warpins: 0 ---
+	--- BLOCK #3 48-64, warpins: 0 ---
 	for slot6, slot7 in pairs(pg.shop_template.all) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 28-31, warpins: 1 ---
+		--- BLOCK #0 48-51, warpins: 1 ---
 		if slot2[slot7].genre == "gift_package" then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 32-42, warpins: 1 ---
+			--- BLOCK #0 52-62, warpins: 1 ---
 			table.insert(slot0.damondItemVOs, Goods.New({
 				shop_id = slot7
 			}, Goods.TYPE_GIFT_PACKAGE))
@@ -746,7 +763,7 @@ slot0.initDamondsData = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 43-44, warpins: 3 ---
+		--- BLOCK #1 63-64, warpins: 3 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -760,7 +777,7 @@ slot0.initDamondsData = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 45-45, warpins: 1 ---
+	--- BLOCK #4 65-65, warpins: 1 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -1197,8 +1214,8 @@ slot0.confirm = function (slot0, slot1)
 			onYes = function ()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-24, warpins: 1 ---
-				pg.MsgboxMgr:GetInstance():ShowMsgBox({
+				--- BLOCK #0 1-23, warpins: 1 ---
+				pg.MsgboxMgr.GetInstance():ShowMsgBox({
 					content = i18n("charge_scene_buy_confirm", slot0.goods:getConfig("resource_num"), slot1.name),
 					onYes = function ()
 
@@ -1783,8 +1800,8 @@ slot0.initItems = function (slot0)
 			if slot0.goodsVO:isLevelLimit(slot1.player.level) then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 11-22, warpins: 1 ---
-				pg.TipsMgr:GetInstance():ShowTips(i18n("charge_level_limit"))
+				--- BLOCK #0 11-21, warpins: 1 ---
+				pg.TipsMgr.GetInstance():ShowTips(i18n("charge_level_limit"))
 
 				return
 				--- END OF BLOCK #0 ---
@@ -1800,19 +1817,19 @@ slot0.initItems = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 23-32, warpins: 1 ---
+			--- BLOCK #1 22-31, warpins: 1 ---
 			slot1 = {}
 			slot2 = nil
 
 			if slot0.goodsVO:getConfig("effect_args") == "ship_bag_size" then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 33-39, warpins: 1 ---
+				--- BLOCK #0 32-38, warpins: 1 ---
 				if Player.MAX_SHIP_BAG <= slot1.player.ship_bag_max then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 40-51, warpins: 1 ---
-					pg.TipsMgr:GetInstance():ShowTips(i18n("charge_ship_bag_max"))
+					--- BLOCK #0 39-49, warpins: 1 ---
+					pg.TipsMgr.GetInstance():ShowTips(i18n("charge_ship_bag_max"))
 
 					return
 					--- END OF BLOCK #0 ---
@@ -1828,7 +1845,7 @@ slot0.initItems = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 52-60, warpins: 1 ---
+				--- BLOCK #1 50-58, warpins: 1 ---
 				slot2 = ({
 					count = 1,
 					type = DROP_TYPE_ITEM,
@@ -1841,16 +1858,16 @@ slot0.initItems = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 61-62, warpins: 1 ---
+				--- BLOCK #0 59-60, warpins: 1 ---
 				if slot0 == "equip_bag_size" then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 63-69, warpins: 1 ---
+					--- BLOCK #0 61-67, warpins: 1 ---
 					if Player.MAX_EQUIP_BAG <= slot1.player.equip_bag_max then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 70-81, warpins: 1 ---
-						pg.TipsMgr:GetInstance():ShowTips(i18n("charge_equip_bag_max"))
+						--- BLOCK #0 68-78, warpins: 1 ---
+						pg.TipsMgr.GetInstance():ShowTips(i18n("charge_equip_bag_max"))
 
 						return
 						--- END OF BLOCK #0 ---
@@ -1866,7 +1883,7 @@ slot0.initItems = function (slot0)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #1 82-90, warpins: 1 ---
+					--- BLOCK #1 79-87, warpins: 1 ---
 					slot2 = ({
 						count = 1,
 						type = DROP_TYPE_ITEM,
@@ -1879,16 +1896,16 @@ slot0.initItems = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 91-92, warpins: 1 ---
+					--- BLOCK #0 88-89, warpins: 1 ---
 					if slot0 == "commander_bag_size" then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 93-99, warpins: 1 ---
+						--- BLOCK #0 90-96, warpins: 1 ---
 						if Player.MAX_COMMANDER_BAG <= slot1.player.commanderBagMax then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 100-111, warpins: 1 ---
-							pg.TipsMgr:GetInstance():ShowTips(i18n("charge_commander_bag_max"))
+							--- BLOCK #0 97-107, warpins: 1 ---
+							pg.TipsMgr.GetInstance():ShowTips(i18n("charge_commander_bag_max"))
 
 							return
 							--- END OF BLOCK #0 ---
@@ -1904,7 +1921,7 @@ slot0.initItems = function (slot0)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #1 112-120, warpins: 1 ---
+						--- BLOCK #1 108-116, warpins: 1 ---
 						slot2 = ({
 							count = 1,
 							type = DROP_TYPE_ITEM,
@@ -1917,7 +1934,7 @@ slot0.initItems = function (slot0)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 121-153, warpins: 1 ---
+						--- BLOCK #0 117-149, warpins: 1 ---
 						slot2 = (slot0.goodsVO:getConfig("type") ~= DROP_TYPE_RESOURCE or id2ItemId(({
 							id = slot0.goodsVO:getConfig("effect_args")[1],
 							type = slot0.goodsVO:getConfig("type"),
@@ -1999,7 +2016,7 @@ slot0.initItems = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 160-174, warpins: 5 ---
+			--- BLOCK #2 156-170, warpins: 5 ---
 			--- END OF BLOCK #2 ---
 
 			FLOW; TARGET BLOCK #3
@@ -2007,7 +2024,7 @@ slot0.initItems = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 175-175, warpins: 2 ---
+			--- BLOCK #3 171-171, warpins: 2 ---
 			--- END OF BLOCK #3 ---
 
 			FLOW; TARGET BLOCK #4
@@ -2015,7 +2032,7 @@ slot0.initItems = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #4 176-176, warpins: 2 ---
+			--- BLOCK #4 172-172, warpins: 2 ---
 			--- END OF BLOCK #4 ---
 
 			FLOW; TARGET BLOCK #5
@@ -2023,7 +2040,7 @@ slot0.initItems = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #5 177-177, warpins: 2 ---
+			--- BLOCK #5 173-173, warpins: 2 ---
 			--- END OF BLOCK #5 ---
 
 			FLOW; TARGET BLOCK #6
@@ -2031,7 +2048,7 @@ slot0.initItems = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #6 178-178, warpins: 2 ---
+			--- BLOCK #6 174-174, warpins: 2 ---
 			--- END OF BLOCK #6 ---
 
 
@@ -3411,13 +3428,13 @@ end
 slot0.addUpdateTimer = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot3 = pg.TimeMgr:GetInstance().Table2ServerTime(slot2, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot3 = pg.TimeMgr.GetInstance().Table2ServerTime(slot2, slot1)
 
 	if slot0.refreshTime and slot2:Table2ServerTime(slot0.refreshTime) < slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 19-19, warpins: 1 ---
+		--- BLOCK #0 18-18, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
 
@@ -3432,7 +3449,7 @@ slot0.addUpdateTimer = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 20-39, warpins: 2 ---
+	--- BLOCK #1 19-38, warpins: 2 ---
 	slot0.refreshTime = slot1
 
 	slot0:removeUpdateTimer()
@@ -3479,7 +3496,7 @@ slot0.addUpdateTimer = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 40-40, warpins: 2 ---
+	--- BLOCK #2 39-39, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 
@@ -3930,12 +3947,13 @@ end
 slot0.onBackPressed = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-5, warpins: 1 ---
-	if isActive(slot0.birthWin) then
+	--- BLOCK #0 1-3, warpins: 1 ---
+	if slot0.detail and isActive(slot0.detail) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 6-10, warpins: 1 ---
-		setActive(slot0.birthWin, false)
+		--- BLOCK #0 9-16, warpins: 1 ---
+		setActive(slot0.detail, false)
+		slot0:revertDetailBlur()
 		--- END OF BLOCK #0 ---
 
 
@@ -3943,13 +3961,12 @@ slot0.onBackPressed = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 11-13, warpins: 1 ---
-		if slot0.detail and isActive(slot0.detail) then
+		--- BLOCK #0 17-21, warpins: 2 ---
+		if slot0.prePage ~= slot0.TYPE_MENU then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 19-26, warpins: 1 ---
-			setActive(slot0.detail, false)
-			slot0:revertDetailBlur()
+			--- BLOCK #0 22-25, warpins: 1 ---
+			slot0:switchToMenu()
 			--- END OF BLOCK #0 ---
 
 
@@ -3957,27 +3974,9 @@ slot0.onBackPressed = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 27-31, warpins: 2 ---
-			if slot0.prePage ~= slot0.TYPE_MENU then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 32-35, warpins: 1 ---
-				slot0:switchToMenu()
-				--- END OF BLOCK #0 ---
-
-
-
-			else
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 36-43, warpins: 1 ---
-				playSoundEffect(SFX_CANCEL)
-				slot0:emit(slot0.ON_BACK)
-				--- END OF BLOCK #0 ---
-
-
-
-			end
+			--- BLOCK #0 26-33, warpins: 1 ---
+			playSoundEffect(SFX_CANCEL)
+			slot0:emit(slot0.ON_BACK)
 			--- END OF BLOCK #0 ---
 
 
@@ -3996,7 +3995,7 @@ slot0.onBackPressed = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 44-44, warpins: 4 ---
+	--- BLOCK #1 34-34, warpins: 3 ---
 	return
 	--- END OF BLOCK #1 ---
 
@@ -4292,10 +4291,10 @@ slot0.checkSetBirth = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-4, warpins: 1 ---
-	if isAiriJP() and not AiriSdkMgr.AiriSDKInst.IsBirthSet then
+	if PLATFORM_CODE == PLATFORM_JP and pg.SdkMgr.GetInstance():GetIsPlatform() and not pg.SdkMgr.GetInstance():GetIsBirthSet() then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 10-18, warpins: 1 ---
+		--- BLOCK #0 23-31, warpins: 1 ---
 		setActive(slot0.birthWin, true)
 
 		slot0.birthTxt.text = ""
@@ -4314,7 +4313,7 @@ slot0.checkSetBirth = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 19-20, warpins: 3 ---
+	--- BLOCK #1 32-33, warpins: 4 ---
 	return true
 	--- END OF BLOCK #1 ---
 
@@ -4325,7 +4324,26 @@ end
 slot0.jpUIInit = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-55, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if PLATFORM_CODE ~= PLATFORM_JP then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-5, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 6-60, warpins: 2 ---
 	slot0.birthWin = slot0:findTF("blur_panel/birthday_win")
 	slot0.birthTxt = slot0:findTF("window/birthday_input_panel/InputField", slot0.birthWin):GetComponent(typeof(InputField))
 	slot0.birthCancelBtn = slot0:findTF("window/birthday_input_panel/btns/cancel_btn", slot0.birthWin)
@@ -4339,7 +4357,7 @@ slot0.jpUIInit = function (slot0)
 	slot0.userAgreeBtn4 = slot0:findTF("frame/raw2Btn")
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
 
 
@@ -4348,7 +4366,26 @@ end
 slot0.jpUIEnter = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-24, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if PLATFORM_CODE ~= PLATFORM_JP then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-5, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 6-57, warpins: 1 ---
 	onButton(slot0, slot0.birthWin, function ()
 
 		-- Decompilation error in this vicinity:
@@ -4409,11 +4446,10 @@ slot0.jpUIEnter = function (slot0)
 				onYes = function ()
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 1-32, warpins: 1 ---
-					pg.UIMgr.GetInstance():LoadingOn()
+					--- BLOCK #0 1-27, warpins: 1 ---
 					pg.UIMgr.GetInstance():UnblurPanel(slot0.top, slot0.frame)
 					setActive(slot0.birthWin, false)
-					AiriSdkMgr.inst:SetBirth(slot0.birthTxt.text)
+					pg.SdkMgr.GetInstance():SetBirth(slot0.birthTxt.text)
 
 					return
 					--- END OF BLOCK #0 ---
@@ -4442,75 +4478,65 @@ slot0.jpUIEnter = function (slot0)
 
 
 	end)
-
-	if isAiriJP() then
+	onButton(slot0, slot0.userAgreeBtn3, function ()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 25-54, warpins: 1 ---
-		onButton(slot0, slot0.userAgreeBtn3, function ()
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot0:activeUserAgree(require("ShareCfg.UserAgreement3").content, true)
 
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-10, warpins: 1 ---
-			slot0:activeUserAgree(require("ShareCfg.UserAgreement3").content, true)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end, SFX_PANEL)
-		onButton(slot0, slot0.userAgreeBtn4, function ()
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-10, warpins: 1 ---
-			slot0:activeUserAgree(require("ShareCfg.UserAgreement4").content, true)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end, SFX_PANEL)
-		onButton(slot0, slot0:findTF("frame/agreement"), function ()
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0:activeUserAgree("", false)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end, SFX_CANCEL)
-		onButton(slot0, slot0:findTF("frame/agreement/window/top/btnBack"), function ()
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0:activeUserAgree("", false)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end, SFX_CANCEL)
+		return
 		--- END OF BLOCK #0 ---
 
 
 
-	end
+	end, SFX_PANEL)
+	onButton(slot0, slot0.userAgreeBtn4, function ()
 
-	--- END OF BLOCK #0 ---
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot0:activeUserAgree(require("ShareCfg.UserAgreement4").content, true)
 
-	FLOW; TARGET BLOCK #1
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end, SFX_PANEL)
+	onButton(slot0, slot0:findTF("frame/agreement"), function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0:activeUserAgree("", false)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end, SFX_CANCEL)
+	onButton(slot0, slot0:findTF("frame/agreement/window/top/btnBack"), function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0:activeUserAgree("", false)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end, SFX_CANCEL)
+
+	return
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 55-56, warpins: 2 ---
-	return
-	--- END OF BLOCK #1 ---
+	--- BLOCK #2 58-58, warpins: 2 ---
+	--- END OF BLOCK #2 ---
 
 
 

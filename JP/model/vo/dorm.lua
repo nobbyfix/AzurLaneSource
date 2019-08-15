@@ -176,7 +176,7 @@ slot0.consumeFood = function (slot0, slot1)
 end
 
 slot0.restNextTime = function (slot0)
-	slot0.next_timestamp = pg.TimeMgr:GetInstance():GetServerTime() + slot0:bindConfigTable()[slot0.id].time
+	slot0.next_timestamp = pg.TimeMgr.GetInstance():GetServerTime() + slot0:bindConfigTable()[slot0.id].time
 end
 
 slot0.isMaxFood = function (slot0)

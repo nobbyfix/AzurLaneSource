@@ -978,7 +978,7 @@ slot0.didEnter = function (slot0)
 			end
 
 			if slot0.mapView and slot0.mapView.map:inProcess() then
-				pg.TipsMgr:GetInstance():ShowTips(i18n("black_white_grid_switch_tip"))
+				pg.TipsMgr.GetInstance():ShowTips(i18n("black_white_grid_switch_tip"))
 
 				return
 			end
@@ -1119,8 +1119,8 @@ slot0.loadMap = function (slot0, slot1)
 end
 
 slot0.playStory = function (slot0, slot1)
-	if slot0[slot0.mapView.map.id].story and slot2 ~= "" and not pg.StoryMgr:GetInstance():IsPlayed(slot2) then
-		pg.StoryMgr:GetInstance():Play(slot2, slot1, true, true)
+	if slot0[slot0.mapView.map.id].story and slot2 ~= "" and not pg.StoryMgr.GetInstance():IsPlayed(slot2) then
+		pg.StoryMgr.GetInstance():Play(slot2, slot1, true, true)
 	else
 		slot1()
 	end

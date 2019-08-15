@@ -252,7 +252,7 @@ return {
 			bgName = "bg_xiangting_cg1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "…全員、指揮官を守れ！！こいつの目標は指揮官だ！！！",
+			say = "…全員、指揮官を守れ！！こいつの目的は指揮官だ！！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -348,12 +348,10 @@ return {
 			}
 		},
 		{
-			side = 2,
+			say = "（ドーーン！！）",
 			dir = 1,
+			side = 2,
 			soundeffect = "event:/battle/boom2",
-			actor = 107030,
-			nameColor = "#a9f548",
-			say = "エンタープライズ！！",
 			flashN = {
 				color = {
 					1,
@@ -391,6 +389,21 @@ return {
 				x = 8.5,
 				number = 2
 			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 107030,
+			side = 2,
+			nameColor = "#a9f548",
+			dir = 1,
+			say = "エンタープライズ！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -485,7 +498,7 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
+			actorName = "？？",
 			side = 1,
 			bgName = "bg_xiangting_cg4",
 			nameColor = "#ff5c5c",
@@ -501,7 +514,7 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
+			actorName = "？？",
 			side = 1,
 			bgName = "bg_xiangting_cg4",
 			nameColor = "#ff5c5c",
@@ -549,7 +562,7 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
+			actorName = "？？",
 			side = 1,
 			bgName = "bg_xiangting_cg4",
 			nameColor = "#ff5c5c",
@@ -581,7 +594,7 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
+			actorName = "？？",
 			side = 1,
 			bgName = "bg_xiangting_cg4",
 			nameColor = "#ff5c5c",
@@ -597,7 +610,7 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
+			actorName = "？？",
 			side = 1,
 			bgName = "bg_xiangting_cg4",
 			nameColor = "#ff5c5c",
@@ -613,7 +626,7 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
+			actorName = "？？",
 			side = 1,
 			bgName = "bg_xiangting_cg4",
 			nameColor = "#ff5c5c",

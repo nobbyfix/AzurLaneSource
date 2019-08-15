@@ -63,12 +63,12 @@ slot3 = {
 					end
 
 					if not slot0.returners or #slot0.returners >= 3 then
-						pg.TipsMgr:GetInstance():ShowTips(i18n("returner_max_count"))
+						pg.TipsMgr.GetInstance():ShowTips(i18n("returner_max_count"))
 
 						return
 					end
 
-					pg.MsgboxMgr:GetInstance():ShowMsgBox({
+					pg.MsgboxMgr.GetInstance():ShowMsgBox({
 						content = i18n("returner_push_tip"),
 						onYes = function ()
 							slot0._event:emit(ActivityMediator.RETURN_AWARD_OP, {
@@ -230,7 +230,7 @@ slot3 = {
 
 				onButton(slot0, slot0.confirmBtn, function ()
 					if slot0.code ~= 0 then
-						pg.TipsMgr:GetInstance():ShowTips(i18n("return_have_participated_in_act"))
+						pg.TipsMgr.GetInstance():ShowTips(i18n("return_have_participated_in_act"))
 
 						return
 					end
@@ -260,7 +260,7 @@ slot3 = {
 						return
 					end
 
-					pg.MsgboxMgr:GetInstance():ShowMsgBox({
+					pg.MsgboxMgr.GetInstance():ShowMsgBox({
 						content = i18n("returner_match_tip"),
 						onYes = function ()
 							slot0._event:emit(ActivityMediator.RETURN_AWARD_OP, {

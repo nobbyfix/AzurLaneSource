@@ -187,7 +187,7 @@ slot0.register = function (slot0)
 		if getProxy(ActivityProxy):getMilitaryExerciseActivity() then
 			slot0:sendNotification(GAME.GO_SCENE, SCENE.MILITARYEXERCISE)
 		else
-			pg.TipsMgr:GetInstance():ShowTips(i18n("common_activity_notStartOrEnd"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("common_activity_notStartOrEnd"))
 		end
 	end)
 	slot0:bind(slot0.CLICK_CHALLENGE_BTN, function (slot0)
@@ -328,7 +328,7 @@ slot0.register = function (slot0)
 		slot3 = slot1 and getProxy(ActivityProxy):getActivityById(pg.expedition_data_by_map[slot1].on_activity)
 
 		if not slot3 or slot3:isEnd() then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("common_activity_end"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("common_activity_end"))
 
 			return
 		end
@@ -447,7 +447,7 @@ slot0.register = function (slot0)
 		PlayerPrefs.Save()
 	end)
 	slot0:bind(slot0.ON_STRATEGYING_CHAPTER, function (slot0)
-		pg.MsgboxMgr:GetInstance():ShowMsgBox({
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			yesText = "text_forward",
 			content = i18n("levelScene_chapter_is_activation", string.split(getProxy(ChapterProxy):getActiveChapter().getConfig(slot1, "chapter_name"), "|")[1]),
 			onYes = function ()
@@ -948,28 +948,12 @@ slot0.OnExitChapter = function (slot0, slot1)
 			slot2 = getProxy(PlayerProxy):getData()
 
 			if slot0.id == 103 and not slot2:GetCommonFlag(BATTLE_AUTO_ENABLED) then
-				slot1:HandleShowMsgBox({
+				slot1.viewComponent:HandleShowMsgBox({
 					modal = true,
 					hideNo = true,
 					content = i18n("battle_autobot_unlock")
 				})
 				slot1.viewComponent:emit(LevelMediator2.NOTICE_AUTOBOT_ENABLED, {})
-			end
-
-			slot0()
-		end,
-		function (slot0)
-			if slot0:getDefeatStory(slot0.defeatCount) and type(slot2) == "number" and not pg.StoryMgr.GetInstance():IsPlayed(slot2) then
-				pg.m02:sendNotification(GAME.STORY_UPDATE, {
-					storyId = slot2
-				})
-				slot1:emit(LevelMediator2.ON_PERFORM_COMBAT, slot2, slot0)
-
-				return
-			elseif slot2 and type(slot2) == "string" then
-				pg.StoryMgr.GetInstance():Play(slot2, slot0)
-
-				return
 			end
 
 			slot0()
@@ -1001,7 +985,7 @@ end
 slot0.OnEventUpdate = function (slot0)
 	slot0.viewComponent:updateEvent(slot1)
 
-	slot2, slot3 = pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0.player.level, "EventMediator")
+	slot2, slot3 = pg.SystemOpenMgr.GetInstance():isOpenSystem(slot0.player.level, "EventMediator")
 
 	if slot2 and slot1.eventForMsg then
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
@@ -1033,7 +1017,7 @@ slot0.onTimeUp = function (slot0)
 			})
 		else
 			slot3()
-			pg.TipsMgr:GetInstance():ShowTips(i18n("levelScene_chapter_timeout"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("levelScene_chapter_timeout"))
 		end
 	end
 end
@@ -1155,6 +1139,13 @@ slot0.playAIActions = function (slot0, slot1, slot2, slot3)
 	function ()
 		if coroutine.status(coroutine.status) == "suspended" then
 			slot0, slot1 = coroutine.resume(coroutine.resume)
+
+			if not slot0 then
+				slot1.viewComponent:unfrozen(-1)
+				slot1:sendNotification(GAME.CHAPTER_OP, {
+					type = ChapterConst.OpRequest
+				})
+			end
 		end
 	end()
 end

@@ -189,7 +189,7 @@ return {
 			side = 2,
 			dir = 1,
 			actorName = "ピュリファイアー",
-			say = "背中から機関部を狙って…！？くっ、この小娘がガァ！！",
+			say = "背中から機関部を狙って…！？くっ、この小娘がァ！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

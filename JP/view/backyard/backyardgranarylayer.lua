@@ -98,7 +98,7 @@ function slot5(slot0, slot1)
 			end, SFX_PANEL)
 			onButton(nil, slot0.addBtn, function ()
 				if slot0 == 999 then
-					pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buyCountLimit", pg.TipsMgr.GetInstance().ShowTips))
+					pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buyCountLimit", pg.TipsMgr.GetInstance().ShowTips))
 
 					return
 				end
@@ -110,7 +110,7 @@ function slot5(slot0, slot1)
 			end, SFX_PANEL)
 			onButton(nil, slot0.tenBtn, function ()
 				if slot0 == 999 then
-					pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buyCountLimit", pg.TipsMgr.GetInstance().ShowTips))
+					pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buyCountLimit", pg.TipsMgr.GetInstance().ShowTips))
 
 					return
 				end
@@ -243,7 +243,7 @@ slot0.init = function (slot0)
 
 	slot1:SetAction("animation", 0)
 
-	slot0._overlayUIMain = pg.UIMgr:GetInstance().OverlayMain
+	slot0._overlayUIMain = pg.UIMgr.GetInstance().OverlayMain
 	slot0.foodMsgBox = slot0(slot0:findTF("shopPanel"), slot0._overlayUIMain)
 	slot0.extendPanel = slot1(slot0:findTF("extendPanel"), slot0._overlayUIMain)
 	slot0.extendBtn = slot0:findTF("frame/top/extend_btn", slot0.foodPanel)
@@ -304,7 +304,7 @@ slot0.updateConsume = function (slot0, slot1, slot2)
 	slot3 = slot0[slot2.foodVO.id].usage_arg[1]
 
 	if slot0.dormClone.food ~= slot0.capacity and slot0.capacity < slot0.dormClone.food + slot3 and slot0.remindEndTime < pg.TimeMgr.GetInstance():GetServerTime() then
-		pg.MsgboxMgr:GetInstance():ShowMsgBox({
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			showStopRemind = true,
 			type = MSGBOX_TYPE_SINGLE_ITEM,
 			content = i18n("backyard_food_remind", slot2.foodVO:getConfig("name")),
@@ -327,7 +327,7 @@ slot0.updateConsume = function (slot0, slot1, slot2)
 	end
 
 	if slot0.capacity <= slot0.dormClone.food then
-		pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_full"))
+		pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_full"))
 
 		if slot1 then
 			slot1()
@@ -337,7 +337,7 @@ slot0.updateConsume = function (slot0, slot1, slot2)
 	end
 
 	if slot2.foodVO.count <= 0 then
-		pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_foodCountLimit"))
+		pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_foodCountLimit"))
 
 		if slot1 then
 			slot1()
@@ -394,7 +394,7 @@ slot0.openFoodShop = function (slot0, slot1)
 			if slot0.resourceType == 4 then
 				GoShoppingMsgBox(i18n("switch_to_shop_tip_3", i18n("word_gem")), ChargeScene.TYPE_DIAMOND)
 			else
-				pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_error_noResource", pg.item_data_statistics[id2ItemId(slot0.resourceType)].name))
+				pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_error_noResource", pg.item_data_statistics[id2ItemId(slot0.resourceType)].name))
 			end
 
 			return
@@ -407,7 +407,7 @@ end
 
 slot0.openExtendPanel = function (slot0)
 	if not ShoppingStreet.getRiseShopId(ShopArgs.BackyardFoodExtend, slot0.dormVO.food_extend_count) then
-		pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buy_max_count"))
+		pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_buy_max_count"))
 
 		return
 	end
@@ -417,7 +417,7 @@ slot0.openExtendPanel = function (slot0)
 			if slot0.resType == 4 then
 				GoShoppingMsgBox(i18n("switch_to_shop_tip_3", i18n("word_gem")), ChargeScene.TYPE_DIAMOND)
 			else
-				pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_error_entendFail"))
+				pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_backyardGranaryLayer_error_entendFail"))
 			end
 		else
 			slot0:emit(BackyardGranaryMediator.EXTEND_GRANARY, slot0.shopId, 1)
@@ -475,7 +475,7 @@ slot0.calFoodLeftTime = function (slot0, slot1)
 	slot4 = findTF(slot0.chatContain, "time"):GetComponent(typeof(Text))
 	slot5 = slot1:getFoodLeftTime()
 	slot0.timer = Timer.New(function ()
-		pg.TimeMgr:GetInstance():GetServerTime().text = pg.TimeMgr:GetInstance():DescCDTime(math.ceil(math.ceil) - pg.TimeMgr.GetInstance().GetServerTime())
+		pg.TimeMgr.GetInstance():GetServerTime().text = pg.TimeMgr.GetInstance():DescCDTime(math.ceil(math.ceil) - pg.TimeMgr.GetInstance().GetServerTime())
 
 		if math.ceil(math.ceil) - pg.TimeMgr.GetInstance().GetServerTime() <= 0 then
 			slot2.timer:Stop()

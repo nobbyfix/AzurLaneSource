@@ -96,7 +96,7 @@ return {
 			},
 			options = {
 				{
-					content = "……同感する",
+					content = "……同感だ",
 					flag = 1
 				}
 			}

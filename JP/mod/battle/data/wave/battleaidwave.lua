@@ -18,7 +18,7 @@ end
 ys.Battle.BattleAidWave.DoWave = function (slot0)
 	slot0.super.DoWave(slot0)
 
-	slot1 = slot0.super.DoWave.Battle.BattleDataProxy:GetInstance()
+	slot1 = slot0.super.DoWave.Battle.BattleDataProxy.GetInstance()
 
 	if slot0._killList ~= nil then
 		slot2 = slot1:GetFriendlyShipList()

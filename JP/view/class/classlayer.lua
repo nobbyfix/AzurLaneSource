@@ -484,12 +484,12 @@ slot0.updateResourcePanel = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 290-314, warpins: 1 ---
+			--- BLOCK #0 290-313, warpins: 1 ---
 			setActive(slot8, false)
 			setActive(slot7, true)
 			setButtonEnabled(slot6, false)
 
-			slot0.resTickTimer = pg.TimeMgr:GetInstance():AddTimer("tick_timer", 0, 1, function ()
+			slot0.resTickTimer = pg.TimeMgr.GetInstance():AddTimer("tick_timer", 0, 1, function ()
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-6, warpins: 1 ---
@@ -536,7 +536,7 @@ slot0.updateResourcePanel = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 315-329, warpins: 3 ---
+	--- BLOCK #1 314-328, warpins: 3 ---
 	local function slot22()
 
 		-- Decompilation error in this vicinity:
@@ -648,8 +648,8 @@ slot0.onCloseRsourcePanel = function (slot0)
 	if slot0.resTickTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 34-44, warpins: 1 ---
-		pg.TimeMgr:GetInstance():RemoveTimer(slot0.resTickTimer)
+		--- BLOCK #0 34-43, warpins: 1 ---
+		pg.TimeMgr.GetInstance():RemoveTimer(slot0.resTickTimer)
 
 		slot0.resTickTimer = nil
 		--- END OF BLOCK #0 ---
@@ -665,7 +665,7 @@ slot0.onCloseRsourcePanel = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 45-45, warpins: 2 ---
+	--- BLOCK #1 44-44, warpins: 2 ---
 	return
 	--- END OF BLOCK #1 ---
 
@@ -680,8 +680,8 @@ slot0.updateResourceTimer = function (slot0)
 	if slot0.resTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 4-14, warpins: 1 ---
-		pg.TimeMgr:GetInstance():RemoveTimer(slot0.resTimer)
+		--- BLOCK #0 4-13, warpins: 1 ---
+		pg.TimeMgr.GetInstance():RemoveTimer(slot0.resTimer)
 
 		slot0.resTimer = nil
 		--- END OF BLOCK #0 ---
@@ -697,12 +697,12 @@ slot0.updateResourceTimer = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 15-21, warpins: 2 ---
+	--- BLOCK #1 14-20, warpins: 2 ---
 	if slot0.resClass:GetUpgradeTimeStamp() > 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 22-34, warpins: 1 ---
-		slot0.resTimer = pg.TimeMgr:GetInstance():AddTimer("timer", 0, 1, function ()
+		--- BLOCK #0 21-32, warpins: 1 ---
+		slot0.resTimer = pg.TimeMgr.GetInstance():AddTimer("timer", 0, 1, function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-7, warpins: 1 ---
@@ -744,7 +744,7 @@ slot0.updateResourceTimer = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 35-36, warpins: 2 ---
+	--- BLOCK #2 33-34, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -816,8 +816,8 @@ slot0.willExit = function (slot0)
 	if slot0.resTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 49-59, warpins: 1 ---
-		pg.TimeMgr:GetInstance():RemoveTimer(slot0.resTimer)
+		--- BLOCK #0 49-58, warpins: 1 ---
+		pg.TimeMgr.GetInstance():RemoveTimer(slot0.resTimer)
 
 		slot0.resTimer = nil
 		--- END OF BLOCK #0 ---
@@ -833,11 +833,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 60-62, warpins: 2 ---
+	--- BLOCK #3 59-61, warpins: 2 ---
 	if slot0.effectTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 63-68, warpins: 1 ---
+		--- BLOCK #0 62-67, warpins: 1 ---
 		slot0.effectTimer:Stop()
 
 		slot0.effectTimer = nil
@@ -854,7 +854,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 69-70, warpins: 2 ---
+	--- BLOCK #4 68-69, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 

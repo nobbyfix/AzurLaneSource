@@ -27,7 +27,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "彼女の判断は正しかったようだな…",
 			typewriter = {
 				speed = 0.05,
@@ -43,7 +43,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "『アンチエックス』に隠されたこの時間軸、確かに我々の見たどの時間軸とも異なる",
 			typewriter = {
 				speed = 0.05,
@@ -59,7 +59,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "それもひとえに指揮官、そなたがいるからだろう",
 			typewriter = {
 				speed = 0.05,
@@ -105,7 +105,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "NYシティへの襲撃は『アンチエックス』……あの機械どもが、そなたらを我々に鉢あわさせるために仕掛けたことに過ぎん",
 			typewriter = {
 				speed = 0.05,
@@ -121,7 +121,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "拙者も彼女も燃え尽きかけた残滓、そなたらが気にかけるほどの存在ではあらぬ",
 			typewriter = {
 				speed = 0.05,
@@ -137,7 +137,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "彼女の業を知らぬのであらば、我らの進む道を阻まぬことだ",
 			typewriter = {
 				speed = 0.05,
@@ -153,7 +153,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "……そうすれば、再び相見えることも無かろう",
 			typewriter = {
 				speed = 0.05,
@@ -170,7 +170,7 @@ return {
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
 			actor = 900192,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "………！",
 			flashN = {
 				color = {
@@ -322,7 +322,7 @@ return {
 			side = 2,
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
-			say = "轰————",
+			say = "―――――！！",
 			flashN = {
 				color = {
 					1,
@@ -400,7 +400,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "……そなたなら彼女たちを導ける存在やもしれぬ、そう信じていたが――",
 			typewriter = {
 				speed = 0.05,
@@ -468,7 +468,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "どうしても我々を阻むなら、見せてしんぜよう",
 			typewriter = {
 				speed = 0.05,
@@ -484,7 +484,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "『アンチエックス』どもがそなたらに貸し与えた力の極限だ",
 			typewriter = {
 				speed = 0.05,
@@ -500,7 +500,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "――悪・即・斬",
 			typewriter = {
 				speed = 0.05,
@@ -699,7 +699,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "元を正せば「■■■」……そなたをここで斬れば、彼女も悲しむことはなかろう",
 			typewriter = {
 				speed = 0.05,
@@ -728,7 +728,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "ならば……！",
 			typewriter = {
 				speed = 0.05,
@@ -801,7 +801,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "…………",
 			typewriter = {
 				speed = 0.05,
@@ -817,7 +817,7 @@ return {
 			nameColor = "#ff5c5c",
 			side = 2,
 			dir = 1,
-			actorName = "？？？",
+			actorName = "？？",
 			say = "…………すまぬ。手を",
 			typewriter = {
 				speed = 0.05,

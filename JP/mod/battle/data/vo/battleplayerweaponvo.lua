@@ -42,9 +42,9 @@ ys.Battle.BattlePlayerWeaponVO.Update = function (slot0, slot1)
 end
 
 ys.Battle.BattlePlayerWeaponVO.PlayFocus = function (slot0, slot1, slot2)
-	slot0.Battle.BattleCameraUtil:GetInstance():FocusCharacter(slot1, slot1.CAST_CAM_ZOOM_IN_DURATION)
-	slot0.Battle.BattleCameraUtil:GetInstance():ZoomCamara(nil, slot1.CAST_CAM_ZOOM_SIZE, slot1.CAST_CAM_ZOOM_IN_DURATION, true)
-	slot0.Battle.BattleCameraUtil:GetInstance():BulletTime(slot1.SPEED_FACTOR_FOCUS_CHARACTER, slot1.FOCUS_MAP_RATE, slot1)
+	slot0.Battle.BattleCameraUtil.GetInstance():FocusCharacter(slot1, slot1.CAST_CAM_ZOOM_IN_DURATION)
+	slot0.Battle.BattleCameraUtil.GetInstance():ZoomCamara(nil, slot1.CAST_CAM_ZOOM_SIZE, slot1.CAST_CAM_ZOOM_IN_DURATION, true)
+	slot0.Battle.BattleCameraUtil.GetInstance():BulletTime(slot1.SPEED_FACTOR_FOCUS_CHARACTER, slot1.FOCUS_MAP_RATE, slot1)
 
 	slot0._focus = true
 
@@ -66,7 +66,7 @@ ys.Battle.BattlePlayerWeaponVO.PlayFocus = function (slot0, slot1, slot2)
 end
 
 ys.Battle.BattlePlayerWeaponVO.PlayCutIn = function (slot0, slot1, slot2)
-	slot0.Battle.BattleCameraUtil:GetInstance():CutInPainting(slot1, slot2)
+	slot0.Battle.BattleCameraUtil.GetInstance():CutInPainting(slot1, slot2)
 end
 
 ys.Battle.BattlePlayerWeaponVO.ResetFocus = function (slot0)

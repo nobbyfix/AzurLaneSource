@@ -43,7 +43,7 @@ end
 slot1.Dispose = function (slot0)
 	slot0._tf = nil
 
-	slot0.Battle.BattleResourceManager:GetInstance():DestroyOb(slot0._go)
+	slot0.Battle.BattleResourceManager.GetInstance():DestroyOb(slot0._go)
 
 	slot0._go = nil
 end

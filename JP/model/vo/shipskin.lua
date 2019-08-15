@@ -23,7 +23,7 @@ slot0.isExpired = function (slot0)
 end
 
 slot0.getRemainTime = function (slot0)
-	return slot0:getExpireTime() - pg.TimeMgr:GetInstance():GetServerTime()
+	return slot0:getExpireTime() - pg.TimeMgr.GetInstance():GetServerTime()
 end
 
 slot0.getIcon = function (slot0)

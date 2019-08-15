@@ -299,7 +299,7 @@ ys.Battle.BattlePlayerUnit.UpdateHP = function (slot0, slot1, slot2, slot3, slot
 	if slot0._mainUnitWarningValue and slot0._currentHP < slot0._mainUnitWarningValue and slot0._currentHP > 0 and not isHeal then
 		slot0._mainUnitWarningValue = nil
 
-		pg.TipsMgr:GetInstance():ShowTips(i18n("battle_main_emergent", slot0:GetShipName()))
+		pg.TipsMgr.GetInstance():ShowTips(i18n("battle_main_emergent", slot0:GetShipName()))
 	end
 end
 

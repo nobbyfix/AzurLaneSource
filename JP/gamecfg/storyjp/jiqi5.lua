@@ -200,7 +200,7 @@ return {
 			},
 			options = {
 				{
-					content = "自分を犠牲して世界を救う英雄の物語",
+					content = "自分を犠牲に世界を救う英雄の物語",
 					flag = 1
 				},
 				{

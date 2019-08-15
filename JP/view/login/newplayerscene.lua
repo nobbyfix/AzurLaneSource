@@ -74,7 +74,7 @@ slot0.onBackPressed = function (slot0)
 		return
 	end
 
-	BilibiliSdkMgr.inst:onBackPressed()
+	pg.SdkMgr.GetInstance():OnAndoridBackPress()
 end
 
 slot0.switchPanel = function (slot0)
@@ -288,8 +288,8 @@ slot0.didEnter = function (slot0)
 		if not slot0.contextData.configId then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 6-17, warpins: 1 ---
-			pg.TipsMgr:GetInstance():ShowTips(i18n("login_newPlayerScene_error_notChoiseShip"))
+			--- BLOCK #0 6-16, warpins: 1 ---
+			pg.TipsMgr.GetInstance():ShowTips(i18n("login_newPlayerScene_error_notChoiseShip"))
 
 			return
 			--- END OF BLOCK #0 ---
@@ -305,12 +305,12 @@ slot0.didEnter = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 18-23, warpins: 2 ---
+		--- BLOCK #1 17-22, warpins: 2 ---
 		if getInputText(slot0.nickname) == "" then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 24-35, warpins: 1 ---
-			pg.TipsMgr:GetInstance():ShowTips(i18n("login_newPlayerScene_inputName"))
+			--- BLOCK #0 23-33, warpins: 1 ---
+			pg.TipsMgr.GetInstance():ShowTips(i18n("login_newPlayerScene_inputName"))
 
 			return
 			--- END OF BLOCK #0 ---
@@ -326,7 +326,7 @@ slot0.didEnter = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 36-43, warpins: 2 ---
+		--- BLOCK #2 34-41, warpins: 2 ---
 		if not nameValidityCheck(slot0, 4, 14, {
 			"spece_illegal_tip",
 			"login_newPlayerScene_name_tooShort",
@@ -335,7 +335,7 @@ slot0.didEnter = function (slot0)
 		}) then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 44-44, warpins: 1 ---
+			--- BLOCK #0 42-42, warpins: 1 ---
 			return
 			--- END OF BLOCK #0 ---
 
@@ -350,7 +350,7 @@ slot0.didEnter = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 45-56, warpins: 2 ---
+		--- BLOCK #3 43-54, warpins: 2 ---
 		slot0.event:emit(NewPlayerMediator.ON_CREATE, slot0, slot0.contextData.configId)
 
 		return
@@ -417,14 +417,14 @@ slot0.selectCharacterByIdx = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 59-80, warpins: 1 ---
+	--- BLOCK #1 59-79, warpins: 1 ---
 	slot0:recycleSpineChar()
-	pg.UIMgr:GetInstance():LoadingOn()
+	pg.UIMgr.GetInstance():LoadingOn()
 	PoolMgr.GetInstance():GetSpineChar(slot5, true, function (slot0)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-60, warpins: 1 ---
-		pg.UIMgr:GetInstance():LoadingOff()
+		--- BLOCK #0 1-59, warpins: 1 ---
+		pg.UIMgr.GetInstance():LoadingOff()
 
 		slot0.shipPrefab = slot0
 		slot0.shipModel = slot0
@@ -453,7 +453,7 @@ slot0.selectCharacterByIdx = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 81-81, warpins: 2 ---
+	--- BLOCK #2 80-80, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 

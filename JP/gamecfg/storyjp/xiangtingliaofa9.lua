@@ -119,7 +119,7 @@ return {
 			side = 2,
 			dir = 1,
 			actor = 101400,
-			say = "NYシティに寄港して確認したくしても、セイレーンの艦隊が邪魔で……",
+			say = "NYシティに寄港して確認したくても、セイレーンの艦隊が邪魔で……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

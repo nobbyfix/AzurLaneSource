@@ -1,4 +1,4 @@
-slot0 = class("LevelFleetPanel")
+slot0 = class("BossBattleActivityPanel")
 slot1 = pg.extraenemy_template
 
 slot0.Ctor = function (slot0, slot1)
@@ -7,38 +7,49 @@ slot0.Ctor = function (slot0, slot1)
 	slot0._go = slot1
 	slot0._tf = tf(slot1)
 	slot0.hideBtn = findTF(slot0._tf, "hide_btn")
+	slot0.hideBtnImg = slot0.hideBtn:GetComponent(typeof(Image))
+	slot0.hideBtnTxt = findTF(slot0.hideBtn, "Text"):GetComponent(typeof(Text))
 	slot0.bgImg = findTF(slot0._tf, "panel/bg"):GetComponent(typeof(Image))
-	slot0.itemTF = findTF(slot0._tf, "panel/item_tpl/bg")
-	slot0.itemMaskTF = findTF(slot0._tf, "panel/item_tpl/mask")
+	slot0.itemContainer = findTF(slot0._tf, "panel/items")
+	slot0.itemTF = findTF(slot0.itemContainer, "item_tpl")
 	slot0.msgTF = findTF(slot0._tf, "panel/msg")
 	slot0.msgTxt = findTF(slot0._tf, "panel/msg"):GetComponent(typeof(Text))
 	slot0.processTxt = findTF(slot0._tf, "panel/process/Text"):GetComponent(typeof(Text))
 	slot0.hpSlider = findTF(slot0._tf, "panel/slider"):GetComponent(typeof(Slider))
+	slot0.hpSliderTxt = findTF(tf(slot0.hpSlider), "hp"):GetComponent(typeof(Text))
 	slot0.nameTxt = findTF(slot0._tf, "panel/slider/Text"):GetComponent(typeof(Text))
 	slot0.maskTF = findTF(slot0._tf, "panel/mask")
 	slot0.timerTxt = findTF(slot0.maskTF, "Text"):GetComponent(typeof(Text))
 	slot0.msgPosition = slot0.msgTF.anchoredPosition
 	slot0.msgCG = slot0.msgTF:GetComponent(typeof(CanvasGroup))
 	slot0.panel = findTF(slot0._tf, "panel")
+	slot0.cachePosition = slot0.panel.anchoredPosition
 	slot0.panelPosX = slot0.panel.anchoredPosition.x
 	slot0.panelWidth = slot0.panel.rect.width
+	slot0.msgTxt.text = ""
 	slot0.flag = true
 	slot0.msgs = {}
 
 	onButton(slot0, slot0.hideBtn, function ()
-		slot0:tweenPanel()
+		slot0:tweenPanel(0.2)
 	end, SFX_PANEL)
+
+	if BossBattleActivityPanel.flag == false then
+		slot0:tweenPanel(0)
+	end
+
+	slot0.ulist = UIItemList.New(slot0.itemContainer, slot0.itemTF)
 end
 
-slot0.tweenPanel = function (slot0)
+slot0.tweenPanel = function (slot0, slot1)
 	if LeanTween.isTweening(go(slot0.panel)) then
 		return
 	end
 
 	if slot0.flag then
-		LeanTween.moveX(slot0.panel, slot0.panelWidth, 0.2)
+		LeanTween.moveX(slot0.panel, slot0.panelWidth, slot1)
 	else
-		LeanTween.moveX(slot0.panel, slot0.panelPosX, 0.2)
+		LeanTween.moveX(slot0.panel, slot0.panelPosX, slot1)
 	end
 
 	slot0.flag = not slot0.flag
@@ -83,9 +94,7 @@ slot0.update = function (slot0, slot1)
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0.activityVO = slot1
-	slot2 = slot0.activityVO:getConfig("config_data")[1] or {}
-	slot3 = slot0.activityVO:getData1()
-	slot4 = -1
+	slot4 = table.indexof(slot0.activityVO:getConfig("config_data")[1] or {}, slot3)
 	slot5 = 0
 
 	--- END OF BLOCK #0 ---
@@ -95,7 +104,36 @@ slot0.update = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 11-20, warpins: 2 ---
+	--- BLOCK #1 11-25, warpins: 2 ---
+	if slot0[slot0.activityVO:getData1()].refresh_type == 1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 26-38, warpins: 1 ---
+		slot5 = pg.TimeMgr.GetInstance():parseTimeFromConfig(slot0[slot3].refresh_config)
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 39-43, warpins: 1 ---
+		if slot0[slot3].refresh_type == 2 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 44-63, warpins: 1 ---
+			slot5 = pg.TimeMgr.GetInstance():parseTimeFromConfig(slot0[slot0.all[1]].refresh_config) + slot0[slot3].refresh_config[1] * 86400
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -103,44 +141,15 @@ slot0.update = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 21-33, warpins: 0 ---
-	for slot9, slot10 in ipairs(slot2) do
+	--- BLOCK #2 64-66, warpins: 3 ---
+	if slot0.openTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 21-23, warpins: 1 ---
-		if slot10[1] == slot3 then
+		--- BLOCK #0 67-72, warpins: 1 ---
+		slot0.openTimer:Stop()
 
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 24-31, warpins: 1 ---
-			slot4 = slot9
-			slot5 = {
-				slot10[2],
-				slot10[3]
-			}
-
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 32-32, warpins: 1 ---
-			break
-			--- END OF BLOCK #1 ---
-
-
-
-		end
+		slot0.openTimer = nil
 		--- END OF BLOCK #0 ---
-
-		FLOW; TARGET BLOCK #1
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 32-33, warpins: 2 ---
-		--- END OF BLOCK #1 ---
 
 
 
@@ -153,21 +162,8 @@ slot0.update = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 34-44, warpins: 2 ---
-	slot6 = pg.TimeMgr.GetInstance():parseTimeFromConfig(slot5)
-
-	if slot0.openTimer then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 45-50, warpins: 1 ---
-		slot0.openTimer:Stop()
-
-		slot0.openTimer = nil
-		--- END OF BLOCK #0 ---
-
-
-
-	end
+	--- BLOCK #3 73-83, warpins: 2 ---
+	setActive(slot0.maskTF, pg.TimeMgr.GetInstance():GetServerTime() < slot5)
 
 	--- END OF BLOCK #3 ---
 
@@ -176,21 +172,11 @@ slot0.update = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 51-61, warpins: 2 ---
-	setActive(slot0.maskTF, pg.TimeMgr.GetInstance():GetServerTime() < slot6)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #5 65-67, warpins: 2 ---
-	if slot7 < slot6 then
+	--- BLOCK #4 87-89, warpins: 2 ---
+	if slot6 < slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 68-82, warpins: 1 ---
+		--- BLOCK #0 90-107, warpins: 1 ---
 		slot0.openTimer = Timer.New(function ()
 
 			-- Decompilation error in this vicinity:
@@ -206,40 +192,12 @@ slot0.update = function (slot0, slot1)
 
 		slot0.openTimer:Start()
 		slot0.openTimer.func()
-		--- END OF BLOCK #0 ---
 
-
-
-	else
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 96-98, warpins: 2 ---
-		slot0.hpSlider.value = slot0.activityVO.data2 / slot0[slot3].HP
-		slot11 = slot8.background
-
-		if slot0.activityVO.data2 == 0 then
+		if slot2[slot4 - 1] then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 99-103, warpins: 1 ---
-			GetSpriteFromAtlasAsync("bg/" .. (slot11 .. "_d" or slot11), "", function (slot0)
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-4, warpins: 1 ---
-				slot0.bgImg.sprite = slot0
-
-				return
-				--- END OF BLOCK #0 ---
-
-
-
-			end)
-			updateDrop(slot0.itemTF, slot13)
-
-			slot0.processTxt.text = slot4 .. "/" .. #slot2
-			slot0.nameTxt.text = slot8.name
-
-			setActive(slot0.itemMaskTF, slot10)
-			setGray(slot0.itemTF, slot10, true)
+			--- BLOCK #0 108-116, warpins: 1 ---
+			slot0:updateBossInfo(slot7, slot0[slot7].hp)
 			--- END OF BLOCK #0 ---
 
 
@@ -247,28 +205,110 @@ slot0.update = function (slot0, slot1)
 		end
 		--- END OF BLOCK #0 ---
 
-		FLOW; TARGET BLOCK #1
 
 
+	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 104-144, warpins: 3 ---
-		--- END OF BLOCK #1 ---
+		--- BLOCK #0 117-122, warpins: 1 ---
+		slot0:updateBossInfo(slot3, slot0.activityVO.data2)
+		--- END OF BLOCK #0 ---
 
 
 
 	end
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 145-146, warpins: 2 ---
+	--- BLOCK #5 123-124, warpins: 3 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot0.updateBossInfo = function (slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 19-21, warpins: 2 ---
+	slot0.hpSlider.value = (slot0[slot1].hp - math.min(slot2, slot0[slot1].hp)) / slot0[slot1].hp
+	slot7 = slot3.background
+
+	if slot0[slot1].hp - math.min(slot2, slot0[slot1].hp) == 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 22-26, warpins: 1 ---
+		GetSpriteFromAtlasAsync("bg/" .. (slot7 .. "_d" or slot7), "", function (slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0.bgImg.sprite = slot0
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end)
+		slot0.ulist:make(function (slot0, slot1, slot2)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-4, warpins: 1 ---
+			if slot0 == UIItemList.EventUpdate then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 5-36, warpins: 1 ---
+				updateDrop(slot2:Find("bg"), slot4)
+				setActive(slot2:Find("mask"), slot1)
+				setGray(slot2, slot1, true)
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 37-37, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
+		end)
+		slot0.ulist:align(#slot3.reward_display)
+
+		slot0.processTxt.text = slot0.activityVO:getData3()
+		slot0.nameTxt.text = slot3.name
+		slot0.hideBtnTxt.text = math.ceil(slot4 / slot3.hp * 100) .. "%"
+		slot0.hpSliderTxt.text = slot5 .. "/" .. slot3.hp
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 27-71, warpins: 3 ---
+	--- END OF BLOCK #1 ---
 
 
 
@@ -300,7 +340,10 @@ slot0.clear = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 15-15, warpins: 2 ---
+	--- BLOCK #1 15-21, warpins: 2 ---
+	slot0.panel.anchoredPosition = slot0.cachePosition
+	BossBattleActivityPanel.flag = slot0.flag
+
 	return
 	--- END OF BLOCK #1 ---
 

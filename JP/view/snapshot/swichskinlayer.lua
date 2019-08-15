@@ -98,6 +98,51 @@ slot0.openSelectSkinPanel = function (slot0)
 		slot15 = slot6.id == slot0.shipVO.skinId
 		slot16 = slot6.id == slot0.shipVO:getConfig("skin_id") or (((slot0.shipVO:proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or (slot0.shipVO:getRemouldSkinId() == slot6.id and slot0.shipVO:isRemoulded())) and 1) or 0) >= 1 or slot6.skin_type == 3
 
+		onToggle(slot0, slot8.hideObjToggleTF, function (slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-8, warpins: 1 ---
+			slot1 = PlayerPrefs.SetInt
+			slot2 = "paint_hide_other_obj_" .. slot0.paintingName
+
+			if slot0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 9-10, warpins: 1 ---
+				slot3 = 1
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 11-11, warpins: 1 ---
+				slot3 = 0
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 12-26, warpins: 2 ---
+			slot1(slot2, slot3)
+			slot0:flushSkin()
+			slot0.flushSkin:emit(SwichSkinMediator.UPDATE_SKINCONFIG, slot1.shipVO.skinId)
+
+			return
+			--- END OF BLOCK #1 ---
+
+
+
+		end, SFX_PANEL)
 		onButton(slot0, slot7, function ()
 
 			-- Decompilation error in this vicinity:
@@ -550,7 +595,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #19 194-204, warpins: 2 ---
+		--- BLOCK #19 194-210, warpins: 2 ---
 		--- END OF BLOCK #19 ---
 
 		FLOW; TARGET BLOCK #20
@@ -558,7 +603,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #20 205-206, warpins: 2 ---
+		--- BLOCK #20 211-212, warpins: 2 ---
 		--- END OF BLOCK #20 ---
 
 
@@ -701,15 +746,15 @@ slot0.getGroupSkinList = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 40-73, warpins: 0 ---
+	--- BLOCK #2 40-72, warpins: 0 ---
 	for slot6 = #slot2, 1, -1 do
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 40-43, warpins: 2 ---
-		if slot2[slot6].show_time and ((type(slot7.show_time) == "string" and slot7.show_time == "stop") or (type(slot7.show_time) == "table" and not pg.TimeMgr:GetInstance():inTime(slot7.show_time))) then
+		if slot2[slot6].show_time and ((type(slot7.show_time) == "string" and slot7.show_time == "stop") or (type(slot7.show_time) == "table" and not pg.TimeMgr.GetInstance():inTime(slot7.show_time))) then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 68-72, warpins: 2 ---
+			--- BLOCK #0 67-71, warpins: 2 ---
 			table.remove(slot2, slot6)
 			--- END OF BLOCK #0 ---
 
@@ -723,7 +768,7 @@ slot0.getGroupSkinList = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 73-73, warpins: 4 ---
+		--- BLOCK #1 72-72, warpins: 4 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -737,11 +782,11 @@ slot0.getGroupSkinList = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 74-77, warpins: 1 ---
+	--- BLOCK #3 73-76, warpins: 1 ---
 	if PLATFORM_CODE == PLATFORM_CH then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 78-85, warpins: 1 ---
+		--- BLOCK #0 77-84, warpins: 1 ---
 		slot3 = pg.gameset.big_seven_old_skin_timestamp.key_value
 
 		--- END OF BLOCK #0 ---
@@ -751,15 +796,15 @@ slot0.getGroupSkinList = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 86-99, warpins: 0 ---
+		--- BLOCK #1 85-98, warpins: 0 ---
 		for slot7 = #slot2, 1, -1 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 86-89, warpins: 2 ---
+			--- BLOCK #0 85-88, warpins: 2 ---
 			if slot2[slot7].skin_type == 3 and slot3 < slot0.shipVO.createTime then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 94-98, warpins: 1 ---
+				--- BLOCK #0 93-97, warpins: 1 ---
 				table.remove(slot2, slot7)
 				--- END OF BLOCK #0 ---
 
@@ -773,7 +818,7 @@ slot0.getGroupSkinList = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 99-99, warpins: 3 ---
+			--- BLOCK #1 98-98, warpins: 3 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -792,7 +837,7 @@ slot0.getGroupSkinList = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 100-100, warpins: 2 ---
+	--- BLOCK #4 99-99, warpins: 2 ---
 	return slot2
 	--- END OF BLOCK #4 ---
 

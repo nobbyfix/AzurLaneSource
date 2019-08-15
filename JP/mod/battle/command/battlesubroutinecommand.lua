@@ -16,7 +16,7 @@ slot4.Initialize = function (slot0)
 end
 
 slot4.DoPrologue = function (slot0)
-	pg.UIMgr:GetInstance():Marching()
+	pg.UIMgr.GetInstance():Marching()
 
 	function slot1()
 		slot0._uiMediator:OpeningEffect(function ()

@@ -3,7 +3,7 @@ return {
 	name = "Mighty B",
 	cd = 0,
 	picture = "0",
-	desc = "回避率上升效果",
+	desc = "机动上升效果",
 	painting = 1,
 	id = 12530,
 	castCV = "skill",

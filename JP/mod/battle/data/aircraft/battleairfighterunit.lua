@@ -201,7 +201,7 @@ ys.Battle.BattleAirFighterUnit.changeState = function (slot0, slot1)
 end
 
 ys.Battle.BattleAirFighterUnit.changeToFlyState = function (slot0)
-	slot0._pos = slot0.Battle.BattleCameraUtil:GetInstance():GetS2WPoint(slot1.AIRFIGHTER_ENTER_POINT)
+	slot0._pos = slot0.Battle.BattleCameraUtil.GetInstance():GetS2WPoint(slot1.AIRFIGHTER_ENTER_POINT)
 	slot0._viewPos = slot0._pos
 
 	slot0.Battle.PlayBattleSFX("battle/plane")
@@ -218,7 +218,7 @@ ys.Battle.BattleAirFighterUnit._updatePosFly = function (slot0)
 end
 
 ys.Battle.BattleAirFighterUnit.changeToBackState = function (slot0)
-	slot0._pos = Vector3(slot0._pos.x, 15, (not slot0.Battle.BattleDataProxy:GetInstance():GetFleetByIFF(slot1.FRIENDLY_CODE):GetMotion() or slot2:GetPos().z) and 45)
+	slot0._pos = Vector3(slot0._pos.x, 15, (not slot0.Battle.BattleDataProxy.GetInstance():GetFleetByIFF(slot1.FRIENDLY_CODE):GetMotion() or slot2:GetPos().z) and 45)
 end
 
 ys.Battle.BattleAirFighterUnit._updatePosBack = function (slot0)

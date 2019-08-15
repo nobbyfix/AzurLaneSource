@@ -374,12 +374,12 @@ end
 slot0.setDescInfo = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-19, warpins: 1 ---
-	pg.UIMgr:GetInstance():LoadingOn()
+	--- BLOCK #0 1-18, warpins: 1 ---
+	pg.UIMgr.GetInstance():LoadingOn()
 	PoolMgr.GetInstance():GetUI(slot1, true, function (slot0)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-172, warpins: 1 ---
+		--- BLOCK #0 1-171, warpins: 1 ---
 		setActive(slot0._playerResOb, true)
 
 		slot0.name = setActive
@@ -594,8 +594,8 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 			if not slot1:getName() or slot1 == "" then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 11-22, warpins: 2 ---
-				pg.TipsMgr:GetInstance():ShowTips(i18n("guild_create_error_noname"))
+				--- BLOCK #0 11-21, warpins: 2 ---
+				pg.TipsMgr.GetInstance():ShowTips(i18n("guild_create_error_noname"))
 
 				return
 				--- END OF BLOCK #0 ---
@@ -611,7 +611,7 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 23-30, warpins: 1 ---
+			--- BLOCK #1 22-29, warpins: 1 ---
 			if not nameValidityCheck(slot1, 0, 20, {
 				"spece_illegal_tip",
 				"login_newPlayerScene_name_tooShort",
@@ -620,7 +620,7 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 			}) then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 31-31, warpins: 1 ---
+				--- BLOCK #0 30-30, warpins: 1 ---
 				return
 				--- END OF BLOCK #0 ---
 
@@ -635,12 +635,12 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 32-37, warpins: 1 ---
+			--- BLOCK #2 31-36, warpins: 1 ---
 			if not slot1:getFaction() then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 38-49, warpins: 1 ---
-				pg.TipsMgr:GetInstance():ShowTips(i18n("guild_create_error_nofaction"))
+				--- BLOCK #0 37-47, warpins: 1 ---
+				pg.TipsMgr.GetInstance():ShowTips(i18n("guild_create_error_nofaction"))
 
 				return
 				--- END OF BLOCK #0 ---
@@ -656,12 +656,12 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 50-55, warpins: 1 ---
+			--- BLOCK #3 48-53, warpins: 1 ---
 			if not slot1:getPolicy() then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 56-67, warpins: 1 ---
-				pg.TipsMgr:GetInstance():ShowTips(i18n("guild_create_error_nopolicy"))
+				--- BLOCK #0 54-64, warpins: 1 ---
+				pg.TipsMgr.GetInstance():ShowTips(i18n("guild_create_error_nopolicy"))
 
 				return
 				--- END OF BLOCK #0 ---
@@ -677,12 +677,12 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #4 68-73, warpins: 1 ---
+			--- BLOCK #4 65-70, warpins: 1 ---
 			if not slot1:getManifesto() or slot2 == "" then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 76-87, warpins: 2 ---
-				pg.TipsMgr:GetInstance():ShowTips(i18n("guild_create_error_nomanifesto"))
+				--- BLOCK #0 73-83, warpins: 2 ---
+				pg.TipsMgr.GetInstance():ShowTips(i18n("guild_create_error_nomanifesto"))
 
 				return
 				--- END OF BLOCK #0 ---
@@ -698,8 +698,8 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #5 88-104, warpins: 1 ---
-			pg.MsgboxMgr:GetInstance():ShowMsgBox({
+			--- BLOCK #5 84-99, warpins: 1 ---
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = i18n("guild_create_confirm", slot2),
 				onYes = function ()
 
@@ -749,7 +749,7 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #6 105-105, warpins: 2 ---
+			--- BLOCK #6 100-100, warpins: 2 ---
 			--- END OF BLOCK #6 ---
 
 			FLOW; TARGET BLOCK #7
@@ -757,7 +757,7 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #7 106-106, warpins: 2 ---
+			--- BLOCK #7 101-101, warpins: 2 ---
 			--- END OF BLOCK #7 ---
 
 			FLOW; TARGET BLOCK #8
@@ -765,7 +765,7 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #8 107-107, warpins: 2 ---
+			--- BLOCK #8 102-102, warpins: 2 ---
 			--- END OF BLOCK #8 ---
 
 			FLOW; TARGET BLOCK #9
@@ -773,7 +773,7 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #9 108-108, warpins: 2 ---
+			--- BLOCK #9 103-103, warpins: 2 ---
 			--- END OF BLOCK #9 ---
 
 			FLOW; TARGET BLOCK #10
@@ -781,13 +781,13 @@ slot0.setDescInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #10 109-109, warpins: 2 ---
+			--- BLOCK #10 104-104, warpins: 2 ---
 			--- END OF BLOCK #10 ---
 
 
 
 		end, SFX_CONFIRM)
-		pg.UIMgr:GetInstance():LoadingOff()
+		pg.UIMgr.GetInstance():LoadingOff()
 
 		GetOrAddComponent(slot1, "CanvasGroup").alpha = 0
 		slot0.isPlaying = true

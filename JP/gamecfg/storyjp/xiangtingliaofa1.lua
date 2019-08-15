@@ -481,7 +481,7 @@ return {
 			dir = 1,
 			actor = 107070,
 			nameColor = "#a9f548",
-			say = "お！もう出迎えが来たのね！~",
+			say = "お！もう出迎えが来たのね！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

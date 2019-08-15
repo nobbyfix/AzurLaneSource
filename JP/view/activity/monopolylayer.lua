@@ -582,7 +582,7 @@ slot0.didEnter = function (slot0)
 		end
 
 		if slot0.leftCount <= 0 then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("common_count_noenough"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("common_count_noenough"))
 
 			return
 		end
@@ -625,7 +625,7 @@ slot0.triggerEvent = function (slot0, slot1, slot2, slot3)
 
 	function slot6(slot0, slot1)
 		if slot0 and slot0:ExistStory() then
-			pg.StoryMgr:GetInstance():Play(slot0.config.story, slot1, true, true, true)
+			pg.StoryMgr.GetInstance():Play(slot0.config.story, slot1, true, true, true)
 		else
 			slot1()
 		end
@@ -672,7 +672,7 @@ slot0.checkState = function (slot0)
 
 	if slot0:getStrory() then
 		table.insert(slot1, function (slot0)
-			pg.StoryMgr:GetInstance():Play(slot0, slot0)
+			pg.StoryMgr.GetInstance():Play(slot0, slot0)
 		end)
 	end
 
@@ -741,7 +741,7 @@ slot0.startAction = function (slot0)
 
 	table.insert(slot2, function (slot0)
 		if slot0:getStrory() then
-			pg.StoryMgr:GetInstance():Play(slot1, slot0)
+			pg.StoryMgr.GetInstance():Play(slot1, slot0)
 		else
 			slot0()
 		end

@@ -180,7 +180,7 @@ slot0.getTimeFormat = function (slot0, slot1)
 end
 
 slot0.updateTimes = function (slot0)
-	if math.ceil(os.difftime(pg.TimeMgr:GetInstance():GetServerTime(), slot0.activityData.data3) / 86400) < 0 then
+	if math.ceil(os.difftime(pg.TimeMgr.GetInstance():GetServerTime(), slot0.activityData.data3) / 86400) < 0 then
 		slot2 = 0
 	end
 

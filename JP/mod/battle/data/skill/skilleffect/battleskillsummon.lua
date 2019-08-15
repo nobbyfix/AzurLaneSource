@@ -15,7 +15,7 @@ ys.Battle.BattleSkillSummon.DoDataEffect = function (slot0, slot1, slot2, slot3)
 end
 
 ys.Battle.BattleSkillSummon.DoSummon = function (slot0, slot1, slot2)
-	slot3 = slot0.Battle.BattleDataProxy:GetInstance()
+	slot3 = slot0.Battle.BattleDataProxy.GetInstance()
 
 	if slot0._tempData.arg_list.isCasterAlive and not slot1:IsAlive() then
 		return

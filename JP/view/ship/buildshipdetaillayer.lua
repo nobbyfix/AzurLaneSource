@@ -604,8 +604,8 @@ slot0.updateProject = function (slot0, slot1, slot2)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 18-26, warpins: 1 ---
-					pg.TipsMgr:GetInstance():ShowTips(slot1)
+					--- BLOCK #0 18-25, warpins: 1 ---
+					pg.TipsMgr.GetInstance():ShowTips(slot1)
 					--- END OF BLOCK #0 ---
 
 
@@ -619,7 +619,7 @@ slot0.updateProject = function (slot0, slot1, slot2)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 27-27, warpins: 2 ---
+				--- BLOCK #1 26-26, warpins: 2 ---
 				return
 				--- END OF BLOCK #1 ---
 
@@ -634,11 +634,11 @@ slot0.updateProject = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 28-31, warpins: 1 ---
+			--- BLOCK #1 27-30, warpins: 1 ---
 			if slot1.isStopSpeedUpRemind then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 32-39, warpins: 1 ---
+				--- BLOCK #0 31-38, warpins: 1 ---
 				slot1:emit(BuildShipDetailMediator.ON_QUICK, slot0)
 				--- END OF BLOCK #0 ---
 
@@ -647,7 +647,7 @@ slot0.updateProject = function (slot0, slot1, slot2)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 40-54, warpins: 1 ---
+				--- BLOCK #0 39-53, warpins: 1 ---
 				slot5 = pg.MsgboxMgr.GetInstance()
 				slot4 = pg.MsgboxMgr.GetInstance().ShowMsgBox
 				slot6 = {
@@ -660,7 +660,7 @@ slot0.updateProject = function (slot0, slot1, slot2)
 				if slot1.itemVO.count ~= 0 or not COLOR_RED then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 58-58, warpins: 2 ---
+					--- BLOCK #0 57-57, warpins: 2 ---
 					slot10 = COLOR_GREEN
 					--- END OF BLOCK #0 ---
 
@@ -675,7 +675,7 @@ slot0.updateProject = function (slot0, slot1, slot2)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 59-71, warpins: 2 ---
+				--- BLOCK #1 58-70, warpins: 2 ---
 				slot6.content = slot7(slot8, slot9, slot10, slot1.itemVO.count)
 				slot6.stopRamindContent = i18n("common_dont_remind_dur_login")
 
@@ -706,7 +706,7 @@ slot0.updateProject = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 72-72, warpins: 2 ---
+			--- BLOCK #2 71-71, warpins: 2 ---
 			return
 			--- END OF BLOCK #2 ---
 
@@ -715,7 +715,7 @@ slot0.updateProject = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 73-73, warpins: 2 ---
+			--- BLOCK #3 72-72, warpins: 2 ---
 			--- END OF BLOCK #3 ---
 
 

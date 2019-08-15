@@ -20,7 +20,7 @@ end
 
 ys.Battle.TorAlert.Dispose = function (slot0)
 	LeanTween.cancel(slot0._alertGO)
-	slot0.Battle.BattleResourceManager:GetInstance():DestroyOb(slot0._alertGO)
+	slot0.Battle.BattleResourceManager.GetInstance():DestroyOb(slot0._alertGO)
 end
 
 return

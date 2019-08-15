@@ -134,7 +134,7 @@ slot0.updateLockStudentPos = function (slot0, slot1, slot2)
 			slot4 = slot2.resource_num
 			slot5, slot6 = nil
 
-			if slot2.discount ~= 0 and (table.getCount(slot2.discount_time) == 0 or pg.TimeMgr:GetInstance():inTime(slot2.discount_time)) then
+			if slot2.discount ~= 0 and (table.getCount(slot2.discount_time) == 0 or pg.TimeMgr.GetInstance():inTime(slot2.discount_time)) then
 				slot5 = {
 					discount = slot2.discount
 				}
@@ -142,7 +142,7 @@ slot0.updateLockStudentPos = function (slot0, slot1, slot2)
 				slot11, slot12, slot13 = unpack(slot9)
 				slot20.year, slot20.month, slot20.day = unpack(slot10)
 
-				if pg.TimeMgr:GetInstance():Table2ServerTime({
+				if pg.TimeMgr.GetInstance():Table2ServerTime({
 					year = slot14,
 					month = slot15,
 					day = slot16,
@@ -161,11 +161,11 @@ slot0.updateLockStudentPos = function (slot0, slot1, slot2)
 				slot4 = slot4 * (100 - slot2.discount) / 100
 			end
 
-			pg.MsgboxMgr:GetInstance():ShowMsgBox({
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = slot6 or i18n("open_skill_pos", slot4),
 				onYes = function ()
 					if slot0.playerVO[id2res(slot1.resource_type)] < slot1.resource_type then
-						pg.TipsMgr:GetInstance():ShowTips(i18n("common_no_resource"))
+						pg.TipsMgr.GetInstance():ShowTips(i18n("common_no_resource"))
 
 						return
 					end
@@ -224,7 +224,7 @@ slot0.startLesson = function (slot0, slot1, slot2)
 			content = i18n("tactics_lesson_start_tip", pg.MsgboxMgr.GetInstance().ShowMsgBox, pg.MsgboxMgr.GetInstance(), ),
 			onYes = function ()
 				if slot0.level == slot1 then
-					pg.TipsMgr:GetInstance():ShowTips(i18n("tactics_max_level"))
+					pg.TipsMgr.GetInstance():ShowTips(i18n("tactics_max_level"))
 
 					return
 				end
@@ -480,8 +480,8 @@ slot0.goDockYard = function (slot0, slot1, slot2)
 	if table.getCount(slot0.itemVOs or {}) <= 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 11-22, warpins: 1 ---
-		pg.TipsMgr:GetInstance():ShowTips(i18n("tactics_no_lesson"))
+		--- BLOCK #0 11-21, warpins: 1 ---
+		pg.TipsMgr.GetInstance():ShowTips(i18n("tactics_no_lesson"))
 
 		return
 		--- END OF BLOCK #0 ---
@@ -497,7 +497,7 @@ slot0.goDockYard = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 23-27, warpins: 2 ---
+	--- BLOCK #1 22-26, warpins: 2 ---
 	slot3 = {}
 
 	--- END OF BLOCK #1 ---
@@ -507,15 +507,15 @@ slot0.goDockYard = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 28-37, warpins: 0 ---
+	--- BLOCK #2 27-36, warpins: 0 ---
 	for slot7, slot8 in pairs(slot0.studentVOs) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 28-34, warpins: 1 ---
+		--- BLOCK #0 27-33, warpins: 1 ---
 		if slot8:getState() == Student.WAIT then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 35-35, warpins: 1 ---
+			--- BLOCK #0 34-34, warpins: 1 ---
 			slot3[slot7] = slot8
 			--- END OF BLOCK #0 ---
 
@@ -529,7 +529,7 @@ slot0.goDockYard = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 36-37, warpins: 3 ---
+		--- BLOCK #1 35-36, warpins: 3 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -543,7 +543,7 @@ slot0.goDockYard = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 38-46, warpins: 1 ---
+	--- BLOCK #3 37-45, warpins: 1 ---
 	slot0:emit(NavalTacticsMediator.OPEN_DOCKYARD, slot2, slot3, slot1)
 
 	return
@@ -615,8 +615,8 @@ slot0.addLeasonOverTimer = function (slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 14-31, warpins: 1 ---
-			setText(slot2:Find("infoPanel/timer/Text"), pg.TimeMgr:GetInstance():DescCDTime(slot0 - slot0))
+			--- BLOCK #0 14-30, warpins: 1 ---
+			setText(slot2:Find("infoPanel/timer/Text"), pg.TimeMgr.GetInstance():DescCDTime(slot0 - slot0))
 			--- END OF BLOCK #0 ---
 
 
@@ -630,7 +630,7 @@ slot0.addLeasonOverTimer = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 32-32, warpins: 2 ---
+		--- BLOCK #1 31-31, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 
@@ -776,7 +776,7 @@ end
 slot0.updateSkillInfo = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-81, warpins: 1 ---
+	--- BLOCK #0 1-80, warpins: 1 ---
 	slot4 = slot2:getSkillId(slot3)
 
 	slot0:updateSkillDesc(slot5, {
@@ -840,7 +840,7 @@ slot0.updateSkillInfo = function (slot0, slot1, slot2)
 
 	end, SFX_PANEL)
 	setSlider(slot10, 0, 1, slot0.shipVOs[slot2.shipId].skills[slot4].exp / getConfigFromLevel1(pg.skill_need_exp, slot0.shipVOs[slot2.shipId].skills[slot4].level).exp)
-	setText(findTF(slot1, "timer/Text"), pg.TimeMgr:GetInstance():DescCDTime(slot2:getTime()))
+	setText(findTF(slot1, "timer/Text"), pg.TimeMgr.GetInstance():DescCDTime(slot2:getTime()))
 
 	return
 	--- END OF BLOCK #0 ---
@@ -859,7 +859,7 @@ slot0.updateShipInfo = function (slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 14-20, warpins: 1 ---
-		slot0.shipCards[slot4.id] = DockyardShipItem.New(slot3)
+		slot0.shipCards[slot4.id] = TacticsShipItem.New(slot3)
 		--- END OF BLOCK #0 ---
 
 
@@ -1032,8 +1032,8 @@ slot0.showSkillSel = function (slot0, slot1, slot2)
 		if not slot2.skills[slot1[slot0.selectedSkillIndex]] then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 15-26, warpins: 1 ---
-			pg.TipsMgr:GetInstance():ShowTips(i18n("tactics_should_exist_skill"))
+			--- BLOCK #0 15-25, warpins: 1 ---
+			pg.TipsMgr.GetInstance():ShowTips(i18n("tactics_should_exist_skill"))
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1049,12 +1049,12 @@ slot0.showSkillSel = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 27-33, warpins: 2 ---
+		--- BLOCK #2 26-32, warpins: 2 ---
 		if slot1.level == pg.skill_data_template[slot0].max_level then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 34-45, warpins: 1 ---
-			pg.TipsMgr:GetInstance():ShowTips(i18n("tactics_max_level"))
+			--- BLOCK #0 33-43, warpins: 1 ---
+			pg.TipsMgr.GetInstance():ShowTips(i18n("tactics_max_level"))
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1070,7 +1070,7 @@ slot0.showSkillSel = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 46-65, warpins: 2 ---
+		--- BLOCK #3 44-63, warpins: 2 ---
 		slot3:setSkillIndex(slot0.selectedSkillIndex)
 
 		slot0.selectedSkillIndex = nil
@@ -1081,7 +1081,7 @@ slot0.showSkillSel = function (slot0, slot1, slot2)
 		if slot0.selectedSkillIndex then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 66-67, warpins: 1 ---
+			--- BLOCK #0 64-65, warpins: 1 ---
 			slot5()
 			--- END OF BLOCK #0 ---
 
@@ -1096,7 +1096,7 @@ slot0.showSkillSel = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 68-68, warpins: 2 ---
+		--- BLOCK #4 66-66, warpins: 2 ---
 		return
 		--- END OF BLOCK #4 ---
 
@@ -1653,8 +1653,8 @@ slot0.showLessonSel = function (slot0, slot1, slot2, slot3)
 		if not slot0.itemVOs or table.getCount(slot0.itemVOs) == 0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 12-23, warpins: 2 ---
-			pg.TipsMgr:GetInstance():ShowTips(i18n("common_no_item_1"))
+			--- BLOCK #0 12-22, warpins: 2 ---
+			pg.TipsMgr.GetInstance():ShowTips(i18n("common_no_item_1"))
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1670,11 +1670,11 @@ slot0.showLessonSel = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 24-27, warpins: 1 ---
+		--- BLOCK #1 23-26, warpins: 1 ---
 		if not slot0.selectedLessonId then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 28-28, warpins: 1 ---
+			--- BLOCK #0 27-27, warpins: 1 ---
 			return
 			--- END OF BLOCK #0 ---
 
@@ -1689,7 +1689,7 @@ slot0.showLessonSel = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 29-47, warpins: 1 ---
+		--- BLOCK #2 28-46, warpins: 1 ---
 		slot1:setLesson(slot0.selectedLessonId)
 		slot1:setTime(slot0.lessonTime)
 		slot1.setTime:startLesson(slot1.setTime, function ()
@@ -1735,7 +1735,7 @@ slot0.showLessonSel = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 48-48, warpins: 2 ---
+		--- BLOCK #3 47-47, warpins: 2 ---
 		--- END OF BLOCK #3 ---
 
 		FLOW; TARGET BLOCK #4
@@ -1743,7 +1743,7 @@ slot0.showLessonSel = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 49-49, warpins: 2 ---
+		--- BLOCK #4 48-48, warpins: 2 ---
 		--- END OF BLOCK #4 ---
 
 
@@ -1779,11 +1779,11 @@ end
 slot0.updateLessonInfo = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-55, warpins: 1 ---
+	--- BLOCK #0 1-54, warpins: 1 ---
 	setText(findTF(slot0.lessonPanel, "skillInfo/contain/name"), pg.item_data_statistics[slot2].name)
 	setText(findTF(slot0.lessonPanel, "skillInfo/contain/desc"), pg.item_data_statistics[slot2].display)
 	setText(findTF(slot0.lessonPanel, "skillInfo/contain/timer_contain/exp_timer/Text"), slot5)
-	setText(findTF(slot0.lessonPanel, "skillInfo/contain/timer_contain/timer/Text"), pg.TimeMgr:GetInstance():DescCDTime(pg.item_data_template[slot2].usage_arg[1]))
+	setText(findTF(slot0.lessonPanel, "skillInfo/contain/timer_contain/timer/Text"), pg.TimeMgr.GetInstance():DescCDTime(pg.item_data_template[slot2].usage_arg[1]))
 
 	slot0.lessonTime = pg.item_data_template[slot2].usage_arg[1]
 

@@ -665,7 +665,7 @@ return {
 		},
 		{
 			nameColor = "#a9f548",
-			side = 2,
+			side = 0,
 			bgName = "bg_story_nepu1",
 			hideOther = true,
 			dir = 1,

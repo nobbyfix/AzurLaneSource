@@ -109,9 +109,9 @@ slot0.init = function (slot0)
 	slot0.treePage = CommanderTreePage.New(pg.UIMgr.GetInstance().OverlayMain, slot0.event)
 	slot0.renamePanel = CommanderRenamePage.New(pg.UIMgr.GetInstance().OverlayMain, slot0.event)
 	slot0.msgboxPage = CommanderMsgBoxPage.New(pg.UIMgr.GetInstance().OverlayMain, slot0.event)
-	slot0.reservePanel = CommanderReservePage.New(pg.UIMgr:GetInstance().OverlayMain, slot0.event)
+	slot0.reservePanel = CommanderReservePage.New(pg.UIMgr.GetInstance().OverlayMain, slot0.event)
 	slot0.detailPage = CommanderDetailPage.New(slot0.mainTF, slot0.event, slot0.contextData)
-	slot0.boxesPanel = CommanderBoxesPage.New(pg.UIMgr:GetInstance().OverlayMain, slot0.event)
+	slot0.boxesPanel = CommanderBoxesPage.New(pg.UIMgr.GetInstance().OverlayMain, slot0.event)
 
 	slot0:enterAnim(function ()
 		if slot0.isMultSelectMode then
@@ -131,61 +131,7 @@ slot0.finishStroy = function (slot0, slot1)
 end
 
 slot0.tryPlayStroy = function (slot0)
-	seriesAsync({
-		function (slot0)
-			if pg.StoryMgr:GetInstance():IsPlayed("ZHIHUIMIAO2") then
-				slot0()
-			else
-				pg.StoryMgr:GetInstance():Play("ZHIHUIMIAO2", slot0, true, true)
-			end
-		end,
-		function (slot0)
-			if not pg.GuideMgr:GetInstance():isPlayed("NG006") and table.getCount(getProxy(CommanderProxy):getData()) >= 1 then
-				slot0:finishStroy("NG006")
-				slot0()
-			else
-				pg.StoryMgr:GetInstance():PlayGuide("NG006", {}, slot0)
-			end
-		end,
-		function (slot0)
-			if not pg.GuideMgr:GetInstance():isPlayed("NG007") and getProxy(BagProxy):getItemCountById(20012) ~= 1 then
-				slot0:finishStroy("NG007")
-				slot0()
-			else
-				pg.StoryMgr:GetInstance():PlayGuide("NG007", {}, slot0)
-			end
-		end,
-		function (slot0)
-			if pg.StoryMgr:GetInstance():IsPlayed("ZHIHUIMIAO3") then
-				slot0()
-			else
-				pg.StoryMgr:GetInstance():Play("ZHIHUIMIAO3", slot0, true, true)
-			end
-		end,
-		function (slot0)
-			if not pg.GuideMgr:GetInstance():isPlayed("NG008") and slot0.boxes[1]:getState() ~= CommanderBox.STATE_FINISHED then
-				slot0:finishStroy("NG008")
-				slot0()
-			else
-				pg.StoryMgr:GetInstance():PlayGuide("NG008", {}, slot0)
-			end
-		end,
-		function (slot0)
-			if pg.StoryMgr:GetInstance():IsPlayed("ZHIHUIMIAO4") then
-				slot0()
-			else
-				pg.StoryMgr:GetInstance():Play("ZHIHUIMIAO4", slot0, true, true)
-			end
-		end,
-		function (slot0)
-			if not pg.GuideMgr:GetInstance():isPlayed("NG009") and table.getCount(getProxy(CommanderProxy):getData()) ~= 1 then
-				slot0:finishStroy("NG009")
-				slot0()
-			else
-				pg.StoryMgr:GetInstance():PlayGuide("NG009", {}, slot0)
-			end
-		end
-	})
+	pg.SystemGuideMgr.GetInstance():PlayCommander()
 end
 
 slot0.updateRes = function (slot0)
@@ -501,8 +447,8 @@ slot0.didEnter = function (slot0)
 		if (slot0.contextData.minCount or 1) > #slot0.contextData.minCount or 1.selecteds then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 12-24, warpins: 1 ---
-			pg.TipsMgr:GetInstance():ShowTips(i18n("commander_select_min_cnt", slot0))
+			--- BLOCK #0 12-23, warpins: 1 ---
+			pg.TipsMgr.GetInstance():ShowTips(i18n("commander_select_min_cnt", slot0))
 
 			return
 			--- END OF BLOCK #0 ---
@@ -518,7 +464,7 @@ slot0.didEnter = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 25-31, warpins: 1 ---
+		--- BLOCK #1 24-30, warpins: 1 ---
 		slot0.onSelected(slot0.selecteds, function ()
 
 			-- Decompilation error in this vicinity:
@@ -540,7 +486,7 @@ slot0.didEnter = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 32-32, warpins: 2 ---
+		--- BLOCK #2 31-31, warpins: 2 ---
 		--- END OF BLOCK #2 ---
 
 
@@ -854,8 +800,8 @@ slot0.SwitchPage = function (slot0, slot1)
 	if slot0.commanderVOs[slot0.conmmanderId].inBattle and slot1 == CommanderInfoScene.PAGE_PLAY then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 11-22, warpins: 1 ---
-		pg.TipsMgr:GetInstance():ShowTips(i18n("commander_is_in_battle"))
+		--- BLOCK #0 11-21, warpins: 1 ---
+		pg.TipsMgr.GetInstance():ShowTips(i18n("commander_is_in_battle"))
 
 		return
 		--- END OF BLOCK #0 ---
@@ -871,7 +817,7 @@ slot0.SwitchPage = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 23-30, warpins: 3 ---
+	--- BLOCK #1 22-29, warpins: 3 ---
 	slot0:emit(CommandRoomMediator.ON_DETAIL, slot2, slot1)
 
 	return
@@ -1592,8 +1538,8 @@ slot0.checkCommander = function (slot0, slot1)
 	if not slot4 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 53-63, warpins: 1 ---
-		pg.TipsMgr:GetInstance():ShowTips(slot5)
+		--- BLOCK #0 53-62, warpins: 1 ---
+		pg.TipsMgr.GetInstance():ShowTips(slot5)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1609,11 +1555,11 @@ slot0.checkCommander = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 64-65, warpins: 2 ---
+	--- BLOCK #3 63-64, warpins: 2 ---
 	if slot3 == 1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 66-83, warpins: 1 ---
+		--- BLOCK #0 65-82, warpins: 1 ---
 		slot0.conmmanderId = slot1.id
 		slot0.contextData.conmmanderId = slot1.id
 
@@ -1623,7 +1569,7 @@ slot0.checkCommander = function (slot0, slot1)
 		if slot0.contextData.activeCommander then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 84-92, warpins: 1 ---
+			--- BLOCK #0 83-91, warpins: 1 ---
 			slot0.detailPage:ActionInvoke("updatePreviewAddition", slot0.contextData.activeCommander, true)
 			--- END OF BLOCK #0 ---
 
@@ -1637,12 +1583,12 @@ slot0.checkCommander = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 93-96, warpins: 1 ---
+		--- BLOCK #0 92-95, warpins: 1 ---
 		if slot3 <= #slot0.selecteds then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 97-109, warpins: 1 ---
-			pg.TipsMgr:GetInstance():ShowTips(i18n("commander_select_max"))
+			--- BLOCK #0 96-107, warpins: 1 ---
+			pg.TipsMgr.GetInstance():ShowTips(i18n("commander_select_max"))
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1663,7 +1609,7 @@ slot0.checkCommander = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 110-119, warpins: 4 ---
+	--- BLOCK #4 108-117, warpins: 4 ---
 	table.insert(slot0.selecteds, slot1.id)
 	slot0:updateSelecteds()
 
@@ -1675,7 +1621,7 @@ slot0.checkCommander = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 120-120, warpins: 2 ---
+	--- BLOCK #5 118-118, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
@@ -1683,7 +1629,7 @@ slot0.checkCommander = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 121-121, warpins: 2 ---
+	--- BLOCK #6 119-119, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 

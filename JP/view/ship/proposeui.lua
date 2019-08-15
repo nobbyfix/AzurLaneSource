@@ -317,9 +317,8 @@ function slot2(slot0)
 		function slot7(slot0)
 			slot1 = pg
 			slot1 = slot1.UIMgr
-			slot2 = slot1
 			slot1 = slot1.GetInstance
-			slot1 = slot1(slot2)
+			slot1 = slot1()
 			slot2 = slot1
 			slot1 = slot1.LoadingOff
 
@@ -931,9 +930,8 @@ function slot2(slot0)
 					if slot0 < slot1 then
 						slot0 = pg
 						slot0 = slot0.TipsMgr
-						slot1 = slot0
 						slot0 = slot0.GetInstance
-						slot0 = slot0(slot1)
+						slot0 = slot0()
 						slot1 = slot0
 						slot0 = slot0.ShowTips
 						slot2 = i18n
@@ -953,9 +951,8 @@ function slot2(slot0)
 					if not slot0 then
 						slot2 = pg
 						slot2 = slot2.TipsMgr
-						slot3 = slot2
 						slot2 = slot2.GetInstance
-						slot2 = slot2(slot3)
+						slot2 = slot2()
 						slot3 = slot2
 						slot2 = slot2.ShowTips
 						slot4 = slot1
@@ -2479,12 +2476,11 @@ function slot2(slot0)
 		function slot7(slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-12, warpins: 1 ---
+			--- BLOCK #0 1-11, warpins: 1 ---
 			slot1 = pg
 			slot1 = slot1.UIMgr
-			slot2 = slot1
 			slot1 = slot1.GetInstance
-			slot1 = slot1(slot2)
+			slot1 = slot1()
 			slot2 = slot1
 			slot1 = slot1.LoadingOff
 
@@ -2496,7 +2492,7 @@ function slot2(slot0)
 			if slot1 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 13-21, warpins: 1 ---
+				--- BLOCK #0 12-20, warpins: 1 ---
 				slot1 = PoolMgr
 				slot1 = slot1.GetInstance
 				slot1 = slot1()
@@ -2521,7 +2517,7 @@ function slot2(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 22-30, warpins: 1 ---
+			--- BLOCK #1 21-29, warpins: 1 ---
 			slot1 = slot0
 			slot2 = tf
 			slot3 = slot0
@@ -2533,14 +2529,14 @@ function slot2(slot0)
 			if slot1 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 31-34, warpins: 1 ---
+				--- BLOCK #0 30-33, warpins: 1 ---
 				slot1 = slot0
 				slot1 = slot1.reviewSkinID
 
 				if not slot1 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 35-37, warpins: 2 ---
+					--- BLOCK #0 34-36, warpins: 2 ---
 					slot1 = slot0
 					slot1 = slot1.shipVO
 					slot1 = slot1.skinId
@@ -2562,7 +2558,7 @@ function slot2(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 38-55, warpins: 2 ---
+			--- BLOCK #2 37-54, warpins: 2 ---
 			slot2 = slot0
 			slot3 = pg
 			slot3 = slot3.ship_skin_template
@@ -2583,14 +2579,14 @@ function slot2(slot0)
 			if slot3 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 56-59, warpins: 1 ---
+				--- BLOCK #0 55-58, warpins: 1 ---
 				slot3 = SPECIAL_PROPOSE
 				slot3 = slot3[1]
 
 				if slot3 == slot2 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 60-64, warpins: 1 ---
+					--- BLOCK #0 59-63, warpins: 1 ---
 					slot3 = ipairs
 					slot4 = SPECIAL_PROPOSE
 					slot4 = slot4[2]
@@ -2603,17 +2599,17 @@ function slot2(slot0)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #1 65-72, warpins: 0 ---
+					--- BLOCK #1 64-71, warpins: 0 ---
 					for slot6, slot7 in slot3, slot4, slot5 do
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 65-67, warpins: 1 ---
+						--- BLOCK #0 64-66, warpins: 1 ---
 						slot8 = slot7[1]
 
 						if slot8 == slot1 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 68-70, warpins: 1 ---
+							--- BLOCK #0 67-69, warpins: 1 ---
 							slot8 = slot0
 							slot9 = slot7[2]
 							slot8.handId = slot9
@@ -2629,7 +2625,7 @@ function slot2(slot0)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #1 71-72, warpins: 3 ---
+						--- BLOCK #1 70-71, warpins: 3 ---
 						--- END OF BLOCK #1 ---
 
 
@@ -2653,7 +2649,7 @@ function slot2(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 73-262, warpins: 3 ---
+			--- BLOCK #3 72-261, warpins: 3 ---
 			slot3 = slot0
 			slot4 = "ProposeHand_"
 			slot5 = slot0
@@ -3158,7 +3154,7 @@ function slot2(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #4 263-263, warpins: 2 ---
+			--- BLOCK #4 262-262, warpins: 2 ---
 			--- END OF BLOCK #4 ---
 
 
@@ -4130,12 +4126,11 @@ function slot2(slot0, slot1)
 		function slot8(slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-12, warpins: 1 ---
+			--- BLOCK #0 1-11, warpins: 1 ---
 			slot1 = pg
 			slot1 = slot1.UIMgr
-			slot2 = slot1
 			slot1 = slot1.GetInstance
-			slot1 = slot1(slot2)
+			slot1 = slot1()
 			slot2 = slot1
 			slot1 = slot1.LoadingOff
 
@@ -4147,7 +4142,7 @@ function slot2(slot0, slot1)
 			if slot1 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 13-21, warpins: 1 ---
+				--- BLOCK #0 12-20, warpins: 1 ---
 				slot1 = PoolMgr
 				slot1 = slot1.GetInstance
 				slot1 = slot1()
@@ -4172,7 +4167,7 @@ function slot2(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 22-100, warpins: 1 ---
+			--- BLOCK #1 21-99, warpins: 1 ---
 			slot1 = slot0
 			slot2 = tf
 			slot3 = slot0
@@ -4518,7 +4513,7 @@ function slot2(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 101-101, warpins: 2 ---
+			--- BLOCK #2 100-100, warpins: 2 ---
 			--- END OF BLOCK #2 ---
 
 

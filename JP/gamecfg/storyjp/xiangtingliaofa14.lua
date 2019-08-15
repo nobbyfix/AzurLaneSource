@@ -117,11 +117,10 @@ return {
 			}
 		},
 		{
-			actor = 900011,
-			nameColor = "#ff5c5c",
-			side = 1,
+			actor = 103160,
+			side = 0,
+			nameColor = "#a9f548",
 			dir = 1,
-			actorName = "テスター",
 			say = "どうやらこの海域のセイレーン艦隊を指揮しているのはあなたのようね",
 			typewriter = {
 				speed = 0.05,
@@ -133,10 +132,11 @@ return {
 			}
 		},
 		{
-			actor = 103160,
-			side = 0,
-			nameColor = "#a9f548",
+			actor = 900011,
+			nameColor = "#ff5c5c",
+			side = 1,
 			dir = 1,
+			actorName = "テスター",
 			say = "……あなたさえ倒せば、このNYシティも指揮官も私たちの思うがままになるわ",
 			typewriter = {
 				speed = 0.05,
@@ -153,6 +153,21 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			say = "こっちのセリフだ。お前さえ倒せばこの海域のセイレーンも撤退するだろう",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 103160,
+			side = 0,
+			nameColor = "#a9f548",
+			dir = 1,
+			say = "…もっとも、海を奪い、人類を害するセイレーンなど、正義のために一匹残らず倒すのだがな",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

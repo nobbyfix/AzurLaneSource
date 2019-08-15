@@ -65,7 +65,7 @@ slot0.init = function (slot0)
 end
 
 slot0.initPainting = function (slot0)
-	slot2 = ys.Battle.BattleResourceManager:GetInstance().InstSkillPaintingUI(slot1)
+	slot2 = ys.Battle.BattleResourceManager.GetInstance().InstSkillPaintingUI(slot1)
 
 	setParent(slot2, slot0.uiCanvas, false)
 
@@ -128,7 +128,7 @@ slot0.appendSkill = function (slot0, slot1, slot2, slot3, slot4)
 		return
 	end
 
-	slot5 = ys.Battle.BattleResourceManager:GetInstance()
+	slot5 = ys.Battle.BattleResourceManager.GetInstance()
 	slot6, slot7 = nil
 
 	if slot3 then
@@ -163,7 +163,7 @@ slot0.appendSkill = function (slot0, slot1, slot2, slot3, slot4)
 		slot16 = table.contains(TeamType.SubShipType, slot2:GetTemplate().type)
 		slot17 = slot2:GetMainUnitIndex()
 
-		if ys.Battle.BattleCameraUtil:GetInstance():GetCharacterArrowBarPosition(slot14) == nil or (slot15 == nil and slot16 and not slot2:IsMainFleetUnit()) then
+		if ys.Battle.BattleCameraUtil.GetInstance():GetCharacterArrowBarPosition(slot14) == nil or (slot15 == nil and slot16 and not slot2:IsMainFleetUnit()) then
 			slot9.position = Vector3((slot12 ~= ys.Battle.BattleConfig.FRIENDLY_CODE or slot1.CameraPosToUICamera(slot2:GetPosition():Clone():Add(slot0.IN_VIEW_FRIEND_SKILL_OFFSET))) and slot1.CameraPosToUICamera(slot2:GetPosition():Clone():Add(slot0.IN_VIEW_FOE_SKILL_OFFSET)).x, (slot12 ~= ys.Battle.BattleConfig.FRIENDLY_CODE or slot1.CameraPosToUICamera(slot2.GetPosition().Clone().Add(slot0.IN_VIEW_FRIEND_SKILL_OFFSET))) and slot1.CameraPosToUICamera(slot2.GetPosition().Clone().Add(slot0.IN_VIEW_FOE_SKILL_OFFSET)).y, -2)
 
 			if slot0._preSkillTF then
@@ -259,8 +259,8 @@ slot0.painting = function (slot0, slot1, slot2, slot3)
 	if slot0._skillPaintings[slot1.id] == nil then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 16-26, warpins: 1 ---
-		slot5 = ys.Battle.BattleResourceManager:GetInstance()
+		--- BLOCK #0 16-25, warpins: 1 ---
+		slot5 = ys.Battle.BattleResourceManager.GetInstance()
 		slot4 = ys.Battle.BattleResourceManager.GetInstance().InstPainting
 		slot6 = slot1.painting or slot1.prefab
 		slot0._skillPaintings[slot1.id] = slot4(ys.Battle.BattleResourceManager.GetInstance(), slot6)
@@ -274,7 +274,7 @@ slot0.painting = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 27-27, warpins: 1 ---
+		--- BLOCK #1 26-26, warpins: 1 ---
 		slot6 = slot1.prefab
 		--- END OF BLOCK #1 ---
 
@@ -283,7 +283,7 @@ slot0.painting = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 28-36, warpins: 2 ---
+		--- BLOCK #2 27-35, warpins: 2 ---
 		--- END OF BLOCK #2 ---
 
 
@@ -310,9 +310,10 @@ end
 slot0.didEnter = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-57, warpins: 1 ---
+	--- BLOCK #0 1-65, warpins: 1 ---
 	setActive(slot0._tf, false)
 
+	GetComponent(slot0._tf, typeof(AspectRatioFitter)).enabled = true
 	slot1 = ys.Battle.BattleState.GetInstance()
 
 	slot1:SetBattleUI(slot0)
@@ -377,7 +378,7 @@ slot0.didEnter = function (slot0)
 	if slot0.contextData.prePause then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 58-63, warpins: 1 ---
+		--- BLOCK #0 66-71, warpins: 1 ---
 		triggerButton(slot0:findTF("PauseBtn"))
 		--- END OF BLOCK #0 ---
 
@@ -392,7 +393,7 @@ slot0.didEnter = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 64-71, warpins: 2 ---
+	--- BLOCK #1 72-79, warpins: 2 ---
 	setActive(slot2, slot1:ChatUseable())
 
 	return

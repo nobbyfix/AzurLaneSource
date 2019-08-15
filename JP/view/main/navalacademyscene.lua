@@ -94,10 +94,10 @@ slot0.didEnter = function (slot0)
 	setText(slot0._shop:Find("title/name/Text"), i18n("school_title_xiaomaibu"))
 	setText(slot0._canteen:Find("title/name/Text"), i18n("school_title_shitang"))
 	onButton(slot0, slot0._classBtn, function ()
-		slot0, slot1 = pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0._player.level, "ClassMediator")
+		slot0, slot1 = pg.SystemOpenMgr.GetInstance():isOpenSystem(slot0._player.level, "ClassMediator")
 
 		if not slot0 then
-			pg.TipsMgr:GetInstance():ShowTips(slot1)
+			pg.TipsMgr.GetInstance():ShowTips(slot1)
 
 			return
 		end
@@ -112,14 +112,14 @@ slot0.didEnter = function (slot0)
 	end, SFX_PANEL)
 	onButton(slot0, slot0._getGold, function ()
 		if slot0._player.goldField <= 0 then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("battle_levelScene_0Gold"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("battle_levelScene_0Gold"))
 		else
 			slot0:emit(NavalAcademyMediator.GET_RES, ResourceField.TYPE_GOLD)
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0._getOil, function ()
 		if slot0._player.oilField <= 0 then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("battle_levelScene_0Oil"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("battle_levelScene_0Oil"))
 		else
 			slot0:emit(NavalAcademyMediator.GET_RES, ResourceField.TYPE_OIL)
 		end
@@ -147,7 +147,7 @@ slot0.didEnter = function (slot0)
 
 	if slot0._currentCourseID ~= nil then
 		if slot0._startCourseFlag then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("main_navalAcademyScene_quest_startClass"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("main_navalAcademyScene_quest_startClass"))
 		end
 
 		triggerToggle(slot0._toggleList[slot0._currentCourseID], true)
@@ -212,7 +212,7 @@ slot0.updateMap = function (slot0)
 end
 
 slot0.updateResourceBuilding = function (slot0, slot1, slot2, slot3)
-	pg.TimeMgr:GetInstance():RemoveTimer(slot0._buildingTimers[slot3])
+	pg.TimeMgr.GetInstance():RemoveTimer(slot0._buildingTimers[slot3])
 
 	if slot2 then
 		SetActive(slot1:Find("popup_contain/popup"), slot2 > 0)
@@ -241,11 +241,11 @@ slot0.updateResourceBuilding = function (slot0, slot1, slot2, slot3)
 		SetActive(slot5, true)
 
 		slot6 = slot5:Find("Text"):GetComponent(typeof(Text))
-		slot0._buildingTimers[slot3] = pg.TimeMgr:GetInstance():AddTimer("timer", 0, 1, function ()
+		slot0._buildingTimers[slot3] = pg.TimeMgr.GetInstance():AddTimer("timer", 0, 1, function ()
 			if slot0:GetDuration() and slot0 > 0 then
 				slot1.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
 			else
-				pg.TimeMgr:GetInstance():RemoveTimer(slot2._buildingTimers[slot0])
+				pg.TimeMgr.GetInstance():RemoveTimer(slot2._buildingTimers[slot0])
 				pg.TimeMgr.GetInstance():emit(NavalAcademyMediator.UPGRADE_TIMES_UP)
 			end
 		end)
@@ -317,7 +317,7 @@ slot0.OpenResourcePanel = function (slot0, slot1)
 			SetActive(slot3, false)
 
 			slot3:GetComponent("Button").interactable = false
-			slot0._panelTimer[#slot0._panelTimer + 1] = pg.TimeMgr:GetInstance():AddTimer("timer", 0, 1, function ()
+			slot0._panelTimer[#slot0._panelTimer + 1] = pg.TimeMgr.GetInstance():AddTimer("timer", 0, 1, function ()
 				if slot0:GetDuration() and slot0 > 0 then
 					slot1.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
 				else
@@ -413,12 +413,12 @@ slot0.openSecondPanel = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 7-17, warpins: 0 ---
+	--- BLOCK #1 7-16, warpins: 0 ---
 	for slot4, slot5 in ipairs(slot0._panelTimer) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 7-15, warpins: 1 ---
-		pg.TimeMgr:GetInstance():RemoveTimer(slot5)
+		--- BLOCK #0 7-14, warpins: 1 ---
+		pg.TimeMgr.GetInstance():RemoveTimer(slot5)
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -426,7 +426,7 @@ slot0.openSecondPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 16-17, warpins: 2 ---
+		--- BLOCK #1 15-16, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -440,7 +440,7 @@ slot0.openSecondPanel = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 18-29, warpins: 1 ---
+	--- BLOCK #2 17-28, warpins: 1 ---
 	slot0._panelTimer = {}
 
 	pg.UIMgr.GetInstance():BlurPanel(slot0._blurLayer, false)
@@ -467,12 +467,12 @@ slot0.closeSecondPanel = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 16-26, warpins: 0 ---
+	--- BLOCK #1 16-25, warpins: 0 ---
 	for slot4, slot5 in ipairs(slot0._panelTimer) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 16-24, warpins: 1 ---
-		pg.TimeMgr:GetInstance():RemoveTimer(slot5)
+		--- BLOCK #0 16-23, warpins: 1 ---
+		pg.TimeMgr.GetInstance():RemoveTimer(slot5)
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -480,7 +480,7 @@ slot0.closeSecondPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 25-26, warpins: 2 ---
+		--- BLOCK #1 24-25, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -494,7 +494,7 @@ slot0.closeSecondPanel = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 27-32, warpins: 1 ---
+	--- BLOCK #2 26-31, warpins: 1 ---
 	slot0._panelTimer = {}
 	slot0._currentState = slot0.STATE_ACADEMY
 
@@ -1837,12 +1837,12 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 14-24, warpins: 0 ---
+	--- BLOCK #1 14-23, warpins: 0 ---
 	for slot4, slot5 in ipairs(slot0._panelTimer) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 14-22, warpins: 1 ---
-		pg.TimeMgr:GetInstance():RemoveTimer(slot5)
+		--- BLOCK #0 14-21, warpins: 1 ---
+		pg.TimeMgr.GetInstance():RemoveTimer(slot5)
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -1850,7 +1850,7 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 23-24, warpins: 2 ---
+		--- BLOCK #1 22-23, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -1864,7 +1864,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 25-28, warpins: 1 ---
+	--- BLOCK #2 24-27, warpins: 1 ---
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -1872,12 +1872,12 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 29-39, warpins: 0 ---
+	--- BLOCK #3 28-37, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0._buildingTimers) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 29-37, warpins: 1 ---
-		pg.TimeMgr:GetInstance():RemoveTimer(slot5)
+		--- BLOCK #0 28-35, warpins: 1 ---
+		pg.TimeMgr.GetInstance():RemoveTimer(slot5)
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -1885,7 +1885,7 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 38-39, warpins: 2 ---
+		--- BLOCK #1 36-37, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -1899,11 +1899,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 40-42, warpins: 1 ---
+	--- BLOCK #4 38-40, warpins: 1 ---
 	if slot0._chatTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 43-48, warpins: 1 ---
+		--- BLOCK #0 41-46, warpins: 1 ---
 		slot0._chatTimer:Stop()
 
 		slot0._chatTimer = nil
@@ -1920,11 +1920,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 49-53, warpins: 2 ---
+	--- BLOCK #5 47-51, warpins: 2 ---
 	if not IsNil(slot0._resourceLayer) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 54-57, warpins: 1 ---
+		--- BLOCK #0 52-55, warpins: 1 ---
 		setActive(slot0._resourceLayer, false)
 		--- END OF BLOCK #0 ---
 
@@ -1939,11 +1939,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 58-60, warpins: 2 ---
+	--- BLOCK #6 56-58, warpins: 2 ---
 	if slot0._resPanel then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 61-66, warpins: 1 ---
+		--- BLOCK #0 59-64, warpins: 1 ---
 		slot0._resPanel:exit()
 
 		slot0._resPanel = nil
@@ -1960,11 +1960,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 67-69, warpins: 2 ---
+	--- BLOCK #7 65-67, warpins: 2 ---
 	if slot0.tweens then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 70-72, warpins: 1 ---
+		--- BLOCK #0 68-70, warpins: 1 ---
 		cancelTweens(slot0.tweens)
 		--- END OF BLOCK #0 ---
 
@@ -1979,7 +1979,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 73-76, warpins: 2 ---
+	--- BLOCK #8 71-74, warpins: 2 ---
 	slot0:clearStudents()
 
 	return

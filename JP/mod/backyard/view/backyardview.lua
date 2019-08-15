@@ -90,7 +90,7 @@ slot0.getProgress = function (slot0)
 end
 
 slot0.stopAllBoatMove = function (slot0, slot1)
-	pg.UIMgr:GetInstance():LoadingOn()
+	pg.UIMgr.GetInstance():LoadingOn()
 
 	slot2 = {}
 
@@ -119,7 +119,7 @@ slot0.stopAllBoatMove = function (slot0, slot1)
 	end
 
 	seriesAsync(slot2, function ()
-		pg.UIMgr:GetInstance():LoadingOff()
+		pg.UIMgr.GetInstance():LoadingOff()
 
 		if pg.UIMgr.GetInstance().LoadingOff then
 			slot0()
@@ -191,7 +191,7 @@ slot0.didEnter = function (slot0)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.decorationBtn, function ()
 		if slot0.inInitFurnitrues then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_is_loading"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_is_loading"))
 
 			return
 		end
@@ -1117,7 +1117,7 @@ slot0.playFurnitureVoice = function (slot0, slot1)
 	if slot0.loadedBank then
 		slot3()
 	else
-		pg.CriMgr:GetInstance():LoadCV("furniture", function ()
+		pg.CriMgr.GetInstance():LoadCV("furniture", function ()
 			slot0 = pg.CriMgr.GetCVBankName(pg.CriMgr.GetCVBankName)
 
 			if pg.CriMgr.GetCVBankName.exited then

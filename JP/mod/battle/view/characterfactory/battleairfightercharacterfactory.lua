@@ -19,7 +19,7 @@ ys.Battle.BattleAirFighterCharacterFactory.MakeModel = function (slot0, slot1)
 
 		slot1 = slot0.InitWeapon:GetSceneMediator()
 
-		slot0:CameraOrthogonal(slot2.Battle.BattleCameraUtil:GetInstance():GetCamera())
+		slot0:CameraOrthogonal(slot2.Battle.BattleCameraUtil.GetInstance():GetCamera())
 		slot1:AddAirCraftCharacter(slot0)
 		slot1:MakeUIComponentContainer(slot0)
 		slot1:MakeFXContainer(slot0)

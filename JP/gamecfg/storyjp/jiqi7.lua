@@ -109,7 +109,7 @@ return {
 		},
 		{
 			side = 2,
-			bgName = "bg_story_task",
+			bgName = "star_level_bg_104",
 			dir = 1,
 			actor = 312010,
 			nameColor = "#a9f548",
