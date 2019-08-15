@@ -516,7 +516,7 @@ end
 slot0.starsAnimation = function (slot0)
 	slot0.inAnimating = true
 
-	if slot0._shipVO:getMaxStar() >= 6 then
+	if slot0._shipVO:getMaxStar() >= 6 and PlayerPrefs.GetInt(RARE_SHIP_VIBRATE, 1) > 0 then
 		LuaHelper.Vibrate()
 	end
 

@@ -858,7 +858,7 @@ slot0.updateShipInfo = function (slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 14-20, warpins: 1 ---
-		slot0.shipCards[slot4.id] = DockyardShipItem.New(slot3)
+		slot0.shipCards[slot4.id] = TacticsShipItem.New(slot3)
 		--- END OF BLOCK #0 ---
 
 

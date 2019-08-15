@@ -76,6 +76,7 @@ slot0.InitUI = function (slot0)
 		x = 0,
 		y = slot0
 	})
+	setActive(slot0.teleportSubRole, false)
 
 	slot0.leftStage = slot0:findTF("left_stage", slot0._tf)
 
@@ -2841,7 +2842,10 @@ end
 slot0.SwitchBottomStage = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
+	setActive(slot0.teleportSubRole, true)
+	setActive(slot0.normalRole, true)
+
 	slot2 = shiftPanel
 	slot3 = slot0.teleportSubRole
 	slot4 = 0
@@ -2849,7 +2853,7 @@ slot0.SwitchBottomStage = function (slot0, slot1)
 	if slot1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 6-7, warpins: 1 ---
+		--- BLOCK #0 14-15, warpins: 1 ---
 		slot5 = 0
 		--- END OF BLOCK #0 ---
 
@@ -2858,7 +2862,7 @@ slot0.SwitchBottomStage = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 8-8, warpins: 1 ---
+		--- BLOCK #0 16-16, warpins: 1 ---
 		slot5 = slot0
 		--- END OF BLOCK #0 ---
 
@@ -2873,8 +2877,19 @@ slot0.SwitchBottomStage = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 9-18, warpins: 2 ---
-	slot2(slot3, slot4, slot5, 0.3, 0, true, true)
+	--- BLOCK #1 17-28, warpins: 2 ---
+	slot2(slot3, slot4, slot5, 0.3, 0, true, true, nil, function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-6, warpins: 1 ---
+		setActive(slot0.teleportSubRole, )
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end)
 
 	slot2 = shiftPanel
 	slot3 = slot0.normalRole
@@ -2883,7 +2898,7 @@ slot0.SwitchBottomStage = function (slot0, slot1)
 	if not slot1 or not slot0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 22-22, warpins: 2 ---
+		--- BLOCK #0 32-32, warpins: 2 ---
 		slot5 = 0
 		--- END OF BLOCK #0 ---
 
@@ -2898,8 +2913,19 @@ slot0.SwitchBottomStage = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 23-31, warpins: 2 ---
-	slot2(slot3, slot4, slot5, 0.3, 0, true, true)
+	--- BLOCK #2 33-43, warpins: 2 ---
+	slot2(slot3, slot4, slot5, 0.3, 0, true, true, nil, function ()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
+		setActive(slot0.normalRole, not slot1)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end)
 
 	slot2 = shiftPanel
 	slot3 = slot0.leftStage
@@ -2907,7 +2933,7 @@ slot0.SwitchBottomStage = function (slot0, slot1)
 	if not slot1 or not (-slot0.leftStage.rect.width - 200) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 39-39, warpins: 2 ---
+		--- BLOCK #0 51-51, warpins: 2 ---
 		slot4 = 0
 		--- END OF BLOCK #0 ---
 
@@ -2922,7 +2948,7 @@ slot0.SwitchBottomStage = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 40-48, warpins: 2 ---
+	--- BLOCK #3 52-60, warpins: 2 ---
 	slot2(slot3, slot4, 0, 0.3, 0, true)
 
 	slot2 = shiftPanel
@@ -2931,7 +2957,7 @@ slot0.SwitchBottomStage = function (slot0, slot1)
 	if not slot1 or not (slot0.rightStage.rect.width + 200) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 55-55, warpins: 2 ---
+		--- BLOCK #0 67-67, warpins: 2 ---
 		slot4 = 0
 		--- END OF BLOCK #0 ---
 
@@ -2946,7 +2972,7 @@ slot0.SwitchBottomStage = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 56-61, warpins: 2 ---
+	--- BLOCK #4 68-74, warpins: 2 ---
 	slot2(slot3, slot4, 0, 0.3, 0, true)
 
 	return
@@ -3701,77 +3727,15 @@ slot0.doSafeCheck = function (slot0, slot1)
 
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #1 8-11, warpins: 2 ---
-									--- END OF BLOCK #1 ---
-
-									FLOW; TARGET BLOCK #2
-
-
-
-									-- Decompilation error in this vicinity:
-									--- BLOCK #2 12-21, warpins: 0 ---
-									for slot5, slot6 in pairs(slot0.idList) do
-
-										-- Decompilation error in this vicinity:
-										--- BLOCK #0 12-13, warpins: 1 ---
-										if not slot1 then
-
-											-- Decompilation error in this vicinity:
-											--- BLOCK #0 14-16, warpins: 1 ---
-											if slot6 ~= slot0 then
-
-												-- Decompilation error in this vicinity:
-												--- BLOCK #0 17-18, warpins: 1 ---
-												slot1 = false
-												--- END OF BLOCK #0 ---
-
-
-
-											else
-
-												-- Decompilation error in this vicinity:
-												--- BLOCK #0 19-19, warpins: 1 ---
-												slot1 = true
-												--- END OF BLOCK #0 ---
-
-
-
-											end
-											--- END OF BLOCK #0 ---
-
-
-
-										end
-										--- END OF BLOCK #0 ---
-
-										FLOW; TARGET BLOCK #1
-
-
-
-										-- Decompilation error in this vicinity:
-										--- BLOCK #1 20-21, warpins: 4 ---
-										--- END OF BLOCK #1 ---
-
-
-
-									end
-
-									--- END OF BLOCK #2 ---
-
-									FLOW; TARGET BLOCK #3
-
-
-
-									-- Decompilation error in this vicinity:
-									--- BLOCK #3 22-23, warpins: 1 ---
+									--- BLOCK #1 8-9, warpins: 2 ---
 									if slot1 then
 
 										-- Decompilation error in this vicinity:
-										--- BLOCK #0 24-26, warpins: 1 ---
+										--- BLOCK #0 10-12, warpins: 1 ---
 										if slot0.flag == 1 then
 
 											-- Decompilation error in this vicinity:
-											--- BLOCK #0 27-28, warpins: 1 ---
+											--- BLOCK #0 13-14, warpins: 1 ---
 											slot2 = false
 											--- END OF BLOCK #0 ---
 
@@ -3780,7 +3744,7 @@ slot0.doSafeCheck = function (slot0, slot1)
 										else
 
 											-- Decompilation error in this vicinity:
-											--- BLOCK #0 29-29, warpins: 1 ---
+											--- BLOCK #0 15-15, warpins: 1 ---
 											slot2 = true
 											--- END OF BLOCK #0 ---
 
@@ -3793,16 +3757,16 @@ slot0.doSafeCheck = function (slot0, slot1)
 
 									end
 
-									--- END OF BLOCK #3 ---
+									--- END OF BLOCK #1 ---
 
-									FLOW; TARGET BLOCK #4
+									FLOW; TARGET BLOCK #2
 
 
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #4 30-30, warpins: 3 ---
+									--- BLOCK #2 16-16, warpins: 3 ---
 									return slot2
-									--- END OF BLOCK #4 ---
+									--- END OF BLOCK #2 ---
 
 
 

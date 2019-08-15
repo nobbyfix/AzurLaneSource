@@ -309,8 +309,8 @@ slot0.initEvents = function (slot0)
 	slot0:bind(ShipViewConst.SWITCH_TO_PAGE, function (slot0, slot1)
 		slot0:gotoPage(slot1)
 	end)
-	slot0:bind(ShipViewConst.LOAD_PAINTING, function (slot0, slot1)
-		slot0:loadPainting(slot1)
+	slot0:bind(ShipViewConst.LOAD_PAINTING, function (slot0, slot1, slot2)
+		slot0:loadPainting(slot1, slot2)
 	end)
 	slot0:bind(ShipViewConst.LOAD_PAINTING_BG, function (slot0, slot1, slot2)
 		slot0:loadSkinBg(slot1, slot2, slot0.isSpBg)
@@ -911,7 +911,7 @@ slot0.setPreOrNext = function (slot0, slot1)
 
 end
 
-slot0.loadPainting = function (slot0, slot1)
+slot0.loadPainting = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -942,11 +942,11 @@ slot0.loadPainting = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #2 9-16, warpins: 0 ---
-	for slot5, slot6 in pairs(slot0.tablePainting) do
+	for slot6, slot7 in pairs(slot0.tablePainting) do
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 9-14, warpins: 1 ---
-		slot6.localScale = Vector3(1, 1, 1)
+		slot7.localScale = Vector3(1, 1, 1)
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -969,10 +969,10 @@ slot0.loadPainting = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #3 17-19, warpins: 1 ---
-	if slot0.LoadShipVOId and slot0.LoadShipVOId == slot0.shipVO.id and slot0.LoadPaintingCode == slot1 then
+	if slot0.LoadShipVOId and not slot2 and slot0.LoadShipVOId == slot0.shipVO.id and slot0.LoadPaintingCode == slot1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 28-28, warpins: 1 ---
+		--- BLOCK #0 30-30, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
 
@@ -987,14 +987,14 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 29-32, warpins: 3 ---
-	slot2 = 0
+	--- BLOCK #4 31-34, warpins: 4 ---
+	slot3 = 0
 
 	if slot0.isRight then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 33-34, warpins: 1 ---
-		slot2 = 1800
+		--- BLOCK #0 35-36, warpins: 1 ---
+		slot3 = 1800
 		--- END OF BLOCK #0 ---
 
 
@@ -1002,8 +1002,8 @@ slot0.loadPainting = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 35-35, warpins: 1 ---
-		slot2 = -1800
+		--- BLOCK #0 37-37, warpins: 1 ---
+		slot3 = -1800
 		--- END OF BLOCK #0 ---
 
 
@@ -1017,17 +1017,17 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 36-44, warpins: 2 ---
+	--- BLOCK #5 38-46, warpins: 2 ---
 	slot0.isLoading = true
-	slot4 = slot0.paintingCode
+	slot5 = slot0.paintingCode
 
 	if slot0:getPaintingFromTable(false) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 45-93, warpins: 1 ---
-		LeanTween.cancel(go(slot6))
-		LeanTween.alphaCanvas(slot6, 0, 0.3):setFrom(1):setUseEstimatedTime(true)
-		LeanTween.moveX(slot5, -slot2, 0.3):setFrom(0):setOnComplete(System.Action(function ()
+		--- BLOCK #0 47-95, warpins: 1 ---
+		LeanTween.cancel(go(slot7))
+		LeanTween.alphaCanvas(slot7, 0, 0.3):setFrom(1):setUseEstimatedTime(true)
+		LeanTween.moveX(slot6, -slot3, 0.3):setFrom(0):setOnComplete(System.Action(function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-8, warpins: 1 ---
@@ -1054,22 +1054,22 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 94-101, warpins: 2 ---
-	slot5 = slot0:getPaintingFromTable(true)
+	--- BLOCK #6 96-103, warpins: 2 ---
+	slot6 = slot0:getPaintingFromTable(true)
 	slot0.paintingCode = slot1
 
-	if slot0.paintingCode and slot5 then
+	if slot0.paintingCode and slot6 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 104-116, warpins: 1 ---
-		slot6 = slot5:GetComponent(typeof(RectTransform))
-		slot0.nowPainting = slot5
-		slot7 = setPaintingPrefabAsync
-		slot8 = slot5
-		slot9 = slot0.paintingCode
-		slot10 = slot0.paintingFrameName or "chuanwu"
+		--- BLOCK #0 106-118, warpins: 1 ---
+		slot7 = slot6:GetComponent(typeof(RectTransform))
+		slot0.nowPainting = slot6
+		slot8 = setPaintingPrefabAsync
+		slot9 = slot6
+		slot10 = slot0.paintingCode
+		slot11 = slot0.paintingFrameName or "chuanwu"
 
-		setPaintingPrefabAsync(slot8, slot9, slot10, function ()
+		setPaintingPrefabAsync(slot9, slot10, slot11, function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-14, warpins: 1 ---
@@ -1081,8 +1081,8 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 		end)
-		LeanTween.cancel(go(slot6))
-		LeanTween.moveX(slot6, 0, 0.3):setFrom(slot2):setOnComplete(System.Action(function ()
+		LeanTween.cancel(go(slot7))
+		LeanTween.moveX(slot7, 0, 0.3):setFrom(slot3):setOnComplete(System.Action(function ()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-4, warpins: 1 ---
@@ -1103,8 +1103,8 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 117-117, warpins: 1 ---
-		slot10 = "chuanwu"
+		--- BLOCK #1 119-119, warpins: 1 ---
+		slot11 = "chuanwu"
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
@@ -1112,7 +1112,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 118-162, warpins: 2 ---
+		--- BLOCK #2 120-164, warpins: 2 ---
 		--- END OF BLOCK #2 ---
 
 
@@ -1126,7 +1126,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 163-168, warpins: 3 ---
+	--- BLOCK #7 165-170, warpins: 3 ---
 	slot0.LoadShipVOId = slot0.shipVO.id
 	slot0.LoadPaintingCode = slot1
 
@@ -1138,7 +1138,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 169-169, warpins: 2 ---
+	--- BLOCK #8 171-171, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -1146,7 +1146,7 @@ slot0.loadPainting = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #9 170-170, warpins: 2 ---
+	--- BLOCK #9 172-172, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
 

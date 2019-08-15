@@ -115,7 +115,10 @@ pg.ConnectionMgr.Reconnect = function (slot0, slot1)
 
 				slot3 = nil
 
-				slot6.SecondaryPWDMgr:GetInstance():FetchData()
+				if getProxy(PlayerProxy) and slot1:getInited() then
+					slot6.SecondaryPWDMgr:GetInstance():FetchData()
+				end
+
 				slot6.GuideMgr:GetInstance():onReconneceted()
 			else
 				print("reconnect failed: " .. slot0.result)
