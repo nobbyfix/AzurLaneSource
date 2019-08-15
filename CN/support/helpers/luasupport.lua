@@ -171,6 +171,25 @@ table.containsdata = function (slot0, slot1)
 	return false
 end
 
+table.eachAsync = function (slot0, slot1)
+	if type(slot0) ~= "table" then
+		return
+	end
+
+	slot2, slot3, slot4 = ipairs()
+	slot5 = nil
+
+	function slot5()
+		slot0 = slot1(slot2, slot1)
+
+		if not slot2[] then
+			return
+		end
+
+		slot3(slot0, slot4)
+	end
+end
+
 table.getCount = function (slot0)
 	slot1 = 0
 
