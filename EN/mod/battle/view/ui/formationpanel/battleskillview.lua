@@ -40,7 +40,7 @@ ys.Battle.BattleSkillView.InitBtns = function (slot0)
 	slot0._fleetVO = slot0._mediator._dataProxy:GetFleetByIFF(slot0.Battle.BattleConfig.FRIENDLY_CODE)
 
 	local function slot1()
-		pg.TipsMgr:GetInstance():ShowTips(i18n("battle_emptyBlock"))
+		pg.TipsMgr.GetInstance():ShowTips(i18n("battle_emptyBlock"))
 	end
 
 	slot0._chargeBtn = slot0.Battle.BattleWeaponButton.New()

@@ -33,30 +33,30 @@ slot5.Init = function (slot0)
 	slot0._areaList = {}
 	slot0._shelterList = {}
 	slot0._bulletContainer = GameObject.Find("BulletContainer")
-	slot0._fxPool = slot0.Battle.BattleFXPool:GetInstance()
+	slot0._fxPool = slot0.Battle.BattleFXPool.GetInstance()
 
-	slot0.Battle.BattleCharacterFXContainersPool:GetInstance():Init()
+	slot0.Battle.BattleCharacterFXContainersPool.GetInstance():Init()
 	slot0:InitPlayerAntiAirArea()
 	slot0:InitPlayerAntiSubArea()
 	slot0:InitFlagShipMark()
 end
 
 slot5.InitCamera = function (slot0)
-	slot0._cameraUtil = slot0.Battle.BattleCameraUtil:GetInstance()
+	slot0._cameraUtil = slot0.Battle.BattleCameraUtil.GetInstance()
 
 	slot0._cameraUtil:RegisterEventListener(slot0, slot1.CAMERA_FOCUS_RESET, slot0.onCameraFocusReset)
 	slot0._cameraUtil:RegisterEventListener(slot0, slot1.BULLET_TIME, slot0.onBulletTime)
 end
 
 slot5.InitPopNumPool = function (slot0)
-	slot0._popNumPool = slot0.Battle.BattlePopNumManager:GetInstance()
+	slot0._popNumPool = slot0.Battle.BattlePopNumManager.GetInstance()
 	slot1 = slot0._state:GetUI()
 
 	slot0._popNumPool:Init(slot1:findTF("HP_POP"), slot1:findTF(slot0.Battle.BattlePopNumManager.CONTAINER_HP))
 end
 
 slot5.InitPopScorePool = function (slot0)
-	slot0._popNumPool = slot0.Battle.BattlePopNumManager:GetInstance()
+	slot0._popNumPool = slot0.Battle.BattlePopNumManager.GetInstance()
 	slot1 = slot0._state:GetUI()
 
 	slot0._popNumPool:InitScroePop(slot1:findTF("HP_POP"), slot1:findTF(slot0.Battle.BattlePopNumManager.CONTAINER_SCORE))
@@ -73,8 +73,8 @@ end
 slot5.InitCharacterFactory = function (slot0)
 	slot1 = slot0._state:GetUI()
 
-	slot0.Battle.BattleHPBarManager:GetInstance():Init(slot1:findTF(slot0.Battle.BattleHPBarManager.ROOT_NAME))
-	slot0.Battle.BattleArrowManager:GetInstance():Init(slot1:findTF(slot0.Battle.BattleArrowManager.ROOT_NAME))
+	slot0.Battle.BattleHPBarManager.GetInstance():Init(slot1:findTF(slot0.Battle.BattleHPBarManager.ROOT_NAME))
+	slot0.Battle.BattleArrowManager.GetInstance():Init(slot1:findTF(slot0.Battle.BattleArrowManager.ROOT_NAME))
 
 	slot0._characterFactoryList = {
 		[slot1.UnitType.PLAYER_UNIT] = slot0.Battle.BattlePlayerCharacterFactory.GetInstance(),
@@ -204,7 +204,7 @@ end
 
 slot5.onRemoveShleter = function (slot0, slot1)
 	if slot0._shelterList[slot1.Data.uid] then
-		slot0.Battle.BattleResourceManager:GetInstance():DestroyOb(slot3)
+		slot0.Battle.BattleResourceManager.GetInstance():DestroyOb(slot3)
 
 		slot0._shelterList[slot2] = nil
 	end
@@ -528,10 +528,10 @@ slot5.Clear = function (slot0)
 
 	slot0._areaList = nil
 
-	slot0.Battle.BattleCharacterFXContainersPool:GetInstance():Clear()
+	slot0.Battle.BattleCharacterFXContainersPool.GetInstance():Clear()
 	slot0._popNumPool:Clear()
-	slot0.Battle.BattleHPBarManager:GetInstance():Clear()
-	slot0.Battle.BattleArrowManager:GetInstance():Clear()
+	slot0.Battle.BattleHPBarManager.GetInstance():Clear()
+	slot0.Battle.BattleArrowManager.GetInstance():Clear()
 
 	slot0._anitSubAreaTFList = nil
 end

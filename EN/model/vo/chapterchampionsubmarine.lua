@@ -17,7 +17,7 @@ slot0.getFleetType = function (slot0)
 end
 
 slot0.getPoolType = function (slot0)
-	return "common"
+	return "enemy"
 end
 
 slot0.getScale = function (slot0)

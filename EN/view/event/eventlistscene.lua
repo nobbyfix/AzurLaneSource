@@ -262,7 +262,7 @@ slot0.Flush = function (slot0)
 			slot0.eventProxy.selectedEvent = nil
 
 			print("nnnnnnn")
-			pg.UIMgr:GetInstance():LoadingOff()
+			pg.UIMgr.GetInstance():LoadingOff()
 		end
 
 		if slot0.scrollRect.isStart then
@@ -270,7 +270,7 @@ slot0.Flush = function (slot0)
 		else
 			slot0.scrollRect.onStart = slot1
 
-			pg.UIMgr:GetInstance():LoadingOn()
+			pg.UIMgr.GetInstance():LoadingOn()
 		end
 	end
 end

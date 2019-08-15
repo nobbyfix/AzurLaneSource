@@ -240,7 +240,7 @@ return {
 							delay = 0,
 							moveCast = true,
 							corrdinate = {
-								13,
+								30,
 								0,
 								75
 							},
@@ -255,7 +255,7 @@ return {
 							delay = 0,
 							moveCast = true,
 							corrdinate = {
-								13,
+								30,
 								0,
 								35
 							},
@@ -302,7 +302,7 @@ return {
 							delay = 0,
 							moveCast = true,
 							corrdinate = {
-								8,
+								10,
 								0,
 								75
 							},
@@ -347,7 +347,7 @@ return {
 							delay = 0,
 							moveCast = true,
 							corrdinate = {
-								8,
+								10,
 								0,
 								35
 							},

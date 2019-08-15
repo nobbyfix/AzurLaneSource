@@ -131,7 +131,7 @@ slot0.setShip = function (slot0, slot1)
 		LoadImageSpriteAsync("clutter/new", slot0.newTF)
 
 		if OPEN_TEC_TREE_SYSTEM and table.indexof(pg.fleet_tech_ship_template.all, slot0._shipVO.groupId, 1) then
-			pg.ToastMgr:GetInstance():ShowToast(pg.ToastMgr.TYPE_TECPOINT, {
+			pg.ToastMgr.GetInstance():ShowToast(pg.ToastMgr.TYPE_TECPOINT, {
 				point = pg.fleet_tech_ship_template[slot0._shipVO.groupId].pt_get,
 				typeList = pg.fleet_tech_ship_template[slot0._shipVO.groupId].add_get_shiptype,
 				attr = pg.fleet_tech_ship_template[slot0._shipVO.groupId].add_get_attr,
@@ -516,7 +516,7 @@ end
 slot0.starsAnimation = function (slot0)
 	slot0.inAnimating = true
 
-	if slot0._shipVO:getMaxStar() >= 6 then
+	if slot0._shipVO:getMaxStar() >= 6 and PlayerPrefs.GetInt(RARE_SHIP_VIBRATE, 1) > 0 then
 		LuaHelper.Vibrate()
 	end
 
@@ -777,8 +777,8 @@ slot0.willExit = function (slot0)
 	if not slot0.isRemoulded then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 57-80, warpins: 1 ---
-		pg.TipsMgr:GetInstance():ShowTips(i18n("ship_newShipLayer_get", pg.ship_data_by_type[slot0._shipVO:getShipType()].type_name, slot0._shipVO:getName()), COLOR_GREEN)
+		--- BLOCK #0 57-79, warpins: 1 ---
+		pg.TipsMgr.GetInstance():ShowTips(i18n("ship_newShipLayer_get", pg.ship_data_by_type[slot0._shipVO:getShipType()].type_name, slot0._shipVO:getName()), COLOR_GREEN)
 		--- END OF BLOCK #0 ---
 
 
@@ -792,14 +792,14 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 81-94, warpins: 2 ---
+	--- BLOCK #7 80-93, warpins: 2 ---
 	slot0:recyclePainting()
 	pg.UIMgr.GetInstance():UnOverlayPanel(slot0._tf)
 
 	if slot0._currentVoice then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 95-99, warpins: 1 ---
+		--- BLOCK #0 94-98, warpins: 1 ---
 		slot0._currentVoice:Stop(true)
 		--- END OF BLOCK #0 ---
 
@@ -814,13 +814,13 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 100-104, warpins: 2 ---
+	--- BLOCK #8 99-103, warpins: 2 ---
 	slot0._currentVoice = nil
 
 	if slot0.loadedCVBankName then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 105-111, warpins: 1 ---
+		--- BLOCK #0 104-110, warpins: 1 ---
 		pg.CriMgr.UnloadCVBank(slot0.loadedCVBankName)
 
 		slot0.loadedCVBankName = nil
@@ -837,11 +837,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #9 112-119, warpins: 2 ---
+	--- BLOCK #9 111-118, warpins: 2 ---
 	if LeanTween.isTweening(go(slot0.rarityTF)) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 120-125, warpins: 1 ---
+		--- BLOCK #0 119-124, warpins: 1 ---
 		LeanTween.cancel(go(slot0.rarityTF))
 		--- END OF BLOCK #0 ---
 
@@ -856,7 +856,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #10 126-132, warpins: 2 ---
+	--- BLOCK #10 125-131, warpins: 2 ---
 	cameraPaintViewAdjust(false)
 
 	--- END OF BLOCK #10 ---
@@ -866,15 +866,15 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #11 133-143, warpins: 0 ---
+	--- BLOCK #11 132-142, warpins: 0 ---
 	for slot4, slot5 in ipairs(slot0.hideParentList) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 133-137, warpins: 1 ---
+		--- BLOCK #0 132-136, warpins: 1 ---
 		if not IsNil(slot5) then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 138-141, warpins: 1 ---
+			--- BLOCK #0 137-140, warpins: 1 ---
 			setActive(slot5, true)
 			--- END OF BLOCK #0 ---
 
@@ -888,7 +888,7 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 142-143, warpins: 3 ---
+		--- BLOCK #1 141-142, warpins: 3 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -902,7 +902,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #12 144-144, warpins: 1 ---
+	--- BLOCK #12 143-143, warpins: 1 ---
 	return
 	--- END OF BLOCK #12 ---
 

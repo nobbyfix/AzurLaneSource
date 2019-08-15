@@ -90,8 +90,15 @@ slot0.rarity2bgPrintForGet = function (slot0)
 	return ((slot0:isBluePrintShip() and "0") or "") .. ShipRarity.Rarity2Print(slot0:getRarity())
 end
 
-slot0.getShipBgPrint = function (slot0)
-	return (pg.ship_skin_template[slot0.skinId].bg and #slot1.bg > 0 and slot1.bg) or slot0:rarity2bgPrintForGet()
+slot0.getShipBgPrint = function (slot0, slot1)
+	slot2 = pg.ship_skin_template[slot0.skinId]
+	slot3 = nil
+
+	if not slot1 and slot2.bg_sp and slot2.bg_sp ~= "" and PlayerPrefs.GetInt("paint_hide_other_obj_" .. slot2.painting, 0) == 0 then
+		slot3 = slot2.bg_sp
+	end
+
+	return (slot3 and slot3) or (slot2.bg and #slot2.bg > 0 and slot2.bg) or slot0:rarity2bgPrintForGet()
 end
 
 slot0.getStar = function (slot0)
@@ -1621,11 +1628,11 @@ slot0.canDestroyShip = function (slot0, slot1)
 
 					if not slot2 then
 						if slot3 == Fleet.VANGUARD then
-							pg.TipsMgr:GetInstance():ShowTips(i18n("ship_vo_vanguardFleet_must_hasShip"))
+							pg.TipsMgr.GetInstance():ShowTips(i18n("ship_vo_vanguardFleet_must_hasShip"))
 
 							return
 						elseif slot3 == Fleet.MAIN then
-							pg.TipsMgr:GetInstance():ShowTips(i18n("ship_vo_mainFleet_must_hasShip"))
+							pg.TipsMgr.GetInstance():ShowTips(i18n("ship_vo_mainFleet_must_hasShip"))
 
 							return
 						end
@@ -1953,11 +1960,11 @@ slot0.ChangeStateCheckBox = function (slot0, slot1, slot2)
 
 					if not slot2 then
 						if slot3 == Fleet.VANGUARD then
-							pg.TipsMgr:GetInstance():ShowTips(i18n("ship_vo_vanguardFleet_must_hasShip"))
+							pg.TipsMgr.GetInstance():ShowTips(i18n("ship_vo_vanguardFleet_must_hasShip"))
 
 							return
 						elseif slot3 == Fleet.MAIN then
-							pg.TipsMgr:GetInstance():ShowTips(i18n("ship_vo_mainFleet_must_hasShip"))
+							pg.TipsMgr.GetInstance():ShowTips(i18n("ship_vo_mainFleet_must_hasShip"))
 
 							return
 						end

@@ -66,7 +66,7 @@ slot3.UpdateRotation = function (slot0)
 end
 
 slot3.Dispose = function (slot0)
-	slot0.Battle.BattleResourceManager:GetInstance():DestroyOb(slot0._go)
+	slot0.Battle.BattleResourceManager.GetInstance():DestroyOb(slot0._go)
 
 	slot0._go = nil
 end

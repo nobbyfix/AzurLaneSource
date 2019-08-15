@@ -3232,6 +3232,29 @@ pg.ship_data_group = {
 			}
 		}
 	},
+	[357] = {
+		nationality = 1,
+		hide = 0,
+		trans_skin = 0,
+		handbook_type = 0,
+		redirect_id = 101,
+		code = 357,
+		type = 7,
+		index_id = 91,
+		group_type = 10709,
+		trans_type = 0,
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Time-Limited Build",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
 	[403] = {
 		nationality = 1,
 		hide = 0,
@@ -3248,6 +3271,29 @@ pg.ship_data_group = {
 		description = {
 			{
 				"Event: Ashen Simulacrum",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
+	[358] = {
+		nationality = 1,
+		hide = 0,
+		trans_skin = 0,
+		handbook_type = 0,
+		redirect_id = 101,
+		code = 358,
+		type = 8,
+		index_id = 96,
+		group_type = 10802,
+		trans_type = 0,
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Limited Event: Albacore's Fanbook",
 				{
 					""
 				},
@@ -4278,7 +4324,7 @@ pg.ship_data_group = {
 	[106] = {
 		nationality = 2,
 		hide = 0,
-		trans_skin = 202039,
+		trans_skin = 0,
 		handbook_type = 0,
 		redirect_id = 101,
 		code = 106,
@@ -4286,17 +4332,8 @@ pg.ship_data_group = {
 		index_id = 126,
 		group_type = 20203,
 		trans_type = 2,
-		trans_radar_chart = {
-			"B",
-			"A",
-			"E",
-			"B",
-			"C",
-			"C"
-		},
-		trans_skill = {
-			10710
-		},
+		trans_radar_chart = {},
+		trans_skill = {},
 		description = {
 			{
 				"Honor medal exchange",
@@ -6885,6 +6922,40 @@ pg.ship_data_group = {
 			}
 		}
 	},
+	[179] = {
+		nationality = 3,
+		hide = 0,
+		trans_skin = 0,
+		handbook_type = 0,
+		redirect_id = 101,
+		code = 179,
+		type = 2,
+		index_id = 215,
+		group_type = 30201,
+		trans_type = 2,
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Light/Heavy/Special Construction",
+				{
+					"GETBOAT",
+					{
+						projectName = "heavy",
+						page = 1
+					}
+				},
+				0
+			},
+			{
+				"Event: Battery Support Plan",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
 	[308] = {
 		nationality = 3,
 		hide = 0,
@@ -8001,6 +8072,29 @@ pg.ship_data_group = {
 		description = {
 			{
 				"Event: Visitors Dyed in Red",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
+	[230] = {
+		nationality = 3,
+		hide = 0,
+		trans_skin = 0,
+		handbook_type = 0,
+		redirect_id = 101,
+		code = 230,
+		type = 7,
+		index_id = 260,
+		group_type = 30707,
+		trans_type = 0,
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Time-Limited Build",
 				{
 					""
 				},
@@ -9248,6 +9342,29 @@ pg.ship_data_group = {
 			}
 		}
 	},
+	[359] = {
+		nationality = 8,
+		hide = 0,
+		trans_skin = 0,
+		handbook_type = 0,
+		redirect_id = 101,
+		code = 359,
+		type = 1,
+		index_id = 310,
+		group_type = 80103,
+		trans_type = 0,
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Time-Limited Build",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
 	[347] = {
 		nationality = 8,
 		hide = 0,
@@ -9923,7 +10040,9 @@ pg.ship_data_group = {
 		77,
 		79,
 		78,
+		357,
 		403,
+		358,
 		402,
 		342,
 		80,
@@ -10032,6 +10151,7 @@ pg.ship_data_group = {
 		182,
 		183,
 		187,
+		179,
 		308,
 		309,
 		310,
@@ -10073,6 +10193,7 @@ pg.ship_data_group = {
 		227,
 		228,
 		229,
+		230,
 		338,
 		396,
 		339,
@@ -10118,6 +10239,7 @@ pg.ship_data_group = {
 		259,
 		262,
 		348,
+		359,
 		347,
 		349,
 		350,

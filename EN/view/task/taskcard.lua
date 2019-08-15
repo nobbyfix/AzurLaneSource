@@ -113,7 +113,7 @@ slot0.updateBtnState = function (slot0, slot1)
 			local function slot2()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-15, warpins: 1 ---
+				--- BLOCK #0 1-14, warpins: 1 ---
 				slot0.overFlow.onYes = function ()
 
 					-- Decompilation error in this vicinity:
@@ -127,7 +127,7 @@ slot0.updateBtnState = function (slot0, slot1)
 
 				end
 
-				pg.MsgboxMgr:GetInstance():ShowMsgBox(slot0.overFlow)
+				pg.MsgboxMgr.GetInstance():ShowMsgBox(slot0.overFlow)
 
 				return
 				--- END OF BLOCK #0 ---
@@ -139,7 +139,7 @@ slot0.updateBtnState = function (slot0, slot1)
 			function slot3()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-15, warpins: 1 ---
+				--- BLOCK #0 1-14, warpins: 1 ---
 				slot0.choice.onYes = function ()
 
 					-- Decompilation error in this vicinity:
@@ -147,8 +147,8 @@ slot0.updateBtnState = function (slot0, slot1)
 					if not slot0.index then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 5-14, warpins: 1 ---
-						pg.TipsMgr:GetInstance():ShowTips("未选择奖励,放弃领取")
+						--- BLOCK #0 5-13, warpins: 1 ---
+						pg.TipsMgr.GetInstance():ShowTips("未选择奖励,放弃领取")
 
 						return
 						--- END OF BLOCK #0 ---
@@ -164,11 +164,11 @@ slot0.updateBtnState = function (slot0, slot1)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #1 15-18, warpins: 2 ---
+					--- BLOCK #1 14-17, warpins: 2 ---
 					if slot1.overFlow then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 19-21, warpins: 1 ---
+						--- BLOCK #0 18-20, warpins: 1 ---
 						slot2()
 						--- END OF BLOCK #0 ---
 
@@ -177,7 +177,7 @@ slot0.updateBtnState = function (slot0, slot1)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 22-23, warpins: 1 ---
+						--- BLOCK #0 21-22, warpins: 1 ---
 						slot3()
 						--- END OF BLOCK #0 ---
 
@@ -192,7 +192,7 @@ slot0.updateBtnState = function (slot0, slot1)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #2 24-24, warpins: 2 ---
+					--- BLOCK #2 23-23, warpins: 2 ---
 					return
 					--- END OF BLOCK #2 ---
 
@@ -200,7 +200,7 @@ slot0.updateBtnState = function (slot0, slot1)
 
 				end
 
-				pg.MsgboxMgr:GetInstance():ShowMsgBox(slot0.choice)
+				pg.MsgboxMgr.GetInstance():ShowMsgBox(slot0.choice)
 
 				return
 				--- END OF BLOCK #0 ---
@@ -212,7 +212,7 @@ slot0.updateBtnState = function (slot0, slot1)
 			function slot4()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-15, warpins: 1 ---
+				--- BLOCK #0 1-14, warpins: 1 ---
 				slot0.sub.onYes = function ()
 
 					-- Decompilation error in this vicinity:
@@ -270,7 +270,7 @@ slot0.updateBtnState = function (slot0, slot1)
 
 				end
 
-				pg.MsgboxMgr:GetInstance():ShowMsgBox(slot0.sub)
+				pg.MsgboxMgr.GetInstance():ShowMsgBox(slot0.sub)
 
 				return
 				--- END OF BLOCK #0 ---

@@ -137,8 +137,8 @@ slot0.didEnter = function (slot0)
 		if slot0.input.text == "" then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 6-17, warpins: 1 ---
-			pg.TipsMgr:GetInstance():ShowTips(i18n("main_notificationLayer_sendButton"))
+			--- BLOCK #0 6-16, warpins: 1 ---
+			pg.TipsMgr.GetInstance():ShowTips(i18n("main_notificationLayer_sendButton"))
 
 			return
 			--- END OF BLOCK #0 ---
@@ -154,7 +154,7 @@ slot0.didEnter = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 18-32, warpins: 2 ---
+		--- BLOCK #1 17-31, warpins: 2 ---
 		slot0.input.text = ""
 
 		slot0:emit(NotificationMediator.ON_SEND_PUBLIC, slot1.ChannelBits.send, slot0)

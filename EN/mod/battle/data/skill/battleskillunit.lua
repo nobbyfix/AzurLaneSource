@@ -18,7 +18,7 @@ ys.Battle.BattleSkillUnit.Ctor = function (slot0, slot1, slot2)
 		slot0._effectList[slot6] = slot0.Battle[slot7.type].New(slot7, slot2)
 	end
 
-	slot0._dataProxy = slot0.Battle.BattleDataProxy:GetInstance()
+	slot0._dataProxy = slot0.Battle.BattleDataProxy.GetInstance()
 end
 
 ys.Battle.BattleSkillUnit.GenerateSpell = function (slot0, slot1, slot2, slot3)
@@ -32,7 +32,7 @@ ys.Battle.BattleSkillUnit.GetSkillEffectList = function (slot0)
 end
 
 ys.Battle.BattleSkillUnit.Cast = function (slot0, slot1, slot2)
-	slot4 = slot0.Battle.BattleState:GetInstance().GetUIMediator(slot3)
+	slot4 = slot0.Battle.BattleState.GetInstance().GetUIMediator(slot3)
 
 	if slot0._tempData.focus_duration then
 		slot4:ShowSkillPainting(slot1, slot0._tempData)

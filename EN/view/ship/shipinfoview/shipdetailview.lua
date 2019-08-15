@@ -104,7 +104,7 @@ slot0.InitEvent = function (slot0)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.intimacyTF, function ()
 		if slot0:GetShipVO():isActivityNpc() then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("npc_propse_tip"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("npc_propse_tip"))
 
 			return
 		end
@@ -132,7 +132,7 @@ slot0.InitEvent = function (slot0)
 		slot0, slot1 = Ship.canModifyShip(slot0:GetShipVO())
 
 		if not slot0 then
-			pg.TipsMgr:GetInstance():ShowTips(slot1)
+			pg.TipsMgr.GetInstance():ShowTips(slot1)
 		else
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = i18n("ship_unequip_all_tip"),
@@ -379,8 +379,8 @@ slot0.UpdateRecordEquipments = function (slot0, slot1)
 				onButton(slot0, slot13, function ()
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 1-12, warpins: 1 ---
-					pg.TipsMgr:GetInstance():ShowTips(i18n("ship_quick_change_nofreeequip"))
+					--- BLOCK #0 1-11, warpins: 1 ---
+					pg.TipsMgr.GetInstance():ShowTips(i18n("ship_quick_change_nofreeequip"))
 
 					return
 					--- END OF BLOCK #0 ---

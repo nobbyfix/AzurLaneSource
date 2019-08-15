@@ -286,9 +286,9 @@ slot0.applyTheme = function (slot0, slot1)
 		end)
 	end
 
-	pg.UIMgr:GetInstance():LoadingOn()
+	pg.UIMgr.GetInstance():LoadingOn()
 	seriesAsync(slot2, function ()
-		pg.UIMgr:GetInstance():LoadingOff()
+		pg.UIMgr.GetInstance():LoadingOff()
 		pg.UIMgr.GetInstance().LoadingOff:filterTheme()
 	end)
 end
@@ -380,7 +380,7 @@ slot0.initDecoration = function (slot0, slot1)
 
 	onButton(slot0, slot2.go, function ()
 		if not slot0.curHouse:canPutFurniture(slot1.furniture) then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_cant_put_tip"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_cant_put_tip"))
 
 			return
 		end
@@ -518,13 +518,13 @@ slot0.initThemeBox = function (slot0)
 	end)
 	onButton(slot0, slot0.themeSaveBtn, function ()
 		if table.getCount(slot0.curHouse.furnitures) == 0 then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_save_empty_theme"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_save_empty_theme"))
 
 			return
 		end
 
 		if wordVer(slot0) > 0 then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_theme_name_forbid"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_theme_name_forbid"))
 
 			return
 		end
@@ -535,7 +535,7 @@ slot0.initThemeBox = function (slot0)
 	onButton(slot0, slot0.themeSetBtn, function ()
 		local function slot0(slot0)
 			if table.getCount(slot0) == 0 then
-				pg.TipsMgr:GetInstance():ShowTips(i18n("backyard_backyardScene_error_noFurniture"))
+				pg.TipsMgr.GetInstance():ShowTips(i18n("backyard_backyardScene_error_noFurniture"))
 
 				return
 			end

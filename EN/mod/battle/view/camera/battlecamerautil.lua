@@ -32,7 +32,7 @@ slot4.Initialize = function (slot0)
 	slot0:active()
 	slot0:SwitchCameraPos()
 
-	slot0._uiMediator = slot2.Battle.BattleState:GetInstance():GetMediatorByName(slot2.Battle.BattleUIMediator.__name)
+	slot0._uiMediator = slot2.Battle.BattleState.GetInstance():GetMediatorByName(slot2.Battle.BattleUIMediator.__name)
 end
 
 slot4.Clear = function (slot0)
@@ -176,7 +176,7 @@ slot4.BulletTime = function (slot0, slot1, slot2, slot3)
 		speed = slot2,
 		exemptUnit = slot3
 	}))
-	slot0.Battle.BattleState:GetInstance():ScaleTimer(slot2)
+	slot0.Battle.BattleState.GetInstance():ScaleTimer(slot2)
 
 	if slot0._uiMediator:GetAppearFX() ~= nil then
 		slot0._uiMediator:GetAppearFX():GetComponent(typeof(Animator)).speed = 1 / (slot2 or 1)

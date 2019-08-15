@@ -145,7 +145,7 @@ slot0.display = function (slot0)
 						slot0 = slot0 + 1
 					end
 
-					slot5.timerId[slot0.id] = pg.TimeMgr:GetInstance():AddTimer("delayTimer", slot1, 0, function ()
+					slot5.timerId[slot0.id] = pg.TimeMgr.GetInstance():AddTimer("delayTimer", slot1, 0, function ()
 
 						-- Decompilation error in this vicinity:
 						--- BLOCK #0 1-8, warpins: 1 ---
@@ -551,12 +551,12 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 27-37, warpins: 0 ---
+	--- BLOCK #3 27-36, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.timerId) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 27-35, warpins: 1 ---
-		pg.TimeMgr:GetInstance():RemoveTimer(slot5)
+		--- BLOCK #0 27-34, warpins: 1 ---
+		pg.TimeMgr.GetInstance():RemoveTimer(slot5)
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -564,7 +564,7 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 36-37, warpins: 2 ---
+		--- BLOCK #1 35-36, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -578,7 +578,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 38-44, warpins: 1 ---
+	--- BLOCK #4 37-43, warpins: 1 ---
 	slot0.timerId = nil
 
 	--- END OF BLOCK #4 ---
@@ -588,11 +588,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 45-55, warpins: 0 ---
+	--- BLOCK #5 44-54, warpins: 0 ---
 	for slot4 = #slot0._nameTxts, 1, -1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 45-55, warpins: 2 ---
+		--- BLOCK #0 44-54, warpins: 2 ---
 		slot0._nameTxts[slot4]:destroy()
 		table.remove(slot0._nameTxts, slot4)
 		--- END OF BLOCK #0 ---
@@ -608,7 +608,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 56-66, warpins: 1 ---
+	--- BLOCK #6 55-65, warpins: 1 ---
 	slot0._nameTxts = nil
 
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)

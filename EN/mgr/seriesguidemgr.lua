@@ -287,13 +287,11 @@ pg.SeriesGuideMgr.compatibleOldPlayer = function (slot0)
 		return
 	end
 
-	if not pg.StoryMgr:GetInstance():IsPlayed("FixGuide") then
-		pg.StoryMgr:GetInstance():PlayGuide("FixGuide")
-
+	pg.SystemGuideMgr.GetInstance():FixGuide(function ()
 		if slot0.player.guideIndex > 1 and slot0.player.guideIndex < 101 then
 			slot1()
 		end
-	end
+	end)
 end
 
 return

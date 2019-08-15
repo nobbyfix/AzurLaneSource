@@ -64,7 +64,7 @@ slot0.init = function (slot0)
 	slot0.buffContain = slot0:findTF("buffListPanel/buffs", slot0.rightPanel)
 	slot0.buffTpl = slot0:getTpl("bufftpl", slot0.buffContain)
 	slot0.buffTip = slot0:findTF("main/rightPanel/buffListPanel/tip")
-	slot0.UIMain = pg.UIMgr:GetInstance().OverlayMain
+	slot0.UIMain = pg.UIMgr.GetInstance().OverlayMain
 	slot0.shopBtn = slot0:findTF("shop_btn", slot0.bottomPanel)
 	slot0.shareBtn = slot0:findTF("share_btn", slot0.bottomPanel)
 	slot0.renameBox = slot0:findTF("rename_box")
@@ -300,8 +300,8 @@ slot0.setMode = function (slot0)
 			if slot0.dormVO.level ~= Dorm.MAX_LEVEL then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 8-19, warpins: 1 ---
-				pg.TipsMgr:GetInstance():ShowTips(i18n("sec_floor_limit_tip"))
+				--- BLOCK #0 8-18, warpins: 1 ---
+				pg.TipsMgr.GetInstance():ShowTips(i18n("sec_floor_limit_tip"))
 				--- END OF BLOCK #0 ---
 
 
@@ -309,7 +309,7 @@ slot0.setMode = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 20-23, warpins: 1 ---
+				--- BLOCK #0 19-22, warpins: 1 ---
 				slot0:showFloorSel()
 				--- END OF BLOCK #0 ---
 
@@ -324,7 +324,7 @@ slot0.setMode = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 24-24, warpins: 2 ---
+			--- BLOCK #1 23-23, warpins: 2 ---
 			return
 			--- END OF BLOCK #1 ---
 
@@ -621,8 +621,8 @@ slot0.showFloorSel = function (slot0)
 		onButton(slot0, slot5:Find("mask"), function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-24, warpins: 1 ---
-			pg.MsgboxMgr:GetInstance():ShowMsgBox({
+			--- BLOCK #0 1-23, warpins: 1 ---
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = i18n("backyard_open_2floor", pg.shop_template[ShopArgs.DORM_FLOOR_ID].resource_num),
 				onYes = function ()
 
@@ -852,8 +852,8 @@ slot0.registerRenameEvent = function (slot0)
 		if not getInputText(slot0.nameInput) or slot0 == "" then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 9-20, warpins: 2 ---
-			pg.TipsMgr:GetInstance():ShowTips(i18n("word_should_input"))
+			--- BLOCK #0 9-19, warpins: 2 ---
+			pg.TipsMgr.GetInstance():ShowTips(i18n("word_should_input"))
 
 			return
 			--- END OF BLOCK #0 ---
@@ -869,7 +869,7 @@ slot0.registerRenameEvent = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 21-28, warpins: 2 ---
+		--- BLOCK #1 20-27, warpins: 2 ---
 		if not nameValidityCheck(slot0, 0, 20, {
 			"spece_illegal_tip",
 			"login_newPlayerScene_name_tooShort",
@@ -878,7 +878,7 @@ slot0.registerRenameEvent = function (slot0)
 		}) then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 29-29, warpins: 1 ---
+			--- BLOCK #0 28-28, warpins: 1 ---
 			return
 			--- END OF BLOCK #0 ---
 
@@ -893,7 +893,7 @@ slot0.registerRenameEvent = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 30-37, warpins: 2 ---
+		--- BLOCK #2 29-36, warpins: 2 ---
 		slot0:emit(BackYardMediator.RENAME, slot0)
 
 		return
@@ -1159,8 +1159,8 @@ slot0.createBuff = function (slot0, slot1)
 		isExpired = function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-11, warpins: 1 ---
-			return slot0.timestamp < pg.TimeMgr:GetInstance():GetServerTime()
+			--- BLOCK #0 1-10, warpins: 1 ---
+			return slot0.timestamp < pg.TimeMgr.GetInstance():GetServerTime()
 			--- END OF BLOCK #0 ---
 
 			FLOW; TARGET BLOCK #1
@@ -1168,7 +1168,7 @@ slot0.createBuff = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 15-15, warpins: 2 ---
+			--- BLOCK #1 14-14, warpins: 2 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -1177,8 +1177,8 @@ slot0.createBuff = function (slot0, slot1)
 		getLeftTime = function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-11, warpins: 1 ---
-			return slot0.timestamp - pg.TimeMgr:GetInstance():GetServerTime()
+			--- BLOCK #0 1-10, warpins: 1 ---
+			return slot0.timestamp - pg.TimeMgr.GetInstance():GetServerTime()
 			--- END OF BLOCK #0 ---
 
 
@@ -1251,14 +1251,14 @@ slot0.updateBuff = function (slot0, slot1)
 		slot0.buffTimer[slot1.id] = Timer.New(function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-17, warpins: 1 ---
-			slot1 = pg.TimeMgr:GetInstance():DescCDTime(slot0)
+			--- BLOCK #0 1-16, warpins: 1 ---
+			slot1 = pg.TimeMgr.GetInstance():DescCDTime(slot0)
 			slot2 = nil
 
 			if slot0:getLeftTime() > 0 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 18-23, warpins: 1 ---
+				--- BLOCK #0 17-22, warpins: 1 ---
 				setText(slot1, (slot0:isRedTime() or setColorStr(slot1, "#FFFFFFFF")) and setColorStr(slot1, COLOR_RED))
 				--- END OF BLOCK #0 ---
 
@@ -1267,7 +1267,7 @@ slot0.updateBuff = function (slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 35-39, warpins: 2 ---
+				--- BLOCK #1 34-38, warpins: 2 ---
 				--- END OF BLOCK #1 ---
 
 
@@ -1275,7 +1275,7 @@ slot0.updateBuff = function (slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 40-41, warpins: 1 ---
+				--- BLOCK #0 39-40, warpins: 1 ---
 				slot2()
 				--- END OF BLOCK #0 ---
 
@@ -1290,7 +1290,7 @@ slot0.updateBuff = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 42-42, warpins: 2 ---
+			--- BLOCK #1 41-41, warpins: 2 ---
 			return
 			--- END OF BLOCK #1 ---
 
@@ -1512,8 +1512,8 @@ slot0.calFoodLeftTime = function (slot0)
 	if slot0.calFoodTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 4-14, warpins: 1 ---
-		pg.TimeMgr:GetInstance():RemoveTimer(slot0.calFoodTimer)
+		--- BLOCK #0 4-13, warpins: 1 ---
+		pg.TimeMgr.GetInstance():RemoveTimer(slot0.calFoodTimer)
 
 		slot0.calFoodTimer = nil
 		--- END OF BLOCK #0 ---
@@ -1529,7 +1529,7 @@ slot0.calFoodLeftTime = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 15-20, warpins: 2 ---
+	--- BLOCK #1 14-19, warpins: 2 ---
 	setActive(slot0.leftTimeTF, slot0.dormVO.next_timestamp ~= 0)
 
 	--- END OF BLOCK #1 ---
@@ -1539,11 +1539,11 @@ slot0.calFoodLeftTime = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 24-28, warpins: 2 ---
+	--- BLOCK #2 23-27, warpins: 2 ---
 	if slot0.trainShipCount <= 0 or slot0.dormVO.food <= 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 34-38, warpins: 2 ---
+		--- BLOCK #0 33-37, warpins: 2 ---
 		setActive(slot0.leftTimeTF, false)
 
 		return
@@ -1560,14 +1560,14 @@ slot0.calFoodLeftTime = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 39-62, warpins: 1 ---
+	--- BLOCK #3 38-60, warpins: 1 ---
 	slot1 = slot0.dormVO:getFoodLeftTime()
 
 	function slot2()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-19, warpins: 1 ---
-		pg.TimeMgr:GetInstance():RemoveTimer(slot0.calFoodTimer)
+		--- BLOCK #0 1-18, warpins: 1 ---
+		pg.TimeMgr.GetInstance():RemoveTimer(slot0.calFoodTimer)
 
 		pg.TimeMgr.GetInstance().RemoveTimer.calFoodTimer = nil
 
@@ -1582,16 +1582,16 @@ slot0.calFoodLeftTime = function (slot0)
 
 	setActive(slot0.leftTimeTF, true)
 
-	slot0.calFoodTimer = pg.TimeMgr:GetInstance():AddTimer("calFoodTimer", 0, 1, function ()
+	slot0.calFoodTimer = pg.TimeMgr.GetInstance():AddTimer("calFoodTimer", 0, 1, function ()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-34, warpins: 1 ---
-		setText(slot1.leftTimeTF, i18n("backyard_backyardScene_timeRest", " " .. pg.TimeMgr:GetInstance():DescCDTime(math.floor(math.floor) - pg.TimeMgr:GetInstance():GetServerTime())))
+		--- BLOCK #0 1-32, warpins: 1 ---
+		setText(slot1.leftTimeTF, i18n("backyard_backyardScene_timeRest", " " .. pg.TimeMgr.GetInstance():DescCDTime(math.floor(math.floor) - pg.TimeMgr.GetInstance():GetServerTime())))
 
 		if math.floor(math.floor) - pg.TimeMgr.GetInstance().GetServerTime() <= 0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 35-36, warpins: 1 ---
+			--- BLOCK #0 33-34, warpins: 1 ---
 			slot2()
 			--- END OF BLOCK #0 ---
 
@@ -1606,7 +1606,7 @@ slot0.calFoodLeftTime = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 37-37, warpins: 2 ---
+		--- BLOCK #1 35-35, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 
@@ -1622,7 +1622,7 @@ slot0.calFoodLeftTime = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 63-63, warpins: 2 ---
+	--- BLOCK #4 61-61, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 
@@ -1877,8 +1877,8 @@ end
 slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-13, warpins: 1 ---
-	pg.TimeMgr:GetInstance():RemoveTimer(slot0.calFoodTimer)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	pg.TimeMgr.GetInstance():RemoveTimer(slot0.calFoodTimer)
 
 	--- END OF BLOCK #0 ---
 
@@ -1887,11 +1887,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 14-18, warpins: 0 ---
+	--- BLOCK #1 13-17, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.buffTimer) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 14-16, warpins: 1 ---
+		--- BLOCK #0 13-15, warpins: 1 ---
 		slot5:Stop()
 		--- END OF BLOCK #0 ---
 
@@ -1900,7 +1900,7 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 17-18, warpins: 2 ---
+		--- BLOCK #1 16-17, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -1914,11 +1914,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 19-21, warpins: 1 ---
+	--- BLOCK #2 18-20, warpins: 1 ---
 	if slot0.isOpenNofoodBox then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 22-24, warpins: 1 ---
+		--- BLOCK #0 21-23, warpins: 1 ---
 		slot0:closeNofoodBox()
 		--- END OF BLOCK #0 ---
 
@@ -1933,11 +1933,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 25-27, warpins: 2 ---
+	--- BLOCK #3 24-26, warpins: 2 ---
 	if slot0.comforTableChat and LeanTween.isTweening(go(slot0.comforTableChat)) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 36-41, warpins: 1 ---
+		--- BLOCK #0 35-40, warpins: 1 ---
 		LeanTween.cancel(go(slot0.comforTableChat))
 		--- END OF BLOCK #0 ---
 
@@ -1952,11 +1952,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 42-44, warpins: 3 ---
+	--- BLOCK #4 41-43, warpins: 3 ---
 	if slot0.buffTip and LeanTween.isTweening(go(slot0.buffTip)) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 53-58, warpins: 1 ---
+		--- BLOCK #0 52-57, warpins: 1 ---
 		LeanTween.cancel(go(slot0.buffTip))
 		--- END OF BLOCK #0 ---
 
@@ -1971,7 +1971,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 59-72, warpins: 3 ---
+	--- BLOCK #5 58-71, warpins: 3 ---
 	slot0:hideLoading()
 	slot0:closeRenameBox()
 	slot0:closeFloorSel()

@@ -67,7 +67,7 @@ slot0.didEnter = function (slot0)
 		if slot1 then
 			setTextColor(slot0.inputText, Color.red)
 			setButtonEnabled(slot0.btnEva, false)
-			pg.TipsMgr:GetInstance():ShowTips(slot2)
+			pg.TipsMgr.GetInstance():ShowTips(slot2)
 		else
 			setTextColor(slot0.inputText, Color.white)
 			setButtonEnabled(slot0.btnEva, true)
@@ -163,8 +163,8 @@ slot0.flushEva = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 15-25, warpins: 1 ---
-				pg.TipsMgr:GetInstance():ShowTips(i18n("zan_ship_eva_error_7"))
+				--- BLOCK #0 15-24, warpins: 1 ---
+				pg.TipsMgr.GetInstance():ShowTips(i18n("zan_ship_eva_error_7"))
 				--- END OF BLOCK #0 ---
 
 
@@ -178,7 +178,7 @@ slot0.flushEva = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 26-26, warpins: 2 ---
+			--- BLOCK #1 25-25, warpins: 2 ---
 			return
 			--- END OF BLOCK #1 ---
 

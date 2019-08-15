@@ -144,7 +144,7 @@ slot5.RemoveFX = function (slot0, slot1)
 	if slot0._allFX and slot0._allFX[slot1] then
 		slot0._allFX[slot1] = nil
 
-		slot0:GetInstance():DestroyOb(slot1)
+		slot0.GetInstance():DestroyOb(slot1)
 	end
 end
 
@@ -152,7 +152,7 @@ slot5.RemoveCacheFX = function (slot0, slot1)
 	if slot0._cacheFXList[slot1] ~= nil then
 		slot0._allFX[slot2] = nil
 
-		slot0:GetInstance():DestroyOb(slot2)
+		slot0.GetInstance():DestroyOb(slot2)
 
 		slot0._cacheFXList[slot1] = nil
 	end
@@ -413,10 +413,10 @@ slot5.UpdateDiveInvisible = function (slot0)
 		slot3 = slot0:GetFactory():GetDivingFilterColor()
 
 		if slot2 then
-			slot0:SwitchShader(slot1:GetInstance():GetShader("GRID_TRANSPARENT"), slot3)
+			slot0:SwitchShader(slot1.GetInstance():GetShader("GRID_TRANSPARENT"), slot3)
 			slot0:updateComponentDiveInvisible()
 		else
-			slot0:SwitchShader(slot1:GetInstance():GetShader("SEMI_TRANSPARENT"), slot3)
+			slot0:SwitchShader(slot1.GetInstance():GetShader("SEMI_TRANSPARENT"), slot3)
 		end
 
 		slot0._animator:ChangeRenderQueue(2999)
@@ -871,10 +871,10 @@ end
 slot5.SetArrowPoint = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-17, warpins: 1 ---
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot0._arrowVector:Set()
 
-	slot0._cameraUtil = slot0.Battle.BattleCameraUtil:GetInstance()
+	slot0._cameraUtil = slot0.Battle.BattleCameraUtil.GetInstance()
 	slot0._arrowCenterPos = slot0._cameraUtil:GetArrowCenterPos()
 
 	return
@@ -1116,12 +1116,12 @@ slot5.Dispose = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 34-43, warpins: 0 ---
+	--- BLOCK #3 34-42, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0._allFX) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 34-41, warpins: 1 ---
-		slot0:GetInstance():DestroyOb(slot4)
+		--- BLOCK #0 34-40, warpins: 1 ---
+		slot0.GetInstance():DestroyOb(slot4)
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -1129,7 +1129,7 @@ slot5.Dispose = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 42-43, warpins: 2 ---
+		--- BLOCK #1 41-42, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -1143,7 +1143,7 @@ slot5.Dispose = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 44-106, warpins: 1 ---
+	--- BLOCK #4 43-105, warpins: 1 ---
 	pg.TimeMgr.GetInstance():RemoveBattleTimer(slot0._voiceTimer)
 
 	slot0._voiceTimer = nil
@@ -1178,11 +1178,11 @@ slot5.Dispose = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 107-111, warpins: 0 ---
+	--- BLOCK #5 106-110, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0._tagFXList) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 107-109, warpins: 1 ---
+		--- BLOCK #0 106-108, warpins: 1 ---
 		slot5:Dispose()
 		--- END OF BLOCK #0 ---
 
@@ -1191,7 +1191,7 @@ slot5.Dispose = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 110-111, warpins: 2 ---
+		--- BLOCK #1 109-110, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -1205,7 +1205,7 @@ slot5.Dispose = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 112-121, warpins: 1 ---
+	--- BLOCK #6 111-120, warpins: 1 ---
 	slot0._tagFXList = nil
 	slot0._attachWeaponList = {}
 

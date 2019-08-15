@@ -20,6 +20,14 @@ slot0.Ctor = function (slot0, slot1)
 
 	setActive(slot0.timelimitTag, false)
 	setActive(slot0.timelimitTimeTxt, false)
+
+	slot0.hideObjToggleTF = findTF(slot0.tr, "hideObjToggle")
+
+	setActive(slot0.hideObjToggleTF, false)
+
+	slot0.hideObjToggle = GetComponent(slot0.hideObjToggleTF, typeof(Toggle))
+
+	setText(findTF(slot0.hideObjToggleTF, "Label"), i18n("paint_hide_other_obj_tip"))
 end
 
 slot0.updateSkin = function (slot0, slot1, slot2)
@@ -562,13 +570,48 @@ slot0.loadPainting = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 9-15, warpins: 2 ---
+	--- BLOCK #1 9-33, warpins: 2 ---
 	slot0.paintingName = slot1
 
+	setActive(slot0.hideObjToggle, slot1)
+
+	slot2 = slot0.hideObjToggle
+
+	if PlayerPrefs.GetInt("paint_hide_other_obj_" .. slot0.paintingName, 0) == 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 34-35, warpins: 1 ---
+		slot3 = false
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 36-36, warpins: 1 ---
+		slot3 = true
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 37-48, warpins: 2 ---
+	slot2.isOn = slot3
+
+	setPaintingPrefabAsync(slot0.painting, slot0.paintingName, "pifu")
 	setPaintingPrefabAsync(slot0.painting, slot0.paintingName, "pifu")
 
 	return
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #2 ---
 
 
 

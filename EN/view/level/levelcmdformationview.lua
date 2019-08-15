@@ -157,7 +157,7 @@ end
 slot0.open = function (slot0)
 	slot0:playAnim("cmdopen", callback)
 	setActive(slot0._go, true)
-	setParent(slot0._go, pg.UIMgr:GetInstance().OverlayMain)
+	setParent(slot0._go, pg.UIMgr.GetInstance().OverlayMain)
 	slot0._tf:SetAsLastSibling()
 end
 

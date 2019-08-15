@@ -34,8 +34,8 @@ slot0.init = function (slot0)
 	setText(slot0:findTF("text", slot0.overLimit), i18n("equipment_upgrade_overlimit"))
 
 	slot0.materialsContain = slot0:findTF("materials/materials", slot0.materialPanel)
-	slot0.uiMain = pg.UIMgr:GetInstance().UIMain
-	slot0.Overlay = pg.UIMgr:GetInstance().OverlayMain
+	slot0.uiMain = pg.UIMgr.GetInstance().UIMain
+	slot0.Overlay = pg.UIMgr.GetInstance().OverlayMain
 end
 
 slot0.updateRes = function (slot0, slot1)
@@ -253,7 +253,7 @@ slot0.updateMaterials = function (slot0)
 	setActive(slot0.overLimit, not slot5)
 	onButton(slot0, slot0.startBtn, function ()
 		if not slot0 then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("ship_shipUpgradeLayer2_noMaterail"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("ship_shipUpgradeLayer2_noMaterail"))
 
 			return
 		end

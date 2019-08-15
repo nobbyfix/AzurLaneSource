@@ -119,7 +119,7 @@ slot0.displayFleetPanel = function (slot0)
 
 	slot0.fleetPanel.onConfirm = function ()
 		if not slot0.chapter:isValid() then
-			pg.TipsMgr:GetInstance():ShowTips(i18n("sham_team_limit"))
+			pg.TipsMgr.GetInstance():ShowTips(i18n("sham_team_limit"))
 		else
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				modal = true,
@@ -169,7 +169,7 @@ end
 slot0.updateView = function (slot0, slot1, slot2)
 	slot3 = nil
 	slot3 = coroutine.create(function ()
-		pg.UIMgr:GetInstance():LoadingOn()
+		pg.UIMgr.GetInstance():LoadingOn()
 		pg.UIMgr.GetInstance().LoadingOn:resetGrid(TeamType.Vanguard)
 		pg.UIMgr.GetInstance().LoadingOn.resetGrid:resetGrid(TeamType.Main)
 		pg.UIMgr.GetInstance().LoadingOn.resetGrid.resetGrid:resetFlag()
@@ -194,7 +194,7 @@ slot0.updateView = function (slot0, slot1, slot2)
 		onNextTick(slot2)
 		coroutine.yield()
 		coroutine.yield:displayFleetInfo()
-		pg.UIMgr:GetInstance():LoadingOff()
+		pg.UIMgr.GetInstance():LoadingOff()
 
 		if slot3 then
 			slot3()
@@ -234,7 +234,7 @@ slot0.updateDockView = function (slot0)
 					if slot1 and slot1.hpRant < ChapterConst.HpGreen then
 						slot0:displayRepairWindow(slot0)
 					else
-						pg.TipsMgr:GetInstance():ShowTips(i18n("sham_can_not_change_ship"))
+						pg.TipsMgr.GetInstance():ShowTips(i18n("sham_can_not_change_ship"))
 					end
 				end
 			end)
@@ -249,7 +249,7 @@ slot0.updateFriendAssist = function (slot0)
 			if slot1 and slot1.hpRant < ChapterConst.HpGreen then
 				slot0:displayRepairWindow(slot0)
 			else
-				pg.TipsMgr:GetInstance():ShowTips(i18n("sham_can_not_change_ship"))
+				pg.TipsMgr.GetInstance():ShowTips(i18n("sham_can_not_change_ship"))
 			end
 		else
 			slot0:emit(ShamPreCombatMediator.CHANGE_FLEET_SHIP, {
@@ -718,8 +718,8 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 					if slot1.chapter.active and #slot1.chapter.fleet[slot2] == 1 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 41-63, warpins: 1 ---
-						pg.TipsMgr:GetInstance():ShowTips(i18n("ship_formationUI_removeError_onlyShip", slot3:getName(), "", Fleet.C_TEAM_NAME[slot2]))
+						--- BLOCK #0 41-62, warpins: 1 ---
+						pg.TipsMgr.GetInstance():ShowTips(i18n("ship_formationUI_removeError_onlyShip", slot3:getName(), "", Fleet.C_TEAM_NAME[slot2]))
 						slot2()
 						--- END OF BLOCK #0 ---
 
@@ -728,7 +728,7 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 64-83, warpins: 2 ---
+						--- BLOCK #0 63-82, warpins: 2 ---
 						pg.MsgboxMgr.GetInstance():ShowMsgBox({
 							hideNo = false,
 							zIndex = -100,
@@ -816,7 +816,7 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 84-85, warpins: 1 ---
+					--- BLOCK #0 83-84, warpins: 1 ---
 					slot2()
 					--- END OF BLOCK #0 ---
 
@@ -831,7 +831,7 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 86-89, warpins: 3 ---
+				--- BLOCK #1 85-88, warpins: 3 ---
 				playSoundEffect(SFX_UI_HOME_PUT)
 
 				return
@@ -1075,8 +1075,8 @@ slot0.displayRepairWindow = function (slot0, slot1)
 		if slot0 - math.min(math.min, slot0) == 0 and slot2.player:getTotalGem() < slot3 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 18-29, warpins: 1 ---
-			pg.TipsMgr:GetInstance():ShowTips(i18n("common_no_rmb"))
+			--- BLOCK #0 18-28, warpins: 1 ---
+			pg.TipsMgr.GetInstance():ShowTips(i18n("common_no_rmb"))
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1092,7 +1092,7 @@ slot0.displayRepairWindow = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 30-51, warpins: 3 ---
+		--- BLOCK #1 29-50, warpins: 3 ---
 		slot2:emit(ShamPreCombatMediator.OP, {
 			type = ChapterConst.OpRepair,
 			id = slot4.fleet.id,

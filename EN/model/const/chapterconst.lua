@@ -203,7 +203,7 @@ slot0.GetAchieveDesc = function (slot0, slot1)
 	elseif slot3.type == slot0.AchieveType3 then
 		return "Defeat all enemies"
 	elseif slot3.type == slot0.AchieveType4 then
-		return string.format("Deployed ≤ %d", slot3.config)
+		return string.format("Deployed ships≤ %d", slot3.config)
 	elseif slot3.type == slot0.AchieveType5 then
 		return string.format("XX not deployed", ShipType.Type2Name(slot3.config))
 	end
@@ -319,6 +319,16 @@ slot0.MarkCoastalGun = 3
 slot0.MarkEscapeGrid = 4
 slot0.MarkBanaiAirStrike = 5
 slot0.MarkMovePathArrow = 6
+slot0.ReasonVictory = 1
+slot0.ReasonDefeat = 2
+slot0.ReasonVictoryOni = 3
+slot0.ReasonDefeatOni = 4
+slot0.ReasonDefeatBomb = 5
+slot0.ReasonVictorySham = 6
+slot0.ReasonDefeatSham = 7
+slot0.ReasonOutTime = 8
+slot0.ReasonActivityOutTime = 9
+slot0.ReasonDefeatDefense = 10
 slot0.AirDominance = {
 	[0] = {
 		name = pg.gametip.no_airspace_competition.tip,

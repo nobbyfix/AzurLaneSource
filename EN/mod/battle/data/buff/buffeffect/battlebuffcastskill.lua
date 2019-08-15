@@ -150,7 +150,7 @@ ys.Battle.BattleBuffCastSkill.Clear = function (slot0)
 end
 
 ys.Battle.BattleBuffCastSkill.GetWinningStreak = function (slot0)
-	return slot0[1] <= slot0.Battle.BattleDataProxy:GetInstance():GetWinningStreak() and slot1 < slot0[2]
+	return slot0[1] <= slot0.Battle.BattleDataProxy.GetInstance():GetWinningStreak() and slot1 < slot0[2]
 end
 
 ys.Battle.BattleBuffCastSkill.GetEquipmentList = function (slot0, slot1)

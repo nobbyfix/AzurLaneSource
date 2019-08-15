@@ -11,7 +11,7 @@ end
 ys.Battle.BattleJammingWave.DoWave = function (slot0)
 	slot0.super.DoWave(slot0)
 
-	if slot0.super.DoWave.Battle.BattleDataProxy:GetInstance().GetInitData(slot1).KizunaJamming and table.contains(slot3, slot0.JAMMING_ENGAGE) then
+	if slot0.super.DoWave.Battle.BattleDataProxy.GetInstance().GetInitData(slot1).KizunaJamming and table.contains(slot3, slot0.JAMMING_ENGAGE) then
 		slot1:KizunaJamming()
 	end
 

@@ -43,8 +43,8 @@ slot0.init = function (slot0)
 
 	SetActive(slot0._contribution, false)
 
-	slot0.UIMain = pg.UIMgr:GetInstance().UIMain
-	slot0.overlay = pg.UIMgr:GetInstance().OverlayMain
+	slot0.UIMain = pg.UIMgr.GetInstance().UIMain
+	slot0.overlay = pg.UIMgr.GetInstance().OverlayMain
 
 	LoadImageSpriteAsync("battlescore/grade_label_clear", slot0._gradeLabel, true)
 	SetActive(slot0._levelText, false)

@@ -36,19 +36,19 @@ ys.Battle.BattleBulletFactory.CreateBullet = function (slot0, slot1, slot2, slot
 end
 
 ys.Battle.BattleBulletFactory.GetSceneMediator = function (slot0)
-	return slot0.Battle.BattleState:GetInstance():GetSceneMediator()
+	return slot0.Battle.BattleState.GetInstance():GetSceneMediator()
 end
 
 ys.Battle.BattleBulletFactory.GetDataProxy = function (slot0)
-	return slot0.Battle.BattleDataProxy:GetInstance()
+	return slot0.Battle.BattleDataProxy.GetInstance()
 end
 
 ys.Battle.BattleBulletFactory.GetFXPool = function (slot0)
-	return slot0.Battle.BattleFXPool:GetInstance()
+	return slot0.Battle.BattleFXPool.GetInstance()
 end
 
 ys.Battle.BattleBulletFactory.GetBulletPool = function (slot0)
-	return slot0.Battle.BattleResourceManager:GetInstance()
+	return slot0.Battle.BattleResourceManager.GetInstance()
 end
 
 ys.Battle.BattleBulletFactory.OutRangeFunc = function (slot0)

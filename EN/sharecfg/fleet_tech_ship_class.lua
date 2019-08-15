@@ -392,6 +392,17 @@ pg.fleet_tech_ship_class = {
 			10708
 		}
 	},
+	[10705] = {
+		shiptype = 7,
+		name = "Essex-Class",
+		t_level = 8,
+		id = 10705,
+		t_level_1 = 31,
+		nation = 1,
+		ships = {
+			10709
+		}
+	},
 	[10801] = {
 		shiptype = 8,
 		name = "Gato-Class",
@@ -400,8 +411,9 @@ pg.fleet_tech_ship_class = {
 		t_level_1 = 32,
 		nation = 1,
 		ships = {
-			10801,
-			10803
+			10802,
+			10803,
+			10801
 		}
 	},
 	[11201] = {
@@ -1291,6 +1303,17 @@ pg.fleet_tech_ship_class = {
 			30706
 		}
 	},
+	[30706] = {
+		shiptype = 7,
+		name = "Taihou",
+		t_level = 9,
+		id = 30706,
+		t_level_1 = 108,
+		nation = 3,
+		ships = {
+			30707
+		}
+	},
 	[30801] = {
 		shiptype = 8,
 		name = "Type B1",
@@ -1576,6 +1599,17 @@ pg.fleet_tech_ship_class = {
 			80101
 		}
 	},
+	[80102] = {
+		shiptype = 1,
+		name = "L'Intrépide-Class",
+		t_level = 6,
+		id = 80102,
+		t_level_1 = 132,
+		nation = 8,
+		ships = {
+			80103
+		}
+	},
 	[80103] = {
 		shiptype = 1,
 		name = "L'Adroit-Class",
@@ -1685,6 +1719,7 @@ pg.fleet_tech_ship_class = {
 		10701,
 		10702,
 		10703,
+		10705,
 		10801,
 		11201,
 		20101,
@@ -1760,6 +1795,7 @@ pg.fleet_tech_ship_class = {
 		30703,
 		30704,
 		30705,
+		30706,
 		30801,
 		30802,
 		31201,
@@ -1784,6 +1820,7 @@ pg.fleet_tech_ship_class = {
 		50202,
 		70201,
 		80101,
+		80102,
 		80103,
 		80201,
 		80301,

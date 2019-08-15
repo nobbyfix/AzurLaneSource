@@ -75,7 +75,7 @@ return {
 							delay = 0,
 							moveCast = true,
 							corrdinate = {
-								15,
+								20,
 								0,
 								75
 							},
@@ -89,7 +89,7 @@ return {
 							delay = 0,
 							chance = 0.5,
 							corrdinate = {
-								20,
+								30,
 								0,
 								55
 							},
@@ -103,7 +103,7 @@ return {
 							delay = 0,
 							moveCast = true,
 							corrdinate = {
-								15,
+								20,
 								0,
 								35
 							},

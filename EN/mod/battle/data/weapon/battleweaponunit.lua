@@ -22,7 +22,7 @@ slot6.Ctor = function (slot0)
 
 	slot0._currentState = slot0.STATE_READY
 	slot0._equipmentIndex = -1
-	slot0._dataProxy = slot0.Battle.BattleDataProxy:GetInstance()
+	slot0._dataProxy = slot0.Battle.BattleDataProxy.GetInstance()
 	slot0._tempEmittersList = {}
 	slot0._reloadFacotrList = {}
 	slot0._diveEnabled = true
@@ -3484,8 +3484,8 @@ slot6.CheckAndShake = function (slot0)
 	if slot0._tmpData.shakescreen == 1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 5-19, warpins: 1 ---
-		slot0.Battle.BattleCameraUtil:GetInstance():StartShake(pg.shake_template[slot1.ShakeType.FIRE])
+		--- BLOCK #0 5-18, warpins: 1 ---
+		slot0.Battle.BattleCameraUtil.GetInstance():StartShake(pg.shake_template[slot1.ShakeType.FIRE])
 		--- END OF BLOCK #0 ---
 
 
@@ -3499,7 +3499,7 @@ slot6.CheckAndShake = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 20-20, warpins: 2 ---
+	--- BLOCK #1 19-19, warpins: 2 ---
 	return
 	--- END OF BLOCK #1 ---
 
