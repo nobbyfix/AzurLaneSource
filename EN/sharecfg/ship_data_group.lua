@@ -4324,7 +4324,7 @@ pg.ship_data_group = {
 	[106] = {
 		nationality = 2,
 		hide = 0,
-		trans_skin = 0,
+		trans_skin = 202039,
 		handbook_type = 0,
 		redirect_id = 101,
 		code = 106,
@@ -4332,8 +4332,17 @@ pg.ship_data_group = {
 		index_id = 126,
 		group_type = 20203,
 		trans_type = 2,
-		trans_radar_chart = {},
-		trans_skill = {},
+		trans_radar_chart = {
+			"B",
+			"A",
+			"E",
+			"B",
+			"C",
+			"C"
+		},
+		trans_skill = {
+			10710
+		},
 		description = {
 			{
 				"Honor medal exchange",

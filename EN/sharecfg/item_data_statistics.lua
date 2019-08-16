@@ -59508,19 +59508,19 @@ Skins and their drop rates:
 	},
 	[59956] = {
 		display = [[
-从如下换装中随机获得1件换装(如果该换装已拥有，则会转化为对应原价9折的钻石) 
-包含的换装和概率如下：
-（<color=#92fc63>8%</color>）桐换装  Music Pixy（<color=#92fc63>Live 2d</color>）；
-（<color=#92fc63>8%</color>）克利夫兰换装  骑士之夜（<color=#92fc63>Live 2d</color>）；
-（<color=#92fc63>8%</color>）鹩换装  毒苹果（<color=#92fc63>Live 2d</color>）；
-（<color=#92fc63>9.5%</color>）欧若拉换装  黎明的赞歌；
-（<color=#92fc63>9.5%</color>）伊丽莎白换装  女王的舞踏会；
-（<color=#92fc63>9.5%</color>）阿贾克斯换装  晚会女王；
-（<color=#92fc63>9.5%</color>）茗换装  黑猫来袭！；
-（<color=#92fc63>9.5%</color>）女将换装  小小的管弦乐队；
-（<color=#92fc63>9.5%</color>）南达科他换装  剧场上的独奏；
-（<color=#92fc63>9.5%</color>）U-81换装  静谧小夜曲；
-（<color=#92fc63>9.5%</color>）光辉换装  光辉的舞会；]],
+This lucky bag contains a random Ship skin listed below. (If you’ve received a ship skin that you already own, you will instead be given the corresponding skin's on sale value in Gems) 
+Skins and their drop rates:
+（<color=#92fc63>8%</color>）Fubuki  Music Pixy（<color=#92fc63>Live 2d</color>）；
+（<color=#92fc63>8%</color>）Cleveland  Gentry Knight（<color=#92fc63>Live 2d</color>）；
+（<color=#92fc63>8%</color>）Taihou  Farbidden Fruit（<color=#92fc63>Live 2d</color>）；
+（<color=#92fc63>9.5%</color>）Aurora  Dawn's Paean；
+（<color=#92fc63>9.5%</color>）Queen Elizabeth  The Queen's Ball；
+（<color=#92fc63>9.5%</color>）Ajax  Party Queen；
+（<color=#92fc63>9.5%</color>）Akashi  The Black Cat Cometh!；
+（<color=#92fc63>9.5%</color>）Amazon  Little Drchestra；
+（<color=#92fc63>9.5%</color>）South Dakota  Solo Concert；
+（<color=#92fc63>9.5%</color>）U-81  Soft Serenade；
+（<color=#92fc63>9.5%</color>）Illustrious  Illustrious Ball；]],
 		rarity = 4,
 		type = 98,
 		name = "Random 1st Anniversary Ship skin ",
