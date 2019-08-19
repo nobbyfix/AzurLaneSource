@@ -1009,6 +1009,17 @@ pg.fleet_tech_ship_class = {
 			30180
 		}
 	},
+	[30201] = {
+		shiptype = 2,
+		name = "Yuubari-Class",
+		t_level = 3,
+		id = 30201,
+		t_level_1 = 81,
+		nation = 3,
+		ships = {
+			30201
+		}
+	},
 	[30202] = {
 		shiptype = 2,
 		name = "Nagara-Class",
@@ -1770,6 +1781,7 @@ pg.fleet_tech_ship_class = {
 		30109,
 		30110,
 		30111,
+		30201,
 		30202,
 		30203,
 		30204,

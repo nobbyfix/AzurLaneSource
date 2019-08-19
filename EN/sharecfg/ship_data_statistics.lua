@@ -69801,7 +69801,7 @@ pg.ship_data_statistics = {
 		tag_list = {}
 	},
 	[203114] = {
-		name = "London.改",
+		name = "London Retrofit",
 		type = 3,
 		personality = 2,
 		oxy_max = 0,

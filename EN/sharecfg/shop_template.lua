@@ -3888,7 +3888,7 @@ pg.shop_template = {
 		limit_args = {
 			{
 				"time",
-				1
+				2
 			}
 		},
 		effect_args = {

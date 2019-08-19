@@ -1,10 +1,82 @@
 pg = pg or {}
 pg.word_legal_template = {
+	E = {
+		S = {
+			S = {
+				E = {
+					X = {
+						this = true
+					}
+				}
+			}
+		},
+		s = {
+			s = {
+				e = {
+					x = {
+						this = true
+					}
+				}
+			}
+		}
+	},
 	K = {
 		ö = {
 			l = {
 				n = {
 					this = true
+				}
+			}
+		}
+	},
+	M = {
+		A = {
+			S = {
+				S = {
+					A = {
+						C = {
+							H = {
+								U = {
+									S = {
+										E = {
+											T = {
+												T = {
+													S = {
+														this = true
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		a = {
+			s = {
+				s = {
+					a = {
+						c = {
+							h = {
+								u = {
+									s = {
+										e = {
+											t = {
+												t = {
+													s = {
+														this = true
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
