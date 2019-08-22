@@ -7505,7 +7505,7 @@ There are no Lectures on Sundays, but you will earn double the amount of Profici
 		key = "activity_switch_award_pool_failed"
 	},
 	shop_street_activity_tip = {
-		tip = "※<color=#A1E400FF>Gear Skins</color> are purchasable during(<color=#A1E400FF>04.26 – 05.15</COLOR>)!",
+		tip = "※<color=#A1E400FF>Gear Skins</color> are purchasable during(<color=#A1E400FF>08.22 – 09.04</COLOR>)!",
 		key = "shop_street_activity_tip"
 	},
 	twitter_link_title = {
