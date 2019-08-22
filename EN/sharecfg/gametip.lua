@@ -10712,45 +10712,15 @@ Would you like to change modes?]],
 		tip = {
 			{
 				info = [[
-During the event, you will be given 2 Game Tickets per day,
-up to a maximum of 14.
-Game Tickets let you play three minigames:
-Shooting Game, Fireworks Workshop, or Food Stalls.
- Your performance determines the possible prizes:
-First-tier Prize: Coins x150, Festival Food(?) x1
-Second-tier Prize: Coins x130, Festival Food(?) x1
-Third-tier Prize: Coins x110
-Booby Prize: Coins x100
-Get Juno’s limited outfit by collecting 14 stamps.
-Your remaining Game Tickets can be seen on the right.
-You can check your Stamp Collection by tapping the
-"Stamps" button.
-Playing minigames with Game Tickets will also increase 
-your number of Shrine Visits.
-Donating will grant one of three blessings.
+During the event, you will be given 2 Game Tickets per day,up to a maximum of 14.Game Tickets let you play three minigames:Shooting Game, Fireworks Workshop, or Food Stalls. Your performance determines the possible prizes: First-tier Prize: Coins x150, Festival Food(?) x1 Second-tier Prize: Coins x130, Festival Food(?) x1 Third-tier Prize: Coins x110 Booby Prize: Coins x100 Get Juno’s limited outfit by collecting 14 stamps.Your remaining Game Tickets can be seen on the right.You can check your Stamp Collection by tapping the "Stamps" button.Playing minigames with Game Tickets will also increase your number of Shrine Visits.Donating will grant one of three blessings.
 TIPS：
-1. Playing minigames without Game Tickets will not award
-prizes, stamps, or Shrine Visits.
-2. If you quit during a minigame, the Game Ticket will
-not be consumed, but you will not gain any prizes.]]
+1. Playing minigames without Game Tickets will not award prizes, stamps, or Shrine Visits.
+2. If you quit during a minigame, the Game Ticket will not be consumed, but you will not gain any prizes.]]
 			}
 		}
 	},
 	help_firework_produce = {
-		tip = [[
-Press the 
-Start
- button to begin filling the fireworks. The Fill Gauge will continuously move. There will be three Fill attempts - press the button at the appropriate time on each attempt to finish filling the fireworks.
-The total Fill amount can be seen on the horizontal
-bar at the right-hand side of the screen.
-Prizes are given depending on total fill amount:
-First-tier prize:
-<color=#c80a00>140%-160%</color>
-Second-tier prize:
-<color=#e66f00>120%-140% 160-180%</color>
-Third-tier prize:
-<color=#ffea01>90-120% 180-210%</color>
-All other fill amounts will result in a booby prize.]],
+		tip = "Press the Start button to begin filling the fireworks. The Fill Gauge will continuously move. There will be three Fill attempts - press the button at the appropriate time on each attempt to finish filling the fireworks.The total Fill amount can be seen on the horizontal bar at the right-hand side of the screen.Prizes are given depending on total fill amount: First-tier prize: <color=#c80a00>140%-160%</color> Second-tier prize: <color=#e66f00>120%-140% 160-180%</color>Third-tier prize: <color=#ffea01>90-120% 180-210%</color>All other fill amounts will result in a booby prize.",
 		key = "help_firework_produce"
 	},
 	help_firework = {
@@ -10759,29 +10729,13 @@ All other fill amounts will result in a booby prize.]],
 			{
 				info = [[
 <size=31><color=#92fc63>TIPS:
-You can play the minigame without a Game Ticket
-but will not earn any prizes.</color></size>
-How to make fireworks:
+You can play the minigame without a Game Ticket but will not earn any prizes.</color></size>How to make fireworks:
 1. Press "Start" to begin configuring the fireworks.
-2. Fireworks are made up of three components-
-Inner, Middle, and Outer layers. Click on the colored
-Element Balls to add them to the fireworks.
-The chosen elements change the fireworks’ colors.
-You can swap an already selected element for another,
-clear the slot, or swap with another layer.
-3. When all three layers have been selected,
-Click "Start" to begin filling the fireworks.
-A Game Ticket will be used to begin filling.
-You can earn a stamp depending on your performance.
-4. After successfully filling fireworks 3 times, you can
-click the "Launch Fireworks" button next to the Fireworks
-Workshop in the Summer Festival Screen to use the
-fireworks you most recently produced.
-5. The fireworks will continue to launch until you enter
-another interface or leave the Summer Festival screen.
-you can click the button again to launch them again.
-6. If you wish to change the fireworks configuration,
-you will need to use the Fireworks Workshop again.]]
+2. Fireworks are made up of three components-Inner, Middle, and Outer layers. Click on the colored Element Balls to add them to the fireworks.The chosen elements change the fireworks’ colors.You can swap an already selected element for another,clear the slot, or swap with another layer.
+3. When all three layers have been selected,Click "Start" to begin filling the fireworks.A Game Ticket will be used to begin filling.You can earn a stamp depending on your performance.
+4. After successfully filling fireworks 3 times, you can click the "Launch Fireworks" button next to the Fireworks Workshop in the Summer Festival Screen to use the fireworks you most recently produced.
+5. The fireworks will continue to launch until you enter another interface or leave the Summer Festival screen.You can click the button again to launch them again.
+6. If you wish to change the fireworks configuration,you will need to use the Fireworks Workshop again.]]
 			}
 		}
 	},
@@ -10791,25 +10745,11 @@ you will need to use the Fireworks Workshop again.]]
 			{
 				info = [[
 <size=31><color=#92fc63>TIPS:
-Making a Donation when you have no Visits will still
-consume resources but grant no blessing effects.</color></size>
-1. Earn Shrine Visits by using Game Tickets to play
-any of the three minigames.
-2. As long as you have Shrine Visits, you can make a
-Donation of 5 coins to choose one of these blessings:
-Academic Achievement: reduces training time in the
-Tactical Class.
-Career Success: Deal more damage while sortieing in
-a Campaign, Hard Mode, or War Archives map.
-Blissful Courtship: Your secretary gains affection faster.
-These blessings last for one day.
-3. Gaining the Academic Achievement blessing will
-not reduce the time of any in-progress training.
-When the blessing expires, it will also not increase
-the time of any in-progress training.
-4. If you acquire a new blessing while one is already
-in effect, the new blessing will replace the existing
-one and reset the duration.
+Making a Donation when you have no Visits will still consume resources but grant no blessing effects.</color></size>
+1. Earn Shrine Visits by using Game Tickets to play any of the three minigames.
+2. As long as you have Shrine Visits, you can make a Donation of 5 coins to choose one of these blessings: Academic Achievement: reduces training time in the Tactical Class. Career Success: Deal more damage while sortieing in a Campaign, Hard Mode, or War Archives map.Blissful Courtship: Your secretary gains affection faster.These blessings last for one day.
+3. Gaining the Academic Achievement blessing will not reduce the time of any in-progress training.When the blessing expires, it will also not increase the time of any in-progress training.
+4. If you acquire a new blessing while one is already in effect, the new blessing will replace the existing one and reset the duration.
 5. Only one blessing may be active at a time.]]
 			}
 		}
@@ -10820,38 +10760,13 @@ one and reset the duration.
 			{
 				info = [[
 <size=31><color=#92fc63>TIPS:
-You can play the minigame without a Game Ticket
-but will not earn any prizes.</color></size>
-1. Press "Order" to begin the game. The desired food
-will appear above the character’s head on the left-hand
-side of the screen. After five seconds, the desired food
-will disappear, so the player needs to remember it.
-Select the three foods desired by the character within
-ten seconds.
-2. The desired foods must be selected in the order that
-they appeared over the character’s head, from left to right.
-3. Press the icon corresponding to the food to select it,
-and press it again to de-select it.
-The order will automatically be submitted after
-selecting three food items.
-4. If there is time left over, the three selected foods
-will enter the assessment panel. Correctly-selected
-food will increase the remaining time. You can choose
-to continue the game, or retire. Extra time earned and
-scoring are as below:
-3 correct food chosen: +5 seconds, +5 points
-2 correct food chosen: +2 seconds, +2 points
-1 correct food chosen: +1 second, +1 point
-0 correct food chosen: +0 seconds, +0 points
-5. If you choose to continue, you will retain your countdown
-and points and continue to select the three desired food
-items of the character on the left.
-6. If you retire or the countdown expires, a Game Ticket
-will be consumed and the following prizes awarded:
-20 points or more: First-tier prize
-12-19 points: Second-tier prize
-5-11 points: Third-tier prize
-Fewer than 5 points: Booby prize]]
+You can play the minigame without a Game Ticket but will not earn any prizes.</color></size>
+1. Press "Order" to begin the game. The desired food will appear above the character’s head on the left-hand side of the screen. After five seconds, the desired food will disappear, so the player needs to remember it.Select the three foods desired by the character within ten seconds.
+2. The desired foods must be selected in the order that they appeared over the character’s head, from left to right.
+3. Press the icon corresponding to the food to select it,and press it again to de-select it.The order will automatically be submitted after selecting three food items.
+4. If there is time left over, the three selected foods will enter the assessment panel. Correctly-selected food will increase the remaining time. You can choose to continue the game, or retire. Extra time earned and scoring are as below:3 correct food chosen: +5 seconds, +5 points 2 correct food chosen: +2 seconds, +2 points 1 correct food chosen: +1 second, +1 point 0 correct food chosen: +0 seconds, +0 points
+5. If you choose to continue, you will retain your countdown and points and continue to select the three desired food items of the character on the left.
+6. If you retire or the countdown expires, a Game Ticket will be consumed and the following prizes awarded:20 points or more: First-tier prize 12-19 points: Second-tier prize 5-11 points: Third-tier prize Fewer than 5 points: Booby prize]]
 			}
 		}
 	},
@@ -10861,20 +10776,12 @@ Fewer than 5 points: Booby prize]]
 			{
 				info = [[
 <size=31><color=#92fc63>TIPS：
-You can play the minigame without a Game Ticket
-but will not earn any prizes.</color></size>
-1.Press "Start" to begin the game. 12 Siren targets will appear across 18 possible spaces,
-use the movement and fire buttons to shoot the targets before the countdown ends.
-Different targets have different point values.
+You can play the minigame without a Game Ticket but will not earn any prizes.</color></size>
+1.Press "Start" to begin the game. 12 Siren targets will appear across 18 possible spaces,use the movement and fire buttons to shoot the targets before the countdown ends.Different targets have different point values.
 2.Values are marked to the right of the game field.
-3.Fire with the crosshair over the target's portrait to register a hit.
-There is a one second cooldown between shots.
+3.Fire with the crosshair over the target's portrait to register a hit.There is a one second cooldown between shots.
 4.After you hit a target, it will disappear and the remaining targets will shuffle themselves.
-5.The minigame's countdown runs 12 seconds, at which point the game will end and your points will be tallied.
-The minigame will then consume your Game Ticket and award a Stamp. You will also earn one of the following prizes:# points or more: First-tier prize
-25-34 points: Second-tier prize
-10-24 points: Third-tier prize
-Fewer than 10 points: Booby prize]]
+5.The minigame's countdown runs 12 seconds, at which point the game will end and your points will be tallied.The minigame will then consume your Game Ticket and award a Stamp. You will also earn one of the following prizes:35 points or more: First-tier prize 25-34 points: Second-tier prize 10-24 points: Third-tier prize Fewer than 10 points: Booby prize]]
 			}
 		}
 	},
@@ -10882,13 +10789,7 @@ Fewer than 10 points: Booby prize]]
 		key = "help_summer_stamp",
 		tip = {
 			{
-				info = [[
-Use Game Tickets to play minigames
-in order to earn stamps.
-Stamps earned are displayed in the "Stamps" booklet.
-When 14 stamps have been collected,
-click on the button on the left-hand side of the
-booklet to get Juno’s limited outfit.]]
+				info = "Use Game Tickets to play minigames in order to earn stamps.Stamps earned are displayed in the \"Stamps\" booklet.When 14 stamps have been collected,click on the button on the left-hand side of the booklet to get Juno’s limited outfit."
 			}
 		}
 	},
