@@ -24,7 +24,7 @@ ys.Battle.BattleEffectComponent.Dispose = function (slot0)
 end
 
 ys.Battle.BattleEffectComponent.GetFXPool = function (slot0)
-	return slot0.Battle.BattleFXPool:GetInstance()
+	return slot0.Battle.BattleFXPool.GetInstance()
 end
 
 ys.Battle.BattleEffectComponent.SetUnitDataEvent = function (slot0, slot1)

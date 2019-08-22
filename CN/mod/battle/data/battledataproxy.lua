@@ -47,6 +47,9 @@ slot8.TirggerBattleStartBuffs = function (slot0)
 			underscore.each(slot0._battleInitData.ChapterBuffIDs or {}, function (slot0)
 				slot1:AddBuff(slot0.Battle.BattleBuffUnit.New(slot0))
 			end)
+			underscore.each(slot0._battleInitData.GlobalBuffIDs or {}, function (slot0)
+				slot1:AddBuff(slot0.Battle.BattleBuffUnit.New(slot0))
+			end)
 			slot15:TriggerBuff(slot1.BuffEffectType.ON_START_GAME)
 
 			if slot15 == slot7 then
@@ -144,7 +147,7 @@ slot8.InitData = function (slot0, slot1)
 	slot0:InitStageData()
 
 	slot0._cldSystem = slot3.Battle.BattleCldSystem.New(slot0)
-	slot0._cameraUtil = slot3.Battle.BattleCameraUtil:GetInstance()
+	slot0._cameraUtil = slot3.Battle.BattleCameraUtil.GetInstance()
 end
 
 slot8.initCommanderBuff = function (slot0)

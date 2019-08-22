@@ -176,13 +176,13 @@ table.eachAsync = function (slot0, slot1)
 		return
 	end
 
-	slot2, slot3, slot4 = ipairs()
+	slot2, slot3, slot4 = ipairs(slot0)
 	slot5 = nil
 
 	function slot5()
 		slot0 = slot1(slot2, slot1)
 
-		if not slot2[] then
+		if slot2[] ~= nil then
 			return
 		end
 
@@ -190,11 +190,56 @@ table.eachAsync = function (slot0, slot1)
 	end
 end
 
+table.eachParalle = function (slot0, slot1, slot2)
+	if type(slot0) ~= "table" then
+		return
+	end
+
+	slot8, slot9, slot10 = ipairs(slot0)
+	slot6 = {
+		0,
+		0,
+		0
+	}
+
+	function slot7()
+		if slot0[3] > 0 then
+			return
+		end
+
+		slot0[2] = slot0[2] + 1
+
+		if slot0[2] < slot0[1] then
+			return
+		end
+
+		slot0[3] = 
+		-- Decompilation error in this vicinity:
+		1
+
+
+		-- Decompilation error in this vicinity:
+		1()
+	end
+
+	slot8 = slot3(slot4, slot5)
+
+	while slot8 ~= nil do
+		slot6[1] = slot6[1] + 1
+
+		slot1(slot8, slot7)
+
+		slot8 = slot4[slot3(slot4, slot5)]
+	end
+end
+
 table.getCount = function (slot0)
 	slot1 = 0
+	slot2 = nil
 
-	for slot5, slot6 in pairs(slot0) do
+	while next(slot0, slot2) do
 		slot1 = slot1 + 1
+		slot2 = next(slot0, slot2)
 	end
 
 	return slot1

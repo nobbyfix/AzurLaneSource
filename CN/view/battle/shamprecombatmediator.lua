@@ -465,9 +465,8 @@ function slot1(slot0)
 	if not slot2 then
 		slot2 = pg
 		slot2 = slot2.TipsMgr
-		slot3 = slot2
 		slot2 = slot2.GetInstance
-		slot2 = slot2(slot3)
+		slot2 = slot2()
 		slot3 = slot2
 		slot2 = slot2.ShowTips
 		slot4 = i18n
@@ -482,9 +481,8 @@ function slot1(slot0)
 		if not slot2 then
 			slot2 = pg
 			slot2 = slot2.TipsMgr
-			slot3 = slot2
 			slot2 = slot2.GetInstance
-			slot2 = slot2(slot3)
+			slot2 = slot2()
 			slot3 = slot2
 			slot2 = slot2.ShowTips
 			slot4 = i18n
@@ -500,9 +498,8 @@ function slot1(slot0)
 			if not slot2 then
 				slot2 = pg
 				slot2 = slot2.TipsMgr
-				slot3 = slot2
 				slot2 = slot2.GetInstance
-				slot2 = slot2(slot3)
+				slot2 = slot2()
 				slot3 = slot2
 				slot2 = slot2.ShowTips
 				slot4 = i18n
@@ -650,7 +647,7 @@ function slot1(slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #15 83-99, warpins: 1 ---
+					--- BLOCK #15 80-96, warpins: 1 ---
 					slot3 = _
 					slot3 = slot3.keys
 					slot5 = slot1
@@ -669,7 +666,7 @@ function slot1(slot0)
 					if slot7 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #16 100-107, warpins: 1 ---
+						--- BLOCK #16 97-104, warpins: 1 ---
 						slot8 = getProxy
 						slot9 = PlayerProxy
 						slot8 = slot8(slot9)
@@ -685,11 +682,11 @@ function slot1(slot0)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #17 108-120, warpins: 0 ---
+						--- BLOCK #17 105-117, warpins: 0 ---
 						for slot13, slot14 in slot10, slot11, slot12 do
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 108-110, warpins: 1 ---
+							--- BLOCK #0 105-107, warpins: 1 ---
 							slot15 = slot14.ship
 							--- END OF BLOCK #0 ---
 
@@ -702,7 +699,7 @@ function slot1(slot0)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #1 111-115, warpins: 1 ---
+							--- BLOCK #1 108-112, warpins: 1 ---
 							slot15 = slot14.ship
 							slot15 = slot15.id
 							slot16 = slot7.id
@@ -717,7 +714,7 @@ function slot1(slot0)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #2 116-118, warpins: 1 ---
+							--- BLOCK #2 113-115, warpins: 1 ---
 							slot5 = slot13
 							slot6 = slot7.id
 
@@ -728,7 +725,7 @@ function slot1(slot0)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #3 119-119, warpins: 1 ---
+							--- BLOCK #3 116-116, warpins: 1 ---
 							break
 							--- END OF BLOCK #3 ---
 
@@ -737,7 +734,7 @@ function slot1(slot0)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #4 119-120, warpins: 3 ---
+							--- BLOCK #4 116-117, warpins: 3 ---
 							--- END OF BLOCK #4 ---
 
 
@@ -756,7 +753,7 @@ function slot1(slot0)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #18 121-124, warpins: 3 ---
+					--- BLOCK #18 118-121, warpins: 3 ---
 					function slot8()
 
 						-- Decompilation error in this vicinity:
@@ -792,7 +789,7 @@ function slot1(slot0)
 					if slot5 > slot9 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #19 125-127, warpins: 1 ---
+						--- BLOCK #19 122-124, warpins: 1 ---
 						slot9 = slot8
 
 						slot9()
@@ -803,7 +800,7 @@ function slot1(slot0)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #20 128-140, warpins: 1 ---
+						--- BLOCK #20 125-137, warpins: 1 ---
 						slot9 = pg
 						slot9 = slot9.MsgboxMgr
 						slot9 = slot9.GetInstance
@@ -832,7 +829,7 @@ function slot1(slot0)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #21 141-141, warpins: 2 ---
+					--- BLOCK #21 138-138, warpins: 2 ---
 					--- END OF BLOCK #21 ---
 
 
@@ -2049,12 +2046,11 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #9 44-63, warpins: 1 ---
+		--- BLOCK #9 44-62, warpins: 1 ---
 		slot5 = pg
 		slot5 = slot5.TipsMgr
-		slot6 = slot5
 		slot5 = slot5.GetInstance
-		slot5 = slot5(slot6)
+		slot5 = slot5()
 		slot6 = slot5
 		slot5 = slot5.ShowTips
 		slot7 = i18n
@@ -2077,7 +2073,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #10 64-70, warpins: 2 ---
+		--- BLOCK #10 63-69, warpins: 2 ---
 		slot5 = slot3
 		slot6 = slot5
 		slot5 = slot5.removeShip
@@ -2093,7 +2089,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #11 71-73, warpins: 1 ---
+		--- BLOCK #11 70-72, warpins: 1 ---
 		slot4 = slot2
 		--- END OF BLOCK #11 ---
 
@@ -2106,7 +2102,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #12 74-80, warpins: 1 ---
+		--- BLOCK #12 73-79, warpins: 1 ---
 		slot4 = slot3
 		slot5 = slot4
 		slot4 = slot4.containsShip
@@ -2123,7 +2119,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #13 81-88, warpins: 1 ---
+		--- BLOCK #13 80-87, warpins: 1 ---
 		slot4 = slot3
 		slot5 = slot4
 		slot4 = slot4.switchShip
@@ -2140,7 +2136,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #14 89-102, warpins: 1 ---
+		--- BLOCK #14 88-101, warpins: 1 ---
 		slot4 = slot3
 		slot5 = slot4
 		slot4 = slot4.replaceShip
@@ -2163,7 +2159,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #15 103-114, warpins: 1 ---
+		--- BLOCK #15 102-113, warpins: 1 ---
 		slot4 = slot3
 		slot5 = slot4
 		slot4 = slot4.addShip
@@ -2184,7 +2180,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #16 115-117, warpins: 1 ---
+		--- BLOCK #16 114-116, warpins: 1 ---
 		slot2 = slot0
 		--- END OF BLOCK #16 ---
 
@@ -2197,7 +2193,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #17 118-121, warpins: 1 ---
+		--- BLOCK #17 117-120, warpins: 1 ---
 		slot2 = slot1
 		slot2 = slot2.active
 		--- END OF BLOCK #17 ---
@@ -2211,7 +2207,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #18 122-144, warpins: 1 ---
+		--- BLOCK #18 121-143, warpins: 1 ---
 		slot2 = {}
 		slot3 = _
 		slot3 = slot3.each
@@ -2307,7 +2303,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #19 145-147, warpins: 1 ---
+		--- BLOCK #19 144-146, warpins: 1 ---
 		slot2 = slot0
 		--- END OF BLOCK #19 ---
 
@@ -2320,7 +2316,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #20 148-151, warpins: 1 ---
+		--- BLOCK #20 147-150, warpins: 1 ---
 		slot2 = slot1
 		slot2 = slot2.active
 		--- END OF BLOCK #20 ---
@@ -2334,7 +2330,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #21 152-163, warpins: 1 ---
+		--- BLOCK #21 151-162, warpins: 1 ---
 		slot2 = slot1
 		slot3 = slot2
 		slot2 = slot2.getFriendShip
@@ -2354,11 +2350,11 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #22 164-182, warpins: 0 ---
+		--- BLOCK #22 163-181, warpins: 0 ---
 		for slot9, slot10 in slot6, slot7, slot8 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 164-166, warpins: 1 ---
+			--- BLOCK #0 163-165, warpins: 1 ---
 			slot11 = slot10.ship
 			--- END OF BLOCK #0 ---
 
@@ -2371,7 +2367,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 167-171, warpins: 1 ---
+			--- BLOCK #1 166-170, warpins: 1 ---
 			slot11 = slot10.ship
 			slot11 = slot11.id
 			slot12 = slot0[1]
@@ -2386,7 +2382,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 172-180, warpins: 1 ---
+			--- BLOCK #2 171-179, warpins: 1 ---
 			slot11 = Clone
 			slot12 = slot10.ship
 			slot11 = slot11(slot12)
@@ -2403,7 +2399,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 181-181, warpins: 1 ---
+			--- BLOCK #3 180-180, warpins: 1 ---
 			break
 			--- END OF BLOCK #3 ---
 
@@ -2412,7 +2408,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #4 181-182, warpins: 3 ---
+			--- BLOCK #4 180-181, warpins: 3 ---
 			--- END OF BLOCK #4 ---
 
 
@@ -2426,7 +2422,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #23 183-189, warpins: 2 ---
+		--- BLOCK #23 182-188, warpins: 2 ---
 		slot6 = slot1
 		slot7 = slot6
 		slot6 = slot6.updateFriendShip
@@ -2445,7 +2441,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #24 190-196, warpins: 1 ---
+		--- BLOCK #24 189-195, warpins: 1 ---
 		slot6 = slot3
 		slot7 = slot6
 		slot6 = slot6.containsShip
@@ -2462,7 +2458,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #25 197-198, warpins: 1 ---
+		--- BLOCK #25 196-197, warpins: 1 ---
 		--- END OF BLOCK #25 ---
 
 		slot3 = if slot3 then
@@ -2474,7 +2470,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #26 199-211, warpins: 1 ---
+		--- BLOCK #26 198-210, warpins: 1 ---
 		slot6 = slot3
 		slot7 = slot6
 		slot6 = slot6.replaceShip
@@ -2496,7 +2492,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #27 212-216, warpins: 1 ---
+		--- BLOCK #27 211-215, warpins: 1 ---
 		slot6 = slot3
 		slot7 = slot6
 		slot6 = slot6.removeShip
@@ -2511,7 +2507,7 @@ function slot1(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #28 217-217, warpins: 14 ---
+		--- BLOCK #28 216-216, warpins: 14 ---
 		return
 		--- END OF BLOCK #28 ---
 

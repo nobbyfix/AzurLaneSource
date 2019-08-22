@@ -309,7 +309,7 @@ slot2.DoResult = function (slot0)
 end
 
 slot2.ExitBattle = function (slot0)
-	slot0.Battle.BattleCameraUtil:GetInstance():Clear()
+	slot0.Battle.BattleCameraUtil.GetInstance():Clear()
 
 	for slot4, slot5 in pairs(slot0._mediatorList) do
 		slot0:RemoveMediator(slot5)
@@ -326,7 +326,7 @@ slot2.ExitBattle = function (slot0)
 	slot0.Battle.BattleConfig.BASIC_TIME_SCALE = 1
 
 	slot0:RemoveAllTimer()
-	slot0.Battle.BattleResourceManager:GetInstance():Clear()
+	slot0.Battle.BattleResourceManager.GetInstance():Clear()
 
 	slot0._takeoverProcess = nil
 
@@ -358,7 +358,7 @@ end
 slot2.disableCommon = function (slot0)
 	slot0._weaponCommand:ActiveBot(false)
 	slot0:ScaleTimer()
-	slot0.Battle.BattleCameraUtil:GetInstance():ResetFocus()
+	slot0.Battle.BattleCameraUtil.GetInstance():ResetFocus()
 	slot0:ChangeState(slot1.BATTLE_STATE_REPORT)
 	slot0._dataProxy:ClearAirFighterTimer()
 	slot0._dataProxy:KillAllAircraft()

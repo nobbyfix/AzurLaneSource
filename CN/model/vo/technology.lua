@@ -37,7 +37,7 @@ slot0.isFinished = function (slot0)
 		return false
 	end
 
-	slot1 = pg.TimeMgr:GetInstance():GetServerTime()
+	slot1 = pg.TimeMgr.GetInstance():GetServerTime()
 
 	if not slot0:hasCondition() then
 		return slot0.time <= slot1

@@ -141,7 +141,7 @@ slot0.isPaper = function (slot0)
 end
 
 slot0.inTime = function (slot0)
-	return pg.TimeMgr:GetInstance():inTime(slot0:getConfig("time"))
+	return pg.TimeMgr.GetInstance():inTime(slot0:getConfig("time"))
 end
 
 slot0.isTimeLimit = function (slot0)

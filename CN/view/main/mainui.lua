@@ -128,6 +128,7 @@ slot0.init = function (slot0)
 	slot0._ActivityBtns = slot0:findTF("linkBtns", slot0._rightPanel)
 	slot0._activitySummaryBtn = slot0:findTF("activityButton", slot0._ActivityBtns)
 	slot0._activityMapBtn = slot0:findTF("activity_map_btn", slot0._ActivityBtns)
+	slot0._activityMiniGameBtn = slot0:findTF("activity_minigame", slot0._ActivityBtns)
 	slot0._acitivtyEscortBtn = slot0:findTF("activity_escort", slot0._ActivityBtns)
 	slot0._bottomPanel = slot0:findTF("toTop/frame/bottomPanel")
 	slot0._dockBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/dockBtn")
@@ -159,7 +160,7 @@ slot0.init = function (slot0)
 	slot0._commanderInfoBtn = slot0:findTF("top/iconBack", slot0._commanderPanel)
 	slot0._nameLabel = slot0:findTF("top/playerInfoBg2/playerInfoBg/nameLabel", slot0._commanderPanel)
 	slot0._levelLabel = slot0:findTF("top/playerInfoBg2/playerInfoBg/levelLabel", slot0._commanderPanel)
-	slot0._expBar = slot0:findTF("top/playerInfoBg2/playerInfoBg/expArea/expBar", slot0._commanderPanel):GetComponent(typeof(Slider))
+	slot0._expBar = slot0:findTF("top/playerInfoBg2/playerInfoBg/expArea", slot0._commanderPanel):GetComponent(typeof(Slider))
 	slot0._icon = slot0:findTF("top/iconBack/icon", slot0._commanderPanel)
 	slot0._buffList = slot0:findTF("buffList", slot0._commanderPanel)
 	slot0._buffTpl = slot0:findTF("buff", slot0._buffList)
@@ -231,14 +232,14 @@ slot0.uiEnterAnim = function (slot0)
 		slot0:updateFlagShip(slot0.tempFlagShip)
 	end
 
-	setAnchoredPosition(slot0._bottomPanel, Vector3(0, -128, 0))
-	setAnchoredPosition(slot0._btmbg, Vector3(0, -128, 0))
-	setAnchoredPosition(slot0._commanderPanel, Vector3(0, 141, 0))
-	setAnchoredPosition(slot0._commanderPanelbg, Vector3(0, 141, 0))
-	setAnchoredPosition(slot0._leftPanel, Vector3(-222, 0, 0))
-	setAnchoredPosition(slot0._rightPanel, Vector3(847, 0, 0))
-	setAnchoredPosition(slot0._rightTopPanel, Vector3(847, 0, 0))
-	setAnchoredPosition(slot0._playerResOb, Vector3(0, 77, 0))
+	setAnchoredPosition(slot0._bottomPanel, Vector2(0, -128))
+	setAnchoredPosition(slot0._btmbg, Vector2(0, -128))
+	setAnchoredPosition(slot0._commanderPanel, Vector2(0, 141))
+	setAnchoredPosition(slot0._commanderPanelbg, Vector2(0, 141))
+	setAnchoredPosition(slot0._leftPanel, Vector2(-222, 0))
+	setAnchoredPosition(slot0._rightPanel, Vector2(847, 0))
+	setAnchoredPosition(slot0._rightTopPanel, Vector2(847, 0))
+	setAnchoredPosition(slot0._playerResOb, Vector2(0, 77))
 	slot0:ejectGimmick(slot0._bottomPanel, slot0.REVERT_VERTICAL, slot0.EJECT_DURATION_ENTER, nil, {
 		0,
 		1
@@ -299,13 +300,13 @@ slot0.openSecondaryPanel = function (slot0, slot1)
 
 			slot0._secondaryPanel:SetParent(slot0._tf, false)
 
-			if not pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0._player.level, "CommandRoomMediator") then
+			if not pg.SystemOpenMgr.GetInstance():isOpenSystem(slot0._player.level, "CommandRoomMediator") then
 				slot0._commanderBtn:GetComponent(typeof(Image)).color = Color(0.3, 0.3, 0.3, 1)
 			else
 				slot0._commanderBtn:GetComponent(typeof(Image)).color = Color(1, 1, 1, 1)
 			end
 
-			if not pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0._player.level, "BackYardMediator") then
+			if not pg.SystemOpenMgr.GetInstance():isOpenSystem(slot0._player.level, "BackYardMediator") then
 				slot0._haremBtn:GetComponent(typeof(Image)).color = Color(0.3, 0.3, 0.3, 1)
 			else
 				slot0._haremBtn:GetComponent(typeof(Image)).color = Color(1, 1, 1, 1)
@@ -423,10 +424,18 @@ slot0.didEnter = function (slot0)
 		slot0:switchForm(slot1.STATE_ALL_HIDE)
 	end, SFX_MAIN)
 	onButton(slot0, slot0._cameraBtn, function ()
-		slot0(slot0, MainUIMediator.OPEN_SNAPSHOT, {
-			skinId = slot0.flagShip.skinId,
-			live2d = slot0.live2dChar ~= nil
-		})
+		if CheckPermissionGranted(ANDROID_CAMERA_PERMISSION) then
+			slot0:openSnapShot()
+		else
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				content = i18n("apply_permission_camera_tip1"),
+				onYes = function ()
+					ApplyPermission({
+						ANDROID_CAMERA_PERMISSION
+					})
+				end
+			})
+		end
 	end, SFX_MAIN)
 	onButton(slot0, slot0._mallBtn, function ()
 		slot0:emit(MainUIMediator.GO_MALL)
@@ -457,7 +466,7 @@ slot0.didEnter = function (slot0)
 		slot0:emit(MainUIMediator.OPEN_COLLECT_SHIP)
 	end, SFX_UI_MENU)
 
-	if not pg.SystemOpenMgr:GetInstance():isOpenSystem(slot0._player.level, "NewGuildMediator") then
+	if not pg.SystemOpenMgr.GetInstance():isOpenSystem(slot0._player.level, "NewGuildMediator") then
 		setActive(slot0:findTF("lock", slot0._guildButton), true)
 
 		slot0._guildButton:GetComponent(typeof(Image)).color = Color(0.3, 0.3, 0.3, 1)
@@ -572,6 +581,13 @@ slot0.didEnter = function (slot0)
 	slot0:paintMove(slot0.PAINT_DEFAULT_POS_X, "mainNormal", false, 0)
 end
 
+slot0.openSnapShot = function (slot0)
+	slot0:emit(MainUIMediator.OPEN_SNAPSHOT, {
+		skinId = slot0.flagShip.skinId,
+		live2d = slot0.Live2dChar ~= nil
+	})
+end
+
 slot0.updateMonopolyBtn = function (slot0, slot1)
 	setActive(slot0._monopolyBtn, slot1 and not slot1:isEnd())
 
@@ -604,7 +620,7 @@ slot0.onBackPressed = function (slot0)
 	if slot0._currentState == slot0.STATE_ALL_HIDE then
 		slot0:switchForm(slot0.STATE_MAIN)
 	else
-		BilibiliSdkMgr.inst:onBackPressed()
+		pg.SdkMgr.GetInstance():OnAndoridBackPress()
 		pg.PushNotificationMgr.GetInstance():PushAll()
 	end
 end
@@ -636,6 +652,26 @@ slot0.updateActivityEscort = function (slot0)
 		onButton(slot0, slot0._acitivtyEscortBtn, function ()
 			slot0:emit(MainUIMediator.OPEN_ESCORT)
 		end)
+	end
+end
+
+slot0.updateActivityMiniGameBtn = function (slot0, slot1)
+	setActive(slot0._activityMiniGameBtn, slot1 and not slot1:isEnd())
+
+	if slot1 and not slot1.isEnd() then
+		slot4 = getProxy(MiniGameProxy):GetHubByHubId(slot3)
+
+		setText(slot0._activityMiniGameBtn:Find("tip/Text"), (slot4:getConfig("reward_need") <= slot4.usedtime and slot4.ultimate == 0 and "!") or slot4.count)
+		setActive(slot7.parent, slot4.count > 0 or (slot4.getConfig("reward_need") <= slot4.usedtime and slot4.ultimate == 0))
+		onButton(slot0, slot0._activityMiniGameBtn, function ()
+			if not pg.StoryMgr:IsPlayed("TIANHOUYUYI1") then
+				pg.StoryMgr.GetInstance():Play("TIANHOUYUYI1", function ()
+					pg.m02:sendNotification(GAME.GO_SCENE, SCENE.SUMMER_FEAST)
+				end, true)
+			else
+				pg.m02:sendNotification(GAME.GO_SCENE, SCENE.SUMMER_FEAST)
+			end
+		end, SFX_PANEL)
 	end
 end
 
@@ -1101,13 +1137,13 @@ slot0.displayShipWord = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #9 193-209, warpins: 3 ---
-	slot12 = pg.StoryMgr:GetInstance():isActive()
+	--- BLOCK #9 193-208, warpins: 3 ---
+	slot12 = pg.StoryMgr.GetInstance():isActive()
 
 	if getProxy(ContextProxy):getContextByMediator(NewShipMediator) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 210-210, warpins: 1 ---
+		--- BLOCK #0 209-209, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
 
@@ -1115,11 +1151,11 @@ slot0.displayShipWord = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 211-212, warpins: 1 ---
+		--- BLOCK #0 210-211, warpins: 1 ---
 		if slot5 and not slot12 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 215-218, warpins: 1 ---
+			--- BLOCK #0 214-217, warpins: 1 ---
 			function slot13()
 
 				-- Decompilation error in this vicinity:
@@ -1250,7 +1286,7 @@ slot0.displayShipWord = function (slot0, slot1)
 			if slot0.loadedCVBankName then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 219-221, warpins: 1 ---
+				--- BLOCK #0 218-220, warpins: 1 ---
 				slot13()
 				--- END OF BLOCK #0 ---
 
@@ -1259,7 +1295,7 @@ slot0.displayShipWord = function (slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 222-236, warpins: 1 ---
+				--- BLOCK #0 221-235, warpins: 1 ---
 				pg.CriMgr:LoadCV(Ship.getCVKeyID(slot0.flagShip.skinId), function ()
 
 					-- Decompilation error in this vicinity:
@@ -1355,7 +1391,7 @@ slot0.displayShipWord = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 237-237, warpins: 2 ---
+			--- BLOCK #1 236-236, warpins: 2 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -1363,11 +1399,11 @@ slot0.displayShipWord = function (slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 238-239, warpins: 2 ---
+			--- BLOCK #0 237-238, warpins: 2 ---
 			if slot4 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 240-242, warpins: 1 ---
+				--- BLOCK #0 239-241, warpins: 1 ---
 				slot11()
 				--- END OF BLOCK #0 ---
 
@@ -1376,7 +1412,7 @@ slot0.displayShipWord = function (slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 243-244, warpins: 1 ---
+				--- BLOCK #0 242-243, warpins: 1 ---
 				slot0.chatFlag = false
 				--- END OF BLOCK #0 ---
 
@@ -1401,7 +1437,7 @@ slot0.displayShipWord = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #10 245-255, warpins: 4 ---
+	--- BLOCK #10 244-254, warpins: 4 ---
 	removeOnButton(slot0._chat)
 	onButton(slot0, slot0._chat, function ()
 
@@ -1477,7 +1513,7 @@ slot0.displayShipWord = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #11 256-256, warpins: 2 ---
+	--- BLOCK #11 255-255, warpins: 2 ---
 	--- END OF BLOCK #11 ---
 
 
@@ -2519,29 +2555,113 @@ slot0.updateBuffList = function (slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 10-42, warpins: 2 ---
+				--- BLOCK #1 10-27, warpins: 2 ---
 				setActive(slot0._buffText, true)
-				setText(slot0._buffText:Find("Text"), slot1:getConfig("desc"))
 
-				local function slot2()
+				slot0 = slot0._buffText:getConfig("desc")
+
+				if slot0._buffText:getConfig("max_time") > 0 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 1-6, warpins: 1 ---
-					setActive(slot0._buffText, false)
+					--- BLOCK #0 28-39, warpins: 1 ---
+					slot2 = pg.TimeMgr:GetInstance():GetServerTime()
 
-					return
+					if slot1.timestamp then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 40-79, warpins: 1 ---
+						setText(slot0._buffText:Find("Text"), string.gsub(slot0, "$" .. 1, pg.TimeMgr.GetInstance():DescCDTime(slot4)))
+
+						slot0._buffTimeCountDownTimer = Timer.New(function ()
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 1-4, warpins: 1 ---
+							if slot0 > 0 then
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 5-32, warpins: 1 ---
+								slot0 = slot0 - 1
+
+								setText(slot1._buffText:Find("Text"), string.gsub(slot1._buffText.Find("Text"), "$" .. 1, pg.TimeMgr.GetInstance():DescCDTime(pg.TimeMgr.GetInstance().DescCDTime)))
+								--- END OF BLOCK #0 ---
+
+
+
+							else
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 33-46, warpins: 1 ---
+								slot1._buffTimeCountDownTimer:Stop()
+								setActive(slot1._buffTimeCountDownTimer._buffText, false)
+								setActive(slot3, false)
+								--- END OF BLOCK #0 ---
+
+
+
+							end
+
+							--- END OF BLOCK #0 ---
+
+							FLOW; TARGET BLOCK #1
+
+
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #1 47-47, warpins: 2 ---
+							return
+							--- END OF BLOCK #1 ---
+
+
+
+						end, 1, -1)
+
+						slot0._buffTimeCountDownTimer:Start()
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 80-88, warpins: 1 ---
+					setText(slot0._buffText:Find("Text"), slot0)
 					--- END OF BLOCK #0 ---
 
 
 
 				end
 
-				setText._buffTextTimer = Timer.New(slot2, slot2.BUFFTEXT_SHOW_TIME, 1)
+				--- END OF BLOCK #1 ---
 
-				setText._buffTextTimer:Start()
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 89-104, warpins: 3 ---
+				slot0._buffTextTimer = Timer.New(function ()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-11, warpins: 1 ---
+					setActive(slot0._buffText, false)
+					setActive._buffTimeCountDownTimer:Stop()
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
+				end, slot3.BUFFTEXT_SHOW_TIME, 1)
+
+				slot0._buffTextTimer:Start()
 
 				return
-				--- END OF BLOCK #1 ---
+				--- END OF BLOCK #2 ---
 
 
 
@@ -2559,7 +2679,7 @@ slot0.updateBuffList = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 22-22, warpins: 2 ---
+		--- BLOCK #1 22-23, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 
@@ -4605,11 +4725,13 @@ slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #15 202-204, warpins: 2 ---
-	if slot0.isOpenSecondary then
+	if slot0._buffTimeCountDownTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 205-208, warpins: 1 ---
-		slot0:closeSecondaryPanel(false)
+		--- BLOCK #0 205-210, warpins: 1 ---
+		slot0._buffTimeCountDownTimer:Stop()
+
+		slot0._buffTimeCountDownTimer = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4623,7 +4745,18 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #16 209-212, warpins: 2 ---
+	--- BLOCK #16 211-213, warpins: 2 ---
+	if slot0.isOpenSecondary then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 214-217, warpins: 1 ---
+		slot0:closeSecondaryPanel(false)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
@@ -4631,11 +4764,19 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #17 213-217, warpins: 0 ---
+	--- BLOCK #17 218-221, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #18 222-226, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.skinTimers) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 213-215, warpins: 1 ---
+		--- BLOCK #0 222-224, warpins: 1 ---
 		slot5:Stop()
 		--- END OF BLOCK #0 ---
 
@@ -4644,27 +4785,27 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 216-217, warpins: 2 ---
+		--- BLOCK #1 225-226, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #19
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #18 218-223, warpins: 1 ---
+	--- BLOCK #19 227-232, warpins: 1 ---
 	slot0.skinTimers = nil
 
 	slot0:recycleSpineChar()
 
 	return
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #19 ---
 
 
 
@@ -4871,15 +5012,15 @@ slot0.loadChar = function (slot0, slot1)
 	if not slot0.shipPrefab then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 4-21, warpins: 1 ---
+		--- BLOCK #0 4-20, warpins: 1 ---
 		slot0.shipPrefab = slot1
 
-		pg.UIMgr:GetInstance():LoadingOn()
+		pg.UIMgr.GetInstance():LoadingOn()
 		PoolMgr.GetInstance():GetSpineChar(slot1, true, function (slot0)
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-24, warpins: 1 ---
-			pg.UIMgr:GetInstance():LoadingOff()
+			--- BLOCK #0 1-23, warpins: 1 ---
+			pg.UIMgr.GetInstance():LoadingOff()
 
 			slot0.shipModel = slot0
 			tf(slot0).localScale = Vector3(0.75, 0.75, 1)
@@ -4896,7 +5037,7 @@ slot0.loadChar = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 30-31, warpins: 2 ---
+			--- BLOCK #1 29-30, warpins: 2 ---
 			--- END OF BLOCK #1 ---
 
 			FLOW; TARGET BLOCK #2
@@ -4904,7 +5045,7 @@ slot0.loadChar = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 37-61, warpins: 2 ---
+			--- BLOCK #2 36-60, warpins: 2 ---
 			--- END OF BLOCK #2 ---
 
 
@@ -4923,7 +5064,7 @@ slot0.loadChar = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 22-23, warpins: 2 ---
+	--- BLOCK #1 21-22, warpins: 2 ---
 	return
 	--- END OF BLOCK #1 ---
 

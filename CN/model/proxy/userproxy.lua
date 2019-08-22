@@ -44,4 +44,21 @@ slot0.getLastLoginUser = function (slot0)
 	return nil
 end
 
+slot0.saveTranscode = function (slot0, slot1)
+	PlayerPrefs.SetString("transcode", slot1)
+	PlayerPrefs.Save()
+end
+
+slot0.getTranscode = function (slot0)
+	if PlayerPrefs.GetString("transcode") then
+		return slot1
+	end
+
+	return ""
+end
+
+slot0.clearTranscode = function (slot0)
+	PlayerPrefs.DeleteKey("transcode")
+end
+
 return slot0

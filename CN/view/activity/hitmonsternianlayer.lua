@@ -353,7 +353,7 @@ function slot6(slot0)
 
 			end
 			slot2 = false
-			slot4 = pg.StoryMgr:GetInstance()
+			slot4 = pg.StoryMgr.GetInstance()
 
 			--- END OF BLOCK #0 ---
 
@@ -362,11 +362,11 @@ function slot6(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 4-16, warpins: 2 ---
+			--- BLOCK #1 4-15, warpins: 2 ---
 			if type(slot0.stageVO.storys) == "table" then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 17-20, warpins: 1 ---
+				--- BLOCK #0 16-19, warpins: 1 ---
 				--- END OF BLOCK #0 ---
 
 				FLOW; TARGET BLOCK #1
@@ -374,17 +374,17 @@ function slot6(slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 21-41, warpins: 0 ---
+				--- BLOCK #1 20-40, warpins: 0 ---
 				for slot8, slot9 in pairs(slot3) do
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 21-26, warpins: 1 ---
+					--- BLOCK #0 20-25, warpins: 1 ---
 					slot11 = slot9[2]
 
 					if slot0.stageVO.hp <= slot9[1] and not slot4:IsPlayed(slot11) then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 33-39, warpins: 1 ---
+						--- BLOCK #0 32-38, warpins: 1 ---
 						slot2 = true
 
 						slot4:Play(slot11, slot1)
@@ -396,7 +396,7 @@ function slot6(slot0)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #1 40-40, warpins: 1 ---
+						--- BLOCK #1 39-39, warpins: 1 ---
 						break
 						--- END OF BLOCK #1 ---
 
@@ -410,7 +410,7 @@ function slot6(slot0)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #1 40-41, warpins: 3 ---
+					--- BLOCK #1 39-40, warpins: 3 ---
 					--- END OF BLOCK #1 ---
 
 
@@ -429,11 +429,11 @@ function slot6(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 42-43, warpins: 3 ---
+			--- BLOCK #2 41-42, warpins: 3 ---
 			if not slot2 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 44-45, warpins: 1 ---
+				--- BLOCK #0 43-44, warpins: 1 ---
 				slot1()
 				--- END OF BLOCK #0 ---
 
@@ -448,7 +448,7 @@ function slot6(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 46-46, warpins: 2 ---
+			--- BLOCK #3 45-45, warpins: 2 ---
 			return
 			--- END OF BLOCK #3 ---
 
@@ -790,8 +790,8 @@ slot0.reigsterEvent = function (slot0, slot1, slot2)
 		if slot0.stage:isEnd() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 8-27, warpins: 1 ---
-			pg.MsgboxMgr:GetInstance():ShowMsgBox({
+			--- BLOCK #0 8-26, warpins: 1 ---
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = i18n("activity_hit_monster_reset_tip"),
 				onYes = function ()
 
@@ -818,17 +818,17 @@ slot0.reigsterEvent = function (slot0, slot1, slot2)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 28-30, warpins: 1 ---
+			--- BLOCK #0 27-29, warpins: 1 ---
 			if slot3 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 31-37, warpins: 1 ---
+				--- BLOCK #0 30-36, warpins: 1 ---
 				setActive(setActive, true)
 
 				if true then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 38-40, warpins: 1 ---
+					--- BLOCK #0 37-39, warpins: 1 ---
 					slot4()
 					--- END OF BLOCK #0 ---
 
@@ -842,8 +842,8 @@ slot0.reigsterEvent = function (slot0, slot1, slot2)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 41-51, warpins: 1 ---
-				pg.TipsMgr:GetInstance():ShowTips(i18n("activity_hit_monster_nocount"))
+				--- BLOCK #0 40-49, warpins: 1 ---
+				pg.TipsMgr.GetInstance():ShowTips(i18n("activity_hit_monster_nocount"))
 				--- END OF BLOCK #0 ---
 
 
@@ -862,7 +862,7 @@ slot0.reigsterEvent = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 52-52, warpins: 4 ---
+		--- BLOCK #1 50-50, warpins: 4 ---
 		return
 		--- END OF BLOCK #1 ---
 

@@ -44,7 +44,7 @@ slot0.initToggles = function (slot0)
 		onToggle(slot0, slot5, function (slot0)
 			if slot0 then
 				if slot0.phaseId <  then
-					pg.TipsMgr:GetInstance():ShowTips(i18n("newplayer_notice_7"))
+					pg.TipsMgr.GetInstance():ShowTips(i18n("newplayer_notice_7"))
 					triggerToggle(slot0.toggles[slot0.contextData.pageId], true)
 				else
 					slot0:switchPage(slot0.switchPage)

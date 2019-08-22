@@ -19,7 +19,7 @@ slot0.init = function (slot0)
 	slot0.goldbubbleTF = slot0:findTF("merchant/bubble", slot0.resourcesTF)
 	slot0.projectContainer = slot0:findTF("main/content", slot0.frame)
 
-	pg.UIMgr:GetInstance():BlurPanel(slot0._tf, false, {
+	pg.UIMgr.GetInstance():BlurPanel(slot0._tf, false, {
 		weight = LayerWeightConst.SECOND_LAYER
 	})
 end
@@ -68,13 +68,13 @@ slot0.initProjects = function (slot0)
 				slot1, slot2 = nil
 
 				if slot0._type == CommissionCard.TYPE_TECHNOLOGY then
-					slot1, slot2 = pg.SystemOpenMgr:GetInstance():isOpenSystem(getProxy(PlayerProxy):getData().level, "TechnologyMediator")
+					slot1, slot2 = pg.SystemOpenMgr.GetInstance():isOpenSystem(getProxy(PlayerProxy):getData().level, "TechnologyMediator")
 				else
 					slot1 = true
 				end
 
 				if not slot1 then
-					pg.TipsMgr:GetInstance():ShowTips(slot2)
+					pg.TipsMgr.GetInstance():ShowTips(slot2)
 					triggerToggle(slot0.toggle)
 
 					return
@@ -119,7 +119,7 @@ slot0.onBackPressed = function (slot0)
 end
 
 slot0.willExit = function (slot0)
-	pg.UIMgr:GetInstance():UnblurPanel(slot0._tf)
+	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
 
 	for slot4, slot5 in pairs(slot0.projectCards) do
 		slot5:dispose()

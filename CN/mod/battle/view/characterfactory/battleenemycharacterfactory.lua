@@ -22,7 +22,7 @@ slot1.MakeModel = function (slot0, slot1)
 
 		slot1 = slot0.AddModel:GetSceneMediator()
 
-		slot0:CameraOrthogonal(slot2.Battle.BattleCameraUtil:GetInstance():GetCamera())
+		slot0:CameraOrthogonal(slot2.Battle.BattleCameraUtil.GetInstance():GetCamera())
 		slot1:AddEnemyCharacter(slot0)
 		slot1:MakeUIComponentContainer(slot0)
 		slot1:MakeFXContainer(slot0)
@@ -49,7 +49,7 @@ slot1.MakeArrowBar = function (slot0, slot1)
 end
 
 slot1.GetArrowPool = function (slot0)
-	return slot0.Battle.BattleArrowManager:GetInstance()
+	return slot0.Battle.BattleArrowManager.GetInstance()
 end
 
 slot1.MakeBloodBar = function (slot0, slot1)
@@ -74,7 +74,7 @@ slot1.MakeWaveFX = function (slot0, slot1)
 end
 
 slot1.RemoveCharacter = function (slot0, slot1)
-	slot0.Battle.BattleCameraUtil:GetInstance():StartShake(pg.shake_template[slot0.Battle.BattleConst.ShakeType.UNIT_DIE])
+	slot0.Battle.BattleCameraUtil.GetInstance():StartShake(pg.shake_template[slot0.Battle.BattleConst.ShakeType.UNIT_DIE])
 	slot1.super.RemoveCharacter(slot0, slot1)
 end
 

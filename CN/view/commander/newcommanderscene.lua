@@ -35,11 +35,11 @@ slot0.init = function (slot0)
 	slot0.getEffect = slot0:findTF("main/effect")
 	slot0.skipAnim = true
 
-	if pg.GuideMgr:GetInstance()._go.activeSelf then
+	if pg.GuideMgr.GetInstance()._go.activeSelf then
 		slot0.skipAnim = false
 	end
 
-	setParent(slot0._tf, pg.UIMgr:GetInstance().OverlayMain)
+	setParent(slot0._tf, pg.UIMgr.GetInstance().OverlayMain)
 end
 
 slot0.openTreePanel = function (slot0, slot1)
@@ -115,7 +115,7 @@ slot0.didEnter = function (slot0)
 		slot0:enterAnim()
 	end)
 	onButton(slot0, slot0.shareBtn, function ()
-		pg.ShareMgr:GetInstance():Share(pg.ShareMgr.TypeCommander, pg.ShareMgr.PANEL_TYPE_PINK)
+		pg.ShareMgr.GetInstance():Share(pg.ShareMgr.TypeCommander, pg.ShareMgr.PANEL_TYPE_PINK)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.lockBtn, function ()
 		slot0 = slot0.commanderVO:getLock()

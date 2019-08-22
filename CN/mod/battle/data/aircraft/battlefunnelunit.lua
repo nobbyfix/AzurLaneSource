@@ -39,7 +39,7 @@ end
 ys.Battle.BattleFunnelUnit.SetMotherUnit = function (slot0, slot1)
 	slot0.super.SetMotherUnit(slot0, slot1)
 
-	slot0._upperBound, slot0._lowerBound, slot0._leftBound, slot0._rightBound = slot1.Battle.BattleDataProxy:GetInstance():GetFleetBoundByIFF(slot2)
+	slot0._upperBound, slot0._lowerBound, slot0._leftBound, slot0._rightBound = slot1.Battle.BattleDataProxy.GetInstance():GetFleetBoundByIFF(slot2)
 end
 
 ys.Battle.BattleFunnelUnit.SetTemplate = function (slot0, slot1)

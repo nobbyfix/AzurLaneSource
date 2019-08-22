@@ -82,7 +82,7 @@ slot0.didEnter = function (slot0)
 				content = i18n("battle_preCombatLayer_save_confirm"),
 				onYes = function ()
 					local function slot0()
-						pg.TipsMgr:GetInstance():ShowTips(i18n("battle_preCombatLayer_save_success"))
+						pg.TipsMgr.GetInstance():ShowTips(i18n("battle_preCombatLayer_save_success"))
 
 						GetOrAddComponent(slot0._tf, typeof(CanvasGroup)).interactable = false
 
@@ -122,7 +122,7 @@ slot0.didEnter = function (slot0)
 				content = i18n("battle_preCombatLayer_save_march"),
 				onYes = function ()
 					local function slot0()
-						pg.TipsMgr:GetInstance():ShowTips(i18n("battle_preCombatLayer_save_success"))
+						pg.TipsMgr.GetInstance():ShowTips(i18n("battle_preCombatLayer_save_success"))
 						pg.TipsMgr.GetInstance().ShowTips:emit(PreCombatMediator.ON_START, slot0._currentFleetVO.id)
 					end
 
@@ -243,7 +243,7 @@ slot0.switchToEditMode = function (slot0)
 	onButton(slot0, slot0._checkBtn, function ()
 		local function slot0()
 			if slot0._editedFlag then
-				pg.TipsMgr:GetInstance():ShowTips(i18n("battle_preCombatLayer_save_success"))
+				pg.TipsMgr.GetInstance():ShowTips(i18n("battle_preCombatLayer_save_success"))
 			end
 
 			slot0:swtichToPreviewMode()
@@ -384,9 +384,9 @@ slot0.loadAllCharacter = function (slot0)
 	end
 
 	slot3(slot0._currentFleetVO.subShips, Fleet.SUBMARINE)
-	pg.UIMgr:GetInstance():LoadingOn()
+	pg.UIMgr.GetInstance():LoadingOn()
 	parallelAsync({}, function (slot0)
-		pg.UIMgr:GetInstance():LoadingOff()
+		pg.UIMgr.GetInstance():LoadingOff()
 	end)
 end
 
@@ -746,10 +746,10 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 					if not slot1._currentFleetVO:canRemove(slot2) then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 36-66, warpins: 1 ---
+						--- BLOCK #0 36-65, warpins: 1 ---
 						slot3, slot4 = slot1._currentFleetVO:getShipPos(slot2)
 
-						pg.TipsMgr:GetInstance():ShowTips(i18n("ship_formationUI_removeError_onlyShip", slot2:getConfigTable().name, slot1._currentFleetVO.name, Fleet.C_TEAM_NAME[slot4]))
+						pg.TipsMgr.GetInstance():ShowTips(i18n("ship_formationUI_removeError_onlyShip", slot2:getConfigTable().name, slot1._currentFleetVO.name, Fleet.C_TEAM_NAME[slot4]))
 						slot2()
 						--- END OF BLOCK #0 ---
 
@@ -758,7 +758,7 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 67-87, warpins: 1 ---
+						--- BLOCK #0 66-86, warpins: 1 ---
 						pg.MsgboxMgr.GetInstance():ShowMsgBox({
 							hideNo = false,
 							zIndex = -100,
@@ -846,7 +846,7 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 88-89, warpins: 1 ---
+					--- BLOCK #0 87-88, warpins: 1 ---
 					slot2()
 					--- END OF BLOCK #0 ---
 
@@ -861,7 +861,7 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 90-93, warpins: 3 ---
+				--- BLOCK #1 89-92, warpins: 3 ---
 				playSoundEffect(SFX_UI_HOME_PUT)
 
 				return

@@ -42,7 +42,7 @@ slot0.execute = function (slot0, slot1)
 				slot0.childOps = {}
 			end
 		else
-			pg.TipsMgr:GetInstance():ShowTips(errorTip("world_map_op_error_", slot0.result))
+			pg.TipsMgr.GetInstance():ShowTips(errorTip("world_map_op_error_", slot0.result))
 		end
 
 		slot1:sendNotification(GAME.WORLD_MAP_OP_DONE, {

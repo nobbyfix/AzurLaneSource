@@ -1870,6 +1870,61 @@ pg.activity_template = {
 			}
 		}
 	},
+	[356] = {
+		mark = 20190822,
+		title_res_tag = "",
+		type = 57,
+		bg = "",
+		config_id = 1,
+		is_show = 0,
+		id = 356,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					8,
+					22
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					9,
+					5
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			ships = {
+				"huonululu",
+				"xixuegui",
+				"lei",
+				"dian",
+				"xiefeierde",
+				"beifeng",
+				"I26",
+				"muyue",
+				"ruihe"
+			},
+			bufflist = {
+				10,
+				11,
+				12
+			}
+		}
+	},
 	[2001] = {
 		mark = 20180327,
 		title_res_tag = "",
@@ -2497,6 +2552,44 @@ pg.activity_template = {
 		id = 100001,
 		config_data = {}
 	},
+	[100002] = {
+		mark = 20190731,
+		title_res_tag = "",
+		type = 57,
+		bg = "",
+		config_id = 1,
+		is_show = 0,
+		config_client = "",
+		id = 100002,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					8,
+					2
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					8,
+					12
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
 	all = {
 		3,
 		4,
@@ -2544,6 +2637,7 @@ pg.activity_template = {
 		353,
 		354,
 		355,
+		356,
 		2001,
 		2002,
 		2003,
@@ -2585,7 +2679,8 @@ pg.activity_template = {
 		2041,
 		2042,
 		2043,
-		100001
+		100001,
+		100002
 	}
 }
 

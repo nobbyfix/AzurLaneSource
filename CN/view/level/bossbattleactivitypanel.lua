@@ -108,8 +108,8 @@ slot0.update = function (slot0, slot1)
 	if slot0[slot0.activityVO:getData1()].refresh_type == 1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 26-39, warpins: 1 ---
-		slot5 = pg.TimeMgr:GetInstance():parseTimeFromConfig(slot0[slot3].refresh_config)
+		--- BLOCK #0 26-38, warpins: 1 ---
+		slot5 = pg.TimeMgr.GetInstance():parseTimeFromConfig(slot0[slot3].refresh_config)
 		--- END OF BLOCK #0 ---
 
 
@@ -117,12 +117,12 @@ slot0.update = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 40-44, warpins: 1 ---
+		--- BLOCK #0 39-43, warpins: 1 ---
 		if slot0[slot3].refresh_type == 2 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 45-65, warpins: 1 ---
-			slot5 = pg.TimeMgr:GetInstance():parseTimeFromConfig(slot0[slot0.all[1]].refresh_config) + slot0[slot3].refresh_config[1] * 86400
+			--- BLOCK #0 44-63, warpins: 1 ---
+			slot5 = pg.TimeMgr.GetInstance():parseTimeFromConfig(slot0[slot0.all[1]].refresh_config) + slot0[slot3].refresh_config[1] * 86400
 			--- END OF BLOCK #0 ---
 
 
@@ -141,11 +141,11 @@ slot0.update = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 66-68, warpins: 3 ---
+	--- BLOCK #2 64-66, warpins: 3 ---
 	if slot0.openTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 69-74, warpins: 1 ---
+		--- BLOCK #0 67-72, warpins: 1 ---
 		slot0.openTimer:Stop()
 
 		slot0.openTimer = nil
@@ -162,7 +162,7 @@ slot0.update = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 75-85, warpins: 2 ---
+	--- BLOCK #3 73-83, warpins: 2 ---
 	setActive(slot0.maskTF, pg.TimeMgr.GetInstance():GetServerTime() < slot5)
 
 	--- END OF BLOCK #3 ---
@@ -172,11 +172,11 @@ slot0.update = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 89-91, warpins: 2 ---
+	--- BLOCK #4 87-89, warpins: 2 ---
 	if slot6 < slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 92-109, warpins: 1 ---
+		--- BLOCK #0 90-107, warpins: 1 ---
 		slot0.openTimer = Timer.New(function ()
 
 			-- Decompilation error in this vicinity:
@@ -196,7 +196,7 @@ slot0.update = function (slot0, slot1)
 		if slot2[slot4 - 1] then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 110-118, warpins: 1 ---
+			--- BLOCK #0 108-116, warpins: 1 ---
 			slot0:updateBossInfo(slot7, slot0[slot7].hp)
 			--- END OF BLOCK #0 ---
 
@@ -210,7 +210,7 @@ slot0.update = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 119-124, warpins: 1 ---
+		--- BLOCK #0 117-122, warpins: 1 ---
 		slot0:updateBossInfo(slot3, slot0.activityVO.data2)
 		--- END OF BLOCK #0 ---
 
@@ -225,7 +225,7 @@ slot0.update = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 125-126, warpins: 3 ---
+	--- BLOCK #5 123-124, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 

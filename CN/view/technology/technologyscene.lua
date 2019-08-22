@@ -72,14 +72,14 @@ slot0.didEnter = function (slot0)
 		if _.any(slot0.technologyVOs, function (slot0)
 			return slot0.state ~= Technology.STATE_IDLE
 		end) then
-			pg.MsgboxMgr:GetInstance():ShowMsgBox({
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = i18n("technology_canot_refresh")
 			})
 
 			return
 		end
 
-		pg.MsgboxMgr:GetInstance():ShowMsgBox({
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			content = i18n("technology_refresh_tip"),
 			onYes = function ()
 				slot0:emit(TechnologyMediator.ON_REFRESH)
@@ -998,15 +998,15 @@ slot0.updateTimer = function (slot0, slot1)
 		slot0.cardtimer[slot1.id] = Timer.New(function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-14, warpins: 1 ---
-			if slot0.time - pg.TimeMgr:GetInstance():GetServerTime() <= 0 then
+			--- BLOCK #0 1-13, warpins: 1 ---
+			if slot0.time - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 15-21, warpins: 1 ---
+				--- BLOCK #0 14-20, warpins: 1 ---
 				if slot1.cardtimer[slot0.id] then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 22-35, warpins: 1 ---
+					--- BLOCK #0 21-34, warpins: 1 ---
 					slot1.cardtimer[slot0.id]:Stop()
 
 					slot1.cardtimer[slot0.id] = nil
@@ -1023,11 +1023,11 @@ slot0.updateTimer = function (slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 36-41, warpins: 2 ---
+				--- BLOCK #1 35-40, warpins: 2 ---
 				if not slot0:canFinish() then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 42-50, warpins: 1 ---
+					--- BLOCK #0 41-49, warpins: 1 ---
 					setActive(setActive, false)
 					setActive(setActive, true)
 					--- END OF BLOCK #0 ---
@@ -1037,7 +1037,7 @@ slot0.updateTimer = function (slot0, slot1)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 51-59, warpins: 1 ---
+					--- BLOCK #0 50-58, warpins: 1 ---
 					slot1:emit(TechnologyMediator.ON_TIME_OVER, slot0.id)
 					--- END OF BLOCK #0 ---
 
@@ -1051,8 +1051,8 @@ slot0.updateTimer = function (slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 60-75, warpins: 1 ---
-				setText(slot2:Find("text"), pg.TimeMgr:GetInstance():DescCDTime(slot0 - slot1))
+				--- BLOCK #0 59-73, warpins: 1 ---
+				setText(slot2:Find("text"), pg.TimeMgr.GetInstance():DescCDTime(slot0 - slot1))
 				--- END OF BLOCK #0 ---
 
 
@@ -1066,7 +1066,7 @@ slot0.updateTimer = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 76-76, warpins: 3 ---
+			--- BLOCK #1 74-74, warpins: 3 ---
 			return
 			--- END OF BLOCK #1 ---
 
@@ -1200,8 +1200,8 @@ slot0.updateTechnologyTF = function (slot0, slot1, slot2, slot3)
 			end) then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 9-21, warpins: 1 ---
-				pg.TipsMgr:GetInstance():ShowTips(i18n("technology_is_actived"))
+				--- BLOCK #0 9-20, warpins: 1 ---
+				pg.TipsMgr.GetInstance():ShowTips(i18n("technology_is_actived"))
 
 				return
 				--- END OF BLOCK #0 ---
@@ -1217,12 +1217,12 @@ slot0.updateTechnologyTF = function (slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 22-30, warpins: 2 ---
+			--- BLOCK #1 21-29, warpins: 2 ---
 			if #slot1:getConfig("consume") > 0 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 31-50, warpins: 1 ---
-				pg.MsgboxMgr:GetInstance():ShowMsgBox({
+				--- BLOCK #0 30-48, warpins: 1 ---
+				pg.MsgboxMgr.GetInstance():ShowMsgBox({
 					content = i18n("technology_task_build_tip", getDropInfo(slot0)),
 					onYes = function ()
 
@@ -1247,7 +1247,7 @@ slot0.updateTechnologyTF = function (slot0, slot1, slot2, slot3)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 51-63, warpins: 1 ---
+				--- BLOCK #0 49-61, warpins: 1 ---
 				slot0:emit(TechnologyMediator.ON_START, {
 					id = slot1.id,
 					pool_id = slot1.poolId
@@ -1265,7 +1265,7 @@ slot0.updateTechnologyTF = function (slot0, slot1, slot2, slot3)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 64-64, warpins: 2 ---
+			--- BLOCK #2 62-62, warpins: 2 ---
 			return
 			--- END OF BLOCK #2 ---
 
@@ -1288,8 +1288,8 @@ slot0.updateTechnologyTF = function (slot0, slot1, slot2, slot3)
 			onButton(slot0, slot7, function ()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-16, warpins: 1 ---
-				pg.MsgboxMgr:GetInstance():ShowMsgBox({
+				--- BLOCK #0 1-15, warpins: 1 ---
+				pg.MsgboxMgr.GetInstance():ShowMsgBox({
 					content = i18n("technology_stop_tip"),
 					onYes = function ()
 

@@ -8284,12 +8284,11 @@ function slot10(slot0)
 		if slot0 == 0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 4-15, warpins: 1 ---
+			--- BLOCK #0 4-14, warpins: 1 ---
 			slot0 = pg
 			slot0 = slot0.TipsMgr
-			slot1 = slot0
 			slot0 = slot0.GetInstance
-			slot0 = slot0(slot1)
+			slot0 = slot0()
 			slot1 = slot0
 			slot0 = slot0.ShowTips
 			slot2 = i18n
@@ -8303,7 +8302,7 @@ function slot10(slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 16-33, warpins: 1 ---
+			--- BLOCK #0 15-31, warpins: 1 ---
 			slot0 = i18n
 			slot1 = "blueprint_simulation_confirm_"
 			slot2 = slot1
@@ -8312,9 +8311,8 @@ function slot10(slot0)
 			slot0 = slot0(slot1)
 			slot1 = pg
 			slot1 = slot1.MsgboxMgr
-			slot2 = slot1
 			slot1 = slot1.GetInstance
-			slot1 = slot1(slot2)
+			slot1 = slot1()
 			slot2 = slot1
 			slot1 = slot1.ShowMsgBox
 			slot3 = {}
@@ -8356,7 +8354,7 @@ function slot10(slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 34-34, warpins: 2 ---
+		--- BLOCK #1 32-32, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 
@@ -9311,15 +9309,14 @@ function slot10(slot0, slot1)
 				if slot7 > slot8 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 42-54, warpins: 1 ---
+					--- BLOCK #0 42-53, warpins: 1 ---
 					slot7 = setText
 					slot8 = slot0
 					slot8 = slot8.timerTFTxt
 					slot9 = pg
 					slot9 = slot9.TimeMgr
-					slot10 = slot9
 					slot9 = slot9.GetInstance
-					slot9 = slot9(slot10)
+					slot9 = slot9()
 					slot10 = slot9
 					slot9 = slot9.DescCDTime
 					slot11 = slot1.leftTime
@@ -9348,7 +9345,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 55-60, warpins: 4 ---
+		--- BLOCK #1 54-59, warpins: 4 ---
 		slot6 = setActive
 		slot7 = slot0.pause
 		slot8 = ShipBluePrint
@@ -9357,18 +9354,18 @@ function slot10(slot0, slot1)
 		if slot8 ~= slot2 or slot3 or slot5 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 65-68, warpins: 3 ---
+			--- BLOCK #0 64-67, warpins: 3 ---
 			slot8 = ShipBluePrint
 			slot8 = slot8.TASK_STATE_PAUSE
 
 			if slot8 == slot2 and not slot5 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 71-72, warpins: 1 ---
+				--- BLOCK #0 70-71, warpins: 1 ---
 				if slot3 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 73-75, warpins: 1 ---
+					--- BLOCK #0 72-74, warpins: 1 ---
 					slot8 = slot0.autoCommit
 					slot8 = not slot8
 					--- END OF BLOCK #0 ---
@@ -9383,7 +9380,7 @@ function slot10(slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 76-77, warpins: 2 ---
+				--- BLOCK #0 75-76, warpins: 2 ---
 				slot8 = false
 				--- END OF BLOCK #0 ---
 
@@ -9397,7 +9394,7 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 78-78, warpins: 1 ---
+			--- BLOCK #0 77-77, warpins: 1 ---
 			slot8 = true
 			--- END OF BLOCK #0 ---
 
@@ -9412,7 +9409,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 79-85, warpins: 4 ---
+		--- BLOCK #2 78-84, warpins: 4 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -9423,7 +9420,7 @@ function slot10(slot0, slot1)
 		if slot8 == slot2 and not slot3 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 88-89, warpins: 1 ---
+			--- BLOCK #0 87-88, warpins: 1 ---
 			slot8 = slot5
 			--- END OF BLOCK #0 ---
 
@@ -9432,13 +9429,13 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 90-91, warpins: 2 ---
+			--- BLOCK #0 89-90, warpins: 2 ---
 			slot8 = false
 
 			if false then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 92-92, warpins: 0 ---
+				--- BLOCK #0 91-91, warpins: 0 ---
 				slot8 = true
 				--- END OF BLOCK #0 ---
 
@@ -9458,7 +9455,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 93-99, warpins: 3 ---
+		--- BLOCK #3 92-98, warpins: 3 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -9469,14 +9466,14 @@ function slot10(slot0, slot1)
 		if slot2 ~= slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 100-103, warpins: 1 ---
+			--- BLOCK #0 99-102, warpins: 1 ---
 			slot8 = ShipBluePrint
 			slot8 = slot8.TASK_STATE_START
 
 			if slot2 == slot8 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 104-107, warpins: 1 ---
+				--- BLOCK #0 103-106, warpins: 1 ---
 				slot8 = slot0.autoCommit
 				slot8 = not slot8
 				slot8 = not slot8
@@ -9492,13 +9489,13 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 108-109, warpins: 1 ---
+			--- BLOCK #0 107-108, warpins: 1 ---
 			slot8 = false
 
 			if false then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 110-110, warpins: 1 ---
+				--- BLOCK #0 109-109, warpins: 1 ---
 				slot8 = true
 				--- END OF BLOCK #0 ---
 
@@ -9518,7 +9515,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 111-117, warpins: 3 ---
+		--- BLOCK #4 110-116, warpins: 3 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -9529,14 +9526,14 @@ function slot10(slot0, slot1)
 		if slot2 ~= slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 118-121, warpins: 1 ---
+			--- BLOCK #0 117-120, warpins: 1 ---
 			slot8 = ShipBluePrint
 			slot8 = slot8.TASK_STATE_START
 
 			if slot2 == slot8 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 122-124, warpins: 1 ---
+				--- BLOCK #0 121-123, warpins: 1 ---
 				slot8 = slot0.autoCommit
 				slot8 = not slot8
 				--- END OF BLOCK #0 ---
@@ -9546,7 +9543,7 @@ function slot10(slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 125-126, warpins: 1 ---
+				--- BLOCK #0 124-125, warpins: 1 ---
 				slot8 = false
 				--- END OF BLOCK #0 ---
 
@@ -9560,7 +9557,7 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 127-127, warpins: 1 ---
+			--- BLOCK #0 126-126, warpins: 1 ---
 			slot8 = true
 			--- END OF BLOCK #0 ---
 
@@ -9575,7 +9572,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #5 128-134, warpins: 3 ---
+		--- BLOCK #5 127-133, warpins: 3 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -9586,28 +9583,28 @@ function slot10(slot0, slot1)
 		if slot2 ~= slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 135-138, warpins: 1 ---
+			--- BLOCK #0 134-137, warpins: 1 ---
 			slot8 = ShipBluePrint
 			slot8 = slot8.TASK_STATE_START
 
 			if slot2 ~= slot8 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 139-142, warpins: 1 ---
+				--- BLOCK #0 138-141, warpins: 1 ---
 				slot8 = ShipBluePrint
 				slot8 = slot8.TASK_STATE_FINISHED
 
 				if slot2 ~= slot8 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 143-146, warpins: 1 ---
+					--- BLOCK #0 142-145, warpins: 1 ---
 					slot8 = ShipBluePrint
 					slot8 = slot8.TASK_STATE_PAUSE
 
 					if slot2 == slot8 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 147-148, warpins: 1 ---
+						--- BLOCK #0 146-147, warpins: 1 ---
 						slot8 = not slot5
 						--- END OF BLOCK #0 ---
 
@@ -9616,7 +9613,7 @@ function slot10(slot0, slot1)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 149-150, warpins: 1 ---
+						--- BLOCK #0 148-149, warpins: 1 ---
 						slot8 = false
 						--- END OF BLOCK #0 ---
 
@@ -9640,7 +9637,7 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 151-151, warpins: 3 ---
+			--- BLOCK #0 150-150, warpins: 3 ---
 			slot8 = true
 			--- END OF BLOCK #0 ---
 
@@ -9655,7 +9652,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #6 152-158, warpins: 3 ---
+		--- BLOCK #6 151-157, warpins: 3 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -9666,14 +9663,14 @@ function slot10(slot0, slot1)
 		if slot2 ~= slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 159-162, warpins: 1 ---
+			--- BLOCK #0 158-161, warpins: 1 ---
 			slot8 = ShipBluePrint
 			slot8 = slot8.TASK_STATE_WAIT
 
 			if slot2 ~= slot8 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 163-164, warpins: 1 ---
+				--- BLOCK #0 162-163, warpins: 1 ---
 				slot8 = false
 				--- END OF BLOCK #0 ---
 
@@ -9687,7 +9684,7 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 165-165, warpins: 2 ---
+			--- BLOCK #0 164-164, warpins: 2 ---
 			slot8 = true
 			--- END OF BLOCK #0 ---
 
@@ -9702,7 +9699,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #7 166-172, warpins: 2 ---
+		--- BLOCK #7 165-171, warpins: 2 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -9713,21 +9710,21 @@ function slot10(slot0, slot1)
 		if slot2 ~= slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 173-176, warpins: 1 ---
+			--- BLOCK #0 172-175, warpins: 1 ---
 			slot8 = ShipBluePrint
 			slot8 = slot8.TASK_STATE_START
 
 			if slot2 ~= slot8 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 177-180, warpins: 1 ---
+				--- BLOCK #0 176-179, warpins: 1 ---
 				slot8 = ShipBluePrint
 				slot8 = slot8.TASK_STATE_ACHIEVED
 
 				if slot2 ~= slot8 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 181-182, warpins: 1 ---
+					--- BLOCK #0 180-181, warpins: 1 ---
 					slot8 = false
 					--- END OF BLOCK #0 ---
 
@@ -9746,7 +9743,7 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 183-183, warpins: 3 ---
+			--- BLOCK #0 182-182, warpins: 3 ---
 			slot8 = true
 			--- END OF BLOCK #0 ---
 
@@ -9761,7 +9758,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #8 184-190, warpins: 2 ---
+		--- BLOCK #8 183-189, warpins: 2 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -9772,14 +9769,14 @@ function slot10(slot0, slot1)
 		if slot2 ~= slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 191-194, warpins: 1 ---
+			--- BLOCK #0 190-193, warpins: 1 ---
 			slot8 = ShipBluePrint
 			slot8 = slot8.TASK_STATE_PAUSE
 
 			if slot2 == slot8 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 195-196, warpins: 1 ---
+				--- BLOCK #0 194-195, warpins: 1 ---
 				slot8 = slot4
 				--- END OF BLOCK #0 ---
 
@@ -9788,7 +9785,7 @@ function slot10(slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 197-198, warpins: 1 ---
+				--- BLOCK #0 196-197, warpins: 1 ---
 				slot8 = false
 				--- END OF BLOCK #0 ---
 
@@ -9802,7 +9799,7 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 199-199, warpins: 1 ---
+			--- BLOCK #0 198-198, warpins: 1 ---
 			slot8 = true
 			--- END OF BLOCK #0 ---
 
@@ -9817,7 +9814,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #9 200-206, warpins: 3 ---
+		--- BLOCK #9 199-205, warpins: 3 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -9828,27 +9825,27 @@ function slot10(slot0, slot1)
 		if slot2 ~= slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 207-210, warpins: 1 ---
+			--- BLOCK #0 206-209, warpins: 1 ---
 			slot8 = ShipBluePrint
 			slot8 = slot8.TASK_STATE_PAUSE
 
 			if slot2 == slot8 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 211-213, warpins: 1 ---
+				--- BLOCK #0 210-212, warpins: 1 ---
 				slot8 = slot1.leftTime
 
 				if slot8 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 214-217, warpins: 1 ---
+					--- BLOCK #0 213-216, warpins: 1 ---
 					slot8 = slot1.leftTime
 					slot9 = 0
 
 					if slot8 <= slot9 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 218-219, warpins: 2 ---
+						--- BLOCK #0 217-218, warpins: 2 ---
 						slot8 = false
 						--- END OF BLOCK #0 ---
 
@@ -9872,7 +9869,7 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 220-220, warpins: 2 ---
+			--- BLOCK #0 219-219, warpins: 2 ---
 			slot8 = true
 			--- END OF BLOCK #0 ---
 
@@ -9887,7 +9884,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #10 221-226, warpins: 3 ---
+		--- BLOCK #10 220-225, warpins: 3 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -9897,27 +9894,27 @@ function slot10(slot0, slot1)
 		if slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 227-229, warpins: 1 ---
+			--- BLOCK #0 226-228, warpins: 1 ---
 			slot8 = TASK_STATE_ACHIEVED
 
 			if slot2 ~= slot8 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 230-233, warpins: 2 ---
+				--- BLOCK #0 229-232, warpins: 2 ---
 				slot8 = ShipBluePrint
 				slot8 = slot8.TASK_STATE_FINISHED
 
 				if slot2 ~= slot8 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 234-237, warpins: 1 ---
+					--- BLOCK #0 233-236, warpins: 1 ---
 					slot8 = ShipBluePrint
 					slot8 = slot8.TASK_STATE_PAUSE
 
 					if slot2 == slot8 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 238-239, warpins: 1 ---
+						--- BLOCK #0 237-238, warpins: 1 ---
 						slot8 = slot4
 						--- END OF BLOCK #0 ---
 
@@ -9926,7 +9923,7 @@ function slot10(slot0, slot1)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 240-241, warpins: 1 ---
+						--- BLOCK #0 239-240, warpins: 1 ---
 						slot8 = false
 						--- END OF BLOCK #0 ---
 
@@ -9945,7 +9942,7 @@ function slot10(slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 242-242, warpins: 2 ---
+				--- BLOCK #0 241-241, warpins: 2 ---
 				slot8 = true
 				--- END OF BLOCK #0 ---
 
@@ -9965,7 +9962,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #11 243-249, warpins: 3 ---
+		--- BLOCK #11 242-248, warpins: 3 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -9976,7 +9973,7 @@ function slot10(slot0, slot1)
 		if slot2 ~= slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 250-251, warpins: 1 ---
+			--- BLOCK #0 249-250, warpins: 1 ---
 			slot8 = false
 			--- END OF BLOCK #0 ---
 
@@ -9985,7 +9982,7 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 252-252, warpins: 1 ---
+			--- BLOCK #0 251-251, warpins: 1 ---
 			slot8 = true
 			--- END OF BLOCK #0 ---
 
@@ -10000,7 +9997,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #12 253-259, warpins: 2 ---
+		--- BLOCK #12 252-258, warpins: 2 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -10011,7 +10008,7 @@ function slot10(slot0, slot1)
 		if slot2 ~= slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 260-261, warpins: 1 ---
+			--- BLOCK #0 259-260, warpins: 1 ---
 			slot8 = false
 			--- END OF BLOCK #0 ---
 
@@ -10020,7 +10017,7 @@ function slot10(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 262-262, warpins: 1 ---
+			--- BLOCK #0 261-261, warpins: 1 ---
 			slot8 = true
 			--- END OF BLOCK #0 ---
 
@@ -10035,7 +10032,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #13 263-269, warpins: 2 ---
+		--- BLOCK #13 262-268, warpins: 2 ---
 		slot6(slot7, slot8)
 
 		slot6 = setActive
@@ -10046,20 +10043,20 @@ function slot10(slot0, slot1)
 		if slot2 == slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 270-272, warpins: 1 ---
+			--- BLOCK #0 269-271, warpins: 1 ---
 			slot8 = slot1.leftTime
 
 			if slot8 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 273-276, warpins: 1 ---
+				--- BLOCK #0 272-275, warpins: 1 ---
 				slot8 = slot1.leftTime
 				slot9 = 0
 
 				if slot8 <= slot9 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 277-278, warpins: 2 ---
+					--- BLOCK #0 276-277, warpins: 2 ---
 					slot8 = false
 					--- END OF BLOCK #0 ---
 
@@ -10068,7 +10065,7 @@ function slot10(slot0, slot1)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 279-279, warpins: 1 ---
+					--- BLOCK #0 278-278, warpins: 1 ---
 					slot8 = true
 					--- END OF BLOCK #0 ---
 
@@ -10093,7 +10090,7 @@ function slot10(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #14 280-281, warpins: 3 ---
+		--- BLOCK #14 279-280, warpins: 3 ---
 		slot6(slot7, slot8)
 
 		return
@@ -10618,7 +10615,7 @@ function slot10(slot0)
 	if slot1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 5-37, warpins: 1 ---
+		--- BLOCK #0 5-36, warpins: 1 ---
 		slot2 = setActive
 		slot3 = slot0.preViewer
 		slot4 = true
@@ -10633,9 +10630,8 @@ function slot10(slot0)
 
 		slot2 = pg
 		slot2 = slot2.UIMgr
-		slot3 = slot2
 		slot2 = slot2.GetInstance
-		slot2 = slot2(slot3)
+		slot2 = slot2()
 		slot3 = slot2
 		slot2 = slot2.BlurPanel
 		slot4 = slot0.preViewer
@@ -10667,11 +10663,11 @@ function slot10(slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 38-62, warpins: 0 ---
+		--- BLOCK #1 37-61, warpins: 0 ---
 		for slot5 = slot2, slot3, slot4 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 38-56, warpins: 2 ---
+			--- BLOCK #0 37-55, warpins: 2 ---
 			slot6 = slot0.breakIds
 			slot6 = slot6[slot5]
 			slot7 = slot1
@@ -10739,7 +10735,7 @@ function slot10(slot0)
 			if slot5 == 1 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 57-60, warpins: 1 ---
+				--- BLOCK #0 56-59, warpins: 1 ---
 				slot9 = triggerToggle
 				slot10 = slot8
 				slot11 = true
@@ -10757,7 +10753,7 @@ function slot10(slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 61-62, warpins: 2 ---
+			--- BLOCK #1 60-61, warpins: 2 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -10771,7 +10767,7 @@ function slot10(slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 63-68, warpins: 1 ---
+		--- BLOCK #2 62-67, warpins: 1 ---
 		slot2 = true
 		slot0.isShowPreview = slot2
 		slot3 = slot0
@@ -10792,7 +10788,7 @@ function slot10(slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 69-70, warpins: 2 ---
+	--- BLOCK #1 68-69, warpins: 2 ---
 	return
 	--- END OF BLOCK #1 ---
 
@@ -11051,14 +11047,13 @@ function slot10(slot0, slot1)
 	if not slot1 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 20-28, warpins: 1 ---
+		--- BLOCK #0 20-27, warpins: 1 ---
 		slot2 = SetParent
 		slot3 = slot0.blurPanel
 		slot4 = pg
 		slot4 = slot4.UIMgr
-		slot5 = slot4
 		slot4 = slot4.GetInstance
-		slot4 = slot4(slot5)
+		slot4 = slot4()
 		slot4 = slot4.OverlayMain
 
 		slot2(slot3, slot4)
@@ -11075,12 +11070,11 @@ function slot10(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 29-41, warpins: 2 ---
+	--- BLOCK #2 28-39, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.UIMgr
-	slot3 = slot2
 	slot2 = slot2.GetInstance
-	slot2 = slot2(slot3)
+	slot2 = slot2()
 	slot3 = slot2
 	slot2 = slot2.UnblurPanel
 	slot4 = slot0.preViewer

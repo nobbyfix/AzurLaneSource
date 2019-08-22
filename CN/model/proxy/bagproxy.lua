@@ -24,6 +24,10 @@ slot0.addItem = function (slot0, slot1)
 end
 
 slot0.addItemById = function (slot0, slot1, slot2)
+	if slot1 == ITEM_ID_CUBE then
+		pg.TrackerMgr.GetInstance():Tracking(TRACKING_CUBE_ADD, slot2)
+	end
+
 	if slot0.data[slot1] == nil then
 		slot0:addItem(Item.New({
 			id = slot1,
@@ -139,8 +143,14 @@ slot0.canUpgradeFlagShipEquip = function (slot0)
 end
 
 slot0.removeItemById = function (slot0, slot1, slot2)
-	slot0.data[slot1].consume(slot3, slot2)
-	slot0:updateItem(slot0.data[slot1])
+	slot3 = slot0.data[slot1]
+
+	if slot1 == ITEM_ID_CUBE then
+		pg.TrackerMgr.GetInstance():Tracking(TRACKING_CUBE_CONSUME, slot2)
+	end
+
+	slot3:consume(slot2)
+	slot0:updateItem(slot3)
 end
 
 return slot0

@@ -75,7 +75,7 @@ slot0.updateEventItems = function (slot0, slot1, slot2)
 
 					slot1.timers[slot2.id].Stop.timers._parent:update()
 				else
-					slot3.text = pg.TimeMgr:GetInstance():DescCDTime(slot0)
+					slot3.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
 				end
 			end, 1, -1)
 
@@ -127,7 +127,7 @@ slot0.updateClassItems = function (slot0, slot1, slot2)
 							slot1._parent:update()
 							slot1._parent.update.timers[slot1._parent.id]:Stop()
 						else
-							slot3.text = pg.TimeMgr:GetInstance():DescCDTime(slot0)
+							slot3.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
 						end
 					end, 1, -1)
 
@@ -221,7 +221,7 @@ slot0.updateTechItems = function (slot0, slot1, slot2)
 				if pg.TimeMgr.GetInstance():GetServerTime() < slot3:getFinishTime() then
 					slot1.timers[slot3.id] = Timer.New(function ()
 						if slot0:getFinishTime() - pg.TimeMgr.GetInstance():GetServerTime() > 0 then
-							slot1.text = pg.TimeMgr:GetInstance():DescCDTime(slot0)
+							slot1.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
 						else
 							slot2.timers[slot0.id]:Stop()
 							slot2._parent:update()
