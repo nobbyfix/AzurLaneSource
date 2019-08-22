@@ -255,7 +255,7 @@ return {
 			dir = 1,
 			actor = 900195,
 			nameColor = "#a9f548",
-			say = "不愧是{namecode:96}，跟北风想到一块了！",
+			say = "不愧是{namecode:96}，跟{namecode:164}想到一块了！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

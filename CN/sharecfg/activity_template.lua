@@ -1627,40 +1627,14 @@ pg.activity_template = {
 	[351] = {
 		mark = 20190807,
 		title_res_tag = "",
+		time = "stop",
 		type = 13,
 		bg = "",
 		config_id = 0,
 		is_show = 0,
 		config_client = "",
 		id = 351,
-		config_data = {},
-		time = {
-			timer,
-			{
-				{
-					2019,
-					8,
-					7
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					8,
-					22
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		config_data = {}
 	},
 	[352] = {
 		mark = 20190807,

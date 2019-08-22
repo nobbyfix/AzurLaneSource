@@ -744,9 +744,7 @@ return {
 	BindCPU = function ()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-7, warpins: 1 ---
-		slot0:callSdkApi("bindCpu", nil)
-
+		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
 
