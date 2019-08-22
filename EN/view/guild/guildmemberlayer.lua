@@ -727,13 +727,13 @@ end
 slot0.openButtons = function (slot0, slot1)
 	slot0:closePrevPanel()
 	setParent(slot0.buttonsPanel, slot1)
-	setAnchoredPosition(slot0.buttonsPanel, Vector3(775, 285, 0))
+	setAnchoredPosition(slot0.buttonsPanel, Vector2(775, 285))
 end
 
 slot0.closeButtons = function (slot0)
 	slot0.toggleGroup:SetAllTogglesOff()
 	setParent(slot0.buttonsPanel, slot0._tf)
-	setAnchoredPosition(slot0.buttonsPanel, Vector3(-641, -380, 0))
+	setAnchoredPosition(slot0.buttonsPanel, Vector2(-641, -380))
 end
 
 slot0.setDuty = function (slot0, slot1, slot2)

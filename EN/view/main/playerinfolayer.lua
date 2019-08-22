@@ -51,9 +51,9 @@ slot0.OffsetSource = function (slot0, slot1, slot2)
 		slot8 = (slot5 - slot10) / slot9
 	end
 
-	slot10 = GetComponent(slot1, "RectTransform")
-
-	setAnchoredPosition(slot10, Vector3(-(slot3.rect.width * slot0.rightPanel.localScale.x + slot2 + slot8), slot10.localPosition.y, slot10.localPosition.z))
+	setAnchoredPosition(slot1, {
+		x = -(slot3.rect.width * slot0.rightPanel.localScale.x + slot2 + slot8)
+	})
 end
 
 slot0.init = function (slot0)

@@ -128,6 +128,7 @@ slot0.init = function (slot0)
 	slot0._ActivityBtns = slot0:findTF("linkBtns", slot0._rightPanel)
 	slot0._activitySummaryBtn = slot0:findTF("activityButton", slot0._ActivityBtns)
 	slot0._activityMapBtn = slot0:findTF("activity_map_btn", slot0._ActivityBtns)
+	slot0._activityMiniGameBtn = slot0:findTF("activity_minigame", slot0._ActivityBtns)
 	slot0._acitivtyEscortBtn = slot0:findTF("activity_escort", slot0._ActivityBtns)
 	slot0._anniversaryBtn = slot0:findTF("anniversary_btn", slot0._ActivityBtns)
 	slot0._bottomPanel = slot0:findTF("toTop/frame/bottomPanel")
@@ -232,14 +233,14 @@ slot0.uiEnterAnim = function (slot0)
 		slot0:updateFlagShip(slot0.tempFlagShip)
 	end
 
-	setAnchoredPosition(slot0._bottomPanel, Vector3(0, -128, 0))
-	setAnchoredPosition(slot0._btmbg, Vector3(0, -128, 0))
-	setAnchoredPosition(slot0._commanderPanel, Vector3(0, 141, 0))
-	setAnchoredPosition(slot0._commanderPanelbg, Vector3(0, 141, 0))
-	setAnchoredPosition(slot0._leftPanel, Vector3(-222, 0, 0))
-	setAnchoredPosition(slot0._rightPanel, Vector3(847, 0, 0))
-	setAnchoredPosition(slot0._rightTopPanel, Vector3(847, 0, 0))
-	setAnchoredPosition(slot0._playerResOb, Vector3(0, 77, 0))
+	setAnchoredPosition(slot0._bottomPanel, Vector2(0, -128))
+	setAnchoredPosition(slot0._btmbg, Vector2(0, -128))
+	setAnchoredPosition(slot0._commanderPanel, Vector2(0, 141))
+	setAnchoredPosition(slot0._commanderPanelbg, Vector2(0, 141))
+	setAnchoredPosition(slot0._leftPanel, Vector2(-222, 0))
+	setAnchoredPosition(slot0._rightPanel, Vector2(847, 0))
+	setAnchoredPosition(slot0._rightTopPanel, Vector2(847, 0))
+	setAnchoredPosition(slot0._playerResOb, Vector2(0, 77))
 	slot0:ejectGimmick(slot0._bottomPanel, slot0.REVERT_VERTICAL, slot0.EJECT_DURATION_ENTER, nil, {
 		0,
 		1
@@ -652,6 +653,26 @@ slot0.updateActivityEscort = function (slot0)
 		onButton(slot0, slot0._acitivtyEscortBtn, function ()
 			slot0:emit(MainUIMediator.OPEN_ESCORT)
 		end)
+	end
+end
+
+slot0.updateActivityMiniGameBtn = function (slot0, slot1)
+	setActive(slot0._activityMiniGameBtn, slot1 and not slot1:isEnd())
+
+	if slot1 and not slot1.isEnd() then
+		slot4 = getProxy(MiniGameProxy):GetHubByHubId(slot3)
+
+		setText(slot0._activityMiniGameBtn:Find("tip/Text"), (slot4:getConfig("reward_need") <= slot4.usedtime and slot4.ultimate == 0 and "!") or slot4.count)
+		setActive(slot7.parent, slot4.count > 0 or (slot4.getConfig("reward_need") <= slot4.usedtime and slot4.ultimate == 0))
+		onButton(slot0, slot0._activityMiniGameBtn, function ()
+			if not pg.StoryMgr:IsPlayed("TIANHOUYUYI1") then
+				pg.StoryMgr.GetInstance():Play("TIANHOUYUYI1", function ()
+					pg.m02:sendNotification(GAME.GO_SCENE, SCENE.SUMMER_FEAST)
+				end, true)
+			else
+				pg.m02:sendNotification(GAME.GO_SCENE, SCENE.SUMMER_FEAST)
+			end
+		end, SFX_PANEL)
 	end
 end
 
@@ -2535,29 +2556,113 @@ slot0.updateBuffList = function (slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 10-42, warpins: 2 ---
+				--- BLOCK #1 10-27, warpins: 2 ---
 				setActive(slot0._buffText, true)
-				setText(slot0._buffText:Find("Text"), slot1:getConfig("desc"))
 
-				local function slot2()
+				slot0 = slot0._buffText:getConfig("desc")
+
+				if slot0._buffText:getConfig("max_time") > 0 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 1-6, warpins: 1 ---
-					setActive(slot0._buffText, false)
+					--- BLOCK #0 28-39, warpins: 1 ---
+					slot2 = pg.TimeMgr:GetInstance():GetServerTime()
 
-					return
+					if slot1.timestamp then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 40-79, warpins: 1 ---
+						setText(slot0._buffText:Find("Text"), string.gsub(slot0, "$" .. 1, pg.TimeMgr.GetInstance():DescCDTime(slot4)))
+
+						slot0._buffTimeCountDownTimer = Timer.New(function ()
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 1-4, warpins: 1 ---
+							if slot0 > 0 then
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 5-32, warpins: 1 ---
+								slot0 = slot0 - 1
+
+								setText(slot1._buffText:Find("Text"), string.gsub(slot1._buffText.Find("Text"), "$" .. 1, pg.TimeMgr.GetInstance():DescCDTime(pg.TimeMgr.GetInstance().DescCDTime)))
+								--- END OF BLOCK #0 ---
+
+
+
+							else
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 33-46, warpins: 1 ---
+								slot1._buffTimeCountDownTimer:Stop()
+								setActive(slot1._buffTimeCountDownTimer._buffText, false)
+								setActive(slot3, false)
+								--- END OF BLOCK #0 ---
+
+
+
+							end
+
+							--- END OF BLOCK #0 ---
+
+							FLOW; TARGET BLOCK #1
+
+
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #1 47-47, warpins: 2 ---
+							return
+							--- END OF BLOCK #1 ---
+
+
+
+						end, 1, -1)
+
+						slot0._buffTimeCountDownTimer:Start()
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 80-88, warpins: 1 ---
+					setText(slot0._buffText:Find("Text"), slot0)
 					--- END OF BLOCK #0 ---
 
 
 
 				end
 
-				setText._buffTextTimer = Timer.New(slot2, slot2.BUFFTEXT_SHOW_TIME, 1)
+				--- END OF BLOCK #1 ---
 
-				setText._buffTextTimer:Start()
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 89-104, warpins: 3 ---
+				slot0._buffTextTimer = Timer.New(function ()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-11, warpins: 1 ---
+					setActive(slot0._buffText, false)
+					setActive._buffTimeCountDownTimer:Stop()
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
+				end, slot3.BUFFTEXT_SHOW_TIME, 1)
+
+				slot0._buffTextTimer:Start()
 
 				return
-				--- END OF BLOCK #1 ---
+				--- END OF BLOCK #2 ---
 
 
 
@@ -2575,7 +2680,7 @@ slot0.updateBuffList = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 22-22, warpins: 2 ---
+		--- BLOCK #1 22-23, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 
@@ -3289,6 +3394,19 @@ slot0.notifyActivitySummary = function (slot0, slot1, slot2)
 
 	return
 	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot0.notifyAnniversary = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
+	setActive(slot0._anniversaryBtn:Find("tip"), slot1)
+
+	return
+	--- END OF BLOCK #0 ---
 
 
 
@@ -4621,11 +4739,13 @@ slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #15 202-204, warpins: 2 ---
-	if slot0.isOpenSecondary then
+	if slot0._buffTimeCountDownTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 205-208, warpins: 1 ---
-		slot0:closeSecondaryPanel(false)
+		--- BLOCK #0 205-210, warpins: 1 ---
+		slot0._buffTimeCountDownTimer:Stop()
+
+		slot0._buffTimeCountDownTimer = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4639,7 +4759,18 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #16 209-212, warpins: 2 ---
+	--- BLOCK #16 211-213, warpins: 2 ---
+	if slot0.isOpenSecondary then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 214-217, warpins: 1 ---
+		slot0:closeSecondaryPanel(false)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
@@ -4647,11 +4778,19 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #17 213-217, warpins: 0 ---
+	--- BLOCK #17 218-221, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #18 222-226, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.skinTimers) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 213-215, warpins: 1 ---
+		--- BLOCK #0 222-224, warpins: 1 ---
 		slot5:Stop()
 		--- END OF BLOCK #0 ---
 
@@ -4660,27 +4799,27 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 216-217, warpins: 2 ---
+		--- BLOCK #1 225-226, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #19
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #18 218-223, warpins: 1 ---
+	--- BLOCK #19 227-232, warpins: 1 ---
 	slot0.skinTimers = nil
 
 	slot0:recycleSpineChar()
 
 	return
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #19 ---
 
 
 

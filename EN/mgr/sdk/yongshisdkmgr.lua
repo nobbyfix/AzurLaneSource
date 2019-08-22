@@ -329,8 +329,8 @@ return {
 	OnAndoridBackPress = function ()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0:onBackPressed()
+		--- BLOCK #0 1-3, warpins: 1 ---
+		PressBack()
 
 		return
 		--- END OF BLOCK #0 ---

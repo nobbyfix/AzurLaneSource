@@ -2492,11 +2492,11 @@ function slot17(slot0, slot1)
 			if slot2 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 97-112, warpins: 1 ---
+				--- BLOCK #0 97-111, warpins: 1 ---
 				slot2 = setAnchoredPosition
 				slot3 = slot3
 				slot3 = slot3._asideSignDate
-				slot4 = Vector3
+				slot4 = Vector2
 				slot5 = slot0
 				slot5 = slot5.signDate
 				slot5 = slot5[3]
@@ -2505,9 +2505,8 @@ function slot17(slot0, slot1)
 				slot6 = slot6.signDate
 				slot6 = slot6[3]
 				slot6 = slot6[2]
-				slot7 = 0
 
-				slot2(slot3, slot4(slot5, slot6, slot7))
+				slot2(slot3, slot4(slot5, slot6))
 				--- END OF BLOCK #0 ---
 
 
@@ -2520,7 +2519,7 @@ function slot17(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 113-117, warpins: 1 ---
+			--- BLOCK #0 112-116, warpins: 1 ---
 			slot2 = setText
 			slot3 = slot3
 			slot3 = slot3._asideSignDate
@@ -2540,11 +2539,11 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 118-119, warpins: 3 ---
+		--- BLOCK #4 117-118, warpins: 3 ---
 		if slot1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 120-126, warpins: 1 ---
+			--- BLOCK #0 119-125, warpins: 1 ---
 			slot3 = slot1
 			slot2 = slot1.setOnComplete
 			slot4 = System
@@ -2604,7 +2603,7 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #5 127-127, warpins: 2 ---
+		--- BLOCK #5 126-126, warpins: 2 ---
 		return
 		--- END OF BLOCK #5 ---
 
@@ -7861,7 +7860,12 @@ function slot17(slot0, slot1)
 		if slot4 > slot5 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 10-18, warpins: 1 ---
+			--- BLOCK #0 10-21, warpins: 1 ---
+			slot5 = print
+			slot6 = slot4
+
+			slot5(slot6)
+
 			slot5 = slot0
 			slot5 = slot5[slot4]
 			slot5 = slot5.ship_group
@@ -7873,7 +7877,7 @@ function slot17(slot0, slot1)
 			if not slot6 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 19-22, warpins: 1 ---
+				--- BLOCK #0 22-25, warpins: 1 ---
 				slot7 = slot0
 				slot7 = slot7[slot4]
 				slot2 = slot7.name
@@ -7884,7 +7888,7 @@ function slot17(slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 23-27, warpins: 1 ---
+				--- BLOCK #0 26-30, warpins: 1 ---
 				slot7 = Ship
 				slot7 = slot7.getShipName
 				slot8 = slot6.id
@@ -7903,7 +7907,7 @@ function slot17(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 28-31, warpins: 2 ---
+			--- BLOCK #1 31-34, warpins: 2 ---
 			slot7 = slot0
 			slot7 = slot7[slot4]
 			slot3 = slot7.painting
@@ -7914,11 +7918,11 @@ function slot17(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 32-33, warpins: 1 ---
+			--- BLOCK #0 35-36, warpins: 1 ---
 			if slot4 == 0 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 34-42, warpins: 1 ---
+				--- BLOCK #0 37-45, warpins: 1 ---
 				slot5 = getProxy
 				slot6 = PlayerProxy
 				slot5 = slot5(slot6)
@@ -7934,11 +7938,11 @@ function slot17(slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 43-44, warpins: 1 ---
+				--- BLOCK #0 46-47, warpins: 1 ---
 				if slot4 == -1 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 45-49, warpins: 1 ---
+					--- BLOCK #0 48-52, warpins: 1 ---
 					slot5 = getProxy
 					slot6 = PlayerProxy
 					slot5 = slot5(slot6)
@@ -7946,7 +7950,7 @@ function slot17(slot0, slot1)
 					if slot5 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 50-64, warpins: 1 ---
+						--- BLOCK #0 53-67, warpins: 1 ---
 						slot7 = slot5
 						slot6 = slot5.getData
 						slot6 = slot6(slot7)
@@ -7995,13 +7999,13 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 65-67, warpins: 6 ---
+	--- BLOCK #1 68-70, warpins: 6 ---
 	slot5 = slot1.actorName
 
 	if slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 68-72, warpins: 1 ---
+		--- BLOCK #0 71-75, warpins: 1 ---
 		slot5 = HXSet
 		slot5 = slot5.hxLan
 		slot6 = slot1.actorName
@@ -8020,13 +8024,13 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 73-75, warpins: 2 ---
+	--- BLOCK #2 76-78, warpins: 2 ---
 	slot5 = slot1.painting
 
 	if not slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 76-76, warpins: 1 ---
+		--- BLOCK #0 79-79, warpins: 1 ---
 		slot5 = {}
 		--- END OF BLOCK #0 ---
 
@@ -8041,13 +8045,13 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 77-79, warpins: 2 ---
+	--- BLOCK #3 80-82, warpins: 2 ---
 	slot6 = slot1.nameColor
 
 	if slot6 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 80-85, warpins: 1 ---
+		--- BLOCK #0 83-88, warpins: 1 ---
 		slot6 = setColorStr
 		slot7 = slot2
 		slot8 = slot1.nameColor
@@ -8056,7 +8060,7 @@ function slot17(slot0, slot1)
 		if not slot6 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 86-90, warpins: 2 ---
+			--- BLOCK #0 89-93, warpins: 2 ---
 			slot6 = setColorStr
 			slot7 = slot2
 			slot8 = COLOR_WHITE
@@ -8080,7 +8084,7 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 91-93, warpins: 2 ---
+	--- BLOCK #4 94-96, warpins: 2 ---
 	slot6 = slot2
 	slot7 = slot3
 

@@ -276,45 +276,16 @@ end
 pg.UIMgr.SetOutput = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 16-18, warpins: 2 ---
 	slot0.hrz = slot1
 	slot0.vtc = slot2
 
-	if slot3 >= 0 then
+	if ((slot3 >= 0 and 1) or 0) - ((slot0.fingerId >= 0 and 1) or 0) ~= 0 and slot0._areaImg and slot0._stickImg then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 6-9, warpins: 1 ---
-		if slot0.fingerId < 0 then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 10-18, warpins: 1 ---
-			slot0._areaImg.color = slot0._normalColor
-			slot0._stickImg.color = slot0._normalColor
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-		--- END OF BLOCK #0 ---
-
-
-
-	else
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 19-22, warpins: 1 ---
-		if slot0.fingerId >= 0 then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 23-30, warpins: 1 ---
-			slot0._areaImg.color = slot0._darkColor
-			slot0._stickImg.color = slot0._darkColor
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
+		--- BLOCK #0 25-28, warpins: 1 ---
+		slot0._areaImg.color = (slot4 > 0 and slot0._normalColor) or slot0._darkColor
+		slot0._stickImg.color = (slot4 > 0 and slot0._normalColor) or slot0._darkColor
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -322,9 +293,16 @@ pg.UIMgr.SetOutput = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 31-34, warpins: 2 ---
-		slot0._stick.localPosition = Vector3.zero
+		--- BLOCK #1 35-39, warpins: 2 ---
 		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 46-46, warpins: 2 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -337,11 +315,30 @@ pg.UIMgr.SetOutput = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 35-36, warpins: 3 ---
+	--- BLOCK #1 47-49, warpins: 4 ---
+	if slot3 < 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 50-53, warpins: 1 ---
+		slot0._stick.localPosition = Vector3.zero
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 54-55, warpins: 2 ---
 	slot0.fingerId = slot3
 
 	return
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #2 ---
 
 
 
