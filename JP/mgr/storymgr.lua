@@ -2493,11 +2493,11 @@ function slot17(slot0, slot1)
 			if slot2 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 97-112, warpins: 1 ---
+				--- BLOCK #0 97-111, warpins: 1 ---
 				slot2 = setAnchoredPosition
 				slot3 = slot3
 				slot3 = slot3._asideSignDate
-				slot4 = Vector3
+				slot4 = Vector2
 				slot5 = slot0
 				slot5 = slot5.signDate
 				slot5 = slot5[3]
@@ -2506,9 +2506,8 @@ function slot17(slot0, slot1)
 				slot6 = slot6.signDate
 				slot6 = slot6[3]
 				slot6 = slot6[2]
-				slot7 = 0
 
-				slot2(slot3, slot4(slot5, slot6, slot7))
+				slot2(slot3, slot4(slot5, slot6))
 				--- END OF BLOCK #0 ---
 
 
@@ -2521,7 +2520,7 @@ function slot17(slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 113-117, warpins: 1 ---
+			--- BLOCK #0 112-116, warpins: 1 ---
 			slot2 = setText
 			slot3 = slot3
 			slot3 = slot3._asideSignDate
@@ -2541,11 +2540,11 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 118-119, warpins: 3 ---
+		--- BLOCK #4 117-118, warpins: 3 ---
 		if slot1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 120-126, warpins: 1 ---
+			--- BLOCK #0 119-125, warpins: 1 ---
 			slot3 = slot1
 			slot2 = slot1.setOnComplete
 			slot4 = System
@@ -2605,7 +2604,7 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #5 127-127, warpins: 2 ---
+		--- BLOCK #5 126-126, warpins: 2 ---
 		return
 		--- END OF BLOCK #5 ---
 

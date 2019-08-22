@@ -77,6 +77,10 @@ slot0.doAnim = function (slot0, slot1)
 			slot0()
 		end
 
+		if slot1.exited then
+			return
+		end
+
 		w = slot1._itemsWindow.rect.width
 		h = slot1._itemsWindow.rect.height
 
