@@ -8590,7 +8590,7 @@ with Anti-Sub gear.
 		key = "commander_build_pool_tip"
 	},
 	commander_select_matiral_erro = {
-		tip = "This Meowfficer is at the max level; you can only Enhance its Skill with Meowfficers of the same type.",
+		tip = "<size=22>This Meowfficer is at the max level; you can only Enhance its Skill with Meowfficers of the same type.</size>",
 		key = "commander_select_matiral_erro"
 	},
 	commander_material_is_rarity = {
@@ -8862,72 +8862,8 @@ with Anti-Sub gear.
 		key = "newplayer_notice_2"
 	},
 	newplayer_notice_3 = {
-		key = "newplayer_notice_3",
-		tip = {
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_build"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_info"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_ability1"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_ability2"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_ability3"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_up"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_skill1"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/commander_skill2"
-				}
-			},
-			disableScroll = true,
-			pageMode = true,
-			defaultpage = 2,
-			ImageMode = true,
-			windowSize = {
-				x = 1263,
-				y = 873
-			},
-			windowPos = {
-				y = -70
-			},
-			helpSize = {
-				x = 1176,
-				y = 1024
-			}
-		}
+		tip = "Unlocked after completing all Exams",
+		key = "newplayer_notice_3"
 	},
 	newplayer_notice_4 = {
 		tip = "Receive Portland after claiming victory",
@@ -9466,7 +9402,7 @@ with Anti-Sub gear.
 		key = "school_title_dajiangtang"
 	},
 	school_title_zhihuimiao = {
-		tip = "Cat Lodge ",
+		tip = "Cattery ",
 		key = "school_title_zhihuimiao"
 	},
 	school_title_shitang = {

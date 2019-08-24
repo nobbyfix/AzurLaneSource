@@ -22,7 +22,9 @@ slot0.init = function (slot0)
 	slot1 = pg.shop_template
 
 	onButton(slot0, slot0.goldAddBtn, function ()
-		pg.goldExchangeMgr = GoldExchangeView.New()
+		if not pg.goldExchangeMgr then
+			pg.goldExchangeMgr = GoldExchangeView.New()
+		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.oilAddBtn, function ()
 		if not ShoppingStreet.getRiseShopId(ShopArgs.BuyOil, slot0.player.buyOilCount) then
@@ -87,7 +89,8 @@ slot0.init = function (slot0)
 				yesText = "text_buy",
 				content = i18n("word_diamond_tip", slot1.player:getFreeGem(), slot1.player:getChargeGem(), slot1.player:getTotalGem()),
 				onYes = slot0,
-				alignment = TextAnchor.UpperLeft
+				alignment = TextAnchor.UpperLeft,
+				weight = LayerWeightConst.TOP_LAYER
 			})
 		else
 			slot0()
