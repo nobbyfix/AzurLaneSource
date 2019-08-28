@@ -1250,6 +1250,7 @@ pg.activity_template = {
 	[355] = {
 		mark = 20190807,
 		title_res_tag = "xixuegui",
+		time = "stop",
 		type = 18,
 		config_id = 3,
 		is_show = 1,
@@ -1275,33 +1276,6 @@ pg.activity_template = {
 			},
 			{
 				14846
-			}
-		},
-		time = {
-			timer,
-			{
-				{
-					2019,
-					8,
-					7
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					8,
-					22
-				},
-				{
-					23,
-					59,
-					59
-				}
 			}
 		},
 		bg = {

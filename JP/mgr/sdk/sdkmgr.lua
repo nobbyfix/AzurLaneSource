@@ -213,6 +213,14 @@ pg.SdkMgr.UserEventUpload = function (slot0, slot1)
 	slot0:Call("UserEventUpload", slot1)
 end
 
+pg.SdkMgr.CheckAiriCanBuy = function (slot0)
+	if PLATFORM_CODE == PLATFORM_US or PLATFORM_CODE == PLATFORM_JP then
+		return slot0:Get("CheckAiriCanBuy")
+	else
+		return true
+	end
+end
+
 AIRI_LAST_GEN_TIME = 0
 AIRI_GEN_LIMIT_TIME = 30
 

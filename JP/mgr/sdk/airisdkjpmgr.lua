@@ -60,6 +60,8 @@ function AiriTranscodeResult(slot0)
 end
 
 function AiriBuyResult(slot0)
+	slot0.OnAiriBuying = -1
+
 	pg.UIMgr.GetInstance():LoadingOff()
 
 	if slot0.AiriResultCodeHandler(slot0.R_CODE) then
@@ -124,6 +126,8 @@ function OnAppPauseForSDK(slot0)
 end
 
 return {
+	OnAiriBuying = -1,
+	BuyingLimit = 60,
 	CheckAudit = function ()
 		return NetConst.GATEWAY_PORT == 20001 and NetConst.GATEWAY_HOST == "blhxjpauditapi.azurlane.jp"
 	end,
@@ -163,12 +167,14 @@ return {
 		pg.UIMgr.GetInstance().LoadingOn:TranscodeRequest()
 	end,
 	AiriBuy = function (slot0, slot1, slot2)
+		slot0.OnAiriBuying = Time.realtimeSinceStartup
+
 		if slot1 == "audit" then
-			slot0:NewBuy(slot0, Airisdk.BuyServerTag.audit, slot2)
+			slot1:NewBuy(slot0, Airisdk.BuyServerTag.audit, slot2)
 		elseif slot1 == "preAudit" then
-			slot0:NewBuy(slot0, Airisdk.BuyServerTag.preAudit, slot2)
+			slot1:NewBuy(slot0, Airisdk.BuyServerTag.preAudit, slot2)
 		elseif slot1 == "production" then
-			slot0:NewBuy(slot0, Airisdk.BuyServerTag.production, slot2)
+			slot1:NewBuy(slot0, Airisdk.BuyServerTag.production, slot2)
 		end
 	end,
 	LinkSocial = function (slot0, slot1, slot2)
@@ -261,7 +267,13 @@ return {
 	end,
 	BindCPU = function ()
 		if CSharpVersion > 30 then
-			slot0:callSdkApi("bindCpu", nil)
+		end
+	end,
+	CheckAiriCanBuy = function ()
+		if slot0.OnAiriBuying == -1 or slot0.BuyingLimit < Time.realtimeSinceStartup - slot0.OnAiriBuying then
+			return true
+		else
+			return false
 		end
 	end,
 	AiriResultCodeHandler = function (slot0)
