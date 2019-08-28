@@ -81,7 +81,7 @@ slot0.register = function (slot0)
 		slot16 = slot15:getConfig("config_client").bufflist
 
 		for slot21, slot22 in pairs(getProxy(PlayerProxy):getData().buff_list) do
-			if table.contains(slot16, slot22.id) then
+			if pg.TimeMgr:GetInstance():GetServerTime() < slot22.timestamp and table.contains(slot16, slot22.id) then
 				table.insert(slot14, ActivityBuff.New(slot15.id, slot22.id, slot22.timestamp))
 			end
 		end

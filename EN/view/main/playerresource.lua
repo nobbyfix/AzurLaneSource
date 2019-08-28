@@ -114,7 +114,9 @@ end
 
 slot0.willExit = function (slot0)
 	if pg.goldExchangeMgr then
-		pg.goldExchangeMgr:willExit()
+		pg.goldExchangeMgr:exit()
+
+		pg.goldExchangeMgr = nil
 	end
 
 	PoolMgr.GetInstance():ReturnUI("ResPanel", slot0._go)
