@@ -112,7 +112,7 @@ slot0.didEnter = function (slot0)
 
 		slot0:emit(slot1.ON_CLOSE)
 
-		if slot0.contextData.onClose then
+		if slot0 then
 			slot0()
 		end
 	end, SFX_CANCEL, {

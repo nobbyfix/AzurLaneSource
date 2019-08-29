@@ -1,25 +1,12 @@
 class("RequestVoteInfoCommand", pm.SimpleCommand).execute = function (slot0, slot1)
-	slot3 = pg.activity_vote[slot1:getBody().configId]
-	slot5 = getProxy(VoteProxy).getVoteGroup(slot4)
+	slot2 = slot1:getBody()
+	slot4 = getProxy(VoteProxy).getVoteGroup(slot3)
+	slot5 = getProxy(ActivityProxy)
 	slot6 = nil
 	slot6 = coroutine.create(function ()
-		if not slot0 then
-			local function slot5(slot0)
-				slot0 = slot0
-
-				slot1()
-			end
-
-			slot1:sendNotification(GAME.FETCH_VOTE_INFO, {
-				callback = slot5
-			})
-			coroutine.yield()
-			slot4:initVoteGroup(getProxy(ActivityProxy):getActivityById(GAME.FETCH_VOTE_INFO.activityId), slot5.id, nil)
-		end
-
-		if VoteConst.RankExpiredTime < pg.TimeMgr.GetInstance():GetServerTime() - slot4.lastRequestTime then
-			slot1:sendNotification(GAME.FETCH_VOTE_RANK, {
-				type = 1,
+		if not pg.TimeMgr.GetInstance():GetServerTime() or VoteConst.RankExpiredTime < slot0 - slot1.lastRequestTime then
+			slot2:sendNotification(GAME.FETCH_VOTE_INFO, {
+				voteId = slot3.configId,
 				callback = function (slot0)
 					slot0 = slot0
 
@@ -27,9 +14,15 @@ class("RequestVoteInfoCommand", pm.SimpleCommand).execute = function (slot0, slo
 				end
 			})
 			coroutine.yield()
-			slot4:updateRankInfo(nil)
 
-			nil.lastRequestTime = slot0
+			slot1.lastRequestTime = pg.TimeMgr.GetInstance():GetServerTime()
+			slot3 = 0
+
+			if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_VOTE) then
+				slot3 = slot2.data1
+			end
+
+			slot1:initVoteGroup(slot1, slot3.configId, slot3)
 		end
 
 		if slot3.callback then

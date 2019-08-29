@@ -268,6 +268,10 @@ return {
 		if slot0.ToInt() == 0 then
 			return true
 		else
+			if slot1 == 100110 then
+				slot0.ClearAccountCache()
+			end
+
 			print("SDK Error Code:" .. slot1)
 
 			if string.find(i18n("new_airi_error_code_" .. slot1), "UndefinedLanguage") then
