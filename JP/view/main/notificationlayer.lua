@@ -36,6 +36,7 @@ slot0.init = function (slot0)
 	slot0.contain = slot0.frame:Find("contain")
 	slot1 = slot0.contain:Find("list")
 	slot0.content = slot1:Find("content")
+	slot0.emptySign = slot1:Find("EmptySign")
 	slot0.prefabSelf = slot1:Find("popo_self").gameObject
 	slot0.prefabOthers = slot1:Find("popo_other").gameObject
 	slot0.prefabPublic = slot1:Find("popo_public").gameObject
@@ -1091,11 +1092,20 @@ slot0.updateAll = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 26-30, warpins: 1 ---
+	--- BLOCK #2 26-35, warpins: 1 ---
 	scrollToBottom(slot0.content.parent)
+	setActive(slot0.emptySign, PLATFORM_CODE == PLATFORM_JP and #slot0.filteredMessages <= 0)
 
 	return
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 44-45, warpins: 2 ---
+	--- END OF BLOCK #3 ---
 
 
 
@@ -1198,9 +1208,19 @@ slot0.append = function (slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 56-56, warpins: 3 ---
+	--- BLOCK #1 56-61, warpins: 3 ---
+	setActive(slot0.emptySign, PLATFORM_CODE == PLATFORM_JP and #slot0.filteredMessages <= 0)
+
 	return
 	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 70-71, warpins: 2 ---
+	--- END OF BLOCK #2 ---
 
 
 

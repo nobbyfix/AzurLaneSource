@@ -61,6 +61,10 @@ pg.PushNotificationMgr.isEnableShipName = function (slot0)
 end
 
 pg.PushNotificationMgr.Push = function (slot0, slot1, slot2, slot3)
+	if PLATFORM_CODE == PLATFORM_CH and CSharpVersion < 31 and PLATFORM == PLATFORM_ANDROID then
+		return
+	end
+
 	NotificationMgr.Inst:ScheduleLocalNotification(slot1, slot2, slot3)
 	slot0:log(slot1, slot2, slot3)
 end

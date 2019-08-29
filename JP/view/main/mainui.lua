@@ -133,6 +133,8 @@ slot0.init = function (slot0)
 	slot0._bottomPanel = slot0:findTF("toTop/frame/bottomPanel")
 	slot0._dockBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/dockBtn")
 	slot0._equipBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/equipButton")
+	slot0._voteBtn = slot0:findTF("vote_btn", slot0._ActivityBtns)
+	slot0._voteBookBtn = slot0:findTF("btm/vote_book_btn", slot0._bottomPanel)
 	slot0._buildBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/buildButton")
 	slot0._taskBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/taskButton")
 	slot0._guildButton = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/guildButton")
@@ -182,6 +184,7 @@ slot0.init = function (slot0)
 	slot0.initChatBgH = slot0._chatTextBg.sizeDelta.y
 	slot0.effectTF = slot0:findTF("effect", slot0._paintingTF)
 	slot0._chatBg = slot0:findTF("chatPreview", slot0._rightPanel)
+	slot0._chatEmptySign = slot0:findTF("EmptySign", slot0._chatBg)
 	slot0._chatList = slot0:findTF("list", slot0._chatBg)
 	slot0._chatItem = slot0:findTF("item", slot0._chatBg).gameObject
 
@@ -732,21 +735,34 @@ slot0.updateMemoryBookBtn = function (slot0, slot1)
 	end
 end
 
-slot0.updateVoteBtn = function (slot0, slot1)
-	slot2 = nil
+slot0.updateVoteBtn = function (slot0, slot1, slot2)
+	slot0:updateVoteBookBtn(slot2)
+end
 
-	if slot1 and not slot1:isEnd() then
-		slot2 = _.detect(pg.activity_vote.all, function (slot0)
-			return pg.TimeMgr.GetInstance():inTime(pg.activity_vote[slot0].time)
-		end)
-	end
+slot0.updateVoteBookBtn = function (slot0, slot1)
+	setActive(slot0._voteBookBtn, slot1 and not slot1:IsExpired())
+	slot0:RemoveVoteBookTimer()
 
-	setActive(slot0._voteBtn, slot2 ~= nil)
-
-	if slot2 then
-		onButton(slot0, slot0._voteBtn, function ()
-			slot0:emit(MainUIMediator.ON_VOTE)
+	if slot1 and not slot1.IsExpired() then
+		onButton(slot0, slot0._voteBookBtn, function ()
+			slot0:emit(MainUIMediator.ON_VOTE_BOOK)
 		end, SFX_PANEL)
+
+		slot3 = slot0._voteBookBtn:Find("tip/Text"):GetComponent(typeof(Text))
+		slot0.voteBookTimer = Timer.New(function ()
+			slot0.text = slot1:GetCDTime("#9BB8FFFF")
+		end, 1, -1)
+
+		slot0.voteBookTimer:Start()
+		slot0.voteBookTimer.func()
+	end
+end
+
+slot0.RemoveVoteBookTimer = function (slot0)
+	if slot0.voteBookTimer then
+		slot0.voteBookTimer:Stop()
+
+		slot0.voteBookTimer = nil
 	end
 end
 
@@ -3415,6 +3431,17 @@ slot0.notifyActivitySummary = function (slot0, slot1, slot2)
 
 end
 
+slot0.updateVoteNotices = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-1, warpins: 1 ---
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
 slot0.updateAttireBtn = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
@@ -3496,7 +3523,9 @@ slot0.updateChat = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 24-29, warpins: 1 ---
+	--- BLOCK #4 24-31, warpins: 1 ---
+	setActive(slot0._chatEmptySign, PLATFORM_CODE == PLATFORM_JP and slot0._chatList.childCount <= 0)
+
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -3504,11 +3533,19 @@ slot0.updateChat = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 30-45, warpins: 0 ---
-	for slot6 = 0, slot0._chatList.childCount - 1, 1 do
+	--- BLOCK #5 38-42, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 43-58, warpins: 0 ---
+	for slot6 = 0, slot2 - 1, 1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 30-40, warpins: 2 ---
+		--- BLOCK #0 43-53, warpins: 2 ---
 		slot0._chatList:GetChild(slot6).gameObject:SetActive(slot6 < #slot1)
 		--- END OF BLOCK #0 ---
 
@@ -3517,21 +3554,13 @@ slot0.updateChat = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 44-45, warpins: 2 ---
+		--- BLOCK #1 57-58, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #6 46-49, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
@@ -3539,18 +3568,26 @@ slot0.updateChat = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 50-129, warpins: 0 ---
+	--- BLOCK #7 59-62, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #8 63-142, warpins: 0 ---
 	for slot6, slot7 in ipairs(slot1) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 50-88, warpins: 1 ---
+		--- BLOCK #0 63-101, warpins: 1 ---
 		slot0:findTF("channel", slot8):GetComponent("Image").sprite = GetSpriteFromAtlas("channel", ChatConst.GetChannelSprite(slot7.type) .. "_1920", true)
 		slot10 = slot0:findTF("text", slot0._chatList:GetChild(slot6 - 1)):GetComponent("RichText")
 
 		if slot7.type == ChatConst.ChannelPublic then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 89-96, warpins: 1 ---
+			--- BLOCK #0 102-109, warpins: 1 ---
 			slot10.supportRichText = true
 
 			ChatProxy.InjectPublic(slot10, slot7)
@@ -3561,7 +3598,7 @@ slot0.updateChat = function (slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 97-99, warpins: 1 ---
+			--- BLOCK #0 110-112, warpins: 1 ---
 			slot10.supportRichText = slot7.emojiId ~= nil
 			--- END OF BLOCK #0 ---
 
@@ -3570,14 +3607,14 @@ slot0.updateChat = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 103-112, warpins: 2 ---
+			--- BLOCK #1 116-125, warpins: 2 ---
 			slot11 = false
 			slot12 = slot7.player.name .. ": " .. slot7.content
 
 			if not slot7.emojiId then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 113-119, warpins: 1 ---
+				--- BLOCK #0 126-132, warpins: 1 ---
 				slot11, slot12 = contentWrap(slot12, 40, 1.65)
 				--- END OF BLOCK #0 ---
 
@@ -3592,7 +3629,7 @@ slot0.updateChat = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 120-122, warpins: 2 ---
+			--- BLOCK #2 133-135, warpins: 2 ---
 			slot10.text = slot12 .. ((slot11 and "...") or "")
 			--- END OF BLOCK #2 ---
 
@@ -3601,7 +3638,7 @@ slot0.updateChat = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 126-127, warpins: 2 ---
+			--- BLOCK #3 139-140, warpins: 2 ---
 			--- END OF BLOCK #3 ---
 
 
@@ -3614,23 +3651,23 @@ slot0.updateChat = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 128-129, warpins: 3 ---
+		--- BLOCK #1 141-142, warpins: 3 ---
 		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #9
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 130-130, warpins: 1 ---
+	--- BLOCK #9 143-143, warpins: 1 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #9 ---
 
 
 
@@ -4396,13 +4433,14 @@ end
 slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot0:RemoveVoteBookTimer()
 	slot0:disablePartialBlur()
 
 	if slot0.leans then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 7-10, warpins: 1 ---
+		--- BLOCK #0 10-13, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -4410,11 +4448,11 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 11-18, warpins: 0 ---
+		--- BLOCK #1 14-21, warpins: 0 ---
 		for slot4, slot5 in ipairs(slot0.leans) do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 11-16, warpins: 1 ---
+			--- BLOCK #0 14-19, warpins: 1 ---
 			LeanTween.cancel(go(slot5))
 			--- END OF BLOCK #0 ---
 
@@ -4423,7 +4461,7 @@ slot0.willExit = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 17-18, warpins: 2 ---
+			--- BLOCK #1 20-21, warpins: 2 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -4437,7 +4475,7 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 19-20, warpins: 1 ---
+		--- BLOCK #2 22-23, warpins: 1 ---
 		slot0.leans = {}
 		--- END OF BLOCK #2 ---
 
@@ -4452,7 +4490,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 21-37, warpins: 2 ---
+	--- BLOCK #1 24-40, warpins: 2 ---
 	LeanTween.cancel(go(slot0._paintingTF))
 	slot0:resumePaitingState()
 	LeanTween.cancel(slot0._chat.gameObject)
@@ -4460,7 +4498,7 @@ slot0.willExit = function (slot0)
 	if slot0._delayVoiceTweenID then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 38-43, warpins: 1 ---
+		--- BLOCK #0 41-46, warpins: 1 ---
 		LeanTween.cancel(slot0._delayVoiceTweenID)
 
 		slot0._delayVoiceTweenID = nil
@@ -4477,11 +4515,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 44-46, warpins: 2 ---
+	--- BLOCK #2 47-49, warpins: 2 ---
 	if slot0._delayL2dSeID then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 47-52, warpins: 1 ---
+		--- BLOCK #0 50-55, warpins: 1 ---
 		LeanTween.cancel(slot0._delayL2dSeID)
 
 		slot0._delayL2dSeID = nil
@@ -4498,11 +4536,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 53-55, warpins: 2 ---
+	--- BLOCK #3 56-58, warpins: 2 ---
 	if slot0._newBG then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 56-68, warpins: 1 ---
+		--- BLOCK #0 59-71, warpins: 1 ---
 		LeanTween.cancel(go(slot0._newBG))
 		Destroy(go(slot0._newBG))
 
@@ -4520,11 +4558,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 69-71, warpins: 2 ---
+	--- BLOCK #4 72-74, warpins: 2 ---
 	if slot0._paintingFX then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 72-88, warpins: 1 ---
+		--- BLOCK #0 75-91, warpins: 1 ---
 		PoolMgr.GetInstance():ReturnPrefab("Effect/" .. slot1, slot0._paintingFX.name, slot0._paintingFX.obj)
 
 		slot0._paintingFX = nil
@@ -4541,11 +4579,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 89-91, warpins: 2 ---
+	--- BLOCK #5 92-94, warpins: 2 ---
 	if slot0.chatTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 92-97, warpins: 1 ---
+		--- BLOCK #0 95-100, warpins: 1 ---
 		slot0.chatTimer:Stop()
 
 		slot0.chatTimer = nil
@@ -4562,7 +4600,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 98-110, warpins: 2 ---
+	--- BLOCK #6 101-113, warpins: 2 ---
 	pg.TimeMgr.GetInstance():RemoveTimer(slot0._timeSchedule)
 
 	slot0._timeSchedule = nil
@@ -4570,7 +4608,7 @@ slot0.willExit = function (slot0)
 	if slot0._resPanel then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 111-116, warpins: 1 ---
+		--- BLOCK #0 114-119, warpins: 1 ---
 		slot0._resPanel:exit()
 
 		slot0._resPanel = nil
@@ -4587,11 +4625,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 117-119, warpins: 2 ---
+	--- BLOCK #7 120-122, warpins: 2 ---
 	if slot0.flagShip then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 120-126, warpins: 1 ---
+		--- BLOCK #0 123-129, warpins: 1 ---
 		retPaintingPrefab(slot0._paintingTF, slot0.flagShip:getPainting())
 		--- END OF BLOCK #0 ---
 
@@ -4606,11 +4644,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 127-129, warpins: 2 ---
+	--- BLOCK #8 130-132, warpins: 2 ---
 	if slot0.live2dChar then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 130-135, warpins: 1 ---
+		--- BLOCK #0 133-138, warpins: 1 ---
 		slot0.live2dChar:Dispose()
 
 		slot0.live2dChar = nil
@@ -4627,7 +4665,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #9 136-141, warpins: 2 ---
+	--- BLOCK #9 139-144, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
@@ -4635,11 +4673,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #10 142-156, warpins: 0 ---
+	--- BLOCK #10 145-159, warpins: 0 ---
 	for slot4 = slot0.bannerContent.childCount - 1, 0, -1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 142-156, warpins: 2 ---
+		--- BLOCK #0 145-159, warpins: 2 ---
 		clearImageSprite(slot0.bannerContent:GetChild(slot4))
 		Destroy(slot0.bannerSnap:RemoveChild(slot4))
 		--- END OF BLOCK #0 ---
@@ -4655,13 +4693,13 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #11 157-162, warpins: 1 ---
+	--- BLOCK #11 160-165, warpins: 1 ---
 	removeAllChildren(slot0.bannerDots)
 
 	if slot0._currentVoice then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 163-167, warpins: 1 ---
+		--- BLOCK #0 166-170, warpins: 1 ---
 		slot0._currentVoice:Stop(true)
 		--- END OF BLOCK #0 ---
 
@@ -4676,13 +4714,13 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #12 168-172, warpins: 2 ---
+	--- BLOCK #12 171-175, warpins: 2 ---
 	slot0._currentVoice = nil
 
 	if slot0.loadedCVBankName then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 173-179, warpins: 1 ---
+		--- BLOCK #0 176-182, warpins: 1 ---
 		pg.CriMgr.UnloadCVBank(slot0.loadedCVBankName)
 
 		slot0.loadedCVBankName = nil
@@ -4699,11 +4737,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #13 180-182, warpins: 2 ---
+	--- BLOCK #13 183-185, warpins: 2 ---
 	if slot0.defaultBgSprite then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 183-192, warpins: 1 ---
+		--- BLOCK #0 186-195, warpins: 1 ---
 		setImageSprite(slot0._bg:Find("bg"), slot0.defaultBgSprite)
 
 		slot0.defaultBgSprite = nil
@@ -4720,11 +4758,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #14 193-195, warpins: 2 ---
+	--- BLOCK #14 196-198, warpins: 2 ---
 	if slot0._buffTextTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 196-201, warpins: 1 ---
+		--- BLOCK #0 199-204, warpins: 1 ---
 		slot0._buffTextTimer:Stop()
 
 		slot0._buffTextTimer = nil
@@ -4741,11 +4779,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #15 202-204, warpins: 2 ---
+	--- BLOCK #15 205-207, warpins: 2 ---
 	if slot0._buffTimeCountDownTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 205-210, warpins: 1 ---
+		--- BLOCK #0 208-213, warpins: 1 ---
 		slot0._buffTimeCountDownTimer:Stop()
 
 		slot0._buffTimeCountDownTimer = nil
@@ -4762,11 +4800,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #16 211-213, warpins: 2 ---
+	--- BLOCK #16 214-216, warpins: 2 ---
 	if slot0.isOpenSecondary then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 214-217, warpins: 1 ---
+		--- BLOCK #0 217-220, warpins: 1 ---
 		slot0:closeSecondaryPanel(false)
 		--- END OF BLOCK #0 ---
 
@@ -4781,7 +4819,20 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #17 218-221, warpins: 2 ---
+	--- BLOCK #17 221-223, warpins: 2 ---
+	if slot0._secondaryPanel then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 224-235, warpins: 1 ---
+		PoolMgr.GetInstance():ReturnUI("MainUISecondaryPanel", go(slot0._secondaryPanel))
+
+		slot0._secondaryPanel = nil
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
@@ -4789,11 +4840,19 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #18 222-226, warpins: 0 ---
+	--- BLOCK #18 236-239, warpins: 2 ---
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #19 240-244, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.skinTimers) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 222-224, warpins: 1 ---
+		--- BLOCK #0 240-242, warpins: 1 ---
 		slot5:Stop()
 		--- END OF BLOCK #0 ---
 
@@ -4802,27 +4861,27 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 225-226, warpins: 2 ---
+		--- BLOCK #1 243-244, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #20
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #19 227-232, warpins: 1 ---
+	--- BLOCK #20 245-250, warpins: 1 ---
 	slot0.skinTimers = nil
 
 	slot0:recycleSpineChar()
 
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #20 ---
 
 
 

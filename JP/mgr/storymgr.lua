@@ -3779,7 +3779,7 @@ function slot17(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 313-336, warpins: 3 ---
+			--- BLOCK #1 313-319, warpins: 3 ---
 			function slot9(slot0)
 
 				-- Decompilation error in this vicinity:
@@ -4295,6 +4295,37 @@ function slot17(slot0, slot1)
 			slot10 = setPaintingPrefab
 			slot11 = slot4
 			slot12 = slot7
+			slot13 = slot1.hidePaintObj
+
+			if slot13 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 320-321, warpins: 1 ---
+				slot13 = "_n"
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 322-322, warpins: 1 ---
+				slot13 = ""
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 323-343, warpins: 2 ---
+			slot12 = slot12 .. slot13
 			slot13 = "duihua"
 
 			slot10(slot11, slot12, slot13)
@@ -4322,14 +4353,14 @@ function slot17(slot0, slot1)
 			if slot10 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 337-340, warpins: 1 ---
+				--- BLOCK #0 344-347, warpins: 1 ---
 				slot10 = slot1.shake
 				slot10 = slot10.x
 
 				if not slot10 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 341-341, warpins: 1 ---
+					--- BLOCK #0 348-348, warpins: 1 ---
 					slot10 = 0
 					--- END OF BLOCK #0 ---
 
@@ -4344,14 +4375,14 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 342-345, warpins: 2 ---
+				--- BLOCK #1 349-352, warpins: 2 ---
 				slot11 = slot1.shake
 				slot11 = slot11.y
 
 				if not slot11 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 346-346, warpins: 1 ---
+					--- BLOCK #0 353-353, warpins: 1 ---
 					slot11 = 10
 					--- END OF BLOCK #0 ---
 
@@ -4366,7 +4397,7 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #2 347-366, warpins: 2 ---
+				--- BLOCK #2 354-373, warpins: 2 ---
 				slot12 = tf
 				slot13 = slot4
 				slot12 = tf(slot4)
@@ -4396,7 +4427,7 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #3 367-367, warpins: 1 ---
+				--- BLOCK #3 374-374, warpins: 1 ---
 				slot16 = 1
 				--- END OF BLOCK #3 ---
 
@@ -4405,7 +4436,7 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #4 368-375, warpins: 2 ---
+				--- BLOCK #4 375-382, warpins: 2 ---
 				--- END OF BLOCK #4 ---
 
 				FLOW; TARGET BLOCK #6
@@ -4413,7 +4444,7 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #5 376-376, warpins: 1 ---
+				--- BLOCK #5 383-383, warpins: 1 ---
 				slot15 = 1
 				--- END OF BLOCK #5 ---
 
@@ -4422,27 +4453,27 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #6 377-381, warpins: 2 ---
+				--- BLOCK #6 384-388, warpins: 2 ---
 				--- END OF BLOCK #6 ---
 
 
 
 			end
 
-			--- END OF BLOCK #1 ---
+			--- END OF BLOCK #2 ---
 
-			FLOW; TARGET BLOCK #2
+			FLOW; TARGET BLOCK #3
 
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 382-384, warpins: 2 ---
+			--- BLOCK #3 389-391, warpins: 2 ---
 			slot10 = slot1.action
 
 			if slot10 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 385-397, warpins: 1 ---
+				--- BLOCK #0 392-404, warpins: 1 ---
 				slot10 = findTF
 				slot11 = slot4
 				slot12 = "fitter"
@@ -4463,23 +4494,23 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 398-602, warpins: 0 ---
+				--- BLOCK #1 405-609, warpins: 0 ---
 				for slot15, slot16 in slot12, slot13, slot14 do
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 398-400, warpins: 1 ---
+					--- BLOCK #0 405-407, warpins: 1 ---
 					slot17 = slot16.type
 
 					if slot17 == "shake" then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 401-403, warpins: 1 ---
+						--- BLOCK #0 408-410, warpins: 1 ---
 						slot17 = slot16.x
 
 						if not slot17 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 404-404, warpins: 1 ---
+							--- BLOCK #0 411-411, warpins: 1 ---
 							slot17 = 0
 							--- END OF BLOCK #0 ---
 
@@ -4494,13 +4525,13 @@ function slot17(slot0, slot1)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #1 405-407, warpins: 2 ---
+						--- BLOCK #1 412-414, warpins: 2 ---
 						slot18 = slot16.y
 
 						if not slot18 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 408-408, warpins: 1 ---
+							--- BLOCK #0 415-415, warpins: 1 ---
 							slot18 = 10
 							--- END OF BLOCK #0 ---
 
@@ -4515,7 +4546,7 @@ function slot17(slot0, slot1)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #2 409-431, warpins: 2 ---
+						--- BLOCK #2 416-438, warpins: 2 ---
 						slot19 = LeanTween
 						slot19 = slot19.move
 						slot20 = rtf
@@ -4541,7 +4572,7 @@ function slot17(slot0, slot1)
 						if not slot22 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 432-432, warpins: 1 ---
+							--- BLOCK #0 439-439, warpins: 1 ---
 							slot22 = 1
 							--- END OF BLOCK #0 ---
 
@@ -4556,7 +4587,7 @@ function slot17(slot0, slot1)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #3 433-438, warpins: 2 ---
+						--- BLOCK #3 440-445, warpins: 2 ---
 						slot19 = slot19(slot20, slot21, slot22)
 						slot20 = slot19
 						slot19 = slot19.setLoopPingPong
@@ -4565,7 +4596,7 @@ function slot17(slot0, slot1)
 						if not slot21 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 439-439, warpins: 1 ---
+							--- BLOCK #0 446-446, warpins: 1 ---
 							slot21 = 1
 							--- END OF BLOCK #0 ---
 
@@ -4580,7 +4611,7 @@ function slot17(slot0, slot1)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #4 440-449, warpins: 2 ---
+						--- BLOCK #4 447-456, warpins: 2 ---
 						slot19 = slot19(slot20, slot21)
 						slot20 = slot19
 						slot19 = slot19.setUseEstimatedTime
@@ -4593,7 +4624,7 @@ function slot17(slot0, slot1)
 						if not slot21 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 450-450, warpins: 1 ---
+							--- BLOCK #0 457-457, warpins: 1 ---
 							slot21 = 0
 							--- END OF BLOCK #0 ---
 
@@ -4608,7 +4639,7 @@ function slot17(slot0, slot1)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #5 451-454, warpins: 2 ---
+						--- BLOCK #5 458-461, warpins: 2 ---
 						slot19(slot20, slot21)
 
 						slot19 = slot16.delay
@@ -4616,7 +4647,7 @@ function slot17(slot0, slot1)
 						if not slot19 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 455-455, warpins: 1 ---
+							--- BLOCK #0 462-462, warpins: 1 ---
 							slot19 = 0
 							--- END OF BLOCK #0 ---
 
@@ -4631,13 +4662,13 @@ function slot17(slot0, slot1)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #6 456-458, warpins: 2 ---
+						--- BLOCK #6 463-465, warpins: 2 ---
 						slot20 = slot16.dur
 
 						if not slot20 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 459-459, warpins: 1 ---
+							--- BLOCK #0 466-466, warpins: 1 ---
 							slot20 = 1
 							--- END OF BLOCK #0 ---
 
@@ -4652,7 +4683,7 @@ function slot17(slot0, slot1)
 
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #7 460-463, warpins: 2 ---
+						--- BLOCK #7 467-470, warpins: 2 ---
 						slot21 = slot16.number
 						slot20 = slot20 * slot21
 						slot11 = slot19 + slot20
@@ -4663,19 +4694,19 @@ function slot17(slot0, slot1)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 464-466, warpins: 1 ---
+						--- BLOCK #0 471-473, warpins: 1 ---
 						slot17 = slot16.type
 
 						if slot17 == "zoom" then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 467-469, warpins: 1 ---
+							--- BLOCK #0 474-476, warpins: 1 ---
 							slot17 = slot16.from
 
 							if not slot17 then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 470-470, warpins: 1 ---
+								--- BLOCK #0 477-477, warpins: 1 ---
 								slot17 = {
 									0,
 									0,
@@ -4694,13 +4725,13 @@ function slot17(slot0, slot1)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #1 471-473, warpins: 2 ---
+							--- BLOCK #1 478-480, warpins: 2 ---
 							slot18 = slot16.to
 
 							if not slot18 then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 474-474, warpins: 1 ---
+								--- BLOCK #0 481-481, warpins: 1 ---
 								slot18 = {
 									1,
 									1,
@@ -4719,7 +4750,7 @@ function slot17(slot0, slot1)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #2 475-492, warpins: 2 ---
+							--- BLOCK #2 482-499, warpins: 2 ---
 							slot19 = slot16.dur
 							slot20 = LeanTween
 							slot20 = slot20.scale
@@ -4740,7 +4771,7 @@ function slot17(slot0, slot1)
 							if not slot22 then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 493-493, warpins: 1 ---
+								--- BLOCK #0 500-500, warpins: 1 ---
 								slot22 = 0
 								--- END OF BLOCK #0 ---
 
@@ -4755,7 +4786,7 @@ function slot17(slot0, slot1)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #3 494-497, warpins: 2 ---
+							--- BLOCK #3 501-504, warpins: 2 ---
 							slot20(slot21, slot22)
 
 							slot20 = slot16.delay
@@ -4763,7 +4794,7 @@ function slot17(slot0, slot1)
 							if not slot20 then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 498-498, warpins: 1 ---
+								--- BLOCK #0 505-505, warpins: 1 ---
 								slot20 = 0
 								--- END OF BLOCK #0 ---
 
@@ -4778,13 +4809,13 @@ function slot17(slot0, slot1)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #4 499-501, warpins: 2 ---
+							--- BLOCK #4 506-508, warpins: 2 ---
 							slot21 = slot16.dur
 
 							if not slot21 then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 502-502, warpins: 1 ---
+								--- BLOCK #0 509-509, warpins: 1 ---
 								slot21 = 0
 								--- END OF BLOCK #0 ---
 
@@ -4799,7 +4830,7 @@ function slot17(slot0, slot1)
 
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #5 503-504, warpins: 2 ---
+							--- BLOCK #5 510-511, warpins: 2 ---
 							slot11 = slot20 + slot21
 							--- END OF BLOCK #5 ---
 
@@ -4808,13 +4839,13 @@ function slot17(slot0, slot1)
 						else
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 505-507, warpins: 1 ---
+							--- BLOCK #0 512-514, warpins: 1 ---
 							slot17 = slot16.type
 
 							if slot17 == "rotate" then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 508-516, warpins: 1 ---
+								--- BLOCK #0 515-523, warpins: 1 ---
 								slot17 = LeanTween
 								slot17 = slot17.rotate
 								slot18 = rtf
@@ -4826,7 +4857,7 @@ function slot17(slot0, slot1)
 								if not slot20 then
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #0 517-517, warpins: 1 ---
+									--- BLOCK #0 524-524, warpins: 1 ---
 									slot20 = 1
 									--- END OF BLOCK #0 ---
 
@@ -4841,7 +4872,7 @@ function slot17(slot0, slot1)
 
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #1 518-523, warpins: 2 ---
+								--- BLOCK #1 525-530, warpins: 2 ---
 								slot17 = slot17(slot18, slot19, slot20)
 								slot18 = slot17
 								slot17 = slot17.setLoopPingPong
@@ -4850,7 +4881,7 @@ function slot17(slot0, slot1)
 								if not slot19 then
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #0 524-524, warpins: 1 ---
+									--- BLOCK #0 531-531, warpins: 1 ---
 									slot19 = 1
 									--- END OF BLOCK #0 ---
 
@@ -4865,7 +4896,7 @@ function slot17(slot0, slot1)
 
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #2 525-534, warpins: 2 ---
+								--- BLOCK #2 532-541, warpins: 2 ---
 								slot17 = slot17(slot18, slot19)
 								slot18 = slot17
 								slot17 = slot17.setUseEstimatedTime
@@ -4878,7 +4909,7 @@ function slot17(slot0, slot1)
 								if not slot19 then
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #0 535-535, warpins: 1 ---
+									--- BLOCK #0 542-542, warpins: 1 ---
 									slot19 = 0
 									--- END OF BLOCK #0 ---
 
@@ -4893,7 +4924,7 @@ function slot17(slot0, slot1)
 
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #3 536-539, warpins: 2 ---
+								--- BLOCK #3 543-546, warpins: 2 ---
 								slot17(slot18, slot19)
 
 								slot17 = slot16.delay
@@ -4901,7 +4932,7 @@ function slot17(slot0, slot1)
 								if not slot17 then
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #0 540-540, warpins: 1 ---
+									--- BLOCK #0 547-547, warpins: 1 ---
 									slot17 = 0
 									--- END OF BLOCK #0 ---
 
@@ -4916,13 +4947,13 @@ function slot17(slot0, slot1)
 
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #4 541-543, warpins: 2 ---
+								--- BLOCK #4 548-550, warpins: 2 ---
 								slot18 = slot16.dur
 
 								if not slot18 then
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #0 544-544, warpins: 1 ---
+									--- BLOCK #0 551-551, warpins: 1 ---
 									slot18 = 1
 									--- END OF BLOCK #0 ---
 
@@ -4937,7 +4968,7 @@ function slot17(slot0, slot1)
 
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #5 545-548, warpins: 2 ---
+								--- BLOCK #5 552-555, warpins: 2 ---
 								slot19 = slot16.number
 								slot18 = slot18 * slot19
 								slot11 = slot17 + slot18
@@ -4948,19 +4979,19 @@ function slot17(slot0, slot1)
 							else
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 549-551, warpins: 1 ---
+								--- BLOCK #0 556-558, warpins: 1 ---
 								slot17 = slot16.type
 
 								if slot17 == "move" then
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #0 552-554, warpins: 1 ---
+									--- BLOCK #0 559-561, warpins: 1 ---
 									slot17 = slot16.x
 
 									if not slot17 then
 
 										-- Decompilation error in this vicinity:
-										--- BLOCK #0 555-555, warpins: 1 ---
+										--- BLOCK #0 562-562, warpins: 1 ---
 										slot17 = 0
 										--- END OF BLOCK #0 ---
 
@@ -4975,13 +5006,13 @@ function slot17(slot0, slot1)
 
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #1 556-558, warpins: 2 ---
+									--- BLOCK #1 563-565, warpins: 2 ---
 									slot18 = slot16.y
 
 									if not slot18 then
 
 										-- Decompilation error in this vicinity:
-										--- BLOCK #0 559-559, warpins: 1 ---
+										--- BLOCK #0 566-566, warpins: 1 ---
 										slot18 = 0
 										--- END OF BLOCK #0 ---
 
@@ -4996,7 +5027,7 @@ function slot17(slot0, slot1)
 
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #2 560-582, warpins: 2 ---
+									--- BLOCK #2 567-589, warpins: 2 ---
 									slot19 = LeanTween
 									slot19 = slot19.move
 									slot20 = rtf
@@ -5022,7 +5053,7 @@ function slot17(slot0, slot1)
 									if not slot22 then
 
 										-- Decompilation error in this vicinity:
-										--- BLOCK #0 583-583, warpins: 1 ---
+										--- BLOCK #0 590-590, warpins: 1 ---
 										slot22 = 1
 										--- END OF BLOCK #0 ---
 
@@ -5037,7 +5068,7 @@ function slot17(slot0, slot1)
 
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #3 584-589, warpins: 2 ---
+									--- BLOCK #3 591-596, warpins: 2 ---
 									slot19 = slot19(slot20, slot21, slot22)
 									slot20 = slot19
 									slot19 = slot19.setDelay
@@ -5046,7 +5077,7 @@ function slot17(slot0, slot1)
 									if not slot21 then
 
 										-- Decompilation error in this vicinity:
-										--- BLOCK #0 590-590, warpins: 1 ---
+										--- BLOCK #0 597-597, warpins: 1 ---
 										slot21 = 0
 										--- END OF BLOCK #0 ---
 
@@ -5061,7 +5092,7 @@ function slot17(slot0, slot1)
 
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #4 591-594, warpins: 2 ---
+									--- BLOCK #4 598-601, warpins: 2 ---
 									slot19(slot20, slot21)
 
 									slot19 = slot16.delay
@@ -5069,7 +5100,7 @@ function slot17(slot0, slot1)
 									if not slot19 then
 
 										-- Decompilation error in this vicinity:
-										--- BLOCK #0 595-595, warpins: 1 ---
+										--- BLOCK #0 602-602, warpins: 1 ---
 										slot19 = 0
 										--- END OF BLOCK #0 ---
 
@@ -5084,13 +5115,13 @@ function slot17(slot0, slot1)
 
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #5 596-598, warpins: 2 ---
+									--- BLOCK #5 603-605, warpins: 2 ---
 									slot20 = slot16.dur
 
 									if not slot20 then
 
 										-- Decompilation error in this vicinity:
-										--- BLOCK #0 599-599, warpins: 1 ---
+										--- BLOCK #0 606-606, warpins: 1 ---
 										slot20 = 1
 										--- END OF BLOCK #0 ---
 
@@ -5105,7 +5136,7 @@ function slot17(slot0, slot1)
 
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #6 600-600, warpins: 2 ---
+									--- BLOCK #6 607-607, warpins: 2 ---
 									slot11 = slot19 + slot20
 									--- END OF BLOCK #6 ---
 
@@ -5134,7 +5165,7 @@ function slot17(slot0, slot1)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #1 601-602, warpins: 6 ---
+					--- BLOCK #1 608-609, warpins: 6 ---
 					--- END OF BLOCK #1 ---
 
 
@@ -5148,7 +5179,7 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #2 603-613, warpins: 1 ---
+				--- BLOCK #2 610-620, warpins: 1 ---
 				slot12 = true
 				slot0.inAction = slot12
 				slot12 = LeanTween
@@ -5178,14 +5209,14 @@ function slot17(slot0, slot1)
 
 
 			end
-			--- END OF BLOCK #2 ---
+			--- END OF BLOCK #3 ---
 
 
 
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 614-625, warpins: 1 ---
+			--- BLOCK #0 621-632, warpins: 1 ---
 			slot9 = removeAllChildren
 			slot11 = slot4
 			slot10 = slot4.Find
@@ -5211,7 +5242,7 @@ function slot17(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 626-626, warpins: 3 ---
+		--- BLOCK #4 633-633, warpins: 3 ---
 		--- END OF BLOCK #4 ---
 
 
@@ -5219,7 +5250,7 @@ function slot17(slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 627-641, warpins: 1 ---
+		--- BLOCK #0 634-648, warpins: 1 ---
 		slot6 = removeAllChildren
 		slot8 = slot4
 		slot7 = slot4.Find
@@ -5239,13 +5270,13 @@ function slot17(slot0, slot1)
 		if slot6 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 642-644, warpins: 1 ---
+			--- BLOCK #0 649-651, warpins: 1 ---
 			slot6 = slot1.nameColor
 
 			if slot6 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 645-650, warpins: 1 ---
+				--- BLOCK #0 652-657, warpins: 1 ---
 				slot6 = setColorStr
 				slot7 = slot1.actorName
 				slot8 = slot1.nameColor
@@ -5254,7 +5285,7 @@ function slot17(slot0, slot1)
 				if not slot6 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 651-654, warpins: 2 ---
+					--- BLOCK #0 658-661, warpins: 2 ---
 					slot6 = setColorStr
 					slot7 = slot1.actorName
 					slot8 = COLOR_WHITE
@@ -5277,7 +5308,7 @@ function slot17(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 655-666, warpins: 2 ---
+			--- BLOCK #1 662-673, warpins: 2 ---
 			slot7 = HXSet
 			slot7 = slot7.hxLan
 			slot8 = slot6
@@ -5309,7 +5340,7 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #11 667-670, warpins: 3 ---
+	--- BLOCK #11 674-677, warpins: 3 ---
 	function slot6()
 
 		-- Decompilation error in this vicinity:
@@ -5380,7 +5411,7 @@ function slot17(slot0, slot1)
 	if slot7 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 671-676, warpins: 1 ---
+		--- BLOCK #0 678-683, warpins: 1 ---
 		slot8 = slot0
 		slot7 = slot0.flashin
 		slot9 = slot1
@@ -5408,7 +5439,7 @@ function slot17(slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 677-678, warpins: 1 ---
+		--- BLOCK #0 684-685, warpins: 1 ---
 		slot7 = slot6
 
 		slot7()
@@ -5425,14 +5456,14 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #12 679-682, warpins: 2 ---
+	--- BLOCK #12 686-689, warpins: 2 ---
 	slot0.preStep = slot1
 	slot7 = slot1.blackBg
 
 	if slot7 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 683-689, warpins: 1 ---
+		--- BLOCK #0 690-696, warpins: 1 ---
 		slot7 = setActive
 		slot8 = slot0._curtain
 		slot9 = true
@@ -5455,7 +5486,7 @@ function slot17(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #13 690-691, warpins: 2 ---
+	--- BLOCK #13 697-698, warpins: 2 ---
 	return
 	--- END OF BLOCK #13 ---
 

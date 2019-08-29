@@ -88,6 +88,12 @@ function slot6(slot0, slot1)
 	slot0.liveCom.FinishAction = function (slot0)
 		slot0.live2dAction = nil
 
+		if slot0.finishActionCB then
+			slot0.finishActionCB()
+
+			slot0.finishActionCB = nil
+		end
+
 		slot0.liveCom:SetAction(slot1.idleActions[math.ceil(math.random(#slot1.idleActions))])
 	end
 
@@ -128,8 +134,14 @@ slot0.GetTouchPart = function (slot0)
 	return slot0.liveCom:GetTouchPart()
 end
 
-slot0.TriggerAction = function (slot0, slot1, slot2)
-	slot0(slot0, slot1, slot2)
+slot0.TriggerAction = function (slot0, slot1, slot2, slot3)
+	if slot2 then
+		slot0.finishActionCB = slot2
+	else
+		slot0.finishActionCB = nil
+	end
+
+	slot0(slot0, slot1, slot3)
 end
 
 slot0.Dispose = function (slot0)

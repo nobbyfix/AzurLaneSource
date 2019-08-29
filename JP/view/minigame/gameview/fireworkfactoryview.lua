@@ -123,11 +123,13 @@ slot0.init = function (slot0)
 end
 
 slot0.SetSprite = function (slot0, slot1, slot2)
-	slot1:GetComponent("Image").sprite = ResourceMgr.Inst:getAssetSync("ui/fireworkfactoryui_atlas", slot2, typeof(Sprite), true, false)
+	slot0:SetImageSprite(slot1:GetComponent("Image"), slot2)
 end
 
 slot0.SetImageSprite = function (slot0, slot1, slot2)
-	slot1.sprite = ResourceMgr.Inst:getAssetSync("ui/fireworkfactoryui_atlas", slot2, typeof(Sprite), true, false)
+	pg.PoolMgr.GetInstance():GetSprite("ui/fireworkfactoryui_atlas", slot2, false, function (slot0)
+		slot0.sprite = slot0
+	end)
 end
 
 slot0.didEnter = function (slot0)
@@ -1544,9 +1546,8 @@ slot0.willExit = function (slot0)
 	if slot0.effect_light then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 16-34, warpins: 1 ---
+		--- BLOCK #0 16-25, warpins: 1 ---
 		pg.PoolMgr.GetInstance():ReturnPrefab("ui/light01", "", slot0.effect_light)
-		pg.PoolMgr.GetInstance():DestroyPrefab("ui/light01", "")
 		--- END OF BLOCK #0 ---
 
 
@@ -1560,11 +1561,14 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 35-37, warpins: 2 ---
+	--- BLOCK #1 26-45, warpins: 2 ---
+	pg.PoolMgr.GetInstance():DestroyPrefab("ui/light01", "")
+	pg.PoolMgr.GetInstance():DestroySprite("ui/fireworkfactoryui_atlas")
+
 	if slot0.OPTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 38-43, warpins: 1 ---
+		--- BLOCK #0 46-51, warpins: 1 ---
 		slot0.OPTimer:Stop()
 
 		slot0.OPTimer = nil
@@ -1581,7 +1585,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 44-44, warpins: 2 ---
+	--- BLOCK #2 52-52, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
