@@ -26,6 +26,11 @@ slot0.register = function (slot0)
 				end
 
 				slot0.data[slot5.id] = slot6
+
+				slot0:sendNotification(GAME.ACTIVITY_BE_UPDATED, {
+					isInit = true,
+					activity = slot6
+				})
 			end
 		end
 
@@ -55,6 +60,10 @@ slot0.register = function (slot0)
 		if pg.activity_template[slot1.id].type == ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2 then
 			slot0:updateActivityFleet(slot0.activity_info)
 		end
+
+		slot0:sendNotification(GAME.ACTIVITY_BE_UPDATED, {
+			activity = slot1
+		})
 	end)
 end
 
@@ -134,7 +143,11 @@ slot0.getPanelActivities = function (slot0)
 			end
 		end
 	end):sort(function (slot0, slot1)
-		return slot0.id < slot1.id
+		if slot0:getConfig("login_pop") == slot1:getConfig("login_pop") then
+			return slot0.id < slot1.id
+		else
+			return slot3 < slot2
+		end
 	end):value()
 end
 
@@ -201,7 +214,7 @@ slot0.findNextAutoActivity = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 15-130, warpins: 0 ---
+	--- BLOCK #1 15-166, warpins: 0 ---
 	for slot7, slot8 in ipairs(slot0:getPanelActivities()) do
 
 		-- Decompilation error in this vicinity:
@@ -368,10 +381,46 @@ slot0.findNextAutoActivity = function (slot0)
 								break
 								--- END OF BLOCK #1 ---
 
+								FLOW; TARGET BLOCK #2
+
+
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #2 129-129, warpins: 0 ---
+								--- END OF BLOCK #2 ---
+
 
 
 							end
 							--- END OF BLOCK #0 ---
+
+
+
+						end
+						--- END OF BLOCK #0 ---
+
+
+
+					else
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 130-134, warpins: 1 ---
+						if slot8.id == ActivityConst.SHADOW_PLAY_ID and slot8.clientData1 == 0 and (getProxy(TaskProxy):getTaskById(slot8:getConfig("config_data")[1]) or slot11:getFinishTaskById(slot10)) and not slot12:isReceive() then
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 163-164, warpins: 1 ---
+							slot1 = slot8
+
+							--- END OF BLOCK #0 ---
+
+							FLOW; TARGET BLOCK #1
+
+
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #1 165-165, warpins: 1 ---
+							break
+							--- END OF BLOCK #1 ---
 
 
 
@@ -403,7 +452,7 @@ slot0.findNextAutoActivity = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 129-130, warpins: 13 ---
+		--- BLOCK #1 165-166, warpins: 17 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -417,7 +466,7 @@ slot0.findNextAutoActivity = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 131-131, warpins: 5 ---
+	--- BLOCK #2 167-167, warpins: 6 ---
 	return slot1
 	--- END OF BLOCK #2 ---
 
@@ -1137,6 +1186,25 @@ slot0.recommendActivityFleet = function (slot0, slot1, slot2)
 	getProxy(FleetProxy):updateActivityFleet(slot1, slot2, slot6)
 
 	return
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
+slot0.GetVoteActivty = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-7, warpins: 1 ---
+	return slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_1) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_2) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_3) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_4) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_5) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_6) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_7) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_8)
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 55-55, warpins: 8 ---
 	--- END OF BLOCK #1 ---
 
 
