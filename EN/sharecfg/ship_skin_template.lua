@@ -30020,115 +30020,6 @@ pg.ship_skin_template = {
 			}
 		}
 	},
-	[205063] = {
-		ship_group = 20506,
-		name = "威尔士浴衣",
-		bullet_skin_main = "",
-		desc = "占坑",
-		illustrator2 = -1,
-		id = 205063,
-		bullet_skin_secondary = "",
-		no_showing = "0",
-		painting = "weiershiqinwang_4",
-		air_bullet_skin = "",
-		shop_type_id = 10,
-		hand_id = 1,
-		lip_smoothing = 0,
-		l2d_animations = "",
-		bg = "114",
-		skin_type = 0,
-		bg_sp = "",
-		voice_actor_2 = -1,
-		air_torpedo_skin = "",
-		prefab = "weiershiqinwang_4",
-		l2d_se = "",
-		aircraft_skin = "",
-		main_UI_FX = "",
-		shop_id = 0,
-		voice_actor = -1,
-		air_bomb_skin = "",
-		illustrator = -1,
-		rarity_bg = "",
-		l2d_para_range = "",
-		lip_sync_gain = 0,
-		show_skin = "stand2",
-		l2d_voice_calibrate = "",
-		tag = {
-			2
-		},
-		live2d_offset = {
-			0,
-			0,
-			0
-		},
-		fx_container = {
-			{
-				0,
-				1.99185,
-				1.15
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0.75,
-				-1.299
-			},
-			{
-				0,
-				0,
-				0
-			}
-		},
-		bound_bone = {
-			cannon = {
-				{
-					1.002,
-					0.734,
-					0
-				}
-			},
-			vicegun = {
-				{
-					1.219,
-					0.773,
-					0
-				}
-			},
-			torpedo = {
-				{
-					0.24,
-					0.03,
-					0
-				}
-			},
-			antiaircraft = {
-				{
-					1.459,
-					0.742,
-					0
-				}
-			}
-		},
-		smoke = {
-			{
-				50,
-				{
-					{
-						"smoke",
-						{
-							-0.49,
-							2.2,
-							0
-						}
-					}
-				}
-			}
-		}
-	},
 	[205070] = {
 		ship_group = 20507,
 		name = "Duke of York",
@@ -32211,101 +32102,6 @@ pg.ship_skin_template = {
 				{
 					1.11,
 					1.15,
-					0
-				}
-			}
-		},
-		smoke = {
-			{
-				50,
-				{
-					{
-						"smoke",
-						{
-							-0.49,
-							2.24,
-							0
-						}
-					}
-				}
-			}
-		}
-	},
-	[207034] = {
-		ship_group = 20703,
-		name = "光辉浴衣",
-		bullet_skin_main = "",
-		desc = "占坑",
-		illustrator2 = -1,
-		id = 207034,
-		bullet_skin_secondary = "",
-		no_showing = "0",
-		painting = "guanghui_5",
-		air_bullet_skin = "",
-		shop_type_id = 10,
-		hand_id = 1,
-		lip_smoothing = 0,
-		l2d_animations = "",
-		bg = "114",
-		skin_type = 0,
-		bg_sp = "",
-		voice_actor_2 = -1,
-		air_torpedo_skin = "",
-		prefab = "guanghui_5",
-		l2d_se = "",
-		aircraft_skin = "",
-		main_UI_FX = "",
-		shop_id = 70219,
-		voice_actor = -1,
-		air_bomb_skin = "",
-		illustrator = -1,
-		rarity_bg = "",
-		l2d_para_range = "",
-		lip_sync_gain = 0,
-		show_skin = "stand",
-		l2d_voice_calibrate = "",
-		tag = {
-			2
-		},
-		live2d_offset = {
-			0,
-			0,
-			0
-		},
-		fx_container = {
-			{
-				0,
-				1.99185,
-				1.15
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0.75,
-				-1.299
-			},
-			{
-				0,
-				0,
-				0
-			}
-		},
-		bound_bone = {
-			antiaircraft = {
-				{
-					1.01,
-					1.35,
-					0
-				}
-			},
-			plane = {
-				{
-					1.01,
-					1.35,
 					0
 				}
 			}
@@ -71161,7 +70957,7 @@ pg.ship_skin_template = {
 	},
 	[900196] = {
 		ship_group = 900196,
-		name = "祭典制霸！",
+		name = "Kitakaze",
 		bullet_skin_main = "",
 		desc = "{namecode:164}，准备就绪——指挥官，和{namecode:164}一起制霸祭典吧！…不过在那之前，可以先吃点东西吗？",
 		illustrator2 = -1,
@@ -74504,7 +74300,6 @@ pg.ship_skin_template = {
 		205060,
 		205061,
 		205062,
-		205063,
 		205070,
 		205072,
 		206010,
@@ -74524,7 +74319,6 @@ pg.ship_skin_template = {
 		207031,
 		207032,
 		207033,
-		207034,
 		207038,
 		207040,
 		207041,
