@@ -185,6 +185,9 @@ slot0.init = function (slot0)
 	slot0.effectTF = slot0:findTF("effect", slot0._paintingTF)
 	slot0._chatBg = slot0:findTF("chatPreview", slot0._rightPanel)
 	slot0._chatEmptySign = slot0:findTF("EmptySign", slot0._chatBg)
+
+	setActive(slot0._chatEmptySign, false)
+
 	slot0._chatList = slot0:findTF("list", slot0._chatBg)
 	slot0._chatItem = slot0:findTF("item", slot0._chatBg).gameObject
 

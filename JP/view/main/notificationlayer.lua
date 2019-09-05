@@ -37,6 +37,9 @@ slot0.init = function (slot0)
 	slot1 = slot0.contain:Find("list")
 	slot0.content = slot1:Find("content")
 	slot0.emptySign = slot1:Find("EmptySign")
+
+	setActive(slot0.emptySign, false)
+
 	slot0.prefabSelf = slot1:Find("popo_self").gameObject
 	slot0.prefabOthers = slot1:Find("popo_other").gameObject
 	slot0.prefabPublic = slot1:Find("popo_public").gameObject

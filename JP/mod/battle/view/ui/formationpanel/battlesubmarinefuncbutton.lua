@@ -34,10 +34,10 @@ slot1.ConfigSkin = function (slot0, slot1)
 end
 
 slot1.Enabled = function (slot0, slot1)
-	slot0.eventTriggers[GetOrAddComponent(slot0._btn, "EventTriggerListener")] = true
-	slot0.eventTriggers[GetOrAddComponent(slot0._block, "EventTriggerListener")] = true
-	GetOrAddComponent(slot0._btn, "EventTriggerListener").enabled = slot1
-	GetOrAddComponent(slot0._block, "EventTriggerListener").enabled = slot1
+	slot0.eventTriggers[GetComponent(slot0._btn, "EventTriggerListener")] = true
+	slot0.eventTriggers[GetComponent(slot0._block, "EventTriggerListener")] = true
+	GetComponent(slot0._btn, "EventTriggerListener").enabled = slot1
+	GetComponent(slot0._block, "EventTriggerListener").enabled = slot1
 end
 
 slot1.Disable = function (slot0)
@@ -47,8 +47,8 @@ slot1.Disable = function (slot0)
 
 	slot0:OnUnSelect()
 
-	GetOrAddComponent(slot0._btn, "EventTriggerListener").enabled = false
-	GetOrAddComponent(slot0._block, "EventTriggerListener").enabled = false
+	GetComponent(slot0._btn, "EventTriggerListener").enabled = false
+	GetComponent(slot0._block, "EventTriggerListener").enabled = false
 end
 
 slot1.OnSelected = function (slot0)
