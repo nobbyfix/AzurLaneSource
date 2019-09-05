@@ -896,6 +896,91 @@ slot0.getBuffList = function (slot0)
 
 end
 
+slot0.getBuffShipList = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-13, warpins: 1 ---
+	_.each(slot0:getActivitiesByType(ActivityConst.ACTIVITY_TYPE_SHIP_BUFF), function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-2, warpins: 1 ---
+		if slot0 and not slot0:isEnd() then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 8-16, warpins: 1 ---
+			if not pg.activity_expup_ship[slot0:getConfig("config_id")] then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 17-17, warpins: 1 ---
+				return
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 18-22, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 23-28, warpins: 0 ---
+			for slot7, slot8 in pairs(slot3) do
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 23-26, warpins: 1 ---
+				slot0[slot8[1]] = slot8[2]
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 27-28, warpins: 2 ---
+				--- END OF BLOCK #1 ---
+
+
+
+			end
+			--- END OF BLOCK #2 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 29-29, warpins: 3 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
+	end)
+
+	return {}
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
 slot0.getVirtualItemNumber = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:

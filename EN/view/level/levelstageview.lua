@@ -4086,10 +4086,10 @@ slot0.CheckFleetChange = function (slot0)
 	end) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 14-25, warpins: 1 ---
+		--- BLOCK #0 14-24, warpins: 1 ---
 		slot0:emit(LevelMediator2.ON_OP, {
 			type = ChapterConst.OpRetreat,
-			id = f.id
+			id = slot4.id
 		})
 		--- END OF BLOCK #0 ---
 
@@ -4104,15 +4104,15 @@ slot0.CheckFleetChange = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 26-30, warpins: 2 ---
+	--- BLOCK #1 25-29, warpins: 2 ---
 	if not slot3:isValid() and slot2 == ChapterConst.TypeNone then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 35-40, warpins: 1 ---
+		--- BLOCK #0 34-39, warpins: 1 ---
 		if slot1:getNextValidIndex() > 0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 41-55, warpins: 1 ---
+			--- BLOCK #0 40-54, warpins: 1 ---
 			local function slot7()
 
 				-- Decompilation error in this vicinity:
@@ -4149,7 +4149,7 @@ slot0.CheckFleetChange = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 56-58, warpins: 2 ---
+		--- BLOCK #1 55-57, warpins: 2 ---
 		return true
 		--- END OF BLOCK #1 ---
 
@@ -4164,7 +4164,7 @@ slot0.CheckFleetChange = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 59-61, warpins: 3 ---
+	--- BLOCK #2 58-60, warpins: 3 ---
 	return false
 	--- END OF BLOCK #2 ---
 
