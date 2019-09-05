@@ -3745,10 +3745,10 @@ slot0.checkBuyDone = function (slot0, slot1)
 	if slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 71-77, warpins: 1 ---
+		--- BLOCK #0 71-78, warpins: 1 ---
 		slot0.preAniName = slot2
 
-		slot0.live2dChar:TriggerAction(slot2, true)
+		slot0.live2dChar:TriggerAction(slot2, nil, true)
 		--- END OF BLOCK #0 ---
 
 
@@ -3762,7 +3762,7 @@ slot0.checkBuyDone = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 78-78, warpins: 2 ---
+	--- BLOCK #7 79-79, warpins: 2 ---
 	return slot5
 	--- END OF BLOCK #7 ---
 

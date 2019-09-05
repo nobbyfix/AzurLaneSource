@@ -87,7 +87,7 @@ return {
 			bgName = "bg_story_nepu2",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "港区近海巡逻这种简单的人物，就算我一个人执行也没什么问题…",
+			say = "港区近海巡逻这种简单的任务，就算我一个人执行也没什么问题…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -217,7 +217,7 @@ return {
 			bgName = "bg_story_nepu2",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "唔，我的意思并不是依赖指挥官的战斗里，而是作为大家心灵的支柱。",
+			say = "唔，我的意思并不是依赖指挥官的战斗力，而是作为大家心灵的支柱。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

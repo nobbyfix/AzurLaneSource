@@ -61,7 +61,7 @@ pg.PushNotificationMgr.isEnableShipName = function (slot0)
 end
 
 pg.PushNotificationMgr.Push = function (slot0, slot1, slot2, slot3)
-	if PLATFORM_CODE == PLATFORM_CH and CSharpVersion < 31 and PLATFORM == PLATFORM_ANDROID and slot0.SdkMgr.GetInstance():GetChannelUID() ~= nil and (slot4 == "0" or slot4 == "cps") then
+	if PLATFORM_CODE == PLATFORM_CH and CSharpVersion < 31 and PLATFORM == PLATFORM_ANDROID then
 		return
 	end
 

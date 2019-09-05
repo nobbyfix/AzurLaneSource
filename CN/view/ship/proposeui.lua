@@ -4773,16 +4773,65 @@ function slot2(slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 33-54, warpins: 3 ---
-		slot5 = PoolMgr
-		slot5 = slot5.GetInstance
-		slot5 = slot5()
-		slot6 = slot5
-		slot5 = slot5.GetPainting
-		slot7 = slot0.paintingName
-		slot8 = true
+		--- BLOCK #1 33-45, warpins: 3 ---
+		slot5 = slot0.paintingName
+		slot6 = PathMgr
+		slot6 = slot6.FileExists
+		slot7 = PathMgr
+		slot7 = slot7.getAssetBundle
+		slot8 = "painting/"
+		slot9 = slot5
+		slot10 = "_n"
+		slot8 = slot8 .. slot9 .. slot10
+		slot6 = slot6(slot7(slot8))
 
-		function slot9(slot0)
+		if slot6 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 46-54, warpins: 1 ---
+			slot6 = PlayerPrefs
+			slot6 = slot6.GetInt
+			slot7 = "paint_hide_other_obj_"
+			slot8 = slot5
+			slot7 = slot7 .. slot8
+			slot8 = 0
+			slot6 = slot6(slot7, slot8)
+
+			if slot6 ~= 0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 55-57, warpins: 1 ---
+				slot6 = slot5
+				slot7 = "_n"
+				slot5 = slot6 .. slot7
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 58-79, warpins: 3 ---
+		slot6 = PoolMgr
+		slot6 = slot6.GetInstance
+		slot6 = slot6()
+		slot7 = slot6
+		slot6 = slot6.GetPainting
+		slot8 = slot5
+		slot9 = true
+
+		function slot10(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-9, warpins: 1 ---
@@ -4891,42 +4940,42 @@ function slot2(slot0, slot1, slot2, slot3)
 
 		end
 
-		slot5(slot6, slot7, slot8, slot9)
+		slot6(slot7, slot8, slot9, slot10)
 
-		slot5 = ResourceMgr
-		slot5 = slot5.Inst
-		slot6 = slot5
-		slot5 = slot5.AssetExist
-		slot7 = "live2d/"
-		slot8 = string
-		slot8 = slot8.lower
-		slot9 = slot0.paintingName
-		slot8 = slot8(slot9)
-		slot7 = slot7 .. slot8
-		slot5 = slot5(slot6, slot7)
+		slot6 = ResourceMgr
+		slot6 = slot6.Inst
+		slot7 = slot6
+		slot6 = slot6.AssetExist
+		slot8 = "live2d/"
+		slot9 = string
+		slot9 = slot9.lower
+		slot10 = slot0.paintingName
+		slot9 = slot9(slot10)
+		slot8 = slot8 .. slot9
+		slot6 = slot6(slot7, slot8)
 
-		if slot5 then
+		if slot6 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 55-59, warpins: 1 ---
-			slot6 = slot0
-			slot5 = slot0.createLive2D
-			slot7 = slot0.paintingName
+			--- BLOCK #0 80-84, warpins: 1 ---
+			slot7 = slot0
+			slot6 = slot0.createLive2D
+			slot8 = slot0.paintingName
 
-			slot5(slot6, slot7)
+			slot6(slot7, slot8)
 			--- END OF BLOCK #0 ---
 
 
 
 		end
-		--- END OF BLOCK #1 ---
+		--- END OF BLOCK #2 ---
 
 
 
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 60-61, warpins: 1 ---
+		--- BLOCK #0 85-86, warpins: 1 ---
 		slot5 = slot4
 
 		slot5()
@@ -4943,7 +4992,7 @@ function slot2(slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 62-63, warpins: 3 ---
+	--- BLOCK #3 87-88, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 

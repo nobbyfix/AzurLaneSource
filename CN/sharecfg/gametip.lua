@@ -9057,6 +9057,30 @@ $3]],
 		tip = "指挥官，欢迎来到碧蓝航线，先去新兵训练营报道吧。",
 		key = "newplayer_notice_8"
 	},
+	apply_permission_camera_tip1 = {
+		tip = "为了ar录像的使用，需要有权限访问录音功能",
+		key = "apply_permission_camera_tip1"
+	},
+	apply_permission_camera_tip2 = {
+		tip = "您关闭了录音权限，需要到setting界面确认权限开启",
+		key = "apply_permission_camera_tip2"
+	},
+	apply_permission_camera_tip3 = {
+		tip = "您拒绝授予录音权限，这导致您无法使用ar录像",
+		key = "apply_permission_camera_tip3"
+	},
+	apply_permission_record_audio_tip1 = {
+		tip = "为了ar相机的使用，需要有权限访问相机",
+		key = "apply_permission_record_audio_tip1"
+	},
+	apply_permission_record_audio_tip2 = {
+		tip = "您关闭了相机权限，需要到setting界面确认权限开启",
+		key = "apply_permission_record_audio_tip2"
+	},
+	apply_permission_record_audio_tip3 = {
+		tip = "您拒绝授权相机权限，这导致您无法使用ar相机",
+		key = "apply_permission_record_audio_tip3"
+	},
 	nine_choose_one = {
 		tip = "指挥官只能邀请一人参加舞会，\n是否确认邀请<color=#92fc63>$1</color>？\n邀请后会获得对应角色和回礼",
 		key = "nine_choose_one"
@@ -10908,6 +10932,10 @@ UID：
 	words_information = {
 		tip = "信息",
 		key = "words_information"
+	},
+	Word_Ship_Exp_Buff = {
+		tip = "经验加成",
+		key = "Word_Ship_Exp_Buff"
 	},
 	secondarypassword_incorrectpwd_error = {
 		tip = "密码错误，可再尝试<color=#FF5C5C>%d</color>次",
