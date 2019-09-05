@@ -991,7 +991,7 @@ slot0.IsEliteFleetLegal = function (slot0)
 	for slot10 = 1, #slot0.eliteFleetList, 1 do
 		slot11, slot12 = slot0:singleEliteFleetVertify(slot10)
 
-		if not slot12 then
+		if not slot11 then
 			if not slot12 then
 				if slot10 >= 3 then
 					slot3 = slot3 + 1
