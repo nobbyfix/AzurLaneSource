@@ -16,7 +16,10 @@ slot0.OnInit = function (slot0)
 	slot0.isInit = true
 
 	function slot2(slot0)
-		return table.concat(pg.activity_vote[slot0].time_vote[1][1], ".") .. ((pg.activity_vote[slot0].type == 1 and i18n("word_maintain")) or "(00:00)") .. " ~ " .. table.concat(slot2[2][1], ".") .. "(23:59)"
+		return VoteGroup.New({
+			id = slot0,
+			list = {}
+		}):getTimeDesc()
 	end
 
 	slot3 = false
