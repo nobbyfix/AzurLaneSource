@@ -163,7 +163,7 @@ slot0.initShips = function (slot0)
 end
 
 slot0.initTitles = function (slot0)
-	slot0.tagtimeTF.text = table.concat(slot0.voteGroup:getConfig("time_vote")[1][1], ".") .. i18n("word_maintain") .. " ~ " .. table.concat(slot0.voteGroup.getConfig("time_vote")[2][1], ".") .. "(23:59)"
+	slot0.tagtimeTF.text = table.concat(slot0.voteGroup:getConfig("time_vote")[1][1], ".") .. ((slot0.voteGroup:getConfig("type") == 1 and i18n("word_maintain")) or "(00:00)") .. " ~ " .. table.concat(slot1[2][1], ".") .. "(23:59)"
 	slot0.title.text = slot0.voteGroup:getConfig("name")
 	slot0.subTitle.text = slot0.voteGroup:getConfig("desc")
 end
