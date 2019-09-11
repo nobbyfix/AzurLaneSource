@@ -171,23 +171,30 @@ table.containsdata = function (slot0, slot1)
 	return false
 end
 
-table.eachAsync = function (slot0, slot1)
+table.eachAsync = function (slot0, slot1, slot2)
 	if type(slot0) ~= "table" then
 		return
 	end
 
-	slot2, slot3, slot4 = ipairs(slot0)
-	slot5 = nil
+	slot3, slot4, slot6.index = pairs(slot0)
+	slot6 = {
+		index = slot5
+	}
+	slot7 = nil
 
-	function slot5()
-		slot0 = slot1(slot2, slot1)
 
-		if slot2[] ~= nil then
-			return
+	-- Decompilation error in this vicinity:
+	function ()
+		slot0.index = slot1(slot2, slot0.index)
+
+		if slot2[slot0.index] == nil then
+			if slot3 then
+				slot3()
+			end
+		else
+			slot4(slot0, slot5)
 		end
-
-		slot3(slot0, slot4)
-	end
+	end()
 end
 
 table.eachParalle = function (slot0, slot1, slot2)
@@ -195,14 +202,17 @@ table.eachParalle = function (slot0, slot1, slot2)
 		return
 	end
 
-	slot8, slot9, slot10 = ipairs(slot0)
+	slot3, slot4, slot6.index = pairs(slot0)
 	slot6 = {
+		index = slot5
+	}
+	slot7 = {
 		0,
 		0,
 		0
 	}
 
-	function slot7()
+	function slot8()
 		if slot0[3] > 0 then
 			return
 		end
@@ -213,23 +223,25 @@ table.eachParalle = function (slot0, slot1, slot2)
 			return
 		end
 
-		slot0[3] = 
-		-- Decompilation error in this vicinity:
-		1
+		slot0[3] = 1
 
-
-		-- Decompilation error in this vicinity:
-		1()
+		if 1 then
+			slot1()
+		end
 	end
 
-	slot8 = slot3(slot4, slot5)
+	slot9 = nil
 
-	while slot8 ~= nil do
-		slot6[1] = slot6[1] + 1
+	while true do
+		slot6.index = slot3(slot4, slot6.index)
 
-		slot1(slot8, slot7)
+		if slot4[slot6.index] == nil then
+			break
+		end
 
-		slot8 = slot4[slot3(slot4, slot5)]
+		slot7[1] = slot7[1] + 1
+
+		slot1(slot9, slot8)
 	end
 end
 
@@ -262,60 +274,6 @@ table.merge = function (slot0, slot1, slot2)
 	slot4(slot1)
 
 	return {}
-end
-
-table.Classify = function (slot0, slot1, slot2, slot3, slot4, slot5)
-	slot6 = {}
-	slot7 = {}
-	slot8 = {}
-
-	if type(slot0) ~= type(slot1) then
-		slot6 = slot0
-		slot7 = slot1
-	elseif type(slot0) ~= "table" then
-		if slot0 == slot1 then
-			slot8 = slot0
-		else
-			slot6 = slot0
-			slot7 = slot1
-		end
-	elseif slot0 == slot1 then
-		slot8 = slot0
-	else
-		slot8 = {}
-		slot7 = {}
-		slot6 = {}
-
-		for slot12, slot13 in pairs(slot0) do
-			if not slot1[slot12] then
-				slot6[slot12] = slot13
-			elseif type(slot13) ~= type(slot1[slot12]) then
-				slot6[slot12] = slot13
-				slot7[slot12] = slot1[slot12]
-			elseif slot13 == slot1[slot12] then
-				slot8[slot12] = slot13
-			elseif type(slot13) ~= "table" then
-				slot6[slot12] = slot13
-				slot7[slot12] = slot1[slot12]
-			else
-				table.Classify(slot13, slot1[slot12], slot6, slot7, slot8, slot12)
-			end
-		end
-
-		for slot12, slot13 in pairs(slot1) do
-			if not slot0[slot12] then
-				slot7[slot12] = slot13
-			end
-		end
-	end
-
-	if slot5 then
-		slot2[slot5] = slot6
-		slot3[slot5] = slot7
-		slot4[slot5] = slot8
-	else
-		return slot6, slot7, slot8
-	end
 end
 
 table.removebyvalue = function (slot0, slot1, slot2)

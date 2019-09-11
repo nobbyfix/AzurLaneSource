@@ -1068,8 +1068,8 @@ slot0.displayShipWord = function (slot0, slot1)
 	if findTF(slot0._paintingTF, "fitter").childCount > 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 152-167, warpins: 1 ---
-		Ship.SetExpression(findTF(slot0._paintingTF, "fitter"):GetChild(0), slot0.flagShip:getPainting(), slot1)
+		--- BLOCK #0 152-168, warpins: 1 ---
+		Ship.SetExpression(findTF(slot0._paintingTF, "fitter"):GetChild(0), slot0.flagShip:getPainting(), slot1, slot2)
 		--- END OF BLOCK #0 ---
 
 
@@ -1083,7 +1083,7 @@ slot0.displayShipWord = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 168-171, warpins: 2 ---
+	--- BLOCK #7 169-172, warpins: 2 ---
 	function slot11()
 
 		-- Decompilation error in this vicinity:
@@ -1124,7 +1124,7 @@ slot0.displayShipWord = function (slot0, slot1)
 	if slot0._delayL2dSeID then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 172-177, warpins: 1 ---
+		--- BLOCK #0 173-178, warpins: 1 ---
 		LeanTween.cancel(slot0._delayL2dSeID)
 
 		slot0._delayL2dSeID = nil
@@ -1141,11 +1141,11 @@ slot0.displayShipWord = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 178-180, warpins: 2 ---
+	--- BLOCK #8 179-181, warpins: 2 ---
 	if slot0.live2dChar and slot7 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 183-192, warpins: 1 ---
+		--- BLOCK #0 184-193, warpins: 1 ---
 		slot0._delayL2dSeID = LeanTween.delayedCall(slot7[2], System.Action(function ()
 
 			-- Decompilation error in this vicinity:
@@ -1173,13 +1173,13 @@ slot0.displayShipWord = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #9 193-208, warpins: 3 ---
+	--- BLOCK #9 194-209, warpins: 3 ---
 	slot12 = pg.StoryMgr.GetInstance():isActive()
 
 	if getProxy(ContextProxy):getContextByMediator(NewShipMediator) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 209-209, warpins: 1 ---
+		--- BLOCK #0 210-210, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
 
@@ -1187,11 +1187,11 @@ slot0.displayShipWord = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 210-211, warpins: 1 ---
+		--- BLOCK #0 211-212, warpins: 1 ---
 		if slot5 and not slot12 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 214-217, warpins: 1 ---
+			--- BLOCK #0 215-218, warpins: 1 ---
 			function slot13()
 
 				-- Decompilation error in this vicinity:
@@ -1322,7 +1322,7 @@ slot0.displayShipWord = function (slot0, slot1)
 			if slot0.loadedCVBankName then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 218-220, warpins: 1 ---
+				--- BLOCK #0 219-221, warpins: 1 ---
 				slot13()
 				--- END OF BLOCK #0 ---
 
@@ -1331,7 +1331,7 @@ slot0.displayShipWord = function (slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 221-235, warpins: 1 ---
+				--- BLOCK #0 222-236, warpins: 1 ---
 				pg.CriMgr:LoadCV(Ship.getCVKeyID(slot0.flagShip.skinId), function ()
 
 					-- Decompilation error in this vicinity:
@@ -1427,7 +1427,7 @@ slot0.displayShipWord = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 236-236, warpins: 2 ---
+			--- BLOCK #1 237-237, warpins: 2 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -1435,11 +1435,11 @@ slot0.displayShipWord = function (slot0, slot1)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 237-238, warpins: 2 ---
+			--- BLOCK #0 238-239, warpins: 2 ---
 			if slot4 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 239-241, warpins: 1 ---
+				--- BLOCK #0 240-242, warpins: 1 ---
 				slot11()
 				--- END OF BLOCK #0 ---
 
@@ -1448,7 +1448,7 @@ slot0.displayShipWord = function (slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 242-243, warpins: 1 ---
+				--- BLOCK #0 243-244, warpins: 1 ---
 				slot0.chatFlag = false
 				--- END OF BLOCK #0 ---
 
@@ -1473,7 +1473,7 @@ slot0.displayShipWord = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #10 244-254, warpins: 4 ---
+	--- BLOCK #10 245-255, warpins: 4 ---
 	removeOnButton(slot0._chat)
 	onButton(slot0, slot0._chat, function ()
 
@@ -1549,7 +1549,7 @@ slot0.displayShipWord = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #11 255-255, warpins: 2 ---
+	--- BLOCK #11 256-256, warpins: 2 ---
 	--- END OF BLOCK #11 ---
 
 
@@ -2683,12 +2683,30 @@ slot0.updateBuffList = function (slot0, slot1)
 				slot0._buffTextTimer = Timer.New(function ()
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 1-11, warpins: 1 ---
+					--- BLOCK #0 1-9, warpins: 1 ---
 					setActive(slot0._buffText, false)
-					setActive._buffTimeCountDownTimer:Stop()
 
-					return
+					if setActive._buffTimeCountDownTimer ~= nil then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 10-14, warpins: 1 ---
+						slot0._buffTimeCountDownTimer:Stop()
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+
 					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 15-15, warpins: 2 ---
+					return
+					--- END OF BLOCK #1 ---
 
 
 
@@ -3794,8 +3812,8 @@ slot0.updateBanner = function (slot0, slot1)
 						if slot0.type == 4 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 43-49, warpins: 1 ---
-							slot1:emit(MainUIMediator.OPEN_SHOP_LAYER)
+							--- BLOCK #0 43-51, warpins: 1 ---
+							slot1:emit(MainUIMediator.OPEN_SHOP_LAYER, slot0.param)
 							--- END OF BLOCK #0 ---
 
 
@@ -3803,11 +3821,11 @@ slot0.updateBanner = function (slot0, slot1)
 						else
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 50-53, warpins: 1 ---
+							--- BLOCK #0 52-55, warpins: 1 ---
 							if slot0.type == 5 then
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 54-64, warpins: 1 ---
+								--- BLOCK #0 56-66, warpins: 1 ---
 								slot1:emit(MainUIMediator.OPEN_SCROLL, tonumber(slot0.param))
 								--- END OF BLOCK #0 ---
 
@@ -3816,11 +3834,11 @@ slot0.updateBanner = function (slot0, slot1)
 							else
 
 								-- Decompilation error in this vicinity:
-								--- BLOCK #0 65-68, warpins: 1 ---
+								--- BLOCK #0 67-70, warpins: 1 ---
 								if slot0.type == 6 then
 
 									-- Decompilation error in this vicinity:
-									--- BLOCK #0 69-74, warpins: 1 ---
+									--- BLOCK #0 71-76, warpins: 1 ---
 									slot1:emit(MainUIMediator.OPEN_TECHNOLOGY)
 									--- END OF BLOCK #0 ---
 
@@ -3860,7 +3878,7 @@ slot0.updateBanner = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 75-75, warpins: 7 ---
+			--- BLOCK #1 77-77, warpins: 7 ---
 			return
 			--- END OF BLOCK #1 ---
 
