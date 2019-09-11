@@ -320,9 +320,9 @@ function seriesAsync(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	function ()
+	function (...)
 		if slot0 + 1 <= slot1 then
-			slot2[](slot3)
+			slot2[](slot3, ...)
 		elseif slot4 then
 			slot4()
 		end

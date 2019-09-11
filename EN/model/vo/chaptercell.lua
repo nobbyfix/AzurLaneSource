@@ -82,12 +82,4 @@ slot0.IsWalkable = function (slot0, slot1)
 	return slot0.walkable
 end
 
-slot0.IsStandable = function (slot0, slot1)
-	if slot1 == ChapterConst.SubjectPlayer then
-		return slot0.walkable and not (slot0.attachment == ChapterConst.AttachLandbase and slot0.attachmentId == ChapterConst.LBIDHarbor)
-	else
-		return slot0.walkable
-	end
-end
-
 return slot0

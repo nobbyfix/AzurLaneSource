@@ -288,12 +288,12 @@ slot0.register = function (slot0)
 			end
 		}))
 	end)
-	slot0:bind(slot0.OPEN_SHOP_LAYER, function (slot0)
+	slot0:bind(slot0.OPEN_SHOP_LAYER, function (slot0, slot1)
 		slot0:addSubLayers(Context.New({
 			mediator = ShopsMediator,
 			viewComponent = ShopsLayer,
 			data = {
-				warp = ShopsLayer.TYPE_ACTIVITY
+				warp = slot1 or ShopsLayer.TYPE_ACTIVITY
 			}
 		}))
 	end)
@@ -1572,10 +1572,10 @@ slot0.handleReturnAwardAct = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-10, warpins: 1 ---
-	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_RETURN_AWARD) and not slot1:isEnd() and getProxy(PlayerProxy):getRawData().level >= 15 and (slot1.data1 == 0 or (slot1.data1 == 1 and slot1.data2 == 0)) then
+	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_RETURN_AWARD) and not slot1:isEnd() and (slot1.data1 == 0 or (slot1.data1 == 1 and slot1.data2 == 0)) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 35-45, warpins: 2 ---
+		--- BLOCK #0 25-35, warpins: 2 ---
 		slot0:sendNotification(GAME.RETURN_AWARD_OP, {
 			activity_id = slot1.id,
 			cmd = ActivityConst.RETURN_AWARD_OP_ACTIVTION
@@ -1593,7 +1593,7 @@ slot0.handleReturnAwardAct = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 46-46, warpins: 6 ---
+	--- BLOCK #1 36-36, warpins: 5 ---
 	return
 	--- END OF BLOCK #1 ---
 

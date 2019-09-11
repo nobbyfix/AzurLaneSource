@@ -545,11 +545,11 @@ ys.Battle.BattleAttr = {
 
 
 	end,
-	FlashVelocity = function (slot0, slot1)
+	FlashVelocity = function (slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-29, warpins: 1 ---
-		slot0:SetCurrent("velocity", Mathf.Clamp(slot1 + slot0._baseAttr.velocity, slot3, slot2))
+		--- BLOCK #0 1-30, warpins: 1 ---
+		slot0:SetCurrent("velocity", Mathf.Clamp(slot0._baseAttr.velocity * slot1 + slot2, slot4, slot3))
 
 		return
 		--- END OF BLOCK #0 ---

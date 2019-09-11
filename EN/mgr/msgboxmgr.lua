@@ -1262,55 +1262,235 @@ function slot5(slot0, slot1)
 end
 
 function slot6(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-86, warpins: 1 ---
+	slot3 = slot0
+	slot2 = slot0.commonSetting
+	slot4 = slot1
+
 	slot0:commonSetting(slot1)
+
+	slot2 = SetActive
+	slot3 = slot0._sigleItemPanel
+	slot4 = true
+
 	SetActive(slot0._sigleItemPanel, true)
+
+	slot2 = SetActive
+	slot3 = slot0._itemPanel
+	slot4 = false
+
 	SetActive(slot0._itemPanel, false)
+
+	slot2 = SetActive
+	slot3 = slot0._msgPanel
+	slot4 = false
+
 	SetActive(slot0._msgPanel, false)
+
+	slot2 = setActive
+	slot3 = slot0._inputPanel
+	slot4 = false
+
 	setActive(slot0._inputPanel, false)
+
+	slot2 = SetActive
+	slot3 = slot0._SingleItemshipTypeTF
+	slot4 = false
+
 	SetActive(slot0._SingleItemshipTypeTF, false)
+
+	slot2 = SetActive
+	slot3 = slot0._SingleItemshipTypeBgTF
+	slot4 = false
+
 	SetActive(slot0._SingleItemshipTypeBgTF, false)
+
+	slot2 = SetActive
+	slot3 = findTF
+	slot4 = slot0._sigleItemPanel
+	slot5 = "line_mode"
+	slot3 = findTF(slot0._sigleItemPanel, "line_mode")
+	slot4 = false
+
 	SetActive(findTF(slot0._sigleItemPanel, "line_mode"), false)
+
+	slot2 = SetActive
+	slot3 = findTF
+	slot4 = slot0._sigleItemPanel
+	slot5 = "count_select"
+	slot3 = findTF(slot0._sigleItemPanel, "count_select")
+	slot4 = false
+
 	SetActive(findTF(slot0._sigleItemPanel, "count_select"), false)
+
+	slot2 = SetActive
+	slot3 = findTF
+	slot4 = slot0._sigleItemPanel
+	slot5 = "detail"
+	slot3 = findTF(slot0._sigleItemPanel, "detail")
+	slot4 = false
+
 	SetActive(findTF(slot0._sigleItemPanel, "detail"), false)
 
-	slot2 = findTF(slot0._sigleItemPanel, "name_mode/name")
+	slot2 = findTF
+	slot3 = slot0._sigleItemPanel
+	slot4 = "icon_bg/icon"
+	slot2 = findTF(slot0._sigleItemPanel, "icon_bg/icon")
+	slot3 = findTF
+	slot4 = slot0._sigleItemPanel
+	slot5 = "icon_bg/frame"
+	slot3 = findTF(slot0._sigleItemPanel, "icon_bg/frame")
+	slot4 = findTF
+	slot5 = slot0._sigleItemPanel
+	slot6 = "name_mode/intro_view/Viewport/Content/intro"
+	slot4 = findTF(slot0._sigleItemPanel, "name_mode/intro_view/Viewport/Content/intro")
+	slot5 = findTF
+	slot6 = slot0._sigleItemPanel
+	slot7 = "icon_bg/count"
+	slot5 = findTF(slot0._sigleItemPanel, "icon_bg/count")
+	slot6 = findTF
+	slot7 = slot0._sigleItemPanel
+	slot8 = "icon_bg/startpl"
+	slot6 = findTF(slot0._sigleItemPanel, "icon_bg/startpl")
+	slot7 = setText
+	slot8 = findTF(slot0._sigleItemPanel, "icon_bg/count")
+	slot9 = ""
 
-	setText(slot6, "")
-	SetActive(slot7, false)
-	SetActive(slot2.parent, true)
-	SetActive(slot2, true)
-	SetActive(slot5, true)
-	setFrame(slot4, slot1.frame or 1)
-	setText(slot2, slot1.name or "")
+	setText(slot5, "")
 
-	slot2.localPosition = Vector2(setText, slot2.localPosition.y)
+	slot7 = SetActive
+	slot8 = findTF(slot0._sigleItemPanel, "icon_bg/startpl")
+	slot9 = false
+
+	SetActive(slot6, false)
+
+	slot7 = SetActive
+	slot8 = findTF(slot0._sigleItemPanel, "name_mode/intro_view/Viewport/Content/intro")
+	slot9 = true
+
+	SetActive(slot4, true)
+
+	slot7 = setFrame
+	slot8 = findTF(slot0._sigleItemPanel, "icon_bg/frame")
+	slot9 = slot1.frame
+	slot9 = slot1.frame or 1
+
+	setFrame(findTF(slot0._sigleItemPanel, "icon_bg/frame"), slot9)
+
+	slot7 = findTF(slot0._sigleItemPanel, "name_mode/name_mask")
+
+	SetActive(slot7.parent, true)
+	SetActive(slot7, true)
+	ScrollTxt.New(slot7, findTF(slot0._sigleItemPanel, "icon_bg/frame")).setText(slot9, slot1.name or "")
+
+	slot7.localPosition = Vector2(ScrollTxt.New(slot7, findTF(slot0._sigleItemPanel, "icon_bg/frame")).setText, slot7.localPosition.y)
 
 	setText(findTF(slot0._sigleItemPanel, "name_mode/intro_view/Viewport/Content/intro"), slot1.content or "")
 	SetActive(findTF(slot0._sigleItemPanel, "icon_bg/icon").parent, slot1.sprite)
 
-	slot9 = slot1.sprite
+	slot11 = slot1.sprite
+	--- END OF BLOCK #0 ---
 
-	if slot9 then
-		slot9 = setImageSprite
-		slot10 = slot3
-		slot11 = slot1.sprite
-		slot12 = false
+	FLOW; TARGET BLOCK #2
 
-		slot9(slot10, slot11, slot12)
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 87-87, warpins: 1 ---
+	slot9 = 1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 88-114, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 115-115, warpins: 1 ---
+	slot12 = ""
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 116-128, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 129-129, warpins: 1 ---
+	slot13 = ""
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 130-137, warpins: 2 ---
+	if slot11 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 138-142, warpins: 1 ---
+		slot11 = setImageSprite
+		slot12 = slot2
+		slot13 = slot1.sprite
+		slot14 = false
+
+		slot11(slot12, slot13, slot14)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot10 = slot0
-	slot9 = slot0.Loaded
-	slot11 = slot1
+	--- END OF BLOCK #6 ---
 
-	slot9(slot10, slot11)
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 143-147, warpins: 2 ---
+	slot12 = slot0
+	slot11 = slot0.Loaded
+	slot13 = slot1
+
+	slot11(slot12, slot13)
+
+	return
+	--- END OF BLOCK #7 ---
+
+
+
 end
 
 function slot7(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.singleItemIntros
 	slot2 = slot2[slot1]
 
 	if not slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-11, warpins: 1 ---
 		slot2 = slot0.singleItemIntros
 		slot3 = cloneTplTo
 		slot4 = slot0.singleItemIntro
@@ -1318,17 +1498,36 @@ function slot7(slot0, slot1)
 		slot5 = slot5.parent
 		slot3 = slot3(slot4, slot5)
 		slot2[slot1] = slot3
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 12-14, warpins: 2 ---
 	slot2 = slot0.singleItemIntros
 	slot2 = slot2[slot1]
 
 	return slot2
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 slot1.GetSingleItemIntro = slot7
 
 function slot7(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-51, warpins: 1 ---
 	slot2 = rtf
 	slot3 = slot0._window
 	slot2 = slot2(slot3)
@@ -1396,13 +1595,71 @@ function slot7(slot0, slot1)
 	slot2 = slot1.drop
 
 	if slot2 then
-		slot6, slot3 = GetOwnedpropCount(slot1.drop)
 
-		setActive(findTF(slot0._sigleItemPanel, "icon_bg/own"), slot3 and slot1.showOwned)
-		setText(findTF(slot0._sigleItemPanel, "icon_bg/own/Text"), slot2)
-		setText(findTF(slot0._sigleItemPanel, "icon_bg/own/label"), i18n("word_own1"))
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 52-61, warpins: 1 ---
+		slot2 = GetOwnedpropCount
+		slot3 = slot1.drop
+		slot2, slot3 = slot2(slot3)
+		slot4 = setActive
+		slot5 = findTF
+		slot6 = slot0._sigleItemPanel
+		slot7 = "icon_bg/own"
+		slot5 = slot5(slot6, slot7)
+
+		if slot3 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 62-62, warpins: 1 ---
+			slot6 = slot1.showOwned
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 63-79, warpins: 2 ---
+		slot4(slot5, slot6)
+
+		slot4 = setText
+		slot5 = findTF
+		slot6 = slot0._sigleItemPanel
+		slot7 = "icon_bg/own/Text"
+		slot5 = slot5(slot6, slot7)
+		slot6 = slot2
+
+		slot4(slot5, slot6)
+
+		slot4 = setText
+		slot5 = findTF
+		slot6 = slot0._sigleItemPanel
+		slot7 = "icon_bg/own/label"
+		slot5 = slot5(slot6, slot7)
+		slot6 = i18n
+		slot7 = "word_own1"
+
+		slot4(slot5, slot6(slot7))
+		--- END OF BLOCK #1 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 80-90, warpins: 2 ---
 	slot2 = updateDrop
 	slot3 = slot0._tf
 	slot4 = slot3
@@ -1416,6 +1673,9 @@ function slot7(slot0, slot1)
 	slot2 = slot1.windowSize
 
 	if slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 91-98, warpins: 1 ---
 		slot2 = rtf
 		slot3 = slot0._window
 		slot2 = slot2(slot3)
@@ -1424,22 +1684,64 @@ function slot7(slot0, slot1)
 		slot4 = slot4.x
 
 		if not slot4 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 99-100, warpins: 1 ---
 			slot4 = slot0._defaultSize
 			slot4 = slot4.x
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 101-104, warpins: 2 ---
 		slot5 = slot1.windowSize
 		slot5 = slot5.y
 
 		if not slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 105-106, warpins: 1 ---
 			slot5 = slot0._defaultSize
 			slot5 = slot5.y
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 107-108, warpins: 2 ---
 		slot3 = slot3(slot4, slot5)
 		slot2.sizeDelta = slot3
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 109-134, warpins: 2 ---
 	slot2 = setActive
 	slot3 = slot0._tf
 	slot4 = slot3
@@ -1468,565 +1770,1263 @@ function slot7(slot0, slot1)
 	slot8 = DROP_TYPE_SHIP
 
 	if slot7 ~= slot8 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 135-139, warpins: 1 ---
 		slot7 = slot1.drop
 		slot7 = slot7.type
 		slot8 = DROP_TYPE_RESOURCE
 
 		if slot7 ~= slot8 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 140-144, warpins: 1 ---
 			slot7 = slot1.drop
 			slot7 = slot7.type
 			slot8 = DROP_TYPE_ITEM
 
 			if slot7 ~= slot8 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 145-149, warpins: 1 ---
 				slot7 = slot1.drop
 				slot7 = slot7.type
 				slot8 = DROP_TYPE_FURNITURE
 
 				if slot7 ~= slot8 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 150-154, warpins: 1 ---
 					slot7 = slot1.drop
 					slot7 = slot7.type
 					slot8 = DROP_TYPE_STRATEGY
 
 					if slot7 ~= slot8 then
-						slot5(slot6, slot1.drop.type == DROP_TYPE_SKIN)
-						setActive(slot0._countDescTxt, slot0.settings.numUpdate ~= nil)
 
-						slot7 = setText
-						slot8 = slot0._tf:Find("window/single_item_panel/name_mode/name")
-						slot9 = HXSet.hxLan
-						slot10 = slot1.name
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 155-159, warpins: 1 ---
+						slot7 = slot1.drop
+						slot7 = slot7.type
+						slot8 = DROP_TYPE_SKIN
 
-						if not slot10 then
-							slot7(slot8, slot9(slot1.drop.cfg.name or ""))
+						if slot7 ~= slot8 then
 
-							slot9 = ScrollTxt:changeToScroll(slot6)
-							slot8 = ScrollTxt.changeToScroll(slot6).setText
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 160-161, warpins: 1 ---
+							slot7 = false
+							--- END OF BLOCK #0 ---
+
+
+
 						end
+						--- END OF BLOCK #0 ---
+
+
+
 					end
+					--- END OF BLOCK #0 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 162-162, warpins: 6 ---
+		slot7 = true
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot10 = getText
-	slot11 = slot6
+	--- END OF BLOCK #2 ---
 
-	slot8(slot9, slot10(slot11))
+	FLOW; TARGET BLOCK #3
 
-	slot8 = table
-	slot8 = slot8.insert
-	slot9 = slot0._scrollTxts
-	slot10 = slot7
 
-	slot8(slot9, slot10)
 
-	slot8 = -170
-	slot9 = go
-	slot10 = slot0._SingleItemshipTypeTF
-	slot9 = slot9(slot10)
-	slot9 = slot9.activeSelf
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 163-169, warpins: 2 ---
+	slot5(slot6, slot7)
+
+	slot5 = slot0.settings
+	slot5 = slot5.numUpdate
+	slot6 = setActive
+	slot7 = slot0._countDescTxt
+
+	if slot5 == nil then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 170-171, warpins: 1 ---
+		slot8 = false
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 172-172, warpins: 1 ---
+		slot8 = true
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 173-188, warpins: 2 ---
+	slot6(slot7, slot8)
+
+	slot6 = slot0._tf
+	slot7 = slot6
+	slot6 = slot6.Find
+	slot8 = "window/single_item_panel/name_mode/name_mask"
+	slot6 = slot6(slot7, slot8)
+	slot7 = slot0._tf
+	slot8 = slot7
+	slot7 = slot7.Find
+	slot9 = "window/single_item_panel/name_mode/name_mask/name"
+	slot7 = slot7(slot8, slot9)
+	slot8 = HXSet
+	slot8 = slot8.hxLan
+	slot9 = slot1.name
 
 	if not slot9 then
-		slot8 = -230
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 189-193, warpins: 1 ---
+		slot9 = slot1.drop
+		slot9 = slot9.cfg
+		slot9 = slot9.name
+
+		if not slot9 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 194-194, warpins: 1 ---
+			slot9 = ""
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot10 = setActive
-	slot11 = slot0._SingleItemshipTypeBgTF
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 195-216, warpins: 3 ---
+	slot8 = slot8(slot9)
+	slot9 = ScrollTxt
+	slot9 = slot9.New
+	slot10 = slot6
+	slot11 = slot7
+	slot9 = slot9(slot10, slot11)
+	slot11 = slot9
+	slot10 = slot9.setText
+	slot12 = slot8
+
+	slot10(slot11, slot12)
+
+	slot10 = table
+	slot10 = slot10.insert
+	slot11 = slot0._scrollTxts
 	slot12 = slot9
 
 	slot10(slot11, slot12)
 
-	slot10 = Vector2
-	slot11 = slot8
-	slot12 = slot6.localPosition
-	slot12 = slot12.y
-	slot10 = slot10(slot11, slot12)
-	slot6.localPosition = slot10
-	slot10 = slot0._tf
-	slot11 = slot10
-	slot10 = slot10.Find
-	slot12 = "window/single_item_panel/detail"
-	slot10 = slot10(slot11, slot12)
-	slot11 = slot1.drop
-	slot11 = slot11.type
-	slot12 = DROP_TYPE_ITEM
+	slot10 = -170
+	slot11 = go
+	slot12 = slot0._SingleItemshipTypeTF
+	slot11 = slot11(slot12)
+	slot11 = slot11.activeSelf
 
-	if slot11 == slot12 then
-		setActive(slot10, slot1.drop.cfg.type == 11)
+	if not slot11 then
 
-		if slot1.drop.cfg.type == 11 then
-			slot13 = slot10
-			slot12 = slot10.GetComponent
-			slot14 = "RichText"
-			slot12 = slot12(slot13, slot14)
-			slot13 = slot12
-			slot12 = slot12.AddListener
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 217-217, warpins: 1 ---
+		slot10 = -230
+		--- END OF BLOCK #0 ---
 
-			function slot14(slot0, slot1)
-				slot2 = {}
-				slot3 = _
-				slot3 = slot3.map
-				slot4 = slot0
-				slot4 = slot4.drop
-				slot4 = slot4.cfg
-				slot4 = slot4.display_icon
 
-				function slot5(slot0)
-					slot1 = {}
-					slot2 = slot0[1]
-					slot1.type = slot2
-					slot2 = slot0[2]
-					slot1.id = slot2
 
-					return slot1
-				end
+	end
 
-				slot3 = slot3(slot4, slot5)
-				slot2.items = slot3
-				slot3 = i18n
-				slot4 = "equip_skin_detail_tip"
-				slot3 = slot3(slot4)
-				slot2.content = slot3
-				slot3 = true
-				slot2.item2Row = slot3
-				slot3 = true
-				slot2.hideNo = slot3
+	--- END OF BLOCK #5 ---
 
-				function slot3(slot0)
-					slot1 = slot0
-					slot2 = slot1
-					slot3 = {
-						drop = slot0
-					}
+	FLOW; TARGET BLOCK #6
 
-					function slot4()
-						slot0 = slot0
-						slot1 = slot1
-						slot2 = slot2
 
-						slot0(slot1, slot2)
-					end
 
-					slot3.onYes = slot4
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 218-237, warpins: 2 ---
+	slot12 = setActive
+	slot13 = slot0._SingleItemshipTypeBgTF
+	slot14 = slot11
 
-					function slot4()
-						slot0 = slot0
-						slot1 = slot1
-						slot2 = slot2
+	slot12(slot13, slot14)
 
-						slot0(slot1, slot2)
-					end
+	slot12 = Vector2
+	slot13 = slot10
+	slot14 = slot6.localPosition
+	slot14 = slot14.y
+	slot12 = slot12(slot13, slot14)
+	slot6.localPosition = slot12
+	slot12 = slot0._tf
+	slot13 = slot12
+	slot12 = slot12.Find
+	slot14 = "window/single_item_panel/detail"
+	slot12 = slot12(slot13, slot14)
+	slot13 = slot1.drop
+	slot13 = slot13.type
+	slot14 = DROP_TYPE_ITEM
 
-					slot3.onNo = slot4
+	if slot13 == slot14 then
 
-					slot1(slot2, slot3)
-				end
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 238-242, warpins: 1 ---
+		slot13 = slot1.drop
+		slot13 = slot13.cfg
+		slot13 = slot13.type
 
-				slot2.itemFunc = slot3
+		if slot13 ~= 11 then
 
-				function slot3()
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 243-244, warpins: 2 ---
+			slot13 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 245-245, warpins: 1 ---
+			slot13 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 246-251, warpins: 2 ---
+	slot14 = setActive
+	slot15 = slot12
+	slot16 = slot13
+
+	slot14(slot15, slot16)
+
+	if slot13 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 252-259, warpins: 1 ---
+		slot15 = slot12
+		slot14 = slot12.GetComponent
+		slot16 = "RichText"
+		slot14 = slot14(slot15, slot16)
+		slot15 = slot14
+		slot14 = slot14.AddListener
+
+		function slot16(slot0, slot1)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-30, warpins: 1 ---
+			slot2 = {}
+			slot3 = _
+			slot3 = slot3.map
+			slot4 = slot0
+			slot4 = slot4.drop
+			slot4 = slot4.cfg
+			slot4 = slot4.display_icon
+
+			function slot5(slot0)
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-6, warpins: 1 ---
+				slot1 = {}
+				slot2 = slot0[1]
+				slot1.type = slot2
+				slot2 = slot0[2]
+				slot1.id = slot2
+
+				return slot1
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			slot3 = slot3(slot4, slot5)
+			slot2.items = slot3
+			slot3 = i18n
+			slot4 = "equip_skin_detail_tip"
+			slot3 = slot3(slot4)
+			slot2.content = slot3
+			slot3 = true
+			slot2.item2Row = slot3
+			slot3 = true
+			slot2.hideNo = slot3
+
+			function slot3(slot0)
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-10, warpins: 1 ---
+				slot1 = slot0
+				slot2 = slot1
+				slot3 = {}
+				slot3.drop = slot0
+
+				function slot4()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-5, warpins: 1 ---
 					slot0 = slot0
 					slot1 = slot1
 					slot2 = slot2
 
 					slot0(slot1, slot2)
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
-				slot2.onYes = slot3
-				slot3 = slot2.onYes
-				slot2.onNo = slot3
-				slot3 = slot3
-				slot4 = slot2
-				slot5 = slot2
+				slot3.onYes = slot4
 
-				slot3(slot4, slot5)
+				function slot4()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-5, warpins: 1 ---
+					slot0 = slot0
+					slot1 = slot1
+					slot2 = slot2
+
+					slot0(slot1, slot2)
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				slot3.onNo = slot4
+
+				slot1(slot2, slot3)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
-			slot12(slot13, slot14)
+			slot2.itemFunc = slot3
+
+			function slot3()
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-5, warpins: 1 ---
+				slot0 = slot0
+				slot1 = slot1
+				slot2 = slot2
+
+				slot0(slot1, slot2)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			slot2.onYes = slot3
+			slot3 = slot2.onYes
+			slot2.onNo = slot3
+			slot3 = slot3
+			slot4 = slot2
+			slot5 = slot2
+
+			slot3(slot4, slot5)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+
+		slot14(slot15, slot16)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot12 = slot1.content
+	--- END OF BLOCK #7 ---
 
-	if slot12 then
-		slot12 = slot1.content
+	FLOW; TARGET BLOCK #8
 
-		if slot12 ~= "" then
-			slot12 = slot0.singleItemIntroTF
-			slot13 = slot1.content
-			slot12.text = slot13
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #8 260-262, warpins: 2 ---
+	slot14 = slot1.content
+
+	if slot14 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 263-265, warpins: 1 ---
+		slot14 = slot1.content
+
+		if slot14 ~= "" then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 266-269, warpins: 1 ---
+			slot14 = slot0.singleItemIntroTF
+			slot15 = slot1.content
+			slot14.text = slot15
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
 	else
-		slot12 = slot1.drop
-		slot12 = slot12.type
-		slot13 = DROP_TYPE_RESOURCE
 
-		if slot12 == slot13 then
-			slot12 = setTextEN
-			slot13 = slot3
-			slot14 = slot1.drop
-			slot14 = slot14.cfg
-			slot14 = slot14.display
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 270-274, warpins: 2 ---
+		slot14 = slot1.drop
+		slot14 = slot14.type
+		slot15 = DROP_TYPE_RESOURCE
 
-			slot12(slot13, slot14)
+		if slot14 == slot15 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 275-281, warpins: 1 ---
+			slot14 = setTextEN
+			slot15 = slot3
+			slot16 = slot1.drop
+			slot16 = slot16.cfg
+			slot16 = slot16.display
+
+			slot14(slot15, slot16)
+			--- END OF BLOCK #0 ---
+
+
+
 		else
-			slot12 = slot1.drop
-			slot12 = slot12.type
-			slot13 = DROP_TYPE_ITEM
 
-			if slot12 == slot13 then
-				slot12 = setTextEN
-				slot13 = slot3
-				slot14 = HXSet
-				slot14 = slot14.hxLan
-				slot15 = slot1.drop
-				slot15 = slot15.cfg
-				slot15 = slot15.display
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 282-286, warpins: 1 ---
+			slot14 = slot1.drop
+			slot14 = slot14.type
+			slot15 = DROP_TYPE_ITEM
 
-				slot12(slot13, slot14(slot15))
+			if slot14 == slot15 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 287-296, warpins: 1 ---
+				slot14 = setTextEN
+				slot15 = slot3
+				slot16 = HXSet
+				slot16 = slot16.hxLan
+				slot17 = slot1.drop
+				slot17 = slot17.cfg
+				slot17 = slot17.display
+
+				slot14(slot15, slot16(slot17))
+				--- END OF BLOCK #0 ---
+
+
+
 			else
-				slot12 = slot1.drop
-				slot12 = slot12.type
-				slot13 = DROP_TYPE_FURNITURE
 
-				if slot12 == slot13 then
-					slot12 = setTextEN
-					slot13 = slot3
-					slot14 = slot1.drop
-					slot14 = slot14.cfg
-					slot14 = slot14.describe
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 297-301, warpins: 1 ---
+				slot14 = slot1.drop
+				slot14 = slot14.type
+				slot15 = DROP_TYPE_FURNITURE
 
-					slot12(slot13, slot14)
+				if slot14 == slot15 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 302-308, warpins: 1 ---
+					slot14 = setTextEN
+					slot15 = slot3
+					slot16 = slot1.drop
+					slot16 = slot16.cfg
+					slot16 = slot16.describe
+
+					slot14(slot15, slot16)
+					--- END OF BLOCK #0 ---
+
+
+
 				else
-					slot12 = slot1.drop
-					slot12 = slot12.type
-					slot13 = DROP_TYPE_SHIP
 
-					if slot12 == slot13 then
-						slot12 = slot2
-						slot12 = slot12.ship_data_statistics
-						slot13 = slot1.drop
-						slot13 = slot13.id
-						slot12 = slot12[slot13]
-						slot12 = slot12.skin_id
-						slot13 = Ship
-						slot13 = slot13.getWords
-						slot14 = slot12
-						slot15 = "drop_descrip"
-						slot13 = slot13(slot14, slot15)
-						slot14 = setTextEN
-						slot15 = slot3
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 309-313, warpins: 1 ---
+					slot14 = slot1.drop
+					slot14 = slot14.type
+					slot15 = DROP_TYPE_SHIP
 
-						if not slot13 then
-							slot16 = i18n
-							slot17 = "ship_drop_desc_default"
-							slot16 = slot16(slot17)
+					if slot14 == slot15 then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 314-328, warpins: 1 ---
+						slot14 = slot2
+						slot14 = slot14.ship_data_statistics
+						slot15 = slot1.drop
+						slot15 = slot15.id
+						slot14 = slot14[slot15]
+						slot14 = slot14.skin_id
+						slot15 = Ship
+						slot15 = slot15.getWords
+						slot16 = slot14
+						slot17 = "drop_descrip"
+						slot15 = slot15(slot16, slot17)
+						slot16 = setTextEN
+						slot17 = slot3
+
+						if not slot15 then
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 329-331, warpins: 1 ---
+							slot18 = i18n
+							slot19 = "ship_drop_desc_default"
+							slot18 = slot18(slot19)
+							--- END OF BLOCK #0 ---
+
+
+
 						end
 
-						slot14(slot15, slot16)
+						--- END OF BLOCK #0 ---
+
+						FLOW; TARGET BLOCK #1
+
+
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #1 332-333, warpins: 2 ---
+						slot16(slot17, slot18)
+						--- END OF BLOCK #1 ---
+
+
+
 					else
-						slot12 = slot1.drop
-						slot12 = slot12.type
-						slot13 = DROP_TYPE_EQUIP
 
-						if slot12 == slot13 then
-							slot12 = 1
-							slot13 = 4
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 334-338, warpins: 1 ---
+						slot14 = slot1.drop
+						slot14 = slot14.type
+						slot15 = DROP_TYPE_EQUIP
+
+						if slot14 == slot15 then
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 339-342, warpins: 1 ---
 							slot14 = 1
+							slot15 = 4
+							slot16 = 1
 
-							for slot15 = slot12, slot13, slot14 do
-								slot17 = slot2
-								slot16 = slot2.GetChild
-								slot18 = slot15 - 1
-								slot16 = slot16(slot17, slot18)
-								slot17 = slot1.drop
-								slot17 = slot17.cfg
-								slot18 = "attribute_"
-								slot19 = slot15
-								slot18 = slot18 .. slot19
-								slot17 = slot17[slot18]
-								slot18 = setActive
-								slot20 = slot16
-								slot19 = slot16.Find
-								slot21 = "opend"
-								slot19 = slot19(slot20, slot21)
-								slot20 = slot17
+							--- END OF BLOCK #0 ---
 
-								slot18(slot19, slot20)
+							FLOW; TARGET BLOCK #1
 
-								slot18 = setActive
-								slot20 = slot16
-								slot19 = slot16.Find
-								slot21 = "attrLockTpl"
-								slot19 = slot19(slot20, slot21)
-								slot20 = not slot17
 
-								slot18(slot19, slot20)
 
-								if slot17 then
-									slot18 = setText
-									slot20 = slot16
-									slot19 = slot16.Find
-									slot21 = "opend/type_name"
-									slot19 = slot19(slot20, slot21)
-									slot20 = AttributeType
-									slot20 = slot20.Type2Name
-									slot21 = slot17
+							-- Decompilation error in this vicinity:
+							--- BLOCK #1 343-391, warpins: 0 ---
+							for slot17 = slot14, slot15, slot16 do
 
-									slot18(slot19, slot20(slot21))
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 343-368, warpins: 2 ---
+								slot19 = slot2
+								slot18 = slot2.GetChild
+								slot20 = slot17 - 1
+								slot18 = slot18(slot19, slot20)
+								slot19 = slot1.drop
+								slot19 = slot19.cfg
+								slot20 = "attribute_"
+								slot21 = slot17
+								slot20 = slot20 .. slot21
+								slot19 = slot19[slot20]
+								slot20 = setActive
+								slot22 = slot18
+								slot21 = slot18.Find
+								slot23 = "opend"
+								slot21 = slot21(slot22, slot23)
+								slot22 = slot19
 
-									slot18 = setText
-									slot20 = slot16
-									slot19 = slot16.Find
-									slot21 = "opend/value"
-									slot19 = slot19(slot20, slot21)
-									slot20 = slot1.drop
-									slot20 = slot20.cfg
-									slot21 = "value_"
-									slot22 = slot15
-									slot21 = slot21 .. slot22
-									slot20 = slot20[slot21]
+								slot20(slot21, slot22)
 
-									slot18(slot19, slot20)
+								slot20 = setActive
+								slot22 = slot18
+								slot21 = slot18.Find
+								slot23 = "attrLockTpl"
+								slot21 = slot21(slot22, slot23)
+								slot22 = not slot19
+
+								slot20(slot21, slot22)
+
+								if slot19 then
+
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 369-390, warpins: 1 ---
+									slot20 = setText
+									slot22 = slot18
+									slot21 = slot18.Find
+									slot23 = "opend/type_name"
+									slot21 = slot21(slot22, slot23)
+									slot22 = AttributeType
+									slot22 = slot22.Type2Name
+									slot23 = slot19
+
+									slot20(slot21, slot22(slot23))
+
+									slot20 = setText
+									slot22 = slot18
+									slot21 = slot18.Find
+									slot23 = "opend/value"
+									slot21 = slot21(slot22, slot23)
+									slot22 = slot1.drop
+									slot22 = slot22.cfg
+									slot23 = "value_"
+									slot24 = slot17
+									slot23 = slot23 .. slot24
+									slot22 = slot22[slot23]
+
+									slot20(slot21, slot22)
+									--- END OF BLOCK #0 ---
+
+
+
 								end
+								--- END OF BLOCK #0 ---
+
+								FLOW; TARGET BLOCK #1
+
+
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #1 391-391, warpins: 2 ---
+								--- END OF BLOCK #1 ---
+
+
+
 							end
+							--- END OF BLOCK #1 ---
+
+							FLOW; TARGET BLOCK #2
+
+
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #2 392-392, warpins: 1 ---
+							--- END OF BLOCK #2 ---
+
+
+
 						else
-							slot12 = slot1.drop
-							slot12 = slot12.type
-							slot13 = DROP_TYPE_STRATEGY
 
-							if slot12 == slot13 then
-								slot12 = setTextEN
-								slot13 = slot3
-								slot14 = slot1.drop
-								slot14 = slot14.cfg
-								slot14 = slot14.desc
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 393-397, warpins: 1 ---
+							slot14 = slot1.drop
+							slot14 = slot14.type
+							slot15 = DROP_TYPE_STRATEGY
 
-								slot12(slot13, slot14)
+							if slot14 == slot15 then
 
-								slot12 = slot1.extendDesc
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 398-406, warpins: 1 ---
+								slot14 = setTextEN
+								slot15 = slot3
+								slot16 = slot1.drop
+								slot16 = slot16.cfg
+								slot16 = slot16.desc
 
-								if slot12 then
+								slot14(slot15, slot16)
+
+								slot14 = slot1.extendDesc
+
+								if slot14 then
+
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 407-415, warpins: 1 ---
 									slot4 = slot4 + 1
-									slot12 = setTextEN
-									slot14 = slot0
-									slot13 = slot0.GetSingleItemIntro
-									slot15 = slot4
-									slot13 = slot13(slot14, slot15)
-									slot14 = slot1.extendDesc
+									slot14 = setTextEN
+									slot16 = slot0
+									slot15 = slot0.GetSingleItemIntro
+									slot17 = slot4
+									slot15 = slot15(slot16, slot17)
+									slot16 = slot1.extendDesc
 
-									slot12(slot13, slot14)
+									slot14(slot15, slot16)
+									--- END OF BLOCK #0 ---
+
+
+
 								end
+								--- END OF BLOCK #0 ---
+
+
+
 							else
-								slot12 = slot1.drop
-								slot12 = slot12.type
-								slot13 = DROP_TYPE_SKIN
 
-								if slot12 == slot13 then
-									slot12 = setTextEN
-									slot13 = slot3
-									slot14 = HXSet
-									slot14 = slot14.hxLan
-									slot15 = slot1.drop
-									slot15 = slot15.cfg
-									slot15 = slot15.desc
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 416-420, warpins: 1 ---
+								slot14 = slot1.drop
+								slot14 = slot14.type
+								slot15 = DROP_TYPE_SKIN
 
-									slot12(slot13, slot14(slot15))
+								if slot14 == slot15 then
+
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 421-430, warpins: 1 ---
+									slot14 = setTextEN
+									slot15 = slot3
+									slot16 = HXSet
+									slot16 = slot16.hxLan
+									slot17 = slot1.drop
+									slot17 = slot17.cfg
+									slot17 = slot17.desc
+
+									slot14(slot15, slot16(slot17))
+									--- END OF BLOCK #0 ---
+
+
+
 								else
-									slot12 = slot1.drop
-									slot12 = slot12.type
-									slot13 = DROP_TYPE_EQUIPMENT_SKIN
 
-									if slot12 == slot13 then
-										slot12 = slot1.drop
-										slot12 = slot12.cfg
-										slot12 = slot12.desc
-										slot13 = _
-										slot13 = slot13.map
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 431-435, warpins: 1 ---
+									slot14 = slot1.drop
+									slot14 = slot14.type
+									slot15 = DROP_TYPE_EQUIPMENT_SKIN
+
+									if slot14 == slot15 then
+
+										-- Decompilation error in this vicinity:
+										--- BLOCK #0 436-461, warpins: 1 ---
 										slot14 = slot1.drop
 										slot14 = slot14.cfg
-										slot14 = slot14.equip_type
+										slot14 = slot14.desc
+										slot15 = _
+										slot15 = slot15.map
+										slot16 = slot1.drop
+										slot16 = slot16.cfg
+										slot16 = slot16.equip_type
 
-										function slot15(slot0)
+										function slot17(slot0)
+
+											-- Decompilation error in this vicinity:
+											--- BLOCK #0 1-4, warpins: 1 ---
 											slot1 = EquipType
 											slot1 = slot1.Type2Name2
 											slot2 = slot0
 
 											return slot1(slot2)
+											--- END OF BLOCK #0 ---
+
+
+
 										end
 
-										slot13 = slot13(slot14, slot15)
-										slot14 = setTextEN
-										slot15 = slot3
-										slot16 = slot12
-										slot17 = "\n\n"
-										slot18 = i18n
-										slot19 = "word_fit"
-										slot18 = slot18(slot19)
-										slot19 = ": "
-										slot20 = table
-										slot20 = slot20.concat
-										slot21 = slot13
-										slot22 = ","
-										slot20 = slot20(slot21, slot22)
-										slot16 = slot16 .. slot17 .. slot18 .. slot19 .. slot20
+										slot15 = slot15(slot16, slot17)
+										slot16 = setTextEN
+										slot17 = slot3
+										slot18 = slot14
+										slot19 = "\n\n"
+										slot20 = i18n
+										slot21 = "word_fit"
+										slot20 = slot20(slot21)
+										slot21 = ": "
+										slot22 = table
+										slot22 = slot22.concat
+										slot23 = slot15
+										slot24 = ","
+										slot22 = slot22(slot23, slot24)
+										slot18 = slot18 .. slot19 .. slot20 .. slot21 .. slot22
 
-										slot14(slot15, slot16)
+										slot16(slot17, slot18)
+										--- END OF BLOCK #0 ---
+
+
+
 									else
-										slot12 = slot1.drop
-										slot12 = slot12.type
-										slot13 = DROP_TYPE_VITEM
 
-										if slot12 == slot13 then
-											slot12 = setTextEN
-											slot13 = slot3
-											slot14 = HXSet
-											slot14 = slot14.hxLan
-											slot15 = slot1.drop
-											slot15 = slot15.cfg
-											slot15 = slot15.display
+										-- Decompilation error in this vicinity:
+										--- BLOCK #0 462-466, warpins: 1 ---
+										slot14 = slot1.drop
+										slot14 = slot14.type
+										slot15 = DROP_TYPE_VITEM
 
-											slot12(slot13, slot14(slot15))
+										if slot14 == slot15 then
+
+											-- Decompilation error in this vicinity:
+											--- BLOCK #0 467-476, warpins: 1 ---
+											slot14 = setTextEN
+											slot15 = slot3
+											slot16 = HXSet
+											slot16 = slot16.hxLan
+											slot17 = slot1.drop
+											slot17 = slot17.cfg
+											slot17 = slot17.display
+
+											slot14(slot15, slot16(slot17))
+											--- END OF BLOCK #0 ---
+
+
+
 										else
-											slot12 = slot1.drop
-											slot12 = slot12.type
-											slot13 = DROP_TYPE_WORLD_ITEM
 
-											if slot12 == slot13 then
-												slot12 = setTextEN
-												slot13 = slot3
-												slot14 = HXSet
-												slot14 = slot14.hxLan
-												slot15 = slot1.drop
-												slot15 = slot15.cfg
-												slot15 = slot15.display
+											-- Decompilation error in this vicinity:
+											--- BLOCK #0 477-481, warpins: 1 ---
+											slot14 = slot1.drop
+											slot14 = slot14.type
+											slot15 = DROP_TYPE_WORLD_ITEM
 
-												slot12(slot13, slot14(slot15))
+											if slot14 == slot15 then
+
+												-- Decompilation error in this vicinity:
+												--- BLOCK #0 482-491, warpins: 1 ---
+												slot14 = setTextEN
+												slot15 = slot3
+												slot16 = HXSet
+												slot16 = slot16.hxLan
+												slot17 = slot1.drop
+												slot17 = slot17.cfg
+												slot17 = slot17.display
+
+												slot14(slot15, slot16(slot17))
+												--- END OF BLOCK #0 ---
+
+
+
 											else
-												slot12 = slot1.drop
-												slot12 = slot12.type
-												slot13 = DROP_TYPE_ICON_FRAME
 
-												if slot12 == slot13 then
-													slot12 = setTextEN
-													slot13 = slot3
-													slot14 = slot1.drop
-													slot14 = slot14.cfg
-													slot14 = slot14.desc
+												-- Decompilation error in this vicinity:
+												--- BLOCK #0 492-496, warpins: 1 ---
+												slot14 = slot1.drop
+												slot14 = slot14.type
+												slot15 = DROP_TYPE_ICON_FRAME
 
-													slot12(slot13, slot14)
+												if slot14 == slot15 then
+
+													-- Decompilation error in this vicinity:
+													--- BLOCK #0 497-503, warpins: 1 ---
+													slot14 = setTextEN
+													slot15 = slot3
+													slot16 = slot1.drop
+													slot16 = slot16.cfg
+													slot16 = slot16.desc
+
+													slot14(slot15, slot16)
+													--- END OF BLOCK #0 ---
+
+
+
 												else
-													slot12 = slot1.drop
-													slot12 = slot12.type
-													slot13 = DROP_TYPE_CHAT_FRAME
 
-													if slot12 == slot13 then
-														slot12 = setTextEN
-														slot13 = slot3
-														slot14 = slot1.drop
-														slot14 = slot14.cfg
-														slot14 = slot14.desc
+													-- Decompilation error in this vicinity:
+													--- BLOCK #0 504-508, warpins: 1 ---
+													slot14 = slot1.drop
+													slot14 = slot14.type
+													slot15 = DROP_TYPE_CHAT_FRAME
 
-														slot12(slot13, slot14)
+													if slot14 == slot15 then
+
+														-- Decompilation error in this vicinity:
+														--- BLOCK #0 509-515, warpins: 1 ---
+														slot14 = setTextEN
+														slot15 = slot3
+														slot16 = slot1.drop
+														slot16 = slot16.cfg
+														slot16 = slot16.desc
+
+														slot14(slot15, slot16)
+														--- END OF BLOCK #0 ---
+
+
+
 													else
-														slot12 = slot1.drop
-														slot12 = slot12.type
-														slot13 = DROP_TYPE_EMOJI
 
-														if slot12 == slot13 then
-															slot12 = setTextEN
-															slot13 = slot3
-															slot14 = slot1.drop
-															slot14 = slot14.cfg
-															slot14 = slot14.item_desc
+														-- Decompilation error in this vicinity:
+														--- BLOCK #0 516-520, warpins: 1 ---
+														slot14 = slot1.drop
+														slot14 = slot14.type
+														slot15 = DROP_TYPE_EMOJI
 
-															slot12(slot13, slot14)
+														if slot14 == slot15 then
+
+															-- Decompilation error in this vicinity:
+															--- BLOCK #0 521-527, warpins: 1 ---
+															slot14 = setTextEN
+															slot15 = slot3
+															slot16 = slot1.drop
+															slot16 = slot16.cfg
+															slot16 = slot16.item_desc
+
+															slot14(slot15, slot16)
+															--- END OF BLOCK #0 ---
+
+
+
 														end
+														--- END OF BLOCK #0 ---
+
+
+
 													end
+													--- END OF BLOCK #0 ---
+
+
+
 												end
+												--- END OF BLOCK #0 ---
+
+
+
 											end
+											--- END OF BLOCK #0 ---
+
+
+
 										end
+										--- END OF BLOCK #0 ---
+
+
+
 									end
+									--- END OF BLOCK #0 ---
+
+
+
 								end
+								--- END OF BLOCK #0 ---
+
+
+
 							end
+							--- END OF BLOCK #0 ---
+
+
+
 						end
+						--- END OF BLOCK #0 ---
+
+
+
 					end
+					--- END OF BLOCK #0 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot12 = slot1.intro
+	--- END OF BLOCK #8 ---
 
-	if slot12 then
-		slot12 = setTextEN
-		slot13 = slot3
-		slot14 = slot1.intro
+	FLOW; TARGET BLOCK #9
 
-		slot12(slot13, slot14)
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #9 528-530, warpins: 16 ---
+	slot14 = slot1.intro
+
+	if slot14 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 531-534, warpins: 1 ---
+		slot14 = setTextEN
+		slot15 = slot3
+		slot16 = slot1.intro
+
+		slot14(slot15, slot16)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot12 = slot1.enabelYesBtn
+	--- END OF BLOCK #9 ---
 
-	if slot12 ~= nil then
-		slot12 = slot0._btnContainer
-		slot13 = slot12
-		slot12 = slot12.GetChild
-		slot14 = 1
-		slot12 = slot12(slot13, slot14)
-		slot13 = setButtonEnabled
-		slot14 = slot12
-		slot15 = slot1.enabelYesBtn
+	FLOW; TARGET BLOCK #10
 
-		slot13(slot14, slot15)
 
-		slot13 = eachChild
-		slot14 = slot12
 
-		function slot15(slot0)
-			GetOrAddComponent(slot0, typeof(CanvasGroup)).alpha = (slot0.enabelYesBtn and 1) or 0.3
+	-- Decompilation error in this vicinity:
+	--- BLOCK #10 535-537, warpins: 2 ---
+	slot14 = slot1.enabelYesBtn
+
+	if slot14 ~= nil then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 538-550, warpins: 1 ---
+		slot14 = slot0._btnContainer
+		slot15 = slot14
+		slot14 = slot14.GetChild
+		slot16 = 1
+		slot14 = slot14(slot15, slot16)
+		slot15 = setButtonEnabled
+		slot16 = slot14
+		slot17 = slot1.enabelYesBtn
+
+		slot15(slot16, slot17)
+
+		slot15 = eachChild
+		slot16 = slot14
+
+		function slot17(slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot1 = slot0
+			slot1 = slot1.enabelYesBtn
+
+			if slot1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 5-6, warpins: 1 ---
+				slot1 = 1
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 7-7, warpins: 1 ---
+				slot1 = 0.3
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 8-15, warpins: 2 ---
+			slot2 = GetOrAddComponent
+			slot3 = slot0
+			slot4 = typeof
+			slot5 = CanvasGroup
+			slot2 = slot2(slot3, slot4(slot5))
+			slot2.alpha = slot1
+
+			return
+			--- END OF BLOCK #1 ---
+
+
+
 		end
 
-		slot13(slot14, slot15)
+		slot15(slot16, slot17)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot12 = ipairs
-	slot13 = slot0.singleItemIntros
-	slot12, slot13, slot14 = slot12(slot13)
+	--- END OF BLOCK #10 ---
 
-	for slot15, slot16 in slot12, slot13, slot14 do
-		setActive(slot16, slot15 <= slot4 and slot5 == nil)
+	FLOW; TARGET BLOCK #11
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #11 551-554, warpins: 2 ---
+	slot14 = ipairs
+	slot15 = slot0.singleItemIntros
+	slot14, slot15, slot16 = slot14(slot15)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #12 555-566, warpins: 0 ---
+	for slot17, slot18 in slot14, slot15, slot16 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 555-558, warpins: 1 ---
+		slot19 = setActive
+		slot20 = slot18
+
+		if slot17 > slot4 or slot5 ~= nil then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 561-562, warpins: 2 ---
+			slot21 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 563-563, warpins: 1 ---
+			slot21 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 564-564, warpins: 2 ---
+		slot19(slot20, slot21)
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 565-566, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
-	slot12 = slot1.show_medal
+	--- END OF BLOCK #12 ---
 
-	if slot12 then
-		slot13 = slot0
-		slot12 = slot0.createBtn
-		slot14 = {
+	FLOW; TARGET BLOCK #13
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #13 567-569, warpins: 1 ---
+	slot14 = slot1.show_medal
+
+	if slot14 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 570-581, warpins: 1 ---
+		slot15 = slot0
+		slot14 = slot0.createBtn
+		slot16 = {
 			sibling = 0,
 			hideEvent = true
 		}
-		slot15 = slot1.show_medal
-		slot15 = slot15.desc
-		slot14.text = slot15
-		slot15 = slot3
-		slot15 = slot15.BUTTON_MEDAL
-		slot14.btnType = slot15
-		slot15 = SFX_UI_BUILDING_EXCHANGE
-		slot14.sound = slot15
+		slot17 = slot1.show_medal
+		slot17 = slot17.desc
+		slot16.text = slot17
+		slot17 = slot3
+		slot17 = slot17.BUTTON_MEDAL
+		slot16.btnType = slot17
+		slot17 = SFX_UI_BUILDING_EXCHANGE
+		slot16.sound = slot17
 
-		slot12(slot13, slot14)
+		slot14(slot15, slot16)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot13 = slot0
-	slot12 = slot0.Loaded
-	slot14 = slot1
+	--- END OF BLOCK #13 ---
 
-	slot12(slot13, slot14)
+	FLOW; TARGET BLOCK #14
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #14 582-587, warpins: 2 ---
+	slot15 = slot0
+	slot14 = slot0.Loaded
+	slot16 = slot1
+
+	slot14(slot15, slot16)
+
+	return
+	--- END OF BLOCK #14 ---
+
+
+
 end
 
 function slot8(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-46, warpins: 1 ---
 	slot2 = true
 	slot1.hideNo = slot2
 	slot2 = true
@@ -2089,6 +3089,9 @@ function slot8(slot0, slot1)
 	slot2 = slot2.helpSize
 
 	if slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 47-55, warpins: 1 ---
 		slot2 = rtf
 		slot3 = slot0._helpPanel
 		slot2 = slot2(slot3)
@@ -2098,27 +3101,72 @@ function slot8(slot0, slot1)
 		slot4 = slot4.x
 
 		if not slot4 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 56-57, warpins: 1 ---
 			slot4 = slot0._defaultHelpSize
 			slot4 = slot4.x
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 58-62, warpins: 2 ---
 		slot5 = slot1.helps
 		slot5 = slot5.helpSize
 		slot5 = slot5.y
 
 		if not slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 63-64, warpins: 1 ---
 			slot5 = slot0._defaultHelpSize
 			slot5 = slot5.y
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 65-66, warpins: 2 ---
 		slot3 = slot3(slot4, slot5)
 		slot2.sizeDelta = slot3
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 67-70, warpins: 2 ---
 	slot2 = slot1.helps
 	slot2 = slot2.helpPos
 
 	if slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 71-78, warpins: 1 ---
 		slot2 = setAnchoredPosition
 		slot3 = slot0._helpPanel
 		slot4 = {}
@@ -2127,29 +3175,74 @@ function slot8(slot0, slot1)
 		slot5 = slot5.x
 
 		if not slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 79-80, warpins: 1 ---
 			slot5 = slot0._defaultHelpPos
 			slot5 = slot5.x
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 81-86, warpins: 2 ---
 		slot4.x = slot5
 		slot5 = slot1.helps
 		slot5 = slot5.helpPos
 		slot5 = slot5.y
 
 		if not slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 87-88, warpins: 1 ---
 			slot5 = slot0._defaultHelpPos
 			slot5 = slot5.y
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 89-90, warpins: 2 ---
 		slot4.y = slot5
 
 		slot2(slot3, slot4)
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 91-94, warpins: 2 ---
 	slot2 = slot1.helps
 	slot2 = slot2.windowSize
 
 	if slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 95-103, warpins: 1 ---
 		slot2 = rtf
 		slot3 = slot0._window
 		slot2 = slot2(slot3)
@@ -2159,27 +3252,72 @@ function slot8(slot0, slot1)
 		slot4 = slot4.x
 
 		if not slot4 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 104-105, warpins: 1 ---
 			slot4 = slot0._defaultSize
 			slot4 = slot4.x
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 106-110, warpins: 2 ---
 		slot5 = slot1.helps
 		slot5 = slot5.windowSize
 		slot5 = slot5.y
 
 		if not slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 111-112, warpins: 1 ---
 			slot5 = slot0._defaultSize
 			slot5 = slot5.y
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 113-114, warpins: 2 ---
 		slot3 = slot3(slot4, slot5)
 		slot2.sizeDelta = slot3
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 115-118, warpins: 2 ---
 	slot2 = slot1.helps
 	slot2 = slot2.windowPos
 
 	if slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 119-127, warpins: 1 ---
 		slot2 = rtf
 		slot3 = slot0._window
 		slot2 = slot2(slot3)
@@ -2189,26 +3327,112 @@ function slot8(slot0, slot1)
 		slot4 = slot4.x
 
 		if not slot4 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 128-129, warpins: 1 ---
 			slot4 = slot0._defaultSize
 			slot4 = slot4.x
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 130-134, warpins: 2 ---
 		slot5 = slot1.helps
 		slot5 = slot5.windowSize
 		slot5 = slot5.y
 
 		if not slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 135-136, warpins: 1 ---
 			slot5 = slot0._defaultSize
 			slot5 = slot5.y
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
-		slot2.sizeDelta = slot3(slot4, slot5)
+		--- END OF BLOCK #1 ---
 
-		setAnchoredPosition(slot0._window, {
-			x = slot1.helps.windowPos.x or 0,
-			y = slot1.helps.windowPos.y or 0
-		})
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 137-146, warpins: 2 ---
+		slot3 = slot3(slot4, slot5)
+		slot2.sizeDelta = slot3
+		slot2 = setAnchoredPosition
+		slot3 = slot0._window
+		slot4 = {}
+		slot5 = slot1.helps
+		slot5 = slot5.windowPos
+		slot5 = slot5.x
+
+		if not slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 147-147, warpins: 1 ---
+			slot5 = 0
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 148-153, warpins: 2 ---
+		slot4.x = slot5
+		slot5 = slot1.helps
+		slot5 = slot5.windowPos
+		slot5 = slot5.y
+
+		if not slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 154-154, warpins: 1 ---
+			slot5 = 0
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 155-157, warpins: 2 ---
+		slot4.y = slot5
+
+		slot2(slot3, slot4)
+		--- END OF BLOCK #4 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 158-161, warpins: 1 ---
 		slot2 = setAnchoredPosition
 		slot3 = slot0._window
 		slot4 = {
@@ -2217,12 +3441,27 @@ function slot8(slot0, slot1)
 		}
 
 		slot2(slot3, slot4)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 162-165, warpins: 2 ---
 	slot2 = slot1.helps
 	slot2 = slot2.disableScroll
 
 	if slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 166-189, warpins: 1 ---
 		slot2 = GetComponent
 		slot3 = slot0._helpPanel
 		slot4 = typeof
@@ -2252,12 +3491,27 @@ function slot8(slot0, slot1)
 		slot5 = false
 
 		slot3(slot4, slot5)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 190-193, warpins: 2 ---
 	slot2 = slot1.helps
 	slot2 = slot2.ImageMode
 
 	if slot2 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 194-204, warpins: 1 ---
 		slot2 = setActive
 		slot3 = slot0._top
 		slot4 = false
@@ -2272,8 +3526,20 @@ function slot8(slot0, slot1)
 		slot4 = false
 
 		slot2(slot3, slot4)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #6 205-212, warpins: 2 ---
 	slot2 = slot0.settings
 	slot2 = slot2.helps
 	slot3 = #slot2
@@ -2282,7 +3548,18 @@ function slot8(slot0, slot1)
 	slot4 = slot4 - 1
 	slot5 = 1
 
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #7 213-220, warpins: 0 ---
 	for slot6 = slot3, slot4, slot5 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 213-220, warpins: 2 ---
 		slot7 = Destroy
 		slot8 = slot0._helpList
 		slot9 = slot8
@@ -2290,82 +3567,439 @@ function slot8(slot0, slot1)
 		slot10 = slot6
 
 		slot7(slot8(slot9, slot10))
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #8 221-226, warpins: 1 ---
 	slot3 = slot0._helpList
 	slot3 = slot3.childCount
 	slot4 = #slot2
 	slot4 = slot4 - 1
 	slot5 = 1
 
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #9 227-231, warpins: 0 ---
 	for slot6 = slot3, slot4, slot5 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 227-231, warpins: 2 ---
 		slot7 = cloneTplTo
 		slot8 = slot0._helpTpl
 		slot9 = slot0._helpList
 
 		slot7(slot8, slot9)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #10 232-235, warpins: 1 ---
 	slot3 = ipairs
 	slot4 = slot2
 	slot3, slot4, slot5 = slot3(slot4)
 
-	for slot6, slot7 in slot3, slot4, slot5 do
-		slot8 = slot0._helpList:GetChild(slot6 - 1)
+	--- END OF BLOCK #10 ---
 
-		setActive(slot8, true)
-		setText(slot8, slot7.info or "")
-		setActive(slot9, slot7.icon)
-		setActive(findTF(slot8, "line"), slot7.line)
+	FLOW; TARGET BLOCK #11
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #11 236-341, warpins: 0 ---
+	for slot6, slot7 in slot3, slot4, slot5 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 236-249, warpins: 1 ---
+		slot8 = slot0._helpList
+		slot9 = slot8
+		slot8 = slot8.GetChild
+		slot10 = slot6 - 1
+		slot8 = slot8(slot9, slot10)
+		slot9 = setActive
+		slot10 = slot8
+		slot11 = true
+
+		slot9(slot10, slot11)
+
+		slot9 = setText
+		slot10 = slot8
+		slot11 = slot7.info
+
+		if not slot11 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 250-250, warpins: 1 ---
+			slot11 = ""
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 251-269, warpins: 2 ---
+		slot9(slot10, slot11)
+
+		slot10 = slot8
+		slot9 = slot8.Find
+		slot11 = "icon"
+		slot9 = slot9(slot10, slot11)
+		slot10 = setActive
+		slot11 = slot9
+		slot12 = slot7.icon
+
+		slot10(slot11, slot12)
+
+		slot10 = setActive
+		slot11 = findTF
+		slot12 = slot8
+		slot13 = "line"
+		slot11 = slot11(slot12, slot13)
+		slot12 = slot7.line
+
+		slot10(slot11, slot12)
 
 		slot10 = slot7.icon
 
 		if slot10 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 270-274, warpins: 1 ---
 			slot10 = 1
 			slot11 = slot1.helps
 			slot11 = slot11.ImageMode
 
 			if slot11 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 275-275, warpins: 1 ---
 				slot10 = 1.5
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
-			slot9.transform.localScale = Vector2(slot7.icon.scale or slot10, slot7.icon.scale or slot10)
-			slot11 = slot7.icon.path
-			slot12 = slot7.icon.posX
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 276-281, warpins: 2 ---
+			slot11 = slot9.transform
+			slot12 = Vector2
+			slot13 = slot7.icon
+			slot13 = slot13.scale
+
+			if not slot13 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 282-282, warpins: 1 ---
+				slot13 = slot10
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 283-286, warpins: 2 ---
+			slot14 = slot7.icon
+			slot14 = slot14.scale
+
+			if not slot14 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 287-287, warpins: 1 ---
+				slot14 = slot10
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #3 288-295, warpins: 2 ---
+			slot12 = slot12(slot13, slot14)
+			slot11.localScale = slot12
+			slot11 = slot7.icon
+			slot11 = slot11.path
+			slot12 = slot7.icon
+			slot12 = slot12.posX
 
 			if slot12 then
-				slot12 = slot7.icon.posX or -20
-				slot13 = slot7.icon.posY
 
-				if slot13 then
-					setImageSprite(slot9:GetComponent(typeof(Image)), slot14, true)
-					setAnchoredPosition(slot9, {
-						x = slot12,
-						y = slot7.icon.posY or 0
-					})
-					setActive(slot9:Find("corner"), slot1.helps.pageMode)
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 296-299, warpins: 1 ---
+				slot12 = slot7.icon
+				slot12 = slot12.posX
+
+				if not slot12 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 300-300, warpins: 2 ---
+					slot12 = -20
+					--- END OF BLOCK #0 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #4 301-304, warpins: 2 ---
+			slot13 = slot7.icon
+			slot13 = slot13.posY
+
+			if slot13 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 305-308, warpins: 1 ---
+				slot13 = slot7.icon
+				slot13 = slot13.posY
+
+				if not slot13 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 309-309, warpins: 2 ---
+					slot13 = 0
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #4 ---
+
+			FLOW; TARGET BLOCK #5
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #5 310-339, warpins: 2 ---
+			slot14 = LoadSprite
+			slot15 = slot7.icon
+			slot15 = slot15.atlas
+			slot16 = slot7.icon
+			slot16 = slot16.path
+			slot14 = slot14(slot15, slot16)
+			slot15 = setImageSprite
+			slot17 = slot9
+			slot16 = slot9.GetComponent
+			slot18 = typeof
+			slot19 = Image
+			slot16 = slot16(slot17, slot18(slot19))
+			slot17 = slot14
+			slot18 = true
+
+			slot15(slot16, slot17, slot18)
+
+			slot15 = setAnchoredPosition
+			slot16 = slot9
+			slot17 = {}
+			slot17.x = slot12
+			slot17.y = slot13
+
+			slot15(slot16, slot17)
+
+			slot15 = setActive
+			slot17 = slot9
+			slot16 = slot9.Find
+			slot18 = "corner"
+			slot16 = slot16(slot17, slot18)
+			slot17 = slot1.helps
+			slot17 = slot17.pageMode
+
+			slot15(slot16, slot17)
+			--- END OF BLOCK #5 ---
+
+
+
 		end
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 340-341, warpins: 3 ---
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
-	slot0.helpPage = slot1.helps.defaultpage or 1
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #12 342-345, warpins: 1 ---
+	slot3 = slot1.helps
+	slot3 = slot3.defaultpage
+
+	if not slot3 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 346-346, warpins: 1 ---
+		slot3 = 1
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #13 347-351, warpins: 2 ---
+	slot0.helpPage = slot3
 	slot3 = slot1.helps
 	slot3 = slot3.pageMode
 
 	if slot3 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 352-355, warpins: 1 ---
 		slot4 = slot0
 		slot3 = slot0.switchHelpPage
 		slot5 = slot0.helpPage
 
 		slot3(slot4, slot5)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
-	slot0:Loaded(slot1)
-	setActive(slot0._btnContainer, slot0._btnContainer.transform.childCount > 0)
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #14 356-367, warpins: 2 ---
+	slot4 = slot0
+	slot3 = slot0.Loaded
+	slot5 = slot1
+
+	slot3(slot4, slot5)
+
+	slot3 = setActive
+	slot4 = slot0._btnContainer
+	slot5 = slot0._btnContainer
+	slot5 = slot5.transform
+	slot5 = slot5.childCount
+	slot6 = 0
+
+	if slot5 <= slot6 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 368-369, warpins: 1 ---
+		slot5 = false
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 370-370, warpins: 1 ---
+		slot5 = true
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #15 371-372, warpins: 2 ---
+	slot3(slot4, slot5)
+
+	return
+	--- END OF BLOCK #15 ---
+
+
+
 end
 
 function slot9(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-53, warpins: 1 ---
 	slot3 = slot0
 	slot2 = slot0.commonSetting
 	slot4 = slot1
@@ -2431,6 +4065,9 @@ function slot9(slot0, slot1)
 	slot7 = slot7(slot8, slot9)
 
 	if slot3 == "showresttime" then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 54-75, warpins: 1 ---
 		slot8 = setActive
 		slot9 = slot6
 		slot10 = true
@@ -2456,15 +4093,33 @@ function slot9(slot0, slot1)
 		slot9 = slot9.secondaryUItimer
 
 		if slot9 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 76-80, warpins: 1 ---
 			slot9 = slot0.timers
 			slot9 = slot9.secondaryUItimer
 			slot10 = slot9
 			slot9 = slot9.Stop
 
 			slot9(slot10)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 81-95, warpins: 2 ---
 		function slot9()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-11, warpins: 1 ---
 			slot0 = slot0
 			slot0 = slot0.TimeMgr
 			slot0 = slot0.GetInstance
@@ -2476,21 +4131,58 @@ function slot9(slot0, slot1)
 			slot1 = slot1.fail_cd
 
 			if slot1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 12-16, warpins: 1 ---
 				slot1 = slot1
 				slot1 = slot1.fail_cd
 				slot1 = slot1 - slot0
 
 				if not slot1 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 17-17, warpins: 2 ---
 					slot1 = 0
+					--- END OF BLOCK #0 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 18-20, warpins: 2 ---
 			slot2 = 0
 
 			if slot1 < slot2 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 21-22, warpins: 1 ---
 				slot1 = 0
+				--- END OF BLOCK #0 ---
+
+
+
 			end
 
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 23-29, warpins: 2 ---
 			slot2 = math
 			slot2 = slot2.floor
 			slot3 = slot1 / 86400
@@ -2498,6 +4190,9 @@ function slot9(slot0, slot1)
 			slot3 = 0
 
 			if slot2 > slot3 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 30-43, warpins: 1 ---
 				slot3 = slot2
 				slot4 = string
 				slot4 = slot4.format
@@ -2511,7 +4206,14 @@ function slot9(slot0, slot1)
 				slot6 = slot6 .. slot7
 				slot4 = slot4(slot5, slot6)
 				slot3.text = slot4
+				--- END OF BLOCK #0 ---
+
+
+
 			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 44-50, warpins: 1 ---
 				slot3 = math
 				slot3 = slot3.floor
 				slot4 = slot1 / 3600
@@ -2519,6 +4221,9 @@ function slot9(slot0, slot1)
 				slot4 = 0
 
 				if slot3 > slot4 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 51-64, warpins: 1 ---
 					slot4 = slot2
 					slot5 = string
 					slot5 = slot5.format
@@ -2532,7 +4237,14 @@ function slot9(slot0, slot1)
 					slot7 = slot7 .. slot8
 					slot5 = slot5(slot6, slot7)
 					slot4.text = slot5
+					--- END OF BLOCK #0 ---
+
+
+
 				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 65-72, warpins: 1 ---
 					slot4 = ""
 					slot5 = math
 					slot5 = slot5.floor
@@ -2541,14 +4253,29 @@ function slot9(slot0, slot1)
 					slot6 = 0
 
 					if slot5 > slot6 then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 73-78, warpins: 1 ---
 						slot6 = slot4
 						slot7 = slot5
 						slot8 = i18n
 						slot9 = "word_minute"
 						slot8 = slot8(slot9)
 						slot4 = slot6 .. slot7 .. slot8
+						--- END OF BLOCK #0 ---
+
+
+
 					end
 
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 79-98, warpins: 2 ---
 					slot6 = math
 					slot6 = slot6.max
 					slot7 = slot5 * 60
@@ -2569,8 +4296,30 @@ function slot9(slot0, slot1)
 					slot10 = slot10 .. slot11 .. slot12
 					slot8 = slot8(slot9, slot10)
 					slot7.text = slot8
+					--- END OF BLOCK #1 ---
+
+
+
 				end
+				--- END OF BLOCK #0 ---
+
+
+
 			end
+
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #3 99-99, warpins: 3 ---
+			return
+			--- END OF BLOCK #3 ---
+
+
+
 		end
 
 		slot10 = slot9
@@ -2590,64 +4339,49 @@ function slot9(slot0, slot1)
 
 		slot11 = slot0.timers
 		slot11.secondaryUItimer = slot10
-	elseif slot3 == "settips" then
+		--- END OF BLOCK #1 ---
+
+
+
+	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 98-121, warpins: 1 ---
-		slot8 = setActive
-		slot9 = slot6
-		slot10 = false
-
-		slot8(slot9, slot10)
-
-		slot8 = setActive
-		slot9 = slot7
-		slot10 = true
-
-		slot8(slot9, slot10)
-
-		slot9 = slot7
-		slot8 = slot7.Find
-		slot10 = "InputField"
-		slot8 = slot8(slot9, slot10)
-		slot9 = slot8
-		slot8 = slot8.GetComponent
-		slot10 = typeof
-		slot11 = InputField
-		slot8 = slot8(slot9, slot10(slot11))
-		slot9 = slot1.references
-		slot9.inputfield = slot8
-		slot9 = slot1.references
-		slot9 = slot9.lasttext
-		slot9 = slot9 or ""
-		slot8.text = slot9
-		slot9 = 20
-		slot10 = slot8.onValueChanged
-		slot11 = slot10
-		slot10 = slot10.AddListener
-
-		function slot12()
+		--- BLOCK #0 96-97, warpins: 1 ---
+		if slot3 == "settips" then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0 = utf8_to_unicode
-			slot1 = slot0
-			slot1 = slot1.text
-			slot0, slot1 = slot0(slot1)
-			slot2 = slot1
+			--- BLOCK #0 98-121, warpins: 1 ---
+			slot8 = setActive
+			slot9 = slot6
+			slot10 = false
 
-			if slot2 < slot1 then
+			slot8(slot9, slot10)
+
+			slot8 = setActive
+			slot9 = slot7
+			slot10 = true
+
+			slot8(slot9, slot10)
+
+			slot9 = slot7
+			slot8 = slot7.Find
+			slot10 = "InputField"
+			slot8 = slot8(slot9, slot10)
+			slot9 = slot8
+			slot8 = slot8.GetComponent
+			slot10 = typeof
+			slot11 = InputField
+			slot8 = slot8(slot9, slot10(slot11))
+			slot9 = slot1.references
+			slot9.inputfield = slot8
+			slot9 = slot1.references
+			slot9 = slot9.lasttext
+
+			if not slot9 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 8-15, warpins: 1 ---
-				slot2 = slot0
-				slot3 = SecondaryPasswordMediator
-				slot3 = slot3.ClipUnicodeStr
-				slot4 = slot0
-				slot4 = slot4.text
-				slot5 = slot1
-				slot3 = slot3(slot4, slot5)
-				slot2.text = slot3
+				--- BLOCK #0 122-122, warpins: 1 ---
+				slot9 = ""
 				--- END OF BLOCK #0 ---
 
 
@@ -2661,164 +4395,207 @@ function slot9(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 16-16, warpins: 2 ---
-			return
-			--- END OF BLOCK #1 ---
+			--- BLOCK #1 123-147, warpins: 2 ---
+			slot8.text = slot9
+			slot9 = 20
+			slot10 = slot8.onValueChanged
+			slot11 = slot10
+			slot10 = slot10.AddListener
 
-
-
-		end
-
-		slot10(slot11, slot12)
-
-		function slot10()
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-4, warpins: 1 ---
-			slot0 = PLATFORM_CODE
-			slot1 = PLATFORM_JP
-
-			if slot0 ~= slot1 then
+			function slot12()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 5-8, warpins: 1 ---
-				slot0 = PLATFORM_CODE
-				slot1 = PLATFORM_US
+				--- BLOCK #0 1-7, warpins: 1 ---
+				slot0 = utf8_to_unicode
+				slot1 = slot0
+				slot1 = slot1.text
+				slot0, slot1 = slot0(slot1)
+				slot2 = slot1
 
-				if slot0 == slot1 then
+				if slot2 < slot1 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 9-10, warpins: 2 ---
-					slot0 = false
-
-					return slot0
+					--- BLOCK #0 8-15, warpins: 1 ---
+					slot2 = slot0
+					slot3 = SecondaryPasswordMediator
+					slot3 = slot3.ClipUnicodeStr
+					slot4 = slot0
+					slot4 = slot4.text
+					slot5 = slot1
+					slot3 = slot3(slot4, slot5)
+					slot2.text = slot3
 					--- END OF BLOCK #0 ---
 
 
 
 				end
+
 				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 16-16, warpins: 2 ---
+				return
+				--- END OF BLOCK #1 ---
 
 
 
 			end
 
-			--- END OF BLOCK #0 ---
+			slot10(slot11, slot12)
 
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 11-19, warpins: 2 ---
-			slot0 = slot0
-			slot0 = slot0.text
-			slot1 = wordVer
-			slot2 = slot0
-			slot3 = {
-				isReplace = true
-			}
-			slot1, slot2 = slot1(slot2, slot3)
-			slot3 = 0
-
-			if slot1 > slot3 or slot2 ~= slot0 then
+			function slot10()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 22-36, warpins: 2 ---
-				slot3 = slot1
-				slot3 = slot3.TipsMgr
-				slot3 = slot3.GetInstance
-				slot3 = slot3()
-				slot4 = slot3
-				slot3 = slot3.ShowTips
-				slot5 = i18n
-				slot6 = "secondarypassword_illegal_tip"
+				--- BLOCK #0 1-4, warpins: 1 ---
+				slot0 = PLATFORM_CODE
+				slot1 = PLATFORM_JP
 
-				slot3(slot4, slot5(slot6))
+				if slot0 ~= slot1 then
 
-				slot3 = slot0
-				slot3.text = slot2
-				slot3 = true
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 5-8, warpins: 1 ---
+					slot0 = PLATFORM_CODE
+					slot1 = PLATFORM_US
 
-				return slot3
+					if slot0 == slot1 then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 9-10, warpins: 2 ---
+						slot0 = false
+
+						return slot0
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
 				--- END OF BLOCK #0 ---
 
+				FLOW; TARGET BLOCK #1
 
 
-			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 37-38, warpins: 1 ---
-				slot3 = false
+				--- BLOCK #1 11-19, warpins: 2 ---
+				slot0 = slot0
+				slot0 = slot0.text
+				slot1 = wordVer
+				slot2 = slot0
+				slot3 = {
+					isReplace = true
+				}
+				slot1, slot2 = slot1(slot2, slot3)
+				slot3 = 0
 
-				return slot3
-				--- END OF BLOCK #0 ---
+				if slot1 > slot3 or slot2 ~= slot0 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 22-36, warpins: 2 ---
+					slot3 = slot1
+					slot3 = slot3.TipsMgr
+					slot3 = slot3.GetInstance
+					slot3 = slot3()
+					slot4 = slot3
+					slot3 = slot3.ShowTips
+					slot5 = i18n
+					slot6 = "secondarypassword_illegal_tip"
+
+					slot3(slot4, slot5(slot6))
+
+					slot3 = slot0
+					slot3.text = slot2
+					slot3 = true
+
+					return slot3
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 37-38, warpins: 1 ---
+					slot3 = false
+
+					return slot3
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 39-39, warpins: 2 ---
+				return
+				--- END OF BLOCK #2 ---
 
 
 
 			end
 
+			slot12 = slot0
+			slot11 = slot0.createBtn
+			slot13 = {}
+			slot14 = slot1
+			slot14 = slot14.TEXT_CONFIRM
+			slot13.text = slot14
+			slot14 = slot1
+			slot14 = slot14.BUTTON_BLUE
+			slot13.btnType = slot14
+			slot14 = slot0.settings
+			slot14 = slot14.onYes
+			slot13.onCallback = slot14
+			slot14 = SFX_CONFIRM
+			slot13.sound = slot14
+			slot13.noQuit = slot10
+
+			slot11(slot12, slot13)
 			--- END OF BLOCK #1 ---
-
-			FLOW; TARGET BLOCK #2
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #2 39-39, warpins: 2 ---
-			return
-			--- END OF BLOCK #2 ---
 
 
 
 		end
-
-		slot12 = slot0
-		slot11 = slot0.createBtn
-		slot13 = {}
-		slot14 = slot1
-		slot14 = slot14.TEXT_CONFIRM
-		slot13.text = slot14
-		slot14 = slot1
-		slot14 = slot14.BUTTON_BLUE
-		slot13.btnType = slot14
-		slot14 = slot0.settings
-		slot14 = slot14.onYes
-		slot13.onCallback = slot14
-		slot14 = SFX_CONFIRM
-		slot13.sound = slot14
-		slot13.noQuit = slot10
-
-		slot11(slot12, slot13)
-
 		--- END OF BLOCK #0 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 122-122, warpins: 1 ---
-		slot9 = ""
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #2 123-147, warpins: 2 ---
-		--- END OF BLOCK #2 ---
 
 
 
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 148-153, warpins: 3 ---
 	slot9 = slot0
 	slot8 = slot0.Loaded
 	slot10 = slot1
 
 	slot8(slot9, slot10)
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 showSecondaryPassword = slot9
