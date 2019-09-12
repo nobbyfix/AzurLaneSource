@@ -73107,7 +73107,7 @@ pg.ship_skin_template = {
 	},
 	[900198] = {
 		ship_group = 900195,
-		name = "Vittorio veneto ",
+		name = "Vittorio Veneto ",
 		bullet_skin_main = "",
 		desc = "维托里奥.维内托级战列舰—维内托",
 		illustrator2 = -1,

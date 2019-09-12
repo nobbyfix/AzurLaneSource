@@ -12,6 +12,10 @@ slot0.Ctor = function (slot0, slot1)
 	slot0:updateRankMap()
 end
 
+slot0.isWeb = function (slot0)
+	return slot0.onWeb
+end
+
 slot0.bindConfigTable = function (slot0)
 	return pg.activity_vote
 end
@@ -36,7 +40,11 @@ end
 
 slot0.updateRankMap = function (slot0)
 	table.sort(slot0.list, function (slot0, slot1)
-		return slot1.votes < slot0.votes
+		if slot0.onWeb then
+			return slot1.netVotes < slot0.netVotes
+		else
+			return slot1.votes < slot0.votes
+		end
 	end)
 
 	slot0.rankMaps = {}

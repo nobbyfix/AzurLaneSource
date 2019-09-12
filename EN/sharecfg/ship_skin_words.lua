@@ -21259,7 +21259,7 @@ pg.ship_skin_words = {
 		upgrade = "Grazie! Now my main guns are an even greater threat to the enemy.",
 		voice_key = 60302,
 		feeling5 = "Commander, after all this time together, you should already know what I'm thinking before I even open my mouth. Hehe, so who am I thinking about right now? Of course it's you, Commander, that's too easy. Hehehe♪",
-		main = "Tenacemente, that is, fighting to the bitter end, no matter the odds, is my personal motto.Looking up at the night sky, admiring the countless glimmering stars, it's really nice, actually. But it's better enjoyed from inside... don't you think?By the way, I've actually got kind of an eye for fashion. How about I help dress you next time, Commander?",
+		main = "Tenacemente, that is, fighting to the bitter end, no matter the odds, is my personal motto.|Looking up at the night sky, admiring the countless glimmering stars, it's really nice, actually. But it's better enjoyed from inside... don't you think?|By the way, I've actually got kind of an eye for fashion. How about I help dress you next time, Commander?",
 		voice_key_2 = -1,
 		profile = "I am the first ship of the Zara class of heavy cruisers, Zara. I was born to be a marine battery, with my magnificent guns and armor plating. I served as the flagship of my squadron, at least until that fateful night...",
 		mission_complete = "Mission complete! My my, that's quite a big reward there, isn't it? Well done, Commander~",
@@ -21418,16 +21418,24 @@ pg.ship_skin_words = {
 					20502
 				},
 				1,
-				"Our battle isn't over yet!",
+				"A Royal Knight, huh? I never expected to fight alongside someone like you.",
 				0
 			},
 			{
 				{
-					60505
+					60506
 				},
 				1,
-				"Cavour, worry about yourself instead!",
+				"Cesare, follow me!",
 				0
+			},
+			{
+				{
+					6
+				},
+				3,
+				"The glory of Sardegna... yes, it used to shine brighter.",
+				3
 			}
 		}
 	},
@@ -21435,7 +21443,6 @@ pg.ship_skin_words = {
 		touch = "Mh... Mm? Sorry, I zoned out for a bit... Were you worried about me, Commander?",
 		feeling3 = "A little bit of harsh discipline is the right medicine for slouches who can't obey orders. \"It's not that simple\"? Well, I thought I was making a good suggestion...",
 		ID = 605060,
-		couple_encourage = "(Warspite)Our battle isn't over yet! (Conte di Cavour) Cavour, worry about yourself instead!(Veneto) Have faith in your decisions. You are just.",
 		expedition = "Isn't that the commission team? Why not go say hello to them, Commander?",
 		win_mvp = "Veni, vidi, vici.",
 		home = "Triumphant once again, yes? It's written all over your face.",
@@ -21462,7 +21469,25 @@ pg.ship_skin_words = {
 		battle = "As per the Commander's orders, we depart for the front!",
 		login = "You're right on time... Naturally. I'll admit your timeliness is the one thing I could learn from.",
 		vote = "",
-		detail = "At last I can have a rematch with Warspite on equal terms. I've been waiting for this!"
+		detail = "At last I can have a rematch with Warspite on equal terms. I've been waiting for this!",
+		couple_encourage = {
+			{
+				{
+					20502
+				},
+				1,
+				"Our battle isn't over yet!",
+				0
+			},
+			{
+				{
+					60505
+				},
+				1,
+				"Cavour, worry about yourself instead!",
+				0
+			}
+		}
 	},
 	[605061] = {
 		touch = "Are you out of breath already? You've still got a long way to go, Commander.",

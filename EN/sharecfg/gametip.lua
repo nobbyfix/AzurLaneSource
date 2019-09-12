@@ -5949,6 +5949,14 @@ Attack/Support Range Level:
 		tip = "Kicked!",
 		key = "guild_fire_succeed"
 	},
+	guild_duty_tip_1 = {
+		tip = "<color=#7FAFFF>Current Rank</color>",
+		key = "guild_duty_tip_1"
+	},
+	guild_duty_tip_2 = {
+		tip = "<color=#C3C3C3>Non-promotion</color>",
+		key = "guild_duty_tip_2"
+	},
 	battle_repair_special_tip = {
 		tip = "Are you sure you want to use an \n<color=#a0ff40>Elite management team</color>?",
 		key = "battle_repair_special_tip"
