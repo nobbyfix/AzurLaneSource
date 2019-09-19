@@ -66,6 +66,7 @@ slot9.Init = function (slot0)
 	slot0._labelTagList = {}
 	slot0._sonarDetectedCount = 0
 	slot0._sonarDuration = 0
+	slot0._moveCast = true
 end
 
 slot9.Update = function (slot0, slot1)
@@ -449,8 +450,8 @@ slot9.GetSpeedExemptKey = function (slot0)
 	return slot0._speedExemptKey
 end
 
-slot9.SetMoveCast = function (slot0)
-	slot0._moveCast = true
+slot9.SetMoveCast = function (slot0, slot1)
+	slot0._moveCast = slot1
 end
 
 slot9.IsMoveCast = function (slot0)

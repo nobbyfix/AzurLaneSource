@@ -1277,7 +1277,7 @@ slot0.recommendActivityFleet = function (slot0, slot1, slot2)
 
 end
 
-slot0.GetVoteActivty = function (slot0)
+slot0.GetVoteBookActivty = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-7, warpins: 1 ---
@@ -1291,6 +1291,61 @@ slot0.GetVoteActivty = function (slot0)
 	-- Decompilation error in this vicinity:
 	--- BLOCK #1 55-55, warpins: 8 ---
 	--- END OF BLOCK #1 ---
+
+
+
+end
+
+slot0.GetVoteActivity = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 10-18, warpins: 0 ---
+	for slot5, slot6 in ipairs(slot1) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 10-15, warpins: 1 ---
+		if slot6:getConfig("config_id") ~= 6 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 16-16, warpins: 1 ---
+			return slot6
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 17-18, warpins: 3 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 19-19, warpins: 1 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 

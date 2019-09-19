@@ -250,7 +250,7 @@ return {
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "作为妹妹的可畏反倒是比你先服役了呢，之后可要加吧劲呢",
+			say = "作为妹妹的可畏反倒是比你先服役了呢，之后可要加把劲呢",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

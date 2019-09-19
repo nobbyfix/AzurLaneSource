@@ -127,19 +127,22 @@ end
 
 slot0.OnVote = function (slot0, slot1, slot2)
 	slot0.voteMsgBox:ExecuteAction("Open", slot1.voteShip, slot0.voteGroup:GetRank(slot3), slot0.count, defaultValue(slot2, false), function (slot0)
-		if slot0 <= slot0 then
-			slot1:emit(VoteMediator.ON_VOTE, slot1.voteGroup.id, slot2.group, slot0)
+		if slot0.voteGroup:GetStage() ~= VoteGroup.VOTE_STAGE then
+			pg.TipsMgr.GetInstance():ShowTips(i18n("common_activity_end"))
+
+			return
+		end
+
+		if slot0 <= slot1 then
+			slot0:emit(VoteMediator.ON_VOTE, slot0.voteGroup.id, slot2.group, slot0)
 		else
 			pg.TipsMgr.GetInstance():ShowTips(i18n("vote_not_enough"))
 		end
 	end)
 end
 
-slot0.updateMainview = function (slot0, slot1)
-	if slot1 then
-		slot0:initShips()
-	end
-
+slot0.updateMainview = function (slot0)
+	slot0:initShips()
 	slot0:initRanks()
 	slot0:updateNumber()
 end

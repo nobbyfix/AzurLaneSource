@@ -41,6 +41,7 @@ slot0.reloadCVKey = function (slot0)
 	slot0.currentSkin = slot0.currentSkin or slot0.groupSkinList[1]
 	slot0.currentSkinWord = pg.ship_skin_words[slot0.currentSkin.id]
 	slot0.currentSkinWordEx = pg.ship_skin_words_extra[slot0.currentSkin.id]
+	slot0.origSkinConfig = pg.ship_skin_words_extra[slot0.currentSkin.id]
 
 	if slot0.currentSkinWord.voice_key >= 0 then
 		slot1 = Ship.getCVKeyID(slot0.currentSkin.id)
@@ -782,6 +783,7 @@ slot0.shiftSkin = function (slot0, slot1)
 
 	slot0.currentSkin = slot0.groupSkinList[slot1]
 	slot0.currentSkinWord = pg.ship_skin_words[slot0.currentSkin.id]
+	slot0.currentSkinWordEx = pg.ship_skin_words_extra[slot0.currentSkin.id]
 
 	slot0:setAuthorInfo((slot0.languageType == 2 and slot0.currentSkin.voice_actor_2) or slot0.currentSkin.voice_actor, slot0.currentSkin.illustrator)
 	slot0:switchVoiceList(false)
@@ -993,8 +995,11 @@ slot0.appendVoiceButton = function (slot0, slot1, slot2)
 	setActive(slot0:findTF("tag_common", slot8), true)
 
 	slot11 = slot0:findTF("tag_diff", slot8)
+	slot12 = false
 
 	if slot5 ~= slot0.currentSkin.id and ((slot0.currentSkinWord[slot3] ~= "" and slot0.currentSkinWord[slot3] ~= nil) or (string.find(slot3, "main") and slot7 ~= "nil")) then
+		slot12 = true
+
 		setActive(slot11, true)
 	else
 		setActive(slot11, false)
@@ -1035,26 +1040,33 @@ slot0.appendVoiceButton = function (slot0, slot1, slot2)
 			pg.TipsMgr.GetInstance():ShowTips(slot6)
 		end
 	end)
-	slot0:appendVoiceExButton(slot1, slot6)
+	slot0:appendVoiceExButton(slot1, slot6, slot12)
 end
 
-slot0.appendVoiceExButton = function (slot0, slot1, slot2)
+slot0.appendVoiceExButton = function (slot0, slot1, slot2, slot3)
+	slot7 = slot3 and slot0.currentSkinWordEx and slot0.currentSkinWordEx[(slot2 and "main") or slot1.key] and (slot0.currentSkinWordEx and slot0.currentSkinWordEx[(slot2 and "main") or slot1.key]) ~= ""
 
-	-- Decompilation error in this vicinity:
-	slot4 = (slot2 and "main") or slot1.key
-	slot6 = slot0.shipGroup.maxIntimacy / 100 + ((slot0.shipGroup.married and slot0.shipGroup.married * 1000) or 0)
+	if not slot6 or slot6 == "" then
+		if not slot3 then
+		else
+			return
+		end
+	end
 
-	for slot10, slot11 in ipairs(slot5) do
-		if slot11[1] <= slot6 then
-			if slot2 and slot2 > #string.split(slot11[2], "|") then
+	slot8 = slot0.shipGroup.maxIntimacy / 100 + ((slot0.shipGroup.married and slot0.shipGroup.married * 1000) or 0)
+
+	for slot12, slot13 in ipairs(slot6) do
+		if slot13[1] <= slot8 then
+			if slot2 and slot2 > #string.split(slot13[2], "|") then
 				return
 			end
 
-			slot12 = cloneTplTo(slot0.voiceTpl, slot0.voiceContainer)
+			slot14 = cloneTplTo(slot0.voiceTpl, slot0.voiceContainer)
 
-			setActive(slot12, true)
-			setText(slot0:findTF("Text", slot12), slot1.voice_name .. "Ex")
-			onButton(slot0, slot12, function ()
+			setActive(slot14, true)
+			setText(slot0:findTF("Text", slot14), slot1.voice_name .. "Ex")
+			setActive(slot15, slot7)
+			onButton(slot0, slot14, function ()
 				if slot0.l2dChar and slot0.live2dChecked and (slot0.chatFlag or slot0.actionFlag) then
 					return
 				end

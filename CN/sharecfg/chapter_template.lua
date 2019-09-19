@@ -232118,7 +232118,7 @@ pg.chapter_template = {
 				6,
 				"2x2_1talantuo2",
 				85,
-				-15
+				46
 			},
 			{
 				3,
@@ -235279,7 +235279,7 @@ pg.chapter_template = {
 			{
 				3,
 				5,
-				true,
+				false,
 				0
 			},
 			{

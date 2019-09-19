@@ -5,7 +5,7 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			actoeName = "光辉",
+			actorName = "光辉",
 			side = 2,
 			bgName = "bg_italy_cg3",
 			dir = 1,
@@ -22,10 +22,10 @@ return {
 			}
 		},
 		{
+			actorName = "利托里奥",
 			side = 2,
 			bgName = "bg_italy_cg3",
 			dir = 1,
-			actoeName = "利托里奥",
 			nameColor = "#ff5c5c",
 			say = "皇家舰队！你们究竟是怎么办到的，我们分成3个方向行进的路线居然都被你们发现了？！",
 			typewriter = {
@@ -48,12 +48,12 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
+			actorName = "光辉",
 			side = 2,
 			bgName = "bg_italy_cg3",
+			nameColor = "#a9f548",
+			dir = 1,
 			say = "很简单，因为如果我是撒丁帝国的话，也会选择这几个方向行进的",
-			dir = 1,
-			actoeName = "光辉",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -64,12 +64,12 @@ return {
 			}
 		},
 		{
+			actorName = "利托里奥",
+			side = 2,
+			bgName = "bg_italy_cg3",
 			nameColor = "#ff5c5c",
-			side = 2,
-			bgName = "bg_italy_cg3",
-			say = "这批袭击了港口的剑鱼也是你的杰作么？",
 			dir = 1,
-			actoeName = "利托里奥",
+			say = "这批袭击了港口的剑鱼也是你的杰作么？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -80,12 +80,12 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
+			actorName = "光辉",
 			side = 2,
 			bgName = "bg_italy_cg3",
-			say = "是呢，虽然在夜晚起飞这么多舰载机确实也是第一次进行",
+			nameColor = "#a9f548",
 			dir = 1,
-			actoeName = "光辉",
+			say = "是呢，虽然在夜晚起飞这么多舰载机确实也是第一次进行",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
