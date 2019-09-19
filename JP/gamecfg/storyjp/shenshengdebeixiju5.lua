@@ -636,7 +636,7 @@ return {
 			bgName = "bg_story_italy",
 			nameColor = "#ffde38",
 			dir = 1,
-			say = "ヴェネト、総旗艦であるあなたがそこまでためらってはどうする？",
+			say = "ヴェネト、総旗艦であるあなたがそこでためらっていてどうする？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

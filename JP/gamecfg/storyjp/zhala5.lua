@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"ローザ・ストーリア\n\n<size=45>五 惡魔？の囁き</size>",
+					"ローザ・ストーリア\n\n<size=45>五 悪魔？の囁き</size>",
 					1
 				}
 			}
@@ -107,7 +107,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "この話しぷりじゃ…もしかして他の人にしてもらったことがないの？",
+			say = "この話しぶりじゃ…もしかして他の人にしてもらったことがないの？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

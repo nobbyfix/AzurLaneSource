@@ -475,7 +475,7 @@ return {
 			dir = 1,
 			actor = 605020,
 			nameColor = "#ffde38",
-			say = "ヴェネト、貴方の命令一あればーー",
+			say = "ヴェネト、貴方の命令一つあればーー",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

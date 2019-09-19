@@ -180,7 +180,7 @@ return {
 			side = 2,
 			nameColor = "#ff5c5c",
 			dir = 1,
-			say = "さあ、大人しく投稿しなさい",
+			say = "さあ、大人しく投降しなさい",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -195,7 +195,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "ふふふ、なら聖戦（✙オペレーション✙）の真の姿を見せるまで！",
+			say = "ふふふ、なら聖戦（†オペレーション†）の真の姿を見せるまで！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -220,7 +220,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "陛下より預かった、私の第二兵装（✙セコンダリーウェポン✙）――",
+			say = "陛下より預かった、私の第二兵装（†セコンダリーウェポン†）――",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -251,7 +251,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "聞いて驚くがいい！あなたたちの陰謀（✙コンスピラシー✙）など陛下はとっくにお見通しです！",
+			say = "聞いて驚くがいい！あなたたちの陰謀（†コンスピラシー†）など陛下はとっくにお見通しです！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -281,7 +281,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "この魔導重巡洋艦・ヨークの力（✙フォース✙）で、仲間たちに状況を知らせること――とね！",
+			say = "この魔導重巡洋艦・ヨークの力（†フォース†）で、仲間たちに状況を知らせること――とね！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -571,7 +571,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "ふふん、今度はこっちが拒馬（✙バリケード✙）になる番よ！",
+			say = "ふふん、今度はこっちが拒馬（†バリケード†）になる番よ！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -586,7 +586,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "悪いけど、足止めさせておらうわよッ！",
+			say = "悪いけど、足止めさせてもらうわよッ！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

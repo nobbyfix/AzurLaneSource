@@ -222,7 +222,7 @@ return {
 			bgName = "bg_italy_cg1",
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
-			say = "火炎と黒煙がその場にいる全ての人々にむせさせた。",
+			say = "火炎と黒煙がその場にいる全ての人々をむせさせた。",
 			flashN = {
 				color = {
 					1,

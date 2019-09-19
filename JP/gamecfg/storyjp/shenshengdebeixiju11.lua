@@ -5,7 +5,7 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			actoeName = "イラストリアス",
+			actorName = "イラストリアス",
 			side = 2,
 			bgName = "bg_italy_cg3",
 			dir = 1,
@@ -22,10 +22,10 @@ return {
 			}
 		},
 		{
+			actorName = "リットリオ",
 			side = 2,
 			bgName = "bg_italy_cg3",
 			dir = 1,
-			actoeName = "リットリオ",
 			nameColor = "#ff5c5c",
 			say = "ロイヤルネイビー、どうやってこっちの戦艦がタラントに移動したことに気づいたんだ？",
 			typewriter = {
@@ -48,12 +48,12 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
+			actorName = "イラストリアス",
 			side = 2,
 			bgName = "bg_italy_cg3",
+			nameColor = "#a9f548",
+			dir = 1,
 			say = "簡単なことですわ。……私たちがサディアでしたら、同じことをするだけですから",
-			dir = 1,
-			actoeName = "イラストリアス",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -64,12 +64,12 @@ return {
 			}
 		},
 		{
+			actorName = "リットリオ",
+			side = 2,
+			bgName = "bg_italy_cg3",
 			nameColor = "#ff5c5c",
-			side = 2,
-			bgName = "bg_italy_cg3",
-			say = "よく言う。では港を襲った艦載機も貴方の仕業と思っていいかな？",
 			dir = 1,
-			actoeName = "リットリオ",
+			say = "よく言う。では港を襲った艦載機も貴方の仕業と思っていいかな？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -80,12 +80,12 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
+			actorName = "イラストリアス",
 			side = 2,
 			bgName = "bg_italy_cg3",
-			say = "ええ、ソードフィッシュ隊は全部このイラストリアスから発艦したものです",
+			nameColor = "#a9f548",
 			dir = 1,
-			actoeName = "イラストリアス",
+			say = "ええ、ソードフィッシュ隊は全部このイラストリアスから発艦したものです",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

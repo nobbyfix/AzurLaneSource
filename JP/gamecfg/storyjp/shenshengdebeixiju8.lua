@@ -24,7 +24,7 @@ return {
 			side = 2,
 			dir = 1,
 			actorName = "ウォースパイト",
-			say = "イラストリアス、あなたも着てくれたか！",
+			say = "イラストリアス、あなたも来てくれたか！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

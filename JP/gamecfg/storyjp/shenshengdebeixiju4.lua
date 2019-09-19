@@ -361,7 +361,7 @@ return {
 			side = 2,
 			bgName = "star_level_bg_107",
 			dir = 1,
-			say = "エリザベスのそばに控えるメイド長は発言しました。",
+			say = "エリザベスのそばに控えるメイド長が発言した。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -458,7 +458,7 @@ return {
 			side = 2,
 			bgName = "star_level_bg_107",
 			dir = 1,
-			say = "ご安心ください。陛下はこのベルファストは命をかけてお守りいたします",
+			say = "ご安心ください。陛下はこのベルファストが命をかけてお守りいたします",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
