@@ -228402,6 +228402,7 @@ pg.expedition_data_template = {
 		guide_desc = "",
 		type = 98,
 		ai_mov = 2,
+		award_display = "",
 		add_icon = "",
 		name = "Elite Fleet",
 		exp_commander = 1,
@@ -228418,7 +228419,6 @@ pg.expedition_data_template = {
 		plot_type = 0,
 		id = 1250825,
 		scale = 80,
-		award_display = {},
 		objective_1 = {
 			1
 		},
@@ -228437,6 +228437,7 @@ pg.expedition_data_template = {
 		guide_desc = "",
 		type = 98,
 		ai_mov = 2,
+		award_display = "",
 		add_icon = "",
 		name = "Elite Fleet",
 		exp_commander = 1,
@@ -228453,7 +228454,6 @@ pg.expedition_data_template = {
 		plot_type = 0,
 		id = 1250826,
 		scale = 80,
-		award_display = {},
 		objective_1 = {
 			1
 		},

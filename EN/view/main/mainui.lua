@@ -2027,10 +2027,10 @@ slot0.AssistantEventEffect = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-2, warpins: 1 ---
-	if not slot1 and slot0.live2dChar and not Input.mousePosition then
+	if not slot1 and slot0.live2dChar and slot0.live2dChar.state == Live2D.STATE_INITED and not Input.mousePosition then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 10-10, warpins: 1 ---
+		--- BLOCK #0 16-16, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
 
@@ -2045,11 +2045,11 @@ slot0.AssistantEventEffect = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 53-54, warpins: 4 ---
+	--- BLOCK #1 59-60, warpins: 5 ---
 	if not ((slot0.live2dChar:GetTouchPart() <= 0 or slot0.filterAssistantEvents(slot0.getAssistantTouchEvents(slot3), slot0.flagShip.skinId)[math.ceil(math.random(#slot0.filterAssistantEvents(slot0.getAssistantTouchEvents(slot3), slot0.flagShip.skinId)))]) and slot0.filterAssistantEvents(slot0.IdleEvents, slot0.flagShip.skinId)[math.floor(math.Random(0, #slot0.filterAssistantEvents(slot0.IdleEvents, slot0.flagShip.skinId))) + 1]) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 55-55, warpins: 1 ---
+		--- BLOCK #0 61-61, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
 
@@ -2064,13 +2064,13 @@ slot0.AssistantEventEffect = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 56-61, warpins: 2 ---
+	--- BLOCK #2 62-67, warpins: 2 ---
 	slot2 = slot0.assistantEvents[slot1]
 
 	if slot0.live2dChar then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 62-66, warpins: 1 ---
+		--- BLOCK #0 68-72, warpins: 1 ---
 		slot0.live2dChar:TriggerAction(slot2.action)
 		--- END OF BLOCK #0 ---
 
@@ -2085,11 +2085,11 @@ slot0.AssistantEventEffect = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 67-69, warpins: 2 ---
+	--- BLOCK #3 73-75, warpins: 2 ---
 	if slot2.dialog ~= "" then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 70-74, warpins: 1 ---
+		--- BLOCK #0 76-80, warpins: 1 ---
 		slot0:displayShipWord(slot2.dialog)
 		--- END OF BLOCK #0 ---
 
@@ -2098,7 +2098,7 @@ slot0.AssistantEventEffect = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 75-77, warpins: 1 ---
+		--- BLOCK #0 81-83, warpins: 1 ---
 		slot0:startChatTimer()
 		--- END OF BLOCK #0 ---
 
@@ -2113,7 +2113,7 @@ slot0.AssistantEventEffect = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 78-78, warpins: 2 ---
+	--- BLOCK #4 84-84, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 

@@ -95,4 +95,12 @@ slot0.GetGameVotes = function (slot0)
 	end
 end
 
+slot0.getTotalVotes = function (slot0)
+	if slot0.totalVotes >= 100000 then
+		return math.floor(slot0.totalVotes / 1000) .. "K"
+	else
+		return slot0.totalVotes
+	end
+end
+
 return slot0

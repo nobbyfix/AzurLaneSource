@@ -3022,6 +3022,64 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[2161] = {
+		desc_get = "",
+		name = "Lightning Strikes Twice",
+		desc = "10s after the battle starts and with a $1 chance every 20s after that: fires a wave of torpedoes. (Which torpedoes are fired are based on this ship's equipped Torpedoes.) ",
+		type = 1,
+		max_level = 10,
+		id = 2161,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"15.0%",
+				"25.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.1%"
+				},
+				{
+					"16.1%",
+					"+1.1%"
+				},
+				{
+					"17.2%",
+					"+1.1%"
+				},
+				{
+					"18.3%",
+					"+1.1%"
+				},
+				{
+					"19.4%",
+					"+1.1%"
+				},
+				{
+					"20.5%",
+					"+1.1%"
+				},
+				{
+					"21.6%",
+					"+1.1%"
+				},
+				{
+					"22.7%",
+					"+1.1%"
+				},
+				{
+					"23.8%",
+					"+1.2%"
+				},
+				{
+					"25.0%"
+				}
+			}
+		}
+	},
 	[2171] = {
 		desc_get = "",
 		name = "Anti-Air Vigilance",
@@ -31288,6 +31346,7 @@ pg.skill_data_template = {
 		2131,
 		2141,
 		2151,
+		2161,
 		2171,
 		3001,
 		3011,

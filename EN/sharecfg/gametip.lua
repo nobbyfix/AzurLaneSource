@@ -3116,6 +3116,10 @@ pg.gametip = {
 		tip = "Commander, are you sure you want to retreat from <color=#92fc63>$1</color>?",
 		key = "levelScene_who_to_retreat"
 	},
+	levelScene_who_to_exchange = {
+		tip = "Are you sure you want to swap fleet positions? ",
+		key = "levelScene_who_to_exchange"
+	},
 	levelScene_time_out = {
 		tip = "Battle time exceeded.",
 		key = "levelScene_time_out"

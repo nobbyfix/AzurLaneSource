@@ -227,7 +227,7 @@ return {
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "The Royal Navy has always held the power to ensure the safety and stability of the Mediterranean. Why not just regotiate with Her Majesty?",
+			say = "The Royal Navy has always held the power to ensure the safety and stability of the Mediterranean. Why not just negotiate with Her Majesty?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
