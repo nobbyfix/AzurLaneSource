@@ -26,12 +26,14 @@ slot0.register = function (slot0)
 				end
 
 				slot0.data[slot5.id] = slot6
-
-				slot0:sendNotification(GAME.ACTIVITY_BE_UPDATED, {
-					isInit = true,
-					activity = slot6
-				})
 			end
+		end
+
+		for slot4, slot5 in pairs(slot0.data) do
+			slot0:sendNotification(GAME.ACTIVITY_BE_UPDATED, {
+				isInit = true,
+				activity = slot5
+			})
 		end
 
 		if slot0.data[ActivityConst.MILITARY_EXERCISE_ACTIVITY_ID] then
@@ -1281,7 +1283,7 @@ slot0.GetVoteBookActivty = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-7, warpins: 1 ---
-	return slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_1) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_2) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_3) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_4) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_5) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_6) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_7) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_8)
+	return slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_1) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_3) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_4) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_5) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_6) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_7) or slot0:getActivityById(ActivityConst.VOTE_ORDER_BOOK_PHASE_8)
 	--- END OF BLOCK #0 ---
 
 	FLOW; TARGET BLOCK #1
@@ -1289,7 +1291,7 @@ slot0.GetVoteBookActivty = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 55-55, warpins: 8 ---
+	--- BLOCK #1 48-48, warpins: 7 ---
 	--- END OF BLOCK #1 ---
 
 

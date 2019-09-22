@@ -8391,9 +8391,9 @@ pg.ship_skin_words = {
 		ID = 202123,
 		expedition = "",
 		win_mvp = "",
-		home = "Please continue to enjoy the banquet, Master.",
+		home = "",
 		mission = "",
-		touch2 = "Master...? Please, have some self-respect. We are in public.",
+		touch2 = "",
 		feeling1 = "",
 		skill = "",
 		drop_descrip = "Good evening. The Royal Maids will be chaperoning this event. It is my hope to prevent any inappropriate behaviour that might interfere with the enjoyment of the attendees. Please pardon any inconveniences this may cause. ",
@@ -8404,69 +8404,19 @@ pg.ship_skin_words = {
 		upgrade = "",
 		voice_key = 0,
 		feeling5 = "",
-		main = "Master, the arrangements for the venue's security have already been made. Indeed, Madam Ark Royal graciously offered her assistance. Be at ease.|Dear Sister, let me handle the patrols. You go relax with your colleagues... I just want Master all to myself...? Goodness, as if that has anything to do with it...|Have a drink...? Very well, if you wish to drink, I can certainly accompany you... But I'm afraid these Sakura Empire wines are the only ones that... No matter, let us have that drink.",
+		main = "nil|nil|nil",
 		voice_key_2 = -1,
 		profile = "",
 		mission_complete = "",
 		headtouch = "",
 		feeling2 = "",
 		feeling4 = "",
-		unlock = "Good evening. The Royal Maids will be chaperoning this event. It is my hope to prevent any inappropriate behaviour that might interfere with the enjoyment of the attendees. Please pardon any inconveniences this may cause.",
-		battle = "Belfast of the Royal Maids, reporting in.",
-		login = "Master, are you pleased with the festivities?",
+		unlock = "",
+		battle = "",
+		login = "",
 		vote = "",
-		detail = "It is a maid's duty, in service to her master and Her Majesty, to uphold the elegance of the banquet and safeguard it from disgrace.",
-		couple_encourage = {
-			{
-				{
-					20221,
-					20208,
-					20222,
-					20221,
-					20218,
-					20219,
-					20303,
-					20304,
-					20220,
-					20110
-				},
-				2,
-				"Royal Maids, forward!",
-				0
-			},
-			{
-				{
-					20211
-				},
-				1,
-				"Dear sister, let us press the attack.",
-				0
-			},
-			{
-				{
-					20501
-				},
-				1,
-				"Your Majesty, I am here to protect you.",
-				0
-			},
-			{
-				{
-					10706
-				},
-				1,
-				"Madam Enterprise, let us proceed with grace.",
-				0
-			},
-			{
-				{
-					20603
-				},
-				1,
-				"Unicorn, please be careful.",
-				0
-			}
-		}
+		detail = "",
+		couple_encourage = {}
 	},
 	[202128] = {
 		touch = "In comparison to standing behind you, I can see more when standing beside you.",
@@ -12311,14 +12261,14 @@ pg.ship_skin_words = {
 		couple_encourage = {}
 	},
 	[301143] = {
-		touch = "Ehehe... Commander, are you taking me to get more delicious meat, or to have even more fun?",
+		touch = "",
 		feeling3 = "",
 		ID = 301143,
 		expedition = "",
 		win_mvp = "",
-		home = "Awoooo! This skewer is so yummy! Nnh? Commander, want a bite? Here's a piece for you!",
+		home = "",
 		mission = "",
-		touch2 = "Commander! I'm gonna get super mad!",
+		touch2 = "",
 		feeling1 = "",
 		skill = "",
 		drop_descrip = "Commander, look at me, look at me! What do you think of my new outfit? If you like it, wanna give it a feel?",
@@ -12328,19 +12278,19 @@ pg.ship_skin_words = {
 		hp_warning = "",
 		upgrade = "",
 		voice_key = 0,
-		feeling5 = "Even though I had a ton of fun and ate a ton of yummy food tonight, nothing beats being at your side! Ehehe, Commander, play with me a bit more~",
-		main = "Erm, where'd Shigure go... I bet she went off to have one of her dumb contests with Yukikaze again! |I heard there's also going to be a ball tonight. Commander, how do you dance? |Be careful not to get my clothes dirty? Mhm, I already know! I really like this outfit too, so I'll take good care of it!",
+		feeling5 = "",
+		main = "nil|nil|nil",
 		voice_key_2 = -1,
 		profile = "",
 		mission_complete = "",
 		headtouch = "",
 		feeling2 = "",
 		feeling4 = "",
-		unlock = "Commander, look at me, look at me! What do you think of my new outfit? If you like it, wanna give it a feel?",
+		unlock = "",
 		battle = "",
-		login = "I heard there's gonna be a ton of meat at the banquet! I can't wait any longer!",
+		login = "",
 		vote = "",
-		detail = "Commander, look, these are my spoils of war! Ahh, I'm so glad that there's so much delicious meat to chow down on at the banquet!",
+		detail = "",
 		couple_encourage = {}
 	},
 	[301148] = {
@@ -19767,14 +19717,14 @@ pg.ship_skin_words = {
 		couple_encourage = {}
 	},
 	[403033] = {
-		touch = "Pfft... You're just too cute when you act all bashful but still can't resist trying to ogle me, ahaha~!",
+		touch = "",
 		feeling3 = "",
 		ID = 403033,
 		expedition = "",
 		win_mvp = "",
-		home = "Come on, don't be so tense. Just let go and relax.",
+		home = "",
 		mission = "",
-		touch2 = "You~ lewd~ beast~ Ahahaha~!",
+		touch2 = "",
 		feeling1 = "",
 		skill = "",
 		drop_descrip = "... Huh? Commander, is that you? Me, drunk? No way... *hic*... If I was, Commander, then what are you planning to do to me? Hehe...",
@@ -19785,18 +19735,18 @@ pg.ship_skin_words = {
 		upgrade = "",
 		voice_key = 0,
 		feeling5 = "",
-		main = "Compared to those other stuffy, teetotaling banquets, something a bit more... liberated like this one is much more enjoyable. Don't you agree, Commander? |So, what do you like about me? My personality... or my body? If you lie, I'll make you take a shot~ |The Sakura Empire's liquors certainly have a distinctive flavor, but when a girl wants to cut loose, it's gotta be one of the classics~",
+		main = "nil|nil|nil",
 		voice_key_2 = -1,
 		profile = "",
 		mission_complete = "",
 		headtouch = "",
 		feeling2 = "",
 		feeling4 = "",
-		unlock = "... Huh? Commander, is that you? Me, drunk? No way... *hic*... If I was, Commander, then what are you planning to do to me? Hehe...",
-		battle = "Tsk... These fools need to learn how to read a room.",
-		login = "Commander, did you come to have a drink?",
+		unlock = "",
+		battle = "",
+		login = "",
 		vote = "",
-		detail = "Hehe... Commander, that's quite the scandalous expression you've got there... Are you sure you're not drunk, with how red your face is~?",
+		detail = "",
 		couple_encourage = {}
 	},
 	[403038] = {
@@ -20343,46 +20293,37 @@ pg.ship_skin_words = {
 		couple_encourage = {}
 	},
 	[405022] = {
-		touch = "Hm? Ah, don't worry. I was merely pondering if I should call her \"Bismarck\" or \"Sister.\"",
+		touch = "",
 		feeling3 = "",
 		ID = 405022,
-		expedition = "Commander, it seems like another commission has been completed. Go ahead and take care of it; I'll be waiting for you right here.",
-		win_mvp = "If she was here... how would she have fought this battle?",
-		home = "Commander, do you wish to know how I feel about Bismarck?",
-		mission = "Do we have new missions? Don't worry, Bismarck won't mind waiting a bit longer.",
-		touch2 = "Huh? Was my discomfort that evident?",
+		expedition = "",
+		win_mvp = "",
+		home = "",
+		mission = "",
+		touch2 = "",
 		feeling1 = "",
 		skill = "",
-		drop_descrip = "我正在想，我的那位姐姐会怎么来邀请我，果然是拜托指挥官你了吗……呵呵，那就走吧，别让她等太久了——",
-		mail = "We're getting all these requests to dance with you, Commander. Maybe I should put in one as well?",
+		drop_descrip = "I bet Bismarck must've been thinking about how to invite me to the party, but ended up asking you to do it, Commander. Hehe... Let's get going soon. It's best not to keep her waiting. ",
+		mail = "",
 		lose = "",
 		propose = "",
 		hp_warning = "",
 		upgrade = "",
 		voice_key = 0,
-		feeling5 = "Just imagining Bismarck's embarrassment when asking you for a favor has provided me with quite the source of entertainment, but I don't think I'll be able to keep it together when I'm actually in front of her... Commander, that's where I'll be relying on you.",
-		main = "In the past, the word \"sister\" meant nothing to me. But the moment I laid eyes on her, I knew in my heart... Yes, she is indeed my sister. |Behold, she basks in everyone's adoring gaze as they orbit around her upon the resplendent firmament of the stage, as if she is the center of the universe... But you and I both know, that is not where she wants to be. |Waiting for her to find us instead of taking the initiative to find her might be a bit of my nasty streak showing, but I'm still the little sister here. I have that right, don't I?",
+		feeling5 = "",
+		main = "nil|nil|nil",
 		voice_key_2 = -1,
 		profile = "",
-		mission_complete = "Commander, we don't have too many of these banquets, so don't get too anxious about work. Let's have something to eat first.",
+		mission_complete = "",
 		headtouch = "",
 		feeling2 = "",
 		feeling4 = "",
-		unlock = "I bet Bismarck must've been thinking about how to invite me to the party, but ended up asking you to do it, Commander. Hehe... Let's get going soon. It's best not to keep her waiting.",
+		unlock = "",
 		battle = "",
-		login = "So you've come, Commander. Don't be anxious, the night is still young.",
+		login = "",
 		vote = "",
-		detail = "Truthfully, I still have a hard time conversing with Bismarck... But at least now, time is on our side. There will be plenty of things for us to talk about in the future, wouldn't you agree?",
-		couple_encourage = {
-			{
-				{
-					40501
-				},
-				1,
-				"My dear sister, that sorrowful expression does not suit you.",
-				0
-			}
-		}
+		detail = "",
+		couple_encourage = {}
 	},
 	[407010] = {
 		touch = "I despise everything.",
@@ -24349,14 +24290,14 @@ pg.ship_skin_words = {
 		couple_encourage = {}
 	},
 	[499011] = {
-		touch = "Are you having a good time, Commander? ... Me? Oh I'm just happy to see you~",
+		touch = "",
 		feeling3 = "",
 		ID = 499011,
 		expedition = "",
-		win_mvp = "Hehehe... That was another lovely \"banquet.\"",
+		win_mvp = "",
 		home = "",
 		mission = "",
-		touch2 = "Commander... I think you can get closer than that...",
+		touch2 = "",
 		feeling1 = "",
 		skill = "",
 		drop_descrip = "Such a delightful party with our wonderful friends in this peaceful harbor... It's wonderful, really... But, it's all so boring...",
@@ -24367,18 +24308,18 @@ pg.ship_skin_words = {
 		upgrade = "",
 		voice_key = 0,
 		feeling5 = "",
-		main = "When you see something so perfect and beautiful, don't you just feel the urge to... crush it?|Commander, I picked out this dress specifically for the occasion. Don't you feel like it... completes you?| All this merriment is making me nauseous... Commander, can you let me sortie when we get back?",
+		main = "nil|nil|nil",
 		voice_key_2 = -1,
 		profile = "",
 		mission_complete = "",
 		headtouch = "",
 		feeling2 = "",
 		feeling4 = "",
-		unlock = "Such a delightful party with our wonderful friends in this peaceful harbor... It's wonderful, really... But, it's all so boring...",
-		battle = "You're just in time, I needed to blow off a little steam!",
-		login = "Hah hah... it's not often we have a party. Let's enjoy ourselves, Commander.",
+		unlock = "",
+		battle = "",
+		login = "",
 		vote = "",
-		detail = "Did my dress catch your attention, Commander? ... But when I think about you looking at the other girls' dresses, I just...",
+		detail = "",
 		couple_encourage = {}
 	},
 	[899010] = {
