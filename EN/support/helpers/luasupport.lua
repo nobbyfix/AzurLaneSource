@@ -176,23 +176,20 @@ table.eachAsync = function (slot0, slot1, slot2)
 		return
 	end
 
-	slot3, slot4, slot6.index = pairs(slot0)
-	slot6 = {
-		index = slot5
-	}
-	slot7 = nil
+	slot3 = {}
+	slot4 = nil
 
 
 	-- Decompilation error in this vicinity:
 	function ()
-		slot0.index = slot1(slot2, slot0.index)
+		slot0.index = next(next, slot0.index)
 
-		if slot2[slot0.index] == nil then
-			if slot3 then
-				slot3()
+		if next(next, slot0.index)[slot0.index] == nil then
+			if slot2 then
+				slot2()
 			end
 		else
-			slot4(slot0, slot5)
+			slot3(slot0.index, slot0, slot4)
 		end
 	end()
 end
@@ -241,7 +238,7 @@ table.eachParalle = function (slot0, slot1, slot2)
 
 		slot7[1] = slot7[1] + 1
 
-		slot1(slot9, slot8)
+		slot1(slot6.index, slot9, slot8)
 	end
 end
 
@@ -376,6 +373,14 @@ end
 
 function warning(slot0, ...)
 	Debugger.LogWarning(debug.traceback(tostring(slot0) .. " " .. table.concat(_.map({
+		...
+	}, function (slot0)
+		return tostring(slot0)
+	end), " "), 2))
+end
+
+function errorMsg(slot0, ...)
+	Debugger.LogError(debug.traceback(tostring(slot0) .. " " .. table.concat(_.map({
 		...
 	}, function (slot0)
 		return tostring(slot0)

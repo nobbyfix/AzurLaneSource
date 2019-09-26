@@ -8,8 +8,23 @@ slot0.onRegister = function (slot0)
 	slot0._userAgreement = PlayerPrefs.GetInt("userAgreement", 0) > 0
 	slot0._showMaxLevelHelp = PlayerPrefs.GetInt("maxLevelHelp", 0) > 0
 	slot0.nextTipAoutBattleTime = PlayerPrefs.GetInt("AutoBattleTip", 0)
+	slot0._setFlagShip = PlayerPrefs.GetInt("setFlagShip", 0) > 0
+	slot0.nextTipActBossExchangeTicket = nil
 
 	slot0:resetEquipSceneIndex()
+end
+
+slot0.SetFlagShip = function (slot0, slot1)
+	if slot0._setFlagShip ~= slot1 then
+		slot0._setFlagShip = slot1
+
+		PlayerPrefs.SetInt("setFlagShip", (slot1 and 1) or 0)
+		PlayerPrefs.Save()
+	end
+end
+
+slot0.GetSetFlagShip = function (slot0)
+	return slot0._setFlagShip
 end
 
 slot0.SetLive2dEnable = function (slot0, slot1)
@@ -169,6 +184,14 @@ end
 
 slot0.isTipAutoBattle = function (slot0)
 	return slot0.nextTipAoutBattleTime < pg.TimeMgr.GetInstance():GetServerTime()
+end
+
+slot0.setActBossExchangeTicketTip = function (slot0, slot1)
+	slot0.nextTipActBossExchangeTicket = slot1
+end
+
+slot0.isTipActBossExchangeTicket = function (slot0)
+	return slot0.nextTipActBossExchangeTicket
 end
 
 return slot0

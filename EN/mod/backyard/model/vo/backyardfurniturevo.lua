@@ -479,6 +479,10 @@ slot0.clearInterAction = function (slot0, slot1)
 	end
 end
 
+slot0.GetPicture = function (slot0)
+	return slot0:getConfig("picture")
+end
+
 slot0.setPosition = function (slot0, slot1)
 	slot0.position = slot1
 end

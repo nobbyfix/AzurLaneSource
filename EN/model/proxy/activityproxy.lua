@@ -51,6 +51,10 @@ slot0.register = function (slot0)
 		if slot0:getActivityByType(ActivityConst.ACTIVITY_TYPE_TASK_LIST_MONITOR) and not slot2:isEnd() and slot2.data1 == 0 then
 			slot0:monitorTaskList(slot2)
 		end
+
+		if slot0:getActivityByType(ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2) and not slot3:isEnd() then
+			slot0:InitActivityBossData(slot0.data[slot3.id])
+		end
 	end)
 	slot0:on(11201, function (slot0)
 		if not slot0.data[Activity.New(slot0.activity_info).id] then
@@ -1348,6 +1352,125 @@ slot0.GetVoteActivity = function (slot0)
 	--- BLOCK #2 19-19, warpins: 1 ---
 	return
 	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot0.InitActivityBossData = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
+	if not pg.activity_event_worldboss[slot1:getConfig("config_id")] then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 10-10, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 11-15, warpins: 2 ---
+	slot3 = slot1.data1KeyValueList
+	slot4 = pairs
+	slot5 = slot2.normal_expedition_drop_num or {}
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 17-18, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 19-46, warpins: 0 ---
+	for slot7, slot8 in slot4(slot5) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 19-22, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 23-44, warpins: 0 ---
+		for slot12, slot13 in pairs(slot8[1]) do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 23-27, warpins: 1 ---
+			slot3[1][slot13] = math.max(slot8[2] - (slot3[1][slot13] or 0), 0)
+			slot3[2][slot13] = slot3[2][slot13] or 0
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 29-40, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 42-42, warpins: 2 ---
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #3 43-44, warpins: 2 ---
+			--- END OF BLOCK #3 ---
+
+
+
+		end
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 45-46, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 47-47, warpins: 1 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 

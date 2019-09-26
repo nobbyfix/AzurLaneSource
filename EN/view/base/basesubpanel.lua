@@ -1,4 +1,5 @@
 slot0 = class("BaseSubPanel")
+slot1 = import("view.util.FuncBuffer")
 slot0.STATES = {
 	LOADED = 3,
 	DESTROY = 5,
@@ -9,11 +10,10 @@ slot0.STATES = {
 
 slot0.Ctor = function (slot0, slot1)
 	slot0._state = slot0.STATES.NONE
-	slot0._funcQueue = {}
-	slot0._loadedQueue = {}
+	slot0.buffer = slot1.New()
 
 	if slot1 then
-		slot0:Attach(slot1)
+		slot0.buffer:Attach(slot1)
 	end
 end
 
@@ -79,11 +79,6 @@ slot0.Loaded = function (slot0, slot1)
 	slot0._tf = tf(slot1)
 
 	setActive(slot0._go, false)
-
-	if slot0.viewParent then
-		slot0:Attach(slot0.viewParent)
-	end
-
 	pg.DelegateInfo.New(slot0)
 	slot0:OnLoaded()
 end
@@ -96,53 +91,13 @@ slot0.Init = function (slot0)
 	slot0._state = slot0.STATES.INITED
 
 	slot0:OnInit()
-	slot0:HandleFuncQueue()
-	slot0:HandleLoadedQueue()
-end
-
-slot0.HandleFuncQueue = function (slot0)
-	if slot0._state == slot0.STATES.INITED then
-		while #slot0._funcQueue > 0 do
-			slot0[slot0._funcQueue[1].funcName](slot0, unpack(slot0._funcQueue[1].params))
-			table.remove(slot0._funcQueue, 1)
-		end
-	end
-end
-
-slot0.HandleLoadedQueue = function (slot0)
-	if slot0._state == slot0.STATES.INITED then
-		while #slot0._loadedQueue > 0 do
-			slot0._loadedQueue[1].funcBody(unpack(slot0._loadedQueue[1].params))
-			table.remove(slot0._loadedQueue, 1)
-		end
-	end
-end
-
-slot0.ActionInvoke = function (slot0, slot1, ...)
-	slot0._funcQueue[#slot0._funcQueue + 1] = {
-		funcName = slot1,
-		params = {
-			...
-		}
-	}
-
-	slot0:HandleFuncQueue()
-end
-
-slot0.AddLoadedCallback = function (slot0, slot1, ...)
-	slot0._loadedQueue[#slot0._loadedQueue + 1] = {
-		funcBody = slot1,
-		params = {
-			...
-		}
-	}
-
-	slot0:HandleLoadedQueue()
+	slot0.buffer:SetNotifier(slot0)
+	slot0.buffer:ExcuteAll()
 end
 
 slot0.InvokeParent = function (slot0, slot1, ...)
 	if slot0.viewParent then
-		slot0.viewParent.funcName(slot0.viewParent, ...)
+		slot0.viewParent[slot1](slot0.viewParent, ...)
 	end
 end
 
@@ -159,9 +114,17 @@ slot0.Hide = function (slot0)
 	setActive(slot0._go, false)
 end
 
+slot0.RawHide = function (slot0)
+	setActive(slot0._go, false)
+end
+
 slot0.Show = function (slot0)
 	setActive(slot0._go, true)
 	slot0:OnShow()
+end
+
+slot0.RawShow = function (slot0)
+	setActive(slot0._go, true)
 end
 
 slot0.IsShowing = function (slot0)

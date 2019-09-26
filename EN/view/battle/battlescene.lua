@@ -858,10 +858,10 @@ slot0.initPauseWindow = function (slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 102-104, warpins: 1 ---
-			if slot5 == SYSTEM_ROUTINE or slot5 == SYSTEM_DUEL or slot5 == SYSTEM_HP_SHARE_ACT_BOSS or slot5 == SYSTEM_ACT_BOSS then
+			if slot5 == SYSTEM_ROUTINE or slot5 == SYSTEM_DUEL or slot5 == SYSTEM_HP_SHARE_ACT_BOSS or slot5 == SYSTEM_BOSS_EXPERIMENT or slot5 == SYSTEM_ACT_BOSS then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 114-136, warpins: 4 ---
+				--- BLOCK #0 117-139, warpins: 5 ---
 				setText(slot3, "SP")
 				setText(slot4, pg.expedition_data_template[slot2:GetProxyByName(ys.Battle.BattleDataProxy.__name):GetInitData().StageTmpId].name)
 				--- END OF BLOCK #0 ---
@@ -871,11 +871,11 @@ slot0.initPauseWindow = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 137-139, warpins: 1 ---
+				--- BLOCK #0 140-142, warpins: 1 ---
 				if slot5 == SYSTEM_DEBUG then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 140-148, warpins: 1 ---
+					--- BLOCK #0 143-151, warpins: 1 ---
 					setText(slot3, "??")
 					setText(slot4, "碧蓝梦境")
 					--- END OF BLOCK #0 ---
@@ -885,11 +885,11 @@ slot0.initPauseWindow = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 149-151, warpins: 1 ---
+					--- BLOCK #0 152-154, warpins: 1 ---
 					if slot5 == SYSTEM_CHALLENGE then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 152-168, warpins: 1 ---
+						--- BLOCK #0 155-171, warpins: 1 ---
 						setText(slot3, "SP")
 						setText(slot4, slot0._chapter:getNextExpedition().chapter_name[2])
 						setActive(slot0.LeftTimeContainer, true)
@@ -926,7 +926,7 @@ slot0.initPauseWindow = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 169-217, warpins: 6 ---
+	--- BLOCK #2 172-220, warpins: 6 ---
 	onButton(slot0, slot0:findTF("window/button_container/leave", slot0.pauseWindow), function ()
 
 		-- Decompilation error in this vicinity:
