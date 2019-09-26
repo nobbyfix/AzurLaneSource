@@ -19,6 +19,8 @@ slot2 = 6
 slot1.BUTTON_PREPAGE = slot2
 slot2 = 7
 slot1.BUTTON_NEXTPAGE = slot2
+slot2 = 8
+slot1.BUTTON_BLUE_WITH_ICON = slot2
 slot2 = "get_items"
 slot1.TITLE_GET_ITEMS = slot2
 slot2 = "infomation"
@@ -830,6 +832,7 @@ end
 function slot3(slot0, slot1)
 	slot0.enable = true
 
+	slot0:commonSetting(slot1)
 	slot0.DelegateInfo.New(slot0)
 
 	slot0.settings = slot1
@@ -3026,10 +3029,16 @@ end
 function slot8(slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-46, warpins: 1 ---
-	slot2 = true
+	--- BLOCK #0 1-52, warpins: 1 ---
+	slot2 = defaultValue
+	slot3 = slot1.hideNo
+	slot4 = true
+	slot2 = slot2(slot3, slot4)
 	slot1.hideNo = slot2
-	slot2 = true
+	slot2 = defaultValue
+	slot3 = slot1.hideYes
+	slot4 = true
+	slot2 = slot2(slot3, slot4)
 	slot1.hideYes = slot2
 	slot3 = slot0
 	slot2 = slot0.commonSetting
@@ -3091,7 +3100,7 @@ function slot8(slot0, slot1)
 	if slot2 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 47-55, warpins: 1 ---
+		--- BLOCK #0 53-61, warpins: 1 ---
 		slot2 = rtf
 		slot3 = slot0._helpPanel
 		slot2 = slot2(slot3)
@@ -3103,7 +3112,7 @@ function slot8(slot0, slot1)
 		if not slot4 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 56-57, warpins: 1 ---
+			--- BLOCK #0 62-63, warpins: 1 ---
 			slot4 = slot0._defaultHelpSize
 			slot4 = slot4.x
 			--- END OF BLOCK #0 ---
@@ -3119,7 +3128,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 58-62, warpins: 2 ---
+		--- BLOCK #1 64-68, warpins: 2 ---
 		slot5 = slot1.helps
 		slot5 = slot5.helpSize
 		slot5 = slot5.y
@@ -3127,7 +3136,7 @@ function slot8(slot0, slot1)
 		if not slot5 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 63-64, warpins: 1 ---
+			--- BLOCK #0 69-70, warpins: 1 ---
 			slot5 = slot0._defaultHelpSize
 			slot5 = slot5.y
 			--- END OF BLOCK #0 ---
@@ -3143,7 +3152,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 65-66, warpins: 2 ---
+		--- BLOCK #2 71-72, warpins: 2 ---
 		slot3 = slot3(slot4, slot5)
 		slot2.sizeDelta = slot3
 		--- END OF BLOCK #2 ---
@@ -3159,14 +3168,14 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 67-70, warpins: 2 ---
+	--- BLOCK #1 73-76, warpins: 2 ---
 	slot2 = slot1.helps
 	slot2 = slot2.helpPos
 
 	if slot2 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 71-78, warpins: 1 ---
+		--- BLOCK #0 77-84, warpins: 1 ---
 		slot2 = setAnchoredPosition
 		slot3 = slot0._helpPanel
 		slot4 = {}
@@ -3177,7 +3186,7 @@ function slot8(slot0, slot1)
 		if not slot5 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 79-80, warpins: 1 ---
+			--- BLOCK #0 85-86, warpins: 1 ---
 			slot5 = slot0._defaultHelpPos
 			slot5 = slot5.x
 			--- END OF BLOCK #0 ---
@@ -3193,7 +3202,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 81-86, warpins: 2 ---
+		--- BLOCK #1 87-92, warpins: 2 ---
 		slot4.x = slot5
 		slot5 = slot1.helps
 		slot5 = slot5.helpPos
@@ -3202,7 +3211,7 @@ function slot8(slot0, slot1)
 		if not slot5 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 87-88, warpins: 1 ---
+			--- BLOCK #0 93-94, warpins: 1 ---
 			slot5 = slot0._defaultHelpPos
 			slot5 = slot5.y
 			--- END OF BLOCK #0 ---
@@ -3218,7 +3227,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 89-90, warpins: 2 ---
+		--- BLOCK #2 95-96, warpins: 2 ---
 		slot4.y = slot5
 
 		slot2(slot3, slot4)
@@ -3235,14 +3244,14 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 91-94, warpins: 2 ---
+	--- BLOCK #2 97-100, warpins: 2 ---
 	slot2 = slot1.helps
 	slot2 = slot2.windowSize
 
 	if slot2 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 95-103, warpins: 1 ---
+		--- BLOCK #0 101-109, warpins: 1 ---
 		slot2 = rtf
 		slot3 = slot0._window
 		slot2 = slot2(slot3)
@@ -3254,7 +3263,7 @@ function slot8(slot0, slot1)
 		if not slot4 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 104-105, warpins: 1 ---
+			--- BLOCK #0 110-111, warpins: 1 ---
 			slot4 = slot0._defaultSize
 			slot4 = slot4.x
 			--- END OF BLOCK #0 ---
@@ -3270,7 +3279,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 106-110, warpins: 2 ---
+		--- BLOCK #1 112-116, warpins: 2 ---
 		slot5 = slot1.helps
 		slot5 = slot5.windowSize
 		slot5 = slot5.y
@@ -3278,7 +3287,7 @@ function slot8(slot0, slot1)
 		if not slot5 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 111-112, warpins: 1 ---
+			--- BLOCK #0 117-118, warpins: 1 ---
 			slot5 = slot0._defaultSize
 			slot5 = slot5.y
 			--- END OF BLOCK #0 ---
@@ -3294,7 +3303,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 113-114, warpins: 2 ---
+		--- BLOCK #2 119-120, warpins: 2 ---
 		slot3 = slot3(slot4, slot5)
 		slot2.sizeDelta = slot3
 		--- END OF BLOCK #2 ---
@@ -3310,14 +3319,14 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 115-118, warpins: 2 ---
+	--- BLOCK #3 121-124, warpins: 2 ---
 	slot2 = slot1.helps
 	slot2 = slot2.windowPos
 
 	if slot2 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 119-127, warpins: 1 ---
+		--- BLOCK #0 125-133, warpins: 1 ---
 		slot2 = rtf
 		slot3 = slot0._window
 		slot2 = slot2(slot3)
@@ -3329,7 +3338,7 @@ function slot8(slot0, slot1)
 		if not slot4 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 128-129, warpins: 1 ---
+			--- BLOCK #0 134-135, warpins: 1 ---
 			slot4 = slot0._defaultSize
 			slot4 = slot4.x
 			--- END OF BLOCK #0 ---
@@ -3345,7 +3354,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 130-134, warpins: 2 ---
+		--- BLOCK #1 136-140, warpins: 2 ---
 		slot5 = slot1.helps
 		slot5 = slot5.windowSize
 		slot5 = slot5.y
@@ -3353,7 +3362,7 @@ function slot8(slot0, slot1)
 		if not slot5 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 135-136, warpins: 1 ---
+			--- BLOCK #0 141-142, warpins: 1 ---
 			slot5 = slot0._defaultSize
 			slot5 = slot5.y
 			--- END OF BLOCK #0 ---
@@ -3369,7 +3378,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 137-146, warpins: 2 ---
+		--- BLOCK #2 143-152, warpins: 2 ---
 		slot3 = slot3(slot4, slot5)
 		slot2.sizeDelta = slot3
 		slot2 = setAnchoredPosition
@@ -3382,7 +3391,7 @@ function slot8(slot0, slot1)
 		if not slot5 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 147-147, warpins: 1 ---
+			--- BLOCK #0 153-153, warpins: 1 ---
 			slot5 = 0
 			--- END OF BLOCK #0 ---
 
@@ -3397,7 +3406,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 148-153, warpins: 2 ---
+		--- BLOCK #3 154-159, warpins: 2 ---
 		slot4.x = slot5
 		slot5 = slot1.helps
 		slot5 = slot5.windowPos
@@ -3406,7 +3415,7 @@ function slot8(slot0, slot1)
 		if not slot5 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 154-154, warpins: 1 ---
+			--- BLOCK #0 160-160, warpins: 1 ---
 			slot5 = 0
 			--- END OF BLOCK #0 ---
 
@@ -3421,7 +3430,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 155-157, warpins: 2 ---
+		--- BLOCK #4 161-163, warpins: 2 ---
 		slot4.y = slot5
 
 		slot2(slot3, slot4)
@@ -3432,7 +3441,7 @@ function slot8(slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 158-161, warpins: 1 ---
+		--- BLOCK #0 164-167, warpins: 1 ---
 		slot2 = setAnchoredPosition
 		slot3 = slot0._window
 		slot4 = {
@@ -3454,14 +3463,14 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 162-165, warpins: 2 ---
+	--- BLOCK #4 168-171, warpins: 2 ---
 	slot2 = slot1.helps
 	slot2 = slot2.disableScroll
 
 	if slot2 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 166-189, warpins: 1 ---
+		--- BLOCK #0 172-195, warpins: 1 ---
 		slot2 = GetComponent
 		slot3 = slot0._helpPanel
 		slot4 = typeof
@@ -3504,14 +3513,14 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 190-193, warpins: 2 ---
+	--- BLOCK #5 196-199, warpins: 2 ---
 	slot2 = slot1.helps
 	slot2 = slot2.ImageMode
 
 	if slot2 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 194-204, warpins: 1 ---
+		--- BLOCK #0 200-210, warpins: 1 ---
 		slot2 = setActive
 		slot3 = slot0._top
 		slot4 = false
@@ -3539,7 +3548,7 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 205-212, warpins: 2 ---
+	--- BLOCK #6 211-218, warpins: 2 ---
 	slot2 = slot0.settings
 	slot2 = slot2.helps
 	slot3 = #slot2
@@ -3555,11 +3564,11 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 213-220, warpins: 0 ---
+	--- BLOCK #7 219-226, warpins: 0 ---
 	for slot6 = slot3, slot4, slot5 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 213-220, warpins: 2 ---
+		--- BLOCK #0 219-226, warpins: 2 ---
 		slot7 = Destroy
 		slot8 = slot0._helpList
 		slot9 = slot8
@@ -3580,7 +3589,7 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 221-226, warpins: 1 ---
+	--- BLOCK #8 227-232, warpins: 1 ---
 	slot3 = slot0._helpList
 	slot3 = slot3.childCount
 	slot4 = #slot2
@@ -3594,11 +3603,11 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #9 227-231, warpins: 0 ---
+	--- BLOCK #9 233-237, warpins: 0 ---
 	for slot6 = slot3, slot4, slot5 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 227-231, warpins: 2 ---
+		--- BLOCK #0 233-237, warpins: 2 ---
 		slot7 = cloneTplTo
 		slot8 = slot0._helpTpl
 		slot9 = slot0._helpList
@@ -3617,7 +3626,7 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #10 232-235, warpins: 1 ---
+	--- BLOCK #10 238-241, warpins: 1 ---
 	slot3 = ipairs
 	slot4 = slot2
 	slot3, slot4, slot5 = slot3(slot4)
@@ -3629,11 +3638,11 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #11 236-341, warpins: 0 ---
+	--- BLOCK #11 242-347, warpins: 0 ---
 	for slot6, slot7 in slot3, slot4, slot5 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 236-249, warpins: 1 ---
+		--- BLOCK #0 242-255, warpins: 1 ---
 		slot8 = slot0._helpList
 		slot9 = slot8
 		slot8 = slot8.GetChild
@@ -3652,7 +3661,7 @@ function slot8(slot0, slot1)
 		if not slot11 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 250-250, warpins: 1 ---
+			--- BLOCK #0 256-256, warpins: 1 ---
 			slot11 = ""
 			--- END OF BLOCK #0 ---
 
@@ -3667,7 +3676,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 251-269, warpins: 2 ---
+		--- BLOCK #1 257-275, warpins: 2 ---
 		slot9(slot10, slot11)
 
 		slot10 = slot8
@@ -3694,7 +3703,7 @@ function slot8(slot0, slot1)
 		if slot10 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 270-274, warpins: 1 ---
+			--- BLOCK #0 276-280, warpins: 1 ---
 			slot10 = 1
 			slot11 = slot1.helps
 			slot11 = slot11.ImageMode
@@ -3702,7 +3711,7 @@ function slot8(slot0, slot1)
 			if slot11 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 275-275, warpins: 1 ---
+				--- BLOCK #0 281-281, warpins: 1 ---
 				slot10 = 1.5
 				--- END OF BLOCK #0 ---
 
@@ -3717,7 +3726,7 @@ function slot8(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 276-281, warpins: 2 ---
+			--- BLOCK #1 282-287, warpins: 2 ---
 			slot11 = slot9.transform
 			slot12 = Vector2
 			slot13 = slot7.icon
@@ -3726,7 +3735,7 @@ function slot8(slot0, slot1)
 			if not slot13 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 282-282, warpins: 1 ---
+				--- BLOCK #0 288-288, warpins: 1 ---
 				slot13 = slot10
 				--- END OF BLOCK #0 ---
 
@@ -3741,14 +3750,14 @@ function slot8(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 283-286, warpins: 2 ---
+			--- BLOCK #2 289-292, warpins: 2 ---
 			slot14 = slot7.icon
 			slot14 = slot14.scale
 
 			if not slot14 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 287-287, warpins: 1 ---
+				--- BLOCK #0 293-293, warpins: 1 ---
 				slot14 = slot10
 				--- END OF BLOCK #0 ---
 
@@ -3763,7 +3772,7 @@ function slot8(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 288-295, warpins: 2 ---
+			--- BLOCK #3 294-301, warpins: 2 ---
 			slot12 = slot12(slot13, slot14)
 			slot11.localScale = slot12
 			slot11 = slot7.icon
@@ -3774,14 +3783,14 @@ function slot8(slot0, slot1)
 			if slot12 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 296-299, warpins: 1 ---
+				--- BLOCK #0 302-305, warpins: 1 ---
 				slot12 = slot7.icon
 				slot12 = slot12.posX
 
 				if not slot12 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 300-300, warpins: 2 ---
+					--- BLOCK #0 306-306, warpins: 2 ---
 					slot12 = -20
 					--- END OF BLOCK #0 ---
 
@@ -3801,21 +3810,21 @@ function slot8(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #4 301-304, warpins: 2 ---
+			--- BLOCK #4 307-310, warpins: 2 ---
 			slot13 = slot7.icon
 			slot13 = slot13.posY
 
 			if slot13 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 305-308, warpins: 1 ---
+				--- BLOCK #0 311-314, warpins: 1 ---
 				slot13 = slot7.icon
 				slot13 = slot13.posY
 
 				if not slot13 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 309-309, warpins: 2 ---
+					--- BLOCK #0 315-315, warpins: 2 ---
 					slot13 = 0
 					--- END OF BLOCK #0 ---
 
@@ -3835,7 +3844,7 @@ function slot8(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #5 310-339, warpins: 2 ---
+			--- BLOCK #5 316-345, warpins: 2 ---
 			slot14 = LoadSprite
 			slot15 = slot7.icon
 			slot15 = slot15.atlas
@@ -3882,7 +3891,7 @@ function slot8(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 340-341, warpins: 3 ---
+		--- BLOCK #2 346-347, warpins: 3 ---
 		--- END OF BLOCK #2 ---
 
 
@@ -3896,14 +3905,14 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #12 342-345, warpins: 1 ---
+	--- BLOCK #12 348-351, warpins: 1 ---
 	slot3 = slot1.helps
 	slot3 = slot3.defaultpage
 
 	if not slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 346-346, warpins: 1 ---
+		--- BLOCK #0 352-352, warpins: 1 ---
 		slot3 = 1
 		--- END OF BLOCK #0 ---
 
@@ -3918,7 +3927,7 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #13 347-351, warpins: 2 ---
+	--- BLOCK #13 353-357, warpins: 2 ---
 	slot0.helpPage = slot3
 	slot3 = slot1.helps
 	slot3 = slot3.pageMode
@@ -3926,7 +3935,7 @@ function slot8(slot0, slot1)
 	if slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 352-355, warpins: 1 ---
+		--- BLOCK #0 358-361, warpins: 1 ---
 		slot4 = slot0
 		slot3 = slot0.switchHelpPage
 		slot5 = slot0.helpPage
@@ -3945,7 +3954,7 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #14 356-367, warpins: 2 ---
+	--- BLOCK #14 362-373, warpins: 2 ---
 	slot4 = slot0
 	slot3 = slot0.Loaded
 	slot5 = slot1
@@ -3962,7 +3971,7 @@ function slot8(slot0, slot1)
 	if slot5 <= slot6 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 368-369, warpins: 1 ---
+		--- BLOCK #0 374-375, warpins: 1 ---
 		slot5 = false
 		--- END OF BLOCK #0 ---
 
@@ -3971,7 +3980,7 @@ function slot8(slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 370-370, warpins: 1 ---
+		--- BLOCK #0 376-376, warpins: 1 ---
 		slot5 = true
 		--- END OF BLOCK #0 ---
 
@@ -3986,7 +3995,7 @@ function slot8(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #15 371-372, warpins: 2 ---
+	--- BLOCK #15 377-378, warpins: 2 ---
 	slot3(slot4, slot5)
 
 	return

@@ -25,6 +25,7 @@ slot0.init = function (slot0)
 	slot0.eventTriggers = {}
 	slot0._startBtn = slot0:findTF("right/start")
 	slot0._popup = slot0:findTF("right/start/popup")
+	slot0._ticket = slot0:findTF("right/start/ticket")
 	slot0._costText = slot0:findTF("right/start/popup/Text")
 	slot0._moveLayer = slot0:findTF("moveLayer")
 	slot1 = slot0:findTF("middle")
@@ -98,34 +99,52 @@ slot0.SetStageID = function (slot0, slot1)
 	removeAllChildren(slot0._spoilsContainer)
 
 	slot0._stageID = slot1
+	slot3 = Clone(pg.expedition_data_template[slot1].award_display)
 
-	for slot7, slot8 in ipairs(slot3) do
-		updateDrop(slot9, slot10)
-		onButton(slot0, cloneTplTo(slot0._item, slot0._spoilsContainer), function ()
-			if pg.item_data_statistics[slot0[2]] and slot1[slot0.type] then
-				slot2 = {}
+	if checkExist(pg.expedition_activity_template[slot1], {
+		"pt_drop_display"
+	}) and type(slot4) == "table" then
+		slot5 = getProxy(ActivityProxy)
 
-				for slot6, slot7 in ipairs(slot1) do
-					slot2[#slot2 + 1] = {
-						hideName = true,
-						type = slot8,
-						id = slot7[2],
-						anonymous = slot7[1] == DROP_TYPE_SHIP and not table.contains(slot2.chapter.dropShipIdList, slot7[2])
-					}
-				end
-
-				slot2:emit(slot3.ON_DROP_LIST, {
-					item2Row = true,
-					itemList = slot2,
-					content = slot0.display
+		for slot9 = #slot4, 1, -1 do
+			if slot5:getActivityById(slot4[slot9][1]) and not slot10:isEnd() then
+				table.insert(slot3, 1, {
+					2,
+					id2ItemId(slot4[slot9][2])
 				})
-			else
-				slot2:emit(slot3.ON_DROP, slot4)
 			end
-		end, SFX_PANEL)
+		end
 	end
 
-	function slot4(slot0, slot1)
+	if slot0.contextData.system ~= SYSTEM_BOSS_EXPERIMENT then
+		for slot8, slot9 in ipairs(slot3) do
+			updateDrop(slot10, slot11)
+			onButton(slot0, cloneTplTo(slot0._item, slot0._spoilsContainer), function ()
+				if pg.item_data_statistics[slot0[2]] and slot1[slot0.type] then
+					slot2 = {}
+
+					for slot6, slot7 in ipairs(slot1) do
+						slot2[#slot2 + 1] = {
+							hideName = true,
+							type = slot8,
+							id = slot7[2],
+							anonymous = slot7[1] == DROP_TYPE_SHIP and not table.contains(slot2.chapter.dropShipIdList, slot7[2])
+						}
+					end
+
+					slot2:emit(slot3.ON_DROP_LIST, {
+						item2Row = true,
+						itemList = slot2,
+						content = slot0.display
+					})
+				else
+					slot2:emit(slot3.ON_DROP, slot4)
+				end
+			end, SFX_PANEL)
+		end
+	end
+
+	function slot5(slot0, slot1)
 		if type(slot0) == "table" then
 			setActive(slot1, true)
 			setWidgetText(slot1, i18n(slot0.ObjectiveList[slot0[1]], slot0[2]))
@@ -134,23 +153,23 @@ slot0.SetStageID = function (slot0, slot1)
 		end
 	end
 
-	slot5 = {
+	slot6 = {
 		findTF(slot0._goals, "goal_tpl"),
 		findTF(slot0._goals, "goal_sink"),
 		findTF(slot0._goals, "goal_time")
 	}
-	slot7 = 1
+	slot8 = 1
 
-	for slot11, slot12 in ipairs(slot6) do
-		if type(slot12) ~= "string" then
-			slot4(slot12, slot5[slot7])
+	for slot12, slot13 in ipairs(slot7) do
+		if type(slot13) ~= "string" then
+			slot5(slot13, slot6[slot8])
 
-			slot7 = slot7 + 1
+			slot8 = slot8 + 1
 		end
 	end
 
-	for slot11 = slot7, #slot5, 1 do
-		slot4("", slot5[slot11])
+	for slot12 = slot8, #slot6, 1 do
+		slot5("", slot6[slot12])
 	end
 
 	setActive(slot0.guideDesc, slot2.guide_desc and #slot2.guide_desc > 0)
@@ -391,7 +410,7 @@ slot0.switchToEditMode = function (slot0)
 		slot0:emit(PreCombatMediator.ON_COMMIT_EDIT, slot0)
 	end, SFX_CONFIRM)
 
-	if slot0.contextData.system ~= SYSTEM_HP_SHARE_ACT_BOSS then
+	if slot0.contextData.system ~= SYSTEM_HP_SHARE_ACT_BOSS and slot0.contextData.system ~= SYSTEM_ACT_BOSS and slot0.contextData.system ~= SYSTEM_BOSS_EXPERIMENT then
 		slot0:EnableAddGrid(Fleet.MAIN)
 		slot0:EnableAddGrid(Fleet.VANGUARD)
 	end
@@ -865,28 +884,11 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 			GetOrAddComponent(slot5, "UILongPressTrigger").onLongPressed:AddListener(function ()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-6, warpins: 1 ---
-				if slot0.contextData.system ~= SYSTEM_HP_SHARE_ACT_BOSS then
+				--- BLOCK #0 1-11, warpins: 1 ---
+				slot0:emit(PreCombatMediator.OPEN_SHIP_INFO, slot1.id, slot0._currentFleetVO)
 
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 7-16, warpins: 1 ---
-					slot0:emit(PreCombatMediator.OPEN_SHIP_INFO, slot1.id, slot0._currentFleetVO)
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-
-				--- END OF BLOCK #0 ---
-
-				FLOW; TARGET BLOCK #1
-
-
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #1 17-17, warpins: 2 ---
 				return
-				--- END OF BLOCK #1 ---
+				--- END OF BLOCK #0 ---
 
 
 
@@ -896,10 +898,10 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-6, warpins: 1 ---
-				if slot0.contextData.system ~= SYSTEM_HP_SHARE_ACT_BOSS then
+				if slot0.contextData.system ~= SYSTEM_HP_SHARE_ACT_BOSS and slot0.contextData.system ~= SYSTEM_ACT_BOSS and slot0.contextData.system ~= SYSTEM_BOSS_EXPERIMENT then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 7-19, warpins: 1 ---
+					--- BLOCK #0 19-31, warpins: 1 ---
 					playSoundEffect(SFX_UI_CLICK)
 					playSoundEffect:emit(PreCombatMediator.CHANGE_FLEET_SHIP, playSoundEffect, slot0._currentFleetVO, )
 					--- END OF BLOCK #0 ---
@@ -915,7 +917,7 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 20-20, warpins: 2 ---
+				--- BLOCK #1 32-32, warpins: 4 ---
 				return
 				--- END OF BLOCK #1 ---
 
@@ -977,14 +979,14 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 
 				end
 
-				if slot1.contextData.system ~= SYSTEM_HP_SHARE_ACT_BOSS and (slot1.position.x > UnityEngine.Screen.width * 0.65 or slot1.position.y < UnityEngine.Screen.height * 0.25) then
+				if slot1.contextData.system ~= SYSTEM_HP_SHARE_ACT_BOSS and slot1.contextData.system ~= SYSTEM_ACT_BOSS and slot1.contextData.system ~= SYSTEM_BOSS_EXPERIMENT and (slot1.position.x > UnityEngine.Screen.width * 0.65 or slot1.position.y < UnityEngine.Screen.height * 0.25) then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 34-41, warpins: 2 ---
+					--- BLOCK #0 46-53, warpins: 2 ---
 					if not slot1._currentFleetVO:canRemove(slot2) then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 42-71, warpins: 1 ---
+						--- BLOCK #0 54-83, warpins: 1 ---
 						slot3, slot4 = slot1._currentFleetVO:getShipPos(slot2)
 
 						pg.TipsMgr.GetInstance():ShowTips(i18n("ship_formationUI_removeError_onlyShip", slot2:getConfigTable().name, slot1._currentFleetVO.name, Fleet.C_TEAM_NAME[slot4]))
@@ -996,7 +998,7 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 72-92, warpins: 1 ---
+						--- BLOCK #0 84-104, warpins: 1 ---
 						pg.MsgboxMgr.GetInstance():ShowMsgBox({
 							hideNo = false,
 							zIndex = -100,
@@ -1084,7 +1086,7 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 93-94, warpins: 2 ---
+					--- BLOCK #0 105-106, warpins: 4 ---
 					slot2()
 					--- END OF BLOCK #0 ---
 
@@ -1099,7 +1101,7 @@ slot0.enabledCharacter = function (slot0, slot1, slot2, slot3, slot4)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 95-98, warpins: 3 ---
+				--- BLOCK #1 107-110, warpins: 3 ---
 				playSoundEffect(SFX_UI_HOME_PUT)
 
 				return
@@ -1155,17 +1157,14 @@ end
 slot0.displayFleetInfo = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-27, warpins: 1 ---
+	--- BLOCK #0 1-28, warpins: 1 ---
 	slot1 = slot0._currentFleetVO:GetPropertiesSum()
 
-	setActive(slot0._popup, slot0.contextData.system ~= SYSTEM_DUEL)
-	slot0.tweenNumText(slot0._costText, slot0._currentFleetVO:GetCostSum().oil)
+	setActive(slot0._popup, slot5 ~= SYSTEM_DUEL)
+	slot0.tweenNumText(slot0._costText, (pg.battle_cost_template[slot0.contextData.system].oil_cost == 0 and 0) or slot0._currentFleetVO:GetCostSum().oil)
 	slot0.tweenNumText(slot0._vanguardGS, slot0._currentFleetVO:GetGearScoreSum(Fleet.VANGUARD))
 	slot0.tweenNumText(slot0._mainGS, slot0._currentFleetVO:GetGearScoreSum(Fleet.MAIN))
-	setText(slot0._fleetNameText, slot0.defaultFleetName(slot0._currentFleetVO))
-	setText(slot0._fleetNumText, slot0._currentFleetVO.id)
 
-	return
 	--- END OF BLOCK #0 ---
 
 	FLOW; TARGET BLOCK #1
@@ -1173,8 +1172,86 @@ slot0.displayFleetInfo = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 31-59, warpins: 2 ---
+	--- BLOCK #1 32-36, warpins: 2 ---
 	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 40-58, warpins: 2 ---
+	if slot5 == SYSTEM_BOSS_EXPERIMENT then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 59-70, warpins: 1 ---
+		setActive(slot0._ticket, true)
+		setText(slot0:findTF("right/start/ticket/Text"), 0)
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 71-73, warpins: 1 ---
+		if slot5 == SYSTEM_HP_SHARE_ACT_BOSS then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 74-84, warpins: 1 ---
+			setActive(slot0._ticket, true)
+			setText(slot0:findTF("right/start/ticket/Text"), 1)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 85-87, warpins: 3 ---
+	if slot5 == SYSTEM_ACT_BOSS or slot5 == SYSTEM_HP_SHARE_ACT_BOSS or slot5 == SYSTEM_BOSS_EXPERIMENT then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 94-102, warpins: 3 ---
+		setText(slot0._fleetNameText, Fleet.DEFAULT_NAME_BOSS_ACT[slot0._currentFleetVO.id])
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 103-109, warpins: 1 ---
+		setText(slot0._fleetNameText, slot0.defaultFleetName(slot0._currentFleetVO))
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 110-115, warpins: 2 ---
+	setText(slot0._fleetNumText, slot0._currentFleetVO.id)
+
+	return
+	--- END OF BLOCK #4 ---
 
 
 
@@ -1184,10 +1261,10 @@ slot0.SetFleetStepper = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-5, warpins: 1 ---
-	if slot0.contextData.system ~= SYSTEM_DUEL and slot0.contextData.system ~= SYSTEM_HP_SHARE_ACT_BOSS then
+	if slot0.contextData.system ~= SYSTEM_DUEL and slot1 ~= SYSTEM_ACT_BOSS and slot1 ~= SYSTEM_HP_SHARE_ACT_BOSS and slot1 ~= SYSTEM_BOSS_EXPERIMENT then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 11-17, warpins: 1 ---
+		--- BLOCK #0 15-21, warpins: 1 ---
 		SetActive(slot0._nextPage, slot0._curFleetIndex < #slot0._legalFleetIdList)
 		SetActive(slot0._prevPage, slot0._curFleetIndex > 1)
 		--- END OF BLOCK #0 ---
@@ -1197,7 +1274,7 @@ slot0.SetFleetStepper = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 21-27, warpins: 2 ---
+		--- BLOCK #1 25-31, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
@@ -1205,7 +1282,7 @@ slot0.SetFleetStepper = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 31-32, warpins: 2 ---
+		--- BLOCK #2 35-36, warpins: 2 ---
 		--- END OF BLOCK #2 ---
 
 
@@ -1213,7 +1290,7 @@ slot0.SetFleetStepper = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 33-40, warpins: 2 ---
+		--- BLOCK #0 37-44, warpins: 4 ---
 		SetActive(slot0._nextPage, false)
 		SetActive(slot0._prevPage, false)
 		--- END OF BLOCK #0 ---
@@ -1229,7 +1306,7 @@ slot0.SetFleetStepper = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 41-41, warpins: 2 ---
+	--- BLOCK #1 45-45, warpins: 2 ---
 	return
 	--- END OF BLOCK #1 ---
 

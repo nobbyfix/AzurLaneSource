@@ -1239,12 +1239,12 @@ slot0.appendOthers = function (slot0, slot1, slot2)
 	if slot1.player.id == slot0.player.id then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 10-23, warpins: 1 ---
+		--- BLOCK #0 10-24, warpins: 1 ---
 		slot4 = slot0.poolBubble.self
 		slot5 = slot0.prefabSelf
 		slot1.isSelf = true
 		slot1.player = setmetatable(Clone(slot0.player), {
-			__index = slot1.player
+			__index = slot1.player.__index
 		})
 		--- END OF BLOCK #0 ---
 
@@ -1259,13 +1259,13 @@ slot0.appendOthers = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 24-28, warpins: 2 ---
+	--- BLOCK #1 25-29, warpins: 2 ---
 	slot6 = nil
 
 	if #slot4 > 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 29-39, warpins: 1 ---
+		--- BLOCK #0 30-40, warpins: 1 ---
 		setActive(slot4[1].tf, true)
 		table.remove(slot4, 1)
 		--- END OF BLOCK #0 ---
@@ -1275,7 +1275,7 @@ slot0.appendOthers = function (slot0, slot1, slot2)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 40-48, warpins: 1 ---
+		--- BLOCK #0 41-49, warpins: 1 ---
 		slot6 = ChatBubble.New(cloneTplTo(slot5, slot0.content))
 		--- END OF BLOCK #0 ---
 
@@ -1290,7 +1290,7 @@ slot0.appendOthers = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 49-73, warpins: 2 ---
+	--- BLOCK #2 50-74, warpins: 2 ---
 	slot6.tf:SetSiblingIndex(slot2)
 	table.insert(slot0.bubbleCards, slot6)
 	slot6:update(slot1)

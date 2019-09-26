@@ -654,13 +654,13 @@ slot0.updateSkillDesc = function (slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-46, warpins: 1 ---
 	setText(findTF(slot1, "name"), slot2.name)
 	setText(findTF(slot1, "level_contain/level"), slot2.level)
-	setText(findTF(slot1, "desc"), Student.getSkillDesc(slot2.id, slot2.level))
+	setText(findTF(slot1, "descView/Viewport/desc"), Student.getSkillDesc(slot2.id, slot2.level))
 
-	if 26 - math.floor((#findTF(slot1, "desc"):GetComponent(typeof(Text)).text - 160) / 40) < 20 then
+	if 26 - math.floor((#findTF(slot1, "descView/Viewport/desc"):GetComponent(typeof(Text)).text - 160) / 40) < 26 then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 47-47, warpins: 1 ---
-		slot6 = 20
+		slot6 = 26
 		--- END OF BLOCK #0 ---
 
 
@@ -1242,7 +1242,7 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3, slot4)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #1 138-149, warpins: 2 ---
-			setText(findTF(slot5, "desc"), Student.getSkillDesc(slot3.id, slot3.level))
+			setText(findTF(slot5, "descView/Viewport/desc"), Student.getSkillDesc(slot3.id, slot3.level))
 			--- END OF BLOCK #1 ---
 
 
@@ -1251,7 +1251,7 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3, slot4)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 150-156, warpins: 1 ---
-			setText(findTF(slot5, "desc"), slot3.desc)
+			setText(findTF(slot5, "descView/Viewport/desc"), slot3.desc)
 			--- END OF BLOCK #0 ---
 
 
@@ -1266,11 +1266,11 @@ slot0.updateSkill = function (slot0, slot1, slot2, slot3, slot4)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #5 157-177, warpins: 2 ---
-		if 26 - math.floor((#findTF(slot5, "desc"):GetComponent(typeof(Text)).text - 160) / 40) < 20 then
+		if 26 - math.floor((#findTF(slot5, "descView/Viewport/desc"):GetComponent(typeof(Text)).text - 160) / 40) < 26 then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 178-178, warpins: 1 ---
-			slot10 = 20
+			slot10 = 26
 			--- END OF BLOCK #0 ---
 
 

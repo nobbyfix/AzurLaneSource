@@ -559,7 +559,7 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 24-95, warpins: 3 ---
+		--- BLOCK #2 24-100, warpins: 3 ---
 		slot2 = slot2
 		slot2 = slot2.addShipsExp
 		slot3 = slot0.ship_exp_list
@@ -570,9 +570,14 @@ function slot1(slot0, slot1)
 		slot2(slot3, slot4, slot5)
 
 		slot2 = slot2
-		slot2 = slot2.ScenarioCommanderExp
+		slot2 = slot2.GenerateCommanderExp
 		slot3 = slot0
-		slot2 = slot2(slot3)
+		slot4 = slot5
+		slot5 = slot4
+		slot4 = slot4.getActiveChapter
+		slot4 = slot4(slot5)
+		slot4 = slot4.fleet
+		slot2 = slot2(slot3, slot4)
 		slot3 = slot3
 		slot3 = slot3.statistics
 		slot4 = slot0.mvp
@@ -585,8 +590,8 @@ function slot1(slot0, slot1)
 		slot5 = slot2
 		slot5 = slot5.GeneralPlayerCosume
 		slot6 = SYSTEM_SCENARIO
-		slot7 = slot5
-		slot8 = slot6
+		slot7 = slot6
+		slot8 = slot7
 		slot9 = slot0.player_exp
 		slot10 = slot1
 
@@ -598,7 +603,7 @@ function slot1(slot0, slot1)
 		slot6 = slot3
 		slot6 = slot6.statistics
 		slot5.statistics = slot6
-		slot6 = slot7
+		slot6 = slot8
 		slot5.score = slot6
 		slot5.drops = slot3
 		slot5.commanderExps = slot2
@@ -617,13 +622,13 @@ function slot1(slot0, slot1)
 
 		slot6(slot7, slot8, slot9)
 
-		slot6 = slot8
+		slot6 = slot5
 		slot7 = slot6
 		slot6 = slot6.updateActiveChapterShips
 
 		slot6(slot7)
 
-		slot6 = slot8
+		slot6 = slot5
 		slot7 = slot6
 		slot6 = slot6.getActiveChapter
 		slot6 = slot6(slot7)
@@ -633,7 +638,7 @@ function slot1(slot0, slot1)
 
 		slot7(slot8, slot9)
 
-		slot7 = slot8
+		slot7 = slot5
 		slot8 = slot7
 		slot7 = slot7.getMaps
 		slot7 = slot7(slot8)
@@ -649,11 +654,11 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 96-103, warpins: 0 ---
+		--- BLOCK #3 101-108, warpins: 0 ---
 		for slot12, slot13 in slot9, slot10, slot11 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 96-100, warpins: 1 ---
+			--- BLOCK #0 101-105, warpins: 1 ---
 			slot15 = slot13
 			slot14 = slot13.isUnlock
 			slot14 = slot14(slot15)
@@ -661,7 +666,7 @@ function slot1(slot0, slot1)
 			if slot14 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 101-101, warpins: 1 ---
+				--- BLOCK #0 106-106, warpins: 1 ---
 				slot8 = slot13.id
 				--- END OF BLOCK #0 ---
 
@@ -675,7 +680,7 @@ function slot1(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 102-103, warpins: 3 ---
+			--- BLOCK #1 107-108, warpins: 3 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -689,15 +694,15 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 104-118, warpins: 1 ---
-		slot9 = slot8
+		--- BLOCK #4 109-123, warpins: 1 ---
+		slot9 = slot5
 		slot10 = slot9
 		slot9 = slot9.updateChapter
 		slot11 = slot6
 
 		slot9(slot10, slot11)
 
-		slot9 = slot8
+		slot9 = slot5
 		slot10 = slot9
 		slot9 = slot9.getMaps
 		slot9 = slot9(slot10)
@@ -714,11 +719,11 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #5 119-126, warpins: 0 ---
+		--- BLOCK #5 124-131, warpins: 0 ---
 		for slot13, slot14 in slot10, slot11, slot12 do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 119-123, warpins: 1 ---
+			--- BLOCK #0 124-128, warpins: 1 ---
 			slot16 = slot14
 			slot15 = slot14.isUnlock
 			slot15 = slot15(slot16)
@@ -726,7 +731,7 @@ function slot1(slot0, slot1)
 			if slot15 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 124-124, warpins: 1 ---
+				--- BLOCK #0 129-129, warpins: 1 ---
 				slot9 = slot14.id
 				--- END OF BLOCK #0 ---
 
@@ -740,7 +745,7 @@ function slot1(slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 125-126, warpins: 3 ---
+			--- BLOCK #1 130-131, warpins: 3 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -754,14 +759,14 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #6 127-130, warpins: 1 ---
+		--- BLOCK #6 132-135, warpins: 1 ---
 		slot10 = Map
 		slot10 = slot10.lastMap
 
 		if slot10 and slot9 ~= slot8 and slot8 < slot9 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 135-137, warpins: 1 ---
+			--- BLOCK #0 140-142, warpins: 1 ---
 			slot10 = Map
 			slot11 = true
 			slot10.autoNextPage = slot11
@@ -778,7 +783,7 @@ function slot1(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #7 138-138, warpins: 4 ---
+		--- BLOCK #7 143-143, warpins: 4 ---
 		return
 		--- END OF BLOCK #7 ---
 

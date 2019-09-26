@@ -5089,7 +5089,7 @@ function getActivityTask(slot0, slot1)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot2 = getProxy(TaskProxy)
 	slot4 = pg.TimeMgr.GetInstance()
-	slot6, slot7, slot8, slot9 = nil
+	slot6, slot7, slot8 = nil
 
 	--- END OF BLOCK #0 ---
 
@@ -5098,8 +5098,8 @@ function getActivityTask(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 33-75, warpins: 0 ---
-	for slot13 = math.max(slot0.data3, 1), math.min(slot5, #slot0:getConfig("config_data")), 1 do
+	--- BLOCK #1 33-82, warpins: 0 ---
+	for slot12 = math.max(slot0.data3, 1), math.min(slot5, #slot0:getConfig("config_data")), 1 do
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 33-42, warpins: 2 ---
@@ -5110,32 +5110,39 @@ function getActivityTask(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 43-74, warpins: 0 ---
-		for slot18, slot19 in ipairs(slot14) do
+		--- BLOCK #1 43-81, warpins: 0 ---
+		for slot17, slot18 in ipairs(slot13) do
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 43-54, warpins: 1 ---
-			slot9 = slot2:getFinishTaskById(slot19)
-
-			if slot2:getTaskById(slot19) then
+			--- BLOCK #0 43-49, warpins: 1 ---
+			if slot2:getTaskById(slot18) then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 55-58, warpins: 1 ---
-				return slot19, slot8
+				--- BLOCK #0 50-52, warpins: 1 ---
+				return slot6.id, slot6
 				--- END OF BLOCK #0 ---
 
 
 
-			else
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 53-54, warpins: 2 ---
+			if slot7 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 59-60, warpins: 1 ---
-				if slot9 then
+				--- BLOCK #0 55-61, warpins: 1 ---
+				if slot2:getFinishTaskById(slot18) then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 61-63, warpins: 1 ---
-					slot6 = slot19
-					slot7 = slot9
+					--- BLOCK #0 62-63, warpins: 1 ---
+					slot7 = slot8
 					--- END OF BLOCK #0 ---
 
 
@@ -5144,11 +5151,11 @@ function getActivityTask(slot0, slot1)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 64-65, warpins: 1 ---
-					if slot1 or not slot6 then
+					if slot1 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 68-69, warpins: 2 ---
-						return slot19
+						--- BLOCK #0 66-67, warpins: 1 ---
+						return slot18
 						--- END OF BLOCK #0 ---
 
 
@@ -5156,8 +5163,8 @@ function getActivityTask(slot0, slot1)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 70-72, warpins: 1 ---
-						return slot6, slot7
+						--- BLOCK #0 68-71, warpins: 1 ---
+						return slot7.id, slot7
 						--- END OF BLOCK #0 ---
 
 
@@ -5172,16 +5179,36 @@ function getActivityTask(slot0, slot1)
 
 
 
-			end
-			--- END OF BLOCK #0 ---
+			else
 
-			FLOW; TARGET BLOCK #1
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 72-78, warpins: 1 ---
+				slot7 = slot2:getFinishTaskById(slot18)
+
+				if not slot8 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 79-79, warpins: 1 ---
+					slot8 = slot18
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
 
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 73-74, warpins: 5 ---
-			--- END OF BLOCK #1 ---
+			--- BLOCK #2 80-81, warpins: 6 ---
+			--- END OF BLOCK #2 ---
 
 
 
@@ -5193,7 +5220,7 @@ function getActivityTask(slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 75-75, warpins: 1 ---
+		--- BLOCK #2 82-82, warpins: 1 ---
 		--- END OF BLOCK #2 ---
 
 
@@ -5207,9 +5234,37 @@ function getActivityTask(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 76-78, warpins: 1 ---
-	return slot6, slot7
+	--- BLOCK #2 83-84, warpins: 1 ---
+	if slot7 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 85-88, warpins: 1 ---
+		return slot7.id, slot7
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 89-89, warpins: 1 ---
+		return slot8
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 90-90, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 

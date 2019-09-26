@@ -999,6 +999,12 @@ slot0.removeFurniture = function (slot0, slot1)
 
 	slot0:sendNotification(slot0.BACKYARD_FURNITURE_REMOVE, slot3)
 	slot0:updateHouse(slot0.data)
+
+	if slot0.furnitrueTimers[slot1] then
+		slot0.furnitrueTimers[slot1]:Stop()
+
+		slot0.furnitrueTimers[slot1] = nil
+	end
 end
 
 slot0.clearInterActions = function (slot0, slot1)
