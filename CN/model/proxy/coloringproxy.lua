@@ -121,4 +121,12 @@ slot0.checkState = function (slot0)
 	return slot1
 end
 
+slot0.CheckTodayTip = function (slot0)
+	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_COLORING_ALPHA) and not slot2:isEnd() and slot0.startTime then
+		slot3 = pg.TimeMgr.GetInstance()
+
+		return slot0.colorGroups[math.min(slot3:DiffDay(slot0.startTime, slot3:GetServerTime()) + 1, #slot0.colorGroups - 1)]:getState() ~= ColorGroup.StateAchieved
+	end
+end
+
 return slot0

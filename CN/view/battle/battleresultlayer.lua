@@ -116,9 +116,20 @@ slot0.init = function (slot0)
 	slot0._conditionContainer = slot0:findTF("bg16/list", slot0._conditions)
 	slot0._conditionTpl = slot0:findTF("bg16/conditionTpl", slot0._conditions)
 	slot0._conditionSubTpl = slot0:findTF("bg16/conditionSubTpl", slot0._conditions)
+	slot0._conditionContributeTpl = slot0:findTF("bg16/conditionContributeTpl", slot0._conditions)
+	slot0._conditionBGNormal = slot0:findTF("bg16/bg_normal", slot0._conditions)
+	slot0._conditionBGContribute = slot0:findTF("bg16/bg_contribute", slot0._conditions)
 	slot0._cmdExp = slot0:findTF("commanderExp", slot0._leftPanel)
 	slot0._cmdContainer = slot0:findTF("commander_container", slot0._cmdExp)
 	slot0._cmdTpl = slot0:findTF("commander_tpl", slot0._cmdExp)
+
+	slot0:setGradeLabel()
+	SetActive(slot0._levelText, false)
+
+	slot0._delayLeanList = {}
+end
+
+slot0.setGradeLabel = function (slot0)
 	slot1 = {
 		"d",
 		"c",
@@ -151,9 +162,6 @@ slot0.init = function (slot0)
 
 	LoadImageSpriteAsync(slot4, slot2, false)
 	LoadImageSpriteAsync(slot5, slot3, false)
-	SetActive(slot0._levelText, false)
-
-	slot0._delayLeanList = {}
 end
 
 slot0.displayerCommanders = function (slot0, slot1)
@@ -444,7 +452,7 @@ slot0.displayShips = function (slot0)
 	end
 
 	slot4, slot5 = nil
-	slot5 = (slot3.mvpShipID == 0 or slot3[slot3.mvpShipID].output) and 0
+	slot5 = (not slot3.mvpShipID or slot3.mvpShipID == 0 or slot3[slot3.mvpShipID].output) and 0
 	slot0._atkFuncs = {}
 	slot0._commonAtkTplList = {}
 	slot0._subAtkTplList = {}
@@ -926,11 +934,11 @@ slot0.displayShips = function (slot0)
 			if slot18 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 455-456, warpins: 1 ---
+				--- BLOCK #0 458-459, warpins: 1 ---
 				if not slot8 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 457-458, warpins: 1 ---
+					--- BLOCK #0 460-461, warpins: 1 ---
 					slot0._subFirstExpTF = slot27
 					--- END OF BLOCK #0 ---
 
@@ -939,7 +947,7 @@ slot0.displayShips = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 459-468, warpins: 1 ---
+					--- BLOCK #0 462-471, warpins: 1 ---
 					slot8:GetComponent(typeof(DftAniEvent)):SetEndEvent(function (slot0)
 
 						-- Decompilation error in this vicinity:
@@ -965,7 +973,7 @@ slot0.displayShips = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 469-470, warpins: 2 ---
+				--- BLOCK #1 472-473, warpins: 2 ---
 				slot8 = slot27
 				--- END OF BLOCK #1 ---
 
@@ -974,11 +982,11 @@ slot0.displayShips = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 471-472, warpins: 1 ---
+				--- BLOCK #0 474-475, warpins: 1 ---
 				if slot7 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 473-483, warpins: 1 ---
+					--- BLOCK #0 476-486, warpins: 1 ---
 					slot7:GetComponent(typeof(DftAniEvent)):SetEndEvent(function (slot0)
 
 						-- Decompilation error in this vicinity:
@@ -998,7 +1006,7 @@ slot0.displayShips = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 484-487, warpins: 1 ---
+					--- BLOCK #0 487-490, warpins: 1 ---
 					setActive(slot27, true)
 					--- END OF BLOCK #0 ---
 
@@ -1013,7 +1021,7 @@ slot0.displayShips = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 488-488, warpins: 2 ---
+				--- BLOCK #1 491-491, warpins: 2 ---
 				slot7 = slot27
 				--- END OF BLOCK #1 ---
 
@@ -1207,7 +1215,7 @@ slot0.displayShips = function (slot0)
 	if slot9[#slot9] then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 502-511, warpins: 1 ---
+		--- BLOCK #0 505-514, warpins: 1 ---
 		slot11:GetComponent(typeof(DftAniEvent)):SetEndEvent(function (slot0)
 
 			-- Decompilation error in this vicinity:
@@ -1248,7 +1256,7 @@ slot0.displayShips = function (slot0)
 	if #slot10 > 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 516-527, warpins: 1 ---
+		--- BLOCK #0 519-530, warpins: 1 ---
 		slot10[#slot10].GetComponent(slot12, typeof(DftAniEvent)):SetEndEvent(function (slot0)
 
 			-- Decompilation error in this vicinity:

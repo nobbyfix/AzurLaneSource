@@ -114,4 +114,12 @@ slot0.canQuickBuildShip = function (slot0)
 	return true
 end
 
+slot0.getPageFromPoolType = function (slot0)
+	for slot5, slot6 in pairs(slot1) do
+		if table.contains(slot6, slot0) then
+			return slot5
+		end
+	end
+end
+
 return slot0

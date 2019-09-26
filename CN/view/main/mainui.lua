@@ -130,6 +130,7 @@ slot0.init = function (slot0)
 	slot0._activityMapBtn = slot0:findTF("activity_map_btn", slot0._ActivityBtns)
 	slot0._activityMiniGameBtn = slot0:findTF("activity_minigame", slot0._ActivityBtns)
 	slot0._acitivtyEscortBtn = slot0:findTF("activity_escort", slot0._ActivityBtns)
+	slot0._acitivtyBossBtn = slot0:findTF("activity_boss", slot0._ActivityBtns)
 	slot0._bottomPanel = slot0:findTF("toTop/frame/bottomPanel")
 	slot0._dockBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/dockBtn")
 	slot0._equipBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/equipButton")
@@ -781,6 +782,19 @@ slot0.updateActivityWowsBtn = function (slot0, slot1)
 		onButton(slot0, slot0._activityTaskWowsBtn, function ()
 			slot0:emit(MainUIMediator.ON_ACTIVITY_WOWS, slot1.id)
 		end, SFX_PANEL)
+	end
+end
+
+slot0.updateActivityBossBtn = function (slot0, slot1)
+	setActive(slot0._acitivtyBossBtn, slot1 and not slot1:isEnd())
+
+	if slot1 and not slot1.isEnd() then
+		onButton(slot0, slot0._acitivtyBossBtn, function ()
+			slot0:emit(MainUIMediator.GO_SCENE, {
+				SCENE.ACT_BOSS_BATTLE
+			})
+		end, SFX_PANEL)
+		setActive(slot0._acitivtyBossBtn:Find("tip"), not slot1.data2 or slot1.data2 <= 0)
 	end
 end
 
