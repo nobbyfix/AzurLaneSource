@@ -102,11 +102,11 @@ end
 slot0.updateCommanderByPos = function (slot0, slot1, slot2)
 	if slot2 then
 		slot0.commanderIds[slot1] = slot2.id
-
-		slot0:updateCommanderSkills()
 	else
 		slot0.commanderIds[slot1] = nil
 	end
+
+	slot0:updateCommanderSkills()
 end
 
 slot0.getCommandersAddition = function (slot0)
@@ -163,10 +163,20 @@ slot0.findCommanderBySkillId = function (slot0, slot1)
 end
 
 slot0.updateCommanderSkills = function (slot0)
-	for slot5, slot6 in pairs(slot1) do
-		for slot10, slot11 in ipairs(slot6:getSkills()) do
-			for slot15, slot16 in ipairs(slot11:getTacticSkill()) do
-				table.insert(slot0.skills, FleetSkill.New(FleetSkill.SystemCommanderNeko, slot16))
+	slot1 = #slot0.skills
+
+	while slot1 > 0 do
+		if not slot0:findCommanderBySkillId(slot0.skills[slot1].id) and slot2:GetSystem() == FleetSkill.SystemCommanderNeko then
+			table.remove(slot0.skills, slot1)
+		end
+
+		slot1 = slot1 - 1
+	end
+
+	for slot6, slot7 in pairs(slot2) do
+		for slot11, slot12 in ipairs(slot7:getSkills()) do
+			for slot16, slot17 in ipairs(slot12:getTacticSkill()) do
+				table.insert(slot0.skills, FleetSkill.New(FleetSkill.SystemCommanderNeko, slot17))
 			end
 		end
 	end

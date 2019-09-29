@@ -513,7 +513,7 @@ slot0.removeFurn = function (slot0, slot1)
 
 	if slot1:hasSpineExtra() then
 		for slot5, slot6 in pairs(slot1:getShipExtra()) do
-			slot0.shipsView:CancelInterAction(shipId)
+			slot0.shipsView:CancelInterAction(slot6)
 		end
 	end
 
@@ -546,7 +546,6 @@ slot0.furnitureBeginDrag = function (slot0, slot1)
 	function (slot0)
 		slot0:setPreSelectedParent(slot0.furnitureModals[slot0.id]._tf)
 		slot0.furnitureModals[slot0.id].SetAsLastSibling(slot1)
-		setActive(slot0.furnitureModals[slot0.id].gridsTF, true)
 
 		if not slot0:isMapItem() then
 			return
@@ -600,8 +599,6 @@ slot0.furnitureEndDrag = function (slot0, slot1, slot2)
 
 		slot0.decoratePanelCG.blocksRaycasts = true
 		slot0.decoratePanelCG.isDraging = nil
-
-		setActive(slot2.gridsTF, false)
 	end
 
 	function slot7(slot0)
@@ -700,6 +697,7 @@ slot0.closePreFurnSelected = function (slot0)
 		slot0.preFurnSelected.anchoredPosition3D = Vector3(0, 0, 0)
 
 		SetActive(slot0.preFurnSelected, false)
+		SetActive(slot0.curFurnModal.gridsTF, false)
 
 		slot0.preFurnSelected = nil
 		slot0.curFurnModal = nil

@@ -9695,8 +9695,8 @@ Once the mission is completed, all players who participated will be rewarded wit
 			{
 				info = [[
 <color=#92fc63>- About Reward Sorties and Bonus Tickets:</color>
-1. Your first <color=#92fc63>30 battles</color> on Easy, Normal, or Hard difficulty of each day are treated as <color=#92fc63>Reward Sorties</color>, which will give you better clear rewards than usual.
-2. If you've <color=#92fc63>used up</color> your 30 daily Reward Sorties, you can use <color=#92fc63>Bonus Tickets</color> to gain access to more Reward Sorties.
+1. Your first <color=#92fc63>15 battles</color> on Easy, Normal, or Hard difficulty of each day are treated as <color=#92fc63>Reward Sorties</color>, which will give you better clear rewards than usual.
+2. If you've <color=#92fc63>used up</color> your 15 daily Reward Sorties, you can use <color=#92fc63>Bonus Tickets</color> to gain access to more Reward Sorties.
 3. <color=#92fc63>Bonus Tickets</color> are also used to gain access to EX difficulty.
 4. <color=#92fc63>Bonus Tickets</color> can be acquired through <color=#92fc63>missions</color> available during the event period.
 ]]
@@ -9706,7 +9706,7 @@ Once the mission is completed, all players who participated will be rewarded wit
 <color=#ff5c5c>- Miscellaneous Info:</color>
 1. If you abort an EX difficulty run halfway through, your Bonus Ticket will still be consumed, but you will <color=#ff5c5c>not receive any rewards or CP</color>.
 2. We recommend you play the game on <color=#92fc63>Manual Mode</color> when doing a run on EX difficulty.
-3. A Reward Sortie will <color=#92fc63>not be deducted from your daily 30</color> if you choose to abort a run halfway through on Easy, Normal, or Hard difficulty.
+3. A Reward Sortie will <color=#92fc63>not be deducted from your daily 15</color> if you choose to abort a run halfway through on Easy, Normal, or Hard difficulty.
 4. We urge you to keep an eye on your ships' Morale and Affinity and to not sortie too much. <color=#92fc63>Please be considerate!</color>
 5. The number of clears required for any given server to complete the event will differ based on the combined user data of that server.]]
 			}
@@ -11087,11 +11087,11 @@ depends on the amount of damage dealt to the boss.
 		key = "ship_formationUI_fleetName_extra_ss"
 	},
 	text_consume = {
-		tip = "Cancel ",
+		tip = "YES",
 		key = "text_consume"
 	},
 	text_inconsume = {
-		tip = "Exchange ",
+		tip = "NO",
 		key = "text_inconsume"
 	}
 }
