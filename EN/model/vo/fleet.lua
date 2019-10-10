@@ -735,4 +735,14 @@ slot0.removeShipById = function (slot0, slot1)
 	end
 end
 
+slot0.HaveShipsInEvent = function (slot0)
+	slot1 = getProxy(BayProxy):getRawData()
+
+	for slot5, slot6 in ipairs(slot0.ships) do
+		if slot1[slot6].inEvent then
+			return true, i18n("elite_disable_ship_escort")
+		end
+	end
+end
+
 return slot0

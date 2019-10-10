@@ -394,7 +394,7 @@ slot0.doTeleportSub = function (slot0)
 		column = slot0.op.arg2
 	}
 	slot0.fullpath = {
-		slot3.line,
+		slot3.startPos,
 		slot3.line
 	}
 end

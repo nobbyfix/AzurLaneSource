@@ -937,11 +937,7 @@ slot0.getIndexByType = function (slot0, slot1)
 end
 
 slot0.canPutFurniture = function (slot0, slot1)
-	if slot1:getConfig("type") == 4 or slot2 == 1 then
-		return true
-	end
-
-	return slot0:getCountByIndex(slot3) < pg.dorm_data_template[slot0.level].limit[slot0:getIndexByType(slot1)]
+	return true
 end
 
 slot0.getSameConfigIdFurnitrues = function (slot0, slot1)

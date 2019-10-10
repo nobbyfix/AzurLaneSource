@@ -154,6 +154,12 @@ table.equal = function (slot0, slot1)
 		end
 	end
 
+	for slot5, slot6 in pairs(slot1) do
+		if slot0[slot5] == nil then
+			return false
+		end
+	end
+
 	return true
 end
 

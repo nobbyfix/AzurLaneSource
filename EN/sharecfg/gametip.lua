@@ -1511,8 +1511,22 @@ pg.gametip = {
 		key = "backyard_backyardGranaryLayer_buy_max_count"
 	},
 	backyard_backyardScene_comforChatContent1 = {
-		tip = "<size=22>EXP Gain <color=#5FD500>+$1%</color></size><size=22>\n<Happiness is the sum of Comfort derived from the top most n cozy furnitures and floors <color=#5FD500>$2</color>) (n represents the number each type of furniture can be arranged). Furniture arrangement has no effect on results.>\n</size>",
+		tip = [[
+<size=28>The total comfort is currently affected by the
+number of furniture items in the following slots:
+Wallpaper:<color=#92fc63>$2</color>/Floor:<color=#92fc63>$5</color>/Furniture:<color=#92fc63>$3</color>
+Décor:<color=#92fc63>$4</color>/Carpet:<color=#92fc63>$6</color>/Wall Décor:<color=#92fc63>$7</color></size>]],
 		key = "backyard_backyardScene_comforChatContent1"
+	},
+	backyard_backyardScene_comforChatContent2 = {
+		tip = [[
+<size=37>$1</size><size=28>
+Bonus EXP Gain:<color=#92fc63>+$2%</color></size><size=28>
+The dorm's total happiness is calculated as a sum of 
+the <color=#92fc63>n</color> highest-comfort pieces of furniture in each slot. The number of pieces of furniture included in this count increases depending on how many times the dorm has been expanded. Furniture does not have to be placed to contribute comfort.
+Current expansions: <color=#92fc63>$3</color>
+</size>]],
+		key = "backyard_backyardScene_comforChatContent2"
 	},
 	backyard_buyExtendItem_question = {
 		tip = "This will cost <color=#92fc63>$1</color>. Are you sure you want to continue?",
@@ -8884,7 +8898,7 @@ with Anti-Sub gear.
 		key = "buildship_new_tip"
 	},
 	buildship_heavy_tip = {
-		tip = "Heavy: Heavy Cruisers, Monitors, Battlecruisers, Battleships, and more!",
+		tip = "Rate Up characters: Admiral Graf Spee",
 		key = "buildship_heavy_tip"
 	},
 	buildship_light_tip = {
