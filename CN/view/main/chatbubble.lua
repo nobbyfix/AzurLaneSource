@@ -146,6 +146,8 @@ slot0.dispose = function (slot0)
 
 	if slot0.isLoadChatBg then
 		PoolMgr.GetInstance():ReturnPrefab("ChatFrame/" .. slot0.tf:GetChild(0).gameObject.name, slot0.tf.GetChild(0).gameObject.name, slot0.tf.GetChild(0).gameObject)
+
+		slot0.isLoadChatBg = false
 	end
 
 	slot0.data = nil
