@@ -1338,7 +1338,7 @@ slot0.getConfigMaxLevel = function (slot0)
 end
 
 slot0.updateMaxLevel = function (slot0, slot1)
-	slot0.maxLevel = math.min(slot0:getConfigMaxLevel(), slot1)
+	slot0.maxLevel = math.max(math.min(slot2, slot1), slot0.maxLevel)
 end
 
 slot0.getNextMaxLevel = function (slot0)

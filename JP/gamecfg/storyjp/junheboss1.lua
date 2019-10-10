@@ -440,7 +440,7 @@ return {
 			blackBg = true,
 			actor = 305110,
 			nameColor = "#a9f548",
-			say = "すまぬ、苦労をかけたな",
+			say = "すまぬ、苦労をかけるな",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

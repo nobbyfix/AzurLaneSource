@@ -351,7 +351,7 @@ slot0.setMode = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 102-167, warpins: 2 ---
+		--- BLOCK #1 102-165, warpins: 2 ---
 		onButton(slot0, slot0.stampBtn, function ()
 
 			-- Decompilation error in this vicinity:
@@ -424,79 +424,14 @@ slot0.setMode = function (slot0)
 
 
 		end, SFX_PANEL)
-
-		function slot1()
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-28, warpins: 1 ---
-			return LeanTween.scale(rtf(slot0.comforTableChat), Vector3(0, 0, 0), 0.2):setOnComplete(System.Action(function ()
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-6, warpins: 1 ---
-				if not IsNil(slot0.comforBtn) then
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 7-16, warpins: 1 ---
-					setButtonEnabled(slot0.comforBtn, true)
-					setActive(slot0.comforTableChat, false)
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-
-				--- END OF BLOCK #0 ---
-
-				FLOW; TARGET BLOCK #1
-
-
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #1 17-17, warpins: 2 ---
-				return
-				--- END OF BLOCK #1 ---
-
-
-
-			end)):setOnStart(System.Action(function ()
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-9, warpins: 1 ---
-				setActive(slot0.clickTF, false)
-
-				setActive.isShowConfortableMsg = nil
-
-				return
-				--- END OF BLOCK #0 ---
-
-
-
-			end))
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
 		onButton(slot0, slot0.comforBtn, function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-36, warpins: 1 ---
-			setActive(slot0.clickTF, true)
-			setActive(slot0.comforTableChat, true)
-			setButtonEnabled(slot0.comforBtn, false)
-			LeanTween.scale(rtf(slot0.comforTableChat), Vector3(1, 1, 1), 0.3):setOnComplete(System.Action(function ()
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-7, warpins: 1 ---
-				slot0():setDelay(9)
-
-				return
-				--- END OF BLOCK #0 ---
-
-
-
-			end))
+			--- BLOCK #0 1-15, warpins: 1 ---
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				hideNo = true,
+				content = slot0.dormVO:comforChatContent()
+			})
 
 			return
 			--- END OF BLOCK #0 ---
@@ -508,10 +443,7 @@ slot0.setMode = function (slot0)
 		onButton(slot0, slot0.clickTF, function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-10, warpins: 1 ---
-			LeanTween.cancel(go(slot0.comforTableChat))
-			go()
-
+			--- BLOCK #0 1-1, warpins: 1 ---
 			return
 			--- END OF BLOCK #0 ---
 
@@ -534,7 +466,7 @@ slot0.setMode = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 168-169, warpins: 2 ---
+	--- BLOCK #2 166-167, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -1436,22 +1368,17 @@ slot0.updateDrom = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 4-71, warpins: 2 ---
+	--- BLOCK #1 4-49, warpins: 2 ---
 	slot0.stockBar.fillAmount = slot1.food / (pg.dorm_data_template[slot1.id].capacity + slot1.dorm_food_max)
 
 	setText(slot0.comfortable, slot1:getComfortable())
 	setText(slot0:findTF("stock_bar/Text", slot0.stock), math.ceil(slot1.food) .. "/" .. pg.dorm_data_template[slot1.id].capacity + slot1.dorm_food_max)
-
-	slot3 = slot0.dormVO:getComBGIndex()
-
-	slot0:setSpriteTo(slot0.comfortableBG[slot3], slot0.comforExpress)
-	setText(slot0:findTF("Text", slot0.comforTableChat), slot0.dormVO:comforChatContent(slot3))
-	setText(slot0:findTF("state", slot0.comforTableChat), slot0.dormVO.comforChatState[slot3])
+	slot0:setSpriteTo(slot0.comfortableBG[slot0.dormVO:getComBGIndex()], slot0.comforExpress)
 
 	if slot0.isVisitMode then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 72-76, warpins: 1 ---
+		--- BLOCK #0 50-54, warpins: 1 ---
 		setActive(slot0.leftTimeTF, false)
 		--- END OF BLOCK #0 ---
 
@@ -1460,7 +1387,7 @@ slot0.updateDrom = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 77-79, warpins: 1 ---
+		--- BLOCK #0 55-57, warpins: 1 ---
 		slot0:calFoodLeftTime()
 		--- END OF BLOCK #0 ---
 
@@ -1475,11 +1402,11 @@ slot0.updateDrom = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 80-82, warpins: 2 ---
+	--- BLOCK #2 58-60, warpins: 2 ---
 	if not slot0.isVisitMode then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 83-88, warpins: 1 ---
+		--- BLOCK #0 61-66, warpins: 1 ---
 		slot0:setCurTrainCount()
 		slot0:setCurRestCount()
 		--- END OF BLOCK #0 ---
@@ -1495,7 +1422,7 @@ slot0.updateDrom = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 89-92, warpins: 2 ---
+	--- BLOCK #3 67-70, warpins: 2 ---
 	slot0:updateDromName()
 
 	return

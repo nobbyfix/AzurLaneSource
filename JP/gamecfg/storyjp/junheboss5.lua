@@ -409,7 +409,7 @@ return {
 			bgm = "cw-story",
 			actor = 305110,
 			nameColor = "#a9f548",
-			say = "そう、カンレキの存在しない艦船とてなんの隔たりはない。",
+			say = "そう、カンレキの存在しない艦船とてなんの隔たりもない。",
 			flashout = {
 				dur = 1,
 				black = true,

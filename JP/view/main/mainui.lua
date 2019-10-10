@@ -811,7 +811,14 @@ slot0.updateActivityBossBtn = function (slot0, slot1)
 				SCENE.ACT_BOSS_BATTLE
 			})
 		end, SFX_PANEL)
-		setActive(slot0._acitivtyBossBtn:Find("tip"), not slot1.data2 or slot1.data2 <= 0)
+
+		slot3 = false
+
+		if getProxy(ActivityProxy):getActivityById(ActivityConst.ACTIVITY_BOSS_PT_ID) then
+			slot3 = ActivityBossPtData.New(slot4):CanGetAward()
+		end
+
+		setActive(slot0._acitivtyBossBtn:Find("tip"), slot3)
 	end
 end
 

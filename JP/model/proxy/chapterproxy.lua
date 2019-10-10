@@ -410,12 +410,13 @@ slot0.getChapterById = function (slot0, slot1)
 end
 
 slot0.addChapter = function (slot0, slot1)
-	slot0.data[slot1.id] = slot1:clone()
+	slot2 = slot1:clone()
+	slot0.data[slot2.id] = slot2
 
-	slot0:addChapterListener(slot1)
+	slot0:addChapterListener(slot2)
 	slot0.facade:sendNotification(slot0.CHAPTER_ADDED, {
 		dirty = -1,
-		chapter = slot1:clone()
+		chapter = slot2
 	})
 end
 
