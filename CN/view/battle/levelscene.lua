@@ -325,6 +325,9 @@ slot0.initEvents = function (slot0)
 	slot0:bind(LevelUIConst.DISPLAY_REPAIR_WINDOW, function (slot0, slot1)
 		slot0:displayRepairWindow(slot1)
 	end)
+	slot0:bind(LevelUIConst.DO_PLAY_ANIM, function (slot0, slot1)
+		slot0:doPlayAnim(slot1.name, slot1.callback, slot1.onStart)
+	end)
 end
 
 slot0.updateBattleActivitys = function (slot0, slot1)

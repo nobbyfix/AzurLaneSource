@@ -250,7 +250,7 @@ end
 slot0.openMail = function (slot0, slot1)
 	slot0:setOrMovePanelState("openMail")
 	setText(findTF(slot2, "panel/main/contant/title"), slot1.title)
-	setText(findTF(slot2, "panel/main/contant/title"), slot1.title)
+	setText(findTF(slot2, "panel/main/contant/title"), i18n2(slot1.title))
 	setText(findTF(slot2, "panel/main/contant/date/date_bg/text"), os.date("%Y-%m-%d", slot1.date))
 	setText(findTF(slot2, "from/text"), slot1.sender)
 	slot0:setLetterContent(slot1.content)
@@ -470,7 +470,7 @@ slot0.showMsgBox = function (slot0, slot1)
 		updateDrop(cloneTplTo(slot0.msgItemTF, slot0.msgItemContainerTF), slot7)
 	end
 
-	slot0.msgContentTF.text = slot1.content or ""
+	slot0.msgContentTF.text = i18n2(slot1.content) or ""
 end
 
 slot0.closeMsgBox = function (slot0)
