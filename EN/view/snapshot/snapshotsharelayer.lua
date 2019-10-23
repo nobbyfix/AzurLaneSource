@@ -50,7 +50,7 @@ slot0.willExit = function (slot0)
 end
 
 slot0.showUserAgreement = function (slot0, slot1)
-	setButtonEnabled(slot0.userAgreenConfirmTF, false)
+	setButtonEnabled(slot0.userAgreenConfirmTF, true)
 
 	slot2 = nil
 	slot0.userAgreenTitleTF = slot0:findTF("UserAgreement/window/title")
@@ -68,12 +68,8 @@ slot0.showUserAgreement = function (slot0, slot1)
 			slot1()
 		end
 	end)
-	onScroll(slot0, slot0.userAgreenTF:Find("window/container/scrollrect"), function (slot0)
-		if slot0.y <= 0.01 and not slot0 then
-			slot0 = true
-
-			setButtonEnabled(slot1.userAgreenConfirmTF, true)
-		end
+	onButton(slot0, slot0.self.closeUserAgreenTF, function ()
+		setActive(slot0.userAgreenTF, false)
 	end)
 end
 

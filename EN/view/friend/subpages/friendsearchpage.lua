@@ -91,8 +91,8 @@ slot0.onInitItem = function (slot0, slot1)
 
 	onButton(slot0, slot2.addBtn, function ()
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
-			onNo = true,
 			yesText = "text_apply",
+			hideNo = true,
 			type = MSGBOX_TYPE_INPUT,
 			placeholder = i18n("friend_request_msg_placeholder"),
 			title = i18n("friend_request_msg_title"),

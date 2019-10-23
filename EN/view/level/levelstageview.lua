@@ -122,11 +122,14 @@ slot0.AddListener = function (slot0)
 	onButton(slot0, slot0.retreatBtn, function ()
 		slot1 = slot0.contextData.map
 		slot2 = "levelScene_whether_to_retreat"
+		slot3 = nil
 
 		if slot0.contextData.chapterVO:existOni() then
 			slot2 = "levelScene_oni_retreat"
+			slot3 = true
 		elseif slot0:isPlayingWithBombEnemy() then
 			slot2 = "levelScene_bomb_retreat"
+			slot3 = true
 		elseif slot0:getPlayType() == ChapterConst.TypeTransport and not slot1:isSkirmish() then
 			slot2 = "levelScene_escort_retreat"
 		end
@@ -135,7 +138,8 @@ slot0.AddListener = function (slot0)
 			content = i18n(slot2),
 			onYes = function ()
 				slot0:emit(LevelMediator2.ON_OP, {
-					type = ChapterConst.OpRetreat
+					type = ChapterConst.OpRetreat,
+					win = slot0
 				})
 			end
 		})
@@ -3577,21 +3581,23 @@ slot0.tryAutoAction = function (slot0, slot1)
 				if slot0 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 24-32, warpins: 1 ---
-					slot0:doPlayAnim(slot0, function (slot0)
+					--- BLOCK #0 24-33, warpins: 1 ---
+					slot0:emit(LevelUIConst.DO_PLAY_ANIM, {
+						name = slot0,
+						callback = function (slot0)
 
-						-- Decompilation error in this vicinity:
-						--- BLOCK #0 1-7, warpins: 1 ---
-						setActive(slot0, false)
-						slot0()
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 1-7, warpins: 1 ---
+							setActive(slot0, false)
+							slot0()
 
-						return
-						--- END OF BLOCK #0 ---
+							return
+							--- END OF BLOCK #0 ---
 
 
 
-					end)
-					coroutine.yield()
+						end
+					})
 					--- END OF BLOCK #0 ---
 
 
@@ -3605,11 +3611,11 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #3 33-38, warpins: 2 ---
+				--- BLOCK #3 34-39, warpins: 2 ---
 				if slot4:getSpAppearStory() and #slot1 > 0 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 43-55, warpins: 1 ---
+					--- BLOCK #0 44-56, warpins: 1 ---
 					pg.StoryMgr.GetInstance():Play(slot1, function ()
 
 						-- Decompilation error in this vicinity:
@@ -3661,7 +3667,7 @@ slot0.tryAutoAction = function (slot0, slot1)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 56-65, warpins: 1 ---
+				--- BLOCK #0 57-66, warpins: 1 ---
 				slot0:emit(LevelUIConst.DO_TRACKING, slot3)
 				coroutine.yield()
 				--- END OF BLOCK #0 ---
@@ -3677,11 +3683,11 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 66-70, warpins: 4 ---
+			--- BLOCK #1 67-71, warpins: 4 ---
 			if not slot0.contextData.chapterVO then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 71-72, warpins: 1 ---
+				--- BLOCK #0 72-73, warpins: 1 ---
 				return
 				--- END OF BLOCK #0 ---
 
@@ -3696,13 +3702,13 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 73-84, warpins: 2 ---
+			--- BLOCK #2 74-85, warpins: 2 ---
 			slot0:tryPlayChapterStory()
 
 			if slot4:findChapterCell(ChapterConst.AttachBoss) and slot0.trait == ChapterConst.TraitLurk then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 90-99, warpins: 1 ---
+				--- BLOCK #0 91-100, warpins: 1 ---
 				slot0.grid:focusOnCell(slot0, )
 				coroutine.yield()
 				--- END OF BLOCK #0 ---
@@ -3718,7 +3724,7 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 100-148, warpins: 3 ---
+			--- BLOCK #3 101-149, warpins: 3 ---
 			slot0:updateTrait(ChapterConst.TraitVirgin)
 			slot0.grid:updateAttachments()
 			slot0.grid:updateChampions()
@@ -3731,7 +3737,7 @@ slot0.tryAutoAction = function (slot0, slot1)
 			if slot5 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 149-150, warpins: 1 ---
+				--- BLOCK #0 150-151, warpins: 1 ---
 				slot5()
 				--- END OF BLOCK #0 ---
 
@@ -3746,7 +3752,7 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #4 151-151, warpins: 2 ---
+			--- BLOCK #4 152-152, warpins: 2 ---
 			return
 			--- END OF BLOCK #4 ---
 

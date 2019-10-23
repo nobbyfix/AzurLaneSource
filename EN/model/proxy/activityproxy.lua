@@ -852,6 +852,116 @@ slot0.getBuildBgActivityByID = function (slot0, slot1)
 
 end
 
+slot0.getBuildTipActivityByID = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 10-27, warpins: 0 ---
+	for slot6, slot7 in ipairs(slot2) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 10-14, warpins: 1 ---
+		if not slot7:isEnd() and slot7:getConfig("config_client") and slot8.id == slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 24-25, warpins: 1 ---
+			return slot8.rate_tip
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 26-27, warpins: 5 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 28-29, warpins: 1 ---
+	return nil
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot0.getBuildActivityCfgByID = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-9, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 10-26, warpins: 0 ---
+	for slot6, slot7 in ipairs(slot2) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 10-14, warpins: 1 ---
+		if not slot7:isEnd() and slot7:getConfig("config_client") and slot8.id == slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 24-24, warpins: 1 ---
+			return slot8
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 25-26, warpins: 5 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 27-28, warpins: 1 ---
+	return nil
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
 slot0.getBuffList = function (slot0)
 
 	-- Decompilation error in this vicinity:
