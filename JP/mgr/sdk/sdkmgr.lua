@@ -149,6 +149,10 @@ pg.SdkMgr.LoginWithSocial = function (slot0, slot1, slot2, slot3)
 	slot0:Call("LoginWithSocial", slot1, slot2, slot3)
 end
 
+pg.SdkMgr.LoginWithDevice = function (slot0)
+	slot0:Call("LoginWithDevice")
+end
+
 pg.SdkMgr.AiriBuy = function (slot0, slot1, slot2, slot3)
 	slot0:Call("AiriBuy", slot1, slot2, slot3)
 end
@@ -216,6 +220,14 @@ end
 pg.SdkMgr.CheckAiriCanBuy = function (slot0)
 	if PLATFORM_CODE == PLATFORM_US or PLATFORM_CODE == PLATFORM_JP then
 		return slot0:Get("CheckAiriCanBuy")
+	else
+		return true
+	end
+end
+
+pg.SdkMgr.CheckHadAccountCache = function (slot0)
+	if PLATFORM_CODE == PLATFORM_JP then
+		return slot0:Get("CheckHadAccountCache")
 	else
 		return true
 	end
