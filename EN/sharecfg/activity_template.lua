@@ -8701,8 +8701,8 @@ pg.activity_template = {
 			rate_tip = {
 				"<color=#ffde38>Super Rare</color>：7%",
 				"<color=#d797ff>Elite</color>：12%",
-				"<color=#3dc6ff>Rare</color>：26%",
-				"Common：55%",
+				"<color=#3dc6ff>Rare</color>：51%",
+				"Common：30%",
 				"<color=#d797ff>U-110</color>：1.4%<color=#92FC63>(up!)</color>"
 			}
 		}

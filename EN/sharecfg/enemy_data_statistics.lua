@@ -25500,7 +25500,7 @@ pg.enemy_data_statistics = {
 		hit_growth = 0,
 		armor_type = 2,
 		cld_box = {
-			25,
+			18,
 			7.5,
 			8
 		},
