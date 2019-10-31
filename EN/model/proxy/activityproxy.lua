@@ -21,7 +21,7 @@ slot0.register = function (slot0)
 			if not pg.activity_template[slot5.id] then
 				Debugger.LogError("活动acvitity_template不存在: " .. slot5.id)
 			else
-				if Activity.New(slot5).getConfig(slot6, "type") == ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2 or slot7 == ActivityConst.ACTIVITY_TYPE_CHALLENGE then
+				if Activity.Create(slot5).getConfig(slot6, "type") == ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2 or slot7 == ActivityConst.ACTIVITY_TYPE_CHALLENGE then
 					slot0:updateActivityFleet(slot5)
 				end
 
@@ -57,7 +57,7 @@ slot0.register = function (slot0)
 		end
 	end)
 	slot0:on(11201, function (slot0)
-		if not slot0.data[Activity.New(slot0.activity_info).id] then
+		if not slot0.data[Activity.Create(slot0.activity_info).id] then
 			slot0:addActivity(slot1)
 		else
 			slot0:updateActivity(slot1)
@@ -71,6 +71,8 @@ slot0.register = function (slot0)
 			activity = slot1
 		})
 	end)
+
+	slot0.requestTime = {}
 end
 
 slot0.getActivityByType = function (slot0, slot1)
@@ -1581,6 +1583,204 @@ slot0.InitActivityBossData = function (slot0, slot1)
 	--- BLOCK #4 47-47, warpins: 1 ---
 	return
 	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot0.AddInstagramTimer = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-20, warpins: 1 ---
+	slot0:RemoveInstagramTimer()
+
+	function slot6()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-6, warpins: 1 ---
+		if slot0:GetNextId() then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 7-19, warpins: 1 ---
+			slot1:sendNotification(GAME.ACT_INSTAGRAM_OP, {
+				isActivate = true,
+				arg2 = 0,
+				activity_id = slot2,
+				cmd = ActivityConst.INSTAGRAM_OP_ACTIVE,
+				arg1 = slot0
+			})
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 20-20, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	if slot0.data[slot1].GetNextPustTime(slot2) - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 21-23, warpins: 1 ---
+		slot6()
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 24-34, warpins: 1 ---
+		slot0.instagramTimer = Timer.New(function ()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-7, warpins: 1 ---
+			slot0()
+			slot1:RemoveInstagramTimer()
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end, slot5, 1)
+
+		slot0.instagramTimer:Start()
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 35-36, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
+slot0.RemoveInstagramTimer = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
+	if slot0.instagramTimer then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-9, warpins: 1 ---
+		slot0.instagramTimer:Stop()
+
+		slot0.instagramTimer = nil
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 10-10, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
+slot0.RegisterRequestTime = function (slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	if not slot1 or slot1 <= 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 6-6, warpins: 2 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 7-9, warpins: 2 ---
+	slot0.requestTime[slot1] = slot2
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
+slot0.remove = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0:RemoveInstagramTimer()
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot0.ShouldShowInsTip = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-7, warpins: 1 ---
+	if not slot0:getActivityByType(ActivityConst.ACTIVITY_TYPE_INSTAGRAM) or slot1:isEnd() then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 13-14, warpins: 2 ---
+		return false
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 15-17, warpins: 2 ---
+	return slot1:ShouldShowTip()
+	--- END OF BLOCK #1 ---
 
 
 

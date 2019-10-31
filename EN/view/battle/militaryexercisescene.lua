@@ -947,6 +947,9 @@ end
 slot0.initPlayerFleet = slot1
 
 function slot1(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-98, warpins: 1 ---
 	slot1 = slot0.seasonInfo
 	slot1 = slot1.score
 	slot3 = slot0
@@ -980,88 +983,146 @@ function slot1(slot0)
 	slot5 = slot2
 	slot6 = "upgrade_rank_tip/level"
 	slot4 = slot4(slot5, slot6)
-	slot5 = SeasonInfo
-	slot5 = slot5.getMilitaryRank
-	slot6 = slot1
-	slot7 = slot0.seasonInfo
-	slot7 = slot7.rank
+	slot5 = findTF
+	slot6 = slot2
+	slot7 = "upgrade_score_tip/level"
 	slot5 = slot5(slot6, slot7)
 	slot6 = SeasonInfo
-	slot6 = slot6.getEmblem
+	slot6 = slot6.getMilitaryRank
 	slot7 = slot1
 	slot8 = slot0.seasonInfo
 	slot8 = slot8.rank
 	slot6 = slot6(slot7, slot8)
-	slot7 = LoadImageSpriteAsync
-	slot8 = "emblem/"
-	slot9 = slot6
-	slot8 = slot8 .. slot9
-	slot9 = findTF
-	slot10 = slot2
-	slot11 = "medal_bg/medal"
-	slot9 = slot9(slot10, slot11)
-	slot10 = true
-
-	slot7(slot8, slot9, slot10)
-
-	slot7 = LoadImageSpriteAsync
-	slot8 = "emblem/n_"
-	slot9 = slot6
-	slot8 = slot8 .. slot9
-	slot9 = findTF
-	slot10 = slot2
-	slot11 = "medal_bg/Text"
-	slot9 = slot9(slot10, slot11)
-	slot10 = true
-
-	slot7(slot8, slot9, slot10)
-
-	slot7 = findTF
-	slot8 = slot2
-	slot9 = "exp_slider"
+	slot7 = SeasonInfo
+	slot7 = slot7.getEmblem
+	slot8 = slot1
+	slot9 = slot0.seasonInfo
+	slot9 = slot9.rank
 	slot7 = slot7(slot8, slot9)
-	slot8 = slot7
-	slot7 = slot7.GetComponent
-	slot9 = "Slider"
-	slot7 = slot7(slot8, slot9)
-	slot8 = SeasonInfo
-	slot8 = slot8.getNextMilitaryRank
-	slot9 = slot1
-	slot10 = slot0.seasonInfo
-	slot10 = slot10.rank
-	slot8, slot9 = slot8(slot9, slot10)
-	slot10 = math
-	slot10 = slot10.min
-	slot11 = slot9
-	slot12 = slot1
+	slot8 = LoadImageSpriteAsync
+	slot9 = "emblem/"
+	slot10 = slot7
+	slot9 = slot9 .. slot10
+	slot10 = findTF
+	slot11 = slot2
+	slot12 = "medal_bg/medal"
 	slot10 = slot10(slot11, slot12)
-	slot1 = slot10
-	slot10 = setText
-	slot11 = slot3
-	slot12 = slot8
+	slot11 = true
 
-	slot10(slot11, slot12)
+	slot8(slot9, slot10, slot11)
 
-	slot10 = setText
-	slot11 = slot4
-	slot12 = slot9 - slot1
+	slot8 = LoadImageSpriteAsync
+	slot9 = "emblem/n_"
+	slot10 = slot7
+	slot9 = slot9 .. slot10
+	slot10 = findTF
+	slot11 = slot2
+	slot12 = "medal_bg/Text"
+	slot10 = slot10(slot11, slot12)
+	slot11 = true
 
-	slot10(slot11, slot12)
+	slot8(slot9, slot10, slot11)
 
-	slot10 = slot1 / slot9
-	slot7.value = slot10
+	slot8 = findTF
+	slot9 = slot2
+	slot10 = "exp_slider"
+	slot8 = slot8(slot9, slot10)
+	slot9 = slot8
+	slot8 = slot8.GetComponent
+	slot10 = "Slider"
+	slot8 = slot8(slot9, slot10)
+	slot9 = SeasonInfo
+	slot9 = slot9.getNextMilitaryRank
+	slot10 = slot1
+	slot11 = slot0.seasonInfo
+	slot11 = slot11.rank
+	slot9, slot10, slot11 = slot9(slot10, slot11)
+	slot12 = math
+	slot12 = slot12.min
+	slot13 = slot10
+	slot14 = slot1
+	slot12 = slot12(slot13, slot14)
+	slot1 = slot12
+	slot12 = setText
+	slot13 = slot3
+	slot14 = slot9
+
+	slot12(slot13, slot14)
+
+	slot12 = setText
+	slot13 = slot5
+	slot14 = slot10
+
+	slot12(slot13, slot14)
+
+	slot12 = setText
+	slot13 = slot4
+	slot14 = 0
+	slot14 = (slot11 > slot14 and slot11) or "-"
+
+	slot12(slot13, slot14)
+
+	slot12 = slot1 / slot10
+	slot8.value = slot12
+
+	return
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 99-100, warpins: 1 ---
+	if not slot11 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 101-101, warpins: 2 ---
+		slot14 = "-"
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 102-105, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 slot0.initPlayerInfo = slot1
 
 function slot1(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot0.rivalTFs = slot1
 	slot1 = 1
 	slot2 = 4
 	slot3 = 1
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 7-16, warpins: 0 ---
 	for slot4 = slot1, slot2, slot3 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 7-16, warpins: 2 ---
 		slot5 = table
 		slot5 = slot5.insert
 		slot6 = slot0.rivalTFs
@@ -1071,30 +1132,125 @@ function slot1(slot0)
 		slot9 = slot4 - 1
 
 		slot5(slot6, slot7(slot8, slot9))
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 17-20, warpins: 1 ---
 	slot1 = 1
 	slot2 = 4
 	slot3 = 1
 
-	for slot4 = slot1, slot2, slot3 do
-		setActive(slot0.rivalTFs[slot4], slot4 <= #slot0.rivalVOs)
+	--- END OF BLOCK #2 ---
 
-		slot6 = #slot0.rivalVOs
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 21-41, warpins: 0 ---
+	for slot4 = slot1, slot2, slot3 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 21-28, warpins: 2 ---
+		slot5 = slot0.rivalTFs
+		slot5 = slot5[slot4]
+		slot6 = setActive
+		slot7 = slot5
+		slot8 = slot0.rivalVOs
+		slot8 = #slot8
+
+		if slot4 > slot8 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 29-30, warpins: 1 ---
+			slot8 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 31-31, warpins: 1 ---
+			slot8 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 32-36, warpins: 2 ---
+		slot6(slot7, slot8)
+
+		slot6 = slot0.rivalVOs
+		slot6 = #slot6
 
 		if slot4 <= slot6 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 37-40, warpins: 1 ---
 			slot7 = slot0
 			slot6 = slot0.updateRival
 			slot8 = slot4
 
 			slot6(slot7, slot8)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 41-41, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+
+
 	end
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 42-42, warpins: 1 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
 end
 
 slot0.updateRivals = slot1
 
 function slot1(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-113, warpins: 1 ---
 	slot2 = slot0.rivalTFs
 	slot2 = slot2[slot1]
 	slot3 = slot0.rivalVOs
@@ -1223,6 +1379,9 @@ function slot1(slot0, slot1)
 	slot9 = slot2
 
 	function slot10()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-8, warpins: 1 ---
 		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.emit
@@ -1231,16 +1390,31 @@ function slot1(slot0, slot1)
 		slot3 = slot1
 
 		slot0(slot1, slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot11 = SFX_PANEL
 
 	slot7(slot8, slot9, slot10, slot11)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
 end
 
 slot0.updateRival = slot1
 
 function slot1(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-89, warpins: 1 ---
 	slot1 = setActive
 	slot2 = slot0.awardPanel
 	slot3 = true
@@ -1256,11 +1430,20 @@ function slot1(slot0)
 	slot3 = slot3(slot4, slot5, slot6)
 
 	function slot4()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = slot0
 		slot1 = slot0
 		slot0 = slot0.closeAwards
 
 		slot0(slot1)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
 	slot5 = SFX_CANCEL
@@ -1339,6 +1522,9 @@ function slot1(slot0)
 	slot8(slot9, slot10(slot11))
 
 	function slot8(slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-22, warpins: 1 ---
 		slot2 = slot0
 		slot3 = slot2
 		slot2 = slot2.findTF
@@ -1363,7 +1549,18 @@ function slot1(slot0)
 		slot5 = slot3.award_list
 		slot4, slot5, slot6 = slot4(slot5)
 
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 23-48, warpins: 0 ---
 		for slot7, slot8 in slot4, slot5, slot6 do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 23-46, warpins: 1 ---
 			slot9 = cloneTplTo
 			slot10 = slot1
 			slot11 = slot2
@@ -1388,6 +1585,9 @@ function slot1(slot0)
 			slot12 = slot12(slot13, slot14)
 
 			function slot13()
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-9, warpins: 1 ---
 				slot0 = slot0
 				slot1 = slot0
 				slot0 = slot0.emit
@@ -1397,24 +1597,127 @@ function slot1(slot0)
 				slot3 = slot3[1]
 
 				if slot3 == 1 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 10-15, warpins: 1 ---
 					slot3 = id2ItemId
 					slot4 = slot1
 					slot4 = slot4[2]
 					slot3 = slot3(slot4)
 
 					if not slot3 then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 16-17, warpins: 2 ---
 						slot3 = slot1
 						slot3 = slot3[2]
+						--- END OF BLOCK #0 ---
+
+
+
 					end
+					--- END OF BLOCK #0 ---
+
+
+
 				end
 
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 18-19, warpins: 2 ---
 				slot0(slot1, slot2, slot3)
+
+				return
+				--- END OF BLOCK #1 ---
+
+
+
 			end
 
 			slot14 = SFX_PANEL
 
 			slot10(slot11, slot12, slot13, slot14)
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 47-48, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+
+
 		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 49-64, warpins: 1 ---
+		slot4 = setText
+		slot5 = findTF
+		slot6 = slot0
+		slot7 = "upgrade_score_tip/level"
+		slot5 = slot5(slot6, slot7)
+		slot6 = slot3.point
+
+		slot4(slot5, slot6)
+
+		slot4 = setText
+		slot5 = findTF
+		slot6 = slot0
+		slot7 = "upgrade_rank_tip/level"
+		slot5 = slot5(slot6, slot7)
+		slot6 = slot3.order
+		slot7 = 0
+
+		if slot6 > slot7 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 65-67, warpins: 1 ---
+			slot6 = slot3.order
+
+			if not slot6 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 68-68, warpins: 2 ---
+				slot6 = "-"
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 69-70, warpins: 2 ---
+		slot4(slot5, slot6)
+
+		return
+		--- END OF BLOCK #3 ---
+
+
+
 	end
 
 	slot9 = slot0.rankCfg
@@ -1423,7 +1726,18 @@ function slot1(slot0)
 	slot10 = 1
 	slot11 = -1
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 90-111, warpins: 0 ---
 	for slot12 = slot9, slot10, slot11 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 90-99, warpins: 2 ---
 		slot13 = slot0.rankCfg
 		slot13 = slot13.all
 		slot13 = slot13[slot12]
@@ -1434,6 +1748,9 @@ function slot1(slot0)
 		slot15 = 0
 
 		if slot14 > slot15 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 100-110, warpins: 1 ---
 			slot14 = slot8
 			slot15 = cloneTplTo
 			slot16 = slot4
@@ -1448,16 +1765,52 @@ function slot1(slot0)
 			slot16 = slot3
 
 			slot14(slot15, slot16)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 111-111, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
 	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 112-113, warpins: 1 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
 end
 
 slot0.initAwards = slot1
 
 function slot1(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isOpenAwards
 
 	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-18, warpins: 1 ---
 		slot1 = setActive
 		slot2 = slot0.awardPanel
 		slot3 = false
@@ -1476,20 +1829,51 @@ function slot1(slot0)
 		slot4 = slot0._tf
 
 		slot1(slot2, slot3, slot4)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 19-19, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 slot0.closeAwards = slot1
 
 function slot1(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isOpenAwards
 
 	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-7, warpins: 1 ---
 		slot2 = slot0
 		slot1 = slot0.closeAwards
 
 		slot1(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
 	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 8-15, warpins: 1 ---
 		slot1 = playSoundEffect
 		slot2 = SFX_CANCEL
 
@@ -1501,24 +1885,63 @@ function slot1(slot0)
 		slot3 = slot3.ON_BACK
 
 		slot1(slot2, slot3)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 16-16, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
 end
 
 slot0.onBackPressed = slot1
 
 function slot1(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.tweens
 
 	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-6, warpins: 1 ---
 		slot1 = cancelTweens
 		slot2 = slot0.tweens
 
 		slot1(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 7-9, warpins: 2 ---
 	slot1 = slot0.leftTimeTimer
 
 	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 10-15, warpins: 1 ---
 		slot1 = slot0.leftTimeTimer
 		slot2 = slot1
 		slot1 = slot1.Stop
@@ -1527,11 +1950,26 @@ function slot1(slot0)
 
 		slot1 = nil
 		slot0.leftTimeTimer = slot1
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 16-18, warpins: 2 ---
 	slot1 = slot0.recoverTimer
 
 	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 19-24, warpins: 1 ---
 		slot1 = slot0.recoverTimer
 		slot2 = slot1
 		slot1 = slot1.Stop
@@ -1540,8 +1978,20 @@ function slot1(slot0)
 
 		slot1 = nil
 		slot0.recoverTimer = slot1
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 25-30, warpins: 2 ---
 	slot2 = slot0
 	slot1 = slot0.closeAwards
 
@@ -1550,6 +2000,9 @@ function slot1(slot0)
 	slot1 = slot0.resPanel
 
 	if slot1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 31-36, warpins: 1 ---
 		slot1 = slot0.resPanel
 		slot2 = slot1
 		slot1 = slot1.exit
@@ -1558,7 +2011,25 @@ function slot1(slot0)
 
 		slot1 = nil
 		slot0.resPanel = slot1
+		--- END OF BLOCK #0 ---
+
+
+
 	end
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 37-37, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
 end
 
 slot0.willExit = slot1

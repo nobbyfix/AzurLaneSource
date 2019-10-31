@@ -5487,6 +5487,156 @@ function skinTimeStamp(slot0)
 
 end
 
+function InstagramTimeStamp(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-12, warpins: 1 ---
+	if (pg.TimeMgr.GetInstance():GetServerTime() - slot0) / 86400 > 1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 13-20, warpins: 1 ---
+		return i18n("ins_word_day", math.floor(slot3))
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 21-24, warpins: 1 ---
+		if slot2 / 3600 > 1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 25-32, warpins: 1 ---
+			return i18n("ins_word_hour", math.floor(slot4))
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 33-36, warpins: 1 ---
+			if slot2 / 60 > 1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 37-44, warpins: 1 ---
+				return i18n("ins_word_minu", math.floor(slot5))
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 45-48, warpins: 1 ---
+				return i18n("ins_word_minu", 1)
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 49-49, warpins: 4 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
+function InstagramReplyTimeStamp(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-12, warpins: 1 ---
+	if (pg.TimeMgr.GetInstance():GetServerTime() - slot0) / 86400 > 1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 13-21, warpins: 1 ---
+		return i18n1(math.floor(slot3) .. "d")
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 22-25, warpins: 1 ---
+		if slot2 / 3600 > 1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 26-34, warpins: 1 ---
+			return i18n1(math.floor(slot4) .. "h")
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 35-38, warpins: 1 ---
+			if slot2 / 60 > 1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 39-47, warpins: 1 ---
+				return i18n1(math.floor(slot5) .. "min")
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 48-50, warpins: 1 ---
+				return i18n1("1min")
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 51-51, warpins: 4 ---
+	return
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
 function attireTimeStamp(slot0)
 
 	-- Decompilation error in this vicinity:
