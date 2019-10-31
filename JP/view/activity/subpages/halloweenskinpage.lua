@@ -3,12 +3,30 @@ slot0 = class("HalloweenSkinPage", import("...base.BaseActivityPage"))
 slot0.OnInit = function (slot0)
 	slot0.bg = slot0:findTF("AD")
 	slot0.stage = slot0:findTF("AD/Text"):GetComponent(typeof(Text))
+	slot0.goBtn = slot0:findTF("AD/go_btn")
+	slot0.gotBtn = slot0:findTF("AD/got_btn")
 end
 
 slot0.OnFirstFlush = function (slot0)
 	LoadImageSpriteAsync(slot0:GetBgImg(), slot0.bg)
 
 	slot0.tasks = _.flatten(slot0.activity:getConfig("config_data"))
+
+	onButton(slot0, slot0.goBtn, function ()
+		if slot0:LastTaskBeFinished() then
+			return
+		end
+
+		slot0:emit(ActivityMediator.EVENT_GO_SCENE, SCENE.NAVALACADEMYSCENE)
+	end, SFX_PANEL)
+end
+
+slot0.LastTaskBeFinished = function (slot0)
+	if getProxy(TaskProxy):getTaskVO(slot0.tasks[#slot0.tasks]) and slot3:isReceive() then
+		return true
+	end
+
+	return false
 end
 
 slot0.OnUpdateFlush = function (slot0)
@@ -25,6 +43,8 @@ slot0.OnUpdateFlush = function (slot0)
 	end
 
 	slot0.stage.text = slot2 .. "/" .. #slot0.tasks
+
+	setActive(slot0.gotBtn, slot0:LastTaskBeFinished())
 end
 
 slot0.OnDestroy = function (slot0)

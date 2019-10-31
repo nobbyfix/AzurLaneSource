@@ -131,6 +131,8 @@ slot0.init = function (slot0)
 	slot0._activityMiniGameBtn = slot0:findTF("activity_minigame", slot0._ActivityBtns)
 	slot0._acitivtyEscortBtn = slot0:findTF("activity_escort", slot0._ActivityBtns)
 	slot0._acitivtyBossBtn = slot0:findTF("activity_boss", slot0._ActivityBtns)
+	slot0._activityMusicFestivalBtn = slot0:findTF("activity_musicfestival", slot0._ActivityBtns)
+	slot0._activityInsBtn = slot0:findTF("activity_ins", slot0._ActivityBtns)
 	slot0._bottomPanel = slot0:findTF("toTop/frame/bottomPanel")
 	slot0._dockBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/dockBtn")
 	slot0._equipBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/equipButton")
@@ -696,6 +698,37 @@ slot0.updateActivityMiniGameBtn = function (slot0, slot1)
 				pg.m02:sendNotification(GAME.GO_SCENE, SCENE.SUMMER_FEAST)
 			end
 		end, SFX_PANEL)
+	end
+end
+
+slot0.updateActivityMusicFestivalBtn = function (slot0, slot1)
+	setActive(slot0._activityMusicFestivalBtn, slot1 and not slot1:isEnd())
+
+	if slot1 and not slot1.isEnd() then
+		slot5 = getProxy(ActivityProxy)
+
+		onButton(slot0, slot0._activityMusicFestivalBtn, function ()
+			pg.m02:sendNotification(GAME.GO_SCENE, SCENE.MUSIC_FESTIVAL)
+		end, SFX_PANEL)
+		setActive(slot0._activityMusicFestivalBtn:Find("tip"), IdolPTPage.NeedTip() or IdolMedalCollectionView.isHaveActivableMedal() or 
+		-- Decompilation error in this vicinity:
+		function ()
+			return slot0:getActivityById(ActivityConst.IDOL_INS_ID) and not slot0:isEnd() and slot0:ShouldShowTip()
+		end() or 
+		-- Decompilation error in this vicinity:
+		function ()
+			if slot0:getActivityById(ActivityConst.MUSIC_FESTIVAL_ID) and not slot0:isEnd() then
+				return slot0:readyToAchieve()
+			end
+		end() or 
+		-- Decompilation error in this vicinity:
+		function ()
+			return slot0:getActivityById(ActivityConst.MUSIC_CHUIXUE7DAY_ID) and not slot0:isEnd() and slot0:readyToAchieve()
+		end() or 
+		-- Decompilation error in this vicinity:
+		function ()
+			return getProxy(MiniGameProxy).GetHubByHubId(slot0, 2).count > 0
+		end())
 	end
 end
 
@@ -2936,40 +2969,33 @@ slot0.updateFlagShip = function (slot0, slot1)
 	if slot0.flagShip then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 135-150, warpins: 1 ---
+		--- BLOCK #0 135-155, warpins: 1 ---
 		slot6 = getProxy(SettingsProxy):IsBGEnable()
+		slot8 = slot0._bg:Find("bg")
 
 		if slot0.flagShip:getShipBgPrint() ~= slot0.flagShip:rarity2bgPrintForGet() and slot6 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 153-159, warpins: 1 ---
-			GetSpriteFromAtlasAsync("bg/star_level_bg_" .. slot7, "", function (slot0)
+			--- BLOCK #0 158-170, warpins: 1 ---
+			pg.DynamicBgMgr.GetInstance():LoadBg(slot0, slot7, slot0._bg, slot8, function (slot0)
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-4, warpins: 1 ---
-				if not slot0.exited then
+				--- BLOCK #0 1-10, warpins: 1 ---
+				rtf(slot0).localPosition = Vector3(0, 0, 200)
 
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 5-23, warpins: 1 ---
-					slot0.defaultBgSprite = getImageSprite(slot0._bg:Find("bg"))
-
-					setImageSprite(slot0._bg:Find("bg"), slot0)
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-
+				return
 				--- END OF BLOCK #0 ---
 
-				FLOW; TARGET BLOCK #1
 
 
+			end, function (slot0)
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 24-24, warpins: 2 ---
+				--- BLOCK #0 1-6, warpins: 1 ---
+				slot0.defaultBgSprite = getImageSprite(slot0)
+
 				return
-				--- END OF BLOCK #1 ---
+				--- END OF BLOCK #0 ---
 
 
 
@@ -2980,6 +3006,14 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 		end
 		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 171-171, warpins: 3 ---
+		--- END OF BLOCK #1 ---
 
 
 
@@ -2992,7 +3026,7 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 160-161, warpins: 4 ---
+	--- BLOCK #6 172-173, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -3468,6 +3502,50 @@ slot0.notifyActivitySummary = function (slot0, slot1, slot2)
 
 	return
 	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot0.UpdateInsActBtn = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 7-12, warpins: 2 ---
+	setActive(slot0._activityInsBtn, slot1 and not slot1:isEnd())
+
+	if slot1 and not slot1.isEnd() then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 13-28, warpins: 1 ---
+		setActive(slot0._activityInsBtn:Find("tip"), slot1:ShouldShowTip())
+		onButton(slot0, slot0._activityInsBtn, function ()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-7, warpins: 1 ---
+			slot0:emit(MainUIMediator.OPEN_INS)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end, SFX_PANEL)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 29-30, warpins: 2 ---
+	return
+	--- END OF BLOCK #1 ---
 
 
 
@@ -4779,11 +4857,13 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #13 183-185, warpins: 2 ---
+	--- BLOCK #13 183-193, warpins: 2 ---
+	setActive(slot0._bg:Find("bg"), true)
+
 	if slot0.defaultBgSprite then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 186-195, warpins: 1 ---
+		--- BLOCK #0 194-203, warpins: 1 ---
 		setImageSprite(slot0._bg:Find("bg"), slot0.defaultBgSprite)
 
 		slot0.defaultBgSprite = nil
@@ -4800,11 +4880,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #14 196-198, warpins: 2 ---
+	--- BLOCK #14 204-206, warpins: 2 ---
 	if slot0._buffTextTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 199-204, warpins: 1 ---
+		--- BLOCK #0 207-212, warpins: 1 ---
 		slot0._buffTextTimer:Stop()
 
 		slot0._buffTextTimer = nil
@@ -4821,11 +4901,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #15 205-207, warpins: 2 ---
+	--- BLOCK #15 213-215, warpins: 2 ---
 	if slot0._buffTimeCountDownTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 208-213, warpins: 1 ---
+		--- BLOCK #0 216-221, warpins: 1 ---
 		slot0._buffTimeCountDownTimer:Stop()
 
 		slot0._buffTimeCountDownTimer = nil
@@ -4842,11 +4922,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #16 214-216, warpins: 2 ---
+	--- BLOCK #16 222-224, warpins: 2 ---
 	if slot0.isOpenSecondary then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 217-220, warpins: 1 ---
+		--- BLOCK #0 225-228, warpins: 1 ---
 		slot0:closeSecondaryPanel(false)
 		--- END OF BLOCK #0 ---
 
@@ -4861,11 +4941,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #17 221-223, warpins: 2 ---
+	--- BLOCK #17 229-231, warpins: 2 ---
 	if slot0._secondaryPanel then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 224-235, warpins: 1 ---
+		--- BLOCK #0 232-243, warpins: 1 ---
 		PoolMgr.GetInstance():ReturnUI("MainUISecondaryPanel", go(slot0._secondaryPanel))
 
 		slot0._secondaryPanel = nil
@@ -4882,7 +4962,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #18 236-239, warpins: 2 ---
+	--- BLOCK #18 244-247, warpins: 2 ---
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
@@ -4890,11 +4970,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #19 240-244, warpins: 0 ---
+	--- BLOCK #19 248-252, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.skinTimers) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 240-242, warpins: 1 ---
+		--- BLOCK #0 248-250, warpins: 1 ---
 		slot5:Stop()
 		--- END OF BLOCK #0 ---
 
@@ -4903,7 +4983,7 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 243-244, warpins: 2 ---
+		--- BLOCK #1 251-252, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -4917,7 +4997,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #20 245-250, warpins: 1 ---
+	--- BLOCK #20 253-258, warpins: 1 ---
 	slot0.skinTimers = nil
 
 	slot0:recycleSpineChar()

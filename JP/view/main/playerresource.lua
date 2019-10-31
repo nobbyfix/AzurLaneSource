@@ -11,14 +11,14 @@ slot0.Ctor = function (slot0)
 end
 
 slot0.init = function (slot0)
-	slot0.goldMax = slot0:findTF("gold_max_value")
-	slot0.goldValue = slot0:findTF("gold_value")
-	slot0.goldAddBtn = slot0:findTF("gold")
-	slot0.oilMax = slot0:findTF("oil_max_value")
-	slot0.oilValue = slot0:findTF("oil_value")
 	slot0.oilAddBtn = slot0:findTF("oil")
-	slot0.gemValue = slot0:findTF("gem_value")
+	slot0.goldAddBtn = slot0:findTF("gold")
 	slot0.gemAddBtn = slot0:findTF("gem")
+	slot0.goldMax = slot0:findTF("gold/gold_max_value")
+	slot0.goldValue = slot0:findTF("gold/gold_value")
+	slot0.oilMax = slot0:findTF("oil/oil_max_value")
+	slot0.oilValue = slot0:findTF("oil/oil_value")
+	slot0.gemValue = slot0:findTF("gem/gem_value")
 	slot1 = pg.shop_template
 
 	onButton(slot0, slot0.goldAddBtn, function ()
@@ -102,14 +102,21 @@ slot0.setParent = function (slot0, slot1, slot2)
 	setParent(slot0._go, slot1, slot2)
 end
 
-slot0.setResources = function (slot0, slot1)
+slot0.setResources = function (slot0, slot1, slot2)
 	slot0.player = slot1
 
-	setText(slot0.goldMax, "MAX: " .. slot3)
+	setText(slot0.goldMax, "MAX: " .. slot4)
 	setText(slot0.goldValue, slot1.gold)
-	setText(slot0.oilMax, "MAX: " .. slot4)
+	setText(slot0.oilMax, "MAX: " .. slot5)
 	setText(slot0.oilValue, slot1.oil)
 	setText(slot0.gemValue, slot1:getTotalGem())
+	setActive(slot0.oilAddBtn, slot2 or {
+		true,
+		true,
+		true
+	}[1])
+	setActive(slot0.goldAddBtn, slot2 or [2])
+	setActive(slot0.gemAddBtn, slot2 or [3])
 end
 
 slot0.willExit = function (slot0)

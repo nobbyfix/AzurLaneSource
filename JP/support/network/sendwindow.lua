@@ -85,7 +85,7 @@ if Application.isEditor then
 	end
 end
 
-slot1.Queue = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot1.Queue = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	table.insert(slot0.toSends, {
 		slot1,
 		slot2,
@@ -104,7 +104,8 @@ slot1.Queue = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 			end
 		end,
 		slot5,
-		slot6
+		slot6,
+		slot7
 	})
 
 	if slot0.isSending then
@@ -122,7 +123,7 @@ slot1.StartSend = function (slot0)
 	end
 end
 
-slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	slot0.isSending = true
 	slot0.currentCS = slot1
 
@@ -144,15 +145,16 @@ slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	slot5 = defaultValue(slot5, true)
 	slot6 = defaultValue(slot6, true)
-	slot8 = slot0:getPacketIdx()
+	slot7 = defaultValue(slot7, SEND_TIMEOUT)
+	slot9 = slot0:getPacketIdx()
 
 	if slot3 ~= nil then
 		slot0.UIMgr.GetInstance():LoadingOn()
 
-		slot9 = nil
 		slot10 = nil
+		slot11 = nil
 
-		slot1[(slot5 and slot3 .. "_" .. slot8) or slot3] = function (slot0)
+		slot1[(slot5 and slot3 .. "_" .. slot9) or slot3] = function (slot0)
 			slot0.isSending = false
 
 			slot0.UIMgr.GetInstance():LoadingOff()
@@ -187,11 +189,11 @@ slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 			slot3.retryCount = slot3.retryCount + 1
 
 			slot3:StartSend()
-		end, SEND_TIMEOUT, 1):Start()
+		end, slot7, 1):Start()
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 76-76, warpins: 1 ---
+		--- BLOCK #0 81-81, warpins: 1 ---
 		slot5 = false
 		--- END OF BLOCK #0 ---
 
@@ -314,14 +316,14 @@ slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 
 
-	end(slot0.Packer.GetInstance():GetProtocolWithName("cs_" .. slot1).GetMessage(slot9), slot2)
+	end(slot0.Packer.GetInstance():GetProtocolWithName("cs_" .. slot1).GetMessage(slot10), slot2)
 
 	if slot5 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 97-122, warpins: 1 ---
-		slot7:Send(slot0.Packer.GetInstance():Pack(slot8, slot9:GetId(), slot11))
-		print("Network sent protocol: " .. slot1 .. " with idx: " .. slot8)
+		--- BLOCK #0 102-127, warpins: 1 ---
+		slot8:Send(slot0.Packer.GetInstance():Pack(slot9, slot10:GetId(), slot12))
+		print("Network sent protocol: " .. slot1 .. " with idx: " .. slot9)
 		slot0:incPacketIdx()
 		--- END OF BLOCK #0 ---
 
@@ -330,8 +332,8 @@ slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 123-143, warpins: 1 ---
-		slot7:Send(slot0.Packer.GetInstance():Pack(0, slot9:GetId(), slot11))
+		--- BLOCK #0 128-148, warpins: 1 ---
+		slot8:Send(slot0.Packer.GetInstance():Pack(0, slot10:GetId(), slot12))
 		print("Network sent protocol: " .. slot1 .. " without idx")
 		--- END OF BLOCK #0 ---
 
@@ -342,13 +344,13 @@ slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	if not slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 146-154, warpins: 1 ---
+		--- BLOCK #0 151-159, warpins: 1 ---
 		table.remove(slot0.toSends, 1)
 
 		if Application.isEditor then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 155-165, warpins: 1 ---
+			--- BLOCK #0 160-170, warpins: 1 ---
 			DebugMgr.Inst:PushProtoSent(slot1, slot2:serialize() or "", 0)
 			--- END OF BLOCK #0 ---
 
@@ -357,7 +359,7 @@ slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 167-168, warpins: 2 ---
+			--- BLOCK #1 172-173, warpins: 2 ---
 			--- END OF BLOCK #1 ---
 
 
@@ -371,11 +373,11 @@ slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 169-173, warpins: 2 ---
+		--- BLOCK #1 174-178, warpins: 2 ---
 		if #slot0.toSends > 0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 174-177, warpins: 1 ---
+			--- BLOCK #0 179-182, warpins: 1 ---
 			slot0:StartSend()
 			--- END OF BLOCK #0 ---
 
@@ -384,7 +386,7 @@ slot1.Send = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 178-179, warpins: 1 ---
+			--- BLOCK #0 183-184, warpins: 1 ---
 			slot0.isSending = false
 			--- END OF BLOCK #0 ---
 
