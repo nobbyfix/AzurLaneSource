@@ -57,7 +57,7 @@ end
 
 slot0.GetVoiceAnim = function (slot0)
 	if slot0:isSpine() and slot0:existVoice() then
-		return "normal", slot0:getConfig("can_trigger")[3]
+		return "normal", slot0:getConfig("can_trigger")[3], slot0.getConfig("can_trigger")[4]
 	end
 end
 
@@ -802,7 +802,7 @@ slot0.getTouchSpineConfig = function (slot0)
 			slot4 = slot3[math.random(1, #slot3)]
 		end
 
-		return slot4, slot2[2]
+		return slot4, slot2[2], slot2[4]
 	end
 end
 

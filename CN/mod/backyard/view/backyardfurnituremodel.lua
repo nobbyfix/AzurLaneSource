@@ -38,11 +38,47 @@ slot0.Ctor = function (slot0, slot1, slot2, slot3)
 	setActive(slot0._go, true)
 
 	slot0.item = nil
+	slot0.effects = {}
 end
 
 slot0.PlayAnim = function (slot0, slot1)
 	if slot0.furnitureVO:isSpine() then
 		slot0.spineAnimUI:SetAction(slot1, 0)
+	end
+end
+
+slot0.PlayEffect = function (slot0, slot1)
+	if slot1 == slot0.loading then
+		return
+	end
+
+	if slot0.effects[slot1] then
+		setActive(slot2, true)
+	else
+		slot0.loading = slot1
+
+		PoolMgr.GetInstance():GetUI(slot1, true, function (slot0)
+			if IsNil(slot0._tf) or not slot0.loading then
+				return
+			end
+
+			slot0.effects[] = slot0
+
+			SetParent(slot0, slot0.iconTF)
+			setActive(slot0, true)
+
+			slot0.loading = nil
+		end)
+	end
+end
+
+slot0.StopEffect = function (slot0, slot1)
+	if slot0.loading == slot1 then
+		slot0.loading = nil
+	end
+
+	if slot0.effects[slot1] then
+		setActive(slot2, false)
 	end
 end
 
@@ -172,7 +208,7 @@ end
 
 slot0.TouchSpineAnim = function (slot0, slot1, slot2)
 	slot4 = slot0.spineAnimUI
-	slot5, slot6 = slot0.furnitureVO.getTouchSpineConfig(slot3)
+	slot5, slot6, slot7 = slot0.furnitureVO.getTouchSpineConfig(slot3)
 
 	if not slot6 and slot0.touchSwitch then
 		return
@@ -213,6 +249,44 @@ slot0.TouchSpineAnim = function (slot0, slot1, slot2)
 			slot2()
 		end
 	end
+
+	if slot7 then
+		slot0:playFurnitureVoice(slot7)
+	end
+end
+
+slot0.playFurnitureVoice = function (slot0, slot1)
+	function slot2()
+		slot0:stopCV()
+
+		slot0.stopCV.currVoice = playSoundEffect(playSoundEffect)
+	end
+
+	if slot0.loadedBank then
+		slot2()
+	else
+		pg.CriMgr.GetInstance():LoadCV("furniture", function ()
+			slot0 = pg.CriMgr.GetCVBankName(pg.CriMgr.GetCVBankName)
+
+			if pg.CriMgr.GetCVBankName.exited then
+				pg.CriMgr.UnloadCVBank(slot0)
+			else
+				slot2()
+
+				if slot2.currVoice then
+					slot1.loadedBank = slot0
+				end
+			end
+		end)
+	end
+end
+
+slot0.stopCV = function (slot0)
+	if slot0.currVoice then
+		slot0.currVoice:Stop(true)
+	end
+
+	slot0.currVoice = nil
 end
 
 slot0.MoveToTarget = function (slot0, slot1, slot2)
@@ -262,6 +336,12 @@ slot0.RemoveItem = function (slot0, slot1)
 end
 
 slot0.Clear = function (slot0)
+	for slot4, slot5 in pairs(slot0.effects) do
+		PoolMgr.GetInstance():ReturnUI(slot4, slot5)
+	end
+
+	slot0:stopCV()
+
 	if LeanTween.isTweening(go(slot0._tf)) then
 		LeanTween.cancel(go(slot0._tf))
 	end

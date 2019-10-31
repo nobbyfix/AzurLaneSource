@@ -55,6 +55,7 @@ function OnApplicationPause(slot0)
 	end
 
 	pg.SdkMgr.GetInstance():OnAppPauseForSDK(slot0)
+	pg.m02:sendNotification(GAME.ON_APPLICATION_PAUSE, slot0)
 end
 
 function OnApplicationExit()
