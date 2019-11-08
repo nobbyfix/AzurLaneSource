@@ -129,7 +129,7 @@ return {
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
-			say = "嗯…那去给其他报名的孩子做知道如何呢？Polaris那边有指挥官，其他孩子也肯定需要指导的吧",
+			say = "嗯…那去给其他报名的孩子做指导如何呢？Polaris那边有指挥官，其他孩子也肯定需要指导的吧",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

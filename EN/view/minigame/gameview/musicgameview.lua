@@ -103,38 +103,41 @@ slot0.init = function (slot0)
 	slot0.selectview = slot0:findTF("Selectview")
 	slot0.scoreview = slot0:findTF("ScoreView")
 	slot0.scoreview_flag = false
-	slot0.Getdata_timer = Timer.New((PlayerPrefs.GetInt("musicgame_idol_speed") > 0 and PlayerPrefs.GetInt("musicgame_idol_speed")) or 1, slot0.time_interval, -1)
-
-	slot0.Getdata_timer:Start()
 end
 
 slot0.didEnter = function (slot0)
+	slot0:MyGetRuntimeData()
+
+	slot0.Getdata_timer = Timer.New(slot1, slot0.time_interval, -1)
+
+	slot0.Getdata_timer:Start()
+
 	slot0.score_number = 0
 	slot0.combo_link = 0
 	slot0.combo_number = 0
 	slot0.perfect_number = 0
 	slot0.good_number = 0
 	slot0.miss_number = 0
-	slot1 = slot0:GetMGData():getConfig("simple_config_data")
-	slot0.piecelist_speed = slot1.speed
-	slot0.piecelist_speedmin = slot1.speed_min
-	slot0.piecelist_speedmax = slot1.speed_max
-	slot0.score_blist = slot1.Blist
-	slot0.score_alist = slot1.Alist
-	slot0.score_slist = slot1.Slist
-	slot0.score_sslist = slot1.SSlist
-	slot0.specialcombo_number = slot1.special_combo
-	slot0.specialscore_number = slot1.special_score
-	slot0.score_perfect = slot1.perfect
-	slot0.score_good = slot1.good
-	slot0.score_miss = slot1.miss
-	slot0.score_combo = slot1.combo
-	slot0.time_perfect = slot1.perfecttime
-	slot0.time_good = slot1.goodtime
-	slot0.time_miss = slot1.misstime
-	slot0.time_laterperfect = slot1.laterperfecttime
-	slot0.time_latergood = slot1.latergoodtime
-	slot0.combo_interval = slot1.combo_interval
+	slot2 = slot0:GetMGData():getConfig("simple_config_data")
+	slot0.piecelist_speed = slot2.speed
+	slot0.piecelist_speedmin = slot2.speed_min
+	slot0.piecelist_speedmax = slot2.speed_max
+	slot0.score_blist = slot2.Blist
+	slot0.score_alist = slot2.Alist
+	slot0.score_slist = slot2.Slist
+	slot0.score_sslist = slot2.SSlist
+	slot0.specialcombo_number = slot2.special_combo
+	slot0.specialscore_number = slot2.special_score
+	slot0.score_perfect = slot2.perfect
+	slot0.score_good = slot2.good
+	slot0.score_miss = slot2.miss
+	slot0.score_combo = slot2.combo
+	slot0.time_perfect = slot2.perfecttime
+	slot0.time_good = slot2.goodtime
+	slot0.time_miss = slot2.misstime
+	slot0.time_laterperfect = slot2.laterperfecttime
+	slot0.time_latergood = slot2.latergoodtime
+	slot0.combo_interval = slot2.combo_interval
 	slot0.CeiMgr_ob = pg.CriMgr.GetInstance()
 	slot0.CeiMgr_ob.bgmPlayer.loop = false
 	slot0.leftBtmBg = slot0.game_content:Find("bottomList/bottom_leftbg")

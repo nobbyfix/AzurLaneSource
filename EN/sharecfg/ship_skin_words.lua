@@ -8501,7 +8501,7 @@ pg.ship_skin_words = {
 		battle = "Regardless of the occasion, there is always time to take out the trash.",
 		login = "So this is where you were, Master. I was afraid that you had gotten lost and almost mobilised the entire Maid Team. What exactly were you doing?",
 		vote = "",
-		detail = "Swiftsure, don’t stay in your room while the festival is going on. Go out there and socialise with the others. Of course it&apos;s worth the effort... ",
+		detail = "Swiftsure, don’t stay in your room while the festival is going on. Go out there and socialise with the others. Of course it's worth the effort...",
 		couple_encourage = {}
 	},
 	[202110] = {
@@ -21171,7 +21171,7 @@ pg.ship_skin_words = {
 		win_mvp = "If there's anything worthy of my trust, it's my cannon!",
 		home = "Not bad at all. Seems like you're getting used to battle.",
 		mission = "Missions? Let's take care of them in one fell swoop.",
-		touch2 = "I assumed you were more intelligent, Commander...",
+		touch2 = "Stand right there, Commander. If you can take a shot from me, I'll forgive you... ",
 		feeling1 = "Cowards have no right to stand on the battlefield!",
 		skill = "Anton, Bruno, Caesar... Cannons at the ready!",
 		drop_descrip = "Scharnhorst-class battlecruiser, Scharnhorst.",
