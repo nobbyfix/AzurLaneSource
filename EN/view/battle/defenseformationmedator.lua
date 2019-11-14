@@ -70,9 +70,9 @@ slot0.register = function (slot0)
 			end
 		end
 
-		if slot2 == Fleet.MAIN then
+		if slot2 == TeamType.Main then
 			slot9(slot6)
-		elseif slot2 == Fleet.VANGUARD then
+		elseif slot2 == TeamType.Vanguard then
 			slot9(slot7)
 		end
 
@@ -161,12 +161,12 @@ slot0.configDockYardFunc = function (slot0, slot1, slot2, slot3, slot4, slot5)
 		end
 
 		if #slot0 > 0 then
-			if slot1 == Fleet.MAIN then
+			if slot1 == TeamType.Main then
 				slot3(slot2)
 
 				slot2.mainShips = slot0
 				slot2.vanguardShips = slot3
-			elseif slot1 == Fleet.VANGUARD then
+			elseif slot1 == TeamType.Vanguard then
 				slot3(slot3)
 
 				slot2.mainShips = slot2
@@ -180,12 +180,12 @@ slot0.configDockYardFunc = function (slot0, slot1, slot2, slot3, slot4, slot5)
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = i18n("exercise_clear_fleet_tip"),
 				onYes = function ()
-					if slot0 == Fleet.MAIN then
+					if slot0 == TeamType.Main then
 						slot1(slot2)
 
 						slot3.mainShips = slot4
 						slot3.vanguardShips = slot5
-					elseif slot0 == Fleet.VANGUARD then
+					elseif slot0 == TeamType.Vanguard then
 						slot1(slot5)
 
 						slot3.mainShips = slot2
@@ -221,11 +221,11 @@ slot0.configDockYardFunc = function (slot0, slot1, slot2, slot3, slot4, slot5)
 			return true
 		end
 
-		if slot2 == Fleet.MAIN then
+		if slot2 == TeamType.Main then
 			if not slot4(slot3) then
 				return false, i18n("ship_vo_mainFleet_exist_same_ship")
 			end
-		elseif slot2 == Fleet.VANGUARD and not slot4(slot4) then
+		elseif slot2 == TeamType.Vanguard and not slot4(slot4) then
 			return false, i18n("ship_vo_vanguardFleet_exist_same_ship")
 		end
 

@@ -167419,6 +167419,111 @@ pg.expedition_data_template = {
 		},
 		bufficon = {}
 	},
+	[1140101] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 14,
+		ai_mov = 0,
+		add_icon = "",
+		name = "厌战的特别训练 ",
+		exp_commander = 0,
+		time_limit = 10,
+		exp_commander_ratio = 0,
+		dungeon_id = 1140101,
+		exp = 0,
+		icon = "bossicon",
+		difficulty = 1,
+		level = 20,
+		map_id = 10001,
+		limit_type = 4,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1140101,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			6
+		},
+		bufficon = {}
+	},
+	[1140102] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 14,
+		ai_mov = 0,
+		add_icon = "",
+		name = "厌战的特别训练 ",
+		exp_commander = 0,
+		time_limit = 10,
+		exp_commander_ratio = 0,
+		dungeon_id = 1140102,
+		exp = 0,
+		icon = "bossicon",
+		difficulty = 1,
+		level = 20,
+		map_id = 10001,
+		limit_type = 4,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1140102,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			6
+		},
+		bufficon = {}
+	},
+	[1140103] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 14,
+		ai_mov = 0,
+		add_icon = "",
+		name = "厌战的特别训练 ",
+		exp_commander = 0,
+		time_limit = 10,
+		exp_commander_ratio = 0,
+		dungeon_id = 1140103,
+		exp = 0,
+		icon = "bossicon",
+		difficulty = 1,
+		level = 20,
+		map_id = 10001,
+		limit_type = 4,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1140103,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			6
+		},
+		bufficon = {}
+	},
 	[1140201] = {
 		sink_limit = 1,
 		ai = 0,
@@ -269467,6 +269572,9 @@ pg.expedition_data_template = {
 		1132110,
 		1132120,
 		1132500,
+		1140101,
+		1140102,
+		1140103,
 		1140201,
 		1140202,
 		1140203,

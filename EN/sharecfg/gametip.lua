@@ -6446,6 +6446,10 @@ Attack/Support Range Level:
 		tip = "This ship's <color=#92fc63>Torpedo slot</color> will be converted into an <color=#92fc63>Auxiliary Weapon slot.</color><color=#92fc63>\n<material=underline c=#92fc63 event=clickDetail>View more info here.</material></color>\nWould you like to proceed with the retrofit? ",
 		key = "ship_remould_warning_203114"
 	},
+	ship_remould_warning_205124 = {
+		tip = "此次改造操作将消耗<color=#92fc63>战士的心得</color>\n是否确认继续操作？",
+		key = "ship_remould_warning_205124"
+	},
 	ship_remould_warning_310014 = {
 		tip = [[
 Upon the retrofit <color=#92fc63>$1</color> the hull type of this unit will be changed
@@ -7292,55 +7296,55 @@ She'll also receive a <color=#a0ff40>3%</color> stats bonus</size>.]],
 		key = "new_airi_error_code_200230"
 	},
 	new_airi_error_code_200240 = {
-		tip = "请求的类型不支持结算API版本",
+		tip = "Current API version does not support the request",
 		key = "new_airi_error_code_200240"
 	},
 	new_airi_error_code_200250 = {
-		tip = "提供给API的参数无效",
+		tip = "Invalid parameters provided to API",
 		key = "new_airi_error_code_200250"
 	},
 	new_airi_error_code_200260 = {
-		tip = "API操作期间发生致命错误",
+		tip = "Fatal error during API operation",
 		key = "new_airi_error_code_200260"
 	},
 	new_airi_error_code_200270 = {
-		tip = "当前设备上的Play商店不支持请求的功能",
+		tip = "The request is not supported by the Play store on current device",
 		key = "new_airi_error_code_200270"
 	},
 	new_airi_error_code_200280 = {
-		tip = "由于物品已经拥有，未消耗",
+		tip = "Item has already been purchased, not consumed yet",
 		key = "new_airi_error_code_200280"
 	},
 	new_airi_error_code_200290 = {
-		tip = "由于物品已经拥有，并且消耗失败",
+		tip = "Item has already been purchased, failed to consume",
 		key = "new_airi_error_code_200290"
 	},
 	new_airi_error_code_200300 = {
-		tip = "请求的产品无法购买",
+		tip = "Unable to purchase the requested item",
 		key = "new_airi_error_code_200300"
 	},
 	new_airi_error_code_200310 = {
-		tip = "Google Play服务无法连接",
+		tip = "Unable to connect to Google Play service",
 		key = "new_airi_error_code_200310"
 	},
 	new_airi_error_code_200320 = {
-		tip = "在Google Play响应之前，请求已达到最大超时时间",
+		tip = "Request reached maximum timeout before receiving any response from Google Play",
 		key = "new_airi_error_code_200320"
 	},
 	new_airi_error_code_200330 = {
-		tip = "网络连接已关闭",
+		tip = "Network connection is turned off",
 		key = "new_airi_error_code_200330"
 	},
 	new_airi_error_code_200340 = {
-		tip = "用户取消了支付",
+		tip = "Payment canceled by user",
 		key = "new_airi_error_code_200340"
 	},
 	new_airi_error_code_200350 = {
-		tip = "查询商品ID失败",
+		tip = "Item ID search failed",
 		key = "new_airi_error_code_200350"
 	},
 	new_airi_error_code_200360 = {
-		tip = "连接Play services失败",
+		tip = "Connection to play services failed",
 		key = "new_airi_error_code_200360"
 	},
 	new_airi_error_code_300100 = {
@@ -8577,6 +8581,35 @@ Combat Details:
 			},
 			{
 				info = " 5. Repair all four ship models to earn the limited furniture, “Mikasa Ship Model.”"
+			}
+		}
+	},
+	goldship_help_tip = {
+		key = "goldship_help_tip",
+		tip = {
+			{
+				info = "厌战的特别训练活动说明："
+			},
+			{
+				info = "    1.玩家撞击金币啾可以加分，连续撞击金币啾可以累积\n    COMBO，根据当前COMBO数不同，获得的分数也不同哦；"
+			},
+			{
+				info = "    2.撞击鞭炮啾会打断COMBO，再次撞击金币啾后会重新开始\n    累积；"
+			},
+			{
+				info = "    3.在关卡中获得10分以上（包括10分）即可获得【历战之证】，\n    另外只要完成关卡还可获得【骰子】，每天均有一次获得机\n    会，可累积。；"
+			},
+			{
+				info = "    注：【历战之证】最多可获得7个  【骰子】最多可获得15个 ；"
+			},
+			{
+				info = "    4.累积获得7个【历战之证】可以得到厌战改造限定道具\n    【战士的心得】 ；"
+			},
+			{
+				info = "    5.战斗中撤退将无法获得任何奖励 ；"
+			},
+			{
+				info = "    6.关卡时长为90秒，时间结束即关卡完成 ；"
 			}
 		}
 	},
@@ -11022,6 +11055,77 @@ depends on the amount of damage dealt to the boss.
 	skinshop_live2d_fliter_failed = {
 		tip = "No outfits to display under current filter settings ",
 		key = "skinshop_live2d_fliter_failed"
+	},
+	pocky_jiujiu = {
+		tip = "Manjuu Manufactory",
+		key = "pocky_jiujiu"
+	},
+	pocky_jiujiu_desc = {
+		tip = "The Manjuus are hard at work today...",
+		key = "pocky_jiujiu_desc"
+	},
+	pocky_help = {
+		key = "pocky_help",
+		tip = {
+			{
+				info = "Event Instructions:"
+			},
+			{
+				info = "1. During the event, complete all Punch Card missions, Manjuu Manufactory missions, and Head Maid's Request missions to earn Belfast's limited outfit, \"Shopping with the Head Maid.\""
+			},
+			{
+				info = "2. A batch of new missions will unlock every day. Completing previous missions will allow you to play the next batch of missions."
+			},
+			{
+				info = "3. Complete the task to finish each Head Maid's Request mission, spend Oil to complete Manjuu Manufactory missions, and log in to complete Punch Card missions.\n4. Rewards must be collected by December 15, 2019 23:59"
+			}
+		}
+	},
+	secretary_help = {
+		key = "secretary_help",
+		tip = {
+			{
+				info = "About Secretary Groups:\n"
+			},
+			{
+				info = "1. Slots for Secretary Groups must be unlocked by clearing the corresponding Campaign stages. Multiple copies of the same ship may be added."
+			},
+			{
+				info = "2. <color=#92fc63>Only the ship placed in the leftmost slot will receive Affinity.</color>"
+			},
+			{
+				info = "3. When returning to home port, your secretary ship will be randomly selected from one of the ships assigned to Secretary Groups."
+			},
+			{
+				info = "4. By toggling \"Skin Settings\" to ON, you may view additional information about the outfits each ship is using."
+			},
+			{
+				info = "5. In the Secretary Groups interface, you may directly drag ships to change their position."
+			},
+			{
+				info = "6. When in the home port, you may use the Toggle function to change which secretary is currently displayed."
+			}
+		}
+	},
+	secretary_unlock2 = {
+		tip = "Clear stage 3-4 \nto unlock ",
+		key = "secretary_unlock2"
+	},
+	secretary_unlock3 = {
+		tip = "Clear stage 6-4 \nto unlock ",
+		key = "secretary_unlock3"
+	},
+	secretary_unlock4 = {
+		tip = "Clear stage 9-4 \nto unlock ",
+		key = "secretary_unlock4"
+	},
+	secretary_unlock5 = {
+		tip = "Clear stage 12-4 \nto unlock ",
+		key = "secretary_unlock5"
+	},
+	secretary_closed = {
+		tip = "Not open",
+		key = "secretary_closed"
 	}
 }
 

@@ -76,7 +76,8 @@ ITEM_ID_FUDAIS = {
 	40960,
 	40961,
 	40962,
-	40963
+	40963,
+	40964
 }
 QRJ_ITEM_ID_RANGE = {
 	41001,
@@ -267,13 +268,20 @@ ERROR_MESSAGE = {
 	[1031.0] = "md5 Length Error",
 	[4020.0] = "Shipgirls are not ring girls",
 	[4030.0] = "Shipgirl already in your fleet",
+	[4201.0] = "Gift code has already expired",
 	[4010.0] = "Shipgirl Unavailable",
+	[4203.0] = "Gift code does not exist",
 	[9999.0] = "Unknown Error",
+	[4205.0] = "An error has occured; please try again",
+	[4206.0] = "This gift has already been claimed",
 	[3010.0] = "Shipgirl cannot ",
 	[3020.0] = "Previous Stage Incomplete",
+	[4207.0] = "No gift redemption URL",
+	[4204.0] = "Gift code has already been used",
 	[4050.0] = "Identical Shipgirls",
 	[4040.0] = "Shipgirl not in your fleet",
 	[1020.0] = "Incorrect Password",
+	[4202.0] = "Unsupported channel",
 	[1012.0] = "Pure Digital Account"
 }
 SPECIAL_DATE = {}

@@ -716,7 +716,9 @@ slot0.fileterShips = function (slot0, slot1)
 	end
 
 	if defaultValue(slot1.inAdmiral, false) then
-		table.insert(slot2, getProxy(PlayerProxy):getData().character)
+		for slot16, slot17 in ipairs(getProxy(PlayerProxy).getRawData(slot12).characters) do
+			table.insert(slot2, slot17)
+		end
 	end
 
 	if defaultValue(slot1.inExercise, false) then

@@ -65,7 +65,7 @@ end
 
 slot0.addListener = function (slot0)
 	onButton(slot0, slot0.backBtn, function ()
-		slot0:emit(slot1.ON_CLOSE)
+		slot0:closeView()
 	end, SFX_CANCEL)
 	onButton(slot0, slot0.helpBtn, function ()
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({

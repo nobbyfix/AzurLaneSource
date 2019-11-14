@@ -4,8 +4,8 @@ return {
 	once = true,
 	scripts = {
 		{
-			actor = 107070,
 			side = 2,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "So you're the new Commander? I'm surprised that you were able to find my coordinates so fast!",
@@ -23,8 +23,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 2,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "But it would be a shame if this exercise had never started.",
@@ -42,8 +42,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 2,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "Let me, the great Hornet, test your strength. Don't worry, we'll both be firing blanks!",
@@ -61,8 +61,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 2,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "Don't worry, I won't hurt you too badly!",
@@ -82,12 +82,8 @@ return {
 		{
 			actor = 106010,
 			side = 0,
-			say = "Commander, air support preparation is underway. Buy us time and delay Hornet's attacks until its complete!",
 			nameColor = "#a9f548",
-			paintingFadeOut = {
-				time = 0.5,
-				side = 1
-			},
+			say = "Commander, air support preparation is underway. Buy us time and delay Hornet's attacks until its complete!",
 			shake = {
 				speed = 1,
 				number = 3

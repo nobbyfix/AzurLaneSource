@@ -573,6 +573,12 @@ slot0.initEquipments = function (slot0)
 		slot0:updateSelected()
 	end
 
+	slot0.equipmentRect.onItemsUpdated = function ()
+		onNextTick(function ()
+			slot0:ExecuteAnimDoneCallback()
+		end)
+	end
+
 	slot0.equipmentRect:ScrollTo(0)
 end
 
@@ -750,6 +756,18 @@ slot0.checkFitBusyCondition = function (slot0, slot1)
 	return (not slot0.selectEnabled and slot0.showBusyEquip) or not slot1.shipId
 end
 
+slot0.onUIAnimEnd = function (slot0, slot1)
+	slot0.onAnimDoneCallback = slot1
+end
+
+slot0.ExecuteAnimDoneCallback = function (slot0)
+	if slot0.onAnimDoneCallback then
+		slot0.onAnimDoneCallback()
+
+		slot0.onAnimDoneCallback = nil
+	end
+end
+
 slot0.setItems = function (slot0, slot1)
 	slot0.itemVOs = slot1
 
@@ -768,6 +786,10 @@ slot0.initItems = function (slot0)
 
 	slot0.itemRect.onUpdateItem = function (slot0, slot1)
 		slot0:updateItem(slot0, slot1)
+	end
+
+	slot0.itemRect.onItemsUpdated = function ()
+		slot0:ExecuteAnimDoneCallback()
 	end
 
 	slot0.itemRect.decelerationRate = 0.07

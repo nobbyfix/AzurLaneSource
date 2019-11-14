@@ -907,6 +907,51 @@ pg.backyard_theme_template = {
 			27301
 		}
 	},
+	[30] = {
+		Cfg_1 = 5,
+		name = "Rainbow Room",
+		desc = "Never before has there been this much color in one place!",
+		deblocking = 1,
+		new = 1,
+		hot = 1,
+		Cfg_2 = 8,
+		is_view = 1,
+		discount = 0,
+		id = 30,
+		icon = "caihongthemeicon",
+		comfortable = 0,
+		discount_time = "",
+		ids = {
+			30001,
+			30002,
+			30101,
+			30102,
+			30103,
+			30104,
+			30105,
+			30106,
+			30107,
+			30108,
+			30109,
+			30110,
+			30111,
+			30112,
+			30113,
+			30114,
+			30115,
+			30116,
+			30117,
+			30118,
+			30119,
+			30120,
+			30121,
+			30201,
+			30202,
+			30301,
+			30302,
+			30303
+		}
+	},
 	[31] = {
 		Cfg_1 = 5,
 		name = "Atré Akihabara",
@@ -1617,6 +1662,25 @@ pg.backyard_theme_template = {
 			52118
 		}
 	},
+	[54] = {
+		Cfg_1 = 5,
+		name = "pocky联动",
+		desc = "pocky联动",
+		deblocking = 1,
+		new = 1,
+		hot = 1,
+		Cfg_2 = 8,
+		is_view = 0,
+		discount = 0,
+		id = 54,
+		icon = "",
+		comfortable = 0,
+		discount_time = "",
+		ids = {
+			54104,
+			54105
+		}
+	},
 	all = {
 		1,
 		2,
@@ -1637,6 +1701,7 @@ pg.backyard_theme_template = {
 		23,
 		24,
 		27,
+		30,
 		31,
 		35,
 		37,
@@ -1651,7 +1716,8 @@ pg.backyard_theme_template = {
 		48,
 		49,
 		50,
-		52
+		52,
+		54
 	}
 }
 

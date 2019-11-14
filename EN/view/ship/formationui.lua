@@ -125,16 +125,16 @@ function slot1(slot0)
 	slot1 = slot1(slot2, slot3, slot4)
 	slot0.topPanel = slot1
 	slot1 = {}
-	slot2 = Fleet
-	slot2 = slot2.VANGUARD
+	slot2 = TeamType
+	slot2 = slot2.Vanguard
 	slot3 = {}
 	slot1[slot2] = slot3
-	slot2 = Fleet
-	slot2 = slot2.MAIN
+	slot2 = TeamType
+	slot2 = slot2.Main
 	slot3 = {}
 	slot1[slot2] = slot3
-	slot2 = Fleet
-	slot2 = slot2.SUBMARINE
+	slot2 = TeamType
+	slot2 = slot2.Submarine
 	slot3 = {}
 	slot1[slot2] = slot3
 	slot0._gridTFs = slot1
@@ -149,8 +149,8 @@ function slot1(slot0)
 
 	for slot4 = slot1, slot2, slot3 do
 		slot5 = slot0._gridTFs
-		slot6 = Fleet
-		slot6 = slot6.MAIN
+		slot6 = TeamType
+		slot6 = slot6.Main
 		slot5 = slot5[slot6]
 		slot6 = slot0._gridFrame
 		slot7 = slot6
@@ -161,8 +161,8 @@ function slot1(slot0)
 		slot6 = slot6(slot7, slot8)
 		slot5[slot4] = slot6
 		slot5 = slot0._gridTFs
-		slot6 = Fleet
-		slot6 = slot6.VANGUARD
+		slot6 = TeamType
+		slot6 = slot6.Vanguard
 		slot5 = slot5[slot6]
 		slot6 = slot0._gridFrame
 		slot7 = slot6
@@ -173,8 +173,8 @@ function slot1(slot0)
 		slot6 = slot6(slot7, slot8)
 		slot5[slot4] = slot6
 		slot5 = slot0._gridTFs
-		slot6 = Fleet
-		slot6 = slot6.SUBMARINE
+		slot6 = TeamType
+		slot6 = slot6.Submarine
 		slot5 = slot5[slot6]
 		slot6 = slot0._gridFrame
 		slot7 = slot6
@@ -352,18 +352,18 @@ function slot1(slot0)
 	slot1 = {}
 	slot0._cards = slot1
 	slot1 = slot0._cards
-	slot2 = Fleet
-	slot2 = slot2.MAIN
+	slot2 = TeamType
+	slot2 = slot2.Main
 	slot3 = {}
 	slot1[slot2] = slot3
 	slot1 = slot0._cards
-	slot2 = Fleet
-	slot2 = slot2.VANGUARD
+	slot2 = TeamType
+	slot2 = slot2.Vanguard
 	slot3 = {}
 	slot1[slot2] = slot3
 	slot1 = slot0._cards
-	slot2 = Fleet
-	slot2 = slot2.SUBMARINE
+	slot2 = TeamType
+	slot2 = slot2.Submarine
 	slot3 = {}
 	slot1[slot2] = slot3
 	slot1 = setActive
@@ -477,6 +477,14 @@ function slot1(slot0)
 	slot2 = slot2(slot3, slot4, slot5)
 	slot0.commanderFormationPanel = slot2
 	slot2 = {}
+	slot3 = FleetType
+	slot3 = slot3.Normal
+	slot4 = 1
+	slot2[slot3] = slot4
+	slot3 = FleetType
+	slot3 = slot3.Submarine
+	slot4 = 1
+	slot2[slot3] = slot4
 	slot0.index = slot2
 end
 
@@ -566,22 +574,22 @@ function slot1(slot0, slot1)
 
 	slot3 = slot0
 	slot2 = slot0.resetGrid
-	slot4 = Fleet
-	slot4 = slot4.VANGUARD
+	slot4 = TeamType
+	slot4 = slot4.Vanguard
 
 	slot2(slot3, slot4)
 
 	slot3 = slot0
 	slot2 = slot0.resetGrid
-	slot4 = Fleet
-	slot4 = slot4.MAIN
+	slot4 = TeamType
+	slot4 = slot4.Main
 
 	slot2(slot3, slot4)
 
 	slot3 = slot0
 	slot2 = slot0.resetGrid
-	slot4 = Fleet
-	slot4 = slot4.SUBMARINE
+	slot4 = TeamType
+	slot4 = slot4.Submarine
 
 	slot2(slot3, slot4)
 
@@ -623,8 +631,8 @@ function slot1(slot0)
 	slot2 = _
 	slot2 = slot2.each
 	slot3 = slot0._gridTFs
-	slot4 = Fleet
-	slot4 = slot4.MAIN
+	slot4 = TeamType
+	slot4 = slot4.Main
 	slot3 = slot3[slot4]
 
 	function slot4(slot0)
@@ -636,8 +644,8 @@ function slot1(slot0)
 	slot2 = _
 	slot2 = slot2.each
 	slot3 = slot0._gridTFs
-	slot4 = Fleet
-	slot4 = slot4.VANGUARD
+	slot4 = TeamType
+	slot4 = slot4.Vanguard
 	slot3 = slot3[slot4]
 
 	function slot4(slot0)
@@ -649,8 +657,8 @@ function slot1(slot0)
 	slot2 = _
 	slot2 = slot2.each
 	slot3 = slot0._gridTFs
-	slot4 = Fleet
-	slot4 = slot4.SUBMARINE
+	slot4 = TeamType
+	slot4 = slot4.Submarine
 	slot3 = slot3[slot4]
 
 	function slot4(slot0)
@@ -663,8 +671,6 @@ end
 slot0.updateGridVisibility = slot1
 
 function slot1(slot0)
-	slot1 = "commonbg/"
-
 	setActive(slot0._bgFleet, slot0._currentFleetVO:getFleetType() == FleetType.Normal)
 	setActive(slot0._bgSub, slot0._currentFleetVO.getFleetType() == FleetType.Submarine)
 end
@@ -672,90 +678,20 @@ end
 slot0.updateFleetBg = slot1
 
 function slot1(slot0)
-	slot1 = slot0._currentFleetVO
-	slot2 = slot1
-	slot1 = slot1.getFleetType
-	slot1 = slot1(slot2)
-	slot2 = FleetType
-	slot2 = slot2.Normal
+	slot1 = nil
+	slot2 = slot0._currentFleetVO:getFleetType()
+	slot0.index[slot2] = slot0._currentFleetVO:getIndex()
 
-	if slot1 == slot2 then
-		slot2 = slot0._currentFleetVO
-		slot3 = slot2
-		slot2 = slot2.getIndex
-		slot2 = slot2(slot3)
-		slot3 = setText
-		slot4 = slot0._regularEnFllet
-		slot5 = slot0.TeamNum
-		slot5 = slot5[slot2]
-		slot6 = " FLEET"
-		slot5 = slot5 .. slot6
-
-		slot3(slot4, slot5)
-
-		slot3 = setText
-		slot4 = slot0._regualrCnFleet
-		slot5 = i18n
-		slot6 = "ship_formationUI_fleetName"
-		slot7 = slot2
-		slot6 = slot6 .. slot7
-
-		slot3(slot4, slot5(slot6))
-
-		slot3 = setText
-		slot4 = slot0._regularNum
-		slot5 = slot2
-
-		slot3(slot4, slot5)
-
-		slot3 = slot0.index
-		slot4 = FleetType
-		slot4 = slot4.Normal
-		slot3[slot4] = slot2
-	end
-
-	slot2 = FleetType
-	slot2 = slot2.Submarine
-
-	if slot1 == slot2 then
-		slot2 = slot0._currentFleetVO
-		slot3 = slot2
-		slot2 = slot2.getIndex
-		slot2 = slot2(slot3)
-		slot3 = setText
-		slot4 = slot0._subEnFllet
-		slot5 = slot0.TeamNum
-		slot5 = slot5[slot2]
-		slot6 = " FLEET"
-		slot5 = slot5 .. slot6
-
-		slot3(slot4, slot5)
-
-		slot3 = setText
-		slot4 = slot0._subCnFleet
-		slot5 = i18n
-		slot6 = "ship_formationUI_fleetName"
-		slot7 = slot2
-		slot6 = slot6 .. slot7
-
-		slot3(slot4, slot5(slot6))
-
-		slot3 = setText
-		slot4 = slot0._subNum
-		slot5 = slot2
-
-		slot3(slot4, slot5)
-
-		slot3 = slot0.index
-		slot4 = FleetType
-		slot4 = slot4.Submarine
-		slot3[slot4] = slot2
-	end
-
-	setActive(slot0.btnRegular:Find("on"), slot1 == FleetType.Normal)
-	setActive(slot0.btnRegular:Find("off"), slot1 ~= FleetType.Normal)
-	setActive(slot0.btnSub:Find("on"), slot1 == FleetType.Submarine)
-	setActive(slot0.btnSub:Find("off"), slot1 ~= FleetType.Submarine)
+	setText(slot0._regularEnFllet, slot0.TeamNum[slot0.index[FleetType.Normal]] .. " FLEET")
+	setText(slot0._regualrCnFleet, Fleet.DEFAULT_NAME[slot0.index[FleetType.Normal]])
+	setText(slot0._regularNum, slot0.index[FleetType.Normal])
+	setText(slot0._subEnFllet, slot0.TeamNum[slot0.index[FleetType.Submarine]] .. " FLEET")
+	setText(slot0._subCnFleet, Fleet.DEFAULT_NAME[slot0.index[FleetType.Submarine]])
+	setText(slot0._subNum, slot1)
+	setActive(slot0.btnRegular:Find("on"), slot2 == FleetType.Normal)
+	setActive(slot0.btnRegular:Find("off"), slot2 ~= FleetType.Normal)
+	setActive(slot0.btnSub:Find("on"), slot2 == FleetType.Submarine)
+	setActive(slot0.btnSub:Find("off"), slot2 ~= FleetType.Submarine)
 end
 
 slot0.updateFleetButton = slot1
@@ -1139,9 +1075,9 @@ function slot1(slot0)
 		slot0:updateToggleList(_.filter(slot0._fleetVOs, function (slot0)
 			return slot0:getFleetType() == FleetType.Normal
 		end))
-		triggerToggle(slot0.updateToggleList._currentFleetVO:getFleetType() == FleetType.Normal.fleetToggles[slot0.updateToggleList._currentFleetVO.getFleetType() == FleetType.Normal.index[FleetType.Normal] or 1], true)
+		triggerToggle(slot0.fleetToggles[slot0.index[FleetType.Normal]], true)
 
-		if slot0 then
+		if slot0.updateToggleList._currentFleetVO:getFleetType() == FleetType.Normal then
 			slot2 = setActive
 			slot3 = slot0
 			slot3 = slot3.fleetToggleMask
@@ -1180,9 +1116,9 @@ function slot1(slot0)
 		slot0:updateToggleList(_.filter(slot0._fleetVOs, function (slot0)
 			return slot0:getFleetType() == FleetType.Submarine
 		end))
-		triggerToggle(slot0.updateToggleList._currentFleetVO:getFleetType() == FleetType.Submarine.fleetToggles[slot0.updateToggleList._currentFleetVO.getFleetType() == FleetType.Submarine.index[FleetType.Submarine] or 1], true)
+		triggerToggle(slot0.fleetToggles[slot0.index[FleetType.Submarine]], true)
 
-		if slot0 then
+		if slot0.updateToggleList._currentFleetVO:getFleetType() == FleetType.Submarine then
 			slot2 = setActive
 			slot3 = slot0
 			slot3 = slot3.fleetToggleMask
@@ -1223,32 +1159,29 @@ function slot1(slot0)
 		slot0 = slot0.selectFleetByStep
 		slot2 = -1
 		slot0 = slot0(slot1, slot2)
+		slot1 = slot0
+		slot1 = slot1._currentDragDelegate
 
-		if slot0 then
+		if slot1 then
 			slot1 = slot0
-			slot1 = slot1._currentDragDelegate
+			slot2 = true
+			slot1._forceDropCharacter = slot2
+			slot1 = LuaHelper
+			slot1 = slot1.triggerEndDrag
+			slot2 = slot0
+			slot2 = slot2._currentDragDelegate
 
-			if slot1 then
-				slot1 = slot0
-				slot2 = true
-				slot1._forceDropCharacter = slot2
-				slot1 = LuaHelper
-				slot1 = slot1.triggerEndDrag
-				slot2 = slot0
-				slot2 = slot2._currentDragDelegate
-
-				slot1(slot2)
-			end
-
-			slot1 = slot0
-			slot2 = slot1
-			slot1 = slot1.emit
-			slot3 = FormationMediator
-			slot3 = slot3.ON_CHANGE_FLEET
-			slot4 = slot0
-
-			slot1(slot2, slot3, slot4)
+			slot1(slot2)
 		end
+
+		slot1 = slot0
+		slot2 = slot1
+		slot1 = slot1.emit
+		slot3 = FormationMediator
+		slot3 = slot3.ON_CHANGE_FLEET
+		slot4 = slot0
+
+		slot1(slot2, slot3, slot4)
 	end
 
 	slot5 = SFX_PANEL
@@ -1265,32 +1198,29 @@ function slot1(slot0)
 		slot0 = slot0.selectFleetByStep
 		slot2 = 1
 		slot0 = slot0(slot1, slot2)
+		slot1 = slot0
+		slot1 = slot1._currentDragDelegate
 
-		if slot0 then
+		if slot1 then
 			slot1 = slot0
-			slot1 = slot1._currentDragDelegate
+			slot2 = true
+			slot1._forceDropCharacter = slot2
+			slot1 = LuaHelper
+			slot1 = slot1.triggerEndDrag
+			slot2 = slot0
+			slot2 = slot2._currentDragDelegate
 
-			if slot1 then
-				slot1 = slot0
-				slot2 = true
-				slot1._forceDropCharacter = slot2
-				slot1 = LuaHelper
-				slot1 = slot1.triggerEndDrag
-				slot2 = slot0
-				slot2 = slot2._currentDragDelegate
-
-				slot1(slot2)
-			end
-
-			slot1 = slot0
-			slot2 = slot1
-			slot1 = slot1.emit
-			slot3 = FormationMediator
-			slot3 = slot3.ON_CHANGE_FLEET
-			slot4 = slot0
-
-			slot1(slot2, slot3, slot4)
+			slot1(slot2)
 		end
+
+		slot1 = slot0
+		slot2 = slot1
+		slot1 = slot1.emit
+		slot3 = FormationMediator
+		slot3 = slot3.ON_CHANGE_FLEET
+		slot4 = slot0
+
+		slot1(slot2, slot3, slot4)
 	end
 
 	slot5 = SFX_PANEL
@@ -1595,16 +1525,16 @@ function slot1(slot0)
 	slot1(slot2)
 
 	slot1 = {}
-	slot2 = Fleet
-	slot2 = slot2.VANGUARD
+	slot2 = TeamType
+	slot2 = slot2.Vanguard
 	slot3 = {}
 	slot1[slot2] = slot3
-	slot2 = Fleet
-	slot2 = slot2.MAIN
+	slot2 = TeamType
+	slot2 = slot2.Main
 	slot3 = {}
 	slot1[slot2] = slot3
-	slot2 = Fleet
-	slot2 = slot2.SUBMARINE
+	slot2 = TeamType
+	slot2 = slot2.Submarine
 	slot3 = {}
 	slot1[slot2] = slot3
 	slot0._characterList = slot1
@@ -1647,167 +1577,160 @@ function slot1(slot0)
 
 		slot6(slot7, slot8)
 
-		slot7 = slot4
-		slot6 = slot4.getConfigTable
-		slot6 = slot6(slot7)
-		slot7 = pg
-		slot7 = slot7.ship_data_template
-		slot8 = slot4.configId
-		slot7 = slot7[slot8]
+		slot6 = findTF
+		slot7 = slot5
+		slot8 = "info"
+		slot6 = slot6(slot7, slot8)
+		slot7 = findTF
+		slot8 = slot6
+		slot9 = "stars"
+		slot7 = slot7(slot8, slot9)
 		slot8 = findTF
-		slot9 = slot5
-		slot10 = "info"
+		slot9 = slot6
+		slot10 = "energy"
 		slot8 = slot8(slot9, slot10)
-		slot9 = findTF
-		slot10 = slot8
-		slot11 = "stars"
-		slot9 = slot9(slot10, slot11)
-		slot10 = findTF
-		slot11 = slot8
-		slot12 = "energy"
-		slot10 = slot10(slot11, slot12)
-		slot12 = slot4
-		slot11 = slot4.getStar
-		slot11 = slot11(slot12)
+		slot10 = slot4
+		slot9 = slot4.getStar
+		slot9 = slot9(slot10)
+		slot10 = 1
+		slot11 = slot9
 		slot12 = 1
-		slot13 = slot11
-		slot14 = 1
 
-		for slot15 = slot12, slot13, slot14 do
-			slot16 = cloneTplTo
-			slot17 = slot0
-			slot17 = slot17._starTpl
-			slot18 = slot9
+		for slot13 = slot10, slot11, slot12 do
+			slot14 = cloneTplTo
+			slot15 = slot0
+			slot15 = slot15._starTpl
+			slot16 = slot7
 
-			slot16(slot17, slot18)
+			slot14(slot15, slot16)
 		end
 
-		slot12 = GetSpriteFromAtlas
-		slot13 = "shiptype"
-		slot14 = shipType2print
-		slot16 = slot4
-		slot15 = slot4.getShipType
-		slot12 = slot12(slot13, slot14(slot15(slot16)))
+		slot10 = GetSpriteFromAtlas
+		slot11 = "shiptype"
+		slot12 = shipType2print
+		slot14 = slot4
+		slot13 = slot4.getShipType
+		slot10 = slot10(slot11, slot12(slot13(slot14)))
 
-		if not slot12 then
-			slot13 = warning
-			slot14 = "找不到船形, shipConfigId: "
-			slot15 = slot4.configId
-			slot14 = slot14 .. slot15
+		if not slot10 then
+			slot11 = warning
+			slot12 = "找不到船形, shipConfigId: "
+			slot13 = slot4.configId
+			slot12 = slot12 .. slot13
 
-			slot13(slot14)
+			slot11(slot12)
 		end
 
-		slot13 = setImageSprite
-		slot14 = findTF
-		slot15 = slot8
-		slot16 = "type"
-		slot14 = slot14(slot15, slot16)
-		slot15 = slot12
-		slot16 = true
+		slot11 = setImageSprite
+		slot12 = findTF
+		slot13 = slot6
+		slot14 = "type"
+		slot12 = slot12(slot13, slot14)
+		slot13 = slot10
+		slot14 = true
 
-		slot13(slot14, slot15, slot16)
+		slot11(slot12, slot13, slot14)
 
-		slot13 = slot4.energy
-		slot14 = Ship
-		slot14 = slot14.ENERGY_MID
+		slot11 = slot4.energy
+		slot12 = Ship
+		slot12 = slot12.ENERGY_MID
 
-		if slot13 <= slot14 then
-			slot13 = GetSpriteFromAtlas
-			slot14 = "energy"
-			slot16 = slot4
-			slot15 = slot4.getEnergyPrint
-			slot13 = slot13(slot14, slot15(slot16))
-			slot14 = setImageSprite
-			slot15 = slot10
+		if slot11 <= slot12 then
+			slot11 = GetSpriteFromAtlas
+			slot12 = "energy"
+			slot14 = slot4
+			slot13 = slot4.getEnergyPrint
+			slot11 = slot11(slot12, slot13(slot14))
+			slot12 = setImageSprite
+			slot13 = slot8
+			slot14 = slot11
+
+			slot12(slot13, slot14)
+
+			slot12 = setActive
+			slot13 = slot8
+			slot14 = true
+
+			slot12(slot13, slot14)
+		end
+
+		setText(findTF(slot6, "frame/lv_contain/lv"), slot4.level)
+		setActive(slot6:Find("expbuff"), slot1[slot4:getGroupId()] ~= nil)
+
+		if slot11 then
+			slot13 = slot11 / 100
+			slot14 = slot11 % 100
+			slot15 = tostring
 			slot16 = slot13
+			slot15 = slot15(slot16)
+			slot16 = 0
 
-			slot14(slot15, slot16)
-
-			slot14 = setActive
-			slot15 = slot10
-			slot16 = true
-
-			slot14(slot15, slot16)
-		end
-
-		setText(findTF(slot8, "frame/lv_contain/lv"), slot4.level)
-		setActive(slot8:Find("expbuff"), slot1[slot4:getGroupId()] ~= nil)
-
-		if slot13 then
-			slot15 = slot13 / 100
-			slot16 = slot13 % 100
-			slot17 = tostring
-			slot18 = slot15
-			slot17 = slot17(slot18)
-			slot18 = 0
-
-			if slot16 > slot18 then
-				slot18 = slot17
-				slot19 = "."
-				slot20 = tostring
-				slot21 = slot16
-				slot20 = slot20(slot21)
-				slot17 = slot18 .. slot19 .. slot20
+			if slot14 > slot16 then
+				slot16 = slot15
+				slot17 = "."
+				slot18 = tostring
+				slot19 = slot14
+				slot18 = slot18(slot19)
+				slot15 = slot16 .. slot17 .. slot18
 			end
 
-			slot18 = setText
-			slot20 = slot14
-			slot19 = slot14.Find
-			slot21 = "text"
-			slot19 = slot19(slot20, slot21)
-			slot20 = string
-			slot20 = slot20.format
-			slot21 = "EXP +%s%%"
-			slot22 = slot17
+			slot16 = setText
+			slot18 = slot12
+			slot17 = slot12.Find
+			slot19 = "text"
+			slot17 = slot17(slot18, slot19)
+			slot18 = string
+			slot18 = slot18.format
+			slot19 = "EXP +%s%%"
+			slot20 = slot15
 
-			slot18(slot19, slot20(slot21, slot22))
+			slot16(slot17, slot18(slot19, slot20))
 		end
 
-		slot15 = tf
-		slot16 = slot0
-		slot15 = slot15(slot16)
-		slot17 = slot15
-		slot16 = slot15.SetParent
-		slot18 = slot5
-		slot19 = false
-
-		slot16(slot17, slot18, slot19)
-
-		slot16 = "model"
-		slot0.name = slot16
-		slot17 = slot0
-		slot16 = slot0.GetComponent
-		slot18 = "SkeletonGraphic"
-		slot16 = slot16(slot17, slot18)
+		slot13 = tf
+		slot14 = slot0
+		slot13 = slot13(slot14)
+		slot15 = slot13
+		slot14 = slot13.SetParent
+		slot16 = slot5
 		slot17 = false
-		slot16.raycastTarget = slot17
-		slot17 = slot4
-		slot16 = slot4.getAttachmentPrefab
-		slot16 = slot16(slot17)
-		slot17 = pairs
-		slot18 = slot16
-		slot17, slot18, slot19 = slot17(slot18)
 
-		for slot20, slot21 in slot17, slot18, slot19 do
-			slot22 = slot21.attachment_combat_ui
-			slot22 = slot22[1]
+		slot14(slot15, slot16, slot17)
 
-			if slot22 ~= "" then
-				slot23 = "Effect/"
-				slot24 = slot22
-				slot23 = slot23 .. slot24
-				slot24 = ResourceMgr
-				slot24 = slot24.Inst
-				slot25 = slot24
-				slot24 = slot24.getAssetAsync
-				slot26 = slot23
-				slot27 = slot22
-				slot28 = UnityEngine
-				slot28 = slot28.Events
-				slot28 = slot28.UnityAction_UnityEngine_Object
+		slot14 = "model"
+		slot0.name = slot14
+		slot15 = slot0
+		slot14 = slot0.GetComponent
+		slot16 = "SkeletonGraphic"
+		slot14 = slot14(slot15, slot16)
+		slot15 = false
+		slot14.raycastTarget = slot15
+		slot15 = slot4
+		slot14 = slot4.getAttachmentPrefab
+		slot14 = slot14(slot15)
+		slot15 = pairs
+		slot16 = slot14
+		slot15, slot16, slot17 = slot15(slot16)
 
-				function slot29(slot0)
+		for slot18, slot19 in slot15, slot16, slot17 do
+			slot20 = slot19.attachment_combat_ui
+			slot20 = slot20[1]
+
+			if slot20 ~= "" then
+				slot21 = "Effect/"
+				slot22 = slot20
+				slot21 = slot21 .. slot22
+				slot22 = ResourceMgr
+				slot22 = slot22.Inst
+				slot23 = slot22
+				slot22 = slot22.getAssetAsync
+				slot24 = slot21
+				slot25 = slot20
+				slot26 = UnityEngine
+				slot26 = slot26.Events
+				slot26 = slot26.UnityAction_UnityEngine_Object
+
+				function slot27(slot0)
 					slot1 = slot0
 					slot1 = slot1.exited
 
@@ -1846,114 +1769,114 @@ function slot1(slot0)
 					end
 				end
 
-				slot28 = slot28(slot29)
-				slot29 = true
-				slot30 = true
+				slot26 = slot26(slot27)
+				slot27 = true
+				slot28 = true
 
-				slot24(slot25, slot26, slot27, slot28, slot29, slot30)
+				slot22(slot23, slot24, slot25, slot26, slot27, slot28)
 			end
 		end
 
-		slot17 = Vector3
-		slot18 = 0.8
-		slot19 = 0.8
-		slot20 = 1
-		slot17 = slot17(slot18, slot19, slot20)
-		slot15.localScale = slot17
-		slot17 = pg
-		slot17 = slot17.ViewUtils
-		slot17 = slot17.SetLayer
-		slot18 = slot15
-		slot19 = Layer
-		slot19 = slot19.UI
+		slot15 = Vector3
+		slot16 = 0.8
+		slot17 = 0.8
+		slot18 = 1
+		slot15 = slot15(slot16, slot17, slot18)
+		slot13.localScale = slot15
+		slot15 = pg
+		slot15 = slot15.ViewUtils
+		slot15 = slot15.SetLayer
+		slot16 = slot13
+		slot17 = Layer
+		slot17 = slot17.UI
 
-		slot17(slot18, slot19)
+		slot15(slot16, slot17)
 
-		slot18 = slot8
-		slot17 = slot8.SetSiblingIndex
-		slot19 = 2
+		slot16 = slot6
+		slot15 = slot6.SetSiblingIndex
+		slot17 = 2
 
-		slot17(slot18, slot19)
+		slot15(slot16, slot17)
 
-		slot17 = slot0
-		slot17 = slot17._characterList
-		slot17 = slot17[slot2]
-		slot17[slot3] = slot5
-		slot18 = GameObject
-		slot19 = "mouseChild"
-		slot18 = slot18(slot19)
+		slot15 = slot0
+		slot15 = slot15._characterList
+		slot15 = slot15[slot2]
+		slot15[slot3] = slot5
+		slot16 = GameObject
+		slot17 = "mouseChild"
+		slot16 = slot16(slot17)
+		slot17 = tf
+		slot18 = slot16
+		slot17 = slot17(slot18)
+		slot18 = slot17
+		slot17 = slot17.SetParent
 		slot19 = tf
-		slot20 = slot18
-		slot19 = slot19(slot20)
-		slot20 = slot19
-		slot19 = slot19.SetParent
-		slot21 = tf
-		slot22 = slot0
+		slot20 = slot0
 
-		slot19(slot20, slot21(slot22))
+		slot17(slot18, slot19(slot20))
 
-		slot19 = tf
-		slot20 = slot18
-		slot19 = slot19(slot20)
-		slot20 = Vector3
-		slot20 = slot20.zero
-		slot19.localPosition = slot20
+		slot17 = tf
+		slot18 = slot16
+		slot17 = slot17(slot18)
+		slot18 = Vector3
+		slot18 = slot18.zero
+		slot17.localPosition = slot18
+		slot17 = GetOrAddComponent
+		slot18 = slot16
+		slot19 = "ModelDrag"
+		slot17 = slot17(slot18, slot19)
+		slot18 = GetOrAddComponent
+		slot19 = slot16
+		slot20 = "UILongPressTrigger"
+		slot18 = slot18(slot19, slot20)
 		slot19 = GetOrAddComponent
-		slot20 = slot18
-		slot21 = "ModelDrag"
+		slot20 = slot16
+		slot21 = "EventTriggerListener"
 		slot19 = slot19(slot20, slot21)
-		slot20 = GetOrAddComponent
-		slot21 = slot18
-		slot22 = "UILongPressTrigger"
-		slot20 = slot20(slot21, slot22)
-		slot21 = GetOrAddComponent
-		slot22 = slot18
-		slot23 = "EventTriggerListener"
+		slot20 = slot0
+		slot20 = slot20.eventTriggers
+		slot21 = true
+		slot20[slot19] = slot21
+		slot21 = slot17
+		slot20 = slot17.Init
+
+		slot20(slot21)
+
+		slot21 = slot16
+		slot20 = slot16.GetComponent
+		slot22 = typeof
+		slot23 = RectTransform
+		slot20 = slot20(slot21, slot22(slot23))
+		slot21 = Vector2
+		slot22 = 3
+		slot23 = 3
 		slot21 = slot21(slot22, slot23)
+		slot20.sizeDelta = slot21
+		slot21 = Vector2
+		slot22 = 0.5
+		slot23 = 0
+		slot21 = slot21(slot22, slot23)
+		slot20.pivot = slot21
+		slot21 = Vector2
+		slot22 = 0
+		slot23 = 0
+		slot21 = slot21(slot22, slot23)
+		slot20.anchoredPosition = slot21
+		slot21 = 1
+		slot18.longPressThreshold = slot21
+		slot21 = pg
+		slot21 = slot21.DelegateInfo
+		slot21 = slot21.Add
 		slot22 = slot0
-		slot22 = slot22.eventTriggers
-		slot23 = true
-		slot22[slot21] = slot23
-		slot23 = slot19
-		slot22 = slot19.Init
+		slot23 = slot18.onLongPressed
 
-		slot22(slot23)
+		slot21(slot22, slot23)
 
-		slot23 = slot18
-		slot22 = slot18.GetComponent
-		slot24 = typeof
-		slot25 = RectTransform
-		slot22 = slot22(slot23, slot24(slot25))
-		slot23 = Vector2
-		slot24 = 3
-		slot25 = 3
-		slot23 = slot23(slot24, slot25)
-		slot22.sizeDelta = slot23
-		slot23 = Vector2
-		slot24 = 0.5
-		slot25 = 0
-		slot23 = slot23(slot24, slot25)
-		slot22.pivot = slot23
-		slot23 = Vector2
-		slot24 = 0
-		slot25 = 0
-		slot23 = slot23(slot24, slot25)
-		slot22.anchoredPosition = slot23
-		slot23 = 1
-		slot20.longPressThreshold = slot23
-		slot23 = pg
-		slot23 = slot23.DelegateInfo
-		slot23 = slot23.Add
-		slot24 = slot0
-		slot25 = slot20.onLongPressed
+		slot21 = slot18.onLongPressed
+		slot22 = slot21
+		slot21 = slot21.AddListener
 
-		slot23(slot24, slot25)
-
-		slot23 = slot20.onLongPressed
-		slot24 = slot23
-		slot23 = slot23.AddListener
-
-		function slot25()
+		function slot23()
 			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.emit
@@ -1974,22 +1897,22 @@ function slot1(slot0)
 			slot0(slot1)
 		end
 
-		slot23(slot24, slot25)
+		slot21(slot22, slot23)
 
-		slot23, slot24, slot25, slot26 = nil
-		slot27 = pg
-		slot27 = slot27.DelegateInfo
-		slot27 = slot27.Add
-		slot28 = slot0
-		slot29 = slot19.onModelClick
+		slot21, slot22, slot23, slot24 = nil
+		slot25 = pg
+		slot25 = slot25.DelegateInfo
+		slot25 = slot25.Add
+		slot26 = slot0
+		slot27 = slot17.onModelClick
 
-		slot27(slot28, slot29)
+		slot25(slot26, slot27)
 
-		slot27 = slot19.onModelClick
-		slot28 = slot27
-		slot27 = slot27.AddListener
+		slot25 = slot17.onModelClick
+		slot26 = slot25
+		slot25 = slot25.AddListener
 
-		function slot29()
+		function slot27()
 			slot0 = slot0
 			slot1 = slot0
 			slot0 = slot0.emit
@@ -2010,12 +1933,12 @@ function slot1(slot0)
 			slot0(slot1)
 		end
 
-		slot27(slot28, slot29)
+		slot25(slot26, slot27)
 
-		slot28 = slot21
-		slot27 = slot21.AddBeginDragFunc
+		slot26 = slot19
+		slot25 = slot19.AddBeginDragFunc
 
-		function slot29()
+		function slot27()
 			slot0 = slot0
 			slot0 = slot0._modelDrag
 
@@ -2107,12 +2030,12 @@ function slot1(slot0)
 			slot0(slot1)
 		end
 
-		slot27(slot28, slot29)
+		slot25(slot26, slot27)
 
-		slot28 = slot21
-		slot27 = slot21.AddDragFunc
+		slot26 = slot19
+		slot25 = slot19.AddDragFunc
 
-		function slot29(slot0, slot1)
+		function slot27(slot0, slot1)
 			slot2 = slot0
 			slot2 = slot2._modelDrag
 			slot3 = slot1
@@ -2140,12 +2063,12 @@ function slot1(slot0)
 			slot2.localPosition = slot3
 		end
 
-		slot27(slot28, slot29)
+		slot25(slot26, slot27)
 
-		slot28 = slot21
-		slot27 = slot21.AddDragEndFunc
+		slot26 = slot19
+		slot25 = slot19.AddDragEndFunc
 
-		function slot29(slot0, slot1)
+		function slot27(slot0, slot1)
 			slot2 = slot0
 			slot2 = slot2._modelDrag
 			slot3 = slot1
@@ -2177,22 +2100,6 @@ function slot1(slot0)
 
 			slot3(slot4, slot5)
 
-			if slot2 then
-				slot3 = slot0
-				slot4 = slot3
-				slot3 = slot3.switchToDisplayMode
-
-				slot3(slot4)
-
-				slot3 = slot0
-				slot4 = slot3
-				slot3 = slot3.sortSiblingIndex
-
-				slot3(slot4)
-
-				return
-			end
-
 			function slot3()
 				slot0 = slot0
 				slot1 = slot0
@@ -2215,6 +2122,14 @@ function slot1(slot0)
 				slot3 = slot3._currentFleetVO
 
 				slot0(slot1, slot2, slot3)
+			end
+
+			if slot2 then
+				slot4 = slot3
+
+				slot4()
+
+				return
 			end
 
 			slot4 = slot1.position
@@ -2323,16 +2238,20 @@ function slot1(slot0)
 
 											slot5(slot6)
 
+											slot5 = slot3
+											slot6 = slot1
+											slot6 = slot6.name
+											slot5.name = slot6
 											slot5 = PoolMgr
 											slot5 = slot5.GetInstance
 											slot5 = slot5()
 											slot6 = slot5
 											slot5 = slot5.ReturnSpineChar
-											slot7 = slot3
+											slot7 = slot4
 											slot8 = slot7
 											slot7 = slot7.getPrefab
 											slot7 = slot7(slot8)
-											slot8 = slot4
+											slot8 = slot3
 
 											slot5(slot6, slot7, slot8)
 
@@ -2364,7 +2283,7 @@ function slot1(slot0)
 									slot0 = slot0.emit
 									slot2 = FormationMediator
 									slot2 = slot2.REMOVE_SHIP
-									slot3 = slot3
+									slot3 = slot4
 									slot4 = slot5
 									slot4 = slot4._currentFleetVO
 
@@ -2391,16 +2310,16 @@ function slot1(slot0)
 			slot4(slot5)
 		end
 
-		slot27(slot28, slot29)
+		slot25(slot26, slot27)
 
-		slot27 = slot0
-		slot28 = slot27
-		slot27 = slot27.setCharacterPos
-		slot29 = slot2
-		slot30 = slot3
-		slot31 = slot5
+		slot25 = slot0
+		slot26 = slot25
+		slot25 = slot25.setCharacterPos
+		slot27 = slot2
+		slot28 = slot3
+		slot29 = slot5
 
-		slot27(slot28, slot29, slot30, slot31)
+		slot25(slot26, slot27, slot28, slot29)
 	end
 
 	slot4 = {}
@@ -2462,16 +2381,16 @@ function slot1(slot0)
 		slot7 = slot5
 		slot8 = slot0._currentFleetVO
 		slot8 = slot8.vanguardShips
-		slot9 = Fleet
-		slot9 = slot9.VANGUARD
+		slot9 = TeamType
+		slot9 = slot9.Vanguard
 
 		slot7(slot8, slot9)
 
 		slot7 = slot5
 		slot8 = slot0._currentFleetVO
 		slot8 = slot8.mainShips
-		slot9 = Fleet
-		slot9 = slot9.MAIN
+		slot9 = TeamType
+		slot9 = slot9.Main
 
 		slot7(slot8, slot9)
 	else
@@ -2482,8 +2401,8 @@ function slot1(slot0)
 			slot7 = slot5
 			slot8 = slot0._currentFleetVO
 			slot8 = slot8.subShips
-			slot9 = Fleet
-			slot9 = slot9.SUBMARINE
+			slot9 = TeamType
+			slot9 = slot9.Submarine
 
 			slot7(slot8, slot9)
 		end
@@ -2537,14 +2456,14 @@ slot0.loadAllCharacter = slot1
 
 function slot1(slot0)
 	slot1 = {}
-	slot2 = Fleet
-	slot2 = slot2.MAIN
+	slot2 = TeamType
+	slot2 = slot2.Main
 	slot1[1] = slot2
-	slot2 = Fleet
-	slot2 = slot2.VANGUARD
+	slot2 = TeamType
+	slot2 = slot2.Vanguard
 	slot1[2] = slot2
-	slot2 = Fleet
-	slot2 = slot2.SUBMARINE
+	slot2 = TeamType
+	slot2 = slot2.Submarine
 	slot1[3] = slot2
 	slot2 = _
 	slot2 = slot2.each
@@ -2672,15 +2591,15 @@ function slot1(slot0, slot1)
 		slot9(slot10, slot11)
 	end
 
-	slot4 = Fleet
-	slot4 = slot4.MAIN
+	slot4 = TeamType
+	slot4 = slot4.Main
 
 	if slot1 == slot4 then
 		slot4 = slot0._currentFleetVO
 		slot5 = slot4
 		slot4 = slot4.getTeamByName
-		slot6 = Fleet
-		slot6 = slot6.VANGUARD
+		slot6 = TeamType
+		slot6 = slot6.Vanguard
 		slot4 = slot4(slot5, slot6)
 		slot4 = #slot4
 
@@ -2778,8 +2697,8 @@ end
 slot0.resetGrid = slot1
 
 function slot1(slot0)
-	SetActive(slot0._gridTFs.main[1]:Find("flag"), #slot0._currentFleetVO:getTeamByName(Fleet.MAIN) ~= 0)
-	SetActive(slot0._gridTFs.submarine[1]:Find("flag"), #slot0._currentFleetVO:getTeamByName(Fleet.SUBMARINE) ~= 0)
+	SetActive(slot0._gridTFs.main[1]:Find("flag"), #slot0._currentFleetVO:getTeamByName(TeamType.Main) ~= 0)
+	SetActive(slot0._gridTFs.submarine[1]:Find("flag"), #slot0._currentFleetVO:getTeamByName(TeamType.Submarine) ~= 0)
 end
 
 slot0.resetFormationComponent = slot1
@@ -2791,14 +2710,14 @@ function slot1(slot0, slot1, slot2)
 
 	for slot6 = slot3, slot4, slot5 do
 		slot7 = {}
-		slot8 = Fleet
-		slot8 = slot8.VANGUARD
+		slot8 = TeamType
+		slot8 = slot8.Vanguard
 		slot7[1] = slot8
-		slot8 = Fleet
-		slot8 = slot8.MAIN
+		slot8 = TeamType
+		slot8 = slot8.Main
 		slot7[2] = slot8
-		slot8 = Fleet
-		slot8 = slot8.SUBMARINE
+		slot8 = TeamType
+		slot8 = slot8.Submarine
 		slot7[3] = slot8
 		slot8 = _
 		slot8 = slot8.each
@@ -2980,24 +2899,24 @@ function slot1(slot0)
 
 	slot2 = slot1
 	slot3 = slot0._characterList
-	slot4 = Fleet
-	slot4 = slot4.VANGUARD
+	slot4 = TeamType
+	slot4 = slot4.Vanguard
 	slot3 = slot3[slot4]
 
 	slot2(slot3)
 
 	slot2 = slot1
 	slot3 = slot0._characterList
-	slot4 = Fleet
-	slot4 = slot4.MAIN
+	slot4 = TeamType
+	slot4 = slot4.Main
 	slot3 = slot3[slot4]
 
 	slot2(slot3)
 
 	slot2 = slot1
 	slot3 = slot0._characterList
-	slot4 = Fleet
-	slot4 = slot4.SUBMARINE
+	slot4 = TeamType
+	slot4 = slot4.Submarine
 	slot3 = slot3[slot4]
 
 	slot2(slot3)
@@ -3079,8 +2998,8 @@ function slot1(slot0)
 
 	for slot6, slot7 in slot3, slot4, slot5 do
 		slot8 = slot0._characterList
-		slot9 = Fleet
-		slot9 = slot9.MAIN
+		slot9 = TeamType
+		slot9 = slot9.Main
 		slot8 = slot8[slot9]
 		slot8 = slot8[slot7]
 
@@ -3103,8 +3022,8 @@ function slot1(slot0)
 
 	while slot3 > slot4 do
 		slot4 = slot0._characterList
-		slot5 = Fleet
-		slot5 = slot5.VANGUARD
+		slot5 = TeamType
+		slot5 = slot5.Vanguard
 		slot4 = slot4[slot5]
 		slot4 = slot4[slot3]
 
@@ -3129,8 +3048,8 @@ function slot1(slot0)
 
 	while slot3 > slot4 do
 		slot4 = slot0._characterList
-		slot5 = Fleet
-		slot5 = slot5.SUBMARINE
+		slot5 = TeamType
+		slot5 = slot5.Submarine
 		slot4 = slot4[slot5]
 		slot4 = slot4[slot3]
 
@@ -3151,14 +3070,14 @@ function slot1(slot0)
 	end
 
 	slot4 = {}
-	slot5 = Fleet
-	slot5 = slot5.MAIN
+	slot5 = TeamType
+	slot5 = slot5.Main
 	slot4[1] = slot5
-	slot5 = Fleet
-	slot5 = slot5.VANGUARD
+	slot5 = TeamType
+	slot5 = slot5.Vanguard
 	slot4[2] = slot5
-	slot5 = Fleet
-	slot5 = slot5.SUBMARINE
+	slot5 = TeamType
+	slot5 = slot5.Submarine
 	slot4[3] = slot5
 	slot5 = _
 	slot5 = slot5.each
@@ -3246,24 +3165,24 @@ function slot1(slot0)
 	slot3 = slot0._currentFleetVO
 	slot4 = slot3
 	slot3 = slot3.GetGearScoreSum
-	slot5 = Fleet
-	slot5 = slot5.VANGUARD
+	slot5 = TeamType
+	slot5 = slot5.Vanguard
 	slot2 = slot2(slot3(slot4, slot5))
 	slot3 = math
 	slot3 = slot3.floor
 	slot4 = slot0._currentFleetVO
 	slot5 = slot4
 	slot4 = slot4.GetGearScoreSum
-	slot6 = Fleet
-	slot6 = slot6.MAIN
+	slot6 = TeamType
+	slot6 = slot6.Main
 	slot3 = slot3(slot4(slot5, slot6))
 	slot4 = math
 	slot4 = slot4.floor
 	slot5 = slot0._currentFleetVO
 	slot6 = slot5
 	slot5 = slot5.GetGearScoreSum
-	slot7 = Fleet
-	slot7 = slot7.SUBMARINE
+	slot7 = TeamType
+	slot7 = slot7.Submarine
 	slot4 = slot4(slot5(slot6, slot7))
 	slot5 = slot0._currentFleetVO
 	slot6 = slot5
@@ -3381,9 +3300,8 @@ function slot1(slot0)
 		slot10 = "Text"
 		slot8 = slot8(slot9, slot10)
 		slot9 = slot2
-		slot10, slot11 = nil
 
-		slot7(slot8, slot9, slot10, slot11)
+		slot7(slot8, slot9)
 
 		slot7 = slot0.VanGSInited
 
@@ -3404,9 +3322,8 @@ function slot1(slot0)
 		slot10 = "Text"
 		slot8 = slot8(slot9, slot10)
 		slot9 = slot3
-		slot10, slot11 = nil
 
-		slot7(slot8, slot9, slot10, slot11)
+		slot7(slot8, slot9)
 
 		slot7 = slot0.mainGSInited
 
@@ -3458,9 +3375,8 @@ function slot1(slot0)
 			slot10 = "Text"
 			slot8 = slot8(slot9, slot10)
 			slot9 = slot4
-			slot10, slot11 = nil
 
-			slot7(slot8, slot9, slot10, slot11)
+			slot7(slot8, slot9)
 
 			slot7 = slot0.SubGSInited
 
@@ -3625,18 +3541,18 @@ slot0.displayAttrFrame = slot1
 
 function slot1(slot0)
 	slot1 = {}
-	slot2 = Fleet
-	slot2 = slot2.MAIN
+	slot2 = TeamType
+	slot2 = slot2.Main
 	slot3 = slot0._currentFleetVO
 	slot3 = slot3.mainShips
 	slot1[slot2] = slot3
-	slot2 = Fleet
-	slot2 = slot2.VANGUARD
+	slot2 = TeamType
+	slot2 = slot2.Vanguard
 	slot3 = slot0._currentFleetVO
 	slot3 = slot3.vanguardShips
 	slot1[slot2] = slot3
-	slot2 = Fleet
-	slot2 = slot2.SUBMARINE
+	slot2 = TeamType
+	slot2 = slot2.Submarine
 	slot3 = slot0._currentFleetVO
 	slot3 = slot3.subShips
 	slot1[slot2] = slot3
@@ -3694,18 +3610,18 @@ slot0.initAttrFrame = slot1
 
 function slot1(slot0)
 	slot1 = {}
-	slot2 = Fleet
-	slot2 = slot2.MAIN
+	slot2 = TeamType
+	slot2 = slot2.Main
 	slot3 = slot0._currentFleetVO
 	slot3 = slot3.mainShips
 	slot1[slot2] = slot3
-	slot2 = Fleet
-	slot2 = slot2.VANGUARD
+	slot2 = TeamType
+	slot2 = slot2.Vanguard
 	slot3 = slot0._currentFleetVO
 	slot3 = slot3.vanguardShips
 	slot1[slot2] = slot3
-	slot2 = Fleet
-	slot2 = slot2.SUBMARINE
+	slot2 = TeamType
+	slot2 = slot2.Submarine
 	slot3 = slot0._currentFleetVO
 	slot3 = slot3.subShips
 	slot1[slot2] = slot3
@@ -3728,7 +3644,7 @@ function slot1(slot0)
 			slot9 = slot9.Submarine
 
 			if slot2 == slot9 then
-				slot9 = slot6 == Fleet.VANGUARD
+				slot9 = slot6 == TeamType.Vanguard
 				slot10 = 1
 				slot11 = 3
 				slot12 = 1
@@ -3785,9 +3701,9 @@ function slot1(slot0)
 		end
 	end
 
-	setActive(slot0:findTF(Fleet.MAIN, slot0._attrFrame), slot2 == FleetType.Normal)
-	setActive(slot0:findTF(Fleet.SUBMARINE, slot0._attrFrame), slot2 == FleetType.Submarine)
-	setActive(slot0:findTF(Fleet.VANGUARD .. "/vanguard", slot0._attrFrame), slot2 ~= FleetType.Submarine)
+	setActive(slot0:findTF(TeamType.Main, slot0._attrFrame), slot2 == FleetType.Normal)
+	setActive(slot0:findTF(TeamType.Submarine, slot0._attrFrame), slot2 == FleetType.Submarine)
+	setActive(slot0:findTF(TeamType.Vanguard .. "/vanguard", slot0._attrFrame), slot2 ~= FleetType.Submarine)
 	slot0:updateUltimateTitle()
 end
 
@@ -3795,8 +3711,8 @@ slot0.updateAttrFrame = slot1
 
 function slot1(slot0)
 	slot1 = slot0._cards
-	slot2 = Fleet
-	slot2 = slot2.MAIN
+	slot2 = TeamType
+	slot2 = slot2.Main
 	slot1 = slot1[slot2]
 	slot2 = slot0._currentFleetVO
 	slot2 = slot2.mainShips
@@ -4765,11 +4681,11 @@ function slot1(slot0, slot1)
 		slot4(slot5(slot6))
 
 		slot4 = slot2.localPosition
-		slot5 = 46
+		slot5 = 80
 		slot4.y = slot5
 		slot2.localPosition = slot4
 		slot5 = slot3.localPosition
-		slot6 = 46
+		slot6 = 80
 		slot5.y = slot6
 		slot3.localPosition = slot5
 		--- END OF BLOCK #0 ---
@@ -4810,7 +4726,7 @@ function slot1(slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 5-30, warpins: 0 ---
+	--- BLOCK #1 5-33, warpins: 0 ---
 	for slot6, slot7 in slot3, slot4, slot5 do
 
 		-- Decompilation error in this vicinity:
@@ -4829,12 +4745,15 @@ function slot1(slot0, slot1, slot2)
 			if slot8 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 14-26, warpins: 1 ---
+				--- BLOCK #0 14-29, warpins: 1 ---
 				slot9 = slot0.shipVOs
 				slot9 = slot9[slot7]
 				slot10 = slot9
 				slot9 = slot9.getPrefab
 				slot9 = slot9(slot10)
+				slot10 = slot2[slot6]
+				slot10 = slot10.name
+				slot8.name = slot10
 				slot10 = PoolMgr
 				slot10 = slot10.GetInstance
 				slot10 = slot10()
@@ -4857,7 +4776,7 @@ function slot1(slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 27-28, warpins: 2 ---
+			--- BLOCK #1 30-31, warpins: 2 ---
 			slot9 = nil
 			slot2[slot6] = slot9
 			--- END OF BLOCK #1 ---
@@ -4872,7 +4791,7 @@ function slot1(slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 29-30, warpins: 3 ---
+		--- BLOCK #1 32-33, warpins: 3 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -4886,7 +4805,7 @@ function slot1(slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 31-31, warpins: 1 ---
+	--- BLOCK #2 34-34, warpins: 1 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -5084,8 +5003,8 @@ function slot1(slot0)
 	slot3 = slot0._currentFleetVO
 	slot3 = slot3.mainShips
 	slot4 = slot0._characterList
-	slot5 = Fleet
-	slot5 = slot5.MAIN
+	slot5 = TeamType
+	slot5 = slot5.Main
 	slot4 = slot4[slot5]
 
 	slot1(slot2, slot3, slot4)
@@ -5095,8 +5014,8 @@ function slot1(slot0)
 	slot3 = slot0._currentFleetVO
 	slot3 = slot3.vanguardShips
 	slot4 = slot0._characterList
-	slot5 = Fleet
-	slot5 = slot5.VANGUARD
+	slot5 = TeamType
+	slot5 = slot5.Vanguard
 	slot4 = slot4[slot5]
 
 	slot1(slot2, slot3, slot4)
@@ -5106,8 +5025,8 @@ function slot1(slot0)
 	slot3 = slot0._currentFleetVO
 	slot3 = slot3.subShips
 	slot4 = slot0._characterList
-	slot5 = Fleet
-	slot5 = slot5.SUBMARINE
+	slot5 = TeamType
+	slot5 = slot5.Submarine
 	slot4 = slot4[slot5]
 
 	slot1(slot2, slot3, slot4)

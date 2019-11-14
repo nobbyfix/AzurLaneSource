@@ -1629,11 +1629,11 @@ slot0.canDestroyShip = function (slot0, slot1)
 					slot2, slot3 = slot1:canRemoveByShipId(slot0.id)
 
 					if not slot2 then
-						if slot3 == Fleet.VANGUARD then
+						if slot3 == TeamType.Vanguard then
 							pg.TipsMgr.GetInstance():ShowTips(i18n("ship_vo_vanguardFleet_must_hasShip"))
 
 							return
-						elseif slot3 == Fleet.MAIN then
+						elseif slot3 == TeamType.Main then
 							pg.TipsMgr.GetInstance():ShowTips(i18n("ship_vo_mainFleet_must_hasShip"))
 
 							return
@@ -1961,11 +1961,11 @@ slot0.ChangeStateCheckBox = function (slot0, slot1, slot2)
 					slot2, slot3 = slot1:canRemoveByShipId(slot0.id)
 
 					if not slot2 then
-						if slot3 == Fleet.VANGUARD then
+						if slot3 == TeamType.Vanguard then
 							pg.TipsMgr.GetInstance():ShowTips(i18n("ship_vo_vanguardFleet_must_hasShip"))
 
 							return
-						elseif slot3 == Fleet.MAIN then
+						elseif slot3 == TeamType.Main then
 							pg.TipsMgr.GetInstance():ShowTips(i18n("ship_vo_mainFleet_must_hasShip"))
 
 							return

@@ -103,6 +103,7 @@ slot0.init = function (slot0)
 	slot0._leftPanel = slot0:findTF("toTop/frame/leftPanel")
 	slot0._hideBtn = slot0:findTF("toTop/frame/leftPanel/hideButton")
 	slot0._cameraBtn = slot0:findTF("toTop/frame/leftPanel/cameraButton")
+	slot0._changeBtn = slot0:findTF("toTop/frame/leftPanel/changeBtn")
 	slot0._chatBtn = slot0:findTF("toTop/frame/leftPanel/chatButton")
 	slot0._monthCardBtn = slot0:findTF("toTop/frame/leftPanel/monthCardButton")
 	slot0._commissionBtn = slot0:findTF("toTop/frame/leftPanel/commissionButton")
@@ -132,10 +133,14 @@ slot0.init = function (slot0)
 	slot0._acitivtyEscortBtn = slot0:findTF("activity_escort", slot0._ActivityBtns)
 	slot0._acitivtyBossBtn = slot0:findTF("activity_boss", slot0._ActivityBtns)
 	slot0._activityMusicFestivalBtn = slot0:findTF("activity_musicfestival", slot0._ActivityBtns)
-	slot0._activityInsBtn = slot0:findTF("activity_ins", slot0._ActivityBtns)
+	slot0._activityInsBtn = slot0:findTF("toTop/frame/leftPanel/activity_ins")
 	slot0._bottomPanel = slot0:findTF("toTop/frame/bottomPanel")
 	slot0._dockBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/dockBtn")
 	slot0._equipBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/equipButton")
+	slot0._brPanel = slot0:findTF("toTop/frame/brPanel")
+	slot0._moveBtn = slot0:findTF("toTop/frame/brPanel/move")
+	slot0._moveOn = slot0:findTF("toTop/frame/brPanel/move/on")
+	slot0._moveOff = slot0:findTF("toTop/frame/brPanel/move/off")
 	slot0._voteBtn = slot0:findTF("vote_btn", slot0._ActivityBtns)
 	slot0._voteBookBtn = slot0:findTF("btm/vote_book_btn", slot0._bottomPanel)
 	slot0._buildBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/buildButton")
@@ -236,6 +241,18 @@ slot0.uiEnterAnim = function (slot0)
 	else
 		slot0:enablePartialBlur()
 	end
+
+	slot2 = getProxy(PlayerProxy)
+	slot3 = slot2:getData()
+	slot4 = getProxy(SettingsProxy):getCurrentSecretaryIndex()
+
+	if slot2:getFlag("battle") then
+		getProxy(SettingsProxy):setCurrentSecretaryIndex(math.random(#slot3.characters))
+	end
+
+	slot0:loadChar(slot5)
+
+	slot0.tempFlagShip = getProxy(BayProxy):getShipById(slot3.characters[slot4])
 
 	if slot0.tempFlagShip then
 		slot0:updateFlagShip(slot0.tempFlagShip)
@@ -406,8 +423,86 @@ slot0.emit = function (slot0, ...)
 	end
 end
 
+slot4 = nil
+
 slot0.didEnter = function (slot0)
 	slot0:setBG()
+	onToggle(slot0, slot0._moveBtn, function (slot0)
+		setActive(slot0._moveOn, slot0)
+		setActive(slot0._moveOff, not slot0)
+
+		if slot0 then
+			LeanTween.cancel(go(slot0._paintingTF))
+
+			slot0.paintMoving = true
+			slot0._bg:GetComponent(typeof(UILongPressTrigger)).enabled = false
+			slot0._paintingTF:GetComponent("CanvasGroup").blocksRaycasts = false
+			slot2 = slot0.flagShip.getPainting(slot1)
+			slot3 = getProxy(SettingsProxy):getCharacterSetting(slot0.flagShip.id, "l2d") and (slot2 == "biaoqiang" or slot2 == "z23" or slot2 == "lafei" or slot2 == "lingbo" or slot2 == "mingshi")
+			slot5 = slot0._paintingTF.anchoredPosition.x
+			slot6 = slot0._paintingTF.anchoredPosition.y
+			slot0.anchoredY = slot0._paintingTF.anchoredPosition.y
+			slot9 = slot0._tf.rect.width / UnityEngine.Screen.width
+			slot10 = slot0._tf.rect.height / UnityEngine.Screen.height
+			slot11 = slot0._paintingTF.rect.width / 2
+			slot12 = slot0._paintingTF.rect.height / 2
+			slot13, slot14 = nil
+			slot15 = GetOrAddComponent(slot0._bg, "MultiTouchZoom")
+
+			slot15:SetZoomTarget(slot0._paintingTF)
+
+			slot16 = GetOrAddComponent(slot0._bg, "EventTriggerListener")
+			slot16.enabled = true
+			slot15.enabled = true
+			slot17 = true
+
+			slot16:AddPointDownFunc(function (slot0)
+				if Input.touchCount == 1 or Application.isEditor then
+					slot0 = true
+				elseif Input.touchCount >= 2 then
+					slot0 = false
+				end
+			end)
+			slot16:AddPointUpFunc(function (slot0)
+				if Input.touchCount <= 2 then
+					slot0 = true
+				end
+			end)
+			slot16:AddBeginDragFunc(function (slot0, slot1)
+				slot0 = slot1.position.x * slot1 -  - tf(slot3._paintingTF).localPosition.x
+				slot4 = slot1.position.y * slot5 - slot6 - tf(slot3._paintingTF).localPosition.y
+			end)
+			slot16:AddDragFunc(function (slot0, slot1)
+				if slot0 then
+					if tf(slot1._paintingTF).localPosition then
+						tf(slot1._paintingTF).localPosition = Vector3(slot1.position.x * slot3 - slot4 - (), tf(slot1._paintingTF).localPosition.y, -22)
+					else
+						tf(slot1._paintingTF).localPosition = Vector3(slot1.position.x * slot3 - slot4 - (), slot1.position.y *  - slot1.position.y - slot8, -22)
+					end
+
+					slot1.anchoredY = slot9.anchoredPosition.y
+				end
+			end)
+
+			function slot1()
+				slot0.enabled = false
+				false.enabled = false
+			end
+
+			return
+		end
+
+		slot0.paintMoving = false
+		slot0._bg:GetComponent(typeof(UILongPressTrigger)).enabled = true
+		slot0._paintingTF:GetComponent("CanvasGroup").blocksRaycasts = true
+
+		slot0:paintBreath()
+
+		if slot0.paintBreath then
+			slot1()
+		end
+	end)
+	triggerToggle(slot0._moveBtn, false)
 	onButton(slot0, slot0.traingCampBtn, function ()
 		slot0:emit(MainUIMediator.OPEN_TRANINGCAMP)
 	end, SFX_PANEL)
@@ -446,6 +541,41 @@ slot0.didEnter = function (slot0)
 			})
 		end
 	end, SFX_MAIN)
+	setActive(slot0._changeBtn, #getProxy(PlayerProxy):getData().characters > 1)
+	onButton(slot0, slot0._changeBtn, function ()
+		if slot0._currentVoice then
+			slot0._currentVoice:Stop(true)
+		end
+
+		slot0._currentVoice = nil
+
+		if slot0.loadedCVBankName then
+			pg.CriMgr.UnloadCVBank(slot0.loadedCVBankName)
+
+			pg.CriMgr.UnloadCVBank.loadedCVBankName = nil
+		end
+
+		slot0._changeBtn:GetComponent(typeof(Button)).interactable = false
+
+		if #getProxy(PlayerProxy).getData(slot0).characters == 1 then
+			return
+		end
+
+		slot0:updateFlagShip(getProxy(BayProxy):getShipById(slot1.characters[getProxy(SettingsProxy):rotateCurrentSecretaryIndex()]))
+
+		if slot0.shipPrefab and slot0.shipModel then
+			PoolMgr.GetInstance():ReturnSpineChar(slot0.shipPrefab, slot0.shipModel)
+
+			slot0.shipPrefab = nil
+			slot0.shipModel = nil
+		end
+
+		slot0:loadChar(slot3:getPainting())
+
+		if slot0._lastChatTween then
+			slot0._lastChatTween:setDelay(0)
+		end
+	end)
 	onButton(slot0, slot0._mallBtn, function ()
 		slot0:emit(MainUIMediator.GO_MALL)
 	end, SFX_MAIN)
@@ -551,14 +681,17 @@ slot0.didEnter = function (slot0)
 	onButton(slot0, slot0._commanderInfoBtn, function ()
 		slot0:emit(MainUIMediator.OPEN_PLAYER_INFO_LAYER)
 	end, SFX_MAIN)
-	onButton(slot0, slot0._bg, function ()
+	GetOrAddComponent(slot0._bg, typeof(UILongPressTrigger)).onClicked:AddListener(function ()
 		if slot0._currentState == slot1.STATE_ALL_HIDE then
 			slot0:switchForm(slot1.STATE_MAIN)
 		end
-	end, SFX_MAIN)
+
+		if BUTTON_SOUND_EFFECT then
+			playSoundEffect(SFX_MAIN)
+		end
+	end)
 	onButton(slot0, slot0._paintingTF, function ()
-		if slot0._currentState == slot1.STATE_ALL_HIDE then
-			slot0:switchForm(slot1.STATE_MAIN)
+		if slot0._currentState == slot1.STATE_ALL_HIDE and getToggleState(slot0._moveBtn) then
 		elseif slot0.live2dChar then
 			slot0:AssistantEventEffect()
 		else
@@ -578,16 +711,16 @@ slot0.didEnter = function (slot0)
 	onButton(slot0, slot0._technologyBtn, function ()
 		slot0:emit(MainUIMediator.OPEN_TECHNOLOGY)
 	end, SFX_PANEL)
-	pg.DelegateInfo.Add(slot0, slot3)
-	GetOrAddComponent(slot0._paintingTF, "UILongPressTrigger").onLongPressed.RemoveAllListeners(slot3)
-	GetOrAddComponent(slot0._paintingTF, "UILongPressTrigger").onLongPressed.AddListener(slot3, function ()
+	pg.DelegateInfo.Add(slot0, slot4)
+	GetOrAddComponent(slot0._paintingTF, "UILongPressTrigger").onLongPressed.RemoveAllListeners(slot4)
+	GetOrAddComponent(slot0._paintingTF, "UILongPressTrigger").onLongPressed.AddListener(slot4, function ()
 		if slot0.live2dChar then
 			return
 		end
 
 		slot0:emit(MainUIMediator.ON_SHIP_DETAIL, slot0.flagShip)
 	end)
-	slot0:paintMove(slot0.PAINT_DEFAULT_POS_X, "mainNormal", false, 0)
+	slot0:paintMove(slot1.PAINT_DEFAULT_POS_X, "mainNormal", false, 0)
 end
 
 slot0.openSnapShot = function (slot0)
@@ -713,6 +846,15 @@ slot0.updateActivityMusicFestivalBtn = function (slot0, slot1)
 			return getProxy(MiniGameProxy).GetHubByHubId(slot0, 2).count > 0
 		end())
 	end
+
+	setActive(slot0._activityMusicFestivalBtn, getProxy(ActivityProxy):getActivityById(ActivityConst.IDOL_MEDAL_COLLECTION) and not slot3:isEnd())
+
+	if getProxy(ActivityProxy).getActivityById(ActivityConst.IDOL_MEDAL_COLLECTION) and not slot3.isEnd() then
+		setActive(slot0._activityMusicFestivalBtn:Find("tip"), slot5)
+		onButton(slot0, slot0._activityMusicFestivalBtn, function ()
+			pg.m02:sendNotification(GAME.GO_SCENE, SCENE.IDOL_MEDAL_COLLECTION_SCENE)
+		end, SFX_PANEL)
+	end
 end
 
 slot0.updateActivityPtBtn = function (slot0, slot1)
@@ -828,28 +970,6 @@ slot0.updateActivityBossBtn = function (slot0, slot1)
 	end
 end
 
-slot0.fadeBG = function (slot0, slot1)
-	slot0._newBG = Instantiate(slot0._bg:Find("bg"))
-
-	PoolMgr.GetInstance():GetSprite("bg/bg_" .. slot1, "", false, function (slot0)
-		if slot0._newBG then
-			GetOrAddComponent(slot0._newBG, "Image").sprite = slot0
-
-			slot0._newBG.transform:SetParent(slot0._bg.transform)
-
-			slot0._newBG.transform.localScale = Vector3(1, 1, 1)
-			slot0._newBG.transform.localPosition = Vector3(0, 0, 0)
-			slot0._newBG.transform.anchoredPosition = Vector3(-5, 0, 0)
-
-			LeanTween.alpha(rtf(slot0._newBG), 0, 5):setFrom(1):setOnComplete(System.Action(function ()
-				Destroy(go(slot0._newBG))
-
-				Destroy._newBG = nil
-			end))
-		end
-	end)
-end
-
 slot0.switchForm = function (slot0, slot1)
 	if slot0._currentState ~= slot1 then
 		slot0._currentState = slot1
@@ -863,6 +983,11 @@ slot0.switchForm = function (slot0, slot1)
 			slot0:ejectGimmick(slot0._playerResOb, slot0.REVERT_VERTICAL)
 			slot0:ejectGimmick(slot0._commanderPanel, slot0.REVERT_HERIZONTAL_VERTICAL)
 			slot0:ejectGimmick(slot0._commanderPanelbg, slot0.REVERT_HERIZONTAL_VERTICAL)
+			slot0:concealGimmick(slot0._brPanel, slot0.REVERT_HERIZONTAL_VERTICAL)
+
+			slot0._paintingTF.localScale = Vector3(1, 1, 1)
+
+			triggerToggle(slot0._moveBtn, false)
 			slot0:paintMove(slot0.PAINT_DEFAULT_POS_X, "mainNormal", true, 0)
 		elseif slot1 == slot0.STATE_ALL_HIDE then
 			slot0:concealGimmick(slot0._bottomPanel, slot0.DIRECTION_DOWN)
@@ -873,7 +998,10 @@ slot0.switchForm = function (slot0, slot1)
 			slot0:concealGimmick(slot0._rightTopPanel, slot0.DIRECTION_RIGHT)
 			slot0:concealGimmick(slot0._commanderPanel, slot0.DIRECTION_UP_LEFT)
 			slot0:concealGimmick(slot0._commanderPanelbg, slot0.DIRECTION_UP_LEFT)
+			slot0:ejectGimmick(slot0._brPanel, slot0.DIRECTION_UP_LEFT)
 			slot0:paintMove(slot0._paintingOffset, "mainFullScreen", true, 0, 0)
+
+			slot0.anchoredY = slot0._paintingTF.anchoredPosition.y
 		end
 	end
 end
@@ -883,13 +1011,24 @@ slot0.paintBreath = function (slot0)
 		return
 	end
 
+	slot1 = slot0.BREATH_HEIGHT
+	slot2 = slot0.DEFAULT_HEIGHT
+
+	if slot0._currentState == slot0.STATE_ALL_HIDE then
+		slot1 = slot0.anchoredY - 10
+	end
+
 	LeanTween.cancel(go(slot0._paintingTF))
-	LeanTween.moveY(rtf(slot0._paintingTF), slot0.BREATH_HEIGHT, slot0.BREATH_DURATION):setLoopPingPong():setEase(LeanTweenType.easeInOutCubic):setFrom(slot0.DEFAULT_HEIGHT)
+	LeanTween.moveY(rtf(slot0._paintingTF), slot1, slot0.BREATH_DURATION):setLoopPingPong():setEase(LeanTweenType.easeInOutCubic):setFrom(slot2)
 end
 
 slot0.paintClimax = function (slot0, slot1, slot2, slot3)
 	if slot0.live2dChar or slot0.paintMoving then
 		return
+	end
+
+	if slot0._currentState == slot0.STATE_ALL_HIDE then
+		slot1 = slot1 - slot0.DEFAULT_HEIGHT + slot0.anchoredY
 	end
 
 	if (slot3 or math.random(3) - 1) ~= 0 then
@@ -917,7 +1056,7 @@ slot0.paintMove = function (slot0, slot1, slot2, slot3, slot4, slot5)
 		end)):setEase(LeanTweenType.easeInOutSine)
 	end
 
-	slot0._bg:GetComponent("Button").enabled = false
+	slot0._bg:GetComponent("UILongPressTrigger").enabled = false
 	slot0._paintingTF:GetComponent("Button").enabled = false
 	slot0.paintMoving = true
 	slot7 = LeanTween.moveX(rtf(slot0._paintingTF), slot1, slot0.EJECT_DURATION)
@@ -932,8 +1071,8 @@ slot0.paintMove = function (slot0, slot1, slot2, slot3, slot4, slot5)
 
 		slot0:paintBreath()
 
-		slot0.paintBreath._bg:GetComponent("Button").enabled = true
-		slot0.paintBreath._bg.GetComponent("Button")._paintingTF:GetComponent("Button").enabled = true
+		slot0.paintBreath._bg:GetComponent("UILongPressTrigger").enabled = true
+		slot0.paintBreath._bg.GetComponent("UILongPressTrigger")._paintingTF:GetComponent("Button").enabled = true
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1118,11 +1257,12 @@ slot0.displayShipWord = function (slot0, slot1)
 		LeanTween.scale(rtf(slot0._chat.gameObject), Vector3.New(1, 1, 1), slot0.CHAT_ANIMATION_TIME):setEase(LeanTweenType.easeOutBack):setOnComplete(System.Action(function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-36, warpins: 1 ---
-			LeanTween.scale(rtf(slot0._chat.gameObject), Vector3.New(0, 0, 1), slot0.CHAT_ANIMATION_TIME):setEase(LeanTweenType.easeInBack):setDelay(slot0.CHAT_ANIMATION_TIME + LeanTween.scale(rtf(slot0._chat.gameObject), Vector3.New(0, 0, 1), slot0.CHAT_ANIMATION_TIME).setEase(LeanTweenType.easeInBack)):setOnComplete(System.Action(function ()
+			--- BLOCK #0 1-38, warpins: 1 ---
+			slot0._lastChatTween = LeanTween.scale(rtf(slot0._chat.gameObject), Vector3.New(0, 0, 1), slot0.CHAT_ANIMATION_TIME):setEase(LeanTweenType.easeInBack):setDelay(slot0.CHAT_ANIMATION_TIME + LeanTween.scale(rtf(slot0._chat.gameObject), Vector3.New(0, 0, 1), slot0.CHAT_ANIMATION_TIME).setEase(LeanTweenType.easeInBack).setDelay):setOnComplete(System.Action(function ()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-8, warpins: 1 ---
+				--- BLOCK #0 1-11, warpins: 1 ---
+				slot0._lastChatTween = nil
 				slot0.chatFlag = nil
 
 				slot0:startChatTimer()
@@ -1820,27 +1960,8 @@ slot0.initShipChat = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 35-43, warpins: 1 ---
-			if getProxy(PlayerProxy):getFlag("battle") then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 44-56, warpins: 1 ---
-				getProxy(PlayerProxy):setFlag("battle", nil)
-				slot0:AssistantEventEffect("home")
-				--- END OF BLOCK #0 ---
-
-
-
-			else
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 57-59, warpins: 1 ---
-				slot0:startChatTimer()
-				--- END OF BLOCK #0 ---
-
-
-
-			end
+			--- BLOCK #0 35-37, warpins: 1 ---
+			slot0:startChatTimer()
 			--- END OF BLOCK #0 ---
 
 
@@ -1859,7 +1980,7 @@ slot0.initShipChat = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 60-60, warpins: 4 ---
+	--- BLOCK #1 38-38, warpins: 3 ---
 	return
 	--- END OF BLOCK #1 ---
 
@@ -1895,10 +2016,10 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #1 17-27, warpins: 2 ---
-	if not PathMgr.FileExists(PathMgr.getAssetBundle("live2d/" .. slot1)) or not slot4:IsLive2dEnable() then
+	if not PathMgr.FileExists(PathMgr.getAssetBundle("live2d/" .. slot1)) or not slot4:getCharacterSetting(slot2.id, "l2d") then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 33-46, warpins: 2 ---
+		--- BLOCK #0 35-48, warpins: 2 ---
 		SetActive(slot3, false)
 		setPaintingPrefabAsync(slot0._paintingTF, slot1, "mainNormal", function ()
 
@@ -1941,7 +2062,7 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 21-33, warpins: 1 ---
+			--- BLOCK #2 21-43, warpins: 1 ---
 			setActive(slot0, true)
 			eachChild(slot0, function (slot0)
 
@@ -1951,10 +2072,10 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 1-6, warpins: 1 ---
-					if slot0._currentState == slot1.STATE_ALL_HIDE then
+					if slot0._currentState == slot1.STATE_ALL_HIDE and getToggleState(slot0._moveBtn) then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 7-13, warpins: 1 ---
+						--- BLOCK #0 13-19, warpins: 1 ---
 						slot0:switchForm(slot1.STATE_MAIN)
 						--- END OF BLOCK #0 ---
 
@@ -1963,7 +2084,7 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 14-32, warpins: 1 ---
+						--- BLOCK #0 20-38, warpins: 2 ---
 						slot0:AssistantEventEffect(slot2.getPaintingTouchEvents(slot3.name))
 						slot0.AssistantEventEffect:paintClimax(slot1.TOUCH_HEIGHT, slot1.TOUCH_DURATION, slot1.TOUCH_LOOP)
 						--- END OF BLOCK #0 ---
@@ -1979,7 +2100,7 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #1 33-33, warpins: 2 ---
+					--- BLOCK #1 39-39, warpins: 2 ---
 					return
 					--- END OF BLOCK #1 ---
 
@@ -1995,6 +2116,8 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 			end)
 			slot0:initShipChat()
 
+			slot0._changeBtn:GetComponent(typeof(Button)).interactable = true
+
 			return
 			--- END OF BLOCK #2 ---
 
@@ -2003,7 +2126,7 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 34-34, warpins: 2 ---
+			--- BLOCK #3 44-44, warpins: 2 ---
 			--- END OF BLOCK #3 ---
 
 			FLOW; TARGET BLOCK #4
@@ -2011,7 +2134,7 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #4 35-35, warpins: 2 ---
+			--- BLOCK #4 45-45, warpins: 2 ---
 			--- END OF BLOCK #4 ---
 
 
@@ -2025,7 +2148,7 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 47-76, warpins: 1 ---
+		--- BLOCK #0 49-78, warpins: 1 ---
 		LeanTween.cancel(go(slot0._paintingTF))
 
 		slot0.live2dChar = Live2D.New(Live2D.live2dData({
@@ -2036,8 +2159,10 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 		}), function ()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-5, warpins: 1 ---
+			--- BLOCK #0 1-15, warpins: 1 ---
 			slot0:initShipChat()
+
+			slot0.initShipChat._changeBtn:GetComponent(typeof(Button)).interactable = true
 
 			return
 			--- END OF BLOCK #0 ---
@@ -2058,7 +2183,7 @@ slot0.ShowAssistInfo = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 77-78, warpins: 2 ---
+	--- BLOCK #2 79-80, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -2571,11 +2696,28 @@ slot0.setProfileInfo = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 32-41, warpins: 2 ---
-	slot0:loadChar(slot2[slot1.character]:getPainting())
+	--- BLOCK #1 32-40, warpins: 2 ---
+	if not getProxy(PlayerProxy):getFlag("battle") then
 
-	return
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 41-56, warpins: 1 ---
+		slot0:loadChar(slot2[slot1.characters[getProxy(SettingsProxy):getCurrentSecretaryIndex()]]:getPainting())
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
 	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 57-57, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 
@@ -2798,15 +2940,15 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 44-45, warpins: 3 ---
+	--- BLOCK #1 46-47, warpins: 3 ---
 	slot0.flagShip = slot1
 
-	slot0:ShowAssistInfo(slot1:getPainting(), slot1)
+	slot0:ShowAssistInfo(slot2, slot1)
 
-	if not (getProxy(SettingsProxy):IsLive2dEnable() and (slot2 == "biaoqiang" or slot2 == "z23" or slot2 == "lafei" or slot2 == "lingbo" or slot2 == "mingshi")) then
+	if not (getProxy(SettingsProxy):getCharacterSetting(slot1.id, "l2d") and (slot2 == "biaoqiang" or slot2 == "z23" or slot2 == "lafei" or slot2 == "lingbo" or slot2 == "mingshi")) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 46-70, warpins: 1 ---
+		--- BLOCK #0 48-72, warpins: 1 ---
 		rtf(slot0._paintingTF).anchorMin = Vector2(0.5, 0.5)
 		rtf(slot0._paintingTF).anchorMax = Vector2(0.5, 0.5)
 		rtf(slot0._paintingTF).pivot = Vector2(0.5, 0.5)
@@ -2817,7 +2959,7 @@ slot0.updateFlagShip = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 71-94, warpins: 1 ---
+		--- BLOCK #0 73-96, warpins: 1 ---
 		rtf(slot0._paintingTF).anchorMin = Vector2(0.5, 0)
 		rtf(slot0._paintingTF).anchorMax = Vector2(0.5, 0)
 		rtf(slot0._paintingTF).pivot = Vector2(0.5, 0)
@@ -2834,13 +2976,13 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 95-103, warpins: 2 ---
+	--- BLOCK #2 97-105, warpins: 2 ---
 	slot4 = nil
 
 	if pg.ship_skin_template[slot0.flagShip.skinId].main_UI_FX ~= "" then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 104-105, warpins: 1 ---
+		--- BLOCK #0 106-107, warpins: 1 ---
 		slot4 = slot5
 		--- END OF BLOCK #0 ---
 
@@ -2849,11 +2991,11 @@ slot0.updateFlagShip = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 106-108, warpins: 1 ---
+		--- BLOCK #0 108-110, warpins: 1 ---
 		if slot1.propose then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 109-109, warpins: 1 ---
+			--- BLOCK #0 111-111, warpins: 1 ---
 			slot4 = "jiehuntexiao"
 			--- END OF BLOCK #0 ---
 
@@ -2873,7 +3015,7 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 110-113, warpins: 3 ---
+	--- BLOCK #3 112-115, warpins: 3 ---
 	setActive(slot0.effectTF, slot4 ~= nil)
 
 	--- END OF BLOCK #3 ---
@@ -2883,11 +3025,32 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 117-119, warpins: 2 ---
+	--- BLOCK #4 119-122, warpins: 2 ---
+	if slot0._paintingFX then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 123-139, warpins: 1 ---
+		PoolMgr.GetInstance():ReturnPrefab("Effect/" .. slot6, slot0._paintingFX.name, slot0._paintingFX.obj)
+
+		slot0._paintingFX = nil
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 140-141, warpins: 2 ---
 	if slot4 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 120-131, warpins: 1 ---
+		--- BLOCK #0 142-153, warpins: 1 ---
 		PoolMgr.GetInstance():GetPrefab("Effect/" .. slot4, slot4, true, function (slot0)
 
 			-- Decompilation error in this vicinity:
@@ -2931,25 +3094,25 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 	end
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #6
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 132-134, warpins: 2 ---
+	--- BLOCK #6 154-156, warpins: 2 ---
 	if slot0.flagShip then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 135-155, warpins: 1 ---
-		slot6 = getProxy(SettingsProxy):IsBGEnable()
+		--- BLOCK #0 157-180, warpins: 1 ---
+		slot6 = getProxy(SettingsProxy):getCharacterSetting(slot0.flagShip.id, "bg")
 		slot8 = slot0._bg:Find("bg")
 
 		if slot0.flagShip:getShipBgPrint() ~= slot0.flagShip:rarity2bgPrintForGet() and slot6 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 158-170, warpins: 1 ---
+			--- BLOCK #0 183-196, warpins: 1 ---
 			pg.DynamicBgMgr.GetInstance():LoadBg(slot0, slot7, slot0._bg, slot8, function (slot0)
 
 				-- Decompilation error in this vicinity:
@@ -2977,6 +3140,17 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 
 
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 197-213, warpins: 2 ---
+			pg.DynamicBgMgr.GetInstance():ClearBg(slot0:getUIName())
+			setActive(slot8, true)
+			slot0:setBG()
+			--- END OF BLOCK #0 ---
+
+
+
 		end
 		--- END OF BLOCK #0 ---
 
@@ -2985,23 +3159,23 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 171-171, warpins: 3 ---
+		--- BLOCK #1 214-214, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #7
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 172-173, warpins: 2 ---
+	--- BLOCK #7 215-216, warpins: 2 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -3333,7 +3507,7 @@ slot0.UpdateBtnTips = function (slot0, slot1, slot2)
 
 end
 
-slot4 = {}
+slot5 = {}
 
 slot0.updateSettingsNotice = function (slot0, slot1, slot2)
 
@@ -3483,13 +3657,21 @@ end
 slot0.UpdateInsActBtn = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 7-12, warpins: 2 ---
-	setActive(slot0._activityInsBtn, slot1 and not slot1:isEnd())
+	--- BLOCK #0 1-5, warpins: 1 ---
+	setActive(slot0._activityInsBtn, false and slot1:ExistMsg())
 
-	if slot1 and not slot1.isEnd() then
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 9-11, warpins: 2 ---
+	if slot2 and slot1:ExistMsg() then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 13-28, warpins: 1 ---
+		--- BLOCK #0 17-32, warpins: 1 ---
 		setActive(slot0._activityInsBtn:Find("tip"), slot1:ShouldShowTip())
 		onButton(slot0, slot0._activityInsBtn, function ()
 
@@ -3509,16 +3691,16 @@ slot0.UpdateInsActBtn = function (slot0, slot1)
 
 	end
 
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #1
+	FLOW; TARGET BLOCK #2
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 29-30, warpins: 2 ---
+	--- BLOCK #2 33-34, warpins: 3 ---
 	return
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -4630,14 +4812,13 @@ slot0.willExit = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #3 56-58, warpins: 2 ---
-	if slot0._newBG then
+	if slot0._paintingFX then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 59-71, warpins: 1 ---
-		LeanTween.cancel(go(slot0._newBG))
-		Destroy(go(slot0._newBG))
+		--- BLOCK #0 59-75, warpins: 1 ---
+		PoolMgr.GetInstance():ReturnPrefab("Effect/" .. slot1, slot0._paintingFX.name, slot0._paintingFX.obj)
 
-		slot0._newBG = nil
+		slot0._paintingFX = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4651,14 +4832,14 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 72-74, warpins: 2 ---
-	if slot0._paintingFX then
+	--- BLOCK #4 76-78, warpins: 2 ---
+	if slot0.chatTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 75-91, warpins: 1 ---
-		PoolMgr.GetInstance():ReturnPrefab("Effect/" .. slot1, slot0._paintingFX.name, slot0._paintingFX.obj)
+		--- BLOCK #0 79-84, warpins: 1 ---
+		slot0.chatTimer:Stop()
 
-		slot0._paintingFX = nil
+		slot0.chatTimer = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4672,14 +4853,18 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 92-94, warpins: 2 ---
-	if slot0.chatTimer then
+	--- BLOCK #5 85-97, warpins: 2 ---
+	pg.TimeMgr.GetInstance():RemoveTimer(slot0._timeSchedule)
+
+	slot0._timeSchedule = nil
+
+	if slot0._resPanel then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 95-100, warpins: 1 ---
-		slot0.chatTimer:Stop()
+		--- BLOCK #0 98-103, warpins: 1 ---
+		slot0._resPanel:exit()
 
-		slot0.chatTimer = nil
+		slot0._resPanel = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4693,18 +4878,12 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 101-113, warpins: 2 ---
-	pg.TimeMgr.GetInstance():RemoveTimer(slot0._timeSchedule)
-
-	slot0._timeSchedule = nil
-
-	if slot0._resPanel then
+	--- BLOCK #6 104-106, warpins: 2 ---
+	if slot0.flagShip then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 114-119, warpins: 1 ---
-		slot0._resPanel:exit()
-
-		slot0._resPanel = nil
+		--- BLOCK #0 107-113, warpins: 1 ---
+		retPaintingPrefab(slot0._paintingTF, slot0.flagShip:getPainting())
 		--- END OF BLOCK #0 ---
 
 
@@ -4718,12 +4897,14 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 120-122, warpins: 2 ---
-	if slot0.flagShip then
+	--- BLOCK #7 114-116, warpins: 2 ---
+	if slot0.live2dChar then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 123-129, warpins: 1 ---
-		retPaintingPrefab(slot0._paintingTF, slot0.flagShip:getPainting())
+		--- BLOCK #0 117-122, warpins: 1 ---
+		slot0.live2dChar:Dispose()
+
+		slot0.live2dChar = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4737,20 +4918,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #8 130-132, warpins: 2 ---
-	if slot0.live2dChar then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 133-138, warpins: 1 ---
-		slot0.live2dChar:Dispose()
-
-		slot0.live2dChar = nil
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
+	--- BLOCK #8 123-128, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -4758,7 +4926,19 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #9 139-144, warpins: 2 ---
+	--- BLOCK #9 129-143, warpins: 0 ---
+	for slot4 = slot0.bannerContent.childCount - 1, 0, -1 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 129-143, warpins: 2 ---
+		clearImageSprite(slot0.bannerContent:GetChild(slot4))
+		Destroy(slot0.bannerSnap:RemoveChild(slot4))
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
@@ -4766,13 +4946,14 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #10 145-159, warpins: 0 ---
-	for slot4 = slot0.bannerContent.childCount - 1, 0, -1 do
+	--- BLOCK #10 144-149, warpins: 1 ---
+	removeAllChildren(slot0.bannerDots)
+
+	if slot0._currentVoice then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 145-159, warpins: 2 ---
-		clearImageSprite(slot0.bannerContent:GetChild(slot4))
-		Destroy(slot0.bannerSnap:RemoveChild(slot4))
+		--- BLOCK #0 150-154, warpins: 1 ---
+		slot0._currentVoice:Stop(true)
 		--- END OF BLOCK #0 ---
 
 
@@ -4786,14 +4967,16 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #11 160-165, warpins: 1 ---
-	removeAllChildren(slot0.bannerDots)
+	--- BLOCK #11 155-159, warpins: 2 ---
+	slot0._currentVoice = nil
 
-	if slot0._currentVoice then
+	if slot0.loadedCVBankName then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 166-170, warpins: 1 ---
-		slot0._currentVoice:Stop(true)
+		--- BLOCK #0 160-166, warpins: 1 ---
+		pg.CriMgr.UnloadCVBank(slot0.loadedCVBankName)
+
+		slot0.loadedCVBankName = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4807,16 +4990,16 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #12 171-175, warpins: 2 ---
-	slot0._currentVoice = nil
+	--- BLOCK #12 167-177, warpins: 2 ---
+	setActive(slot0._bg:Find("bg"), true)
 
-	if slot0.loadedCVBankName then
+	if slot0.defaultBgSprite then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 176-182, warpins: 1 ---
-		pg.CriMgr.UnloadCVBank(slot0.loadedCVBankName)
+		--- BLOCK #0 178-187, warpins: 1 ---
+		setImageSprite(slot0._bg:Find("bg"), slot0.defaultBgSprite)
 
-		slot0.loadedCVBankName = nil
+		slot0.defaultBgSprite = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4830,16 +5013,14 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #13 183-193, warpins: 2 ---
-	setActive(slot0._bg:Find("bg"), true)
-
-	if slot0.defaultBgSprite then
+	--- BLOCK #13 188-190, warpins: 2 ---
+	if slot0._buffTextTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 194-203, warpins: 1 ---
-		setImageSprite(slot0._bg:Find("bg"), slot0.defaultBgSprite)
+		--- BLOCK #0 191-196, warpins: 1 ---
+		slot0._buffTextTimer:Stop()
 
-		slot0.defaultBgSprite = nil
+		slot0._buffTextTimer = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4853,14 +5034,14 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #14 204-206, warpins: 2 ---
-	if slot0._buffTextTimer then
+	--- BLOCK #14 197-199, warpins: 2 ---
+	if slot0._buffTimeCountDownTimer then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 207-212, warpins: 1 ---
-		slot0._buffTextTimer:Stop()
+		--- BLOCK #0 200-205, warpins: 1 ---
+		slot0._buffTimeCountDownTimer:Stop()
 
-		slot0._buffTextTimer = nil
+		slot0._buffTimeCountDownTimer = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4874,14 +5055,12 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #15 213-215, warpins: 2 ---
-	if slot0._buffTimeCountDownTimer then
+	--- BLOCK #15 206-208, warpins: 2 ---
+	if slot0.isOpenSecondary then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 216-221, warpins: 1 ---
-		slot0._buffTimeCountDownTimer:Stop()
-
-		slot0._buffTimeCountDownTimer = nil
+		--- BLOCK #0 209-212, warpins: 1 ---
+		slot0:closeSecondaryPanel(false)
 		--- END OF BLOCK #0 ---
 
 
@@ -4895,12 +5074,14 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #16 222-224, warpins: 2 ---
-	if slot0.isOpenSecondary then
+	--- BLOCK #16 213-215, warpins: 2 ---
+	if slot0._secondaryPanel then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 225-228, warpins: 1 ---
-		slot0:closeSecondaryPanel(false)
+		--- BLOCK #0 216-227, warpins: 1 ---
+		PoolMgr.GetInstance():ReturnUI("MainUISecondaryPanel", go(slot0._secondaryPanel))
+
+		slot0._secondaryPanel = nil
 		--- END OF BLOCK #0 ---
 
 
@@ -4914,20 +5095,7 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #17 229-231, warpins: 2 ---
-	if slot0._secondaryPanel then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 232-243, warpins: 1 ---
-		PoolMgr.GetInstance():ReturnUI("MainUISecondaryPanel", go(slot0._secondaryPanel))
-
-		slot0._secondaryPanel = nil
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
+	--- BLOCK #17 228-231, warpins: 2 ---
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
@@ -4935,19 +5103,11 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #18 244-247, warpins: 2 ---
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #19 248-252, warpins: 0 ---
+	--- BLOCK #18 232-236, warpins: 0 ---
 	for slot4, slot5 in pairs(slot0.skinTimers) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 248-250, warpins: 1 ---
+		--- BLOCK #0 232-234, warpins: 1 ---
 		slot5:Stop()
 		--- END OF BLOCK #0 ---
 
@@ -4956,27 +5116,27 @@ slot0.willExit = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 251-252, warpins: 2 ---
+		--- BLOCK #1 235-236, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #20
+	FLOW; TARGET BLOCK #19
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #20 253-258, warpins: 1 ---
+	--- BLOCK #19 237-242, warpins: 1 ---
 	slot0.skinTimers = nil
 
 	slot0:recycleSpineChar()
 
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #19 ---
 
 
 

@@ -80,4 +80,12 @@ slot0.ShouldShowTip = function (slot0)
 	end)
 end
 
+slot0.ExistMsg = function (slot0)
+	return slot0.messages and table.getCount(slot0.messages) > 0
+end
+
+slot0.OnlyDisplay = function (slot0)
+	return slot0:getConfig("config_client") == "1"
+end
+
 return slot0

@@ -1524,6 +1524,18 @@ pg.skill_data_display = {
 		id = 11860,
 		name = "Mark of Sirius "
 	},
+	[11870] = {
+		id = 11870,
+		name = "神射手·改"
+	},
+	[11871] = {
+		id = 11871,
+		name = "神射手·改"
+	},
+	[11880] = {
+		id = 11880,
+		name = "皇家传奇"
+	},
 	[11890] = {
 		id = 11890,
 		name = "Miracle Within The Flames"
@@ -3590,6 +3602,9 @@ pg.skill_data_display = {
 		11844,
 		11850,
 		11860,
+		11870,
+		11871,
+		11880,
 		11890,
 		11900,
 		12040,

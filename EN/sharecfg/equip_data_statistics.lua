@@ -4781,7 +4781,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[1260] = {
-		name = "High Standard Fire-Control Radar ",
+		name = "High Standard Fire-Control Radar",
 		type = 10,
 		id = 1260,
 		tech = 0,
@@ -9983,7 +9983,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3100] = {
-		name = "Compressed Oxygen Cylinder ",
+		name = "Compressed Oxygen Cylinder",
 		type = 10,
 		id = 3100,
 		tech = 0,
@@ -10096,7 +10096,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3120] = {
-		name = "Improved Snorkel ",
+		name = "Improved Snorkel",
 		type = 10,
 		id = 3120,
 		tech = 0,
@@ -10209,7 +10209,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3140] = {
-		name = "Improved Storage Battery ",
+		name = "Improved Storage Battery",
 		type = 10,
 		id = 3140,
 		tech = 0,
@@ -10332,7 +10332,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3200] = {
-		name = "VH Armor Plating ",
+		name = "VH Armor Plating",
 		type = 10,
 		id = 3200,
 		tech = 0,
@@ -10452,7 +10452,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[3220] = {
-		name = "VC Armor Plating ",
+		name = "VC Armor Plating",
 		type = 10,
 		id = 3220,
 		tech = 0,
@@ -11129,7 +11129,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[4200] = {
-		name = "Swordfish Mark II-ASV (Anti-Sub) ",
+		name = "Swordfish Mark II-ASV (Anti-Sub)",
 		type = 15,
 		id = 4200,
 		tech = 1,
@@ -11198,7 +11198,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[4220] = {
-		name = "Swordfish Mark II-ASV (Anti-Sub) ",
+		name = "Swordfish Mark II-ASV (Anti-Sub)",
 		type = 15,
 		id = 4220,
 		tech = 2,
@@ -11300,7 +11300,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[4240] = {
-		name = "Swordfish Mark II-ASV (Anti-Sub) ",
+		name = "Swordfish Mark II-ASV (Anti-Sub)",
 		type = 15,
 		id = 4240,
 		tech = 3,
@@ -23115,7 +23115,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[17260] = {
-		name = "F4U（VF-17 “Pirate” Squad） ",
+		name = "F4U（VF-17 “Pirate” Squad）",
 		type = 7,
 		id = 17260,
 		tech = 0,
@@ -32902,7 +32902,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[26620] = {
-		name = "Twin 40mm Bofors \"Hazemeyer\" AA Gun ",
+		name = "Twin 40mm Bofors \"Hazemeyer\" AA Gun",
 		speciality = "Anti-Air",
 		tech = 0,
 		type = 6,
@@ -34085,7 +34085,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[27300] = {
-		name = "Sea Fury ",
+		name = "Sea Fury",
 		type = 7,
 		id = 27300,
 		tech = 0,
@@ -35265,7 +35265,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[28300] = {
-		name = "Fairey Albacore ",
+		name = "Fairey Albacore",
 		type = 8,
 		id = 28300,
 		tech = 1,
@@ -35337,7 +35337,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[28320] = {
-		name = "Fairey Albacore ",
+		name = "Fairey Albacore",
 		type = 8,
 		id = 28320,
 		tech = 2,
@@ -35442,7 +35442,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[28340] = {
-		name = "Fairey Albacore ",
+		name = "Fairey Albacore",
 		type = 8,
 		id = 28340,
 		tech = 3,
@@ -65240,7 +65240,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89000] = {
-		name = "Random Word Generator ",
+		name = "Random Word Generator",
 		type = 10,
 		id = 89000,
 		tech = 0,
@@ -65364,7 +65364,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89020] = {
-		name = "Pyoko-Pyoko ",
+		name = "Pyoko-Pyoko",
 		type = 10,
 		id = 89020,
 		tech = 0,
@@ -65490,7 +65490,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89040] = {
-		name = "Intelligence Chip ",
+		name = "Intelligence Chip",
 		type = 10,
 		id = 89040,
 		tech = 0,
@@ -65615,7 +65615,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90000] = {
-		name = "Single 130mm Main Gun (Mle 1924) ",
+		name = "Single 130mm Main Gun (Mle 1924)",
 		type = 1,
 		id = 90000,
 		tech = 1,
@@ -65692,7 +65692,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90020] = {
-		name = "Single 130mm Main Gun (Mle 1924) ",
+		name = "Single 130mm Main Gun (Mle 1924)",
 		type = 1,
 		id = 90020,
 		tech = 2,
@@ -65770,7 +65770,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90040] = {
-		name = "Single 130mm Main Gun (Mle 1924) ",
+		name = "Single 130mm Main Gun (Mle 1924)",
 		type = 1,
 		id = 90040,
 		tech = 3,
@@ -66568,7 +66568,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90300] = {
-		name = "Quadruple 330mm Main Gun (Mle 1931) ",
+		name = "Quadruple 330mm Main Gun (Mle 1931)",
 		type = 4,
 		id = 90300,
 		tech = 1,
@@ -66644,7 +66644,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90320] = {
-		name = "Quadruple 330mm Main Gun (Mle 1931) ",
+		name = "Quadruple 330mm Main Gun (Mle 1931)",
 		type = 4,
 		id = 90320,
 		tech = 2,
@@ -66753,7 +66753,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90340] = {
-		name = "Quadruple 330mm Main Gun (Mle 1931) ",
+		name = "Quadruple 330mm Main Gun (Mle 1931)",
 		type = 4,
 		id = 90340,
 		tech = 3,
@@ -66907,7 +66907,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90400] = {
-		name = "Quadruple 380mm Main Gun (Mle 1935) ",
+		name = "Quadruple 380mm Main Gun (Mle 1935)",
 		type = 4,
 		id = 90400,
 		tech = 1,
@@ -67017,7 +67017,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90420] = {
-		name = "Quadruple 380mm Main Gun (Mle 1935) ",
+		name = "Quadruple 380mm Main Gun (Mle 1935)",
 		type = 4,
 		id = 90420,
 		tech = 2,
@@ -67171,7 +67171,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90440] = {
-		name = "Quadruple 380mm Main Gun (Mle 1935) ",
+		name = "Quadruple 380mm Main Gun (Mle 1935)",
 		type = 4,
 		id = 90440,
 		tech = 3,
@@ -67815,7 +67815,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95000] = {
-		name = "Triple 381mm Main Gun (M1934) ",
+		name = "Triple 381mm Main Gun (M1934)",
 		type = 4,
 		id = 95000,
 		tech = 1,
@@ -67924,7 +67924,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95020] = {
-		name = "Triple 381mm Main Gun (M1934) ",
+		name = "Triple 381mm Main Gun (M1934)",
 		type = 4,
 		id = 95020,
 		tech = 2,
@@ -68078,7 +68078,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95040] = {
-		name = "Triple 381mm Main Gun (M1934) ",
+		name = "Triple 381mm Main Gun (M1934)",
 		type = 4,
 		id = 95040,
 		tech = 3,
@@ -68234,7 +68234,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95100] = {
-		name = "Single 90mm High-Angle Gun (M1939) ",
+		name = "Single 90mm High-Angle Gun (M1939)",
 		type = 6,
 		id = 95100,
 		tech = 1,
@@ -68338,7 +68338,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95120] = {
-		name = "Single 90mm High-Angle Gun (M1939) ",
+		name = "Single 90mm High-Angle Gun (M1939)",
 		type = 6,
 		id = 95120,
 		tech = 2,
@@ -68486,7 +68486,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95140] = {
-		name = "Single 90mm High-Angle Gun (M1939) ",
+		name = "Single 90mm High-Angle Gun (M1939)",
 		type = 6,
 		id = 95140,
 		tech = 3,
@@ -68634,7 +68634,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95200] = {
-		name = "Twin 203mm Main Gun (M1927) ",
+		name = "Twin 203mm Main Gun (M1927)",
 		type = 3,
 		id = 95200,
 		tech = 1,
@@ -68742,7 +68742,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95220] = {
-		name = "Twin 203mm Main Gun (M1927) ",
+		name = "Twin 203mm Main Gun (M1927)",
 		type = 3,
 		id = 95220,
 		tech = 2,
@@ -68895,7 +68895,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95240] = {
-		name = "Twin 203mm Main Gun (M1927) ",
+		name = "Twin 203mm Main Gun (M1927)",
 		type = 3,
 		id = 95240,
 		tech = 3,
@@ -69048,7 +69048,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95300] = {
-		name = "Twin 203mm Main Gun (M1924) ",
+		name = "Twin 203mm Main Gun (M1924)",
 		type = 3,
 		id = 95300,
 		tech = 1,
@@ -69123,7 +69123,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95320] = {
-		name = "Twin 203mm Main Gun (M1924) ",
+		name = "Twin 203mm Main Gun (M1924)",
 		type = 3,
 		id = 95320,
 		tech = 2,
@@ -69232,7 +69232,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95340] = {
-		name = "Twin 203mm Main Gun (M1924) ",
+		name = "Twin 203mm Main Gun (M1924)",
 		type = 3,
 		id = 95340,
 		tech = 3,
@@ -69385,7 +69385,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95400] = {
-		name = "Twin 120mm Main Gun (M1936) ",
+		name = "Twin 120mm Main Gun (M1936)",
 		type = 1,
 		id = 95400,
 		tech = 1,
@@ -69463,7 +69463,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95420] = {
-		name = "Twin 120mm Main Gun (M1936) ",
+		name = "Twin 120mm Main Gun (M1936)",
 		type = 1,
 		id = 95420,
 		tech = 2,
@@ -69574,7 +69574,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95440] = {
-		name = "Twin 120mm Main Gun (M1936) ",
+		name = "Twin 120mm Main Gun (M1936)",
 		type = 1,
 		id = 95440,
 		tech = 3,
@@ -69730,7 +69730,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95460] = {
-		name = "Twin 120mm Main Gun (M1933) ",
+		name = "Twin 120mm Main Gun (M1933)",
 		type = 1,
 		id = 95460,
 		tech = 0,
@@ -69840,7 +69840,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95480] = {
-		name = "Triple 320mm Main Gun (M1934) ",
+		name = "Triple 320mm Main Gun (M1934)",
 		type = 4,
 		id = 95480,
 		tech = 0,
@@ -69950,7 +69950,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95500] = {
-		name = "Twin 37mm AA Gun (M1932) ",
+		name = "Twin 37mm AA Gun (M1932)",
 		type = 6,
 		id = 95500,
 		tech = 1,
@@ -70021,7 +70021,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95520] = {
-		name = "Twin 37mm AA Gun (M1932) ",
+		name = "Twin 37mm AA Gun (M1932)",
 		type = 6,
 		id = 95520,
 		tech = 2,
@@ -70125,7 +70125,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[95540] = {
-		name = "Twin 37mm AA Gun (M1932) ",
+		name = "Twin 37mm AA Gun (M1932)",
 		type = 6,
 		id = 95540,
 		tech = 3,

@@ -168,31 +168,37 @@ end
 slot1 = {}
 slot2 = {
 	{
-		title = i18n("words_show_ship_name_label")
+		title = i18n("words_show_ship_name_label"),
+		desc = i18n("option_desc1")
 	},
 	{
 		title = i18n("words_auto_battle_label"),
-		name = AUTO_BATTLE_LABEL
+		name = AUTO_BATTLE_LABEL,
+		desc = i18n("option_desc2")
 	},
 	{
 		default = 1,
 		title = i18n("words_rare_ship_vibrate"),
-		name = RARE_SHIP_VIBRATE
+		name = RARE_SHIP_VIBRATE,
+		desc = i18n("option_desc3")
 	},
 	{
 		default = 1,
 		title = i18n("words_display_ship_get_effect"),
-		name = DISPLAY_SHIP_GET_EFFECT
+		name = DISPLAY_SHIP_GET_EFFECT,
+		desc = i18n("option_desc4")
 	},
 	{
 		default = 1,
 		title = i18n("words_show_touch_effect"),
-		name = SHOW_TOUCH_EFFECT
+		name = SHOW_TOUCH_EFFECT,
+		desc = i18n("option_desc5")
 	},
 	{
 		default = 0,
 		title = i18n("words_bg_fit_mode"),
-		name = BG_FIT_MODE
+		name = BG_FIT_MODE,
+		desc = i18n("option_desc6")
 	}
 }
 
@@ -223,6 +229,13 @@ slot0.initOptionsPanel = function (slot0, slot1)
 		slot15 = cloneTplTo(slot8, slot6)
 
 		setText(slot0:findTF("Text", slot15), slot14.title)
+		onButton(slot0, slot0:findTF("Text", slot15), function ()
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				hideNo = true,
+				hideYes = true,
+				content = slot0.desc
+			})
+		end)
 		onToggle(slot0, slot15:Find("on"), function (slot0)
 			pg.PushNotificationMgr.GetInstance():setSwitch(slot0.id, slot0)
 		end, SFX_UI_TAG, SFX_UI_CANCEL)
@@ -233,7 +246,14 @@ slot0.initOptionsPanel = function (slot0, slot1)
 	slot8 = slot7:Find("notify_tpl")
 
 	for slot13, slot14 in pairs(slot0) do
-		setText(slot0:findTF("Text", cloneTplTo(slot8, slot7)), slot14.title)
+		setText(slot0:findTF("Text", slot15), slot14.title)
+		onButton(slot0, slot0:findTF("Text", cloneTplTo(slot8, slot7)), function ()
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				hideNo = true,
+				hideYes = true,
+				content = slot0.desc
+			})
+		end)
 
 		if slot13 == 1 then
 			onToggle(slot0, slot15:Find("on"), function (slot0)

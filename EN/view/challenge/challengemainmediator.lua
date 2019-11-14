@@ -161,11 +161,11 @@ slot0.register = function (slot0)
 			return
 		end
 
-		if slot0:getActivityFleets()[slot1.id][slot1 + 1].isLegalToFight(slot4) == Fleet.VANGUARD then
+		if slot0:getActivityFleets()[slot1.id][slot1 + 1].isLegalToFight(slot4) == TeamType.Vanguard then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("ship_vo_vanguardFleet_must_hasShip"))
 
 			return
-		elseif slot5 == Fleet.MAIN then
+		elseif slot5 == TeamType.Main then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("ship_vo_mainFleet_must_hasShip"))
 
 			return

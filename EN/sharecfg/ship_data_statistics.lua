@@ -72007,6 +72007,530 @@ pg.ship_data_statistics = {
 		},
 		tag_list = {}
 	},
+	[202261] = {
+		name = "Glasgow",
+		type = 2,
+		personality = 2,
+		oxy_max = 0,
+		oxy_cost = 0,
+		huntingrange_level = 0,
+		backyard_speed = "0.3",
+		star = 2,
+		oxy_recovery = 0,
+		rarity = 3,
+		ammo = 0,
+		id = 202261,
+		summon_offset = 0,
+		scale = 100,
+		raid_distance = 0,
+		english_name = "HMS Glasgow",
+		skin_id = 202260,
+		painting_dir = 1,
+		attack_duration = 0,
+		ignite_accuracy = 0,
+		nationality = 2,
+		oxy_recovery_bench = 0,
+		armor_type = 1,
+		attrs = {
+			637,
+			28,
+			51,
+			65,
+			0,
+			63,
+			0,
+			54,
+			29,
+			32,
+			81,
+			24
+		},
+		attrs_growth = {
+			15535,
+			276,
+			500,
+			1284,
+			0,
+			314,
+			0,
+			792,
+			432,
+			0,
+			0,
+			236
+		},
+		attrs_growth_extra = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		grades = {
+			"B",
+			"B",
+			"E",
+			"B",
+			"A",
+			"C"
+		},
+		lock = {
+			"air"
+		},
+		cld_box = {
+			4,
+			5,
+			5
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		position_offset = {
+			0,
+			0,
+			0
+		},
+		fix_equip_list = {
+			211
+		},
+		default_equip_list = {
+			101,
+			106,
+			104
+		},
+		depth_charge_list = {
+			141
+		},
+		base_list = {
+			1,
+			1,
+			1
+		},
+		parallel_max = {
+			1,
+			1,
+			1
+		},
+		preload_count = {
+			0,
+			0,
+			0
+		},
+		equipment_proficiency = {
+			1.15,
+			1.2,
+			1.35,
+			0.3
+		},
+		strategy_list = {},
+		strategy_list_ai = {},
+		hunting_range = {
+			{}
+		},
+		tag_list = {}
+	},
+	[202262] = {
+		name = "Glasgow",
+		type = 2,
+		personality = 2,
+		oxy_max = 0,
+		oxy_cost = 0,
+		huntingrange_level = 0,
+		backyard_speed = "0.3",
+		star = 3,
+		oxy_recovery = 0,
+		rarity = 3,
+		ammo = 0,
+		id = 202262,
+		summon_offset = 0,
+		scale = 100,
+		raid_distance = 0,
+		english_name = "HMS Glasgow",
+		skin_id = 202260,
+		painting_dir = 1,
+		attack_duration = 0,
+		ignite_accuracy = 0,
+		nationality = 2,
+		oxy_recovery_bench = 0,
+		armor_type = 1,
+		attrs = {
+			792,
+			35,
+			64,
+			81,
+			0,
+			63,
+			0,
+			54,
+			29,
+			32,
+			81,
+			30
+		},
+		attrs_growth = {
+			15535,
+			276,
+			500,
+			1284,
+			0,
+			314,
+			0,
+			792,
+			432,
+			0,
+			0,
+			236
+		},
+		attrs_growth_extra = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		grades = {
+			"B",
+			"B",
+			"E",
+			"B",
+			"A",
+			"C"
+		},
+		lock = {
+			"air"
+		},
+		cld_box = {
+			4,
+			5,
+			5
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		position_offset = {
+			0,
+			0,
+			0
+		},
+		fix_equip_list = {
+			212
+		},
+		default_equip_list = {
+			101,
+			106,
+			104
+		},
+		depth_charge_list = {
+			141
+		},
+		base_list = {
+			1,
+			1,
+			1
+		},
+		parallel_max = {
+			1,
+			1,
+			1
+		},
+		preload_count = {
+			0,
+			0,
+			0
+		},
+		equipment_proficiency = {
+			1.2,
+			1.2,
+			1.35,
+			0.3
+		},
+		strategy_list = {},
+		strategy_list_ai = {},
+		hunting_range = {
+			{}
+		},
+		tag_list = {}
+	},
+	[202263] = {
+		name = "Glasgow",
+		type = 2,
+		personality = 2,
+		oxy_max = 0,
+		oxy_cost = 0,
+		huntingrange_level = 0,
+		backyard_speed = "0.3",
+		star = 4,
+		oxy_recovery = 0,
+		rarity = 3,
+		ammo = 0,
+		id = 202263,
+		summon_offset = 0,
+		scale = 100,
+		raid_distance = 0,
+		english_name = "HMS Glasgow",
+		skin_id = 202260,
+		painting_dir = 1,
+		attack_duration = 0,
+		ignite_accuracy = 0,
+		nationality = 2,
+		oxy_recovery_bench = 0,
+		armor_type = 1,
+		attrs = {
+			1103,
+			49,
+			89,
+			113,
+			0,
+			63,
+			0,
+			54,
+			29,
+			32,
+			81,
+			42
+		},
+		attrs_growth = {
+			15535,
+			276,
+			500,
+			1284,
+			0,
+			314,
+			0,
+			792,
+			432,
+			0,
+			0,
+			236
+		},
+		attrs_growth_extra = {
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+		},
+		grades = {
+			"B",
+			"B",
+			"E",
+			"B",
+			"A",
+			"C"
+		},
+		lock = {
+			"air"
+		},
+		cld_box = {
+			4,
+			5,
+			5
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		position_offset = {
+			0,
+			0,
+			0
+		},
+		fix_equip_list = {
+			213
+		},
+		default_equip_list = {
+			101,
+			106,
+			104
+		},
+		depth_charge_list = {
+			141
+		},
+		base_list = {
+			1,
+			2,
+			1
+		},
+		parallel_max = {
+			1,
+			1,
+			1
+		},
+		preload_count = {
+			0,
+			1,
+			0
+		},
+		equipment_proficiency = {
+			1.2,
+			1.3,
+			1.35,
+			0.3
+		},
+		strategy_list = {},
+		strategy_list_ai = {},
+		hunting_range = {
+			{}
+		},
+		tag_list = {}
+	},
+	[202264] = {
+		name = "Glasgow",
+		type = 2,
+		personality = 2,
+		oxy_max = 0,
+		oxy_cost = 0,
+		huntingrange_level = 0,
+		backyard_speed = "0.3",
+		star = 5,
+		oxy_recovery = 0,
+		rarity = 3,
+		ammo = 0,
+		id = 202264,
+		summon_offset = 0,
+		scale = 100,
+		raid_distance = 0,
+		english_name = "HMS Glasgow",
+		skin_id = 202260,
+		painting_dir = 1,
+		attack_duration = 0,
+		ignite_accuracy = 0,
+		nationality = 2,
+		oxy_recovery_bench = 0,
+		armor_type = 1,
+		attrs = {
+			1569,
+			69,
+			126,
+			161,
+			0,
+			63,
+			0,
+			54,
+			29,
+			32,
+			81,
+			59
+		},
+		attrs_growth = {
+			15535,
+			276,
+			500,
+			1284,
+			0,
+			314,
+			0,
+			792,
+			432,
+			0,
+			0,
+			236
+		},
+		attrs_growth_extra = {
+			3105,
+			654,
+			1117,
+			559,
+			0,
+			744,
+			0,
+			3,
+			723,
+			0,
+			0,
+			335
+		},
+		grades = {
+			"B",
+			"B",
+			"E",
+			"B",
+			"A",
+			"C"
+		},
+		lock = {
+			"air"
+		},
+		cld_box = {
+			4,
+			5,
+			5
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		position_offset = {
+			0,
+			0,
+			0
+		},
+		fix_equip_list = {
+			214
+		},
+		default_equip_list = {
+			101,
+			106,
+			104
+		},
+		depth_charge_list = {
+			141
+		},
+		base_list = {
+			1,
+			2,
+			1
+		},
+		parallel_max = {
+			1,
+			1,
+			1
+		},
+		preload_count = {
+			0,
+			1,
+			0
+		},
+		equipment_proficiency = {
+			1.35,
+			1.3,
+			1.35,
+			0.3
+		},
+		strategy_list = {},
+		strategy_list_ai = {},
+		hunting_range = {
+			{}
+		},
+		tag_list = {}
+	},
 	[203011] = {
 		name = "London",
 		type = 3,
@@ -79327,6 +79851,133 @@ pg.ship_data_statistics = {
 			"torpedo",
 			"air",
 			"antisub"
+		},
+		cld_box = {
+			4,
+			5,
+			5
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		position_offset = {
+			0,
+			0,
+			0
+		},
+		fix_equip_list = {},
+		default_equip_list = {
+			103,
+			101,
+			104
+		},
+		depth_charge_list = {},
+		base_list = {
+			1,
+			3,
+			1
+		},
+		parallel_max = {
+			1,
+			1,
+			1
+		},
+		preload_count = {
+			0,
+			0,
+			0
+		},
+		equipment_proficiency = {
+			1.3,
+			2,
+			1
+		},
+		strategy_list = {},
+		strategy_list_ai = {},
+		hunting_range = {
+			{}
+		},
+		tag_list = {}
+	},
+	[205124] = {
+		name = "Warspite Retrofit",
+		type = 5,
+		personality = 2,
+		oxy_max = 0,
+		oxy_cost = 0,
+		huntingrange_level = 0,
+		backyard_speed = "0.3",
+		star = 6,
+		oxy_recovery = 0,
+		rarity = 5,
+		ammo = 0,
+		id = 205124,
+		summon_offset = 0,
+		scale = 100,
+		raid_distance = 0,
+		english_name = "HMS Warspite",
+		skin_id = 205020,
+		painting_dir = 1,
+		attack_duration = 0,
+		ignite_accuracy = 0,
+		nationality = 2,
+		oxy_recovery_bench = 0,
+		armor_type = 3,
+		attrs = {
+			3197,
+			209,
+			0,
+			101,
+			0,
+			58,
+			0,
+			24,
+			6,
+			24,
+			90,
+			58
+		},
+		attrs_growth = {
+			31650,
+			830,
+			0,
+			804,
+			0,
+			290,
+			0,
+			360,
+			84,
+			0,
+			0,
+			232
+		},
+		attrs_growth_extra = {
+			18990,
+			562,
+			0,
+			546,
+			0,
+			685,
+			0,
+			235,
+			786,
+			0,
+			0,
+			328
+		},
+		grades = {
+			"S",
+			"E",
+			"E",
+			"D",
+			"C",
+			"S"
+		},
+		lock = {
+			"torpedo",
+			"air"
 		},
 		cld_box = {
 			4,
@@ -188972,6 +189623,252 @@ pg.ship_data_statistics = {
 		},
 		tag_list = {}
 	},
+	[900161] = {
+		name = "厌战",
+		type = 5,
+		personality = 2,
+		oxy_max = 0,
+		oxy_cost = 0,
+		huntingrange_level = 0,
+		backyard_speed = "0.3",
+		star = 6,
+		oxy_recovery = 0,
+		rarity = 5,
+		ammo = 0,
+		id = 900161,
+		summon_offset = 0,
+		scale = 100,
+		raid_distance = 0,
+		english_name = "HMS Warspite",
+		skin_id = 205020,
+		painting_dir = 1,
+		attack_duration = 0,
+		ignite_accuracy = 0,
+		nationality = 2,
+		oxy_recovery_bench = 0,
+		armor_type = 3,
+		attrs = {
+			3197,
+			209,
+			0,
+			101,
+			0,
+			58,
+			0,
+			24,
+			6,
+			24,
+			90,
+			0
+		},
+		attrs_growth = {
+			31650,
+			830,
+			0,
+			804,
+			0,
+			290,
+			0,
+			360,
+			84,
+			0,
+			0,
+			0
+		},
+		attrs_growth_extra = {
+			18990,
+			562,
+			0,
+			546,
+			0,
+			685,
+			0,
+			235,
+			786,
+			0,
+			0,
+			0
+		},
+		grades = {
+			"S",
+			"E",
+			"E",
+			"D",
+			"D",
+			"A"
+		},
+		lock = {
+			"torpedo",
+			"air",
+			"antisub"
+		},
+		cld_box = {
+			4,
+			5,
+			5
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		position_offset = {
+			0,
+			0,
+			0
+		},
+		fix_equip_list = {},
+		default_equip_list = {},
+		depth_charge_list = {},
+		base_list = {
+			1,
+			3,
+			1
+		},
+		parallel_max = {
+			1,
+			1,
+			1
+		},
+		preload_count = {
+			0,
+			0,
+			0
+		},
+		equipment_proficiency = {
+			1.3,
+			2,
+			1
+		},
+		strategy_list = {},
+		strategy_list_ai = {},
+		hunting_range = {
+			{}
+		},
+		tag_list = {}
+	},
+	[900162] = {
+		name = "长春",
+		type = 1,
+		personality = 2,
+		oxy_max = 0,
+		oxy_cost = 0,
+		huntingrange_level = 0,
+		backyard_speed = "0.3",
+		star = 5,
+		oxy_recovery = 0,
+		rarity = 4,
+		ammo = 0,
+		id = 900162,
+		summon_offset = 0,
+		scale = 100,
+		raid_distance = 0,
+		english_name = "PRAN Chang Chun",
+		skin_id = 501030,
+		painting_dir = 1,
+		attack_duration = 0,
+		ignite_accuracy = 0,
+		nationality = 5,
+		oxy_recovery_bench = 0,
+		armor_type = 1,
+		attrs = {
+			904,
+			60,
+			104,
+			79,
+			0,
+			73,
+			0,
+			67,
+			61,
+			45.6,
+			61,
+			122
+		},
+		attrs_growth = {
+			8955,
+			238,
+			416,
+			628,
+			0,
+			364,
+			0,
+			996,
+			906,
+			0,
+			0,
+			488
+		},
+		attrs_growth_extra = {
+			8945,
+			565,
+			987,
+			430,
+			0,
+			866,
+			0,
+			-584,
+			-631,
+			0,
+			0,
+			447
+		},
+		grades = {
+			"A",
+			"D",
+			"E",
+			"B",
+			"C",
+			"D"
+		},
+		lock = {
+			"air"
+		},
+		cld_box = {
+			4,
+			5,
+			5
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		position_offset = {
+			0,
+			0,
+			0
+		},
+		fix_equip_list = {},
+		default_equip_list = {},
+		depth_charge_list = {},
+		base_list = {
+			1,
+			2,
+			1
+		},
+		parallel_max = {
+			1,
+			1,
+			1
+		},
+		preload_count = {
+			0,
+			1,
+			0
+		},
+		equipment_proficiency = {
+			1.55,
+			1,
+			1.05
+		},
+		strategy_list = {},
+		strategy_list_ai = {},
+		hunting_range = {
+			{}
+		},
+		tag_list = {}
+	},
 	[900163] = {
 		name = "Chang Chun",
 		type = 1,
@@ -204254,6 +205151,10 @@ pg.ship_data_statistics = {
 		202242,
 		202243,
 		202244,
+		202261,
+		202262,
+		202263,
+		202264,
 		203011,
 		203012,
 		203013,
@@ -204311,6 +205212,7 @@ pg.ship_data_statistics = {
 		205022,
 		205023,
 		205024,
+		205124,
 		205031,
 		205032,
 		205033,
@@ -205106,6 +206008,8 @@ pg.ship_data_statistics = {
 		900158,
 		900159,
 		900160,
+		900161,
+		900162,
 		900163,
 		900164,
 		900165,

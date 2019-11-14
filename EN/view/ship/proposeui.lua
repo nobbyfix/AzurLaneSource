@@ -5344,7 +5344,7 @@ function slot2(slot0)
 	slot2 = slot2(slot3, slot4, slot5)
 	slot4 = slot0
 	slot3 = slot0.findTF
-	slot5 = "Text"
+	slot5 = "Image_bg/Text"
 	slot6 = slot2
 	slot3 = slot3(slot4, slot5, slot6)
 	slot4 = setText

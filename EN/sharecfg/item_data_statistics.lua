@@ -7433,6 +7433,58 @@ May combine <color=#ffde38>5</color> to craft <color=#ffde38>1</color> <color=#9
 		price = {},
 		index = {}
 	},
+	[40964] = {
+		display = "Black Friday Lucky Box contains 1 x random Ship skin, 2450 x Gems, 1 x Mystery T5 Tech Pack, 3 x Random T3 Skill Book, 20 x Wisdom Cubes, 10 x Quick Finishers, and 100 x Decor Tokens ",
+		rarity = 4,
+		type = 5,
+		name = "Black Friday Lucky Box ",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 40964,
+		icon = "Props/fudai59",
+		display_icon = {
+			{
+				2,
+				69958,
+				1
+			},
+			{
+				1,
+				4,
+				2450
+			},
+			{
+				2,
+				54035,
+				1
+			},
+			{
+				2,
+				54006,
+				3
+			},
+			{
+				2,
+				20001,
+				20
+			},
+			{
+				2,
+				15003,
+				10
+			},
+			{
+				1,
+				6,
+				100
+			}
+		},
+		price = {},
+		index = {}
+	},
 	[41201] = {
 		display = "A Valentine Gift from UniversalBulin",
 		rarity = 8,
@@ -62908,6 +62960,38 @@ let us celebrate."]],
 		price = {},
 		index = {}
 	},
+	[59761] = {
+		display = "集齐7个可以获得厌战专属改造道具-战士的心得",
+		rarity = 2,
+		type = 0,
+		name = "历战之证",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 8,
+		replace_item = 0,
+		link_id = 0,
+		id = 59761,
+		icon = "Props/lizhanzhizheng",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[59762] = {
+		display = "「Belli dura despicio！」——用于完成厌战近代化改造",
+		rarity = 4,
+		type = 7,
+		name = "战士的心得",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 59762,
+		icon = "Props/yanzhandabaojian",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
 	[59763] = {
 		display = "Can be used during Momopoly Dragon Empery ",
 		rarity = 2,
@@ -64113,6 +64197,31 @@ Skins and their drop rates:
 		price = {},
 		index = {}
 	},
+	[69958] = {
+		display = [[
+This lucky bag contains a random Ship skin listed below. (If you’ve received a ship skin that you already own, you will instead be given the corresponding skin's value in Gems) 
+Skins and their drop rates:
+（<color=#92fc63>11.4%</color>） Unicorn Long-Awaited Date（<color=#92fc63>Live 2d</color>）；
+（<color=#92fc63>11.4%</color>）Laffey White Rabbit Welcomes the Spring（<color=#92fc63>Live 2d</color>）；
+（<color=#92fc63>14.0%</color>）Prinz Cordial Cornflower；
+（<color=#92fc63>14.0%</color>）Zuikaku Ceremonial Crane；
+（<color=#92fc63>15.8%</color>）Cleveland Road Trip! ；
+（<color=#92fc63>15.8%</color>）Helena New Year's Bluebird ；
+（<color=#92fc63>17.6%</color>）Yukikaze Sovereign of the Swing；]],
+		rarity = 4,
+		type = 98,
+		name = "Random Ship skin ",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 69958,
+		icon = "Props/clothIcon",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
 	[70000] = {
 		display = "Use to unlock \"Port Memories\" No. 1",
 		rarity = 4,
@@ -64848,6 +64957,7 @@ Skins and their drop rates:
 		40961,
 		40962,
 		40963,
+		40964,
 		41201,
 		41202,
 		41203,
@@ -65938,6 +66048,8 @@ Skins and their drop rates:
 		59758,
 		59759,
 		59760,
+		59761,
+		59762,
 		59763,
 		59764,
 		59765,
@@ -66007,6 +66119,7 @@ Skins and their drop rates:
 		69955,
 		69956,
 		69957,
+		69958,
 		70000,
 		70001,
 		70002,

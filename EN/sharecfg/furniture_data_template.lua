@@ -40758,6 +40758,2589 @@ pg.furniture_data_template = {
 		},
 		interAction_group = {}
 	},
+	[30001] = {
+		can_rotate = 0,
+		name = "Rainbow Wallpaper",
+		gain_by = "",
+		type = 1,
+		dir = 0,
+		belong = 0,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 150,
+		not_for_sale = 0,
+		icon = "caihongchicon",
+		deblocking = 1,
+		level = 1,
+		tag = 3,
+		rarity = 4,
+		picture = "caihong/caihongch",
+		canputon = 0,
+		discount = 0,
+		id = 30001,
+		comfortable = 4,
+		describe = "Depending on who you ask, it adds just enough or way too much color to the room.",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30002] = {
+		can_rotate = 0,
+		name = "Colorful Flooring",
+		gain_by = "",
+		type = 4,
+		dir = 0,
+		belong = 0,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 150,
+		not_for_sale = 0,
+		icon = "dibanchicon",
+		deblocking = 1,
+		level = 5,
+		tag = 4,
+		rarity = 4,
+		picture = "caihong/dibanch",
+		canputon = 0,
+		discount = 0,
+		id = 30002,
+		comfortable = 4,
+		describe = "They say all the best things in life come in the shape of tiles.",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30101] = {
+		advice = 0,
+		name = "Rainbow Snow Cone",
+		count = 2,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/bingshach",
+		can_rotate = 0,
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "bingshachicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30101,
+		comfortable = 3,
+		describe = "It gets sweeter as you make your way through it.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"wash",
+				{
+					0,
+					-17
+				},
+				{
+					-1,
+					1
+				},
+				"caihong/bingshach_using"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30102] = {
+		advice = 0,
+		name = "Layered Rainbow Cake",
+		count = 2,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/chuangch",
+		can_rotate = 0,
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "chuangchicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30102,
+		comfortable = 3,
+		describe = "\"Now, is time for cake!\"",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			5,
+			5
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sleep",
+				{
+					-10,
+					10
+				},
+				{
+					-1,
+					1
+				},
+				"caihong/chuangch_using"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30103] = {
+		advice = 0,
+		name = "Swirly Road",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/dadaoch",
+		can_rotate = 0,
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "dadaochicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 1,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30103,
+		comfortable = 1,
+		describe = "A legendary road, rumored to be very hard for go-karts to stay on.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			8,
+			4
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"dance",
+				{
+					43,
+					53
+				},
+				{
+					1,
+					1
+				},
+				"caihong/dadaoch_using"
+			},
+			{
+				"dance",
+				{
+					-56,
+					-45
+				},
+				{
+					-1,
+					1
+				},
+				"caihong/dadaoch_using"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30104] = {
+		advice = 0,
+		name = "Flower Cushion",
+		count = 2,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/dengzi1ch",
+		can_rotate = 0,
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "dengzi1chicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 1,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30104,
+		comfortable = 1,
+		describe = "Smells flowery! Might just be the detergent they use.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sit",
+				{
+					-7,
+					44
+				},
+				{
+					1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30105] = {
+		advice = 0,
+		name = "Heart Cushion",
+		count = 2,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/dengzi2ch",
+		can_rotate = 0,
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "dengzi2chicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 1,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30105,
+		comfortable = 1,
+		describe = "Few can resist trying to align their butt perfectly with the outline of the heart.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sit",
+				{
+					-7,
+					44
+				},
+				{
+					-1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30106] = {
+		advice = 0,
+		name = "Jelly Cushion",
+		count = 2,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/dengzi3ch",
+		can_rotate = 0,
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "dengzi3chicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 2,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30106,
+		comfortable = 2,
+		describe = "Bouncier and more colorful than its cousin, the pudding cushion.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sit",
+				{
+					1,
+					58
+				},
+				{
+					-1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30107] = {
+		advice = 0,
+		name = "Doughnut Cushion",
+		count = 2,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/dengzi4ch",
+		can_rotate = 0,
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "dengzi4chicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 2,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30107,
+		comfortable = 2,
+		describe = "What intricate glazing. Too bad it's not edible.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sit",
+				{
+					-17,
+					37
+				},
+				{
+					-1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30108] = {
+		can_rotate = 0,
+		name = "Paint Splatter Carpet",
+		gain_by = "",
+		type = 5,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "ditan2chicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "caihong/ditan2ch",
+		canputon = 0,
+		discount = 0,
+		id = 30108,
+		comfortable = 3,
+		describe = "It's long since dried, so it's safe to walk on.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			4
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30109] = {
+		can_rotate = 0,
+		name = "Rainbow Carpet",
+		gain_by = "",
+		type = 5,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "ditanchicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "caihong/ditanch",
+		canputon = 0,
+		discount = 0,
+		id = 30109,
+		comfortable = 3,
+		describe = "All that's missing is Akashi and a giant, frosted pastry.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			7
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30110] = {
+		advice = 0,
+		name = "Gumball Jar",
+		count = 2,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/guanzich",
+		can_rotate = 0,
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "guanzichicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30110,
+		comfortable = 3,
+		describe = "There's just something amazing about gumballs. Can't quite put my finger on what.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"wash",
+				{
+					-2,
+					-93
+				},
+				{
+					-1,
+					1
+				},
+				"caihong/guanzich_using"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30111] = {
+		advice = 0,
+		name = "Rainbow Arch",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/mench",
+		can_rotate = 0,
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "menchicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30111,
+		comfortable = 3,
+		describe = "Want to make a flashy entrance? Now's your chance.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			6,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"stand2",
+				{
+					4,
+					-91
+				},
+				{
+					-1,
+					1
+				},
+				"caihong/mench_using"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30112] = {
+		can_rotate = 0,
+		name = "Swirly Marshmallow",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 2,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "miaohuatang1chicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "caihong/miaohuatang1ch",
+		canputon = 0,
+		discount = 0,
+		id = 30112,
+		comfortable = 2,
+		describe = "Mmmm... blueberry and vanilla.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30113] = {
+		can_rotate = 0,
+		name = "Blue Puffy Marshmallow",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 2,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "miaohuatang2chicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 1,
+		picture = "caihong/miaohuatang2ch",
+		canputon = 0,
+		discount = 0,
+		id = 30113,
+		comfortable = 1,
+		describe = "So fluffy it almost feels like cotton candy.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30114] = {
+		can_rotate = 0,
+		name = "Green Puffy Marshmallow",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 2,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "miaohuatang3chicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 1,
+		picture = "caihong/miaohuatang3ch",
+		canputon = 0,
+		discount = 0,
+		id = 30114,
+		comfortable = 1,
+		describe = "\"Tastes like... lime... No wait, pear... Maybe it's green apple...\"",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30115] = {
+		can_rotate = 0,
+		name = "Pink Puffy Marshmallow",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 2,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "miaohuatang4chicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 1,
+		picture = "caihong/miaohuatang4ch",
+		canputon = 0,
+		discount = 0,
+		id = 30115,
+		comfortable = 1,
+		describe = "Pink, as we all know, is the cutest color. Therefore, this is the cutest marshmallow.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30116] = {
+		can_rotate = 0,
+		name = "Pretty Balloons",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 2,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "qiqiuchicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "caihong/qiqiuch",
+		canputon = 0,
+		discount = 0,
+		id = 30116,
+		comfortable = 2,
+		describe = "They may be surplus from an amusement park, but they feel right at home.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30117] = {
+		can_rotate = 0,
+		name = "Swirly-Whirly Jr. & Sr.",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 2,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "tang1chicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "caihong/tang1ch",
+		canputon = 0,
+		discount = 0,
+		id = 30117,
+		comfortable = 2,
+		describe = "A certain Iron Blood submarine will do almost anything for one of these.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30118] = {
+		advice = 0,
+		name = "Rainbow Lacquer Bathtub",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/yugangch",
+		can_rotate = 0,
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "yugangchicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30118,
+		comfortable = 3,
+		describe = "Has anyone else noticed how lacquer and baths go together like bread and butter?",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			6,
+			4
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"wash",
+				{
+					31.9,
+					-102.9
+				},
+				{
+					-1,
+					1
+				},
+				"caihong/yugangch_using"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30119] = {
+		can_rotate = 0,
+		name = "Painting Table",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "zhuozi2chicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "caihong/zhuozi2ch",
+		canputon = 1,
+		discount = 0,
+		id = 30119,
+		comfortable = 3,
+		describe = "It's less of a painting table and more of a painted table, but it serves the same purpose in the end.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			3
+		},
+		offset = {
+			0,
+			10.4
+		},
+		canputonGrid = {
+			{
+				1,
+				1
+			},
+			{
+				1,
+				2
+			},
+			{
+				1,
+				3
+			},
+			{
+				2,
+				1
+			},
+			{
+				2,
+				2
+			},
+			{
+				2,
+				3
+			},
+			{
+				3,
+				1
+			},
+			{
+				3,
+				2
+			},
+			{
+				3,
+				3
+			},
+			{
+				4,
+				1
+			},
+			{
+				4,
+				2
+			},
+			{
+				4,
+				3
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30120] = {
+		can_rotate = 0,
+		name = "Cake Slice Table",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "zhuozichicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "caihong/zhuozich",
+		canputon = 1,
+		discount = 0,
+		id = 30120,
+		comfortable = 2,
+		describe = "More proof that you can have your cake... but not eat it.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			4
+		},
+		offset = {
+			0,
+			18.8
+		},
+		canputonGrid = {
+			{
+				1,
+				1
+			},
+			{
+				2,
+				1
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30121] = {
+		advice = 0,
+		name = "Rainbow Castle",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "caihong/chengbaoch",
+		can_rotate = 0,
+		dorm_icon_price = 150,
+		not_for_sale = 0,
+		icon = "chengbaochicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30121,
+		comfortable = 4,
+		describe = "Fits three people. The magic number!",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			6,
+			11
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"wash",
+				{
+					-4,
+					-9
+				},
+				{
+					-1,
+					1
+				},
+				"caihong/chengbaoch_using1"
+			},
+			{
+				"sleep",
+				{
+					-152,
+					-57
+				},
+				{
+					-1,
+					1
+				},
+				"caihong/chengbaoch_using2"
+			},
+			{
+				"sleep",
+				{
+					68,
+					-167
+				},
+				{
+					-1,
+					1
+				},
+				"caihong/chengbaoch_using2"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30122] = {
+		can_rotate = 0,
+		name = "Red Cannon",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 0,
+		icon = "caihongdapaoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30122,
+		comfortable = 4,
+		describe = "Team Rainbow's blasting off agaaaaaaain!",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"caihongdapaoB",
+				"normal"
+			},
+			{
+				"caihongdapaoT"
+			},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"yun"
+					}
+				},
+				{
+					nil,
+					1
+				},
+				{
+					1
+				}
+			},
+			{},
+			{
+				0,
+				0
+			},
+			{
+				-1,
+				1
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		animator = {
+			{
+				"caihongdapaoCharControl"
+			}
+		},
+		interAction_group = {}
+	},
+	[30123] = {
+		can_rotate = 0,
+		name = "Fluffy Cloud",
+		gain_by = "",
+		type = 11,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 0,
+		icon = "caihongyunicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 5,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30123,
+		comfortable = 5,
+		describe = "Takes you to cloud nine and back! ... What do you mean you're not interested?",
+		dorm_id = 0,
+		gem_price = 200,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"caihongyun",
+				"normal"
+			},
+			{},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"sit"
+					}
+				},
+				{
+					nil,
+					1
+				},
+				{
+					1
+				}
+			},
+			{},
+			{
+				0,
+				0
+			},
+			{
+				1,
+				1
+			},
+			0.2
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		animator = {
+			{
+				"caihongyunCharControl"
+			}
+		},
+		interAction_group = {}
+	},
+	[30124] = {
+		can_rotate = 1,
+		name = "Rainbow Surprise 1",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 3,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 0,
+		icon = "caihongxiarenxiangicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30124,
+		comfortable = 4,
+		describe = "What's inside? It's a surprise, so only one way to find out.",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"caihongxiarenxiang1B",
+				"normal"
+			},
+			{
+				"caihongxiarenxiang1T"
+			},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"dance"
+					}
+				},
+				{
+					nil,
+					1
+				},
+				{
+					1
+				}
+			},
+			{},
+			{
+				0,
+				0
+			},
+			{
+				-1,
+				1
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		animator = {
+			{
+				"caihongxiarenxiang1CharControl"
+			}
+		},
+		interAction_group = {}
+	},
+	[30125] = {
+		can_rotate = 1,
+		name = "Rainbow Surprise 2",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 3,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 0,
+		icon = "caihongxiarenxiangicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 30125,
+		comfortable = 4,
+		describe = "\"Surpriiiiiiiise!\"",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"caihongxiarenxiang2B",
+				"normal"
+			},
+			{
+				"caihongxiarenxiang2T"
+			},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"yun"
+					}
+				},
+				{
+					nil,
+					1
+				},
+				{
+					1
+				}
+			},
+			{},
+			{
+				0,
+				0
+			},
+			{
+				-1,
+				1
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		animator = {
+			{
+				"caihongxiarenxiang2CharControl"
+			}
+		},
+		interAction_group = {}
+	},
+	[30201] = {
+		can_rotate = 0,
+		name = "Small Fluffy Marshmallow",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "miaohua1chicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 1,
+		picture = "caihong/miaohua1ch",
+		canputon = 0,
+		discount = 0,
+		id = 30201,
+		comfortable = 1,
+		describe = "It may be small, but it's every bit as yummy as the others.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30202] = {
+		can_rotate = 0,
+		name = "Vegetable Salad",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "shiwuchicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 1,
+		picture = "caihong/shiwuch",
+		canputon = 0,
+		discount = 0,
+		id = 30202,
+		comfortable = 1,
+		describe = "Cesare didn't make it, yet she's proud of it for some reason.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30301] = {
+		can_rotate = 0,
+		name = "Rainbow Window",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 4,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "chuanghuchicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 3,
+		picture = "caihong/chuanghuch",
+		canputon = 0,
+		discount = 0,
+		id = 30301,
+		comfortable = 3,
+		describe = "\"Hurry, get your coat! We've got a pot of gold to find!\"",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			6
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30302] = {
+		can_rotate = 0,
+		name = "Weather Mobile",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 2,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "guashichicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 2,
+		picture = "caihong/guashich",
+		canputon = 0,
+		discount = 0,
+		id = 30302,
+		comfortable = 2,
+		describe = "An educational piece that shows destroyers how rainbows are formed.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			6
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[30303] = {
+		can_rotate = 0,
+		name = "Rainbow Clock",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "zhongchicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 2,
+		picture = "caihong/zhongch",
+		canputon = 0,
+		discount = 0,
+		id = 30303,
+		comfortable = 2,
+		describe = "What time is it? It's a quarter to lavender.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 30,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			6
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					18
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
 	[31101] = {
 		can_rotate = 0,
 		name = "Battoriship",
@@ -75408,6 +77991,112 @@ pg.furniture_data_template = {
 		},
 		interAction_group = {}
 	},
+	[54104] = {
+		advice = 0,
+		name = "Strawberry Sticks",
+		count = 1,
+		type = 2,
+		dir = 0,
+		gain_by = "",
+		is_get_time_note = 0,
+		belong = 1,
+		can_rotate = 1,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 1,
+		icon = "pockyhezi2icon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 6,
+		picture = "",
+		canputon = 0,
+		discount = 0,
+		id = 54104,
+		comfortable = 3,
+		describe = "Lighting has never been so strawberry-licious!",
+		dorm_id = 0,
+		gem_price = 1000,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"pockyhezi2",
+				"action"
+			}
+		},
+		interAction_group = {}
+	},
+	[54105] = {
+		advice = 0,
+		name = "Chocolate Dip",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "pocky/pockywash2",
+		can_rotate = 0,
+		dorm_icon_price = 0,
+		not_for_sale = 1,
+		icon = "pockywash2icon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 6,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 54105,
+		comfortable = 3,
+		describe = "Dip 'em, lick 'em, enjoy!",
+		dorm_id = 0,
+		gem_price = 1000,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			8,
+			7
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"wash",
+				{
+					-86,
+					-63
+				},
+				{
+					1,
+					1
+				},
+				"pocky/pockywash_using2"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		interAction_group = {}
+	},
 	all = {
 		1,
 		2,
@@ -76035,6 +78724,38 @@ pg.furniture_data_template = {
 		27201,
 		27202,
 		27301,
+		30001,
+		30002,
+		30101,
+		30102,
+		30103,
+		30104,
+		30105,
+		30106,
+		30107,
+		30108,
+		30109,
+		30110,
+		30111,
+		30112,
+		30113,
+		30114,
+		30115,
+		30116,
+		30117,
+		30118,
+		30119,
+		30120,
+		30121,
+		30122,
+		30123,
+		30124,
+		30125,
+		30201,
+		30202,
+		30301,
+		30302,
+		30303,
 		31101,
 		31102,
 		31103,
@@ -76493,7 +79214,9 @@ pg.furniture_data_template = {
 		52117,
 		52118,
 		52119,
-		52120
+		52120,
+		54104,
+		54105
 	}
 }
 

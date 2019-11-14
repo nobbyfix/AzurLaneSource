@@ -194,18 +194,24 @@ slot0.addStudent = function (slot0, slot1, slot2, slot3)
 			coroutine.yield()
 		end
 
-		local function slot4()
-			slot0.select = nil
+		if #slot1.itemVOs > 0 then
+			slot1:showLessonSel(slot1, slot1.select, function ()
+				slot0.select = nil
 
-			slot0:addStudent(slot0, , )
+				slot0:addStudent(slot0, , )
+			end)
+		else
+			slot1.openMsgBox = false
+
+			slot1:pushDeleteStudentQueue()
+			pg.TipsMgr.GetInstance():ShowTips(i18n("tactics_no_lesson"))
 		end
 
-		slot1:showLessonSel(slot2, slot1.select, slot4)
 		coroutine.yield()
 
-		slot1.studentVOs[slot4] = slot2
+		coroutine.yield.studentVOs[slot4] = slot4
 
-		slot4:updateStudentTF(slot2.id, )
+		coroutine.yield.studentVOs:updateStudentTF(slot2.id, coroutine.yield.studentVOs)
 	end)
 
 	slot0.select()

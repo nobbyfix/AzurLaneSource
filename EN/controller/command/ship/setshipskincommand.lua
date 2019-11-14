@@ -1,4 +1,7 @@
-class("SetShipSkinCommand", pm.SimpleCommand).execute = function (slot0, slot1)
+slot0 = class("SetShipSkinCommand", pm.SimpleCommand)
+slot0.SKIN_UPDATED = "skin updated"
+
+slot0.execute = function (slot0, slot1)
 	slot2 = slot1:getBody()
 	slot5 = slot2.hideTip
 
@@ -26,7 +29,11 @@ class("SetShipSkinCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 				slot3:updatePlayer(slot4)
 			end
 
-			if not slot2 then
+			slot2:sendNotification(slot3.SKIN_UPDATED, {
+				ship = slot2
+			})
+
+			if not slot4 then
 				pg.TipsMgr.GetInstance():ShowTips(i18n("ship_set_skin_success"))
 			end
 		else
@@ -35,4 +42,4 @@ class("SetShipSkinCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	end)
 end
 
-return class("SetShipSkinCommand", pm.SimpleCommand)
+return slot0

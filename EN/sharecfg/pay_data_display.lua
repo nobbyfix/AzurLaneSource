@@ -1513,6 +1513,104 @@ pg.pay_data_display = {
 			}
 		}
 	},
+	[114] = {
+		limit_arg = 1,
+		descrip_extra = "*After your purchase, the Lucky Box will be sent to your mailbox. \n*If you receive a ship skin that you already own, you will instead be given the corresponding skin's value in Gems. ",
+		name = "Black Friday Lucky Box ",
+		descrip = "Contains 1 x random Ship skin, 2450 x Gems, and other rewards ",
+		subject = "Black Friday Lucky Box ",
+		extra_service = 3,
+		money = 2999,
+		tag = 2,
+		gem = 0,
+		limit_type = 2,
+		picture = "fudai59",
+		id_str = "com.yostaren.azurlane.diamond124",
+		first_pay_double = 0,
+		extra_gem = 0,
+		id = 114,
+		airijp_id = "com.yostaren.azurlane.diamond124",
+		extra_service_item = {
+			{
+				2,
+				69958,
+				1
+			},
+			{
+				1,
+				4,
+				2450
+			},
+			{
+				2,
+				54035,
+				1
+			},
+			{
+				2,
+				54006,
+				3
+			},
+			{
+				2,
+				20001,
+				20
+			},
+			{
+				2,
+				15003,
+				10
+			},
+			{
+				1,
+				6,
+				100
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					22
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					4
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		display = {
+			{
+				2,
+				69958,
+				1
+			},
+			{
+				1,
+				4,
+				2450
+			},
+			{
+				2,
+				54035,
+				1
+			}
+		}
+	},
 	all = {
 		1,
 		2,
@@ -1535,7 +1633,8 @@ pg.pay_data_display = {
 		110,
 		111,
 		112,
-		113
+		113,
+		114
 	}
 }
 

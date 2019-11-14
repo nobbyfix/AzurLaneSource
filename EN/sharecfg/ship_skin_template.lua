@@ -9727,6 +9727,108 @@ pg.ship_skin_template = {
 			}
 		}
 	},
+	[102162] = {
+		ship_group = 10216,
+		name = "Mystical Night",
+		bullet_skin_main = "",
+		desc = "就算是狂欢，也要拿出干劲，全力以赴才行呢~指挥官，准备好了吗？愉快的万圣之夜现在才要开始呢~",
+		illustrator2 = -1,
+		id = 102162,
+		bullet_skin_secondary = "",
+		no_showing = "1",
+		painting = "mengfeisi_3",
+		air_bullet_skin = "",
+		shop_type_id = 8,
+		hand_id = 13,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bg = "119",
+		skin_type = 0,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "mengfeisi_3",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		voice_actor = 159,
+		air_bomb_skin = "",
+		illustrator = -1,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {
+			2
+		},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					0.982,
+					1.074,
+					0
+				}
+			},
+			torpedo = {
+				{
+					-0.006,
+					-0.018,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					1.003,
+					1.096,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.35,
+							2.53,
+							-0.16
+						}
+					}
+				}
+			}
+		}
+	},
 	[102180] = {
 		ship_group = 10218,
 		name = "Concord",
@@ -25577,6 +25679,115 @@ pg.ship_skin_template = {
 			}
 		}
 	},
+	[202124] = {
+		ship_group = 20212,
+		name = "Shopping with the Head Maid",
+		bullet_skin_main = "",
+		desc = "Hehe~ Judging from your expression, Master, my outfit has not fallen short of your expectations. As time is precious, allow me to serve you to the utmost on this \"date.\"",
+		illustrator2 = -1,
+		id = 202124,
+		bullet_skin_secondary = "",
+		no_showing = "0",
+		painting = "beierfasite_4",
+		air_bullet_skin = "",
+		shop_type_id = 9,
+		hand_id = 1,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bg = "104",
+		skin_type = 0,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "beierfasite_4",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		voice_actor = 39,
+		air_bomb_skin = "",
+		illustrator = 20,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {
+			2
+		},
+		live2d_offset = {
+			-11,
+			-170,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					1.15,
+					1.23,
+					0
+				}
+			},
+			vicegun = {
+				{
+					1.15,
+					1.22,
+					0
+				}
+			},
+			torpedo = {
+				{
+					-0.009,
+					0.007,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					1.148,
+					1.146,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.423,
+							2.327,
+							0
+						}
+					}
+				}
+			}
+		}
+	},
 	[202128] = {
 		ship_group = 20212,
 		name = "The Pledge of Claddagh",
@@ -27773,6 +27984,113 @@ pg.ship_skin_template = {
 		},
 		l2d_voice_calibrate = {
 			login = 7
+		}
+	},
+	[202260] = {
+		ship_group = 20226,
+		name = "Glasgow ",
+		bullet_skin_main = "",
+		desc = "Southampton-class light cruiser - Glasgow (C-21) ",
+		illustrator2 = -1,
+		id = 202260,
+		bullet_skin_secondary = "",
+		no_showing = "0",
+		painting = "gelasige",
+		air_bullet_skin = "",
+		shop_type_id = 0,
+		hand_id = 13,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bg = "",
+		skin_type = -1,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "gelasige",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		voice_actor = -1,
+		air_bomb_skin = "",
+		illustrator = -1,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					1.163,
+					1.195,
+					0
+				}
+			},
+			vicegun = {
+				{
+					1.176,
+					1.263,
+					0
+				}
+			},
+			torpedo = {
+				{
+					0.001,
+					0.001,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					1.149,
+					1.335,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.39,
+							2.376,
+							0
+						}
+					}
+				}
+			}
 		}
 	},
 	[203010] = {
@@ -30392,6 +30710,106 @@ pg.ship_skin_template = {
 						{
 							-0.42,
 							2.42,
+							0
+						}
+					}
+				}
+			}
+		}
+	},
+	[205029] = {
+		ship_group = 20502,
+		name = "厌战.改",
+		bullet_skin_main = "",
+		desc = "厌战、改造完毕。这种焕然一新的感觉确实不错…让我们一起迎接新的战场吧，指挥官",
+		illustrator2 = -1,
+		id = 205029,
+		bullet_skin_secondary = "",
+		no_showing = "1",
+		painting = "yanzhan_g",
+		air_bullet_skin = "",
+		shop_type_id = 0,
+		hand_id = 13,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bg = "",
+		skin_type = 2,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "yanzhan_g",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		voice_actor = 28,
+		air_bomb_skin = "",
+		illustrator = 19,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					1.292,
+					1.094,
+					0
+				}
+			},
+			vicegun = {
+				{
+					1.204,
+					1.064,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					1.243,
+					1.164,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.654,
+							2.41,
 							0
 						}
 					}
@@ -75296,6 +75714,236 @@ pg.ship_skin_template = {
 			}
 		}
 	},
+	[900161] = {
+		ship_group = 900161,
+		name = "厌战",
+		bullet_skin_main = "",
+		desc = "伊丽莎白女王级战列舰—厌战，舷号03",
+		illustrator2 = -1,
+		id = 900161,
+		bullet_skin_secondary = "",
+		no_showing = "0",
+		painting = "yanzhan",
+		air_bullet_skin = "",
+		shop_type_id = 0,
+		hand_id = 0,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bg = "",
+		skin_type = -1,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "yanzhan",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		voice_actor = 28,
+		air_bomb_skin = "",
+		illustrator = 19,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					-0.061,
+					1.339,
+					0
+				}
+			},
+			vicegun = {
+				{
+					-0.696,
+					0.779,
+					0
+				},
+				{
+					0.893,
+					0.242,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					-0.696,
+					0.779,
+					0
+				},
+				{
+					0.893,
+					0.242,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				70,
+				{
+					{
+						"smoke",
+						{
+							-1.082,
+							0.566,
+							0
+						}
+					}
+				}
+			},
+			{
+				30,
+				{
+					{
+						"smoke",
+						{
+							0.919,
+							0.617,
+							0
+						}
+					}
+				}
+			}
+		}
+	},
+	[900162] = {
+		ship_group = 900162,
+		name = "长春",
+		bullet_skin_main = "",
+		desc = "鞍山级驱逐舰3号舰—长春，舷号103",
+		illustrator2 = -1,
+		id = 900162,
+		bullet_skin_secondary = "",
+		no_showing = "0",
+		painting = "changchun",
+		air_bullet_skin = "",
+		shop_type_id = 0,
+		hand_id = 0,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bg = "",
+		skin_type = -1,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "changchun",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		voice_actor = 149,
+		air_bomb_skin = "",
+		illustrator = 1,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					1.03,
+					0.88,
+					0
+				}
+			},
+			vicegun = {
+				{
+					1.02,
+					0.86,
+					0
+				}
+			},
+			torpedo = {
+				{
+					0.17,
+					0.04,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					1.02,
+					0.85,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.45,
+							2.31,
+							0
+						}
+					}
+				}
+			}
+		}
+	},
 	[900179] = {
 		ship_group = 900179,
 		name = "Kizuna AI ",
@@ -77718,7 +78366,7 @@ pg.ship_skin_template = {
 	},
 	[900202] = {
 		ship_group = 900202,
-		name = "大鲨鱼神",
+		name = "？？？",
 		bullet_skin_main = "",
 		desc = "B级驱大鲨鱼神立绘",
 		illustrator2 = -1,
@@ -81193,6 +81841,7 @@ pg.ship_skin_template = {
 		102141,
 		102150,
 		102160,
+		102162,
 		102180,
 		102181,
 		102190,
@@ -81340,6 +81989,7 @@ pg.ship_skin_template = {
 		202120,
 		202121,
 		202123,
+		202124,
 		202128,
 		202130,
 		202140,
@@ -81360,6 +82010,7 @@ pg.ship_skin_template = {
 		202201,
 		202240,
 		202241,
+		202260,
 		203010,
 		203019,
 		203020,
@@ -81383,6 +82034,7 @@ pg.ship_skin_template = {
 		205011,
 		205020,
 		205021,
+		205029,
 		205030,
 		205031,
 		205040,
@@ -81797,6 +82449,8 @@ pg.ship_skin_template = {
 		900134,
 		900135,
 		900136,
+		900161,
+		900162,
 		900179,
 		900180,
 		900181,

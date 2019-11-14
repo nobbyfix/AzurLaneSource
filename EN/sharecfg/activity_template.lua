@@ -4830,7 +4830,6 @@ pg.activity_template = {
 	[30117] = {
 		mark = 20190426,
 		title_res_tag = "",
-		time = "stop",
 		type = 0,
 		login_pop = 0,
 		config_id = 0,
@@ -4838,7 +4837,34 @@ pg.activity_template = {
 		config_data = "",
 		config_client = "",
 		bg = "",
-		id = 30117
+		id = 30117,
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					22
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					1
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
 	},
 	[30118] = {
 		mark = 20190426,
@@ -8919,6 +8945,462 @@ pg.activity_template = {
 			"clutter/donghua_login"
 		}
 	},
+	[30259] = {
+		mark = 20191205,
+		title_res_tag = "",
+		type = 50,
+		login_pop = 0,
+		config_id = 1,
+		is_show = 38,
+		config_data = "",
+		bg = "",
+		id = 30259,
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					22
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					4
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			{
+				8,
+				59761,
+				1
+			},
+			{
+				2,
+				59762,
+				1
+			}
+		}
+	},
+	[30264] = {
+		mark = 20191128,
+		title_res_tag = "mengfeisipifu",
+		type = 54,
+		login_pop = 0,
+		config_id = 30264,
+		is_show = 37,
+		id = 30264,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					22
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					4
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/skin_mengfeisiwsj"
+		},
+		config_client = {
+			story = {
+				{
+					"MENGFEISIWANSHENG1"
+				},
+				{
+					"MENGFEISIWANSHENG2"
+				},
+				{},
+				{
+					"MENGFEISIWANSHENG3"
+				},
+				{},
+				{
+					"MENGFEISIWANSHENG4"
+				},
+				{
+					"MENGFEISIWANSHENG5"
+				}
+			}
+		}
+	},
+	[30265] = {
+		mark = 20191114,
+		title_res_tag = "pocky_login",
+		type = 3,
+		login_pop = 0,
+		config_id = 14,
+		is_show = 34,
+		config_client = "",
+		id = 30265,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					15
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/activity_pocky_login"
+		}
+	},
+	[30266] = {
+		mark = 20191114,
+		title_res_tag = "",
+		type = 26,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		config_data = "activity_drop_30266",
+		bg = "",
+		id = 30266,
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					20
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			id = 2,
+			bg = "loadingbg/bg_build_2_act",
+			buildship_tip = "Rate Up characters: Glasgow",
+			rate_tip = {
+				"<color=#ffde38>Super Rare</color>：7%",
+				"<color=#d797ff>Elite</color>：12%",
+				"<color=#3dc6ff>Rare</color>：26%",
+				"Common：55%",
+				"<color=#3dc6ff>Glasgow</color>：5%(<color=#92fc63>up!</color>)"
+			}
+		}
+	},
+	[30267] = {
+		mark = 20191114,
+		title_res_tag = "",
+		type = 54,
+		login_pop = 0,
+		config_id = 30267,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 30267,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					15
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[30268] = {
+		mark = 20191114,
+		title_res_tag = "beierfasite_login",
+		type = 18,
+		login_pop = 0,
+		config_id = 3,
+		is_show = 35,
+		id = 30268,
+		config_data = {
+			{
+				15181
+			},
+			{
+				15182
+			},
+			{
+				15183
+			},
+			{
+				15184
+			},
+			{
+				15185
+			},
+			{
+				15186
+			},
+			{
+				15187
+			},
+			{
+				15188
+			},
+			{
+				15189
+			},
+			{
+				15190
+			},
+			{
+				15191
+			},
+			{
+				15192
+			},
+			{
+				15193
+			},
+			{
+				15194
+			}
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					15
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/activity_bg_beierfasite_login"
+		},
+		config_client = {
+			linkids = {
+				30267,
+				30269,
+				30270
+			}
+		}
+	},
+	[30269] = {
+		mark = 20191114,
+		title_res_tag = "",
+		type = 18,
+		login_pop = 0,
+		config_id = 3,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 30269,
+		config_data = {
+			{
+				15195
+			},
+			{
+				15196
+			},
+			{
+				15197
+			},
+			{
+				15198
+			},
+			{
+				15199
+			},
+			{
+				15200
+			},
+			{
+				15201
+			},
+			{
+				15202
+			},
+			{
+				15203
+			},
+			{
+				15204
+			},
+			{
+				15205
+			},
+			{
+				15206
+			},
+			{
+				15207
+			},
+			{
+				15208
+			}
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					15
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[30270] = {
+		mark = 20191114,
+		title_res_tag = "",
+		type = 18,
+		login_pop = 0,
+		config_id = 3,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 30270,
+		config_data = {
+			{
+				15209
+			}
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					15
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
 	[30500] = {
 		mark = 20181030,
 		title_res_tag = "",
@@ -9755,6 +10237,14 @@ pg.activity_template = {
 		30256,
 		30257,
 		30258,
+		30259,
+		30264,
+		30265,
+		30266,
+		30267,
+		30268,
+		30269,
+		30270,
 		30500,
 		30501,
 		30502,

@@ -4,8 +4,8 @@ return {
 	once = true,
 	scripts = {
 		{
-			actor = 107070,
 			side = 2,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "Aya! A diversion. I was too careless! All these new Commanders are monsters!",
@@ -25,12 +25,8 @@ return {
 		{
 			actor = 106010,
 			side = 0,
-			say = "*Heehee* Hornet, you were just focusing on your attacks! We managed to find an opportunity.",
 			nameColor = "#a9f548",
-			paintingFadeOut = {
-				time = 0.5,
-				side = 1
-			},
+			say = "*Heehee* Hornet, you were just focusing on your attacks! We managed to find an opportunity.",
 			shake = {
 				speed = 1,
 				number = 3
@@ -45,8 +41,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 1,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "Hornet lost, but just this once! My two sisters are even more powerful than me. Test yourself against them in the future if you dare!",
@@ -64,8 +60,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 1,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "Sadly, my sisters are out on a mission. It's a pity that you can't meet each other today!",
@@ -106,10 +102,10 @@ return {
 			}
 		},
 		{
-			actor = 107070,
+			nameColor = "#ff0000",
 			side = 1,
 			dir = -1,
-			nameColor = "#ff0000",
+			actorName = "大黄蜂",
 			say = "What's going on? The harbor is under attack? Could it be the Sirens?",
 			shake = {
 				speed = 1,
@@ -143,10 +139,10 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 1,
-			dir = -1,
 			nameColor = "#ff0000",
+			dir = -1,
+			actorName = "大黄蜂",
 			say = "It's time that we part ways. Remember, we'll use live ammo next time! No more drills for you, Commander.",
 			shake = {
 				speed = 1,
@@ -162,8 +158,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 1,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "For the Eagles! For freedom!",

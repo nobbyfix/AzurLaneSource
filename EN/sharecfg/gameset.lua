@@ -767,6 +767,28 @@ pg.gameset = {
 			1001,
 			25000
 		}
+	},
+	secretary_group_unlock = {
+		key = "secretary_group_unlock",
+		key_value = 0,
+		description = {
+			{
+				304,
+				2
+			},
+			{
+				604,
+				3
+			},
+			{
+				904,
+				4
+			},
+			{
+				1204,
+				5
+			}
+		}
 	}
 }
 
