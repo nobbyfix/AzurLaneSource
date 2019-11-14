@@ -32,25 +32,25 @@ pg.push_data_template = {
 	},
 	{
 		id = 6,
-		title = "Lecture's over, nya!",
+		title = "Lecture's over",
 		content = "The course in the Lecture Hall is over, nya! We should set up the next one, nya...",
 		desc = "Enables push notifications for when Lecture Hall proficiency has been depleted."
 	},
 	{
 		id = 7,
-		title = "Research complete, nya!",
+		title = "Research complete",
 		content = "The research task \"$1\" has been completed, nya! Let's check our progress, nya~",
 		desc = "Enables push notifications for when a Research Project has been completed."
 	},
 	{
 		id = 8,
-		title = "Development has progressed, nya!",
+		title = "Development has \nprogressed",
 		content = "Progress has been made in the development of $1! Let's head down to the development docks, nya!",
 		desc = "Enables push notifications for when a new quest is unlocked in the Shipyard."
 	},
 	{
 		id = 9,
-		title = "Meowfficer training complete, nya!",
+		title = "Meowfficer training \ncomplete",
 		content = "Meowfficer training has been completed, nya! Let's go greet our new little friend, nya!",
 		desc = "Enables push notifications for when a Meowfficer has finished training."
 	},

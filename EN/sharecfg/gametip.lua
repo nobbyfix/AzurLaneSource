@@ -6988,7 +6988,7 @@ She'll also receive a <color=#a0ff40>3%</color> stats bonus</size>.]],
 		key = "words_show_touch_effect"
 	},
 	words_bg_fit_mode = {
-		tip = "Auto-adjust loading screen aspect ratio ",
+		tip = "Auto-adjust loading \nscreen aspect ratio",
 		key = "words_bg_fit_mode"
 	},
 	activity_puzzle_get1 = {

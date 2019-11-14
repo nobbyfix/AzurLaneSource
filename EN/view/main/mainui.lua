@@ -435,7 +435,7 @@ slot0.didEnter = function (slot0)
 			LeanTween.cancel(go(slot0._paintingTF))
 
 			slot0.paintMoving = true
-			slot0._bg:GetComponent(typeof(UILongPressTrigger)).enabled = false
+			slot0._bg:GetComponent(typeof(Button)).enabled = false
 			slot0._paintingTF:GetComponent("CanvasGroup").blocksRaycasts = false
 			slot2 = slot0.flagShip.getPainting(slot1)
 			slot3 = getProxy(SettingsProxy):getCharacterSetting(slot0.flagShip.id, "l2d") and (slot2 == "biaoqiang" or slot2 == "z23" or slot2 == "lafei" or slot2 == "lingbo" or slot2 == "mingshi")
@@ -493,7 +493,7 @@ slot0.didEnter = function (slot0)
 		end
 
 		slot0.paintMoving = false
-		slot0._bg:GetComponent(typeof(UILongPressTrigger)).enabled = true
+		slot0._bg:GetComponent(typeof(Button)).enabled = true
 		slot0._paintingTF:GetComponent("CanvasGroup").blocksRaycasts = true
 
 		slot0:paintBreath()
@@ -681,15 +681,11 @@ slot0.didEnter = function (slot0)
 	onButton(slot0, slot0._commanderInfoBtn, function ()
 		slot0:emit(MainUIMediator.OPEN_PLAYER_INFO_LAYER)
 	end, SFX_MAIN)
-	GetOrAddComponent(slot0._bg, typeof(UILongPressTrigger)).onClicked:AddListener(function ()
+	onButton(slot0, slot0._bg, function ()
 		if slot0._currentState == slot1.STATE_ALL_HIDE then
 			slot0:switchForm(slot1.STATE_MAIN)
 		end
-
-		if BUTTON_SOUND_EFFECT then
-			playSoundEffect(SFX_MAIN)
-		end
-	end)
+	end, SFX_MAIN)
 	onButton(slot0, slot0._paintingTF, function ()
 		if slot0._currentState == slot1.STATE_ALL_HIDE and getToggleState(slot0._moveBtn) then
 		elseif slot0.live2dChar then
@@ -711,9 +707,9 @@ slot0.didEnter = function (slot0)
 	onButton(slot0, slot0._technologyBtn, function ()
 		slot0:emit(MainUIMediator.OPEN_TECHNOLOGY)
 	end, SFX_PANEL)
-	pg.DelegateInfo.Add(slot0, slot4)
-	GetOrAddComponent(slot0._paintingTF, "UILongPressTrigger").onLongPressed.RemoveAllListeners(slot4)
-	GetOrAddComponent(slot0._paintingTF, "UILongPressTrigger").onLongPressed.AddListener(slot4, function ()
+	pg.DelegateInfo.Add(slot0, slot3)
+	GetOrAddComponent(slot0._paintingTF, "UILongPressTrigger").onLongPressed.RemoveAllListeners(slot3)
+	GetOrAddComponent(slot0._paintingTF, "UILongPressTrigger").onLongPressed.AddListener(slot3, function ()
 		if slot0.live2dChar then
 			return
 		end
@@ -1056,7 +1052,7 @@ slot0.paintMove = function (slot0, slot1, slot2, slot3, slot4, slot5)
 		end)):setEase(LeanTweenType.easeInOutSine)
 	end
 
-	slot0._bg:GetComponent("UILongPressTrigger").enabled = false
+	slot0._bg:GetComponent("Button").enabled = false
 	slot0._paintingTF:GetComponent("Button").enabled = false
 	slot0.paintMoving = true
 	slot7 = LeanTween.moveX(rtf(slot0._paintingTF), slot1, slot0.EJECT_DURATION)
@@ -1071,8 +1067,8 @@ slot0.paintMove = function (slot0, slot1, slot2, slot3, slot4, slot5)
 
 		slot0:paintBreath()
 
-		slot0.paintBreath._bg:GetComponent("UILongPressTrigger").enabled = true
-		slot0.paintBreath._bg.GetComponent("UILongPressTrigger")._paintingTF:GetComponent("Button").enabled = true
+		slot0.paintBreath._bg:GetComponent("Button").enabled = true
+		slot0.paintBreath._bg.GetComponent("Button")._paintingTF:GetComponent("Button").enabled = true
 
 		return
 		--- END OF BLOCK #0 ---
@@ -3055,12 +3051,12 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-4, warpins: 1 ---
-			if not slot0.exited then
+			if not slot0.exited and slot0.flagShip ==  then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 5-23, warpins: 1 ---
+				--- BLOCK #0 10-29, warpins: 1 ---
 				slot0._paintingFX = {
-					name = slot0,
+					name = slot2,
 					obj = slot0
 				}
 
@@ -3068,6 +3064,15 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 				slot0.transform.localPosition = Vector3.zero
 				slot0.transform.localScale = Vector3.one
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 30-40, warpins: 2 ---
+				PoolMgr.GetInstance():ReturnPrefab("Effect/" .. slot2, PoolMgr.GetInstance(), slot0)
 				--- END OF BLOCK #0 ---
 
 
@@ -3081,7 +3086,7 @@ slot0.updateFlagShip = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 24-24, warpins: 2 ---
+			--- BLOCK #1 41-41, warpins: 2 ---
 			return
 			--- END OF BLOCK #1 ---
 
@@ -3116,22 +3121,74 @@ slot0.updateFlagShip = function (slot0, slot1)
 			pg.DynamicBgMgr.GetInstance():LoadBg(slot0, slot7, slot0._bg, slot8, function (slot0)
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-10, warpins: 1 ---
-				rtf(slot0).localPosition = Vector3(0, 0, 200)
+				--- BLOCK #0 1-5, warpins: 1 ---
+				if slot0.flagShip ==  then
 
-				return
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 6-15, warpins: 1 ---
+					rtf(slot0).localPosition = Vector3(0, 0, 200)
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 16-26, warpins: 1 ---
+					PoolMgr.GetInstance():DestroyPrefab("ui/star_level_bg_" .. slot2, "")
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
 				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 27-27, warpins: 2 ---
+				return
+				--- END OF BLOCK #1 ---
 
 
 
 			end, function (slot0)
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-6, warpins: 1 ---
-				slot0.defaultBgSprite = getImageSprite(slot0)
+				--- BLOCK #0 1-5, warpins: 1 ---
+				if slot0.flagShip ==  then
 
-				return
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 6-11, warpins: 1 ---
+					slot0.defaultBgSprite = getImageSprite(getImageSprite)
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 12-21, warpins: 1 ---
+					PoolMgr.GetInstance():DestroySprite("bg/star_level_bg_" .. slot3)
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
 				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 22-22, warpins: 2 ---
+				return
+				--- END OF BLOCK #1 ---
 
 
 

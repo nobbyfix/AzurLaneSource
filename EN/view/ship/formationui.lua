@@ -3794,12 +3794,7 @@ function slot1(slot0, slot1)
 	slot4 = "EventTriggerListener"
 	slot2 = slot2(slot3, slot4)
 	slot4 = slot2
-	slot3 = slot2.RemovePointDownFunc
-
-	slot3(slot4)
-
-	slot4 = slot2
-	slot3 = slot2.RemovePointUpFunc
+	slot3 = slot2.RemovePointClickFunc
 
 	slot3(slot4)
 
@@ -3829,22 +3824,10 @@ function slot1(slot0, slot1, slot2)
 	slot4 = slot0.eventTriggers
 	slot5 = true
 	slot4[slot3] = slot5
-	slot4 = Vector2
-	slot4 = slot4.zero
-	slot6 = slot3
-	slot5 = slot3.AddPointDownFunc
+	slot5 = slot3
+	slot4 = slot3.AddPointClickFunc
 
-	function slot7(slot0, slot1)
-		slot2 = slot1.position
-		slot0 = slot2
-	end
-
-	slot5(slot6, slot7)
-
-	slot6 = slot3
-	slot5 = slot3.AddPointUpFunc
-
-	function slot7(slot0, slot1)
+	function slot6(slot0, slot1)
 		slot2 = slot0
 		slot2 = slot2.carddrag
 
@@ -3853,91 +3836,77 @@ function slot1(slot0, slot1, slot2)
 			slot2 = slot2.go
 
 			if slot0 == slot2 then
-				slot2 = Vector2
-				slot2 = slot2.Magnitude
-				slot3 = slot2
-				slot4 = slot1.position
-				slot3 = slot3 - slot4
-				slot2 = slot2(slot3)
-				slot3 = 1
+				slot2 = slot1
+				slot2 = slot2.shipVO
 
-				if slot2 < slot3 then
-					slot2 = slot1
-					slot2 = slot2.shipVO
+				if slot2 then
+					slot2 = slot0
+					slot3 = slot2
+					slot2 = slot2.emit
+					slot4 = FormationMediator
+					slot4 = slot4.OPEN_SHIP_INFO
+					slot5 = slot1
+					slot5 = slot5.shipVO
+					slot5 = slot5.id
+					slot6 = slot0
+					slot6 = slot6._currentFleetVO
+					slot7 = slot2
+					slot7 = slot7.TOGGLE_DETAIL
 
-					if slot2 then
-						slot2 = slot0
-						slot3 = slot2
-						slot2 = slot2.emit
-						slot4 = FormationMediator
-						slot4 = slot4.OPEN_SHIP_INFO
-						slot5 = slot1
-						slot5 = slot5.shipVO
-						slot5 = slot5.id
-						slot6 = slot0
-						slot6 = slot6._currentFleetVO
-						slot7 = slot3
-						slot7 = slot7.TOGGLE_DETAIL
+					slot2(slot3, slot4, slot5, slot6, slot7)
+				else
+					slot2 = slot0
+					slot3 = slot2
+					slot2 = slot2.emit
+					slot4 = FormationMediator
+					slot4 = slot4.CHANGE_FLEET_SHIP
+					slot5 = slot1
+					slot5 = slot5.shipVO
+					slot6 = slot0
+					slot6 = slot6._currentFleetVO
+					slot7 = slot2
+					slot7 = slot7.TOGGLE_DETAIL
+					slot8 = slot3
 
-						slot2(slot3, slot4, slot5, slot6, slot7)
-					else
-						slot2 = slot0
-						slot3 = slot2
-						slot2 = slot2.emit
-						slot4 = FormationMediator
-						slot4 = slot4.CHANGE_FLEET_SHIP
-						slot5 = slot1
-						slot5 = slot5.shipVO
-						slot6 = slot0
-						slot6 = slot6._currentFleetVO
-						slot7 = slot3
-						slot7 = slot7.TOGGLE_DETAIL
-						slot8 = slot4
-
-						slot2(slot3, slot4, slot5, slot6, slot7, slot8)
-					end
-
-					slot2 = playSoundEffect
-					slot3 = SFX_PANEL
-
-					slot2(slot3)
+					slot2(slot3, slot4, slot5, slot6, slot7, slot8)
 				end
+
+				slot2 = playSoundEffect
+				slot3 = SFX_PANEL
+
+				slot2(slot3)
 			end
 		end
-
-		slot2 = Vector2
-		slot2 = slot2.zero
-		slot2 = slot2
 	end
 
-	slot5(slot6, slot7)
+	slot4(slot5, slot6)
 
-	slot5 = slot1.shipVO
+	slot4 = slot1.shipVO
 
-	if slot5 then
-		slot5 = slot0._cards
-		slot5 = slot5[slot2]
+	if slot4 then
+		slot4 = slot0._cards
+		slot4 = slot4[slot2]
+		slot5 = slot1.tr
+		slot5 = slot5.parent
+		slot6 = slot5
+		slot5 = slot5.GetComponent
+		slot7 = "ContentSizeFitter"
+		slot5 = slot5(slot6, slot7)
 		slot6 = slot1.tr
 		slot6 = slot6.parent
 		slot7 = slot6
 		slot6 = slot6.GetComponent
-		slot8 = "ContentSizeFitter"
+		slot8 = "HorizontalLayoutGroup"
 		slot6 = slot6(slot7, slot8)
 		slot7 = slot1.tr
-		slot7 = slot7.parent
-		slot8 = slot7
-		slot7 = slot7.GetComponent
-		slot9 = "HorizontalLayoutGroup"
-		slot7 = slot7(slot8, slot9)
-		slot8 = slot1.tr
-		slot8 = slot8.rect
-		slot8 = slot8.width
-		slot8 = slot8 * 0.5
-		slot9 = nil
-		slot10 = 0
-		slot11 = {}
+		slot7 = slot7.rect
+		slot7 = slot7.width
+		slot7 = slot7 * 0.5
+		slot8 = nil
+		slot9 = 0
+		slot10 = {}
 
-		function slot12()
+		function slot11()
 			slot0 = 1
 			slot1 = slot0
 			slot1 = #slot1
@@ -3996,7 +3965,7 @@ function slot1(slot0, slot1, slot2)
 			end
 		end
 
-		function slot13()
+		function slot12()
 			slot0 = 1
 			slot1 = slot0
 			slot1 = #slot1
@@ -4012,16 +3981,16 @@ function slot1(slot0, slot1, slot2)
 			end
 		end
 
-		slot14 = Timer
-		slot14 = slot14.New
-		slot15 = slot12
-		slot16 = 0.03333333333333333
-		slot17 = -1
-		slot14 = slot14(slot15, slot16, slot17)
-		slot16 = slot3
-		slot15 = slot3.AddBeginDragFunc
+		slot13 = Timer
+		slot13 = slot13.New
+		slot14 = slot11
+		slot15 = 0.03333333333333333
+		slot16 = -1
+		slot13 = slot13(slot14, slot15, slot16)
+		slot15 = slot3
+		slot14 = slot3.AddBeginDragFunc
 
-		function slot17()
+		function slot16()
 			slot0 = slot0
 			slot0 = slot0.carddrag
 
@@ -4093,12 +4062,12 @@ function slot1(slot0, slot1, slot2)
 			slot0(slot1, slot2, slot3)
 		end
 
-		slot15(slot16, slot17)
+		slot14(slot15, slot16)
 
-		slot16 = slot3
-		slot15 = slot3.AddDragFunc
+		slot15 = slot3
+		slot14 = slot3.AddDragFunc
 
-		function slot17(slot0, slot1)
+		function slot16(slot0, slot1)
 			slot2 = slot0
 			slot2 = slot2.carddrag
 			slot3 = slot1
@@ -4176,12 +4145,12 @@ function slot1(slot0, slot1, slot2)
 			end
 		end
 
-		slot15(slot16, slot17)
+		slot14(slot15, slot16)
 
-		slot16 = slot3
-		slot15 = slot3.AddDragEndFunc
+		slot15 = slot3
+		slot14 = slot3.AddDragEndFunc
 
-		function slot17(slot0, slot1)
+		function slot16(slot0, slot1)
 			slot2 = slot0
 			slot2 = slot2.carddrag
 			slot3 = slot1
@@ -4350,7 +4319,7 @@ function slot1(slot0, slot1, slot2)
 			end
 		end
 
-		slot15(slot16, slot17)
+		slot14(slot15, slot16)
 	end
 end
 
