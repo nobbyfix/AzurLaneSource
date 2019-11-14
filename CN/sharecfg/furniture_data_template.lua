@@ -3341,7 +3341,7 @@ pg.furniture_data_template = {
 		gain_by = "激奏的Polaris",
 		is_get_time_note = 1,
 		belong = 1,
-		can_rotate = 0,
+		can_rotate = 1,
 		effect = "",
 		dorm_icon_price = 500,
 		not_for_sale = 1,
@@ -4282,7 +4282,7 @@ pg.furniture_data_template = {
 					"action",
 					false,
 					nil,
-					"event:/cv/furniture/kizunavoice"
+					"event:/ui/meow"
 				}
 			}
 		},
@@ -100880,6 +100880,187 @@ pg.furniture_data_template = {
 		},
 		interAction_group = {}
 	},
+	[54101] = {
+		can_rotate = 1,
+		name = "美味舞台",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 1,
+		icon = "pockyStageicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 6,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 54101,
+		comfortable = 4,
+		describe = "挥舞起你手中的应援棒吧！",
+		dorm_id = 0,
+		gem_price = 1000,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			13,
+			8
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"pockyStage",
+				"normal"
+			},
+			{},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"dance"
+					}
+				},
+				{},
+				{
+					1
+				}
+			},
+			{},
+			{
+				0,
+				0
+			}
+		},
+		animator = {
+			{
+				"pockyStageCharControl"
+			}
+		},
+		interAction_group = {}
+	},
+	[54102] = {
+		advice = 0,
+		name = "美味彩灯",
+		count = 1,
+		type = 2,
+		dir = 0,
+		gain_by = "",
+		is_get_time_note = 0,
+		belong = 1,
+		can_rotate = 1,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 1,
+		icon = "pockyheziicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 6,
+		picture = "",
+		canputon = 0,
+		discount = 0,
+		id = 54102,
+		comfortable = 3,
+		describe = "灯光似乎都散发甜甜的香气",
+		dorm_id = 0,
+		gem_price = 1000,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"pockyhezi",
+				"action"
+			}
+		},
+		interAction_group = {}
+	},
+	[54103] = {
+		advice = 0,
+		name = "巧克力美味杯",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "pocky/pockywash",
+		can_rotate = 0,
+		dorm_icon_price = 0,
+		not_for_sale = 1,
+		icon = "pockywashicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 6,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 54103,
+		comfortable = 3,
+		describe = "搅一搅，再舔一舔~",
+		dorm_id = 0,
+		gem_price = 1000,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			8,
+			7
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"wash",
+				{
+					-86,
+					-63
+				},
+				{
+					1,
+					1
+				},
+				"pocky/pockywash_using"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		interAction_group = {}
+	},
 	all = {
 		1,
 		2,
@@ -102386,7 +102567,10 @@ pg.furniture_data_template = {
 		53301,
 		53302,
 		53303,
-		53304
+		53304,
+		54101,
+		54102,
+		54103
 	}
 }
 

@@ -1862,19 +1862,14 @@ function slot7(slot0, slot1, slot2, slot3)
 												slot7 = slot5.sprite
 												slot8 = slot6.sprite
 
-												if slot7 and slot8 then
-													slot9 = slot7.name
-													slot10 = slot8.name
+												if slot7 and slot8 and slot7 ~= slot8 then
+													slot9 = slot5.enabled
+													slot6.enabled = slot9
+													slot9 = setImageSprite
+													slot10 = slot4
+													slot11 = slot7
 
-													if slot9 ~= slot10 then
-														slot9 = slot5.enabled
-														slot6.enabled = slot9
-														slot9 = setImageSprite
-														slot10 = slot4
-														slot11 = slot7
-
-														slot9(slot10, slot11)
-													end
+													slot9(slot10, slot11)
 												end
 											end
 										end

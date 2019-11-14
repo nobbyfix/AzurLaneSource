@@ -22,6 +22,33 @@ slot0.init = function (slot0)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf, false, {
 		weight = LayerWeightConst.SECOND_LAYER
 	})
+
+	slot0.linkBtnPanel = slot0:findTF("frame/link_btns")
+	slot0.activityInsBtn = slot0:findTF("frame/link_btns/ins")
+end
+
+slot0.NotifyIns = function (slot0, slot1)
+	setActive(slot0.activityInsBtn, slot1 and not slot1:isEnd() and slot1:ExistMsg())
+
+	if slot1 and not slot1.isEnd() and slot1.ExistMsg() then
+		onButton(slot0, slot0.activityInsBtn, function ()
+			slot0:emit(CommissionInfoMediator.ON_INS)
+		end, SFX_PANEL)
+	end
+end
+
+slot0.UpdateLinkPanel = function (slot0)
+	slot1 = false
+
+	for slot5 = 1, slot0.linkBtnPanel.childCount, 1 do
+		if isActive(slot0.linkBtnPanel:GetChild(slot5 - 1)) then
+			slot1 = true
+
+			break
+		end
+	end
+
+	setActive(slot0.linkBtnPanel, slot1)
 end
 
 slot0.didEnter = function (slot0)

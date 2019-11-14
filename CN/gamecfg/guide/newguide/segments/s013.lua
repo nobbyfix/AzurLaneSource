@@ -38,6 +38,12 @@ return {
 				triggerType = {
 					1
 				},
+				image = {
+					source = "bg/icon_bg/icon",
+					isChild = true,
+					target = "bg/icon_bg/icon",
+					isRelative = true
+				},
 				fingerPos = {
 					posY = -44.21,
 					posX = 50.3

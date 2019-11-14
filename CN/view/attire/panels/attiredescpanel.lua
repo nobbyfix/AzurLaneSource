@@ -46,7 +46,13 @@ slot0.UpdateIconDesc = function (slot0, slot1, slot2)
 	slot4 = slot1:getType() == AttireConst.TYPE_CHAT_FRAME
 
 	if slot0.loadedIcon and slot0.loadedIconTF then
-		PoolMgr.GetInstance():ReturnPrefab(slot0.loadedIcon:getIcon(), slot0.loadedIcon.id, slot0.loadedIconTF)
+		slot5 = slot0.loadedIcon:getIcon()
+
+		if slot4 then
+			slot0.loadedIconTF.transform:Find("Text"):GetComponent(typeof(Text)).supportRichText = false
+		end
+
+		PoolMgr.GetInstance():ReturnPrefab(slot5, slot0.loadedIcon.id, slot0.loadedIconTF)
 	end
 
 	if slot3 then
@@ -77,6 +83,7 @@ slot0.UpdateIconDesc = function (slot0, slot1, slot2)
 			setParent(slot0, slot0.chatContainer, false)
 
 			tf(slot0).localPosition = Vector3(0, 0, 0)
+			findTF(slot0, "Text"):GetComponent(typeof(Text)).supportRichText = true
 
 			setText(findTF(slot0, "Text"), slot1:getConfig("desc"))
 		end)

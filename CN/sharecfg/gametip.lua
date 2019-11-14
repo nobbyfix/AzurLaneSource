@@ -9091,7 +9091,7 @@ $3]],
 		key = "buildship_heavy_tip"
 	},
 	buildship_light_tip = {
-		tip = "斯莫利、{namecode:141} 建造追加！",
+		tip = "斯坦利、格拉斯哥 建造追加！",
 		key = "buildship_light_tip"
 	},
 	buildship_special_tip = {
@@ -11654,6 +11654,30 @@ TIPS：
 		tip = "目标击沉：",
 		key = "pt_ship_goal"
 	},
+	option_desc1 = {
+		tip = "功能开启后，舰船显示自定义角色名称",
+		key = "option_desc1"
+	},
+	option_desc2 = {
+		tip = "功能开启后，自律战斗结束时设备震动提示战斗结束",
+		key = "option_desc2"
+	},
+	option_desc3 = {
+		tip = "功能开启后，获得超稀有及以上稀有度的舰船时设备震动提示",
+		key = "option_desc3"
+	},
+	option_desc4 = {
+		tip = "功能关闭后，重复获得已拥有的稀有及以下稀有度的舰船时（仅限海域掉落）取消弹出舰船获得界面",
+		key = "option_desc4"
+	},
+	option_desc5 = {
+		tip = "功能开启后，点击游戏界面可显示触屏特效",
+		key = "option_desc5"
+	},
+	option_desc6 = {
+		tip = "功能开启后，过场图片适应设备最小边框，不显示黑边",
+		key = "option_desc6"
+	},
 	music_collection = {
 		key = "music_collection",
 		tip = {
@@ -11667,7 +11691,7 @@ TIPS：
 				info = "2.参与以下内容可以收集「周边」：\n   通过活动关卡、完成活动任务、累积激奏徽章"
 			},
 			{
-				info = "3.通过一次高难关后重返SP1—SP5，收集全新的周边吧！"
+				info = "3.「收获的InterHalf」进度达到100%后重返SP1—SP5，\n收集全新的周边吧！\n4.领取时间截止11月20日23点59分"
 			}
 		}
 	},
@@ -11797,6 +11821,80 @@ combo达到10/20/40/60/80/100时，分别为每次有效
 	reselect_music_game = {
 		tip = "返回选歌将失去已经获得的分数，是否确认？",
 		key = "reselect_music_game"
+	},
+	pocky_jiujiu = {
+		tip = "啾啾日常 ",
+		key = "pocky_jiujiu"
+	},
+	pocky_jiujiu_desc = {
+		tip = "无情的打卡机器传来了“请打卡”的声音 ",
+		key = "pocky_jiujiu_desc"
+	},
+	pocky_help = {
+		key = "pocky_help",
+		tip = {
+			{
+				info = "活动说明："
+			},
+			{
+				info = "1.活动期间，参与完成全部打卡任务，委托任务，生产任 \n务后可获得贝尔法斯特限定换装「女仆长的购物日」"
+			},
+			{
+				info = "2.每日解锁一批任务，完成当天的打卡任务解锁当天委托\n任务，完成当前任务方可解锁下一批任务。前一天未完成\n的任务可以积累到后续完成。"
+			},
+			{
+				info = "3.累计消耗石油以完成生产任务，可提前消耗石油进行累\n计。"
+			},
+			{
+				info = "4.达成指定目标完成女仆长的委托任务，登录完成打卡任\n务。\n5.领取时间截止12月15日23点59分"
+			}
+		}
+	},
+	secretary_help = {
+		key = "secretary_help",
+		tip = {
+			{
+				info = "· 秘书组功能说明：\n"
+			},
+			{
+				info = "1.秘书组栏位需要通过主线关卡开放，秘书组可以放入\n同名舰船"
+			},
+			{
+				info = "2.仅有排列在秘书组<color=#92fc63>最左侧的秘书舰</color>可以获得<color=#92fc63>秘书舰好\n感度加成</color>"
+			},
+			{
+				info = "3.当回到主界面触发秘书舰回港台词时，将随机展示一\n名秘书组成员"
+			},
+			{
+				info = "4.通过换装设置，可以对每个秘书组成员使用的换装进\n行详细设置"
+			},
+			{
+				info = "5.在秘书组界面，拖动角色可以直接更换秘书组成员的\n位置"
+			},
+			{
+				info = "6.在主界面可以通过切换功能，切换当前展示的秘书舰\n"
+			}
+		}
+	},
+	secretary_unlock2 = {
+		tip = "完成关卡3-4后解锁",
+		key = "secretary_unlock2"
+	},
+	secretary_unlock3 = {
+		tip = "完成关卡6-4后解锁",
+		key = "secretary_unlock3"
+	},
+	secretary_unlock4 = {
+		tip = "完成关卡9-4后解锁",
+		key = "secretary_unlock4"
+	},
+	secretary_unlock5 = {
+		tip = "完成关卡12-4后解锁",
+		key = "secretary_unlock5"
+	},
+	secretary_closed = {
+		tip = "暂未开放",
+		key = "secretary_closed"
 	}
 }
 

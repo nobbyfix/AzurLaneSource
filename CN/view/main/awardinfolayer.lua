@@ -28,17 +28,27 @@ slot0.init = function (slot0)
 	slot0.onYes = slot0.contextData.awards.onYes
 	slot0.title = slot0.contextData.title or slot0.TITLE.ITEM
 	slot0._itemsWindow = slot0._tf:Find("items")
-	slot0.spriteMask = slot0._tf:Find("SpriteMask")
+	slot0.spriteMask = slot0._itemsWindow:Find("SpriteMask")
+	slot1 = {
+		items = slot0._itemsWindow:Find("items"),
+		items_scroll = slot0._itemsWindow:Find("items_scroll/viewport/content"),
+		ships = slot0._itemsWindow:Find("ships")
+	}
 
-	if slot0.title ~= slot0.TITLE.SHIP and #slot0.awards <= 10 then
-		slot0.container = slot0._itemsWindow:Find("items")
-	elseif slot0.title ~= slot0.TITLE.SHIP and #slot0.awards > 10 then
-		slot0.container = slot0._itemsWindow:Find("items_scroll/viewport/content")
+	if slot0.title == slot0.TITLE.SHIP then
+		slot0.container = slot1.ships
+	elseif #slot0.awards <= 10 then
+		slot0.container = slot1.items
 	else
-		slot0.container = slot0._itemsWindow:Find("ships")
+		slot0.container = slot1.items_scroll
+	end
+
+	for slot5, slot6 in pairs(slot1) do
+		setActive(slot0._itemsWindow:Find(slot5), slot0.container == slot6)
 	end
 
 	slot0.containerCG = GetOrAddComponent(slot0.container, "CanvasGroup")
+	slot0.containerCG.alpha = 1
 
 	setLocalScale(slot0._itemsWindow, Vector3(0.5, 0.5, 0.5))
 
@@ -49,23 +59,16 @@ slot0.init = function (slot0)
 	slot0.shipTpl = slot0._itemsWindow:Find("ship_tpl")
 	slot0.continueBtn = slot0:findTF("items/close")
 
-	setActive(slot0._itemsWindow:Find("items"), slot0.title ~= slot0.TITLE.SHIP and #slot0.awards <= 10)
-	setActive(slot0._itemsWindow:Find("items_scroll"), slot0.title ~= slot0.TITLE.SHIP and #slot0.awards > 10)
-	setActive(slot0._itemsWindow:Find("ships"), slot0.title == slot0.TITLE.SHIP)
-	setActive(slot0.container, true)
-
-	slot0.containerCG.alpha = 1
-
 	setActive(slot0.titleItem, slot0.title == slot0.TITLE.ITEM)
 	setActive(slot0.titleShip, slot0.title == slot0.TITLE.SHIP)
 	setActive(slot0.titleEscort, slot0.title == slot0.TITLE.ESCORT)
 
-	slot1 = slot0._tf:Find("decorations")
+	slot2 = slot0._tf:Find("decorations")
 
 	if slot0.title == slot0.TITLE.SHIP then
-		setLocalScale(slot1, Vector3.New(1.25, 1.25, 1))
+		setLocalScale(slot2, Vector3.New(1.25, 1.25, 1))
 	else
-		setLocalScale(slot1, Vector3.one)
+		setLocalScale(slot2, Vector3.one)
 	end
 
 	slot0.blinks = {}
@@ -85,10 +88,7 @@ slot0.doAnim = function (slot0, slot1)
 			return
 		end
 
-		w = slot1._itemsWindow.rect.width
-		h = slot1._itemsWindow.rect.height
-
-		setLocalScale(slot1.spriteMask, Vector3(w / slot2 * , h /  * slot3, 1))
+		setLocalScale(slot1.spriteMask, Vector3(slot1.spriteMask.rect.width / slot2 * , slot1.spriteMask.rect.height /  * slot3, 1))
 	end))
 end
 
@@ -167,8 +167,6 @@ end
 slot0.displayAwards = function (slot0)
 	slot0.inited = false
 
-	slot0:clearAllNameTxt()
-
 	for slot4 = #slot0.awards, slot0.container.childCount - 1, 1 do
 		Destroy(slot0.container:GetChild(slot4))
 	end
@@ -229,13 +227,7 @@ slot0.playAnim = function (slot0, slot1)
 		table.insert(slot2, function (slot0)
 			function slot1()
 				slot0()
-
-				if slot1._itemsWindow then
-					w = slot1._itemsWindow.rect.width
-					h = slot1._itemsWindow.rect.height
-
-					setLocalScale(slot1.spriteMask, Vector3(w / slot2 * , h /  * slot3, 1))
-				end
+				setLocalScale(slot1.spriteMask, Vector3(slot1.spriteMask.rect.width / slot2 * , slot1.spriteMask.rect.height /  * slot3, 1))
 			end
 
 			if not slot0.tweenItems then
@@ -265,13 +257,7 @@ slot0.playAnim = function (slot0, slot1)
 	end)
 end
 
-slot0.clearAllNameTxt = function (slot0)
-	return
-end
-
 slot0.willExit = function (slot0)
-	slot0:clearAllNameTxt()
-
 	if slot0.title ~= slot0.TITLE.SHIP then
 		for slot4 = 0, slot0.container.childCount - 1, 1 do
 			clearDrop(slot0.container:GetChild(slot4):Find("bg"))

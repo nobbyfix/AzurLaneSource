@@ -23,11 +23,11 @@ slot0.init = function (slot0)
 	SetActive(slot0._subFrame, true)
 
 	slot0._gridTFs = {
-		[Fleet.SUBMARINE] = {}
+		[TeamType.Submarine] = {}
 	}
 
 	for slot6 = 1, 3, 1 do
-		slot0._gridTFs[Fleet.SUBMARINE][slot6] = slot0._subFrame:Find("submarine_" .. slot6)
+		slot0._gridTFs[TeamType.Submarine][slot6] = slot0._subFrame:Find("submarine_" .. slot6)
 	end
 end
 
@@ -64,7 +64,7 @@ end
 
 slot0.UpdateFleetView = function (slot0, slot1)
 	slot0:displayFleetInfo()
-	slot0:resetGrid(Fleet.SUBMARINE)
+	slot0:resetGrid(TeamType.Submarine)
 
 	if slot1 then
 		slot0:loadAllCharacter()
@@ -151,7 +151,7 @@ slot0.didEnter = function (slot0)
 		slot0:switchToEditMode()
 
 		if slot0._characterList then
-			slot0:enabledTeamCharacter(Fleet.SUBMARINE, true)
+			slot0:enabledTeamCharacter(TeamType.Submarine, true)
 		end
 
 		slot0:setAllCharacterPos(false)
@@ -215,13 +215,13 @@ slot0.swtichToPreviewMode = function (slot0)
 
 	setActive(slot0._checkBtn:Find("save"), false)
 	setActive(slot0._checkBtn:Find("edit"), true)
-	slot0:resetGrid(Fleet.SUBMARINE)
+	slot0:resetGrid(TeamType.Submarine)
 	slot0:setAllCharacterPos(false)
 	onButton(slot0, slot0._checkBtn, function ()
 		slot0:switchToEditMode()
 
 		if slot0.switchToEditMode._characterList then
-			slot0:enabledTeamCharacter(Fleet.SUBMARINE, true)
+			slot0:enabledTeamCharacter(TeamType.Submarine, true)
 		end
 
 		slot0:setAllCharacterPos(false)
@@ -230,7 +230,7 @@ slot0.swtichToPreviewMode = function (slot0)
 	slot0:SetFleetStepper()
 
 	if slot0._characterList then
-		slot0:enabledTeamCharacter(Fleet.SUBMARINE, false)
+		slot0:enabledTeamCharacter(TeamType.Submarine, false)
 	end
 end
 
@@ -251,8 +251,8 @@ slot0.switchToEditMode = function (slot0)
 
 		slot0:emit(PreCombatMediator.ON_COMMIT_EDIT, slot0)
 	end, SFX_CONFIRM)
-	slot0:EnableAddGrid(Fleet.SUBMARINE)
-	slot1(slot0._characterList[Fleet.SUBMARINE])
+	slot0:EnableAddGrid(TeamType.Submarine)
+	slot1(slot0._characterList[TeamType.Submarine])
 
 	slot0._shiftIndex = nil
 
@@ -265,7 +265,7 @@ slot0.switchToShiftMode = function (slot0, slot1, slot2)
 	slot0._checkBtn:GetComponent("Button").interactable = false
 
 	for slot6 = 1, 3, 1 do
-		setActive(slot0._gridTFs[Fleet.SUBMARINE][slot6].Find(slot7, "tip"), false)
+		setActive(slot0._gridTFs[TeamType.Submarine][slot6].Find(slot7, "tip"), false)
 		setActive(slot0._gridTFs[slot2][slot6]:Find("shadow"), false)
 	end
 
@@ -298,10 +298,10 @@ slot0.loadAllCharacter = function (slot0)
 	removeAllChildren(slot0._heroContainer)
 
 	slot0._characterList = {
-		[Fleet.SUBMARINE] = {}
+		[TeamType.Submarine] = {}
 	}
 	slot0._infoList = {
-		[Fleet.SUBMARINE] = {}
+		[TeamType.Submarine] = {}
 	}
 
 	function slot1(slot0, slot1, slot2, slot3)
@@ -394,7 +394,7 @@ slot0.loadAllCharacter = function (slot0)
 		end
 	end
 
-	slot3(slot0._currentFleetVO.subShips, Fleet.SUBMARINE)
+	slot3(slot0._currentFleetVO.subShips, TeamType.Submarine)
 	pg.UIMgr.GetInstance():LoadingOn()
 	parallelAsync({}, function (slot0)
 		pg.UIMgr.GetInstance():LoadingOff()
@@ -402,8 +402,8 @@ slot0.loadAllCharacter = function (slot0)
 end
 
 slot0.setAllCharacterPos = function (slot0, slot1)
-	for slot5, slot6 in ipairs(slot0._characterList[Fleet.SUBMARINE]) do
-		slot0:setCharacterPos(Fleet.SUBMARINE, slot5, slot6, slot1)
+	for slot5, slot6 in ipairs(slot0._characterList[TeamType.Submarine]) do
+		slot0:setCharacterPos(TeamType.Submarine, slot5, slot6, slot1)
 	end
 
 	slot0:sortSiblingIndex()
@@ -516,7 +516,7 @@ slot0.sortSiblingIndex = function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #1 7-13, warpins: 1 ---
-		if slot0._characterList[Fleet.SUBMARINE][slot1] then
+		if slot0._characterList[TeamType.Submarine][slot1] then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 14-21, warpins: 1 ---
@@ -1052,7 +1052,7 @@ slot0.willExit = function (slot0)
 	-- Decompilation error in this vicinity:
 	--- BLOCK #2 21-40, warpins: 2 ---
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
-	slot0:recycleCharacterList(slot0._currentFleetVO.subShips, slot0._characterList[Fleet.SUBMARINE])
+	slot0:recycleCharacterList(slot0._currentFleetVO.subShips, slot0._characterList[TeamType.Submarine])
 
 	if slot0._resPanel then
 

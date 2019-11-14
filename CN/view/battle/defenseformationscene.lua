@@ -32,8 +32,8 @@ slot0.init = function (slot0)
 	slot0._gridFrame = slot0:findTF("GridFrame")
 
 	for slot4 = 1, 3, 1 do
-		slot0._gridTFs[Fleet.MAIN][slot4] = slot0._gridFrame:Find("main_" .. slot4)
-		slot0._gridTFs[Fleet.VANGUARD][slot4] = slot0._gridFrame:Find("vanguard_" .. slot4)
+		slot0._gridTFs[TeamType.Main][slot4] = slot0._gridFrame:Find("main_" .. slot4)
+		slot0._gridTFs[TeamType.Vanguard][slot4] = slot0._gridFrame:Find("vanguard_" .. slot4)
 	end
 
 	slot0._heroContainer = slot0:findTF("HeroContainer")
@@ -59,8 +59,8 @@ slot0.init = function (slot0)
 	slot0._attrFrame = slot0:findTF("attr_frame", slot0._blurLayer)
 	slot0._cardTpl = slot0._tf:GetComponent(typeof(ItemList)).prefabItem[0]
 	slot0._cards = {
-		[Fleet.MAIN] = {},
-		[Fleet.VANGUARD] = {}
+		[TeamType.Main] = {},
+		[TeamType.Vanguard] = {}
 	}
 
 	setActive(slot0._attrFrame, false)
@@ -80,8 +80,8 @@ end
 
 slot0.UpdateFleetView = function (slot0, slot1)
 	slot0:displayFleetInfo()
-	slot0:resetGrid(Fleet.VANGUARD)
-	slot0:resetGrid(Fleet.MAIN)
+	slot0:resetGrid(TeamType.Vanguard)
+	slot0:resetGrid(TeamType.Main)
 	slot0:resetFormationComponent()
 	slot0:updateAttrFrame()
 
@@ -265,7 +265,10 @@ slot0.loadAllCharacter = function (slot0)
 				for slot3, slot4 in ipairs(ipairs) do
 					if slot4 == slot1 then
 						Object.Destroy(slot2.gameObject)
-						PoolMgr.GetInstance():ReturnSpineChar(slot3:getPrefab(), slot4)
+
+						slot3.name = slot1.name
+
+						PoolMgr.GetInstance():ReturnSpineChar(slot4:getPrefab(), slot3)
 						table.remove(slot0, slot3)
 
 						break
@@ -274,7 +277,7 @@ slot0.loadAllCharacter = function (slot0)
 
 				slot5:switchToDisplayMode()
 				slot5:sortSiblingIndex()
-				slot5:emit(DefenseFormationMedator.REMOVE_SHIP, slot3, slot5._currentFleetVO)
+				slot5:emit(DefenseFormationMedator.REMOVE_SHIP, slot4, slot5._currentFleetVO)
 			end
 
 			slot4, slot5 = slot0._currentFleetVO:getShipPos(slot0._currentFleetVO)
@@ -283,7 +286,7 @@ slot0.loadAllCharacter = function (slot0)
 				if not slot0._currentFleetVO:canRemove(slot5) then
 					pg.TipsMgr.GetInstance():ShowTips(i18n("ship_formationUI_removeError_onlyShip", slot5:getName(), "", Fleet.C_TEAM_NAME[slot5]))
 					slot2()
-				elseif (table.getCount(slot0._currentFleetVO.mainShips) == 1 and slot5 == Fleet.MAIN) or (table.getCount(slot0._currentFleetVO.vanguardShips) == 1 and slot5 == Fleet.VANGUARD) then
+				elseif (table.getCount(slot0._currentFleetVO.mainShips) == 1 and slot5 == TeamType.Main) or (table.getCount(slot0._currentFleetVO.vanguardShips) == 1 and slot5 == TeamType.Vanguard) then
 					pg.MsgboxMgr.GetInstance():ShowMsgBox({
 						content = i18n("exercise_clear_fleet_tip"),
 						onYes = slot3,
@@ -318,8 +321,8 @@ slot0.loadAllCharacter = function (slot0)
 		end
 	end
 
-	slot3(slot0._currentFleetVO.vanguardShips, Fleet.VANGUARD)
-	slot3(slot0._currentFleetVO.mainShips, Fleet.MAIN)
+	slot3(slot0._currentFleetVO.vanguardShips, TeamType.Vanguard)
+	slot3(slot0._currentFleetVO.mainShips, TeamType.Main)
 	pg.UIMgr.GetInstance():LoadingOn()
 	parallelAsync({}, function (slot0)
 		pg.UIMgr.GetInstance():LoadingOff()
@@ -334,11 +337,11 @@ end
 
 slot0.setAllCharacterPos = function (slot0)
 	for slot4, slot5 in ipairs(slot0._characterList.vanguard) do
-		slot0:setCharacterPos(Fleet.VANGUARD, slot4, slot5)
+		slot0:setCharacterPos(TeamType.Vanguard, slot4, slot5)
 	end
 
 	for slot4, slot5 in ipairs(slot0._characterList.main) do
-		slot0:setCharacterPos(Fleet.MAIN, slot4, slot5)
+		slot0:setCharacterPos(TeamType.Main, slot4, slot5)
 	end
 end
 
@@ -364,7 +367,7 @@ slot0.resetGrid = function (slot0, slot1)
 		SetActive(slot8:Find("tip"), false)
 	end
 
-	if slot1 == Fleet.MAIN and #slot0._currentFleetVO:getTeamByName(Fleet.VANGUARD) == 0 then
+	if slot1 == TeamType.Main and #slot0._currentFleetVO:getTeamByName(TeamType.Vanguard) == 0 then
 		return
 	end
 
@@ -431,7 +434,7 @@ slot0.resetFormationComponent = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #2 42-58, warpins: 1 ---
-	SetActive(slot0._gridTFs.main[1]:Find("flag"), #slot0._currentFleetVO:getTeamByName(Fleet.MAIN) ~= 0)
+	SetActive(slot0._gridTFs.main[1]:Find("flag"), #slot0._currentFleetVO:getTeamByName(TeamType.Main) ~= 0)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -464,8 +467,8 @@ slot0.switchToShiftMode = function (slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 5-39, warpins: 2 ---
-		setActive(slot0._gridTFs[Fleet.VANGUARD][slot6].Find(slot7, "tip"), false)
-		setActive(slot0._gridTFs[Fleet.MAIN][slot6].Find(slot8, "tip"), false)
+		setActive(slot0._gridTFs[TeamType.Vanguard][slot6].Find(slot7, "tip"), false)
+		setActive(slot0._gridTFs[TeamType.Main][slot6].Find(slot8, "tip"), false)
 		setActive(slot0._gridTFs[slot2][slot6]:Find("shadow"), false)
 		--- END OF BLOCK #0 ---
 
@@ -711,8 +714,8 @@ slot0.switchToDisplayMode = function (slot0)
 
 	end
 
-	slot1(slot0._characterList[Fleet.VANGUARD])
-	slot1(slot0._characterList[Fleet.MAIN])
+	slot1(slot0._characterList[TeamType.Vanguard])
+	slot1(slot0._characterList[TeamType.Main])
 
 	slot0._shiftIndex = nil
 
@@ -784,7 +787,7 @@ slot0.sortSiblingIndex = function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 7-13, warpins: 1 ---
-		if slot0._characterList[Fleet.MAIN][slot7] then
+		if slot0._characterList[TeamType.Main][slot7] then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 14-21, warpins: 1 ---
@@ -848,7 +851,7 @@ slot0.sortSiblingIndex = function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #1 29-35, warpins: 1 ---
-		if slot0._characterList[Fleet.VANGUARD][slot3] then
+		if slot0._characterList[TeamType.Vanguard][slot3] then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 36-43, warpins: 1 ---
@@ -892,9 +895,9 @@ slot0.sortSiblingIndex = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #5 46-57, warpins: 1 ---
-	slot5 = slot0._cards[Fleet.VANGUARD]
+	slot5 = slot0._cards[TeamType.Vanguard]
 
-	if #slot0._cards[Fleet.MAIN] > 0 or #slot5 > 0 then
+	if #slot0._cards[TeamType.Main] > 0 or #slot5 > 0 then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 62-65, warpins: 2 ---
@@ -1021,8 +1024,8 @@ slot0.initAttrFrame = function (slot0)
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = {
-		[Fleet.MAIN] = "main",
-		[Fleet.VANGUARD] = "vanguard"
+		[TeamType.Main] = "main",
+		[TeamType.Vanguard] = "vanguard"
 	}
 	slot3 = false
 
@@ -1220,7 +1223,7 @@ slot0.updateAttrFrame = function (slot0)
 	-- Decompilation error in this vicinity:
 	--- BLOCK #2 59-71, warpins: 1 ---
 	slot0:updateUltimateTitle()
-	setActive(slot0:findTF(Fleet.SUBMARINE, slot0._attrFrame), false)
+	setActive(slot0:findTF(TeamType.Submarine, slot0._attrFrame), false)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -1233,7 +1236,7 @@ slot0.updateUltimateTitle = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-8, warpins: 1 ---
-	if #slot0._cards[Fleet.MAIN] > 0 then
+	if #slot0._cards[TeamType.Main] > 0 then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 9-12, warpins: 1 ---
@@ -1277,7 +1280,7 @@ slot0.updateUltimateTitle = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #1 23-30, warpins: 2 ---
-	if #slot0._cards[Fleet.VANGUARD] > 0 then
+	if #slot0._cards[TeamType.Vanguard] > 0 then
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 31-34, warpins: 1 ---
@@ -1868,7 +1871,7 @@ slot0.recycleCharacterList = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 5-30, warpins: 0 ---
+	--- BLOCK #1 5-33, warpins: 0 ---
 	for slot6, slot7 in ipairs(slot1) do
 
 		-- Decompilation error in this vicinity:
@@ -1880,7 +1883,9 @@ slot0.recycleCharacterList = function (slot0, slot1, slot2)
 			if findTF(slot2[slot6], "model") then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 14-26, warpins: 1 ---
+				--- BLOCK #0 14-29, warpins: 1 ---
+				slot8.name = slot2[slot6].name
+
 				PoolMgr.GetInstance():ReturnSpineChar(slot0.shipVOs[slot7]:getPrefab(), slot8.gameObject)
 				--- END OF BLOCK #0 ---
 
@@ -1895,7 +1900,7 @@ slot0.recycleCharacterList = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 27-28, warpins: 2 ---
+			--- BLOCK #1 30-31, warpins: 2 ---
 			slot2[slot6] = nil
 			--- END OF BLOCK #1 ---
 
@@ -1909,7 +1914,7 @@ slot0.recycleCharacterList = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 29-30, warpins: 3 ---
+		--- BLOCK #1 32-33, warpins: 3 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -1923,7 +1928,7 @@ slot0.recycleCharacterList = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 31-31, warpins: 1 ---
+	--- BLOCK #2 34-34, warpins: 1 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -2087,8 +2092,8 @@ slot0.willExit = function (slot0)
 
 	slot0.ActiveToggletimer = nil
 
-	slot0:recycleCharacterList(slot0._currentFleetVO.mainShips, slot0._characterList[Fleet.MAIN])
-	slot0:recycleCharacterList(slot0._currentFleetVO.vanguardShips, slot0._characterList[Fleet.VANGUARD])
+	slot0:recycleCharacterList(slot0._currentFleetVO.mainShips, slot0._characterList[TeamType.Main])
+	slot0:recycleCharacterList(slot0._currentFleetVO.vanguardShips, slot0._characterList[TeamType.Vanguard])
 	slot0:recyclePainting()
 
 	return

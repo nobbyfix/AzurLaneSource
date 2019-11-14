@@ -8761,7 +8761,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 20,
@@ -8859,7 +8859,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 20,
@@ -8908,7 +8908,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 20,
@@ -8957,7 +8957,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 20,
@@ -9153,7 +9153,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 20,
@@ -9398,7 +9398,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 20,
@@ -9766,7 +9766,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 20,
@@ -9864,7 +9864,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 20,
@@ -9913,7 +9913,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 20,
@@ -9962,7 +9962,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 20,
@@ -11162,7 +11162,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 8,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 0,
@@ -12982,7 +12982,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 6,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 10,
@@ -13080,7 +13080,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 0,
 		order = 6,
-		time = "always",
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 10,
@@ -21494,6 +21494,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 172800,
 		order = 1,
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 0,
@@ -21504,32 +21505,6 @@ pg.shop_template = {
 		limit_args = {},
 		effect_args = {
 			301057
-		},
-		time = {
-			{
-				{
-					2019,
-					10,
-					31
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					14
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
 		}
 	},
 	[90032] = {
@@ -21543,6 +21518,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 172800,
 		order = 2,
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 0,
@@ -21553,32 +21529,6 @@ pg.shop_template = {
 		limit_args = {},
 		effect_args = {
 			101176
-		},
-		time = {
-			{
-				{
-					2019,
-					10,
-					31
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					14
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
 		}
 	},
 	[90033] = {
@@ -21592,6 +21542,7 @@ pg.shop_template = {
 		tag = 0,
 		time_second = 172800,
 		order = 3,
+		time = "stop",
 		group = 0,
 		num = 1,
 		discount = 0,
@@ -21602,32 +21553,6 @@ pg.shop_template = {
 		limit_args = {},
 		effect_args = {
 			401236
-		},
-		time = {
-			{
-				{
-					2019,
-					10,
-					31
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					14
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
 		}
 	},
 	all = {

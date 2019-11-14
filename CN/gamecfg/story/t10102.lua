@@ -4,8 +4,8 @@ return {
 	once = true,
 	scripts = {
 		{
-			actor = 107070,
 			side = 2,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "哎呀呀~居然是声东击西，真是大意了，现在的新人都是怪物吗",
@@ -25,12 +25,8 @@ return {
 		{
 			actor = 106010,
 			side = 0,
-			say = "嘻嘻，只是大黄蜂大人总是一味的想着进攻，让我们运气好钻了个空子而已。",
 			nameColor = "#a9f548",
-			paintingFadeOut = {
-				time = 0.5,
-				side = 1
-			},
+			say = "嘻嘻，只是大黄蜂大人总是一味的想着进攻，让我们运气好钻了个空子而已。",
 			shake = {
 				speed = 1,
 				number = 3
@@ -45,8 +41,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 1,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "哼哼，这一次是我大黄蜂大人败了！但是，我的两个姐姐大人可比我厉害得多了，未来有机会的话你们一定要好好的和她们切磋一下！",
@@ -64,8 +60,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 1,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "话说回来，姐姐大人们正好都去执行任务去了，真是可惜呀，不然就可以跟你们好好的介绍一下了。",
@@ -106,10 +102,10 @@ return {
 			}
 		},
 		{
-			actor = 107070,
+			nameColor = "#ff0000",
 			side = 1,
 			dir = -1,
-			nameColor = "#ff0000",
+			actorName = "大黄蜂",
 			say = "什么情况，主港区受到空袭？居然挑的这个时间…难道是“塞壬”打过来了？",
 			shake = {
 				speed = 1,
@@ -143,10 +139,10 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 1,
-			dir = -1,
 			nameColor = "#ff0000",
+			dir = -1,
+			actorName = "大黄蜂",
 			say = "好的，是该分别的时候了，记得换上实弹武器，接下来要面对的可就不是演习了呵呵。",
 			shake = {
 				speed = 1,
@@ -162,8 +158,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 1,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "——为了碧蓝色的自由意志，天佑白鹰",

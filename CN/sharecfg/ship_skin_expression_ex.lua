@@ -76,12 +76,12 @@ pg.ship_skin_expression_ex = {
 			}
 		}
 	},
-	kelifulan_idol = {
+	jiasikenie_idol = {
 		touch = "",
 		feeling3 = "",
 		win_mvp = "",
 		feeling1 = "",
-		painting = "kelifulan_idol",
+		painting = "jiasikenie_idol",
 		upgrade = "",
 		lose = "",
 		feeling4 = "",

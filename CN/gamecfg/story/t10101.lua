@@ -4,8 +4,8 @@ return {
 	once = true,
 	scripts = {
 		{
-			actor = 107070,
 			side = 2,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "你就是新来的指挥官么，这么快就能发现我的坐标，真是让人大吃一惊呀。",
@@ -23,8 +23,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 2,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "不过，如果演习就这样结束的话那可就太没劲了~",
@@ -42,8 +42,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 2,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "来吧，就让我大黄蜂大人来好好测试一下你们的实力，放心吧，这次演习用的都是空包弹",
@@ -61,8 +61,8 @@ return {
 			}
 		},
 		{
-			actor = 107070,
 			side = 2,
+			actorName = "大黄蜂",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "不会弄疼你们的嘿嘿嘿~",
@@ -82,12 +82,8 @@ return {
 		{
 			actor = 106010,
 			side = 0,
-			say = "指挥官，空中支援已经在准备中了，在此之前，请尽量拖延住大黄蜂的进攻，指挥权就拜托了！~",
 			nameColor = "#a9f548",
-			paintingFadeOut = {
-				time = 0.5,
-				side = 1
-			},
+			say = "指挥官，空中支援已经在准备中了，在此之前，请尽量拖延住大黄蜂的进攻，指挥权就拜托了！~",
 			shake = {
 				speed = 1,
 				number = 3

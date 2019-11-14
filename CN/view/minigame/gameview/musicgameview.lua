@@ -12,9 +12,7 @@ slot0.MyGetRuntimeData = function (slot0)
 	slot0.achieve_times = checkExist(slot0:GetMGData():GetRuntimeData("elements"), {
 		1
 	}) or 0
-	slot0.isFirstgame = checkExist(slot0:GetMGData():GetRuntimeData("elements"), {
-		2
-	}) or 0
+	slot0.isFirstgame = PlayerPrefs.GetInt("musicgame_idolIsFirstgame")
 	slot0.bestScorelist = {}
 
 	for slot4 = 1, slot0.music_amount * 2, 1 do
@@ -29,6 +27,8 @@ slot0.MyStoreDataToServer = function (slot0)
 		slot0.achieve_times,
 		1
 	}
+
+	PlayerPrefs.SetInt("musicgame_idolIsFirstgame", 1)
 
 	for slot5 = 1, slot0.music_amount * 2, 1 do
 		table.insert(slot1, slot5 + 2, slot0.bestScorelist[slot5])
@@ -103,38 +103,40 @@ slot0.init = function (slot0)
 	slot0.selectview = slot0:findTF("Selectview")
 	slot0.scoreview = slot0:findTF("ScoreView")
 	slot0.scoreview_flag = false
-	slot0.Getdata_timer = Timer.New((PlayerPrefs.GetInt("musicgame_idol_speed") > 0 and PlayerPrefs.GetInt("musicgame_idol_speed")) or 1, slot0.time_interval, -1)
-
-	slot0.Getdata_timer:Start()
 end
 
 slot0.didEnter = function (slot0)
+	slot1 = 0
+	slot0.Getdata_timer = Timer.New(slot2, slot0.time_interval, -1)
+
+	slot0.Getdata_timer:Start()
+
 	slot0.score_number = 0
 	slot0.combo_link = 0
 	slot0.combo_number = 0
 	slot0.perfect_number = 0
 	slot0.good_number = 0
 	slot0.miss_number = 0
-	slot1 = slot0:GetMGData():getConfig("simple_config_data")
-	slot0.piecelist_speed = slot1.speed
-	slot0.piecelist_speedmin = slot1.speed_min
-	slot0.piecelist_speedmax = slot1.speed_max
-	slot0.score_blist = slot1.Blist
-	slot0.score_alist = slot1.Alist
-	slot0.score_slist = slot1.Slist
-	slot0.score_sslist = slot1.SSlist
-	slot0.specialcombo_number = slot1.special_combo
-	slot0.specialscore_number = slot1.special_score
-	slot0.score_perfect = slot1.perfect
-	slot0.score_good = slot1.good
-	slot0.score_miss = slot1.miss
-	slot0.score_combo = slot1.combo
-	slot0.time_perfect = slot1.perfecttime
-	slot0.time_good = slot1.goodtime
-	slot0.time_miss = slot1.misstime
-	slot0.time_laterperfect = slot1.laterperfecttime
-	slot0.time_latergood = slot1.latergoodtime
-	slot0.combo_interval = slot1.combo_interval
+	slot3 = slot0:GetMGData():getConfig("simple_config_data")
+	slot0.piecelist_speed = slot3.speed
+	slot0.piecelist_speedmin = slot3.speed_min
+	slot0.piecelist_speedmax = slot3.speed_max
+	slot0.score_blist = slot3.Blist
+	slot0.score_alist = slot3.Alist
+	slot0.score_slist = slot3.Slist
+	slot0.score_sslist = slot3.SSlist
+	slot0.specialcombo_number = slot3.special_combo
+	slot0.specialscore_number = slot3.special_score
+	slot0.score_perfect = slot3.perfect
+	slot0.score_good = slot3.good
+	slot0.score_miss = slot3.miss
+	slot0.score_combo = slot3.combo
+	slot0.time_perfect = slot3.perfecttime
+	slot0.time_good = slot3.goodtime
+	slot0.time_miss = slot3.misstime
+	slot0.time_laterperfect = slot3.laterperfecttime
+	slot0.time_latergood = slot3.latergoodtime
+	slot0.combo_interval = slot3.combo_interval
 	slot0.CeiMgr_ob = pg.CriMgr.GetInstance()
 	slot0.CeiMgr_ob.bgmPlayer.loop = false
 	slot0.leftBtmBg = slot0.game_content:Find("bottomList/bottom_leftbg")
@@ -486,6 +488,12 @@ slot0.game_start = function (slot0)
 
 			if (slot0.good_number > 0 or slot0.perfect_number > 0) and slot0.miss_number <= 0 then
 				setActive(slot0.game_content:Find("yinyue_Fullcombo"), true)
+
+				if not slot0.gotspecialcombo_flag then
+					slot0.score_number = slot0.score_number + slot0.specialscore_number
+					slot0.gotspecialcombo_flag = true
+				end
+
 				slot0.game_content:Find("yinyue_Fullcombo"):GetComponent(typeof(ParticleSystemEvent)):SetEndEvent(function ()
 					slot0:locadScoreView()
 				end)
@@ -1721,6 +1729,7 @@ slot0.showSelevtView = function (slot0)
 	end
 
 	setActive(slot5:Find("song" .. slot0.game_music), true)
+	slot0:updatSelectview()
 	slot0:loadAndPlayMusic()
 end
 

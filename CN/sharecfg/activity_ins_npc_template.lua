@@ -532,6 +532,26 @@ pg.activity_ins_npc_template = {
 		id = 133,
 		ship_group = 40301
 	},
+	{
+		id = 134,
+		ship_group = 99901
+	},
+	{
+		id = 135,
+		ship_group = 10209
+	},
+	{
+		id = 136,
+		ship_group = 20208
+	},
+	{
+		id = 137,
+		ship_group = 40301
+	},
+	{
+		id = 138,
+		ship_group = 40301
+	},
 	all = {
 		1,
 		2,
@@ -665,7 +685,12 @@ pg.activity_ins_npc_template = {
 		130,
 		131,
 		132,
-		133
+		133,
+		134,
+		135,
+		136,
+		137,
+		138
 	}
 }
 

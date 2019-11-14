@@ -2182,6 +2182,28 @@ pg.backyard_theme_template = {
 			53304
 		}
 	},
+	[54] = {
+		Cfg_1 = 5,
+		name = "pocky联动",
+		desc = "pocky联动",
+		deblocking = 1,
+		new = 1,
+		hot = 1,
+		Cfg_2 = 8,
+		is_view = 0,
+		discount = 0,
+		id = 54,
+		icon = "",
+		comfortable = 0,
+		discount_time = "",
+		ids = {
+			54101,
+			54102,
+			54103,
+			54104,
+			54105
+		}
+	},
 	all = {
 		1,
 		2,
@@ -2229,7 +2251,8 @@ pg.backyard_theme_template = {
 		49,
 		50,
 		52,
-		53
+		53,
+		54
 	}
 }
 

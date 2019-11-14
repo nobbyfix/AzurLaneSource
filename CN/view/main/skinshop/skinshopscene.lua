@@ -522,6 +522,7 @@ slot0.addShopTimer = function (slot0, slot1)
 	end, 1, -1)
 
 	slot0.shopTimer:Start()
+	slot0.shopTimer.func()
 end
 
 slot0.removeShopTimer = function (slot0)

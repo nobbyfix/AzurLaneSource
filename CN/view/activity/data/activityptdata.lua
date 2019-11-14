@@ -50,6 +50,23 @@ slot0.GetResProgress = function (slot0)
 	return slot0.count, slot0.targets[slot0:getTargetLevel()], slot0.count / slot0.targets[slot0.getTargetLevel()]
 end
 
+slot0.GetUnlockedMaxResRequire = function (slot0)
+	slot1 = pg.TimeMgr.GetInstance()
+	slot2 = slot1:DiffDay(slot0.startTime, slot1:GetServerTime()) + 1
+
+	for slot6 = #slot0.targets, 1, -1 do
+		if slot0.unlockDay[slot6] <= slot2 then
+			return slot0.targets[slot6]
+		end
+	end
+
+	return 1
+end
+
+slot0.GetTotalResRequire = function (slot0)
+	return slot0.targets[#slot0.targets]
+end
+
 slot0.GetId = function (slot0)
 	return slot0.activity.id
 end

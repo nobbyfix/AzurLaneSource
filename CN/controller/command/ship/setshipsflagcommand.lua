@@ -88,7 +88,9 @@ slot0.execute = function (slot0, slot1)
 	end
 
 	if defaultValue(slot0.flags.inAdmiral, true) then
-		slot0:setShipFlag(getProxy(PlayerProxy).getRawData(slot13).character, "inAdmiral", true)
+		for slot17, slot18 in ipairs(getProxy(PlayerProxy).getRawData(slot13).characters) do
+			slot0:setShipFlag(slot18, "inAdmiral", true)
+		end
 	end
 
 	if defaultValue(slot0.flags.inExercise, true) then

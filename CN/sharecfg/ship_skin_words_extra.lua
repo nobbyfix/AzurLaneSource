@@ -2,15 +2,16 @@ pg = pg or {}
 pg.ship_skin_words_extra = {
 	[999010] = {
 		feeling3 = "",
-		feeling1 = "",
+		id = 999010,
 		win_mvp = "",
+		feeling1 = "",
+		unlock = "",
 		feeling4 = "",
 		lose = "",
 		profile = "",
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 999010,
 		login = {
 			{
 				100,
@@ -87,14 +88,15 @@ pg.ship_skin_words_extra = {
 	[801040] = {
 		touch = "",
 		feeling3 = "",
-		login = "",
-		feeling1 = "",
+		upgrade = "",
+		id = 801040,
 		expedition = "",
 		win_mvp = "",
 		home = "",
 		mission = "",
 		touch2 = "",
-		upgrade = "",
+		feeling1 = "",
+		unlock = "",
 		feeling4 = "",
 		mail = "",
 		lose = "",
@@ -104,7 +106,7 @@ pg.ship_skin_words_extra = {
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 801040,
+		login = "",
 		detail = "",
 		feeling5 = {
 			{
@@ -116,14 +118,15 @@ pg.ship_skin_words_extra = {
 	[108030] = {
 		touch = "",
 		feeling3 = "",
-		login = "",
-		feeling1 = "",
+		upgrade = "",
+		id = 108030,
 		expedition = "",
 		win_mvp = "",
 		home = "",
 		mission = "",
 		touch2 = "",
-		upgrade = "",
+		feeling1 = "",
+		unlock = "",
 		feeling4 = "",
 		mail = "",
 		lose = "",
@@ -133,7 +136,7 @@ pg.ship_skin_words_extra = {
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 108030,
+		login = "",
 		detail = "",
 		feeling5 = {
 			{
@@ -144,10 +147,12 @@ pg.ship_skin_words_extra = {
 	},
 	[999011] = {
 		feeling3 = "",
-		feeling1 = "",
-		expedition = "",
-		mission = "",
 		upgrade = "",
+		id = 999011,
+		expedition = "",
+		win_mvp = "",
+		mission = "",
+		feeling1 = "",
 		feeling4 = "",
 		mail = "",
 		lose = "",
@@ -157,14 +162,13 @@ pg.ship_skin_words_extra = {
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 999011,
-		login = {
+		unlock = {
 			{
 				100,
 				"加斯科涅，准备完成。确认指令：陪伴主人在沙滩玩耍——…主人，在沙滩玩耍，应该做点什么…？"
 			}
 		},
-		win_mvp = {
+		login = {
 			{
 				100,
 				"欢迎回来，主人。嗯？加斯科涅正在尝试进行“自由行动”…"
@@ -203,9 +207,11 @@ pg.ship_skin_words_extra = {
 	},
 	[207050] = {
 		feeling3 = "",
-		feeling1 = "",
-		win_mvp = "",
 		upgrade = "",
+		id = 207050,
+		win_mvp = "",
+		feeling1 = "",
+		unlock = "",
 		feeling4 = "",
 		lose = "",
 		feeling5 = "",
@@ -213,7 +219,6 @@ pg.ship_skin_words_extra = {
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 207050,
 		login = {
 			{
 				1100,
@@ -277,16 +282,17 @@ pg.ship_skin_words_extra = {
 	},
 	[905030] = {
 		feeling3 = "",
-		feeling1 = "",
-		win_mvp = "",
 		upgrade = "",
+		id = 905030,
+		win_mvp = "",
+		feeling1 = "",
+		unlock = "",
 		feeling4 = "",
 		lose = "",
 		profile = "",
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 905030,
 		login = {
 			{
 				1100,

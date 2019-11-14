@@ -240981,7 +240981,7 @@ pg.chapter_template = {
 	},
 	[1280031] = {
 		mine_id = 2001,
-		progress_boss = 20,
+		progress_boss = 100,
 		oil = 10,
 		group_num = 2,
 		pos_x = "0.479",

@@ -1,11 +1,8 @@
 slot0 = class("Fleet", import(".BaseVO"))
-slot0.VANGUARD = "vanguard"
-slot0.MAIN = "main"
-slot0.SUBMARINE = "submarine"
 slot0.C_TEAM_NAME = {
-	[slot0.VANGUARD] = i18n("word_vanguard_fleet"),
-	[slot0.MAIN] = i18n("word_main_fleet"),
-	[slot0.SUBMARINE] = i18n("word_sub_fleet")
+	vanguard = i18n("word_vanguard_fleet"),
+	main = i18n("word_main_fleet"),
+	submarine = i18n("word_sub_fleet")
 }
 slot0.DEFAULT_NAME = {
 	i18n("ship_formationUI_fleetName1"),
@@ -283,32 +280,32 @@ slot0.getShipPos = function (slot0, slot1)
 	end
 
 	if table.contains(slot0.vanguardShips, slot1.id) then
-		return table.indexof(slot0.vanguardShips, slot2), slot0.VANGUARD
+		return table.indexof(slot0.vanguardShips, slot2), TeamType.Vanguard
 	elseif table.contains(slot0.mainShips, slot2) then
-		return table.indexof(slot0.mainShips, slot2), slot0.MAIN
+		return table.indexof(slot0.mainShips, slot2), TeamType.Main
 	elseif table.contains(slot0.subShips, slot2) then
-		return table.indexof(slot0.subShips, slot2), slot0.SUBMARINE
+		return table.indexof(slot0.subShips, slot2), TeamType.Submarine
 	else
 		return -1
 	end
 end
 
 slot0.getTeamByName = function (slot0, slot1)
-	if slot1 == slot0.VANGUARD then
+	if slot1 == TeamType.Vanguard then
 		return slot0.vanguardShips
-	elseif slot1 == slot0.MAIN then
+	elseif slot1 == TeamType.Main then
 		return slot0.mainShips
-	elseif slot1 == slot0.SUBMARINE then
+	elseif slot1 == TeamType.Submarine then
 		return slot0.subShips
 	end
 end
 
 slot0.insertShip = function (slot0, slot1, slot2, slot3)
-	if slot3 == slot0.VANGUARD then
+	if slot3 == TeamType.Vanguard then
 		table.insert(slot0.vanguardShips, slot2 or #slot0.vanguardShips + 1, slot1.id)
-	elseif slot3 == slot0.MAIN then
+	elseif slot3 == TeamType.Main then
 		table.insert(slot0.mainShips, slot2 or #slot0.mainShips + 1, slot1.id)
-	elseif slot3 == slot0.SUBMARINE then
+	elseif slot3 == TeamType.Submarine then
 		table.insert(slot0.subShips, slot2 or #slot0.subShips + 1, slot1.id)
 	end
 
@@ -365,19 +362,19 @@ slot0.removeShip = function (slot0, slot1)
 
 	for slot6, slot7 in ipairs(slot0.vanguardShips) do
 		if slot7 == slot2 then
-			return table.remove(slot0.vanguardShips, slot6), slot0.VANGUARD
+			return table.remove(slot0.vanguardShips, slot6), TeamType.Vanguard
 		end
 	end
 
 	for slot6, slot7 in ipairs(slot0.mainShips) do
 		if slot7 == slot2 then
-			return table.remove(slot0.mainShips, slot6), slot0.MAIN
+			return table.remove(slot0.mainShips, slot6), TeamType.Main
 		end
 	end
 
 	for slot6, slot7 in ipairs(slot0.subShips) do
 		if slot7 == slot2 then
-			return table.remove(slot0.subShips, slot6), slot0.SUBMARINE
+			return table.remove(slot0.subShips, slot6), TeamType.Submarine
 		end
 	end
 
@@ -386,15 +383,15 @@ end
 
 slot0.canRemoveByShipId = function (slot0, slot1)
 	if table.getCount(slot0.vanguardShips) == 1 and slot1 == slot0.vanguardShips[1] then
-		return false, slot0.VANGUARD
+		return false, TeamType.Vanguard
 	end
 
 	if table.getCount(slot0.mainShips) == 1 and slot1 == slot0.mainShips[1] then
-		return false, slot0.MAIN
+		return false, TeamType.Main
 	end
 
 	if table.getCount(slot0.subShips) == 1 and slot1 == slot0.subShips[1] then
-		return false, slot0.SUBMARINE
+		return false, TeamType.Submarine
 	end
 
 	return true
@@ -417,12 +414,12 @@ end
 slot0.isLegalToFight = function (slot0)
 	if slot0:getFleetType() == FleetType.Normal then
 		if #slot0.vanguardShips == 0 then
-			return slot0.VANGUARD, 1
+			return TeamType.Vanguard, 1
 		elseif #slot0.mainShips == 0 then
-			return slot0.MAIN, 1
+			return TeamType.Main, 1
 		end
 	elseif slot1 == FleetType.Submarine and #slot0.subShips == 0 then
-		return slot0.SUBMARINE, 1
+		return TeamType.Submarine, 1
 	end
 
 	return true
@@ -602,7 +599,7 @@ slot0.genRobotDataString = function (slot0)
 		end
 	end
 
-	return slot3 .. math.floor(slot0:GetGearScoreSum(slot0.VANGUARD) + slot0:GetGearScoreSum(slot0.MAIN)) .. ","
+	return slot3 .. math.floor(slot0:GetGearScoreSum(TeamType.Vanguard) + slot0:GetGearScoreSum(TeamType.Main)) .. ","
 end
 
 slot0.getIndex = function (slot0)
@@ -718,19 +715,19 @@ slot0.removeShipById = function (slot0, slot1)
 
 	for slot5, slot6 in ipairs(slot0.vanguardShips) do
 		if slot6 == slot1 then
-			return table.remove(slot0.vanguardShips, slot5), slot0.VANGUARD
+			return table.remove(slot0.vanguardShips, slot5), TeamType.Vanguard
 		end
 	end
 
 	for slot5, slot6 in ipairs(slot0.mainShips) do
 		if slot6 == slot1 then
-			return table.remove(slot0.mainShips, slot5), slot0.MAIN
+			return table.remove(slot0.mainShips, slot5), TeamType.Main
 		end
 	end
 
 	for slot5, slot6 in ipairs(slot0.subShips) do
 		if slot6 == slot1 then
-			return table.remove(slot0.subShips, slot5), slot0.SUBMARINE
+			return table.remove(slot0.subShips, slot5), TeamType.Submarine
 		end
 	end
 end

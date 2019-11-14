@@ -5,7 +5,7 @@ return {
 	init_effect = "",
 	id = 29471,
 	picture = "",
-	desc = "主武器每进行12次攻击，触发专属弹幕-希佩尔海军上将μI",
+	desc = "主武器每进行9次攻击，触发专属弹幕-希佩尔海军上将μI",
 	stack = 1,
 	color = "red",
 	icon = 29470,
@@ -17,7 +17,7 @@ return {
 				"onFire"
 			},
 			arg_list = {
-				countTarget = 12,
+				countTarget = 9,
 				countType = 29470,
 				index = {
 					1

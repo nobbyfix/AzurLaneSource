@@ -27469,6 +27469,114 @@ pg.ship_skin_template = {
 			}
 		}
 	},
+	[202124] = {
+		name = "女仆长的购物日",
+		bg = "104",
+		ship_group = 20212,
+		illustrator2 = -1,
+		bullet_skin_secondary = "",
+		id = 202124,
+		painting = "beierfasite_4",
+		air_bullet_skin = "",
+		hand_id = 1,
+		shop_type_id = 9,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bullet_skin_main = "",
+		skin_type = 0,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "beierfasite_4",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		desc = "呵呵，看主人的表情，看来这身和平常稍有不同的打扮没有让您失望呢~难得的“约会”时光，就让贝尔法斯特好好侍奉您吧",
+		voice_actor = 39,
+		air_bomb_skin = "",
+		illustrator = 20,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {
+			2
+		},
+		live2d_offset = {
+			-11,
+			-170,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					1.15,
+					1.23,
+					0
+				}
+			},
+			vicegun = {
+				{
+					1.15,
+					1.22,
+					0
+				}
+			},
+			torpedo = {
+				{
+					-0.009,
+					0.007,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					1.148,
+					1.146,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.423,
+							2.327,
+							0
+						}
+					}
+				}
+			}
+		}
+	},
 	[202128] = {
 		name = "克拉达的誓约",
 		bg = "",
@@ -30612,6 +30720,112 @@ pg.ship_skin_template = {
 						{
 							-0.39,
 							2.2,
+							0
+						}
+					}
+				}
+			}
+		}
+	},
+	[202260] = {
+		name = "格拉斯哥",
+		bg = "",
+		ship_group = 20226,
+		illustrator2 = -1,
+		bullet_skin_secondary = "",
+		id = 202260,
+		painting = "gelasige",
+		air_bullet_skin = "",
+		hand_id = 13,
+		shop_type_id = 0,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bullet_skin_main = "",
+		skin_type = -1,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "gelasige",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		desc = "南安普顿级轻巡洋舰-格拉斯哥,舷号C21",
+		voice_actor = -1,
+		air_bomb_skin = "",
+		illustrator = -1,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					1.163,
+					1.195,
+					0
+				}
+			},
+			vicegun = {
+				{
+					1.176,
+					1.263,
+					0
+				}
+			},
+			torpedo = {
+				{
+					0.001,
+					0.001,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					1.149,
+					1.335,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.39,
+							2.376,
 							0
 						}
 					}
@@ -83792,6 +84006,111 @@ pg.ship_skin_template = {
 			}
 		}
 	},
+	[900208] = {
+		name = "大黄蜂",
+		bg = "",
+		ship_group = 900208,
+		illustrator2 = -1,
+		bullet_skin_secondary = "",
+		id = 900208,
+		painting = "dahuangfeng_hx",
+		air_bullet_skin = "",
+		hand_id = 1,
+		shop_type_id = 0,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bullet_skin_main = "",
+		skin_type = -1,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "dahuangfeng_hx",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 0,
+		desc = "约克城级航空母舰—大黄蜂，舷号CV-8",
+		voice_actor = -1,
+		air_bomb_skin = "",
+		illustrator = 8,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			antiaircraft = {
+				{
+					-0.757,
+					1.097,
+					0
+				}
+			},
+			plane = {
+				{
+					-0.492,
+					0.598,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				70,
+				{
+					{
+						"smoke",
+						{
+							-0.76,
+							0.4,
+							0
+						}
+					}
+				}
+			},
+			{
+				30,
+				{
+					{
+						"smoke",
+						{
+							0.53,
+							0.21,
+							0
+						}
+					}
+				}
+			}
+		}
+	},
 	[10100010] = {
 		name = "涅普顿",
 		bg = "",
@@ -89493,6 +89812,7 @@ pg.ship_skin_template = {
 		202120,
 		202121,
 		202123,
+		202124,
 		202128,
 		202130,
 		202140,
@@ -89522,6 +89842,7 @@ pg.ship_skin_template = {
 		202240,
 		202241,
 		202250,
+		202260,
 		203010,
 		203019,
 		203020,
@@ -90017,6 +90338,7 @@ pg.ship_skin_template = {
 		900205,
 		900206,
 		900207,
+		900208,
 		10100010,
 		10100020,
 		10100030,
