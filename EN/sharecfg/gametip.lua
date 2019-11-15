@@ -4943,7 +4943,7 @@ May be improved up to 3 times]]
 					atlas = "attricon",
 					posY = 6,
 					scale = 0.66,
-					path = "damage"
+					path = "cannon"
 				}
 			},
 			{
@@ -5013,7 +5013,7 @@ May be improved up to 3 times]]
 					atlas = "attricon",
 					posY = 6,
 					scale = 0.66,
-					path = "luck"
+					path = "expend"
 				}
 			},
 			{
@@ -5063,7 +5063,7 @@ May be improved up to 3 times]]
 					atlas = "attricon",
 					posY = 0,
 					scale = 1.1,
-					path = "icon_luck"
+					path = "luck"
 				}
 			},
 			{
