@@ -4648,7 +4648,7 @@ pg.furniture_data_template = {
 		interAction_group = {}
 	},
 	[1107] = {
-		can_rotate = 0,
+		can_rotate = 1,
 		name = "萝卜苗",
 		gain_by = "",
 		type = 2,

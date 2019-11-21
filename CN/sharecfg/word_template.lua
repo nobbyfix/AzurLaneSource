@@ -2402,6 +2402,7 @@ pg.word_template = {
 		X = {
 			气 = {
 				皇 = {
+					this = true,
 					专 = {
 						卖 = {
 							this = true
@@ -3211,6 +3212,7 @@ pg.word_template = {
 		},
 		P = {
 			K = {
+				this = true,
 				出 = {
 					售 = {
 						this = true
@@ -6136,6 +6138,15 @@ pg.word_template = {
 			f = {
 				u = {
 					this = true
+				}
+			}
+		},
+		i = {
+			n = {
+				g = {
+					粉 = {
+						this = true
+					}
 				}
 			}
 		},
@@ -10713,6 +10724,7 @@ pg.word_template = {
 				}
 			},
 			綸 = {
+				this = true,
 				出 = {
 					售 = {
 						this = true
@@ -10722,6 +10734,7 @@ pg.word_template = {
 		},
 		挫 = {
 			崙 = {
+				this = true,
 				q = {
 					q = {
 						this = true
@@ -11185,6 +11198,9 @@ pg.word_template = {
 			}
 		},
 		制 = {
+			this = true
+		},
+		卖 = {
 			this = true
 		},
 		政 = {
@@ -11949,6 +11965,9 @@ pg.word_template = {
 					this = true
 				}
 			}
+		},
+		醚 = {
+			this = true
 		}
 	},
 	九 = {
@@ -12020,6 +12039,7 @@ pg.word_template = {
 			}
 		},
 		卖 = {
+			this = true,
 			小 = {
 				冰 = {
 					砖 = {
@@ -12654,6 +12674,7 @@ pg.word_template = {
 	},
 	代 = {
 		办 = {
+			this = true,
 			全 = {
 				国 = {
 					毕 = {
@@ -12690,11 +12711,15 @@ pg.word_template = {
 			}
 		},
 		开 = {
+			this = true,
 			发 = {
 				票 = {
 					this = true
 				}
 			}
+		},
+		理 = {
+			this = true
 		},
 		辦 = {
 			全 = {
@@ -12753,6 +12778,7 @@ pg.word_template = {
 	仿 = {
 		真 = {
 			槍 = {
+				this = true,
 				出 = {
 					售 = {
 						this = true
@@ -12877,6 +12903,7 @@ pg.word_template = {
 	伯 = {
 		莱 = {
 			塔 = {
+				this = true,
 				销 = {
 					售 = {
 						this = true
@@ -13077,6 +13104,7 @@ pg.word_template = {
 	},
 	供 = {
 		应 = {
+			this = true,
 			5 = {
 				4 = {
 					式 = {
@@ -13686,7 +13714,11 @@ pg.word_template = {
 				}
 			}
 		},
+		钞 = {
+			this = true
+		},
 		钱 = {
+			this = true,
 			出 = {
 				售 = {
 					this = true
@@ -13747,6 +13779,7 @@ pg.word_template = {
 			小 = {
 				口 = {
 					径 = {
+						this = true,
 						出 = {
 							售 = {
 								this = true
@@ -14498,6 +14531,7 @@ pg.word_template = {
 	},
 	兼 = {
 		职 = {
+			this = true,
 			女 = {
 				上 = {
 					门 = {
@@ -14621,6 +14655,9 @@ pg.word_template = {
 		}
 	},
 	军 = {
+		刺 = {
+			this = true
+		},
 		国 = {
 			主 = {
 				义 = {
@@ -14632,6 +14669,7 @@ pg.word_template = {
 			this = true
 		},
 		用 = {
+			this = true,
 			弩 = {
 				专 = {
 					卖 = {
@@ -14697,6 +14735,9 @@ pg.word_template = {
 						}
 					}
 				}
+			},
+			枪 = {
+				this = true
 			},
 			步 = {
 				枪 = {
@@ -14945,6 +14986,7 @@ pg.word_template = {
 			}
 		},
 		售 = {
+			this = true,
 			5 = {
 				4 = {
 					式 = {
@@ -16190,6 +16232,9 @@ pg.word_template = {
 					}
 				}
 			}
+		},
+		货 = {
+			this = true
 		}
 	},
 	刁 = {
@@ -16332,8 +16377,14 @@ pg.word_template = {
 			}
 		}
 	},
+	到 = {
+		货 = {
+			this = true
+		}
+	},
 	制 = {
 		作 = {
+			this = true,
 			5 = {
 				4 = {
 					式 = {
@@ -16546,6 +16597,7 @@ pg.word_template = {
 		},
 		幻 = {
 			剂 = {
+				this = true,
 				出 = {
 					售 = {
 						this = true
@@ -16569,6 +16621,7 @@ pg.word_template = {
 			}
 		},
 		造 = {
+			this = true,
 			缅 = {
 				古 = {
 					合 = {
@@ -16578,6 +16631,11 @@ pg.word_template = {
 					}
 				}
 			}
+		}
+	},
+	刷 = {
+		票 = {
+			this = true
 		}
 	},
 	刿 = {
@@ -16731,6 +16789,7 @@ pg.word_template = {
 			}
 		},
 		理 = {
+			this = true,
 			文 = {
 				凭 = {
 					this = true
@@ -17626,6 +17685,7 @@ pg.word_template = {
 					}
 				},
 				槍 = {
+					this = true,
 					买 = {
 						卖 = {
 							this = true
@@ -17937,6 +17997,11 @@ pg.word_template = {
 				this = true
 			},
 			因 = {
+				this = true
+			}
+		},
+		可 = {
+			精 = {
 				this = true
 			}
 		},
@@ -19571,6 +19636,11 @@ pg.word_template = {
 		便 = {
 			this = true
 		},
+		冰 = {
+			砖 = {
+				this = true
+			}
+		},
 		力 = {
 			抽 = {
 				送 = {
@@ -20740,6 +20810,9 @@ pg.word_template = {
 		方 = {
 			this = true
 		},
+		網 = {
+			this = true
+		},
 		网 = {
 			this = true
 		},
@@ -21002,6 +21075,11 @@ pg.word_template = {
 				}
 			}
 		},
+		冰 = {
+			砖 = {
+				this = true
+			}
+		},
 		参 = {
 			考 = {
 				this = true
@@ -21016,6 +21094,7 @@ pg.word_template = {
 			径 = {
 				步 = {
 					枪 = {
+						this = true,
 						Q = {
 							Q = {
 								this = true
@@ -22007,6 +22086,11 @@ pg.word_template = {
 				this = true
 			}
 		},
+		擾 = {
+			器 = {
+				this = true
+			}
+		},
 		机 = {
 			this = true
 		},
@@ -22199,6 +22283,9 @@ pg.word_template = {
 							}
 						}
 					},
+					气 = {
+						this = true
+					},
 					电 = {
 						话 = {
 							this = true
@@ -22351,6 +22438,7 @@ pg.word_template = {
 	},
 	弓 = {
 		弩 = {
+			this = true,
 			专 = {
 				卖 = {
 					this = true
@@ -23213,6 +23301,7 @@ pg.word_template = {
 	},
 	成 = {
 		人 = {
+			this = true,
 			A = {
 				片 = {
 					this = true
@@ -23528,6 +23617,7 @@ pg.word_template = {
 				a = {
 					n = {
 						g = {
+							this = true,
 							貨 = {
 								到 = {
 									付 = {
@@ -23561,6 +23651,9 @@ pg.word_template = {
 				}
 			}
 		},
+		拷 = {
+			this = true
+		},
 		机 = {
 			X = {
 				卧 = {
@@ -23588,6 +23681,7 @@ pg.word_template = {
 			}
 		},
 		枪 = {
+			this = true,
 			Q = {
 				Q = {
 					this = true
@@ -23608,6 +23702,9 @@ pg.word_template = {
 					this = true
 				}
 			}
+		},
+		槍 = {
+			this = true
 		},
 		機 = {
 			截 = {
@@ -23660,6 +23757,7 @@ pg.word_template = {
 			this = true
 		},
 		狗 = {
+			this = true,
 			出 = {
 				售 = {
 					this = true
@@ -23670,6 +23768,9 @@ pg.word_template = {
 					this = true
 				}
 			}
+		},
+		铐 = {
+			this = true
 		}
 	},
 	扎 = {
@@ -23732,6 +23833,11 @@ pg.word_template = {
 			}
 		}
 	},
+	批 = {
+		发 = {
+			this = true
+		}
+	},
 	抑 = {
 		制 = {
 			剂 = {
@@ -23746,6 +23852,9 @@ pg.word_template = {
 					this = true
 				}
 			}
+		},
+		票 = {
+			this = true
 		}
 	},
 	抠 = {
@@ -23875,6 +23984,7 @@ pg.word_template = {
 			this = true
 		},
 		聘 = {
+			this = true,
 			兼 = {
 				职 = {
 					发 = {
@@ -24057,6 +24167,7 @@ pg.word_template = {
 	},
 	提 = {
 		供 = {
+			this = true,
 			5 = {
 				4 = {
 					式 = {
@@ -26583,7 +26694,11 @@ pg.word_template = {
 				}
 			}
 		},
+		弹 = {
+			this = true
+		},
 		支 = {
+			this = true,
 			买 = {
 				卖 = {
 					this = true
@@ -26998,6 +27113,7 @@ pg.word_template = {
 				a = {
 					n = {
 						g = {
+							this = true,
 							出 = {
 								售 = {
 									this = true
@@ -27044,6 +27160,9 @@ pg.word_template = {
 					}
 				}
 			}
+		},
+		枪 = {
+			this = true
 		}
 	},
 	武 = {
@@ -27312,6 +27431,7 @@ pg.word_template = {
 			}
 		},
 		枪 = {
+			this = true,
 			专 = {
 				卖 = {
 					this = true,
@@ -27343,6 +27463,7 @@ pg.word_template = {
 			}
 		},
 		狗 = {
+			this = true,
 			销 = {
 				售 = {
 					网 = {
@@ -27376,7 +27497,11 @@ pg.word_template = {
 				}
 			}
 		},
+		槍 = {
+			this = true
+		},
 		狗 = {
+			this = true,
 			出 = {
 				售 = {
 					this = true
@@ -27454,6 +27579,11 @@ pg.word_template = {
 					}
 				}
 			}
+		},
+		苯 = {
+			基 = {
+				this = true
+			}
 		}
 	},
 	氰 = {
@@ -27465,6 +27595,7 @@ pg.word_template = {
 	},
 	水 = {
 		军 = {
+			this = true,
 			0 = {
 				0 = {
 					7 = {
@@ -27507,6 +27638,11 @@ pg.word_template = {
 					this = true
 				}
 			}
+		},
+		晶 = {
+			冰 = {
+				this = true
+			}
 		}
 	},
 	氵 = {
@@ -27531,6 +27667,7 @@ pg.word_template = {
 	},
 	求 = {
 		购 = {
+			this = true,
 			三 = {
 				唑 = {
 					仑 = {
@@ -27687,6 +27824,7 @@ pg.word_template = {
 			}
 		},
 		狗 = {
+			this = true,
 			q = {
 				q = {
 					this = true
@@ -28162,6 +28300,7 @@ pg.word_template = {
 		豹 = {
 			M = {
 				9 = {
+					this = true,
 					销 = {
 						售 = {
 							this = true
@@ -29749,6 +29888,7 @@ pg.word_template = {
 				a = {
 					n = {
 						g = {
+							this = true,
 							出 = {
 								售 = {
 									this = true
@@ -29923,6 +30063,7 @@ pg.word_template = {
 				a = {
 					n = {
 						g = {
+							this = true,
 							貨 = {
 								到 = {
 									付 = {
@@ -30630,6 +30771,11 @@ pg.word_template = {
 				}
 			}
 		},
+		牙 = {
+			签 = {
+				this = true
+			}
+		},
 		痴 = {
 			this = true
 		},
@@ -30758,6 +30904,7 @@ pg.word_template = {
 			氯 = {
 				胺 = {
 					酮 = {
+						this = true,
 						制 = {
 							作 = {
 								Q = {
@@ -30778,6 +30925,7 @@ pg.word_template = {
 			羟 = {
 				亚 = {
 					胺 = {
+						this = true,
 						q = {
 							q = {
 								this = true
@@ -30875,6 +31023,11 @@ pg.word_template = {
 		}
 	},
 	監 = {
+		聽 = {
+			王 = {
+				this = true
+			}
+		},
 		視 = {
 			塔 = {
 				this = true,
@@ -30946,12 +31099,16 @@ pg.word_template = {
 				this = true
 			}
 		},
+		枪 = {
+			this = true
+		},
 		理 = {
 			教 = {
 				this = true
 			}
 		},
 		鎗 = {
+			this = true,
 			出 = {
 				售 = {
 					this = true
@@ -33155,6 +33312,7 @@ pg.word_template = {
 	},
 	自 = {
 		制 = {
+			this = true,
 			手 = {
 				枪 = {
 					this = true,
@@ -33192,6 +33350,7 @@ pg.word_template = {
 			}
 		},
 		拍 = {
+			this = true,
 			写 = {
 				真 = {
 					this = true
@@ -33263,6 +33422,7 @@ pg.word_template = {
 			}
 		},
 		製 = {
+			this = true,
 			5 = {
 				8 = {
 					m = {
@@ -33841,6 +34001,11 @@ pg.word_template = {
 			}
 		},
 		基 = {
+			丙 = {
+				酮 = {
+					this = true
+				}
+			},
 			甲 = {
 				酮 = {
 					this = true
@@ -33862,6 +34027,7 @@ pg.word_template = {
 		国 = {
 			B = {
 				5 = {
+					this = true,
 					供 = {
 						应 = {
 							this = true
@@ -34288,6 +34454,7 @@ pg.word_template = {
 		},
 		汗 = {
 			药 = {
+				this = true,
 				出 = {
 					售 = {
 						this = true
@@ -34590,6 +34757,7 @@ pg.word_template = {
 			},
 			双 = {
 				管 = {
+					this = true,
 					q = {
 						q = {
 							this = true
@@ -35010,8 +35178,10 @@ pg.word_template = {
 	},
 	製 = {
 		作 = {
+			this = true,
 			炸 = {
 				藥 = {
+					this = true,
 					Q = {
 						Q = {
 							this = true
@@ -35021,6 +35191,7 @@ pg.word_template = {
 			}
 		},
 		造 = {
+			this = true,
 			緬 = {
 				古 = {
 					合 = {
@@ -35399,6 +35570,11 @@ pg.word_template = {
 		},
 		奴 = {
 			this = true
+		},
+		察 = {
+			证 = {
+				this = true
+			}
 		}
 	},
 	議 = {
@@ -35459,6 +35635,7 @@ pg.word_template = {
 	},
 	订 = {
 		购 = {
+			this = true,
 			大 = {
 				冰 = {
 					砖 = {
@@ -35514,6 +35691,11 @@ pg.word_template = {
 			江 = {
 				this = true
 			}
+		}
+	},
+	证 = {
+		件 = {
+			this = true
 		}
 	},
 	诎 = {
@@ -35603,6 +35785,15 @@ pg.word_template = {
 			this = true
 		}
 	},
+	貨 = {
+		到 = {
+			付 = {
+				款 = {
+					this = true
+				}
+			}
+		}
+	},
 	貫 = {
 		通 = {
 			兩 = {
@@ -35632,6 +35823,7 @@ pg.word_template = {
 			}
 		},
 		賣 = {
+			this = true,
 			四 = {
 				氢 = {
 					吡 = {
@@ -35794,6 +35986,11 @@ pg.word_template = {
 			}
 		}
 	},
+	購 = {
+		買 = {
+			this = true
+		}
+	},
 	賾 = {
 		this = true
 	},
@@ -35873,8 +36070,18 @@ pg.word_template = {
 			}
 		}
 	},
+	货 = {
+		到 = {
+			付 = {
+				款 = {
+					this = true
+				}
+			}
+		}
+	},
 	贩 = {
 		卖 = {
+			this = true,
 			k = {
 				i = {
 					n = {
@@ -35900,6 +36107,7 @@ pg.word_template = {
 	},
 	购 = {
 		买 = {
+			this = true,
 			枪 = {
 				支 = {
 					this = true
@@ -36166,6 +36374,11 @@ pg.word_template = {
 				}
 			}
 		},
+		稀 = {
+			有 = {
+				this = true
+			}
+		},
 		７ = {
 			８ = {
 				this = true
@@ -36428,6 +36641,9 @@ pg.word_template = {
 			轮 = {
 				this = true
 			}
+		},
+		让 = {
+			this = true
 		}
 	},
 	轮 = {
@@ -36483,6 +36699,7 @@ pg.word_template = {
 	},
 	辅 = {
 		助 = {
+			this = true,
 			程 = {
 				序 = {
 					运 = {
@@ -36619,6 +36836,9 @@ pg.word_template = {
 	},
 	进 = {
 		口 = {
+			枪 = {
+				this = true
+			},
 			气 = {
 				枪 = {
 					q = {
@@ -36747,6 +36967,9 @@ pg.word_template = {
 			药 = {
 				this = true
 			},
+			藥 = {
+				this = true
+			},
 			蘑 = {
 				菇 = {
 					this = true
@@ -36762,6 +36985,7 @@ pg.word_template = {
 				}
 			},
 			藥 = {
+				this = true,
 				制 = {
 					作 = {
 						方 = {
@@ -37423,6 +37647,7 @@ pg.word_template = {
 	},
 	銷 = {
 		售 = {
+			this = true,
 			中 = {
 				控 = {
 					解 = {
@@ -37587,6 +37812,7 @@ pg.word_template = {
 	鋼 = {
 		珠 = {
 			槍 = {
+				this = true,
 				出 = {
 					售 = {
 						this = true
@@ -37652,6 +37878,11 @@ pg.word_template = {
 	},
 	鍰 = {
 		this = true
+	},
+	鎂 = {
+		粉 = {
+			this = true
+		}
 	},
 	鎮 = {
 		壓 = {
@@ -37755,6 +37986,7 @@ pg.word_template = {
 	钢 = {
 		珠 = {
 			枪 = {
+				this = true,
 				销 = {
 					售 = {
 						this = true
@@ -37835,6 +38067,7 @@ pg.word_template = {
 	},
 	销 = {
 		售 = {
+			this = true,
 			5 = {
 				4 = {
 					式 = {
@@ -38464,6 +38697,15 @@ pg.word_template = {
 			}
 		}
 	},
+	间 = {
+		苯 = {
+			三 = {
+				酚 = {
+					this = true
+				}
+			}
+		}
+	},
 	阎 = {
 		王 = {
 			this = true
@@ -39044,6 +39286,11 @@ pg.word_template = {
 				日 = {
 					this = true
 				}
+			}
+		},
+		蒿 = {
+			素 = {
+				this = true
 			}
 		}
 	},
@@ -40278,6 +40525,11 @@ pg.word_template = {
 			斯 = {
 				this = true
 			}
+		},
+		角 = {
+			醇 = {
+				this = true
+			}
 		}
 	},
 	麦 = {
@@ -40327,7 +40579,12 @@ pg.word_template = {
 			}
 		},
 		果 = {
-			this = true
+			this = true,
+			丸 = {
+				子 = {
+					this = true
+				}
+			}
 		},
 		醉 = {
 			q = {
@@ -40392,6 +40649,9 @@ pg.word_template = {
 		黄 = {
 			碱 = {
 				this = true
+			},
+			素 = {
+				this = true
 			}
 		}
 	},
@@ -40454,6 +40714,11 @@ pg.word_template = {
 					this = true
 				}
 			}
+		},
+		體 = {
+			酮 = {
+				this = true
+			}
 		}
 	},
 	黄 = {
@@ -40489,6 +40754,9 @@ pg.word_template = {
 			}
 		},
 		盘 = {
+			this = true
+		},
+		站 = {
 			this = true
 		},
 		色 = {

@@ -65403,7 +65403,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89000] = {
-		name = "随机单词生成器 ",
+		name = "随机单词生成器",
 		type = 10,
 		id = 89000,
 		tech = 0,

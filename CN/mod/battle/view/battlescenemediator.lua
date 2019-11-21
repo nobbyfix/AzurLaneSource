@@ -51,14 +51,13 @@ end
 slot5.InitPopNumPool = function (slot0)
 	slot0._popNumPool = slot0.Battle.BattlePopNumManager.GetInstance()
 
-	slot0._popNumPool:InitialPoolRoot(slot0._state:GetUI():findTF("HP_POP"))
+	slot0._popNumPool:InitialPoolRoot(slot0._state:GetUI():findTF(slot0.Battle.BattlePopNumManager.CONTAINER_HP))
 end
 
 slot5.InitPopScorePool = function (slot0)
 	slot0._popNumPool = slot0.Battle.BattlePopNumManager.GetInstance()
-	slot1 = slot0._state:GetUI()
 
-	slot0._popNumPool:InitScroePop(slot1:findTF("HP_POP"), slot1:findTF(slot0.Battle.BattlePopNumManager.CONTAINER_SCORE))
+	slot0._popNumPool:InitialScorePoolRoot(slot0._state:GetUI():findTF(slot0.Battle.BattlePopNumManager.CONTAINER_SCORE))
 end
 
 slot5.InitFlagShipMark = function (slot0)

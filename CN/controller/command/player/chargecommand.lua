@@ -45,6 +45,7 @@ class("ChargeCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 				pg.SdkMgr.GetInstance():SdkPay(slot0:getConfig("id_str"), slot0:getConfig("money") * 100, slot0:getConfig("name"), (slot0:firstPayDouble() and slot1 and slot0:getConfig("gem") * 2) or slot0:getConfig("gem") + slot0:getConfig("extra_gem"), slot8, slot0:getConfig("subject"), "-" .. getProxy(PlayerProxy).getData(slot2).id .. "-" .. slot0.pay_id, getProxy(PlayerProxy).getData(slot2).name, slot0.url or "", slot0.order_sign or "")
 			end
 
+			pg.TrackerMgr.GetInstance():Tracking(TRACKING_PURCHASE, pg.TrackerMgr.GetInstance())
 			getProxy(ShopsProxy):addWaitTimer()
 		else
 			pg.TipsMgr.GetInstance():ShowTips(errorTip("charge_erro", slot0.result))

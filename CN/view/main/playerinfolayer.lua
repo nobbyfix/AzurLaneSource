@@ -585,15 +585,22 @@ slot0.updateLive2DBtn = function (slot0, slot1, slot2)
 		setActive(slot3, false)
 		setActive(slot2:Find("on"), false)
 		setActive(slot2:Find("off"), true)
-		onButton(slot0, live2dBtn, function ()
-			slot0:UpdateF(slot0, true)
+		onToggle(slot0, slot2, function (slot0)
+			setActive(slot0:Find("on"), slot0)
+			setActive(slot0:Find("off"), not slot0)
+
+			if slot0 then
+				slot1:UpdateF(slot1, true)
+			end
 		end, SFX_PANEL)
+		triggerToggle(slot2, false)
 	elseif slot7 == DownloadState.Updating then
 		setActive(slot2, true)
 		setActive(slot3, true)
 		setActive(slot2:Find("on"), false)
 		setActive(slot2:Find("off"), false)
-		removeOnButton(live2dBtn)
+
+		slot2:GetComponent(typeof(Toggle)).interactable = true
 	else
 		setActive(slot2, PathMgr.FileExists(PathMgr.getAssetBundle(slot4)))
 
@@ -719,8 +726,7 @@ end
 slot0.detachOnCardButton = function (slot0, slot1)
 	slot2 = GetOrAddComponent(slot1.go, "EventTriggerListener")
 
-	slot2:RemovePointDownFunc()
-	slot2:RemovePointUpFunc()
+	slot2:RemovePointClickFunc()
 	slot2:RemoveBeginDragFunc()
 	slot2:RemoveDragFunc()
 	slot2:RemoveDragEndFunc()
@@ -742,35 +748,29 @@ end
 slot0.attachOnCardButton = function (slot0, slot1)
 	slot2 = GetOrAddComponent(slot1.go, "EventTriggerListener")
 	slot0.eventTriggers[slot2] = true
-	slot3 = Vector2.zero
 
-	slot2:AddPointDownFunc(function (slot0, slot1)
-		slot0 = slot1.position
-	end)
-	slot2:AddPointUpFunc(function (slot0, slot1)
-		if not slot0.carddrag and slot0 == slot1.go and Vector2.Magnitude(slot2 - slot1.position) < 1 then
+	slot2:AddPointClickFunc(function (slot0, slot1)
+		if not slot0.carddrag and slot0 == slot1.go then
 			slot0:emit(PlayerInfoMediator.CHANGE_PAINT, slot1.shipVO)
 			playSoundEffect(SFX_PANEL)
 		end
-
-		slot2 = Vector2.zero
 	end)
 
 	if slot1.shipVO then
-		slot4 = slot0.cards
-		slot5 = slot1.tr.parent:GetComponent("HorizontalLayoutGroup")
-		slot6 = slot1.tr.rect.width * 0.5
-		slot7 = nil
-		slot8 = 0
-		slot9 = {}
+		slot3 = slot0.cards
+		slot4 = slot1.tr.parent:GetComponent("HorizontalLayoutGroup")
+		slot5 = slot1.tr.rect.width * 0.5
+		slot6 = nil
+		slot7 = 0
+		slot8 = {}
 
-		function slot11()
+		function slot10()
 			for slot3 = 1, #slot0, 1 do
 				slot0[slot3].tr.anchoredPosition = slot1[slot3]
 			end
 		end
 
-		slot12 = Timer.New(slot10, 0.03333333333333333, -1)
+		slot11 = Timer.New(slot9, 0.03333333333333333, -1)
 
 		slot2:AddBeginDragFunc(function ()
 			if slot0.carddrag then

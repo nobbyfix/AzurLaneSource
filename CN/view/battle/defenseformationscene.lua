@@ -1350,43 +1350,27 @@ end
 slot0.attachOnCardButton = function (slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-35, warpins: 1 ---
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot3 = GetOrAddComponent(slot1.go, "EventTriggerListener")
 	slot0.eventTriggers[slot3] = true
 
-	slot3:RemovePointDownFunc()
-	slot3:RemovePointUpFunc()
+	slot3:RemovePointClickFunc()
 	slot3:RemoveBeginDragFunc()
 	slot3:RemoveDragFunc()
 	slot3:RemoveDragEndFunc()
-
-	slot4 = Vector2.zero
-
-	slot3:AddPointDownFunc(function (slot0, slot1)
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = slot1.position
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end)
-	slot3:AddPointUpFunc(function (slot0, slot1)
+	slot3:AddPointClickFunc(function (slot0, slot1)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		if slot0 == slot0.go and Vector2.Magnitude(slot1 - slot1.position) < 1 then
+		if slot0 == slot0.go then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 14-17, warpins: 1 ---
+			--- BLOCK #0 5-8, warpins: 1 ---
 			if slot0.shipVO then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 18-31, warpins: 1 ---
-				slot2:emit(DefenseFormationMedator.OPEN_SHIP_INFO, slot0.shipVO.id, slot2._currentFleetVO, slot3.TOGGLE_DETAIL)
+				--- BLOCK #0 9-22, warpins: 1 ---
+				slot1:emit(DefenseFormationMedator.OPEN_SHIP_INFO, slot0.shipVO.id, slot1._currentFleetVO, slot2.TOGGLE_DETAIL)
 				--- END OF BLOCK #0 ---
 
 
@@ -1394,8 +1378,8 @@ slot0.attachOnCardButton = function (slot0, slot1, slot2)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 32-40, warpins: 1 ---
-				slot2:emit(DefenseFormationMedator.CHANGE_FLEET_SHIP, slot0.shipVO, )
+				--- BLOCK #0 23-31, warpins: 1 ---
+				slot1:emit(DefenseFormationMedator.CHANGE_FLEET_SHIP, slot0.shipVO, slot1)
 				--- END OF BLOCK #0 ---
 
 
@@ -1409,7 +1393,7 @@ slot0.attachOnCardButton = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 41-43, warpins: 2 ---
+			--- BLOCK #1 32-34, warpins: 2 ---
 			playSoundEffect(SFX_PANEL)
 			--- END OF BLOCK #1 ---
 
@@ -1424,9 +1408,7 @@ slot0.attachOnCardButton = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 44-47, warpins: 3 ---
-		slot1 = Vector2.zero
-
+		--- BLOCK #1 35-35, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 
@@ -1437,16 +1419,16 @@ slot0.attachOnCardButton = function (slot0, slot1, slot2)
 	if slot1.shipVO then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 36-77, warpins: 1 ---
-		slot5 = slot0._cards[slot2]
-		slot6 = slot1.tr.parent:GetComponent("ContentSizeFitter")
-		slot7 = slot1.tr.parent:GetComponent("HorizontalLayoutGroup")
-		slot8 = slot1.tr.rect.width * 0.5
-		slot9 = nil
-		slot10 = 0
-		slot11 = {}
+		--- BLOCK #0 27-68, warpins: 1 ---
+		slot4 = slot0._cards[slot2]
+		slot5 = slot1.tr.parent:GetComponent("ContentSizeFitter")
+		slot6 = slot1.tr.parent:GetComponent("HorizontalLayoutGroup")
+		slot7 = slot1.tr.rect.width * 0.5
+		slot8 = nil
+		slot9 = 0
+		slot10 = {}
 
-		function slot13()
+		function slot12()
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-5, warpins: 1 ---
@@ -1484,7 +1466,7 @@ slot0.attachOnCardButton = function (slot0, slot1, slot2)
 
 		end
 
-		slot14 = Timer.New(slot12, 0.03333333333333333, -1)
+		slot13 = Timer.New(slot11, 0.03333333333333333, -1)
 
 		slot3:AddBeginDragFunc(function ()
 
@@ -1782,7 +1764,7 @@ slot0.attachOnCardButton = function (slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 78-79, warpins: 2 ---
+	--- BLOCK #1 69-70, warpins: 2 ---
 	return
 	--- END OF BLOCK #1 ---
 

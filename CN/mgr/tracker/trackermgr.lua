@@ -13,6 +13,7 @@ TRACKING_PURCHASE_CLICK = "purchase_click"
 TRACKING_PURCHASE_CLICK_MONTHLYCARD = "purchase_click_monthlycard"
 TRACKING_PURCHASE_CLICK_GIFTBAG = "purchase_click_giftbag"
 TRACKING_PURCHASE_CLICK_DIAMOND = "purchase_click_diamond"
+TRACKING_PURCHASE = "purchase"
 TRACKING_2D_RETENTION = "2d_retention"
 TRACKING_7D_RETENTION = "7d_retention"
 TRACKING_BUILD_SHIP = "build_ship"
@@ -221,9 +222,9 @@ pg.TrackerMgr.Tracking = function (slot0, slot1, slot2, slot3)
 		if slot2 == 1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 118-131, warpins: 1 ---
+			--- BLOCK #0 118-132, warpins: 1 ---
 			print("tracking type : " .. TRACKING_PURCHASE_CLICK_MONTHLYCARD .. "   user_id:" .. slot9)
-			slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_MONTHLYCARD, slot9)
+			slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_MONTHLYCARD, slot9, slot2)
 			--- END OF BLOCK #0 ---
 
 
@@ -231,13 +232,13 @@ pg.TrackerMgr.Tracking = function (slot0, slot1, slot2, slot3)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 132-133, warpins: 1 ---
+			--- BLOCK #0 133-134, warpins: 1 ---
 			if slot2 == 2 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 134-147, warpins: 1 ---
+				--- BLOCK #0 135-149, warpins: 1 ---
 				print("tracking type : " .. TRACKING_PURCHASE_CLICK_GIFTBAG .. "   user_id:" .. slot9)
-				slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_GIFTBAG, slot9)
+				slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_GIFTBAG, slot9, slot2)
 				--- END OF BLOCK #0 ---
 
 
@@ -245,9 +246,9 @@ pg.TrackerMgr.Tracking = function (slot0, slot1, slot2, slot3)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 148-160, warpins: 1 ---
+				--- BLOCK #0 150-163, warpins: 1 ---
 				print("tracking type : " .. TRACKING_PURCHASE_CLICK_DIAMOND .. "   user_id:" .. slot9)
-				slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_DIAMOND, slot9)
+				slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_DIAMOND, slot9, slot2)
 				--- END OF BLOCK #0 ---
 
 

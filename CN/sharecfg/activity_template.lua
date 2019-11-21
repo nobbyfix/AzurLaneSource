@@ -133,7 +133,7 @@ pg.activity_template = {
 		}
 	},
 	[40] = {
-		mark = 20190426,
+		mark = 20191121,
 		title_res_tag = "",
 		type = 0,
 		login_pop = 0,
@@ -148,8 +148,8 @@ pg.activity_template = {
 			{
 				{
 					2019,
-					4,
-					27
+					11,
+					22
 				},
 				{
 					0,
@@ -160,8 +160,8 @@ pg.activity_template = {
 			{
 				{
 					2019,
-					5,
-					6
+					12,
+					1
 				},
 				{
 					23,
@@ -955,8 +955,8 @@ pg.activity_template = {
 			{
 				{
 					2019,
-					12,
-					26
+					11,
+					27
 				},
 				{
 					23,
@@ -1010,6 +1010,7 @@ pg.activity_template = {
 	[420] = {
 		mark = 20191114,
 		title_res_tag = "",
+		time = "stop",
 		type = 26,
 		login_pop = 0,
 		config_id = 0,
@@ -1017,33 +1018,6 @@ pg.activity_template = {
 		config_data = "activity_drop_420",
 		bg = "",
 		id = 420,
-		time = {
-			timer,
-			{
-				{
-					2019,
-					11,
-					14
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					21
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		},
 		config_client = {
 			id = 2,
 			bg = "loadingbg/bg_build_2_act",

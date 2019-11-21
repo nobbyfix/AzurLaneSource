@@ -46,10 +46,7 @@ slot2.Init = function (slot0, slot1, slot2)
 	slot0._allPool[slot0.POP_CT_NORMAL] = slot0:generateTempPool(slot0.POP_CT_NORMAL, slot2, slot1, 0)
 	slot0._allPool[slot0.POP_CT_EXPLO] = slot0:generateTempPool(slot0.POP_CT_EXPLO, slot2, slot1, 0)
 	slot0._allPool[slot0.POP_CT_PIERCE] = slot0:generateTempPool(slot0.POP_CT_PIERCE, slot2, slot1, 0)
-end
-
-slot2.InitScroePop = function (slot0, slot1, slot2)
-	slot0._allPool[slot0.POP_SCORE] = slot0:generatePool(slot0.POP_SCORE, slot2, slot1, 5)
+	slot0._allPool[slot0.POP_SCORE] = slot0:generateTempPool(slot0.POP_SCORE, slot2, slot1, 5)
 end
 
 slot2.InitialPoolRoot = function (slot0, slot1)
@@ -63,6 +60,10 @@ slot2.InitialPoolRoot = function (slot0, slot1)
 	slot0:resetPopParent(slot0._allPool[slot0.POP_CT_NORMAL], slot1)
 	slot0:resetPopParent(slot0._allPool[slot0.POP_CT_EXPLO], slot1)
 	slot0:resetPopParent(slot0._allPool[slot0.POP_CT_PIERCE], slot1)
+end
+
+slot2.InitialScorePoolRoot = function (slot0, slot1)
+	slot0:resetPopParent(slot0._allPool[slot0.POP_SCORE], slot1)
 end
 
 slot2.Clear = function (slot0)

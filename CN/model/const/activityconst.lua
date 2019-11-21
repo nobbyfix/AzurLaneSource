@@ -112,6 +112,7 @@ slot0.AOERLIANG_RE_TASK_ID = 222
 slot0.AOERLIANG_RE_SIGN_ID = 223
 slot0.WINTER_RE_PREVIEW_ID = 224
 slot0.PIG_YEAR_RED_POCKET_SHIP_ID = 232
+slot0.PIG_YEAR_RED_POCKET_SHIP_ID_RETRO = 445
 slot0.NEW_YEAR_OVERVIEW = 234
 slot0.BOSS_BATTLE_AISAIKESI = 243
 slot0.NARVIK_PREVIEW_ID = 251
@@ -184,6 +185,7 @@ slot0.POCKY_SKIN_PT = 421
 slot0.POCKY_SKIN_LOGIN = 422
 slot0.POCKY_SKIN_TASKLIST = 423
 slot0.POCKY_SKIN_FINAL = 424
+slot0.WARSPITE_TRANS = 445
 slot0.LINDONG_REMAKE_KR = 0
 slot0.TWHALLOWEENSKIN = 0
 slot0.VOTE_ORDER_BOOK_PHASE_1 = 1020
@@ -299,18 +301,5 @@ slot0.BBRule = function (slot0)
 
 	return slot2
 end
-
-slot0.DODGEM_FAKE_ITEM = {
-	{
-		id = 59761,
-		count = 1,
-		type = 8
-	},
-	{
-		id = 59775,
-		count = 1,
-		type = 8
-	}
-}
 
 return slot0

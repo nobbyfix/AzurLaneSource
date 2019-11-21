@@ -53,15 +53,17 @@ end
 
 slot6 = print
 
-function print(slot0, ...)
+function print(...)
 	if Application.isEditor then
-		slot0(debug.traceback(tostring(slot0) .. " " .. table.concat(_.map({
+
+		-- Decompilation error in this vicinity:
+		_.map({
 			...
 		}, function (slot0)
 			return tostring(slot0)
-		end), " "), 2))
+		end)(debug.traceback(table.concat(slot0, " "), 2))
 	else
-		slot0(slot0, ...)
+		slot0(...)
 	end
 end
 
@@ -377,20 +379,20 @@ function tobool(slot0)
 	return (slot0 and true) or false
 end
 
-function warning(slot0, ...)
-	Debugger.LogWarning(debug.traceback(tostring(slot0) .. " " .. table.concat(_.map({
-		...
-	}, function (slot0)
-		return tostring(slot0)
-	end), " "), 2))
+function warning(...)
+	if Application.isEditor then
+		Debugger.LogWarning(debug.traceback(table.concat(slot0, " "), 2))
+	else
+		slot0(...)
+	end
 end
 
-function errorMsg(slot0, ...)
-	Debugger.LogError(debug.traceback(tostring(slot0) .. " " .. table.concat(_.map({
-		...
-	}, function (slot0)
-		return tostring(slot0)
-	end), " "), 2))
+function errorMsg(...)
+	if Application.isEditor then
+		Debugger.LogError(debug.traceback(table.concat(slot0, " "), 2))
+	else
+		slot0(...)
+	end
 end
 
 function BuildVector3(slot0)

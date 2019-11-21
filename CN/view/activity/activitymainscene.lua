@@ -312,6 +312,10 @@ slot1 = {
 	[ActivityConst.POCKY_SKIN_LOGIN] = {
 		className = "PockySkinPage",
 		uiName = "PockySkinPage"
+	},
+	[ActivityConst.WARSPITE_TRANS] = {
+		className = "WarspiteTransformationPage",
+		uiName = "WarspiteTransformationPage"
 	}
 }
 slot2 = {

@@ -1064,6 +1064,14 @@ pg.gametip = {
 		tip = "获得贡献：",
 		key = "battle_result_contribution"
 	},
+	battle_result_total_score = {
+		tip = "累计得分：",
+		key = "battle_result_total_score"
+	},
+	battle_result_max_combo = {
+		tip = "最高COMBO：",
+		key = "battle_result_max_combo"
+	},
 	battle_levelScene_0Oil = {
 		tip = "石油产量为0",
 		key = "battle_levelScene_0Oil"
@@ -4784,7 +4792,7 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 					atlas = "attricon",
 					posY = 0,
 					scale = 0.6,
-					path = "damage"
+					path = "cannon"
 				}
 			},
 			{
@@ -4854,7 +4862,7 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 					atlas = "attricon",
 					posY = 0,
 					scale = 0.6,
-					path = "luck"
+					path = "expend"
 				}
 			},
 			{
@@ -4909,7 +4917,7 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 					atlas = "attricon",
 					posY = 0,
 					scale = 1,
-					path = "icon_luck"
+					path = "luck"
 				}
 			},
 			{
@@ -8513,18 +8521,6 @@ $3]],
 			{
 				icon = {
 					path = "",
-					atlas = "helpbg/battle_fc_1"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/battle_fc_2"
-				}
-			},
-			{
-				icon = {
-					path = "",
 					atlas = "helpbg/level_ui_help_1"
 				}
 			},
@@ -8770,11 +8766,11 @@ $3]],
 		key = "resource_verify_warn"
 	},
 	resource_verify_fail = {
-		tip = "资源修复已完成，请重新打开游戏并进行更新，点击确认关闭游戏[$1]",
+		tip = "本地有资源异常，请重新打开游戏并进行更新，点击确认关闭游戏。$1",
 		key = "resource_verify_fail"
 	},
 	resource_verify_success = {
-		tip = "资源修复已完成",
+		tip = "本地资源没有异常",
 		key = "resource_verify_success"
 	},
 	resource_clear_all = {
@@ -11895,6 +11891,18 @@ combo达到10/20/40/60/80/100时，分别为每次有效
 	secretary_closed = {
 		tip = "暂未开放",
 		key = "secretary_closed"
+	},
+	confirm_unlock = {
+		tip = "是否解锁$1",
+		key = "confirm_unlock"
+	},
+	secretary_pos_save = {
+		tip = "是否保存当前秘书舰位置调整?",
+		key = "secretary_pos_save"
+	},
+	secretary_pos_save_success = {
+		tip = "保存成功",
+		key = "secretary_pos_save_success"
 	}
 }
 

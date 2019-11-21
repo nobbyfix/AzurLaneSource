@@ -7,6 +7,8 @@ slot0.MODE_DESTROY = "destroy"
 slot0.MODE_SELECT = "select"
 slot0.MODE_MOD = "modify"
 slot0.MODE_WORLD = "world"
+slot0.MODE_REMOULD = "remould"
+slot0.MODE_UPGRADE = "upgrade"
 slot0.TITLE_CN_OVERVIEW = i18n("word_dockyard")
 slot0.TITLE_CN_UPGRADE = i18n("word_dockyardUpgrade")
 slot0.TITLE_CN_DESTROY = i18n("word_dockyardDestroy")
@@ -159,6 +161,9 @@ slot0.init = function (slot0)
 	slot0.sortImgDesc = slot0:findTF("desc", slot0.sortBtn)
 	slot0.leftTipsText = findTF(slot0.topPanel, "capacity")
 	slot0.bottomTipsText = slot0:findTF("select_panel/tip")
+	slot0.preferenceBtn = findTF(slot0.topPanel, "preference_toggle")
+	slot0.indexBtn = slot0:findTF("index_button", slot0.topPanel)
+	slot0.attrBtn = slot0:findTF("attr_toggle", slot0.topPanel)
 	slot0.selectPanel = slot0:findTF("select_panel")
 
 	setActive(slot0.selectPanel, true)
@@ -167,6 +172,12 @@ slot0.init = function (slot0)
 	slot0.energyDescTextTF = slot0:findTF("energy_desc/Text")
 	slot0.awardTF = slot0:findTF("select_panel/bottom_info/bg_award")
 	slot0.modAttrsTF = slot0:findTF("select_panel/bottom_info/bg_mod")
+	slot0.isRemouldOrUpgradeMode = slot0.contextData.mode == slot0.MODE_REMOULD or slot0.contextData.mode == slot0.MODE_UPGRADE
+
+	setActive(slot0.preferenceBtn, not slot0.isRemouldOrUpgradeMode)
+	setActive(slot0.indexBtn, not slot0.isRemouldOrUpgradeMode)
+	setActive(slot0.attrBtn, not slot0.isRemouldOrUpgradeMode)
+	setActive(slot0.sortBtn, not slot0.isRemouldOrUpgradeMode)
 
 	if slot0.mode == slot0.MODE_OVERVIEW then
 		slot0.selecteEnabled = false
@@ -375,8 +386,6 @@ slot0.onReturnItem = function (slot0, slot1, slot2)
 end
 
 slot0.initIndexPanel = function (slot0)
-	slot0.indexBtn = slot0:findTF("index_button", slot0.topPanel)
-
 	onButton(slot0, slot0.indexBtn, function ()
 		if not slot0.indexPanel then
 			slot0.indexPanel = findTF(slot0._tf, "index_panel")
@@ -773,6 +782,34 @@ slot0.selectAll = function (slot0, slot1, slot2)
 end
 
 slot0.filter = function (slot0)
+	if slot0.isRemouldOrUpgradeMode then
+		slot0:filterForRemouldAndUpgrade()
+	else
+		slot0:filterCommon()
+	end
+end
+
+slot0.filterForRemouldAndUpgrade = function (slot0)
+	slot0.shipVOs = {}
+
+	for slot4, slot5 in pairs(slot0.shipVOsById) do
+		table.insert(slot0.shipVOs, slot5)
+	end
+
+	table.sort(slot0.shipVOs, function (slot0, slot1)
+		slot2 = (slot0:isTestShip() and 1) or 0
+		slot3 = (slot1:isTestShip() and 1) or 0
+
+		if slot0.level == slot1.level then
+			return slot3 < slot2
+		else
+			return slot1.level < slot0.level
+		end
+	end)
+	slot0:updateShipCount(0)
+end
+
+slot0.filterCommon = function (slot0)
 	slot0.shipVOs = {}
 	slot1 = slot0.selectedSort
 

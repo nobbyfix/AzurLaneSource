@@ -616,23 +616,11 @@ slot0.updateEquipmentPanel = function (slot0, slot1, slot2, slot3, slot4)
 		slot0.showPart[slot29] = false
 
 		if slot25 > 0 or slot26 > 0 then
-			slot30 = findTF(slot13, "panel/view"):GetComponent(typeof(EventTriggerListener))
-			slot31 = {}
+			onButton(slot0, findTF(slot13, "panel/view"), function ()
+				slot0.showPart[slot1] = not slot0.showPart[slot1]
 
-			slot30:AddPointDownFunc(function (slot0, slot1)
-				slot0.x = slot1.position.x
-				slot0.y = slot1.position.y
-			end)
-			slot30:AddPointUpFunc(function (slot0, slot1)
-				slot0.x = slot1.position.x - slot0.x
-				slot0.y = slot1.position.y - slot0.y
-
-				if math.abs(slot0.x) < 0.01 and math.abs(slot0.y) < 0.01 then
-					slot1.showPart[] = not slot1.showPart[slot1.showPart]
-
-					setActive(slot1.showPart, not slot1.showPart[setActive])
-					setActive(not slot1.showPart[setActive], slot1.showPart[setActive])
-				end
+				setActive(not slot0.showPart[slot1], not slot0.showPart[not slot0.showPart[slot1]])
+				setActive(not slot0.showPart[slot1], slot0.showPart[not slot0.showPart[slot1]])
 			end)
 		end
 
