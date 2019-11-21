@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"皇家的骑士\n\n<size=45>五 些许的烦恼</size>",
+					"The Royal Knight\n\n<size=45>Chapter 5: The Small Things</size>",
 					1
 				}
 			}
@@ -24,7 +24,7 @@ return {
 			bgm = "story-1",
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "好，今天也尽快把任务完成吧！办公室在这边——",
+			say = "Right then, let's get the work done as quickly as possible. I'll just head into the office and-",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -57,7 +57,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯？办公室里面好像除了指挥官还有其他人……",
+			say = "What's this? Someone else in the office with the Commander...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -73,7 +73,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呵呵，不客气~以后还有需要的话，随时找我就好了",
+			say = "Hehe, think nothing of it~ If there's anything else you need, please don't hesitate to call upon me, Commander.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -89,7 +89,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（这说话的声音是……光辉？）",
+			say = "(That sounds like... Illustrious?)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -100,12 +100,12 @@ return {
 			}
 		},
 		{
-			actorName = "光辉",
+			actorName = "Illustrious",
 			side = 2,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "那么，我就先告辞了~",
+			say = "Now then, one must take her leave.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -121,7 +121,7 @@ return {
 			dir = 1,
 			actor = 207030,
 			nameColor = "#a9f548",
-			say = "哎呀，厌战前辈，早上好。",
+			say = "Oh, if it isn't Lady Warspite. Good morning to you.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -145,7 +145,7 @@ return {
 			}
 		},
 		{
-			say = "早，早上好……",
+			say = "Y-yes. Good morning.",
 			side = 0,
 			bgName = "bg_story_task",
 			dir = 1,
@@ -171,7 +171,7 @@ return {
 			withoutActorName = true,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "……",
+			say = "(bounce)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -188,7 +188,7 @@ return {
 			withoutActorName = true,
 			actor = 207030,
 			nameColor = "#a9f548",
-			say = "……",
+			say = "(boing)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -204,7 +204,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（这，这种扑面而来的挫败感是怎么回事……）",
+			say = "(She, she's rubbing them right in my face...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -215,7 +215,7 @@ return {
 			}
 		},
 		{
-			say = "前辈，脸色好像不太好……是没有休息好吗？",
+			say = "Lady Warspite, you seem unwell... Have you any trouble sleeping?",
 			side = 1,
 			bgName = "bg_story_task",
 			dir = 1,
@@ -240,7 +240,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "有，有点吧。不过不用担心，一点点疲劳没有影响的。",
+			say = "M-maybe a touch... But you need not worry. A little fatigue never killed anyone.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -266,7 +266,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "那我就先告辞了。前辈的工作也要加油呢。",
+			say = "Then I shall be on my way... Do take care of yourself, Lady Warspite.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -282,7 +282,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯，谢谢。",
+			say = "Aye. Thank you.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -298,7 +298,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……",
+			say = "......",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -314,7 +314,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "委托报告是在这里……",
+			say = "It's a commission report...",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -347,7 +347,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（仔细一想的话，我的后辈们……）",
+			say = "(Let's see how the girls are doing...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -364,7 +364,7 @@ return {
 			blackBg = true,
 			actor = 205030,
 			nameColor = "#a9f548",
-			say = "……",
+			say = "......",
 			effects = {
 				{
 					active = true,
@@ -387,7 +387,7 @@ return {
 			blackBg = true,
 			actor = 207030,
 			nameColor = "#a9f548",
-			say = "……",
+			say = "And I... may have... to join you...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -420,7 +420,7 @@ return {
 			blackBg = true,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "（不行啊，感觉自己完全比不过）",
+			say = "(Now how am I supposed to keep up...?)",
 			effects = {
 				{
 					active = false,
@@ -442,7 +442,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "啊？",
+			say = "Oh?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -468,7 +468,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呃…抱歉指挥官，发了会呆。",
+			say = "Ah... Forgive me, Commander. I was lost in thought for a moment.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -484,7 +484,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "任务已经全部完成了？今天的效率还真是高啊……这样一来的话还剩下很多时间。做些什么好呢？",
+			say = "We're all done for the day? We really hit it hard, didn't we...? Now what should we do with all this free time?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -500,7 +500,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯？你说想听听皇家海军史？",
+			say = "Is that right? You'd like to hear some old Royal Navy war stories?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -516,7 +516,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "…你想听的话，说说也无妨。不过可能会很长呢，要做好心理准备哦！",
+			say = "Well, if you really want me to, I have lots I can tell you. We could be here a while though. You might want to get a snack or pour some tea.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -532,7 +532,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "那就先从我入役那会开始说起吧！最初，我被编入了皇家海军大舰队属下的第二战列舰分队……",
+			say = "Now then, let's start with my commissioning. I was first assigned to the Second Battle Squadron of the Grand Fleet...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -548,7 +548,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（啊哈，总觉得心情变得舒坦多了）",
+			say = "(I suddenly find myself feeling quite cheerful..)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

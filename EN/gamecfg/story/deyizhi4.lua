@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"德意志的忧郁\n\n<size=45>四　失落</size>",
+					"The Cloudy Mask\n\n<size=45>Chapter 4: Devastated</size>",
 					1
 				}
 			}
@@ -20,7 +20,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "……德意志今天没来指挥室，有些担心，去看看她吧。",
+			say = "Office work hours have begun but Deutschland still hasn't shown up, so I decided to head to the Iron Blood dorm to look for her.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -31,7 +31,7 @@ return {
 			stopbgm = true,
 			dir = 1,
 			bgName = "bg_story_room",
-			say = "德意志的宿舍",
+			say = "Iron Blood Dormitory",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -61,7 +61,7 @@ return {
 			bgm = "story-2",
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "是仆人啊，来找我有什么事吗？",
+			say = "You're here, slave? What do you want?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -75,7 +75,7 @@ return {
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
-			say = "德意志一个缩在房间的角落，往日的霸气全无。",
+			say = "I opened the door to Deutschland's room to find her all by herself, huddled up in a corner.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -85,7 +85,7 @@ return {
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
-			say = "样子有点让人担心…",
+			say = "Now I'm worried about her...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -97,23 +97,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "哼，秘书舰这种事你换个更加厉害的家伙去做不就好了。",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			actor = 403040,
-			side = 2,
-			bgName = "bg_story_room",
-			nameColor = "#a9f548",
-			dir = 1,
-			say = "别用我了，反正我在那里也帮不了你什么忙。",
+			say = "You need a secretary? Get someone else to do it then...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -129,7 +113,23 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "我真傻，被自己阵营的人当猴子耍还不知道。",
+			say = "Just leave me alone. I'm no use to you anyway...",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 403040,
+			side = 2,
+			bgName = "bg_story_room",
+			nameColor = "#a9f548",
+			dir = 1,
+			say = "I'm such an idiot. Everyone around me thinks I'm a clown, and I never even realized it.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -145,7 +145,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "她们说我很强，我就以为我真的很强，我觉得自己高人一等，对谁都趾高气扬的……",
+			say = "They say I'm powerful, which makes me think I actually am, until I'm convinced I'm superior to everyone and act high and mighty...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -156,18 +156,19 @@ return {
 			},
 			options = {
 				{
-					content = "摸摸德意志的头",
+					content = "Pat her on the head.",
 					flag = 1
 				}
 			}
 		},
 		{
 			actor = 403040,
-			side = 2,
+			nameColor = "#a9f548",
 			bgName = "bg_story_room",
 			dir = 1,
 			withoutActorName = true,
-			say = "……手被她一把挥开。",
+			side = 2,
+			say = "... She brushed my hand away.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -179,7 +180,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "别靠近我！",
+			say = "Don't touch me!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -205,7 +206,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "其实来到这里之后我就有感觉了，其他阵营对待她们的中心人物不是这样的。",
+			say = "I've slowly realized something ever since I came here. I'm not like the girls from the other factions.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -221,7 +222,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "至少不会是我这样。",
+			say = "I'm different...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -237,7 +238,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "指挥官你肯定也是吧，从一开始就没有指望我能帮上忙，只是抱着看我笑话的心态让我担任秘书舰。",
+			say = "And you're like them. You made me your secretary just so you could laugh at me when I screw up, didn't you?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -248,7 +249,7 @@ return {
 			},
 			options = {
 				{
-					content = "否定",
+					content = "\"Of course not.\"",
 					flag = 1
 				}
 			}
@@ -259,7 +260,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……我才不信。",
+			say = "Of course you'd lie...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -273,7 +274,7 @@ return {
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
-			say = "看来现在说什么德意志都不会听进去了。",
+			say = "I don't think she'll listen to anything I say in her current state.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -284,7 +285,7 @@ return {
 			bgName = "bg_story_room",
 			dir = 1,
 			blackBg = true,
-			say = "……或许应该带她去问一问她铁血的同伴们，这其中一定有什么原因。",
+			say = "It looks like I'll have to ask her fellow fleet members what happened.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

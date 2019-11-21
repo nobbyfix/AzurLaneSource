@@ -2822,7 +2822,7 @@ pg.furniture_data_template = {
 		interAction_group = {}
 	},
 	[1107] = {
-		can_rotate = 0,
+		can_rotate = 1,
 		name = "Radish Seedlings",
 		gain_by = "",
 		type = 2,
@@ -15635,7 +15635,7 @@ pg.furniture_data_template = {
 		themeId = 13,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 0,
 		discount_time = "",
 		size = {
 			6,
@@ -16940,7 +16940,7 @@ pg.furniture_data_template = {
 		themeId = 13,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 0,
 		discount_time = "",
 		size = {
 			4,
@@ -17037,7 +17037,7 @@ pg.furniture_data_template = {
 		themeId = 13,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 0,
 		discount_time = "",
 		size = {
 			7,
@@ -43599,7 +43599,7 @@ pg.furniture_data_template = {
 		rarity = 4,
 		picture = "halloween2/qiangbihl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35001,
 		comfortable = 4,
 		describe = "A wilderness full of wandering ghosts.",
@@ -43608,7 +43608,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {},
 		offset = {},
 		canputonGrid = {},
@@ -43641,33 +43642,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35002] = {
 		can_rotate = 0,
@@ -43689,7 +43664,7 @@ pg.furniture_data_template = {
 		rarity = 4,
 		picture = "halloween2/dibanhl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35002,
 		comfortable = 4,
 		describe = "This field of grass is hiding...many many secrets.",
@@ -43698,7 +43673,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {},
 		offset = {},
 		canputonGrid = {},
@@ -43731,33 +43707,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35101] = {
 		can_rotate = 0,
@@ -43779,7 +43729,7 @@ pg.furniture_data_template = {
 		rarity = 1,
 		picture = "halloween2/caohl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35101,
 		comfortable = 1,
 		describe = "A seemingly ordinary tiny pile of haystack.",
@@ -43788,7 +43738,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			2
@@ -43824,33 +43775,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35102] = {
 		advice = 0,
@@ -43872,7 +43797,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		belong = 1,
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35102,
 		comfortable = 3,
 		describe = "Where did this pile of bones come from?",
@@ -43881,7 +43806,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			3,
 			2
@@ -43931,33 +43857,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35103] = {
 		can_rotate = 0,
@@ -43979,7 +43879,7 @@ pg.furniture_data_template = {
 		rarity = 3,
 		picture = "halloween2/ditan1hl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35103,
 		comfortable = 3,
 		describe = "Flattened by a huge Skeleton.",
@@ -43988,7 +43888,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			3,
 			3
@@ -44024,33 +43925,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35104] = {
 		can_rotate = 0,
@@ -44072,7 +43947,7 @@ pg.furniture_data_template = {
 		rarity = 3,
 		picture = "halloween2/ditan2hl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35104,
 		comfortable = 3,
 		describe = "A big purple carpet, its sewn seems to contain some strange meaning.",
@@ -44081,7 +43956,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			8,
 			8
@@ -44117,33 +43993,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35105] = {
 		can_rotate = 0,
@@ -44165,7 +44015,7 @@ pg.furniture_data_template = {
 		rarity = 1,
 		picture = "halloween2/ditan3hl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35105,
 		comfortable = 1,
 		describe = "A path made of gravel. Don’t walk on it in barefoot.",
@@ -44174,7 +44024,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			4,
 			5
@@ -44210,33 +44061,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35106] = {
 		can_rotate = 0,
@@ -44258,7 +44083,7 @@ pg.furniture_data_template = {
 		rarity = 3,
 		picture = "halloween2/doupenghl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35106,
 		comfortable = 3,
 		describe = "Come guess what is underneath this cloak.",
@@ -44267,7 +44092,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			2
@@ -44303,33 +44129,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35107] = {
 		can_rotate = 0,
@@ -44351,7 +44151,7 @@ pg.furniture_data_template = {
 		rarity = 2,
 		picture = "halloween2/geduan2hl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35107,
 		comfortable = 2,
 		describe = "A row of black spears laced with purple cloth.",
@@ -44360,7 +44160,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			7,
 			1
@@ -44396,33 +44197,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35108] = {
 		can_rotate = 0,
@@ -44444,7 +44219,7 @@ pg.furniture_data_template = {
 		rarity = 2,
 		picture = "halloween2/geduanhl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35108,
 		comfortable = 2,
 		describe = "This does not fit the courtyard style at all.",
@@ -44453,7 +44228,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			1,
 			4
@@ -44489,33 +44265,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35109] = {
 		can_rotate = 1,
@@ -44537,7 +44287,7 @@ pg.furniture_data_template = {
 		rarity = 4,
 		picture = "halloween2/guiwuhl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35109,
 		comfortable = 4,
 		describe = "The highlight of this courtyard, the witch’s masterpiece!",
@@ -44546,7 +44296,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			7,
 			8
@@ -44582,33 +44333,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35110] = {
 		can_rotate = 0,
@@ -44630,7 +44355,7 @@ pg.furniture_data_template = {
 		rarity = 3,
 		picture = "halloween2/huojihl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35110,
 		comfortable = 3,
 		describe = "What are we having for Halloween...",
@@ -44639,7 +44364,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			2
@@ -44675,33 +44401,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35111] = {
 		can_rotate = 0,
@@ -44723,7 +44423,7 @@ pg.furniture_data_template = {
 		rarity = 3,
 		picture = "halloween2/jiuhl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35111,
 		comfortable = 3,
 		describe = "I have been resurrected from the dead!",
@@ -44732,7 +44432,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			2
@@ -44768,33 +44469,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35112] = {
 		advice = 0,
@@ -44816,7 +44491,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		belong = 1,
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35112,
 		comfortable = 2,
 		describe = "This pit feels like the right size.",
@@ -44825,7 +44500,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			4,
 			4
@@ -44887,33 +44563,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35113] = {
 		can_rotate = 0,
@@ -44935,7 +44585,7 @@ pg.furniture_data_template = {
 		rarity = 2,
 		picture = "halloween2/ludenghl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35113,
 		comfortable = 2,
 		describe = "The Pumpkin light is watching you.",
@@ -44944,7 +44594,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			1,
 			1
@@ -44980,33 +44631,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35114] = {
 		can_rotate = 1,
@@ -45028,7 +44653,7 @@ pg.furniture_data_template = {
 		rarity = 2,
 		picture = "halloween2/lupaihl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35114,
 		comfortable = 2,
 		describe = "My friend, if you’re lost then look over here!",
@@ -45037,7 +44662,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			1,
 			1
@@ -45073,33 +44699,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35115] = {
 		can_rotate = 0,
@@ -45121,7 +44721,7 @@ pg.furniture_data_template = {
 		rarity = 3,
 		picture = "halloween2/mubeihl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35115,
 		comfortable = 3,
 		describe = "The tombstone has accumulated spider webs.",
@@ -45130,7 +44730,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			2
@@ -45166,33 +44767,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35116] = {
 		can_rotate = 0,
@@ -45214,7 +44789,7 @@ pg.furniture_data_template = {
 		rarity = 3,
 		picture = "halloween2/mudihl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35116,
 		comfortable = 3,
 		describe = "Commemorating XXX (The writing seems to be blurry).",
@@ -45223,7 +44798,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			5,
 			3
@@ -45259,33 +44835,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35117] = {
 		advice = 0,
@@ -45307,7 +44857,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		belong = 1,
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35117,
 		comfortable = 3,
 		describe = "Giant pumpkin lamp that can also be used as a storage box.",
@@ -45316,7 +44866,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			4,
 			4
@@ -45366,33 +44917,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35118] = {
 		can_rotate = 0,
@@ -45414,7 +44939,7 @@ pg.furniture_data_template = {
 		rarity = 3,
 		picture = "halloween2/nanguagl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35118,
 		comfortable = 3,
 		describe = "A little pile of mini pumpkin lights.",
@@ -45423,7 +44948,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			2
@@ -45459,33 +44985,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35119] = {
 		advice = 0,
@@ -45507,7 +45007,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		belong = 1,
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35119,
 		comfortable = 2,
 		describe = "A broomstick which you so dearly deserve!",
@@ -45516,7 +45016,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			5
@@ -45565,33 +45066,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35120] = {
 		can_rotate = 0,
@@ -45613,7 +45088,7 @@ pg.furniture_data_template = {
 		rarity = 3,
 		picture = "halloween2/shuhl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35120,
 		comfortable = 3,
 		describe = "A withered tree, nothing special.",
@@ -45622,7 +45097,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			3,
 			4
@@ -45658,33 +45134,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35121] = {
 		advice = 0,
@@ -45706,7 +45156,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		belong = 1,
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35121,
 		comfortable = 3,
 		describe = "A witch’s residence.",
@@ -45715,7 +45165,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			6,
 			7
@@ -45764,33 +45215,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35122] = {
 		advice = 0,
@@ -45812,7 +45237,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		belong = 1,
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35122,
 		comfortable = 2,
 		describe = "A broken purple satin-covered seat.",
@@ -45821,7 +45246,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			2
@@ -45870,33 +45296,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35123] = {
 		advice = 0,
@@ -45918,7 +45318,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		belong = 1,
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35123,
 		comfortable = 2,
 		describe = "A broken white satin-covered seat.",
@@ -45927,7 +45327,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			2
@@ -45976,33 +45377,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35124] = {
 		advice = 0,
@@ -46024,7 +45399,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		belong = 1,
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35124,
 		comfortable = 2,
 		describe = "A secluded candlelit bench.",
@@ -46033,7 +45408,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			4,
 			1
@@ -46082,33 +45458,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35125] = {
 		advice = 0,
@@ -46130,7 +45480,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		belong = 1,
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35125,
 		comfortable = 3,
 		describe = "A withered trunk that’s oozing out green goo.",
@@ -46139,7 +45489,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			6,
 			3
@@ -46188,33 +45539,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35126] = {
 		advice = 0,
@@ -46236,7 +45561,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		belong = 1,
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35126,
 		comfortable = 2,
 		describe = "A pool bubbling with purple liquid.",
@@ -46245,7 +45570,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			4,
 			4
@@ -46307,33 +45633,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35127] = {
 		can_rotate = 0,
@@ -46355,7 +45655,7 @@ pg.furniture_data_template = {
 		rarity = 3,
 		picture = "halloween2/zhuozihl2",
 		canputon = 1,
-		discount = 20,
+		discount = 0,
 		id = 35127,
 		comfortable = 3,
 		describe = "Welcome everyone, what would you like to eat?",
@@ -46364,7 +45664,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			8,
 			5
@@ -46432,33 +45733,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35128] = {
 		advice = 0,
@@ -46480,7 +45755,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		picture = "",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35128,
 		comfortable = 4,
 		describe = "Wahahaha~ Try and catch me if you can!",
@@ -46489,7 +45764,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			2
@@ -46535,33 +45811,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35129] = {
 		advice = 0,
@@ -46583,7 +45833,7 @@ pg.furniture_data_template = {
 		tag = 1,
 		picture = "",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35129,
 		comfortable = 4,
 		describe = "It is my honor to take you on my horse, miss?",
@@ -46592,7 +45842,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			4,
 			2
@@ -46660,33 +45911,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35201] = {
 		can_rotate = 0,
@@ -46708,7 +45933,7 @@ pg.furniture_data_template = {
 		rarity = 1,
 		picture = "halloween2/lazhu2hl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35201,
 		comfortable = 1,
 		describe = "Stacks of candles illuminating shadows.",
@@ -46717,7 +45942,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			1,
 			1
@@ -46753,33 +45979,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35202] = {
 		can_rotate = 0,
@@ -46801,7 +46001,7 @@ pg.furniture_data_template = {
 		rarity = 1,
 		picture = "halloween2/lazhuhl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35202,
 		comfortable = 1,
 		describe = "A lonely little candle.",
@@ -46810,7 +46010,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			1,
 			1
@@ -46846,33 +46047,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35203] = {
 		can_rotate = 0,
@@ -46894,7 +46069,7 @@ pg.furniture_data_template = {
 		rarity = 1,
 		picture = "halloween2/pingzi1hl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35203,
 		comfortable = 1,
 		describe = "Blue liquid, unknown properties.",
@@ -46903,7 +46078,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			1,
 			1
@@ -46939,33 +46115,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35204] = {
 		can_rotate = 0,
@@ -46987,7 +46137,7 @@ pg.furniture_data_template = {
 		rarity = 1,
 		picture = "halloween2/pingzi2hl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35204,
 		comfortable = 1,
 		describe = "Red liquid, unknown properties.",
@@ -46996,7 +46146,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			1,
 			1
@@ -47032,33 +46183,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35205] = {
 		can_rotate = 0,
@@ -47080,7 +46205,7 @@ pg.furniture_data_template = {
 		rarity = 2,
 		picture = "halloween2/zhutaihl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35205,
 		comfortable = 2,
 		describe = "A standard red candlestick for banquets.",
@@ -47089,7 +46214,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			1,
 			1
@@ -47125,33 +46251,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35301] = {
 		can_rotate = 0,
@@ -47173,7 +46273,7 @@ pg.furniture_data_template = {
 		rarity = 2,
 		picture = "halloween2/menhl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35301,
 		comfortable = 2,
 		describe = "A large magnificent golden gate.",
@@ -47182,7 +46282,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			8,
 			0
@@ -47218,33 +46319,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35302] = {
 		can_rotate = 0,
@@ -47266,7 +46341,7 @@ pg.furniture_data_template = {
 		rarity = 1,
 		picture = "halloween2/yuehl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35302,
 		comfortable = 1,
 		describe = "A bright moon illuminating the dark night.",
@@ -47275,7 +46350,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			2,
 			0
@@ -47311,33 +46387,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[35303] = {
 		can_rotate = 0,
@@ -47359,7 +46409,7 @@ pg.furniture_data_template = {
 		rarity = 1,
 		picture = "halloween2/zhuwanghl2",
 		canputon = 0,
-		discount = 20,
+		discount = 0,
 		id = 35303,
 		comfortable = 1,
 		describe = "A large spider web.",
@@ -47368,7 +46418,8 @@ pg.furniture_data_template = {
 		themeId = 35,
 		spine_extra = "",
 		spine_action_replace = "",
-		new = 20,
+		new = 1,
+		discount_time = "",
 		size = {
 			4,
 			0
@@ -47404,33 +46455,7 @@ pg.furniture_data_template = {
 				}
 			}
 		},
-		interAction_group = {},
-		discount_time = {
-			{
-				{
-					2019,
-					10,
-					23
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					6
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
+		interAction_group = {}
 	},
 	[37001] = {
 		can_rotate = 0,

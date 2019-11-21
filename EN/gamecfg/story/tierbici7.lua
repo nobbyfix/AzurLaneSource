@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"融冰\n\n<size=45>七　温度</size>",
+					"「Schmelzen」\n\n<size=45>Chapter 7: Warmth</size>",
 					1
 				}
 			}
@@ -20,7 +20,7 @@ return {
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "在那之后，过去了一段时间。",
+			say = "After that, some time passed...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -33,7 +33,7 @@ return {
 			blackBg = true,
 			bgName = "bg_night",
 			bgm = "story-2",
-			say = "港区·郊外",
+			say = "Port - Outskirts",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -60,7 +60,7 @@ return {
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
-			say = "在提尔比茨的邀约下，来到了港区附近的某处高台",
+			say = "Tirpitz invited me to come talk to her, and I ended up somewhere up high at the outskirts of the port.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -72,7 +72,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "百忙之中能抽身陪我，实在是荣幸。",
+			say = "Sorry for having you come out to a place like this.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -88,7 +88,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "对了，今天有个东西，想让你陪我一起看。",
+			say = "The truth is, there's something I wanted to see with you.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -102,14 +102,14 @@ return {
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
-			say = "提尔比茨用手指向了天空",
+			say = "Tirpitz pointed at something shimmering in the sky.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			},
 			options = {
 				{
-					content = "北极星？",
+					content = "The North Star?",
 					flag = 1
 				}
 			}
@@ -120,7 +120,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯，Polarstern。",
+			say = "Yes, the Polarstern.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -136,7 +136,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "每当看见这颗星星，我就会想起那个时候，作为“存在舰队”而一直待在那个港口的自己。",
+			say = "Whenever I look at this star, I'm reminded of my past... that time I was locked down in port, a \"fleet in name only.\"",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -152,7 +152,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "寒冷，孤独，这些我早已视为无物。",
+			say = "I spent day after day doing nothing, feeling nothing, just simply used to being cold and alone.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -168,7 +168,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "最后，什么也做不了，只能在港口绝望地看着天空，迎来自己的终局。",
+			say = "And then, having achieved nothing of note, I met my end, watching the smoke of despair fill the harbor as I welcomed my destruction.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -184,7 +184,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "很可笑吧，这样的结局。",
+			say = "Don't you agree that I had a ridiculous, empty life?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -200,7 +200,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……",
+			say = "...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -216,7 +216,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "但是，现在不一样了。",
+			say = "But now, things are different.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -232,7 +232,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "与人交流时的愉快，有人陪伴时的心脏的鼓动……这些心情，充满了温暖，像是要把所有寒冷与孤独融化一般燃烧着。",
+			say = "Now there is the joy of meeting people, and the peace of mind from being with you. And the warmth of it was able to melt away the ice of my past.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -248,7 +248,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "“孤独的北方女王”，已经不再孤独了。",
+			say = "\"The Lone Queen of the North\" is alone no longer.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -264,7 +264,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "如果，梦中的“另一个我”，能像现在这样的话就好了。",
+			say = "I pray that the other me in the mirror - and in my dreams - will be as happy as the me here right now...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -280,7 +280,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "啊啊，我感觉有点累了。",
+			say = "... I think I'm a little tired.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -294,7 +294,7 @@ return {
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
-			say = "肩膀上传来了重量",
+			say = "I feel the weight of her resting against my shoulder.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -306,7 +306,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "稍微……让我依靠一下吧。",
+			say = "Say, would you mind if I pull up closer to you...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -322,7 +322,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "我还想感受多一点……指挥官的温暖。",
+			say = "I want to feel your warmth for a little bit longer...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -336,7 +336,7 @@ return {
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
-			say = "提尔比茨的表情，充满了柔和。",
+			say = "Tirpitz's warm voice, almost in a whisper, filled your ears.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -347,7 +347,7 @@ return {
 			bgName = "bg_night",
 			dir = 1,
 			blackBg = true,
-			say = "那样的表情，今后也会一直持续下去的吧。",
+			say = "I hope she stays this gentle, now and forever.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

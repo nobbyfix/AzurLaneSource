@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"德意志的忧郁\n\n<size=45>二　高贵</size>",
+					"The Cloudy Mask\n\n<size=45>Chapter 2: True Nobility</size>",
 					1
 				}
 			}
@@ -22,7 +22,7 @@ return {
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "和德意志出外勤的时候，看到了这样的一幕。",
+			say = "Deutschland and I were on a stroll around the port, and that's when we came across...",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -51,7 +51,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "贝尔法斯特，为什么我身为女王也非得去演习不可。",
+			say = "Bel, why do I need to attend today's exercise?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -62,7 +62,7 @@ return {
 			}
 		},
 		{
-			say = "那是因为您同时也是舰队里的一员，陛下。",
+			say = "Because you have been assigned to the exercise fleet for the time being, Your Majesty.",
 			side = 1,
 			bgName = "star_level_bg_103",
 			dir = 1,
@@ -87,7 +87,7 @@ return {
 			dir = -1,
 			actor = 205010,
 			nameColor = "#a9f548",
-			say = "我不想去，交给厌战去吧！",
+			say = "I'm not in the mood for it today! Have Warspite do it in my stead!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -113,7 +113,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "请不要任性，陛下。",
+			say = "Your Majesty, please, you must not be selfish.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -129,7 +129,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "哼，皇家的女王居然还会受仆人的意见左右，在我们铁血，这种事是绝对不会发生的！",
+			say = "How interesting, the queen of the Royal Navy is being lectured by one of her own servants! An Iron Blood leader would never be lectured by her servant!",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -162,7 +162,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "那边不是格奈森瑙嘛，来得正好，仆人，你看着。",
+			say = "Ah, is that Gneisenau over there? Perfect. Slave, stay here and watch this!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -178,7 +178,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "喂，格奈森瑙。",
+			say = "Hey, Gneisenau!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -199,7 +199,7 @@ return {
 			}
 		},
 		{
-			say = "这不是德意志吗，怎么了？",
+			say = "Hello there, Deutschland. Do you need anything?",
 			side = 1,
 			bgName = "star_level_bg_103",
 			dir = 1,
@@ -224,7 +224,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "明天的演习我不想去了，就交给你们吧！",
+			say = "I don't want to do that exercise tomorrow. Get someone else to do it for me!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -240,7 +240,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "唔……倒是也没有什么特别的问题呢，我会转告提尔比茨请她处理好的。",
+			say = "... Very well, that won't be an issue. I will inform Tirpitz that we're changing the composition of our exercise fleet.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -251,7 +251,7 @@ return {
 			}
 		},
 		{
-			say = "那么，我先告辞了。",
+			say = "Now then, if you'll excuse me...",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
@@ -274,7 +274,7 @@ return {
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
-			say = "格奈森瑙说完就离开了。",
+			say = "Gneisenau left the scene to convey Deutschland's wishes.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -286,7 +286,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "哼，看到了吧，仆人！",
+			say = "Ahahahahah! See, slave? That's the level of authority I have!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -310,7 +310,7 @@ return {
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
-			say = "……格奈森瑙的态度，与其说是顺从，不如说是无所谓呢。",
+			say = "I have this hunch like Gneisenau isn't so much obedient to her, rather she just doesn't think Deutschland's attendance is required...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -320,7 +320,7 @@ return {
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
-			say = "感觉像是早就习惯了这样的要求。",
+			say = "Her response gives me the impression that she's long since gotten used to Deutschland's arrogant attitude.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -332,7 +332,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "哼，我才是铁血的精神领袖呢！",
+			say = "This is yet more proof of the fact that I'm Iron Blood's most respected spiritual leader!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -357,7 +357,7 @@ return {
 			bgName = "star_level_bg_103",
 			dir = 1,
 			blackBg = true,
-			say = "……但是，这样的情况，究竟能持续多久呢？",
+			say = "... But I suppose there's nothing really wrong with that.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

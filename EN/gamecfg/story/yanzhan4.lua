@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"皇家的骑士\n\n<size=45>四 演习过后……</size>",
+					"The Royal Knight\n\n<size=45>Chapter 4: After the Exercise...</size>",
 					1
 				}
 			}
@@ -22,7 +22,7 @@ return {
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "数日后·演习海域",
+			say = "Several Days Later - Exercise Area",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -51,7 +51,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "咳咳，这次联合演习的顺利完成离不开大家这段时间的刻苦训练，以及在演习中对战术的彻底执行，还有各位自身在战斗时的随机应变——",
+			say = "Ahem! Our success in these joint exercises is thanks entirely to your training, your implementation of the tactics you learned, and your ability to adapt to a changing combat situation.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -67,7 +67,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "总而言之，我们的胜利并非偶然，是各位共同努力的结果",
+			say = "In short, the Royal Navy seized victory not by random chance, but through the hard work and dedication of everyone here.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -83,7 +83,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "现在就好好休息一下，就尽情享受陛下赏赐的晚宴吧。",
+			say = "Now it is time to rest and recuperate. Indulge yourselves in the banquet Her Majesty has graciously bestowed upon us!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -100,8 +100,8 @@ return {
 			actor = 203030,
 			dir = 1,
 			hideOther = true,
-			actorName = "众人",
-			say = "哦哦哦！！",
+			actorName = "The Crowd",
+			say = "Aye-aye!",
 			subActors = {
 				{
 					actor = 203050,
@@ -141,7 +141,7 @@ return {
 			blackBg = true,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "（稍微出来透透气吧。）",
+			say = "(I'll step out for some fresh air.)",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -174,7 +174,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（嗯？那个人是……）",
+			say = "(Ah? Who's that over there...?)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -190,7 +190,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "企业？",
+			say = "Enterprise?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -201,7 +201,7 @@ return {
 			}
 		},
 		{
-			say = "是厌战吗，祝贺你们，获得了演习的胜利。",
+			say = "Warspite? Congratulations. You won the exercise.",
 			side = 1,
 			bgName = "bg_story_nepu1",
 			dir = 1,
@@ -226,7 +226,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "说实话，还是稍微有些不甘心呢。明明全程都放出舰载机盯着你，结果还是没能用演习弹把你“击沉”。",
+			say = "I'm still a little sore about it, honestly. I had my planes on you the whole time and I still didn't manage to sink you.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -242,7 +242,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "应该说，不愧是“不沉的传奇”吗",
+			say = "We should start calling you \"The Unsinkable Legend.\"",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -258,7 +258,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（原来今天在我头上一直盘旋着的飞机是你的吗！）",
+			say = "(So it was you behind all those planes buzzing around my head...!)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -274,7 +274,7 @@ return {
 			blackBg = true,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "（演习过程里全程疲于防空与躲避…狼狈的样子还被观战的指挥官尽收眼底……）",
+			say = "(She kept me busy dodging bombs and firing ack-acks the whole time... I must've put on quite a show for the Commander...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -308,7 +308,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "哈，托你的福，我今天可是吃尽了飞机的苦头。",
+			say = "Hah. Thanks to you, I've had my fill of planes for a while.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -324,7 +324,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "我也一样呢。15寸炮弹落在身边的水花可不怎么让人安心啊。",
+			say = "You wore me out plenty yourself. Nothing like the splashes from 15-inch rounds right by your feet to keep you on your toes.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -340,7 +340,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（…不过，以企业为目标发射了好几轮主炮都没能命中…该说…不愧是“Lucky E”么）",
+			say = "(... But not a single one of the shells I fired at Enterprise hit home. I guess she really is the \"Lucky E\".)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -356,7 +356,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "这次的演习也要感谢白鹰的各位，我们也从中吸取到了许多的经验",
+			say = "I really must thank you and the rest of the Eagle Union for participating in these exercises. The Royal Navy learned a lot from our war games today.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -372,7 +372,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "要说感谢的话，白鹰这边也是一样哦。如果有机会的话，希望这样的大型演习能够长期举办下去呢",
+			say = "If we're thanking each other, I have to say it was great for the Union side too. I'd like it if we could keep up these large-scale exercises going forward.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -388,7 +388,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "而且，我很期待能再和你来一次对决哦！",
+			say = "And I look forward to sparring with you again, Warspite.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -404,7 +404,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "哈哈，关于这点彼此彼此吧。",
+			say = "That feeling is certainly mutual.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -430,7 +430,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "厌战前辈，陛下她似乎在找你哦？",
+			say = "Lady Warspite, I think Her Majesty is looking for you.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -446,7 +446,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（陛下？那得赶紧回去才行。）",
+			say = "(Her Majesty...? Then I'd best hurry back.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -462,7 +462,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "我就不多打扰了，下次见！",
+			say = "Then I won't keep you. Until next time!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -478,7 +478,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯，回见",
+			say = "Indeed. Farewell.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -494,7 +494,7 @@ return {
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "（从今天起额外的训练任务就告一段落了，我也稍微放松一下…先和后辈们一起享受晚宴吧）",
+			say = "(And with that, my training assignment has come to an end, giving me a chance to rest a bit... I'll have to go enjoy the banquet with the girls. After I find out what Her Majesty wants, of course.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

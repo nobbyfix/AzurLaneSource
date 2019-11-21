@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"皇家的骑士\n\n<size=45>三 “老女士”的速度</size>",
+					"The Royal Knight\n\n<size=45>Chapter 3: The Speed of the Grand Old Lady</size>",
 					1
 				}
 			}
@@ -22,7 +22,7 @@ return {
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
+			say = "Port - Office",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -55,7 +55,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（因为早上的失误，完成工作的时间比预想的要更晚…）",
+			say = "(Work too much longer than I anticipated thanks to that little hiccup this morning.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -71,7 +71,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（现在的当务之急是将这份文件送到女王陛下手中，我得动作快点才行）",
+			say = "(Now the most important thing is getting this file into Her Majesty's hands. I need to move quickly.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -87,7 +87,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "……干脆就跑过去吧",
+			say = "... I suppose I should run then.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -112,7 +112,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "呼……呼……",
+			say = "Phew... Haah...",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -158,7 +158,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（还差一点点就到了……这样一来的话刚好能够赶上！）",
+			say = "(Almost there... I should make it just in time!)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -174,7 +174,7 @@ return {
 			blackBg = true,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "（等等，这里的地板怎么这么滑？拖地的时间明明不是现在啊？）",
+			say = "(Now why is the floor here so slippery... Did they just mop it?)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -203,7 +203,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（硬着头皮上吧，希望不会遇到谁——）",
+			say = "(Doesn't matter. I just need to keep moving!)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -220,7 +220,7 @@ return {
 			dir = 1,
 			actor = 203040,
 			nameColor = "#a9f548",
-			say = "哼~哼哼~",
+			say = "Juust whistle while you work~♪",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -236,7 +236,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（原来是你在拖地么！！不好，这个距离躲不开了，要撞上了！）",
+			say = "(It's Suffolk mopping up?! Not enough room to go around her now!!)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -247,7 +247,7 @@ return {
 			}
 		},
 		{
-			say = "危险！快闪开！",
+			say = "Look out! Make way!",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
@@ -282,7 +282,7 @@ return {
 			dir = 1,
 			actor = 203040,
 			nameColor = "#a9f548",
-			say = "欸——呜哇！！",
+			say = "Huh? Aaaaaaagh!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -305,7 +305,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "砰咚",
+			say = "(CRASH!)",
 			dialogShake = {
 				speed = 0.09,
 				x = 12.75,
@@ -327,7 +327,7 @@ return {
 			dir = 1,
 			actor = 203040,
 			nameColor = "#a9f548",
-			say = "疼疼疼……厌，厌战大人？",
+			say = "Owwwieee... Madam Warspite?!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -353,7 +353,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "对，对不起……",
+			say = "S-sorry about that...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -369,7 +369,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "两位没事吧？发生什么了？",
+			say = "Are you two all right? Any injuries?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -385,7 +385,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……萨福克，你怎么打扫到走廊里来了。不是说只要把会议室打扫完就行了吗",
+			say = "... Suffolk, why were you mopping the hallway? Did I not ask you to clean only the meeting room?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -402,7 +402,7 @@ return {
 			dir = 1,
 			actor = 203040,
 			nameColor = "#a9f548",
-			say = "呼欸？原来已经打扫到走廊了吗？",
+			say = "Huuuh? Did I mop all the way to the hall already...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -428,7 +428,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……",
+			say = "......",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -444,7 +444,7 @@ return {
 			dir = 1,
 			actor = 202120,
 			nameColor = "#a9f548",
-			say = "非常抱歉，厌战大人，给您添麻烦了。",
+			say = "Forgive her, Madam Warspite. I apologise for the trouble we have caused you.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -471,7 +471,7 @@ return {
 			dir = 1,
 			actor = 203040,
 			nameColor = "#a9f548",
-			say = "非、非常抱歉呜呜",
+			say = "I-I apologise...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -487,7 +487,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "不，我也有责任，本来在这种地方奔跑也是我的不对……",
+			say = "No, it was my fault as well. I shouldn't have been running down the corridor.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -503,7 +503,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "不过…不知为何，时不时都会发生一次类似的碰撞事故……这难道是某种诅咒吗…",
+			say = "(But... it is rather odd I always end up crashing into someone like this. I wonder if it's some kind of curse...?)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -519,7 +519,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（不是想这种事情的时候。总之先把这个文件送过去——啊，文件被水弄湿透了）",
+			say = "(Now's not the time to think about that. I need to get this file over to- It's all wet now?!)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -535,7 +535,7 @@ return {
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "（唉…这下得重新回去拿一份了…陛下应该不会介意一点点的迟到吧？）",
+			say = "(Aie...! I'd better go get another copy... Her Majesty won't mind if I'm a bit late...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

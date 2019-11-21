@@ -20,6 +20,7 @@ slot0.MEMORYBOOK = "memory book"
 slot0.RETURN_AWARD_OP = "event return award op"
 slot0.SHOW_AWARD_WINDOW = "event show award window"
 slot0.GO_DODGEM = "event go dodgem"
+slot0.GO_SUBMARINE_RUN = "event go sumbarine run"
 slot0.SPECIAL_BATTLE_OPERA = "special battle opera"
 slot0.GO_PRAY_POOL = "go pray pool"
 slot0.SELECT_ACTIVITY = "event select activity"
@@ -37,10 +38,16 @@ slot0.register = function (slot0)
 			viewComponent = VoteOrderBookLayer
 		}))
 	end)
-	slot0:bind(slot0.GO_DODGEM, function (slot0, slot1)
+	slot0:bind(slot0.GO_SUBMARINE_RUN, function (slot0, slot1)
 		slot0:sendNotification(GAME.BEGIN_STAGE, {
 			system = SYSTEM_SUBMARINE_RUN,
 			stageId = slot1
+		})
+	end)
+	slot0:bind(slot0.GO_DODGEM, function (slot0)
+		slot0:sendNotification(GAME.BEGIN_STAGE, {
+			system = SYSTEM_DODGEM,
+			stageId = ys.Battle.BattleConfig.BATTLE_DODGEM_STAGES[math.random(#ys.Battle.BattleConfig.BATTLE_DODGEM_STAGES)]
 		})
 	end)
 	slot0:bind(slot0.RETURN_AWARD_OP, function (slot0, slot1)

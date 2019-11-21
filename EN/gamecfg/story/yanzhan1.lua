@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"皇家的骑士\n\n<size=45>一 起床了，女王陛下！</size>",
+					"The Royal Knight\n\n<size=45>Chapter 1: Wake Up, Your Majesty!</size>",
 					1
 				}
 			}
@@ -22,7 +22,7 @@ return {
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·皇家宿舍",
+			say = "Port - Royal Navy Dormitory",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -50,12 +50,12 @@ return {
 			}
 		},
 		{
-			actorName = "伊丽莎白女王",
+			actorName = "Queen Elizabeth",
 			side = 2,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呼…呼…",
+			say = "Zzzzzzzz...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -71,7 +71,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "唔…陛下还在睡梦中吗",
+			say = "Oh... Is Her Majesty still sleeping?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -87,7 +87,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（按照陛下平时的作息规律应该是不会有这种情况的…）",
+			say = "(She would normally be awake by now...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -103,7 +103,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "(果然是昨晚睡晚了吗？)",
+			say = "(Seems she went to bed too late last night.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -119,7 +119,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "(今日还有一个重要的会议，还是赶紧把陛下叫起来吧——）",
+			say = "(I'd best wake her. She has an important meeting today.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -130,12 +130,12 @@ return {
 			}
 		},
 		{
-			actorName = "伊丽莎白女王",
+			actorName = "Queen Elizabeth",
 			side = 2,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "唔…厌战…不要离开我……呼呼……",
+			say = "Nng... Warspite... Stay with me... Zzzz...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -151,7 +151,7 @@ return {
 			blackBg = true,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "(…该怎么办呢)",
+			say = "(Now what shall we do about this...?)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -162,11 +162,11 @@ return {
 			},
 			options = {
 				{
-					content = "温柔地叫醒",
+					content = "Rouse her gently...",
 					flag = 1
 				},
 				{
-					content = "强硬地叫醒",
+					content = "Rouse her more forcefully...",
 					flag = 2
 				}
 			}
@@ -178,7 +178,7 @@ return {
 			optionFlag = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "陛下，该起床了。还有会议要等着你主持呢，陛下——",
+			say = "Your Majesty, please wake up. We have a meeting that Your Majesty absolutely must attend...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -195,7 +195,7 @@ return {
 			optionFlag = 1,
 			actor = 205010,
 			nameColor = "#a9f548",
-			say = "唔唔……嗯……嗯？怎么了，厌战，你就在旁边吗？太好了…啊——",
+			say = "Nng... Hm? Hrmm? Warspite? You're here by my side...? Very good then...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -222,7 +222,7 @@ return {
 			optionFlag = 2,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "(果然这个时候得采取些强硬的手段啊…床单是在这里…陛下，请恕臣冒犯了。)",
+			say = "(I'm afraid this calls for harsher measures. The bedspread, for example. Your Majesty... please forgive the indiscretion.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -239,7 +239,7 @@ return {
 			dir = 1,
 			optionFlag = 2,
 			nameColor = "#a9f548",
-			say = "…喝！",
+			say = "Haaaagh!",
 			effects = {
 				{
 					active = true,
@@ -267,7 +267,7 @@ return {
 			dir = 1,
 			optionFlag = 2,
 			nameColor = "#a9f548",
-			say = "呜哇哇哇哇哇！！！",
+			say = "Aaaaaaieeeeee!!!",
 			effects = {
 				{
 					active = false,
@@ -300,7 +300,7 @@ return {
 			optionFlag = 2,
 			actor = 205010,
 			nameColor = "#a9f548",
-			say = "你，你在干什么啊厌战！！欸，等等——",
+			say = "Wh-what is the meaning of this, Warspite?!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -326,7 +326,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "啊！！已经这个时间了吗！？刚才的原来是梦啊……(小声)",
+			say = "I must have been dreaming... Heavens, would you look at the time!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -342,7 +342,7 @@ return {
 			dir = 1,
 			actor = 205010,
 			nameColor = "#a9f548",
-			say = "真、真是的，为什么不早点把本王叫醒！这下会议都要迟到了啦！",
+			say = "Honestly, why did you not wake me sooner?! I'm going to be late!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -368,7 +368,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "(预料之中的反应呢…不过这样一来，会议应该是赶得上了吧)",
+			say = "(That is the reaction I expected... But I do believe we can make the meeting on time.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -384,7 +384,7 @@ return {
 			dir = 1,
 			actor = 205010,
 			nameColor = "#a9f548",
-			say = "咳咳！总之，我们皇家决定和白鹰进行第二次的大规模的联合演习！",
+			say = "Ahem! Now then, the Royal Navy has agreed to a second round of large-scale exercises with the Eagle Union!",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -417,7 +417,7 @@ return {
 			bgName = "bg_guild_blue",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "演习前的训练任务就交由厌战全部负责。希望在演习当天，皇家能交出一份能让人满意的答卷。",
+			say = "Warspite shall be responsible for the training and drills ahead of the exercises. I expect my Royal Navy to give a dazzling performance on the day of.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -433,7 +433,7 @@ return {
 			bgName = "bg_guild_blue",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "厌战，可不要让本王失望！明白了吗？",
+			say = "Warspite, you are not to disappoint your queen! Are we understood?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -449,7 +449,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "是，陛下！",
+			say = "Yes, Your Majesty!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -475,7 +475,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "(没有因为晚起而影响到会议的主持…嗯，毕竟是陛下，不会因为这点小事而失态)",
+			say = "(Seems waking up late hasn't affected Her Majesty in the slightest. She never lets these little things get to her.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -491,7 +491,7 @@ return {
 			bgName = "bg_guild_blue",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "接下来就是我的工作了，训练吗…呵呵",
+			say = "Right then, I shall gladly take on the training of the Royal Navy!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -507,7 +507,7 @@ return {
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "要成为一名合格的战士可不是那么容易的，做好心里准备吧，皇家的后辈们！",
+			say = "Becoming a proper warrior is no easy task. Steel yourselves, girls!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"德意志的忧郁\n\n<size=45>一　开端</size>",
+					"The Cloudy Mask\n\n<size=45>Chapter 1: The Outset</size>",
 					1
 				}
 			}
@@ -22,7 +22,7 @@ return {
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
+			say = "Port - Office",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -51,7 +51,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "仆人，无聊死了。",
+			say = "Slave! I'm bored.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -67,7 +67,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "原本以为做秘书舰会有什么有趣的事情，结果这不是一天到晚只能呆在这间房间里。",
+			say = "I accepted the secretary position expecting it to be interesting, but all I do is sit locked up in this tiny office of yours.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -83,7 +83,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "而且你身为区区下等生物的仆人，居然还敢冷落主人只顾着工作……",
+			say = "And you, lowly slave, dare ignore your master and process those documents without speaking a word to me?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -99,7 +99,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "限你马上给我找些有趣的事情来，不然我就回去了！",
+			say = "Find some way of entertaining me, or I'm leaving! This is an order!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -120,19 +120,20 @@ return {
 			}
 		},
 		{
-			actor = 403040,
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			withoutActorName = true,
-			say = "……虽然担任了秘书舰，不过德意志还是一如既往的样子。",
+			actor = 403040,
+			nameColor = "#a9f548",
+			say = "I appointed Deutschland thinking it would appease her, but she's acting the same as always.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			},
 			options = {
 				{
-					content = "请德意志帮忙工作",
+					content = "\"Help me get this work done.\"",
 					flag = 1
 				}
 			}
@@ -143,29 +144,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "我才不要，下等生物的工作跟我有什么关系。",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			},
-			options = {
-				{
-					content = "恳请德意志帮忙工作",
-					flag = 1
-				}
-			}
-		},
-		{
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
-			actor = 403040,
-			nameColor = "#a9f548",
-			say = "就算你用这种眼神看着我也是没用的！",
+			say = "I refuse. A lowly animal isn't worthy of my help.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -176,7 +155,7 @@ return {
 			},
 			options = {
 				{
-					content = "拜托了，主人！",
+					content = "\"I'd appreciate it if you'd help me.\"",
 					flag = 1
 				}
 			}
@@ -187,7 +166,29 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "……啧，区区下等生物，居然要让我这个主人来帮忙，真是个无可救药的仆人！",
+			say = "Plead all you want, it won't do you any good!",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			},
+			options = {
+				{
+					content = "\"Please, master, I humbly beg for your assistance!\"",
+					flag = 1
+				}
+			}
+		},
+		{
+			side = 2,
+			bgName = "bg_story_task",
+			dir = 1,
+			actor = 403040,
+			nameColor = "#a9f548",
+			say = "... Hmph! What a helpless dog you are, begging your own master for help!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -208,7 +209,7 @@ return {
 			}
 		},
 		{
-			say = "不过看在你这么诚心的份上，我就大发慈悲地帮你做些什么好了。",
+			say = "But since you're so loyal and I'm so benevolent, I'll hear you out and help with your work!",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
@@ -233,7 +234,7 @@ return {
 			dir = 1,
 			actor = 201220,
 			nameColor = "#a9f548",
-			say = "那、那个，指挥官。",
+			say = "Umm... Commander?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -259,7 +260,7 @@ return {
 			dir = 1,
 			actor = 201220,
 			nameColor = "#a9f548",
-			say = "我是来提交任务报告的……",
+			say = "I'm here to deliver the mission report...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -280,7 +281,7 @@ return {
 			}
 		},
 		{
-			say = "……",
+			say = "......",
 			side = 0,
 			bgName = "bg_story_task",
 			dir = 1,
@@ -305,7 +306,7 @@ return {
 			dir = 1,
 			actor = 201220,
 			nameColor = "#a9f548",
-			say = "!…如、如果没有什么别的事的话，我就先走了。",
+			say = "N-now then, if you don't have any new orders for me, I will take my leave...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -335,7 +336,7 @@ return {
 			side = 1,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "……天后飞也似地离开了指挥室。",
+			say = "I wanted to thank Juno, but she left my office in a hurry before I could even say anything.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -347,7 +348,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "哈哈哈哈，仆人你看到了吗，刚才那只驱逐受惊的眼神！",
+			say = "Ahahahahah! Did you see that, slave? The look of fear in that destroyer's eyes?!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -373,7 +374,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "这种感觉不错，非常不错，嗯，我决定了！",
+			say = "Ahh, it was incredible! I want to see that again!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -389,7 +390,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "为了能每天都看到这种眼神，我就继续做这个秘书舰吧！",
+			say = "If it means I get to feast upon that sight every day, then fine! I'll remain your secretary!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -403,7 +404,7 @@ return {
 			side = 1,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "德意志似乎找到了作为秘书舰的乐趣。",
+			say = "It seems she's found a way to enjoy herself as the secretary.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -414,7 +415,7 @@ return {
 			bgName = "bg_story_task",
 			dir = 1,
 			blackBg = true,
-			say = "不过或许她的性格方面应该想想办法比较好……",
+			say = "But I think someone has to do something about that mindset of hers...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

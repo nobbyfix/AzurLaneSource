@@ -10257,6 +10257,262 @@ pg.task_data_template = {
 			}
 		}
 	},
+	[5201] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5156,
+		type = 5,
+		name = "The Secretary Ship",
+		count_inherit = 0,
+		desc = "Acquire 3 \"Torpedo Tempura\" (will be automatically consumed.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 1,
+		story_icon = "tierbici",
+		award_choice = "",
+		level = 1,
+		next_task = "5202",
+		visibility = 1,
+		story_id = "TIERBICI1",
+		target_id_for_client = 50003,
+		id = 5201,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "50003",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		},
+		scene = {
+			"BACKYARD"
+		}
+	},
+	[5202] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5157,
+		type = 5,
+		name = "Mission",
+		count_inherit = 0,
+		desc = "Enhance any character 10 times.",
+		target_id_2 = "",
+		sub_type = 34,
+		added_tip = 1,
+		story_icon = "tierbici",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5203",
+		visibility = 1,
+		story_id = "TIERBICI2",
+		target_id_for_client = 0,
+		id = 5202,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5203] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5158,
+		type = 5,
+		name = "Practice Exercise",
+		count_inherit = 0,
+		desc = "Sortie and obtain 20 victories with Tirpitz in the fleet.",
+		target_id_2 = "",
+		sub_type = 18,
+		added_tip = 1,
+		story_icon = "tierbici",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5204",
+		visibility = 1,
+		story_id = "TIERBICI3",
+		target_id_for_client = 40502,
+		id = 5203,
+		target_num = 20,
+		fix_task = 0,
+		target_id = "40502",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5204] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5159,
+		type = 5,
+		name = "Sortie",
+		count_inherit = 0,
+		desc = "Complete 3 Daily Challenges with Tirpitz in the fleet.",
+		target_id_2 = "",
+		sub_type = 19,
+		added_tip = 1,
+		story_icon = "tierbici",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5205",
+		visibility = 1,
+		story_id = "TIERBICI4",
+		target_id_for_client = 40502,
+		id = 5204,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "40502",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5205] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5160,
+		type = 5,
+		name = "Everyone's Secretary Ship",
+		count_inherit = 0,
+		desc = "Reach 100 Affinity with Tirpitz.",
+		target_id_2 = "",
+		sub_type = 1012,
+		added_tip = 1,
+		story_icon = "tierbici",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5206",
+		visibility = 1,
+		story_id = "TIERBICI5",
+		target_id_for_client = 40502,
+		id = 5205,
+		target_num = 10000,
+		fix_task = 0,
+		target_id = "40502",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				5
+			},
+			{
+				2,
+				16002,
+				1
+			}
+		}
+	},
+	[5206] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5161,
+		type = 5,
+		name = "The Queen's Smile",
+		count_inherit = 0,
+		desc = "Fully Limit Break Tirpitz.",
+		target_id_2 = "",
+		sub_type = 35,
+		added_tip = 1,
+		story_icon = "tierbici",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5207",
+		visibility = 1,
+		story_id = "TIERBICI6",
+		target_id_for_client = 405024,
+		id = 5206,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "405024",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				10
+			},
+			{
+				2,
+				18022,
+				1
+			}
+		}
+	},
+	[5207] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5162,
+		type = 5,
+		name = "Warmth",
+		count_inherit = 0,
+		desc = "Get Tirpitz to Level 100.",
+		target_id_2 = "",
+		sub_type = 1013,
+		added_tip = 1,
+		story_icon = "tierbici",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "TIERBICI7",
+		target_id_for_client = 40502,
+		id = 5207,
+		target_num = 100,
+		fix_task = 0,
+		target_id = "40502",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				10
+			},
+			{
+				2,
+				18023,
+				1
+			}
+		}
+	},
 	[5211] = {
 		is_head = 0,
 		guild_coin_award = 0,
@@ -10765,6 +11021,262 @@ pg.task_data_template = {
 			{
 				2,
 				18022,
+				2
+			}
+		}
+	},
+	[5231] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5177,
+		type = 5,
+		name = "The Outset",
+		count_inherit = 0,
+		desc = "Acquire 3 \"Torpedo Tempura\" (will be automatically consumed.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 1,
+		story_icon = "deyizhi",
+		award_choice = "",
+		level = 1,
+		next_task = "5232",
+		visibility = 1,
+		story_id = "DEYIZHI1",
+		target_id_for_client = 50003,
+		id = 5231,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "50003",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		},
+		scene = {
+			"BACKYARD"
+		}
+	},
+	[5232] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5178,
+		type = 5,
+		name = "True Nobility",
+		count_inherit = 0,
+		desc = "Enhance any character 10 times.",
+		target_id_2 = "",
+		sub_type = 34,
+		added_tip = 1,
+		story_icon = "deyizhi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5233",
+		visibility = 1,
+		story_id = "DEYIZHI2",
+		target_id_for_client = 0,
+		id = 5232,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5233] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5179,
+		type = 5,
+		name = "Dissonance",
+		count_inherit = 0,
+		desc = "Sortie and obtain 20 victories with Deutschland in the fleet.",
+		target_id_2 = "",
+		sub_type = 18,
+		added_tip = 1,
+		story_icon = "deyizhi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5234",
+		visibility = 1,
+		story_id = "DEYIZHI3",
+		target_id_for_client = 40304,
+		id = 5233,
+		target_num = 20,
+		fix_task = 0,
+		target_id = "40304",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5234] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5180,
+		type = 5,
+		name = "Devastated",
+		count_inherit = 0,
+		desc = "Complete 3 Daily Challenges with Deutschland in the fleet.",
+		target_id_2 = "",
+		sub_type = 19,
+		added_tip = 1,
+		story_icon = "deyizhi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5235",
+		visibility = 1,
+		story_id = "DEYIZHI4",
+		target_id_for_client = 40304,
+		id = 5234,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "40304",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5235] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5181,
+		type = 5,
+		name = "The Truth, Pt. 1",
+		count_inherit = 0,
+		desc = "Reach 100 Affinity with Deutschland.",
+		target_id_2 = "",
+		sub_type = 1012,
+		added_tip = 1,
+		story_icon = "deyizhi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5236",
+		visibility = 1,
+		story_id = "DEYIZHI5",
+		target_id_for_client = 40304,
+		id = 5235,
+		target_num = 10000,
+		fix_task = 0,
+		target_id = "40304",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				5
+			},
+			{
+				2,
+				16002,
+				1
+			}
+		}
+	},
+	[5236] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5182,
+		type = 5,
+		name = "The Truth, Pt. 2",
+		count_inherit = 0,
+		desc = "Fully Limit Break Deutschland.",
+		target_id_2 = "",
+		sub_type = 35,
+		added_tip = 1,
+		story_icon = "deyizhi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5237",
+		visibility = 1,
+		story_id = "DEYIZHI6",
+		target_id_for_client = 403044,
+		id = 5236,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "403044",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				10
+			},
+			{
+				2,
+				18012,
+				1
+			}
+		}
+	},
+	[5237] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5183,
+		type = 5,
+		name = "Some Things Never Change",
+		count_inherit = 0,
+		desc = "Get Deutschland to Level 100.",
+		target_id_2 = "",
+		sub_type = 1013,
+		added_tip = 1,
+		story_icon = "deyizhi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "DEYIZHI7",
+		target_id_for_client = 40304,
+		id = 5237,
+		target_num = 100,
+		fix_task = 0,
+		target_id = "40304",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				10
+			},
+			{
+				2,
+				18012,
 				2
 			}
 		}
@@ -14870,6 +15382,262 @@ pg.task_data_template = {
 			{
 				2,
 				18013,
+				1
+			}
+		}
+	},
+	[5411] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5303,
+		type = 5,
+		name = "Wake Up, Your Majesty!",
+		count_inherit = 0,
+		desc = "Acquire 3 \"Torpedo Tempura\" (will be automatically consumed.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 1,
+		story_icon = "yanzhan",
+		award_choice = "",
+		level = 1,
+		next_task = "5412",
+		visibility = 1,
+		story_id = "YANZHAN1",
+		target_id_for_client = 50003,
+		id = 5411,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "50003",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		},
+		scene = {
+			"BACKYARD"
+		}
+	},
+	[5412] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5304,
+		type = 5,
+		name = "The Secretary Ship's Work",
+		count_inherit = 0,
+		desc = "Enhance any character 10 times.",
+		target_id_2 = "",
+		sub_type = 34,
+		added_tip = 1,
+		story_icon = "yanzhan",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5413",
+		visibility = 1,
+		story_id = "YANZHAN2",
+		target_id_for_client = 0,
+		id = 5412,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5413] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5305,
+		type = 5,
+		name = "The Speed of the Grand Old Lady",
+		count_inherit = 0,
+		desc = "Sortie and obtain 20 victories with Warspite in the fleet.",
+		target_id_2 = "",
+		sub_type = 18,
+		added_tip = 1,
+		story_icon = "yanzhan",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5414",
+		visibility = 1,
+		story_id = "YANZHAN3",
+		target_id_for_client = 20502,
+		id = 5413,
+		target_num = 20,
+		fix_task = 0,
+		target_id = "20502",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5414] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5306,
+		type = 5,
+		name = "After the Exercise...",
+		count_inherit = 0,
+		desc = "Complete 3 Daily Challenges with Warspite in the fleet.",
+		target_id_2 = "",
+		sub_type = 19,
+		added_tip = 1,
+		story_icon = "yanzhan",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5415",
+		visibility = 1,
+		story_id = "YANZHAN4",
+		target_id_for_client = 20502,
+		id = 5414,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "20502",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5415] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5307,
+		type = 5,
+		name = "The Small Things",
+		count_inherit = 0,
+		desc = "Reach 100 Affinity with Warspite.",
+		target_id_2 = "",
+		sub_type = 1012,
+		added_tip = 1,
+		story_icon = "yanzhan",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5416",
+		visibility = 1,
+		story_id = "YANZHAN5",
+		target_id_for_client = 20502,
+		id = 5415,
+		target_num = 10000,
+		fix_task = 0,
+		target_id = "20502",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				5
+			},
+			{
+				2,
+				16002,
+				1
+			}
+		}
+	},
+	[5416] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5308,
+		type = 5,
+		name = "Her Majesty's Attentions",
+		count_inherit = 0,
+		desc = "Fully Limit Break Warspite.",
+		target_id_2 = "",
+		sub_type = 33,
+		added_tip = 1,
+		story_icon = "yanzhan",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5417",
+		visibility = 1,
+		story_id = "YANZHAN6",
+		target_id_for_client = 20502,
+		id = 5416,
+		target_num = 6,
+		fix_task = 0,
+		target_id = "20502",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				10
+			},
+			{
+				2,
+				18022,
+				1
+			}
+		}
+	},
+	[5417] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5309,
+		type = 5,
+		name = "The Guardian Sword",
+		count_inherit = 0,
+		desc = "Get Warspite to Level 100.",
+		target_id_2 = "",
+		sub_type = 1013,
+		added_tip = 1,
+		story_icon = "yanzhan",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "YANZHAN7",
+		target_id_for_client = 20502,
+		id = 5417,
+		target_num = 100,
+		fix_task = 0,
+		target_id = "20502",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				10
+			},
+			{
+				2,
+				18023,
 				1
 			}
 		}
@@ -65702,6 +66470,13 @@ The first draft of the design is complete.<color=#797979>In order to verify to w
 		5195,
 		5196,
 		5197,
+		5201,
+		5202,
+		5203,
+		5204,
+		5205,
+		5206,
+		5207,
 		5211,
 		5212,
 		5213,
@@ -65716,6 +66491,13 @@ The first draft of the design is complete.<color=#797979>In order to verify to w
 		5225,
 		5226,
 		5227,
+		5231,
+		5232,
+		5233,
+		5234,
+		5235,
+		5236,
+		5237,
 		5241,
 		5242,
 		5243,
@@ -65828,6 +66610,13 @@ The first draft of the design is complete.<color=#797979>In order to verify to w
 		5405,
 		5406,
 		5407,
+		5411,
+		5412,
+		5413,
+		5414,
+		5415,
+		5416,
+		5417,
 		5451,
 		5452,
 		5453,

@@ -9,11 +9,33 @@ slot0.onRegister = function (slot0)
 	slot0._showMaxLevelHelp = PlayerPrefs.GetInt("maxLevelHelp", 0) > 0
 	slot0.nextTipAoutBattleTime = PlayerPrefs.GetInt("AutoBattleTip", 0)
 	slot0._setFlagShip = PlayerPrefs.GetInt("setFlagShip", 0) > 0
-	slot0._screenRatio = PlayerPrefs.GetFloat("SetScreenRatio", 2)
+	slot0._screenRatio = PlayerPrefs.GetFloat("SetScreenRatio", ADAPT_TARGET)
 	NotchAdapt.CheckNotchRatio = slot0._screenRatio
 	slot0.nextTipActBossExchangeTicket = nil
 
 	slot0:resetEquipSceneIndex()
+end
+
+slot0.getSkinPosSetting = function (slot0, slot1)
+	if PlayerPrefs.HasKey(tostring(slot1) .. "_scale") then
+		return PlayerPrefs.GetFloat(tostring(slot1) .. "_x", 0), PlayerPrefs.GetFloat(tostring(slot1) .. "_y", 0), PlayerPrefs.GetFloat(tostring(slot1) .. "_scale", 1)
+	else
+		return nil
+	end
+end
+
+slot0.setSkinPosSetting = function (slot0, slot1, slot2, slot3, slot4)
+	PlayerPrefs.SetFloat(tostring(slot1) .. "_x", slot2)
+	PlayerPrefs.SetFloat(tostring(slot1) .. "_y", slot3)
+	PlayerPrefs.SetFloat(tostring(slot1) .. "_scale", slot4)
+	PlayerPrefs.Save()
+end
+
+slot0.resetSkinPosSetting = function (slot0, slot1)
+	PlayerPrefs.DeleteKey(tostring(slot1) .. "_x")
+	PlayerPrefs.DeleteKey(tostring(slot1) .. "_y")
+	PlayerPrefs.DeleteKey(tostring(slot1) .. "_scale")
+	PlayerPrefs.Save()
 end
 
 slot0.getCharacterSetting = function (slot0, slot1, slot2)

@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"德意志的忧郁\n\n<size=45>六　真相·下</size>",
+					"The Cloudy Mask\n\n<size=45>Chapter 6: The Truth, Pt. 2</size>",
 					1
 				}
 			}
@@ -25,7 +25,7 @@ return {
 			bgm = "story-1",
 			actor = 405020,
 			nameColor = "#a9f548",
-			say = "“吕佐夫”……是因为这个名字。",
+			say = "It's all because of that name... \"Lützow.\"",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -67,7 +67,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "是的。不知道是什么原因，德意志她作为舰船的存在不光是铁血的“德意志”还是北方联合的“吕佐夫”呢。",
+			say = "Indeed. I don't know how it came to be, but she isn't just Deutschland of the Iron Blood, she was also born as Lützow of the Northern Parliament.",
 			subActors = {
 				{
 					actor = 403040,
@@ -91,7 +91,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "？！她们居然知道……",
+			say = "Huh?! How do they know that...?!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -118,7 +118,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "不是在那场战斗中努力的“吕佐”，而是北方联合的“吕佐夫”……",
+			say = "And not the Lützow who fought in the Great War, the one the Northern Parliament refloated...",
 			subActors = {
 				{
 					actor = 403040,
@@ -143,7 +143,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "她对自己作为舰船的经历充满了懊悔。所以为了让自己成为铁血的一员，拼命地表现的像一个铁血的船呢。",
+			say = "Her history haunts her. So she tried desperately to make herself out as the ideal image of Iron Blood so we'd accept her.",
 			subActors = {
 				{
 					actor = 403040,
@@ -167,7 +167,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……现在说有什么用……",
+			say = "... Why would she bring this up now...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -184,7 +184,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "即使加入过北方联合，但她确实是德意志。",
+			say = "Sure, she had a thing with the Northern Parliament, but she's still Deutschland. She's one of us.",
 			subActors = {
 				{
 					actor = 403040,
@@ -209,7 +209,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "虽然她人很好的啦，但是当时我们对她太好，她性格上毕竟很容易别扭会想多，所以我们才做了之前个约定呢。",
+			say = "And we wanted to make her feel like a part of the team, but since she's kinda sensitive, we agreed to be nice to her.",
 			subActors = {
 				{
 					actor = 403040,
@@ -233,7 +233,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "………………",
+			say = "......……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -247,7 +247,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "铁血的大家也为了不伤害到德意志而非常小心呢。",
+			say = "So basically, they were simply doing their best not to hurt or upset her.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -260,7 +260,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "所以我们没有告诉她真相，就这样接受“现在的德意志”作为了我们的一员。",
+			say = "Which is why we kept this a secret from her and accepted her into the Iron Blood.",
 			subActors = {
 				{
 					actor = 403040,
@@ -285,7 +285,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "没错。她不管如何都是我们的伙伴。但是我们太过于谨慎反而伤到了她……真是事与愿违呢。",
+			say = "That's right. Above all else, she is one of us. But ironically, all our cautiousness and special treatment wound up hurting her in the end...",
 			subActors = {
 				{
 					actor = 403040,
@@ -310,7 +310,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "我是觉得她现在这样也很好啦…不过总是要多面对下自己才行呢。",
+			say = "I think she's fine the way she is right now... but I guess she should come to terms with herself, at least a little.",
 			subActors = {
 				{
 					actor = 403040,
@@ -335,7 +335,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "可能暂时会让她难受，不如我们就告诉她真相也好？",
+			say = "It might leave her feeling blue for a while, but maybe we should tell her the truth?",
 			subActors = {
 				{
 					actor = 403040,
@@ -360,7 +360,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "同意。那个任性的德意志看不到了虽然会有点惋惜。不过她应该活的更自由一些的。",
+			say = "I say we do. It's a shame to lose the arrogant Deutschland we know, but it's time she accepts herself for who she is.",
 			subActors = {
 				{
 					actor = 403040,
@@ -384,7 +384,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "什么啊……结果还是要承认骗我吗……",
+			say = "So... they pretty much admit they lied to me...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -398,7 +398,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "怀中的少女早已没有了平时的高傲，双肩微微颤抖，静静的低语着。",
+			say = "Deutschland whispers while her shoulders tremble. Her voice lacks its signature impactful tone, instead sounding frail.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -410,7 +410,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……仆人。把我放下来。",
+			say = "... Slave, let me go.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -426,7 +426,7 @@ return {
 			dir = 1,
 			actor = 404020,
 			nameColor = "#a9f548",
-			say = "结论是去告诉德意志真相呢。",
+			say = "In conclusion, we should tell Deutschland the truth.",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -454,7 +454,7 @@ return {
 			}
 		},
 		{
-			say = "但是到底要怎么样告诉她呢……",
+			say = "But how do we go about telling her that...",
 			side = 1,
 			bgName = "bg_story_task",
 			dir = 1,
@@ -479,7 +479,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "没这个必要呢……格奈森瑙，你说对吧？",
+			say = "We don't need to do anything. Right, Gneisenau?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -493,7 +493,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "松开抱着她的手。德意志打开门，出现在伙伴们的面前",
+			say = "I let go of Deutschland. She walks over to open the door, then steps into the salon.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -505,7 +505,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "真是瞒不过欧根你。",
+			say = "... Ah, so you knew she was listening, Eugen.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -521,7 +521,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "当然啦。……于是你要怎么处罚我们呢。",
+			say = "Heheh, of course I knew. So, what do you plan to do with us, Deutschland?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -535,7 +535,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "——沉默片刻后，少女向伙伴们道出了心声",
+			say = "After a brief silence, the girl raises her voice and speaks her mind.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -547,23 +547,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "骗了我好久的罪不可轻饶。",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			actor = 403040,
-			side = 2,
-			bgName = "bg_story_task",
-			nameColor = "#a9f548",
-			dir = 1,
-			say = "但是…………………………………………",
+			say = "You will pay dearly for deceiving me for so long.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -579,7 +563,23 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "让我成为你们的伙伴，真的谢谢大家——",
+			say = "But... I also want to say...",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 403040,
+			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
+			dir = 1,
+			say = "Thank you... for accepting me.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

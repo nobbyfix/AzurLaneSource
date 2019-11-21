@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"德意志的忧郁\n\n<size=45>七　一如既往？</size>",
+					"The Cloudy Mask\n\n<size=45>Chapter 7: Some Things Never Change</size>",
 					1
 				}
 			}
@@ -20,7 +20,7 @@ return {
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "在那次会议之后，过了一段时间。",
+			say = "It's been some time after the truth about Deutschland came to light...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -32,7 +32,7 @@ return {
 			dir = 1,
 			bgmDelay = 1.5,
 			bgm = "battle-1",
-			say = "海域·演习海域",
+			say = "Port - Exercise Area",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -62,7 +62,7 @@ return {
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
 			actor = 404010,
-			say = "我又赢了！",
+			say = "Aaaand I win again! Hah!",
 			flashN = {
 				color = {
 					1,
@@ -120,7 +120,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "德意志，不服气吗？",
+			say = "Ready to accept your loss yet, Deutschland?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -131,7 +131,7 @@ return {
 			}
 		},
 		{
-			say = "哼…再来！",
+			say = "Grr... No! It's not over yet!",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
@@ -161,7 +161,7 @@ return {
 			}
 		},
 		{
-			say = "哈哈，这才像话，除了性能，德意志你更缺乏的是经验，想要变强，就练习，练习，再练习！",
+			say = "Hah, that's the spirit! Your gear is one thing, but what you need is experience. And if you wanna scuffle with the best, you'll have to train like the rest!",
 			side = 0,
 			bgName = "bg_story_nepu1",
 			dir = 1,
@@ -187,7 +187,7 @@ return {
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
 			actor = 403040,
-			say = "不用你说我也知道！！",
+			say = "Tsk! I know that, stop repeating it!",
 			flashN = {
 				color = {
 					1,
@@ -235,7 +235,7 @@ return {
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
+			say = "Port - Office",
 			flashout = {
 				dur = 0.7,
 				black = true,
@@ -264,7 +264,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "喂，仆人，你看看这些公文这么处理是对的吗？",
+			say = "Here, slave. This is how you write a formal document, right?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -275,19 +275,20 @@ return {
 			}
 		},
 		{
-			actor = 403040,
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			withoutActorName = true,
-			say = "……虽然有些错误，不过看得出十分努力。",
+			actor = 403040,
+			nameColor = "#a9f548",
+			say = "There are a few minor errors here and there, but I can clearly see she worked hard to make it.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			},
 			options = {
 				{
-					content = "表扬",
+					content = "Praise her for her work.",
 					flag = 1
 				}
 			}
@@ -298,7 +299,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嘁，为什么我身为你的主人要被你这个仆人表扬……",
+			say = "Tsk. Why should I accept the praises of a miserable slave...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -314,7 +315,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "算了，对了就好。",
+			say = "But, I suppose if it's error-free, that's fine.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -328,7 +329,7 @@ return {
 			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			say = "港区·广场",
+			say = "Port - Plaza",
 			flashout = {
 				dur = 0.7,
 				black = true,
@@ -352,13 +353,12 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
+			actor = 301320,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
-			actor = 301320,
-			actorName = "{namecode:33}",
-			say = "德意志，你是不是有另一个名字呀？",
+			say = "Do you have another name, Deutschland?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -369,7 +369,7 @@ return {
 			}
 		},
 		{
-			say = "啊……是啊，我曾经有过另一个名字，那个名字叫做“吕佐夫”。",
+			say = "... I do. My other name is \"Lützow.\"",
 			side = 1,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -394,7 +394,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "听起来感觉还挺威风的呢~能用这个名字来叫你吗？",
+			say = "That sounds cool! Can I call you that?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -410,7 +410,7 @@ return {
 			dir = -1,
 			actor = 301330,
 			nameColor = "#a9f548",
-			say = "{namecode:126}，要是德意志不喜欢的话……",
+			say = "But Mikazuki, I think she doesn't wanna be called that...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -436,7 +436,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "哼，你想的话就随你高兴吧。",
+			say = "Hmph, address me however you want.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -452,7 +452,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "反正我就是我这件事是不会改变的。",
+			say = "Regardless of what people call me, I will always be me.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -466,7 +466,7 @@ return {
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
-			say = "……就是这样，在那之后不久，德意志又恢复了把低等生物挂在嘴边的性格。",
+			say = "Some time after the truth came to light, Deutschland went back to her normal self.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -476,7 +476,7 @@ return {
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
-			say = "但那只是表象，舰队里的每一个人都能感觉到她变得坦率了许多。",
+			say = "But once you talk to her for a while, you'll be surprised by how honest with herself and mature she's now become.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -488,7 +488,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "我说，仆人你在那一脸女儿长大了的表情看着我是怎么回事？",
+			say = "I know that look on your face! It's got \"Wow, you're so much more honest with yourself\" written all over it!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -504,7 +504,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "区区一个下等生物，脑子里该不会又在想着什么下流的事吧？",
+			say = "Either that, or your depraved animal mind is having lecherous thoughts again!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -530,7 +530,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "啧，身为我唯一的仆人，你也要努力成为配得上我的人才行，明白了吗！",
+			say = "Listen, slave! Your duty is to serve me, and you must work hard to be worthy of it!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -544,7 +544,7 @@ return {
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
-			say = "当然，指挥官的仆人地位也并没有得到改善。",
+			say = "One thing hasn't changed, though: she still treats me like her slave...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -556,7 +556,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "总之别在那发呆了，赶紧过来，要开始捉迷藏了！",
+			say = "So stop staring into space and play a game with me! I order you to amuse me~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -581,7 +581,7 @@ return {
 			bgName = "bg_story_school",
 			dir = 1,
 			blackBg = true,
-			say = "不过这样就好。",
+			say = "But I guess that's fine.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

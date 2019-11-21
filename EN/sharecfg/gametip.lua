@@ -1218,6 +1218,14 @@ pg.gametip = {
 		tip = "Contributions Earned:",
 		key = "battle_result_contribution"
 	},
+	battle_result_total_score = {
+		tip = "Total Score:",
+		key = "battle_result_total_score"
+	},
+	battle_result_max_combo = {
+		tip = "Max COMBO:",
+		key = "battle_result_max_combo"
+	},
 	battle_levelScene_0Oil = {
 		tip = "Oil Production is 0",
 		key = "battle_levelScene_0Oil"
@@ -5559,15 +5567,15 @@ Attack/Support Range Level:
 			pageMode = false,
 			ImageMode = true,
 			windowSize = {
-				x = 836,
-				y = 740
+				x = 1263,
+				y = 1200
 			},
 			windowPos = {
-				y = 15
+				y = 80
 			},
 			helpSize = {
-				x = 836,
-				y = 660
+				x = 1176,
+				y = 800
 			}
 		}
 	},
@@ -6447,7 +6455,7 @@ Attack/Support Range Level:
 		key = "ship_remould_warning_203114"
 	},
 	ship_remould_warning_205124 = {
-		tip = "此次改造操作将消耗<color=#92fc63>战士的心得</color>\n是否确认继续操作？",
+		tip = "<color=#92fc63>The Warrior's Prowess</color> will be used to complete the retrofit.\nWould you like to continue? ",
 		key = "ship_remould_warning_205124"
 	},
 	ship_remould_warning_310014 = {
@@ -8534,11 +8542,11 @@ Combat Details:
 		key = "resource_verify_warn"
 	},
 	resource_verify_fail = {
-		tip = "Data files have been repaired. Please restart the game to initiate the update. Confirm to exit the game[$1]",
+		tip = "Game resource restoration complete. Restart the game and begin updating. Tap confirm to close the game. $1",
 		key = "resource_verify_fail"
 	},
 	resource_verify_success = {
-		tip = "Data files have been repaired",
+		tip = "Game resource restoration complete.",
 		key = "resource_verify_success"
 	},
 	word_take_video_tip = {
@@ -8588,28 +8596,28 @@ Combat Details:
 		key = "goldship_help_tip",
 		tip = {
 			{
-				info = "厌战的特别训练活动说明："
+				info = "- How to Play:"
 			},
 			{
-				info = "    1.玩家撞击金币啾可以加分，连续撞击金币啾可以累积\n    COMBO，根据当前COMBO数不同，获得的分数也不同哦；"
+				info = "1. You receive points by ramming into the Manjuus transporting coins."
 			},
 			{
-				info = "    2.撞击鞭炮啾会打断COMBO，再次撞击金币啾后会重新开始\n    累积；"
+				info = "2. You can start a combo and gain more points by repeatedly ramming into these Manjuus."
 			},
 			{
-				info = "    3.在关卡中获得10分以上（包括10分）即可获得【历战之证】，\n    另外只要完成关卡还可获得【骰子】，每天均有一次获得机\n    会，可累积。；"
+				info = "3. If you ram into a Manjuu with explosives, your combo is reset."
 			},
 			{
-				info = "    注：【历战之证】最多可获得7个  【骰子】最多可获得15个 ；"
+				info = "4. You will receive 1 Proof of Veterancy if you reach a score of 10 points or more."
 			},
 			{
-				info = "    4.累积获得7个【历战之证】可以得到厌战改造限定道具\n    【战士的心得】 ；"
+				info = "5. Once you collect all 7 Proofs of Veterancy, you will receive the item required to retrofit Warspite – The Warrior's Prowess."
 			},
 			{
-				info = "    5.战斗中撤退将无法获得任何奖励 ；"
+				info = "6. You will not receive any rewards if you retreat during the minigame."
 			},
 			{
-				info = "    6.关卡时长为90秒，时间结束即关卡完成 ；"
+				info = "7. The minigame ends once the timer hits 0."
 			}
 		}
 	},
@@ -11126,6 +11134,18 @@ depends on the amount of damage dealt to the boss.
 	secretary_closed = {
 		tip = "Not open",
 		key = "secretary_closed"
+	},
+	confirm_unlock = {
+		tip = "Are you sure you want to unlock $1?",
+		key = "confirm_unlock"
+	},
+	secretary_pos_save = {
+		tip = "Would you like to save the current secretary ship placement?",
+		key = "secretary_pos_save"
+	},
+	secretary_pos_save_success = {
+		tip = "Save successful",
+		key = "secretary_pos_save_success"
 	}
 }
 

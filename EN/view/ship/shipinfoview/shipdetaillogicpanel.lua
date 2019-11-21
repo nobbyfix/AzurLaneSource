@@ -144,22 +144,11 @@ slot0.updateShipAttrs = function (slot0)
 
 	for slot10, slot11 in pairs(slot1) do
 		slot13 = findTF(slot0.attrs, "icons/" .. slot10)
-		slot14 = findTF(slot12, "value")
-		slot15 = findTF(slot12, "add")
-		slot16 = slot3[slot11] or 0
-		slot17 = slot5[slot11] or 1
-		slot18 = nil
 
-		if LOCK_EQUIP_DEVELOPMENT then
-			slot18 = slot4[slot11] or 0
-		else
-			slot18 = math.floor(((slot4[slot11] or 0) + slot16) * slot17) - slot16
-		end
+		setText(findTF(slot12, "value"), slot3[slot11] or 0)
 
-		setText(slot14, slot16)
-
-		slot0.additionValues.transforms[slot11] = slot15
-		slot0.additionValues[0][slot11] = slot18
+		slot0.additionValues.transforms[slot11] = findTF(slot12, "add")
+		slot0.additionValues[0][slot11] = calcFloor(((slot4[slot11] or 0) + (slot3[slot11] or 0)) * (slot5[slot11] or 1)) - (slot3[slot11] or 0)
 		slot0.additionValues[1][slot11] = slot1:getTechNationAddition(slot11)
 
 		if slot11 == AttributeType.Armor then
@@ -403,9 +392,6 @@ slot0.doAttrAnim = function (slot0, slot1, slot2, slot3)
 
 	for slot16, slot17 in pairs(slot1) do
 		slot19 = findTF(slot0.attrs, "icons/" .. slot16) or findTF(slot0.attrs, "icon_" .. slot16)
-
-		print(slot16)
-
 		slot20 = findTF(findTF(slot0.attrs, "props/" .. slot16) or findTF(slot0.attrs, "prop_" .. slot16), "value")
 		slot21 = findTF(findTF(slot0.attrs, "props/" .. slot16) or findTF(slot0.attrs, "prop_" .. slot16), "add")
 		slot22 = slot4[slot17] or 0
@@ -415,13 +401,8 @@ slot0.doAttrAnim = function (slot0, slot1, slot2, slot3)
 		slot26, slot27 = nil
 
 		if slot0.evalueIndex == slot2.EQUIPMENT_ADDITION then
-			if LOCK_EQUIP_DEVELOPMENT then
-				slot26 = slot5[slot17] or 0
-				slot27 = slot8[slot17] or 0
-			else
-				slot26 = math.floor(((slot5[slot17] or 0) + slot22) * slot23) - slot22
-				slot27 = math.floor(((slot8[slot17] or 0) + slot24) * slot25) - slot24
-			end
+			slot26 = calcFloor(((slot5[slot17] or 0) + slot22) * slot23) - slot22
+			slot27 = calcFloor(((slot8[slot17] or 0) + slot24) * slot25) - slot24
 		elseif slot0.evalueIndex == slot2.TECHNOLOGY_ADDITION then
 			slot26 = slot1:getTechNationAddition(slot17)
 			slot27 = slot2:getTechNationAddition(slot17)

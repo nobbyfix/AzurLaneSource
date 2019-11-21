@@ -5,7 +5,7 @@ return {
 	scripts = {
 		{
 			side = 2,
-			actorName = "大黄蜂",
+			actorName = "Hornet",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "So you're the new Commander? I'm surprised that you were able to find my coordinates so fast!",
@@ -24,7 +24,7 @@ return {
 		},
 		{
 			side = 2,
-			actorName = "大黄蜂",
+			actorName = "Hornet",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "But it would be a shame if this exercise had never started.",
@@ -43,7 +43,7 @@ return {
 		},
 		{
 			side = 2,
-			actorName = "大黄蜂",
+			actorName = "Hornet",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "Let me, the great Hornet, test your strength. Don't worry, we'll both be firing blanks!",
@@ -62,7 +62,7 @@ return {
 		},
 		{
 			side = 2,
-			actorName = "大黄蜂",
+			actorName = "Hornet",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "Don't worry, I won't hurt you too badly!",

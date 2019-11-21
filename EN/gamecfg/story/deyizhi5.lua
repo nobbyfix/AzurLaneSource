@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"德意志的忧郁\n\n<size=45>五　真相·上</size>",
+					"The Cloudy Mask\n\n<size=45>Chapter 5: The Truth, Pt. 1</size>",
 					1
 				}
 			}
@@ -22,7 +22,7 @@ return {
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "格奈森瑙的宿舍",
+			say = "Gneisenau's Room",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -49,7 +49,7 @@ return {
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
-			say = "半拉着德意志来到了格奈森瑙的宿舍并说明了情况。",
+			say = "I somehow managed to drag Deutschland out of her room and decided to ask her Iron Blood comrades about the situation.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -61,7 +61,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "是吗，虽然我有在做准备，晚了一步呢……",
+			say = "I had a feeling this would happen eventually, and it seems my hunch was correct.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -77,7 +77,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "抱歉，德意志，不过有一点请你相信，大家都是真心为你好的。",
+			say = "I'm sorry, Deutschland. But please believe me when I say nobody meant to hurt you.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -88,7 +88,7 @@ return {
 			}
 		},
 		{
-			say = "你要让我怎么相信这种事啊！",
+			say = "You expect me to believe that?",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
@@ -123,7 +123,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "是呢……指挥官也不知道其中的原委吧。",
+			say = "Oh, right... You don't know the story behind all this, Commander.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -139,7 +139,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "这样吧，我召集铁血的大家来说一下这个事情，请你们两位旁听一下吧。",
+			say = "That being the case, I'll call over the girls relevant to this discussion and tell them about this. You and Deutschland can sit in the next room over and listen.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -153,7 +153,7 @@ return {
 			bgName = "bg_story_task",
 			side = 2,
 			dir = 1,
-			say = "会议室",
+			say = "Port - Dormitory Salon",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -183,7 +183,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "那么，欧根，斯佩，提尔比茨，Z1，谢谢你们抽空过来。",
+			say = "Thank you for coming, Eugen, Spee, Tirpitz, and Z1. I have something to tell you.",
 			subActors = {
 				{
 					actor = 403040,
@@ -208,7 +208,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "是因为德意志姐姐的那件事吗？",
+			say = "It's about... Deutschland, isn't it?",
 			subActors = {
 				{
 					actor = 403040,
@@ -233,7 +233,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "是的，斯佩你可能不太清楚，我们曾经约定好，尽可能地迁就她的性格，让她能够继续无忧无虑地生活下去。",
+			say = "Correct. A long time ago, we all entered an agreement to go along with her egotistic tendencies so she could live a happy life.",
 			subActors = {
 				{
 					actor = 403040,
@@ -258,7 +258,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "……大家没有忘记这件事吧？",
+			say = "I'm sure you all remember this, yes?",
 			subActors = {
 				{
 					actor = 403040,
@@ -282,7 +282,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "？！什么！",
+			say = "They what?! I can't just sit here and listen to this...!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -303,7 +303,7 @@ return {
 			},
 			options = {
 				{
-					content = "抱住想要冲过去的德意志",
+					content = "Hold Deutschland back before she storms out of the room.",
 					flag = 1
 				}
 			}
@@ -314,7 +314,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "放开……",
+			say = "Let go of me!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -338,7 +338,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "……被德意志一口咬住了手。",
+			say = "... She bit my arm.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -350,7 +350,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "区区下等生物的仆人……",
+			say = "Stop it, you insubordinate, lowly animal...!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -366,7 +366,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……呜",
+			say = "Mrgh... Gah...!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -383,7 +383,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "嗯？……呵呵，早就已经习惯了这样的相处模式，都快要忘了以前做过这样的约定呢。",
+			say = "Yeah, I remember that... I've grown used to her attitude by now, so I don't really need to be bound by that agreement anymore.",
 			subActors = {
 				{
 					actor = 403040,
@@ -408,7 +408,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "但是归根结底，这只是权宜之计，而且也是我们欺骗了她。",
+			say = "I know it's for her sake, but it's a fact that what we've done isn't right.",
 			subActors = {
 				{
 					actor = 403040,
@@ -433,7 +433,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "是的，后果就是不仅对其他同僚造成了困扰，在她现在有些意识到这点后，也对她产生了伤害。",
+			say = "Indeed. It's also caused trouble for other people. Furthermore, Deutschland knows about it now, and she feels really hurt by it.",
 			subActors = {
 				{
 					actor = 403040,
@@ -458,7 +458,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "所以今天就想和大家讨论一下这件事的对策。",
+			say = "That is why I've called you here - so we can discuss what to do next.",
 			subActors = {
 				{
 					actor = 403040,
@@ -482,7 +482,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "…………",
+			say = "......",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -498,7 +498,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "哼，果然，反正一个两个也只会继续耍我下去吧。",
+			say = "They'll just keep making a fool of me. I know they will.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -515,7 +515,7 @@ return {
 			blackBg = true,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "（小声）仆人，我该怎么办啊……",
+			say = "(Whispering) Slave... what should I do...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -371,7 +371,7 @@ slot0.getBayPower = function (slot0)
 
 	for slot6, slot7 in pairs(slot0.data) do
 		slot8 = slot7.configId
-		slot9 = slot7:getShipCombatPower()
+		slot9 = calcFloor(slot7:getShipCombatPower())
 
 		if defaultValue(slot0.handbookTypeAssign[slot7:getGroupId()], 0) ~= 1 and (not slot1[slot8] or slot1[slot8] < slot9) then
 			slot1[slot8] = slot9
@@ -379,7 +379,7 @@ slot0.getBayPower = function (slot0)
 		end
 	end
 
-	return math.floor(slot2)
+	return slot2
 end
 
 slot0.getBayPowerRooted = function (slot0)

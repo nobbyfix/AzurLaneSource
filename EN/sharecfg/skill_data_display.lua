@@ -1526,15 +1526,15 @@ pg.skill_data_display = {
 	},
 	[11870] = {
 		id = 11870,
-		name = "神射手·改"
+		name = "Divine Marksman+ "
 	},
 	[11871] = {
 		id = 11871,
-		name = "神射手·改"
+		name = "Divine Marksman+ "
 	},
 	[11880] = {
 		id = 11880,
-		name = "皇家传奇"
+		name = "The Royal Navy Legend "
 	},
 	[11890] = {
 		id = 11890,

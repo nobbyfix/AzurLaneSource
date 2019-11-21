@@ -131,7 +131,7 @@ end
 slot0.updateForTechnology = function (slot0)
 	slot1 = nil
 
-	if IS_OPEN_TEC_SYSTEM == false then
+	if LOCK_TECHNOLOGY then
 		setActive(slot0._tf:Find("frame"), false)
 		setActive(slot0.lockTF, false)
 		setActive(slot0.commingTF, true)

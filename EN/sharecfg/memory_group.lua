@@ -1042,6 +1042,19 @@ pg.memory_group = {
 			949
 		}
 	},
+	[171] = {
+		title = "Halloween Chaos!",
+		type = 2,
+		id = 171,
+		icon = "title_event",
+		memories = {
+			950,
+			951,
+			952,
+			953,
+			954
+		}
+	},
 	[501] = {
 		title = "{namecode:98}'s Commission",
 		type = 3,
@@ -1265,6 +1278,21 @@ pg.memory_group = {
 			370
 		}
 	},
+	[518] = {
+		title = "Schmelzen ",
+		type = 3,
+		id = 518,
+		icon = "title_chara_tierbici",
+		memories = {
+			387,
+			388,
+			389,
+			390,
+			391,
+			392,
+			393
+		}
+	},
 	[519] = {
 		title = "Centaur and the Port \"Elders\" ",
 		type = 3,
@@ -1293,6 +1321,21 @@ pg.memory_group = {
 			415,
 			416,
 			417
+		}
+	},
+	[521] = {
+		title = "The Cloudy Mask ",
+		type = 3,
+		id = 521,
+		icon = "title_chara_deyizhi",
+		memories = {
+			418,
+			419,
+			420,
+			421,
+			422,
+			423,
+			424
 		}
 	},
 	[522] = {
@@ -1535,6 +1578,21 @@ pg.memory_group = {
 			669
 		}
 	},
+	[539] = {
+		title = "The Royal Knight ",
+		type = 3,
+		id = 539,
+		icon = "title_chara_yanzhan",
+		memories = {
+			670,
+			671,
+			672,
+			673,
+			674,
+			675,
+			676
+		}
+	},
 	[543] = {
 		title = "Another Leader?",
 		type = 3,
@@ -1659,6 +1717,7 @@ pg.memory_group = {
 		168,
 		169,
 		170,
+		171,
 		501,
 		502,
 		503,
@@ -1673,8 +1732,10 @@ pg.memory_group = {
 		515,
 		516,
 		517,
+		518,
 		519,
 		520,
+		521,
 		522,
 		523,
 		524,
@@ -1691,6 +1752,7 @@ pg.memory_group = {
 		536,
 		537,
 		538,
+		539,
 		543,
 		544,
 		545,

@@ -5992,6 +5992,108 @@ pg.ship_skin_template = {
 			}
 		}
 	},
+	[101411] = {
+		ship_group = 10141,
+		name = "Student Mode!",
+		bullet_skin_main = "",
+		desc = "Stanly's brand new \"Student Mode,\" activate! Commander, come check out my new look!",
+		illustrator2 = -1,
+		id = 101411,
+		bullet_skin_secondary = "",
+		no_showing = "0",
+		painting = "sitanli_2",
+		air_bullet_skin = "",
+		shop_type_id = 4,
+		hand_id = 5,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bg = "103",
+		skin_type = 0,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "sitanli_2",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 70275,
+		voice_actor = 143,
+		air_bomb_skin = "",
+		illustrator = -1,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {
+			2
+		},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					1.439,
+					1.273,
+					0
+				}
+			},
+			vicegun = {
+				{
+					1.418,
+					1.311,
+					0
+				}
+			},
+			torpedo = {
+				{
+					0.024,
+					0.02,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.6,
+							2.31,
+							0
+						}
+					}
+				}
+			}
+		}
+	},
 	[101420] = {
 		ship_group = 10142,
 		name = "Smalley",
@@ -9731,11 +9833,11 @@ pg.ship_skin_template = {
 		ship_group = 10216,
 		name = "Mystical Night",
 		bullet_skin_main = "",
-		desc = "就算是狂欢，也要拿出干劲，全力以赴才行呢~指挥官，准备好了吗？愉快的万圣之夜现在才要开始呢~",
+		desc = "We have to work hard if we want to play hard, isn't that right, Commander? Are you ready for our happy Halloween? ",
 		illustrator2 = -1,
 		id = 102162,
 		bullet_skin_secondary = "",
-		no_showing = "1",
+		no_showing = "0",
 		painting = "mengfeisi_3",
 		air_bullet_skin = "",
 		shop_type_id = 8,
@@ -28093,6 +28195,115 @@ pg.ship_skin_template = {
 			}
 		}
 	},
+	[202261] = {
+		ship_group = 20226,
+		name = "A Maid in Class",
+		bullet_skin_main = "",
+		desc = "Y-ye said ye wanted ta see me wear something different, so... But this is not \"cosplay\" or somesuch! I do actually go to school...! D-do ye like it?",
+		illustrator2 = -1,
+		id = 202261,
+		bullet_skin_secondary = "",
+		no_showing = "0",
+		painting = "gelasige_2",
+		air_bullet_skin = "",
+		shop_type_id = 4,
+		hand_id = 13,
+		lip_smoothing = 0,
+		l2d_animations = "",
+		bg = "103",
+		skin_type = 0,
+		bg_sp = "",
+		voice_actor_2 = -1,
+		air_torpedo_skin = "",
+		prefab = "gelasige_2",
+		l2d_se = "",
+		aircraft_skin = "",
+		main_UI_FX = "",
+		shop_id = 70274,
+		voice_actor = -1,
+		air_bomb_skin = "",
+		illustrator = -1,
+		rarity_bg = "",
+		l2d_para_range = "",
+		lip_sync_gain = 0,
+		show_skin = "stand",
+		l2d_voice_calibrate = "",
+		tag = {
+			2
+		},
+		live2d_offset = {
+			0,
+			0,
+			0
+		},
+		fx_container = {
+			{
+				0,
+				1.99185,
+				1.15
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0.75,
+				-1.299
+			},
+			{
+				0,
+				0,
+				0
+			}
+		},
+		bound_bone = {
+			cannon = {
+				{
+					1.35,
+					1.266,
+					0
+				}
+			},
+			vicegun = {
+				{
+					1.355,
+					1.32,
+					0
+				}
+			},
+			torpedo = {
+				{
+					0.001,
+					0.001,
+					0
+				}
+			},
+			antiaircraft = {
+				{
+					1.343,
+					1.335,
+					0
+				}
+			}
+		},
+		smoke = {
+			{
+				50,
+				{
+					{
+						"smoke",
+						{
+							-0.39,
+							2.376,
+							0
+						}
+					}
+				}
+			}
+		}
+	},
 	[203010] = {
 		ship_group = 20301,
 		name = "London",
@@ -30719,13 +30930,13 @@ pg.ship_skin_template = {
 	},
 	[205029] = {
 		ship_group = 20502,
-		name = "厌战.改",
+		name = "Warspite (Retrofit)",
 		bullet_skin_main = "",
-		desc = "厌战、改造完毕。这种焕然一新的感觉确实不错…让我们一起迎接新的战场吧，指挥官",
+		desc = "Warspite, retrofitting complete. Mm, I rather like this feeling of being rejuvenated... Now, Commander, let us make our way towards new battlegrounds! ",
 		illustrator2 = -1,
 		id = 205029,
 		bullet_skin_secondary = "",
-		no_showing = "1",
+		no_showing = "0",
 		painting = "yanzhan_g",
 		air_bullet_skin = "",
 		shop_type_id = 0,
@@ -44844,9 +45055,9 @@ pg.ship_skin_template = {
 	},
 	[301660] = {
 		ship_group = 30166,
-		name = "{namecode:148}",
+		name = "Arashio ",
 		bullet_skin_main = "",
-		desc = "{namecode:145}级驱逐舰四番舰—{namecode:148}",
+		desc = "Asashio-class destroyer number four – Arashio. ",
 		illustrator2 = -1,
 		id = 301660,
 		bullet_skin_secondary = "",
@@ -81808,6 +82019,7 @@ pg.ship_skin_template = {
 		101400,
 		101401,
 		101410,
+		101411,
 		101420,
 		101421,
 		102010,
@@ -82011,6 +82223,7 @@ pg.ship_skin_template = {
 		202240,
 		202241,
 		202260,
+		202261,
 		203010,
 		203019,
 		203020,

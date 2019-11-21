@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"皇家的骑士\n\n<size=45>六 女王陛下，您……？</size>",
+					"The Royal Knight\n\n<size=45>Chapter 6: Her Majesty's Attentions</size>",
 					1
 				}
 			}
@@ -24,7 +24,7 @@ return {
 			bgm = "story-1",
 			actor = 202120,
 			nameColor = "#a9f548",
-			say = "这是为两位泡的红茶，请慢用。",
+			say = "Your Majesty's tea. Madam Warspite. Please enjoy.",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -67,7 +67,7 @@ return {
 			bgName = "star_level_bg_107",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯，辛苦了。",
+			say = "My thanks.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -83,7 +83,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（现在是惯例的和女王陛下一起享茶的时间。不过参加的人还没到齐，现在只有我和陛下两个人……）",
+			say = "(This is the appointed time for Her Majesty's usual tea party, but it seems some invitees are late. It's only Her Majesty and I for now.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -99,7 +99,7 @@ return {
 			bgName = "star_level_bg_107",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "我说，厌战啊",
+			say = "Now then, Warspite...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -115,7 +115,7 @@ return {
 			bgName = "star_level_bg_107",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "最近…你在本王身边的时间是不是有点…变少了？相比之下指挥官在一起的时间倒是越来越长…",
+			say = "Do I get the sense that you've been spending less and less time at our side...? And more and more with the Commander?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -126,7 +126,7 @@ return {
 			}
 		},
 		{
-			say = "……有这样的事情吗？",
+			say = "... I... suppose that's possible.",
 			side = 0,
 			bgName = "star_level_bg_107",
 			dir = 1,
@@ -151,7 +151,7 @@ return {
 			bgName = "star_level_bg_107",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "也可能只是本王的错觉而已",
+			say = "Or perhaps we are mistaken.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -167,7 +167,7 @@ return {
 			dir = 1,
 			actor = 205010,
 			nameColor = "#a9f548",
-			say = "我我我我可没有觉得寂寞啦嫉妒啦什么的哦？只只只不过是一点小小的关心而已！",
+			say = "D-d-d-don't misunderstand me, it's not like I'm lonely or jealous or anything! I just happened to take note is all!!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -193,7 +193,7 @@ return {
 			bgName = "star_level_bg_107",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……陛下",
+			say = "Your Majesty...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -209,7 +209,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（仔细想想，这几天除了秘书舰的工作之外，好像还和指挥官说了不少话。从皇家海军史到舰队战术的商讨，我们好像也聊了很多话题）",
+			say = "(Now that I think of it, I have been spending a lot of time with the Commander lately. From the history of the Royal Navy to battle plans and tactics, we've had a lot to discuss.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -225,7 +225,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（和指挥官聊天的时候，总感觉心情很愉悦，平日里承担的压力也消散了不少）",
+			say = "(I do find myself more relaxed when chatting when the Commander. All the stress of the day washes right away.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -241,7 +241,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（这么说来，我好像这段时间确实常常去找指挥官来着……）",
+			say = "(... When I put it like that, I realize I do often go looking to talk with the Commander of my own accord...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -257,7 +257,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（不过作为秘书舰，为了更好地处理舰队事务，和指挥官有更多的交流，也不能算是什么奇怪的事吧）",
+			say = "(Of course, it's not at all unusual for the secretary ship to have a lot to say to the Commander. That can only be good for the fleet, right?)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -273,7 +273,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（也总不可能说仅仅是因为喜欢和指挥官说话才去聊天……）",
+			say = "(So no one could say it's only because I enjoy talking with the Commander that I go looking for a chat...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -289,7 +289,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（……）",
+			say = "(...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -305,7 +305,7 @@ return {
 			bgName = "star_level_bg_107",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "（不可能…吧）",
+			say = "(Of course that's not the only reason...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -321,7 +321,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "！！",
+			say = "... Of course!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -347,7 +347,7 @@ return {
 			dir = 1,
 			actor = 205010,
 			nameColor = "#a9f548",
-			say = "怎、怎么了，厌战？",
+			say = "What's the matter, Warspite?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -368,7 +368,7 @@ return {
 			}
 		},
 		{
-			say = "没，没什么，在想事情而已。",
+			say = "Oh, it was nothing. Nothing at all!",
 			side = 0,
 			bgName = "star_level_bg_107",
 			dir = 1,
@@ -393,7 +393,7 @@ return {
 			bgName = "star_level_bg_107",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "…总之，厌战你有什么想法的话，本王也不会去干涉的。毕竟自己的问题也要自己才能解决呢，咳咳……",
+			say = "Sigh. Now then, if you have something you need to say, Warspite, we certainly shan't interfere. You have your own affairs to manage, of course.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -409,7 +409,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（陛下的表情，总觉得好像有些深层含义在里面……）",
+			say = "(I can't escape the feeling that Her Majesty's expression belies some much deeper meaning...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -425,7 +425,7 @@ return {
 			dir = 1,
 			actor = 204030,
 			nameColor = "#a9f548",
-			say = "打扰了。",
+			say = "Good day to you, Your Majesty. Warspite.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -450,7 +450,7 @@ return {
 			bgName = "star_level_bg_107",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "非常抱歉，陛下。因为一些事情耽误了时间，让二位久等了。",
+			say = "Forgive my tardiness, Your Majesty. I was delayed by some affairs beyond my control. I apologise for keeping you both waiting.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -466,7 +466,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（茶会就要正式开始了）",
+			say = "(The tea party begins in earnest.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -482,7 +482,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（不过，刚刚女王陛下说的话稍微让我有些在意啊……）",
+			say = "(And yet, Her Majesty's words continue to weigh upon me...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

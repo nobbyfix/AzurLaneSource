@@ -8964,6 +8964,69 @@ pg.ship_data_breakout = {
 		use_item = {},
 		weapon_ids = {}
 	},
+	[205121] = {
+		use_gold = 1000,
+		pre_id = 0,
+		use_char_num = 1,
+		use_char = 20502,
+		breakout_id = 205022,
+		breakout_view = "Main gun base +1/Main gun efficiency +5%",
+		id = 205121,
+		icon = "10001",
+		level = 10,
+		use_item = {},
+		weapon_ids = {
+			24100,
+			24100
+		}
+	},
+	[205122] = {
+		use_gold = 3000,
+		pre_id = 205021,
+		use_char_num = 1,
+		use_char = 20502,
+		breakout_id = 205023,
+		breakout_view = "Auxiliary gun base +2/Main gun efficiency +10%",
+		id = 205122,
+		icon = "10001",
+		level = 30,
+		use_item = {},
+		weapon_ids = {
+			22000,
+			22000,
+			22000
+		}
+	},
+	[205123] = {
+		use_gold = 10000,
+		pre_id = 205022,
+		use_char_num = 2,
+		use_char = 20502,
+		breakout_id = 205024,
+		breakout_view = "Main gun base +1/Main gun efficiency +15%",
+		id = 205123,
+		icon = "10001",
+		level = 70,
+		use_item = {},
+		weapon_ids = {
+			24100,
+			24100,
+			24100
+		}
+	},
+	[205124] = {
+		use_gold = 0,
+		pre_id = 205023,
+		use_char_num = 0,
+		use_char = 20502,
+		breakout_id = 0,
+		breakout_view = "N/A",
+		id = 205124,
+		icon = "10001",
+		level = 0,
+		use_item = {},
+		weapon_ids = {}
+	},
 	[205031] = {
 		use_gold = 500,
 		pre_id = 0,
@@ -21187,6 +21250,10 @@ pg.ship_data_breakout = {
 		205022,
 		205023,
 		205024,
+		205121,
+		205122,
+		205123,
+		205124,
 		205031,
 		205032,
 		205033,

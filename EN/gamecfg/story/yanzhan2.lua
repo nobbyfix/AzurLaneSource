@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"皇家的骑士\n\n<size=45>二 舰队的工作</size>",
+					"The Royal Knight\n\n<size=45>Chapter 2: The Secretary Ship's Work</size>",
 					1
 				}
 			}
@@ -22,7 +22,7 @@ return {
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·指挥室",
+			say = "Port - Office",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -55,7 +55,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "早上好，指挥官。",
+			say = "Good morning, Commander.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -71,7 +71,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "(虽然陛下交付了训练任务，不过在那之前，本应负责的秘书舰工作也不能落下)",
+			say = "(Her Majesty may have put me in charge of training the fleet, but I can't neglect my duties as secretary either.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -87,7 +87,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "(不过，毕竟指挥官本身十分优秀，秘书舰的工作实际上也不算太难)",
+			say = "(Of course, because of how competent Commander is, my work is not very difficult.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -103,7 +103,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "今天有什么特殊的安排？尽管交给我就好",
+			say = "Is there anything in particular you need today? I can handle it.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -119,7 +119,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "…统计本月的科研经费吗？明白了",
+			say = "You want me to tally up this month's research expenditures...? Aye-aye.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -135,7 +135,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "这点事情，很快就能完成了——",
+			say = "That sort of thing won't take me but a moment.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -151,7 +151,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "(首先要把相关的文件翻出来…在…啊，找到了)",
+			say = "(First I need to dig up the files... Right... Here they are.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -167,7 +167,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "(唔？！这高度……是指挥官顺手放到架子上的吗）",
+			say = "(Hm? They're all the way up there... Can the Commander really reach that shelf so easily...?)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -183,7 +183,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……",
+			say = "......",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -199,7 +199,7 @@ return {
 			blackBg = true,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "（不、不能因为这点小事就麻烦指挥官，这里我一个人也能解决！）",
+			say = "(I-I can't trouble the Commander over such a trifling thing. I must do this myself!)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -225,7 +225,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（啧，垫起脚尖好像还差一点…那就……）",
+			say = "(Argh, even on my tiptoes I'm still just short of it... Right then...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -241,7 +241,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "哈啊！",
+			say = "Hah!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -267,7 +267,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（跳起来快速取得档案文件夹——这点小事对我来说根本——）",
+			say = "(I just need to jump up and grab it...!)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -283,7 +283,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "好，拿到了！——",
+			say = "Yes! Got it!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -297,7 +297,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "哗啦啦啦啦啦——",
+			say = "(Wobble, wobble, crash!)",
 			dialogShake = {
 				speed = 0.09,
 				x = 12.75,
@@ -314,7 +314,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "糟了！！！",
+			say = "Bollocks!!!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -340,7 +340,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（呜…失策，没想到会把其他文件也碰下来了）",
+			say = "(Who would've thought all the other files would come crashing down like that.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -356,23 +356,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "咳、咳咳，抱、抱歉，指挥官。想取文件的时候不小心碰到了",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			actor = 205020,
-			side = 2,
-			bgName = "bg_story_task",
-			nameColor = "#a9f548",
-			dir = 1,
-			say = "我竟然会犯下这么低级的错误…唔，这里让我来收拾就好…",
+			say = "Terribly sorry, Commander! I knocked them over while grabbing this document.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -388,7 +372,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "别，别笑了啊！",
+			say = "I can't believe I've made such a base mistake! I'll get to cleaning this up straight away!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -414,7 +398,7 @@ return {
 			blackBg = true,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "(是、是不是老老实实让指挥官帮忙比较好呢……）",
+			say = "(M-maybe I should have just asked the Commander for help in the first place.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

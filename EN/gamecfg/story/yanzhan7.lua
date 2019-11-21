@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"皇家的骑士\n\n<size=45>七 守护之剑</size>",
+					"The Royal Knight\n\n<size=45>Chapter 7: The Guardian Sword</size>",
 					1
 				}
 			}
@@ -22,7 +22,7 @@ return {
 			blackBg = true,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "啊！！",
+			say = "Ah!!",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -65,7 +65,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "(将被吞入那暗蓝深渊的无力感，即便自己被击沉也要守护的伙伴们、陛下、还有……)",
+			say = "(This feeling of helplessness as I am swallowed by the dark blue abyss... and yet, even as I sink, I still have to protect the other Knights, and Her Majesty, and...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -81,7 +81,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "原来是恶梦吗……我还以为自己真的要被击沉了",
+			say = "Oh, it was just a dream. I really felt like I was sinking...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -97,7 +97,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "唔，还是是凌晨啊",
+			say = "The sun isn't even up yet.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -113,7 +113,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "……稍微出去走走吧，得小心不要吵醒了陛下才行",
+			say = "... I suppose I'll go for a walk. Just have to be careful not to wake the others.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -129,7 +129,7 @@ return {
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-2",
-			say = "港区·指挥室附近",
+			say = "Port - Near the Office",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -162,7 +162,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "结果不知不觉就来到了这里。难道我一直都在想着…指挥官？",
+			say = "I wandered here without even thinking. I suppose I've had the Commander on my mind...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -178,7 +178,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯？都这个时间了，办公室还是亮着的…？",
+			say = "... What's that?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -194,7 +194,23 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……稍微进去看看吧",
+			say = "Is there a light coming from the office...?",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 205020,
+			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
+			dir = 1,
+			say = "... I better go take a look.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -210,7 +226,7 @@ return {
 			dir = 1,
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "我进来了…指挥官…？",
+			say = "... Commander...?",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -243,7 +259,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（这是……趴在桌子上睡着了吗）",
+			say = "(Splayed out over the desk fast asleep.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -259,7 +275,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（嗯？这些是…今天的委托记录？…下午的时候不是说已经全部完成了吗？）",
+			say = "(Hm? These are today's commission reports? Didn't we finish these early this afternoon?)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -275,7 +291,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（难道说…把工作都偷偷留下来自己做，为的就是多点一起聊天的时间……）",
+			say = "(Don't tell me... the Commander hid most of the work to do later so we would have more time to chat?)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -291,7 +307,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（…看起来指挥官也是…是笨蛋啊）",
+			say = "... The absolute moron.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -307,7 +323,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（我已经全部明白了呢，无论是我对你的，还是你对我的…）",
+			say = "(Ah... Well... At least now I have a clear picture of what's going on...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -323,7 +339,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（啊…指挥官的睡颜，真是安详啊……）",
+			say = "(And... you're quite cute when you're sleeping, Commander. You look so peaceful...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -339,7 +355,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（放心吧，指挥官，我会守护好你的一切的）",
+			say = "(As you should be. You have nothing to fear with me protecting you.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -355,7 +371,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（我是厌战，视战争艰辛如无物，未曾向任何命运屈服的“不沉的传奇”。无论是你，后辈们，还是整个舰队，我都会用尽这个身躯去保护）",
+			say = "(For I am Warspite. I have borne witness to every bitter twist of war, and found nothing that can bend me, the \"Unsinkable Legend\". No matter who may threaten to harm you, the girls, or the entire fleet, they would have to go through my broken body to do it.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -371,7 +387,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（所以，现在就请先安心地睡吧）",
+			say = "(And in that knowledge, you may sleep soundly.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -387,7 +403,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（我也……）",
+			say = "(And I...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -405,7 +421,7 @@ return {
 			bgm = "story-1",
 			actor = 205020,
 			nameColor = "#a9f548",
-			say = "唔唔…我这是…睡着了吗",
+			say = "……",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -438,7 +454,7 @@ return {
 			dir = 1,
 			actor = 204010,
 			nameColor = "#a9f548",
-			say = "真，真的吗！那，那可是那个厌战前辈啊！",
+			say = "Y-you're having a laugh! It can't have been our Warspite!",
 			flashout = {
 				dur = 0.2,
 				black = true,
@@ -471,7 +487,7 @@ return {
 			dir = 1,
 			actor = 205010,
 			nameColor = "#a9f548",
-			say = "是真的！本王亲眼看到她在办公室里和指挥官一起趴着！",
+			say = "We speak the truth! We saw it with our very own royal eyes. Warspite laid up with the Commander in the executive office!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -497,7 +513,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "虽然本王已经猜到了…但，但是没有想到，事情会发展得如此之快…",
+			say = "Now naturally we already had such suspicions, but never did we think things would progress so quickly...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -513,7 +529,7 @@ return {
 			dir = 1,
 			actor = 205010,
 			nameColor = "#a9f548",
-			say = "明明是本王的贴身侍卫…等接下来本王见到了她，一定要问个明白！",
+			say = "As our personal royal guard, she will of course deliver a satisfactory explanation!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -539,7 +555,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呵呵…这可真是……",
+			say = "Oh, my goodness...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -555,7 +571,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "坚硬的战士也有少女的一面吗，哈哈",
+			say = "Seems our hardened warrior has a tender side to her. Hehe...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -571,7 +587,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（唔，竟然变成这样的传闻了…得找个向女王陛下解释的说法才行…）",
+			say = "(Goodness, this rumor has gotten well out of hand... I need to clear this up with Her Majesty the Queen post haste...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -587,7 +603,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "（不过…我已经不会再动摇了）",
+			say = "(Not that it matters much, I suppose. No rumor can break me.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -603,7 +619,7 @@ return {
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "（哼，我可是厌战，我是不会让任何人阻挠我和指挥官的事情的！）",
+			say = "(For I am Warspite! Hah! Nothing can break the bond I have with the Commander!)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -725,10 +725,6 @@ slot0.isTestShip = function (slot0)
 end
 
 slot0.canUseTestShip = function (slot0, slot1)
-	if slot0.lockState == slot0.LOCK_STATE_LOCK then
-		return false
-	end
-
 	if slot0.testShip == slot0.TEST_SHIP_TYPE_1 then
 		return table.contains({
 			2,
@@ -858,7 +854,7 @@ slot0.getShipProperties = function (slot0)
 
 	if slot0:isBluePrintShip() then
 		for slot7, slot8 in pairs(slot3) do
-			slot1[slot7] = slot1[slot7] + slot8
+			slot1[slot7] = slot1[slot7] + calcFloor(slot8)
 		end
 
 		slot0:intimacyAdditions(slot1)
@@ -1170,17 +1166,13 @@ slot0.getProperties = function (slot0, slot1, slot2)
 			slot15 = slot15 + slot20:getAttrValueAddition(slot13, slot4, slot5)
 		end
 
-		if LOCK_EQUIP_DEVELOPMENT then
-			slot6[slot13] = slot6[slot13] + slot7[slot13]
-		else
-			slot16 = slot8[slot13] or 1
-			slot16 = slot14 + slot16
+		slot16 = slot8[slot13] or 1
+		slot16 = slot14 + slot16
 
-			if slot13 == AttributeType.Speed then
-				slot6[slot13] = slot6[slot13] * slot16 + slot15 + slot7[slot13]
-			else
-				slot6[slot13] = math.floor(math.floor(slot6[slot13]) * slot16) + slot15 + slot7[slot13]
-			end
+		if slot13 == AttributeType.Speed then
+			slot6[slot13] = slot6[slot13] * slot16 + slot15 + slot7[slot13]
+		else
+			slot6[slot13] = calcFloor(calcFloor(slot6[slot13]) * slot16) + slot15 + slot7[slot13]
 		end
 	end
 
@@ -1594,7 +1586,20 @@ slot0.canDestroyShip = function (slot0, slot1)
 	if slot0:isBluePrintShip() then
 		return false, i18n("blueprint_destory_tip")
 	elseif slot0:GetLockState() == Ship.LOCK_STATE_LOCK then
-		return false, i18n("ship_vo_locked")
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
+			content = i18n("confirm_unlock", slot0:getName()),
+			onYes = function ()
+				pg.m02:sendNotification(GAME.UPDATE_LOCK, {
+					ship_id_list = {
+						slot0.id
+					},
+					is_locked = slot1.LOCK_STATE_UNLOCK,
+					callback = GAME.UPDATE_LOCK
+				})
+			end
+		})
+
+		return false, nil
 	elseif slot0.inChapter or slot0.inWorld then
 		return false, i18n("word_shipState_fight")
 	elseif slot0.inClass then

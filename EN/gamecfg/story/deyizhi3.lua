@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"德意志的忧郁\n\n<size=45>三　不协调音</size>",
+					"The Cloudy Mask\n\n<size=45>Chapter 3: Dissonance</size>",
 					1
 				}
 			}
@@ -24,7 +24,7 @@ return {
 			bgm = "story-1",
 			actor = 203010,
 			nameColor = "#a9f548",
-			say = "那么现在公布本次演习炮击组的前二十名……",
+			say = "I shall now announce the exercise winners in descending order of performance.",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -52,7 +52,7 @@ return {
 			}
 		},
 		{
-			say = "仆人，看着吧，我可是天下闻名的装甲舰，一定会名列前茅的！",
+			say = "Listen closely, slave. Wait for the moment my name, Deutschland – the most magnificent armored ship in the world – is read aloud!",
 			side = 0,
 			bgName = "bg_story_outdoor",
 			dir = 1,
@@ -77,7 +77,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "第五名，罗德尼……",
+			say = "Fifth place: Rodney.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -93,7 +93,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……哼，看起来今天的状态不是很好，不过除了这些BIG7，我肯定不会输给别的战舰。",
+			say = "... Hmph, I was out of shape today. But no matter, the Big Seven are a class of their own, but I would never fall short to any other battleship type...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -109,7 +109,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "第十三名，伊丽莎白女王……",
+			say = "Thirteenth place: Queen Elizabeth.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -125,7 +125,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……",
+			say = "... Grrrr...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -141,7 +141,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "第二十名，{namecode:66}，{namecode:66}小姐也是唯一上榜的重巡，很厉害。",
+			say = "Twentieth place: Takao. Takao is the sole heavy cruiser that made it to the top 20 for this exercise. Let's give her a round of applause.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -157,7 +157,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "等等，我呢？！",
+			say = "Not so fast! What about me?!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -183,7 +183,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "德意志小姐吗……嗯……",
+			say = "Ah, Deutschland, let's see...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -194,7 +194,7 @@ return {
 			}
 		},
 		{
-			say = "虽然速度上接近一线水平，不过你的火力还有精准度都差了其他人不少呢。",
+			say = "You were faster than all others in the moving target shelling category, but there is room for improvement in your accuracy and firing posture.",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
@@ -219,7 +219,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "还要多多练习才行哦。",
+			say = "In my opinion, you could use some more training.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -233,7 +233,7 @@ return {
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
-			say = "伦敦说完就走开了。",
+			say = "London continues reading out names where she left off.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -245,7 +245,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "什么，练习？！那是低等生物才做的事，我可是……",
+			say = "Training is for dogs and circus animals! I'm perfect, I don't need to train...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -267,7 +267,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "我可是……",
+			say = "I don't... need to...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -293,7 +293,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "仆人，我其实很强对吧，我只是失手了对吧？！",
+			say = "Slave! I'm more powerful than anyone, aren't I?! Yes, I'm just in bad shape today! That's all it is, right?!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -314,23 +314,24 @@ return {
 			}
 		},
 		{
-			actor = 403040,
+			withoutActorName = true,
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
-			withoutActorName = true,
-			say = "德意志的眼中闪着泪花，但是，应该在这里欺骗她吗？",
+			actor = 403040,
+			nameColor = "#a9f548",
+			say = "She's on the brink of tears. I'd better...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			},
 			options = {
 				{
-					content = "沉默",
+					content = "Say nothing.",
 					flag = 1
 				},
 				{
-					content = "说谎哄哄德意志",
+					content = "Flatter her so she'll calm down.",
 					flag = 2
 				}
 			}
@@ -341,7 +342,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "是吗，原来是这样……我知道了……",
+			say = "So that's how it is... Now I see...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -357,7 +358,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "原来我一点也不强，只是她们骗我我很强而已……",
+			say = "I'm not actually powerful at all... Everyone's just been playing one big trick on me...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -373,7 +374,7 @@ return {
 			dir = 1,
 			actor = 403040,
 			nameColor = "#a9f548",
-			say = "呵呵……",
+			say = "Ahah, eheheh, hahahahaha...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -393,7 +394,7 @@ return {
 			},
 			options = {
 				{
-					content = "出声喊住德意志",
+					content = "Call out to her.",
 					flag = 1
 				}
 			}
@@ -403,7 +404,7 @@ return {
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			blackBg = true,
-			say = "德意志像是没有听到一样，有些失魂落魄地离开了。",
+			say = "She looks depressed as she runs off on her own somewhere without answering my call, like she didn't even hear me.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -68,6 +68,28 @@ function setTextEN(slot0, slot1)
 	slot0:GetComponent(typeof(Text)).text = tostring(splitByWordEN(slot1, slot0))
 end
 
+function setBestFitTextEN(slot0, slot1, slot2)
+	if not slot1 then
+		return
+	end
+
+	slot4 = slot0:GetComponent(typeof(Text))
+	slot5 = slot2 or 20
+	slot6 = slot0:GetComponent(typeof(RectTransform)).rect.width
+	slot7 = slot0.GetComponent(typeof(RectTransform)).rect.height
+
+	while slot5 > 0 do
+		slot4.fontSize = slot5
+		slot4.text = tostring(splitByWordEN(slot1, slot0))
+
+		if slot4.preferredWidth <= slot6 and slot4.preferredHeight <= slot7 then
+			break
+		end
+
+		slot5 = slot5 - 1
+	end
+end
+
 function setTextFont(slot0, slot1)
 	if not slot1 then
 		return

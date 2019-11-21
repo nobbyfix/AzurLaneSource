@@ -79,8 +79,8 @@ function slot5(slot0, slot1)
 			setActive(slot0._tf, true)
 
 			slot0.foodName.text = slot1:getConfig("name")
-			slot0.foodDesc.text = slot1:getConfig("display")
 
+			setBestFitTextEN(slot0.foodDesc.gameObject, slot1:getConfig("display"), 28)
 			updateItem(slot0.foodItem, slot1)
 
 			slot0.total.text = slot0[slot1:getConfig("shop_id")].resource_num * 1

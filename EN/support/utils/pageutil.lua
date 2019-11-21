@@ -1,7 +1,6 @@
 PageUtil = class("PageUtil")
-this = PageUtil
 
-this.Ctor = function (slot0, slot1, slot2, slot3, slot4)
+PageUtil.Ctor = function (slot0, slot1, slot2, slot3, slot4)
 	pg.DelegateInfo.New(slot0)
 
 	slot0._leftBtn = slot1
@@ -34,23 +33,23 @@ this.Ctor = function (slot0, slot1, slot2, slot3, slot4)
 	slot0:setMaxNum(-1)
 end
 
-this.setAddNum = function (slot0, slot1)
+PageUtil.setAddNum = function (slot0, slot1)
 	slot0._addNum = slot1
 end
 
-this.setDefaultNum = function (slot0, slot1)
+PageUtil.setDefaultNum = function (slot0, slot1)
 	slot0._defaultNum = slot1
 
 	slot0:setCurNum(slot0._defaultNum)
 end
 
-this.setMaxNum = function (slot0, slot1)
+PageUtil.setMaxNum = function (slot0, slot1)
 	slot0._maxNum = slot1
 
 	setActive(slot0._maxBtn, slot0._maxNum > 0)
 end
 
-this.setCurNum = function (slot0, slot1)
+PageUtil.setCurNum = function (slot0, slot1)
 	slot0._curNum = slot1
 
 	setText(slot0._numTxt, slot0._curNum)
@@ -60,12 +59,12 @@ this.setCurNum = function (slot0, slot1)
 	end
 end
 
-this.setNumUpdate = function (slot0, slot1)
+PageUtil.setNumUpdate = function (slot0, slot1)
 	slot0._numUpdate = slot1
 end
 
-this.getCurNum = function (slot0)
+PageUtil.getCurNum = function (slot0)
 	return slot0._curNum
 end
 
-return this
+return PageUtil

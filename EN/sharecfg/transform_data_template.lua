@@ -12273,11 +12273,11 @@ The effects of fully retrofitting this ship:
 		icon = "mt_yellow",
 		skill_id = 0,
 		descrip = [[
-近代化改造完成
+The effects of fully retrofitting this ship:
 
-改造后<color=#92fc63>第一个【设备】</color>栏位增加可装备设备类型<color=#92fc63>【反潜机】</color>
-改造后解锁<color=#92fc63>【反潜】</color>属性
-改造后<color=#92fc63>【神射手】</color>技能将升级为<color=#92fc63>【神射手·改】</color>]],
+This ship becomes able to equip <color=#92fc63>ASW aircraft</color> in its <color=#92fc63>first Auxiliary gear slot</color>, 
+its <color=#92fc63>ASW stat</color> will increase, 
+and its skill <color=#92fc63>"Divine Marksman"</color> will receive an upgrade. ]],
 		condition_id = {
 			13106,
 			13109

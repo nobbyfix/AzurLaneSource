@@ -10074,6 +10074,37 @@ pg.ship_skin_expression = {
 		battle = "2",
 		login = "1",
 		detail = "2"
+	},
+	gelasige_2 = {
+		default = "",
+		feeling3 = "3",
+		main_1 = "1",
+		touch = "1",
+		expedition = "3",
+		win_mvp = "4",
+		home = "4",
+		unlock = "",
+		touch2 = "2",
+		mail = "",
+		painting = "gelasige_2",
+		mission = "1",
+		main_2 = "2",
+		lose = "2",
+		main_3 = "3",
+		feeling1 = "",
+		profile = "",
+		feeling4 = "2",
+		feeling5 = "1",
+		propose = "1",
+		hp_warning = "",
+		upgrade = "4",
+		mission_complete = "3",
+		headtouch = "",
+		feeling2 = "1",
+		skill = "",
+		battle = "",
+		login = "4",
+		detail = "1"
 	}
 }
 

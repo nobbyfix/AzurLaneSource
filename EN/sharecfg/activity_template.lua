@@ -528,7 +528,7 @@ pg.activity_template = {
 		type = 54,
 		login_pop = 0,
 		config_id = 1020,
-		is_show = 14,
+		is_show = 1,
 		config_client = "",
 		id = 1020,
 		config_data = {},
@@ -569,7 +569,7 @@ pg.activity_template = {
 		type = 54,
 		login_pop = 0,
 		config_id = 1021,
-		is_show = 14,
+		is_show = 1,
 		config_client = "",
 		id = 1021,
 		config_data = {},
@@ -610,7 +610,7 @@ pg.activity_template = {
 		type = 54,
 		login_pop = 0,
 		config_id = 1022,
-		is_show = 14,
+		is_show = 1,
 		config_client = "",
 		id = 1022,
 		config_data = {},
@@ -651,7 +651,7 @@ pg.activity_template = {
 		type = 54,
 		login_pop = 0,
 		config_id = 1023,
-		is_show = 14,
+		is_show = 1,
 		config_client = "",
 		id = 1023,
 		config_data = {},
@@ -692,7 +692,7 @@ pg.activity_template = {
 		type = 54,
 		login_pop = 0,
 		config_id = 1024,
-		is_show = 14,
+		is_show = 1,
 		config_client = "",
 		id = 1024,
 		config_data = {},
@@ -733,7 +733,7 @@ pg.activity_template = {
 		type = 54,
 		login_pop = 0,
 		config_id = 1025,
-		is_show = 14,
+		is_show = 1,
 		config_client = "",
 		id = 1025,
 		config_data = {},
@@ -774,7 +774,7 @@ pg.activity_template = {
 		type = 54,
 		login_pop = 0,
 		config_id = 1026,
-		is_show = 14,
+		is_show = 1,
 		config_client = "",
 		id = 1026,
 		config_data = {},
@@ -815,7 +815,7 @@ pg.activity_template = {
 		type = 54,
 		login_pop = 0,
 		config_id = 1027,
-		is_show = 14,
+		is_show = 1,
 		config_client = "",
 		id = 1027,
 		config_data = {},
@@ -8946,11 +8946,11 @@ pg.activity_template = {
 		}
 	},
 	[30259] = {
-		mark = 20191205,
-		title_res_tag = "",
+		mark = 20191211,
+		title_res_tag = "tebiexunlian",
 		type = 50,
 		login_pop = 0,
-		config_id = 1,
+		config_id = 3,
 		is_show = 38,
 		config_data = "",
 		bg = "",
@@ -8961,7 +8961,7 @@ pg.activity_template = {
 				{
 					2019,
 					11,
-					22
+					21
 				},
 				{
 					0,
@@ -8985,7 +8985,7 @@ pg.activity_template = {
 		config_client = {
 			{
 				8,
-				59761,
+				59938,
 				1
 			},
 			{
@@ -9010,7 +9010,7 @@ pg.activity_template = {
 				{
 					2019,
 					11,
-					22
+					21
 				},
 				{
 					0,
@@ -9945,6 +9945,54 @@ pg.activity_template = {
 			{}
 		}
 	},
+	[30534] = {
+		mark = 20191121,
+		title_res_tag = "",
+		time = "always",
+		type = 17,
+		login_pop = 0,
+		config_id = 5201,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 30534,
+		config_data = {
+			0,
+			{}
+		}
+	},
+	[30535] = {
+		mark = 20191121,
+		title_res_tag = "",
+		time = "always",
+		type = 17,
+		login_pop = 0,
+		config_id = 5231,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 30535,
+		config_data = {
+			0,
+			{}
+		}
+	},
+	[30536] = {
+		mark = 20191121,
+		title_res_tag = "",
+		time = "always",
+		type = 17,
+		login_pop = 0,
+		config_id = 5411,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 30536,
+		config_data = {
+			0,
+			{}
+		}
+	},
 	all = {
 		1,
 		2,
@@ -10278,7 +10326,10 @@ pg.activity_template = {
 		30530,
 		30531,
 		30532,
-		30533
+		30533,
+		30534,
+		30535,
+		30536
 	}
 }
 

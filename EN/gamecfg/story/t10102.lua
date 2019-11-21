@@ -5,7 +5,7 @@ return {
 	scripts = {
 		{
 			side = 2,
-			actorName = "大黄蜂",
+			actorName = "Hornet",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "Aya! A diversion. I was too careless! All these new Commanders are monsters!",
@@ -42,7 +42,7 @@ return {
 		},
 		{
 			side = 1,
-			actorName = "大黄蜂",
+			actorName = "Hornet",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "Hornet lost, but just this once! My two sisters are even more powerful than me. Test yourself against them in the future if you dare!",
@@ -61,7 +61,7 @@ return {
 		},
 		{
 			side = 1,
-			actorName = "大黄蜂",
+			actorName = "Hornet",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "Sadly, my sisters are out on a mission. It's a pity that you can't meet each other today!",
@@ -105,7 +105,7 @@ return {
 			nameColor = "#ff0000",
 			side = 1,
 			dir = -1,
-			actorName = "大黄蜂",
+			actorName = "Hornet",
 			say = "What's going on? The harbor is under attack? Could it be the Sirens?",
 			shake = {
 				speed = 1,
@@ -142,7 +142,7 @@ return {
 			side = 1,
 			nameColor = "#ff0000",
 			dir = -1,
-			actorName = "大黄蜂",
+			actorName = "Hornet",
 			say = "It's time that we part ways. Remember, we'll use live ammo next time! No more drills for you, Commander.",
 			shake = {
 				speed = 1,
@@ -159,7 +159,7 @@ return {
 		},
 		{
 			side = 1,
-			actorName = "大黄蜂",
+			actorName = "Hornet",
 			dir = -1,
 			nameColor = "#ff0000",
 			say = "For the Eagles! For freedom!",

@@ -1,16 +1,16 @@
 pg = pg or {}
 pg.activity_banner = {
 	{
-		param = "30267",
+		param = "30259",
 		type = 3,
 		id = 1,
-		pic = "temp3",
+		pic = "temp1",
 		time = {
 			{
 				{
 					2019,
 					11,
-					14
+					21
 				},
 				{
 					0,
@@ -22,7 +22,146 @@ pg.activity_banner = {
 				{
 					2019,
 					12,
-					15
+					4
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	{
+		param = "30264",
+		type = 3,
+		id = 2,
+		pic = "temp7",
+		time = {
+			{
+				{
+					2019,
+					11,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					4
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	{
+		type = 2,
+		id = 3,
+		pic = "temp5",
+		param = {
+			"scene skinshop",
+			{}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					4
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	{
+		type = 2,
+		id = 4,
+		pic = "temp8",
+		param = {
+			"scene charge",
+			{
+				wrap = 4
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					4
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	{
+		type = 2,
+		id = 5,
+		pic = "temp2",
+		param = {
+			"scene level",
+			{}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					22
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					1
 				},
 				{
 					23,
@@ -35,7 +174,7 @@ pg.activity_banner = {
 	{
 		param = "30268",
 		type = 3,
-		id = 2,
+		id = 6,
 		pic = "temp13",
 		time = {
 			{
@@ -67,8 +206,8 @@ pg.activity_banner = {
 	{
 		param = "30265",
 		type = 3,
-		id = 3,
-		pic = "temp5",
+		id = 7,
+		pic = "temp6",
 		time = {
 			{
 				{
@@ -96,48 +235,14 @@ pg.activity_banner = {
 			}
 		}
 	},
-	{
-		type = 2,
-		id = 4,
-		pic = "temp2",
-		param = {
-			"scene get boat",
-			{
-				projectName = "light"
-			}
-		},
-		time = {
-			{
-				{
-					2019,
-					11,
-					14
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					21
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
-	},
 	all = {
 		1,
 		2,
 		3,
-		4
+		4,
+		5,
+		6,
+		7
 	}
 }
 

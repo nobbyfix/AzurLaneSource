@@ -233,12 +233,15 @@ slot0.didEnter = function (slot0)
 
 				slot0:piecelistALLTtoF()
 				setActive(slot0.selectview, true)
-				setActive.song_btns[slot0.game_music]:GetComponent(typeof(Animator)):Play("plate_out")
 
-				setActive.song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play.game_playingflag = false
+				GetOrAddComponent(slot0.selectview, "CanvasGroup").blocksRaycasts = true
 
-				setActive.song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play:loadAndPlayMusic()
-				setActive.song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play.loadAndPlayMusic:rec_scorce()
+				GetOrAddComponent(slot0.selectview, "CanvasGroup").song_btns[slot0.game_music]:GetComponent(typeof(Animator)):Play("plate_out")
+
+				GetOrAddComponent(slot0.selectview, "CanvasGroup").song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play.game_playingflag = false
+
+				GetOrAddComponent(slot0.selectview, "CanvasGroup").song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play:loadAndPlayMusic()
+				GetOrAddComponent(slot0.selectview, "CanvasGroup").song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play.loadAndPlayMusic:rec_scorce()
 			end
 		})
 	end, SFX_UI_CLICK)
@@ -292,6 +295,8 @@ slot0.didEnter = function (slot0)
 	end, SFX_UI_CLICK)
 	slot0:addRingDragListenter()
 	setActive(slot0.selectview, true)
+
+	GetOrAddComponent(slot0.selectview, "CanvasGroup").blocksRaycasts = true
 end
 
 slot0.onBackPressed = function (slot0)
@@ -1665,6 +1670,8 @@ slot0.showSelevtView = function (slot0)
 	onButton(slot0, slot2, function ()
 		slot0:Play("selectExitAnim")
 		slot0:game_start()
+
+		GetOrAddComponent(slot0.selectview, "CanvasGroup").blocksRaycasts = false
 	end, SFX_UI_CONFIRM)
 	onButton(slot0, slot3:Find("easy"), function ()
 		slot0.game_dgree = 1
@@ -1990,11 +1997,14 @@ slot0.locadScoreView = function (slot0)
 		setActive.timer:Stop()
 		setActive.timer.Stop:piecelistALLTtoF()
 		setActive(slot0.selectview, true)
-		setActive:updatSelectview()
-		setActive.updatSelectview.song_btns[slot0.game_music]:GetComponent(typeof(Animator)):Play("plate_out")
-		setActive.updatSelectview.song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play:loadAndPlayMusic()
-		setActive.updatSelectview.song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play.loadAndPlayMusic:rec_scorce()
-		setActive.updatSelectview.song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play.loadAndPlayMusic.rec_scorce:setScoceview_pj("e")
+
+		GetOrAddComponent(slot0.selectview, "CanvasGroup").blocksRaycasts = true
+
+		GetOrAddComponent(slot0.selectview, "CanvasGroup"):updatSelectview()
+		GetOrAddComponent(slot0.selectview, "CanvasGroup").updatSelectview.song_btns[slot0.game_music]:GetComponent(typeof(Animator)):Play("plate_out")
+		GetOrAddComponent(slot0.selectview, "CanvasGroup").updatSelectview.song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play:loadAndPlayMusic()
+		GetOrAddComponent(slot0.selectview, "CanvasGroup").updatSelectview.song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play.loadAndPlayMusic:rec_scorce()
+		GetOrAddComponent(slot0.selectview, "CanvasGroup").updatSelectview.song_btns[slot0.game_music].GetComponent(typeof(Animator)).Play.loadAndPlayMusic.rec_scorce:setScoceview_pj("e")
 		retPaintingPrefab(slot0.scoreview:Find("paint"), slot0.painting_namelist[slot0.game_music])
 	end, SFX_UI_CLICK)
 	slot0:MyStoreDataToServer()

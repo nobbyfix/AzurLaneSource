@@ -1655,7 +1655,7 @@ pg.commander_skill_template = {
 			},
 			{
 				3,
-				"When assigned as the Staff Cat and when engaging an enemy Main Fleet: decreases the DMG your BBs, BCs, and BBVs take based on the Logistics stat. (Unlocks at Skill Lvl 3)"
+				"When assigned as the Staff Cat and when engaging an enemy Main Fleet: decreases the DMG your BBs, BCs, and BBVs take and increases their RLD based on the Logistics stat. (Unlocks at Skill Lvl 3)"
 			}
 		},
 		effect_tactic = {
@@ -1680,7 +1680,7 @@ pg.commander_skill_template = {
 			},
 			{
 				3,
-				"When assigned as the Staff Cat and when engaging an enemy Main Fleet: decreases the DMG your BBs, BCs, and BBVs take based on the Logistics stat. (Unlocks at Skill Lvl 3)"
+				"When assigned as the Staff Cat and when engaging an enemy Main Fleet: decreases the DMG your BBs, BCs, and BBVs take and increases their RLD based on the Logistics stat. (Unlocks at Skill Lvl 3)"
 			}
 		},
 		effect_tactic = {
@@ -1706,7 +1706,7 @@ pg.commander_skill_template = {
 			},
 			{
 				3,
-				"When assigned as the Staff Cat and when engaging an enemy Main Fleet: decreases the DMG your BBs, BCs, and BBVs take based on the Logistics stat."
+				"When assigned as the Staff Cat and when engaging an enemy Main Fleet: decreases the DMG your BBs, BCs, and BBVs take and increases their RLD based on the Logistics stat."
 			}
 		},
 		effect_tactic = {
