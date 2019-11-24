@@ -854,8 +854,8 @@ function slot1(slot0)
 				slot8 = slot1
 				slot9 = slot7
 				slot10 = slot0.mainContainer
-				slot11 = Fleet
-				slot11 = slot11.MAIN
+				slot11 = TeamType
+				slot11 = slot11.Main
 
 				slot8(slot9, slot10, slot11)
 			end
@@ -877,8 +877,8 @@ function slot1(slot0)
 				slot0 = slot0.emit
 				slot2 = MilitaryExerciseMediator
 				slot2 = slot2.OPEN_DOCKYARD
-				slot3 = Fleet
-				slot3 = slot3.MAIN
+				slot3 = TeamType
+				slot3 = slot3.Main
 				slot4 = 0
 
 				slot0(slot1, slot2, slot3, slot4)
@@ -907,8 +907,8 @@ function slot1(slot0)
 				slot8 = slot1
 				slot9 = slot7
 				slot10 = slot0.vanguardContainer
-				slot11 = Fleet
-				slot11 = slot11.VANGUARD
+				slot11 = TeamType
+				slot11 = slot11.Vanguard
 
 				slot8(slot9, slot10, slot11)
 			end
@@ -930,8 +930,8 @@ function slot1(slot0)
 				slot0 = slot0.emit
 				slot2 = MilitaryExerciseMediator
 				slot2 = slot2.OPEN_DOCKYARD
-				slot3 = Fleet
-				slot3 = slot3.VANGUARD
+				slot3 = TeamType
+				slot3 = slot3.Vanguard
 				slot4 = 0
 
 				slot0(slot1, slot2, slot3, slot4)
@@ -1357,8 +1357,8 @@ function slot1(slot0, slot1)
 	slot8 = slot8(slot9, slot10)
 	slot10 = slot3
 	slot9 = slot3.GetGearScoreSum
-	slot11 = Fleet
-	slot11 = slot11.MAIN
+	slot11 = TeamType
+	slot11 = slot11.Main
 
 	slot7(slot8, slot9(slot10, slot11))
 
@@ -1369,8 +1369,8 @@ function slot1(slot0, slot1)
 	slot8 = slot8(slot9, slot10)
 	slot10 = slot3
 	slot9 = slot3.GetGearScoreSum
-	slot11 = Fleet
-	slot11 = slot11.VANGUARD
+	slot11 = TeamType
+	slot11 = slot11.Vanguard
 
 	slot7(slot8, slot9(slot10, slot11))
 

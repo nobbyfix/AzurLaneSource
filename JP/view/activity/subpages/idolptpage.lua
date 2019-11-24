@@ -210,24 +210,32 @@ function slot1(slot0)
 
 			if not slot0 then
 				slot0 = slot0
+				slot0 = slot0.linkAct
 				slot1 = slot0
-				slot0 = slot0.emit
-				slot2 = ActivityMediator
-				slot2 = slot2.OPEN_LAYER
-				slot3 = Context
-				slot3 = slot3.New
-				slot4 = {}
-				slot5 = InstagramLayer
-				slot4.viewComponent = slot5
-				slot5 = InstagramMediator
-				slot4.mediator = slot5
-				slot5 = {}
-				slot6 = ActivityConst
-				slot6 = slot6.IDOL_INS_ID
-				slot5.id = slot6
-				slot4.data = slot5
+				slot0 = slot0.ExistMsg
+				slot0 = slot0(slot1)
 
-				slot0(slot1, slot2, slot3(slot4))
+				if slot0 then
+					slot0 = slot0
+					slot1 = slot0
+					slot0 = slot0.emit
+					slot2 = ActivityMediator
+					slot2 = slot2.OPEN_LAYER
+					slot3 = Context
+					slot3 = slot3.New
+					slot4 = {}
+					slot5 = InstagramLayer
+					slot4.viewComponent = slot5
+					slot5 = InstagramMediator
+					slot4.mediator = slot5
+					slot5 = {}
+					slot6 = ActivityConst
+					slot6 = slot6.IDOL_INS_ID
+					slot5.id = slot6
+					slot4.data = slot5
+
+					slot0(slot1, slot2, slot3(slot4))
+				end
 			end
 		else
 			slot0 = pg

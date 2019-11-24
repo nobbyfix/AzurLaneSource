@@ -29,6 +29,7 @@ slot0.init = function (slot0)
 	slot0.version:GetComponent("Text").text = "ver " .. UpdateMgr.Inst.currentVersion:ToString()
 	slot0.bgLay = slot0:findTF("bg_lay")
 	slot0.accountBtn = slot0:findTF("bg_lay/buttons/account_button")
+	slot0.repairBtn = slot0:findTF("repair_button")
 	slot0.chInfo = slot0:findTF("background/info")
 
 	setActive(slot0.chInfo, PLATFORM_CODE == PLATFORM_CH)
@@ -127,6 +128,9 @@ slot0.switchSubView = function (slot0, slot1)
 	for slot5, slot6 in ipairs(slot0.subViewList) do
 		if isa(slot6, BaseSubView) then
 			if table.contains(slot1, slot5) then
+				slot6:AddLoadedCallback(function ()
+					slot0.repairBtn:SetAsLastSibling()
+				end)
 				slot6:Load()
 				slot6:ActionInvoke("Show")
 			elseif slot6:GetLoaded() and slot6:isShowing() then
@@ -146,6 +150,7 @@ slot0.switchSubView = function (slot0, slot1)
 	end
 
 	slot0.userAgreenTF:SetAsLastSibling()
+	slot0.repairBtn:SetAsLastSibling()
 end
 
 slot0.onBackPressed = function (slot0)
@@ -286,7 +291,22 @@ slot0.didEnter = function (slot0)
 		end
 	end, SFX_MAIN)
 
-	function slot1()
+	slot1 = Application.persistentDataPath .. "/hashes.csv"
+
+	setActive(slot0.repairBtn, PLATFORM_CODE ~= PLATFORM_JP)
+
+	if isActive(slot0.repairBtn) then
+		onButton(slot0, slot0.repairBtn, function ()
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				content = i18n("resource_verify_warn"),
+				onYes = function ()
+					resourceVerify()
+				end
+			})
+		end)
+	end
+
+	function slot2()
 		if pg.SdkMgr.GetInstance():GetLoginType() == LoginType.PLATFORM then
 			pg.SdkMgr.GetInstance():LoginSdk()
 		elseif slot0 == LoginType.PLATFORM_TENCENT then

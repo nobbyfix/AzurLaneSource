@@ -50,6 +50,7 @@ slot0.register = function (slot0)
 			onSelected = function (slot0)
 				slot0.contextData.materialShipIds = slot0
 			end,
+			mode = DockyardScene.MODE_REMOULD,
 			confirmSelect = function (slot0, slot1, slot2)
 				if not _.all(slot3(slot0, slot0), function (slot0)
 					return slot0 == ""

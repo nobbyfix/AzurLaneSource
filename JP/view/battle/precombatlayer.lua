@@ -46,8 +46,8 @@ slot0.init = function (slot0)
 	slot0._gridFrame = slot1:Find("mask/GridFrame")
 
 	for slot5 = 1, 3, 1 do
-		slot0._gridTFs[Fleet.VANGUARD][slot5] = slot0._gridFrame:Find("vanguard_" .. slot5)
-		slot0._gridTFs[Fleet.MAIN][slot5] = slot0._gridFrame:Find("main_" .. slot5)
+		slot0._gridTFs[TeamType.Vanguard][slot5] = slot0._gridFrame:Find("vanguard_" .. slot5)
+		slot0._gridTFs[TeamType.Main][slot5] = slot0._gridFrame:Find("main_" .. slot5)
 	end
 
 	slot0._nextPage = slot0:findTF("middle/nextPage")
@@ -220,8 +220,8 @@ end
 
 slot0.UpdateFleetView = function (slot0, slot1)
 	slot0:displayFleetInfo()
-	slot0:resetGrid(Fleet.VANGUARD)
-	slot0:resetGrid(Fleet.MAIN)
+	slot0:resetGrid(TeamType.Vanguard)
+	slot0:resetGrid(TeamType.Main)
 	SetActive(slot0._gridTFs[TeamType.Main][1]:Find("flag"), true)
 
 	if slot1 then
@@ -315,8 +315,8 @@ slot0.didEnter = function (slot0)
 		slot0:switchToEditMode()
 
 		if slot0._characterList then
-			slot0:enabledTeamCharacter(Fleet.VANGUARD, true)
-			slot0:enabledTeamCharacter(Fleet.MAIN, true)
+			slot0:enabledTeamCharacter(TeamType.Vanguard, true)
+			slot0:enabledTeamCharacter(TeamType.Main, true)
 		end
 
 		slot0:setAllCharacterPos(false)
@@ -370,15 +370,15 @@ slot0.swtichToPreviewMode = function (slot0)
 
 	setActive(slot0._checkBtn:Find("save"), false)
 	setActive(slot0._checkBtn:Find("edit"), true)
-	slot0:resetGrid(Fleet.VANGUARD)
-	slot0:resetGrid(Fleet.MAIN)
+	slot0:resetGrid(TeamType.Vanguard)
+	slot0:resetGrid(TeamType.Main)
 	slot0:setAllCharacterPos(false)
 	onButton(slot0, slot0._checkBtn, function ()
 		slot0:switchToEditMode()
 
 		if slot0.switchToEditMode._characterList then
-			slot0:enabledTeamCharacter(Fleet.VANGUARD, true)
-			slot0.enabledTeamCharacter:enabledTeamCharacter(Fleet.MAIN, true)
+			slot0:enabledTeamCharacter(TeamType.Vanguard, true)
+			slot0.enabledTeamCharacter:enabledTeamCharacter(TeamType.Main, true)
 		end
 
 		slot0:setAllCharacterPos(false)
@@ -387,8 +387,8 @@ slot0.swtichToPreviewMode = function (slot0)
 	slot0:SetFleetStepper()
 
 	if slot0._characterList then
-		slot0:enabledTeamCharacter(Fleet.VANGUARD, false)
-		slot0:enabledTeamCharacter(Fleet.MAIN, false)
+		slot0:enabledTeamCharacter(TeamType.Vanguard, false)
+		slot0:enabledTeamCharacter(TeamType.Main, false)
 	end
 end
 
@@ -411,8 +411,8 @@ slot0.switchToEditMode = function (slot0)
 	end, SFX_CONFIRM)
 
 	if slot0.contextData.system ~= SYSTEM_HP_SHARE_ACT_BOSS and slot0.contextData.system ~= SYSTEM_ACT_BOSS and slot0.contextData.system ~= SYSTEM_BOSS_EXPERIMENT then
-		slot0:EnableAddGrid(Fleet.MAIN)
-		slot0:EnableAddGrid(Fleet.VANGUARD)
+		slot0:EnableAddGrid(TeamType.Main)
+		slot0:EnableAddGrid(TeamType.Vanguard)
 	end
 
 	local function slot1(slot0)
@@ -445,8 +445,8 @@ slot0.switchToShiftMode = function (slot0, slot1, slot2)
 	slot0._checkBtn:GetComponent("Button").interactable = false
 
 	for slot6 = 1, 3, 1 do
-		setActive(slot0._gridTFs[Fleet.VANGUARD][slot6].Find(slot7, "tip"), false)
-		setActive(slot0._gridTFs[Fleet.MAIN][slot6].Find(slot8, "tip"), false)
+		setActive(slot0._gridTFs[TeamType.Vanguard][slot6].Find(slot7, "tip"), false)
+		setActive(slot0._gridTFs[TeamType.Main][slot6].Find(slot8, "tip"), false)
 		setActive(slot0._gridTFs[slot2][slot6]:Find("shadow"), false)
 	end
 
@@ -595,8 +595,8 @@ slot0.loadAllCharacter = function (slot0)
 		end
 	end
 
-	slot3(slot0._currentFleetVO.vanguardShips, Fleet.VANGUARD)
-	slot3(slot0._currentFleetVO.mainShips, Fleet.MAIN)
+	slot3(slot0._currentFleetVO.vanguardShips, TeamType.Vanguard)
+	slot3(slot0._currentFleetVO.mainShips, TeamType.Main)
 	pg.UIMgr.GetInstance():LoadingOn()
 	parallelAsync({}, function (slot0)
 		pg.UIMgr.GetInstance():LoadingOff()
@@ -605,11 +605,11 @@ end
 
 slot0.setAllCharacterPos = function (slot0, slot1)
 	for slot5, slot6 in ipairs(slot0._characterList.vanguard) do
-		slot0:setCharacterPos(Fleet.VANGUARD, slot5, slot6, slot1)
+		slot0:setCharacterPos(TeamType.Vanguard, slot5, slot6, slot1)
 	end
 
 	for slot5, slot6 in ipairs(slot0._characterList.main) do
-		slot0:setCharacterPos(Fleet.MAIN, slot5, slot6, slot1)
+		slot0:setCharacterPos(TeamType.Main, slot5, slot6, slot1)
 	end
 
 	slot0:sortSiblingIndex()
@@ -722,9 +722,9 @@ slot0.sortSiblingIndex = function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #1 7-18, warpins: 1 ---
-		slot4 = slot0._characterList[Fleet.VANGUARD][slot1]
+		slot4 = slot0._characterList[TeamType.Vanguard][slot1]
 
-		if slot0._characterList[Fleet.MAIN][slot1] then
+		if slot0._characterList[TeamType.Main][slot1] then
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 19-26, warpins: 1 ---
@@ -1162,8 +1162,8 @@ slot0.displayFleetInfo = function (slot0)
 
 	setActive(slot0._popup, slot5 ~= SYSTEM_DUEL)
 	slot0.tweenNumText(slot0._costText, (pg.battle_cost_template[slot0.contextData.system].oil_cost == 0 and 0) or slot0._currentFleetVO:GetCostSum().oil)
-	slot0.tweenNumText(slot0._vanguardGS, slot0._currentFleetVO:GetGearScoreSum(Fleet.VANGUARD))
-	slot0.tweenNumText(slot0._mainGS, slot0._currentFleetVO:GetGearScoreSum(Fleet.MAIN))
+	slot0.tweenNumText(slot0._vanguardGS, slot0._currentFleetVO:GetGearScoreSum(TeamType.Vanguard))
+	slot0.tweenNumText(slot0._mainGS, slot0._currentFleetVO:GetGearScoreSum(TeamType.Main))
 
 	--- END OF BLOCK #0 ---
 
@@ -1463,8 +1463,8 @@ slot0.willExit = function (slot0)
 	-- Decompilation error in this vicinity:
 	--- BLOCK #2 21-49, warpins: 2 ---
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
-	slot0:recycleCharacterList(slot0._currentFleetVO.mainShips, slot0._characterList[Fleet.MAIN])
-	slot0:recycleCharacterList(slot0._currentFleetVO.vanguardShips, slot0._characterList[Fleet.VANGUARD])
+	slot0:recycleCharacterList(slot0._currentFleetVO.mainShips, slot0._characterList[TeamType.Main])
+	slot0:recycleCharacterList(slot0._currentFleetVO.vanguardShips, slot0._characterList[TeamType.Vanguard])
 
 	if slot0._resPanel then
 

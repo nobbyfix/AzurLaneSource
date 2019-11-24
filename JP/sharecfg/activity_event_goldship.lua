@@ -14,9 +14,17 @@ pg.activity_event_goldship = {
 		need_num = 7,
 		monopoly = {}
 	},
+	{
+		drop = 92127,
+		monopoly_drop = 0,
+		id = 3,
+		need_num = 7,
+		monopoly = {}
+	},
 	all = {
 		1,
-		2
+		2,
+		3
 	}
 }
 

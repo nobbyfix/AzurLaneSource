@@ -300,10 +300,25 @@ slot1 = {
 	[ActivityConst.MUSIC_FESTIVAL_ID] = {
 		className = "XiefeierIdolMusicPage",
 		uiName = "xiefeieridolmusicpage"
+	},
+	[ActivityConst.POCKY_LOGIN] = {
+		className = "PockyPage",
+		uiName = "pockypage"
+	},
+	[ActivityConst.POCKY_SKIN_LOGIN] = {
+		className = "PockySkinPage",
+		uiName = "PockySkinPage"
+	},
+	[ActivityConst.WARSPITE_TRANS] = {
+		className = "WarspiteTransformationPage",
+		uiName = "WarspiteTransformationPage"
 	}
 }
 slot2 = {
-	[ActivityConst.IDOL_INS_ID] = ActivityConst.IDOL_PT_ID
+	[ActivityConst.IDOL_INS_ID] = ActivityConst.IDOL_PT_ID,
+	[ActivityConst.POCKY_SKIN_PT] = ActivityConst.POCKY_SKIN_LOGIN,
+	[ActivityConst.POCKY_SKIN_TASKLIST] = ActivityConst.POCKY_SKIN_LOGIN,
+	[ActivityConst.POCKY_SKIN_FINAL] = ActivityConst.POCKY_SKIN_LOGIN
 }
 
 slot0.preload = function (slot0, slot1)

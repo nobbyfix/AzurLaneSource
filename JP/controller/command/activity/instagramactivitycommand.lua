@@ -1,8 +1,12 @@
 class("InstagramActivityCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	slot2 = slot1:getBody()
-	slot4 = getProxy(ActivityProxy).getActivityById(slot3, slot2.activity_id)
 
 	print(slot2.activity_id, slot2.cmd, slot2.arg1, slot2.arg2)
+
+	if getProxy(ActivityProxy).getActivityById(slot3, slot2.activity_id):OnlyDisplay() then
+		return
+	end
+
 	pg.ConnectionMgr.GetInstance():Send(11202, {
 		activity_id = slot2.activity_id,
 		cmd = slot2.cmd or 0,

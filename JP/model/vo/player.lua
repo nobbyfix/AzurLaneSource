@@ -47,6 +47,18 @@ end
 slot0.Ctor = function (slot0, slot1)
 	slot0.super.Ctor(slot0, slot1)
 
+	if slot0.character then
+		if type(slot2) == "number" then
+			slot0.character = slot2
+			slot0.characters = {
+				slot2
+			}
+		else
+			slot0.character = slot2[1]
+			slot0.characters = slot2
+		end
+	end
+
 	if not slot1 then
 		slot1 = pg.StoryMgr.GetInstance():GetStoryByName("index")
 	end
@@ -78,28 +90,28 @@ slot0.Ctor = function (slot0, slot1)
 	slot0.commanderBagMax = slot1.commander_bag_max
 	slot0.displayTrophyList = slot1.medal_id or {}
 	slot0.cdList = {}
-	slot2 = ipairs
-	slot3 = slot1.cd_list or {}
+	slot3 = ipairs
+	slot4 = slot1.cd_list or {}
 
-	for slot5, slot6 in slot2(slot3) do
-		slot0.cdList[slot6.key] = slot6.timestamp
+	for slot6, slot7 in slot3(slot4) do
+		slot0.cdList[slot7.key] = slot7.timestamp
 	end
 
 	slot0.commonFlagList = {}
-	slot2 = ipairs
-	slot3 = slot1.flag_list or {}
+	slot3 = ipairs
+	slot4 = slot1.flag_list or {}
 
-	for slot5, slot6 in slot2(slot3) do
-		slot0.commonFlagList[slot6] = true
+	for slot6, slot7 in slot3(slot4) do
+		slot0.commonFlagList[slot7] = true
 	end
 
 	slot0.registerTime = slot1.register_time
 	slot0.vipCards = {}
-	slot2 = ipairs
-	slot3 = slot1.card_list or {}
+	slot3 = ipairs
+	slot4 = slot1.card_list or {}
 
-	for slot5, slot6 in slot2(slot3) do
-		slot0.vipCards[VipCard.New(slot6).id] = VipCard.New(slot6)
+	for slot6, slot7 in slot3(slot4) do
+		slot0.vipCards[VipCard.New(slot7).id] = VipCard.New(slot7)
 	end
 
 	slot0:updateResources(slot1.resource_list)
@@ -113,41 +125,41 @@ slot0.Ctor = function (slot0, slot1)
 	slot0.storiesAgain = {}
 
 	if slot1.story_list then
-		for slot5, slot6 in pairs(slot1.story_list) do
-			if slot6 == 20008 then
-				slot6 = 1131
+		for slot6, slot7 in pairs(slot1.story_list) do
+			if slot7 == 20008 then
+				slot7 = 1131
 			end
 
-			if slot6 == 20009 then
-				slot6 = 1132
+			if slot7 == 20009 then
+				slot7 = 1132
 			end
 
-			if slot6 == 20010 then
-				slot6 = 1133
+			if slot7 == 20010 then
+				slot7 = 1133
 			end
 
-			if slot6 == 20011 then
-				slot6 = 1134
+			if slot7 == 20011 then
+				slot7 = 1134
 			end
 
-			if slot6 == 20012 then
-				slot6 = 1135
+			if slot7 == 20012 then
+				slot7 = 1135
 			end
 
-			if slot6 == 20013 then
-				slot6 = 1136
+			if slot7 == 20013 then
+				slot7 = 1136
 			end
 
-			if slot6 == 20014 then
-				slot6 = 1137
+			if slot7 == 20014 then
+				slot7 = 1137
 			end
 
-			if slot1[slot6] then
-				slot0.stories[slot6] = slot1[slot6]
+			if slot1[slot7] then
+				slot0.stories[slot7] = slot1[slot7]
 			end
 
-			if storyIndexAgain[slot6] then
-				slot0.storiesAgain[slot6] = storyIndexAgain[slot6]
+			if storyIndexAgain[slot7] then
+				slot0.storiesAgain[slot7] = storyIndexAgain[slot7]
 			end
 		end
 	end
@@ -168,6 +180,10 @@ end
 
 slot0.getAttireByType = function (slot0, slot1)
 	return slot0.attireInfo[slot1]
+end
+
+slot0.getRandomSecretary = function (slot0)
+	return slot0.characters[math.random(#slot0.characters)]
 end
 
 slot0.canModifyName = function (slot0)

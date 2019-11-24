@@ -7719,7 +7719,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41001] = {
-		display = "明石からのバレンタインプレゼン",
+		display = "明石からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -7751,7 +7751,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41002] = {
-		display = "汎用型ブリからのバレンタインプレゼン",
+		display = "汎用型ブリからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -7783,7 +7783,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41003] = {
-		display = "試作型ブリMKIIからのバレンタインプレゼン",
+		display = "試作型ブリMKIIからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -7815,7 +7815,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41004] = {
-		display = "カッシンからのバレンタインプレゼン",
+		display = "カッシンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -7847,7 +7847,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41005] = {
-		display = "ダウンズからのバレンタインプレゼン",
+		display = "ダウンズからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -7879,7 +7879,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41006] = {
-		display = "グリッドレイからのバレンタインプレゼン",
+		display = "グリッドレイからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -7911,7 +7911,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41007] = {
-		display = "クレイヴンからのバレンタインプレゼン",
+		display = "クレイヴンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -7943,7 +7943,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41008] = {
-		display = "マッコールからのバレンタインプレゼン",
+		display = "マッコールからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -7975,7 +7975,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41009] = {
-		display = "モーリーからのバレンタインプレゼン",
+		display = "モーリーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8007,7 +8007,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41010] = {
-		display = "フレッチャーからのバレンタインプレゼン",
+		display = "フレッチャーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8039,7 +8039,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41011] = {
-		display = "チャールズオースバーンからのバレンタインプレゼン",
+		display = "チャールズオースバーンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8071,7 +8071,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41012] = {
-		display = "サッチャーからのバレンタインプレゼン",
+		display = "サッチャーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8103,7 +8103,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41013] = {
-		display = "オーリックからのバレンタインプレゼン",
+		display = "オーリックからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8135,7 +8135,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41014] = {
-		display = "フートからのバレンタインプレゼン",
+		display = "フートからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8167,7 +8167,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41015] = {
-		display = "スペンスからのバレンタインプレゼン",
+		display = "スペンスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8199,7 +8199,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41016] = {
-		display = "ベンソンからのバレンタインプレゼン",
+		display = "ベンソンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8231,7 +8231,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41017] = {
-		display = "ラフィーからのバレンタインプレゼン",
+		display = "ラフィーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8263,7 +8263,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41018] = {
-		display = "シムスからのバレンタインプレゼン",
+		display = "シムスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8295,7 +8295,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41019] = {
-		display = "ハムマンからのバレンタインプレゼン",
+		display = "ハムマンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8327,7 +8327,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41020] = {
-		display = "エルドリッジからのバレンタインプレゼン",
+		display = "エルドリッジからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8359,7 +8359,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41021] = {
-		display = "ベイリーからのバレンタインプレゼン",
+		display = "ベイリーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8391,7 +8391,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41022] = {
-		display = "ラドフォードからのバレンタインプレゼン",
+		display = "ラドフォードからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8423,7 +8423,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41023] = {
-		display = "ジェンキンスからのバレンタインプレゼン",
+		display = "ジェンキンスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8455,7 +8455,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41024] = {
-		display = "ニコラスからのバレンタインプレゼン",
+		display = "ニコラスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8487,7 +8487,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41025] = {
-		display = "オマハからのバレンタインプレゼン",
+		display = "オマハからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8519,7 +8519,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41026] = {
-		display = "ローリーからのバレンタインプレゼン",
+		display = "ローリーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8551,7 +8551,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41027] = {
-		display = "ブルックリンからのバレンタインプレゼン",
+		display = "ブルックリンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8583,7 +8583,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41028] = {
-		display = "フェニックスからのバレンタインプレゼン",
+		display = "フェニックスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8615,7 +8615,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41029] = {
-		display = "ヘレナからのバレンタインプレゼン",
+		display = "ヘレナからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8647,7 +8647,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41030] = {
-		display = "アトランタからのバレンタインプレゼン",
+		display = "アトランタからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8679,7 +8679,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41031] = {
-		display = "ジュノーからのバレンタインプレゼン",
+		display = "ジュノーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8711,7 +8711,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41032] = {
-		display = "サンディエゴからのバレンタインプレゼン",
+		display = "サンディエゴからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8743,7 +8743,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41033] = {
-		display = "クリーブランドからのバレンタインプレゼン",
+		display = "クリーブランドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8775,7 +8775,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41034] = {
-		display = "リッチモンドからのバレンタインプレゼン",
+		display = "リッチモンドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8807,7 +8807,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41035] = {
-		display = "ホノルルからのバレンタインプレゼン",
+		display = "ホノルルからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8839,7 +8839,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41036] = {
-		display = "セントルイスからのバレンタインプレゼン",
+		display = "セントルイスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8871,7 +8871,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41037] = {
-		display = "ペンサコーラからのバレンタインプレゼン",
+		display = "ペンサコーラからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8903,7 +8903,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41038] = {
-		display = "ソルトレイクシティからのバレンタインプレゼン",
+		display = "ソルトレイクシティからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8935,7 +8935,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41039] = {
-		display = "ノーザンプトンからのバレンタインプレゼン",
+		display = "ノーザンプトンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8967,7 +8967,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41040] = {
-		display = "シカゴからのバレンタインプレゼン",
+		display = "シカゴからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -8999,7 +8999,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41041] = {
-		display = "ヒューストンからのバレンタインプレゼン",
+		display = "ヒューストンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9031,7 +9031,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41042] = {
-		display = "ポートランドからのバレンタインプレゼン",
+		display = "ポートランドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9063,7 +9063,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41043] = {
-		display = "インディアナポリスからのバレンタインプレゼン",
+		display = "インディアナポリスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9095,7 +9095,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41044] = {
-		display = "ウィチタからのバレンタインプレゼン",
+		display = "ウィチタからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9127,7 +9127,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41045] = {
-		display = "ネバダからのバレンタインプレゼン",
+		display = "ネバダからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9159,7 +9159,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41046] = {
-		display = "オクラホマからのバレンタインプレゼン",
+		display = "オクラホマからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9191,7 +9191,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41047] = {
-		display = "ペンシルバニアからのバレンタインプレゼン",
+		display = "ペンシルバニアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9223,7 +9223,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41048] = {
-		display = "アリゾナからのバレンタインプレゼン",
+		display = "アリゾナからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9255,7 +9255,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41049] = {
-		display = "テネシーからのバレンタインプレゼン",
+		display = "テネシーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9287,7 +9287,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41050] = {
-		display = "カリフォルニアからのバレンタインプレゼン",
+		display = "カリフォルニアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9319,7 +9319,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41051] = {
-		display = "コロラドからのバレンタインプレゼン",
+		display = "コロラドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9351,7 +9351,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41052] = {
-		display = "メリーランドからのバレンタインプレゼン",
+		display = "メリーランドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9383,7 +9383,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41053] = {
-		display = "ウェストバージニアからのバレンタインプレゼン",
+		display = "ウェストバージニアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9415,7 +9415,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41054] = {
-		display = "ノースカロライナからのバレンタインプレゼン",
+		display = "ノースカロライナからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9447,7 +9447,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41055] = {
-		display = "ワシントンからのバレンタインプレゼン",
+		display = "ワシントンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9479,7 +9479,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41056] = {
-		display = "サウスダコタからのバレンタインプレゼン",
+		display = "サウスダコタからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9511,7 +9511,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41057] = {
-		display = "ロングアイランドからのバレンタインプレゼン",
+		display = "ロングアイランドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9543,7 +9543,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41058] = {
-		display = "ボーグからのバレンタインプレゼン",
+		display = "ボーグからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9575,7 +9575,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41059] = {
-		display = "ラングレーからのバレンタインプレゼン",
+		display = "ラングレーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9607,7 +9607,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41060] = {
-		display = "レキシントンからのバレンタインプレゼン",
+		display = "レキシントンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9639,7 +9639,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41061] = {
-		display = "サラトガからのバレンタインプレゼン",
+		display = "サラトガからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9671,7 +9671,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41062] = {
-		display = "レンジャーからのバレンタインプレゼン",
+		display = "レンジャーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9703,7 +9703,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41063] = {
-		display = "ヨークタウンからのバレンタインプレゼン",
+		display = "ヨークタウンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9735,7 +9735,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41064] = {
-		display = "エンタープライズからのバレンタインプレゼン",
+		display = "エンタープライズからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9767,7 +9767,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41065] = {
-		display = "ホーネットからのバレンタインプレゼン",
+		display = "ホーネットからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9799,7 +9799,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41066] = {
-		display = "ワスプからのバレンタインプレゼン",
+		display = "ワスプからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9831,7 +9831,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41067] = {
-		display = "ヴェスタルからのバレンタインプレゼン",
+		display = "ヴェスタルからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9863,7 +9863,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41068] = {
-		display = "アマゾンからのバレンタインプレゼン",
+		display = "アマゾンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9895,7 +9895,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41069] = {
-		display = "アカスタからのバレンタインプレゼン",
+		display = "アカスタからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9927,7 +9927,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41070] = {
-		display = "アーデントからのバレンタインプレゼン",
+		display = "アーデントからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9959,7 +9959,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41071] = {
-		display = "ビーグルからのバレンタインプレゼン",
+		display = "ビーグルからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -9991,7 +9991,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41072] = {
-		display = "ブルドッグからのバレンタインプレゼン",
+		display = "ブルドッグからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10023,7 +10023,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41073] = {
-		display = "コメットからのバレンタインプレゼン",
+		display = "コメットからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10055,7 +10055,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41074] = {
-		display = "クレセントからのバレンタインプレゼン",
+		display = "クレセントからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10087,7 +10087,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41075] = {
-		display = "シグニットからのバレンタインプレゼン",
+		display = "シグニットからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10119,7 +10119,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41076] = {
-		display = "フォックスハウンドからのバレンタインプレゼン",
+		display = "フォックスハウンドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10151,7 +10151,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41077] = {
-		display = "フォーチュンからのバレンタインプレゼン",
+		display = "フォーチュンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10183,7 +10183,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41078] = {
-		display = "グローウォームからのバレンタインプレゼン",
+		display = "グローウォームからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10215,7 +10215,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41079] = {
-		display = "ジャベリンからのバレンタインプレゼン",
+		display = "ジャベリンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10247,7 +10247,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41080] = {
-		display = "ジュノーからのバレンタインプレゼン",
+		display = "ジュノーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10279,7 +10279,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41081] = {
-		display = "ヴァンパイアからのバレンタインプレゼン",
+		display = "ヴァンパイアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10311,7 +10311,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41082] = {
-		display = "ジュピターからのバレンタインプレゼン",
+		display = "ジュピターからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10343,7 +10343,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41083] = {
-		display = "ジャージーからのバレンタインプレゼン",
+		display = "ジャージーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10375,7 +10375,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41084] = {
-		display = "リアンダーからのバレンタインプレゼン",
+		display = "リアンダーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10407,7 +10407,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41085] = {
-		display = "アキリーズからのバレンタインプレゼン",
+		display = "アキリーズからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10439,7 +10439,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41086] = {
-		display = "エイジャックスからのバレンタインプレゼン",
+		display = "エイジャックスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10471,7 +10471,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41087] = {
-		display = "エディンバラからのバレンタインプレゼン",
+		display = "エディンバラからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10503,7 +10503,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41088] = {
-		display = "ベルファストからのバレンタインプレゼン",
+		display = "ベルファストからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10535,7 +10535,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41089] = {
-		display = "アリシューザからのバレンタインプレゼン",
+		display = "アリシューザからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10567,7 +10567,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41090] = {
-		display = "ガラティアからのバレンタインプレゼン",
+		display = "ガラティアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10599,7 +10599,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41091] = {
-		display = "オーロラからのバレンタインプレゼン",
+		display = "オーロラからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10631,7 +10631,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41092] = {
-		display = "ロンドンからのバレンタインプレゼン",
+		display = "ロンドンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10663,7 +10663,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41093] = {
-		display = "シュロップシャーからのバレンタインプレゼン",
+		display = "シュロップシャーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10695,7 +10695,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41094] = {
-		display = "ケントからのバレンタインプレゼン",
+		display = "ケントからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10727,7 +10727,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41095] = {
-		display = "サフォークからのバレンタインプレゼン",
+		display = "サフォークからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10759,7 +10759,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41096] = {
-		display = "ノーフォークからのバレンタインプレゼン",
+		display = "ノーフォークからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10791,7 +10791,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41097] = {
-		display = "ドーセットシャーからのバレンタインプレゼン",
+		display = "ドーセットシャーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10823,7 +10823,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41098] = {
-		display = "ヨークからのバレンタインプレゼン",
+		display = "ヨークからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10855,7 +10855,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41099] = {
-		display = "エクセターからのバレンタインプレゼン",
+		display = "エクセターからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10887,7 +10887,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41100] = {
-		display = "レナウンからのバレンタインプレゼン",
+		display = "レナウンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10919,7 +10919,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41101] = {
-		display = "レパルスからのバレンタインプレゼン",
+		display = "レパルスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10951,7 +10951,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41102] = {
-		display = "フッドからのバレンタインプレゼン",
+		display = "フッドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -10983,7 +10983,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41103] = {
-		display = "クイーン・エリザベスからのバレンタインプレゼン",
+		display = "クイーン·エリザベスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11015,7 +11015,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41104] = {
-		display = "ウォースパイトからのバレンタインプレゼン",
+		display = "ウォースパイトからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11047,7 +11047,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41105] = {
-		display = "ネルソンからのバレンタインプレゼン",
+		display = "ネルソンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11079,7 +11079,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41106] = {
-		display = "ロドニーからのバレンタインプレゼン",
+		display = "ロドニーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11111,7 +11111,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41107] = {
-		display = "プリンス・オブ・ウェールズからのバレンタインプレゼン",
+		display = "プリンス·オブ·ウェールズからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11143,7 +11143,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41108] = {
-		display = "ハーミーズからのバレンタインプレゼン",
+		display = "ハーミーズからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11175,7 +11175,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41109] = {
-		display = "ユニコーンからのバレンタインプレゼン",
+		display = "ユニコーンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11207,7 +11207,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41110] = {
-		display = "アーク・ロイヤルからのバレンタインプレゼン",
+		display = "アーク·ロイヤルからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11239,7 +11239,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41111] = {
-		display = "イラストリアスからのバレンタインプレゼン",
+		display = "イラストリアスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11271,7 +11271,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41112] = {
-		display = "グロリアスからのバレンタインプレゼン",
+		display = "グロリアスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11303,7 +11303,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41113] = {
-		display = "エレバスからのバレンタインプレゼン",
+		display = "エレバスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11335,7 +11335,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41114] = {
-		display = "テラーからのバレンタインプレゼン",
+		display = "テラーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11367,7 +11367,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41115] = {
-		display = "吹雪からのバレンタインプレゼン",
+		display = "吹雪からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11399,7 +11399,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41116] = {
-		display = "綾波からのバレンタインプレゼン",
+		display = "綾波からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11431,7 +11431,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41117] = {
-		display = "暁からのバレンタインプレゼン",
+		display = "暁からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11463,7 +11463,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41118] = {
-		display = "雷からのバレンタインプレゼン",
+		display = "雷からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11495,7 +11495,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41119] = {
-		display = "電からのバレンタインプレゼン",
+		display = "電からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11527,7 +11527,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41120] = {
-		display = "白露からのバレンタインプレゼン",
+		display = "白露からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11559,7 +11559,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41121] = {
-		display = "夕立からのバレンタインプレゼン",
+		display = "夕立からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11591,7 +11591,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41122] = {
-		display = "時雨からのバレンタインプレゼン",
+		display = "時雨からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11623,7 +11623,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41123] = {
-		display = "陽炎からのバレンタインプレゼン",
+		display = "陽炎からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11655,7 +11655,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41124] = {
-		display = "不知火からのバレンタインプレゼン",
+		display = "不知火からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11687,7 +11687,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41125] = {
-		display = "野分からのバレンタインプレゼン",
+		display = "野分からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11719,7 +11719,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41126] = {
-		display = "初春からのバレンタインプレゼン",
+		display = "初春からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11751,7 +11751,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41127] = {
-		display = "若葉からのバレンタインプレゼン",
+		display = "若葉からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11783,7 +11783,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41128] = {
-		display = "夕暮からのバレンタインプレゼン",
+		display = "夕暮からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11815,7 +11815,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41129] = {
-		display = "黒潮からのバレンタインプレゼン",
+		display = "黒潮からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11847,7 +11847,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41130] = {
-		display = "親潮からのバレンタインプレゼン",
+		display = "親潮からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11879,7 +11879,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41131] = {
-		display = "神風からのバレンタインプレゼン",
+		display = "神風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11911,7 +11911,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41132] = {
-		display = "松風からのバレンタインプレゼン",
+		display = "松風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11943,7 +11943,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41133] = {
-		display = "睦月からのバレンタインプレゼン",
+		display = "睦月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -11975,7 +11975,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41134] = {
-		display = "如月からのバレンタインプレゼン",
+		display = "如月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12007,7 +12007,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41135] = {
-		display = "卯月からのバレンタインプレゼン",
+		display = "卯月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12039,7 +12039,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41136] = {
-		display = "水無月からのバレンタインプレゼン",
+		display = "水無月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12071,7 +12071,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41137] = {
-		display = "三日月からのバレンタインプレゼン",
+		display = "三日月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12103,7 +12103,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41138] = {
-		display = "新月からのバレンタインプレゼン",
+		display = "新月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12135,7 +12135,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41139] = {
-		display = "浦風からのバレンタインプレゼン",
+		display = "浦風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12167,7 +12167,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41140] = {
-		display = "浜風からのバレンタインプレゼン",
+		display = "浜風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12199,7 +12199,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41141] = {
-		display = "谷風からのバレンタインプレゼン",
+		display = "谷風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12231,7 +12231,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41142] = {
-		display = "夕張からのバレンタインプレゼン",
+		display = "夕張からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12263,7 +12263,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41143] = {
-		display = "長良からのバレンタインプレゼン",
+		display = "長良からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12295,7 +12295,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41144] = {
-		display = "五十鈴からのバレンタインプレゼン",
+		display = "五十鈴からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12327,7 +12327,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41145] = {
-		display = "阿武隈からのバレンタインプレゼン",
+		display = "阿武隈からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12359,7 +12359,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41146] = {
-		display = "神通からのバレンタインプレゼン",
+		display = "神通からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12391,7 +12391,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41147] = {
-		display = "古鷹からのバレンタインプレゼン",
+		display = "古鷹からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12423,7 +12423,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41148] = {
-		display = "加古からのバレンタインプレゼン",
+		display = "加古からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12455,7 +12455,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41149] = {
-		display = "青葉からのバレンタインプレゼン",
+		display = "青葉からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12487,7 +12487,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41150] = {
-		display = "衣笠からのバレンタインプレゼン",
+		display = "衣笠からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12519,7 +12519,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41151] = {
-		display = "妙高からのバレンタインプレゼン",
+		display = "妙高からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12551,7 +12551,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41152] = {
-		display = "那智からのバレンタインプレゼン",
+		display = "那智からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12583,7 +12583,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41153] = {
-		display = "高雄からのバレンタインプレゼン",
+		display = "高雄からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12615,7 +12615,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41154] = {
-		display = "愛宕からのバレンタインプレゼン",
+		display = "愛宕からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12647,7 +12647,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41155] = {
-		display = "摩耶からのバレンタインプレゼン",
+		display = "摩耶からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12679,7 +12679,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41156] = {
-		display = "比叡からのバレンタインプレゼン",
+		display = "比叡からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12711,7 +12711,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41157] = {
-		display = "扶桑からのバレンタインプレゼン",
+		display = "扶桑からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12743,7 +12743,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41158] = {
-		display = "山城からのバレンタインプレゼン",
+		display = "山城からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12775,7 +12775,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41159] = {
-		display = "伊勢からのバレンタインプレゼン",
+		display = "伊勢からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12807,7 +12807,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41160] = {
-		display = "日向からのバレンタインプレゼン",
+		display = "日向からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12839,7 +12839,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41161] = {
-		display = "三笠からのバレンタインプレゼン",
+		display = "三笠からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12871,7 +12871,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41162] = {
-		display = "鳳翔からのバレンタインプレゼン",
+		display = "鳳翔からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12903,7 +12903,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41163] = {
-		display = "祥鳳からのバレンタインプレゼン",
+		display = "祥鳳からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12935,7 +12935,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41164] = {
-		display = "赤城からのバレンタインプレゼン",
+		display = "赤城からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12967,7 +12967,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41165] = {
-		display = "加賀からのバレンタインプレゼン",
+		display = "加賀からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -12999,7 +12999,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41166] = {
-		display = "蒼龍からのバレンタインプレゼン",
+		display = "蒼龍からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13031,7 +13031,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41167] = {
-		display = "飛龍からのバレンタインプレゼン",
+		display = "飛龍からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13063,7 +13063,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41168] = {
-		display = "翔鶴からのバレンタインプレゼン",
+		display = "翔鶴からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13095,7 +13095,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41169] = {
-		display = "瑞鶴からのバレンタインプレゼン",
+		display = "瑞鶴からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13127,7 +13127,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41170] = {
-		display = "Z1からのバレンタインプレゼン",
+		display = "Z1からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13159,7 +13159,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41171] = {
-		display = "Z19からのバレンタインプレゼン",
+		display = "Z19からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13191,7 +13191,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41172] = {
-		display = "Z20からのバレンタインプレゼン",
+		display = "Z20からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13223,7 +13223,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41173] = {
-		display = "Z21からのバレンタインプレゼン",
+		display = "Z21からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13255,7 +13255,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41174] = {
-		display = "Z23からのバレンタインプレゼン",
+		display = "Z23からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13287,7 +13287,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41175] = {
-		display = "Z46からのバレンタインプレゼン",
+		display = "Z46からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13319,7 +13319,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41176] = {
-		display = "ケーニヒスベルクからのバレンタインプレゼン",
+		display = "ケーニヒスベルクからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13351,7 +13351,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41177] = {
-		display = "カールスルーエからのバレンタインプレゼン",
+		display = "カールスルーエからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13383,7 +13383,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41178] = {
-		display = "ケルンからのバレンタインプレゼン",
+		display = "ケルンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13415,7 +13415,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41179] = {
-		display = "ライプツィヒからのバレンタインプレゼン",
+		display = "ライプツィヒからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13447,7 +13447,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41180] = {
-		display = "アドミラル・ヒッパーからのバレンタインプレゼン",
+		display = "アドミラル·ヒッパーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13479,7 +13479,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41181] = {
-		display = "プリンツ・オイゲンからのバレンタインプレゼン",
+		display = "プリンツ·オイゲンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13511,7 +13511,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41182] = {
-		display = "ドイッチュラントからのバレンタインプレゼン",
+		display = "ドイッチュラントからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13543,7 +13543,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41183] = {
-		display = "アドミラル・グラーフ・シュペーからのバレンタインプレゼン",
+		display = "アドミラル·グラーフ·シュペーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13575,7 +13575,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41184] = {
-		display = "シャルンホルストからのバレンタインプレゼン",
+		display = "シャルンホルストからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13607,7 +13607,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41185] = {
-		display = "グナイゼナウからのバレンタインプレゼン",
+		display = "グナイゼナウからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13639,7 +13639,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41186] = {
-		display = "ティルピッツからのバレンタインプレゼン",
+		display = "ティルピッツからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13671,7 +13671,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41187] = {
-		display = "グラーフ・ツェッペリンからのバレンタインプレゼン",
+		display = "グラーフ·ツェッペリンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13703,7 +13703,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41188] = {
-		display = "鞍山からのバレンタインプレゼン",
+		display = "鞍山からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13735,7 +13735,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41189] = {
-		display = "撫順からのバレンタインプレゼン",
+		display = "撫順からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13767,7 +13767,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41190] = {
-		display = "長春からのバレンタインプレゼン",
+		display = "長春からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13799,7 +13799,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41191] = {
-		display = "太原からのバレンタインプレゼン",
+		display = "太原からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13831,7 +13831,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41192] = {
-		display = "逸仙からのバレンタインプレゼン",
+		display = "逸仙からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13863,7 +13863,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41193] = {
-		display = "寧海からのバレンタインプレゼン",
+		display = "寧海からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13895,7 +13895,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41194] = {
-		display = "平海からのバレンタインプレゼン",
+		display = "平海からのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13927,7 +13927,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41195] = {
-		display = "アヴローラからのバレンタインプレゼン",
+		display = "アヴローラからのバレンタインプレゼント",
 		rarity = 8,
 		type = 5,
 		name = "バレンタインプレゼント",
@@ -13959,7 +13959,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41201] = {
-		display = "汎用型ブリからのバレンタインプレゼン",
+		display = "汎用型ブリからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -13975,7 +13975,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41202] = {
-		display = "試作型ブリMKIIからのバレンタインプレゼン",
+		display = "試作型ブリMKIIからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -13991,7 +13991,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41203] = {
-		display = "カッシンからのバレンタインプレゼン",
+		display = "カッシンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14007,7 +14007,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41204] = {
-		display = "ダウンズからのバレンタインプレゼン",
+		display = "ダウンズからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14023,7 +14023,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41205] = {
-		display = "グリッドレイからのバレンタインプレゼン",
+		display = "グリッドレイからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14039,7 +14039,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41206] = {
-		display = "クレイヴンからのバレンタインプレゼン",
+		display = "クレイヴンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14055,7 +14055,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41207] = {
-		display = "マッコールからのバレンタインプレゼン",
+		display = "マッコールからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14071,7 +14071,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41208] = {
-		display = "モーリーからのバレンタインプレゼン",
+		display = "モーリーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14087,7 +14087,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41209] = {
-		display = "フレッチャーからのバレンタインプレゼン",
+		display = "フレッチャーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14103,7 +14103,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41210] = {
-		display = "チャールズ·オースバーンからのバレンタインプレゼン",
+		display = "チャールズ·オースバーンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14119,7 +14119,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41211] = {
-		display = "サッチャーからのバレンタインプレゼン",
+		display = "サッチャーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14135,7 +14135,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41212] = {
-		display = "オーリックからのバレンタインプレゼン",
+		display = "オーリックからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14151,7 +14151,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41213] = {
-		display = "フートからのバレンタインプレゼン",
+		display = "フートからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14167,7 +14167,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41214] = {
-		display = "スペンスからのバレンタインプレゼン",
+		display = "スペンスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14183,7 +14183,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41215] = {
-		display = "ベンソンからのバレンタインプレゼン",
+		display = "ベンソンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14199,7 +14199,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41216] = {
-		display = "ラフィーからのバレンタインプレゼン",
+		display = "ラフィーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14215,7 +14215,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41217] = {
-		display = "シムスからのバレンタインプレゼン",
+		display = "シムスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14231,7 +14231,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41218] = {
-		display = "ハムマンからのバレンタインプレゼン",
+		display = "ハムマンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14247,7 +14247,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41219] = {
-		display = "エルドリッジからのバレンタインプレゼン",
+		display = "エルドリッジからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14263,7 +14263,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41220] = {
-		display = "オマハからのバレンタインプレゼン",
+		display = "オマハからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14279,7 +14279,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41221] = {
-		display = "ローリーからのバレンタインプレゼン",
+		display = "ローリーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14295,7 +14295,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41222] = {
-		display = "ブルックリンからのバレンタインプレゼン",
+		display = "ブルックリンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14311,7 +14311,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41223] = {
-		display = "フェニックスからのバレンタインプレゼン",
+		display = "フェニックスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14327,7 +14327,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41224] = {
-		display = "ヘレナからのバレンタインプレゼン",
+		display = "ヘレナからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14343,7 +14343,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41225] = {
-		display = "アトランタからのバレンタインプレゼン",
+		display = "アトランタからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14359,7 +14359,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41226] = {
-		display = "ジュノーからのバレンタインプレゼン",
+		display = "ジュノーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14375,7 +14375,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41227] = {
-		display = "サンディエゴからのバレンタインプレゼン",
+		display = "サンディエゴからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14391,7 +14391,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41228] = {
-		display = "クリーブランドからのバレンタインプレゼン",
+		display = "クリーブランドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14407,7 +14407,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41229] = {
-		display = "コロンビアからのバレンタインプレゼン",
+		display = "コロンビアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14423,7 +14423,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41230] = {
-		display = "ペンサコーラからのバレンタインプレゼン",
+		display = "ペンサコーラからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14439,7 +14439,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41231] = {
-		display = "ソルトレイクシティからのバレンタインプレゼン",
+		display = "ソルトレイクシティからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14455,7 +14455,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41232] = {
-		display = "ノーザンプトンからのバレンタインプレゼン",
+		display = "ノーザンプトンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14471,7 +14471,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41233] = {
-		display = "シカゴからのバレンタインプレゼン",
+		display = "シカゴからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14487,7 +14487,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41234] = {
-		display = "ヒューストンからのバレンタインプレゼン",
+		display = "ヒューストンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14503,7 +14503,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41235] = {
-		display = "ポートランドからのバレンタインプレゼン",
+		display = "ポートランドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14519,7 +14519,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41236] = {
-		display = "インディアナポリスからのバレンタインプレゼン",
+		display = "インディアナポリスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14535,7 +14535,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41237] = {
-		display = "アストリアからのバレンタインプレゼン",
+		display = "アストリアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14551,7 +14551,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41238] = {
-		display = "クインシーからのバレンタインプレゼン",
+		display = "クインシーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14567,7 +14567,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41239] = {
-		display = "ヴィンセンスからのバレンタインプレゼン",
+		display = "ヴィンセンスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14583,7 +14583,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41240] = {
-		display = "ウィチタからのバレンタインプレゼン",
+		display = "ウィチタからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14599,7 +14599,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41241] = {
-		display = "ネバダからのバレンタインプレゼン",
+		display = "ネバダからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14615,7 +14615,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41242] = {
-		display = "オクラホマからのバレンタインプレゼン",
+		display = "オクラホマからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14631,7 +14631,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41243] = {
-		display = "ペンシルベニアからのバレンタインプレゼン",
+		display = "ペンシルベニアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14647,7 +14647,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41244] = {
-		display = "アリゾナからのバレンタインプレゼン",
+		display = "アリゾナからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14663,7 +14663,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41245] = {
-		display = "テネシーからのバレンタインプレゼン",
+		display = "テネシーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14679,7 +14679,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41246] = {
-		display = "カリフォルニアからのバレンタインプレゼン",
+		display = "カリフォルニアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14695,7 +14695,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41247] = {
-		display = "コロラドからのバレンタインプレゼン",
+		display = "コロラドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14711,7 +14711,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41248] = {
-		display = "メリーランドからのバレンタインプレゼン",
+		display = "メリーランドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14727,7 +14727,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41249] = {
-		display = "ウェストバージニアからのバレンタインプレゼン",
+		display = "ウェストバージニアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14743,7 +14743,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41250] = {
-		display = "ノースカロライナからのバレンタインプレゼン",
+		display = "ノースカロライナからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14759,7 +14759,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41251] = {
-		display = "ワシントンからのバレンタインプレゼン",
+		display = "ワシントンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14775,7 +14775,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41252] = {
-		display = "サウスダコタからのバレンタインプレゼン",
+		display = "サウスダコタからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14791,7 +14791,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41253] = {
-		display = "ロング·アイランドからのバレンタインプレゼン",
+		display = "ロング·アイランドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14807,7 +14807,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41254] = {
-		display = "ボーグからのバレンタインプレゼン",
+		display = "ボーグからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14823,7 +14823,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41255] = {
-		display = "ラングレーからのバレンタインプレゼン",
+		display = "ラングレーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14839,7 +14839,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41256] = {
-		display = "レキシントンからのバレンタインプレゼン",
+		display = "レキシントンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14855,7 +14855,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41257] = {
-		display = "サラトガからのバレンタインプレゼン",
+		display = "サラトガからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14871,7 +14871,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41258] = {
-		display = "レンジャーからのバレンタインプレゼン",
+		display = "レンジャーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14887,7 +14887,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41259] = {
-		display = "ヨークタウンからのバレンタインプレゼン",
+		display = "ヨークタウンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14903,7 +14903,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41260] = {
-		display = "エンタープライズからのバレンタインプレゼン",
+		display = "エンタープライズからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14919,7 +14919,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41261] = {
-		display = "ホーネットからのバレンタインプレゼン",
+		display = "ホーネットからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14935,7 +14935,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41262] = {
-		display = "ワスプからのバレンタインプレゼン",
+		display = "ワスプからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14951,7 +14951,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41263] = {
-		display = "ヴェスタルからのバレンタインプレゼン",
+		display = "ヴェスタルからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14967,7 +14967,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41264] = {
-		display = "アマゾンからのバレンタインプレゼン",
+		display = "アマゾンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14983,7 +14983,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41265] = {
-		display = "アカスタからのバレンタインプレゼン",
+		display = "アカスタからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -14999,7 +14999,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41266] = {
-		display = "アーデントからのバレンタインプレゼン",
+		display = "アーデントからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15015,7 +15015,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41267] = {
-		display = "ビーグルからのバレンタインプレゼン",
+		display = "ビーグルからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15031,7 +15031,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41268] = {
-		display = "ブルドッグからのバレンタインプレゼン",
+		display = "ブルドッグからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15047,7 +15047,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41269] = {
-		display = "コメットからのバレンタインプレゼン",
+		display = "コメットからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15063,7 +15063,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41270] = {
-		display = "クレセントからのバレンタインプレゼン",
+		display = "クレセントからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15079,7 +15079,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41271] = {
-		display = "シグニットからのバレンタインプレゼン",
+		display = "シグニットからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15095,7 +15095,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41272] = {
-		display = "フォックスハウンドからのバレンタインプレゼン",
+		display = "フォックスハウンドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15111,7 +15111,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41273] = {
-		display = "フォーチュンからのバレンタインプレゼン",
+		display = "フォーチュンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15127,7 +15127,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41274] = {
-		display = "グレンヴィルからのバレンタインプレゼン",
+		display = "グレンヴィルからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15143,7 +15143,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41275] = {
-		display = "グローウォームからのバレンタインプレゼン",
+		display = "グローウォームからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15159,7 +15159,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41276] = {
-		display = "ジャベリンからのバレンタインプレゼン",
+		display = "ジャベリンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15175,7 +15175,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41277] = {
-		display = "ジュノーからのバレンタインプレゼン",
+		display = "ジュノーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15191,7 +15191,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41278] = {
-		display = "ヴァンパイアからのバレンタインプレゼン",
+		display = "ヴァンパイアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15207,7 +15207,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41279] = {
-		display = "リアンダーからのバレンタインプレゼン",
+		display = "リアンダーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15223,7 +15223,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41280] = {
-		display = "アキリーズからのバレンタインプレゼン",
+		display = "アキリーズからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15239,7 +15239,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41281] = {
-		display = "エイジャックスからのバレンタインプレゼン",
+		display = "エイジャックスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15255,7 +15255,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41282] = {
-		display = "シェフィールドからのバレンタインプレゼン",
+		display = "シェフィールドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15271,7 +15271,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41283] = {
-		display = "エディンバラからのバレンタインプレゼン",
+		display = "エディンバラからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15287,7 +15287,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41284] = {
-		display = "ベルファストからのバレンタインプレゼン",
+		display = "ベルファストからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15303,7 +15303,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41285] = {
-		display = "アリシューザからのバレンタインプレゼン",
+		display = "アリシューザからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15319,7 +15319,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41286] = {
-		display = "ガラティアからのバレンタインプレゼン",
+		display = "ガラティアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15335,7 +15335,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41287] = {
-		display = "オーロラからのバレンタインプレゼン",
+		display = "オーロラからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15351,7 +15351,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41288] = {
-		display = "ロンドンからのバレンタインプレゼン",
+		display = "ロンドンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15367,7 +15367,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41289] = {
-		display = "シュロップシャーからのバレンタインプレゼン",
+		display = "シュロップシャーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15383,7 +15383,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41290] = {
-		display = "ケントからのバレンタインプレゼン",
+		display = "ケントからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15399,7 +15399,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41291] = {
-		display = "サフォークからのバレンタインプレゼン",
+		display = "サフォークからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15415,7 +15415,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41292] = {
-		display = "ノーフォークからのバレンタインプレゼン",
+		display = "ノーフォークからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15431,7 +15431,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41293] = {
-		display = "ドーセットシャーからのバレンタインプレゼン",
+		display = "ドーセットシャーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15447,7 +15447,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41294] = {
-		display = "ヨークからのバレンタインプレゼン",
+		display = "ヨークからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15463,7 +15463,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41295] = {
-		display = "エクセターからのバレンタインプレゼン",
+		display = "エクセターからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15479,7 +15479,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41296] = {
-		display = "サセックスからのバレンタインプレゼン",
+		display = "サセックスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15495,7 +15495,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41297] = {
-		display = "レナウンからのバレンタインプレゼン",
+		display = "レナウンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15511,7 +15511,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41298] = {
-		display = "レパルスからのバレンタインプレゼン",
+		display = "レパルスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15527,7 +15527,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41299] = {
-		display = "フッドからのバレンタインプレゼン",
+		display = "フッドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15543,7 +15543,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41300] = {
-		display = "クイーン·エリザベスからのバレンタインプレゼン",
+		display = "クイーン·エリザベスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15559,7 +15559,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41301] = {
-		display = "ウォースパイトからのバレンタインプレゼン",
+		display = "ウォースパイトからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15575,7 +15575,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41302] = {
-		display = "ネルソンからのバレンタインプレゼン",
+		display = "ネルソンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15591,7 +15591,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41303] = {
-		display = "ロドニーからのバレンタインプレゼン",
+		display = "ロドニーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15607,7 +15607,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41304] = {
-		display = "プリンス·オブ·ウェールズからのバレンタインプレゼン",
+		display = "プリンス·オブ·ウェールズからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15623,7 +15623,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41305] = {
-		display = "デューク·オブ·ヨーク からのバレンタインプレゼン",
+		display = "デューク·オブ·ヨーク からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15639,7 +15639,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41306] = {
-		display = "ハーミーズからのバレンタインプレゼン",
+		display = "ハーミーズからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15655,7 +15655,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41307] = {
-		display = "ユニコーンからのバレンタインプレゼン",
+		display = "ユニコーンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15671,7 +15671,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41308] = {
-		display = "アーク·ロイヤルからのバレンタインプレゼン",
+		display = "アーク·ロイヤルからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15687,7 +15687,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41309] = {
-		display = "イラストリアスからのバレンタインプレゼン",
+		display = "イラストリアスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15703,7 +15703,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41310] = {
-		display = "ヴィクトリアスからのバレンタインプレゼン",
+		display = "ヴィクトリアスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15719,7 +15719,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41311] = {
-		display = "グロリアスからのバレンタインプレゼン",
+		display = "グロリアスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15735,7 +15735,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41312] = {
-		display = "エレバスからのバレンタインプレゼン",
+		display = "エレバスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15751,7 +15751,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41313] = {
-		display = "テラーからのバレンタインプレゼン",
+		display = "テラーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15767,7 +15767,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41314] = {
-		display = "アバークロンビーからのバレンタインプレゼン",
+		display = "アバークロンビーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15783,7 +15783,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41315] = {
-		display = "吹雪からのバレンタインプレゼン",
+		display = "吹雪からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15799,7 +15799,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41316] = {
-		display = "綾波からのバレンタインプレゼン",
+		display = "綾波からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15815,7 +15815,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41317] = {
-		display = "暁からのバレンタインプレゼン",
+		display = "暁からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15831,7 +15831,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41318] = {
-		display = "雷からのバレンタインプレゼン",
+		display = "雷からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15847,7 +15847,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41319] = {
-		display = "電からのバレンタインプレゼン",
+		display = "電からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15863,7 +15863,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41320] = {
-		display = "白露からのバレンタインプレゼン",
+		display = "白露からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15879,7 +15879,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41321] = {
-		display = "夕立からのバレンタインプレゼン",
+		display = "夕立からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15895,7 +15895,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41322] = {
-		display = "時雨からのバレンタインプレゼン",
+		display = "時雨からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15911,7 +15911,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41323] = {
-		display = "雪風からのバレンタインプレゼン",
+		display = "雪風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15927,7 +15927,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41324] = {
-		display = "陽炎からのバレンタインプレゼン",
+		display = "陽炎からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15943,7 +15943,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41325] = {
-		display = "不知火からのバレンタインプレゼン",
+		display = "不知火からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15959,7 +15959,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41326] = {
-		display = "野分からのバレンタインプレゼン",
+		display = "野分からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15975,7 +15975,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41327] = {
-		display = "初春からのバレンタインプレゼン",
+		display = "初春からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -15991,7 +15991,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41328] = {
-		display = "若葉からのバレンタインプレゼン",
+		display = "若葉からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16007,7 +16007,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41329] = {
-		display = "初霜からのバレンタインプレゼン",
+		display = "初霜からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16023,7 +16023,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41330] = {
-		display = "有明からのバレンタインプレゼン",
+		display = "有明からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16039,7 +16039,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41331] = {
-		display = "夕暮からのバレンタインプレゼン",
+		display = "夕暮からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16055,7 +16055,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41332] = {
-		display = "黒潮からのバレンタインプレゼン",
+		display = "黒潮からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16071,7 +16071,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41333] = {
-		display = "親潮からのバレンタインプレゼン",
+		display = "親潮からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16087,7 +16087,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41334] = {
-		display = "夕張からのバレンタインプレゼン",
+		display = "夕張からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16103,7 +16103,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41335] = {
-		display = "長良からのバレンタインプレゼン",
+		display = "長良からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16119,7 +16119,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41336] = {
-		display = "五十鈴からのバレンタインプレゼン",
+		display = "五十鈴からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16135,7 +16135,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41337] = {
-		display = "阿武隈からのバレンタインプレゼン",
+		display = "阿武隈からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16151,7 +16151,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41338] = {
-		display = "最上からのバレンタインプレゼン",
+		display = "最上からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16167,7 +16167,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41339] = {
-		display = "三隈からのバレンタインプレゼン",
+		display = "三隈からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16183,7 +16183,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41340] = {
-		display = "古鷹からのバレンタインプレゼン",
+		display = "古鷹からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16199,7 +16199,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41341] = {
-		display = "加古からのバレンタインプレゼン",
+		display = "加古からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16215,7 +16215,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41342] = {
-		display = "青葉からのバレンタインプレゼン",
+		display = "青葉からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16231,7 +16231,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41343] = {
-		display = "衣笠からのバレンタインプレゼン",
+		display = "衣笠からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16247,7 +16247,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41344] = {
-		display = "妙高からのバレンタインプレゼン",
+		display = "妙高からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16263,7 +16263,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41345] = {
-		display = "那智からのバレンタインプレゼン",
+		display = "那智からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16279,7 +16279,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41346] = {
-		display = "足柄からのバレンタインプレゼン",
+		display = "足柄からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16295,7 +16295,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41347] = {
-		display = "高雄からのバレンタインプレゼン",
+		display = "高雄からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16311,7 +16311,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41348] = {
-		display = "愛宕からのバレンタインプレゼン",
+		display = "愛宕からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16327,7 +16327,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41349] = {
-		display = "摩耶からのバレンタインプレゼン",
+		display = "摩耶からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16343,7 +16343,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41350] = {
-		display = "鳥海からのバレンタインプレゼン",
+		display = "鳥海からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16359,7 +16359,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41351] = {
-		display = "金剛からのバレンタインプレゼン",
+		display = "金剛からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16375,7 +16375,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41352] = {
-		display = "比叡からのバレンタインプレゼン",
+		display = "比叡からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16391,7 +16391,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41353] = {
-		display = "榛名からのバレンタインプレゼン",
+		display = "榛名からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16407,7 +16407,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41354] = {
-		display = "霧島からのバレンタインプレゼン",
+		display = "霧島からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16423,7 +16423,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41355] = {
-		display = "天城からのバレンタインプレゼン",
+		display = "天城からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16439,7 +16439,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41356] = {
-		display = "扶桑からのバレンタインプレゼン",
+		display = "扶桑からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16455,7 +16455,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41357] = {
-		display = "山城からのバレンタインプレゼン",
+		display = "山城からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16471,7 +16471,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41358] = {
-		display = "伊勢からのバレンタインプレゼン",
+		display = "伊勢からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16487,7 +16487,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41359] = {
-		display = "日向からのバレンタインプレゼン",
+		display = "日向からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16503,7 +16503,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41360] = {
-		display = "長門からのバレンタインプレゼン",
+		display = "長門からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16519,7 +16519,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41361] = {
-		display = "陸奧からのバレンタインプレゼン",
+		display = "陸奧からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16535,7 +16535,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41362] = {
-		display = "加賀からのバレンタインプレゼン",
+		display = "加賀からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16551,7 +16551,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41363] = {
-		display = "飛鷹からのバレンタインプレゼン",
+		display = "飛鷹からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16567,7 +16567,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41364] = {
-		display = "隼鷹からのバレンタインプレゼン",
+		display = "隼鷹からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16583,7 +16583,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41365] = {
-		display = "鳳翔からのバレンタインプレゼン",
+		display = "鳳翔からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16599,7 +16599,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41366] = {
-		display = "祥鳳からのバレンタインプレゼン",
+		display = "祥鳳からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16615,7 +16615,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41367] = {
-		display = "龍驤からのバレンタインプレゼン",
+		display = "龍驤からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16631,7 +16631,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41368] = {
-		display = "赤城からのバレンタインプレゼン",
+		display = "赤城からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16647,7 +16647,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41369] = {
-		display = "加賀からのバレンタインプレゼン",
+		display = "加賀からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16663,7 +16663,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41370] = {
-		display = "蒼龍からのバレンタインプレゼン",
+		display = "蒼龍からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16679,7 +16679,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41371] = {
-		display = "飛龍からのバレンタインプレゼン",
+		display = "飛龍からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16695,7 +16695,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41372] = {
-		display = "翔鶴からのバレンタインプレゼン",
+		display = "翔鶴からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16711,7 +16711,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41373] = {
-		display = "瑞鶴からのバレンタインプレゼン",
+		display = "瑞鶴からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16727,7 +16727,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41374] = {
-		display = "大鳳からのバレンタインプレゼン",
+		display = "大鳳からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16743,7 +16743,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41375] = {
-		display = "明石からのバレンタインプレゼン",
+		display = "明石からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16759,7 +16759,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41376] = {
-		display = "Z1からのバレンタインプレゼン",
+		display = "Z1からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16775,7 +16775,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41377] = {
-		display = "Z23からのバレンタインプレゼン",
+		display = "Z23からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16791,7 +16791,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41378] = {
-		display = "Z25からのバレンタインプレゼン",
+		display = "Z25からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16807,7 +16807,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41379] = {
-		display = "ケーニヒスベルクからのバレンタインプレゼン",
+		display = "ケーニヒスベルクからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16823,7 +16823,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41380] = {
-		display = "カールスルーエからのバレンタインプレゼン",
+		display = "カールスルーエからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16839,7 +16839,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41381] = {
-		display = "ケルンからのバレンタインプレゼン",
+		display = "ケルンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16855,7 +16855,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41382] = {
-		display = "ライプツィヒからのバレンタインプレゼン",
+		display = "ライプツィヒからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16871,7 +16871,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41383] = {
-		display = "アドミラル·ヒッパーからのバレンタインプレゼン",
+		display = "アドミラル·ヒッパーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16887,7 +16887,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41384] = {
-		display = "プリンツ·オイゲンからのバレンタインプレゼン",
+		display = "プリンツ·オイゲンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16903,7 +16903,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41385] = {
-		display = "ドイッチュラントからのバレンタインプレゼン",
+		display = "ドイッチュラントからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16919,7 +16919,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41386] = {
-		display = "アドミラル·グラーフ·シュペーからのバレンタインプレゼン",
+		display = "アドミラル·グラーフ·シュペーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16935,7 +16935,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41387] = {
-		display = "シャルンホルストからのバレンタインプレゼン",
+		display = "シャルンホルストからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16951,7 +16951,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41388] = {
-		display = "グナイゼナウからのバレンタインプレゼン",
+		display = "グナイゼナウからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16967,7 +16967,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41389] = {
-		display = "ティルピッツからのバレンタインプレゼン",
+		display = "ティルピッツからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16983,7 +16983,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41390] = {
-		display = "グラーフ·ツェッペリンからのバレンタインプレゼン",
+		display = "グラーフ·ツェッペリンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -16999,7 +16999,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41391] = {
-		display = "鞍山からのバレンタインプレゼン",
+		display = "鞍山からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17015,7 +17015,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41392] = {
-		display = "撫順からのバレンタインプレゼン",
+		display = "撫順からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17031,7 +17031,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41393] = {
-		display = "長春からのバレンタインプレゼン",
+		display = "長春からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17047,7 +17047,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41394] = {
-		display = "太原からのバレンタインプレゼン",
+		display = "太原からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17063,7 +17063,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41395] = {
-		display = "逸仙からのバレンタインプレゼン",
+		display = "逸仙からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17079,7 +17079,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41396] = {
-		display = "寧海からのバレンタインプレゼン",
+		display = "寧海からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17095,7 +17095,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41397] = {
-		display = "平海からのバレンタインプレゼン",
+		display = "平海からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17111,7 +17111,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41398] = {
-		display = "アヴローラからのバレンタインプレゼン",
+		display = "アヴローラからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17127,7 +17127,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41399] = {
-		display = "ベイリーからのバレンタインプレゼン",
+		display = "ベイリーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17143,7 +17143,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41400] = {
-		display = "Z19からのバレンタインプレゼン",
+		display = "Z19からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17159,7 +17159,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41401] = {
-		display = "Z20からのバレンタインプレゼン",
+		display = "Z20からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17175,7 +17175,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41402] = {
-		display = "Z21からのバレンタインプレゼン",
+		display = "Z21からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17191,7 +17191,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41403] = {
-		display = "Z46からのバレンタインプレゼン",
+		display = "Z46からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17207,7 +17207,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41404] = {
-		display = "神風からのバレンタインプレゼン",
+		display = "神風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17223,7 +17223,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41405] = {
-		display = "松風からのバレンタインプレゼン",
+		display = "松風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17239,7 +17239,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41406] = {
-		display = "睦月からのバレンタインプレゼン",
+		display = "睦月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17255,7 +17255,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41407] = {
-		display = "如月からのバレンタインプレゼン",
+		display = "如月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17271,7 +17271,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41408] = {
-		display = "卯月からのバレンタインプレゼン",
+		display = "卯月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17287,7 +17287,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41409] = {
-		display = "水無月からのバレンタインプレゼン",
+		display = "水無月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17303,7 +17303,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41410] = {
-		display = "文月からのバレンタインプレゼン",
+		display = "文月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17319,7 +17319,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41411] = {
-		display = "長月からのバレンタインプレゼン",
+		display = "長月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17335,7 +17335,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41412] = {
-		display = "三日月からのバレンタインプレゼン",
+		display = "三日月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17351,7 +17351,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41413] = {
-		display = "江風からのバレンタインプレゼン",
+		display = "江風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17367,7 +17367,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41414] = {
-		display = "新月からのバレンタインプレゼン",
+		display = "新月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17383,7 +17383,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41415] = {
-		display = "春月からのバレンタインプレゼン",
+		display = "春月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17399,7 +17399,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41416] = {
-		display = "宵月からのバレンタインプレゼン",
+		display = "宵月からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17415,7 +17415,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41417] = {
-		display = "ラドフォードからのバレンタインプレゼン",
+		display = "ラドフォードからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17431,7 +17431,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41418] = {
-		display = "ジェンキンスからのバレンタインプレゼン",
+		display = "ジェンキンスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17447,7 +17447,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41419] = {
-		display = "ニコラスからのバレンタインプレゼン",
+		display = "ニコラスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17463,7 +17463,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41420] = {
-		display = "リッチモンドからのバレンタインプレゼン",
+		display = "リッチモンドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17479,7 +17479,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41421] = {
-		display = "ホノルルからのバレンタインプレゼン",
+		display = "ホノルルからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17495,7 +17495,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41422] = {
-		display = "セントルイスからのバレンタインプレゼン",
+		display = "セントルイスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17511,7 +17511,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41423] = {
-		display = "ジュピターからのバレンタインプレゼン",
+		display = "ジュピターからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17527,7 +17527,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41424] = {
-		display = "ジャージーからのバレンタインプレゼン",
+		display = "ジャージーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17543,7 +17543,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41425] = {
-		display = "川内からのバレンタインプレゼン",
+		display = "川内からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17559,7 +17559,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41426] = {
-		display = "神通からのバレンタインプレゼン",
+		display = "神通からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17575,7 +17575,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41427] = {
-		display = "那珂からのバレンタインプレゼン",
+		display = "那珂からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17591,7 +17591,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41428] = {
-		display = "浦風からのバレンタインプレゼン",
+		display = "浦風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17607,7 +17607,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41429] = {
-		display = "磯風からのバレンタインプレゼン",
+		display = "磯風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17623,7 +17623,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41430] = {
-		display = "浜風からのバレンタインプレゼン",
+		display = "浜風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17639,7 +17639,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41431] = {
-		display = "谷風からのバレンタインプレゼン",
+		display = "谷風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17655,7 +17655,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41432] = {
-		display = "三笠からのバレンタインプレゼン",
+		display = "三笠からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17671,7 +17671,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41433] = {
-		display = "阿賀野からのバレンタインプレゼン",
+		display = "阿賀野からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17687,7 +17687,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41434] = {
-		display = "マッチレスからのバレンタインプレゼン",
+		display = "マッチレスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17703,7 +17703,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41435] = {
-		display = "マスケティーアからのバレンタインプレゼン",
+		display = "マスケティーアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17719,7 +17719,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41436] = {
-		display = "フィジーからのバレンタインプレゼン",
+		display = "フィジーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17735,7 +17735,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41437] = {
-		display = "ジャマイカからのバレンタインプレゼン",
+		display = "ジャマイカからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17751,7 +17751,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41438] = {
-		display = "モントピリアからのバレンタインプレゼン",
+		display = "モントピリアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17767,7 +17767,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41439] = {
-		display = "デンバー からのバレンタインプレゼン",
+		display = "デンバー からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17783,7 +17783,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41440] = {
-		display = "朝潮からのバレンタインプレゼン",
+		display = "朝潮からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17799,7 +17799,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41441] = {
-		display = "大潮からのバレンタインプレゼン",
+		display = "大潮からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17815,7 +17815,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41442] = {
-		display = "満潮からのバレンタインプレゼン",
+		display = "満潮からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17847,7 +17847,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41444] = {
-		display = "ベルちゃんからのバレンタインプレゼン",
+		display = "ベルちゃんからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17863,7 +17863,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41445] = {
-		display = "伊19からのバレンタインプレゼン",
+		display = "伊19からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17879,7 +17879,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41446] = {
-		display = "伊26からのバレンタインプレゼン",
+		display = "伊26からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17895,7 +17895,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41447] = {
-		display = "伊58からのバレンタインプレゼン",
+		display = "伊58からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17911,7 +17911,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41448] = {
-		display = "U-81からのバレンタインプレゼン",
+		display = "U-81からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17927,7 +17927,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41449] = {
-		display = "デイスからのバレンタインプレゼン",
+		display = "デイスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17943,7 +17943,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41450] = {
-		display = "U-47からのバレンタインプレゼン",
+		display = "U-47からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17959,7 +17959,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41451] = {
-		display = "U-557からのバレンタインプレゼン",
+		display = "U-557からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17975,7 +17975,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41452] = {
-		display = "Z35からのバレンタインプレゼン",
+		display = "Z35からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -17991,7 +17991,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41453] = {
-		display = "Z18からのバレンタインプレゼン",
+		display = "Z18からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18007,7 +18007,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41454] = {
-		display = "ル·トリオンファンからのバレンタインプレゼン",
+		display = "ル·トリオンファンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18023,7 +18023,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41455] = {
-		display = "フォルバンからのバレンタインプレゼン",
+		display = "フォルバンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18039,7 +18039,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41456] = {
-		display = "エミール·ベルタンからのバレンタインプレゼン",
+		display = "エミール·ベルタンからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18055,7 +18055,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41457] = {
-		display = "シュルクーフからのバレンタインプレゼン",
+		display = "シュルクーフからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18071,7 +18071,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41458] = {
-		display = "ル·マルスからのバレンタインプレゼン",
+		display = "ル·マルスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18087,7 +18087,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41459] = {
-		display = "ダンケルクからのバレンタインプレゼン",
+		display = "ダンケルクからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18103,7 +18103,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41460] = {
-		display = "ジャン·バールからのバレンタインプレゼン",
+		display = "ジャン·バールからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18119,7 +18119,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41461] = {
-		display = "マサチューセッツからのバレンタインプレゼン",
+		display = "マサチューセッツからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18135,7 +18135,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41462] = {
-		display = "ブッシュからのバレンタインプレゼン",
+		display = "ブッシュからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18151,7 +18151,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41463] = {
-		display = "セントー からのバレンタインプレゼン",
+		display = "セントー からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18167,7 +18167,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41464] = {
-		display = "エセックスからのバレンタインプレゼン",
+		display = "エセックスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18183,7 +18183,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41465] = {
-		display = "アルバコアからのバレンタインプレゼン",
+		display = "アルバコアからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18199,7 +18199,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41466] = {
-		display = "ル·テメレールからのバレンタインプレゼン",
+		display = "ル·テメレールからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18215,7 +18215,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41467] = {
-		display = "メンフィスからのバレンタインプレゼン",
+		display = "メンフィスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18231,7 +18231,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41468] = {
-		display = "ニューカッスルからのバレンタインプレゼン",
+		display = "ニューカッスルからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18247,7 +18247,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41469] = {
-		display = "ホビーからのバレンタインプレゼン",
+		display = "ホビーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18263,7 +18263,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41470] = {
-		display = "カークからのバレンタインプレゼン",
+		display = "カークからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18279,7 +18279,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41471] = {
-		display = "ミネアポリスからのバレンタインプレゼン",
+		display = "ミネアポリスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18295,7 +18295,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41472] = {
-		display = "ヘイゼルウッドからのバレンタインプレゼン",
+		display = "ヘイゼルウッドからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18311,7 +18311,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41473] = {
-		display = "コンコードからのバレンタインプレゼン",
+		display = "コンコードからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18327,7 +18327,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41474] = {
-		display = "旗風からのバレンタインプレゼン",
+		display = "旗風からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18343,7 +18343,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41475] = {
-		display = "巻波からのバレンタインプレゼン",
+		display = "巻波からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18359,7 +18359,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41476] = {
-		display = "シリアスからのバレンタインプレゼン",
+		display = "シリアスからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18375,7 +18375,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41477] = {
-		display = "キュラソーからのバレンタインプレゼン",
+		display = "キュラソーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18391,7 +18391,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41478] = {
-		display = "カーリューからのバレンタインプレゼン",
+		display = "カーリューからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18407,7 +18407,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41479] = {
-		display = "キンバリーからのバレンタインプレゼン",
+		display = "キンバリーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18423,7 +18423,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41480] = {
-		display = "マラニーからのバレンタインプレゼン",
+		display = "マラニーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18439,7 +18439,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41481] = {
-		display = "チェイサーからのバレンタインプレゼン",
+		display = "チェイサーからのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18455,7 +18455,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41498] = {
-		display = "ネプチューン からのバレンタインプレゼン",
+		display = "ネプチューン からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18471,7 +18471,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41499] = {
-		display = "モナーク からのバレンタインプレゼン",
+		display = "モナーク からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18487,7 +18487,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41500] = {
-		display = "伊吹 からのバレンタインプレゼン",
+		display = "伊吹 からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18503,7 +18503,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41501] = {
-		display = "出雲 からのバレンタインプレゼン",
+		display = "出雲 からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18519,7 +18519,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41502] = {
-		display = "ローン からのバレンタインプレゼン",
+		display = "ローン からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -18535,7 +18535,7 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[41503] = {
-		display = "サン·ルイ からのバレンタインプレゼン",
+		display = "サン·ルイ からのバレンタインプレゼント",
 		rarity = 8,
 		type = 1,
 		name = "バレンタインプレゼント",
@@ -75529,6 +75529,38 @@ pg.item_data_statistics = {
 		price = {},
 		index = {}
 	},
+	[59938] = {
+		display = "7個集めると改造素材「戦士の心得」を入手可能",
+		rarity = 2,
+		type = 0,
+		name = "歴戦の証",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 8,
+		replace_item = 0,
+		link_id = 0,
+		id = 59938,
+		icon = "Props/lizhanzhizheng",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[59939] = {
+		display = "「Belli dura despicio！」——ウォースパイトの近代化改修（改造）に使用可能",
+		rarity = 4,
+		type = 7,
+		name = "戦士の心得",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 59939,
+		icon = "Props/yanzhandabaojian",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
 	[60001] = {
 		display = "0",
 		rarity = 3,
@@ -78254,6 +78286,8 @@ pg.item_data_statistics = {
 		59935,
 		59936,
 		59937,
+		59938,
+		59939,
 		60001,
 		60002,
 		60003,

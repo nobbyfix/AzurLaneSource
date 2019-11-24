@@ -20420,6 +20420,55 @@ pg.shop_template = {
 			}
 		}
 	},
+	[70274] = {
+		group_type = 0,
+		resource_num = 780,
+		desc = "购买皮肤：格拉斯哥JK",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 2,
+		time_second = 0,
+		order = 1,
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 70274,
+		genre = "skin_shop",
+		discount_time = {},
+		limit_args = {},
+		effect_args = {
+			202261
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					4
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
 	[90001] = {
 		group_type = 0,
 		resource_num = 1,
@@ -21852,6 +21901,7 @@ pg.shop_template = {
 		70263,
 		70264,
 		70265,
+		70274,
 		90001,
 		90002,
 		90003,

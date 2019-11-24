@@ -85,17 +85,6 @@ function slot1(slot0)
 	slot4 = "close_btn"
 	slot2 = slot2(slot3, slot4)
 	slot0.closeBtn = slot2
-	slot2 = UIItemList
-	slot2 = slot2.New
-	slot4 = slot0
-	slot3 = slot0.findTF
-	slot5 = "list/bg/scrollrect/content"
-	slot3 = slot3(slot4, slot5)
-	slot5 = slot0
-	slot4 = slot0.findTF
-	slot6 = "list/bg/scrollrect/content/tpl"
-	slot2 = slot2(slot3, slot4(slot5, slot6))
-	slot0.list = slot2
 	slot3 = slot0
 	slot2 = slot0.findTF
 	slot4 = "list/bg/help"
@@ -106,6 +95,15 @@ function slot1(slot0)
 	slot4 = "list/bg/no_msg"
 	slot2 = slot2(slot3, slot4)
 	slot0.noMsgTF = slot2
+	slot3 = slot0
+	slot2 = slot0.findTF
+	slot4 = "list/bg/scrollrect"
+	slot2 = slot2(slot3, slot4)
+	slot3 = slot2
+	slot2 = slot2.GetComponent
+	slot4 = "LScrollRect"
+	slot2 = slot2(slot3, slot4)
+	slot0.list = slot2
 	slot3 = slot0
 	slot2 = slot0.findTF
 	slot4 = "main/left_panel/Image"
@@ -352,6 +350,74 @@ function slot1(slot0)
 
 	slot1(slot2, slot3, slot4, slot5)
 
+	slot1 = {}
+	slot0.cards = slot1
+	slot1 = slot0.list
+
+	function slot2(slot0)
+		slot1 = InstagramCard
+		slot1 = slot1.New
+		slot2 = slot0
+		slot3 = slot0
+		slot1 = slot1(slot2, slot3)
+		slot2 = onButton
+		slot3 = slot0
+		slot4 = slot1._go
+
+		function slot5()
+			slot0 = slot0
+			slot1 = slot0
+			slot0 = slot0.EnterDetail
+			slot2 = slot1
+			slot2 = slot2.instagram
+
+			slot0(slot1, slot2)
+		end
+
+		slot6 = SFX_PANEL
+
+		slot2(slot3, slot4, slot5, slot6)
+
+		slot2 = slot0
+		slot2 = slot2.cards
+		slot2[slot0] = slot1
+	end
+
+	slot1.onInitItem = slot2
+	slot1 = slot0.list
+
+	function slot2(slot0, slot1)
+		slot2 = slot0
+		slot2 = slot2.cards
+		slot2 = slot2[slot1]
+
+		if not slot2 then
+			slot3 = InstagramCard
+			slot3 = slot3.New
+			slot4 = slot1
+			slot3 = slot3(slot4)
+			slot2 = slot3
+			slot3 = slot0
+			slot3 = slot3.cards
+			slot3[slot1] = slot2
+		end
+
+		slot3 = slot0
+		slot3 = slot3.display
+		slot4 = slot0 + 1
+		slot3 = slot3[slot4]
+		slot4 = slot0
+		slot4 = slot4.instagramVOById
+		slot5 = slot3.id
+		slot4 = slot4[slot5]
+		slot6 = slot2
+		slot5 = slot2.Update
+		slot7 = slot4
+
+		slot5(slot6, slot7)
+	end
+
+	slot1.onUpdateItem = slot2
 	slot2 = slot0
 	slot1 = slot0.InitList
 
@@ -361,139 +427,41 @@ end
 slot0.didEnter = slot1
 
 function slot1(slot0)
-	table.sort(slot1, function (slot0, slot1)
-		return slot1.id < slot0.id
-	end)
-	slot0:RemoveTimers()
-
-	slot0.instagramTFs = {}
-
-	slot0.list:make(function (slot0, slot1, slot2)
-		if slot0 == UIItemList.EventUpdate then
-			slot1.instagramTFs[slot0[slot1 + 1].id] = slot2
-
-			slot1:UpdateInstagram(slot0[slot1 + 1].id)
-		end
-	end)
-	slot0.list:align(#_.map(slot0.messages, function (slot0)
+	slot0.display = _.map(slot0.messages, function (slot0)
 		return {
 			time = slot0:GetLasterUpdateTime(),
 			id = slot0.id
 		}
-	end))
-	setActive(slot0.noMsgTF, #_.map(slot0.messages, function (slot0)
-		return 
-	end) == 0)
+	end)
+
+	table.sort(slot0.display, function (slot0, slot1)
+		return slot1.id < slot0.id
+	end)
+	slot0.list:SetTotalCount(#slot0.display)
+	setActive(slot0.noMsgTF, #slot0.display == 0)
 end
 
 slot0.InitList = slot1
 
 function slot1(slot0, slot1, slot2)
-	slot3 = defaultValue
-	slot4 = slot2
-	slot5 = true
-	slot3 = slot3(slot4, slot5)
-	slot2 = slot3
-	slot3 = slot0.instagramVOById
-	slot3 = slot3[slot1]
-	slot4 = slot0.instagramTFs
-	slot5 = slot3.id
-	slot4 = slot4[slot5]
-	slot5 = setImageSprite
-	slot7 = slot4
-	slot6 = slot4.Find
-	slot8 = "head/icon"
-	slot6 = slot6(slot7, slot8)
-	slot7 = LoadSprite
-	slot8 = "qicon/"
-	slot10 = slot3
-	slot9 = slot3.GetIcon
-	slot9 = slot9(slot10)
-	slot8 = slot8 .. slot9
-	slot7 = slot7(slot8)
-	slot8 = false
+	slot3 = pairs
+	slot4 = slot0.cards
+	slot3, slot4, slot5 = slot3(slot4)
 
-	slot5(slot6, slot7, slot8)
+	for slot6, slot7 in slot3, slot4, slot5 do
+		slot8 = slot7.instagram
+		slot8 = slot8.id
 
-	slot5 = setText
-	slot7 = slot4
-	slot6 = slot4.Find
-	slot8 = "name"
-	slot6 = slot6(slot7, slot8)
-	slot7 = HXSet
-	slot7 = slot7.hxLan
-	slot9 = slot3
-	slot8 = slot3.GetName
+		if slot8 == slot1 then
+			slot9 = slot7
+			slot8 = slot7.Update
+			slot10 = slot0.instagramVOById
+			slot10 = slot10[slot1]
+			slot11 = slot2
 
-	slot5(slot6, slot7(slot8(slot9)))
-
-	slot6 = slot0
-	slot5 = slot0.SetImageByUrl
-	slot8 = slot3
-	slot7 = slot3.GetImage
-	slot7 = slot7(slot8)
-	slot9 = slot4
-	slot8 = slot4.Find
-	slot10 = "image"
-
-	slot5(slot6, slot7, slot8(slot9, slot10))
-
-	slot5 = setText
-	slot7 = slot4
-	slot6 = slot4.Find
-	slot8 = "Text"
-	slot6 = slot6(slot7, slot8)
-	slot7 = HXSet
-	slot7 = slot7.hxLan
-	slot9 = slot3
-	slot8 = slot3.GetContent
-
-	slot5(slot6, slot7(slot8(slot9)))
-
-	slot5 = setText
-	slot7 = slot4
-	slot6 = slot4.Find
-	slot8 = "like/Text"
-	slot6 = slot6(slot7, slot8)
-	slot8 = slot3
-	slot7 = slot3.GetLikeCnt
-
-	slot5(slot6, slot7(slot8))
-
-	slot5 = onButton
-	slot6 = slot0
-	slot7 = slot4
-
-	function slot8()
-		slot0 = slot0
-		slot1 = slot0
-		slot0 = slot0.EnterDetail
-		slot2 = slot1
-
-		slot0(slot1, slot2)
+			slot8(slot9, slot10, slot11)
+		end
 	end
-
-	slot9 = SFX_PANEL
-
-	slot5(slot6, slot7, slot8, slot9)
-
-	if slot2 then
-		slot6 = slot0
-		slot5 = slot0.AddCommentTimer
-		slot7 = slot3
-
-		slot5(slot6, slot7)
-	end
-
-	slot5 = setActive
-	slot7 = slot4
-	slot6 = slot4.Find
-	slot8 = "head/tip"
-	slot6 = slot6(slot7, slot8)
-	slot8 = slot3
-	slot7 = slot3.ShouldShowTip
-
-	slot5(slot6, slot7(slot8))
 end
 
 slot0.UpdateInstagram = slot1
@@ -1084,107 +1052,6 @@ end
 
 slot0.UpdateReplys = slot1
 
-function slot1(slot0, slot1)
-	slot2 = slot0.timers
-	slot3 = slot1.id
-	slot2 = slot2[slot3]
-
-	if slot2 then
-		slot2 = slot0.timers
-		slot3 = slot1.id
-		slot2 = slot2[slot3]
-		slot3 = slot2
-		slot2 = slot2.Stop
-
-		slot2(slot3)
-
-		slot2 = slot0.timers
-		slot3 = slot1.id
-		slot4 = nil
-		slot2[slot3] = slot4
-	end
-
-	slot3 = slot1
-	slot2 = slot1.GetFastestRefreshTime
-	slot2 = slot2(slot3)
-
-	if slot2 then
-		slot3 = pg
-		slot3 = slot3.TimeMgr
-		slot3 = slot3.GetInstance
-		slot3 = slot3()
-		slot4 = slot3
-		slot3 = slot3.GetServerTime
-		slot3 = slot3(slot4)
-		slot4 = slot2 - slot3
-		slot5 = 0
-
-		if slot4 <= slot5 then
-			slot6 = slot0
-			slot5 = slot0.emit
-			slot7 = InstagramMediator
-			slot7 = slot7.ON_COMMENT_LIST_UPDATE
-			slot8 = slot0.activityVO
-			slot8 = slot8.id
-			slot9 = slot1.id
-
-			slot5(slot6, slot7, slot8, slot9)
-		else
-			slot5 = slot0.timers
-			slot6 = slot1.id
-			slot7 = Timer
-			slot7 = slot7.New
-
-			function slot8()
-				slot0 = slot0
-				slot1 = slot0
-				slot0 = slot0.emit
-				slot2 = InstagramMediator
-				slot2 = slot2.ON_COMMENT_LIST_UPDATE
-				slot3 = slot0
-				slot3 = slot3.activityVO
-				slot3 = slot3.id
-				slot4 = slot1
-				slot4 = slot4.id
-
-				slot0(slot1, slot2, slot3, slot4)
-			end
-
-			slot9 = slot4
-			slot10 = 1
-			slot7 = slot7(slot8, slot9, slot10)
-			slot5[slot6] = slot7
-			slot5 = slot0.timers
-			slot6 = slot1.id
-			slot5 = slot5[slot6]
-			slot6 = slot5
-			slot5 = slot5.Start
-
-			slot5(slot6)
-		end
-	end
-end
-
-slot0.AddCommentTimer = slot1
-
-function slot1(slot0)
-	slot1 = pairs
-	slot2 = slot0.timers
-	slot1, slot2, slot3 = slot1(slot2)
-
-	for slot4, slot5 in slot1, slot2, slot3 do
-		slot7 = slot5
-		slot6 = slot5.Stop
-
-		slot6(slot7)
-	end
-
-	slot1 = {}
-	slot0.timers = slot1
-end
-
-slot0.RemoveTimers = slot1
-
 function slot1(slot0)
 	slot1 = slot0.contextData
 	slot1 = slot1.instagram
@@ -1325,13 +1192,21 @@ function slot1(slot0)
 
 	slot1(slot2)
 
-	slot2 = slot0
-	slot1 = slot0.RemoveTimers
-
-	slot1(slot2)
-
 	slot1 = nil
 	slot0.sprites = slot1
+	slot1 = pairs
+	slot2 = slot0.cards
+	slot1, slot2, slot3 = slot1(slot2)
+
+	for slot4, slot5 in slot1, slot2, slot3 do
+		slot7 = slot5
+		slot6 = slot5.Dispose
+
+		slot6(slot7)
+	end
+
+	slot1 = {}
+	slot0.cards = slot1
 end
 
 slot0.willExit = slot1

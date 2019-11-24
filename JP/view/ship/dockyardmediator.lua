@@ -107,7 +107,8 @@ slot0.listNotificationInterests = function (slot0)
 		GAME.UPDATE_EXERCISE_FLEET_DONE,
 		GAME.CANCEL_LEARN_TACTICS_DONE,
 		PlayerProxy.UPDATED,
-		GAME.WORLD_SHIP_REPAIR_DONE
+		GAME.WORLD_SHIP_REPAIR_DONE,
+		GAME.UPDATE_LOCK_DONE
 	}
 end
 
@@ -180,6 +181,10 @@ slot0.handleNotification = function (slot0, slot1)
 		end
 	elseif slot2 == GAME.EXIT_SHIP_DONE then
 		slot0:setShipFlag(slot3.id, "inBackyard", false)
+		slot0.viewComponent:updateShipStatusById(slot3.id)
+	elseif slot2 == GAME.UPDATE_LOCK_DONE then
+		slot0.shipsById[slot3.id].lockState = slot3.lockState
+
 		slot0.viewComponent:updateShipStatusById(slot3.id)
 	elseif slot2 == GAME.CANCEL_LEARN_TACTICS_DONE then
 		slot0:setShipFlag(slot3.shipId, "inTactics", false)

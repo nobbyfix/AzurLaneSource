@@ -3727,11 +3727,30 @@ end
 slot0.tryPlayMapStory = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if Application.isEditor and not ENABLE_GUIDE then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 8-8, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 9-16, warpins: 2 ---
 	if slot0.contextData.map:getConfig("enter_story") and slot1 ~= "" and not pg.SystemOpenMgr.GetInstance().active then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 18-27, warpins: 1 ---
+		--- BLOCK #0 26-35, warpins: 1 ---
 		pg.StoryMgr.GetInstance():Play(slot1, function (slot0)
 
 			-- Decompilation error in this vicinity:
@@ -3795,7 +3814,7 @@ slot0.tryPlayMapStory = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 28-36, warpins: 3 ---
+		--- BLOCK #0 36-44, warpins: 3 ---
 		pg.SystemOpenMgr.GetInstance():notification(slot0.player.level)
 		--- END OF BLOCK #0 ---
 
@@ -3803,16 +3822,24 @@ slot0.tryPlayMapStory = function (slot0)
 
 	end
 
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #1
+	FLOW; TARGET BLOCK #2
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 37-38, warpins: 2 ---
+	--- BLOCK #2 45-46, warpins: 2 ---
 	return
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 47-47, warpins: 2 ---
+	--- END OF BLOCK #3 ---
 
 
 
@@ -4373,8 +4400,8 @@ slot0.displayFleetSelect = function (slot0, slot1, slot2)
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 33-73, warpins: 1 ---
 			slot2 = {
-				[TeamType.Vanguard] = #slot1.fleets[slot0[1]]:getTeamByName(Fleet.VANGUARD),
-				[TeamType.Main] = #slot1.fleets[slot0[1]]:getTeamByName(Fleet.MAIN)
+				[TeamType.Vanguard] = #slot1.fleets[slot0[1]]:getTeamByName(TeamType.Vanguard),
+				[TeamType.Main] = #slot1.fleets[slot0[1]]:getTeamByName(TeamType.Main)
 			}
 			slot3 = {
 				[TeamType.Vanguard] = 0,

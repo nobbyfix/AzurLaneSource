@@ -50,7 +50,7 @@ slot0.OnFirstFlush = function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-22, warpins: 1 ---
-		slot0:emit(ActivityMediator.GO_DODGEM, slot1:getConfig("config_client").stage_ids[math.min(slot0.progess + 1, slot0.maxday)])
+		slot0:emit(ActivityMediator.GO_SUBMARINE_RUN, slot1:getConfig("config_client").stage_ids[math.min(slot0.progess + 1, slot0.maxday)])
 
 		return
 		--- END OF BLOCK #0 ---

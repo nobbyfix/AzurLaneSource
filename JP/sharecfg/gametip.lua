@@ -1079,6 +1079,14 @@ pg.gametip = {
 		tip = "演習進捗：",
 		key = "battle_result_contribution"
 	},
+	battle_result_total_score = {
+		tip = "スコア：",
+		key = "battle_result_total_score"
+	},
+	battle_result_max_combo = {
+		tip = "最大コンボ：",
+		key = "battle_result_max_combo"
+	},
 	battle_levelScene_0Oil = {
 		tip = "燃料ポイントが空になりました",
 		key = "battle_levelScene_0Oil"
@@ -4827,7 +4835,7 @@ pg.gametip = {
 					atlas = "attricon",
 					posY = -6,
 					scale = 0.6,
-					path = "damage"
+					path = "cannon"
 				}
 			},
 			{
@@ -4901,7 +4909,7 @@ pg.gametip = {
 					atlas = "attricon",
 					posY = -6,
 					scale = 0.6,
-					path = "luck"
+					path = "expend"
 				}
 			},
 			{
@@ -4956,7 +4964,7 @@ pg.gametip = {
 					atlas = "attricon",
 					posY = -6,
 					scale = 1,
-					path = "icon_luck"
+					path = "luck"
 				}
 			},
 			{
@@ -8322,18 +8330,6 @@ pg.gametip = {
 			{
 				icon = {
 					path = "",
-					atlas = "helpbg/battle_fc_1"
-				}
-			},
-			{
-				icon = {
-					path = "",
-					atlas = "helpbg/battle_fc_2"
-				}
-			},
-			{
-				icon = {
-					path = "",
 					atlas = "helpbg/level_ui_help_1"
 				}
 			},
@@ -8575,7 +8571,7 @@ pg.gametip = {
 		key = "resource_verify_warn"
 	},
 	resource_verify_fail = {
-		tip = "キャッシュクリアが完了しました。「確定」をタップしてゲームを再起動し、最新データの適用をお願いします（$1）",
+		tip = "キャッシュクリアが完了しました。「確定」をタップしてゲームを再起動し、最新データの適用をお願いします$1",
 		key = "resource_verify_fail"
 	},
 	resource_verify_success = {
@@ -8926,7 +8922,7 @@ pg.gametip = {
 		key = "buildship_heavy_tip"
 	},
 	buildship_light_tip = {
-		tip = "「スモーリー」、「若葉」常設追加！",
+		tip = "「スタンリー」、「グラスゴー」常設追加！",
 		key = "buildship_light_tip"
 	},
 	buildship_special_tip = {
@@ -11680,6 +11676,30 @@ staff）にて告知されます。
 		tip = "撃破数：",
 		key = "pt_ship_goal"
 	},
+	option_desc1 = {
+		tip = "（ON状態）他指揮官の艦船につけられた独自の名前を表示する",
+		key = "option_desc1"
+	},
+	option_desc2 = {
+		tip = "（ON状態）自律戦闘モードで戦闘終了時、端末バイブレーション機能で通知する",
+		key = "option_desc2"
+	},
+	option_desc3 = {
+		tip = "（ON状態）レアリティSSR以上の艦船入手時、端末バイブレーション機能で通知する",
+		key = "option_desc3"
+	},
+	option_desc4 = {
+		tip = "（OFF状態）図鑑に登録済みのレアリティR以下の艦船入手時、入手演出をスキップする",
+		key = "option_desc4"
+	},
+	option_desc5 = {
+		tip = "（ON状態）画面タップ時、タップ時演出を表示する",
+		key = "option_desc5"
+	},
+	option_desc6 = {
+		tip = "（ON状態）ロード画面のアスペクト比に端末の画面設定を適用させる",
+		key = "option_desc6"
+	},
 	music_collection = {
 		key = "music_collection",
 		tip = {
@@ -11852,6 +11872,125 @@ staff）にて告知されます。
 	reselect_music_game = {
 		tip = "進行中のゲームを中断し、曲選択からやり直しますか？",
 		key = "reselect_music_game"
+	},
+	pocky_jiujiu = {
+		tip = "饅頭量産中",
+		key = "pocky_jiujiu"
+	},
+	pocky_jiujiu_desc = {
+		tip = "今日も饅頭たちが頑張って働いている…",
+		key = "pocky_jiujiu_desc"
+	},
+	pocky_help = {
+		key = "pocky_help",
+		tip = {
+			{
+				info = "■開催時間\n 11月14日（木）メンテナンス後～12月15日（日）\n23:59"
+			},
+			{
+				info = [[
+■遊び方
+ 饅頭量産計画とは、イベントページで確認できる3種類
+の限定任務を完了させることで、ベルファストの着せ替
+え「メイド長とお買い物」を入手できるミニイベントで
+す。]]
+			},
+			{
+				info = [[
+■限定任務について
+ 限定任務は全部で3種類あり、イベントページでは「ロ
+グイン」「委託」「生産」ボタンでそれぞれ完了させる
+ことが出来ます。
+・「ログイン」はゲームにログインし、イベントページ
+の「ログイン」ボタンをタップすると自動で完了できま
+す。
+・「委託」はメイド長からの様々な委託をこなすことで
+任務を完了できます。
+・「生産」はイベント期間中累計燃料消費数が一定数値
+以上になった場合に完了できます。]]
+			},
+			{
+				info = [[
+■注意
+・「委託」任務はイベントページの「ログイン」ボタン
+をタップすると表示されます。
+・限定任務は1日に1段階開放され、次の任務を表示させ
+るには前日分の任務を全て完了させる必要があります。
+  11月27日（水）より全ての任務が開放されます。]]
+			}
+		}
+	},
+	secretary_help = {
+		key = "secretary_help",
+		tip = {
+			{
+				info = [[
+■秘書艦について
+
+秘書艦とは、執務室（メイン画面）において指揮官の
+業務を補佐する艦船のことを指します。
+秘書艦は最大5名まで配置可能で、2人目以降の秘書艦
+を配置するには秘書艦枠を開放する必要があります。]]
+			},
+			{
+				info = [[
+■秘書艦枠について
+
+秘書艦枠とは、指揮官が艦船を配置し、秘書艦に任命
+する枠を指します。
+・秘書艦枠は最大5つまで開放できます。また、秘書艦
+枠には同名艦船を複数配置できます。
+・秘書艦枠はメイン海域の攻略進捗によって開放され
+ます。
+・<color=#92fc63>初期から開放されている秘書艦枠</color>（一番左の枠）に
+配置した秘書艦のみ、<color=#92fc63>好感度ボーナス</color>を得ることが
+できます。また、演習やランキング、チャット、
+大艦隊など、「秘書艦アイコン」が表示される画面では、
+一番左に配置した秘書艦が表示されます。
+・秘書艦の配置（枠確認）は、指揮官情報ページの
+「秘書艦変更」をタップすることで行うことができます。
+・メイン画面では、秘書艦枠からランダムな一名の
+秘書艦が表示されます。
+・メイン画面で表示される秘書艦の着せ替え/背景/
+L2DアニメーションのON・OFFは秘書艦変更画面で
+変更できます。
+・メイン画面左側の秘書艦表示変更ボタンで現在表示
+されている秘書艦を変更することができます。
+]]
+			}
+		}
+	},
+	secretary_unlock2 = {
+		tip = "3-4クリアで開放",
+		key = "secretary_unlock2"
+	},
+	secretary_unlock3 = {
+		tip = "6-4クリアで開放",
+		key = "secretary_unlock3"
+	},
+	secretary_unlock4 = {
+		tip = "9-4クリアで開放",
+		key = "secretary_unlock4"
+	},
+	secretary_unlock5 = {
+		tip = "12-4クリアで開放",
+		key = "secretary_unlock5"
+	},
+	secretary_closed = {
+		tip = "準備中です",
+		key = "secretary_closed"
+	},
+	confirm_unlock = {
+		tip = "$1は現在「保護（ロック掛け）」状態になっています。\n$1をアンロックしますか？",
+		key = "confirm_unlock"
+	},
+	secretary_pos_save = {
+		tip = "秘書艦の表示設定を保存しますか？",
+		key = "secretary_pos_save"
+	},
+	secretary_pos_save_success = {
+		tip = "秘書艦の表示設定を保存しました",
+		key = "secretary_pos_save_success"
 	}
 }
 

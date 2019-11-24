@@ -428,6 +428,9 @@ slot0.register = function (slot0)
 				slot11 = slot9.args[1][2]
 
 				if slot3:getActivityById(slot9.activity_id) and not slot12:isEnd() and not slot2:getTaskById(slot11) and not slot2:getFinishTaskById(slot11) then
+					slot0.viewComponent.chatFlag = nil
+					slot0.viewComponent._lastChatTween = nil
+
 					slot0:sendNotification(GAME.ACTIVITY_OPERATION, {
 						cmd = 1,
 						activity_id = slot10
@@ -677,7 +680,8 @@ slot0.listNotificationInterests = function (slot0)
 		PERMISSION_NEVER_REMIND,
 		MiniGameProxy.ON_HUB_DATA_UPDATE,
 		VoteProxy.VOTE_ORDER_BOOK_DELETE,
-		VoteProxy.VOTE_ORDER_BOOK_UPDATE
+		VoteProxy.VOTE_ORDER_BOOK_UPDATE,
+		GAME.ON_OPEN_INS_LAYER
 	}
 end
 
@@ -688,6 +692,8 @@ slot0.handleNotification = function (slot0, slot1)
 		slot0.viewComponent:updatePlayerInfo(slot3)
 		slot3:display()
 		slot0:updateCommissionNotices()
+	elseif slot2 == GAME.ON_OPEN_INS_LAYER then
+		slot0.viewComponent:emit(slot0.OPEN_INS)
 	elseif slot2 == BayProxy.SHIP_REMOVED then
 		slot3:display()
 	elseif slot2 == FleetProxy.FLEET_RENAMED then
@@ -715,6 +721,12 @@ slot0.handleNotification = function (slot0, slot1)
 		slot0:updateChat()
 	elseif slot2 == GAME.LOAD_SCENE_DONE or slot2 == GAME.GUIDE_FINISH then
 		if not LOCK_TECHNOLOGY and pg.SystemOpenMgr.GetInstance():isOpenSystem(getProxy(PlayerProxy):getData().level, "TechnologyMediator") then
+			if Application.isEditor and not ENABLE_GUIDE then
+				slot0:handleEnterMainUI()
+
+				return
+			end
+
 			if not pg.StoryMgr.GetInstance():IsPlayed("FANGAN1") then
 				slot0:sendNotification(GAME.GO_SCENE, SCENE.SELTECHNOLOGY)
 				pg.StoryMgr.GetInstance():Play("FANGAN1", function ()
@@ -837,12 +849,6 @@ slot0.handleEnterMainUI = function (slot0)
 		end
 
 		coroutine.resume(coroutine.create(function ()
-			if slot0.contextData.subContext then
-				slot0:addSubLayers(slot0.contextData.subContext)
-
-				return
-			end
-
 			slot0:playStroys(function ()
 				onNextTick(onNextTick)
 			end)
@@ -870,6 +876,10 @@ slot0.handleEnterMainUI = function (slot0)
 					mediator = BulletinBoardMediator,
 					viewComponent = BulletinBoardLayer
 				}))
+			elseif slot0.contextData.subContext then
+				slot0:addSubLayers(slot0.contextData.subContext)
+
+				slot0.contextData.subContext = nil
 			else
 				slot0:tryPlayGuide()
 			end
@@ -905,7 +915,7 @@ slot0.playStroys = function (slot0, slot1)
 		end
 	end
 
-	if getProxy(PlayerProxy):getData().level >= 40 and not slot4:IsPlayed("ZHIHUIMIAO1") then
+	if Application.isEditor and not ENABLE_GUIDE and getProxy(PlayerProxy):getData().level >= 40 and not slot4:IsPlayed("ZHIHUIMIAO1") then
 		table.insert(slot3, function (slot0)
 			slot0:Play("ZHIHUIMIAO1", slot0, true, true)
 		end)

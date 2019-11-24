@@ -471,8 +471,8 @@ slot0.resetFlag = function (slot0)
 end
 
 slot0.switchToEditMode = function (slot0, slot1)
-	slot0:EnableAddGrid(Fleet.MAIN)
-	slot0:EnableAddGrid(Fleet.VANGUARD)
+	slot0:EnableAddGrid(TeamType.Main)
+	slot0:EnableAddGrid(TeamType.Vanguard)
 
 	local function slot2(slot0)
 		for slot4, slot5 in ipairs(slot0) do

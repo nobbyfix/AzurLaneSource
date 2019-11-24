@@ -46,6 +46,7 @@ SCENE = {
 	ACTIVITY = "scene activity",
 	SUMMER_FEAST = "summer feast",
 	BULLETINBOARD = "scene bulletinboard",
+	IDOL_MEDAL_COLLECTION_SCENE = "IDOL_MEDAL_COLLECTION_SCENE",
 	COMMANDROOM = "scene command room",
 	BACKYARD = "scene back yard",
 	BIANDUI = "scene biandui",

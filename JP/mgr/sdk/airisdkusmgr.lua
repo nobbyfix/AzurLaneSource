@@ -46,6 +46,7 @@ function AiriLogin(slot0)
 		end()
 	else
 		print("AiriLogin failed")
+		print(debug.traceback())
 	end
 end
 
@@ -144,11 +145,11 @@ return {
 	AiriInit = function (slot0)
 		pg.UIMgr.GetInstance():LoadingOn()
 		slot0:InitSdk()
-		print("AiriSdk Version:" .. slot1.AiriSDK_VERSION)
 		print("CSharpVersion:" .. tostring(CSharpVersion))
 	end,
 	AiriLogin = function ()
-		slot0:Login()
+		pg.UIMgr.GetInstance():LoadingOn()
+		pg.UIMgr.GetInstance().LoadingOn:Login()
 	end,
 	LoginWithSocial = function (slot0, slot1, slot2)
 		pg.UIMgr.GetInstance():LoadingOn()
@@ -162,6 +163,7 @@ return {
 		end
 	end,
 	LoginWithTranscode = function (slot0, slot1)
+		pg.UIMgr.GetInstance():LoadingOn()
 		slot0:LoginWithTranscode(slot0, slot1)
 	end,
 	TranscodeRequest = function ()

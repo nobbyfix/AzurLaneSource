@@ -1,6 +1,7 @@
 slot0 = class("PlayerInfoMediator", import("..base.ContextMediator"))
 slot0.CHANGE_NAME = "PlayerInfoMediator:CHANGE_NAME"
 slot0.CHANGE_PAINT = "PlayerInfoMediator:CHANGE_ICON"
+slot0.CHANGE_PAINTS = "PlayerInfoMediator:CHANGE_ICONS"
 slot0.CHANGE_MANIFESTO = "PlayerInfoMediator:CHANGE_MANIFESTO"
 slot0.GO_BACKYARD = "PlayerInfoMediator:GO_BACKYARD"
 slot0.GO_COLLECTION = "PlayerInfoMediator:GO_COLLECTION"
@@ -23,7 +24,7 @@ slot0.register = function (slot0)
 
 	slot0.shipVO = slot3:getShipById(getProxy(PlayerProxy).getData(slot1).character)
 
-	slot0.viewComponent:setFlagShip(slot4)
+	slot0.viewComponent:setCurrentFlagship(slot4)
 
 	slot5 = getProxy(CollectionProxy)
 
@@ -53,20 +54,29 @@ slot0.register = function (slot0)
 	end
 
 	slot0:bind(slot0.CHANGE_PAINT, function (slot0, slot1)
-		slot0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
-			selectedMax = 1,
-			flags = slot1,
-			ignoredIds = slot2,
-			onShip = function (slot0)
-				if slot0 == slot0.id then
-					return false, i18n("playerinfo_ship_is_already_flagship")
-				end
+		slot2 = {}
+		slot0.contextData.showSelectCharacters = true
 
-				return true
-			end,
-			onSelected = function (slot0)
-				slot0.contextData.shipIdToAdd = slot0[1]
+		for slot6, slot7 in ipairs(slot0.viewComponent.player.characters) do
+			if not slot1 or slot7 ~= slot1.id then
+				table.insert(slot2, slot7)
 			end
+		end
+
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
+			selectedMax = slot0.viewComponent.secretary_max,
+			flags = slot1,
+			selectedIds = slot2,
+			ignoredIds = slot2,
+			onSelected = function (slot0)
+				slot0.contextData.showSelectCharacters = false
+				slot0.contextData.shipIdToAdd = slot0
+			end
+		})
+	end)
+	slot0:bind(slot0.CHANGE_PAINTS, function (slot0, slot1)
+		slot0:sendNotification(GAME.CHANGE_PLAYER_ICON, {
+			characterId = slot1
 		})
 	end)
 	slot0:bind(slot0.GO_BACKYARD, function (slot0)
@@ -109,10 +119,17 @@ slot0.register = function (slot0)
 	slot0.viewComponent:updateAttireBtn(_.any(getProxy(AttireProxy):needTip(), function (slot0)
 		return slot0 == true
 	end))
+
+	if slot0.contextData.showSelectCharacters then
+		slot0.viewComponent:showCharacters()
+
+		slot0.contextData.showSelectCharacters = false
+	end
 end
 
 slot0.listNotificationInterests = function (slot0)
 	return {
+		SetShipSkinCommand.SKIN_UPDATED,
 		PlayerProxy.UPDATED,
 		GAME.CHANGE_PLAYER_ICON_DONE,
 		GAME.CHANGE_PLAYER_NAME_DONE,
@@ -128,10 +145,13 @@ slot0.handleNotification = function (slot0, slot1)
 
 	if slot1:getName() == PlayerProxy.UPDATED then
 		slot0.viewComponent:setPlayer(slot3)
+	elseif slot2 == SetShipSkinCommand.SKIN_UPDATED then
+		slot0.viewComponent:updateCardByShip(slot3.ship)
 	elseif slot2 == GAME.CHANGE_PLAYER_ICON_DONE then
 		slot0.shipVO = slot3.ship
 
-		slot0.viewComponent:setFlagShip(slot0.shipVO)
+		slot0.viewComponent:setCurrentFlagship(slot0.shipVO)
+		slot0.viewComponent:showCharacters()
 
 		slot0.contextData.shipIdToAdd = nil
 	elseif slot2 == GAME.CHANGE_PLAYER_NAME_DONE then
@@ -142,10 +162,10 @@ slot0.handleNotification = function (slot0, slot1)
 		slot0.viewComponent:closeAddMedalPanel()
 	elseif slot2 == BayProxy.SHIP_UPDATED then
 		if slot3.id == slot0.shipVO.id then
-			slot0.viewComponent:setFlagShip(slot3)
+			slot0.viewComponent:setCurrentFlagship(slot3)
 		end
 	elseif slot2 == GAME.UPDATE_SKINCONFIG and slot3.skinId == slot0.shipVO.skinId then
-		slot0.viewComponent:setFlagShip(slot0.shipVO)
+		slot0.viewComponent:setCurrentFlagship(slot0.shipVO)
 	end
 end
 

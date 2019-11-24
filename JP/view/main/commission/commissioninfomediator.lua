@@ -8,6 +8,7 @@ slot0.ON_ACTIVE_CLASS = "CommissionInfoMediator:ON_ACTIVE_CLASS"
 slot0.ON_ACTIVE_TECH = "CommissionInfoMediator:ON_ACTIVE_TECH"
 slot0.ON_TECH_TIME_OVER = "CommissionInfoMediator:ON_TECH_TIME_OVER"
 slot0.ON_TECH_FINISHED = "CommissionInfoMediator:ON_TECH_FINISHED"
+slot0.ON_INS = "CommissionInfoMediator:ON_INS"
 
 slot0.register = function (slot0)
 	slot0.viewComponent:setProxies(slot1, slot2, slot3)
@@ -61,6 +62,16 @@ slot0.register = function (slot0)
 	slot0:bind(slot0.GET_GOLD_RES, function (slot0)
 		slot0:sendNotification(GAME.HARVEST_RES, ResourceField.TYPE_GOLD)
 	end)
+	slot0:bind(slot0.ON_INS, function (slot0)
+		slot0:sendNotification(GAME.ON_OPEN_INS_LAYER)
+		slot0.viewComponent:emit(BaseUI.ON_CLOSE)
+	end)
+	slot0:Notify()
+end
+
+slot0.Notify = function (slot0)
+	slot0.viewComponent:NotifyIns(getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_INSTAGRAM))
+	slot0.viewComponent:UpdateLinkPanel()
 end
 
 slot0.continueClass = function (slot0, slot1, slot2, slot3)

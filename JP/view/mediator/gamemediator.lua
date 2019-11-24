@@ -207,6 +207,9 @@ slot0.handleNotification = function (slot0, slot1)
 		elseif slot3 == SCENE.ATTIRE then
 			slot4.mediator = AttireMediator
 			slot4.viewComponent = AttireScene
+		elseif slot3 == SCENE.IDOL_MEDAL_COLLECTION_SCENE then
+			slot4.mediator = IdolMedalCollectionMediator
+			slot4.viewComponent = IdolMedalCollectionView
 		end
 
 		print("load scene: " .. slot3)

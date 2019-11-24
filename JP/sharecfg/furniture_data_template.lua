@@ -2861,6 +2861,86 @@ pg.furniture_data_template = {
 		},
 		interAction_group = {}
 	},
+	[150] = {
+		advice = 0,
+		name = "移動式物流饅頭基地車",
+		count = 1,
+		type = 7,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 1,
+		picture = "chuanmo/amazon",
+		can_rotate = 1,
+		dorm_icon_price = 500,
+		not_for_sale = 1,
+		icon = "amazonicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 5,
+		tag = 6,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 150,
+		comfortable = 0,
+		describe = "舞台裏を支える皆様にも感謝を！",
+		dorm_id = 0,
+		gem_price = 0,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 0,
+		discount_time = "",
+		size = {
+			15,
+			10
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"dance",
+				{
+					24,
+					-67
+				},
+				{
+					1,
+					1
+				}
+			},
+			{
+				"sit",
+				{
+					-247,
+					-149
+				},
+				{
+					-1,
+					1
+				},
+				"chuanmo/amazon_using2"
+			},
+			{
+				"sit",
+				{
+					377.7,
+					-22.7
+				},
+				{
+					-1,
+					1
+				},
+				"chuanmo/amazon_using"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		interAction_group = {}
+	},
 	[151] = {
 		can_rotate = 0,
 		name = "帝国大記念章 ",
@@ -4074,7 +4154,7 @@ pg.furniture_data_template = {
 		interAction_group = {}
 	},
 	[1107] = {
-		can_rotate = 0,
+		can_rotate = 1,
 		name = "大根鉢",
 		gain_by = "",
 		type = 2,
@@ -91631,6 +91711,112 @@ pg.furniture_data_template = {
 		},
 		interAction_group = {}
 	},
+	[54104] = {
+		advice = 0,
+		name = "キラッとストロベリー",
+		count = 1,
+		type = 2,
+		dir = 0,
+		gain_by = "",
+		is_get_time_note = 0,
+		belong = 1,
+		can_rotate = 1,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 1,
+		icon = "pockyhezi2icon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 6,
+		picture = "",
+		canputon = 0,
+		discount = 0,
+		id = 54104,
+		comfortable = 3,
+		describe = "ストロベリーテイストの美味しい光",
+		dorm_id = 0,
+		gem_price = 1000,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"pockyhezi2",
+				"action"
+			}
+		},
+		interAction_group = {}
+	},
+	[54105] = {
+		advice = 0,
+		name = "プリッとチョコ",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "pocky/pockywash2",
+		can_rotate = 0,
+		dorm_icon_price = 0,
+		not_for_sale = 1,
+		icon = "pockywash2icon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 6,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 54105,
+		comfortable = 3,
+		describe = "「美味しくコーティングするピョ！」",
+		dorm_id = 0,
+		gem_price = 1000,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			8,
+			7
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"wash",
+				{
+					-86,
+					-63
+				},
+				{
+					1,
+					1
+				},
+				"pocky/pockywash_using2"
+			}
+		},
+		can_trigger = {
+			0
+		},
+		interAction_group = {}
+	},
 	all = {
 		1,
 		2,
@@ -91684,6 +91870,7 @@ pg.furniture_data_template = {
 		145,
 		148,
 		149,
+		150,
 		151,
 		155,
 		100002,
@@ -92970,7 +93157,9 @@ pg.furniture_data_template = {
 		53301,
 		53302,
 		53303,
-		53304
+		53304,
+		54104,
+		54105
 	}
 }
 

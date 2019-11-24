@@ -96,14 +96,13 @@ slot0.initResDownloadPanel = function (slot0, slot1)
 
 	slot0.repairBtn = slot0:findTF("main/resources/main_panel/settings/buttons/repair")
 	slot0.repairProgress = slot0.repairBtn:Find("progress")
-	slot0.repairHashPath = Application.persistentDataPath .. "/hashes.csv"
 
-	setActive(slot0.repairBtn, PLATFORM_CODE ~= PLATFORM_JP and PathMgr.FileExists(slot0.repairHashPath))
+	setActive(slot0.repairBtn, PathMgr.FileExists(Application.persistentDataPath .. "/hashes.csv") and PLATFORM_CODE ~= PLATFORM_JP)
 	onButton(slot0, slot0.repairBtn, function ()
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			content = i18n("resource_verify_warn"),
 			onYes = function ()
-				slot0:resourceVerify()
+				resourceVerify(slot0.repairMask, slot0.repairProgress)
 			end
 		})
 	end, SFX_PANEL)
@@ -168,31 +167,37 @@ end
 slot1 = {}
 slot2 = {
 	{
-		title = i18n("words_show_ship_name_label")
+		title = i18n("words_show_ship_name_label"),
+		desc = i18n("option_desc1")
 	},
 	{
 		title = i18n("words_auto_battle_label"),
-		name = AUTO_BATTLE_LABEL
+		name = AUTO_BATTLE_LABEL,
+		desc = i18n("option_desc2")
 	},
 	{
 		default = 1,
 		title = i18n("words_rare_ship_vibrate"),
-		name = RARE_SHIP_VIBRATE
+		name = RARE_SHIP_VIBRATE,
+		desc = i18n("option_desc3")
 	},
 	{
 		default = 1,
 		title = i18n("words_display_ship_get_effect"),
-		name = DISPLAY_SHIP_GET_EFFECT
+		name = DISPLAY_SHIP_GET_EFFECT,
+		desc = i18n("option_desc4")
 	},
 	{
 		default = 1,
 		title = i18n("words_show_touch_effect"),
-		name = SHOW_TOUCH_EFFECT
+		name = SHOW_TOUCH_EFFECT,
+		desc = i18n("option_desc5")
 	},
 	{
 		default = 0,
 		title = i18n("words_bg_fit_mode"),
-		name = BG_FIT_MODE
+		name = BG_FIT_MODE,
+		desc = i18n("option_desc6")
 	}
 }
 
@@ -223,6 +228,13 @@ slot0.initOptionsPanel = function (slot0, slot1)
 		slot15 = cloneTplTo(slot8, slot6)
 
 		setText(slot0:findTF("Text", slot15), slot14.title)
+		onButton(slot0, slot0:findTF("Text", slot15), function ()
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				hideNo = true,
+				hideYes = true,
+				content = slot0.desc
+			})
+		end)
 		onToggle(slot0, slot15:Find("on"), function (slot0)
 			pg.PushNotificationMgr.GetInstance():setSwitch(slot0.id, slot0)
 		end, SFX_UI_TAG, SFX_UI_CANCEL)
@@ -233,7 +245,14 @@ slot0.initOptionsPanel = function (slot0, slot1)
 	slot8 = slot7:Find("notify_tpl")
 
 	for slot13, slot14 in pairs(slot0) do
-		setText(slot0:findTF("Text", cloneTplTo(slot8, slot7)), slot14.title)
+		setText(slot0:findTF("Text", slot15), slot14.title)
+		onButton(slot0, slot0:findTF("Text", cloneTplTo(slot8, slot7)), function ()
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				hideNo = true,
+				hideYes = true,
+				content = slot0.desc
+			})
+		end)
 
 		if slot13 == 1 then
 			onToggle(slot0, slot15:Find("on"), function (slot0)
@@ -724,14 +743,13 @@ slot0.initOtherPanel = function (slot0)
 	end
 
 	slot0.notchPanel = slot0:findTF("main/options/scroll_view/Viewport/content/notch_setting")
-	slot4 = 2
 
-	if 2 < Screen.width / Screen.height - 0.001 then
+	if ADAPT_TARGET < Screen.width / Screen.height - 0.001 then
 		setActive(slot0.notchPanel, true)
 
 		slot0.notchSlider = slot0:findTF("slider", slot0.notchPanel)
 
-		setSlider(slot0.notchSlider, slot4, slot2, getProxy(SettingsProxy):GetScreenRatio())
+		setSlider(slot0.notchSlider, ADAPT_MIN, slot2, getProxy(SettingsProxy):GetScreenRatio())
 		slot0:initSoundSlider(slot0.notchSlider, function (slot0)
 			slot0:SetScreenRatio(slot0)
 
@@ -743,25 +761,25 @@ slot0.initOtherPanel = function (slot0)
 		setActive(slot0.notchPanel, false)
 	end
 
-	onButton(slot0, slot5, function ()
+	onButton(slot0, slot3, function ()
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			type = MSGBOX_TYPE_HELP,
 			helps = i18n("secondary_password_help")
 		})
 	end)
 
-	slot6 = slot0:findTF("secondpwd", slot0.otherContent)
-	slot9 = pg.SecondaryPWDMgr.GetInstance()
-	slot11 = getProxy(SecondaryPWDProxy).getRawData(slot10)
+	slot4 = slot0:findTF("secondpwd", slot0.otherContent)
+	slot7 = pg.SecondaryPWDMgr.GetInstance()
+	slot9 = getProxy(SecondaryPWDProxy).getRawData(slot8)
 
-	onButton(slot0, slot7, function ()
+	onButton(slot0, slot5, function ()
 		if slot0.state > 0 then
 			slot1:ChangeSetting({}, function ()
 				slot0:updateOtherPanel()
 			end)
 		end
 	end, SFX_UI_TAG)
-	onButton(slot0, slot8, function ()
+	onButton(slot0, slot6, function ()
 		if slot0.state <= 0 then
 			function slot0()
 				slot0:SetPassword(function ()
@@ -784,17 +802,17 @@ slot0.initOtherPanel = function (slot0)
 		end
 	end, SFX_UI_TAG)
 
-	slot12 = slot0:findTF("limited_operations/options", slot0.otherContent)
-	slot13 = slot0:findTF("notify_tpl")
+	slot10 = slot0:findTF("limited_operations/options", slot0.otherContent)
+	slot11 = slot0:findTF("notify_tpl")
 	slot0.secPwdOpts = {}
 
-	for slot17, slot18 in ipairs(slot0()) do
-		if table.contains(slot9.LIMITED_OPERATION, slot17) then
-			slot19 = cloneTplTo(slot13, slot12)
-			slot0.secPwdOpts[slot17] = slot19
+	for slot15, slot16 in ipairs(slot0()) do
+		if table.contains(slot7.LIMITED_OPERATION, slot15) then
+			slot17 = cloneTplTo(slot11, slot10)
+			slot0.secPwdOpts[slot15] = slot17
 
-			setText(slot0:findTF("Text", slot19), slot18.title)
-			onButton(slot0, slot19, function ()
+			setText(slot0:findTF("Text", slot17), slot16.title)
+			onButton(slot0, slot17, function ()
 				slot1 = nil
 
 				if not table.contains(slot0.system_list, ) then
@@ -1208,63 +1226,6 @@ slot0.willExit = function (slot0)
 
 	slot0.live2DDownloadTimer = nil
 	slot0.userProxy = nil
-end
-
-slot0.resourceVerify = function (slot0)
-	slot1 = nil
-	slot3 = {}
-
-	setActive(slot0.repairMask, true)
-
-	function slot4()
-		setActive(slot0.repairMask, false)
-		print(slot0.repairMask)
-
-		if slot0.repairMask then
-			pg.MsgboxMgr.GetInstance():ShowMsgBox({
-				content = i18n("resource_verify_fail", pg.MsgboxMgr.GetInstance()),
-				onYes = function ()
-					VersionMgr.Inst:DeleteCacheFiles()
-					Application.Quit()
-				end,
-				onNo = function ()
-					VersionMgr.Inst:DeleteCacheFiles()
-				end
-			})
-		else
-			pg.MsgboxMgr.GetInstance():ShowMsgBox({
-				content = i18n("resource_verify_success")
-			})
-		end
-	end
-
-	slot6 = nil
-
-
-	-- Decompilation error in this vicinity:
-	function (slot0)
-		if slot0 < 0 then
-			slot0()
-
-			return
-		end
-
-		setSlider(slot1.repairProgress, 0, , slot2 - slot0)
-
-		slot3 = string.split(slot3[slot0], ",")[3]
-
-		if PathMgr.FileExists(PathMgr.getAssetBundle(slot2)) and slot3 == HashUtil.CalcMD5(PathMgr.ReadAllBytes(PathMgr.getAssetBundle(slot2))) then
-			onNextTick(function ()
-				slot0(slot1 - 1)
-			end)
-
-			return
-		end
-
-		slot5 = slot2
-
-		slot0()
-	end(PathMgr.ReadAllLines(slot0.repairHashPath).Length - 1)
 end
 
 slot0.initJPAccountPanel = function (slot0, slot1)

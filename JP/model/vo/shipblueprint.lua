@@ -279,7 +279,7 @@ slot0.getBluePrintAddition = function (slot0, slot1)
 			slot5 = slot0.exp / slot0:getNextLevelExp() * slot0.strengthenConfig[slot0.level + 1].effect[slot2]
 		end
 
-		return math.floor(slot4 / slot3) + math.floor(slot5 / slot3) + (slot4 % slot3 + slot5 % slot3) / slot3, (slot4 % slot3 + slot5 % slot3) % slot3
+		return (slot4 + slot5) / slot3, (slot4 + slot5) % slot3
 	else
 		return 0, 0
 	end

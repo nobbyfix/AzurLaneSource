@@ -19,27 +19,29 @@ end
 
 slot0.Update = function (slot0)
 	slot2 = slot0.config
+	slot3 = slot0.info.row
+	slot4 = slot0.info.column
 
 	if slot0.info.attachment == ChapterConst.AttachAmbush and slot1.flag == 2 then
 	elseif slot1.flag == 0 then
 		if slot0:UpdateGO(slot0._aliveTpl) then
-			if slot2.add_icon and slot4 ~= "" then
-				setActive(findTF(slot0.tf, "labels/" .. slot4), true)
+			if slot2.add_icon and slot6 ~= "" then
+				setActive(findTF(slot0.tf, "labels/" .. slot6), true)
 			end
 
 			if slot2.icon_type == 1 then
 				slot0.tf.anchoredPosition = Vector2(0, 0)
-				slot5 = slot0.tf:Find("icon")
+				slot7 = slot0.tf:Find("icon")
 
-				if slot2.effect_prefab and #slot6 > 0 then
-					slot0:LoadPrefab("effect/" .. slot6, slot6, function (slot0)
+				if slot2.effect_prefab and #slot8 > 0 then
+					slot0:LoadPrefab("effect/" .. slot8, slot8, function (slot0)
 						slot0.transform:SetParent(slot0, false)
 
 						slot0.transform.localScale = slot0.transform.localScale
 					end)
 				end
 
-				slot0:LoadSprite("enemies/" .. slot2.icon, nil, slot5)
+				slot0:LoadSprite("enemies/" .. slot2.icon, nil, slot7)
 				setText(findTF(slot0.tf, "lv/Text"), slot2.level)
 				setActive(findTF(slot0.tf, "titleContain/bg_s"), ChapterConst.EnemySize[slot2.type] == 1 or not ChapterConst.EnemySize[slot2.type])
 				setActive(findTF(slot0.tf, "titleContain/bg_m"), ChapterConst.EnemySize[slot2.type] == 2)
@@ -69,20 +71,20 @@ slot0.Update = function (slot0)
 			end
 
 			if findTF(slot0.tf, "random_buff_container") and slot2 and #slot2.bufficon > 0 then
-				setActive(slot5, true)
-				slot0:AlignListContainer(slot5, #slot2.bufficon)
+				setActive(slot7, true)
+				slot0:AlignListContainer(slot7, #slot2.bufficon)
 
-				slot6 = 1
+				slot8 = 1
 
-				for slot10, slot11 in ipairs(slot2.bufficon) do
-					if #slot11 > 0 then
-						GetImageSpriteFromAtlasAsync("ui/levelmainscene_atlas", slot11, slot5:GetChild(slot6 - 1))
+				for slot12, slot13 in ipairs(slot2.bufficon) do
+					if #slot13 > 0 then
+						GetImageSpriteFromAtlasAsync("ui/levelmainscene_atlas", slot13, slot7:GetChild(slot8 - 1))
 
-						slot6 = slot6 + 1
+						slot8 = slot8 + 1
 					end
 				end
-			elseif slot5 then
-				setActive(slot5, false)
+			elseif slot7 then
+				setActive(slot7, false)
 			end
 		end
 
@@ -92,7 +94,7 @@ slot0.Update = function (slot0)
 			playSoundEffect(SFX_UI_WEIGHANCHOR_ENEMY)
 		end
 
-		setActive(findTF(slot0.tf, "fighting"), slot0.chapter:existFleet(FleetType.Normal, row, column))
+		setActive(findTF(slot0.tf, "fighting"), slot0.chapter:existFleet(FleetType.Normal, slot3, slot4))
 
 		if slot2.icon_type == 1 then
 			slot0.tf:GetComponent("Animator").enabled = slot1.data > 0
@@ -103,7 +105,7 @@ slot0.Update = function (slot0)
 		if slot2.icon_type == 1 then
 			slot0.tf.anchoredPosition = Vector2(0, 10)
 
-			slot0:LoadSprite("enemies/" .. slot2.icon .. "_d_" .. slot4, "", slot0.tf:Find("icon"))
+			slot0:LoadSprite("enemies/" .. slot2.icon .. "_d_" .. slot6, "", slot0.tf:Find("icon"))
 			setActive(slot0.tf:Find("effect_not_open"), false)
 			setActive(slot0.tf:Find("effect_open"), false)
 		end

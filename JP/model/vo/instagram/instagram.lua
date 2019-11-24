@@ -160,7 +160,7 @@ slot0.CanOpenComment = function (slot0)
 end
 
 slot0.ShouldShowTip = function (slot0)
-	return not slot0:IsReaded() or slot0:AnyCommentUnread() or slot0:CanOpenComment()
+	return not slot0:IsReaded() or slot0:AnyCommentUnread()
 end
 
 return slot0

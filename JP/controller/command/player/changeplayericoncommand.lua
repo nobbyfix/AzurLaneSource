@@ -1,21 +1,42 @@
 class("ChangePlayerIcon", pm.SimpleCommand).execute = function (slot0, slot1)
-	slot4 = slot1:getBody().skinPage
+	slot2 = slot1:getBody()
+	slot4 = slot2.characterId
+	slot5 = slot2.skinPage
+	slot7 = getProxy(PlayerProxy).getData(slot6)
 
-	if getProxy(PlayerProxy).getData(slot5).character == slot1.getBody().characterId then
-		if slot4 then
-			pg.TipsMgr.GetInstance():ShowTips(i18n("change_skin_secretary_ship"))
+	if type(slot2.characterId) == "number" then
+		if slot7.character == slot3 then
+			if slot5 then
+				pg.TipsMgr.GetInstance():ShowTips(i18n("change_skin_secretary_ship"))
+			end
+
+			return
+		else
+			slot4 = {}
+
+			for slot11 = 1, #slot7.characters, 1 do
+				slot4[slot11] = slot7.characters[slot11]
+			end
+
+			for slot11 = 1, #slot4, 1 do
+				if slot4[slot11] == slot3 then
+					slot4[slot11] = slot4[1]
+					slot4[1] = slot4[slot11]
+				end
+			end
+
+			slot4[1] = slot3
 		end
-
-		return
 	end
 
 	pg.ConnectionMgr.GetInstance():Send(11011, {
-		character = slot3
+		character = slot4
 	}, 11012, function (slot0)
 		if slot0.result == 0 then
 			slot1 = getProxy(BayProxy)
-			slot2 = slot1:getShipById(slot0)
-			slot1.character = slot0
+			slot2 = slot1:getShipById(slot0[1])
+			slot1.character = slot0[1]
+			slot1.characters = slot0
 			slot1.icon = slot2.configId
 			slot1.skinId = slot2.skinId
 

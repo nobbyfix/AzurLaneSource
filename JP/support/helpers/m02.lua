@@ -5707,4 +5707,234 @@ function checkExist(slot0, ...)
 
 end
 
+function resourceVerify(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot3 = nil
+	slot4 = PathMgr.ReadAllLines(slot2)
+	slot5 = {}
+
+	if slot0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 13-17, warpins: 1 ---
+		setActive(slot0, true)
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 18-24, warpins: 1 ---
+		pg.UIMgr.GetInstance():LoadingOn()
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 25-33, warpins: 2 ---
+	function slot6()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		if slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-8, warpins: 1 ---
+			setActive(setActive, false)
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 9-15, warpins: 1 ---
+			pg.UIMgr.GetInstance():LoadingOff()
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 16-21, warpins: 2 ---
+		print(slot1)
+
+		if slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 22-37, warpins: 1 ---
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				content = i18n("resource_verify_fail", ""),
+				onYes = function ()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-9, warpins: 1 ---
+					VersionMgr.Inst:DeleteCacheFiles()
+					Application.Quit()
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+			})
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 38-49, warpins: 1 ---
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				content = i18n("resource_verify_success")
+			})
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 50-50, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot8 = nil
+
+
+	-- Decompilation error in this vicinity:
+	function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		if slot0 < 0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-6, warpins: 1 ---
+			slot0()
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 7-9, warpins: 1 ---
+		if slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 10-16, warpins: 1 ---
+			setSlider(setSlider, 0, , slot2 - slot0)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 17-34, warpins: 2 ---
+		slot3 = string.split(slot3[slot0], ",")[3]
+
+		if PathMgr.FileExists(PathMgr.getAssetBundle(slot2)) and slot3 == HashUtil.CalcMD5(PathMgr.ReadAllBytes(PathMgr.getAssetBundle(slot2))) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 48-52, warpins: 1 ---
+			onNextTick(function ()
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-5, warpins: 1 ---
+				slot0(slot1 - 1)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
+			end)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 53-57, warpins: 3 ---
+		slot5 = slot2
+
+		slot0()
+
+		return
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 58-58, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+
+
+	end(slot4.Length - 1)
+
+	return
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
 return

@@ -185,7 +185,7 @@ slot0.updateAdditions = function (slot0)
 			setText(slot2:Find("name"), AttributeType.Type2Name(slot0[slot1 + 1].attrName))
 			setText(slot2:Find("Text"), string.format("%0.3f", slot0[slot1 + 1].value) .. "%")
 			GetImageSpriteFromAtlasAsync("attricon", slot0[slot1 + 1].attrName, slot2:Find("icon"), false)
-			setActive(slot2:Find("bg"), slot1 % 2 ~= 0)
+			setImageAlpha(slot2:Find("bg"), slot1 % 2)
 		end
 	end)
 	slot0.abilitysTF:align(#slot3)
@@ -200,7 +200,7 @@ slot0.updateAdditions = function (slot0)
 
 			slot1.talentsTextList[slot1 + 1]:setText(slot3.name)
 			setText(slot2:Find("Text"), slot3.value .. ((slot3.type == CommanderConst.TALENT_ADDITION_RATIO and "%") or ""))
-			setActive(slot2:Find("bg"), slot1 % 2 ~= 0)
+			setImageAlpha(slot2:Find("bg"), slot1 % 2)
 		end
 	end)
 	slot0.talentsTF:align(#_.values(slot0.fleet.getCommandersTalentDesc(slot1)))

@@ -503,7 +503,7 @@ slot0.GenBattleData = function (slot0)
 				table.insert(slot2, slot2(slot3, slot4, slot1))
 			end
 
-			slot14 = getProxy(FleetProxy).getActivityFleets(slot5)[slot0.contextData.actId][slot0.contextData.mainFleetId].getTeamByName(slot7, Fleet.VANGUARD)
+			slot14 = getProxy(FleetProxy).getActivityFleets(slot5)[slot0.contextData.actId][slot0.contextData.mainFleetId].getTeamByName(slot7, TeamType.Vanguard)
 
 			for slot18, slot19 in ipairs(slot13) do
 				slot12(slot19, slot8, slot1.MainUnitList, slot9)
