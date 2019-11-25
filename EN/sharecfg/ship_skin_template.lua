@@ -5992,108 +5992,6 @@ pg.ship_skin_template = {
 			}
 		}
 	},
-	[101411] = {
-		ship_group = 10141,
-		name = "Student Mode!",
-		bullet_skin_main = "",
-		desc = "Stanly's brand new \"Student Mode,\" activate! Commander, come check out my new look!",
-		illustrator2 = -1,
-		id = 101411,
-		bullet_skin_secondary = "",
-		no_showing = "0",
-		painting = "sitanli_2",
-		air_bullet_skin = "",
-		shop_type_id = 4,
-		hand_id = 5,
-		lip_smoothing = 0,
-		l2d_animations = "",
-		bg = "103",
-		skin_type = 0,
-		bg_sp = "",
-		voice_actor_2 = -1,
-		air_torpedo_skin = "",
-		prefab = "sitanli_2",
-		l2d_se = "",
-		aircraft_skin = "",
-		main_UI_FX = "",
-		shop_id = 70275,
-		voice_actor = 143,
-		air_bomb_skin = "",
-		illustrator = -1,
-		rarity_bg = "",
-		l2d_para_range = "",
-		lip_sync_gain = 0,
-		show_skin = "stand",
-		l2d_voice_calibrate = "",
-		tag = {
-			2
-		},
-		live2d_offset = {
-			0,
-			0,
-			0
-		},
-		fx_container = {
-			{
-				0,
-				1.99185,
-				1.15
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0.75,
-				-1.299
-			},
-			{
-				0,
-				0,
-				0
-			}
-		},
-		bound_bone = {
-			cannon = {
-				{
-					1.439,
-					1.273,
-					0
-				}
-			},
-			vicegun = {
-				{
-					1.418,
-					1.311,
-					0
-				}
-			},
-			torpedo = {
-				{
-					0.024,
-					0.02,
-					0
-				}
-			}
-		},
-		smoke = {
-			{
-				50,
-				{
-					{
-						"smoke",
-						{
-							-0.6,
-							2.31,
-							0
-						}
-					}
-				}
-			}
-		}
-	},
 	[101420] = {
 		ship_group = 10142,
 		name = "Smalley",
@@ -82019,7 +81917,6 @@ pg.ship_skin_template = {
 		101400,
 		101401,
 		101410,
-		101411,
 		101420,
 		101421,
 		102010,

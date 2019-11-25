@@ -64254,6 +64254,25 @@ Skins and their drop rates:
 		price = {},
 		index = {}
 	},
+	[69959] = {
+		display = "Receive a random T5 Tech Pack",
+		rarity = 5,
+		type = 5,
+		name = "Mystery T5 Tech Pack",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 69959,
+		icon = "Props/30005",
+		display_icon = {},
+		price = {
+			1,
+			100
+		},
+		index = {}
+	},
 	[70000] = {
 		display = "Use to unlock \"Port Memories\" No. 1",
 		rarity = 4,
@@ -66154,6 +66173,7 @@ Skins and their drop rates:
 		69956,
 		69957,
 		69958,
+		69959,
 		70000,
 		70001,
 		70002,
