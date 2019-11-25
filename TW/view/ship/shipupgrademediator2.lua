@@ -38,6 +38,7 @@ slot0.register = function (slot0)
 				inSham = true,
 				inActivity = true
 			},
+			mode = DockyardScene.MODE_UPGRADE,
 			selectedMax = slot2 or 1,
 			selectedMin = slot2 or 1,
 			ignoredIds = slot3,

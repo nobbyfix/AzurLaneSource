@@ -51,7 +51,7 @@ return {
 			bgName = "star_level_bg_103",
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "噢——！",
+			say = "喔——！",
 			action = {
 				{
 					y = 30,
@@ -85,7 +85,7 @@ return {
 			dir = 1,
 			actor = 102100,
 			nameColor = "#a9f548",
-			say = "……噗。……噢——！",
+			say = "……噗。……喔——！",
 			action = {
 				{
 					y = 30,

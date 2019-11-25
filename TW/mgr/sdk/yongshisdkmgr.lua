@@ -65,7 +65,9 @@ function SDKLogined(slot0, slot1, slot2, slot3)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 9-26, warpins: 2 ---
+	--- BLOCK #1 9-22, warpins: 2 ---
+	pg.SdkMgr.GetInstance().airi_uid = slot1 or "test"
+
 	pg.m02:sendNotification(GAME.PLATFORM_LOGIN_DONE, {
 		user = User.New({
 			type = 1,
@@ -78,6 +80,14 @@ function SDKLogined(slot0, slot1, slot2, slot3)
 
 	return
 	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 24-34, warpins: 2 ---
+	--- END OF BLOCK #2 ---
 
 
 

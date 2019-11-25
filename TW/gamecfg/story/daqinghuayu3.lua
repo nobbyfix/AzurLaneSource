@@ -427,8 +427,8 @@ return {
 			hideOther = true,
 			dir = 1,
 			actor = 106011,
-			actorName = "长岛&拉菲&本森",
-			say = "噢噢噢噢！！！！！",
+			actorName = "长岛&拉菲&班森",
+			say = "喔喔喔喔！！！！！",
 			effects = {
 				{
 					active = true,

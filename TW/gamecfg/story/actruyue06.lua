@@ -326,7 +326,7 @@ return {
 			bgName = "bg_story_room",
 			actor = 307040,
 			nameColor = "#a9f548",
-			say = "噢…汤也很好喝！",
+			say = "喔…汤也很好喝！",
 			flashout = {
 				dur = 1,
 				black = true,

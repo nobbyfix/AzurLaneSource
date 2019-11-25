@@ -1487,7 +1487,7 @@ pg.ship_level = {
 	},
 	{
 		arena_durability_add = 0,
-		exp = 0,
+		exp = 70000,
 		energy_recover_time_ratio = 45,
 		fight_oil_ratio = 9950,
 		level_limit = 1,

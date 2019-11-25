@@ -303,7 +303,7 @@ return {
 			}
 		},
 		{
-			say = "列克星敦小姐…",
+			say = "列星頓小姐…",
 			side = 1,
 			bgName = "bg_story_school",
 			dir = 1,

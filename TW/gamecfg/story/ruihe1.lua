@@ -11,13 +11,13 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"幸运之鹤\n\n<size=45>一  {namecode:96}的早晨</size>",
+					"幸運之鶴\n\n<size=45>一  {namecode:96}的早晨</size>",
 					1
 				}
 			}
 		},
 		{
-			say = "往常的这个时间，作为秘书舰的{namecode:96}应该已经前来进行早晨的报告了。不过今天…似乎还没来的样子",
+			say = "往常的這個時間，作為秘書艦的{namecode:96}應該已經前來進行早晨的報告了。不過今天…似乎還沒來的樣子",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
@@ -41,7 +41,7 @@ return {
 			},
 			options = {
 				{
-					content = "去重樱空母宿舍看看",
+					content = "去重櫻航母宿舍看看",
 					flag = 1
 				}
 			}
@@ -88,7 +88,7 @@ return {
 			dir = 1,
 			actor = 307050,
 			actorName = "{namecode:95}",
-			say = "如您所见…指挥官，非常抱歉……",
+			say = "如您所見…指揮官，非常抱歉……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -102,7 +102,7 @@ return {
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
-			say = "{namecode:96}在床上躺成大字，发出豪爽的酣睡声",
+			say = "{namecode:96}在床上躺成大字，發出豪爽的酣睡聲",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -115,7 +115,7 @@ return {
 			dir = 1,
 			actor = 307050,
 			actorName = "{namecode:95}",
-			say = "不知道是不是昨晚特训太拼命了…明明平常都比我早起得多",
+			say = "不知道是不是昨晚特訓太拼命了…明明平常都比我早起得多",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -132,7 +132,7 @@ return {
 			dir = 1,
 			actor = 307050,
 			actorName = "{namecode:95}",
-			say = "好啦{namecode:96}，快起床，指挥官来了哦？",
+			say = "好啦{namecode:96}，快起床，指揮官來了哦？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -143,7 +143,7 @@ return {
 			}
 		},
 		{
-			say = "指……啊呜！？对对对不起我睡过头…哇啊啊啊！？",
+			say = "指……啊嗚！？對對對不起我睡過頭…哇啊啊啊！？",
 			side = 0,
 			bgName = "bg_story_room",
 			actorName = "{namecode:96}",
@@ -196,7 +196,7 @@ return {
 			dir = 1,
 			actor = 307050,
 			actorName = "{namecode:95}",
-			say = "哎呀呀……姐姐帮你整理，快去洗漱一下吧",
+			say = "哎呀呀……姐姐幫你整理，快去洗漱一下吧",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -213,7 +213,7 @@ return {
 			dir = 1,
 			actor = 307050,
 			actorName = "{namecode:95}",
-			say = "…指挥官在等着你哦？呵呵",
+			say = "…指揮官在等著你哦？呵呵",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

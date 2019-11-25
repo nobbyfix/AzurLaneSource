@@ -198,7 +198,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "不过说起来，好像听说你之前去给主公送和列克星敦小姐一起的什么“演唱会”的门票吧！",
+			say = "不过说起来，好像听说你之前去给主公送和列星頓小姐一起的什么“演唱会”的门票吧！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

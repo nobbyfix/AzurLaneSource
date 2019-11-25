@@ -239,8 +239,7 @@ slot2 = {
 	"cannon",
 	"torpedo",
 	"antiaircraft",
-	"air",
-	"antisub"
+	"air"
 }
 
 slot0.showBarrage = function (slot0)
@@ -353,7 +352,14 @@ slot0.updateBreakOutView = function (slot0, slot1)
 		})
 	end
 
-	if slot12 + #slot0 < 7 then
+	if slot5 then
+		setActive(slot13, false)
+		slot11(slot0:findTF("attr_6", slot0.attrs), {
+			preAttr = slot6,
+			afterAttr = slot7,
+			name = i18n("word_attr_luck")
+		})
+	else
 		slot11(slot0:findTF("attr_7", slot0.attrs), {
 			preAttr = slot6,
 			afterAttr = slot7,

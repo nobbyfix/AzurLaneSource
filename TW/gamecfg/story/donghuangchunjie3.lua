@@ -526,7 +526,7 @@ return {
 			bgName = "star_level_bg_102",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "这样么…倒没有需要赔礼那么严重…不过，东煌的料理啊…那我们就恭敬不如从命了，列克星敦？",
+			say = "这样么…倒没有需要赔礼那么严重…不过，东煌的料理啊…那我们就恭敬不如从命了，列星頓？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -262,7 +262,7 @@ return {
 			dir = 1,
 			actor = 312012,
 			actorName = "{namecode:98}",
-			say = "庆典很开心喵，{namecode:98}去看了列克星敦小姐和萨拉小姐的新live，还买了新衣服喵！",
+			say = "庆典很开心喵，{namecode:98}去看了列星頓小姐和萨拉小姐的新live，还买了新衣服喵！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

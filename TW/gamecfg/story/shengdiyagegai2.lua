@@ -324,7 +324,7 @@ return {
 			dir = 1,
 			actor = 102080,
 			nameColor = "#a9f548",
-			say = "噢噢？！",
+			say = "喔喔？！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -366,7 +366,7 @@ return {
 			dir = 1,
 			actor = 102080,
 			nameColor = "#a9f548",
-			say = "噢噢…！改造原来是件这么厉害的事情！",
+			say = "喔喔…！改造原来是件这么厉害的事情！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -394,7 +394,7 @@ return {
 			dir = 1,
 			actor = 201210,
 			actorName = "标枪&{namecode:6}&拉菲",
-			say = "噢噢……",
+			say = "喔喔……",
 			subActors = {
 				{
 					actor = 301050,

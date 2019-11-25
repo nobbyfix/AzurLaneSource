@@ -169,7 +169,7 @@ return {
 			dir = 1,
 			actor = 202121,
 			nameColor = "#a9f548",
-			say = "列克星敦小姐和企业小姐啊，贵安，这是在……",
+			say = "列星頓小姐和企业小姐啊，贵安，这是在……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -185,7 +185,7 @@ return {
 			bgName = "star_level_bg_102",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "企业和列克星敦正在帮我们贴春联呢～嘿嘿",
+			say = "企业和列星頓正在帮我们贴春联呢～嘿嘿",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

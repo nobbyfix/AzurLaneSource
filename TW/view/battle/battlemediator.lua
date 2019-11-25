@@ -239,13 +239,10 @@ function slot1(slot0, slot1, slot2, slot3)
 	slot5 = ys.Battle.BattleDataFunction.GenerateHiddenBuff(slot1.configId)
 
 	for slot9, slot10 in pairs(slot1.skills) do
-		if slot10 and slot10.id == 11720 and not slot1.transforms[3612] then
-		else
-			slot5[({
-				level = slot10.level,
-				id = ys.Battle.BattleDataFunction.SkillTranform(slot0, slot10.id)
-			})["id"]] = 
-		end
+		slot5[({
+			level = slot10.level,
+			id = ys.Battle.BattleDataFunction.SkillTranform(slot0, slot10.id)
+		})["id"]] = 
 	end
 
 	for slot9, slot10 in pairs(slot1:getTriggerSkills()) do
@@ -506,7 +503,7 @@ slot0.GenBattleData = function (slot0)
 				table.insert(slot2, slot2(slot3, slot4, slot1))
 			end
 
-			slot14 = getProxy(FleetProxy).getActivityFleets(slot5)[slot0.contextData.actId][slot0.contextData.mainFleetId].getTeamByName(slot7, Fleet.VANGUARD)
+			slot14 = getProxy(FleetProxy).getActivityFleets(slot5)[slot0.contextData.actId][slot0.contextData.mainFleetId].getTeamByName(slot7, TeamType.Vanguard)
 
 			for slot18, slot19 in ipairs(slot13) do
 				slot12(slot19, slot8, slot1.MainUnitList, slot9)

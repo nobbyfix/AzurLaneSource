@@ -12,7 +12,7 @@ return {
 			actorName = "{namecode:132}",
 			side = 2,
 			nameColor = "#ff0000",
-			say = "{namecode:96}亲，从这里开始不可以再前进了哟喵~",
+			say = "{namecode:96}親，從這裡開始不可以再前進了喲喵~",
 			shake = {
 				speed = 1,
 				number = 3
@@ -28,7 +28,7 @@ return {
 		},
 		{
 			side = 0,
-			say = "{namecode:79}，连你也成为冒牌货了吗？",
+			say = "{namecode:79}，連你也成為冒牌貨了嗎？",
 			actorName = "{namecode:96}",
 			actor = 307060,
 			nameColor = "#a9f548",
@@ -54,7 +54,7 @@ return {
 			actorName = "{namecode:132}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "才不是呢，{namecode:79}还是那个元·气·满·满的{namecode:79}酱哟！",
+			say = "才不是呢，{namecode:79}還是那個元·氣·滿·滿的{namecode:79}醬喲！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -73,7 +73,7 @@ return {
 			actorName = "{namecode:132}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "只不过~人家也是有命令在身呢，自然就是阻止你继续在“圣域”捣乱了",
+			say = "只不過~人家也是有命令在身呢，自然就是阻止你繼續在“聖域”搗亂了",
 			shake = {
 				speed = 1,
 				number = 3
@@ -92,7 +92,7 @@ return {
 			actorName = "{namecode:132}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "所以~你能乖乖的被我击倒么，拜托了",
+			say = "所以~你能乖乖的被我擊倒嗎，拜託了",
 			shake = {
 				speed = 1,
 				number = 3
@@ -111,7 +111,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "既然“你”还是“你”的话，告诉我，{namecode:95}姐在哪里",
+			say = "既然“你”還是“你”的話，告訴我，{namecode:95}姐在哪裡",
 			shake = {
 				speed = 1,
 				number = 3
@@ -130,7 +130,7 @@ return {
 			actorName = "{namecode:132}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "如果你能打败我的话我就告诉你哟~",
+			say = "如果你能打敗我的話我就告訴你喲~",
 			shake = {
 				speed = 1,
 				number = 3
@@ -149,7 +149,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "现在的前辈们都这么麻烦的吗…",
+			say = "現在的前輩們都這麼麻煩的嗎…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -168,7 +168,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "既然如此，那就痛快的来一战吧！",
+			say = "既然如此，那就痛快的來一戰吧！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -187,7 +187,7 @@ return {
 			actorName = "{namecode:132}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "{namecode:79}酱的温馨提示：她们给我改造了奇怪的装备~这些可是之前那帮木头脑袋们一直没法搞定的设计呢",
+			say = "{namecode:79}醬的溫馨提示：她們給我改造了奇怪的裝備~這些可是之前那幫木頭腦袋們一直沒法搞定的設計呢",
 			shake = {
 				speed = 1,
 				number = 3
@@ -206,7 +206,7 @@ return {
 			actorName = "{namecode:132}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "所以~现在的{namecode:79}酱可是很强的哟，我终于也可以丢飞机……哇，怎么不听我说完就打过来了！！",
+			say = "所以~現在的{namecode:79}醬可是很強的喲，我終於也可以丟飛機……哇，怎麼不聽我說完就打過來了！！",
 			shake = {
 				speed = 1,
 				number = 3

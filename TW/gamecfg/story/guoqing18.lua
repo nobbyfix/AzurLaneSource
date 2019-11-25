@@ -12,7 +12,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 2,
 			nameColor = "#a9f548",
-			say = "在AF作战中诈死的你们，究竟在玩什么把戏！?",
+			say = "在AF作戰中詐死的你們，究竟在玩什麼把戲！?",
 			shake = {
 				speed = 1,
 				number = 3
@@ -28,7 +28,7 @@ return {
 		},
 		{
 			side = 1,
-			say = "如你所见，这里是神明赐予我们的“圣域”，在这里，我们可以获得无尽的力量",
+			say = "如你所見，這裡是神明賜予我們的“聖域”，在這裡，我們可以獲得無盡的力量",
 			actorName = "{namecode:91}",
 			dir = -1,
 			actor = 307010,
@@ -56,7 +56,7 @@ return {
 			dir = -1,
 			actor = 307010,
 			nameColor = "#ff0000",
-			say = "只要继续献上更多优质的灵魂就…",
+			say = "只要繼續獻上更多優質的靈魂就…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -75,7 +75,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "这样轻信歪门邪道出卖自己同胞所获得的力量，是无法战胜她，战胜那个幽灵的",
+			say = "這樣輕信歪門邪道出賣自己同伴所獲得的力量，是無法戰勝她，戰勝那個幽靈的",
 			shake = {
 				speed = 1,
 				number = 3
@@ -95,7 +95,7 @@ return {
 			dir = -1,
 			actor = 307010,
 			nameColor = "#ff0000",
-			say = "闭嘴！！！不许在我面前提到那个家伙！！",
+			say = "閉嘴！！！不許在我面前提到那個傢伙！！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -114,7 +114,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "这样一味的逃避是无法找到未来的！相信我，现在回头还来得及——",
+			say = "這樣一味的逃避是無法找到未來的！相信我，現在回頭還來得及——",
 			shake = {
 				speed = 1,
 				number = 3
@@ -134,7 +134,7 @@ return {
 			dir = -1,
 			actor = 307010,
 			nameColor = "#ff0000",
-			say = "你们总是把那个家伙幽灵、幽灵的挂在嘴边！！我，怎么可能会被那种家伙给……啊啊啊啊啊！",
+			say = "你們總是把那個傢伙幽靈、幽靈的掛在嘴邊！！我，怎麼可能會被那種傢伙給……啊啊啊啊啊！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -153,7 +153,7 @@ return {
 			actorName = "{namecode:92}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "！！！多说无用，究竟是强者还是弱者，就让我们来鉴定一下吧！",
+			say = "！！！多說無用，究竟是強者還是弱者，就讓我們來鑒定一下吧！",
 			shake = {
 				speed = 1,
 				number = 3

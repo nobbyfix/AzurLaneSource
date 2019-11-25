@@ -277,7 +277,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			actorName = "全员",
-			say = "噢！",
+			say = "喔！",
 			dialogShake = {
 				speed = 0.09,
 				x = 8.5,

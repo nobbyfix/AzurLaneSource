@@ -1154,6 +1154,174 @@ pg.task_data_template = {
 			}
 		}
 	},
+	{
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 28,
+		type = 1,
+		name = "第七章·增援攔截",
+		count_inherit = 0,
+		desc = "通關7-1",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "[29,3025,6025]",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 701,
+		id = 28,
+		target_num = 1,
+		fix_task = 3025,
+		target_id = "701",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				300
+			},
+			{
+				1,
+				2,
+				50
+			}
+		}
+	},
+	{
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 29,
+		type = 1,
+		name = "第七章·短兵相接",
+		count_inherit = 0,
+		desc = "通關7-2",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "[30,3026,6026]",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 702,
+		id = 29,
+		target_num = 1,
+		fix_task = 3026,
+		target_id = "702",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				300
+			},
+			{
+				1,
+				2,
+				50
+			}
+		}
+	},
+	{
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 30,
+		type = 1,
+		name = "第七章·措手不及",
+		count_inherit = 0,
+		desc = "通關7-3",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "[31,3027,6027]",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 703,
+		id = 30,
+		target_num = 1,
+		fix_task = 3027,
+		target_id = "703",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				300
+			},
+			{
+				1,
+				2,
+				50
+			}
+		}
+	},
+	{
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 31,
+		type = 1,
+		name = "第七章·預料外的混亂",
+		count_inherit = 0,
+		desc = "通關7-4",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "[32,3028,6028]",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 704,
+		id = 31,
+		target_num = 1,
+		fix_task = 3028,
+		target_id = "704",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				2
+			},
+			{
+				1,
+				1,
+				1000
+			},
+			{
+				1,
+				2,
+				150
+			}
+		}
+	},
 	[1001] = {
 		is_head = 1,
 		guild_coin_award = 0,
@@ -17403,6 +17571,259 @@ pg.task_data_template = {
 			}
 		}
 	},
+	[10086] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8140,
+		type = 26,
+		name = "“魔女們”的萬聖夜1",
+		count_inherit = 0,
+		desc = "完成任意委託2次",
+		target_id_2 = "",
+		sub_type = 80,
+		added_tip = 1,
+		story_icon = "Xiangfeng_2",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "WANSHENGJIE1",
+		target_id_for_client = 0,
+		id = 10086,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				500
+			},
+			{
+				2,
+				50003,
+				5
+			}
+		}
+	},
+	[10087] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8088,
+		type = 26,
+		name = "“魔女們”的萬聖夜2",
+		count_inherit = 0,
+		desc = "獲得3次軍事演習勝利。",
+		target_id_2 = "",
+		sub_type = 27,
+		added_tip = 1,
+		story_icon = "Xiangfeng_2",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "WANSHENGJIE2",
+		target_id_for_client = 1,
+		id = 10087,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "1",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				200
+			}
+		}
+	},
+	[10088] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8141,
+		type = 26,
+		name = "“魔女們”的萬聖夜3",
+		count_inherit = 0,
+		desc = "建造艦船3次。",
+		target_id_2 = "",
+		sub_type = 30,
+		added_tip = 1,
+		story_icon = "Xiangfeng_2",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "WANSHENGJIE3",
+		target_id_for_client = 0,
+		id = 10088,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				500
+			},
+			{
+				2,
+				50002,
+				10
+			}
+		}
+	},
+	[10089] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8088,
+		type = 26,
+		name = "“魔女們”的萬聖夜4",
+		count_inherit = 0,
+		desc = "後宅補充食物5次。",
+		target_id_2 = "",
+		sub_type = 61,
+		added_tip = 1,
+		story_icon = "Xiangfeng_2",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "WANSHENGJIE4",
+		target_id_for_client = 0,
+		id = 10089,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				200
+			}
+		}
+	},
+	[10090] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8142,
+		type = 26,
+		name = "“魔女們”的萬聖夜5",
+		count_inherit = 0,
+		desc = "進行1次日常挑戰。",
+		target_id_2 = "",
+		sub_type = 26,
+		added_tip = 1,
+		story_icon = "Xiangfeng_2",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "WANSHENGJIE5",
+		target_id_for_client = 0,
+		id = 10090,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				500
+			},
+			{
+				2,
+				50004,
+				5
+			}
+		}
+	},
+	[10091] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8088,
+		type = 26,
+		name = "“魔女們”的萬聖夜6",
+		count_inherit = 0,
+		desc = "艦隊出征，消滅敵方旗艦3次。",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 1,
+		story_icon = "Xiangfeng_2",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "WANSHENGJIE6",
+		target_id_for_client = 0,
+		id = 10091,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				200
+			}
+		}
+	},
+	[10092] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8143,
+		type = 26,
+		name = "“魔女們”的萬聖夜7",
+		count_inherit = 0,
+		desc = "通關任意活動海域1次",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 1,
+		story_icon = "Xiangfeng_2",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "WANSHENGJIE7",
+		target_id_for_client = 0,
+		id = 10092,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100001,
+			1100002,
+			1100003,
+			1100004,
+			1100005,
+			1100006,
+			1100011,
+			1100012,
+			1100013,
+			1100014,
+			1100015,
+			1100016,
+			1100020
+		},
+		open_need = {},
+		award_display = {
+			{
+				5,
+				13110,
+				1
+			}
+		}
+	},
 	[10238] = {
 		is_head = 0,
 		guild_coin_award = 0,
@@ -18353,6 +18774,38 @@ pg.task_data_template = {
 				2,
 				59106,
 				200
+			}
+		}
+	},
+	[10280] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8041,
+		type = 26,
+		name = "3月小天鵝造型任務20",
+		count_inherit = 0,
+		desc = "進行2次委託 ",
+		target_id_2 = "",
+		sub_type = 80,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 10280,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				7,
+				201101,
+				1
 			}
 		}
 	},
@@ -22967,7 +23420,7 @@ pg.task_data_template = {
 		type = 26,
 		name = "拉新3階段28",
 		count_inherit = 0,
-		desc = "兩隊滿編水面編隊平均等級達到90級",
+		desc = "兩隊滿編水面編隊平均等級分別達到90級",
 		target_id_2 = "",
 		sub_type = 2002,
 		added_tip = 0,
@@ -23254,6 +23707,487 @@ pg.task_data_template = {
 					204031,
 					1
 				}
+			}
+		}
+	},
+	[13963] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8932,
+		type = 26,
+		name = "萬聖節貝利造型1",
+		count_inherit = 0,
+		desc = "艦隊出征，以S評價通關10次",
+		target_id_2 = "",
+		sub_type = 24,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13963,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54050,
+				2
+			}
+		}
+	},
+	[13964] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8933,
+		type = 26,
+		name = "萬聖節貝利造型2",
+		count_inherit = 0,
+		desc = "進行2次裝備強化",
+		target_id_2 = "",
+		sub_type = 40,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13964,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[13965] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8934,
+		type = 26,
+		name = "萬聖節貝利造型3",
+		count_inherit = 0,
+		desc = "進行2次委託 ",
+		target_id_2 = "",
+		sub_type = 80,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13965,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				100
+			}
+		}
+	},
+	[13966] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8935,
+		type = 26,
+		name = "萬聖節貝利造型4",
+		count_inherit = 0,
+		desc = "建造艦船2次",
+		target_id_2 = "",
+		sub_type = 30,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13966,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[13967] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8936,
+		type = 26,
+		name = "萬聖節貝利造型5",
+		count_inherit = 0,
+		desc = "退役2艘艦船",
+		target_id_2 = "",
+		sub_type = 31,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13967,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54015,
+				5
+			}
+		}
+	},
+	[13968] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8937,
+		type = 26,
+		name = "萬聖節貝利造型6",
+		count_inherit = 0,
+		desc = "完成3次每日挑戰 ",
+		target_id_2 = "",
+		sub_type = 26,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13968,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[13969] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8938,
+		type = 26,
+		name = "萬聖節貝利造型7",
+		count_inherit = 0,
+		desc = "通關任意主線困難關2次",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13969,
+		target_num = 2,
+		fix_task = 0,
+		target_id = {
+			10101,
+			10102,
+			10103,
+			10104,
+			10201,
+			10202,
+			10203,
+			10204,
+			10301,
+			10302,
+			10303,
+			10304,
+			10401,
+			10402,
+			10403,
+			10404,
+			10501,
+			10502,
+			10503,
+			10504,
+			10601,
+			10602,
+			10603,
+			10604,
+			10701,
+			10702,
+			10703,
+			10704,
+			10801,
+			10802,
+			10803,
+			10804
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54033,
+				2
+			}
+		}
+	},
+	[13970] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8939,
+		type = 26,
+		name = "萬聖節貝利造型8",
+		count_inherit = 0,
+		desc = "艦船強化5次",
+		target_id_2 = "",
+		sub_type = 34,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13970,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[13971] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8940,
+		type = 26,
+		name = "萬聖節貝利造型9",
+		count_inherit = 0,
+		desc = "擊沉任意敵人20艘",
+		target_id_2 = "",
+		sub_type = 11,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13971,
+		target_num = 20,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				50003,
+				5
+			}
+		}
+	},
+	[13972] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8941,
+		type = 26,
+		name = "萬聖節貝利造型10",
+		count_inherit = 0,
+		desc = "後宅補充食物5次",
+		target_id_2 = "",
+		sub_type = 61,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13972,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[13973] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8942,
+		type = 26,
+		name = "萬聖節貝利造型11",
+		count_inherit = 0,
+		desc = "進行2次建造",
+		target_id_2 = "",
+		sub_type = 30,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13973,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54006,
+				5
+			}
+		}
+	},
+	[13974] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8943,
+		type = 26,
+		name = "萬聖節貝利造型12",
+		count_inherit = 0,
+		desc = "艦隊出征，以S評價通關10次",
+		target_id_2 = "",
+		sub_type = 24,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13974,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[13975] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8944,
+		type = 26,
+		name = "萬聖節貝利造型13",
+		count_inherit = 0,
+		desc = "艦隊出征，消滅敵方旗艦3次",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13975,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54016,
+				5
+			}
+		}
+	},
+	[13976] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8945,
+		type = 26,
+		name = "萬聖節貝利造型14",
+		count_inherit = 0,
+		desc = "進行戰術訓練2次",
+		target_id_2 = "",
+		sub_type = 71,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 13976,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				7,
+				101271,
+				1
 			}
 		}
 	},
@@ -24047,6 +24981,936 @@ pg.task_data_template = {
 		},
 		scene = {
 			"LEVEL"
+		}
+	},
+	[15181] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92170,
+		type = 26,
+		name = "啾啾日常1",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15181,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15182] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92171,
+		type = 26,
+		name = "啾啾日常2",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15182,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15183] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92172,
+		type = 26,
+		name = "啾啾日常3",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15183,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15184] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92173,
+		type = 26,
+		name = "啾啾日常4",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15184,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15185] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92174,
+		type = 26,
+		name = "啾啾日常5",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15185,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15186] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92175,
+		type = 26,
+		name = "啾啾日常6",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15186,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15187] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92176,
+		type = 26,
+		name = "啾啾日常7",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15187,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15188] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92177,
+		type = 26,
+		name = "啾啾日常8",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15188,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15189] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92178,
+		type = 26,
+		name = "啾啾日常9",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15189,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15190] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92179,
+		type = 26,
+		name = "啾啾日常10",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15190,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15191] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92180,
+		type = 26,
+		name = "啾啾日常11",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15191,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15192] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92181,
+		type = 26,
+		name = "啾啾日常12",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15192,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15193] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92182,
+		type = 26,
+		name = "啾啾日常13",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15193,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15194] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92183,
+		type = 26,
+		name = "啾啾日常14",
+		count_inherit = 0,
+		desc = "無情的打卡機器傳來了\n“請打卡”的聲音 ",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15194,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15195] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92184,
+		type = 26,
+		name = "女僕長的委託1",
+		count_inherit = 0,
+		desc = "艦隊出征，以S評價通關5次",
+		target_id_2 = "",
+		sub_type = 24,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15195,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54012,
+				5
+			}
+		}
+	},
+	[15196] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92185,
+		type = 26,
+		name = "女僕長的委託2",
+		count_inherit = 0,
+		desc = "強化裝備2次 ",
+		target_id_2 = "",
+		sub_type = 40,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15196,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				100
+			}
+		}
+	},
+	[15197] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92186,
+		type = 26,
+		name = "女僕長的委託3",
+		count_inherit = 0,
+		desc = "參與演習2次 ",
+		target_id_2 = "",
+		sub_type = 27,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15197,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54050,
+				2
+			}
+		}
+	},
+	[15198] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92187,
+		type = 26,
+		name = "女僕長的委託4",
+		count_inherit = 0,
+		desc = "進行2次委託",
+		target_id_2 = "",
+		sub_type = 80,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15198,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				100
+			}
+		}
+	},
+	[15199] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92188,
+		type = 26,
+		name = "女僕長的委託5",
+		count_inherit = 0,
+		desc = "退役2艘艦船",
+		target_id_2 = "",
+		sub_type = 31,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15199,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54022,
+				3
+			}
+		}
+	},
+	[15200] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92189,
+		type = 26,
+		name = "女僕長的委託6",
+		count_inherit = 0,
+		desc = "完成3次每日挑戰",
+		target_id_2 = "",
+		sub_type = 26,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15200,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				150
+			}
+		}
+	},
+	[15201] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92190,
+		type = 26,
+		name = "女僕長的委託7",
+		count_inherit = 0,
+		desc = "強化艦船5次",
+		target_id_2 = "",
+		sub_type = 34,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15201,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				50004,
+				3
+			}
+		}
+	},
+	[15202] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92191,
+		type = 26,
+		name = "女僕長的委託8",
+		count_inherit = 0,
+		desc = "進行2次戰術訓練",
+		target_id_2 = "",
+		sub_type = 71,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15202,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				150
+			}
+		}
+	},
+	[15203] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92192,
+		type = 26,
+		name = "女僕長的委託9",
+		count_inherit = 0,
+		desc = "後宅補充食物5次",
+		target_id_2 = "",
+		sub_type = 61,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15203,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54023,
+				1
+			}
+		}
+	},
+	[15204] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92193,
+		type = 26,
+		name = "女僕長的委託10",
+		count_inherit = 0,
+		desc = "擊沉任意敵人20艘",
+		target_id_2 = "",
+		sub_type = 11,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15204,
+		target_num = 20,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				200
+			}
+		}
+	},
+	[15205] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92194,
+		type = 26,
+		name = "女僕長的委託11",
+		count_inherit = 0,
+		desc = "打開任意科技箱1個",
+		target_id_2 = "",
+		sub_type = 50,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15205,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54003,
+				2
+			}
+		}
+	},
+	[15206] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92195,
+		type = 26,
+		name = "女僕長的委託12",
+		count_inherit = 0,
+		desc = "強化艦船5次",
+		target_id_2 = "",
+		sub_type = 34,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15206,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				200
+			}
+		}
+	},
+	[15207] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92196,
+		type = 26,
+		name = "女僕長的委託13",
+		count_inherit = 0,
+		desc = "退役2艘艦船",
+		target_id_2 = "",
+		sub_type = 31,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15207,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54024,
+				1
+			}
+		}
+	},
+	[15208] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92197,
+		type = 26,
+		name = "女僕長的委託14",
+		count_inherit = 0,
+		desc = "擊敗旗艦3次",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15208,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				300
+			}
+		}
+	},
+	[15209] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92198,
+		type = 26,
+		name = "女僕長的購物日 ",
+		count_inherit = 0,
+		desc = "完成委託任務14、生產任務14",
+		target_id_2 = "",
+		sub_type = 90,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15209,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			15208
+		},
+		open_need = {},
+		award_display = {
+			{
+				7,
+				202124,
+				1
+			}
 		}
 	},
 	[30201] = {
@@ -28286,6 +30150,552 @@ pg.task_data_template = {
 		open_need = {},
 		award_display = {}
 	},
+	[80113] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 8123,
+		type = 6,
+		name = "复刻『红染的参访者』-前篇",
+		count_inherit = 0,
+		desc = "通關A1或C1",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "80114",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80113,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100001,
+			1100011
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				600
+			}
+		}
+	},
+	[80114] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8124,
+		type = 6,
+		name = "复刻『红染的参访者』-前篇",
+		count_inherit = 0,
+		desc = "通關A2或C2",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "80115",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80114,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100002,
+			1100012
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				600
+			}
+		}
+	},
+	[80115] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8125,
+		type = 6,
+		name = "复刻『红染的参访者』-前篇",
+		count_inherit = 0,
+		desc = "通關A3或C3",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "80116",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80115,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100003,
+			1100013
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				2
+			},
+			{
+				1,
+				1,
+				1500
+			}
+		}
+	},
+	[80116] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8126,
+		type = 6,
+		name = "复刻『红染的参访者』-后篇",
+		count_inherit = 0,
+		desc = "通關B1或D1",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "80117",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80116,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100004,
+			1100014
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				600
+			}
+		}
+	},
+	[80117] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8127,
+		type = 6,
+		name = "复刻『红染的参访者』-后篇",
+		count_inherit = 0,
+		desc = "通關B2或D2",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "[80118,80119]",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80117,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100005,
+			1100015
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				600
+			}
+		}
+	},
+	[80118] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8128,
+		type = 6,
+		name = "复刻『红染的参访者』-后篇",
+		count_inherit = 0,
+		desc = "通關B3或D3",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80118,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100006,
+			1100016
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				2
+			},
+			{
+				1,
+				1,
+				1500
+			}
+		}
+	},
+	[80119] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8129,
+		type = 6,
+		name = "复刻『红染的参访者』-勋章",
+		count_inherit = 0,
+		desc = "通關D3",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 1040016,
+		id = 80119,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "1100016",
+		open_need = {},
+		award_display = {
+			{
+				5,
+				112,
+				1
+			}
+		}
+	},
+	[80120] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 8130,
+		type = 6,
+		name = "复刻『红染的参访者』-前篇",
+		count_inherit = 0,
+		desc = "完成A1或C1的3星收集",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "80121",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80120,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100001,
+			1100011
+		},
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				500
+			}
+		}
+	},
+	[80121] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8131,
+		type = 6,
+		name = "复刻『红染的参访者』-前篇",
+		count_inherit = 0,
+		desc = "完成A2或C2的3星收集",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "80122",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80121,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100002,
+			1100012
+		},
+		open_need = {},
+		award_display = {
+			{
+				4,
+				100001,
+				1
+			}
+		}
+	},
+	[80122] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8132,
+		type = 6,
+		name = "复刻『红染的参访者』-前篇",
+		count_inherit = 0,
+		desc = "完成A3或C3的3星收集",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "80123",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80122,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100003,
+			1100013
+		},
+		open_need = {},
+		award_display = {
+			{
+				3,
+				39240,
+				1
+			}
+		}
+	},
+	[80123] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8133,
+		type = 6,
+		name = "复刻『红染的参访者』-后篇",
+		count_inherit = 0,
+		desc = "完成B1或D1的3星收集",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "80124",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80123,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100004,
+			1100014
+		},
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				500
+			}
+		}
+	},
+	[80124] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8134,
+		type = 6,
+		name = "复刻『红染的参访者』-后篇",
+		count_inherit = 0,
+		desc = "完成B2或D2的3星收集",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "80125",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80124,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100005,
+			1100015
+		},
+		open_need = {},
+		award_display = {
+			{
+				4,
+				100011,
+				1
+			}
+		}
+	},
+	[80125] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 8135,
+		type = 6,
+		name = "复刻『红染的参访者』-后篇",
+		count_inherit = 0,
+		desc = "完成B3或D3的3星收集",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80125,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1100006,
+			1100016
+		},
+		open_need = {},
+		award_display = {
+			{
+				3,
+				38240,
+				1
+			}
+		}
+	},
+	[80126] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 8136,
+		type = 36,
+		name = "复刻『红染的参访者』-日常建造",
+		count_inherit = 0,
+		desc = "建造艦船3次",
+		target_id_2 = "",
+		sub_type = 30,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80126,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59107,
+				200
+			}
+		}
+	},
+	[80127] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 8137,
+		type = 36,
+		name = "复刻『红染的参访者』-日常出击",
+		count_inherit = 0,
+		desc = "艦隊出征，獲得15次勝利",
+		target_id_2 = "",
+		sub_type = 20,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 10,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 80127,
+		target_num = 15,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59107,
+				200
+			}
+		}
+	},
 	all = {
 		1,
 		2,
@@ -28314,6 +30724,10 @@ pg.task_data_template = {
 		25,
 		26,
 		27,
+		28,
+		29,
+		30,
+		31,
 		1001,
 		1011,
 		1012,
@@ -28757,6 +31171,13 @@ pg.task_data_template = {
 		10061,
 		10062,
 		10063,
+		10086,
+		10087,
+		10088,
+		10089,
+		10090,
+		10091,
+		10092,
 		10238,
 		10239,
 		10240,
@@ -28786,6 +31207,7 @@ pg.task_data_template = {
 		10277,
 		10278,
 		10279,
+		10280,
 		13739,
 		13740,
 		13741,
@@ -28920,6 +31342,20 @@ pg.task_data_template = {
 		13928,
 		13929,
 		13930,
+		13963,
+		13964,
+		13965,
+		13966,
+		13967,
+		13968,
+		13969,
+		13970,
+		13971,
+		13972,
+		13973,
+		13974,
+		13975,
+		13976,
 		14168,
 		14169,
 		14170,
@@ -28938,6 +31374,35 @@ pg.task_data_template = {
 		14183,
 		14184,
 		14185,
+		15181,
+		15182,
+		15183,
+		15184,
+		15185,
+		15186,
+		15187,
+		15188,
+		15189,
+		15190,
+		15191,
+		15192,
+		15193,
+		15194,
+		15195,
+		15196,
+		15197,
+		15198,
+		15199,
+		15200,
+		15201,
+		15202,
+		15203,
+		15204,
+		15205,
+		15206,
+		15207,
+		15208,
+		15209,
 		30201,
 		30202,
 		31001,
@@ -29068,7 +31533,22 @@ pg.task_data_template = {
 		80109,
 		80110,
 		80111,
-		80112
+		80112,
+		80113,
+		80114,
+		80115,
+		80116,
+		80117,
+		80118,
+		80119,
+		80120,
+		80121,
+		80122,
+		80123,
+		80124,
+		80125,
+		80126,
+		80127
 	}
 }
 

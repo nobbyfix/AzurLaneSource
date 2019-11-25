@@ -214,6 +214,22 @@ pg.share_template = {
 			"UICamera/Canvas/TWCelebrationShare(Clone)"
 		}
 	},
+	[5000] = {
+		description = "#碧蓝航线#",
+		name = "台服分享活动（改动过唯一id 原id12）",
+		deck = 1,
+		hidden_comps = "",
+		move_comps = "",
+		camera = "UICamera",
+		id = 5000,
+		qrcode_location = {
+			373,
+			120
+		},
+		show_comps = {
+			"UICamera/Canvas/TWCelebrationShare(Clone)"
+		}
+	},
 	all = {
 		1,
 		2,
@@ -226,7 +242,8 @@ pg.share_template = {
 		9,
 		10,
 		11,
-		12
+		12,
+		5000
 	}
 }
 

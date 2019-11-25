@@ -87,7 +87,7 @@ return {
 			bgName = "bg_story_room",
 			side = 2,
 			dir = 1,
-			say = "噢，谢谢…——呜哇！凤、{namecode:89}！？什么时候开始在这里的…",
+			say = "喔，谢谢…——呜哇！凤、{namecode:89}！？什么时候开始在这里的…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

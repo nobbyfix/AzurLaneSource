@@ -223,16 +223,20 @@ slot0.updateShips = function (slot0, slot1, slot2, slot3, slot4)
 
 		if slot10 then
 			updateShip(slot12, slot10)
+			setActive(slot12:Find("event_block"), slot10.inEvent)
 		end
 
 		setActive(slot0:findTF("ship_type", slot12), false)
-
-		slot13 = GetOrAddComponent(slot12, typeof(UILongPressTrigger))
-
-		slot13.onClicked:RemoveAllListeners()
-		slot13.onLongPressed:RemoveAllListeners()
-		slot13.onClicked:AddListener(slot14)
-		slot13.onLongPressed:AddListener(function ()
+		GetOrAddComponent(slot12, typeof(UILongPressTrigger)).onLongPressed:RemoveAllListeners()
+		onButton(slot0, slot14, function ()
+			slot0:emit(ActivityBossBattleMediator3.ON_OPEN_DOCK, {
+				fleet = slot1,
+				shipVO = slot2,
+				fleetIndex = slot3,
+				teamType = slot3
+			})
+		end)
+		GetOrAddComponent(slot12, typeof(UILongPressTrigger)).onLongPressed:AddListener(function ()
 			if slot0 then
 				slot1:OnLongPressShip(slot2[slot3], slot4)
 			else

@@ -12,7 +12,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 2,
 			nameColor = "#a9f548",
-			say = "可恶，净派出些冒牌货来拖延时间，要不是之前在暴风雨中损失了那么多舰载机的话…",
+			say = "可惡，淨派出些冒牌貨來拖延時間，要不是之前在暴風雨中損失了那麼多艦載機的話…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -31,7 +31,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 2,
 			nameColor = "#a9f548",
-			say = "恩？前方海域收到求救信号，难道会是{namecode:95}姐？",
+			say = "恩？前方海域收到求救信號，難道會是{namecode:95}姐？",
 			shake = {
 				speed = 1,
 				number = 3
@@ -50,7 +50,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 2,
 			nameColor = "#a9f548",
-			say = "等着我，这一次，不会再失去你了！",
+			say = "等著我，這一次，不會再失去你了！",
 			shake = {
 				speed = 1,
 				number = 3

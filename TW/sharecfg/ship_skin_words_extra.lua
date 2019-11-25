@@ -2,15 +2,16 @@ pg = pg or {}
 pg.ship_skin_words_extra = {
 	[999010] = {
 		feeling3 = "",
-		feeling1 = "",
+		id = 999010,
 		win_mvp = "",
+		feeling1 = "",
+		unlock = "",
 		feeling4 = "",
 		lose = "",
 		profile = "",
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 999010,
 		login = {
 			{
 				100,
@@ -87,14 +88,15 @@ pg.ship_skin_words_extra = {
 	[801040] = {
 		touch = "",
 		feeling3 = "",
-		login = "",
-		feeling1 = "",
+		upgrade = "",
+		id = 801040,
 		expedition = "",
 		win_mvp = "",
 		home = "",
 		mission = "",
 		touch2 = "",
-		upgrade = "",
+		feeling1 = "",
+		unlock = "",
 		feeling4 = "",
 		mail = "",
 		lose = "",
@@ -104,7 +106,7 @@ pg.ship_skin_words_extra = {
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 801040,
+		login = "",
 		detail = "",
 		feeling5 = {
 			{
@@ -116,14 +118,15 @@ pg.ship_skin_words_extra = {
 	[108030] = {
 		touch = "",
 		feeling3 = "",
-		login = "",
-		feeling1 = "",
+		upgrade = "",
+		id = 108030,
 		expedition = "",
 		win_mvp = "",
 		home = "",
 		mission = "",
 		touch2 = "",
-		upgrade = "",
+		feeling1 = "",
+		unlock = "",
 		feeling4 = "",
 		mail = "",
 		lose = "",
@@ -133,7 +136,7 @@ pg.ship_skin_words_extra = {
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 108030,
+		login = "",
 		detail = "",
 		feeling5 = {
 			{
@@ -144,10 +147,11 @@ pg.ship_skin_words_extra = {
 	},
 	[999011] = {
 		feeling3 = "",
-		feeling1 = "",
+		upgrade = "",
+		id = 999011,
 		expedition = "",
 		mission = "",
-		upgrade = "",
+		feeling1 = "",
 		feeling4 = "",
 		mail = "",
 		lose = "",
@@ -157,7 +161,12 @@ pg.ship_skin_words_extra = {
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 999011,
+		unlock = {
+			{
+				100,
+				"加斯科涅，准备完成。确认指令：陪伴主人在沙滩玩耍——…主人，在沙滩玩耍，应该做点什么…？"
+			}
+		},
 		login = {
 			{
 				100,
@@ -203,9 +212,11 @@ pg.ship_skin_words_extra = {
 	},
 	[207050] = {
 		feeling3 = "",
-		feeling1 = "",
-		win_mvp = "",
 		upgrade = "",
+		id = 207050,
+		win_mvp = "",
+		feeling1 = "",
+		unlock = "",
 		feeling4 = "",
 		lose = "",
 		feeling5 = "",
@@ -213,7 +224,6 @@ pg.ship_skin_words_extra = {
 		headtouch = "",
 		feeling2 = "",
 		battle = "",
-		id = 207050,
 		login = {
 			{
 				1100,
@@ -275,12 +285,93 @@ pg.ship_skin_words_extra = {
 			}
 		}
 	},
+	[905030] = {
+		feeling3 = "",
+		upgrade = "",
+		id = 905030,
+		win_mvp = "",
+		feeling1 = "",
+		unlock = "",
+		feeling4 = "",
+		lose = "",
+		profile = "",
+		headtouch = "",
+		feeling2 = "",
+		battle = "",
+		login = {
+			{
+				1100,
+				"唱功，舞技，魅力——主人，今天加斯科涅应该做些什么呢？"
+			}
+		},
+		home = {
+			{
+				1100,
+				"主人，加斯科涅刚刚完成了一项课程，可以和主人聊天吗？"
+			}
+		},
+		detail = {
+			{
+				1100,
+				"提问，主人喜欢加斯科涅的演出吗？"
+			}
+		},
+		main = {
+			{
+				1100,
+				"数据库中，存在歌声拯救世界的记录，主人，加斯科涅未来也能做到吗？|蕴含“感情”的歌声，能够有效打动主人的心意……主人，愿意听加斯科涅唱歌吗？|加斯科涅，在宣传中的属性为：冷淡系……应该是不对的。加斯科涅，也想和大家一起，用闪亮的笑容去歌唱"
+			}
+		},
+		touch = {
+			{
+				1100,
+				"加斯科涅正在进行今日的课程——主人，有什么事吗？"
+			}
+		},
+		expedition = {
+			{
+				1100,
+				"加斯科涅，能去给返回的委托组唱歌吗…？"
+			}
+		},
+		mission = {
+			{
+				1100,
+				"摄影、演出、电台，加斯科涅，今天应该做什么呢？"
+			}
+		},
+		mission_complete = {
+			{
+				1100,
+				"报告，通过偶像活动，加斯科涅的偶像能力得到了提升…嗯！"
+			}
+		},
+		mail = {
+			{
+				1100,
+				"主人，是新的试镜邀请，请决定加斯科涅是否前往"
+			}
+		},
+		touch2 = {
+			{
+				1100,
+				"彗星她们说，偶像不应该随便让人碰…主人，这是“骚扰”…？"
+			}
+		},
+		feeling5 = {
+			{
+				1100,
+				"加斯科涅，已对“偶像”的定义有了完全的理解。为了在舞台上闪耀，为了把包含感情的“歌声”传达给大家，加斯科涅会最大限度的利用自己的性能。主人，“谢谢你”"
+			}
+		}
+	},
 	all = {
 		999010,
 		801040,
 		108030,
 		999011,
-		207050
+		207050,
+		905030
 	}
 }
 

@@ -9,15 +9,15 @@ return {
 		{
 			sequence = {
 				{
-					"在无垠的轮回中，连时间也失去了意义",
+					"在無垠的輪回中，連時間也失去了意義",
 					2
 				},
 				{
-					"从機率到非機率的趋近",
+					"從機率到非機率的趨近",
 					3
 				},
 				{
-					"一切有限之物皆当薪尽火传……",
+					"一切有限之物皆當薪盡火傳……",
 					6
 				},
 				{
@@ -25,11 +25,11 @@ return {
 					7
 				},
 				{
-					"如果没有那一次的相遇",
+					"如果沒有那一次的相遇",
 					8
 				},
 				{
-					"是否还能有另一种结局",
+					"是否還能有另一種結局",
 					10
 				},
 				{
@@ -37,7 +37,7 @@ return {
 					12
 				},
 				{
-					"是你吗，“造物主”大人？",
+					"是你嗎，“造物主”大人？",
 					13
 				}
 			}
@@ -45,7 +45,7 @@ return {
 		{
 			sequence = {
 				{
-					"——红染的参访者",
+					"——紅染的參訪者",
 					2
 				}
 			}
@@ -58,7 +58,7 @@ return {
 			blackBg = true,
 			actor = 900011,
 			nameColor = "#a9f548",
-			say = "暴风雨太大了，再继续前进的话可能会全军覆没的！",
+			say = "暴風雨太大了，再繼續前進的話可能會全軍覆沒的！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -76,7 +76,7 @@ return {
 			blackBg = true,
 			actor = 900012,
 			nameColor = "#a9f548",
-			say = "都已经下了那么大的赌注，不能就这么放弃，相信我，马上就要突破风暴了！",
+			say = "都已經下了那麼大的賭注，不能就這麼放棄，相信我，馬上就要突破風暴了！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -94,7 +94,7 @@ return {
 			blackBg = true,
 			actor = 900011,
 			nameColor = "#a9f548",
-			say = "前方发现巨大不明物体，航向150，立即规避撤离……",
+			say = "前方發現巨大不明物體，航向150，立即規避撤離……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -112,7 +112,7 @@ return {
 			blackBg = true,
 			actor = 900012,
 			nameColor = "#a9f548",
-			say = "不明物体？在暴风雨中？快告诉我你的方位！",
+			say = "不明物體？在暴風雨中？快告訴我你的方位！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -148,7 +148,7 @@ return {
 			blackBg = true,
 			actor = 900012,
 			nameColor = "#a9f548",
-			say = "回话呀，{namecode:95}姐，告诉我你的方位",
+			say = "回話呀，{namecode:95}姐，告訴我你的方位",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -220,7 +220,7 @@ return {
 			blackBg = true,
 			actor = 900012,
 			nameColor = "#a9f548",
-			say = "…陷入无线电静默区域了么，看来这次真是凶多吉少了呀…",
+			say = "…陷入無線電靜默區域了嗎，看來這次真是凶多吉少了呀…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -238,7 +238,7 @@ return {
 			blackBg = true,
 			actor = 900012,
 			nameColor = "#a9f548",
-			say = "可恶…明明还没跟那家伙决出胜负的就…",
+			say = "可惡…明明還沒跟那傢伙決出勝負的就…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -256,7 +256,7 @@ return {
 			blackBg = true,
 			actor = 900012,
 			nameColor = "#a9f548",
-			say = "等等，前面这道光是？…",
+			say = "等等，前面這道光是？…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -323,7 +323,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "……这是…?",
+			say = "……這是…?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -340,7 +340,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "诶！？？居然又大难不死了！！！",
+			say = "誒！？？居然又大難不死了！！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -357,7 +357,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "只是…头好痛，刚才一瞬间的事情已经完全记不起来了…",
+			say = "只是…頭好痛，剛才一瞬間的事情已經完全記不起來了…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -374,7 +374,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "可恶，{namecode:95}姐也联系不上，情况一点也没有好转嘛…",
+			say = "可惡，{namecode:95}姐也聯繫不上，情況一點也沒有好轉嘛…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -408,7 +408,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "收回前言…至少，终于让我找到你了…",
+			say = "收回前言…至少，終於讓我找到你了…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -425,7 +425,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "传说中的的“圣域”",
+			say = "傳說中的的“聖域”",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

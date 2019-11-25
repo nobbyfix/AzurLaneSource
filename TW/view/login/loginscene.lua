@@ -29,6 +29,7 @@ slot0.init = function (slot0)
 	slot0.version:GetComponent("Text").text = "ver " .. UpdateMgr.Inst.currentVersion:ToString()
 	slot0.bgLay = slot0:findTF("bg_lay")
 	slot0.accountBtn = slot0:findTF("bg_lay/buttons/account_button")
+	slot0.repairBtn = slot0:findTF("repair_button")
 	slot0.chInfo = slot0:findTF("background/info")
 
 	setActive(slot0.chInfo, PLATFORM_CODE == PLATFORM_CH)
@@ -52,6 +53,7 @@ slot0.init = function (slot0)
 	slot0.userAgreenMainTF = slot0:findTF("UserAgreement/window")
 	slot0.closeUserAgreenTF = slot0.userAgreenTF:Find("window/close_btn")
 	slot0.userAgreenConfirmTF = slot0:findTF("UserAgreement/window/accept_btn")
+	slot0.userDisagreeConfirmTF = slot0:findTF("UserAgreement/window/disagree_btn")
 
 	setActive(slot0.userAgreenTF, false)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.userAgreenTF, slot0._tf)
@@ -126,6 +128,9 @@ slot0.switchSubView = function (slot0, slot1)
 	for slot5, slot6 in ipairs(slot0.subViewList) do
 		if isa(slot6, BaseSubView) then
 			if table.contains(slot1, slot5) then
+				slot6:AddLoadedCallback(function ()
+					slot0.repairBtn:SetAsLastSibling()
+				end)
 				slot6:Load()
 				slot6:ActionInvoke("Show")
 			elseif slot6:GetLoaded() and slot6:isShowing() then
@@ -145,6 +150,7 @@ slot0.switchSubView = function (slot0, slot1)
 	end
 
 	slot0.userAgreenTF:SetAsLastSibling()
+	slot0.repairBtn:SetAsLastSibling()
 end
 
 slot0.onBackPressed = function (slot0)
@@ -251,11 +257,24 @@ end
 
 slot0.didEnter = function (slot0)
 	onButton(slot0, slot0.closeUserAgreenTF, function ()
-		setActive(slot0.userAgreenMainTF, false)
-		onNextTick(function ()
-			setActive(slot0.userAgreenMainTF, true)
-		end)
+		if PLATFORM_CODE == PLATFORM_JP or PLATFORM_CODE == PLATFORM_US then
+			setActive(slot0.userAgreenTF, false)
+			pg.UIMgr.GetInstance():UnblurPanel(slot0.userAgreenTF, slot0._tf)
+		else
+			setActive(slot0.userAgreenMainTF, false)
+			onNextTick(function ()
+				setActive(slot0.userAgreenMainTF, true)
+			end)
+		end
 	end, SFX_CANCEL)
+
+	if PLATFORM_CODE == PLATFORM_JP or PLATFORM_CODE == PLATFORM_US then
+		onButton(slot0, slot0.userDisagreeConfirmTF, function ()
+			setActive(slot0.userAgreenTF, false)
+			pg.UIMgr.GetInstance():UnblurPanel(slot0.userAgreenTF, slot0._tf)
+		end)
+	end
+
 	setActive(slot0.serviceBtn, PLATFORM_CODE == PLATFORM_KR)
 	onButton(slot0, slot0.serviceBtn, function ()
 		if PLATFORM_CODE == PLATFORM_KR then
@@ -271,8 +290,20 @@ slot0.didEnter = function (slot0)
 			pg.SdkMgr.GetInstance():SwitchAccount()
 		end
 	end, SFX_MAIN)
+	setActive(slot0.repairBtn, PathMgr.FileExists(Application.persistentDataPath .. "/hashes.csv"))
 
-	function slot1()
+	if isActive(slot0.repairBtn) then
+		onButton(slot0, slot0.repairBtn, function ()
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				content = i18n("resource_verify_warn"),
+				onYes = function ()
+					resourceVerify()
+				end
+			})
+		end)
+	end
+
+	function slot2()
 		if pg.SdkMgr.GetInstance():GetLoginType() == LoginType.PLATFORM then
 			pg.SdkMgr.GetInstance():LoginSdk()
 		elseif slot0 == LoginType.PLATFORM_TENCENT then
@@ -306,8 +337,14 @@ slot0.didEnter = function (slot0)
 			return
 		end
 
+		if not getProxy(SettingsProxy):getUserAgreement() and PLATFORM_KR ~= PLATFORM_CODE then
+			slot0.event:emit(LoginMediator.ON_LOGIN_PROCESS)
+
+			return
+		end
+
 		if go(slot0.pressToLogin).activeSelf then
-			if slot0(slot0.serverList or {}) == 0 then
+			if table.getCount(slot0.serverList or {}) == 0 then
 				slot1()
 
 				return
@@ -621,10 +658,7 @@ slot0.playOpening = function (slot0, slot1, slot2, slot3)
 		end
 
 		slot0.cg.alpha = 0
-
-		setActive(slot0.openingTF, true)
-
-		setActive.openingAni.enabled = true
+		slot0.cg.openingAni.enabled = true
 
 		onButton(onButton, slot0.openingTF, function ()
 			if slot0 then
@@ -636,6 +670,7 @@ slot0.playOpening = function (slot0, slot1, slot2, slot3)
 
 		slot0:SetStartEvent(function (slot0)
 			if slot0.criAni then
+				slot0.criAni.player:SetVolume(PlayerPrefs.GetFloat("bgm_vol", DEFAULT_BGMVOLUME))
 				slot0.criAni:Play()
 			end
 		end)
@@ -653,7 +688,7 @@ slot0.playOpening = function (slot0, slot1, slot2, slot3)
 
 			pg.UIMgr.GetInstance():OverlayPanel(slot0.openingTF.transform)
 
-			slot0.criAni = slot0.openingTF:GetComponent("CriManaEffectUI")
+			slot0.criAni = tf(slot0.openingTF):Find("usm"):GetComponent("CriManaEffectUI")
 
 			setActive(slot0.openingTF, false)
 

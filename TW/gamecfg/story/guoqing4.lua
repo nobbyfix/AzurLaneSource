@@ -10,7 +10,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 2,
 			nameColor = "#a9f548",
-			say = "你们这些量产的冒牌货可真是烦人，究竟还有多少，一起上吧！",
+			say = "你們這些量產的冒牌貨可真是煩人，究竟還有多少，一起上吧！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -48,7 +48,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "这不是{namecode:11}吗！？来得真是时候，刚才在暴风雨中走散之后就一直担心你们，平安无事真是太好了",
+			say = "這不是{namecode:11}嗎！？來得真是時候，剛才在暴風雨中走散之後就一直擔心你們，平安無事真是太好了",
 			shake = {
 				speed = 1,
 				number = 3
@@ -67,7 +67,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "快来帮我一起赶走这些烦人的虫子！",
+			say = "快來幫我一起趕走這些煩人的蟲子！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -87,7 +87,7 @@ return {
 			mode = 2,
 			nameColor = "#ff0000",
 			side = 1,
-			say = "…任务…破坏…",
+			say = "…任務…破壞…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -103,7 +103,7 @@ return {
 			soundeffect = "event:/battle/boom2",
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "！！！你这是做什么，差一点就要击中我了，小心…",
+			say = "！！！你這是做什麼，差一點就要擊中我了，小心…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -122,7 +122,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "一点…{namecode:11}，你这是…",
+			say = "一點…{namecode:11}，你這是…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -142,7 +142,7 @@ return {
 			mode = 2,
 			nameColor = "#ff0000",
 			side = 1,
-			say = "…任务…歼灭…",
+			say = "…任務…殲滅…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -157,7 +157,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "看来…还是晚了一步，那么，就让我来把你从诅咒解放出来吧",
+			say = "看來…還是晚了一步，那麼，就讓我來把你從詛咒解放出來吧",
 			shake = {
 				speed = 1,
 				number = 3
@@ -176,7 +176,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "“灵”式战机，全员起飞！",
+			say = "“靈”式戰機，全員起飛！",
 			shake = {
 				speed = 1,
 				number = 3

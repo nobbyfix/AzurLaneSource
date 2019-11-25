@@ -295,7 +295,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "噢、噢噢…不知怎么的，总有种被激励了的感觉？！",
+			say = "喔、喔喔…不知怎么的，总有种被激励了的感觉？！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

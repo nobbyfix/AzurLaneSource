@@ -12,13 +12,13 @@ return {
 			mode = 1,
 			sequence = {
 				{
-					"春风的十字星\n\n<size=45>一 某个早晨的突发事件</size>",
+					"春風的十字星\n\n<size=45>一 某個早晨的突發事件</size>",
 					1
 				}
 			}
 		},
 		{
-			say = "呼欸？！！不、不见了？！怎、怎么办…",
+			say = "呼欸？！！不、不見了？！怎、怎麼辦…",
 			side = 2,
 			dir = 1,
 			blackBg = true,
@@ -42,7 +42,7 @@ return {
 			blackBg = true,
 			actor = 201101,
 			nameColor = "#a9f548",
-			say = "呜呜…只、只能这样了吗——",
+			say = "嗚嗚…只、只能這樣了嗎——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -58,7 +58,7 @@ return {
 			dir = 1,
 			actor = 201080,
 			nameColor = "#a9f548",
-			say = "小天鹅？！你、你这是什么装备！",
+			say = "小天鵝？！你、你這是什麼裝備！",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -86,7 +86,7 @@ return {
 			}
 		},
 		{
-			say = "暴、暴力！这是赤裸裸的暴力！反对暴力！",
+			say = "暴、暴力！這是赤裸裸的暴力！反對暴力！",
 			side = 1,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -111,7 +111,7 @@ return {
 			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			say = "呜呜呜…彗星、新月…你们听我说啊——",
+			say = "嗚嗚嗚…彗星、新月…你們聽我說啊——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -127,7 +127,7 @@ return {
 			dir = 1,
 			actor = 201080,
 			nameColor = "#a9f548",
-			say = "放在阳台的衣服…不见了？！晾着的和准备洗的都…？",
+			say = "放在陽臺的衣服…不見了？！晾著的和準備洗的都…？",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -155,7 +155,7 @@ return {
 			}
 		},
 		{
-			say = "真、真是灾难啊…不过…（盯——）",
+			say = "真、真是災難啊…不過…（盯——）",
 			side = 1,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -196,7 +196,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "同样是C级，为什么…呜呜呜…",
+			say = "同樣是C級，為什麼…嗚嗚嗚…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -212,7 +212,7 @@ return {
 			bgName = "bg_story_school",
 			side = 0,
 			dir = 1,
-			say = "新月酱不要哭，我、我也…呜呜…",
+			say = "新月醬不要哭，我、我也…嗚嗚…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -228,7 +228,7 @@ return {
 			bgName = "bg_story_school",
 			side = 0,
 			dir = 1,
-			say = "不、不过…我的衣服究竟去哪里了呢…？",
+			say = "不、不過…我的衣服究竟去哪裡了呢…？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -244,7 +244,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "难、难道是…小偷？",
+			say = "難、難道是…小偷？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

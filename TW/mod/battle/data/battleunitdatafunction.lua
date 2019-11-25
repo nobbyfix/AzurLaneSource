@@ -102,24 +102,9 @@ end
 
 ys or .Battle.BattleDataFunction.InitUnitSkill = function (slot0, slot1)
 	slot2 = slot0.skills or {}
-	slot3 = slot0.Battle.BattleState.GetInstance():GetBattleType()
 
-	for slot7, slot8 in pairs(slot2) do
-		slot10 = false
-
-		if slot0.Battle.BattleDataFunction.GetBuffTemplate(slot8.id, slot8.level).limit then
-			for slot14, slot15 in ipairs(slot9) do
-				if slot3 == slot15 then
-					slot10 = true
-
-					break
-				end
-			end
-		end
-
-		if not slot10 then
-			slot1:AddBuff(slot0.Battle.BattleBuffUnit.New(slot8.id, slot8.level, slot1))
-		end
+	for slot6, slot7 in pairs(slot2) do
+		slot1:AddBuff(slot0.Battle.BattleBuffUnit.New(slot7.id, slot7.level, slot1))
 	end
 end
 
@@ -344,6 +329,10 @@ end
 
 ys or .Battle.BattleDataFunction.GetEnemyTypeDataByType = function (slot0)
 	return slot0[slot0]
+end
+
+ys or .Battle.BattleDataFunction.GetArenaBuffByShipType = function (slot0)
+	return slot0:GetShipTypeTmp().arena_buff
 end
 
 ys or .Battle.BattleDataFunction.GetPlayerUnitDurabilityExtraAddition = function (slot0, slot1)

@@ -400,7 +400,7 @@ return {
 			dir = 1,
 			actor = 301050,
 			nameColor = "#a9f548",
-			say = "噢！",
+			say = "喔！",
 			subActors = {
 				{
 					actor = 401230,

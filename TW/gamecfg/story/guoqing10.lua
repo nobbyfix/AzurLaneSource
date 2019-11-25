@@ -12,7 +12,7 @@ return {
 			actorName = "{namecode:132}",
 			side = 2,
 			nameColor = "#ff0000",
-			say = "呜，{namecode:79}酱被击败了…就算用上神赐予的力量也被{namecode:96}亲无情的击败了…呜——",
+			say = "嗚，{namecode:79}醬被擊敗了…就算用上神賜予的力量也被{namecode:96}親無情的擊敗了…嗚——",
 			shake = {
 				speed = 1,
 				number = 3
@@ -28,7 +28,7 @@ return {
 		},
 		{
 			side = 0,
-			say = "你刚才在关键时刻手下留情了吧？",
+			say = "你剛才在關鍵時刻手下留情了吧？",
 			actorName = "{namecode:96}",
 			actor = 307060,
 			nameColor = "#a9f548",
@@ -54,7 +54,7 @@ return {
 			actorName = "{namecode:132}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "才…才没有呢！人家才没有想告诉你{namecode:95}老师其实被她们封锁在圣域中心的那座大房子里呢！",
+			say = "才…才沒有呢！人家才沒有想告訴你{namecode:95}老師其實被她們封鎖在聖域中心的那座大房子裡呢！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -73,7 +73,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "谢啦～先走一步",
+			say = "謝啦～先走一步",
 			shake = {
 				speed = 1,
 				number = 3
@@ -111,7 +111,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "怎么，后悔了？",
+			say = "怎麼，後悔了？",
 			shake = {
 				speed = 1,
 				number = 3
@@ -130,7 +130,7 @@ return {
 			actorName = "{namecode:132}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "请一定要拯救我们的未来…她们，不是坏孩子…",
+			say = "請一定要拯救我們的未來…她們，不是壞孩子…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -168,7 +168,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "嗯，我保证！",
+			say = "嗯，我保證！",
 			shake = {
 				speed = 1,
 				number = 3

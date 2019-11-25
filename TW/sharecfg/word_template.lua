@@ -12503,6 +12503,9 @@ pg.word_template = {
 		}
 	},
 	下 = {
+		台 = {
+			this = true
+		},
 		注 = {
 			this = true
 		},
@@ -12516,6 +12519,9 @@ pg.word_template = {
 					this = true
 				}
 			}
+		},
+		臺 = {
+			this = true
 		},
 		賤 = {
 			this = true
@@ -13718,6 +13724,11 @@ pg.word_template = {
 		},
 		大 = {
 			大 = {
+				this = true
+			}
+		},
+		尽 = {
+			评 = {
 				this = true
 			}
 		},
@@ -17595,6 +17606,14 @@ pg.word_template = {
 		軍 = {
 			this = true
 		},
+		青 = {
+			团 = {
+				this = true
+			},
+			團 = {
+				this = true
+			}
+		},
 		黨 = {
 			this = true
 		}
@@ -20140,6 +20159,22 @@ pg.word_template = {
 			平 = {
 				this = true
 			}
+		},
+		进 = {
+			平 = {
+				this = true
+			},
+			评 = {
+				this = true
+			}
+		},
+		進 = {
+			平 = {
+				this = true
+			},
+			評 = {
+				this = true
+			}
 		}
 	},
 	分 = {
@@ -22025,6 +22060,11 @@ pg.word_template = {
 		華 = {
 			this = true
 		},
+		送 = {
+			中 = {
+				this = true
+			}
+		},
 		革 = {
 			命 = {
 				this = true
@@ -22627,6 +22667,14 @@ pg.word_template = {
 					this = true
 				}
 			}
+		}
+	},
+	吓 = {
+		台 = {
+			this = true
+		},
+		抬 = {
+			this = true
 		}
 	},
 	吕 = {
@@ -23477,6 +23525,14 @@ pg.word_template = {
 					}
 				}
 			}
+		}
+	},
+	嚇 = {
+		台 = {
+			this = true
+		},
+		抬 = {
+			this = true
 		}
 	},
 	嚳 = {
@@ -35164,6 +35220,11 @@ pg.word_template = {
 			烈 = {
 				this = true
 			}
+		},
+		振 = {
+			英 = {
+				this = true
+			}
 		}
 	},
 	梅 = {
@@ -37133,7 +37194,6 @@ pg.word_template = {
 			}
 		},
 		動 = {
-			this = true,
 			管 = {
 				理 = {
 					員 = {
@@ -38192,10 +38252,20 @@ pg.word_template = {
 			}
 		},
 		独 = {
-			this = true
+			this = true,
+			分 = {
+				子 = {
+					this = true
+				}
+			}
 		},
 		獨 = {
-			this = true
+			this = true,
+			分 = {
+				子 = {
+					this = true
+				}
+			}
 		}
 	},
 	游 = {
@@ -44132,6 +44202,11 @@ pg.word_template = {
 				this = true
 			}
 		},
+		盡 = {
+			評 = {
+				this = true
+			}
+		},
 		近 = {
 			平 = {
 				this = true
@@ -46080,6 +46155,11 @@ pg.word_template = {
 			this = true
 		}
 	},
+	荫 = {
+		权 = {
+			this = true
+		}
+	},
 	莖 = {
 		this = true,
 		候 = {
@@ -46591,6 +46671,11 @@ pg.word_template = {
 			德 = {
 				this = true
 			}
+		}
+	},
+	蔭 = {
+		權 = {
+			this = true
 		}
 	},
 	蕆 = {
@@ -50852,6 +50937,11 @@ pg.word_template = {
 					this = true
 				}
 			}
+		}
+	},
+	送 = {
+		中 = {
+			this = true
 		}
 	},
 	逍 = {

@@ -12,7 +12,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "求救信号居然是…{namecode:76}和{namecode:77}前辈…难道你们也…",
+			say = "求救信號居然是…{namecode:76}和{namecode:77}前輩…難道你們也…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -69,7 +69,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "明白了…全员备战！",
+			say = "明白了…全員備戰！",
 			shake = {
 				speed = 1,
 				number = 3

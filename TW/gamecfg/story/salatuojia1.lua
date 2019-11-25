@@ -239,7 +239,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "指挥官~我马上就弄完啦~然后我们再去找列克星敦姐姐上课吧！",
+			say = "指挥官~我马上就弄完啦~然后我们再去找列星頓姐姐上课吧！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -56,6 +56,14 @@ function slot4(slot0, slot1, slot2)
 end
 
 pg.SystemGuideMgr.Play = function (slot0, slot1, slot2)
+	if Application.isEditor and not ENABLE_GUIDE then
+		if slot2 then
+			slot2()
+		end
+
+		return
+	end
+
 	if not slot0[slot1.__cname] then
 		slot1(slot2)
 

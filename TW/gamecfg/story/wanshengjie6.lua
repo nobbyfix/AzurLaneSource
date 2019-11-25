@@ -10,7 +10,7 @@ return {
 			mode = 1,
 			sequence = {
 				{
-					"“魔女们”的万圣夜\n\n<size=45>其六　显露身形的幽灵</size>",
+					"“魔女們”的萬聖夜\n\n<size=45>其六　顯露身形的幽靈</size>",
 					1
 				}
 			}
@@ -21,7 +21,7 @@ return {
 			side = 2,
 			dir = -1,
 			actorName = "{namecode:6}",
-			say = "声音是从上方传来的……",
+			say = "聲音是從上方傳來的……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -36,7 +36,7 @@ return {
 			nameColor = "#a9f548",
 			side = 1,
 			dir = 1,
-			say = "它们在漂浮的南瓜灯上",
+			say = "它們在漂浮的南瓜燈上",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -51,7 +51,7 @@ return {
 			}
 		},
 		{
-			say = "首先，要做什么恶作剧呢？",
+			say = "首先，要做什麼惡作劇呢？",
 			side = 0,
 			nameColor = "#a9f548",
 			dir = 1,
@@ -68,7 +68,7 @@ return {
 			}
 		},
 		{
-			say = "那、那个，White姐，你一直说想在万圣夜玩乐，我以为肯定想好恶作剧了……",
+			say = "那、那個，White姐，你一直說想在萬聖夜玩樂，我以為肯定想好惡作劇了……",
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
@@ -108,7 +108,7 @@ return {
 			dir = -1,
 			actor = 301051,
 			actorName = "{namecode:6}",
-			say = "这个声音——你果然是{namecode:95}！",
+			say = "這個聲音——你果然是{namecode:95}！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -171,7 +171,7 @@ return {
 			side = 0,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "好吧，White，你们打算做什么？",
+			say = "好吧，White，你們打算做什麼？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -187,7 +187,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "White?",
-			say = "嗯……你们喜欢什么恶作剧？",
+			say = "嗯……你們喜歡什麼惡作劇？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -203,7 +203,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:19}",
-			say = "为什么要问被恶作剧的人喜欢什么恶作剧啊……",
+			say = "為什麼要問被惡作劇的人喜歡什麼惡作劇啊……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -219,7 +219,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:87}",
-			say = "南瓜灯是你们操纵的吗？用南瓜灯在夜空中摆出一张巨大的鬼脸一定很棒！吾偷偷试过几次但总弄不好……",
+			say = "南瓜燈是你們操縱的嗎？用南瓜燈在夜空中擺出一張巨大的鬼臉一定很棒！吾偷偷試過幾次但總弄不好……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -235,7 +235,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "White?",
-			say = "听起来不错~",
+			say = "聽起來不錯~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -251,7 +251,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "Gray?",
-			say = "Gold，你来负责左侧",
+			say = "Gold，你來負責左側",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -267,7 +267,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "Gold?",
-			say = "明明是我赢了，为什么却是你在指挥！",
+			say = "明明是我贏了，為什麼卻是你在指揮！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -283,7 +283,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "Gray?",
-			say = "再磨磨蹭蹭，我这边要摆完了哦",
+			say = "再磨磨蹭蹭，我這邊要擺完了哦",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -299,7 +299,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "White?",
-			say = "可恶——看我一口气摆好！",
+			say = "可惡——看我一口氣擺好！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -315,7 +315,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "White?",
-			say = "呵呵~对了！大家都站到南瓜灯上吧~",
+			say = "呵呵~對了！大家都站到南瓜燈上吧~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

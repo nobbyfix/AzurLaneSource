@@ -86,7 +86,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嘻嘻，是列克星敦小姐的演唱会~",
+			say = "嘻嘻，是列星頓小姐的演唱会~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -191,7 +191,7 @@ return {
 			dir = 1,
 			actor = 102180,
 			nameColor = "#a9f548",
-			say = "可以好好把列克星敦小姐看个够~",
+			say = "可以好好把列星頓小姐看个够~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -208,7 +208,7 @@ return {
 			dir = 1,
 			actor = 102180,
 			nameColor = "#a9f548",
-			say = "说起来，列克星敦小姐啊，是个温柔的人哦~",
+			say = "说起来，列星頓小姐啊，是个温柔的人哦~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -239,7 +239,7 @@ return {
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
-			say = "一说到列克星敦，康克德就喋喋不休。",
+			say = "一说到列星頓，康克德就喋喋不休。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -251,7 +251,7 @@ return {
 			dir = 1,
 			actor = 102180,
 			nameColor = "#a9f548",
-			say = "列克星敦小姐出场了！指挥官！",
+			say = "列星頓小姐出场了！指挥官！",
 			flashout = {
 				dur = 0.5,
 				black = true,

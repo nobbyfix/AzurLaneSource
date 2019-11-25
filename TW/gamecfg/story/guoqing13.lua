@@ -12,7 +12,7 @@ return {
 			actorName = "{namecode:24}",
 			side = 2,
 			nameColor = "#ff0000",
-			say = "呜…幸运舰什么的…果然都是骗人的",
+			say = "嗚…幸運艦什麼的…果然都是騙人的",
 			shake = {
 				speed = 1,
 				number = 3
@@ -28,7 +28,7 @@ return {
 		},
 		{
 			side = 0,
-			say = "哼哼，也许只是你的对手幸运值更高罢了～",
+			say = "哼哼，也許只是你的對手幸運值更高罷了～",
 			actorName = "{namecode:96}",
 			actor = 307060,
 			nameColor = "#a9f548",
@@ -54,7 +54,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "好了，把你知道的阴谋都告诉我",
+			say = "好了，把你知道的陰謀都告訴我",
 			shake = {
 				speed = 1,
 				number = 3
@@ -73,7 +73,7 @@ return {
 			actorName = "{namecode:24}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "呜…人家也是迷迷糊糊的闯进这片“圣域”的，然后…就遇到了“她们”",
+			say = "嗚…人家也是迷迷糊糊的闖進這片“聖域”的，然後…就遇到了“她們”",
 			shake = {
 				speed = 1,
 				number = 3
@@ -92,7 +92,7 @@ return {
 			actorName = "{namecode:24}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "“她们”一直在这里研究神明所赐予的科技，想要靠它们来扭转战局…",
+			say = "“她們”一直在這裡研究神明所賜予的科技，想要靠它們來扭轉戰局…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -111,7 +111,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "和情报所说的一样么，看来你没有撒谎",
+			say = "和情報所說的一樣嗎，看來你沒有撒謊",
 			shake = {
 				speed = 1,
 				number = 3
@@ -130,7 +130,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "跟着我一起去帮助{namecode:95}姐吧，多一人多一份力量",
+			say = "跟著我一起去幫助{namecode:95}姐吧，多一人多一份力量",
 			shake = {
 				speed = 1,
 				number = 3
@@ -149,7 +149,7 @@ return {
 			actorName = "{namecode:24}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "我不能违背“她们”的意志…",
+			say = "我不能違背“她們”的意志…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -168,7 +168,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "就算“她们”所信仰的神明都是虚假的谎言？",
+			say = "就算“她們”所信仰的神明都是虛假的謊言？",
 			shake = {
 				speed = 1,
 				number = 3
@@ -187,7 +187,7 @@ return {
 			actorName = "{namecode:24}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "“她们”是给予了我们希望的人，就算这条路也许是错的，我也…",
+			say = "“她們”是給予了我們希望的人，就算這條路也許是錯的，我也…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -206,7 +206,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "明白了，祝你好运～",
+			say = "明白了，祝你好運～",
 			shake = {
 				speed = 1,
 				number = 3

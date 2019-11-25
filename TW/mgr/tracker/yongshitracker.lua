@@ -51,6 +51,12 @@ slot0.Tracking = function (slot0, slot1, slot2, slot3)
 
 		slot5:AddParam("user_id", slot2)
 		pg.SdkMgr.GetInstance():UserEventUpload(slot5)
+	elseif slot1 == TRACKING_ROLE_LOGIN then
+		slot5 = AiriUserEvent.New(slot4)
+
+		slot5:AddParam("user_id", slot2)
+		slot5:AddParam("airi_uid", pg.SdkMgr.GetInstance().airi_uid)
+		pg.SdkMgr.GetInstance():UserEventUpload(slot5)
 	else
 		slot5 = AiriUserEvent.New(slot4)
 

@@ -12,7 +12,7 @@ return {
 			actorName = "{namecode:24}",
 			side = 2,
 			nameColor = "#ff0000",
-			say = "这次的任务目标…意外的强大呢…唔，人家明明不是正面作战类型的",
+			say = "這次的任務目標…意外的強大呢…唔，人家明明不是正面作戰類型的",
 			shake = {
 				speed = 1,
 				number = 3
@@ -28,7 +28,7 @@ return {
 		},
 		{
 			side = 0,
-			say = "对不起，{namecode:95}姐现在危在旦夕，没有时间陪你玩游戏了，速战速决吧",
+			say = "對不起，{namecode:95}姐現在危在旦夕，沒有時間陪你玩遊戲了，速戰速決吧",
 			actorName = "{namecode:96}",
 			actor = 307060,
 			nameColor = "#a9f548",
@@ -54,7 +54,7 @@ return {
 			actorName = "{namecode:24}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "虽然是强大的目标…但是{namecode:24}也是意外强大的哦…",
+			say = "雖然是強大的目標…但是{namecode:24}也是意外強大的哦…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -73,7 +73,7 @@ return {
 			actorName = "{namecode:24}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "航空母舰什么的，也是击沉过很多的哦呵呵…大概…",
+			say = "航空母艦什麼的，也是擊沉過很多的哦呵呵…大概…",
 			shake = {
 				speed = 1,
 				number = 3

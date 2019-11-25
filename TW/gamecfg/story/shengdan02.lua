@@ -54,7 +54,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "哈欸？突击采访？噢噢，终于我也成为知名人士了嘛！",
+			say = "哈欸？突击采访？喔喔，终于我也成为知名人士了嘛！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

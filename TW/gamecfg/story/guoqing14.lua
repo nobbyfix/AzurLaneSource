@@ -13,7 +13,7 @@ return {
 			blackBg = true,
 			actor = 900028,
 			nameColor = "#a9f548",
-			say = "舰载机全部出击，目标，列克星敦！",
+			say = "艦載機全部出擊，目標，列星頓！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -33,7 +33,7 @@ return {
 			blackBg = true,
 			actor = 900027,
 			nameColor = "#a9f548",
-			say = "注意保留护航用的编队，不可如此鲁莽！",
+			say = "注意保留護航用的編隊，不可如此魯莽！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -53,7 +53,7 @@ return {
 			blackBg = true,
 			actor = 900028,
 			nameColor = "#a9f548",
-			say = "白鹰的那帮新手，怎么可能是“灵”的对手，速战速决才是王道～",
+			say = "白鷹的那幫新手，怎麼可能是“靈”的對手，速戰速決才是王道～",
 			shake = {
 				speed = 1,
 				number = 3
@@ -73,7 +73,7 @@ return {
 			blackBg = true,
 			actor = 900027,
 			nameColor = "#a9f548",
-			say = "高空发现80余架敌方舰载机，“灵”式立刻起飞拦截！",
+			say = "高空發現80餘架敵方艦載機，“靈”式立刻起飛攔截！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -93,7 +93,7 @@ return {
 			blackBg = true,
 			actor = 900028,
 			nameColor = "#a9f548",
-			say = "怎…怎么会？",
+			say = "怎…怎麼會？",
 			shake = {
 				speed = 1,
 				number = 3
@@ -113,7 +113,7 @@ return {
 			blackBg = true,
 			actor = 900027,
 			nameColor = "#a9f548",
-			say = "快躲进那片雨云下！敌机交给我来对付！",
+			say = "快躲進那片雨雲下！敵機交給我來對付！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -153,7 +153,7 @@ return {
 			blackBg = true,
 			actor = 900027,
 			nameColor = "#a9f548",
-			say = "没时间多想了，{namecode:87}那孩子已经吃到苦头了，不能再有更多的损失了！",
+			say = "沒時間多想了，{namecode:87}那孩子已經吃到苦頭了，不能再有更多的損失了！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -173,7 +173,7 @@ return {
 			blackBg = true,
 			actor = 900027,
 			nameColor = "#a9f548",
-			say = "我会守护你的，记住，下一次，不许再这么鲁——",
+			say = "我會守護你的，記住，下一次，不許再這麼魯——",
 			shake = {
 				speed = 1,
 				number = 3
@@ -194,7 +194,7 @@ return {
 			soundeffect = "event:/battle/boom2",
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "{namecode:95}姐…这一次不会再让这种事发生了…",
+			say = "{namecode:95}姐…這一次不會再讓這種事發生了…",
 			flashout = {
 				dur = 1,
 				alpha = {

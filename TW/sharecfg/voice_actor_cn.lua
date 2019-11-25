@@ -133,7 +133,7 @@ pg.voice_actor_CN = {
 		code = 33
 	},
 	{
-		actor_name = "中条智世",
+		actor_name = "中條智世",
 		code = 34
 	},
 	{
@@ -671,6 +671,154 @@ pg.voice_actor_CN = {
 	{
 		actor_name = "諸星堇",
 		code = 168
+	},
+	{
+		actor_name = "青木瑠璃子",
+		code = 169
+	},
+	{
+		actor_name = "七瀬彩夏",
+		code = 170
+	},
+	{
+		actor_name = "藤沢玲香",
+		code = 171
+	},
+	{
+		actor_name = "河濑茉希",
+		code = 172
+	},
+	{
+		actor_name = "下地紫野",
+		code = 173
+	},
+	{
+		actor_name = "生天目仁美",
+		code = 174
+	},
+	{
+		actor_name = "安野希世乃",
+		code = 175
+	},
+	{
+		actor_name = "绊爱",
+		code = 176
+	},
+	{
+		actor_name = "嵩马美步",
+		code = 177
+	},
+	{
+		actor_name = "岛袋美由利",
+		code = 178
+	},
+	{
+		actor_name = "市之濑加那",
+		code = 179
+	},
+	{
+		actor_name = "岩佐夏芽",
+		code = 180
+	},
+	{
+		actor_name = "和气杏未",
+		code = 181
+	},
+	{
+		actor_name = "内田真礼",
+		code = 182
+	},
+	{
+		actor_name = "川澄绫子",
+		code = 183
+	},
+	{
+		actor_name = "结名美月",
+		code = 184
+	},
+	{
+		actor_name = "原纱友里",
+		code = 185
+	},
+	{
+		actor_name = "柳原可奈子",
+		code = 186
+	},
+	{
+		actor_name = "真野步",
+		code = 187
+	},
+	{
+		actor_name = "大和田仁美",
+		code = 188
+	},
+	{
+		actor_name = "铃代纱弓",
+		code = 189
+	},
+	{
+		actor_name = "山村响",
+		code = 190
+	},
+	{
+		actor_name = "高桥未奈美",
+		code = 191
+	},
+	{
+		actor_name = "能登麻美子",
+		code = 192
+	},
+	{
+		actor_name = "唐雅菁",
+		code = 193
+	},
+	{
+		actor_name = "小N",
+		code = 194
+	},
+	{
+		actor_name = "花玲",
+		code = 195
+	},
+	{
+		actor_name = "王晓彤",
+		code = 196
+	},
+	{
+		actor_name = "杜冥鸦",
+		code = 197
+	},
+	{
+		actor_name = "大桥歩夕",
+		code = 198
+	},
+	{
+		actor_name = "久保由利香",
+		code = 199
+	},
+	{
+		actor_name = "长谷川里桃",
+		code = 200
+	},
+	{
+		actor_name = "清水彩香",
+		code = 201
+	},
+	{
+		actor_name = "立花理香 ",
+		code = 202
+	},
+	{
+		actor_name = "渡部纱弓 ",
+		code = 203
+	},
+	{
+		actor_name = "金子彩花 ",
+		code = 204
+	},
+	{
+		actor_name = "紫苑雪",
+		code = 205
 	}
 }
 

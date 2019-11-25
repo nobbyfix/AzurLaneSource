@@ -155,7 +155,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呀吼~列克星敦~萨拉~",
+			say = "呀吼~列星頓~萨拉~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -271,7 +271,7 @@ return {
 			dir = 1,
 			actor = 102080,
 			nameColor = "#a9f548",
-			say = "哦…噢噢…虽然不太懂，但是总觉得好厉害！",
+			say = "哦…喔喔…虽然不太懂，但是总觉得好厉害！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

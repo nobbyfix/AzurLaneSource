@@ -30,7 +30,7 @@ return {
 			bgm = "star",
 			actor = 0,
 			actorName = "观众A",
-			say = "唔噢噢噢噢！星尘酱最棒了啊啊啊啊啊！！",
+			say = "唔喔喔喔喔！星尘酱最棒了啊啊啊啊啊！！",
 			withoutPainting = true,
 			flashout = {
 				dur = 1,
@@ -116,7 +116,7 @@ return {
 			}
 		},
 		{
-			say = "哦噢噢噢噢！L！！O！！V！！E！！星•尘•酱！L！！O！！V！！E！！星•尘•酱！",
+			say = "哦喔喔喔喔！L！！O！！V！！E！！星•尘•酱！L！！O！！V！！E！！星•尘•酱！",
 			side = 1,
 			actorName = "台下众人",
 			blackBg = true,
@@ -228,7 +228,7 @@ return {
 			}
 		},
 		{
-			say = "哦噢噢噢噢哦噢噢噢噢！",
+			say = "哦喔喔喔喔哦喔喔喔喔！",
 			side = 1,
 			actorName = "台下众人",
 			blackBg = true,

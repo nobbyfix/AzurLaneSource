@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"捣蛋万圣夜！\n\n<size=45>三 害怕幽灵的魔女</size>",
+					"搗蛋萬聖夜！\n\n<size=45>三 害怕幽靈的魔女</size>",
 					1
 				}
 			}
@@ -56,7 +56,7 @@ return {
 			bgm = "story-1",
 			actor = 302040,
 			nameColor = "#a9f548",
-			say = "怎么了，{namecode:48}？在烦恼{namecode:87}说的幽灵小姐的事情吗？",
+			say = "怎麼了，{namecode:48}？在煩惱{namecode:87}說的幽靈小姐的事情嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -69,7 +69,7 @@ return {
 		{
 			expression = 1,
 			side = 1,
-			say = "欸？{namecode:46}姐？你怎么知道的——",
+			say = "欸？{namecode:46}姐？你怎麼知道的——",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -94,7 +94,7 @@ return {
 			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			say = "当然是从{namecode:87}那里听说的啦～",
+			say = "當然是從{namecode:87}那裡聽說的啦～",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -112,7 +112,7 @@ return {
 			blackBg = true,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "我、我果然还是不行的啦，幽灵什么的对我来说太勉强了…",
+			say = "我、我果然還是不行的啦，幽靈什麼的對我來說太勉強了…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -128,7 +128,7 @@ return {
 			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			say = "但是，如果幽灵小姐找不到回去的路，就会一直呆在港区了吧",
+			say = "但是，如果幽靈小姐找不到回去的路，就會一直待在港區了吧",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -144,7 +144,7 @@ return {
 			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			say = "如果哪天在路上碰到了幽灵小姐的话，不是更让人困扰了？",
+			say = "如果哪天在路上碰到了幽靈小姐的話，不是更讓人困擾了？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -160,7 +160,7 @@ return {
 			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			say = "这样想的话，把幽灵送回家以后，不就少一个烦恼了吗？",
+			say = "這樣想的話，把幽靈送回家以後，不就少一個煩惱了嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -178,7 +178,7 @@ return {
 			blackBg = true,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "啊…确、确实是这样…",
+			say = "啊…確、確實是這樣…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -208,7 +208,7 @@ return {
 			side = 2,
 			dir = 1,
 			bgName = "star_level_bg_103",
-			say = "回到现在…",
+			say = "回到現在…",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -243,7 +243,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "啊！发现新的魔女了～嘿！",
+			say = "啊！發現新的魔女了～嘿！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -298,7 +298,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "哇啊！！吓、吓了我一跳",
+			say = "哇啊！！嚇、嚇了我一跳",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -324,7 +324,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "诶…是贝利啊，这一身是…魔女？",
+			say = "欸…是貝利啊，這一身是…魔女？",
 			actor = 302051,
 			actorName = "{namecode:48}",
 			paintingFadeOut = {
@@ -346,7 +346,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "是呀～嘿嘿，{namecode:48}难道也是要去寻找幽灵小姐的吗？",
+			say = "是呀～嘿嘿，{namecode:48}難道也是要去尋找幽靈小姐的嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -363,7 +363,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "跟你说哦，我刚才听到了情报呢，幽灵小姐其实在仓库！",
+			say = "跟你說哦，我剛才聽到了情報呢，幽靈小姐其實在倉庫！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -381,7 +381,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "幽灵小姐…？啊，是、是的，我也在找幽灵小姐来着",
+			say = "幽靈小姐…？啊，是、是的，我也在找幽靈小姐來著",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -397,7 +397,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "那就跟贝利一起往仓库去吧，Let's go～",
+			say = "那就跟貝利一起往倉庫去吧，Let's go～",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -443,7 +443,7 @@ return {
 			blackBg = true,
 			actor = 302051,
 			nameColor = "#a9f548",
-			say = "（有同伴一起的话……我就不会那么害怕了！）",
+			say = "（有同伴一起的話……我就不會那麼害怕了！）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

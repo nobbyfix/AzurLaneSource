@@ -11,13 +11,13 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"幸运之鹤\n\n<size=45>七 不屈之鹤</size>",
+					"幸運之鶴\n\n<size=45>七 不屈之鶴</size>",
 					1
 				}
 			}
 		},
 		{
-			say = "指挥室·深夜",
+			say = "指揮室·深夜",
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
@@ -34,7 +34,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "指挥官果然…还是选了{namecode:95}姐准备的……",
+			say = "指揮官果然…還是選了{namecode:95}姐準備的……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -70,7 +70,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "两边都要？",
+			say = "兩邊都要？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -81,7 +81,7 @@ return {
 			}
 		},
 		{
-			say = "哈哈，看来指挥官肚子已经饿扁了呢♪",
+			say = "哈哈，看來指揮官肚子已經餓扁了呢♪",
 			side = 1,
 			bgName = "bg_night",
 			actorName = "{namecode:95}",
@@ -108,7 +108,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "不用勉强自己哦…？难得{namecode:95}姐准备了，我的就下次再说吧？",
+			say = "不用勉強自己哦…？難得{namecode:95}姐準備了，我的就下次再說吧？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -125,7 +125,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "……“{namecode:96}和{namecode:95}都是我的翅膀，不可能只选择一边”……？",
+			say = "……“{namecode:96}和{namecode:95}都是我的翅膀，不可能只選擇一邊”……？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -142,7 +142,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "……啊、啊呜……（///）",
+			say = "……啊、啊嗚……（///）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -164,7 +164,7 @@ return {
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
-			say = "{namecode:96}一下子脸红了",
+			say = "{namecode:96}一下子臉紅了",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -177,7 +177,7 @@ return {
 			dir = 1,
 			actor = 307050,
 			actorName = "{namecode:95}",
-			say = "虽然知道指挥官是想解围……但这台词实在有点……",
+			say = "雖然知道指揮官是想解圍……但這台詞實在有點……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -194,7 +194,7 @@ return {
 			actorName = "{namecode:96}",
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "指挥官，刚才谢谢你了",
+			say = "指揮官，剛才謝謝你了",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -228,7 +228,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "明知道指挥官对{namecode:95}姐和我都一样重视…我还像那样乱了阵脚……",
+			say = "明知道指揮官對{namecode:95}姐和我都一樣重視…我還像那樣亂了陣腳……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -245,7 +245,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "如果我又失去自信，像这样陷入消沉的话……",
+			say = "如果我又失去自信，像這樣陷入消沉的話……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -262,7 +262,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "不对，不会再这样了！我可是不屈的{namecode:96}！",
+			say = "不對，不會再這樣了！我可是不屈的{namecode:96}！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -287,7 +287,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "不过…要是听到“我更重视{namecode:96}哦”这类的话……",
+			say = "不過…要是聽到“我更重視{namecode:96}哦”這類的話……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -304,7 +304,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "我大概会更高兴……吧？",
+			say = "我大概會更高興……吧？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -322,7 +322,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "呐…指挥官…？",
+			say = "呐…指揮官…？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -63,7 +63,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "貝利早就知道兔兔星是本森姐姐騙人的哦……",
+			say = "貝利早就知道兔兔星是班森姐姐騙人的哦……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

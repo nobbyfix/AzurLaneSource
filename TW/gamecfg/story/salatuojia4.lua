@@ -20,7 +20,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "第十二张照片，是萨拉托加从身后抱住姐姐列克星敦的一幕——",
+			say = "第十二张照片，是萨拉托加从身后抱住姐姐列星頓的一幕——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -324,7 +324,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "……但事后她会好好道歉，也没造成什么实际损害，让人反而会觉得是不是列克星敦太多虑了呢。",
+			say = "……但事后她会好好道歉，也没造成什么实际损害，让人反而会觉得是不是列星頓太多虑了呢。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

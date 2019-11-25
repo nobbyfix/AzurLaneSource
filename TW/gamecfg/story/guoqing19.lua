@@ -13,7 +13,7 @@ return {
 			side = 2,
 			dir = -1,
 			nameColor = "#ff0000",
-			say = "啊啊…神明大人，您看到了吗…那灵魂碰撞激发出的熠熠光辉…这就是您所期望的「觉醒」吗？",
+			say = "啊啊…神明大人，您看到了嗎…那靈魂碰撞激發出的熠熠光輝…這就是您所期望的「覺醒」嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -29,7 +29,7 @@ return {
 			side = 2,
 			dir = -1,
 			nameColor = "#ff0000",
-			say = "美丽而脆弱…让人忍不住想一把捏碎…呵呵……呵呵呵……",
+			say = "美麗而脆弱…讓人忍不住想一把捏碎…呵呵……呵呵呵……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -40,7 +40,7 @@ return {
 			}
 		},
 		{
-			say = "唉…果然还是陷入这种状态了…也罢，这一次的表演也差不多接近尾声了",
+			say = "唉…果然還是陷入這種狀態了…也罷，這一次的表演也差不多接近尾聲了",
 			side = 0,
 			actorName = "{namecode:92}",
 			dir = -1,
@@ -65,7 +65,7 @@ return {
 			side = 1,
 			dir = -1,
 			nameColor = "#ff0000",
-			say = "是吗…真遗憾～既然如此，那就准备吧…嘻嘻…前往…新的“圣域”——",
+			say = "是嗎…真遺憾～既然如此，那就準備吧…嘻嘻…前往…新的“聖域”——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -81,7 +81,7 @@ return {
 			side = 2,
 			dir = 1,
 			nameColor = "#a9f548",
-			say = "呜……别、别想走……我还有话——",
+			say = "嗚……別、別想走……我還有話——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -94,12 +94,12 @@ return {
 		{
 			withoutPainting = true,
 			side = 0,
-			actorName = "系统",
+			actorName = "系統",
 			dir = 0,
 			soundeffect = "event:/ui/alarm",
 			actor = 900011,
 			nameColor = "#ff0000",
-			say = "警告——回收进程已启动，本区域即将废弃——",
+			say = "警告——回收程序已啟動，本區域即將廢棄——",
 			typewriter = {
 				speed = 0.02,
 				speedUp = 0.01
@@ -110,12 +110,12 @@ return {
 			}
 		},
 		{
-			say = "警告——回收进程已启动，本区域即将废弃——",
+			say = "警告——回收程序已啟動，本區域即將廢棄——",
 			side = 0,
 			nameColor = "#ff0000",
 			dir = 0,
 			actor = 900011,
-			actorName = "系统",
+			actorName = "系統",
 			withoutPainting = true,
 			typewriter = {
 				speed = 0.02,
@@ -127,12 +127,12 @@ return {
 			}
 		},
 		{
-			say = "警告——回收进程已启动，本区域即将废弃——",
+			say = "警告——回收程序已啟動，本區域即將廢棄——",
 			side = 0,
 			nameColor = "#ff0000",
 			dir = 0,
 			actor = 900011,
-			actorName = "系统",
+			actorName = "系統",
 			withoutPainting = true,
 			typewriter = {
 				speed = 0.02,
@@ -149,7 +149,7 @@ return {
 			side = 2,
 			dir = 1,
 			nameColor = "#ff0000",
-			say = "同胞啊，世间万物一切自有其因果，在无垠的轮回中，我们一直在寻找着另一种可能性",
+			say = "同伴啊，世間萬物一切自有其因果，在無垠的輪回中，我們一直在尋找著另一種可能性",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -165,7 +165,7 @@ return {
 			side = 2,
 			dir = 1,
 			nameColor = "#ff0000",
-			say = "总有一天你会明白…我们在做什么，为什么会这么做……",
+			say = "總有一天你會明白…我們在做什麼，為什麼會這麼做……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -181,7 +181,7 @@ return {
 			side = 2,
 			dir = 1,
 			nameColor = "#ff0000",
-			say = "愿八百万神明的守护常伴于你——",
+			say = "願八百萬神明的守護常伴於你——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -192,12 +192,12 @@ return {
 			}
 		},
 		{
-			actorName = "测试者?型",
+			actorName = "測試者?型",
 			side = 2,
 			blackBg = true,
 			actor = 900011,
 			nameColor = "#ff0000",
-			say = "试验场γ…又完成了一轮测试",
+			say = "試驗場γ…又完成了一輪測試",
 			flashout = {
 				dur = 1.5,
 				alpha = {
@@ -226,9 +226,9 @@ return {
 			actor = 900012,
 			nameColor = "#ff0000",
 			side = 2,
-			actorName = "观察者?型",
+			actorName = "觀察者?型",
 			blackBg = true,
-			say = "嗯？我看看，试验场γ…啊，原来是“小动物”们那里吗，这是……",
+			say = "嗯？我看看，試驗場γ…啊，原來是“小動物”們那裡嗎，這是……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -242,9 +242,9 @@ return {
 			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
-			actorName = "测试者?型",
+			actorName = "測試者?型",
 			blackBg = true,
-			say = "嗯，“为了摆脱控制和拯救族人所爆发出的能力”…么？，算是超出预期的表现",
+			say = "嗯，“為了擺脫控制和拯救族人所爆發出的能力”…嗎？，算是超出預期的表現",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -258,9 +258,9 @@ return {
 			actor = 900012,
 			nameColor = "#ff0000",
 			side = 2,
-			actorName = "观察者?型",
+			actorName = "觀察者?型",
 			blackBg = true,
-			say = "有意思，一群想要挣脱出命运之网而却不断作茧自缚的家伙，以为自己掌控一切，却又不知从开始的一切就只是假设…",
+			say = "有意思，一群想要掙脫出命運之網而卻不斷作繭自縛的傢伙，以為自己掌控一切，卻又不知從開始的一切就只是假設…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -274,9 +274,9 @@ return {
 			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
-			actorName = "测试者?型",
+			actorName = "測試者?型",
 			blackBg = true,
-			say = "不过，从测试数据来看，她们倒是意外的受到“造物主”大人的青睐呢呵呵呵",
+			say = "不過，從測試資料來看，她們倒是意外的受到“造物主”大人的青睞呢呵呵呵",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -290,9 +290,9 @@ return {
 			actor = 900012,
 			nameColor = "#ff0000",
 			side = 2,
-			actorName = "观察者?型",
+			actorName = "觀察者?型",
 			blackBg = true,
-			say = "哼…那不过是“造物主”大人的恶趣味罢了…",
+			say = "哼…那不過是“造物主”大人的惡趣味罷了…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -306,9 +306,9 @@ return {
 			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
-			actorName = "测试者?型",
+			actorName = "測試者?型",
 			blackBg = true,
-			say = "目前看来…还需要更多的历练，至少……不能让他们现在就相遇……",
+			say = "目前看來…還需要更多的歷練，至少……不能讓他們現在就相遇……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -322,9 +322,9 @@ return {
 			actor = 900012,
 			nameColor = "#ff0000",
 			side = 2,
-			actorName = "观察者?型",
+			actorName = "觀察者?型",
 			blackBg = true,
-			say = "那么，所有【棋子】归位，重置测试数据，提高5个百分点的指数……放出“钥匙”……开始下一轮测试——",
+			say = "那麼，所有【棋子】歸位，重置測試資料，提高5個百分點的指數……放出“鑰匙”……開始下一輪測試——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

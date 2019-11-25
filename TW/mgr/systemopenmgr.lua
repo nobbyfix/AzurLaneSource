@@ -68,6 +68,10 @@ pg.SystemOpenMgr.notification = function (slot0, slot1)
 end
 
 pg.SystemOpenMgr.doSystemGuide = function (slot0, slot1)
+	if Application.isEditor and not ENABLE_GUIDE then
+		return
+	end
+
 	if pg.open_systems_limited[slot1].story_id and slot3 ~= "" then
 		if getProxy(ContextProxy):getCurrentContext().scene ~= SCENE[slot2.scene] then
 			pg.m02:sendNotification(GAME.GO_SCENE, SCENE[slot2.scene])

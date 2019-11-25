@@ -11,13 +11,13 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"幸运之鹤\n\n<size=45>二  {namecode:96}与小伙伴们</size>",
+					"幸運之鶴\n\n<size=45>二  {namecode:96}與小夥伴們</size>",
 					1
 				}
 			}
 		},
 		{
-			say = "听完匆忙洗漱完毕后就位的{namecode:96}的晨间报告，和她一起开始了早晨的巡逻",
+			say = "聽完匆忙洗漱完畢後就位的{namecode:96}的晨間報告，和她一起開始了早晨的巡邏",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
@@ -34,7 +34,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "指挥官对不起…昨晚看攻击教科书看太晚了……",
+			say = "指揮官對不起…昨晚看攻擊教科書看太晚了……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -51,7 +51,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "是…我以后会注意的…",
+			say = "是…我以後會注意的…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -68,7 +68,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "啊，大家聚在那里做什么呢？",
+			say = "啊，大家聚在那裡做什麼呢？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -79,7 +79,7 @@ return {
 			}
 		},
 		{
-			say = "喔？{namecode:96}和指挥官在巡逻吗？",
+			say = "喔？{namecode:96}和指揮官在巡邏嗎？",
 			side = 1,
 			bgName = "bg_story_outdoor",
 			actorName = "{namecode:76}",
@@ -106,7 +106,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "是的！话说大家在这里做什么呢？",
+			say = "是的！話說大家在這裡做什麼呢？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -123,7 +123,7 @@ return {
 			dir = 1,
 			actor = 305040,
 			actorName = "{namecode:77}",
-			say = "在讨论和白鹰进行联合演习的事。在想怎么跟那边提出来比较合适",
+			say = "在討論和白鷹進行聯合演習的事。在想怎麼跟那邊提出來比較合適",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -140,7 +140,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "怎么提…正常地说不就好了吗？",
+			say = "怎麼提…正常地說不就好了嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -157,7 +157,7 @@ return {
 			dir = 1,
 			actor = 302090,
 			actorName = "{namecode:47}",
-			say = "如果只有{namecode:76}{namecode:77}还好说，这里没什么人说得出“重樱希望和白鹰进行联合演习”的话呢……",
+			say = "如果只有{namecode:76}{namecode:77}還好說，這裡沒什麼人說得出“重櫻希望和白鷹進行聯合演習”的話呢……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -174,7 +174,7 @@ return {
 			dir = -1,
 			actor = 303020,
 			actorName = "{namecode:54}",
-			say = "是啊。我或{namecode:66}讲话太生硬，只怕会造成奇怪的误解……",
+			say = "是啊。我或{namecode:66}講話太生硬，只怕會造成奇怪的誤解……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -191,7 +191,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "那我去说吧？反正一会也会经过那里",
+			say = "那我去說吧？反正一會也會經過那裡",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -208,7 +208,7 @@ return {
 			dir = 1,
 			actor = 305030,
 			actorName = "{namecode:76}",
-			say = "真的吗！帮大忙了",
+			say = "真的嗎！幫大忙了",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -225,7 +225,7 @@ return {
 			dir = 1,
 			actor = 302090,
 			actorName = "{namecode:47}",
-			say = "{namecode:96}去说的话，一定没问题的",
+			say = "{namecode:96}去說的話，一定沒問題的",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -242,7 +242,7 @@ return {
 			dir = -1,
 			actor = 303020,
 			actorName = "{namecode:54}",
-			say = "嗯。抱歉，临时拜托你",
+			say = "嗯。抱歉，臨時拜託你",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -259,7 +259,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "没关系！就交给我吧！",
+			say = "沒關係！就交給我吧！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -273,7 +273,7 @@ return {
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
-			say = "向白鹰阵营提出了联合演习的提议，取得了大多数人的同意",
+			say = "向白鷹陣營提出了聯合演習的提議，取得了大多數人的同意",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -303,7 +303,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "呼…差不多就这样吧？",
+			say = "呼…差不多就這樣吧？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -321,7 +321,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "经常这样呢，不知不觉就收到了这样那样的拜托…",
+			say = "經常這樣呢，不知不覺就收到了這樣那樣的拜託…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

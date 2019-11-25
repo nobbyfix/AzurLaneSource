@@ -1,7 +1,9 @@
 class("UpdateShipLockCommand", pm.SimpleCommand).execute = function (slot0, slot1)
-	slot3 = slot1:getBody().ship_id_list
+	slot2 = slot1:getBody()
+	slot3 = slot2.ship_id_list
+	slot5 = slot2.callback
 
-	function slot5()
+	function slot6()
 		pg.ConnectionMgr.GetInstance():Send(12022, {
 			ship_id_list = slot0,
 			is_locked = slot1
@@ -24,16 +26,20 @@ class("UpdateShipLockCommand", pm.SimpleCommand).execute = function (slot0, slot
 					slot2:sendNotification(GAME.UPDATE_LOCK_DONE, slot8)
 					pg.TipsMgr.GetInstance():ShowTips(i18n(slot2, slot8:getName()))
 				end
+
+				if slot3 then
+					slot3()
+				end
 			else
 				pg.TipsMgr.GetInstance():ShowTips(errorTip("ship_updateShipLock", slot0.result))
 			end
 		end)
 	end
 
-	if slot1.getBody().is_locked == Ship.LOCK_STATE_UNLOCK then
-		pg.SecondaryPWDMgr:LimitedOperation(pg.SecondaryPWDMgr.UNLOCK_SHIP, slot2.ship_id_list, slot5)
+	if slot2.is_locked == Ship.LOCK_STATE_UNLOCK then
+		pg.SecondaryPWDMgr:LimitedOperation(pg.SecondaryPWDMgr.UNLOCK_SHIP, slot2.ship_id_list, slot6)
 	else
-		slot5()
+		slot6()
 	end
 end
 

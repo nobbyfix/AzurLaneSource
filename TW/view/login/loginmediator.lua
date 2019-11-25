@@ -2,6 +2,7 @@ slot0 = class("LoginMediator", import("..base.ContextMediator"))
 slot0.ON_LOGIN = "LoginMediator:ON_LOGIN"
 slot0.ON_REGISTER = "LoginMediator:ON_REGISTER"
 slot0.ON_SERVER = "LoginMediator:ON_SERVER"
+slot0.ON_LOGIN_PROCESS = "LoginMediator:ON_LOGIN_PROCESS"
 
 slot0.register = function (slot0)
 	slot0:bind(slot0.ON_LOGIN, function (slot0, slot1)
@@ -13,58 +14,87 @@ slot0.register = function (slot0)
 	slot0:bind(slot0.ON_SERVER, function (slot0, slot1)
 		slot0:sendNotification(GAME.SERVER_LOGIN, slot1)
 	end)
-	slot0:loginProcessHandler()
+	slot0:bind(slot0.ON_LOGIN_PROCESS, function (slot0)
+		slot0:loginProcessHandler()
+	end)
+
+	if CSharpVersion == 31 or CSharpVersion == 32 then
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
+			modal = true,
+			hideNo = true,
+			content = "檢測到版本更新，需要手動下載更新包，是否前往下載？",
+			hideClose = true,
+			onYes = function ()
+				if YongshiSdkMgr.inst.channelUID == "0" then
+					Application.OpenURL("https://play.google.com/store/apps/details?id=com.hkmanjuu.azurlane.gp")
+				elseif slot0 == "1" then
+					Application.OpenURL("https://apps.apple.com/app/id1479022429")
+				elseif slot0 == "2" then
+					Application.OpenURL("http://www.mygame.com.tw/MyGameAD/Accept.aspx?P=YAS3ZA2RSR&S=QUNRMMN7HY")
+				end
+
+				Application.Quit()
+			end,
+			onClose = function ()
+				Application.Quit()
+			end
+		})
+	else
+		slot0:loginProcessHandler()
+	end
 end
 
 slot0.loginProcessHandler = function (slot0)
 	slot1 = getProxy(SettingsProxy)
 	slot2 = pg.SdkMgr.GetInstance():GetLoginType()
 	slot0.process = coroutine.wrap(function ()
-		if not slot0:getUserAgreement() and PLATFORM_KR ~= PLATFORM_CODE then
-			slot1.viewComponent:showUserAgreement(slot1.process)
+		slot0.viewComponent:switchSubView({})
+
+		if not slot0.viewComponent:getUserAgreement() and PLATFORM_KR ~= PLATFORM_CODE then
+			slot0.viewComponent:showUserAgreement(slot0.process)
 			coroutine.yield()
-			coroutine.yield:setUserAgreement()
+			slot0.viewComponent:setUserAgreement()
 		end
 
 		slot0 = nil
 
 		if slot2 == LoginType.PLATFORM then
-			slot1.viewComponent:switchToServer()
+			slot0.viewComponent:switchToServer()
 		elseif slot2 == LoginType.PLATFORM_TENCENT then
-			slot1.viewComponent:switchToTencentLogin()
+			slot0.viewComponent:switchToTencentLogin()
 		elseif slot2 == LoginType.PLATFORM_INNER then
-			slot1.viewComponent:switchToLogin()
-
-			slot1 = getProxy(UserProxy)
-
-			slot1.viewComponent:setLastLogin(slot1:getLastLoginUser())
+			slot0.viewComponent:switchToLogin()
+			slot0.viewComponent:setLastLogin(getProxy(UserProxy).getLastLoginUser(slot1))
 		elseif slot2 == LoginType.PLATFORM_AIRIJP or slot2 == LoginType.PLATFORM_AIRIUS then
-			slot1.viewComponent:switchToAiriLogin()
+			slot0.viewComponent:switchToAiriLogin()
 		end
 
-		slot1:CheckMaintain()
+		slot0:CheckMaintain()
 		coroutine.yield()
 
-		if coroutine.yield.contextData.code then
-			if slot1.contextData.code ~= 0 then
-				slot1(pg.MsgboxMgr.GetInstance(), {
-					modal = true,
-					hideNo = true,
-					content = ({
-						i18n("login_loginMediator_kickOtherLogin"),
-						i18n("login_loginMediator_kickServerClose"),
-						i18n("login_loginMediator_kickIntError"),
-						i18n("login_loginMediator_kickTimeError"),
-						i18n("login_loginMediator_kickLoginOut"),
-						i18n("login_loginMediator_serverLoginErro"),
-						i18n("login_loginMediator_vertifyFail"),
-						[99] = i18n("login_loginMediator_dataExpired")
-					})[slot1.contextData.code] or i18n("login_loginMediator_kickUndefined", slot1.contextData.code),
-					onYes = function ()
-						slot0.process()
-					end
-				})
-				coroutine.yield()
+		if slot0.contextData.code then
+			if slot0.contextData.code ~= 0 then
+				if slot0.contextData.code == SDK_EXIT_CODE then
+				else
+					pg.MsgboxMgr.GetInstance():ShowMsgBox({
+						modal = true,
+						hideNo = true,
+						content = ({
+							i18n("login_loginMediator_kickOtherLogin"),
+							i18n("login_loginMediator_kickServerClose"),
+							i18n("login_loginMediator_kickIntError"),
+							i18n("login_loginMediator_kickTimeError"),
+							i18n("login_loginMediator_kickLoginOut"),
+							i18n("login_loginMediator_serverLoginErro"),
+							i18n("login_loginMediator_vertifyFail"),
+							[99] = i18n("login_loginMediator_dataExpired")
+						})[slot0.contextData.code] or i18n("login_loginMediator_kickUndefined", slot0.contextData.code),
+						onYes = function ()
+							slot0.process()
+						end
+					})
+					coroutine.yield()
+				end
 			end
 
 			if slot0 then
@@ -74,10 +104,10 @@ slot0.loginProcessHandler = function (slot0)
 					slot0.arg2 = ""
 				end
 
-				slot1.viewComponent:setLastLogin(slot0)
+				slot0.viewComponent:setLastLogin(slot0)
 			end
 		else
-			slot1.viewComponent:setAutoLogin()
+			slot0.viewComponent:setAutoLogin()
 		end
 
 		if slot2 == LoginType.PLATFORM then
@@ -87,7 +117,7 @@ slot0.loginProcessHandler = function (slot0)
 		elseif slot2 == LoginType.PLATFORM_INNER then
 		end
 
-		slot1.viewComponent:autoLogin()
+		slot0.viewComponent:autoLogin()
 	end)
 
 	slot0.process()

@@ -74,7 +74,7 @@ return {
 			dir = 1,
 			actor = 10400010,
 			nameColor = "#a9f548",
-			say = "噢噢？…这、这是！“随机单词”！！！",
+			say = "喔喔？…这、这是！“随机单词”！！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -607,7 +607,7 @@ return {
 			blackBg = true,
 			actor = 10400010,
 			nameColor = "#a9f548",
-			say = "谢谢大家！让我们一起加油吧！上咯～～～！噢～～～！",
+			say = "谢谢大家！让我们一起加油吧！上咯～～～！喔～～～！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

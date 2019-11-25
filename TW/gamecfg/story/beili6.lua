@@ -310,7 +310,7 @@ return {
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
-			say = "虽然明石马上补救，不过气氛似乎变得有点尴尬起来",
+			say = "雖然明石馬上補救，不過氣氛似乎變得有點尷尬起來",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -322,7 +322,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯…？兔兔星本來就是本森姐姐瞎說的不是嗎？",
+			say = "嗯…？兔兔星本來就是班森姐姐瞎說的不是嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

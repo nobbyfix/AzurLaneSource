@@ -419,7 +419,7 @@ return {
 			dir = 1,
 			actor = 301601,
 			actorName = "众驱逐",
-			say = "噢！",
+			say = "喔！",
 			subActors = {
 				{
 					actor = 301610,

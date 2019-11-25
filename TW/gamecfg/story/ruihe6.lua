@@ -11,13 +11,13 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"幸运之鹤\n\n<size=45>六  深夜的插曲</size>",
+					"幸運之鶴\n\n<size=45>六  深夜的插曲</size>",
 					1
 				}
 			}
 		},
 		{
-			say = "指挥室·深夜",
+			say = "指揮室·深夜",
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
@@ -34,7 +34,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "哈啊……今天事情真多啊……平常这个点指挥官都该睡觉了……",
+			say = "哈啊……今天事情真多啊……平常這個點指揮官都該睡覺了……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -48,7 +48,7 @@ return {
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
-			say = "久违地工作到了深夜",
+			say = "久違地工作到了深夜",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -61,7 +61,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "嗯…已经这么晚了，指挥官要不要吃点东西？",
+			say = "嗯…已經這麼晚了，指揮官要不要吃點東西？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -72,7 +72,7 @@ return {
 			}
 		},
 		{
-			say = "哎呀，这种事要在说之前先做比较好吧？",
+			say = "哎呀，這種事要在說之前先做比較好吧？",
 			side = 1,
 			bgName = "bg_night",
 			actorName = "{namecode:95}",
@@ -116,7 +116,7 @@ return {
 			dir = 1,
 			actor = 307050,
 			actorName = "{namecode:95}",
-			say = "想说怎么这么晚了还没回宿舍，原来还在工作啊……",
+			say = "想說怎麼這麼晚了還沒回宿舍，原來還在工作啊……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -133,7 +133,7 @@ return {
 			dir = 1,
 			actor = 307050,
 			actorName = "{namecode:95}",
-			say = "工作过度对身体可不好哦？“先手必胜～”♡",
+			say = "工作過度對身體可不好哦？“先手必勝～”♡",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -147,7 +147,7 @@ return {
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
-			say = "{namecode:95}带着艳丽的笑容，抢在{namecode:96}之前拿出了小面包和瓶子放到了桌上",
+			say = "{namecode:95}帶著豔麗的笑容，搶在{namecode:96}之前拿出了小麵包和瓶子放到了桌上",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -160,7 +160,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "我、我正要准备的说……话说这是、酒？",
+			say = "我、我正要準備的說……話說這是、酒？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -171,7 +171,7 @@ return {
 			}
 		},
 		{
-			say = "没错～♪辛苦工作了一天，就用酒来放松放松也好呢～另外，也算是上次指挥官你灌我酒的时候的“回礼”呦～",
+			say = "沒錯～♪辛苦工作了一天，就用酒來放鬆放鬆也好呢～另外，也算是上次指揮官你灌我酒的時候的“回禮”呦～",
 			side = 1,
 			bgName = "bg_night",
 			actorName = "{namecode:95}",
@@ -198,7 +198,7 @@ return {
 			dir = 1,
 			actor = 307050,
 			actorName = "{namecode:95}",
-			say = "上次我喝醉的时候……哎呀，这事还没跟{namecode:96}说过吧……？",
+			say = "上次我喝醉的時候……哎呀，這事還沒跟{namecode:96}說過吧……？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -212,7 +212,7 @@ return {
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
-			say = "一点印象也没有……",
+			say = "一點印象也沒有……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -225,24 +225,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "（果然在我不知道的地方{namecode:95}和指挥官有各种各样的……）",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_night",
-			dir = 1,
-			actor = 307060,
-			actorName = "{namecode:96}",
-			say = "（也是…{namecode:95}姐那么漂亮…又沉稳…就算战斗力差不多，作为秘书舰又比我做的好…呜呜果然我还是……）",
+			say = "（果然在我不知道的地方{namecode:95}和指揮官有各種各樣的……）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -259,7 +242,24 @@ return {
 			dir = 1,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "…那…我这些就放回冷藏库了……",
+			say = "（也是…{namecode:95}姐那麼漂亮…又沉穩…就算戰鬥力差不多，作為秘書艦又比我做的好…嗚嗚果然我還是……）",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			nameColor = "#a9f548",
+			side = 2,
+			bgName = "bg_night",
+			dir = 1,
+			actor = 307060,
+			actorName = "{namecode:96}",
+			say = "…那…我這些就放回冷藏庫了……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -277,7 +277,7 @@ return {
 			actorName = "{namecode:95}",
 			actor = 307050,
 			nameColor = "#a9f548",
-			say = "…是不是玩笑有点开过头了呢？",
+			say = "…是不是玩笑有點開過頭了呢？",
 			flashout = {
 				dur = 0.5,
 				black = true,

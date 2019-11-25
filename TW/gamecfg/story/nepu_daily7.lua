@@ -229,7 +229,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "噢，好呀！再来通宵聊天吧！",
+			say = "喔，好呀！再来通宵聊天吧！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

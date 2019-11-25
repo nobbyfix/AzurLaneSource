@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"捣蛋万圣夜！\n\n<size=45>五 棺材里的帮手？</size>",
+					"搗蛋萬聖夜！\n\n<size=45>五 棺材裡的幫手？</size>",
 					1
 				}
 			}
@@ -22,7 +22,7 @@ return {
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "港区·仓库",
+			say = "港區·倉庫",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -51,7 +51,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "幽灵小姐——！快出来吧——！大家都在担心你呢——！",
+			say = "幽靈小姐——！快出來吧——！大家都在擔心你呢——！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -62,7 +62,7 @@ return {
 			}
 		},
 		{
-			say = "这样喊的话，幽灵小姐会被吓跑吧……",
+			say = "這樣喊的話，幽靈小姐會被嚇跑吧……",
 			side = 1,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
@@ -90,7 +90,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "而且，这里有点黑，感觉会有什么呜呜……",
+			say = "而且，這裡有點黑，感覺會有什麼嗚嗚……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -117,7 +117,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "幽灵小姐——！快……嗯？那是什么？棺材？",
+			say = "幽靈小姐——！快……嗯？那是什麼？棺材？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -135,7 +135,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "呜哇啊！？棺、棺材？！",
+			say = "嗚哇啊！？棺、棺材？！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -161,7 +161,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "总之先打开来看看吧！我开！",
+			say = "總之先打開來看看吧！我開！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -205,7 +205,7 @@ return {
 			dir = 1,
 			actor = 213021,
 			nameColor = "#a9f548",
-			say = "哇、吓你一跳。",
+			say = "哇、嚇你一跳。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -259,7 +259,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "哦哦！突然出现了一个人呢！",
+			say = "哦哦！突然出現了一個人呢！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -291,7 +291,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "唔……果然吓人的练习还不够吗。",
+			say = "唔……果然嚇人的練習還不夠嗎。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -309,7 +309,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "还以为是僵尸什么的，吓死我了…",
+			say = "還以為是僵屍什麼的，嚇死我了…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -326,7 +326,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "…为什么恐怖你会在仓库的棺材里？",
+			say = "…為什麼恐怖你會在倉庫的棺材裡？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -342,7 +342,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "话又说回来为什么仓库里会放着这么个棺材啊……",
+			say = "話又說回來為什麼倉庫裡會放著這麼個棺材啊……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -359,7 +359,7 @@ return {
 			dir = 1,
 			actor = 213021,
 			nameColor = "#a9f548",
-			say = "恐怖不能说，恐怖答应了要保密…",
+			say = "恐怖不能說，恐怖答應了要保密…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -375,7 +375,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "啊！快看那边！",
+			say = "啊！快看那邊！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -403,7 +403,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "呜、幽，幽灵小姐现身了！！",
+			say = "嗚、幽，幽靈小姐現身了！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -430,7 +430,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "是谁？！",
+			say = "是誰？！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -463,7 +463,7 @@ return {
 			dir = 1,
 			actor = 213021,
 			nameColor = "#a9f548",
-			say = "等下…请带上这个。这个是“魔女的扫把”。",
+			say = "等下…請帶上這個。這個是“魔女的掃把”。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -480,7 +480,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "刚好一人一把吗…总之得先追上那个幽灵！",
+			say = "剛好一人一把嗎…總之得先追上那個幽靈！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -496,7 +496,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "可别以为自己能从兔兔手上逃走！贝利，追击!",
+			say = "可別以為自己能從兔兔手上逃走！貝利，追擊!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -524,7 +524,7 @@ return {
 			blackBg = true,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "贝利，跑太快了啦…!",
+			say = "貝利，跑太快了啦…!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

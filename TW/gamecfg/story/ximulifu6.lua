@@ -55,7 +55,7 @@ return {
 			dir = 1,
 			actor = 207022,
 			nameColor = "#a9f548",
-			say = "噢噢噢噢…宴会场里满满的都是可爱的驱逐妹妹们！真是太棒了！！",
+			say = "喔喔喔喔…宴会场里满满的都是可爱的驱逐妹妹们！真是太棒了！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

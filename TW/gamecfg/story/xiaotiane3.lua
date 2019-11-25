@@ -12,7 +12,7 @@ return {
 			mode = 1,
 			sequence = {
 				{
-					"春风的十字星\n\n<size=45>三  嫌疑与询问</size>",
+					"春風的十字星\n\n<size=45>三  嫌疑與詢問</size>",
 					1
 				}
 			}
@@ -24,7 +24,7 @@ return {
 			bgm = "story-1",
 			actor = 201110,
 			nameColor = "#a9f548",
-			say = "随、随便就怀疑别人还是不大好呢",
+			say = "隨、隨便就懷疑別人還是不大好呢",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,7 +35,7 @@ return {
 			}
 		},
 		{
-			say = "是、是啊！再怎么样至少也要稍微调查一下呢",
+			say = "是、是啊！再怎麼樣至少也要稍微調查一下呢",
 			side = 1,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -60,7 +60,7 @@ return {
 			bgName = "bg_story_school",
 			side = 0,
 			dir = 1,
-			say = "还、还是问问航母姐姐们吧——",
+			say = "還、還是問問航母姐姐們吧——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -76,7 +76,7 @@ return {
 			dir = 1,
 			actor = 207030,
 			nameColor = "#a9f548",
-			say = "哎呀？小天鹅这是…冬天的锻炼吗？当心感冒了哟？",
+			say = "哎呀？小天鵝這是…冬天的鍛鍊嗎？當心感冒了喲？",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -104,7 +104,7 @@ return {
 			}
 		},
 		{
-			say = "呜…事、事情是这样的…",
+			say = "嗚…事、事情是這樣的…",
 			side = 0,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -139,7 +139,7 @@ return {
 			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			say = "哎呀呀，这还真是…不过我也没看到呢…",
+			say = "哎呀呀，這還真是…不過我也沒看到呢…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -155,7 +155,7 @@ return {
 			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			say = "那个人？好像一早就没见到人呢…",
+			say = "那個人？好像一早就沒見到人呢…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -171,7 +171,7 @@ return {
 			dir = 1,
 			actor = 207040,
 			nameColor = "#a9f548",
-			say = "嗯…我也没看到那个人呢…",
+			say = "嗯…我也沒看到那個人呢…",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -204,7 +204,7 @@ return {
 			dir = 1,
 			actor = 207060,
 			nameColor = "#a9f548",
-			say = "刚才好像看到她进了自己房间，就是那个房间——",
+			say = "剛才好像看到她進了自己房間，就是那個房間——",
 			flashout = {
 				dur = 1,
 				black = true,

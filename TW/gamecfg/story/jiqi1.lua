@@ -282,7 +282,7 @@ return {
 			dir = 1,
 			actor = 108030,
 			nameColor = "#a9f548",
-			say = "噢噢，我超级厉害！",
+			say = "喔喔，我超级厉害！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

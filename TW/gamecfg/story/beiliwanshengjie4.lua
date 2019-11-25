@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"捣蛋万圣夜！\n\n<size=45>四 嫌麻烦的魔女</size>",
+					"搗蛋萬聖夜！\n\n<size=45>四 嫌麻煩的魔女</size>",
 					1
 				}
 			}
@@ -24,7 +24,7 @@ return {
 			bgm = "story-1",
 			actor = 205040,
 			nameColor = "#a9f548",
-			say = "姐姐，你听说了港区里幽灵小姐的传闻吗？",
+			say = "姐姐，你聽說了港區裡幽靈小姐的傳聞嗎？",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -52,7 +52,7 @@ return {
 			}
 		},
 		{
-			say = "从克利夫兰那里听说的吧，这种一眼看上去就像是恶作剧的东西…",
+			say = "從克利夫蘭那裡聽說的吧，這種一眼看上去就像是惡作劇的東西…",
 			side = 1,
 			bgName = "bg_story_room",
 			dir = 1,
@@ -77,7 +77,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "反正我没有兴趣",
+			say = "反正我沒有興趣",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -93,7 +93,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "哎呀呀，姐姐又来了。夏天的时候也是一副完全没有兴趣的样子",
+			say = "哎呀呀，姐姐又來了。夏天的時候也是一副完全沒有興趣的樣子",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -109,7 +109,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "明明一起穿上泳装出来玩就好了～",
+			say = "明明一起穿上泳裝出來玩就好了～",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -125,7 +125,7 @@ return {
 			dir = 1,
 			actor = 205030,
 			nameColor = "#a9f548",
-			say = "那、那种让人害羞的装扮…",
+			say = "那、那種讓人害羞的裝扮…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -151,7 +151,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "好啦，难得的万圣节～和大家一起享受节日气氛不是挺好的嘛",
+			say = "好啦，難得的萬聖節～和大家一起享受節日氣氛不是挺好的嘛",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -162,7 +162,7 @@ return {
 			}
 		},
 		{
-			say = "正好这里有一套魔女的服装呢～",
+			say = "正好這裡有一套魔女的服裝呢～",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
@@ -187,7 +187,7 @@ return {
 			dir = 1,
 			actor = 205030,
 			nameColor = "#a9f548",
-			say = "这是哪里拿来的…等、等下,至少让我自己换啊！",
+			say = "這是哪裡拿來的…等、等下,至少讓我自己換啊！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -221,7 +221,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "呜…真是灾难…罗德尼那家伙，也不知道在打什么主意",
+			say = "嗚…真是災難…羅德尼那傢伙，也不知道在打什麼主意",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -255,7 +255,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "“三个魔女”什么的…反正不过是个无聊的传闻，就随便走走应付下好了——",
+			say = "“三個魔女”什麼的…反正不過是個無聊的傳聞，就隨便走走應付下好了——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -271,7 +271,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "捕获第三名魔女啦！！",
+			say = "捕獲第三名魔女啦！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -298,7 +298,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "哇啊啊啊！——原来是你们啊…",
+			say = "哇啊啊啊！——原來是你們啊…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -326,7 +326,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "纳尔逊小姐也是在寻找幽灵小姐的“善良的魔女”吗？",
+			say = "納爾遜小姐也是在尋找幽靈小姐的“善良的魔女”嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -343,7 +343,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "啊？噢，是、是吧……",
+			say = "啊？喔，是、是吧……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -360,7 +360,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "（糟了，下意识就回应了）",
+			say = "（糟了，下意識就回應了）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -378,7 +378,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "这下就凑齐三人了呢，太好了…",
+			say = "這下就湊齊三人了呢，太好了…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -394,7 +394,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "那就按照贝利听到的情报，一起前往仓库寻找幽灵小姐吧！",
+			say = "那就按照貝利聽到的情報，一起前往倉庫尋找幽靈小姐吧！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -411,7 +411,7 @@ return {
 			blackBg = true,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "（虽然肯定只是恶作剧，不过也不好放着这两个孩子不管…先跟上去吧）",
+			say = "（雖然肯定只是惡作劇，不過也不好放著這兩個孩子不管…先跟上去吧）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

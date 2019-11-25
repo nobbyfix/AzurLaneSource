@@ -28,7 +28,7 @@ return {
 		},
 		{
 			side = 0,
-			say = "{namecode:95}姐！！！你平安无事真是太好…",
+			say = "{namecode:95}姐！！！你平安無事真是太好…",
 			actorName = "{namecode:96}",
 			actor = 307060,
 			nameColor = "#a9f548",
@@ -92,7 +92,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "……为什么，你们为什么要这样做",
+			say = "……為什麼，你們為什麼要這樣做",
 			shake = {
 				speed = 1,
 				number = 3
@@ -112,7 +112,7 @@ return {
 			dir = -1,
 			actor = 307010,
 			nameColor = "#ff0000",
-			say = "为了能让神明赐予我们更多的恩惠～优质的祭品自然是理所必要的",
+			say = "為了能讓神明賜予我們更多的恩惠～優質的祭品自然是理所必要的",
 			shake = {
 				speed = 1,
 				number = 3
@@ -131,7 +131,7 @@ return {
 			actorName = "{namecode:92}",
 			side = 1,
 			nameColor = "#ff0000",
-			say = "这一切，都是为了重樱的未来",
+			say = "這一切，都是為了重櫻的未來",
 			shake = {
 				speed = 1,
 				number = 3
@@ -150,7 +150,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "……“重樱的未来”…这一句话，你们欺骗了我们多少次…",
+			say = "……“重櫻的未來”…這一句話，你們欺騙了我們多少次…",
 			shake = {
 				speed = 1,
 				number = 3
@@ -169,7 +169,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "这种被诅咒的力量根本不可能是神的恩赐，它是不会给我们带来未来的！",
+			say = "這種被詛咒的力量根本不可能是神的恩賜，它是不會給我們帶來未來的！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -188,7 +188,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "自从第一次出手，我就感受到了事情的蹊跷",
+			say = "自從第一次出手，我就感受到了事情的蹊蹺",
 			shake = {
 				speed = 1,
 				number = 3
@@ -207,7 +207,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "而这一次，我很生气，因为，你们选错了下手的目标",
+			say = "而這一次，我很生氣，因為，你們選錯了下手的目標",
 			shake = {
 				speed = 1,
 				number = 3
@@ -227,7 +227,7 @@ return {
 			dir = -1,
 			actor = 307010,
 			nameColor = "#ff0000",
-			say = "呵呵呵，在此之前，不如好好想想怎么对付你眼前的这个对手吧～",
+			say = "呵呵呵，在此之前，不如好好想想怎麼對付你眼前的這個對手吧～",
 			shake = {
 				speed = 1,
 				number = 3
@@ -247,7 +247,7 @@ return {
 			dir = -1,
 			actor = 307010,
 			nameColor = "#ff0000",
-			say = "她的灵魂，早已经献给伟大的神明了，而剩下的这副无用的躯壳，将会成为你的终点！",
+			say = "她的靈魂，早已經獻給偉大的神明了，而剩下的這副無用的軀殼，將會成為你的終點！",
 			shake = {
 				speed = 1,
 				number = 3

@@ -515,7 +515,7 @@ return {
 			dir = 1,
 			actor = 303090,
 			nameColor = "#a9f548",
-			say = "噢噢！明白了！我也不想再给指挥官添麻烦了，我会加油的！",
+			say = "喔喔！明白了！我也不想再给指挥官添麻烦了，我会加油的！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

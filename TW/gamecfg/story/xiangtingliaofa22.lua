@@ -166,7 +166,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "噢？原来还有这层关系啊？",
+			say = "喔？原来还有这层关系啊？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -10,7 +10,7 @@ return {
 			mode = 1,
 			sequence = {
 				{
-					"“魔女们”的万圣夜\n\n<size=45>其二　Gold、开始行动</size>",
+					"“魔女們”的萬聖夜\n\n<size=45>其二　Gold、開始行動</size>",
 					1
 				}
 			}
@@ -20,7 +20,7 @@ return {
 			dir = 1,
 			actor = 107030,
 			nameColor = "#a9f548",
-			say = "那还用说！那个“恶作剧之日”快到了呀！",
+			say = "那還用說！那個“惡作劇之日”快到了呀！",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -52,7 +52,7 @@ return {
 			dir = 1,
 			actor = 107070,
 			nameColor = "#a9f548",
-			say = "哈哈，重樱的少女们啊，你们就好好期待那天吧！",
+			say = "哈哈，重櫻的少女們啊，你們就好好期待那天吧！",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -85,7 +85,7 @@ return {
 			dir = 1,
 			actor = 306051,
 			nameColor = "#a9f548",
-			say = "气氛好像更紧张了……{namecode:6}，你怎么看？",
+			say = "氣氛好像更緊張了……{namecode:6}，你怎麼看？",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -113,7 +113,7 @@ return {
 			}
 		},
 		{
-			say = "总不会是和白鹰开战……",
+			say = "總不會是和白鷹開戰……",
 			side = 0,
 			nameColor = "#a9f548",
 			dir = 1,
@@ -154,7 +154,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "没错！储蓄食物，准备“捣乱”，这是再明显不过的战争讯号！",
+			say = "沒錯！儲蓄食物，準備“搗亂”，這是再明顯不過的戰爭訊號！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -170,7 +170,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "{namecode:6}",
-			say = "如果要开战，她们不会隐瞒我",
+			say = "如果要開戰，她們不會隱瞞我",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -186,7 +186,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "那、那是为了防止走漏风声……对了，去找“她”商量一下吧",
+			say = "那、那是為了防止走漏風聲……對了，去找“她”商量一下吧",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -202,7 +202,7 @@ return {
 			dir = -1,
 			actor = 306051,
 			nameColor = "#a9f548",
-			say = "海~伦娜，吾来啦",
+			say = "海~倫娜，吾來啦",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -234,7 +234,7 @@ return {
 			nameColor = "#a9f548",
 			side = 1,
 			dir = 1,
-			say = "等、等等——！！你们就不懂得进门之前先敲门吗！",
+			say = "等、等等——！！你們就不懂得進門之前先敲門嗎！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -254,7 +254,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:87}",
-			say = "吾们这次带来了大情报——要开战了！",
+			say = "吾們這次帶來了大情報——要開戰了！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -285,7 +285,7 @@ return {
 			dir = -1,
 			actor = 306051,
 			nameColor = "#a9f548",
-			say = "原来如此，恶作剧和南瓜灯都是万圣节的习俗吗……",
+			say = "原來如此，惡作劇和南瓜燈都是萬聖節的習俗嗎……",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -317,7 +317,7 @@ return {
 			nameColor = "#a9f548",
 			side = 1,
 			dir = 1,
-			say = "其他的还有糖果之类的，{namecode:96}应该会用天妇罗代替糖果吧，她喜欢吃天妇罗",
+			say = "其他的還有糖果之類的，{namecode:96}應該會用天婦羅代替糖果吧，她喜歡吃天婦羅",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -336,7 +336,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "不过克利夫兰倒是更中意南瓜派",
+			say = "不過克里夫蘭倒是更中意南瓜派",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -352,7 +352,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:87}",
-			say = "海伦娜，你手中的“那个”是？",
+			say = "海倫娜，你手中的“那個”是？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -367,7 +367,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……万圣节还有一项习俗是大家打扮成鬼怪的形象游玩。我想给克利夫兰一个惊喜，一直在偷偷缝制她的万圣节服装……这件事绝不要告诉她噢",
+			say = "……萬聖節還有一項習俗是大家打扮成鬼怪的形象遊玩。我想給克里夫蘭一個驚喜，一直在偷偷縫製她的萬聖節服裝……這件事絕不要告訴她噢",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -383,7 +383,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:87}",
-			say = "克利夫兰也能参加“Trick or treat！”？",
+			say = "克里夫蘭也能參加“Trick or treat！”？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -398,7 +398,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "欸，当然可以啊",
+			say = "欸，當然可以啊",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -414,7 +414,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:87}",
-			say = "……你只做了这一件衣服吗？",
+			say = "……你只做了這一件衣服嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -429,7 +429,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "抱歉，因为得瞒着克利夫兰，这件衣服恐怕都得当天才能完成，实在没有时间再为你们……",
+			say = "抱歉，因為得瞞著克里夫蘭，這件衣服恐怕都得當天才能完成，實在沒有時間再為你們……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -445,7 +445,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:87}",
-			say = "实际上，吾前几天收到了一件类似的服装……",
+			say = "實際上，吾前幾天收到了一件類似的服裝……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -456,7 +456,7 @@ return {
 			}
 		},
 		{
-			say = "喂，这次决斗如果我赢了，就帮我个忙！",
+			say = "喂，這次決鬥如果我贏了，就幫我個忙！",
 			side = 2,
 			dir = 1,
 			blackBg = true,

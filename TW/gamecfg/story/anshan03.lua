@@ -144,7 +144,7 @@ return {
 			actor = 501040,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "噢噢噢~~",
+			say = "喔喔喔~~",
 			subActors = {
 				{
 					actor = 501030,

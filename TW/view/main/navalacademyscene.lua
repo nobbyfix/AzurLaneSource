@@ -1158,7 +1158,7 @@ slot0.updateStudents = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 16-51, warpins: 0 ---
+	--- BLOCK #1 16-49, warpins: 0 ---
 	for slot6, slot7 in pairs(slot1) do
 
 		-- Decompilation error in this vicinity:
@@ -1166,12 +1166,12 @@ slot0.updateStudents = function (slot0)
 		if not slot0.academyStudents[slot6] then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 20-48, warpins: 1 ---
-			slot10 = NavalAcademyStudent.New(cloneTplTo(slot0._shipTpl, slot0._map).gameObject)
+			--- BLOCK #0 20-46, warpins: 1 ---
+			slot9 = NavalAcademyStudent.New(cloneTplTo(slot0._shipTpl, slot0._map).gameObject)
 
-			slot10:attach()
-			slot10:setPathFinder(slot0.academyGraphPath)
-			slot10:setCallBack(function (slot0)
+			slot9:attach()
+			slot9:setPathFinder(slot0.academyGraphPath)
+			slot9:setCallBack(function (slot0)
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-7, warpins: 1 ---
@@ -1185,8 +1185,10 @@ slot0.updateStudents = function (slot0)
 			end, function (slot0, slot1)
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-7, warpins: 1 ---
-				slot0:onTask(slot1, slot0.onTask)
+				--- BLOCK #0 1-13, warpins: 1 ---
+				slot7, slot3 = slot0:getStudents()
+
+				slot0:onTask(slot2, slot3[slot1])
 
 				return
 				--- END OF BLOCK #0 ---
@@ -1194,9 +1196,9 @@ slot0.updateStudents = function (slot0)
 
 
 			end)
-			slot10:updateStudent(slot7, slot2[slot6])
+			slot9:updateStudent(slot7, slot2[slot6])
 
-			slot0.academyStudents[slot6] = slot10
+			slot0.academyStudents[slot6] = slot9
 			--- END OF BLOCK #0 ---
 
 
@@ -1209,7 +1211,7 @@ slot0.updateStudents = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 49-49, warpins: 2 ---
+		--- BLOCK #1 47-47, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
@@ -1217,7 +1219,7 @@ slot0.updateStudents = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 50-51, warpins: 2 ---
+		--- BLOCK #2 48-49, warpins: 2 ---
 		--- END OF BLOCK #2 ---
 
 
@@ -1231,7 +1233,7 @@ slot0.updateStudents = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 52-56, warpins: 1 ---
+	--- BLOCK #2 50-54, warpins: 1 ---
 	slot0:sortStudents()
 
 	return

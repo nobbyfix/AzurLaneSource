@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"捣蛋万圣夜！\n\n<size=45>六 幽灵追击队！</size>",
+					"搗蛋萬聖夜！\n\n<size=45>六 幽靈追擊隊！</size>",
 					1
 				}
 			}
@@ -25,7 +25,7 @@ return {
 			bgm = "story-1",
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "这边！",
+			say = "這邊！",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -58,7 +58,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "啊！她往这边跑了！",
+			say = "啊！她往這邊跑了！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -84,7 +84,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "呼…呼…没想到一路追到了天台…",
+			say = "呼…呼…沒想到一路追到了天台…",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -129,7 +129,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "我，我跑不动了啦…",
+			say = "我，我跑不動了啦…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -156,7 +156,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "不过这下就无路可逃了。你究竟是谁？你的目的是什么？",
+			say = "不過這下就無路可逃了。你究竟是誰？你的目的是什麼？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -172,7 +172,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "幽灵小姐，贝利和大家都不是坏人哦，我们是来帮助你的呢！",
+			say = "幽靈小姐，貝利和大家都不是壞人哦，我們是來幫助你的呢！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -201,7 +201,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "竟、竟然飞走了？！",
+			say = "竟、竟然飛走了？！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -228,7 +228,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "这，这怎么办！我们可不会飞…",
+			say = "這，這怎麼辦！我們可不會飛…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -245,7 +245,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "飞、飞…啊！刚才拿到的扫帚！既然如此…我跳！",
+			say = "飛、飛…啊！剛才拿到的掃帚！既然如此…我跳！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -271,7 +271,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "喂，等、等等，这样的话你会掉下去——",
+			say = "喂，等、等等，這樣的話你會掉下去——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -288,7 +288,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "飞，飞起来了…真的飞起来了？！",
+			say = "飛，飛起來了…真的飛起來了？！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -314,7 +314,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "哼，可别以为这次还能逃走！",
+			say = "哼，可別以為這次還能逃走！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -340,7 +340,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "不、不会吧，这个扫帚究竟是…",
+			say = "不、不會吧，這個掃帚究竟是…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -356,7 +356,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "啊哈哈哈~真的是飞翔的魔女耶~{namecode:48}、纳尔逊，你们也快来呀~",
+			say = "啊哈哈哈~真的是飛翔的魔女耶~{namecode:48}、納爾遜，你們也快來呀~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -398,7 +398,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "呜哇哇哇！真的飞起来了！我，我在飞！",
+			say = "嗚哇哇哇！真的飛起來了！我，我在飛！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -416,7 +416,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "扫，扫把，追上她们……！",
+			say = "掃，掃把，追上她們……！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -441,7 +441,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "…我这是在做梦吗…",
+			say = "…我這是在做夢嗎…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -457,7 +457,7 @@ return {
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "这一切都是真的哦。我推~",
+			say = "這一切都是真的哦。我推~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -470,7 +470,7 @@ return {
 			dir = 1,
 			actor = 205031,
 			nameColor = "#a9f548",
-			say = "罗德尼？！……呀！",
+			say = "羅德尼？！……呀！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -496,7 +496,7 @@ return {
 			blackBg = true,
 			actor = 205040,
 			nameColor = "#a9f548",
-			say = "好好享受飞行的时光吧，这可是难得的新鲜体验呢。坐稳了，还有玩得开心，姐姐~",
+			say = "好好享受飛行的時光吧，這可是難得的新鮮體驗呢。坐穩了，還有玩得開心，姐姐~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

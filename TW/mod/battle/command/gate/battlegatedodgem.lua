@@ -13,10 +13,10 @@ end
 slot0.Exit = function (slot0, slot1)
 	slot1:sendNotification(GAME.ACTIVITY_OPERATION, {
 		cmd = 1,
-		activity_id = ActivityConst.SUB_RED_POCKET,
+		activity_id = ActivityConst.PIG_YEAR_RED_POCKET_SHIP_ID_RETRO,
 		statistics = slot0.statistics,
 		arg1 = slot0.statistics._battleScore,
-		arg2 = slot0.statistics.subRunResult.score
+		arg2 = slot0.statistics.dodgemResult.score
 	})
 end
 

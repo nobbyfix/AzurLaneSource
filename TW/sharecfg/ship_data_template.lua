@@ -41,7 +41,6 @@ pg.ship_data_template = {
 			14
 		},
 		hide_buff_list = {
-			51,
 			9033
 		}
 	},
@@ -86,7 +85,6 @@ pg.ship_data_template = {
 			15
 		},
 		hide_buff_list = {
-			51,
 			9030
 		}
 	},
@@ -131,9 +129,7 @@ pg.ship_data_template = {
 			10010,
 			20021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101032] = {
 		oil_at_start = 1,
@@ -177,9 +173,7 @@ pg.ship_data_template = {
 			10010,
 			20021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101033] = {
 		oil_at_start = 1,
@@ -223,9 +217,7 @@ pg.ship_data_template = {
 			10010,
 			20021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101034] = {
 		oil_at_start = 1,
@@ -269,9 +261,7 @@ pg.ship_data_template = {
 			10010,
 			20022
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101041] = {
 		oil_at_start = 1,
@@ -314,9 +304,7 @@ pg.ship_data_template = {
 			10010,
 			20021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101042] = {
 		oil_at_start = 1,
@@ -360,9 +348,7 @@ pg.ship_data_template = {
 			10010,
 			20021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101043] = {
 		oil_at_start = 1,
@@ -406,9 +392,7 @@ pg.ship_data_template = {
 			10010,
 			20021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101044] = {
 		oil_at_start = 1,
@@ -452,9 +436,7 @@ pg.ship_data_template = {
 			10010,
 			20022
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101051] = {
 		oil_at_start = 1,
@@ -499,9 +481,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101052] = {
 		oil_at_start = 1,
@@ -547,9 +527,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101053] = {
 		oil_at_start = 1,
@@ -595,9 +573,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101054] = {
 		oil_at_start = 1,
@@ -643,9 +619,7 @@ pg.ship_data_template = {
 			2051,
 			20032
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101061] = {
 		oil_at_start = 1,
@@ -688,9 +662,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101062] = {
 		oil_at_start = 1,
@@ -734,9 +706,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101063] = {
 		oil_at_start = 1,
@@ -780,9 +750,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101064] = {
 		oil_at_start = 1,
@@ -826,9 +794,7 @@ pg.ship_data_template = {
 			2051,
 			20032
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101071] = {
 		oil_at_start = 1,
@@ -871,9 +837,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101072] = {
 		oil_at_start = 1,
@@ -917,9 +881,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101073] = {
 		oil_at_start = 1,
@@ -963,9 +925,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101074] = {
 		oil_at_start = 1,
@@ -1009,9 +969,7 @@ pg.ship_data_template = {
 			2051,
 			20032
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101081] = {
 		oil_at_start = 1,
@@ -1056,9 +1014,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101082] = {
 		oil_at_start = 1,
@@ -1104,9 +1060,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101083] = {
 		oil_at_start = 1,
@@ -1152,9 +1106,7 @@ pg.ship_data_template = {
 			2051,
 			20031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101084] = {
 		oil_at_start = 1,
@@ -1200,9 +1152,7 @@ pg.ship_data_template = {
 			2051,
 			20032
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101091] = {
 		oil_at_start = 1,
@@ -1247,9 +1197,7 @@ pg.ship_data_template = {
 			1051,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101092] = {
 		oil_at_start = 1,
@@ -1295,9 +1243,7 @@ pg.ship_data_template = {
 			1051,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101093] = {
 		oil_at_start = 1,
@@ -1343,9 +1289,7 @@ pg.ship_data_template = {
 			1051,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101094] = {
 		oil_at_start = 1,
@@ -1391,9 +1335,7 @@ pg.ship_data_template = {
 			1051,
 			20042
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101111] = {
 		oil_at_start = 1,
@@ -1438,9 +1380,7 @@ pg.ship_data_template = {
 			2011,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101112] = {
 		oil_at_start = 1,
@@ -1486,9 +1426,7 @@ pg.ship_data_template = {
 			2011,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101113] = {
 		oil_at_start = 1,
@@ -1534,9 +1472,7 @@ pg.ship_data_template = {
 			2011,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101114] = {
 		oil_at_start = 1,
@@ -1582,9 +1518,7 @@ pg.ship_data_template = {
 			2011,
 			20042
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101121] = {
 		oil_at_start = 1,
@@ -1627,9 +1561,7 @@ pg.ship_data_template = {
 			2011,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101122] = {
 		oil_at_start = 1,
@@ -1673,9 +1605,7 @@ pg.ship_data_template = {
 			2011,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101123] = {
 		oil_at_start = 1,
@@ -1719,9 +1649,7 @@ pg.ship_data_template = {
 			2011,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101124] = {
 		oil_at_start = 1,
@@ -1765,9 +1693,7 @@ pg.ship_data_template = {
 			2011,
 			20042
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101131] = {
 		oil_at_start = 1,
@@ -1810,9 +1736,7 @@ pg.ship_data_template = {
 			2001,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101132] = {
 		oil_at_start = 1,
@@ -1856,9 +1780,7 @@ pg.ship_data_template = {
 			2001,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101133] = {
 		oil_at_start = 1,
@@ -1902,9 +1824,7 @@ pg.ship_data_template = {
 			2001,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101134] = {
 		oil_at_start = 1,
@@ -1948,9 +1868,7 @@ pg.ship_data_template = {
 			2001,
 			20042
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101141] = {
 		oil_at_start = 1,
@@ -1993,9 +1911,7 @@ pg.ship_data_template = {
 			2001,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101142] = {
 		oil_at_start = 1,
@@ -2039,9 +1955,7 @@ pg.ship_data_template = {
 			2001,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101143] = {
 		oil_at_start = 1,
@@ -2085,9 +1999,7 @@ pg.ship_data_template = {
 			2001,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101144] = {
 		oil_at_start = 1,
@@ -2131,9 +2043,7 @@ pg.ship_data_template = {
 			2001,
 			20042
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101151] = {
 		oil_at_start = 1,
@@ -2176,9 +2086,7 @@ pg.ship_data_template = {
 			2001,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101152] = {
 		oil_at_start = 1,
@@ -2222,9 +2130,7 @@ pg.ship_data_template = {
 			2001,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101153] = {
 		oil_at_start = 1,
@@ -2268,9 +2174,7 @@ pg.ship_data_template = {
 			2001,
 			20041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101154] = {
 		oil_at_start = 1,
@@ -2314,9 +2218,182 @@ pg.ship_data_template = {
 			2001,
 			20042
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
+	},
+	[101161] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 0,
+		oil_at_end = 2,
+		type = 1,
+		energy = 150,
+		name = "班森",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 5,
+		strengthen_id = 10116,
+		equip_id_2 = 0,
+		equip_id_1 = 11100,
+		group_type = 10116,
+		id = 101161,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			1081
+		},
+		buff_list_display = {
+			1081,
+			20061
+		},
+		hide_buff_list = {}
+	},
+	[101162] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 4,
+		type = 1,
+		energy = 150,
+		name = "班森",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 5,
+		strengthen_id = 10116,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 10116,
+		id = 101162,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			1081,
+			20061
+		},
+		buff_list_display = {
+			1081,
+			20061
+		},
+		hide_buff_list = {}
+	},
+	[101163] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 6,
+		type = 1,
+		energy = 150,
+		name = "班森",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 5,
+		strengthen_id = 10116,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 10116,
+		id = 101163,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			1081,
+			20061
+		},
+		buff_list_display = {
+			1081,
+			20061
+		},
+		hide_buff_list = {}
+	},
+	[101164] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 8,
+		type = 1,
+		energy = 150,
+		name = "班森",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 10116,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 10116,
+		id = 101164,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			1081,
+			20062
+		},
+		buff_list_display = {
+			1081,
+			20062
+		},
+		hide_buff_list = {}
 	},
 	[101171] = {
 		oil_at_start = 1,
@@ -2360,9 +2437,7 @@ pg.ship_data_template = {
 			11210,
 			29051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101172] = {
 		oil_at_start = 1,
@@ -2407,9 +2482,7 @@ pg.ship_data_template = {
 			11210,
 			29051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101173] = {
 		oil_at_start = 1,
@@ -2454,9 +2527,7 @@ pg.ship_data_template = {
 			11210,
 			29051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101174] = {
 		oil_at_start = 1,
@@ -2501,9 +2572,7 @@ pg.ship_data_template = {
 			11210,
 			29052
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101241] = {
 		oil_at_start = 1,
@@ -2546,9 +2615,7 @@ pg.ship_data_template = {
 			1001,
 			20051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101242] = {
 		oil_at_start = 1,
@@ -2592,9 +2659,7 @@ pg.ship_data_template = {
 			1001,
 			20051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101243] = {
 		oil_at_start = 1,
@@ -2638,9 +2703,7 @@ pg.ship_data_template = {
 			1001,
 			20051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101244] = {
 		oil_at_start = 1,
@@ -2684,9 +2747,7 @@ pg.ship_data_template = {
 			1001,
 			20052
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101251] = {
 		oil_at_start = 1,
@@ -2730,9 +2791,7 @@ pg.ship_data_template = {
 			4091,
 			20051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101252] = {
 		oil_at_start = 1,
@@ -2777,9 +2836,7 @@ pg.ship_data_template = {
 			4091,
 			20051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101253] = {
 		oil_at_start = 1,
@@ -2824,9 +2881,7 @@ pg.ship_data_template = {
 			4091,
 			20051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101254] = {
 		oil_at_start = 1,
@@ -2871,9 +2926,7 @@ pg.ship_data_template = {
 			4091,
 			20052
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101261] = {
 		oil_at_start = 1,
@@ -2916,9 +2969,7 @@ pg.ship_data_template = {
 			10050,
 			29021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101262] = {
 		oil_at_start = 1,
@@ -2962,9 +3013,7 @@ pg.ship_data_template = {
 			10050,
 			29021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101263] = {
 		oil_at_start = 1,
@@ -3008,9 +3057,7 @@ pg.ship_data_template = {
 			10050,
 			29021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101264] = {
 		oil_at_start = 1,
@@ -3054,9 +3101,7 @@ pg.ship_data_template = {
 			10050,
 			29022
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101271] = {
 		oil_at_start = 1,
@@ -3099,9 +3144,7 @@ pg.ship_data_template = {
 			4081,
 			20061
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101272] = {
 		oil_at_start = 1,
@@ -3145,9 +3188,7 @@ pg.ship_data_template = {
 			4081,
 			20061
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101273] = {
 		oil_at_start = 1,
@@ -3191,9 +3232,7 @@ pg.ship_data_template = {
 			4081,
 			20061
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[101274] = {
 		oil_at_start = 1,
@@ -3237,9 +3276,7 @@ pg.ship_data_template = {
 			4081,
 			20062
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[102011] = {
 		oil_at_start = 1,
@@ -3282,9 +3319,7 @@ pg.ship_data_template = {
 			2001,
 			20111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102012] = {
 		oil_at_start = 1,
@@ -3328,9 +3363,7 @@ pg.ship_data_template = {
 			2001,
 			20111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102013] = {
 		oil_at_start = 1,
@@ -3374,9 +3407,7 @@ pg.ship_data_template = {
 			2001,
 			20111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102014] = {
 		oil_at_start = 1,
@@ -3420,9 +3451,7 @@ pg.ship_data_template = {
 			2001,
 			20112
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102021] = {
 		oil_at_start = 1,
@@ -3465,9 +3494,7 @@ pg.ship_data_template = {
 			2001,
 			20111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102022] = {
 		oil_at_start = 1,
@@ -3511,9 +3538,7 @@ pg.ship_data_template = {
 			2001,
 			20111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102023] = {
 		oil_at_start = 1,
@@ -3557,9 +3582,7 @@ pg.ship_data_template = {
 			2001,
 			20111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102024] = {
 		oil_at_start = 1,
@@ -3603,9 +3626,7 @@ pg.ship_data_template = {
 			2001,
 			20112
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102031] = {
 		oil_at_start = 1,
@@ -3648,9 +3669,7 @@ pg.ship_data_template = {
 			1002,
 			20121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102032] = {
 		oil_at_start = 1,
@@ -3694,9 +3713,7 @@ pg.ship_data_template = {
 			1002,
 			20121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102033] = {
 		oil_at_start = 1,
@@ -3740,9 +3757,7 @@ pg.ship_data_template = {
 			1002,
 			20121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102034] = {
 		oil_at_start = 1,
@@ -3786,9 +3801,7 @@ pg.ship_data_template = {
 			1002,
 			20122
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102041] = {
 		oil_at_start = 1,
@@ -3831,9 +3844,7 @@ pg.ship_data_template = {
 			10060,
 			20121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102042] = {
 		oil_at_start = 1,
@@ -3877,9 +3888,7 @@ pg.ship_data_template = {
 			10060,
 			20121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102043] = {
 		oil_at_start = 1,
@@ -3923,9 +3932,7 @@ pg.ship_data_template = {
 			10060,
 			20121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102044] = {
 		oil_at_start = 1,
@@ -3969,9 +3976,7 @@ pg.ship_data_template = {
 			10060,
 			20122
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102051] = {
 		oil_at_start = 1,
@@ -4014,9 +4019,7 @@ pg.ship_data_template = {
 			10070,
 			20121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102052] = {
 		oil_at_start = 1,
@@ -4060,9 +4063,7 @@ pg.ship_data_template = {
 			10070,
 			20121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102053] = {
 		oil_at_start = 1,
@@ -4106,9 +4107,7 @@ pg.ship_data_template = {
 			10070,
 			20121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102054] = {
 		oil_at_start = 1,
@@ -4152,9 +4151,7 @@ pg.ship_data_template = {
 			10070,
 			20122
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102061] = {
 		oil_at_start = 1,
@@ -4200,9 +4197,7 @@ pg.ship_data_template = {
 			4091,
 			20131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102062] = {
 		oil_at_start = 1,
@@ -4249,9 +4244,7 @@ pg.ship_data_template = {
 			4091,
 			20131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102063] = {
 		oil_at_start = 1,
@@ -4298,9 +4291,7 @@ pg.ship_data_template = {
 			4091,
 			20131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102064] = {
 		oil_at_start = 1,
@@ -4347,9 +4338,7 @@ pg.ship_data_template = {
 			4091,
 			20132
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102071] = {
 		oil_at_start = 1,
@@ -4395,9 +4384,7 @@ pg.ship_data_template = {
 			4091,
 			20131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102072] = {
 		oil_at_start = 1,
@@ -4444,9 +4431,7 @@ pg.ship_data_template = {
 			4091,
 			20131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102073] = {
 		oil_at_start = 1,
@@ -4493,9 +4478,7 @@ pg.ship_data_template = {
 			4091,
 			20131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102074] = {
 		oil_at_start = 1,
@@ -4542,9 +4525,7 @@ pg.ship_data_template = {
 			4091,
 			20132
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102081] = {
 		oil_at_start = 1,
@@ -4588,9 +4569,7 @@ pg.ship_data_template = {
 			10090,
 			20131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102082] = {
 		oil_at_start = 1,
@@ -4635,9 +4614,7 @@ pg.ship_data_template = {
 			10090,
 			20131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102083] = {
 		oil_at_start = 1,
@@ -4682,9 +4659,7 @@ pg.ship_data_template = {
 			10090,
 			20131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102084] = {
 		oil_at_start = 1,
@@ -4729,9 +4704,7 @@ pg.ship_data_template = {
 			10090,
 			20132
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102091] = {
 		oil_at_start = 1,
@@ -4776,9 +4749,7 @@ pg.ship_data_template = {
 			4091,
 			20141
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102092] = {
 		oil_at_start = 1,
@@ -4824,9 +4795,7 @@ pg.ship_data_template = {
 			4091,
 			20141
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102093] = {
 		oil_at_start = 1,
@@ -4872,9 +4841,7 @@ pg.ship_data_template = {
 			4091,
 			20141
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[102094] = {
 		oil_at_start = 1,
@@ -4920,9 +4887,7 @@ pg.ship_data_template = {
 			4091,
 			20142
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[103011] = {
 		oil_at_start = 1,
@@ -4963,9 +4928,7 @@ pg.ship_data_template = {
 			2021,
 			20211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103012] = {
 		oil_at_start = 1,
@@ -5007,9 +4970,7 @@ pg.ship_data_template = {
 			2021,
 			20211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103013] = {
 		oil_at_start = 1,
@@ -5051,9 +5012,7 @@ pg.ship_data_template = {
 			2021,
 			20211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103014] = {
 		oil_at_start = 1,
@@ -5095,9 +5054,7 @@ pg.ship_data_template = {
 			2021,
 			20212
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103031] = {
 		oil_at_start = 1,
@@ -5138,9 +5095,7 @@ pg.ship_data_template = {
 			1002,
 			20221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103032] = {
 		oil_at_start = 1,
@@ -5182,9 +5137,7 @@ pg.ship_data_template = {
 			1002,
 			20221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103033] = {
 		oil_at_start = 1,
@@ -5226,9 +5179,7 @@ pg.ship_data_template = {
 			1002,
 			20221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103034] = {
 		oil_at_start = 1,
@@ -5270,9 +5221,7 @@ pg.ship_data_template = {
 			1002,
 			20222
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103041] = {
 		oil_at_start = 1,
@@ -5313,9 +5262,7 @@ pg.ship_data_template = {
 			2041,
 			20221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103042] = {
 		oil_at_start = 1,
@@ -5357,9 +5304,7 @@ pg.ship_data_template = {
 			2041,
 			20221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103043] = {
 		oil_at_start = 1,
@@ -5401,9 +5346,7 @@ pg.ship_data_template = {
 			2041,
 			20221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103044] = {
 		oil_at_start = 1,
@@ -5445,9 +5388,7 @@ pg.ship_data_template = {
 			2041,
 			20222
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103051] = {
 		oil_at_start = 1,
@@ -5488,9 +5429,7 @@ pg.ship_data_template = {
 			10100,
 			20221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103052] = {
 		oil_at_start = 1,
@@ -5532,9 +5471,7 @@ pg.ship_data_template = {
 			10100,
 			20221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103053] = {
 		oil_at_start = 1,
@@ -5576,9 +5513,7 @@ pg.ship_data_template = {
 			10100,
 			20221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103054] = {
 		oil_at_start = 1,
@@ -5620,9 +5555,7 @@ pg.ship_data_template = {
 			10100,
 			20222
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103061] = {
 		oil_at_start = 1,
@@ -5665,9 +5598,7 @@ pg.ship_data_template = {
 			4011,
 			20231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103062] = {
 		oil_at_start = 1,
@@ -5711,9 +5642,7 @@ pg.ship_data_template = {
 			4011,
 			20231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103063] = {
 		oil_at_start = 1,
@@ -5757,9 +5686,7 @@ pg.ship_data_template = {
 			4011,
 			20231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103064] = {
 		oil_at_start = 1,
@@ -5803,9 +5730,7 @@ pg.ship_data_template = {
 			4011,
 			20232
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103071] = {
 		oil_at_start = 1,
@@ -5848,9 +5773,7 @@ pg.ship_data_template = {
 			4021,
 			20231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103072] = {
 		oil_at_start = 1,
@@ -5894,9 +5817,7 @@ pg.ship_data_template = {
 			4021,
 			20231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103073] = {
 		oil_at_start = 1,
@@ -5940,9 +5861,7 @@ pg.ship_data_template = {
 			4021,
 			20231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103074] = {
 		oil_at_start = 1,
@@ -5986,9 +5905,7 @@ pg.ship_data_template = {
 			4021,
 			20232
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103111] = {
 		oil_at_start = 1,
@@ -6031,9 +5948,7 @@ pg.ship_data_template = {
 			2061,
 			20251
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103112] = {
 		oil_at_start = 1,
@@ -6077,9 +5992,7 @@ pg.ship_data_template = {
 			2061,
 			20251
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103113] = {
 		oil_at_start = 1,
@@ -6123,9 +6036,7 @@ pg.ship_data_template = {
 			2061,
 			20251
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[103114] = {
 		oil_at_start = 1,
@@ -6169,9 +6080,7 @@ pg.ship_data_template = {
 			2061,
 			20252
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[105011] = {
 		oil_at_start = 1,
@@ -6211,9 +6120,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			4021
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[105012] = {
 		oil_at_start = 1,
@@ -6254,7 +6161,6 @@ pg.ship_data_template = {
 			4021
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -6297,7 +6203,6 @@ pg.ship_data_template = {
 			4021
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -6340,7 +6245,6 @@ pg.ship_data_template = {
 			4021
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -6382,9 +6286,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			4021
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[105022] = {
 		oil_at_start = 1,
@@ -6425,7 +6327,6 @@ pg.ship_data_template = {
 			4021
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -6468,7 +6369,6 @@ pg.ship_data_template = {
 			4021
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -6511,7 +6411,6 @@ pg.ship_data_template = {
 			4021
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -6553,10 +6452,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10130
 		},
-		hide_buff_list = {
-			10131,
-			55
-		}
+		hide_buff_list = {}
 	},
 	[105032] = {
 		oil_at_start = 1,
@@ -6597,8 +6493,6 @@ pg.ship_data_template = {
 			10130
 		},
 		hide_buff_list = {
-			10131,
-			55,
 			1
 		}
 	},
@@ -6641,8 +6535,6 @@ pg.ship_data_template = {
 			10130
 		},
 		hide_buff_list = {
-			10131,
-			55,
 			1
 		}
 	},
@@ -6685,8 +6577,6 @@ pg.ship_data_template = {
 			10130
 		},
 		hide_buff_list = {
-			10131,
-			55,
 			2
 		}
 	},
@@ -6728,9 +6618,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10140
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[105042] = {
 		oil_at_start = 1,
@@ -6771,7 +6659,6 @@ pg.ship_data_template = {
 			10140
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -6814,7 +6701,6 @@ pg.ship_data_template = {
 			10140
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -6857,7 +6743,6 @@ pg.ship_data_template = {
 			10140
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -6899,9 +6784,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10150
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[105072] = {
 		oil_at_start = 1,
@@ -6942,7 +6825,6 @@ pg.ship_data_template = {
 			10150
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -6985,7 +6867,6 @@ pg.ship_data_template = {
 			10150
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -7028,7 +6909,6 @@ pg.ship_data_template = {
 			10150
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -7070,9 +6950,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			2041
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[105082] = {
 		oil_at_start = 1,
@@ -7113,7 +6991,6 @@ pg.ship_data_template = {
 			2041
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -7156,7 +7033,6 @@ pg.ship_data_template = {
 			2041
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -7199,7 +7075,6 @@ pg.ship_data_template = {
 			2041
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -7243,9 +7118,7 @@ pg.ship_data_template = {
 			10160,
 			2041
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[105142] = {
 		oil_at_start = 1,
@@ -7288,7 +7161,6 @@ pg.ship_data_template = {
 			2041
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -7333,7 +7205,6 @@ pg.ship_data_template = {
 			2041
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -7378,7 +7249,6 @@ pg.ship_data_template = {
 			2041
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -7422,11 +7292,10 @@ pg.ship_data_template = {
 			3001
 		},
 		buff_list_display = {
-			3001
+			3001,
+			3041
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[106012] = {
 		oil_at_start = 1,
@@ -7468,11 +7337,10 @@ pg.ship_data_template = {
 			3001
 		},
 		buff_list_display = {
-			3001
+			3001,
+			3041
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[106013] = {
 		oil_at_start = 1,
@@ -7515,11 +7383,10 @@ pg.ship_data_template = {
 			3001
 		},
 		buff_list_display = {
-			3001
+			3001,
+			3041
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[106014] = {
 		oil_at_start = 1,
@@ -7562,11 +7429,10 @@ pg.ship_data_template = {
 			3001
 		},
 		buff_list_display = {
-			3001
+			3001,
+			3041
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[106021] = {
 		oil_at_start = 1,
@@ -7611,9 +7477,7 @@ pg.ship_data_template = {
 			3001,
 			1045
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[106022] = {
 		oil_at_start = 1,
@@ -7658,9 +7522,7 @@ pg.ship_data_template = {
 			3001,
 			1045
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[106023] = {
 		oil_at_start = 1,
@@ -7706,9 +7568,7 @@ pg.ship_data_template = {
 			3001,
 			1045
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[106024] = {
 		oil_at_start = 1,
@@ -7754,9 +7614,7 @@ pg.ship_data_template = {
 			3001,
 			1045
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[107011] = {
 		oil_at_start = 1,
@@ -7801,9 +7659,7 @@ pg.ship_data_template = {
 			10170,
 			1037
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[107012] = {
 		oil_at_start = 1,
@@ -7848,9 +7704,7 @@ pg.ship_data_template = {
 			10170,
 			1037
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[107013] = {
 		oil_at_start = 1,
@@ -7896,9 +7750,7 @@ pg.ship_data_template = {
 			10170,
 			1037
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[107014] = {
 		oil_at_start = 1,
@@ -7944,9 +7796,7 @@ pg.ship_data_template = {
 			10170,
 			1037
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[107021] = {
 		oil_at_start = 1,
@@ -7990,9 +7840,7 @@ pg.ship_data_template = {
 			10180,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107022] = {
 		oil_at_start = 1,
@@ -8036,9 +7884,7 @@ pg.ship_data_template = {
 			10180,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107023] = {
 		oil_at_start = 1,
@@ -8083,9 +7929,7 @@ pg.ship_data_template = {
 			10180,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107024] = {
 		oil_at_start = 1,
@@ -8130,9 +7974,7 @@ pg.ship_data_template = {
 			10180,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107031] = {
 		oil_at_start = 1,
@@ -8176,9 +8018,7 @@ pg.ship_data_template = {
 			10180,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107032] = {
 		oil_at_start = 1,
@@ -8222,9 +8062,7 @@ pg.ship_data_template = {
 			10180,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107033] = {
 		oil_at_start = 1,
@@ -8269,9 +8107,7 @@ pg.ship_data_template = {
 			10180,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107034] = {
 		oil_at_start = 1,
@@ -8316,9 +8152,7 @@ pg.ship_data_template = {
 			10180,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107041] = {
 		oil_at_start = 1,
@@ -8327,7 +8161,7 @@ pg.ship_data_template = {
 		oil_at_end = 3,
 		type = 6,
 		energy = 150,
-		name = "游騎兵",
+		name = "遊騎兵",
 		can_get_proficency = 0,
 		star = 1,
 		star_max = 4,
@@ -8360,11 +8194,10 @@ pg.ship_data_template = {
 			3001
 		},
 		buff_list_display = {
-			3001
+			3001,
+			3011
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[107042] = {
 		oil_at_start = 1,
@@ -8373,7 +8206,7 @@ pg.ship_data_template = {
 		oil_at_end = 5,
 		type = 6,
 		energy = 150,
-		name = "游騎兵",
+		name = "遊騎兵",
 		can_get_proficency = 0,
 		star = 2,
 		star_max = 4,
@@ -8406,11 +8239,10 @@ pg.ship_data_template = {
 			3001
 		},
 		buff_list_display = {
-			3001
+			3001,
+			3011
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[107043] = {
 		oil_at_start = 1,
@@ -8419,7 +8251,7 @@ pg.ship_data_template = {
 		oil_at_end = 7,
 		type = 6,
 		energy = 150,
-		name = "游騎兵",
+		name = "遊騎兵",
 		can_get_proficency = 0,
 		star = 3,
 		star_max = 4,
@@ -8453,11 +8285,10 @@ pg.ship_data_template = {
 			3001
 		},
 		buff_list_display = {
-			3001
+			3001,
+			3011
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[107044] = {
 		oil_at_start = 1,
@@ -8466,7 +8297,7 @@ pg.ship_data_template = {
 		oil_at_end = 9,
 		type = 6,
 		energy = 150,
-		name = "游騎兵",
+		name = "遊騎兵",
 		can_get_proficency = 1,
 		star = 4,
 		star_max = 4,
@@ -8500,11 +8331,10 @@ pg.ship_data_template = {
 			3001
 		},
 		buff_list_display = {
-			3001
+			3001,
+			3011
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[107051] = {
 		oil_at_start = 1,
@@ -8548,9 +8378,7 @@ pg.ship_data_template = {
 			10190,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107052] = {
 		oil_at_start = 1,
@@ -8594,9 +8422,7 @@ pg.ship_data_template = {
 			10190,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107053] = {
 		oil_at_start = 1,
@@ -8641,9 +8467,7 @@ pg.ship_data_template = {
 			10190,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107054] = {
 		oil_at_start = 1,
@@ -8688,9 +8512,7 @@ pg.ship_data_template = {
 			10190,
 			3021
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107061] = {
 		oil_at_start = 1,
@@ -8732,9 +8554,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10200
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107062] = {
 		oil_at_start = 1,
@@ -8776,9 +8596,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10200
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107063] = {
 		oil_at_start = 1,
@@ -8821,9 +8639,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10200
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107064] = {
 		oil_at_start = 1,
@@ -8866,9 +8682,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10200
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107071] = {
 		oil_at_start = 1,
@@ -8912,9 +8726,7 @@ pg.ship_data_template = {
 			10210,
 			3011
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107072] = {
 		oil_at_start = 1,
@@ -8958,9 +8770,7 @@ pg.ship_data_template = {
 			10210,
 			3011
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107073] = {
 		oil_at_start = 1,
@@ -9005,9 +8815,7 @@ pg.ship_data_template = {
 			10210,
 			3011
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[107074] = {
 		oil_at_start = 1,
@@ -9052,9 +8860,7 @@ pg.ship_data_template = {
 			10210,
 			3011
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[112011] = {
 		oil_at_start = 1,
@@ -9273,9 +9079,7 @@ pg.ship_data_template = {
 			10230,
 			21011
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201012] = {
 		oil_at_start = 1,
@@ -9319,9 +9123,7 @@ pg.ship_data_template = {
 			10230,
 			21011
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201013] = {
 		oil_at_start = 1,
@@ -9365,9 +9167,7 @@ pg.ship_data_template = {
 			10230,
 			21011
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201014] = {
 		oil_at_start = 1,
@@ -9411,9 +9211,7 @@ pg.ship_data_template = {
 			10230,
 			21012
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201061] = {
 		oil_at_start = 1,
@@ -9456,9 +9254,7 @@ pg.ship_data_template = {
 			4071,
 			21021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201062] = {
 		oil_at_start = 1,
@@ -9502,9 +9298,7 @@ pg.ship_data_template = {
 			4071,
 			21021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201063] = {
 		oil_at_start = 1,
@@ -9548,9 +9342,7 @@ pg.ship_data_template = {
 			4071,
 			21021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201064] = {
 		oil_at_start = 1,
@@ -9594,9 +9386,7 @@ pg.ship_data_template = {
 			4071,
 			21022
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201071] = {
 		oil_at_start = 1,
@@ -9639,9 +9429,7 @@ pg.ship_data_template = {
 			4071,
 			21021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201072] = {
 		oil_at_start = 1,
@@ -9685,9 +9473,7 @@ pg.ship_data_template = {
 			4071,
 			21021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201073] = {
 		oil_at_start = 1,
@@ -9731,9 +9517,7 @@ pg.ship_data_template = {
 			4071,
 			21021
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201074] = {
 		oil_at_start = 1,
@@ -9777,9 +9561,7 @@ pg.ship_data_template = {
 			4071,
 			21022
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201081] = {
 		oil_at_start = 1,
@@ -9822,9 +9604,7 @@ pg.ship_data_template = {
 			1011,
 			21031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201082] = {
 		oil_at_start = 1,
@@ -9868,9 +9648,7 @@ pg.ship_data_template = {
 			1011,
 			21031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201083] = {
 		oil_at_start = 1,
@@ -9914,9 +9692,7 @@ pg.ship_data_template = {
 			1011,
 			21031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201084] = {
 		oil_at_start = 1,
@@ -9960,9 +9736,7 @@ pg.ship_data_template = {
 			1011,
 			21032
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201091] = {
 		oil_at_start = 1,
@@ -10005,9 +9779,7 @@ pg.ship_data_template = {
 			4071,
 			21031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201092] = {
 		oil_at_start = 1,
@@ -10051,9 +9823,7 @@ pg.ship_data_template = {
 			4071,
 			21031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201093] = {
 		oil_at_start = 1,
@@ -10097,9 +9867,7 @@ pg.ship_data_template = {
 			4071,
 			21031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201094] = {
 		oil_at_start = 1,
@@ -10143,9 +9911,7 @@ pg.ship_data_template = {
 			4071,
 			21032
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201101] = {
 		oil_at_start = 1,
@@ -10186,11 +9952,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			4071,
+			4081,
 			21031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201102] = {
 		oil_at_start = 1,
@@ -10232,11 +9997,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			4071,
+			4081,
 			21031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201103] = {
 		oil_at_start = 1,
@@ -10278,11 +10042,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			4071,
+			4081,
 			21031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201104] = {
 		oil_at_start = 1,
@@ -10324,11 +10087,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			4071,
+			4081,
 			21032
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201111] = {
 		oil_at_start = 1,
@@ -10371,9 +10133,7 @@ pg.ship_data_template = {
 			1031,
 			21041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201112] = {
 		oil_at_start = 1,
@@ -10417,9 +10177,7 @@ pg.ship_data_template = {
 			1031,
 			21041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201113] = {
 		oil_at_start = 1,
@@ -10463,9 +10221,7 @@ pg.ship_data_template = {
 			1031,
 			21041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201114] = {
 		oil_at_start = 1,
@@ -10509,9 +10265,7 @@ pg.ship_data_template = {
 			1031,
 			21042
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201121] = {
 		oil_at_start = 1,
@@ -10555,9 +10309,7 @@ pg.ship_data_template = {
 			1061,
 			21041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201122] = {
 		oil_at_start = 1,
@@ -10602,9 +10354,7 @@ pg.ship_data_template = {
 			1061,
 			21041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201123] = {
 		oil_at_start = 1,
@@ -10649,9 +10399,7 @@ pg.ship_data_template = {
 			1061,
 			21041
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201124] = {
 		oil_at_start = 1,
@@ -10696,9 +10444,7 @@ pg.ship_data_template = {
 			1061,
 			21042
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201141] = {
 		oil_at_start = 1,
@@ -10743,9 +10489,7 @@ pg.ship_data_template = {
 			4071,
 			29061
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201142] = {
 		oil_at_start = 1,
@@ -10791,9 +10535,7 @@ pg.ship_data_template = {
 			4071,
 			29061
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201143] = {
 		oil_at_start = 1,
@@ -10839,9 +10581,7 @@ pg.ship_data_template = {
 			4071,
 			29061
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201144] = {
 		oil_at_start = 1,
@@ -10887,9 +10627,7 @@ pg.ship_data_template = {
 			4071,
 			29062
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201211] = {
 		oil_at_start = 1,
@@ -10933,9 +10671,7 @@ pg.ship_data_template = {
 			10860,
 			29081
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201212] = {
 		oil_at_start = 1,
@@ -10980,9 +10716,7 @@ pg.ship_data_template = {
 			10860,
 			29081
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201213] = {
 		oil_at_start = 1,
@@ -11027,9 +10761,7 @@ pg.ship_data_template = {
 			10860,
 			29081
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201214] = {
 		oil_at_start = 1,
@@ -11074,9 +10806,7 @@ pg.ship_data_template = {
 			10860,
 			29082
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201221] = {
 		oil_at_start = 1,
@@ -11119,9 +10849,7 @@ pg.ship_data_template = {
 			4081,
 			21071
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201222] = {
 		oil_at_start = 1,
@@ -11165,9 +10893,7 @@ pg.ship_data_template = {
 			4081,
 			21071
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201223] = {
 		oil_at_start = 1,
@@ -11211,9 +10937,7 @@ pg.ship_data_template = {
 			4081,
 			21071
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[201224] = {
 		oil_at_start = 1,
@@ -11257,9 +10981,7 @@ pg.ship_data_template = {
 			4081,
 			21072
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[202011] = {
 		oil_at_start = 1,
@@ -11300,11 +11022,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			1002,
+			4081,
 			21111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202012] = {
 		oil_at_start = 1,
@@ -11346,11 +11067,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			1002,
+			4081,
 			21111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202013] = {
 		oil_at_start = 1,
@@ -11392,11 +11112,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			1002,
+			4081,
 			21111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202014] = {
 		oil_at_start = 1,
@@ -11438,11 +11157,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			1002,
+			4081,
 			21112
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202021] = {
 		oil_at_start = 1,
@@ -11485,9 +11203,7 @@ pg.ship_data_template = {
 			2011,
 			21111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202022] = {
 		oil_at_start = 1,
@@ -11531,9 +11247,7 @@ pg.ship_data_template = {
 			2011,
 			21111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202023] = {
 		oil_at_start = 1,
@@ -11577,9 +11291,7 @@ pg.ship_data_template = {
 			2011,
 			21111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202024] = {
 		oil_at_start = 1,
@@ -11623,9 +11335,7 @@ pg.ship_data_template = {
 			2011,
 			21112
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202031] = {
 		oil_at_start = 1,
@@ -11666,11 +11376,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			2011,
+			10710,
 			21111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202032] = {
 		oil_at_start = 1,
@@ -11712,11 +11421,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			2011,
+			10710,
 			21111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202033] = {
 		oil_at_start = 1,
@@ -11758,11 +11466,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			2011,
+			10710,
 			21111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202034] = {
 		oil_at_start = 1,
@@ -11804,11 +11511,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			2011,
+			10710,
 			21112
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202111] = {
 		oil_at_start = 1,
@@ -11851,9 +11557,7 @@ pg.ship_data_template = {
 			2081,
 			21141
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202112] = {
 		oil_at_start = 1,
@@ -11897,9 +11601,7 @@ pg.ship_data_template = {
 			2081,
 			21141
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202113] = {
 		oil_at_start = 1,
@@ -11943,9 +11645,7 @@ pg.ship_data_template = {
 			2081,
 			21141
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202114] = {
 		oil_at_start = 1,
@@ -11989,9 +11689,7 @@ pg.ship_data_template = {
 			2081,
 			21142
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202121] = {
 		oil_at_start = 1,
@@ -12036,9 +11734,7 @@ pg.ship_data_template = {
 			4101,
 			29101
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202122] = {
 		oil_at_start = 1,
@@ -12084,9 +11780,7 @@ pg.ship_data_template = {
 			4101,
 			29101
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202123] = {
 		oil_at_start = 1,
@@ -12132,9 +11826,7 @@ pg.ship_data_template = {
 			4101,
 			29101
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202124] = {
 		oil_at_start = 1,
@@ -12180,9 +11872,7 @@ pg.ship_data_template = {
 			4101,
 			29102
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202131] = {
 		oil_at_start = 1,
@@ -12225,9 +11915,7 @@ pg.ship_data_template = {
 			2021,
 			21131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202132] = {
 		oil_at_start = 1,
@@ -12271,9 +11959,7 @@ pg.ship_data_template = {
 			2021,
 			21131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202133] = {
 		oil_at_start = 1,
@@ -12317,9 +12003,7 @@ pg.ship_data_template = {
 			2021,
 			21131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202134] = {
 		oil_at_start = 1,
@@ -12363,9 +12047,7 @@ pg.ship_data_template = {
 			2021,
 			21132
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202141] = {
 		oil_at_start = 1,
@@ -12408,9 +12090,7 @@ pg.ship_data_template = {
 			2011,
 			21131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202142] = {
 		oil_at_start = 1,
@@ -12454,9 +12134,7 @@ pg.ship_data_template = {
 			2011,
 			21131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202143] = {
 		oil_at_start = 1,
@@ -12500,9 +12178,7 @@ pg.ship_data_template = {
 			2011,
 			21131
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[202144] = {
 		oil_at_start = 1,
@@ -12546,9 +12222,7 @@ pg.ship_data_template = {
 			2011,
 			21132
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[203011] = {
 		oil_at_start = 1,
@@ -12589,9 +12263,7 @@ pg.ship_data_template = {
 			1004,
 			21211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203012] = {
 		oil_at_start = 1,
@@ -12633,9 +12305,7 @@ pg.ship_data_template = {
 			1004,
 			21211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203013] = {
 		oil_at_start = 1,
@@ -12677,9 +12347,7 @@ pg.ship_data_template = {
 			1004,
 			21211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203014] = {
 		oil_at_start = 1,
@@ -12721,9 +12389,7 @@ pg.ship_data_template = {
 			1004,
 			21212
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203021] = {
 		oil_at_start = 1,
@@ -12764,9 +12430,7 @@ pg.ship_data_template = {
 			2061,
 			21211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203022] = {
 		oil_at_start = 1,
@@ -12808,9 +12472,7 @@ pg.ship_data_template = {
 			2061,
 			21211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203023] = {
 		oil_at_start = 1,
@@ -12852,9 +12514,7 @@ pg.ship_data_template = {
 			2061,
 			21211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203024] = {
 		oil_at_start = 1,
@@ -12896,9 +12556,7 @@ pg.ship_data_template = {
 			2061,
 			21212
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203031] = {
 		oil_at_start = 1,
@@ -12939,9 +12597,7 @@ pg.ship_data_template = {
 			2031,
 			21221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203032] = {
 		oil_at_start = 1,
@@ -12983,9 +12639,7 @@ pg.ship_data_template = {
 			2031,
 			21221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203033] = {
 		oil_at_start = 1,
@@ -13027,9 +12681,7 @@ pg.ship_data_template = {
 			2031,
 			21221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203034] = {
 		oil_at_start = 1,
@@ -13071,9 +12723,7 @@ pg.ship_data_template = {
 			2031,
 			21222
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203041] = {
 		oil_at_start = 1,
@@ -13115,9 +12765,7 @@ pg.ship_data_template = {
 			2011,
 			21221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203042] = {
 		oil_at_start = 1,
@@ -13160,9 +12808,7 @@ pg.ship_data_template = {
 			2011,
 			21221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203043] = {
 		oil_at_start = 1,
@@ -13205,9 +12851,7 @@ pg.ship_data_template = {
 			2011,
 			21221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203044] = {
 		oil_at_start = 1,
@@ -13250,9 +12894,7 @@ pg.ship_data_template = {
 			2011,
 			21222
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203051] = {
 		oil_at_start = 1,
@@ -13293,9 +12935,7 @@ pg.ship_data_template = {
 			4051,
 			21231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203052] = {
 		oil_at_start = 1,
@@ -13337,9 +12977,7 @@ pg.ship_data_template = {
 			4051,
 			21231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203053] = {
 		oil_at_start = 1,
@@ -13381,9 +13019,7 @@ pg.ship_data_template = {
 			4051,
 			21231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203054] = {
 		oil_at_start = 1,
@@ -13425,9 +13061,7 @@ pg.ship_data_template = {
 			4051,
 			21232
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203061] = {
 		oil_at_start = 1,
@@ -13468,9 +13102,7 @@ pg.ship_data_template = {
 			10560,
 			21231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203062] = {
 		oil_at_start = 1,
@@ -13512,9 +13144,7 @@ pg.ship_data_template = {
 			10560,
 			21231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203063] = {
 		oil_at_start = 1,
@@ -13556,9 +13186,7 @@ pg.ship_data_template = {
 			10560,
 			21231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203064] = {
 		oil_at_start = 1,
@@ -13600,9 +13228,7 @@ pg.ship_data_template = {
 			10560,
 			21232
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203071] = {
 		oil_at_start = 1,
@@ -13643,9 +13269,7 @@ pg.ship_data_template = {
 			10260,
 			21241
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203072] = {
 		oil_at_start = 1,
@@ -13687,9 +13311,7 @@ pg.ship_data_template = {
 			10260,
 			21241
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203073] = {
 		oil_at_start = 1,
@@ -13731,9 +13353,7 @@ pg.ship_data_template = {
 			10260,
 			21241
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203074] = {
 		oil_at_start = 1,
@@ -13775,9 +13395,7 @@ pg.ship_data_template = {
 			10260,
 			21242
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203081] = {
 		oil_at_start = 1,
@@ -13820,9 +13438,7 @@ pg.ship_data_template = {
 			4011,
 			21241
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203082] = {
 		oil_at_start = 1,
@@ -13866,9 +13482,7 @@ pg.ship_data_template = {
 			4011,
 			21241
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203083] = {
 		oil_at_start = 1,
@@ -13912,9 +13526,7 @@ pg.ship_data_template = {
 			4011,
 			21241
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[203084] = {
 		oil_at_start = 1,
@@ -13958,9 +13570,7 @@ pg.ship_data_template = {
 			4011,
 			21242
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[204011] = {
 		oil_at_start = 1,
@@ -14000,9 +13610,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10270
 		},
-		hide_buff_list = {
-			54
-		}
+		hide_buff_list = {}
 	},
 	[204012] = {
 		oil_at_start = 1,
@@ -14043,7 +13651,6 @@ pg.ship_data_template = {
 			10270
 		},
 		hide_buff_list = {
-			54,
 			1
 		}
 	},
@@ -14086,7 +13693,6 @@ pg.ship_data_template = {
 			10270
 		},
 		hide_buff_list = {
-			54,
 			1
 		}
 	},
@@ -14129,7 +13735,6 @@ pg.ship_data_template = {
 			10270
 		},
 		hide_buff_list = {
-			54,
 			2
 		}
 	},
@@ -14171,9 +13776,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10280
 		},
-		hide_buff_list = {
-			54
-		}
+		hide_buff_list = {}
 	},
 	[204022] = {
 		oil_at_start = 1,
@@ -14214,7 +13817,6 @@ pg.ship_data_template = {
 			10280
 		},
 		hide_buff_list = {
-			54,
 			1
 		}
 	},
@@ -14257,7 +13859,6 @@ pg.ship_data_template = {
 			10280
 		},
 		hide_buff_list = {
-			54,
 			1
 		}
 	},
@@ -14300,7 +13901,6 @@ pg.ship_data_template = {
 			10280
 		},
 		hide_buff_list = {
-			54,
 			2
 		}
 	},
@@ -14342,10 +13942,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10290
 		},
-		hide_buff_list = {
-			10291,
-			54
-		}
+		hide_buff_list = {}
 	},
 	[204032] = {
 		oil_at_start = 1,
@@ -14386,8 +13983,6 @@ pg.ship_data_template = {
 			10290
 		},
 		hide_buff_list = {
-			10291,
-			54,
 			1
 		}
 	},
@@ -14430,8 +14025,6 @@ pg.ship_data_template = {
 			10290
 		},
 		hide_buff_list = {
-			10291,
-			54,
 			1
 		}
 	},
@@ -14474,8 +14067,6 @@ pg.ship_data_template = {
 			10290
 		},
 		hide_buff_list = {
-			10291,
-			54,
 			2
 		}
 	},
@@ -14518,9 +14109,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10300
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[205012] = {
 		oil_at_start = 1,
@@ -14562,7 +14151,6 @@ pg.ship_data_template = {
 			10300
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -14606,7 +14194,6 @@ pg.ship_data_template = {
 			10300
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -14650,7 +14237,6 @@ pg.ship_data_template = {
 			10300
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -14693,9 +14279,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10310
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[205022] = {
 		oil_at_start = 1,
@@ -14737,7 +14321,6 @@ pg.ship_data_template = {
 			10310
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -14781,7 +14364,6 @@ pg.ship_data_template = {
 			10310
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -14825,7 +14407,6 @@ pg.ship_data_template = {
 			10310
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -14868,9 +14449,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10320
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[205032] = {
 		oil_at_start = 1,
@@ -14912,7 +14491,6 @@ pg.ship_data_template = {
 			10320
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -14956,7 +14534,6 @@ pg.ship_data_template = {
 			10320
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -15000,7 +14577,6 @@ pg.ship_data_template = {
 			10320
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -15043,9 +14619,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10320
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[205042] = {
 		oil_at_start = 1,
@@ -15087,7 +14661,6 @@ pg.ship_data_template = {
 			10320
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -15131,7 +14704,6 @@ pg.ship_data_template = {
 			10320
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -15175,7 +14747,6 @@ pg.ship_data_template = {
 			10320
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -15221,9 +14792,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			3011
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[206012] = {
 		oil_at_start = 1,
@@ -15267,9 +14836,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			3011
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[206013] = {
 		oil_at_start = 1,
@@ -15314,9 +14881,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			3011
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[206014] = {
 		oil_at_start = 1,
@@ -15361,9 +14926,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			3011
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[206031] = {
 		oil_at_start = 1,
@@ -15409,9 +14972,7 @@ pg.ship_data_template = {
 			3031,
 			1034
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[206032] = {
 		oil_at_start = 1,
@@ -15457,9 +15018,7 @@ pg.ship_data_template = {
 			3031,
 			1034
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[206033] = {
 		oil_at_start = 1,
@@ -15506,9 +15065,7 @@ pg.ship_data_template = {
 			3031,
 			1034
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[206034] = {
 		oil_at_start = 1,
@@ -15555,9 +15112,7 @@ pg.ship_data_template = {
 			3031,
 			1034
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[207021] = {
 		oil_at_start = 1,
@@ -15601,9 +15156,7 @@ pg.ship_data_template = {
 			10330,
 			3011
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[207022] = {
 		oil_at_start = 1,
@@ -15647,9 +15200,7 @@ pg.ship_data_template = {
 			10330,
 			3011
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[207023] = {
 		oil_at_start = 1,
@@ -15694,9 +15245,7 @@ pg.ship_data_template = {
 			10330,
 			3011
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[207024] = {
 		oil_at_start = 1,
@@ -15741,9 +15290,7 @@ pg.ship_data_template = {
 			10330,
 			3011
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[207031] = {
 		oil_at_start = 1,
@@ -15785,9 +15332,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10340
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[207032] = {
 		oil_at_start = 1,
@@ -15829,9 +15374,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10340
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[207033] = {
 		oil_at_start = 1,
@@ -15874,9 +15417,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10340
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[207034] = {
 		oil_at_start = 1,
@@ -15919,9 +15460,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10340
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[213011] = {
 		oil_at_start = 1,
@@ -16251,6 +15790,181 @@ pg.ship_data_template = {
 			1
 		}
 	},
+	[301011] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 0,
+		oil_at_end = 3,
+		type = 1,
+		energy = 150,
+		name = "吹雪",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 5,
+		strengthen_id = 30101,
+		equip_id_2 = 0,
+		equip_id_1 = 31200,
+		group_type = 30101,
+		id = 301011,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10960
+		},
+		buff_list_display = {
+			10960,
+			22021
+		},
+		hide_buff_list = {}
+	},
+	[301012] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 5,
+		type = 1,
+		energy = 150,
+		name = "吹雪",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 5,
+		strengthen_id = 30101,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30101,
+		id = 301012,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10960,
+			22021
+		},
+		buff_list_display = {
+			10960,
+			22021
+		},
+		hide_buff_list = {}
+	},
+	[301013] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 7,
+		type = 1,
+		energy = 150,
+		name = "吹雪",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 5,
+		strengthen_id = 30101,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30101,
+		id = 301013,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10960,
+			22021
+		},
+		buff_list_display = {
+			10960,
+			22021
+		},
+		hide_buff_list = {}
+	},
+	[301014] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 9,
+		type = 1,
+		energy = 150,
+		name = "吹雪",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 30101,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30101,
+		id = 301014,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10960,
+			22022
+		},
+		buff_list_display = {
+			10960,
+			22022
+		},
+		hide_buff_list = {}
+	},
 	[301051] = {
 		oil_at_start = 1,
 		max_level = 70,
@@ -16293,9 +16007,7 @@ pg.ship_data_template = {
 			10940,
 			29111
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301052] = {
 		oil_at_start = 1,
@@ -16340,9 +16052,7 @@ pg.ship_data_template = {
 			10940,
 			29111
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301053] = {
 		oil_at_start = 1,
@@ -16387,9 +16097,7 @@ pg.ship_data_template = {
 			10940,
 			29111
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301054] = {
 		oil_at_start = 1,
@@ -16434,9 +16142,182 @@ pg.ship_data_template = {
 			10940,
 			29112
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
+	},
+	[301091] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 0,
+		oil_at_end = 2,
+		type = 1,
+		energy = 150,
+		name = "曉",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 5,
+		strengthen_id = 30109,
+		equip_id_2 = 35100,
+		equip_id_1 = 31200,
+		group_type = 30109,
+		id = 301091,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10770
+		},
+		buff_list_display = {
+			10770,
+			22071
+		},
+		hide_buff_list = {}
+	},
+	[301092] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 4,
+		type = 1,
+		energy = 150,
+		name = "曉",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 5,
+		strengthen_id = 30109,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30109,
+		id = 301092,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10770,
+			22071
+		},
+		buff_list_display = {
+			10770,
+			22071
+		},
+		hide_buff_list = {}
+	},
+	[301093] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 6,
+		type = 1,
+		energy = 150,
+		name = "曉",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 5,
+		strengthen_id = 30109,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30109,
+		id = 301093,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10770,
+			22071
+		},
+		buff_list_display = {
+			10770,
+			22071
+		},
+		hide_buff_list = {}
+	},
+	[301094] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 8,
+		type = 1,
+		energy = 150,
+		name = "曉",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 30109,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30109,
+		id = 301094,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10770,
+			22072
+		},
+		buff_list_display = {
+			10770,
+			22072
+		},
+		hide_buff_list = {}
 	},
 	[301131] = {
 		oil_at_start = 1,
@@ -16479,9 +16360,7 @@ pg.ship_data_template = {
 			1013,
 			22031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301132] = {
 		oil_at_start = 1,
@@ -16525,9 +16404,7 @@ pg.ship_data_template = {
 			1013,
 			22031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301133] = {
 		oil_at_start = 1,
@@ -16571,9 +16448,7 @@ pg.ship_data_template = {
 			1013,
 			22031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301134] = {
 		oil_at_start = 1,
@@ -16617,9 +16492,7 @@ pg.ship_data_template = {
 			1013,
 			22032
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301141] = {
 		oil_at_start = 1,
@@ -16662,9 +16535,7 @@ pg.ship_data_template = {
 			10360,
 			29121
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301142] = {
 		oil_at_start = 1,
@@ -16708,9 +16579,7 @@ pg.ship_data_template = {
 			10360,
 			29121
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301143] = {
 		oil_at_start = 1,
@@ -16754,9 +16623,7 @@ pg.ship_data_template = {
 			10360,
 			29121
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301144] = {
 		oil_at_start = 1,
@@ -16800,9 +16667,7 @@ pg.ship_data_template = {
 			10360,
 			29122
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301151] = {
 		oil_at_start = 1,
@@ -16845,9 +16710,7 @@ pg.ship_data_template = {
 			10370,
 			22031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301152] = {
 		oil_at_start = 1,
@@ -16891,9 +16754,7 @@ pg.ship_data_template = {
 			10370,
 			22031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301153] = {
 		oil_at_start = 1,
@@ -16937,9 +16798,7 @@ pg.ship_data_template = {
 			10370,
 			22031
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301154] = {
 		oil_at_start = 1,
@@ -16983,9 +16842,7 @@ pg.ship_data_template = {
 			10370,
 			22032
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301171] = {
 		oil_at_start = 1,
@@ -17030,9 +16887,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301172] = {
 		oil_at_start = 1,
@@ -17078,9 +16933,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301173] = {
 		oil_at_start = 1,
@@ -17126,9 +16979,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301174] = {
 		oil_at_start = 1,
@@ -17174,9 +17025,7 @@ pg.ship_data_template = {
 			2051,
 			22052
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301181] = {
 		oil_at_start = 1,
@@ -17219,9 +17068,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301182] = {
 		oil_at_start = 1,
@@ -17265,9 +17112,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301183] = {
 		oil_at_start = 1,
@@ -17311,9 +17156,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301184] = {
 		oil_at_start = 1,
@@ -17357,9 +17200,182 @@ pg.ship_data_template = {
 			2051,
 			22052
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
+	},
+	[301201] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 0,
+		oil_at_end = 3,
+		type = 1,
+		energy = 150,
+		name = "野分",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 5,
+		strengthen_id = 30120,
+		equip_id_2 = 35200,
+		equip_id_1 = 31200,
+		group_type = 30120,
+		id = 301201,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10780
+		},
+		buff_list_display = {
+			10780,
+			22051
+		},
+		hide_buff_list = {}
+	},
+	[301202] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 5,
+		type = 1,
+		energy = 150,
+		name = "野分",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 5,
+		strengthen_id = 30120,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30120,
+		id = 301202,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10780,
+			22051
+		},
+		buff_list_display = {
+			10780,
+			22051
+		},
+		hide_buff_list = {}
+	},
+	[301203] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 7,
+		type = 1,
+		energy = 150,
+		name = "野分",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 5,
+		strengthen_id = 30120,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30120,
+		id = 301203,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10780,
+			22051
+		},
+		buff_list_display = {
+			10780,
+			22051
+		},
+		hide_buff_list = {}
+	},
+	[301204] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 9,
+		type = 1,
+		energy = 150,
+		name = "野分",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 30120,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30120,
+		id = 301204,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			10780,
+			22052
+		},
+		buff_list_display = {
+			10780,
+			22052
+		},
+		hide_buff_list = {}
 	},
 	[301271] = {
 		oil_at_start = 1,
@@ -17404,9 +17420,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301272] = {
 		oil_at_start = 1,
@@ -17452,9 +17466,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301273] = {
 		oil_at_start = 1,
@@ -17500,9 +17512,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301274] = {
 		oil_at_start = 1,
@@ -17548,9 +17558,7 @@ pg.ship_data_template = {
 			2051,
 			22052
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301281] = {
 		oil_at_start = 1,
@@ -17595,9 +17603,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301282] = {
 		oil_at_start = 1,
@@ -17643,9 +17649,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301283] = {
 		oil_at_start = 1,
@@ -17691,9 +17695,7 @@ pg.ship_data_template = {
 			2051,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301284] = {
 		oil_at_start = 1,
@@ -17739,9 +17741,7 @@ pg.ship_data_template = {
 			2051,
 			22052
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301301] = {
 		oil_at_start = 1,
@@ -17782,11 +17782,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			10740,
+			11130,
 			22081
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301302] = {
 		oil_at_start = 1,
@@ -17828,11 +17827,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			10740,
+			11130,
 			22081
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301303] = {
 		oil_at_start = 1,
@@ -17874,11 +17872,10 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			10740,
+			11130,
 			22081
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301304] = {
 		oil_at_start = 1,
@@ -17920,11 +17917,189 @@ pg.ship_data_template = {
 		},
 		buff_list_display = {
 			10740,
+			11130,
 			22082
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
+	},
+	[301311] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 0,
+		oil_at_end = 1,
+		type = 1,
+		energy = 150,
+		name = "松風",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 5,
+		strengthen_id = 30131,
+		equip_id_2 = 0,
+		equip_id_1 = 31100,
+		group_type = 30131,
+		id = 301311,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			2001
+		},
+		buff_list_display = {
+			2001,
+			4071,
+			22081
+		},
+		hide_buff_list = {}
+	},
+	[301312] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 3,
+		type = 1,
+		energy = 150,
+		name = "松風",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 5,
+		strengthen_id = 30131,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30131,
+		id = 301312,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			2001,
+			22081
+		},
+		buff_list_display = {
+			2001,
+			4071,
+			22081
+		},
+		hide_buff_list = {}
+	},
+	[301313] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 5,
+		type = 1,
+		energy = 150,
+		name = "松風",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 5,
+		strengthen_id = 30131,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30131,
+		id = 301313,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			2001,
+			22081
+		},
+		buff_list_display = {
+			2001,
+			4071,
+			22081
+		},
+		hide_buff_list = {}
+	},
+	[301314] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 7,
+		type = 1,
+		energy = 150,
+		name = "松風",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 30131,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30131,
+		id = 301314,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			2001,
+			22082
+		},
+		buff_list_display = {
+			2001,
+			4071,
+			22082
+		},
+		hide_buff_list = {}
 	},
 	[301321] = {
 		oil_at_start = 1,
@@ -17967,9 +18142,7 @@ pg.ship_data_template = {
 			2001,
 			22011
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301322] = {
 		oil_at_start = 1,
@@ -18013,9 +18186,7 @@ pg.ship_data_template = {
 			2001,
 			22011
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301323] = {
 		oil_at_start = 1,
@@ -18059,9 +18230,7 @@ pg.ship_data_template = {
 			2001,
 			22011
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301324] = {
 		oil_at_start = 1,
@@ -18105,9 +18274,7 @@ pg.ship_data_template = {
 			2001,
 			22012
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301331] = {
 		oil_at_start = 1,
@@ -18150,9 +18317,7 @@ pg.ship_data_template = {
 			2001,
 			22011
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301332] = {
 		oil_at_start = 1,
@@ -18196,9 +18361,7 @@ pg.ship_data_template = {
 			2001,
 			22011
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301333] = {
 		oil_at_start = 1,
@@ -18242,9 +18405,7 @@ pg.ship_data_template = {
 			2001,
 			22011
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301334] = {
 		oil_at_start = 1,
@@ -18288,9 +18449,182 @@ pg.ship_data_template = {
 			2001,
 			22012
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
+	},
+	[301351] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 0,
+		oil_at_end = 1,
+		type = 1,
+		energy = 150,
+		name = "卯月",
+		can_get_proficency = 0,
+		star = 1,
+		star_max = 4,
+		strengthen_id = 30135,
+		equip_id_2 = 35100,
+		equip_id_1 = 31100,
+		group_type = 30135,
+		id = 301351,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			2001
+		},
+		buff_list_display = {
+			2001,
+			22011
+		},
+		hide_buff_list = {}
+	},
+	[301352] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 3,
+		type = 1,
+		energy = 150,
+		name = "卯月",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 4,
+		strengthen_id = 30135,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30135,
+		id = 301352,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			2001,
+			22011
+		},
+		buff_list_display = {
+			2001,
+			22011
+		},
+		hide_buff_list = {}
+	},
+	[301353] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 5,
+		type = 1,
+		energy = 150,
+		name = "卯月",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 4,
+		strengthen_id = 30135,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30135,
+		id = 301353,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			2001,
+			22011
+		},
+		buff_list_display = {
+			2001,
+			22011
+		},
+		hide_buff_list = {}
+	},
+	[301354] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 7,
+		type = 1,
+		energy = 150,
+		name = "卯月",
+		can_get_proficency = 1,
+		star = 4,
+		star_max = 4,
+		strengthen_id = 30135,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30135,
+		id = 301354,
+		equip_1 = {
+			1
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			2001,
+			22012
+		},
+		buff_list_display = {
+			2001,
+			22012
+		},
+		hide_buff_list = {}
 	},
 	[301611] = {
 		oil_at_start = 1,
@@ -18334,9 +18668,7 @@ pg.ship_data_template = {
 			4071,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301612] = {
 		oil_at_start = 1,
@@ -18381,9 +18713,7 @@ pg.ship_data_template = {
 			4071,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301613] = {
 		oil_at_start = 1,
@@ -18428,9 +18758,7 @@ pg.ship_data_template = {
 			4071,
 			22051
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[301614] = {
 		oil_at_start = 1,
@@ -18475,9 +18803,7 @@ pg.ship_data_template = {
 			4071,
 			22052
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[302011] = {
 		oil_at_start = 1,
@@ -18522,9 +18848,7 @@ pg.ship_data_template = {
 			2011,
 			22161
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[302012] = {
 		oil_at_start = 1,
@@ -18570,9 +18894,7 @@ pg.ship_data_template = {
 			2011,
 			22161
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[302013] = {
 		oil_at_start = 1,
@@ -18618,9 +18940,7 @@ pg.ship_data_template = {
 			2011,
 			22161
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[302014] = {
 		oil_at_start = 1,
@@ -18666,9 +18986,7 @@ pg.ship_data_template = {
 			2011,
 			22162
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[302041] = {
 		oil_at_start = 1,
@@ -18711,9 +19029,7 @@ pg.ship_data_template = {
 			2011,
 			22141
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[302042] = {
 		oil_at_start = 1,
@@ -18757,9 +19073,7 @@ pg.ship_data_template = {
 			2011,
 			22141
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[302043] = {
 		oil_at_start = 1,
@@ -18803,9 +19117,7 @@ pg.ship_data_template = {
 			2011,
 			22141
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[302044] = {
 		oil_at_start = 1,
@@ -18849,9 +19161,359 @@ pg.ship_data_template = {
 			2011,
 			22142
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
+	},
+	[302051] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 0,
+		oil_at_end = 3,
+		type = 2,
+		energy = 150,
+		name = "五十鈴",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 5,
+		strengthen_id = 30205,
+		equip_id_2 = 35200,
+		equip_id_1 = 32000,
+		group_type = 30205,
+		id = 302051,
+		equip_1 = {
+			2
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			4091
+		},
+		buff_list_display = {
+			4091,
+			22141
+		},
+		hide_buff_list = {}
+	},
+	[302052] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 5,
+		type = 2,
+		energy = 150,
+		name = "五十鈴",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 5,
+		strengthen_id = 30205,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30205,
+		id = 302052,
+		equip_1 = {
+			2
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			4091,
+			22141
+		},
+		buff_list_display = {
+			4091,
+			22141
+		},
+		hide_buff_list = {}
+	},
+	[302053] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 7,
+		type = 2,
+		energy = 150,
+		name = "五十鈴",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 5,
+		strengthen_id = 30205,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30205,
+		id = 302053,
+		equip_1 = {
+			1,
+			2
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			4091,
+			22141
+		},
+		buff_list_display = {
+			4091,
+			22141
+		},
+		hide_buff_list = {}
+	},
+	[302054] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 9,
+		type = 2,
+		energy = 150,
+		name = "五十鈴",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 30205,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30205,
+		id = 302054,
+		equip_1 = {
+			1,
+			2
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			4091,
+			22142
+		},
+		buff_list_display = {
+			4091,
+			22142
+		},
+		hide_buff_list = {}
+	},
+	[302091] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 0,
+		oil_at_end = 2,
+		type = 2,
+		energy = 150,
+		name = "阿武隈",
+		can_get_proficency = 0,
+		star = 1,
+		star_max = 4,
+		strengthen_id = 30209,
+		equip_id_2 = 35200,
+		equip_id_1 = 32000,
+		group_type = 30209,
+		id = 302091,
+		equip_1 = {
+			2
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			1011
+		},
+		buff_list_display = {
+			1011,
+			22141
+		},
+		hide_buff_list = {}
+	},
+	[302092] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 4,
+		type = 2,
+		energy = 150,
+		name = "阿武隈",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 4,
+		strengthen_id = 30209,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30209,
+		id = 302092,
+		equip_1 = {
+			2
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			1011,
+			22141
+		},
+		buff_list_display = {
+			1011,
+			22141
+		},
+		hide_buff_list = {}
+	},
+	[302093] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 6,
+		type = 2,
+		energy = 150,
+		name = "阿武隈",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 4,
+		strengthen_id = 30209,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30209,
+		id = 302093,
+		equip_1 = {
+			2
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			1011,
+			22141
+		},
+		buff_list_display = {
+			1011,
+			22141
+		},
+		hide_buff_list = {}
+	},
+	[302094] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 8,
+		type = 2,
+		energy = 150,
+		name = "阿武隈",
+		can_get_proficency = 1,
+		star = 4,
+		star_max = 4,
+		strengthen_id = 30209,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30209,
+		id = 302094,
+		equip_1 = {
+			2
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10,
+			14
+		},
+		equip_5 = {
+			10,
+			14
+		},
+		airassist_time = {},
+		buff_list = {
+			1011,
+			22142
+		},
+		buff_list_display = {
+			1011,
+			22142
+		},
+		hide_buff_list = {}
 	},
 	[303011] = {
 		oil_at_start = 1,
@@ -18892,9 +19554,7 @@ pg.ship_data_template = {
 			2011,
 			22211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303012] = {
 		oil_at_start = 1,
@@ -18936,9 +19596,7 @@ pg.ship_data_template = {
 			2011,
 			22211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303013] = {
 		oil_at_start = 1,
@@ -18980,9 +19638,7 @@ pg.ship_data_template = {
 			2011,
 			22211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303014] = {
 		oil_at_start = 1,
@@ -19024,9 +19680,7 @@ pg.ship_data_template = {
 			2011,
 			22212
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303021] = {
 		oil_at_start = 1,
@@ -19067,9 +19721,7 @@ pg.ship_data_template = {
 			2011,
 			22211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303022] = {
 		oil_at_start = 1,
@@ -19111,9 +19763,7 @@ pg.ship_data_template = {
 			2011,
 			22211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303023] = {
 		oil_at_start = 1,
@@ -19155,9 +19805,7 @@ pg.ship_data_template = {
 			2011,
 			22211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303024] = {
 		oil_at_start = 1,
@@ -19199,9 +19847,7 @@ pg.ship_data_template = {
 			2011,
 			22212
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303031] = {
 		oil_at_start = 1,
@@ -19242,9 +19888,7 @@ pg.ship_data_template = {
 			2011,
 			22221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303032] = {
 		oil_at_start = 1,
@@ -19286,9 +19930,7 @@ pg.ship_data_template = {
 			2011,
 			22221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303033] = {
 		oil_at_start = 1,
@@ -19330,9 +19972,7 @@ pg.ship_data_template = {
 			2011,
 			22221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303034] = {
 		oil_at_start = 1,
@@ -19374,9 +20014,7 @@ pg.ship_data_template = {
 			2011,
 			22222
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303041] = {
 		oil_at_start = 1,
@@ -19417,9 +20055,7 @@ pg.ship_data_template = {
 			2011,
 			22221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303042] = {
 		oil_at_start = 1,
@@ -19461,9 +20097,7 @@ pg.ship_data_template = {
 			2011,
 			22221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303043] = {
 		oil_at_start = 1,
@@ -19505,9 +20139,7 @@ pg.ship_data_template = {
 			2011,
 			22221
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303044] = {
 		oil_at_start = 1,
@@ -19549,9 +20181,7 @@ pg.ship_data_template = {
 			2011,
 			22222
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303071] = {
 		oil_at_start = 1,
@@ -19592,9 +20222,7 @@ pg.ship_data_template = {
 			4041,
 			22231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303072] = {
 		oil_at_start = 1,
@@ -19636,9 +20264,7 @@ pg.ship_data_template = {
 			4041,
 			22231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303073] = {
 		oil_at_start = 1,
@@ -19680,9 +20306,7 @@ pg.ship_data_template = {
 			4041,
 			22231
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303074] = {
 		oil_at_start = 1,
@@ -19724,9 +20348,174 @@ pg.ship_data_template = {
 			4041,
 			22232
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
+	},
+	[303081] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 0,
+		oil_at_end = 4,
+		type = 3,
+		energy = 150,
+		name = "那智",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 5,
+		strengthen_id = 30308,
+		equip_id_2 = 35100,
+		equip_id_1 = 33000,
+		group_type = 30308,
+		id = 303081,
+		equip_1 = {
+			3
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			4041
+		},
+		buff_list_display = {
+			4041,
+			22231
+		},
+		hide_buff_list = {}
+	},
+	[303082] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 6,
+		type = 3,
+		energy = 150,
+		name = "那智",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 5,
+		strengthen_id = 30308,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30308,
+		id = 303082,
+		equip_1 = {
+			3
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			4041,
+			22231
+		},
+		buff_list_display = {
+			4041,
+			22231
+		},
+		hide_buff_list = {}
+	},
+	[303083] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 8,
+		type = 3,
+		energy = 150,
+		name = "那智",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 5,
+		strengthen_id = 30308,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30308,
+		id = 303083,
+		equip_1 = {
+			3
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			4041,
+			22231
+		},
+		buff_list_display = {
+			4041,
+			22231
+		},
+		hide_buff_list = {}
+	},
+	[303084] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 10,
+		type = 3,
+		energy = 150,
+		name = "那智",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 30308,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30308,
+		id = 303084,
+		equip_1 = {
+			3
+		},
+		equip_2 = {
+			5
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			4041,
+			22232
+		},
+		buff_list_display = {
+			4041,
+			22232
+		},
+		hide_buff_list = {}
 	},
 	[303111] = {
 		oil_at_start = 1,
@@ -19769,9 +20558,7 @@ pg.ship_data_template = {
 			2051,
 			22261
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303112] = {
 		oil_at_start = 1,
@@ -19815,9 +20602,7 @@ pg.ship_data_template = {
 			2051,
 			22261
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303113] = {
 		oil_at_start = 1,
@@ -19861,9 +20646,7 @@ pg.ship_data_template = {
 			2051,
 			22261
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[303114] = {
 		oil_at_start = 1,
@@ -19907,9 +20690,7 @@ pg.ship_data_template = {
 			2051,
 			22262
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[304021] = {
 		oil_at_start = 1,
@@ -19950,9 +20731,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10930
 		},
-		hide_buff_list = {
-			54
-		}
+		hide_buff_list = {}
 	},
 	[304022] = {
 		oil_at_start = 1,
@@ -19994,7 +20773,6 @@ pg.ship_data_template = {
 			10930
 		},
 		hide_buff_list = {
-			54,
 			1
 		}
 	},
@@ -20038,7 +20816,6 @@ pg.ship_data_template = {
 			10930
 		},
 		hide_buff_list = {
-			54,
 			1
 		}
 	},
@@ -20082,7 +20859,6 @@ pg.ship_data_template = {
 			10930
 		},
 		hide_buff_list = {
-			54,
 			2
 		}
 	},
@@ -20123,11 +20899,10 @@ pg.ship_data_template = {
 			2071
 		},
 		buff_list_display = {
-			2071
+			2071,
+			10830
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[305012] = {
 		oil_at_start = 1,
@@ -20166,10 +20941,10 @@ pg.ship_data_template = {
 			2071
 		},
 		buff_list_display = {
-			2071
+			2071,
+			10830
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -20210,10 +20985,10 @@ pg.ship_data_template = {
 			2071
 		},
 		buff_list_display = {
-			2071
+			2071,
+			10830
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -20254,10 +21029,10 @@ pg.ship_data_template = {
 			2071
 		},
 		buff_list_display = {
-			2071
+			2071,
+			10830
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -20298,11 +21073,10 @@ pg.ship_data_template = {
 			2071
 		},
 		buff_list_display = {
-			2071
+			2071,
+			10830
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[305022] = {
 		oil_at_start = 1,
@@ -20341,10 +21115,10 @@ pg.ship_data_template = {
 			2071
 		},
 		buff_list_display = {
-			2071
+			2071,
+			10830
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -20385,10 +21159,10 @@ pg.ship_data_template = {
 			2071
 		},
 		buff_list_display = {
-			2071
+			2071,
+			10830
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -20429,10 +21203,358 @@ pg.ship_data_template = {
 			2071
 		},
 		buff_list_display = {
+			2071,
+			10830
+		},
+		hide_buff_list = {
+			2
+		}
+	},
+	[305031] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 36300,
+		oil_at_end = 7,
+		type = 5,
+		energy = 150,
+		name = "伊勢",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 5,
+		strengthen_id = 30503,
+		equip_id_2 = 0,
+		equip_id_1 = 34000,
+		group_type = 30503,
+		id = 305031,
+		equip_1 = {
+			4
+		},
+		equip_2 = {
+			1,
+			2
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			2071
+		},
+		buff_list_display = {
+			2071
+		},
+		hide_buff_list = {}
+	},
+	[305032] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 9,
+		type = 5,
+		energy = 150,
+		name = "伊勢",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 5,
+		strengthen_id = 30503,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30503,
+		id = 305032,
+		equip_1 = {
+			4
+		},
+		equip_2 = {
+			1,
+			2
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			2071
+		},
+		buff_list_display = {
 			2071
 		},
 		hide_buff_list = {
-			55,
+			1
+		}
+	},
+	[305033] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 11,
+		type = 5,
+		energy = 150,
+		name = "伊勢",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 5,
+		strengthen_id = 30503,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30503,
+		id = 305033,
+		equip_1 = {
+			4
+		},
+		equip_2 = {
+			1,
+			2
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			2071
+		},
+		buff_list_display = {
+			2071
+		},
+		hide_buff_list = {
+			1
+		}
+	},
+	[305034] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 13,
+		type = 5,
+		energy = 150,
+		name = "伊勢",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 30503,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30503,
+		id = 305034,
+		equip_1 = {
+			4
+		},
+		equip_2 = {
+			1,
+			2
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			2071
+		},
+		buff_list_display = {
+			2071
+		},
+		hide_buff_list = {
+			2
+		}
+	},
+	[305041] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 36300,
+		oil_at_end = 7,
+		type = 5,
+		energy = 150,
+		name = "日向",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 5,
+		strengthen_id = 30504,
+		equip_id_2 = 0,
+		equip_id_1 = 34000,
+		group_type = 30504,
+		id = 305041,
+		equip_1 = {
+			4
+		},
+		equip_2 = {
+			1,
+			2
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			1005,
+			2071
+		},
+		buff_list_display = {
+			1005,
+			2071
+		},
+		hide_buff_list = {}
+	},
+	[305042] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 9,
+		type = 5,
+		energy = 150,
+		name = "日向",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 5,
+		strengthen_id = 30504,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30504,
+		id = 305042,
+		equip_1 = {
+			4
+		},
+		equip_2 = {
+			1,
+			2
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			1005,
+			2071
+		},
+		buff_list_display = {
+			1005,
+			2071
+		},
+		hide_buff_list = {
+			1
+		}
+	},
+	[305043] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 11,
+		type = 5,
+		energy = 150,
+		name = "日向",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 5,
+		strengthen_id = 30504,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30504,
+		id = 305043,
+		equip_1 = {
+			4
+		},
+		equip_2 = {
+			1,
+			2
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			1005,
+			2071
+		},
+		buff_list_display = {
+			1005,
+			2071
+		},
+		hide_buff_list = {
+			1
+		}
+	},
+	[305044] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 13,
+		type = 5,
+		energy = 150,
+		name = "日向",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 30504,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30504,
+		id = 305044,
+		equip_1 = {
+			4
+		},
+		equip_2 = {
+			1,
+			2
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {},
+		buff_list = {
+			1005,
+			2071
+		},
+		buff_list_display = {
+			1005,
+			2071
+		},
+		hide_buff_list = {
 			2
 		}
 	},
@@ -20477,9 +21599,7 @@ pg.ship_data_template = {
 			10910,
 			10920
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[305112] = {
 		oil_at_start = 1,
@@ -20523,7 +21643,6 @@ pg.ship_data_template = {
 			10920
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -20569,7 +21688,6 @@ pg.ship_data_template = {
 			10920
 		},
 		hide_buff_list = {
-			55,
 			1
 		}
 	},
@@ -20615,9 +21733,194 @@ pg.ship_data_template = {
 			10920
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
+	},
+	[306031] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 38000,
+		oil_at_end = 5,
+		type = 6,
+		energy = 150,
+		name = "鳳翔",
+		can_get_proficency = 0,
+		star = 2,
+		star_max = 5,
+		strengthen_id = 30603,
+		equip_id_2 = 37000,
+		equip_id_1 = 32000,
+		group_type = 30603,
+		id = 306031,
+		equip_1 = {
+			2
+		},
+		equip_2 = {
+			7
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10,
+			15
+		},
+		equip_5 = {
+			10,
+			15
+		},
+		airassist_time = {
+			20
+		},
+		buff_list = {
+			10170,
+			3041
+		},
+		buff_list_display = {
+			10170,
+			3041
+		},
+		hide_buff_list = {}
+	},
+	[306032] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 7,
+		type = 6,
+		energy = 150,
+		name = "鳳翔",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 5,
+		strengthen_id = 30603,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30603,
+		id = 306032,
+		equip_1 = {
+			2
+		},
+		equip_2 = {
+			7
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10,
+			15
+		},
+		equip_5 = {
+			10,
+			15
+		},
+		airassist_time = {
+			21
+		},
+		buff_list = {
+			10170,
+			3041
+		},
+		buff_list_display = {
+			10170,
+			3041
+		},
+		hide_buff_list = {}
+	},
+	[306033] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 9,
+		type = 6,
+		energy = 150,
+		name = "鳳翔",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 5,
+		strengthen_id = 30603,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30603,
+		id = 306033,
+		equip_1 = {
+			2
+		},
+		equip_2 = {
+			7
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10,
+			15
+		},
+		equip_5 = {
+			10,
+			15
+		},
+		airassist_time = {
+			21,
+			21
+		},
+		buff_list = {
+			10170,
+			3041
+		},
+		buff_list_display = {
+			10170,
+			3041
+		},
+		hide_buff_list = {}
+	},
+	[306034] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 11,
+		type = 6,
+		energy = 150,
+		name = "鳳翔",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 30603,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30603,
+		id = 306034,
+		equip_1 = {
+			2
+		},
+		equip_2 = {
+			7
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10,
+			15
+		},
+		equip_5 = {
+			10,
+			15
+		},
+		airassist_time = {
+			22,
+			22
+		},
+		buff_list = {
+			10170,
+			3041
+		},
+		buff_list_display = {
+			10170,
+			3041
+		},
+		hide_buff_list = {}
 	},
 	[306051] = {
 		oil_at_start = 1,
@@ -20659,11 +21962,10 @@ pg.ship_data_template = {
 			3031
 		},
 		buff_list_display = {
-			3031
+			3031,
+			3041
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[306052] = {
 		oil_at_start = 1,
@@ -20705,11 +22007,10 @@ pg.ship_data_template = {
 			3031
 		},
 		buff_list_display = {
-			3031
+			3031,
+			3041
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[306053] = {
 		oil_at_start = 1,
@@ -20752,11 +22053,10 @@ pg.ship_data_template = {
 			3031
 		},
 		buff_list_display = {
-			3031
+			3031,
+			3041
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[306054] = {
 		oil_at_start = 1,
@@ -20799,11 +22099,10 @@ pg.ship_data_template = {
 			3031
 		},
 		buff_list_display = {
-			3031
+			3031,
+			3041
 		},
-		hide_buff_list = {
-			56
-		}
+		hide_buff_list = {}
 	},
 	[307011] = {
 		oil_at_start = 1,
@@ -20847,9 +22146,7 @@ pg.ship_data_template = {
 			10420,
 			10430
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307012] = {
 		oil_at_start = 1,
@@ -20893,9 +22190,7 @@ pg.ship_data_template = {
 			10420,
 			10430
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307013] = {
 		oil_at_start = 1,
@@ -20940,9 +22235,7 @@ pg.ship_data_template = {
 			10420,
 			10430
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307014] = {
 		oil_at_start = 1,
@@ -20987,9 +22280,7 @@ pg.ship_data_template = {
 			10420,
 			10430
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307021] = {
 		oil_at_start = 1,
@@ -21033,9 +22324,7 @@ pg.ship_data_template = {
 			10420,
 			10440
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307022] = {
 		oil_at_start = 1,
@@ -21079,9 +22368,7 @@ pg.ship_data_template = {
 			10420,
 			10440
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307023] = {
 		oil_at_start = 1,
@@ -21126,9 +22413,7 @@ pg.ship_data_template = {
 			10420,
 			10440
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307024] = {
 		oil_at_start = 1,
@@ -21173,9 +22458,7 @@ pg.ship_data_template = {
 			10420,
 			10440
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307031] = {
 		oil_at_start = 1,
@@ -21219,9 +22502,7 @@ pg.ship_data_template = {
 			3021,
 			10460
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307032] = {
 		oil_at_start = 1,
@@ -21265,9 +22546,7 @@ pg.ship_data_template = {
 			3021,
 			10460
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307033] = {
 		oil_at_start = 1,
@@ -21312,9 +22591,7 @@ pg.ship_data_template = {
 			3021,
 			10460
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307034] = {
 		oil_at_start = 1,
@@ -21359,9 +22636,7 @@ pg.ship_data_template = {
 			3021,
 			10460
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307041] = {
 		oil_at_start = 1,
@@ -21405,9 +22680,7 @@ pg.ship_data_template = {
 			10450,
 			10470
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307042] = {
 		oil_at_start = 1,
@@ -21451,9 +22724,7 @@ pg.ship_data_template = {
 			10450,
 			10470
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307043] = {
 		oil_at_start = 1,
@@ -21498,9 +22769,7 @@ pg.ship_data_template = {
 			10450,
 			10470
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[307044] = {
 		oil_at_start = 1,
@@ -21545,8 +22814,454 @@ pg.ship_data_template = {
 			10450,
 			10470
 		},
+		hide_buff_list = {}
+	},
+	[307051] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 38000,
+		oil_at_end = 7,
+		type = 7,
+		energy = 150,
+		name = "翔鶴",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 6,
+		strengthen_id = 30705,
+		equip_id_2 = 39000,
+		equip_id_1 = 37100,
+		group_type = 30705,
+		id = 307051,
+		equip_1 = {
+			7
+		},
+		equip_2 = {
+			9
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {
+			23
+		},
+		buff_list = {
+			10790,
+			10810
+		},
+		buff_list_display = {
+			10790,
+			10810
+		},
+		hide_buff_list = {}
+	},
+	[307052] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 9,
+		type = 7,
+		energy = 150,
+		name = "翔鶴",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 6,
+		strengthen_id = 30705,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30705,
+		id = 307052,
+		equip_1 = {
+			7
+		},
+		equip_2 = {
+			9
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {
+			24
+		},
+		buff_list = {
+			10790,
+			10810
+		},
+		buff_list_display = {
+			10790,
+			10810
+		},
+		hide_buff_list = {}
+	},
+	[307053] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 11,
+		type = 7,
+		energy = 150,
+		name = "翔鶴",
+		can_get_proficency = 0,
+		star = 5,
+		star_max = 6,
+		strengthen_id = 30705,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30705,
+		id = 307053,
+		equip_1 = {
+			7
+		},
+		equip_2 = {
+			9
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {
+			24,
+			24
+		},
+		buff_list = {
+			10790,
+			10810
+		},
+		buff_list_display = {
+			10790,
+			10810
+		},
+		hide_buff_list = {}
+	},
+	[307054] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 13,
+		type = 7,
+		energy = 150,
+		name = "翔鶴",
+		can_get_proficency = 1,
+		star = 6,
+		star_max = 6,
+		strengthen_id = 30705,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30705,
+		id = 307054,
+		equip_1 = {
+			7
+		},
+		equip_2 = {
+			9
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {
+			25,
+			25
+		},
+		buff_list = {
+			10790,
+			10810
+		},
+		buff_list_display = {
+			10790,
+			10810
+		},
+		hide_buff_list = {}
+	},
+	[307061] = {
+		oil_at_start = 1,
+		max_level = 70,
+		equip_id_3 = 38000,
+		oil_at_end = 7,
+		type = 7,
+		energy = 150,
+		name = "瑞鶴",
+		can_get_proficency = 0,
+		star = 3,
+		star_max = 6,
+		strengthen_id = 30706,
+		equip_id_2 = 39000,
+		equip_id_1 = 37100,
+		group_type = 30706,
+		id = 307061,
+		equip_1 = {
+			7
+		},
+		equip_2 = {
+			9
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {
+			23
+		},
+		buff_list = {
+			10800,
+			10820
+		},
+		buff_list_display = {
+			10800,
+			10820
+		},
+		hide_buff_list = {}
+	},
+	[307062] = {
+		oil_at_start = 1,
+		max_level = 80,
+		equip_id_3 = 0,
+		oil_at_end = 9,
+		type = 7,
+		energy = 150,
+		name = "瑞鶴",
+		can_get_proficency = 0,
+		star = 4,
+		star_max = 6,
+		strengthen_id = 30706,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30706,
+		id = 307062,
+		equip_1 = {
+			7
+		},
+		equip_2 = {
+			9
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {
+			24
+		},
+		buff_list = {
+			10800,
+			10820
+		},
+		buff_list_display = {
+			10800,
+			10820
+		},
+		hide_buff_list = {}
+	},
+	[307063] = {
+		oil_at_start = 1,
+		max_level = 90,
+		equip_id_3 = 0,
+		oil_at_end = 11,
+		type = 7,
+		energy = 150,
+		name = "瑞鶴",
+		can_get_proficency = 0,
+		star = 5,
+		star_max = 6,
+		strengthen_id = 30706,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30706,
+		id = 307063,
+		equip_1 = {
+			7
+		},
+		equip_2 = {
+			9
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {
+			24,
+			24
+		},
+		buff_list = {
+			10800,
+			10820
+		},
+		buff_list_display = {
+			10800,
+			10820
+		},
+		hide_buff_list = {}
+	},
+	[307064] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 13,
+		type = 7,
+		energy = 150,
+		name = "瑞鶴",
+		can_get_proficency = 1,
+		star = 6,
+		star_max = 6,
+		strengthen_id = 30706,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30706,
+		id = 307064,
+		equip_1 = {
+			7
+		},
+		equip_2 = {
+			9
+		},
+		equip_3 = {
+			8
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {
+			25,
+			25
+		},
+		buff_list = {
+			10800,
+			10820
+		},
+		buff_list_display = {
+			10800,
+			10820
+		},
+		hide_buff_list = {}
+	},
+	[310014] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 13,
+		type = 10,
+		energy = 150,
+		name = "扶桑.改",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 31001,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30501,
+		id = 310014,
+		equip_1 = {
+			4
+		},
+		equip_2 = {
+			12
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {
+			26
+		},
+		buff_list = {
+			2071,
+			10830
+		},
+		buff_list_display = {
+			2071,
+			10830
+		},
 		hide_buff_list = {
-			57
+			1
+		}
+	},
+	[310024] = {
+		oil_at_start = 1,
+		max_level = 100,
+		equip_id_3 = 0,
+		oil_at_end = 13,
+		type = 10,
+		energy = 150,
+		name = "山城.改",
+		can_get_proficency = 1,
+		star = 5,
+		star_max = 5,
+		strengthen_id = 31002,
+		equip_id_2 = 0,
+		equip_id_1 = 0,
+		group_type = 30502,
+		id = 310024,
+		equip_1 = {
+			4
+		},
+		equip_2 = {
+			12
+		},
+		equip_3 = {
+			6
+		},
+		equip_4 = {
+			10
+		},
+		equip_5 = {
+			10
+		},
+		airassist_time = {
+			26
+		},
+		buff_list = {
+			2071,
+			10830
+		},
+		buff_list_display = {
+			2071,
+			10830
+		},
+		hide_buff_list = {
+			1
 		}
 	},
 	[401011] = {
@@ -21590,9 +23305,7 @@ pg.ship_data_template = {
 			10380,
 			29171
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[401012] = {
 		oil_at_start = 1,
@@ -21636,9 +23349,7 @@ pg.ship_data_template = {
 			10380,
 			29171
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[401013] = {
 		oil_at_start = 1,
@@ -21682,9 +23393,7 @@ pg.ship_data_template = {
 			10380,
 			29171
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[401014] = {
 		oil_at_start = 1,
@@ -21728,9 +23437,7 @@ pg.ship_data_template = {
 			10380,
 			29172
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[401231] = {
 		oil_at_start = 1,
@@ -21775,9 +23482,7 @@ pg.ship_data_template = {
 			11320,
 			29201
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[401232] = {
 		oil_at_start = 1,
@@ -21823,9 +23528,7 @@ pg.ship_data_template = {
 			11320,
 			29201
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[401233] = {
 		oil_at_start = 1,
@@ -21871,9 +23574,7 @@ pg.ship_data_template = {
 			11320,
 			29201
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[401234] = {
 		oil_at_start = 1,
@@ -21919,9 +23620,7 @@ pg.ship_data_template = {
 			11320,
 			29202
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[402011] = {
 		oil_at_start = 1,
@@ -21964,9 +23663,7 @@ pg.ship_data_template = {
 			1032,
 			23111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402012] = {
 		oil_at_start = 1,
@@ -22010,9 +23707,7 @@ pg.ship_data_template = {
 			1032,
 			23111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402013] = {
 		oil_at_start = 1,
@@ -22056,9 +23751,7 @@ pg.ship_data_template = {
 			1032,
 			23111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402014] = {
 		oil_at_start = 1,
@@ -22102,9 +23795,7 @@ pg.ship_data_template = {
 			1032,
 			23112
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402021] = {
 		oil_at_start = 1,
@@ -22147,9 +23838,7 @@ pg.ship_data_template = {
 			2011,
 			23111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402022] = {
 		oil_at_start = 1,
@@ -22193,9 +23882,7 @@ pg.ship_data_template = {
 			2011,
 			23111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402023] = {
 		oil_at_start = 1,
@@ -22239,9 +23926,7 @@ pg.ship_data_template = {
 			2011,
 			23111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402024] = {
 		oil_at_start = 1,
@@ -22285,9 +23970,7 @@ pg.ship_data_template = {
 			2011,
 			23112
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402031] = {
 		oil_at_start = 1,
@@ -22330,9 +24013,7 @@ pg.ship_data_template = {
 			2011,
 			23111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402032] = {
 		oil_at_start = 1,
@@ -22376,9 +24057,7 @@ pg.ship_data_template = {
 			2011,
 			23111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402033] = {
 		oil_at_start = 1,
@@ -22422,9 +24101,7 @@ pg.ship_data_template = {
 			2011,
 			23111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402034] = {
 		oil_at_start = 1,
@@ -22468,9 +24145,7 @@ pg.ship_data_template = {
 			2011,
 			23112
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402041] = {
 		oil_at_start = 1,
@@ -22513,9 +24188,7 @@ pg.ship_data_template = {
 			1052,
 			23121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402042] = {
 		oil_at_start = 1,
@@ -22559,9 +24232,7 @@ pg.ship_data_template = {
 			1052,
 			23121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402043] = {
 		oil_at_start = 1,
@@ -22605,9 +24276,7 @@ pg.ship_data_template = {
 			1052,
 			23121
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[402044] = {
 		oil_at_start = 1,
@@ -22651,9 +24320,7 @@ pg.ship_data_template = {
 			1052,
 			23122
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[403031] = {
 		oil_at_start = 1,
@@ -22694,9 +24361,7 @@ pg.ship_data_template = {
 			10390,
 			23211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[403032] = {
 		oil_at_start = 1,
@@ -22738,9 +24403,7 @@ pg.ship_data_template = {
 			10390,
 			23211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[403033] = {
 		oil_at_start = 1,
@@ -22782,9 +24445,7 @@ pg.ship_data_template = {
 			10390,
 			23211
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[403034] = {
 		oil_at_start = 1,
@@ -22826,9 +24487,7 @@ pg.ship_data_template = {
 			10390,
 			23212
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[502021] = {
 		oil_at_start = 1,
@@ -22873,9 +24532,7 @@ pg.ship_data_template = {
 			10500,
 			24111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[502022] = {
 		oil_at_start = 1,
@@ -22921,9 +24578,7 @@ pg.ship_data_template = {
 			10500,
 			24111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[502023] = {
 		oil_at_start = 1,
@@ -22969,9 +24624,7 @@ pg.ship_data_template = {
 			10500,
 			24111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[502024] = {
 		oil_at_start = 1,
@@ -23017,9 +24670,7 @@ pg.ship_data_template = {
 			10500,
 			24112
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[502031] = {
 		oil_at_start = 1,
@@ -23064,9 +24715,7 @@ pg.ship_data_template = {
 			10500,
 			24111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[502032] = {
 		oil_at_start = 1,
@@ -23112,9 +24761,7 @@ pg.ship_data_template = {
 			10500,
 			24111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[502033] = {
 		oil_at_start = 1,
@@ -23160,9 +24807,7 @@ pg.ship_data_template = {
 			10500,
 			24111
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[502034] = {
 		oil_at_start = 1,
@@ -23208,9 +24853,7 @@ pg.ship_data_template = {
 			10500,
 			24112
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[702011] = {
 		oil_at_start = 1,
@@ -23253,9 +24896,7 @@ pg.ship_data_template = {
 			10510,
 			29191
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[702012] = {
 		oil_at_start = 1,
@@ -23299,9 +24940,7 @@ pg.ship_data_template = {
 			10510,
 			29191
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[702013] = {
 		oil_at_start = 1,
@@ -23345,9 +24984,7 @@ pg.ship_data_template = {
 			10510,
 			29191
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[702014] = {
 		oil_at_start = 1,
@@ -23391,9 +25028,7 @@ pg.ship_data_template = {
 			10510,
 			29192
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[900004] = {
 		oil_at_start = 0,
@@ -23631,9 +25266,7 @@ pg.ship_data_template = {
 			10730,
 			29111
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[900041] = {
 		oil_at_start = 1,
@@ -23678,9 +25311,7 @@ pg.ship_data_template = {
 			2051,
 			22261
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[900042] = {
 		oil_at_start = 1,
@@ -23725,9 +25356,7 @@ pg.ship_data_template = {
 			2051,
 			22261
 		},
-		hide_buff_list = {
-			53
-		}
+		hide_buff_list = {}
 	},
 	[900043] = {
 		oil_at_start = 1,
@@ -23773,9 +25402,7 @@ pg.ship_data_template = {
 			10790,
 			10810
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[900044] = {
 		oil_at_start = 1,
@@ -23821,9 +25448,7 @@ pg.ship_data_template = {
 			10800,
 			10820
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[900045] = {
 		oil_at_start = 1,
@@ -23866,9 +25491,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10310
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[900046] = {
 		oil_at_start = 1,
@@ -23911,9 +25534,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10310
 		},
-		hide_buff_list = {
-			55
-		}
+		hide_buff_list = {}
 	},
 	[900047] = {
 		oil_at_start = 1,
@@ -23958,9 +25579,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10340
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[900048] = {
 		oil_at_start = 1,
@@ -24004,9 +25623,7 @@ pg.ship_data_template = {
 			10620,
 			22072
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[900049] = {
 		oil_at_start = 1,
@@ -24050,9 +25667,7 @@ pg.ship_data_template = {
 			10630,
 			22072
 		},
-		hide_buff_list = {
-			51
-		}
+		hide_buff_list = {}
 	},
 	[900132] = {
 		oil_at_start = 1,
@@ -24096,9 +25711,7 @@ pg.ship_data_template = {
 			10070,
 			20122
 		},
-		hide_buff_list = {
-			52
-		}
+		hide_buff_list = {}
 	},
 	[900133] = {
 		oil_at_start = 1,
@@ -24141,7 +25754,6 @@ pg.ship_data_template = {
 			10990
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -24186,7 +25798,6 @@ pg.ship_data_template = {
 			11010
 		},
 		hide_buff_list = {
-			55,
 			2
 		}
 	},
@@ -24231,9 +25842,7 @@ pg.ship_data_template = {
 		buff_list_display = {
 			10200
 		},
-		hide_buff_list = {
-			57
-		}
+		hide_buff_list = {}
 	},
 	[900161] = {
 		oil_at_start = 0,
@@ -24375,6 +25984,10 @@ pg.ship_data_template = {
 		101152,
 		101153,
 		101154,
+		101161,
+		101162,
+		101163,
+		101164,
 		101171,
 		101172,
 		101173,
@@ -24683,10 +26296,18 @@ pg.ship_data_template = {
 		213022,
 		213023,
 		213024,
+		301011,
+		301012,
+		301013,
+		301014,
 		301051,
 		301052,
 		301053,
 		301054,
+		301091,
+		301092,
+		301093,
+		301094,
 		301131,
 		301132,
 		301133,
@@ -24707,6 +26328,10 @@ pg.ship_data_template = {
 		301182,
 		301183,
 		301184,
+		301201,
+		301202,
+		301203,
+		301204,
 		301271,
 		301272,
 		301273,
@@ -24719,6 +26344,10 @@ pg.ship_data_template = {
 		301302,
 		301303,
 		301304,
+		301311,
+		301312,
+		301313,
+		301314,
 		301321,
 		301322,
 		301323,
@@ -24727,6 +26356,10 @@ pg.ship_data_template = {
 		301332,
 		301333,
 		301334,
+		301351,
+		301352,
+		301353,
+		301354,
 		301611,
 		301612,
 		301613,
@@ -24739,6 +26372,14 @@ pg.ship_data_template = {
 		302042,
 		302043,
 		302044,
+		302051,
+		302052,
+		302053,
+		302054,
+		302091,
+		302092,
+		302093,
+		302094,
 		303011,
 		303012,
 		303013,
@@ -24759,6 +26400,10 @@ pg.ship_data_template = {
 		303072,
 		303073,
 		303074,
+		303081,
+		303082,
+		303083,
+		303084,
 		303111,
 		303112,
 		303113,
@@ -24775,10 +26420,22 @@ pg.ship_data_template = {
 		305022,
 		305023,
 		305024,
+		305031,
+		305032,
+		305033,
+		305034,
+		305041,
+		305042,
+		305043,
+		305044,
 		305111,
 		305112,
 		305113,
 		305114,
+		306031,
+		306032,
+		306033,
+		306034,
 		306051,
 		306052,
 		306053,
@@ -24799,6 +26456,16 @@ pg.ship_data_template = {
 		307042,
 		307043,
 		307044,
+		307051,
+		307052,
+		307053,
+		307054,
+		307061,
+		307062,
+		307063,
+		307064,
+		310014,
+		310024,
 		401011,
 		401012,
 		401013,

@@ -371,7 +371,7 @@ return {
 			side = 0,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "噢噢噢！感觉兴致都上来了！",
+			say = "喔喔喔！感觉兴致都上来了！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

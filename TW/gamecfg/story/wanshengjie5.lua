@@ -10,7 +10,7 @@ return {
 			mode = 1,
 			sequence = {
 				{
-					"“魔女们”的万圣夜\n\n<size=45>其五　Trick or treat！</size>",
+					"“魔女們”的萬聖夜\n\n<size=45>其五　Trick or treat！</size>",
 					1
 				}
 			}
@@ -41,7 +41,7 @@ return {
 		{
 			actorShadow = true,
 			side = 0,
-			actorName = "{namecode:6}&克利夫兰",
+			actorName = "{namecode:6}&克里夫蘭",
 			actor = 301051,
 			dir = -1,
 			hideOther = true,
@@ -67,7 +67,7 @@ return {
 			side = 2,
 			dir = 1,
 			actorName = "{namecode:95}",
-			say = "给~顺便尝尝我烤的南瓜派吧",
+			say = "給~順便嘗嘗我烤的南瓜派吧",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -78,7 +78,7 @@ return {
 			}
 		},
 		{
-			say = "真美味，南瓜的香甜完全被诱发出来了！",
+			say = "真美味，南瓜的香甜完全被誘發出來了！",
 			side = 0,
 			nameColor = "#a9f548",
 			dir = -1,
@@ -103,7 +103,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:87}",
-			say = "没想到早已吃腻的南瓜，还能变得这么美味！{namecode:95}无论哪方面都是吾学习的榜样呢",
+			say = "沒想到早已吃膩的南瓜，還能變得這麼美味！{namecode:95}無論哪方面都是吾學習的榜樣呢",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -119,7 +119,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:95}",
-			say = "哈哈~我可不是完美无缺的哟",
+			say = "哈哈~我可不是完美無缺的喲",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -134,7 +134,7 @@ return {
 			side = 0,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "嗯……我还是更中意海伦娜的",
+			say = "嗯……我還是更中意海倫娜的",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -150,7 +150,7 @@ return {
 			dir = 1,
 			actor = 306051,
 			nameColor = "#a9f548",
-			say = "吾们走啦~",
+			say = "吾們走啦~",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -219,7 +219,7 @@ return {
 			dir = 1,
 			actor = 306051,
 			nameColor = "#a9f548",
-			say = "呀——南瓜灯都飘起来了？是、是幽灵吗——！",
+			say = "呀——南瓜燈都飄起來了？是、是幽靈嗎——！",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -247,7 +247,7 @@ return {
 			}
 		},
 		{
-			say = "南瓜灯对着我们冲了过来——",
+			say = "南瓜燈對著我們衝了過來——",
 			side = 0,
 			nameColor = "#a9f548",
 			dir = -1,
@@ -272,7 +272,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:19}",
-			say = "眼前什么都看不到，全是南瓜灯……你们没事吧，可恶，吾辈的连装炮呢！？",
+			say = "眼前什麼都看不到，全是南瓜燈……你們沒事吧，可惡，吾輩的連裝炮呢！？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -335,7 +335,7 @@ return {
 			dir = -1,
 			actor = 301171,
 			nameColor = "#a9f548",
-			say = "南瓜灯都飞到天空中了……{namecode:96}也不见了！",
+			say = "南瓜燈都飛到天空中了……{namecode:96}也不見了！",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -363,7 +363,7 @@ return {
 			}
 		},
 		{
-			say = "发、发生了什么！？",
+			say = "發、發生了什麼！？",
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
@@ -390,7 +390,7 @@ return {
 			withoutPainting = true,
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "翔——White姐，我本来也想像你那样缝几套衣服，可是动手后发现缝衣服好难……所以，先勉强用这个吧",
+			say = "翔——White姐，我本來也想像你那樣縫幾套衣服，可是動手後發現縫衣服好難……所以，先勉強用這個吧",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -420,7 +420,7 @@ return {
 		{
 			withoutPainting = true,
 			side = 1,
-			say = "这个南瓜是不是忘记挖透气孔了，我怎么什么都看不到！？{namecode:96}、企业你们究竟要干什么？",
+			say = "這個南瓜是不是忘記挖透氣孔了，我怎麼什麼都看不到！？{namecode:96}、企業你們究竟要幹什麼？",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
@@ -447,7 +447,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			actorName = "？？？",
-			say = "咳咳，我是gold，她是gray。总、总之，现在我们不是“大人”而是“孩子”，所以在万圣夜大闹一番也完全没问题！",
+			say = "咳咳，我是gold，她是gray。總、總之，現在我們不是“大人”而是“孩子”，所以在萬聖夜大鬧一番也完全沒問題！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -465,7 +465,7 @@ return {
 			blackBg = true,
 			actor = 107060,
 			actorName = "？？？",
-			say = "我是输给了瑞……gold，所以来帮她忙——",
+			say = "我是輸給了瑞……gold，所以來幫她忙——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -483,7 +483,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			actorName = "？？？",
-			say = "喂，你难道一点不甘心都没有吗！",
+			say = "喂，你難道一點不甘心都沒有嗎！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -501,7 +501,7 @@ return {
 			blackBg = true,
 			actor = 107060,
 			actorName = "？？？",
-			say = "好好好，那么长不大的孩子们就尽情恶作剧吧，我会用南瓜灯配合你们的",
+			say = "好好好，那麼長不大的孩子們就盡情惡作劇吧，我會用南瓜燈配合你們的",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -519,7 +519,7 @@ return {
 			blackBg = true,
 			actor = 307060,
 			actorName = "？？？",
-			say = "哼哼，毕竟“我”可比你小不少，gray",
+			say = "哼哼，畢竟“我”可比你小不少，gray",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

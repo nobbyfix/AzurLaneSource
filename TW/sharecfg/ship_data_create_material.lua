@@ -14,7 +14,7 @@ pg.ship_data_create_material = {
 		rate_tip = {
 			"<color=#ffde38>超稀有艦船</color>：7%",
 			"<color=#d797ff>精銳艦船</color>：12%",
-			"<color=#3dc6ff>稀有舰船</color>：51%",
+			"<color=#3dc6ff>稀有艦船</color>：51%",
 			"普通艦船：30%"
 		}
 	},
@@ -70,11 +70,11 @@ pg.ship_data_create_material = {
 			"<color=#d797ff>精銳艦船</color>：12%",
 			"<color=#3dc6ff>稀有艦船</color>：51%",
 			"普通艦船：30%",
-			"<color=#ffde38>三笠</color>：2%(<color=#92fc63>up!</color>)",
-			"<color=#d797ff>比叡</color>：2.5%(<color=#92fc63>up!</color>)",
-			"<color=#3dc6ff>黑潮</color>：5%(<color=#92fc63>up!</color>)",
-			"<color=#3dc6ff>親潮</color>：5%(<color=#92fc63>up!</color>)",
-			"<color=#3dc6ff>濱風</color>：5%(<color=#92fc63>up!</color>)"
+			"<color=#ffde38>翔鶴</color>：2%(<color=#92fc63>up!</color>)",
+			"<color=#ffde38>瑞鶴</color>：0.7%",
+			"<color=#d797ff>野分</color>：4%(<color=#92fc63>up!</color>)",
+			"<color=#3dc6ff>伊勢</color>：6.75%(<color=#92fc63>up!</color>)",
+			"<color=#3dc6ff>日向</color>：6.75%(<color=#92fc63>up!</color>)"
 		}
 	},
 	{
@@ -107,10 +107,10 @@ pg.ship_data_create_material = {
 		id = 6,
 		icon = "build_6",
 		rate_tip = {
-			"<color=#ffde38>超稀有舰船</color>：7%",
-			"<color=#d797ff>精锐舰船</color>：12%",
-			"<color=#3dc6ff>稀有舰船</color>：51%",
-			"普通舰船：30%"
+			"<color=#ffde38>超稀有艦船</color>：7%",
+			"<color=#d797ff>精銳艦船</color>：12%",
+			"<color=#3dc6ff>稀有艦船</color>：51%",
+			"普通艦船：30%"
 		}
 	},
 	{
@@ -125,10 +125,10 @@ pg.ship_data_create_material = {
 		id = 7,
 		icon = "build_7",
 		rate_tip = {
-			"<color=#ffde38>超稀有舰船</color>：7%",
-			"<color=#d797ff>精锐舰船</color>：12%",
-			"<color=#3dc6ff>稀有舰船</color>：26%",
-			"普通舰船：55%"
+			"<color=#ffde38>超稀有艦船</color>：7%",
+			"<color=#d797ff>精銳艦船</color>：12%",
+			"<color=#3dc6ff>稀有艦船</color>：26%",
+			"普通艦船：55%"
 		}
 	},
 	{
@@ -143,10 +143,10 @@ pg.ship_data_create_material = {
 		id = 8,
 		icon = "build_8",
 		rate_tip = {
-			"<color=#ffde38>超稀有舰船</color>：7%",
-			"<color=#d797ff>精锐舰船</color>：12%",
-			"<color=#3dc6ff>稀有舰船</color>：51%",
-			"普通舰船：30%"
+			"<color=#ffde38>超稀有艦船</color>：7%",
+			"<color=#d797ff>精銳艦船</color>：12%",
+			"<color=#3dc6ff>稀有艦船</color>：51%",
+			"普通艦船：30%"
 		}
 	},
 	all = {

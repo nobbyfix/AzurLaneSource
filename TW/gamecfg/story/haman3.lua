@@ -140,7 +140,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "对了，去问问正在用演习海域的列克星敦姐姐…",
+			say = "对了，去问问正在用演习海域的列星頓姐姐…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

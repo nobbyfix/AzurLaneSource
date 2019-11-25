@@ -12,7 +12,7 @@ return {
 			mode = 1,
 			sequence = {
 				{
-					"春风的十字星\n\n<size=45>七  结案</size>",
+					"春風的十字星\n\n<size=45>七  結案</size>",
 					1
 				}
 			}
@@ -24,7 +24,7 @@ return {
 			bgm = "story-1",
 			actor = 201080,
 			nameColor = "#a9f548",
-			say = "皇家方舟小姐，对不起…不该那么轻易地就认定你是凶手…",
+			say = "皇家方舟小姐，對不起…不該那麼輕易地就認定你是兇手…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,7 +35,7 @@ return {
 			}
 		},
 		{
-			say = "我也有点先入为主了呢…对不起",
+			say = "我也有點先入為主了呢…對不起",
 			side = 1,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -60,7 +60,7 @@ return {
 			bgName = "bg_story_school",
 			side = 0,
 			dir = -1,
-			say = "还、还不是皇家方舟小姐平时的言行造就的恶果嘛！不、不过姑且还是给你道个歉，对、对不起啦…",
+			say = "還、還不是皇家方舟小姐平時的言行造就的惡果嘛！不、不過姑且還是給你道個歉，對、對不起啦…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -76,7 +76,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "驱逐们害羞道歉的模样…不能更棒！",
+			say = "驅逐們害羞道歉的模樣…不能更棒！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -92,7 +92,7 @@ return {
 			bgName = "bg_story_school",
 			side = 0,
 			dir = -1,
-			say = "真是的，皇家方舟小姐就是因为老是这样才会被人误会的啊",
+			say = "真是的，皇家方舟小姐就是因為老是這樣才會被人誤會的啊",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -108,7 +108,7 @@ return {
 			bgName = "bg_story_school",
 			side = 0,
 			dir = 1,
-			say = "总、总而言之，能找回衣服太好了，皇家方舟小姐，能把衣服先还我吗呜呜呜…一直穿着这身实在太害羞了…",
+			say = "總、總而言之，能找回衣服太好了，皇家方舟小姐，能把衣服先還我嗎嗚嗚嗚…一直穿著這身實在太害羞了…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -124,7 +124,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "不如说看到这身泳装什么烦恼都足以忘却了哈啊哈啊…",
+			say = "不如說看到這身泳裝什麼煩惱都足以忘卻了哈啊哈啊…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -140,7 +140,7 @@ return {
 			bgName = "bg_story_school",
 			side = 0,
 			dir = 1,
-			say = "泳装，很适合小天鹅哦。要是我也有那样的身材，偶、偶像什么的…",
+			say = "泳裝，很適合小天鵝哦。要是我也有那樣的身材，偶、偶像什麼的…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -156,7 +156,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "哼、我才不羡慕呢！一点都不羡慕！",
+			say = "哼、我才不羡慕呢！一點都不羡慕！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -172,7 +172,7 @@ return {
 			bgName = "bg_story_school",
 			side = 0,
 			dir = -1,
-			say = "这就是所谓的“有料”吗？从某种意义上来说…确实是大杀器呢…",
+			say = "這就是所謂的“有料”嗎？從某種意義上來說…確實是大殺器呢…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -188,7 +188,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "嗯？是哪里“有料”呢？",
+			say = "嗯？是哪裡“有料”呢？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -204,7 +204,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "某种意义上…吸血鬼也不遑多让吧…",
+			say = "某種意義上…吸血鬼也不遑多讓吧…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -220,7 +220,7 @@ return {
 			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			say = "呼欸…这算是…我被夸奖了吗？",
+			say = "呼欸…這算是…我被誇獎了嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -236,7 +236,7 @@ return {
 			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			say = "谢谢大家帮我找衣服，给大家添麻烦了呜呜——",
+			say = "謝謝大家幫我找衣服，給大家添麻煩了嗚嗚——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -247,7 +247,7 @@ return {
 			}
 		},
 		{
-			say = "啊哈哈，结果没什么事就好，折腾了这么久肚子都饿了，大家一起去吃饭吧？",
+			say = "啊哈哈，結果沒什麼事就好，折騰了這麼久肚子都餓了，大家一起去吃飯吧？",
 			side = 0,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -273,8 +273,8 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			actor = 0,
-			actorName = "众人",
-			say = "噢！",
+			actorName = "眾人",
+			say = "喔！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -290,7 +290,7 @@ return {
 			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			say = "吃、吃饭的话等换完衣服我也…",
+			say = "吃、吃飯的話等換完衣服我也…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -301,7 +301,7 @@ return {
 			}
 		},
 		{
-			say = "咕嘿，和一群驱逐妹妹们一起吃饭…",
+			say = "咕嘿，和一群驅逐妹妹們一起吃飯…",
 			side = 1,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -327,7 +327,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			actor = 0,
-			actorName = "众人",
+			actorName = "眾人",
 			say = "盯——",
 			typewriter = {
 				speed = 0.05,

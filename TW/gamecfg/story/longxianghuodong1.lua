@@ -196,7 +196,7 @@ return {
 			side = 0,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "抱歉，萨拉，明明你也在担心列克星敦，还要让你来安慰我……",
+			say = "抱歉，萨拉，明明你也在担心列星頓，还要让你来安慰我……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

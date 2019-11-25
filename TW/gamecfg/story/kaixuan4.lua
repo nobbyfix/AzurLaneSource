@@ -299,7 +299,7 @@ return {
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
-			say = "贵安，列克星敦小姐、萨拉托加小姐",
+			say = "贵安，列星頓小姐、萨拉托加小姐",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

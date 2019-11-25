@@ -256,9 +256,70 @@ slot1 = {
 	[ActivityConst.MIKASA_MAIN_ACTIVITY] = {
 		className = "MikasaPreviewPage",
 		uiName = "mikasamainPage"
+	},
+	[ActivityConst.CYGENT_SWIMSUIT] = {
+		className = "CygentSwimsuitPage",
+		uiName = "cygentswimsuit"
+	},
+	[ActivityConst.ACTIVITY_U110_BATTLE_PAGE] = {
+		className = "U110BattlePage",
+		uiName = "U110BattlePage"
+	},
+	[ActivityConst.LINDONG_REMAKE_KR] = {
+		className = "LindongMainPage",
+		uiName = "lindongmainpage"
+	},
+	[ActivityConst.TWHALLOWEENSKIN] = {
+		className = "HalloweenSkinPage",
+		uiName = "HalloweenSkinUI"
+	},
+	[ActivityConst.BAILEY_HALLOWEEN] = {
+		className = "BaileyHalloweenPage",
+		uiName = "baileyhalloweenpage"
+	},
+	[ActivityConst.MEMPHIS_HALLOWEEN] = {
+		className = "MemphisHalloweenPage",
+		uiName = "memphishalloweenpage"
+	},
+	[ActivityConst.BAILEY_HALLOWEEN] = {
+		className = "BaileyHalloweenPage",
+		uiName = "baileyhalloweenpage"
+	},
+	[ActivityConst.IDOL_PT_ID] = {
+		className = "IdolPTPage",
+		uiName = "idolptpage"
+	},
+	[ActivityConst.MUSIC_CHUIXUE7DAY_ID] = {
+		className = "Chuixue7daySkinPage",
+		uiName = "chuixue7dayskinpage"
+	},
+	[ActivityConst.ANIME_LOGIN] = {
+		className = "AnimeLoginPage",
+		uiName = "AnimeLoginPage"
+	},
+	[ActivityConst.MUSIC_FESTIVAL_ID] = {
+		className = "XiefeierIdolMusicPage",
+		uiName = "xiefeieridolmusicpage"
+	},
+	[ActivityConst.POCKY_LOGIN] = {
+		className = "PockyPage",
+		uiName = "pockypage"
+	},
+	[ActivityConst.POCKY_SKIN_LOGIN] = {
+		className = "PockySkinPage",
+		uiName = "PockySkinPage"
+	},
+	[ActivityConst.WARSPITE_TRANS] = {
+		className = "WarspiteTransformationPage",
+		uiName = "WarspiteTransformationPage"
 	}
 }
-slot2 = {}
+slot2 = {
+	[ActivityConst.IDOL_INS_ID] = ActivityConst.IDOL_PT_ID,
+	[ActivityConst.POCKY_SKIN_PT] = ActivityConst.POCKY_SKIN_LOGIN,
+	[ActivityConst.POCKY_SKIN_TASKLIST] = ActivityConst.POCKY_SKIN_LOGIN,
+	[ActivityConst.POCKY_SKIN_FINAL] = ActivityConst.POCKY_SKIN_LOGIN
+}
 
 slot0.preload = function (slot0, slot1)
 	slot1()

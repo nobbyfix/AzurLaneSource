@@ -319,7 +319,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呼……呼……指挥官会教我要干什么吗？噢噢，太棒啦！",
+			say = "呼……呼……指挥官会教我要干什么吗？喔喔，太棒啦！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

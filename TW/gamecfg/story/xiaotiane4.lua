@@ -12,7 +12,7 @@ return {
 			mode = 1,
 			sequence = {
 				{
-					"春风的十字星\n\n<size=45>四  现行犯？</size>",
+					"春風的十字星\n\n<size=45>四  現行犯？</size>",
 					1
 				}
 			}
@@ -24,7 +24,7 @@ return {
 			bgm = "story-1",
 			actor = 201101,
 			nameColor = "#a9f548",
-			say = "（咽口水）就、就是这里吗…",
+			say = "（嚥口水）就、就是這裡嗎…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,7 +35,7 @@ return {
 			}
 		},
 		{
-			say = "最、最后还是来到了这里呢…",
+			say = "最、最後還是來到了這裡呢…",
 			side = 0,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -60,7 +60,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "就、就算是她也不可能做到这份上吧",
+			say = "就、就算是她也不可能做到這份上吧",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -76,7 +76,7 @@ return {
 			bgName = "bg_story_school",
 			side = 0,
 			dir = 1,
-			say = "只、只是确认一下应该没关系吧…",
+			say = "只、只是確認一下應該沒關係吧…",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -92,7 +92,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "那我敲门了哟？",
+			say = "那我敲門了喲？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -108,7 +108,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "我敲、啊咧？门没关紧？",
+			say = "我敲、啊咧？門沒關緊？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -122,7 +122,7 @@ return {
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
-			say = "吱呀——（开门声）",
+			say = "吱呀——（開門聲）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -134,7 +134,7 @@ return {
 			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			say = "这、这是——",
+			say = "這、這是——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -171,7 +171,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "诶？！",
+			say = "誒？！",
 			dialogShake = {
 				speed = 0.09,
 				x = 12.75,
@@ -206,7 +206,7 @@ return {
 			dir = 1,
 			actor = 207020,
 			nameColor = "#a9f548",
-			say = "诶？？！！",
+			say = "誒？？！！",
 			dialogShake = {
 				speed = 0.09,
 				x = 12.75,

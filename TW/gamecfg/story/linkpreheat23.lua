@@ -67,7 +67,7 @@ return {
 			bgName = "bg_story_chuansong",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "哈哈哈哈！真能干啊小不点！你是叫猫音吗？你的话没准能当战舰呢！噢啦噢啦！挡路的杂鱼给我闪开！！",
+			say = "哈哈哈哈！真能干啊小不点！你是叫猫音吗？你的话没准能当战舰呢！喔啦喔啦！挡路的杂鱼给我闪开！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

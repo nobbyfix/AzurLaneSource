@@ -203,7 +203,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "噢，是Z23呀，还有你们，呀吼，中午有好好休息了吗？准备好应付下午的课程了吗～？",
+			say = "喔，是Z23呀，还有你们，呀吼，中午有好好休息了吗？准备好应付下午的课程了吗～？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

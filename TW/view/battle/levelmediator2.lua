@@ -644,6 +644,9 @@ slot0.handleNotification = function (slot0, slot1)
 		slot0.viewComponent:updateRes(slot3)
 	elseif slot2 == GAME.TRACKING_DONE or slot2 == GAME.SHAM_ENTER_DONE then
 		slot0.viewComponent:resetLevelGrid()
+
+		slot0.viewComponent.FirstEnterChapter = slot3.id
+
 		slot0.viewComponent:switchToChapter(slot3, function ()
 			slot0:loadSubState(slot1.subAutoAttack)
 		end)
@@ -1003,6 +1006,8 @@ slot0.OnExitChapter = function (slot0, slot1)
 				if not _.detect(getProxy(SkirmishProxy).getRawData(slot2), function (slot0)
 					return tonumber(slot0:getConfig("event")) == slot0
 				end) then
+					slot0()
+
 					return
 				end
 

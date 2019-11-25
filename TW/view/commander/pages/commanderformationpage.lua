@@ -88,9 +88,15 @@ slot0.openDescPanel = function (slot0, slot1, slot2)
 		return
 	end
 
-	LeanTween.moveX(slot0.samllTF, 800, slot3):setFrom(0):setOnComplete(System.Action(function ()
+	setAnchoredPosition(slot0.samllTF, {
+		x = 0
+	})
+	LeanTween.moveX(slot0.samllTF, 800, slot3):setOnComplete(System.Action(function ()
 		setActive(slot0.descPanel, true)
-		LeanTween.moveX(slot0.descFrameTF, 0, ):setFrom(800):setOnComplete(System.Action(System.Action))
+		setAnchoredPosition(slot0.descFrameTF, {
+			x = 800
+		})
+		LeanTween.moveX(slot0.descFrameTF, 0, ):setOnComplete(System.Action(System.Action))
 	end))
 
 	slot0.contextData.inDescPage = true
@@ -105,9 +111,15 @@ slot0.closeDescPanel = function (slot0, slot1)
 		return
 	end
 
-	LeanTween.moveX(slot0.descFrameTF, 800, slot2):setFrom(0):setOnComplete(System.Action(function ()
+	setAnchoredPosition(slot0.descFrameTF, {
+		x = 0
+	})
+	LeanTween.moveX(slot0.descFrameTF, 800, slot2):setOnComplete(System.Action(function ()
 		setActive(slot0.descPanel, false)
-		LeanTween.moveX(slot0.samllTF, 0, ):setFrom(800)
+		setAnchoredPosition(slot0.samllTF, {
+			x = 800
+		})
+		LeanTween.moveX(slot0.samllTF, 0, )
 	end))
 
 	slot0.contextData.inDescPage = false
@@ -132,7 +144,7 @@ slot0.updateAdditions = function (slot0)
 			setText(slot2:Find("name"), AttributeType.Type2Name(slot0[slot1 + 1].attrName))
 			setText(slot2:Find("Text"), "+" .. math.floor(slot0[slot1 + 1].value * 1000) / 1000 .. "%")
 			GetImageSpriteFromAtlasAsync("attricon", slot0[slot1 + 1].attrName, slot2:Find("icon"), false)
-			setActive(slot2:Find("bg"), slot1 % 2 ~= 0)
+			setImageAlpha(slot2:Find("bg"), slot1 % 2)
 		end
 	end)
 	slot0.abilitysTF:align(#slot3)
@@ -147,7 +159,7 @@ slot0.updateAdditions = function (slot0)
 
 			slot1.talentsTextList[slot1 + 1]:setText(slot3.name)
 			setText(slot2:Find("Text"), ((slot3.value > 0 and "+") or "") .. slot3.value .. ((slot3.type == CommanderConst.TALENT_ADDITION_RATIO and "%") or ""))
-			setActive(slot2:Find("bg"), slot1 % 2 ~= 0)
+			setImageAlpha(slot2:Find("bg"), slot1 % 2)
 		end
 	end)
 	slot0.talentsTF:align(#_.values(slot0.fleet.getCommandersTalentDesc(slot1)))

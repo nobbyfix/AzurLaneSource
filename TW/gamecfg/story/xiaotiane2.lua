@@ -12,7 +12,7 @@ return {
 			mode = 1,
 			sequence = {
 				{
-					"春风的十字星\n\n<size=45>二  中断的线索</size>",
+					"春風的十字星\n\n<size=45>二  中斷的線索</size>",
 					1
 				},
 				bgName = "bg_story_school"
@@ -25,7 +25,7 @@ return {
 			bgm = "story-1",
 			actor = 201110,
 			nameColor = "#a9f548",
-			say = "哼哼，这种时候，就交给我吧！",
+			say = "哼哼，這種時候，就交給我吧！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -42,7 +42,7 @@ return {
 			actor = 201101,
 			dir = 1,
 			hideOther = true,
-			actorName = "小天鹅&彗星&新月",
+			actorName = "小天鵝&彗星&新月",
 			say = "哦哦哦…",
 			subActors = {
 				{
@@ -73,7 +73,7 @@ return {
 			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			say = "（嗅嗅）我对自己的鼻子可是很有自信的呢！",
+			say = "（嗅嗅）我對自己的鼻子可是很有自信的呢！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -84,7 +84,7 @@ return {
 			}
 		},
 		{
-			say = "狐提酱…好像汪——",
+			say = "狐提醬…好像汪——",
 			side = 0,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -109,7 +109,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "只、只是鼻子比较灵而已啦！",
+			say = "只、只是鼻子比較靈而已啦！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -127,7 +127,7 @@ return {
 			dir = 1,
 			hideOther = true,
 			actorName = "彗星&新月",
-			say = "是、是吗……",
+			say = "是、是嗎……",
 			subActors = {
 				{
 					actor = 201090,
@@ -151,7 +151,7 @@ return {
 			bgName = "bg_story_school",
 			side = 2,
 			dir = 1,
-			say = "总、总之！往这边走——",
+			say = "總、總之！往這邊走——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -167,7 +167,7 @@ return {
 			dir = 1,
 			actor = 201110,
 			nameColor = "#a9f548",
-			say = "气味到这里就没了呢…",
+			say = "氣味到這裡就沒了呢…",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -195,7 +195,7 @@ return {
 			}
 		},
 		{
-			say = "这、这里是……",
+			say = "這、這裡是……",
 			side = 0,
 			bgName = "bg_story_school",
 			dir = 1,
@@ -220,7 +220,7 @@ return {
 			bgName = "bg_story_school",
 			side = 1,
 			dir = 1,
-			say = "嗯…皇家航母的住宿区…呢",
+			say = "嗯…皇家航母的住宿區…呢",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

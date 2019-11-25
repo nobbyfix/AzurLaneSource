@@ -13,6 +13,7 @@ TRACKING_PURCHASE_CLICK = "purchase_click"
 TRACKING_PURCHASE_CLICK_MONTHLYCARD = "purchase_click_monthlycard"
 TRACKING_PURCHASE_CLICK_GIFTBAG = "purchase_click_giftbag"
 TRACKING_PURCHASE_CLICK_DIAMOND = "purchase_click_diamond"
+TRACKING_PURCHASE = "purchase"
 TRACKING_2D_RETENTION = "2d_retention"
 TRACKING_7D_RETENTION = "7d_retention"
 TRACKING_BUILD_SHIP = "build_ship"
@@ -57,36 +58,213 @@ pg.TrackerMgr.Call = function (slot0, slot1, ...)
 	end
 end
 
-pg.TrackerMgr.Tracking = function (slot0, slot1, slot2)
-	if ((((getProxy(UserProxy) ~= nil and slot3:getData()) or nil) ~= nil and (getProxy(UserProxy) ~= nil and slot3.getData()) or nil.uid) or nil) == nil then
-		return
+pg.TrackerMgr.Tracking = function (slot0, slot1, slot2, slot3)
+	if getProxy(UserProxy) == nil or not slot4:getData() then
+		slot5 = nil
 	end
 
-	slot8 = getProxy(ServerProxy).getLastServer(slot6, slot5).id
+	if slot5 == nil or not slot5.uid then
+		slot6 = nil
+	end
+
+	if slot6 == nil then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 20-20, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 21-25, warpins: 2 ---
+		if getProxy(PlayerProxy) == nil or not slot7:getData() then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 31-31, warpins: 2 ---
+			slot8 = nil
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 32-33, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 34-36, warpins: 1 ---
+			if not (getProxy(PlayerProxy) ~= nil and slot7.getData()) or nil.id then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 37-37, warpins: 2 ---
+				slot9 = nil
+
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #3
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 38-39, warpins: 2 ---
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #3
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 40-41, warpins: 1 ---
+				if not slot9 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 42-42, warpins: 2 ---
+					slot9 = slot3
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+				--- END OF BLOCK #2 ---
+
+
+
+			end
+			--- END OF BLOCK #2 ---
+
+
+
+		end
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	slot8 = (getProxy(PlayerProxy) ~= nil and slot7.getData()) or nil
+
+	if ((((((getProxy(PlayerProxy) ~= nil and slot7.getData()) or nil) ~= nil and (getProxy(PlayerProxy) ~= nil and slot7.getData()) or nil.id) or nil) ~= nil and ((((getProxy(PlayerProxy) ~= nil and slot7.getData()) or nil) ~= nil and (getProxy(PlayerProxy) ~= nil and slot7.getData()) or nil.id) or nil)) or slot3) == nil then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 45-45, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot12 = getProxy(ServerProxy).getLastServer(slot10, slot6).id
 
 	if slot1 == TRACKING_2D_RETENTION or slot1 == TRACKING_7D_RETENTION then
-		if PlayerPrefs.GetInt(slot9, 0) <= 0 then
-			print("tracking type : " .. slot1 .. "   user_id:" .. slot5)
-			PlayerPrefs.SetInt(slot9, 1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 60-70, warpins: 2 ---
+		if PlayerPrefs.GetInt(slot13, 0) <= 0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 71-93, warpins: 1 ---
+			print("tracking type : " .. slot1 .. "   user_id:" .. slot9)
+			PlayerPrefs.SetInt(slot13, 1)
 			PlayerPrefs.Save()
-			slot0:Call("Tracking", slot1, slot5, slot2)
+			slot0:Call("Tracking", slot1, slot9, slot2)
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
 	else
-		print("tracking type : " .. slot1 .. ",   user_id:" .. slot5 .. ",   data:" .. (slot2 or "nil"))
-		slot0:Call("Tracking", slot1, slot5, slot2, slot8)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 94-101, warpins: 1 ---
+		print("tracking type : " .. slot1 .. ",   user_id:" .. slot9 .. ",   data:" .. (slot2 or "nil"))
+		slot0:Call("Tracking", slot1, slot9, slot2, slot12)
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 102-102, warpins: 1 ---
+		slot19 = "nil"
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 103-112, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
 	if slot1 == TRACKING_PURCHASE_CLICK then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 116-117, warpins: 1 ---
 		if slot2 == 1 then
-			print("tracking type : " .. TRACKING_PURCHASE_CLICK_MONTHLYCARD .. "   user_id:" .. slot5)
-			slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_MONTHLYCARD, slot5)
-		elseif slot2 == 2 then
-			print("tracking type : " .. TRACKING_PURCHASE_CLICK_GIFTBAG .. "   user_id:" .. slot5)
-			slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_GIFTBAG, slot5)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 118-132, warpins: 1 ---
+			print("tracking type : " .. TRACKING_PURCHASE_CLICK_MONTHLYCARD .. "   user_id:" .. slot9)
+			slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_MONTHLYCARD, slot9, slot2)
+			--- END OF BLOCK #0 ---
+
+
+
 		else
-			print("tracking type : " .. TRACKING_PURCHASE_CLICK_DIAMOND .. "   user_id:" .. slot5)
-			slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_DIAMOND, slot5)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 133-134, warpins: 1 ---
+			if slot2 == 2 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 135-149, warpins: 1 ---
+				print("tracking type : " .. TRACKING_PURCHASE_CLICK_GIFTBAG .. "   user_id:" .. slot9)
+				slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_GIFTBAG, slot9, slot2)
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 150-163, warpins: 1 ---
+				print("tracking type : " .. TRACKING_PURCHASE_CLICK_DIAMOND .. "   user_id:" .. slot9)
+				slot0:Call("Tracking", TRACKING_PURCHASE_CLICK_DIAMOND, slot9, slot2)
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
 		end
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 end
 

@@ -183,7 +183,7 @@ return {
 			}
 		},
 		{
-			say = "噢--！！",
+			say = "喔--！！",
 			side = 2,
 			nameColor = "#a9f548",
 			actor = 102100,

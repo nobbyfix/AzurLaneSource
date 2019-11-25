@@ -205,7 +205,7 @@ return {
 			soundeffect = "event:/battle/boom2",
 			actor = 103160,
 			nameColor = "#a9f548",
-			say = "在冰冷的海底为牺牲的同胞赎罪吧，净化者。",
+			say = "在冰冷的海底为牺牲的同伴赎罪吧，净化者。",
 			flashN = {
 				color = {
 					1,

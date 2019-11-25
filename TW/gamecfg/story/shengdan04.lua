@@ -69,7 +69,7 @@ return {
 			}
 		},
 		{
-			say = "噢！辛苦了~欢迎回来啊！",
+			say = "喔！辛苦了~欢迎回来啊！",
 			side = 0,
 			nameColor = "#a9f548",
 			dir = 1,

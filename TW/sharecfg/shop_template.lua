@@ -3485,6 +3485,168 @@ pg.shop_template = {
 			15005
 		}
 	},
+	[55000] = {
+		group_type = 0,
+		resource_num = 500,
+		desc = "500钻石购买家具币礼包-台服第一次",
+		type = 2,
+		is_auto_use = 1,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 1,
+		time_second = 0,
+		order = 0,
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 55000,
+		genre = "gift_package",
+		discount_time = {},
+		limit_args = {
+			{
+				"time",
+				1
+			}
+		},
+		effect_args = {
+			40106
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[55001] = {
+		group_type = 0,
+		resource_num = 120,
+		desc = "120钻石购买红染攻略补给-台服第一次",
+		type = 2,
+		is_auto_use = 1,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 1,
+		time_second = 0,
+		order = 0,
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 55001,
+		genre = "gift_package",
+		discount_time = {},
+		limit_args = {
+			{
+				"time",
+				5
+			}
+		},
+		effect_args = {
+			40117
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[55002] = {
+		group_type = 0,
+		resource_num = 980,
+		desc = "980钻石购买红染建造补给-台服第一次",
+		type = 2,
+		is_auto_use = 1,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 1,
+		time_second = 0,
+		order = 0,
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 55002,
+		genre = "gift_package",
+		discount_time = {},
+		limit_args = {
+			{
+				"time",
+				1
+			}
+		},
+		effect_args = {
+			40118
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
 	[60001] = {
 		group_type = 0,
 		resource_num = 300,
@@ -3972,7 +4134,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 5,
 		time = "always",
@@ -4021,7 +4183,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 5,
 		time = "always",
@@ -4070,7 +4232,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 5,
 		time = "always",
@@ -4119,7 +4281,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 5,
 		time = "always",
@@ -4168,7 +4330,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 6,
 		time = "always",
@@ -4217,7 +4379,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 6,
 		time = "always",
@@ -4266,7 +4428,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 6,
 		time = "always",
@@ -4315,7 +4477,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 6,
 		time = "always",
@@ -4364,7 +4526,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 7,
 		time = "always",
@@ -4413,7 +4575,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 6,
 		time = "always",
@@ -4462,7 +4624,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 6,
 		time = "always",
@@ -4503,6 +4665,399 @@ pg.shop_template = {
 			502021
 		}
 	},
+	[70017] = {
+		group_type = 0,
+		resource_num = 600,
+		desc = "購買造型:萬聖節·祥鳳",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 1,
+		time_second = 0,
+		order = 10,
+		group = 0,
+		num = 1,
+		discount = 20,
+		resource_type = 14,
+		id = 70017,
+		genre = "skin_shop",
+		discount_time = {
+			{
+				{
+					2017,
+					9,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2017,
+					10,
+					12
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		limit_args = {},
+		effect_args = {
+			306051
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[70018] = {
+		group_type = 0,
+		resource_num = 800,
+		desc = "購買造型:萬聖節·克里夫蘭",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 1,
+		time_second = 0,
+		order = 10,
+		group = 0,
+		num = 1,
+		discount = 20,
+		resource_type = 14,
+		id = 70018,
+		genre = "skin_shop",
+		discount_time = {
+			{
+				{
+					2017,
+					9,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2017,
+					10,
+					12
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		limit_args = {},
+		effect_args = {
+			102091
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[70019] = {
+		group_type = 0,
+		resource_num = 700,
+		desc = "購買造型:萬聖節·綾波",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 1,
+		time_second = 0,
+		order = 10,
+		group = 0,
+		num = 1,
+		discount = 20,
+		resource_type = 14,
+		id = 70019,
+		genre = "skin_shop",
+		discount_time = {
+			{
+				{
+					2017,
+					9,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2017,
+					10,
+					12
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		limit_args = {},
+		effect_args = {
+			301051
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[70020] = {
+		group_type = 0,
+		resource_num = 600,
+		desc = "購買造型:萬聖節·陽炎",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 1,
+		time_second = 0,
+		order = 10,
+		group = 0,
+		num = 1,
+		discount = 20,
+		resource_type = 14,
+		id = 70020,
+		genre = "skin_shop",
+		discount_time = {
+			{
+				{
+					2017,
+					9,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2017,
+					10,
+					12
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		limit_args = {},
+		effect_args = {
+			301171
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[70055] = {
+		group_type = 0,
+		resource_num = 780,
+		desc = "購買造型:吹雪校服",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 2,
+		time_second = 0,
+		order = 1,
+		time = "always",
+		group = 0,
+		num = 1,
+		discount = 20,
+		resource_type = 14,
+		id = 70055,
+		genre = "skin_shop",
+		discount_time = {
+			{
+				{
+					2018,
+					3,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2018,
+					4,
+					4
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		limit_args = {},
+		effect_args = {
+			301011
+		}
+	},
+	[70061] = {
+		group_type = 0,
+		resource_num = 800,
+		desc = "購買造型:綾波私服",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 0,
+		time_second = 0,
+		order = 3,
+		time = "always",
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 70061,
+		genre = "skin_shop",
+		discount_time = {},
+		limit_args = {},
+		effect_args = {
+			301053
+		}
+	},
+	[70064] = {
+		group_type = 0,
+		resource_num = 700,
+		desc = "購買造型:卯月",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 2,
+		time_second = 0,
+		order = 1,
+		time = "always",
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 70064,
+		genre = "skin_shop",
+		discount_time = {},
+		limit_args = {},
+		effect_args = {
+			301351
+		}
+	},
 	[70088] = {
 		group_type = 0,
 		resource_num = 1080,
@@ -4511,7 +5066,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 6,
 		time = "always",
@@ -4560,7 +5115,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 6,
 		time = "always",
@@ -4601,228 +5156,6 @@ pg.shop_template = {
 			207021
 		}
 	},
-	[70090] = {
-		group_type = 0,
-		resource_num = 880,
-		desc = "購買造型:三笠造型",
-		type = 6,
-		is_auto_use = 0,
-		group_limit = 0,
-		group_buy_count = 0,
-		tag = 2,
-		time_second = 0,
-		order = 1,
-		group = 0,
-		num = 1,
-		discount = 10,
-		resource_type = 14,
-		id = 70090,
-		genre = "skin_shop",
-		discount_time = {
-			{
-				{
-					2018,
-					8,
-					30
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2018,
-					9,
-					5
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		},
-		limit_args = {},
-		effect_args = {
-			305111
-		},
-		time = {
-			{
-				{
-					2019,
-					10,
-					10
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					10,
-					24
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
-	},
-	[70091] = {
-		group_type = 0,
-		resource_num = 700,
-		desc = "購買造型:比叡睡衣",
-		type = 6,
-		is_auto_use = 0,
-		group_limit = 0,
-		group_buy_count = 0,
-		tag = 2,
-		time_second = 0,
-		order = 1,
-		group = 0,
-		num = 1,
-		discount = 10,
-		resource_type = 14,
-		id = 70091,
-		genre = "skin_shop",
-		discount_time = {
-			{
-				{
-					2018,
-					8,
-					30
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2018,
-					9,
-					5
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		},
-		limit_args = {},
-		effect_args = {
-			304021
-		},
-		time = {
-			{
-				{
-					2019,
-					10,
-					10
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					10,
-					24
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
-	},
-	[70092] = {
-		group_type = 0,
-		resource_num = 780,
-		desc = "購買造型:濱風校服",
-		type = 6,
-		is_auto_use = 0,
-		group_limit = 0,
-		group_buy_count = 0,
-		tag = 2,
-		time_second = 0,
-		order = 1,
-		group = 0,
-		num = 1,
-		discount = 10,
-		resource_type = 14,
-		id = 70092,
-		genre = "skin_shop",
-		discount_time = {
-			{
-				{
-					2018,
-					8,
-					30
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2018,
-					9,
-					5
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		},
-		limit_args = {},
-		effect_args = {
-			301611
-		},
-		time = {
-			{
-				{
-					2019,
-					10,
-					10
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					10,
-					24
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
-		}
-	},
 	[70095] = {
 		group_type = 0,
 		resource_num = 780,
@@ -4831,7 +5164,7 @@ pg.shop_template = {
 		is_auto_use = 0,
 		group_limit = 0,
 		group_buy_count = 0,
-		tag = 1,
+		tag = 0,
 		time_second = 0,
 		order = 6,
 		time = "always",
@@ -4870,6 +5203,424 @@ pg.shop_template = {
 		limit_args = {},
 		effect_args = {
 			112011
+		}
+	},
+	[70108] = {
+		group_type = 0,
+		resource_num = 700,
+		desc = "購買造型:曉造型",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 0,
+		time_second = 0,
+		order = 2,
+		time = "always",
+		group = 0,
+		num = 1,
+		discount = 10,
+		resource_type = 14,
+		id = 70108,
+		genre = "skin_shop",
+		discount_time = {
+			{
+				{
+					2018,
+					9,
+					28
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2018,
+					10,
+					4
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		limit_args = {},
+		effect_args = {
+			301091
+		}
+	},
+	[70114] = {
+		group_type = 0,
+		resource_num = 700,
+		desc = "購買造型:五十鈴造型",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 1,
+		time_second = 0,
+		order = 1,
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 70114,
+		genre = "skin_shop",
+		discount_time = {},
+		limit_args = {},
+		effect_args = {
+			302051
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					14
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					20
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[70115] = {
+		group_type = 0,
+		resource_num = 700,
+		desc = "購買造型:恐怖造型",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 2,
+		time_second = 0,
+		order = 2,
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 70115,
+		genre = "skin_shop",
+		discount_time = {
+			{
+				{
+					2017,
+					9,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2017,
+					10,
+					12
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		limit_args = {},
+		effect_args = {
+			213021
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[70116] = {
+		group_type = 0,
+		resource_num = 700,
+		desc = "購買造型:納爾遜造型",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 2,
+		time_second = 0,
+		order = 2,
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 70116,
+		genre = "skin_shop",
+		discount_time = {
+			{
+				{
+					2017,
+					9,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2017,
+					10,
+					12
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		limit_args = {},
+		effect_args = {
+			205031
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[70218] = {
+		group_type = 0,
+		resource_num = 880,
+		desc = "購買造型：瑞鶴浴衣",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 2,
+		time_second = 0,
+		order = 1,
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 70218,
+		genre = "skin_shop",
+		discount_time = {
+			{
+				{
+					2017,
+					9,
+					21
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2017,
+					10,
+					12
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		limit_args = {},
+		effect_args = {
+			307061
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[70254] = {
+		group_type = 0,
+		resource_num = 780,
+		desc = "购买皮肤：爱丁堡万圣节",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 1,
+		time_second = 0,
+		order = 1,
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 70254,
+		genre = "skin_shop",
+		discount_time = {},
+		limit_args = {},
+		effect_args = {
+			202112
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[70255] = {
+		group_type = 0,
+		resource_num = 780,
+		desc = "购买皮肤：黑暗界万圣节",
+		type = 6,
+		is_auto_use = 0,
+		group_limit = 0,
+		group_buy_count = 0,
+		tag = 1,
+		time_second = 0,
+		order = 1,
+		group = 0,
+		num = 1,
+		discount = 0,
+		resource_type = 14,
+		id = 70255,
+		genre = "skin_shop",
+		discount_time = {},
+		limit_args = {},
+		effect_args = {
+			213012
+		},
+		time = {
+			{
+				{
+					2019,
+					10,
+					31
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					11,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
 		}
 	},
 	all = {
@@ -5015,6 +5766,9 @@ pg.shop_template = {
 		50011,
 		50012,
 		50013,
+		55000,
+		55001,
+		55002,
 		60001,
 		60002,
 		60003,
@@ -5043,12 +5797,23 @@ pg.shop_template = {
 		70012,
 		70015,
 		70016,
+		70017,
+		70018,
+		70019,
+		70020,
+		70055,
+		70061,
+		70064,
 		70088,
 		70089,
-		70090,
-		70091,
-		70092,
-		70095
+		70095,
+		70108,
+		70114,
+		70115,
+		70116,
+		70218,
+		70254,
+		70255
 	}
 }
 

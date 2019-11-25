@@ -10,7 +10,7 @@ return {
 			mode = 1,
 			sequence = {
 				{
-					"“魔女们”的万圣夜\n\n<size=45>其七　南瓜舰队，出击！</size>",
+					"“魔女們”的萬聖夜\n\n<size=45>其七　南瓜艦隊，出擊！</size>",
 					1
 				}
 			}
@@ -20,7 +20,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "快点，再快一点！呼~真舒服",
+			say = "快點，再快一點！呼~真舒服",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -31,7 +31,7 @@ return {
 			}
 		},
 		{
-			say = "骑在南瓜灯上视野也变开阔了",
+			say = "騎在南瓜燈上視野也變開闊了",
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
@@ -56,7 +56,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:87}",
-			say = "吾、吾不会掉下去吧",
+			say = "吾、吾不會掉下去吧",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -72,7 +72,7 @@ return {
 			side = 1,
 			dir = -1,
 			actorName = "{namecode:96}",
-			say = "没问题，我和企业试验了好久找到了最安稳的南瓜形状",
+			say = "沒問題，我和企業試驗了好久找到了最安穩的南瓜形狀",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -88,7 +88,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "{namecode:6}",
-			say = "{namecode:95}，谢谢你的衣服",
+			say = "{namecode:95}，謝謝你的衣服",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -104,7 +104,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:19}",
-			say = "等等，我也要道谢！",
+			say = "等等，我也要道謝！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -120,7 +120,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:95}",
-			say = "哈哈~被猜到了呢，正因为有你们，万圣节才能这么有气氛~",
+			say = "哈哈~被猜到了呢，正因為有你們，萬聖節才能這麼有氣氛~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -136,7 +136,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:87}",
-			say = "欸欸，衣服是{namecode:95}做的吗？",
+			say = "欸欸，衣服是{namecode:95}做的嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -151,7 +151,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嘿嘿，我的是海伦娜，回去后我也得好好向她道谢呢～",
+			say = "嘿嘿，我的是海倫娜，回去後我也得好好向她道謝呢～",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -167,7 +167,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "{namecode:96}",
-			say = "我还准备了很多天妇罗，大家请随意吃~",
+			say = "我還準備了很多天婦羅，大家請隨意吃~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -182,7 +182,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯~{namecode:96}你炸天妇罗确实很有一手",
+			say = "嗯~{namecode:96}你炸天婦羅確實很有一手",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -198,7 +198,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "{namecode:96}",
-			say = "哼哼，你终于认识到我无论哪方面都是最优秀的了吗！",
+			say = "哼哼，你終於認識到我無論哪方面都是最優秀的了嗎！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -213,7 +213,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "也包括缝制衣服？",
+			say = "也包括縫製衣服？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -229,7 +229,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "{namecode:96}",
-			say = "——可恶，等着吧，早晚有一天——",
+			say = "——可惡，等著吧，早晚有一天——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -244,7 +244,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "好好好，我会一直在你前方等着的——等你心服口服的那天",
+			say = "好好好，我會一直在你前方等著的——等你心服口服的那天",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -260,7 +260,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "{namecode:96}",
-			say = "手下败将，你在说什么！？",
+			say = "手下敗將，你在說什麼！？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -276,7 +276,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:19}",
-			say = "吾辈可以把吾辈的妹妹们也叫来吗？",
+			say = "吾輩可以把吾輩的妹妹們也叫來嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -292,7 +292,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:95}",
-			say = "当然没问题，南瓜还有很多~",
+			say = "當然沒問題，南瓜還有很多~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -308,7 +308,7 @@ return {
 			dir = 1,
 			actor = 301171,
 			nameColor = "#a9f548",
-			say = "可以把南瓜下降一点吗？那个独自吃南瓜派的人好像是{namecode:20}",
+			say = "可以把南瓜下降一點嗎？那個獨自吃南瓜派的人好像是{namecode:20}",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -352,7 +352,7 @@ return {
 			}
 		},
 		{
-			say = "姐、姐姐！？为什么你在飞！？",
+			say = "姐、姐姐！？為什麼你在飛！？",
 			side = 0,
 			nameColor = "#a9f548",
 			dir = -1,
@@ -377,7 +377,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:19}",
-			say = "笨蛋，不是吾辈在飞，是南瓜在飞！",
+			say = "笨蛋，不是吾輩在飛，是南瓜在飛！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -393,7 +393,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:19}",
-			say = "这是吾辈的南瓜派？",
+			say = "這是吾輩的南瓜派？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -409,7 +409,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:20}",
-			say = "……并不是",
+			say = "……並不是",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -425,7 +425,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:19}",
-			say = "不要对姐姐撒谎！真是的，都冷了吧——好咸！难道吾辈搞错了盐和糖！还、还好其他妹妹都没有吃到——你也不要吃了！",
+			say = "不要對姐姐撒謊！真是的，都冷了吧——好鹹！難道吾輩搞錯了鹽和糖！還、還好其他妹妹都沒有吃到——你也不要吃了！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -441,7 +441,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:20}",
-			say = "其实只要是{namecode:19}姐做的食物，无论什么味道大家都会喜欢吃……",
+			say = "其實只要是{namecode:19}姐做的食物，無論什麼味道大家都會喜歡吃……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -457,7 +457,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:19}",
-			say = "正因如此，吾辈才不能让妹妹们吃到辜负了期待的食物！",
+			say = "正因如此，吾輩才不能讓妹妹們吃到辜負了期待的食物！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -489,7 +489,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:19}",
-			say = "你才是笨蛋，明明直接和吾辈说就行——",
+			say = "你才是笨蛋，明明直接和吾輩說就行——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -505,7 +505,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:20}",
-			say = "那样姐姐一定会放弃万圣夜的游玩，在家重新烤一炉吧",
+			say = "那樣姐姐一定會放棄萬聖夜的遊玩，在家重新烤一爐吧",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -521,7 +521,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:19}",
-			say = "笨蛋，只要你们能吃上最棒的南瓜派，吾辈才不在意是否有时间玩！",
+			say = "笨蛋，只要你們能吃上最棒的南瓜派，吾輩才不在意是否有時間玩！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -553,7 +553,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:19}",
-			say = "……你也不要蹲在墙角吃这种又咸又冷的派了！",
+			say = "……你也不要蹲在牆角吃這種又鹹又冷的派了！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -569,7 +569,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:20}",
-			say = "我只是觉得扔掉有些可惜罢了……姐姐烤派的时候，心中一定期待着这些派能被我们吃下去吧——",
+			say = "我只是覺得扔掉有些可惜罷了……姐姐烤派的時候，心中一定期待著這些派能被我們吃下去吧——",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -601,7 +601,7 @@ return {
 			side = 0,
 			dir = -1,
 			actorName = "{namecode:95}",
-			say = "万圣夜还远没有结束呢，都坐上南瓜灯吧，叫上所有的“孩子”们，南瓜舰队要出击了！",
+			say = "萬聖夜還遠沒有結束呢，都坐上南瓜燈吧，叫上所有的“孩子”們，南瓜艦隊要出擊了！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

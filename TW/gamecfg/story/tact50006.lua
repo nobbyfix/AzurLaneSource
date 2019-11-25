@@ -168,7 +168,7 @@ return {
 			actor = 103100,
 			side = 2,
 			nameColor = "#a9f548",
-			say = "噢！",
+			say = "喔！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

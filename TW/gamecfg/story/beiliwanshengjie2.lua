@@ -11,7 +11,7 @@ return {
 			stopbgm = true,
 			sequence = {
 				{
-					"捣蛋万圣夜！\n\n<size=45>二 好奇的魔女</size>",
+					"搗蛋萬聖夜！\n\n<size=45>二 好奇的魔女</size>",
 					1
 				}
 			}
@@ -25,7 +25,7 @@ return {
 			bgm = "story-1",
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "要是幽灵小姐找不到家的话，那就太可怜了…",
+			say = "要是幽靈小姐找不到家的話，那就太可憐了…",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -58,7 +58,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "等着吧，贝利一定会帮助你的！兔美，兔吉，我们出发！",
+			say = "等著吧，貝利一定會幫助你的！兔美，兔吉，我們出發！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -74,7 +74,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "嗯…话是这么说，但是幽灵小姐究竟会在哪里呢？",
+			say = "嗯…話是這麼說，但是幽靈小姐究竟會在哪裡呢？",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -108,7 +108,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "而且幽灵是会飞的吧，兔兔星人可不会飞……",
+			say = "而且幽靈是會飛的吧，兔兔星人可不會飛……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -124,7 +124,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "唔，要是这个扫把真的可以像魔女那样骑着飞就好了。",
+			say = "唔，要是這個掃把真的可以像魔女那樣騎著飛就好了。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -140,7 +140,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "那个，你听说了吗？听说港区的仓库闹鬼了呢！",
+			say = "那個，你聽說了嗎？聽說港區的倉庫鬧鬼了呢！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -152,7 +152,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "真的吗？我也听说了呢！好像是仓库里突然出现了幽灵一样的东西……",
+			say = "真的嗎？我也聽說了呢！好像是倉庫裡突然出現了幽靈一樣的東西……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -164,7 +164,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "怎么可能啦！虽然说是万圣夜，但是幽灵什么的是不存在的吧！",
+			say = "怎麼可能啦！雖然說是萬聖夜，但是幽靈什麼的是不存在的吧！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -177,7 +177,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "（仓库？幽灵？难道说……）",
+			say = "（倉庫？幽靈？難道說……）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -194,7 +194,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "兔美，兔吉，我们去这边！",
+			say = "兔美，兔吉，我們去這邊！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -220,7 +220,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "潜藏在港区里的幽灵的秘密，就让我贝利来揭开！",
+			say = "潛藏在港區裡的幽靈的秘密，就讓我貝利來揭開！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -237,7 +237,7 @@ return {
 			bgName = "star_level_bg_103",
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "不过，“三位善良的魔女”…贝利算一个的话，还有两个是指谁呢……",
+			say = "不過，“三位善良的魔女”…貝利算一個的話，還有兩個是指誰呢……",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -272,7 +272,7 @@ return {
 			dir = 1,
 			actor = 302051,
 			actorName = "{namecode:48}",
-			say = "呜呜…幽灵什么的，感觉好可怕啊。不、不过……",
+			say = "嗚嗚…幽靈什麼的，感覺好可怕啊。不、不過……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -298,7 +298,7 @@ return {
 			dir = 1,
 			actor = 101271,
 			nameColor = "#a9f548",
-			say = "啊！发现新的魔女了～",
+			say = "啊！發現新的魔女了～",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -325,7 +325,7 @@ return {
 			blackBg = true,
 			actorName = "???",
 			nameColor = "#a9f548",
-			say = "扮演几个人说话还是有点累的呢……",
+			say = "扮演幾個人說話還是有點累的呢……",
 			flashout = {
 				dur = 0.5,
 				black = true,
@@ -354,7 +354,7 @@ return {
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			say = "计划进行完美！那么，就祝你好运啦！",
+			say = "計畫進行完美！那麼，就祝你好運啦！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

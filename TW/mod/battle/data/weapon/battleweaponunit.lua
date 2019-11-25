@@ -1862,8 +1862,8 @@ end
 slot6.FilterSquare = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot2 = slot0.Battle.BattleTargetChoise.TargetWeightiest(slot0._host, nil, slot1)
+	--- BLOCK #0 1-35, warpins: 1 ---
+	slot6 = slot0.Battle.BattleTargetChoise.TargetWeightiest(slot0._host, nil, slot5)
 
 	--- END OF BLOCK #0 ---
 
@@ -1872,16 +1872,16 @@ slot6.FilterSquare = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 13-24, warpins: 0 ---
-	for slot6 = #slot1, 1, -1 do
+	--- BLOCK #1 36-47, warpins: 0 ---
+	for slot10 = #slot1, 1, -1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 13-18, warpins: 2 ---
-		if slot0:IsOutOfSquare(slot1[slot6]) then
+		--- BLOCK #0 36-41, warpins: 2 ---
+		if slot0:IsOutOfSquare(slot1[slot10]) then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 19-23, warpins: 1 ---
-			table.remove(slot1, slot6)
+			--- BLOCK #0 42-46, warpins: 1 ---
+			table.remove(slot1, slot10)
 			--- END OF BLOCK #0 ---
 
 
@@ -1894,7 +1894,7 @@ slot6.FilterSquare = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 24-24, warpins: 2 ---
+		--- BLOCK #1 47-47, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -1908,7 +1908,7 @@ slot6.FilterSquare = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 25-28, warpins: 1 ---
+	--- BLOCK #2 48-51, warpins: 1 ---
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -1916,16 +1916,16 @@ slot6.FilterSquare = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 29-41, warpins: 0 ---
-	for slot6 = #slot1, 1, -1 do
+	--- BLOCK #3 52-64, warpins: 0 ---
+	for slot10 = #slot1, 1, -1 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 29-35, warpins: 2 ---
-		if not table.contains(slot2, slot1[slot6]) then
+		--- BLOCK #0 52-58, warpins: 2 ---
+		if not table.contains(slot6, slot1[slot10]) then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 36-40, warpins: 1 ---
-			table.remove(slot1, slot6)
+			--- BLOCK #0 59-63, warpins: 1 ---
+			table.remove(slot1, slot10)
 			--- END OF BLOCK #0 ---
 
 
@@ -1938,7 +1938,7 @@ slot6.FilterSquare = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 41-41, warpins: 2 ---
+		--- BLOCK #1 64-64, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -1952,7 +1952,7 @@ slot6.FilterSquare = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 42-42, warpins: 1 ---
+	--- BLOCK #4 65-65, warpins: 1 ---
 	return slot1
 	--- END OF BLOCK #4 ---
 
@@ -2147,14 +2147,42 @@ end
 slot6.IsOutOfSquare = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-15, warpins: 1 ---
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = false
+	slot4 = (slot1:GetPosition().x - slot0._hostPos.x) * slot0:GetDirection()
 
-	if ((slot1:GetPosition().x - slot0._hostPos.x) * slot0:GetDirection() > 0 and slot4 <= slot0._frontRange) or (slot4 < 0 and math.abs(slot4) < slot0._backRange) then
+	if slot0._backRange < 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 29-29, warpins: 2 ---
-		slot3 = true
+		--- BLOCK #0 17-19, warpins: 1 ---
+		if slot4 > 0 and slot4 <= slot0._frontRange and math.abs(slot0._backRange) <= slot4 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 29-30, warpins: 1 ---
+			slot3 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 31-33, warpins: 1 ---
+		if (slot4 > 0 and slot4 <= slot0._frontRange) or (slot4 < 0 and math.abs(slot4) < slot0._backRange) then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 47-47, warpins: 2 ---
+			slot3 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
 		--- END OF BLOCK #0 ---
 
 
@@ -2168,11 +2196,11 @@ slot6.IsOutOfSquare = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 30-31, warpins: 3 ---
+	--- BLOCK #1 48-49, warpins: 7 ---
 	if not slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 32-34, warpins: 1 ---
+		--- BLOCK #0 50-52, warpins: 1 ---
 		return true
 		--- END OF BLOCK #0 ---
 
@@ -2181,7 +2209,7 @@ slot6.IsOutOfSquare = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 35-36, warpins: 1 ---
+		--- BLOCK #0 53-54, warpins: 1 ---
 		return false
 		--- END OF BLOCK #0 ---
 
@@ -2196,7 +2224,7 @@ slot6.IsOutOfSquare = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 37-37, warpins: 2 ---
+	--- BLOCK #2 55-55, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 

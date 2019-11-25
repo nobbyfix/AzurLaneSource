@@ -1262,7 +1262,7 @@ pg.gametip = {
 		key = "backyard_addFood_ok"
 	},
 	backyard_putFurniture_ok = {
-		tip = "保存成功",
+		tip = "儲存成功",
 		key = "backyard_putFurniture_ok"
 	},
 	backyard_backyardGranaryLayer_foodCountLimit = {
@@ -1346,8 +1346,18 @@ pg.gametip = {
 		key = "backyard_backyardGranaryLayer_buy_max_count"
 	},
 	backyard_backyardScene_comforChatContent1 = {
-		tip = "<size=25>經驗收益<material=outline c=#3D3D3DFF x1y-1><color=#A9F548FF>+$1%</color></material></size><size=25>\n<舒適度計算<material=outline c=#3D3D3DFF x1y=1><color=#A9F548FF>各類傢俱</color></material>中舒適度最高的<material=outline c=#3D3D3DFF x1y-1><color= #A9F548FF>前n件</color></material>(n依據各類傢俱<material=outline c=#3D3D3DFF x1y-1><color=#A9F548FF>可擺放數量</color></material>，地墊為<material=outline c=#3D3D3DFF x1y-1><color=#A9F548FF>$2</color></material>)的總和，不受擺放影響></size>",
+		tip = "<size=30>當前各類傢俱計入舒適度的數量：\n牆紙:<color=#92fc63>$1</color>/地板:<color=#92fc63>$4</color>/傢俱:<color=#92fc63>$2</color>/裝飾:<color=#92fc63>$3</color>/地墊:<color=#92fc63>$5</color>/牆飾:<color=#92fc63>$6</color>/收藏:<color=#92fc63>$7</color>\n</size>",
 		key = "backyard_backyardScene_comforChatContent1"
+	},
+	backyard_backyardScene_comforChatContent2 = {
+		tip = [[
+<size=45>$1</size>
+當前經驗收益<color=#92fc63>+$2%</color><size=30>
+
+<color=#92fc63>舒適度</color>不受擺放影響，計算<color=#92fc63>各類傢俱</color>中舒適度最高的<color=#92fc63>前n件</color>總和
+各類傢俱的n值受後宅擴建次數影響  當前次數:<color=#92fc63>$3</color>
+</size>]],
+		key = "backyard_backyardScene_comforChatContent2"
 	},
 	backyard_buyExtendItem_question = {
 		tip = "將花費<color=#A9F548>$1</color>,是否繼續？",
@@ -4012,7 +4022,7 @@ pg.gametip = {
 		key = "friend_resume_title"
 	},
 	friend_resume_data_title = {
-		tip = "數據",
+		tip = "統計",
 		key = "friend_resume_data_title"
 	},
 	batch_destroy = {
@@ -4559,7 +4569,7 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 		key = "help_shipinfo_attr",
 		tip = {
 			{
-				info = ".屬性說明："
+				info = "1.屬性說明："
 			},
 			{
 				info = "       耐久：角色的最大生命值",
@@ -4578,7 +4588,7 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 					atlas = "attricon",
 					posY = 0,
 					scale = 0.6,
-					path = "damage"
+					path = "cannon"
 				}
 			},
 			{
@@ -4642,17 +4652,27 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 				}
 			},
 			{
+				info = "       消耗：每次出擊所需消耗的石油",
+				icon = {
+					posX = 0,
+					atlas = "attricon",
+					posY = 0,
+					scale = 0.6,
+					path = "expend"
+				}
+			},
+			{
 				info = "       幸運：角色由過去的模因產生的屬性，在戰鬥中產生\n       細微的影響",
 				icon = {
 					posX = 0,
 					atlas = "attricon",
 					posY = 0,
 					scale = 1,
-					path = "icon_luck"
+					path = "luck"
 				}
 			},
 			{
-				info = "3.角色心情:\n       心情好的角色在出戰時可以享受經驗加成效果\n       心情值過低的角色出戰會減少好感度"
+				info = "2.角色心情:\n       心情好的角色在出戰時可以享受經驗加成效果\n       心情值過低的角色出戰會減少好感度"
 			}
 		}
 	},
@@ -5865,7 +5885,7 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 	ship_remould_warning_310014 = {
 		tip = [[
 此次改造操作將導致<color=#A9F548>$1</color>艦艇類型變化
-<color=#A9F548>【副武器】</color>變更為<color=#A9F548>【水偵】</ color>欄位<color=#A9F548><material=underline c=#A9F548 event=clickDetail>查看詳情</material></color>
+<color=#A9F548>【副武器】</color>變更為<color=#A9F548>【水偵】</color>欄位<color=#A9F548><material=underline c=#A9F548 event=clickDetail>查看詳情</material></color>
 <color=#A9F548>【副武器】</color>欄的裝備將被卸下
 是否確認繼續操作？]],
 		key = "ship_remould_warning_310014"
@@ -5873,7 +5893,7 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 	ship_remould_warning_310024 = {
 		tip = [[
 此次改造操作將導致<color=#A9F548>$1</color>艦艇類型變化
-<color=#A9F548>【副武器】</color>變更為<color=#A9F548>【水偵】</ color>欄位<color=#A9F548><material=underline c=#A9F548 event=clickDetail>查看詳情</material></color>
+<color=#A9F548>【副武器】</color>變更為<color=#A9F548>【水偵】</color>欄位<color=#A9F548><material=underline c=#A9F548 event=clickDetail>查看詳情</material></color>
 <color=#A9F548>【副武器】</color>欄的裝備將被卸下
 是否確認繼續操作？]],
 		key = "ship_remould_warning_310024"
@@ -5881,7 +5901,7 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 	ship_remould_warning_310034 = {
 		tip = [[
 此次改造操作將導致<color=#A9F548>$1</color>艦艇類型變化
-<color=#A9F548>【副武器】</color>變更為<color=#A9F548>【水偵】</ color>欄位<color=#A9F548><material=underline c=#A9F548 event=clickDetail>查看詳情</material></color>
+<color=#A9F548>【副武器】</color>變更為<color=#A9F548>【水偵】</color>欄位<color=#A9F548><material=underline c=#A9F548 event=clickDetail>查看詳情</material></color>
 <color=#A9F548>【副武器】</color>欄的裝備將被卸下
 是否確認繼續操作？]],
 		key = "ship_remould_warning_310034"
@@ -5889,7 +5909,7 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 	ship_remould_warning_310044 = {
 		tip = [[
 此次改造操作將導致<color=#A9F548>$1</color>艦艇類型變化
-<color=#A9F548>【副武器】</color>變更為<color=#A9F548>【水偵】</ color>欄位<color=#A9F548><material=underline c=#A9F548 event=clickDetail>查看詳情</material></color>
+<color=#A9F548>【副武器】</color>變更為<color=#A9F548>【水偵】</color>欄位<color=#A9F548><material=underline c=#A9F548 event=clickDetail>查看詳情</material></color>
 <color=#A9F548>【副武器】</color>欄的裝備將被卸下
 是否確認繼續操作？]],
 		key = "ship_remould_warning_310044"
@@ -6399,7 +6419,7 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 		key = "vote_rank_in_current_server"
 	},
 	words_auto_battle_label = {
-		tip = "自律戰鬥提醒",
+		tip = "自律戰鬥結束時震動提醒",
 		key = "words_auto_battle_label"
 	},
 	words_show_ship_name_label = {
@@ -6534,134 +6554,6 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 		tip = "未獲得$1",
 		key = "err_cloth_change_noship"
 	},
-	airi_error_code_500 = {
-		tip = "HTTP請求錯誤",
-		key = "airi_error_code_500"
-	},
-	airi_error_code_1100 = {
-		tip = "用戶尚未設置生日，不能進行購買",
-		key = "airi_error_code_1100"
-	},
-	airi_error_code_1101 = {
-		tip = "在AiriSDK後台無法找到ProductID對應的商品",
-		key = "airi_error_code_1101"
-	},
-	airi_error_code_1102 = {
-		tip = "用戶當月消費金額超過年齡對應的上限",
-		key = "airi_error_code_1102"
-	},
-	airi_error_code_1103 = {
-		tip = "在AiriSDK後台配置的商店訊息有誤",
-		key = "airi_error_code_1103"
-	},
-	airi_error_code_1104 = {
-		tip = "AppStore或GooglePlay收據驗證失敗",
-		key = "airi_error_code_1104"
-	},
-	airi_error_code_1105 = {
-		tip = "AiriSDK認為此購買請求無效",
-		key = "airi_error_code_1105"
-	},
-	airi_error_code_1106 = {
-		tip = "遊戲伺服器在付款回調中認為此購買請求無效",
-		key = "airi_error_code_1106"
-	},
-	airi_error_code_1107 = {
-		tip = "付款超時",
-		key = "airi_error_code_1107"
-	},
-	airi_error_code_1108 = {
-		tip = "在AppStore或GooglePlay商店後台無法找到對應商品",
-		key = "airi_error_code_1108"
-	},
-	airi_error_code_1109 = {
-		tip = "商店付款失敗",
-		key = "airi_error_code_1109"
-	},
-	airi_error_code_1110 = {
-		tip = "用戶付款取消",
-		key = "airi_error_code_1110"
-	},
-	airi_error_code_10001 = {
-		tip = "平台不支持",
-		key = "airi_error_code_10001"
-	},
-	airi_error_code_10002 = {
-		tip = "無法解析伺服器返回結果",
-		key = "airi_error_code_10002"
-	},
-	airi_error_code_10003 = {
-		tip = "伺服器返回結果參數缺失，可能SDK版本不相容",
-		key = "airi_error_code_10003"
-	},
-	airi_error_code_10101 = {
-		tip = "SDK尚未登入",
-		key = "airi_error_code_10101"
-	},
-	airi_error_code_10102 = {
-		tip = "初始化內購系統失敗",
-		key = "airi_error_code_10102"
-	},
-	airi_error_code_100000 = {
-		tip = "用戶token失效，已遷移帳號或無效內容",
-		key = "airi_error_code_100000"
-	},
-	airi_error_code_100200 = {
-		tip = "帳號已經在其他設備登入，將使用新帳號登入（大概是這個意思的描述）",
-		key = "airi_error_code_100200"
-	},
-	airi_error_code_100210 = {
-		tip = "該SDK伺服器不支持推特登入",
-		key = "airi_error_code_100210"
-	},
-	airi_error_code_100211 = {
-		tip = "該Twitter帳號並沒有綁定遊戲帳號",
-		key = "airi_error_code_100211"
-	},
-	airi_error_code_100212 = {
-		tip = "Twitter登入時發生錯誤",
-		key = "airi_error_code_100212"
-	},
-	airi_error_code_100400 = {
-		tip = "UID或繼承碼錯誤",
-		key = "airi_error_code_100400"
-	},
-	airi_error_code_100500 = {
-		tip = "用戶已經設置過生日了",
-		key = "airi_error_code_100500"
-	},
-	airi_error_code_100501 = {
-		tip = "生日格式錯誤",
-		key = "airi_error_code_100501"
-	},
-	airi_error_code_100610 = {
-		tip = "該SDK伺服器不支持推特登入",
-		key = "airi_error_code_100610"
-	},
-	airi_error_code_100611 = {
-		tip = "Twitter已與其它帳號連結",
-		key = "airi_error_code_100611"
-	},
-	airi_error_code_100612 = {
-		tip = "Twitter登入時發生錯誤。連結失敗。",
-		key = "airi_error_code_100612"
-	},
-	airi_error_code_100710 = {
-		tip = "該SDK伺服器不支持解除推特綁定",
-		key = "airi_error_code_100710"
-	},
-	airi_error_code_100711 = {
-		tip = "驗證的Twitter帳號不相容或帳號沒有綁定過",
-		key = "airi_error_code_100711"
-	},
-	airi_error_code_100712 = {
-		tip = "Twitter登入時發生錯誤，推特解綁失敗",
-		key = "airi_error_code_100712"
-	},
-	airi_error_code_other = {
-		tip = "未知錯誤",
-		key = "airi_error_code_other"
-	},
 	need_break_tip = {
 		tip = "需要突破",
 		key = "need_break_tip"
@@ -6698,15 +6590,15 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 大講堂功能詳情：
 
 •熟練度：
-完成三階突破的100級角色，出擊時將根據獲得經驗同時獲取一
-定比例的熟練度
+完成三階突破的100級角色，出擊時將根據獲得經驗同時
+獲取一定比例的熟練度。
 
 •大講堂等級：
-提升大講堂等級，可以增加儲存熟練度上限、熟練度消耗速度
-和獲取熟練度比例
+提升大講堂等級，可以增加儲存熟練度上限、熟練度消耗
+速度和獲取熟練度比例。
 
 •大講堂課程：
-根據課程表，大講堂每天將教授不同的課程
+根據課程表，大講堂每天將教授不同的課程。
 
 •課程表：
 週一：《驅逐雷擊教學—魚雷發射技巧分析》
@@ -6717,15 +6609,15 @@ NPC角色正式加入時，保留強化、突破狀態及技能等級；
 週六：《巡洋實戰教學—火力最大化手段分析》
 週日：大講堂休息，出擊獲取熟練度比例翻倍
 
-（淺水重炮艦參加戰艦的課程，維修艦可以參加驅逐與巡洋
-的課程，航戰可以參加航母與戰艦的課程， 艇參加驅逐的
-課程）
+（淺水重炮艦參加戰艦的課程，維修艦可以參加驅逐與
+巡洋的課程，航戰可以參加航母與戰艦的課程）
 
 •上課：
-大講堂課程最大時長為12小時，下課時扣除消耗的熟練度，角
-色獲取經驗
-正在後宅休息和訓練的角色無法上課
-上課會降低角色的心情，心情不好的話就無法開始上課了]]
+大講堂課程最大時長為12小時，下課時扣除消耗的熟練
+度，角色獲取經驗。
+正在後宅休息和訓練的角色無法上課。
+上課會降低角色的心情，心情不好的話就無法開始上課
+了。]]
 			}
 		}
 	},
@@ -7796,11 +7688,11 @@ $3]],
 		key = "resource_verify_warn"
 	},
 	resource_verify_fail = {
-		tip = "資源修復已完成，請重新打開遊戲並進行更新，點擊確認關閉遊戲[$1]",
+		tip = "本地資源異常，請重新打開遊戲並進行更新，點擊確認關閉遊戲。$1",
 		key = "resource_verify_fail"
 	},
 	resource_verify_success = {
-		tip = "資源修復已完成",
+		tip = "本地資源沒有異常",
 		key = "resource_verify_success"
 	},
 	resource_clear_all = {
@@ -8072,7 +7964,7 @@ $3]],
 		key = "commander_skill_point_noengough"
 	},
 	buildship_new_tip = {
-		tip = "三笠、比叡、濱風、黑潮、親潮出現機率UP!",
+		tip = "翔鶴、野分、伊勢、日向出現機率UP!",
 		key = "buildship_new_tip"
 	},
 	buildship_heavy_tip = {
@@ -8080,7 +7972,7 @@ $3]],
 		key = "buildship_heavy_tip"
 	},
 	buildship_light_tip = {
-		tip = "輕型艦: 輕型艦船的建造，包含驅逐、輕巡、輕航、維修、重炮等艦船",
+		tip = "吹雪、卯月建造追加！",
 		key = "buildship_light_tip"
 	},
 	buildship_special_tip = {
@@ -8754,6 +8646,10 @@ $3]],
 		tip = "已將<color=#92fc63>$1</color>取消常用",
 		key = "ship_preference_non"
 	},
+	school_title_dajiangtang = {
+		tip = "大講堂",
+		key = "school_title_dajiangtang"
+	},
 	school_title_shitang = {
 		tip = "海軍食堂",
 		key = "school_title_shitang"
@@ -8930,7 +8826,7 @@ $3]],
 		key = "world_boss_award_limit"
 	},
 	backyard_is_loading = {
-		tip = "后宅准备中，请稍等～",
+		tip = "後宅準備中，請稍等～",
 		key = "backyard_is_loading"
 	},
 	levelScene_loop_help_tip = {
@@ -8942,10 +8838,11 @@ $3]],
 
 啟用周回模式後，海域將有以下變化：
 
-1 通常海域困難模式中<color=#A9F548>不會出現</color>敵人護衛艦隊
-2 活動關卡的敵人設置將會出現一部分變化
-3 活動關卡中我方的移動格數<color=#A9F548>不會受到移動力限制</color>，可自由移動
-]]
+1 <color=#A9F548>通常海域（主線關卡）</color>
+困難模式中<color=#A9F548>不會出現</color>敵人護衛艦隊
+2 <color=#A9F548>活動關卡（特殊作戰）</color>
+1）敵人設置將會出現一部分變化，但仍然會出現護衛艦
+2）我方的移動格數<color=#A9F548>不會受到移動力限制</color>，可自由移動]]
 			}
 		}
 	},
@@ -9152,42 +9049,8 @@ $3]],
 		key = "black_white_grid_switch_tip"
 	},
 	no_way_to_escape = {
-		key = "no_way_to_escape",
-		tip = {
-			{
-				info = "活動說明："
-			},
-			{
-				info = "1.淨化虛擬空間共有5張遊戲圖，可以在活動期間內反復遊玩，\n但僅有前4張圖<color=#A9F548>首次</color>淨化成功時可獲得獎勵。"
-			},
-			{
-				info = "2.前四張遊戲圖為固定圖，第五張遊戲圖為隨機圖。"
-			},
-			{
-				info = "3."
-			},
-			{
-				info = "4.需要先完成上一張遊戲圖，才能進行下一張遊戲圖。"
-			},
-			{
-				info = "5.每場遊戲中，玩家擁有3次翻轉次數。"
-			},
-			{
-				info = "6.點擊遊戲圖上的同一格兩次，即可進行一次翻轉操作。"
-			},
-			{
-				info = "7.執行翻轉操作將使以點擊格為中心的<color=#A9F548>九格</color>顏色發生<color=#A9F548>反轉</color>。\n（黑色格變為白色格，白色格變為黑色格）"
-			},
-			{
-				info = "8.進行3次翻轉後遊戲進行結算。"
-			},
-			{
-				info = "9.結算時，遊戲圖上的每個黑色塊<color=#A9F548>-1</color>分，每個白色塊<color=#A9F548>+1</color>分。\n最終分數<color=#A9F548>≥0</color>時視為淨化完成，<color=#A9F548>＜0</color>時視為淨化失敗。"
-			},
-			{
-				info = "10.每場遊戲中，玩家擁有3次翻轉次數。"
-			}
-		}
+		tip = "無路可逃",
+		key = "no_way_to_escape"
 	},
 	word_attr_ac = {
 		tip = "制空",
@@ -10079,11 +9942,11 @@ TIPS：
 		key = "name_zhanliejahe"
 	},
 	change_skin_secretary_ship_success = {
-		tip = "更换时装并设为秘书舰成功",
+		tip = "更換換裝並設為秘書艦成功",
 		key = "change_skin_secretary_ship_success"
 	},
 	change_skin_secretary_ship = {
-		tip = "更换同时设为秘书舰",
+		tip = "更換同時設為秘書艦",
 		key = "change_skin_secretary_ship"
 	},
 	word_billboard = {
@@ -10180,6 +10043,260 @@ TIPS：
 	text_inconsume = {
 		tip = "不消耗",
 		key = "text_inconsume"
+	},
+	option_desc1 = {
+		tip = "功能開啟後，艦船顯示自訂角色名稱",
+		key = "option_desc1"
+	},
+	option_desc2 = {
+		tip = "功能開啟後，自律戰鬥結束時設備震動提示戰鬥結束",
+		key = "option_desc2"
+	},
+	option_desc3 = {
+		tip = "功能開啟後，獲得超稀有及以上稀有度的艦船時設備震動提示",
+		key = "option_desc3"
+	},
+	option_desc4 = {
+		tip = "功能關閉後，重複獲得已擁有的稀有及以下稀有度的艦船時（僅限海域掉落）取消彈出艦船獲得介面",
+		key = "option_desc4"
+	},
+	option_desc5 = {
+		tip = "功能開啟後，點擊遊戲介面可顯示觸控特效",
+		key = "option_desc5"
+	},
+	option_desc6 = {
+		tip = "功能開啟後，過場圖片適應設備最小邊框，不顯示黑邊",
+		key = "option_desc6"
+	},
+	music_collection = {
+		key = "music_collection",
+		tip = {
+			{
+				info = "活动说明："
+			},
+			{
+				info = "1.活动期间，参与活动收集「周边」，收集全部<color=#92fc63>15</color>个周边\n后可获得限定家具「激奏纪念章」"
+			},
+			{
+				info = "2.参与以下内容可以收集「周边」：\n   通过活动关卡、完成活动任务、累积激奏徽章"
+			},
+			{
+				info = "3.通过一次高难关后重返SP1—SP5，收集全新的周边吧！\n4.领取时间截止11月20日23点59分"
+			}
+		}
+	},
+	music_main = {
+		key = "music_main",
+		tip = {
+			{
+				info = "<color=#92fc63>10.31-11.14</color>期间开启限时活动「激奏的Polaris」"
+			},
+			{
+				info = "1.通过特别作战获取「激奏徽章」，在「徽章收集」和\n「补给商店」处兑换丰厚奖励"
+			},
+			{
+				info = "2.完成「特型偶像」的七日任务，获取「桐」限定换装"
+			},
+			{
+				info = [[
+3.在「激奏舞台」完成音乐小游戏，获取B评价以上时
+可以提高「演奏力」，收集<color=#92fc63>7</color>次「演奏力」可以获得限
+定角色「谢菲尔德(μ兵装)」
+<color=#92fc63>注意：</color>每日可获得一次机会，可累计，未达到B评价以上
+时不会消耗次数，次数用尽后仍然可以进行音乐小游戏]]
+			},
+			{
+				info = [[
+4.在活动中收集全部<color=#92fc63>15</color>个「周边」道具后，可在「纪念
+章」处获取「激奏纪念章」
+  详细获取条件可在「纪念章」界面查看
+5.每隔一段时间「Polaris」角色会在「JUUs」中发布
+新的动态，通过「徽章收集」获取「JUUs动态」，拥有
+的「JUUs动态」越多可以查看的动态越多
+  详细说明可在「JUUs」界面查看
+6.点击「限时建造」可以前往建造界面
+7.点击「换装商店」可以前往换装商店界面]]
+			}
+		}
+	},
+	music_juus = {
+		key = "music_juus",
+		tip = {
+			{
+				info = "「JUUs」说明："
+			},
+			{
+				info = "1.活动期间，每隔一段时间「Polaris」角色会发布新的\n动态，通过「徽章收集」获取「JUUs动态」来查看"
+			},
+			{
+				info = "2.拥有的「JUUs动态」越多，可以查看的动态就越多"
+			},
+			{
+				info = "3.「JUUs」可能还会出现其他角色的互动，不要忘记\n查看哦"
+			},
+			{
+				info = [[
+4.主界面、Live会场以及「徽章收集」界面均可以进入
+「JUUs」
+5.当有新的信息可以查看时，「JUUs」入口处会有提示
+6.您可以通过点赞、转发、评论操作参与互动
+<color=#92fc63>注意：</color>点赞后不可取消点赞，进行评论后经过一段时间
+可以收到回复
+7.「徽章收集」界面会统计「Polaris」角色的热度值，
+在「JUUs」中进行点赞操作来增加她们的热度值吧！]]
+			}
+		}
+	},
+	ins_word_day = {
+		tip = "$1天前",
+		key = "ins_word_day"
+	},
+	ins_word_hour = {
+		tip = "$1小时前",
+		key = "ins_word_hour"
+	},
+	ins_word_minu = {
+		tip = "$1分钟前",
+		key = "ins_word_minu"
+	},
+	ins_word_like = {
+		tip = "$1 次赞",
+		key = "ins_word_like"
+	},
+	ins_click_like_success = {
+		tip = "点赞成功",
+		key = "ins_click_like_success"
+	},
+	ins_push_comment_success = {
+		tip = "评论成功",
+		key = "ins_push_comment_success"
+	},
+	skinshop_live2d_fliter_failed = {
+		tip = "當前沒有匹配換裝可篩選",
+		key = "skinshop_live2d_fliter_failed"
+	},
+	help_music_game = {
+		key = "help_music_game",
+		tip = {
+			{
+				info = [[
+<size=31><color=#92fc63>TIPS：
+没有演奏次数也可以进行游戏，但无法提升演奏力</color></size>
+
+1.点击开始演奏，在5秒的倒计时后开始游戏，完成<color=#92fc63>B</color>以
+上评价即可累计演奏力
+2.当音符到达谱面最中间时，按下对应按键进行演奏
+3.简单模式：
+3.1.所有音符单击屏幕即可演奏
+3.2.无论点击左右半屏均可进行演奏
+4.困难模式：
+4.1.屏幕左右半屏分边对应左侧(红色)、右侧(蓝色)音符
+4.2.音符后跟随的白色长条代表需要长按直至长条结束
+4.3.黄色音符需要两侧同时点击
+5.在歌曲选择界面，可以调整音符的平移速度，1x为最
+慢，4x为最快
+6.根据演奏时机，会有不同的评价，perfect获得<color=#92fc63>600</color>分，
+good获得<color=#92fc63>300</color>分，miss不得分
+7.perfect和good为有效演奏，均可累计combo，累计
+combo达到10/20/40/60/80/100时，分别为每次有效
+演奏额外附加<color=#92fc63>100</color>分
+8.FullCombo额外获得<color=#92fc63>5000</color>分]]
+			}
+		}
+	},
+	restart_music_game = {
+		tip = "重新开始将失去已经获得的分数，是否确认？",
+		key = "restart_music_game"
+	},
+	reselect_music_game = {
+		tip = "返回选歌将失去已经获得的分数，是否确认？",
+		key = "reselect_music_game"
+	},
+	pocky_jiujiu = {
+		tip = "啾啾日常",
+		key = "pocky_jiujiu"
+	},
+	pocky_jiujiu_desc = {
+		tip = "無情的打卡機器傳來了“請打卡”的聲音",
+		key = "pocky_jiujiu_desc"
+	},
+	pocky_help = {
+		key = "pocky_help",
+		tip = {
+			{
+				info = "活動說明："
+			},
+			{
+				info = "1.活動期間，參與完成全部打卡任務，委託任務，生產任\n務後可獲得貝爾法斯特限定換裝「女僕長的購物日」"
+			},
+			{
+				info = "2.每日解鎖一批任務，完成當天的打卡任務解鎖當天委託\n任務，完成當前任務方可解鎖下一批任務。前一天未完成\n的任務可以積累到後續完成。"
+			},
+			{
+				info = "3.累計消耗石油以完成生產任務，可提前消耗石油進行累\n計。"
+			},
+			{
+				info = "4.達成指定目標完成女僕長的委託任務，登錄完成打卡任\n務。\n5.領取時間截止12月15日23點59分"
+			}
+		}
+	},
+	secretary_help = {
+		key = "secretary_help",
+		tip = {
+			{
+				info = "秘書組功能說明："
+			},
+			{
+				info = "1.秘書組欄位需要通過主線關卡開放，秘書組可以放入\n同名艦船"
+			},
+			{
+				info = "2.僅有排列在秘書組<color=#92fc63>最左側的秘書艦</color>可以獲得<color=#92fc63>秘書艦好感\n度加成</color>"
+			},
+			{
+				info = "3.當回到主介面觸發秘書艦回港台詞時，將隨機展示一名\n秘書組成員"
+			},
+			{
+				info = "4.通過換裝設置，可以對每個秘書組成員使用的換裝進行\n詳細設置"
+			},
+			{
+				info = "5.在秘書組介面，拖動角色可以直接更換秘書組成員的位\n置"
+			},
+			{
+				info = "6.在主介面可以通過切換功能，切換當前展示的秘書艦\n"
+			}
+		}
+	},
+	secretary_unlock2 = {
+		tip = "完成關卡3-4後解鎖",
+		key = "secretary_unlock2"
+	},
+	secretary_unlock3 = {
+		tip = "完成關卡6-4後解鎖",
+		key = "secretary_unlock3"
+	},
+	secretary_unlock4 = {
+		tip = "完成關卡9-4後解鎖",
+		key = "secretary_unlock4"
+	},
+	secretary_unlock5 = {
+		tip = "完成關卡12-4後解鎖",
+		key = "secretary_unlock5"
+	},
+	secretary_closed = {
+		tip = "暫未開放",
+		key = "secretary_closed"
+	},
+	confirm_unlock = {
+		tip = "是否解鎖$1",
+		key = "confirm_unlock"
+	},
+	secretary_pos_save = {
+		tip = "是否儲存當前秘書艦位置調整？",
+		key = "secretary_pos_save"
+	},
+	secretary_pos_save_success = {
+		tip = "儲存成功",
+		key = "secretary_pos_save_success"
 	}
 }
 

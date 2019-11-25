@@ -29,5 +29,6 @@ require("Mgr/SystemGuideMgr")
 require("Mgr/Sdk/SdkMgr")
 require("Mgr/Tracker/TrackerMgr")
 require("Mgr/DeepLinking/YongshiDeepLinkingMgr")
+require("Mgr/Custom/DynamicBgMgr")
 
 return

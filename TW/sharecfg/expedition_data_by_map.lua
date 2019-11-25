@@ -318,6 +318,82 @@ pg.expedition_data_by_map = {
 			}
 		}
 	},
+	{
+		map = 7,
+		name = "混沌之夜",
+		bgm = "level",
+		type = 1,
+		on_activity = 0,
+		title = "7",
+		enter_story = "",
+		level_limit = 30,
+		uifx = "",
+		guide_id = "",
+		ani_name = "",
+		cloud_suffix = "purple",
+		bg = "map_7",
+		destory_icon_suffix = "blue",
+		animtor = 0,
+		bind_map = 0,
+		clouds_pos = {
+			{
+				76,
+				263
+			},
+			{
+				881,
+				44
+			},
+			{
+				23,
+				-143
+			},
+			{
+				473,
+				163
+			},
+			{
+				514,
+				-245
+			},
+			{
+				830,
+				-109
+			}
+		},
+		drop_by_map_display = {
+			{
+				{
+					2,
+					53040
+				}
+			},
+			{
+				{
+					2,
+					53041
+				}
+			},
+			{
+				{
+					2,
+					53042
+				}
+			},
+			{
+				{
+					2,
+					53043
+				}
+			},
+			{
+				{
+					2,
+					53044
+				}
+			}
+		}
+	},
 	[201] = {
 		map = 201,
 		name = "虎！虎！虎！",
@@ -1351,7 +1427,7 @@ pg.expedition_data_by_map = {
 		name = "『紅染的參訪者』-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 4,
-		on_activity = 0,
+		on_activity = 40017,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "GUOQING1",
@@ -1392,7 +1468,7 @@ pg.expedition_data_by_map = {
 		name = "『紅染的參訪者』-後篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 4,
-		on_activity = 0,
+		on_activity = 40025,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "GUOQING11",
@@ -1433,7 +1509,7 @@ pg.expedition_data_by_map = {
 		name = "『紅染的參訪者』-前篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 0,
+		on_activity = 40017,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "GUOQING1",
@@ -1474,7 +1550,7 @@ pg.expedition_data_by_map = {
 		name = "『紅染的參訪者』-後篇|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 5,
-		on_activity = 0,
+		on_activity = 40025,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "GUOQING11",
@@ -1515,7 +1591,7 @@ pg.expedition_data_by_map = {
 		name = "『紅染的參訪者』·EX|| ||CHAPTER EX||E.X.",
 		bgm = "level02",
 		type = 8,
-		on_activity = 0,
+		on_activity = 40025,
 		title = "EX",
 		drop_by_map_display = "",
 		enter_story = "",
@@ -3030,6 +3106,7 @@ pg.expedition_data_by_map = {
 		4,
 		5,
 		6,
+		7,
 		201,
 		202,
 		203,

@@ -13,7 +13,7 @@ return {
 			blackBg = true,
 			actor = 900028,
 			nameColor = "#a9f548",
-			say = "{namecode:95}姐，看我们找到了什么！这就是前往“圣域”的钥匙！",
+			say = "{namecode:95}姐，看我們找到了什麼！這就是前往“聖域”的鑰匙！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -33,7 +33,7 @@ return {
 			blackBg = true,
 			actor = 900027,
 			nameColor = "#a9f548",
-			say = "这是…你是从哪里得到的？",
+			say = "這是…你是從哪裡得到的？",
 			shake = {
 				speed = 1,
 				number = 3
@@ -53,7 +53,7 @@ return {
 			blackBg = true,
 			actor = 900028,
 			nameColor = "#a9f548",
-			say = "嘿嘿，要说情报工作的话，自然是{namecode:11}的功劳！这一次，你不会拒绝我了吧~",
+			say = "嘿嘿，要說情報工作的話，自然是{namecode:11}的功勞！這一次，你不會拒絕我了吧~",
 			shake = {
 				speed = 1,
 				number = 3
@@ -73,7 +73,7 @@ return {
 			blackBg = true,
 			actor = 900027,
 			nameColor = "#a9f548",
-			say = "如果情报属实，确实得立刻行动了，立即召集大家出发",
+			say = "如果情報屬實，確實得立刻行動了，立即召集大家出發",
 			shake = {
 				speed = 1,
 				number = 3
@@ -93,7 +93,7 @@ return {
 			blackBg = true,
 			actor = 900028,
 			nameColor = "#a9f548",
-			say = "这一次，一定要揭穿她们的阴谋！",
+			say = "這一次，一定要揭穿她們的陰謀！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -112,7 +112,7 @@ return {
 			side = 2,
 			actor = 307060,
 			actorName = "{namecode:96}",
-			say = "回头一想，也许连这个圈套也只是阴谋的一部分…",
+			say = "回頭一想，也許連這個圈套也只是陰謀的一部分…",
 			flashout = {
 				black = true,
 				dur = 1.5,
@@ -144,7 +144,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 2,
 			nameColor = "#a9f548",
-			say = "可恶，又被她们暗算了么",
+			say = "可惡，又被她們暗算了嗎",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

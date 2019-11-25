@@ -237,7 +237,7 @@ return {
 			dir = 1,
 			actor = 102080,
 			nameColor = "#a9f548",
-			say = "噢噢！多睡觉就能有所成长吗！我记下来了！",
+			say = "喔喔！多睡觉就能有所成长吗！我记下来了！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -49,7 +49,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "來到指揮室的時候，發現貝利和本森都在裡面",
+			say = "來到指揮室的時候，發現貝利和班森都在裡面",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -72,7 +72,7 @@ return {
 			}
 		},
 		{
-			say = "誒嘿嘿…被本森姐姐誇獎了呢",
+			say = "誒嘿嘿…被班森姐姐誇獎了呢",
 			side = 0,
 			bgName = "bg_story_task",
 			dir = 1,
@@ -171,7 +171,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "指揮官早安～那麼本超絕可愛美少女本森就懂事地不打擾指揮官工作了~",
+			say = "指揮官早安～那麼本超絕可愛美少女班森就懂事地不打擾指揮官工作了~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -185,7 +185,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "本森今天看起來也在正常運作的樣子。",
+			say = "班森今天看起來也在正常運作的樣子。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -213,7 +213,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯……最開始，只是跟著本森姐姐一起唱歌跳舞，慢慢地就真的喜歡上了呢。",
+			say = "嗯……最開始，只是跟著班森姐姐一起唱歌跳舞，慢慢地就真的喜歡上了呢。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -227,7 +227,7 @@ return {
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			say = "……原來都是向本森學的嗎。",
+			say = "……原來都是向班森學的嗎。",
 			dialogShake = {
 				speed = 0.15,
 				x = 22.5,

@@ -157,7 +157,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "噢噢噢——这就是帝国御龙使的实力么！",
+			say = "喔喔喔——这就是帝国御龙使的实力么！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

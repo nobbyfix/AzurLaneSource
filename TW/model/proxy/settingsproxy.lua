@@ -9,11 +9,67 @@ slot0.onRegister = function (slot0)
 	slot0._showMaxLevelHelp = PlayerPrefs.GetInt("maxLevelHelp", 0) > 0
 	slot0.nextTipAoutBattleTime = PlayerPrefs.GetInt("AutoBattleTip", 0)
 	slot0._setFlagShip = PlayerPrefs.GetInt("setFlagShip", 0) > 0
-	slot0._screenRatio = PlayerPrefs.GetFloat("SetScreenRatio", 2)
+	slot0._screenRatio = PlayerPrefs.GetFloat("SetScreenRatio", ADAPT_TARGET)
 	NotchAdapt.CheckNotchRatio = slot0._screenRatio
 	slot0.nextTipActBossExchangeTicket = nil
 
 	slot0:resetEquipSceneIndex()
+end
+
+slot0.getSkinPosSetting = function (slot0, slot1)
+	if PlayerPrefs.HasKey(tostring(slot1) .. "_scale") then
+		return PlayerPrefs.GetFloat(tostring(slot1) .. "_x", 0), PlayerPrefs.GetFloat(tostring(slot1) .. "_y", 0), PlayerPrefs.GetFloat(tostring(slot1) .. "_scale", 1)
+	else
+		return nil
+	end
+end
+
+slot0.setSkinPosSetting = function (slot0, slot1, slot2, slot3, slot4)
+	PlayerPrefs.SetFloat(tostring(slot1) .. "_x", slot2)
+	PlayerPrefs.SetFloat(tostring(slot1) .. "_y", slot3)
+	PlayerPrefs.SetFloat(tostring(slot1) .. "_scale", slot4)
+	PlayerPrefs.Save()
+end
+
+slot0.resetSkinPosSetting = function (slot0, slot1)
+	PlayerPrefs.DeleteKey(tostring(slot1) .. "_x")
+	PlayerPrefs.DeleteKey(tostring(slot1) .. "_y")
+	PlayerPrefs.DeleteKey(tostring(slot1) .. "_scale")
+	PlayerPrefs.Save()
+end
+
+slot0.getCharacterSetting = function (slot0, slot1, slot2)
+	return PlayerPrefs.GetInt(tostring(slot1) .. "_" .. slot2, 1) > 0
+end
+
+slot0.setCharacterSetting = function (slot0, slot1, slot2, slot3)
+	PlayerPrefs.SetInt(tostring(slot1) .. "_" .. slot2, (slot3 and 1) or 0)
+	PlayerPrefs.Save()
+end
+
+slot0.getCurrentSecretaryIndex = function (slot0)
+	if PlayerPrefs.GetInt("currentSecretaryIndex", 1) > #getProxy(PlayerProxy):getData().characters then
+		slot0:setCurrentSecretaryIndex(1)
+
+		return 1
+	else
+		return slot1
+	end
+end
+
+slot0.rotateCurrentSecretaryIndex = function (slot0)
+	if #getProxy(PlayerProxy):getData().characters < PlayerPrefs.GetInt("currentSecretaryIndex", 1) + 1 then
+		slot1 = 1
+	end
+
+	slot0:setCurrentSecretaryIndex(slot1)
+
+	return slot1
+end
+
+slot0.setCurrentSecretaryIndex = function (slot0, slot1)
+	PlayerPrefs.SetInt("currentSecretaryIndex", slot1)
+	PlayerPrefs.Save()
 end
 
 slot0.SetFlagShip = function (slot0, slot1)
@@ -27,24 +83,6 @@ end
 
 slot0.GetSetFlagShip = function (slot0)
 	return slot0._setFlagShip
-end
-
-slot0.SetLive2dEnable = function (slot0, slot1)
-	if slot0._ShowLive2d ~= slot1 then
-		slot0._ShowLive2d = slot1
-
-		PlayerPrefs.SetInt("disableLive2d", (slot1 and 1) or 0)
-		PlayerPrefs.Save()
-	end
-end
-
-slot0.SetBGEnable = function (slot0, slot1)
-	if slot0._ShowBg ~= slot1 then
-		slot0._ShowBg = slot1
-
-		PlayerPrefs.SetInt("disableBG", (slot1 and 1) or 0)
-		PlayerPrefs.Save()
-	end
 end
 
 slot0.getUserAgreement = function (slot0)

@@ -24,6 +24,10 @@ slot0.isResurrectionRace = function (slot0)
 	return slot0:getConfig("type") == 4
 end
 
+slot0.isFinalsRace = function (slot0)
+	return slot0:getConfig("type") == 5
+end
+
 slot0.getList = function (slot0)
 	return slot0.list
 end
@@ -76,7 +80,7 @@ slot0.GetStage = function (slot0)
 end
 
 slot0.getTimeDesc = function (slot0)
-	return table.concat(slot0:getConfig("time_vote")[1][1], ".") .. ((slot0:getConfig("type") == 1 and i18n("word_maintain")) or "(00:00)") .. " ~ " .. table.concat(slot1[2][1], ".") .. "(23:59)"
+	return table.concat(slot0:getConfig("time_vote")[1][1], ".") .. ((slot0:getConfig("type") == 1 and i18n("word_maintain")) or "(" .. string.format("%02u:%02u", slot1[1][2][1], slot1[1][2][2]) .. ")") .. " ~ " .. table.concat(slot1[2][1], ".") .. "(" .. string.format("%02u:%02u", slot1[2][2][1], slot1[2][2][2]) .. ")"
 end
 
 slot0.GetVotes = function (slot0, slot1)
@@ -85,6 +89,27 @@ slot0.GetVotes = function (slot0, slot1)
 	else
 		return (slot0:isWeb() and slot1:getNetVotes()) or slot1:GetGameVotes()
 	end
+end
+
+slot0.GetDialayGroupForFinals = function (slot0)
+	slot1 = {}
+	slot2 = {}
+
+	for slot6, slot7 in ipairs(slot0.list) do
+		if slot6 <= 3 then
+			table.insert(slot1, slot7)
+		else
+			table.insert(slot2, slot7)
+		end
+	end
+
+	for slot6 = #slot1, 1, -1 do
+		if slot0:GetVotes(slot1[slot6]) == 0 then
+			table.insert(slot2, 1, table.remove(slot1, slot6))
+		end
+	end
+
+	return slot1, slot2
 end
 
 return slot0

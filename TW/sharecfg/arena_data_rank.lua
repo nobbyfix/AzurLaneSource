@@ -223,7 +223,7 @@ pg.arena_data_rank = {
 		}
 	},
 	{
-		name = "五星上將",
+		name = "一級上將",
 		refresh_limit = 5,
 		k_value = 20,
 		battle_award = 90,

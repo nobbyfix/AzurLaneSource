@@ -63,7 +63,11 @@ slot0.OnFirstFlush = function (slot0)
 end
 
 slot0.OnUpdateFlush = function (slot0)
-	slot0.list:align(28)
+	if pg.TimeMgr.GetInstance():GetServerTime() < 1572537600 then
+		slot0.monthDays = 28
+	end
+
+	slot0.list:align(slot0.monthDays)
 
 	if slot0.specialTag then
 		slot1 = slot0:findTF("DayNumText")

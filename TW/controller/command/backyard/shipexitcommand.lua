@@ -22,11 +22,9 @@ class("ShipExitCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			slot0:updateStateInfo34(0, 0)
 			slot1:exitYardById(slot2)
 			slot0:updateState(Ship.STATE_NORMAL)
-			slot0.updateState:updateShip(slot0)
-
-			slot1 = slot0.exp
-
-			slot0.updateState:sendNotification(GAME.EXIT_SHIP_DONE, slot0)
+			slot0:addExp(slot1)
+			slot0.addExp:updateShip(slot0)
+			slot0.addExp:sendNotification(GAME.EXIT_SHIP_DONE, slot0)
 		else
 			pg.TipsMgr.GetInstance():ShowTips(errorTip("backyard_shipExit", slot0.result))
 		end

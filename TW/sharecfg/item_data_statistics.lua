@@ -512,6 +512,54 @@ pg.item_data_statistics = {
 		price = {},
 		index = {}
 	},
+	[39] = {
+		display = "烈風T1設計圖",
+		rarity = 2,
+		type = 9,
+		name = "烈風T1設計圖",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 39,
+		icon = "Equips/37300",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[40] = {
+		display = "流星T1設計圖",
+		rarity = 2,
+		type = 9,
+		name = "流星T1設計圖",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 40,
+		icon = "Equips/38200",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[41] = {
+		display = "瑞雲T2設計圖",
+		rarity = 2,
+		type = 9,
+		name = "瑞雲T2設計圖",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 41,
+		icon = "Equips/39200",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
 	[1001] = {
 		display = "可樂配洋芋片即是正義！",
 		rarity = 4,
@@ -1680,6 +1728,54 @@ pg.item_data_statistics = {
 		price = {},
 		index = {}
 	},
+	[10087] = {
+		display = "烈風T2設計圖",
+		rarity = 3,
+		type = 9,
+		name = "烈風T2設計圖",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 10087,
+		icon = "Equips/37300",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[10088] = {
+		display = "流星T2設計圖",
+		rarity = 3,
+		type = 9,
+		name = "流星T2設計圖",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 10088,
+		icon = "Equips/38200",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[10089] = {
+		display = "瑞雲T3設計圖",
+		rarity = 3,
+		type = 9,
+		name = "瑞雲T3設計圖",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 10089,
+		icon = "Equips/39200",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
 	[11000] = {
 		display = "艦艇維修設備T3設計圖",
 		rarity = 4,
@@ -2028,6 +2124,38 @@ pg.item_data_statistics = {
 		link_id = 0,
 		id = 11028,
 		icon = "Equips/540",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[11032] = {
+		display = "烈風T3設計圖",
+		rarity = 4,
+		type = 9,
+		name = "烈風T3設計圖",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 11032,
+		icon = "Equips/37300",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[11033] = {
+		display = "流星T3設計圖",
+		rarity = 4,
+		type = 9,
+		name = "流星T3設計圖",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 11033,
+		icon = "Equips/38200",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -5274,7 +5402,7 @@ pg.item_data_statistics = {
 		display_icon = {
 			{
 				2,
-				59901,
+				69901,
 				1
 			},
 			{
@@ -5321,7 +5449,7 @@ pg.item_data_statistics = {
 		display_icon = {
 			{
 				2,
-				59902,
+				69902,
 				1
 			},
 			{
@@ -5368,7 +5496,7 @@ pg.item_data_statistics = {
 		display_icon = {
 			{
 				2,
-				59903,
+				69903,
 				1
 			},
 			{
@@ -5415,7 +5543,7 @@ pg.item_data_statistics = {
 		display_icon = {
 			{
 				2,
-				59904,
+				69904,
 				1
 			},
 			{
@@ -5648,10 +5776,10 @@ pg.item_data_statistics = {
 		index = {}
 	},
 	[50004] = {
-		display = "甜咖哩還是辣咖哩，這是一個問題！ <color=#A9F548>（提高經驗加成5%，持續60分鐘）</color>",
+		display = "甜咖喱還是辣咖喱，這是一個問題！ <color=#A9F548>（提高經驗加成5%，持續60分鐘）</color>",
 		rarity = 2,
 		type = 3,
-		name = "海軍咖哩",
+		name = "海軍咖喱",
 		shop_id = 50007,
 		shiptrans_id = 0,
 		virtual_type = 0,
@@ -6176,6 +6304,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -6213,16 +6351,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			}
 		},
@@ -6253,6 +6381,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -6290,16 +6428,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			}
 		},
@@ -6330,6 +6458,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -6367,16 +6505,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			}
 		},
@@ -6407,6 +6535,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -6444,16 +6582,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			}
 		},
@@ -6484,6 +6612,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -6521,16 +6659,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			}
 		},
@@ -6561,6 +6689,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -6598,16 +6736,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			}
 		},
@@ -6638,6 +6766,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -6675,16 +6813,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			}
 		},
@@ -6715,6 +6843,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -6752,16 +6890,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			},
 			{
@@ -6842,6 +6970,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -6879,16 +7017,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			},
 			{
@@ -6969,6 +7097,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -7006,16 +7144,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			},
 			{
@@ -7096,6 +7224,16 @@ pg.item_data_statistics = {
 				1
 			},
 			{
+				3,
+				4020,
+				1
+			},
+			{
+				3,
+				4100,
+				1
+			},
+			{
 				2,
 				49,
 				1
@@ -7133,16 +7271,6 @@ pg.item_data_statistics = {
 			{
 				2,
 				46,
-				1
-			},
-			{
-				3,
-				4020,
-				1
-			},
-			{
-				3,
-				4100,
 				1
 			},
 			{
@@ -7213,16 +7341,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -7230,6 +7348,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -7330,16 +7458,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -7347,6 +7465,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -7447,16 +7575,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -7464,6 +7582,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -7564,16 +7692,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -7581,6 +7699,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -7681,16 +7809,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -7698,6 +7816,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -7798,16 +7926,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -7815,6 +7933,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -7915,16 +8043,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -7932,6 +8050,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -8032,16 +8160,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -8049,6 +8167,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -8133,12 +8261,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			}
 		},
@@ -8159,16 +8287,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -8176,6 +8294,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -8260,12 +8388,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			}
 		},
@@ -8286,16 +8414,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -8303,6 +8421,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -8387,12 +8515,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			}
 		},
@@ -8413,16 +8541,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -8430,6 +8548,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -8514,12 +8642,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			}
 		},
@@ -8540,16 +8668,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -8557,6 +8675,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -8641,12 +8769,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			}
 		},
@@ -8667,16 +8795,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -8684,6 +8802,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -8768,12 +8896,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			}
 		},
@@ -8794,16 +8922,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -8811,6 +8929,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -8895,12 +9023,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			}
 		},
@@ -8921,16 +9049,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -8938,6 +9056,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -9022,12 +9150,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			},
 			{
@@ -9063,16 +9191,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -9080,6 +9198,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -9164,12 +9292,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			},
 			{
@@ -9205,16 +9333,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -9222,6 +9340,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -9306,12 +9434,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			},
 			{
@@ -9347,16 +9475,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -9364,6 +9482,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -9448,12 +9576,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			},
 			{
@@ -9489,16 +9617,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -9506,6 +9624,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -9590,12 +9718,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			},
 			{
@@ -9631,16 +9759,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -9648,6 +9766,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -9732,12 +9860,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			},
 			{
@@ -9773,16 +9901,6 @@ pg.item_data_statistics = {
 		icon = "Props/55000",
 		display_icon = {
 			{
-				2,
-				45,
-				1
-			},
-			{
-				2,
-				46,
-				1
-			},
-			{
 				3,
 				4020,
 				1
@@ -9790,6 +9908,16 @@ pg.item_data_statistics = {
 			{
 				3,
 				4100,
+				1
+			},
+			{
+				2,
+				45,
+				1
+			},
+			{
+				2,
+				46,
 				1
 			},
 			{
@@ -9874,12 +10002,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			},
 			{
@@ -9966,12 +10094,12 @@ pg.item_data_statistics = {
 			},
 			{
 				2,
-				11034,
+				10093,
 				1
 			},
 			{
 				2,
-				10093,
+				11034,
 				1
 			},
 			{
@@ -46783,7 +46911,7 @@ pg.item_data_statistics = {
 		replace_item = 0,
 		link_id = 0,
 		id = 59111,
-		icon = "Props/pt",
+		icon = "Props/yisegefuke_pt",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -47229,9 +47357,9 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10046,
 		id = 59701,
-		icon = "props/draw_a",
+		icon = "Props/draw_a",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -47245,9 +47373,9 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10046,
 		id = 59702,
-		icon = "props/draw_b",
+		icon = "Props/draw_b",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -47261,9 +47389,9 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10046,
 		id = 59703,
-		icon = "props/draw_c",
+		icon = "Props/draw_c",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -47277,9 +47405,9 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10046,
 		id = 59704,
-		icon = "props/draw_d",
+		icon = "Props/draw_d",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -47293,9 +47421,9 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10046,
 		id = 59705,
-		icon = "props/draw_e",
+		icon = "Props/draw_e",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -47309,9 +47437,9 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10046,
 		id = 59706,
-		icon = "props/draw_f",
+		icon = "Props/draw_f",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -47325,9 +47453,9 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10046,
 		id = 59707,
-		icon = "props/draw_g",
+		icon = "Props/draw_g",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -47341,7 +47469,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10046,
 		id = 59708,
 		icon = "props/red_packet",
 		display_icon = {},
@@ -47357,7 +47485,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10053,
 		id = 59709,
 		icon = "props/hudiejie",
 		display_icon = {},
@@ -47373,7 +47501,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 5,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10055,
 		id = 59710,
 		icon = "props/memorycard",
 		display_icon = {},
@@ -47405,7 +47533,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 5,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10104,
 		id = 59712,
 		icon = "props/memorycard",
 		display_icon = {},
@@ -47421,7 +47549,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10126,
 		id = 59713,
 		icon = "props/draw_a",
 		display_icon = {},
@@ -47437,7 +47565,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10126,
 		id = 59714,
 		icon = "props/draw_b",
 		display_icon = {},
@@ -47453,7 +47581,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10126,
 		id = 59715,
 		icon = "props/draw_c",
 		display_icon = {},
@@ -47469,7 +47597,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10126,
 		id = 59716,
 		icon = "props/draw_d",
 		display_icon = {},
@@ -47485,7 +47613,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10126,
 		id = 59717,
 		icon = "props/draw_e",
 		display_icon = {},
@@ -47501,7 +47629,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10126,
 		id = 59718,
 		icon = "props/draw_f",
 		display_icon = {},
@@ -47517,9 +47645,41 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10126,
 		id = 59719,
 		icon = "props/draw_g",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[59761] = {
+		display = "集齊7個可以獲得厭戰專屬改造道具-戰士的心得",
+		rarity = 2,
+		type = 0,
+		name = "歷戰之證",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 8,
+		replace_item = 0,
+		link_id = 0,
+		id = 59761,
+		icon = "Props/lizhanzhizheng",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[59762] = {
+		display = "「Belli dura despicio！」——用於完成厭戰近代化改造",
+		rarity = 4,
+		type = 7,
+		name = "戰士的心得",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 59762,
+		icon = "Props/yanzhandabaojian",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -47533,7 +47693,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 9,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10205,
 		id = 59763,
 		icon = "Props/touzi",
 		display_icon = {},
@@ -47549,7 +47709,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10201,
 		id = 59764,
 		icon = "props/draw_a",
 		display_icon = {},
@@ -47565,7 +47725,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10201,
 		id = 59765,
 		icon = "props/draw_b",
 		display_icon = {},
@@ -47581,7 +47741,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10201,
 		id = 59766,
 		icon = "props/draw_c",
 		display_icon = {},
@@ -47597,7 +47757,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10201,
 		id = 59767,
 		icon = "props/draw_d",
 		display_icon = {},
@@ -47613,7 +47773,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10201,
 		id = 59768,
 		icon = "props/draw_e",
 		display_icon = {},
@@ -47629,7 +47789,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10201,
 		id = 59769,
 		icon = "props/draw_f",
 		display_icon = {},
@@ -47645,7 +47805,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 4,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10201,
 		id = 59770,
 		icon = "props/draw_g",
 		display_icon = {},
@@ -47661,7 +47821,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 5,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10206,
 		id = 59771,
 		icon = "props/memorycard",
 		display_icon = {},
@@ -47677,7 +47837,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 8,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10208,
 		id = 59772,
 		icon = "Props/linkstar",
 		display_icon = {},
@@ -47709,7 +47869,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59801,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47725,7 +47885,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59802,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47741,7 +47901,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59803,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47757,7 +47917,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59804,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47773,7 +47933,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59805,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47789,7 +47949,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59806,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47805,7 +47965,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59807,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47821,7 +47981,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59808,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47837,7 +47997,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59809,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47853,7 +48013,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59810,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47869,7 +48029,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59811,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47885,7 +48045,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59812,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47901,7 +48061,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59813,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47917,7 +48077,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59814,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47933,7 +48093,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59815,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47949,7 +48109,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 1,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 10021,
 		id = 59816,
 		icon = "Props/puzzle",
 		display_icon = {},
@@ -47965,7 +48125,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 2,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 1001,
 		id = 59821,
 		icon = "Props/voteT1",
 		display_icon = {},
@@ -47981,7 +48141,7 @@ pg.item_data_statistics = {
 		shiptrans_id = 0,
 		virtual_type = 3,
 		replace_item = 0,
-		link_id = 0,
+		link_id = 1001,
 		id = 59822,
 		icon = "Props/voteT2",
 		display_icon = {},
@@ -48016,6 +48176,38 @@ pg.item_data_statistics = {
 		link_id = 0,
 		id = 59900,
 		icon = "Props/shuju",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[59938] = {
+		display = "集齐7个可以获得厌战专属改造道具-战士的心得",
+		rarity = 2,
+		type = 0,
+		name = "历战之证",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 8,
+		replace_item = 0,
+		link_id = 0,
+		id = 59938,
+		icon = "Props/lizhanzhizheng",
+		display_icon = {},
+		price = {},
+		index = {}
+	},
+	[59939] = {
+		display = "「Belli dura despicio！」——用于完成厌战近代化改造",
+		rarity = 4,
+		type = 7,
+		name = "战士的纪念心得",
+		shop_id = -1,
+		shiptrans_id = 0,
+		virtual_type = 0,
+		replace_item = 0,
+		link_id = 0,
+		id = 59939,
+		icon = "Props/yanzhandabaojian",
 		display_icon = {},
 		price = {},
 		index = {}
@@ -48101,6 +48293,9 @@ pg.item_data_statistics = {
 		30,
 		31,
 		32,
+		39,
+		40,
+		41,
 		1001,
 		1008,
 		10000,
@@ -48174,6 +48369,9 @@ pg.item_data_statistics = {
 		10074,
 		10077,
 		10078,
+		10087,
+		10088,
+		10089,
 		11000,
 		11001,
 		11002,
@@ -48196,6 +48394,8 @@ pg.item_data_statistics = {
 		11025,
 		11027,
 		11028,
+		11032,
+		11033,
 		15001,
 		15002,
 		15003,
@@ -48965,6 +49165,8 @@ pg.item_data_statistics = {
 		59717,
 		59718,
 		59719,
+		59761,
+		59762,
 		59763,
 		59764,
 		59765,
@@ -48996,6 +49198,8 @@ pg.item_data_statistics = {
 		59822,
 		59823,
 		59900,
+		59938,
+		59939,
 		60011,
 		60012,
 		70050

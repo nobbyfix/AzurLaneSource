@@ -222,8 +222,8 @@ pg.player_resource = {
 	},
 	[137] = {
 		id = 137,
-		name = "TWkaifuPT",
-		itemid = 70050
+		name = "ouxiang_pt",
+		itemid = 59143
 	},
 	[1001] = {
 		id = 1001,
@@ -245,7 +245,23 @@ pg.player_resource = {
 		name = "worldboss926_ticket",
 		itemid = 59142
 	},
+	[3106] = {
+		id = 3106,
+		name = "twhongran_pt",
+		itemid = 59107
+	},
+	[3137] = {
+		id = 3137,
+		name = "TWkaifuPT",
+		itemid = 70050
+	},
 	get_id_list_by_name = {
+		TWkaifuPT = {
+			3137
+		},
+		twhongran_pt = {
+			3106
+		},
 		worldboss926_ticket = {
 			2003
 		},
@@ -258,7 +274,7 @@ pg.player_resource = {
 		vote2019_pt = {
 			1001
 		},
-		TWkaifuPT = {
+		ouxiang_pt = {
 			137
 		},
 		skinTicket2 = {
@@ -443,7 +459,9 @@ pg.player_resource = {
 		1001,
 		2001,
 		2002,
-		2003
+		2003,
+		3106,
+		3137
 	}
 }
 

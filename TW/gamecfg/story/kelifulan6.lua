@@ -156,7 +156,7 @@ return {
 			bgName = "star_level_bg_103",
 			hideOther = true,
 			nameColor = "#a9f548",
-			say = "噢噢噢！！！",
+			say = "喔喔喔！！！",
 			action = {
 				{
 					y = 30,

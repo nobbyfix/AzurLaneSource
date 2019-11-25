@@ -26,7 +26,7 @@ return {
 			nameColor = "#a9f548",
 			side = 1,
 			dir = 1,
-			say = "噢~",
+			say = "喔~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

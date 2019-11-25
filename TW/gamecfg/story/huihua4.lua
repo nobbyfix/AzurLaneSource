@@ -182,7 +182,7 @@ return {
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "好像是……乐器声？噢，是{namecode:2}和U81啊！换了衣服差点认不出来了……",
+			say = "好像是……乐器声？喔，是{namecode:2}和U81啊！换了衣服差点认不出来了……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

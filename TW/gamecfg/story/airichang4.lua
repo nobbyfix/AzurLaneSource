@@ -85,7 +85,7 @@ return {
 			bgName = "star_level_bg_104",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呀，呀吼～！超绝可爱美少女本森酱来光临啦～！",
+			say = "呀，呀吼～！超绝可爱美少女班森酱来光临啦～！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -119,7 +119,7 @@ return {
 			bgName = "star_level_bg_104",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "听说这里可以倾诉烦恼，就带着本森姐来了",
+			say = "听说这里可以倾诉烦恼，就带着班森姐来了",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -152,7 +152,7 @@ return {
 			dir = 1,
 			actor = 101160,
 			nameColor = "#a9f548",
-			say = "奇奇奇奇怪了？本、本本本本森怎么可能会有烦恼呢？",
+			say = "奇奇奇奇怪了？班、班班班班森怎么可能会有烦恼呢？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -218,7 +218,7 @@ return {
 			dir = 1,
 			actor = 900179,
 			actorName = "爱妈妈",
-			say = "我认识和本森酱很像的孩子哦，跟我聊聊吧？我想应该能帮到你的。啊，放松点叫我“爱妈妈”就行了哦",
+			say = "我认识和班森酱很像的孩子哦，跟我聊聊吧？我想应该能帮到你的。啊，放松点叫我“爱妈妈”就行了哦",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -234,7 +234,7 @@ return {
 			bgName = "star_level_bg_104",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "和本森姐很像的……？",
+			say = "和班森姐很像的……？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -369,7 +369,7 @@ return {
 			dir = 1,
 			actor = 900179,
 			actorName = "爱妈妈",
-			say = "不过，本森酱是想着指挥官而努力着的不是吗？只要这份心意是真的，总会传达到指挥官那里的不是吗？",
+			say = "不过，班森酱是想着指挥官而努力着的不是吗？只要这份心意是真的，总会传达到指挥官那里的不是吗？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -436,7 +436,7 @@ return {
 			dir = 1,
 			actor = 900179,
 			actorName = "爱妈妈",
-			say = "没错，“可爱就是正义”！可爱是世界共同的！所以呢，本森酱！加油变得更加可爱，让指挥官吓一跳吧，如何？",
+			say = "没错，“可爱就是正义”！可爱是世界共同的！所以呢，班森酱！加油变得更加可爱，让指挥官吓一跳吧，如何？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -484,7 +484,7 @@ return {
 			bgName = "star_level_bg_104",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "本森姐……？",
+			say = "班森姐……？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -527,7 +527,7 @@ return {
 			dir = 1,
 			actor = 900179,
 			actorName = "爱妈妈",
-			say = "没关系，不用客气。看来已经想开了呢，本森酱，加油吧～",
+			say = "没关系，不用客气。看来已经想开了呢，班森酱，加油吧～",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -636,7 +636,7 @@ return {
 			bgName = "star_level_bg_104",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "本森姐……？",
+			say = "班森姐……？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -652,7 +652,7 @@ return {
 			bgName = "star_level_bg_104",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "没关系！这点小事完全影响不到超级可爱的本森酱的！",
+			say = "没关系！这点小事完全影响不到超级可爱的班森酱的！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -687,7 +687,7 @@ return {
 			bgName = "star_level_bg_104",
 			actor = 10400010,
 			nameColor = "#a9f548",
-			say = "之后，变得加倍烦人的本森酱被指挥官抓着训了很久——",
+			say = "之后，变得加倍烦人的班森酱被指挥官抓着训了很久——",
 			flashout = {
 				dur = 0.5,
 				black = true,

@@ -50,6 +50,9 @@ slot0.willExit = function (slot0)
 end
 
 slot0.showUserAgreement = function (slot0, slot1)
+	setButtonEnabled(slot0.userAgreenConfirmTF, true)
+
+	slot2 = nil
 	slot0.userAgreenTitleTF = slot0:findTF("UserAgreement/window/title")
 	slot0.userAgreenTitleTF:GetComponent("Text").text = i18n("word_snapshot_share_title")
 
@@ -64,6 +67,9 @@ slot0.showUserAgreement = function (slot0, slot1)
 		if slot0.userAgreenTF then
 			slot1()
 		end
+	end)
+	onButton(slot0, slot0.self.closeUserAgreenTF, function ()
+		setActive(slot0.userAgreenTF, false)
 	end)
 end
 

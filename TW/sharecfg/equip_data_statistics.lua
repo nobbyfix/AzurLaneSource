@@ -27823,6 +27823,161 @@ pg.equip_data_statistics = {
 		},
 		property_rate = {}
 	},
+	[34160] = {
+		name = "410mm連裝炮(三式彈)",
+		speciality = "散射",
+		tech = 0,
+		type = 4,
+		rarity = 5,
+		id = 34160,
+		angle = 50,
+		scatter = "20",
+		ambush_extra = 0,
+		value_2 = 25,
+		icon = "34100",
+		value_1 = "12 x 10 x 2",
+		attribute_2 = "cannon",
+		avoid_extra = 0,
+		range = 200,
+		nationality = 3,
+		attribute_3 = "antiaircraft",
+		ammo = "三式彈",
+		is_siren = 0,
+		value_3 = 25,
+		descrip = "裝填三式彈的410mm連裝炮，可對空，並且散射飛落的炮彈能夠有效的點燃目標，造成火災",
+		attribute_1 = "damage",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {
+			3
+		},
+		weapon_id = {
+			34160
+		},
+		skill_id = {},
+		part_main = {
+			4,
+			5
+		},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"IJN",
+			"BB",
+			"MG",
+			"HE"
+		}
+	},
+	[34161] = {
+		value_1 = "13 x 10 x 2",
+		id = 34161,
+		base = 34160,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			34161
+		},
+		property_rate = {}
+	},
+	[34162] = {
+		value_1 = "14 x 10 x 2",
+		id = 34162,
+		base = 34160,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			34162
+		},
+		property_rate = {}
+	},
+	[34163] = {
+		value_1 = "15 x 10 x 2",
+		id = 34163,
+		base = 34160,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			34163
+		},
+		property_rate = {}
+	},
+	[34164] = {
+		value_1 = "16 x 10 x 2",
+		id = 34164,
+		base = 34160,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			34164
+		},
+		property_rate = {}
+	},
+	[34165] = {
+		value_1 = "17 x 10 x 2",
+		id = 34165,
+		base = 34160,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			34165
+		},
+		property_rate = {}
+	},
+	[34166] = {
+		value_1 = "18 x 10 x 2",
+		id = 34166,
+		base = 34160,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			34166
+		},
+		property_rate = {}
+	},
+	[34167] = {
+		value_1 = "19 x 10 x 2",
+		id = 34167,
+		base = 34160,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			34167
+		},
+		property_rate = {}
+	},
+	[34168] = {
+		value_1 = "20 x 10 x 2",
+		id = 34168,
+		base = 34160,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			34168
+		},
+		property_rate = {}
+	},
+	[34169] = {
+		value_1 = "21 x 10 x 2",
+		id = 34169,
+		base = 34160,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			34169
+		},
+		property_rate = {}
+	},
+	[34170] = {
+		value_1 = "22 x 10 x 2",
+		id = 34170,
+		base = 34160,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			34170
+		},
+		property_rate = {}
+	},
 	[35000] = {
 		name = "雙聯裝610mm魚雷",
 		type = 5,
@@ -31685,6 +31840,435 @@ pg.equip_data_statistics = {
 		},
 		property_rate = {}
 	},
+	[37300] = {
+		name = "烈風",
+		type = 7,
+		id = 37300,
+		tech = 1,
+		speciality = "空戰",
+		range = 90,
+		scatter = "無",
+		ambush_extra = 0,
+		value_2 = 12,
+		icon = "37300",
+		value_1 = "29/輪",
+		attribute_2 = "air",
+		avoid_extra = 0,
+		rarity = 3,
+		angle = 30,
+		nationality = 3,
+		ammo = "通常",
+		is_siren = 0,
+		descrip = "Mitsubishi A7M Reppū烈風式艦載戰鬥 機，搭載有4門20毫米九九式二號四型機關炮和2枚約500磅炸彈",
+		value_3 = 0,
+		attribute_1 = "damage",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			37300,
+			83300
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"IJN",
+			"CV",
+			"FT"
+		}
+	},
+	[37301] = {
+		value_1 = "33/輪",
+		id = 37301,
+		base = 37300,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37301,
+			83301
+		},
+		property_rate = {}
+	},
+	[37302] = {
+		value_1 = "37/輪",
+		id = 37302,
+		base = 37300,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37302,
+			83302
+		},
+		property_rate = {}
+	},
+	[37303] = {
+		value_1 = "41/輪",
+		id = 37303,
+		base = 37300,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37303,
+			83303
+		},
+		property_rate = {}
+	},
+	[37304] = {
+		value_1 = "45/輪",
+		id = 37304,
+		base = 37300,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37304,
+			83304
+		},
+		property_rate = {}
+	},
+	[37305] = {
+		value_1 = "49/輪",
+		id = 37305,
+		base = 37300,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37305,
+			83305
+		},
+		property_rate = {}
+	},
+	[37306] = {
+		value_1 = "53/輪",
+		id = 37306,
+		base = 37300,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37306,
+			83306
+		},
+		property_rate = {}
+	},
+	[37320] = {
+		name = "烈風",
+		type = 7,
+		id = 37320,
+		tech = 2,
+		speciality = "空戰",
+		range = 90,
+		scatter = "無",
+		ambush_extra = 0,
+		value_2 = 25,
+		icon = "37300",
+		value_1 = "32/輪",
+		attribute_2 = "air",
+		avoid_extra = 0,
+		rarity = 4,
+		angle = 30,
+		nationality = 3,
+		ammo = "通常",
+		is_siren = 0,
+		descrip = "Mitsubishi A7M Reppū烈風式艦載戰鬥 機，搭載有4門20毫米九九式二號四型機關炮和2枚約500磅炸彈",
+		value_3 = 0,
+		attribute_1 = "damage",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			37320,
+			83320
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"IJN",
+			"CV",
+			"FT"
+		}
+	},
+	[37321] = {
+		value_1 = "36/輪",
+		id = 37321,
+		base = 37320,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37321,
+			83321
+		},
+		property_rate = {}
+	},
+	[37322] = {
+		value_1 = "40/輪",
+		id = 37322,
+		base = 37320,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37322,
+			83322
+		},
+		property_rate = {}
+	},
+	[37323] = {
+		value_1 = "44/輪",
+		id = 37323,
+		base = 37320,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37323,
+			83323
+		},
+		property_rate = {}
+	},
+	[37324] = {
+		value_1 = "48/輪",
+		id = 37324,
+		base = 37320,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37324,
+			83324
+		},
+		property_rate = {}
+	},
+	[37325] = {
+		value_1 = "52/輪",
+		id = 37325,
+		base = 37320,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37325,
+			83325
+		},
+		property_rate = {}
+	},
+	[37326] = {
+		value_1 = "57/輪",
+		id = 37326,
+		base = 37320,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37326,
+			83326
+		},
+		property_rate = {}
+	},
+	[37327] = {
+		value_1 = "62/輪",
+		id = 37327,
+		base = 37320,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37327,
+			83327
+		},
+		property_rate = {}
+	},
+	[37328] = {
+		value_1 = "67/輪",
+		id = 37328,
+		base = 37320,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37328,
+			83328
+		},
+		property_rate = {}
+	},
+	[37329] = {
+		value_1 = "72/輪",
+		id = 37329,
+		base = 37320,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37329,
+			83329
+		},
+		property_rate = {}
+	},
+	[37330] = {
+		value_1 = "77/輪",
+		id = 37330,
+		base = 37320,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37330,
+			83330
+		},
+		property_rate = {}
+	},
+	[37340] = {
+		name = "烈風",
+		type = 7,
+		id = 37340,
+		tech = 3,
+		speciality = "空戰",
+		range = 90,
+		scatter = "無",
+		ambush_extra = 0,
+		value_2 = 45,
+		icon = "37300",
+		value_1 = "35/輪",
+		attribute_2 = "air",
+		avoid_extra = 0,
+		rarity = 5,
+		angle = 30,
+		nationality = 3,
+		ammo = "通常",
+		is_siren = 0,
+		descrip = "Mitsubishi A7M Reppū烈風式艦載戰鬥 機，搭載有4門20毫米九九式二號四型機關炮和2枚約500磅炸彈",
+		value_3 = 0,
+		attribute_1 = "damage",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			37340,
+			83340
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"IJN",
+			"CV",
+			"FT"
+		}
+	},
+	[37341] = {
+		value_1 = "40/輪",
+		id = 37341,
+		base = 37340,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37341,
+			83341
+		},
+		property_rate = {}
+	},
+	[37342] = {
+		value_1 = "45/輪",
+		id = 37342,
+		base = 37340,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37342,
+			83342
+		},
+		property_rate = {}
+	},
+	[37343] = {
+		value_1 = "50/輪",
+		id = 37343,
+		base = 37340,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37343,
+			83343
+		},
+		property_rate = {}
+	},
+	[37344] = {
+		value_1 = "55/輪",
+		id = 37344,
+		base = 37340,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37344,
+			83344
+		},
+		property_rate = {}
+	},
+	[37345] = {
+		value_1 = "60/輪",
+		id = 37345,
+		base = 37340,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37345,
+			83345
+		},
+		property_rate = {}
+	},
+	[37346] = {
+		value_1 = "65/輪",
+		id = 37346,
+		base = 37340,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37346,
+			83346
+		},
+		property_rate = {}
+	},
+	[37347] = {
+		value_1 = "70/輪",
+		id = 37347,
+		base = 37340,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37347,
+			83347
+		},
+		property_rate = {}
+	},
+	[37348] = {
+		value_1 = "75/輪",
+		id = 37348,
+		base = 37340,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37348,
+			83348
+		},
+		property_rate = {}
+	},
+	[37349] = {
+		value_1 = "80/輪",
+		id = 37349,
+		base = 37340,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37349,
+			83349
+		},
+		property_rate = {}
+	},
+	[37350] = {
+		value_1 = "85/輪",
+		id = 37350,
+		base = 37340,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			37350,
+			83350
+		},
+		property_rate = {}
+	},
 	[38000] = {
 		name = "九七式艦攻",
 		type = 8,
@@ -32250,6 +32834,406 @@ pg.equip_data_statistics = {
 		torpedo_ammo = 0,
 		weapon_id = {
 			38150
+		},
+		property_rate = {}
+	},
+	[38200] = {
+		name = "流星",
+		type = 8,
+		id = 38200,
+		tech = 1,
+		speciality = "雷擊",
+		range = 90,
+		scatter = "無",
+		ambush_extra = 0,
+		value_2 = 12,
+		icon = "38200",
+		value_1 = "44 x 3",
+		attribute_2 = "air",
+		avoid_extra = 0,
+		rarity = 3,
+		angle = 90,
+		nationality = 3,
+		ammo = "通常",
+		is_siren = 0,
+		descrip = "Aichi B7A Ryusei流星式艦載攻擊機，搭載有2門20毫米機炮、1門13mm機槍和800kg魚雷",
+		value_3 = 0,
+		attribute_1 = "damage",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			38200
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"IJN",
+			"CV",
+			"TB"
+		}
+	},
+	[38201] = {
+		value_1 = "62 x 3",
+		id = 38201,
+		base = 38200,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38201
+		},
+		property_rate = {}
+	},
+	[38202] = {
+		value_1 = "79 x 3",
+		id = 38202,
+		base = 38200,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38202
+		},
+		property_rate = {}
+	},
+	[38203] = {
+		value_1 = "97 x 3",
+		id = 38203,
+		base = 38200,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38203
+		},
+		property_rate = {}
+	},
+	[38204] = {
+		value_1 = "114 x 3",
+		id = 38204,
+		base = 38200,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38204
+		},
+		property_rate = {}
+	},
+	[38205] = {
+		value_1 = "132 x 3",
+		id = 38205,
+		base = 38200,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38205
+		},
+		property_rate = {}
+	},
+	[38206] = {
+		value_1 = "150 x 3",
+		id = 38206,
+		base = 38200,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38206
+		},
+		property_rate = {}
+	},
+	[38220] = {
+		name = "流星",
+		type = 8,
+		id = 38220,
+		tech = 2,
+		speciality = "雷擊",
+		range = 90,
+		scatter = "無",
+		ambush_extra = 0,
+		value_2 = 25,
+		icon = "38200",
+		value_1 = "48 x 3",
+		attribute_2 = "air",
+		avoid_extra = 0,
+		rarity = 4,
+		angle = 90,
+		nationality = 3,
+		ammo = "通常",
+		is_siren = 0,
+		descrip = "Aichi B7A Ryusei流星式艦載攻擊機，搭載有2門20毫米機炮、1門13mm機槍和800kg魚雷",
+		value_3 = 0,
+		attribute_1 = "damage",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			38220
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"IJN",
+			"CV",
+			"TB"
+		}
+	},
+	[38221] = {
+		value_1 = "68 x 3",
+		id = 38221,
+		base = 38220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38221
+		},
+		property_rate = {}
+	},
+	[38222] = {
+		value_1 = "86 x 3",
+		id = 38222,
+		base = 38220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38222
+		},
+		property_rate = {}
+	},
+	[38223] = {
+		value_1 = "106 x 3",
+		id = 38223,
+		base = 38220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38223
+		},
+		property_rate = {}
+	},
+	[38224] = {
+		value_1 = "124 x 3",
+		id = 38224,
+		base = 38220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38224
+		},
+		property_rate = {}
+	},
+	[38225] = {
+		value_1 = "144 x 3",
+		id = 38225,
+		base = 38220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38225
+		},
+		property_rate = {}
+	},
+	[38226] = {
+		value_1 = "164 x 3",
+		id = 38226,
+		base = 38220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38226
+		},
+		property_rate = {}
+	},
+	[38227] = {
+		value_1 = "182 x 3",
+		id = 38227,
+		base = 38220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38227
+		},
+		property_rate = {}
+	},
+	[38228] = {
+		value_1 = "202 x 3",
+		id = 38228,
+		base = 38220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38228
+		},
+		property_rate = {}
+	},
+	[38229] = {
+		value_1 = "220 x 3",
+		id = 38229,
+		base = 38220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38229
+		},
+		property_rate = {}
+	},
+	[38230] = {
+		value_1 = "240 x 3",
+		id = 38230,
+		base = 38220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38230
+		},
+		property_rate = {}
+	},
+	[38240] = {
+		name = "流星",
+		type = 8,
+		id = 38240,
+		tech = 3,
+		speciality = "雷擊",
+		range = 90,
+		scatter = "無",
+		ambush_extra = 0,
+		value_2 = 45,
+		icon = "38200",
+		value_1 = "52 x 3",
+		attribute_2 = "air",
+		avoid_extra = 0,
+		rarity = 5,
+		angle = 90,
+		nationality = 3,
+		ammo = "通常",
+		is_siren = 0,
+		descrip = "Aichi B7A Ryusei流星式艦載攻擊機，搭載有2門20毫米機炮、1門13mm機槍和800kg魚雷",
+		value_3 = 0,
+		attribute_1 = "damage",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			38240
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"IJN",
+			"CV",
+			"TB"
+		}
+	},
+	[38241] = {
+		value_1 = "72 x 3",
+		id = 38241,
+		base = 38240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38241
+		},
+		property_rate = {}
+	},
+	[38242] = {
+		value_1 = "92 x 3",
+		id = 38242,
+		base = 38240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38242
+		},
+		property_rate = {}
+	},
+	[38243] = {
+		value_1 = "113 x 3",
+		id = 38243,
+		base = 38240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38243
+		},
+		property_rate = {}
+	},
+	[38244] = {
+		value_1 = "134 x 3",
+		id = 38244,
+		base = 38240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38244
+		},
+		property_rate = {}
+	},
+	[38245] = {
+		value_1 = "155 x 3",
+		id = 38245,
+		base = 38240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38245
+		},
+		property_rate = {}
+	},
+	[38246] = {
+		value_1 = "176 x 3",
+		id = 38246,
+		base = 38240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38246
+		},
+		property_rate = {}
+	},
+	[38247] = {
+		value_1 = "197 x 3",
+		id = 38247,
+		base = 38240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38247
+		},
+		property_rate = {}
+	},
+	[38248] = {
+		value_1 = "218 x 3",
+		id = 38248,
+		base = 38240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38248
+		},
+		property_rate = {}
+	},
+	[38249] = {
+		value_1 = "239 x 3",
+		id = 38249,
+		base = 38240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38249
+		},
+		property_rate = {}
+	},
+	[38250] = {
+		value_1 = "260 x 3",
+		id = 38250,
+		base = 38240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			38250
 		},
 		property_rate = {}
 	},
@@ -32973,6 +33957,329 @@ pg.equip_data_statistics = {
 		torpedo_ammo = 0,
 		weapon_id = {
 			39150
+		},
+		property_rate = {}
+	},
+	[39200] = {
+		name = "瑞雲",
+		type = 12,
+		id = 39200,
+		tech = 1,
+		speciality = "轟炸",
+		range = 90,
+		attribute_3 = "air",
+		scatter = "8",
+		ambush_extra = 0,
+		value_2 = 5,
+		icon = "39200",
+		angle = 90,
+		value_1 = "120 x 1",
+		avoid_extra = 0,
+		rarity = 2,
+		nationality = 3,
+		ammo = "通常",
+		is_siren = 0,
+		descrip = "Aichi E16A Zuiun瑞雲式水上偵察機，搭載有2門20毫米機炮、1門13mm機槍和1枚500磅炸彈",
+		value_3 = 0,
+		attribute_1 = "damage",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			39200
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"IJN",
+			"ST",
+			"SCOUT"
+		}
+	},
+	[39201] = {
+		value_1 = "138 x 1",
+		id = 39201,
+		base = 39200,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39201
+		},
+		property_rate = {}
+	},
+	[39202] = {
+		value_1 = "156 x 1",
+		id = 39202,
+		base = 39200,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39202
+		},
+		property_rate = {}
+	},
+	[39203] = {
+		value_1 = "174 x 1",
+		id = 39203,
+		base = 39200,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39203
+		},
+		property_rate = {}
+	},
+	[39220] = {
+		name = "瑞雲",
+		type = 12,
+		id = 39220,
+		tech = 2,
+		speciality = "轟炸",
+		range = 90,
+		scatter = "8",
+		ambush_extra = 0,
+		value_2 = 12,
+		icon = "39200",
+		value_1 = "132 x 1",
+		attribute_2 = "air",
+		avoid_extra = 0,
+		rarity = 3,
+		angle = 90,
+		nationality = 3,
+		ammo = "通常",
+		is_siren = 0,
+		descrip = "Aichi E16A Zuiun瑞雲式水上偵察機，搭載有2門20毫米機炮、1門13mm機槍和1枚500磅炸彈",
+		value_3 = 0,
+		attribute_1 = "damage",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			39220
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"IJN",
+			"ST",
+			"SCOUT"
+		}
+	},
+	[39221] = {
+		value_1 = "152 x 1",
+		id = 39221,
+		base = 39220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39221
+		},
+		property_rate = {}
+	},
+	[39222] = {
+		value_1 = "171 x 1",
+		id = 39222,
+		base = 39220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39222
+		},
+		property_rate = {}
+	},
+	[39223] = {
+		value_1 = "191 x 1",
+		id = 39223,
+		base = 39220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39223
+		},
+		property_rate = {}
+	},
+	[39224] = {
+		value_1 = "210 x 1",
+		id = 39224,
+		base = 39220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39224
+		},
+		property_rate = {}
+	},
+	[39225] = {
+		value_1 = "230 x 1",
+		id = 39225,
+		base = 39220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39225
+		},
+		property_rate = {}
+	},
+	[39226] = {
+		value_1 = "249 x 1",
+		id = 39226,
+		base = 39220,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39226
+		},
+		property_rate = {}
+	},
+	[39240] = {
+		name = "瑞雲",
+		type = 12,
+		id = 39240,
+		tech = 3,
+		speciality = "轟炸",
+		range = 90,
+		scatter = "8",
+		ambush_extra = 0,
+		value_2 = 25,
+		icon = "39200",
+		value_1 = "144 x 1",
+		attribute_2 = "air",
+		avoid_extra = 0,
+		rarity = 4,
+		angle = 90,
+		nationality = 3,
+		ammo = "通常",
+		is_siren = 0,
+		descrip = "Aichi E16A Zuiun瑞雲式水上偵察機，搭載有2門20毫米機炮、1門13mm機槍和1枚500磅炸彈",
+		value_3 = 0,
+		attribute_1 = "damage",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			39240
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"IJN",
+			"ST",
+			"SCOUT"
+		}
+	},
+	[39241] = {
+		value_1 = "165 x 1",
+		id = 39241,
+		base = 39240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39241
+		},
+		property_rate = {}
+	},
+	[39242] = {
+		value_1 = "186 x 1",
+		id = 39242,
+		base = 39240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39242
+		},
+		property_rate = {}
+	},
+	[39243] = {
+		value_1 = "207 x 1",
+		id = 39243,
+		base = 39240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39243
+		},
+		property_rate = {}
+	},
+	[39244] = {
+		value_1 = "228 x 1",
+		id = 39244,
+		base = 39240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39244
+		},
+		property_rate = {}
+	},
+	[39245] = {
+		value_1 = "249 x 1",
+		id = 39245,
+		base = 39240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39245
+		},
+		property_rate = {}
+	},
+	[39246] = {
+		value_1 = "270 x 1",
+		id = 39246,
+		base = 39240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39246
+		},
+		property_rate = {}
+	},
+	[39247] = {
+		value_1 = "293 x 1",
+		id = 39247,
+		base = 39240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39247
+		},
+		property_rate = {}
+	},
+	[39248] = {
+		value_1 = "315 x 1",
+		id = 39248,
+		base = 39240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39248
+		},
+		property_rate = {}
+	},
+	[39249] = {
+		value_1 = "338 x 1",
+		id = 39249,
+		base = 39240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39249
+		},
+		property_rate = {}
+	},
+	[39250] = {
+		value_1 = "360 x 1",
+		id = 39250,
+		base = 39240,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			39250
 		},
 		property_rate = {}
 	},
@@ -36263,7 +37570,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[60051] = {
-		name = "航空攻擊展示-突擊者I",
+		name = "航空攻擊展示-遊騎兵I",
 		type = 99,
 		nationality = 0,
 		speciality = "無",
@@ -36296,7 +37603,7 @@ pg.equip_data_statistics = {
 	},
 	[60052] = {
 		id = 60052,
-		name = "航空攻擊展示-突擊者II",
+		name = "航空攻擊展示-遊騎兵II",
 		base = 60051,
 		is_siren = 0,
 		torpedo_ammo = 0,
@@ -36307,7 +37614,7 @@ pg.equip_data_statistics = {
 	},
 	[60053] = {
 		id = 60053,
-		name = "航空攻擊展示-突擊者III",
+		name = "航空攻擊展示-遊騎兵III",
 		base = 60051,
 		is_siren = 0,
 		torpedo_ammo = 0,
@@ -37006,6 +38313,1954 @@ pg.equip_data_statistics = {
 			60183
 		},
 		property_rate = {}
+	},
+	[60191] = {
+		name = "航空攻擊展示-齊柏林伯爵I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60191,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60191
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60192] = {
+		id = 60192,
+		name = "航空攻擊展示-齊柏林伯爵II",
+		base = 60191,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60192
+		},
+		property_rate = {}
+	},
+	[60193] = {
+		id = 60193,
+		name = "航空攻擊展示-齊柏林伯爵II",
+		base = 60191,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60193
+		},
+		property_rate = {}
+	},
+	[60201] = {
+		name = "航空攻擊展示-翔鶴I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60201,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60201
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60202] = {
+		id = 60202,
+		name = "航空攻擊展示-翔鶴II",
+		base = 60201,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60202
+		},
+		property_rate = {}
+	},
+	[60203] = {
+		id = 60203,
+		name = "航空攻擊展示-翔鶴III",
+		base = 60201,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60203
+		},
+		property_rate = {}
+	},
+	[60211] = {
+		name = "航空攻擊展示-瑞鶴I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60211,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60211
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60212] = {
+		id = 60212,
+		name = "航空攻擊展示-瑞鶴II",
+		base = 60211,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60212
+		},
+		property_rate = {}
+	},
+	[60213] = {
+		id = 60213,
+		name = "航空攻擊展示-瑞鶴III",
+		base = 60211,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60213
+		},
+		property_rate = {}
+	},
+	[60221] = {
+		name = "航空攻擊展示-光榮I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60221,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60221
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60222] = {
+		id = 60222,
+		name = "航空攻擊展示-光榮II",
+		base = 60221,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60222
+		},
+		property_rate = {}
+	},
+	[60223] = {
+		id = 60223,
+		name = "航空攻擊展示-光榮III",
+		base = 60221,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60223
+		},
+		property_rate = {}
+	},
+	[60231] = {
+		name = "烈焰崩襲",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 60231,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60231
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60232] = {
+		name = "蕾絲狂舞",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 60232,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60232
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60233] = {
+		name = "眾神之怒·雪崩雷震",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 60233,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60233
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60234] = {
+		name = "雪風彈幕展示I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 60234,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60234
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60235] = {
+		id = 60235,
+		name = "雪風彈幕展示II",
+		base = 60234,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60235
+		},
+		property_rate = {}
+	},
+	[60236] = {
+		name = "夕立彈幕展示I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 60236,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60236
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60237] = {
+		id = 60237,
+		name = "夕立彈幕展示II",
+		base = 60236,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60237
+		},
+		property_rate = {}
+	},
+	[60238] = {
+		name = "江風彈幕展示I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 60238,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60238
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60239] = {
+		id = 60239,
+		name = "江風彈幕展示II",
+		base = 60238,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60239
+		},
+		property_rate = {}
+	},
+	[60241] = {
+		name = "航空攻擊展示-貝露I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60241,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60241
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60242] = {
+		id = 60242,
+		name = "航空攻擊展示-貝露II",
+		base = 60241,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60242
+		},
+		property_rate = {}
+	},
+	[60243] = {
+		id = 60243,
+		name = "航空攻擊展示-貝露III",
+		base = 60241,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60243
+		},
+		property_rate = {}
+	},
+	[60251] = {
+		name = "航空攻擊展示-翡綠之心I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60251,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60251
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60252] = {
+		id = 60252,
+		name = "航空攻擊展示-翡綠之心II",
+		base = 60251,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60252
+		},
+		property_rate = {}
+	},
+	[60253] = {
+		id = 60253,
+		name = "航空攻擊展示-翡綠之心III",
+		base = 60251,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60253
+		},
+		property_rate = {}
+	},
+	[60261] = {
+		name = "航空攻擊展示-胡蜂I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60261,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60261
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60262] = {
+		id = 60262,
+		name = "航空攻擊展示-胡蜂II",
+		base = 60261,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60262
+		},
+		property_rate = {}
+	},
+	[60263] = {
+		id = 60263,
+		name = "航空攻擊展示-胡蜂III",
+		base = 60261,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60263
+		},
+		property_rate = {}
+	},
+	[60271] = {
+		name = "航空攻擊展示-勝利I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60271,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60271
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60272] = {
+		id = 60272,
+		name = "航空攻擊展示-勝利II",
+		base = 60271,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60272
+		},
+		property_rate = {}
+	},
+	[60273] = {
+		id = 60273,
+		name = "航空攻擊展示-勝利III",
+		base = 60271,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60273
+		},
+		property_rate = {}
+	},
+	[60281] = {
+		name = "航空攻擊展示-飛鷹I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60281,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60281
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60282] = {
+		id = 60282,
+		name = "航空攻擊展示-飛鷹II",
+		base = 60281,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60282
+		},
+		property_rate = {}
+	},
+	[60283] = {
+		id = 60283,
+		name = "航空攻擊展示-飛鷹III",
+		base = 60281,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60283
+		},
+		property_rate = {}
+	},
+	[60291] = {
+		name = "航空攻擊展示-隼鷹I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60291,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60291
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60292] = {
+		id = 60292,
+		name = "航空攻擊展示-隼鷹II",
+		base = 60291,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60292
+		},
+		property_rate = {}
+	},
+	[60293] = {
+		id = 60293,
+		name = "航空攻擊展示-隼鷹III",
+		base = 60291,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60293
+		},
+		property_rate = {}
+	},
+	[60301] = {
+		name = "Z46彈幕展示I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 60301,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60301
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60302] = {
+		id = 60302,
+		name = "Z46彈幕展示II",
+		base = 60301,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60302
+		},
+		property_rate = {}
+	},
+	[60311] = {
+		name = "航空攻擊展示-半人馬I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60311,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60311
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60312] = {
+		id = 60312,
+		name = "航空攻擊展示-半人馬II",
+		base = 60311,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60312
+		},
+		property_rate = {}
+	},
+	[60313] = {
+		id = 60313,
+		name = "航空攻擊展示-半人馬III",
+		base = 60311,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60313
+		},
+		property_rate = {}
+	},
+	[60321] = {
+		name = "航空攻擊展示-艾塞克斯I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60321,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60321
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60322] = {
+		id = 60322,
+		name = "航空攻擊展示-艾塞克斯II",
+		base = 60321,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60322
+		},
+		property_rate = {}
+	},
+	[60323] = {
+		id = 60323,
+		name = "航空攻擊展示-艾塞克斯II",
+		base = 60321,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60323
+		},
+		property_rate = {}
+	},
+	[60331] = {
+		name = "航空攻擊展示-大鳳I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60331,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60331
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60332] = {
+		id = 60332,
+		name = "航空攻擊展示-大鳳II",
+		base = 60331,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60332
+		},
+		property_rate = {}
+	},
+	[60333] = {
+		id = 60333,
+		name = "航空攻擊展示-大鳳III",
+		base = 60331,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60333
+		},
+		property_rate = {}
+	},
+	[60341] = {
+		name = "航空攻擊展示-芙米露露I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60341,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60341
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60342] = {
+		id = 60342,
+		name = "航空攻擊展示-芙米露露II",
+		base = 60341,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60342
+		},
+		property_rate = {}
+	},
+	[60343] = {
+		id = 60343,
+		name = "航空攻擊展示-芙米露露III",
+		base = 60341,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60343
+		},
+		property_rate = {}
+	},
+	[60351] = {
+		name = "航空攻擊展示-烏璐露I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60351,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60351
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60352] = {
+		id = 60352,
+		name = "航空攻擊展示-烏璐露II",
+		base = 60351,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60352
+		},
+		property_rate = {}
+	},
+	[60353] = {
+		id = 60353,
+		name = "航空攻擊展示-烏璐露III",
+		base = 60351,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60353
+		},
+		property_rate = {}
+	},
+	[60361] = {
+		name = "航空攻擊展示-薩拉娜I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60361,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60361
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60362] = {
+		id = 60362,
+		name = "航空攻擊展示-薩拉娜II",
+		base = 60361,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60362
+		},
+		property_rate = {}
+	},
+	[60363] = {
+		id = 60363,
+		name = "航空攻擊展示-薩拉娜III",
+		base = 60361,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60363
+		},
+		property_rate = {}
+	},
+	[60371] = {
+		name = "航空攻擊展示-龍驤I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60371,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60371
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60372] = {
+		id = 60372,
+		name = "航空攻擊展示-龍驤II",
+		base = 60371,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60372
+		},
+		property_rate = {}
+	},
+	[60373] = {
+		id = 60373,
+		name = "航空攻擊展示-龍驤III",
+		base = 60371,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60373
+		},
+		property_rate = {}
+	},
+	[60381] = {
+		name = "航空攻擊展示-追趕者I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60381,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60381
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60382] = {
+		id = 60382,
+		name = "航空攻擊展示-追趕者II",
+		base = 60381,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60382
+		},
+		property_rate = {}
+	},
+	[60383] = {
+		id = 60383,
+		name = "航空攻擊展示-追趕者III",
+		base = 60381,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60383
+		},
+		property_rate = {}
+	},
+	[60391] = {
+		name = "航空攻擊展示-獨立I",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "航母空襲展示用",
+		value_3 = 0,
+		id = 60391,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60391
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60392] = {
+		id = 60392,
+		name = "航空攻擊展示-獨立II",
+		base = 60391,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60392
+		},
+		property_rate = {}
+	},
+	[60393] = {
+		id = 60393,
+		name = "航空攻擊展示-獨立III",
+		base = 60391,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60393
+		},
+		property_rate = {}
+	},
+	[60401] = {
+		name = "航空攻击展示-爱酱I",
+		type = 99,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "航母空袭展示用",
+		value_3 = 0,
+		id = 60401,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60401
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60402] = {
+		id = 60402,
+		name = "航空攻击展示-爱酱II",
+		base = 60401,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60402
+		},
+		property_rate = {}
+	},
+	[60403] = {
+		id = 60403,
+		name = "航空攻击展示-爱酱III",
+		base = 60401,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60403
+		},
+		property_rate = {}
+	},
+	[60411] = {
+		name = "航空攻击展示-小齐柏林I",
+		type = 99,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "航母空袭展示用",
+		value_3 = 0,
+		id = 60411,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60411
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60412] = {
+		id = 60412,
+		name = "航空攻击展示-小齐柏林II",
+		base = 60411,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60412
+		},
+		property_rate = {}
+	},
+	[60413] = {
+		id = 60413,
+		name = "航空攻击展示-小齐柏林III",
+		base = 60411,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60413
+		},
+		property_rate = {}
+	},
+	[60421] = {
+		name = "航空攻击展示-可畏I",
+		type = 99,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "航母空袭展示用",
+		value_3 = 0,
+		id = 60421,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60421
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60422] = {
+		id = 60422,
+		name = "航空攻击展示-可畏II",
+		base = 60421,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60422
+		},
+		property_rate = {}
+	},
+	[60423] = {
+		id = 60423,
+		name = "航空攻击展示-可畏III",
+		base = 60421,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60423
+		},
+		property_rate = {}
+	},
+	[61007] = {
+		name = "約克镇技能隨機掃射海面LV1",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 61007,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61007
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61008] = {
+		id = 61008,
+		name = "約克镇技能隨機掃射海面LV2",
+		base = 61007,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			61008
+		},
+		property_rate = {}
+	},
+	[61009] = {
+		id = 61009,
+		name = "約克镇技能隨機掃射海面LV3",
+		base = 61007,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			61009
+		},
+		property_rate = {}
+	},
+	[61010] = {
+		name = "皇家方舟技能LV1",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 61010,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61010
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61011] = {
+		id = 61011,
+		name = "皇家方舟技能LV2",
+		base = 61010,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			61011
+		},
+		property_rate = {}
+	},
+	[61012] = {
+		id = 61012,
+		name = "皇家方舟技能LV3",
+		base = 61010,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			61012
+		},
+		property_rate = {}
+	},
+	[61031] = {
+		name = "十姊妹展示",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 61031,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61031
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61041] = {
+		name = "夕星展示",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 61041,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61041
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61051] = {
+		name = "百合根1段展示",
+		type = 5,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 61051,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61051
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61052] = {
+		name = "百合根2段展示",
+		type = 5,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 61052,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61052
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61053] = {
+		name = "百合根3段展示",
+		type = 5,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 61053,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61053
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61054] = {
+		name = "百合根4段展示",
+		type = 2,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕展示用",
+		value_3 = 0,
+		id = 61054,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61054
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61501] = {
+		name = "轟炸機外觀預覽飛機",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "外觀空襲展示用",
+		value_3 = 0,
+		id = 61501,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61501
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61503] = {
+		name = "魚雷機外觀預覽飛機",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "外觀空襲展示用",
+		value_3 = 0,
+		id = 61503,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61503
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61504] = {
+		name = "魚雷機外觀預覽魚雷",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "外觀空襲展示用",
+		value_3 = 0,
+		id = 61504,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61504
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[61505] = {
+		name = "戰鬥機外觀預覽飛機",
+		type = 99,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "外觀空襲展示用",
+		value_3 = 0,
+		id = 61505,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			61505
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[66200] = {
+		name = "鐵必制磁性魚雷",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 66200,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			66200
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[66220] = {
+		name = "沙恩霍斯特級魚雷",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 66220,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			66220
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
 	},
 	[70011] = {
 		name = "全彈發射-法拉格特級I",
@@ -38165,6 +41420,49 @@ pg.equip_data_statistics = {
 		torpedo_ammo = 0,
 		weapon_id = {
 			71082
+		},
+		property_rate = {}
+	},
+	[71091] = {
+		name = "全弹发射-E级I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 71091,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			71091
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[71092] = {
+		id = 71092,
+		name = "全弹发射-E级II",
+		base = 71091,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			71092
 		},
 		property_rate = {}
 	},
@@ -39541,6 +42839,94 @@ pg.equip_data_statistics = {
 		torpedo_ammo = 0,
 		weapon_id = {
 			72252
+		},
+		property_rate = {}
+	},
+	[72254] = {
+		name = "全弹发射-最上级铃谷型I",
+		type = 1,
+		nationality = 0,
+		rarity = 1,
+		tech = 1,
+		speciality = "无",
+		base = 72251,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		angle = 0,
+		avoid_extra = 0,
+		range = 0,
+		scatter = "0",
+		is_siren = 0,
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 72254,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			72254
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[72255] = {
+		id = 72255,
+		name = "全弹发射-最上级铃谷型II",
+		base = 72251,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			72255
+		},
+		property_rate = {}
+	},
+	[72256] = {
+		name = "全弹发射-最上级铃谷型I增强",
+		type = 1,
+		nationality = 0,
+		rarity = 1,
+		tech = 1,
+		speciality = "无",
+		base = 72251,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		angle = 0,
+		avoid_extra = 0,
+		range = 0,
+		scatter = "0",
+		is_siren = 0,
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 72256,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			72256
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[72257] = {
+		id = 72257,
+		name = "全弹发射-最上级铃谷型II增强",
+		base = 72251,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			72257
 		},
 		property_rate = {}
 	},
@@ -41175,6 +44561,1081 @@ pg.equip_data_statistics = {
 		torpedo_ammo = 0,
 		weapon_id = {
 			79212
+		},
+		property_rate = {}
+	},
+	[79221] = {
+		name = "專屬彈幕-伊吹I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79221,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79221
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79222] = {
+		id = 79222,
+		name = "專屬彈幕-伊吹II",
+		base = 79221,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79222
+		},
+		property_rate = {}
+	},
+	[79231] = {
+		name = "專屬彈幕-海王星I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79231,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79231
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79232] = {
+		id = 79232,
+		name = "專屬彈幕-海王星II",
+		base = 79231,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79232
+		},
+		property_rate = {}
+	},
+	[79241] = {
+		name = "專屬彈幕-羅恩I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79241,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79241
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79242] = {
+		id = 79242,
+		name = "專屬彈幕-羅恩II",
+		base = 79241,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79242
+		},
+		property_rate = {}
+	},
+	[79251] = {
+		name = "專屬彈幕-路易九世I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79251,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79251
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79252] = {
+		id = 79252,
+		name = "專屬彈幕-路易九世II",
+		base = 79251,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79252
+		},
+		property_rate = {}
+	},
+	[79261] = {
+		name = "專屬彈幕-I19I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79261,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79261
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79262] = {
+		id = 79262,
+		name = "專屬彈幕-I19II",
+		base = 79261,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79262
+		},
+		property_rate = {}
+	},
+	[79271] = {
+		name = "專屬彈幕-U81I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79271,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79271
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79272] = {
+		id = 79272,
+		name = "專屬彈幕-U81II",
+		base = 79271,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79272
+		},
+		property_rate = {}
+	},
+	[79291] = {
+		name = "專屬彈幕-22I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79291,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79291
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79292] = {
+		id = 79292,
+		name = "專屬彈幕-22II",
+		base = 79291,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79292
+		},
+		property_rate = {}
+	},
+	[79301] = {
+		name = "專屬彈幕-33I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79301,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79301
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79302] = {
+		id = 79302,
+		name = "專屬彈幕-33II",
+		base = 79301,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79302
+		},
+		property_rate = {}
+	},
+	[79311] = {
+		name = "專屬彈幕-U47I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79311,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79311
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79312] = {
+		id = 79312,
+		name = "專屬彈幕-U47II",
+		base = 79311,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79312
+		},
+		property_rate = {}
+	},
+	[79321] = {
+		name = "專屬彈幕-速科夫I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79321,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79321
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79322] = {
+		id = 79322,
+		name = "專屬彈幕-速科夫II",
+		base = 79321,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79322
+		},
+		property_rate = {}
+	},
+	[79331] = {
+		name = "專屬彈幕-凱旋I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79331,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60303
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79332] = {
+		id = 79332,
+		name = "專屬彈幕-凱旋II",
+		base = 79321,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60304
+		},
+		property_rate = {}
+	},
+	[79341] = {
+		name = "專屬彈幕-大青花魚I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79341,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79341
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79342] = {
+		id = 79342,
+		name = "專屬彈幕-大青花魚II",
+		base = 79341,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79342
+		},
+		property_rate = {}
+	},
+	[79361] = {
+		name = "專屬彈幕-天狼星I",
+		type = 1,
+		nationality = 0,
+		speciality = "無",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "無",
+		descrip = "技能彈幕",
+		value_3 = 0,
+		id = 79361,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79361
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79362] = {
+		id = 79362,
+		name = "專屬彈幕-天狼星II",
+		base = 79361,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79362
+		},
+		property_rate = {}
+	},
+	[79371] = {
+		name = "专属弹幕-I13I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79371,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79371
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79372] = {
+		id = 79372,
+		name = "专属弹幕-I13II",
+		base = 79371,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79372
+		},
+		property_rate = {}
+	},
+	[79381] = {
+		name = "专属弹幕-北风I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79381,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79381
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79382] = {
+		id = 79382,
+		name = "专属弹幕-北风II",
+		base = 79381,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79382
+		},
+		property_rate = {}
+	},
+	[79383] = {
+		name = "专属弹幕鱼雷-北风I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79383,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79383
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79384] = {
+		id = 79384,
+		name = "专属弹幕鱼雷-北风II",
+		base = 79383,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79384
+		},
+		property_rate = {}
+	},
+	[79391] = {
+		name = "专属弹幕-西雅图I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79391,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79391
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79392] = {
+		id = 79392,
+		name = "专属弹幕-西雅图II",
+		base = 79391,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79392
+		},
+		property_rate = {}
+	},
+	[79401] = {
+		name = "专属弹幕-确捷I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79401,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79401
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79402] = {
+		id = 79402,
+		name = "专属弹幕-确捷II",
+		base = 79401,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79402
+		},
+		property_rate = {}
+	},
+	[79411] = {
+		name = "专属弹幕-恶毒I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79411,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79411
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79412] = {
+		id = 79412,
+		name = "专属弹幕-恶毒II",
+		base = 79411,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79412
+		},
+		property_rate = {}
+	},
+	[79421] = {
+		name = "专属弹幕-I168I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79421,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79421
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79422] = {
+		id = 79422,
+		name = "专属弹幕-I168II",
+		base = 79421,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79422
+		},
+		property_rate = {}
+	},
+	[79431] = {
+		name = "专属弹幕-U101I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79431,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79431
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79432] = {
+		id = 79432,
+		name = "专属弹幕-U101II",
+		base = 79431,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79432
+		},
+		property_rate = {}
+	},
+	[79441] = {
+		name = "专属弹幕-棘鳍I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79441,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79441
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79442] = {
+		id = 79442,
+		name = "专属弹幕-棘鳍II",
+		base = 79441,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79442
+		},
+		property_rate = {}
+	},
+	[79451] = {
+		name = "全弹发射-克利夫兰μI",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79451,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79451
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79452] = {
+		id = 79452,
+		name = "全弹发射-克利夫兰μII",
+		base = 79451,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79452
+		},
+		property_rate = {}
+	},
+	[79461] = {
+		name = "全弹发射-南安普顿μI",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79461,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79461
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79462] = {
+		id = 79462,
+		name = "全弹发射-南安普顿μII",
+		base = 79461,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79462
+		},
+		property_rate = {}
+	},
+	[79471] = {
+		name = "全弹发射-希佩尔海军上将μI",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79471,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			79471
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79472] = {
+		id = 79472,
+		name = "全弹发射-希佩尔海军上将μII",
+		base = 79471,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			79472
 		},
 		property_rate = {}
 	},
@@ -43193,6 +47654,17 @@ pg.equip_data_statistics = {
 		34148,
 		34149,
 		34150,
+		34160,
+		34161,
+		34162,
+		34163,
+		34164,
+		34165,
+		34166,
+		34167,
+		34168,
+		34169,
+		34170,
 		35000,
 		35001,
 		35002,
@@ -43450,6 +47922,35 @@ pg.equip_data_statistics = {
 		37248,
 		37249,
 		37250,
+		37300,
+		37301,
+		37302,
+		37303,
+		37304,
+		37305,
+		37306,
+		37320,
+		37321,
+		37322,
+		37323,
+		37324,
+		37325,
+		37326,
+		37327,
+		37328,
+		37329,
+		37330,
+		37340,
+		37341,
+		37342,
+		37343,
+		37344,
+		37345,
+		37346,
+		37347,
+		37348,
+		37349,
+		37350,
 		38000,
 		38001,
 		38002,
@@ -43487,6 +47988,35 @@ pg.equip_data_statistics = {
 		38148,
 		38149,
 		38150,
+		38200,
+		38201,
+		38202,
+		38203,
+		38204,
+		38205,
+		38206,
+		38220,
+		38221,
+		38222,
+		38223,
+		38224,
+		38225,
+		38226,
+		38227,
+		38228,
+		38229,
+		38230,
+		38240,
+		38241,
+		38242,
+		38243,
+		38244,
+		38245,
+		38246,
+		38247,
+		38248,
+		38249,
+		38250,
 		39000,
 		39001,
 		39002,
@@ -43538,6 +48068,28 @@ pg.equip_data_statistics = {
 		39148,
 		39149,
 		39150,
+		39200,
+		39201,
+		39202,
+		39203,
+		39220,
+		39221,
+		39222,
+		39223,
+		39224,
+		39225,
+		39226,
+		39240,
+		39241,
+		39242,
+		39243,
+		39244,
+		39245,
+		39246,
+		39247,
+		39248,
+		39249,
+		39250,
 		41000,
 		41001,
 		41002,
@@ -43791,6 +48343,101 @@ pg.equip_data_statistics = {
 		60181,
 		60182,
 		60183,
+		60191,
+		60192,
+		60193,
+		60201,
+		60202,
+		60203,
+		60211,
+		60212,
+		60213,
+		60221,
+		60222,
+		60223,
+		60231,
+		60232,
+		60233,
+		60234,
+		60235,
+		60236,
+		60237,
+		60238,
+		60239,
+		60241,
+		60242,
+		60243,
+		60251,
+		60252,
+		60253,
+		60261,
+		60262,
+		60263,
+		60271,
+		60272,
+		60273,
+		60281,
+		60282,
+		60283,
+		60291,
+		60292,
+		60293,
+		60301,
+		60302,
+		60311,
+		60312,
+		60313,
+		60321,
+		60322,
+		60323,
+		60331,
+		60332,
+		60333,
+		60341,
+		60342,
+		60343,
+		60351,
+		60352,
+		60353,
+		60361,
+		60362,
+		60363,
+		60371,
+		60372,
+		60373,
+		60381,
+		60382,
+		60383,
+		60391,
+		60392,
+		60393,
+		60401,
+		60402,
+		60403,
+		60411,
+		60412,
+		60413,
+		60421,
+		60422,
+		60423,
+		61007,
+		61008,
+		61009,
+		61010,
+		61011,
+		61012,
+		61031,
+		61041,
+		61051,
+		61052,
+		61053,
+		61054,
+		61501,
+		61503,
+		61504,
+		61505,
+		66200,
+		66220,
 		70011,
 		70012,
 		70021,
@@ -43845,6 +48492,8 @@ pg.equip_data_statistics = {
 		71072,
 		71081,
 		71082,
+		71091,
+		71092,
 		71111,
 		71112,
 		71121,
@@ -43909,6 +48558,10 @@ pg.equip_data_statistics = {
 		72242,
 		72251,
 		72252,
+		72254,
+		72255,
+		72256,
+		72257,
 		72261,
 		72262,
 		72311,
@@ -43985,6 +48638,56 @@ pg.equip_data_statistics = {
 		79202,
 		79211,
 		79212,
+		79221,
+		79222,
+		79231,
+		79232,
+		79241,
+		79242,
+		79251,
+		79252,
+		79261,
+		79262,
+		79271,
+		79272,
+		79291,
+		79292,
+		79301,
+		79302,
+		79311,
+		79312,
+		79321,
+		79322,
+		79331,
+		79332,
+		79341,
+		79342,
+		79361,
+		79362,
+		79371,
+		79372,
+		79381,
+		79382,
+		79383,
+		79384,
+		79391,
+		79392,
+		79401,
+		79402,
+		79411,
+		79412,
+		79421,
+		79422,
+		79431,
+		79432,
+		79441,
+		79442,
+		79451,
+		79452,
+		79461,
+		79462,
+		79471,
+		79472,
 		100000,
 		800000,
 		800001,

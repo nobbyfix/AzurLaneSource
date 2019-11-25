@@ -9175,6 +9175,37 @@ pg.ship_skin_expression = {
 		battle = "",
 		login = "1",
 		detail = "3"
+	},
+	beierfasite_4 = {
+		default = "",
+		feeling3 = "",
+		main_1 = "1",
+		touch = "3",
+		expedition = "",
+		win_mvp = "4",
+		home = "1",
+		unlock = "",
+		touch2 = "2",
+		mail = "",
+		painting = "beierfasite_4",
+		mission = "2",
+		main_2 = "1",
+		lose = "",
+		main_3 = "",
+		feeling1 = "2",
+		profile = "",
+		feeling4 = "",
+		feeling5 = "",
+		propose = "3",
+		hp_warning = "2",
+		upgrade = "",
+		mission_complete = "",
+		headtouch = "",
+		feeling2 = "",
+		skill = "2",
+		battle = "",
+		login = "1",
+		detail = ""
 	}
 }
 

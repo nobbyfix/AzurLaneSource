@@ -5,7 +5,8 @@ pg.storeup_data_template = {
 		name = "航空先驅",
 		char_list = {
 			10701,
-			20601
+			20601,
+			30603
 		},
 		level = {
 			4,

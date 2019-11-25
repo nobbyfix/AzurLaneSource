@@ -506,7 +506,7 @@ return {
 			dir = 1,
 			actor = 0,
 			actorName = "众人",
-			say = "噢噢噢~~",
+			say = "喔喔喔~~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

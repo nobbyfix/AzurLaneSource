@@ -195,6 +195,9 @@ slot0.handleNotification = function (slot0, slot1)
 		elseif slot3 == SCENE.SUMMER_FEAST then
 			slot4.mediator = SummerFeastMediator
 			slot4.viewComponent = SummerFeastScene
+		elseif slot3 == SCENE.MUSIC_FESTIVAL then
+			slot4.mediator = MusicFestivalMediator
+			slot4.viewComponent = MusicFestivalScene
 		elseif slot3 == SCENE.TECHNOLOGY_TREE_SCENE then
 			slot4.mediator = TechnologyTreeMediator
 			slot4.viewComponent = TechnologyTreeScene
@@ -204,6 +207,9 @@ slot0.handleNotification = function (slot0, slot1)
 		elseif slot3 == SCENE.ATTIRE then
 			slot4.mediator = AttireMediator
 			slot4.viewComponent = AttireScene
+		elseif slot3 == SCENE.IDOL_MEDAL_COLLECTION_SCENE then
+			slot4.mediator = IdolMedalCollectionMediator
+			slot4.viewComponent = IdolMedalCollectionView
 		end
 
 		print("load scene: " .. slot3)

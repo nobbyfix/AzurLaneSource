@@ -136,7 +136,7 @@ end
 
 slot0.ReSort = function (slot0)
 	for slot4, slot5 in pairs(slot0.shipModels) do
-		if slot0.boatVOs[slot4]:getPosition() and not slot0.boatVOs[slot4]:hasInterActionFurnitrue() and not slot0.boatVOs[slot4]:hasSpineInterAction() then
+		if slot0.boatVOs[slot4]:getPosition() and not slot0.boatVOs[slot4]:hasInterActionFurnitrue() and not slot0.boatVOs[slot4]:hasSpineInterAction() and not slot0.boatVOs[slot4]:hasSpineExtra() then
 			slot5:removeItem()
 			slot5:createItem(slot6)
 		end
@@ -230,9 +230,7 @@ slot0.AddSpineExtra = function (slot0, slot1, slot2, slot3)
 			for slot11, slot12 in ipairs(slot5:getShipExtra()) do
 				slot13 = slot0.shipModels[slot12]
 
-				if slot12 ~= slot2 then
-					slot13:pauseAnim(slot11)
-				else
+				if slot12 == slot2 then
 					slot13:addSpineExtra(slot1, slot11)
 					slot7:registerActionCB(slot12, function (slot0)
 						slot0:setAction(slot0, 0)

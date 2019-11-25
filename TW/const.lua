@@ -105,7 +105,8 @@ ITEM_ID_FUDAIS = {
 	40903,
 	40904,
 	40905,
-	40906
+	40906,
+	40907
 }
 QRJ_ITEM_ID_RANGE = {
 	41001,
@@ -221,13 +222,13 @@ SHOW_TOUCH_EFFECT = "show_touch_effect"
 BG_FIT_MODE = "bgFitMode"
 DISCONNECT_TIME_OUT = "time_out"
 LOCK_PROPOSE = false
-LOCK_CLASSROOM = true
+LOCK_CLASSROOM = false
 LOCK_SHAM_CHAPTER = false
 LOCK_PT_VALUE = false
 LOCK_EQUIP_SKIN = false
 LOCK_MITIGATION = false
-LOCK_SEC_FLOOR = true
-LOCK_FULL_EXP = true
+LOCK_SEC_FLOOR = false
+LOCK_FULL_EXP = false
 LOCK_CLICK_MINGSHI = true
 LOCK_DOWNVOTE = true
 LOCK_TECHNOLOGY = true
@@ -235,7 +236,6 @@ LOCK_SECONDARY = true
 LOCK_HIDE_CHAT = false
 LOCK_SUBMARINE = true
 LOCK_SOS = true
-LOCK_EQUIP_DEVELOPMENT = true
 LOCK_ILLUSTRATOR = false
 LOCK_SKIN_SORT = false
 LOCK_COMMANDER = true
@@ -300,25 +300,35 @@ ERROR_MESSAGE = {
 	[1031.0] = "md5長度錯誤",
 	[4020.0] = "艦船是看板娘",
 	[4030.0] = "艦船在編隊中",
+	[4201.0] = "禮包碼已過期",
 	[4010.0] = "艦船不可用",
+	[4203.0] = "禮包碼不存在",
 	[9999.0] = "未定義錯誤",
+	[4205.0] = "禮包碼兌換有誤，請重試",
+	[4206.0] = "該類型禮包碼已被兌換",
 	[3010.0] = "艦船不可戰鬥",
 	[3020.0] = "前置關卡未通過",
+	[4207.0] = "沒有禮包碼兌換URL",
+	[4204.0] = "禮包碼已被使用",
 	[4050.0] = "相同的艦船",
 	[4040.0] = "艦船不在編隊中",
 	[1020.0] = "密碼錯誤",
+	[4202.0] = "該渠道不支持",
 	[1012.0] = "純數字帳號"
 }
 SPECIAL_DATE = {}
 SPECIAL_PROPOSE = {}
-CRI_BG_FLAG = true
+CRI_BG_FLAG = false
 OPEN_ESCORT = false
 OPEN_REMASTER = false
 OPEN_AIR_DOMINANCE = true
 AUTO_LINKLINK = false
 IS_OPEN_TEC_SYSTEM = false
-PLAY_OPENING = true
-OP_VERSION = "20191010"
+PLAY_OPENING = false
+OP_VERSION = "20191031"
 OPEN_TEC_TREE_SYSTEM = false
+SECRETARY_POS = true
+ADAPT_MIN = 1.8
+ADAPT_TARGET = 2
 
 return

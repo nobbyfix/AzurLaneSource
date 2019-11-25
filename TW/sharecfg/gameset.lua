@@ -381,12 +381,12 @@ pg.gameset = {
 	exp_overflow_max = {
 		description = "",
 		key = "exp_overflow_max",
-		key_value = 0
+		key_value = 3000000
 	},
 	activity_res_id = {
-		description = "台服开服活动",
+		description = "",
 		key = "activity_res_id",
-		key_value = 137
+		key_value = 3106
 	},
 	chapter_move_speed_1 = {
 		description = "",
@@ -761,6 +761,28 @@ pg.gameset = {
 		description = "",
 		key = "skin_ticket",
 		key_value = 136
+	},
+	secretary_group_unlock = {
+		key = "secretary_group_unlock",
+		key_value = 0,
+		description = {
+			{
+				304,
+				2
+			},
+			{
+				604,
+				3
+			},
+			{
+				904,
+				3
+			},
+			{
+				1204,
+				3
+			}
+		}
 	}
 }
 

@@ -1,11 +1,11 @@
 pg = pg or {}
 pg.item_data_chat = {
 	[0] = {
-		name = "默認裝扮",
+		name = "預設裝扮",
 		time_second = 0,
 		id = 0,
 		time_limit_type = 0,
-		desc = "不設置任何聊天氣泡",
+		desc = "不設定任何聊天氣泡",
 		scene = {}
 	},
 	[1001] = {
@@ -13,7 +13,7 @@ pg.item_data_chat = {
 		time_second = 0,
 		id = 1001,
 		time_limit_type = 0,
-		desc = "歡迎所有來到港區報到的新晉指揮官們！\n<color=#A7A7AAFF>「開幕慶典」活動獲取</color>",
+		desc = "歡迎所有來到港區報到的新晉指揮官們！\n<color=#A7A7AAFF>「開幕慶典」活動獲得</color>",
 		scene = {}
 	},
 	all = {

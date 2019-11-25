@@ -103,7 +103,7 @@ return {
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "（噢噢噢——！嗷嗷嗷——！）",
+			say = "（喔喔喔——！嗷嗷嗷——！）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -341,7 +341,7 @@ return {
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "（噢噢噢噢噢———咔！！！）",
+			say = "（喔喔喔喔喔———咔！！！）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -660,7 +660,7 @@ return {
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "（呜噢哦哦哦哦哦哦哦————！！！）",
+			say = "（呜喔哦哦哦哦哦哦哦————！！！）",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

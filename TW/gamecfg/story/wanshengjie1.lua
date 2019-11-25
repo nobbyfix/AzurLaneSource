@@ -10,7 +10,7 @@ return {
 			mode = 1,
 			sequence = {
 				{
-					"“魔女们”的万圣夜\n\n<size=45>其一　魔女、永葆纯真</size>",
+					"“魔女們”的萬聖夜\n\n<size=45>其一　魔女、永保純真</size>",
 					1
 				}
 			}
@@ -21,7 +21,7 @@ return {
 			side = 2,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "“赠予仍葆纯真者”？这是赠给吾的礼物？",
+			say = "“贈予仍保純真者”？這是贈給吾的禮物？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -32,7 +32,7 @@ return {
 			}
 		},
 		{
-			say = "(悉悉索索)",
+			say = "(窸窸窣窣)",
 			side = 2,
 			actorName = "{namecode:87}",
 			dir = 1,
@@ -55,7 +55,7 @@ return {
 			dir = 1,
 			actor = 306051,
 			nameColor = "#a9f548",
-			say = "嘿嘿……吾果然是个美人胚子！",
+			say = "嘿嘿……吾果然是個美人胚子！",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -88,7 +88,7 @@ return {
 			side = 2,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "不过，到底是谁送给吾的呢，包裹上也没有名字……",
+			say = "不過，到底是誰送給吾的呢，包裹上也沒有名字……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -104,7 +104,7 @@ return {
 			dir = 1,
 			actor = 306051,
 			nameColor = "#a9f548",
-			say = "南瓜粥……今天的午饭又是南瓜吗？昨天炖南瓜，前天南瓜饼——吾已经吃腻南瓜了！",
+			say = "南瓜粥……今天的午飯又是南瓜嗎？昨天燉南瓜，前天南瓜餅——吾已經吃膩南瓜了！",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -132,7 +132,7 @@ return {
 			}
 		},
 		{
-			say = "确实，营养均衡上……",
+			say = "確實，營養均衡上……",
 			side = 0,
 			nameColor = "#a9f548",
 			dir = 1,
@@ -157,7 +157,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "不是这个问题啦！对了，{namecode:6}，吾收到了一件奇怪的礼物",
+			say = "不是這個問題啦！對了，{namecode:6}，吾收到了一件奇怪的禮物",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -173,7 +173,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "{namecode:6}",
-			say = "礼物——？",
+			say = "禮物——？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -189,7 +189,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "嘿嘿~好看吗？",
+			say = "嘿嘿~好看嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -205,7 +205,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "{namecode:6}",
-			say = "倒是很符合{namecode:87}的气质……被你的姐姐们夸赞了吗？",
+			say = "倒是很符合{namecode:87}的氣質……被你的姐姐們誇讚了嗎？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -221,7 +221,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "最近姐姐们都不陪吾玩了……什么“{namecode:87}也该交些同龄的朋友了”，吾和姐姐们的年龄明明差不多！对了，下午我们一起去哪玩吧！",
+			say = "最近姐姐們都不陪吾玩了……什麼“{namecode:87}也該交些同齡的朋友了”，吾和姐姐們的年齡明明差不多！對了，下午我們一起去哪玩吧！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -253,7 +253,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "前些天看到{namecode:96}在采购食材，还以为能吃上一顿天妇罗，结果还是南瓜！",
+			say = "前些天看到{namecode:96}在採購食材，還以為能吃上一頓天婦羅，結果還是南瓜！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -269,7 +269,7 @@ return {
 			side = 0,
 			dir = 1,
 			actorName = "{namecode:6}",
-			say = "{namecode:96}应该不会放过吃天妇罗的机会，除非……",
+			say = "{namecode:96}應該不會放過吃天婦羅的機會，除非……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -285,7 +285,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "说起来，{namecode:96}最近看吾的眼神也有点怪。南瓜……{namecode:96}……嗯，吾们去调查调查吧！",
+			say = "說起來，{namecode:96}最近看吾的眼神也有點怪。南瓜……{namecode:96}……嗯，吾們去調查調查吧！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -317,7 +317,7 @@ return {
 			side = 1,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "当然！你不要总沉溺在战斗与训练中啦",
+			say = "當然！你不要總沉溺在戰鬥與訓練中啦",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -333,7 +333,7 @@ return {
 			dir = 1,
 			actor = 307050,
 			nameColor = "#a9f548",
-			say = "很遗憾，我不知道……你们请加油哟~",
+			say = "很遺憾，我不知道……你們請加油喲~",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -366,7 +366,7 @@ return {
 			dir = 1,
 			actor = 312010,
 			nameColor = "#a9f548",
-			say = "南瓜是很好吃的喵~浪费粮食可是重罪喵~{namecode:87}要多吃一点喵~",
+			say = "南瓜是很好吃的喵~浪費糧食可是重罪喵~{namecode:87}要多吃一點喵~",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -399,7 +399,7 @@ return {
 			dir = 1,
 			actor = 307060,
 			nameColor = "#a9f548",
-			say = "天妇罗？没、没有啦！我是在为过冬储购食材啦！",
+			say = "天婦羅？沒、沒有啦！我是在為過冬儲購食材啦！",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -432,7 +432,7 @@ return {
 			dir = 1,
 			actor = 306051,
 			nameColor = "#a9f548",
-			say = "总觉得……气氛有点紧张",
+			say = "總覺得……氣氛有點緊張",
 			flashout = {
 				dur = 1,
 				black = true,
@@ -465,7 +465,7 @@ return {
 			side = 2,
 			dir = 1,
 			actorName = "{namecode:87}",
-			say = "不过，重要的情报总会藏在意想不到的地方，{namecode:6}，跟上吾！",
+			say = "不過，重要的情報總會藏在意想不到的地方，{namecode:6}，跟上吾！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -476,7 +476,7 @@ return {
 			}
 		},
 		{
-			say = "凭什么我和姐姐参加不了万圣夜……对了！干脆到时候……",
+			say = "憑什麼我和姐姐參加不了萬聖夜……對了！乾脆到時候……",
 			side = 2,
 			dir = 1,
 			blackBg = true,
