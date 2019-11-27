@@ -63,12 +63,12 @@ slot0.setNotices = function (slot0, slot1)
 
 		slot10 = ScrollTxt:changeToScroll(slot9:Find("common_state/time_txt"))
 
-		slot10:setText(slot8.btnTitle)
+		slot10:setText(slot8.title)
 		table.insert(slot0.titleScrolls, slot10)
 
 		slot11 = ScrollTxt:changeToScroll(slot9:Find("select_state/time_txt"))
 
-		slot11:setText(slot8.btnTitle)
+		slot11:setText(slot8.title)
 		table.insert(slot0.titleScrolls, slot11)
 		table.insert(slot0._tabList, slot9)
 		SetActive(slot9, true)

@@ -178,4 +178,92 @@ slot0.GetAllSkins = function (slot0)
 	return slot1
 end
 
+slot0.GetAllSkinForShip = function (slot0, slot1)
+	for slot7 = #ShipGroup.getSkinList(slot2), 1, -1 do
+		if slot3[slot7].skin_type == ShipSkin.SKIN_TYPE_NOT_HAVE_HIDE and not slot0:hasSkin(slot8.id) then
+			table.remove(slot3, slot7)
+		end
+	end
+
+	if pg.ship_data_trans[slot2] and not slot1:isRemoulded() then
+		slot4 = ShipGroup.GetGroupConfig(slot2).trans_skin
+
+		for slot8 = #slot3, 1, -1 do
+			if slot3[slot8].id == slot4 then
+				table.remove(slot3, slot8)
+
+				break
+			end
+		end
+	end
+
+	for slot7 = #slot3, 1, -1 do
+		if slot3[slot7].show_time and ((type(slot8.show_time) == "string" and slot8.show_time == "stop") or (type(slot8.show_time) == "table" and not pg.TimeMgr.GetInstance():inTime(slot8.show_time))) then
+			table.remove(slot3, slot7)
+		end
+
+		if PLATFORM == PLATFORM_US and slot8.no_showing == "1" then
+			table.remove(slot3, slot7)
+		elseif HXSet.isHx() and PLATFORM == PLATFORM_KR and pg.ship_skin_template[slot8.id].isHX == 1 then
+			table.remove(slot3, slot7)
+		end
+	end
+
+	if PLATFORM_CODE == PLATFORM_CH then
+		slot4 = pg.gameset.big_seven_old_skin_timestamp.key_value
+
+		for slot8 = #slot3, 1, -1 do
+			if slot3[slot8].skin_type == ShipSkin.SKIN_TYPE_OLD and slot4 < slot1.createTime then
+				table.remove(slot3, slot8)
+			end
+		end
+	end
+
+	return slot3
+end
+
+slot0.GetAllSkinForARCamera = function (slot0, slot1)
+	for slot6 = #ShipGroup.getSkinList(slot1), 1, -1 do
+		if slot2[slot6].skin_type == ShipSkin.SKIN_TYPE_OLD then
+			table.remove(slot2, slot6)
+		end
+	end
+
+	if ShipGroup.GetGroupConfig(slot1).trans_skinz ~= 0 then
+		slot4 = false
+
+		if getProxy(CollectionProxy):getShipGroup(slot1) then
+			for slot9, slot10 in ipairs(slot2) do
+				if slot10.skin_type == ShipSkin.SKIN_TYPE_REMAKE and slot5.trans then
+					slot4 = true
+
+					break
+				end
+			end
+		end
+
+		if not slot4 then
+			for slot9 = #slot2, 1, -1 do
+				if slot2[slot9].id == slot3 then
+					table.remove(slot2, slot9)
+
+					break
+				end
+			end
+		end
+	end
+
+	for slot7 = #slot2, 1, -1 do
+		if slot2[slot7].skin_type == ShipSkin.SKIN_TYPE_NOT_HAVE_HIDE and not slot0:hasSkin(slot8.id) then
+			table.remove(slot2, slot7)
+		elseif PLATFORM == PLATFORM_US and slot8.no_showing == "1" then
+			table.remove(slot2, slot7)
+		elseif HXSet.isHx() and PLATFORM == PLATFORM_KR and pg.ship_skin_template[slot8.id].isHX == 1 then
+			table.remove(slot2, slot7)
+		end
+	end
+
+	return slot2
+end
+
 return slot0

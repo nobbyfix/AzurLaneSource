@@ -265,13 +265,27 @@ pg.mini_game = {
 			}
 		}
 	},
+	{
+		name = "holo连连看",
+		view_name = "HoloLiveLinkGameView",
+		mediator_name = "HoloLiveLinkGameMediator",
+		type = 2,
+		simple_config_data = "",
+		config_csv_key = "",
+		config_data = "",
+		config_csv = "activity_event_linkgame",
+		id = 7,
+		hub_id = 3,
+		request_data = 1
+	},
 	all = {
 		1,
 		2,
 		3,
 		4,
 		5,
-		6
+		6,
+		7
 	}
 }
 

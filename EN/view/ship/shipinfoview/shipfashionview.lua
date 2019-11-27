@@ -97,7 +97,7 @@ slot0.UpdateFashion = function (slot0, slot1)
 				slot0.fashionCellMap[slot9] = ShipSkinCard.New(slot9.gameObject)
 			end
 
-			slot10:updateData(slot0:GetShipVO(), slot8, slot0:GetShipVO():proposeSkinOwned(slot8) or table.contains(slot0.skinList, slot8.id) or (slot0:GetShipVO():getRemouldSkinId() == slot8.id and slot0:GetShipVO():isRemoulded()) or slot8.skin_type == 3)
+			slot10:updateData(slot0:GetShipVO(), slot8, slot0:GetShipVO():proposeSkinOwned(slot8) or table.contains(slot0.skinList, slot8.id) or (slot0:GetShipVO():getRemouldSkinId() == slot8.id and slot0:GetShipVO():isRemoulded()) or slot8.skin_type == ShipSkin.SKIN_TYPE_OLD)
 			slot10:updateUsing(slot0:GetShipVO().skinId == slot8.id)
 			onButton(slot0, slot9, function ()
 				if ShipViewConst.currentPage ~= ShipViewConst.PAGE.FASHION then
@@ -201,7 +201,7 @@ slot0.UpdateFashionDetail = function (slot0, slot1)
 	end
 
 	slot7 = ((slot1.shop_id > 0 and pg.shop_template[slot1.shop_id]) or nil) and not pg.TimeMgr.GetInstance():inTime((slot1.shop_id > 0 and pg.shop_template[slot1.shop_id]) or nil.time)
-	slot9 = slot1.id == slot0:GetShipVO():getConfig("skin_id") or (((slot0:GetShipVO():proposeSkinOwned(slot1) or table.contains(slot0.skinList, slot1.id) or (slot0:GetShipVO():getRemouldSkinId() == slot1.id and slot0:GetShipVO():isRemoulded())) and 1) or 0) >= 1 or slot1.skin_type == 3
+	slot9 = slot1.id == slot0:GetShipVO():getConfig("skin_id") or (((slot0:GetShipVO():proposeSkinOwned(slot1) or table.contains(slot0.skinList, slot1.id) or (slot0:GetShipVO():getRemouldSkinId() == slot1.id and slot0:GetShipVO():isRemoulded())) and 1) or 0) >= 1 or slot1.skin_type == ShipSkin.SKIN_TYPE_OLD
 	slot10 = getProxy(ShipSkinProxy):getSkinById(slot1.id)
 	slot11 = slot1.id == slot0:GetShipVO().skinId and slot10 and slot10:isExpireType()
 

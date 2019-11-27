@@ -83,10 +83,27 @@ function slot11(slot0, slot1)
 		slot4(slot5, slot6)
 	end
 
-	slot4 = require
-	slot5 = slot3
+	slot4 = pcall
 
-	return slot4(slot5)
+	function slot5()
+		slot0 = require
+		slot1 = slot0
+
+		return slot0(slot1)
+	end
+
+	slot4, slot5 = slot4(slot5)
+
+	if not slot4 then
+		slot6 = warning
+		slot7 = "不存在剧情ID对应的Lua:"
+		slot8 = slot1
+		slot7 = slot7 .. slot8
+
+		slot6(slot7)
+	end
+
+	return slot4 and slot5
 end
 
 slot0.GetStoryByName = slot11
@@ -376,6 +393,28 @@ function slot15(slot0)
 	slot1 = slot0.actorRight
 	slot1 = slot1.localPosition
 	slot0.posActorRight = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "material1"
+	slot1 = slot1(slot2, slot3)
+	slot2 = slot1
+	slot1 = slot1.GetComponent
+	slot3 = typeof
+	slot4 = Image
+	slot1 = slot1(slot2, slot3(slot4))
+	slot1 = slot1.material
+	slot0.material1 = slot1
+	slot1 = findTF
+	slot2 = slot0._go
+	slot3 = "material2"
+	slot1 = slot1(slot2, slot3)
+	slot2 = slot1
+	slot1 = slot1.GetComponent
+	slot3 = typeof
+	slot4 = Image
+	slot1 = slot1(slot2, slot3(slot4))
+	slot1 = slot1.material
+	slot0.material2 = slot1
 end
 
 slot0.Load = slot15
@@ -489,6 +528,20 @@ function slot16()
 end
 
 function slot17(slot0, slot1, slot2, slot3, slot4, slot5)
+	slot7 = slot0
+	slot6 = slot0.GetStoryByName
+	slot8 = slot1
+	slot6 = slot6(slot7, slot8)
+
+	if not slot6 then
+		if slot2 then
+			slot6 = slot2
+			slot6 = slot6()
+		end
+
+		return slot6
+	end
+
 	slot6 = slot0._effectCG
 	slot7 = 1
 	slot6.alpha = slot7
@@ -853,12 +906,33 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 		SetActive(slot0.options, false)
 
 		slot0.optionsBg.transform.localPosition = Vector3(1485, 40)
-		slot7 = type(slot1.jumpto)
+		slot7 = slot0.tweenObjs
 
-		if slot7 == "string" then
-			slot7 = slot1.jumpto
-			slot0.nextEpisode = slot7
+		if slot7 then
+			slot7 = ipairs
+			slot8 = slot0.tweenObjs
+			slot7, slot8, slot9 = slot7(slot8)
+
+			for slot10, slot11 in slot7, slot8, slot9 do
+				slot12 = LeanTween
+				slot12 = slot12.cancel
+				slot13 = slot11
+
+				slot12(slot13)
+			end
+
+			slot7 = {}
+			slot0.tweenObjs = slot7
 		end
+	end
+
+	slot7 = type
+	slot8 = slot1.jumpto
+	slot7 = slot7(slot8)
+
+	if slot7 == "string" then
+		slot7 = slot1.jumpto
+		slot0.nextEpisode = slot7
 	end
 
 	slot7 = type
@@ -4285,7 +4359,16 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #9 185-185, warpins: 2 ---
+				--- BLOCK #9 185-192, warpins: 2 ---
+				slot7 = slot5
+				slot8 = slot7
+				slot7 = slot7.updatePainting
+				slot9 = slot4
+				slot10 = slot1
+				slot10 = slot10.paintingNoise
+
+				slot7(slot8, slot9, slot10)
+
 				return
 				--- END OF BLOCK #9 ---
 
@@ -9417,7 +9500,7 @@ function slot17(slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 22-97, warpins: 0 ---
+	--- BLOCK #3 22-102, warpins: 0 ---
 	for slot8, slot9 in slot5, slot6, slot7 do
 
 		-- Decompilation error in this vicinity:
@@ -9577,6 +9660,7 @@ function slot17(slot0, slot1, slot2)
 
 
 		end
+
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
@@ -9584,8 +9668,22 @@ function slot17(slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 96-97, warpins: 3 ---
+		--- BLOCK #3 96-100, warpins: 2 ---
+		slot17 = slot0
+		slot16 = slot0.updatePainting
+		slot18 = slot12
+		slot19 = slot9.paintingNoise
+
+		slot16(slot17, slot18, slot19)
 		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 101-102, warpins: 2 ---
+		--- END OF BLOCK #4 ---
 
 
 
@@ -9598,7 +9696,7 @@ function slot17(slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 98-98, warpins: 1 ---
+	--- BLOCK #4 103-103, warpins: 1 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -9706,5 +9804,474 @@ function slot17(slot0)
 end
 
 slot0.isActive = slot17
+
+function slot17(slot0, slot1, slot2)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.tweenObjs
+
+	if not slot3 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-5, warpins: 1 ---
+		slot3 = {}
+		slot0.tweenObjs = slot3
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 6-16, warpins: 2 ---
+	function slot3(slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-40, warpins: 1 ---
+		slot1 = slot0.material
+		slot2 = slot1
+		slot1 = slot1.SetFloat
+		slot3 = "_LineGray"
+		slot4 = 0.3
+
+		slot1(slot2, slot3, slot4)
+
+		slot1 = slot0.material
+		slot2 = slot1
+		slot1 = slot1.SetFloat
+		slot3 = "_TearDistance"
+		slot4 = 0
+
+		slot1(slot2, slot3, slot4)
+
+		slot1 = LeanTween
+		slot1 = slot1.cancel
+		slot2 = slot0.gameObject
+
+		slot1(slot2)
+
+		slot1 = slot0
+		slot1 = slot1.tweenObjs
+		slot2 = slot0.gameObject
+		slot3 = slot0.gameObject
+		slot1[slot2] = slot3
+		slot1 = LeanTween
+		slot1 = slot1.value
+		slot2 = slot0.gameObject
+		slot3 = 0
+		slot4 = 2
+		slot5 = 2
+		slot1 = slot1(slot2, slot3, slot4, slot5)
+		slot2 = slot1
+		slot1 = slot1.setLoopClamp
+		slot1 = slot1(slot2)
+		slot2 = slot1
+		slot1 = slot1.setOnUpdate
+		slot3 = System
+		slot3 = slot3.Action_float
+
+		function slot4(slot0)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-3, warpins: 1 ---
+			slot1 = 1.2
+
+			if slot0 >= slot1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 4-11, warpins: 1 ---
+				slot1 = slot0
+				slot1 = slot1.material
+				slot2 = slot1
+				slot1 = slot1.SetFloat
+				slot3 = "_LineGray"
+				slot4 = 0.3
+
+				slot1(slot2, slot3, slot4)
+				--- END OF BLOCK #0 ---
+
+
+
+			else
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 12-14, warpins: 1 ---
+				slot1 = 1.1
+
+				if slot0 >= slot1 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 15-22, warpins: 1 ---
+					slot1 = slot0
+					slot1 = slot1.material
+					slot2 = slot1
+					slot1 = slot1.SetFloat
+					slot3 = "_LineGray"
+					slot4 = 0.45
+
+					slot1(slot2, slot3, slot4)
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 23-25, warpins: 1 ---
+					slot1 = 1.03
+
+					if slot0 >= slot1 then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 26-33, warpins: 1 ---
+						slot1 = slot0
+						slot1 = slot1.material
+						slot2 = slot1
+						slot1 = slot1.SetFloat
+						slot3 = "_TearDistance"
+						slot4 = 0
+
+						slot1(slot2, slot3, slot4)
+						--- END OF BLOCK #0 ---
+
+
+
+					else
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 34-36, warpins: 1 ---
+						slot1 = 1
+
+						if slot0 >= slot1 then
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 37-44, warpins: 1 ---
+							slot1 = slot0
+							slot1 = slot1.material
+							slot2 = slot1
+							slot1 = slot1.SetFloat
+							slot3 = "_TearDistance"
+							slot4 = 0.3
+
+							slot1(slot2, slot3, slot4)
+							--- END OF BLOCK #0 ---
+
+
+
+						else
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 45-47, warpins: 1 ---
+							slot1 = 0.35
+
+							if slot0 >= slot1 then
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 48-55, warpins: 1 ---
+								slot1 = slot0
+								slot1 = slot1.material
+								slot2 = slot1
+								slot1 = slot1.SetFloat
+								slot3 = "_LineGray"
+								slot4 = 0.3
+
+								slot1(slot2, slot3, slot4)
+								--- END OF BLOCK #0 ---
+
+
+
+							else
+
+								-- Decompilation error in this vicinity:
+								--- BLOCK #0 56-58, warpins: 1 ---
+								slot1 = 0.3
+
+								if slot0 >= slot1 then
+
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 59-66, warpins: 1 ---
+									slot1 = slot0
+									slot1 = slot1.material
+									slot2 = slot1
+									slot1 = slot1.SetFloat
+									slot3 = "_LineGray"
+									slot4 = 0.4
+
+									slot1(slot2, slot3, slot4)
+									--- END OF BLOCK #0 ---
+
+
+
+								else
+
+									-- Decompilation error in this vicinity:
+									--- BLOCK #0 67-69, warpins: 1 ---
+									slot1 = 0.25
+
+									if slot0 >= slot1 then
+
+										-- Decompilation error in this vicinity:
+										--- BLOCK #0 70-77, warpins: 1 ---
+										slot1 = slot0
+										slot1 = slot1.material
+										slot2 = slot1
+										slot1 = slot1.SetFloat
+										slot3 = "_LineGray"
+										slot4 = 0.3
+
+										slot1(slot2, slot3, slot4)
+										--- END OF BLOCK #0 ---
+
+
+
+									else
+
+										-- Decompilation error in this vicinity:
+										--- BLOCK #0 78-80, warpins: 1 ---
+										slot1 = 0.2
+
+										if slot0 >= slot1 then
+
+											-- Decompilation error in this vicinity:
+											--- BLOCK #0 81-87, warpins: 1 ---
+											slot1 = slot0
+											slot1 = slot1.material
+											slot2 = slot1
+											slot1 = slot1.SetFloat
+											slot3 = "_LineGray"
+											slot4 = 0.4
+
+											slot1(slot2, slot3, slot4)
+											--- END OF BLOCK #0 ---
+
+
+
+										end
+										--- END OF BLOCK #0 ---
+
+
+
+									end
+									--- END OF BLOCK #0 ---
+
+
+
+								end
+								--- END OF BLOCK #0 ---
+
+
+
+							end
+							--- END OF BLOCK #0 ---
+
+
+
+						end
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 88-88, warpins: 9 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
+		end
+
+		slot1(slot2, slot3(slot4))
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4 = findTF
+	slot5 = slot1
+	slot6 = "fitter"
+	slot4 = slot4(slot5, slot6)
+	slot5 = slot4
+	slot4 = slot4.GetChild
+	slot6 = 0
+	slot4 = slot4(slot5, slot6)
+
+	if slot4 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 17-22, warpins: 1 ---
+		slot5 = GetComponent
+		slot6 = slot4
+		slot7 = "MeshImage"
+		slot5 = slot5(slot6, slot7)
+
+		if slot2 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 23-34, warpins: 1 ---
+			slot6 = slot0.material1
+			slot5.material = slot6
+			slot6 = slot5.material
+			slot7 = slot6
+			slot6 = slot6.SetFloat
+			slot8 = "_LineDensity"
+			slot9 = 7
+
+			slot6(slot7, slot8, slot9)
+
+			slot6 = slot3
+			slot7 = slot5
+
+			slot6(slot7)
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 35-40, warpins: 1 ---
+			slot6 = LeanTween
+			slot6 = slot6.cancel
+			slot7 = slot5.gameObject
+
+			slot6(slot7)
+
+			slot6 = nil
+			slot5.material = slot6
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 41-46, warpins: 2 ---
+		slot6 = findTF
+		slot7 = slot4
+		slot8 = "face"
+		slot6 = slot6(slot7, slot8)
+
+		if slot6 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 47-51, warpins: 1 ---
+			slot7 = isActive
+			slot8 = slot6
+			slot7 = slot7(slot8)
+
+			if slot7 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 52-57, warpins: 1 ---
+				slot7 = GetComponent
+				slot8 = slot6
+				slot9 = "Image"
+				slot7 = slot7(slot8, slot9)
+
+				if slot2 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 58-69, warpins: 1 ---
+					slot8 = slot0.material2
+					slot7.material = slot8
+					slot8 = slot7.material
+					slot9 = slot8
+					slot8 = slot8.SetFloat
+					slot10 = "_LineDensity"
+					slot11 = 7
+
+					slot8(slot9, slot10, slot11)
+
+					slot8 = slot3
+					slot9 = slot7
+
+					slot8(slot9)
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 70-75, warpins: 1 ---
+					slot8 = LeanTween
+					slot8 = slot8.cancel
+					slot9 = slot7.gameObject
+
+					slot8(slot9)
+
+					slot8 = nil
+					slot7.material = slot8
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 76-77, warpins: 5 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot0.updatePainting = slot17
 
 return

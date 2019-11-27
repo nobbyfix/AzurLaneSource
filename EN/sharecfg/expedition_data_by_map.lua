@@ -3819,6 +3819,170 @@ pg.expedition_data_by_map = {
 			}
 		}
 	},
+	[1290001] = {
+		map = 1290001,
+		name = "Looking Glass of Fact and Fiction - Pt. 1|| ||CHAPTER EX||E.X.",
+		bgm = "holo-tokiwa",
+		type = 4,
+		on_activity = 30284,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "HOLOGUANQIA2",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "Map_1270001",
+		cloud_suffix = "",
+		bg = "Map_1270001",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 0,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1290002] = {
+		map = 1290002,
+		name = "Looking Glass of Fact and Fiction - Pt. 2|| ||CHAPTER EX||E.X.",
+		bgm = "holo-tokiwa",
+		type = 4,
+		on_activity = 30284,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "HOLOGUANQIA29",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "Map_1270002",
+		cloud_suffix = "",
+		bg = "Map_1270002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 0,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1290025] = {
+		map = 1290025,
+		name = "Looking Glass of Fact and Fiction - SP|| ||CHAPTER EX||E.X.",
+		bgm = "holo-inochi-inst",
+		type = 8,
+		on_activity = 30284,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "Map_1270002",
+		cloud_suffix = "",
+		bg = "Map_1270002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1290002,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
+	[1290026] = {
+		map = 1290026,
+		name = "Looking Glass of Fact and Fiction - EX|| ||CHAPTER EX||E.X.",
+		bgm = "holo-sora",
+		type = 8,
+		on_activity = 30284,
+		title = "EX",
+		drop_by_map_display = "",
+		enter_story = "",
+		level_limit = 1,
+		uifx = "",
+		guide_id = "",
+		ani_name = "Map_1270002",
+		cloud_suffix = "",
+		bg = "Map_1270002",
+		destory_icon_suffix = "blue",
+		animtor = 1,
+		bind_map = 1290002,
+		clouds_pos = {
+			{
+				332,
+				271
+			},
+			{
+				896,
+				110
+			},
+			{
+				-280,
+				0
+			},
+			{
+				990,
+				-90
+			},
+			{
+				0,
+				-465
+			}
+		}
+	},
 	[2100000] = {
 		map = 2100000,
 		name = "Visitors Dyed in Red: Prequel || || S.P. || E.X.",
@@ -4217,6 +4381,10 @@ pg.expedition_data_by_map = {
 		1260025,
 		1260026,
 		1270001,
+		1290001,
+		1290002,
+		1290025,
+		1290026,
 		2100000,
 		2100001,
 		2100010,

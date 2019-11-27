@@ -188,6 +188,7 @@ ys.Battle.BattleConst.ShakeType = {
 	UNIT_DIE = 302
 }
 ys.Battle.BattleConst.BuffEffectType = {
+	ON_INIT_GAME = "onInitGame",
 	ON_START_GAME = "onStartGame",
 	ON_FLAG_SHIP = "onFlagShip",
 	ON_CONSORT = "onConsort",

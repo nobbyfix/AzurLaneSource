@@ -4863,7 +4863,7 @@ function getGroupOwnSkins(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 25-29, warpins: 1 ---
-			if slot10.skin_type == Ship.SKIN_TYPE_DEFAULT or table.contains(slot3, slot10.id) or (slot10.skin_type == Ship.SKIN_TYPE_REMAKE and slot4.trans) or (slot10.skin_type == Ship.SKIN_TYPE_PROPOSE and slot4.married == 1) then
+			if slot10.skin_type == ShipSkin.SKIN_TYPE_DEFAULT or table.contains(slot3, slot10.id) or (slot10.skin_type == ShipSkin.SKIN_TYPE_REMAKE and slot4.trans) or (slot10.skin_type == ShipSkin.SKIN_TYPE_PROPOSE and slot4.married == 1) then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 53-55, warpins: 4 ---
@@ -6152,6 +6152,109 @@ function splitByWordEN(slot0, slot1)
 	--- BLOCK #2 64-64, warpins: 1 ---
 	return slot3
 	--- END OF BLOCK #2 ---
+
+
+
+end
+
+function checkBirthFormat(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
+	if #slot0 ~= 8 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-5, warpins: 1 ---
+		return false
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 6-7, warpins: 2 ---
+	slot1 = 0
+	slot2 = #slot0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 10-26, warpins: 0 ---
+	while slot1 < slot2 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 10-10, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 11-18, warpins: 1 ---
+		if string.byte(slot0, slot1 + 1) < 48 or slot3 > 57 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 22-23, warpins: 2 ---
+			return false
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 24-25, warpins: 2 ---
+		slot1 = slot1 + 1
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 26-26, warpins: 2 ---
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 26-27, warpins: 1 ---
+	return false
+	--- END OF BLOCK #4 ---
 
 
 

@@ -102,6 +102,24 @@ pg.strategy_data_template = {
 		desc = "Crisis Averted~Nobody is going to harass you this time",
 		arg = {}
 	},
+	[92] = {
+		buff_id = 0,
+		name = "Nightfall",
+		type = 3,
+		id = 92,
+		icon = "92",
+		desc = "Enemies will appear on Ambush tiles during nighttime.",
+		arg = {}
+	},
+	[93] = {
+		buff_id = 0,
+		name = "Daybreak",
+		type = 3,
+		id = 93,
+		icon = "93",
+		desc = "Enemies won't appear on Ambush tiles during daytime.",
+		arg = {}
+	},
 	[9500] = {
 		buff_id = 9500,
 		name = "Wisdom Cube Reactivity",
@@ -195,6 +213,8 @@ pg.strategy_data_template = {
 		12,
 		90,
 		91,
+		92,
+		93,
 		9500,
 		10001,
 		10002,

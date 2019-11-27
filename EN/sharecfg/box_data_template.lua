@@ -196,6 +196,13 @@ pg.box_data_template = {
 		icon = "event2",
 		effect_id = 5
 	},
+	[6002] = {
+		name = "Hololava",
+		type = 9,
+		id = 6002,
+		icon = "event2",
+		effect_id = 5
+	},
 	[10001] = {
 		name = "Jigsaw Box",
 		type = 1,
@@ -351,6 +358,7 @@ pg.box_data_template = {
 		4001,
 		5001,
 		6001,
+		6002,
 		10001,
 		10002,
 		10003,

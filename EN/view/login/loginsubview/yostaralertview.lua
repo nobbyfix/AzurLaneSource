@@ -51,6 +51,10 @@ slot0.CheckAiriGenCodeCounter = function (slot0)
 	if GetAiriGenCodeTimeRemain() > 0 then
 		setButtonEnabled(slot0.yostarGenCodeBtn, false)
 
+		if slot0.genCodeTimer then
+			slot0.genCodeTimer:Stop()
+		end
+
 		slot0.genCodeTimer = Timer.New(function ()
 			if GetAiriGenCodeTimeRemain() > 0 then
 				setText(slot0.yostarGenTxt, "(" .. slot0 .. ")")
@@ -99,7 +103,9 @@ end
 slot0.OnDestroy = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-1, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0:ClearAiriGenCodeTimer()
+
 	return
 	--- END OF BLOCK #0 ---
 

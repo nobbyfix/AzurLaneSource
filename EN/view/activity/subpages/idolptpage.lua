@@ -54,7 +54,8 @@ end
 slot0.OnInit = slot1
 
 function slot1(slot0)
-	slot1 = slot0.super
+	slot1 = slot0
+	slot1 = slot1.super
 	slot1 = slot1.OnDataSetting
 	slot2 = slot0
 	slot1 = slot1(slot2)
@@ -257,7 +258,8 @@ end
 slot0.OnFirstFlush = slot1
 
 function slot1(slot0)
-	slot1 = slot0.super
+	slot1 = slot0
+	slot1 = slot1.super
 	slot1 = slot1.OnUpdateFlush
 	slot2 = slot0
 

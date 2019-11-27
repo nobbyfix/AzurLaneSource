@@ -2462,6 +2462,56 @@ pg.furniture_data_template = {
 		},
 		interAction_group = {}
 	},
+	[157] = {
+		advice = 0,
+		name = "Hololive Headquarters",
+		count = 1,
+		type = 7,
+		dir = 0,
+		gain_by = "",
+		is_get_time_note = 1,
+		belong = 1,
+		can_rotate = 1,
+		effect = "",
+		dorm_icon_price = 500,
+		not_for_sale = 1,
+		icon = "dalao_holoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 5,
+		tag = 6,
+		picture = "",
+		canputon = 0,
+		discount = 0,
+		id = 157,
+		comfortable = 0,
+		describe = "\"We're glad to have communities as awesome as Azur Lane's and Hololive's!\"        <color=#ffde38>–A medal given for participating in \"The Duet of Falsehood and Truth\" event. </color> ",
+		dorm_id = 0,
+		gem_price = 0,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 0,
+		discount_time = "",
+		size = {
+			3,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			1,
+			"event:/cv/furniture/hololivevoice"
+		},
+		spine = {
+			{
+				"dalao_holo",
+				"action"
+			}
+		},
+		interAction_group = {}
+	},
 	[1001] = {
 		can_rotate = 0,
 		name = "Broken Floor",
@@ -77122,6 +77172,3275 @@ pg.furniture_data_template = {
 		},
 		interAction_group = {}
 	},
+	[55001] = {
+		can_rotate = 0,
+		name = "Holoflooring",
+		gain_by = "",
+		type = 4,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 150,
+		not_for_sale = 0,
+		icon = "dibanholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 4,
+		rarity = 4,
+		picture = "holo/dibanholo",
+		canputon = 0,
+		discount = 0,
+		id = 55001,
+		comfortable = 4,
+		describe = "Reminiscent of the pattern found in Hololive's office.",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			14
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55002] = {
+		can_rotate = 0,
+		name = "Holowallpaper",
+		gain_by = "",
+		type = 1,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 150,
+		not_for_sale = 0,
+		icon = "qiangbiholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 3,
+		rarity = 4,
+		picture = "holo/qiangbiholo",
+		canputon = 0,
+		discount = 0,
+		id = 55002,
+		comfortable = 4,
+		describe = "Has an authentic Hololive feeling to it.",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55101] = {
+		can_rotate = 0,
+		name = "Holoboard",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "banziholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/banziholo",
+		canputon = 0,
+		discount = 0,
+		id = 55101,
+		comfortable = 2,
+		describe = "Covered in personalized Hololive stickers and drawings.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55102] = {
+		advice = 0,
+		name = "Aqua's Bed",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "holo/chuangholo",
+		can_rotate = 0,
+		dorm_icon_price = 150,
+		not_for_sale = 0,
+		icon = "chuangholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55102,
+		comfortable = 4,
+		describe = "\"Even without work to do, I get tired just lying down all day!\"",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			7,
+			8
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sleep",
+				{
+					-13,
+					46
+				},
+				{
+					-1,
+					1
+				}
+			},
+			{
+				"sleep",
+				{
+					-102,
+					-8
+				},
+				{
+					-1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55103] = {
+		can_rotate = 1,
+		name = "Holohighdef TV",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "dianshiholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "holo/dianshiholo",
+		canputon = 0,
+		discount = 0,
+		id = 55103,
+		comfortable = 3,
+		describe = "An ultra-widescreen television. Highly appraised as a home theater.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			9
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55104] = {
+		can_rotate = 0,
+		name = "Magic Carpet",
+		gain_by = "",
+		type = 5,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "ditanholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/ditanholo",
+		canputon = 0,
+		discount = 0,
+		id = 55104,
+		comfortable = 2,
+		describe = "A magic carpet that Shion owns.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			6,
+			10
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55105] = {
+		can_rotate = 0,
+		name = "Magic Closet",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 150,
+		not_for_sale = 1,
+		icon = "guiziholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 4,
+		picture = "holo/guiziholo",
+		canputon = 0,
+		discount = 0,
+		id = 55105,
+		comfortable = 4,
+		describe = "A magic closet that Shion owns. Whatever someone imagined would come out does when they open it.",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55106] = {
+		can_rotate = 0,
+		name = "Holonight Table",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "guiziholo2icon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "holo/guiziholo2",
+		canputon = 0,
+		discount = 0,
+		id = 55106,
+		comfortable = 3,
+		describe = "A night table made of wood. It makes you feel real cozy.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55107] = {
+		can_rotate = 1,
+		name = "Holodisplay Case",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 1,
+		icon = "guiziholo3icon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "holo/guiziholo3",
+		canputon = 1,
+		discount = 0,
+		id = 55107,
+		comfortable = 3,
+		describe = "A glass case for displaying things. Exactly what it says on the tin.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			2
+		},
+		offset = {
+			0,
+			-0.8
+		},
+		canputonGrid = {
+			{
+				4,
+				4
+			},
+			{
+				5,
+				4
+			},
+			{
+				6,
+				4
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55108] = {
+		can_rotate = 0,
+		name = "Sunflowers",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "huaholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/huaholo",
+		canputon = 0,
+		discount = 0,
+		id = 55108,
+		comfortable = 2,
+		describe = "Floriographically, sunflowers symbolize adoration, sincerity, and quiet love. Remember to water it and give it sunlight.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55109] = {
+		can_rotate = 0,
+		name = "Pair of Balloons",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "qiqiuholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 1,
+		picture = "holo/qiqiuholo",
+		canputon = 0,
+		discount = 0,
+		id = 55109,
+		comfortable = 1,
+		describe = "A pair of balloons that serve as indoor decorations.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55110] = {
+		can_rotate = 0,
+		name = "Triangular Swim Ring",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "quanholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/quanholo",
+		canputon = 0,
+		discount = 0,
+		id = 55110,
+		comfortable = 2,
+		describe = "A swim ring, designed by a certain magician to be triangular.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55111] = {
+		advice = 0,
+		name = "Sky Blue Sofa",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "holo/shafaholo",
+		can_rotate = 0,
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "shafaholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55111,
+		comfortable = 3,
+		describe = "Comes with three pillows, one which looks like the sun, two which look like stars.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			6
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sit",
+				{
+					-89,
+					35
+				},
+				{
+					-1,
+					1
+				}
+			},
+			{
+				"sit",
+				{
+					20,
+					-9
+				},
+				{
+					-1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55112] = {
+		advice = 0,
+		name = "D20 Chair",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "holo/shaziholo",
+		can_rotate = 1,
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "shaziholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 2,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55112,
+		comfortable = 2,
+		describe = "Pick your favorite number and roll the dice.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sit",
+				{
+					6,
+					69
+				},
+				{
+					1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55113] = {
+		can_rotate = 1,
+		name = "Duel Device",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "xiangziholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/xiangziholo",
+		canputon = 0,
+		discount = 0,
+		id = 55113,
+		comfortable = 2,
+		describe = "The symbol of an evil game... Never, ever touch it! Ever!",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55114] = {
+		can_rotate = 1,
+		name = "Stuffed Ankimo",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "xiongholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/xiongholo",
+		canputon = 0,
+		discount = 0,
+		id = 55114,
+		comfortable = 2,
+		describe = "A big stuffed Ankimo.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55115] = {
+		advice = 0,
+		name = "Hologamer Chair",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "holo/yiziholo",
+		can_rotate = 0,
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "yiziholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 2,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55115,
+		comfortable = 2,
+		describe = "Remarkably comfortable. Everybody wants one of their own.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sit",
+				{
+					-26,
+					12
+				},
+				{
+					-1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55116] = {
+		can_rotate = 0,
+		name = "Marine Maid's Battlestation",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "zhuoholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "holo/zhuoholo",
+		canputon = 0,
+		discount = 0,
+		id = 55116,
+		comfortable = 3,
+		describe = "A gaming desk with associated hardware. Maid Inside (trademark.)",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			6
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55117] = {
+		can_rotate = 1,
+		name = "Holodressing Table",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "zhuoholo2icon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "holo/zhuoholo2",
+		canputon = 0,
+		discount = 0,
+		id = 55117,
+		comfortable = 3,
+		describe = "A table where you can put on makeup and store your personal trinkets.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			5,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55118] = {
+		can_rotate = 1,
+		name = "Holostage",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 0,
+		icon = "wutaiholoicon",
+		deblocking = 1,
+		level = 1,
+		interaction_bgm = "holo-sss",
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55118,
+		comfortable = 4,
+		describe = "A massive Hololive stage for idols to shine their brightest on!",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			14,
+			5
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"hololivestage",
+				"normal"
+			},
+			{},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"dance"
+					}
+				},
+				{},
+				{
+					1
+				}
+			},
+			{},
+			{
+				0,
+				0
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		animator = {
+			{
+				"hololivestageCharControl",
+				"hololivestageCharControl2",
+				"hololivestageCharControl3"
+			}
+		},
+		interAction_group = {}
+	},
+	[55119] = {
+		can_rotate = 0,
+		name = "Aqua Box",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 0,
+		icon = "taiziholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55119,
+		comfortable = 4,
+		describe = "Holoholoholoholoholo... HOLOLIVE!!!!!!!",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			4
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"aquaBoxB",
+				"normal"
+			},
+			{
+				"aquaBoxT"
+			},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"dance"
+					},
+					{
+						"yun"
+					}
+				},
+				{
+					nil,
+					1
+				},
+				{
+					0
+				}
+			},
+			{},
+			{
+				0,
+				0
+			},
+			{
+				1,
+				1
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		animator = {
+			{
+				"aquaBoxCharControl"
+			}
+		},
+		interAction_group = {}
+	},
+	[55120] = {
+		advice = 0,
+		name = "Holoaquarium",
+		count = 1,
+		type = 2,
+		dir = 0,
+		gain_by = "",
+		is_get_time_note = 0,
+		belong = 1,
+		can_rotate = 1,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 0,
+		icon = "muqiangholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		picture = "",
+		canputon = 0,
+		discount = 0,
+		id = 55120,
+		comfortable = 4,
+		describe = "An aquarium with a Hololive theme. Putting the fish aside, there seems to be... something else in there?",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			12
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"hololiveWindow",
+				"normal"
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55121] = {
+		can_rotate = 0,
+		name = "Indoor Ocean",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 1,
+		icon = "chiziholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55121,
+		comfortable = 4,
+		describe = "Enjoy the beach at any time of the year from the comfort of your room!",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			7,
+			7
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"hololivePoolB",
+				"normal"
+			},
+			{
+				"hololivePoolT"
+			},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"sleep"
+					}
+				},
+				{},
+				{
+					1
+				}
+			},
+			{},
+			{
+				0,
+				0
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		animator = {
+			{
+				"hololivePoolCharControl"
+			}
+		},
+		interAction_group = {}
+	},
+	[55201] = {
+		can_rotate = 0,
+		name = "Magic Thermos",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "beiziholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 1,
+		picture = "holo/beiziholo",
+		canputon = 0,
+		discount = 0,
+		id = 55201,
+		comfortable = 1,
+		describe = "Remember to drink plenty of water.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55202] = {
+		can_rotate = 0,
+		name = "(Nakiri's) Sword Rack",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "daoholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/daoholo",
+		canputon = 0,
+		discount = 0,
+		id = 55202,
+		comfortable = 2,
+		describe = "This is where she keeps Rakshasa and Asura.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55203] = {
+		can_rotate = 0,
+		name = "Bermbew Sprawt",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "husunholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/husunholo",
+		canputon = 0,
+		discount = 0,
+		id = 55203,
+		comfortable = 2,
+		describe = "A plushie of a... creature(?) that hangs around Shirakami Fubuki.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55204] = {
+		can_rotate = 0,
+		name = "Marine Maid's Marking",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "maoholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/maoholo",
+		canputon = 0,
+		discount = 0,
+		id = 55204,
+		comfortable = 2,
+		describe = "MINATO AQUA, AT YOUR SERVICE!!!!!!!",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55205] = {
+		can_rotate = 0,
+		name = "Onion & Fish Paste Soup",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "tangholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 1,
+		picture = "holo/tangholo",
+		canputon = 0,
+		discount = 0,
+		id = 55205,
+		comfortable = 1,
+		describe = "A freshly made hot bowl of soup. It tastes great, I tell ya!",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55206] = {
+		can_rotate = 0,
+		name = "Ookami Mio Plushie",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo1icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo1",
+		canputon = 0,
+		discount = 0,
+		id = 55206,
+		comfortable = 3,
+		describe = "A wolfy plushie of Ookami Mio.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55207] = {
+		can_rotate = 0,
+		name = "Nakiri Ayame Plushie",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo2icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo2",
+		canputon = 0,
+		discount = 0,
+		id = 55207,
+		comfortable = 3,
+		describe = "A devilish plushie of Nakiri Ayame.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55208] = {
+		can_rotate = 0,
+		name = "Murasaki Shion Plushie",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo3icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo3",
+		canputon = 0,
+		discount = 0,
+		id = 55208,
+		comfortable = 3,
+		describe = "A magic plushie of Murasaki Shion.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55209] = {
+		can_rotate = 0,
+		name = "Minato Aqua Plushie",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo4icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo4",
+		canputon = 0,
+		discount = 0,
+		id = 55209,
+		comfortable = 3,
+		describe = "A marine plushie of Minato Aqua.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55210] = {
+		can_rotate = 0,
+		name = "Natsuiro Matsuri Plushie",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo5icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo5",
+		canputon = 0,
+		discount = 0,
+		id = 55210,
+		comfortable = 3,
+		describe = "A peppy plushie of Natsuiro Matsuri.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55211] = {
+		can_rotate = 0,
+		name = "Shirakami Fubuki Plushie",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo6icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo6",
+		canputon = 0,
+		discount = 0,
+		id = 55211,
+		comfortable = 3,
+		describe = "A foxy plushie of Shirakami Fubuki.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55212] = {
+		can_rotate = 0,
+		name = "Tokino Sora Plushie",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo7icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo7",
+		canputon = 0,
+		discount = 0,
+		id = 55212,
+		comfortable = 3,
+		describe = "An airy plushie of Tokino Sora.",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55213] = {
+		can_rotate = 0,
+		name = "Clairvoyant Cushion",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "yanholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/yanholo",
+		canputon = 0,
+		discount = 0,
+		id = 55213,
+		comfortable = 2,
+		describe = "Shion's all-seeing cushion.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55214] = {
+		can_rotate = 0,
+		name = "Corn Cushion",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "yumiholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/yumiholo",
+		canputon = 0,
+		discount = 0,
+		id = 55214,
+		comfortable = 2,
+		describe = "Corn on the cush. Is there something hiding behind it?",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55215] = {
+		can_rotate = 0,
+		name = "Fried Prawnthera Cushion",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "zhaxiaholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/zhaxiaholo",
+		canputon = 0,
+		discount = 0,
+		id = 55215,
+		comfortable = 2,
+		describe = "A conveniently sized, comfy cushion.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			5,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55301] = {
+		can_rotate = 0,
+		name = "Marine Decorations",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "biguaholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 1,
+		picture = "holo/biguaholo",
+		canputon = 0,
+		discount = 0,
+		id = 55301,
+		comfortable = 1,
+		describe = "Starfish, the sea, shells, and corals. All the aquatic essence you could want.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55302] = {
+		can_rotate = 0,
+		name = "Triangular Pennant",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "caidaiholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 1,
+		picture = "holo/caidaiholo",
+		canputon = 0,
+		discount = 0,
+		id = 55302,
+		comfortable = 1,
+		describe = "Sadly not a tricolor for the double triple. Nor tricornes for the triple triple.",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			8,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55303] = {
+		can_rotate = 0,
+		name = "Marine Curtains",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "chuanglianholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 2,
+		picture = "holo/chuanglianholo",
+		canputon = 0,
+		discount = 0,
+		id = 55303,
+		comfortable = 2,
+		describe = "A set of curtains the Marine Maid loves above all else.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			10,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55304] = {
+		can_rotate = 0,
+		name = "Group Photo",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "guahuaholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 3,
+		picture = "holo/guahuaholo",
+		canputon = 0,
+		discount = 0,
+		id = 55304,
+		comfortable = 3,
+		describe = "By your powers combined!",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			6,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55305] = {
+		can_rotate = 0,
+		name = "Wall-Mounted Spirit Painting",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "guahuaholo2icon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 2,
+		picture = "holo/guahuaholo2",
+		canputon = 0,
+		discount = 0,
+		id = 55305,
+		comfortable = 2,
+		describe = "A painting of Nakiri Ayame's friendly spirits, Karma and Shiranui.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55306] = {
+		can_rotate = 0,
+		name = "Spruce Sticker",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "shuholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 1,
+		picture = "holo/shuholo",
+		canputon = 0,
+		discount = 0,
+		id = 55306,
+		comfortable = 1,
+		describe = "Put some of these up for a foresty feel indoors!",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55307] = {
+		can_rotate = 0,
+		name = "Holobookcase",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "shujiaholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 2,
+		picture = "holo/shujiaholo",
+		canputon = 0,
+		discount = 0,
+		id = 55307,
+		comfortable = 2,
+		describe = "A bookcase that houses books, bonsai, and all sorts of other things.",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			8,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
 	all = {
 		1,
 		2,
@@ -77169,6 +80488,7 @@ pg.furniture_data_template = {
 		148,
 		149,
 		151,
+		157,
 		1001,
 		1002,
 		1101,
@@ -78241,7 +81561,52 @@ pg.furniture_data_template = {
 		52119,
 		52120,
 		54104,
-		54105
+		54105,
+		55001,
+		55002,
+		55101,
+		55102,
+		55103,
+		55104,
+		55105,
+		55106,
+		55107,
+		55108,
+		55109,
+		55110,
+		55111,
+		55112,
+		55113,
+		55114,
+		55115,
+		55116,
+		55117,
+		55118,
+		55119,
+		55120,
+		55121,
+		55201,
+		55202,
+		55203,
+		55204,
+		55205,
+		55206,
+		55207,
+		55208,
+		55209,
+		55210,
+		55211,
+		55212,
+		55213,
+		55214,
+		55215,
+		55301,
+		55302,
+		55303,
+		55304,
+		55305,
+		55306,
+		55307
 	}
 }
 

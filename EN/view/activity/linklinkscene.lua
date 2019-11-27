@@ -28,8 +28,6 @@ slot0.init = function (slot0)
 	slot0.result = slot0:findTF("result")
 	slot0.countDown = slot0:findTF("count_down")
 	slot0.resource = slot0:findTF("resource")
-
-	setActive(slot0.helpBtn, false)
 end
 
 slot0.didEnter = function (slot0)
@@ -59,17 +57,7 @@ slot0.SetPlayer = function (slot0, slot1)
 end
 
 slot0.SetActivity = function (slot0, slot1)
-	slot0.activity = slot1
-	slot0.activityAchieved = slot1.data1
-	slot0.activityProgress = slot1.data2
-	slot0.activityStartTime = slot1.data3
-	slot0.activityBestRecord = slot1.data4
-	slot3 = pg.TimeMgr.GetInstance()
-	slot0.activityRestTimes = (slot3:DiffDay(slot0.activityStartTime, slot3:GetServerTime()) + 1) - slot0.activityProgress
-	slot0.activityRestTimes = math.clamp(slot0.activityRestTimes, 0, #slot0.activity:getConfig("config_client")[3] - slot0.activityProgress)
-
-	setText(slot0.awardTxt, (slot0.activityRestTimes > 0 and slot2[slot0.activityProgress + 1]) or 0)
-	setText(slot0.bestTxt, slot0:FormatRecordTime(slot0.activityBestRecord))
+	return
 end
 
 slot0.SetState = function (slot0, slot1)

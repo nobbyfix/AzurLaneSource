@@ -819,6 +819,34 @@ pg.voice_actor_CN = {
 	{
 		actor_name = "Yuki Shion ",
 		code = 205
+	},
+	{
+		actor_name = "Shirakami Fubuki",
+		code = 206
+	},
+	{
+		actor_name = "Natsuiro Matsuri",
+		code = 207
+	},
+	{
+		actor_name = "Minato Aqua",
+		code = 208
+	},
+	{
+		actor_name = "Ookami Mio",
+		code = 209
+	},
+	{
+		actor_name = "Nakiri Ayame",
+		code = 210
+	},
+	{
+		actor_name = "Tokino Sora",
+		code = 211
+	},
+	{
+		actor_name = "Murasaki Shion",
+		code = 212
 	}
 }
 

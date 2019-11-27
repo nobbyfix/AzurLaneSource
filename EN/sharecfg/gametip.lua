@@ -7729,7 +7729,7 @@ There are no Lectures on Sundays, but you will earn double the amount of Profici
 		key = "activity_switch_award_pool_failed"
 	},
 	shop_street_activity_tip = {
-		tip = "※<color=#A1E400FF>Gear Skins</color> are purchasable during(<color=#A1E400FF>09.11 – 09.25</COLOR>)!",
+		tip = "※<color=#A1E400FF>Gear Skins</color> are purchasable during(<color=#A1E400FF>11.27 – 12.10</COLOR>)!",
 		key = "shop_street_activity_tip"
 	},
 	twitter_link_title = {
@@ -8838,7 +8838,7 @@ Combat Details:
 		key = "commander_skill_point_noengough"
 	},
 	buildship_new_tip = {
-		tip = "Rate Up characters: Graf Zeppelin, Z46, U-47, Admiral Hipper, Z25, Z35, Z19",
+		tip = "Rate Up characters: Shirakami Fubuki,Minato Aqua and more!",
 		key = "buildship_new_tip"
 	},
 	buildship_heavy_tip = {
@@ -11053,7 +11053,7 @@ depends on the amount of damage dealt to the boss.
 		key = "text_inconsume"
 	},
 	pt_ship_now = {
-		tip = "Enemies Defeated:",
+		tip = "\n  ",
 		key = "pt_ship_now"
 	},
 	pt_ship_goal = {
@@ -11063,6 +11063,77 @@ depends on the amount of damage dealt to the boss.
 	skinshop_live2d_fliter_failed = {
 		tip = "No outfits to display under current filter settings ",
 		key = "skinshop_live2d_fliter_failed"
+	},
+	hololive_goodmorning = {
+		key = "hololive_goodmorning",
+		tip = {
+			{
+				info = [[
+- Summary:
+  Good Morning Azur Lane is a minigame that gives you a randomly chosen mission from one of the collab characters. You'll receive the event-exclusive furniture "Indoor Ocean" once you clear all the missions.
+  - How to Play:
+  1. Once a day for the duration of the event, you get a Spin on the roulette wheel. You can store a maximum of 7 Spins.
+  2. Spin the roulette wheel to land on a randomly chosen collab character and receive their corresponding mission.
+  3. When you complete the mission, you can spin the wheel again by tapping the button in the bottom right corner as long as you have Spins left.
+  4. Once you've completed all the collab character missions, you can claim your exclusive furniture from the event banner.]]
+			}
+		}
+	},
+	hololive_lianliankan = {
+		key = "hololive_lianliankan",
+		tip = {
+			{
+				info = [[
+- Summary:
+  Round Up The Resistance is a minigame you can play to receive event-exclusive gear.
+    - Details: 1. The minigame has 8 stages, each with its own unlock requirements. 
+  2. You'll receive each stage reward once upon clearing it. Once you clear every stage, you'll receive the event-exclusive gear.
+  3. Minigame Info: - You complete the game by clearing the board of character tiles. Tap any character tile to start forming a connecting line. - The line can only bend twice (horizontally and vertically) to reach the other tile, and cannot pass through other tiles blocking its path. - Tap the Reset button in the top right corner to shuffle the order of all tiles left on the board.
+   4. Stage Unlock Requirements:
+   Stage 1: Clear Collab Event Map T1 Stage
+   2: Clear Collab Event Map T2 and clear Stage 1 of Round Up The Resistance
+   Stage 3: Clear Collab Event Map T3 and clear Stage 2 of Round Up The Resistance
+   Stage 4: Clear Collab Event Map T4 and clear Stage 3 of Round Up The Resistance
+   Stage 5: Clear Collab Event Map T5 and clear Stage 4 of Round Up The Resistance
+   Stage 6: Clear Collab Event Map T6 and clear Stage 5 of Round Up The Resistance
+   Stage 7: Clear Stage 6 of Round Up The Resistance
+   EX Stage: Clear Stage 1 through 7 of Round Up The Resistance]]
+			}
+		}
+	},
+	hololive_dalaozhang = {
+		key = "hololive_dalaozhang",
+		tip = {
+			{
+				info = [[
+- Summary:
+  The Port Workbench is an event you complete by gathering materials through various collab event missions, which will reward you with an event-exclusive furniture: the Hololive Headquarters Building.
+    - How to Play:
+   1. You can view your mission progress on the left side of the event screen.
+   2. You'll receive materials in the form of Emblems by clearing these missions. Once you gather 9 Emblems, you can claim your Hololive Company Building furniture by tapping the Craft button on the bottom right side of the screen.
+   3. This furniture is claimable until 23:59 on December 17th.
+   4. Get 24,000 points to unlock all 7 missions.]]
+			}
+		}
+	},
+	hololive_dashenling = {
+		key = "hololive_dashenling",
+		tip = {
+			{
+				info = [[
+- Summary:
+  Mio's Divination Mansion is an event you complete by gaining Friendship Points (FP) for Ookami Mio, the Temporary Recruit you receive when you start the event. Once you gain enough FP, you can Formally Recruit her to join your fleet.
+     - Details: 1. For the duration of the event, you'll receive Friendship Points (FP) for Ookami Mio by defeating Boss Fleets on any Campaign map after World 3, or on any of the collab event stages. You'll unlock rewards as you accumulate FP.
+    2. Until you Formally Recruit Ookami Mio, you won't be able make an Oath with her, Retire her, or use her as material for Enhancing or Limit Breaking.
+    3. Your FP reward for defeating the Boss Fleet will be doubled if you bring Ookami Mio with you in the fleet and keep her afloat for the end of the battle. 
+   4. 1,000 FP is required to Formally Recruit Ookami Mio. You turn in FP for each stage of the recruitment process on the corresponding event banner. If you have not Formally Recruited her before the event concludes, she will automatically leave your fleet.
+    5. One FP Reward stage is unlocked each day up to December 4th.
+     - Temporary Recruit Info:
+    1. The collab character Ookami Mio will be added to your fleet and be available as a Temporary Recruit for the duration of the event. If you do not Formally Recruit her before the event concludes, she will leave your fleet. If this happens, any ships you used as Enhancing or Limit Break material for her will not be refunded.
+    2. To Formally Recruit her, you will need to obtain Friendship Points (FP) and turn them in through the collab event banner. There are 8 sums of points in total to turn in to complete the recruitment process.
+    3. Ookami Mio is available to be Formally Recruited starting from November 27th and up to December 11th.]]
+			}
+		}
 	},
 	pocky_jiujiu = {
 		tip = "Manjuu Manufactory",
@@ -11146,6 +11217,10 @@ depends on the amount of damage dealt to the boss.
 	secretary_pos_save_success = {
 		tip = "Save successful",
 		key = "secretary_pos_save_success"
+	},
+	juese_tiyan = {
+		tip = "Would you like to try out this character? (Stats shown during testing are for reference only, <color=#ff5c5c>Actual performance when acquired may differ.</color>)",
+		key = "juese_tiyan"
 	}
 }
 

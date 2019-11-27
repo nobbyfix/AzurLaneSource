@@ -5,7 +5,7 @@ return {
 	picture = "0",
 	desc = "",
 	painting = 1,
-	id = 6390,
+	id = 105131,
 	castCV = "",
 	aniEffect = {
 		effect = "jineng",
@@ -22,7 +22,7 @@ return {
 			type = "BattleSkillAddBuff",
 			target_choise = "TargetSelf",
 			arg_list = {
-				buff_id = 6391
+				buff_id = 105132
 			}
 		}
 	}

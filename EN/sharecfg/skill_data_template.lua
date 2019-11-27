@@ -6199,6 +6199,50 @@ pg.skill_data_template = {
 		desc_get_add = {},
 		desc_add = {}
 	},
+	[6490] = {
+		desc_get = "",
+		name = "Team Emblem",
+		desc = "When equipped by a Hololive ship: increases their DMG dealt by 3.0%.",
+		type = 0,
+		max_level = 0,
+		id = 6490,
+		system_transform = {},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6500] = {
+		desc_get = "",
+		name = "Gamers Mark ",
+		desc = "Any ship equipping this gear will be treated as part of the Hololive faction.",
+		type = 0,
+		max_level = 0,
+		id = 6500,
+		system_transform = {},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6510] = {
+		desc_get = "",
+		name = "Corn Lantern",
+		desc = "When equipped by a Hololive ship: decreases their DMG taken by 4.0%.",
+		type = 0,
+		max_level = 0,
+		id = 6510,
+		system_transform = {},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[6520] = {
+		desc_get = "",
+		name = "Ankimo",
+		desc = "When sortieing with a ship equipping this gear: changes the battle background music.",
+		type = 0,
+		max_level = 0,
+		id = 6520,
+		system_transform = {},
+		desc_get_add = {},
+		desc_add = {}
+	},
 	[7000] = {
 		desc_get = "",
 		name = "Rhine Drill",
@@ -32143,6 +32187,1206 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[105010] = {
+		desc_get = "",
+		name = "Mach 2.42 Blossom",
+		desc = "Dive Bombers can be equipped in this ship's third gear slot, and will use the \"Mach 2.42 Bermbew Sprawt\" gear skin, but Airstrike load time increases by 100.0%. Every 20s: launches a $1 special airstrike (DMG is based on the skill's level and this ship's TRP stat.)",
+		type = 1,
+		max_level = 10,
+		id = 105010,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[105020] = {
+		desc_get = "",
+		name = "Two-Faced Fox",
+		desc = "Increases this ship's FP by $1 at the start of the battle. If the fleet this ship is in has sunk 3 enemy fleets on the map: also increases this ship's TRP by $2.",
+		type = 3,
+		max_level = 10,
+		id = 105020,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[105030] = {
+		desc_get = "",
+		name = "Dream☆Story",
+		desc = "When this ship launches an Airstrike: $1 chance to fire a $2 special barrage that Burns enemies. DMG is based on the skill's level.",
+		type = 1,
+		max_level = 10,
+		id = 105030,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"70.0%",
+				"100.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"70.0%",
+					"+3.3%"
+				},
+				{
+					"73.3%",
+					"+3.3%"
+				},
+				{
+					"76.6%",
+					"+3.3%"
+				},
+				{
+					"79.9%",
+					"+3.3%"
+				},
+				{
+					"83.2%",
+					"+3.3%"
+				},
+				{
+					"86.5%",
+					"+3.3%"
+				},
+				{
+					"89.8%",
+					"+3.3%"
+				},
+				{
+					"93.1%",
+					"+3.3%"
+				},
+				{
+					"96.4%",
+					"+3.6%"
+				},
+				{
+					"100%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[105040] = {
+		desc_get = "",
+		name = "Beneath the Deep Blue Sky",
+		desc = "Decreases DMG taken by Hololive ships by $2. Every 20s: for 8s, decreases the Speed of all onscreen enemies by $1, increases the Accuracy of all your ships by $1, and increases the Speed of all your Hololive ships by $1.",
+		type = 2,
+		max_level = 10,
+		id = 105040,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"5.0%",
+				"10.0%"
+			},
+			{
+				"2.5%",
+				"7.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%",
+					"+0.5%"
+				},
+				{
+					"8.5%",
+					"+0.5%"
+				},
+				{
+					"9.0%",
+					"+1%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"2.5%",
+					"+0.5%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%"
+				}
+			}
+		}
+	},
+	[105050] = {
+		desc_get = "",
+		name = "Shut-in Maid ",
+		desc = "Decreases this boat's OXY by $1. For 20s after entering battle: increases this boat's DMG by $2. When this boat retreats from battle: increases its Speed by 100.0%.",
+		type = 1,
+		max_level = 10,
+		id = 105050,
+		system_transform = {
+			[11.0] = 3500
+		},
+		desc_get_add = {
+			{
+				"150",
+				"60"
+			},
+			{
+				"15.0%",
+				"30.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"150",
+					"-10"
+				},
+				{
+					"140",
+					"-10"
+				},
+				{
+					"130",
+					"-10"
+				},
+				{
+					"120",
+					"-10"
+				},
+				{
+					"110",
+					"-10"
+				},
+				{
+					"100",
+					"-10"
+				},
+				{
+					"90",
+					"-10"
+				},
+				{
+					"80",
+					"-10"
+				},
+				{
+					"70",
+					"-10"
+				},
+				{
+					"60"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			}
+		}
+	},
+	[105060] = {
+		desc_get = "",
+		name = "Failen Angel ",
+		desc = "When entering battle: applies 1 randomly chosen buff to your fleet. The buff's effect is increased to 150% for Hololive ships. ",
+		type = 3,
+		max_level = 10,
+		id = 105060,
+		system_transform = {
+			[11.0] = 3500
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[105070] = {
+		desc_get = "",
+		name = "Promise to the Sunflower",
+		desc = "When entering battle: fires a special guaranteed $1 Critical Hit barrage. When there are 3 or more Hololive ships in the same fleet: improves the barrage.",
+		type = 1,
+		max_level = 10,
+		id = 105070,
+		system_transform = {
+			[11.0] = 3500
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[105080] = {
+		desc_get = "",
+		name = "The Summer Flower We Watch",
+		desc = "Every 25s: $1 chance to fire a $2 special barrage.",
+		type = 1,
+		max_level = 10,
+		id = 105080,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[105090] = {
+		desc_get = "",
+		name = "The Third Day of Flirting ",
+		desc = "At the start of the battle: if there are an odd number of Hololive ships in your fleet: increases this ship's Main Gun DMG by $1. If their number is even: decreases the Main Gun DMG this ship takes by $2. 20s after the start of the battle: randomly chooses 1 of your ships and decreases the DMG they take by $2 for 10s.",
+		type = 3,
+		max_level = 10,
+		id = 105090,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[105100] = {
+		desc_get = "",
+		name = "Oni Goddess☆Nakiri ",
+		desc = "Every 20s: $2 chance for this ship to buff itself using its spirits. When successfully procced: increases this ship's DMG dealt by $1. Can be stacked up to 3 times.",
+		type = 3,
+		max_level = 10,
+		id = 105100,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"3.5%",
+				"8.0%"
+			},
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%",
+					"+0.5%"
+				},
+				{
+					"5.5%",
+					"+0.5%"
+				},
+				{
+					"6.0%",
+					"+0.5%"
+				},
+				{
+					"6.5%",
+					"+0.5%"
+				},
+				{
+					"7.0%",
+					"+0.5%"
+				},
+				{
+					"7.5%",
+					"+0.5%"
+				},
+				{
+					"8.0%"
+				}
+			},
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			}
+		}
+	},
+	[105110] = {
+		desc_get = "",
+		name = "Demon Cutter Asura-Rakshasa",
+		desc = "Every $1s: activates Demon Cutter Asura-Rakshasa $2 and gives this ship an 50.0% chance to inflict Armor Break (affected targets take more Main Gun DMG) to hit enemies for 6s. Slash DMG is based on the skill's level.",
+		type = 1,
+		max_level = 10,
+		id = 105110,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"20",
+				"15"
+			},
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"20",
+					"-0.5"
+				},
+				{
+					"19.5",
+					"-0.5"
+				},
+				{
+					"19",
+					"-0.5"
+				},
+				{
+					"18.5",
+					"-0.5"
+				},
+				{
+					"18",
+					"-0.5"
+				},
+				{
+					"17.5",
+					"-0.5"
+				},
+				{
+					"17",
+					"-0.5"
+				},
+				{
+					"16.5",
+					"-0.5"
+				},
+				{
+					"16",
+					"-1"
+				},
+				{
+					"15"
+				}
+			},
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[105120] = {
+		desc_get = "",
+		name = "The Wave of a Pleasant Dream",
+		desc = "When this ship launches an Airstrike: $1 chance to create a wave of light for 8s which decreases the DMG enemies deal by $2.",
+		type = 3,
+		max_level = 10,
+		id = 105120,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"70.0%",
+				"100.0%"
+			},
+			{
+				"1.0%",
+				"5.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"70.0%",
+					"+3.3%"
+				},
+				{
+					"73.3%",
+					"+3.3%"
+				},
+				{
+					"76.6%",
+					"+3.3%"
+				},
+				{
+					"79.9%",
+					"+3.3%"
+				},
+				{
+					"83.2%",
+					"+3.3%"
+				},
+				{
+					"86.5%",
+					"+3.3%"
+				},
+				{
+					"89.8%",
+					"+3.3%"
+				},
+				{
+					"93.1%",
+					"+3.3%"
+				},
+				{
+					"96.4%",
+					"+3.6%"
+				},
+				{
+					"100%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.4%"
+				},
+				{
+					"1.4%",
+					"+0.4%"
+				},
+				{
+					"1.8%",
+					"+0.4%"
+				},
+				{
+					"2.2%",
+					"+0.4%"
+				},
+				{
+					"2.6%",
+					"+0.4%"
+				},
+				{
+					"3.0%",
+					"+0.5%"
+				},
+				{
+					"3.5%",
+					"+0.5%"
+				},
+				{
+					"4.0%",
+					"+0.5%"
+				},
+				{
+					"4.5%",
+					"+0.5%"
+				},
+				{
+					"5.0%"
+				}
+			}
+		}
+	},
+	[105130] = {
+		desc_get = "",
+		name = "MP Burst - Explosion",
+		desc = "Every 8s: gain 1 MP. When this ship has accumulated 3 MP: fires a $1 special barrage, and resets MP to 0.",
+		type = 1,
+		max_level = 10,
+		id = 105130,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[105140] = {
+		desc_get = "",
+		name = "Wild Dualism",
+		desc = "When this ship launches an odd-numbered Airstrike: launches an additional Torpedo Bomber airstrike $1. When launching an even-numbered Airstrike: launches an additional Dive Bomber airstrike $1. Airstrike DMG is based on the skill's level.",
+		type = 1,
+		max_level = 10,
+		id = 105140,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[105150] = {
+		desc_get = "",
+		name = "Tarot Card Divination",
+		desc = "At the start of the battle: makes a divination that applies a randomly chosen $1 buff to this ship.",
+		type = 3,
+		max_level = 10,
+		id = 105150,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
 	all = {
 		10,
 		11,
@@ -32283,6 +33527,10 @@ pg.skill_data_template = {
 		6450,
 		6460,
 		6470,
+		6490,
+		6500,
+		6510,
+		6520,
 		7000,
 		9010,
 		9020,
@@ -32832,7 +34080,22 @@ pg.skill_data_template = {
 		104050,
 		104060,
 		104070,
-		104080
+		104080,
+		105010,
+		105020,
+		105030,
+		105040,
+		105050,
+		105060,
+		105070,
+		105080,
+		105090,
+		105100,
+		105110,
+		105120,
+		105130,
+		105140,
+		105150
 	}
 }
 

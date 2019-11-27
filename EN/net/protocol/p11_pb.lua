@@ -237,28 +237,43 @@ slot168 = slot0.FieldDescriptor()
 RETURN_USER_INFO = slot0.Descriptor()
 slot169 = slot0.FieldDescriptor()
 slot170 = slot0.FieldDescriptor()
-INS_MESSAGE = slot0.Descriptor()
+SC_11700 = slot0.Descriptor()
 slot171 = slot0.FieldDescriptor()
+CS_11701 = slot0.Descriptor()
 slot172 = slot0.FieldDescriptor()
 slot173 = slot0.FieldDescriptor()
+SC_11702 = slot0.Descriptor()
 slot174 = slot0.FieldDescriptor()
 slot175 = slot0.FieldDescriptor()
+CS_11703 = slot0.Descriptor()
 slot176 = slot0.FieldDescriptor()
 slot177 = slot0.FieldDescriptor()
 slot178 = slot0.FieldDescriptor()
+SC_11704 = slot0.Descriptor()
 slot179 = slot0.FieldDescriptor()
 slot180 = slot0.FieldDescriptor()
-INS_PLAYER = slot0.Descriptor()
+INS_MESSAGE = slot0.Descriptor()
 slot181 = slot0.FieldDescriptor()
 slot182 = slot0.FieldDescriptor()
 slot183 = slot0.FieldDescriptor()
 slot184 = slot0.FieldDescriptor()
 slot185 = slot0.FieldDescriptor()
-INS_NPC = slot0.Descriptor()
 slot186 = slot0.FieldDescriptor()
 slot187 = slot0.FieldDescriptor()
 slot188 = slot0.FieldDescriptor()
 slot189 = slot0.FieldDescriptor()
+slot190 = slot0.FieldDescriptor()
+INS_PLAYER = slot0.Descriptor()
+slot191 = slot0.FieldDescriptor()
+slot192 = slot0.FieldDescriptor()
+slot193 = slot0.FieldDescriptor()
+slot194 = slot0.FieldDescriptor()
+slot195 = slot0.FieldDescriptor()
+INS_NPC = slot0.Descriptor()
+slot196 = slot0.FieldDescriptor()
+slot197 = slot0.FieldDescriptor()
+slot198 = slot0.FieldDescriptor()
+slot199 = slot0.FieldDescriptor()
 slot2.name = "timestamp"
 slot2.full_name = ".p11.sc_11000.timestamp"
 slot2.number = 1
@@ -2491,119 +2506,151 @@ RETURN_USER_INFO.fields = {
 }
 RETURN_USER_INFO.is_extendable = false
 RETURN_USER_INFO.extensions = {}
-slot171.name = "id"
-slot171.full_name = ".p11.ins_message.id"
+slot171.name = "ins_message_list"
+slot171.full_name = ".p11.sc_11700.ins_message_list"
 slot171.number = 1
 slot171.index = 0
-slot171.label = 2
+slot171.label = 3
 slot171.has_default_value = false
-slot171.default_value = 0
-slot171.type = 13
-slot171.cpp_type = 3
-slot172.name = "time"
-slot172.full_name = ".p11.ins_message.time"
-slot172.number = 2
-slot172.index = 1
+slot171.default_value = {}
+slot171.message_type = INS_MESSAGE
+slot171.type = 11
+slot171.cpp_type = 10
+SC_11700.name = "sc_11700"
+SC_11700.full_name = ".p11.sc_11700"
+SC_11700.nested_types = {}
+SC_11700.enum_types = {}
+SC_11700.fields = {
+	slot171
+}
+SC_11700.is_extendable = false
+SC_11700.extensions = {}
+slot172.name = "id"
+slot172.full_name = ".p11.cs_11701.id"
+slot172.number = 1
+slot172.index = 0
 slot172.label = 2
 slot172.has_default_value = false
 slot172.default_value = 0
 slot172.type = 13
 slot172.cpp_type = 3
-slot173.name = "text"
-slot173.full_name = ".p11.ins_message.text"
-slot173.number = 3
-slot173.index = 2
+slot173.name = "cmd"
+slot173.full_name = ".p11.cs_11701.cmd"
+slot173.number = 2
+slot173.index = 1
 slot173.label = 2
 slot173.has_default_value = false
-slot173.default_value = ""
-slot173.type = 9
-slot173.cpp_type = 9
-slot174.name = "picture"
-slot174.full_name = ".p11.ins_message.picture"
-slot174.number = 4
-slot174.index = 3
-slot174.label = 1
+slot173.default_value = 0
+slot173.type = 13
+slot173.cpp_type = 3
+CS_11701.name = "cs_11701"
+CS_11701.full_name = ".p11.cs_11701"
+CS_11701.nested_types = {}
+CS_11701.enum_types = {}
+CS_11701.fields = {
+	slot172,
+	slot173
+}
+CS_11701.is_extendable = false
+CS_11701.extensions = {}
+slot174.name = "result"
+slot174.full_name = ".p11.sc_11702.result"
+slot174.number = 1
+slot174.index = 0
+slot174.label = 2
 slot174.has_default_value = false
-slot174.default_value = ""
-slot174.type = 9
-slot174.cpp_type = 9
-slot175.name = "player_discuss"
-slot175.full_name = ".p11.ins_message.player_discuss"
-slot175.number = 5
-slot175.index = 4
-slot175.label = 3
+slot174.default_value = 0
+slot174.type = 13
+slot174.cpp_type = 3
+slot175.name = "data"
+slot175.full_name = ".p11.sc_11702.data"
+slot175.number = 2
+slot175.index = 1
+slot175.label = 2
 slot175.has_default_value = false
-slot175.default_value = {}
-slot175.message_type = INS_PLAYER
+slot175.default_value = nil
+slot175.message_type = INS_MESSAGE
 slot175.type = 11
 slot175.cpp_type = 10
-slot176.name = "npc_discuss"
-slot176.full_name = ".p11.ins_message.npc_discuss"
-slot176.number = 6
-slot176.index = 5
-slot176.label = 3
+SC_11702.name = "sc_11702"
+SC_11702.full_name = ".p11.sc_11702"
+SC_11702.nested_types = {}
+SC_11702.enum_types = {}
+SC_11702.fields = {
+	slot174,
+	slot175
+}
+SC_11702.is_extendable = false
+SC_11702.extensions = {}
+slot176.name = "id"
+slot176.full_name = ".p11.cs_11703.id"
+slot176.number = 1
+slot176.index = 0
+slot176.label = 2
 slot176.has_default_value = false
-slot176.default_value = {}
-slot176.message_type = INS_NPC
-slot176.type = 11
-slot176.cpp_type = 10
-slot177.name = "npc_reply"
-slot177.full_name = ".p11.ins_message.npc_reply"
-slot177.number = 7
-slot177.index = 6
-slot177.label = 3
+slot176.default_value = 0
+slot176.type = 13
+slot176.cpp_type = 3
+slot177.name = "discuss"
+slot177.full_name = ".p11.cs_11703.discuss"
+slot177.number = 2
+slot177.index = 1
+slot177.label = 2
 slot177.has_default_value = false
-slot177.default_value = {}
-slot177.message_type = INS_NPC
-slot177.type = 11
-slot177.cpp_type = 10
-slot178.name = "good"
-slot178.full_name = ".p11.ins_message.good"
-slot178.number = 8
-slot178.index = 7
+slot177.default_value = 0
+slot177.type = 13
+slot177.cpp_type = 3
+slot178.name = "index"
+slot178.full_name = ".p11.cs_11703.index"
+slot178.number = 3
+slot178.index = 2
 slot178.label = 2
 slot178.has_default_value = false
 slot178.default_value = 0
 slot178.type = 13
 slot178.cpp_type = 3
-slot179.name = "is_good"
-slot179.full_name = ".p11.ins_message.is_good"
-slot179.number = 9
-slot179.index = 8
+CS_11703.name = "cs_11703"
+CS_11703.full_name = ".p11.cs_11703"
+CS_11703.nested_types = {}
+CS_11703.enum_types = {}
+CS_11703.fields = {
+	slot176,
+	slot177,
+	slot178
+}
+CS_11703.is_extendable = false
+CS_11703.extensions = {}
+slot179.name = "result"
+slot179.full_name = ".p11.sc_11704.result"
+slot179.number = 1
+slot179.index = 0
 slot179.label = 2
 slot179.has_default_value = false
 slot179.default_value = 0
 slot179.type = 13
 slot179.cpp_type = 3
-slot180.name = "is_read"
-slot180.full_name = ".p11.ins_message.is_read"
-slot180.number = 10
-slot180.index = 9
+slot180.name = "data"
+slot180.full_name = ".p11.sc_11704.data"
+slot180.number = 2
+slot180.index = 1
 slot180.label = 2
 slot180.has_default_value = false
-slot180.default_value = 0
-slot180.type = 13
-slot180.cpp_type = 3
-INS_MESSAGE.name = "ins_message"
-INS_MESSAGE.full_name = ".p11.ins_message"
-INS_MESSAGE.nested_types = {}
-INS_MESSAGE.enum_types = {}
-INS_MESSAGE.fields = {
-	slot171,
-	slot172,
-	slot173,
-	slot174,
-	slot175,
-	slot176,
-	slot177,
-	slot178,
+slot180.default_value = nil
+slot180.message_type = INS_MESSAGE
+slot180.type = 11
+slot180.cpp_type = 10
+SC_11704.name = "sc_11704"
+SC_11704.full_name = ".p11.sc_11704"
+SC_11704.nested_types = {}
+SC_11704.enum_types = {}
+SC_11704.fields = {
 	slot179,
 	slot180
 }
-INS_MESSAGE.is_extendable = false
-INS_MESSAGE.extensions = {}
+SC_11704.is_extendable = false
+SC_11704.extensions = {}
 slot181.name = "id"
-slot181.full_name = ".p11.ins_player.id"
+slot181.full_name = ".p11.ins_message.id"
 slot181.number = 1
 slot181.index = 0
 slot181.label = 2
@@ -2612,7 +2659,7 @@ slot181.default_value = 0
 slot181.type = 13
 slot181.cpp_type = 3
 slot182.name = "time"
-slot182.full_name = ".p11.ins_player.time"
+slot182.full_name = ".p11.ins_message.time"
 slot182.number = 2
 slot182.index = 1
 slot182.label = 2
@@ -2620,91 +2667,202 @@ slot182.has_default_value = false
 slot182.default_value = 0
 slot182.type = 13
 slot182.cpp_type = 3
-slot183.name = "text_list"
-slot183.full_name = ".p11.ins_player.text_list"
+slot183.name = "text"
+slot183.full_name = ".p11.ins_message.text"
 slot183.number = 3
 slot183.index = 2
-slot183.label = 3
+slot183.label = 2
 slot183.has_default_value = false
-slot183.default_value = {}
+slot183.default_value = ""
 slot183.type = 9
 slot183.cpp_type = 9
-slot184.name = "text"
-slot184.full_name = ".p11.ins_player.text"
+slot184.name = "picture"
+slot184.full_name = ".p11.ins_message.picture"
 slot184.number = 4
 slot184.index = 3
-slot184.label = 2
+slot184.label = 1
 slot184.has_default_value = false
 slot184.default_value = ""
 slot184.type = 9
 slot184.cpp_type = 9
-slot185.name = "npc_reply"
-slot185.full_name = ".p11.ins_player.npc_reply"
+slot185.name = "player_discuss"
+slot185.full_name = ".p11.ins_message.player_discuss"
 slot185.number = 5
 slot185.index = 4
-slot185.label = 2
+slot185.label = 3
 slot185.has_default_value = false
-slot185.default_value = 0
-slot185.type = 13
-slot185.cpp_type = 3
+slot185.default_value = {}
+slot185.message_type = INS_PLAYER
+slot185.type = 11
+slot185.cpp_type = 10
+slot186.name = "npc_discuss"
+slot186.full_name = ".p11.ins_message.npc_discuss"
+slot186.number = 6
+slot186.index = 5
+slot186.label = 3
+slot186.has_default_value = false
+slot186.default_value = {}
+slot186.message_type = INS_NPC
+slot186.type = 11
+slot186.cpp_type = 10
+slot187.name = "npc_reply"
+slot187.full_name = ".p11.ins_message.npc_reply"
+slot187.number = 7
+slot187.index = 6
+slot187.label = 3
+slot187.has_default_value = false
+slot187.default_value = {}
+slot187.message_type = INS_NPC
+slot187.type = 11
+slot187.cpp_type = 10
+slot188.name = "good"
+slot188.full_name = ".p11.ins_message.good"
+slot188.number = 8
+slot188.index = 7
+slot188.label = 2
+slot188.has_default_value = false
+slot188.default_value = 0
+slot188.type = 13
+slot188.cpp_type = 3
+slot189.name = "is_good"
+slot189.full_name = ".p11.ins_message.is_good"
+slot189.number = 9
+slot189.index = 8
+slot189.label = 2
+slot189.has_default_value = false
+slot189.default_value = 0
+slot189.type = 13
+slot189.cpp_type = 3
+slot190.name = "is_read"
+slot190.full_name = ".p11.ins_message.is_read"
+slot190.number = 10
+slot190.index = 9
+slot190.label = 2
+slot190.has_default_value = false
+slot190.default_value = 0
+slot190.type = 13
+slot190.cpp_type = 3
+INS_MESSAGE.name = "ins_message"
+INS_MESSAGE.full_name = ".p11.ins_message"
+INS_MESSAGE.nested_types = {}
+INS_MESSAGE.enum_types = {}
+INS_MESSAGE.fields = {
+	slot181,
+	slot182,
+	slot183,
+	slot184,
+	slot185,
+	slot186,
+	slot187,
+	slot188,
+	slot189,
+	slot190
+}
+INS_MESSAGE.is_extendable = false
+INS_MESSAGE.extensions = {}
+slot191.name = "id"
+slot191.full_name = ".p11.ins_player.id"
+slot191.number = 1
+slot191.index = 0
+slot191.label = 2
+slot191.has_default_value = false
+slot191.default_value = 0
+slot191.type = 13
+slot191.cpp_type = 3
+slot192.name = "time"
+slot192.full_name = ".p11.ins_player.time"
+slot192.number = 2
+slot192.index = 1
+slot192.label = 2
+slot192.has_default_value = false
+slot192.default_value = 0
+slot192.type = 13
+slot192.cpp_type = 3
+slot193.name = "text_list"
+slot193.full_name = ".p11.ins_player.text_list"
+slot193.number = 3
+slot193.index = 2
+slot193.label = 3
+slot193.has_default_value = false
+slot193.default_value = {}
+slot193.type = 9
+slot193.cpp_type = 9
+slot194.name = "text"
+slot194.full_name = ".p11.ins_player.text"
+slot194.number = 4
+slot194.index = 3
+slot194.label = 2
+slot194.has_default_value = false
+slot194.default_value = ""
+slot194.type = 9
+slot194.cpp_type = 9
+slot195.name = "npc_reply"
+slot195.full_name = ".p11.ins_player.npc_reply"
+slot195.number = 5
+slot195.index = 4
+slot195.label = 2
+slot195.has_default_value = false
+slot195.default_value = 0
+slot195.type = 13
+slot195.cpp_type = 3
 INS_PLAYER.name = "ins_player"
 INS_PLAYER.full_name = ".p11.ins_player"
 INS_PLAYER.nested_types = {}
 INS_PLAYER.enum_types = {}
 INS_PLAYER.fields = {
-	slot181,
-	slot182,
-	slot183,
-	slot184,
-	slot185
+	slot191,
+	slot192,
+	slot193,
+	slot194,
+	slot195
 }
 INS_PLAYER.is_extendable = false
 INS_PLAYER.extensions = {}
-slot186.name = "id"
-slot186.full_name = ".p11.ins_npc.id"
-slot186.number = 1
-slot186.index = 0
-slot186.label = 2
-slot186.has_default_value = false
-slot186.default_value = 0
-slot186.type = 13
-slot186.cpp_type = 3
-slot187.name = "time"
-slot187.full_name = ".p11.ins_npc.time"
-slot187.number = 2
-slot187.index = 1
-slot187.label = 2
-slot187.has_default_value = false
-slot187.default_value = 0
-slot187.type = 13
-slot187.cpp_type = 3
-slot188.name = "text"
-slot188.full_name = ".p11.ins_npc.text"
-slot188.number = 3
-slot188.index = 2
-slot188.label = 2
-slot188.has_default_value = false
-slot188.default_value = ""
-slot188.type = 9
-slot188.cpp_type = 9
-slot189.name = "npc_reply"
-slot189.full_name = ".p11.ins_npc.npc_reply"
-slot189.number = 4
-slot189.index = 3
-slot189.label = 3
-slot189.has_default_value = false
-slot189.default_value = {}
-slot189.type = 13
-slot189.cpp_type = 3
+slot196.name = "id"
+slot196.full_name = ".p11.ins_npc.id"
+slot196.number = 1
+slot196.index = 0
+slot196.label = 2
+slot196.has_default_value = false
+slot196.default_value = 0
+slot196.type = 13
+slot196.cpp_type = 3
+slot197.name = "time"
+slot197.full_name = ".p11.ins_npc.time"
+slot197.number = 2
+slot197.index = 1
+slot197.label = 2
+slot197.has_default_value = false
+slot197.default_value = 0
+slot197.type = 13
+slot197.cpp_type = 3
+slot198.name = "text"
+slot198.full_name = ".p11.ins_npc.text"
+slot198.number = 3
+slot198.index = 2
+slot198.label = 2
+slot198.has_default_value = false
+slot198.default_value = ""
+slot198.type = 9
+slot198.cpp_type = 9
+slot199.name = "npc_reply"
+slot199.full_name = ".p11.ins_npc.npc_reply"
+slot199.number = 4
+slot199.index = 3
+slot199.label = 3
+slot199.has_default_value = false
+slot199.default_value = {}
+slot199.type = 13
+slot199.cpp_type = 3
 INS_NPC.name = "ins_npc"
 INS_NPC.full_name = ".p11.ins_npc"
 INS_NPC.nested_types = {}
 INS_NPC.enum_types = {}
 INS_NPC.fields = {
-	slot186,
-	slot187,
-	slot188,
-	slot189
+	slot196,
+	slot197,
+	slot198,
+	slot199
 }
 INS_NPC.is_extendable = false
 INS_NPC.extensions = {}
@@ -2736,6 +2894,8 @@ cs_11603 = slot0.Message(CS_11603)
 cs_11605 = slot0.Message(CS_11605)
 cs_11607 = slot0.Message(CS_11607)
 cs_11609 = slot0.Message(CS_11609)
+cs_11701 = slot0.Message(CS_11701)
+cs_11703 = slot0.Message(CS_11703)
 groupinfo = slot0.Message(GROUPINFO)
 ins_message = slot0.Message(INS_MESSAGE)
 ins_npc = slot0.Message(INS_NPC)
@@ -2776,5 +2936,8 @@ sc_11604 = slot0.Message(SC_11604)
 sc_11606 = slot0.Message(SC_11606)
 sc_11608 = slot0.Message(SC_11608)
 sc_11610 = slot0.Message(SC_11610)
+sc_11700 = slot0.Message(SC_11700)
+sc_11702 = slot0.Message(SC_11702)
+sc_11704 = slot0.Message(SC_11704)
 
 return

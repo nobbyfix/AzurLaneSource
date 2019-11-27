@@ -3276,6 +3276,471 @@ pg.equip_skin_template = {
 			54014
 		}
 	},
+	[200] = {
+		bullet_name = "zidan_hulizidan",
+		name = "Bermbew Sprawt Shell",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "\"Ya durn wurnna git hit bur wunna dees.\"",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91911",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 200,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			1,
+			2,
+			3
+		},
+		weapon_ids = {
+			101,
+			101
+		}
+	},
+	[201] = {
+		bullet_name = "zidan_qianliyan",
+		name = "Clairvoyance Shell",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "It's seen your future, and it's going to hurt when it hits you. Quite literally.",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91912",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 201,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			1,
+			2,
+			3
+		},
+		weapon_ids = {
+			101,
+			101
+		}
+	},
+	[202] = {
+		bullet_name = "zidan_shishen",
+		name = "Spirit Shell",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "It's come all the way from the great beyond to smack you up.",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91913",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 202,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			1,
+			2,
+			3
+		},
+		weapon_ids = {
+			101,
+			101
+		}
+	},
+	[203] = {
+		bullet_name = "paodan_aqua",
+		name = "Aqua!!!!!!! Shell",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "Here I come!!!!!1!exclamation mark!!!1!",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91914",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 203,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			4,
+			11
+		},
+		weapon_ids = {
+			24000,
+			24000,
+			24000
+		}
+	},
+	[204] = {
+		bullet_name = "paodan_zhaxiashi",
+		name = "Fried Prawnthera Shell",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "It's half lion, half prawn, and half shell.",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91915",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 204,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			4,
+			11
+		},
+		weapon_ids = {
+			24000,
+			24000,
+			24000
+		}
+	},
+	[205] = {
+		bullet_name = "paodan_chuixueque",
+		name = "Fubby Bubby Shell",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "So cute! But not a cat or a fox either, by the looks of things.",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91916",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 205,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			4,
+			11
+		},
+		weapon_ids = {
+			24000,
+			24000,
+			24000
+		}
+	},
+	[206] = {
+		bullet_name = "yulei_holomaikefeng",
+		name = "(Sora's) Microphone Torpedo",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "Sadly, we can't make a joke about this thing being an acoustic torpedo because it's electric. Please laugh anyway.",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91921",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 206,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			5,
+			13
+		},
+		weapon_ids = {
+			107,
+			107
+		}
+	},
+	[207] = {
+		bullet_name = "yulei_yumi",
+		name = "Corn Torpedo",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "Bursts into an explosion of popcorn when it hits its target.",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91922",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 207,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			5,
+			13
+		},
+		weapon_ids = {
+			107,
+			107
+		}
+	},
+	[208] = {
+		bullet_name = "yulei_holoyulei",
+		name = "Marine Torpedo",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "Surely all torpedoes are marine by definition? Nice hair, though.",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91923",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 208,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			5,
+			13
+		},
+		weapon_ids = {
+			107,
+			107
+		}
+	},
+	[209] = {
+		bullet_name = "feiji_hulifeiji",
+		name = "Mach 2.42 Bermbew Sprawt(Torpedo)",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "You said you wanted jets added to the game. The monkey paw curls up, and your wish has been granted.",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91931",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 209,
+		derivate_torpedo = "yulei_yumi",
+		ship_skin_id = 0,
+		equip_type = {
+			8
+		},
+		weapon_ids = {
+			61503,
+			61504
+		}
+	},
+	[210] = {
+		bullet_name = "feiji_hulifeiji",
+		name = "Mach 2.42 Bermbew Sprawt(Fighter)",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "You said you wanted jets added to the game. The monkey paw curls up, and your wish has been granted.",
+		ship_config_id = 100011,
+		derivate_boom = "zidan_hulizidan",
+		icon = "91931",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 210,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			7
+		},
+		weapon_ids = {
+			61505,
+			54010
+		}
+	},
+	[211] = {
+		bullet_name = "feiji_hulifeiji",
+		name = "Mach 2.42 Bermbew Sprawt (Bomber)",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "You said you wanted jets added to the game. The monkey paw curls up, and your wish has been granted.",
+		ship_config_id = 100011,
+		derivate_boom = "zidan_hulizidan",
+		icon = "91931",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 211,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			9
+		},
+		weapon_ids = {
+			61501,
+			54014
+		}
+	},
+	[212] = {
+		bullet_name = "feiji_vtuber2",
+		name = "Miobubs(Torpedo)",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "You've seen pigs fly, but what about wolf... blob... cutey... creatures?",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91932",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 212,
+		derivate_torpedo = "yulei_holomaikefeng",
+		ship_skin_id = 0,
+		equip_type = {
+			8
+		},
+		weapon_ids = {
+			61503,
+			61504
+		}
+	},
+	[213] = {
+		bullet_name = "feiji_vtuber2",
+		name = "Miobubs(Fighter)",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "You've seen pigs fly, but what about wolf... blob... cutey... creatures?",
+		ship_config_id = 100011,
+		derivate_boom = "paodan_chuixueque",
+		icon = "91932",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 213,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			7
+		},
+		weapon_ids = {
+			61505,
+			54010
+		}
+	},
+	[214] = {
+		bullet_name = "feiji_vtuber2",
+		name = "Miobubs(Bomber)",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "You've seen pigs fly, but what about wolf... blob... cutey... creatures?",
+		ship_config_id = 100011,
+		derivate_boom = "paodan_chuixueque",
+		icon = "91932",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 214,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			9
+		},
+		weapon_ids = {
+			61501,
+			54014
+		}
+	},
+	[215] = {
+		bullet_name = "feiji_vtuber1",
+		name = "Poyoyo(Torpedo)",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "Kills with cuteness, rather than bombs.",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91933",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 215,
+		derivate_torpedo = "yulei_holoyulei",
+		ship_skin_id = 0,
+		equip_type = {
+			8
+		},
+		weapon_ids = {
+			61503,
+			61504
+		}
+	},
+	[216] = {
+		bullet_name = "feiji_vtuber1",
+		name = "Poyoyo(Fighter)",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "Kills with cuteness, rather than bombs.",
+		ship_config_id = 100011,
+		derivate_boom = "zidan_shishen",
+		icon = "91933",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 216,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			7
+		},
+		weapon_ids = {
+			61505,
+			54010
+		}
+	},
+	[217] = {
+		bullet_name = "feiji_vtuber1",
+		name = "Poyoyo(Bomber)",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "Kills with cuteness, rather than bombs.",
+		ship_config_id = 100011,
+		derivate_boom = "zidan_shishen",
+		icon = "91933",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 217,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			9
+		},
+		weapon_ids = {
+			61501,
+			54014
+		}
+	},
 	[1001] = {
 		bullet_name = "Nep_bullet_shizi",
 		name = "Joypad Shell (P)",
@@ -4287,6 +4752,24 @@ pg.equip_skin_template = {
 		175,
 		176,
 		177,
+		200,
+		201,
+		202,
+		203,
+		204,
+		205,
+		206,
+		207,
+		208,
+		209,
+		210,
+		211,
+		212,
+		213,
+		214,
+		215,
+		216,
+		217,
 		1001,
 		1002,
 		1003,

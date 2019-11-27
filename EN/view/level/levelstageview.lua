@@ -56,11 +56,7 @@ slot0.OnDestroy = function (slot0)
 		end
 	end
 
-	if slot0.comboPanel then
-		slot0.comboPanel:Destroy()
-
-		slot0.comboPanel = nil
-	end
+	slot0:ClearSubViews()
 end
 
 slot1 = -300
@@ -122,6 +118,8 @@ slot0.InitUI = function (slot0)
 	setAnchoredPosition(slot0.bottomStage, {
 		y = -slot0.bottomStage.rect.height
 	})
+
+	slot0.attachSubViews = {}
 end
 
 slot0.AddListener = function (slot0)
@@ -398,15 +396,15 @@ slot0.AddListener = function (slot0)
 						defaultpage = 1,
 						ImageMode = true,
 						windowSize = {
-							x = 836,
-							y = 740
+							x = 1263,
+							y = 873
 						},
 						windowPos = {
-							y = 15
+							y = -70
 						},
 						helpSize = {
-							x = 836,
-							y = 660
+							x = 1176,
+							y = 1024
 						}
 					}
 
@@ -1133,8 +1131,8 @@ end
 slot0.updateFleetBuff = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot4 = #Clone(slot0.contextData.chapterVO:getFleetStgIds(slot0.contextData.chapterVO.fleet))
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot3 = Clone(slot0.contextData.chapterVO.getFleetStgIds(slot1, slot2))
 
 	--- END OF BLOCK #0 ---
 
@@ -1143,19 +1141,21 @@ slot0.updateFleetBuff = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 11-13, warpins: 2 ---
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #2 14-29, warpins: 0 ---
-	while slot4 > 0 do
+	--- BLOCK #1 16-31, warpins: 0 ---
+	for slot7, slot8 in ipairs(slot0.contextData.chapterVO.getExtraFlags(slot1)) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 14-14, warpins: 1 ---
+		--- BLOCK #0 16-24, warpins: 1 ---
+		if pg.strategy_data_template[ChapterConst.Status2StgBuff[slot8]].buff_id == 0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 25-29, warpins: 1 ---
+			table.insert(slot3, slot9)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -1163,11 +1163,55 @@ slot0.updateFleetBuff = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 15-21, warpins: 1 ---
+		--- BLOCK #1 30-31, warpins: 3 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 32-32, warpins: 1 ---
+	slot4 = #slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 33-35, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #4 36-51, warpins: 0 ---
+	while slot4 > 0 do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 36-36, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 37-43, warpins: 1 ---
 		if pg.strategy_data_template[slot3[slot4]].icon == "" then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 22-26, warpins: 1 ---
+			--- BLOCK #0 44-48, warpins: 1 ---
 			table.remove(slot3, slot4)
 			--- END OF BLOCK #0 ---
 
@@ -1182,7 +1226,7 @@ slot0.updateFleetBuff = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 27-28, warpins: 2 ---
+		--- BLOCK #2 49-50, warpins: 2 ---
 		slot4 = slot4 - 1
 		--- END OF BLOCK #2 ---
 
@@ -1191,21 +1235,21 @@ slot0.updateFleetBuff = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #3 29-29, warpins: 2 ---
+		--- BLOCK #3 51-51, warpins: 2 ---
 		--- END OF BLOCK #3 ---
 
 
 
 	end
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 29-34, warpins: 1 ---
+	--- BLOCK #5 51-56, warpins: 1 ---
 	slot5 = {}
 
 	if slot1:GetSubmarineFleet() and _.filter(slot6:getStrategies(), function (slot0)
@@ -1248,7 +1292,7 @@ slot0.updateFleetBuff = function (slot0)
 	end) and #slot7 > 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 48-52, warpins: 1 ---
+		--- BLOCK #0 70-74, warpins: 1 ---
 		_.each(slot7, function (slot0)
 
 			-- Decompilation error in this vicinity:
@@ -1270,21 +1314,21 @@ slot0.updateFleetBuff = function (slot0)
 
 	end
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 53-59, warpins: 4 ---
+	--- BLOCK #6 75-81, warpins: 4 ---
 	slot7 = nil
 	slot8 = 0
 
 	if slot1:ExistDivingChampion() then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 60-61, warpins: 1 ---
+		--- BLOCK #0 82-83, warpins: 1 ---
 		slot7 = {
 			icon = "submarine_approach"
 		}
@@ -1295,14 +1339,14 @@ slot0.updateFleetBuff = function (slot0)
 
 	end
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 62-104, warpins: 2 ---
+	--- BLOCK #7 84-126, warpins: 2 ---
 	setActive(slot11, false)
 
 	slot12 = UIItemList.New(slot10, slot11)
@@ -1493,7 +1537,7 @@ slot0.updateFleetBuff = function (slot0)
 	if OPEN_AIR_DOMINANCE and slot1:getConfig("air_dominance") > 0 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 112-114, warpins: 1 ---
+		--- BLOCK #0 134-136, warpins: 1 ---
 		slot0:updateAirDominance()
 		--- END OF BLOCK #0 ---
 
@@ -1501,18 +1545,18 @@ slot0.updateFleetBuff = function (slot0)
 
 	end
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #6 115-119, warpins: 3 ---
+	--- BLOCK #8 137-141, warpins: 3 ---
 	slot0:updateChapterBuff()
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 
 
@@ -2633,19 +2677,19 @@ slot0.updateStageStrategy = function (slot0)
 	if pg.chapter_pop_template[slot1.id] and slot14.combo_on then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 139-141, warpins: 1 ---
-		if not slot0.comboPanel then
+		--- BLOCK #0 139-144, warpins: 1 ---
+		slot15, slot16 = slot0:GetSubView("LevelStageComboPanel")
+
+		if slot16 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 142-156, warpins: 1 ---
-			slot0.comboPanel = LevelStageComboPanel.New(slot0)
-
-			slot0.comboPanel:Load()
-			slot0.comboPanel.buffer:AfterLoaded(function ()
+			--- BLOCK #0 145-152, warpins: 1 ---
+			slot15:Load()
+			slot15.buffer:AfterLoaded(function ()
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-10, warpins: 1 ---
-				slot0.comboPanel._tf:SetParent(slot0.leftStage, false)
+				--- BLOCK #0 1-9, warpins: 1 ---
+				slot0._tf:SetParent(slot1.leftStage, false)
 
 				return
 				--- END OF BLOCK #0 ---
@@ -2666,14 +2710,14 @@ slot0.updateStageStrategy = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 157-164, warpins: 2 ---
+		--- BLOCK #1 153-160, warpins: 2 ---
 		if getProxy(ChapterProxy).comboHistoryBuffer[slot1.id] then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 165-175, warpins: 1 ---
-			slot0.comboPanel.buffer:UpdateView(slot16)
+			--- BLOCK #0 161-170, warpins: 1 ---
+			slot15.buffer:UpdateView(slot18)
 
-			slot15.comboHistoryBuffer[slot1.id] = nil
+			slot17.comboHistoryBuffer[slot1.id] = nil
 			--- END OF BLOCK #0 ---
 
 
@@ -2681,8 +2725,8 @@ slot0.updateStageStrategy = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 176-181, warpins: 1 ---
-			slot0.comboPanel.buffer:UpdateView(slot1)
+			--- BLOCK #0 171-175, warpins: 1 ---
+			slot15.buffer:UpdateView(slot1)
 			--- END OF BLOCK #0 ---
 
 
@@ -2696,8 +2740,8 @@ slot0.updateStageStrategy = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 182-187, warpins: 2 ---
-		slot0.comboPanel.buffer:UpdateViewAnimated(slot1)
+		--- BLOCK #2 176-181, warpins: 2 ---
+		slot15.buffer:UpdateViewAnimated(slot1)
 		--- END OF BLOCK #2 ---
 
 
@@ -2711,9 +2755,123 @@ slot0.updateStageStrategy = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 188-189, warpins: 3 ---
+	--- BLOCK #3 182-183, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot0.GetSubView = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if slot0.attachSubViews[slot1] then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-7, warpins: 1 ---
+		return slot0.attachSubViews[slot1]
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 8-20, warpins: 2 ---
+	slot0.attachSubViews[slot1] = import("view.level." .. slot1).New(slot0)
+
+	return import("view.level." .. slot1).New(slot0), true
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
+slot0.RemoveSubView = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if not slot0.attachSubViews[slot1] then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-6, warpins: 1 ---
+		return false
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 7-16, warpins: 2 ---
+	slot0.attachSubViews[slot1]:Destroy()
+
+	slot0.attachSubViews[slot1] = nil
+
+	return true
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
+slot0.ClearSubViews = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 5-9, warpins: 0 ---
+	for slot4, slot5 in pairs(slot0.attachSubViews) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-7, warpins: 1 ---
+		slot5:Destroy()
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 8-9, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 10-14, warpins: 1 ---
+	table.clear(slot0.attachSubViews)
+
+	return
+	--- END OF BLOCK #2 ---
 
 
 
@@ -3509,17 +3667,15 @@ end
 slot0.tryAutoAction = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot2 = slot0.contextData.chapterVO
-
-	if slot0:SafeCheck() then
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if not slot0.contextData.chapterVO then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 8-9, warpins: 1 ---
+		--- BLOCK #0 5-6, warpins: 1 ---
 		if slot1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 10-11, warpins: 1 ---
+			--- BLOCK #0 7-8, warpins: 1 ---
 			slot1()
 			--- END OF BLOCK #0 ---
 
@@ -3534,7 +3690,7 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 12-12, warpins: 2 ---
+		--- BLOCK #1 9-9, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 
@@ -3549,9 +3705,36 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 13-18, warpins: 1 ---
-	slot4 = false
-	slot5 = false
+	--- BLOCK #1 10-14, warpins: 1 ---
+	if slot0:SafeCheck() then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 15-16, warpins: 1 ---
+		if slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 17-18, warpins: 1 ---
+			slot1()
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 19-19, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
+	end
 
 	--- END OF BLOCK #1 ---
 
@@ -3560,15 +3743,26 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 19-27, warpins: 0 ---
+	--- BLOCK #2 20-25, warpins: 1 ---
+	slot4 = false
+	slot5 = false
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 26-34, warpins: 0 ---
 	for slot9, slot10 in pairs(slot2.cells) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 19-23, warpins: 1 ---
+		--- BLOCK #0 26-30, warpins: 1 ---
 		if slot10.trait == ChapterConst.TraitLurk then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 24-25, warpins: 1 ---
+			--- BLOCK #0 31-32, warpins: 1 ---
 			slot4 = true
 
 			--- END OF BLOCK #0 ---
@@ -3578,7 +3772,7 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 26-26, warpins: 1 ---
+			--- BLOCK #1 33-33, warpins: 1 ---
 			break
 			--- END OF BLOCK #1 ---
 
@@ -3592,21 +3786,13 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 26-27, warpins: 2 ---
+		--- BLOCK #1 33-34, warpins: 2 ---
 		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #3 28-31, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -3614,21 +3800,29 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 32-46, warpins: 0 ---
+	--- BLOCK #4 35-38, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 39-53, warpins: 0 ---
 	for slot9, slot10 in ipairs(slot2.champions) do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 32-36, warpins: 1 ---
+		--- BLOCK #0 39-43, warpins: 1 ---
 		if slot10.trait == ChapterConst.TraitLurk then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 37-42, warpins: 1 ---
+			--- BLOCK #0 44-49, warpins: 1 ---
 			slot4 = true
 
 			if slot10.attachment == ChapterConst.AttachOni then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 43-44, warpins: 1 ---
+				--- BLOCK #0 50-51, warpins: 1 ---
 				slot5 = slot10
 
 				--- END OF BLOCK #0 ---
@@ -3638,7 +3832,7 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 45-45, warpins: 1 ---
+				--- BLOCK #1 52-52, warpins: 1 ---
 				break
 				--- END OF BLOCK #1 ---
 
@@ -3657,27 +3851,27 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 45-46, warpins: 3 ---
+		--- BLOCK #1 52-53, warpins: 3 ---
 		--- END OF BLOCK #1 ---
 
 
 
 	end
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #6
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #5 47-51, warpins: 2 ---
+	--- BLOCK #6 54-58, warpins: 2 ---
 	slot6 = slot2:isPlayingWithBombEnemy()
 
 	if slot4 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 52-65, warpins: 1 ---
+		--- BLOCK #0 59-72, warpins: 1 ---
 		seriesAsync({
 			function (slot0)
 
@@ -3854,11 +4048,16 @@ slot0.tryAutoAction = function (slot0, slot1)
 			function (slot0)
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-5, warpins: 1 ---
-				if not slot0.contextData.chapterVO then
+				--- BLOCK #0 1-17, warpins: 1 ---
+				slot0.grid:PlaySpotLigthsEffect()
+				slot0:tryPlayChapterStory()
+
+				if slot0.tryPlayChapterStory:findChapterCell(ChapterConst.AttachBoss) and slot1.trait == ChapterConst.TraitLurk then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 6-6, warpins: 1 ---
+					--- BLOCK #0 23-30, warpins: 1 ---
+					slot0.grid:focusOnCell(slot1, slot0)
+
 					return
 					--- END OF BLOCK #0 ---
 
@@ -3873,35 +4072,11 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 7-23, warpins: 2 ---
-				slot0.grid:PlaySpotLigthsEffect()
-				slot0:tryPlayChapterStory()
-
-				if slot0.tryPlayChapterStory:findChapterCell(ChapterConst.AttachBoss) and slot1.trait == ChapterConst.TraitLurk then
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 29-36, warpins: 1 ---
-					slot0.grid:focusOnCell(slot1, slot0)
-
-					return
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-
-				--- END OF BLOCK #1 ---
-
-				FLOW; TARGET BLOCK #2
-
-
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #2 37-39, warpins: 3 ---
+				--- BLOCK #1 31-33, warpins: 3 ---
 				slot0()
 
 				return
-				--- END OF BLOCK #2 ---
+				--- END OF BLOCK #1 ---
 
 
 
@@ -3962,13 +4137,13 @@ slot0.tryAutoAction = function (slot0, slot1)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 66-71, warpins: 1 ---
+		--- BLOCK #0 73-78, warpins: 1 ---
 		slot0.grid:PlaySpotLigthsEffect()
 
 		if slot1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 72-73, warpins: 1 ---
+			--- BLOCK #0 79-80, warpins: 1 ---
 			slot1()
 			--- END OF BLOCK #0 ---
 
@@ -3981,15 +4156,6 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 	end
 
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #6 74-75, warpins: 3 ---
-	return
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
@@ -3997,8 +4163,25 @@ slot0.tryAutoAction = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 76-76, warpins: 2 ---
+	--- BLOCK #7 81-82, warpins: 3 ---
+	return
 	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #8 83-83, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #9 84-84, warpins: 2 ---
+	--- END OF BLOCK #9 ---
 
 
 
@@ -4011,47 +4194,49 @@ slot0.tryPlayChapterStory = function (slot0)
 	if slot0.contextData.chapterVO.getDataType(slot1) == ChapterConst.TypeNone then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 10-18, warpins: 1 ---
+		--- BLOCK #0 10-19, warpins: 1 ---
 		slot4 = slot1:getWaveCount()
+
+		function slot5()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-10, warpins: 1 ---
+			if PlayerPrefs.GetInt("help_displayed_on_" .. slot0.id, 0) == 0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 11-22, warpins: 1 ---
+				triggerButton(slot1.helpBtn)
+				PlayerPrefs.SetInt("help_displayed_on_" .. slot0.id, 1)
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 23-23, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
+		end
 
 		if slot1:getConfig("story_refresh") and slot3[slot4] and slot3[slot4] ~= "" then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 25-26, warpins: 1 ---
+			--- BLOCK #0 26-27, warpins: 1 ---
 			if slot4 == 1 and pg.map_event_list[slot1.id] and pg.map_event_list[slot1.id].help_open == 1 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 40-49, warpins: 1 ---
-				pg.StoryMgr.GetInstance():Play(slot3[slot4], function ()
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 1-10, warpins: 1 ---
-					if PlayerPrefs.GetInt("help_displayed_on_" .. slot0.id, 0) == 0 then
-
-						-- Decompilation error in this vicinity:
-						--- BLOCK #0 11-22, warpins: 1 ---
-						triggerButton(slot1.helpBtn)
-						PlayerPrefs.SetInt("help_displayed_on_" .. slot0.id, 1)
-						--- END OF BLOCK #0 ---
-
-
-
-					end
-
-					--- END OF BLOCK #0 ---
-
-					FLOW; TARGET BLOCK #1
-
-
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #1 23-23, warpins: 2 ---
-					return
-					--- END OF BLOCK #1 ---
-
-
-
-				end)
+				--- BLOCK #0 41-50, warpins: 1 ---
+				pg.StoryMgr.GetInstance():Play(slot3[slot4], slot5)
 				--- END OF BLOCK #0 ---
 
 
@@ -4059,7 +4244,7 @@ slot0.tryPlayChapterStory = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 50-58, warpins: 3 ---
+				--- BLOCK #0 51-59, warpins: 3 ---
 				pg.StoryMgr.GetInstance():Play(slot3[slot4])
 				--- END OF BLOCK #0 ---
 
@@ -4073,13 +4258,12 @@ slot0.tryPlayChapterStory = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 59-60, warpins: 3 ---
-			if slot4 == 1 and pg.map_event_list[slot1.id] and pg.map_event_list[slot1.id].help_open == 1 and PlayerPrefs.GetInt("help_displayed_on_" .. slot1.id, 0) == 0 then
+			--- BLOCK #0 60-61, warpins: 3 ---
+			if slot4 == 1 and pg.map_event_list[slot1.id] and pg.map_event_list[slot1.id].help_open == 1 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 83-92, warpins: 1 ---
-				triggerButton(slot0.helpBtn)
-				PlayerPrefs.SetInt("help_displayed_on_" .. slot1.id, 1)
+				--- BLOCK #0 75-76, warpins: 1 ---
+				slot5()
 				--- END OF BLOCK #0 ---
 
 
@@ -4098,12 +4282,12 @@ slot0.tryPlayChapterStory = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 93-98, warpins: 7 ---
-		if slot1:getConfig("story_refresh_boss") and slot5 ~= "" and slot1:bossRefreshed() then
+		--- BLOCK #1 77-82, warpins: 6 ---
+		if slot1:getConfig("story_refresh_boss") and slot6 ~= "" and slot1:bossRefreshed() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 106-113, warpins: 1 ---
-			pg.StoryMgr.GetInstance():Play(slot5)
+			--- BLOCK #0 90-97, warpins: 1 ---
+			pg.StoryMgr.GetInstance():Play(slot6)
 			--- END OF BLOCK #0 ---
 
 
@@ -4122,9 +4306,88 @@ slot0.tryPlayChapterStory = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 114-123, warpins: 5 ---
+	--- BLOCK #1 98-107, warpins: 5 ---
 	pg.SystemGuideMgr.GetInstance():PlayChapter(slot1)
 
+	return
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
+slot2 = {
+	[ChapterConst.KizunaJammingDodge] = "kizunaOperationSafe",
+	[ChapterConst.KizunaJammingEngage] = "kizunaOperationDanger",
+	[ChapterConst.StatusDay] = "HololiveDayBar",
+	[ChapterConst.StatusNight] = "HololiveNightBar"
+}
+
+slot0.PopBar = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-6, warpins: 1 ---
+	if getProxy(ChapterProxy).extraFlagUpdate then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 7-16, warpins: 1 ---
+		getProxy(ChapterProxy):extraFlagUpdated()
+
+		if #slot1 < 1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 17-17, warpins: 1 ---
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 18-26, warpins: 2 ---
+		slot4, slot5 = slot0:GetSubView(slot0[slot1[1]])
+
+		if slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 27-29, warpins: 1 ---
+			slot4:Load()
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 30-33, warpins: 2 ---
+		slot4.buffer:PlayAnim()
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 34-34, warpins: 2 ---
 	return
 	--- END OF BLOCK #1 ---
 
@@ -4241,48 +4504,9 @@ slot0.CheckFleetChange = function (slot0)
 	if _.detect(slot0.contextData.chapterVO.fleets, function (slot0)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-7, warpins: 1 ---
-		if slot0:getFleetType() == FleetType.Submarine then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 8-12, warpins: 1 ---
-			slot1 = not slot0:isValid()
-			--- END OF BLOCK #0 ---
-
-
-
-		else
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 13-14, warpins: 1 ---
-			slot1 = false
-
-			if false then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 15-15, warpins: 0 ---
-				slot1 = true
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
+		--- BLOCK #0 1-5, warpins: 1 ---
+		return not slot0:isValid()
 		--- END OF BLOCK #0 ---
-
-		FLOW; TARGET BLOCK #1
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 16-16, warpins: 3 ---
-		return slot1
-		--- END OF BLOCK #1 ---
 
 
 

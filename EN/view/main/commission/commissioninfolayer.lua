@@ -28,9 +28,9 @@ slot0.init = function (slot0)
 end
 
 slot0.NotifyIns = function (slot0, slot1)
-	setActive(slot0.activityInsBtn, slot1 and not slot1:isEnd() and slot1:ExistMsg())
+	setActive(slot0.activityInsBtn, slot1:ExistMsg())
 
-	if slot1 and not slot1.isEnd() and slot1.ExistMsg() then
+	if slot1.ExistMsg() then
 		onButton(slot0, slot0.activityInsBtn, function ()
 			slot0:emit(CommissionInfoMediator.ON_INS)
 		end, SFX_PANEL)

@@ -22897,6 +22897,498 @@ pg.aircraft_template = {
 			68820
 		}
 	},
+	[68861] = {
+		name = "大神澪技能鱼雷机Lv1",
+		max_hp = 42,
+		accuracy = 23,
+		model_ID = "feiji_vtuber2",
+		ACC_growth = 0,
+		crash_DMG = 208,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 3,
+		AP_growth = 2000,
+		icon = "feiji_vtuber2",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 1692,
+		speed = 48,
+		id = 68861,
+		scale = 1,
+		weapon_ID = {
+			68871
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.54,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[68862] = {
+		id = 68862,
+		name = "大神澪技能鱼雷机Lv2",
+		base = 68861,
+		max_hp = 48,
+		hp_growth = 1913,
+		weapon_ID = {
+			68872
+		}
+	},
+	[68863] = {
+		id = 68863,
+		name = "大神澪技能鱼雷机Lv3",
+		base = 68861,
+		max_hp = 54,
+		hp_growth = 2133,
+		weapon_ID = {
+			68873
+		}
+	},
+	[68864] = {
+		id = 68864,
+		name = "大神澪技能鱼雷机Lv4",
+		base = 68861,
+		max_hp = 61,
+		hp_growth = 2354,
+		weapon_ID = {
+			68874
+		}
+	},
+	[68865] = {
+		id = 68865,
+		name = "大神澪技能鱼雷机Lv5",
+		base = 68861,
+		max_hp = 67,
+		hp_growth = 2575,
+		weapon_ID = {
+			68875
+		}
+	},
+	[68866] = {
+		id = 68866,
+		name = "大神澪技能鱼雷机Lv6",
+		base = 68861,
+		max_hp = 73,
+		hp_growth = 2796,
+		weapon_ID = {
+			68876
+		}
+	},
+	[68867] = {
+		id = 68867,
+		name = "大神澪技能鱼雷机Lv7",
+		base = 68861,
+		max_hp = 79,
+		hp_growth = 3016,
+		weapon_ID = {
+			68877
+		}
+	},
+	[68868] = {
+		id = 68868,
+		name = "大神澪技能鱼雷机Lv8",
+		base = 68861,
+		max_hp = 86,
+		hp_growth = 3237,
+		weapon_ID = {
+			68878
+		}
+	},
+	[68869] = {
+		id = 68869,
+		name = "大神澪技能鱼雷机Lv9",
+		base = 68861,
+		max_hp = 92,
+		hp_growth = 3458,
+		weapon_ID = {
+			68879
+		}
+	},
+	[68870] = {
+		id = 68870,
+		name = "大神澪技能鱼雷机Lv10",
+		base = 68861,
+		max_hp = 98,
+		hp_growth = 3678,
+		weapon_ID = {
+			68880
+		}
+	},
+	[68881] = {
+		name = "大神澪技能轰炸机Lv1",
+		max_hp = 42,
+		accuracy = 23,
+		model_ID = "feiji_vtuber2",
+		ACC_growth = 0,
+		crash_DMG = 208,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 3,
+		AP_growth = 2000,
+		icon = "feiji_vtuber2",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 1692,
+		speed = 48,
+		id = 68881,
+		scale = 1,
+		weapon_ID = {
+			68891
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.54,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[68882] = {
+		id = 68882,
+		name = "大神澪技能轰炸机Lv2",
+		base = 68881,
+		max_hp = 48,
+		hp_growth = 1913,
+		weapon_ID = {
+			68892
+		}
+	},
+	[68883] = {
+		id = 68883,
+		name = "大神澪技能轰炸机Lv3",
+		base = 68881,
+		max_hp = 54,
+		hp_growth = 2133,
+		weapon_ID = {
+			68893
+		}
+	},
+	[68884] = {
+		id = 68884,
+		name = "大神澪技能轰炸机Lv4",
+		base = 68881,
+		max_hp = 61,
+		hp_growth = 2354,
+		weapon_ID = {
+			68894
+		}
+	},
+	[68885] = {
+		id = 68885,
+		name = "大神澪技能轰炸机Lv5",
+		base = 68881,
+		max_hp = 67,
+		hp_growth = 2575,
+		weapon_ID = {
+			68895
+		}
+	},
+	[68886] = {
+		id = 68886,
+		name = "大神澪技能轰炸机Lv6",
+		base = 68881,
+		max_hp = 73,
+		hp_growth = 2796,
+		weapon_ID = {
+			68896
+		}
+	},
+	[68887] = {
+		id = 68887,
+		name = "大神澪技能轰炸机Lv7",
+		base = 68881,
+		max_hp = 79,
+		hp_growth = 3016,
+		weapon_ID = {
+			68897
+		}
+	},
+	[68888] = {
+		id = 68888,
+		name = "大神澪技能轰炸机Lv8",
+		base = 68881,
+		max_hp = 86,
+		hp_growth = 3237,
+		weapon_ID = {
+			68898
+		}
+	},
+	[68889] = {
+		id = 68889,
+		name = "大神澪技能轰炸机Lv9",
+		base = 68881,
+		max_hp = 92,
+		hp_growth = 3458,
+		weapon_ID = {
+			68899
+		}
+	},
+	[68890] = {
+		id = 68890,
+		name = "大神澪技能轰炸机Lv10",
+		base = 68881,
+		max_hp = 98,
+		hp_growth = 3678,
+		weapon_ID = {
+			68900
+		}
+	},
+	[68951] = {
+		name = "白上吹雪狐笋轰炸机Lv1",
+		max_hp = 42,
+		accuracy = 23,
+		model_ID = "feiji_hulifeiji",
+		ACC_growth = 0,
+		crash_DMG = 208,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 3,
+		AP_growth = 2000,
+		icon = "feiji_hulifeiji",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 1692,
+		speed = 48,
+		id = 68951,
+		scale = 1,
+		weapon_ID = {
+			68961
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.54,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[68952] = {
+		id = 68952,
+		name = "白上吹雪狐笋轰炸机Lv2",
+		base = 68951,
+		max_hp = 48,
+		hp_growth = 1913,
+		weapon_ID = {
+			68962
+		}
+	},
+	[68953] = {
+		id = 68953,
+		name = "白上吹雪狐笋轰炸机Lv3",
+		base = 68951,
+		max_hp = 54,
+		hp_growth = 2133,
+		weapon_ID = {
+			68963
+		}
+	},
+	[68954] = {
+		id = 68954,
+		name = "白上吹雪狐笋轰炸机Lv4",
+		base = 68951,
+		max_hp = 61,
+		hp_growth = 2354,
+		weapon_ID = {
+			68964
+		}
+	},
+	[68955] = {
+		id = 68955,
+		name = "白上吹雪狐笋轰炸机Lv5",
+		base = 68951,
+		max_hp = 67,
+		hp_growth = 2575,
+		weapon_ID = {
+			68965
+		}
+	},
+	[68956] = {
+		id = 68956,
+		name = "白上吹雪狐笋轰炸机Lv6",
+		base = 68951,
+		max_hp = 73,
+		hp_growth = 2796,
+		weapon_ID = {
+			68966
+		}
+	},
+	[68957] = {
+		id = 68957,
+		name = "白上吹雪狐笋轰炸机Lv7",
+		base = 68951,
+		max_hp = 79,
+		hp_growth = 3016,
+		weapon_ID = {
+			68967
+		}
+	},
+	[68958] = {
+		id = 68958,
+		name = "白上吹雪狐笋轰炸机Lv8",
+		base = 68951,
+		max_hp = 86,
+		hp_growth = 3237,
+		weapon_ID = {
+			68968
+		}
+	},
+	[68959] = {
+		id = 68959,
+		name = "白上吹雪狐笋轰炸机Lv9",
+		base = 68951,
+		max_hp = 92,
+		hp_growth = 3458,
+		weapon_ID = {
+			68969
+		}
+	},
+	[68960] = {
+		id = 68960,
+		name = "白上吹雪狐笋轰炸机Lv10",
+		base = 68951,
+		max_hp = 98,
+		hp_growth = 3678,
+		weapon_ID = {
+			68970
+		}
+	},
 	[81000] = {
 		name = "F2A水牛",
 		max_hp = 29,
@@ -87225,6 +87717,972 @@ pg.aircraft_template = {
 			}
 		}
 	},
+	[616077] = {
+		name = "【hololive联动T3】BOSS-大神澪 特殊鱼雷封锁",
+		max_hp = 420,
+		accuracy = 50,
+		model_ID = "feiji_vtuber2",
+		ACC_growth = 0,
+		crash_DMG = 90,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 3,
+		AP_growth = 2000,
+		icon = "feiji_vtuber2",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 0,
+		speed = 30,
+		id = 616077,
+		scale = 0.75,
+		weapon_ID = {
+			616087
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-1.73,
+					0
+				},
+				{
+					0.82,
+					2.04,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.64,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616082] = {
+		name = "【hololive联动T3】BOSS-大神澪 战斗机",
+		max_hp = 86,
+		accuracy = 23,
+		model_ID = "feiji_vtuber2",
+		ACC_growth = 0,
+		crash_DMG = 48,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 1,
+		AP_growth = 2000,
+		icon = "feiji_vtuber2",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 1960,
+		speed = 33,
+		id = 616082,
+		scale = 0.75,
+		weapon_ID = {
+			616084,
+			616085
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.27,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616083] = {
+		name = "【hololive联动T3】BOSS-大神澪 鱼雷机",
+		max_hp = 96,
+		accuracy = 23,
+		model_ID = "feiji_vtuber2",
+		ACC_growth = 0,
+		crash_DMG = 69,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 1,
+		AP_growth = 2000,
+		icon = "feiji_vtuber2",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 2380,
+		speed = 30,
+		id = 616083,
+		scale = 0.75,
+		weapon_ID = {
+			616086
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-0.91,
+					0
+				},
+				{
+					0.77,
+					1,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.51,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616101] = {
+		name = "【hololive联动TS4】BOSS-时乃空 战斗机",
+		max_hp = 90,
+		accuracy = 50,
+		model_ID = "lingzhan21",
+		ACC_growth = 0,
+		crash_DMG = 82,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 1,
+		AP_growth = 2000,
+		icon = "lingzhan21",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 2000,
+		speed = 33,
+		id = 616101,
+		scale = 0.75,
+		weapon_ID = {
+			616104,
+			616105
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.27,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616102] = {
+		name = "【hololive联动TS4】BOSS-时乃空 鱼雷机",
+		max_hp = 140,
+		accuracy = 23,
+		model_ID = "jianyu",
+		ACC_growth = 0,
+		crash_DMG = 111,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 1,
+		AP_growth = 2000,
+		icon = "jianyu",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 2400,
+		speed = 28,
+		id = 616102,
+		scale = 0.75,
+		weapon_ID = {
+			616103
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-0.91,
+					0
+				},
+				{
+					0.77,
+					1,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.51,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616109] = {
+		name = "【hololive联动TS4】BOSS-时乃空 地毯轰炸飞机",
+		max_hp = 500,
+		accuracy = 50,
+		model_ID = "huixing",
+		ACC_growth = 0,
+		crash_DMG = 160,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 3,
+		AP_growth = 2000,
+		icon = "huixing",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 0,
+		speed = 30,
+		id = 616109,
+		scale = 0.75,
+		weapon_ID = {
+			616110
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-1.73,
+					0
+				},
+				{
+					0.82,
+					2.04,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.64,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616128] = {
+		name = "【hololive联动T5】BOSS-紫咲诗音 战斗机",
+		max_hp = 262,
+		accuracy = 50,
+		model_ID = "lingzhan21",
+		ACC_growth = 0,
+		crash_DMG = 88,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 1,
+		AP_growth = 2000,
+		icon = "lingzhan21",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 2640,
+		speed = 33,
+		id = 616128,
+		scale = 0.75,
+		weapon_ID = {
+			616130,
+			616131
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.27,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616129] = {
+		name = "【hololive联动T5】BOSS-紫咲诗音 轰炸机",
+		max_hp = 284,
+		accuracy = 50,
+		model_ID = "99shijianbao1",
+		ACC_growth = 0,
+		crash_DMG = 148,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 1,
+		AP_growth = 2000,
+		icon = "99shijianbao1",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 2940,
+		speed = 30,
+		id = 616129,
+		scale = 0.75,
+		weapon_ID = {
+			616132
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-0.91,
+					0
+				},
+				{
+					0.77,
+					1,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.51,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616146] = {
+		name = "【hololive联动TS5】BOSS-白上吹雪 轰炸机",
+		max_hp = 124,
+		accuracy = 50,
+		model_ID = "feiji_hulifeiji",
+		ACC_growth = 0,
+		crash_DMG = 186,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 3,
+		AP_growth = 2000,
+		icon = "feiji_hulifeiji",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 2620,
+		speed = 46,
+		id = 616146,
+		scale = 0.75,
+		weapon_ID = {
+			616147
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-0.91,
+					0
+				},
+				{
+					0.77,
+					1,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.51,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616157] = {
+		name = "【hololive联动T6】BOSS-白上吹雪 轰炸机",
+		max_hp = 242,
+		accuracy = 50,
+		model_ID = "feiji_hulifeiji",
+		ACC_growth = 0,
+		crash_DMG = 212,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 3,
+		AP_growth = 2000,
+		icon = "feiji_hulifeiji",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 3040,
+		speed = 46,
+		id = 616157,
+		scale = 0.75,
+		weapon_ID = {
+			616158
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-0.91,
+					0
+				},
+				{
+					0.77,
+					1,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.51,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616172] = {
+		name = "【hololive联动SP】BOSS-紫咲诗音 战斗机",
+		max_hp = 224,
+		accuracy = 50,
+		model_ID = "lingzhan21",
+		ACC_growth = 0,
+		crash_DMG = 186,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 1,
+		AP_growth = 2000,
+		icon = "lingzhan21",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 3400,
+		speed = 33,
+		id = 616172,
+		scale = 0.75,
+		weapon_ID = {
+			616174,
+			616175
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.27,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616173] = {
+		name = "【hololive联动SP】BOSS-紫咲诗音 轰炸机",
+		max_hp = 265,
+		accuracy = 50,
+		model_ID = "99shijianbao1",
+		ACC_growth = 0,
+		crash_DMG = 232,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 1,
+		AP_growth = 2000,
+		icon = "99shijianbao1",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 3800,
+		speed = 30,
+		id = 616173,
+		scale = 0.75,
+		weapon_ID = {
+			616176
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-0.91,
+					0
+				},
+				{
+					0.77,
+					1,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.51,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[616201] = {
+		name = "【hololive联动EX】BOSS-白上吹雪 轰炸机",
+		max_hp = 1600,
+		accuracy = 50,
+		model_ID = "feiji_hulifeiji",
+		ACC_growth = 0,
+		crash_DMG = 400,
+		dodge = 1,
+		attack_power = 2,
+		dodge_limit = 0,
+		type = 3,
+		AP_growth = 2000,
+		icon = "feiji_hulifeiji",
+		funnel_behavior = "",
+		nationality = 3,
+		hp_growth = 0,
+		speed = 30,
+		id = 616201,
+		scale = 0.75,
+		weapon_ID = {
+			616202
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-0.91,
+					0
+				},
+				{
+					0.77,
+					1,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.51,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
 	[615033] = {
 		name = "【偶像活动SP4】BOSS-执棋者II型 浮游炮机",
 		max_hp = 156,
@@ -108157,6 +109615,36 @@ pg.aircraft_template = {
 		68808,
 		68809,
 		68810,
+		68861,
+		68862,
+		68863,
+		68864,
+		68865,
+		68866,
+		68867,
+		68868,
+		68869,
+		68870,
+		68881,
+		68882,
+		68883,
+		68884,
+		68885,
+		68886,
+		68887,
+		68888,
+		68889,
+		68890,
+		68951,
+		68952,
+		68953,
+		68954,
+		68955,
+		68956,
+		68957,
+		68958,
+		68959,
+		68960,
 		81000,
 		81001,
 		81002,
@@ -109284,6 +110772,19 @@ pg.aircraft_template = {
 		613011,
 		613018,
 		613019,
+		616077,
+		616082,
+		616083,
+		616101,
+		616102,
+		616109,
+		616128,
+		616129,
+		616146,
+		616157,
+		616172,
+		616173,
+		616201,
 		615033,
 		615034,
 		615035,

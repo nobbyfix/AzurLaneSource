@@ -13,7 +13,7 @@ end
 slot0.getUIName = slot1
 
 function slot1(slot0, slot1)
-	slot0.activityVO = slot1
+	slot0.proxy = slot1
 	slot3 = slot1
 	slot2 = slot1.GetData
 	slot2 = slot2(slot3)
@@ -24,7 +24,7 @@ function slot1(slot0, slot1)
 	slot0.messages = slot2
 end
 
-slot0.SetActivity = slot1
+slot0.SetProxy = slot1
 
 function slot1(slot0, slot1)
 	slot2 = slot0.contextData
@@ -521,11 +521,9 @@ function slot1(slot0)
 			slot2 = slot0.emit
 			slot4 = InstagramMediator
 			slot4 = slot4.ON_READED
-			slot5 = slot0.activityVO
-			slot5 = slot5.id
-			slot6 = slot1.id
+			slot5 = slot1.id
 
-			slot2(slot3, slot4, slot5, slot6)
+			slot2(slot3, slot4, slot5)
 		end
 	end
 
@@ -577,11 +575,9 @@ function slot1(slot0)
 			slot5 = slot0.emit
 			slot7 = InstagramMediator
 			slot7 = slot7.ON_REPLY_UPDATE
-			slot8 = slot0.activityVO
-			slot8 = slot8.id
-			slot9 = slot1.id
+			slot8 = slot1.id
 
-			slot5(slot6, slot7, slot8, slot9)
+			slot5(slot6, slot7, slot8)
 		end
 	end
 end
@@ -610,13 +606,10 @@ function slot1(slot0)
 		slot0 = slot0.emit
 		slot2 = InstagramMediator
 		slot2 = slot2.ON_SHARE
-		slot3 = slot0
-		slot3 = slot3.activityVO
+		slot3 = slot1
 		slot3 = slot3.id
-		slot4 = slot1
-		slot4 = slot4.id
 
-		slot0(slot1, slot2, slot3, slot4)
+		slot0(slot1, slot2, slot3)
 	end
 
 	slot6 = SFX_PANEL
@@ -710,13 +703,10 @@ function slot1(slot0)
 			slot0 = slot0.emit
 			slot2 = InstagramMediator
 			slot2 = slot2.ON_LIKE
-			slot3 = slot0
-			slot3 = slot3.activityVO
+			slot3 = slot1
 			slot3 = slot3.id
-			slot4 = slot1
-			slot4 = slot4.id
 
-			slot0(slot1, slot2, slot3, slot4)
+			slot0(slot1, slot2, slot3)
 		end
 
 		slot7 = SFX_PANEL
@@ -1127,15 +1117,12 @@ function slot1(slot0)
 				slot0 = slot0.emit
 				slot2 = InstagramMediator
 				slot2 = slot2.ON_COMMENT
-				slot3 = slot0
-				slot3 = slot3.activityVO
+				slot3 = slot1
 				slot3 = slot3.id
-				slot4 = slot1
-				slot4 = slot4.id
-				slot5 = slot2
-				slot6 = slot3
+				slot4 = slot2
+				slot5 = slot3
 
-				slot0(slot1, slot2, slot3, slot4, slot5, slot6)
+				slot0(slot1, slot2, slot3, slot4, slot5)
 
 				slot0 = slot0
 				slot1 = slot0

@@ -227,6 +227,62 @@ ys or .Battle.BattleDataFunction.GetBulletResFromSkill = function (slot0, slot1,
 	return slot3
 end
 
+ys or .Battle.BattleDataFunction.GetShipSkillTriggerCount = function (slot0, slot1)
+	slot3 = 0 + 
+	-- Decompilation error in this vicinity:
+	function (slot0)
+		slot1 = 0
+
+		for slot5, slot6 in pairs(slot0) do
+			for slot12, slot13 in ipairs(slot8) do
+				for slot18, slot19 in ipairs(slot14) do
+					if table.contains(slot1, slot19) then
+						slot1 = slot1 + 1
+					end
+				end
+			end
+		end
+
+		return slot1
+	end(slot0.skills or {})
+	slot6 = {}
+
+	for slot10, slot11 in ipairs(slot5) do
+		table.insert(slot6, {
+			id = slot11
+		})
+	end
+
+	return slot3 + slot2(slot6)
+end
+
+ys or .Battle.BattleDataFunction.GetSongList = function (slot0)
+	slot1 = {
+		initList = {},
+		otherList = {}
+	}
+
+	for slot5, slot6 in pairs(slot0) do
+		for slot11, slot12 in ipairs(slot0.GetBuffTemplate(slot5, 1).effect_list) do
+			if slot12.type == slot1.Battle.BattleBuffDiva.__name then
+				if table.contains(slot12.trigger, "onInitGame") then
+					for slot16, slot17 in ipairs(slot12.arg_list.bgm_list) do
+						slot1.initList[slot17] = true
+					end
+				end
+
+				if not table.contains(slot12.trigger, "onInitGame") or #slot12.trigger > 1 then
+					for slot16, slot17 in ipairs(slot12.arg_list.bgm_list) do
+						slot1.otherList[slot17] = true
+					end
+				end
+			end
+		end
+	end
+
+	return slot1
+end
+
 ys or .Battle.BattleDataFunction.NeedSkillPainting = function (slot0)
 	slot1 = false
 

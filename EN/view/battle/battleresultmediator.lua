@@ -271,4 +271,17 @@ slot0.handleNotification = function (slot0, slot1)
 	end
 end
 
+slot0.GetResultView = function (slot0)
+	slot0.RESULT_VIEW_TRANSFORM = slot0.RESULT_VIEW_TRANSFORM or {
+		[SYSTEM_CHALLENGE] = BattleChallengeResultLayer,
+		[SYSTEM_DODGEM] = BattleDodgemResultLayer,
+		[SYSTEM_SUBMARINE_RUN] = BattleSubmarineRunResultLayer,
+		[SYSTEM_SUB_ROUTINE] = BattleSubmarineRoutineResultLayer,
+		[SYSTEM_HP_SHARE_ACT_BOSS] = BattleContributionResultLayer,
+		[SYSTEM_BOSS_EXPERIMENT] = BattleExperimentResultLayer
+	}
+
+	return slot0.RESULT_VIEW_TRANSFORM[slot0] or BattleResultLayer
+end
+
 return slot0

@@ -1,6 +1,6 @@
 slot0 = class("Player", import(".PlayerAttire"))
 slot2 = pg.player_resource.get_id_list_by_name
-slot3 = nil
+slot3, slot4 = nil
 slot0.MAX_SHIP_BAG = 2000
 slot0.MAX_EQUIP_BAG = 2000
 slot0.MAX_COMMANDER_BAG = 200
@@ -63,8 +63,8 @@ slot0.Ctor = function (slot0, slot1)
 		slot1 = pg.StoryMgr.GetInstance():GetStoryByName("index")
 	end
 
-	if not storyIndexAgain then
-		storyIndexAgain = pg.StoryMgr.GetInstance():GetStoryByName("index_again")
+	if not slot2 then
+		slot2 = pg.StoryMgr.GetInstance():GetStoryByName("index_again")
 	end
 
 	slot0.id = slot1.id
@@ -159,8 +159,8 @@ slot0.Ctor = function (slot0, slot1)
 				slot0.stories[slot7] = slot1[slot7]
 			end
 
-			if storyIndexAgain[slot7] then
-				slot0.storiesAgain[slot7] = storyIndexAgain[slot7]
+			if slot2[slot7] then
+				slot0.storiesAgain[slot7] = slot2[slot7]
 			end
 		end
 	end
@@ -298,11 +298,11 @@ slot0.getStoryByIndexID = function (slot0, slot1)
 end
 
 slot0.addStoryAgain = function (slot0, slot1)
-	slot0.storiesAgain[slot1] = storyIndexAgain[slot1]
+	slot0.storiesAgain[slot1] = slot0[slot1]
 end
 
 slot0.getStoryIndexAgainID = function (slot0, slot1)
-	for slot5, slot6 in pairs(storyIndexAgain) do
+	for slot5, slot6 in pairs(slot0) do
 		if slot6 == slot1 then
 			return slot5
 		end

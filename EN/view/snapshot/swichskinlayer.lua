@@ -89,14 +89,14 @@ slot0.openSelectSkinPanel = function (slot0)
 
 		slot9 = slot0.shipVO:getRemouldSkinId() == slot6.id and slot0.shipVO:isRemoulded()
 
-		slot8:updateData(slot0.shipVO, slot6, slot0.shipVO:proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or (slot0.shipVO.getRemouldSkinId() == slot6.id and slot0.shipVO.isRemoulded()) or slot6.skin_type == 3)
-		slot8:updateSkin(slot6, slot0.shipVO.proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or (slot0.shipVO.getRemouldSkinId() == slot6.id and slot0.shipVO.isRemoulded()) or slot6.skin_type == 3)
+		slot8:updateData(slot0.shipVO, slot6, slot0.shipVO:proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or (slot0.shipVO.getRemouldSkinId() == slot6.id and slot0.shipVO.isRemoulded()) or slot6.skin_type == ShipSkin.SKIN_TYPE_OLD)
+		slot8:updateSkin(slot6, slot0.shipVO.proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or (slot0.shipVO.getRemouldSkinId() == slot6.id and slot0.shipVO.isRemoulded()) or slot6.skin_type == ShipSkin.SKIN_TYPE_OLD)
 		slot8:updateUsing(slot0.shipVO.skinId == slot6.id)
 		removeOnButton(slot7)
 
 		slot14 = ((slot6.shop_id > 0 and pg.shop_template[slot6.shop_id]) or nil) and not pg.TimeMgr.GetInstance():inTime((slot6.shop_id > 0 and pg.shop_template[slot6.shop_id]) or nil.time)
 		slot15 = slot6.id == slot0.shipVO.skinId
-		slot16 = slot6.id == slot0.shipVO:getConfig("skin_id") or (((slot0.shipVO:proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or (slot0.shipVO:getRemouldSkinId() == slot6.id and slot0.shipVO:isRemoulded())) and 1) or 0) >= 1 or slot6.skin_type == 3
+		slot16 = slot6.id == slot0.shipVO:getConfig("skin_id") or (((slot0.shipVO:proposeSkinOwned(slot6) or table.contains(slot0.skinList, slot6.id) or (slot0.shipVO:getRemouldSkinId() == slot6.id and slot0.shipVO:isRemoulded())) and 1) or 0) >= 1 or slot6.skin_type == ShipSkin.SKIN_TYPE_OLD
 
 		onToggle(slot0, slot8.hideObjToggleTF, function (slot0)
 
@@ -349,11 +349,11 @@ slot0.openSelectSkinPanel = function (slot0)
 		if not table.contains(slot0.skinList, slot6.id) and not slot9 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 82-84, warpins: 1 ---
-			if slot6.skin_type ~= 3 then
+			--- BLOCK #0 82-86, warpins: 1 ---
+			if slot6.skin_type ~= ShipSkin.SKIN_TYPE_OLD then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 85-86, warpins: 1 ---
+				--- BLOCK #0 87-88, warpins: 1 ---
 				slot10 = false
 				--- END OF BLOCK #0 ---
 
@@ -362,7 +362,7 @@ slot0.openSelectSkinPanel = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 87-87, warpins: 1 ---
+				--- BLOCK #0 89-89, warpins: 1 ---
 				slot10 = true
 				--- END OF BLOCK #0 ---
 
@@ -382,7 +382,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #5 88-105, warpins: 5 ---
+		--- BLOCK #5 90-107, warpins: 5 ---
 		--- END OF BLOCK #5 ---
 
 		FLOW; TARGET BLOCK #7
@@ -390,13 +390,13 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #6 106-107, warpins: 1 ---
+		--- BLOCK #6 108-109, warpins: 1 ---
 		slot13 = false
 
 		if false then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 108-108, warpins: 1 ---
+			--- BLOCK #0 110-110, warpins: 1 ---
 			slot13 = true
 			--- END OF BLOCK #0 ---
 
@@ -411,7 +411,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #7 109-119, warpins: 2 ---
+		--- BLOCK #7 111-121, warpins: 2 ---
 		--- END OF BLOCK #7 ---
 
 		FLOW; TARGET BLOCK #9
@@ -419,19 +419,19 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #8 120-124, warpins: 1 ---
+		--- BLOCK #8 122-126, warpins: 1 ---
 		slot11 = slot0.shipVO.isRemoulded()
 
 		if slot0.shipVO.isRemoulded() then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 125-126, warpins: 1 ---
+			--- BLOCK #0 127-128, warpins: 1 ---
 			slot11 = false
 
 			if false then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 127-127, warpins: 0 ---
+				--- BLOCK #0 129-129, warpins: 0 ---
 				slot11 = true
 				--- END OF BLOCK #0 ---
 
@@ -451,7 +451,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #9 128-134, warpins: 3 ---
+		--- BLOCK #9 130-136, warpins: 3 ---
 		--- END OF BLOCK #9 ---
 
 		FLOW; TARGET BLOCK #11
@@ -459,11 +459,11 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #10 135-141, warpins: 1 ---
+		--- BLOCK #10 137-143, warpins: 1 ---
 		if table.contains(slot0.skinList, slot6.id) or slot11 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 144-145, warpins: 3 ---
+			--- BLOCK #0 146-147, warpins: 3 ---
 			slot12 = 1
 			--- END OF BLOCK #0 ---
 
@@ -472,7 +472,7 @@ slot0.openSelectSkinPanel = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 146-146, warpins: 1 ---
+			--- BLOCK #0 148-148, warpins: 1 ---
 			slot12 = 0
 			--- END OF BLOCK #0 ---
 
@@ -487,7 +487,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #11 147-150, warpins: 2 ---
+		--- BLOCK #11 149-152, warpins: 2 ---
 		--- END OF BLOCK #11 ---
 
 		FLOW; TARGET BLOCK #13
@@ -495,11 +495,11 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #12 151-156, warpins: 1 ---
+		--- BLOCK #12 153-158, warpins: 1 ---
 		if not pg.shop_template[slot6.shop_id] then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 157-157, warpins: 2 ---
+			--- BLOCK #0 159-159, warpins: 2 ---
 			slot13 = nil
 			--- END OF BLOCK #0 ---
 
@@ -514,7 +514,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #13 158-159, warpins: 2 ---
+		--- BLOCK #13 160-161, warpins: 2 ---
 		--- END OF BLOCK #13 ---
 
 		FLOW; TARGET BLOCK #15
@@ -522,7 +522,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #14 160-168, warpins: 1 ---
+		--- BLOCK #14 162-170, warpins: 1 ---
 		slot14 = not pg.TimeMgr.GetInstance().inTime((slot6.shop_id > 0 and pg.shop_template[slot6.shop_id]) or nil.time)
 		--- END OF BLOCK #14 ---
 
@@ -531,7 +531,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #15 169-173, warpins: 2 ---
+		--- BLOCK #15 171-175, warpins: 2 ---
 		--- END OF BLOCK #15 ---
 
 		FLOW; TARGET BLOCK #17
@@ -539,13 +539,13 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #16 174-175, warpins: 1 ---
+		--- BLOCK #16 176-177, warpins: 1 ---
 		slot15 = false
 
 		if false then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 176-176, warpins: 1 ---
+			--- BLOCK #0 178-178, warpins: 1 ---
 			slot15 = true
 			--- END OF BLOCK #0 ---
 
@@ -560,7 +560,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #17 177-184, warpins: 2 ---
+		--- BLOCK #17 179-186, warpins: 2 ---
 		--- END OF BLOCK #17 ---
 
 		FLOW; TARGET BLOCK #19
@@ -568,11 +568,11 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #18 185-187, warpins: 1 ---
-		if slot12 < 1 and slot6.skin_type ~= 3 then
+		--- BLOCK #18 187-189, warpins: 1 ---
+		if slot12 < 1 and slot6.skin_type ~= ShipSkin.SKIN_TYPE_OLD then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 191-192, warpins: 1 ---
+			--- BLOCK #0 195-196, warpins: 1 ---
 			slot16 = false
 			--- END OF BLOCK #0 ---
 
@@ -581,7 +581,7 @@ slot0.openSelectSkinPanel = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 193-193, warpins: 3 ---
+			--- BLOCK #0 197-197, warpins: 3 ---
 			slot16 = true
 			--- END OF BLOCK #0 ---
 
@@ -595,7 +595,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #19 194-210, warpins: 2 ---
+		--- BLOCK #19 198-214, warpins: 2 ---
 		--- END OF BLOCK #19 ---
 
 		FLOW; TARGET BLOCK #20
@@ -603,7 +603,7 @@ slot0.openSelectSkinPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #20 211-212, warpins: 2 ---
+		--- BLOCK #20 215-216, warpins: 2 ---
 		--- END OF BLOCK #20 ---
 
 
@@ -671,194 +671,9 @@ end
 slot0.getGroupSkinList = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot2 = ShipGroup.getSkinList(slot1)
-
-	if pg.ship_data_trans[slot1] and not slot0.shipVO:isRemoulded() then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 16-24, warpins: 1 ---
-		slot3 = ShipGroup.GetGroupConfig(slot1).trans_skin
-
-		--- END OF BLOCK #0 ---
-
-		FLOW; TARGET BLOCK #1
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 25-35, warpins: 0 ---
-		for slot7 = #slot2, 1, -1 do
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 25-28, warpins: 2 ---
-			if slot2[slot7].id == slot3 then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 29-34, warpins: 1 ---
-				table.remove(slot2, slot7)
-
-				--- END OF BLOCK #0 ---
-
-				FLOW; TARGET BLOCK #1
-
-
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #1 35-35, warpins: 1 ---
-				break
-				--- END OF BLOCK #1 ---
-
-
-
-			end
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 35-35, warpins: 1 ---
-			--- END OF BLOCK #1 ---
-
-
-
-		end
-		--- END OF BLOCK #1 ---
-
-
-
-	end
-
+	--- BLOCK #0 1-7, warpins: 1 ---
+	return getProxy(ShipSkinProxy):GetAllSkinForShip(slot0.shipVO)
 	--- END OF BLOCK #0 ---
-
-	FLOW; TARGET BLOCK #1
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #1 36-39, warpins: 4 ---
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #2 40-80, warpins: 0 ---
-	for slot6 = #slot2, 1, -1 do
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 40-43, warpins: 2 ---
-		if slot2[slot6].show_time and ((type(slot7.show_time) == "string" and slot7.show_time == "stop") or (type(slot7.show_time) == "table" and not pg.TimeMgr.GetInstance():inTime(slot7.show_time))) then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 67-71, warpins: 2 ---
-			table.remove(slot2, slot6)
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		--- END OF BLOCK #0 ---
-
-		FLOW; TARGET BLOCK #1
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 72-74, warpins: 4 ---
-		if slot7.no_showing == "1" then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 75-79, warpins: 1 ---
-			table.remove(slot2, slot6)
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #2 80-80, warpins: 2 ---
-		--- END OF BLOCK #2 ---
-
-
-
-	end
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #3 81-84, warpins: 1 ---
-	if PLATFORM_CODE == PLATFORM_CH then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 85-92, warpins: 1 ---
-		slot3 = pg.gameset.big_seven_old_skin_timestamp.key_value
-
-		--- END OF BLOCK #0 ---
-
-		FLOW; TARGET BLOCK #1
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 93-106, warpins: 0 ---
-		for slot7 = #slot2, 1, -1 do
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 93-96, warpins: 2 ---
-			if slot2[slot7].skin_type == 3 and slot3 < slot0.shipVO.createTime then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 101-105, warpins: 1 ---
-				table.remove(slot2, slot7)
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 106-106, warpins: 3 ---
-			--- END OF BLOCK #1 ---
-
-
-
-		end
-		--- END OF BLOCK #1 ---
-
-
-
-	end
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #4 107-107, warpins: 2 ---
-	return slot2
-	--- END OF BLOCK #4 ---
 
 
 
@@ -887,7 +702,7 @@ slot0.getGroupOwnSkins = function (slot0, slot1)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 20-24, warpins: 1 ---
-			if slot10.skin_type == Ship.SKIN_TYPE_DEFAULT or table.contains(slot3, slot10.id) or (slot10.skin_type == Ship.SKIN_TYPE_REMAKE and slot4.trans) or (slot10.skin_type == Ship.SKIN_TYPE_PROPOSE and slot4.married == 1) then
+			if slot10.skin_type == ShipSkin.SKIN_TYPE_DEFAULT or table.contains(slot3, slot10.id) or (slot10.skin_type == ShipSkin.SKIN_TYPE_REMAKE and slot4.trans) or (slot10.skin_type == ShipSkin.SKIN_TYPE_PROPOSE and slot4.married == 1) then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 48-50, warpins: 4 ---

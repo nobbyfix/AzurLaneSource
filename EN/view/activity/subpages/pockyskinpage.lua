@@ -35,7 +35,7 @@ function slot1(slot0)
 	slot0.taskDesc = slot0.leftStage:Find("task")
 	slot0.signDesc = slot0.leftStage:Find("signin")
 	slot0.spine = nil
-	slot0.spineLRQ = LoadSpineRequestPackage.New("beierfasite_4", function (slot0)
+	slot0.spineLRQ = GetSpineRequestPackage.New("beierfasite_4", function (slot0)
 		SetParent(slot0, slot0.leftStage:Find("ship"))
 
 		slot0.spine = slot0

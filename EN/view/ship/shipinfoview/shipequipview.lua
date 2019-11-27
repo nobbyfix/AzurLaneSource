@@ -89,7 +89,7 @@ slot0.InitEvent = function (slot0)
 
 		if _.all(slot1.UNLOCK_EQUPMENT_SKIN_POS, function (slot0)
 			return not slot0[slot0]
-		end) then
+		end) and not slot0.contextData.isInEquipmentSkinPage then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("equipment_skin_no_equipment_tip"))
 
 			return

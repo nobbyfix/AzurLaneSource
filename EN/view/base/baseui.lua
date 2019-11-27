@@ -67,15 +67,19 @@ slot0.load = function (slot0)
 		end
 	}, function ()
 		print("load " .. slot0.name .. " time cost: " .. Time.realtimeSinceStartup - "load ")
-
-		if slot2:getBGM() then
-			playBGM(slot0)
-		end
-
 		slot0.transform:SetParent(pg.UIMgr.GetInstance().UIMain.transform, false)
 		slot0:SetActive(true)
-		slot0.SetActive:onUILoaded(slot0)
+		slot0:onUILoaded(pg.UIMgr.GetInstance().UIMain)
+		slot0:PlayBGM()
 	end)
+end
+
+slot0.PlayBGM = function (slot0)
+	if slot0:getBGM() and slot0.bgm ~= slot1 then
+		playBGM(slot1)
+
+		slot0.bgm = slot1
+	end
 end
 
 slot0.isLoaded = function (slot0)

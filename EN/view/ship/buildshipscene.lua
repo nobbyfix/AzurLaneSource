@@ -227,6 +227,7 @@ slot0.init = function (slot0)
 
 	slot0.patingTF = slot0:findTF("bg/main/painting")
 	slot0.msgbox = slot0(slot0:findTF("build_msg"))
+	slot0.testBtn = slot0:findTF("bg/main/gallery/test_btn")
 
 	slot0:initHelpMsg()
 end
@@ -336,6 +337,27 @@ slot0.initHelpMsg = function (slot0)
 	end
 end
 
+slot0.UpdateTestBtn = function (slot0, slot1)
+	slot2 = false
+
+	if PLATFORM_CODE ~= PLATFORM_JP and slot1 == slot0.PROJECTS.ACTIVITY and getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_BUILDSHIP_1) and not slot3:isEnd() then
+		if slot3:getConfig("config_client") and slot4.stageid then
+			slot2 = true
+
+			onButton(slot0, slot0.testBtn, function ()
+				pg.MsgboxMgr.GetInstance():ShowMsgBox({
+					content = i18n("juese_tiyan"),
+					onYes = function ()
+						slot0:emit(BuildShipMediator.SIMULATION_BATTLE, slot1.stageid)
+					end
+				})
+			end, SFX_PANEL)
+		end
+	end
+
+	setActive(slot0.testBtn, slot2)
+end
+
 slot0.switchPage = function (slot0, slot1, slot2)
 	if slot1 == slot0.PAGE_UNSEAM then
 		if slot2 then
@@ -430,6 +452,7 @@ slot0.switchProject = function (slot0, slot1)
 	setText(slot0:findTF("gallery/bg/type_intro/title", slot0.mainTF), HXSet.hxLan(slot7))
 	setText(slot8, slot2.number_1)
 	setText(slot9, slot2.use_gold)
+	slot0:UpdateTestBtn(slot1)
 	onButton(slot0, slot0:findTF("gallery/start_btn", slot0.mainTF), function ()
 		slot0.msgbox:show(math.max(1, _.min({
 			math.floor(slot0.player.gold / slot1.use_gold),

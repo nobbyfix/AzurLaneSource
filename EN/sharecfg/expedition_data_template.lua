@@ -1987,6 +1987,42 @@ pg.expedition_data_template = {
 		},
 		bufficon = {}
 	},
+	[9801] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "角色体验关卡",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 0,
+		dungeon_id = 9801,
+		exp = 0,
+		icon = "bossicon",
+		difficulty = 1,
+		level = 100,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 9801,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
 	[80000] = {
 		sink_limit = 1,
 		ai = 0,
@@ -240696,6 +240732,9997 @@ pg.expedition_data_template = {
 		},
 		bufficon = {}
 	},
+	[1290001] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290001,
+		exp = 105,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 21,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290001,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290002] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290002,
+		exp = 121,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 22,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290002,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290003] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290003,
+		exp = 138,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 23,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290003,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290004] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290004,
+		exp = 105,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 21,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290004,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290005] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290005,
+		exp = 121,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 22,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290005,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290006] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290006,
+		exp = 138,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 23,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290006,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290007] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290007,
+		exp = 105,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 21,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290007,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290008] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290008,
+		exp = 121,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 22,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290008,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290009] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290009,
+		exp = 138,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 23,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290009,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290010] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290010,
+		exp = 105,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 21,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290010,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290011] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290011,
+		exp = 121,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 22,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290011,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290012] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290012,
+		exp = 138,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 23,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290012,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290013] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290013,
+		exp = 181,
+		icon = "bossicon",
+		difficulty = 2,
+		level = 25,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290013,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				20001
+			},
+			{
+				2,
+				59001
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290021] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290001,
+		exp = 105,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 21,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290021,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57747
+			},
+			{
+				2,
+				17001
+			},
+			{
+				2,
+				17021
+			},
+			{
+				2,
+				17031
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290022] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290002,
+		exp = 121,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 22,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290022,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57747
+			},
+			{
+				2,
+				17001
+			},
+			{
+				2,
+				17021
+			},
+			{
+				2,
+				17031
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290023] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290003,
+		exp = 138,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 23,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290023,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57747
+			},
+			{
+				2,
+				17001
+			},
+			{
+				2,
+				17021
+			},
+			{
+				2,
+				17031
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290024] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290004,
+		exp = 105,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 21,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290024,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57747
+			},
+			{
+				2,
+				17001
+			},
+			{
+				2,
+				17011
+			},
+			{
+				2,
+				17031
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290025] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290005,
+		exp = 121,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 22,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290025,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57747
+			},
+			{
+				2,
+				17001
+			},
+			{
+				2,
+				17011
+			},
+			{
+				2,
+				17031
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290026] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290006,
+		exp = 138,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 23,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290026,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57747
+			},
+			{
+				2,
+				17001
+			},
+			{
+				2,
+				17011
+			},
+			{
+				2,
+				17031
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290027] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290007,
+		exp = 105,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 21,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290027,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57747
+			},
+			{
+				2,
+				17001
+			},
+			{
+				2,
+				17041
+			},
+			{
+				2,
+				17031
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290028] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290008,
+		exp = 121,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 22,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290028,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57747
+			},
+			{
+				2,
+				17001
+			},
+			{
+				2,
+				17041
+			},
+			{
+				2,
+				17031
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290029] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290009,
+		exp = 138,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 23,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290029,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57747
+			},
+			{
+				2,
+				17001
+			},
+			{
+				2,
+				17041
+			},
+			{
+				2,
+				17031
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290030] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290010,
+		exp = 105,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 21,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290030,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54022
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54011
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290031] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290011,
+		exp = 121,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 22,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290031,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54022
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54011
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290032] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290012,
+		exp = 138,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 23,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290032,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54022
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54011
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290033] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290014,
+		exp = 181,
+		icon = "bossicon",
+		difficulty = 2,
+		level = 25,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290033,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57740
+			},
+			{
+				2,
+				54022
+			},
+			{
+				2,
+				54012
+			},
+			{
+				2,
+				57761
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290041] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290021,
+		exp = 162,
+		icon = "sairenquzhu_i",
+		difficulty = 2,
+		level = 24,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290041,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57740
+			},
+			{
+				2,
+				54022
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290042] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290021,
+		exp = 162,
+		icon = "sairenquzhu_i",
+		difficulty = 2,
+		level = 24,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290042,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57740
+			},
+			{
+				2,
+				54022
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290043] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290210,
+		exp = 162,
+		icon = "sairenquzhu_i",
+		difficulty = 2,
+		level = 24,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290043,
+		scale = 80,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290051] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290031,
+		exp = 155,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 31,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290051,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290052] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290032,
+		exp = 176,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 32,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290052,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290053] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290033,
+		exp = 198,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 33,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290053,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290054] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290034,
+		exp = 155,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 31,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290054,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290055] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290035,
+		exp = 176,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 32,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290055,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290056] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290036,
+		exp = 198,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 33,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290056,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290057] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290037,
+		exp = 155,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 31,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290057,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290058] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290038,
+		exp = 176,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 32,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290058,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290059] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290039,
+		exp = 198,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 33,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290059,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290060] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290040,
+		exp = 155,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 31,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290060,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290061] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290041,
+		exp = 176,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 32,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290061,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290062] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290042,
+		exp = 198,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 33,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290062,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290063] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290043,
+		exp = 254,
+		icon = "bossicon",
+		difficulty = 2,
+		level = 35,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290063,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				20001
+			},
+			{
+				2,
+				59001
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290071] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290031,
+		exp = 155,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 31,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290071,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57748
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17022
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290072] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290032,
+		exp = 176,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 32,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290072,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57748
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17022
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290073] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290033,
+		exp = 198,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 33,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290073,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57748
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17022
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290074] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290034,
+		exp = 155,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 31,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290074,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57748
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17012
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290075] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290035,
+		exp = 176,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 32,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290075,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57748
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17012
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290076] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290036,
+		exp = 198,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 33,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290076,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57748
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17012
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290077] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290037,
+		exp = 155,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 31,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290077,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57748
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17042
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290078] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290038,
+		exp = 176,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 32,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290078,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57748
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17042
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290079] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290039,
+		exp = 198,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 33,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290079,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57748
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17042
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290080] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290040,
+		exp = 155,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 31,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290080,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54022
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290081] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290041,
+		exp = 176,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 32,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290081,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54022
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290082] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290042,
+		exp = 198,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 33,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290082,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54022
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290083] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290044,
+		exp = 254,
+		icon = "bossicon",
+		difficulty = 2,
+		level = 35,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290083,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57741
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				54015
+			},
+			{
+				2,
+				57761
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290091] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290051,
+		exp = 229,
+		icon = "sairenquzhu_i",
+		difficulty = 2,
+		level = 34,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290091,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57741
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290092] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290051,
+		exp = 229,
+		icon = "sairenquzhu_i",
+		difficulty = 2,
+		level = 34,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290092,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57741
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290093] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290053,
+		exp = 229,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 34,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290093,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57741
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290094] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290053,
+		exp = 229,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 34,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290094,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57741
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290095] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290211,
+		exp = 229,
+		icon = "sairenquzhu_i",
+		difficulty = 2,
+		level = 34,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290095,
+		scale = 80,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290096] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290212,
+		exp = 229,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 34,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290096,
+		scale = 80,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290101] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290061,
+		exp = 205,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 41,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290101,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290102] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290062,
+		exp = 231,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 42,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290102,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290103] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290063,
+		exp = 258,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 43,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290103,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290104] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290064,
+		exp = 205,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 41,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290104,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290105] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290065,
+		exp = 231,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 42,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290105,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290106] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290066,
+		exp = 258,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 43,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290106,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290107] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290067,
+		exp = 205,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 41,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290107,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290108] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290068,
+		exp = 231,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 42,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290108,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290109] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290069,
+		exp = 258,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 43,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290109,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290110] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290070,
+		exp = 205,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 41,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290110,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290111] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290071,
+		exp = 231,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 42,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290111,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290112] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290072,
+		exp = 258,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 43,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290112,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290113] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290073,
+		exp = 326,
+		icon = "Vtuber_aqua",
+		difficulty = 2,
+		level = 45,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290113,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				20001
+			},
+			{
+				2,
+				59001
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290121] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290061,
+		exp = 205,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 41,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290121,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57749
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17022
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290122] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290062,
+		exp = 231,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 42,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290122,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57749
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17022
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290123] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290063,
+		exp = 258,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 43,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290123,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57749
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17022
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290124] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290064,
+		exp = 205,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 41,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290124,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57749
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17012
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290125] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290065,
+		exp = 231,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 42,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290125,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57749
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17012
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290126] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290066,
+		exp = 258,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 43,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290126,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57749
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17012
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290127] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290067,
+		exp = 205,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 41,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290127,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57749
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17042
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290128] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290068,
+		exp = 231,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 42,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290128,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57749
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17042
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290129] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290069,
+		exp = 258,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 43,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290129,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57749
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17042
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290130] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290070,
+		exp = 205,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 41,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290130,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290131] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290071,
+		exp = 231,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 42,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290131,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290132] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290072,
+		exp = 258,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 43,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290132,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290133] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290074,
+		exp = 326,
+		icon = "vtuber_mio",
+		difficulty = 2,
+		level = 45,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290133,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57742
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				54015
+			},
+			{
+				2,
+				57761
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290141] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290081,
+		exp = 297,
+		icon = "sairenquzhu_i",
+		difficulty = 2,
+		level = 44,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290141,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57742
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290142] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290081,
+		exp = 297,
+		icon = "sairenquzhu_i",
+		difficulty = 2,
+		level = 44,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290142,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57742
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290143] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290083,
+		exp = 297,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 44,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290143,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57742
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290144] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290083,
+		exp = 297,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 44,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290144,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57742
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290145] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290085,
+		exp = 297,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 44,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290145,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57742
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290146] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290085,
+		exp = 297,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 44,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290146,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57742
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290147] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290213,
+		exp = 297,
+		icon = "sairenquzhu_i",
+		difficulty = 2,
+		level = 44,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290147,
+		scale = 80,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290148] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290214,
+		exp = 297,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 44,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290148,
+		scale = 80,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290149] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 0,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290215,
+		exp = 297,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 44,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290149,
+		scale = 80,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290151] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290091,
+		exp = 280,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 56,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290151,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57750
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17022
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290152] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290092,
+		exp = 313,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 57,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290152,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57750
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17022
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290153] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290093,
+		exp = 348,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 58,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290153,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57750
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17022
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290154] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290094,
+		exp = 280,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 56,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290154,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57750
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17012
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290155] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290095,
+		exp = 313,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 57,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290155,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57750
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17012
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290156] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290096,
+		exp = 348,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 58,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290156,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57750
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17012
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290157] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290097,
+		exp = 280,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 56,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290157,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57750
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17042
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290158] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290098,
+		exp = 313,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 57,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290158,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57750
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17042
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290159] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290099,
+		exp = 348,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 58,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290159,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57750
+			},
+			{
+				2,
+				17002
+			},
+			{
+				2,
+				17042
+			},
+			{
+				2,
+				17032
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290160] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290100,
+		exp = 280,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 56,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290160,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290161] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290101,
+		exp = 313,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 57,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290161,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290162] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290102,
+		exp = 348,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 58,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290162,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54012
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290163] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290103,
+		exp = 435,
+		icon = "vtuber_matsuri",
+		difficulty = 2,
+		level = 60,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290163,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57743
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				54015
+			},
+			{
+				2,
+				57761
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290171] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290091,
+		exp = 280,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 56,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290171,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290172] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290092,
+		exp = 313,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 57,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290172,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290173] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290093,
+		exp = 348,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 58,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290173,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290174] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290094,
+		exp = 280,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 56,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290174,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290175] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290095,
+		exp = 313,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 57,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290175,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290176] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290096,
+		exp = 348,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 58,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290176,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290177] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290097,
+		exp = 280,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 56,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290177,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290178] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290098,
+		exp = 313,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 57,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290178,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290179] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290099,
+		exp = 348,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 58,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290179,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290180] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290100,
+		exp = 280,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 56,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290180,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290181] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290101,
+		exp = 313,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 57,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290181,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290182] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290102,
+		exp = 348,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 58,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290182,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290183] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290104,
+		exp = 435,
+		icon = "vtuber_sora",
+		difficulty = 2,
+		level = 60,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290183,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				20001
+			},
+			{
+				2,
+				59001
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290191] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290111,
+		exp = 398,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 59,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290191,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57743
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290192] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290111,
+		exp = 398,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 59,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290192,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57743
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290193] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290113,
+		exp = 398,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 59,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290193,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57743
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290194] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290113,
+		exp = 398,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 59,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290194,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57743
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290195] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290115,
+		exp = 398,
+		icon = "sairenzhanlie_i",
+		difficulty = 2,
+		level = 59,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290195,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57743
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290196] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290115,
+		exp = 398,
+		icon = "sairenzhanlie_i",
+		difficulty = 2,
+		level = 59,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290196,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57743
+			},
+			{
+				2,
+				54023
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54015
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290197] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290216,
+		exp = 398,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 59,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290197,
+		scale = 80,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290198] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290217,
+		exp = 398,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 59,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290198,
+		scale = 80,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290199] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290218,
+		exp = 398,
+		icon = "sairenzhanlie_i",
+		difficulty = 2,
+		level = 59,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290199,
+		scale = 80,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290201] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290121,
+		exp = 330,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 66,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290201,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57751
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17023
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290202] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290122,
+		exp = 368,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 67,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290202,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57751
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17023
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290203] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290123,
+		exp = 408,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 68,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290203,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57751
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17023
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290204] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290124,
+		exp = 330,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 66,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290204,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57751
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17013
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290205] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290125,
+		exp = 368,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 67,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290205,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57751
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17013
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290206] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290126,
+		exp = 408,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 68,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290206,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57751
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17013
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290207] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290127,
+		exp = 330,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 66,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290207,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57751
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17043
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290208] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290128,
+		exp = 368,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 67,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290208,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57751
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17043
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290209] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290129,
+		exp = 408,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 68,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290209,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57751
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17043
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290210] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290130,
+		exp = 330,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 66,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290210,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54013
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290211] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290131,
+		exp = 368,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 67,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290211,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54013
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290212] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290132,
+		exp = 408,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 68,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290212,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54013
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290213] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290133,
+		exp = 507,
+		icon = "vtuber_shion",
+		difficulty = 2,
+		level = 70,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290213,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57744
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				54016
+			},
+			{
+				2,
+				57761
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290221] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290121,
+		exp = 330,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 66,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290221,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290222] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290122,
+		exp = 368,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 67,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290222,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290223] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290123,
+		exp = 408,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 68,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290223,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290224] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290124,
+		exp = 330,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 66,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290224,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290225] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290125,
+		exp = 368,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 67,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290225,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290226] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290126,
+		exp = 408,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 68,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290226,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290227] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290127,
+		exp = 330,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 66,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290227,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290228] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290128,
+		exp = 368,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 67,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290228,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290229] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290129,
+		exp = 408,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 68,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290229,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290230] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290130,
+		exp = 330,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 66,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290230,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290231] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290131,
+		exp = 368,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 67,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290231,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290232] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290132,
+		exp = 408,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 68,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290232,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290233] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290134,
+		exp = 507,
+		icon = "vtuber_fubuki",
+		difficulty = 2,
+		level = 70,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290233,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				20001
+			},
+			{
+				2,
+				59001
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290241] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290141,
+		exp = 466,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 69,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290241,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57744
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290242] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290141,
+		exp = 466,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 69,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290242,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57744
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290243] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290143,
+		exp = 466,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 69,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290243,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57744
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290244] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290143,
+		exp = 466,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 69,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290244,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57744
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290245] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290145,
+		exp = 466,
+		icon = "sairenzhanlie_i",
+		difficulty = 2,
+		level = 69,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290245,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57744
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290246] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290145,
+		exp = 466,
+		icon = "sairenzhanlie_i",
+		difficulty = 2,
+		level = 69,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290246,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57744
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290247] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290219,
+		exp = 466,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 69,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290247,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57744
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290248] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290220,
+		exp = 466,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 69,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290248,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57744
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290249] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290221,
+		exp = 466,
+		icon = "sairenzhanlie_i",
+		difficulty = 2,
+		level = 69,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290249,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57744
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290251] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290151,
+		exp = 405,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 81,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290251,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57752
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17023
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290252] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290152,
+		exp = 451,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 82,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290252,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57752
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17023
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290253] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290153,
+		exp = 498,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 83,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290253,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57752
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17023
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290254] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290154,
+		exp = 405,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 81,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290254,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57752
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17013
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290255] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290155,
+		exp = 451,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 82,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290255,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57752
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17013
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290256] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290156,
+		exp = 498,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 83,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290256,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57752
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17013
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290257] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290157,
+		exp = 405,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 81,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290257,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57752
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17043
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290258] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290158,
+		exp = 451,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 82,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290258,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57752
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17043
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290259] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290159,
+		exp = 498,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 83,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290259,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57752
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17043
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290260] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290160,
+		exp = 405,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 81,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290260,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54013
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290261] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290161,
+		exp = 451,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 82,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290261,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54013
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290262] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 1,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290162,
+		exp = 498,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 83,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290262,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54013
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290263] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290163,
+		exp = 616,
+		icon = "vtuber_fubuki",
+		difficulty = 2,
+		level = 85,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290263,
+		scale = 130,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57745
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				54016
+			},
+			{
+				2,
+				57761
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {
+			"gongneng",
+			"jiahu",
+			"erchong"
+		}
+	},
+	[1290291] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290171,
+		exp = 567,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 84,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290291,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57745
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290292] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290171,
+		exp = 567,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 84,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290292,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57745
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290293] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290173,
+		exp = 567,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 84,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290293,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57745
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290294] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290173,
+		exp = 567,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 84,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290294,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57745
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290295] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290175,
+		exp = 567,
+		icon = "sairenzhanlie_i",
+		difficulty = 2,
+		level = 84,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290295,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57745
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290296] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290175,
+		exp = 567,
+		icon = "sairenzhanlie_i",
+		difficulty = 2,
+		level = 84,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290296,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57745
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290297] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290177,
+		exp = 567,
+		icon = "sairenhangmu_i",
+		difficulty = 2,
+		level = 84,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290297,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57745
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290298] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290177,
+		exp = 567,
+		icon = "sairenhangmu_i",
+		difficulty = 2,
+		level = 84,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290298,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57745
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290301] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 1,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Reconnaissance Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290181,
+		exp = 475,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 95,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290301,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57753
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17023
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290302] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 2,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Reconnaissance Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290182,
+		exp = 528,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 96,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290302,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57753
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17023
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290303] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 3,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Reconnaissance Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290183,
+		exp = 582,
+		icon = "qzhololive",
+		difficulty = 2,
+		level = 97,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290303,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57753
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17023
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290304] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 4,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Main Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290184,
+		exp = 475,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 95,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290304,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57753
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17013
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290305] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 5,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Main Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290185,
+		exp = 528,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 96,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290305,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57753
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17013
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290306] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 6,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Main Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290186,
+		exp = 582,
+		icon = "zlhololive",
+		difficulty = 2,
+		level = 97,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290306,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57753
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17013
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290307] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 7,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Air formation",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290187,
+		exp = 475,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 95,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290307,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57753
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17043
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290308] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 8,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Air formation",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290188,
+		exp = 528,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 96,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290308,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57753
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17043
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290309] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 9,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Air formation",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290189,
+		exp = 582,
+		icon = "hmhololive",
+		difficulty = 2,
+		level = 97,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290309,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57753
+			},
+			{
+				2,
+				17003
+			},
+			{
+				2,
+				17043
+			},
+			{
+				2,
+				17033
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290310] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 10,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Small Cargo Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290190,
+		exp = 475,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 95,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290310,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54013
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290311] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 11,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Medium Cargo Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290191,
+		exp = 528,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 96,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290311,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54013
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290312] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 12,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Large Cargo Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290192,
+		exp = 582,
+		icon = "yshololive",
+		difficulty = 2,
+		level = 97,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 1,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290312,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54013
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290313] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 50,
+		dungeon_id = 1290193,
+		exp = 725,
+		icon = "Vtuber_aqua",
+		difficulty = 2,
+		level = 100,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290313,
+		scale = 100,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57746
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				54016
+			},
+			{
+				2,
+				57761
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290321] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 2,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290201,
+		exp = 668,
+		icon = "sairenqingxun_i",
+		difficulty = 2,
+		level = 99,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290321,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57746
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290322] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290202,
+		exp = 668,
+		icon = "sairenzhongxun_i",
+		difficulty = 2,
+		level = 99,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290322,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57746
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290323] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290203,
+		exp = 668,
+		icon = "sairenzhanlie_i",
+		difficulty = 2,
+		level = 99,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290323,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57746
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1290324] = {
+		sink_limit = 1,
+		ai = 3,
+		guide_desc = "",
+		type = 98,
+		ai_mov = 3,
+		add_icon = "",
+		name = "Elite Fleet",
+		exp_commander = 2,
+		time_limit = 120,
+		exp_commander_ratio = 30,
+		dungeon_id = 1290204,
+		exp = 668,
+		icon = "sairenhangmu_i",
+		difficulty = 2,
+		level = 99,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1290324,
+		scale = 80,
+		award_display = {
+			{
+				2,
+				56500
+			},
+			{
+				2,
+				57746
+			},
+			{
+				2,
+				54024
+			},
+			{
+				2,
+				59001
+			},
+			{
+				2,
+				54016
+			}
+		},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			120
+		},
+		bufficon = {}
+	},
+	[1291301] = {
+		sink_limit = 1,
+		ai = 0,
+		guide_desc = "",
+		type = 99,
+		ai_mov = 0,
+		add_icon = "",
+		name = "Enemy Flagship",
+		exp_commander = 0,
+		time_limit = 150,
+		exp_commander_ratio = 0,
+		dungeon_id = 1291301,
+		exp = 0,
+		icon = "vtuber_fubuki",
+		difficulty = 2,
+		level = 120,
+		map_id = 50040,
+		limit_type = 1,
+		icon_type = 2,
+		effect_prefab = "",
+		plot_type = 0,
+		id = 1291301,
+		scale = 100,
+		award_display = {},
+		objective_1 = {
+			1
+		},
+		objective_2 = {
+			2
+		},
+		objective_3 = {
+			5,
+			150
+		},
+		bufficon = {}
+	},
 	[5000020] = {
 		sink_limit = 1,
 		ai = 3,
@@ -266547,6 +276574,7 @@ pg.expedition_data_template = {
 		6000,
 		6001,
 		6002,
+		9801,
 		80000,
 		80001,
 		80002,
@@ -271001,6 +281029,211 @@ pg.expedition_data_template = {
 		1270074,
 		1270081,
 		1270082,
+		1290001,
+		1290002,
+		1290003,
+		1290004,
+		1290005,
+		1290006,
+		1290007,
+		1290008,
+		1290009,
+		1290010,
+		1290011,
+		1290012,
+		1290013,
+		1290021,
+		1290022,
+		1290023,
+		1290024,
+		1290025,
+		1290026,
+		1290027,
+		1290028,
+		1290029,
+		1290030,
+		1290031,
+		1290032,
+		1290033,
+		1290041,
+		1290042,
+		1290043,
+		1290051,
+		1290052,
+		1290053,
+		1290054,
+		1290055,
+		1290056,
+		1290057,
+		1290058,
+		1290059,
+		1290060,
+		1290061,
+		1290062,
+		1290063,
+		1290071,
+		1290072,
+		1290073,
+		1290074,
+		1290075,
+		1290076,
+		1290077,
+		1290078,
+		1290079,
+		1290080,
+		1290081,
+		1290082,
+		1290083,
+		1290091,
+		1290092,
+		1290093,
+		1290094,
+		1290095,
+		1290096,
+		1290101,
+		1290102,
+		1290103,
+		1290104,
+		1290105,
+		1290106,
+		1290107,
+		1290108,
+		1290109,
+		1290110,
+		1290111,
+		1290112,
+		1290113,
+		1290121,
+		1290122,
+		1290123,
+		1290124,
+		1290125,
+		1290126,
+		1290127,
+		1290128,
+		1290129,
+		1290130,
+		1290131,
+		1290132,
+		1290133,
+		1290141,
+		1290142,
+		1290143,
+		1290144,
+		1290145,
+		1290146,
+		1290147,
+		1290148,
+		1290149,
+		1290151,
+		1290152,
+		1290153,
+		1290154,
+		1290155,
+		1290156,
+		1290157,
+		1290158,
+		1290159,
+		1290160,
+		1290161,
+		1290162,
+		1290163,
+		1290171,
+		1290172,
+		1290173,
+		1290174,
+		1290175,
+		1290176,
+		1290177,
+		1290178,
+		1290179,
+		1290180,
+		1290181,
+		1290182,
+		1290183,
+		1290191,
+		1290192,
+		1290193,
+		1290194,
+		1290195,
+		1290196,
+		1290197,
+		1290198,
+		1290199,
+		1290201,
+		1290202,
+		1290203,
+		1290204,
+		1290205,
+		1290206,
+		1290207,
+		1290208,
+		1290209,
+		1290210,
+		1290211,
+		1290212,
+		1290213,
+		1290221,
+		1290222,
+		1290223,
+		1290224,
+		1290225,
+		1290226,
+		1290227,
+		1290228,
+		1290229,
+		1290230,
+		1290231,
+		1290232,
+		1290233,
+		1290241,
+		1290242,
+		1290243,
+		1290244,
+		1290245,
+		1290246,
+		1290247,
+		1290248,
+		1290249,
+		1290251,
+		1290252,
+		1290253,
+		1290254,
+		1290255,
+		1290256,
+		1290257,
+		1290258,
+		1290259,
+		1290260,
+		1290261,
+		1290262,
+		1290263,
+		1290291,
+		1290292,
+		1290293,
+		1290294,
+		1290295,
+		1290296,
+		1290297,
+		1290298,
+		1290301,
+		1290302,
+		1290303,
+		1290304,
+		1290305,
+		1290306,
+		1290307,
+		1290308,
+		1290309,
+		1290310,
+		1290311,
+		1290312,
+		1290313,
+		1290321,
+		1290322,
+		1290323,
+		1290324,
+		1291301,
 		5000020,
 		5000021,
 		5000022,

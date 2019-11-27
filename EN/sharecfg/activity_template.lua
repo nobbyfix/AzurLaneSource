@@ -9401,6 +9401,688 @@ pg.activity_template = {
 			}
 		}
 	},
+	[30271] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 13,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 30271,
+		config_data = {
+			15135,
+			15136,
+			15137,
+			15138,
+			15139,
+			15140,
+			15141,
+			15142,
+			15143,
+			15144,
+			15151,
+			15152,
+			15153,
+			15154,
+			15155,
+			15156
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[30272] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 36,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 30272,
+		config_data = {
+			1291301,
+			5000,
+			50,
+			0.36,
+			0.6,
+			10
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					17
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[30273] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 16,
+		login_pop = 0,
+		config_id = 138,
+		is_show = 0,
+		config_data = "100",
+		config_client = "",
+		bg = "",
+		id = 30273,
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					17
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[30274] = {
+		mark = 20191121,
+		title_res_tag = "hololive_llk",
+		type = 61,
+		login_pop = 0,
+		config_id = 1,
+		is_show = 40,
+		config_client = "",
+		bg = "",
+		id = 30274,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[30275] = {
+		mark = 20191121,
+		title_res_tag = "hololive_pt",
+		type = 54,
+		login_pop = 0,
+		config_id = 30275,
+		is_show = 38,
+		id = 30275,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					17
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/activity_bg_hololive_pt"
+		},
+		config_client = {
+			scrollStr = "<color=#3689C3>We're still busy trying to blow up this building. Keep working on getting us more TNT, Commander~         </color>"
+		}
+	},
+	[30276] = {
+		mark = 20191121,
+		title_res_tag = "hololive_llk",
+		type = 57,
+		login_pop = 0,
+		config_id = 3,
+		is_show = 0,
+		config_client = "",
+		id = 30276,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/activity_bg_hololive_llk"
+		}
+	},
+	[30277] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 21,
+		login_pop = 0,
+		config_id = 92132,
+		is_show = 0,
+		bg = "",
+		id = 30277,
+		config_data = {
+			70039,
+			70040,
+			70041,
+			70042,
+			70043,
+			70044,
+			70045,
+			70046,
+			70047
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					17
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			story = "HOLORICHANG10"
+		}
+	},
+	[30278] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 13,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 30278,
+		config_data = {
+			15158,
+			15159,
+			15160,
+			15161,
+			15162,
+			15163,
+			15164,
+			15165,
+			15166
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[30279] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 14,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		bg = "",
+		id = 30279,
+		config_data = {
+			993,
+			994,
+			995,
+			996,
+			997,
+			998,
+			999,
+			1000,
+			1001,
+			1002,
+			1003,
+			1004,
+			1005,
+			1006,
+			1008,
+			1009,
+			1010,
+			1011,
+			1012,
+			1013,
+			1014,
+			1015
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					17
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			"commonbg/bg_pt_hololive",
+			{
+				0.176,
+				0.164,
+				0.274,
+				1
+			},
+			painting = "xiaseji_pt",
+			pt_id = 138,
+			enter = {
+				"enter",
+				"Welcome to the Hololive Resistance commissary. What can we do for you?"
+			},
+			purchase = {
+				"purchase",
+				"Thank you for your patronage."
+			}
+		}
+	},
+	[30280] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 27,
+		login_pop = 0,
+		config_id = 1,
+		is_show = 0,
+		config_data = "[{31985,100}]",
+		config_client = "",
+		bg = "",
+		id = 30280,
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[30281] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 13,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		bg = "",
+		id = 30281,
+		config_data = {
+			15157
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			npc = {
+				"HOLOGUANQIA1",
+				15157
+			}
+		}
+	},
+	[30282] = {
+		mark = 20191121,
+		title_res_tag = "dashenling_pt",
+		type = 54,
+		login_pop = 0,
+		config_id = 30282,
+		is_show = 39,
+		id = 30282,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/activity_bg_dashenling_pt"
+		},
+		config_client = {
+			story = {
+				{},
+				{},
+				{
+					"HOLORICHANG7"
+				},
+				{},
+				{
+					"HOLORICHANG8"
+				},
+				{},
+				{
+					"HOLORICHANG9"
+				}
+			}
+		}
+	},
+	[30283] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 1,
+		login_pop = 0,
+		config_id = 4,
+		is_show = 0,
+		bg = "",
+		id = 30283,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			stageid = 9801
+		}
+	},
+	[30284] = {
+		mark = 20191121,
+		title_res_tag = "zhuyemian",
+		type = 12,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 41,
+		config_client = "",
+		id = 30284,
+		config_data = {
+			1290001,
+			1290002,
+			1290003,
+			1290004,
+			1290005,
+			1290006,
+			1290007,
+			1290008,
+			1290009,
+			1290010,
+			1290011,
+			1290031,
+			1290041
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/activity_bg_zhuyemian"
+		}
+	},
 	[30500] = {
 		mark = 20181030,
 		title_res_tag = "",
@@ -10293,6 +10975,20 @@ pg.activity_template = {
 		30268,
 		30269,
 		30270,
+		30271,
+		30272,
+		30273,
+		30274,
+		30275,
+		30276,
+		30277,
+		30278,
+		30279,
+		30280,
+		30281,
+		30282,
+		30283,
+		30284,
 		30500,
 		30501,
 		30502,

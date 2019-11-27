@@ -225,6 +225,16 @@ pg.player_resource = {
 		name = "ouxiang_pt",
 		itemid = 59143
 	},
+	[138] = {
+		id = 138,
+		name = "hololive_pt",
+		itemid = 59144
+	},
+	[139] = {
+		id = 139,
+		name = "dashenling_pt",
+		itemid = 59145
+	},
 	[950] = {
 		id = 950,
 		name = "yisegefuke_pt1",
@@ -265,6 +275,12 @@ pg.player_resource = {
 		},
 		yisegefuke_pt1 = {
 			950
+		},
+		dashenling_pt = {
+			139
+		},
+		hololive_pt = {
+			138
 		},
 		ouxiang_pt = {
 			137
@@ -448,6 +464,8 @@ pg.player_resource = {
 		135,
 		136,
 		137,
+		138,
+		139,
 		950,
 		1001,
 		2001,

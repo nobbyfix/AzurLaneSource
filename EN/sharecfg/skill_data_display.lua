@@ -576,6 +576,22 @@ pg.skill_data_display = {
 		id = 8643,
 		name = "Suruga Fleet IV"
 	},
+	[8652] = {
+		id = 8652,
+		name = "塞壬供能装置"
+	},
+	[8653] = {
+		id = 8653,
+		name = "二重存在"
+	},
+	[8654] = {
+		id = 8654,
+		name = "白狐的加护"
+	},
+	[8655] = {
+		id = 8655,
+		name = "万组的羁绊"
+	},
 	[9010] = {
 		id = 9010,
 		name = "Eastern Bonds"
@@ -3220,6 +3236,138 @@ pg.skill_data_display = {
 		id = 104080,
 		name = "Coercion Assistance Mode"
 	},
+	[105010] = {
+		id = 105010,
+		name = "Mach 2.42 Blossom"
+	},
+	[105020] = {
+		id = 105020,
+		name = "Two-Faced Fox"
+	},
+	[105021] = {
+		id = 105021,
+		name = "Two-Faced Fox"
+	},
+	[105030] = {
+		id = 105030,
+		name = "Dream☆Story"
+	},
+	[105040] = {
+		id = 105040,
+		name = "Beneath the Deep Blue Sky"
+	},
+	[105041] = {
+		id = 105041,
+		name = "Beneath the Deep Blue Sky"
+	},
+	[105050] = {
+		id = 105050,
+		name = "Shutin Maid"
+	},
+	[105051] = {
+		id = 105051,
+		name = "Shutin Maid"
+	},
+	[105060] = {
+		id = 105060,
+		name = "Fallen (Hopeless) Angel"
+	},
+	[105061] = {
+		id = 105061,
+		name = "Angel's Voice - Offense"
+	},
+	[105062] = {
+		id = 105062,
+		name = "Angel's Voice - Defense"
+	},
+	[105063] = {
+		id = 105063,
+		name = "Angel's Voice - Evasion"
+	},
+	[105064] = {
+		id = 105064,
+		name = "Angel's Voice - Accuracy"
+	},
+	[105065] = {
+		id = 105065,
+		name = "Angel's Voice - Healing"
+	},
+	[105070] = {
+		id = 105070,
+		name = "Promise to the Sunflower"
+	},
+	[105071] = {
+		id = 105071,
+		name = "Promise to the Sunflower"
+	},
+	[105080] = {
+		id = 105080,
+		name = "The Summer Flower We Watch"
+	},
+	[105090] = {
+		id = 105090,
+		name = "Cheating on the Third Day"
+	},
+	[105100] = {
+		id = 105100,
+		name = "Nakiri☆The☆Demon"
+	},
+	[105101] = {
+		id = 105101,
+		name = "Failed to enhance..."
+	},
+	[105110] = {
+		id = 105110,
+		name = "Demon Cutter Asura-Rakshasa"
+	},
+	[105120] = {
+		id = 105120,
+		name = "The Wave of a Pleasant Dream"
+	},
+	[105131] = {
+		id = 105131,
+		name = "MP 2/3"
+	},
+	[105132] = {
+		id = 105132,
+		name = "MP Burst - Explosion"
+	},
+	[105133] = {
+		id = 105133,
+		name = "MP 1/3"
+	},
+	[105140] = {
+		id = 105140,
+		name = "Wild Dualism"
+	},
+	[105141] = {
+		id = 105141,
+		name = "Wild Dualism"
+	},
+	[105150] = {
+		id = 105150,
+		name = "Tarot Card Divination"
+	},
+	[105151] = {
+		id = 105151,
+		name = "AA INCREASED!"
+	},
+	[105152] = {
+		id = 105152,
+		name = "RLD INCREASED!"
+	},
+	[105153] = {
+		id = 105153,
+		name = "ATK INCREASED!"
+	},
+	[105154] = {
+		id = 105154,
+		name = "BOOST!"
+	},
+	[105155] = {
+		id = 105155,
+		name = "Divining…"
+	},
 	all = {
 		4,
 		10,
@@ -3365,6 +3513,10 @@ pg.skill_data_display = {
 		8641,
 		8642,
 		8643,
+		8652,
+		8653,
+		8654,
+		8655,
 		9010,
 		9020,
 		9030,
@@ -4025,7 +4177,40 @@ pg.skill_data_display = {
 		104060,
 		104070,
 		104071,
-		104080
+		104080,
+		105010,
+		105020,
+		105021,
+		105030,
+		105040,
+		105041,
+		105050,
+		105051,
+		105060,
+		105061,
+		105062,
+		105063,
+		105064,
+		105065,
+		105070,
+		105071,
+		105080,
+		105090,
+		105100,
+		105101,
+		105110,
+		105120,
+		105131,
+		105132,
+		105133,
+		105140,
+		105141,
+		105150,
+		105151,
+		105152,
+		105153,
+		105154,
+		105155
 	}
 }
 

@@ -1,6 +1,6 @@
 slot0 = class("SpineAnimationGroup")
 slot1 = import("view.util.ReturnSpineRequestPackage")
-slot2 = import("view.util.LoadSpineRequestPackage")
+slot2 = import("view.util.GetSpineRequestPackage")
 
 slot0.Ctor = function (slot0, slot1)
 	slot0.name = nil

@@ -68,7 +68,7 @@ return {
 					triggerParam = {},
 					spawn = {
 						{
-							monsterTemplateID = 409,
+							monsterTemplateID = 999409,
 							reinforceDelay = 3,
 							score = 0,
 							delay = 0,
@@ -80,7 +80,7 @@ return {
 							}
 						},
 						{
-							monsterTemplateID = 409,
+							monsterTemplateID = 999409,
 							score = 0,
 							delay = 0,
 							moveCast = true,
@@ -105,7 +105,7 @@ return {
 							}
 						},
 						{
-							monsterTemplateID = 409,
+							monsterTemplateID = 999409,
 							score = 0,
 							delay = 0,
 							moveCast = true,

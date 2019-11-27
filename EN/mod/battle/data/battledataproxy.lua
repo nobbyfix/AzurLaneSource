@@ -15,6 +15,8 @@ slot8.Ctor = function (slot0)
 end
 
 slot8.InitBattle = function (slot0, slot1)
+	slot0.Update = slot0.updateInit
+
 	slot0:SetupCalculateDamage()
 	slot0:SetupDamageKamikazeAir()
 	slot0:SetupDamageKamikazeShip()
@@ -34,6 +36,14 @@ end
 
 slot8.Start = function (slot0)
 	slot0._startTimeStamp = pg.TimeMgr.GetInstance():GetCombatTime()
+end
+
+slot8.TriggerBattleInitBuffs = function (slot0)
+	for slot4, slot5 in pairs(slot0._fleetList) do
+		for slot10, slot11 in ipairs(slot6) do
+			slot11:TriggerBuff(slot0.BuffEffectType.ON_INIT_GAME)
+		end
+	end
 end
 
 slot8.TirggerBattleStartBuffs = function (slot0)
@@ -148,6 +158,64 @@ slot8.InitData = function (slot0, slot1)
 
 	slot0._cldSystem = slot3.Battle.BattleCldSystem.New(slot0)
 	slot0._cameraUtil = slot3.Battle.BattleCameraUtil.GetInstance()
+
+	slot0:initBGM()
+end
+
+slot8.initBGM = function (slot0)
+	slot0._initBGMList = {}
+	slot0._otherBGMList = {}
+	slot1 = {}
+	slot2 = {}
+
+	local function slot3(slot0)
+		for slot4, slot5 in ipairs(slot0) do
+			slot6 = {}
+
+			if slot5.skills then
+				for slot10, slot11 in ipairs(slot5.skills) do
+					table.insert(slot6, slot11)
+				end
+			end
+
+			if slot5.equipment then
+				for slot11, slot12 in ipairs(slot7) do
+					slot6[slot12] = {
+						level = 1,
+						id = slot12
+					}
+				end
+			end
+
+			for slot11, slot12 in pairs(slot0.GetSongList(slot6).initList) do
+				slot1[slot11] = true
+			end
+
+			for slot11, slot12 in pairs(slot7.otherList) do
+				slot2[slot11] = true
+			end
+		end
+	end
+
+	slot3(slot0._battleInitData.MainUnitList)
+	slot3(slot0._battleInitData.VanguardUnitList)
+	slot3(slot0._battleInitData.SubUnitList)
+
+	if slot0._battleInitData.RivalMainUnitList then
+		slot3(slot0._battleInitData.RivalMainUnitList)
+	end
+
+	if slot0._battleInitData.RivalVanguardUnitList then
+		slot3(slot0._battleInitData.RivalVanguardUnitList)
+	end
+
+	for slot7, slot8 in pairs(slot1) do
+		table.insert(slot0._initBGMList, slot7)
+	end
+
+	for slot7, slot8 in pairs(slot2) do
+		table.insert(slot0._otherBGMList, slot7)
+	end
 end
 
 slot8.initCommanderBuff = function (slot0)
@@ -366,6 +434,14 @@ slot8.GetWinningStreak = function (slot0)
 	return slot0._chapterWinningStreak
 end
 
+slot8.GetBGMList = function (slot0, slot1)
+	if not slot1 then
+		return slot0._initBGMList
+	else
+		return slot0._otherBGMList
+	end
+end
+
 slot8.GetDungeonLevel = function (slot0)
 	return slot0._dungeonLevel
 end
@@ -386,9 +462,17 @@ slot8.GetRepressLevel = function (slot0)
 	return slot0._repressLevel
 end
 
-slot8.checkCld = true
+slot8.updateInit = function (slot0, slot1)
+	slot0:TriggerBattleInitBuffs()
 
-slot8.Update = function (slot0, slot1)
+	slot0.checkCld = true
+
+	slot0:updateLoop(slot1)
+
+	slot0.Update = slot0.updateLoop
+end
+
+slot8.updateLoop = function (slot0, slot1)
 	slot0.FrameIndex = slot0.FrameIndex + 1
 
 	slot0:UpdateCountDown(slot1)
@@ -1319,10 +1403,10 @@ slot8.generatePlayerUnit = function (slot0, slot1, slot2, slot3, slot4)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 92-117, warpins: 3 ---
+	--- BLOCK #4 92-115, warpins: 3 ---
 	slot10:SetPosition(slot3)
 	slot3.InitUnitSkill(slot1, slot10)
-	slot3.InitEquipSkill(slot1.equipment, slot10, Ship.WEAPON_COUNT)
+	slot3.InitEquipSkill(slot1.equipment, slot10)
 	slot3.InitCommanderSkill(slot4, slot10)
 	slot10:SetGearScore(slot1.shipGS)
 

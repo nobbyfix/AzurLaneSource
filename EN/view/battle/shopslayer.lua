@@ -446,36 +446,54 @@ function slot1(slot0)
 
 			function slot13(slot0)
 				if slot0 then
-					slot1 = slot0
+					slot1 = print
+					slot2 = slot0
+					slot2 = slot2.activityId
+
+					slot1(slot2)
+
+					slot1 = slot1
 					slot2 = slot1
 					slot1 = slot1.clearShipWord
 
 					slot1(slot2)
 
-					slot1 = slot0
+					slot1 = slot1
+					slot1 = slot1.activityShops
+					slot2 = slot0
+					slot2 = slot2.activityId
+					slot1 = slot1[slot2]
 					slot2 = slot1
-					slot2 = slot2.TYPE_ACTIVITY
-					slot1.curPage = slot2
-					slot1 = slot0
-					slot2 = slot1
-					slot1 = slot1.intActivityShop
 					slot3 = slot2
-					slot3 = slot3.activityId
+					slot2 = slot2.PlayActivityShopEnterVoice
+					slot4 = slot1
 
-					slot1(slot2, slot3)
+					slot2(slot3, slot4)
 
-					slot1 = slot0
 					slot2 = slot1
-					slot1 = slot1.updatePainting
-					slot3 = slot1
+					slot3 = slot2
 					slot3 = slot3.TYPE_ACTIVITY
-					slot4 = slot2
+					slot2.curPage = slot3
+					slot2 = slot1
+					slot3 = slot2
+					slot2 = slot2.intActivityShop
+					slot4 = slot0
 					slot4 = slot4.activityId
 
-					slot1(slot2, slot3, slot4)
+					slot2(slot3, slot4)
+
+					slot2 = slot1
+					slot3 = slot2
+					slot2 = slot2.updatePainting
+					slot4 = slot2
+					slot4 = slot4.TYPE_ACTIVITY
+					slot5 = slot0
+					slot5 = slot5.activityId
+
+					slot2(slot3, slot4, slot5)
 				else
 					slot1 = setActive
-					slot2 = slot0
+					slot2 = slot1
 					slot2 = slot2.biliBg
 					slot3 = false
 
@@ -1291,69 +1309,140 @@ function slot1(slot0, slot1, slot2, slot3)
 			slot0.wordTweenId = slot4
 		end
 
-		slot4 = 0.3
-		slot5 = 3
-		slot6 = setActive
-		slot7 = slot0.chat
-		slot8 = true
-
-		slot6(slot7, slot8)
-
-		slot6 = nil
-		slot8 = slot0
-		slot7 = slot0.randomShipWord
-		slot9 = slot1
-		slot7, slot8 = slot7(slot8, slot9)
-		slot6 = slot8
-		slot1 = slot7
-		slot7 = setText
-		slot8 = slot0.chatText
-		slot9 = slot1
-
-		slot7(slot8, slot9)
+		slot4 = nil
+		slot6 = slot0
+		slot5 = slot0.randomShipWord
+		slot7 = slot1
+		slot5, slot6 = slot5(slot6, slot7)
+		slot4 = slot6
+		slot1 = slot5
 
 		if slot3 then
-			slot8 = slot0
-			slot7 = slot0.playCV
-			slot9 = slot3
-			slot10 = "_"
-			slot11 = slot6
-			slot9 = slot9 .. slot10 .. slot11
+			slot6 = slot0
+			slot5 = slot0.playCV
+			slot7 = slot3
+			slot8 = "_"
+			slot9 = slot4
+			slot7 = slot7 .. slot8 .. slot9
 
-			slot7(slot8, slot9)
+			slot5(slot6, slot7)
 		end
 
-		slot7 = LeanTween
-		slot7 = slot7.scale
-		slot8 = slot0.chat
-		slot8 = slot8.gameObject
-		slot9 = Vector3
-		slot9 = slot9.New
-		slot10 = 1
-		slot11 = 1
-		slot12 = 1
-		slot9 = slot9(slot10, slot11, slot12)
-		slot10 = slot4
-		slot7 = slot7(slot8, slot9, slot10)
-		slot8 = slot7
-		slot7 = slot7.setFrom
-		slot9 = Vector3
-		slot9 = slot9.New
-		slot10 = 0
-		slot11 = 0
-		slot12 = 0
-		slot7 = slot7(slot8, slot9(slot10, slot11, slot12))
-		slot8 = slot7
-		slot7 = slot7.setEase
-		slot9 = LeanTweenType
-		slot9 = slot9.easeOutBack
-		slot7 = slot7(slot8, slot9)
-		slot8 = slot7
-		slot7 = slot7.setOnComplete
-		slot9 = System
-		slot9 = slot9.Action
+		slot6 = slot0
+		slot5 = slot0.ShowShipWord
+		slot7 = slot1
 
-		function slot10()
+		slot5(slot6, slot7)
+	end
+end
+
+slot0.showRandomShipWord = slot1
+
+function slot1(slot0, slot1)
+	slot2 = slot0.wordTweenId
+
+	if slot2 then
+		slot2 = LeanTween
+		slot2 = slot2.cancel
+		slot3 = slot0.wordTweenId
+
+		slot2(slot3)
+
+		slot2 = nil
+		slot0.wordTweenId = slot2
+	end
+
+	slot2 = 0.3
+	slot3 = 3
+	slot4 = setActive
+	slot5 = slot0.chat
+	slot6 = true
+
+	slot4(slot5, slot6)
+
+	slot4 = setText
+	slot5 = slot0.chatText
+	slot6 = slot1
+
+	slot4(slot5, slot6)
+
+	slot4 = LeanTween
+	slot4 = slot4.scale
+	slot5 = slot0.chat
+	slot5 = slot5.gameObject
+	slot6 = Vector3
+	slot6 = slot6.New
+	slot7 = 1
+	slot8 = 1
+	slot9 = 1
+	slot6 = slot6(slot7, slot8, slot9)
+	slot7 = slot2
+	slot4 = slot4(slot5, slot6, slot7)
+	slot5 = slot4
+	slot4 = slot4.setFrom
+	slot6 = Vector3
+	slot6 = slot6.New
+	slot7 = 0
+	slot8 = 0
+	slot9 = 0
+	slot4 = slot4(slot5, slot6(slot7, slot8, slot9))
+	slot5 = slot4
+	slot4 = slot4.setEase
+	slot6 = LeanTweenType
+	slot6 = slot6.easeOutBack
+	slot4 = slot4(slot5, slot6)
+	slot5 = slot4
+	slot4 = slot4.setOnComplete
+	slot6 = System
+	slot6 = slot6.Action
+
+	function slot7()
+		slot0 = IsNil
+		slot1 = slot0
+		slot1 = slot1.chat
+		slot0 = slot0(slot1)
+
+		if slot0 then
+			return
+		end
+
+		slot0 = slot0
+		slot1 = LeanTween
+		slot1 = slot1.scale
+		slot2 = slot0
+		slot2 = slot2.chat
+		slot2 = slot2.gameObject
+		slot3 = Vector3
+		slot3 = slot3.New
+		slot4 = 0
+		slot5 = 0
+		slot6 = 1
+		slot3 = slot3(slot4, slot5, slot6)
+		slot4 = slot1
+		slot1 = slot1(slot2, slot3, slot4)
+		slot2 = slot1
+		slot1 = slot1.setFrom
+		slot3 = Vector3
+		slot3 = slot3.New
+		slot4 = 1
+		slot5 = 1
+		slot6 = 1
+		slot1 = slot1(slot2, slot3(slot4, slot5, slot6))
+		slot2 = slot1
+		slot1 = slot1.setEase
+		slot3 = LeanTweenType
+		slot3 = slot3.easeInBack
+		slot1 = slot1(slot2, slot3)
+		slot2 = slot1
+		slot1 = slot1.setDelay
+		slot3 = slot2
+		slot1 = slot1(slot2, slot3)
+		slot2 = slot1
+		slot1 = slot1.setOnComplete
+		slot3 = System
+		slot3 = slot3.Action
+
+		function slot4()
 			slot0 = IsNil
 			slot1 = slot0
 			slot1 = slot1.chat
@@ -1364,70 +1453,23 @@ function slot1(slot0, slot1, slot2, slot3)
 			end
 
 			slot0 = slot0
-			slot1 = LeanTween
-			slot1 = slot1.scale
-			slot2 = slot0
-			slot2 = slot2.chat
-			slot2 = slot2.gameObject
-			slot3 = Vector3
-			slot3 = slot3.New
-			slot4 = 0
-			slot5 = 0
-			slot6 = 1
-			slot3 = slot3(slot4, slot5, slot6)
-			slot4 = slot1
-			slot1 = slot1(slot2, slot3, slot4)
-			slot2 = slot1
-			slot1 = slot1.setFrom
-			slot3 = Vector3
-			slot3 = slot3.New
-			slot4 = 1
-			slot5 = 1
-			slot6 = 1
-			slot1 = slot1(slot2, slot3(slot4, slot5, slot6))
-			slot2 = slot1
-			slot1 = slot1.setEase
-			slot3 = LeanTweenType
-			slot3 = slot3.easeInBack
-			slot1 = slot1(slot2, slot3)
-			slot2 = slot1
-			slot1 = slot1.setDelay
-			slot3 = slot2
-			slot1 = slot1(slot2, slot3)
-			slot2 = slot1
-			slot1 = slot1.setOnComplete
-			slot3 = System
-			slot3 = slot3.Action
+			slot1 = slot0
+			slot0 = slot0.clearShipWord
 
-			function slot4()
-				slot0 = IsNil
-				slot1 = slot0
-				slot1 = slot1.chat
-				slot0 = slot0(slot1)
-
-				if slot0 then
-					return
-				end
-
-				slot0 = slot0
-				slot1 = slot0
-				slot0 = slot0.clearShipWord
-
-				slot0(slot1)
-			end
-
-			slot1 = slot1(slot2, slot3(slot4))
-			slot1 = slot1.uniqueId
-			slot0.wordTweenId = slot1
+			slot0(slot1)
 		end
 
-		slot7 = slot7(slot8, slot9(slot10))
-		slot7 = slot7.uniqueId
-		slot0.wordTweenId = slot7
+		slot1 = slot1(slot2, slot3(slot4))
+		slot1 = slot1.uniqueId
+		slot0.wordTweenId = slot1
 	end
+
+	slot4 = slot4(slot5, slot6(slot7))
+	slot4 = slot4.uniqueId
+	slot0.wordTweenId = slot4
 end
 
-slot0.showRandomShipWord = slot1
+slot0.ShowShipWord = slot1
 
 function slot1(slot0, slot1)
 	slot2 = "event:/cv/shop/"
@@ -4028,7 +4070,89 @@ end
 
 slot0.updateEscortRes = slot3
 
+function slot3(slot0, slot1)
+	slot3 = slot1
+	slot2 = slot1.GetEnterVoice
+	slot2, slot3 = slot2(slot3)
+
+	if slot2 then
+		slot5 = slot0
+		slot4 = slot0.playCV
+		slot6 = slot2
+
+		slot4(slot5, slot6)
+	end
+
+	if slot3 then
+		slot5 = slot0
+		slot4 = slot0.ShowShipWord
+		slot6 = slot3
+
+		slot4(slot5, slot6)
+	end
+end
+
+slot0.PlayActivityShopEnterVoice = slot3
+
+function slot3(slot0, slot1)
+	slot3 = slot1
+	slot2 = slot1.GetPurchaseVoice
+	slot2, slot3 = slot2(slot3)
+
+	if slot2 then
+		slot5 = slot0
+		slot4 = slot0.playCV
+		slot6 = slot2
+
+		slot4(slot5, slot6)
+	end
+
+	if slot3 then
+		slot5 = slot0
+		slot4 = slot0.ShowShipWord
+		slot6 = slot3
+
+		slot4(slot5, slot6)
+	end
+end
+
+slot0.PlayActivityShopPurchaseVoice = slot3
+
+function slot3(slot0, slot1)
+	slot2 = nil
+	slot3 = pairs
+	slot4 = slot0.activityShops
+	slot3, slot4, slot5 = slot3(slot4)
+
+	for slot6, slot7 in slot3, slot4, slot5 do
+		slot8 = slot7.activityId
+
+		if slot8 == slot1 then
+			shop = slot7
+
+			break
+		end
+	end
+
+	slot3 = shop
+
+	if slot3 then
+		slot4 = slot0
+		slot3 = slot0.PlayActivityShopPurchaseVoice
+		slot5 = shop
+
+		slot3(slot4, slot5)
+	end
+end
+
+slot0.OnActivtyShopPurchaseDone = slot3
+
 function slot3(slot0)
+	slot2 = slot0
+	slot1 = slot0.stopCV
+
+	slot1(slot2)
+
 	slot1 = ipairs
 	slot2 = slot0.cards
 	slot1, slot2, slot3 = slot1(slot2)
