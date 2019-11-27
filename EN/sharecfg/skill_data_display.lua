@@ -578,19 +578,19 @@ pg.skill_data_display = {
 	},
 	[8652] = {
 		id = 8652,
-		name = "塞壬供能装置"
+		name = "Siren Charging Device"
 	},
 	[8653] = {
 		id = 8653,
-		name = "二重存在"
+		name = "Two-Faced Fox"
 	},
 	[8654] = {
 		id = 8654,
-		name = "白狐的加护"
+		name = "White Fox's Divine Protection"
 	},
 	[8655] = {
 		id = 8655,
-		name = "万组的羁绊"
+		name = "Gammadion Gang's Bond"
 	},
 	[9010] = {
 		id = 9010,

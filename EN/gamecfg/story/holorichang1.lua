@@ -475,7 +475,7 @@ return {
 			}
 		},
 		{
-			actorName = "众人",
+			actorName = "Everyone",
 			side = 2,
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",

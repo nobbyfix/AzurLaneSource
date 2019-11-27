@@ -206,7 +206,7 @@ slot0.updateTaskPanel = function (slot0)
 
 
 	end)
-	setText(slot0.dayText, slot0.progressStep .. "/" .. slot0.configData.total_num)
+	setText(slot0.dayText, slot0.progressStep .. " / " .. slot0.configData.total_num)
 
 	slot0.taskUIItemList = UIItemList.New(slot0.taskItemContainer, slot0.taskItemTpl)
 

@@ -57,7 +57,7 @@ return {
 			side = 1,
 			dir = 1,
 			actor = 10500040,
-			say = "哎？！Wait a sec... the signs I made should have said \"You still can make it!\" and \"There's always next time!\"...",
+			say = "Wait a sec... the signs I made should have said \"You still can make it!\" and \"There's always next time!\"...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

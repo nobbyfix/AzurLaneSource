@@ -26458,7 +26458,7 @@ pg.ship_skin_words = {
 		couple_encourage = {}
 	},
 	[10500050] = {
-		touch = "Look at all these puppies! Come here~ ... Why, you! Don't pet me like that! Ay am not a puppy!",
+		touch = "Hm? My swords? The red one is Asura, and this is Rakshasa. Aren't they cool?",
 		feeling3 = "Sorry, Ay am easily amused! But as the saying goes, \"she who laughs much is blessed with luck.\" Which means soon everyone will start to like me!",
 		ID = 10500050,
 		expedition = "Ay wouldn't mind trying this \"commission\" task... Ah, it seems the commission team is back. Ay shall go assist them!",

@@ -41,7 +41,7 @@ return {
 		{
 			side = 2,
 			dir = 1,
-			say = "就It's almost like the fog itself is a part of the abnormal weather within the Mirror Sea.",
+			say = "It's almost like the fog itself is a part of the abnormal weather within the Mirror Sea.",
 			effects = {
 				{
 					active = false,

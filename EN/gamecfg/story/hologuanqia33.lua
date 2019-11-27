@@ -478,7 +478,7 @@ return {
 			side = 2,
 			dir = 1,
 			actor = 10500030,
-			say = "",
+			say = "I feel like the past Aquas are looking down on me from the skies, watching me waving my arms...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
