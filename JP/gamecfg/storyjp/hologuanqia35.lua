@@ -126,7 +126,7 @@ return {
 			dir = 1,
 			actor = 10500020,
 			actorName = "そら先輩？",
-			say = "良い動きをしてるけど、でもまだまだですね~",
+			say = "良い動きをしてるけど、でもまだまだですね～",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -158,7 +158,7 @@ return {
 			dir = 1,
 			actor = 10500020,
 			actorName = "そら先輩？",
-			say = "この盾にはあん肝マークもついてるのよ〜可愛いでしょう~！",
+			say = "この盾にはあん肝マークもついてるのよ〜可愛いでしょう～！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

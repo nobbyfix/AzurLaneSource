@@ -66,7 +66,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "江風、私たち以外にも誰かがココにいるよ！",
+			say = "江風、私たち以外にも誰かがここにいるよ！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

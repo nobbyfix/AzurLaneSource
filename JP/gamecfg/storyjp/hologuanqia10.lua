@@ -328,7 +328,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "瑞鶴さん、それ多分あってるけど、ちょっと事情が複雑だよね……",
+			say = "瑞鶴さん、それ多分あってるけど、ちょっと事情が複雑で……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -622,7 +622,7 @@ return {
 			side = 2,
 			dir = 1,
 			actor = 10500030,
-			actorName = "山田·赫敏",
+			actorName = "山田・ハーマイオニー",
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -647,7 +647,7 @@ return {
 			side = 2,
 			dir = 1,
 			actor = 10500040,
-			actorName = "夏 色 祭",
+			actorName = "夏　色　まつり",
 			say = "……",
 			typewriter = {
 				speed = 0.05,

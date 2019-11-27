@@ -1309,7 +1309,7 @@ pg.activity_template = {
 			"clutter/activity_bg_hololive_pt"
 		},
 		config_client = {
-			scrollStr = "期間限定海域と任務で「P-TNT」を集め、報酬と交換しましょう！         "
+			scrollStr = "<color=#3689C3>期間限定海域と任務で「P-TNT」を集め、報酬と交換しましょう！         </color>"
 		}
 	},
 	[431] = {

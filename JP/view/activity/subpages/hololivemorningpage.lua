@@ -91,7 +91,7 @@ slot0.rotate = function (slot0)
 	slot0.isTurning = true
 
 	LeanTween.value(go(slot0.circleTF), 0, slot8, 4):setEase(LeanTweenType.easeInOutCirc):setOnUpdate(System.Action_float(function (slot0)
-		slot0.circleTF.localEulerAngles = Vector3(0, 0, slot0)
+		slot0.circleTF.localEulerAngles = Vector3(0, 0, -slot0)
 	end)):setOnComplete(System.Action(function ()
 		pg.StoryMgr.GetInstance():Play(slot0.curStoryID, function ()
 			slot0:updateTaskPanel()

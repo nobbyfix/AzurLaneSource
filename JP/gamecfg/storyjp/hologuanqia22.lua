@@ -216,7 +216,7 @@ return {
 			dir = 1,
 			actor = 10500060,
 			nameColor = "#a9f548",
-			say = "そ、そうだよ！あくあちゃんも結構はしゃいてたから、別にいいじゃん！",
+			say = "そ、そうだよ！あくあちゃんも結構はしゃいでたから、別にいいじゃん！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -341,7 +341,7 @@ return {
 			bgName = "bg_story_holosaba1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "すまない。今の話、しんみりしすぎたようだな",
+			say = "すまない。今の話、しんみりとさせたようだな",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

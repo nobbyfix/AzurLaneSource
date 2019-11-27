@@ -35811,7 +35811,6 @@ pg.ship_skin_template = {
 	[206050] = {
 		name = "チェイサー",
 		bg = "",
-		tag = "",
 		ship_group = 20605,
 		illustrator2 = -1,
 		bullet_skin_secondary = "",
@@ -35842,6 +35841,7 @@ pg.ship_skin_template = {
 		lip_sync_gain = 0,
 		show_skin = "stand",
 		l2d_voice_calibrate = "",
+		tag = {},
 		live2d_offset = {
 			80,
 			-120,

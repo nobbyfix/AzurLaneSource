@@ -102,7 +102,7 @@ return {
 			blackBg = true,
 			actor = 900012,
 			nameColor = "#a9f548",
-			say = "「ピュリファア―。おかえり♪」",
+			say = "「ピュリファイア―。おかえり♪」",
 			flashout = {
 				dur = 0.5,
 				black = true,

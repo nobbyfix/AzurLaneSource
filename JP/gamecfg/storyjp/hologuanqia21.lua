@@ -10,7 +10,7 @@ return {
 			nameColor = "#a9f548",
 			side = 0,
 			dir = 1,
-			say = "この場所は、確かにフブキちゃんの白上神社だよね？あっ、いたいた！あそこだ！",
+			say = "この場所は、確かフブキちゃんの白上神社だよね？あっ、いたいた！あそこだ！",
 			bgm = "holo-control",
 			typewriter = {
 				speed = 0.05,

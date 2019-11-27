@@ -226,7 +226,7 @@ return {
 			side = 2,
 			dir = 1,
 			nameColor = "#a9f548",
-			say = "な、なななななにこれぇぇぇぇぇぇｌ！！",
+			say = "な、なななななにこれぇぇぇぇぇぇ！！！",
 			flashout = {
 				dur = 1,
 				alpha = {

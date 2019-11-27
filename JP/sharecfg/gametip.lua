@@ -8918,7 +8918,7 @@ pg.gametip = {
 		key = "commander_skill_point_noengough"
 	},
 	buildship_new_tip = {
-		tip = "イベント期間、「白上フブキ」、「湊アクア」 などの出現率UP！",
+		tip = "イベント期間、「白上フブキ」、「湊あくあ」 などの出現率UP！",
 		key = "buildship_new_tip"
 	},
 	buildship_heavy_tip = {

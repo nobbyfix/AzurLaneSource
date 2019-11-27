@@ -57,7 +57,7 @@ return {
 			bgName = "bg_story_tiancheng6",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "長門様が、お客さんたちを楽しんでもらえるように、と私たちにも声かけたんだ。",
+			say = "長門様が、お客さんたちに楽しんでもらえるように、と私たちにも声かけたんだ。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

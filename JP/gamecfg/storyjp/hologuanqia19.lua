@@ -27,7 +27,7 @@ return {
 			side = 2,
 			dir = 1,
 			actorName = "湊あくあ？",
-			say = "残念だけど、アズールレーンのZ２３、ここで死んでもらうわ。",
+			say = "残念だけど、アズールレーンのZ23、ここで死んでもらうわ。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
