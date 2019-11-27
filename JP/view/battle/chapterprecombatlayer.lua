@@ -129,7 +129,8 @@ slot0.didEnter = function (slot0)
 		end
 	end, SFX_PANEL, SFX_PANEL)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf, false, {
-		weight = LayerWeightConst.SECOND_LAYER
+		weight = LayerWeightConst.SECOND_LAYER,
+		groupName = LayerWeightConst.GROUP_LEVELUI
 	})
 	setParent(slot0.strategyInfo, slot0._tf.parent)
 	triggerToggle(slot0._autoToggle, ys.Battle.BattleState.IsAutoBotActive())

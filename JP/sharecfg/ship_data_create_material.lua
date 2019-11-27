@@ -57,7 +57,7 @@ pg.ship_data_create_material = {
 	{
 		use_gold = 1500,
 		name = "期間限定",
-		build_anim = "building",
+		build_anim = "building_hololive",
 		type = 2,
 		ship_icon = "1",
 		build_voice = "",
@@ -70,13 +70,15 @@ pg.ship_data_create_material = {
 			"<color=#d797ff>Sレア</color>：12%",
 			"<color=#3dc6ff>レア</color>：51%",
 			"ノーマル：30%",
-			"<color=#ffde38>ガスコーニュ（μ兵装）</color>：2%(<color=#92fc63>up!</color>)",
+			"<color=#ffde38>白上 フブキ</color>：2%(<color=#92fc63>up!</color>)",
 			" ",
-			"<color=#ffde38>赤城（μ兵装）</color>：2%(<color=#92fc63>up!</color>)",
+			"<color=#ffde38>湊あくあ</color>：2%(<color=#92fc63>up!</color>)",
 			" ",
-			"<color=#d797ff>クリーブランド（μ兵装）</color>：2.5%(<color=#92fc63>up!</color>)",
+			"<color=#ffde38>ときのそら</color>：0.5%",
 			" ",
-			"<color=#d797ff>アドミラル·ヒッパー（μ兵装）</color>：2.5%(<color=#92fc63>up!</color>)"
+			"<color=#d797ff>夏色 まつり</color>：2.5%(<color=#92fc63>up!</color>)",
+			" ",
+			"<color=#d797ff>百鬼 あやめ</color>：2.5%(<color=#92fc63>up!</color>)"
 		}
 	},
 	{

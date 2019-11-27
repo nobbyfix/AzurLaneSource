@@ -292,6 +292,10 @@ slot0.handleNotification = function (slot0, slot1)
 			return
 		end
 
+		if ActivityConst.HOLOLIVE_MORNING_ID == slot3 then
+			slot4 = slot0.viewComponent.pageDic[ActivityConst.HOLOLIVE_MORNING_ID]
+		end
+
 		slot0:showNextActivity()
 	elseif slot2 == ActivityProxy.ACTIVITY_SHOW_AWARDS then
 		slot0.viewComponent:emit(BaseUI.ON_ACHIEVE, slot3.awards, slot3.callback)

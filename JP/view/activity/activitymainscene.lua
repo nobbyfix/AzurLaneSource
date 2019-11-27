@@ -312,6 +312,22 @@ slot1 = {
 	[ActivityConst.WARSPITE_TRANS] = {
 		className = "WarspiteTransformationPage",
 		uiName = "WarspiteTransformationPage"
+	},
+	[ActivityConst.HOLOLIVE_PT_ID] = {
+		className = "HoloLivePTPage",
+		uiName = "HoloLivePTPage"
+	},
+	[ActivityConst.HOLOLIVE_MORNING_ID] = {
+		className = "HoloLiveMorningPage",
+		uiName = "HoloLiveMorningPage"
+	},
+	[ActivityConst.HOLOLIVE_MAIN] = {
+		className = "HoloLivePage",
+		uiName = "HoloLivePage"
+	},
+	[ActivityConst.HOLOLIVE_MIO_ID] = {
+		className = "HoloLiveMioPage",
+		uiName = "HoloLiveMioPage"
 	}
 }
 slot2 = {
@@ -330,7 +346,7 @@ slot0.getUIName = function (slot0)
 end
 
 slot0.getBGM = function (slot0)
-	return "main"
+	return "holo-sss-inst"
 end
 
 slot0.onBackPressed = function (slot0)

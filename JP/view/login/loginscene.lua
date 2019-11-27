@@ -6,7 +6,7 @@ slot0.getUIName = function (slot0)
 end
 
 slot0.getBGM = function (slot0)
-	return "login"
+	return "holo-sss"
 end
 
 slot0.preload = function (slot0, slot1)
@@ -622,8 +622,6 @@ end
 slot0.playOpening = function (slot0, slot1, slot2, slot3)
 	slot0.onPlayingOP = true
 
-	pg.CriMgr.GetInstance():stopBGM()
-
 	function slot4()
 		if not slot0.openingTF then
 			return
@@ -649,7 +647,10 @@ slot0.playOpening = function (slot0, slot1, slot2, slot3)
 		end
 
 		slot0.cg.alpha = 1
-		slot0.cg.onPlayingOP = false
+
+		pg.CriMgr.GetInstance():resumeNormalBGM()
+
+		pg.CriMgr.GetInstance().resumeNormalBGM.onPlayingOP = false
 	end
 
 	function slot5()
@@ -678,6 +679,7 @@ slot0.playOpening = function (slot0, slot1, slot2, slot3)
 			slot0()
 		end)
 		setActive(slot0.openingTF, true)
+		pg.CriMgr.GetInstance():stopBGM()
 	end
 
 	if IsNil(slot0.openingTF) then

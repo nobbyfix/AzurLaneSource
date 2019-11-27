@@ -198,12 +198,18 @@ slot0.handleNotification = function (slot0, slot1)
 		elseif slot3 == SCENE.MUSIC_FESTIVAL then
 			slot4.mediator = MusicFestivalMediator
 			slot4.viewComponent = MusicFestivalScene
+		elseif slot3 == SCENE.HOLOLIVE_MEDAL then
+			slot4.mediator = HololiveMedalCollectionMediator
+			slot4.viewComponent = HololiveMedalCollectionView
 		elseif slot3 == SCENE.TECHNOLOGY_TREE_SCENE then
 			slot4.mediator = TechnologyTreeMediator
 			slot4.viewComponent = TechnologyTreeScene
 		elseif slot3 == SCENE.CHALLENGE_MAIN_SCENE then
 			slot4.mediator = ChallengeMainMediator
 			slot4.viewComponent = ChallengeMainScene
+		elseif slot3 == SCENE.HOLOLIVE_LINKLINK_SELECT_SCENE then
+			slot4.mediator = HoloLiveLinkLinkSelectMediator
+			slot4.viewComponent = HoloLiveLinkLinkSelectScene
 		elseif slot3 == SCENE.ATTIRE then
 			slot4.mediator = AttireMediator
 			slot4.viewComponent = AttireScene

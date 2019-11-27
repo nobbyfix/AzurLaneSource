@@ -46,7 +46,7 @@ slot0.updateSkin = function (slot0, slot1, slot2)
 			setActive(slot0.picActivity, false)
 			setActive(slot0.picPropose, false)
 
-			if slot1.skin_type == Ship.SKIN_TYPE_PROPOSE then
+			if slot1.skin_type == ShipSkin.SKIN_TYPE_PROPOSE then
 				setActive(slot0.picPropose, true)
 			elseif slot0.skin.shop_id > 0 then
 				setActive(slot0.picNotBuy, true)
@@ -190,7 +190,7 @@ slot0.updateData = function (slot0, slot1, slot2, slot3)
 			setActive(slot0.picActivity, false)
 			setActive(slot0.picPropose, false)
 
-			if slot2.skin_type == Ship.SKIN_TYPE_PROPOSE then
+			if slot2.skin_type == ShipSkin.SKIN_TYPE_PROPOSE then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 73-77, warpins: 1 ---

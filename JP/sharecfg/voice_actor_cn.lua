@@ -799,6 +799,34 @@ pg.voice_actor_CN = {
 	[205] = {
 		actor_name = "紫苑雪",
 		code = 205
+	},
+	[206] = {
+		actor_name = "白上フブキ",
+		code = 206
+	},
+	[207] = {
+		actor_name = "夏色まつり",
+		code = 207
+	},
+	[208] = {
+		actor_name = "湊あくあ",
+		code = 208
+	},
+	[209] = {
+		actor_name = "大神ミオ",
+		code = 209
+	},
+	[210] = {
+		actor_name = "百鬼 あやめ",
+		code = 210
+	},
+	[211] = {
+		actor_name = "ときのそら",
+		code = 211
+	},
+	[212] = {
+		actor_name = "紫咲シオン",
+		code = 212
 	}
 }
 

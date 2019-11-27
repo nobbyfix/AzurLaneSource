@@ -3040,6 +3040,56 @@ pg.furniture_data_template = {
 		},
 		interAction_group = {}
 	},
+	[157] = {
+		advice = 0,
+		name = "ホロライブ本社",
+		count = 1,
+		type = 7,
+		dir = 0,
+		gain_by = "幻想と真実の二重奏",
+		is_get_time_note = 1,
+		belong = 1,
+		can_rotate = 1,
+		effect = "",
+		dorm_icon_price = 500,
+		not_for_sale = 1,
+		icon = "dalao_holoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 5,
+		tag = 6,
+		picture = "",
+		canputon = 0,
+		discount = 0,
+		id = 157,
+		comfortable = 0,
+		describe = "“アズールレーンもホロライブも、これからもよろしくお願いします！指揮官さん～” ——【幻想と真実の二重奏】参加記念",
+		dorm_id = 0,
+		gem_price = 0,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 0,
+		discount_time = "",
+		size = {
+			3,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			1,
+			"event:/cv/furniture/hololivevoice"
+		},
+		spine = {
+			{
+				"dalao_holo",
+				"action"
+			}
+		},
+		interAction_group = {}
+	},
 	[100002] = {
 		can_rotate = 0,
 		name = "友情の空気ポンプ",
@@ -3790,6 +3840,61 @@ pg.furniture_data_template = {
 				"manjuustageCharControl",
 				"manjuustageCharControl2",
 				"manjuustageCharControl3"
+			}
+		},
+		interAction_group = {}
+	},
+	[100010] = {
+		advice = 0,
+		name = "癒やし系猫パンチ",
+		count = 1,
+		type = 7,
+		dir = 0,
+		gain_by = "",
+		is_get_time_note = 0,
+		belong = 1,
+		can_rotate = 1,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 1,
+		icon = "maozhuaicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 6,
+		picture = "",
+		canputon = 0,
+		discount = 0,
+		id = 100010,
+		comfortable = 0,
+		describe = "家具に転用したにゃ！疲れたらぬんぬんすると癒やされるにゃ！",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 0,
+		spine_extra = "",
+		time = "always",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"maozhua",
+				"normal",
+				{
+					"action",
+					false,
+					nil,
+					"event:/ui/meow"
+				}
 			}
 		},
 		interAction_group = {}
@@ -91817,6 +91922,3275 @@ pg.furniture_data_template = {
 		},
 		interAction_group = {}
 	},
+	[55001] = {
+		can_rotate = 0,
+		name = "ホロ床",
+		gain_by = "",
+		type = 4,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 150,
+		not_for_sale = 0,
+		icon = "dibanholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 4,
+		rarity = 4,
+		picture = "holo/dibanholo",
+		canputon = 0,
+		discount = 0,
+		id = 55001,
+		comfortable = 4,
+		describe = "ホロライブ事務所風の床",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			14
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55002] = {
+		can_rotate = 0,
+		name = "ホロ壁",
+		gain_by = "",
+		type = 1,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 150,
+		not_for_sale = 0,
+		icon = "qiangbiholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 3,
+		rarity = 4,
+		picture = "holo/qiangbiholo",
+		canputon = 0,
+		discount = 0,
+		id = 55002,
+		comfortable = 4,
+		describe = "ホロライブをイメージした壁紙",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55101] = {
+		can_rotate = 0,
+		name = "ホロボード",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "banziholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/banziholo",
+		canputon = 0,
+		discount = 0,
+		id = 55101,
+		comfortable = 2,
+		describe = "メンバーたちの個性的な絵や便箋が貼られている",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55102] = {
+		advice = 0,
+		name = "あくあのベッド",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "holo/chuangholo",
+		can_rotate = 0,
+		dorm_icon_price = 150,
+		not_for_sale = 0,
+		icon = "chuangholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55102,
+		comfortable = 4,
+		describe = "「お仕事がないのに一日中横になっても疲れるぅ～」",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			7,
+			8
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sleep",
+				{
+					-13,
+					46
+				},
+				{
+					-1,
+					1
+				}
+			},
+			{
+				"sleep",
+				{
+					-102,
+					-8
+				},
+				{
+					-1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55103] = {
+		can_rotate = 1,
+		name = "ホロワイドテレビ",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "dianshiholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "holo/dianshiholo",
+		canputon = 0,
+		discount = 0,
+		id = 55103,
+		comfortable = 3,
+		describe = "超大型ホロライブテレビ、ホームシアターとしての評価も↑↑↑",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			9
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55104] = {
+		can_rotate = 0,
+		name = "魔法のカーペット",
+		gain_by = "",
+		type = 5,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "ditanholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/ditanholo",
+		canputon = 0,
+		discount = 0,
+		id = 55104,
+		comfortable = 2,
+		describe = "シオンが所持している魔法のカーペット",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			6,
+			10
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55105] = {
+		can_rotate = 0,
+		name = "魔法のクローゼット",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 150,
+		not_for_sale = 1,
+		icon = "guiziholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 4,
+		picture = "holo/guiziholo",
+		canputon = 0,
+		discount = 0,
+		id = 55105,
+		comfortable = 4,
+		describe = "シオンが所持している魔法のクローゼット、開けるとその者が考えていた通りの物が出てくる",
+		dorm_id = 0,
+		gem_price = 450,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55106] = {
+		can_rotate = 0,
+		name = "ホロナイトテーブル",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "guiziholo2icon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "holo/guiziholo2",
+		canputon = 0,
+		discount = 0,
+		id = 55106,
+		comfortable = 3,
+		describe = "木製のナイトスタンド。アットホームな雰囲気を醸し出す",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55107] = {
+		can_rotate = 1,
+		name = "ホロガラスケース",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 1,
+		icon = "guiziholo3icon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "holo/guiziholo3",
+		canputon = 1,
+		discount = 0,
+		id = 55107,
+		comfortable = 3,
+		describe = "物の保存や展示に使える透明なガラスケース",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			2
+		},
+		offset = {
+			0,
+			-0.8
+		},
+		canputonGrid = {
+			{
+				4,
+				4
+			},
+			{
+				5,
+				4
+			},
+			{
+				6,
+				4
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55108] = {
+		can_rotate = 0,
+		name = "ひまわりの鉢植え",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "huaholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/huaholo",
+		canputon = 0,
+		discount = 0,
+		id = 55108,
+		comfortable = 2,
+		describe = "花言葉は「憧れ」、「忠誠」と「静かなる恋」。日光を当てて、水やりも忘れないように",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55109] = {
+		can_rotate = 0,
+		name = "ダブルバルーン",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "qiqiuholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 1,
+		picture = "holo/qiqiuholo",
+		canputon = 0,
+		discount = 0,
+		id = 55109,
+		comfortable = 1,
+		describe = "室内の装飾として飾られるバルーン",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55110] = {
+		can_rotate = 0,
+		name = "三角定規浮き輪",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "quanholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/quanholo",
+		canputon = 0,
+		discount = 0,
+		id = 55110,
+		comfortable = 2,
+		describe = "魔法使いの三角定規をモチーフとした浮き輪",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55111] = {
+		advice = 0,
+		name = "空色ソファー",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "holo/shafaholo",
+		can_rotate = 0,
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "shafaholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 3,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55111,
+		comfortable = 3,
+		describe = "空色のソファ。太陽と星をモチーフとしたクッション付き",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			6
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sit",
+				{
+					-89,
+					35
+				},
+				{
+					-1,
+					1
+				}
+			},
+			{
+				"sit",
+				{
+					20,
+					-9
+				},
+				{
+					-1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55112] = {
+		advice = 0,
+		name = "D20ダイスチェア",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "holo/shaziholo",
+		can_rotate = 1,
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "shaziholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 2,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55112,
+		comfortable = 2,
+		describe = "好きな数字選んでね～",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sit",
+				{
+					6,
+					69
+				},
+				{
+					1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55113] = {
+		can_rotate = 1,
+		name = "バトルディスク",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "xiangziholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/xiangziholo",
+		canputon = 0,
+		discount = 0,
+		id = 55113,
+		comfortable = 2,
+		describe = "闇のゲームの象徴……絶対に触るなよ！",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55114] = {
+		can_rotate = 1,
+		name = "あん肝ぬいぐるみ",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "xiongholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 2,
+		picture = "holo/xiongholo",
+		canputon = 0,
+		discount = 0,
+		id = 55114,
+		comfortable = 2,
+		describe = "「あん肝」に型の大きなぬいぐるみ！",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55115] = {
+		advice = 0,
+		name = "ホロゲーミングチェア",
+		count = 1,
+		type = 2,
+		dir = 0,
+		effect = "",
+		gain_by = "",
+		is_get_time_note = 0,
+		picture = "holo/yiziholo",
+		can_rotate = 0,
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "yiziholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 2,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55115,
+		comfortable = 2,
+		describe = "座り心地が抜群。一家に一脚欲しい",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		interAction = {
+			{
+				"sit",
+				{
+					-26,
+					12
+				},
+				{
+					-1,
+					1
+				}
+			}
+		},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55116] = {
+		can_rotate = 0,
+		name = "メイドのゲーミングデスク",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "zhuoholoicon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "holo/zhuoholo",
+		canputon = 0,
+		discount = 0,
+		id = 55116,
+		comfortable = 3,
+		describe = "マリンメイドの戦いの舞台",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			6
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55117] = {
+		can_rotate = 1,
+		name = "ホロドレッシングテーブル",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "zhuoholo2icon",
+		deblocking = 1,
+		level = 1,
+		tag = 1,
+		rarity = 3,
+		picture = "holo/zhuoholo2",
+		canputon = 0,
+		discount = 0,
+		id = 55117,
+		comfortable = 3,
+		describe = "化粧したりお宝を格納したりする家具",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			5,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55118] = {
+		can_rotate = 1,
+		name = "ホロライブステージ",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 0,
+		icon = "wutaiholoicon",
+		deblocking = 1,
+		level = 1,
+		interaction_bgm = "holo-sss",
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55118,
+		comfortable = 4,
+		describe = "アイドルをもっと輝かせる、ホロライブの大舞台！",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			14,
+			5
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"hololivestage",
+				"normal"
+			},
+			{},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"dance"
+					}
+				},
+				{},
+				{
+					1
+				}
+			},
+			{},
+			{
+				0,
+				0
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		animator = {
+			{
+				"hololivestageCharControl",
+				"hololivestageCharControl2",
+				"hololivestageCharControl3"
+			}
+		},
+		interAction_group = {}
+	},
+	[55119] = {
+		can_rotate = 0,
+		name = "あくあハコ",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 0,
+		icon = "taiziholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55119,
+		comfortable = 4,
+		describe = "ホロホロホロホロホロ……ホロライブっ！！！！！！！！",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			3,
+			4
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"aquaBoxB",
+				"normal"
+			},
+			{
+				"aquaBoxT"
+			},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"dance"
+					},
+					{
+						"yun"
+					}
+				},
+				{
+					nil,
+					1
+				},
+				{
+					0
+				}
+			},
+			{},
+			{
+				0,
+				0
+			},
+			{
+				1,
+				1
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		animator = {
+			{
+				"aquaBoxCharControl"
+			}
+		},
+		interAction_group = {}
+	},
+	[55120] = {
+		advice = 0,
+		name = "ホロアクアリウム",
+		count = 1,
+		type = 2,
+		dir = 0,
+		gain_by = "",
+		is_get_time_note = 0,
+		belong = 1,
+		can_rotate = 1,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 0,
+		icon = "muqiangholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		picture = "",
+		canputon = 0,
+		discount = 0,
+		id = 55120,
+		comfortable = 4,
+		describe = "ホロライブテーマのアクアリウム、魚類以外に、謎の生物も入っている……？",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			12
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"hololiveWindow",
+				"normal"
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55121] = {
+		can_rotate = 0,
+		name = "海（室内セット）",
+		gain_by = "",
+		type = 2,
+		dir = 0,
+		picture = "",
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 0,
+		not_for_sale = 1,
+		icon = "chiziholoicon",
+		deblocking = 1,
+		level = 1,
+		rarity = 4,
+		tag = 1,
+		belong = 1,
+		canputon = 0,
+		discount = 0,
+		id = 55121,
+		comfortable = 4,
+		describe = "いつでも夏の海辺を堪能！",
+		dorm_id = 0,
+		gem_price = 150,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			7,
+			7
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		spine = {
+			{
+				"hololivePoolB",
+				"normal"
+			},
+			{
+				"hololivePoolT"
+			},
+			{
+				{
+					0,
+					0
+				},
+				{
+					{
+						"sleep"
+					}
+				},
+				{},
+				{
+					1
+				}
+			},
+			{},
+			{
+				0,
+				0
+			}
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		animator = {
+			{
+				"hololivePoolCharControl"
+			}
+		},
+		interAction_group = {}
+	},
+	[55201] = {
+		can_rotate = 0,
+		name = "魔法瓶",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "beiziholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 1,
+		picture = "holo/beiziholo",
+		canputon = 0,
+		discount = 0,
+		id = 55201,
+		comfortable = 1,
+		describe = "水分補給はしっかりと！",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55202] = {
+		can_rotate = 0,
+		name = "刀掛台（百鬼専用）",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "daoholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/daoholo",
+		canputon = 0,
+		discount = 0,
+		id = 55202,
+		comfortable = 2,
+		describe = "「羅刹」「阿修羅」ここにあり！",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			3
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55203] = {
+		can_rotate = 0,
+		name = "おるやんけ",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "husunholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/husunholo",
+		canputon = 0,
+		discount = 0,
+		id = 55203,
+		comfortable = 2,
+		describe = "白上フブキと共に現れる謎の生物……をモデルにしたぬいぐるみ",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55204] = {
+		can_rotate = 0,
+		name = "マリーンメイドの証",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "maoholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/maoholo",
+		canputon = 0,
+		discount = 0,
+		id = 55204,
+		comfortable = 2,
+		describe = "湊あくあ、参上！！！！！！！！",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55205] = {
+		can_rotate = 0,
+		name = "玉ねぎとかまぼこのスープ",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "tangholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 1,
+		picture = "holo/tangholo",
+		canputon = 0,
+		discount = 0,
+		id = 55205,
+		comfortable = 1,
+		describe = "出来たてホカホカなスープ。うまいぞ～",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			1,
+			1
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55206] = {
+		can_rotate = 0,
+		name = "大神ミオのぬいぐるみ",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo1icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo1",
+		canputon = 0,
+		discount = 0,
+		id = 55206,
+		comfortable = 3,
+		describe = "ふわもこ大神ミオのぬいぐるみ",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55207] = {
+		can_rotate = 0,
+		name = "百鬼あやめのぬいぐるみ",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo2icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo2",
+		canputon = 0,
+		discount = 0,
+		id = 55207,
+		comfortable = 3,
+		describe = "ふわもこ百鬼あやめのぬいぐるみ",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55208] = {
+		can_rotate = 0,
+		name = "紫咲シオンのぬいぐるみ",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo3icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo3",
+		canputon = 0,
+		discount = 0,
+		id = 55208,
+		comfortable = 3,
+		describe = "ふわもこ紫咲シオンのぬいぐるみ",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55209] = {
+		can_rotate = 0,
+		name = "湊あくあのぬいぐるみ",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo4icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo4",
+		canputon = 0,
+		discount = 0,
+		id = 55209,
+		comfortable = 3,
+		describe = "ふわもこ湊あくあのぬいぐるみ",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55210] = {
+		can_rotate = 0,
+		name = "夏色まつりのぬいぐるみ",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo5icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo5",
+		canputon = 0,
+		discount = 0,
+		id = 55210,
+		comfortable = 3,
+		describe = "ふわもこ夏色まつりのぬいぐるみ",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55211] = {
+		can_rotate = 0,
+		name = "白上フブキのぬいぐるみ",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo6icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo6",
+		canputon = 0,
+		discount = 0,
+		id = 55211,
+		comfortable = 3,
+		describe = "ふわもこ白上フブキのぬいぐるみ",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55212] = {
+		can_rotate = 0,
+		name = "ときのそらのぬいぐるみ",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "wanouholo7icon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 3,
+		picture = "holo/wanouholo7",
+		canputon = 0,
+		discount = 0,
+		id = 55212,
+		comfortable = 3,
+		describe = "ふわもこときのそらのぬいぐるみ",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55213] = {
+		can_rotate = 0,
+		name = "千里眼クッション",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "yanholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/yanholo",
+		canputon = 0,
+		discount = 0,
+		id = 55213,
+		comfortable = 2,
+		describe = "シオンの千里眼クッション",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55214] = {
+		can_rotate = 0,
+		name = "とうもろこしクッション",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "yumiholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/yumiholo",
+		canputon = 0,
+		discount = 0,
+		id = 55214,
+		comfortable = 2,
+		describe = "とうもろこしのクッション、後ろに何かが隠れている模様？",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55215] = {
+		can_rotate = 0,
+		name = "エビフライオンクッション",
+		gain_by = "",
+		type = 3,
+		dir = 0,
+		belong = 1,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "zhaxiaholoicon",
+		deblocking = 1,
+		level = 2,
+		tag = 2,
+		rarity = 2,
+		picture = "holo/zhaxiaholo",
+		canputon = 0,
+		discount = 0,
+		id = 55215,
+		comfortable = 2,
+		describe = "お手頃サイズにちょうどいい柔らかさ……エビフライオン抱き枕、参上！",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			5,
+			2
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55301] = {
+		can_rotate = 0,
+		name = "マリン風の壁飾り",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "biguaholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 1,
+		picture = "holo/biguaholo",
+		canputon = 0,
+		discount = 0,
+		id = 55301,
+		comfortable = 1,
+		describe = "ヒトデ、海藻、貝殻にサンゴ――部屋に海の装いを",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			4,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55302] = {
+		can_rotate = 0,
+		name = "三角旗",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "caidaiholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 1,
+		picture = "holo/caidaiholo",
+		canputon = 0,
+		discount = 0,
+		id = 55302,
+		comfortable = 1,
+		describe = "部屋の中を彩る装飾家具",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			8,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55303] = {
+		can_rotate = 0,
+		name = "マリンカーテン",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "chuanglianholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 2,
+		picture = "holo/chuanglianholo",
+		canputon = 0,
+		discount = 0,
+		id = 55303,
+		comfortable = 2,
+		describe = "マリンメイドがこよなく愛するマリン風のカーテン",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			10,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55304] = {
+		can_rotate = 0,
+		name = "全員集合！",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 80,
+		not_for_sale = 0,
+		icon = "guahuaholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 3,
+		picture = "holo/guahuaholo",
+		canputon = 0,
+		discount = 0,
+		id = 55304,
+		comfortable = 3,
+		describe = "「DD」の意味、知ってる？",
+		dorm_id = 0,
+		gem_price = 240,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			6,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55305] = {
+		can_rotate = 0,
+		name = "式神の壁掛け絵",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "guahuaholo2icon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 2,
+		picture = "holo/guahuaholo2",
+		canputon = 0,
+		discount = 0,
+		id = 55305,
+		comfortable = 2,
+		describe = "百鬼あやめの式神が描かれている",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55306] = {
+		can_rotate = 0,
+		name = "野生感シール",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 20,
+		not_for_sale = 0,
+		icon = "shuholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 1,
+		picture = "holo/shuholo",
+		canputon = 0,
+		discount = 0,
+		id = 55306,
+		comfortable = 1,
+		describe = "お部屋で森林浴！",
+		dorm_id = 0,
+		gem_price = 60,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			2,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
+	[55307] = {
+		can_rotate = 0,
+		name = "ホロ本棚",
+		gain_by = "",
+		type = 6,
+		dir = 0,
+		belong = 2,
+		is_get_time_note = 0,
+		count = 1,
+		advice = 0,
+		effect = "",
+		dorm_icon_price = 40,
+		not_for_sale = 0,
+		icon = "shujiaholoicon",
+		deblocking = 1,
+		level = 5,
+		tag = 5,
+		rarity = 2,
+		picture = "holo/shujiaholo",
+		canputon = 0,
+		discount = 0,
+		id = 55307,
+		comfortable = 2,
+		describe = "本や盆栽、いろんな物が置け、スケッチも隠せる本棚",
+		dorm_id = 0,
+		gem_price = 120,
+		themeId = 55,
+		spine_extra = "",
+		spine_action_replace = "",
+		new = 1,
+		discount_time = "",
+		size = {
+			8,
+			0
+		},
+		offset = {},
+		canputonGrid = {},
+		can_trigger = {
+			0
+		},
+		time = {
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		interAction_group = {}
+	},
 	all = {
 		1,
 		2,
@@ -91873,6 +95247,7 @@ pg.furniture_data_template = {
 		150,
 		151,
 		155,
+		157,
 		100002,
 		100003,
 		100004,
@@ -91881,6 +95256,7 @@ pg.furniture_data_template = {
 		100007,
 		100008,
 		100009,
+		100010,
 		1001,
 		1002,
 		1101,
@@ -93159,7 +96535,52 @@ pg.furniture_data_template = {
 		53303,
 		53304,
 		54104,
-		54105
+		54105,
+		55001,
+		55002,
+		55101,
+		55102,
+		55103,
+		55104,
+		55105,
+		55106,
+		55107,
+		55108,
+		55109,
+		55110,
+		55111,
+		55112,
+		55113,
+		55114,
+		55115,
+		55116,
+		55117,
+		55118,
+		55119,
+		55120,
+		55121,
+		55201,
+		55202,
+		55203,
+		55204,
+		55205,
+		55206,
+		55207,
+		55208,
+		55209,
+		55210,
+		55211,
+		55212,
+		55213,
+		55214,
+		55215,
+		55301,
+		55302,
+		55303,
+		55304,
+		55305,
+		55306,
+		55307
 	}
 }
 

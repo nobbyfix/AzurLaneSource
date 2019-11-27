@@ -393,6 +393,10 @@ slot9.GetSkinAttachmentInfo = function (slot0)
 	return slot0._skinAttachment
 end
 
+slot9.GetWeaponBoundBone = function (slot0)
+	return slot0._tmpData.bound_bone
+end
+
 slot9.GetLabelTag = function (slot0)
 	return slot0._labelTagList
 end

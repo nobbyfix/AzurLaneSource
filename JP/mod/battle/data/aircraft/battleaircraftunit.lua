@@ -219,9 +219,17 @@ end
 slot6.SetMotherUnit = function (slot0, slot1)
 	slot0._motherUnit = slot1
 
-	slot0:SetIFF(slot0._motherUnit:GetIFF())
+	slot0:SetIFF(slot2)
 	slot0:SetAttr(slot1)
-	slot0:SetPosition(slot0._motherUnit:GetPosition())
+
+	if slot0._motherUnit:GetWeaponBoundBone().remote then
+		Vector3(slot3.remote[1], slot3.remote[2], slot3.remote[3]).x = Vector3(slot3.remote[1], slot3.remote[2], slot3.remote[3]).x * slot2
+		slot7 = nil
+
+		slot0:SetPosition(((not slot0._battleProxy:GetStageInfo().mainUnitPosition or not slot6[slot2] or slot6[slot2][1]) and slot0.MAIN_UNIT_POS[slot2][1]) + slot5)
+	else
+		slot0:SetPosition(slot0._motherUnit:GetPosition())
+	end
 
 	if slot1:GetIFF() == slot0.FRIENDLY_CODE then
 		slot0._dir = slot1.UnitDir.RIGHT

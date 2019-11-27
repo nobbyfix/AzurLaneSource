@@ -3,10 +3,6 @@ slot0.ENERGY_MID = 40
 slot0.ENERGY_LOW = 0
 slot0.RECOVER_ENERGY_POINT = 2
 slot0.INTIMACY_PROPOSE = 6
-slot0.SKIN_TYPE_DEFAULT = -1
-slot0.SKIN_TYPE_COMMON_FASHION = 0
-slot0.SKIN_TYPE_PROPOSE = 1
-slot0.SKIN_TYPE_REMAKE = 2
 slot0.BACKYARD_1F_ENERGY_ADDITION = 2
 slot0.BACKYARD_2F_ENERGY_ADDITION = 3
 slot0.PREFERENCE_TAG_NONE = 0
@@ -2080,12 +2076,12 @@ slot0.inUnlockTip = function (slot0)
 end
 
 slot0.proposeSkinOwned = function (slot0, slot1)
-	return slot1 and slot0.propose and slot1.skin_type == Ship.SKIN_TYPE_PROPOSE
+	return slot1 and slot0.propose and slot1.skin_type == ShipSkin.SKIN_TYPE_PROPOSE
 end
 
 slot0.getProposeSkin = function (slot0)
 	for slot4, slot5 in ipairs(pg.ship_skin_template.all) do
-		if pg.ship_skin_template[slot5].ship_group == slot0.groupId and slot6.skin_type == slot0.SKIN_TYPE_PROPOSE then
+		if pg.ship_skin_template[slot5].ship_group == slot0.groupId and slot6.skin_type == ShipSkin.SKIN_TYPE_PROPOSE then
 			return slot6
 		end
 	end
@@ -2219,6 +2215,16 @@ slot0.DefaultFaceless = function (slot0)
 		return true
 	else
 		return false
+	end
+end
+
+slot0.IsBgmSkin = function (slot0)
+	return table.contains(slot0:GetSkinConfig().tag, ShipSkin.WITH_BGM)
+end
+
+slot0.GetSkinBgm = function (slot0)
+	if slot0:IsBgmSkin() then
+		return slot0:GetSkinConfig().bgm
 	end
 end
 

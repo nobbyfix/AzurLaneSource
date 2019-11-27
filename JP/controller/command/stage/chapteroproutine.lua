@@ -135,13 +135,13 @@ slot0.doBuffUpdate = function (slot0)
 	end
 end
 
-slot0.doKizunaJammingUpdate = function (slot0)
+slot0.doExtraFlagUpdate = function (slot0)
 	slot2 = slot0.chapter
 	slot3 = getProxy(ChapterProxy)
 
 	if #slot0.data.add_flag_list > 0 or #slot1.del_flag_list > 0 then
 		slot3:updateExtraFlag(slot2, slot1.add_flag_list, slot1.del_flag_list)
-		slot3:updateChapter(slot2, ChapterConst.DirtyStrategy)
+		slot3:updateChapter(slot2, bit.bor(ChapterConst.DirtyStrategy, ChapterConst.DirtyCellFlag))
 	end
 end
 

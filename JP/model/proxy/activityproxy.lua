@@ -1591,30 +1591,66 @@ end
 slot0.AddInstagramTimer = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-20, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0:RemoveInstagramTimer()
 
-	function slot6()
+	slot3, slot4 = slot0.data[slot1].GetNextPushTime(slot2)
+
+	if slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-6, warpins: 1 ---
-		if slot0:GetNextId() then
+		--- BLOCK #0 11-22, warpins: 1 ---
+		function slot7()
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 7-19, warpins: 1 ---
-			slot1:sendNotification(GAME.ACT_INSTAGRAM_OP, {
-				isActivate = true,
+			--- BLOCK #0 1-15, warpins: 1 ---
+			slot0:sendNotification(GAME.ACT_INSTAGRAM_OP, {
 				arg2 = 0,
-				activity_id = slot2,
+				activity_id = slot1,
 				cmd = ActivityConst.INSTAGRAM_OP_ACTIVE,
-				arg1 = slot0
+				arg1 = GAME.ACT_INSTAGRAM_OP
 			})
+
+			return
 			--- END OF BLOCK #0 ---
 
 
 
 		end
 
+		if slot3 - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 23-25, warpins: 1 ---
+			slot7()
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 26-36, warpins: 1 ---
+			slot0.instagramTimer = Timer.New(function ()
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 1-7, warpins: 1 ---
+				slot0()
+				slot1:RemoveInstagramTimer()
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
+			end, slot6, 1)
+
+			slot0.instagramTimer:Start()
+			--- END OF BLOCK #0 ---
+
+
+
+		end
 		--- END OF BLOCK #0 ---
 
 		FLOW; TARGET BLOCK #1
@@ -1622,43 +1658,8 @@ slot0.AddInstagramTimer = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 20-20, warpins: 2 ---
-		return
+		--- BLOCK #1 37-37, warpins: 2 ---
 		--- END OF BLOCK #1 ---
-
-
-
-	end
-
-	if slot0.data[slot1].GetNextPustTime(slot2) - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 21-23, warpins: 1 ---
-		slot6()
-		--- END OF BLOCK #0 ---
-
-
-
-	else
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 24-34, warpins: 1 ---
-		slot0.instagramTimer = Timer.New(function ()
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0()
-			slot1:RemoveInstagramTimer()
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end, slot5, 1)
-
-		slot0.instagramTimer:Start()
-		--- END OF BLOCK #0 ---
 
 
 
@@ -1671,7 +1672,7 @@ slot0.AddInstagramTimer = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 35-36, warpins: 2 ---
+	--- BLOCK #1 38-39, warpins: 2 ---
 	return
 	--- END OF BLOCK #1 ---
 

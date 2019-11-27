@@ -13,6 +13,7 @@ slot0.register = function (slot0)
 
 	slot0:GenBattleData()
 
+	slot0.contextData.battleData = slot0._battleData
 	slot1 = ys.Battle.BattleState.GetInstance()
 	slot2 = slot0.contextData.system
 
@@ -690,6 +691,11 @@ slot0.GenBattleData = function (slot0)
 				},
 				skills = slot13.skills
 			})
+
+			if slot2 == SYSTEM_SIMULATION and #slot1.SubUnitList > 0 then
+				slot1.SubFlag = 1
+				slot1.TotalSubAmmo = 1
+			end
 		end
 	end
 end
@@ -726,8 +732,7 @@ slot0.handleNotification = function (slot0, slot1)
 				slot3.exitCallback()
 			end
 		else
-			slot6 = nil
-			slot6 = (slot5 ~= SYSTEM_CHALLENGE or BattleChallengeResultLayer) and (slot5 ~= SYSTEM_DODGEM or BattleDodgemResultLayer) and (slot5 ~= SYSTEM_SUBMARINE_RUN or BattleSubmarineRunResultLayer) and (slot5 ~= SYSTEM_SUB_ROUTINE or BattleSubmarineRoutineResultLayer) and (slot5 ~= SYSTEM_HP_SHARE_ACT_BOSS or BattleContributionResultLayer) and (slot5 ~= SYSTEM_BOSS_EXPERIMENT or BattleExperimentResultLayer) and BattleResultLayer
+			slot6 = BattleResultMediator.GetResultView(slot5)
 			slot7 = {}
 
 			if slot5 == SYSTEM_SCENARIO then

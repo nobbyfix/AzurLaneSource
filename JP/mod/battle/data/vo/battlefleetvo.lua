@@ -470,21 +470,29 @@ slot7.appendScoutUnit = function (slot0, slot1)
 		slot0._torpedoWeaponVO:AppendWeapon(slot7)
 	end
 
+	if #slot1:GetHiveList() > 0 then
+		for slot8, slot9 in ipairs(slot4) do
+			slot0._airAssistVO:AppendWeapon(slot9)
+		end
+
+		slot1:SetAirAssistList(slot4)
+	end
+
 	slot0._fleetAntiAir:AppendCrewUnit(slot1)
 	slot0._fleetSonar:AppendCrewUnit(slot1)
 
-	slot3 = 1
-	slot4 = #slot0._unitList
-	slot5 = {}
+	slot4 = 1
+	slot5 = #slot0._unitList
+	slot6 = {}
 
-	while slot3 < slot4 do
-		table.insert(slot5, slot3)
+	while slot4 < slot5 do
+		table.insert(slot6, slot4)
 
-		slot3 = slot3 + 1
+		slot4 = slot4 + 1
 	end
 
-	table.insert(slot5, #slot0._scoutList, slot3)
-	slot0:refreshFleetFormation(slot5)
+	table.insert(slot6, #slot0._scoutList, slot4)
+	slot0:refreshFleetFormation(slot6)
 end
 
 slot7.appendMainUnit = function (slot0, slot1)
@@ -638,7 +646,7 @@ slot7.UnleashAllInStrike = function (slot0)
 	if slot0._airAssistVO:GetCurrentWeapon() and slot1:GetCurrentState() == slot1.STATE_READY then
 		slot2 = slot1:GetHost()
 
-		if slot0._IFF == slot0.FRIENDLY_CODE then
+		if slot0._IFF == slot0.FRIENDLY_CODE and slot2:IsMainFleetUnit() then
 			slot0._airAssistVO:PlayCutIn(slot2, 1)
 		end
 

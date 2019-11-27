@@ -804,8 +804,14 @@ slot0.getFleetStgIds = function (slot0, slot1)
 		table.insert(slot2, slot0:getAirDominanceStg())
 	end
 
-	for slot8, slot9 in ipairs(slot0.extraFlagList) do
-		table.insert(slot2, ChapterConst.KizunaJamming[slot9])
+	for slot8, slot9 in ipairs(slot0:getExtraFlags()) do
+		table.insert(slot2, ChapterConst.Status2StgBuff[slot9])
+	end
+
+	for slot9 = #slot2, 1, -1 do
+		if pg.strategy_data_template[slot2[slot9]].buff_id == 0 then
+			table.remove(slot2, slot9)
+		end
 	end
 
 	return slot2
@@ -862,13 +868,7 @@ slot0.updateExtraFlags = function (slot0, slot1, slot2)
 end
 
 slot0.getExtraFlags = function (slot0)
-	slot1 = {}
-
-	for slot5, slot6 in ipairs(slot0.extraFlagList) do
-		table.insert(slot1, ChapterConst.KizunaJamming[slot6])
-	end
-
-	return slot1
+	return slot0.extraFlagList
 end
 
 slot0.updateShipStg = function (slot0, slot1, slot2, slot3)

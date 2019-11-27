@@ -66,7 +66,13 @@ slot0.getUIName = function (slot0)
 end
 
 slot0.getBGM = function (slot0)
-	return "main"
+	slot2 = getProxy(SettingsProxy):IsBGMEnable()
+
+	if slot0.tempFlagShip:IsBgmSkin() and slot2 then
+		return slot1:GetSkinBgm()
+	else
+		return "holo-sss-inst"
+	end
 end
 
 slot0.setShips = function (slot0, slot1)
@@ -137,6 +143,8 @@ slot0.init = function (slot0)
 	slot0._acitivtyBossBtn = slot0:findTF("activity_boss", slot0._ActivityBtns)
 	slot0._activityMusicFestivalBtn = slot0:findTF("activity_musicfestival", slot0._ActivityBtns)
 	slot0._activityInsBtn = slot0:findTF("toTop/frame/leftPanel/activity_ins")
+	slot0._activityHololiveBtn = slot0:findTF("activity_hololive_medal", slot0._ActivityBtns)
+	slot0._activityHoloLiveLinkGameBtn = slot0:findTF("activity_hololive_linkgame_btn", slot0._ActivityBtns)
 	slot0._bottomPanel = slot0:findTF("toTop/frame/bottomPanel")
 	slot0._dockBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/dockBtn")
 	slot0._equipBtn = slot0:findTF("toTop/frame/bottomPanel/btm/buttons_container/equipButton")
@@ -743,7 +751,8 @@ slot0.didEnter = function (slot0)
 			return
 		end
 
-		slot0:updateFlagShip(getProxy(BayProxy):getShipById(slot1.characters[getProxy(SettingsProxy):rotateCurrentSecretaryIndex()]))
+		slot0:updateFlagShip(slot3)
+		slot0:setFlagShip(getProxy(BayProxy):getShipById(slot1.characters[getProxy(SettingsProxy):rotateCurrentSecretaryIndex()]))
 
 		if slot0.shipPrefab and slot0.shipModel then
 			PoolMgr.GetInstance():ReturnSpineChar(slot0.shipPrefab, slot0.shipModel)
@@ -1188,6 +1197,32 @@ slot0.updateActivityBossBtn = function (slot0, slot1)
 		end
 
 		setActive(slot0._acitivtyBossBtn:Find("tip"), slot3)
+	end
+end
+
+slot0.updateActivityHololiveMedalBtn = function (slot0, slot1)
+	setActive(slot0._activityHololiveBtn, slot1 and not slot1:isEnd())
+
+	if slot1 and not slot1.isEnd() then
+		onButton(slot0, slot0._activityHololiveBtn, function ()
+			slot0:emit(MainUIMediator.GO_SCENE, {
+				SCENE.HOLOLIVE_MEDAL
+			})
+		end, SFX_PANEL)
+		setActive(slot0._activityHololiveBtn:Find("tip"), HololiveMedalCollectionView.IsTip())
+	end
+end
+
+slot0.updateActivityHololiveLinkGameBtn = function (slot0, slot1)
+	setActive(slot0._activityHoloLiveLinkGameBtn, slot1 and not slot1:isEnd())
+
+	if slot1 and not slot1.isEnd() then
+		onButton(slot0, slot0._activityHoloLiveLinkGameBtn, function ()
+			slot0:emit(MainUIMediator.GO_SCENE, {
+				SCENE.HOLOLIVE_LINKLINK_SELECT_SCENE
+			})
+		end, SFX_PANEL)
+		setActive(slot0._activityHoloLiveLinkGameBtn:Find("tip"), HoloLiveLinkLinkSelectScene.isTip())
 	end
 end
 
@@ -3889,8 +3924,10 @@ end
 slot0.setFlagShip = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-2, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.tempFlagShip = slot1
+
+	slot0:PlayBGM()
 
 	return
 	--- END OF BLOCK #0 ---

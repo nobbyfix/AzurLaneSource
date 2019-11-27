@@ -175,7 +175,7 @@ end
 
 slot0.getDefaultSkin = function (slot0)
 	for slot4, slot5 in ipairs(pg.ship_skin_template.all) do
-		if pg.ship_skin_template[slot5].ship_group == slot0 and slot6.skin_type == Ship.SKIN_TYPE_DEFAULT then
+		if pg.ship_skin_template[slot5].ship_group == slot0 and slot6.skin_type == ShipSkin.SKIN_TYPE_DEFAULT then
 			return slot6
 		end
 	end
@@ -183,7 +183,7 @@ end
 
 slot0.getProposeSkin = function (slot0)
 	for slot4, slot5 in ipairs(pg.ship_skin_template.all) do
-		if pg.ship_skin_template[slot5].ship_group == slot0 and slot6.skin_type == Ship.SKIN_TYPE_PROPOSE then
+		if pg.ship_skin_template[slot5].ship_group == slot0 and slot6.skin_type == ShipSkin.SKIN_TYPE_PROPOSE then
 			return slot6
 		end
 	end

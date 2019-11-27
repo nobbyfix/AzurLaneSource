@@ -1,8 +1,8 @@
 slot0 = class("RequestPackage")
 
-slot0.Start = function (slot0)
+slot0.Start = function (slot0, ...)
 	if slot0.__call then
-		slot0:__call()
+		slot0:__call(...)
 	end
 
 	return slot0

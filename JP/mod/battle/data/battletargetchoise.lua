@@ -413,6 +413,9 @@ ys.Battle.BattleTargetChoise = {
 
 		return slot4
 	end,
+	TargetRandom = function (slot0, slot1, slot2)
+		return Mathf.MultiRandom(slot2 or ys.Battle.BattleDataProxy.GetInstance():GetUnitList(), slot1.randomCount or 1)
+	end,
 	TargetInsideArea = function (slot0, slot1, slot2)
 		slot3 = slot2 or slot0:TargetAllHarm()
 		slot5 = slot1.lineX

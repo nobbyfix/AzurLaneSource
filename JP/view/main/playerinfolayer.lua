@@ -6,6 +6,16 @@ slot0.getUIName = function (slot0)
 	return "AdmiralUI"
 end
 
+slot0.GetBGM = function (slot0)
+	slot2 = getProxy(SettingsProxy):IsBGMEnable()
+
+	if slot0.flagShip:IsBgmSkin() and slot2 then
+		return slot1:GetSkinBgm()
+	else
+		return "main"
+	end
+end
+
 slot0.setPlayer = function (slot0, slot1)
 	slot0:updatePlayerInfo(slot1)
 end
@@ -28,6 +38,7 @@ slot0.setCurrentFlagship = function (slot0, slot1)
 	slot0:updatePainting(slot1)
 	slot0:updateLive2DState()
 	slot0:updateBGState()
+	slot0:updateBGMState()
 	slot0:updateSwichSkinBtn(slot1)
 end
 
@@ -70,11 +81,12 @@ slot0.init = function (slot0)
 	slot0.replaceBtn = slot0:findTF("replace_btn", slot0.leftPanel)
 	slot0.swichSkinBtn = slot0:findTF("swichSkin_btn", slot0.leftPanel)
 	slot0.hzszBtn = slot0:findTF("hzsz", slot0.leftPanel)
-	slot0.live2dBtn = slot0:findTF("L2D_btn", slot0.bottomPanel)
+	slot0.live2dBtn = slot0:findTF("content/L2D_btn", slot0.bottomPanel)
 	slot0.live2dToggle = slot0.live2dBtn:Find("toggle")
 	slot0.live2dState = slot0.live2dBtn:Find("state")
-	slot0.showBgBtn = slot0:findTF("BG_btn", slot0.bottomPanel)
+	slot0.showBgBtn = slot0:findTF("content/BG_btn", slot0.bottomPanel)
 	slot0.showBgToggle = slot0.showBgBtn:Find("toggle")
+	slot0.bgmBtn = slot0:findTF("content/BGM_btn", slot0.bottomPanel)
 	slot0.addMedalBtn = slot0:findTF("medalList/appendBtn", slot0.rightPanel)
 
 	setActive(slot0.addMedalBtn, false)
@@ -376,6 +388,24 @@ slot0.updateFashion = function (slot0)
 	slot0:updateBGState()
 end
 
+slot0.updateBGMState = function (slot0)
+	slot1(slot3)
+
+	if slot0.flagShip:IsBgmSkin() then
+		setActive(slot0.bgmBtn, true)
+		removeOnButton(slot0.bgmBtn)
+		onButton(slot0, slot0.bgmBtn, function ()
+			slot0 = not slot0
+
+			slot1:SetBgmFlag(slot1.SetBgmFlag)
+			slot1.SetBgmFlag(slot1.SetBgmFlag)
+		end, SFX_PANEL)
+	else
+		removeOnButton(slot0.bgmBtn)
+		setActive(slot0.bgmBtn, false)
+	end
+end
+
 slot0.updateLive2DState = function (slot0)
 	slot1 = "live2d/" .. string.lower(slot0.flagShip:getPainting())
 	slot3 = getProxy(SettingsProxy).getCharacterSetting(slot2, slot0.flagShip.id, "l2d")
@@ -445,37 +475,7 @@ slot0.isCurrentShipExistSkin = function (slot0, slot1)
 end
 
 slot0.getGroupSkinList = function (slot0, slot1)
-	slot2 = ShipGroup.getSkinList(slot1)
-
-	if pg.ship_data_trans[slot1] and not slot0.flagShip:isRemoulded() then
-		slot3 = ShipGroup.GetGroupConfig(slot1).trans_skin
-
-		for slot7 = #slot2, 1, -1 do
-			if slot2[slot7].id == slot3 then
-				table.remove(slot2, slot7)
-
-				break
-			end
-		end
-	end
-
-	for slot6 = #slot2, 1, -1 do
-		if slot2[slot6].show_time and ((type(slot7.show_time) == "string" and slot7.show_time == "stop") or (type(slot7.show_time) == "table" and not pg.TimeMgr.GetInstance():inTime(slot7.show_time))) then
-			table.remove(slot2, slot6)
-		end
-	end
-
-	if PLATFORM_CODE == PLATFORM_CH then
-		slot3 = pg.gameset.big_seven_old_skin_timestamp.key_value
-
-		for slot7 = #slot2, 1, -1 do
-			if slot2[slot7].skin_type == 3 and slot3 < slot0.flagShip.createTime then
-				table.remove(slot2, slot7)
-			end
-		end
-	end
-
-	return slot2
+	return getProxy(ShipSkinProxy):GetAllSkinForShip(slot0.flagShip)
 end
 
 slot0.updateBGState = function (slot0)

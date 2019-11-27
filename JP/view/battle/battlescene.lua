@@ -36,7 +36,7 @@ slot0.init = function (slot0)
 	ys.Battle.BattleVariable.skillTips = ys.Battle.BattleVariable.findTF(slot0, "Skill_Activation")
 	ys.Battle.BattleVariable.skillRoot = ys.Battle.BattleVariable.findTF(slot0, "Skill_Activation/Root")
 	ys.Battle.BattleVariable.skillTpl = ys.Battle.BattleVariable.findTF(slot0, "Skill_Activation/mask").gameObject
-	ys.Battle.BattleVariable._skillFloatPool = pg.Pool.New(ys.Battle.BattleVariable.skillRoot, ys.Battle.BattleVariable.skillTpl, 4, 10, true, false):InitSize()
+	ys.Battle.BattleVariable._skillFloatPool = pg.Pool.New(ys.Battle.BattleVariable.skillRoot, ys.Battle.BattleVariable.skillTpl, 15, 10, true, false):InitSize()
 	ys.Battle.BattleVariable.skillCMDRoot = ys.Battle.BattleVariable.findTF(slot0, "Skill_Activation/Root_cmd")
 	ys.Battle.BattleVariable.skillCMDTpl = ys.Battle.BattleVariable.findTF(slot0, "Skill_Activation/mask_cmd").gameObject
 	ys.Battle.BattleVariable._skillFloatCMDPool = pg.Pool.New(ys.Battle.BattleVariable.skillCMDRoot, ys.Battle.BattleVariable.skillCMDTpl, 2, 4, true, false):InitSize()
@@ -310,7 +310,7 @@ end
 slot0.didEnter = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-65, warpins: 1 ---
+	--- BLOCK #0 1-119, warpins: 1 ---
 	setActive(slot0._tf, false)
 
 	GetComponent(slot0._tf, typeof(AspectRatioFitter)).enabled = true
@@ -372,13 +372,74 @@ slot0.didEnter = function (slot0)
 
 
 	end)
+
+	slot4 = {
+		ys.Battle.BattleConst.BuffEffectType.ON_START_GAME,
+		ys.Battle.BattleConst.BuffEffectType.ON_FLAG_SHIP,
+		ys.Battle.BattleConst.BuffEffectType.ON_CONSORT,
+		ys.Battle.BattleConst.BuffEffectType.ON_LEADER,
+		ys.Battle.BattleConst.BuffEffectType.ON_REAR,
+		ys.Battle.BattleConst.BuffEffectType.ON_SUB_LEADER,
+		ys.Battle.BattleConst.BuffEffectType.ON_SUB_CONSORT
+	}
+
+	local function slot6(slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = 0
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 6-15, warpins: 0 ---
+		for slot5, slot6 in ipairs(slot0) do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 6-13, warpins: 1 ---
+			slot1 = slot1 + ys.Battle.BattleDataFunction.GetShipSkillTriggerCount(slot6, slot0)
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 14-15, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 16-16, warpins: 1 ---
+		return slot1
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot0._skillFloatPool = pg.Pool.New(slot0.skillRoot, slot0.skillTpl, 0 + slot6(slot0.contextData.battleData.MainUnitList) + slot6(slot0.contextData.battleData.VanguardUnitList) + slot6(slot0.contextData.battleData.SubUnitList) + 2, 10, true, false):InitSize()
+
 	slot0:emit(BattleMediator.ENTER)
 	slot0:initPauseWindow()
 
 	if slot0.contextData.prePause then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 66-71, warpins: 1 ---
+		--- BLOCK #0 120-125, warpins: 1 ---
 		triggerButton(slot0:findTF("PauseBtn"))
 		--- END OF BLOCK #0 ---
 
@@ -393,7 +454,7 @@ slot0.didEnter = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 72-79, warpins: 2 ---
+	--- BLOCK #1 126-133, warpins: 2 ---
 	setActive(slot2, slot1:ChatUseable())
 
 	return

@@ -108,43 +108,38 @@ ys or .Battle.BattleDataFunction.InitUnitSkill = function (slot0, slot1)
 	end
 end
 
-ys or .Battle.BattleDataFunction.InitEquipSkill = function (slot0, slot1, slot2)
-	slot3 = slot0.Battle.BattleState.GetInstance():GetBattleType()
+ys or .Battle.BattleDataFunction.GetEquipSkill = function (slot0)
+	slot1 = Ship.WEAPON_COUNT
+	slot2 = {}
 
-	for slot7, slot8 in ipairs(slot0) do
-		if slot8.id then
-			slot10 = {}
+	for slot6, slot7 in ipairs(slot0) do
+		if slot7.id then
+			slot9 = nil
 
-			if slot2 and slot2 < slot7 then
-				if slot1.GetWeaponDataFromID(slot9) ~= nil then
-					slot10 = slot11.skill_id
+			if slot1 and slot1 < slot6 then
+				if slot0.GetWeaponDataFromID(slot8) ~= nil then
+					slot9 = slot10.skill_id
 				end
 			else
-				slot10 = slot1.GetWeaponDataFromID(slot9).skill_id
+				slot9 = slot0.GetWeaponDataFromID(slot8).skill_id
 			end
 
-			if type(slot8.equipmentInfo) == "table" then
-				slot10 = table.merge(slot10, slot8.equipmentInfo:GetAffixBuffList(), true)
+			if type(slot7.equipmentInfo) == "table" then
+				slot9 = table.merge(slot9, slot7.equipmentInfo:GetAffixBuffList(), true)
 			end
 
-			for slot14, slot15 in ipairs(slot10) do
-				slot17 = false
-
-				if slot0.Battle.BattleDataFunction.GetBuffTemplate(slot15, 1).limit then
-					for slot21, slot22 in ipairs(slot16) do
-						if slot3 == slot22 then
-							slot17 = true
-
-							break
-						end
-					end
-				end
-
-				if not slot17 then
-					slot1:AddBuff(slot0.Battle.BattleBuffUnit.New(slot15, 1, slot1))
-				end
+			for slot13, slot14 in ipairs(slot9) do
+				table.insert(slot2, slot14)
 			end
 		end
+	end
+
+	return slot2
+end
+
+ys or .Battle.BattleDataFunction.InitEquipSkill = function (slot0, slot1)
+	for slot6, slot7 in ipairs(slot2) do
+		slot1:AddBuff(slot1.Battle.BattleBuffUnit.New(slot7, 1, slot1))
 	end
 end
 

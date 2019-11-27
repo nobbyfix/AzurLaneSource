@@ -5,11 +5,11 @@ slot0.__call = function (slot0)
 		return
 	end
 
-	pg.PoolMgr.GetInstance():ReturnSpineChar(slot0.name, slot0.model)
-
 	if slot0.callback then
-		slot0.callback()
+		slot0.callback(slot0.model)
 	end
+
+	pg.PoolMgr.GetInstance():ReturnSpineChar(slot0.name, slot0.model)
 
 	return slot0
 end

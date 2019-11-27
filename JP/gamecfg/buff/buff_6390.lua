@@ -18,15 +18,6 @@ return {
 			arg_list = {
 				buff_id = 6391
 			}
-		},
-		{
-			type = "BattleBuffCastSkill",
-			trigger = {
-				"onAttach"
-			},
-			arg_list = {
-				skill_id = 6390
-			}
 		}
 	}
 }

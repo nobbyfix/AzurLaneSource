@@ -39,6 +39,7 @@ class("LoadPlayerDataCommand", pm.SimpleCommand).execute = function (slot0, slot
 	slot0.facade:registerProxy(PrayProxy.New())
 	slot0.facade:registerProxy(EmojiProxy.New())
 	slot0.facade:registerProxy(MiniGameProxy.New())
+	slot0.facade:registerProxy(InstagramProxy.New())
 	pg.ConnectionMgr.GetInstance():setPacketIdx(1)
 	pg.ConnectionMgr.GetInstance():Send(11001, {
 		timestamp = 0

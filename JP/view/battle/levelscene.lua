@@ -5793,10 +5793,10 @@ slot0.hideAmbushInfo = function (slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-3, warpins: 1 ---
-	if slot0.levelAmbushView and slot0.levelAmbushView:CheckState(BaseSubView.STATES.INITED) then
+	if slot0.levelAmbushView then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 13-16, warpins: 1 ---
+		--- BLOCK #0 4-7, warpins: 1 ---
 		slot0.levelAmbushView:Destroy()
 		--- END OF BLOCK #0 ---
 
@@ -5811,7 +5811,7 @@ slot0.hideAmbushInfo = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 17-17, warpins: 3 ---
+	--- BLOCK #1 8-8, warpins: 2 ---
 	return
 	--- END OF BLOCK #1 ---
 

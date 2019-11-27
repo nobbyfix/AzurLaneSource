@@ -23,6 +23,10 @@ slot0.GetConfigCsvValue = function (slot0, slot1)
 	return pg[slot0.configCsv][slot0.configCsvKey][slot1]
 end
 
+slot0.GetConfigCsvLine = function (slot0, slot1)
+	return pg[slot0.configCsv][slot1]
+end
+
 slot0.SetRuntimeData = function (slot0, slot1, slot2)
 	slot0.runtimeData[slot1] = slot2
 end

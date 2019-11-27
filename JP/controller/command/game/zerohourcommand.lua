@@ -63,26 +63,45 @@ class("ZeroHourCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		slot14:updateActivity(slot15)
 	end
 
-	if getProxy(VoteProxy):getVoteGroup() then
-		slot16.votes = 0
+	if slot14:getActivityByType(ActivityConst.ACTIVITY_TYPE_TURNTABLE) and not slot16:isEnd() then
+		if slot16.data3 == pg.activity_event_turning[slot16:getConfig("config_id")].total_num then
+			return
+		end
 
-		slot16:updateVoteGroup(slot17)
+		slot21 = getProxy(TaskProxy)
+
+		for slot25, slot26 in ipairs(slot20) do
+			if slot21:getTaskById(slot26) or slot21:getFinishTaskById(slot26):getTaskStatus() ~= 2 then
+				return
+			end
+		end
+
+		slot0:sendNotification(GAME.ACTIVITY_OPERATION, {
+			cmd = 2,
+			activity_id = ActivityConst.ACTIVITY_TYPE_TURNTABLE
+		})
+	end
+
+	if getProxy(VoteProxy):getVoteGroup() then
+		slot17.votes = 0
+
+		slot17:updateVoteGroup(slot18)
 	end
 
 	if getProxy(GuildProxy):getData() then
-		slot19:resetGuildContributeFlag()
-		slot18:updateGuild(slot19)
+		slot20:resetGuildContributeFlag()
+		slot19:updateGuild(slot20)
 	end
 
 	slot0:sendNotification(GAME.CLASS_FORCE_UPDATE)
-	getProxy(TechnologyProxy).updateRefreshFlag(slot20, 0)
+	getProxy(TechnologyProxy).updateRefreshFlag(slot21, 0)
 	PlayerPrefs.SetInt("stop_remind_operation", 0)
 	PlayerPrefs.Save()
 
-	slot21 = getProxy(TaskProxy)
-	slot22 = getProxy(ActivityProxy)
+	slot22 = getProxy(TaskProxy)
+	slot23 = getProxy(ActivityProxy)
 
-	_.each(slot23, function (slot0)
+	_.each(slot24, function (slot0)
 		if slot0 and not slot0:isEnd() and slot0:getConfig("config_id") == 3 then
 			slot1 = slot0:getConfig("config_data")
 
@@ -104,17 +123,17 @@ class("ZeroHourCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	end)
 	getProxy(CommanderProxy):resetBoxUseCnt()
 
-	if slot22:getActivityByType(ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE) and not slot24:isEnd() then
-		slot24.data1KeyValueList = {}
+	if slot23:getActivityByType(ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE) and not slot25:isEnd() then
+		slot25.data1KeyValueList = {}
 
-		slot22:updateActivity(slot24)
+		slot23:updateActivity(slot25)
 	end
 
-	if slot22:getActivityByType(ActivityConst.ACTIVITY_TYPE_MONOPOLY) and not slot25:isEnd() then
-		slot22:updateActivity(slot25)
+	if slot23:getActivityByType(ActivityConst.ACTIVITY_TYPE_MONOPOLY) and not slot26:isEnd() then
+		slot23:updateActivity(slot26)
 	end
 
-	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_CHALLENGE) and not slot26:isEnd() then
+	if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_CHALLENGE) and not slot27:isEnd() then
 		slot0:sendNotification(GAME.CHALLENGE2_INFO, {})
 	end
 
@@ -122,21 +141,21 @@ class("ZeroHourCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		type = MiniGameRequestCommand.REQUEST_HUB_DATA
 	})
 
-	if slot22:getActivityByType(ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2) and not slot27:isEnd() then
-		slot28 = slot27.data1KeyValueList[1]
+	if slot23:getActivityByType(ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2) and not slot28:isEnd() then
+		slot29 = slot28.data1KeyValueList[1]
 
-		if pg.activity_event_worldboss[slot27:getConfig("config_id")] then
-			slot30 = ipairs
-			slot31 = slot29.normal_expedition_drop_num or {}
+		if pg.activity_event_worldboss[slot28:getConfig("config_id")] then
+			slot31 = ipairs
+			slot32 = slot30.normal_expedition_drop_num or {}
 
-			for slot33, slot34 in slot30(slot31) do
-				for slot38, slot39 in ipairs(slot34[1]) do
-					slot28[slot39] = slot34[2] or 0
+			for slot34, slot35 in slot31(slot32) do
+				for slot39, slot40 in ipairs(slot35[1]) do
+					slot29[slot40] = slot35[2] or 0
 				end
 			end
 		end
 
-		slot22:updateActivity(slot27)
+		slot23:updateActivity(slot28)
 	end
 end
 

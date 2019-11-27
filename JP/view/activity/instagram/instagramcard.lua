@@ -32,10 +32,10 @@ end
 slot0.AddCommentTimer = function (slot0, slot1)
 	if slot1:GetFastestRefreshTime() then
 		if slot2 - pg.TimeMgr.GetInstance():GetServerTime() <= 0 then
-			slot0.view:emit(InstagramMediator.ON_COMMENT_LIST_UPDATE, slot0.view.activityVO.id, slot1.id)
+			slot0.view:emit(InstagramMediator.ON_COMMENT_LIST_UPDATE, slot1.id)
 		else
 			slot0.timer = Timer.New(function ()
-				slot0.view:emit(InstagramMediator.ON_COMMENT_LIST_UPDATE, slot0.view.activityVO.id, slot1.id)
+				slot0.view:emit(InstagramMediator.ON_COMMENT_LIST_UPDATE, slot1.id)
 			end, slot4, 1)
 
 			slot0.timer:Start()

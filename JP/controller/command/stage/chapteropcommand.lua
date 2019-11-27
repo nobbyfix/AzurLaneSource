@@ -15,24 +15,6 @@ class("ChapterOpCommand", import(".ChapterOpRoutine")).execute = function (slot0
 		pg.TipsMgr.GetInstance():ShowTips(i18n("formation_switch_success", slot4.fleet.name))
 
 		return
-	elseif slot2.type == ChapterConst.OpRetreat then
-		if getProxy(ChapterProxy):getActiveChapter() and slot4:getFleetById(slot2.id) and slot5:getFleetType() == FleetType.Submarine then
-			_.each(slot4.fleets, function (slot0)
-				if slot0.id ~= slot0.id then
-					table.insert(table.insert, slot0)
-				end
-			end)
-
-			slot4.fleets = {}
-
-			slot3:updateChapter(slot4, bit.bor(ChapterConst.DirtyFleet, ChapterConst.DirtyAttachment, ChapterConst.DirtyChampion, ChapterConst.DirtyStrategy))
-			slot0:sendNotification(GAME.CHAPTER_OP_DONE, {
-				type = slot2.type,
-				id = slot5.id
-			})
-
-			return
-		end
 	elseif slot2.type == ChapterConst.OpSkipBattle then
 		slot4 = getProxy(ChapterProxy).getActiveChapter(slot3)
 		slot7 = nil
@@ -102,7 +84,7 @@ class("ChapterOpCommand", import(".ChapterOpRoutine")).execute = function (slot0
 				slot0:doShipUpdate()
 				slot0:doBuffUpdate()
 				slot0:doCellFlagUpdate()
-				slot0:doKizunaJammingUpdate()
+				slot0:doExtraFlagUpdate()
 
 				if slot1.type == ChapterConst.OpRetreat then
 					if slot3:getPlayType() == ChapterConst.TypeMainSub and (slot1.win or not slot3:isValid()) then

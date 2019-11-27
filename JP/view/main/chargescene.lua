@@ -4425,11 +4425,11 @@ slot0.jpUIEnter = function (slot0)
 	onButton(slot0, slot0.birthOkBtn, function ()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-5, warpins: 1 ---
-		if slot0.birthTxt.text == "" then
+		--- BLOCK #0 1-7, warpins: 1 ---
+		if not checkBirthFormat(slot0.birthTxt.text) then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 6-16, warpins: 1 ---
+			--- BLOCK #0 8-18, warpins: 1 ---
 			pg.TipsMgr.GetInstance():ShowTips(i18n("set_birth_empty_tip"))
 			--- END OF BLOCK #0 ---
 
@@ -4438,7 +4438,7 @@ slot0.jpUIEnter = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 17-37, warpins: 1 ---
+			--- BLOCK #0 19-39, warpins: 1 ---
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				modal = true,
 				title = i18n("set_birth_title"),
@@ -4471,7 +4471,7 @@ slot0.jpUIEnter = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 38-38, warpins: 2 ---
+		--- BLOCK #1 40-40, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 

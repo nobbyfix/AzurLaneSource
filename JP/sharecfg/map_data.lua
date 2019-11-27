@@ -1566,6 +1566,35 @@ pg.map_data = {
 			r = 0.03
 		}
 	},
+	[50040] = {
+		long_speed = 0.5,
+		long_pos = "-60.1, -57.6, 204.0;7.5, -57.6, 204.0",
+		close_pos = "37.9, -22.0, 134.4;-14.6, -22.0, 134.4;136.5, -22.0, 134.4;87.2, -22.0, 134.4;181.4, -22.0, 134.4",
+		long_scale = "5.0, 5.0, 5.0;5.0, 5.0, 5.0",
+		sky_pos = "-30.3, -80.8, 260.5;-9.9, -64.3, 220.4;-15.8, -81.7, 244.3;-46.0, -34.1, 164.4",
+		map_id = 50040,
+		sea_shot = "sea_hololive;gelidai",
+		close_scale = "6.0, 6.0, 6.0;6.0, 6.0, 6.0;6.0, 6.0, 6.0;6.0, 6.0, 6.0;6.0, 6.0, 6.0",
+		sea_pos = "-43.0, -1.0, 52.8;-27.1, -5.6, 54.0",
+		sea_scale = "22.5, 1.0, 12.2;9.4, 23.9, 28.4",
+		range_left = -200,
+		range_right = 244.6,
+		sky_scale = "12.6, 9.1, 1.2;5.0, 5.0, 5.0;10.0, 10.0, 5.0;-1120.0, 7.0, 0.9",
+		mid_scale = "6.0, 6.0, 6.0;6.0, 6.0, 6.0;6.0, 6.0, 6.0;6.0, 6.0, 6.0",
+		close_shot = "hololive_jinjing01;hololive_jinjing02;hololive_jinjing01;hololive_jinjing02;hololive_jinjing02",
+		long_shot = "hololive_yuanjing02;hololive_yuanjing02",
+		sky_shot = "sky_hololive;hololive_yuanjing01;hololive_yuanjing03;wuqiyinghuaeasy",
+		mid_pos = "41.1, -29.5, 154.0;-41.1, -30.2, 154.0;104.6, -30.2, 154.0;154.4, -29.5, 154.0",
+		mid_shot = "hololive_zhongjing01;hololive_zhongjing02;hololive_zhongjing02;hololive_zhongjing01",
+		mid_speed = 2.34,
+		close_speed = 4.29,
+		diving_filter = {
+			g = 0.03,
+			a = 0.35,
+			b = 0.23,
+			r = 0.03
+		}
+	},
 	[90000] = {
 		long_speed = 1,
 		long_pos = "4.3, -57.6, 204.0;32.9, -57.7, 204.0;52.6, -57.6, 204.0;90.8, -57.7, 204.0;123.6, -57.6, 204.0;169.9, -57.7, 204.0;-69.0, -57.7, 204.0;-37.7, -57.6, 204.0;-7.5, -57.7, 204.0",
@@ -1795,6 +1824,7 @@ pg.map_data = {
 		50037,
 		50038,
 		50039,
+		50040,
 		90000,
 		90001,
 		90002,

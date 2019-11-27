@@ -3741,6 +3741,471 @@ pg.equip_skin_template = {
 			54014
 		}
 	},
+	[200] = {
+		bullet_name = "zidan_hulizidan",
+		name = "おるやんけ弾",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "おるやんけ、高速飛行中",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91911",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 200,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			1,
+			2,
+			3
+		},
+		weapon_ids = {
+			101,
+			101
+		}
+	},
+	[201] = {
+		bullet_name = "zidan_qianliyan",
+		name = "千里眼弾",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "千里眼スタイルの弾（魔法はかかってないよ）",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91912",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 201,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			1,
+			2,
+			3
+		},
+		weapon_ids = {
+			101,
+			101
+		}
+	},
+	[202] = {
+		bullet_name = "zidan_shishen",
+		name = "式神弾",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "幽世からやってきた式神",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91913",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 202,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			1,
+			2,
+			3
+		},
+		weapon_ids = {
+			101,
+			101
+		}
+	},
+	[203] = {
+		bullet_name = "paodan_aqua",
+		name = "あくあ！！！！！砲弾",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "湊あくあ、参上！！！！！！！！！！！！！",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91914",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 203,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			4,
+			11
+		},
+		weapon_ids = {
+			24000,
+			24000,
+			24000
+		}
+	},
+	[204] = {
+		bullet_name = "paodan_zhaxiashi",
+		name = "エビフライオン砲弾",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "当たってもあまり痛くない……のはず",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91915",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 204,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			4,
+			11
+		},
+		weapon_ids = {
+			24000,
+			24000,
+			24000
+		}
+	},
+	[205] = {
+		bullet_name = "paodan_chuixueque",
+		name = "フブチュン砲弾",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "ホロ生物名簿：フブチュン",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91916",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 205,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			4,
+			11
+		},
+		weapon_ids = {
+			24000,
+			24000,
+			24000
+		}
+	},
+	[206] = {
+		bullet_name = "yulei_holomaikefeng",
+		name = "そらのマイク魚雷",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "わたしの歌を聴いてください！",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91921",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 206,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			5,
+			13
+		},
+		weapon_ids = {
+			107,
+			107
+		}
+	},
+	[207] = {
+		bullet_name = "yulei_yumi",
+		name = "とうもろこし魚雷",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "美味しそうなトウモロコシ",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91922",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 207,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			5,
+			13
+		},
+		weapon_ids = {
+			107,
+			107
+		}
+	},
+	[208] = {
+		bullet_name = "yulei_holoyulei",
+		name = "マリン魚雷",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "マリンパワーが秘められている",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91923",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 208,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			5,
+			13
+		},
+		weapon_ids = {
+			107,
+			107
+		}
+	},
+	[209] = {
+		bullet_name = "feiji_hulifeiji",
+		name = "マッハ2.42おるやんけ（攻撃）",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "おるやんけマッハで飛行中",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91931",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 209,
+		derivate_torpedo = "yulei_yumi",
+		ship_skin_id = 0,
+		equip_type = {
+			8
+		},
+		weapon_ids = {
+			61503,
+			61504
+		}
+	},
+	[210] = {
+		bullet_name = "feiji_hulifeiji",
+		name = "マッハ2.42おるやんけ（戦闘）",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "おるやんけマッハで飛行中",
+		ship_config_id = 100011,
+		derivate_boom = "zidan_hulizidan",
+		icon = "91931",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 210,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			7
+		},
+		weapon_ids = {
+			61505,
+			54010
+		}
+	},
+	[211] = {
+		bullet_name = "feiji_hulifeiji",
+		name = "マッハ2.42おるやんけ（爆撃）",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "おるやんけマッハで飛行中",
+		ship_config_id = 100011,
+		derivate_boom = "zidan_hulizidan",
+		icon = "91931",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 211,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			9
+		},
+		weapon_ids = {
+			61501,
+			54014
+		}
+	},
+	[212] = {
+		bullet_name = "feiji_vtuber2",
+		name = "ミオチュン（攻撃）",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "ホロ生物名簿：ミオチュン",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91932",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 212,
+		derivate_torpedo = "yulei_holomaikefeng",
+		ship_skin_id = 0,
+		equip_type = {
+			8
+		},
+		weapon_ids = {
+			61503,
+			61504
+		}
+	},
+	[213] = {
+		bullet_name = "feiji_vtuber2",
+		name = "ミオチュン（戦闘）",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "ホロ生物名簿：ミオチュン",
+		ship_config_id = 100011,
+		derivate_boom = "paodan_chuixueque",
+		icon = "91932",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 213,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			7
+		},
+		weapon_ids = {
+			61505,
+			54010
+		}
+	},
+	[214] = {
+		bullet_name = "feiji_vtuber2",
+		name = "ミオチュン（爆撃）",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "ホロ生物名簿：ミオチュン",
+		ship_config_id = 100011,
+		derivate_boom = "paodan_chuixueque",
+		icon = "91932",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 214,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			9
+		},
+		weapon_ids = {
+			61501,
+			54014
+		}
+	},
+	[215] = {
+		bullet_name = "feiji_vtuber1",
+		name = "ぽよ余（攻撃）",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "ホロ生物名簿：ぽよ余",
+		ship_config_id = 100011,
+		derivate_boom = "",
+		icon = "91933",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 215,
+		derivate_torpedo = "yulei_holoyulei",
+		ship_skin_id = 0,
+		equip_type = {
+			8
+		},
+		weapon_ids = {
+			61503,
+			61504
+		}
+	},
+	[216] = {
+		bullet_name = "feiji_vtuber1",
+		name = "ぽよ余（戦闘）",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "ホロ生物名簿：ぽよ余",
+		ship_config_id = 100011,
+		derivate_boom = "zidan_shishen",
+		icon = "91933",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 216,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			7
+		},
+		weapon_ids = {
+			61505,
+			54010
+		}
+	},
+	[217] = {
+		bullet_name = "feiji_vtuber1",
+		name = "ぽよ余（爆撃）",
+		attachment_combat_ui = "",
+		type = 1,
+		attachment_cusual = "",
+		attachment_combat_scene = "",
+		desc = "ホロ生物名簿：ぽよ余",
+		ship_config_id = 100011,
+		derivate_boom = "zidan_shishen",
+		icon = "91933",
+		rarity = 4,
+		attachment_key = 0,
+		derivate_bullet = "",
+		id = 217,
+		derivate_torpedo = "",
+		ship_skin_id = 0,
+		equip_type = {
+			9
+		},
+		weapon_ids = {
+			61501,
+			54014
+		}
+	},
 	[1001] = {
 		bullet_name = "Nep_bullet_shizi",
 		name = "十字キー砲弾（P）",
@@ -5235,6 +5700,24 @@ pg.equip_skin_template = {
 		195,
 		196,
 		197,
+		200,
+		201,
+		202,
+		203,
+		204,
+		205,
+		206,
+		207,
+		208,
+		209,
+		210,
+		211,
+		212,
+		213,
+		214,
+		215,
+		216,
+		217,
 		1001,
 		1002,
 		1003,

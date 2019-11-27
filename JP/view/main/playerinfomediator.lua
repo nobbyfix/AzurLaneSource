@@ -64,13 +64,18 @@ slot0.register = function (slot0)
 		end
 
 		slot0:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
+			callbackQuit = true,
 			selectedMax = slot0.viewComponent.secretary_max,
 			flags = slot1,
 			selectedIds = slot2,
 			ignoredIds = slot2,
-			onSelected = function (slot0)
+			onSelected = function (slot0, slot1)
 				slot0.contextData.showSelectCharacters = false
-				slot0.contextData.shipIdToAdd = slot0
+
+				slot0:sendNotification(GAME.CHANGE_PLAYER_ICON, {
+					characterId = slot0,
+					callback = slot1
+				})
 			end
 		})
 	end)
@@ -102,13 +107,6 @@ slot0.register = function (slot0)
 	slot0:bind(slot0.ON_ATTIRE, function ()
 		slot0:sendNotification(GAME.GO_SCENE, SCENE.ATTIRE)
 	end)
-
-	if slot0.contextData.shipIdToAdd then
-		slot0:sendNotification(GAME.CHANGE_PLAYER_ICON, {
-			characterId = slot0.contextData.shipIdToAdd
-		})
-	end
-
 	slot0.viewComponent:setFleetGearScore(slot10)
 	slot0.viewComponent:updateFleetGSView()
 	slot0:bind(slot0.ON_CHANGE_MEDAL_DISPLAY, function (slot0, slot1)

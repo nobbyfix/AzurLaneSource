@@ -347,6 +347,18 @@ slot0.updateActivityData = function (slot0, slot1, slot2, slot3, slot4)
 		elseif slot1.cmd == 3 then
 			slot3.data4 = defaultValue(slot3.data4, 0) + 1
 		end
+	elseif slot5 == ActivityConst.ACTIVITY_TYPE_TURNTABLE then
+		if slot1.cmd == 2 then
+			slot3.data4 = 0
+		elseif slot1.cmd == 1 then
+			if slot3.data3 == pg.activity_event_turning[slot3:getConfig("config_id")].total_num then
+				slot3.data2 = 1
+				slot3.data3 = slot3.data3 + 1
+			else
+				slot3.data3 = slot3.data3 + 1
+				slot3.data4 = slot2.number[1]
+			end
+		end
 	end
 
 	return slot3
@@ -412,6 +424,7 @@ slot0.performance = function (slot0, slot1, slot2, slot3, slot4)
 
 		if #slot6 > 0 then
 			slot3:sendNotification(slot1:getNotificationMsg(), {
+				activityId = slot5.activity_id,
 				awards = slot6,
 				callback = slot1.getNotificationMsg()
 			})

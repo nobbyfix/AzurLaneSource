@@ -52,17 +52,19 @@ slot5.SetBoneList = function (slot0)
 	slot1 = slot0:GetInitScale()
 
 	for slot5, slot6 in pairs(slot0._unitData:GetTemplate().bound_bone) do
-		slot7 = {}
+		if slot5 ~= "remote" then
+			slot7 = {}
 
-		for slot11, slot12 in ipairs(slot6) do
-			if type(slot12) == "table" then
-				slot7[#slot7 + 1] = Vector3(slot12[1], slot12[2], slot12[3])
-			else
-				slot7[#slot7 + 1] = Vector3.zero
+			for slot11, slot12 in ipairs(slot6) do
+				if type(slot12) == "table" then
+					slot7[#slot7 + 1] = Vector3(slot12[1], slot12[2], slot12[3])
+				else
+					slot7[#slot7 + 1] = Vector3.zero
+				end
 			end
-		end
 
-		slot0._boneList[slot5] = slot7
+			slot0._boneList[slot5] = slot7
+		end
 	end
 end
 
