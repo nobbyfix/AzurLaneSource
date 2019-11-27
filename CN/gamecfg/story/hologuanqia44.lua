@@ -429,7 +429,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "敌人在白光中消失了。这样就算是…赢了…对了吧？",
+			say = "敌人在白光中消失了。这样就算是…赢了…对吧？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

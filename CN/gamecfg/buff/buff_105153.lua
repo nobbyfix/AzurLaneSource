@@ -150,9 +150,9 @@ return {
 	icon = 105060,
 	last_effect = "",
 	blink = {
-		0,
-		0.7,
 		1,
+		0,
+		0,
 		0.3,
 		0.3
 	},

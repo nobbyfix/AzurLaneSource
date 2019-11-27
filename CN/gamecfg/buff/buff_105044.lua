@@ -154,7 +154,7 @@ return {
 	id = 105044,
 	time = 8,
 	picture = "",
-	desc = "提高伤害",
+	desc = "",
 	stack = 1,
 	color = "yellow",
 	icon = 105040,

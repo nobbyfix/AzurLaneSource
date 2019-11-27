@@ -547,7 +547,7 @@ return {
 		{
 			side = 2,
 			dir = 1,
-			say = "千钧一发之际，时乃空推开{namecode:158}，用舰装袭来的炮弹",
+			say = "千钧一发之际，时乃空推开{namecode:158}，用舰装挡住袭来的炮弹",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

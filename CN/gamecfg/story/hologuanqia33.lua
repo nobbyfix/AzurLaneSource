@@ -105,11 +105,12 @@ return {
 			}
 		},
 		{
-			actor = 900011,
-			side = 2,
 			nameColor = "#ff5c5c",
+			side = 2,
 			dir = 1,
 			blackBg = true,
+			actor = 900011,
+			actorName = "测试怪人",
 			say = "这个该死的权限认证…",
 			typewriter = {
 				speed = 0.05,

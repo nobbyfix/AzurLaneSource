@@ -150,7 +150,7 @@ return {
 		}
 	},
 	time = 3,
-	name = "鬼神演舞",
+	name = "",
 	init_effect = "",
 	picture = "",
 	desc = "概率触发器",

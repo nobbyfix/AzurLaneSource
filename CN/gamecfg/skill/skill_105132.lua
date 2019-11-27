@@ -14,7 +14,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 999,
@@ -27,7 +30,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 68941,
@@ -53,7 +59,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 999,
@@ -66,7 +75,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 68942,
@@ -92,7 +104,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 999,
@@ -105,7 +120,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 68943,
@@ -131,7 +149,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 999,
@@ -144,7 +165,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 68944,
@@ -170,7 +194,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 999,
@@ -183,7 +210,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 68945,
@@ -209,7 +239,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 999,
@@ -222,7 +255,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 68946,
@@ -248,7 +284,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 999,
@@ -261,7 +300,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 68947,
@@ -287,7 +329,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 999,
@@ -300,7 +345,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 68948,
@@ -326,7 +374,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 999,
@@ -339,7 +390,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 68949,
@@ -365,7 +419,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 999,
@@ -378,7 +435,10 @@ return {
 				targetAniEffect = "",
 				casterAniEffect = "",
 				type = "BattleSkillFire",
-				target_choise = "TargetShipTag",
+				target_choise = {
+					"TargetAllHarm",
+					"TargetShipTag"
+				},
 				arg_list = {
 					delay = 0.1,
 					weapon_id = 68950,
@@ -419,7 +479,10 @@ return {
 			targetAniEffect = "",
 			casterAniEffect = "",
 			type = "BattleSkillFire",
-			target_choise = "TargetShipTag",
+			target_choise = {
+				"TargetAllHarm",
+				"TargetShipTag"
+			},
 			arg_list = {
 				delay = 0.1,
 				weapon_id = 999,
@@ -432,7 +495,10 @@ return {
 			targetAniEffect = "",
 			casterAniEffect = "",
 			type = "BattleSkillFire",
-			target_choise = "TargetShipTag",
+			target_choise = {
+				"TargetAllHarm",
+				"TargetShipTag"
+			},
 			arg_list = {
 				delay = 0.1,
 				weapon_id = 68941,

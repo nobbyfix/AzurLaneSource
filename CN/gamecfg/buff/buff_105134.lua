@@ -7,7 +7,7 @@ return {
 	stack = 1,
 	id = 105134,
 	icon = 105130,
-	last_effect = "Darkness",
+	last_effect = "",
 	effect_list = {
 		{
 			type = "BattleBuffAddTag",

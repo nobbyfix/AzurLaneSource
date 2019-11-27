@@ -72,7 +72,7 @@ return {
 			dir = 1,
 			actor = 305051,
 			nameColor = "#a9f548",
-			say = "{namecode:158}……？已经到了么，吾还要睡午觉中呢哦……",
+			say = "{namecode:158}……？已经到了么，吾还在睡午觉中呢……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
