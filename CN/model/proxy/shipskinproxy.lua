@@ -204,6 +204,8 @@ slot0.GetAllSkinForShip = function (slot0, slot1)
 
 		if PLATFORM == PLATFORM_US and slot8.no_showing == "1" then
 			table.remove(slot3, slot7)
+		elseif HXSet.isHx() and PLATFORM == PLATFORM_KR and pg.ship_skin_template[slot8.id].isHX == 1 then
+			table.remove(slot3, slot7)
 		end
 	end
 
@@ -254,9 +256,9 @@ slot0.GetAllSkinForARCamera = function (slot0, slot1)
 	for slot7 = #slot2, 1, -1 do
 		if slot2[slot7].skin_type == ShipSkin.SKIN_TYPE_NOT_HAVE_HIDE and not slot0:hasSkin(slot8.id) then
 			table.remove(slot2, slot7)
-		end
-
-		if PLATFORM == PLATFORM_US and slot8.no_showing == "1" then
+		elseif PLATFORM == PLATFORM_US and slot8.no_showing == "1" then
+			table.remove(slot2, slot7)
+		elseif HXSet.isHx() and PLATFORM == PLATFORM_KR and pg.ship_skin_template[slot8.id].isHX == 1 then
 			table.remove(slot2, slot7)
 		end
 	end

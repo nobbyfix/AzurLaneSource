@@ -1534,7 +1534,7 @@ pg.activity_template = {
 			"clutter/activity_bg_hololive_pt"
 		},
 		config_client = {
-			scrollStr = "本社爆破大作战，绝赞进行中。指挥官请继续努力收集更多的TNT吧~         "
+			scrollStr = "<color=#3689C3>本社爆破大作战，绝赞进行中。指挥官请继续努力收集更多的TNT吧~         </color>"
 		}
 	},
 	[431] = {
