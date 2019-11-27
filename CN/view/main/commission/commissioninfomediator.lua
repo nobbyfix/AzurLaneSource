@@ -70,7 +70,7 @@ slot0.register = function (slot0)
 end
 
 slot0.Notify = function (slot0)
-	slot0.viewComponent:NotifyIns(getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_INSTAGRAM))
+	slot0.viewComponent:NotifyIns(getProxy(InstagramProxy))
 	slot0.viewComponent:UpdateLinkPanel()
 end
 

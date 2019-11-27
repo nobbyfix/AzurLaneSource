@@ -5,12 +5,22 @@ slot0.CMD_SPECIAL_GAME = 3
 
 slot0.execute = function (slot0, slot1)
 	slot2 = slot1:getBody()
-	slot6 = slot2.cbFunc
+	slot3 = slot2.hubid
+	slot5 = slot2.args1
+	slot6 = 2
+
+	if slot2.cmd == slot0.CMD_COMPLETE and slot6 > #slot5 then
+		for slot10 = #slot5, slot6 - 1, 1 do
+			table.insert(slot5, 0)
+		end
+	end
+
+	slot7 = slot2.cbFunc
 
 	pg.ConnectionMgr.GetInstance():Send(26103, {
-		hubid = slot2.hubid,
-		cmd = slot2.cmd,
-		args1 = slot2.args1
+		hubid = slot3,
+		cmd = slot4,
+		args1 = slot5
 	}, 26104, function (slot0)
 		if slot0.result == 0 then
 			slot1 = getProxy(MiniGameProxy)
@@ -34,7 +44,7 @@ slot0.execute = function (slot0, slot1)
 				}))
 			end
 
-			if slot0 == slot3.CMD_COMPLETE and slot1:GetHubByHubId(slot4):getConfig("reward_target") ~= "" then
+			if slot0 == slot3.CMD_COMPLETE and slot1:GetHubByHubId(slot4):getConfig("reward_target") ~= "" and slot4 ~= 0 then
 				table.insert(slot2, {
 					count = 1,
 					type = DROP_TYPE_VITEM,

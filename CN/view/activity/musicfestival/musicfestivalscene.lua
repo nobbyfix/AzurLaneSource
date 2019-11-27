@@ -660,7 +660,7 @@ slot0.updateStageShip = function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 6-15, warpins: 1 ---
-		slot0._loadingRequest[slot1] = LoadSpineRequestPackage.New(slot1, function (slot0)
+		slot0._loadingRequest[slot1] = GetSpineRequestPackage.New(slot1, function (slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 1-54, warpins: 1 ---

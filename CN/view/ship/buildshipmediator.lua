@@ -10,6 +10,7 @@ slot0.ACT_ON_BUILD = "BuildShipMediator ACT_ON_BUILD"
 slot0.OPEN_EXCHANGE = "BuildShipMediator OPEN_EXCHANGE"
 slot0.CLOSE_EXCHANGE = "BuildShipMediator CLOSE_EXCHANGE"
 slot0.ON_UPDATE_ACT = "BuildShipMediator ON_UPDATE_ACT"
+slot0.SIMULATION_BATTLE = "BuildShipMediator SIMULATION_BATTLE"
 slot0.OPEN_PRAY_PAGE = "BuildShipMediator OPEN_PRAY_PAGE"
 slot0.CLOSE_PRAY_PAGE = "BuildShipMediator CLOSE_PRAY_PAGE"
 
@@ -113,6 +114,12 @@ slot0.register = function (slot0)
 			})
 		end
 	end)
+	slot0:bind(slot0.SIMULATION_BATTLE, function (slot0, slot1)
+		slot0:sendNotification(GAME.BEGIN_STAGE, {
+			system = SYSTEM_SIMULATION,
+			stageId = slot1
+		})
+	end)
 	slot0.viewComponent:updateQueueTip(slot7:getFinishCount())
 
 	if slot0.contextData.goToPray == true then
@@ -150,7 +157,8 @@ slot0.listNotificationInterests = function (slot0)
 		GAME.SKIP_BATCH_DONE,
 		BuildShipProxy.ADDED,
 		BuildShipProxy.REMOVED,
-		ActivityProxy.ACTIVITY_ADDED
+		ActivityProxy.ACTIVITY_ADDED,
+		GAME.BEGIN_STAGE_DONE
 	}
 end
 
@@ -203,6 +211,8 @@ slot0.handleNotification = function (slot0, slot1)
 		slot0.viewComponent:setStartCount(table.getCount(getProxy(BuildShipProxy):getRawData()))
 	elseif slot2 == ActivityProxy.ACTIVITY_ADDED then
 		slot0:checkActivityBuild()
+	elseif slot2 == GAME.BEGIN_STAGE_DONE then
+		slot0:sendNotification(GAME.GO_SCENE, SCENE.COMBATLOAD, slot3)
 	end
 end
 

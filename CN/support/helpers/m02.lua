@@ -4764,7 +4764,7 @@ function getGroupOwnSkins(slot0)
 
 			-- Decompilation error in this vicinity:
 			--- BLOCK #0 25-29, warpins: 1 ---
-			if slot10.skin_type == Ship.SKIN_TYPE_DEFAULT or table.contains(slot3, slot10.id) or (slot10.skin_type == Ship.SKIN_TYPE_REMAKE and slot4.trans) or (slot10.skin_type == Ship.SKIN_TYPE_PROPOSE and slot4.married == 1) then
+			if slot10.skin_type == ShipSkin.SKIN_TYPE_DEFAULT or table.contains(slot3, slot10.id) or (slot10.skin_type == ShipSkin.SKIN_TYPE_REMAKE and slot4.trans) or (slot10.skin_type == ShipSkin.SKIN_TYPE_PROPOSE and slot4.married == 1) then
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 53-55, warpins: 4 ---

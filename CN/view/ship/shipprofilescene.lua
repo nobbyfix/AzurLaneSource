@@ -78,7 +78,7 @@ slot0.setShipGroup = function (slot0, slot1)
 	slot0.groupSkinList = ShipGroup.getSkinList(slot0.shipGroup.id)
 
 	for slot5 = #slot0.groupSkinList, 1, -1 do
-		if slot0.groupSkinList[slot5].skin_type == 3 then
+		if slot0.groupSkinList[slot5].skin_type == ShipSkin.SKIN_TYPE_OLD or (slot6.skin_type == ShipSkin.SKIN_TYPE_NOT_HAVE_HIDE and not getProxy(ShipSkinProxy):hasSkin(slot6.id)) then
 			table.remove(slot0.groupSkinList, slot5)
 		end
 	end
@@ -640,7 +640,7 @@ slot0.initProfile = function (slot0)
 			table.insert(slot0.skinNameList, slot12)
 			table.insert(slot0.skinCanvasGroup, GetOrAddComponent(slot11, typeof(CanvasGroup)))
 
-			if slot10.skin_type == Ship.SKIN_TYPE_DEFAULT or table.contains(slot0.ownedSkinList, slot10.id) or (slot10.skin_type == Ship.SKIN_TYPE_REMAKE and slot0.shipGroup.trans) or (slot10.skin_type == Ship.SKIN_TYPE_PROPOSE and slot0.shipGroup.married == 1) then
+			if slot10.skin_type == ShipSkin.SKIN_TYPE_DEFAULT or table.contains(slot0.ownedSkinList, slot10.id) or (slot10.skin_type == ShipSkin.SKIN_TYPE_REMAKE and slot0.shipGroup.trans) or (slot10.skin_type == ShipSkin.SKIN_TYPE_PROPOSE and slot0.shipGroup.married == 1) then
 				slot12:setText(HXSet.hxLan(slot10.name))
 				onButton(slot0, slot11, function ()
 					if slot0.currSkin ~= slot1 then

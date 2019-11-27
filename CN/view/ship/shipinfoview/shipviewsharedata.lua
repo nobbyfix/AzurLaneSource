@@ -21,37 +21,7 @@ slot0.GetCurGroupSkinList = function (slot0)
 end
 
 slot0.GetGroupSkinList = function (slot0, slot1)
-	slot2 = ShipGroup.getSkinList(slot1)
-
-	if pg.ship_data_trans[slot1] and not slot0.shipVO:isRemoulded() then
-		slot3 = ShipGroup.GetGroupConfig(slot1).trans_skin
-
-		for slot7 = #slot2, 1, -1 do
-			if slot2[slot7].id == slot3 then
-				table.remove(slot2, slot7)
-
-				break
-			end
-		end
-	end
-
-	for slot6 = #slot2, 1, -1 do
-		if slot2[slot6].show_time and ((type(slot7.show_time) == "string" and slot7.show_time == "stop") or (type(slot7.show_time) == "table" and not pg.TimeMgr.GetInstance():inTime(slot7.show_time))) then
-			table.remove(slot2, slot6)
-		end
-	end
-
-	if PLATFORM_CODE == PLATFORM_CH then
-		slot3 = pg.gameset.big_seven_old_skin_timestamp.key_value
-
-		for slot7 = #slot2, 1, -1 do
-			if slot2[slot7].skin_type == 3 and slot3 < slot0.shipVO.createTime then
-				table.remove(slot2, slot7)
-			end
-		end
-	end
-
-	return slot2
+	return getProxy(ShipSkinProxy):GetAllSkinForShip(slot0.shipVO)
 end
 
 return slot0

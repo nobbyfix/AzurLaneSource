@@ -102,6 +102,24 @@ pg.strategy_data_template = {
 		desc = "危机规避~战斗中不会出现干扰了",
 		arg = {}
 	},
+	[92] = {
+		buff_id = 0,
+		name = "夜幕降临 ",
+		type = 3,
+		id = 92,
+		icon = "92",
+		desc = "黑夜来临，现在前往危险区域会遭遇怪物伏击，请小心 ",
+		arg = {}
+	},
+	[93] = {
+		buff_id = 0,
+		name = "旭日初升 ",
+		type = 3,
+		id = 93,
+		icon = "93",
+		desc = "太阳升起，现在危险区域的怪物伏击效果消失了 ",
+		arg = {}
+	},
 	[8650] = {
 		buff_id = 8650,
 		name = "聚光灯",
@@ -204,6 +222,8 @@ pg.strategy_data_template = {
 		12,
 		90,
 		91,
+		92,
+		93,
 		8650,
 		9500,
 		10001,

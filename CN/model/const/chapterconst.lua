@@ -56,16 +56,19 @@ slot0.StoryTrigger = 3
 slot0.EvtType_Poison = 1
 slot0.FlagBanaiAirStrike = 4
 slot0.FlagPoison = 5
+slot0.FlagLava = 10
+slot0.FlagNightmare = 9
 slot0.ActType_Poison = 1
 slot0.ActType_Healing = 2
 slot0.BoxBarrier = 0
 slot0.BoxDrop = 1
 slot0.BoxStrategy = 2
-slot0.BoxTorpedo = 7
 slot0.BoxAirStrike = 4
 slot0.BoxEnemy = 5
 slot0.BoxSupply = 6
+slot0.BoxTorpedo = 7
 slot0.BoxBanaiDamage = 8
+slot0.BoxLavaDamage = 9
 slot0.LBCoastalGun = 1
 slot0.LBHarbor = 2
 slot0.LBDock = 3
@@ -96,9 +99,11 @@ slot0.StrategyRepair = 4
 slot0.StrategyPresents = {
 	4
 }
-slot0.KizunaJamming = {
-	[1.0] = 90,
-	[2.0] = 91
+slot0.Status2StgBuff = {
+	90,
+	91,
+	93,
+	92
 }
 slot0.StgDtRepair = "healthy"
 slot0.StgDtAirPrepare = "air"
@@ -241,6 +246,8 @@ slot0.DirtyBase = 128
 slot0.DirtyChampionPosition = 256
 slot0.KizunaJammingEngage = 1
 slot0.KizunaJammingDodge = 2
+slot0.StatusDay = 3
+slot0.StatusNight = 4
 slot0.HpGreen = 3000
 
 slot0.GetAmbushDisplay = function (slot0)
@@ -323,6 +330,9 @@ slot0.MarkCoastalGun = 3
 slot0.MarkEscapeGrid = 4
 slot0.MarkBanaiAirStrike = 5
 slot0.MarkMovePathArrow = 6
+slot0.MarkLava = 7
+slot0.MarkHideNight = 8
+slot0.MarkNightMare = 9
 slot0.ReasonVictory = 1
 slot0.ReasonDefeat = 2
 slot0.ReasonVictoryOni = 3

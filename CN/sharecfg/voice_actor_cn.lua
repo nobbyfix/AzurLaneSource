@@ -819,6 +819,34 @@ pg.voice_actor_CN = {
 	{
 		actor_name = "紫苑雪",
 		code = 205
+	},
+	{
+		actor_name = "白上吹雪",
+		code = 206
+	},
+	{
+		actor_name = "夏色祭",
+		code = 207
+	},
+	{
+		actor_name = "湊阿库娅",
+		code = 208
+	},
+	{
+		actor_name = "大神澪",
+		code = 209
+	},
+	{
+		actor_name = "百鬼绫目",
+		code = 210
+	},
+	{
+		actor_name = "时乃空",
+		code = 211
+	},
+	{
+		actor_name = "紫咲诗音",
+		code = 212
 	}
 }
 

@@ -112,6 +112,9 @@ class("TrackingCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 			end
 
 			slot5:sendNotification(GAME.TRACKING_DONE, )
+
+			getProxy(ChapterProxy).extraFlagUpdate = true
+
 			slot5:sendNotification(ChapterProxy.CHAPTER_EXTAR_FLAG_UPDATED, slot3.extraFlagList)
 		elseif slot0.result == 1 then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("levelScene_tracking_error_retry"))

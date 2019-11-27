@@ -178,16 +178,9 @@ slot0.register = function (slot0)
 		})
 	end)
 	slot0:bind(slot0.OPEN_INS, function (slot0)
-		if not getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_INSTAGRAM) or slot1:isEnd() then
-			return
-		end
-
 		slot0:addSubLayers(Context.New({
 			viewComponent = InstagramLayer,
-			mediator = InstagramMediator,
-			data = {
-				id = slot1.id
-			}
+			mediator = InstagramMediator
 		}))
 	end)
 	slot0:bind(slot0.OPEN_BACKYARD, function (slot0)
@@ -462,7 +455,8 @@ slot0.register = function (slot0)
 	slot0.viewComponent:updateActivityMapBtn(slot7:getActivityByType(ActivityConst.ACTIVITY_TYPE_ZPROJECT))
 	slot0.viewComponent:updateActivityEscort()
 	slot0.viewComponent:updateVoteBtn(slot7:GetVoteActivity(), getProxy(VoteProxy):GetOrderBook())
-	slot0.viewComponent:updateActivityMusicFestivalBtn(getProxy(ActivityProxy):getActivityById(ActivityConst.MUSIC_FESTIVAL_ID))
+	slot0.viewComponent:updateActivityHololiveMedalBtn(getProxy(ActivityProxy):getActivityById(ActivityConst.HOLOLIVE_MEDAL_COLLECTION))
+	slot0.viewComponent:updateActivityHololiveLinkGameBtn(getProxy(ActivityProxy):getActivityById(ActivityConst.HOLOLIVE_LINKLINK_ID))
 end
 
 slot0.UpdateInsNotice = function (slot0)

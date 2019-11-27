@@ -11,7 +11,13 @@ slot0.Ctor = function (slot0, slot1)
 	slot0.trait = ChapterConst.TraitNone
 	slot0.item = nil
 	slot0.itemOffset = Vector2(0, 0)
-	slot0.flagList = slot1.flag_list or {}
+	slot0.flagList = {}
+	slot2 = ipairs
+	slot3 = slot1.flag_list or {}
+
+	for slot5, slot6 in slot2(slot3) do
+		table.insert(slot0.flagList, slot6)
+	end
 
 	if slot0.attachment == ChapterConst.AttachRival then
 		slot2 = {}
@@ -34,7 +40,13 @@ slot0.Ctor = function (slot0, slot1)
 end
 
 slot0.updateFlagList = function (slot0, slot1)
-	slot0.flagList = slot1.flag_list
+	slot0.flagList = slot0.flagList or {}
+
+	table.clear(slot0.flagList)
+
+	for slot5, slot6 in ipairs(slot1.flag_list) do
+		table.insert(slot0.flagList, slot6)
+	end
 end
 
 slot0.checkHadFlag = function (slot0, slot1)

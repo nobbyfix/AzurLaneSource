@@ -271,6 +271,10 @@ ys.Battle.BattleBuffEffect.killerRequire = function (slot0, slot1, slot2, slot3)
 	return false
 end
 
+ys.Battle.BattleBuffEffect.onInitGame = function (slot0, slot1, slot2)
+	slot0:onTrigger(slot1, slot2)
+end
+
 ys.Battle.BattleBuffEffect.onStartGame = function (slot0, slot1, slot2)
 	slot0:onTrigger(slot1, slot2)
 end

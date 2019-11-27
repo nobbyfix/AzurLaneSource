@@ -909,6 +909,7 @@ pg.activity_template = {
 	[415] = {
 		mark = 20191031,
 		title_res_tag = "",
+		time = "stop",
 		type = 60,
 		login_pop = 0,
 		config_id = 0,
@@ -937,33 +938,6 @@ pg.activity_template = {
 			18,
 			19,
 			20
-		},
-		time = {
-			timer,
-			{
-				{
-					2019,
-					10,
-					31
-				},
-				{
-					0,
-					0,
-					0
-				}
-			},
-			{
-				{
-					2019,
-					11,
-					27
-				},
-				{
-					23,
-					59,
-					59
-				}
-			}
 		}
 	},
 	[419] = {
@@ -972,7 +946,7 @@ pg.activity_template = {
 		type = 3,
 		login_pop = 0,
 		config_id = 14,
-		is_show = 12,
+		is_show = 2,
 		config_client = "",
 		id = 419,
 		config_data = {},
@@ -1076,7 +1050,7 @@ pg.activity_template = {
 		type = 18,
 		login_pop = 0,
 		config_id = 3,
-		is_show = 13,
+		is_show = 3,
 		id = 422,
 		config_data = {
 			{
@@ -1283,6 +1257,689 @@ pg.activity_template = {
 					59
 				}
 			}
+		}
+	},
+	[425] = {
+		mark = 20191121,
+		title_res_tag = "zhuyemian",
+		type = 12,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 10,
+		config_client = "",
+		id = 425,
+		config_data = {
+			1290001,
+			1290002,
+			1290003,
+			1290004,
+			1290005,
+			1290006,
+			1290007,
+			1290008,
+			1290009,
+			1290010,
+			1290011,
+			1290031,
+			1290041
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/activity_bg_zhuyemian"
+		}
+	},
+	[426] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 13,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 426,
+		config_data = {
+			15135,
+			15136,
+			15137,
+			15138,
+			15139,
+			15140,
+			15141,
+			15142,
+			15143,
+			15144,
+			15151,
+			15152,
+			15153,
+			15154,
+			15155,
+			15156
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[427] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 36,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 427,
+		config_data = {
+			1291301,
+			5000,
+			50,
+			0.36,
+			0.6,
+			10
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					17
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[428] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 16,
+		login_pop = 0,
+		config_id = 138,
+		is_show = 0,
+		config_data = "100",
+		config_client = "",
+		bg = "",
+		id = 428,
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					17
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[429] = {
+		mark = 20191121,
+		title_res_tag = "hololive_llk",
+		type = 61,
+		login_pop = 0,
+		config_id = 1,
+		is_show = 9,
+		config_client = "",
+		bg = "",
+		id = 429,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[430] = {
+		mark = 20191121,
+		title_res_tag = "hololive_pt",
+		type = 54,
+		login_pop = 0,
+		config_id = 430,
+		is_show = 7,
+		id = 430,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					17
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/activity_bg_hololive_pt"
+		},
+		config_client = {
+			scrollStr = "本社爆破大作战，绝赞进行中。指挥官请继续努力收集更多的TNT吧~         "
+		}
+	},
+	[431] = {
+		mark = 20191121,
+		title_res_tag = "hololive_llk",
+		type = 57,
+		login_pop = 0,
+		config_id = 3,
+		is_show = 0,
+		config_client = "",
+		id = 431,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/activity_bg_hololive_llk"
+		}
+	},
+	[432] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 21,
+		login_pop = 0,
+		config_id = 92132,
+		is_show = 0,
+		bg = "",
+		id = 432,
+		config_data = {
+			70039,
+			70040,
+			70041,
+			70042,
+			70043,
+			70044,
+			70045,
+			70046,
+			70047
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					17
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			story = "HOLORICHANG10"
+		}
+	},
+	[433] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 13,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		config_client = "",
+		bg = "",
+		id = 433,
+		config_data = {
+			15158,
+			15159,
+			15160,
+			15161,
+			15162,
+			15163,
+			15164,
+			15165,
+			15166
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[434] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 14,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		bg = "",
+		id = 434,
+		config_data = {
+			993,
+			994,
+			995,
+			996,
+			997,
+			998,
+			999,
+			1000,
+			1001,
+			1002,
+			1003,
+			1004,
+			1005,
+			1006,
+			1007,
+			1008,
+			1009,
+			1010,
+			1011,
+			1012,
+			1013,
+			1014,
+			1015
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					17
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			"commonbg/bg_pt_hololive",
+			{
+				0.176,
+				0.164,
+				0.274,
+				1
+			},
+			painting = "xiaseji_pt",
+			pt_id = 138,
+			enter = {
+				"enter",
+				"欢迎来到hololive反抗军基地商店，今天需要来点什么呢？"
+			},
+			purchase = {
+				"purchase",
+				"多谢惠顾~！"
+			}
+		}
+	},
+	[435] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 27,
+		login_pop = 0,
+		config_id = 1,
+		is_show = 0,
+		config_data = "[{31985,100}]",
+		config_client = "",
+		bg = "",
+		id = 435,
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					10
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	[436] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 13,
+		login_pop = 0,
+		config_id = 0,
+		is_show = 0,
+		bg = "",
+		id = 436,
+		config_data = {
+			15157
+		},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			npc = {
+				"HOLOGUANQIA1",
+				15157
+			}
+		}
+	},
+	[437] = {
+		mark = 20191121,
+		title_res_tag = "dashenling_pt",
+		type = 54,
+		login_pop = 0,
+		config_id = 437,
+		is_show = 8,
+		id = 437,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		bg = {
+			"clutter/activity_bg_dashenling_pt"
+		},
+		config_client = {
+			story = {
+				{},
+				{},
+				{
+					"HOLORICHANG7"
+				},
+				{},
+				{
+					"HOLORICHANG8"
+				},
+				{},
+				{
+					"HOLORICHANG9"
+				}
+			}
+		}
+	},
+	[438] = {
+		mark = 20191121,
+		title_res_tag = "",
+		type = 1,
+		login_pop = 0,
+		config_id = 4,
+		is_show = 0,
+		bg = "",
+		id = 438,
+		config_data = {},
+		time = {
+			timer,
+			{
+				{
+					2019,
+					11,
+					27
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2019,
+					12,
+					11
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		},
+		config_client = {
+			stageid = 9801
 		}
 	},
 	[2001] = {
@@ -2051,6 +2708,20 @@ pg.activity_template = {
 		422,
 		423,
 		424,
+		425,
+		426,
+		427,
+		428,
+		429,
+		430,
+		431,
+		432,
+		433,
+		434,
+		435,
+		436,
+		437,
+		438,
 		2001,
 		2002,
 		2003,

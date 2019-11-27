@@ -1,4 +1,11 @@
 slot0 = class("ShipSkin", import(".BaseVO"))
+slot0.SKIN_TYPE_DEFAULT = -1
+slot0.SKIN_TYPE_COMMON_FASHION = 0
+slot0.SKIN_TYPE_PROPOSE = 1
+slot0.SKIN_TYPE_REMAKE = 2
+slot0.SKIN_TYPE_OLD = 3
+slot0.SKIN_TYPE_NOT_HAVE_HIDE = 4
+slot0.WITH_BGM = 5
 
 slot0.Ctor = function (slot0, slot1)
 	slot0.id = slot1.id

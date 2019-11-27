@@ -154,7 +154,7 @@ slot0.register = function (slot0)
 			end
 
 			if #slot0.add_flag_list > 0 or #slot0.del_flag_list > 0 then
-				slot2 = bit.bor(slot2, ChapterConst.DirtyStrategy)
+				slot2 = bit.bor(slot2, ChapterConst.DirtyStrategy, ChapterConst.DirtyCellFlag)
 
 				slot0:updateExtraFlag(slot1, slot0.add_flag_list, slot0.del_flag_list)
 			end
@@ -456,6 +456,8 @@ slot0.updateExtraFlag = function (slot0, slot1, slot2, slot3)
 	slot0.extraFlagUpdate = true
 
 	slot0.facade:sendNotification(slot0.CHAPTER_EXTAR_FLAG_UPDATED, slot5)
+
+	return true
 end
 
 slot0.extraFlagUpdated = function (slot0)

@@ -526,19 +526,23 @@ pg.PoolMgr.GetPrefab = function (slot0, slot1, slot2, slot3, slot4, slot5)
 	end, nil, true)
 end
 
-pg.PoolMgr.ReturnPrefab = function (slot0, slot1, slot2, slot3)
-	slot4 = slot1 .. slot2
+pg.PoolMgr.ReturnPrefab = function (slot0, slot1, slot2, slot3, slot4)
+	slot5 = slot1 .. slot2
 
 	if IsNil(slot3) then
 		Debugger.LogError("empty go: " .. slot2)
-	elseif slot0.pools_plural[slot4] then
+	elseif slot0.pools_plural[slot5] then
 		if string.find(slot1, "emoji/") == 1 and slot3:GetComponent(typeof(CriManaEffectUI)) then
-			slot5:Pause(true)
+			slot6:Pause(true)
 		end
 
 		slot3:SetActive(false)
 		slot3.transform:SetParent(slot0.root, false)
-		slot0.pools_plural[slot4]:Enqueue(slot3)
+		slot0.pools_plural[slot5]:Enqueue(slot3)
+
+		if slot4 and slot0.pools_plural[slot5].balance <= 0 then
+			slot0:DestroyPrefab(slot1, slot2)
+		end
 	else
 		slot0.Destroy(slot3)
 	end

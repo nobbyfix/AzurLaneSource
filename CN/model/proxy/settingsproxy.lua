@@ -1,6 +1,7 @@
 slot0 = class("SettingsProxy", pm.Proxy)
 
 slot0.onRegister = function (slot0)
+	slot0._isBgmEnble = PlayerPrefs.GetInt("ShipSkinBGM", 1) > 0
 	slot0._ShowBg = PlayerPrefs.GetInt("disableBG", 1) > 0
 	slot0._ShowLive2d = PlayerPrefs.GetInt("disableLive2d", 1) > 0
 	slot0._selectedShipId = PlayerPrefs.GetInt("playerShipId")
@@ -14,6 +15,19 @@ slot0.onRegister = function (slot0)
 	slot0.nextTipActBossExchangeTicket = nil
 
 	slot0:resetEquipSceneIndex()
+end
+
+slot0.IsBGMEnable = function (slot0)
+	return slot0._isBgmEnble
+end
+
+slot0.SetBgmFlag = function (slot0, slot1)
+	if slot0._isBgmEnble ~= slot1 then
+		slot0._isBgmEnble = slot1
+
+		PlayerPrefs.SetInt("ShipSkinBGM", (slot1 and 1) or 0)
+		PlayerPrefs.Save()
+	end
 end
 
 slot0.getSkinPosSetting = function (slot0, slot1)

@@ -661,6 +661,7 @@ slot0.handleNotification = function (slot0, slot1)
 	elseif slot2 == ChapterProxy.CHAPTER_ADDED then
 		slot0.viewComponent:updateChapterVO(slot3.chapter, 0)
 	elseif slot2 == ChapterProxy.CHAPTER_EXTAR_FLAG_UPDATED then
+		slot0.viewComponent.levelStageView:ActionInvoke("PopBar", slot3)
 	elseif slot2 == ChapterProxy.SHAM_CHAPTER_UPDATED then
 		slot0.viewComponent:updateChapterVO(slot3.shamChapter, slot3.dirty)
 	elseif slot2 == ChapterProxy.GUILD_CHAPTER_UPDATED then
@@ -809,9 +810,6 @@ slot0.handleNotification = function (slot0, slot1)
 							slot1.viewComponent:easeAvoid(slot1.viewComponent.grid.cellFleets[slot4.fleets[slot4.findex].id].tf.position, slot2)
 							coroutine.yield()
 						end
-					elseif slot7.type == ChapterConst.BoxBanaiDamage then
-						slot1.viewComponent:doPlayAirStrike(ChapterConst.SubjectChampion, false, slot2)
-						coroutine.yield()
 					elseif slot7.type == ChapterConst.BoxTorpedo then
 						if slot4.fleet:canClearTorpedo() then
 							pg.TipsMgr.GetInstance():ShowTips(i18n("levelScene_destroy_torpedo"))
@@ -819,6 +817,19 @@ slot0.handleNotification = function (slot0, slot1)
 							slot1.viewComponent:doPlayTorpedo(slot2)
 							coroutine.yield()
 						end
+					elseif slot7.type == ChapterConst.BoxBanaiDamage then
+						slot1.viewComponent:doPlayAnim("AirStrikeBanai", function (slot0)
+							setActive(slot0, false)
+							slot0()
+						end)
+						coroutine.yield()
+					elseif slot7.type == ChapterConst.BoxLavaDamage then
+						slot1.viewComponent:doPlayAnim("AirStrikeLava", function (slot0)
+							setActive(slot0, false)
+							slot0()
+						end)
+						pg.CriMgr.GetInstance():PlaySE("ui-magma")
+						coroutine.yield()
 					end
 
 					slot1.viewComponent.levelStageView:tryAutoTrigger()

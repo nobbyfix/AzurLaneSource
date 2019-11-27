@@ -82,6 +82,8 @@ slot6.OpeningEffect = function (slot0, slot1, slot2)
 		slot0._joystick.anchorMax = Vector2(slot0.JOY_STICK_DEFAULT_PREFERENCE.x, slot0.JOY_STICK_DEFAULT_PREFERENCE.y)
 	elseif slot2 == SYSTEM_SUB_ROUTINE then
 		slot0._skillView:SubRoutineButton()
+	elseif slot2 == SYSTEM_DEBUG then
+		slot0._skillView:NormalButton()
 	elseif pg.SeriesGuideMgr.GetInstance().currIndex and slot3:isEnd() then
 		slot0._skillView:NormalButton()
 	else

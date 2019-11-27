@@ -194,6 +194,7 @@ slot0.handleNotification = function (slot0, slot1)
 	elseif slot2 == ShopsProxy.ACTIVITY_SHOP_UPDATED then
 		slot0.viewComponent:updateActivityShop(slot3.activityId, slot3.shop)
 	elseif slot2 == ActivityProxy.ACTIVITY_SHOP_SHOW_AWARDS or slot2 == GAME.SHAM_SHOPPING_DONE then
+		slot0.viewComponent:OnActivtyShopPurchaseDone(slot3.activityId)
 		slot0.viewComponent:emit(BaseUI.ON_ACHIEVE, slot3.awards, slot3.callback)
 	elseif slot2 == ShopsProxy.GUILD_SHOP_ADDED then
 		slot0.viewComponent:setGuildShop(slot3)

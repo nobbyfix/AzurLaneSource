@@ -1,4 +1,4 @@
-slot0 = class("LoadSpineRequestPackage", import("view.util.RequestPackage"))
+slot0 = class("GetSpineRequestPackage", import("view.util.RequestPackage"))
 
 slot0.__call = function (slot0)
 	if slot0.stopped then

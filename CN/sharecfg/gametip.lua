@@ -4030,6 +4030,10 @@ pg.gametip = {
 		tip = "KizunaAI",
 		key = "word_shipNation_ai"
 	},
+	word_shipNation_holo = {
+		tip = "hololive",
+		key = "word_shipNation_holo"
+	},
 	word_reset = {
 		tip = "重置",
 		key = "word_reset"
@@ -7882,7 +7886,7 @@ NPC角色说明：<color=#92fc63>(NPC角色不可参与部分港区功能,详见
 		}
 	},
 	shop_street_activity_tip = {
-		tip = "*活动期间(<color=#A1E400FF>19.10.31-19.11.13</COLOR>)每次刷新必定出现<color=#A1E400FF>外观装备箱</color>",
+		tip = "*活动期间(<color=#A1E400FF>19.11.27-19.12.10</COLOR>)每次刷新必定出现<color=#A1E400FF>外观装备箱</color>",
 		key = "shop_street_activity_tip"
 	},
 	battle_result_boss_destruct = {
@@ -9079,7 +9083,7 @@ $3]],
 		key = "commander_skill_point_noengough"
 	},
 	buildship_new_tip = {
-		tip = "加斯科涅(μ兵装)、{namecode:176}等角色出现概率UP！",
+		tip = "白上吹雪、湊阿库娅等角色出现概率UP！",
 		key = "buildship_new_tip"
 	},
 	buildship_heavy_tip = {
@@ -11818,6 +11822,108 @@ combo达到10/20/40/60/80/100时，分别为每次有效
 		tip = "返回选歌将失去已经获得的分数，是否确认？",
 		key = "reselect_music_game"
 	},
+	hololive_goodmorning = {
+		key = "hololive_goodmorning",
+		tip = {
+			{
+				info = "「早安碧蓝航线」说明："
+			},
+			{
+				info = "1.活动期间，每天会获得一次转盘机会。"
+			},
+			{
+				info = "2.转盘机会可以累积，最多可以累积7次。"
+			},
+			{
+				info = "3.转动转盘后，会随机转出七位联动角色中的一位，并发布\n    今日的任务。"
+			},
+			{
+				info = "4.完成当日任务后，如果还有剩余的转盘机会，可以继续转\n    动。"
+			},
+			{
+				info = "5. 完成7次任务后，可获得最终奖励。"
+			}
+		}
+	},
+	hololive_lianliankan = {
+		key = "hololive_lianliankan",
+		tip = {
+			{
+				info = "「集结HOLOLIVE反抗军」说明："
+			},
+			{
+				info = "1.集结HOLOLIVE反抗军活动中，一共有8个关卡可供指挥\n    官挑战。"
+			},
+			{
+				info = [[
+2.各个关卡的解锁条件和活动海域进度以及「集结HOLOL
+    IVE反抗军」的进度相关，分别为：
+   Stage1：通关活动海域T1 
+   Stage2：通关活动海域T2且完成Stage1 
+   Stage3：通关活动海域T3且完成Stage2 
+   Stage4：通关活动海域T4且完成Stage3 
+   Stage5：通关活动海域T5且完成Stage4 
+   Stage6：通关活动海域T6且完成Stage5 
+   Stage7：完成Stage6 
+   Ex：完成Stage1~Stage7]]
+			},
+			{
+				info = "3.挑战规则为 ，将关卡中的角色头像两两连线消除，当全\n    部消除后即算过关。"
+			},
+			{
+				info = "4. 两个角色头像必须相同，且连线拐弯不超过两次的情况\n    下才能消除。"
+			},
+			{
+				info = "5. 第一次完成Stage1~Stage7时，可以获得奖励，后续再\n    次完成时无法获得奖励。"
+			},
+			{
+				info = "6. 当Stage1~Stage7全部过关后，可领取最终活动大奖。"
+			}
+		}
+	},
+	hololive_dalaozhang = {
+		key = "hololive_dalaozhang",
+		tip = {
+			{
+				info = "「港区工作台」说明："
+			},
+			{
+				info = "1.活动期间，完成指定任务可收集对应任务道具。获得对应\n    道具后会出现在右边的合成区域，集齐9个道具可制作纪\n    念家具[hololive本社大楼]。"
+			},
+			{
+				info = "2.参与以下内容可以完成任务：\n   通过活动关卡、完成活动任务、累积P-TNT"
+			},
+			{
+				info = "3.领取时间截止12月17日23点59分。"
+			},
+			{
+				info = "4.累积24000PT以解锁本社爆破#1—#7。"
+			}
+		}
+	},
+	hololive_dashenling = {
+		key = "hololive_dashenling",
+		tip = {
+			{
+				info = "「澪的港区占卜馆」说明："
+			},
+			{
+				info = "1.活动期间，玩家可获得临时npc角色大神澪，临时角\n    色不可誓约、不可退役、不可被选为强化突破材料。"
+			},
+			{
+				info = "2.活动期间，击破普通难度主线第三章及之后章节或活动\n   地图旗舰，可增加临时npc角色大神澪的友好度。"
+			},
+			{
+				info = "3.上阵大神澪参与战斗，且未被击沉，可增加双倍友好度。"
+			},
+			{
+				info = "4.在活动结束前累计获得1000点好友度，可领取奖励并将\n    临时角色【大神澪】转化为永久角色。"
+			},
+			{
+				info = "5.在活动结束后，未完成转化的临时角色【大神澪】将\n    离开港区，不返还已经消耗的强化、突破等培养材料。"
+			}
+		}
+	},
 	pocky_jiujiu = {
 		tip = "啾啾日常 ",
 		key = "pocky_jiujiu"
@@ -11903,6 +12009,10 @@ combo达到10/20/40/60/80/100时，分别为每次有效
 	secretary_pos_save_success = {
 		tip = "保存成功",
 		key = "secretary_pos_save_success"
+	},
+	juese_tiyan = {
+		tip = "是否开始角色体验关卡？（体验关卡中我方舰船属性仅供参考，<color=#ff5c5c>实际性能以获得舰船为准</color>） ",
+		key = "juese_tiyan"
 	}
 }
 

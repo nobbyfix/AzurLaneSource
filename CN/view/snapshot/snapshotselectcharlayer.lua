@@ -209,37 +209,7 @@ slot0.updateCardList = function (slot0)
 end
 
 function slot2(slot0)
-	for slot5 = #ShipGroup.getSkinList(slot0), 1, -1 do
-		if slot1[slot5].skin_type == 3 then
-			table.remove(slot1, slot5)
-		end
-	end
-
-	if ShipGroup.GetGroupConfig(slot0).trans_skinz ~= 0 then
-		slot3 = false
-
-		if getProxy(CollectionProxy):getShipGroup(slot0) then
-			for slot8, slot9 in ipairs(slot1) do
-				if slot9.skin_type == Ship.SKIN_TYPE_REMAKE and slot4.trans then
-					slot3 = true
-
-					break
-				end
-			end
-		end
-
-		if not slot3 then
-			for slot8 = #slot1, 1, -1 do
-				if slot1[slot8].id == slot2 then
-					table.remove(slot1, slot8)
-
-					break
-				end
-			end
-		end
-	end
-
-	return slot1
+	return getProxy(ShipSkinProxy):GetAllSkinForARCamera(slot0)
 end
 
 function slot3(slot0)
@@ -248,7 +218,7 @@ function slot3(slot0)
 
 	if getProxy(CollectionProxy):getShipGroup(slot0) then
 		for slot9, slot10 in ipairs(slot5) do
-			if slot10.skin_type == Ship.SKIN_TYPE_DEFAULT or table.contains(slot3, slot10.id) or (slot10.skin_type == Ship.SKIN_TYPE_REMAKE and slot4.trans) or (slot10.skin_type == Ship.SKIN_TYPE_PROPOSE and slot4.married == 1) then
+			if slot10.skin_type == ShipSkin.SKIN_TYPE_DEFAULT or table.contains(slot3, slot10.id) or (slot10.skin_type == ShipSkin.SKIN_TYPE_REMAKE and slot4.trans) or (slot10.skin_type == ShipSkin.SKIN_TYPE_PROPOSE and slot4.married == 1) then
 				slot1[slot10.id] = true
 			end
 		end

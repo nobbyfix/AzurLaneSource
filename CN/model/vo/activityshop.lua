@@ -20,6 +20,7 @@ slot0.Ctor = function (slot0, slot1)
 	end
 
 	slot0.type = ShopArgs.ShopActivity
+	slot0.config = pg.activity_template[slot0.activityId]
 end
 
 slot0.getSortGoods = function (slot0)
@@ -91,6 +92,18 @@ slot0.getResId = function (slot0)
 	end
 
 	return slot1:getConfig("resource_type")
+end
+
+slot0.GetEnterVoice = function (slot0)
+	if slot0.config.config_client.enter then
+		return slot1[1], slot1[2]
+	end
+end
+
+slot0.GetPurchaseVoice = function (slot0)
+	if slot0.config.config_client.purchase then
+		return slot1[1], slot1[2]
+	end
 end
 
 return slot0

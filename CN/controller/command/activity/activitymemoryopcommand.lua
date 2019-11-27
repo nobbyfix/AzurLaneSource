@@ -25,7 +25,7 @@ class("ActivityMemoryOPCommand", pm.SimpleCommand).execute = function (slot0, sl
 			slot0.data2_list:updateActivity(slot0)
 			slot3:sendNotification(GAME.MEMORYBOOK_UNLOCK_DONE, slot3.sendNotification)
 		else
-			print(slot0.result)
+			pg.TipsMgr.GetInstance():ShowTips(errorTip("", slot0.result))
 		end
 	end)
 end

@@ -383,9 +383,9 @@ pg.gameset = {
 		key_value = 3000000
 	},
 	activity_res_id = {
-		description = "激奏徽章",
+		description = "P-TNT",
 		key = "activity_res_id",
-		key_value = 137
+		key_value = 138
 	},
 	chapter_move_speed_1 = {
 		description = "",

@@ -5010,6 +5010,27 @@ pg.auto_pilot_template = {
 			}
 		}
 	},
+	[70076] = {
+		id = 70076,
+		name = "随机移动-偏右，holo联动新增",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					stopCount = 90,
+					Z2 = 75,
+					moveCount = 240,
+					Z1 = 35,
+					duration = -1,
+					X1 = -3,
+					X2 = 0
+				}
+			}
+		}
+	},
 	[75001] = {
 		id = 75001,
 		name = "弹幕挑战1boss",

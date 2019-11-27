@@ -29,7 +29,7 @@ slot0.getUIName = function (slot0)
 end
 
 slot0.getBGM = function (slot0)
-	return "main"
+	return "holo-fbk"
 end
 
 slot0.setShipGroups = function (slot0, slot1)

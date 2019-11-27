@@ -249,7 +249,7 @@ slot0.fillStudens = function (slot0, slot1)
 			slot20 = {}
 
 			for slot24, slot25 in ipairs(slot17) do
-				if slot25.skin_type == Ship.SKIN_TYPE_DEFAULT or table.contains(slot9, slot25.id) or (slot26 == Ship.SKIN_TYPE_REMAKE and slot14.trans) or (slot26 == Ship.SKIN_TYPE_PROPOSE and slot14.married == 1) then
+				if slot25.skin_type == ShipSkin.SKIN_TYPE_DEFAULT or table.contains(slot9, slot25.id) or (slot26 == ShipSkin.SKIN_TYPE_REMAKE and slot14.trans) or (slot26 == ShipSkin.SKIN_TYPE_PROPOSE and slot14.married == 1) then
 					slot20[#slot20 + 1] = slot25.id
 				end
 
