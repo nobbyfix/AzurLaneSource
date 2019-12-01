@@ -829,7 +829,7 @@ slot0.GetFurnitureGo = function (slot0, slot1)
 	return slot0.furnitureModals[slot1]._tf
 end
 
-slot0.willExit = function (slot0)
+slot0.OnWillExit = function (slot0)
 	eachChild(slot0.effectContains, function (slot0)
 		PoolMgr.GetInstance():ReturnPrefab("ui/" .. slot1, slot0.gameObject.name, slot0.gameObject)
 	end)

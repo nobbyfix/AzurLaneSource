@@ -31,4 +31,8 @@ slot0.CanBeActivated = function (slot0)
 	return slot0.data1 > 0
 end
 
+slot0.ExistMsg = function (slot0)
+	return #getProxy(InstagramProxy).GetMessages(slot1) > 0
+end
+
 return slot0

@@ -5,6 +5,9 @@ ys.Battle.BattleAttr = {
 		"srcShipType",
 		"formulaLevel",
 		"repressReduce",
+		"cannonPower",
+		"torpedoPower",
+		"antiAirPower",
 		"airPower",
 		"antiSubPower",
 		"loadSpeed",
@@ -322,10 +325,7 @@ ys.Battle.BattleAttr = {
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #4 33-51, warpins: 1 ---
-		slot2.cannonPower = slot2.airPower
-		slot2.torpedoPower = slot2.airPower
-		slot2.antiAirPower = slot2.airPower
+		--- BLOCK #4 33-47, warpins: 1 ---
 		slot2.armorType = 0
 		slot2.labelTag = setmetatable({}, {
 			__index = slot1._attr.labelTag

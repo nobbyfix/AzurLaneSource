@@ -95,7 +95,7 @@ slot0.rotate = function (slot0)
 	end)):setOnComplete(System.Action(function ()
 		pg.StoryMgr.GetInstance():Play(slot0.curStoryID, function ()
 			slot0:updateTaskPanel()
-		end, true)
+		end, true, true, true)
 
 		pg.StoryMgr.GetInstance().isTurning = false
 	end))
@@ -231,8 +231,7 @@ slot0.updateTaskPanel = function (slot0)
 
 
 			end, SFX_PANEL)
-			setText(slot0:findTF("description", slot2), slot0.taskProxy:getTaskById(slot0.curTaskIDList[slot1 + 1]) or slot0.taskProxy:getFinishTaskById(slot5):getConfig("desc"))
-			setText(slot0:findTF("progressText", slot2), slot9 .. "/" .. slot10)
+			setText(slot0:findTF("description", slot2), slot0.taskProxy:getTaskById(slot0.curTaskIDList[slot1 + 1]) or slot0.taskProxy:getFinishTaskById(slot5):getConfig("desc") .. "(" .. slot9 .. "/" .. slot0.taskProxy.getTaskById(slot0.curTaskIDList[slot1 + 1]) or slot0.taskProxy.getFinishTaskById(slot5):getConfig("target_num") .. ")")
 			setSlider(slot0:findTF("progress", slot2), 0, slot10, slot9)
 			setActive(slot0:findTF("go_btn", slot2), slot0.taskProxy.getTaskById(slot0.curTaskIDList[slot1 + 1]) or slot0.taskProxy.getFinishTaskById(slot5):getTaskStatus() == 0)
 			setActive(slot0:findTF("get_btn", slot2), slot14 == 1)
@@ -268,7 +267,7 @@ slot0.updateTaskPanel = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 29-117, warpins: 2 ---
+			--- BLOCK #1 29-111, warpins: 2 ---
 			--- END OF BLOCK #1 ---
 
 			FLOW; TARGET BLOCK #2
@@ -276,7 +275,7 @@ slot0.updateTaskPanel = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 121-125, warpins: 2 ---
+			--- BLOCK #2 115-119, warpins: 2 ---
 			--- END OF BLOCK #2 ---
 
 			FLOW; TARGET BLOCK #3
@@ -284,7 +283,7 @@ slot0.updateTaskPanel = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #3 129-133, warpins: 2 ---
+			--- BLOCK #3 123-127, warpins: 2 ---
 			--- END OF BLOCK #3 ---
 
 			FLOW; TARGET BLOCK #4
@@ -292,7 +291,7 @@ slot0.updateTaskPanel = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #4 137-150, warpins: 2 ---
+			--- BLOCK #4 131-144, warpins: 2 ---
 			--- END OF BLOCK #4 ---
 
 
@@ -306,7 +305,7 @@ slot0.updateTaskPanel = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 151-151, warpins: 2 ---
+		--- BLOCK #1 145-145, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 
