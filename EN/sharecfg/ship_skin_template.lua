@@ -9504,116 +9504,6 @@ pg.ship_skin_template = {
 			}
 		}
 	},
-	[102141] = {
-		ship_group = 10214,
-		name = "雪夜之花",
-		bullet_skin_main = "",
-		desc = "这就是重樱风格的新年服饰吗，如果大姐头也能喜欢的话…嗯？指挥官你在啊…姑且说一声新年快乐吧",
-		illustrator2 = -1,
-		id = 102141,
-		bullet_skin_secondary = "",
-		no_showing = "1",
-		painting = "mengbiliai_2",
-		air_bullet_skin = "",
-		shop_type_id = 2,
-		hand_id = 14,
-		bgm = "",
-		lip_smoothing = 0,
-		l2d_animations = "",
-		bg = "101",
-		skin_type = 0,
-		bg_sp = "",
-		voice_actor_2 = -1,
-		air_torpedo_skin = "",
-		prefab = "mengbiliai_2",
-		l2d_se = "",
-		aircraft_skin = "",
-		main_UI_FX = "",
-		shop_id = 70137,
-		voice_actor = 131,
-		air_bomb_skin = "",
-		illustrator = -1,
-		rarity_bg = "",
-		l2d_para_range = "",
-		lip_sync_gain = 0,
-		show_skin = "stand",
-		l2d_voice_calibrate = "",
-		tag = {
-			2
-		},
-		live2d_offset = {
-			59,
-			-162,
-			0
-		},
-		fx_container = {
-			{
-				0,
-				1.99185,
-				1.15
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0.75,
-				-1.299
-			},
-			{
-				0,
-				0,
-				0
-			}
-		},
-		bound_bone = {
-			cannon = {
-				{
-					1.02,
-					1.06,
-					0
-				}
-			},
-			vicegun = {
-				{
-					0.95,
-					1,
-					0
-				}
-			},
-			torpedo = {
-				{
-					0,
-					0,
-					0
-				}
-			},
-			antiaircraft = {
-				{
-					0.98,
-					1.07,
-					0
-				}
-			}
-		},
-		smoke = {
-			{
-				50,
-				{
-					{
-						"smoke",
-						{
-							-0.62,
-							2.36,
-							0
-						}
-					}
-				}
-			}
-		}
-	},
 	[102150] = {
 		ship_group = 10215,
 		name = "Denver",
@@ -17378,9 +17268,9 @@ pg.ship_skin_template = {
 	},
 	[107064] = {
 		ship_group = 10706,
-		name = "翱翔的自由之翼",
+		name = "Soaring Wings of Freedom",
 		bullet_skin_main = "",
-		desc = "对于为战争而生这件事我并没有疑问。为了碧蓝航路的自由——企业，出击！",
+		desc = "There is no doubt in my mind that I was born to fight. For the azure lanes of liberty, Enterprise, engaging!",
 		illustrator2 = -1,
 		id = 107064,
 		bullet_skin_secondary = "",
@@ -33359,123 +33249,6 @@ pg.ship_skin_template = {
 		},
 		l2d_voice_calibrate = {
 			propose = 2.5
-		}
-	},
-	[206042] = {
-		ship_group = 20604,
-		name = "清冽的春风",
-		bullet_skin_main = "",
-		desc = "没想到能从指挥官那里收到这么华丽的服装…这个是叫做“旗袍”…吧？虽然有点害羞，还是试着穿上了，怎、怎么样…指挥官好看吗？",
-		illustrator2 = -1,
-		id = 206042,
-		bullet_skin_secondary = "",
-		no_showing = "1",
-		painting = "banrenma_3",
-		air_bullet_skin = "",
-		shop_type_id = 3,
-		hand_id = 1,
-		bgm = "",
-		lip_smoothing = 0,
-		l2d_animations = "",
-		bg = "102",
-		skin_type = 0,
-		bg_sp = "",
-		voice_actor_2 = -1,
-		air_torpedo_skin = "",
-		prefab = "banrenma_3",
-		l2d_se = "",
-		aircraft_skin = "",
-		main_UI_FX = "",
-		shop_id = 70150,
-		voice_actor = 164,
-		air_bomb_skin = "",
-		illustrator = -1,
-		rarity_bg = "",
-		l2d_para_range = "",
-		lip_sync_gain = 0,
-		show_skin = "stand",
-		l2d_voice_calibrate = "",
-		tag = {
-			2
-		},
-		live2d_offset = {
-			0,
-			0,
-			0
-		},
-		fx_container = {
-			{
-				0,
-				1.99185,
-				1.15
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0.75,
-				-1.299
-			},
-			{
-				0,
-				0,
-				0
-			}
-		},
-		bound_bone = {
-			cannon = {
-				{
-					1.08,
-					1.13,
-					0
-				}
-			},
-			vicegun = {
-				{
-					1.04,
-					1.13,
-					0
-				}
-			},
-			torpedo = {
-				{
-					0.2,
-					0.07,
-					0
-				}
-			},
-			antiaircraft = {
-				{
-					0.96,
-					1.08,
-					0
-				}
-			},
-			plane = {
-				{
-					1.03,
-					1.19,
-					0
-				}
-			}
-		},
-		smoke = {
-			{
-				50,
-				{
-					{
-						"smoke",
-						{
-							-0.56,
-							2.11,
-							-0.55
-						}
-					}
-				}
-			}
 		}
 	},
 	[206050] = {
@@ -64628,102 +64401,6 @@ pg.ship_skin_template = {
 			}
 		}
 	},
-	[408022] = {
-		ship_group = 40802,
-		name = "U-47",
-		bullet_skin_main = "",
-		desc = "呼…比起喧嚣的宴会场，还是这种安静的地方更让人沉得下心…指挥官难道也这么觉得？不介意的话，一起在这坐会吧",
-		illustrator2 = -1,
-		id = 408022,
-		bullet_skin_secondary = "",
-		no_showing = "1",
-		painting = "U47_3",
-		air_bullet_skin = "",
-		shop_type_id = 7,
-		hand_id = 13,
-		bgm = "",
-		lip_smoothing = 0,
-		l2d_animations = "",
-		bg = "115",
-		skin_type = 0,
-		bg_sp = "1102",
-		voice_actor_2 = -1,
-		air_torpedo_skin = "",
-		prefab = "U47_3",
-		l2d_se = "",
-		aircraft_skin = "",
-		main_UI_FX = "",
-		shop_id = 70235,
-		voice_actor = 160,
-		air_bomb_skin = "",
-		illustrator = -1,
-		rarity_bg = "",
-		l2d_para_range = "",
-		lip_sync_gain = 0,
-		show_skin = "stand",
-		l2d_voice_calibrate = "",
-		tag = {
-			2
-		},
-		live2d_offset = {
-			0,
-			0,
-			0
-		},
-		fx_container = {
-			{
-				0,
-				1.99185,
-				1.15
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0.75,
-				-1.299
-			},
-			{
-				0,
-				0,
-				0
-			}
-		},
-		bound_bone = {
-			cannon = {
-				{
-					1.406,
-					-0.166,
-					0
-				}
-			},
-			torpedo = {
-				{
-					0.098,
-					-0.332,
-					0
-				}
-			}
-		},
-		smoke = {
-			{
-				50,
-				{
-					{
-						"smoke",
-						{
-							-0.64,
-							2.45,
-							0
-						}
-					}
-				}
-			}
-		}
-	},
 	[408030] = {
 		ship_group = 40803,
 		name = "U-557",
@@ -84954,7 +84631,6 @@ pg.ship_skin_template = {
 		102131,
 		102132,
 		102140,
-		102141,
 		102150,
 		102160,
 		102162,
@@ -85171,7 +84847,6 @@ pg.ship_skin_template = {
 		206033,
 		206040,
 		206041,
-		206042,
 		206050,
 		206051,
 		207020,
@@ -85459,7 +85134,6 @@ pg.ship_skin_template = {
 		408011,
 		408020,
 		408021,
-		408022,
 		408030,
 		408040,
 		408041,

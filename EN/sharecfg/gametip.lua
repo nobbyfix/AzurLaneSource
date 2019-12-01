@@ -4192,6 +4192,10 @@ Current expansions: <color=#92fc63>$3</color>
 		tip = "KizunaAI",
 		key = "word_shipNation_ai"
 	},
+	word_shipNation_holo = {
+		tip = "hololive",
+		key = "word_shipNation_holo"
+	},
 	word_reset = {
 		tip = "Reset",
 		key = "word_reset"

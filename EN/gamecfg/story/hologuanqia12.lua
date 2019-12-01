@@ -245,7 +245,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "She's a Siren. After all the Sirens have done, I'm going to simply take her word for it.",
+			say = "She's a Siren. After all the Sirens have done, I'm not going to simply take her word for it.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -324,7 +324,7 @@ return {
 			side = 2,
 			dir = 1,
 			actor = 10500020,
-			say = "As long as the bond between all of us remains broken, we'll definitely find a way to win!",
+			say = "As long as the bond between all of us remains unbroken, we'll definitely find a way to win!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

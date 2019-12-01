@@ -249687,10 +249687,10 @@ pg.expedition_data_template = {
 	},
 	[1290298] = {
 		sink_limit = 1,
-		ai = 3,
+		ai = 0,
 		guide_desc = "",
 		type = 98,
-		ai_mov = 3,
+		ai_mov = 0,
 		add_icon = "",
 		name = "Elite Fleet",
 		exp_commander = 2,

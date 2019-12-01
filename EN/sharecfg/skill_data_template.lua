@@ -4952,8 +4952,8 @@ pg.skill_data_template = {
 	},
 	[4131] = {
 		desc_get = "",
-		name = "冲突禁止",
-		desc = "先锋部队与敌方相撞时，我方受到的伤害降低$1。",
+		name = "Ramming Prohibited",
+		desc = "Decreases the Ramming DMG your Vanguard takes by $1.",
 		type = 2,
 		max_level = 10,
 		id = 4131,

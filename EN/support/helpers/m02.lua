@@ -6253,7 +6253,7 @@ function checkBirthFormat(slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #4 26-27, warpins: 1 ---
-	return false
+	return true
 	--- END OF BLOCK #4 ---
 
 

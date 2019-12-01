@@ -6952,65 +6952,37 @@ function slot5(slot0)
 		return
 	end
 
-	slot3 = {}
-	slot4 = 0
-	slot5 = ChapterConst
-	slot5 = slot5.MaxRow
-	slot5 = slot5 - 1
-	slot6 = 1
+	slot4 = slot1
+	slot3 = slot1.calcWalkableCells
+	slot5 = nil
+	slot6 = slot2.line
+	slot6 = slot6.row
+	slot7 = slot2.line
+	slot7 = slot7.column
+	slot8 = ChapterConst
+	slot8 = slot8.MaxStep
+	slot3 = slot3(slot4, slot5, slot6, slot7, slot8)
+	slot4 = _
+	slot4 = slot4.filter
+	slot5 = slot3
 
-	for slot7 = slot4, slot5, slot6 do
-		slot8 = 0
-		slot9 = ChapterConst
-		slot9 = slot9.MaxColumn
-		slot9 = slot9 - 1
-		slot10 = 1
+	function slot6(slot0)
+		slot1 = slot0
+		slot2 = slot1
+		slot1 = slot1.getQuadCellPic
+		slot3 = slot0
+		slot4 = slot3
+		slot3 = slot3.getChapterCell
+		slot5 = slot0.row
+		slot6 = slot0.column
+		slot1 = slot1(slot2, slot3(slot4, slot5, slot6))
+		slot1 = not slot1
 
-		for slot11 = slot8, slot9, slot10 do
-			slot13 = slot1
-			slot12 = slot1.getChapterCell
-			slot14 = slot7
-			slot15 = slot11
-			slot12 = slot12(slot13, slot14, slot15)
-
-			if slot12 then
-				slot14 = slot12
-				slot13 = slot12.IsWalkable
-				slot15 = ChapterConst
-				slot15 = slot15.SubjectPlayer
-				slot13 = slot13(slot14, slot15)
-
-				if slot13 then
-					slot14 = slot1
-					slot13 = slot1.getQuadCellPic
-					slot15 = slot12
-					slot13 = slot13(slot14, slot15)
-
-					if not slot13 then
-						slot15 = slot1
-						slot14 = slot1.considerAsObstacle
-						slot16 = ChapterConst
-						slot16 = slot16.SubjectPlayer
-						slot17 = slot7
-						slot18 = slot11
-						slot14 = slot14(slot15, slot16, slot17, slot18)
-
-						if not slot14 then
-							slot14 = table
-							slot14 = slot14.insert
-							slot15 = slot3
-							slot16 = {
-								row = slot7,
-								column = slot11
-							}
-
-							slot14(slot15, slot16)
-						end
-					end
-				end
-			end
-		end
+		return slot1
 	end
+
+	slot4 = slot4(slot5, slot6)
+	slot3 = slot4
 
 	function slot4(slot0)
 		slot1 = slot0
@@ -7300,24 +7272,40 @@ function slot5(slot0, slot1)
 					end
 				end
 
-				slot7 = slot0
-				slot6 = slot0.ShowTargetHuntingRange
-				slot8 = slot1
-
-				slot6(slot7, slot8)
-
-				slot7 = slot0
-				slot6 = slot0.UpdateDestinationMark
-				slot8 = slot1
-
-				slot6(slot7, slot8)
-
 				slot7 = slot2
 				slot6 = slot2.findPath
 				slot8 = nil
 				slot9 = slot4.startPos
 				slot10 = slot1
 				slot6, slot7 = slot6(slot7, slot8, slot9, slot10)
+				slot8 = slot1.row
+				slot9 = #slot7
+				slot9 = slot7[slot9]
+				slot9 = slot9.row
+
+				if slot8 == slot9 then
+					slot8 = slot1.column
+					slot9 = #slot7
+					slot9 = slot7[slot9]
+					slot9 = slot9.column
+
+					if slot8 ~= slot9 then
+						return
+					end
+				end
+
+				slot9 = slot0
+				slot8 = slot0.ShowTargetHuntingRange
+				slot10 = slot1
+
+				slot8(slot9, slot10)
+
+				slot9 = slot0
+				slot8 = slot0.UpdateDestinationMark
+				slot10 = slot1
+
+				slot8(slot9, slot10)
+
 				slot9 = slot0
 				slot8 = slot0.hideQuadMark
 				slot10 = ChapterConst
