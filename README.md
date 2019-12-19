@@ -1,7 +1,7 @@
 # AzurLaneSource
 Decompiled Lua files of the game Azur Lane.
 
-**This repository is an archive only an will only be updated in case of emergency.**
+**This repository is an archive only and will only be updated in case of emergency.**
 
 Use this repo for regular and automated updates of the lua scripts: https://github.com/Dimbreath/AzurLaneScripts
 Alternative repo with longer archive history back until Feb 2019: https://github.com/Binary102/AzurLane_ClientSource
