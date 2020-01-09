@@ -1,17 +1,17 @@
 # AzurLaneSource
-Decompiled Lua files of the game Azur Lane.
+Decompiled Lua scripts of the game Azur Lane.
 
-**This repository is an archive only and will only be updated in case of emergency.**
+**This repository is mostly an archive and will only be updated in case of emergency.**
 
-Use this repo for regular and automated updates of the lua scripts: https://github.com/Dimbreath/AzurLaneScripts
-Alternative repo with longer archive history back until Jan 2019: https://github.com/Binary102/AzurLane_ClientSource
+Use this repo for regular and automated updates of the lua scripts: https://github.com/Dimbreath/AzurLaneData
+Alternative archive repo with longer history back until Jan 2019: https://github.com/Binary102/AzurLane_ClientSource
 
 ## Update Status
-* EN is up to date (v3.1.72 from 2019/11/29).
-* CN is up to date (v3.1.69 from 2019/11/29).
-* JP is up to date (v3.1.160 from 2019/11/27).
-* KR decompilation is dropped after version 1.5.146 due to no more interest in the files (and it takes ages to download the files from their shitty server).
-* TW won't receive regular updates (current: v3.2.44 from 2019/11/22).
+* EN v3.1.166 from 2020/01/09.
+* CN v3.1.69 from 2019/11/29.
+* JP v3.1.160 from 2019/11/27.
+* KR v1.5.146 from 2019/07/18.
+* TW v3.2.44 from 2019/11/22.
 
 ## Used tools
 * LuaJIT Raw-Bytecode Decompiler (LJD)
