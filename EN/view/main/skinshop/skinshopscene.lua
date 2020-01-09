@@ -296,7 +296,7 @@ slot0.updateMainView = function (slot0, slot1)
 	end
 
 	if slot0.painting ~= slot2.painting then
-		slot0:loadPainting(slot5)
+		slot0:loadPainting(slot5, true)
 
 		slot0.painting = slot5
 	end
@@ -446,7 +446,7 @@ slot0.updateBuyBtn = function (slot0, slot1)
 	slot4 = ShipGroup.getDefaultShipConfig(slot3.ship_group)
 
 	onToggle(slot0, slot0.hideObjToggleTF, function (slot0)
-		slot0:loadPainting(slot0.painting .. ((slot0 and "") or "_n"))
+		slot0:loadPainting(slot0.painting, slot0)
 		slot0:setBg(slot0.setBg, slot0, slot0)
 	end, SFX_PANEL)
 end
@@ -567,9 +567,31 @@ slot0.updatePrice = function (slot0, slot1)
 	end
 end
 
-slot0.loadPainting = function (slot0, slot1)
+slot0.loadPainting = function (slot0, slot1, slot2)
 	slot0:recyclePainting()
-	setPaintingPrefab(slot0.paintingTF, slot1, "chuanwu", true)
+	slot0:setPaintingPrefab(slot0.paintingTF, slot1, "chuanwu", slot2)
+end
+
+slot0.setPaintingPrefab = function (slot0, slot1, slot2, slot3, slot4)
+	removeAllChildren(slot5)
+
+	GetOrAddComponent(findTF(slot1, "fitter"), "PaintingScaler").FrameName = slot3 or ""
+	GetOrAddComponent(findTF(slot1, "fitter"), "PaintingScaler").Tween = 1
+	slot7 = slot2
+
+	if not slot4 and PathMgr.FileExists(PathMgr.getAssetBundle("painting/" .. slot2 .. "_n")) then
+		slot2 = slot2 .. "_n"
+	end
+
+	PoolMgr.GetInstance():GetPainting(slot2, false, function (slot0)
+		setParent(slot0, slot0, false)
+
+		if not IsNil(findTF(slot0, "Touch")) then
+			setActive(slot1, false)
+		end
+
+		Ship.SetExpression(slot0:GetChild(0), slot1)
+	end)
 end
 
 slot0.recyclePainting = function (slot0)

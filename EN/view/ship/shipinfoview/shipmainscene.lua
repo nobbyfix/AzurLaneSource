@@ -217,6 +217,8 @@ slot0.initShip = function (slot0)
 	rtf(slot0.chat).localScale = Vector3.New(0, 0, 1)
 	slot0.initChatBgH = slot0.chatText.sizeDelta.y
 	slot0.initfontSize = slot0.chatText:GetComponent(typeof(Text)).fontSize
+	slot0.initChatTextH = slot0.chatText.sizeDelta.y
+	slot0.initfontSize = slot0.chatText:GetComponent(typeof(Text)).fontSize
 
 	pg.UIMgr.GetInstance():OverlayPanel(slot0.chat, {
 		groupName = LayerWeightConst.GROUP_SHIPINFOUI
@@ -619,36 +621,42 @@ slot0.displayShipWord = function (slot0, slot1, slot2)
 			Ship.SetExpression(findTF(slot0.nowPainting, "fitter"):GetChild(0), slot0.paintingCode, slot1, slot3)
 		end
 
-		slot9, slot6 = Ship.getWords(slot0.shipVO.skinId, slot1, nil, nil, slot3)
+		slot5, slot6, slot7 = ShipWordHelper.GetWordAndCV(slot0.shipVO.skinId, slot1, nil, nil, slot3)
+		slot8 = slot0.chatText:GetComponent(typeof(Text))
 
-		setTextEN(slot0.chatText, slot5)
-
-		while slot0.initChatBgH < slot4.preferredHeight do
-			slot4.fontSize = slot4.fontSize - 2
-			slot11, slot8 = Ship.getWords(slot0.shipVO.skinId, slot1)
+		if PLATFORM_CODE ~= PLATFORM_US then
+			setText(slot0.chatText, slot7)
+		else
+			slot8.fontSize = slot0.initfontSize
 
 			setTextEN(slot0.chatText, slot7)
 
-			if slot4.fontSize < 20 then
-				break
+			while slot0.initChatTextH < slot8.preferredHeight do
+				slot8.fontSize = slot8.fontSize - 2
+
+				setTextEN(slot0.chatText, slot7)
+
+				if slot8.fontSize < 20 then
+					break
+				end
 			end
 		end
 
-		if CHAT_POP_STR_LEN < #slot4.text then
-			slot4.alignment = TextAnchor.MiddleLeft
+		if CHAT_POP_STR_LEN < #slot8.text then
+			slot8.alignment = TextAnchor.MiddleLeft
 		else
-			slot4.alignment = TextAnchor.MiddleCenter
+			slot8.alignment = TextAnchor.MiddleCenter
 		end
 
-		if slot0.initChatBgH < slot4.preferredHeight + 120 then
-			slot0.chatBg.sizeDelta = Vector2.New(slot0.chatBg.sizeDelta.x, slot7)
+		if slot0.initChatBgH < slot8.preferredHeight + 120 then
+			slot0.chatBg.sizeDelta = Vector2.New(slot0.chatBg.sizeDelta.x, slot9)
 		else
 			slot0.chatBg.sizeDelta = Vector2.New(slot0.chatBg.sizeDelta.x, slot0.initChatBgH)
 		end
 
-		slot8 = slot0
+		slot10 = slot0
 
-		function slot9()
+		function slot11()
 			if slot0.chatFlag then
 				if slot0.chatani1Id then
 					LeanTween.cancel(slot0.chatani1Id)
@@ -667,7 +675,7 @@ slot0.displayShipWord = function (slot0, slot1, slot2)
 		end
 
 		if slot6 then
-			function slot10()
+			function slot12()
 				if slot0._currentVoice then
 					slot0._currentVoice:Stop(true)
 				end
@@ -682,7 +690,7 @@ slot0.displayShipWord = function (slot0, slot1, slot2)
 			end
 
 			if slot0.loadedCVBankName then
-				slot10()
+				slot12()
 			else
 				pg.CriMgr:LoadCV(Ship.getCVKeyID(slot0.shipVO.skinId), function ()
 					slot0 = pg.CriMgr.GetCVBankName(pg.CriMgr.GetCVBankName)
@@ -699,7 +707,7 @@ slot0.displayShipWord = function (slot0, slot1, slot2)
 				end)
 			end
 		else
-			slot9()
+			slot11()
 		end
 	end
 end

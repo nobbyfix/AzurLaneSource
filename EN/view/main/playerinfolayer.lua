@@ -456,7 +456,7 @@ slot0.updateLive2DState = function (slot0)
 end
 
 slot0.updateSwichSkinBtn = function (slot0, slot1)
-	slot0.isExistSkin = slot0:isCurrentShipExistSkin(slot1.groupId)
+	slot0.isExistSkin = slot0:isCurrentShipExistSkin(slot1)
 
 	setActive(slot0.swichSkinBtn, slot0.isExistSkin and not isActive(slot0.characters))
 end
@@ -472,7 +472,7 @@ slot0.isCurrentShipExistSkin = function (slot0, slot1)
 end
 
 slot0.getGroupSkinList = function (slot0, slot1)
-	return getProxy(ShipSkinProxy):GetAllSkinForShip(slot0.flagShip)
+	return getProxy(ShipSkinProxy):GetAllSkinForShip(slot1)
 end
 
 slot0.updateBGState = function (slot0)
@@ -652,33 +652,35 @@ slot0.updateCard = function (slot0, slot1)
 	if slot0.secretary_max < slot1 then
 		slot0.cards[slot1]:update(nil, true)
 	elseif slot2 then
+		slot3 = getProxy(BayProxy):getShipById(slot2)
+
 		slot0.cards[slot1]:update(slot3, false)
 		slot0.cards[slot1]:updateProps(slot0:getCardAttrProps(slot3))
-		slot0:updateLive2DBtn(slot5, slot6)
+		slot0:updateLive2DBtn(slot3, slot5)
 
-		slot7 = slot0.cards[slot1].tr:Find("mask/settings/bg")
+		slot6 = slot0.cards[slot1].tr:Find("mask/settings/bg")
 
-		onToggle(slot0, slot7, function (slot0)
+		onToggle(slot0, slot6, function (slot0)
 			setActive(slot0:Find("on"), slot0)
 			setActive(slot0:Find("off"), not slot0)
 			getProxy(SettingsProxy):setCharacterSetting(getProxy(SettingsProxy).setCharacterSetting, "bg", slot0)
 		end)
-		triggerToggle(slot7, getProxy(SettingsProxy):getCharacterSetting(slot2, "bg"))
-		setActive(slot7, slot0.cards[slot1].shipVO.getShipBgPrint(slot5) ~= slot0.cards[slot1].shipVO:rarity2bgPrintForGet())
+		triggerToggle(slot6, getProxy(SettingsProxy):getCharacterSetting(slot2, "bg"))
+		setActive(slot6, slot3:getShipBgPrint() ~= slot3:rarity2bgPrintForGet())
 
-		slot8 = slot4.tr:Find("mask/settings/bgm")
+		slot7 = slot4.tr:Find("mask/settings/bgm")
 
-		onToggle(slot0, slot8, function (slot0)
+		onToggle(slot0, slot7, function (slot0)
 			setActive(slot0:Find("on"), slot0)
 			setActive(slot0:Find("off"), not slot0)
 			getProxy(SettingsProxy):setCharacterSetting(getProxy(SettingsProxy).setCharacterSetting, "bgm", slot0)
 		end)
-		triggerToggle(slot8, getProxy(SettingsProxy):getCharacterSetting(slot2, "bgm"))
-		setActive(slot8, false)
-		onButton(slot0, slot7, function ()
+		triggerToggle(slot7, getProxy(SettingsProxy):getCharacterSetting(slot2, "bgm"))
+		setActive(slot7, false)
+		onButton(slot0, slot6, function ()
 			slot0:emit(PlayerInfoMediator.CHANGE_SKIN, slot0)
 		end)
-		setActive(slot4.tr:Find("mask/skin"), slot0:isCurrentShipExistSkin(slot5.groupId))
+		setActive(slot4.tr:Find("mask/skin"), slot0:isCurrentShipExistSkin(slot3))
 	else
 		slot0.cards[slot1]:update(nil, false)
 	end

@@ -450,16 +450,20 @@ function slot1(slot0, slot1, slot2)
 
 	for slot6, slot7 in slot3, slot4, slot5 do
 		slot8 = slot7.instagram
-		slot8 = slot8.id
 
-		if slot8 == slot1 then
-			slot9 = slot7
-			slot8 = slot7.Update
-			slot10 = slot0.instagramVOById
-			slot10 = slot10[slot1]
-			slot11 = slot2
+		if slot8 then
+			slot8 = slot7.instagram
+			slot8 = slot8.id
 
-			slot8(slot9, slot10, slot11)
+			if slot8 == slot1 then
+				slot9 = slot7
+				slot8 = slot7.Update
+				slot10 = slot0.instagramVOById
+				slot10 = slot10[slot1]
+				slot11 = slot2
+
+				slot8(slot9, slot10, slot11)
+			end
 		end
 	end
 end
@@ -794,85 +798,93 @@ function slot1(slot0)
 
 			slot5(slot6, slot7(slot8))
 
-			slot5 = setText
-			slot7 = slot2
-			slot6 = slot2.Find
-			slot8 = "main/content"
-			slot6 = slot6(slot7, slot8)
-			slot7 = HXSet
-			slot7 = slot7.hxLan
-			slot9 = slot3
-			slot8 = slot3.GetContent
-
-			slot5(slot6, slot7(slot8(slot9)))
-
-			slot5 = setText
-			slot7 = slot2
-			slot6 = slot2.Find
-			slot8 = "main/bubble/Text"
-			slot6 = slot6(slot7, slot8)
-			slot8 = slot3
-			slot7 = slot3.GetReplyCnt
-
-			slot5(slot6, slot7(slot8))
-
-			slot5 = setText
-			slot7 = slot2
-			slot6 = slot2.Find
-			slot8 = "main/time"
-			slot6 = slot6(slot7, slot8)
-			slot8 = slot3
-			slot7 = slot3.GetTime
-
-			slot5(slot6, slot7(slot8))
-
 			slot6 = slot3
-			slot5 = slot3.GetType
+			slot5 = slot3.GetContent
 			slot5 = slot5(slot6)
-			slot6 = Instagram
-			slot6 = slot6.TYPE_PLAYER_COMMENT
+			slot7 = slot5
+			slot6 = slot5.gsub
+			slot8 = "%s"
+			slot9 = " "
+			slot6 = slot6(slot7, slot8, slot9)
+			slot5 = slot6
+			slot6 = setText
+			slot8 = slot2
+			slot7 = slot2.Find
+			slot9 = "main/content"
+			slot7 = slot7(slot8, slot9)
+			slot8 = HXSet
+			slot8 = slot8.hxLan
+			slot9 = slot5
 
-			if slot5 == slot6 then
-				slot6 = slot3
-				slot5 = slot3.GetIcon
-				slot5, slot6 = slot5(slot6)
-				slot7 = setImageSprite
-				slot9 = slot2
-				slot8 = slot2.Find
-				slot10 = "main/head/icon"
-				slot8 = slot8(slot9, slot10)
-				slot9 = GetSpriteFromAtlas
-				slot10 = slot5
+			slot6(slot7, slot8(slot9))
+
+			slot6 = setText
+			slot8 = slot2
+			slot7 = slot2.Find
+			slot9 = "main/bubble/Text"
+			slot7 = slot7(slot8, slot9)
+			slot9 = slot3
+			slot8 = slot3.GetReplyCnt
+
+			slot6(slot7, slot8(slot9))
+
+			slot6 = setText
+			slot8 = slot2
+			slot7 = slot2.Find
+			slot9 = "main/time"
+			slot7 = slot7(slot8, slot9)
+			slot9 = slot3
+			slot8 = slot3.GetTime
+
+			slot6(slot7, slot8(slot9))
+
+			slot7 = slot3
+			slot6 = slot3.GetType
+			slot6 = slot6(slot7)
+			slot7 = Instagram
+			slot7 = slot7.TYPE_PLAYER_COMMENT
+
+			if slot6 == slot7 then
+				slot7 = slot3
+				slot6 = slot3.GetIcon
+				slot6, slot7 = slot6(slot7)
+				slot8 = setImageSprite
+				slot10 = slot2
+				slot9 = slot2.Find
+				slot11 = "main/head/icon"
+				slot9 = slot9(slot10, slot11)
+				slot10 = GetSpriteFromAtlas
 				slot11 = slot6
+				slot12 = slot7
 
-				slot7(slot8, slot9(slot10, slot11))
+				slot8(slot9, slot10(slot11, slot12))
 			else
-				slot5 = setImageSprite
-				slot7 = slot2
-				slot6 = slot2.Find
-				slot8 = "main/head/icon"
-				slot6 = slot6(slot7, slot8)
-				slot7 = LoadSprite
-				slot8 = "qicon/"
-				slot10 = slot3
-				slot9 = slot3.GetIcon
-				slot9 = slot9(slot10)
-				slot8 = slot8 .. slot9
-				slot7 = slot7(slot8)
-				slot8 = false
+				slot6 = setImageSprite
+				slot8 = slot2
+				slot7 = slot2.Find
+				slot9 = "main/head/icon"
+				slot7 = slot7(slot8, slot9)
+				slot8 = LoadSprite
+				slot9 = "qicon/"
+				slot11 = slot3
+				slot10 = slot3.GetIcon
+				slot10 = slot10(slot11)
+				slot9 = slot9 .. slot10
+				slot8 = slot8(slot9)
+				slot9 = false
 
-				slot5(slot6, slot7, slot8)
+				slot6(slot7, slot8, slot9)
 			end
 
 			if slot4 then
-				slot5 = onToggle
-				slot6 = slot1
-				slot8 = slot2
-				slot7 = slot2.Find
-				slot9 = "main/bubble"
-				slot7 = slot7(slot8, slot9)
+				slot6 = onToggle
+				slot7 = slot1
+				slot9 = slot2
+				slot8 = slot2.Find
+				slot10 = "main/bubble"
+				slot8 = slot8(slot9, slot10)
 
-				function slot8(slot0)
+				function slot9(slot0)
 					slot1 = setActive
 					slot2 = slot0
 					slot3 = slot2
@@ -884,56 +896,56 @@ function slot1(slot0)
 					slot1(slot2, slot3)
 				end
 
-				slot9 = SFX_PANEL
+				slot10 = SFX_PANEL
 
-				slot5(slot6, slot7, slot8, slot9)
+				slot6(slot7, slot8, slot9, slot10)
 
-				slot5 = slot1
-				slot6 = slot5
-				slot5 = slot5.UpdateReplys
-				slot7 = slot2
-				slot8 = slot3
+				slot6 = slot1
+				slot7 = slot6
+				slot6 = slot6.UpdateReplys
+				slot8 = slot2
+				slot9 = slot3
 
-				slot5(slot6, slot7, slot8)
+				slot6(slot7, slot8, slot9)
 
-				slot5 = triggerToggle
-				slot7 = slot2
-				slot6 = slot2.Find
-				slot8 = "main/bubble"
-				slot6 = slot6(slot7, slot8)
-				slot7 = true
+				slot6 = triggerToggle
+				slot8 = slot2
+				slot7 = slot2.Find
+				slot9 = "main/bubble"
+				slot7 = slot7(slot8, slot9)
+				slot8 = true
 
-				slot5(slot6, slot7)
+				slot6(slot7, slot8)
 			else
-				slot5 = setActive
-				slot7 = slot2
-				slot6 = slot2.Find
-				slot8 = "replys"
-				slot6 = slot6(slot7, slot8)
-				slot7 = false
+				slot6 = setActive
+				slot8 = slot2
+				slot7 = slot2.Find
+				slot9 = "replys"
+				slot7 = slot7(slot8, slot9)
+				slot8 = false
 
-				slot5(slot6, slot7)
+				slot6(slot7, slot8)
 
-				slot5 = triggerToggle
-				slot7 = slot2
-				slot6 = slot2.Find
-				slot8 = "main/bubble"
-				slot6 = slot6(slot7, slot8)
-				slot7 = false
+				slot6 = triggerToggle
+				slot8 = slot2
+				slot7 = slot2.Find
+				slot9 = "main/bubble"
+				slot7 = slot7(slot8, slot9)
+				slot8 = false
 
-				slot5(slot6, slot7)
+				slot6(slot7, slot8)
 			end
 
-			slot6 = slot2
-			slot5 = slot2.Find
-			slot7 = "main/bubble"
-			slot5 = slot5(slot6, slot7)
-			slot6 = slot5
-			slot5 = slot5.GetComponent
-			slot7 = typeof
-			slot8 = Toggle
-			slot5 = slot5(slot6, slot7(slot8))
-			slot5.enabled = slot4
+			slot7 = slot2
+			slot6 = slot2.Find
+			slot8 = "main/bubble"
+			slot6 = slot6(slot7, slot8)
+			slot7 = slot6
+			slot6 = slot6.GetComponent
+			slot8 = typeof
+			slot9 = Toggle
+			slot6 = slot6(slot7, slot8(slot9))
+			slot6.enabled = slot4
 		end
 	end
 
@@ -1017,17 +1029,25 @@ function slot1(slot0, slot1, slot2)
 
 			slot4(slot5, slot6, slot7)
 
-			slot4 = setText
-			slot6 = slot2
-			slot5 = slot2.Find
-			slot7 = "content"
-			slot5 = slot5(slot6, slot7)
-			slot6 = HXSet
-			slot6 = slot6.hxLan
-			slot8 = slot3
-			slot7 = slot3.GetContent
+			slot5 = slot3
+			slot4 = slot3.GetContent
+			slot4 = slot4(slot5)
+			slot6 = slot4
+			slot5 = slot4.gsub
+			slot7 = "%s"
+			slot8 = " "
+			slot5 = slot5(slot6, slot7, slot8)
+			slot4 = slot5
+			slot5 = setText
+			slot7 = slot2
+			slot6 = slot2.Find
+			slot8 = "content"
+			slot6 = slot6(slot7, slot8)
+			slot7 = HXSet
+			slot7 = slot7.hxLan
+			slot8 = slot4
 
-			slot4(slot5, slot6(slot7(slot8)))
+			slot5(slot6, slot7(slot8))
 		end
 	end
 

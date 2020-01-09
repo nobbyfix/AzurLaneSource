@@ -3051,7 +3051,7 @@ Current expansions: <color=#92fc63>$3</color>
 		key = "ship_skill_unlock_tip"
 	},
 	ship_lock_tip = {
-		tip = "Are you sure you want to <color=#92fc63>lock</color> this ship?",
+		tip = "Do you want to <color=#92fc63>lock</color> this ship?",
 		key = "ship_lock_tip"
 	},
 	ship_destroy_uncommon_tip = {
@@ -4025,7 +4025,7 @@ Current expansions: <color=#92fc63>$3</color>
 		key = "friend_inpout_key_tip"
 	},
 	remove_friend_tip = {
-		tip = "Are you sure you want to delete these friends?",
+		tip = "Are you sure you want to delete this friend? ",
 		key = "remove_friend_tip"
 	},
 	friend_request_msg_placeholder = {
@@ -5859,7 +5859,7 @@ Attack/Support Range Level:
 		key = "guild_player_in_cd_time"
 	},
 	guild_player_already_join = {
-		tip = "Player has joined your guild.",
+		tip = "Player was already a guild member.",
 		key = "guild_player_already_join"
 	},
 	guild_rejecet_apply_sucess = {
@@ -7733,7 +7733,7 @@ There are no Lectures on Sundays, but you will earn double the amount of Profici
 		key = "activity_switch_award_pool_failed"
 	},
 	shop_street_activity_tip = {
-		tip = "※<color=#A1E400FF>Gear Skins</color> are purchasable during(<color=#A1E400FF>11.27 – 12.10</COLOR>)!",
+		tip = "※<color=#A1E400FF>Gear Skins</color> are purchasable during\n(<color=#A1E400FF>19.12.26 – 20.01.08</COLOR>)!",
 		key = "shop_street_activity_tip"
 	},
 	twitter_link_title = {
@@ -7799,6 +7799,10 @@ There are no Lectures on Sundays, but you will earn double the amount of Profici
 	emoji_type_3 = {
 		tip = "Pixel ",
 		key = "emoji_type_3"
+	},
+	emoji_type_4 = {
+		tip = "Cartoon ",
+		key = "emoji_type_4"
 	},
 	card_pairs_help_tip = {
 		key = "card_pairs_help_tip",
@@ -8842,7 +8846,7 @@ Combat Details:
 		key = "commander_skill_point_noengough"
 	},
 	buildship_new_tip = {
-		tip = "Rate Up characters: Shirakami Fubuki,Minato Aqua and more!",
+		tip = "Rate Up characters: Suruga,Ryuuhou and more!",
 		key = "buildship_new_tip"
 	},
 	buildship_heavy_tip = {
@@ -10043,6 +10047,64 @@ About Tech Points:
 		tip = "Research Progress: ",
 		key = "fate_phase_word"
 	},
+	blueprint_simulation_confirm = {
+		tip = "Would you like to start a Battle Simulation? Note: the ship's stats and abilities may differ from its fully developed equivalent.",
+		key = "blueprint_simulation_confirm"
+	},
+	blueprint_simulation_confirm_19901 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation? Note: the ship's stats and abilities may differ from its fully developed equivalent.
+Equipped gear:
+Prototype Triple 152mm Main Gun (DP MK17)
+Prototype Triple 152mm Main Gun (DP MK17)
+Quadruple 40mm Bofors Gun</size>]],
+		key = "blueprint_simulation_confirm_19901"
+	},
+	blueprint_simulation_confirm_19902 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation? Note: the ship's stats and abilities may differ from its fully developed equivalent.
+Equipped gear:
+Prototype Twin 457mm Main Gun (18" MKA)
+Twin 127mm MK12 Dual Gun
+Quadruple 40mm Bofors Gun</size>]],
+		key = "blueprint_simulation_confirm_19902"
+	},
+	blueprint_simulation_confirm_39903 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation? Note: the Priority ship's stats and abilities may differ from its fully developed equivalent.
+Equipped gear:
+Twin 100mm (Type 98) AA Gun
+Quadruple 610mm Torpedo
+Prototype 40mm AA Gun (Type 5)</size>]],
+		key = "blueprint_simulation_confirm_39903"
+	},
+	blueprint_simulation_confirm_39904 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation? Note: the Priority ship's stats and abilities may differ from its fully developed equivalent.
+Equipped gear:
+Prototype Triple 310mm Main Gun (Type 0)
+Twin 100mm (Type 98) AA Gun
+Prototype 40mm AA Gun (Type 5)</size>]],
+		key = "blueprint_simulation_confirm_39904"
+	},
+	blueprint_simulation_confirm_49902 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation? Note: the Priority ship's stats and abilities may differ from its fully developed equivalent.
+Equipped gear:
+Prototype Twin 406mm Main Gun (SK C/34)
+Twin 150mm Main Gun (TbtsK C/36)
+Twin 105mm AA Gun (SK C)</size>]],
+		key = "blueprint_simulation_confirm_49902"
+	},
+	blueprint_simulation_confirm_99901 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation? Note: the Priority ship's stats and abilities may differ from its fully developed equivalent.
+Equipped gear:
+Quadruple 380mm Main Gun (Mle 1935)
+Triple 152mm Main Gun (Mle 1930)
+Twin 37mm AA Gun (Mle 1936)</size>]],
+		key = "blueprint_simulation_confirm_99901"
+	},
 	electrotherapy_wanning = {
 		tip = "The electrified area is about to expand",
 		key = "electrotherapy_wanning"
@@ -10832,7 +10894,7 @@ You can play the minigame without a Game Ticket but will not earn any prizes.</c
 		key = "tips_summergame_exit"
 	},
 	tips_shrine_buff = {
-		tip = "You spent 5 Coins and received a blessing: $1",
+		tip = "You spent 5 Coins and received a blessing",
 		key = "tips_shrine_buff"
 	},
 	tips_shrine_nobuff = {
@@ -11064,6 +11126,30 @@ depends on the amount of damage dealt to the boss.
 		tip = "Goal:",
 		key = "pt_ship_goal"
 	},
+	option_desc1 = {
+		tip = "When toggled ON, displays the custom names that other commanders have given their ships.",
+		key = "option_desc1"
+	},
+	option_desc2 = {
+		tip = "When toggled ON, your device will vibrate after completing a battle in Auto mode.",
+		key = "option_desc2"
+	},
+	option_desc3 = {
+		tip = "When toggled ON, your device will vibrate when obtaining a ship of Elite rarity or higher.",
+		key = "option_desc3"
+	},
+	option_desc4 = {
+		tip = "When toggled OFF, skips the acquisition screen when obtaining a Rare or Common ship already registered in your encyclopedia.",
+		key = "option_desc4"
+	},
+	option_desc5 = {
+		tip = "When toggled ON, displays a tap effect when you tap the screen.",
+		key = "option_desc5"
+	},
+	option_desc6 = {
+		tip = "When toggled ON, the loading display will adapt to your device's aspect ratio.",
+		key = "option_desc6"
+	},
 	skinshop_live2d_fliter_failed = {
 		tip = "No outfits to display under current filter settings ",
 		key = "skinshop_live2d_fliter_failed"
@@ -11222,9 +11308,308 @@ depends on the amount of damage dealt to the boss.
 		tip = "Save successful",
 		key = "secretary_pos_save_success"
 	},
+	collection_help = {
+		key = "collection_help",
+		tip = {
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/collect_help1"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/collect_help2"
+				}
+			},
+			disableScroll = true,
+			pageMode = true,
+			defaultpage = 1,
+			ImageMode = true,
+			windowSize = {
+				x = 1263,
+				y = 873
+			},
+			windowPos = {
+				y = -70
+			},
+			helpSize = {
+				x = 1176,
+				y = 1024
+			}
+		}
+	},
 	juese_tiyan = {
 		tip = "Would you like to try out this character? (Stats shown during testing are for reference only, <color=#ff5c5c>Actual performance when acquired may differ.</color>)",
 		key = "juese_tiyan"
+	},
+	resolve_amount_prefix = {
+		tip = "Disassemble amount:",
+		key = "resolve_amount_prefix"
+	},
+	compose_amount_prefix = {
+		tip = "Combine amount:",
+		key = "compose_amount_prefix"
+	},
+	help_sub_limits = {
+		tip = "Hide/Show ASR",
+		key = "help_sub_limits"
+	},
+	help_sub_display = {
+		tip = "Attack Mode/Support Mode",
+		key = "help_sub_display"
+	},
+	confirm_unlock_ship_main = {
+		tip = "This ship is currently secretary, and cannot be selected again",
+		key = "confirm_unlock_ship_main"
+	},
+	msgbox_text_confirm = {
+		tip = "Confirm",
+		key = "msgbox_text_confirm"
+	},
+	msgbox_text_shop = {
+		tip = "Shop ",
+		key = "msgbox_text_shop"
+	},
+	msgbox_text_cancel = {
+		tip = "Cancel",
+		key = "msgbox_text_cancel"
+	},
+	msgbox_text_cancel_g = {
+		tip = "Cancel",
+		key = "msgbox_text_cancel_g"
+	},
+	msgbox_text_cancel_fight = {
+		tip = "Leave battle",
+		key = "msgbox_text_cancel_fight"
+	},
+	msgbox_text_goon_fight = {
+		tip = "Continue",
+		key = "msgbox_text_goon_fight"
+	},
+	msgbox_text_exit = {
+		tip = "Exit",
+		key = "msgbox_text_exit"
+	},
+	msgbox_text_clear = {
+		tip = "Clear",
+		key = "msgbox_text_clear"
+	},
+	msgbox_text_apply = {
+		tip = "Send",
+		key = "msgbox_text_apply"
+	},
+	msgbox_text_buy = {
+		tip = "Purchase",
+		key = "msgbox_text_buy"
+	},
+	msgbox_text_noPos_buy = {
+		tip = "Expand",
+		key = "msgbox_text_noPos_buy"
+	},
+	msgbox_text_noPos_clear = {
+		tip = "Sort",
+		key = "msgbox_text_noPos_clear"
+	},
+	msgbox_text_noPos_intensify = {
+		tip = "Enhance",
+		key = "msgbox_text_noPos_intensify"
+	},
+	msgbox_text_forward = {
+		tip = "Go",
+		key = "msgbox_text_forward"
+	},
+	msgbox_text_iknow = {
+		tip = "Got it",
+		key = "msgbox_text_iknow"
+	},
+	msgbox_text_prepage = {
+		tip = "Next",
+		key = "msgbox_text_prepage"
+	},
+	msgbox_text_nextpage = {
+		tip = "Prev",
+		key = "msgbox_text_nextpage"
+	},
+	msgbox_text_exchange = {
+		tip = "Exchange",
+		key = "msgbox_text_exchange"
+	},
+	msgbox_text_retreat = {
+		tip = "Retreat",
+		key = "msgbox_text_retreat"
+	},
+	msgbox_text_go = {
+		tip = "Go",
+		key = "msgbox_text_go"
+	},
+	msgbox_text_consume = {
+		tip = "Cost",
+		key = "msgbox_text_consume"
+	},
+	msgbox_text_inconsume = {
+		tip = "NO",
+		key = "msgbox_text_inconsume"
+	},
+	msgbox_text_unlock = {
+		tip = "Unlock",
+		key = "msgbox_text_unlock"
+	},
+	common_flag_ship = {
+		tip = "Secretary",
+		key = "common_flag_ship"
+	},
+	confirm_unlock_lv = {
+		tip = "Are you sure you want to unlock $1 ($2)?",
+		key = "confirm_unlock_lv"
+	},
+	shops_rest_day = {
+		tip = "Core Data store refreshes in :",
+		key = "shops_rest_day"
+	},
+	title_limit_time = {
+		tip = "「Event」",
+		key = "title_limit_time"
+	},
+	seven_choose_one = {
+		tip = "You may choose only one New Year's gift. \nWould you like <color=#92fc63>$1</color>'s gift? \nYou will receive this character and her greeting. ",
+		key = "seven_choose_one"
+	},
+	help_newyear_feast = {
+		key = "help_newyear_feast",
+		tip = {
+			{
+				info = [[
+- Summary:
+During this event, you can enjoy a handful of minigames and earn Stamps, which can be exchanged for Kinu's skin - "New Year's Blade Demon."
+
+To receive a Stamp, you first need to have a Ticket, which you can get every day by logging in during the event period.
+
+- How to Get Stamps and Tickets You will recieve 1 Ticket a day when you login during the event period.
+
+If you don't login for several days during the event period, you will receive all the Tickets you would have gotten up to that point at the next point you login.
+
+- About the Minigame By tapping the New Year Challenge button, you'll be taken to another screen where you can play Kinu's New Year Training.
+
+When you clear this minigame while in possession of a Ticket, you'll receive 1 Stamp as well as 2 Prayers at the Shrine.
+
+Once you've collected 7 Stamps, you can tap the Check In button on the right to exchange them for Kinu's skin.
+
+Once you've made 7 Prayers at the Shrine, you can claim the New Year's Invitation (2019) from the corresponding event banner.
+
+Note: While you can still play the minigame without a Ticket, you will not receive any rewards from it if you do so.
+You may also quit the minigame at any time without losing a Ticket, but you will not receive rewards from it either.]]
+			}
+		}
+	},
+	help_newyear_shrine = {
+		key = "help_newyear_shrine",
+		tip = {
+			{
+				info = [[
+<size=31><color=#92fc63>TIPS: 
+Tapping the prayer button without any Shrine Visits will still consume coins, but will not grant any blessing.</color></size>
+
+1. Spending tickets to play the fireworks workshop, shooting gallery, or new year's feast minigames will grant Shrine Visits.
+
+2. Tapping the bell rope when you have Shrine Visits will consume 5 coins and grant a blessing.
+
+There are several types of blessings with several different effects:
+
+Education: Reduces the time it takes to train in the Tactical Academy.
+
+Career: Our fleet gets a damage bonus in main story, hard mode, and battle record sorties.
+
+Romance: Your secretary ship gains affection faster.
+
+Blessings remain in effect for one day.
+
+3. An education blessing will not reduce the training time of any lesson in progress when the blessing is activated.
+
+The expiration of the education blessing will not cause any lesson in progress to lengthen.
+
+4. Should you pray for a new blessing when a blessing is already in effect, the new blessing will override the existing one, and its duration will reset.
+
+5. You may only have one active blessing at any one time.]]
+			}
+		}
+	},
+	help_newyear_stamp = {
+		key = "help_newyear_stamp",
+		tip = {
+			{
+				info = "You can acquire Stamps by playing Kinu's New Year Training while in possession of a Ticket.\n\nCollect 7 Stamps to receive the skin!"
+			}
+		}
+	},
+	pt_reconfirm = {
+		tip = "Would you like to buy <color=#ff5c5c>$1</color>?",
+		key = "pt_reconfirm"
+	},
+	qte_game_help = {
+		key = "qte_game_help",
+		tip = {
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/guinu_help1"
+				}
+			},
+			{
+				icon = {
+					path = "",
+					atlas = "helpbg/guinu_help2"
+				}
+			},
+			disableScroll = true,
+			pageMode = true,
+			defaultpage = 1,
+			ImageMode = true,
+			windowSize = {
+				x = 1263,
+				y = 873
+			},
+			windowPos = {
+				y = -70
+			},
+			helpSize = {
+				x = 1176,
+				y = 1024
+			}
+		}
+	},
+	word_equipskin_type = {
+		tip = "Type ",
+		key = "word_equipskin_type"
+	},
+	word_equipskin_all = {
+		tip = "All ",
+		key = "word_equipskin_all"
+	},
+	word_equipskin_cannon = {
+		tip = "Artillery ",
+		key = "word_equipskin_cannon"
+	},
+	word_equipskin_tarpedo = {
+		tip = "Torpedoes ",
+		key = "word_equipskin_tarpedo"
+	},
+	word_equipskin_aircraft = {
+		tip = "Aircraft ",
+		key = "word_equipskin_aircraft"
+	},
+	msgbox_repair = {
+		tip = "Repair Assets",
+		key = "msgbox_repair"
+	},
+	msgbox_repair_l2d = {
+		tip = "Repair Live2D",
+		key = "msgbox_repair_l2d"
+	},
+	word_no_cache = {
+		tip = "There are no assets to repair.",
+		key = "word_no_cache"
 	}
 }
 

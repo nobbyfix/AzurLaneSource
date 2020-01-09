@@ -795,6 +795,54 @@ slot6.Update = function (slot0)
 
 end
 
+slot6.CheckReloadTimeStamp = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-3, warpins: 1 ---
+	if slot0._CDstartTime then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 4-15, warpins: 1 ---
+		if slot0:GetReloadFinishTimeStamp() > pg.TimeMgr.GetInstance():GetCombatTime() then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 16-17, warpins: 1 ---
+			slot1 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 18-18, warpins: 1 ---
+			slot1 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 19-19, warpins: 3 ---
+	return slot1
+	--- END OF BLOCK #1 ---
+
+
+
+end
+
 slot6.UpdateReload = function (slot0)
 
 	-- Decompilation error in this vicinity:

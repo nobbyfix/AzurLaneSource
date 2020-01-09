@@ -1,5 +1,5 @@
 slot0 = class("SpineCellView")
-slot1 = import("view.util.LoadPrefabRequestPackage")
+slot1 = import("view.util.RequestPackages.LoadPrefabRequestPackage")
 
 slot0.Ctor = function (slot0, slot1)
 	slot0.go = slot1

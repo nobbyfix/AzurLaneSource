@@ -95,7 +95,7 @@ function slot11(slot0, slot1)
 	slot4, slot5 = slot4(slot5)
 
 	if not slot4 then
-		slot6 = warning
+		slot6 = errorMsg
 		slot7 = "不存在剧情ID对应的Lua:"
 		slot8 = slot1
 		slot7 = slot7 .. slot8
@@ -1023,15 +1023,19 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 				slot5 = slot2
 
 				if slot5 then
-					slot5 = slot4.compulsory
+					slot5 = slot4.options
 
-					if slot5 then
-						slot5 = slot1
-						slot6 = slot5
-						slot5 = slot5.isRecall
-						slot5 = slot5(slot6)
+					if not slot5 then
+						slot5 = slot4.compulsory
 
 						if slot5 then
+							slot5 = slot1
+							slot6 = slot5
+							slot5 = slot5.isRecall
+							slot5 = slot5(slot6)
+
+							if slot5 then
+							end
 						end
 					end
 				else
@@ -1155,6 +1159,15 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 					slot7 = slot4.options
 
 					if slot7 then
+						slot7 = slot1
+						slot7 = slot7.skipBtn
+						slot8 = slot7
+						slot7 = slot7.GetComponent
+						slot9 = typeof
+						slot10 = Button
+						slot7 = slot7(slot8, slot9(slot10))
+						slot8 = false
+						slot7.interactable = slot8
 						slot7 = slot4.typewriter
 
 						if not slot7 then
@@ -1668,8 +1681,6 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 						break
 					end
 
-					skip = slot4.skip or 0
-
 					if slot5 then
 						slot7 = coroutine
 						slot7 = slot7.yield
@@ -1712,15 +1723,6 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 
 		slot0(slot1)
 
-		slot0 = slot1
-		slot0 = slot0.skipBtn
-		slot1 = slot0
-		slot0 = slot0.GetComponent
-		slot2 = typeof
-		slot3 = Button
-		slot0 = slot0(slot1, slot2(slot3))
-		slot1 = true
-		slot0.interactable = slot1
 		slot0 = slot2
 
 		if not slot0 then
@@ -1913,15 +1915,6 @@ function slot17(slot0, slot1, slot2, slot3, slot4)
 				slot5(slot6, slot7)
 			end
 
-			slot1 = slot0
-			slot1 = slot1.skipBtn
-			slot2 = slot1
-			slot1 = slot1.GetComponent
-			slot3 = typeof
-			slot4 = Button
-			slot1 = slot1(slot2, slot3(slot4))
-			slot2 = false
-			slot1.interactable = slot2
 			slot1 = true
 			slot1 = slot2
 
@@ -3933,12 +3926,27 @@ function slot17(slot0, slot1)
 				if slot3 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 37-41, warpins: 1 ---
-					slot3 = setGray
-					slot4 = slot0
-					slot5 = true
+					--- BLOCK #0 37-40, warpins: 1 ---
+					slot3 = onNextTick
 
-					slot3(slot4, slot5)
+					function slot4()
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 1-5, warpins: 1 ---
+						slot0 = setGray
+						slot1 = slot0
+						slot2 = true
+
+						slot0(slot1, slot2)
+
+						return
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+
+					slot3(slot4)
 					--- END OF BLOCK #0 ---
 
 
@@ -3946,7 +3954,7 @@ function slot17(slot0, slot1)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 42-45, warpins: 1 ---
+					--- BLOCK #0 41-44, warpins: 1 ---
 					slot3 = setGray
 					slot4 = slot0
 					slot5 = false
@@ -3965,7 +3973,7 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #2 46-51, warpins: 2 ---
+				--- BLOCK #2 45-50, warpins: 2 ---
 				slot3 = findTF
 				slot4 = slot0
 				slot5 = "shadow"
@@ -3974,7 +3982,7 @@ function slot17(slot0, slot1)
 				if slot3 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 52-56, warpins: 1 ---
+					--- BLOCK #0 51-55, warpins: 1 ---
 					slot4 = setActive
 					slot5 = slot3
 					slot6 = slot1
@@ -3994,7 +4002,7 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #3 57-63, warpins: 2 ---
+				--- BLOCK #3 56-62, warpins: 2 ---
 				slot4 = defaultValue
 				slot5 = slot1
 				slot5 = slot5.recordPaint
@@ -4004,7 +4012,7 @@ function slot17(slot0, slot1)
 				if slot4 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 64-68, warpins: 1 ---
+					--- BLOCK #0 63-67, warpins: 1 ---
 					slot4 = slot2
 					slot5 = slot3
 					slot5 = slot5.CENTER
@@ -4012,7 +4020,7 @@ function slot17(slot0, slot1)
 					if slot4 == slot5 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 69-70, warpins: 1 ---
+						--- BLOCK #0 68-69, warpins: 1 ---
 						slot4 = false
 						--- END OF BLOCK #0 ---
 
@@ -4021,7 +4029,7 @@ function slot17(slot0, slot1)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 71-71, warpins: 1 ---
+						--- BLOCK #0 70-70, warpins: 1 ---
 						slot4 = true
 						--- END OF BLOCK #0 ---
 
@@ -4041,14 +4049,14 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #4 72-75, warpins: 3 ---
+				--- BLOCK #4 71-74, warpins: 3 ---
 				slot5 = slot1
 				slot5 = slot5.actorScale
 
 				if not slot5 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 76-76, warpins: 1 ---
+					--- BLOCK #0 75-75, warpins: 1 ---
 					slot5 = 1
 					--- END OF BLOCK #0 ---
 
@@ -4063,14 +4071,14 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #5 77-80, warpins: 2 ---
+				--- BLOCK #5 76-79, warpins: 2 ---
 				slot6 = slot1
 				slot6 = slot6.dir
 
 				if slot6 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 81-85, warpins: 1 ---
+					--- BLOCK #0 80-84, warpins: 1 ---
 					slot6 = slot1
 					slot6 = slot6.dir
 					slot7 = 0
@@ -4078,7 +4086,7 @@ function slot17(slot0, slot1)
 					if slot6 < slot7 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 86-87, warpins: 1 ---
+						--- BLOCK #0 85-86, warpins: 1 ---
 						slot6 = -1
 						--- END OF BLOCK #0 ---
 
@@ -4092,7 +4100,7 @@ function slot17(slot0, slot1)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 88-88, warpins: 2 ---
+					--- BLOCK #0 87-87, warpins: 2 ---
 					slot6 = 1
 					--- END OF BLOCK #0 ---
 
@@ -4107,7 +4115,7 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #6 89-100, warpins: 2 ---
+				--- BLOCK #6 88-99, warpins: 2 ---
 				slot7 = slot4
 				slot7 = slot7.transform
 				slot8 = Vector3
@@ -4122,7 +4130,7 @@ function slot17(slot0, slot1)
 				if slot7 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 101-107, warpins: 1 ---
+					--- BLOCK #0 100-106, warpins: 1 ---
 					slot7 = slot5
 					slot7 = slot7.preStep
 					slot7 = slot7.side
@@ -4132,7 +4140,7 @@ function slot17(slot0, slot1)
 					if slot7 == slot8 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 108-113, warpins: 1 ---
+						--- BLOCK #0 107-112, warpins: 1 ---
 						slot7 = slot1
 						slot7 = slot7.side
 						slot8 = slot3
@@ -4141,7 +4149,7 @@ function slot17(slot0, slot1)
 						if slot7 ~= slot8 then
 
 							-- Decompilation error in this vicinity:
-							--- BLOCK #0 114-124, warpins: 1 ---
+							--- BLOCK #0 113-124, warpins: 1 ---
 							slot7 = slot5
 							slot8 = slot7
 							slot7 = slot7.getTagetActorTF
@@ -4359,7 +4367,7 @@ function slot17(slot0, slot1)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #9 185-192, warpins: 2 ---
+				--- BLOCK #9 185-193, warpins: 2 ---
 				slot7 = slot5
 				slot8 = slot7
 				slot7 = slot7.updatePainting
@@ -8218,26 +8226,18 @@ slot0.getNameAndPainting = slot17
 function slot17(slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-15, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot4 = "enter bg Options............"
 
 	slot3(slot4)
 
-	slot3 = slot0.skipBtn
-	slot4 = slot3
-	slot3 = slot3.GetComponent
-	slot5 = typeof
-	slot6 = Button
-	slot3 = slot3(slot4, slot5(slot6))
-	slot4 = false
-	slot3.interactable = slot4
 	slot3 = slot0.optionItems
 
 	if not slot3 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 16-17, warpins: 1 ---
+		--- BLOCK #0 7-8, warpins: 1 ---
 		slot3 = {}
 		slot0.optionItems = slot3
 		--- END OF BLOCK #0 ---
@@ -8253,7 +8253,7 @@ function slot17(slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 18-24, warpins: 2 ---
+	--- BLOCK #1 9-15, warpins: 2 ---
 	slot4 = slot0
 	slot3 = slot0.removeOptBtns
 
@@ -8270,18 +8270,18 @@ function slot17(slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 25-65, warpins: 0 ---
+	--- BLOCK #2 16-56, warpins: 0 ---
 	for slot6, slot7 in slot3, slot4, slot5 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 25-28, warpins: 1 ---
+		--- BLOCK #0 16-19, warpins: 1 ---
 		slot8 = slot0.optionItems
 		slot8 = slot8[slot6]
 
 		if not slot8 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 29-35, warpins: 1 ---
+			--- BLOCK #0 20-26, warpins: 1 ---
 			slot9 = cloneTplTo
 			slot10 = slot0._option_tpl
 			slot11 = slot0.optionsContainer
@@ -8302,7 +8302,7 @@ function slot17(slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 36-63, warpins: 2 ---
+		--- BLOCK #1 27-54, warpins: 2 ---
 		slot9 = findTF
 		slot10 = slot8
 		slot11 = "option"
@@ -8407,7 +8407,7 @@ function slot17(slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 64-65, warpins: 2 ---
+		--- BLOCK #2 55-56, warpins: 2 ---
 		--- END OF BLOCK #2 ---
 
 
@@ -8421,7 +8421,7 @@ function slot17(slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 66-70, warpins: 1 ---
+	--- BLOCK #3 57-61, warpins: 1 ---
 	slot4 = slot0
 	slot3 = slot0.showOptions
 
@@ -8586,16 +8586,7 @@ function slot17(slot0)
 	function slot5()
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-15, warpins: 1 ---
-		slot0 = slot0
-		slot0 = slot0.skipBtn
-		slot1 = slot0
-		slot0 = slot0.GetComponent
-		slot2 = typeof
-		slot3 = Button
-		slot0 = slot0(slot1, slot2(slot3))
-		slot1 = true
-		slot0.interactable = slot1
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = slot0
 		slot0 = slot0.optionsCg
 		slot1 = true
@@ -8622,15 +8613,7 @@ slot0.showOptions = slot17
 function slot17(slot0, slot1, slot2)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-34, warpins: 1 ---
-	slot3 = slot0.skipBtn
-	slot4 = slot3
-	slot3 = slot3.GetComponent
-	slot5 = typeof
-	slot6 = Button
-	slot3 = slot3(slot4, slot5(slot6))
-	slot4 = false
-	slot3.interactable = slot4
+	--- BLOCK #0 1-25, warpins: 1 ---
 	slot3 = 0
 	slot4 = LeanTween
 	slot4 = slot4.cancel
@@ -8668,11 +8651,11 @@ function slot17(slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 35-58, warpins: 0 ---
+	--- BLOCK #1 26-49, warpins: 0 ---
 	for slot7, slot8 in slot4, slot5, slot6 do
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 35-39, warpins: 1 ---
+		--- BLOCK #0 26-30, warpins: 1 ---
 		slot9 = isActive
 		slot10 = slot8
 		slot9 = slot9(slot10)
@@ -8680,7 +8663,7 @@ function slot17(slot0, slot1, slot2)
 		if slot9 and slot7 ~= slot1 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 42-56, warpins: 1 ---
+			--- BLOCK #0 33-47, warpins: 1 ---
 			slot9 = findTF
 			slot10 = slot8
 			slot11 = "option"
@@ -8710,7 +8693,7 @@ function slot17(slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 57-58, warpins: 4 ---
+		--- BLOCK #1 48-49, warpins: 4 ---
 		--- END OF BLOCK #1 ---
 
 
@@ -8724,7 +8707,7 @@ function slot17(slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 59-93, warpins: 1 ---
+	--- BLOCK #2 50-84, warpins: 1 ---
 	slot4 = slot0.optionsCg
 	slot5 = false
 	slot4.interactable = slot5
@@ -10132,10 +10115,29 @@ function slot17(slot0, slot1, slot2)
 		slot7 = "MeshImage"
 		slot5 = slot5(slot6, slot7)
 
+		if not slot5 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 23-24, warpins: 1 ---
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 25-26, warpins: 2 ---
 		if slot2 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 23-34, warpins: 1 ---
+			--- BLOCK #0 27-38, warpins: 1 ---
 			slot6 = slot0.material1
 			slot5.material = slot6
 			slot6 = slot5.material
@@ -10157,7 +10159,7 @@ function slot17(slot0, slot1, slot2)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 35-40, warpins: 1 ---
+			--- BLOCK #0 39-44, warpins: 1 ---
 			slot6 = LeanTween
 			slot6 = slot6.cancel
 			slot7 = slot5.gameObject
@@ -10172,14 +10174,14 @@ function slot17(slot0, slot1, slot2)
 
 		end
 
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #1 ---
 
-		FLOW; TARGET BLOCK #1
+		FLOW; TARGET BLOCK #2
 
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 41-46, warpins: 2 ---
+		--- BLOCK #2 45-50, warpins: 2 ---
 		slot6 = findTF
 		slot7 = slot4
 		slot8 = "face"
@@ -10188,7 +10190,7 @@ function slot17(slot0, slot1, slot2)
 		if slot6 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 47-51, warpins: 1 ---
+			--- BLOCK #0 51-55, warpins: 1 ---
 			slot7 = isActive
 			slot8 = slot6
 			slot7 = slot7(slot8)
@@ -10196,7 +10198,7 @@ function slot17(slot0, slot1, slot2)
 			if slot7 then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 52-57, warpins: 1 ---
+				--- BLOCK #0 56-61, warpins: 1 ---
 				slot7 = GetComponent
 				slot8 = slot6
 				slot9 = "Image"
@@ -10205,7 +10207,7 @@ function slot17(slot0, slot1, slot2)
 				if slot2 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 58-69, warpins: 1 ---
+					--- BLOCK #0 62-73, warpins: 1 ---
 					slot8 = slot0.material2
 					slot7.material = slot8
 					slot8 = slot7.material
@@ -10227,7 +10229,7 @@ function slot17(slot0, slot1, slot2)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 70-75, warpins: 1 ---
+					--- BLOCK #0 74-79, warpins: 1 ---
 					slot8 = LeanTween
 					slot8 = slot8.cancel
 					slot9 = slot7.gameObject
@@ -10251,7 +10253,7 @@ function slot17(slot0, slot1, slot2)
 
 
 		end
-		--- END OF BLOCK #1 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -10264,7 +10266,7 @@ function slot17(slot0, slot1, slot2)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 76-77, warpins: 5 ---
+	--- BLOCK #2 80-81, warpins: 5 ---
 	return
 	--- END OF BLOCK #2 ---
 

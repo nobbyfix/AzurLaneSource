@@ -164,7 +164,6 @@ slot0.register = function (slot0)
 	end)
 
 	slot0.shamChapter = ShamChapter.New()
-	slot0.shamShop = ShamBattleShop.New(0, {})
 
 	slot0:on(23001, function (slot0)
 		slot1 = slot0.sim_id
@@ -174,13 +173,7 @@ slot0.register = function (slot0)
 				slot1 = pg.TimeMgr.GetInstance():STimeDescS(pg.TimeMgr.GetInstance():GetServerTime(), "*t").month
 			end
 
-			slot0.shamShop:update(slot1, slot0.shop_list or {})
-
 			slot0.shamChapter.simId = slot1
-		elseif not pg.sim_battle_template[slot1] then
-			slot0.shamShop = nil
-		else
-			slot0.shamShop:update(slot1, slot0.shop_list or {})
 		end
 
 		slot0.shamChapter.shamResetCount = slot0.sham_count
@@ -943,16 +936,6 @@ slot0.resetShamChapter = function (slot0)
 	slot0.shamChapter.repairTimes = 0
 end
 
-slot0.getShamShop = function (slot0)
-	return Clone(slot0.shamShop)
-end
-
-slot0.updateShamShop = function (slot0, slot1)
-	slot0.shamShop = slot1
-
-	slot0:sendNotification(slot0.SHAM_SHOP_UPDATED)
-end
-
 slot0.localLoadShamChapter = function (slot0)
 	slot0.shamChapter:localLoadChapter()
 end
@@ -1132,6 +1115,22 @@ end
 
 slot0.updateDailyCount = function (slot0)
 	slot0.remasterDailyCount = slot0.remasterDailyCount + 2
+end
+
+slot0.GetSkipPrecombat = function (slot0)
+	if slot0.skipPrecombat == nil then
+		slot0.skipPrecombat = PlayerPrefs.GetInt("chapter_skip_precombat", 0)
+	end
+
+	return (slot0.skipPrecombat > 0 and true) or false
+end
+
+slot0.UpdateSkipPrecombat = function (slot0, slot1)
+	if ((tobool(slot1) and 1) or 0) ~= slot0:GetSkipPrecombat() then
+		PlayerPrefs.SetInt("chapter_skip_precombat", slot2)
+
+		slot0.skipPrecombat = slot2
+	end
 end
 
 return slot0

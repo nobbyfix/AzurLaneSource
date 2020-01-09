@@ -15,6 +15,8 @@ slot1 = "sham"
 slot0.TYPE_SHAM_SHOP = slot1
 slot1 = "escort"
 slot0.TYPE_ESCORT_SHOP = slot1
+slot1 = "fragment"
+slot0.TYPE_FRAGMENT = slot1
 
 function slot1(slot0)
 	slot1 = "shopsUI"
@@ -42,6 +44,11 @@ function slot1(slot0)
 	slot3 = "frame/item_activity_tpl"
 	slot1 = slot1(slot2, slot3)
 	slot0.goodActivityTF = slot1
+	slot2 = slot0
+	slot1 = slot0.findTF
+	slot3 = "frame/item_fragment_tpl"
+	slot1 = slot1(slot2, slot3)
+	slot0.goodFragTF = slot1
 	slot2 = slot0
 	slot1 = slot0.findTF
 	slot3 = "frame/bottom"
@@ -84,6 +91,12 @@ function slot1(slot0)
 	slot4 = slot0.top
 	slot1 = slot1(slot2, slot3, slot4)
 	slot0.backBtn = slot1
+	slot2 = slot0
+	slot1 = slot0.findTF
+	slot3 = "option"
+	slot4 = slot0.top
+	slot1 = slot1(slot2, slot3, slot4)
+	slot0.homeBtn = slot1
 	slot2 = slot0
 	slot1 = slot0.findTF
 	slot3 = "paint"
@@ -166,8 +179,112 @@ function slot1(slot0)
 	slot4 = slot0.viewContainer
 	slot1 = slot1(slot2, slot3, slot4)
 	slot0.escortShopTF = slot1
+	slot2 = slot0
+	slot1 = slot0.findTF
+	slot3 = "frag_shop"
+	slot4 = slot0.viewContainer
+	slot1 = slot1(slot2, slot3, slot4)
+	slot0.fragShopTF = slot1
 	slot1 = {}
 	slot0.cards = slot1
+	slot1 = setText
+	slot2 = slot0.goodTF
+	slot3 = slot2
+	slot2 = slot2.Find
+	slot4 = "mask/tag/sellout_tag"
+	slot2 = slot2(slot3, slot4)
+	slot3 = i18n
+	slot4 = "word_sell_out"
+
+	slot1(slot2, slot3(slot4))
+
+	slot1 = setText
+	slot2 = slot0.goodActivityTF
+	slot3 = slot2
+	slot2 = slot2.Find
+	slot4 = "mask/tag/sellout_tag"
+	slot2 = slot2(slot3, slot4)
+	slot3 = i18n
+	slot4 = "word_sell_out"
+
+	slot1(slot2, slot3(slot4))
+
+	slot1 = setText
+	slot2 = slot0.goodFragTF
+	slot3 = slot2
+	slot2 = slot2.Find
+	slot4 = "mask/tag/sellout_tag"
+	slot2 = slot2(slot3, slot4)
+	slot3 = i18n
+	slot4 = "word_sell_out"
+
+	slot1(slot2, slot3(slot4))
+
+	slot1 = setText
+	slot2 = slot0.shamShopTF
+	slot3 = slot2
+	slot2 = slot2.Find
+	slot4 = "time"
+	slot2 = slot2(slot3, slot4)
+	slot3 = i18n
+	slot4 = "title_limit_time"
+
+	slot1(slot2, slot3(slot4))
+
+	slot1 = setText
+	slot2 = slot0.shamShopTF
+	slot3 = slot2
+	slot2 = slot2.Find
+	slot4 = "time/text"
+	slot2 = slot2(slot3, slot4)
+	slot3 = i18n
+	slot4 = "shops_rest_day"
+
+	slot1(slot2, slot3(slot4))
+
+	slot1 = setText
+	slot2 = slot0.shamShopTF
+	slot3 = slot2
+	slot2 = slot2.Find
+	slot4 = "time/text_day"
+	slot2 = slot2(slot3, slot4)
+	slot3 = i18n
+	slot4 = "word_date"
+
+	slot1(slot2, slot3(slot4))
+
+	slot1 = setText
+	slot2 = slot0.fragShopTF
+	slot3 = slot2
+	slot2 = slot2.Find
+	slot4 = "time"
+	slot2 = slot2(slot3, slot4)
+	slot3 = i18n
+	slot4 = "title_limit_time"
+
+	slot1(slot2, slot3(slot4))
+
+	slot1 = setText
+	slot2 = slot0.fragShopTF
+	slot3 = slot2
+	slot2 = slot2.Find
+	slot4 = "time/text"
+	slot2 = slot2(slot3, slot4)
+	slot3 = i18n
+	slot4 = "shops_rest_day"
+
+	slot1(slot2, slot3(slot4))
+
+	slot1 = setText
+	slot2 = slot0.fragShopTF
+	slot3 = slot2
+	slot2 = slot2.Find
+	slot4 = "time/text_day"
+	slot2 = slot2(slot3, slot4)
+	slot3 = i18n
+	slot4 = "word_date"
+
+	slot1(slot2, slot3(slot4))
 end
 
 slot0.init = slot1
@@ -652,6 +769,11 @@ function slot1(slot0)
 				slot3 = slot3.getCurrPage
 				slot3 = slot3(slot4)
 
+				if not slot3 then
+					slot3 = slot1
+					slot3 = slot3.TYPE_SHOP_STREET
+				end
+
 				if slot3 then
 					slot4 = triggerToggle
 					slot5 = slot0
@@ -771,9 +893,13 @@ function slot1(slot0)
 
 	if not slot4 then
 		slot4 = slot0.shamShop
-		slot5 = slot4
-		slot4 = slot4.isOpen
-		slot4 = slot4(slot5)
+
+		if slot4 then
+			slot4 = slot0.shamShop
+			slot5 = slot4
+			slot4 = slot4.isOpen
+			slot4 = slot4(slot5)
+		end
 	else
 		slot4 = false
 
@@ -827,6 +953,11 @@ function slot1(slot0)
 				slot4 = slot3
 				slot3 = slot3.getCurrPage
 				slot3 = slot3(slot4)
+
+				if not slot3 then
+					slot3 = slot1
+					slot3 = slot3.TYPE_SHOP_STREET
+				end
 
 				if slot3 then
 					slot4 = triggerToggle
@@ -904,132 +1035,300 @@ function slot1(slot0)
 
 	slot5(slot6, slot7, slot8, slot9)
 
-	slot5 = slot0.contextData
-	slot5 = slot5.warp
-	slot0.warp = slot5
-	slot5 = slot0.warp
-	slot6 = slot0
-	slot6 = slot6.TYPE_SHAM_SHOP
+	slot5 = LOCK_FRAGMENT_SHOP
 
-	if slot5 == slot6 then
-		slot5 = pg
-		slot5 = slot5.SystemOpenMgr
-		slot5 = slot5.GetInstance
-		slot5 = slot5()
-		slot6 = slot5
-		slot5 = slot5.isOpenSystem
-		slot7 = slot0.player
-		slot7 = slot7.level
-		slot8 = "ShamShop"
-		slot5, slot6 = slot5(slot6, slot7, slot8)
+	if not slot5 then
+		slot5 = slot0.contextData
+		slot5 = slot5.shopDatas
+		slot5 = slot5.fragshop
 
-		if not slot5 then
-			slot7 = nil
-			slot0.warp = slot7
-			slot7 = pg
-			slot7 = slot7.TipsMgr
-			slot7 = slot7.GetInstance
-			slot7 = slot7()
-			slot8 = slot7
-			slot7 = slot7.ShowTips
-			slot9 = slot6
+		if slot5 then
+			slot5 = slot0.contextData
+			slot5 = slot5.shopDatas
+			slot5 = slot5.fragshop
+			slot6 = slot5
+			slot5 = slot5.isOpen
+			slot5 = slot5(slot6)
+		end
+	else
+		slot5 = false
 
-			slot7(slot8, slot9)
+		if false then
+			slot5 = true
+		end
+	end
+
+	slot6 = setActive
+	slot7 = slot0.toggles
+	slot8 = slot0
+	slot8 = slot8.TYPE_FRAGMENT
+	slot7 = slot7[slot8]
+	slot8 = slot5
+
+	slot6(slot7, slot8)
+
+	slot6 = onToggle
+	slot7 = slot0
+	slot8 = slot0.toggles
+	slot9 = slot0
+	slot9 = slot9.TYPE_FRAGMENT
+	slot8 = slot8[slot9]
+
+	function slot9(slot0)
+		if slot0 then
+			slot1 = pg
+			slot1 = slot1.SystemOpenMgr
+			slot1 = slot1.GetInstance
+			slot1 = slot1()
+			slot2 = slot1
+			slot1 = slot1.isOpenSystem
+			slot3 = slot0
+			slot3 = slot3.player
+			slot3 = slot3.level
+			slot4 = "FragmentShop"
+			slot1, slot2 = slot1(slot2, slot3, slot4)
+
+			if not slot1 then
+				slot3 = pg
+				slot3 = slot3.TipsMgr
+				slot3 = slot3.GetInstance
+				slot3 = slot3()
+				slot4 = slot3
+				slot3 = slot3.ShowTips
+				slot5 = slot2
+
+				slot3(slot4, slot5)
+
+				slot3 = slot0
+				slot4 = slot3
+				slot3 = slot3.getCurrPage
+				slot3 = slot3(slot4)
+
+				if not slot3 then
+					slot3 = slot1
+					slot3 = slot3.TYPE_SHOP_STREET
+				end
+
+				if slot3 then
+					slot4 = triggerToggle
+					slot5 = slot0
+					slot5 = slot5.toggles
+					slot5 = slot5[slot3]
+					slot6 = true
+
+					slot4(slot5, slot6)
+				end
+
+				return
+			end
+
+			slot3 = slot0
+			slot3 = slot3.curPage
+			slot4 = slot1
+			slot4 = slot4.TYPE_FRAGMENT
+
+			if slot3 == slot4 then
+				return
+			end
+
+			slot3 = slot0
+			slot3 = slot3.curPage
+
+			if slot3 ~= nil then
+				slot3 = slot0
+				slot3 = slot3.curPage
+				slot4 = slot1
+				slot4 = slot4.TYPE_ACTIVITY
+
+				if slot3 == slot4 then
+					slot3 = slot0
+					slot4 = slot3
+					slot3 = slot3.showRandomShipWord
+					slot5 = pg
+					slot5 = slot5.navalacademy_shoppingstreet_template
+					slot5 = slot5[1]
+					slot5 = slot5.words_enter
+					slot6 = true
+					slot7 = "enter"
+
+					slot3(slot4, slot5, slot6, slot7)
+				end
+			end
+
+			slot3 = slot0
+			slot4 = slot1
+			slot4 = slot4.TYPE_FRAGMENT
+			slot3.curPage = slot4
+			slot3 = slot0
+			slot4 = slot3
+			slot3 = slot3.updateBlueprintFragShop
+
+			slot3(slot4)
+
+			slot3 = slot0
+			slot4 = slot3
+			slot3 = slot3.updateFragRes
+
+			slot3(slot4)
+
+			slot3 = slot0
+			slot4 = slot3
+			slot3 = slot3.updatePainting
+			slot5 = slot1
+			slot5 = slot5.TYPE_FRAGMENT
+
+			slot3(slot4, slot5)
+		end
+	end
+
+	slot10 = SFX_PANEL
+
+	slot6(slot7, slot8, slot9, slot10)
+
+	slot6 = onButton
+	slot7 = slot0
+	slot8 = slot0.top
+	slot9 = slot8
+	slot8 = slot8.Find
+	slot10 = "res_fragment/resolve"
+	slot8 = slot8(slot9, slot10)
+
+	function slot9()
+		slot0 = slot0
+		slot1 = slot0
+		slot0 = slot0.CallFragResolve
+
+		slot0(slot1)
+	end
+
+	slot6(slot7, slot8, slot9)
+
+	slot6 = slot0.contextData
+	slot6 = slot6.warp
+	slot0.warp = slot6
+	slot6 = slot0.warp
+	slot7 = slot0
+	slot7 = slot7.TYPE_SHAM_SHOP
+
+	if slot6 == slot7 then
+		slot6 = pg
+		slot6 = slot6.SystemOpenMgr
+		slot6 = slot6.GetInstance
+		slot6 = slot6()
+		slot7 = slot6
+		slot6 = slot6.isOpenSystem
+		slot8 = slot0.player
+		slot8 = slot8.level
+		slot9 = "ShamShop"
+		slot6, slot7 = slot6(slot7, slot8, slot9)
+
+		if not slot6 then
+			slot8 = nil
+			slot0.warp = slot8
+			slot8 = pg
+			slot8 = slot8.TipsMgr
+			slot8 = slot8.GetInstance
+			slot8 = slot8()
+			slot9 = slot8
+			slot8 = slot8.ShowTips
+			slot10 = slot7
+
+			slot8(slot9, slot10)
 		end
 
 		if not slot4 then
-			slot7 = nil
-			slot0.warp = slot7
-			slot7 = pg
-			slot7 = slot7.TipsMgr
-			slot7 = slot7.GetInstance
-			slot7 = slot7()
-			slot8 = slot7
-			slot7 = slot7.ShowTips
-			slot9 = i18n
-			slot10 = "common_activity_not_start"
+			slot8 = nil
+			slot0.warp = slot8
+			slot8 = pg
+			slot8 = slot8.TipsMgr
+			slot8 = slot8.GetInstance
+			slot8 = slot8()
+			slot9 = slot8
+			slot8 = slot8.ShowTips
+			slot10 = i18n
+			slot11 = "common_activity_not_start"
 
-			slot7(slot8, slot9(slot10))
+			slot8(slot9, slot10(slot11))
 		end
 	end
 
-	slot5 = slot0.warp
+	slot6 = slot0.warp
 
-	if slot5 then
-		slot5 = slot0.warp
-		slot6 = slot0
-		slot6 = slot6.TYPE_ACTIVITY
+	if slot6 then
+		slot6 = slot0.warp
+		slot7 = slot0
+		slot7 = slot7.TYPE_ACTIVITY
 
-		if slot5 == slot6 then
-			slot5 = #slot3
-			slot6 = 0
+		if slot6 == slot7 then
+			slot6 = #slot3
+			slot7 = 0
 
-			if slot5 > slot6 then
-				slot5 = slot0.contextData
-				slot5 = slot5.actId
+			if slot6 > slot7 then
+				slot6 = slot0.contextData
+				slot6 = slot6.actId
 
-				if slot5 then
-					slot5 = slot0.toggles
-					slot6 = tostring
-					slot7 = slot0.contextData
-					slot7 = slot7.actId
-					slot6 = slot6(slot7)
-					slot5 = slot5[slot6]
+				if slot6 then
+					slot6 = slot0.toggles
+					slot7 = tostring
+					slot8 = slot0.contextData
+					slot8 = slot8.actId
+					slot7 = slot7(slot8)
+					slot6 = slot6[slot7]
 
-					if slot5 then
-						slot5 = triggerToggle
-						slot6 = slot0.toggles
-						slot7 = tostring
-						slot8 = slot0.contextData
-						slot8 = slot8.actId
-						slot7 = slot7(slot8)
-						slot6 = slot6[slot7]
-						slot7 = true
+					if slot6 then
+						slot6 = triggerToggle
+						slot7 = slot0.toggles
+						slot8 = tostring
+						slot9 = slot0.contextData
+						slot9 = slot9.actId
+						slot8 = slot8(slot9)
+						slot7 = slot7[slot8]
+						slot8 = true
 
-						slot5(slot6, slot7)
+						slot6(slot7, slot8)
 					end
 				else
-					slot5 = #slot3
-					slot5 = slot3[slot5]
-					slot6 = triggerToggle
-					slot7 = slot0.toggles
-					slot8 = tostring
-					slot9 = slot5.activityId
-					slot8 = slot8(slot9)
-					slot7 = slot7[slot8]
-					slot8 = true
+					slot6 = #slot3
+					slot6 = slot3[slot6]
+					slot7 = triggerToggle
+					slot8 = slot0.toggles
+					slot9 = tostring
+					slot10 = slot6.activityId
+					slot9 = slot9(slot10)
+					slot8 = slot8[slot9]
+					slot9 = true
 
-					slot6(slot7, slot8)
+					slot7(slot8, slot9)
 				end
 			end
 		else
-			slot5 = slot0.warp
+			slot6 = slot0.warp
 
-			if not slot5 then
-				slot5 = slot0
-				slot5 = slot5.TYPE_SHOP_STREET
+			if not slot6 then
+				slot6 = slot0
+				slot6 = slot6.TYPE_SHOP_STREET
 			end
 
-			slot0.warp = slot5
-			slot5 = triggerToggle
-			slot6 = slot0.toggles
-			slot7 = slot0.warp
-			slot6 = slot6[slot7]
-			slot7 = true
+			slot0.warp = slot6
+			slot6 = triggerToggle
+			slot7 = slot0.toggles
+			slot8 = slot0.warp
+			slot7 = slot7[slot8]
+			slot8 = true
 
-			slot5(slot6, slot7)
+			slot6(slot7, slot8)
 		end
 	end
 
-	slot5 = onButton
-	slot6 = slot0
-	slot8 = slot0
-	slot7 = slot0.findTF
-	slot9 = "refresh_btn"
-	slot10 = slot0.shopStreetTF
-	slot7 = slot7(slot8, slot9, slot10)
+	slot6 = onButton
+	slot7 = slot0
+	slot9 = slot0
+	slot8 = slot0.findTF
+	slot10 = "refresh_btn"
+	slot11 = slot0.shopStreetTF
+	slot8 = slot8(slot9, slot10, slot11)
 
-	function slot8()
+	function slot9()
 		slot0 = ShoppingStreet
 		slot0 = slot0.getRiseShopId
 		slot1 = ShopArgs
@@ -1101,14 +1400,14 @@ function slot1(slot0)
 		slot2(slot3, slot4)
 	end
 
-	slot9 = SFX_PANEL
+	slot10 = SFX_PANEL
 
-	slot5(slot6, slot7, slot8, slot9)
+	slot6(slot7, slot8, slot9, slot10)
 
-	slot6 = slot0
-	slot5 = slot0.blurView
+	slot7 = slot0
+	slot6 = slot0.blurView
 
-	slot5(slot6)
+	slot6(slot7)
 end
 
 slot0.didEnter = slot1
@@ -2576,17 +2875,40 @@ function slot3(slot0, slot1)
 		function slot3()
 			slot0 = slot0
 			slot1 = slot0
-			slot0 = slot0.purchase
-			slot2 = slot1
-			slot3 = 1
+			slot0 = slot0.getConfig
+			slot2 = "commodity_type"
+			slot0 = slot0(slot1, slot2)
 
-			slot0(slot1, slot2, slot3)
+			if slot0 == 4 then
+				slot0 = slot1
+				slot0 = slot0.curPage
+				slot1 = slot2
+				slot1 = slot1.TYPE_ACTIVITY
 
-			slot0 = slot0
-			slot1 = slot0
-			slot0 = slot0.closeSingleBox
+				if slot0 == slot1 then
+					slot1:closeSingleBox()
+					pg.MsgboxMgr.GetInstance():ShowMsgBox({
+						content = i18n("pt_reconfirm", slot3.cfg.name or "??"),
+						onYes = function ()
+							slot0:purchase(slot0, 1)
+						end
+					})
+				end
+			else
+				slot0 = slot1
+				slot1 = slot0
+				slot0 = slot0.purchase
+				slot2 = slot0
+				slot3 = 1
 
-			slot0(slot1)
+				slot0(slot1, slot2, slot3)
+
+				slot0 = slot1
+				slot1 = slot0
+				slot0 = slot0.closeSingleBox
+
+				slot0(slot1)
+			end
 		end
 
 		slot4 = SFX_CANCEL
@@ -2596,12 +2918,12 @@ function slot3(slot0, slot1)
 		slot0 = updateDrop
 		slot1 = slot0
 		slot1 = slot1.singleItemTF
-		slot2 = slot2
+		slot2 = slot3
 
 		slot0(slot1, slot2)
 
 		slot0 = GetOwnedpropCount
-		slot1 = slot2
+		slot1 = slot3
 		slot0, slot1 = slot0(slot1)
 		slot2 = setActive
 		slot3 = slot0
@@ -2626,17 +2948,14 @@ function slot3(slot0, slot1)
 
 		slot2(slot3, slot4(slot5))
 
-		slot2 = setTextEN
-		slot3 = slot0
-		slot3 = slot3.singleDescTF
-		slot4 = slot2
-		slot4 = slot4.desc
-
-		slot2(slot3, slot4)
-
+		slot2 = slot0
+		slot2 = slot2.singleDescTF
+		slot3 = slot3
+		slot3 = slot3.desc
+		slot2.text = slot3
 		slot2 = slot0
 		slot2 = slot2.singleNameTF
-		slot3 = slot2
+		slot3 = slot3
 		slot3 = slot3.cfg
 		slot3 = slot3.name
 		slot2.text = slot3
@@ -2695,7 +3014,7 @@ function slot3(slot0, slot1)
 			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
-			slot4 = "window/item/display_panel/desc/desc"
+			slot4 = "window/item/display_panel/desc/Text"
 			slot5 = slot0
 			slot5 = slot5.singleBoxTF
 			slot2 = slot2(slot3, slot4, slot5)
@@ -2933,6 +3252,21 @@ function slot3(slot0, slot1, slot2)
 				slot9 = slot2
 
 				slot5(slot6, slot7, slot8, slot9)
+			else
+				slot5 = slot0.curPage
+				slot6 = slot0
+				slot6 = slot6.TYPE_FRAGMENT
+
+				if slot5 == slot6 then
+					slot6 = slot0
+					slot5 = slot0.emit
+					slot7 = ShopsMediator
+					slot7 = slot7.BUY_FRAG_ITEM
+					slot8 = slot1.id
+					slot9 = slot2
+
+					slot5(slot6, slot7, slot8, slot9)
+				end
 			end
 		end
 	end
@@ -3272,7 +3606,7 @@ function slot3(slot0, slot1)
 			slot2 = slot0
 			slot3 = slot2
 			slot2 = slot2.findTF
-			slot4 = "item/display_panel/desc"
+			slot4 = "item/display_panel/desc/Text"
 			slot5 = slot0
 			slot5 = slot5.msgBoxTF
 			slot2 = slot2(slot3, slot4, slot5)
@@ -3908,11 +4242,14 @@ function slot3(slot0)
 	slot5 = "time/day"
 	slot6 = slot0.shamShopTF
 	slot3 = slot3(slot4, slot5, slot6)
-	slot4 = slot0.shamShop
-	slot5 = slot4
-	slot4 = slot4.getRestDays
+	slot4 = string
+	slot4 = slot4.format
+	slot5 = "%02d"
+	slot6 = slot0.shamShop
+	slot7 = slot6
+	slot6 = slot6.getRestDays
 
-	slot2(slot3, slot4(slot5))
+	slot2(slot3, slot4(slot5, slot6(slot7)))
 end
 
 slot0.updateShamShop = slot3
@@ -4039,11 +4376,14 @@ function slot3(slot0)
 	slot5 = "time/day"
 	slot6 = slot0.escortShopTF
 	slot3 = slot3(slot4, slot5, slot6)
-	slot4 = slot0.escortShop
-	slot5 = slot4
-	slot4 = slot4.getRestDays
+	slot4 = string
+	slot4 = slot4.format
+	slot5 = "%02d"
+	slot6 = slot0.escortShop
+	slot7 = slot6
+	slot6 = slot6.getRestDays
 
-	slot2(slot3, slot4(slot5))
+	slot2(slot3, slot4(slot5, slot6(slot7)))
 end
 
 slot0.updateEscortShop = slot3
@@ -4069,6 +4409,173 @@ function slot3(slot0)
 end
 
 slot0.updateEscortRes = slot3
+
+function slot3(slot0)
+	slot1 = slot0.contextData
+	slot1 = slot1.shopDatas
+	slot1 = slot1.fragshop
+
+	if not slot1 then
+		return
+	end
+
+	slot1 = slot0.contextData
+	slot1 = slot1.shopDatas
+	slot1 = slot1.fragshop
+	slot2 = slot1
+	slot1 = slot1.getSortGoods
+	slot1 = slot1(slot2)
+	slot2 = UIItemList
+	slot2 = slot2.StaticAlign
+	slot3 = slot0.fragShopTF
+	slot4 = slot3
+	slot3 = slot3.Find
+	slot5 = "scrollView/view"
+	slot3 = slot3(slot4, slot5)
+	slot4 = slot0.goodFragTF
+	slot5 = #slot1
+
+	function slot6(slot0, slot1, slot2)
+		slot3 = UIItemList
+		slot3 = slot3.EventUpdate
+
+		if slot0 == slot3 then
+			slot3 = slot0
+			slot4 = slot1 + 1
+			slot3 = slot3[slot4]
+			slot4 = ActivityGoodsCard
+			slot4 = slot4.StaticUpdate
+			slot5 = slot2
+			slot6 = slot3
+			slot7 = slot1
+			slot7 = slot7.TYPE_FRAGMENT
+
+			slot4(slot5, slot6, slot7)
+
+			slot4 = onButton
+			slot5 = slot2
+			slot6 = slot2
+
+			function slot7()
+				slot0 = slot0
+				slot1 = slot0
+				slot0 = slot0.getConfig
+				slot2 = "num_limit"
+				slot0 = slot0(slot1, slot2)
+
+				if slot0 ~= 1 then
+					slot0 = slot0
+					slot1 = slot0
+					slot0 = slot0.getConfig
+					slot2 = "commodity_type"
+					slot0 = slot0(slot1, slot2)
+
+					if slot0 == 4 then
+						slot0 = slot1
+						slot1 = slot0
+						slot0 = slot0.openSingleBox
+						slot2 = slot0
+
+						slot0(slot1, slot2)
+					else
+						slot0 = slot1
+						slot1 = slot0
+						slot0 = slot0.initMsgBox
+						slot2 = slot0
+
+						slot0(slot1, slot2)
+					end
+				end
+			end
+
+			slot8 = SFX_PANEL
+
+			slot4(slot5, slot6, slot7, slot8)
+		end
+	end
+
+	slot2(slot3, slot4, slot5, slot6)
+
+	slot2 = slot0.contextData
+	slot2 = slot2.shopDatas
+	slot2 = slot2.fragshop
+	slot3 = slot2
+	slot2 = slot2.getRestDays
+	slot2 = slot2(slot3)
+	slot3 = setText
+	slot5 = slot0
+	slot4 = slot0.findTF
+	slot6 = "time/day"
+	slot7 = slot0.fragShopTF
+	slot4 = slot4(slot5, slot6, slot7)
+	slot5 = string
+	slot5 = slot5.format
+	slot6 = "%02d"
+	slot7 = slot2
+
+	slot3(slot4, slot5(slot6, slot7))
+end
+
+slot0.updateBlueprintFragShop = slot3
+
+function slot3(slot0)
+	slot1 = getProxy
+	slot2 = PlayerProxy
+	slot1 = slot1(slot2)
+	slot3 = slot1
+	slot2 = slot1.getRawData
+	slot2 = slot2(slot3)
+	slot3 = slot2
+	slot2 = slot2.getResource
+	slot4 = PlayerConst
+	slot4 = slot4.ResBlueprintFragment
+	slot2 = slot2(slot3, slot4)
+	slot3 = setText
+	slot5 = slot0
+	slot4 = slot0.findTF
+	slot6 = "res_fragment/count"
+	slot7 = slot0.top
+	slot4 = slot4(slot5, slot6, slot7)
+	slot5 = slot2
+
+	slot3(slot4, slot5)
+end
+
+slot0.updateFragRes = slot3
+
+function slot3(slot0)
+	slot1 = slot0.resolvePanel
+
+	if not slot1 then
+		slot1 = FragResolvePanel
+		slot1 = slot1.New
+		slot2 = slot0
+		slot1 = slot1(slot2)
+		slot0.resolvePanel = slot1
+		slot1 = slot0.resolvePanel
+		slot2 = slot1
+		slot1 = slot1.Load
+
+		slot1(slot2)
+	end
+
+	slot1 = slot0.resolvePanel
+	slot1 = slot1.buffer
+	slot2 = slot1
+	slot1 = slot1.Reset
+
+	slot1(slot2)
+
+	slot1 = slot0.resolvePanel
+	slot1 = slot1.buffer
+	slot2 = slot1
+	slot1 = slot1.Trigger
+	slot3 = "control"
+
+	slot1(slot2, slot3)
+end
+
+slot0.CallFragResolve = slot3
 
 function slot3(slot0, slot1)
 	slot3 = slot1
@@ -4120,9 +4627,7 @@ slot0.PlayActivityShopPurchaseVoice = slot3
 
 function slot3(slot0, slot1)
 	slot2 = nil
-	slot3 = pairs
-	slot4 = slot0.activityShops
-	slot3, slot4, slot5 = slot3(slot4)
+	slot3, slot4, slot5 = pairs(slot0.activityShops or {})
 
 	for slot6, slot7 in slot3, slot4, slot5 do
 		slot8 = slot7.activityId
@@ -4212,6 +4717,19 @@ function slot3(slot0)
 
 		slot1 = nil
 		slot0.guildTimer = slot1
+	end
+
+	slot1 = slot0.resolvePanel
+
+	if slot1 then
+		slot1 = slot0.resolvePanel
+		slot2 = slot1
+		slot1 = slot1.Destroy
+
+		slot1(slot2)
+
+		slot1 = nil
+		slot0.resolvePanel = slot1
 	end
 
 	slot1 = slot0.resPanel

@@ -12,7 +12,6 @@ slot3.Ctor = function (slot0, slot1, slot2, slot3)
 	slot0._RemoveTime = 0
 	slot0._effectList = {}
 	slot0._triggerSearchTable = {}
-	slot0._markList = {}
 	slot0._level = slot2 or 1
 	slot0._caster = slot3
 

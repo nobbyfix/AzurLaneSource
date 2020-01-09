@@ -15,12 +15,17 @@ slot0.register = function (slot0)
 	end)
 
 	slot0.bluePrintData = {}
+	slot0.item2blueprint = {}
+	slot0.maxConfigVersion = 0
 
 	_.each(pg.ship_data_blueprint.all, function (slot0)
-		slot0.bluePrintData[ShipBluePrint.New({
+		slot1 = ShipBluePrint.New({
 			id = slot0,
 			version = pg.ship_data_blueprint[slot0].blueprint_version
-		}).id] = ShipBluePrint.New()
+		})
+		slot0.maxConfigVersion = math.max(slot0.maxConfigVersion, slot1.version)
+		slot0.bluePrintData[slot1.id] = slot1
+		slot0.item2blueprint[slot1:getItemId()] = slot1.id
 	end)
 	slot0:on(63100, function (slot0)
 		for slot4, slot5 in ipairs(slot0.blueprint_list) do
@@ -44,6 +49,10 @@ slot0.getVersion = function (slot0)
 	else
 		return PlayerPrefs.GetInt("technology_version")
 	end
+end
+
+slot0.getConfigMaxVersion = function (slot0)
+	return slot0.maxConfigVersion
 end
 
 slot0.setTendency = function (slot0, slot1, slot2)
@@ -174,6 +183,10 @@ slot0.getBuildingBluePrint = function (slot0)
 			return slot5
 		end
 	end
+end
+
+slot0.GetBlueprint4Item = function (slot0, slot1)
+	return slot0.item2blueprint[slot1]
 end
 
 return slot0

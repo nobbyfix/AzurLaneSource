@@ -1728,9 +1728,46 @@ slot0.willExit = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #7 69-69, warpins: 1 ---
+	--- BLOCK #7 69-72, warpins: 1 ---
+	slot0:removeLateUpdateListener()
+
 	return
 	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot0.insertEmojiToInputText = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot0.input.text = slot0.input.text .. string.gsub(ChatConst.EmojiIconCode, "code", slot1)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot0.addLateUpdateListener = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-1, warpins: 1 ---
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot0.removeLateUpdateListener = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-1, warpins: 1 ---
+	return
+	--- END OF BLOCK #0 ---
 
 
 

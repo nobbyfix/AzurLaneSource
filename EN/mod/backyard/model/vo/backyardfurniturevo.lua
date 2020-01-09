@@ -506,7 +506,11 @@ slot0.isSameDir = function (slot0, slot1)
 end
 
 slot0.getConfig = function (slot0, slot1)
-	return pg.furniture_data_template[slot0.configId][slot1]
+	if pg.furniture_data_template[slot0.configId][slot1] then
+		return slot3[slot1]
+	elseif pg.furniture_shop_template[slot0.configId] then
+		return slot5[slot1]
+	end
 end
 
 slot0.updatePosition = function (slot0, slot1)
@@ -802,7 +806,7 @@ slot0.getTouchSpineConfig = function (slot0)
 			slot4 = slot3[math.random(1, #slot3)]
 		end
 
-		return slot4, slot2[2], slot2[4]
+		return slot4, slot2[2], slot2[4], slot2[5], slot2[6]
 	end
 end
 

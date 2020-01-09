@@ -53,7 +53,9 @@ slot1.ClearItems = function (slot0, slot1)
 		slot0.Destroy(slot0.items[slot5], slot1)
 	end
 
-	slot0.items = {}
+	table.clear(slot0.items)
+
+	slot0.balance = 0
 end
 
 slot1.Clear = function (slot0, slot1)

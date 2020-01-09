@@ -184,69 +184,59 @@ table.eachAsync = function (slot0, slot1, slot2)
 		return
 	end
 
-	slot3 = {}
-	slot4 = nil
+	slot3, slot4 = nil
 
 
 	-- Decompilation error in this vicinity:
 	function ()
-		slot0.index = next(next, slot0.index)
+		slot0 = next(slot1, next)
 
-		if next(next, slot0.index)[slot0.index] == nil then
+		if slot1[] == nil then
 			if slot2 then
 				slot2()
 			end
 		else
-			slot3(slot0.index, slot0, slot4)
+			slot3(slot0, slot0, slot4)
 		end
 	end()
 end
 
-table.eachParalle = function (slot0, slot1, slot2)
+table.eachParallel = function (slot0, slot1, slot2)
 	if type(slot0) ~= "table" then
 		return
 	end
 
-	slot3, slot4, slot6.index = pairs(slot0)
-	slot6 = {
-		index = slot5
-	}
-	slot7 = {
-		0,
-		0,
-		0
-	}
+	slot3, slot4, slot5 = pairs(slot0)
+	slot6 = 0
+	slot7 = 0
+	slot8 = false
 
-	function slot8()
-		if slot0[3] > 0 then
+	function slot9()
+		if slot0 then
 			return
 		end
 
-		slot0[2] = slot0[2] + 1
-
-		if slot0[2] < slot0[1] then
+		if slot1 + 1 < slot2 then
 			return
 		end
 
-		slot0[3] = 1
+		slot0 = true
 
-		if 1 then
-			slot1()
+		if slot3 then
+			slot3()
 		end
 	end
 
-	slot9 = nil
+	slot10 = nil
 
 	while true do
-		slot6.index = slot3(slot4, slot6.index)
-
-		if slot4[slot6.index] == nil then
+		if slot4[slot3(slot4, slot5)] == nil then
 			break
 		end
 
-		slot7[1] = slot7[1] + 1
+		slot7 = slot7 + 1
 
-		slot1(slot6.index, slot9, slot8)
+		slot1(slot5, slot10, slot9)
 	end
 end
 
@@ -303,6 +293,12 @@ table.removebyvalue = function (slot0, slot1, slot2)
 	end
 
 	return slot3
+end
+
+table.removebykey = function (slot0, slot1)
+	slot0[slot1] = nil
+
+	return slot0[slot1]
 end
 
 table.clean = function (slot0)

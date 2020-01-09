@@ -54,7 +54,7 @@ slot3.updateCubeScale = function (slot0)
 end
 
 slot3.updateColumnScale = function (slot0)
-	slot0._tf.localScale = Vector3(slot0._aoeData:GetRange(), 0, )
+	slot0._tf.localScale = Vector3(slot0._aoeData:GetRange(), 1, )
 end
 
 slot3.UpdatePosition = function (slot0)

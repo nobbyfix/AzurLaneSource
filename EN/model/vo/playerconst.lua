@@ -17,6 +17,8 @@ slot1 = 7
 slot0.ResGoldField = slot1
 slot1 = 8
 slot0.ResContribution = slot1
+slot1 = 9
+slot0.ResBlueprintFragment = slot1
 slot1 = 101
 slot0.ResBattery = slot1
 slot1 = 102
@@ -31,20 +33,12 @@ function slot1(slot0, slot1, slot2)
 		slot3 = slot3(slot4)
 
 		if slot3 then
-			slot4 = id2res
-			slot5 = slot1
-			slot4 = slot4(slot5)
-			slot6 = slot3
-			slot5 = slot3.getRawData
-			slot5 = slot5(slot6)
-			slot6 = slot5[slot4]
-			slot6 = slot6 + slot2
-			slot5[slot4] = slot6
-			slot7 = slot3
-			slot6 = slot3.updatePlayer
-			slot8 = slot5
+			slot5 = slot3
+			slot4 = slot3.UpdatePlayerRes
+			slot6 = slot1
+			slot7 = slot2
 
-			slot6(slot7, slot8)
+			slot4(slot5, slot6, slot7)
 		end
 	else
 		slot3 = DROP_TYPE_ITEM

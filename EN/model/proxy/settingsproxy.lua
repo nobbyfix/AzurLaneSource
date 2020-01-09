@@ -15,6 +15,51 @@ slot0.onRegister = function (slot0)
 	slot0.nextTipActBossExchangeTicket = nil
 
 	slot0:resetEquipSceneIndex()
+
+	slot0._isShowCollectionHelp = PlayerPrefs.GetInt("collection_Help", 0) > 0
+end
+
+slot0.GetDockYardLockBtnFlag = function (slot0)
+	if not slot0.dockYardLockFlag then
+		slot0.dockYardLockFlag = PlayerPrefs.GetInt("DockYardLockFlag" .. slot1, 0) > 0
+	end
+
+	return slot0.dockYardLockFlag
+end
+
+slot0.SetDockYardLockBtnFlag = function (slot0, slot1)
+	if slot0.dockYardLockFlag ~= slot1 then
+		PlayerPrefs.SetInt("DockYardLockFlag" .. getProxy(PlayerProxy):getRawData().id, (slot1 and 1) or 0)
+		PlayerPrefs.Save()
+	end
+end
+
+slot0.GetDockYardLevelBtnFlag = function (slot0)
+	if not slot0.dockYardLevelFlag then
+		slot0.dockYardLevelFlag = PlayerPrefs.GetInt("DockYardLevelFlag" .. slot1, 0) > 0
+	end
+
+	return slot0.dockYardLevelFlag
+end
+
+slot0.SetDockYardLevelBtnFlag = function (slot0, slot1)
+	if slot0.dockYardLevelFlag ~= slot1 then
+		PlayerPrefs.SetInt("DockYardLevelFlag" .. getProxy(PlayerProxy):getRawData().id, (slot1 and 1) or 0)
+		PlayerPrefs.Save()
+	end
+end
+
+slot0.IsShowCollectionHelp = function (slot0)
+	return slot0._isShowCollectionHelp
+end
+
+slot0.SetCollectionHelpFlag = function (slot0, slot1)
+	if slot0._isShowCollectionHelp ~= slot1 then
+		slot0._isShowCollectionHelp = slot1
+
+		PlayerPrefs.SetInt("collection_Help", (slot1 and 1) or 0)
+		PlayerPrefs.Save()
+	end
 end
 
 slot0.IsBGMEnable = function (slot0)
@@ -263,6 +308,15 @@ end
 
 slot0.CheckLargeScreen = function (slot0)
 	return Screen.width / Screen.height > 2
+end
+
+slot0.IsShowBeatMonseterNianCurtain = function (slot0)
+	return tonumber(PlayerPrefs.GetString("HitMonsterNianLayer2020" .. getProxy(PlayerProxy):getRawData().id, "0")) < pg.TimeMgr.GetInstance():GetServerTime()
+end
+
+slot0.SetBeatMonseterNianFlag = function (slot0)
+	PlayerPrefs.SetString("HitMonsterNianLayer2020" .. getProxy(PlayerProxy):getRawData().id, GetZeroTime())
+	PlayerPrefs.Save()
 end
 
 return slot0

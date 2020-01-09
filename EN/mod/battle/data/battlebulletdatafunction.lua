@@ -627,7 +627,7 @@ slot4._createSharpnelBullet = slot5
 function slot5(slot0, slot1, slot2, slot3, slot4)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-22, warpins: 1 ---
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot5 = slot0
 	slot5 = slot5.Battle
 	slot5 = slot5.BattleEffectBulletUnit
@@ -648,6 +648,12 @@ function slot5(slot0, slot1, slot2, slot3, slot4)
 
 	slot6(slot7, slot8)
 
+	slot7 = slot5
+	slot6 = slot5.SetImmuneCLS
+	slot8 = true
+
+	slot6(slot7, slot8)
+
 	slot6 = slot1.attach_buff
 	slot6 = slot6[1]
 	slot6 = slot6.flare
@@ -655,11 +661,12 @@ function slot5(slot0, slot1, slot2, slot3, slot4)
 	if slot6 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 23-26, warpins: 1 ---
+		--- BLOCK #0 27-30, warpins: 1 ---
 		slot7 = slot5
 		slot6 = slot5.spawnArea
 		slot8 = true
-		slot6 = slot6(slot7, slot8)
+
+		slot6(slot7, slot8)
 		--- END OF BLOCK #0 ---
 
 
@@ -673,7 +680,7 @@ function slot5(slot0, slot1, slot2, slot3, slot4)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 27-29, warpins: 2 ---
+	--- BLOCK #1 31-33, warpins: 2 ---
 	slot6 = slot5
 	slot7 = false
 

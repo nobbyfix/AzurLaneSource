@@ -1562,7 +1562,35 @@ pg.skill_data_display = {
 	},
 	[12040] = {
 		id = 12040,
-		name = "不安定的发明家"
+		name = "Whimsical Inventor "
+	},
+	[12041] = {
+		id = 12041,
+		name = "Prototype Type-0 Main Gun"
+	},
+	[12042] = {
+		id = 12042,
+		name = "Prototype Torpedo Tube"
+	},
+	[12043] = {
+		id = 12043,
+		name = "Special Pyrotechnics Bomb"
+	},
+	[12044] = {
+		id = 12044,
+		name = "Repulsion Shield"
+	},
+	[12046] = {
+		id = 12046,
+		name = "Projection Barrier"
+	},
+	[12047] = {
+		id = 12047,
+		name = "Portable Repair Kit"
+	},
+	[12048] = {
+		id = 12048,
+		name = "Value Bandages"
 	},
 	[12050] = {
 		id = 12050,
@@ -2032,6 +2060,110 @@ pg.skill_data_display = {
 		id = 12696,
 		name = "Passcode: Evasion Increase"
 	},
+	[12800] = {
+		id = 12800,
+		name = "Unleashed Tactics "
+	},
+	[12801] = {
+		id = 12801,
+		name = "Unleashed Tactics I"
+	},
+	[12802] = {
+		id = 12802,
+		name = "Unleashed Tactics II"
+	},
+	[12803] = {
+		id = 12803,
+		name = "Unleashed Tactics III"
+	},
+	[12804] = {
+		id = 12804,
+		name = "Unleashed Tactics IV"
+	},
+	[12810] = {
+		id = 12810,
+		name = "Unleashed Tactics "
+	},
+	[12820] = {
+		id = 12820,
+		name = "Unyielding Shield "
+	},
+	[12821] = {
+		id = 12821,
+		name = "Unyielding Shield "
+	},
+	[12822] = {
+		id = 12822,
+		name = "Unyielding Shield "
+	},
+	[12830] = {
+		id = 12830,
+		name = "Noshiro's Hoarfrost "
+	},
+	[12840] = {
+		id = 12840,
+		name = "Skyslayer's Edge "
+	},
+	[12850] = {
+		id = 12850,
+		name = "Demonblade "
+	},
+	[12860] = {
+		id = 12860,
+		name = "Swirling Cherry Blossoms "
+	},
+	[12862] = {
+		id = 12862,
+		name = "Swirling Cherry Blossoms "
+	},
+	[12870] = {
+		id = 12870,
+		name = "Dancing Waves "
+	},
+	[12871] = {
+		id = 12871,
+		name = "Dancing Waves "
+	},
+	[12873] = {
+		id = 12873,
+		name = "Dancing Waves "
+	},
+	[12875] = {
+		id = 12875,
+		name = "Dancing Waves "
+	},
+	[12880] = {
+		id = 12880,
+		name = "Demon's Wish "
+	},
+	[12882] = {
+		id = 12882,
+		name = "Demon's Wish "
+	},
+	[12890] = {
+		id = 12890,
+		name = "Foo and Friends "
+	},
+	[12891] = {
+		id = 12891,
+		name = "Foo was scared away... "
+	},
+	[12892] = {
+		id = 12892,
+		name = "Foo and Friends "
+	},
+	[12900] = {
+		id = 12900,
+		name = "Phoenix's Plumage "
+	},
+	[12901] = {
+		id = 12901,
+		name = "Phoenix's Plumage "
+	},
+	[12910] = {
+		id = 12910,
+		name = "Destroyer Division 6: Hibiki "
+	},
 	[18010] = {
 		id = 18010,
 		name = "MKV-Class AP Shell +"
@@ -2135,6 +2267,118 @@ pg.skill_data_display = {
 	[19120] = {
 		id = 19120,
 		name = "Engine Boost"
+	},
+	[19130] = {
+		id = 19130,
+		name = "No-Fly Zone! "
+	},
+	[19131] = {
+		id = 19131,
+		name = "No-Fly Zone! "
+	},
+	[19140] = {
+		id = 19140,
+		name = "Dual Nock"
+	},
+	[19141] = {
+		id = 19141,
+		name = "Dual Nock"
+	},
+	[19150] = {
+		id = 19150,
+		name = "Iron Sight Caliber"
+	},
+	[19160] = {
+		id = 19160,
+		name = "Heavy Barrel Blaster"
+	},
+	[19161] = {
+		id = 19161,
+		name = "Heavy Barrel Blaster"
+	},
+	[19170] = {
+		id = 19170,
+		name = "Kitakaze Style - Horizon Splitter "
+	},
+	[19180] = {
+		id = 19180,
+		name = "Kitakaze Style - Lotus Torpedoes "
+	},
+	[19181] = {
+		id = 19181,
+		name = "Kitakaze Style - Lotus Torpedoes "
+	},
+	[19190] = {
+		id = 19190,
+		name = "Blazing Peaks "
+	},
+	[19191] = {
+		id = 19191,
+		name = "Blazing Peaks "
+	},
+	[19200] = {
+		id = 19200,
+		name = "Mizuho's Intuition "
+	},
+	[19210] = {
+		id = 19210,
+		name = "Special Gunnery Training "
+	},
+	[19211] = {
+		id = 19211,
+		name = "Special Gunnery Training "
+	},
+	[19212] = {
+		id = 19212,
+		name = "Special Gunnery Training "
+	},
+	[19213] = {
+		id = 19213,
+		name = "Special Gunnery Training "
+	},
+	[19214] = {
+		id = 19214,
+		name = "Special Gunnery Training "
+	},
+	[19220] = {
+		id = 19220,
+		name = "Symphony of Destruction "
+	},
+	[19221] = {
+		id = 19221,
+		name = "Symphony of Destruction "
+	},
+	[19230] = {
+		id = 19230,
+		name = "Sonata of Chaos "
+	},
+	[19231] = {
+		id = 19231,
+		name = "Sonata of Chaos "
+	},
+	[19240] = {
+		id = 19240,
+		name = "Rhapsody of Darkness "
+	},
+	[19241] = {
+		id = 19241,
+		name = "Rhapsody of Darkness "
+	},
+	[19242] = {
+		id = 19242,
+		name = "Rhapsody of Darkness "
+	},
+	[19250] = {
+		id = 19250,
+		name = "Emotion Inhibition Module "
+	},
+	[19260] = {
+		id = 19260,
+		name = "Precision Salvo Protocol "
+	},
+	[19261] = {
+		id = 19261,
+		name = "Precision Salvo Protocol "
 	},
 	[20011] = {
 		id = 20011,
@@ -3080,6 +3324,22 @@ pg.skill_data_display = {
 		id = 29362,
 		name = "All Out Assault: Sirius II "
 	},
+	[29381] = {
+		id = 29381,
+		name = "All Out Assault Ⅰ"
+	},
+	[29382] = {
+		id = 29382,
+		name = "All Out Assault Ⅱ"
+	},
+	[29391] = {
+		id = 29391,
+		name = "All Out Assault Ⅰ"
+	},
+	[29392] = {
+		id = 29392,
+		name = "All Out Assault Ⅱ"
+	},
 	[29421] = {
 		id = 29421,
 		name = "All Out Assault Ⅰ"
@@ -3102,6 +3362,14 @@ pg.skill_data_display = {
 	},
 	[29442] = {
 		id = 29442,
+		name = "All Out Assault Ⅱ"
+	},
+	[29481] = {
+		id = 29481,
+		name = "All Out Assault Ⅰ"
+	},
+	[29482] = {
+		id = 29482,
 		name = "All Out Assault Ⅱ"
 	},
 	[101010] = {
@@ -3760,6 +4028,13 @@ pg.skill_data_display = {
 		11890,
 		11900,
 		12040,
+		12041,
+		12042,
+		12043,
+		12044,
+		12046,
+		12047,
+		12048,
 		12050,
 		12060,
 		12070,
@@ -3877,6 +4152,32 @@ pg.skill_data_display = {
 		12694,
 		12695,
 		12696,
+		12800,
+		12801,
+		12802,
+		12803,
+		12804,
+		12810,
+		12820,
+		12821,
+		12822,
+		12830,
+		12840,
+		12850,
+		12860,
+		12862,
+		12870,
+		12871,
+		12873,
+		12875,
+		12880,
+		12882,
+		12890,
+		12891,
+		12892,
+		12900,
+		12901,
+		12910,
 		18010,
 		18040,
 		18041,
@@ -3903,6 +4204,34 @@ pg.skill_data_display = {
 		19100,
 		19110,
 		19120,
+		19130,
+		19131,
+		19140,
+		19141,
+		19150,
+		19160,
+		19161,
+		19170,
+		19180,
+		19181,
+		19190,
+		19191,
+		19200,
+		19210,
+		19211,
+		19212,
+		19213,
+		19214,
+		19220,
+		19221,
+		19230,
+		19231,
+		19240,
+		19241,
+		19242,
+		19250,
+		19260,
+		19261,
 		20011,
 		20012,
 		20021,
@@ -4139,12 +4468,18 @@ pg.skill_data_display = {
 		29351,
 		29361,
 		29362,
+		29381,
+		29382,
+		29391,
+		29392,
 		29421,
 		29422,
 		29431,
 		29432,
 		29441,
 		29442,
+		29481,
+		29482,
 		101010,
 		101020,
 		101030,

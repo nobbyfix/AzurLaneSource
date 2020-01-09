@@ -54,6 +54,7 @@ slot0.execute = function (slot0, slot1)
 
 			slot2:sendNotification(GAME.SEND_MINI_GAME_OP_DONE, {
 				awards = slot2,
+				hubid = slot4,
 				cmd = slot0,
 				argList = slot1
 			})

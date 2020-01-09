@@ -248,8 +248,6 @@ function setPaintingPrefab(slot0, slot1, slot2, slot3)
 		slot1 = slot1 .. "_n"
 	end
 
-	slot7 = slot1
-
 	if not slot3 and PathMgr.FileExists(PathMgr.getAssetBundle("painting/" .. slot1 .. "_n")) and PlayerPrefs.GetInt("paint_hide_other_obj_" .. slot1, 0) ~= 0 then
 		slot1 = slot1 .. "_n"
 	end
@@ -277,8 +275,6 @@ function setPaintingPrefabAsync(slot0, slot1, slot2, slot3, slot4)
 	if PathMgr.FileExists(PathMgr.getAssetBundle("painting/" .. slot1 .. "_n")) and PlayerPrefs.GetInt("paint_hide_other_obj_" .. slot1, 0) ~= 0 then
 		slot1 = slot1 .. "_n"
 	end
-
-	slot8 = slot1
 
 	if not slot4 and PathMgr.FileExists(PathMgr.getAssetBundle("painting/" .. slot1 .. "_n")) and PlayerPrefs.GetInt("paint_hide_other_obj_" .. slot1, 0) ~= 0 then
 		slot1 = slot1 .. "_n"
@@ -386,7 +382,7 @@ function playSoundEffect(slot0)
 	end
 
 	string.gsub(slot0, "event:/cv/(.+)/(.+)", function (slot0, slot1)
-		slot0 = "cv-" .. slot0 .. ((tobool(Ship.CVBattleKey[string.gsub(slot1, "_%w+", "")]) and "-battle") or "")
+		slot0 = "cv-" .. slot0 .. ((tobool(ShipWordHelper.CVBattleKey[string.gsub(slot1, "_%w+", "")]) and "-battle") or "")
 		slot1 = slot1
 	end)
 
@@ -940,18 +936,20 @@ function updateDrop(slot0, slot1, slot2)
 
 		updateEquipment(slot0, getProxy(EquipmentProxy).getEquipmentById(slot9, slot1.id), slot2)
 	elseif slot4 == DROP_TYPE_SHIP then
-		slot6 = Ship.getWords(pg.ship_data_statistics[slot1.id].skin_id, "drop_descrip") or i18n("ship_drop_desc_default")
-		slot10 = Ship.New({
+		slot9, slot10, slot11 = ShipWordHelper.GetWordAndCV(pg.ship_data_statistics[slot1.id].skin_id, ShipWordHelper.WORD_TYPE_DROP)
+		slot6 = slot11 or i18n("ship_drop_desc_default")
+		slot12 = Ship.New({
 			configId = slot1.id,
 			skin_id = slot1.skinId,
 			propose = slot1.propose
 		})
-		slot10.remoulded = slot1.remoulded
-		slot10.virgin = slot1.virgin
+		slot12.remoulded = slot1.remoulded
+		slot12.virgin = slot1.virgin
 
-		updateShip(slot0, slot10, slot2)
+		updateShip(slot0, slot12, slot2)
 	elseif slot4 == DROP_TYPE_NPC_SHIP then
-		slot6 = Ship.getWords(pg.ship_data_statistics[getProxy(BayProxy):getShipById(slot1.id).configId].skin_id, "drop_descrip") or i18n("ship_drop_desc_default")
+		slot10, slot11, slot12 = ShipWordHelper.GetWordAndCV(pg.ship_data_statistics[getProxy(BayProxy):getShipById(slot1.id).configId].skin_id, ShipWordHelper.WORD_TYPE_DROP)
+		slot6 = slot12 or i18n("ship_drop_desc_default")
 
 		updateShip(slot0, slot9, slot2)
 	elseif slot4 == DROP_TYPE_FURNITURE then
@@ -965,7 +963,7 @@ function updateDrop(slot0, slot1, slot2)
 			id = slot1.id
 		}), slot2)
 	elseif slot4 == DROP_TYPE_SKIN then
-		slot6 = Ship.getWords(slot1.id, "drop_descrip")
+		slot9, slot10, slot6 = ShipWordHelper.GetWordAndCV(slot1.id, ShipWordHelper.WORD_TYPE_DROP)
 		slot2.isSkin = true
 
 		updateShip(slot0, Ship.New({
@@ -3927,11 +3925,14 @@ function checkFirstHelpShow(slot0)
 end
 
 preOrientation = nil
+preNotchFitterEnabled = false
 
-function openPortrait()
+function openPortrait(slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-21, warpins: 1 ---
+	--- BLOCK #0 1-25, warpins: 1 ---
+	enableNotch(slot0, true)
+
 	preOrientation = Input.deviceOrientation:ToString()
 
 	print("Begining Orientation:" .. preOrientation)
@@ -3948,17 +3949,19 @@ function openPortrait()
 
 end
 
-function closePortrait()
+function closePortrait(slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-28, warpins: 1 ---
+	--- BLOCK #0 1-32, warpins: 1 ---
+	enableNotch(slot0, false)
+
 	Screen.autorotateToPortrait = false
 	Screen.autorotateToPortraitUpsideDown = false
 
 	print("Closing Orientation:" .. preOrientation)
 
 	Screen.orientation = ScreenOrientation.LandscapeLeft
-	slot0 = Timer.New(function ()
+	slot1 = Timer.New(function ()
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-5, warpins: 1 ---
@@ -3975,6 +3978,76 @@ function closePortrait()
 
 	return
 	--- END OF BLOCK #0 ---
+
+
+
+end
+
+function enableNotch(slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	if slot0 == nil then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 3-3, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 4-14, warpins: 2 ---
+	slot0:GetComponent("NotchAdapt").enabled = slot1
+
+	if slot0:GetComponent("AspectRatioFitter") then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 15-16, warpins: 1 ---
+		if slot1 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 17-19, warpins: 1 ---
+			slot3.enabled = preNotchFitterEnabled
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 20-23, warpins: 1 ---
+			preNotchFitterEnabled = slot3.enabled
+			slot3.enabled = false
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 24-24, warpins: 3 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 
@@ -4152,7 +4225,7 @@ end
 function getSpecialItemPage(slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-15, warpins: 1 ---
+	--- BLOCK #0 1-21, warpins: 1 ---
 	return ({
 		{
 			mediator = AssignedShipMediator,
@@ -4161,6 +4234,10 @@ function getSpecialItemPage(slot0)
 		{
 			mediator = AssignedShipMediator,
 			viewComponent = AssignedShipScene2
+		},
+		{
+			mediator = AssignedShipMediator,
+			viewComponent = AssignedShipScene3
 		}
 	})[slot0]
 	--- END OF BLOCK #0 ---
@@ -5806,28 +5883,117 @@ function checkExist(slot0, ...)
 
 end
 
+function showRepairMsgbox()
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-31, warpins: 1 ---
+	pg.MsgboxMgr.GetInstance():ShowMsgBox({
+		hideYes = true,
+		content = i18n("resource_verify_warn"),
+		custom = {
+			{
+				text = i18n("msgbox_repair_l2d"),
+				onCallback = function ()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-9, warpins: 1 ---
+					if PathMgr.FileExists(Application.persistentDataPath .. "/hashes-live2d.csv") then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 10-15, warpins: 1 ---
+						Live2DUpdateMgr.Inst:StartVerify()
+						--- END OF BLOCK #0 ---
+
+
+
+					else
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 16-25, warpins: 1 ---
+						pg.TipsMgr.GetInstance():ShowTips(i18n("word_no_cache"))
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 26-26, warpins: 2 ---
+					return
+					--- END OF BLOCK #1 ---
+
+
+
+				end
+			},
+			{
+				text = i18n("msgbox_repair"),
+				onCallback = function ()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-9, warpins: 1 ---
+					if PathMgr.FileExists(Application.persistentDataPath .. "/hashes.csv") then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 10-15, warpins: 1 ---
+						UpdateMgr.Inst:StartVerify()
+						--- END OF BLOCK #0 ---
+
+
+
+					else
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 16-25, warpins: 1 ---
+						pg.TipsMgr.GetInstance():ShowTips(i18n("word_no_cache"))
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 26-26, warpins: 2 ---
+					return
+					--- END OF BLOCK #1 ---
+
+
+
+				end
+			}
+		}
+	})
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
 function resourceVerify(slot0, slot1)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot3 = nil
-	slot4 = PathMgr.ReadAllLines(slot2)
-	slot5 = {}
-
-	if slot0 then
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if CSharpVersion > 35 then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 13-17, warpins: 1 ---
-		setActive(slot0, true)
-		--- END OF BLOCK #0 ---
+		--- BLOCK #0 5-10, warpins: 1 ---
+		UpdateMgr.Inst:StartVerify()
 
-
-
-	else
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 18-24, warpins: 1 ---
-		pg.UIMgr.GetInstance():LoadingOn()
+		return
 		--- END OF BLOCK #0 ---
 
 
@@ -5841,7 +6007,39 @@ function resourceVerify(slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 25-33, warpins: 2 ---
+	--- BLOCK #1 11-22, warpins: 1 ---
+	slot3 = nil
+	slot4 = PathMgr.ReadAllLines(slot2)
+	slot5 = {}
+
+	if slot0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 23-27, warpins: 1 ---
+		setActive(slot0, true)
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 28-34, warpins: 1 ---
+		pg.UIMgr.GetInstance():LoadingOn()
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 35-43, warpins: 2 ---
 	function slot6()
 
 		-- Decompilation error in this vicinity:
@@ -6030,7 +6228,15 @@ function resourceVerify(slot0, slot1)
 	end(slot4.Length - 1)
 
 	return
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 44-44, warpins: 2 ---
+	--- END OF BLOCK #3 ---
 
 
 
@@ -6255,6 +6461,106 @@ function checkBirthFormat(slot0)
 	--- BLOCK #4 26-27, warpins: 1 ---
 	return true
 	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot14 = xpcall
+
+function TryCall(slot0, slot1, ...)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0(slot0, function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-7, warpins: 1 ---
+		errorMsg("Error Handler", slot0)
+
+		if slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 8-10, warpins: 1 ---
+			slot0(slot0)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 11-11, warpins: 2 ---
+		return
+		--- END OF BLOCK #1 ---
+
+
+
+	end, ...)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+function isHalfBodyLive2D(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-7, warpins: 1 ---
+	return _.any({
+		"biaoqiang",
+		"z23",
+		"lafei",
+		"lingbo",
+		"mingshi",
+		"xuefeng"
+	}, function (slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		if slot0 ~= slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-5, warpins: 1 ---
+			slot1 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		else
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 6-6, warpins: 1 ---
+			slot1 = true
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 7-7, warpins: 2 ---
+		return slot1
+		--- END OF BLOCK #1 ---
+
+
+
+	end)
+	--- END OF BLOCK #0 ---
 
 
 

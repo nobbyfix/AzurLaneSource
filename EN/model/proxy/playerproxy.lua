@@ -1,5 +1,6 @@
 slot0 = class("PlayerProxy", import(".NetProxy"))
 slot0.UPDATED = "player updated"
+slot0.RESOURCE_UPDATED = "RESOURCE_UPDATED"
 
 slot0.register = function (slot0)
 	slot0._flags = {}
@@ -141,6 +142,22 @@ slot0.updatePt = function (slot0, slot1, slot2)
 			end
 		end
 	end
+end
+
+slot0.UpdatePlayerRes = function (slot0, slot1, slot2)
+	if not slot0.data then
+		return
+	end
+
+	slot3 = id2res(slot1)
+	slot0.data[slot3] = math.max(slot0.data[slot3] + slot2, 0)
+
+	slot0:sendNotification(slot0.RESOURCE_UPDATED, {
+		id = slot1,
+		diff = slot2,
+		amount = slot0.data[slot3]
+	})
+	slot0:updatePlayer(slot0.data)
 end
 
 slot0.updatePlayerMedalDisplay = function (slot0, slot1)

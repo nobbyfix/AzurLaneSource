@@ -21,6 +21,7 @@ slot6.Initialize = function (slot0)
 
 	slot0._dataProxy = slot0._state:GetProxyByName(slot1.Battle.BattleDataProxy.__name)
 	slot0._uiMGR = pg.UIMgr.GetInstance()
+	slot0._updateViewList = {}
 
 	slot0:SetBattleUI()
 	slot0:AddUIEvent()
@@ -65,6 +66,10 @@ slot6.DisableComponent = function (slot0)
 
 	if slot0._jammingView then
 		slot0._jammingView:Eliminate(false)
+	end
+
+	if slot0._inkView then
+		slot0._inkView:SetActive(false)
 	end
 end
 
@@ -183,6 +188,10 @@ slot6.InitMainDamagedView = function (slot0)
 	slot0._mainDamagedView = slot0.Battle.BattleMainDamagedView.New(slot0._ui:findTF("HPWarning"))
 end
 
+slot6.InitInkView = function (slot0)
+	slot0._inkView = slot0.Battle.BattleInkView.New(slot0._ui:findTF("InkContainer"))
+end
+
 slot6.InitDebugConsole = function (slot0)
 	slot0._debugConsoleView = slot0._debugConsoleView or slot0.Battle.BattleDebugConsole.New(slot0._ui:findTF("Debug_Console"), slot0._state)
 end
@@ -209,8 +218,9 @@ slot6.InitCamera = function (slot0)
 end
 
 slot6.Update = function (slot0)
-	slot0._skillView:Update()
-	slot0._sightView:Update()
+	for slot4, slot5 in pairs(slot0._updateViewList) do
+		slot4:Update()
+	end
 end
 
 slot6.AddUIEvent = function (slot0)
@@ -245,6 +255,8 @@ slot6.RemoveUIEvent = function (slot0)
 	slot0._userFleet:UnregisterEventListener(slot0, slot0.SHOW_BUFFER)
 	slot0._userFleet:UnregisterEventListener(slot0, slot1.POINT_HIT_CHARGE)
 	slot0._userFleet:UnregisterEventListener(slot0, slot1.POINT_HIT_CANCEL)
+	slot0._userFleet:UnregisterEventListener(slot0, slot0.MANUAL_SUBMARINE_SHIFT)
+	slot0._userFleet:UnregisterEventListener(slot0, slot0.FLEET_BLIND)
 end
 
 slot6.ShowSkillPainting = function (slot0, slot1, slot2, slot3)
@@ -339,12 +351,14 @@ end
 
 slot6.onCommonInit = function (slot0, slot1)
 	slot0._skillView = slot0.Battle.BattleSkillView.New(slot0, slot1.Data)
+	slot0._updateViewList[slot0._skillView] = true
 	slot0._userFleet = slot0._dataProxy:GetFleetByIFF(slot1.FRIENDLY_CODE)
 
 	slot0._userFleet:RegisterEventListener(slot0, slot2.SHOW_BUFFER, slot0.onShowBuffer)
 	slot0._userFleet:RegisterEventListener(slot0, slot3.POINT_HIT_CHARGE, slot0.onPointHitSight)
 	slot0._userFleet:RegisterEventListener(slot0, slot3.POINT_HIT_CANCEL, slot0.onPointHitSight)
 	slot0._userFleet:RegisterEventListener(slot0, slot2.MANUAL_SUBMARINE_SHIFT, slot0.onManualSubShift)
+	slot0._userFleet:RegisterEventListener(slot0, slot2.FLEET_BLIND, slot0.onFleetBlind)
 
 	slot0._sightView = slot0.Battle.BattleOpticalSightView.New(slot0._ui:findTF("ChargeAreaContainer"))
 
@@ -393,11 +407,11 @@ slot6.onAddUnit = function (slot0, slot1)
 			end)
 			SetActive(slot0, true)
 		end)
-	elseif slot1.Data.type == slot0.UnitType.ENEMY_UNIT then
+	elseif slot2 == slot0.UnitType.ENEMY_UNIT then
 		slot0:registerUnitEvent(slot3)
-	elseif slot1.Data.type == slot0.UnitType.NPC_UNIT and slot3:GetIFF() == slot1.FOE_CODE then
+	elseif slot2 == slot0.UnitType.NPC_UNIT and slot3:GetIFF() == slot1.FOE_CODE then
 		slot0:registerUnitEvent(slot3)
-	elseif slot1.Data.type == slot0.UnitType.PLAYER_UNIT and slot3:IsMainFleetUnit() and slot3:GetIFF() == slot1.FRIENDLY_CODE then
+	elseif slot2 == slot0.UnitType.PLAYER_UNIT and slot3:IsMainFleetUnit() and slot3:GetIFF() == slot1.FRIENDLY_CODE then
 		slot0:registerPlayerMainUnitEvent(slot3)
 	end
 end
@@ -415,8 +429,14 @@ slot6.onRemoveUnit = function (slot0, slot1)
 
 	if slot1.Data.type == slot0.UnitType.ENEMY_UNIT and not slot2:IsBoss() then
 		slot0:unregisterUnitEvent(slot2)
-	elseif slot2:IsMainFleetUnit() and slot2:GetIFF() == slot1.FRIENDLY_CODE then
-		slot0:unregisterPlayerMainUnitEvent(slot2)
+	elseif slot2:GetIFF() == slot1.FRIENDLY_CODE then
+		if slot0._inkView then
+			slot0._inkView:RemoveHollow(slot2)
+		end
+
+		if slot2:IsMainFleetUnit() then
+			slot0:unregisterPlayerMainUnitEvent(slot2)
+		end
 	end
 
 	if slot1.Data.deadReason == slot0.UnitDeathReason.LEAVE and slot0._enemyHpBar:GetCurrentTarget() and slot0._enemyHpBar:GetCurrentTarget() == slot1.Data.unit then
@@ -491,8 +511,32 @@ end
 slot6.onPointHitSight = function (slot0, slot1)
 	if slot1.ID == slot0.POINT_HIT_CHARGE then
 		slot0._sightView:SetActive(true)
+
+		slot0._updateViewList[slot0._sightView] = true
 	elseif slot2 == slot0.POINT_HIT_CANCEL then
 		slot0._sightView:SetActive(false)
+
+		slot0._updateViewList[slot0._sightView] = nil
+	end
+end
+
+slot6.onFleetBlind = function (slot0, slot1)
+	if not slot0._inkView then
+		slot0:InitInkView()
+	end
+
+	slot3 = slot1.Dispatcher
+
+	if slot1.Data.isBlind then
+		slot0._inkView:SetActive(true, slot3:GetUnitList())
+		slot0._skillView:HideSkillButton(true)
+
+		slot0._updateViewList[slot0._inkView] = true
+	else
+		slot0._inkView:SetActive(false)
+		slot0._skillView:HideSkillButton(false)
+
+		slot0._updateViewList[slot0._inkView] = nil
 	end
 end
 
@@ -565,6 +609,12 @@ slot6.Dispose = function (slot0)
 		slot0._jammingView:Dispose()
 
 		slot0._jammingView = nil
+	end
+
+	if slot0._inkView then
+		slot0._inkView:Dispose()
+
+		slot0._inkView = nil
 	end
 
 	slot0.super.Dispose(slot0)

@@ -45,7 +45,7 @@ function AiriTranscodeResult(slot0)
 
 	if slot0.AiriResultCodeHandler(slot0.R_CODE) then
 		pg.m02:sendNotification(GAME.ON_GET_TRANSCODE, {
-			transcode = slot0.TRANSCODE
+			transcode = slot0.MIGRATIONCODE
 		})
 	end
 end
@@ -124,7 +124,7 @@ return {
 		return NetConst.GATEWAY_PORT == 20001 and NetConst.GATEWAY_HOST == "blhxjpauditapi.azurlane.jp"
 	end,
 	CheckPreAudit = function ()
-		return NetConst.GATEWAY_PORT == 30001 and NetConst.GATEWAY_HOST == "blhxjpauditapi.azurlane.jp"
+		return (NetConst.GATEWAY_PORT == 30001 and NetConst.GATEWAY_HOST == "blhxjpauditapi.azurlane.jp") or (NetConst.GATEWAY_PORT == 30101 and NetConst.GATEWAY_HOST == "blhxjpauditapi.azurlane.jp")
 	end,
 	CheckPretest = function ()
 		return false
@@ -259,6 +259,13 @@ return {
 		print("channelUID : " .. slot0.channelUID)
 
 		return slot0.channelUID
+	end,
+	GetTransCode = function ()
+		if Application.isEditor then
+			return "NULL"
+		else
+			return slot0.loginRet.MIGRATIONCODE
+		end
 	end,
 	UserEventUpload = function (slot0)
 		if slot0.GetIsPlatform() then

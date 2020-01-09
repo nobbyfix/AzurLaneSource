@@ -13475,9 +13475,9 @@ pg.skill_data_template = {
 		}
 	},
 	[10960] = {
-		desc_get = "Grants the following buffs to Ayanami, Akatsuki, Ikazuchi, Inazuma, and Fubuki: increases FP and EVA by 15.0% (30.0% when fully upgraded) and TRP by 4.0% (10.0% when fully upgraded.)",
+		desc_get = "Grants the following buffs to Ayanami, Akatsuki, Ikazuchi, Inazuma, Fubuki and Hibiki: increases FP and EVA by 15.0% (30.0% when fully upgraded) and TRP by 4.0% (10.0% when fully upgraded.)",
 		name = "Special Lead Ship",
-		desc = "Grants the following buffs to Ayanami, Akatsuki, Ikazuchi, Inazuma, and Fubuki: increases FP and EVA by $1 and TRP by $2.",
+		desc = "Grants the following buffs to Ayanami, Akatsuki, Ikazuchi, Inazuma, Fubuki and Hibiki: increases FP and EVA by $1 and TRP by $2.",
 		type = 3,
 		max_level = 10,
 		id = 10960,
@@ -21100,8 +21100,8 @@ pg.skill_data_template = {
 	},
 	[12040] = {
 		desc_get = "",
-		name = "不安定的发明家",
-		desc = "战斗中，每12秒触发一种研发中的特殊装备$1，特殊装备的效果随技能等级提高",
+		name = "Whimsical Inventor ",
+		desc = "Every 12s: Activates special prototype equipment $1 one time (Effectiveness is based on the skill's level). ",
 		type = 3,
 		max_level = 10,
 		id = 12040,
@@ -26318,6 +26318,1042 @@ pg.skill_data_template = {
 			}
 		}
 	},
+	[12810] = {
+		desc_get = "",
+		name = "Unleashed Tactics",
+		desc = "Every 20s: $1 chance to fire a special barrage (DMG is based on the skill's level). While in an Exercise: improves the firing pattern of the barrage.",
+		type = 1,
+		max_level = 10,
+		id = 12810,
+		system_transform = {
+			[3.0] = 12800
+		},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			}
+		}
+	},
+	[12820] = {
+		desc_get = "",
+		name = "Unyielding Shield",
+		desc = "While this ship is afloat, when one of your Main Fleet ship takes DMG: $1 chance to decrease the DMG your Main Fleet takes for 15s. Has a 20s cooldown between activations. Once per battle, when this ship's HP drops below 20.0%: restores 10.0% of this ship's max HP.",
+		type = 2,
+		max_level = 10,
+		id = 12820,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"40.0%",
+				"70.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"40.0%",
+					"+3.3%"
+				},
+				{
+					"43.3%",
+					"+3.3%"
+				},
+				{
+					"46.6%",
+					"+3.3%"
+				},
+				{
+					"49.9%",
+					"+3.3%"
+				},
+				{
+					"53.2%",
+					"+3.3%"
+				},
+				{
+					"56.5%",
+					"+3.3%"
+				},
+				{
+					"59.8%",
+					"+3.3%"
+				},
+				{
+					"63.1%",
+					"+3.3%"
+				},
+				{
+					"66.4%",
+					"+3.6%"
+				},
+				{
+					"70.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[12830] = {
+		desc_get = "",
+		name = "Noshiro's Hoarfrost",
+		desc = "While this ship is afloat: increases this ship's Evasion Rate by $1 and decreases the torpedo DMG your Vanguard takes by $2.",
+		type = 2,
+		max_level = 10,
+		id = 12830,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[12840] = {
+		desc_get = "Increases the DMG this ship deals to enemy CVs and CVLs by <color=#92fc63FF>5.0%</color> (<color=#92fc63FF>20.0%</color> when fully upgraded). While this ship is afloat: increases the TRP of your Vanguard by 5.0% (20.0% when fully upgraded. Also increases their Torpedo Crit Rate by <color=#92fc63FF>5.0%</color>). ",
+		name = "Skyslayer's Edge",
+		desc = "Increases the DMG this ship deals to enemy CVs and CVLs by $1. While this ship is afloat: increases the TRP of your Vanguard by $2$3. ",
+		type = 3,
+		max_level = 10,
+		id = 12840,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"5.0%",
+				"20.0%"
+			},
+			{
+				"5.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.6%"
+				},
+				{
+					"6.6%",
+					"+1.6%"
+				},
+				{
+					"8.2%",
+					"+1.8%"
+				},
+				{
+					"10.0%",
+					"+1.6%"
+				},
+				{
+					"11.6%",
+					"+1.6%"
+				},
+				{
+					"13.2%",
+					"+1.8%"
+				},
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.8%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					""
+				},
+				{
+					""
+				},
+				{
+					""
+				},
+				{
+					""
+				},
+				{
+					""
+				},
+				{
+					"",
+					"improve Crit Rate by 3.0%"
+				},
+				{
+					", improve Crit Rate by 3.0%",
+					"+3.0%"
+				},
+				{
+					", improve Crit Rate by 6.0%",
+					"+3.0%"
+				},
+				{
+					", improve Crit Rate by 9.0%",
+					"+3.0%"
+				},
+				{
+					", improve Crit Rate by 12.0%"
+				}
+			}
+		}
+	},
+	[12850] = {
+		desc_get = "",
+		name = "Demonblade",
+		desc = "At the start of the battle: increases this ship's FP, AA, and ASW by $1. While this ship is afloat: decreases the DMG your SSs and SSVs take by $2.",
+		type = 2,
+		max_level = 10,
+		id = 12850,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[12860] = {
+		desc_get = "",
+		name = "Swirling Cherry Blossoms",
+		desc = "The first 3 Airstrikes launched by this ship will heal 3 times over 3 seconds, each heal targeting the allied surface ship with lowest percentage of remaining HP. Each heal restores HP equal to $1 of Ryuuhou's maximum HP. If the fleet this ship is in enters battle with 3 ships afloat in the Main Fleet, the healing from this skill is increased by 100.0%.",
+		type = 3,
+		max_level = 10,
+		id = 12860,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"1.2%",
+				"3.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"1.2%",
+					"+0.2%"
+				},
+				{
+					"1.4%",
+					"+0.2%"
+				},
+				{
+					"1.6%",
+					"+0.2%"
+				},
+				{
+					"1.8%",
+					"+0.2%"
+				},
+				{
+					"2.0%",
+					"+0.2%"
+				},
+				{
+					"2.2%",
+					"+0.2%"
+				},
+				{
+					"2.4%",
+					"+0.2%"
+				},
+				{
+					"2.6%",
+					"+0.2%"
+				},
+				{
+					"2.8%",
+					"+0.2%"
+				},
+				{
+					"3.0%"
+				}
+			}
+		}
+	},
+	[12870] = {
+		desc_get = "",
+		name = "Dancing Waves",
+		desc = "While this ship is afloat: decreases the DMG your Vanguard takes from enemy SS torpedoes by $2. When your Submarine Fleet enters combat: heals $1 HP to each boat in your Submarine Fleet. Whenever your SSs or SSVs sink an enemy ship: increases Ryuuhou's DMG by $3. Can be stacked up to 6 times.",
+		type = 2,
+		max_level = 10,
+		id = 12870,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"4.5%",
+				"12.0%"
+			},
+			{
+				"1.0%",
+				"3.5%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			},
+			{
+				{
+					"1.0%",
+					"+0.2%"
+				},
+				{
+					"1.2%",
+					"+0.2%"
+				},
+				{
+					"1.4%",
+					"+0.2%"
+				},
+				{
+					"1.6%",
+					"+0.2%"
+				},
+				{
+					"1.8%",
+					"+0.3%"
+				},
+				{
+					"2.1%",
+					"+0.3%"
+				},
+				{
+					"2.4%",
+					"+0.3%"
+				},
+				{
+					"2.7%",
+					"+0.4%"
+				},
+				{
+					"3.1%",
+					"+0.4%"
+				},
+				{
+					"3.5%"
+				}
+			}
+		}
+	},
+	[12880] = {
+		desc_get = "",
+		name = "Demon's Wish",
+		desc = "Increases the torpedo DMG this ship deals by $1. When this ship fires its torpedoes: $2 chance to launch a second wave of torpedoes.",
+		type = 1,
+		max_level = 10,
+		id = 12880,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"15.0%",
+				"30.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			}
+		}
+	},
+	[12890] = {
+		desc_get = "",
+		name = "Foo and Friends",
+		desc = "At the start of the battle, if your Vanguard has no fewer than 3 ships: increases the TRP stat of your Sakura Empire Vanguard ships by $1.",
+		type = 1,
+		max_level = 10,
+		id = 12890,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[12900] = {
+		desc_get = "",
+		name = "Phoenix's Plumage",
+		desc = "When this ship fires its torpedoes: $1 chance to launch a second wave of torpedoes. Once per battle, when this ship's HP drops below 20.0%: restores $2 of this ship's max HP.",
+		type = 1,
+		max_level = 10,
+		id = 12900,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"15.0%",
+				"30.0%"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[12910] = {
+		desc_get = "",
+		name = "Destroyer Division 6: Hibiki",
+		desc = "When sortied with Akatsuki, Ikazuchi, or Inazuma: increases this ship's FP, TRP, and RLD by $1. Effect does not stack.",
+		type = 1,
+		max_level = 10,
+		id = 12910,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
 	[18010] = {
 		desc_get = "",
 		name = "MKV-Class AP Shell +",
@@ -27547,6 +28583,1296 @@ pg.skill_data_template = {
 				},
 				{
 					"35.0%"
+				}
+			}
+		}
+	},
+	[19130] = {
+		desc_get = "",
+		name = "No-Fly Zone!",
+		desc = "When an enemy aircraft is shot down within your fleet's Anti-Air Gun range: increases this ship's FP and AA by $1 for 8s. When your fleet has shot down 15 or more aircraft in one battle: increases this ship's FP by $1 and RLD by $2 until the end of the battle.",
+		type = 2,
+		max_level = 10,
+		id = 19130,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+0.9%"
+				},
+				{
+					"5.9%",
+					"+0.9%"
+				},
+				{
+					"6.8%",
+					"+1.2%"
+				},
+				{
+					"8.0%",
+					"+0.9%"
+				},
+				{
+					"8.9%",
+					"+0.9%"
+				},
+				{
+					"9.8%",
+					"+1.2%"
+				},
+				{
+					"11.0%",
+					"+1.2%"
+				},
+				{
+					"12.2%",
+					"+1.2%"
+				},
+				{
+					"13.4%",
+					"+1.6%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[19140] = {
+		desc_get = "",
+		name = "Dual Nock",
+		desc = "While equipping a Main Gun in this ship's Secondary Weapon slot: increases this ship's Anti-Air Gun efficiency by $1. If instead equipping an Anti-Air Gun in this slot: increases this ship's Main Gun efficiency by $2. While placed in the rearmost position of your Vanguard: decreases this ship's DMG taken by $3.",
+		type = 3,
+		max_level = 10,
+		id = 19140,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[19150] = {
+		desc_get = "",
+		name = "Iron Sight Caliber",
+		desc = "Decreases this ship's Main Gun Spread Range by 3 and increases its DMG dealt to CAs, CBs, BCs, BBs, and BBVs by $1.",
+		type = 3,
+		max_level = 10,
+		id = 19150,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[19160] = {
+		desc_get = "",
+		name = "Heavy Barrel Blaster",
+		desc = "When this ship fires a Salvo: $1 chance to fire a special barrage.",
+		type = 1,
+		max_level = 10,
+		id = 19160,
+		system_transform = {
+			[3.0] = 19161
+		},
+		desc_get_add = {
+			{
+				"50.0%",
+				"80.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"50.0%",
+					"+3.3%"
+				},
+				{
+					"53.3%",
+					"+3.3%"
+				},
+				{
+					"56.6%",
+					"+3.3%"
+				},
+				{
+					"59.9%",
+					"+3.3%"
+				},
+				{
+					"63.2%",
+					"+3.3%"
+				},
+				{
+					"66.5%",
+					"+3.3%"
+				},
+				{
+					"69.8%",
+					"+3.3%"
+				},
+				{
+					"73.1%",
+					"+3.3%"
+				},
+				{
+					"76.4%",
+					"+3.6%"
+				},
+				{
+					"80.0%"
+				}
+			}
+		}
+	},
+	[19170] = {
+		desc_get = "",
+		name = "Kitakaze Style - Horizon Splitter",
+		desc = "This ship's Main Guns ignore the enemy's Armor Type and its Main Gun DMG increases based on the skill's level ($1.) While equipping a Sakura Empire Main Gun: increases this ship's Main Gun efficiency by $2.",
+		type = 3,
+		max_level = 10,
+		id = 19170,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			},
+			{
+				"5.0%",
+				"15.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			},
+			{
+				{
+					"5.0%",
+					"+1.1%"
+				},
+				{
+					"6.1%",
+					"+1.1%"
+				},
+				{
+					"7.2%",
+					"+1.1%"
+				},
+				{
+					"8.3%",
+					"+1.1%"
+				},
+				{
+					"9.4%",
+					"+1.1%"
+				},
+				{
+					"10.5%",
+					"+1.1%"
+				},
+				{
+					"11.6%",
+					"+1.1%"
+				},
+				{
+					"12.7%",
+					"+1.1%"
+				},
+				{
+					"13.8%",
+					"+1.2%"
+				},
+				{
+					"15.0%"
+				}
+			}
+		}
+	},
+	[19180] = {
+		desc_get = "",
+		name = "Kitakaze Style - Lotus Torpedoes",
+		desc = "10s after the start of battle, if this ship is in the frontmost position of your Vanguard: fires a special torpedo barrage ($1.) After every 10 hits with this ship's Torpedoes (barrage torpedoes do not count): fires this same barrage.",
+		type = 1,
+		max_level = 10,
+		id = 19180,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[19190] = {
+		desc_get = "",
+		name = "Blazing Peaks",
+		desc = "When this ship equips a Main Gun with a caliber of 280mm or higher: increases its Main Gun DMG based on the distance its shells travel to reach the enemy, up to a maximum of $1. Increases this ship's Burn DMG dealt by $2.",
+		type = 1,
+		max_level = 10,
+		id = 19190,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"15.0%",
+				"25.0%"
+			},
+			{
+				"20.0%",
+				"50.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.1%"
+				},
+				{
+					"16.1%",
+					"+1.1%"
+				},
+				{
+					"17.2%",
+					"+1.1%"
+				},
+				{
+					"18.3%",
+					"+1.1%"
+				},
+				{
+					"19.4%",
+					"+1.1%"
+				},
+				{
+					"20.5%",
+					"+1.1%"
+				},
+				{
+					"21.6%",
+					"+1.1%"
+				},
+				{
+					"22.7%",
+					"+1.1%"
+				},
+				{
+					"23.8%",
+					"+1.2%"
+				},
+				{
+					"25.0%"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.3%"
+				},
+				{
+					"50.0%"
+				}
+			}
+		}
+	},
+	[19200] = {
+		desc_get = "",
+		name = "Mizuho's Intuition",
+		desc = "Every 20s: $1 chance to increase this ship's EVA by $2 and Accuracy by $3 for 12s.",
+		type = 2,
+		max_level = 10,
+		id = 19200,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"30.0%",
+				"70.0%"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			},
+			{
+				"20.0%",
+				"50.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"30.0%",
+					"+3.0%"
+				},
+				{
+					"33.0%",
+					"+3.0%"
+				},
+				{
+					"36.0%",
+					"+3.0%"
+				},
+				{
+					"39.0%",
+					"+4.0%"
+				},
+				{
+					"43.0%",
+					"+4.0%"
+				},
+				{
+					"47.0%",
+					"+5.0%"
+				},
+				{
+					"52.0%",
+					"+5.0%"
+				},
+				{
+					"57.0%",
+					"+6.0%"
+				},
+				{
+					"63.0%",
+					"+7.0%"
+				},
+				{
+					"70.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"20.0%",
+					"+3.3%"
+				},
+				{
+					"23.3%",
+					"+3.3%"
+				},
+				{
+					"26.6%",
+					"+3.3%"
+				},
+				{
+					"29.9%",
+					"+3.3%"
+				},
+				{
+					"33.2%",
+					"+3.3%"
+				},
+				{
+					"36.5%",
+					"+3.3%"
+				},
+				{
+					"39.8%",
+					"+3.3%"
+				},
+				{
+					"43.1%",
+					"+3.3%"
+				},
+				{
+					"46.4%",
+					"+3.3%"
+				},
+				{
+					"50.0%"
+				}
+			}
+		}
+	},
+	[19210] = {
+		desc_get = "",
+		name = "Special Gunnery Training",
+		desc = "Fires a special barrage once every 8 times this ship fires its Main Guns. While equipping the Prototype Triple 310mm Main Gun (Type 0): increases this ship's Main Gun efficiency by $1, lowers the number of shots needed to fire the barrage to 4, and improves the barrage.",
+		type = 1,
+		max_level = 10,
+		id = 19210,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"4.5%",
+				"12.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"4.5%",
+					"+0.7%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+1.0%"
+				},
+				{
+					"7.0%",
+					"+0.7%"
+				},
+				{
+					"7.7%",
+					"+0.8%"
+				},
+				{
+					"8.5%",
+					"+1.0%"
+				},
+				{
+					"9.5%",
+					"+0.7%"
+				},
+				{
+					"10.2%",
+					"+0.8%"
+				},
+				{
+					"11.0%",
+					"+1.0%"
+				},
+				{
+					"12.0%"
+				}
+			}
+		}
+	},
+	[19220] = {
+		desc_get = "",
+		name = "Symphony of Destruction",
+		desc = "When this ship takes DMG or when an enemy comes within close range of this ship: fires a $1 special barrage that ignores the enemy's Armor Type (barrage DMG is based on the skill's level.) Has a 15s cooldown between activations.",
+		type = 1,
+		max_level = 10,
+		id = 19220,
+		system_transform = {
+			[3.0] = 19221
+		},
+		desc_get_add = {
+			{
+				"Lv.1",
+				"Lv.10"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"Lv.1"
+				},
+				{
+					"Lv.2"
+				},
+				{
+					"Lv.3"
+				},
+				{
+					"Lv.4"
+				},
+				{
+					"Lv.5"
+				},
+				{
+					"Lv.6"
+				},
+				{
+					"Lv.7"
+				},
+				{
+					"Lv.8"
+				},
+				{
+					"Lv.9"
+				},
+				{
+					"Lv.10"
+				}
+			}
+		}
+	},
+	[19230] = {
+		desc_get = "",
+		name = "Sonata of Chaos",
+		desc = "When this ship fires an odd-numbered Salvo: increases its RLD by $1 and DMG dealt by $2 until its next reloaded Salvo. When this ship fires an even-numbered Salvo: increases its Crit Rate by $2 and Crit DMG by $1 until its next reloaded Salvo.",
+		type = 1,
+		max_level = 10,
+		id = 19230,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"30.0%",
+				"50.0%"
+			},
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"30.0%",
+					"+2.2%"
+				},
+				{
+					"32.2%",
+					"+2.2%"
+				},
+				{
+					"34.4%",
+					"+2.2%"
+				},
+				{
+					"36.6%",
+					"+2.2%"
+				},
+				{
+					"38.8%",
+					"+2.2%"
+				},
+				{
+					"41.0%",
+					"+2.2%"
+				},
+				{
+					"43.2%",
+					"+2.2%"
+				},
+				{
+					"45.4%",
+					"+2.2%"
+				},
+				{
+					"47.6%",
+					"+2.4%"
+				},
+				{
+					"50.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[19240] = {
+		{
+			{
+				"4.0%",
+				"10.0%"
+			}
+		},
+		{
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_get = "",
+		name = "Rhapsody of Darkness",
+		desc = "Applies a buff to this ship based on its HP remaining. When between 100% and 70%: increases FP by $1; when between 70% and 30%: increases FP by $2 and decreases DMG taken by $2; when less than 30%: decreases DMG taken by $3.",
+		type = 3,
+		max_level = 10,
+		id = 19240,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"10.0%",
+				"20.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			},
+			{
+				{
+					"4.0%",
+					"+0.6%"
+				},
+				{
+					"4.6%",
+					"+0.6%"
+				},
+				{
+					"5.2%",
+					"+0.8%"
+				},
+				{
+					"6.0%",
+					"+0.6%"
+				},
+				{
+					"6.6%",
+					"+0.6%"
+				},
+				{
+					"7.2%",
+					"+0.8%"
+				},
+				{
+					"8.0%",
+					"+0.6%"
+				},
+				{
+					"8.6%",
+					"+0.6%"
+				},
+				{
+					"9.2%",
+					"+0.8%"
+				},
+				{
+					"10.0%"
+				}
+			},
+			{
+				{
+					"10.0%",
+					"+1.1%"
+				},
+				{
+					"11.1%",
+					"+1.1%"
+				},
+				{
+					"12.2%",
+					"+1.1%"
+				},
+				{
+					"13.3%",
+					"+1.1%"
+				},
+				{
+					"14.4%",
+					"+1.1%"
+				},
+				{
+					"15.5%",
+					"+1.1%"
+				},
+				{
+					"16.6%",
+					"+1.1%"
+				},
+				{
+					"17.7%",
+					"+1.1%"
+				},
+				{
+					"18.8%",
+					"+1.2%"
+				},
+				{
+					"20.0%"
+				}
+			}
+		}
+	},
+	[19250] = {
+		desc_get = "",
+		name = "Emotion Inhibition Module",
+		desc = "Up to twice per battle, when this ship's HP falls below 50.0%: for 8s, increases this ship's EVA by $1 and restores a total of 8.0% of its max HP.",
+		type = 2,
+		max_level = 10,
+		id = 19250,
+		system_transform = {},
+		desc_get_add = {
+			{
+				"15.0%",
+				"30.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"15.0%",
+					"+1.6%"
+				},
+				{
+					"16.6%",
+					"+1.6%"
+				},
+				{
+					"18.2%",
+					"+1.6%"
+				},
+				{
+					"19.8%",
+					"+1.6%"
+				},
+				{
+					"21.4%",
+					"+1.6%"
+				},
+				{
+					"23.0%",
+					"+1.6%"
+				},
+				{
+					"24.6%",
+					"+1.8%"
+				},
+				{
+					"26.4%",
+					"+1.8%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%"
+				}
+			}
+		}
+	},
+	[19260] = {
+		desc_get = "",
+		name = "Precision Salvo Protocol",
+		desc = "Each Main Gun reload gives this ship 2 Salvoes that can be fired independently. This ship's DMG bonus with manually aimed Salvoes becomes $2. Every 20s: $1 chance to fire a special barrage (barrage DMG is based on the skill's level.)",
+		type = 1,
+		max_level = 10,
+		id = 19260,
+		system_transform = {
+			[3.0] = 19261
+		},
+		desc_get_add = {
+			{
+				"50.0%",
+				"100.0%"
+			},
+			{
+				"25.0%",
+				"40.0%"
+			}
+		},
+		desc_add = {
+			{
+				{
+					"50.0%",
+					"+5.0%"
+				},
+				{
+					"55.0%",
+					"+5.0%"
+				},
+				{
+					"60.0%",
+					"+5.0%"
+				},
+				{
+					"65.0%",
+					"+5.0%"
+				},
+				{
+					"70.0%",
+					"+5.0%"
+				},
+				{
+					"75.0%",
+					"+5.0%"
+				},
+				{
+					"80.0%",
+					"+5.0%"
+				},
+				{
+					"85.0%",
+					"+5.0%"
+				},
+				{
+					"90.0%",
+					"+10.0%"
+				},
+				{
+					"100%"
+				}
+			},
+			{
+				{
+					"25.0%",
+					"+1.6%"
+				},
+				{
+					"26.6%",
+					"+1.6%"
+				},
+				{
+					"28.2%",
+					"+1.8%"
+				},
+				{
+					"30.0%",
+					"+1.6%"
+				},
+				{
+					"31.6%",
+					"+1.6%"
+				},
+				{
+					"33.2%",
+					"+1.8%"
+				},
+				{
+					"35.0%",
+					"+1.6%"
+				},
+				{
+					"36.6%",
+					"+1.6%"
+				},
+				{
+					"38.2%",
+					"+1.8%"
+				},
+				{
+					"40.0%"
 				}
 			}
 		}
@@ -30173,6 +32499,50 @@ pg.skill_data_template = {
 		desc_get_add = {},
 		desc_add = {}
 	},
+	[29381] = {
+		desc_get = "",
+		name = "All Out Assault Ⅰ",
+		desc = "Activates All Out Assault Ⅰ: Kitakaze once every 24 times the Main Guns are fired.",
+		type = 1,
+		max_level = 1,
+		id = 29381,
+		system_transform = {},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29382] = {
+		desc_get = "",
+		name = "All Out Assault Ⅱ",
+		desc = "Activates All Out Assault Ⅱ: Kitakaze once every 16 times the Main Guns are fired.",
+		type = 1,
+		max_level = 1,
+		id = 29382,
+		system_transform = {},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29391] = {
+		desc_get = "",
+		name = "All Out Assault Ⅰ",
+		desc = "Activates All Out Assault Ⅰ: Seattle once every 15 times the Main Guns are fired.",
+		type = 1,
+		max_level = 1,
+		id = 29391,
+		system_transform = {},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29392] = {
+		desc_get = "",
+		name = "All Out Assault Ⅱ",
+		desc = "Activates All Out Assault Ⅱ: Seattle once every 10 times the Main Guns are fired.",
+		type = 1,
+		max_level = 1,
+		id = 29392,
+		system_transform = {},
+		desc_get_add = {},
+		desc_add = {}
+	},
 	[29421] = {
 		desc_get = "",
 		name = "All Out Assault Ⅰ",
@@ -30235,6 +32605,28 @@ pg.skill_data_template = {
 		type = 1,
 		max_level = 1,
 		id = 29442,
+		system_transform = {},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29481] = {
+		desc_get = "",
+		name = "All Out Assault Ⅰ",
+		desc = "Activates All Out Assault Ⅰ: Noshiro once every 12 times the Main Guns are fired.",
+		type = 1,
+		max_level = 1,
+		id = 29481,
+		system_transform = {},
+		desc_get_add = {},
+		desc_add = {}
+	},
+	[29482] = {
+		desc_get = "",
+		name = "All Out Assault Ⅱ",
+		desc = "Activates All Out Assault Ⅱ: Noshiro once every 8 times the Main Guns are fired.",
+		type = 1,
+		max_level = 1,
+		id = 29482,
 		system_transform = {},
 		desc_get_add = {},
 		desc_add = {}
@@ -33793,6 +36185,17 @@ pg.skill_data_template = {
 		12670,
 		12680,
 		12690,
+		12810,
+		12820,
+		12830,
+		12840,
+		12850,
+		12860,
+		12870,
+		12880,
+		12890,
+		12900,
+		12910,
 		18010,
 		18040,
 		18050,
@@ -33814,6 +36217,20 @@ pg.skill_data_template = {
 		19100,
 		19110,
 		19120,
+		19130,
+		19140,
+		19150,
+		19160,
+		19170,
+		19180,
+		19190,
+		19200,
+		19210,
+		19220,
+		19230,
+		19240,
+		19250,
+		19260,
 		20011,
 		20012,
 		20021,
@@ -34052,12 +36469,18 @@ pg.skill_data_template = {
 		29351,
 		29361,
 		29362,
+		29381,
+		29382,
+		29391,
+		29392,
 		29421,
 		29422,
 		29431,
 		29432,
 		29441,
 		29442,
+		29481,
+		29482,
 		101010,
 		101020,
 		101030,

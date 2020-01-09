@@ -638,6 +638,17 @@ function slot2(slot0)
 				slot7 = slot7.white
 
 				slot5(slot6, slot7)
+			else
+				slot5 = setTextColor
+				slot6 = slot0
+				slot6 = slot6.intimacyValueTF
+				slot7 = Color
+				slot7 = slot7.New
+				slot8 = 0.5843137254901961
+				slot9 = 0.5215686274509804
+				slot10 = 0.40784313725490196
+
+				slot5(slot6, slot7(slot8, slot9, slot10))
 			end
 
 			slot5 = not slot0.shipVO.propose and slot2 <= slot3
@@ -724,6 +735,17 @@ function slot2(slot0)
 					slot9 = slot9.white
 
 					slot7(slot8, slot9)
+				else
+					slot7 = setTextColor
+					slot8 = slot0
+					slot8 = slot8.ringValue
+					slot9 = Color
+					slot9 = slot9.New
+					slot10 = 0.5843137254901961
+					slot11 = 0.5215686274509804
+					slot12 = 0.40784313725490196
+
+					slot7(slot8, slot9(slot10, slot11, slot12))
 				end
 			end
 

@@ -7688,6 +7688,518 @@ pg.task_data_template = {
 			}
 		}
 	},
+	[5071] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5065,
+		type = 5,
+		name = "The Nervous Black Cat",
+		count_inherit = 0,
+		desc = "Acquire 3 \"Torpedo Tempura\" \n(will be automatically consumed.) ",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 1,
+		story_icon = "ajiakesi",
+		award_choice = "",
+		level = 1,
+		next_task = "5072",
+		visibility = 1,
+		story_id = "AJIAKESI1",
+		target_id_for_client = 50003,
+		id = 5071,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "50003",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		},
+		scene = {
+			"BACKYARD"
+		}
+	},
+	[5072] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5066,
+		type = 5,
+		name = "Advice From a Friend",
+		count_inherit = 0,
+		desc = "Enhance any gear 10 times.",
+		target_id_2 = "",
+		sub_type = 40,
+		added_tip = 1,
+		story_icon = "ajiakesi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5073",
+		visibility = 1,
+		story_id = "AJIAKESI2",
+		target_id_for_client = 0,
+		id = 5072,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5073] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5067,
+		type = 5,
+		name = "You Can Do It, Hatsuharu!",
+		count_inherit = 0,
+		desc = "Sortie and obtain 20 victories with \nAjax in the fleet.",
+		target_id_2 = "",
+		sub_type = 18,
+		added_tip = 1,
+		story_icon = "ajiakesi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5074",
+		visibility = 1,
+		story_id = "AJIAKESI3",
+		target_id_for_client = 20203,
+		id = 5073,
+		target_num = 20,
+		fix_task = 0,
+		target_id = "20203",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5074] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5068,
+		type = 5,
+		name = "Hatsuharu, The Secretary!",
+		count_inherit = 0,
+		desc = "Complete 3 Daily Challenges with \nAjax in the fleet.",
+		target_id_2 = "",
+		sub_type = 19,
+		added_tip = 1,
+		story_icon = "ajiakesi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5075",
+		visibility = 1,
+		story_id = "AJIAKESI4",
+		target_id_for_client = 20203,
+		id = 5074,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "20203",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5075] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5069,
+		type = 5,
+		name = "Fruitless Efforts?",
+		count_inherit = 0,
+		desc = "Reach 100 Affinity with Ajax.",
+		target_id_2 = "",
+		sub_type = 1012,
+		added_tip = 1,
+		story_icon = "ajiakesi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5076",
+		visibility = 1,
+		story_id = "AJIAKESI5",
+		target_id_for_client = 20203,
+		id = 5075,
+		target_num = 10000,
+		fix_task = 0,
+		target_id = "20203",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				5
+			},
+			{
+				2,
+				16002,
+				1
+			}
+		}
+	},
+	[5076] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5070,
+		type = 5,
+		name = "Hatsuharu's Determination",
+		count_inherit = 0,
+		desc = "Fully Limit Break Ajax.",
+		target_id_2 = "",
+		sub_type = 35,
+		added_tip = 1,
+		story_icon = "ajiakesi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5077",
+		visibility = 1,
+		story_id = "AJIAKESI6",
+		target_id_for_client = 202034,
+		id = 5076,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "202034",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				10
+			},
+			{
+				2,
+				18012,
+				1
+			}
+		}
+	},
+	[5077] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5071,
+		type = 5,
+		name = "The Black Cat's Daily Life",
+		count_inherit = 0,
+		desc = "Get Ajax to Level 100.",
+		target_id_2 = "",
+		sub_type = 1013,
+		added_tip = 1,
+		story_icon = "ajiakesi",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "AJIAKESI7",
+		target_id_for_client = 20203,
+		id = 5077,
+		target_num = 100,
+		fix_task = 0,
+		target_id = "20203",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				10
+			},
+			{
+				2,
+				18012,
+				2
+			}
+		}
+	},
+	[5081] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5072,
+		type = 5,
+		name = "My Sister's Daily Routine",
+		count_inherit = 0,
+		desc = "Acquire 9 \"Oxy-cola\" \n(will be automatically consumed.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 1,
+		story_icon = "haman",
+		award_choice = "",
+		level = 1,
+		next_task = "5082",
+		visibility = 1,
+		story_id = "HAMAN1",
+		target_id_for_client = 50001,
+		id = 5081,
+		target_num = 9,
+		fix_task = 0,
+		target_id = "50001",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		},
+		scene = {
+			"BACKYARD"
+		}
+	},
+	[5082] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5073,
+		type = 5,
+		name = "My Sister's Troubles",
+		count_inherit = 0,
+		desc = "Enhance any gear 10 times.",
+		target_id_2 = "",
+		sub_type = 40,
+		added_tip = 1,
+		story_icon = "haman",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5083",
+		visibility = 1,
+		story_id = "HAMAN2",
+		target_id_for_client = 0,
+		id = 5082,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5083] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5074,
+		type = 5,
+		name = "My Sister's Thoughts",
+		count_inherit = 0,
+		desc = "Sortie and obtain 20 victories with \nHammann in the fleet.",
+		target_id_2 = "",
+		sub_type = 18,
+		added_tip = 1,
+		story_icon = "haman",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5084",
+		visibility = 1,
+		story_id = "HAMAN3",
+		target_id_for_client = 10125,
+		id = 5083,
+		target_num = 20,
+		fix_task = 0,
+		target_id = "10125",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5084] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5075,
+		type = 5,
+		name = "My Sister's Sadness",
+		count_inherit = 0,
+		desc = "Complete 3 Daily Challenges with \nHammann in the fleet.",
+		target_id_2 = "",
+		sub_type = 19,
+		added_tip = 1,
+		story_icon = "haman",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5085",
+		visibility = 1,
+		story_id = "HAMAN4",
+		target_id_for_client = 10125,
+		id = 5084,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "10125",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[5085] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5076,
+		type = 5,
+		name = "My Sister's Determination",
+		count_inherit = 0,
+		desc = "Reach 100 Affinity with Hammann.",
+		target_id_2 = "",
+		sub_type = 1012,
+		added_tip = 1,
+		story_icon = "haman",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5086",
+		visibility = 1,
+		story_id = "HAMAN5",
+		target_id_for_client = 10125,
+		id = 5085,
+		target_num = 10000,
+		fix_task = 0,
+		target_id = "10125",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				5
+			},
+			{
+				2,
+				16002,
+				1
+			}
+		}
+	},
+	[5086] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5077,
+		type = 5,
+		name = "My Sister's Hard Work",
+		count_inherit = 0,
+		desc = "Fully Limit Break Hammann.",
+		target_id_2 = "",
+		sub_type = 35,
+		added_tip = 1,
+		story_icon = "haman",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "5087",
+		visibility = 1,
+		story_id = "HAMAN6",
+		target_id_for_client = 101254,
+		id = 5086,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "101254",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				10
+			},
+			{
+				2,
+				18002,
+				1
+			}
+		}
+	},
+	[5087] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 5078,
+		type = 5,
+		name = "My Sister's Smile",
+		count_inherit = 0,
+		desc = "Get Hammann to Level 100.",
+		target_id_2 = "",
+		sub_type = 1013,
+		added_tip = 1,
+		story_icon = "haman",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "HAMAN7",
+		target_id_for_client = 10125,
+		id = 5087,
+		target_num = 100,
+		fix_task = 0,
+		target_id = "10125",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			},
+			{
+				1,
+				6,
+				10
+			},
+			{
+				2,
+				18002,
+				2
+			}
+		}
+	},
 	[5091] = {
 		is_head = 0,
 		guild_coin_award = 0,
@@ -12535,7 +13047,7 @@ pg.task_data_template = {
 		type = 5,
 		name = "A Date With Honolulu (Part 2)",
 		count_inherit = 0,
-		desc = "Get Honolulu to Level 100.",
+		desc = "Reach level 100 with Honolulu",
 		target_id_2 = "",
 		sub_type = 1013,
 		added_tip = 1,
@@ -12577,7 +13089,7 @@ pg.task_data_template = {
 		type = 5,
 		name = "What is the Rabbit Planet? ",
 		count_inherit = 0,
-		desc = "Submit 3 Torpedo Tempura.",
+		desc = "Submit 3 \"Torpedo Tempura\"",
 		target_id_2 = "",
 		sub_type = 1000,
 		added_tip = 1,
@@ -12643,7 +13155,7 @@ pg.task_data_template = {
 		type = 5,
 		name = "Rabbit Alien Characteristics——\"Effort\"! ",
 		count_inherit = 0,
-		desc = "Claim victory 20 times with Bailey in\nyour fleet. ",
+		desc = "Sortie and obtain 20 victories with \nBailey in the fleet.",
 		target_id_2 = "",
 		sub_type = 18,
 		added_tip = 1,
@@ -12675,7 +13187,7 @@ pg.task_data_template = {
 		type = 5,
 		name = "Rabbit Alien Characteristics——\"Idol\"? ",
 		count_inherit = 0,
-		desc = "Complete 3 daily challenges with\nBailey in your fleet. ",
+		desc = "Complete 3 Daily Challenges with \nBailey in the fleet.",
 		target_id_2 = "",
 		sub_type = 19,
 		added_tip = 1,
@@ -12707,7 +13219,7 @@ pg.task_data_template = {
 		type = 5,
 		name = "Rabbit Alien Characteristics——\"Love\"! ",
 		count_inherit = 0,
-		desc = "Have Bailey’s affinity reach 100. ",
+		desc = "Reach 100 Affinity with Bailey.",
 		target_id_2 = "",
 		sub_type = 1012,
 		added_tip = 1,
@@ -12749,7 +13261,7 @@ pg.task_data_template = {
 		type = 5,
 		name = "Rabbit Alien Has Arrived?! ",
 		count_inherit = 0,
-		desc = "Fully limit break Bailey. ",
+		desc = "Fully Limit Break Bailey.",
 		target_id_2 = "",
 		sub_type = 35,
 		added_tip = 1,
@@ -12791,7 +13303,7 @@ pg.task_data_template = {
 		type = 5,
 		name = "The Real Rabbit Alien ",
 		count_inherit = 0,
-		desc = "Have Bailey reach level 100. ",
+		desc = "Reach level 100 with Bailey",
 		target_id_2 = "",
 		sub_type = 1013,
 		added_tip = 1,
@@ -50691,6 +51203,38 @@ pg.task_data_template = {
 			}
 		}
 	},
+	[14672] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 91192,
+		type = 6,
+		name = "『限界挑战III』-积分任务",
+		count_inherit = 0,
+		desc = "PT",
+		target_id_2 = "",
+		sub_type = 103,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 14672,
+		target_num = 8800,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				14,
+				203,
+				1
+			}
+		}
+	},
 	[14757] = {
 		is_head = 0,
 		guild_coin_award = 0,
@@ -62211,6 +62755,2219 @@ pg.task_data_template = {
 			}
 		}
 	},
+	[15210] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92218,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻1",
+		count_inherit = 0,
+		desc = "Sortie and obtain 10 S-rank victories",
+		target_id_2 = "",
+		sub_type = 24,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15210,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54050,
+				2
+			}
+		}
+	},
+	[15211] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92219,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻2",
+		count_inherit = 0,
+		desc = "Enhance equipment 2 times",
+		target_id_2 = "",
+		sub_type = 40,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15211,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15212] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92220,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻3",
+		count_inherit = 0,
+		desc = "Complete 2 commissions",
+		target_id_2 = "",
+		sub_type = 80,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15212,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				100
+			}
+		}
+	},
+	[15213] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92221,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻4",
+		count_inherit = 0,
+		desc = "Build 2 ships.",
+		target_id_2 = "",
+		sub_type = 30,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15213,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15214] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92222,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻5",
+		count_inherit = 0,
+		desc = "Retire 2 ships.",
+		target_id_2 = "",
+		sub_type = 31,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15214,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54015,
+				5
+			}
+		}
+	},
+	[15215] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92223,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻6",
+		count_inherit = 0,
+		desc = "Complete 3 Daily Challenges.",
+		target_id_2 = "",
+		sub_type = 26,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15215,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15216] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92224,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻7",
+		count_inherit = 0,
+		desc = "Clear 2 main storyline stages on hard\nmode.",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15216,
+		target_num = 2,
+		fix_task = 0,
+		target_id = {
+			10101,
+			10102,
+			10103,
+			10104,
+			10201,
+			10202,
+			10203,
+			10204,
+			10301,
+			10302,
+			10303,
+			10304,
+			10401,
+			10402,
+			10403,
+			10404,
+			10501,
+			10502,
+			10503,
+			10504,
+			10601,
+			10602,
+			10603,
+			10604,
+			10701,
+			10702,
+			10703,
+			10704,
+			10801,
+			10802,
+			10803,
+			10804,
+			10901,
+			10902,
+			10903,
+			10904
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54033,
+				2
+			}
+		}
+	},
+	[15217] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92225,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻8",
+		count_inherit = 0,
+		desc = "Enhance any ship 5 times.",
+		target_id_2 = "",
+		sub_type = 34,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15217,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15218] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92226,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻9",
+		count_inherit = 0,
+		desc = "Sink 20 enemy ships.",
+		target_id_2 = "",
+		sub_type = 11,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15218,
+		target_num = 20,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				50003,
+				5
+			}
+		}
+	},
+	[15219] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92227,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻10",
+		count_inherit = 0,
+		desc = "Replenish dorm supplies 5 times.",
+		target_id_2 = "",
+		sub_type = 61,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15219,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15220] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92228,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻11",
+		count_inherit = 0,
+		desc = "Build 2 ships.",
+		target_id_2 = "",
+		sub_type = 30,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15220,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54006,
+				5
+			}
+		}
+	},
+	[15221] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92229,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻12",
+		count_inherit = 0,
+		desc = "Sortie and obtain 10 S-rank victories",
+		target_id_2 = "",
+		sub_type = 24,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15221,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15222] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92230,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻13",
+		count_inherit = 0,
+		desc = "Destroy 3 enemy flagships.",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15222,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54016,
+				5
+			}
+		}
+	},
+	[15223] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92231,
+		type = 26,
+		name = "七日任务-大潮圣诞皮肤复刻14",
+		count_inherit = 0,
+		desc = "Conduct tactical training twice.",
+		target_id_2 = "",
+		sub_type = 71,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15223,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				7,
+				301641,
+				1
+			}
+		}
+	},
+	[15224] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92233,
+		type = 26,
+		name = "若叶圣诞皮肤1",
+		count_inherit = 0,
+		desc = "Sortie and defeat 3 Boss Fleets.",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15224,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54012,
+				5
+			}
+		}
+	},
+	[15225] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92234,
+		type = 26,
+		name = "若叶圣诞皮肤1",
+		count_inherit = 0,
+		desc = "Log in to the game.",
+		target_id_2 = "",
+		sub_type = 1011,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15225,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15226] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92235,
+		type = 26,
+		name = "若叶圣诞皮肤2",
+		count_inherit = 0,
+		desc = "Complete 3 Daily Challenges.",
+		target_id_2 = "",
+		sub_type = 26,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15226,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54050,
+				2
+			}
+		}
+	},
+	[15227] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92236,
+		type = 26,
+		name = "若叶圣诞皮肤2",
+		count_inherit = 0,
+		desc = "Retire 2 ships.",
+		target_id_2 = "",
+		sub_type = 31,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15227,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15228] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92237,
+		type = 26,
+		name = "若叶圣诞皮肤3",
+		count_inherit = 0,
+		desc = "Conduct tactical training 2 times.",
+		target_id_2 = "",
+		sub_type = 71,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15228,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54022,
+				3
+			}
+		}
+	},
+	[15229] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92238,
+		type = 26,
+		name = "若叶圣诞皮肤3",
+		count_inherit = 0,
+		desc = "Resupply the Dorm with Snacks 5 times.",
+		target_id_2 = "",
+		sub_type = 61,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15229,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15230] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92239,
+		type = 26,
+		name = "若叶圣诞皮肤4",
+		count_inherit = 0,
+		desc = "Defeat 20 enemies.",
+		target_id_2 = "",
+		sub_type = 11,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15230,
+		target_num = 20,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				50004,
+				3
+			}
+		}
+	},
+	[15231] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92240,
+		type = 26,
+		name = "若叶圣诞皮肤4",
+		count_inherit = 0,
+		desc = "Build 2 ships.",
+		target_id_2 = "",
+		sub_type = 30,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15231,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15232] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92241,
+		type = 26,
+		name = "若叶圣诞皮肤5",
+		count_inherit = 0,
+		desc = "Open 1 Tech Box.",
+		target_id_2 = "",
+		sub_type = 50,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15232,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54023,
+				1
+			}
+		}
+	},
+	[15233] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92242,
+		type = 26,
+		name = "若叶圣诞皮肤5",
+		count_inherit = 0,
+		desc = "Enhance ships 5 times.",
+		target_id_2 = "",
+		sub_type = 34,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15233,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15234] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92243,
+		type = 26,
+		name = "若叶圣诞皮肤6",
+		count_inherit = 0,
+		desc = "Complete 2 commissions.",
+		target_id_2 = "",
+		sub_type = 80,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15234,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54003,
+				2
+			}
+		}
+	},
+	[15235] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92244,
+		type = 26,
+		name = "若叶圣诞皮肤6",
+		count_inherit = 0,
+		desc = "Conduct 2 Exercises.",
+		target_id_2 = "",
+		sub_type = 27,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15235,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				1,
+				1,
+				100
+			}
+		}
+	},
+	[15236] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92245,
+		type = 26,
+		name = "若叶圣诞皮肤7",
+		count_inherit = 0,
+		desc = "Enhance gear 2 times.",
+		target_id_2 = "",
+		sub_type = 40,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15236,
+		target_num = 2,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				54024,
+				1
+			}
+		}
+	},
+	[15237] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92246,
+		type = 26,
+		name = "若叶圣诞皮肤7",
+		count_inherit = 0,
+		desc = "Sortie and obtain 10 Perfect victories.",
+		target_id_2 = "",
+		sub_type = 24,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15237,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				7,
+				301231,
+				1
+			}
+		}
+	},
+	[15245] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92255,
+		type = 36,
+		name = "『新日系活动』-日常建造",
+		count_inherit = 0,
+		desc = "Build 3 ships.",
+		target_id_2 = "",
+		sub_type = 30,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15245,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59147,
+				300
+			}
+		}
+	},
+	[15246] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92256,
+		type = 36,
+		name = "『新日系活动』-日常出击",
+		count_inherit = 0,
+		desc = "Sortie and obtain 15 victories.",
+		target_id_2 = "",
+		sub_type = 20,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15246,
+		target_num = 15,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59147,
+				300
+			}
+		}
+	},
+	[15247] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92257,
+		type = 36,
+		name = "『新日系活动』-日常困难本",
+		count_inherit = 0,
+		desc = "Sortie and clear 1 non-event Hard Mode Stage.",
+		target_id_2 = "",
+		sub_type = 21,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15247,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			10101,
+			10102,
+			10103,
+			10104,
+			10201,
+			10202,
+			10203,
+			10204,
+			10301,
+			10302,
+			10303,
+			10304,
+			10401,
+			10402,
+			10403,
+			10404,
+			10501,
+			10502,
+			10503,
+			10504,
+			10601,
+			10602,
+			10603,
+			10604,
+			10701,
+			10702,
+			10703,
+			10704,
+			10801,
+			10802,
+			10803,
+			10804,
+			10901,
+			10902,
+			10903,
+			10904
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59147,
+				150
+			}
+		}
+	},
+	[15248] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92258,
+		type = 6,
+		name = "『新日系活动』通关A1/C1",
+		count_inherit = 0,
+		desc = "Clear A1 or C1.",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15249",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15248,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300001,
+			1300021
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				600
+			},
+			{
+				2,
+				59147,
+				200
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15249] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92259,
+		type = 6,
+		name = "『新日系活动』通关A2/C2",
+		count_inherit = 0,
+		desc = "Clear A2 or C2.",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15250",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15249,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300002,
+			1300022
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				600
+			},
+			{
+				2,
+				59147,
+				400
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15250] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92260,
+		type = 6,
+		name = "『新日系活动』通关A3/C3",
+		count_inherit = 0,
+		desc = "Clear A3 or C3.",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15251",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15250,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300003,
+			1300023
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				2
+			},
+			{
+				1,
+				1,
+				1500
+			},
+			{
+				2,
+				59147,
+				600
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15251] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92261,
+		type = 6,
+		name = "『新日系活动』通关B1/D1",
+		count_inherit = 0,
+		desc = "Clear B1 or D1.",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15252",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15251,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300004,
+			1300024
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				600
+			},
+			{
+				2,
+				59147,
+				400
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15252] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92262,
+		type = 6,
+		name = "『新日系活动』通关B2/D2",
+		count_inherit = 0,
+		desc = "Clear B2 or D2.",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15253",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15252,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300005,
+			1300025
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				1
+			},
+			{
+				1,
+				1,
+				600
+			},
+			{
+				2,
+				59147,
+				600
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15253] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92263,
+		type = 6,
+		name = "『新日系活动』通关B3/D3",
+		count_inherit = 0,
+		desc = "Clear B3 or D3.",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15254",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15253,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300006,
+			1300026
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				2
+			},
+			{
+				1,
+				1,
+				1500
+			},
+			{
+				2,
+				59147,
+				800
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15254] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92264,
+		type = 6,
+		name = "『新日系活动』通关SP",
+		count_inherit = 0,
+		desc = "Clear SP.",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 1300041,
+		id = 15254,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "1300041",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				20001,
+				2
+			},
+			{
+				1,
+				1,
+				1500
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15255] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92265,
+		type = 6,
+		name = "『新日系活动』通关D3",
+		count_inherit = 0,
+		desc = "Clear D3.",
+		target_id_2 = "",
+		sub_type = 1020,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 1300026,
+		id = 15255,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "1300026",
+		open_need = {},
+		award_display = {
+			{
+				5,
+				160,
+				1
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15256] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92266,
+		type = 6,
+		name = "『新日系活动』A1/C1的3星",
+		count_inherit = 0,
+		desc = "Complete A1 or C1 with 3 stars.",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15257",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15256,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300001,
+			1300021
+		},
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				500
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15257] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92267,
+		type = 6,
+		name = "『新日系活动』A2/C2的3星",
+		count_inherit = 0,
+		desc = "Complete A2 or C2 with 3 stars.",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15258",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15257,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300002,
+			1300022
+		},
+		open_need = {},
+		award_display = {
+			{
+				4,
+				100001,
+				1
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15258] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92268,
+		type = 6,
+		name = "『新日系活动』A3/C3的3星",
+		count_inherit = 0,
+		desc = "Complete A3 or C3 with 3 stars.",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15259",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15258,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300003,
+			1300023
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				18023,
+				1
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15259] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92269,
+		type = 6,
+		name = "『新日系活动』B1/D1的3星",
+		count_inherit = 0,
+		desc = "Complete B1 or D1 with 3 stars.",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15260",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15259,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300004,
+			1300024
+		},
+		open_need = {},
+		award_display = {
+			{
+				1,
+				2,
+				500
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15260] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92270,
+		type = 6,
+		name = "『新日系活动』B2/D2的3星",
+		count_inherit = 0,
+		desc = "Complete B2 or D2 with 3 stars.",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "15261",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15260,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300005,
+			1300025
+		},
+		open_need = {},
+		award_display = {
+			{
+				4,
+				100011,
+				1
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15261] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92271,
+		type = 6,
+		name = "『新日系活动』B3/D3的3星",
+		count_inherit = 0,
+		desc = "Complete B3 or D3 with 3 stars.",
+		target_id_2 = "",
+		sub_type = 1021,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 10,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15261,
+		target_num = 1,
+		fix_task = 0,
+		target_id = {
+			1300006,
+			1300026
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				18023,
+				1
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15262] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92272,
+		type = 6,
+		name = "『新日系活动』角色收集：鬼怒",
+		count_inherit = 0,
+		desc = "Fully Limit Break {namecode:181}.",
+		target_id_2 = "",
+		sub_type = 35,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 302084,
+		id = 15262,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "302084",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59146,
+				400
+			}
+		}
+	},
+	[15263] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92273,
+		type = 6,
+		name = "『新日系活动』角色收集：响",
+		count_inherit = 0,
+		desc = "Fully Limit Break {namecode:12}.",
+		target_id_2 = "",
+		sub_type = 35,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 301104,
+		id = 15263,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "301104",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59146,
+				400
+			}
+		}
+	},
+	[15264] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92274,
+		type = 6,
+		name = "『新日系活动』角色收集：霞",
+		count_inherit = 0,
+		desc = "Fully Limit Break {namecode:180}.",
+		target_id_2 = "",
+		sub_type = 35,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 301814,
+		id = 15264,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "301814",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59146,
+				400
+			}
+		}
+	},
+	[15265] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92275,
+		type = 6,
+		name = "『新日系活动』角色收集：龙凤",
+		count_inherit = 0,
+		desc = "Fully Limit Break {namecode:179}.",
+		target_id_2 = "",
+		sub_type = 35,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 306074,
+		id = 15265,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "306074",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59146,
+				600
+			}
+		}
+	},
+	[15266] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92276,
+		type = 6,
+		name = "『新日系活动』角色收集：能代",
+		count_inherit = 0,
+		desc = "Fully Limit Break {namecode:50}.",
+		target_id_2 = "",
+		sub_type = 35,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 302214,
+		id = 15266,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "302214",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59146,
+				600
+			}
+		}
+	},
+	[15267] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92277,
+		type = 6,
+		name = "『新日系活动』角色收集：骏河",
+		count_inherit = 0,
+		desc = "Fully Limit Break {namecode:175}.",
+		target_id_2 = "",
+		sub_type = 35,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 305144,
+		id = 15267,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "305144",
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59146,
+				600
+			}
+		}
+	},
+	[15268] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92278,
+		type = 6,
+		name = "『新日系活动』角色刷关：晓",
+		count_inherit = 0,
+		desc = "Clear A2 or C2 10 times with {namecode:11} at max Limit Break in your fleet. {namecode:11} must not sink in battle.",
+		sub_type = 16,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15268,
+		target_num = 10,
+		fix_task = 0,
+		target_id = {
+			1310113,
+			1310713
+		},
+		target_id_2 = {
+			301094
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59146,
+				100
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15269] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92279,
+		type = 6,
+		name = "『新日系活动』角色刷关：时雨",
+		count_inherit = 0,
+		desc = "Clear A3 or C3 10 times with {namecode:17} at max Limit Break in your fleet. {namecode:17} must not sink in battle.",
+		sub_type = 16,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15269,
+		target_num = 10,
+		fix_task = 0,
+		target_id = {
+			1310213,
+			1310813
+		},
+		target_id_2 = {
+			301154
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59146,
+				200
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15270] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92280,
+		type = 6,
+		name = "『新日系活动』角色刷关：翔鹤",
+		count_inherit = 0,
+		desc = "Clear B2 or D2 10 times with {namecode:95} at max Limit Break in your fleet. {namecode:95} must not sink in battle.",
+		sub_type = 16,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15270,
+		target_num = 10,
+		fix_task = 0,
+		target_id = {
+			1310413,
+			1311013
+		},
+		target_id_2 = {
+			307054
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59146,
+				300
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15271] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 92281,
+		type = 6,
+		name = "『新日系活动』角色刷关：爱宕",
+		count_inherit = 0,
+		desc = "Clear B3 or D3 10 times with {namecode:67} at max Limit Break in your fleet. {namecode:67} must not sink in battle.",
+		sub_type = 16,
+		added_tip = 0,
+		story_icon = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 1,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15271,
+		target_num = 10,
+		fix_task = 0,
+		target_id = {
+			1310513,
+			1311113
+		},
+		target_id_2 = {
+			303124
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59146,
+				300
+			}
+		},
+		scene = {
+			"ACTIVITY_MAP"
+		}
+	},
+	[15272] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 0,
+		type = 26,
+		name = "神社活动掉落1",
+		count_inherit = 0,
+		desc = "Obtain a New Year's Blessing",
+		target_id_2 = "",
+		sub_type = 130,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 59787,
+		id = 15272,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "59787",
+		open_need = {},
+		award_display = {}
+	},
+	[15273] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 0,
+		type = 26,
+		name = "神社活动掉落2",
+		count_inherit = 0,
+		desc = "Obtain a New Year's Blessing",
+		target_id_2 = "",
+		sub_type = 130,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 59787,
+		id = 15273,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "59787",
+		open_need = {},
+		award_display = {}
+	},
+	[15274] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 0,
+		type = 26,
+		name = "神社活动掉落3",
+		count_inherit = 0,
+		desc = "Obtain a New Year's Blessing",
+		target_id_2 = "",
+		sub_type = 130,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 59787,
+		id = 15274,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "59787",
+		open_need = {},
+		award_display = {}
+	},
+	[15275] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 0,
+		type = 26,
+		name = "神社活动掉落4",
+		count_inherit = 0,
+		desc = "Obtain a New Year's Blessing",
+		target_id_2 = "",
+		sub_type = 130,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 59787,
+		id = 15275,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "59787",
+		open_need = {},
+		award_display = {}
+	},
+	[15276] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 0,
+		type = 26,
+		name = "神社活动掉落5",
+		count_inherit = 0,
+		desc = "Obtain a New Year's Blessing",
+		target_id_2 = "",
+		sub_type = 130,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 59787,
+		id = 15276,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "59787",
+		open_need = {},
+		award_display = {}
+	},
+	[15277] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 0,
+		type = 26,
+		name = "神社活动掉落6",
+		count_inherit = 0,
+		desc = "Obtain a New Year's Blessing",
+		target_id_2 = "",
+		sub_type = 130,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 59787,
+		id = 15277,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "59787",
+		open_need = {},
+		award_display = {}
+	},
+	[15278] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 0,
+		type = 26,
+		name = "神社活动掉落7",
+		count_inherit = 0,
+		desc = "Obtain a New Year's Blessing",
+		target_id_2 = "",
+		sub_type = 130,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 59787,
+		id = 15278,
+		target_num = 1,
+		fix_task = 0,
+		target_id = "59787",
+		open_need = {},
+		award_display = {}
+	},
+	[15279] = {
+		is_head = 0,
+		guild_coin_award = 0,
+		award = 92336,
+		type = 26,
+		name = "祝福与贺年状最终掉落",
+		count_inherit = 0,
+		desc = "Obtain 7 New Year's Blessings",
+		target_id_2 = "",
+		sub_type = 90,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 1,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 15279,
+		target_num = 7,
+		fix_task = 0,
+		target_id = {
+			15272,
+			15273,
+			15274,
+			15275,
+			15276,
+			15277,
+			15278
+		},
+		open_need = {},
+		award_display = {
+			{
+				2,
+				59939,
+				1
+			}
+		}
+	},
 	[31013] = {
 		is_head = 1,
 		guild_coin_award = 0,
@@ -66343,6 +69100,1952 @@ The first draft of the design is complete.<color=#797979>In order to verify to w
 		open_need = {},
 		award_display = {}
 	},
+	[60071] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 9,
+		name = "",
+		count_inherit = 0,
+		desc = "",
+		target_id_2 = "",
+		sub_type = 1050,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60071,
+		target_num = 760,
+		fix_task = 0,
+		target_id = "1",
+		open_need = {},
+		award_display = {}
+	},
+	[60072] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Sufficient data must be obtained in order to ensure that research and development proceed smoothly. The most effective source of data is, without a doubt, from live combat.</color>\n\n — Sortie and accumulate <color=#92fc63>1,000,000</color> EXP using Eagle Union Vanguard ships.",
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60072,
+		target_num = 1000000,
+		fix_task = 0,
+		target_id = {
+			{
+				1,
+				1
+			},
+			{
+				1,
+				2
+			},
+			{
+				1,
+				3
+			},
+			{
+				1,
+				18
+			}
+		},
+		open_need = {},
+		award_display = {}
+	},
+	[60073] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Additional investment is required to assess the feasibility of new hypotheses. If we can apply the results of our data collection to cutting-edge technological research, we could make significant developmental progress. </color>\n\n — Complete <color=#92fc63>5</color> Research Projects in the Tech Academy.",
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60073,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {}
+	},
+	[60074] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Through a combination of the combat data and cutting-edge theoretical engineering, development has finally advanced to the drawing board stage. However, to work out the design's finer details, we must thoroughly compare it to existing blueprints.</color>\n\n — Gather <color=#92fc63>10</color> T2 Cruiser Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18012,
+		id = 60074,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "18012",
+		open_need = {},
+		award_display = {}
+	},
+	[60075] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Combat Data Collection Ⅰ must be completed first.</color>
+<color=#a2a2a2>The first draft of the design is complete. In order to verify the extent to which the design's specifications can be realized, more combat data is needed.</color>
+
+ — Sortie and accumulate <color=#92fc63>2,000,000</color> EXP using Eagle Union Vanguard ships.]],
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60075,
+		target_num = 2000000,
+		fix_task = 0,
+		target_id = {
+			{
+				1,
+				1
+			},
+			{
+				1,
+				2
+			},
+			{
+				1,
+				3
+			},
+			{
+				1,
+				18
+			}
+		},
+		open_need = {
+			60072
+		},
+		award_display = {}
+	},
+	[60076] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Theoretical Engineering Research Ⅰ must be completed first.</color>
+<color=#a2a2a2>Next, the basic design must be revised, improved, and optimized. This is a perfect chance to implement the ideas we weren't able to during the initial stages.</color>
+
+ — Complete <color=#92fc63>8</color> Research Projects in the Tech Academy.]],
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60076,
+		target_num = 8,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {
+			60073
+		},
+		award_display = {}
+	},
+	[60077] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>At long last, through a combination of theoretical engineering, combat data, solid design, and revolutionary ideas, the Priority ship's design is approaching completion. We are hoping to fix some remaining problems to achieve the best performance possible.</color>\n\n — Gather <color=#92fc63>5</color> T3 Cruiser Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18013,
+		id = 60077,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "18013",
+		open_need = {},
+		award_display = {}
+	},
+	[60078] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>20,000</color> Coins (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1002,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 1,
+		id = 60078,
+		target_num = 20000,
+		fix_task = 0,
+		target_id = "1",
+		open_need = {},
+		award_display = {}
+	},
+	[60079] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>5</color> Wisdom Cubes (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 20001,
+		id = 60079,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "20001",
+		open_need = {},
+		award_display = {}
+	},
+	[60081] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 9,
+		name = "",
+		count_inherit = 0,
+		desc = "",
+		target_id_2 = "",
+		sub_type = 1050,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60081,
+		target_num = 810,
+		fix_task = 0,
+		target_id = "1",
+		open_need = {},
+		award_display = {}
+	},
+	[60082] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Sufficient data must be obtained in order to ensure that research and development proceed smoothly. The most effective source of data is, without a doubt, from live combat.</color>\n\n — Sortie and accumulate <color=#92fc63>1,000,000</color> EXP using Eagle Union Main Fleet ships.",
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60082,
+		target_num = 1000000,
+		fix_task = 0,
+		target_id = {
+			{
+				1,
+				4
+			},
+			{
+				1,
+				5
+			},
+			{
+				1,
+				6
+			},
+			{
+				1,
+				7
+			},
+			{
+				1,
+				9
+			},
+			{
+				1,
+				10
+			},
+			{
+				1,
+				12
+			},
+			{
+				1,
+				13
+			}
+		},
+		open_need = {},
+		award_display = {}
+	},
+	[60083] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Additional investment is required to assess the feasibility of new hypotheses. If we can apply the results of our data collection to cutting-edge technological research, we could make significant developmental progress. </color>\n\n — Complete <color=#92fc63>5</color> Research Projects in the Tech Academy.",
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60083,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {}
+	},
+	[60084] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Through a combination of the combat data and cutting-edge theoretical engineering, development has finally advanced to the drawing board stage. However, to work out the design's finer details, we must thoroughly compare it to existing blueprints.</color>\n\n — Gather <color=#92fc63>10</color> T2 Battleship Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18022,
+		id = 60084,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "18022",
+		open_need = {},
+		award_display = {}
+	},
+	[60085] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Combat Data Collection Ⅰ must be completed first.</color>
+<color=#a2a2a2>The first draft of the design is complete. In order to verify the extent to which the design's specifications can be realized, more combat data is needed.</color>
+
+ — Sortie and accumulate <color=#92fc63>2,000,000</color> EXP using Eagle Union Main Fleet ships.]],
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60085,
+		target_num = 2000000,
+		fix_task = 0,
+		target_id = {
+			{
+				1,
+				4
+			},
+			{
+				1,
+				5
+			},
+			{
+				1,
+				6
+			},
+			{
+				1,
+				7
+			},
+			{
+				1,
+				9
+			},
+			{
+				1,
+				10
+			},
+			{
+				1,
+				12
+			},
+			{
+				1,
+				13
+			}
+		},
+		open_need = {
+			60082
+		},
+		award_display = {}
+	},
+	[60086] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Theoretical Engineering Research Ⅰ must be completed first.</color>
+<color=#a2a2a2>Next, the basic design must be revised, improved, and optimized. This is a perfect chance to implement the ideas we weren't able to during the initial stages.</color>
+
+ — Complete <color=#92fc63>8</color> Research Projects in the Tech Academy.]],
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60086,
+		target_num = 8,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {
+			60083
+		},
+		award_display = {}
+	},
+	[60087] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>At long last, through a combination of theoretical engineering, combat data, solid design, and revolutionary ideas, the Priority ship's design is approaching completion. We are hoping to fix some remaining problems to achieve the best performance possible.</color>\n\n — Gather <color=#92fc63>5</color> T3 Battleship Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18023,
+		id = 60087,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "18023",
+		open_need = {},
+		award_display = {}
+	},
+	[60088] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>30,000</color> Coins (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1002,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 1,
+		id = 60088,
+		target_num = 30000,
+		fix_task = 0,
+		target_id = "1",
+		open_need = {},
+		award_display = {}
+	},
+	[60089] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>5</color> Wisdom Cubes (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 20001,
+		id = 60089,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "20001",
+		open_need = {},
+		award_display = {}
+	},
+	[60091] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 9,
+		name = "",
+		count_inherit = 0,
+		desc = "",
+		target_id_2 = "",
+		sub_type = 1050,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60091,
+		target_num = 780,
+		fix_task = 0,
+		target_id = "3",
+		open_need = {},
+		award_display = {}
+	},
+	[60092] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Sufficient data must be obtained in order to ensure that research and development proceed smoothly. The most effective source of data is, without a doubt, from live combat.</color>\n\n — Sortie and accumulate <color=#92fc63>1,000,000</color> EXP using Sakura Empire Vanguard ships.",
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60092,
+		target_num = 1000000,
+		fix_task = 0,
+		target_id = {
+			{
+				3,
+				1
+			},
+			{
+				3,
+				2
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				18
+			}
+		},
+		open_need = {},
+		award_display = {}
+	},
+	[60093] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Additional investment is required to assess the feasibility of new hypotheses. If we can apply the results of our data collection to cutting-edge technological research, we could make significant developmental progress. </color>\n\n — Complete <color=#92fc63>5</color> Research Projects in the Tech Academy.",
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60093,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {}
+	},
+	[60094] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Through a combination of the combat data and cutting-edge theoretical engineering, development has finally advanced to the drawing board stage. However, to work out the design's finer details, we must thoroughly compare it to existing blueprints.</color>\n\n — Gather <color=#92fc63>10</color> T2 Destroyer Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18002,
+		id = 60094,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "18002",
+		open_need = {},
+		award_display = {}
+	},
+	[60095] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Combat Data Collection Ⅰ must be completed first.</color>
+<color=#a2a2a2>The first draft of the design is complete. In order to verify the extent to which the design's specifications can be realized, more combat data is needed.</color>
+
+ — Sortie and accumulate <color=#92fc63>2,000,000</color> EXP using Sakura Empire Vanguard ships.]],
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60095,
+		target_num = 2000000,
+		fix_task = 0,
+		target_id = {
+			{
+				3,
+				1
+			},
+			{
+				3,
+				2
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				18
+			}
+		},
+		open_need = {
+			60092
+		},
+		award_display = {}
+	},
+	[60096] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Theoretical Engineering Research Ⅰ must be completed first.</color>
+<color=#a2a2a2>Next, the basic design must be revised, improved, and optimized. This is a perfect chance to implement the ideas we weren't able to during the initial stages.</color>
+
+ — Complete <color=#92fc63>8</color> Research Projects in the Tech Academy.]],
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60096,
+		target_num = 8,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {
+			60093
+		},
+		award_display = {}
+	},
+	[60097] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>At long last, through a combination of theoretical engineering, combat data, solid design, and revolutionary ideas, the Priority ship's design is approaching completion. We are hoping to fix some remaining problems to achieve the best performance possible.</color>\n\n — Gather <color=#92fc63>5</color> T3 Destroyer Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18003,
+		id = 60097,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "18003",
+		open_need = {},
+		award_display = {}
+	},
+	[60098] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>20,000</color> Coins (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1002,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 1,
+		id = 60098,
+		target_num = 20000,
+		fix_task = 0,
+		target_id = "1",
+		open_need = {},
+		award_display = {}
+	},
+	[60099] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>5</color> Wisdom Cubes (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 20001,
+		id = 60099,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "20001",
+		open_need = {},
+		award_display = {}
+	},
+	[60101] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 9,
+		name = "",
+		count_inherit = 0,
+		desc = "",
+		target_id_2 = "",
+		sub_type = 1050,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60101,
+		target_num = 900,
+		fix_task = 0,
+		target_id = "3",
+		open_need = {},
+		award_display = {}
+	},
+	[60102] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Sufficient data must be obtained in order to ensure that research and development proceed smoothly. The most effective source of data is, without a doubt, from live combat.</color>\n\n — Sortie and accumulate <color=#92fc63>1,200,000</color> EXP using Sakura Empire Main Fleet ships.",
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60102,
+		target_num = 1200000,
+		fix_task = 0,
+		target_id = {
+			{
+				3,
+				4
+			},
+			{
+				3,
+				5
+			},
+			{
+				3,
+				6
+			},
+			{
+				3,
+				7
+			},
+			{
+				3,
+				9
+			},
+			{
+				3,
+				10
+			},
+			{
+				3,
+				12
+			},
+			{
+				3,
+				13
+			}
+		},
+		open_need = {},
+		award_display = {}
+	},
+	[60103] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Additional investment is required to assess the feasibility of new hypotheses. If we can apply the results of our data collection to cutting-edge technological research, we could make significant developmental progress. </color>\n\n — Complete <color=#92fc63>8</color> Research Projects in the Tech Academy.",
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60103,
+		target_num = 8,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {}
+	},
+	[60104] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Through a combination of the combat data and cutting-edge theoretical engineering, development has finally advanced to the drawing board stage. However, to work out the design's finer details, we must thoroughly compare it to existing blueprints.</color>\n\n — Gather <color=#92fc63>3</color> T3 Battleship Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18023,
+		id = 60104,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "18023",
+		open_need = {},
+		award_display = {}
+	},
+	[60105] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Combat Data Collection Ⅰ must be completed first.</color>
+<color=#a2a2a2>The first draft of the design is complete. In order to verify the extent to which the design's specifications can be realized, more combat data is needed.</color>
+
+ — Sortie and accumulate <color=#92fc63>2,400,000</color> EXP using Sakura Empire Vanguard ships.]],
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60105,
+		target_num = 2400000,
+		fix_task = 0,
+		target_id = {
+			{
+				3,
+				1
+			},
+			{
+				3,
+				2
+			},
+			{
+				3,
+				3
+			},
+			{
+				3,
+				18
+			}
+		},
+		open_need = {
+			60102
+		},
+		award_display = {}
+	},
+	[60106] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Theoretical Engineering Research Ⅰ must be completed first.</color>
+<color=#a2a2a2>Next, the basic design must be revised, improved, and optimized. This is a perfect chance to implement the ideas we weren't able to during the initial stages.</color>
+
+ — Complete <color=#92fc63>12</color> Research Projects in the Tech Academy.]],
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60106,
+		target_num = 12,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {
+			60103
+		},
+		award_display = {}
+	},
+	[60107] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>At long last, through a combination of theoretical engineering, combat data, solid design, and revolutionary ideas, the Priority ship's design is approaching completion. We are hoping to fix some remaining problems to achieve the best performance possible.</color>\n\n — Gather <color=#92fc63>8</color> T3 Cruiser Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18013,
+		id = 60107,
+		target_num = 8,
+		fix_task = 0,
+		target_id = "18013",
+		open_need = {},
+		award_display = {}
+	},
+	[60108] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>50,000</color> Coins (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1002,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 1,
+		id = 60108,
+		target_num = 50000,
+		fix_task = 0,
+		target_id = "1",
+		open_need = {},
+		award_display = {}
+	},
+	[60109] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>10</color> Wisdom Cubes (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 20001,
+		id = 60109,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "20001",
+		open_need = {},
+		award_display = {}
+	},
+	[60111] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 9,
+		name = "",
+		count_inherit = 0,
+		desc = "",
+		target_id_2 = "",
+		sub_type = 1050,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60111,
+		target_num = 630,
+		fix_task = 0,
+		target_id = "4",
+		open_need = {},
+		award_display = {}
+	},
+	[60112] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Sufficient data must be obtained in order to ensure that research and development proceed smoothly. The most effective source of data is, without a doubt, from live combat.</color>\n\n — Sortie and accumulate <color=#92fc63>1,200,000</color> EXP using Iron Blood Main Fleet ships.",
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60112,
+		target_num = 1200000,
+		fix_task = 0,
+		target_id = {
+			{
+				4,
+				4
+			},
+			{
+				4,
+				5
+			},
+			{
+				4,
+				6
+			},
+			{
+				4,
+				7
+			},
+			{
+				4,
+				9
+			},
+			{
+				4,
+				10
+			},
+			{
+				4,
+				12
+			},
+			{
+				4,
+				13
+			}
+		},
+		open_need = {},
+		award_display = {}
+	},
+	[60113] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Additional investment is required to assess the feasibility of new hypotheses. If we can apply the results of our data collection to cutting-edge technological research, we could make significant developmental progress. </color>\n\n — Complete <color=#92fc63>8</color> Research Projects in the Tech Academy.",
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60113,
+		target_num = 8,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {}
+	},
+	[60114] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Through a combination of the combat data and cutting-edge theoretical engineering, development has finally advanced to the drawing board stage. However, to work out the design's finer details, we must thoroughly compare it to existing blueprints.</color>\n\n — Gather <color=#92fc63>3</color> T3 Battleship Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18023,
+		id = 60114,
+		target_num = 3,
+		fix_task = 0,
+		target_id = "18023",
+		open_need = {},
+		award_display = {}
+	},
+	[60115] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Combat Data Collection Ⅰ must be completed first.</color>
+<color=#a2a2a2>The first draft of the design is complete. In order to verify the extent to which the design's specifications can be realized, more combat data is needed.</color>
+
+ — Sortie and accumulate <color=#92fc63>2,400,000</color> EXP using Iron Blood Main Fleet ships.]],
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60115,
+		target_num = 2400000,
+		fix_task = 0,
+		target_id = {
+			{
+				4,
+				4
+			},
+			{
+				4,
+				5
+			},
+			{
+				4,
+				6
+			},
+			{
+				4,
+				7
+			},
+			{
+				4,
+				9
+			},
+			{
+				4,
+				10
+			},
+			{
+				4,
+				12
+			},
+			{
+				4,
+				13
+			}
+		},
+		open_need = {
+			60112
+		},
+		award_display = {}
+	},
+	[60116] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Theoretical Engineering Research Ⅰ must be completed first.</color>
+<color=#a2a2a2>Next, the basic design must be revised, improved, and optimized. This is a perfect chance to implement the ideas we weren't able to during the initial stages.</color>
+
+ — Complete <color=#92fc63>12</color> Research Projects in the Tech Academy.]],
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60116,
+		target_num = 12,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {
+			60113
+		},
+		award_display = {}
+	},
+	[60117] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>At long last, through a combination of theoretical engineering, combat data, solid design, and revolutionary ideas, the Priority ship's design is approaching completion. We are hoping to fix some remaining problems to achieve the best performance possible.</color>\n\n — Gather <color=#92fc63>8</color> T3 Battleship Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18023,
+		id = 60117,
+		target_num = 8,
+		fix_task = 0,
+		target_id = "18023",
+		open_need = {},
+		award_display = {}
+	},
+	[60118] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>60,000</color> Coins (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1002,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 1,
+		id = 60118,
+		target_num = 60000,
+		fix_task = 0,
+		target_id = "1",
+		open_need = {},
+		award_display = {}
+	},
+	[60119] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>10</color> Wisdom Cubes (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 20001,
+		id = 60119,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "20001",
+		open_need = {},
+		award_display = {}
+	},
+	[60120] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 9,
+		name = "",
+		count_inherit = 0,
+		desc = "",
+		target_id_2 = "",
+		sub_type = 1050,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60120,
+		target_num = 760,
+		fix_task = 0,
+		target_id = "1",
+		open_need = {},
+		award_display = {}
+	},
+	[60121] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 9,
+		name = "",
+		count_inherit = 0,
+		desc = "",
+		target_id_2 = "",
+		sub_type = 1050,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60121,
+		target_num = 420,
+		fix_task = 0,
+		target_id = "4",
+		open_need = {},
+		award_display = {}
+	},
+	[60122] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Sufficient data must be obtained in order to ensure that research and development proceed smoothly. The most effective source of data is, without a doubt, from live combat.</color>\n\n — Sortie and accumulate <color=#92fc63>1,000,000</color> EXP using Iron Blood, Vichya Dominion, or Iris Libre Main Fleet ships. (EXP from any combination of Main Fleet ships from these factions will count.)",
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60122,
+		target_num = 1000000,
+		fix_task = 0,
+		target_id = {
+			{
+				4,
+				4
+			},
+			{
+				4,
+				5
+			},
+			{
+				4,
+				6
+			},
+			{
+				4,
+				7
+			},
+			{
+				4,
+				9
+			},
+			{
+				4,
+				10
+			},
+			{
+				4,
+				12
+			},
+			{
+				4,
+				13
+			},
+			{
+				8,
+				4
+			},
+			{
+				8,
+				5
+			},
+			{
+				8,
+				6
+			},
+			{
+				8,
+				7
+			},
+			{
+				8,
+				9
+			},
+			{
+				8,
+				10
+			},
+			{
+				8,
+				12
+			},
+			{
+				8,
+				13
+			},
+			{
+				9,
+				4
+			},
+			{
+				9,
+				5
+			},
+			{
+				9,
+				6
+			},
+			{
+				9,
+				7
+			},
+			{
+				9,
+				9
+			},
+			{
+				9,
+				10
+			},
+			{
+				9,
+				12
+			},
+			{
+				9,
+				13
+			}
+		},
+		open_need = {},
+		award_display = {}
+	},
+	[60123] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Additional investment is required to assess the feasibility of new hypotheses. If we can apply the results of our data collection to cutting-edge technological research, we could make significant developmental progress. </color>\n\n — Complete <color=#92fc63>5</color> Research Projects in the Tech Academy.",
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60123,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {},
+		award_display = {}
+	},
+	[60124] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>Through a combination of the combat data and cutting-edge theoretical engineering, development has finally advanced to the drawing board stage. However, to work out the design's finer details, we must thoroughly compare it to existing blueprints.</color>\n\n — Gather <color=#92fc63>10</color> T2 Battleship Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18022,
+		id = 60124,
+		target_num = 10,
+		fix_task = 0,
+		target_id = "18022",
+		open_need = {},
+		award_display = {}
+	},
+	[60125] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Combat Data Collection Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Combat Data Collection Ⅰ must be completed first.</color>
+<color=#a2a2a2>The first draft of the design is complete. In order to verify the extent to which the design's specifications can be realized, more combat data is needed.</color>
+
+ — Sortie and accumulate <color=#92fc63>2,000,000</color> EXP using Iron Blood, Vichya Dominion, or Iris Libre Main Fleet ships. (EXP from any combination of Main Fleet ships from these factions will count.)]],
+		target_id_2 = "",
+		sub_type = 1041,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60125,
+		target_num = 2000000,
+		fix_task = 0,
+		target_id = {
+			{
+				4,
+				4
+			},
+			{
+				4,
+				5
+			},
+			{
+				4,
+				6
+			},
+			{
+				4,
+				7
+			},
+			{
+				4,
+				9
+			},
+			{
+				4,
+				10
+			},
+			{
+				4,
+				12
+			},
+			{
+				4,
+				13
+			},
+			{
+				8,
+				4
+			},
+			{
+				8,
+				5
+			},
+			{
+				8,
+				6
+			},
+			{
+				8,
+				7
+			},
+			{
+				8,
+				9
+			},
+			{
+				8,
+				10
+			},
+			{
+				8,
+				12
+			},
+			{
+				8,
+				13
+			},
+			{
+				9,
+				4
+			},
+			{
+				9,
+				5
+			},
+			{
+				9,
+				6
+			},
+			{
+				9,
+				7
+			},
+			{
+				9,
+				9
+			},
+			{
+				9,
+				10
+			},
+			{
+				9,
+				12
+			},
+			{
+				9,
+				13
+			}
+		},
+		open_need = {
+			60122
+		},
+		award_display = {}
+	},
+	[60126] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Theoretical Engineering Research Ⅱ",
+		count_inherit = 0,
+		desc = [[
+<color=#92fc63>Theoretical Engineering Research Ⅰ must be completed first.</color>
+<color=#a2a2a2>Next, the basic design must be revised, improved, and optimized. This is a perfect chance to implement the ideas we weren't able to during the initial stages.</color>
+
+ — Complete <color=#92fc63>8</color> Research Projects in the Tech Academy.]],
+		target_id_2 = "",
+		sub_type = 110,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 0,
+		id = 60126,
+		target_num = 8,
+		fix_task = 0,
+		target_id = "0",
+		open_need = {
+			60123
+		},
+		award_display = {}
+	},
+	[60127] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Design Breakthrough Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>At long last, through a combination of theoretical engineering, combat data, solid design, and revolutionary ideas, the Priority ship's design is approaching completion. We are hoping to fix some remaining problems to achieve the best performance possible.</color>\n\n — Gather <color=#92fc63>5</color> T3 Battleship Retrofit Blueprints (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 18023,
+		id = 60127,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "18023",
+		open_need = {},
+		award_display = {}
+	},
+	[60128] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅰ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>30,000</color> Coins (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1002,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 1,
+		id = 60128,
+		target_num = 30000,
+		fix_task = 0,
+		target_id = "1",
+		open_need = {},
+		award_display = {}
+	},
+	[60129] = {
+		is_head = 1,
+		guild_coin_award = 0,
+		award = 0,
+		type = 8,
+		name = "Hull Construction Ⅱ",
+		count_inherit = 0,
+		desc = "<color=#a2a2a2>The long and arduous design process has finally come to an end. All that remains now is the hull's construction. Oh, and the christening, of course!</color>\n\n — Gather <color=#92fc63>5</color> Wisdom Cubes (tapping \"Complete\" will use up these resources.)",
+		target_id_2 = "",
+		sub_type = 1000,
+		added_tip = 0,
+		story_icon = "",
+		scene = "",
+		award_choice = "",
+		level = 30,
+		next_task = "0",
+		visibility = 0,
+		story_id = "",
+		target_id_for_client = 20001,
+		id = 60129,
+		target_num = 5,
+		fix_task = 0,
+		target_id = "20001",
+		open_need = {},
+		award_display = {}
+	},
 	[99901] = {
 		is_head = 0,
 		guild_coin_award = 0,
@@ -68781,6 +73484,20 @@ The first draft of the design is complete.<color=#797979>In order to verify to w
 		5065,
 		5066,
 		5067,
+		5071,
+		5072,
+		5073,
+		5074,
+		5075,
+		5076,
+		5077,
+		5081,
+		5082,
+		5083,
+		5084,
+		5085,
+		5086,
+		5087,
 		5091,
 		5092,
 		5093,
@@ -69990,6 +74707,7 @@ The first draft of the design is complete.<color=#797979>In order to verify to w
 		14658,
 		14670,
 		14671,
+		14672,
 		14757,
 		14758,
 		14759,
@@ -70275,6 +74993,69 @@ The first draft of the design is complete.<color=#797979>In order to verify to w
 		15207,
 		15208,
 		15209,
+		15210,
+		15211,
+		15212,
+		15213,
+		15214,
+		15215,
+		15216,
+		15217,
+		15218,
+		15219,
+		15220,
+		15221,
+		15222,
+		15223,
+		15224,
+		15225,
+		15226,
+		15227,
+		15228,
+		15229,
+		15230,
+		15231,
+		15232,
+		15233,
+		15234,
+		15235,
+		15236,
+		15237,
+		15245,
+		15246,
+		15247,
+		15248,
+		15249,
+		15250,
+		15251,
+		15252,
+		15253,
+		15254,
+		15255,
+		15256,
+		15257,
+		15258,
+		15259,
+		15260,
+		15261,
+		15262,
+		15263,
+		15264,
+		15265,
+		15266,
+		15267,
+		15268,
+		15269,
+		15270,
+		15271,
+		15272,
+		15273,
+		15274,
+		15275,
+		15276,
+		15277,
+		15278,
+		15279,
 		31013,
 		31014,
 		31015,
@@ -70399,6 +75180,61 @@ The first draft of the design is complete.<color=#797979>In order to verify to w
 		60067,
 		60068,
 		60069,
+		60071,
+		60072,
+		60073,
+		60074,
+		60075,
+		60076,
+		60077,
+		60078,
+		60079,
+		60081,
+		60082,
+		60083,
+		60084,
+		60085,
+		60086,
+		60087,
+		60088,
+		60089,
+		60091,
+		60092,
+		60093,
+		60094,
+		60095,
+		60096,
+		60097,
+		60098,
+		60099,
+		60101,
+		60102,
+		60103,
+		60104,
+		60105,
+		60106,
+		60107,
+		60108,
+		60109,
+		60111,
+		60112,
+		60113,
+		60114,
+		60115,
+		60116,
+		60117,
+		60118,
+		60119,
+		60120,
+		60121,
+		60122,
+		60123,
+		60124,
+		60125,
+		60126,
+		60127,
+		60128,
+		60129,
 		99901,
 		99902,
 		99903,

@@ -293,7 +293,7 @@ slot0.isOverTime = function (slot0)
 		return _.all(slot0:getConfig("ids"), function (slot0)
 			return not Furniture.New({
 				id = slot0
-			}):inTime()
+			}):IsShopType() or not slot1:inTime()
 		end)
 	end
 end
@@ -318,6 +318,14 @@ slot0.isMatchSearchKey = function (slot0, slot1)
 	end
 
 	return false
+end
+
+slot0.GetDisCount = function (slot0)
+	if not pg.TimeMgr.GetInstance():inTime(slot0:getConfig("discount_time")) then
+		return 0
+	end
+
+	return slot0:getConfig("discount")
 end
 
 return slot0

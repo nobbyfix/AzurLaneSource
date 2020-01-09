@@ -59,11 +59,6 @@ slot2.Settle = function (slot0)
 end
 
 slot2.frequentlySettle = function (slot0)
-	slot0.SortCldObjList(slot0._cldObjList)
-	slot0._cldComponent:GetCldData().func(slot0._cldObjList)
-end
-
-slot2.frequentlySettle = function (slot0)
 	slot1 = {}
 
 	for slot5, slot6 in ipairs(slot0._cldObjList) do

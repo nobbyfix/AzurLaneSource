@@ -844,14 +844,33 @@ function slot7(slot0)
 		slot2 = slot2.shipBluePrintVO
 
 		if not slot2 then
-			slot0.version = (slot1[1] <= 4 and 1) or 2
-			slot3 = slot0
-			slot2 = slot0.emit
-			slot4 = ShipBluePrintMediator
-			slot4 = slot4.SET_TECHNOLOGY_VERSION
-			slot5 = slot0.version
+			slot2 = getProxy
+			slot3 = TechnologyProxy
+			slot2 = slot2(slot3)
+			slot3 = slot2
+			slot2 = slot2.getConfigMaxVersion
+			slot2 = slot2(slot3)
+			slot3 = 1
+			slot4 = slot2
+			slot5 = 1
 
-			slot2(slot3, slot4, slot5)
+			for slot6 = slot3, slot4, slot5 do
+				slot0.version = slot6
+				slot7 = slot1[slot6]
+				slot8 = 4
+
+				if slot7 <= slot8 then
+					break
+				end
+			end
+
+			slot4 = slot0
+			slot3 = slot0.emit
+			slot5 = ShipBluePrintMediator
+			slot5 = slot5.SET_TECHNOLOGY_VERSION
+			slot6 = slot0.version
+
+			slot3(slot4, slot5, slot6)
 		end
 	end
 
@@ -2116,8 +2135,6 @@ function slot8(slot0)
 		slot1(slot2, slot3, slot4)
 	end
 
-	slot1 = 1
-	slot0.version = slot1
 	slot1 = {}
 	slot0.filterBlueprintVOs = slot1
 	slot1 = 0
@@ -12813,7 +12830,10 @@ function slot10(slot0)
 
 	-- Decompilation error in this vicinity:
 	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = {}
+	slot1 = {
+		nil,
+		"FANGAN3"
+	}
 	slot2 = slot0.storyMgr
 
 	if not slot2 then

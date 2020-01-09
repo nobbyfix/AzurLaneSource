@@ -265,6 +265,14 @@ slot0.isMaxFateLevel = function (slot0)
 	return slot0.fateLevel == slot0:getMaxFateLevel()
 end
 
+slot0.isMaxIntensifyLevel = function (slot0)
+	if #slot0:getConfig("fate_strengthen") > 0 then
+		return slot0:isMaxFateLevel()
+	else
+		return slot0:isMaxLevel()
+	end
+end
+
 slot0.getBluePrintAddition = function (slot0, slot1)
 	if slot0:getConfig("attr_exp")[table.indexof(ShipModAttr.BLUEPRINT_ATTRS, slot1)] then
 		slot4 = 0

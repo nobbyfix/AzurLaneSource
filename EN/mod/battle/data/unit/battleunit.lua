@@ -957,7 +957,7 @@ end
 
 slot9.DispatchChat = function (slot0, slot1, slot2, slot3)
 	slot0:DispatchEvent(slot0.Event.New(slot1.POP_UP, {
-		content = slot1,
+		content = HXSet.hxLan(slot1),
 		duration = slot2,
 		key = slot3
 	}))
@@ -1133,6 +1133,7 @@ slot9.Clear = function (slot0)
 end
 
 slot9.Dispose = function (slot0)
+	slot0._exposedList = nil
 	slot0._phaseSwitcher = nil
 
 	slot0._weaponQueue:Dispose()
@@ -1319,6 +1320,49 @@ end
 
 slot9.GetAntiSubState = function (slot0)
 	return slot0._antiSubVigilanceState
+end
+
+slot9.SetBlindInvisible = function (slot0, slot1)
+	slot0._exposedList = (slot1 and {}) or nil
+	slot0._blindInvisible = slot1
+
+	slot0:DispatchEvent(slot0.Event.New(slot1.BLIND_VISIBLE))
+end
+
+slot9.GetBlindInvisible = function (slot0)
+	return slot0._blindInvisible
+end
+
+slot9.GetExposed = function (slot0)
+	if not slot0._blindInvisible then
+		return true
+	end
+
+	for slot4, slot5 in pairs(slot0._exposedList) do
+		return true
+	end
+end
+
+slot9.AppendExposed = function (slot0, slot1)
+	if not slot0._blindInvisible then
+		return
+	end
+
+	slot0._exposedList[slot1] = true
+
+	if not slot0._exposedList[slot1] then
+		slot0:DispatchEvent(slot0.Event.New(slot1.BLIND_EXPOSE))
+	end
+end
+
+slot9.RemoveExposed = function (slot0, slot1)
+	if not slot0._blindInvisible then
+		return
+	end
+
+	slot0._exposedList[slot1] = nil
+
+	slot0:DispatchEvent(slot0.Event.New(slot1.BLIND_EXPOSE))
 end
 
 return

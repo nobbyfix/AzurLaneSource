@@ -97,15 +97,21 @@ slot0.initResDownloadPanel = function (slot0, slot1)
 	slot0.repairBtn = slot0:findTF("main/resources/main_panel/settings/buttons/repair")
 	slot0.repairProgress = slot0.repairBtn:Find("progress")
 
-	setActive(slot0.repairBtn, PathMgr.FileExists(slot5))
-	onButton(slot0, slot0.repairBtn, function ()
-		pg.MsgboxMgr.GetInstance():ShowMsgBox({
-			content = i18n("resource_verify_warn"),
-			onYes = function ()
-				resourceVerify(slot0.repairMask, slot0.repairProgress)
-			end
-		})
-	end, SFX_PANEL)
+	if CSharpVersion >= 35 then
+		onButton(slot0, slot0.repairBtn, function ()
+			showRepairMsgbox()
+		end, SFX_PANEL)
+	else
+		setActive(slot0.repairBtn, PathMgr.FileExists(slot5))
+		onButton(slot0, slot0.repairBtn, function ()
+			pg.MsgboxMgr.GetInstance():ShowMsgBox({
+				content = i18n("resource_verify_warn"),
+				onYes = function ()
+					resourceVerify(slot0.repairMask, slot0.repairProgress)
+				end
+			})
+		end, SFX_PANEL)
+	end
 end
 
 slot0.initSoundPanel = function (slot0, slot1)
@@ -717,6 +723,15 @@ slot0.initOtherPanel = function (slot0)
 		slot0:initUSAccountPanel(slot0.accountUS)
 
 		slot1 = false
+	elseif PLATFORM_CODE == PLATFORM_CHT then
+		slot0.accountTw = slot0:findTF("account_tw", slot0.otherContent)
+
+		setActive(slot0.accountTw, true)
+		slot0:UpdateTwAccountPanel(slot0.accountTw)
+
+		if PLATFORM == PLATFORM_IPHONEPLAYER then
+			slot1 = false
+		end
 	end
 
 	if slot1 then
@@ -742,7 +757,7 @@ slot0.initOtherPanel = function (slot0)
 
 	slot0.notchPanel = slot0:findTF("main/options/scroll_view/Viewport/content/notch_setting")
 
-	if ADAPT_TARGET < Screen.width / Screen.height - 0.001 then
+	if ADAPT_NOTICE < Screen.width / Screen.height - 0.001 then
 		setActive(slot0.notchPanel, true)
 
 		slot0.notchSlider = slot0:findTF("slider", slot0.notchPanel)
@@ -1266,7 +1281,11 @@ slot0.showTranscode = function (slot0, slot1)
 end
 
 slot0.checkTranscodeView = function (slot0)
-	slot0.transcode = slot0.userProxy:getTranscode()
+	slot0.transcode = pg.SdkMgr.GetInstance():GetYostarTransCode() or ""
+
+	if not slot0.transcode or slot0.transcode == "" or slot0.transcode == "NULL" then
+		slot0.transcode = slot0.userProxy:getTranscode()
+	end
 
 	setActive(slot0.codeDesc, slot0.transcode ~= "")
 	setActive(slot0.getCodeBtn, slot0.transcode == "")
@@ -1465,6 +1484,120 @@ slot0.initKrHelp = function (slot0)
 
 	return
 	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot0.UpdateTwAccountPanel = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-4, warpins: 1 ---
+	if PLATFORM == PLATFORM_ANDROID then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 5-21, warpins: 1 ---
+		setActive(slot0.accountTw:Find("page1/bind_google"), true)
+		setActive(slot0.accountTw:Find("page1/bind_gamecenter"), false)
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 22-37, warpins: 1 ---
+		setActive(slot0.accountTw:Find("page1/bind_google"), true)
+		setActive(slot0.accountTw:Find("page1/bind_gamecenter"), false)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 38-87, warpins: 2 ---
+	slot2 = pg.SdkMgr.GetInstance()
+	slot7 = {
+		slot2:IsBindFaceBook(),
+		slot2:IsBindGoogle(),
+		slot2:IsBindPhone(),
+		slot2:IsBindGameCenter()
+	}
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 88-112, warpins: 0 ---
+	for slot11, slot12 in ipairs(slot1) do
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 88-110, warpins: 1 ---
+		setActive(slot12:Find("unbind"), not slot7[slot11])
+		setActive(slot12:Find("bind"), slot13)
+		onButton(slot0, slot12, function ()
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-3, warpins: 1 ---
+			if not slot0 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 4-8, warpins: 1 ---
+				slot1:BindSocial(slot2)
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 9-9, warpins: 2 ---
+			return
+			--- END OF BLOCK #1 ---
+
+
+
+		end, SFX_PANEL)
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 111-112, warpins: 2 ---
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 113-114, warpins: 1 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 

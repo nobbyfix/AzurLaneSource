@@ -4438,20 +4438,17 @@ function slot5(slot0, slot1, slot2)
 		slot0 = slot0.tf
 		slot1 = slot0.localScale
 		slot1 = slot1.x
-		slot2 = slot0
-		slot2 = slot2.inAnimator
+		slot2 = go
+		slot3 = slot0
+		slot2 = slot2(slot3)
+		slot2 = slot2.name
 
-		if slot2 then
+		while slot2 ~= "floor" do
 			slot0 = slot0.parent
 			slot2 = slot0.localScale
 			slot2 = slot2.x
 			slot1 = slot1 * slot2
 		end
-
-		slot2 = slot0.parent
-		slot2 = slot2.localScale
-		slot2 = slot2.x
-		slot1 = slot1 * slot2
 
 		return slot1
 	end

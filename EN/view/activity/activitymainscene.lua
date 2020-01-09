@@ -1,4 +1,6 @@
 slot0 = class("ActivityMainScene", import("..base.BaseUI"))
+slot0.LOCK_ACT_MAIN = "ActivityMainScene:LOCK_ACT_MAIN"
+slot0.UPDATE_ACTIVITY = "ActivityMainScene:UPDATE_ACTIVITY"
 slot1 = {
 	[ActivityConst.DAY7_LOGIN_ACTIVITY_ID] = {
 		className = "Day7LoginPage",
@@ -336,6 +338,66 @@ slot1 = {
 	[ActivityConst.HOLOLIVE_MIO_ID] = {
 		className = "HoloLiveMioPage",
 		uiName = "HoloLiveMioPage"
+	},
+	[ActivityConst.ZPROJECT_TW] = {
+		className = "ZProjectPage",
+		uiName = "zprojectpage"
+	},
+	[ActivityConst.JP_SKIRMISH_HEADFRAME_ID] = {
+		className = "JPSkirmishHeadFramePage",
+		uiName = "JPSkirmishHeadFramePage"
+	},
+	[ActivityConst.WAKABA_CHRIS_SKIN_ID] = {
+		className = "WakabaChrisSkinPage",
+		uiName = "WakabaChrisSkinPage"
+	},
+	[ActivityConst.SHIO_SKIN_RE_ID] = {
+		className = "ShioSkinRePage",
+		uiName = "ShioSkinRePage"
+	},
+	[ActivityConst.ANIME_MIDTERM_LOGIN] = {
+		className = "AnimeMidtermLoginPage",
+		uiName = "AnimeMidtermLoginPage"
+	},
+	[ActivityConst.NEWYEAR_SHRINE_PAGE_ID] = {
+		className = "NewYearShrinePage",
+		uiName = "NewYearShrinePage"
+	},
+	[ActivityConst.CYGNET_BATHROBE_PAGE_ID] = {
+		className = "CygnetBathrobePage",
+		uiName = "CygnetBathrobePage"
+	},
+	[ActivityConst.JAPANESE_NEWYEAR] = {
+		className = "JapaneseNewyearPage",
+		uiName = "JapaneseNewyearPage"
+	},
+	[ActivityConst.NEW_JAPANESE_PT] = {
+		className = "JapanesePTPage",
+		uiName = "JapanesePTPage"
+	},
+	[ActivityConst.SKIN_GELIDELI] = {
+		className = "SkinGelideliPage",
+		uiName = "SkinGelideliPage"
+	},
+	[ActivityConst.BEAT_MONSTER_NIAN_2020] = {
+		className = "BeatMonsterNian.BeatMonsterPage",
+		uiName = "BeatMonsterPage"
+	},
+	[ActivityConst.SKIN_KISARAGI] = {
+		className = "SkinKisaragiPage",
+		uiName = "SkinKisaragiPage"
+	},
+	[ActivityConst.MORAN_KR_PT_ID] = {
+		className = "MoranPtPage",
+		uiName = "MoranPtPage"
+	},
+	[ActivityConst.MORAN_KR_PREVIEW_ID] = {
+		className = "MoranMainPage",
+		uiName = "MoranMainPage"
+	},
+	[ActivityConst.UNICORN_STARDUST] = {
+		className = "UnicornStardustPage",
+		uiName = "UnicornStardustPage"
 	}
 }
 slot2 = {
@@ -354,10 +416,14 @@ slot0.getUIName = function (slot0)
 end
 
 slot0.getBGM = function (slot0)
-	return "holo-sss-inst"
+	return "main"
 end
 
 slot0.onBackPressed = function (slot0)
+	if slot0.locked then
+		return
+	end
+
 	for slot4, slot5 in pairs(slot0.windowList) do
 		if isActive(slot5._tf) then
 			slot0:HideWindow(slot5.class)
@@ -378,7 +444,9 @@ slot0.init = function (slot0)
 	slot0.tab = slot0:findTF("tab", slot0.tabs)
 	slot0.entranceList = UIItemList.New(slot0:findTF("enter/viewport/content"), slot0:findTF("enter/viewport/content/btn"))
 	slot0.windowList = {}
+	slot0.lockAll = slot0:findTF("blur_panel/lock_all")
 
+	setActive(slot0.lockAll, false)
 	setActive(slot0.tab, false)
 
 	slot0.shareData = ActivityShareData.New()
@@ -409,6 +477,14 @@ slot0.didEnter = function (slot0)
 	end, SOUND_BACK)
 	slot0:updateEntrances()
 	slot0:emit(ActivityMediator.SHOW_NEXT_ACTIVITY)
+	slot0:bind(slot0.LOCK_ACT_MAIN, function (slot0, slot1)
+		slot0.locked = slot1
+
+		setActive(slot0.lockAll, slot1)
+	end)
+	slot0:bind(slot0.UPDATE_ACTIVITY, function (slot0, slot1)
+		slot0:updateActivity(slot1)
+	end)
 end
 
 slot0.setPlayer = function (slot0, slot1)
@@ -556,16 +632,9 @@ slot0.verifyTabs = function (slot0, slot1)
 end
 
 slot0.loadActivityPanel = function (slot0, slot1, slot2)
-	slot4 = nil
+	slot3 = slot2:getConfig("type")
 
-	if slot2:getConfig("type") == ActivityConst.ACTIVITY_TYPE_HITMONSTERNIAN then
-		slot4 = Context.New({
-			mediator = HitMonsterNianMediator,
-			viewComponent = HitMonsterNianLayer
-		})
-	end
-
-	if slot4 and slot1 then
+	if nil and slot1 then
 		slot0:emit(ActivityMediator.OPEN_LAYER, slot4)
 	elseif slot4 and not slot1 then
 		slot0:emit(ActivityMediator.CLOSE_LAYER, slot4.mediator)

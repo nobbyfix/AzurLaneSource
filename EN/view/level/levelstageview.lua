@@ -20,6 +20,7 @@ slot0.OnInit = function (slot0)
 		end
 	end
 
+	slot0.loader = AutoLoader.New()
 	slot0.isFrozen = nil
 
 	setActive(slot0._tf, true)
@@ -57,6 +58,7 @@ slot0.OnDestroy = function (slot0)
 	end
 
 	slot0:ClearSubViews()
+	slot0.loader:Clear()
 end
 
 slot1 = -300
@@ -100,6 +102,8 @@ slot0.InitUI = function (slot0)
 	slot0.bombPanel = slot0.rightStage:Find("bomb_panel")
 	slot0.panelBarrier = slot0:findTF("panel_barrier", slot0.rightStage)
 	slot0.shamShopBtn = slot0:findTF("btn_sham_shop", slot0.rightStage)
+	slot0.autoBattleBtn = slot0:findTF("event/collapse/lock_fleet", slot0.rightStage)
+	slot0.showDetailBtn = slot0:findTF("event/detail/show_detail", slot0.rightStage)
 
 	setActive(slot0.panelBarrier, false)
 	setActive(slot0.rightStage, true)
@@ -220,6 +224,23 @@ slot0.AddListener = function (slot0)
 
 		slot0:emit(LevelMediator2.ON_OPEN_SHAM_SHOP)
 	end, SFX_PANEL)
+	onButton(slot0, slot0.autoBattleBtn, function ()
+		slot0:emit(LevelUIConst.IS_FROZEN)
+
+		if slot0.emit.isFrozen then
+			return
+		end
+
+		slot0 = getProxy(ChapterProxy)
+
+		slot0:UpdateSkipPrecombat(not slot0:GetSkipPrecombat())
+		slot0:UpdateSkipPreCombatMark()
+	end, SFX_PANEL)
+	onButton(slot0, slot0.showDetailBtn, function ()
+		slot0._showStrategyDetail = not slot0._showStrategyDetail and true
+
+		slot0:updateStageStrategy()
+	end, SFX_PANEL)
 	onButton(slot0, slot0.funcBtn, function ()
 		slot1 = slot0.contextData.chapterVO.getDataType(slot0)
 
@@ -240,6 +261,8 @@ slot0.AddListener = function (slot0)
 					type = ChapterConst.OpSkipBattle,
 					id = slot2.id
 				})
+			elseif slot0:IsSkipPrecombat() then
+				slot0:emit(LevelMediator2.ON_START)
 			else
 				slot0:emit(LevelMediator2.ON_STAGE)
 			end
@@ -256,20 +279,20 @@ slot0.AddListener = function (slot0)
 			end)()
 
 			slot5 = true
-		elseif Application.isEditor and (slot4.attachment == ChapterConst.AttachEnemy or slot4.attachment == ChapterConst.AttachElite or slot4.attachment == ChapterConst.AttachAmbush or slot4.attachment == ChapterConst.AttachRival or slot4.attachment == ChapterConst.AttachBoss) and chapter_skip_battle == 1 then
-			if slot4.flag == 0 then
-				slot5 = true
-
-				slot0:emit(LevelMediator2.ON_OP, {
-					type = ChapterConst.OpSkipBattle,
-					id = slot2.id
-				})
-			end
 		elseif slot4.attachment == ChapterConst.AttachEnemy or slot4.attachment == ChapterConst.AttachElite or slot4.attachment == ChapterConst.AttachAmbush or slot4.attachment == ChapterConst.AttachBoss then
 			if slot4.flag == 0 then
 				slot5 = true
 
-				slot0:emit(LevelMediator2.ON_STAGE)
+				if chapter_skip_battle == 1 then
+					slot0:emit(LevelMediator2.ON_OP, {
+						type = ChapterConst.OpSkipBattle,
+						id = slot2.id
+					})
+				elseif slot0:IsSkipPrecombat() then
+					slot0:emit(LevelMediator2.ON_START)
+				else
+					slot0:emit(LevelMediator2.ON_STAGE)
+				end
 			end
 		elseif slot4.attachment == ChapterConst.AttachBox then
 			if slot4.flag == 0 then
@@ -487,14 +510,19 @@ slot0.SwitchToChapter = function (slot0, slot1)
 	setActive(slot3, slot1:existAmbush())
 	setActive(slot0.airSupremacy, OPEN_AIR_DOMINANCE and slot1:getConfig("air_dominance") > 0)
 	setActive(findTF(slot0.topStage, "msg_panel/sham_progress"), slot1:getDataType() == ChapterConst.TypeSham)
-	setActive(findTF(slot0.rightStage, "btn_sham_shop"), slot1.getDataType() == ChapterConst.TypeSham)
+	setActive(slot0.shamShopBtn, slot1.getDataType() == ChapterConst.TypeSham)
 
 	if slot2 == ChapterConst.TypeSham then
-		setActive(slot7, getProxy(ChapterProxy):getShamShop() ~= nil)
+		setActive(slot0.shamShopBtn, getProxy(ShopsProxy):getShamShop() ~= nil)
 	end
 
 	setActive(slot0.resetBtn, slot2 == ChapterConst.TypeSham or slot2 == ChapterConst.TypeGuild)
 	setImageColor(slot0.resetBtn, (slot2 == ChapterConst.TypeSham and ChapterConst.ShamResetCountLimit <= slot1.shamResetCount and Color(1, 1, 10, 0.5882352941176471)) or Color(1, 1, 1, 1))
+	setActive(slot0.autoBattleBtn, slot1:isLoop())
+
+	if slot1.isLoop() then
+		slot0:UpdateSkipPreCombatMark()
+	end
 
 	slot0.achieveOriginalY = -240
 
@@ -528,8 +556,9 @@ slot0.SwitchToChapter = function (slot0, slot1)
 	slot0.seriesOperation()
 end
 
-slot0.SwitchToMap = function (slot0)
-	shiftPanel(slot0.topStage, 0, slot0.topStage.rect.height, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
+slot0.UpdateSkipPreCombatMark = function (slot0)
+	slot0.loader:GetOffSpriteRequest(slot0.autoBattleBtn)
+	slot0.loader:GetSprite("ui/levelstageview_atlas", (getProxy(ChapterProxy):GetSkipPrecombat() and "auto_battle_on") or "auto_battle_off", slot0.autoBattleBtn, true)
 end
 
 slot0.updateStageInfo = function (slot0)
@@ -2060,19 +2089,45 @@ slot0.DisplayWinConditionPanel = function (slot0)
 
 end
 
+slot2 = Vector2(396, 128)
+slot3 = Vector2(128, 128)
+
 slot0.updateStageStrategy = function (slot0)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-49, warpins: 1 ---
+	--- BLOCK #0 1-28, warpins: 1 ---
+	slot2 = slot0.contextData.chapterVO.fleet
 	slot5 = findTF(slot4, "click")
-	slot8 = findTF(slot3, "collapse")
+	slot7 = findTF(slot4, "items").GetComponent(slot6, typeof(GridLayoutGroup))
 
-	setActive(slot7, false)
+	if not slot0._showStrategyDetail or not slot0 then
 
-	slot10 = {}
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 32-32, warpins: 2 ---
+		slot8 = slot1
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 33-63, warpins: 2 ---
+	slot7.cellSize = slot8
+	slot9 = findTF(slot3, "collapse")
+
+	setActive(slot8, false)
+
 	slot11 = {}
+	slot12 = {}
 
-	_.each(slot9, function (slot0)
+	_.each(slot10, function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-9, warpins: 1 ---
@@ -2111,7 +2166,7 @@ slot0.updateStageStrategy = function (slot0)
 
 	end)
 
-	if _.any(slot0.contextData.chapterVO.fleets, function (slot0)
+	if _.any(slot1.fleets, function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-7, warpins: 1 ---
@@ -2151,64 +2206,17 @@ slot0.updateStageStrategy = function (slot0)
 	end) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 50-76, warpins: 1 ---
-		table.insert(slot11, 2, {
+		--- BLOCK #0 64-90, warpins: 1 ---
+		table.insert(slot12, 2, {
 			id = ChapterConst.StrategySubTeleport
 		})
-		table.insert(slot11, 2, {
+		table.insert(slot12, 2, {
 			id = ChapterConst.StrategySubAutoAttack
 		})
-		table.insert(slot11, 2, {
+		table.insert(slot12, 2, {
 			id = ChapterConst.StrategyHuntingRange
 		})
 		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	--- END OF BLOCK #0 ---
-
-	FLOW; TARGET BLOCK #1
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #1 77-81, warpins: 2 ---
-	if #slot1.strategies > 0 then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 82-85, warpins: 1 ---
-		--- END OF BLOCK #0 ---
-
-		FLOW; TARGET BLOCK #1
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 86-94, warpins: 0 ---
-		for slot15, slot16 in pairs(slot1.strategies) do
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 86-92, warpins: 1 ---
-			table.insert(slot11, {
-				id = slot15,
-				count = slot16
-			})
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 93-94, warpins: 2 ---
-			--- END OF BLOCK #1 ---
-
-
-
-		end
-		--- END OF BLOCK #1 ---
 
 
 
@@ -2221,34 +2229,84 @@ slot0.updateStageStrategy = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 95-135, warpins: 2 ---
-	table.insert(slot11, 1, {
+	--- BLOCK #2 91-95, warpins: 2 ---
+	if #slot1.strategies > 0 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 96-99, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 100-108, warpins: 0 ---
+		for slot16, slot17 in pairs(slot1.strategies) do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 100-106, warpins: 1 ---
+			table.insert(slot12, {
+				id = slot16,
+				count = slot17
+			})
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 107-108, warpins: 2 ---
+			--- END OF BLOCK #1 ---
+
+
+
+		end
+		--- END OF BLOCK #1 ---
+
+
+
+	end
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 109-149, warpins: 2 ---
+	table.insert(slot12, 1, {
 		id = slot2:getFormationStg()
 	})
 
-	slot13 = UIItemList.New(slot6, slot7)
+	slot14 = UIItemList.New(slot6, slot8)
 
-	slot13:make(function (slot0, slot1, slot2)
+	slot14:make(function (slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
 		if slot0 == UIItemList.EventUpdate then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 5-13, warpins: 1 ---
-			slot4, slot5 = nil
+			--- BLOCK #0 5-26, warpins: 1 ---
+			setActive(slot3, slot0._showStrategyDetail)
 
-			if slot0[slot1 + 1].id == ChapterConst.StrategyHuntingRange then
+			slot4 = slot2:Find("icon")
+			slot6, slot7 = nil
+
+			if slot1[slot1 + 1].id == ChapterConst.StrategyHuntingRange then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 14-20, warpins: 1 ---
-				slot4 = 1
+				--- BLOCK #0 27-33, warpins: 1 ---
+				slot6 = 1
 
-				if slot1.contextData.huntingRangeVisibility % 2 == 1 then
+				if slot0.contextData.huntingRangeVisibility % 2 == 1 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 21-22, warpins: 1 ---
-					slot5 = "range_invisible"
+					--- BLOCK #0 34-35, warpins: 1 ---
+					slot7 = "range_invisible"
 					--- END OF BLOCK #0 ---
 
 
@@ -2256,13 +2314,14 @@ slot0.updateStageStrategy = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 23-23, warpins: 1 ---
-					slot5 = "range_visible"
+					--- BLOCK #0 36-36, warpins: 1 ---
+					slot7 = "range_visible"
 					--- END OF BLOCK #0 ---
 
 
 
 				end
+
 				--- END OF BLOCK #0 ---
 
 				FLOW; TARGET BLOCK #1
@@ -2270,7 +2329,8 @@ slot0.updateStageStrategy = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 24-24, warpins: 2 ---
+				--- BLOCK #1 37-43, warpins: 2 ---
+				setText(slot3, i18n("help_sub_limits"))
 				--- END OF BLOCK #1 ---
 
 
@@ -2278,18 +2338,18 @@ slot0.updateStageStrategy = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 25-29, warpins: 1 ---
-				if slot3.id == ChapterConst.StrategySubAutoAttack then
+				--- BLOCK #0 44-48, warpins: 1 ---
+				if slot5.id == ChapterConst.StrategySubAutoAttack then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 30-34, warpins: 1 ---
-					slot4 = 1
+					--- BLOCK #0 49-53, warpins: 1 ---
+					slot6 = 1
 
 					if slot2.subAutoAttack == 0 then
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 35-36, warpins: 1 ---
-						slot5 = "sub_dont_auto_attack"
+						--- BLOCK #0 54-55, warpins: 1 ---
+						slot7 = "sub_dont_auto_attack"
 						--- END OF BLOCK #0 ---
 
 
@@ -2297,13 +2357,14 @@ slot0.updateStageStrategy = function (slot0)
 					else
 
 						-- Decompilation error in this vicinity:
-						--- BLOCK #0 37-37, warpins: 1 ---
-						slot5 = "sub_auto_attack"
+						--- BLOCK #0 56-56, warpins: 1 ---
+						slot7 = "sub_auto_attack"
 						--- END OF BLOCK #0 ---
 
 
 
 					end
+
 					--- END OF BLOCK #0 ---
 
 					FLOW; TARGET BLOCK #1
@@ -2311,7 +2372,8 @@ slot0.updateStageStrategy = function (slot0)
 
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #1 38-38, warpins: 2 ---
+					--- BLOCK #1 57-63, warpins: 2 ---
+					setText(slot3, i18n("help_sub_display"))
 					--- END OF BLOCK #1 ---
 
 
@@ -2319,9 +2381,11 @@ slot0.updateStageStrategy = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 39-44, warpins: 1 ---
-					slot4 = pg.strategy_data_template[slot3.id].type
-					slot5 = pg.strategy_data_template[slot3.id].icon
+					--- BLOCK #0 64-73, warpins: 1 ---
+					slot6 = pg.strategy_data_template[slot5.id].type
+					slot7 = pg.strategy_data_template[slot5.id].icon
+
+					setText(slot3, pg.strategy_data_template[slot5.id].desc)
 					--- END OF BLOCK #0 ---
 
 
@@ -2340,9 +2404,9 @@ slot0.updateStageStrategy = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 45-64, warpins: 3 ---
-			GetImageSpriteFromAtlasAsync("strategyicon/" .. slot5, "", slot2:Find("icon"))
-			onButton(slot1, slot2, function ()
+			--- BLOCK #1 74-93, warpins: 3 ---
+			GetImageSpriteFromAtlasAsync("strategyicon/" .. slot7, "", slot4:Find("icon"))
+			onButton(slot0, slot4, function ()
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-7, warpins: 1 ---
@@ -2532,20 +2596,21 @@ slot0.updateStageStrategy = function (slot0)
 
 			end, SFX_PANEL)
 
-			if slot4 == ChapterConst.StgTypeForm or slot4 == ChapterConst.StgTypeConst then
+			if slot6 == ChapterConst.StgTypeForm or slot6 == ChapterConst.StgTypeConst then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 69-91, warpins: 2 ---
-				setText(slot2:Find("nums"), "")
-				setActive(slot2:Find("mask"), false)
+				--- BLOCK #0 98-120, warpins: 2 ---
+				setText(slot4:Find("nums"), "")
+				setActive(slot4:Find("mask"), false)
 
-				slot7 = slot2:Find("selected")
+				slot8 = setActive
+				slot9 = slot4:Find("selected")
 
-				if setActive ~= slot3.id then
+				if slot6 ~= slot5.id then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 92-93, warpins: 1 ---
-					slot8 = false
+					--- BLOCK #0 121-122, warpins: 1 ---
+					slot10 = false
 					--- END OF BLOCK #0 ---
 
 
@@ -2553,8 +2618,8 @@ slot0.updateStageStrategy = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 94-94, warpins: 1 ---
-					slot8 = true
+					--- BLOCK #0 123-123, warpins: 1 ---
+					slot10 = true
 					--- END OF BLOCK #0 ---
 
 
@@ -2568,8 +2633,8 @@ slot0.updateStageStrategy = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 95-96, warpins: 2 ---
-				slot6(slot7, slot8)
+				--- BLOCK #1 124-125, warpins: 2 ---
+				slot8(slot9, slot10)
 				--- END OF BLOCK #1 ---
 
 
@@ -2577,17 +2642,17 @@ slot0.updateStageStrategy = function (slot0)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 97-111, warpins: 1 ---
-				setText(slot2:Find("nums"), slot3.count)
+				--- BLOCK #0 126-140, warpins: 1 ---
+				setText(slot4:Find("nums"), slot5.count)
 
-				slot6 = setActive
-				slot7 = slot2:Find("mask")
+				slot8 = setActive
+				slot9 = slot4:Find("mask")
 
-				if slot3.count ~= 0 then
+				if slot5.count ~= 0 then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 112-113, warpins: 1 ---
-					slot8 = false
+					--- BLOCK #0 141-142, warpins: 1 ---
+					slot10 = false
 					--- END OF BLOCK #0 ---
 
 
@@ -2595,8 +2660,8 @@ slot0.updateStageStrategy = function (slot0)
 				else
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 114-114, warpins: 1 ---
-					slot8 = true
+					--- BLOCK #0 143-143, warpins: 1 ---
+					slot10 = true
 					--- END OF BLOCK #0 ---
 
 
@@ -2610,9 +2675,9 @@ slot0.updateStageStrategy = function (slot0)
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 115-122, warpins: 2 ---
-				slot6(slot7, slot8)
-				setActive(slot2:Find("selected"), false)
+				--- BLOCK #1 144-151, warpins: 2 ---
+				slot8(slot9, slot10)
+				setActive(slot4:Find("selected"), false)
 				--- END OF BLOCK #1 ---
 
 
@@ -2625,7 +2690,7 @@ slot0.updateStageStrategy = function (slot0)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 123-123, warpins: 2 ---
+			--- BLOCK #2 152-152, warpins: 2 ---
 			--- END OF BLOCK #2 ---
 
 
@@ -2639,20 +2704,20 @@ slot0.updateStageStrategy = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 124-125, warpins: 2 ---
+		--- BLOCK #1 153-154, warpins: 2 ---
 		return
 		--- END OF BLOCK #1 ---
 
 
 
 	end)
-	slot13:align(#slot11)
+	slot14:align(#slot12)
 	onButton(slot0, slot5, function ()
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-26, warpins: 1 ---
 		shiftPanel(shiftPanel, slot0.rect.width + 200, nil, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
-		shiftPanel(shiftPanel, 0, nil, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
+		shiftPanel(shiftPanel, -30, nil, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -2660,11 +2725,11 @@ slot0.updateStageStrategy = function (slot0)
 
 
 	end, SFX_PANEL)
-	onButton(slot0, slot8, function ()
+	onButton(slot0, slot9, function ()
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-26, warpins: 1 ---
-		shiftPanel(shiftPanel, 30, nil, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
+		shiftPanel(shiftPanel, 35, nil, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
 		shiftPanel(shiftPanel, slot1.rect.width + 200, nil, 0.3, 0, true, nil, LeanTweenType.easeOutSine)
 
 		return
@@ -2674,18 +2739,18 @@ slot0.updateStageStrategy = function (slot0)
 
 	end, SFX_PANEL)
 
-	if pg.chapter_pop_template[slot1.id] and slot14.combo_on then
+	if pg.chapter_pop_template[slot1.id] and slot15.combo_on then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 139-144, warpins: 1 ---
-		slot15, slot16 = slot0:GetSubView("LevelStageComboPanel")
+		--- BLOCK #0 153-158, warpins: 1 ---
+		slot16, slot17 = slot0:GetSubView("LevelStageComboPanel")
 
-		if slot16 then
+		if slot17 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 145-152, warpins: 1 ---
-			slot15:Load()
-			slot15.buffer:AfterLoaded(function ()
+			--- BLOCK #0 159-166, warpins: 1 ---
+			slot16:Load()
+			slot16.buffer:AfterLoaded(function ()
 
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 1-9, warpins: 1 ---
@@ -2710,14 +2775,14 @@ slot0.updateStageStrategy = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 153-160, warpins: 2 ---
+		--- BLOCK #1 167-174, warpins: 2 ---
 		if getProxy(ChapterProxy).comboHistoryBuffer[slot1.id] then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 161-170, warpins: 1 ---
-			slot15.buffer:UpdateView(slot18)
+			--- BLOCK #0 175-184, warpins: 1 ---
+			slot16.buffer:UpdateView(slot19)
 
-			slot17.comboHistoryBuffer[slot1.id] = nil
+			slot18.comboHistoryBuffer[slot1.id] = nil
 			--- END OF BLOCK #0 ---
 
 
@@ -2725,8 +2790,8 @@ slot0.updateStageStrategy = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 171-175, warpins: 1 ---
-			slot15.buffer:UpdateView(slot1)
+			--- BLOCK #0 185-189, warpins: 1 ---
+			slot16.buffer:UpdateView(slot1)
 			--- END OF BLOCK #0 ---
 
 
@@ -2740,24 +2805,40 @@ slot0.updateStageStrategy = function (slot0)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #2 176-181, warpins: 2 ---
-		slot15.buffer:UpdateViewAnimated(slot1)
+		--- BLOCK #2 190-195, warpins: 2 ---
+		slot16.buffer:UpdateViewAnimated(slot1)
 		--- END OF BLOCK #2 ---
 
 
 
 	end
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #4
 
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 182-183, warpins: 3 ---
+	--- BLOCK #4 196-197, warpins: 3 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot0.SwitchAnchorandShift = function (slot0, slot1, slot2, ...)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-13, warpins: 1 ---
+	rtf(slot1).anchorMin = slot2
+	rtf(slot1).anchorMax = slot2
+
+	shiftPanel(slot1, ...)
+
+	return
+	--- END OF BLOCK #0 ---
 
 
 
@@ -4316,7 +4397,7 @@ slot0.tryPlayChapterStory = function (slot0)
 
 end
 
-slot2 = {
+slot4 = {
 	[ChapterConst.KizunaJammingDodge] = "kizunaOperationSafe",
 	[ChapterConst.KizunaJammingEngage] = "kizunaOperationDanger",
 	[ChapterConst.StatusDay] = "HololiveDayBar",
@@ -5074,8 +5155,8 @@ slot0.DoBreakAction = function (slot0)
 									function slot7()
 
 										-- Decompilation error in this vicinity:
-										--- BLOCK #0 1-5, warpins: 1 ---
-										slot0:switchToMap()
+										--- BLOCK #0 1-7, warpins: 1 ---
+										slot0:emit(LevelUIConst.SWITCH_TO_MAP)
 
 										return
 										--- END OF BLOCK #0 ---
@@ -5477,178 +5558,6 @@ slot0.SafeCheck = function (slot0)
 	--- BLOCK #6 125-126, warpins: 4 ---
 	return false
 	--- END OF BLOCK #6 ---
-
-
-
-end
-
-slot0.PlayComboResult = function (slot0)
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-17, warpins: 1 ---
-	slot2 = getProxy(ChapterProxy)
-
-	slot2:RecordLastDefeatedEnemy(slot0.contextData.chapterVO.id, nil)
-
-	if not slot2.defeatedEnemiesBuffer[slot0.contextData.chapterVO.id] then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 18-18, warpins: 1 ---
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	--- END OF BLOCK #0 ---
-
-	FLOW; TARGET BLOCK #1
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #1 19-31, warpins: 1 ---
-	slot4 = slot0.grid:CellToScreen(slot3.line.row, slot3.line.column)
-	slot0.combomsg = slot0.combomsg
-
-	if not slot0.combomsg then
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 32-50, warpins: 1 ---
-		slot0.combomsg = GameObject.New("comboMsg")
-
-		slot0.combomsg:AddComponent(typeof(RectTransform))
-		slot0.combomsg:AddComponent(typeof(Image))
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #2 51-91, warpins: 2 ---
-	slot5 = slot0.combomsg:GetComponent("RectTransform")
-
-	slot5:SetParent(pg.UIMgr.GetInstance().OverlayMain.transform, false)
-
-	slot5.anchoredPosition = slot4
-
-	slot5:SetParent(slot0.leftStage, true)
-
-	GetComponent(slot0.combomsg, typeof(Image)).enabled = false
-
-	PoolMgr.GetInstance():GetSprite("energy", "express_1", true, function (slot0)
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-5, warpins: 1 ---
-		if not IsNil(slot0) then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 6-25, warpins: 1 ---
-			slot0.enabled = true
-			slot0.sprite = slot0
-
-			slot0:SetNativeSize()
-
-			if slot2.comboAnimId then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 26-33, warpins: 1 ---
-				LeanTween.cancel(slot2.comboAnimId)
-
-				slot2.comboAnimId = nil
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			--- END OF BLOCK #0 ---
-
-			FLOW; TARGET BLOCK #1
-
-
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #1 34-59, warpins: 2 ---
-			slot2.comboAnimId = LeanTween.value(slot2.combomsg, slot2, Vector3(320, 200, 0), 5):setOnUpdateVector3(function (slot0)
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-3, warpins: 1 ---
-				slot0.anchoredPosition = slot0
-
-				return
-				--- END OF BLOCK #0 ---
-
-
-
-			end):setOnComplete(System.Action(function ()
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 1-5, warpins: 1 ---
-				if not IsNil(IsNil) then
-
-					-- Decompilation error in this vicinity:
-					--- BLOCK #0 6-8, warpins: 1 ---
-					slot0.enabled = false
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-
-				--- END OF BLOCK #0 ---
-
-				FLOW; TARGET BLOCK #1
-
-
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #1 9-9, warpins: 2 ---
-				return
-				--- END OF BLOCK #1 ---
-
-
-
-			end)).uniqueId
-			--- END OF BLOCK #1 ---
-
-
-
-		end
-
-		--- END OF BLOCK #0 ---
-
-		FLOW; TARGET BLOCK #1
-
-
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #1 60-60, warpins: 2 ---
-		return
-		--- END OF BLOCK #1 ---
-
-
-
-	end)
-
-	return
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-
-	-- Decompilation error in this vicinity:
-	--- BLOCK #3 92-92, warpins: 2 ---
-	--- END OF BLOCK #3 ---
 
 
 

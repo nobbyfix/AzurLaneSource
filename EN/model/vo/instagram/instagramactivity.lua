@@ -28,7 +28,7 @@ slot0.GetCanActiveCnt = function (slot0)
 end
 
 slot0.CanBeActivated = function (slot0)
-	return slot0.data1 > 0
+	return true
 end
 
 slot0.ExistMsg = function (slot0)

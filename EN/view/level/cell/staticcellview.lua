@@ -1,10 +1,10 @@
 slot0 = class("StaticCellView")
-slot1 = import("view.util.LoadPrefabRequestPackage")
-slot2 = import("view.util.LoadReferenceRequestPackage")
-slot3 = import("view.util.GetSpineRequestPackage")
-slot4 = import("view.util.GetPrefabRequestPackage")
-slot5 = import("view.util.ReturnPrefabRequestPackage")
-slot6 = import("view.util.ReturnSpineRequestPackage")
+slot1 = import("view.util.RequestPackages.LoadPrefabRequestPackage")
+slot2 = import("view.util.RequestPackages.LoadReferenceRequestPackage")
+slot3 = import("view.util.RequestPackages.GetSpineRequestPackage")
+slot4 = import("view.util.RequestPackages.GetPrefabRequestPackage")
+slot5 = import("view.util.RequestPackages.ReturnPrefabRequestPackage")
+slot6 = import("view.util.RequestPackages.ReturnSpineRequestPackage")
 
 slot0.Ctor = function (slot0, slot1)
 	slot0.parent = slot1
@@ -506,10 +506,10 @@ slot0.LoadSprite = function (slot0, slot1, slot2, slot3, slot4, slot5)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 12-26, warpins: 2 ---
+	--- BLOCK #1 12-29, warpins: 2 ---
 	slot0._loadingRequest[slot1 .. slot2] = 
 	-- Decompilation error in this vicinity:
-	slot0.New(slot1, slot2, function (slot0)
+	slot0.New(slot1, slot2, typeof(Sprite), function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-8, warpins: 1 ---
@@ -565,7 +565,7 @@ slot0.LoadSprite = function (slot0, slot1, slot2, slot3, slot4, slot5)
 
 
 	-- Decompilation error in this vicinity:
-	slot0.New(slot1, slot2, function (slot0)
+	slot0.New(slot1, slot2, typeof(Sprite), function (slot0)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-8, warpins: 1 ---

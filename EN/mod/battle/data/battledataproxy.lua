@@ -124,6 +124,8 @@ slot8.InitData = function (slot0, slot1)
 	slot0._wallIndex = 0
 	slot0._shelterList = {}
 	slot0._shelterIndex = 0
+	slot0._environmentList = {}
+	slot0._environmentIndex = 0
 	slot0._enemySubmarineCount = 0
 	slot0._airFighterList = {}
 	slot0._currentStageIndex = 1
@@ -289,6 +291,12 @@ slot8.Clear = function (slot0)
 	end
 
 	slot0._fleetList = nil
+
+	for slot4, slot5 in pairs(slot0._environmentList) do
+		slot0:RemoveEnvironment(slot5:GetUniqueID())
+	end
+
+	slot0._environmentList = nil
 
 	for slot4, slot5 in pairs(slot0._AOEList) do
 		slot0:RemoveAreaOfEffect(slot4)
@@ -547,6 +555,14 @@ slot8.updateLoop = function (slot0, slot1)
 		if slot6:GetActiveFlag() == false then
 			slot6:SettleFinale()
 			slot0:RemoveAreaOfEffect(slot6:GetUniqueID())
+		end
+	end
+
+	for slot5, slot6 in pairs(slot0._environmentList) do
+		slot6:Update()
+
+		if slot6:IsExpire(slot1) then
+			slot0:RemoveEnvironment(slot6:GetUniqueID())
 		end
 	end
 
@@ -2666,6 +2682,27 @@ slot8.SpawnLastingCubeArea = function (slot0, slot1, slot2, slot3, slot4, slot5,
 
 end
 
+slot8.SpawnAura = function (slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-51, warpins: 1 ---
+	slot10 = slot0.Battle.BattleMobileAOEData.New(slot7, slot8, slot4, slot5, slot6, slot1)
+
+	slot10:SetPosition(slot9)
+	slot10:SetRange(slot3)
+	slot10:SetAreaType(slot1.AreaType.COLUMN)
+	slot10:SetLifeTime(0)
+	slot10:SetFieldType(slot2)
+	slot10:SetOpponentAffected(true)
+	slot0:CreateAreaOfEffect(slot10)
+
+	return slot10
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
 slot8.CreateAreaOfEffect = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
@@ -2838,6 +2875,218 @@ slot8.GernerateShelterID = function (slot0)
 	slot0._shelterIndex = slot0._shelterIndex + 1
 
 	return slot0._shelterIndex
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8.SpawnEnvironment = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-32, warpins: 1 ---
+	slot3 = slot0.Battle.BattleEnvironmentUnit.New(slot2, slot1.FOE_CODE)
+
+	slot3:SetTemplate(slot1)
+
+	slot4 = slot3:GetBehaviours()
+	slot5 = Vector3(slot1.coordinate[1], slot1.coordinate[2], slot1.coordinate[3])
+
+	function slot6(slot0)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = {}
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 6-19, warpins: 0 ---
+		for slot5, slot6 in ipairs(slot0) do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 6-8, warpins: 1 ---
+			if slot6.Active then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 9-17, warpins: 1 ---
+				table.insert(slot1, slot0._unitList[slot6.UID])
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 18-19, warpins: 3 ---
+			--- END OF BLOCK #1 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 20-25, warpins: 1 ---
+		slot1:UpdateFrequentlyCollide(slot1)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	function slot7()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-1, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	function slot8()
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-1, warpins: 1 ---
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	if not slot1.field_type then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 33-35, warpins: 1 ---
+		slot9 = slot2.BulletField.SURFACE
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #1 36-38, warpins: 2 ---
+	if not slot1.IFF then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 39-40, warpins: 1 ---
+		slot10 = slot1.FOE_CODE
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 41-46, warpins: 2 ---
+	slot11 = 0
+	slot12 = nil
+
+	if #slot1.cld_data == 1 then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 47-64, warpins: 1 ---
+		slot12 = slot0:SpawnLastingColumnArea(slot9, slot10, slot5, slot1.cld_data[1], slot11, slot6, slot7, false, slot1.prefab, true, slot8)
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 65-84, warpins: 1 ---
+		slot12 = slot0:SpawnLastingCubeArea(slot9, slot10, slot5, slot1.cld_data[1], slot1.cld_data[2], slot11, slot6, slot7, false, slot1.prefab, true, slot8)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #3 85-92, warpins: 2 ---
+	slot3:SetAOEData(slot12)
+
+	slot0._environmentList[slot2] = slot3
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot8.RemoveEnvironment = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-18, warpins: 1 ---
+	slot0:RemoveAreaOfEffect(slot0._environmentList[slot1].GetAOEData(slot2):GetUniqueID())
+	slot0._environmentList[slot1].Dispose(slot2)
+
+	slot0._environmentList[slot1] = nil
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8.GetEnvironmentList = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-2, warpins: 1 ---
+	return slot0._environmentList
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8.GernerateEnvironmentID = function (slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0._environmentIndex = slot0._environmentIndex + 1
+
+	return slot0._environmentIndex
 	--- END OF BLOCK #0 ---
 
 

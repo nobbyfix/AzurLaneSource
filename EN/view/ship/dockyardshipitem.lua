@@ -811,228 +811,195 @@ function slot2(slot0)
 				slot7 = slot8.skill_data_template
 			end
 
-			function slot8(slot0)
-				slot1 = ShipModAttr
-				slot1 = slot1.ATTR_TO_INDEX
-				slot1 = slot1[slot0]
+			slot8 = 1
+			slot9 = 6
+			slot10 = 1
 
-				if not slot1 then
-					slot1 = true
-
-					return slot1
-				else
-					slot1 = slot0
-					slot2 = slot1
-					slot1 = slot1.getModAttrTopLimit
-					slot3 = slot0
-					slot1 = slot1(slot2, slot3)
-
-					if slot1 == 0 then
-						slot1 = true
-
-						return slot1
-					else
-						slot1 = slot0
-						slot1 = slot1.level
-						slot2 = 100
-
-						if slot1 < slot2 then
-							slot2 = slot0:getModAttrBaseMax(slot0)
-
-							if slot0.level == slot0:getMaxLevel() then
-								return slot2 <= slot1[slot0]
-							end
-						end
-					end
-				end
-			end
-
-			slot9 = 1
-			slot10 = 6
-			slot11 = 1
-
-			for slot12 = slot9, slot10, slot11 do
-				slot13 = slot0.detailLayoutTr
-				slot14 = slot13
-				slot13 = slot13.GetChild
-				slot15 = slot12 - 1
-				slot13 = slot13(slot14, slot15)
-				slot14 = true
-				slot16 = slot13
-				slot15 = slot13.GetChild
-				slot17 = 0
+			for slot11 = slot8, slot9, slot10 do
+				slot12 = slot0.detailLayoutTr
+				slot13 = slot12
+				slot12 = slot12.GetChild
+				slot14 = slot11 - 1
+				slot12 = slot12(slot13, slot14)
+				slot13 = true
+				slot15 = slot12
+				slot14 = slot12.GetChild
+				slot16 = 0
+				slot14 = slot14(slot15, slot16)
+				slot15 = slot14
+				slot14 = slot14.GetComponent
+				slot16 = "Text"
+				slot14 = slot14(slot15, slot16)
+				slot16 = slot12
+				slot15 = slot12.GetChild
+				slot17 = 1
 				slot15 = slot15(slot16, slot17)
 				slot16 = slot15
 				slot15 = slot15.GetComponent
 				slot17 = "Text"
 				slot15 = slot15(slot16, slot17)
-				slot17 = slot13
-				slot16 = slot13.GetChild
-				slot18 = 1
-				slot16 = slot16(slot17, slot18)
-				slot17 = slot16
-				slot16 = slot16.GetComponent
-				slot18 = "Text"
-				slot16 = slot16(slot17, slot18)
-				slot17 = TextAnchor
-				slot17 = slot17.MiddleLeft
-				slot15.alignment = slot17
-				slot17 = TextAnchor
-				slot17 = slot17.MiddleRight
-				slot16.alignment = slot17
+				slot16 = TextAnchor
+				slot16 = slot16.MiddleLeft
+				slot14.alignment = slot16
+				slot16 = TextAnchor
+				slot16 = slot16.MiddleRight
+				slot15.alignment = slot16
+				slot16 = slot0.detailType
+				slot16 = slot4[slot16]
+				slot16 = slot16[slot11]
 				slot17 = slot0.detailType
-				slot17 = slot4[slot17]
-				slot17 = slot17[slot12]
-				slot18 = slot0.detailType
-				slot19 = slot0
-				slot19 = slot19.DetailType1
+				slot18 = slot0
+				slot18 = slot18.DetailType1
 
-				if slot18 == slot19 then
-					if slot12 == 6 then
-						slot18 = slot0.shipVO
-						slot19 = slot18
-						slot18 = slot18.getIntimacyDetail
-						slot18, slot19, slot20 = slot18(slot19)
-						slot21 = AttributeType
-						slot21 = slot21.Type2Name
-						slot22 = slot17
-						slot21 = slot21(slot22)
-						slot15.text = slot21
-						slot21 = setColorStr
-						slot22 = slot20
+				if slot17 == slot18 then
+					if slot11 == 6 then
+						slot17 = slot0.shipVO
+						slot18 = slot17
+						slot17 = slot17.getIntimacyDetail
+						slot17, slot18, slot19 = slot17(slot18)
+						slot20 = AttributeType
+						slot20 = slot20.Type2Name
+						slot21 = slot16
+						slot20 = slot20(slot21)
+						slot14.text = slot20
+						slot20 = setColorStr
+						slot21 = slot19
 
-						if slot19 <= slot20 then
-							slot16.text = slot21(slot22, COLOR_GREEN or COLOR_WHITE)
+						if slot18 <= slot19 then
+							slot15.text = slot20(slot21, COLOR_GREEN or COLOR_WHITE)
 						end
 					else
-						slot18 = tostring
-						slot19 = math
-						slot19 = slot19.floor
-						slot20 = slot3[slot17]
-						slot18 = slot18(slot19(slot20))
-						slot19 = AttributeType
-						slot19 = slot19.Type2Name
-						slot20 = slot17
-						slot19 = slot19(slot20)
-						slot15.text = slot19
-						slot19 = setColorStr
-						slot20 = slot18
-						slot21 = slot8
-						slot22 = slot17
-						slot21 = slot21(slot22)
+						slot17 = tostring
+						slot18 = math
+						slot18 = slot18.floor
+						slot19 = slot3[slot16]
+						slot17 = slot17(slot18(slot19))
+						slot18 = AttributeType
+						slot18 = slot18.Type2Name
+						slot19 = slot16
+						slot18 = slot18(slot19)
+						slot14.text = slot18
+						slot18 = setColorStr
+						slot19 = slot17
+						slot21 = slot0
+						slot20 = slot0.canModAttr
+						slot22 = slot1
+						slot23 = slot16
+						slot24 = slot3
+						slot20 = slot20(slot21, slot22, slot23, slot24)
 
-						if slot21 then
-							slot16.text = slot19(slot20, COLOR_GREEN or COLOR_WHITE)
+						if slot20 then
+							slot15.text = slot18(slot19, COLOR_GREEN or COLOR_WHITE)
 						end
 					end
 				else
-					slot18 = slot0.detailType
-					slot19 = slot0
-					slot19 = slot19.DetailType2
+					slot17 = slot0.detailType
+					slot18 = slot0
+					slot18 = slot18.DetailType2
 
-					if slot18 == slot19 then
-						if slot12 == 1 then
-							slot18 = TextAnchor
-							slot18 = slot18.MiddleCenter
-							slot15.alignment = slot18
-							slot19 = slot1
-							slot18 = slot1.getShipArmorName
-							slot18 = slot18(slot19)
-							slot15.text = slot18
-							slot18 = ""
-							slot16.text = slot18
-						elseif slot12 == 5 then
-							slot19 = slot1
-							slot18 = slot1.getBattleTotalExpend
-							slot18 = slot18(slot19)
-							slot19 = AttributeType
-							slot19 = slot19.Type2Name
-							slot20 = AttributeType
-							slot20 = slot20.Expend
-							slot19 = slot19(slot20)
-							slot15.text = slot19
-							slot19 = tostring
-							slot20 = math
-							slot20 = slot20.floor
-							slot21 = slot18
-							slot19 = slot19(slot20(slot21))
-							slot16.text = slot19
-						elseif slot12 == 6 then
-							slot18 = setColorStr
-							slot19 = i18n
-							slot20 = "word_synthesize_power"
-							slot19 = slot19(slot20)
-							slot20 = COLOR_GREEN
-							slot18 = slot18(slot19, slot20)
-							slot15.text = slot18
-							slot18 = tostring
-							slot19 = math
-							slot19 = slot19.floor
-							slot20 = slot5
-							slot18 = slot18(slot19(slot20))
-							slot16.text = slot18
-						else
+					if slot17 == slot18 then
+						if slot11 == 1 then
+							slot17 = TextAnchor
+							slot17 = slot17.MiddleCenter
+							slot14.alignment = slot17
+							slot18 = slot1
+							slot17 = slot1.getShipArmorName
+							slot17 = slot17(slot18)
+							slot14.text = slot17
+							slot17 = ""
+							slot15.text = slot17
+						elseif slot11 == 5 then
+							slot18 = slot1
+							slot17 = slot1.getBattleTotalExpend
+							slot17 = slot17(slot18)
 							slot18 = AttributeType
 							slot18 = slot18.Type2Name
-							slot19 = slot17
+							slot19 = AttributeType
+							slot19 = slot19.Expend
 							slot18 = slot18(slot19)
-							slot15.text = slot18
+							slot14.text = slot18
 							slot18 = tostring
 							slot19 = math
 							slot19 = slot19.floor
-							slot20 = slot3[slot17]
+							slot20 = slot17
 							slot18 = slot18(slot19(slot20))
-							slot16.text = slot18
+							slot15.text = slot18
+						elseif slot11 == 6 then
+							slot17 = setColorStr
+							slot18 = i18n
+							slot19 = "word_synthesize_power"
+							slot18 = slot18(slot19)
+							slot19 = COLOR_GREEN
+							slot17 = slot17(slot18, slot19)
+							slot14.text = slot17
+							slot17 = tostring
+							slot18 = math
+							slot18 = slot18.floor
+							slot19 = slot5
+							slot17 = slot17(slot18(slot19))
+							slot15.text = slot17
+						else
+							slot17 = AttributeType
+							slot17 = slot17.Type2Name
+							slot18 = slot16
+							slot17 = slot17(slot18)
+							slot14.text = slot17
+							slot17 = tostring
+							slot18 = math
+							slot18 = slot18.floor
+							slot19 = slot3[slot16]
+							slot17 = slot17(slot18(slot19))
+							slot15.text = slot17
 						end
 					else
-						slot18 = slot0.detailType
-						slot19 = slot0
-						slot19 = slot19.DetailType3
+						slot17 = slot0.detailType
+						slot18 = slot0
+						slot18 = slot18.DetailType3
 
-						if slot18 == slot19 then
-							slot18 = slot6[slot12]
+						if slot17 == slot18 then
+							slot17 = slot6[slot11]
 
-							if slot18 then
-								slot19 = slot1.skills
-								slot19 = slot19[slot18]
+							if slot17 then
+								slot18 = slot1.skills
+								slot18 = slot18[slot17]
 
-								if slot19 then
-									slot19 = slot7[slot18]
-									slot19 = slot19.max_level
+								if slot18 then
+									slot18 = slot7[slot17]
+									slot18 = slot18.max_level
 
-									if slot19 ~= 1 then
-										slot15.alignment = TextAnchor.MiddleLeft
-										slot15.text = setColorStr(i18n("skill") .. slot12, slot0.SKILL_COLOR[pg.skill_data_template[slot1.skills[slot18].id].type] or COLOR_WHITE)
-										slot21 = slot1.skills[slot18].level
-										slot22 = slot7[slot18].max_level
+									if slot18 ~= 1 then
+										slot14.alignment = TextAnchor.MiddleLeft
+										slot14.text = setColorStr(i18n("skill") .. slot11, slot0.SKILL_COLOR[pg.skill_data_template[slot1.skills[slot17].id].type] or COLOR_WHITE)
+										slot20 = slot1.skills[slot17].level
+										slot21 = slot7[slot17].max_level
 
-										if slot21 == slot22 then
-											slot21 = "Lv.Max"
+										if slot20 == slot21 then
+											slot20 = "Lv.Max"
 										else
-											slot21 = "Lv."
-											slot22 = slot19.level
-											slot21 = slot21 .. slot22
+											slot20 = "Lv."
+											slot21 = slot18.level
+											slot20 = slot20 .. slot21
 										end
 
-										slot22 = setColorStr
-										slot23 = slot21
-										slot24 = slot20
-										slot22 = slot22(slot23, slot24)
-										slot16.text = slot22
+										slot21 = setColorStr
+										slot22 = slot20
+										slot23 = slot19
+										slot21 = slot21(slot22, slot23)
+										slot15.text = slot21
 									end
 								end
 							else
-								slot14 = false
+								slot13 = false
 							end
 						end
 					end
 				end
 
-				slot18 = setActive
+				slot17 = setActive
+				slot18 = slot12
 				slot19 = slot13
-				slot20 = slot14
 
-				slot18(slot19, slot20)
+				slot17(slot18, slot19)
 			end
 		end
 	end
@@ -1049,6 +1016,56 @@ function slot2(slot0)
 end
 
 slot0.flushDetail = slot2
+
+function slot2(slot0, slot1, slot2, slot3)
+	slot5 = slot1
+	slot4 = slot1.isBluePrintShip
+	slot4 = slot4(slot5)
+
+	if slot4 then
+		slot5 = slot1
+		slot4 = slot1.getBluePrint
+		slot4 = slot4(slot5)
+		slot6 = slot4
+		slot5 = slot4.isMaxIntensifyLevel
+
+		return slot5(slot6)
+	else
+		slot4 = ShipModAttr
+		slot4 = slot4.ATTR_TO_INDEX
+		slot4 = slot4[slot2]
+
+		if not slot4 then
+			slot4 = true
+
+			return slot4
+		else
+			slot5 = slot1
+			slot4 = slot1.getModAttrTopLimit
+			slot6 = slot2
+			slot4 = slot4(slot5, slot6)
+
+			if slot4 == 0 then
+				slot4 = true
+
+				return slot4
+			else
+				slot4 = slot1.level
+				slot5 = 100
+
+				if slot4 < slot5 then
+					slot5 = slot1:getModAttrBaseMax(slot2)
+
+					if slot1.level == slot1:getMaxLevel() then
+						return slot5 <= slot3[slot2]
+					end
+				end
+			end
+		end
+	end
+end
+
+slot0.canModAttr = slot2
 
 function slot2(slot0)
 	slot1 = slot0.shipVO

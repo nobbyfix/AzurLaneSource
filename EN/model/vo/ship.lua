@@ -222,13 +222,12 @@ slot0.getWords = function (slot0, slot1, slot2, slot3, slot4)
 		if not slot10 or (rstEx and not defaultCoverEx) then
 			slot14 = slot0.getCVPath(slot7, slot1, slot13, slot8)
 		end
+	elseif slot16 == -2 then
 	else
 		slot14 = slot0.getCVPath(slot7, slot1, slot13)
 	end
 
-	slot17 = slot12[slot13]
-
-	if slot3 == nil or slot3 == true then
+	if slot12[slot13] and ((slot3 == nil and PLATFORM_CODE ~= PLATFORM_US) or slot3 == true) then
 		slot17 = slot17:gsub("%s", " ")
 	end
 
@@ -244,7 +243,7 @@ slot0.getCVKeyID = function (slot0)
 
 	slot2 = nil
 
-	if ((PlayerPrefs.GetInt("CV_LANGUAGE_" .. pg.ship_skin_template[slot0].ship_group) == 2 and slot1.voice_key_2 >= 0 and slot1.voice_key_2) or slot1.voice_key) == 0 then
+	if ((PlayerPrefs.GetInt("CV_LANGUAGE_" .. pg.ship_skin_template[slot0].ship_group) == 2 and slot1.voice_key_2 >= 0 and slot1.voice_key_2) or slot1.voice_key) == 0 or slot2 == -2 then
 		slot5 = slot0.getShipWords(slot0:getOriginalSkinId())
 
 		return (slot3 == 2 and slot5.voice_key_2 >= 0 and slot5.voice_key_2) or slot5.voice_key
@@ -1582,20 +1581,7 @@ slot0.canDestroyShip = function (slot0, slot1)
 	if slot0:isBluePrintShip() then
 		return false, i18n("blueprint_destory_tip")
 	elseif slot0:GetLockState() == Ship.LOCK_STATE_LOCK then
-		pg.MsgboxMgr.GetInstance():ShowMsgBox({
-			content = i18n("confirm_unlock", slot0:getName()),
-			onYes = function ()
-				pg.m02:sendNotification(GAME.UPDATE_LOCK, {
-					ship_id_list = {
-						slot0.id
-					},
-					is_locked = slot1.LOCK_STATE_UNLOCK,
-					callback = GAME.UPDATE_LOCK
-				})
-			end
-		})
-
-		return false, nil
+		return false, i18n("ship_vo_locked")
 	elseif slot0.inChapter or slot0.inWorld then
 		return false, i18n("word_shipState_fight")
 	elseif slot0.inClass then
@@ -2080,13 +2066,7 @@ slot0.proposeSkinOwned = function (slot0, slot1)
 end
 
 slot0.getProposeSkin = function (slot0)
-	for slot4, slot5 in ipairs(pg.ship_skin_template.all) do
-		if pg.ship_skin_template[slot5].ship_group == slot0.groupId and slot6.skin_type == ShipSkin.SKIN_TYPE_PROPOSE then
-			return slot6
-		end
-	end
-
-	return nil
+	return ShipSkin.GetSkinByType(slot0.groupId, ShipSkin.SKIN_TYPE_PROPOSE)
 end
 
 slot0.getDockSortValue = function (slot0)
@@ -2182,7 +2162,7 @@ slot0.SetExpression = function (slot0, slot1, slot2, slot3)
 
 	if slot3 and pg.ship_skin_expression_ex[slot1] and slot7[slot2] and slot8 ~= "" then
 		for slot12, slot13 in ipairs(slot8) do
-			if slot3 <= slot13[1] then
+			if slot13[1] <= slot3 then
 				slot6 = slot13[2]
 			end
 		end

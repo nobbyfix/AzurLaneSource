@@ -1362,15 +1362,15 @@ slot0.attachOnCardButton = function (slot0, slot1, slot2)
 
 		-- Decompilation error in this vicinity:
 		--- BLOCK #0 1-4, warpins: 1 ---
-		if slot0 == slot0.go then
+		if not slot0.carddrag and slot0 == slot1.go then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 5-8, warpins: 1 ---
-			if slot0.shipVO then
+			--- BLOCK #0 9-12, warpins: 1 ---
+			if slot1.shipVO then
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 9-22, warpins: 1 ---
-				slot1:emit(DefenseFormationMedator.OPEN_SHIP_INFO, slot0.shipVO.id, slot1._currentFleetVO, slot2.TOGGLE_DETAIL)
+				--- BLOCK #0 13-26, warpins: 1 ---
+				slot0:emit(DefenseFormationMedator.OPEN_SHIP_INFO, slot1.shipVO.id, slot0._currentFleetVO, slot2.TOGGLE_DETAIL)
 				--- END OF BLOCK #0 ---
 
 
@@ -1378,8 +1378,8 @@ slot0.attachOnCardButton = function (slot0, slot1, slot2)
 			else
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #0 23-31, warpins: 1 ---
-				slot1:emit(DefenseFormationMedator.CHANGE_FLEET_SHIP, slot0.shipVO, slot1)
+				--- BLOCK #0 27-35, warpins: 1 ---
+				slot0:emit(DefenseFormationMedator.CHANGE_FLEET_SHIP, slot1.shipVO, slot0)
 				--- END OF BLOCK #0 ---
 
 
@@ -1393,7 +1393,7 @@ slot0.attachOnCardButton = function (slot0, slot1, slot2)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #1 32-34, warpins: 2 ---
+			--- BLOCK #1 36-38, warpins: 2 ---
 			playSoundEffect(SFX_PANEL)
 			--- END OF BLOCK #1 ---
 
@@ -1408,7 +1408,7 @@ slot0.attachOnCardButton = function (slot0, slot1, slot2)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 35-35, warpins: 2 ---
+		--- BLOCK #1 39-39, warpins: 3 ---
 		return
 		--- END OF BLOCK #1 ---
 

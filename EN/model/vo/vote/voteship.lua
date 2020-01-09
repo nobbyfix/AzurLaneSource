@@ -76,7 +76,7 @@ slot0.isSamaGroup = function (slot0, slot1)
 end
 
 slot0.getSkinId = function (slot0)
-	return slot0.group * 10
+	return ShipGroup.getDefaultSkin(slot0.group.id)
 end
 
 slot0.getNetVotes = function (slot0)

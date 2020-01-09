@@ -3458,7 +3458,7 @@ pg.equip_data_statistics = {
 		ambush_extra = 0,
 		value_2 = 80,
 		icon = "720",
-		value_1 = "4",
+		value_1 = "12",
 		attribute_2 = "durability",
 		avoid_extra = 0,
 		rarity = 5,
@@ -3488,7 +3488,7 @@ pg.equip_data_statistics = {
 		id = 721,
 		base = 720,
 		value_2 = 85,
-		value_1 = "4",
+		value_1 = "13",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -3497,7 +3497,7 @@ pg.equip_data_statistics = {
 		id = 722,
 		base = 720,
 		value_2 = 90,
-		value_1 = "5",
+		value_1 = "13",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -3506,7 +3506,7 @@ pg.equip_data_statistics = {
 		id = 723,
 		base = 720,
 		value_2 = 95,
-		value_1 = "5",
+		value_1 = "14",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -3515,7 +3515,7 @@ pg.equip_data_statistics = {
 		id = 724,
 		base = 720,
 		value_2 = 100,
-		value_1 = "6",
+		value_1 = "14",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -3524,7 +3524,7 @@ pg.equip_data_statistics = {
 		id = 725,
 		base = 720,
 		value_2 = 105,
-		value_1 = "7",
+		value_1 = "15",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -3533,7 +3533,7 @@ pg.equip_data_statistics = {
 		id = 726,
 		base = 720,
 		value_2 = 110,
-		value_1 = "8",
+		value_1 = "16",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -3542,7 +3542,7 @@ pg.equip_data_statistics = {
 		id = 727,
 		base = 720,
 		value_2 = 120,
-		value_1 = "9",
+		value_1 = "17",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -3551,7 +3551,7 @@ pg.equip_data_statistics = {
 		id = 728,
 		base = 720,
 		value_2 = 130,
-		value_1 = "10",
+		value_1 = "18",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -3560,7 +3560,7 @@ pg.equip_data_statistics = {
 		id = 729,
 		base = 720,
 		value_2 = 140,
-		value_1 = "11",
+		value_1 = "19",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -3569,7 +3569,7 @@ pg.equip_data_statistics = {
 		id = 730,
 		base = 720,
 		value_2 = 150,
-		value_1 = "12",
+		value_1 = "20",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -10239,7 +10239,8 @@ pg.equip_data_statistics = {
 			4,
 			5,
 			7,
-			10
+			10,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -10359,7 +10360,8 @@ pg.equip_data_statistics = {
 			4,
 			5,
 			7,
-			10
+			10,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -14890,7 +14892,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -16864,7 +16867,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[12200] = {
-		name = "试作型三联装152mm高平两用炮Mk17",
+		name = "Prototype Triple 152mm Main Gun (DP MK17)",
 		speciality = "Lock",
 		tech = 0,
 		type = 2,
@@ -17050,7 +17053,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -17125,7 +17129,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -17200,7 +17205,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -17309,7 +17315,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -17384,7 +17391,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -17493,7 +17501,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -19389,7 +19398,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[14500] = {
-		name = "试作型双联装457mm主炮MKA",
+		name = "Prototype Twin 457mm Main Gun (18\" MKA)",
 		type = 4,
 		id = 14500,
 		tech = 0,
@@ -28566,7 +28575,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -28641,7 +28651,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -28750,7 +28761,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -38867,7 +38879,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -38942,7 +38955,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -39051,7 +39065,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -39204,7 +39219,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -39326,7 +39342,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[33100] = {
-		name = "试作型三联装310mm主炮",
+		name = "Prototype Triple 310mm Main Gun (Type 0)",
 		type = 11,
 		id = 33100,
 		tech = 0,
@@ -44993,7 +45009,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[36700] = {
-		name = "试作型五式40mm高射机关炮",
+		name = "Prototype 40mm AA Gun (Type 5)",
 		type = 6,
 		id = 36700,
 		tech = 0,
@@ -50447,7 +50463,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -50556,7 +50573,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -50709,7 +50727,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -50862,7 +50881,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -51015,7 +51035,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -51091,7 +51112,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -51200,7 +51222,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -52077,7 +52100,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[44200] = {
-		name = "试作型双联装406mmSKC主炮",
+		name = "Prototype Twin 406mm Main Gun (SK C/34)",
 		type = 4,
 		id = 44200,
 		tech = 0,
@@ -59182,6 +59205,60 @@ pg.equip_data_statistics = {
 		equip_parameters = {},
 		label = {}
 	},
+	[60471] = {
+		name = "航空攻击展示-龙凤I",
+		type = 99,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "航母空袭展示用",
+		value_3 = 0,
+		id = 60471,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60471
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[60472] = {
+		id = 60472,
+		name = "航空攻击展示-龙凤II",
+		base = 60471,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60472
+		},
+		property_rate = {}
+	},
+	[60473] = {
+		id = 60473,
+		name = "航空攻击展示-龙凤III",
+		base = 60471,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60473
+		},
+		property_rate = {}
+	},
 	[61007] = {
 		name = "0",
 		type = 1,
@@ -59557,7 +59634,7 @@ pg.equip_data_statistics = {
 		ambush_extra = 0,
 		value_2 = 0,
 		icon = "1",
-		value_1 = "17 x 4",
+		value_1 = "",
 		avoid_extra = 0,
 		rarity = 1,
 		is_siren = 0,
@@ -65309,6 +65386,49 @@ pg.equip_data_statistics = {
 		},
 		property_rate = {}
 	},
+	[79481] = {
+		name = "专属弹幕-能代I",
+		type = 1,
+		nationality = 0,
+		speciality = "无",
+		range = 0,
+		angle = 0,
+		tech = 1,
+		ambush_extra = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "",
+		avoid_extra = 0,
+		rarity = 1,
+		is_siren = 0,
+		scatter = "0",
+		ammo = "无",
+		descrip = "技能弹幕",
+		value_3 = 0,
+		id = 79481,
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		weapon_id = {
+			60481
+		},
+		skill_id = {},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {}
+	},
+	[79482] = {
+		id = 79482,
+		name = "专属弹幕-能代II",
+		base = 79481,
+		is_siren = 0,
+		torpedo_ammo = 0,
+		weapon_id = {
+			60482
+		},
+		property_rate = {}
+	},
 	[89000] = {
 		name = "Random Word Generator",
 		type = 10,
@@ -65685,7 +65805,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89060] = {
-		name = "Team Emblem ",
+		name = "Team Emblem",
 		type = 10,
 		id = 89060,
 		tech = 0,
@@ -65695,7 +65815,7 @@ pg.equip_data_statistics = {
 		ambush_extra = 0,
 		value_2 = 16,
 		icon = "89060",
-		value_1 = "14",
+		value_1 = "6",
 		attribute_2 = "hit",
 		avoid_extra = 0,
 		rarity = 5,
@@ -65724,7 +65844,7 @@ pg.equip_data_statistics = {
 		id = 89061,
 		base = 89060,
 		is_siren = 0,
-		value_1 = "16",
+		value_1 = "7",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65733,7 +65853,7 @@ pg.equip_data_statistics = {
 		id = 89062,
 		base = 89060,
 		value_2 = 17,
-		value_1 = "18",
+		value_1 = "7",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65742,7 +65862,7 @@ pg.equip_data_statistics = {
 		id = 89063,
 		base = 89060,
 		value_2 = 18,
-		value_1 = "20",
+		value_1 = "8",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65751,7 +65871,7 @@ pg.equip_data_statistics = {
 		id = 89064,
 		base = 89060,
 		value_2 = 19,
-		value_1 = "22",
+		value_1 = "9",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65760,7 +65880,7 @@ pg.equip_data_statistics = {
 		id = 89065,
 		base = 89060,
 		value_2 = 20,
-		value_1 = "24",
+		value_1 = "10",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65769,7 +65889,7 @@ pg.equip_data_statistics = {
 		id = 89066,
 		base = 89060,
 		value_2 = 21,
-		value_1 = "26",
+		value_1 = "11",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65778,7 +65898,7 @@ pg.equip_data_statistics = {
 		id = 89067,
 		base = 89060,
 		value_2 = 22,
-		value_1 = "28",
+		value_1 = "12",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65787,7 +65907,7 @@ pg.equip_data_statistics = {
 		id = 89068,
 		base = 89060,
 		value_2 = 23,
-		value_1 = "30",
+		value_1 = "13",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65796,7 +65916,7 @@ pg.equip_data_statistics = {
 		id = 89069,
 		base = 89060,
 		value_2 = 24,
-		value_1 = "32",
+		value_1 = "14",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65805,12 +65925,12 @@ pg.equip_data_statistics = {
 		id = 89070,
 		base = 89060,
 		value_2 = 25,
-		value_1 = "35",
+		value_1 = "15",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
 	[89080] = {
-		name = "Gamers Mark ",
+		name = "Gamers Mark",
 		type = 10,
 		id = 89080,
 		tech = 0,
@@ -65820,7 +65940,7 @@ pg.equip_data_statistics = {
 		ambush_extra = 0,
 		value_2 = 0,
 		icon = "89080",
-		value_1 = "6",
+		value_1 = "245",
 		angle = 0,
 		avoid_extra = 0,
 		rarity = 5,
@@ -65848,7 +65968,7 @@ pg.equip_data_statistics = {
 		id = 89081,
 		base = 89080,
 		is_siren = 0,
-		value_1 = "7",
+		value_1 = "280",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65856,7 +65976,7 @@ pg.equip_data_statistics = {
 		id = 89082,
 		base = 89080,
 		is_siren = 0,
-		value_1 = "7",
+		value_1 = "310",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65864,7 +65984,7 @@ pg.equip_data_statistics = {
 		id = 89083,
 		base = 89080,
 		is_siren = 0,
-		value_1 = "8",
+		value_1 = "340",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65872,7 +65992,7 @@ pg.equip_data_statistics = {
 		id = 89084,
 		base = 89080,
 		is_siren = 0,
-		value_1 = "9",
+		value_1 = "370",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65880,7 +66000,7 @@ pg.equip_data_statistics = {
 		id = 89085,
 		base = 89080,
 		is_siren = 0,
-		value_1 = "10",
+		value_1 = "400",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65888,7 +66008,7 @@ pg.equip_data_statistics = {
 		id = 89086,
 		base = 89080,
 		is_siren = 0,
-		value_1 = "11",
+		value_1 = "430",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65896,7 +66016,7 @@ pg.equip_data_statistics = {
 		id = 89087,
 		base = 89080,
 		is_siren = 0,
-		value_1 = "12",
+		value_1 = "460",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65904,7 +66024,7 @@ pg.equip_data_statistics = {
 		id = 89088,
 		base = 89080,
 		is_siren = 0,
-		value_1 = "13",
+		value_1 = "490",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65912,7 +66032,7 @@ pg.equip_data_statistics = {
 		id = 89089,
 		base = 89080,
 		is_siren = 0,
-		value_1 = "14",
+		value_1 = "520",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -65920,12 +66040,12 @@ pg.equip_data_statistics = {
 		id = 89090,
 		base = 89080,
 		is_siren = 0,
-		value_1 = "15",
+		value_1 = "550",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
 	[89100] = {
-		name = "Corn Lantern ",
+		name = "Corn Lantern",
 		type = 10,
 		id = 89100,
 		tech = 0,
@@ -66051,7 +66171,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[89120] = {
-		name = "Ankimo ",
+		name = "Ankimo",
 		type = 10,
 		id = 89120,
 		tech = 0,
@@ -66061,7 +66181,7 @@ pg.equip_data_statistics = {
 		ambush_extra = 0,
 		value_2 = 3,
 		icon = "89120",
-		value_1 = "200",
+		value_1 = "98",
 		attribute_2 = "speed",
 		avoid_extra = 0,
 		rarity = 5,
@@ -66090,7 +66210,7 @@ pg.equip_data_statistics = {
 		id = 89121,
 		base = 89120,
 		is_siren = 0,
-		value_1 = "230",
+		value_1 = "112",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -66099,7 +66219,7 @@ pg.equip_data_statistics = {
 		id = 89122,
 		base = 89120,
 		value_2 = 4,
-		value_1 = "260",
+		value_1 = "127",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -66108,7 +66228,7 @@ pg.equip_data_statistics = {
 		id = 89123,
 		base = 89120,
 		value_2 = 4,
-		value_1 = "290",
+		value_1 = "142",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -66117,7 +66237,7 @@ pg.equip_data_statistics = {
 		id = 89124,
 		base = 89120,
 		value_2 = 5,
-		value_1 = "320",
+		value_1 = "156",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -66126,7 +66246,7 @@ pg.equip_data_statistics = {
 		id = 89125,
 		base = 89120,
 		value_2 = 5,
-		value_1 = "350",
+		value_1 = "171",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -66135,7 +66255,7 @@ pg.equip_data_statistics = {
 		id = 89126,
 		base = 89120,
 		value_2 = 6,
-		value_1 = "380",
+		value_1 = "186",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -66144,7 +66264,7 @@ pg.equip_data_statistics = {
 		id = 89127,
 		base = 89120,
 		value_2 = 6,
-		value_1 = "410",
+		value_1 = "200",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -66153,7 +66273,7 @@ pg.equip_data_statistics = {
 		id = 89128,
 		base = 89120,
 		value_2 = 7,
-		value_1 = "440",
+		value_1 = "215",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -66162,7 +66282,7 @@ pg.equip_data_statistics = {
 		id = 89129,
 		base = 89120,
 		value_2 = 7,
-		value_1 = "470",
+		value_1 = "230",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -66171,7 +66291,7 @@ pg.equip_data_statistics = {
 		id = 89130,
 		base = 89120,
 		value_2 = 8,
-		value_1 = "500",
+		value_1 = "245",
 		torpedo_ammo = 0,
 		property_rate = {}
 	},
@@ -68228,7 +68348,7 @@ pg.equip_data_statistics = {
 		property_rate = {}
 	},
 	[90600] = {
-		name = "双联37mm高射炮Mle1936",
+		name = "Twin 37mm AA Gun (Mle 1936)",
 		type = 6,
 		id = 90600,
 		tech = 0,
@@ -69226,7 +69346,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -69334,7 +69455,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -69487,7 +69609,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -69640,7 +69763,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -69715,7 +69839,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -69824,7 +69949,8 @@ pg.equip_data_statistics = {
 		},
 		skill_id = {},
 		part_main = {
-			3
+			3,
+			18
 		},
 		part_sub = {},
 		equip_parameters = {},
@@ -75125,6 +75251,9 @@ pg.equip_data_statistics = {
 		60452,
 		60453,
 		60461,
+		60471,
+		60472,
+		60473,
 		61007,
 		61008,
 		61009,
@@ -75405,6 +75534,8 @@ pg.equip_data_statistics = {
 		79462,
 		79471,
 		79472,
+		79481,
+		79482,
 		89000,
 		89001,
 		89002,

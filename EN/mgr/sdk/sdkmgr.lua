@@ -109,6 +109,10 @@ pg.SdkMgr.GetYostarUid = function (slot0)
 	return slot0:Get("GetYostarUid")
 end
 
+pg.SdkMgr.GetYostarTransCode = function (slot0)
+	return slot0:Get("GetTransCode")
+end
+
 pg.SdkMgr.CheckAudit = function (slot0)
 	if PLATFORM_CODE == PLATFORM_JP or PLATFORM_CODE == PLATFORM_US then
 		return slot0:Get("CheckAudit")

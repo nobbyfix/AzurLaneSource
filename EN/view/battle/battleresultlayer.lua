@@ -1625,8 +1625,8 @@ slot0.showPainting = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 37-50, warpins: 1 ---
-		slot1, slot2 = Ship.getWords(slot0.contextData.oldMainShips[math.random(#slot0.contextData.oldMainShips)].skinId, "lose")
+		--- BLOCK #0 37-52, warpins: 1 ---
+		cvKey, slot2, slot1 = ShipWordHelper.GetWordAndCV(slot0.contextData.oldMainShips[math.random(#slot0.contextData.oldMainShips)].skinId, ShipWordHelper.WORD_TYPE_LOSE)
 		--- END OF BLOCK #0 ---
 
 
@@ -1640,13 +1640,13 @@ slot0.showPainting = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 51-74, warpins: 2 ---
+	--- BLOCK #1 53-76, warpins: 2 ---
 	setTextEN(slot0._chat:Find("Text"), slot1)
 
 	if CHAT_POP_STR_LEN < #slot0._chat:Find("Text"):GetComponent(typeof(Text)).text then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 75-78, warpins: 1 ---
+		--- BLOCK #0 77-80, warpins: 1 ---
 		slot3.alignment = TextAnchor.MiddleLeft
 		--- END OF BLOCK #0 ---
 
@@ -1655,7 +1655,7 @@ slot0.showPainting = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 79-81, warpins: 1 ---
+		--- BLOCK #0 81-83, warpins: 1 ---
 		slot3.alignment = TextAnchor.MiddleCenter
 		--- END OF BLOCK #0 ---
 
@@ -1670,7 +1670,7 @@ slot0.showPainting = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 82-117, warpins: 2 ---
+	--- BLOCK #2 84-119, warpins: 2 ---
 	SetActive(slot0._chat, true)
 
 	slot0._chat.transform.localScale = Vector3.New(0, 0, 0)

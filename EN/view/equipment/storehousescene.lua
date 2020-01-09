@@ -45,6 +45,7 @@ slot0.init = function (slot0)
 
 	setActive(slot0.sortTpl, false)
 
+	slot0.equipSkinFilteBtn = slot0:findTF("buttons/EquipSkinFilteBtn", slot0.topPanel)
 	slot0.itemView = slot0:findTF("item_scrollview")
 	slot2 = false
 	slot3 = getProxy(SettingsProxy)
@@ -197,6 +198,9 @@ slot0.didEnter = function (slot0)
 			slot0:filterEquipment()
 			slot1(slot0.BatchDisposeBtn, slot0.page == setActive)
 			slot1(slot0.capacityTF.parent, slot0.page == setActive)
+			setActive(slot0.indexBtn, true)
+			setActive(slot0.sortBtn, true)
+			setActive(slot0.equipSkinFilteBtn, false)
 		end
 	end, SFX_PANEL)
 	onToggle(slot0, slot0.equipmentSkinBtn, function (slot0)
@@ -207,6 +211,9 @@ slot0.didEnter = function (slot0)
 			slot0:filterEquipment()
 			setActive(slot2, slot0.page == slot0.BatchDisposeBtn)
 			setActive(slot2, slot0.page == slot0.capacityTF.parent)
+			setActive(slot0.indexBtn, false)
+			setActive(slot0.sortBtn, false)
+			setActive(slot0.equipSkinFilteBtn, true)
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.backBtn, function ()
@@ -247,6 +254,25 @@ slot0.didEnter = function (slot0)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.indexPanel, function ()
 		triggerToggle(slot0.indexBtn, false)
+	end, SFX_PANEL)
+	onButton(slot0, slot0.equipSkinFilteBtn, function ()
+		slot0.equipSkinSort = slot0.equipSkinSort or IndexConst.EquipSkinSortType
+		slot0.equipSkinIndex = slot0.equipSkinIndex or IndexConst.Flags2Bits({
+			IndexConst.EquipSkinIndexAll
+		})
+		slot0.equipSkinTheme = slot0.equipSkinTheme or IndexConst.Flags2Bits({
+			IndexConst.EquipSkinThemeAll
+		})
+
+		slot0.callback = function (slot0)
+			slot0.equipSkinSort = slot0.equipSkinSort
+			slot0.equipSkinIndex = slot0.equipSkinIndex
+			slot0.equipSkinTheme = slot0.equipSkinTheme
+
+			slot0:filterEquipment()
+		end
+
+		slot0:emit(EquipmentMediator.OPEN_EQUIPSKIN_INDEX_LAYER, slot0)
 	end, SFX_PANEL)
 
 	slot0.equipmetItems = {}
@@ -301,6 +327,9 @@ slot0.didEnter = function (slot0)
 
 		setActive(slot0.BatchDisposeBtn, slot0 and slot0.page == slot0.BatchDisposeBtn)
 		setActive(slot0.filterBusyToggle, slot0)
+		setActive(slot0.BatchDisposeBtn, slot0.page == slot0.indexBtn)
+		setActive(slot0.BatchDisposeBtn, slot0.page == slot0.sortBtn)
+		setActive(slot0.equipSkinFilteBtn, slot0.page == setActive)
 	end, SFX_PANEL)
 	onToggle(slot0, slot0.designToggle, function (slot0)
 		if slot0 then
@@ -663,6 +692,12 @@ slot0.updateEquipmentCount = function (slot0, slot1)
 end
 
 slot0.filterEquipment = function (slot0)
+	if slot0.page == slot0 then
+		slot0:filterEquipSkin()
+
+		return
+	end
+
 	slot2 = slot0.contextData.indexData.types
 	slot4 = slot0.contextData.sortData
 	slot0.pageEquipments = {}
@@ -748,6 +783,63 @@ slot0.filterEquipment = function (slot0)
 	slot0:updateEquipmentCount()
 	setImageSprite(slot0:findTF("Image", slot0.sortBtn), GetSpriteFromAtlas("ui/equipmentui_atlas", slot4.spr), true)
 	setImageSprite(slot0:findTF("Image", slot0.indexBtn), GetSpriteFromAtlas("ui/equipmentui_atlas", slot1.spr), true)
+	setActive(slot0.sortImgAsc, slot0.asc)
+	setActive(slot0.sortImgDec, not slot0.asc)
+end
+
+slot0.filterEquipSkin = function (slot0, slot1)
+	slot2 = slot0.equipSkinIndex
+	slot3 = slot0.equipSkinTheme
+	slot5 = slot0.contextData.sortData
+	slot0.pageEquipments = {}
+	slot0.loadEquipmentVOs = {}
+
+	if slot0.page == slot0 then
+		for slot9, slot10 in pairs(slot0.equipmentVOs) do
+			if slot10.isSkin then
+				table.insert(slot0.pageEquipments, slot10)
+			end
+		end
+	elseif slot4 == slot1 then
+	end
+
+	if slot4 == slot0 then
+		for slot9, slot10 in pairs(slot0.pageEquipments) do
+			if IndexConst.filterEquipSkinByIndex(slot10, slot2) and IndexConst.filterEquipSkinByTheme(slot10, slot3) and slot0:checkFitBusyCondition(slot10) then
+				table.insert(slot0.loadEquipmentVOs, slot10)
+			end
+		end
+	elseif slot4 == slot1 then
+	end
+
+	if slot0.filterImportance ~= nil then
+		for slot9 = #slot0.loadEquipmentVOs, 1, -1 do
+			if slot0.loadEquipmentVOs[slot9].isSkin or (not slot10.isSkin and slot10:isImportance()) then
+				table.remove(slot0.loadEquipmentVOs, slot9)
+			end
+		end
+	end
+
+	if slot5 then
+		slot6 = slot0.asc
+
+		table.sort(slot0.loadEquipmentVOs, function (slot0, slot1)
+			return slot0:sortFunc(slot1, slot1, slot0.sortFunc)
+		end)
+	end
+
+	if slot0.contextData.qiutBtn then
+		table.insert(slot0.loadEquipmentVOs, 1, nil)
+
+		if #slot0.loadEquipmentVOs == 0 then
+			slot0:updateEquipmentCount(1)
+
+			return
+		end
+	end
+
+	slot0:updateSelected()
+	slot0:updateEquipmentCount()
 	setActive(slot0.sortImgAsc, slot0.asc)
 	setActive(slot0.sortImgDec, not slot0.asc)
 end

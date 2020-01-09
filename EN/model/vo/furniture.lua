@@ -100,6 +100,10 @@ slot0.bindConfigTable = function (slot0)
 	return pg.furniture_data_template
 end
 
+slot0.bindShopConfigTable = function (slot0)
+	return pg.furniture_shop_template
+end
+
 slot0.isFurniture = function (slot0)
 	return slot0:getConfig("type") ~= 0
 end
@@ -115,6 +119,14 @@ slot0.clearPosition = function (slot0)
 	slot0.parent = 0
 	slot0.shipId = 0
 	slot0.floor = 0
+end
+
+slot0.getConfig = function (slot0, slot1)
+	if slot0:bindConfigTable()[slot0.configId][slot1] then
+		return slot3[slot1]
+	elseif slot0:bindShopConfigTable()[slot0.configId] then
+		return slot5[slot1]
+	end
 end
 
 slot0.getTypeForComfortable = function (slot0)
@@ -210,6 +222,10 @@ slot0.isMatchSearchKey = function (slot0, slot1)
 	end
 
 	return false
+end
+
+slot0.IsShopType = function (slot0)
+	return slot0:bindShopConfigTable()[slot0.configId] ~= nil
 end
 
 return slot0

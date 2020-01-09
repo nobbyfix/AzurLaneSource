@@ -34,10 +34,6 @@ slot1.SetArgs = function (slot0, slot1, slot2)
 	end
 end
 
-slot1.onStack = function (slot0, slot1, slot2)
-	slot0._number = slot0._numberBase * slot2._stack
-end
-
 slot1.onBulletHit = function (slot0, slot1, slot2, slot3)
 	slot4 = slot3.target
 
@@ -56,15 +52,7 @@ slot1.onBulletHit = function (slot0, slot1, slot2, slot3)
 	end
 end
 
-slot1.onAttach = function (slot0, slot1, slot2)
-	slot1:UpdateHP(slot3, {
-		isMiss = false,
-		isCri = false,
-		isHeal = slot0:CalcNumber(slot1) > 0
-	})
-end
-
-slot1.onRemove = function (slot0, slot1, slot2)
+slot1.onTrigger = function (slot0, slot1, slot2)
 	slot1:UpdateHP(slot3, {
 		isMiss = false,
 		isCri = false,

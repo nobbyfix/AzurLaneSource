@@ -988,4 +988,17 @@ slot0.willExit = function (slot0)
 
 end
 
+slot0.insertEmojiToInputText = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot0.msgInput.text = slot0.msgInput.text .. string.gsub(ChatConst.EmojiIconCode, "code", slot1)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
 return slot0

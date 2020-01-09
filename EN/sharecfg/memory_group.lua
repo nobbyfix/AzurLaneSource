@@ -661,6 +661,21 @@ pg.memory_group = {
 			584
 		}
 	},
+	[146] = {
+		title = "Operation: Christmas! ",
+		type = 2,
+		id = 146,
+		icon = "title_event",
+		memories = {
+			592,
+			593,
+			594,
+			595,
+			596,
+			597,
+			598
+		}
+	},
 	[147] = {
 		title = "Blessed New Year",
 		type = 2,
@@ -1132,6 +1147,68 @@ pg.memory_group = {
 			1055
 		}
 	},
+	[176] = {
+		title = "Christmas Party! ",
+		type = 2,
+		id = 176,
+		icon = "title_event",
+		memories = {
+			1056,
+			1057,
+			1058,
+			1059,
+			1060
+		}
+	},
+	[177] = {
+		title = "Swirling Cherry Blossoms",
+		type = 2,
+		id = 177,
+		icon = "title_event",
+		memories = {
+			1061,
+			1062,
+			1063,
+			1064,
+			1065,
+			1066,
+			1067,
+			1068,
+			1069,
+			1070,
+			1071,
+			1072,
+			1073,
+			1074,
+			1075,
+			1076,
+			1077,
+			1078,
+			1079,
+			1080,
+			1081,
+			1082,
+			1083,
+			1084,
+			1085,
+			1086,
+			1087,
+			1088
+		}
+	},
+	[178] = {
+		title = "Blessings and Tidings",
+		type = 2,
+		id = 178,
+		icon = "title_event",
+		memories = {
+			1091,
+			1092,
+			1093,
+			1094,
+			1095
+		}
+	},
 	[501] = {
 		title = "{namecode:98}'s Commission",
 		type = 3,
@@ -1203,6 +1280,36 @@ pg.memory_group = {
 			264,
 			265,
 			266
+		}
+	},
+	[505] = {
+		title = "My Fond Memories",
+		type = 3,
+		id = 505,
+		icon = "title_chara_ajiakesi",
+		memories = {
+			267,
+			268,
+			269,
+			270,
+			271,
+			272,
+			273
+		}
+	},
+	[506] = {
+		title = "Hammann Observation Diary",
+		type = 3,
+		id = 506,
+		icon = "title_chara_haman",
+		memories = {
+			274,
+			275,
+			276,
+			277,
+			278,
+			279,
+			280
 		}
 	},
 	[507] = {
@@ -1773,6 +1880,7 @@ pg.memory_group = {
 		139,
 		141,
 		145,
+		146,
 		147,
 		148,
 		149,
@@ -1797,10 +1905,15 @@ pg.memory_group = {
 		171,
 		174,
 		175,
+		176,
+		177,
+		178,
 		501,
 		502,
 		503,
 		504,
+		505,
+		506,
 		507,
 		508,
 		509,

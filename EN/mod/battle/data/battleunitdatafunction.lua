@@ -214,7 +214,9 @@ ys or .Battle.BattleDataFunction.CreateWeaponUnit = function (slot0, slot1, slot
 	slot6:SetHostData(slot1)
 
 	if slot5 == slot1.UnitType.PLAYER_UNIT then
-		slot6:OverrideGCD(slot3.PLAYER_WEAPON_GLOBAL_COOL_DOWN_DURATION)
+		if slot7.auto_aftercast > 0 then
+			slot6:OverrideGCD(slot7.auto_aftercast)
+		end
 	elseif slot5 == slot1.UnitType.ENEMY_UNIT or slot1.UnitType.BOSS_UNIT then
 		slot6:HostOnEnemy()
 	end

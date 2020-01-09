@@ -37,6 +37,7 @@ end
 slot7.UpdateAutoComponent = function (slot0, slot1)
 	for slot5, slot6 in ipairs(slot0._scoutList) do
 		slot6:UpdateWeapon(slot1)
+		slot6:UpdateAirAssist()
 	end
 
 	for slot5, slot6 in ipairs(slot0._mainList) do
@@ -59,6 +60,14 @@ slot7.UpdateAutoComponent = function (slot0, slot1)
 
 	for slot5, slot6 in pairs(slot0._indieSonarList) do
 		slot5:Update(slot1)
+	end
+
+	slot0:UpdateBuff(slot1)
+end
+
+slot7.UpdateBuff = function (slot0, slot1)
+	for slot6, slot7 in pairs(slot2) do
+		slot7:Update(slot0, slot1)
 	end
 end
 
@@ -379,6 +388,7 @@ slot7.Dispose = function (slot0)
 	slot0._fleetSonar:Dispose()
 
 	slot0._fleetSonar = nil
+	slot0._buffList = nil
 	slot0._indieSonarList = nil
 end
 
@@ -457,6 +467,7 @@ slot7.init = function (slot0)
 	slot0._unitList = {}
 	slot0._maxCount = 0
 	slot0._blockCast = 0
+	slot0._buffList = {}
 
 	slot0:SetMotionSource()
 end
@@ -692,18 +703,6 @@ slot7.QuickCastTorpedo = function (slot0)
 	end
 end
 
-slot7.Jamming = function (slot0, slot1)
-	if slot1 then
-		slot0._chargeWeaponVO:StartJamming()
-		slot0._torpedoWeaponVO:StartJamming()
-		slot0._airAssistVO:StartJamming()
-	else
-		slot0._chargeWeaponVO:JammingEliminate()
-		slot0._torpedoWeaponVO:JammingEliminate()
-		slot0._airAssistVO:JammingEliminate()
-	end
-end
-
 slot7.CoupleEncourage = function (slot0)
 	slot1 = {}
 	slot2 = {}
@@ -762,7 +761,7 @@ slot7.CoupleEncourage = function (slot0)
 
 	if #slot7 > 0 then
 		slot7[math.random(#slot7)].cp:DispatchVoice(slot11)
-		slot7[math.random(#slot7)].cp:DispatchChat(HXSet.hxLan(slot7[math.random(#slot7)].content), 3, "link" .. slot7[math.random(#slot7)].linkIndex)
+		slot7[math.random(#slot7)].cp:DispatchChat(slot7[math.random(#slot7)].content, 3, "link" .. slot7[math.random(#slot7)].linkIndex)
 	end
 end
 
@@ -962,6 +961,48 @@ slot7.RemoveIndieSonar = function (slot0, slot1)
 			break
 		end
 	end
+end
+
+slot7.AttachFleetBuff = function (slot0, slot1)
+	if slot0:GetFleetBuff(slot1:GetID()) then
+		slot3:Stack(slot0)
+	else
+		slot0._buffList[slot2] = slot1
+
+		slot1:Attach(slot0)
+	end
+end
+
+slot7.RemoveFleetBuff = function (slot0, slot1)
+	if slot0:GetFleetBuff(slot1) then
+		slot2:Remove()
+	end
+end
+
+slot7.GetFleetBuff = function (slot0, slot1)
+	return slot0._buffList[slot1]
+end
+
+slot7.GetFleetBuffList = function (slot0)
+	return slot0._buffList
+end
+
+slot7.Jamming = function (slot0, slot1)
+	if slot1 then
+		slot0._chargeWeaponVO:StartJamming()
+		slot0._torpedoWeaponVO:StartJamming()
+		slot0._airAssistVO:StartJamming()
+	else
+		slot0._chargeWeaponVO:JammingEliminate()
+		slot0._torpedoWeaponVO:JammingEliminate()
+		slot0._airAssistVO:JammingEliminate()
+	end
+end
+
+slot7.Blinding = function (slot0, slot1)
+	slot0:DispatchEvent(slot0.Event.New(slot1.FLEET_BLIND, {
+		isBlind = slot1
+	}))
 end
 
 return

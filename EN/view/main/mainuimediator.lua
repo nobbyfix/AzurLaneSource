@@ -43,6 +43,7 @@ slot0.OPEN_COMMANDER = "MainUIMediator:OPEN_COMMANDER"
 slot0.OPEN_BULLETINBOARD = "MainUIMediator:OPEN_BULLETINBOARD"
 slot0.OPEN_ESCORT = "event open escort"
 slot0.ON_VOTE_BOOK = "event on vote book"
+slot0.MINIGAME_OPERATION = "MINIGAME_OPERATION"
 slot0.OPEN_INS = "MainUIMediator:OPEN_INS"
 slot0.OPEN_TECHNOLOGY = "MainUIMediator:OPEN_TECHNOLOGY"
 slot0.ON_BOSS_BATTLE = "MainUIMediator:ON_BOSS_BATTLE"
@@ -104,7 +105,6 @@ slot0.register = function (slot0)
 	slot0:updateCommissionNotices()
 	slot0:updateSettingsNotice()
 	slot0:updateExSkinNotice()
-	slot0:UpdateInsNotice()
 	slot0:updateCommanderNotices(getProxy(CommanderProxy).haveFinishedBox(slot16))
 	slot0:bind(slot0.ON_MONOPOLY, function (slot0)
 		slot0:addSubLayers(Context.New({
@@ -410,6 +410,13 @@ slot0.register = function (slot0)
 		slot0:updateGuildNotices()
 	end
 
+	slot0:bind(slot0.MINIGAME_OPERATION, function (slot0, slot1, slot2, slot3)
+		slot0:sendNotification(GAME.SEND_MINI_GAME_OP, {
+			hubid = slot1,
+			cmd = slot2,
+			args1 = slot3
+		})
+	end)
 	slot0:bind(slot0.ON_TOUCHSHIP, function (slot0, slot1)
 		slot2 = getProxy(TaskProxy)
 		slot3 = getProxy(ActivityProxy)
@@ -450,15 +457,8 @@ slot0.register = function (slot0)
 		pg.TipsMgr.GetInstance():ShowTips(i18n("warning_mail_max_1", slot20.total))
 	end
 
-	slot0.viewComponent:updateActivityMapBtn(slot7:getActivityByType(ActivityConst.ACTIVITY_TYPE_ZPROJECT))
-	slot0.viewComponent:updateActivityEscort()
 	slot0.viewComponent:updateVoteBtn(slot7:GetVoteActivity(), getProxy(VoteProxy):GetOrderBook())
-	slot0.viewComponent:updateActivityHololiveMedalBtn(getProxy(ActivityProxy):getActivityById(ActivityConst.HOLOLIVE_MEDAL_COLLECTION))
-	slot0.viewComponent:updateActivityHololiveLinkGameBtn(getProxy(ActivityProxy):getActivityById(ActivityConst.HOLOLIVE_LINKLINK_ID))
-end
-
-slot0.UpdateInsNotice = function (slot0)
-	slot0.viewComponent:UpdateInsActBtn(getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_INSTAGRAM))
+	slot0.viewComponent:ResetActivityBtns()
 end
 
 slot0.onBluePrintNotify = function (slot0)
@@ -673,6 +673,7 @@ slot0.listNotificationInterests = function (slot0)
 		MiniGameProxy.ON_HUB_DATA_UPDATE,
 		VoteProxy.VOTE_ORDER_BOOK_DELETE,
 		VoteProxy.VOTE_ORDER_BOOK_UPDATE,
+		GAME.SEND_MINI_GAME_OP_DONE,
 		GAME.ON_OPEN_INS_LAYER
 	}
 end
@@ -753,8 +754,7 @@ slot0.handleNotification = function (slot0, slot1)
 		elseif slot3.context.mediator == CommissionInfoMediator then
 			slot0.viewComponent:resetCommissionBtn()
 		elseif slot3.context.mediator == InstagramMediator then
-			slot0:UpdateInsNotice()
-			slot0.viewComponent:updateActivityMusicFestivalBtn(getProxy(ActivityProxy):getActivityById(ActivityConst.MUSIC_FESTIVAL_ID))
+			slot0.viewComponent:UpdateActivityBtn("activity_ins")
 		end
 
 		slot0.viewComponent:updateTraningCampBtn()
@@ -811,9 +811,15 @@ slot0.handleNotification = function (slot0, slot1)
 			})
 		end
 	elseif slot2 == MiniGameProxy.ON_HUB_DATA_UPDATE then
-		slot0.viewComponent:updateActivityMusicFestivalBtn(getProxy(ActivityProxy):getActivityById(ActivityConst.MUSIC_FESTIVAL_ID))
+		slot0.viewComponent:UpdateActivityBtn("activity_newyear")
 	elseif slot2 == VoteProxy.VOTE_ORDER_BOOK_DELETE or VoteProxy.VOTE_ORDER_BOOK_UPDATE == slot2 then
 		slot0.viewComponent:updateVoteBookBtn(slot3)
+	elseif slot2 == GAME.SEND_MINI_GAME_OP_DONE then
+		slot6 = slot3.argList[2]
+
+		if slot3.argList[1] == 3 and slot6 == 1 then
+			slot0.viewComponent:UpdateActivityBtn("activity_newyear")
+		end
 	end
 end
 

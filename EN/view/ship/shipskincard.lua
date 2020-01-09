@@ -604,10 +604,9 @@ slot0.loadPainting = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 37-48, warpins: 2 ---
+	--- BLOCK #2 37-43, warpins: 2 ---
 	slot2.isOn = slot3
 
-	setPaintingPrefabAsync(slot0.painting, slot0.paintingName, "pifu")
 	setPaintingPrefabAsync(slot0.painting, slot0.paintingName, "pifu")
 
 	return

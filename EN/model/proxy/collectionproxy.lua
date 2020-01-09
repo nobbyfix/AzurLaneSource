@@ -138,6 +138,8 @@ end
 
 slot0.getCollectionTotal = function (slot0)
 	return _.reduce(pg.ship_data_group.all, 0, function (slot0, slot1)
+		print(slot2)
+
 		return slot0 + ((Nation.IsLinkType(ShipGroup.getDefaultShipConfig(slot2).nationality) and 0) or 1)
 	end) + #pg.ship_data_trans.all
 end
