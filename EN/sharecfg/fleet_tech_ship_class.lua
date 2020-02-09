@@ -8,6 +8,7 @@ pg.fleet_tech_ship_class = {
 		t_level_1 = 1,
 		nation = 1,
 		ships = {
+			10102,
 			10140
 		}
 	},
@@ -49,6 +50,7 @@ pg.fleet_tech_ship_class = {
 			10129,
 			10130,
 			10131,
+			10133,
 			10135,
 			10141,
 			10114,
@@ -56,6 +58,7 @@ pg.fleet_tech_ship_class = {
 			10112,
 			10138,
 			10142,
+			10143,
 			10139,
 			10113,
 			10111
@@ -125,7 +128,8 @@ pg.fleet_tech_ship_class = {
 			10210,
 			10214,
 			10215,
-			10223
+			10223,
+			10225
 		}
 	},
 	[10203] = {
@@ -426,7 +430,8 @@ pg.fleet_tech_ship_class = {
 		t_level_1 = 31,
 		nation = 1,
 		ships = {
-			10709
+			10709,
+			10717
 		}
 	},
 	[10801] = {
@@ -596,6 +601,7 @@ pg.fleet_tech_ship_class = {
 		ships = {
 			20207,
 			20208,
+			20219,
 			20226
 		}
 	},
@@ -644,6 +650,7 @@ pg.fleet_tech_ship_class = {
 		t_level_1 = 50,
 		nation = 2,
 		ships = {
+			20204,
 			20220,
 			20224
 		}
@@ -669,6 +676,17 @@ pg.fleet_tech_ship_class = {
 		nation = 2,
 		ships = {
 			29901
+		}
+	},
+	[20210] = {
+		shiptype = 2,
+		name = "Gloucester-Class",
+		t_level = 7,
+		id = 20210,
+		t_level_1 = 47,
+		nation = 2,
+		ships = {
+			20210
 		}
 	},
 	[20301] = {
@@ -901,7 +919,8 @@ pg.fleet_tech_ship_class = {
 		t_level_1 = 70,
 		nation = 3,
 		ships = {
-			30101
+			30101,
+			30172
 		}
 	},
 	[30102] = {
@@ -1930,6 +1949,7 @@ pg.fleet_tech_ship_class = {
 		20206,
 		20207,
 		20208,
+		20210,
 		20301,
 		20302,
 		20303,

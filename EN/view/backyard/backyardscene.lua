@@ -10,10 +10,6 @@ slot0.getUIName = function (slot0)
 	return "BackYardUI"
 end
 
-slot0.getBGM = function (slot0)
-	return "backyard"
-end
-
 slot0.setBlackyardView = function (slot0, slot1)
 	slot0.view = slot1
 end

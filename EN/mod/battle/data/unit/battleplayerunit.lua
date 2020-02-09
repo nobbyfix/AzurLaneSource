@@ -114,6 +114,10 @@ ys.Battle.BattlePlayerUnit.SetRarity = function (slot0, slot1)
 	slot0._rarity = slot1
 end
 
+ys.Battle.BattlePlayerUnit.SetIntimacy = function (slot0, slot1)
+	slot0._intimacy = slot1
+end
+
 ys.Battle.BattlePlayerUnit.setWeapon = function (slot0, slot1)
 	slot2 = slot0._tmpData.default_equip_list
 	slot3 = slot0._tmpData.base_list
@@ -281,7 +285,7 @@ ys.Battle.BattlePlayerUnit.GetManualWeaponParallel = function (slot0)
 end
 
 ys.Battle.BattlePlayerUnit.LeaderSetting = function (slot0)
-	if slot0.GetWords(slot0:GetSkinID(), "hp_warning", slot0:GetDefaultSkinID()) ~= "" then
+	if slot0.GetWords(slot0:GetSkinID(), "hp_warning", slot0:GetIntimacy()) and slot2 ~= "" then
 		slot0._warningValue = slot1.WARNING_HP_RATE * slot0:GetMaxHP()
 	end
 end
@@ -292,8 +296,8 @@ ys.Battle.BattlePlayerUnit.UpdateHP = function (slot0, slot1, slot2, slot3, slot
 	if slot0._warningValue and slot0._currentHP < slot0._warningValue and not isHeal then
 		slot0._warningValue = nil
 
-		slot0:DispatchVoice(slot5)
-		slot0:DispatchChat(slot1.GetWords(slot0:GetSkinID(), slot5, slot0:GetDefaultSkinID()), 2.5, "hp_warning")
+		slot0:DispatchVoice(slot6)
+		slot0:DispatchChat(slot1.GetWords(slot0:GetSkinID(), slot6, slot5), 2.5, "hp_warning")
 	end
 
 	if slot0._mainUnitWarningValue and slot0._currentHP < slot0._mainUnitWarningValue and slot0._currentHP > 0 and not isHeal then
@@ -348,6 +352,10 @@ end
 
 ys.Battle.BattlePlayerUnit.GetRarity = function (slot0)
 	return slot0._rarity or slot0._tmpData.rarity
+end
+
+ys.Battle.BattlePlayerUnit.GetIntimacy = function (slot0)
+	return slot0._intimacy or 0
 end
 
 ys.Battle.BattlePlayerUnit.GetAutoPilotPreference = function (slot0)

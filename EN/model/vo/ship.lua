@@ -375,6 +375,10 @@ slot0.getIntimacy = function (slot0)
 	return slot0.intimacy
 end
 
+slot0.getCVIntimacy = function (slot0)
+	return slot0:getIntimacy() / 100 + ((slot0.propose and 1000) or 0)
+end
+
 slot0.getIntimacyDetail = function (slot0)
 	return pg.intimacy_template[slot0:getIntimacyLevel()].icon, slot0:getIntimacyMax(), math.floor(slot0:getIntimacy() / 100)
 end
@@ -863,6 +867,8 @@ slot0.getShipProperties = function (slot0)
 		slot0:intimacyAdditions(slot1)
 
 		for slot7, slot8 in pairs(slot0.transforms) do
+			print(slot8.id)
+
 			slot9 = pg.transform_data_template[slot8.id].effect
 
 			for slot13 = 1, slot8.level, 1 do

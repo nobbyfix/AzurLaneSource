@@ -1,4 +1,4 @@
-slot0 = class("ColoringScene", import("..base.BaseUI"))
+slot0 = class("ColoringScene", import("view.base.BaseUI"))
 slot0.Letters = {
 	"A",
 	"B",
@@ -212,6 +212,8 @@ slot0.updatePage = function (slot0)
 			slot2 = slot2 + 1
 		end
 	end
+
+	slot0:TryPlayStory()
 end
 
 slot0.updateSelectedColoring = function (slot0)
@@ -454,10 +456,16 @@ slot0.searchColoringCells = function (slot0, slot1, slot2, slot3, slot4)
 	end
 end
 
-slot0.tryPlayStory = function (slot0)
-	if nil then
-		pg.StoryMgr.GetInstance():Play(slot1)
-	end
+slot0.TryPlayStory = function (slot0)
+	slot2 = slot0.selectedIndex
+
+	table.eachAsync(pg.gameset.coloring_story.description, function (slot0, slot1, slot2)
+		if slot0 <= slot0 and slot1 then
+			pg.StoryMgr.GetInstance():Play(slot1, slot2)
+		else
+			slot2()
+		end
+	end)
 end
 
 slot0.onBackPressed = function (slot0)

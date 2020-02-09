@@ -14,14 +14,6 @@ end
 
 slot0.getUIName = slot1
 
-function slot1(slot0)
-	slot1 = "level"
-
-	return slot1
-end
-
-slot0.getBGM = slot1
-
 function slot1(slot0, slot1)
 	slot0.ships = slot1
 end

@@ -311,7 +311,7 @@ slot0.LoadBoatPart = function (slot0, slot1, slot2, slot3)
 		}
 	}
 
-	PoolMgr.GetInstance():GetUI("backyardresui", true, function (slot0)
+	function slot5(slot0)
 		slot1 = tf(slot0)
 
 		for slot5, slot6 in ipairs(slot0) do
@@ -320,14 +320,29 @@ slot0.LoadBoatPart = function (slot0, slot1, slot2, slot3)
 			slot7.localPosition = slot6[2]
 			slot7.localScale = slot6[3]
 		end
+	end
 
-		PoolMgr.GetInstance():ReturnUI("backyardresui", slot0)
-		PoolMgr.GetInstance().ReturnUI()
-	end)
+	if not slot0.backyardresui then
+		PoolMgr.GetInstance():GetUI("backyardresui", true, function (slot0)
+			slot0.backyardresui = slot0
+
+			slot0(slot0)
+			slot0()
+		end)
+	else
+		slot5(slot0.backyardresui)
+		slot3()
+	end
 end
 
 slot0.Destroy = function (slot0)
 	slot0.isExist = true
+
+	if slot0.backyardresui then
+		PoolMgr.GetInstance():ReturnUI("backyardresui", slot0.backyardresui)
+
+		slot0.backyardresui = nil
+	end
 end
 
 return slot0

@@ -1374,9 +1374,10 @@ slot8.generatePlayerUnit = function (slot0, slot1, slot2, slot3, slot4)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 58-79, warpins: 2 ---
+	--- BLOCK #3 58-83, warpins: 2 ---
 	slot11(slot12, slot13)
 	slot10:SetRarity(slot1.rarity)
+	slot10:SetIntimacy(slot1.intimacy)
 	slot10:SetShipName(slot1.name)
 
 	slot0._unitList[slot5] = slot10
@@ -1386,7 +1387,7 @@ slot8.generatePlayerUnit = function (slot0, slot1, slot2, slot3, slot4)
 	if slot10:GetIFF() == slot0.FRIENDLY_CODE then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 80-82, warpins: 1 ---
+		--- BLOCK #0 84-86, warpins: 1 ---
 		slot0._friendlyShipList[slot5] = slot10
 		--- END OF BLOCK #0 ---
 
@@ -1395,11 +1396,11 @@ slot8.generatePlayerUnit = function (slot0, slot1, slot2, slot3, slot4)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 83-89, warpins: 1 ---
+		--- BLOCK #0 87-93, warpins: 1 ---
 		if slot10:GetIFF() == slot0.FOE_CODE then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 90-91, warpins: 1 ---
+			--- BLOCK #0 94-95, warpins: 1 ---
 			slot0._foeShipList[slot5] = slot10
 			--- END OF BLOCK #0 ---
 
@@ -1419,7 +1420,7 @@ slot8.generatePlayerUnit = function (slot0, slot1, slot2, slot3, slot4)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 92-115, warpins: 3 ---
+	--- BLOCK #4 96-119, warpins: 3 ---
 	slot10:SetPosition(slot3)
 	slot3.InitUnitSkill(slot1, slot10)
 	slot3.InitEquipSkill(slot1.equipment, slot10)

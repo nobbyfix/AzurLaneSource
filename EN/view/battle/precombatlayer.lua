@@ -24,12 +24,14 @@ end
 slot0.init = function (slot0)
 	slot0.eventTriggers = {}
 	slot0._startBtn = slot0:findTF("right/start")
-	slot0._popup = slot0:findTF("right/start/popup")
-	slot0._ticket = slot0:findTF("right/start/ticket")
-	slot0._costText = slot0:findTF("right/start/popup/Text")
+	slot0._costContainer = slot0:findTF("right/start/cost_container")
+	slot0._popup = slot0._costContainer:Find("popup")
+	slot0._ticket = slot0._costContainer:Find("ticket")
+	slot0._costText = slot0._popup:Find("Text")
 	slot0._moveLayer = slot0:findTF("moveLayer")
 	slot1 = slot0:findTF("middle")
 	slot0._autoToggle = slot0:findTF("auto_toggle")
+	slot0._autoSubToggle = slot0:findTF("sub_toggle_container/sub_toggle")
 	slot0._fleetInfo = slot1:Find("fleet_info")
 	slot0._fleetNameText = slot1:Find("fleet_info/fleet_name/Text")
 	slot0._fleetNumText = slot1:Find("fleet_info/fleet_number")
@@ -89,6 +91,10 @@ end
 
 slot0.SetPlayerInfo = function (slot0, slot1)
 	slot0._resPanel:setResources(slot1)
+end
+
+slot0.SetSubFlag = function (slot0, slot1)
+	slot0._subUseable = slot1 or false
 end
 
 slot0.SetShips = function (slot0, slot1)
@@ -200,6 +206,10 @@ slot0.SetCurrentFleet = function (slot0, slot1)
 			break
 		end
 	end
+end
+
+slot0.SetTicketItemID = function (slot0, slot1)
+	slot0._ticketItemID = slot1
 end
 
 slot0.CheckLegalFleet = function (slot0)
@@ -330,6 +340,7 @@ slot0.didEnter = function (slot0)
 
 	if slot0.contextData.system == SYSTEM_DUEL then
 		setActive(slot0._autoToggle, false)
+		setActive(slot0._autoSubToggle, false)
 	else
 		setActive(slot0._autoToggle, true)
 		onToggle(slot0, slot0._autoToggle, function (slot0)
@@ -337,6 +348,19 @@ slot0.didEnter = function (slot0)
 				isOn = not slot0,
 				toggle = slot0._autoToggle
 			})
+
+			if slot0 and slot0._subUseable == true then
+				setActive(slot0._autoSubToggle, true)
+				onToggle(slot0, slot0._autoSubToggle, function (slot0)
+					slot0:emit(PreCombatMediator.ON_SUB_AUTO, {
+						isOn = not slot0,
+						toggle = slot0._autoSubToggle
+					})
+				end, SFX_PANEL, SFX_PANEL)
+				triggerToggle(slot0._autoSubToggle, ys.Battle.BattleState.IsAutoSubActive())
+			else
+				setActive(slot0._autoSubToggle, false)
+			end
 		end, SFX_PANEL, SFX_PANEL)
 		triggerToggle(slot0._autoToggle, ys.Battle.BattleState.IsAutoBotActive())
 	end
@@ -1160,10 +1184,12 @@ slot0.displayFleetInfo = function (slot0)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot1 = slot0._currentFleetVO:GetPropertiesSum()
 
-	setActive(slot0._popup, slot5 ~= SYSTEM_DUEL)
+	setActive(slot0._costContainer, slot5 ~= SYSTEM_DUEL)
 	slot0.tweenNumText(slot0._costText, (pg.battle_cost_template[slot0.contextData.system].oil_cost == 0 and 0) or slot0._currentFleetVO:GetCostSum().oil)
 	slot0.tweenNumText(slot0._vanguardGS, slot0._currentFleetVO:GetGearScoreSum(TeamType.Vanguard))
 	slot0.tweenNumText(slot0._mainGS, slot0._currentFleetVO:GetGearScoreSum(TeamType.Main))
+
+	slot8 = nil
 
 	--- END OF BLOCK #0 ---
 
@@ -1180,32 +1206,12 @@ slot0.displayFleetInfo = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #2 40-58, warpins: 2 ---
-	if slot5 == SYSTEM_BOSS_EXPERIMENT then
+	--- BLOCK #2 40-59, warpins: 2 ---
+	if slot0._ticketItemID then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 59-70, warpins: 1 ---
-		setActive(slot0._ticket, true)
-		setText(slot0:findTF("right/start/ticket/Text"), 0)
-		--- END OF BLOCK #0 ---
-
-
-
-	else
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 71-73, warpins: 1 ---
-		if slot5 == SYSTEM_HP_SHARE_ACT_BOSS then
-
-			-- Decompilation error in this vicinity:
-			--- BLOCK #0 74-84, warpins: 1 ---
-			setActive(slot0._ticket, true)
-			setText(slot0:findTF("right/start/ticket/Text"), 1)
-			--- END OF BLOCK #0 ---
-
-
-
-		end
+		--- BLOCK #0 60-80, warpins: 1 ---
+		setImageSprite(slot0._ticket:Find("icon"), GetSpriteFromAtlas(slot8, ""))
 		--- END OF BLOCK #0 ---
 
 
@@ -1219,12 +1225,13 @@ slot0.displayFleetInfo = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #3 85-87, warpins: 3 ---
-	if slot5 == SYSTEM_ACT_BOSS or slot5 == SYSTEM_HP_SHARE_ACT_BOSS or slot5 == SYSTEM_BOSS_EXPERIMENT then
+	--- BLOCK #3 81-83, warpins: 2 ---
+	if slot5 == SYSTEM_BOSS_EXPERIMENT then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 94-102, warpins: 3 ---
-		setText(slot0._fleetNameText, Fleet.DEFAULT_NAME_BOSS_ACT[slot0._currentFleetVO.id])
+		--- BLOCK #0 84-96, warpins: 1 ---
+		setActive(slot0._ticket, true)
+		setText(slot0._ticket:Find("Text"), 0)
 		--- END OF BLOCK #0 ---
 
 
@@ -1232,8 +1239,18 @@ slot0.displayFleetInfo = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 103-109, warpins: 1 ---
-		setText(slot0._fleetNameText, slot0.defaultFleetName(slot0._currentFleetVO))
+		--- BLOCK #0 97-99, warpins: 1 ---
+		if slot5 == SYSTEM_HP_SHARE_ACT_BOSS then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 100-111, warpins: 1 ---
+			setActive(slot0._ticket, true)
+			setText(slot0._ticket:Find("Text"), 1)
+			--- END OF BLOCK #0 ---
+
+
+
+		end
 		--- END OF BLOCK #0 ---
 
 
@@ -1247,11 +1264,39 @@ slot0.displayFleetInfo = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #4 110-115, warpins: 2 ---
+	--- BLOCK #4 112-114, warpins: 3 ---
+	if slot5 == SYSTEM_ACT_BOSS or slot5 == SYSTEM_HP_SHARE_ACT_BOSS or slot5 == SYSTEM_BOSS_EXPERIMENT then
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 121-129, warpins: 3 ---
+		setText(slot0._fleetNameText, Fleet.DEFAULT_NAME_BOSS_ACT[slot0._currentFleetVO.id])
+		--- END OF BLOCK #0 ---
+
+
+
+	else
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 130-136, warpins: 1 ---
+		setText(slot0._fleetNameText, slot0.defaultFleetName(slot0._currentFleetVO))
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #5 137-142, warpins: 2 ---
 	setText(slot0._fleetNumText, slot0._currentFleetVO.id)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
 
 

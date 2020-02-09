@@ -248,6 +248,13 @@ function slot1(slot0, slot1, slot2)
 			function slot11(slot0)
 				slot1 = slot0
 				slot1 = slot1.sprites
+
+				if not slot1 then
+					return
+				end
+
+				slot1 = slot0
+				slot1 = slot1.sprites
 				slot2 = slot1
 				slot1[slot2] = slot0
 				slot1 = slot2
@@ -982,16 +989,6 @@ function slot1(slot0, slot1, slot2)
 	slot4 = slot2
 	slot3 = slot2.GetCanDisplayReply
 	slot3, slot4 = slot3(slot4)
-	slot5 = table
-	slot5 = slot5.sort
-	slot6 = slot3
-
-	function slot7(slot0, slot1)
-		return slot0.time < slot1.time
-	end
-
-	slot5(slot6, slot7)
-
 	slot5 = UIItemList
 	slot5 = slot5.New
 	slot7 = slot1
@@ -1002,6 +999,30 @@ function slot1(slot0, slot1, slot2)
 	slot7 = slot1.Find
 	slot9 = "replys/sub"
 	slot5 = slot5(slot6, slot7(slot8, slot9))
+	slot6 = table
+	slot6 = slot6.sort
+	slot7 = slot3
+
+	function slot8(slot0, slot1)
+		slot2 = slot0.level
+		slot3 = slot1.level
+
+		if slot2 == slot3 then
+			slot2 = slot0.time
+			slot3 = slot1.time
+
+			if slot2 == slot3 then
+				return slot0.id < slot1.id
+			else
+				return slot0.time < slot1.time
+			end
+		else
+			return slot0.level < slot1.level
+		end
+	end
+
+	slot6(slot7, slot8)
+
 	slot7 = slot5
 	slot6 = slot5.make
 

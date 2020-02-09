@@ -111,6 +111,10 @@ slot3.NotActive = function (slot0)
 	slot0._isActive = false
 end
 
+slot3.GetCaster = function (slot0)
+	return nil
+end
+
 slot3.GetID = function (slot0)
 	return slot0._id
 end

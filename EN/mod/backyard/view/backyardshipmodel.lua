@@ -3001,37 +3001,31 @@ function slot5(slot0, slot1)
 			end
 		end
 
-		slot4 = slot1
-		slot4 = slot4.roles
-		slot4 = slot4[1]
+		slot4 = slot2
+		slot5 = slot4
+		slot4 = slot4.getUniqueShipAction
+		slot6 = slot3
+		slot7 = slot1
+		slot7 = slot7.boatVO
+		slot7 = slot7.skinId
+		slot4 = slot4(slot5, slot6, slot7)
 
-		if slot0 == slot4 then
-			slot4 = slot2
-			slot5 = slot4
-			slot4 = slot4.getUniqueShipAction
-			slot6 = slot3
-			slot7 = slot1
-			slot7 = slot7.boatVO
-			slot7 = slot7.skinId
-			slot4 = slot4(slot5, slot6, slot7)
-
-			if slot4 then
-				slot3 = slot4
-			end
+		if slot4 then
+			slot3 = slot4
 		end
 
-		slot5 = slot0
-		slot4 = slot0.SetAction
+		slot6 = slot0
+		slot5 = slot0.SetAction
+		slot7 = slot3
+		slot8 = 0
+
+		slot5(slot6, slot7, slot8)
+
+		slot5 = _
+		slot5 = slot5.detect
 		slot6 = slot3
-		slot7 = 0
 
-		slot4(slot5, slot6, slot7)
-
-		slot4 = _
-		slot4 = slot4.detect
-		slot5 = slot3
-
-		function slot6(slot0)
+		function slot7(slot0)
 
 			-- Decompilation error in this vicinity:
 			slot1 = slot0[1]
@@ -3040,35 +3034,35 @@ function slot5(slot0, slot1)
 			return slot1.id == slot0[3]
 		end
 
-		slot4 = slot4(slot5, slot6)
+		slot5 = slot5(slot6, slot7)
 
-		if slot4 then
-			slot5 = slot4[2]
-			slot6 = slot1
-			slot6 = slot6.timer
-			slot6 = slot6[slot0]
+		if slot5 then
+			slot6 = slot5[2]
+			slot7 = slot1
+			slot7 = slot7.timer
+			slot7 = slot7[slot0]
 
-			if slot6 then
-				slot6 = slot1
-				slot6 = slot6.timer
-				slot6 = slot6[slot0]
-				slot7 = slot6
-				slot6 = slot6.Stop
+			if slot7 then
+				slot7 = slot1
+				slot7 = slot7.timer
+				slot7 = slot7[slot0]
+				slot8 = slot7
+				slot7 = slot7.Stop
 
-				slot6(slot7)
+				slot7(slot8)
 
-				slot6 = slot1
-				slot6 = slot6.timer
-				slot7 = nil
-				slot6[slot0] = slot7
+				slot7 = slot1
+				slot7 = slot7.timer
+				slot8 = nil
+				slot7[slot0] = slot8
 			end
 
-			slot6 = slot1
-			slot6 = slot6.timer
-			slot7 = Timer
-			slot7 = slot7.New
+			slot7 = slot1
+			slot7 = slot7.timer
+			slot8 = Timer
+			slot8 = slot8.New
 
-			function slot8()
+			function slot9()
 				slot0 = slot0
 				slot0 = slot0.timer
 				slot1 = slot1
@@ -3088,22 +3082,22 @@ function slot5(slot0, slot1)
 				slot0()
 			end
 
-			slot9 = slot5
-			slot10 = 1
-			slot7 = slot7(slot8, slot9, slot10)
-			slot6[slot0] = slot7
-			slot6 = slot1
-			slot6 = slot6.timer
-			slot6 = slot6[slot0]
-			slot7 = slot6
-			slot6 = slot6.Start
+			slot10 = slot6
+			slot11 = 1
+			slot8 = slot8(slot9, slot10, slot11)
+			slot7[slot0] = slot8
+			slot7 = slot1
+			slot7 = slot7.timer
+			slot7 = slot7[slot0]
+			slot8 = slot7
+			slot7 = slot7.Start
 
-			slot6(slot7)
+			slot7(slot8)
 		else
-			slot6 = slot0
-			slot5 = slot0.SetActionCallBack
+			slot7 = slot0
+			slot6 = slot0.SetActionCallBack
 
-			function slot7(slot0)
+			function slot8(slot0)
 				if slot0 == "finish" then
 					slot1 = slot0
 					slot2 = slot1
@@ -3118,7 +3112,7 @@ function slot5(slot0, slot1)
 				end
 			end
 
-			slot5(slot6, slot7)
+			slot6(slot7, slot8)
 		end
 	end
 

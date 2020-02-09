@@ -297,13 +297,80 @@ return {
 				-- Decompilation error in this vicinity:
 				--- BLOCK #0 21-31, warpins: 1 ---
 				slot4 = false
+				slot5 = false
 
-				if getProxy(ActivityProxy):getActivityById(ActivityConst.ACTIVITY_BOSS_PT_ID) then
+				if pg.activity_event_worldboss[slot2:getConfig("config_id")] then
 
 					-- Decompilation error in this vicinity:
-					--- BLOCK #0 32-39, warpins: 1 ---
-					slot4 = ActivityBossPtData.New(slot5):CanGetAward()
+					--- BLOCK #0 32-34, warpins: 1 ---
+					if slot7.time ~= "stop" then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 35-44, warpins: 1 ---
+						slot8 = pg.TimeMgr.GetInstance():parseTimeFromConfig(slot7.time[2])
+						--- END OF BLOCK #0 ---
+
+
+
+					else
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 45-46, warpins: 1 ---
+						slot8 = false
+
+						if false then
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 47-47, warpins: 0 ---
+							slot8 = true
+							--- END OF BLOCK #0 ---
+
+
+
+						end
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+
 					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 48-49, warpins: 3 ---
+					if slot8 then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 50-58, warpins: 1 ---
+						if slot8 > pg.TimeMgr.GetInstance():GetServerTime() then
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 59-60, warpins: 1 ---
+							slot5 = false
+							--- END OF BLOCK #0 ---
+
+
+
+						else
+
+							-- Decompilation error in this vicinity:
+							--- BLOCK #0 61-61, warpins: 1 ---
+							slot5 = true
+							--- END OF BLOCK #0 ---
+
+
+
+						end
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #1 ---
 
 
 
@@ -316,14 +383,77 @@ return {
 
 
 				-- Decompilation error in this vicinity:
-				--- BLOCK #1 40-52, warpins: 2 ---
+				--- BLOCK #1 62-63, warpins: 4 ---
+				if not slot5 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 64-66, warpins: 1 ---
+					if slot2.data2 == 1 then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 67-68, warpins: 1 ---
+						slot4 = false
+						--- END OF BLOCK #0 ---
+
+
+
+					else
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 69-69, warpins: 1 ---
+						slot4 = true
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+					FLOW; TARGET BLOCK #1
+
+
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #1 70-70, warpins: 2 ---
+					--- END OF BLOCK #1 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 71-80, warpins: 1 ---
+					if getProxy(ActivityProxy):getActivityById(ActivityConst.ACTIVITY_BOSS_PT_ID) then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 81-88, warpins: 1 ---
+						slot4 = ActivityBossPtData.New(slot8):CanGetAward()
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 89-101, warpins: 3 ---
 				setActive(slot1:Find("Tip"), slot4)
 				onButton(slot0, slot1, function ()
 
 					-- Decompilation error in this vicinity:
 					--- BLOCK #0 1-11, warpins: 1 ---
 					slot0:emit(MainUIMediator.GO_SCENE, {
-						SCENE.ACT_BOSS_BATTLE
+						SCENE.ACT_BOSS_SPF
 					})
 
 					return
@@ -332,7 +462,7 @@ return {
 
 
 				end, SFX_PANEL)
-				--- END OF BLOCK #1 ---
+				--- END OF BLOCK #2 ---
 
 
 
@@ -345,7 +475,7 @@ return {
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #2 53-54, warpins: 2 ---
+			--- BLOCK #2 102-103, warpins: 2 ---
 			return
 			--- END OF BLOCK #2 ---
 
@@ -355,6 +485,19 @@ return {
 	},
 	{
 		ButtonName = "activity_ins",
+		CtorButton = function (slot0, slot1)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-11, warpins: 1 ---
+			GetOrAddComponent(LayoutElement).ignoreLayout = true
+			slot1.anchoredPosition = Vector2(104, -752.5)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end,
 		UpdateButton = function (slot0, slot1)
 
 			-- Decompilation error in this vicinity:
@@ -420,13 +563,297 @@ return {
 
 		end
 	},
+	{
+		Tip = "tip",
+		Image = "event_minigame",
+		ButtonName = "activity_springfestival",
+		UpdateButton = function (slot0, slot1)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-10, warpins: 1 ---
+			if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_MINIGAME) then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 11-14, warpins: 1 ---
+				slot3 = not slot2:isEnd()
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 15-20, warpins: 2 ---
+			setActive(slot1, slot3)
+
+			if slot3 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 21-36, warpins: 1 ---
+				slot6 = getProxy(MiniGameProxy)
+				slot7 = nil
+				slot7 = getProxy(ActivityProxy):getActivityById(ActivityConst.BEAT_MONSTER_NIAN_2020)
+
+				if not false and slot7 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 39-42, warpins: 1 ---
+					slot4 = slot7:readyToAchieve()
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 43-50, warpins: 3 ---
+				slot7 = slot5:getActivityById(ActivityConst.MONOPOLY_2020)
+
+				if not slot4 and slot7 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 53-56, warpins: 1 ---
+					slot4 = slot7:readyToAchieve()
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #2 57-58, warpins: 3 ---
+				if not slot4 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 59-65, warpins: 1 ---
+					slot4 = getProxy(ColoringProxy):CheckTodayTip()
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #2 ---
+
+				FLOW; TARGET BLOCK #3
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #3 66-67, warpins: 2 ---
+				if not slot4 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 68-71, warpins: 1 ---
+					slot4 = RedPacketLayer.isShowRedPoint()
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #3 ---
+
+				FLOW; TARGET BLOCK #4
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #4 72-80, warpins: 2 ---
+				slot8 = slot6:GetHubByHubId(slot2:getConfig("config_id"))
+
+				if not slot4 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 81-84, warpins: 1 ---
+					if slot8.count <= 0 then
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 85-86, warpins: 1 ---
+						slot4 = false
+						--- END OF BLOCK #0 ---
+
+
+
+					else
+
+						-- Decompilation error in this vicinity:
+						--- BLOCK #0 87-87, warpins: 1 ---
+						slot4 = true
+						--- END OF BLOCK #0 ---
+
+
+
+					end
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #4 ---
+
+				FLOW; TARGET BLOCK #5
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #5 88-100, warpins: 3 ---
+				setActive(slot1:Find("Tip"), slot4)
+				onButton(slot0, slot1, function ()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-10, warpins: 1 ---
+					pg.m02:sendNotification(GAME.GO_SCENE, SCENE.SPRING_TOWN)
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
+				end, SFX_PANEL)
+				--- END OF BLOCK #5 ---
+
+
+
+			end
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 101-101, warpins: 2 ---
+			return
+			--- END OF BLOCK #2 ---
+
+
+
+		end
+	},
+	{
+		Tip = "tip",
+		Image = "event_LanternFestival",
+		ButtonName = "activity_LanternFestival",
+		UpdateButton = function (slot0, slot1)
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 1-10, warpins: 1 ---
+			if getProxy(ActivityProxy):getActivityById(ActivityConst.LANTERNFESTIVAL) then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 11-14, warpins: 1 ---
+				slot3 = not slot2:isEnd()
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 15-20, warpins: 2 ---
+			setActive(slot1, slot3)
+
+			if slot3 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 21-34, warpins: 1 ---
+				if getProxy(MiniGameProxy).GetHubByHubId(slot4, slot2:getConfig("config_id")).count <= 0 or slot5.usedtime >= 7 then
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 39-40, warpins: 2 ---
+					slot6 = false
+					--- END OF BLOCK #0 ---
+
+
+
+				else
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 41-41, warpins: 1 ---
+					slot6 = true
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				--- END OF BLOCK #0 ---
+
+				FLOW; TARGET BLOCK #1
+
+
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #1 42-54, warpins: 2 ---
+				setActive(slot1:Find("Tip"), slot6)
+				onButton(slot0, slot1, function ()
+
+					-- Decompilation error in this vicinity:
+					--- BLOCK #0 1-9, warpins: 1 ---
+					pg.m02:sendNotification(GAME.GO_MINI_GAME, 10)
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
+				end, SFX_PANEL)
+				--- END OF BLOCK #1 ---
+
+
+
+			end
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 55-55, warpins: 2 ---
+			return
+			--- END OF BLOCK #2 ---
+
+
+
+		end
+	},
 	LayoutProperty = {
 		CellSize = Vector2(208, 215)
 	},
 	CurrentEntrancesList = {
 		1,
 		2,
-		3,
+		5,
+		8,
 		6
 	}
 }

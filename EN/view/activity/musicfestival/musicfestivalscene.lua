@@ -4,10 +4,6 @@ slot0.getUIName = function (slot0)
 	return "MusicFestivalUI"
 end
 
-slot0.getBGM = function (slot0)
-	return "azumaster-ins"
-end
-
 slot0.HUB_ID = 2
 
 slot0.init = function (slot0)

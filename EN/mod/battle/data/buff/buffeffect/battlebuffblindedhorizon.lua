@@ -48,6 +48,10 @@ end
 
 slot1.onAttach = function (slot0, slot1, slot2)
 	slot0.Battle.BattleAttr.FlashByBuff(slot1, "blindedHorizon", slot0._horizonRange)
+
+	if slot1:GetFleetVO() then
+		slot3:UpdateHorizon()
+	end
 end
 
 slot1.onRemove = function (slot0, slot1, slot2)

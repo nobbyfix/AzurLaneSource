@@ -4,7 +4,7 @@ return {
 		{
 			alpha = 0.8,
 			style = {
-				text = "点击这里可以对这条动态进行点赞",
+				text = "Tap here to Like this post",
 				mode = 1,
 				dir = -1,
 				posY = -184.2,
@@ -17,7 +17,7 @@ return {
 		{
 			alpha = 0.8,
 			style = {
-				text = "点击这里可以分享这条动态",
+				text = "Tap here to Share this post",
 				mode = 1,
 				dir = 1,
 				posY = -184.2,
@@ -30,7 +30,7 @@ return {
 		{
 			alpha = 0.8,
 			style = {
-				text = "点击这里可以对这条动态进行评论",
+				text = "Tap here to comment on this post",
 				mode = 1,
 				dir = 1,
 				posY = -209.9,

@@ -179,5 +179,31 @@ return {
 		isShow = function ()
 			return getProxy(ActivityProxy):getActivityById(ActivityConst.NEWYEAR_ACTIVITY) and not slot0:isEnd()
 		end
+	},
+	{
+		banner = "activity_redpacket",
+		event = ActivityMediator.OPEN_RED_PACKET_LAYER,
+		data = {},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_RED_PACKETS) and not slot0:isEnd()
+		end,
+		isTip = function ()
+			return RedPacketLayer.isShowRedPoint()
+		end
+	},
+	{
+		banner = "LanternFestival",
+		event = ActivityMediator.GO_MINI_GAME,
+		data = {
+			10
+		},
+		isShow = function ()
+			return getProxy(ActivityProxy):getActivityById(ActivityConst.LANTERNFESTIVAL) and not slot0:isEnd()
+		end,
+		isTip = function ()
+			if getProxy(ActivityProxy):getActivityById(ActivityConst.LANTERNFESTIVAL) and not slot0:isEnd() then
+				return getProxy(MiniGameProxy).GetHubByHubId(slot1, slot0:getConfig("config_id")).count > 0 and slot2.usedtime < 7
+			end
+		end
 	}
 }

@@ -25,6 +25,7 @@ slot0.SetUI = function (slot0, slot1)
 	slot0.curtainTF = slot0:findTF("AD/curtain")
 	slot0.startLabel = slot0.curtainTF:Find("start_label")
 	slot0.ABtn = slot0:findTF("AD/A_btn")
+	slot0.BBtn = slot0:findTF("AD/B_btn")
 	slot0.joyStick = slot0:findTF("AD/joyStick")
 end
 
@@ -73,14 +74,21 @@ slot0.OnInited = function (slot0)
 	slot0:OnTrigger(slot0.ABtn, slot1, function ()
 		slot0.controller:Input(BeatMonsterNianConst.ACTION_NAME_A)
 	end)
-	slot0:OnSwitch(slot0.joyStick, slot1, function (slot0)
-		slot0.controller:Input((slot0 and BeatMonsterNianConst.ACTION_NAME_L) or BeatMonsterNianConst.ACTION_NAME_R)
+	slot0:OnTrigger(slot0.BBtn, slot1, function ()
+		slot0.controller:Input(BeatMonsterNianConst.ACTION_NAME_B)
+	end)
+	slot0:OnJoyStickTrigger(slot0.joyStick, slot1, function (slot0)
+		if slot0 > 0 then
+			slot0.controller:Input(BeatMonsterNianConst.ACTION_NAME_R)
+		elseif slot0 < 0 then
+			slot0.controller:Input(BeatMonsterNianConst.ACTION_NAME_L)
+		end
 	end)
 end
 
-slot0.OnAttackCntUpdate = function (slot0, slot1)
+slot0.OnAttackCntUpdate = function (slot0, slot1, slot2)
 	slot0.attackCnt = slot1
-	slot0.attackCntTF.text = slot1
+	slot0.attackCntTF.text = (slot2 and "-") or slot1
 end
 
 slot0.OnMonsterHpUpdate = function (slot0, slot1)
@@ -158,6 +166,21 @@ slot0.OnChangeNianAction = function (slot0, slot1)
 
 end
 
+slot0.BanJoyStick = function (slot0, slot1)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-17, warpins: 1 ---
+	setActive(slot0.joyStick:Find("ban"), slot1)
+
+	GetOrAddComponent(slot0.joyStick, typeof(EventTriggerListener)).enabled = not slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
 slot0.OnInputChange = function (slot0, slot1)
 
 	-- Decompilation error in this vicinity:
@@ -173,7 +196,7 @@ slot0.OnInputChange = function (slot0, slot1)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 14-63, warpins: 0 ---
+		--- BLOCK #1 14-76, warpins: 0 ---
 		for slot6, slot7 in ipairs(slot0.actionKeys) do
 
 			-- Decompilation error in this vicinity:
@@ -181,6 +204,7 @@ slot0.OnInputChange = function (slot0, slot1)
 			setActive(slot7:Find("A"), (string.sub(slot1, slot6, slot6) or "") == BeatMonsterNianConst.ACTION_NAME_A)
 			setActive(slot7:Find("L"), (string.sub(slot1, slot6, slot6) or "") == BeatMonsterNianConst.ACTION_NAME_L)
 			setActive(slot7:Find("R"), (string.sub(slot1, slot6, slot6) or "") == BeatMonsterNianConst.ACTION_NAME_R)
+			setActive(slot7:Find("B"), (string.sub(slot1, slot6, slot6) or "") == BeatMonsterNianConst.ACTION_NAME_B)
 			--- END OF BLOCK #0 ---
 
 			FLOW; TARGET BLOCK #1
@@ -212,7 +236,7 @@ slot0.OnInputChange = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #4 61-61, warpins: 2 ---
+			--- BLOCK #4 61-70, warpins: 2 ---
 			--- END OF BLOCK #4 ---
 
 			FLOW; TARGET BLOCK #5
@@ -220,8 +244,16 @@ slot0.OnInputChange = function (slot0, slot1)
 
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #5 62-63, warpins: 2 ---
+			--- BLOCK #5 74-74, warpins: 2 ---
 			--- END OF BLOCK #5 ---
+
+			FLOW; TARGET BLOCK #6
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #6 75-76, warpins: 2 ---
+			--- END OF BLOCK #6 ---
 
 
 
@@ -239,11 +271,20 @@ slot0.OnInputChange = function (slot0, slot1)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 64-68, warpins: 2 ---
+	--- BLOCK #1 77-85, warpins: 2 ---
 	setActive(slot0.actions, slot2)
+	slot0:BanJoyStick(#slot1 == 2)
 
 	return
 	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #2 89-90, warpins: 2 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -376,30 +417,39 @@ slot0.OnTrigger = function (slot0, slot1, slot2, slot3)
 
 end
 
-slot0.OnSwitch = function (slot0, slot1, slot2, slot3)
+slot0.OnJoyStickTrigger = function (slot0, slot1, slot2, slot3)
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #0 1-13, warpins: 1 ---
-	onButton(slot0, slot1, function ()
+	--- BLOCK #0 1-34, warpins: 1 ---
+	slot4 = slot1:Find("m")
+	slot5 = slot1:Find("l")
+	slot6 = slot1:Find("r")
+	slot7 = GetOrAddComponent(slot1, typeof(EventTriggerListener))
+	slot8 = nil
+	slot9 = false
+
+	slot7:AddBeginDragFunc(function (slot0, slot1)
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-4, warpins: 1 ---
-		if slot0() then
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = slot1()
+		slot2 = slot1.position
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end)
+	slot7:AddDragFunc(function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		if not slot0 then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 5-13, warpins: 1 ---
-			slot2(not slot1)
-
-			if slot3 then
-
-				-- Decompilation error in this vicinity:
-				--- BLOCK #0 14-16, warpins: 1 ---
-				slot3(slot1)
-				--- END OF BLOCK #0 ---
-
-
-
-			end
+			--- BLOCK #0 4-4, warpins: 1 ---
+			return
 			--- END OF BLOCK #0 ---
 
 
@@ -413,28 +463,75 @@ slot0.OnSwitch = function (slot0, slot1, slot2, slot3)
 
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #1 17-17, warpins: 3 ---
+		--- BLOCK #1 5-13, warpins: 2 ---
+		setActive(slot1.position.x - slot1.x, slot1.position.x - slot1.x == 0)
+		setActive(setActive, slot2 < 0)
+		setActive(setActive, slot2 > 0)
+
+		return
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 17-22, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 26-31, warpins: 2 ---
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 35-36, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+
+
+	end)
+	slot7:AddDragEndFunc(function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-3, warpins: 1 ---
+		if not slot0 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 4-4, warpins: 1 ---
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 5-25, warpins: 2 ---
+		slot2(slot2)
+		setActive(setActive, true)
+		setActive(setActive, false)
+		setActive(false, false)
+
 		return
 		--- END OF BLOCK #1 ---
 
 
 
-	end, SFX_PANEL)
-
-	-- Decompilation error in this vicinity:
-	function (slot0)
-
-		-- Decompilation error in this vicinity:
-		--- BLOCK #0 1-17, warpins: 1 ---
-		setActive(slot0:Find("on"), slot0)
-		setActive(slot0:Find("off"), not slot0)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end(false)
+	end)
 
 	return
 	--- END OF BLOCK #0 ---

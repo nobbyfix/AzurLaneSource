@@ -4,10 +4,6 @@ slot0.getUIName = function (slot0)
 	return "SummerFeastUI"
 end
 
-slot0.getBGM = function (slot0)
-	return "main"
-end
-
 slot0.HUB_ID = 1
 slot1 = {
 	[0] = {

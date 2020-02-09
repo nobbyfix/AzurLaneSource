@@ -4,10 +4,6 @@ slot0.getUIName = function (slot0)
 	return "NewyearFestivalUI"
 end
 
-slot0.getBGM = function (slot0)
-	return "newyear2"
-end
-
 slot0.HUB_ID = 4
 
 slot0.init = function (slot0)

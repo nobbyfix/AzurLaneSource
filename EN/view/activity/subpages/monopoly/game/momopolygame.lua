@@ -1,4 +1,4 @@
-slot0 = class("MonopolyLayer", import("..base.BaseUI"))
+slot0 = class("MonopolyGame")
 slot1 = pg.activity_event_monopoly_map
 slot2 = pg.activity_event_monopoly_event
 slot3 = 501041
@@ -334,7 +334,7 @@ function slot13(slot0, slot1)
 			return Vector3(slot0.startPos.x + slot0.cell.column * slot0.offset.x + slot0.cell.row * slot0.offset.x, slot0.startPos.y + slot0.cell.column * slot0.offset.y + slot0.cell.row * -slot0.offset.y, 0)
 		end,
 		UpdateStyle = function (slot0)
-			slot0._img.sprite = GetSpriteFromAtlas("ui/monopolyui_atlas", slot0.cell.config.icon)
+			slot0._img.sprite = GetSpriteFromAtlas("ui/activityuipage/monopoly_atlas", slot0.cell.config.icon)
 
 			slot0._img:SetNativeSize()
 		end,
@@ -452,21 +452,16 @@ function slot14(slot0, slot1)
 	}
 end
 
-slot0.getUIName = function (slot0)
-	return "MonopolyUI"
-end
+slot0.SetUp = function (slot0, slot1, slot2)
+	slot0.viewComponent = slot1
 
-slot0.preload = function (slot0, slot1)
+	pg.DelegateInfo.New(slot0)
+
+	slot0._tf = slot0.viewComponent._tf
+	slot0._go = go(slot3)
 	slot0.models = {}
 
 	parallelAsync({
-		function (slot0)
-			LoadSpriteAsync("clutter/monopoly_bg", function (slot0)
-				slot0.sprite = slot0
-
-				slot0()
-			end)
-		end,
 		function (slot0)
 			PoolMgr.GetInstance():GetSpineChar(Ship.New({
 				configId = slot0,
@@ -477,7 +472,11 @@ slot0.preload = function (slot0, slot1)
 				slot1.configId()
 			end)
 		end
-	}, slot1)
+	}, function ()
+		slot0:setActivity(slot0)
+		slot0.setActivity:init()
+		slot0.setActivity.init:didEnter()
+	end)
 end
 
 slot0.setActivity = function (slot0, slot1)
@@ -497,67 +496,70 @@ slot0.setActivity = function (slot0, slot1)
 	slot0.leftDropShipCnt = 10 - (slot0.activity.data1_list[3] - 1)
 end
 
-slot0.updateActivity = function (slot0, slot1)
+slot0.NetActivity = function (slot0, slot1)
 	slot0:setActivity(slot1)
 	slot0:updateLeftCount()
 	slot0:updateNextRedPacketStep()
 end
 
 slot0.init = function (slot0)
-	slot0.mask = slot0._tf:GetComponent(typeof(Image))
-
 	slot0:blockAllEvent(false)
 
-	slot0.bg = slot0:findTF("bg")
-	slot0.bg:GetComponent(typeof(Image)).sprite = slot0.sprite
+	slot0.bg = slot0:findTF("AD")
 	slot0.mapCellTpl = slot0:getTpl("mapCell", slot0.bg)
 	slot0.mapContainer = slot0:findTF("mapContainer", slot0.bg)
 	slot0.charTpl = slot0:getTpl("char", slot0.bg)
 	slot0.startBtn = slot0:findTF("start", slot0.bg)
 	slot0.valueImg = slot0:findTF("value", slot0.bg):GetComponent(typeof(Image))
-	slot0.leftCountTF = slot0:findTF("leftcount", slot0.bg):GetComponent(typeof(Text))
+	slot0.leftcountLabel = slot0:findTF("leftcount", slot0.bg):GetComponent(typeof(Text))
+	slot0.leftCountTF = slot0:findTF("leftcount/Text", slot0.bg):GetComponent(typeof(Text))
 	slot0.nextRedPacketStepTF = slot0:findTF("nextRpStep/Text", slot0.bg):GetComponent(typeof(Text))
-	slot0.advanceRp = slot0:findTF("advance_rp/rp", slot0.bg)
-	slot0.advanceRpAnim = slot0.advanceRp:GetComponent(typeof(Animator))
-	slot0.commonRp = slot0:findTF("common_rp/rp", slot0.bg)
+	slot0.commonRp = slot0:findTF("rp", slot0.bg)
 	slot0.commonAnim = slot0.commonRp:GetComponent(typeof(Animator))
-	slot0.advanceRpCnt = slot0:findTF("advance_rp_text/Text", slot0.bg):GetComponent(typeof(Text))
-	slot0.commonRpCnt = slot0:findTF("common_rp_text/Text", slot0.bg):GetComponent(typeof(Text))
-	slot0.dropShipCnt = slot0:findTF("dropshipCnt", slot0.bg):GetComponent(typeof(Text))
-	slot0.dropship_get = slot0:findTF("dropship_get", slot0.bg)
-	slot0.anim = slot0:findTF("bg/anim")
+	slot0.commonRpCnt = slot0:findTF("rp_text/Text", slot0.bg):GetComponent(typeof(Text))
+	slot0.dropShipTxt = slot0:findTF("AD/drop_ship_text"):GetComponent(typeof(Text))
+	slot0.helpBtn = slot0:findTF("AD/help")
+	slot0.anim = slot0:findTF("AD/anim")
 
 	setActive(slot0.anim, false)
 
-	slot0.helpTF = slot0:findTF("bg/help")
+	slot0.leftcountLabel.text = i18n("monopoly_left_count")
+	slot0.advanceTag = slot0:findTF("AD/rp/sp")
+	slot0.advanceLabel = slot0:findTF("AD/rp_text/sp")
+	slot0.advancecLabel = slot0:findTF("AD/rp_text/label")
+	slot0.advanceImage = slot0:findTF("AD/rp_text/sp_img")
+	slot0.advanceTxt = slot0:findTF("AD/rp_text/sp_img/Text"):GetComponent(typeof(Text))
 end
 
 slot0.updateNextRedPacketStep = function (slot0)
-	setActive(slot0.advanceRp.parent, slot0.isAdvanceRp)
-	setActive(slot0.commonRp.parent, not slot0.isAdvanceRp)
-
 	slot0.nextRedPacketStepTF.text = slot0.nextredPacketStep
 end
 
 slot0.updateLeftCount = function (slot0)
 	slot0.leftCountTF.text = slot0.leftCount
-	slot0.advanceRpCnt.text = slot0.advanceRpCount
-	slot0.commonRpCnt.text = slot0.commonRpCount
-	slot0.dropShipCnt.text = slot0.leftDropShipCnt
 
-	setActive(go(slot0.dropShipCnt), slot0.leftDropShipCnt > 0)
-	setActive(slot0.dropship_get, slot0.leftDropShipCnt <= 0)
+	slot0.commonAnim:SetInteger("count", slot0.leftAwardCnt)
 
-	if slot0.isAdvanceRp then
-		slot0.advanceRpAnim:SetInteger("count", math.max(0, slot0.advanceRpCount))
+	if PLATFORM_CODE == PLATFORM_CHT then
+		slot0.dropShipTxt.text = slot0.leftDropShipCnt
+
+		setActive(slot0.dropShipTxt.gameObject, slot0.leftDropShipCnt > 0)
+
+		slot0.commonRpCnt.text = slot0.advanceRpCount
+		slot0.advanceTxt.text = slot0.commonRpCount
+
+		setActive(slot0.advanceTag, slot0.isAdvanceRp)
+		setActive(slot0.advanceLabel, true)
+		setActive(slot0.advanceImage, true)
+		setActive(slot0.advancecLabel, false)
 	else
-		slot0.commonAnim:SetInteger("count", slot0.leftAwardCnt)
+		slot0.commonRpCnt.text = slot0.commonRpCount
 	end
 end
 
 slot0.updateValue = function (slot0, slot1)
 	if slot1 ~= 0 then
-		slot0.valueImg.sprite = GetSpriteFromAtlas("ui/monopolyui_atlas", slot1)
+		slot0.valueImg.sprite = GetSpriteFromAtlas("ui/activityuipage/monopoly_atlas", slot1)
 
 		slot0.valueImg:SetNativeSize()
 	end
@@ -589,34 +591,22 @@ slot0.didEnter = function (slot0)
 
 		slot0:startAction()
 	end, SFX_PANEL)
-	onButton(slot0, slot0.advanceRp, function ()
-		if slot0.block then
-			return
-		end
-
-		if slot0.leftAwardCnt > 0 then
-			slot0:emit(MonopolyMediator.ON_AWARD, slot0.activity.id)
-		end
-	end, SFX_PANEL)
 	onButton(slot0, slot0.commonRp, function ()
-		if slot0.block then
-			return
-		end
-
 		if slot0.leftAwardCnt > 0 then
-			slot0:emit(MonopolyMediator.ON_AWARD, slot0.activity.id)
+			slot0:emit(MonopolyPage.ON_AWARD)
 		end
 	end, SFX_PANEL)
-	onButton(slot0, slot0.helpTF, function ()
+	onButton(slot0, slot0.helpBtn, function ()
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
 			type = MSGBOX_TYPE_HELP,
-			helps = pg.gametip.help_monopoly.tip
+			helps = pg.gametip.help_chunjie_monopoly.tip
 		})
 	end, SFX_PANEL)
 end
 
 slot0.blockAllEvent = function (slot0, slot1)
-	slot0.mask.enabled = slot1
+	slot0:emit(ActivityMainScene.LOCK_ACT_MAIN, slot1)
+
 	slot0.block = slot1
 end
 
@@ -647,7 +637,7 @@ slot0.triggerEvent = function (slot0, slot1, slot2, slot3)
 					return
 				end
 
-				slot2:emit(MonopolyMediator.ON_TRIGGER, slot2.activity.id, function (slot0, slot1)
+				slot2:emit(MonopolyPage.ON_TRIGGER, slot2.activity.id, function (slot0, slot1)
 					if not slot0 or #slot0 == 0 then
 						slot0()
 
@@ -684,7 +674,7 @@ slot0.checkState = function (slot0)
 
 	if slot0.step ~= 0 then
 		table.insert(slot1, function (slot0)
-			slot0:emit(MonopolyMediator.ON_MOVE, slot0.activity.id, function (slot0, slot1, slot2)
+			slot0:emit(MonopolyPage.ON_MOVE, slot0.activity.id, function (slot0, slot1, slot2)
 				if not slot1 or #slot1 == 0 then
 					slot0()
 
@@ -705,50 +695,56 @@ end
 
 slot0.startAction = function (slot0)
 	slot1 = slot0.activity.id
-	slot3 = 0
+	slot2 = 0
 
-	table.insert(slot2, function (slot0)
-		slot0:playerAnim(slot0)
-	end)
-	table.insert(slot2, function (slot0)
-		slot0:emit(MonopolyMediator.ON_START, slot0.emit, function (slot0)
-			slot1:updateValue(slot0)
-			slot1()
-		end)
-	end)
+	function slot3(slot0)
+		if slot0 == 0 then
+			slot0()
 
-	for slot7 = 1, 2, 1 do
-		table.insert(slot2, function (slot0)
-			if slot0 == 0 then
+			return
+		end
+
+		slot1:emit(MonopolyPage.ON_MOVE, slot1, function (slot0, slot1, slot2)
+			if not slot1 or #slot1 == 0 then
 				slot0()
 
 				return
 			end
 
-			slot1:emit(MonopolyMediator.ON_MOVE, slot1, function (slot0, slot1, slot2)
-				if not slot1 or #slot1 == 0 then
-					slot0()
-
-					return
-				end
-
-				slot2.mapVO:UpdateCharPos(slot0, function ()
-					#slot0:triggerEvent(slot0[#slot0], #slot0, )
-				end)
+			slot2.mapVO:UpdateCharPos(slot0, function ()
+				#slot0:triggerEvent(slot0[#slot0], #slot0, )
 			end)
 		end)
 	end
 
-	table.insert(slot2, function (slot0)
-		if slot0:getStrory() then
+	seriesAsync({
+		function (slot0)
+			setActive(slot0.startBtn, false)
+			slot0:blockAllEvent(true)
+			slot0:playerAnim(slot0)
+		end,
+		function (slot0)
+			slot0:emit(MonopolyPage.ON_START, slot0.emit, function (slot0)
+				slot1:updateValue(slot0)
+				slot1()
+			end)
+		end,
+		function (slot0)
+			slot0(slot0)
+		end,
+		function (slot0)
+			slot0(slot0)
+		end,
+		function (slot0)
+			if not slot0:getStrory() then
+				slot0()
+
+				return
+			end
+
 			pg.StoryMgr.GetInstance():Play(slot1, slot0)
-		else
-			slot0()
 		end
-	end)
-	setActive(slot0.startBtn, false)
-	slot0:blockAllEvent(true)
-	seriesAsync(slot2, function ()
+	}, function ()
 		slot0:updateValue(0)
 		slot0.updateValue:blockAllEvent(false)
 		slot0(slot0.startBtn, slot0.leftCount > 0)
@@ -821,7 +817,20 @@ slot0.playerAnim = function (slot0, slot1)
 	slot0.timer:Start()
 end
 
-slot0.willExit = function (slot0)
+slot0.findTF = function (slot0, slot1, slot2)
+	return findTF(slot2 or slot0._tf, slot1)
+end
+
+slot0.getTpl = function (slot0, slot1, slot2)
+	slot3 = slot0:findTF(slot1, slot2)
+
+	slot3:SetParent(slot0._tf, false)
+	SetActive(slot3, false)
+
+	return slot3
+end
+
+slot0.Destroy = function (slot0)
 	for slot4, slot5 in pairs(slot0.cellTFs) do
 		slot5:Dispose()
 	end
@@ -838,6 +847,12 @@ slot0.willExit = function (slot0)
 
 		slot0.timer = nil
 	end
+
+	pg.DelegateInfo.Dispose(slot0)
+end
+
+slot0.emit = function (slot0, slot1, slot2, slot3)
+	slot0.viewComponent:emit(slot1, slot2, slot3)
 end
 
 return slot0

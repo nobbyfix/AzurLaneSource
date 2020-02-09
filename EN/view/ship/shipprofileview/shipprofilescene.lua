@@ -62,8 +62,9 @@ slot0.init = function (slot0)
 	slot0.btnLike = slot0:findTF("adapt/detail_left_panel/heart/btnLike", slot0.blurPanel)
 	slot0.btnLikeAct = slot0.btnLike:Find("like")
 	slot0.btnLikeDisact = slot0.btnLike:Find("unlike")
-	slot0.viewBtn = slot0:findTF("bottom/view_btn")
+	slot0.obtainBtn = slot0:findTF("bottom/obtain_btn")
 	slot0.evaBtn = slot0:findTF("bottom/eva_btn")
+	slot0.viewBtn = slot0:findTF("bottom/view_btn")
 	slot0.shareBtn = slot0:findTF("bottom/share_btn")
 	slot0.leftProfile = slot0:findTF("adapt/profile_left_panel", slot0.blurPanel)
 	slot0.modelContainer = slot0:findTF("model", slot0.leftProfile)
@@ -93,13 +94,21 @@ slot0.didEnter = function (slot0)
 	onButton(slot0, slot0.btnBack, function ()
 		slot0:emit(slot1.ON_BACK)
 	end, SFX_CANCEL)
-	onButton(slot0, slot0.viewBtn, function ()
-		slot0.paintingView:Start()
-	end, SFX_PANEL)
+	onButton(slot0, slot0.obtainBtn, function ()
+		pg.MsgboxMgr.GetInstance():ShowMsgBox({
+			type = MSGBOX_TYPE_OBTAIN,
+			shipId = slot0.shipGroup:getShipConfigId(),
+			list = slot0.shipGroup.groupConfig.description,
+			mediatorName = ShipProfileMediator.__cname
+		})
+	end)
 	onButton(slot0, slot0.evaBtn, function ()
 		slot0:emit(slot1.SHOW_EVALUATION)
 	end, SFX_PANEL)
 	setActive(slot0.evaBtn, not slot0.contextData.showTrans)
+	onButton(slot0, slot0.viewBtn, function ()
+		slot0.paintingView:Start()
+	end, SFX_PANEL)
 	onButton(slot0, slot0.shareBtn, function ()
 		pg.ShareMgr.GetInstance():Share(pg.ShareMgr.TypeShipProfile)
 	end, SFX_PANEL)
@@ -450,12 +459,16 @@ slot0.UpdatePaintingFace = function (slot0, slot1)
 end
 
 slot0.PlayVoice = function (slot0, slot1, slot2)
-	slot3 = slot1.wordData
 	slot4 = slot1.skin
+	slot5 = slot1.words
 
 	slot0:RemoveCvTimer()
 
-	if ShipWordHelper.CV_KEY_REPALCE <= slot1.words.voice_key or slot5.voice_key == ShipWordHelper.CV_KEY_BAN_NEW then
+	if not slot1.wordData.cvPath or slot3.cvPath == "" then
+		return
+	end
+
+	if ShipWordHelper.CV_KEY_REPALCE <= slot5.voice_key or slot5.voice_key == ShipWordHelper.CV_KEY_BAN_NEW then
 		slot6 = 0
 
 		if slot1.isLive2d and slot0.l2dChar and slot3.voiceCalibrate then

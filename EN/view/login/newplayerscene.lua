@@ -24,10 +24,6 @@ slot0.getUIName = function (slot0)
 	return "NewPlayerUI"
 end
 
-slot0.getBGM = function (slot0)
-	return "main"
-end
-
 slot0.init = function (slot0)
 	slot0.eventTriggers = {}
 	slot0.characters = slot0:findTF("select_character/characters")

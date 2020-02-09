@@ -1,10 +1,10 @@
 slot0 = class("InstagramPlayerComment", import(".InstagramComment"))
 
-slot0.Ctor = function (slot0, slot1, slot2, slot3)
-	slot0.super.Ctor(slot0, slot1, slot2, slot3)
+slot0.Ctor = function (slot0, slot1, slot2, slot3, slot4)
+	slot0.super.Ctor(slot0, slot1, slot2, slot3, slot4)
 
 	if slot1.npc_reply ~= 0 then
-		table.insert(slot0.replyList, InstagramNpcComment.New(slot0.allReply[slot1.npc_reply], slot2, slot0))
+		table.insert(slot0.replyList, InstagramNpcComment.New(slot0.allReply[slot1.npc_reply], slot2, slot5, slot0))
 	end
 end
 

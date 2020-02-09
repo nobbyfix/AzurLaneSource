@@ -387,6 +387,14 @@ slot1 = {
 		className = "SkinKisaragiPage",
 		uiName = "SkinKisaragiPage"
 	},
+	[ActivityConst.MONOPOLY_2020] = {
+		className = "Monopoly.MonopolyPage",
+		uiName = "MonopolyPage"
+	},
+	[ActivityConst.MUTSUKI_NEWYEAR_SKIN_ID] = {
+		className = "MutsukiNewYearSkinPage",
+		uiName = "MutsukiNewYearSkinPage"
+	},
 	[ActivityConst.MORAN_KR_PT_ID] = {
 		className = "MoranPtPage",
 		uiName = "MoranPtPage"
@@ -398,6 +406,18 @@ slot1 = {
 	[ActivityConst.UNICORN_STARDUST] = {
 		className = "UnicornStardustPage",
 		uiName = "UnicornStardustPage"
+	},
+	[ActivityConst.TEATIME_TW] = {
+		className = "TeaTimePuzzlePage",
+		uiName = "TeaTimePuzzlePage"
+	},
+	[ActivityConst.SPRING_FES_MAIN_TW] = {
+		className = "SpringFesMainPage",
+		uiName = "SpringFesMainPage"
+	},
+	[ActivityConst.SICHUANOPERA] = {
+		className = "SiChuanOperaPage",
+		uiName = "SichuanOperaPage"
 	}
 }
 slot2 = {
@@ -413,10 +433,6 @@ end
 
 slot0.getUIName = function (slot0)
 	return "ActivityMainUI"
-end
-
-slot0.getBGM = function (slot0)
-	return "main"
 end
 
 slot0.onBackPressed = function (slot0)

@@ -13,14 +13,6 @@ function slot2(slot0)
 end
 
 slot0.getUIName = slot2
-
-function slot2(slot0)
-	slot1 = "level"
-
-	return slot1
-end
-
-slot0.getBGM = slot2
 slot2 = {}
 slot3 = {
 	130,

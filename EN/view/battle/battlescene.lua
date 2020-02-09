@@ -27,7 +27,7 @@ slot0.getUIName = function (slot0)
 end
 
 slot0.getBGM = function (slot0)
-	return ys.Battle.BattleDataFunction.GetDungeonTmpDataByID(slot1).bgm or "battle-1"
+	return ys.Battle.BattleDataFunction.GetDungeonTmpDataByID(slot1).bgm or slot0.super.getBGM(slot0)
 end
 
 slot0.init = function (slot0)

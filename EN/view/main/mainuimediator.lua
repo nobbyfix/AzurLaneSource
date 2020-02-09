@@ -50,6 +50,7 @@ slot0.ON_BOSS_BATTLE = "MainUIMediator:ON_BOSS_BATTLE"
 slot0.ON_MONOPOLY = "MainUIMediator:ON_MONOPOLY"
 slot0.ON_BLACKWHITE = "MainUIMediator:ON_BLACKWHITE"
 slot0.ON_MEMORYBOOK = "MainUIMediator:ON_MEMORYBOOK"
+slot0.GO_MINI_GAME = "MainUIMediator.GO_MINI_GAME"
 
 slot0.register = function (slot0)
 	slot1 = getProxy(BayProxy)
@@ -117,6 +118,9 @@ slot0.register = function (slot0)
 	end)
 	slot0.viewComponent:updateTraningCampBtn()
 	slot0.viewComponent:updateRefluxBtn()
+	slot0:bind(slot0.GO_MINI_GAME, function (slot0, slot1)
+		pg.m02:sendNotification(GAME.GO_MINI_GAME, slot1)
+	end)
 	slot0:bind(slot0.OPEN_TRANINGCAMP, function ()
 		slot0:sendNotification(GAME.GO_SCENE, SCENE.TRAININGCAMP)
 	end)
@@ -674,7 +678,8 @@ slot0.listNotificationInterests = function (slot0)
 		VoteProxy.VOTE_ORDER_BOOK_DELETE,
 		VoteProxy.VOTE_ORDER_BOOK_UPDATE,
 		GAME.SEND_MINI_GAME_OP_DONE,
-		GAME.ON_OPEN_INS_LAYER
+		GAME.ON_OPEN_INS_LAYER,
+		PileGameConst.OPEN_PILEGAME
 	}
 end
 
@@ -685,6 +690,11 @@ slot0.handleNotification = function (slot0, slot1)
 		slot0.viewComponent:updatePlayerInfo(slot3)
 		slot3:display()
 		slot0:updateCommissionNotices()
+	elseif slot2 == PileGameConst.OPEN_PILEGAME then
+		slot0:addSubLayers(Context.New({
+			viewComponent = PileLayer,
+			mediator = PileMediator
+		}))
 	elseif slot2 == GAME.ON_OPEN_INS_LAYER then
 		slot0.viewComponent:emit(slot0.OPEN_INS)
 	elseif slot2 == BayProxy.SHIP_REMOVED then

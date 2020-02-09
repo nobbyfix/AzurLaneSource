@@ -37,7 +37,7 @@ slot0.getGroupName = function (slot0)
 end
 
 slot0.getBGM = function (slot0)
-	return nil
+	return (pg.voice_bgm[slot0.__cname] and slot1.bgm) or nil
 end
 
 slot0.preload = function (slot0, slot1)

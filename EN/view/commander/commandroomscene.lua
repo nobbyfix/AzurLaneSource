@@ -8,10 +8,6 @@ slot0.getUIName = function (slot0)
 	return "CommandRoomUI"
 end
 
-slot0.getBGM = function (slot0)
-	return "backyard"
-end
-
 slot0.setBoxes = function (slot0, slot1)
 	slot0.boxes = slot1
 end

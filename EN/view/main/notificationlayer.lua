@@ -34,7 +34,7 @@ slot0.init = function (slot0)
 	slot0.close = slot0:findTF("close")
 	slot0.frame = slot0:findTF("frame")
 	slot0.contain = slot0.frame:Find("contain")
-	slot1 = slot0.contain:Find("list")
+	slot1 = slot0.contain:Find("ListContainer/list")
 	slot0.content = slot1:Find("content")
 	slot0.emptySign = slot1:Find("EmptySign")
 
@@ -43,7 +43,7 @@ slot0.init = function (slot0)
 	slot0.prefabSelf = slot1:Find("popo_self").gameObject
 	slot0.prefabOthers = slot1:Find("popo_other").gameObject
 	slot0.prefabPublic = slot1:Find("popo_public").gameObject
-	slot0.input = slot0.frame:Find("inputbg/input"):GetComponent("InputField")
+	slot0.input = slot0.frame:Find("contain/ListContainer/inputbg/input"):GetComponent("InputField")
 	slot0.send = slot0.frame:Find("send")
 	slot0.channelSend = slot0.frame:Find("channel_send")
 	slot0.channelSendPop = slot0.frame:Find("channel_pop")
@@ -53,7 +53,7 @@ slot0.init = function (slot0)
 	SetActive(slot0.topMsg, false)
 
 	slot0.topPublic = slot0:findTF("popo_public", slot0.topMsg)
-	slot0.emoji = slot0.frame:Find("inputbg/emoji")
+	slot0.emoji = slot0.frame:Find("contain/ListContainer/inputbg/emoji")
 	slot0.changeRoomPanel = slot0:findTF("change_room_Panel")
 	slot0.roomSendBtns = slot0:findTF("frame/bg/type_send", slot0.changeRoomPanel)
 	slot0.roomRecvBtns = slot0:findTF("frame/bg/type_recv", slot0.changeRoomPanel)
@@ -100,7 +100,15 @@ slot0.init = function (slot0)
 	}
 end
 
+slot0.adjustMsgListPanel = function (slot0)
+	slot0.listContainerTF = slot0.contain:Find("ListContainer")
+	slot0.listTF = slot0.contain:Find("ListContainer/list")
+	GetComponent(slot0.listTF, "LayoutElement").preferredHeight = slot0.listContainerTF.rect.size.y - 69.01791
+end
+
 slot0.didEnter = function (slot0)
+	slot0:adjustMsgListPanel()
+
 	slot0.currentForm = slot0.contextData.form
 	slot0.escFlag = false
 
@@ -340,7 +348,7 @@ slot0.didEnter = function (slot0)
 	if slot0.currentForm == slot0.FORM_BATTLE then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 92-108, warpins: 1 ---
+		--- BLOCK #0 95-111, warpins: 1 ---
 		slot0._tf:SetParent(slot0.contextData.chatViewParent, true)
 
 		rtf(slot0.frame.transform).offsetMax = Vector2(0, -120)
@@ -351,7 +359,7 @@ slot0.didEnter = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 109-122, warpins: 1 ---
+		--- BLOCK #0 112-125, warpins: 1 ---
 		pg.UIMgr.GetInstance():BlurPanel(slot0._tf, false, {
 			groupName = slot0:getGroupName()
 		})

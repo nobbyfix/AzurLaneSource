@@ -272,8 +272,11 @@ slot0.clear = function (slot0)
 	if not IsNil(slot0.model) then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 9-21, warpins: 1 ---
+		--- BLOCK #0 9-26, warpins: 1 ---
 		slot0.anim:SetActionCallBack(nil)
+
+		slot0.model.transform.localScale = Vector3.one
+
 		PoolMgr.GetInstance():ReturnSpineChar(slot0.prefab, slot0.model)
 		--- END OF BLOCK #0 ---
 
@@ -288,7 +291,7 @@ slot0.clear = function (slot0)
 
 
 	-- Decompilation error in this vicinity:
-	--- BLOCK #1 22-38, warpins: 2 ---
+	--- BLOCK #1 27-43, warpins: 2 ---
 	slot0.shipVO = nil
 	slot0.prefab = nil
 	slot0.model = nil

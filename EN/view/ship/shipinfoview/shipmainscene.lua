@@ -611,7 +611,7 @@ slot0.displayShipWord = function (slot0, slot1, slot2)
 		setActive(slot0.chat, true)
 
 		slot0.chat.localPosition = Vector3(slot0.character.localPosition.x + 100, slot0.chat.localPosition.y, 0)
-		slot3 = slot0.shipVO:getIntimacy() / 100 + ((slot0.shipVO.propose and 1000) or 0)
+		slot3 = slot0.shipVO:getCVIntimacy()
 
 		slot0.chat:SetAsLastSibling()
 

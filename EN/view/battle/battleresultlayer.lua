@@ -197,6 +197,8 @@ end
 slot0.didEnter = function (slot0)
 	slot0:setStageName()
 
+	slot0._subShipResultCardList = {}
+	slot0._shipResultCardList = {}
 	slot0._gradeUpperLeftPos = rtf(slot0._grade).localPosition
 	rtf(slot0._grade).localPosition = Vector3(0, 25, 0)
 

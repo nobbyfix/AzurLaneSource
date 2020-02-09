@@ -11,9 +11,18 @@ slot0.init = function (slot0)
 end
 
 slot0.normalSpeed = 150
+slot0.normalScale = 0.5
 
 slot0.SetOnTransEdge = function (slot0, slot1)
 	slot0.onTransEdge = slot1
+end
+
+slot0.setCurrentIndex = function (slot0, slot1)
+	if not slot1 then
+		return
+	end
+
+	slot0.currentPoint = slot0.pathFinder:getPoint(slot1)
 end
 
 slot0.updateStudent = function (slot0, slot1)
@@ -31,12 +40,13 @@ slot0.updateStudent = function (slot0, slot1)
 		end
 
 		slot0.prefab = slot1
-		slot0.currentPoint = slot0.pathFinder:getRandomPoint()
-		slot0.targetPoint = slot0.pathFinder:getPoint(slot3)
-		slot0._tf.anchoredPosition = Vector2.New(slot0.currentPoint.x, slot0.currentPoint.y)
+		slot0.currentPoint = slot0.currentPoint or slot0.pathFinder:getRandomPoint()
+		slot0.targetPoint = slot0.currentPoint
+		slot2 = slot0.currentPoint.id
+		slot0._tf.anchoredPosition = slot0.currentPoint
 
-		if slot0.onTransEdge and slot3 then
-			slot0:onTransEdge(table.indexof(slot0.pathFinder.points, slot0.currentPoint), slot3)
+		if slot0.onTransEdge then
+			slot0:onTransEdge(slot2, slot2)
 		end
 
 		PoolMgr.GetInstance():GetSpineChar(slot0.prefab, true, function (slot0)
@@ -47,15 +57,14 @@ slot0.updateStudent = function (slot0, slot1)
 			end
 
 			slot1.model = slot0
-			slot1.model.transform.localScale = Vector3(0.5, 0.5, 1)
+			slot1.model.transform.localScale = Vector3.one
 			slot1.model.transform.model.transform.localPosition = Vector3.zero
 
 			slot1.model.transform.model.transform.model.transform:SetParent(slot1._tf, false)
-			slot1.model.transform.model.transform.model.transform.SetParent.model.transform:SetSiblingIndex(1)
 
-			slot1.model.transform.model.transform.model.transform.SetParent.model.transform.SetSiblingIndex.anim = slot1.model:GetComponent(typeof(SpineAnimUI))
+			slot1.model.transform.model.transform.model.transform.SetParent.anim = slot1.model:GetComponent(typeof(SpineAnimUI))
 
-			slot1.model.transform.model.transform.model.transform.SetParent.model.transform.SetSiblingIndex:updateState(slot2.ShipState.Idle)
+			slot1.model.transform.model.transform.model.transform.SetParent:updateState(slot2.ShipState.Walk)
 		end)
 	end
 
@@ -66,16 +75,19 @@ slot0.updateLogic = function (slot0)
 	slot0:clearLogic()
 
 	if slot0.state == slot0.ShipState.Walk then
-		LeanTween.value(slot0._go, 0, 1, Vector3.Distance(slot1, slot2) / 15):setOnUpdate(System.Action_float(function (slot0)
-			slot0._tf.anchoredPosition3D = Vector3.Lerp(slot0._tf, Vector3.Lerp, slot0)
-			slot0._tf.localScale.x = (slot0.currentPoint.x < slot0.targetPoint.x and 1) or -1
-			slot0._tf.localScale = slot0._tf.localScale
+		LeanTween.value(slot0._go, 0, 1, Vector2.Distance(slot1, slot2) / 15):setOnUpdate(System.Action_float(function (slot0)
+			slot0._tf.anchoredPosition = Vector2.Lerp(slot0._tf, Vector2.Lerp, slot0)
+			slot3 = slot1.scale or slot3.normalScale.scale or slot3.normalScale
+			slot1.x = slot1.x * ((slot1.x < Vector2.one.x and 1) or -1)
+			slot0._tf.localScale = slot1
 		end)):setOnComplete(System.Action(function ()
 			slot0.currentPoint = slot0.targetPoint
-			slot0.targetPoint = slot0.pathFinder:getPoint(slot0.currentPoint.nexts[math.random(1, #slot0.currentPoint.nexts)])
+			slot2 = slot0.currentPoint.nexts[math.random(1, #slot0.currentPoint.nexts)]
 
-			if slot0.onTransEdge then
-				slot0:onTransEdge(table.indexof(slot0.pathFinder.points, slot0.currentPoint), slot1)
+			if slot0.onTransEdge and slot2 then
+				slot0.targetPoint = slot0.pathFinder:getPoint(slot2)
+
+				slot0:onTransEdge(slot0, slot2)
 			end
 
 			slot0:updateState(slot1.ShipState.Idle)
@@ -87,11 +99,11 @@ slot0.updateLogic = function (slot0)
 	if slot0.state == slot0.ShipState.Idle then
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 61-64, warpins: 1 ---
+		--- BLOCK #0 47-50, warpins: 1 ---
 		if not slot0.currentPoint.isBan then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 65-80, warpins: 1 ---
+			--- BLOCK #0 51-66, warpins: 1 ---
 			slot0.idleTimer = Timer.New(function ()
 
 				-- Decompilation error in this vicinity:
@@ -113,7 +125,7 @@ slot0.updateLogic = function (slot0)
 		else
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 81-92, warpins: 1 ---
+			--- BLOCK #0 67-78, warpins: 1 ---
 			slot0.idleTimer = Timer.New(function ()
 
 				-- Decompilation error in this vicinity:
@@ -140,11 +152,11 @@ slot0.updateLogic = function (slot0)
 	else
 
 		-- Decompilation error in this vicinity:
-		--- BLOCK #0 93-98, warpins: 1 ---
+		--- BLOCK #0 79-84, warpins: 1 ---
 		if slot0.state == slot0.ShipState.Touch then
 
 			-- Decompilation error in this vicinity:
-			--- BLOCK #0 99-101, warpins: 1 ---
+			--- BLOCK #0 85-87, warpins: 1 ---
 			slot0:onClickShip()
 			--- END OF BLOCK #0 ---
 

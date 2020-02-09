@@ -730,8 +730,7 @@ function updateShip(slot0, slot1, slot2)
 
 	if findTF(slot0, "ship_type") then
 		setActive(slot12, true)
-
-		slot12:GetComponent(typeof(Image)).sprite = GetSpriteFromAtlas("shiptype", shipType2print(slot1:getShipType()))
+		setImageSprite(slot12, GetSpriteFromAtlas("shiptype", shipType2print(slot1:getShipType())))
 	end
 
 	if not IsNil(slot7:Find("npc")) then
@@ -771,12 +770,6 @@ function updateCommander(slot0, slot1, slot2)
 		if findTF(slot9, "Text") and slot1.level then
 			setText(slot10, slot1.level)
 		end
-	end
-
-	if findTF(slot0, "ship_type") then
-		setActive(slot10, true)
-
-		slot10:GetComponent(typeof(Image)).sprite = GetSpriteFromAtlas("shiptype", shipType2print(slot1:getShipType()))
 	end
 
 	slot0(slot0, slot2.initStar, slot1:getStar())
@@ -1003,6 +996,50 @@ function updateDrop(slot0, slot1, slot2)
 	slot1.desc = HXSet.hxLan(slot6)
 
 	slot2(slot0, slot1.count)
+end
+
+function updateDropCfg(slot0)
+	slot1 = ""
+	slot2 = ""
+	slot3 = slot0.type or slot0.dropType
+
+	if slot3 == DROP_TYPE_RESOURCE then
+		slot2 = pg.item_data_statistics[id2ItemId(slot0.id)].display
+	elseif slot3 == DROP_TYPE_ITEM then
+		slot2 = pg.item_data_statistics[slot0.id].display
+	elseif slot3 == DROP_TYPE_EQUIP then
+		slot2 = pg.equip_data_statistics[slot0.id].descrip
+	elseif slot3 == DROP_TYPE_SIREN_EQUIP then
+		slot2 = pg.equip_data_statistics[getProxy(EquipmentProxy).getEquipmentById(slot4, slot0.id).configId].descrip
+	elseif slot3 == DROP_TYPE_SHIP then
+		slot4, slot5, slot6 = ShipWordHelper.GetWordAndCV(pg.ship_data_statistics[slot0.id].skin_id, ShipWordHelper.WORD_TYPE_DROP)
+		slot2 = slot6 or i18n("ship_drop_desc_default")
+	elseif slot3 == DROP_TYPE_NPC_SHIP then
+		slot5, slot6, slot7 = ShipWordHelper.GetWordAndCV(pg.ship_data_statistics[getProxy(BayProxy):getShipById(slot0.id).configId].skin_id, ShipWordHelper.WORD_TYPE_DROP)
+		slot2 = slot7 or i18n("ship_drop_desc_default")
+	elseif slot3 == DROP_TYPE_FURNITURE then
+		slot2 = pg.furniture_data_template[slot0.id].describe
+	elseif slot3 == DROP_TYPE_STRATEGY then
+		slot2 = pg.strategy_data_template[slot0.id].desc
+	elseif slot3 == DROP_TYPE_SKIN then
+		slot1 = pg.ship_skin_template[slot0.id]
+		slot4, slot5, slot2 = ShipWordHelper.GetWordAndCV(slot0.id, ShipWordHelper.WORD_TYPE_DROP)
+	elseif slot3 == DROP_TYPE_EQUIPMENT_SKIN then
+		slot1 = pg.equip_skin_template[slot0.id]
+	elseif slot3 == DROP_TYPE_VITEM then
+		slot2 = pg.item_data_statistics[slot0.id].display
+	elseif slot3 == DROP_TYPE_WORLD_ITEM then
+		slot2 = pg.world_item_data_template[slot0.id].display
+	elseif slot3 == DROP_TYPE_CHAT_FRAME then
+		slot1 = pg.item_data_chat[slot0.id]
+	elseif slot3 == DROP_TYPE_ICON_FRAME then
+		slot1 = pg.item_data_frame[slot0.id]
+	elseif slot3 == DROP_TYPE_EMOJI then
+		slot2 = pg.emoji_template[slot0.id].item_desc
+	end
+
+	slot0.cfg = slot1
+	slot0.desc = HXSet.hxLan(slot2)
 end
 
 function updateAttire(slot0, slot1, slot2, slot3)
@@ -6560,6 +6597,149 @@ function isHalfBodyLive2D(slot0)
 
 
 	end)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+function GetServerState(slot0)
+
+	-- Decompilation error in this vicinity:
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot1 = -1
+	slot2 = 0
+	slot3 = 1
+	slot4 = 2
+
+	VersionMgr.Inst:WebRequest(NetConst.GetServerStateUrl(), function (slot0, slot1)
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot2 = true
+		slot3 = false
+
+		--- END OF BLOCK #0 ---
+
+		FLOW; TARGET BLOCK #1
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #1 9-14, warpins: 0 ---
+		for slot7 in string.gmatch(slot1, "\"state\":%d") do
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 9-10, warpins: 1 ---
+			if slot7 ~= "\"state\":1" then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 11-11, warpins: 1 ---
+				slot2 = false
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 12-12, warpins: 2 ---
+			slot3 = true
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #2 13-14, warpins: 2 ---
+			--- END OF BLOCK #2 ---
+
+
+
+		end
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #2 15-16, warpins: 1 ---
+		if not slot3 then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 17-17, warpins: 1 ---
+			slot2 = false
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #3 18-20, warpins: 2 ---
+		if slot0 ~= nil then
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #0 21-23, warpins: 1 ---
+			slot4 = slot0
+
+			if not slot2 or not slot1 then
+
+				-- Decompilation error in this vicinity:
+				--- BLOCK #0 27-27, warpins: 2 ---
+				slot5 = slot2
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			--- END OF BLOCK #0 ---
+
+			FLOW; TARGET BLOCK #1
+
+
+
+			-- Decompilation error in this vicinity:
+			--- BLOCK #1 28-28, warpins: 2 ---
+			slot4(slot5)
+			--- END OF BLOCK #1 ---
+
+
+
+		end
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+
+		-- Decompilation error in this vicinity:
+		--- BLOCK #4 29-29, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end)
+
+	return
 	--- END OF BLOCK #0 ---
 
 

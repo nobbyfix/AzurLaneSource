@@ -59,6 +59,10 @@ slot0.OnModifyMiniGameDataDone = function (slot0, slot1)
 	return
 end
 
+slot0.OnGetAwardDone = function (slot0, slot1)
+	return
+end
+
 slot0.OnApplicationPaused = function (slot0, slot1)
 	return
 end

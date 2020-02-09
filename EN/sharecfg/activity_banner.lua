@@ -12,8 +12,8 @@ pg.activity_banner = {
 			{
 				{
 					2020,
-					1,
-					9
+					2,
+					6
 				},
 				{
 					0,
@@ -24,8 +24,8 @@ pg.activity_banner = {
 			{
 				{
 					2020,
-					1,
-					30
+					2,
+					19
 				},
 				{
 					23,
@@ -36,16 +36,21 @@ pg.activity_banner = {
 		}
 	},
 	{
-		param = "30290",
-		type = 3,
+		type = 2,
 		id = 2,
-		pic = "temp13",
+		pic = "temp8",
+		param = {
+			"scene get boat",
+			{
+				projectName = "light"
+			}
+		},
 		time = {
 			{
 				{
-					2019,
-					12,
-					19
+					2020,
+					2,
+					6
 				},
 				{
 					0,
@@ -56,8 +61,42 @@ pg.activity_banner = {
 			{
 				{
 					2020,
-					1,
-					15
+					2,
+					13
+				},
+				{
+					23,
+					59,
+					59
+				}
+			}
+		}
+	},
+	{
+		type = 7,
+		id = 3,
+		pic = "temp3",
+		param = {
+			10
+		},
+		time = {
+			{
+				{
+					2020,
+					2,
+					6
+				},
+				{
+					0,
+					0,
+					0
+				}
+			},
+			{
+				{
+					2020,
+					2,
+					19
 				},
 				{
 					23,
@@ -69,7 +108,8 @@ pg.activity_banner = {
 	},
 	all = {
 		1,
-		2
+		2,
+		3
 	}
 }
 
