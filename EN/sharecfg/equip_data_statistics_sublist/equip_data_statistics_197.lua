@@ -1,5 +1,58 @@
 pg = pg or {}
 pg.equip_data_statistics_197 = {
+	[27140] = {
+		rarity = 5,
+		name = "Seafang",
+		speciality = "Air",
+		type = 7,
+		tech = 3,
+		ammo = 5,
+		nationality = 2,
+		value_2 = 45,
+		id = 27140,
+		torpedo_ammo = 0,
+		value_3 = 0,
+		descrip = "No description",
+		icon = "27100",
+		attribute_2 = "air",
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {
+			{
+				6,
+				50640
+			},
+			{
+				5,
+				52340
+			}
+		},
+		equip_info = {
+			6,
+			7,
+			8,
+			9
+		},
+		weapon_id = {
+			27140,
+			82140
+		},
+		skill_id = {},
+		part_main = {
+			6,
+			7
+		},
+		part_sub = {
+			6,
+			7
+		},
+		equip_parameters = {},
+		label = {
+			"HMS",
+			"CV",
+			"FT"
+		}
+	},
 	[27141] = {
 		id = 27141,
 		base = 27140,
@@ -311,20 +364,6 @@ pg.equip_data_statistics_197 = {
 		weapon_id = {
 			27202,
 			82202
-		}
-	},
-	[27203] = {
-		id = 27203,
-		base = 27200,
-		ammo_info = {
-			{
-				6,
-				50103
-			}
-		},
-		weapon_id = {
-			27203,
-			82203
 		}
 	}
 }

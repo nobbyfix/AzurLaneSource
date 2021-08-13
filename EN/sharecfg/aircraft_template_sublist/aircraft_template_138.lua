@@ -1,125 +1,66 @@
 pg = pg or {}
 pg.aircraft_template_138 = {
-	[65202] = {
-		id = 65202,
-		name = "大凤μ技能轰炸机Lv2",
-		base = 65201,
-		max_hp = 48,
-		hp_growth = 1846,
+	[49064] = {
+		id = 49064,
+		max_hp = 59,
+		hp_growth = 2253,
+		base = 49060,
 		weapon_ID = {
-			65212,
-			65222
+			59764,
+			52244
 		}
 	},
-	[65203] = {
-		id = 65203,
-		name = "大凤μ技能轰炸机Lv3",
-		base = 65201,
-		max_hp = 54,
-		hp_growth = 2087,
+	[49065] = {
+		id = 49065,
+		max_hp = 64,
+		hp_growth = 2464,
+		base = 49060,
 		weapon_ID = {
-			65213,
-			65223
+			59765,
+			52245
 		}
 	},
-	[65204] = {
-		id = 65204,
-		name = "大凤μ技能轰炸机Lv4",
-		base = 65201,
-		max_hp = 61,
-		hp_growth = 2327,
+	[49066] = {
+		id = 49066,
+		max_hp = 70,
+		hp_growth = 2675,
+		base = 49060,
 		weapon_ID = {
-			65214,
-			65224
+			59766,
+			52246
 		}
 	},
-	[65205] = {
-		id = 65205,
-		name = "大凤μ技能轰炸机Lv5",
-		base = 65201,
-		max_hp = 67,
-		hp_growth = 2568,
+	[49067] = {
+		id = 49067,
+		max_hp = 75,
+		hp_growth = 2886,
+		base = 49060,
 		weapon_ID = {
-			65215,
-			65225
+			59767,
+			52247
 		}
 	},
-	[65206] = {
-		id = 65206,
-		name = "大凤μ技能轰炸机Lv6",
-		base = 65201,
-		max_hp = 73,
-		hp_growth = 2809,
-		weapon_ID = {
-			65216,
-			65226
-		}
-	},
-	[65207] = {
-		id = 65207,
-		name = "大凤μ技能轰炸机Lv7",
-		base = 65201,
-		max_hp = 79,
-		hp_growth = 3050,
-		weapon_ID = {
-			65217,
-			65227
-		}
-	},
-	[65208] = {
-		id = 65208,
-		name = "大凤μ技能轰炸机Lv8",
-		base = 65201,
-		max_hp = 86,
-		hp_growth = 3290,
-		weapon_ID = {
-			65218,
-			65228
-		}
-	},
-	[65209] = {
-		id = 65209,
-		name = "大凤μ技能轰炸机Lv9",
-		base = 65201,
-		max_hp = 92,
-		hp_growth = 3531,
-		weapon_ID = {
-			65219,
-			65229
-		}
-	},
-	[65210] = {
-		id = 65210,
-		name = "大凤μ技能轰炸机Lv10",
-		base = 65201,
-		max_hp = 98,
-		hp_growth = 3772,
-		weapon_ID = {
-			65220,
-			65230
-		}
-	},
-	[65251] = {
+	[61010] = {
 		attack_power = 2,
-		name = "坠星机LV1",
+		name = "皇家方舟技能LV1",
 		type = 2,
 		accuracy = 23,
-		model_ID = "feiji_weixingbanwu",
+		model_ID = "suoyu",
 		ACC_growth = 0,
-		crash_DMG = 188,
-		dodge = 1.05,
+		crash_DMG = 90,
+		dodge = 1,
 		funnel_behavior = "",
-		nationality = 2,
-		id = 65251,
-		icon = "feiji_weixingbanwu",
+		nationality = 3,
+		id = 61010,
+		icon = "suoyu",
 		AP_growth = 2000,
-		dodge_limit = 5,
-		hp_growth = 1386,
-		speed = 52,
-		max_hp = 36,
+		dodge_limit = 0,
+		hp_growth = 1216,
+		speed = 40,
+		max_hp = 32,
 		scale = 1,
 		weapon_ID = {
-			65261
+			61013
 		},
 		position_offset = {
 			0,
@@ -163,6 +104,246 @@ pg.aircraft_template_138 = {
 			},
 			{
 				0.26,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[61011] = {
+		id = 61011,
+		name = "皇家方舟技能LV2",
+		base = 61010,
+		max_hp = 64,
+		hp_growth = 2432,
+		weapon_ID = {
+			61014
+		}
+	},
+	[61012] = {
+		id = 61012,
+		name = "皇家方舟技能LV3",
+		base = 61010,
+		max_hp = 95,
+		hp_growth = 3648,
+		weapon_ID = {
+			61015
+		}
+	},
+	[61016] = {
+		attack_power = 2,
+		name = "大凤技能彩云",
+		type = 3,
+		accuracy = 23,
+		model_ID = "caiyun",
+		ACC_growth = 0,
+		crash_DMG = 208,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 61016,
+		icon = "caiyun",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 1605,
+		speed = 66,
+		max_hp = 42,
+		scale = 1,
+		weapon_ID = {},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-1.73,
+					0
+				},
+				{
+					0.82,
+					2.04,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.64,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[61017] = {
+		attack_power = 2,
+		name = "多多丸技能鱼雷机",
+		type = 3,
+		accuracy = 23,
+		model_ID = "97jiangong",
+		ACC_growth = 0,
+		crash_DMG = 180,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 61017,
+		icon = "97jiangong",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 3678,
+		speed = 45,
+		max_hp = 96,
+		scale = 1,
+		weapon_ID = {
+			61018
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-1.73,
+					0
+				},
+				{
+					0.82,
+					2.04,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[61019] = {
+		attack_power = 2,
+		name = "黑企业剧情轰炸机",
+		type = 3,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 208,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 61019,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 5000,
+		speed = 66,
+		max_hp = 120,
+		scale = 1,
+		weapon_ID = {
+			61021
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-1.73,
+					0
+				},
+				{
+					0.82,
+					2.04,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.64,
 				0,
 				0
 			},

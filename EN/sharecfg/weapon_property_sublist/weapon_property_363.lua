@@ -2,282 +2,6 @@ pg = pg or {}
 pg.weapon_property_363 = {}
 
 function ()
-	uv0.weapon_property_363[1002243] = {
-		recover_time = 0.5,
-		name = "【精英】侵扰者III型 锥形轨道弹幕 III",
-		shakescreen = 0,
-		type = 2,
-		torpedo_ammo = 0,
-		fire_fx = "CLFire",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 360,
-		reload_max = 9999,
-		queue = 3,
-		range = 120,
-		damage = 8,
-		suppress = 0,
-		auto_aftercast = 0,
-		corrected = 125,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-155mm",
-		id = 1002243,
-		attack_attribute_ratio = 100,
-		aim_type = 0,
-		bullet_ID = {
-			690015,
-			690017,
-			690019
-		},
-		barrage_ID = {
-			690069,
-			690071,
-			690073
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_363[1002244] = {
-		recover_time = 0.5,
-		name = "【精英】侵扰者III型 锥形轨道弹幕 IV",
-		shakescreen = 0,
-		type = 2,
-		torpedo_ammo = 0,
-		fire_fx = "CLFire",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 360,
-		reload_max = 9999,
-		queue = 3,
-		range = 120,
-		damage = 10,
-		suppress = 0,
-		auto_aftercast = 0,
-		corrected = 125,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-155mm",
-		id = 1002244,
-		attack_attribute_ratio = 100,
-		aim_type = 0,
-		bullet_ID = {
-			690015,
-			690017,
-			690019
-		},
-		barrage_ID = {
-			690069,
-			690071,
-			690073
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_363[1002245] = {
-		recover_time = 0.5,
-		name = "【精英】侵扰者III型 锥形轨道弹幕 V",
-		shakescreen = 0,
-		type = 2,
-		torpedo_ammo = 0,
-		fire_fx = "CLFire",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 360,
-		reload_max = 9999,
-		queue = 3,
-		range = 120,
-		damage = 12,
-		suppress = 0,
-		auto_aftercast = 0,
-		corrected = 125,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-155mm",
-		id = 1002245,
-		attack_attribute_ratio = 100,
-		aim_type = 0,
-		bullet_ID = {
-			690015,
-			690017,
-			690019
-		},
-		barrage_ID = {
-			690069,
-			690071,
-			690073
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_363[1002246] = {
-		recover_time = 0,
-		name = "【精英】侵扰者III型 感应式电磁Bomb I",
-		shakescreen = 0,
-		type = 1,
-		torpedo_ammo = 0,
-		fire_fx = "",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 360,
-		reload_max = 9999,
-		queue = 2,
-		range = 120,
-		damage = 10,
-		suppress = 0,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "",
-		id = 1002246,
-		attack_attribute_ratio = 100,
-		aim_type = 0,
-		bullet_ID = {
-			750136
-		},
-		barrage_ID = {
-			760197
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_363[1002247] = {
-		recover_time = 0,
-		name = "【精英】侵扰者III型 感应式电磁Bomb II",
-		shakescreen = 0,
-		type = 1,
-		torpedo_ammo = 0,
-		fire_fx = "",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 360,
-		reload_max = 9999,
-		queue = 2,
-		range = 120,
-		damage = 10,
-		suppress = 0,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "",
-		id = 1002247,
-		attack_attribute_ratio = 100,
-		aim_type = 0,
-		bullet_ID = {
-			750136
-		},
-		barrage_ID = {
-			760197
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_363[1002248] = {
-		recover_time = 0,
-		name = "【精英】侵扰者III型 感应式电磁Bomb III",
-		shakescreen = 0,
-		type = 1,
-		torpedo_ammo = 0,
-		fire_fx = "",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 360,
-		reload_max = 9999,
-		queue = 2,
-		range = 120,
-		damage = 10,
-		suppress = 0,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "",
-		id = 1002248,
-		attack_attribute_ratio = 100,
-		aim_type = 0,
-		bullet_ID = {
-			750136
-		},
-		barrage_ID = {
-			760197
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
 	uv0.weapon_property_363[1002249] = {
 		recover_time = 0,
 		name = "【精英】侵扰者III型 感应式电磁Bomb IV",
@@ -991,6 +715,70 @@ function ()
 		base = 1001049,
 		bullet_ID = {
 			834
+		}
+	}
+	uv0.weapon_property_363[1003050] = {
+		id = 1003050,
+		name = "【量产型】梦境战列主炮 V",
+		base = 1001050,
+		bullet_ID = {
+			834
+		}
+	}
+	uv0.weapon_property_363[1003051] = {
+		id = 1003051,
+		name = "【量产型】梦境战列跨射武器3x2轮 I",
+		base = 1001051,
+		bullet_ID = {
+			834
+		}
+	}
+	uv0.weapon_property_363[1003052] = {
+		id = 1003052,
+		name = "【量产型】梦境战列跨射武器3x2轮 II",
+		base = 1001052,
+		bullet_ID = {
+			834
+		}
+	}
+	uv0.weapon_property_363[1003053] = {
+		id = 1003053,
+		name = "【量产型】梦境战列跨射武器3x2轮 III",
+		base = 1001053,
+		bullet_ID = {
+			834
+		}
+	}
+	uv0.weapon_property_363[1003054] = {
+		id = 1003054,
+		name = "【量产型】梦境战列跨射武器3x2轮 IV",
+		base = 1001054,
+		bullet_ID = {
+			834
+		}
+	}
+	uv0.weapon_property_363[1003055] = {
+		id = 1003055,
+		name = "【量产型】梦境战列跨射武器3x2轮 V",
+		base = 1001055,
+		bullet_ID = {
+			834
+		}
+	}
+	uv0.weapon_property_363[1003056] = {
+		id = 1003056,
+		name = "【量产型】梦境航母近程自卫火炮 I",
+		base = 1001056,
+		bullet_ID = {
+			831
+		}
+	}
+	uv0.weapon_property_363[1003057] = {
+		id = 1003057,
+		name = "【量产型】梦境航母近程自卫火炮 II",
+		base = 1001057,
+		bullet_ID = {
+			831
 		}
 	}
 end()

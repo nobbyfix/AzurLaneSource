@@ -1,301 +1,190 @@
 pg = pg or {}
 pg.equip_data_statistics_312 = {
-	[46067] = {
-		id = 46067,
-		damage = "70/wave",
-		base = 46060,
+	[45425] = {
+		id = 45425,
+		damage = "99 x 2",
+		base = 45420,
 		weapon_id = {
-			46067
+			45425
 		}
 	},
-	[46068] = {
-		id = 46068,
-		damage = "76/wave",
-		base = 46060,
+	[45426] = {
+		id = 45426,
+		damage = "108 x 2",
+		base = 45420,
 		weapon_id = {
-			46068
+			45426
 		}
 	},
-	[46069] = {
-		id = 46069,
-		damage = "82/wave",
-		base = 46060,
+	[45427] = {
+		id = 45427,
+		damage = "117 x 2",
+		base = 45420,
 		weapon_id = {
-			46069
+			45427
 		}
 	},
-	[46070] = {
-		id = 46070,
-		damage = "89/wave",
-		base = 46060,
+	[45428] = {
+		id = 45428,
+		damage = "126 x 2",
+		base = 45420,
 		weapon_id = {
-			46070
+			45428
 		}
 	},
-	[46071] = {
-		id = 46071,
-		anti_siren = 100,
-		damage = "89/wave",
-		base = 46060,
+	[45429] = {
+		id = 45429,
+		damage = "135 x 2",
+		base = 45420,
 		weapon_id = {
-			46071
+			45429
 		}
 	},
-	[46100] = {
-		tech = 1,
-		name = "Single 37mm Flak AA Gun Mount",
-		speciality = "Anti-Air",
-		type = 6,
-		rarity = 1,
-		ammo = 5,
-		damage = "8/wave",
-		nationality = 4,
-		value_2 = 0,
-		id = 46100,
-		value_3 = 0,
-		descrip = "Single 37mm Flak AA Gun Mount used for anti-air defense.",
-		icon = "46100",
-		torpedo_ammo = 0,
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {
-			1,
-			2,
-			6,
-			10
-		},
+	[45430] = {
+		id = 45430,
+		damage = "144 x 2",
+		base = 45420,
 		weapon_id = {
-			46100
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
-		},
-		part_sub = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
-		},
-		equip_parameters = {},
-		label = {
-			"KMS",
-			"ST",
-			"AA"
+			45430
 		}
 	},
-	[46101] = {
-		id = 46101,
-		damage = "9/wave",
-		base = 46100,
-		weapon_id = {
-			46101
-		}
-	},
-	[46102] = {
-		id = 46102,
-		damage = "10/wave",
-		base = 46100,
-		weapon_id = {
-			46102
-		}
-	},
-	[46103] = {
-		id = 46103,
-		damage = "12/wave",
-		base = 46100,
-		weapon_id = {
-			46103
-		}
-	},
-	[46120] = {
-		tech = 2,
-		name = "Single 37mm Flak AA Gun Mount",
-		speciality = "Anti-Air",
-		type = 6,
-		value_2 = 5,
-		ammo = 5,
-		damage = "11/wave",
-		nationality = 4,
-		rarity = 2,
-		id = 46120,
-		value_3 = 0,
-		torpedo_ammo = 0,
-		descrip = "Single 37mm Flak AA Gun Mount used for anti-air defense.",
-		icon = "46100",
-		attribute_2 = "antiaircraft",
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {
-			1,
-			2,
-			6,
-			10
-		},
-		weapon_id = {
-			46120
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
-		},
-		part_sub = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
-		},
-		equip_parameters = {},
-		label = {
-			"KMS",
-			"ST",
-			"AA"
-		}
-	},
-	[46121] = {
-		id = 46121,
-		damage = "12/wave",
-		base = 46120,
-		weapon_id = {
-			46121
-		}
-	},
-	[46122] = {
-		id = 46122,
-		damage = "14/wave",
-		base = 46120,
-		weapon_id = {
-			46122
-		}
-	},
-	[46123] = {
-		id = 46123,
-		damage = "16/wave",
-		base = 46120,
-		weapon_id = {
-			46123
-		}
-	},
-	[46140] = {
+	[45440] = {
 		tech = 3,
-		name = "Single 37mm Flak AA Gun Mount",
-		speciality = "Anti-Air",
-		type = 6,
-		value_2 = 12,
-		ammo = 5,
-		damage = "12/wave",
+		name = "G7e Acoustic Homing Submarine Torpedo",
+		speciality = "Torpedo",
+		type = 13,
+		value_2 = 45,
+		ammo = 4,
+		damage = "64 x 2",
 		nationality = 4,
-		rarity = 3,
-		id = 46140,
+		rarity = 5,
+		id = 45440,
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "Single 37mm Flak AA Gun Mount used for anti-air defense.",
-		icon = "46100",
-		attribute_2 = "antiaircraft",
+		descrip = "No description",
+		icon = "45400",
+		attribute_2 = "torpedo",
 		property_rate = {},
 		ammo_icon = {},
-		ammo_info = {},
+		ammo_info = {
+			{
+				3,
+				1826
+			}
+		},
 		equip_info = {
 			1,
 			2,
+			{
+				3,
+				1826
+			},
+			{
+				4,
+				1601
+			},
 			6,
-			10
+			10,
+			11,
+			12
 		},
 		weapon_id = {
-			46140
+			45440
 		},
 		skill_id = {},
 		part_main = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
+			8,
+			17
 		},
 		part_sub = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
+			8,
+			17
 		},
 		equip_parameters = {},
 		label = {
 			"KMS",
-			"ST",
-			"AA"
+			"SS",
+			"TP"
 		}
 	},
-	[46141] = {
-		id = 46141,
-		damage = "14/wave",
-		base = 46140,
+	[45441] = {
+		id = 45441,
+		damage = "73 x 2",
+		base = 45440,
 		weapon_id = {
-			46141
+			45441
 		}
 	},
-	[46142] = {
-		id = 46142,
-		damage = "16/wave",
-		base = 46140,
+	[45442] = {
+		id = 45442,
+		damage = "82 x 2",
+		base = 45440,
 		weapon_id = {
-			46142
+			45442
 		}
 	},
-	[46143] = {
-		id = 46143,
-		damage = "18/wave",
-		base = 46140,
+	[45443] = {
+		id = 45443,
+		damage = "91 x 2",
+		base = 45440,
 		weapon_id = {
-			46143
+			45443
+		}
+	},
+	[45444] = {
+		id = 45444,
+		damage = "100 x 2",
+		base = 45440,
+		weapon_id = {
+			45444
+		}
+	},
+	[45445] = {
+		id = 45445,
+		damage = "110 x 2",
+		base = 45440,
+		weapon_id = {
+			45445
+		}
+	},
+	[45446] = {
+		id = 45446,
+		damage = "120 x 2",
+		base = 45440,
+		weapon_id = {
+			45446
+		}
+	},
+	[45447] = {
+		id = 45447,
+		damage = "130 x 2",
+		base = 45440,
+		weapon_id = {
+			45447
+		}
+	},
+	[45448] = {
+		id = 45448,
+		damage = "140 x 2",
+		base = 45440,
+		weapon_id = {
+			45448
+		}
+	},
+	[45449] = {
+		id = 45449,
+		damage = "150 x 2",
+		base = 45440,
+		weapon_id = {
+			45449
+		}
+	},
+	[45450] = {
+		id = 45450,
+		damage = "160 x 2",
+		base = 45440,
+		weapon_id = {
+			45450
 		}
 	}
 }

@@ -2,406 +2,35 @@ pg = pg or {}
 pg.weapon_property_116 = {}
 
 function ()
-	uv0.weapon_property_116[65234] = {
-		id = 65234,
-		name = "大凤μ-吸血弹幕Lv4",
-		damage = 41,
-		base = 65231
+	uv0.weapon_property_116[64467] = {
+		id = 64467,
+		name = "春香弹幕粉色imas徽章LV7",
+		damage = 17,
+		base = 64461
 	}
-	uv0.weapon_property_116[65235] = {
-		id = 65235,
-		name = "大凤μ-吸血弹幕Lv5",
-		damage = 43,
-		base = 65231
+	uv0.weapon_property_116[64468] = {
+		id = 64468,
+		name = "春香弹幕粉色imas徽章LV8",
+		damage = 18,
+		base = 64461
 	}
-	uv0.weapon_property_116[65236] = {
-		id = 65236,
-		name = "大凤μ-吸血弹幕Lv6",
-		damage = 45,
-		base = 65231
+	uv0.weapon_property_116[64469] = {
+		id = 64469,
+		name = "春香弹幕粉色imas徽章LV9",
+		damage = 20,
+		base = 64461
 	}
-	uv0.weapon_property_116[65237] = {
-		id = 65237,
-		name = "大凤μ-吸血弹幕Lv7",
-		damage = 47,
-		base = 65231
+	uv0.weapon_property_116[64470] = {
+		id = 64470,
+		name = "春香弹幕粉色imas徽章LV10",
+		damage = 22,
+		base = 64461
 	}
-	uv0.weapon_property_116[65238] = {
-		id = 65238,
-		name = "大凤μ-吸血弹幕Lv8",
-		damage = 49,
-		base = 65231
-	}
-	uv0.weapon_property_116[65239] = {
-		id = 65239,
-		name = "大凤μ-吸血弹幕Lv9",
-		damage = 51,
-		base = 65231
-	}
-	uv0.weapon_property_116[65240] = {
-		id = 65240,
-		name = "大凤μ-吸血弹幕Lv10",
-		damage = 53,
-		base = 65231
-	}
-	uv0.weapon_property_116[65241] = {
+	uv0.weapon_property_116[64471] = {
 		recover_time = 0.5,
-		name = "罗恩μ追击鱼雷Lv1",
+		name = "春香弹幕应援棒鱼雷LV1",
 		shakescreen = 0,
 		type = 3,
-		torpedo_ammo = 0,
-		fire_fx = "CAFire",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 2,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 120,
-		reload_max = 400,
-		queue = 1,
-		range = 90,
-		damage = 30,
-		suppress = 0,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-main",
-		id = 65241,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			19221
-		},
-		barrage_ID = {
-			80962
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_116[65242] = {
-		id = 65242,
-		name = "罗恩μ追击鱼雷Lv2",
-		damage = 32,
-		base = 65241
-	}
-	uv0.weapon_property_116[65243] = {
-		id = 65243,
-		name = "罗恩μ追击鱼雷Lv3",
-		damage = 34,
-		base = 65241
-	}
-	uv0.weapon_property_116[65244] = {
-		id = 65244,
-		name = "罗恩μ追击鱼雷Lv4",
-		damage = 36,
-		base = 65241
-	}
-	uv0.weapon_property_116[65245] = {
-		id = 65245,
-		name = "罗恩μ追击鱼雷Lv5",
-		damage = 38,
-		base = 65241
-	}
-	uv0.weapon_property_116[65246] = {
-		id = 65246,
-		name = "罗恩μ追击鱼雷Lv6",
-		damage = 40,
-		base = 65241
-	}
-	uv0.weapon_property_116[65247] = {
-		id = 65247,
-		name = "罗恩μ追击鱼雷Lv7",
-		damage = 42,
-		base = 65241,
-		bullet_ID = {
-			19221,
-			19221
-		},
-		barrage_ID = {
-			80962,
-			80963
-		}
-	}
-	uv0.weapon_property_116[65248] = {
-		id = 65248,
-		name = "罗恩μ追击鱼雷Lv8",
-		damage = 44,
-		base = 65241,
-		bullet_ID = {
-			19221,
-			19221
-		},
-		barrage_ID = {
-			80962,
-			80963
-		}
-	}
-	uv0.weapon_property_116[65249] = {
-		id = 65249,
-		name = "罗恩μ追击鱼雷Lv9",
-		damage = 46,
-		base = 65241,
-		bullet_ID = {
-			19221,
-			19221
-		},
-		barrage_ID = {
-			80962,
-			80963
-		}
-	}
-	uv0.weapon_property_116[65250] = {
-		id = 65250,
-		name = "罗恩μ追击鱼雷Lv10",
-		damage = 50,
-		base = 65241,
-		bullet_ID = {
-			19221,
-			19221
-		},
-		barrage_ID = {
-			80962,
-			80963
-		}
-	}
-	uv0.weapon_property_116[65251] = {
-		recover_time = 0.5,
-		name = "光辉μ坠星Lv1",
-		shakescreen = 0,
-		type = 10,
-		torpedo_ammo = 0,
-		fire_fx = "",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 0,
-		expose = 10,
-		search_type = 1,
-		effect_move = 1,
-		angle = 90,
-		reload_max = 2070,
-		queue = 1,
-		range = 90,
-		damage = 52,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "plane",
-		fire_sfx = "battle/cannon-main",
-		id = 65251,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			65251
-		},
-		barrage_ID = {
-			1500
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_116[65252] = {
-		reload_max = 2035,
-		name = "光辉μ坠星Lv2",
-		damage = 72,
-		base = 65251,
-		id = 65252,
-		bullet_ID = {
-			65252
-		}
-	}
-	uv0.weapon_property_116[65253] = {
-		reload_max = 2000,
-		name = "光辉μ坠星Lv3",
-		damage = 92,
-		base = 65251,
-		id = 65253,
-		bullet_ID = {
-			65253
-		}
-	}
-	uv0.weapon_property_116[65254] = {
-		reload_max = 1965,
-		name = "光辉μ坠星Lv4",
-		damage = 113,
-		base = 65251,
-		id = 65254,
-		bullet_ID = {
-			65254
-		}
-	}
-	uv0.weapon_property_116[65255] = {
-		reload_max = 1930,
-		name = "光辉μ坠星Lv5",
-		damage = 134,
-		base = 65251,
-		id = 65255,
-		bullet_ID = {
-			65255
-		}
-	}
-	uv0.weapon_property_116[65256] = {
-		reload_max = 1895,
-		name = "光辉μ坠星Lv6",
-		damage = 155,
-		base = 65251,
-		id = 65256,
-		bullet_ID = {
-			65256
-		}
-	}
-	uv0.weapon_property_116[65257] = {
-		reload_max = 1860,
-		name = "光辉μ坠星Lv7",
-		damage = 176,
-		base = 65251,
-		id = 65257,
-		bullet_ID = {
-			65257
-		}
-	}
-	uv0.weapon_property_116[65258] = {
-		reload_max = 1825,
-		name = "光辉μ坠星Lv8",
-		damage = 197,
-		base = 65251,
-		id = 65258,
-		bullet_ID = {
-			65258
-		}
-	}
-	uv0.weapon_property_116[65259] = {
-		reload_max = 1790,
-		name = "光辉μ坠星Lv9",
-		damage = 218,
-		base = 65251,
-		id = 65259,
-		bullet_ID = {
-			65259
-		}
-	}
-	uv0.weapon_property_116[65260] = {
-		reload_max = 1755,
-		name = "光辉μ坠星Lv10",
-		damage = 239,
-		base = 65251,
-		id = 65260,
-		bullet_ID = {
-			65260
-		}
-	}
-	uv0.weapon_property_116[65261] = {
-		recover_time = 0,
-		name = "前射式星x6",
-		shakescreen = 0,
-		type = 3,
-		torpedo_ammo = 0,
-		fire_fx = "",
-		action_index = "",
-		charge_param = "",
-		axis_angle = -10,
-		fire_fx_loop_type = 1,
-		attack_attribute = 4,
-		expose = 0,
-		search_type = 2,
-		effect_move = 0,
-		angle = 45,
-		reload_max = 9500,
-		queue = 1,
-		range = 80,
-		damage = 55,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "torpedo",
-		fire_sfx = "",
-		id = 65261,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			19222
-		},
-		barrage_ID = {
-			80964
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_116[65262] = {
-		id = 65262,
-		damage = 65,
-		base = 65261
-	}
-	uv0.weapon_property_116[65263] = {
-		id = 65263,
-		damage = 75,
-		base = 65261
-	}
-	uv0.weapon_property_116[65264] = {
-		id = 65264,
-		damage = 85,
-		base = 65261
-	}
-	uv0.weapon_property_116[65265] = {
-		id = 65265,
-		damage = 95,
-		base = 65261
-	}
-	uv0.weapon_property_116[65266] = {
-		id = 65266,
-		damage = 105,
-		base = 65261
-	}
-	uv0.weapon_property_116[65267] = {
-		id = 65267,
-		damage = 115,
-		base = 65261
-	}
-	uv0.weapon_property_116[65268] = {
-		id = 65268,
-		damage = 125,
-		base = 65261
-	}
-	uv0.weapon_property_116[65269] = {
-		id = 65269,
-		damage = 135,
-		base = 65261
-	}
-	uv0.weapon_property_116[65270] = {
-		id = 65270,
-		damage = 145,
-		base = 65261
-	}
-	uv0.weapon_property_116[65271] = {
-		recover_time = 0.5,
-		name = "玛莉萝丝反击弹幕技能Lv1",
-		shakescreen = 0,
-		type = 1,
 		torpedo_ammo = 0,
 		fire_fx = "CLFire",
 		action_index = "attack",
@@ -413,25 +42,25 @@ function ()
 		search_type = 1,
 		effect_move = 0,
 		angle = 360,
-		reload_max = 280,
+		reload_max = 1750,
 		queue = 1,
-		range = 100,
-		damage = 6,
-		suppress = 1,
+		range = 200,
+		damage = 30,
+		suppress = 0,
 		auto_aftercast = 0,
 		corrected = 100,
 		min_range = 0,
 		initial_over_heat = 0,
 		spawn_bound = "cannon",
 		fire_sfx = "battle/cannon-155mm",
-		id = 65271,
+		id = 64471,
 		attack_attribute_ratio = 100,
-		aim_type = 1,
+		aim_type = 0,
 		bullet_ID = {
-			19223
+			19329
 		},
 		barrage_ID = {
-			80965
+			81143
 		},
 		oxy_type = {
 			1
@@ -441,107 +70,177 @@ function ()
 		},
 		precast_param = {}
 	}
-	uv0.weapon_property_116[65272] = {
-		id = 65272,
-		name = "玛莉萝丝反击弹幕技能Lv2",
-		damage = 8,
-		base = 65271
+	uv0.weapon_property_116[64472] = {
+		id = 64472,
+		name = "春香弹幕应援棒鱼雷LV2",
+		damage = 31,
+		base = 64471
 	}
-	uv0.weapon_property_116[65273] = {
-		id = 65273,
-		name = "玛莉萝丝反击弹幕技能Lv3",
-		damage = 10,
-		base = 65271
+	uv0.weapon_property_116[64473] = {
+		id = 64473,
+		name = "春香弹幕应援棒鱼雷LV3",
+		damage = 32,
+		base = 64471
 	}
-	uv0.weapon_property_116[65274] = {
-		id = 65274,
-		name = "玛莉萝丝反击弹幕技能Lv4",
-		damage = 12,
-		base = 65271
+	uv0.weapon_property_116[64474] = {
+		id = 64474,
+		name = "春香弹幕应援棒鱼雷LV4",
+		damage = 33,
+		base = 64471
 	}
-	uv0.weapon_property_116[65275] = {
-		id = 65275,
-		name = "玛莉萝丝反击弹幕技能Lv5",
-		damage = 14,
-		base = 65271
+	uv0.weapon_property_116[64475] = {
+		id = 64475,
+		name = "春香弹幕应援棒鱼雷LV5",
+		damage = 35,
+		base = 64471
 	}
-	uv0.weapon_property_116[65276] = {
-		id = 65276,
-		name = "玛莉萝丝反击弹幕技能Lv6",
-		damage = 16,
-		base = 65271
+	uv0.weapon_property_116[64476] = {
+		id = 64476,
+		name = "春香弹幕应援棒鱼雷LV6",
+		damage = 37,
+		base = 64471
 	}
-	uv0.weapon_property_116[65277] = {
-		id = 65277,
-		name = "玛莉萝丝反击弹幕技能Lv7",
-		damage = 18,
-		base = 65271,
-		bullet_ID = {
-			19223,
-			19223,
-			19223
-		},
-		barrage_ID = {
-			80965,
-			80966,
-			80967
-		}
+	uv0.weapon_property_116[64477] = {
+		id = 64477,
+		name = "春香弹幕应援棒鱼雷LV7",
+		damage = 39,
+		base = 64471
 	}
-	uv0.weapon_property_116[65278] = {
-		id = 65278,
-		name = "玛莉萝丝反击弹幕技能Lv8",
-		damage = 20,
-		base = 65271,
-		bullet_ID = {
-			19223,
-			19223,
-			19223
-		},
-		barrage_ID = {
-			80965,
-			80966,
-			80967
-		}
+	uv0.weapon_property_116[64478] = {
+		id = 64478,
+		name = "春香弹幕应援棒鱼雷LV8",
+		damage = 41,
+		base = 64471
 	}
-	uv0.weapon_property_116[65279] = {
-		id = 65279,
-		name = "玛莉萝丝反击弹幕技能Lv9",
-		damage = 22,
-		base = 65271,
-		bullet_ID = {
-			19223,
-			19223,
-			19223
-		},
-		barrage_ID = {
-			80965,
-			80966,
-			80967
-		}
+	uv0.weapon_property_116[64479] = {
+		id = 64479,
+		name = "春香弹幕应援棒鱼雷LV9",
+		damage = 43,
+		base = 64471
 	}
-	uv0.weapon_property_116[65280] = {
-		id = 65280,
-		name = "玛莉萝丝反击弹幕技能Lv10",
+	uv0.weapon_property_116[64480] = {
+		id = 64480,
+		name = "春香弹幕应援棒鱼雷LV10",
+		damage = 45,
+		base = 64471
+	}
+	uv0.weapon_property_116[64481] = {
+		recover_time = 0.5,
+		name = "梓迷路团子LV1",
+		shakescreen = 0,
+		type = 2,
+		torpedo_ammo = 0,
+		fire_fx = "CLFire",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 1,
+		effect_move = 0,
+		angle = 360,
+		reload_max = 1750,
+		queue = 1,
+		range = 50,
 		damage = 25,
-		base = 65271,
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "battle/cannon-155mm",
+		id = 64481,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
 		bullet_ID = {
-			19223,
-			19223,
-			19223
+			19330
 		},
 		barrage_ID = {
-			80965,
-			80966,
-			80967
+			81168
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_116[64482] = {
+		id = 64482,
+		name = "梓迷路团子LV2",
+		damage = 26,
+		base = 64481
+	}
+	uv0.weapon_property_116[64483] = {
+		id = 64483,
+		name = "梓迷路团子LV3",
+		damage = 27,
+		base = 64481
+	}
+	uv0.weapon_property_116[64484] = {
+		id = 64484,
+		name = "梓迷路团子LV4",
+		damage = 28,
+		base = 64481
+	}
+	uv0.weapon_property_116[64485] = {
+		id = 64485,
+		name = "梓迷路团子LV5",
+		damage = 29,
+		base = 64481
+	}
+	uv0.weapon_property_116[64486] = {
+		id = 64486,
+		name = "梓迷路团子LV6",
+		damage = 30,
+		base = 64481
+	}
+	uv0.weapon_property_116[64487] = {
+		id = 64487,
+		name = "梓迷路团子LV7",
+		damage = 31,
+		base = 64481,
+		barrage_ID = {
+			81144
 		}
 	}
-	uv0.weapon_property_116[65281] = {
-		recover_time = 0,
-		name = "穗香弹幕LV1-类黎塞留高爆4+2枚",
+	uv0.weapon_property_116[64488] = {
+		id = 64488,
+		name = "梓迷路团子LV8",
+		damage = 32,
+		base = 64481,
+		barrage_ID = {
+			81144
+		}
+	}
+	uv0.weapon_property_116[64489] = {
+		id = 64489,
+		name = "梓迷路团子LV9",
+		damage = 33,
+		base = 64481,
+		barrage_ID = {
+			81144
+		}
+	}
+	uv0.weapon_property_116[64490] = {
+		id = 64490,
+		name = "梓迷路团子LV10",
+		damage = 35,
+		base = 64481,
+		barrage_ID = {
+			81144
+		}
+	}
+	uv0.weapon_property_116[64491] = {
+		recover_time = 0.5,
+		name = "秋月律子弹幕-强化型-LV1",
 		shakescreen = 0,
-		type = 19,
+		type = 2,
 		torpedo_ammo = 0,
-		fire_fx = "CAFire",
+		fire_fx = "CLFire",
 		action_index = "attack",
 		charge_param = "",
 		axis_angle = 0,
@@ -550,28 +249,60 @@ function ()
 		expose = 0,
 		search_type = 1,
 		effect_move = 0,
-		angle = 60,
-		reload_max = 3000,
+		angle = 360,
+		reload_max = 1750,
 		queue = 1,
-		range = 95,
-		damage = 62,
-		suppress = 1,
+		range = 60,
+		damage = 20,
+		suppress = 0,
 		auto_aftercast = 0,
 		corrected = 100,
-		min_range = 35,
+		min_range = 0,
 		initial_over_heat = 0,
 		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-main",
-		id = 65281,
+		fire_sfx = "battle/cannon-155mm",
+		id = 64491,
 		attack_attribute_ratio = 100,
-		aim_type = 1,
+		aim_type = 0,
 		bullet_ID = {
-			19224,
-			19225
+			19331,
+			19331,
+			19331,
+			19332,
+			19332,
+			19332,
+			19331,
+			19331,
+			19331,
+			19332,
+			19332,
+			19332,
+			19331,
+			19331,
+			19331,
+			19332,
+			19332,
+			19332
 		},
 		barrage_ID = {
-			80968,
-			80969
+			81145,
+			81146,
+			81147,
+			81148,
+			81149,
+			81150,
+			81151,
+			81152,
+			81153,
+			81154,
+			81155,
+			81156,
+			81157,
+			81158,
+			81159,
+			81160,
+			81161,
+			81162
 		},
 		oxy_type = {
 			1
@@ -579,74 +310,69 @@ function ()
 		search_condition = {
 			1
 		},
-		precast_param = {
-			fx = "jineng",
-			alertTime = 1,
-			time = 0.5,
-			isBound = true
-		}
+		precast_param = {}
 	}
-	uv0.weapon_property_116[65282] = {
-		id = 65282,
-		name = "穗香弹幕LV2-类黎塞留高爆4+2枚",
-		damage = 74,
-		base = 65281
+	uv0.weapon_property_116[64492] = {
+		id = 64492,
+		name = "秋月律子弹幕-强化型-LV2",
+		damage = 21,
+		base = 64491
 	}
-	uv0.weapon_property_116[65283] = {
-		id = 65283,
-		name = "穗香弹幕LV3-类黎塞留高爆4+2枚",
-		damage = 86,
-		base = 65281
+	uv0.weapon_property_116[64493] = {
+		id = 64493,
+		name = "秋月律子弹幕-强化型-LV3",
+		damage = 22,
+		base = 64491
 	}
-	uv0.weapon_property_116[65284] = {
-		id = 65284,
-		name = "穗香弹幕LV4-类黎塞留高爆4+2枚",
-		damage = 98,
-		base = 65281
+	uv0.weapon_property_116[64494] = {
+		id = 64494,
+		name = "秋月律子弹幕-强化型-LV4",
+		damage = 23,
+		base = 64491
 	}
-	uv0.weapon_property_116[65285] = {
-		id = 65285,
-		name = "穗香弹幕LV5-类黎塞留高爆4+2枚",
-		damage = 110,
-		base = 65281
+	uv0.weapon_property_116[64495] = {
+		id = 64495,
+		name = "秋月律子弹幕-强化型-LV5",
+		damage = 24,
+		base = 64491
 	}
-	uv0.weapon_property_116[65286] = {
-		id = 65286,
-		name = "穗香弹幕LV6-类黎塞留高爆4+2枚",
-		damage = 122,
-		base = 65281
+	uv0.weapon_property_116[64496] = {
+		id = 64496,
+		name = "秋月律子弹幕-强化型-LV6",
+		damage = 25,
+		base = 64491
 	}
-	uv0.weapon_property_116[65287] = {
-		id = 65287,
-		name = "穗香弹幕LV7-类黎塞留高爆4+2枚",
-		damage = 134,
-		base = 65281
+	uv0.weapon_property_116[64497] = {
+		id = 64497,
+		name = "秋月律子弹幕-强化型-LV7",
+		damage = 26,
+		base = 64491
 	}
-	uv0.weapon_property_116[65288] = {
-		id = 65288,
-		name = "穗香弹幕LV8-类黎塞留高爆4+2枚",
-		damage = 146,
-		base = 65281
+	uv0.weapon_property_116[64498] = {
+		id = 64498,
+		name = "秋月律子弹幕-强化型-LV8",
+		damage = 27,
+		base = 64491
 	}
-	uv0.weapon_property_116[65289] = {
-		id = 65289,
-		name = "穗香弹幕LV9-类黎塞留高爆4+2枚",
-		damage = 158,
-		base = 65281
+	uv0.weapon_property_116[64499] = {
+		id = 64499,
+		name = "秋月律子弹幕-强化型-LV9",
+		damage = 28,
+		base = 64491
 	}
-	uv0.weapon_property_116[65290] = {
-		id = 65290,
-		name = "穗香弹幕LV10-类黎塞留高爆4+2枚",
-		damage = 170,
-		base = 65281
+	uv0.weapon_property_116[64500] = {
+		id = 64500,
+		name = "秋月律子弹幕-强化型-LV10",
+		damage = 30,
+		base = 64491
 	}
-	uv0.weapon_property_116[65291] = {
-		recover_time = 0,
-		name = "穗香弹幕LV1-类佐治亚超重弹2枚",
+	uv0.weapon_property_116[64501] = {
+		recover_time = 0.5,
+		name = "秋月律子弹幕-普通型-LV1",
 		shakescreen = 0,
-		type = 19,
+		type = 2,
 		torpedo_ammo = 0,
-		fire_fx = "CAFire",
+		fire_fx = "CLFire",
 		action_index = "attack",
 		charge_param = "",
 		axis_angle = 0,
@@ -655,26 +381,42 @@ function ()
 		expose = 0,
 		search_type = 1,
 		effect_move = 0,
-		angle = 60,
-		reload_max = 3000,
+		angle = 360,
+		reload_max = 1750,
 		queue = 1,
-		range = 95,
-		damage = 62,
-		suppress = 1,
+		range = 60,
+		damage = 10,
+		suppress = 0,
 		auto_aftercast = 0,
 		corrected = 100,
-		min_range = 25,
+		min_range = 0,
 		initial_over_heat = 0,
 		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-main",
-		id = 65291,
+		fire_sfx = "battle/cannon-155mm",
+		id = 64501,
 		attack_attribute_ratio = 100,
-		aim_type = 1,
+		aim_type = 0,
 		bullet_ID = {
-			19226
+			19335,
+			19335,
+			19335,
+			19335,
+			19335,
+			19335,
+			19335,
+			19335,
+			19335
 		},
 		barrage_ID = {
-			1300
+			81145,
+			81146,
+			81147,
+			81151,
+			81152,
+			81153,
+			81157,
+			81158,
+			81159
 		},
 		oxy_type = {
 			1
@@ -682,35 +424,264 @@ function ()
 		search_condition = {
 			1
 		},
-		precast_param = {
-			fx = "jineng",
-			alertTime = 1,
-			time = 0.5,
-			isBound = true
-		}
+		precast_param = {}
 	}
-	uv0.weapon_property_116[65292] = {
-		id = 65292,
-		name = "穗香弹幕LV2-类佐治亚超重弹2枚",
-		damage = 74,
-		base = 65291
+	uv0.weapon_property_116[64502] = {
+		id = 64502,
+		name = "秋月律子弹幕-普通型-LV2",
+		damage = 11,
+		base = 64501
 	}
-	uv0.weapon_property_116[65293] = {
-		id = 65293,
-		name = "穗香弹幕LV3-类佐治亚超重弹2枚",
-		damage = 86,
-		base = 65291
+	uv0.weapon_property_116[64503] = {
+		id = 64503,
+		name = "秋月律子弹幕-普通型-LV3",
+		damage = 12,
+		base = 64501
 	}
-	uv0.weapon_property_116[65294] = {
-		id = 65294,
-		name = "穗香弹幕LV4-类佐治亚超重弹2枚",
-		damage = 98,
-		base = 65291
+	uv0.weapon_property_116[64504] = {
+		id = 64504,
+		name = "秋月律子弹幕-普通型-LV4",
+		damage = 13,
+		base = 64501
 	}
-	uv0.weapon_property_116[65295] = {
-		id = 65295,
-		name = "穗香弹幕LV5-类佐治亚超重弹2枚",
-		damage = 110,
-		base = 65291
+	uv0.weapon_property_116[64505] = {
+		id = 64505,
+		name = "秋月律子弹幕-普通型-LV5",
+		damage = 14,
+		base = 64501
+	}
+	uv0.weapon_property_116[64506] = {
+		id = 64506,
+		name = "秋月律子弹幕-普通型-LV6",
+		damage = 15,
+		base = 64501
+	}
+	uv0.weapon_property_116[64507] = {
+		id = 64507,
+		name = "秋月律子弹幕-普通型-LV7",
+		damage = 16,
+		base = 64501
+	}
+	uv0.weapon_property_116[64508] = {
+		id = 64508,
+		name = "秋月律子弹幕-普通型-LV8",
+		damage = 17,
+		base = 64501
+	}
+	uv0.weapon_property_116[64509] = {
+		id = 64509,
+		name = "秋月律子弹幕-普通型-LV9",
+		damage = 18,
+		base = 64501
+	}
+	uv0.weapon_property_116[64510] = {
+		id = 64510,
+		name = "秋月律子弹幕-普通型-LV10",
+		damage = 20,
+		base = 64501
+	}
+	uv0.weapon_property_116[64511] = {
+		recover_time = 0,
+		name = "双海亚美花朵鱼雷弹幕LV1",
+		shakescreen = 0,
+		type = 3,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 2,
+		expose = 0,
+		search_type = 1,
+		effect_move = 0,
+		angle = 60,
+		reload_max = 3000,
+		queue = 1,
+		range = 90,
+		damage = 27,
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "torpedo",
+		fire_sfx = "",
+		id = 64511,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
+		bullet_ID = {
+			19333,
+			19333,
+			19333
+		},
+		barrage_ID = {
+			81163,
+			81165,
+			81166
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_116[64512] = {
+		id = 64512,
+		name = "双海亚美花朵鱼雷弹幕LV2",
+		damage = 30,
+		base = 64511
+	}
+	uv0.weapon_property_116[64513] = {
+		id = 64513,
+		name = "双海亚美花朵鱼雷弹幕LV3",
+		damage = 33,
+		base = 64511
+	}
+	uv0.weapon_property_116[64514] = {
+		id = 64514,
+		name = "双海亚美花朵鱼雷弹幕LV4",
+		damage = 36,
+		base = 64511
+	}
+	uv0.weapon_property_116[64515] = {
+		id = 64515,
+		name = "双海亚美花朵鱼雷弹幕LV5",
+		damage = 40,
+		base = 64511
+	}
+	uv0.weapon_property_116[64516] = {
+		id = 64516,
+		name = "双海亚美花朵鱼雷弹幕LV6",
+		damage = 44,
+		base = 64511
+	}
+	uv0.weapon_property_116[64517] = {
+		id = 64517,
+		name = "双海亚美花朵鱼雷弹幕LV7",
+		damage = 48,
+		base = 64511
+	}
+	uv0.weapon_property_116[64518] = {
+		id = 64518,
+		name = "双海亚美花朵鱼雷弹幕LV8",
+		damage = 52,
+		base = 64511
+	}
+	uv0.weapon_property_116[64519] = {
+		id = 64519,
+		name = "双海亚美花朵鱼雷弹幕LV9",
+		damage = 56,
+		base = 64511
+	}
+	uv0.weapon_property_116[64520] = {
+		id = 64520,
+		name = "双海亚美花朵鱼雷弹幕LV10",
+		damage = 60,
+		base = 64511
+	}
+	uv0.weapon_property_116[64521] = {
+		recover_time = 0,
+		name = "双海真美口红鱼雷弹幕LV2",
+		shakescreen = 0,
+		type = 3,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 2,
+		expose = 0,
+		search_type = 1,
+		effect_move = 0,
+		angle = 60,
+		reload_max = 3000,
+		queue = 1,
+		range = 90,
+		damage = 27,
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "torpedo",
+		fire_sfx = "",
+		id = 64521,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
+		bullet_ID = {
+			19334,
+			19334,
+			19334
+		},
+		barrage_ID = {
+			81164,
+			81165,
+			81167
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_116[64522] = {
+		id = 64522,
+		name = "双海真美口红鱼雷弹幕LV3",
+		damage = 30,
+		base = 64521
+	}
+	uv0.weapon_property_116[64523] = {
+		id = 64523,
+		name = "双海真美口红鱼雷弹幕LV4",
+		damage = 33,
+		base = 64521
+	}
+	uv0.weapon_property_116[64524] = {
+		id = 64524,
+		name = "双海真美口红鱼雷弹幕LV5",
+		damage = 36,
+		base = 64521
+	}
+	uv0.weapon_property_116[64525] = {
+		id = 64525,
+		name = "双海真美口红鱼雷弹幕LV6",
+		damage = 40,
+		base = 64521
+	}
+	uv0.weapon_property_116[64526] = {
+		id = 64526,
+		name = "双海真美口红鱼雷弹幕LV7",
+		damage = 44,
+		base = 64521
+	}
+	uv0.weapon_property_116[64527] = {
+		id = 64527,
+		name = "双海真美口红鱼雷弹幕LV8",
+		damage = 48,
+		base = 64521
+	}
+	uv0.weapon_property_116[64528] = {
+		id = 64528,
+		name = "双海真美口红鱼雷弹幕LV9",
+		damage = 52,
+		base = 64521
+	}
+	uv0.weapon_property_116[64529] = {
+		id = 64529,
+		name = "双海真美口红鱼雷弹幕LV10",
+		damage = 56,
+		base = 64521
+	}
+	uv0.weapon_property_116[64530] = {
+		id = 64530,
+		name = "双海真美口红鱼雷弹幕LV11",
+		damage = 60,
+		base = 64521
 	}
 end()

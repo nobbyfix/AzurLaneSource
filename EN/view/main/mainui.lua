@@ -26,50 +26,41 @@ slot0.PAINT_DEFAULT_POS_X = -600
 slot0.CHAT_SHOW_TIME = 3
 slot0.CHAT_INTERVAL = 30
 slot0.CHAT_ANIMATION_TIME = 0.3
-slot0.BG_DAY = "day"
-slot0.BG_NIGHT = "night"
-slot0.BG_TIMELINE_DAY = 5
-slot0.BG_TIMELINE_NIGHT = 18
-slot0.TIMES_INFO = {
+slot0.BASE_TIME_INFO = {
 	{
-		bgm = "doa_main_night",
-		bg = "bg_main_night",
-		time = {
+		{
 			0,
 			5
-		}
+		},
+		"bg_main_night"
 	},
 	{
-		bgm = "doa_main_day",
-		bg = "bg_main_twilight",
-		time = {
+		{
 			5,
 			8
-		}
+		},
+		"bg_main_twilight"
 	},
 	{
-		bgm = "doa_main_day",
-		bg = "bg_main_day",
-		time = {
+		{
 			8,
 			16
-		}
+		},
+		"bg_main_day"
 	},
 	{
-		bgm = "doa_main_day",
-		bg = "bg_main_twilight",
-		time = {
+		{
 			16,
 			19
-		}
+		},
+		"bg_main_twilight"
 	},
 	{
-		bgm = "doa_main_night",
-		bg = "bg_main_night",
-		time = {
+		{
 			19,
 			24
-		}
+		},
+		"bg_main_night"
 	}
 }
 slot0.BUFFTEXT_SHOW_TIME = 7
@@ -80,12 +71,20 @@ function slot0.getUIName(slot0)
 	return "MainUI"
 end
 
-function slot0.getDiffTimeInfo(slot0, slot1)
+function slot0.getDiffTimeInfo(slot0)
+	slot1 = uv0.BASE_TIME_INFO
+
+	if checkExist(getProxy(ActivityProxy):getActivityById(pg.gameset.dayandnight_bgm.key_value), {
+		"isEnd"
+	}) == false then
+		slot1 = pg.gameset.dayandnight_bgm.description
+	end
+
 	slot2 = pg.TimeMgr.GetInstance():GetServerHour()
 
-	for slot6, slot7 in ipairs(uv0.TIMES_INFO) do
-		if slot7.time[1] <= slot2 and slot2 < slot7.time[2] then
-			return slot7[slot1]
+	for slot6, slot7 in ipairs(slot1) do
+		if slot7[1][1] <= slot2 and slot2 < slot8[2] then
+			return slot7
 		end
 	end
 end
@@ -93,13 +92,9 @@ end
 function slot0.getBGM(slot0)
 	if slot0:getCurrentFlagship():IsBgmSkin() and getProxy(SettingsProxy):IsBGMEnable() then
 		return slot1:GetSkinBgm()
-	elseif checkExist(getProxy(ActivityProxy):getActivityById(ActivityConst.DOA_MAP_ACT_ID), {
-		"isEnd"
-	}) == false then
-		return slot0:getDiffTimeInfo("bgm")
-	else
-		return uv0.super.getBGM(slot0)
 	end
+
+	return slot0:getDiffTimeInfo()[3] or uv0.super.getBGM(slot0)
 end
 
 function slot0.getCurrentFlagship(slot0)
@@ -111,7 +106,7 @@ function slot0.setShips(slot0, slot1)
 end
 
 function slot0.setBG(slot0)
-	PoolMgr.GetInstance():GetSprite("commonbg/" .. slot0:getDiffTimeInfo("bg"), "", false, function (slot0)
+	PoolMgr.GetInstance():GetSprite("commonbg/" .. slot0:getDiffTimeInfo()[2], "", false, function (slot0)
 		uv0.bgLoading = false
 
 		uv0:setChangeBtnInteractable()
@@ -932,18 +927,6 @@ function slot0.updateMonopolyBtn(slot0, slot1)
 	if slot2 then
 		onButton(slot0, slot0._monopolyBtn, function ()
 			uv0:emit(MainUIMediator.ON_MONOPOLY)
-		end, SFX_PANEL)
-	end
-end
-
-function slot0.updateBossBattleBtn(slot0, slot1)
-	slot2 = slot1 and not slot1:isEnd()
-
-	setActive(slot0._bossBattleBtn, slot2)
-
-	if slot2 then
-		onButton(slot0, slot0._bossBattleBtn, function ()
-			uv0:emit(MainUIMediator.ON_BOSS_BATTLE)
 		end, SFX_PANEL)
 	end
 end
@@ -1972,15 +1955,18 @@ function slot0.updateChat(slot0, slot1)
 		else
 			slot10.supportRichText = slot7.emojiId ~= nil
 			slot11 = false
+			slot13 = false
 
-			if not slot7.emojiId then
-				slot12 = shortenString(slot7.player.name .. ": " .. slot7.content, 24)
+			for slot18 in string.gmatch(slot7.player.name .. ": " .. slot7.content, ChatConst.EmojiIconCodeMatch), nil,  do
+				if table.contains(pg.emoji_small_template.all, tonumber(slot18)) then
+					slot13 = true
+
+					slot10:AddSprite(slot18, LoadSprite("emoji/" .. pg.emoji_small_template[tonumber(slot18)].pic .. "_small", nil))
+				end
 			end
 
-			for slot17 in string.gmatch(slot12, ChatConst.EmojiIconCodeMatch), nil,  do
-				if table.contains(pg.emoji_small_template.all, tonumber(slot17)) then
-					slot10:AddSprite(slot17, LoadSprite("emoji/" .. pg.emoji_small_template[tonumber(slot17)].pic .. "_small", nil))
-				end
+			if not slot7.emojiId then
+				slot12 = (not slot13 or shortenString(slot12, 20)) and shortenString(slot12, 24)
 			end
 
 			slot10.text = string.gsub(slot12, ChatConst.EmojiIconCodeMatch, function (slot0)

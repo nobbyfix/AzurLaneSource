@@ -1,5 +1,24 @@
 pg = pg or {}
 pg.equip_data_statistics_200 = {
+	[27313] = {
+		id = 27313,
+		anti_siren = 300,
+		base = 27300,
+		ammo_info = {
+			{
+				6,
+				50673
+			},
+			{
+				5,
+				52353
+			}
+		},
+		weapon_id = {
+			27313,
+			82313
+		}
+	},
 	[27320] = {
 		rarity = 5,
 		name = "Sea Hornet ",
@@ -357,23 +376,6 @@ pg.equip_data_statistics_200 = {
 		},
 		weapon_id = {
 			28001
-		}
-	},
-	[28002] = {
-		id = 28002,
-		base = 28000,
-		ammo_info = {
-			{
-				6,
-				50002
-			},
-			{
-				4,
-				51002
-			}
-		},
-		weapon_id = {
-			28002
 		}
 	}
 }

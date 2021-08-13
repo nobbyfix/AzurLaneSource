@@ -1,257 +1,152 @@
 pg = pg or {}
 pg.equip_data_statistics_381 = {
-	[90105] = {
-		id = 90105,
-		damage = "8 x 5",
-		base = 90100,
-		weapon_id = {
-			90105
-		}
+	[89212] = {
+		value_2 = 5,
+		anti_siren = 200,
+		base = 89200,
+		id = 89212,
+		value_1 = "32"
 	},
-	[90106] = {
-		id = 90106,
-		damage = "9 x 5",
-		base = 90100,
-		weapon_id = {
-			90106
-		}
+	[89213] = {
+		value_2 = 5,
+		anti_siren = 300,
+		base = 89200,
+		id = 89213,
+		value_1 = "34"
 	},
-	[90120] = {
-		tech = 2,
-		name = "Single 138.6mm Mle 1929 Naval Gun",
-		speciality = "Lock",
-		type = 1,
-		value_2 = 25,
-		ammo = 2,
-		damage = "4 x 5",
-		nationality = 8,
-		rarity = 4,
-		id = 90120,
-		value_3 = 0,
-		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "50100",
-		attribute_2 = "cannon",
-		property_rate = {},
-		ammo_icon = {
-			3
-		},
-		ammo_info = {
-			{
-				1,
-				2206
-			}
-		},
-		equip_info = {
-			1,
-			2,
-			{
-				3,
-				2206
-			},
-			{
-				4,
-				1021
-			},
-			6,
-			10,
-			11,
-			12
-		},
-		weapon_id = {
-			90120
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {
-			"FFNF",
-			"DD",
-			"MG",
-			"HE"
-		}
-	},
-	[90121] = {
-		id = 90121,
-		damage = "5 x 5",
-		base = 90120,
-		weapon_id = {
-			90121
-		}
-	},
-	[90122] = {
-		id = 90122,
-		damage = "6 x 5",
-		base = 90120,
-		weapon_id = {
-			90122
-		}
-	},
-	[90123] = {
-		id = 90123,
-		damage = "7 x 5",
-		base = 90120,
-		weapon_id = {
-			90123
-		}
-	},
-	[90124] = {
-		id = 90124,
-		damage = "8 x 5",
-		base = 90120,
-		weapon_id = {
-			90124
-		}
-	},
-	[90125] = {
-		id = 90125,
-		damage = "9 x 5",
-		base = 90120,
-		weapon_id = {
-			90125
-		}
-	},
-	[90126] = {
-		id = 90126,
-		damage = "10 x 5",
-		base = 90120,
-		weapon_id = {
-			90126
-		}
-	},
-	[90127] = {
-		id = 90127,
-		damage = "11 x 5",
-		base = 90120,
-		weapon_id = {
-			90127
-		}
-	},
-	[90128] = {
-		id = 90128,
-		damage = "12 x 5",
-		base = 90120,
-		weapon_id = {
-			90128
-		}
-	},
-	[90129] = {
-		id = 90129,
-		damage = "13 x 5",
-		base = 90120,
-		weapon_id = {
-			90129
-		}
-	},
-	[90130] = {
-		id = 90130,
-		damage = "14 x 5",
-		base = 90120,
-		weapon_id = {
-			90130
-		}
-	},
-	[90140] = {
-		tech = 3,
-		name = "Single 138.6mm Mle 1929 Naval Gun",
-		speciality = "Lock",
-		type = 1,
-		value_2 = 35,
-		ammo = 2,
-		damage = "5 x 5",
-		nationality = 8,
+	[89220] = {
+		type = 10,
+		name = "Celestial Body",
+		speciality = "N/A",
+		tech = 0,
+		value_2 = 0,
+		ammo = 10,
 		rarity = 5,
-		id = 90140,
+		nationality = 0,
+		descrip = "A gorgeous dress, shimmering like a nebula under the spotlight. Ships equipped with this are classified as \"?\" ships. ",
+		id = 89220,
 		value_3 = 0,
+		attribute_1 = "durability",
+		icon = "89220",
+		value_1 = "250",
 		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "50100",
-		attribute_2 = "cannon",
 		property_rate = {},
-		ammo_icon = {
-			3
-		},
-		ammo_info = {
-			{
-				1,
-				2206
-			}
-		},
+		ammo_icon = {},
+		ammo_info = {},
 		equip_info = {
-			1,
-			2,
-			{
-				3,
-				2206
-			},
-			{
-				4,
-				1021
-			},
-			6,
-			10,
-			11,
-			12
+			6
 		},
-		weapon_id = {
-			90140
+		weapon_id = {},
+		skill_id = {
+			6700
 		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
+		part_main = {},
+		part_sub = {},
 		equip_parameters = {},
 		label = {
-			"FFNF",
-			"DD",
-			"MG",
-			"HE"
+			"DEV"
 		}
 	},
-	[90141] = {
-		id = 90141,
-		damage = "6 x 5",
-		base = 90140,
-		weapon_id = {
-			90141
-		}
+	[89221] = {
+		id = 89221,
+		value_1 = "280",
+		base = 89220
 	},
-	[90142] = {
-		id = 90142,
-		damage = "7 x 5",
-		base = 90140,
-		weapon_id = {
-			90142
-		}
+	[89222] = {
+		id = 89222,
+		value_1 = "310",
+		base = 89220
 	},
-	[90143] = {
-		id = 90143,
-		damage = "8 x 5",
-		base = 90140,
-		weapon_id = {
-			90143
+	[89223] = {
+		id = 89223,
+		value_1 = "340",
+		base = 89220
+	},
+	[89224] = {
+		id = 89224,
+		value_1 = "370",
+		base = 89220
+	},
+	[89225] = {
+		id = 89225,
+		value_1 = "400",
+		base = 89220
+	},
+	[89226] = {
+		id = 89226,
+		value_1 = "430",
+		base = 89220
+	},
+	[89227] = {
+		id = 89227,
+		value_1 = "460",
+		base = 89220
+	},
+	[89228] = {
+		id = 89228,
+		value_1 = "490",
+		base = 89220
+	},
+	[89229] = {
+		id = 89229,
+		value_1 = "520",
+		base = 89220
+	},
+	[89230] = {
+		id = 89230,
+		value_1 = "550",
+		base = 89220
+	},
+	[89231] = {
+		id = 89231,
+		anti_siren = 100,
+		value_1 = "580",
+		base = 89220
+	},
+	[89232] = {
+		id = 89232,
+		anti_siren = 200,
+		value_1 = "610",
+		base = 89220
+	},
+	[89233] = {
+		id = 89233,
+		anti_siren = 300,
+		value_1 = "640",
+		base = 89220
+	},
+	[89240] = {
+		type = 10,
+		name = "Awakening Pearl",
+		speciality = "N/A",
+		tech = 0,
+		value_2 = 16,
+		ammo = 10,
+		descrip = "No description",
+		nationality = 106,
+		rarity = 5,
+		attribute_1 = "dodge",
+		value_3 = 0,
+		torpedo_ammo = 0,
+		id = 89240,
+		icon = "89240",
+		value_1 = "6",
+		attribute_2 = "hit",
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {
+			6
+		},
+		weapon_id = {},
+		skill_id = {
+			6720
+		},
+		part_main = {},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"DEV"
 		}
 	}
 }

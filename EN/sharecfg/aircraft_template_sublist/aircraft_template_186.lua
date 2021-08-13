@@ -1,78 +1,41 @@
 pg = pg or {}
 pg.aircraft_template_186 = {
-	[69216] = {
-		id = 69216,
-		name = "库珀轰炸PBY-Lv6",
-		base = 69211,
-		max_hp = 73,
-		hp_growth = 2669,
-		weapon_ID = {
-			69226
-		}
-	},
-	[69217] = {
-		id = 69217,
-		name = "库珀轰炸PBY-Lv7",
-		base = 69211,
-		max_hp = 79,
-		hp_growth = 2879,
-		weapon_ID = {
-			69227
-		}
-	},
-	[69218] = {
-		id = 69218,
-		name = "库珀轰炸PBY-Lv8",
-		base = 69211,
-		max_hp = 86,
-		hp_growth = 3090,
-		weapon_ID = {
-			69228
-		}
-	},
-	[69219] = {
-		id = 69219,
-		name = "库珀轰炸PBY-Lv9",
-		base = 69211,
-		max_hp = 92,
-		hp_growth = 3301,
-		weapon_ID = {
-			69229
-		}
-	},
-	[69220] = {
-		id = 69220,
-		name = "库珀轰炸PBY-Lv10",
-		base = 69211,
+	[68340] = {
+		id = 68340,
+		name = "小赤城技能飞机Lv10",
+		base = 68331,
 		max_hp = 98,
-		hp_growth = 3511,
+		hp_growth = 3678,
 		weapon_ID = {
-			69230
+			68350,
+			68360
 		}
 	},
-	[69451] = {
+	[68391] = {
 		attack_power = 2,
-		name = "贝亚恩V-156F-LV1",
+		name = "科隆改直升机Lv1",
 		type = 1,
 		accuracy = 23,
-		model_ID = "v156f",
+		model_ID = "fl-282",
 		ACC_growth = 0,
-		crash_DMG = 156,
-		dodge = 0.315,
-		funnel_behavior = "",
-		nationality = 1,
-		id = 69451,
-		icon = "v156f",
+		crash_DMG = 180,
+		dodge = 1,
+		nationality = 4,
+		id = 68391,
+		icon = "fl-282",
 		AP_growth = 2000,
-		dodge_limit = 11,
-		hp_growth = 1947,
-		speed = 50,
-		max_hp = 51,
+		dodge_limit = 0,
+		hp_growth = 1692,
+		speed = 48,
+		max_hp = 42,
 		scale = 1,
-		weapon_ID = {
-			50701,
-			69461
+		funnel_behavior = {
+			rear = -40,
+			exist = 10,
+			stay = 2,
+			front = -40
 		},
+		weapon_ID = {},
 		position_offset = {
 			0,
 			5,
@@ -91,13 +54,13 @@ pg.aircraft_template_186 = {
 		bound_bone = {
 			weapon = {
 				{
-					-1.28,
-					1.62,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					-1.12,
-					-1,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -125,48 +88,60 @@ pg.aircraft_template_186 = {
 			}
 		}
 	},
-	[69452] = {
-		id = 69452,
-		name = "贝亚恩V-156F-LV2",
-		base = 69451,
-		max_hp = 57,
-		hp_growth = 2201,
-		weapon_ID = {
-			50702,
-			69462
-		}
+	[68392] = {
+		max_hp = 48,
+		name = "科隆改直升机Lv2",
+		base = 68391,
+		id = 68392,
+		hp_growth = 1913
 	},
-	[69453] = {
-		id = 69453,
-		name = "贝亚恩V-156F-LV3",
-		base = 69451,
-		max_hp = 64,
-		hp_growth = 2455,
-		weapon_ID = {
-			50703,
-			69463
-		}
+	[68393] = {
+		max_hp = 54,
+		name = "科隆改直升机Lv3",
+		base = 68391,
+		id = 68393,
+		hp_growth = 2133
 	},
-	[69454] = {
-		id = 69454,
-		name = "贝亚恩V-156F-LV4",
-		base = 69451,
-		max_hp = 70,
-		hp_growth = 2710,
-		weapon_ID = {
-			50704,
-			69464
-		}
+	[68394] = {
+		max_hp = 61,
+		name = "科隆改直升机Lv4",
+		base = 68391,
+		id = 68394,
+		hp_growth = 2354
 	},
-	[69455] = {
-		id = 69455,
-		name = "贝亚恩V-156F-LV5",
-		base = 69451,
-		max_hp = 77,
-		hp_growth = 2964,
-		weapon_ID = {
-			50705,
-			69465
-		}
+	[68395] = {
+		max_hp = 67,
+		name = "科隆改直升机Lv5",
+		base = 68391,
+		id = 68395,
+		hp_growth = 2575
+	},
+	[68396] = {
+		max_hp = 73,
+		name = "科隆改直升机Lv6",
+		base = 68391,
+		id = 68396,
+		hp_growth = 2796
+	},
+	[68397] = {
+		max_hp = 79,
+		name = "科隆改直升机Lv7",
+		base = 68391,
+		id = 68397,
+		hp_growth = 3016
+	},
+	[68398] = {
+		max_hp = 86,
+		name = "科隆改直升机Lv8",
+		base = 68391,
+		id = 68398,
+		hp_growth = 3237
+	},
+	[68399] = {
+		max_hp = 92,
+		name = "科隆改直升机Lv9",
+		base = 68391,
+		id = 68399,
+		hp_growth = 3458
 	}
 }

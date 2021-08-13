@@ -1,247 +1,242 @@
 pg = pg or {}
 pg.equip_data_statistics_311 = {
-	[46022] = {
-		id = 46022,
-		damage = "27/wave",
-		base = 46020,
+	[45347] = {
+		id = 45347,
+		damage = "117 x 2",
+		base = 45340,
 		weapon_id = {
-			46022
+			45347
 		}
 	},
-	[46023] = {
-		id = 46023,
-		damage = "31/wave",
-		base = 46020,
+	[45348] = {
+		id = 45348,
+		damage = "126 x 2",
+		base = 45340,
 		weapon_id = {
-			46023
+			45348
 		}
 	},
-	[46040] = {
-		tech = 3,
-		name = "Quadruple 20mm Flakvierling Machine Gun Mount",
-		speciality = "Anti-Air",
-		type = 6,
+	[45349] = {
+		id = 45349,
+		damage = "135 x 2",
+		base = 45340,
+		weapon_id = {
+			45349
+		}
+	},
+	[45350] = {
+		id = 45350,
+		damage = "144 x 2",
+		base = 45340,
+		weapon_id = {
+			45350
+		}
+	},
+	[45351] = {
+		id = 45351,
+		anti_siren = 100,
+		damage = "144 x 2",
+		base = 45340,
+		weapon_id = {
+			45351
+		}
+	},
+	[45400] = {
+		tech = 1,
+		name = "G7e Acoustic Homing Submarine Torpedo",
+		speciality = "Torpedo",
+		type = 13,
 		value_2 = 12,
-		ammo = 5,
-		damage = "23/wave",
+		ammo = 4,
+		damage = "52 x 2",
 		nationality = 4,
 		rarity = 3,
-		id = 46040,
-		value_3 = 0,
-		torpedo_ammo = 0,
-		descrip = "Quadruple 20mm Flakvierling Machine Gun Mount used for anti-air defense.",
-		icon = "46000",
-		attribute_2 = "antiaircraft",
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {
-			1,
-			2,
-			6,
-			10
-		},
-		weapon_id = {
-			46040
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
-		},
-		part_sub = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
-		},
-		equip_parameters = {},
-		label = {
-			"KMS",
-			"ST",
-			"AA"
-		}
-	},
-	[46041] = {
-		id = 46041,
-		damage = "26/wave",
-		base = 46040,
-		weapon_id = {
-			46041
-		}
-	},
-	[46042] = {
-		id = 46042,
-		damage = "30/wave",
-		base = 46040,
-		weapon_id = {
-			46042
-		}
-	},
-	[46043] = {
-		id = 46043,
-		damage = "34/wave",
-		base = 46040,
-		weapon_id = {
-			46043
-		}
-	},
-	[46044] = {
-		id = 46044,
-		damage = "38/wave",
-		base = 46040,
-		weapon_id = {
-			46044
-		}
-	},
-	[46045] = {
-		id = 46045,
-		damage = "42/wave",
-		base = 46040,
-		weapon_id = {
-			46045
-		}
-	},
-	[46046] = {
-		id = 46046,
-		damage = "46/wave",
-		base = 46040,
-		weapon_id = {
-			46046
-		}
-	},
-	[46047] = {
-		id = 46047,
-		damage = "46/wave",
-		base = 46040,
-		weapon_id = {
-			46047
-		}
-	},
-	[46060] = {
-		tech = 0,
-		name = "Twin 88mm SK C/32 AA Gun Mount",
-		speciality = "Anti-Air",
-		type = 6,
-		value_2 = 25,
-		ammo = 5,
-		damage = "28/wave",
-		nationality = 4,
-		rarity = 4,
-		id = 46060,
+		id = 45400,
 		value_3 = 0,
 		torpedo_ammo = 0,
 		descrip = "No description",
-		icon = "46060",
-		attribute_2 = "antiaircraft",
+		icon = "45400",
+		attribute_2 = "torpedo",
 		property_rate = {},
 		ammo_icon = {},
-		ammo_info = {},
+		ammo_info = {
+			{
+				3,
+				1826
+			}
+		},
 		equip_info = {
 			1,
 			2,
+			{
+				3,
+				1826
+			},
+			{
+				4,
+				1601
+			},
 			6,
-			10
+			10,
+			11,
+			12
 		},
 		weapon_id = {
-			46060
+			45400
 		},
 		skill_id = {},
 		part_main = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
+			8,
+			17
 		},
 		part_sub = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
+			8,
+			17
 		},
 		equip_parameters = {},
 		label = {
 			"KMS",
-			"ST",
-			"AA"
+			"SS",
+			"TP"
 		}
 	},
-	[46061] = {
-		id = 46061,
-		damage = "34/wave",
-		base = 46060,
+	[45401] = {
+		id = 45401,
+		damage = "59 x 2",
+		base = 45400,
 		weapon_id = {
-			46061
+			45401
 		}
 	},
-	[46062] = {
-		id = 46062,
-		damage = "40/wave",
-		base = 46060,
+	[45402] = {
+		id = 45402,
+		damage = "66 x 2",
+		base = 45400,
 		weapon_id = {
-			46062
+			45402
 		}
 	},
-	[46063] = {
-		id = 46063,
-		damage = "46/wave",
-		base = 46060,
+	[45403] = {
+		id = 45403,
+		damage = "74 x 2",
+		base = 45400,
 		weapon_id = {
-			46063
+			45403
 		}
 	},
-	[46064] = {
-		id = 46064,
-		damage = "52/wave",
-		base = 46060,
+	[45404] = {
+		id = 45404,
+		damage = "82 x 2",
+		base = 45400,
 		weapon_id = {
-			46064
+			45404
 		}
 	},
-	[46065] = {
-		id = 46065,
-		damage = "58/wave",
-		base = 46060,
+	[45405] = {
+		id = 45405,
+		damage = "90 x 2",
+		base = 45400,
 		weapon_id = {
-			46065
+			45405
 		}
 	},
-	[46066] = {
-		id = 46066,
-		damage = "64/wave",
-		base = 46060,
+	[45406] = {
+		id = 45406,
+		damage = "98 x 2",
+		base = 45400,
 		weapon_id = {
-			46066
+			45406
+		}
+	},
+	[45420] = {
+		tech = 2,
+		name = "G7e Acoustic Homing Submarine Torpedo",
+		speciality = "Torpedo",
+		type = 13,
+		value_2 = 25,
+		ammo = 4,
+		damage = "58 x 2",
+		nationality = 4,
+		rarity = 4,
+		id = 45420,
+		value_3 = 0,
+		torpedo_ammo = 0,
+		descrip = "No description",
+		icon = "45400",
+		attribute_2 = "torpedo",
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {
+			{
+				3,
+				1826
+			}
+		},
+		equip_info = {
+			1,
+			2,
+			{
+				3,
+				1826
+			},
+			{
+				4,
+				1601
+			},
+			6,
+			10,
+			11,
+			12
+		},
+		weapon_id = {
+			45420
+		},
+		skill_id = {},
+		part_main = {
+			8,
+			17
+		},
+		part_sub = {
+			8,
+			17
+		},
+		equip_parameters = {},
+		label = {
+			"KMS",
+			"SS",
+			"TP"
+		}
+	},
+	[45421] = {
+		id = 45421,
+		damage = "66 x 2",
+		base = 45420,
+		weapon_id = {
+			45421
+		}
+	},
+	[45422] = {
+		id = 45422,
+		damage = "74 x 2",
+		base = 45420,
+		weapon_id = {
+			45422
+		}
+	},
+	[45423] = {
+		id = 45423,
+		damage = "82 x 2",
+		base = 45420,
+		weapon_id = {
+			45423
+		}
+	},
+	[45424] = {
+		id = 45424,
+		damage = "90 x 2",
+		base = 45420,
+		weapon_id = {
+			45424
 		}
 	}
 }

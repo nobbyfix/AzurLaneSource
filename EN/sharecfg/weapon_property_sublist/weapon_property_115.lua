@@ -2,458 +2,93 @@ pg = pg or {}
 pg.weapon_property_115 = {}
 
 function ()
-	uv0.weapon_property_115[65172] = {
-		id = 65172,
-		name = "黛朵μ-复数强弹幕LV2",
-		damage = 16,
-		base = 65171
+	uv0.weapon_property_115[64403] = {
+		id = 64403,
+		name = "安克雷奇技能弹幕-LV3",
+		damage = 28,
+		base = 64401
 	}
-	uv0.weapon_property_115[65173] = {
-		id = 65173,
-		name = "黛朵μ-复数强弹幕LV3",
-		damage = 17,
-		base = 65171
+	uv0.weapon_property_115[64404] = {
+		id = 64404,
+		name = "安克雷奇技能弹幕-LV4",
+		damage = 29,
+		base = 64401
 	}
-	uv0.weapon_property_115[65174] = {
-		id = 65174,
-		name = "黛朵μ-复数强弹幕LV4",
-		damage = 18,
-		base = 65171
+	uv0.weapon_property_115[64405] = {
+		id = 64405,
+		name = "安克雷奇技能弹幕-LV5",
+		damage = 30,
+		base = 64401
 	}
-	uv0.weapon_property_115[65175] = {
-		id = 65175,
-		name = "黛朵μ-复数强弹幕LV5",
-		damage = 19,
-		base = 65171
+	uv0.weapon_property_115[64406] = {
+		id = 64406,
+		name = "安克雷奇技能弹幕-LV6",
+		damage = 32,
+		base = 64401
 	}
-	uv0.weapon_property_115[65176] = {
-		id = 65176,
-		name = "黛朵μ-复数强弹幕LV6",
-		damage = 20,
-		base = 65171
+	uv0.weapon_property_115[64407] = {
+		id = 64407,
+		name = "安克雷奇技能弹幕-LV7",
+		damage = 34,
+		base = 64401
 	}
-	uv0.weapon_property_115[65177] = {
-		id = 65177,
-		name = "黛朵μ-复数强弹幕LV7",
-		damage = 21,
-		base = 65171
+	uv0.weapon_property_115[64408] = {
+		id = 64408,
+		name = "安克雷奇技能弹幕-LV8",
+		damage = 36,
+		base = 64401
 	}
-	uv0.weapon_property_115[65178] = {
-		id = 65178,
-		name = "黛朵μ-复数强弹幕LV8",
-		damage = 22,
-		base = 65171
+	uv0.weapon_property_115[64409] = {
+		id = 64409,
+		name = "安克雷奇技能弹幕-LV9",
+		damage = 38,
+		base = 64401
 	}
-	uv0.weapon_property_115[65179] = {
-		id = 65179,
-		name = "黛朵μ-复数强弹幕LV9",
-		damage = 23,
-		base = 65171
+	uv0.weapon_property_115[64410] = {
+		id = 64410,
+		name = "安克雷奇技能弹幕-LV10",
+		damage = 40,
+		base = 64401
 	}
-	uv0.weapon_property_115[65180] = {
-		id = 65180,
-		name = "黛朵μ-复数强弹幕LV10",
-		damage = 25,
-		base = 65171
-	}
-	uv0.weapon_property_115[65181] = {
-		recover_time = 0.5,
-		name = "大凤μ技能鱼雷机Lv1",
+	uv0.weapon_property_115[64411] = {
+		recover_time = 0,
+		name = "马可波罗技能LV1-PVP",
 		shakescreen = 0,
-		type = 10,
+		type = 19,
 		torpedo_ammo = 0,
-		fire_fx = "",
+		fire_fx = "CAFire",
 		action_index = "attack",
 		charge_param = "",
 		axis_angle = 0,
 		fire_fx_loop_type = 1,
-		attack_attribute = 0,
-		expose = 10,
-		search_type = 1,
-		effect_move = 1,
-		angle = 90,
-		reload_max = 2490,
-		queue = 1,
-		range = 90,
-		damage = 68,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "plane",
-		fire_sfx = "battle/cannon-main",
-		id = 65181,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			65181
-		},
-		barrage_ID = {
-			12008
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_115[65182] = {
-		id = 65182,
-		name = "大凤μ技能鱼雷机Lv2",
-		damage = 86,
-		base = 65181,
-		bullet_ID = {
-			65182
-		}
-	}
-	uv0.weapon_property_115[65183] = {
-		id = 65183,
-		name = "大凤μ技能鱼雷机Lv3",
-		damage = 106,
-		base = 65181,
-		bullet_ID = {
-			65183
-		}
-	}
-	uv0.weapon_property_115[65184] = {
-		id = 65184,
-		name = "大凤μ技能鱼雷机Lv4",
-		damage = 124,
-		base = 65181,
-		bullet_ID = {
-			65184
-		}
-	}
-	uv0.weapon_property_115[65185] = {
-		id = 65185,
-		name = "大凤μ技能鱼雷机Lv5",
-		damage = 144,
-		base = 65181,
-		bullet_ID = {
-			65185
-		}
-	}
-	uv0.weapon_property_115[65186] = {
-		id = 65186,
-		name = "大凤μ技能鱼雷机Lv6",
-		damage = 164,
-		base = 65181,
-		bullet_ID = {
-			65186
-		}
-	}
-	uv0.weapon_property_115[65187] = {
-		id = 65187,
-		name = "大凤μ技能鱼雷机Lv7",
-		damage = 182,
-		base = 65181,
-		bullet_ID = {
-			65187
-		},
-		barrage_ID = {
-			12009
-		}
-	}
-	uv0.weapon_property_115[65188] = {
-		id = 65188,
-		name = "大凤μ技能鱼雷机Lv8",
-		damage = 202,
-		base = 65181,
-		bullet_ID = {
-			65188
-		},
-		barrage_ID = {
-			12009
-		}
-	}
-	uv0.weapon_property_115[65189] = {
-		id = 65189,
-		name = "大凤μ技能鱼雷机Lv9",
-		damage = 220,
-		base = 65181,
-		bullet_ID = {
-			65189
-		},
-		barrage_ID = {
-			12009
-		}
-	}
-	uv0.weapon_property_115[65190] = {
-		id = 65190,
-		name = "大凤μ技能鱼雷机Lv10",
-		damage = 240,
-		base = 65181,
-		bullet_ID = {
-			65190
-		},
-		barrage_ID = {
-			12009
-		}
-	}
-	uv0.weapon_property_115[65191] = {
-		recover_time = 0,
-		name = "2 x  机载鱼雷-大凤μ",
-		shakescreen = 0,
-		type = 3,
-		torpedo_ammo = 0,
-		fire_fx = "",
-		action_index = "",
-		charge_param = "",
-		axis_angle = -10,
-		fire_fx_loop_type = 1,
-		attack_attribute = 4,
+		attack_attribute = 1,
 		expose = 0,
-		search_type = 2,
-		effect_move = 0,
-		angle = 25,
-		reload_max = 9500,
-		queue = 1,
-		range = 80,
-		damage = 68,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "torpedo",
-		fire_sfx = "",
-		id = 65191,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			19214
-		},
-		barrage_ID = {
-			2142
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_115[65192] = {
-		id = 65192,
-		damage = 86,
-		base = 65191
-	}
-	uv0.weapon_property_115[65193] = {
-		id = 65193,
-		damage = 106,
-		base = 65191
-	}
-	uv0.weapon_property_115[65194] = {
-		id = 65194,
-		damage = 124,
-		base = 65191
-	}
-	uv0.weapon_property_115[65195] = {
-		id = 65195,
-		damage = 144,
-		base = 65191
-	}
-	uv0.weapon_property_115[65196] = {
-		id = 65196,
-		damage = 164,
-		base = 65191
-	}
-	uv0.weapon_property_115[65197] = {
-		id = 65197,
-		damage = 182,
-		base = 65191
-	}
-	uv0.weapon_property_115[65198] = {
-		id = 65198,
-		damage = 202,
-		base = 65191
-	}
-	uv0.weapon_property_115[65199] = {
-		id = 65199,
-		damage = 220,
-		base = 65191
-	}
-	uv0.weapon_property_115[65200] = {
-		id = 65200,
-		damage = 240,
-		base = 65191
-	}
-	uv0.weapon_property_115[65201] = {
-		recover_time = 0.5,
-		name = "大凤μ技能轰炸机Lv1",
-		shakescreen = 0,
-		type = 10,
-		torpedo_ammo = 0,
-		fire_fx = "",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 0,
-		expose = 10,
 		search_type = 1,
-		effect_move = 1,
-		angle = 90,
-		reload_max = 2490,
-		queue = 1,
-		range = 90,
-		damage = 68,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "plane",
-		fire_sfx = "battle/cannon-main",
-		id = 65201,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			65201
-		},
-		barrage_ID = {
-			12008
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_115[65202] = {
-		id = 65202,
-		name = "大凤μ技能轰炸机Lv2",
-		damage = 86,
-		base = 65201,
-		bullet_ID = {
-			65202
-		}
-	}
-	uv0.weapon_property_115[65203] = {
-		id = 65203,
-		name = "大凤μ技能轰炸机Lv3",
-		damage = 106,
-		base = 65201,
-		bullet_ID = {
-			65203
-		}
-	}
-	uv0.weapon_property_115[65204] = {
-		id = 65204,
-		name = "大凤μ技能轰炸机Lv4",
-		damage = 124,
-		base = 65201,
-		bullet_ID = {
-			65204
-		}
-	}
-	uv0.weapon_property_115[65205] = {
-		id = 65205,
-		name = "大凤μ技能轰炸机Lv5",
-		damage = 144,
-		base = 65201,
-		bullet_ID = {
-			65205
-		}
-	}
-	uv0.weapon_property_115[65206] = {
-		id = 65206,
-		name = "大凤μ技能轰炸机Lv6",
-		damage = 164,
-		base = 65201,
-		bullet_ID = {
-			65206
-		}
-	}
-	uv0.weapon_property_115[65207] = {
-		id = 65207,
-		name = "大凤μ技能轰炸机Lv7",
-		damage = 182,
-		base = 65201,
-		bullet_ID = {
-			65207
-		},
-		barrage_ID = {
-			12009
-		}
-	}
-	uv0.weapon_property_115[65208] = {
-		id = 65208,
-		name = "大凤μ技能轰炸机Lv8",
-		damage = 202,
-		base = 65201,
-		bullet_ID = {
-			65208
-		},
-		barrage_ID = {
-			12009
-		}
-	}
-	uv0.weapon_property_115[65209] = {
-		id = 65209,
-		name = "大凤μ技能轰炸机Lv9",
-		damage = 220,
-		base = 65201,
-		bullet_ID = {
-			65209
-		},
-		barrage_ID = {
-			12009
-		}
-	}
-	uv0.weapon_property_115[65210] = {
-		id = 65210,
-		name = "大凤μ技能轰炸机Lv10",
-		damage = 240,
-		base = 65201,
-		bullet_ID = {
-			65210
-		},
-		barrage_ID = {
-			12009
-		}
-	}
-	uv0.weapon_property_115[65211] = {
-		recover_time = 0,
-		name = "1 x 1000lb Bomb",
-		shakescreen = 0,
-		type = 2,
-		torpedo_ammo = 0,
-		fire_fx = "",
-		action_index = "",
-		charge_param = "",
-		axis_angle = 19,
-		fire_fx_loop_type = 1,
-		attack_attribute = 4,
-		expose = 0,
-		search_type = 2,
 		effect_move = 0,
-		angle = 19,
-		reload_max = 9500,
+		angle = 60,
+		reload_max = 3000,
 		queue = 1,
-		range = 500,
-		damage = 150,
+		range = 115,
+		damage = 58,
 		suppress = 1,
 		auto_aftercast = 0,
 		corrected = 100,
-		min_range = 0,
+		min_range = 35,
 		initial_over_heat = 0,
 		spawn_bound = "cannon",
-		fire_sfx = "",
-		id = 65211,
-		attack_attribute_ratio = 80,
+		fire_sfx = "battle/cannon-main",
+		id = 64411,
+		attack_attribute_ratio = 100,
 		aim_type = 1,
 		bullet_ID = {
-			19215
+			19324,
+			19324,
+			19324
 		},
 		barrage_ID = {
-			2120
+			81130,
+			81131,
+			81132
 		},
 		oxy_type = {
 			1
@@ -461,88 +96,106 @@ function ()
 		search_condition = {
 			1
 		},
-		precast_param = {}
+		precast_param = {
+			fx = "jineng",
+			alertTime = 1,
+			time = 0.5,
+			isBound = true
+		}
 	}
-	uv0.weapon_property_115[65212] = {
-		id = 65212,
-		damage = 169,
-		base = 65211
-	}
-	uv0.weapon_property_115[65213] = {
-		id = 65213,
-		damage = 188,
-		base = 65211
-	}
-	uv0.weapon_property_115[65214] = {
-		id = 65214,
-		damage = 207,
-		base = 65211
-	}
-	uv0.weapon_property_115[65215] = {
-		id = 65215,
-		damage = 226,
-		base = 65211
-	}
-	uv0.weapon_property_115[65216] = {
-		id = 65216,
-		damage = 245,
-		base = 65211
-	}
-	uv0.weapon_property_115[65217] = {
-		id = 65217,
-		damage = 264,
-		base = 65211
-	}
-	uv0.weapon_property_115[65218] = {
-		id = 65218,
-		damage = 283,
-		base = 65211
-	}
-	uv0.weapon_property_115[65219] = {
-		id = 65219,
-		damage = 302,
-		base = 65211
-	}
-	uv0.weapon_property_115[65220] = {
-		id = 65220,
-		damage = 322,
-		base = 65211
-	}
-	uv0.weapon_property_115[65221] = {
-		recover_time = 0,
-		name = "2 x 100lb Bomb",
-		shakescreen = 0,
-		type = 2,
-		torpedo_ammo = 0,
-		fire_fx = "",
-		action_index = "",
-		charge_param = "",
-		axis_angle = 25,
-		fire_fx_loop_type = 1,
-		attack_attribute = 4,
-		expose = 0,
-		search_type = 2,
-		effect_move = 0,
-		angle = 25,
-		reload_max = 9500,
-		queue = 1,
-		range = 500,
+	uv0.weapon_property_115[64412] = {
+		id = 64412,
+		name = "马可波罗技能LV2-PVP",
 		damage = 70,
+		base = 64411
+	}
+	uv0.weapon_property_115[64413] = {
+		id = 64413,
+		name = "马可波罗技能LV3-PVP",
+		damage = 82,
+		base = 64411
+	}
+	uv0.weapon_property_115[64414] = {
+		id = 64414,
+		name = "马可波罗技能LV4-PVP",
+		damage = 94,
+		base = 64411
+	}
+	uv0.weapon_property_115[64415] = {
+		id = 64415,
+		name = "马可波罗技能LV5-PVP",
+		damage = 106,
+		base = 64411
+	}
+	uv0.weapon_property_115[64416] = {
+		id = 64416,
+		name = "马可波罗技能LV6-PVP",
+		damage = 118,
+		base = 64411
+	}
+	uv0.weapon_property_115[64417] = {
+		id = 64417,
+		name = "马可波罗技能LV7-PVP",
+		damage = 130,
+		base = 64411
+	}
+	uv0.weapon_property_115[64418] = {
+		id = 64418,
+		name = "马可波罗技能LV8-PVP",
+		damage = 142,
+		base = 64411
+	}
+	uv0.weapon_property_115[64419] = {
+		id = 64419,
+		name = "马可波罗技能LV9-PVP",
+		damage = 154,
+		base = 64411
+	}
+	uv0.weapon_property_115[64420] = {
+		id = 64420,
+		name = "马可波罗技能LV10-PVP",
+		damage = 170,
+		base = 64411
+	}
+	uv0.weapon_property_115[64421] = {
+		recover_time = 0,
+		name = "马可波罗技能LV1-PVE",
+		shakescreen = 0,
+		type = 19,
+		torpedo_ammo = 0,
+		fire_fx = "CAFire",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 1,
+		effect_move = 0,
+		angle = 60,
+		reload_max = 3000,
+		queue = 1,
+		range = 95,
+		damage = 58,
 		suppress = 1,
 		auto_aftercast = 0,
 		corrected = 100,
-		min_range = 0,
+		min_range = 25,
 		initial_over_heat = 0,
 		spawn_bound = "cannon",
-		fire_sfx = "",
-		id = 65221,
-		attack_attribute_ratio = 80,
+		fire_sfx = "battle/cannon-main",
+		id = 64421,
+		attack_attribute_ratio = 100,
 		aim_type = 1,
 		bullet_ID = {
-			19216
+			19324,
+			19324,
+			19324
 		},
 		barrage_ID = {
-			2121
+			81130,
+			81131,
+			81132
 		},
 		oxy_type = {
 			1
@@ -550,56 +203,70 @@ function ()
 		search_condition = {
 			1
 		},
-		precast_param = {}
+		precast_param = {
+			fx = "jineng",
+			alertTime = 1,
+			time = 0.5,
+			isBound = true
+		}
 	}
-	uv0.weapon_property_115[65222] = {
-		id = 65222,
-		damage = 78,
-		base = 65221
+	uv0.weapon_property_115[64422] = {
+		id = 64422,
+		name = "马可波罗技能LV2-PVE",
+		damage = 70,
+		base = 64421
 	}
-	uv0.weapon_property_115[65223] = {
-		id = 65223,
-		damage = 85,
-		base = 65221
+	uv0.weapon_property_115[64423] = {
+		id = 64423,
+		name = "马可波罗技能LV3-PVE",
+		damage = 82,
+		base = 64421
 	}
-	uv0.weapon_property_115[65224] = {
-		id = 65224,
-		damage = 93,
-		base = 65221
+	uv0.weapon_property_115[64424] = {
+		id = 64424,
+		name = "马可波罗技能LV4-PVE",
+		damage = 94,
+		base = 64421
 	}
-	uv0.weapon_property_115[65225] = {
-		id = 65225,
-		damage = 100,
-		base = 65221
+	uv0.weapon_property_115[64425] = {
+		id = 64425,
+		name = "马可波罗技能LV5-PVE",
+		damage = 106,
+		base = 64421
 	}
-	uv0.weapon_property_115[65226] = {
-		id = 65226,
-		damage = 108,
-		base = 65221
+	uv0.weapon_property_115[64426] = {
+		id = 64426,
+		name = "马可波罗技能LV6-PVE",
+		damage = 118,
+		base = 64421
 	}
-	uv0.weapon_property_115[65227] = {
-		id = 65227,
-		damage = 115,
-		base = 65221
-	}
-	uv0.weapon_property_115[65228] = {
-		id = 65228,
-		damage = 123,
-		base = 65221
-	}
-	uv0.weapon_property_115[65229] = {
-		id = 65229,
+	uv0.weapon_property_115[64427] = {
+		id = 64427,
+		name = "马可波罗技能LV7-PVE",
 		damage = 130,
-		base = 65221
+		base = 64421
 	}
-	uv0.weapon_property_115[65230] = {
-		id = 65230,
-		damage = 138,
-		base = 65221
+	uv0.weapon_property_115[64428] = {
+		id = 64428,
+		name = "马可波罗技能LV8-PVE",
+		damage = 142,
+		base = 64421
 	}
-	uv0.weapon_property_115[65231] = {
+	uv0.weapon_property_115[64429] = {
+		id = 64429,
+		name = "马可波罗技能LV9-PVE",
+		damage = 154,
+		base = 64421
+	}
+	uv0.weapon_property_115[64430] = {
+		id = 64430,
+		name = "马可波罗技能LV10-PVE",
+		damage = 170,
+		base = 64421
+	}
+	uv0.weapon_property_115[64431] = {
 		recover_time = 0,
-		name = "大凤μ-吸血弹幕Lv1",
+		name = "马可波罗技能·瞄准跨射LV1",
 		shakescreen = 0,
 		type = 1,
 		torpedo_ammo = 0,
@@ -608,36 +275,133 @@ function ()
 		charge_param = "",
 		axis_angle = 0,
 		fire_fx_loop_type = 1,
-		attack_attribute = 4,
-		expose = 10,
+		attack_attribute = 1,
+		expose = 0,
 		search_type = 1,
 		effect_move = 0,
-		angle = 180,
-		reload_max = 1800,
-		queue = 2,
-		range = 72,
-		damage = 35,
+		angle = 60,
+		reload_max = 3000,
+		queue = 1,
+		range = 120,
+		damage = 58,
+		suppress = 1,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 25,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "battle/cannon-main",
+		id = 64431,
+		attack_attribute_ratio = 100,
+		aim_type = 1,
+		bullet_ID = {
+			19326
+		},
+		barrage_ID = {
+			81133
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {
+			fx = "jineng",
+			alertTime = 1,
+			time = 0.5,
+			isBound = true
+		}
+	}
+	uv0.weapon_property_115[64432] = {
+		id = 64432,
+		name = "马可波罗技能·瞄准跨射LV2",
+		damage = 70,
+		base = 64431
+	}
+	uv0.weapon_property_115[64433] = {
+		id = 64433,
+		name = "马可波罗技能·瞄准跨射LV3",
+		damage = 82,
+		base = 64431
+	}
+	uv0.weapon_property_115[64434] = {
+		id = 64434,
+		name = "马可波罗技能·瞄准跨射LV4",
+		damage = 94,
+		base = 64431
+	}
+	uv0.weapon_property_115[64435] = {
+		id = 64435,
+		name = "马可波罗技能·瞄准跨射LV5",
+		damage = 106,
+		base = 64431
+	}
+	uv0.weapon_property_115[64436] = {
+		id = 64436,
+		name = "马可波罗技能·瞄准跨射LV6",
+		damage = 118,
+		base = 64431
+	}
+	uv0.weapon_property_115[64437] = {
+		id = 64437,
+		name = "马可波罗技能·瞄准跨射LV7",
+		damage = 130,
+		base = 64431
+	}
+	uv0.weapon_property_115[64438] = {
+		id = 64438,
+		name = "马可波罗技能·瞄准跨射LV8",
+		damage = 142,
+		base = 64431
+	}
+	uv0.weapon_property_115[64439] = {
+		id = 64439,
+		name = "马可波罗技能·瞄准跨射LV9",
+		damage = 154,
+		base = 64431
+	}
+	uv0.weapon_property_115[64440] = {
+		id = 64440,
+		name = "马可波罗技能·瞄准跨射LV10",
+		damage = 170,
+		base = 64431
+	}
+	uv0.weapon_property_115[64441] = {
+		recover_time = 0.5,
+		name = "马可波罗技能·小子弹LV1",
+		shakescreen = 0,
+		type = 1,
+		torpedo_ammo = 0,
+		fire_fx = "CLFire",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 1,
+		effect_move = 0,
+		angle = 120,
+		reload_max = 3000,
+		queue = 1,
+		range = 200,
+		damage = 11,
 		suppress = 1,
 		auto_aftercast = 0,
 		corrected = 100,
 		min_range = 0,
 		initial_over_heat = 0,
 		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-main",
-		id = 65231,
-		attack_attribute_ratio = 80,
-		aim_type = 0,
+		fire_sfx = "battle/cannon-155mm",
+		id = 64441,
+		attack_attribute_ratio = 100,
+		aim_type = 1,
 		bullet_ID = {
-			19217,
-			19218,
-			19219,
-			19220
+			19325
 		},
 		barrage_ID = {
-			80958,
-			80959,
-			80960,
-			80961
+			81134
 		},
 		oxy_type = {
 			1
@@ -647,16 +411,296 @@ function ()
 		},
 		precast_param = {}
 	}
-	uv0.weapon_property_115[65232] = {
-		id = 65232,
-		name = "大凤μ-吸血弹幕Lv2",
-		damage = 37,
-		base = 65231
+	uv0.weapon_property_115[64442] = {
+		id = 64442,
+		name = "马可波罗技能·小子弹LV2",
+		damage = 12,
+		base = 64441
 	}
-	uv0.weapon_property_115[65233] = {
-		id = 65233,
-		name = "大凤μ-吸血弹幕Lv3",
-		damage = 39,
-		base = 65231
+	uv0.weapon_property_115[64443] = {
+		id = 64443,
+		name = "马可波罗技能·小子弹LV3",
+		damage = 13,
+		base = 64441
+	}
+	uv0.weapon_property_115[64444] = {
+		id = 64444,
+		name = "马可波罗技能·小子弹LV4",
+		damage = 14,
+		base = 64441
+	}
+	uv0.weapon_property_115[64445] = {
+		id = 64445,
+		name = "马可波罗技能·小子弹LV5",
+		damage = 15,
+		base = 64441
+	}
+	uv0.weapon_property_115[64446] = {
+		id = 64446,
+		name = "马可波罗技能·小子弹LV6",
+		damage = 16,
+		base = 64441
+	}
+	uv0.weapon_property_115[64447] = {
+		id = 64447,
+		name = "马可波罗技能·小子弹LV7",
+		damage = 17,
+		base = 64441,
+		bullet_ID = {
+			19325,
+			19325
+		},
+		barrage_ID = {
+			81134,
+			81135
+		}
+	}
+	uv0.weapon_property_115[64448] = {
+		id = 64448,
+		name = "马可波罗技能·小子弹LV8",
+		damage = 18,
+		base = 64441,
+		bullet_ID = {
+			19325,
+			19325
+		},
+		barrage_ID = {
+			81134,
+			81135
+		}
+	}
+	uv0.weapon_property_115[64449] = {
+		id = 64449,
+		name = "马可波罗技能·小子弹LV9",
+		damage = 19,
+		base = 64441,
+		bullet_ID = {
+			19325,
+			19325
+		},
+		barrage_ID = {
+			81134,
+			81135
+		}
+	}
+	uv0.weapon_property_115[64450] = {
+		id = 64450,
+		name = "马可波罗技能·小子弹LV10",
+		damage = 20,
+		base = 64441,
+		bullet_ID = {
+			19325,
+			19325
+		},
+		barrage_ID = {
+			81134,
+			81135
+		}
+	}
+	uv0.weapon_property_115[64451] = {
+		recover_time = 0.5,
+		name = "马可波罗技能·小子弹-跨队伤害增幅LV1",
+		shakescreen = 0,
+		type = 1,
+		torpedo_ammo = 0,
+		fire_fx = "CLFire",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 1,
+		effect_move = 0,
+		angle = 120,
+		reload_max = 3000,
+		queue = 1,
+		range = 200,
+		damage = 15,
+		suppress = 1,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "battle/cannon-155mm",
+		id = 64451,
+		attack_attribute_ratio = 100,
+		aim_type = 1,
+		bullet_ID = {
+			19325
+		},
+		barrage_ID = {
+			81134
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_115[64452] = {
+		id = 64452,
+		name = "马可波罗技能·小子弹-跨队伤害增幅LV2",
+		damage = 16,
+		base = 64451
+	}
+	uv0.weapon_property_115[64453] = {
+		id = 64453,
+		name = "马可波罗技能·小子弹-跨队伤害增幅LV3",
+		damage = 17,
+		base = 64451
+	}
+	uv0.weapon_property_115[64454] = {
+		id = 64454,
+		name = "马可波罗技能·小子弹-跨队伤害增幅LV4",
+		damage = 18,
+		base = 64451
+	}
+	uv0.weapon_property_115[64455] = {
+		id = 64455,
+		name = "马可波罗技能·小子弹-跨队伤害增幅LV5",
+		damage = 19,
+		base = 64451
+	}
+	uv0.weapon_property_115[64456] = {
+		id = 64456,
+		name = "马可波罗技能·小子弹-跨队伤害增幅LV6",
+		damage = 20,
+		base = 64451
+	}
+	uv0.weapon_property_115[64457] = {
+		id = 64457,
+		name = "马可波罗技能·小子弹-跨队伤害增幅LV7",
+		damage = 21,
+		base = 64451,
+		bullet_ID = {
+			19325,
+			19325
+		},
+		barrage_ID = {
+			81134,
+			81135
+		}
+	}
+	uv0.weapon_property_115[64458] = {
+		id = 64458,
+		name = "马可波罗技能·小子弹-跨队伤害增幅LV8",
+		damage = 22,
+		base = 64451,
+		bullet_ID = {
+			19325,
+			19325
+		},
+		barrage_ID = {
+			81134,
+			81135
+		}
+	}
+	uv0.weapon_property_115[64459] = {
+		id = 64459,
+		name = "马可波罗技能·小子弹-跨队伤害增幅LV9",
+		damage = 23,
+		base = 64451,
+		bullet_ID = {
+			19325,
+			19325
+		},
+		barrage_ID = {
+			81134,
+			81135
+		}
+	}
+	uv0.weapon_property_115[64460] = {
+		id = 64460,
+		name = "马可波罗技能·小子弹-跨队伤害增幅LV10",
+		damage = 25,
+		base = 64451,
+		bullet_ID = {
+			19325,
+			19325
+		},
+		barrage_ID = {
+			81134,
+			81135
+		}
+	}
+	uv0.weapon_property_115[64461] = {
+		recover_time = 0.5,
+		name = "春香弹幕粉色imas徽章LV1",
+		shakescreen = 0,
+		type = 2,
+		torpedo_ammo = 0,
+		fire_fx = "CLFire",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 1,
+		effect_move = 0,
+		angle = 360,
+		reload_max = 1750,
+		queue = 1,
+		range = 200,
+		damage = 11,
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "battle/cannon-155mm",
+		id = 64461,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
+		bullet_ID = {
+			19328,
+			19328
+		},
+		barrage_ID = {
+			81141,
+			81142
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_115[64462] = {
+		id = 64462,
+		name = "春香弹幕粉色imas徽章LV2",
+		damage = 12,
+		base = 64461
+	}
+	uv0.weapon_property_115[64463] = {
+		id = 64463,
+		name = "春香弹幕粉色imas徽章LV3",
+		damage = 13,
+		base = 64461
+	}
+	uv0.weapon_property_115[64464] = {
+		id = 64464,
+		name = "春香弹幕粉色imas徽章LV4",
+		damage = 14,
+		base = 64461
+	}
+	uv0.weapon_property_115[64465] = {
+		id = 64465,
+		name = "春香弹幕粉色imas徽章LV5",
+		damage = 15,
+		base = 64461
+	}
+	uv0.weapon_property_115[64466] = {
+		id = 64466,
+		name = "春香弹幕粉色imas徽章LV6",
+		damage = 16,
+		base = 64461
 	}
 end()

@@ -643,7 +643,7 @@ function slot0.setShip(slot0, slot1)
 		if slot0.mode == StoreHouseConst.EQUIPMENT then
 			slot0.contextData.qiutBtn = defaultValue(slot1:getEquip(slot0.contextData.pos), nil)
 		elseif slot0.mode == StoreHouseConst.SKIN then
-			slot0.contextData.qiutBtn = slot1:getEquip(slot0.contextData.pos):hasSkin()
+			slot0.contextData.qiutBtn = slot1:getEquipSkin(slot0.contextData.pos) ~= 0 and true or false
 		end
 
 		setActive(slot0.bottomPanel, false)
@@ -1225,6 +1225,14 @@ function slot0.willExit(slot0)
 
 	if slot0.tweens then
 		cancelTweens(slot0.tweens)
+	end
+
+	if slot0.destroyConfirmView then
+		slot0.destroyConfirmView:Destroy()
+	end
+
+	if slot0.assignedItemView then
+		slot0.assignedItemView:Destroy()
 	end
 end
 

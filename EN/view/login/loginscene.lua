@@ -78,6 +78,7 @@ function slot0.init(slot0)
 	slot0.closeUserAgreenTF = slot0.userAgreenTF:Find("window/close_btn")
 	slot0.userAgreenConfirmTF = slot0:findTF("UserAgreement/window/accept_btn")
 	slot0.userDisagreeConfirmTF = slot0:findTF("UserAgreement/window/disagree_btn")
+	slot0.switchGatewayBtn = SwitchGatewayBtn.New(slot0:findTF("servers/panel/switch_platform"))
 
 	setActive(slot0.userAgreenTF, false)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.userAgreenTF, slot0._tf)
@@ -763,6 +764,7 @@ function slot0.willExit(slot0)
 	slot0.airiLoginPanelView:Destroy()
 	slot0.transcodeAlertView:Destroy()
 	slot0.yostarAlertView:Destroy()
+	slot0.switchGatewayBtn:Dispose()
 end
 
 function slot0.playOpening(slot0, slot1)

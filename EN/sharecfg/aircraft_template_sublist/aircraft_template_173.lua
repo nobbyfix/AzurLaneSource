@@ -1,82 +1,83 @@
 pg = pg or {}
 pg.aircraft_template_173 = {
-	[68306] = {
-		id = 68306,
-		name = "绊爱技能轰炸机Lv6",
-		base = 68301,
+	[67363] = {
+		max_hp = 61,
+		name = "大凤技能轰炸机Lv3",
+		base = 67360,
+		id = 67363,
+		hp_growth = 2327
+	},
+	[67364] = {
+		max_hp = 67,
+		name = "大凤技能轰炸机Lv4",
+		base = 67360,
+		id = 67364,
+		hp_growth = 2568
+	},
+	[67365] = {
 		max_hp = 73,
-		hp_growth = 3050,
-		weapon_ID = {
-			68316,
-			68326
-		}
+		name = "大凤技能轰炸机Lv5",
+		base = 67360,
+		id = 67365,
+		hp_growth = 2809
 	},
-	[68307] = {
-		id = 68307,
-		name = "绊爱技能轰炸机Lv7",
-		base = 68301,
+	[67366] = {
 		max_hp = 79,
-		hp_growth = 3290,
-		weapon_ID = {
-			68317,
-			68327
-		}
+		name = "大凤技能轰炸机Lv6",
+		base = 67360,
+		id = 67366,
+		hp_growth = 3050
 	},
-	[68308] = {
-		id = 68308,
-		name = "绊爱技能轰炸机Lv8",
-		base = 68301,
+	[67367] = {
 		max_hp = 86,
-		hp_growth = 3531,
-		weapon_ID = {
-			68318,
-			68328
-		}
+		name = "大凤技能轰炸机Lv7",
+		base = 67360,
+		id = 67367,
+		hp_growth = 3290
 	},
-	[68309] = {
-		id = 68309,
-		name = "绊爱技能轰炸机Lv9",
-		base = 68301,
+	[67368] = {
 		max_hp = 92,
-		hp_growth = 3772,
-		weapon_ID = {
-			68319,
-			68329
-		}
+		name = "大凤技能轰炸机Lv8",
+		base = 67360,
+		id = 67368,
+		hp_growth = 3531
 	},
-	[68310] = {
-		id = 68310,
-		name = "绊爱技能轰炸机Lv10",
-		base = 68301,
+	[67369] = {
 		max_hp = 98,
-		hp_growth = 4013,
-		weapon_ID = {
-			68320,
-			68330
-		}
+		name = "大凤技能轰炸机Lv9",
+		base = 67360,
+		id = 67369,
+		hp_growth = 3772
 	},
-	[68331] = {
+	[67370] = {
+		max_hp = 104,
+		name = "大凤技能轰炸机Lv10",
+		base = 67360,
+		id = 67370,
+		hp_growth = 4013
+	},
+	[67500] = {
 		attack_power = 2,
-		name = "小赤城技能飞机Lv1",
+		name = "约克城SBD",
 		type = 3,
 		accuracy = 23,
-		model_ID = "99shijianbao1",
+		model_ID = "sbdwuwei",
 		ACC_growth = 0,
-		crash_DMG = 180,
+		crash_DMG = 156,
 		dodge = 1,
 		funnel_behavior = "",
-		nationality = 3,
-		id = 68331,
-		icon = "99shijianbao1",
+		nationality = 1,
+		id = 67500,
+		icon = "sbdwuwei",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1692,
-		speed = 48,
-		max_hp = 42,
+		hp_growth = 1183,
+		speed = 46,
+		max_hp = 31,
 		scale = 1,
 		weapon_ID = {
-			68341,
-			68351
+			67520,
+			67540
 		},
 		position_offset = {
 			0,
@@ -96,13 +97,13 @@ pg.aircraft_template_173 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.71,
-					-1.73,
+					0.68,
+					-0.667,
 					0
 				},
 				{
-					0.82,
-					2.04,
+					0.97,
+					0.584,
 					0
 				}
 			}
@@ -119,8 +120,8 @@ pg.aircraft_template_173 = {
 				0
 			},
 			{
-				0,
-				0,
+				0.72,
+				-0.15,
 				0
 			},
 			{
@@ -130,48 +131,14 @@ pg.aircraft_template_173 = {
 			}
 		}
 	},
-	[68332] = {
-		id = 68332,
-		name = "小赤城技能飞机Lv2",
-		base = 68331,
-		max_hp = 48,
-		hp_growth = 1913,
+	[67501] = {
+		id = 67501,
+		max_hp = 35,
+		hp_growth = 1345,
+		base = 67500,
 		weapon_ID = {
-			68342,
-			68352
-		}
-	},
-	[68333] = {
-		id = 68333,
-		name = "小赤城技能飞机Lv3",
-		base = 68331,
-		max_hp = 54,
-		hp_growth = 2133,
-		weapon_ID = {
-			68343,
-			68353
-		}
-	},
-	[68334] = {
-		id = 68334,
-		name = "小赤城技能飞机Lv4",
-		base = 68331,
-		max_hp = 61,
-		hp_growth = 2354,
-		weapon_ID = {
-			68344,
-			68354
-		}
-	},
-	[68335] = {
-		id = 68335,
-		name = "小赤城技能飞机Lv5",
-		base = 68331,
-		max_hp = 67,
-		hp_growth = 2575,
-		weapon_ID = {
-			68345,
-			68355
+			67521,
+			67541
 		}
 	}
 }

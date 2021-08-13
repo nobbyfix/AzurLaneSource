@@ -17,20 +17,7 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				bullet_id = 1803,
-				index = {
-					2
-				}
-			}
-		},
-		{
-			type = "BattleBuffAddBulletAttr",
-			trigger = {
-				"onBulletCreate"
-			},
-			arg_list = {
-				attr = "damageRatioBullet",
-				number = 0.05,
+				bullet_id = 1837,
 				index = {
 					2
 				}

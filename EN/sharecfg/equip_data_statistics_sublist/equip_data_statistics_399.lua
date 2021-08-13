@@ -1,244 +1,186 @@
 pg = pg or {}
 pg.equip_data_statistics_399 = {
-	[95247] = {
-		id = 95247,
-		damage = "40 x 8",
-		base = 95240,
+	[95023] = {
+		id = 95023,
+		damage = "73 x 3",
+		base = 95020,
 		weapon_id = {
-			95247
+			95023
 		}
 	},
-	[95248] = {
-		id = 95248,
-		damage = "41 x 8",
-		base = 95240,
+	[95024] = {
+		id = 95024,
+		damage = "82 x 3",
+		base = 95020,
 		weapon_id = {
-			95248
+			95024
 		}
 	},
-	[95249] = {
-		id = 95249,
-		damage = "42 x 8",
-		base = 95240,
+	[95025] = {
+		id = 95025,
+		damage = "91 x 3",
+		base = 95020,
 		weapon_id = {
-			95249
+			95025
 		}
 	},
-	[95250] = {
-		id = 95250,
-		damage = "43 x 8",
-		base = 95240,
+	[95026] = {
+		id = 95026,
+		damage = "100 x 3",
+		base = 95020,
 		weapon_id = {
-			95250
+			95026
 		}
 	},
-	[95251] = {
-		id = 95251,
-		anti_siren = 100,
-		damage = "43 x 8",
-		base = 95240,
+	[95027] = {
+		id = 95027,
+		damage = "108 x 3",
+		base = 95020,
 		weapon_id = {
-			95251
+			95027
 		}
 	},
-	[95252] = {
-		id = 95252,
-		anti_siren = 200,
-		damage = "43 x 8",
-		base = 95240,
+	[95028] = {
+		id = 95028,
+		damage = "117 x 3",
+		base = 95020,
 		weapon_id = {
-			95252
+			95028
 		}
 	},
-	[95253] = {
-		id = 95253,
-		anti_siren = 300,
-		damage = "43 x 8",
-		base = 95240,
+	[95029] = {
+		id = 95029,
+		damage = "126 x 3",
+		base = 95020,
 		weapon_id = {
-			95253
+			95029
 		}
 	},
-	[95300] = {
-		tech = 1,
-		name = "Twin 203mm Model 1924 Main Gun Mount",
-		speciality = "Lock",
-		type = 3,
-		value_2 = 5,
-		ammo = 3,
-		damage = "22 x 6",
+	[95030] = {
+		id = 95030,
+		damage = "135 x 3",
+		base = 95020,
+		weapon_id = {
+			95030
+		}
+	},
+	[95040] = {
+		tech = 3,
+		name = "Triple 381mm M1934 Main Gun Mount",
+		speciality = "Volley",
+		type = 4,
+		value_2 = 45,
+		ammo = 1,
+		damage = "52 x 3",
 		nationality = 6,
-		rarity = 2,
-		id = 95300,
+		rarity = 5,
+		id = 95040,
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "55300",
+		descrip = "Main guns that were used by the Vittorio Veneto-class battleships. Equippable by BBs and BCs.",
+		icon = "55000",
 		attribute_2 = "cannon",
 		property_rate = {},
 		ammo_icon = {
-			1
+			2
 		},
 		ammo_info = {
 			{
-				1,
-				1400
+				2,
+				1563
 			}
 		},
 		equip_info = {
 			1,
 			2,
-			{
-				3,
-				1400
-			},
-			{
-				4,
-				1205
-			},
 			6,
 			10,
 			11,
 			12
 		},
 		weapon_id = {
-			95300
+			95040
 		},
-		skill_id = {},
+		skill_id = {
+			6450
+		},
 		part_main = {
-			3,
-			18
-		},
-		part_sub = {},
-		equip_parameters = {},
-		label = {
-			"RN",
-			"CA",
-			"MG",
-			"CM"
-		}
-	},
-	[95301] = {
-		id = 95301,
-		damage = "24 x 6",
-		base = 95300,
-		weapon_id = {
-			95301
-		}
-	},
-	[95302] = {
-		id = 95302,
-		damage = "26 x 6",
-		base = 95300,
-		weapon_id = {
-			95302
-		}
-	},
-	[95303] = {
-		id = 95303,
-		damage = "28 x 6",
-		base = 95300,
-		weapon_id = {
-			95303
-		}
-	},
-	[95320] = {
-		tech = 2,
-		name = "Twin 203mm Model 1924 Main Gun Mount",
-		speciality = "Lock",
-		type = 3,
-		value_2 = 12,
-		ammo = 2,
-		damage = "24 x 6",
-		nationality = 6,
-		rarity = 3,
-		id = 95320,
-		value_3 = 0,
-		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "55300",
-		attribute_2 = "cannon",
-		property_rate = {},
-		ammo_icon = {
-			3
-		},
-		ammo_info = {
-			{
-				1,
-				1402
-			}
-		},
-		equip_info = {
-			1,
-			2,
-			{
-				3,
-				1402
-			},
-			{
-				4,
-				1205
-			},
-			6,
+			4,
+			5,
 			10,
-			11,
-			12
-		},
-		weapon_id = {
-			95320
-		},
-		skill_id = {},
-		part_main = {
-			3,
-			18
+			13
 		},
 		part_sub = {},
 		equip_parameters = {},
 		label = {
 			"RN",
-			"CA",
+			"BB",
 			"MG",
-			"HE"
+			"AP"
 		}
 	},
-	[95321] = {
-		id = 95321,
-		damage = "26 x 6",
-		base = 95320,
+	[95041] = {
+		id = 95041,
+		damage = "62 x 3",
+		base = 95040,
 		weapon_id = {
-			95321
+			95041
 		}
 	},
-	[95322] = {
-		id = 95322,
-		damage = "28 x 6",
-		base = 95320,
+	[95042] = {
+		id = 95042,
+		damage = "70 x 3",
+		base = 95040,
 		weapon_id = {
-			95322
+			95042
 		}
 	},
-	[95323] = {
-		id = 95323,
-		damage = "30 x 6",
-		base = 95320,
+	[95043] = {
+		id = 95043,
+		damage = "80 x 3",
+		base = 95040,
 		weapon_id = {
-			95323
+			95043
 		}
 	},
-	[95324] = {
-		id = 95324,
-		damage = "32 x 6",
-		base = 95320,
+	[95044] = {
+		id = 95044,
+		damage = "90 x 3",
+		base = 95040,
 		weapon_id = {
-			95324
+			95044
 		}
 	},
-	[95325] = {
-		id = 95325,
-		damage = "34 x 6",
-		base = 95320,
+	[95045] = {
+		id = 95045,
+		damage = "100 x 3",
+		base = 95040,
 		weapon_id = {
-			95325
+			95045
+		}
+	},
+	[95046] = {
+		id = 95046,
+		damage = "110 x 3",
+		base = 95040,
+		weapon_id = {
+			95046
+		}
+	},
+	[95047] = {
+		id = 95047,
+		damage = "118 x 3",
+		base = 95040,
+		weapon_id = {
+			95047
+		}
+	},
+	[95048] = {
+		id = 95048,
+		damage = "128 x 3",
+		base = 95040,
+		weapon_id = {
+			95048
 		}
 	}
 }

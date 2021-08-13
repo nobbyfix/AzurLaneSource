@@ -1,15 +1,23 @@
 pg = pg or {}
 pg.equip_data_statistics_356 = {
-	[79541] = {
+	[79202] = {
+		id = 79202,
+		name = "0",
+		base = 79201,
+		weapon_id = {
+			79202
+		}
+	},
+	[79211] = {
 		type = 1,
-		name = "专属弹幕-圣女贞德I",
+		name = "0",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79541,
+		id = 79211,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -20,7 +28,7 @@ pg.equip_data_statistics_356 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60501
+			79211
 		},
 		skill_id = {},
 		part_main = {
@@ -39,162 +47,24 @@ pg.equip_data_statistics_356 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79542] = {
-		id = 79542,
-		name = "专属弹幕-圣女贞德II",
-		base = 79541,
+	[79212] = {
+		id = 79212,
+		name = "0",
+		base = 79211,
 		weapon_id = {
-			60502
+			79212
 		}
 	},
-	[79551] = {
+	[79221] = {
 		type = 1,
-		name = "专属弹幕-柴郡I",
-		speciality = "N/A",
-		tech = 1,
-		rarity = 1,
-		ammo = 10,
-		nationality = 0,
-		value_2 = 0,
-		id = 79551,
-		value_3 = 0,
-		descrip = "Barrage",
-		icon = "1",
-		torpedo_ammo = 0,
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {},
-		weapon_id = {
-			79551
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {}
-	},
-	[79552] = {
-		id = 79552,
-		name = "专属弹幕-柴郡II",
-		base = 79551,
-		weapon_id = {
-			79552
-		}
-	},
-	[79561] = {
-		type = 1,
-		name = "专属弹幕-德雷克I",
-		speciality = "N/A",
-		tech = 1,
-		rarity = 1,
-		ammo = 10,
-		nationality = 0,
-		value_2 = 0,
-		id = 79561,
-		value_3 = 0,
-		descrip = "Barrage",
-		icon = "1",
-		torpedo_ammo = 0,
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {},
-		weapon_id = {
-			79561
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {}
-	},
-	[79562] = {
-		id = 79562,
-		name = "专属弹幕-德雷克II",
-		base = 79561,
-		weapon_id = {
-			79562
-		}
-	},
-	[79571] = {
-		type = 1,
-		name = "专属弹幕-美因茨I",
-		speciality = "N/A",
-		tech = 1,
-		rarity = 1,
-		ammo = 10,
-		nationality = 0,
-		value_2 = 0,
-		id = 79571,
-		value_3 = 0,
-		descrip = "Barrage",
-		icon = "1",
-		torpedo_ammo = 0,
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {},
-		weapon_id = {
-			79571
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {}
-	},
-	[79572] = {
-		id = 79572,
-		name = "专属弹幕-美因茨II",
-		base = 79571,
-		weapon_id = {
-			79572
-		}
-	},
-	[79581] = {
-		type = 1,
-		name = "专属弹幕-赫敏I",
+		name = "专属弹幕-伊吹I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79581,
+		id = 79221,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -205,7 +75,7 @@ pg.equip_data_statistics_356 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79581
+			79221
 		},
 		skill_id = {},
 		part_main = {
@@ -224,24 +94,24 @@ pg.equip_data_statistics_356 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79582] = {
-		id = 79582,
-		name = "专属弹幕-赫敏II",
-		base = 79581,
+	[79222] = {
+		id = 79222,
+		name = "专属弹幕-伊吹II",
+		base = 79221,
 		weapon_id = {
-			79582
+			79222
 		}
 	},
-	[79591] = {
+	[79231] = {
 		type = 1,
-		name = "专属弹幕-U96I",
+		name = "专属弹幕-海王星I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79591,
+		id = 79231,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -252,53 +122,7 @@ pg.equip_data_statistics_356 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79591
-		},
-		skill_id = {},
-		part_main = {
-			1
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {}
-	},
-	[79592] = {
-		id = 79592,
-		name = "专属弹幕-U96II",
-		base = 79591,
-		weapon_id = {
-			79592
-		}
-	},
-	[79601] = {
-		type = 1,
-		name = "专属弹幕-凉月I",
-		speciality = "N/A",
-		tech = 1,
-		rarity = 1,
-		ammo = 10,
-		nationality = 0,
-		descrip = "Barrage",
-		id = 79601,
-		value_3 = 0,
-		value_2 = 0,
-		icon = "1",
-		value_1 = "0",
-		torpedo_ammo = 0,
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {},
-		weapon_id = {
-			60571
+			79231
 		},
 		skill_id = {},
 		part_main = {
@@ -317,24 +141,24 @@ pg.equip_data_statistics_356 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79602] = {
-		id = 79602,
-		name = "专属弹幕-凉月II",
-		base = 79601,
+	[79232] = {
+		id = 79232,
+		name = "专属弹幕-海王星II",
+		base = 79231,
 		weapon_id = {
-			60572
+			79232
 		}
 	},
-	[79611] = {
+	[79241] = {
 		type = 1,
-		name = "专属弹幕-罗恩μI",
+		name = "专属弹幕-罗恩I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79611,
+		id = 79241,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -345,7 +169,7 @@ pg.equip_data_statistics_356 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79611
+			79241
 		},
 		skill_id = {},
 		part_main = {
@@ -364,24 +188,24 @@ pg.equip_data_statistics_356 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79612] = {
-		id = 79612,
-		name = "专属弹幕-罗恩μII",
-		base = 79611,
+	[79242] = {
+		id = 79242,
+		name = "专属弹幕-罗恩II",
+		base = 79241,
 		weapon_id = {
-			79612
+			79242
 		}
 	},
-	[79621] = {
+	[79251] = {
 		type = 1,
-		name = "专属弹幕-恶毒μI",
+		name = "专属弹幕-路易九世I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79621,
+		id = 79251,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -392,7 +216,7 @@ pg.equip_data_statistics_356 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60581
+			79251
 		},
 		skill_id = {},
 		part_main = {
@@ -410,5 +234,154 @@ pg.equip_data_statistics_356 = {
 		},
 		equip_parameters = {},
 		label = {}
+	},
+	[79252] = {
+		id = 79252,
+		name = "专属弹幕-路易九世II",
+		base = 79251,
+		weapon_id = {
+			79252
+		}
+	},
+	[79261] = {
+		type = 1,
+		name = "专属弹幕-I19I",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 79261,
+		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
+		weapon_id = {
+			79261
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
+		equip_parameters = {},
+		label = {}
+	},
+	[79262] = {
+		id = 79262,
+		name = "专属弹幕-I19II",
+		base = 79261,
+		weapon_id = {
+			79262
+		}
+	},
+	[79271] = {
+		type = 1,
+		name = "专属弹幕-U81I",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 79271,
+		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
+		weapon_id = {
+			79271
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
+		equip_parameters = {},
+		label = {}
+	},
+	[79272] = {
+		id = 79272,
+		name = "专属弹幕-U81II",
+		base = 79271,
+		weapon_id = {
+			79272
+		}
+	},
+	[79291] = {
+		type = 1,
+		name = "专属弹幕-22I",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 79291,
+		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
+		weapon_id = {
+			79291
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
+		equip_parameters = {},
+		label = {}
+	},
+	[79292] = {
+		id = 79292,
+		name = "专属弹幕-22II",
+		base = 79291,
+		weapon_id = {
+			79292
+		}
 	}
 }

@@ -1,116 +1,71 @@
 pg = pg or {}
 pg.aircraft_template_143 = {
-	[65562] = {
-		id = 65562,
-		name = "威悉技能轰炸机Lv2",
-		base = 65561,
-		max_hp = 57,
-		hp_growth = 1781,
+	[64346] = {
+		id = 64346,
+		max_hp = 73,
+		hp_growth = 2822,
+		base = 64341,
 		weapon_ID = {
-			65582
+			64356
 		}
 	},
-	[65563] = {
-		id = 65563,
-		name = "威悉技能轰炸机Lv3",
-		base = 65561,
-		max_hp = 64,
-		hp_growth = 2013,
+	[64347] = {
+		id = 64347,
+		max_hp = 80,
+		hp_growth = 3064,
+		base = 64341,
 		weapon_ID = {
-			65583
+			64357
 		}
 	},
-	[65564] = {
-		id = 65564,
-		name = "威悉技能轰炸机Lv4",
-		base = 65561,
-		max_hp = 70,
-		hp_growth = 2246,
+	[64348] = {
+		id = 64348,
+		max_hp = 86,
+		hp_growth = 3306,
+		base = 64341,
 		weapon_ID = {
-			65584
+			64358
 		}
 	},
-	[65565] = {
-		id = 65565,
-		name = "威悉技能轰炸机Lv5",
-		base = 65561,
-		max_hp = 77,
-		hp_growth = 2478,
+	[64349] = {
+		id = 64349,
+		max_hp = 92,
+		hp_growth = 3548,
+		base = 64341,
 		weapon_ID = {
-			65585
+			64359
 		}
 	},
-	[65566] = {
-		id = 65566,
-		name = "威悉技能轰炸机Lv6",
-		base = 65561,
-		max_hp = 84,
-		hp_growth = 2710,
+	[64350] = {
+		id = 64350,
+		max_hp = 99,
+		hp_growth = 3790,
+		base = 64341,
 		weapon_ID = {
-			65586
+			64360
 		}
 	},
-	[65567] = {
-		id = 65567,
-		name = "威悉技能轰炸机Lv7",
-		base = 65561,
-		max_hp = 90,
-		hp_growth = 2943,
-		weapon_ID = {
-			65587
-		}
-	},
-	[65568] = {
-		id = 65568,
-		name = "威悉技能轰炸机Lv8",
-		base = 65561,
-		max_hp = 97,
-		hp_growth = 3175,
-		weapon_ID = {
-			65588
-		}
-	},
-	[65569] = {
-		id = 65569,
-		name = "威悉技能轰炸机Lv9",
-		base = 65561,
-		max_hp = 103,
-		hp_growth = 3407,
-		weapon_ID = {
-			65589
-		}
-	},
-	[65570] = {
-		id = 65570,
-		name = "威悉技能轰炸机Lv10",
-		base = 65561,
-		max_hp = 110,
-		hp_growth = 3640,
-		weapon_ID = {
-			65590
-		}
-	},
-	[65571] = {
+	[64531] = {
 		attack_power = 2,
-		name = "威悉技能轰炸机PlusLv1",
+		name = "如月千早空艇Lv1",
 		type = 3,
 		accuracy = 23,
-		model_ID = "JU87C",
+		model_ID = "feiji_ouxiangfeiting",
 		ACC_growth = 0,
-		crash_DMG = 156,
-		dodge = 0.315,
+		crash_DMG = 208,
+		dodge = 1,
 		funnel_behavior = "",
-		nationality = 4,
-		id = 65571,
-		icon = "JU87C",
+		nationality = 107,
+		id = 64531,
+		icon = "feiji_ouxiangfeiting",
 		AP_growth = 2000,
-		dodge_limit = 11,
-		hp_growth = 1549,
-		speed = 50,
-		max_hp = 51,
+		dodge_limit = 0,
+		hp_growth = 1846,
+		speed = 20,
+		max_hp = 48,
 		scale = 1,
 		weapon_ID = {
-			65581
+			64541
 		},
 		position_offset = {
 			0,
@@ -130,13 +85,13 @@ pg.aircraft_template_143 = {
 		bound_bone = {
 			weapon = {
 				{
-					-1.28,
-					1.62,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					-1.12,
-					-1,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -153,7 +108,7 @@ pg.aircraft_template_143 = {
 				0
 			},
 			{
-				0,
+				0.64,
 				0,
 				0
 			},
@@ -162,6 +117,46 @@ pg.aircraft_template_143 = {
 				0,
 				0
 			}
+		}
+	},
+	[64532] = {
+		id = 64532,
+		name = "如月千早空艇Lv2",
+		base = 64531,
+		max_hp = 54,
+		hp_growth = 2087,
+		weapon_ID = {
+			64542
+		}
+	},
+	[64533] = {
+		id = 64533,
+		name = "如月千早空艇Lv3",
+		base = 64531,
+		max_hp = 61,
+		hp_growth = 2327,
+		weapon_ID = {
+			64543
+		}
+	},
+	[64534] = {
+		id = 64534,
+		name = "如月千早空艇Lv4",
+		base = 64531,
+		max_hp = 67,
+		hp_growth = 2568,
+		weapon_ID = {
+			64544
+		}
+	},
+	[64535] = {
+		id = 64535,
+		name = "如月千早空艇Lv5",
+		base = 64531,
+		max_hp = 73,
+		hp_growth = 2809,
+		weapon_ID = {
+			64545
 		}
 	}
 }

@@ -1,157 +1,68 @@
 pg = pg or {}
 pg.aircraft_template_258 = {
-	[90846] = {
-		id = 90846,
+	[84064] = {
+		id = 84064,
+		max_hp = 56,
+		hp_growth = 2150,
+		base = 84060,
+		weapon_ID = {
+			59044,
+			59444
+		}
+	},
+	[84065] = {
+		id = 84065,
+		max_hp = 61,
+		hp_growth = 2352,
+		base = 84060,
+		weapon_ID = {
+			59045,
+			59445
+		}
+	},
+	[84066] = {
+		id = 84066,
 		max_hp = 66,
-		hp_growth = 2541,
-		base = 90840,
+		hp_growth = 2554,
+		base = 84060,
 		weapon_ID = {
-			50026,
-			51566
+			59046,
+			59446
 		}
 	},
-	[90847] = {
-		id = 90847,
-		max_hp = 71,
-		hp_growth = 2742,
-		base = 90840,
+	[84067] = {
+		id = 84067,
+		max_hp = 72,
+		hp_growth = 2755,
+		base = 84060,
 		weapon_ID = {
-			50027,
-			51567
+			59047,
+			59447
 		}
 	},
-	[95720] = {
+	[84080] = {
 		attack_power = 2,
-		name = "G.50箭式战斗机T1",
+		name = "试作型舰载FW-190 A-5",
 		type = 1,
 		accuracy = 23,
-		model_ID = "g50",
+		model_ID = "Fw190A5",
 		ACC_growth = 0,
-		crash_DMG = 160,
-		dodge = 0.357,
+		crash_DMG = 70,
+		dodge = 0.315,
 		funnel_behavior = "",
-		nationality = 6,
-		id = 95720,
-		icon = "g50",
+		nationality = 4,
+		id = 84080,
+		icon = "Fw190A5",
 		AP_growth = 2000,
-		dodge_limit = 8,
-		hp_growth = 1270,
-		speed = 50,
-		max_hp = 33,
-		scale = 1,
-		weapon_ID = {
-			50000,
-			50500,
-			52100
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.68,
-					-0.667,
-					0
-				},
-				{
-					0.97,
-					0.584,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.27,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[95721] = {
-		id = 95721,
+		dodge_limit = 10,
+		hp_growth = 1478,
+		speed = 51,
 		max_hp = 38,
-		hp_growth = 1461,
-		base = 95720,
-		weapon_ID = {
-			50001,
-			50501,
-			52101
-		}
-	},
-	[95722] = {
-		id = 95722,
-		max_hp = 43,
-		hp_growth = 1651,
-		base = 95720,
-		weapon_ID = {
-			50002,
-			50502,
-			52102
-		}
-	},
-	[95723] = {
-		id = 95723,
-		max_hp = 48,
-		hp_growth = 1842,
-		base = 95720,
-		weapon_ID = {
-			50003,
-			50503,
-			52103
-		}
-	},
-	[95740] = {
-		attack_power = 2,
-		name = "G.50箭式战斗机T2",
-		type = 1,
-		accuracy = 23,
-		model_ID = "g50",
-		ACC_growth = 0,
-		crash_DMG = 160,
-		dodge = 0.345,
-		funnel_behavior = "",
-		nationality = 6,
-		id = 95740,
-		icon = "g50",
-		AP_growth = 2000,
-		dodge_limit = 8.5,
-		hp_growth = 1411,
-		speed = 50,
-		max_hp = 37,
 		scale = 1,
 		weapon_ID = {
-			50020,
-			50520,
-			52120
+			59040,
+			59440,
+			59140
 		},
 		position_offset = {
 			0,
@@ -171,13 +82,13 @@ pg.aircraft_template_258 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					0.66,
+					-0.9,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					1.06,
+					1.54,
 					0
 				}
 			}
@@ -194,7 +105,7 @@ pg.aircraft_template_258 = {
 				0
 			},
 			{
-				0.27,
+				0,
 				0,
 				0
 			},
@@ -205,37 +116,59 @@ pg.aircraft_template_258 = {
 			}
 		}
 	},
-	[95741] = {
-		id = 95741,
-		max_hp = 42,
-		hp_growth = 1623,
-		base = 95740,
+	[84081] = {
+		id = 84081,
+		max_hp = 44,
+		hp_growth = 1700,
+		base = 84080,
 		weapon_ID = {
-			50021,
-			50521,
-			52121
+			59041,
+			59441,
+			59141
 		}
 	},
-	[95742] = {
-		id = 95742,
-		max_hp = 48,
-		hp_growth = 1835,
-		base = 95740,
+	[84082] = {
+		id = 84082,
+		max_hp = 50,
+		hp_growth = 1922,
+		base = 84080,
 		weapon_ID = {
-			50022,
-			50522,
-			52122
+			59042,
+			59442,
+			59142
 		}
 	},
-	[95743] = {
-		id = 95743,
-		max_hp = 53,
-		hp_growth = 2046,
-		base = 95740,
+	[84083] = {
+		id = 84083,
+		max_hp = 56,
+		hp_growth = 2144,
+		base = 84080,
 		weapon_ID = {
-			50023,
-			50523,
-			52123
+			59043,
+			59443,
+			59143
+		}
+	},
+	[84084] = {
+		id = 84084,
+		max_hp = 62,
+		hp_growth = 2365,
+		base = 84080,
+		weapon_ID = {
+			59044,
+			59444,
+			59144
+		}
+	},
+	[84085] = {
+		id = 84085,
+		max_hp = 67,
+		hp_growth = 2587,
+		base = 84080,
+		weapon_ID = {
+			59045,
+			59445,
+			59145
 		}
 	}
 }

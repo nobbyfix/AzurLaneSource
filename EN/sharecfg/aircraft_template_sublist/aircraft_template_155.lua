@@ -1,86 +1,76 @@
 pg = pg or {}
 pg.aircraft_template_155 = {
-	[67145] = {
-		id = 67145,
-		name = "半人马技能鱼雷机Lv5",
-		base = 67140,
-		max_hp = 61,
-		hp_growth = 2341,
+	[65566] = {
+		id = 65566,
+		name = "威悉技能轰炸机Lv6",
+		base = 65561,
+		max_hp = 84,
+		hp_growth = 2710,
 		weapon_ID = {
-			67185
+			65586
 		}
 	},
-	[67146] = {
-		id = 67146,
-		name = "半人马技能鱼雷机Lv6",
-		base = 67140,
-		max_hp = 66,
-		hp_growth = 2541,
-		weapon_ID = {
-			67186
-		}
-	},
-	[67147] = {
-		id = 67147,
-		name = "半人马技能鱼雷机Lv7",
-		base = 67140,
-		max_hp = 71,
-		hp_growth = 2742,
-		weapon_ID = {
-			67187
-		}
-	},
-	[67148] = {
-		id = 67148,
-		name = "半人马技能鱼雷机Lv8",
-		base = 67140,
-		max_hp = 77,
+	[65567] = {
+		id = 65567,
+		name = "威悉技能轰炸机Lv7",
+		base = 65561,
+		max_hp = 90,
 		hp_growth = 2943,
 		weapon_ID = {
-			67188
+			65587
 		}
 	},
-	[67149] = {
-		id = 67149,
-		name = "半人马技能鱼雷机Lv9",
-		base = 67140,
-		max_hp = 82,
-		hp_growth = 3143,
+	[65568] = {
+		id = 65568,
+		name = "威悉技能轰炸机Lv8",
+		base = 65561,
+		max_hp = 97,
+		hp_growth = 3175,
 		weapon_ID = {
-			67189
+			65588
 		}
 	},
-	[67150] = {
-		id = 67150,
-		name = "半人马技能鱼雷机Lv10",
-		base = 67140,
-		max_hp = 87,
-		hp_growth = 3344,
+	[65569] = {
+		id = 65569,
+		name = "威悉技能轰炸机Lv9",
+		base = 65561,
+		max_hp = 103,
+		hp_growth = 3407,
 		weapon_ID = {
-			67190
+			65589
 		}
 	},
-	[67160] = {
+	[65570] = {
+		id = 65570,
+		name = "威悉技能轰炸机Lv10",
+		base = 65561,
+		max_hp = 110,
+		hp_growth = 3640,
+		weapon_ID = {
+			65590
+		}
+	},
+	[65571] = {
 		attack_power = 2,
-		name = "半人马技能鱼雷机Lv0",
-		type = 2,
+		name = "威悉技能轰炸机PlusLv1",
+		type = 3,
 		accuracy = 23,
-		model_ID = "jianyu",
+		model_ID = "JU87C",
 		ACC_growth = 0,
-		crash_DMG = 306,
-		dodge = 1,
+		crash_DMG = 156,
+		dodge = 0.315,
 		funnel_behavior = "",
-		nationality = 2,
-		id = 67160,
-		icon = "jianyu",
+		nationality = 4,
+		id = 65571,
+		icon = "JU87C",
 		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 1338,
-		speed = 45,
-		max_hp = 35,
+		dodge_limit = 11,
+		hp_growth = 1549,
+		speed = 50,
+		max_hp = 51,
 		scale = 1,
 		weapon_ID = {
-			67200
+			65581
 		},
 		position_offset = {
 			0,
@@ -100,13 +90,13 @@ pg.aircraft_template_155 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					-1.28,
+					1.62,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					-1.12,
+					-1,
 					0
 				}
 			}
@@ -123,7 +113,7 @@ pg.aircraft_template_155 = {
 				0
 			},
 			{
-				0.52,
+				0,
 				0,
 				0
 			},
@@ -134,34 +124,44 @@ pg.aircraft_template_155 = {
 			}
 		}
 	},
-	[67161] = {
-		id = 67161,
-		name = "半人马技能鱼雷机Lv1",
-		base = 67160,
-		max_hp = 40,
-		hp_growth = 1538,
+	[65572] = {
+		id = 65572,
+		name = "威悉技能轰炸机PlusLv2",
+		base = 65561,
+		max_hp = 57,
+		hp_growth = 1781,
 		weapon_ID = {
-			67201
+			65582
 		}
 	},
-	[67162] = {
-		id = 67162,
-		name = "半人马技能鱼雷机Lv2",
-		base = 67160,
-		max_hp = 45,
-		hp_growth = 1739,
+	[65573] = {
+		id = 65573,
+		name = "威悉技能轰炸机PlusLv3",
+		base = 65561,
+		max_hp = 64,
+		hp_growth = 2013,
 		weapon_ID = {
-			67202
+			65583
 		}
 	},
-	[67163] = {
-		id = 67163,
-		name = "半人马技能鱼雷机Lv3",
-		base = 67160,
-		max_hp = 50,
-		hp_growth = 1940,
+	[65574] = {
+		id = 65574,
+		name = "威悉技能轰炸机PlusLv4",
+		base = 65561,
+		max_hp = 70,
+		hp_growth = 2246,
 		weapon_ID = {
-			67203
+			65584
+		}
+	},
+	[65575] = {
+		id = 65575,
+		name = "威悉技能轰炸机PlusLv5",
+		base = 65561,
+		max_hp = 77,
+		hp_growth = 2478,
+		weapon_ID = {
+			65585
 		}
 	}
 }

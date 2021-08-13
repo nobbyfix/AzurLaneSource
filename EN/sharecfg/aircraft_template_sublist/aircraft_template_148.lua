@@ -1,103 +1,167 @@
 pg = pg or {}
 pg.aircraft_template_148 = {
-	[66241] = {
-		id = 66241,
-		name = "山城改技能Lv1",
-		base = 66240,
-		max_hp = 32,
-		hp_growth = 1233,
+	[65126] = {
+		id = 65126,
+		name = "恶毒μ神圣天使轰炸机Lv6",
+		base = 65121,
+		max_hp = 73,
+		hp_growth = 2796,
 		weapon_ID = {
-			66261
+			65136
 		}
 	},
-	[66242] = {
-		id = 66242,
-		name = "山城改技能Lv2",
-		base = 66240,
-		max_hp = 37,
-		hp_growth = 1443,
+	[65127] = {
+		id = 65127,
+		name = "恶毒μ神圣天使轰炸机Lv7",
+		base = 65121,
+		max_hp = 79,
+		hp_growth = 3016,
 		weapon_ID = {
-			66262
+			65137
 		}
 	},
-	[66243] = {
-		id = 66243,
-		name = "山城改技能Lv3",
-		base = 66240,
+	[65128] = {
+		id = 65128,
+		name = "恶毒μ神圣天使轰炸机Lv8",
+		base = 65121,
+		max_hp = 86,
+		hp_growth = 3237,
+		weapon_ID = {
+			65138
+		}
+	},
+	[65129] = {
+		id = 65129,
+		name = "恶毒μ神圣天使轰炸机Lv9",
+		base = 65121,
+		max_hp = 92,
+		hp_growth = 3458,
+		weapon_ID = {
+			65139
+		}
+	},
+	[65130] = {
+		id = 65130,
+		name = "恶毒μ神圣天使轰炸机Lv10",
+		base = 65121,
+		max_hp = 98,
+		hp_growth = 3678,
+		weapon_ID = {
+			65140
+		}
+	},
+	[65181] = {
+		attack_power = 2,
+		name = "大凤μ技能鱼雷机Lv1",
+		type = 2,
+		accuracy = 23,
+		model_ID = "liuxing",
+		ACC_growth = 0,
+		crash_DMG = 188,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 65181,
+		icon = "liuxing",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 1605,
+		speed = 52,
 		max_hp = 42,
-		hp_growth = 1653,
+		scale = 1,
 		weapon_ID = {
-			66263
+			65191
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.26,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
 		}
 	},
-	[66244] = {
-		id = 66244,
-		name = "山城改技能Lv4",
-		base = 66240,
-		max_hp = 47,
-		hp_growth = 1863,
+	[65182] = {
+		id = 65182,
+		name = "大凤μ技能鱼雷机Lv2",
+		base = 65181,
+		max_hp = 48,
+		hp_growth = 1846,
 		weapon_ID = {
-			66264
+			65192
 		}
 	},
-	[66245] = {
-		id = 66245,
-		name = "山城改技能Lv5",
-		base = 66240,
-		max_hp = 52,
-		hp_growth = 2073,
+	[65183] = {
+		id = 65183,
+		name = "大凤μ技能鱼雷机Lv3",
+		base = 65181,
+		max_hp = 54,
+		hp_growth = 2087,
 		weapon_ID = {
-			66265
+			65193
 		}
 	},
-	[66246] = {
-		id = 66246,
-		name = "山城改技能Lv6",
-		base = 66240,
-		max_hp = 57,
-		hp_growth = 2283,
+	[65184] = {
+		id = 65184,
+		name = "大凤μ技能鱼雷机Lv4",
+		base = 65181,
+		max_hp = 61,
+		hp_growth = 2327,
 		weapon_ID = {
-			66266
+			65194
 		}
 	},
-	[66247] = {
-		id = 66247,
-		name = "山城改技能Lv7",
-		base = 66240,
-		max_hp = 63,
-		hp_growth = 2494,
+	[65185] = {
+		id = 65185,
+		name = "大凤μ技能鱼雷机Lv5",
+		base = 65181,
+		max_hp = 67,
+		hp_growth = 2568,
 		weapon_ID = {
-			66267
-		}
-	},
-	[66248] = {
-		id = 66248,
-		name = "山城改技能Lv8",
-		base = 66240,
-		max_hp = 69,
-		hp_growth = 2705,
-		weapon_ID = {
-			66268
-		}
-	},
-	[66249] = {
-		id = 66249,
-		name = "山城改技能Lv9",
-		base = 66240,
-		max_hp = 75,
-		hp_growth = 2916,
-		weapon_ID = {
-			66269
-		}
-	},
-	[66250] = {
-		id = 66250,
-		name = "山城改技能Lv10",
-		base = 66240,
-		max_hp = 81,
-		hp_growth = 3127,
-		weapon_ID = {
-			66270
+			65195
 		}
 	}
 }

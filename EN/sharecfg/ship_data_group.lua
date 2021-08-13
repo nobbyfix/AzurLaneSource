@@ -9119,7 +9119,7 @@ pg.ship_data_group = {
 		}
 	},
 	[144] = {
-		trans_skin = 0,
+		trans_skin = 207029,
 		redirect_id = 101,
 		hide = 0,
 		type = 7,
@@ -9137,8 +9137,17 @@ pg.ship_data_group = {
 			"B",
 			"B"
 		},
-		trans_radar_chart = {},
-		trans_skill = {},
+		trans_radar_chart = {
+			"E",
+			"E",
+			"S",
+			"C",
+			"B",
+			"A"
+		},
+		trans_skill = {
+			14710
+		},
 		description = {
 			{
 				"Honor medal exchange",
@@ -18914,6 +18923,223 @@ pg.ship_data_group = {
 			}
 		}
 	},
+	[10071] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 2,
+		nationality = 107,
+		handbook_type = 1,
+		index_id = 10071,
+		code = 10071,
+		group_type = 1070001,
+		trans_type = 0,
+		property_hexagon = {
+			"B",
+			"A",
+			"E",
+			"B",
+			"B",
+			"C"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Event: Azur Anthem",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
+	[10072] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 7,
+		nationality = 107,
+		handbook_type = 1,
+		index_id = 10072,
+		code = 10072,
+		group_type = 1070002,
+		trans_type = 0,
+		property_hexagon = {
+			"E",
+			"E",
+			"S",
+			"B",
+			"B",
+			"A"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Event: Azur Anthem",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
+	[10073] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 5,
+		nationality = 107,
+		handbook_type = 1,
+		index_id = 10073,
+		code = 10073,
+		group_type = 1070003,
+		trans_type = 0,
+		property_hexagon = {
+			"A",
+			"E",
+			"E",
+			"D",
+			"B",
+			"A"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Event: Azur Anthem",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
+	[10074] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 3,
+		nationality = 107,
+		handbook_type = 1,
+		index_id = 10074,
+		code = 10074,
+		group_type = 1070004,
+		trans_type = 0,
+		property_hexagon = {
+			"B",
+			"E",
+			"E",
+			"C",
+			"C",
+			"A"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Event: Azur Anthem",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
+	[10075] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 19,
+		nationality = 107,
+		handbook_type = 1,
+		index_id = 10075,
+		code = 10075,
+		group_type = 1070005,
+		trans_type = 0,
+		property_hexagon = {
+			"D",
+			"E",
+			"E",
+			"D",
+			"D",
+			"B"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Event: Azur Anthem",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
+	[10076] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 8,
+		nationality = 107,
+		handbook_type = 1,
+		index_id = 10076,
+		code = 10076,
+		group_type = 1070006,
+		trans_type = 0,
+		property_hexagon = {
+			"D",
+			"A",
+			"E",
+			"D",
+			"E",
+			"D"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Event: Azur Anthem",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
+	[10077] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 8,
+		nationality = 107,
+		handbook_type = 1,
+		index_id = 10077,
+		code = 10077,
+		group_type = 1070007,
+		trans_type = 0,
+		property_hexagon = {
+			"D",
+			"A",
+			"E",
+			"D",
+			"E",
+			"D"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Event: Azur Anthem",
+				{
+					""
+				},
+				0
+			}
+		}
+	},
 	[20001] = {
 		trans_skin = 0,
 		redirect_id = 101,
@@ -19492,6 +19718,176 @@ pg.ship_data_group = {
 			}
 		}
 	},
+	[20018] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 3,
+		nationality = 1,
+		handbook_type = 2,
+		index_id = 20018,
+		code = 20018,
+		group_type = 19903,
+		trans_type = 0,
+		property_hexagon = {
+			"A",
+			"C",
+			"E",
+			"C",
+			"C",
+			"A"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Research and Development",
+				{
+					"SHIPBLUEPRINT",
+					{
+						shipGroupId = 19903
+					}
+				},
+				0
+			}
+		}
+	},
+	[20019] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 7,
+		nationality = 3,
+		handbook_type = 2,
+		index_id = 20019,
+		code = 20019,
+		group_type = 39905,
+		trans_type = 0,
+		property_hexagon = {
+			"E",
+			"E",
+			"S",
+			"B",
+			"B",
+			"S"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Research and Development",
+				{
+					"SHIPBLUEPRINT",
+					{
+						shipGroupId = 39905
+					}
+				},
+				0
+			}
+		}
+	},
+	[20020] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 18,
+		nationality = 4,
+		handbook_type = 2,
+		index_id = 20020,
+		code = 20020,
+		group_type = 49905,
+		trans_type = 0,
+		property_hexagon = {
+			"A",
+			"C",
+			"E",
+			"C",
+			"C",
+			"S"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Research and Development",
+				{
+					"SHIPBLUEPRINT",
+					{
+						shipGroupId = 49905
+					}
+				},
+				0
+			}
+		}
+	},
+	[20021] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 7,
+		nationality = 4,
+		handbook_type = 2,
+		index_id = 20021,
+		code = 20021,
+		group_type = 49906,
+		trans_type = 0,
+		property_hexagon = {
+			"E",
+			"E",
+			"S",
+			"C",
+			"B",
+			"A"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Research and Development",
+				{
+					"SHIPBLUEPRINT",
+					{
+						shipGroupId = 49906
+					}
+				},
+				0
+			}
+		}
+	},
+	[20022] = {
+		trans_skin = 0,
+		redirect_id = 101,
+		hide = 0,
+		type = 5,
+		nationality = 6,
+		handbook_type = 2,
+		index_id = 20022,
+		code = 20022,
+		group_type = 69901,
+		trans_type = 0,
+		property_hexagon = {
+			"S",
+			"E",
+			"E",
+			"D",
+			"C",
+			"S"
+		},
+		trans_radar_chart = {},
+		trans_skill = {},
+		description = {
+			{
+				"Research and Development",
+				{
+					"SHIPBLUEPRINT",
+					{
+						shipGroupId = 69901
+					}
+				},
+				0
+			}
+		}
+	},
 	[30001] = {
 		trans_skin = 0,
 		redirect_id = 101,
@@ -20061,6 +20457,13 @@ pg.ship_data_group = {
 		10065,
 		10066,
 		10067,
+		10071,
+		10072,
+		10073,
+		10074,
+		10075,
+		10076,
+		10077,
 		20001,
 		20002,
 		20003,
@@ -20078,6 +20481,11 @@ pg.ship_data_group = {
 		20015,
 		20016,
 		20017,
+		20018,
+		20019,
+		20020,
+		20021,
+		20022,
 		30001,
 		30002,
 		30003

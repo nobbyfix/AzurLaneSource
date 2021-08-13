@@ -1,60 +1,127 @@
 pg = pg or {}
 pg.aircraft_template_175 = {
-	[68396] = {
+	[67682] = {
+		id = 67682,
+		name = "龙骧技能轰炸机Lv2",
+		base = 67681,
+		max_hp = 48,
+		hp_growth = 2087,
+		weapon_ID = {
+			67692,
+			67702
+		}
+	},
+	[67683] = {
+		id = 67683,
+		name = "龙骧技能轰炸机Lv3",
+		base = 67681,
+		max_hp = 54,
+		hp_growth = 2327,
+		weapon_ID = {
+			67693,
+			67703
+		}
+	},
+	[67684] = {
+		id = 67684,
+		name = "龙骧技能轰炸机Lv4",
+		base = 67681,
+		max_hp = 61,
+		hp_growth = 2568,
+		weapon_ID = {
+			67694,
+			67704
+		}
+	},
+	[67685] = {
+		id = 67685,
+		name = "龙骧技能轰炸机Lv5",
+		base = 67681,
+		max_hp = 67,
+		hp_growth = 2809,
+		weapon_ID = {
+			67695,
+			67705
+		}
+	},
+	[67686] = {
+		id = 67686,
+		name = "龙骧技能轰炸机Lv6",
+		base = 67681,
 		max_hp = 73,
-		name = "科隆改直升机Lv6",
-		base = 68391,
-		id = 68396,
-		hp_growth = 2796
+		hp_growth = 3050,
+		weapon_ID = {
+			67696,
+			67706
+		}
 	},
-	[68397] = {
+	[67687] = {
+		id = 67687,
+		name = "龙骧技能轰炸机Lv7",
+		base = 67681,
 		max_hp = 79,
-		name = "科隆改直升机Lv7",
-		base = 68391,
-		id = 68397,
-		hp_growth = 3016
+		hp_growth = 3290,
+		weapon_ID = {
+			67697,
+			67707
+		}
 	},
-	[68398] = {
+	[67688] = {
+		id = 67688,
+		name = "龙骧技能轰炸机Lv8",
+		base = 67681,
 		max_hp = 86,
-		name = "科隆改直升机Lv8",
-		base = 68391,
-		id = 68398,
-		hp_growth = 3237
+		hp_growth = 3531,
+		weapon_ID = {
+			67698,
+			67708
+		}
 	},
-	[68399] = {
+	[67689] = {
+		id = 67689,
+		name = "龙骧技能轰炸机Lv9",
+		base = 67681,
 		max_hp = 92,
-		name = "科隆改直升机Lv9",
-		base = 68391,
-		id = 68399,
-		hp_growth = 3458
+		hp_growth = 3772,
+		weapon_ID = {
+			67699,
+			67709
+		}
 	},
-	[68400] = {
+	[67690] = {
+		id = 67690,
+		name = "龙骧技能轰炸机Lv10",
+		base = 67681,
 		max_hp = 98,
-		name = "科隆改直升机Lv10",
-		base = 68391,
-		id = 68400,
-		hp_growth = 3678
+		hp_growth = 4013,
+		weapon_ID = {
+			67700,
+			67710
+		}
 	},
-	[68541] = {
+	[67781] = {
 		attack_power = 2,
-		name = "伊25技能零侦LV1",
+		name = "双龙改轰炸5 Lv1",
 		type = 3,
 		accuracy = 23,
-		model_ID = "glen",
+		model_ID = "99shijianbao1",
 		ACC_growth = 0,
-		crash_DMG = 208,
+		crash_DMG = 180,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 3,
-		id = 68541,
-		icon = "glen",
+		id = 67781,
+		icon = "99shijianbao1",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1615,
-		speed = 66,
+		hp_growth = 1692,
+		speed = 48,
 		max_hp = 42,
 		scale = 1,
-		weapon_ID = {},
+		weapon_ID = {
+			67801,
+			67811
+		},
 		position_offset = {
 			0,
 			5,
@@ -96,7 +163,7 @@ pg.aircraft_template_175 = {
 				0
 			},
 			{
-				0.64,
+				0,
 				0,
 				0
 			},
@@ -106,37 +173,5 @@ pg.aircraft_template_175 = {
 				0
 			}
 		}
-	},
-	[68542] = {
-		id = 68542,
-		name = "伊25技能零侦LV2",
-		base = 68541,
-		max_hp = 48,
-		hp_growth = 1826,
-		weapon_ID = {}
-	},
-	[68543] = {
-		id = 68543,
-		name = "伊25技能零侦LV3",
-		base = 68541,
-		max_hp = 54,
-		hp_growth = 2036,
-		weapon_ID = {}
-	},
-	[68544] = {
-		id = 68544,
-		name = "伊25技能零侦LV4",
-		base = 68541,
-		max_hp = 61,
-		hp_growth = 2247,
-		weapon_ID = {}
-	},
-	[68545] = {
-		id = 68545,
-		name = "伊25技能零侦LV5",
-		base = 68541,
-		max_hp = 67,
-		hp_growth = 2458,
-		weapon_ID = {}
 	}
 }

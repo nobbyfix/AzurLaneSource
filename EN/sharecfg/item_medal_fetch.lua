@@ -1001,6 +1001,90 @@ pg.item_medal_fetch = {
 		id = 185,
 		price = 40
 	},
+	[186] = {
+		itemid = 42010,
+		name = "定向蓝图・二期",
+		itemquantity = 1,
+		id = 186,
+		price = 20
+	},
+	[187] = {
+		itemid = 42010,
+		name = "定向蓝图・二期",
+		itemquantity = 2,
+		id = 187,
+		price = 40
+	},
+	[188] = {
+		itemid = 42021,
+		name = "蓝图：柴郡",
+		itemquantity = 1,
+		id = 188,
+		price = 20
+	},
+	[189] = {
+		itemid = 42022,
+		name = "蓝图：德雷克",
+		itemquantity = 1,
+		id = 189,
+		price = 20
+	},
+	[190] = {
+		itemid = 42023,
+		name = "蓝图：美因茨",
+		itemquantity = 1,
+		id = 190,
+		price = 20
+	},
+	[191] = {
+		itemid = 42024,
+		name = "蓝图：奥丁",
+		itemquantity = 1,
+		id = 191,
+		price = 20
+	},
+	[192] = {
+		itemid = 42025,
+		name = "蓝图：香槟",
+		itemquantity = 1,
+		id = 192,
+		price = 20
+	},
+	[193] = {
+		itemid = 42021,
+		name = "蓝图：柴郡",
+		itemquantity = 2,
+		id = 193,
+		price = 40
+	},
+	[194] = {
+		itemid = 42022,
+		name = "蓝图：德雷克",
+		itemquantity = 2,
+		id = 194,
+		price = 40
+	},
+	[195] = {
+		itemid = 42023,
+		name = "蓝图：美因茨",
+		itemquantity = 2,
+		id = 195,
+		price = 40
+	},
+	[196] = {
+		itemid = 42024,
+		name = "蓝图：奥丁",
+		itemquantity = 2,
+		id = 196,
+		price = 40
+	},
+	[197] = {
+		itemid = 42025,
+		name = "蓝图：香槟",
+		itemquantity = 2,
+		id = 197,
+		price = 40
+	},
 	all = {
 		1,
 		2,
@@ -1144,6 +1228,18 @@ pg.item_medal_fetch = {
 		182,
 		183,
 		184,
-		185
+		185,
+		186,
+		187,
+		188,
+		189,
+		190,
+		191,
+		192,
+		193,
+		194,
+		195,
+		196,
+		197
 	}
 }

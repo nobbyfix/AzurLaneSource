@@ -1,52 +1,132 @@
 pg = pg or {}
 pg.equip_data_statistics_313 = {
-	[46144] = {
-		id = 46144,
-		damage = "20/wave",
-		base = 46140,
+	[45451] = {
+		id = 45451,
+		anti_siren = 100,
+		damage = "160 x 2",
+		base = 45440,
 		weapon_id = {
-			46144
+			45451
 		}
 	},
-	[46145] = {
-		id = 46145,
-		damage = "22/wave",
-		base = 46140,
+	[45452] = {
+		id = 45452,
+		anti_siren = 200,
+		damage = "160 x 2",
+		base = 45440,
 		weapon_id = {
-			46145
+			45452
 		}
 	},
-	[46146] = {
-		id = 46146,
-		damage = "24/wave",
-		base = 46140,
+	[45453] = {
+		id = 45453,
+		anti_siren = 300,
+		damage = "160 x 2",
+		base = 45440,
 		weapon_id = {
-			46146
+			45453
 		}
 	},
-	[46147] = {
-		id = 46147,
-		damage = "24/wave",
-		base = 46140,
-		weapon_id = {
-			46147
-		}
-	},
-	[46200] = {
+	[46000] = {
 		tech = 1,
-		name = "Twin 37mm AA 70K",
+		name = "Quadruple 20mm Flakvierling Machine Gun Mount",
+		speciality = "Anti-Air",
+		type = 6,
+		rarity = 1,
+		ammo = 5,
+		damage = "17/wave",
+		nationality = 4,
+		value_2 = 0,
+		id = 46000,
+		value_3 = 0,
+		descrip = "Quadruple 20mm Flakvierling Machine Gun Mount used for anti-air defense.",
+		icon = "46000",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {
+			1,
+			2,
+			6,
+			10
+		},
+		weapon_id = {
+			46000
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			10,
+			12,
+			13,
+			18,
+			19
+		},
+		part_sub = {
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			10,
+			12,
+			13,
+			18,
+			19
+		},
+		equip_parameters = {},
+		label = {
+			"KMS",
+			"ST",
+			"AA"
+		}
+	},
+	[46001] = {
+		id = 46001,
+		damage = "20/wave",
+		base = 46000,
+		weapon_id = {
+			46001
+		}
+	},
+	[46002] = {
+		id = 46002,
+		damage = "23/wave",
+		base = 46000,
+		weapon_id = {
+			46002
+		}
+	},
+	[46003] = {
+		id = 46003,
+		damage = "26/wave",
+		base = 46000,
+		weapon_id = {
+			46003
+		}
+	},
+	[46020] = {
+		tech = 2,
+		name = "Quadruple 20mm Flakvierling Machine Gun Mount",
 		speciality = "Anti-Air",
 		type = 6,
 		value_2 = 5,
 		ammo = 5,
-		damage = "15/wave",
+		damage = "20/wave",
 		nationality = 4,
 		rarity = 2,
-		id = 46200,
+		id = 46020,
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "Twin 37mm AA 70K used for anti-air defense.",
-		icon = "46200",
+		descrip = "Quadruple 20mm Flakvierling Machine Gun Mount used for anti-air defense.",
+		icon = "46000",
 		attribute_2 = "antiaircraft",
 		property_rate = {},
 		ammo_icon = {},
@@ -58,7 +138,7 @@ pg.equip_data_statistics_313 = {
 			10
 		},
 		weapon_id = {
-			46200
+			46020
 		},
 		skill_id = {},
 		part_main = {
@@ -94,45 +174,45 @@ pg.equip_data_statistics_313 = {
 			"AA"
 		}
 	},
-	[46201] = {
-		id = 46201,
-		damage = "17/wave",
-		base = 46200,
+	[46021] = {
+		id = 46021,
+		damage = "23/wave",
+		base = 46020,
 		weapon_id = {
-			46201
+			46021
 		}
 	},
-	[46202] = {
-		id = 46202,
-		damage = "19/wave",
-		base = 46200,
+	[46022] = {
+		id = 46022,
+		damage = "27/wave",
+		base = 46020,
 		weapon_id = {
-			46202
+			46022
 		}
 	},
-	[46203] = {
-		id = 46203,
-		damage = "22/wave",
-		base = 46200,
+	[46023] = {
+		id = 46023,
+		damage = "31/wave",
+		base = 46020,
 		weapon_id = {
-			46203
+			46023
 		}
 	},
-	[46220] = {
-		tech = 2,
-		name = "Twin 37mm AA 70K",
+	[46040] = {
+		tech = 3,
+		name = "Quadruple 20mm Flakvierling Machine Gun Mount",
 		speciality = "Anti-Air",
 		type = 6,
 		value_2 = 12,
 		ammo = 5,
-		damage = "17/wave",
+		damage = "23/wave",
 		nationality = 4,
 		rarity = 3,
-		id = 46220,
+		id = 46040,
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "Twin 37mm AA 70K used for anti-air defense.",
-		icon = "46200",
+		descrip = "Quadruple 20mm Flakvierling Machine Gun Mount used for anti-air defense.",
+		icon = "46000",
 		attribute_2 = "antiaircraft",
 		property_rate = {},
 		ammo_icon = {},
@@ -144,7 +224,7 @@ pg.equip_data_statistics_313 = {
 			10
 		},
 		weapon_id = {
-			46220
+			46040
 		},
 		skill_id = {},
 		part_main = {
@@ -180,122 +260,44 @@ pg.equip_data_statistics_313 = {
 			"AA"
 		}
 	},
-	[46221] = {
-		id = 46221,
-		damage = "19/wave",
-		base = 46220,
+	[46041] = {
+		id = 46041,
+		damage = "26/wave",
+		base = 46040,
 		weapon_id = {
-			46221
+			46041
 		}
 	},
-	[46222] = {
-		id = 46222,
-		damage = "22/wave",
-		base = 46220,
+	[46042] = {
+		id = 46042,
+		damage = "30/wave",
+		base = 46040,
 		weapon_id = {
-			46222
+			46042
 		}
 	},
-	[46223] = {
-		id = 46223,
-		damage = "25/wave",
-		base = 46220,
-		weapon_id = {
-			46223
-		}
-	},
-	[46224] = {
-		id = 46224,
-		damage = "28/wave",
-		base = 46220,
-		weapon_id = {
-			46224
-		}
-	},
-	[46225] = {
-		id = 46225,
-		damage = "31/wave",
-		base = 46220,
-		weapon_id = {
-			46225
-		}
-	},
-	[46226] = {
-		id = 46226,
+	[46043] = {
+		id = 46043,
 		damage = "34/wave",
-		base = 46220,
+		base = 46040,
 		weapon_id = {
-			46226
+			46043
 		}
 	},
-	[46240] = {
-		tech = 3,
-		name = "Twin 37mm AA 70K",
-		speciality = "Anti-Air",
-		type = 6,
-		value_2 = 25,
-		ammo = 5,
-		damage = "20/wave",
-		nationality = 4,
-		rarity = 4,
-		id = 46240,
-		value_3 = 0,
-		torpedo_ammo = 0,
-		descrip = "Twin 37mm AA 70K used for anti-air defense.",
-		icon = "46200",
-		attribute_2 = "antiaircraft",
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {
-			1,
-			2,
-			6,
-			10
-		},
+	[46044] = {
+		id = 46044,
+		damage = "38/wave",
+		base = 46040,
 		weapon_id = {
-			46240
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
-		},
-		part_sub = {
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			10,
-			12,
-			13,
-			18,
-			19
-		},
-		equip_parameters = {},
-		label = {
-			"KMS",
-			"ST",
-			"AA"
+			46044
 		}
 	},
-	[46241] = {
-		id = 46241,
-		damage = "23/wave",
-		base = 46240,
+	[46045] = {
+		id = 46045,
+		damage = "42/wave",
+		base = 46040,
 		weapon_id = {
-			46241
+			46045
 		}
 	}
 }

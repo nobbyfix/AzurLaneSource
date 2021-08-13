@@ -1,618 +1,26 @@
 pg = pg or {}
 pg.aircraft_template_398 = {
-	[1100906] = {
+	[1003070] = {
 		attack_power = 2,
-		name = "美系舰载-鱼雷机II",
-		type = 2,
-		accuracy = 23,
-		model_ID = "tbd",
-		ACC_growth = 0,
-		crash_DMG = 70,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100906,
-		icon = "tbd",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2380,
-		speed = 30,
-		max_hp = 99,
-		scale = 0.75,
-		weapon_ID = {
-			1100756
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100907] = {
-		attack_power = 2,
-		name = "美系舰载-鱼雷机III",
-		type = 2,
-		accuracy = 23,
-		model_ID = "tbd",
-		ACC_growth = 0,
-		crash_DMG = 90,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100907,
-		icon = "tbd",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2720,
-		speed = 30,
-		max_hp = 126,
-		scale = 0.75,
-		weapon_ID = {
-			1100757
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100908] = {
-		attack_power = 2,
-		name = "美系舰载-鱼雷机IV",
-		type = 2,
-		accuracy = 23,
-		model_ID = "tbd",
-		ACC_growth = 0,
-		crash_DMG = 112,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100908,
-		icon = "tbd",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3060,
-		speed = 30,
-		max_hp = 153,
-		scale = 0.75,
-		weapon_ID = {
-			1100758
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100909] = {
-		attack_power = 2,
-		name = "美系舰载-鱼雷机V",
-		type = 2,
-		accuracy = 23,
-		model_ID = "tbd",
-		ACC_growth = 0,
-		crash_DMG = 136,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100909,
-		icon = "tbd",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3400,
-		speed = 30,
-		max_hp = 180,
-		scale = 0.75,
-		weapon_ID = {
-			1100759
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100910] = {
-		attack_power = 2,
-		name = "美系舰载-轰炸机I",
+		name = "【量产型】梦境航母轰炸机T1 (飞机 V",
 		type = 3,
 		accuracy = 23,
-		model_ID = "sbdwuwei",
+		model_ID = "shenhaifeiji",
 		ACC_growth = 0,
-		crash_DMG = 65,
+		crash_DMG = 180,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 3,
-		id = 1100910,
-		icon = "sbdwuwei",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2280,
-		speed = 30,
-		max_hp = 80,
-		scale = 0.75,
-		weapon_ID = {
-			1100970
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100911] = {
-		attack_power = 2,
-		name = "美系舰载-轰炸机II",
-		type = 3,
-		accuracy = 23,
-		model_ID = "sbdwuwei",
-		ACC_growth = 0,
-		crash_DMG = 85,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100911,
-		icon = "sbdwuwei",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2660,
-		speed = 30,
-		max_hp = 110,
-		scale = 0.75,
-		weapon_ID = {
-			1100971
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100912] = {
-		attack_power = 2,
-		name = "美系舰载-轰炸机III",
-		type = 3,
-		accuracy = 23,
-		model_ID = "sbdwuwei",
-		ACC_growth = 0,
-		crash_DMG = 110,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100912,
-		icon = "sbdwuwei",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3040,
-		speed = 30,
-		max_hp = 140,
-		scale = 0.75,
-		weapon_ID = {
-			1100972
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100913] = {
-		attack_power = 2,
-		name = "美系舰载-轰炸机IV",
-		type = 3,
-		accuracy = 23,
-		model_ID = "sbdwuwei",
-		ACC_growth = 0,
-		crash_DMG = 140,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100913,
-		icon = "sbdwuwei",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3420,
-		speed = 30,
-		max_hp = 170,
-		scale = 0.75,
-		weapon_ID = {
-			1100973
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100914] = {
-		attack_power = 2,
-		name = "美系舰载-轰炸机V",
-		type = 3,
-		accuracy = 23,
-		model_ID = "sbdwuwei",
-		ACC_growth = 0,
-		crash_DMG = 175,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100914,
-		icon = "sbdwuwei",
+		id = 1003070,
+		icon = "shenhaifeiji",
 		AP_growth = 2000,
 		dodge_limit = 0,
 		hp_growth = 3800,
 		speed = 30,
-		max_hp = 200,
+		max_hp = 210,
 		scale = 0.75,
 		weapon_ID = {
-			1100974
+			1003080
 		},
 		position_offset = {
 			0,
@@ -666,28 +74,28 @@ pg.aircraft_template_398 = {
 			}
 		}
 	},
-	[1100925] = {
+	[1003071] = {
 		attack_power = 2,
-		name = "法系舰载-战斗机I",
+		name = "【量产型】梦境航母战斗机T1 (飞机 I",
 		type = 1,
 		accuracy = 23,
-		model_ID = "GL2",
+		model_ID = "shenhaifeiji",
 		ACC_growth = 0,
-		crash_DMG = 36,
+		crash_DMG = 41,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 3,
-		id = 1100925,
-		icon = "GL2",
+		id = 1003071,
+		icon = "shenhaifeiji",
 		AP_growth = 2000,
 		dodge_limit = 0,
 		hp_growth = 1680,
 		speed = 33,
-		max_hp = 64,
+		max_hp = 74,
 		scale = 0.75,
 		weapon_ID = {
-			1100950,
-			1100750
+			1003081,
+			1003086
 		},
 		position_offset = {
 			0,
@@ -714,6 +122,602 @@ pg.aircraft_template_398 = {
 				{
 					0.48,
 					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003072] = {
+		attack_power = 2,
+		name = "【量产型】梦境航母战斗机T1 (飞机 II",
+		type = 1,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 53,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003072,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 1960,
+		speed = 33,
+		max_hp = 98,
+		scale = 0.75,
+		weapon_ID = {
+			1003082,
+			1003087
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.56,
+					-0.76,
+					0
+				},
+				{
+					0.48,
+					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003073] = {
+		attack_power = 2,
+		name = "【量产型】梦境航母战斗机T1 (飞机 III",
+		type = 1,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 67,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003073,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 2240,
+		speed = 33,
+		max_hp = 122,
+		scale = 0.75,
+		weapon_ID = {
+			1003083,
+			1003088
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.56,
+					-0.76,
+					0
+				},
+				{
+					0.48,
+					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003074] = {
+		attack_power = 2,
+		name = "【量产型】梦境航母战斗机T1 (飞机 IV",
+		type = 1,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 83,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003074,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 2520,
+		speed = 33,
+		max_hp = 146,
+		scale = 0.75,
+		weapon_ID = {
+			1003084,
+			1003089
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.56,
+					-0.76,
+					0
+				},
+				{
+					0.48,
+					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003075] = {
+		attack_power = 2,
+		name = "【量产型】梦境航母战斗机T1 (飞机 V",
+		type = 1,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 103,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003075,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 2800,
+		speed = 33,
+		max_hp = 170,
+		scale = 0.75,
+		weapon_ID = {
+			1003085,
+			1003090
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.56,
+					-0.76,
+					0
+				},
+				{
+					0.48,
+					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003186] = {
+		attack_power = 2,
+		name = "【精英】梦境执棋者 轰炸机T3 I",
+		type = 3,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 70,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003186,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 2280,
+		speed = 30,
+		max_hp = 90,
+		scale = 0.75,
+		weapon_ID = {
+			1003221
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-1.73,
+					0
+				},
+				{
+					0.82,
+					2.04,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003187] = {
+		attack_power = 2,
+		name = "【精英】梦境执棋者 轰炸机T3 II",
+		type = 3,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 90,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003187,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 2660,
+		speed = 30,
+		max_hp = 120,
+		scale = 0.75,
+		weapon_ID = {
+			1003222
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-1.73,
+					0
+				},
+				{
+					0.82,
+					2.04,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003188] = {
+		attack_power = 2,
+		name = "【精英】梦境执棋者 轰炸机T3 III",
+		type = 3,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 115,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003188,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 3040,
+		speed = 30,
+		max_hp = 150,
+		scale = 0.75,
+		weapon_ID = {
+			1003223
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-1.73,
+					0
+				},
+				{
+					0.82,
+					2.04,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003189] = {
+		attack_power = 2,
+		name = "【精英】梦境执棋者 轰炸机T3 IV",
+		type = 3,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 145,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003189,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 3420,
+		speed = 30,
+		max_hp = 180,
+		scale = 0.75,
+		weapon_ID = {
+			1003224
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-1.73,
+					0
+				},
+				{
+					0.82,
+					2.04,
 					0
 				}
 			}

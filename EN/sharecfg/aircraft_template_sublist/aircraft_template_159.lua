@@ -1,103 +1,167 @@
 pg = pg or {}
 pg.aircraft_template_159 = {
-	[67321] = {
-		id = 67321,
-		name = "大凤技能鱼雷机Lv1",
-		base = 67320,
-		max_hp = 48,
-		hp_growth = 1846,
+	[65936] = {
+		id = 65936,
+		name = "天鹰技能Re.2001舰载鱼雷机Lv6",
+		base = 65931,
+		max_hp = 64,
+		hp_growth = 2458,
 		weapon_ID = {
-			67401
+			65946
 		}
 	},
-	[67322] = {
-		id = 67322,
-		name = "大凤技能鱼雷机Lv2",
-		base = 67320,
-		max_hp = 54,
-		hp_growth = 2087,
+	[65937] = {
+		id = 65937,
+		name = "天鹰技能Re.2001舰载鱼雷机Lv7",
+		base = 65931,
+		max_hp = 69,
+		hp_growth = 2669,
 		weapon_ID = {
-			67402
+			65947
 		}
 	},
-	[67323] = {
-		id = 67323,
-		name = "大凤技能鱼雷机Lv3",
-		base = 67320,
-		max_hp = 61,
-		hp_growth = 2327,
+	[65938] = {
+		id = 65938,
+		name = "天鹰技能Re.2001舰载鱼雷机Lv8",
+		base = 65931,
+		max_hp = 75,
+		hp_growth = 2879,
 		weapon_ID = {
-			67403
+			65948
 		}
 	},
-	[67324] = {
-		id = 67324,
-		name = "大凤技能鱼雷机Lv4",
-		base = 67320,
-		max_hp = 67,
-		hp_growth = 2568,
+	[65939] = {
+		id = 65939,
+		name = "天鹰技能Re.2001舰载鱼雷机Lv9",
+		base = 65931,
+		max_hp = 80,
+		hp_growth = 3090,
 		weapon_ID = {
-			67404
+			65949
 		}
 	},
-	[67325] = {
-		id = 67325,
-		name = "大凤技能鱼雷机Lv5",
-		base = 67320,
-		max_hp = 73,
-		hp_growth = 2809,
-		weapon_ID = {
-			67405
-		}
-	},
-	[67326] = {
-		id = 67326,
-		name = "大凤技能鱼雷机Lv6",
-		base = 67320,
-		max_hp = 79,
-		hp_growth = 3050,
-		weapon_ID = {
-			67406
-		}
-	},
-	[67327] = {
-		id = 67327,
-		name = "大凤技能鱼雷机Lv7",
-		base = 67320,
+	[65940] = {
+		id = 65940,
+		name = "天鹰技能Re.2001舰载鱼雷机Lv10",
+		base = 65931,
 		max_hp = 86,
-		hp_growth = 3290,
+		hp_growth = 3301,
 		weapon_ID = {
-			67407
+			65950
 		}
 	},
-	[67328] = {
-		id = 67328,
-		name = "大凤技能鱼雷机Lv8",
-		base = 67320,
-		max_hp = 92,
-		hp_growth = 3531,
+	[66240] = {
+		attack_power = 2,
+		name = "山城改技能Lv0",
+		type = 3,
+		accuracy = 23,
+		model_ID = "ruiyun",
+		ACC_growth = 0,
+		crash_DMG = 120,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 66240,
+		icon = "ruiyun",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 1023,
+		speed = 46,
+		max_hp = 27,
+		scale = 1,
 		weapon_ID = {
-			67408
+			66260
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.26,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
 		}
 	},
-	[67329] = {
-		id = 67329,
-		name = "大凤技能鱼雷机Lv9",
-		base = 67320,
-		max_hp = 98,
-		hp_growth = 3772,
+	[66241] = {
+		id = 66241,
+		name = "山城改技能Lv1",
+		base = 66240,
+		max_hp = 32,
+		hp_growth = 1233,
 		weapon_ID = {
-			67409
+			66261
 		}
 	},
-	[67330] = {
-		id = 67330,
-		name = "大凤技能鱼雷机Lv10",
-		base = 67320,
-		max_hp = 104,
-		hp_growth = 4013,
+	[66242] = {
+		id = 66242,
+		name = "山城改技能Lv2",
+		base = 66240,
+		max_hp = 37,
+		hp_growth = 1443,
 		weapon_ID = {
-			67410
+			66262
+		}
+	},
+	[66243] = {
+		id = 66243,
+		name = "山城改技能Lv3",
+		base = 66240,
+		max_hp = 42,
+		hp_growth = 1653,
+		weapon_ID = {
+			66263
+		}
+	},
+	[66244] = {
+		id = 66244,
+		name = "山城改技能Lv4",
+		base = 66240,
+		max_hp = 47,
+		hp_growth = 1863,
+		weapon_ID = {
+			66264
 		}
 	}
 }

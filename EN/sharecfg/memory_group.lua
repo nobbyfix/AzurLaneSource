@@ -80,7 +80,11 @@ pg.memory_group = {
 			722,
 			725,
 			726,
-			727
+			727,
+			1732,
+			1733,
+			1734,
+			1735
 		}
 	},
 	[99] = {
@@ -1955,6 +1959,44 @@ pg.memory_group = {
 			1713
 		}
 	},
+	[199] = {
+		icon = "title_event",
+		subtype = 2,
+		type = 2,
+		id = 199,
+		title = "Azur Anthem - Side Story",
+		memories = {
+			1746,
+			1747,
+			1748,
+			1749
+		}
+	},
+	[200] = {
+		icon = "title_event",
+		subtype = 2,
+		type = 2,
+		id = 200,
+		title = "Azur Anthem",
+		memories = {
+			1751,
+			1752,
+			1753,
+			1754,
+			1755,
+			1756,
+			1757,
+			1758,
+			1759,
+			1760,
+			1761,
+			1762,
+			1763,
+			1764,
+			1765,
+			1766
+		}
+	},
 	[501] = {
 		icon = "title_chara_mingshi",
 		subtype = 0,
@@ -2944,6 +2986,54 @@ pg.memory_group = {
 			1731
 		}
 	},
+	[564] = {
+		icon = "title_chara_fusang",
+		subtype = 0,
+		type = 3,
+		id = 564,
+		title = "After the Flowers Bloomed",
+		memories = {
+			1736,
+			1737,
+			1738,
+			1739,
+			1740,
+			1741,
+			1742
+		}
+	},
+	[565] = {
+		icon = "title_chara_guinu",
+		subtype = 0,
+		type = 3,
+		id = 565,
+		title = "As Cool As A Demon",
+		memories = {
+			1771,
+			1772,
+			1773,
+			1774,
+			1775,
+			1776,
+			1777
+		}
+	},
+	[566] = {
+		icon = "title_chara_dahuangfeng",
+		subtype = 0,
+		type = 3,
+		id = 566,
+		title = "Duelling Sunshine!",
+		memories = {
+			1781,
+			1782,
+			1783,
+			1784,
+			1785,
+			1786,
+			1787
+		}
+	},
 	all = {
 		1,
 		2,
@@ -3039,6 +3129,8 @@ pg.memory_group = {
 		196,
 		197,
 		198,
+		199,
+		200,
 		501,
 		502,
 		503,
@@ -3099,6 +3191,9 @@ pg.memory_group = {
 		560,
 		561,
 		562,
-		563
+		563,
+		564,
+		565,
+		566
 	}
 }

@@ -1,76 +1,38 @@
 pg = pg or {}
 pg.aircraft_template_185 = {
-	[69206] = {
-		id = 69206,
-		name = "库珀反潜PBY-Lv6",
-		base = 69201,
-		max_hp = 73,
-		hp_growth = 2669,
-		weapon_ID = {
-			53146
-		}
-	},
-	[69207] = {
-		id = 69207,
-		name = "库珀反潜PBY-Lv7",
-		base = 69201,
-		max_hp = 79,
-		hp_growth = 2879,
-		weapon_ID = {
-			53147
-		}
-	},
-	[69208] = {
-		id = 69208,
-		name = "库珀反潜PBY-Lv8",
-		base = 69201,
-		max_hp = 86,
-		hp_growth = 3090,
-		weapon_ID = {
-			53148
-		}
-	},
-	[69209] = {
-		id = 69209,
-		name = "库珀反潜PBY-Lv9",
-		base = 69201,
-		max_hp = 92,
-		hp_growth = 3301,
-		weapon_ID = {
-			53149
-		}
-	},
-	[69210] = {
-		id = 69210,
-		name = "库珀反潜PBY-Lv10",
-		base = 69201,
+	[68310] = {
+		id = 68310,
+		name = "绊爱技能轰炸机Lv10",
+		base = 68301,
 		max_hp = 98,
-		hp_growth = 3511,
+		hp_growth = 4013,
 		weapon_ID = {
-			53150
+			68320,
+			68330
 		}
 	},
-	[69211] = {
+	[68331] = {
 		attack_power = 2,
-		name = "库珀轰炸PBY-Lv1",
+		name = "小赤城技能飞机Lv1",
 		type = 3,
 		accuracy = 23,
-		model_ID = "pby",
+		model_ID = "99shijianbao1",
 		ACC_growth = 0,
-		crash_DMG = 208,
+		crash_DMG = 180,
 		dodge = 1,
 		funnel_behavior = "",
-		nationality = 1,
-		id = 69211,
-		icon = "pby",
+		nationality = 3,
+		id = 68331,
+		icon = "99shijianbao1",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1615,
-		speed = 66,
+		hp_growth = 1692,
+		speed = 48,
 		max_hp = 42,
 		scale = 1,
 		weapon_ID = {
-			69221
+			68341,
+			68351
 		},
 		position_offset = {
 			0,
@@ -113,7 +75,7 @@ pg.aircraft_template_185 = {
 				0
 			},
 			{
-				0.64,
+				0,
 				0,
 				0
 			},
@@ -124,44 +86,92 @@ pg.aircraft_template_185 = {
 			}
 		}
 	},
-	[69212] = {
-		id = 69212,
-		name = "库珀轰炸PBY-Lv2",
-		base = 69211,
+	[68332] = {
+		id = 68332,
+		name = "小赤城技能飞机Lv2",
+		base = 68331,
 		max_hp = 48,
-		hp_growth = 1826,
+		hp_growth = 1913,
 		weapon_ID = {
-			69222
+			68342,
+			68352
 		}
 	},
-	[69213] = {
-		id = 69213,
-		name = "库珀轰炸PBY-Lv3",
-		base = 69211,
+	[68333] = {
+		id = 68333,
+		name = "小赤城技能飞机Lv3",
+		base = 68331,
 		max_hp = 54,
-		hp_growth = 2036,
+		hp_growth = 2133,
 		weapon_ID = {
-			69223
+			68343,
+			68353
 		}
 	},
-	[69214] = {
-		id = 69214,
-		name = "库珀轰炸PBY-Lv4",
-		base = 69211,
+	[68334] = {
+		id = 68334,
+		name = "小赤城技能飞机Lv4",
+		base = 68331,
 		max_hp = 61,
-		hp_growth = 2247,
+		hp_growth = 2354,
 		weapon_ID = {
-			69224
+			68344,
+			68354
 		}
 	},
-	[69215] = {
-		id = 69215,
-		name = "库珀轰炸PBY-Lv5",
-		base = 69211,
+	[68335] = {
+		id = 68335,
+		name = "小赤城技能飞机Lv5",
+		base = 68331,
 		max_hp = 67,
-		hp_growth = 2458,
+		hp_growth = 2575,
 		weapon_ID = {
-			69225
+			68345,
+			68355
+		}
+	},
+	[68336] = {
+		id = 68336,
+		name = "小赤城技能飞机Lv6",
+		base = 68331,
+		max_hp = 73,
+		hp_growth = 2796,
+		weapon_ID = {
+			68346,
+			68356
+		}
+	},
+	[68337] = {
+		id = 68337,
+		name = "小赤城技能飞机Lv7",
+		base = 68331,
+		max_hp = 79,
+		hp_growth = 3016,
+		weapon_ID = {
+			68347,
+			68357
+		}
+	},
+	[68338] = {
+		id = 68338,
+		name = "小赤城技能飞机Lv8",
+		base = 68331,
+		max_hp = 86,
+		hp_growth = 3237,
+		weapon_ID = {
+			68348,
+			68358
+		}
+	},
+	[68339] = {
+		id = 68339,
+		name = "小赤城技能飞机Lv9",
+		base = 68331,
+		max_hp = 92,
+		hp_growth = 3458,
+		weapon_ID = {
+			68349,
+			68359
 		}
 	}
 }

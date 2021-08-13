@@ -565,6 +565,16 @@ pg.player_resource = {
 		name = "TWkaifuPT1",
 		itemid = 59222
 	},
+	[215] = {
+		id = 215,
+		name = "idolMasterPT",
+		itemid = 59230
+	},
+	[216] = {
+		id = 216,
+		name = "skinTicket20",
+		itemid = 59231
+	},
 	[208] = {
 		id = 208,
 		name = "xinrixi_pt2",
@@ -574,6 +584,16 @@ pg.player_resource = {
 		id = 209,
 		name = "skinTicket19",
 		itemid = 59224
+	},
+	[217] = {
+		id = 217,
+		name = "xunliandianshu_v3_2",
+		itemid = 59232
+	},
+	[218] = {
+		id = 218,
+		name = "skinTicket21",
+		itemid = 59233
 	},
 	[950] = {
 		id = 950,
@@ -679,6 +699,16 @@ pg.player_resource = {
 		id = 3000,
 		name = "guild_boss_damage",
 		itemid = 69000
+	},
+	[2008] = {
+		id = 2008,
+		name = "contribution_worldboss708",
+		itemid = 59225
+	},
+	[2009] = {
+		id = 2009,
+		name = "worldboss708_ticket",
+		itemid = 59226
 	},
 	[40275] = {
 		id = 40275,
@@ -1025,11 +1055,23 @@ pg.player_resource = {
 		TWkaifuPT1 = {
 			207
 		},
+		idolMasterPT = {
+			215
+		},
+		skinTicket20 = {
+			216
+		},
 		xinrixi_pt2 = {
 			208
 		},
 		skinTicket19 = {
 			209
+		},
+		xunliandianshu_v3_2 = {
+			217
+		},
+		skinTicket21 = {
+			218
 		},
 		yisegefuke_pt1 = {
 			950
@@ -1093,6 +1135,12 @@ pg.player_resource = {
 		},
 		guild_boss_damage = {
 			3000
+		},
+		contribution_worldboss708 = {
+			2008
+		},
+		worldboss708_ticket = {
+			2009
 		},
 		Twouxiang_pt = {
 			40275
@@ -1212,8 +1260,12 @@ pg.player_resource = {
 		199,
 		206,
 		207,
+		215,
+		216,
 		208,
 		209,
+		217,
+		218,
 		950,
 		951,
 		952,
@@ -1235,6 +1287,8 @@ pg.player_resource = {
 		2006,
 		2007,
 		3000,
+		2008,
+		2009,
 		40275
 	}
 }

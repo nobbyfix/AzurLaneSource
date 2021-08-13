@@ -11,8 +11,13 @@ return {
 				dir = -1,
 				posX = 431
 			},
+			spriteui = {
+				defaultName = "white_dot",
+				path = "/OverlayCamera/Overlay/UIMain/AwardInfoUI(Clone)/items/items",
+				childPath = "bg/icon_bg/icon",
+				pathIndex = "#"
+			},
 			ui = {
-				delay = 1,
 				path = "OverlayCamera/Overlay/UIMain/AwardInfoUI(Clone)",
 				pathIndex = -1,
 				triggerType = {

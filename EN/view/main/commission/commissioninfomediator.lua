@@ -43,7 +43,21 @@ function slot0.register(slot0)
 			callback = function ()
 				uv0.contextData.inFinished = nil
 			end,
-			onConfirm = slot2
+			onConfirm = function ()
+				if uv0 then
+					uv0()
+				end
+
+				if uv1.contextData.oneStepFinishEventCount then
+					uv1.contextData.oneStepFinishEventCount = uv1.contextData.oneStepFinishEventCount - 1
+
+					if uv1.contextData.oneStepFinishEventCount <= 0 then
+						uv1:sendNotification(GAME.TACTICS_META_LEVELMAX_SHOW_BOX)
+					end
+				else
+					uv1:sendNotification(GAME.TACTICS_META_LEVELMAX_SHOW_BOX)
+				end
+			end
 		})
 	end)
 	slot0:bind(uv0.FINISH_CLASS, function (slot0, slot1, slot2, slot3)
@@ -143,10 +157,8 @@ function slot0.handleNotification(slot0, slot1)
 				end
 
 				uv1.viewComponent:emit(BaseUI.ON_ACHIEVE, uv0.awards, function ()
-					uv0:sendNotification(GAME.TACTICS_META_LEVELMAX_SHOW_BOX)
-
-					if uv1.onConfirm then
-						uv1.onConfirm()
+					if uv0.onConfirm then
+						uv0.onConfirm()
 					end
 				end)
 			end)()

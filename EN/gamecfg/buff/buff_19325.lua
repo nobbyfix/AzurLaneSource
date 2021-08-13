@@ -142,7 +142,7 @@ return {
 	desc_get = "",
 	name = "",
 	init_effect = "jinengchufared",
-	time = 10,
+	time = 0,
 	color = "red",
 	picture = "",
 	desc = "",

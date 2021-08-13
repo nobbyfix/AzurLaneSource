@@ -1,45 +1,93 @@
 pg = pg or {}
 pg.equip_data_statistics_389 = {
-	[90749] = {
-		id = 90749,
-		damage = "17 x 4",
-		base = 90740,
+	[90343] = {
+		id = 90343,
+		damage = "59 x 4",
+		base = 90340,
 		weapon_id = {
-			90749
+			90343
 		}
 	},
-	[90750] = {
-		id = 90750,
-		damage = "19 x 4",
-		base = 90740,
+	[90344] = {
+		id = 90344,
+		damage = "65 x 4",
+		base = 90340,
 		weapon_id = {
-			90750
+			90344
 		}
 	},
-	[90751] = {
-		id = 90751,
+	[90345] = {
+		id = 90345,
+		damage = "71 x 4",
+		base = 90340,
+		weapon_id = {
+			90345
+		}
+	},
+	[90346] = {
+		id = 90346,
+		damage = "77 x 4",
+		base = 90340,
+		weapon_id = {
+			90346
+		}
+	},
+	[90347] = {
+		id = 90347,
+		damage = "83 x 4",
+		base = 90340,
+		weapon_id = {
+			90347
+		}
+	},
+	[90348] = {
+		id = 90348,
+		damage = "89 x 4",
+		base = 90340,
+		weapon_id = {
+			90348
+		}
+	},
+	[90349] = {
+		id = 90349,
+		damage = "95 x 4",
+		base = 90340,
+		weapon_id = {
+			90349
+		}
+	},
+	[90350] = {
+		id = 90350,
+		damage = "102 x 4",
+		base = 90340,
+		weapon_id = {
+			90350
+		}
+	},
+	[90351] = {
+		id = 90351,
 		anti_siren = 100,
-		damage = "19 x 4",
-		base = 90740,
+		damage = "102 x 4",
+		base = 90340,
 		weapon_id = {
-			90751
+			90351
 		}
 	},
-	[90780] = {
-		tech = 0,
-		name = "Twin 155mm Mle 1920 Main Gun Mount",
-		speciality = "Lock",
-		type = 2,
+	[90400] = {
+		tech = 1,
+		name = "Quadruple 380mm Mle 1935 Main Gun Mount",
+		speciality = "Volley",
+		type = 4,
 		value_2 = 12,
 		ammo = 3,
-		damage = "10 x 4",
+		damage = "40 x 4",
 		nationality = 8,
 		rarity = 3,
-		id = 90780,
+		id = 90400,
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "50780",
+		descrip = "380mm main guns that were mounted on the Richelieu-class battleships. Can be equipped by BBs and BCs. ",
+		icon = "50400",
 		attribute_2 = "cannon",
 		property_rate = {},
 		ammo_icon = {
@@ -47,198 +95,136 @@ pg.equip_data_statistics_389 = {
 		},
 		ammo_info = {
 			{
-				1,
-				2200
+				2,
+				1550
 			}
 		},
 		equip_info = {
 			1,
 			2,
-			{
-				3,
-				2200
-			},
-			{
-				4,
-				1001
-			},
 			6,
 			10,
 			11,
 			12
 		},
 		weapon_id = {
-			90780
+			90400
 		},
 		skill_id = {},
 		part_main = {
-			2
+			4,
+			5,
+			10,
+			13
 		},
-		part_sub = {
-			5
-		},
+		part_sub = {},
 		equip_parameters = {},
 		label = {
 			"FFNF",
-			"CL",
+			"BB",
 			"MG",
-			"AP"
+			"Richelieu"
 		}
 	},
-	[90781] = {
-		id = 90781,
-		damage = "12 x 4",
-		base = 90780,
+	[90401] = {
+		id = 90401,
+		damage = "46 x 4",
+		base = 90400,
 		weapon_id = {
-			90781
+			90401
 		}
 	},
-	[90782] = {
-		id = 90782,
-		damage = "14 x 4",
-		base = 90780,
+	[90402] = {
+		id = 90402,
+		damage = "52 x 4",
+		base = 90400,
 		weapon_id = {
-			90782
+			90402
 		}
 	},
-	[90783] = {
-		id = 90783,
-		damage = "16 x 4",
-		base = 90780,
+	[90403] = {
+		id = 90403,
+		damage = "58 x 4",
+		base = 90400,
 		weapon_id = {
-			90783
+			90403
 		}
 	},
-	[90784] = {
-		id = 90784,
-		damage = "17 x 4",
-		base = 90780,
+	[90404] = {
+		id = 90404,
+		damage = "64 x 4",
+		base = 90400,
 		weapon_id = {
-			90784
+			90404
 		}
 	},
-	[90785] = {
-		id = 90785,
-		damage = "18 x 4",
-		base = 90780,
+	[90405] = {
+		id = 90405,
+		damage = "70 x 4",
+		base = 90400,
 		weapon_id = {
-			90785
+			90405
 		}
 	},
-	[90786] = {
-		id = 90786,
-		damage = "19 x 4",
-		base = 90780,
+	[90406] = {
+		id = 90406,
+		damage = "76 x 4",
+		base = 90400,
 		weapon_id = {
-			90786
+			90406
 		}
 	},
-	[90787] = {
-		id = 90787,
-		damage = "19 x 4",
-		base = 90780,
-		weapon_id = {
-			90787
-		}
-	},
-	[90800] = {
-		tech = 0,
-		name = "Single 155mm Mle 1920 Secondary Gun Mount",
-		speciality = "Lock",
-		type = 2,
-		value_2 = 12,
-		ammo = 3,
-		damage = "10 x 4",
+	[90420] = {
+		tech = 2,
+		name = "Quadruple 380mm Mle 1935 Main Gun Mount",
+		speciality = "Volley",
+		type = 4,
+		value_2 = 25,
+		ammo = 2,
+		damage = "44 x 4",
 		nationality = 8,
-		rarity = 3,
-		id = 90800,
+		rarity = 4,
+		id = 90420,
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "50800",
+		descrip = "380mm main guns that were mounted on the Richelieu-class battleships. Can be equipped by BBs and BCs. ",
+		icon = "50400",
 		attribute_2 = "cannon",
 		property_rate = {},
 		ammo_icon = {
-			1
+			3
 		},
 		ammo_info = {
 			{
-				1,
-				2201
+				2,
+				1552
 			}
 		},
 		equip_info = {
 			1,
 			2,
-			{
-				3,
-				2200
-			},
-			{
-				4,
-				1025
-			},
 			6,
 			10,
 			11,
 			12
 		},
 		weapon_id = {
-			90800
+			90420
 		},
 		skill_id = {},
 		part_main = {
-			2
+			4,
+			5,
+			10,
+			13
 		},
-		part_sub = {
-			5
-		},
+		part_sub = {},
 		equip_parameters = {},
 		label = {
 			"FFNF",
-			"CL",
+			"BB",
 			"MG",
-			"AP"
-		}
-	},
-	[90801] = {
-		id = 90801,
-		damage = "12 x 4",
-		base = 90800,
-		weapon_id = {
-			90801
-		}
-	},
-	[90802] = {
-		id = 90802,
-		damage = "14 x 4",
-		base = 90800,
-		weapon_id = {
-			90802
-		}
-	},
-	[90803] = {
-		id = 90803,
-		damage = "16 x 4",
-		base = 90800,
-		weapon_id = {
-			90803
-		}
-	},
-	[90804] = {
-		id = 90804,
-		damage = "17 x 4",
-		base = 90800,
-		weapon_id = {
-			90804
-		}
-	},
-	[90805] = {
-		id = 90805,
-		damage = "18 x 4",
-		base = 90800,
-		weapon_id = {
-			90805
+			"HE"
 		}
 	}
 }

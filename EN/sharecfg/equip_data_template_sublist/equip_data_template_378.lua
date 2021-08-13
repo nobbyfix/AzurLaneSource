@@ -1,12 +1,12 @@
 pg = pg or {}
 pg.equip_data_template_378 = {
-	[89086] = {
-		next = 89087,
+	[89006] = {
+		next = 89007,
 		destory_gold = 340,
 		trans_use_gold = 540,
-		base = 89080,
-		id = 89086,
-		prev = 89085,
+		base = 89000,
+		id = 89006,
+		prev = 89005,
 		restore_gold = 1260,
 		level = 7,
 		trans_use_item = {
@@ -40,13 +40,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89087] = {
-		next = 89088,
+	[89007] = {
+		next = 89008,
 		destory_gold = 475,
 		trans_use_gold = 660,
-		base = 89080,
-		id = 89087,
-		prev = 89086,
+		base = 89000,
+		id = 89007,
+		prev = 89006,
 		restore_gold = 1800,
 		level = 8,
 		trans_use_item = {
@@ -84,13 +84,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89088] = {
-		next = 89089,
+	[89008] = {
+		next = 89009,
 		destory_gold = 640,
 		trans_use_gold = 780,
-		base = 89080,
-		id = 89088,
-		prev = 89087,
+		base = 89000,
+		id = 89008,
+		prev = 89007,
 		restore_gold = 2460,
 		level = 9,
 		trans_use_item = {
@@ -128,13 +128,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89089] = {
-		next = 89090,
+	[89009] = {
+		next = 89010,
 		destory_gold = 835,
 		trans_use_gold = 900,
-		base = 89080,
-		id = 89089,
-		prev = 89088,
+		base = 89000,
+		id = 89009,
+		prev = 89008,
 		restore_gold = 3240,
 		level = 10,
 		trans_use_item = {
@@ -172,13 +172,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89090] = {
-		next = 89091,
+	[89010] = {
+		next = 89011,
 		destory_gold = 1060,
 		trans_use_gold = 800,
-		base = 89080,
-		id = 89090,
-		prev = 89089,
+		base = 89000,
+		id = 89010,
+		prev = 89009,
 		restore_gold = 4140,
 		level = 11,
 		trans_use_item = {
@@ -216,13 +216,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89091] = {
-		next = 89092,
+	[89011] = {
+		next = 89012,
 		destory_gold = 1260,
 		trans_use_gold = 1000,
-		base = 89080,
-		id = 89091,
-		prev = 89090,
+		base = 89000,
+		id = 89011,
+		prev = 89010,
 		restore_gold = 4940,
 		level = 12,
 		trans_use_item = {
@@ -268,13 +268,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89092] = {
-		next = 89093,
+	[89012] = {
+		next = 89013,
 		destory_gold = 1510,
 		trans_use_gold = 1200,
-		base = 89080,
-		id = 89092,
-		prev = 89091,
+		base = 89000,
+		id = 89012,
+		prev = 89011,
 		restore_gold = 5940,
 		level = 13,
 		trans_use_item = {
@@ -324,13 +324,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89093] = {
+	[89013] = {
 		next = 0,
 		destory_gold = 1810,
 		trans_use_gold = 0,
-		base = 89080,
-		id = 89093,
-		prev = 89092,
+		base = 89000,
+		id = 89013,
+		prev = 89012,
 		restore_gold = 7140,
 		level = 14,
 		trans_use_item = {},
@@ -375,17 +375,17 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89100] = {
+	[89020] = {
 		destory_gold = 25,
 		trans_use_gold = 30,
-		next = 89101,
+		next = 89021,
 		type = 10,
-		group = 89100,
+		group = 89020,
 		restore_gold = 0,
 		important = 2,
 		prev = 0,
-		id = 89100,
-		equip_limit = 89060,
+		id = 89020,
+		equip_limit = 0,
 		level = 1,
 		ship_type_forbidden = {},
 		trans_use_item = {
@@ -403,13 +403,13 @@ pg.equip_data_template_378 = {
 		restore_item = {},
 		upgrade_formula_id = {}
 	},
-	[89101] = {
-		next = 89102,
+	[89021] = {
+		next = 89022,
 		destory_gold = 33,
 		trans_use_gold = 90,
-		base = 89100,
-		id = 89101,
-		prev = 89100,
+		base = 89020,
+		id = 89021,
+		prev = 89020,
 		restore_gold = 30,
 		level = 2,
 		trans_use_item = {
@@ -435,13 +435,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89102] = {
-		next = 89103,
+	[89022] = {
+		next = 89023,
 		destory_gold = 55,
 		trans_use_gold = 150,
-		base = 89100,
-		id = 89102,
-		prev = 89101,
+		base = 89020,
+		id = 89022,
+		prev = 89021,
 		restore_gold = 120,
 		level = 3,
 		trans_use_item = {
@@ -467,13 +467,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89103] = {
-		next = 89104,
+	[89023] = {
+		next = 89024,
 		destory_gold = 93,
 		trans_use_gold = 240,
-		base = 89100,
-		id = 89103,
-		prev = 89102,
+		base = 89020,
+		id = 89023,
+		prev = 89022,
 		restore_gold = 270,
 		level = 4,
 		trans_use_item = {
@@ -499,13 +499,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89104] = {
-		next = 89105,
+	[89024] = {
+		next = 89025,
 		destory_gold = 153,
 		trans_use_gold = 330,
-		base = 89100,
-		id = 89104,
-		prev = 89103,
+		base = 89020,
+		id = 89024,
+		prev = 89023,
 		restore_gold = 510,
 		level = 5,
 		trans_use_item = {
@@ -539,13 +539,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89105] = {
-		next = 89106,
+	[89025] = {
+		next = 89026,
 		destory_gold = 235,
 		trans_use_gold = 420,
-		base = 89100,
-		id = 89105,
-		prev = 89104,
+		base = 89020,
+		id = 89025,
+		prev = 89024,
 		restore_gold = 840,
 		level = 6,
 		trans_use_item = {
@@ -579,13 +579,13 @@ pg.equip_data_template_378 = {
 			}
 		}
 	},
-	[89106] = {
-		next = 89107,
+	[89026] = {
+		next = 89027,
 		destory_gold = 340,
 		trans_use_gold = 540,
-		base = 89100,
-		id = 89106,
-		prev = 89105,
+		base = 89020,
+		id = 89026,
+		prev = 89025,
 		restore_gold = 1260,
 		level = 7,
 		trans_use_item = {

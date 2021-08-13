@@ -1,81 +1,36 @@
 pg = pg or {}
 pg.aircraft_template_192 = {
-	[69716] = {
-		id = 69716,
-		name = "英仙座技能萤火虫Lv6",
-		base = 69711,
-		max_hp = 83,
-		hp_growth = 3210,
+	[68810] = {
+		id = 68810,
+		name = "赤城μ技能舰攻Lv10",
+		base = 68801,
+		max_hp = 98,
+		hp_growth = 3678,
 		weapon_ID = {
-			50666,
-			52746
+			68820
 		}
 	},
-	[69717] = {
-		id = 69717,
-		name = "英仙座技能萤火虫Lv7",
-		base = 69711,
-		max_hp = 90,
-		hp_growth = 3464,
-		weapon_ID = {
-			50667,
-			52747
-		}
-	},
-	[69718] = {
-		id = 69718,
-		name = "英仙座技能萤火虫Lv8",
-		base = 69711,
-		max_hp = 97,
-		hp_growth = 3717,
-		weapon_ID = {
-			50668,
-			52748
-		}
-	},
-	[69719] = {
-		id = 69719,
-		name = "英仙座技能萤火虫Lv9",
-		base = 69711,
-		max_hp = 103,
-		hp_growth = 3971,
-		weapon_ID = {
-			50669,
-			52749
-		}
-	},
-	[69720] = {
-		id = 69720,
-		name = "英仙座技能萤火虫Lv10",
-		base = 69711,
-		max_hp = 110,
-		hp_growth = 4224,
-		weapon_ID = {
-			50670,
-			52750
-		}
-	},
-	[69751] = {
+	[68861] = {
 		attack_power = 2,
-		name = "鹰技能剑鱼 Lv1",
+		name = "大神澪技能鱼雷机Lv1",
 		type = 3,
 		accuracy = 23,
-		model_ID = "jianyu",
+		model_ID = "feiji_vtuber2",
 		ACC_growth = 0,
-		crash_DMG = 102,
+		crash_DMG = 208,
 		dodge = 1,
 		funnel_behavior = "",
-		nationality = 0,
-		id = 69751,
-		icon = "jianyu",
+		nationality = 3,
+		id = 68861,
+		icon = "feiji_vtuber2",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1538,
-		speed = 45,
-		max_hp = 40,
+		hp_growth = 1692,
+		speed = 48,
+		max_hp = 42,
 		scale = 1,
 		weapon_ID = {
-			69771
+			68871
 		},
 		position_offset = {
 			0,
@@ -95,13 +50,13 @@ pg.aircraft_template_192 = {
 		bound_bone = {
 			weapon = {
 				{
-					1.03,
-					-1.43,
+					0.68,
+					-0.667,
 					0
 				},
 				{
-					1.01,
-					1.43,
+					0.97,
+					0.584,
 					0
 				}
 			}
@@ -118,7 +73,7 @@ pg.aircraft_template_192 = {
 				0
 			},
 			{
-				0.52,
+				0.54,
 				0,
 				0
 			},
@@ -129,44 +84,84 @@ pg.aircraft_template_192 = {
 			}
 		}
 	},
-	[69752] = {
-		id = 69752,
-		name = "鹰技能剑鱼 Lv2",
-		base = 69751,
-		max_hp = 45,
-		hp_growth = 1739,
+	[68862] = {
+		id = 68862,
+		name = "大神澪技能鱼雷机Lv2",
+		base = 68861,
+		max_hp = 48,
+		hp_growth = 1913,
 		weapon_ID = {
-			69772
+			68872
 		}
 	},
-	[69753] = {
-		id = 69753,
-		name = "鹰技能剑鱼 Lv3",
-		base = 69751,
-		max_hp = 50,
-		hp_growth = 1940,
+	[68863] = {
+		id = 68863,
+		name = "大神澪技能鱼雷机Lv3",
+		base = 68861,
+		max_hp = 54,
+		hp_growth = 2133,
 		weapon_ID = {
-			69773
+			68873
 		}
 	},
-	[69754] = {
-		id = 69754,
-		name = "鹰技能剑鱼 Lv4",
-		base = 69751,
-		max_hp = 56,
-		hp_growth = 2140,
-		weapon_ID = {
-			69774
-		}
-	},
-	[69755] = {
-		id = 69755,
-		name = "鹰技能剑鱼 Lv5",
-		base = 69751,
+	[68864] = {
+		id = 68864,
+		name = "大神澪技能鱼雷机Lv4",
+		base = 68861,
 		max_hp = 61,
-		hp_growth = 2341,
+		hp_growth = 2354,
 		weapon_ID = {
-			69775
+			68874
+		}
+	},
+	[68865] = {
+		id = 68865,
+		name = "大神澪技能鱼雷机Lv5",
+		base = 68861,
+		max_hp = 67,
+		hp_growth = 2575,
+		weapon_ID = {
+			68875
+		}
+	},
+	[68866] = {
+		id = 68866,
+		name = "大神澪技能鱼雷机Lv6",
+		base = 68861,
+		max_hp = 73,
+		hp_growth = 2796,
+		weapon_ID = {
+			68876
+		}
+	},
+	[68867] = {
+		id = 68867,
+		name = "大神澪技能鱼雷机Lv7",
+		base = 68861,
+		max_hp = 79,
+		hp_growth = 3016,
+		weapon_ID = {
+			68877
+		}
+	},
+	[68868] = {
+		id = 68868,
+		name = "大神澪技能鱼雷机Lv8",
+		base = 68861,
+		max_hp = 86,
+		hp_growth = 3237,
+		weapon_ID = {
+			68878
+		}
+	},
+	[68869] = {
+		id = 68869,
+		name = "大神澪技能鱼雷机Lv9",
+		base = 68861,
+		max_hp = 92,
+		hp_growth = 3458,
+		weapon_ID = {
+			68879
 		}
 	}
 }

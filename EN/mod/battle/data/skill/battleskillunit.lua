@@ -93,3 +93,25 @@ function slot3.Clear(slot0)
 		slot5:Clear()
 	end
 end
+
+function slot3.GetDamageSum(slot0)
+	for slot5, slot6 in ipairs(slot0._effectList) do
+		slot1 = slot6:GetDamageSum() + 0
+	end
+
+	return slot1
+end
+
+function slot3.IsFireSkill(slot0, slot1)
+	slot2 = false
+
+	for slot7, slot8 in ipairs(uv0.Battle.BattleDataFunction.GetSkillTemplate(slot0, slot1).effect_list) do
+		if slot8.type == uv0.Battle.BattleSkillFire.__name or slot8.type == uv0.Battle.BattleSkillFireSupport.__name then
+			slot2 = true
+
+			break
+		end
+	end
+
+	return slot2
+end

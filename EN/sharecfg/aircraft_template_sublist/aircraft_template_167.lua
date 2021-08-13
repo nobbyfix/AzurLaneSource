@@ -1,59 +1,46 @@
 pg = pg or {}
 pg.aircraft_template_167 = {
-	[67898] = {
-		id = 67898,
-		name = "追赶者剑鱼 Lv8",
-		base = 67891,
-		max_hp = 77,
-		hp_growth = 2943,
-		weapon_ID = {
-			67908,
-			67918
-		}
-	},
-	[67899] = {
-		id = 67899,
-		name = "追赶者剑鱼 Lv9",
-		base = 67891,
+	[67149] = {
+		id = 67149,
+		name = "半人马技能鱼雷机Lv9",
+		base = 67140,
 		max_hp = 82,
 		hp_growth = 3143,
 		weapon_ID = {
-			67909,
-			67919
+			67189
 		}
 	},
-	[67900] = {
-		id = 67900,
-		name = "追赶者剑鱼 Lv10",
-		base = 67891,
+	[67150] = {
+		id = 67150,
+		name = "半人马技能鱼雷机Lv10",
+		base = 67140,
 		max_hp = 87,
 		hp_growth = 3344,
 		weapon_ID = {
-			67910,
-			67920
+			67190
 		}
 	},
-	[67921] = {
+	[67160] = {
 		attack_power = 2,
-		name = "独立技能鱼雷机Lv1",
+		name = "半人马技能鱼雷机Lv0",
 		type = 2,
 		accuracy = 23,
-		model_ID = "tbf",
+		model_ID = "jianyu",
 		ACC_growth = 0,
-		crash_DMG = 406,
+		crash_DMG = 306,
 		dodge = 1,
 		funnel_behavior = "",
-		nationality = 1,
-		id = 67921,
-		icon = "tbf",
+		nationality = 2,
+		id = 67160,
+		icon = "jianyu",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1615,
-		speed = 48,
-		max_hp = 42,
+		hp_growth = 1338,
+		speed = 45,
+		max_hp = 35,
 		scale = 1,
 		weapon_ID = {
-			67941
+			67200
 		},
 		position_offset = {
 			0,
@@ -107,64 +94,74 @@ pg.aircraft_template_167 = {
 			}
 		}
 	},
-	[67922] = {
-		id = 67922,
-		name = "独立技能鱼雷机Lv2",
-		base = 67921,
-		max_hp = 47,
-		hp_growth = 1826,
+	[67161] = {
+		id = 67161,
+		name = "半人马技能鱼雷机Lv1",
+		base = 67160,
+		max_hp = 40,
+		hp_growth = 1538,
 		weapon_ID = {
-			67942
+			67201
 		}
 	},
-	[67923] = {
-		id = 67923,
-		name = "独立技能鱼雷机Lv3",
-		base = 67921,
-		max_hp = 53,
-		hp_growth = 2036,
+	[67162] = {
+		id = 67162,
+		name = "半人马技能鱼雷机Lv2",
+		base = 67160,
+		max_hp = 45,
+		hp_growth = 1739,
 		weapon_ID = {
-			67943
+			67202
 		}
 	},
-	[67924] = {
-		id = 67924,
-		name = "独立技能鱼雷机Lv4",
-		base = 67921,
-		max_hp = 58,
-		hp_growth = 2247,
+	[67163] = {
+		id = 67163,
+		name = "半人马技能鱼雷机Lv3",
+		base = 67160,
+		max_hp = 50,
+		hp_growth = 1940,
 		weapon_ID = {
-			67944
+			67203
 		}
 	},
-	[67925] = {
-		id = 67925,
-		name = "独立技能鱼雷机Lv5",
-		base = 67921,
-		max_hp = 64,
-		hp_growth = 2458,
+	[67164] = {
+		id = 67164,
+		name = "半人马技能鱼雷机Lv4",
+		base = 67160,
+		max_hp = 56,
+		hp_growth = 2140,
 		weapon_ID = {
-			67945
+			67204
 		}
 	},
-	[67926] = {
-		id = 67926,
-		name = "独立技能鱼雷机Lv6",
-		base = 67921,
-		max_hp = 69,
-		hp_growth = 2669,
+	[67165] = {
+		id = 67165,
+		name = "半人马技能鱼雷机Lv5",
+		base = 67160,
+		max_hp = 61,
+		hp_growth = 2341,
 		weapon_ID = {
-			67946
+			67205
 		}
 	},
-	[67927] = {
-		id = 67927,
-		name = "独立技能鱼雷机Lv7",
-		base = 67921,
-		max_hp = 75,
-		hp_growth = 2879,
+	[67166] = {
+		id = 67166,
+		name = "半人马技能鱼雷机Lv6",
+		base = 67160,
+		max_hp = 66,
+		hp_growth = 2541,
 		weapon_ID = {
-			67947
+			67206
+		}
+	},
+	[67167] = {
+		id = 67167,
+		name = "半人马技能鱼雷机Lv7",
+		base = 67160,
+		max_hp = 71,
+		hp_growth = 2742,
+		weapon_ID = {
+			67207
 		}
 	}
 }

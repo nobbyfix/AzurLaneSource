@@ -17,7 +17,7 @@ return {
 			},
 			arg_list = {
 				attr = "antiAirPower",
-				number = 0.05
+				number = 500
 			}
 		}
 	}

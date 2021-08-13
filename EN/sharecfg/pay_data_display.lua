@@ -948,6 +948,106 @@ pg.pay_data_display = {
 		},
 		ignorePlatform = {}
 	},
+	[31] = {
+		descrip = "Contains 1980 x Gems, 35x Universal T4 Plate, 1x Gear Lab Development Pack, and other rewards ",
+		name = "New Commanders Support Pack IV ",
+		descrip_extra = "The pack includes lots of material rewards. The Startup Pack will be sent to you via in-game mail, please check your mailbox to claim the pack. ",
+		type = 1,
+		extra_gem = 0,
+		id = 31,
+		subject = "New Commanders Support Pack IV ",
+		money = 2999,
+		tag = 2,
+		gem = 0,
+		limit_type = 2,
+		time = "always",
+		picture = "support4",
+		id_str = "com.yostaren.azurlane.diamond148",
+		first_pay_double = 0,
+		extra_service = 3,
+		limit_arg = 1,
+		airijp_id = "com.yostaren.azurlane.diamond148",
+		extra_service_item = {
+			{
+				1,
+				14,
+				1980
+			},
+			{
+				2,
+				30121,
+				10
+			},
+			{
+				2,
+				30114,
+				35
+			},
+			{
+				2,
+				30113,
+				100
+			},
+			{
+				2,
+				14004,
+				25
+			},
+			{
+				2,
+				30203,
+				1
+			},
+			{
+				2,
+				42036,
+				5
+			},
+			{
+				2,
+				16003,
+				10
+			},
+			{
+				2,
+				16013,
+				5
+			},
+			{
+				2,
+				16023,
+				5
+			},
+			{
+				2,
+				15008,
+				500
+			},
+			{
+				4,
+				100011,
+				1
+			}
+		},
+		display = {
+			{
+				1,
+				14,
+				1980
+			},
+			{
+				2,
+				30114,
+				35
+			},
+			{
+				2,
+				30121,
+				10
+			}
+		},
+		ignorePlatform = {}
+	},
 	[100] = {
 		descrip = "Contains 1 x Nep Ship skin, 3 x Nep Gear skins, and other rewards.",
 		name = "Nep's Lucky Bag ",
@@ -4149,6 +4249,7 @@ pg.pay_data_display = {
 		28,
 		29,
 		30,
+		31,
 		100,
 		101,
 		102,

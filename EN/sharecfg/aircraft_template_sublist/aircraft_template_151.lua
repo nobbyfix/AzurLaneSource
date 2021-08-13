@@ -1,46 +1,77 @@
 pg = pg or {}
 pg.aircraft_template_151 = {
-	[66589] = {
-		id = 66589,
-		name = "宝石枪雨LV9",
-		base = 66580,
-		max_hp = 107,
-		hp_growth = 4139,
+	[65256] = {
+		id = 65256,
+		name = "坠星机LV6",
+		base = 65251,
+		max_hp = 63,
+		hp_growth = 2426,
 		weapon_ID = {
-			66629
+			65266
 		}
 	},
-	[66590] = {
-		id = 66590,
-		name = "宝石枪雨LV10",
-		base = 66580,
-		max_hp = 115,
-		hp_growth = 4435,
+	[65257] = {
+		id = 65257,
+		name = "坠星机LV7",
+		base = 65251,
+		max_hp = 68,
+		hp_growth = 2634,
 		weapon_ID = {
-			66630
+			65267
 		}
 	},
-	[66820] = {
+	[65258] = {
+		id = 65258,
+		name = "坠星机LV8",
+		base = 65251,
+		max_hp = 74,
+		hp_growth = 2842,
+		weapon_ID = {
+			65268
+		}
+	},
+	[65259] = {
+		id = 65259,
+		name = "坠星机LV9",
+		base = 65251,
+		max_hp = 79,
+		hp_growth = 3050,
+		weapon_ID = {
+			65269
+		}
+	},
+	[65260] = {
+		id = 65260,
+		name = "坠星机LV10",
+		base = 65251,
+		max_hp = 85,
+		hp_growth = 3258,
+		weapon_ID = {
+			65270
+		}
+	},
+	[65381] = {
 		attack_power = 2,
-		name = "飞鹰隼鹰技能Lv0",
-		type = 2,
+		name = "女天狗沙排啾轰炸机Lv1",
+		type = 3,
 		accuracy = 23,
-		model_ID = "97jiangong",
+		model_ID = "feiji_doa",
 		ACC_growth = 0,
-		crash_DMG = 148,
+		crash_DMG = 208,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 3,
-		id = 66820,
-		icon = "97jiangong",
+		id = 65381,
+		icon = "feiji_doa",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 924,
+		hp_growth = 1846,
 		speed = 48,
-		max_hp = 24,
+		max_hp = 42,
 		scale = 1,
 		weapon_ID = {
-			66840
+			65391,
+			65401
 		},
 		position_offset = {
 			0,
@@ -60,13 +91,13 @@ pg.aircraft_template_151 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -83,7 +114,7 @@ pg.aircraft_template_151 = {
 				0
 			},
 			{
-				0.54,
+				0.64,
 				0,
 				0
 			},
@@ -94,74 +125,48 @@ pg.aircraft_template_151 = {
 			}
 		}
 	},
-	[66821] = {
-		id = 66821,
-		name = "飞鹰隼鹰技能Lv1",
-		base = 66820,
-		max_hp = 27,
-		hp_growth = 1051,
+	[65382] = {
+		id = 65382,
+		name = "女天狗沙排啾轰炸机Lv2",
+		base = 65381,
+		max_hp = 48,
+		hp_growth = 2087,
 		weapon_ID = {
-			66841
+			65392,
+			65402
 		}
 	},
-	[66822] = {
-		id = 66822,
-		name = "飞鹰隼鹰技能Lv2",
-		base = 66820,
-		max_hp = 30,
-		hp_growth = 1178,
+	[65383] = {
+		id = 65383,
+		name = "女天狗沙排啾轰炸机Lv3",
+		base = 65381,
+		max_hp = 54,
+		hp_growth = 2327,
 		weapon_ID = {
-			66842
+			65393,
+			65403
 		}
 	},
-	[66823] = {
-		id = 66823,
-		name = "飞鹰隼鹰技能Lv3",
-		base = 66820,
-		max_hp = 33,
-		hp_growth = 1305,
+	[65384] = {
+		id = 65384,
+		name = "女天狗沙排啾轰炸机Lv4",
+		base = 65381,
+		max_hp = 61,
+		hp_growth = 2568,
 		weapon_ID = {
-			66843
+			65394,
+			65404
 		}
 	},
-	[66824] = {
-		id = 66824,
-		name = "飞鹰隼鹰技能Lv4",
-		base = 66820,
-		max_hp = 37,
-		hp_growth = 1432,
+	[65385] = {
+		id = 65385,
+		name = "女天狗沙排啾轰炸机Lv5",
+		base = 65381,
+		max_hp = 67,
+		hp_growth = 2809,
 		weapon_ID = {
-			66844
-		}
-	},
-	[66825] = {
-		id = 66825,
-		name = "飞鹰隼鹰技能Lv5",
-		base = 66820,
-		max_hp = 40,
-		hp_growth = 1559,
-		weapon_ID = {
-			66845
-		}
-	},
-	[66826] = {
-		id = 66826,
-		name = "飞鹰隼鹰技能Lv6",
-		base = 66820,
-		max_hp = 43,
-		hp_growth = 1686,
-		weapon_ID = {
-			66846
-		}
-	},
-	[66827] = {
-		id = 66827,
-		name = "飞鹰隼鹰技能Lv7",
-		base = 66820,
-		max_hp = 47,
-		hp_growth = 1813,
-		weapon_ID = {
-			66847
+			65395,
+			65405
 		}
 	}
 }

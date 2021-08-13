@@ -2627,7 +2627,7 @@ Page 7: An Shan-class destroyer – An Shan]]
 				info = "About Maritime Escort:"
 			},
 			{
-				info = "1.  This game mode will be available from May 6th to May 19th"
+				info = "1.  This game mode will be available from Aug 12th to Aug 18th"
 			},
 			{
 				info = "2. In this game mode, you'll play on a map where your goal is to neutralize the sea mines and enemy fleets in your way and escort the Transport Ship to its destination."
@@ -3894,6 +3894,9 @@ Are you sure you want to cancel the item retrieval?
 	word_shipNation_doa = {
 		tip = "Venus Vacation "
 	},
+	word_shipNation_imas = {
+		tip = "The Idolmaster "
+	},
 	word_shipNation_link = {
 		tip = "Collab "
 	},
@@ -4070,6 +4073,24 @@ We share our smile, our words unspoken.
 Our love will be one of respect, trust, and confidence forever.
 From this day forth, our fates are bound together.
 Promise date: $1]]
+	},
+	intimacy_desc_ring = {
+		tip = "1 Promise Ring"
+	},
+	intimacy_desc_tiara = {
+		tip = "1 Unity Tiara"
+	},
+	intimacy_desc_day = {
+		tip = ""
+	},
+	word_propose_cost_tip1 = {
+		tip = "Would you like to use <color=#92fc63>1</color> Unity Tiara? (Held: <color=#92fc63>$1</color>)\nAfter using this item, your ship's Affinity stat bonus will be increased by <color=#92fc63>3%</color>.\n*You will not be able to change this character's name. "
+	},
+	word_propose_cost_tip2 = {
+		tip = "Are you sure you want to convert <color=#92fc63>1</color> Promise Ring into <color=#92fc63>1</color> Unity Tiara?\nYou cannot convert the Unity Tiara back into a Promise Ring.\n*You will not be able to change this character's name. "
+	},
+	word_propose_tiara_tip = {
+		tip = "A tiara that symbolizes the deep bond you share with your friends."
 	},
 	charge_title_getitem = {
 		tip = "May receive the following items: "
@@ -6131,10 +6152,10 @@ She'll also receive a <color=#a0ff40>3%</color> stats bonus</size>.]]
 		tip = "J Talisman total: "
 	},
 	pt_count = {
-		tip = "Target $1 :"
+		tip = "Target $1:"
 	},
 	pt_total_count = {
-		tip = "In possession $1 :"
+		tip = "In possession $1"
 	},
 	remould_ship_ok = {
 		tip = "Improved!"
@@ -6290,10 +6311,22 @@ She'll also receive a <color=#a0ff40>3%</color> stats bonus</size>.]]
 		tip = "Toggle in-combat CV detection line "
 	},
 	words_autoFight_battery_savemode = {
-		tip = "Auto Search Energy Saver"
+		tip = "Auto-Search Battery Saver"
+	},
+	words_autoFight_battery_savemode_des = {
+		tip = "When toggled on, reduces screen brightness 20 seconds after starting Auto-Search."
 	},
 	words_autoFIght_down_frame = {
-		tip = "Auto Search FPS Dec."
+		tip = "Auto-Search FPS Reduction"
+	},
+	words_autoFIght_down_frame_des = {
+		tip = "When toggled on, reduces game FPS when battery saver mode is active."
+	},
+	words_autoFight_tips = {
+		tip = "Requires \"Auto-Search Battery Saver\" to be ON."
+	},
+	words_autoFight_right = {
+		tip = "You may need modify permissions in your device's system settings to enable Battery Saver."
 	},
 	activity_puzzle_get1 = {
 		tip = "<color=#A9F548FF>How to get: \nmission 7</color>"
@@ -6495,6 +6528,9 @@ There are no Lectures on Sundays, but you will earn double the amount of Profici
 	destroy_high_intensify_tip = {
 		tip = "<color=#92fc63>$1 enhanced</color>"
 	},
+	destroy_inHardFormation_tip = {
+		tip = "<color=#92fc63>In Hard Mode</color>"
+	},
 	ship_quick_change_noequip = {
 		tip = "Unable to find usable gear."
 	},
@@ -6612,6 +6648,9 @@ There are no Lectures on Sundays, but you will earn double the amount of Profici
 	word_status_world = {
 		tip = "Operation Siren "
 	},
+	word_status_inHardFormation = {
+		tip = "In Hard Mode"
+	},
 	challenge_rule = {
 		tip = "gametips:challenge_rule"
 	},
@@ -6676,7 +6715,7 @@ There are no Lectures on Sundays, but you will earn double the amount of Profici
 		tip = "The rewards from this phase have not been fully acquired yet, cannot enter next phase"
 	},
 	shop_street_activity_tip = {
-		tip = "※<color=#A1E400FF>Gear Skins</color> are purchasable during(<color=#A1E400FF>5.27-6.16</COLOR>)!"
+		tip = "※<color=#A1E400FF>Gear Skins</color> are purchasable during(<color=#A1E400FF>8.12-9.1</COLOR>)!"
 	},
 	twitter_link_title = {
 		tip = "Twitter Account:$1"
@@ -6917,27 +6956,32 @@ $3]]
 		tip = {
 			{
 				info = [[
-Starting Research
-1. When you select a Research Project from the list and tap the "Start Researching" button, you will begin research on the project.
-2. Certain Research Projects require you to spend some resources to initiate them.
-3. You cannot research more than a single project at a time.
+- Update - (July 8th, 2021)
+The Research Academy has received an update with the addition of series 4 PRs/DRs.
 
-Completing Research
-1. It takes time for Research Projects to complete.
-2. Some Research Projects have additional conditions that need to be fulfilled.
-3. Progress towards these conditions will only count once you've initiated the research.
-4. You can still complete these additional requirements even after the Research Project's required time has elapsed.
-5. When you complete a Research Project, you will receive rewards from it, and the Research Project list will update.
+1. New series 4 research projects have been added.
 
-Stopping Research
-1. By tapping the "Stop Researching" button, you can suspend a Research Project that's in progress.
-2. Suspending the Research Project will not refund any resources you may have spent to start it.
-3. Furthermore, suspending the Research Project will reset the time and resource requirements to start it again.
+2. If you possess enough Blueprints to fully Enhance (including Fate Simulation) a PR/DR, you will no longer get Catch-Up research projects specific to that ship.
+For example, if you only have Monarch fully Fate Simulated (or have enough Blueprints to do so) among all PR1 ships and set your Research Focus to PR1 ships, you will receive projects for all PR1 ships except Monarch.
 
-Updating the Research Project list
-1. After server reset (midnight at server's local time,) you can tap the "Update List" button to receive a new list of Research Projects.
-2. You can only update the Research Project list once a day.
-3. You can not update the list if a Research Project is underway.]]
+If you have Research Focus set to a specific PR/DR series and you've fully Enhanced all ships from that series (or have enough Blueprints to do so), you will get research projects for all ships from that series.
+Conversely, if you have Research Focus disabled, you will only receive research projects for ships that you've not fully Enhanced (or have enough Blueprints to do so for).
+
+Otherwise, the amount of Blueprints you possess for a given ship does not affect your probability of getting research projects for her.
+
+
+- Update -
+The Research Academy has received an update with the addition of series 3 PRs/DRs.
+
+1. New series 3 research projects have been added.
+Series 3 research projects are marked with the roman numeral "III" in the top right corner of the project.
+
+2. The Research Focus menu has been completely revamped.
+Now when you wish to focus on a particular PR/DR series, you can choose between series 1, 2, and 3.
+Focusing on a series will increase the likelihood you'll get research projects from the corresponding series, with at least 3 of them guaranteed to be from the chosen series.
+
+Additionally, with the new Catch-Up feature, you can prioritize a ship of a given PR/DR series and receive additional Blueprints for her.
+Setting an active Catch-Up ship is done through the Research Focus menu.]]
 			}
 		}
 	},
@@ -6966,6 +7010,9 @@ Updating the Research Project list
 		tip = "Coming Soon"
 	},
 	ship_profile_voice_locked_propose = {
+		tip = "Coming Soon"
+	},
+	ship_profile_voice_locked_propose_imas = {
 		tip = "Coming Soon"
 	},
 	ship_profile_voice_locked_design = {
@@ -7064,38 +7111,54 @@ Updating the Research Project list
 		tip = {
 			{
 				info = [[
-Starting Development
+1. Starting Development:
+You can begin development on a PR/DR ship once you meet her development requirements, which are shown at the center of the Shipyard screen when a ship has been selected.
+To start developing a ship, select one and tap the Commence button. You can only develop 1 PR/DR ship at a time.
 
-1. You can develop a Priority ship by completing their development requirements.
-2. The Priority ship's development requirements are shown on the right side of the screen.
-3. You can begin development on a ship by choosing one from the Shipyard screen, then tapping the Begin Development button.
-4. You can not develop several ships at once.
+2. Development Tasks:
+The ship you've chosen to develop will unlock after you complete all her development tasks.
+After starting development, you will immediately gain access to the first task, and each subsequent task will unlock in order at 24-hour intervals.
+Some tasks may have prerequisites before you can begin making progress.
 
-Development Missions
-1. When you complete all of the development missions for your chosen ship, you will receive the ship.
-2. While a ship is being developed, new development missions for her will unlock every 24 hours.
-3. By completing these missions, the ship's development will progress.
-4. The first development mission will be unlocked as soon as you begin developing the ship.
-5. A few development missions require you to complete previous ones before you can continue.
+3. Changing Your Development Target:
+While you cannot develop 2 ships at once, you can switch which one you're developing before you complete all tasks.
+Any progress you've made on your current development tasks, as well as the unlocked tasks themselves, will be saved if you choose to switch development targets.
+Once you do this, you must wait 24 hours before you can change targets again.
 
-Changing The Ship in Development
-1. While developing a ship, you can choose to start developing another instead.
-2. When you change which ship you are developing, your progress on the ship you had been working on will be saved.
-3. Once you start or resume development, you can not change which ship to develop for 24 hours.
+4. Completing Development:
+Upon completing all development tasks for a ship, she will join your dock and you unlock the ability to Enhance her.
+To begin development on a new PR/DR ship, you must go to the Development Dock and select one. New development targets are not chosen automatically.
 
-Completing Development
-1. When you complete all of the development missions for your chosen ship, you will receive the ship and unlock the ability to enhance it.
-2. Once you've finished development, you must manually choose a new ship to develop.
+5. Enhancing PR/DR Ships:
+In contrast to ordinary ships, PR/DR ships require Blueprints to be Enhanced. Blueprints are mainly acquired through conducting research at the Research Academy.
+Enhancing a PR/DR ship will raise her stats, unlock new skills, and give her new abilities, similar to ordinary ships.
 
-Enhancing Priority Ships
-1. Once you acquire a Priority ship, you unlock the ability to enhance it.
-2. To enhance a Priority ship, you need to spend PR Blueprints on it.
-3. You can acquire PR Blueprints by conducting research in the Tech Academy.
-4. By enhancing your Priority ship, you can increase their stats.
-5. At regular Dev. Level intervals, they will also acquire even more stats and abilities.
+6. Enhancing with Coins:
+Some PR/DR ships can also be Enhanced and undergo Fate Simulation with Coins as a substitute for Blueprints. 
+The Coin cost depends on how many times you've used this method of Enhancement previously in a day. The first 15 times each day are discounted.
+The following table lists the Coin cost per number of Blueprints substituted:
+1 to 2: Free
+3 to 4: 90% discount
+5 to 7: 80% discount
+8 to 9: 60% discount
+10 to 15: 30% discount
+16 and onward: 0% discount; Blueprint costs 1,500 Coins each.
+The game will automatically calculate the Coin cost for you when using this method of Enhancement. The Coin cost resets daily at 4:00 AM.
 
-About Level Caps for Priority Ships:
-You do not need to Limit Break a Priority ship to get them to Level 100, but in order to increase their Level Cap, you must induce a Cognitive Awakening in them by spending Cognitive Chips and Coins.]]
+7. PR/DR Ship Level Caps:
+PR/DR ships do not need to be Limit Broken to be able to reach level 100. However, past that, you must still use Cognitive Chips and Coins to further increase their level caps. 
+
+8. Fate Simulation:
+Once a PR/DR ship reaches Development Level 30, she can undergo Fate Simulation, etching a historical record of sorts into her hull to be more akin to regular ships.
+In gameplay terms, Fate Simulation will allow you to use additional Blueprints to further enhance the capabilities of your PR/DR ship.
+Fate Simulation is done in 5 steps. The first 4 steps grant a boost to the ship's Luck stat, and the final 5th step grants an upgrade to one of her skills.
+You can also use Coins in place of Blueprints. Please refer to section 6 above for more details.
+
+9. Battle Simulations:
+You can preview the performance of certain PR/DRs through the Battle Simulation mode.
+To access it, simply select a ship and tap the Battle Simulation button. You will then be sent into a special battle with the ship you selected.
+
+Please note that the ships' stats and loadouts are preset in this mode, and may not accurately reflect their real performance.]]
 			}
 		}
 	},
@@ -7655,7 +7718,7 @@ Combat Encounters
 		tip = "You cannot buy any more than this."
 	},
 	commander_build_pool_tip = {
-		tip = "即将消耗$2个$1开始指挥喵训练，是否继续？ "
+		tip = "Do you wish to use $2 $1(s) to train this Meowfficer? "
 	},
 	commander_select_matiral_erro = {
 		tip = "<size=22>This Meowfficer is at the max level; you can only Enhance its Skill with Meowfficers of the same type.</size>"
@@ -7676,13 +7739,13 @@ Combat Encounters
 		tip = "This Meowfficer does not have any Talent Points."
 	},
 	buildship_new_tip = {
-		tip = "Rate UP for Ryuuhou, Suruga, Kazagumo, and more!"
+		tip = "Rate UP for Haruka Amami, Chihaya Kisaragi, Iori Minase, and more!"
 	},
 	buildship_heavy_tip = {
 		tip = "Nagato and Suzuya are added to standard build pool! "
 	},
 	buildship_light_tip = {
-		tip = "Kawakaze, Yoizuki and others are added to standard build pool! "
+		tip = "{namecode:147} is added to standard build pool! "
 	},
 	buildship_special_tip = {
 		tip = "I-13 is added to standard build pool! "
@@ -7757,7 +7820,13 @@ disappear.]]
 		tip = "Commander, welcome to Azur Lane! Let’s report to boot camp, now!"
 	},
 	tec_notice_1 = {
-		tip = "Unlocked by completing all PR1 catch-up missions. "
+		tip = "Complete all PR1 Catch-Up missions"
+	},
+	tec_notice_2 = {
+		tip = "Complete all PR2 Catch-Up missions "
+	},
+	tec_notice_not_open_tip = {
+		tip = "Unlocks after completing the previous set of missions"
 	},
 	apply_permission_camera_tip1 = {
 		tip = "To use AR recording game feature, need to grant permission to access recording function."
@@ -7830,6 +7899,18 @@ disappear.]]
 					path = ""
 				}
 			},
+			{
+				icon = {
+					atlas = "helpbg/commander_9",
+					path = ""
+				}
+			},
+			{
+				icon = {
+					atlas = "helpbg/commander_10",
+					path = ""
+				}
+			},
 			disableScroll = true,
 			pageMode = true,
 			ImageMode = true,
@@ -7897,6 +7978,18 @@ disappear.]]
 					path = ""
 				}
 			},
+			{
+				icon = {
+					atlas = "helpbg/commander_9",
+					path = ""
+				}
+			},
+			{
+				icon = {
+					atlas = "helpbg/commander_10",
+					path = ""
+				}
+			},
 			disableScroll = true,
 			pageMode = true,
 			ImageMode = true,
@@ -7961,6 +8054,18 @@ disappear.]]
 			{
 				icon = {
 					atlas = "helpbg/commander_skill2",
+					path = ""
+				}
+			},
+			{
+				icon = {
+					atlas = "helpbg/commander_9",
+					path = ""
+				}
+			},
+			{
+				icon = {
+					atlas = "helpbg/commander_10",
 					path = ""
 				}
 			},
@@ -8034,6 +8139,18 @@ disappear.]]
 			{
 				icon = {
 					atlas = "helpbg/commander_skill2",
+					path = ""
+				}
+			},
+			{
+				icon = {
+					atlas = "helpbg/commander_9",
+					path = ""
+				}
+			},
+			{
+				icon = {
+					atlas = "helpbg/commander_10",
 					path = ""
 				}
 			},
@@ -8423,11 +8540,11 @@ disappear.]]
 				info = "<color=#92fc63>- How to Play:</color>"
 			},
 			{
-				info = "During the \"Air Raid Drills with Essex\" event, your goal is to accumulate <color=#92fc63>Contribution Points (CP)</color> which will progress the mission and can be used to claim Individual Rewards and Milestone Rewards.\n"
+				info = "During the \"Crosswave\" event, your goal is to accumulate <color=#92fc63>Contribution Points (CP)</color> which will progress the mission and can be used to claim Individual Rewards and Milestone Rewards.\n"
 			},
 			{
 				info = [[
-During the event period, you will play on a special stage and face off against Essex's carrier fleet.
+During the event period, you will play on a special stage and face off against Suruga's fleet.
 All commanders on the same server will need to work together by gathering CP and <color=#92fc63>lowering the progress gauge to 0%</color> in order to complete the mission.
 Once the mission is completed, all players who participated will be rewarded with a gift sent to their Mailbox.
 <color=#92fc63>Note that you can still earn CP through the Event Stage even once the progress gauge has hit 0%.</color>
@@ -8931,6 +9048,51 @@ Prototype Triple 406mm/50 Main Gun
 Triple 152mm Main Gun (Mle 1930)
 Twin 37mm AA Gun (Mle 1936)</color></size>]]
 	},
+	blueprint_simulation_confirm_19903 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation?
+Note: the Priority ship's stats and abilities may differ from her fully-developed equivalent.
+Equipped gear:<color=#ff5c5c>
+Triple 203mm Mk 15 Main Gun Mount
+533mm Quadruple Torpedo Mount Mk 17
+Quadruple 28mm "Chicago Piano" AA Gun Mount</color></size>]]
+	},
+	blueprint_simulation_confirm_39905 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation?
+Note: the Priority ship's stats and abilities may differ from her fully-developed equivalent.
+Equipped gear:<color=#ff5c5c>
+Prototype Saiun Kai
+Prototype Tenrai
+Prototype Saiun Kai</color></size>]]
+	},
+	blueprint_simulation_confirm_49905 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation?
+Note: the Priority ship's stats and abilities may differ from her fully-developed equivalent.
+Equipped gear:<color=#ff5c5c>
+Prototype Triple 305mm SK C/39 Main Gun Mount
+533mm Quadruple Magnetic Torpedo Mount
+Twin 105mm SK C/33 AA Gun Mount</color></size>]]
+	},
+	blueprint_simulation_confirm_49906 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation?
+Note: the Priority ship's stats and abilities may differ from her fully-developed equivalent.
+Equipped gear:<color=#ff5c5c>
+Prototype BF-109G
+Ju-87C Dive Bomber
+Ju-87 D-4</color></size>]]
+	},
+	blueprint_simulation_confirm_69901 = {
+		tip = [[
+<size=28>Would you like to start a Battle Simulation?
+Note: the Priority ship's stats and abilities may differ from her fully-developed equivalent.
+Equipped gear:<color=#ff5c5c>
+Prototype Triple 406mm Model 1940 Main Gun Mount
+Triple 152mm Model 1934 Main Gun Mount
+Prototype Twin 90mm High Angle Gun Mount</color></size>]]
+	},
 	electrotherapy_wanning = {
 		tip = "The electrified area is about to expand"
 	},
@@ -9077,7 +9239,7 @@ Event Information:
  a. Active Commander 
  b. Returning or new Commander
 2. Players who meet the following criterion are categorized as Active Commanders and are eligible for Active Commander objectives and rewards: 
-- Logged in at least once at any point between May 27th, 2021 and before the maintenance on June 17th, 2021.
+- Logged in at least once at any point between August 12th, 2021, 2021 and before the maintenance on September 1st, 2021.
 3. Players who do not meet this criterion are categorized as Returning or new Commanders and are eligible for their own set of objectives and rewards.
 4. If you are unsure whether you are an Active Commander or a Returning or new Commander, please view the information in the Returnee Missions banner. 
 5. An Active Commander's objective is to receive Returnee Points from up to 2 other players who participate in and complete Returnee Missions. Once an Active Commander has collected enough points, they can claim various nice rewards from the event banner.
@@ -9508,10 +9670,23 @@ Would you like to change modes?]]
 		tip = {
 			{
 				info = [[
-During the event, you will be given 2 Game Tickets per day,up to a maximum of 14.Game Tickets let you play three minigames:Shooting Game, Fireworks Workshop, or Food Stalls. Your performance determines the possible prizes: First-tier Prize: Coins x150, Festival Food(?) x1 Second-tier Prize: Coins x130, Festival Food(?) x1 Third-tier Prize: Coins x110 Booby Prize: Coins x100 Get Juno’s limited outfit by collecting 14 stamps.Your remaining Game Tickets can be seen on the right.You can check your Stamp Collection by tapping the "Stamps" button.Playing minigames with Game Tickets will also increase your number of Shrine Visits.Donating will grant one of three blessings.
-TIPS：
-1. Playing minigames without Game Tickets will not award prizes, stamps, or Shrine Visits.
-2. If you quit during a minigame, the Game Ticket will not be consumed, but you will not gain any prizes.]]
+- Overview -
+During the event, play the minigames and earn stamps to get Juno's limited outfit.
+You will need Game Tickets to earn stamps.
+Game Tickets can be obtained by logging in every day.
+- Getting Tickets and Stamps -
+During the event, logging in for the first time each day will yield 2 Game Tickets.
+If you complete a minigame while in possession of at least 1 Game Ticket, a Game Ticket will be used and 1 stamp will be awarded.
+If you did not collect your Game Tickets for a certain day, you will be given all the Game Tickets you've missed upon logging in.
+- Minigames -
+The three minigames you can play are: Shooting Game, Fireworks Workshop, and Food Stalls.
+If you complete a minigame while having a Game Ticket, you will be given minigame rewards.
+The rewards may vary depending on your performance in the minigames.
+First-tier Prize: Coins x150, Festival Food(?) x1
+Second-tier Prize: Coins x130, Festival Food(?) x1
+Third-tier Prize: Coins x110
+Booby Prize: Coins x100
+Playing minigames without Game Tickets will not award prizes or stamps.]]
 			}
 		}
 	},
@@ -9522,14 +9697,32 @@ TIPS：
 		tip = {
 			{
 				info = [[
-<size=31><color=#92fc63>TIPS:
-You can play the minigame without a Game Ticket but will not earn any prizes.</color></size>How to make fireworks:
-1. Press "Start" to begin configuring the fireworks.
-2. Fireworks are made up of three components-Inner, Middle, and Outer layers. Click on the colored Element Balls to add them to the fireworks.The chosen elements change the fireworks’ colors.You can swap an already selected element for another,clear the slot, or swap with another layer.
-3. When all three layers have been selected,Click "Start" to begin filling the fireworks.A Game Ticket will be used to begin filling.You can earn a stamp depending on your performance.
-4. After successfully filling fireworks 3 times, you can click the "Launch Fireworks" button next to the Fireworks Workshop in the Summer Festival Screen to use the fireworks you most recently produced.
-5. The fireworks will continue to launch until you enter another interface or leave the Summer Festival screen.You can click the button again to launch them again.
-6. If you wish to change the fireworks configuration,you will need to use the Fireworks Workshop again.]]
+- Overview -
+In the Fireworks Workshop minigame, you'll be able to create your own fireworks.
+Choose your favorite powder and fill the firework to the appropriate level. The closer the fill amount is to the appropriate level, the better rewards you will receive.
+Afterwards, fireworks made from the Fireworks Workshop minigame will be able to be launched from the event hub.
+Fireworks that you launch will be displayed until you navigate away from the event hub screen.
+- How to Play -
+1. Press “Fill” to begin configuring the fireworks.
+2. Fireworks are made up of three components-
+Inner, Middle, and Outer layers. Click on the colored
+Element Balls to add them to the fireworks.
+The chosen elements change the fireworks’ colors.
+You can swap an already selected element for another,
+clear the slot, or swap with another layer.
+3. Try to fill each layer to 50% (green line). The closer the final fill amount is to 150%, the better your rating will be.
+Click “Fill” to begin filling the fireworks.
+A Game Ticket will be used to begin filling.
+You can earn a stamp depending on your performance.
+4. After successfully filling fireworks 3 times, you can
+click the “Launch Fireworks” button next to the Fireworks
+Workshop in the Summer Festival Screen to use the
+fireworks you most recently produced.
+5. The fireworks will continue to launch until you enter
+another interface or leave the Summer Festival screen.
+you can click the button again to launch them again.
+6. If you wish to change the fireworks configuration,
+you will need to use the Fireworks Workshop again.]]
 			}
 		}
 	},
@@ -9552,13 +9745,38 @@ Making a Donation when you have no Visits will still consume resources but grant
 			{
 				info = [[
 <size=31><color=#92fc63>TIPS:
-You can play the minigame without a Game Ticket but will not earn any prizes.</color></size>
-1. Press "Order" to begin the game. The desired food will appear above the character’s head on the left-hand side of the screen. After five seconds, the desired food will disappear, so the player needs to remember it.Select the three foods desired by the character within ten seconds.
-2. The desired foods must be selected in the order that they appeared over the character’s head, from left to right.
-3. Press the icon corresponding to the food to select it,and press it again to de-select it.The order will automatically be submitted after selecting three food items.
-4. If there is time left over, the three selected foods will enter the assessment panel. Correctly-selected food will increase the remaining time. You can choose to continue the game, or retire. Extra time earned and scoring are as below:3 correct food chosen: +5 seconds, +5 points 2 correct food chosen: +2 seconds, +2 points 1 correct food chosen: +1 second, +1 point 0 correct food chosen: +0 seconds, +0 points
-5. If you choose to continue, you will retain your countdown and points and continue to select the three desired food items of the character on the left.
-6. If you retire or the countdown expires, a Game Ticket will be consumed and the following prizes awarded:20 points or more: First-tier prize 12-19 points: Second-tier prize 5-11 points: Third-tier prize Fewer than 5 points: Booby prize]]
+You can play the minigame without a Game Ticket
+but will not earn any prizes.</color></size>
+1. Press “Purchase” to begin the game. The desired food
+will appear above the character’s head on the left-hand
+side of the screen. After five seconds, the desired food
+will disappear, so the player needs to remember it.
+Select the three foods desired by the character within
+ten seconds.
+2. The desired foods must be selected in the order that
+they appeared over the character’s head, from left to right.
+3. Press the icon corresponding to the food to select it,
+and press it again to de-select it.
+The order will automatically be submitted after
+selecting three food items.
+4. If there is time left over, the three selected foods
+will enter the assessment panel. Correctly-selected
+food will increase the remaining time. You can choose
+to continue the game, or retire. Extra time earned and
+scoring are as below:
+3 correct food chosen: +5 seconds, +5 points
+2 correct food chosen: +2 seconds, +2 points
+1 correct food chosen: +1 second, +1 point
+0 correct food chosen: +0 seconds, +0 points
+5. If you choose to continue, you will retain your countdown
+and points and continue to select the three desired food
+items of the character on the left.
+6. If you retire or the countdown expires, a Game Ticket
+will be consumed and the following prizes awarded:
+20 points or more: First-tier prize
+12-19 points: Second-tier prize
+5-11 points: Third-tier prize
+Fewer than 5 points: Booby prize]]
 			}
 		}
 	},
@@ -9567,12 +9785,20 @@ You can play the minigame without a Game Ticket but will not earn any prizes.</c
 			{
 				info = [[
 <size=31><color=#92fc63>TIPS：
-You can play the minigame without a Game Ticket but will not earn any prizes.</color></size>
-1.Press "Start" to begin the game. 12 Siren targets will appear across 18 possible spaces,use the movement and fire buttons to shoot the targets before the countdown ends.Different targets have different point values.
+You can play the minigame without a Game Ticket
+but will not earn any prizes.</color></size>
+1.Press "Start" to begin the game. 12 Siren targets will appear across 18 possible spaces,
+use the movement and fire buttons to shoot the targets before the countdown ends.
+Different targets have different point values.
 2.Values are marked to the right of the game field.
-3.Fire with the crosshair over the target's portrait to register a hit.There is a one second cooldown between shots.
+3.Fire with the crosshair over the target's portrait to register a hit.
+There is a one second cooldown between shots.
 4.After you hit a target, it will disappear and the remaining targets will shuffle themselves.
-5.The minigame's countdown runs 12 seconds, at which point the game will end and your points will be tallied.The minigame will then consume your Game Ticket and award a Stamp. You will also earn one of the following prizes:35 points or more: First-tier prize 25-34 points: Second-tier prize 10-24 points: Third-tier prize Fewer than 10 points: Booby prize]]
+5.The minigame's countdown runs 12 seconds, at which point the game will end and your points will be tallied.
+The minigame will then consume your Game Ticket and award a Stamp. You will also earn one of the following prizes:# points or more: First-tier prize
+25-34 points: Second-tier prize
+10-24 points: Third-tier prize
+Fewer than 10 points: Booby prize]]
 			}
 		}
 	},
@@ -11584,6 +11810,9 @@ Instructions:
 	tec_tendency_3 = {
 		tip = "PR3 Focus"
 	},
+	tec_tendency_4 = {
+		tip = "PR4 Focus"
+	},
 	tec_tendency_cur_0 = {
 		tip = "Research Focus \no Focus "
 	},
@@ -11596,11 +11825,47 @@ Instructions:
 	tec_tendency_cur_3 = {
 		tip = "Research Focus / Series 3"
 	},
-	tec_target_catchup_none = {
-		tip = "Catch-Up / Not Selected"
+	tec_tendency_cur_4 = {
+		tip = "Research Focus / Series 4"
 	},
-	tec_target_catchup_selected = {
-		tip = "Catch-Up"
+	tec_target_catchup_none_1 = {
+		tip = "PR1 / Not Selected"
+	},
+	tec_target_catchup_none_2 = {
+		tip = "PR2 / Not Selected"
+	},
+	tec_target_catchup_selected_1 = {
+		tip = "PR1 / Selected"
+	},
+	tec_target_catchup_selected_2 = {
+		tip = "PR2 / Selected"
+	},
+	tec_target_catchup_finish_1 = {
+		tip = "PR1 / Complete"
+	},
+	tec_target_catchup_finish_2 = {
+		tip = "PR2 / Complete"
+	},
+	tec_target_catchup_finish_3 = {
+		tip = "PR3 / Complete"
+	},
+	tec_target_catchup_finish_4 = {
+		tip = "PR4 / Complete"
+	},
+	tec_target_catchup_dr_finish_tip = {
+		tip = "Catch-Up Complete"
+	},
+	tec_target_catchup_all_finish_tip = {
+		tip = "Catch-Up Complete"
+	},
+	tec_target_catchup_show_the_finished_version = {
+		tip = "Show completed catch-ups"
+	},
+	tec_target_catchup_pry_char = {
+		tip = "PR Ships"
+	},
+	tec_target_catchup_dr_char = {
+		tip = "DR Ships"
 	},
 	tec_target_need_print = {
 		tip = "Required BPs:"
@@ -11614,40 +11879,17 @@ Instructions:
 	tec_target_catchup_help_tip = {
 		tip = {
 			{
-				info = "Regarding Research Catch-Up:"
-			},
-			{
 				info = [[
-The Research Catch-Up system allows you to
-choose a PR ship for accelerated research.
-When completing research projects, you may
-earn bonus Blueprints for that selected ship.]]
-			},
-			{
-				info = "Details:"
-			},
-			{
-				info = [[
--To activate Research Catch-Up, select a ship
-under the “Catch-Up” screen. Only one ship may
-be selected at a time, but you can change the
-research target anytime.
--When completing a research project, you will be
-able to obtain bonus Blueprints for the selected
-Catch-Up ship.
--The total number of Blueprints that may be earned
-from the Catch-Up system for any PR Series is
-300.
-]]
-			},
-			{
-				info = [[
-*For example, a total of 300 Blueprints may be
-earned for the 6 PR Series 1 ships, in any
-combination.
-*In addition to the Catch-Up system, there may be
-future events that further increase the Blueprints
-you can earn.]]
+- Catch-Up Info:
+
+The Catch-Up feature gives you bonus PR/DR Blueprints upon completion of a research project.
+First, choose a PR/DR ship you'd like to focus on, then simply complete research projects as normal.
+You can only receive these Blueprints for 1 ship at a time, but you can switch Catch-Up targets whenever you'd like.
+
+There is a limit on how many Blueprints you can receive through the Catch-Up feature. In the case of series 2 PRs/DRs, the totals are as follows:
+- PR ships: a maximum of 300 Blueprints between 4 ships.- DR ships: a maximum of 150 Blueprints per ship, for 2 different ships.
+
+In the case of events which grant Blueprints, these are counted separately from the Catch-Up feature.]]
 			}
 		}
 	},
@@ -13259,6 +13501,15 @@ How to Play
 	cumulative_victory_now_tip = {
 		tip = "Current Victories:"
 	},
+	word_files_repair = {
+		tip = "Tap to repair "
+	},
+	repair_setting_label = {
+		tip = "Repair assets "
+	},
+	voice_control = {
+		tip = "Volume"
+	},
 	index_equip = {
 		tip = "Equipped "
 	},
@@ -13917,13 +14168,13 @@ Your Action Points will also reset, starting you off with <color=#92fc63>200 AP.
 		tip = "Meowfficer removed."
 	},
 	commander_box_quickly_tool_tip_1 = {
-		tip = "Using"
+		tip = "How many Cat Box Quick Finishers would you like to use?"
 	},
 	commander_box_quickly_tool_tip_2 = {
-		tip = "Cat Box Quick Finishers while shorten Meowfficer training time by"
+		tip = "Training time reduced by 20 min per Quick Finisher"
 	},
 	commander_box_quickly_tool_tip_3 = {
-		tip = "$1 mins. Continue?"
+		tip = "Time remaining after use:  "
 	},
 	commander_box_was_finished = {
 		tip = "Meowfficer training complete."
@@ -13939,6 +14190,30 @@ Your Action Points will also reset, starting you off with <color=#92fc63>200 AP.
 	},
 	commander_op_feed_level = {
 		tip = "Play Level: $1"
+	},
+	cat_home_help = {
+		tip = {
+			{
+				info = [[
+- Comf-Forts Info:
+
+1. You can leave your Meowfficers in Comf-Forts to passively grant them EXP over time, much like with shipgirls in the Dormitory.
+Once a day, you may perform the following actions once each with Meowfficers assigned in your Comf-Forts:
+- Clean
+- Play
+- Feed
+The benefits of whichever action is chosen is then applied to all Meowfficers in all Comf-Forts.
+Putting a new Meowfficer in a Comf-Fort which was the target for one of these actions will not let you redo the actions, nor can you do them again if you take a Meowfficer that was the target for one of these actions and put it into a Comf-Fort that went unused.The benefits of the action you chose will then be applied to the Comf-Fort with the Meowfficer assigned, and that action will become unavailable for the rest of the day.
+Putting a new Meowfficer in a Comf-Fort which was the target for one of these actions will not let you repeat the action, nor can you do it again if you take a Meowfficer that was the target for one of these actions and put it into a Comf-Fort that went unused.
+
+2. The benefits of these actions are as follows:
+- Clean: grants upgrade points for your Comf-Forts.
+- Play: grants upgrade points for your Comf-Forts, and you have a chance to receive Cat Box Quick Finishers.
+- Feed: Grants upgrade points for your Comf-Forts, and increases the EXP your Meowfficers earn in their Comf-Forts.
+
+Upgrading your Comf-Forts will give you access to additional Comf-Fort slots, Comf-Fort themes, and increase the EXP your Meowfficers earn while in a Comf-Fort.]]
+			}
+		}
 	},
 	cat_accelfrate_notenough = {
 		tip = "You do not have enough Cat Box Quick Finishers."
@@ -13956,10 +14231,19 @@ Your Action Points will also reset, starting you off with <color=#92fc63>200 AP.
 		tip = "This Meowfficer is in a Comf-Fort. "
 	},
 	cat_home_interaction = {
-		tip = "该指挥喵已经$1过了"
+		tip = "You've already done the following daily actions:"
 	},
 	cat_accelerate_left = {
-		tip = "使用后剩余："
+		tip = "Actions left:"
+	},
+	common_clean = {
+		tip = "Clean"
+	},
+	common_feed = {
+		tip = "Feed"
+	},
+	common_play = {
+		tip = "Play"
 	},
 	game_stopwords = {
 		tip = "Text box is now being hidden."
@@ -14044,6 +14328,22 @@ How to Play
 			}
 		}
 	},
+	handshake_game_help = {
+		tip = {
+			{
+				info = [[
+- Manjuu Meet n' Greet -
+· In this minigame, you play as Manjuu staff members trying to bring fans the goods they ask for.
+· Finishing each round of this minigame (rounds unlock over 7 days) will allow you to earn the collab-limited "Shining Bracelet" gear.
+
+- Minigame Instructions -
+1. A fan on the right side of the screen will list 3 items they want. Tap the corresponding items on the left side of the screen to select them.
+2. Select all the correct items and the fan will be satisfied and leave. If you pick an item wrong, the right item will be highlighted and you can try again.
+3. A fan will wait 15 seconds for you to bring the items they want. If you take too long, the fan will leave, and you will lose 1 stamina.
+4. The minigame ends when you run out of stamina or when the timer reaches 0.]]
+			}
+		}
+	},
 	MeixiV4_help = {
 		tip = {
 			{
@@ -14112,6 +14412,97 @@ The Mini-Event Gallery lets you choose and replay old mini-events.
 	activity_permanent_finished = {
 		tip = "Completed"
 	},
+	idolmaster_main = {
+		tip = {
+			{
+				info = [[
+- Concert Venue -
+The Concert Venue is host to the following things:
+1. A button that takes you to the Azur Anthem event stages
+2. The Manjuu Meet n' Greet minigame
+3. Your progress toward the 765 Production Trophy
+
+- Azur Anthem Collab Info -
+· This event is available from 7/22 to 8/4.
+· You can earn Collab Points during this event and spend the points on items in the dedicated event store.
+· 1 special commission will unlock every day from 7/22 to 8/4. Completing these commissions will earn you unique rewards.
+· You have until 8/11 to collect these rewards.
+
+- Manjuu Meet n' Greet Minigame -
+· One round will unlock every day until 7/28.
+· Playing all 7 rounds will allow you to earn the exclusive collab gear, "Shining Bracelet."
+· For more details on the minigame itself, please tap the Rules button on the minigame menu.
+
+- 765 Production Trophy -
+· Completing milestones on the Trophy page will award you with bios for each of the collab characters.
+· There are 14 bios all in all. Once you've acquired them all, you will be awarded with the 765 Production Trophy.]]
+			}
+		}
+	},
+	idolmaster_game_tip1 = {
+		tip = "Would you like to resume the game?"
+	},
+	idolmaster_game_tip2 = {
+		tip = "Would you like to quit the game?"
+	},
+	idolmaster_game_tip3 = {
+		tip = "Current Score"
+	},
+	idolmaster_game_tip4 = {
+		tip = "High Score"
+	},
+	idolmaster_game_tip5 = {
+		tip = "Score"
+	},
+	idolmaster_collection = {
+		tip = {
+			{
+				info = "- Event Period: <color=#92fc63>7/22 – 8/4</color>\n· During this \"Azur Anthem\" event, you can gather a total of <color=#92fc63>14</color> Idol Profiles to receive the special <color=#92fc63>765 Production Trophy</color> furniture.\n"
+			},
+			{
+				info = [[
+· Idol Profiles can be obtained through the following ways:
+1. Completing event stages
+2. Completing event missions
+3. Collecting Collab Points
+4. Playing the Manjuu Meet n' Greet minigame
+]]
+			},
+			{
+				info = "· You have up until 23:59 on August 11th to claim the trophy."
+			}
+		}
+	},
+	idolmaster_voice_name_feeling1 = {
+		tip = "Disappointed "
+	},
+	idolmaster_voice_name_feeling2 = {
+		tip = "Stranger"
+	},
+	idolmaster_voice_name_feeling3 = {
+		tip = "Friend "
+	},
+	idolmaster_voice_name_feeling4 = {
+		tip = "Colleague "
+	},
+	idolmaster_voice_name_feeling5 = {
+		tip = "Partner "
+	},
+	idolmaster_voice_name_propose = {
+		tip = "Oath "
+	},
+	cartoon_all = {
+		tip = "All"
+	},
+	cartoon_notall = {
+		tip = "Unread"
+	},
+	cartoon_haveno = {
+		tip = "You have not unlocked any comics."
+	},
+	res_cartoon_new_tip = {
+		tip = "A new page has been added to the Comics tab!"
+	},
 	memory_actiivty_ex = {
 		tip = "Event"
 	},
@@ -14123,5 +14514,112 @@ The Mini-Event Gallery lets you choose and replay old mini-events.
 	},
 	memory_activity_others = {
 		tip = "Misc"
+	},
+	battle_end_title = {
+		tip = "Battle Results"
+	},
+	battle_end_subtitle1 = {
+		tip = "Rewards"
+	},
+	battle_end_subtitle2 = {
+		tip = "Tactical Learning"
+	},
+	meta_skill_dailyexp = {
+		tip = "Daily EXP"
+	},
+	meta_skill_learn = {
+		tip = "*Tap to change the skill you'd like to upgrade."
+	},
+	meta_skill_maxtip = {
+		tip = "$1's selected skill has reached its max level. Would you like to head to the META Lab to change the skill being upgraded?"
+	},
+	meta_tactics_detail = {
+		tip = "Details"
+	},
+	meta_tactics_unlock = {
+		tip = "Skill Unlocked"
+	},
+	meta_tactics_switch = {
+		tip = "Skill Upgraded"
+	},
+	meta_skill_maxtip2 = {
+		tip = "Max Level"
+	},
+	activity_permanent_progress = {
+		tip = "Progress:"
+	},
+	cattery_settlement_dialogue_1 = {
+		tip = "While you were gone for"
+	},
+	cattery_settlement_dialogue_2 = {
+		tip = "your Meowfficers had a nice nap, nya!"
+	},
+	cattery_settlement_dialogue_3 = {
+		tip = "They earned a total of"
+	},
+	cattery_settlement_dialogue_4 = {
+		tip = "EXP, nya~"
+	},
+	blueprint_catchup_by_gold_confirm = {
+		tip = "Enhancing will cost $1 Coins. Do you wish to continue? "
+	},
+	tec_tip_no_consumption = {
+		tip = "Free"
+	},
+	tec_tip_material_stock = {
+		tip = "Owned"
+	},
+	tec_tip_to_consumption = {
+		tip = "Cost "
+	},
+	onebutton_max_tip = {
+		tip = "Batch Analysis "
+	},
+	target_get_tip = {
+		tip = "Total Drops"
+	},
+	fleet_select_title = {
+		tip = "Select Fleet"
+	},
+	equip_add = {
+		tip = "— Tap to select gear —"
+	},
+	equipskin_add = {
+		tip = "— Tap to remove gear skin — "
+	},
+	equipskin_none = {
+		tip = "— Cannot use the selected skin —"
+	},
+	equipskin_typewrong = {
+		tip = "— Cannot use the selected skin —"
+	},
+	equipskin_typewrong_en = {
+		tip = "Gear Skin Unavailable "
+	},
+	user_is_banned = {
+		tip = "This account has been suspended.\nSuspension Time: ($1) "
+	},
+	user_is_forever_banned = {
+		tip = "This account has been banned. "
+	},
+	cowboy_tips = {
+		tip = {
+			{
+				info = [[
+Minigame Rules:
+- In this minigame, you control a Manjuu Cowboy, and you'll earn points by lassoing Cowjuus.
+
+How to Play:
+- When the game starts, Cowjuus will appear on the right side of the screen and start moving to the left.
+- Tap on the "Lasso" button on the right side of the screen to throw the lasso at the Cowjuu. You'll earn points when you successfully lasso a Cowjuu.
+- You'll earn points depending on the type of Cowjuu you lasso:
+Cowjuu: 50 points
+Angusjuu: 100 points
+Cape Bufflejuu: 200 points
+Bisonjuu: 300 points
+
+The game ends when the timer reaches 0 or when you tap the End Game button.]]
+			}
+		}
 	}
 }

@@ -206,11 +206,7 @@ function slot0.didEnter(slot0)
 	slot0._gradeUpperLeftPos = slot1.localPosition
 	slot1.localPosition = Vector3(0, 25, 0)
 
-	pg.UIMgr.GetInstance():OverlayPanel(slot0._tf)
-
-	slot0.blurRt = pg.UIMgr.GetInstance():SetMainCamBlurTexture(GetComponent(slot0:findTF("blur_img", slot0._tf), "RawImage"))
-
-	setActive(slot0:findTF("blur_img", slot0._tf), true)
+	pg.UIMgr.GetInstance():BlurPanel(slot0._tf, true)
 
 	slot0._grade.transform.localScale = Vector3(1.5, 1.5, 0)
 
@@ -485,7 +481,15 @@ function slot0.displayShips(slot0)
 	end
 
 	slot4, slot5 = nil
-	slot5 = (not slot3.mvpShipID or slot3.mvpShipID == 0 or slot3[slot3.mvpShipID].output) and 0
+
+	if slot3.mvpShipID == -1 then
+		for slot9, slot10 in ipairs(slot0.contextData.oldMainShips) do
+			slot5 = math.max(slot3[slot10.id].output, 0)
+		end
+	else
+		slot5 = (not slot3.mvpShipID or slot3.mvpShipID == 0 or slot3[slot3.mvpShipID].output) and 0
+	end
+
 	slot0._atkFuncs = {}
 	slot0._commonAtkTplList = {}
 	slot0._subAtkTplList = {}
@@ -1066,12 +1070,6 @@ end
 function slot0.initMetaBtn(slot0)
 	slot0.metaBtn = slot0:findTF("MetaBtn", slot0._main)
 
-	if not NEW_META_EXP then
-		setActive(slot0.metaBtn, false)
-
-		return
-	end
-
 	setActive(slot0.metaBtn, getProxy(MetaCharacterProxy):getLastMetaSkillExpInfoList() and #slot1 > 0 or false)
 	onButton(slot0, slot0.metaBtn, function ()
 		setActive(uv0.metaBtn, false)
@@ -1082,7 +1080,9 @@ function slot0.initMetaBtn(slot0)
 			uv0.metaExpView:Reset()
 			uv0.metaExpView:Load()
 			uv0.metaExpView:setData(uv1, function ()
-				setActive(uv0.metaBtn, true)
+				if uv0.metaBtn then
+					setActive(uv0.metaBtn, true)
+				end
 
 				uv0.metaExpView = nil
 			end)
@@ -1129,12 +1129,7 @@ function slot0.willExit(slot0)
 		slot0._rightTimer:Stop()
 	end
 
-	ReflectionHelp.RefCallStaticMethod(typeof("UnityEngine.RenderTexture"), "ReleaseTemporary", {
-		typeof("UnityEngine.RenderTexture")
-	}, {
-		slot0.blurRt
-	})
-	pg.UIMgr.GetInstance():UnOverlayPanel(slot0._tf)
+	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
 	slot0:stopVoice()
 	getProxy(MetaCharacterProxy):clearLastMetaSkillExpInfoList()
 

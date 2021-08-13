@@ -1,77 +1,38 @@
 pg = pg or {}
 pg.aircraft_template_183 = {
-	[68956] = {
-		id = 68956,
-		name = "白上吹雪狐笋轰炸机Lv6",
-		base = 68951,
-		max_hp = 73,
-		hp_growth = 2796,
+	[68030] = {
+		id = 68030,
+		name = "邦克山技能战斗机Lv10",
+		base = 68021,
+		max_hp = 110,
+		hp_growth = 4234,
 		weapon_ID = {
-			68966
+			50450,
+			68060
 		}
 	},
-	[68957] = {
-		id = 68957,
-		name = "白上吹雪狐笋轰炸机Lv7",
-		base = 68951,
-		max_hp = 79,
-		hp_growth = 3016,
-		weapon_ID = {
-			68967
-		}
-	},
-	[68958] = {
-		id = 68958,
-		name = "白上吹雪狐笋轰炸机Lv8",
-		base = 68951,
-		max_hp = 86,
-		hp_growth = 3237,
-		weapon_ID = {
-			68968
-		}
-	},
-	[68959] = {
-		id = 68959,
-		name = "白上吹雪狐笋轰炸机Lv9",
-		base = 68951,
-		max_hp = 92,
-		hp_growth = 3458,
-		weapon_ID = {
-			68969
-		}
-	},
-	[68960] = {
-		id = 68960,
-		name = "白上吹雪狐笋轰炸机Lv10",
-		base = 68951,
-		max_hp = 98,
-		hp_growth = 3678,
-		weapon_ID = {
-			68970
-		}
-	},
-	[69161] = {
+	[68031] = {
 		attack_power = 2,
-		name = "无畏技能SB2C(VB-18)轰炸机Lv1",
+		name = "邦克山技能轰炸机Lv1",
 		type = 3,
 		accuracy = 23,
-		model_ID = "sb2c",
+		model_ID = "sbdwuwei",
 		ACC_growth = 0,
-		crash_DMG = 180,
-		dodge = 3.33,
+		crash_DMG = 156,
+		dodge = 1,
 		funnel_behavior = "",
 		nationality = 1,
-		id = 69161,
-		icon = "sb2c",
+		id = 68031,
+		icon = "sbdwuwei",
 		AP_growth = 2000,
-		dodge_limit = 1,
-		hp_growth = 1870,
-		speed = 45,
-		max_hp = 49,
+		dodge_limit = 0,
+		hp_growth = 1183,
+		speed = 46,
+		max_hp = 35,
 		scale = 1,
 		weapon_ID = {
-			69171,
-			69181
+			68041,
+			68051
 		},
 		position_offset = {
 			0,
@@ -114,8 +75,8 @@ pg.aircraft_template_183 = {
 				0
 			},
 			{
-				0.44,
-				0,
+				0.72,
+				-0.15,
 				0
 			},
 			{
@@ -125,48 +86,92 @@ pg.aircraft_template_183 = {
 			}
 		}
 	},
-	[69162] = {
-		id = 69162,
-		name = "无畏技能SB2C(VB-18)轰炸机Lv2",
-		base = 69161,
+	[68032] = {
+		id = 68032,
+		name = "邦克山技能轰炸机Lv2",
+		base = 68031,
+		max_hp = 39,
+		hp_growth = 1345,
+		weapon_ID = {
+			68042,
+			68052
+		}
+	},
+	[68033] = {
+		id = 68033,
+		name = "邦克山技能轰炸机Lv3",
+		base = 68031,
+		max_hp = 43,
+		hp_growth = 1507,
+		weapon_ID = {
+			68043,
+			68053
+		}
+	},
+	[68034] = {
+		id = 68034,
+		name = "邦克山技能轰炸机Lv4",
+		base = 68031,
+		max_hp = 47,
+		hp_growth = 1669,
+		weapon_ID = {
+			68044,
+			68054
+		}
+	},
+	[68035] = {
+		id = 68035,
+		name = "邦克山技能轰炸机Lv5",
+		base = 68031,
+		max_hp = 51,
+		hp_growth = 1831,
+		weapon_ID = {
+			68045,
+			68055
+		}
+	},
+	[68036] = {
+		id = 68036,
+		name = "邦克山技能轰炸机Lv6",
+		base = 68031,
 		max_hp = 55,
-		hp_growth = 2114,
+		hp_growth = 1994,
 		weapon_ID = {
-			69172,
-			69182
+			68046,
+			68056
 		}
 	},
-	[69163] = {
-		id = 69163,
-		name = "无畏技能SB2C(VB-18)轰炸机Lv3",
-		base = 69161,
-		max_hp = 61,
-		hp_growth = 2358,
+	[68037] = {
+		id = 68037,
+		name = "邦克山技能轰炸机Lv7",
+		base = 68031,
+		max_hp = 59,
+		hp_growth = 2157,
 		weapon_ID = {
-			69173,
-			69183
+			68047,
+			68057
 		}
 	},
-	[69164] = {
-		id = 69164,
-		name = "无畏技能SB2C(VB-18)轰炸机Lv4",
-		base = 69161,
+	[68038] = {
+		id = 68038,
+		name = "邦克山技能轰炸机Lv8",
+		base = 68031,
+		max_hp = 63,
+		hp_growth = 2320,
+		weapon_ID = {
+			68048,
+			68058
+		}
+	},
+	[68039] = {
+		id = 68039,
+		name = "邦克山技能轰炸机Lv9",
+		base = 68031,
 		max_hp = 68,
-		hp_growth = 2602,
+		hp_growth = 2483,
 		weapon_ID = {
-			69174,
-			69184
-		}
-	},
-	[69165] = {
-		id = 69165,
-		name = "无畏技能SB2C(VB-18)轰炸机Lv5",
-		base = 69161,
-		max_hp = 74,
-		hp_growth = 2846,
-		weapon_ID = {
-			69175,
-			69185
+			68049,
+			68059
 		}
 	}
 }

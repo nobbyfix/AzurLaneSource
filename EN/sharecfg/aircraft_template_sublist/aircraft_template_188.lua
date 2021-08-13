@@ -1,75 +1,37 @@
 pg = pg or {}
 pg.aircraft_template_188 = {
-	[69486] = {
-		id = 69486,
-		name = "小光辉技能鱼雷机Lv6",
-		base = 69481,
-		max_hp = 66,
-		hp_growth = 2541,
-		weapon_ID = {
-			69496
-		}
+	[68550] = {
+		id = 68550,
+		name = "伊25技能零侦LV10",
+		base = 68541,
+		max_hp = 98,
+		hp_growth = 3511,
+		weapon_ID = {}
 	},
-	[69487] = {
-		id = 69487,
-		name = "小光辉技能鱼雷机Lv7",
-		base = 69481,
-		max_hp = 71,
-		hp_growth = 2742,
-		weapon_ID = {
-			69497
-		}
-	},
-	[69488] = {
-		id = 69488,
-		name = "小光辉技能鱼雷机Lv8",
-		base = 69481,
-		max_hp = 77,
-		hp_growth = 2943,
-		weapon_ID = {
-			69498
-		}
-	},
-	[69489] = {
-		id = 69489,
-		name = "小光辉技能鱼雷机Lv9",
-		base = 69481,
-		max_hp = 82,
-		hp_growth = 3143,
-		weapon_ID = {
-			69499
-		}
-	},
-	[69490] = {
-		id = 69490,
-		name = "小光辉技能鱼雷机Lv10",
-		base = 69481,
-		max_hp = 87,
-		hp_growth = 3344,
-		weapon_ID = {
-			69500
-		}
-	},
-	[69501] = {
+	[68621] = {
 		attack_power = 2,
-		name = "小光辉圣光飞机Lv1",
-		type = 3,
+		name = "巴丹技能F6FLV1",
+		type = 1,
 		accuracy = 23,
-		model_ID = "jianyu",
+		model_ID = "f6f",
 		ACC_growth = 0,
-		crash_DMG = 306,
-		dodge = 1.11,
+		crash_DMG = 156,
+		dodge = 0.315,
 		funnel_behavior = "",
-		nationality = 2,
-		id = 69501,
-		icon = "jianyu",
+		nationality = 1,
+		id = 68621,
+		icon = "f6f",
 		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 1615,
-		speed = 60,
-		max_hp = 42,
+		dodge_limit = 11,
+		hp_growth = 1947,
+		speed = 50,
+		max_hp = 51,
 		scale = 1,
-		weapon_ID = {},
+		weapon_ID = {
+			50341,
+			50541,
+			68631
+		},
 		position_offset = {
 			0,
 			5,
@@ -88,13 +50,13 @@ pg.aircraft_template_188 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					-1.28,
+					1.62,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					-1.12,
+					-1,
 					0
 				}
 			}
@@ -111,7 +73,7 @@ pg.aircraft_template_188 = {
 				0
 			},
 			{
-				0.37,
+				0,
 				0,
 				0
 			},
@@ -122,36 +84,100 @@ pg.aircraft_template_188 = {
 			}
 		}
 	},
-	[69502] = {
-		id = 69502,
-		name = "小光辉圣光飞机Lv2",
-		base = 69501,
-		max_hp = 48,
-		hp_growth = 1826,
-		weapon_ID = {}
+	[68622] = {
+		id = 68622,
+		name = "巴丹技能F6FLV2",
+		base = 68621,
+		max_hp = 57,
+		hp_growth = 2201,
+		weapon_ID = {
+			50342,
+			50542,
+			68632
+		}
 	},
-	[69503] = {
-		id = 69503,
-		name = "小光辉圣光飞机Lv3",
-		base = 69501,
-		max_hp = 54,
-		hp_growth = 2036,
-		weapon_ID = {}
+	[68623] = {
+		id = 68623,
+		name = "巴丹技能F6FLV3",
+		base = 68621,
+		max_hp = 64,
+		hp_growth = 2455,
+		weapon_ID = {
+			50343,
+			50543,
+			68633
+		}
 	},
-	[69504] = {
-		id = 69504,
-		name = "小光辉圣光飞机Lv4",
-		base = 69501,
-		max_hp = 61,
-		hp_growth = 2247,
-		weapon_ID = {}
+	[68624] = {
+		id = 68624,
+		name = "巴丹技能F6FLV4",
+		base = 68621,
+		max_hp = 70,
+		hp_growth = 2710,
+		weapon_ID = {
+			50344,
+			50544,
+			68634
+		}
 	},
-	[69505] = {
-		id = 69505,
-		name = "小光辉圣光飞机Lv5",
-		base = 69501,
-		max_hp = 67,
-		hp_growth = 2458,
-		weapon_ID = {}
+	[68625] = {
+		id = 68625,
+		name = "巴丹技能F6FLV5",
+		base = 68621,
+		max_hp = 77,
+		hp_growth = 2964,
+		weapon_ID = {
+			50345,
+			50545,
+			68635
+		}
+	},
+	[68626] = {
+		id = 68626,
+		name = "巴丹技能F6FLV6",
+		base = 68621,
+		max_hp = 84,
+		hp_growth = 3218,
+		weapon_ID = {
+			50346,
+			50546,
+			68636
+		}
+	},
+	[68627] = {
+		id = 68627,
+		name = "巴丹技能F6FLV7",
+		base = 68621,
+		max_hp = 90,
+		hp_growth = 3472,
+		weapon_ID = {
+			50347,
+			50547,
+			68637
+		}
+	},
+	[68628] = {
+		id = 68628,
+		name = "巴丹技能F6FLV8",
+		base = 68621,
+		max_hp = 97,
+		hp_growth = 3726,
+		weapon_ID = {
+			50348,
+			50548,
+			68638
+		}
+	},
+	[68629] = {
+		id = 68629,
+		name = "巴丹技能F6FLV9",
+		base = 68621,
+		max_hp = 103,
+		hp_growth = 3980,
+		weapon_ID = {
+			50349,
+			50549,
+			68639
+		}
 	}
 }

@@ -1,231 +1,250 @@
 pg = pg or {}
 pg.equip_data_statistics_394 = {
-	[95004] = {
-		id = 95004,
-		damage = "74 x 3",
-		base = 95000,
+	[90783] = {
+		id = 90783,
+		damage = "16 x 4",
+		base = 90780,
 		weapon_id = {
-			95004
+			90783
 		}
 	},
-	[95005] = {
-		id = 95005,
-		damage = "82 x 3",
-		base = 95000,
+	[90784] = {
+		id = 90784,
+		damage = "17 x 4",
+		base = 90780,
 		weapon_id = {
-			95005
+			90784
 		}
 	},
-	[95006] = {
-		id = 95006,
-		damage = "90 x 3",
-		base = 95000,
+	[90785] = {
+		id = 90785,
+		damage = "18 x 4",
+		base = 90780,
 		weapon_id = {
-			95006
+			90785
 		}
 	},
-	[95020] = {
-		tech = 2,
-		name = "Triple 381mm M1934 Main Gun Mount",
-		speciality = "Volley",
-		type = 4,
-		value_2 = 25,
-		ammo = 1,
-		damage = "47 x 3",
-		nationality = 6,
-		rarity = 4,
-		id = 95020,
+	[90786] = {
+		id = 90786,
+		damage = "19 x 4",
+		base = 90780,
+		weapon_id = {
+			90786
+		}
+	},
+	[90787] = {
+		id = 90787,
+		damage = "19 x 4",
+		base = 90780,
+		weapon_id = {
+			90787
+		}
+	},
+	[90800] = {
+		tech = 0,
+		name = "Single 155mm Mle 1920 Secondary Gun Mount",
+		speciality = "Lock",
+		type = 2,
+		value_2 = 12,
+		ammo = 3,
+		damage = "10 x 4",
+		nationality = 8,
+		rarity = 3,
+		id = 90800,
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "Main guns that were used by the Vittorio Veneto-class battleships. Equippable by BBs and BCs.",
-		icon = "55000",
+		descrip = "No description",
+		icon = "50800",
 		attribute_2 = "cannon",
 		property_rate = {},
 		ammo_icon = {
-			2
+			1
 		},
 		ammo_info = {
 			{
-				2,
-				1561
+				1,
+				2201
 			}
 		},
 		equip_info = {
 			1,
 			2,
+			{
+				3,
+				2200
+			},
+			{
+				4,
+				1025
+			},
 			6,
 			10,
 			11,
 			12
 		},
 		weapon_id = {
-			95020
+			90800
 		},
 		skill_id = {},
 		part_main = {
-			4,
-			5,
-			10,
-			13
+			2
 		},
-		part_sub = {},
+		part_sub = {
+			5
+		},
 		equip_parameters = {},
 		label = {
-			"RN",
-			"BB",
+			"FFNF",
+			"CL",
 			"MG",
 			"AP"
 		}
 	},
-	[95021] = {
-		id = 95021,
-		damage = "56 x 3",
-		base = 95020,
+	[90801] = {
+		id = 90801,
+		damage = "12 x 4",
+		base = 90800,
 		weapon_id = {
-			95021
+			90801
 		}
 	},
-	[95022] = {
-		id = 95022,
-		damage = "64 x 3",
-		base = 95020,
+	[90802] = {
+		id = 90802,
+		damage = "14 x 4",
+		base = 90800,
 		weapon_id = {
-			95022
+			90802
 		}
 	},
-	[95023] = {
-		id = 95023,
-		damage = "73 x 3",
-		base = 95020,
+	[90803] = {
+		id = 90803,
+		damage = "16 x 4",
+		base = 90800,
 		weapon_id = {
-			95023
+			90803
 		}
 	},
-	[95024] = {
-		id = 95024,
-		damage = "82 x 3",
-		base = 95020,
+	[90804] = {
+		id = 90804,
+		damage = "17 x 4",
+		base = 90800,
 		weapon_id = {
-			95024
+			90804
 		}
 	},
-	[95025] = {
-		id = 95025,
-		damage = "91 x 3",
-		base = 95020,
+	[90805] = {
+		id = 90805,
+		damage = "18 x 4",
+		base = 90800,
 		weapon_id = {
-			95025
+			90805
 		}
 	},
-	[95026] = {
-		id = 95026,
-		damage = "100 x 3",
-		base = 95020,
+	[90806] = {
+		id = 90806,
+		damage = "19 x 4",
+		base = 90800,
 		weapon_id = {
-			95026
+			90806
 		}
 	},
-	[95027] = {
-		id = 95027,
-		damage = "108 x 3",
-		base = 95020,
+	[90807] = {
+		id = 90807,
+		damage = "19 x 4",
+		base = 90800,
 		weapon_id = {
-			95027
+			90807
 		}
 	},
-	[95028] = {
-		id = 95028,
-		damage = "117 x 3",
-		base = 95020,
-		weapon_id = {
-			95028
-		}
-	},
-	[95029] = {
-		id = 95029,
-		damage = "126 x 3",
-		base = 95020,
-		weapon_id = {
-			95029
-		}
-	},
-	[95030] = {
-		id = 95030,
-		damage = "135 x 3",
-		base = 95020,
-		weapon_id = {
-			95030
-		}
-	},
-	[95040] = {
-		tech = 3,
-		name = "Triple 381mm M1934 Main Gun Mount",
-		speciality = "Volley",
-		type = 4,
-		value_2 = 45,
-		ammo = 1,
-		damage = "52 x 3",
-		nationality = 6,
-		rarity = 5,
-		id = 95040,
-		value_3 = 0,
+	[90820] = {
+		rarity = 3,
+		name = "Gourdou-Leseurre GL.2 Fighter",
+		speciality = "Air",
+		type = 7,
+		tech = 0,
+		ammo = 5,
+		nationality = 8,
+		value_2 = 12,
+		id = 90820,
 		torpedo_ammo = 0,
-		descrip = "Main guns that were used by the Vittorio Veneto-class battleships. Equippable by BBs and BCs.",
-		icon = "55000",
-		attribute_2 = "cannon",
+		value_3 = 0,
+		descrip = "No description",
+		icon = "50820",
+		attribute_2 = "air",
 		property_rate = {},
-		ammo_icon = {
-			2
-		},
+		ammo_icon = {},
 		ammo_info = {
 			{
-				2,
-				1563
+				6,
+				50020
 			}
 		},
 		equip_info = {
-			1,
-			2,
 			6,
-			10,
-			11,
-			12
+			7,
+			8,
+			9
 		},
 		weapon_id = {
-			95040
+			90820,
+			88000
 		},
-		skill_id = {
-			6450
-		},
+		skill_id = {},
 		part_main = {
-			4,
-			5,
-			10,
-			13
+			6,
+			7
 		},
-		part_sub = {},
+		part_sub = {
+			6,
+			7
+		},
 		equip_parameters = {},
 		label = {
-			"RN",
-			"BB",
-			"MG",
-			"AP"
+			"FFNF",
+			"CV",
+			"FT"
 		}
 	},
-	[95041] = {
-		id = 95041,
-		damage = "62 x 3",
-		base = 95040,
+	[90821] = {
+		id = 90821,
+		base = 90820,
+		ammo_info = {
+			{
+				6,
+				50021
+			}
+		},
 		weapon_id = {
-			95041
+			90821,
+			88001
 		}
 	},
-	[95042] = {
-		id = 95042,
-		damage = "70 x 3",
-		base = 95040,
+	[90822] = {
+		id = 90822,
+		base = 90820,
+		ammo_info = {
+			{
+				6,
+				50022
+			}
+		},
 		weapon_id = {
-			95042
+			90822,
+			88002
+		}
+	},
+	[90823] = {
+		id = 90823,
+		base = 90820,
+		ammo_info = {
+			{
+				6,
+				50023
+			}
+		},
+		weapon_id = {
+			90823,
+			88003
 		}
 	}
 }

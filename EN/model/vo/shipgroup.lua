@@ -26,11 +26,11 @@ function slot0.getDefaultShipNameByGroupID(slot0)
 end
 
 function slot0.IsBluePrintGroup(slot0)
-	return table.contains(pg.ship_data_blueprint.all, slot0)
+	return tobool(pg.ship_data_blueprint[slot0])
 end
 
 function slot0.IsMetaGroup(slot0)
-	return table.contains(pg.ship_strengthen_meta.all, slot0)
+	return tobool(pg.ship_strengthen_meta[slot0])
 end
 
 slot0.STATE_LOCK = 0
@@ -267,7 +267,7 @@ function slot0.VoiceReplayCodition(slot0, slot1)
 		end
 	elseif slot1.unlock_condition[1] == uv0.CONDITION_MARRIED and slot0.married == 0 then
 		slot2 = false
-		slot3 = i18n("ship_profile_voice_locked_propose")
+		slot3 = (not slot0:IsXIdol() or i18n("ship_profile_voice_locked_propose_imas")) and i18n("ship_profile_voice_locked_propose")
 	end
 
 	return slot2, slot3
@@ -297,6 +297,41 @@ end
 
 function slot0.isMetaGroup(slot0)
 	return uv0.IsMetaGroup(slot0.id)
+end
+
+slot2 = {
+	feeling2 = true,
+	feeling3 = true,
+	feeling5 = true,
+	feeling4 = true,
+	propose = true,
+	feeling1 = true
+}
+
+function slot0.getIntimacyName(slot0, slot1)
+	if not uv0[slot1] then
+		return
+	end
+
+	if slot0:isMetaGroup() then
+		return i18n("meta_voice_name_" .. slot1)
+	elseif slot0:IsXIdol() then
+		return i18n("idolmaster_voice_name_" .. slot1)
+	end
+end
+
+function slot0.getProposeType(slot0)
+	if slot0:isMetaGroup() then
+		return "meta"
+	elseif slot0:IsXIdol() then
+		return "imas"
+	else
+		return "default"
+	end
+end
+
+function slot0.IsXIdol(slot0)
+	return slot0:getNation() == Nation.IDOL_LINK
 end
 
 return slot0

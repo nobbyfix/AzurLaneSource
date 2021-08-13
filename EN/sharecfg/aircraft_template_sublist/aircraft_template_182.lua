@@ -1,76 +1,37 @@
 pg = pg or {}
 pg.aircraft_template_182 = {
-	[68886] = {
-		id = 68886,
-		name = "大神澪技能轰炸机Lv6",
-		base = 68881,
-		max_hp = 73,
-		hp_growth = 2796,
-		weapon_ID = {
-			68896
-		}
-	},
-	[68887] = {
-		id = 68887,
-		name = "大神澪技能轰炸机Lv7",
-		base = 68881,
-		max_hp = 79,
-		hp_growth = 3016,
-		weapon_ID = {
-			68897
-		}
-	},
-	[68888] = {
-		id = 68888,
-		name = "大神澪技能轰炸机Lv8",
-		base = 68881,
+	[68010] = {
+		id = 68010,
+		name = "邦克山技能鱼雷机Lv10",
+		base = 68001,
 		max_hp = 86,
-		hp_growth = 3237,
+		hp_growth = 3301,
 		weapon_ID = {
-			68898
+			68020
 		}
 	},
-	[68889] = {
-		id = 68889,
-		name = "大神澪技能轰炸机Lv9",
-		base = 68881,
-		max_hp = 92,
-		hp_growth = 3458,
-		weapon_ID = {
-			68899
-		}
-	},
-	[68890] = {
-		id = 68890,
-		name = "大神澪技能轰炸机Lv10",
-		base = 68881,
-		max_hp = 98,
-		hp_growth = 3678,
-		weapon_ID = {
-			68900
-		}
-	},
-	[68951] = {
+	[68021] = {
 		attack_power = 2,
-		name = "白上吹雪狐笋轰炸机Lv1",
-		type = 3,
+		name = "邦克山技能战斗机Lv1",
+		type = 1,
 		accuracy = 23,
-		model_ID = "feiji_hulifeiji",
+		model_ID = "f6f",
 		ACC_growth = 0,
-		crash_DMG = 208,
+		crash_DMG = 156,
 		dodge = 1,
 		funnel_behavior = "",
-		nationality = 3,
-		id = 68951,
-		icon = "feiji_hulifeiji",
+		nationality = 1,
+		id = 68021,
+		icon = "F4U",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1692,
-		speed = 48,
-		max_hp = 42,
+		hp_growth = 1947,
+		speed = 50,
+		max_hp = 51,
 		scale = 1,
 		weapon_ID = {
-			68961
+			50441,
+			68051
 		},
 		position_offset = {
 			0,
@@ -90,13 +51,13 @@ pg.aircraft_template_182 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					-1.28,
+					1.62,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					-1.12,
+					-1,
 					0
 				}
 			}
@@ -113,7 +74,7 @@ pg.aircraft_template_182 = {
 				0
 			},
 			{
-				0.54,
+				0,
 				0,
 				0
 			},
@@ -124,44 +85,92 @@ pg.aircraft_template_182 = {
 			}
 		}
 	},
-	[68952] = {
-		id = 68952,
-		name = "白上吹雪狐笋轰炸机Lv2",
-		base = 68951,
-		max_hp = 48,
-		hp_growth = 1913,
+	[68022] = {
+		id = 68022,
+		name = "邦克山技能战斗机Lv2",
+		base = 68021,
+		max_hp = 57,
+		hp_growth = 2201,
 		weapon_ID = {
-			68962
+			50442,
+			68052
 		}
 	},
-	[68953] = {
-		id = 68953,
-		name = "白上吹雪狐笋轰炸机Lv3",
-		base = 68951,
-		max_hp = 54,
-		hp_growth = 2133,
+	[68023] = {
+		id = 68023,
+		name = "邦克山技能战斗机Lv3",
+		base = 68021,
+		max_hp = 64,
+		hp_growth = 2455,
 		weapon_ID = {
-			68963
+			50443,
+			68053
 		}
 	},
-	[68954] = {
-		id = 68954,
-		name = "白上吹雪狐笋轰炸机Lv4",
-		base = 68951,
-		max_hp = 61,
-		hp_growth = 2354,
+	[68024] = {
+		id = 68024,
+		name = "邦克山技能战斗机Lv4",
+		base = 68021,
+		max_hp = 70,
+		hp_growth = 2710,
 		weapon_ID = {
-			68964
+			50444,
+			68054
 		}
 	},
-	[68955] = {
-		id = 68955,
-		name = "白上吹雪狐笋轰炸机Lv5",
-		base = 68951,
-		max_hp = 67,
-		hp_growth = 2575,
+	[68025] = {
+		id = 68025,
+		name = "邦克山技能战斗机Lv5",
+		base = 68021,
+		max_hp = 77,
+		hp_growth = 2964,
 		weapon_ID = {
-			68965
+			50445,
+			68055
+		}
+	},
+	[68026] = {
+		id = 68026,
+		name = "邦克山技能战斗机Lv6",
+		base = 68021,
+		max_hp = 84,
+		hp_growth = 3218,
+		weapon_ID = {
+			50446,
+			68056
+		}
+	},
+	[68027] = {
+		id = 68027,
+		name = "邦克山技能战斗机Lv7",
+		base = 68021,
+		max_hp = 90,
+		hp_growth = 3472,
+		weapon_ID = {
+			50447,
+			68057
+		}
+	},
+	[68028] = {
+		id = 68028,
+		name = "邦克山技能战斗机Lv8",
+		base = 68021,
+		max_hp = 97,
+		hp_growth = 3726,
+		weapon_ID = {
+			50448,
+			68058
+		}
+	},
+	[68029] = {
+		id = 68029,
+		name = "邦克山技能战斗机Lv9",
+		base = 68021,
+		max_hp = 103,
+		hp_growth = 3980,
+		weapon_ID = {
+			50449,
+			68059
 		}
 	}
 }

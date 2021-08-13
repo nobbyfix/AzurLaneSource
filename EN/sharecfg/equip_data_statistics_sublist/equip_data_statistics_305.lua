@@ -1,63 +1,52 @@
 pg = pg or {}
 pg.equip_data_statistics_305 = {
-	[45149] = {
-		id = 45149,
-		damage = "137 x 4",
-		base = 45140,
+	[45023] = {
+		id = 45023,
+		damage = "86 x 3",
+		base = 45020,
 		weapon_id = {
-			45149
+			45023
 		}
 	},
-	[45150] = {
-		id = 45150,
-		damage = "145 x 4",
-		base = 45140,
+	[45024] = {
+		id = 45024,
+		damage = "92 x 3",
+		base = 45020,
 		weapon_id = {
-			45150
+			45024
 		}
 	},
-	[45151] = {
-		id = 45151,
-		anti_siren = 100,
-		damage = "145 x 4",
-		base = 45140,
+	[45025] = {
+		id = 45025,
+		damage = "99 x 3",
+		base = 45020,
 		weapon_id = {
-			45151
+			45025
 		}
 	},
-	[45152] = {
-		id = 45152,
-		anti_siren = 200,
-		damage = "145 x 4",
-		base = 45140,
+	[45026] = {
+		id = 45026,
+		damage = "106 x 3",
+		base = 45020,
 		weapon_id = {
-			45152
+			45026
 		}
 	},
-	[45153] = {
-		id = 45153,
-		anti_siren = 300,
-		damage = "145 x 4",
-		base = 45140,
-		weapon_id = {
-			45153
-		}
-	},
-	[45200] = {
-		tech = 1,
-		name = "533mm Quintuple Magnetic Torpedo Mount ",
+	[45040] = {
+		tech = 3,
+		name = "533mm Triple Magnetic Torpedo Mount",
 		speciality = "Torpedo",
 		type = 5,
 		value_2 = 25,
 		ammo = 4,
-		damage = "63 x 5",
+		damage = "70 x 3",
 		nationality = 4,
 		rarity = 4,
-		id = 45200,
+		id = 45040,
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "The 533mm Quintuple Magnetic Torpedo Mount  was developed by Vickers Engineering and employs the use of magnetic and acoustance guidance to greatly increase accuracy.",
-		icon = "45200",
+		descrip = "The 533mm Triple Magnetic Torpedo Mount was developed by Vickers Engineering and employs the use of magnetic and acoustic guidance to greatly increase accuracy.",
+		icon = "45000",
 		attribute_2 = "torpedo",
 		property_rate = {},
 		ammo_icon = {},
@@ -74,7 +63,7 @@ pg.equip_data_statistics_305 = {
 			},
 			{
 				4,
-				1404
+				1402
 			},
 			6,
 			10,
@@ -82,7 +71,7 @@ pg.equip_data_statistics_305 = {
 			12
 		},
 		weapon_id = {
-			45200
+			45040
 		},
 		skill_id = {},
 		part_main = {
@@ -102,104 +91,113 @@ pg.equip_data_statistics_305 = {
 			"KMS",
 			"ST",
 			"TP",
-			"QUINT"
+			"TRI"
 		}
 	},
-	[45201] = {
-		id = 45201,
-		damage = "69 x 5",
-		base = 45200,
+	[45041] = {
+		id = 45041,
+		damage = "77 x 3",
+		base = 45040,
 		weapon_id = {
-			45201
+			45041
 		}
 	},
-	[45202] = {
-		id = 45202,
-		damage = "75 x 5",
-		base = 45200,
+	[45042] = {
+		id = 45042,
+		damage = "85 x 3",
+		base = 45040,
 		weapon_id = {
-			45202
+			45042
 		}
 	},
-	[45203] = {
-		id = 45203,
-		damage = "81 x 5",
-		base = 45200,
+	[45043] = {
+		id = 45043,
+		damage = "92 x 3",
+		base = 45040,
 		weapon_id = {
-			45203
+			45043
 		}
 	},
-	[45204] = {
-		id = 45204,
-		damage = "87 x 5",
-		base = 45200,
+	[45044] = {
+		id = 45044,
+		damage = "100 x 3",
+		base = 45040,
 		weapon_id = {
-			45204
+			45044
 		}
 	},
-	[45205] = {
-		id = 45205,
-		damage = "93 x 5",
-		base = 45200,
+	[45045] = {
+		id = 45045,
+		damage = "107 x 3",
+		base = 45040,
 		weapon_id = {
-			45205
+			45045
 		}
 	},
-	[45206] = {
-		id = 45206,
-		damage = "99 x 5",
-		base = 45200,
+	[45046] = {
+		id = 45046,
+		damage = "115 x 3",
+		base = 45040,
 		weapon_id = {
-			45206
+			45046
 		}
 	},
-	[45207] = {
-		id = 45207,
-		damage = "105 x 5",
-		base = 45200,
+	[45047] = {
+		id = 45047,
+		damage = "122 x 3",
+		base = 45040,
 		weapon_id = {
-			45207
+			45047
 		}
 	},
-	[45208] = {
-		id = 45208,
-		damage = "111 x 5",
-		base = 45200,
+	[45048] = {
+		id = 45048,
+		damage = "130 x 3",
+		base = 45040,
 		weapon_id = {
-			45208
+			45048
 		}
 	},
-	[45209] = {
-		id = 45209,
-		damage = "117 x 5",
-		base = 45200,
+	[45049] = {
+		id = 45049,
+		damage = "137 x 3",
+		base = 45040,
 		weapon_id = {
-			45209
+			45049
 		}
 	},
-	[45210] = {
-		id = 45210,
-		damage = "123 x 5",
-		base = 45200,
+	[45050] = {
+		id = 45050,
+		damage = "145 x 3",
+		base = 45040,
 		weapon_id = {
-			45210
+			45050
 		}
 	},
-	[45220] = {
-		tech = 2,
-		name = "533mm Quintuple Magnetic Torpedo Mount ",
+	[45051] = {
+		id = 45051,
+		anti_siren = 100,
+		damage = "145 x 3",
+		base = 45040,
+		weapon_id = {
+			45051
+		}
+	},
+	[45100] = {
+		tech = 1,
+		name = "533mm Quadruple Magnetic Torpedo Mount",
 		speciality = "Torpedo",
 		type = 5,
-		value_2 = 45,
+		value_2 = 12,
 		ammo = 4,
-		damage = "66 x 5",
+		damage = "63 x 4",
 		nationality = 4,
-		rarity = 5,
-		id = 45220,
+		rarity = 3,
+		id = 45100,
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "The 533mm Quintuple Magnetic Torpedo Mount  was developed by Vickers Engineering and employs the use of magnetic and acoustance guidance to greatly increase accuracy.",
-		icon = "45200",
+		descrip = "The 533mm Quadruple Magnetic Torpedo Mount was developed by Vickers Engineering and employs the use of magnetic and acoustance guidance to greatly increase accuracy.",
+		icon = "45100",
 		attribute_2 = "torpedo",
 		property_rate = {},
 		ammo_icon = {},
@@ -216,7 +214,7 @@ pg.equip_data_statistics_305 = {
 			},
 			{
 				4,
-				1404
+				1403
 			},
 			6,
 			10,
@@ -224,7 +222,7 @@ pg.equip_data_statistics_305 = {
 			12
 		},
 		weapon_id = {
-			45220
+			45100
 		},
 		skill_id = {},
 		part_main = {
@@ -244,7 +242,7 @@ pg.equip_data_statistics_305 = {
 			"KMS",
 			"ST",
 			"TP",
-			"QUINT"
+			"QUAD"
 		}
 	}
 }

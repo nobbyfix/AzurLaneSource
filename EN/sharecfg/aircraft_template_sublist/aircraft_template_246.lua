@@ -1,173 +1,117 @@
 pg = pg or {}
 pg.aircraft_template_246 = {
-	[84060] = {
+	[83222] = {
+		id = 83222,
+		max_hp = 47,
+		hp_growth = 1826,
+		base = 83220,
+		weapon_ID = {
+			50022,
+			50522
+		}
+	},
+	[83223] = {
+		id = 83223,
+		max_hp = 53,
+		hp_growth = 2036,
+		base = 83220,
+		weapon_ID = {
+			50023,
+			50523
+		}
+	},
+	[83224] = {
+		id = 83224,
+		max_hp = 58,
+		hp_growth = 2247,
+		base = 83220,
+		weapon_ID = {
+			50024,
+			50524
+		}
+	},
+	[83225] = {
+		id = 83225,
+		max_hp = 64,
+		hp_growth = 2458,
+		base = 83220,
+		weapon_ID = {
+			50025,
+			50525
+		}
+	},
+	[83226] = {
+		id = 83226,
+		max_hp = 69,
+		hp_growth = 2669,
+		base = 83220,
+		weapon_ID = {
+			50026,
+			50526
+		}
+	},
+	[83227] = {
+		id = 83227,
+		max_hp = 75,
+		hp_growth = 2879,
+		base = 83220,
+		weapon_ID = {
+			50027,
+			50527
+		}
+	},
+	[83228] = {
+		id = 83228,
+		max_hp = 80,
+		hp_growth = 3090,
+		base = 83220,
+		weapon_ID = {
+			50028,
+			50528
+		}
+	},
+	[83229] = {
+		id = 83229,
+		max_hp = 86,
+		hp_growth = 3301,
+		base = 83220,
+		weapon_ID = {
+			50029,
+			50529
+		}
+	},
+	[83230] = {
+		id = 83230,
+		max_hp = 91,
+		hp_growth = 3511,
+		base = 83220,
+		weapon_ID = {
+			50030,
+			50530
+		}
+	},
+	[83240] = {
 		attack_power = 2,
-		name = "Ar-197舰载战斗机",
+		name = "零战五二型",
 		type = 1,
 		accuracy = 23,
-		model_ID = "Ar197",
-		ACC_growth = 0,
-		crash_DMG = 40,
-		dodge = 0.345,
-		funnel_behavior = "",
-		nationality = 4,
-		id = 84060,
-		icon = "Ar197",
-		AP_growth = 2000,
-		dodge_limit = 8,
-		hp_growth = 1344,
-		speed = 49,
-		max_hp = 35,
-		scale = 1,
-		weapon_ID = {
-			59040,
-			59440
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.62,
-					-1.03,
-					0
-				},
-				{
-					0.62,
-					1.32,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[84061] = {
-		id = 84061,
-		max_hp = 40,
-		hp_growth = 1546,
-		base = 84060,
-		weapon_ID = {
-			59041,
-			59441
-		}
-	},
-	[84062] = {
-		id = 84062,
-		max_hp = 45,
-		hp_growth = 1747,
-		base = 84060,
-		weapon_ID = {
-			59042,
-			59442
-		}
-	},
-	[84063] = {
-		id = 84063,
-		max_hp = 51,
-		hp_growth = 1949,
-		base = 84060,
-		weapon_ID = {
-			59043,
-			59443
-		}
-	},
-	[84064] = {
-		id = 84064,
-		max_hp = 56,
-		hp_growth = 2150,
-		base = 84060,
-		weapon_ID = {
-			59044,
-			59444
-		}
-	},
-	[84065] = {
-		id = 84065,
-		max_hp = 61,
-		hp_growth = 2352,
-		base = 84060,
-		weapon_ID = {
-			59045,
-			59445
-		}
-	},
-	[84066] = {
-		id = 84066,
-		max_hp = 66,
-		hp_growth = 2554,
-		base = 84060,
-		weapon_ID = {
-			59046,
-			59446
-		}
-	},
-	[84067] = {
-		id = 84067,
-		max_hp = 72,
-		hp_growth = 2755,
-		base = 84060,
-		weapon_ID = {
-			59047,
-			59447
-		}
-	},
-	[84080] = {
-		attack_power = 2,
-		name = "试作型舰载FW-190 A-5",
-		type = 1,
-		accuracy = 23,
-		model_ID = "Fw190A5",
+		model_ID = "lingzhan52",
 		ACC_growth = 0,
 		crash_DMG = 70,
 		dodge = 0.315,
 		funnel_behavior = "",
-		nationality = 4,
-		id = 84080,
-		icon = "Fw190A5",
+		nationality = 3,
+		id = 83240,
+		icon = "lingzhan52",
 		AP_growth = 2000,
-		dodge_limit = 10,
-		hp_growth = 1478,
-		speed = 51,
-		max_hp = 38,
+		dodge_limit = 9,
+		hp_growth = 1532,
+		speed = 55,
+		max_hp = 40,
 		scale = 1,
 		weapon_ID = {
-			59040,
-			59440,
-			59140
+			50040,
+			50540
 		},
 		position_offset = {
 			0,
@@ -187,13 +131,13 @@ pg.aircraft_template_246 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.66,
-					-0.9,
+					0.68,
+					-0.667,
 					0
 				},
 				{
-					1.06,
-					1.54,
+					0.97,
+					0.584,
 					0
 				}
 			}
@@ -210,7 +154,7 @@ pg.aircraft_template_246 = {
 				0
 			},
 			{
-				0,
+				0.51,
 				0,
 				0
 			},
@@ -219,17 +163,6 @@ pg.aircraft_template_246 = {
 				0,
 				0
 			}
-		}
-	},
-	[84081] = {
-		id = 84081,
-		max_hp = 44,
-		hp_growth = 1700,
-		base = 84080,
-		weapon_ID = {
-			59041,
-			59441,
-			59141
 		}
 	}
 }

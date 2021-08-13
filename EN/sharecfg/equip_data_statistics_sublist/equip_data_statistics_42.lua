@@ -1,5 +1,11 @@
 pg = pg or {}
 pg.equip_data_statistics_42 = {
+	[2046] = {
+		id = 2046,
+		value_2 = 3,
+		value_1 = "266",
+		base = 2040
+	},
 	[2047] = {
 		id = 2047,
 		value_2 = 4,
@@ -168,47 +174,5 @@ pg.equip_data_statistics_42 = {
 		value_2 = 34,
 		value_1 = "34",
 		base = 2120
-	},
-	[2140] = {
-		type = 10,
-		name = "Aviation Oil Tank",
-		speciality = "N/A",
-		tech = 3,
-		value_2 = 20,
-		ammo = 10,
-		descrip = "Effectively increases the HP of aircraft.",
-		nationality = 0,
-		rarity = 4,
-		attribute_1 = "air",
-		value_3 = 0,
-		torpedo_ammo = 0,
-		id = 2140,
-		icon = "2100",
-		value_1 = "28",
-		attribute_2 = "durability",
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {
-			6
-		},
-		weapon_id = {},
-		skill_id = {
-			6090
-		},
-		part_main = {
-			6,
-			7,
-			10
-		},
-		part_sub = {
-			6,
-			7,
-			10
-		},
-		equip_parameters = {},
-		label = {
-			"DEV"
-		}
 	}
 }

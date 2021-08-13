@@ -628,6 +628,10 @@ pg.skill_data_display = {
 		id = 8521,
 		name = "Reborn Combined Fleet Flagship"
 	},
+	[8530] = {
+		id = 8530,
+		name = "Battle Simulation - Fast Reload"
+	},
 	[8609] = {
 		id = 8609,
 		name = "Surpass Limits "
@@ -3544,6 +3548,14 @@ pg.skill_data_display = {
 		id = 14151,
 		name = "Curtain of Rime"
 	},
+	[14155] = {
+		id = 14155,
+		name = "Curtain of Rime"
+	},
+	[14156] = {
+		id = 14156,
+		name = "Curtain of Rime"
+	},
 	[14160] = {
 		id = 14160,
 		name = "Ingenious Tactician"
@@ -3936,6 +3948,10 @@ pg.skill_data_display = {
 		id = 14641,
 		name = "Freedom Through Firepower"
 	},
+	[14642] = {
+		id = 14642,
+		name = "Freedom Through Firepower"
+	},
 	[14651] = {
 		id = 14651,
 		name = "Strike Orders Received!"
@@ -3979,6 +3995,18 @@ pg.skill_data_display = {
 	[14703] = {
 		id = 14703,
 		name = "Foo and Friends and Kasumi Too"
+	},
+	[14710] = {
+		id = 14710,
+		name = "Destruction Bolt "
+	},
+	[14711] = {
+		id = 14711,
+		name = "Destruction Bolt "
+	},
+	[14712] = {
+		id = 14712,
+		name = "Destruction Bolt "
 	},
 	[18010] = {
 		id = 18010,
@@ -4039,6 +4067,42 @@ pg.skill_data_display = {
 	[18252] = {
 		id = 18252,
 		name = "Emotion Inhibition Module+ "
+	},
+	[18270] = {
+		id = 18270,
+		name = "Bounce Right Back+"
+	},
+	[18271] = {
+		id = 18271,
+		name = "Bounce Right Back+"
+	},
+	[18272] = {
+		id = 18272,
+		name = "Bounce Right Back+"
+	},
+	[18320] = {
+		id = 18320,
+		name = "Ausgewogen+"
+	},
+	[18322] = {
+		id = 18322,
+		name = "Ausgewogen+"
+	},
+	[18340] = {
+		id = 18340,
+		name = "Herteitr's Rolling Thunder+"
+	},
+	[18350] = {
+		id = 18350,
+		name = "Augmenting Mechanism: Setzer Principle+"
+	},
+	[18351] = {
+		id = 18351,
+		name = "Augmenting Mechanism: Setzer Principle+"
+	},
+	[18352] = {
+		id = 18352,
+		name = "Augmenting Mechanism: Setzer Principle+"
 	},
 	[19000] = {
 		id = 19000,
@@ -4327,6 +4391,170 @@ pg.skill_data_display = {
 	[19363] = {
 		id = 19363,
 		name = "Substitute Mechanism: Holy Thurible "
+	},
+	[19380] = {
+		id = 19380,
+		name = "Sky-Rending Retribution"
+	},
+	[19390] = {
+		id = 19390,
+		name = "Flame-Anointed Conquest"
+	},
+	[19391] = {
+		id = 19391,
+		name = "Flame-Anointed Conquest"
+	},
+	[19392] = {
+		id = 19392,
+		name = "Flame-Anointed Conquest"
+	},
+	[19393] = {
+		id = 19393,
+		name = "Flame-Anointed Conquest"
+	},
+	[19400] = {
+		id = 19400,
+		name = "The Great One's Shadow"
+	},
+	[19401] = {
+		id = 19401,
+		name = "The Great One's Shadow"
+	},
+	[19410] = {
+		id = 19410,
+		name = "Engulfer of the Golden Vortex"
+	},
+	[19420] = {
+		id = 19420,
+		name = "Abyssal Banquet"
+	},
+	[19421] = {
+		id = 19421,
+		name = "Abyssal Banquet"
+	},
+	[19422] = {
+		id = 19422,
+		name = "Abyssal Banquet"
+	},
+	[19430] = {
+		id = 19430,
+		name = "Jöttun's Jaws"
+	},
+	[19431] = {
+		id = 19431,
+		name = "Jöttun's Jaws"
+	},
+	[19432] = {
+		id = 19432,
+		name = "Jöttun's Jaws"
+	},
+	[19433] = {
+		id = 19433,
+		name = "Jöttun's Jaws"
+	},
+	[19434] = {
+		id = 19434,
+		name = "Jöttun's Jaws"
+	},
+	[19440] = {
+		id = 19440,
+		name = "Riddle Me This"
+	},
+	[19441] = {
+		id = 19441,
+		name = "Riddle Me This"
+	},
+	[19442] = {
+		id = 19442,
+		name = "Riddle Me This"
+	},
+	[19443] = {
+		id = 19443,
+		name = "Riddle Me This"
+	},
+	[19450] = {
+		id = 19450,
+		name = "Hide and Seek"
+	},
+	[19451] = {
+		id = 19451,
+		name = "Hide and Seek"
+	},
+	[19452] = {
+		id = 19452,
+		name = "Hide and Seek"
+	},
+	[19460] = {
+		id = 19460,
+		name = "Hex-Principle of Insight"
+	},
+	[19461] = {
+		id = 19461,
+		name = "Hex-Principle of Insight"
+	},
+	[19470] = {
+		id = 19470,
+		name = "Hex-Principle of Shattering"
+	},
+	[19480] = {
+		id = 19480,
+		name = "Hex-Principle of Dominance"
+	},
+	[19481] = {
+		id = 19481,
+		name = "Hex-Principle of Dominance"
+	},
+	[19482] = {
+		id = 19482,
+		name = "Hex-Principle of Dominance"
+	},
+	[19490] = {
+		id = 19490,
+		name = "Legendary Voyage"
+	},
+	[19491] = {
+		id = 19491,
+		name = "Legendary Voyage"
+	},
+	[19492] = {
+		id = 19492,
+		name = "Legendary Voyage"
+	},
+	[19495] = {
+		id = 19495,
+		name = "Legendary Voyage"
+	},
+	[19500] = {
+		id = 19500,
+		name = "Il Milione"
+	},
+	[19501] = {
+		id = 19501,
+		name = "Il Milione"
+	},
+	[19502] = {
+		id = 19502,
+		name = "Il Milione"
+	},
+	[19510] = {
+		id = 19510,
+		name = "Untold Tales"
+	},
+	[19511] = {
+		id = 19511,
+		name = "Untold Tales"
+	},
+	[19520] = {
+		id = 19520,
+		name = "Untold Tales"
+	},
+	[19521] = {
+		id = 19521,
+		name = "Untold Tales"
+	},
+	[19522] = {
+		id = 19522,
+		name = "Untold Tales"
 	},
 	[20011] = {
 		id = 20011,
@@ -5528,6 +5756,14 @@ pg.skill_data_display = {
 		id = 29732,
 		name = "All Out Assault Ⅱ"
 	},
+	[29741] = {
+		id = 29741,
+		name = "All Out Assault Ⅰ"
+	},
+	[29742] = {
+		id = 29742,
+		name = "All Out Assault Ⅱ"
+	},
 	[39000] = {
 		id = 39000,
 		name = "Optimize I"
@@ -5948,6 +6184,134 @@ pg.skill_data_display = {
 		id = 106141,
 		name = "Hanakagura"
 	},
+	[107010] = {
+		id = 107010,
+		name = "Cutesy Clumsy?"
+	},
+	[107020] = {
+		id = 107020,
+		name = "An Idol's Ambitions"
+	},
+	[107021] = {
+		id = 107021,
+		name = "An Idol's Ambitions"
+	},
+	[107030] = {
+		id = 107030,
+		name = "Positivity Burst!"
+	},
+	[107040] = {
+		id = 107040,
+		name = "Cerulean Song"
+	},
+	[107041] = {
+		id = 107041,
+		name = "Cerulean Song"
+	},
+	[107050] = {
+		id = 107050,
+		name = "The Fruits of Labor"
+	},
+	[107051] = {
+		id = 107051,
+		name = "The Fruits of Labor"
+	},
+	[107060] = {
+		id = 107060,
+		name = "Alongside the Ocean's Wings"
+	},
+	[107070] = {
+		id = 107070,
+		name = "Iori Strike!"
+	},
+	[107071] = {
+		id = 107071,
+		name = "Iori Strike!"
+	},
+	[107080] = {
+		id = 107080,
+		name = "Iori Defense!"
+	},
+	[107081] = {
+		id = 107081,
+		name = "Iori Defense!"
+	},
+	[107090] = {
+		id = 107090,
+		name = "Feigned Innocence?"
+	},
+	[107100] = {
+		id = 107100,
+		name = "Healing Augury"
+	},
+	[107101] = {
+		id = 107101,
+		name = "Healing Augury"
+	},
+	[107102] = {
+		id = 107102,
+		name = "Healing Augury"
+	},
+	[107103] = {
+		id = 107103,
+		name = "Healing Augury"
+	},
+	[107104] = {
+		id = 107104,
+		name = "Healing Augury"
+	},
+	[107110] = {
+		id = 107110,
+		name = "Directionally Challenged"
+	},
+	[107111] = {
+		id = 107111,
+		name = "Directionally Challenged"
+	},
+	[107112] = {
+		id = 107112,
+		name = "Directionally Challenged"
+	},
+	[107120] = {
+		id = 107120,
+		name = "Fleet Course Management"
+	},
+	[107121] = {
+		id = 107121,
+		name = "Fleet Course Management"
+	},
+	[107122] = {
+		id = 107122,
+		name = "Fleet Course Management"
+	},
+	[107123] = {
+		id = 107123,
+		name = "Fleet Course Management"
+	},
+	[107124] = {
+		id = 107124,
+		name = "Fleet Course Management"
+	},
+	[107130] = {
+		id = 107130,
+		name = "Logistics Buddy"
+	},
+	[107140] = {
+		id = 107140,
+		name = "Prankster's Cheer - Ami"
+	},
+	[107150] = {
+		id = 107150,
+		name = "Double Trouble - Ami"
+	},
+	[107160] = {
+		id = 107160,
+		name = "Prankster's Cheer - Mami"
+	},
+	[107170] = {
+		id = 107170,
+		name = "Double Trouble - Mami"
+	},
 	[800010] = {
 		id = 800010,
 		name = "Shadowflame Torch"
@@ -6230,6 +6594,7 @@ pg.skill_data_display = {
 		7000,
 		7500,
 		8521,
+		8530,
 		8609,
 		8640,
 		8641,
@@ -6959,6 +7324,8 @@ pg.skill_data_display = {
 		14140,
 		14150,
 		14151,
+		14155,
+		14156,
 		14160,
 		14161,
 		14162,
@@ -7057,6 +7424,7 @@ pg.skill_data_display = {
 		14623,
 		14630,
 		14641,
+		14642,
 		14651,
 		14660,
 		14661,
@@ -7068,6 +7436,9 @@ pg.skill_data_display = {
 		14701,
 		14702,
 		14703,
+		14710,
+		14711,
+		14712,
 		18010,
 		18040,
 		18041,
@@ -7083,6 +7454,15 @@ pg.skill_data_display = {
 		18181,
 		18250,
 		18252,
+		18270,
+		18271,
+		18272,
+		18320,
+		18322,
+		18340,
+		18350,
+		18351,
+		18352,
 		19000,
 		19001,
 		19002,
@@ -7155,6 +7535,47 @@ pg.skill_data_display = {
 		19361,
 		19362,
 		19363,
+		19380,
+		19390,
+		19391,
+		19392,
+		19393,
+		19400,
+		19401,
+		19410,
+		19420,
+		19421,
+		19422,
+		19430,
+		19431,
+		19432,
+		19433,
+		19434,
+		19440,
+		19441,
+		19442,
+		19443,
+		19450,
+		19451,
+		19452,
+		19460,
+		19461,
+		19470,
+		19480,
+		19481,
+		19482,
+		19490,
+		19491,
+		19492,
+		19495,
+		19500,
+		19501,
+		19502,
+		19510,
+		19511,
+		19520,
+		19521,
+		19522,
 		20011,
 		20012,
 		20021,
@@ -7455,6 +7876,8 @@ pg.skill_data_display = {
 		29692,
 		29731,
 		29732,
+		29741,
+		29742,
 		39000,
 		39001,
 		39002,
@@ -7560,6 +7983,38 @@ pg.skill_data_display = {
 		106131,
 		106140,
 		106141,
+		107010,
+		107020,
+		107021,
+		107030,
+		107040,
+		107041,
+		107050,
+		107051,
+		107060,
+		107070,
+		107071,
+		107080,
+		107081,
+		107090,
+		107100,
+		107101,
+		107102,
+		107103,
+		107104,
+		107110,
+		107111,
+		107112,
+		107120,
+		107121,
+		107122,
+		107123,
+		107124,
+		107130,
+		107140,
+		107150,
+		107160,
+		107170,
 		800010,
 		800020,
 		800021,

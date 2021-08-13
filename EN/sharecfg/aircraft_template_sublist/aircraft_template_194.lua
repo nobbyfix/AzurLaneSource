@@ -1,83 +1,36 @@
 pg = pg or {}
 pg.aircraft_template_194 = {
-	[69926] = {
-		id = 69926,
-		name = "信浓技能试制紫电改二 LV6",
-		base = 69921,
-		max_hp = 70,
-		hp_growth = 2681,
+	[68890] = {
+		id = 68890,
+		name = "大神澪技能轰炸机Lv10",
+		base = 68881,
+		max_hp = 98,
+		hp_growth = 3678,
 		weapon_ID = {
-			59546,
-			69966
+			68900
 		}
 	},
-	[69927] = {
-		id = 69927,
-		name = "信浓技能试制紫电改二 LV7",
-		base = 69921,
-		max_hp = 76,
-		hp_growth = 2911,
-		weapon_ID = {
-			59547,
-			69967
-		}
-	},
-	[69928] = {
-		id = 69928,
-		name = "信浓技能试制紫电改二 LV8",
-		base = 69921,
-		max_hp = 82,
-		hp_growth = 3141,
-		weapon_ID = {
-			59548,
-			69968
-		}
-	},
-	[69929] = {
-		id = 69929,
-		name = "信浓技能试制紫电改二 LV9",
-		base = 69921,
-		max_hp = 88,
-		hp_growth = 3371,
-		weapon_ID = {
-			59549,
-			69969
-		}
-	},
-	[69930] = {
-		id = 69930,
-		name = "信浓技能试制紫电改二 LV10",
-		base = 69921,
-		max_hp = 94,
-		hp_growth = 3601,
-		weapon_ID = {
-			59550,
-			69970
-		}
-	},
-	[69931] = {
+	[68951] = {
 		attack_power = 2,
-		name = "信浓技能流星 LV1",
-		type = 2,
+		name = "白上吹雪狐笋轰炸机Lv1",
+		type = 3,
 		accuracy = 23,
-		model_ID = "liuxing",
+		model_ID = "feiji_hulifeiji",
 		ACC_growth = 0,
-		crash_DMG = 188,
-		dodge = 1.05,
+		crash_DMG = 208,
+		dodge = 1,
 		funnel_behavior = "",
-		nationality = 2,
-		id = 69931,
-		icon = "liuxing",
+		nationality = 3,
+		id = 68951,
+		icon = "feiji_hulifeiji",
 		AP_growth = 2000,
-		dodge_limit = 5,
-		hp_growth = 1594,
-		speed = 52,
-		max_hp = 41,
+		dodge_limit = 0,
+		hp_growth = 1692,
+		speed = 48,
+		max_hp = 42,
 		scale = 1,
 		weapon_ID = {
-			50541,
-			50841,
-			51461
+			68961
 		},
 		position_offset = {
 			0,
@@ -120,7 +73,7 @@ pg.aircraft_template_194 = {
 				0
 			},
 			{
-				0.26,
+				0.54,
 				0,
 				0
 			},
@@ -131,52 +84,84 @@ pg.aircraft_template_194 = {
 			}
 		}
 	},
-	[69932] = {
-		id = 69932,
-		name = "信浓技能流星 LV2",
-		base = 69931,
-		max_hp = 47,
-		hp_growth = 1802,
+	[68952] = {
+		id = 68952,
+		name = "白上吹雪狐笋轰炸机Lv2",
+		base = 68951,
+		max_hp = 48,
+		hp_growth = 1913,
 		weapon_ID = {
-			50542,
-			50842,
-			51462
+			68962
 		}
 	},
-	[69933] = {
-		id = 69933,
-		name = "信浓技能流星 LV3",
-		base = 69931,
-		max_hp = 52,
-		hp_growth = 2010,
+	[68953] = {
+		id = 68953,
+		name = "白上吹雪狐笋轰炸机Lv3",
+		base = 68951,
+		max_hp = 54,
+		hp_growth = 2133,
 		weapon_ID = {
-			50543,
-			50843,
-			51463
+			68963
 		}
 	},
-	[69934] = {
-		id = 69934,
-		name = "信浓技能流星 LV4",
-		base = 69931,
-		max_hp = 58,
-		hp_growth = 2218,
+	[68954] = {
+		id = 68954,
+		name = "白上吹雪狐笋轰炸机Lv4",
+		base = 68951,
+		max_hp = 61,
+		hp_growth = 2354,
 		weapon_ID = {
-			50544,
-			50844,
-			51464
+			68964
 		}
 	},
-	[69935] = {
-		id = 69935,
-		name = "信浓技能流星 LV5",
-		base = 69931,
-		max_hp = 63,
-		hp_growth = 2426,
+	[68955] = {
+		id = 68955,
+		name = "白上吹雪狐笋轰炸机Lv5",
+		base = 68951,
+		max_hp = 67,
+		hp_growth = 2575,
 		weapon_ID = {
-			50545,
-			50845,
-			51465
+			68965
+		}
+	},
+	[68956] = {
+		id = 68956,
+		name = "白上吹雪狐笋轰炸机Lv6",
+		base = 68951,
+		max_hp = 73,
+		hp_growth = 2796,
+		weapon_ID = {
+			68966
+		}
+	},
+	[68957] = {
+		id = 68957,
+		name = "白上吹雪狐笋轰炸机Lv7",
+		base = 68951,
+		max_hp = 79,
+		hp_growth = 3016,
+		weapon_ID = {
+			68967
+		}
+	},
+	[68958] = {
+		id = 68958,
+		name = "白上吹雪狐笋轰炸机Lv8",
+		base = 68951,
+		max_hp = 86,
+		hp_growth = 3237,
+		weapon_ID = {
+			68968
+		}
+	},
+	[68959] = {
+		id = 68959,
+		name = "白上吹雪狐笋轰炸机Lv9",
+		base = 68951,
+		max_hp = 92,
+		hp_growth = 3458,
+		weapon_ID = {
+			68969
 		}
 	}
 }

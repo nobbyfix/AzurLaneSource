@@ -1115,5 +1115,13 @@ pg.voice_actor_CN = {
 	{
 		code = 279,
 		actor_name = "Itou Ayasa"
+	},
+	{
+		code = 280,
+		actor_name = "Misawa Sachika"
+	},
+	{
+		code = 281,
+		actor_name = "Wakabayashi Naomi "
 	}
 }

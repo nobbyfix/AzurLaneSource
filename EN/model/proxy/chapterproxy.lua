@@ -138,6 +138,12 @@ function slot0.register(slot0)
 				uv0:updateExtraFlag(slot1, slot0.add_flag_list, slot0.del_flag_list)
 			end
 
+			if #slot0.buff_list > 0 then
+				slot2 = bit.bor(slot2, ChapterConst.DirtyStrategyComboPanel)
+
+				slot1:UpdateBuffList(slot0.buff_list)
+			end
+
 			uv0:updateChapter(slot1, slot2)
 		end
 	end)
@@ -150,7 +156,6 @@ function slot0.register(slot0)
 	slot0.defeatedEnemiesBuffer = {}
 	slot0.comboHistoryBuffer = {}
 	slot0.justClearChapters = {}
-	slot0.outStageHPChanges = {}
 	slot0.chaptersExtend = {}
 
 	slot0:buildMaps()
@@ -572,15 +577,25 @@ function slot0.getLastMapForActivity(slot0)
 	end)
 
 	slot4 = {}
-	slot4 = _.all(slot3, function (slot0)
+
+	if _.all(slot3, function (slot0)
 		return slot0:getConfig("type") == Map.EVENT
-	end) and slot3 or (not _.any(slot3, function (slot0)
-		return slot0:getConfig("type") == Map.ACTIVITY_EASY and not slot0:isClearForActivity()
-	end) or underscore.filter(slot3, function (slot0)
-		return slot0:getMapType() == Map.ACTIVITY_EASY
-	end)) and underscore.filter(slot3, function (slot0)
-		return slot0:getMapType() == Map.ACTIVITY_HARD
-	end)
+	end) then
+		slot4 = slot3
+	else
+		for slot8, slot9 in ipairs({
+			Map.ACTIVITY_EASY,
+			Map.ACTIVITY_HARD
+		}) do
+			if #underscore.filter(slot3, function (slot0)
+				return slot0:getMapType() == uv0
+			end) > 0 and underscore.any(slot10, function (slot0)
+				return not slot0:isClearForActivity()
+			end) then
+				break
+			end
+		end
+	end
 
 	for slot8 = #slot4, 1, -1 do
 		if slot4[slot8]:isUnlock() then
@@ -950,18 +965,6 @@ function slot0.GetLastDefeatedEnemy(slot0, slot1)
 	return slot0.defeatedEnemiesBuffer[slot1]
 end
 
-function slot0.RecordOutStageHPChanges(slot0, slot1, slot2)
-	if not slot1 or slot1 <= 0 then
-		return
-	end
-
-	slot0.outStageHPChanges[slot1] = slot2 and (slot0.outStageHPChanges[slot1] or 0) + slot2 or nil
-end
-
-function slot0.GetOutStageHPChanges(slot0, slot1)
-	return slot0.outStageHPChanges[slot1] or 0
-end
-
 function slot0.ifShowRemasterTip(slot0)
 	return slot0.remasterTip
 end
@@ -1018,7 +1021,10 @@ function slot0.SetChapterAutoFlag(slot0, slot1, slot2)
 			PlayerPrefs.SetInt("autoBotIsAcitve" .. AutoBotCommand.GetAutoBotMark(), 1)
 		end
 
-		if PlayerPrefs.GetInt(AUTOFIGHT_BATTERY_SAVEMODE, 0) == 1 then
+		getProxy(MetaCharacterProxy):setMetaTacticsInfoOnStart()
+		pg.BrightnessMgr.GetInstance():SetScreenNeverSleep(true)
+
+		if not LOCK_BATTERY_SAVEMODE and PlayerPrefs.GetInt(AUTOFIGHT_BATTERY_SAVEMODE, 0) == 1 then
 			pg.BrightnessMgr.GetInstance():EnterManualMode()
 
 			if PlayerPrefs.GetInt(AUTOFIGHT_DOWN_FRAME, 0) == 1 then
@@ -1028,8 +1034,12 @@ function slot0.SetChapterAutoFlag(slot0, slot1, slot2)
 			end
 		end
 	else
-		pg.BrightnessMgr.GetInstance():ExitManualMode()
-		getProxy(SettingsProxy):RestoreFrameRate()
+		pg.BrightnessMgr.GetInstance():SetScreenNeverSleep(false)
+
+		if not LOCK_BATTERY_SAVEMODE then
+			pg.BrightnessMgr.GetInstance():ExitManualMode()
+			getProxy(SettingsProxy):RestoreFrameRate()
+		end
 	end
 
 	slot0.facade:sendNotification(uv0.CHAPTER_AUTO_FIGHT_FLAG_UPDATED, slot2 and 1 or 0)

@@ -1,38 +1,81 @@
 pg = pg or {}
 pg.aircraft_template_150 = {
-	[66430] = {
-		id = 66430,
-		name = "胡蜂技能LV10",
-		base = 66420,
-		max_hp = 96,
-		hp_growth = 3696,
+	[65206] = {
+		id = 65206,
+		name = "大凤μ技能轰炸机Lv6",
+		base = 65201,
+		max_hp = 73,
+		hp_growth = 2809,
 		weapon_ID = {
-			50150,
-			50550,
-			52250
+			65216,
+			65226
 		}
 	},
-	[66580] = {
+	[65207] = {
+		id = 65207,
+		name = "大凤μ技能轰炸机Lv7",
+		base = 65201,
+		max_hp = 79,
+		hp_growth = 3050,
+		weapon_ID = {
+			65217,
+			65227
+		}
+	},
+	[65208] = {
+		id = 65208,
+		name = "大凤μ技能轰炸机Lv8",
+		base = 65201,
+		max_hp = 86,
+		hp_growth = 3290,
+		weapon_ID = {
+			65218,
+			65228
+		}
+	},
+	[65209] = {
+		id = 65209,
+		name = "大凤μ技能轰炸机Lv9",
+		base = 65201,
+		max_hp = 92,
+		hp_growth = 3531,
+		weapon_ID = {
+			65219,
+			65229
+		}
+	},
+	[65210] = {
+		id = 65210,
+		name = "大凤μ技能轰炸机Lv10",
+		base = 65201,
+		max_hp = 98,
+		hp_growth = 3772,
+		weapon_ID = {
+			65220,
+			65230
+		}
+	},
+	[65251] = {
 		attack_power = 2,
-		name = "宝石枪雨LV0",
-		type = 3,
+		name = "坠星机LV1",
+		type = 2,
 		accuracy = 23,
-		model_ID = "Nep_green",
+		model_ID = "feiji_weixingbanwu",
 		ACC_growth = 0,
-		crash_DMG = 100,
-		dodge = 1,
+		crash_DMG = 188,
+		dodge = 1.05,
 		funnel_behavior = "",
-		nationality = 1,
-		id = 66580,
-		icon = "Nep_green",
+		nationality = 2,
+		id = 65251,
+		icon = "feiji_weixingbanwu",
 		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 1478,
-		speed = 50,
-		max_hp = 38,
+		dodge_limit = 5,
+		hp_growth = 1386,
+		speed = 52,
+		max_hp = 36,
 		scale = 1,
 		weapon_ID = {
-			66620
+			65261
 		},
 		position_offset = {
 			0,
@@ -52,13 +95,13 @@ pg.aircraft_template_150 = {
 		bound_bone = {
 			weapon = {
 				{
-					1.28,
-					-0.38,
+					0.68,
+					-0.667,
 					0
 				},
 				{
-					1.43,
-					1.85,
+					0.97,
+					0.584,
 					0
 				}
 			}
@@ -75,7 +118,7 @@ pg.aircraft_template_150 = {
 				0
 			},
 			{
-				0.62,
+				0.26,
 				0,
 				0
 			},
@@ -86,84 +129,44 @@ pg.aircraft_template_150 = {
 			}
 		}
 	},
-	[66581] = {
-		id = 66581,
-		name = "宝石枪雨LV1",
-		base = 66580,
-		max_hp = 45,
-		hp_growth = 1773,
+	[65252] = {
+		id = 65252,
+		name = "坠星机LV2",
+		base = 65251,
+		max_hp = 41,
+		hp_growth = 1594,
 		weapon_ID = {
-			66621
+			65262
 		}
 	},
-	[66582] = {
-		id = 66582,
-		name = "宝石枪雨LV2",
-		base = 66580,
+	[65253] = {
+		id = 65253,
+		name = "坠星机LV3",
+		base = 65251,
+		max_hp = 47,
+		hp_growth = 1802,
+		weapon_ID = {
+			65263
+		}
+	},
+	[65254] = {
+		id = 65254,
+		name = "坠星机LV4",
+		base = 65251,
 		max_hp = 52,
-		hp_growth = 2068,
+		hp_growth = 2010,
 		weapon_ID = {
-			66622
+			65264
 		}
 	},
-	[66583] = {
-		id = 66583,
-		name = "宝石枪雨LV3",
-		base = 66580,
-		max_hp = 59,
-		hp_growth = 2363,
+	[65255] = {
+		id = 65255,
+		name = "坠星机LV5",
+		base = 65251,
+		max_hp = 58,
+		hp_growth = 2218,
 		weapon_ID = {
-			66623
-		}
-	},
-	[66584] = {
-		id = 66584,
-		name = "宝石枪雨LV4",
-		base = 66580,
-		max_hp = 67,
-		hp_growth = 2659,
-		weapon_ID = {
-			66624
-		}
-	},
-	[66585] = {
-		id = 66585,
-		name = "宝石枪雨LV5",
-		base = 66580,
-		max_hp = 75,
-		hp_growth = 2955,
-		weapon_ID = {
-			66625
-		}
-	},
-	[66586] = {
-		id = 66586,
-		name = "宝石枪雨LV6",
-		base = 66580,
-		max_hp = 83,
-		hp_growth = 3251,
-		weapon_ID = {
-			66626
-		}
-	},
-	[66587] = {
-		id = 66587,
-		name = "宝石枪雨LV7",
-		base = 66580,
-		max_hp = 91,
-		hp_growth = 3547,
-		weapon_ID = {
-			66627
-		}
-	},
-	[66588] = {
-		id = 66588,
-		name = "宝石枪雨LV8",
-		base = 66580,
-		max_hp = 99,
-		hp_growth = 3843,
-		weapon_ID = {
-			66628
+			65265
 		}
 	}
 }

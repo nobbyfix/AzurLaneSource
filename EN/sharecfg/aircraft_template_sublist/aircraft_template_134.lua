@@ -1,167 +1,103 @@
 pg = pg or {}
 pg.aircraft_template_134 = {
-	[64122] = {
-		id = 64122,
-		name = "提康德罗加战斗机LV2",
-		base = 64121,
-		max_hp = 57,
-		hp_growth = 2201,
+	[48041] = {
+		id = 48041,
+		max_hp = 44,
+		hp_growth = 1678,
+		base = 48040,
 		weapon_ID = {
-			64132
+			59341,
+			59701
 		}
 	},
-	[64123] = {
-		id = 64123,
-		name = "提康德罗加战斗机LV3",
-		base = 64121,
-		max_hp = 64,
-		hp_growth = 2455,
+	[48042] = {
+		id = 48042,
+		max_hp = 49,
+		hp_growth = 1897,
+		base = 48040,
 		weapon_ID = {
-			64133
+			59342,
+			59702
 		}
 	},
-	[64124] = {
-		id = 64124,
-		name = "提康德罗加战斗机LV4",
-		base = 64121,
-		max_hp = 70,
-		hp_growth = 2710,
+	[48043] = {
+		id = 48043,
+		max_hp = 55,
+		hp_growth = 2116,
+		base = 48040,
 		weapon_ID = {
-			64134
+			59343,
+			59703
 		}
 	},
-	[64125] = {
-		id = 64125,
-		name = "提康德罗加战斗机LV5",
-		base = 64121,
-		max_hp = 77,
-		hp_growth = 2964,
+	[48044] = {
+		id = 48044,
+		max_hp = 61,
+		hp_growth = 2335,
+		base = 48040,
 		weapon_ID = {
-			64135
+			59344,
+			59704
 		}
 	},
-	[64126] = {
-		id = 64126,
-		name = "提康德罗加战斗机LV6",
-		base = 64121,
-		max_hp = 84,
-		hp_growth = 3218,
+	[48045] = {
+		id = 48045,
+		max_hp = 66,
+		hp_growth = 2554,
+		base = 48040,
 		weapon_ID = {
-			64136
+			59345,
+			59705
 		}
 	},
-	[64127] = {
-		id = 64127,
-		name = "提康德罗加战斗机LV7",
-		base = 64121,
-		max_hp = 90,
-		hp_growth = 3472,
+	[48046] = {
+		id = 48046,
+		max_hp = 72,
+		hp_growth = 2772,
+		base = 48040,
 		weapon_ID = {
-			64137
+			59346,
+			59706
 		}
 	},
-	[64128] = {
-		id = 64128,
-		name = "提康德罗加战斗机LV8",
-		base = 64121,
-		max_hp = 97,
-		hp_growth = 3726,
+	[48047] = {
+		id = 48047,
+		max_hp = 78,
+		hp_growth = 2991,
+		base = 48040,
 		weapon_ID = {
-			64138
+			59347,
+			59707
 		}
 	},
-	[64129] = {
-		id = 64129,
-		name = "提康德罗加战斗机LV9",
-		base = 64121,
-		max_hp = 103,
-		hp_growth = 3980,
+	[48048] = {
+		id = 48048,
+		max_hp = 83,
+		hp_growth = 3210,
+		base = 48040,
 		weapon_ID = {
-			64139
+			59348,
+			59708
 		}
 	},
-	[64130] = {
-		id = 64130,
-		name = "提康德罗加战斗机LV10",
-		base = 64121,
-		max_hp = 110,
-		hp_growth = 4234,
+	[48049] = {
+		id = 48049,
+		max_hp = 89,
+		hp_growth = 3429,
+		base = 48040,
 		weapon_ID = {
-			64140
+			59349,
+			59709
 		}
 	},
-	[65061] = {
-		attack_power = 2,
-		name = "普林斯顿技能鱼雷机Lv1",
-		type = 2,
-		accuracy = 23,
-		model_ID = "tbf",
-		ACC_growth = 0,
-		crash_DMG = 406,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 1,
-		id = 65061,
-		icon = "tbf",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 1615,
-		speed = 48,
-		max_hp = 42,
-		scale = 1,
+	[48050] = {
+		id = 48050,
+		max_hp = 95,
+		hp_growth = 3648,
+		base = 48040,
 		weapon_ID = {
-			65071
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.68,
-					-0.667,
-					0
-				},
-				{
-					0.97,
-					0.584,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.52,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			59350,
+			59710
 		}
 	}
 }

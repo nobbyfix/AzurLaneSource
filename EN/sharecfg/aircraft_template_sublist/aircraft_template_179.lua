@@ -1,81 +1,116 @@
 pg = pg or {}
 pg.aircraft_template_179 = {
-	[68776] = {
-		id = 68776,
-		name = "赤城μ技能舰爆Lv6",
-		base = 68771,
-		max_hp = 73,
-		hp_growth = 2796,
+	[67922] = {
+		id = 67922,
+		name = "独立技能鱼雷机Lv2",
+		base = 67921,
+		max_hp = 47,
+		hp_growth = 1826,
 		weapon_ID = {
-			68786,
-			68796
+			67942
 		}
 	},
-	[68777] = {
-		id = 68777,
-		name = "赤城μ技能舰爆Lv7",
-		base = 68771,
-		max_hp = 79,
-		hp_growth = 3016,
+	[67923] = {
+		id = 67923,
+		name = "独立技能鱼雷机Lv3",
+		base = 67921,
+		max_hp = 53,
+		hp_growth = 2036,
 		weapon_ID = {
-			68787,
-			68797
+			67943
 		}
 	},
-	[68778] = {
-		id = 68778,
-		name = "赤城μ技能舰爆Lv8",
-		base = 68771,
+	[67924] = {
+		id = 67924,
+		name = "独立技能鱼雷机Lv4",
+		base = 67921,
+		max_hp = 58,
+		hp_growth = 2247,
+		weapon_ID = {
+			67944
+		}
+	},
+	[67925] = {
+		id = 67925,
+		name = "独立技能鱼雷机Lv5",
+		base = 67921,
+		max_hp = 64,
+		hp_growth = 2458,
+		weapon_ID = {
+			67945
+		}
+	},
+	[67926] = {
+		id = 67926,
+		name = "独立技能鱼雷机Lv6",
+		base = 67921,
+		max_hp = 69,
+		hp_growth = 2669,
+		weapon_ID = {
+			67946
+		}
+	},
+	[67927] = {
+		id = 67927,
+		name = "独立技能鱼雷机Lv7",
+		base = 67921,
+		max_hp = 75,
+		hp_growth = 2879,
+		weapon_ID = {
+			67947
+		}
+	},
+	[67928] = {
+		id = 67928,
+		name = "独立技能鱼雷机Lv8",
+		base = 67921,
+		max_hp = 80,
+		hp_growth = 3090,
+		weapon_ID = {
+			67948
+		}
+	},
+	[67929] = {
+		id = 67929,
+		name = "独立技能鱼雷机Lv9",
+		base = 67921,
 		max_hp = 86,
-		hp_growth = 3237,
+		hp_growth = 3301,
 		weapon_ID = {
-			68788,
-			68798
+			67949
 		}
 	},
-	[68779] = {
-		id = 68779,
-		name = "赤城μ技能舰爆Lv9",
-		base = 68771,
-		max_hp = 92,
-		hp_growth = 3458,
+	[67930] = {
+		id = 67930,
+		name = "独立技能鱼雷机Lv10",
+		base = 67921,
+		max_hp = 91,
+		hp_growth = 3511,
 		weapon_ID = {
-			68789,
-			68799
+			67950
 		}
 	},
-	[68780] = {
-		id = 68780,
-		name = "赤城μ技能舰爆Lv10",
-		base = 68771,
-		max_hp = 98,
-		hp_growth = 3678,
-		weapon_ID = {
-			68790,
-			68800
-		}
-	},
-	[68801] = {
+	[67931] = {
 		attack_power = 2,
-		name = "赤城μ技能舰攻Lv1",
-		type = 3,
+		name = "独立技能鱼雷机Lv1",
+		type = 2,
 		accuracy = 23,
-		model_ID = "97jiangong",
+		model_ID = "tbf",
 		ACC_growth = 0,
-		crash_DMG = 208,
+		crash_DMG = 406,
 		dodge = 1,
 		funnel_behavior = "",
-		nationality = 3,
-		id = 68801,
-		icon = "97jiangong",
+		nationality = 1,
+		id = 67931,
+		icon = "tbf",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1692,
+		hp_growth = 1615,
 		speed = 48,
 		max_hp = 42,
 		scale = 1,
 		weapon_ID = {
-			68811
+			67951
 		},
 		position_offset = {
 			0,
@@ -118,7 +153,7 @@ pg.aircraft_template_179 = {
 				0
 			},
 			{
-				0.54,
+				0.52,
 				0,
 				0
 			},
@@ -127,46 +162,6 @@ pg.aircraft_template_179 = {
 				0,
 				0
 			}
-		}
-	},
-	[68802] = {
-		id = 68802,
-		name = "赤城μ技能舰攻Lv2",
-		base = 68801,
-		max_hp = 48,
-		hp_growth = 1913,
-		weapon_ID = {
-			68812
-		}
-	},
-	[68803] = {
-		id = 68803,
-		name = "赤城μ技能舰攻Lv3",
-		base = 68801,
-		max_hp = 54,
-		hp_growth = 2133,
-		weapon_ID = {
-			68813
-		}
-	},
-	[68804] = {
-		id = 68804,
-		name = "赤城μ技能舰攻Lv4",
-		base = 68801,
-		max_hp = 61,
-		hp_growth = 2354,
-		weapon_ID = {
-			68814
-		}
-	},
-	[68805] = {
-		id = 68805,
-		name = "赤城μ技能舰攻Lv5",
-		base = 68801,
-		max_hp = 67,
-		hp_growth = 2575,
-		weapon_ID = {
-			68815
 		}
 	}
 }

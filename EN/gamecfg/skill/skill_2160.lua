@@ -22,6 +22,7 @@ return {
 			target_choise = "TargetNil",
 			targetAniEffect = "",
 			arg_list = {
+				preShiftBullet = true,
 				weaponType = "TorpedoWeapon"
 			}
 		}

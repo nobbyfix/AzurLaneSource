@@ -1,23 +1,15 @@
 pg = pg or {}
 pg.equip_data_statistics_351 = {
-	[79092] = {
-		id = 79092,
-		name = "0",
-		base = 79091,
-		weapon_id = {
-			79092
-		}
-	},
-	[79101] = {
+	[73321] = {
 		type = 1,
-		name = "0",
+		name = "全弹发射-Type IXB型I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79101,
+		id = 73321,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -28,7 +20,7 @@ pg.equip_data_statistics_351 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79101
+			73321
 		},
 		skill_id = {},
 		part_main = {
@@ -47,24 +39,24 @@ pg.equip_data_statistics_351 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79102] = {
-		id = 79102,
-		name = "0",
-		base = 79101,
+	[73322] = {
+		id = 73322,
+		name = "全弹发射-Type IXB型II",
+		base = 73321,
 		weapon_id = {
-			79102
+			73322
 		}
 	},
-	[79111] = {
+	[73411] = {
 		type = 1,
-		name = "0",
+		name = "全弹发射-Type VIIB型I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79111,
+		id = 73411,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -75,7 +67,7 @@ pg.equip_data_statistics_351 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79111
+			73411
 		},
 		skill_id = {},
 		part_main = {
@@ -94,24 +86,24 @@ pg.equip_data_statistics_351 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79112] = {
-		id = 79112,
-		name = "0",
-		base = 79111,
+	[73412] = {
+		id = 73412,
+		name = "全弹发射-Type VIIB型II",
+		base = 73411,
 		weapon_id = {
-			79112
+			73412
 		}
 	},
-	[79121] = {
+	[73511] = {
 		type = 1,
-		name = "0",
+		name = "全弹发射-Type IXC型I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79121,
+		id = 73511,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -122,7 +114,7 @@ pg.equip_data_statistics_351 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79121
+			73511
 		},
 		skill_id = {},
 		part_main = {
@@ -141,15 +133,15 @@ pg.equip_data_statistics_351 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79122] = {
-		id = 79122,
-		name = "0",
-		base = 79121,
+	[73512] = {
+		id = 73512,
+		name = "全弹发射-Type IXC型II",
+		base = 73511,
 		weapon_id = {
-			79122
+			73512
 		}
 	},
-	[79131] = {
+	[74011] = {
 		type = 1,
 		name = "0",
 		speciality = "N/A",
@@ -158,7 +150,7 @@ pg.equip_data_statistics_351 = {
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79131,
+		id = 74011,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -169,7 +161,7 @@ pg.equip_data_statistics_351 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79131
+			74011
 		},
 		skill_id = {},
 		part_main = {
@@ -188,15 +180,15 @@ pg.equip_data_statistics_351 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79132] = {
-		id = 79132,
+	[74012] = {
+		id = 74012,
 		name = "0",
-		base = 79131,
+		base = 74011,
 		weapon_id = {
-			79132
+			74012
 		}
 	},
-	[79141] = {
+	[74111] = {
 		type = 1,
 		name = "0",
 		speciality = "N/A",
@@ -205,7 +197,7 @@ pg.equip_data_statistics_351 = {
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79141,
+		id = 74111,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -216,7 +208,7 @@ pg.equip_data_statistics_351 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79141
+			74111
 		},
 		skill_id = {},
 		part_main = {
@@ -235,15 +227,15 @@ pg.equip_data_statistics_351 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79142] = {
-		id = 79142,
+	[74112] = {
+		id = 74112,
 		name = "0",
-		base = 79141,
+		base = 74111,
 		weapon_id = {
-			79142
+			74112
 		}
 	},
-	[79151] = {
+	[74121] = {
 		type = 1,
 		name = "0",
 		speciality = "N/A",
@@ -252,7 +244,7 @@ pg.equip_data_statistics_351 = {
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79151,
+		id = 74121,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -263,7 +255,7 @@ pg.equip_data_statistics_351 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79151
+			74121
 		},
 		skill_id = {},
 		part_main = {
@@ -282,24 +274,24 @@ pg.equip_data_statistics_351 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79152] = {
-		id = 79152,
+	[74122] = {
+		id = 74122,
 		name = "0",
-		base = 79151,
+		base = 74121,
 		weapon_id = {
-			79152
+			74122
 		}
 	},
-	[79161] = {
+	[74131] = {
 		type = 1,
-		name = "0",
+		name = "全弹发射-肇和级I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79161,
+		id = 74131,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -310,7 +302,7 @@ pg.equip_data_statistics_351 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79161
+			74131
 		},
 		skill_id = {},
 		part_main = {
@@ -329,24 +321,26 @@ pg.equip_data_statistics_351 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79162] = {
-		id = 79162,
-		name = "0",
-		base = 79161,
+	[74132] = {
+		id = 74132,
+		name = "全弹发射-肇和级II",
+		speciality = "N/A",
+		base = 74131,
+		descrip = "Barrage",
 		weapon_id = {
-			79162
+			74132
 		}
 	},
-	[79171] = {
+	[75011] = {
 		type = 1,
-		name = "0",
+		name = "全弹发射-索尔达蒂级I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
 		descrip = "Barrage",
-		id = 79171,
+		id = 75011,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -357,7 +351,7 @@ pg.equip_data_statistics_351 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			79171
+			75011
 		},
 		skill_id = {},
 		part_main = {
@@ -376,12 +370,51 @@ pg.equip_data_statistics_351 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[79172] = {
-		id = 79172,
-		name = "0",
-		base = 79171,
+	[75012] = {
+		id = 75012,
+		name = "全弹发射-索尔达蒂级II",
+		base = 75011,
 		weapon_id = {
-			79172
+			75012
 		}
+	},
+	[75021] = {
+		type = 1,
+		name = "全弹发射-诗人级I",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 75021,
+		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
+		weapon_id = {
+			75021
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
+		equip_parameters = {},
+		label = {}
 	}
 }

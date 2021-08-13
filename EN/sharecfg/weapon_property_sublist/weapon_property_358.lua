@@ -2,6 +2,190 @@ pg = pg or {}
 pg.weapon_property_358 = {}
 
 function ()
+	uv0.weapon_property_358[1001184] = {
+		recover_time = 0,
+		name = "【精英】执棋者II型 武器2 IV",
+		shakescreen = 0,
+		type = 1,
+		torpedo_ammo = 0,
+		fire_fx = "CAFire",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 1,
+		effect_move = 0,
+		angle = 180,
+		reload_max = 1000,
+		queue = 1,
+		range = 90,
+		damage = 16,
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "battle/cannon-main",
+		id = 1001184,
+		attack_attribute_ratio = 90,
+		aim_type = 0,
+		bullet_ID = {
+			811,
+			811,
+			811
+		},
+		barrage_ID = {
+			7220,
+			7221,
+			7222
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_358[1001185] = {
+		recover_time = 0,
+		name = "【精英】执棋者II型 武器2 V",
+		shakescreen = 0,
+		type = 1,
+		torpedo_ammo = 0,
+		fire_fx = "CAFire",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 1,
+		effect_move = 0,
+		angle = 180,
+		reload_max = 1000,
+		queue = 1,
+		range = 90,
+		damage = 20,
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "battle/cannon-main",
+		id = 1001185,
+		attack_attribute_ratio = 90,
+		aim_type = 0,
+		bullet_ID = {
+			811,
+			811,
+			811
+		},
+		barrage_ID = {
+			7220,
+			7221,
+			7222
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_358[1001186] = {
+		recover_time = 5,
+		name = "【精英】执棋者II型 轰炸机T3 I",
+		shakescreen = 0,
+		type = 11,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 4,
+		expose = 0,
+		search_type = 1,
+		effect_move = 1,
+		angle = 360,
+		reload_max = 2850,
+		queue = 2,
+		range = 100,
+		damage = 36,
+		suppress = 1,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "plane",
+		fire_sfx = "",
+		id = 1001186,
+		attack_attribute_ratio = 100,
+		aim_type = 1,
+		bullet_ID = {
+			30019
+		},
+		barrage_ID = {
+			12015
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_358[1001187] = {
+		recover_time = 5,
+		name = "【精英】执棋者II型 轰炸机T3 II",
+		shakescreen = 0,
+		type = 11,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 4,
+		expose = 0,
+		search_type = 1,
+		effect_move = 1,
+		angle = 360,
+		reload_max = 2850,
+		queue = 2,
+		range = 100,
+		damage = 46,
+		suppress = 1,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "plane",
+		fire_sfx = "",
+		id = 1001187,
+		attack_attribute_ratio = 100,
+		aim_type = 1,
+		bullet_ID = {
+			30019
+		},
+		barrage_ID = {
+			12015
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
 	uv0.weapon_property_358[1001188] = {
 		recover_time = 5,
 		name = "【精英】执棋者II型 轰炸机T3 III",
@@ -2098,15 +2282,5 @@ function ()
 		id = 1001247,
 		name = "【精英】潜伏者II型 开幕雷击 II",
 		base = 1000896
-	}
-	uv0.weapon_property_358[1001248] = {
-		id = 1001248,
-		name = "【精英】潜伏者II型 开幕雷击 III",
-		base = 1000897
-	}
-	uv0.weapon_property_358[1001249] = {
-		id = 1001249,
-		name = "【精英】潜伏者II型 开幕雷击 IV",
-		base = 1000898
 	}
 end()

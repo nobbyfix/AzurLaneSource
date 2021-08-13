@@ -1,5 +1,10 @@
 pg = pg or {}
 pg.equip_data_statistics_27 = {
+	[1149] = {
+		id = 1149,
+		value_1 = "65",
+		base = 1140
+	},
 	[1150] = {
 		id = 1150,
 		value_1 = "70",
@@ -114,54 +119,5 @@ pg.equip_data_statistics_27 = {
 		anti_siren = 300,
 		value_1 = "118",
 		base = 1160
-	},
-	[1200] = {
-		type = 10,
-		name = "Fire Control Radar",
-		speciality = "N/A",
-		tech = 1,
-		value_2 = 3,
-		ammo = 10,
-		descrip = "Firing control radar which increase gun accuracy and damage.",
-		nationality = 1,
-		rarity = 2,
-		attribute_1 = "hit",
-		value_3 = 0,
-		torpedo_ammo = 0,
-		id = 1200,
-		icon = "1200",
-		value_1 = "3",
-		attribute_2 = "cannon",
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {
-			6
-		},
-		weapon_id = {},
-		skill_id = {},
-		part_main = {
-			3,
-			4,
-			5,
-			10,
-			13,
-			18,
-			19
-		},
-		part_sub = {
-			3,
-			4,
-			5,
-			10,
-			13,
-			18,
-			19
-		},
-		equip_parameters = {},
-		label = {
-			"USS",
-			"DEV"
-		}
 	}
 }

@@ -829,6 +829,118 @@ pg.mini_game = {
 		hub_id = 18,
 		request_data = 1
 	},
+	{
+		view_name = "IdolMasterView",
+		name = "啾啾握手会",
+		simple_config_data = "",
+		type = 2,
+		mediator_name = "MiniHubMediator",
+		config_csv_key = "",
+		config_data = "",
+		config_csv = "",
+		id = 24,
+		hub_id = 19,
+		request_data = 0
+	},
+	{
+		view_name = "SnackView",
+		name = "小吃小游戏",
+		type = 1,
+		mediator_name = "MiniHubMediator",
+		config_csv_key = "",
+		config_data = "",
+		config_csv = "",
+		id = 25,
+		hub_id = 20,
+		request_data = 0,
+		simple_config_data = {
+			memory_time = 5,
+			select_time = 10,
+			correct_value = {
+				[0] = 0,
+				1,
+				2,
+				5
+			},
+			score_level = {
+				0,
+				5,
+				12,
+				20
+			}
+		}
+	},
+	{
+		view_name = "FireworkFactoryView",
+		name = "制作烟花",
+		type = 2,
+		mediator_name = "FireworkFactoryMediator",
+		config_csv_key = "",
+		config_data = "",
+		config_csv = "",
+		id = 26,
+		hub_id = 20,
+		request_data = 1,
+		simple_config_data = {
+			roundTime = 50,
+			score_reference = {
+				{
+					140,
+					160
+				},
+				{
+					120,
+					180
+				},
+				{
+					90,
+					210
+				}
+			}
+		}
+	},
+	{
+		view_name = "ShootingGameView",
+		name = "打靶游戏",
+		type = 2,
+		mediator_name = "ShootingGameMediator",
+		config_csv_key = "",
+		config_data = "",
+		config_csv = "",
+		id = 27,
+		hub_id = 20,
+		request_data = 0,
+		simple_config_data = {
+			fireCD = 1,
+			moveSpeed = 4,
+			baseTime = 12,
+			bonusTime = 0,
+			targetScore = {
+				10,
+				5,
+				2
+			},
+			score_level = {
+				0,
+				10,
+				25,
+				35
+			}
+		}
+	},
+	{
+		view_name = "RopingCowGameView",
+		name = "啾啾牛仔",
+		simple_config_data = "",
+		type = 2,
+		mediator_name = "MiniHubMediator",
+		config_csv_key = "",
+		config_data = "",
+		config_csv = "",
+		id = 28,
+		hub_id = 21,
+		request_data = 0
+	},
 	all = {
 		1,
 		2,
@@ -852,6 +964,11 @@ pg.mini_game = {
 		20,
 		21,
 		22,
-		23
+		23,
+		24,
+		25,
+		26,
+		27,
+		28
 	}
 }

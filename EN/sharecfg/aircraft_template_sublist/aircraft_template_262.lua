@@ -1,115 +1,106 @@
 pg = pg or {}
 pg.aircraft_template_262 = {
-	[95844] = {
-		id = 95844,
-		max_hp = 58,
-		hp_growth = 2247,
-		base = 95840,
-		weapon_ID = {
-			50044,
-			50744,
-			52244
-		}
-	},
-	[95845] = {
-		id = 95845,
-		max_hp = 64,
-		hp_growth = 2458,
-		base = 95840,
-		weapon_ID = {
-			50045,
-			50745,
-			52245
-		}
-	},
-	[95846] = {
-		id = 95846,
-		max_hp = 69,
-		hp_growth = 2669,
-		base = 95840,
-		weapon_ID = {
-			50046,
-			50746,
-			52246
-		}
-	},
-	[95847] = {
-		id = 95847,
-		max_hp = 75,
-		hp_growth = 2879,
-		base = 95840,
-		weapon_ID = {
-			50047,
-			50747,
-			52247
-		}
-	},
-	[95848] = {
-		id = 95848,
+	[84146] = {
+		id = 84146,
 		max_hp = 80,
-		hp_growth = 3090,
-		base = 95840,
+		hp_growth = 3064,
+		base = 84140,
 		weapon_ID = {
-			50048,
-			50748,
-			52248
+			59146,
+			59246
 		}
 	},
-	[95849] = {
-		id = 95849,
+	[84147] = {
+		id = 84147,
 		max_hp = 86,
-		hp_growth = 3301,
-		base = 95840,
+		hp_growth = 3306,
+		base = 84140,
 		weapon_ID = {
-			50049,
-			50749,
-			52249
+			59147,
+			59247
 		}
 	},
-	[95850] = {
-		id = 95850,
-		max_hp = 91,
-		hp_growth = 3511,
-		base = 95840,
+	[84148] = {
+		id = 84148,
+		max_hp = 92,
+		hp_growth = 3548,
+		base = 84140,
 		weapon_ID = {
-			50050,
-			50750,
-			52250
+			59148,
+			59248
 		}
 	},
-	[95851] = {
-		id = 95851,
-		max_hp = 97,
-		hp_growth = 3722,
-		base = 95840,
+	[84149] = {
+		id = 84149,
+		max_hp = 99,
+		hp_growth = 3790,
+		base = 84140,
 		weapon_ID = {
-			50051,
-			50751,
-			52251
+			59149,
+			59249
 		}
 	},
-	[100720] = {
+	[84150] = {
+		id = 84150,
+		max_hp = 105,
+		hp_growth = 4032,
+		base = 84140,
+		weapon_ID = {
+			59150,
+			59250
+		}
+	},
+	[84151] = {
+		id = 84151,
+		max_hp = 111,
+		hp_growth = 4274,
+		base = 84140,
+		weapon_ID = {
+			59151,
+			59251
+		}
+	},
+	[84152] = {
+		id = 84152,
+		max_hp = 117,
+		hp_growth = 4516,
+		base = 84140,
+		weapon_ID = {
+			59152,
+			59252
+		}
+	},
+	[84153] = {
+		id = 84153,
+		max_hp = 124,
+		hp_growth = 4758,
+		base = 84140,
+		weapon_ID = {
+			59153,
+			59253
+		}
+	},
+	[86000] = {
 		attack_power = 2,
-		name = "美系舰载-战斗机I（大世界通用飞机）",
+		name = "G.50箭式战斗机T1",
 		type = 1,
 		accuracy = 23,
-		model_ID = "F4F",
+		model_ID = "g50",
 		ACC_growth = 0,
-		crash_DMG = 39,
-		dodge = 1,
+		crash_DMG = 160,
+		dodge = 0.357,
 		funnel_behavior = "",
-		nationality = 3,
-		id = 100720,
-		icon = "F4F",
+		nationality = 6,
+		id = 86000,
+		icon = "g50",
 		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2518,
-		speed = 33,
-		max_hp = 34,
-		scale = 0.75,
+		dodge_limit = 8,
+		hp_growth = 1270,
+		speed = 50,
+		max_hp = 33,
+		scale = 1,
 		weapon_ID = {
-			100700,
-			100705
+			50700
 		},
 		position_offset = {
 			0,
@@ -129,13 +120,13 @@ pg.aircraft_template_262 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.56,
-					-0.76,
+					0.68,
+					-0.667,
 					0
 				},
 				{
-					0.48,
-					0.99,
+					0.97,
+					0.584,
 					0
 				}
 			}
@@ -152,7 +143,7 @@ pg.aircraft_template_262 = {
 				0
 			},
 			{
-				0,
+				0.27,
 				0,
 				0
 			},
@@ -163,79 +154,13 @@ pg.aircraft_template_262 = {
 			}
 		}
 	},
-	[100721] = {
-		attack_power = 2,
-		name = "美系舰载-战斗机II",
-		type = 1,
-		accuracy = 23,
-		model_ID = "F4F",
-		ACC_growth = 0,
-		crash_DMG = 39,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100721,
-		icon = "F4F",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2518,
-		speed = 33,
-		max_hp = 34,
-		scale = 0.75,
+	[86001] = {
+		id = 86001,
+		max_hp = 38,
+		hp_growth = 1461,
+		base = 86000,
 		weapon_ID = {
-			100701,
-			100706
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.56,
-					-0.76,
-					0
-				},
-				{
-					0.48,
-					0.99,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50701
 		}
 	}
 }

@@ -6,7 +6,7 @@ pg.mini_game_hub = {
 		id = 1,
 		reward_need = 14,
 		reborn_times = 2,
-		act_id = 30194,
+		act_id = 356,
 		signet_reward = {
 			91490,
 			91491,
@@ -25,7 +25,7 @@ pg.mini_game_hub = {
 		id = 2,
 		reward_need = 7,
 		reborn_times = 1,
-		act_id = 30331,
+		act_id = 414,
 		signet_reward = {},
 		reward_display = {
 			4,
@@ -39,7 +39,7 @@ pg.mini_game_hub = {
 		id = 3,
 		reward_need = 7,
 		reborn_times = 0,
-		act_id = 30276,
+		act_id = 431,
 		signet_reward = {
 			92199
 		},
@@ -55,7 +55,7 @@ pg.mini_game_hub = {
 		id = 4,
 		reward_need = 7,
 		reborn_times = 1,
-		act_id = 30301,
+		act_id = 461,
 		signet_reward = {},
 		reward_display = {
 			7,
@@ -69,7 +69,7 @@ pg.mini_game_hub = {
 		id = 5,
 		reward_need = 7,
 		reborn_times = 1,
-		act_id = 30314,
+		act_id = 478,
 		signet_reward = {},
 		reward_display = {
 			4,
@@ -83,7 +83,7 @@ pg.mini_game_hub = {
 		id = 6,
 		reward_need = 7,
 		reborn_times = 1,
-		act_id = 30320,
+		act_id = 486,
 		signet_reward = {},
 		reward_display = {
 			3,
@@ -97,7 +97,7 @@ pg.mini_game_hub = {
 		id = 7,
 		reward_need = 60,
 		reborn_times = 0,
-		act_id = 30343,
+		act_id = 503,
 		signet_reward = {},
 		reward_display = {
 			3,
@@ -112,7 +112,7 @@ pg.mini_game_hub = {
 		reward_need = 7,
 		reborn_times = 1,
 		id = 8,
-		act_id = 30358,
+		act_id = 526,
 		signet_reward = {}
 	},
 	{
@@ -121,7 +121,7 @@ pg.mini_game_hub = {
 		id = 9,
 		reward_need = 7,
 		reborn_times = 1,
-		act_id = 30410,
+		act_id = 597,
 		signet_reward = {},
 		reward_display = {
 			2,
@@ -130,12 +130,12 @@ pg.mini_game_hub = {
 		}
 	},
 	{
-		reward = 0,
-		reward_target = 0,
+		reward = 93802,
+		reward_target = 59178,
 		id = 10,
 		reward_need = 7,
 		reborn_times = 1,
-		act_id = 30710,
+		act_id = 689,
 		signet_reward = {},
 		reward_display = {
 			2,
@@ -149,7 +149,7 @@ pg.mini_game_hub = {
 		id = 11,
 		reward_need = 7,
 		reborn_times = 1,
-		act_id = 30742,
+		act_id = 741,
 		signet_reward = {},
 		reward_display = {
 			7,
@@ -163,7 +163,7 @@ pg.mini_game_hub = {
 		id = 12,
 		reward_need = 7,
 		reborn_times = 1,
-		act_id = 30755,
+		act_id = 762,
 		signet_reward = {},
 		reward_display = {
 			4,
@@ -177,7 +177,7 @@ pg.mini_game_hub = {
 		id = 13,
 		reward_need = 7,
 		reborn_times = 1,
-		act_id = 30775,
+		act_id = 784,
 		signet_reward = {},
 		reward_display = {
 			3,
@@ -255,6 +255,53 @@ pg.mini_game_hub = {
 			1
 		}
 	},
+	{
+		reward = 95797,
+		reward_target = 0,
+		id = 19,
+		reward_need = 7,
+		reborn_times = 1,
+		act_id = 4059,
+		signet_reward = {},
+		reward_display = {
+			3,
+			89280,
+			1
+		}
+	},
+	{
+		reward = 95570,
+		reward_target = 59227,
+		id = 20,
+		reward_need = 14,
+		reborn_times = 2,
+		act_id = 4067,
+		signet_reward = {
+			95566,
+			95567,
+			95568,
+			95569
+		},
+		reward_display = {
+			7,
+			201221,
+			1
+		}
+	},
+	{
+		reward = 95872,
+		reward_target = 0,
+		id = 21,
+		reward_need = 7,
+		reborn_times = 1,
+		act_id = 4078,
+		signet_reward = {},
+		reward_display = {
+			2,
+			20012,
+			2
+		}
+	},
 	all = {
 		1,
 		2,
@@ -273,6 +320,9 @@ pg.mini_game_hub = {
 		15,
 		16,
 		17,
-		18
+		18,
+		19,
+		20,
+		21
 	}
 }

@@ -1,56 +1,81 @@
 pg = pg or {}
 pg.aircraft_template_152 = {
-	[66828] = {
-		id = 66828,
-		name = "飞鹰隼鹰技能Lv8",
-		base = 66820,
-		max_hp = 50,
-		hp_growth = 1940,
+	[65386] = {
+		id = 65386,
+		name = "女天狗沙排啾轰炸机Lv6",
+		base = 65381,
+		max_hp = 73,
+		hp_growth = 3050,
 		weapon_ID = {
-			66848
+			65396,
+			65406
 		}
 	},
-	[66829] = {
-		id = 66829,
-		name = "飞鹰隼鹰技能Lv9",
-		base = 66820,
-		max_hp = 53,
-		hp_growth = 2067,
+	[65387] = {
+		id = 65387,
+		name = "女天狗沙排啾轰炸机Lv7",
+		base = 65381,
+		max_hp = 79,
+		hp_growth = 3290,
 		weapon_ID = {
-			66849
+			65397,
+			65407
 		}
 	},
-	[66830] = {
-		id = 66830,
-		name = "飞鹰隼鹰技能Lv10",
-		base = 66820,
-		max_hp = 57,
-		hp_growth = 2195,
+	[65388] = {
+		id = 65388,
+		name = "女天狗沙排啾轰炸机Lv8",
+		base = 65381,
+		max_hp = 86,
+		hp_growth = 3531,
 		weapon_ID = {
-			66850
+			65398,
+			65408
 		}
 	},
-	[66940] = {
+	[65389] = {
+		id = 65389,
+		name = "女天狗沙排啾轰炸机Lv9",
+		base = 65381,
+		max_hp = 92,
+		hp_growth = 3772,
+		weapon_ID = {
+			65399,
+			65409
+		}
+	},
+	[65390] = {
+		id = 65390,
+		name = "女天狗沙排啾轰炸机Lv10",
+		base = 65381,
+		max_hp = 98,
+		hp_growth = 4013,
+		weapon_ID = {
+			65400,
+			65410
+		}
+	},
+	[65451] = {
 		attack_power = 2,
-		name = "萨拉托加技能鱼雷机Lv0",
-		type = 2,
+		name = "META飞龙鱼雷机Lv1",
+		type = 3,
 		accuracy = 23,
-		model_ID = "tbf",
+		model_ID = "97jiangong",
 		ACC_growth = 0,
-		crash_DMG = 406,
+		crash_DMG = 208,
 		dodge = 1,
 		funnel_behavior = "",
-		nationality = 1,
-		id = 66940,
-		icon = "tbf",
+		nationality = 3,
+		id = 65451,
+		icon = "97jiangong",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1149,
+		hp_growth = 1692,
 		speed = 48,
-		max_hp = 30,
+		max_hp = 42,
 		scale = 1,
 		weapon_ID = {
-			66980
+			65461
 		},
 		position_offset = {
 			0,
@@ -93,8 +118,8 @@ pg.aircraft_template_152 = {
 				0
 			},
 			{
-				0.15,
-				-0.08,
+				0.54,
+				0,
 				0
 			},
 			{
@@ -104,64 +129,44 @@ pg.aircraft_template_152 = {
 			}
 		}
 	},
-	[66941] = {
-		id = 66941,
-		name = "萨拉托加技能鱼雷机Lv1",
-		base = 66940,
-		max_hp = 36,
-		hp_growth = 1385,
-		weapon_ID = {
-			66981
-		}
-	},
-	[66942] = {
-		id = 66942,
-		name = "萨拉托加技能鱼雷机Lv2",
-		base = 66940,
-		max_hp = 42,
-		hp_growth = 1621,
-		weapon_ID = {
-			66982
-		}
-	},
-	[66943] = {
-		id = 66943,
-		name = "萨拉托加技能鱼雷机Lv3",
-		base = 66940,
+	[65452] = {
+		id = 65452,
+		name = "META飞龙鱼雷机Lv2",
+		base = 65451,
 		max_hp = 48,
-		hp_growth = 1857,
+		hp_growth = 1913,
 		weapon_ID = {
-			66983
+			65462
 		}
 	},
-	[66944] = {
-		id = 66944,
-		name = "萨拉托加技能鱼雷机Lv4",
-		base = 66940,
+	[65453] = {
+		id = 65453,
+		name = "META飞龙鱼雷机Lv3",
+		base = 65451,
 		max_hp = 54,
-		hp_growth = 2093,
+		hp_growth = 2133,
 		weapon_ID = {
-			66984
+			65463
 		}
 	},
-	[66945] = {
-		id = 66945,
-		name = "萨拉托加技能鱼雷机Lv5",
-		base = 66940,
-		max_hp = 60,
-		hp_growth = 2329,
+	[65454] = {
+		id = 65454,
+		name = "META飞龙鱼雷机Lv4",
+		base = 65451,
+		max_hp = 61,
+		hp_growth = 2354,
 		weapon_ID = {
-			66985
+			65464
 		}
 	},
-	[66946] = {
-		id = 66946,
-		name = "萨拉托加技能鱼雷机Lv6",
-		base = 66940,
-		max_hp = 66,
-		hp_growth = 2565,
+	[65455] = {
+		id = 65455,
+		name = "META飞龙鱼雷机Lv5",
+		base = 65451,
+		max_hp = 67,
+		hp_growth = 2575,
 		weapon_ID = {
-			66986
+			65465
 		}
 	}
 }

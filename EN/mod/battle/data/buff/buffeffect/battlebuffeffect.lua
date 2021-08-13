@@ -589,6 +589,24 @@ function slot2.getTargetList(slot0, slot1, slot2, slot3)
 	end
 end
 
+function slot2.commanderRequire(slot0, slot1)
+	if slot0._tempData.arg_list.CMDBuff_id then
+		slot2, slot3 = uv0.Battle.BattleDataProxy.GetInstance():GetCommanderBuff()
+		slot4 = nil
+		slot6 = {}
+
+		for slot11, slot12 in ipairs(table.contains(TeamType.SubShipType, slot1:GetTemplate().type) and slot3 or slot2) do
+			if slot12.id == slot0._tempData.arg_list.CMDBuff_id then
+				table.insert(slot6, slot12)
+			end
+		end
+
+		return #slot6 > 0
+	else
+		return true
+	end
+end
+
 function slot2.GetListByAttr(slot0, slot1, slot2)
 	slot3 = slot2:split("_")
 	slot4 = slot3[1]

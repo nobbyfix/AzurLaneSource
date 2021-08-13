@@ -1,240 +1,385 @@
 pg = pg or {}
 pg.equip_data_statistics_360 = {
-	[85065] = {
-		id = 85065,
-		damage = "63/wave",
-		base = 85060,
+	[79562] = {
+		id = 79562,
+		name = "专属弹幕-德雷克II",
+		base = 79561,
 		weapon_id = {
-			85065
+			79562
 		}
 	},
-	[85066] = {
-		id = 85066,
-		damage = "70/wave",
-		base = 85060,
-		weapon_id = {
-			85066
-		}
-	},
-	[85120] = {
+	[79571] = {
+		type = 1,
+		name = "专属弹幕-美因茨I",
+		speciality = "N/A",
 		tech = 1,
-		name = "Triple 152mm B-38 MK 5 Main Gun Mount",
-		speciality = "Lock",
-		type = 2,
-		value_2 = 12,
-		ammo = 3,
-		damage = "5 x 6",
-		nationality = 7,
-		rarity = 3,
-		id = 85120,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		value_2 = 0,
+		id = 79571,
 		value_3 = 0,
+		descrip = "Barrage",
+		icon = "1",
 		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "85120",
-		attribute_2 = "cannon",
 		property_rate = {},
-		ammo_icon = {
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
+		weapon_id = {
+			79571
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
+		equip_parameters = {},
+		label = {}
+	},
+	[79572] = {
+		id = 79572,
+		name = "专属弹幕-美因茨II",
+		base = 79571,
+		weapon_id = {
+			79572
+		}
+	},
+	[79581] = {
+		type = 1,
+		name = "专属弹幕-赫敏I",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 79581,
+		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
+		weapon_id = {
+			79581
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
+		equip_parameters = {},
+		label = {}
+	},
+	[79582] = {
+		id = 79582,
+		name = "专属弹幕-赫敏II",
+		base = 79581,
+		weapon_id = {
+			79582
+		}
+	},
+	[79591] = {
+		type = 1,
+		name = "专属弹幕-U96I",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 79591,
+		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
+		weapon_id = {
+			79591
+		},
+		skill_id = {},
+		part_main = {
 			1
 		},
-		ammo_info = {
-			{
-				1,
-				1201
-			}
-		},
-		equip_info = {
-			1,
-			2,
-			{
-				3,
-				1201
-			},
-			{
-				4,
-				1110
-			},
-			6,
-			10,
-			11,
-			12
-		},
-		weapon_id = {
-			85120
-		},
-		skill_id = {},
-		part_main = {
-			2
-		},
 		part_sub = {
-			5
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
 		},
 		equip_parameters = {},
-		label = {
-			"SN",
-			"CL",
-			"MG"
-		}
+		label = {}
 	},
-	[85121] = {
-		id = 85121,
-		base = 85120,
+	[79592] = {
+		id = 79592,
+		name = "专属弹幕-U96II",
+		base = 79591,
 		weapon_id = {
-			85121
+			79592
 		}
 	},
-	[85122] = {
-		id = 85122,
-		damage = "6 x 6",
-		base = 85120,
-		weapon_id = {
-			85122
-		}
-	},
-	[85123] = {
-		id = 85123,
-		damage = "7 x 6",
-		base = 85120,
-		weapon_id = {
-			85123
-		}
-	},
-	[85124] = {
-		id = 85124,
-		damage = "8 x 6",
-		base = 85120,
-		weapon_id = {
-			85124
-		}
-	},
-	[85125] = {
-		id = 85125,
-		damage = "9 x 6",
-		base = 85120,
-		weapon_id = {
-			85125
-		}
-	},
-	[85126] = {
-		id = 85126,
-		damage = "10 x 6",
-		base = 85120,
-		weapon_id = {
-			85126
-		}
-	},
-	[85140] = {
-		tech = 2,
-		name = "Triple 152mm B-38 MK 5 Main Gun Mount",
-		speciality = "Lock",
-		type = 2,
-		value_2 = 25,
-		ammo = 2,
-		damage = "6 x 6",
-		nationality = 7,
-		rarity = 4,
-		id = 85140,
+	[79601] = {
+		type = 1,
+		name = "专属弹幕-凉月I",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 79601,
 		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
 		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "85120",
-		attribute_2 = "cannon",
 		property_rate = {},
-		ammo_icon = {
-			3
-		},
-		ammo_info = {
-			{
-				1,
-				1207
-			}
-		},
-		equip_info = {
-			1,
-			2,
-			{
-				3,
-				1207
-			},
-			{
-				4,
-				1110
-			},
-			6,
-			10,
-			11,
-			12
-		},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
 		weapon_id = {
-			85140
+			60571
 		},
 		skill_id = {},
 		part_main = {
-			2
+			1,
+			19
 		},
 		part_sub = {
-			5
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
 		},
 		equip_parameters = {},
-		label = {
-			"SN",
-			"CL",
-			"MG",
-			"HE"
+		label = {}
+	},
+	[79602] = {
+		id = 79602,
+		name = "专属弹幕-凉月II",
+		base = 79601,
+		weapon_id = {
+			60572
 		}
 	},
-	[85141] = {
-		id = 85141,
-		base = 85140,
+	[79611] = {
+		type = 1,
+		name = "专属弹幕-罗恩μI",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 79611,
+		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
 		weapon_id = {
-			85141
+			79611
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
+		equip_parameters = {},
+		label = {}
+	},
+	[79612] = {
+		id = 79612,
+		name = "专属弹幕-罗恩μII",
+		base = 79611,
+		weapon_id = {
+			79612
 		}
 	},
-	[85142] = {
-		id = 85142,
-		damage = "7 x 6",
-		base = 85140,
+	[79621] = {
+		type = 1,
+		name = "专属弹幕-恶毒μI",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 79621,
+		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
 		weapon_id = {
-			85142
+			60581
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
+		equip_parameters = {},
+		label = {}
+	},
+	[79622] = {
+		id = 79622,
+		name = "专属弹幕-恶毒μII",
+		base = 79621,
+		weapon_id = {
+			60582
 		}
 	},
-	[85143] = {
-		id = 85143,
-		damage = "8 x 6",
-		base = 85140,
+	[79631] = {
+		type = 1,
+		name = "专属弹幕-黛朵μI",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 79631,
+		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
 		weapon_id = {
-			85143
+			79631
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
+		equip_parameters = {},
+		label = {}
+	},
+	[79632] = {
+		id = 79632,
+		name = "专属弹幕-黛朵μII",
+		base = 79631,
+		weapon_id = {
+			79632
 		}
 	},
-	[85144] = {
-		id = 85144,
-		damage = "9 x 6",
-		base = 85140,
+	[79641] = {
+		type = 1,
+		name = "专属弹幕-塔什干μI",
+		speciality = "N/A",
+		tech = 1,
+		rarity = 1,
+		ammo = 10,
+		nationality = 0,
+		descrip = "Barrage",
+		id = 79641,
+		value_3 = 0,
+		value_2 = 0,
+		icon = "1",
+		value_1 = "0",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {},
+		ammo_info = {},
+		equip_info = {},
 		weapon_id = {
-			85144
-		}
+			79641
+		},
+		skill_id = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
+		equip_parameters = {},
+		label = {}
 	},
-	[85145] = {
-		id = 85145,
-		damage = "10 x 6",
-		base = 85140,
+	[79642] = {
+		id = 79642,
+		name = "专属弹幕-塔什干μII",
+		base = 79641,
 		weapon_id = {
-			85145
-		}
-	},
-	[85146] = {
-		id = 85146,
-		damage = "11 x 6",
-		base = 85140,
-		weapon_id = {
-			85146
-		}
-	},
-	[85147] = {
-		id = 85147,
-		damage = "12 x 6",
-		base = 85140,
-		weapon_id = {
-			85147
+			79642
 		}
 	}
 }

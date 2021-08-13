@@ -1,77 +1,35 @@
 pg = pg or {}
 pg.aircraft_template_209 = {
-	[81326] = {
-		id = 81326,
-		max_hp = 77,
-		hp_growth = 2949,
-		base = 81320,
+	[69990] = {
+		id = 69990,
+		max_hp = 85,
+		hp_growth = 3466,
+		base = 69981,
 		weapon_ID = {
-			50326,
-			50526
+			51350
 		}
 	},
-	[81327] = {
-		id = 81327,
-		max_hp = 83,
-		hp_growth = 3182,
-		base = 81320,
-		weapon_ID = {
-			50327,
-			50527
-		}
-	},
-	[81328] = {
-		id = 81328,
-		max_hp = 89,
-		hp_growth = 3415,
-		base = 81320,
-		weapon_ID = {
-			50328,
-			50528
-		}
-	},
-	[81329] = {
-		id = 81329,
-		max_hp = 95,
-		hp_growth = 3648,
-		base = 81320,
-		weapon_ID = {
-			50329,
-			50529
-		}
-	},
-	[81330] = {
-		id = 81330,
-		max_hp = 101,
-		hp_growth = 3881,
-		base = 81320,
-		weapon_ID = {
-			50330,
-			50530
-		}
-	},
-	[81340] = {
+	[81000] = {
 		attack_power = 2,
-		name = "F6F地狱猫",
+		name = "F2A水牛",
 		type = 1,
 		accuracy = 23,
-		model_ID = "f6f",
+		model_ID = "F2A",
 		ACC_growth = 0,
-		crash_DMG = 80,
-		dodge = 0.315,
+		crash_DMG = 42,
+		dodge = 0.375,
 		funnel_behavior = "",
 		nationality = 1,
-		id = 81340,
-		icon = "f6f",
+		id = 81000,
+		icon = "F2A",
 		AP_growth = 2000,
-		dodge_limit = 11,
-		hp_growth = 1693,
-		speed = 50,
-		max_hp = 44,
+		dodge_limit = 8,
+		hp_growth = 1129,
+		speed = 45,
+		max_hp = 29,
 		scale = 1,
 		weapon_ID = {
-			50340,
-			50540
+			50300
 		},
 		position_offset = {
 			0,
@@ -91,13 +49,13 @@ pg.aircraft_template_209 = {
 		bound_bone = {
 			weapon = {
 				{
-					-1.28,
-					1.62,
+					1.24,
+					-1.34,
 					0
 				},
 				{
-					-1.12,
-					-1,
+					1.43,
+					1.6,
 					0
 				}
 			}
@@ -114,7 +72,7 @@ pg.aircraft_template_209 = {
 				0
 			},
 			{
-				0,
+				0.24,
 				0,
 				0
 			},
@@ -125,44 +83,206 @@ pg.aircraft_template_209 = {
 			}
 		}
 	},
-	[81341] = {
-		id = 81341,
-		max_hp = 51,
-		hp_growth = 1947,
-		base = 81340,
+	[81001] = {
+		id = 81001,
+		max_hp = 34,
+		hp_growth = 1298,
+		base = 81000,
 		weapon_ID = {
-			50341,
-			50541
+			50301
 		}
 	},
-	[81342] = {
-		id = 81342,
-		max_hp = 57,
-		hp_growth = 2201,
-		base = 81340,
+	[81002] = {
+		id = 81002,
+		max_hp = 38,
+		hp_growth = 1468,
+		base = 81000,
 		weapon_ID = {
-			50342,
-			50542
+			50302
 		}
 	},
-	[81343] = {
-		id = 81343,
-		max_hp = 64,
-		hp_growth = 2455,
-		base = 81340,
+	[81003] = {
+		id = 81003,
+		max_hp = 43,
+		hp_growth = 1637,
+		base = 81000,
 		weapon_ID = {
-			50343,
-			50543
+			50303
 		}
 	},
-	[81344] = {
-		id = 81344,
-		max_hp = 70,
-		hp_growth = 2710,
-		base = 81340,
+	[81020] = {
+		attack_power = 2,
+		name = "F2A水牛",
+		type = 1,
+		accuracy = 23,
+		model_ID = "F2A",
+		ACC_growth = 0,
+		crash_DMG = 42,
+		dodge = 0.363,
+		funnel_behavior = "",
+		nationality = 1,
+		id = 81020,
+		icon = "F2A",
+		AP_growth = 2000,
+		dodge_limit = 8.5,
+		hp_growth = 1270,
+		speed = 45,
+		max_hp = 33,
+		scale = 1,
 		weapon_ID = {
-			50344,
-			50544
+			50320
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					1.24,
+					-1.34,
+					0
+				},
+				{
+					1.43,
+					1.6,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.24,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[81021] = {
+		id = 81021,
+		max_hp = 38,
+		hp_growth = 1461,
+		base = 81020,
+		weapon_ID = {
+			50321
+		}
+	},
+	[81022] = {
+		id = 81022,
+		max_hp = 43,
+		hp_growth = 1651,
+		base = 81020,
+		weapon_ID = {
+			50322
+		}
+	},
+	[81023] = {
+		id = 81023,
+		max_hp = 48,
+		hp_growth = 1842,
+		base = 81020,
+		weapon_ID = {
+			50323
+		}
+	},
+	[81040] = {
+		attack_power = 2,
+		name = "F2A水牛",
+		type = 1,
+		accuracy = 23,
+		model_ID = "F2A",
+		ACC_growth = 0,
+		crash_DMG = 42,
+		dodge = 0.351,
+		funnel_behavior = "",
+		nationality = 1,
+		id = 81040,
+		icon = "F2A",
+		AP_growth = 2000,
+		dodge_limit = 9,
+		hp_growth = 1411,
+		speed = 45,
+		max_hp = 37,
+		scale = 1,
+		weapon_ID = {
+			50340
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					1.24,
+					-1.34,
+					0
+				},
+				{
+					1.43,
+					1.6,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.24,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
 		}
 	}
 }

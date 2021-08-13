@@ -2,71 +2,61 @@ pg = pg or {}
 pg.weapon_property_128 = {}
 
 function ()
-	uv0.weapon_property_128[65988] = {
-		id = 65988,
-		name = "新泽西跨队支援弹幕-Lv8",
-		damage = 17,
-		base = 65981,
+	uv0.weapon_property_128[65689] = {
+		id = 65689,
+		name = "贝拉罗斯冰锥2-95-LV9",
+		damage = 152,
+		base = 65681,
 		barrage_ID = {
-			81105,
-			81106
+			81026,
+			81026
 		}
 	}
-	uv0.weapon_property_128[65989] = {
-		id = 65989,
-		name = "新泽西跨队支援弹幕-Lv9",
-		damage = 18,
-		base = 65981,
+	uv0.weapon_property_128[65690] = {
+		id = 65690,
+		name = "贝拉罗斯冰锥2-95-LV10",
+		damage = 164,
+		base = 65681,
 		barrage_ID = {
-			81105,
-			81106
+			81026,
+			81026
 		}
 	}
-	uv0.weapon_property_128[65990] = {
-		id = 65990,
-		name = "新泽西跨队支援弹幕-Lv10",
-		damage = 20,
-		base = 65981,
-		barrage_ID = {
-			81105,
-			81106
-		}
-	}
-	uv0.weapon_property_128[65991] = {
+	uv0.weapon_property_128[65691] = {
 		recover_time = 0,
-		name = "黑海伦娜-区域雷达扫描",
+		name = "贝拉罗斯冰锥3-100-LV1",
 		shakescreen = 0,
-		type = 1,
+		type = 2,
 		torpedo_ammo = 0,
-		fire_fx = "CAFire",
-		action_index = "attack",
+		fire_fx = "",
+		action_index = "",
 		charge_param = "",
 		axis_angle = 0,
-		fire_fx_loop_type = 3,
+		fire_fx_loop_type = 1,
 		attack_attribute = 1,
 		expose = 0,
-		search_type = 1,
+		search_type = 2,
 		effect_move = 0,
-		angle = 360,
-		reload_max = 5000,
+		angle = 25,
+		reload_max = 9500,
 		queue = 4,
-		range = 120,
-		damage = 1,
+		range = 100,
+		damage = 56,
 		suppress = 0,
 		auto_aftercast = 0,
 		corrected = 100,
 		min_range = 0,
 		initial_over_heat = 0,
 		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-main",
-		id = 65991,
+		fire_sfx = "",
+		id = 65691,
 		attack_attribute_ratio = 100,
 		aim_type = 0,
 		bullet_ID = {
-			19305
+			19264
 		},
 		barrage_ID = {
-			81107
+			81025
 		},
 		oxy_type = {
 			1
@@ -76,41 +66,118 @@ function ()
 		},
 		precast_param = {}
 	}
-	uv0.weapon_property_128[66000] = {
-		recover_time = 0.5,
-		name = "萨拉托加技能LV0",
-		shakescreen = 302,
+	uv0.weapon_property_128[65692] = {
+		id = 65692,
+		name = "贝拉罗斯冰锥3-100-LV2",
+		damage = 68,
+		base = 65691
+	}
+	uv0.weapon_property_128[65693] = {
+		id = 65693,
+		name = "贝拉罗斯冰锥3-100-LV3",
+		damage = 80,
+		base = 65691
+	}
+	uv0.weapon_property_128[65694] = {
+		id = 65694,
+		name = "贝拉罗斯冰锥3-100-LV4",
+		damage = 92,
+		base = 65691,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65695] = {
+		id = 65695,
+		name = "贝拉罗斯冰锥3-100-LV5",
+		damage = 104,
+		base = 65691,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65696] = {
+		id = 65696,
+		name = "贝拉罗斯冰锥3-100-LV6",
+		damage = 118,
+		base = 65691,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65697] = {
+		id = 65697,
+		name = "贝拉罗斯冰锥3-100-LV7",
+		damage = 128,
+		base = 65691,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65698] = {
+		id = 65698,
+		name = "贝拉罗斯冰锥3-100-LV8",
+		damage = 140,
+		base = 65691,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65699] = {
+		id = 65699,
+		name = "贝拉罗斯冰锥3-100-LV9",
+		damage = 152,
+		base = 65691,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65700] = {
+		id = 65700,
+		name = "贝拉罗斯冰锥3-100-LV10",
+		damage = 164,
+		base = 65691,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65701] = {
+		recover_time = 0,
+		name = "贝拉罗斯冰锥4-105-LV1",
+		shakescreen = 0,
 		type = 2,
 		torpedo_ammo = 0,
-		fire_fx = "CAFire",
-		action_index = "attack",
+		fire_fx = "",
+		action_index = "",
 		charge_param = "",
 		axis_angle = 0,
 		fire_fx_loop_type = 1,
-		attack_attribute = 4,
-		expose = 10,
-		search_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 2,
 		effect_move = 0,
-		angle = 40,
-		reload_max = 1300,
-		queue = 1,
-		range = 120,
-		damage = 40,
-		suppress = 1,
+		angle = 25,
+		reload_max = 9500,
+		queue = 4,
+		range = 105,
+		damage = 56,
+		suppress = 0,
 		auto_aftercast = 0,
-		corrected = 105,
+		corrected = 100,
 		min_range = 0,
 		initial_over_heat = 0,
 		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-203mm",
-		id = 66000,
-		attack_attribute_ratio = 120,
-		aim_type = 1,
+		fire_sfx = "",
+		id = 65701,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
 		bullet_ID = {
-			1404
+			19263,
+			19265
 		},
 		barrage_ID = {
-			1206
+			81025,
+			81025
 		},
 		oxy_type = {
 			1
@@ -120,755 +187,111 @@ function ()
 		},
 		precast_param = {}
 	}
-	uv0.weapon_property_128[66001] = {
-		reload_max = 1270,
-		name = "萨拉托加技能LV1",
-		damage = 48,
-		base = 66000,
-		id = 66001
-	}
-	uv0.weapon_property_128[66002] = {
-		reload_max = 1244,
-		name = "萨拉托加技能LV2",
-		damage = 56,
-		base = 66000,
-		id = 66002
-	}
-	uv0.weapon_property_128[66003] = {
-		reload_max = 1218,
-		name = "萨拉托加技能LV3",
-		damage = 64,
-		base = 66000,
-		id = 66003
-	}
-	uv0.weapon_property_128[66004] = {
-		reload_max = 1192,
-		name = "萨拉托加技能LV4",
-		damage = 72,
-		base = 66000,
-		id = 66004
-	}
-	uv0.weapon_property_128[66005] = {
-		reload_max = 1166,
-		name = "萨拉托加技能LV5",
-		damage = 80,
-		base = 66000,
-		id = 66005
-	}
-	uv0.weapon_property_128[66006] = {
-		reload_max = 1140,
-		name = "萨拉托加技能LV6",
-		damage = 88,
-		base = 66000,
-		id = 66006
-	}
-	uv0.weapon_property_128[66007] = {
-		reload_max = 1114,
-		name = "萨拉托加技能LV7",
-		damage = 96,
-		base = 66000,
-		id = 66007
-	}
-	uv0.weapon_property_128[66008] = {
-		reload_max = 1088,
-		name = "萨拉托加技能LV8",
-		damage = 104,
-		base = 66000,
-		id = 66008
-	}
-	uv0.weapon_property_128[66009] = {
-		reload_max = 1062,
-		name = "萨拉托加技能LV9",
-		damage = 112,
-		base = 66000,
-		id = 66009
-	}
-	uv0.weapon_property_128[66010] = {
-		reload_max = 1036,
-		name = "萨拉托加技能LV10",
-		damage = 120,
-		base = 66000,
-		id = 66010
-	}
-	uv0.weapon_property_128[66020] = {
-		recover_time = 0.5,
-		name = "厌战技能LV0",
-		shakescreen = 302,
-		type = 23,
-		torpedo_ammo = 0,
-		fire_fx = "zhupao",
-		action_index = "attack_main",
-		fire_fx_loop_type = 1,
-		axis_angle = 0,
-		attack_attribute = 1,
-		reload_max = 3366,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 50,
-		queue = 1,
-		suppress = 1,
-		range = 200,
-		damage = 52,
-		auto_aftercast = 0,
-		initial_over_heat = 1,
-		corrected = 110,
-		min_range = 35,
-		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-356mm",
-		id = 66020,
-		attack_attribute_ratio = 80,
-		aim_type = 1,
-		bullet_ID = {
-			19981
-		},
-		barrage_ID = {
-			1300
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		charge_param = {
-			maxLock = 2,
-			lockTime = 0.3
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_128[66021] = {
-		reload_max = 3298,
-		name = "厌战技能LV1",
-		damage = 60,
-		base = 66020,
-		id = 66021
-	}
-	uv0.weapon_property_128[66022] = {
-		reload_max = 3231,
-		name = "厌战技能LV2",
+	uv0.weapon_property_128[65702] = {
+		id = 65702,
+		name = "贝拉罗斯冰锥4-105-LV2",
 		damage = 68,
-		base = 66020,
-		id = 66022
+		base = 65701
 	}
-	uv0.weapon_property_128[66023] = {
-		reload_max = 3164,
-		name = "厌战技能LV3",
-		damage = 76,
-		base = 66020,
-		id = 66023
-	}
-	uv0.weapon_property_128[66024] = {
-		reload_max = 3096,
-		name = "厌战技能LV4",
-		damage = 84,
-		base = 66020,
-		id = 66024
-	}
-	uv0.weapon_property_128[66025] = {
-		reload_max = 3029,
-		name = "厌战技能LV5",
-		damage = 92,
-		base = 66020,
-		id = 66025
-	}
-	uv0.weapon_property_128[66026] = {
-		reload_max = 2962,
-		name = "厌战技能LV6",
-		damage = 100,
-		base = 66020,
-		id = 66026,
-		bullet_ID = {
-			19982
-		}
-	}
-	uv0.weapon_property_128[66027] = {
-		reload_max = 2894,
-		name = "厌战技能LV7",
-		damage = 112,
-		base = 66020,
-		id = 66027,
-		bullet_ID = {
-			19982
-		}
-	}
-	uv0.weapon_property_128[66028] = {
-		reload_max = 2827,
-		name = "厌战技能LV8",
-		damage = 124,
-		base = 66020,
-		id = 66028,
-		bullet_ID = {
-			19982
-		}
-	}
-	uv0.weapon_property_128[66029] = {
-		reload_max = 2760,
-		name = "厌战技能LV9",
-		damage = 138,
-		base = 66020,
-		id = 66029,
-		bullet_ID = {
-			19982
-		}
-	}
-	uv0.weapon_property_128[66030] = {
-		reload_max = 2692,
-		name = "厌战技能LV10",
-		damage = 154,
-		base = 66020,
-		id = 66030,
-		bullet_ID = {
-			19982
-		}
-	}
-	uv0.weapon_property_128[66040] = {
-		recover_time = 0,
-		name = "胡德技能LV0-PVP",
-		shakescreen = 0,
-		type = 19,
-		torpedo_ammo = 0,
-		fire_fx = "CAFire",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 60,
-		reload_max = 2100,
-		queue = 1,
-		range = 115,
-		damage = 50,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 35,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-main",
-		id = 66040,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199437,
-			199438
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {
-			fx = "jineng",
-			alertTime = 1,
-			time = 0.5,
-			isBound = true
-		}
-	}
-	uv0.weapon_property_128[66041] = {
-		id = 66041,
-		name = "胡德技能LV1-PVP",
-		damage = 62,
-		base = 66040
-	}
-	uv0.weapon_property_128[66042] = {
-		id = 66042,
-		name = "胡德技能LV2-PVP",
-		damage = 74,
-		base = 66040
-	}
-	uv0.weapon_property_128[66043] = {
-		id = 66043,
-		name = "胡德技能LV3-PVP",
-		damage = 86,
-		base = 66040
-	}
-	uv0.weapon_property_128[66044] = {
-		id = 66044,
-		name = "胡德技能LV4-PVP",
-		damage = 98,
-		base = 66040,
-		barrage_ID = {
-			199439,
-			199440
-		}
-	}
-	uv0.weapon_property_128[66045] = {
-		id = 66045,
-		name = "胡德技能LV5-PVP",
-		damage = 110,
-		base = 66040,
-		barrage_ID = {
-			199439,
-			199440
-		}
-	}
-	uv0.weapon_property_128[66046] = {
-		id = 66046,
-		name = "胡德技能LV6-PVP",
-		damage = 122,
-		base = 66040,
-		barrage_ID = {
-			199439,
-			199440
-		}
-	}
-	uv0.weapon_property_128[66047] = {
-		id = 66047,
-		name = "胡德技能LV7-PVP",
-		damage = 134,
-		base = 66040,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199441,
-			199442,
-			199443
-		}
-	}
-	uv0.weapon_property_128[66048] = {
-		id = 66048,
-		name = "胡德技能LV8-PVP",
-		damage = 146,
-		base = 66040,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199441,
-			199442,
-			199443
-		}
-	}
-	uv0.weapon_property_128[66049] = {
-		id = 66049,
-		name = "胡德技能LV9-PVP",
-		damage = 158,
-		base = 66040,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199441,
-			199442,
-			199443
-		}
-	}
-	uv0.weapon_property_128[66050] = {
-		id = 66050,
-		name = "胡德技能LV10-PVP",
-		damage = 174,
-		base = 66040,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199441,
-			199442,
-			199443
-		}
-	}
-	uv0.weapon_property_128[66060] = {
-		recover_time = 0,
-		name = "胡德技能LV0-PVE",
-		shakescreen = 0,
-		type = 19,
-		torpedo_ammo = 0,
-		fire_fx = "CAFire",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 60,
-		reload_max = 2100,
-		queue = 1,
-		range = 95,
-		damage = 50,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 25,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-main",
-		id = 66060,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199437,
-			199438
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {
-			fx = "jineng",
-			alertTime = 1,
-			time = 0.5,
-			isBound = true
-		}
-	}
-	uv0.weapon_property_128[66061] = {
-		id = 66061,
-		name = "胡德技能LV1-PVE",
-		damage = 62,
-		base = 66060
-	}
-	uv0.weapon_property_128[66062] = {
-		id = 66062,
-		name = "胡德技能LV2-PVE",
-		damage = 74,
-		base = 66060
-	}
-	uv0.weapon_property_128[66063] = {
-		id = 66063,
-		name = "胡德技能LV3-PVE",
-		damage = 86,
-		base = 66060
-	}
-	uv0.weapon_property_128[66064] = {
-		id = 66064,
-		name = "胡德技能LV4-PVE",
-		damage = 98,
-		base = 66060,
-		barrage_ID = {
-			199439,
-			199440
-		}
-	}
-	uv0.weapon_property_128[66065] = {
-		id = 66065,
-		name = "胡德技能LV5-PVE",
-		damage = 110,
-		base = 66060,
-		barrage_ID = {
-			199439,
-			199440
-		}
-	}
-	uv0.weapon_property_128[66066] = {
-		id = 66066,
-		name = "胡德技能LV6-PVE",
-		damage = 122,
-		base = 66060,
-		barrage_ID = {
-			199439,
-			199440
-		}
-	}
-	uv0.weapon_property_128[66067] = {
-		id = 66067,
-		name = "胡德技能LV7-PVE",
-		damage = 134,
-		base = 66060,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199441,
-			199442,
-			199443
-		}
-	}
-	uv0.weapon_property_128[66068] = {
-		id = 66068,
-		name = "胡德技能LV8-PVE",
-		damage = 146,
-		base = 66060,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199441,
-			199442,
-			199443
-		}
-	}
-	uv0.weapon_property_128[66069] = {
-		id = 66069,
-		name = "胡德技能LV9-PVE",
-		damage = 158,
-		base = 66060,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199441,
-			199442,
-			199443
-		}
-	}
-	uv0.weapon_property_128[66070] = {
-		id = 66070,
-		name = "胡德技能LV10-PVE",
-		damage = 174,
-		base = 66060,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199441,
-			199442,
-			199443
-		}
-	}
-	uv0.weapon_property_128[66080] = {
-		recover_time = 0.5,
-		name = "宾夕法尼亚技能LV0-PVP",
-		shakescreen = 0,
-		type = 19,
-		torpedo_ammo = 0,
-		fire_fx = "CLFire",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 120,
-		reload_max = 1250,
-		queue = 1,
-		range = 115,
-		damage = 40,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 35,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-155mm",
-		id = 66080,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199400,
-			199401
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_128[66081] = {
-		id = 66081,
-		name = "宾夕法尼亚技能LV1-PVP",
-		damage = 48,
-		base = 66080
-	}
-	uv0.weapon_property_128[66082] = {
-		id = 66082,
-		name = "宾夕法尼亚技能LV2-PVP",
-		damage = 56,
-		base = 66080
-	}
-	uv0.weapon_property_128[66083] = {
-		id = 66083,
-		name = "宾夕法尼亚技能LV3-PVP",
-		damage = 64,
-		base = 66080
-	}
-	uv0.weapon_property_128[66084] = {
-		id = 66084,
-		name = "宾夕法尼亚技能LV4-PVP",
-		damage = 72,
-		base = 66080,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199400,
-			199401,
-			199402
-		}
-	}
-	uv0.weapon_property_128[66085] = {
-		id = 66085,
-		name = "宾夕法尼亚技能LV5-PVP",
+	uv0.weapon_property_128[65703] = {
+		id = 65703,
+		name = "贝拉罗斯冰锥4-105-LV3",
 		damage = 80,
-		base = 66080,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199400,
-			199401,
-			199402
-		}
+		base = 65701
 	}
-	uv0.weapon_property_128[66086] = {
-		id = 66086,
-		name = "宾夕法尼亚技能LV6-PVP",
-		damage = 88,
-		base = 66080,
-		bullet_ID = {
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199400,
-			199401,
-			199402
-		}
+	uv0.weapon_property_128[65704] = {
+		id = 65704,
+		name = "贝拉罗斯冰锥4-105-LV4",
+		damage = 92,
+		base = 65701
 	}
-	uv0.weapon_property_128[66087] = {
-		id = 66087,
-		name = "宾夕法尼亚技能LV7-PVP",
-		damage = 96,
-		base = 66080,
-		bullet_ID = {
-			10014,
-			10014,
-			10014,
-			10014
-		},
-		barrage_ID = {
-			199400,
-			199401,
-			199402,
-			199403
-		}
-	}
-	uv0.weapon_property_128[66088] = {
-		id = 66088,
-		name = "宾夕法尼亚技能LV8-PVP",
+	uv0.weapon_property_128[65705] = {
+		id = 65705,
+		name = "贝拉罗斯冰锥4-105-LV5",
 		damage = 104,
-		base = 66080,
-		bullet_ID = {
-			10014,
-			10014,
-			10014,
-			10014
-		},
+		base = 65701
+	}
+	uv0.weapon_property_128[65706] = {
+		id = 65706,
+		name = "贝拉罗斯冰锥4-105-LV6",
+		damage = 118,
+		base = 65701
+	}
+	uv0.weapon_property_128[65707] = {
+		id = 65707,
+		name = "贝拉罗斯冰锥4-105-LV7",
+		damage = 128,
+		base = 65701,
 		barrage_ID = {
-			199400,
-			199401,
-			199402,
-			199403
+			81026,
+			81026
 		}
 	}
-	uv0.weapon_property_128[66089] = {
-		id = 66089,
-		name = "宾夕法尼亚技能LV9-PVP",
-		damage = 112,
-		base = 66080,
-		bullet_ID = {
-			10014,
-			10014,
-			10014,
-			10014
-		},
+	uv0.weapon_property_128[65708] = {
+		id = 65708,
+		name = "贝拉罗斯冰锥4-105-LV8",
+		damage = 140,
+		base = 65701,
 		barrage_ID = {
-			199400,
-			199401,
-			199402,
-			199403
+			81026,
+			81026
 		}
 	}
-	uv0.weapon_property_128[66090] = {
-		id = 66090,
-		name = "宾夕法尼亚技能LV10-PVP",
-		damage = 120,
-		base = 66080,
-		bullet_ID = {
-			10014,
-			10014,
-			10014,
-			10014
-		},
+	uv0.weapon_property_128[65709] = {
+		id = 65709,
+		name = "贝拉罗斯冰锥4-105-LV9",
+		damage = 152,
+		base = 65701,
 		barrage_ID = {
-			199400,
-			199401,
-			199402,
-			199403
+			81026,
+			81026
 		}
 	}
-	uv0.weapon_property_128[66100] = {
-		recover_time = 0.5,
-		name = "宾夕法尼亚技能LV0-PVE",
+	uv0.weapon_property_128[65710] = {
+		id = 65710,
+		name = "贝拉罗斯冰锥4-105-LV10",
+		damage = 164,
+		base = 65701,
+		barrage_ID = {
+			81026,
+			81026
+		}
+	}
+	uv0.weapon_property_128[65711] = {
+		recover_time = 0,
+		name = "贝拉罗斯冰锥5-110-LV1",
 		shakescreen = 0,
-		type = 19,
+		type = 2,
 		torpedo_ammo = 0,
-		fire_fx = "CLFire",
-		action_index = "attack",
+		fire_fx = "",
+		action_index = "",
 		charge_param = "",
 		axis_angle = 0,
 		fire_fx_loop_type = 1,
 		attack_attribute = 1,
 		expose = 0,
-		search_type = 1,
+		search_type = 2,
 		effect_move = 0,
-		angle = 120,
-		reload_max = 1250,
-		queue = 1,
-		range = 90,
-		damage = 40,
-		suppress = 1,
+		angle = 25,
+		reload_max = 9500,
+		queue = 4,
+		range = 110,
+		damage = 56,
+		suppress = 0,
 		auto_aftercast = 0,
 		corrected = 100,
-		min_range = 25,
+		min_range = 0,
 		initial_over_heat = 0,
 		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-155mm",
-		id = 66100,
+		fire_sfx = "",
+		id = 65711,
 		attack_attribute_ratio = 100,
-		aim_type = 1,
+		aim_type = 0,
 		bullet_ID = {
-			10014,
-			10014
+			19264
 		},
 		barrage_ID = {
-			199400,
-			199401
+			81025
 		},
 		oxy_type = {
 			1
@@ -878,16 +301,485 @@ function ()
 		},
 		precast_param = {}
 	}
-	uv0.weapon_property_128[66101] = {
-		id = 66101,
-		name = "宾夕法尼亚技能LV1-PVE",
-		damage = 48,
-		base = 66100
+	uv0.weapon_property_128[65712] = {
+		id = 65712,
+		name = "贝拉罗斯冰锥5-110-LV2",
+		damage = 68,
+		base = 65711
 	}
-	uv0.weapon_property_128[66102] = {
-		id = 66102,
-		name = "宾夕法尼亚技能LV2-PVE",
+	uv0.weapon_property_128[65713] = {
+		id = 65713,
+		name = "贝拉罗斯冰锥5-110-LV3",
+		damage = 80,
+		base = 65711
+	}
+	uv0.weapon_property_128[65714] = {
+		id = 65714,
+		name = "贝拉罗斯冰锥5-110-LV4",
+		damage = 92,
+		base = 65711,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65715] = {
+		id = 65715,
+		name = "贝拉罗斯冰锥5-110-LV5",
+		damage = 104,
+		base = 65711,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65716] = {
+		id = 65716,
+		name = "贝拉罗斯冰锥5-110-LV6",
+		damage = 118,
+		base = 65711,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65717] = {
+		id = 65717,
+		name = "贝拉罗斯冰锥5-110-LV7",
+		damage = 128,
+		base = 65711,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65718] = {
+		id = 65718,
+		name = "贝拉罗斯冰锥5-110-LV8",
+		damage = 140,
+		base = 65711,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65719] = {
+		id = 65719,
+		name = "贝拉罗斯冰锥5-110-LV9",
+		damage = 152,
+		base = 65711,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65720] = {
+		id = 65720,
+		name = "贝拉罗斯冰锥5-110-LV10",
+		damage = 164,
+		base = 65711,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65721] = {
+		recover_time = 0,
+		name = "贝拉罗斯PVP冰锥1-50-LV1",
+		shakescreen = 0,
+		type = 2,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 2,
+		effect_move = 0,
+		angle = 70,
+		reload_max = 9500,
+		queue = 4,
+		range = 50,
 		damage = 56,
-		base = 66100
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "",
+		id = 65721,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
+		bullet_ID = {
+			19264
+		},
+		barrage_ID = {
+			81025
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_128[65722] = {
+		id = 65722,
+		name = "贝拉罗斯PVP冰锥1-50-LV2",
+		damage = 68,
+		base = 65721
+	}
+	uv0.weapon_property_128[65723] = {
+		id = 65723,
+		name = "贝拉罗斯PVP冰锥1-50-LV3",
+		damage = 80,
+		base = 65721
+	}
+	uv0.weapon_property_128[65724] = {
+		id = 65724,
+		name = "贝拉罗斯PVP冰锥1-50-LV4",
+		damage = 92,
+		base = 65721,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65725] = {
+		id = 65725,
+		name = "贝拉罗斯PVP冰锥1-50-LV5",
+		damage = 104,
+		base = 65721,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65726] = {
+		id = 65726,
+		name = "贝拉罗斯PVP冰锥1-50-LV6",
+		damage = 118,
+		base = 65721,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65727] = {
+		id = 65727,
+		name = "贝拉罗斯PVP冰锥1-50-LV7",
+		damage = 128,
+		base = 65721,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65728] = {
+		id = 65728,
+		name = "贝拉罗斯PVP冰锥1-50-LV8",
+		damage = 140,
+		base = 65721,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65729] = {
+		id = 65729,
+		name = "贝拉罗斯PVP冰锥1-50-LV9",
+		damage = 152,
+		base = 65721,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65730] = {
+		id = 65730,
+		name = "贝拉罗斯PVP冰锥1-50-LV10",
+		damage = 164,
+		base = 65721,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65731] = {
+		recover_time = 0,
+		name = "贝拉罗斯PVP冰锥2-60-LV1",
+		shakescreen = 0,
+		type = 2,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 2,
+		effect_move = 0,
+		angle = 25,
+		reload_max = 9500,
+		queue = 4,
+		range = 60,
+		damage = 56,
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "",
+		id = 65731,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
+		bullet_ID = {
+			19263,
+			19265
+		},
+		barrage_ID = {
+			81025,
+			81025
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_128[65732] = {
+		id = 65732,
+		name = "贝拉罗斯PVP冰锥2-60-LV2",
+		damage = 68,
+		base = 65731
+	}
+	uv0.weapon_property_128[65733] = {
+		id = 65733,
+		name = "贝拉罗斯PVP冰锥2-60-LV3",
+		damage = 80,
+		base = 65731
+	}
+	uv0.weapon_property_128[65734] = {
+		id = 65734,
+		name = "贝拉罗斯PVP冰锥2-60-LV4",
+		damage = 92,
+		base = 65731
+	}
+	uv0.weapon_property_128[65735] = {
+		id = 65735,
+		name = "贝拉罗斯PVP冰锥2-60-LV5",
+		damage = 104,
+		base = 65731
+	}
+	uv0.weapon_property_128[65736] = {
+		id = 65736,
+		name = "贝拉罗斯PVP冰锥2-60-LV6",
+		damage = 118,
+		base = 65731
+	}
+	uv0.weapon_property_128[65737] = {
+		id = 65737,
+		name = "贝拉罗斯PVP冰锥2-60-LV7",
+		damage = 128,
+		base = 65731,
+		barrage_ID = {
+			81026,
+			81026
+		}
+	}
+	uv0.weapon_property_128[65738] = {
+		id = 65738,
+		name = "贝拉罗斯PVP冰锥2-60-LV8",
+		damage = 140,
+		base = 65731,
+		barrage_ID = {
+			81026,
+			81026
+		}
+	}
+	uv0.weapon_property_128[65739] = {
+		id = 65739,
+		name = "贝拉罗斯PVP冰锥2-60-LV9",
+		damage = 152,
+		base = 65731,
+		barrage_ID = {
+			81026,
+			81026
+		}
+	}
+	uv0.weapon_property_128[65740] = {
+		id = 65740,
+		name = "贝拉罗斯PVP冰锥2-60-LV10",
+		damage = 164,
+		base = 65731,
+		barrage_ID = {
+			81026,
+			81026
+		}
+	}
+	uv0.weapon_property_128[65741] = {
+		recover_time = 0,
+		name = "贝拉罗斯PVP冰锥3-115-LV1",
+		shakescreen = 0,
+		type = 2,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 2,
+		effect_move = 0,
+		angle = 25,
+		reload_max = 9500,
+		queue = 4,
+		range = 115,
+		damage = 56,
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "",
+		id = 65741,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
+		bullet_ID = {
+			19264
+		},
+		barrage_ID = {
+			81025
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_128[65742] = {
+		id = 65742,
+		name = "贝拉罗斯PVP冰锥3-115-LV2",
+		damage = 68,
+		base = 65741
+	}
+	uv0.weapon_property_128[65743] = {
+		id = 65743,
+		name = "贝拉罗斯PVP冰锥3-115-LV3",
+		damage = 80,
+		base = 65741
+	}
+	uv0.weapon_property_128[65744] = {
+		id = 65744,
+		name = "贝拉罗斯PVP冰锥3-115-LV4",
+		damage = 92,
+		base = 65741,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65745] = {
+		id = 65745,
+		name = "贝拉罗斯PVP冰锥3-115-LV5",
+		damage = 104,
+		base = 65741,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65746] = {
+		id = 65746,
+		name = "贝拉罗斯PVP冰锥3-115-LV6",
+		damage = 118,
+		base = 65741,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65747] = {
+		id = 65747,
+		name = "贝拉罗斯PVP冰锥3-115-LV7",
+		damage = 128,
+		base = 65741,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65748] = {
+		id = 65748,
+		name = "贝拉罗斯PVP冰锥3-115-LV8",
+		damage = 140,
+		base = 65741,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65749] = {
+		id = 65749,
+		name = "贝拉罗斯PVP冰锥3-115-LV9",
+		damage = 152,
+		base = 65741,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65750] = {
+		id = 65750,
+		name = "贝拉罗斯PVP冰锥3-115-LV10",
+		damage = 164,
+		base = 65741,
+		barrage_ID = {
+			81026
+		}
+	}
+	uv0.weapon_property_128[65751] = {
+		recover_time = 0,
+		name = "贝拉罗斯PVP冰锥4-120上下-LV1",
+		shakescreen = 0,
+		type = 2,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 2,
+		effect_move = 0,
+		angle = 25,
+		reload_max = 9500,
+		queue = 4,
+		range = 120,
+		damage = 56,
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "",
+		id = 65751,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
+		bullet_ID = {
+			19266,
+			19267
+		},
+		barrage_ID = {
+			81025,
+			81025
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_128[65752] = {
+		id = 65752,
+		name = "贝拉罗斯PVP冰锥4-120上下-LV2",
+		damage = 68,
+		base = 65751
 	}
 end()

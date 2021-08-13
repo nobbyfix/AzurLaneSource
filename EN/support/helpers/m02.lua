@@ -173,12 +173,11 @@ function LoadAnyAsync(slot0, slot1, slot2, slot3)
 end
 
 function LoadImageSpriteAtlasAsync(slot0, slot1, slot2, slot3)
-	slot0, slot5 = HXSet.autoHxShiftPath(slot0, slot1)
 	slot4 = slot2:GetComponent(typeof(Image))
 	slot4.enabled = false
 	uv0[slot4] = slot0
 
-	LoadSpriteAtlasAsync(slot0, slot5, function (slot0)
+	LoadSpriteAtlasAsync(slot0, slot1, function (slot0)
 		if not IsNil(uv0) and uv1[uv0] == uv2 then
 			uv1[uv0] = nil
 			uv0.enabled = true
@@ -530,12 +529,13 @@ slot4 = {
 function setFrame(slot0, slot1, slot2)
 	slot1 = tostring(slot1)
 
-	setImageColor(slot0, Color(1, 1, 1, 1))
 	setImageSprite(slot0, GetSpriteFromAtlas("weaponframes", "frame"))
 
 	slot3 = findTF(slot0, "specialFrame")
 
 	if slot2 or #slot1 > 1 or #slot1 == 1 and tonumber(slot1) > 5 then
+		setImageColor(slot0, Color.white)
+
 		if not slot3 then
 			removeAllChildren(cloneTplTo(slot0, slot0, "specialFrame"))
 		end
@@ -546,7 +546,7 @@ function setFrame(slot0, slot1, slot2)
 		setImageSprite(slot3, GetSpriteFromAtlas("weaponframes", slot2))
 		setActive(slot3, true)
 	else
-		setImageColor(slot0, shipRarity2FrameColor(slot1 + 1))
+		setImageColor(slot0, shipRarity2FrameColor(tonumber(slot1) + 1))
 
 		if slot3 then
 			setActive(slot3, false)
@@ -555,37 +555,35 @@ function setFrame(slot0, slot1, slot2)
 end
 
 function slot5(slot0, slot1, slot2, slot3)
-	function slot4(slot0, slot1)
-		if findTF(uv0, "icon_bg/" .. slot0 .. "(Clone)") then
+	slot4 = findTF(slot0, "icon_bg/frame")
+
+	function slot5(slot0, slot1)
+		if uv0:Find(slot0 .. "(Clone)") then
 			setActive(slot2, slot1)
 		elseif slot1 then
 			LoadAndInstantiateAsync("ui", string.lower(slot0), function (slot0)
-				if IsNil(uv0) or findTF(uv0, "icon_bg/" .. uv1 .. "(Clone)") then
+				if IsNil(uv0) or uv1:Find(uv2 .. "(Clone)") then
 					Object.Destroy(slot0)
 				else
-					setParent(slot0, uv0:Find("icon_bg"))
-
-					if uv0:Find("icon_bg/stars") then
-						slot1:SetAsLastSibling()
-					end
-
-					setActive(slot0, uv2)
+					setParent(slot0, uv1)
+					tf(slot0):SetAsFirstSibling()
+					setActive(slot0, uv3)
 				end
 			end)
 		end
 	end
 
-	slot5 = nil
+	slot6 = nil
 
 	if slot3 then
-		slot5 = {
+		slot6 = {
 			[5] = {
 				name = "Item_duang5",
 				active = slot2.fromAwardLayer and slot1 >= 5
 			}
 		}
 	else
-		slot5 = {
+		slot6 = {
 			[6] = {
 				name = "IconColorful",
 				active = not slot2.noIconColorful and slot1 == 6
@@ -593,8 +591,8 @@ function slot5(slot0, slot1, slot2, slot3)
 		}
 	end
 
-	for slot9, slot10 in pairs(slot5) do
-		slot4(slot10.name, slot10.active)
+	for slot10, slot11 in pairs(slot6) do
+		slot5(slot11.name, slot11.active)
 	end
 end
 
@@ -2233,6 +2231,10 @@ function getSpecialItemPage(slot0)
 		{
 			mediator = AssignedShipMediator,
 			viewComponent = AssignedShipScene7
+		},
+		{
+			mediator = AssignedShipMediator,
+			viewComponent = AssignedShipScene8
 		}
 	})[slot0]
 end
@@ -3067,4 +3069,32 @@ function getLoginConfig()
 	slot4 = pg.login[slot1].login_cri ~= "" and true or false
 
 	return slot4, slot4 and slot3 or (pg.login[slot1].login_static ~= "" and slot2 or "login"), pg.login[slot1].bgm
+end
+
+function setIntimacyIcon(slot0, slot1, slot2)
+	slot3 = {}
+	slot4 = nil
+
+	if slot0.childCount > 0 then
+		slot4 = slot0:GetChild(0)
+	else
+		setParent(LoadAndInstantiateSync("template", "intimacytpl").transform, slot0)
+	end
+
+	setImageAlpha(slot4, slot2 and 0 or 1)
+	eachChild(slot4, function (slot0)
+		setActive(slot0, false)
+	end)
+
+	if slot2 then
+		if not slot4:Find(slot2 .. "(Clone)") then
+			setParent(LoadAndInstantiateSync("ui", slot2), slot4)
+		end
+
+		setActive(slot5, true)
+	elseif slot1 then
+		setImageSprite(slot4, GetSpriteFromAtlas("energy", slot1), true)
+	end
+
+	return slot4
 end

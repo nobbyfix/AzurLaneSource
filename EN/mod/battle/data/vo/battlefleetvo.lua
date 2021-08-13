@@ -303,6 +303,14 @@ function slot9.RemovePlayerUnit(slot0, slot1)
 		end
 	end
 
+	for slot6, slot7 in ipairs(slot0._subList, i) do
+		if slot7 == slot1 then
+			table.remove(slot0._subList, slot6)
+
+			break
+		end
+	end
+
 	for slot6, slot7 in ipairs(slot0._manualSubList) do
 		if slot7 == slot1 then
 			table.remove(slot0._manualSubList, slot6)
@@ -1012,6 +1020,10 @@ function slot9.ShiftManualSub(slot0)
 end
 
 function slot9.ChangeSubmarineState(slot0, slot1, slot2)
+	if not slot0._manualSubUnit then
+		return
+	end
+
 	slot0._manualSubUnit:ChangeOxygenState(slot1)
 
 	if slot2 then

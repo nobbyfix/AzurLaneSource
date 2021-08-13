@@ -1,77 +1,27 @@
 pg = pg or {}
 pg.aircraft_template_242 = {
-	[83427] = {
-		id = 83427,
-		max_hp = 75,
-		hp_growth = 2879,
-		base = 83420,
-		weapon_ID = {
-			50047,
-			50547
-		}
-	},
-	[83428] = {
-		id = 83428,
-		max_hp = 80,
-		hp_growth = 3090,
-		base = 83420,
-		weapon_ID = {
-			50048,
-			50548
-		}
-	},
-	[83429] = {
-		id = 83429,
-		max_hp = 86,
-		hp_growth = 3301,
-		base = 83420,
-		weapon_ID = {
-			50049,
-			50549
-		}
-	},
-	[83430] = {
-		id = 83430,
-		max_hp = 91,
-		hp_growth = 3511,
-		base = 83420,
-		weapon_ID = {
-			50050,
-			50550
-		}
-	},
-	[83431] = {
-		id = 83431,
-		max_hp = 97,
-		hp_growth = 3722,
-		base = 83420,
-		weapon_ID = {
-			50051,
-			50551
-		}
-	},
-	[83440] = {
+	[83120] = {
 		attack_power = 2,
-		name = "强风",
-		type = 3,
+		name = "零战二一型",
+		type = 1,
 		accuracy = 23,
-		model_ID = "qiangfeng",
+		model_ID = "lingzhan21",
 		ACC_growth = 0,
-		crash_DMG = 126,
-		dodge = 0.303,
+		crash_DMG = 52,
+		dodge = 0.327,
 		funnel_behavior = "",
 		nationality = 3,
-		id = 83440,
-		icon = "qiangfeng",
+		id = 83120,
+		icon = "lingzhan21",
 		AP_growth = 2000,
-		dodge_limit = 8,
-		hp_growth = 1433,
-		speed = 50,
-		max_hp = 37,
+		dodge_limit = 8.5,
+		hp_growth = 1277,
+		speed = 52,
+		max_hp = 33,
 		scale = 1,
 		weapon_ID = {
-			50040,
-			50560
+			50020,
+			50520
 		},
 		position_offset = {
 			0,
@@ -91,13 +41,13 @@ pg.aircraft_template_242 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.98,
-					-0.96,
+					0.68,
+					-0.667,
 					0
 				},
 				{
-					1.02,
-					1.56,
+					0.97,
+					0.584,
 					0
 				}
 			}
@@ -114,7 +64,7 @@ pg.aircraft_template_242 = {
 				0
 			},
 			{
-				0,
+				0.27,
 				0,
 				0
 			},
@@ -125,44 +75,159 @@ pg.aircraft_template_242 = {
 			}
 		}
 	},
-	[83441] = {
-		id = 83441,
+	[83121] = {
+		id = 83121,
+		max_hp = 38,
+		hp_growth = 1468,
+		base = 83120,
+		weapon_ID = {
+			50021,
+			50521
+		}
+	},
+	[83122] = {
+		id = 83122,
 		max_hp = 43,
-		hp_growth = 1647,
-		base = 83440,
+		hp_growth = 1660,
+		base = 83120,
+		weapon_ID = {
+			50022,
+			50522
+		}
+	},
+	[83123] = {
+		id = 83123,
+		max_hp = 48,
+		hp_growth = 1851,
+		base = 83120,
+		weapon_ID = {
+			50023,
+			50523
+		}
+	},
+	[83124] = {
+		id = 83124,
+		max_hp = 53,
+		hp_growth = 2043,
+		base = 83120,
+		weapon_ID = {
+			50024,
+			50524
+		}
+	},
+	[83125] = {
+		id = 83125,
+		max_hp = 58,
+		hp_growth = 2234,
+		base = 83120,
+		weapon_ID = {
+			50025,
+			50525
+		}
+	},
+	[83126] = {
+		id = 83126,
+		max_hp = 63,
+		hp_growth = 2426,
+		base = 83120,
+		weapon_ID = {
+			50026,
+			50526
+		}
+	},
+	[83140] = {
+		attack_power = 2,
+		name = "零战二一型",
+		type = 1,
+		accuracy = 23,
+		model_ID = "lingzhan21",
+		ACC_growth = 0,
+		crash_DMG = 52,
+		dodge = 0.315,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 83140,
+		icon = "lingzhan21",
+		AP_growth = 2000,
+		dodge_limit = 9,
+		hp_growth = 1404,
+		speed = 52,
+		max_hp = 37,
+		scale = 1,
+		weapon_ID = {
+			50040,
+			50540
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.27,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[83141] = {
+		id = 83141,
+		max_hp = 42,
+		hp_growth = 1615,
+		base = 83140,
 		weapon_ID = {
 			50041,
-			50561
+			50541
 		}
 	},
-	[83442] = {
-		id = 83442,
-		max_hp = 48,
-		hp_growth = 1862,
-		base = 83440,
+	[83142] = {
+		id = 83142,
+		max_hp = 47,
+		hp_growth = 1826,
+		base = 83140,
 		weapon_ID = {
 			50042,
-			50562
-		}
-	},
-	[83443] = {
-		id = 83443,
-		max_hp = 54,
-		hp_growth = 2077,
-		base = 83440,
-		weapon_ID = {
-			50043,
-			50563
-		}
-	},
-	[83444] = {
-		id = 83444,
-		max_hp = 60,
-		hp_growth = 2292,
-		base = 83440,
-		weapon_ID = {
-			50044,
-			50564
+			50542
 		}
 	}
 }

@@ -2,138 +2,6 @@ pg = pg or {}
 pg.weapon_property_3 = {}
 
 function ()
-	uv0.weapon_property_3[437] = {
-		recover_time = 0.5,
-		name = "应瑞肇和自带防空炮",
-		shakescreen = 0,
-		type = 22,
-		torpedo_ammo = 0,
-		fire_fx = "fangkongpaohuoshe",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 3,
-		expose = 0,
-		search_type = 1,
-		effect_move = 1,
-		angle = 360,
-		reload_max = 150,
-		queue = 1,
-		range = 25,
-		damage = 23,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "antiaircraft",
-		fire_sfx = "battle/cannon-air",
-		id = 437,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			2000
-		},
-		barrage_ID = {
-			2000
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_3[900] = {
-		recover_time = 0.5,
-		name = "烟雾发射装置小范围",
-		shakescreen = 0,
-		type = 1,
-		torpedo_ammo = 0,
-		fire_fx = "CLFire",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 360,
-		reload_max = 412,
-		queue = 1,
-		range = 50,
-		damage = 39,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-155mm",
-		id = 900,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			901
-		},
-		barrage_ID = {
-			1
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
-	uv0.weapon_property_3[901] = {
-		recover_time = 0.5,
-		name = "烟雾发射装置大范围",
-		shakescreen = 0,
-		type = 1,
-		torpedo_ammo = 0,
-		fire_fx = "CLFire",
-		action_index = "attack",
-		charge_param = "",
-		axis_angle = 0,
-		fire_fx_loop_type = 1,
-		attack_attribute = 1,
-		expose = 0,
-		search_type = 1,
-		effect_move = 0,
-		angle = 360,
-		reload_max = 412,
-		queue = 1,
-		range = 50,
-		damage = 39,
-		suppress = 1,
-		auto_aftercast = 0,
-		corrected = 100,
-		min_range = 0,
-		initial_over_heat = 0,
-		spawn_bound = "cannon",
-		fire_sfx = "battle/cannon-155mm",
-		id = 901,
-		attack_attribute_ratio = 100,
-		aim_type = 1,
-		bullet_ID = {
-			902
-		},
-		barrage_ID = {
-			1
-		},
-		oxy_type = {
-			1
-		},
-		search_condition = {
-			1
-		},
-		precast_param = {}
-	}
 	uv0.weapon_property_3[902] = {
 		recover_time = 0.5,
 		name = "内部实验闪光弹头",
@@ -612,6 +480,292 @@ function ()
 		},
 		precast_param = {}
 	}
+	uv0.weapon_property_3[1003] = {
+		recover_time = 0,
+		name = "武器表优化-激光武器模板",
+		shakescreen = 0,
+		type = 24,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 1,
+		effect_move = 1,
+		angle = 360,
+		reload_max = 9999,
+		queue = 1,
+		range = 120,
+		damage = 22,
+		suppress = 1,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "",
+		id = 1003,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
+		bullet_ID = {
+			852711,
+			852711,
+			852711,
+			852711,
+			852711,
+			852712,
+			852712,
+			852712,
+			852712
+		},
+		barrage_ID = {
+			852711,
+			852712,
+			852713,
+			852714,
+			852715,
+			852716,
+			852717,
+			852718,
+			852719
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_3[1004] = {
+		recover_time = 0.5,
+		name = "武器表优化-近程自卫火炮模板",
+		shakescreen = 0,
+		type = 2,
+		torpedo_ammo = 0,
+		fire_fx = "CLFire",
+		action_index = "attack",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 1,
+		expose = 0,
+		search_type = 1,
+		effect_move = 0,
+		angle = 360,
+		reload_max = 500,
+		queue = 5,
+		range = 38,
+		damage = 12,
+		suppress = 1,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "battle/cannon-155mm",
+		id = 1004,
+		attack_attribute_ratio = 100,
+		aim_type = 1,
+		bullet_ID = {
+			999
+		},
+		barrage_ID = {
+			13
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_3[1005] = {
+		recover_time = 0,
+		name = "武器表优化-舰载机弹幕武器模板",
+		shakescreen = 0,
+		type = 1,
+		torpedo_ammo = 0,
+		fire_fx = "fangkongpaohuoshe2",
+		action_index = "",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 4,
+		expose = 0,
+		search_type = 1,
+		effect_move = 1,
+		angle = 180,
+		reload_max = 6000,
+		queue = 1,
+		range = 85,
+		damage = 20,
+		suppress = 1,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "battle/air-atk",
+		id = 1005,
+		attack_attribute_ratio = 100,
+		aim_type = 1,
+		bullet_ID = {
+			852113,
+			852113,
+			852113,
+			852113
+		},
+		barrage_ID = {
+			101,
+			102,
+			103,
+			104
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_3[1006] = {
+		recover_time = 0,
+		name = "武器表优化-舰载机空中武器模板",
+		shakescreen = 0,
+		type = 4,
+		torpedo_ammo = 0,
+		fire_fx = "fangkongpaohuoshe2",
+		action_index = "",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 4,
+		expose = 0,
+		search_type = 1,
+		effect_move = 1,
+		angle = 180,
+		reload_max = 48,
+		queue = 1,
+		range = 200,
+		damage = 20,
+		suppress = 1,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "antiaircraft",
+		fire_sfx = "battle/air-atk",
+		id = 1006,
+		attack_attribute_ratio = 100,
+		aim_type = 1,
+		bullet_ID = {
+			10004
+		},
+		barrage_ID = {
+			5
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_3[1007] = {
+		recover_time = 0,
+		name = "武器表优化-舰载机鱼雷武器模板",
+		shakescreen = 0,
+		type = 3,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 4,
+		expose = 0,
+		search_type = 1,
+		effect_move = 1,
+		angle = 35,
+		reload_max = 6000,
+		queue = 1,
+		range = 45,
+		damage = 24,
+		suppress = 1,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "torpedo",
+		fire_sfx = "battle/cannon-main",
+		id = 1007,
+		attack_attribute_ratio = 100,
+		aim_type = 1,
+		bullet_ID = {
+			852114
+		},
+		barrage_ID = {
+			852121
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
+	uv0.weapon_property_3[1008] = {
+		recover_time = 0,
+		name = "武器表优化-舰载机轰炸武器模板",
+		shakescreen = 0,
+		type = 2,
+		torpedo_ammo = 0,
+		fire_fx = "",
+		action_index = "",
+		charge_param = "",
+		axis_angle = 0,
+		fire_fx_loop_type = 1,
+		attack_attribute = 4,
+		expose = 0,
+		search_type = 2,
+		effect_move = 0,
+		angle = 25,
+		reload_max = 6000,
+		queue = 1,
+		range = 1,
+		damage = 60,
+		suppress = 0,
+		auto_aftercast = 0,
+		corrected = 100,
+		min_range = 0,
+		initial_over_heat = 0,
+		spawn_bound = "cannon",
+		fire_sfx = "",
+		id = 1008,
+		attack_attribute_ratio = 100,
+		aim_type = 0,
+		bullet_ID = {
+			852115
+		},
+		barrage_ID = {
+			852122
+		},
+		oxy_type = {
+			1
+		},
+		search_condition = {
+			1
+		},
+		precast_param = {}
+	}
 	uv0.weapon_property_3[4000] = {
 		recover_time = 0.5,
 		name = "Mark I型DCT",
@@ -1031,12 +1185,6 @@ function ()
 		id = 4144,
 		reload_max = 540,
 		damage = 39,
-		base = 4140
-	}
-	uv0.weapon_property_3[4145] = {
-		id = 4145,
-		reload_max = 525,
-		damage = 42,
 		base = 4140
 	}
 end()

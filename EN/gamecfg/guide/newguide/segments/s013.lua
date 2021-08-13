@@ -32,18 +32,16 @@ return {
 				dir = 1,
 				posX = -93.8
 			},
+			spriteui = {
+				path = "UICamera/Canvas/UIMain/StoreHouseUI(Clone)/item_scrollview/item_grid",
+				childPath = "bg/icon_bg/icon",
+				pathIndex = "#"
+			},
 			ui = {
-				delay = 1,
 				path = "UICamera/Canvas/UIMain/StoreHouseUI(Clone)/item_scrollview/item_grid",
 				pathIndex = "#",
 				triggerType = {
 					1
-				},
-				image = {
-					isChild = true,
-					source = "bg/icon_bg/icon",
-					target = "bg/icon_bg/icon",
-					isRelative = true
 				},
 				fingerPos = {
 					posY = -44.21,

@@ -1,159 +1,93 @@
 pg = pg or {}
 pg.aircraft_template_239 = {
-	[83345] = {
-		id = 83345,
-		max_hp = 70,
-		hp_growth = 2681,
-		base = 83340,
+	[82984] = {
+		id = 82984,
+		max_hp = 66,
+		hp_growth = 2529,
+		base = 82980,
 		weapon_ID = {
-			59545
+			50664
 		}
 	},
-	[83346] = {
-		id = 83346,
-		max_hp = 76,
-		hp_growth = 2911,
-		base = 83340,
+	[82985] = {
+		id = 82985,
+		max_hp = 72,
+		hp_growth = 2766,
+		base = 82980,
 		weapon_ID = {
-			59546
+			50665
 		}
 	},
-	[83347] = {
-		id = 83347,
-		max_hp = 82,
-		hp_growth = 3141,
-		base = 83340,
+	[82986] = {
+		id = 82986,
+		max_hp = 78,
+		hp_growth = 3004,
+		base = 82980,
 		weapon_ID = {
-			59547
+			50666
 		}
 	},
-	[83348] = {
-		id = 83348,
-		max_hp = 88,
-		hp_growth = 3371,
-		base = 83340,
+	[82987] = {
+		id = 82987,
+		max_hp = 84,
+		hp_growth = 3241,
+		base = 82980,
 		weapon_ID = {
-			59548
+			50667
 		}
 	},
-	[83349] = {
-		id = 83349,
-		max_hp = 94,
-		hp_growth = 3601,
-		base = 83340,
+	[82988] = {
+		id = 82988,
+		max_hp = 90,
+		hp_growth = 3478,
+		base = 82980,
 		weapon_ID = {
-			59549
+			50668
 		}
 	},
-	[83350] = {
-		id = 83350,
-		max_hp = 100,
-		hp_growth = 3830,
-		base = 83340,
+	[82989] = {
+		id = 82989,
+		max_hp = 97,
+		hp_growth = 3715,
+		base = 82980,
 		weapon_ID = {
-			59550
+			50669
 		}
 	},
-	[83351] = {
-		id = 83351,
-		max_hp = 106,
-		hp_growth = 4060,
-		base = 83340,
+	[82990] = {
+		id = 82990,
+		max_hp = 103,
+		hp_growth = 3952,
+		base = 82980,
 		weapon_ID = {
-			59551
+			50670
 		}
 	},
-	[83352] = {
-		id = 83352,
-		max_hp = 112,
-		hp_growth = 4290,
-		base = 83340,
+	[82991] = {
+		id = 82991,
+		max_hp = 109,
+		hp_growth = 4189,
+		base = 82980,
 		weapon_ID = {
-			59552
+			50671
 		}
 	},
-	[83353] = {
-		id = 83353,
-		max_hp = 118,
-		hp_growth = 4520,
-		base = 83340,
+	[82992] = {
+		id = 82992,
+		max_hp = 115,
+		hp_growth = 4426,
+		base = 82980,
 		weapon_ID = {
-			59553
+			50672
 		}
 	},
-	[83400] = {
-		attack_power = 2,
-		name = "紫电改二",
-		type = 1,
-		accuracy = 23,
-		model_ID = "zidiangaier",
-		ACC_growth = 0,
-		crash_DMG = 162,
-		dodge = 0.297,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 83400,
-		icon = "zidiangaier",
-		AP_growth = 2000,
-		dodge_limit = 10,
-		hp_growth = 1379,
-		speed = 60,
-		max_hp = 36,
-		scale = 1,
+	[82993] = {
+		id = 82993,
+		max_hp = 121,
+		hp_growth = 4663,
+		base = 82980,
 		weapon_ID = {
-			59540,
-			50860
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.68,
-					-0.667,
-					0
-				},
-				{
-					0.97,
-					0.584,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.51,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50673
 		}
 	}
 }

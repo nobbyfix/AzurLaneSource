@@ -1,67 +1,76 @@
 pg = pg or {}
 pg.aircraft_template_153 = {
-	[66947] = {
-		id = 66947,
-		name = "萨拉托加技能鱼雷机Lv7",
-		base = 66940,
-		max_hp = 72,
-		hp_growth = 2801,
+	[65456] = {
+		id = 65456,
+		name = "META飞龙鱼雷机Lv6",
+		base = 65451,
+		max_hp = 73,
+		hp_growth = 2796,
 		weapon_ID = {
-			66987
+			65466
 		}
 	},
-	[66948] = {
-		id = 66948,
-		name = "萨拉托加技能鱼雷机Lv8",
-		base = 66940,
-		max_hp = 78,
-		hp_growth = 3037,
+	[65457] = {
+		id = 65457,
+		name = "META飞龙鱼雷机Lv7",
+		base = 65451,
+		max_hp = 79,
+		hp_growth = 3016,
 		weapon_ID = {
-			66988
+			65467
 		}
 	},
-	[66949] = {
-		id = 66949,
-		name = "萨拉托加技能鱼雷机Lv9",
-		base = 66940,
-		max_hp = 84,
-		hp_growth = 3274,
+	[65458] = {
+		id = 65458,
+		name = "META飞龙鱼雷机Lv8",
+		base = 65451,
+		max_hp = 86,
+		hp_growth = 3237,
 		weapon_ID = {
-			66989
+			65468
 		}
 	},
-	[66950] = {
-		id = 66950,
-		name = "萨拉托加技能鱼雷机Lv10",
-		base = 66940,
-		max_hp = 91,
-		hp_growth = 3511,
+	[65459] = {
+		id = 65459,
+		name = "META飞龙鱼雷机Lv9",
+		base = 65451,
+		max_hp = 92,
+		hp_growth = 3458,
 		weapon_ID = {
-			66990
+			65469
 		}
 	},
-	[66960] = {
+	[65460] = {
+		id = 65460,
+		name = "META飞龙鱼雷机Lv10",
+		base = 65451,
+		max_hp = 98,
+		hp_growth = 3678,
+		weapon_ID = {
+			65470
+		}
+	},
+	[65491] = {
 		attack_power = 2,
-		name = "萨拉托加技能轰炸机Lv0",
-		type = 3,
+		name = "彼得史特拉塞技能JU87鱼雷机LV1",
+		type = 2,
 		accuracy = 23,
-		model_ID = "sbdwuwei",
+		model_ID = "Ju87D4",
 		ACC_growth = 0,
-		crash_DMG = 156,
-		dodge = 1,
+		crash_DMG = 168,
+		dodge = 1.05,
 		funnel_behavior = "",
-		nationality = 1,
-		id = 66960,
-		icon = "sbdwuwei",
+		nationality = 3,
+		id = 65491,
+		icon = "Ju87D4",
 		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 1183,
-		speed = 46,
-		max_hp = 31,
+		dodge_limit = 5,
+		hp_growth = 1459,
+		speed = 51,
+		max_hp = 38,
 		scale = 1,
 		weapon_ID = {
-			67000,
-			67020
+			65501
 		},
 		position_offset = {
 			0,
@@ -81,13 +90,13 @@ pg.aircraft_template_153 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					0.69,
+					-1.22,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					0.75,
+					1.26,
 					0
 				}
 			}
@@ -104,8 +113,8 @@ pg.aircraft_template_153 = {
 				0
 			},
 			{
-				0.72,
-				-0.15,
+				0,
+				0,
 				0
 			},
 			{
@@ -115,59 +124,44 @@ pg.aircraft_template_153 = {
 			}
 		}
 	},
-	[66961] = {
-		id = 66961,
-		name = "萨拉托加技能轰炸机Lv1",
-		base = 66960,
-		max_hp = 35,
-		hp_growth = 1345,
+	[65492] = {
+		id = 65492,
+		name = "彼得史特拉塞技能JU87鱼雷机LV2",
+		base = 65491,
+		max_hp = 44,
+		hp_growth = 1678,
 		weapon_ID = {
-			67001,
-			67021
+			65502
 		}
 	},
-	[66962] = {
-		id = 66962,
-		name = "萨拉托加技能轰炸机Lv2",
-		base = 66960,
-		max_hp = 39,
-		hp_growth = 1507,
+	[65493] = {
+		id = 65493,
+		name = "彼得史特拉塞技能JU87鱼雷机LV3",
+		base = 65491,
+		max_hp = 49,
+		hp_growth = 1897,
 		weapon_ID = {
-			67002,
-			67022
+			65503
 		}
 	},
-	[66963] = {
-		id = 66963,
-		name = "萨拉托加技能轰炸机Lv3",
-		base = 66960,
-		max_hp = 43,
-		hp_growth = 1669,
+	[65494] = {
+		id = 65494,
+		name = "彼得史特拉塞技能JU87鱼雷机LV4",
+		base = 65491,
+		max_hp = 55,
+		hp_growth = 2116,
 		weapon_ID = {
-			67003,
-			67023
+			65504
 		}
 	},
-	[66964] = {
-		id = 66964,
-		name = "萨拉托加技能轰炸机Lv4",
-		base = 66960,
-		max_hp = 47,
-		hp_growth = 1831,
+	[65495] = {
+		id = 65495,
+		name = "彼得史特拉塞技能JU87鱼雷机LV5",
+		base = 65491,
+		max_hp = 61,
+		hp_growth = 2335,
 		weapon_ID = {
-			67004,
-			67024
-		}
-	},
-	[66965] = {
-		id = 66965,
-		name = "萨拉托加技能轰炸机Lv5",
-		base = 66960,
-		max_hp = 51,
-		hp_growth = 1994,
-		weapon_ID = {
-			67005,
-			67025
+			65505
 		}
 	}
 }

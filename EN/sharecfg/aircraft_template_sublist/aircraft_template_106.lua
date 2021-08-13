@@ -1,243 +1,103 @@
 pg = pg or {}
 pg.aircraft_template_106 = {
-	[39002] = {
-		id = 39002,
-		max_hp = 41,
-		hp_growth = 1565,
-		base = 39000,
+	[38302] = {
+		id = 38302,
+		max_hp = 47,
+		hp_growth = 1802,
+		base = 38300,
 		weapon_ID = {
-			50002,
-			52202,
-			52102
+			59722,
+			51362
 		}
 	},
-	[39003] = {
-		id = 39003,
-		max_hp = 45,
-		hp_growth = 1746,
-		base = 39000,
+	[38303] = {
+		id = 38303,
+		max_hp = 52,
+		hp_growth = 2010,
+		base = 38300,
 		weapon_ID = {
-			50003,
-			52203,
-			52103
+			59723,
+			51363
 		}
 	},
-	[39020] = {
-		attack_power = 2,
-		name = "九九式舰爆",
-		type = 3,
-		accuracy = 23,
-		model_ID = "99shijianbao1",
-		ACC_growth = 0,
-		crash_DMG = 180,
-		dodge = 3.45,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 39020,
-		icon = "99shijianbao1",
-		AP_growth = 2000,
-		dodge_limit = 0.9,
-		hp_growth = 1338,
-		speed = 45,
-		max_hp = 35,
-		scale = 1,
+	[38304] = {
+		id = 38304,
+		max_hp = 58,
+		hp_growth = 2218,
+		base = 38300,
 		weapon_ID = {
-			50020,
-			52220,
-			52120
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			59724,
+			51364
 		}
 	},
-	[39021] = {
-		id = 39021,
-		max_hp = 40,
-		hp_growth = 1538,
-		base = 39020,
+	[38305] = {
+		id = 38305,
+		max_hp = 63,
+		hp_growth = 2426,
+		base = 38300,
 		weapon_ID = {
-			50021,
-			52221,
-			52121
+			59725,
+			51365
 		}
 	},
-	[39022] = {
-		id = 39022,
-		max_hp = 45,
-		hp_growth = 1739,
-		base = 39020,
+	[38306] = {
+		id = 38306,
+		max_hp = 68,
+		hp_growth = 2634,
+		base = 38300,
 		weapon_ID = {
-			50022,
-			52222,
-			52122
+			59726,
+			51366
 		}
 	},
-	[39023] = {
-		id = 39023,
-		max_hp = 50,
-		hp_growth = 1940,
-		base = 39020,
+	[38307] = {
+		id = 38307,
+		max_hp = 74,
+		hp_growth = 2842,
+		base = 38300,
 		weapon_ID = {
-			50023,
-			52223,
-			52123
+			59727,
+			51367
 		}
 	},
-	[39024] = {
-		id = 39024,
-		max_hp = 56,
-		hp_growth = 2140,
-		base = 39020,
+	[38308] = {
+		id = 38308,
+		max_hp = 79,
+		hp_growth = 3050,
+		base = 38300,
 		weapon_ID = {
-			50024,
-			52224,
-			52124
+			59728,
+			51368
 		}
 	},
-	[39025] = {
-		id = 39025,
-		max_hp = 61,
-		hp_growth = 2341,
-		base = 39020,
+	[38309] = {
+		id = 38309,
+		max_hp = 85,
+		hp_growth = 3258,
+		base = 38300,
 		weapon_ID = {
-			50025,
-			52225,
-			52125
+			59729,
+			51369
 		}
 	},
-	[39026] = {
-		id = 39026,
-		max_hp = 66,
-		hp_growth = 2541,
-		base = 39020,
+	[38310] = {
+		id = 38310,
+		max_hp = 90,
+		hp_growth = 3466,
+		base = 38300,
 		weapon_ID = {
-			50026,
-			52226,
-			52126
+			59730,
+			51370
 		}
 	},
-	[39040] = {
-		attack_power = 2,
-		name = "九九式舰爆",
-		type = 3,
-		accuracy = 23,
-		model_ID = "99shijianbao1",
-		ACC_growth = 0,
-		crash_DMG = 180,
-		dodge = 3.33,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 39040,
-		icon = "99shijianbao1",
-		AP_growth = 2000,
-		dodge_limit = 1,
-		hp_growth = 1471,
-		speed = 45,
-		max_hp = 38,
-		scale = 1,
+	[38311] = {
+		id = 38311,
+		max_hp = 96,
+		hp_growth = 3674,
+		base = 38300,
 		weapon_ID = {
-			50040,
-			52240,
-			52140
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			59731,
+			51371
 		}
 	}
 }

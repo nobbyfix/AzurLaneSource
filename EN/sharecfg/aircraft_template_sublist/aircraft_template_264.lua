@@ -1,748 +1,93 @@
 pg = pg or {}
 pg.aircraft_template_264 = {
-	[100732] = {
-		attack_power = 2,
-		name = "美系舰载-轰炸机III",
-		type = 3,
-		accuracy = 23,
-		model_ID = "sbdwuwei",
-		ACC_growth = 0,
-		crash_DMG = 78,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100732,
-		icon = "sbdwuwei",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3377,
-		speed = 30,
-		max_hp = 48,
-		scale = 0.75,
+	[86041] = {
+		id = 86041,
+		max_hp = 46,
+		hp_growth = 1785,
+		base = 86040,
 		weapon_ID = {
-			100717
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50741
 		}
 	},
-	[100733] = {
-		attack_power = 2,
-		name = "美系舰载-轰炸机IV",
-		type = 3,
-		accuracy = 23,
-		model_ID = "sbdwuwei",
-		ACC_growth = 0,
-		crash_DMG = 78,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100733,
-		icon = "sbdwuwei",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3377,
-		speed = 30,
-		max_hp = 48,
-		scale = 0.75,
+	[86042] = {
+		id = 86042,
+		max_hp = 52,
+		hp_growth = 2018,
+		base = 86040,
 		weapon_ID = {
-			100718
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50742
 		}
 	},
-	[100734] = {
-		attack_power = 2,
-		name = "美系舰载-轰炸机V",
-		type = 3,
-		accuracy = 23,
-		model_ID = "sbdwuwei",
-		ACC_growth = 0,
-		crash_DMG = 78,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100734,
-		icon = "sbdwuwei",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3377,
-		speed = 30,
-		max_hp = 48,
-		scale = 0.75,
+	[86043] = {
+		id = 86043,
+		max_hp = 59,
+		hp_growth = 2251,
+		base = 86040,
 		weapon_ID = {
-			100719
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50743
 		}
 	},
-	[100735] = {
-		attack_power = 2,
-		name = "英系舰载-战斗机I",
-		type = 1,
-		accuracy = 23,
-		model_ID = "haiduya",
-		ACC_growth = 0,
-		crash_DMG = 39,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100735,
-		icon = "haiduya",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2518,
-		speed = 33,
-		max_hp = 34,
-		scale = 0.75,
+	[86044] = {
+		id = 86044,
+		max_hp = 65,
+		hp_growth = 2484,
+		base = 86040,
 		weapon_ID = {
-			100700,
-			100705
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.56,
-					-0.76,
-					0
-				},
-				{
-					0.48,
-					0.99,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50744
 		}
 	},
-	[100736] = {
-		attack_power = 2,
-		name = "英系舰载-战斗机II",
-		type = 1,
-		accuracy = 23,
-		model_ID = "haiduya",
-		ACC_growth = 0,
-		crash_DMG = 39,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100736,
-		icon = "haiduya",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2518,
-		speed = 33,
-		max_hp = 34,
-		scale = 0.75,
+	[86045] = {
+		id = 86045,
+		max_hp = 71,
+		hp_growth = 2717,
+		base = 86040,
 		weapon_ID = {
-			100701,
-			100706
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.56,
-					-0.76,
-					0
-				},
-				{
-					0.48,
-					0.99,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50745
 		}
 	},
-	[100737] = {
-		attack_power = 2,
-		name = "英系舰载-战斗机III",
-		type = 1,
-		accuracy = 23,
-		model_ID = "haiduya",
-		ACC_growth = 0,
-		crash_DMG = 39,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100737,
-		icon = "haiduya",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2518,
-		speed = 33,
-		max_hp = 34,
-		scale = 0.75,
+	[86046] = {
+		id = 86046,
+		max_hp = 77,
+		hp_growth = 2949,
+		base = 86040,
 		weapon_ID = {
-			100702,
-			100707
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.56,
-					-0.76,
-					0
-				},
-				{
-					0.48,
-					0.99,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50746
 		}
 	},
-	[100738] = {
-		attack_power = 2,
-		name = "英系舰载-战斗机IV",
-		type = 1,
-		accuracy = 23,
-		model_ID = "haiduya",
-		ACC_growth = 0,
-		crash_DMG = 39,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100738,
-		icon = "haiduya",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2518,
-		speed = 33,
-		max_hp = 34,
-		scale = 0.75,
+	[86047] = {
+		id = 86047,
+		max_hp = 83,
+		hp_growth = 3182,
+		base = 86040,
 		weapon_ID = {
-			100703,
-			100708
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.56,
-					-0.76,
-					0
-				},
-				{
-					0.48,
-					0.99,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50747
 		}
 	},
-	[100739] = {
-		attack_power = 2,
-		name = "英系舰载-战斗机V",
-		type = 1,
-		accuracy = 23,
-		model_ID = "haiduya",
-		ACC_growth = 0,
-		crash_DMG = 39,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100739,
-		icon = "haiduya",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2518,
-		speed = 33,
-		max_hp = 34,
-		scale = 0.75,
+	[86048] = {
+		id = 86048,
+		max_hp = 89,
+		hp_growth = 3415,
+		base = 86040,
 		weapon_ID = {
-			100704,
-			100709
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.56,
-					-0.76,
-					0
-				},
-				{
-					0.48,
-					0.99,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50748
 		}
 	},
-	[100740] = {
-		attack_power = 2,
-		name = "英系舰载-鱼雷机I",
-		type = 2,
-		accuracy = 23,
-		model_ID = "suoyu",
-		ACC_growth = 0,
-		crash_DMG = 57,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100740,
-		icon = "suoyu",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3013,
-		speed = 30,
-		max_hp = 39,
-		scale = 0.75,
+	[86049] = {
+		id = 86049,
+		max_hp = 95,
+		hp_growth = 3648,
+		base = 86040,
 		weapon_ID = {
-			100710
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50749
 		}
 	},
-	[100741] = {
-		attack_power = 2,
-		name = "英系舰载-鱼雷机II",
-		type = 2,
-		accuracy = 23,
-		model_ID = "suoyu",
-		ACC_growth = 0,
-		crash_DMG = 57,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 100741,
-		icon = "suoyu",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3013,
-		speed = 30,
-		max_hp = 39,
-		scale = 0.75,
+	[86050] = {
+		id = 86050,
+		max_hp = 101,
+		hp_growth = 3881,
+		base = 86040,
 		weapon_ID = {
-			100711
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			50750
 		}
 	}
 }

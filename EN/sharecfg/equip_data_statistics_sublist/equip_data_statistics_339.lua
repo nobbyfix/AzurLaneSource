@@ -1,23 +1,23 @@
 pg = pg or {}
 pg.equip_data_statistics_339 = {
-	[70112] = {
-		id = 70112,
-		name = "0",
-		base = 70111,
+	[60523] = {
+		id = 60523,
+		name = "航空攻击展示-英仙座III",
+		base = 60521,
 		weapon_id = {
-			70112
+			60523
 		}
 	},
-	[70121] = {
-		type = 1,
-		name = "0",
+	[60531] = {
+		type = 99,
+		name = "航空攻击展示-鹰I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "Barrage",
-		id = 70121,
+		descrip = "航母空袭展示用",
+		id = 60531,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -28,43 +28,40 @@ pg.equip_data_statistics_339 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			70121
+			60531
 		},
 		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
+		part_main = {},
+		part_sub = {},
 		equip_parameters = {},
 		label = {}
 	},
-	[70122] = {
-		id = 70122,
-		name = "0",
-		base = 70121,
+	[60532] = {
+		id = 60532,
+		name = "航空攻击展示-鹰II",
+		base = 60531,
 		weapon_id = {
-			70122
+			60532
 		}
 	},
-	[70131] = {
-		type = 1,
-		name = "0",
+	[60533] = {
+		id = 60533,
+		name = "航空攻击展示-鹰III",
+		base = 60531,
+		weapon_id = {
+			60533
+		}
+	},
+	[60541] = {
+		type = 99,
+		name = "航空攻击展示-千岁I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "Barrage",
-		id = 70131,
+		descrip = "航母空袭展示用",
+		id = 60541,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -75,43 +72,40 @@ pg.equip_data_statistics_339 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			70131
+			60541
 		},
 		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
+		part_main = {},
+		part_sub = {},
 		equip_parameters = {},
 		label = {}
 	},
-	[70132] = {
-		id = 70132,
-		name = "0",
-		base = 70131,
+	[60542] = {
+		id = 60542,
+		name = "航空攻击展示-千岁II",
+		base = 60541,
 		weapon_id = {
-			70132
+			60542
 		}
 	},
-	[70141] = {
-		type = 1,
-		name = "0",
+	[60543] = {
+		id = 60543,
+		name = "航空攻击展示-千岁III",
+		base = 60541,
+		weapon_id = {
+			60543
+		}
+	},
+	[60551] = {
+		type = 99,
+		name = "航空攻击展示-千代田I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "Barrage",
-		id = 70141,
+		descrip = "航母空袭展示用",
+		id = 60551,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -122,43 +116,40 @@ pg.equip_data_statistics_339 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			70141
+			60551
 		},
 		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
+		part_main = {},
+		part_sub = {},
 		equip_parameters = {},
 		label = {}
 	},
-	[70142] = {
-		id = 70142,
-		name = "0",
-		base = 70141,
+	[60552] = {
+		id = 60552,
+		name = "航空攻击展示-千代田II",
+		base = 60551,
 		weapon_id = {
-			70142
+			60552
 		}
 	},
-	[70211] = {
-		type = 1,
-		name = "0",
+	[60553] = {
+		id = 60553,
+		name = "航空攻击展示-千代田III",
+		base = 60551,
+		weapon_id = {
+			60553
+		}
+	},
+	[60561] = {
+		type = 99,
+		name = "航空攻击展示-信浓I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "Barrage",
-		id = 70211,
+		descrip = "航母空袭展示用",
+		id = 60561,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -169,43 +160,40 @@ pg.equip_data_statistics_339 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			70211
+			60561
 		},
 		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
+		part_main = {},
+		part_sub = {},
 		equip_parameters = {},
 		label = {}
 	},
-	[70212] = {
-		id = 70212,
-		name = "0",
-		base = 70211,
+	[60562] = {
+		id = 60562,
+		name = "航空攻击展示-信浓II",
+		base = 60561,
 		weapon_id = {
-			70212
+			60562
 		}
 	},
-	[70221] = {
-		type = 1,
-		name = "0",
-		speciality = "N/A",
+	[60563] = {
+		id = 60563,
+		name = "航空攻击展示-信浓III",
+		base = 60561,
+		weapon_id = {
+			60563
+		}
+	},
+	[60591] = {
+		type = 99,
+		name = "航空攻击展示-威悉II",
+		speciality = "无",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "Barrage",
-		id = 70221,
+		descrip = "航母空袭展示用",
+		id = 60591,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -216,43 +204,40 @@ pg.equip_data_statistics_339 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			70221
+			60591
 		},
 		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
+		part_main = {},
+		part_sub = {},
 		equip_parameters = {},
 		label = {}
 	},
-	[70222] = {
-		id = 70222,
-		name = "0",
-		base = 70221,
+	[60592] = {
+		id = 60592,
+		name = "航空攻击展示-威悉III",
+		base = 60591,
 		weapon_id = {
-			70222
+			60592
 		}
 	},
-	[70231] = {
-		type = 1,
-		name = "0",
+	[60593] = {
+		id = 60593,
+		name = "航空攻击展示-威悉III",
+		base = 60591,
+		weapon_id = {
+			60593
+		}
+	},
+	[60601] = {
+		type = 99,
+		name = "航空攻击展示-彼得史特拉塞I",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "Barrage",
-		id = 70231,
+		descrip = "航母空袭展示用",
+		id = 60601,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -263,125 +248,12 @@ pg.equip_data_statistics_339 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			70231
+			60601
 		},
 		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
+		part_main = {},
+		part_sub = {},
 		equip_parameters = {},
 		label = {}
-	},
-	[70232] = {
-		id = 70232,
-		name = "0",
-		base = 70231,
-		weapon_id = {
-			70232
-		}
-	},
-	[70241] = {
-		type = 1,
-		name = "0",
-		speciality = "N/A",
-		tech = 1,
-		rarity = 1,
-		ammo = 10,
-		nationality = 0,
-		descrip = "Barrage",
-		id = 70241,
-		value_3 = 0,
-		value_2 = 0,
-		icon = "1",
-		value_1 = "0",
-		torpedo_ammo = 0,
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {},
-		weapon_id = {
-			70241
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {}
-	},
-	[70242] = {
-		id = 70242,
-		name = "0",
-		base = 70241,
-		weapon_id = {
-			70242
-		}
-	},
-	[70251] = {
-		type = 1,
-		name = "0",
-		speciality = "N/A",
-		tech = 1,
-		rarity = 1,
-		ammo = 10,
-		nationality = 0,
-		descrip = "Barrage",
-		id = 70251,
-		value_3 = 0,
-		value_2 = 0,
-		icon = "1",
-		value_1 = "0",
-		torpedo_ammo = 0,
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {},
-		weapon_id = {
-			70251
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {}
-	},
-	[70252] = {
-		id = 70252,
-		name = "0",
-		base = 70251,
-		weapon_id = {
-			70252
-		}
 	}
 }

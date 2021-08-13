@@ -63,7 +63,7 @@ function slot0.BindConditions(slot0)
 		return getProxy(AttireProxy):IsShowRedDot()
 	end)
 	slot0:BindCondition(uv0.TYPES.COLLECTION, function ()
-		return getProxy(CollectionProxy):hasFinish() or getProxy(AppreciateProxy):isGalleryHaveNewRes() or getProxy(AppreciateProxy):isMusicHaveNewRes()
+		return getProxy(CollectionProxy):hasFinish() or getProxy(AppreciateProxy):isGalleryHaveNewRes() or getProxy(AppreciateProxy):isMusicHaveNewRes() or getProxy(AppreciateProxy):isMangaHaveNewRes()
 	end)
 	slot0:BindCondition(uv0.TYPES.FRIEND, function ()
 		return getProxy(NotificationProxy):getRequestCount() > 0 or getProxy(FriendProxy):getNewMsgCount() > 0
@@ -72,6 +72,10 @@ function slot0.BindConditions(slot0)
 		return getProxy(PlayerProxy):IsShowCommssionTip()
 	end)
 	slot0:BindCondition(uv0.TYPES.COMMANDER, function ()
+		if getProxy(PlayerProxy):getRawData().level < 40 then
+			return false
+		end
+
 		if not LOCK_CATTERY then
 			return getProxy(CommanderProxy):haveFinishedBox() or getProxy(CommanderProxy):AnyCatteryExistOP() or getProxy(CommanderProxy):AnyCatteryCanUse()
 		else

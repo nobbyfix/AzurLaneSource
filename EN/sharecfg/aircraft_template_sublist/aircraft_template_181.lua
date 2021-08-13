@@ -1,76 +1,36 @@
 pg = pg or {}
 pg.aircraft_template_181 = {
-	[68866] = {
-		id = 68866,
-		name = "大神澪技能鱼雷机Lv6",
-		base = 68861,
-		max_hp = 73,
-		hp_growth = 2796,
-		weapon_ID = {
-			68876
+	[67982] = {
+		id = 67982,
+		name = "香格里拉技能飞机-PVP",
+		base = 67981,
+		funnel_behavior = {
+			offsetZ = -14,
+			hover_range = 18,
+			offsetX = 4
 		}
 	},
-	[68867] = {
-		id = 68867,
-		name = "大神澪技能鱼雷机Lv7",
-		base = 68861,
-		max_hp = 79,
-		hp_growth = 3016,
-		weapon_ID = {
-			68877
-		}
-	},
-	[68868] = {
-		id = 68868,
-		name = "大神澪技能鱼雷机Lv8",
-		base = 68861,
-		max_hp = 86,
-		hp_growth = 3237,
-		weapon_ID = {
-			68878
-		}
-	},
-	[68869] = {
-		id = 68869,
-		name = "大神澪技能鱼雷机Lv9",
-		base = 68861,
-		max_hp = 92,
-		hp_growth = 3458,
-		weapon_ID = {
-			68879
-		}
-	},
-	[68870] = {
-		id = 68870,
-		name = "大神澪技能鱼雷机Lv10",
-		base = 68861,
-		max_hp = 98,
-		hp_growth = 3678,
-		weapon_ID = {
-			68880
-		}
-	},
-	[68881] = {
+	[68001] = {
 		attack_power = 2,
-		name = "大神澪技能轰炸机Lv1",
-		type = 3,
+		name = "邦克山技能鱼雷机Lv1",
+		type = 2,
 		accuracy = 23,
-		model_ID = "feiji_vtuber2",
+		model_ID = "tbf",
 		ACC_growth = 0,
-		crash_DMG = 208,
+		crash_DMG = 406,
 		dodge = 1,
 		funnel_behavior = "",
-		nationality = 3,
-		id = 68881,
-		icon = "feiji_vtuber2",
+		nationality = 1,
+		id = 68001,
+		icon = "tbf",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1692,
+		hp_growth = 1404,
 		speed = 48,
-		max_hp = 42,
+		max_hp = 37,
 		scale = 1,
 		weapon_ID = {
-			68891
+			68011
 		},
 		position_offset = {
 			0,
@@ -113,8 +73,8 @@ pg.aircraft_template_181 = {
 				0
 			},
 			{
-				0.54,
-				0,
+				0.15,
+				-0.08,
 				0
 			},
 			{
@@ -124,44 +84,84 @@ pg.aircraft_template_181 = {
 			}
 		}
 	},
-	[68882] = {
-		id = 68882,
-		name = "大神澪技能轰炸机Lv2",
-		base = 68881,
-		max_hp = 48,
-		hp_growth = 1913,
+	[68002] = {
+		id = 68002,
+		name = "邦克山技能鱼雷机Lv2",
+		base = 68001,
+		max_hp = 42,
+		hp_growth = 1615,
 		weapon_ID = {
-			68892
+			68012
 		}
 	},
-	[68883] = {
-		id = 68883,
-		name = "大神澪技能轰炸机Lv3",
-		base = 68881,
-		max_hp = 54,
-		hp_growth = 2133,
+	[68003] = {
+		id = 68003,
+		name = "邦克山技能鱼雷机Lv3",
+		base = 68001,
+		max_hp = 47,
+		hp_growth = 1826,
 		weapon_ID = {
-			68893
+			68013
 		}
 	},
-	[68884] = {
-		id = 68884,
-		name = "大神澪技能轰炸机Lv4",
-		base = 68881,
-		max_hp = 61,
-		hp_growth = 2354,
+	[68004] = {
+		id = 68004,
+		name = "邦克山技能鱼雷机Lv4",
+		base = 68001,
+		max_hp = 53,
+		hp_growth = 2036,
 		weapon_ID = {
-			68894
+			68014
 		}
 	},
-	[68885] = {
-		id = 68885,
-		name = "大神澪技能轰炸机Lv5",
-		base = 68881,
-		max_hp = 67,
-		hp_growth = 2575,
+	[68005] = {
+		id = 68005,
+		name = "邦克山技能鱼雷机Lv5",
+		base = 68001,
+		max_hp = 58,
+		hp_growth = 2247,
 		weapon_ID = {
-			68895
+			68015
+		}
+	},
+	[68006] = {
+		id = 68006,
+		name = "邦克山技能鱼雷机Lv6",
+		base = 68001,
+		max_hp = 64,
+		hp_growth = 2458,
+		weapon_ID = {
+			68016
+		}
+	},
+	[68007] = {
+		id = 68007,
+		name = "邦克山技能鱼雷机Lv7",
+		base = 68001,
+		max_hp = 69,
+		hp_growth = 2669,
+		weapon_ID = {
+			68017
+		}
+	},
+	[68008] = {
+		id = 68008,
+		name = "邦克山技能鱼雷机Lv8",
+		base = 68001,
+		max_hp = 75,
+		hp_growth = 2879,
+		weapon_ID = {
+			68018
+		}
+	},
+	[68009] = {
+		id = 68009,
+		name = "邦克山技能鱼雷机Lv9",
+		base = 68001,
+		max_hp = 80,
+		hp_growth = 3090,
+		weapon_ID = {
+			68019
 		}
 	}
 }

@@ -1,14 +1,22 @@
 pg = pg or {}
 pg.equip_data_statistics_330 = {
-	[60193] = {
-		id = 60193,
+	[60002] = {
+		id = 60002,
 		name = "0",
-		base = 60191,
+		base = 60001,
 		weapon_id = {
-			60193
+			60002
 		}
 	},
-	[60201] = {
+	[60003] = {
+		id = 60003,
+		name = "0",
+		base = 60001,
+		weapon_id = {
+			60003
+		}
+	},
+	[60011] = {
 		type = 99,
 		name = "0",
 		speciality = "N/A",
@@ -17,7 +25,7 @@ pg.equip_data_statistics_330 = {
 		ammo = 10,
 		nationality = 0,
 		descrip = "Aircraft Carrier Airstrike",
-		id = 60201,
+		id = 60011,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -28,7 +36,7 @@ pg.equip_data_statistics_330 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60201
+			60011
 		},
 		skill_id = {},
 		part_main = {},
@@ -36,23 +44,23 @@ pg.equip_data_statistics_330 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[60202] = {
-		id = 60202,
+	[60012] = {
+		id = 60012,
 		name = "0",
-		base = 60201,
+		base = 60011,
 		weapon_id = {
-			60202
+			60012
 		}
 	},
-	[60203] = {
-		id = 60203,
+	[60013] = {
+		id = 60013,
 		name = "0",
-		base = 60201,
+		base = 60011,
 		weapon_id = {
-			60203
+			60013
 		}
 	},
-	[60211] = {
+	[60021] = {
 		type = 99,
 		name = "0",
 		speciality = "N/A",
@@ -61,7 +69,7 @@ pg.equip_data_statistics_330 = {
 		ammo = 10,
 		nationality = 0,
 		descrip = "Aircraft Carrier Airstrike",
-		id = 60211,
+		id = 60021,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -72,7 +80,7 @@ pg.equip_data_statistics_330 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60211
+			60021
 		},
 		skill_id = {},
 		part_main = {},
@@ -80,23 +88,23 @@ pg.equip_data_statistics_330 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[60212] = {
-		id = 60212,
+	[60022] = {
+		id = 60022,
 		name = "0",
-		base = 60211,
+		base = 60021,
 		weapon_id = {
-			60212
+			60022
 		}
 	},
-	[60213] = {
-		id = 60213,
+	[60023] = {
+		id = 60023,
 		name = "0",
-		base = 60211,
+		base = 60021,
 		weapon_id = {
-			60213
+			60023
 		}
 	},
-	[60221] = {
+	[60031] = {
 		type = 99,
 		name = "0",
 		speciality = "N/A",
@@ -105,7 +113,7 @@ pg.equip_data_statistics_330 = {
 		ammo = 10,
 		nationality = 0,
 		descrip = "Aircraft Carrier Airstrike",
-		id = 60221,
+		id = 60031,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -116,7 +124,7 @@ pg.equip_data_statistics_330 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60221
+			60031
 		},
 		skill_id = {},
 		part_main = {},
@@ -124,149 +132,32 @@ pg.equip_data_statistics_330 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[60222] = {
-		id = 60222,
+	[60032] = {
+		id = 60032,
 		name = "0",
-		base = 60221,
+		base = 60031,
 		weapon_id = {
-			60222
+			60032
 		}
 	},
-	[60223] = {
-		id = 60223,
+	[60033] = {
+		id = 60033,
 		name = "0",
-		base = 60221,
+		base = 60031,
 		weapon_id = {
-			60223
+			60033
 		}
 	},
-	[60231] = {
-		type = 1,
-		name = "烈焰崩袭",
-		speciality = "N/A",
-		tech = 1,
-		rarity = 1,
-		ammo = 10,
-		nationality = 0,
-		descrip = "Shown when using Barrage",
-		id = 60231,
-		value_3 = 0,
-		value_2 = 0,
-		icon = "1",
-		value_1 = "0",
-		torpedo_ammo = 0,
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {},
-		weapon_id = {
-			60231
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {}
-	},
-	[60232] = {
-		type = 1,
-		name = "蕾丝狂舞",
-		speciality = "N/A",
-		tech = 1,
-		rarity = 1,
-		ammo = 10,
-		nationality = 0,
-		descrip = "Shown when using Barrage",
-		id = 60232,
-		value_3 = 0,
-		value_2 = 0,
-		icon = "1",
-		value_1 = "0",
-		torpedo_ammo = 0,
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {},
-		weapon_id = {
-			60232
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {}
-	},
-	[60233] = {
-		type = 1,
-		name = "众神之怒·雪崩雷震",
-		speciality = "N/A",
-		tech = 1,
-		rarity = 1,
-		ammo = 10,
-		nationality = 0,
-		descrip = "Shown when using Barrage",
-		id = 60233,
-		value_3 = 0,
-		value_2 = 0,
-		icon = "1",
-		value_1 = "0",
-		torpedo_ammo = 0,
-		property_rate = {},
-		ammo_icon = {},
-		ammo_info = {},
-		equip_info = {},
-		weapon_id = {
-			60233
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {}
-	},
-	[60234] = {
+	[60041] = {
 		type = 99,
-		name = "雪风弹幕展示I",
+		name = "0",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "Shown when using Barrage",
-		id = 60234,
+		descrip = "Aircraft Carrier Airstrike",
+		id = 60041,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -277,7 +168,7 @@ pg.equip_data_statistics_330 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60234
+			60041
 		},
 		skill_id = {},
 		part_main = {},
@@ -285,24 +176,32 @@ pg.equip_data_statistics_330 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[60235] = {
-		id = 60235,
-		name = "雪风弹幕展示II",
-		base = 60234,
+	[60042] = {
+		id = 60042,
+		name = "0",
+		base = 60041,
 		weapon_id = {
-			60235
+			60042
 		}
 	},
-	[60236] = {
+	[60043] = {
+		id = 60043,
+		name = "0",
+		base = 60041,
+		weapon_id = {
+			60043
+		}
+	},
+	[60051] = {
 		type = 99,
-		name = "夕立弹幕展示I",
+		name = "0",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "Shown when using Barrage",
-		id = 60236,
+		descrip = "Aircraft Carrier Airstrike",
+		id = 60051,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -313,7 +212,7 @@ pg.equip_data_statistics_330 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60236
+			60051
 		},
 		skill_id = {},
 		part_main = {},
@@ -321,12 +220,20 @@ pg.equip_data_statistics_330 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[60237] = {
-		id = 60237,
-		name = "夕立弹幕展示II",
-		base = 60236,
+	[60052] = {
+		id = 60052,
+		name = "0",
+		base = 60051,
 		weapon_id = {
-			60237
+			60052
+		}
+	},
+	[60053] = {
+		id = 60053,
+		name = "0",
+		base = 60051,
+		weapon_id = {
+			60053
 		}
 	}
 }

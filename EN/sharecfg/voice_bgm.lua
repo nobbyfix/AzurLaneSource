@@ -128,5 +128,11 @@ pg.voice_bgm = {
 	},
 	NewMeixiV4Scene = {
 		bgm = "level02"
+	},
+	IdolMasterStageScene = {
+		bgm = "idom-GOMYWAY"
+	},
+	ChargeScene = {
+		bgm = "main"
 	}
 }

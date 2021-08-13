@@ -1,35 +1,37 @@
 pg = pg or {}
 pg.aircraft_template_202 = {
-	[81103] = {
-		id = 81103,
-		max_hp = 48,
-		hp_growth = 1842,
-		base = 81100,
+	[69700] = {
+		id = 69700,
+		name = "英仙座技能海黄蜂Lv10",
+		base = 69691,
+		max_hp = 98,
+		hp_growth = 3678,
 		weapon_ID = {
-			50403
+			50670,
+			69730
 		}
 	},
-	[81120] = {
+	[69701] = {
 		attack_power = 2,
-		name = "F4F野猫",
-		type = 1,
+		name = "英仙座技能TBFLv1",
+		type = 3,
 		accuracy = 23,
-		model_ID = "f4f",
+		model_ID = "tbf",
 		ACC_growth = 0,
-		crash_DMG = 56,
-		dodge = 0.345,
+		crash_DMG = 300,
+		dodge = 1.05,
 		funnel_behavior = "",
-		nationality = 1,
-		id = 81120,
-		icon = "f4f",
+		nationality = 2,
+		id = 69701,
+		icon = "tbf",
 		AP_growth = 2000,
-		dodge_limit = 9.5,
-		hp_growth = 1411,
+		dodge_limit = 6,
+		hp_growth = 1674,
 		speed = 48,
-		max_hp = 37,
+		max_hp = 44,
 		scale = 1,
 		weapon_ID = {
-			50420
+			69731
 		},
 		position_offset = {
 			0,
@@ -49,13 +51,13 @@ pg.aircraft_template_202 = {
 		bound_bone = {
 			weapon = {
 				{
-					1.24,
-					-1.34,
+					0.68,
+					-0.667,
 					0
 				},
 				{
-					1.43,
-					1.6,
+					0.97,
+					0.584,
 					0
 				}
 			}
@@ -72,8 +74,8 @@ pg.aircraft_template_202 = {
 				0
 			},
 			{
-				0.32,
-				0,
+				0.15,
+				-0.08,
 				0
 			},
 			{
@@ -83,141 +85,84 @@ pg.aircraft_template_202 = {
 			}
 		}
 	},
-	[81121] = {
-		id = 81121,
-		max_hp = 42,
-		hp_growth = 1623,
-		base = 81120,
+	[69702] = {
+		id = 69702,
+		name = "英仙座技能TBFLv2",
+		base = 69701,
+		max_hp = 49,
+		hp_growth = 1892,
 		weapon_ID = {
-			50421
+			69732
 		}
 	},
-	[81122] = {
-		id = 81122,
-		max_hp = 48,
-		hp_growth = 1835,
-		base = 81120,
+	[69703] = {
+		id = 69703,
+		name = "英仙座技能TBFLv3",
+		base = 69701,
+		max_hp = 55,
+		hp_growth = 2111,
 		weapon_ID = {
-			50422
+			69733
 		}
 	},
-	[81123] = {
-		id = 81123,
-		max_hp = 53,
-		hp_growth = 2046,
-		base = 81120,
+	[69704] = {
+		id = 69704,
+		name = "英仙座技能TBFLv4",
+		base = 69701,
+		max_hp = 61,
+		hp_growth = 2329,
 		weapon_ID = {
-			50423
+			69734
 		}
 	},
-	[81124] = {
-		id = 81124,
-		max_hp = 59,
-		hp_growth = 2258,
-		base = 81120,
+	[69705] = {
+		id = 69705,
+		name = "英仙座技能TBFLv5",
+		base = 69701,
+		max_hp = 66,
+		hp_growth = 2547,
 		weapon_ID = {
-			50424
+			69735
 		}
 	},
-	[81125] = {
-		id = 81125,
-		max_hp = 64,
-		hp_growth = 2470,
-		base = 81120,
+	[69706] = {
+		id = 69706,
+		name = "英仙座技能TBFLv6",
+		base = 69701,
+		max_hp = 72,
+		hp_growth = 2766,
 		weapon_ID = {
-			50425
+			69736
 		}
 	},
-	[81126] = {
-		id = 81126,
-		max_hp = 70,
-		hp_growth = 2681,
-		base = 81120,
+	[69707] = {
+		id = 69707,
+		name = "英仙座技能TBFLv7",
+		base = 69701,
+		max_hp = 78,
+		hp_growth = 2984,
 		weapon_ID = {
-			50426
+			69737
 		}
 	},
-	[81140] = {
-		attack_power = 2,
-		name = "F4F野猫",
-		type = 1,
-		accuracy = 23,
-		model_ID = "f4f",
-		ACC_growth = 0,
-		crash_DMG = 56,
-		dodge = 0.333,
-		funnel_behavior = "",
-		nationality = 1,
-		id = 81140,
-		icon = "f4f",
-		AP_growth = 2000,
-		dodge_limit = 10,
-		hp_growth = 1552,
-		speed = 48,
-		max_hp = 40,
-		scale = 1,
+	[69708] = {
+		id = 69708,
+		name = "英仙座技能TBFLv8",
+		base = 69701,
+		max_hp = 83,
+		hp_growth = 3202,
 		weapon_ID = {
-			50440
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					1.24,
-					-1.34,
-					0
-				},
-				{
-					1.43,
-					1.6,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.32,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			69738
 		}
 	},
-	[81141] = {
-		id = 81141,
-		max_hp = 46,
-		hp_growth = 1785,
-		base = 81140,
+	[69709] = {
+		id = 69709,
+		name = "英仙座技能TBFLv9",
+		base = 69701,
+		max_hp = 89,
+		hp_growth = 3421,
 		weapon_ID = {
-			50441
+			69739
 		}
 	}
 }

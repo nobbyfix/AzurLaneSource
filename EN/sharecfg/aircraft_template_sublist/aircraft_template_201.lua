@@ -1,89 +1,35 @@
 pg = pg or {}
 pg.aircraft_template_201 = {
-	[81085] = {
-		id = 81085,
-		max_hp = 71,
-		hp_growth = 2717,
-		base = 81080,
-		weapon_ID = {
-			50345
-		}
+	[69510] = {
+		id = 69510,
+		name = "小光辉圣光飞机Lv10",
+		base = 69501,
+		max_hp = 98,
+		hp_growth = 3511,
+		weapon_ID = {}
 	},
-	[81086] = {
-		id = 81086,
-		max_hp = 77,
-		hp_growth = 2949,
-		base = 81080,
-		weapon_ID = {
-			50346
-		}
-	},
-	[81087] = {
-		id = 81087,
-		max_hp = 83,
-		hp_growth = 3182,
-		base = 81080,
-		weapon_ID = {
-			50347
-		}
-	},
-	[81088] = {
-		id = 81088,
-		max_hp = 89,
-		hp_growth = 3415,
-		base = 81080,
-		weapon_ID = {
-			50348
-		}
-	},
-	[81089] = {
-		id = 81089,
-		max_hp = 95,
-		hp_growth = 3648,
-		base = 81080,
-		weapon_ID = {
-			50349
-		}
-	},
-	[81090] = {
-		id = 81090,
-		max_hp = 101,
-		hp_growth = 3881,
-		base = 81080,
-		weapon_ID = {
-			50350
-		}
-	},
-	[81091] = {
-		id = 81091,
-		max_hp = 107,
-		hp_growth = 4114,
-		base = 81080,
-		weapon_ID = {
-			50351
-		}
-	},
-	[81100] = {
+	[69691] = {
 		attack_power = 2,
-		name = "F4F野猫",
-		type = 1,
+		name = "英仙座技能海黄蜂Lv1",
+		type = 3,
 		accuracy = 23,
-		model_ID = "f4f",
+		model_ID = "haidahuangfeng",
 		ACC_growth = 0,
-		crash_DMG = 56,
-		dodge = 0.357,
+		crash_DMG = 208,
+		dodge = 1,
 		funnel_behavior = "",
-		nationality = 1,
-		id = 81100,
-		icon = "f4f",
+		nationality = 2,
+		id = 69691,
+		icon = "haidahuangfeng",
 		AP_growth = 2000,
-		dodge_limit = 9,
-		hp_growth = 1270,
+		dodge_limit = 0,
+		hp_growth = 1692,
 		speed = 48,
-		max_hp = 33,
+		max_hp = 42,
 		scale = 1,
 		weapon_ID = {
-			50400
+			50661,
+			69721
 		},
 		position_offset = {
 			0,
@@ -103,13 +49,13 @@ pg.aircraft_template_201 = {
 		bound_bone = {
 			weapon = {
 				{
-					1.24,
-					-1.34,
+					0.68,
+					-0.667,
 					0
 				},
 				{
-					1.43,
-					1.6,
+					0.97,
+					0.584,
 					0
 				}
 			}
@@ -126,7 +72,7 @@ pg.aircraft_template_201 = {
 				0
 			},
 			{
-				0.32,
+				0.54,
 				0,
 				0
 			},
@@ -137,22 +83,92 @@ pg.aircraft_template_201 = {
 			}
 		}
 	},
-	[81101] = {
-		id = 81101,
-		max_hp = 38,
-		hp_growth = 1461,
-		base = 81100,
+	[69692] = {
+		id = 69692,
+		name = "英仙座技能海黄蜂Lv2",
+		base = 69691,
+		max_hp = 48,
+		hp_growth = 1913,
 		weapon_ID = {
-			50401
+			50662,
+			69722
 		}
 	},
-	[81102] = {
-		id = 81102,
-		max_hp = 43,
-		hp_growth = 1651,
-		base = 81100,
+	[69693] = {
+		id = 69693,
+		name = "英仙座技能海黄蜂Lv3",
+		base = 69691,
+		max_hp = 54,
+		hp_growth = 2133,
 		weapon_ID = {
-			50402
+			50663,
+			69723
+		}
+	},
+	[69694] = {
+		id = 69694,
+		name = "英仙座技能海黄蜂Lv4",
+		base = 69691,
+		max_hp = 61,
+		hp_growth = 2354,
+		weapon_ID = {
+			50664,
+			69724
+		}
+	},
+	[69695] = {
+		id = 69695,
+		name = "英仙座技能海黄蜂Lv5",
+		base = 69691,
+		max_hp = 67,
+		hp_growth = 2575,
+		weapon_ID = {
+			50665,
+			69725
+		}
+	},
+	[69696] = {
+		id = 69696,
+		name = "英仙座技能海黄蜂Lv6",
+		base = 69691,
+		max_hp = 73,
+		hp_growth = 2796,
+		weapon_ID = {
+			50666,
+			69726
+		}
+	},
+	[69697] = {
+		id = 69697,
+		name = "英仙座技能海黄蜂Lv7",
+		base = 69691,
+		max_hp = 79,
+		hp_growth = 3016,
+		weapon_ID = {
+			50667,
+			69727
+		}
+	},
+	[69698] = {
+		id = 69698,
+		name = "英仙座技能海黄蜂Lv8",
+		base = 69691,
+		max_hp = 86,
+		hp_growth = 3237,
+		weapon_ID = {
+			50668,
+			69728
+		}
+	},
+	[69699] = {
+		id = 69699,
+		name = "英仙座技能海黄蜂Lv9",
+		base = 69691,
+		max_hp = 92,
+		hp_growth = 3458,
+		weapon_ID = {
+			50669,
+			69729
 		}
 	}
 }

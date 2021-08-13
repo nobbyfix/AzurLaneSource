@@ -1,53 +1,37 @@
 pg = pg or {}
 pg.aircraft_template_198 = {
-	[81021] = {
-		id = 81021,
-		max_hp = 38,
-		hp_growth = 1461,
-		base = 81020,
+	[69220] = {
+		id = 69220,
+		name = "库珀轰炸PBY-Lv10",
+		base = 69211,
+		max_hp = 98,
+		hp_growth = 3511,
 		weapon_ID = {
-			50321
+			69230
 		}
 	},
-	[81022] = {
-		id = 81022,
-		max_hp = 43,
-		hp_growth = 1651,
-		base = 81020,
-		weapon_ID = {
-			50322
-		}
-	},
-	[81023] = {
-		id = 81023,
-		max_hp = 48,
-		hp_growth = 1842,
-		base = 81020,
-		weapon_ID = {
-			50323
-		}
-	},
-	[81040] = {
+	[69451] = {
 		attack_power = 2,
-		name = "F2A水牛",
+		name = "贝亚恩V-156F-LV1",
 		type = 1,
 		accuracy = 23,
-		model_ID = "F2A",
+		model_ID = "v156f",
 		ACC_growth = 0,
-		crash_DMG = 42,
-		dodge = 0.351,
+		crash_DMG = 156,
+		dodge = 0.315,
 		funnel_behavior = "",
 		nationality = 1,
-		id = 81040,
-		icon = "F2A",
+		id = 69451,
+		icon = "v156f",
 		AP_growth = 2000,
-		dodge_limit = 9,
-		hp_growth = 1411,
-		speed = 45,
-		max_hp = 37,
+		dodge_limit = 11,
+		hp_growth = 1947,
+		speed = 50,
+		max_hp = 51,
 		scale = 1,
 		weapon_ID = {
-			50340
+			50701,
+			69461
 		},
 		position_offset = {
 			0,
@@ -67,13 +51,13 @@ pg.aircraft_template_198 = {
 		bound_bone = {
 			weapon = {
 				{
-					1.24,
-					-1.34,
+					-1.28,
+					1.62,
 					0
 				},
 				{
-					1.43,
-					1.6,
+					-1.12,
+					-1,
 					0
 				}
 			}
@@ -90,7 +74,7 @@ pg.aircraft_template_198 = {
 				0
 			},
 			{
-				0.24,
+				0,
 				0,
 				0
 			},
@@ -101,58 +85,92 @@ pg.aircraft_template_198 = {
 			}
 		}
 	},
-	[81041] = {
-		id = 81041,
-		max_hp = 42,
-		hp_growth = 1623,
-		base = 81040,
+	[69452] = {
+		id = 69452,
+		name = "贝亚恩V-156F-LV2",
+		base = 69451,
+		max_hp = 57,
+		hp_growth = 2201,
 		weapon_ID = {
-			50341
+			50702,
+			69462
 		}
 	},
-	[81042] = {
-		id = 81042,
-		max_hp = 48,
-		hp_growth = 1835,
-		base = 81040,
-		weapon_ID = {
-			50342
-		}
-	},
-	[81043] = {
-		id = 81043,
-		max_hp = 53,
-		hp_growth = 2046,
-		base = 81040,
-		weapon_ID = {
-			50343
-		}
-	},
-	[81044] = {
-		id = 81044,
-		max_hp = 59,
-		hp_growth = 2258,
-		base = 81040,
-		weapon_ID = {
-			50344
-		}
-	},
-	[81045] = {
-		id = 81045,
+	[69453] = {
+		id = 69453,
+		name = "贝亚恩V-156F-LV3",
+		base = 69451,
 		max_hp = 64,
-		hp_growth = 2470,
-		base = 81040,
+		hp_growth = 2455,
 		weapon_ID = {
-			50345
+			50703,
+			69463
 		}
 	},
-	[81046] = {
-		id = 81046,
+	[69454] = {
+		id = 69454,
+		name = "贝亚恩V-156F-LV4",
+		base = 69451,
 		max_hp = 70,
-		hp_growth = 2681,
-		base = 81040,
+		hp_growth = 2710,
 		weapon_ID = {
-			50346
+			50704,
+			69464
+		}
+	},
+	[69455] = {
+		id = 69455,
+		name = "贝亚恩V-156F-LV5",
+		base = 69451,
+		max_hp = 77,
+		hp_growth = 2964,
+		weapon_ID = {
+			50705,
+			69465
+		}
+	},
+	[69456] = {
+		id = 69456,
+		name = "贝亚恩V-156F-LV6",
+		base = 69451,
+		max_hp = 84,
+		hp_growth = 3218,
+		weapon_ID = {
+			50706,
+			69466
+		}
+	},
+	[69457] = {
+		id = 69457,
+		name = "贝亚恩V-156F-LV7",
+		base = 69451,
+		max_hp = 90,
+		hp_growth = 3472,
+		weapon_ID = {
+			50707,
+			69467
+		}
+	},
+	[69458] = {
+		id = 69458,
+		name = "贝亚恩V-156F-LV8",
+		base = 69451,
+		max_hp = 97,
+		hp_growth = 3726,
+		weapon_ID = {
+			50708,
+			69468
+		}
+	},
+	[69459] = {
+		id = 69459,
+		name = "贝亚恩V-156F-LV9",
+		base = 69451,
+		max_hp = 103,
+		hp_growth = 3980,
+		weapon_ID = {
+			50709,
+			69469
 		}
 	}
 }

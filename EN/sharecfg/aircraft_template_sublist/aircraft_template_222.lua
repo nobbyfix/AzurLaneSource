@@ -1,44 +1,76 @@
 pg = pg or {}
 pg.aircraft_template_222 = {
-	[82202] = {
-		id = 82202,
-		max_hp = 36,
-		hp_growth = 1398,
-		base = 82200,
+	[81349] = {
+		id = 81349,
+		max_hp = 103,
+		hp_growth = 3980,
+		base = 81340,
 		weapon_ID = {
-			50102
+			50349,
+			50549
 		}
 	},
-	[82203] = {
-		id = 82203,
-		max_hp = 41,
-		hp_growth = 1559,
-		base = 82200,
+	[81350] = {
+		id = 81350,
+		max_hp = 110,
+		hp_growth = 4234,
+		base = 81340,
 		weapon_ID = {
-			50103
+			50350,
+			50550
 		}
 	},
-	[82220] = {
+	[81351] = {
+		id = 81351,
+		max_hp = 117,
+		hp_growth = 4488,
+		base = 81340,
+		weapon_ID = {
+			50351,
+			50551
+		}
+	},
+	[81352] = {
+		id = 81352,
+		max_hp = 123,
+		hp_growth = 4742,
+		base = 81340,
+		weapon_ID = {
+			50352,
+			50552
+		}
+	},
+	[81353] = {
+		id = 81353,
+		max_hp = 130,
+		hp_growth = 4996,
+		base = 81340,
+		weapon_ID = {
+			50353,
+			50553
+		}
+	},
+	[81360] = {
 		attack_power = 2,
-		name = "海斗士",
+		name = "F7F虎猫",
 		type = 1,
 		accuracy = 23,
-		model_ID = "haidoushi",
+		model_ID = "f7f",
 		ACC_growth = 0,
-		crash_DMG = 76,
-		dodge = 0.363,
+		crash_DMG = 196,
+		dodge = 0.315,
 		funnel_behavior = "",
-		nationality = 2,
-		id = 82220,
-		icon = "haidoushi",
+		nationality = 1,
+		id = 81360,
+		icon = "f7f",
 		AP_growth = 2000,
-		dodge_limit = 8.5,
-		hp_growth = 1210,
-		speed = 47,
-		max_hp = 31,
+		dodge_limit = 12,
+		hp_growth = 2032,
+		speed = 52,
+		max_hp = 53,
 		scale = 1,
 		weapon_ID = {
-			50120
+			50660
 		},
 		position_offset = {
 			0,
@@ -58,13 +90,13 @@ pg.aircraft_template_222 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.69,
-					-2.62,
+					1.61,
+					-0.4,
 					0
 				},
 				{
-					0.85,
-					0.17,
+					1.44,
+					0.86,
 					0
 				}
 			}
@@ -81,7 +113,7 @@ pg.aircraft_template_222 = {
 				0
 			},
 			{
-				0.62,
+				0,
 				0,
 				0
 			},
@@ -92,132 +124,40 @@ pg.aircraft_template_222 = {
 			}
 		}
 	},
-	[82221] = {
-		id = 82221,
-		max_hp = 36,
-		hp_growth = 1391,
-		base = 82220,
+	[81361] = {
+		id = 81361,
+		max_hp = 61,
+		hp_growth = 2337,
+		base = 81360,
 		weapon_ID = {
-			50121
+			50661
 		}
 	},
-	[82222] = {
-		id = 82222,
-		max_hp = 41,
-		hp_growth = 1572,
-		base = 82220,
+	[81362] = {
+		id = 81362,
+		max_hp = 69,
+		hp_growth = 2642,
+		base = 81360,
 		weapon_ID = {
-			50122
+			50662
 		}
 	},
-	[82223] = {
-		id = 82223,
-		max_hp = 46,
-		hp_growth = 1754,
-		base = 82220,
+	[81363] = {
+		id = 81363,
+		max_hp = 77,
+		hp_growth = 2947,
+		base = 81360,
 		weapon_ID = {
-			50123
+			50663
 		}
 	},
-	[82240] = {
-		attack_power = 2,
-		name = "海斗士",
-		type = 1,
-		accuracy = 23,
-		model_ID = "haidoushi",
-		ACC_growth = 0,
-		crash_DMG = 76,
-		dodge = 0.351,
-		funnel_behavior = "",
-		nationality = 2,
-		id = 82240,
-		icon = "haidoushi",
-		AP_growth = 2000,
-		dodge_limit = 9,
-		hp_growth = 1344,
-		speed = 47,
-		max_hp = 35,
-		scale = 1,
+	[81364] = {
+		id = 81364,
+		max_hp = 85,
+		hp_growth = 3251,
+		base = 81360,
 		weapon_ID = {
-			50140
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.69,
-					-2.62,
-					0
-				},
-				{
-					0.85,
-					0.17,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.62,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[82241] = {
-		id = 82241,
-		max_hp = 40,
-		hp_growth = 1546,
-		base = 82240,
-		weapon_ID = {
-			50141
-		}
-	},
-	[82242] = {
-		id = 82242,
-		max_hp = 45,
-		hp_growth = 1747,
-		base = 82240,
-		weapon_ID = {
-			50142
-		}
-	},
-	[82243] = {
-		id = 82243,
-		max_hp = 51,
-		hp_growth = 1949,
-		base = 82240,
-		weapon_ID = {
-			50143
+			50664
 		}
 	}
 }

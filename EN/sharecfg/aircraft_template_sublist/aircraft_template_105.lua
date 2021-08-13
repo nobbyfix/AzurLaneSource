@@ -88,29 +88,28 @@ pg.aircraft_template_105 = {
 			51473
 		}
 	},
-	[39000] = {
+	[38300] = {
 		attack_power = 2,
-		name = "九九式舰爆",
-		type = 3,
+		name = "彩云（舰攻型）",
+		type = 2,
 		accuracy = 23,
-		model_ID = "99shijianbao1",
+		model_ID = "caiyun",
 		ACC_growth = 0,
-		crash_DMG = 180,
-		dodge = 3.57,
+		crash_DMG = 208,
+		dodge = 1.05,
 		funnel_behavior = "",
 		nationality = 3,
-		id = 39000,
-		icon = "99shijianbao1",
+		id = 38300,
+		icon = "caiyun",
 		AP_growth = 2000,
-		dodge_limit = 0.8,
-		hp_growth = 1204,
-		speed = 45,
-		max_hp = 31,
+		dodge_limit = 5,
+		hp_growth = 1386,
+		speed = 66,
+		max_hp = 36,
 		scale = 1,
 		weapon_ID = {
-			50000,
-			52200,
-			52100
+			59720,
+			51360
 		},
 		position_offset = {
 			0,
@@ -130,13 +129,13 @@ pg.aircraft_template_105 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.71,
-					-1.73,
+					0.68,
+					-0.667,
 					0
 				},
 				{
-					0.82,
-					2.04,
+					0.97,
+					0.584,
 					0
 				}
 			}
@@ -153,7 +152,7 @@ pg.aircraft_template_105 = {
 				0
 			},
 			{
-				0,
+				0.26,
 				0,
 				0
 			},
@@ -164,15 +163,14 @@ pg.aircraft_template_105 = {
 			}
 		}
 	},
-	[39001] = {
-		id = 39001,
-		max_hp = 36,
-		hp_growth = 1384,
-		base = 39000,
+	[38301] = {
+		id = 38301,
+		max_hp = 41,
+		hp_growth = 1594,
+		base = 38300,
 		weapon_ID = {
-			50001,
-			52201,
-			52101
+			59721,
+			51361
 		}
 	}
 }

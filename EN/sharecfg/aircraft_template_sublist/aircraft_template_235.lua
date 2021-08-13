@@ -1,57 +1,26 @@
 pg = pg or {}
 pg.aircraft_template_235 = {
-	[83228] = {
-		id = 83228,
-		max_hp = 80,
-		hp_growth = 3090,
-		base = 83220,
-		weapon_ID = {
-			50028,
-			50528
-		}
-	},
-	[83229] = {
-		id = 83229,
-		max_hp = 86,
-		hp_growth = 3301,
-		base = 83220,
-		weapon_ID = {
-			50029,
-			50529
-		}
-	},
-	[83230] = {
-		id = 83230,
-		max_hp = 91,
-		hp_growth = 3511,
-		base = 83220,
-		weapon_ID = {
-			50030,
-			50530
-		}
-	},
-	[83240] = {
+	[82260] = {
 		attack_power = 2,
-		name = "零战五二型",
+		name = "海飓风",
 		type = 1,
 		accuracy = 23,
-		model_ID = "lingzhan52",
+		model_ID = "haijufeng",
 		ACC_growth = 0,
-		crash_DMG = 70,
-		dodge = 0.315,
+		crash_DMG = 76,
+		dodge = 0.351,
 		funnel_behavior = "",
-		nationality = 3,
-		id = 83240,
-		icon = "lingzhan52",
+		nationality = 2,
+		id = 82260,
+		icon = "haijufeng",
 		AP_growth = 2000,
 		dodge_limit = 9,
-		hp_growth = 1532,
-		speed = 55,
-		max_hp = 40,
+		hp_growth = 1344,
+		speed = 47,
+		max_hp = 35,
 		scale = 1,
 		weapon_ID = {
-			50040,
-			50540
+			50160
 		},
 		position_offset = {
 			0,
@@ -71,13 +40,13 @@ pg.aircraft_template_235 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					0.69,
+					-2.62,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					0.85,
+					0.17,
 					0
 				}
 			}
@@ -94,7 +63,7 @@ pg.aircraft_template_235 = {
 				0
 			},
 			{
-				0.51,
+				0.62,
 				0,
 				0
 			},
@@ -105,64 +74,150 @@ pg.aircraft_template_235 = {
 			}
 		}
 	},
-	[83241] = {
-		id = 83241,
-		max_hp = 46,
-		hp_growth = 1762,
-		base = 83240,
+	[82261] = {
+		id = 82261,
+		max_hp = 40,
+		hp_growth = 1546,
+		base = 82260,
 		weapon_ID = {
-			50041,
-			50541
+			50161
 		}
 	},
-	[83242] = {
-		id = 83242,
-		max_hp = 52,
-		hp_growth = 1992,
-		base = 83240,
+	[82262] = {
+		id = 82262,
+		max_hp = 45,
+		hp_growth = 1747,
+		base = 82260,
 		weapon_ID = {
-			50042,
-			50542
+			50162
 		}
 	},
-	[83243] = {
-		id = 83243,
-		max_hp = 58,
-		hp_growth = 2222,
-		base = 83240,
+	[82263] = {
+		id = 82263,
+		max_hp = 51,
+		hp_growth = 1949,
+		base = 82260,
 		weapon_ID = {
-			50043,
-			50543
+			50163
 		}
 	},
-	[83244] = {
-		id = 83244,
-		max_hp = 64,
-		hp_growth = 2451,
-		base = 83240,
+	[82264] = {
+		id = 82264,
+		max_hp = 56,
+		hp_growth = 2150,
+		base = 82260,
 		weapon_ID = {
-			50044,
-			50544
+			50164
 		}
 	},
-	[83245] = {
-		id = 83245,
-		max_hp = 70,
-		hp_growth = 2681,
-		base = 83240,
+	[82265] = {
+		id = 82265,
+		max_hp = 61,
+		hp_growth = 2352,
+		base = 82260,
 		weapon_ID = {
-			50045,
-			50545
+			50165
 		}
 	},
-	[83246] = {
-		id = 83246,
-		max_hp = 76,
-		hp_growth = 2911,
-		base = 83240,
+	[82266] = {
+		id = 82266,
+		max_hp = 66,
+		hp_growth = 2554,
+		base = 82260,
 		weapon_ID = {
-			50046,
-			50546
+			50166
+		}
+	},
+	[82267] = {
+		id = 82267,
+		max_hp = 72,
+		hp_growth = 2755,
+		base = 82260,
+		weapon_ID = {
+			50167
+		}
+	},
+	[82300] = {
+		attack_power = 2,
+		name = "海怒",
+		type = 1,
+		accuracy = 24,
+		model_ID = "hainu",
+		ACC_growth = 0,
+		crash_DMG = 160,
+		dodge = 0.315,
+		funnel_behavior = "",
+		nationality = 2,
+		id = 82300,
+		icon = "hainu",
+		AP_growth = 2000,
+		dodge_limit = 10,
+		hp_growth = 1645,
+		speed = 52,
+		max_hp = 43,
+		scale = 1,
+		weapon_ID = {
+			50660
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.69,
+					-2.62,
+					0
+				},
+				{
+					0.85,
+					0.17,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.86,
+				-0.12,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[82301] = {
+		id = 82301,
+		max_hp = 49,
+		hp_growth = 1892,
+		base = 82300,
+		weapon_ID = {
+			50661
 		}
 	}
 }

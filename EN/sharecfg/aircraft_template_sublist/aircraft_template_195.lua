@@ -1,88 +1,37 @@
 pg = pg or {}
 pg.aircraft_template_195 = {
-	[69936] = {
-		id = 69936,
-		name = "信浓技能流星 LV6",
-		base = 69931,
-		max_hp = 68,
-		hp_growth = 2634,
+	[68960] = {
+		id = 68960,
+		name = "白上吹雪狐笋轰炸机Lv10",
+		base = 68951,
+		max_hp = 98,
+		hp_growth = 3678,
 		weapon_ID = {
-			50546,
-			50846,
-			51466
+			68970
 		}
 	},
-	[69937] = {
-		id = 69937,
-		name = "信浓技能流星 LV7",
-		base = 69931,
-		max_hp = 74,
-		hp_growth = 2842,
-		weapon_ID = {
-			50547,
-			50847,
-			51467
-		}
-	},
-	[69938] = {
-		id = 69938,
-		name = "信浓技能流星 LV8",
-		base = 69931,
-		max_hp = 79,
-		hp_growth = 3050,
-		weapon_ID = {
-			50548,
-			50848,
-			51468
-		}
-	},
-	[69939] = {
-		id = 69939,
-		name = "信浓技能流星 LV9",
-		base = 69931,
-		max_hp = 85,
-		hp_growth = 3258,
-		weapon_ID = {
-			50549,
-			50849,
-			51469
-		}
-	},
-	[69940] = {
-		id = 69940,
-		name = "信浓技能流星 LV10",
-		base = 69931,
-		max_hp = 90,
-		hp_growth = 3466,
-		weapon_ID = {
-			50550,
-			50850,
-			51470
-		}
-	},
-	[69971] = {
+	[69161] = {
 		attack_power = 2,
-		name = "千岁千代田技能瑞云",
+		name = "无畏技能SB2C(VB-18)轰炸机Lv1",
 		type = 3,
 		accuracy = 23,
-		model_ID = "ruiyun",
+		model_ID = "sb2c",
 		ACC_growth = 0,
-		crash_DMG = 120,
-		dodge = 3.51,
+		crash_DMG = 180,
+		dodge = 3.33,
 		funnel_behavior = "",
-		nationality = 3,
-		id = 69971,
-		icon = "ruiyun",
+		nationality = 1,
+		id = 69161,
+		icon = "sb2c",
 		AP_growth = 2000,
 		dodge_limit = 1,
-		hp_growth = 1438,
-		speed = 46,
-		max_hp = 37,
+		hp_growth = 1870,
+		speed = 45,
+		max_hp = 49,
 		scale = 1,
 		weapon_ID = {
-			50541,
-			50841,
-			52241
+			69171,
+			69181
 		},
 		position_offset = {
 			0,
@@ -102,13 +51,13 @@ pg.aircraft_template_195 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.71,
-					-1.73,
+					0.68,
+					-0.667,
 					0
 				},
 				{
-					0.82,
-					2.04,
+					0.97,
+					0.584,
 					0
 				}
 			}
@@ -125,7 +74,7 @@ pg.aircraft_template_195 = {
 				0
 			},
 			{
-				0,
+				0.44,
 				0,
 				0
 			},
@@ -136,48 +85,92 @@ pg.aircraft_template_195 = {
 			}
 		}
 	},
-	[69972] = {
-		id = 69972,
-		max_hp = 42,
-		hp_growth = 1626,
-		base = 69971,
+	[69162] = {
+		id = 69162,
+		name = "无畏技能SB2C(VB-18)轰炸机Lv2",
+		base = 69161,
+		max_hp = 55,
+		hp_growth = 2114,
 		weapon_ID = {
-			50542,
-			50842,
-			52242
+			69172,
+			69182
 		}
 	},
-	[69973] = {
-		id = 69973,
-		max_hp = 47,
-		hp_growth = 1813,
-		base = 69971,
+	[69163] = {
+		id = 69163,
+		name = "无畏技能SB2C(VB-18)轰炸机Lv3",
+		base = 69161,
+		max_hp = 61,
+		hp_growth = 2358,
 		weapon_ID = {
-			50543,
-			50843,
-			52243
+			69173,
+			69183
 		}
 	},
-	[69974] = {
-		id = 69974,
-		max_hp = 52,
-		hp_growth = 2001,
-		base = 69971,
+	[69164] = {
+		id = 69164,
+		name = "无畏技能SB2C(VB-18)轰炸机Lv4",
+		base = 69161,
+		max_hp = 68,
+		hp_growth = 2602,
 		weapon_ID = {
-			50544,
-			50844,
-			52244
+			69174,
+			69184
 		}
 	},
-	[69975] = {
-		id = 69975,
-		max_hp = 57,
-		hp_growth = 2189,
-		base = 69971,
+	[69165] = {
+		id = 69165,
+		name = "无畏技能SB2C(VB-18)轰炸机Lv5",
+		base = 69161,
+		max_hp = 74,
+		hp_growth = 2846,
 		weapon_ID = {
-			50545,
-			50845,
-			52245
+			69175,
+			69185
+		}
+	},
+	[69166] = {
+		id = 69166,
+		name = "无畏技能SB2C(VB-18)轰炸机Lv6",
+		base = 69161,
+		max_hp = 80,
+		hp_growth = 3090,
+		weapon_ID = {
+			69176,
+			69186
+		}
+	},
+	[69167] = {
+		id = 69167,
+		name = "无畏技能SB2C(VB-18)轰炸机Lv7",
+		base = 69161,
+		max_hp = 87,
+		hp_growth = 3334,
+		weapon_ID = {
+			69177,
+			69187
+		}
+	},
+	[69168] = {
+		id = 69168,
+		name = "无畏技能SB2C(VB-18)轰炸机Lv8",
+		base = 69161,
+		max_hp = 93,
+		hp_growth = 3578,
+		weapon_ID = {
+			69178,
+			69188
+		}
+	},
+	[69169] = {
+		id = 69169,
+		name = "无畏技能SB2C(VB-18)轰炸机Lv9",
+		base = 69161,
+		max_hp = 99,
+		hp_growth = 3822,
+		weapon_ID = {
+			69179,
+			69189
 		}
 	}
 }

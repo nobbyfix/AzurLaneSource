@@ -16,20 +16,26 @@ function slot0.execute(slot0, slot1)
 
 		slot3.isClearNpc = true
 	end
+
+	if getProxy(ActivityProxy):getActiveBannerByType(GAMEUI_BANNER_10) then
+		slot5 = pg.item_data_statistics[50004]
+		slot5.icon = "Props/" .. slot4.pic
+		slot6 = string.split(slot4.param, "|")
+		slot5.name = slot6[1]
+		slot5.display = slot6[2]
+	end
 end
 
 function slot0.unloadEquipments(slot0, slot1)
-	slot2 = getProxy(EquipmentProxy)
-
 	for slot7, slot8 in pairs(slot1.equipments) do
 		if slot8 then
-			if slot8:hasSkin() then
-				slot1:updateEquipmentSkin(slot7, 0)
-				slot2:addEquipmentSkin(slot8.skinId, 1)
-			end
-
 			slot1:updateEquip(slot7, nil)
-			slot2:addEquipmentById(slot8.id, 1)
+			getProxy(EquipmentProxy):addEquipmentById(slot8.id, 1)
+		end
+
+		if slot1:getEquipSkin(slot7) ~= 0 then
+			slot1:updateEquipmentSkin(slot7, 0)
+			slot2:addEquipmentSkin(slot8.skinId, 1)
 		end
 	end
 end

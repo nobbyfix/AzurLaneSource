@@ -5,9 +5,9 @@ SCENE = {
 	EQUIPMENT_TRANSFORM = "equip transform",
 	COMMANDERINFO = "scene commander info",
 	TRANSITION = "scene transition",
-	SUMMARY = "summary",
+	IMAS_STAGE = "IdolMaster Stage",
 	COMBATLOAD = "scene combat load",
-	ANNIVERSARY = "anniversary",
+	SUMMARY = "summary",
 	WORLDBOSS = "scene worldboss",
 	ITEM_ORIGIN_PAGE = "item special page",
 	HOLOLIVE_MEDAL = "hololive medal",
@@ -20,7 +20,7 @@ SCENE = {
 	ACT_BOSS_SPF = "act boss spf",
 	BACKYARD_THEME_TEMPLATE = "backyard theme template",
 	NAVALACADEMYSCENE = "naval academy scene",
-	GUILD = "scene guild",
+	ANNIVERSARY = "anniversary",
 	CHARGE = "scene charge",
 	SKINSHOP = "scene skinshop",
 	HOLOLIVE_LINKLINK_SELECT_SCENE = "hololive linklink select scene",
@@ -63,16 +63,18 @@ SCENE = {
 	IDOL_MEDAL_COLLECTION_SCENE = "idol medal collection scene",
 	COMMANDROOM = "scene command room",
 	BACKYARD = "scene back yard",
+	GUILD = "scene guild",
+	IDOLMASTER_MEDAL_COLLECTION_SCENE = "idolmaster medal collection scent",
+	BIANDUI = "scene biandui",
 	PUBLIC_GUILD = "public guild",
 	CHUANWU = "scene shipyard",
-	BIANDUI = "scene biandui",
-	CARD_PAIRS = "card pairs",
-	CREATE_PLAYER = "scene create player",
 	NEWYEAR_BACKHILL = "scene NEWYEAR BACKHILL",
-	WORLD = "scene world",
+	CARD_PAIRS = "card pairs",
 	WORLD_FLEET_SELECT = "world fleet select",
-	WORLD_FORMATION = "scene world formation",
+	CREATE_PLAYER = "scene create player",
+	WORLD = "scene world",
 	COLORING = "scene coloring",
+	WORLD_FORMATION = "scene world formation",
 	NAVALTACTICS = "naval tactics",
 	ACT_BOSS_BATTLE = "act boss battle",
 	RESOLVEEQUIP = "scene resolve equip",
@@ -268,7 +270,7 @@ function SCENE.SetSceneInfo(slot0, slot1)
 		slot0.viewComponent = TrainingCampScene
 	elseif slot1 == SCENE.ACT_BOSS_BATTLE then
 		slot0.mediator = ActivityBossMediatorTemplate
-		slot0.viewComponent = ActivityBossAisaikesiScene
+		slot0.viewComponent = ActivityBossSurugaScene
 	elseif slot1 == SCENE.BULLETINBOARD then
 		slot0.mediator = BulletinBoardMediator
 		slot0.viewComponent = BulletinBoardLayer
@@ -366,6 +368,12 @@ function SCENE.SetSceneInfo(slot0, slot1)
 	elseif slot1 == SCENE.NEWMEIXIV4_SKIRMISH then
 		slot0.mediator = NewMeixiV4Mediator
 		slot0.viewComponent = NewMeixiV4Scene
+	elseif slot1 == SCENE.IMAS_STAGE then
+		slot0.mediator = BackHillMediatorTemplate
+		slot0.viewComponent = IdolMasterStageScene
+	elseif slot1 == SCENE.IDOLMASTER_MEDAL_COLLECTION_SCENE then
+		slot0.mediator = IdolMedalCollectionMediator
+		slot0.viewComponent = IdolMasterMedalCollectionView
 	end
 
 	slot0.scene = slot1

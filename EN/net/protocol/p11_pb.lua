@@ -47,6 +47,8 @@ slot2 = {
 	SC_11003_APPRECIATION_FIELD = slot0.FieldDescriptor(),
 	SC_11003_THEME_UPLOAD_NOT_ALLOWED_TIME_FIELD = slot0.FieldDescriptor(),
 	SC_11003_REFUND_SHOP_INFO_LIST_FIELD = slot0.FieldDescriptor(),
+	SC_11003_CARTOON_READ_MARK_FIELD = slot0.FieldDescriptor(),
+	SC_11003_CARTOON_COLLECT_MARK_FIELD = slot0.FieldDescriptor(),
 	SC_11004_RESOURCE_LIST_FIELD = slot0.FieldDescriptor(),
 	CS_11005_TYPE_FIELD = slot0.FieldDescriptor(),
 	CS_11005_ID_FIELD = slot0.FieldDescriptor(),
@@ -113,6 +115,7 @@ slot2 = {
 	SC_11402_RESULT_FIELD = slot0.FieldDescriptor(),
 	SC_11402_ROOM_ID_FIELD = slot0.FieldDescriptor(),
 	CS_11501_SHOP_ID_FIELD = slot0.FieldDescriptor(),
+	CS_11501_DEVICE_FIELD = slot0.FieldDescriptor(),
 	SC_11502_RESULT_FIELD = slot0.FieldDescriptor(),
 	SC_11502_PAY_ID_FIELD = slot0.FieldDescriptor(),
 	SC_11502_URL_FIELD = slot0.FieldDescriptor(),
@@ -136,6 +139,7 @@ slot2 = {
 	CS_11510_CODE_FIELD = slot0.FieldDescriptor(),
 	SC_11511_RESULT_FIELD = slot0.FieldDescriptor(),
 	CS_11513_SHOP_ID_FIELD = slot0.FieldDescriptor(),
+	CS_11513_DEVICE_FIELD = slot0.FieldDescriptor(),
 	SC_11514_RESULT_FIELD = slot0.FieldDescriptor(),
 	SC_11514_PAY_ID_FIELD = slot0.FieldDescriptor(),
 	SC_11514_URL_FIELD = slot0.FieldDescriptor(),
@@ -731,6 +735,24 @@ slot2.SC_11003_REFUND_SHOP_INFO_LIST_FIELD.default_value = {}
 slot2.SC_11003_REFUND_SHOP_INFO_LIST_FIELD.message_type = slot1.REFUND_SHOPINFO
 slot2.SC_11003_REFUND_SHOP_INFO_LIST_FIELD.type = 11
 slot2.SC_11003_REFUND_SHOP_INFO_LIST_FIELD.cpp_type = 10
+slot2.SC_11003_CARTOON_READ_MARK_FIELD.name = "cartoon_read_mark"
+slot2.SC_11003_CARTOON_READ_MARK_FIELD.full_name = "p11.sc_11003.cartoon_read_mark"
+slot2.SC_11003_CARTOON_READ_MARK_FIELD.number = 39
+slot2.SC_11003_CARTOON_READ_MARK_FIELD.index = 38
+slot2.SC_11003_CARTOON_READ_MARK_FIELD.label = 3
+slot2.SC_11003_CARTOON_READ_MARK_FIELD.has_default_value = false
+slot2.SC_11003_CARTOON_READ_MARK_FIELD.default_value = {}
+slot2.SC_11003_CARTOON_READ_MARK_FIELD.type = 13
+slot2.SC_11003_CARTOON_READ_MARK_FIELD.cpp_type = 3
+slot2.SC_11003_CARTOON_COLLECT_MARK_FIELD.name = "cartoon_collect_mark"
+slot2.SC_11003_CARTOON_COLLECT_MARK_FIELD.full_name = "p11.sc_11003.cartoon_collect_mark"
+slot2.SC_11003_CARTOON_COLLECT_MARK_FIELD.number = 40
+slot2.SC_11003_CARTOON_COLLECT_MARK_FIELD.index = 39
+slot2.SC_11003_CARTOON_COLLECT_MARK_FIELD.label = 3
+slot2.SC_11003_CARTOON_COLLECT_MARK_FIELD.has_default_value = false
+slot2.SC_11003_CARTOON_COLLECT_MARK_FIELD.default_value = {}
+slot2.SC_11003_CARTOON_COLLECT_MARK_FIELD.type = 13
+slot2.SC_11003_CARTOON_COLLECT_MARK_FIELD.cpp_type = 3
 SC_11003.name = "sc_11003"
 SC_11003.full_name = "p11.sc_11003"
 SC_11003.nested_types = {}
@@ -773,7 +795,9 @@ SC_11003.fields = {
 	slot2.SC_11003_RMB_FIELD,
 	slot2.SC_11003_APPRECIATION_FIELD,
 	slot2.SC_11003_THEME_UPLOAD_NOT_ALLOWED_TIME_FIELD,
-	slot2.SC_11003_REFUND_SHOP_INFO_LIST_FIELD
+	slot2.SC_11003_REFUND_SHOP_INFO_LIST_FIELD,
+	slot2.SC_11003_CARTOON_READ_MARK_FIELD,
+	slot2.SC_11003_CARTOON_COLLECT_MARK_FIELD
 }
 SC_11003.is_extendable = false
 SC_11003.extensions = {}
@@ -1762,12 +1786,22 @@ slot2.CS_11501_SHOP_ID_FIELD.has_default_value = false
 slot2.CS_11501_SHOP_ID_FIELD.default_value = 0
 slot2.CS_11501_SHOP_ID_FIELD.type = 13
 slot2.CS_11501_SHOP_ID_FIELD.cpp_type = 3
+slot2.CS_11501_DEVICE_FIELD.name = "device"
+slot2.CS_11501_DEVICE_FIELD.full_name = "p11.cs_11501.device"
+slot2.CS_11501_DEVICE_FIELD.number = 2
+slot2.CS_11501_DEVICE_FIELD.index = 1
+slot2.CS_11501_DEVICE_FIELD.label = 2
+slot2.CS_11501_DEVICE_FIELD.has_default_value = false
+slot2.CS_11501_DEVICE_FIELD.default_value = 0
+slot2.CS_11501_DEVICE_FIELD.type = 13
+slot2.CS_11501_DEVICE_FIELD.cpp_type = 3
 CS_11501.name = "cs_11501"
 CS_11501.full_name = "p11.cs_11501"
 CS_11501.nested_types = {}
 CS_11501.enum_types = {}
 CS_11501.fields = {
-	slot2.CS_11501_SHOP_ID_FIELD
+	slot2.CS_11501_SHOP_ID_FIELD,
+	slot2.CS_11501_DEVICE_FIELD
 }
 CS_11501.is_extendable = false
 CS_11501.extensions = {}
@@ -2080,12 +2114,22 @@ slot2.CS_11513_SHOP_ID_FIELD.has_default_value = false
 slot2.CS_11513_SHOP_ID_FIELD.default_value = 0
 slot2.CS_11513_SHOP_ID_FIELD.type = 13
 slot2.CS_11513_SHOP_ID_FIELD.cpp_type = 3
+slot2.CS_11513_DEVICE_FIELD.name = "device"
+slot2.CS_11513_DEVICE_FIELD.full_name = "p11.cs_11513.device"
+slot2.CS_11513_DEVICE_FIELD.number = 2
+slot2.CS_11513_DEVICE_FIELD.index = 1
+slot2.CS_11513_DEVICE_FIELD.label = 2
+slot2.CS_11513_DEVICE_FIELD.has_default_value = false
+slot2.CS_11513_DEVICE_FIELD.default_value = 0
+slot2.CS_11513_DEVICE_FIELD.type = 13
+slot2.CS_11513_DEVICE_FIELD.cpp_type = 3
 CS_11513.name = "cs_11513"
 CS_11513.full_name = "p11.cs_11513"
 CS_11513.nested_types = {}
 CS_11513.enum_types = {}
 CS_11513.fields = {
-	slot2.CS_11513_SHOP_ID_FIELD
+	slot2.CS_11513_SHOP_ID_FIELD,
+	slot2.CS_11513_DEVICE_FIELD
 }
 CS_11513.is_extendable = false
 CS_11513.extensions = {}

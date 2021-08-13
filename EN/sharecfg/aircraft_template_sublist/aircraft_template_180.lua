@@ -1,77 +1,119 @@
 pg = pg or {}
 pg.aircraft_template_180 = {
-	[68806] = {
-		id = 68806,
-		name = "赤城μ技能舰攻Lv6",
-		base = 68801,
-		max_hp = 73,
-		hp_growth = 2796,
+	[67932] = {
+		id = 67932,
+		name = "独立技能鱼雷机Lv2",
+		base = 67931,
+		max_hp = 47,
+		hp_growth = 1826,
 		weapon_ID = {
-			68816
+			67952
 		}
 	},
-	[68807] = {
-		id = 68807,
-		name = "赤城μ技能舰攻Lv7",
-		base = 68801,
-		max_hp = 79,
-		hp_growth = 3016,
+	[67933] = {
+		id = 67933,
+		name = "独立技能鱼雷机Lv3",
+		base = 67931,
+		max_hp = 53,
+		hp_growth = 2036,
 		weapon_ID = {
-			68817
+			67953
 		}
 	},
-	[68808] = {
-		id = 68808,
-		name = "赤城μ技能舰攻Lv8",
-		base = 68801,
+	[67934] = {
+		id = 67934,
+		name = "独立技能鱼雷机Lv4",
+		base = 67931,
+		max_hp = 58,
+		hp_growth = 2247,
+		weapon_ID = {
+			67954
+		}
+	},
+	[67935] = {
+		id = 67935,
+		name = "独立技能鱼雷机Lv5",
+		base = 67931,
+		max_hp = 64,
+		hp_growth = 2458,
+		weapon_ID = {
+			67955
+		}
+	},
+	[67936] = {
+		id = 67936,
+		name = "独立技能鱼雷机Lv6",
+		base = 67931,
+		max_hp = 69,
+		hp_growth = 2669,
+		weapon_ID = {
+			67956
+		}
+	},
+	[67937] = {
+		id = 67937,
+		name = "独立技能鱼雷机Lv7",
+		base = 67931,
+		max_hp = 75,
+		hp_growth = 2879,
+		weapon_ID = {
+			67957
+		}
+	},
+	[67938] = {
+		id = 67938,
+		name = "独立技能鱼雷机Lv8",
+		base = 67931,
+		max_hp = 80,
+		hp_growth = 3090,
+		weapon_ID = {
+			67958
+		}
+	},
+	[67939] = {
+		id = 67939,
+		name = "独立技能鱼雷机Lv9",
+		base = 67931,
 		max_hp = 86,
-		hp_growth = 3237,
+		hp_growth = 3301,
 		weapon_ID = {
-			68818
+			67959
 		}
 	},
-	[68809] = {
-		id = 68809,
-		name = "赤城μ技能舰攻Lv9",
-		base = 68801,
-		max_hp = 92,
-		hp_growth = 3458,
+	[67940] = {
+		id = 67940,
+		name = "独立技能鱼雷机Lv10",
+		base = 67931,
+		max_hp = 91,
+		hp_growth = 3511,
 		weapon_ID = {
-			68819
+			67960
 		}
 	},
-	[68810] = {
-		id = 68810,
-		name = "赤城μ技能舰攻Lv10",
-		base = 68801,
-		max_hp = 98,
-		hp_growth = 3678,
-		weapon_ID = {
-			68820
-		}
-	},
-	[68861] = {
+	[67981] = {
 		attack_power = 2,
-		name = "大神澪技能鱼雷机Lv1",
-		type = 3,
+		name = "香格里拉技能飞机-PVE",
+		type = 1,
 		accuracy = 23,
-		model_ID = "feiji_vtuber2",
+		model_ID = "F6F",
 		ACC_growth = 0,
-		crash_DMG = 208,
+		crash_DMG = 406,
 		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 68861,
-		icon = "feiji_vtuber2",
+		nationality = 1,
+		id = 67981,
+		icon = "F6F",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1692,
+		hp_growth = 2282,
 		speed = 48,
-		max_hp = 42,
+		max_hp = 69,
 		scale = 1,
-		weapon_ID = {
-			68871
+		funnel_behavior = {
+			offsetZ = -26,
+			hover_range = 18,
+			offsetX = 22
 		},
+		weapon_ID = {},
 		position_offset = {
 			0,
 			5,
@@ -113,7 +155,7 @@ pg.aircraft_template_180 = {
 				0
 			},
 			{
-				0.54,
+				0.52,
 				0,
 				0
 			},
@@ -122,46 +164,6 @@ pg.aircraft_template_180 = {
 				0,
 				0
 			}
-		}
-	},
-	[68862] = {
-		id = 68862,
-		name = "大神澪技能鱼雷机Lv2",
-		base = 68861,
-		max_hp = 48,
-		hp_growth = 1913,
-		weapon_ID = {
-			68872
-		}
-	},
-	[68863] = {
-		id = 68863,
-		name = "大神澪技能鱼雷机Lv3",
-		base = 68861,
-		max_hp = 54,
-		hp_growth = 2133,
-		weapon_ID = {
-			68873
-		}
-	},
-	[68864] = {
-		id = 68864,
-		name = "大神澪技能鱼雷机Lv4",
-		base = 68861,
-		max_hp = 61,
-		hp_growth = 2354,
-		weapon_ID = {
-			68874
-		}
-	},
-	[68865] = {
-		id = 68865,
-		name = "大神澪技能鱼雷机Lv5",
-		base = 68861,
-		max_hp = 67,
-		hp_growth = 2575,
-		weapon_ID = {
-			68875
 		}
 	}
 }

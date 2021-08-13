@@ -1,82 +1,32 @@
 pg = pg or {}
 pg.aircraft_template_187 = {
-	[69456] = {
-		id = 69456,
-		name = "贝亚恩V-156F-LV6",
-		base = 69451,
-		max_hp = 84,
-		hp_growth = 3218,
-		weapon_ID = {
-			50706,
-			69466
-		}
+	[68400] = {
+		max_hp = 98,
+		name = "科隆改直升机Lv10",
+		base = 68391,
+		id = 68400,
+		hp_growth = 3678
 	},
-	[69457] = {
-		id = 69457,
-		name = "贝亚恩V-156F-LV7",
-		base = 69451,
-		max_hp = 90,
-		hp_growth = 3472,
-		weapon_ID = {
-			50707,
-			69467
-		}
-	},
-	[69458] = {
-		id = 69458,
-		name = "贝亚恩V-156F-LV8",
-		base = 69451,
-		max_hp = 97,
-		hp_growth = 3726,
-		weapon_ID = {
-			50708,
-			69468
-		}
-	},
-	[69459] = {
-		id = 69459,
-		name = "贝亚恩V-156F-LV9",
-		base = 69451,
-		max_hp = 103,
-		hp_growth = 3980,
-		weapon_ID = {
-			50709,
-			69469
-		}
-	},
-	[69460] = {
-		id = 69460,
-		name = "贝亚恩V-156F-LV10",
-		base = 69451,
-		max_hp = 110,
-		hp_growth = 4234,
-		weapon_ID = {
-			50710,
-			69470
-		}
-	},
-	[69481] = {
+	[68541] = {
 		attack_power = 2,
-		name = "小光辉技能鱼雷机Lv1",
-		type = 2,
+		name = "伊25技能零侦LV1",
+		type = 3,
 		accuracy = 23,
-		model_ID = "jianyu",
+		model_ID = "glen",
 		ACC_growth = 0,
-		crash_DMG = 306,
-		dodge = 1.11,
+		crash_DMG = 208,
+		dodge = 1,
 		funnel_behavior = "",
-		nationality = 2,
-		id = 69481,
-		icon = "jianyu",
+		nationality = 3,
+		id = 68541,
+		icon = "glen",
 		AP_growth = 2000,
-		dodge_limit = 4,
-		hp_growth = 1538,
-		speed = 45,
-		max_hp = 40,
+		dodge_limit = 0,
+		hp_growth = 1615,
+		speed = 66,
+		max_hp = 42,
 		scale = 1,
-		weapon_ID = {
-			69491
-		},
+		weapon_ID = {},
 		position_offset = {
 			0,
 			5,
@@ -95,13 +45,13 @@ pg.aircraft_template_187 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -118,7 +68,7 @@ pg.aircraft_template_187 = {
 				0
 			},
 			{
-				0.52,
+				0.64,
 				0,
 				0
 			},
@@ -129,44 +79,68 @@ pg.aircraft_template_187 = {
 			}
 		}
 	},
-	[69482] = {
-		id = 69482,
-		name = "小光辉技能鱼雷机Lv2",
-		base = 69481,
-		max_hp = 45,
-		hp_growth = 1739,
-		weapon_ID = {
-			69492
-		}
+	[68542] = {
+		id = 68542,
+		name = "伊25技能零侦LV2",
+		base = 68541,
+		max_hp = 48,
+		hp_growth = 1826,
+		weapon_ID = {}
 	},
-	[69483] = {
-		id = 69483,
-		name = "小光辉技能鱼雷机Lv3",
-		base = 69481,
-		max_hp = 50,
-		hp_growth = 1940,
-		weapon_ID = {
-			69493
-		}
+	[68543] = {
+		id = 68543,
+		name = "伊25技能零侦LV3",
+		base = 68541,
+		max_hp = 54,
+		hp_growth = 2036,
+		weapon_ID = {}
 	},
-	[69484] = {
-		id = 69484,
-		name = "小光辉技能鱼雷机Lv4",
-		base = 69481,
-		max_hp = 56,
-		hp_growth = 2140,
-		weapon_ID = {
-			69494
-		}
-	},
-	[69485] = {
-		id = 69485,
-		name = "小光辉技能鱼雷机Lv5",
-		base = 69481,
+	[68544] = {
+		id = 68544,
+		name = "伊25技能零侦LV4",
+		base = 68541,
 		max_hp = 61,
-		hp_growth = 2341,
-		weapon_ID = {
-			69495
-		}
+		hp_growth = 2247,
+		weapon_ID = {}
+	},
+	[68545] = {
+		id = 68545,
+		name = "伊25技能零侦LV5",
+		base = 68541,
+		max_hp = 67,
+		hp_growth = 2458,
+		weapon_ID = {}
+	},
+	[68546] = {
+		id = 68546,
+		name = "伊25技能零侦LV6",
+		base = 68541,
+		max_hp = 73,
+		hp_growth = 2669,
+		weapon_ID = {}
+	},
+	[68547] = {
+		id = 68547,
+		name = "伊25技能零侦LV7",
+		base = 68541,
+		max_hp = 79,
+		hp_growth = 2879,
+		weapon_ID = {}
+	},
+	[68548] = {
+		id = 68548,
+		name = "伊25技能零侦LV8",
+		base = 68541,
+		max_hp = 86,
+		hp_growth = 3090,
+		weapon_ID = {}
+	},
+	[68549] = {
+		id = 68549,
+		name = "伊25技能零侦LV9",
+		base = 68541,
+		max_hp = 92,
+		hp_growth = 3301,
+		weapon_ID = {}
 	}
 }

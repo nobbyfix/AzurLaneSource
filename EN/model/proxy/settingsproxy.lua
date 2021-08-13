@@ -63,6 +63,8 @@ function slot0.Reset(slot0)
 	slot0:resetActivityLayerIndex()
 
 	slot0.isStopBuildSpeedupReamind = false
+
+	slot0:RestoreFrameRate()
 end
 
 function slot0.GetDockYardLockBtnFlag(slot0)
@@ -455,10 +457,6 @@ function slot0.RestoreFrameRate(slot0)
 		Application.targetFrameRate = slot0.originalFrameRate
 		slot0.originalFrameRate = nil
 	end
-end
-
-function slot0.onRemove(slot0)
-	slot0:RestoreFrameRate()
 end
 
 return slot0

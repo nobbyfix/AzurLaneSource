@@ -1,27 +1,46 @@
 pg = pg or {}
 pg.aircraft_template_230 = {
-	[83100] = {
+	[82072] = {
+		id = 82072,
+		max_hp = 119,
+		hp_growth = 4584,
+		base = 82060,
+		weapon_ID = {
+			50172,
+			50572
+		}
+	},
+	[82073] = {
+		id = 82073,
+		max_hp = 126,
+		hp_growth = 4829,
+		base = 82060,
+		weapon_ID = {
+			50173,
+			50573
+		}
+	},
+	[82100] = {
 		attack_power = 2,
-		name = "零战二一型",
+		name = "海毒牙",
 		type = 1,
 		accuracy = 23,
-		model_ID = "lingzhan21",
+		model_ID = "haiduya",
 		ACC_growth = 0,
-		crash_DMG = 52,
-		dodge = 0.339,
+		crash_DMG = 63,
+		dodge = 0.357,
 		funnel_behavior = "",
-		nationality = 3,
-		id = 83100,
-		icon = "lingzhan21",
+		nationality = 2,
+		id = 82100,
+		icon = "haiduya",
 		AP_growth = 2000,
-		dodge_limit = 8,
-		hp_growth = 1149,
-		speed = 52,
-		max_hp = 30,
+		dodge_limit = 9,
+		hp_growth = 1344,
+		speed = 53,
+		max_hp = 35,
 		scale = 1,
 		weapon_ID = {
-			50000,
-			50500
+			50600
 		},
 		position_offset = {
 			0,
@@ -41,13 +60,13 @@ pg.aircraft_template_230 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					0.69,
+					-2.62,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					0.85,
+					0.17,
 					0
 				}
 			}
@@ -64,8 +83,8 @@ pg.aircraft_template_230 = {
 				0
 			},
 			{
-				0.27,
-				0,
+				0.86,
+				-0.12,
 				0
 			},
 			{
@@ -75,159 +94,132 @@ pg.aircraft_template_230 = {
 			}
 		}
 	},
-	[83101] = {
-		id = 83101,
-		max_hp = 34,
-		hp_growth = 1321,
-		base = 83100,
+	[82101] = {
+		id = 82101,
+		max_hp = 40,
+		hp_growth = 1546,
+		base = 82100,
 		weapon_ID = {
-			50001,
-			50501
+			50601
 		}
 	},
-	[83102] = {
-		id = 83102,
-		max_hp = 39,
-		hp_growth = 1494,
-		base = 83100,
+	[82102] = {
+		id = 82102,
+		max_hp = 45,
+		hp_growth = 1747,
+		base = 82100,
 		weapon_ID = {
-			50002,
-			50502
+			50602
 		}
 	},
-	[83103] = {
-		id = 83103,
-		max_hp = 43,
-		hp_growth = 1666,
-		base = 83100,
+	[82103] = {
+		id = 82103,
+		max_hp = 51,
+		hp_growth = 1949,
+		base = 82100,
 		weapon_ID = {
-			50003,
-			50503
+			50603
 		}
 	},
-	[83120] = {
+	[82104] = {
+		id = 82104,
+		max_hp = 56,
+		hp_growth = 2150,
+		base = 82100,
+		weapon_ID = {
+			50604
+		}
+	},
+	[82105] = {
+		id = 82105,
+		max_hp = 61,
+		hp_growth = 2352,
+		base = 82100,
+		weapon_ID = {
+			50605
+		}
+	},
+	[82106] = {
+		id = 82106,
+		max_hp = 66,
+		hp_growth = 2554,
+		base = 82100,
+		weapon_ID = {
+			50606
+		}
+	},
+	[82120] = {
 		attack_power = 2,
-		name = "零战二一型",
+		name = "海毒牙",
 		type = 1,
 		accuracy = 23,
-		model_ID = "lingzhan21",
+		model_ID = "haiduya",
 		ACC_growth = 0,
-		crash_DMG = 52,
-		dodge = 0.327,
+		crash_DMG = 63,
+		dodge = 0.345,
 		funnel_behavior = "",
-		nationality = 3,
-		id = 83120,
-		icon = "lingzhan21",
+		nationality = 2,
+		id = 82120,
+		icon = "haiduya",
 		AP_growth = 2000,
-		dodge_limit = 8.5,
-		hp_growth = 1277,
-		speed = 52,
-		max_hp = 33,
-		scale = 1,
-		weapon_ID = {
-			50020,
-			50520
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.68,
-					-0.667,
-					0
-				},
-				{
-					0.97,
-					0.584,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.27,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[83121] = {
-		id = 83121,
+		dodge_limit = 9.5,
+		hp_growth = 1478,
+		speed = 53,
 		max_hp = 38,
-		hp_growth = 1468,
-		base = 83120,
+		scale = 1,
 		weapon_ID = {
-			50021,
-			50521
-		}
-	},
-	[83122] = {
-		id = 83122,
-		max_hp = 43,
-		hp_growth = 1660,
-		base = 83120,
-		weapon_ID = {
-			50022,
-			50522
-		}
-	},
-	[83123] = {
-		id = 83123,
-		max_hp = 48,
-		hp_growth = 1851,
-		base = 83120,
-		weapon_ID = {
-			50023,
-			50523
-		}
-	},
-	[83124] = {
-		id = 83124,
-		max_hp = 53,
-		hp_growth = 2043,
-		base = 83120,
-		weapon_ID = {
-			50024,
-			50524
-		}
-	},
-	[83125] = {
-		id = 83125,
-		max_hp = 58,
-		hp_growth = 2234,
-		base = 83120,
-		weapon_ID = {
-			50025,
-			50525
+			50620
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.69,
+					-2.62,
+					0
+				},
+				{
+					0.85,
+					0.17,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.86,
+				-0.12,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
 		}
 	}
 }

@@ -1,182 +1,117 @@
 pg = pg or {}
 pg.aircraft_template_133 = {
-	[61012] = {
-		id = 61012,
-		name = "皇家方舟技能LV3",
-		base = 61010,
-		max_hp = 95,
-		hp_growth = 3648,
+	[48023] = {
+		id = 48023,
+		max_hp = 50,
+		hp_growth = 1940,
+		base = 48020,
 		weapon_ID = {
-			61015
+			59763,
+			59683
 		}
 	},
-	[61016] = {
-		attack_power = 2,
-		name = "大凤技能彩云",
-		type = 3,
-		accuracy = 23,
-		model_ID = "caiyun",
-		ACC_growth = 0,
-		crash_DMG = 208,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 61016,
-		icon = "caiyun",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 1605,
-		speed = 66,
-		max_hp = 42,
-		scale = 1,
-		weapon_ID = {},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.64,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[61017] = {
-		attack_power = 2,
-		name = "多多丸技能鱼雷机",
-		type = 3,
-		accuracy = 23,
-		model_ID = "97jiangong",
-		ACC_growth = 0,
-		crash_DMG = 180,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 61017,
-		icon = "97jiangong",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3678,
-		speed = 45,
-		max_hp = 96,
-		scale = 1,
+	[48024] = {
+		id = 48024,
+		max_hp = 56,
+		hp_growth = 2140,
+		base = 48020,
 		weapon_ID = {
-			61018
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
+			59764,
+			59684
 		}
 	},
-	[61019] = {
+	[48025] = {
+		id = 48025,
+		max_hp = 61,
+		hp_growth = 2341,
+		base = 48020,
+		weapon_ID = {
+			59765,
+			59685
+		}
+	},
+	[48026] = {
+		id = 48026,
+		max_hp = 66,
+		hp_growth = 2541,
+		base = 48020,
+		weapon_ID = {
+			59766,
+			59686
+		}
+	},
+	[48027] = {
+		id = 48027,
+		max_hp = 71,
+		hp_growth = 2742,
+		base = 48020,
+		weapon_ID = {
+			59767,
+			59687
+		}
+	},
+	[48028] = {
+		id = 48028,
+		max_hp = 77,
+		hp_growth = 2943,
+		base = 48020,
+		weapon_ID = {
+			59768,
+			59688
+		}
+	},
+	[48029] = {
+		id = 48029,
+		max_hp = 82,
+		hp_growth = 3143,
+		base = 48020,
+		weapon_ID = {
+			59769,
+			59689
+		}
+	},
+	[48030] = {
+		id = 48030,
+		max_hp = 87,
+		hp_growth = 3344,
+		base = 48020,
+		weapon_ID = {
+			59770,
+			59690
+		}
+	},
+	[48031] = {
+		id = 48031,
+		max_hp = 92,
+		hp_growth = 3545,
+		base = 48020,
+		weapon_ID = {
+			59771,
+			59691
+		}
+	},
+	[48040] = {
 		attack_power = 2,
-		name = "黑企业剧情轰炸机",
-		type = 3,
+		name = "Ju-87 D-4",
+		type = 2,
 		accuracy = 23,
-		model_ID = "shenhaifeiji",
+		model_ID = "Ju87D4",
 		ACC_growth = 0,
-		crash_DMG = 208,
-		dodge = 1,
+		crash_DMG = 168,
+		dodge = 1.05,
 		funnel_behavior = "",
-		nationality = 3,
-		id = 61019,
-		icon = "shenhaifeiji",
+		nationality = 4,
+		id = 48040,
+		icon = "Ju87D4",
 		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 5000,
-		speed = 66,
-		max_hp = 120,
+		dodge_limit = 5,
+		hp_growth = 1459,
+		speed = 51,
+		max_hp = 38,
 		scale = 1,
 		weapon_ID = {
-			61021
+			59340,
+			59700
 		},
 		position_offset = {
 			0,
@@ -196,449 +131,13 @@ pg.aircraft_template_133 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.71,
-					-1.73,
+					0.69,
+					-1.22,
 					0
 				},
 				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.64,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[61020] = {
-		attack_power = 2,
-		name = "黑企业剧情轰炸机",
-		type = 3,
-		accuracy = 23,
-		model_ID = "shenhaifeiji",
-		ACC_growth = 0,
-		crash_DMG = 208,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 61020,
-		icon = "shenhaifeiji",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 5000,
-		speed = 66,
-		max_hp = 120,
-		scale = 1,
-		weapon_ID = {},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.64,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[61022] = {
-		attack_power = 2,
-		name = "香格里拉技能飞机",
-		type = 3,
-		accuracy = 23,
-		model_ID = "F6F",
-		ACC_growth = 0,
-		crash_DMG = 406,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 1,
-		id = 61022,
-		icon = "F6F",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2282,
-		speed = 40,
-		max_hp = 69,
-		scale = 1,
-		weapon_ID = {},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.68,
-					-0.667,
-					0
-				},
-				{
-					0.97,
-					0.584,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.52,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[61023] = {
-		attack_power = 2,
-		name = "伊13技能彩云",
-		type = 3,
-		accuracy = 23,
-		model_ID = "caiyun",
-		ACC_growth = 0,
-		crash_DMG = 208,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 61023,
-		icon = "caiyun",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 1605,
-		speed = 66,
-		max_hp = 42,
-		scale = 1,
-		weapon_ID = {},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.64,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[61024] = {
-		attack_power = 2,
-		name = "信浓技能彩云",
-		type = 3,
-		accuracy = 23,
-		model_ID = "caiyun",
-		ACC_growth = 0,
-		crash_DMG = 208,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 61024,
-		icon = "caiyun",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 1594,
-		speed = 66,
-		max_hp = 42,
-		scale = 1,
-		weapon_ID = {},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.64,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[61026] = {
-		attack_power = 2,
-		name = "次郎丸大世界内技能鱼雷机",
-		type = 3,
-		accuracy = 23,
-		model_ID = "97jiangong",
-		ACC_growth = 0,
-		crash_DMG = 180,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 61026,
-		icon = "97jiangong",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3678,
-		speed = 45,
-		max_hp = 96,
-		scale = 1,
-		weapon_ID = {
-			61027
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[64121] = {
-		attack_power = 2,
-		name = "提康德罗加战斗机LV1",
-		type = 1,
-		accuracy = 23,
-		model_ID = "f6f",
-		ACC_growth = 0,
-		crash_DMG = 156,
-		dodge = 0.315,
-		funnel_behavior = "",
-		nationality = 1,
-		id = 64121,
-		icon = "f6f",
-		AP_growth = 2000,
-		dodge_limit = 11,
-		hp_growth = 1947,
-		speed = 50,
-		max_hp = 51,
-		scale = 1,
-		weapon_ID = {
-			64131
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.28,
-					1.62,
-					0
-				},
-				{
-					-1.12,
-					-1,
+					0.75,
+					1.26,
 					0
 				}
 			}

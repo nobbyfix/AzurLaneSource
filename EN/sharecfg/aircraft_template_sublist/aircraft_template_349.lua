@@ -1,323 +1,175 @@
 pg = pg or {}
 pg.aircraft_template_349 = {
-	[670012] = {
+	[607028] = {
 		attack_power = 2,
-		name = "【2020埃塞克斯世界BOSS E难度】 鱼雷机*5",
+		name = "世界boss专用鱼雷机T1",
 		type = 2,
 		accuracy = 23,
-		model_ID = "tbf",
+		model_ID = "F6F",
 		ACC_growth = 0,
 		crash_DMG = 57,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 1,
-		id = 670012,
-		icon = "tbf",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2240,
-		speed = 30,
-		max_hp = 81,
-		scale = 0.75,
-		weapon_ID = {
-			670014
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					1.24,
-					-1.34,
-					0
-				},
-				{
-					1.43,
-					1.6,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[670013] = {
-		attack_power = 2,
-		name = "【2020埃塞克斯世界BOSS E难度】 轰炸机*5",
-		type = 3,
-		accuracy = 23,
-		model_ID = "BTD",
-		ACC_growth = 0,
-		crash_DMG = 69,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 1,
-		id = 670013,
-		icon = "BTD",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2380,
-		speed = 30,
-		max_hp = 96,
-		scale = 0.75,
-		weapon_ID = {
-			670015
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.28,
-					1.62,
-					0
-				},
-				{
-					-1.12,
-					-1,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.72,
-				-0.15,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[670112] = {
-		attack_power = 2,
-		name = "【2020埃塞克斯世界BOSS N难度】 鱼雷机*7",
-		type = 2,
-		accuracy = 23,
-		model_ID = "tbf",
-		ACC_growth = 0,
-		crash_DMG = 69,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 1,
-		id = 670112,
-		icon = "tbf",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2380,
-		speed = 30,
-		max_hp = 96,
-		scale = 0.75,
-		weapon_ID = {
-			670115
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					1.24,
-					-1.34,
-					0
-				},
-				{
-					1.43,
-					1.6,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[670113] = {
-		attack_power = 2,
-		name = "【2020埃塞克斯世界BOSS N难度】 轰炸机*7",
-		type = 3,
-		accuracy = 23,
-		model_ID = "BTD",
-		ACC_growth = 0,
-		crash_DMG = 85,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 1,
-		id = 670113,
-		icon = "BTD",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2660,
-		speed = 30,
-		max_hp = 110,
-		scale = 0.75,
-		weapon_ID = {
-			670116
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.28,
-					1.62,
-					0
-				},
-				{
-					-1.12,
-					-1,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.72,
-				-0.15,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[670114] = {
-		attack_power = 2,
-		name = "【2020埃塞克斯世界BOSS N难度】 战斗机*5",
-		type = 1,
-		accuracy = 23,
-		model_ID = "F6F",
-		ACC_growth = 0,
-		crash_DMG = 48,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 1,
-		id = 670114,
+		id = 607028,
 		icon = "F6F",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1960,
-		speed = 33,
-		max_hp = 86,
+		hp_growth = 3136,
+		speed = 30,
+		max_hp = 42,
 		scale = 0.75,
 		weapon_ID = {
-			670117,
-			670118
+			607032
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					1.24,
+					-1.34,
+					0
+				},
+				{
+					1.43,
+					1.6,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[607029] = {
+		attack_power = 2,
+		name = "世界boss专用轰炸机T1",
+		type = 3,
+		accuracy = 23,
+		model_ID = "tbd",
+		ACC_growth = 0,
+		crash_DMG = 78,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 1,
+		id = 607029,
+		icon = "tbd",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 3632,
+		speed = 30,
+		max_hp = 50,
+		scale = 0.75,
+		weapon_ID = {
+			607033
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					-1.28,
+					1.62,
+					0
+				},
+				{
+					-1.12,
+					-1,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.72,
+				-0.15,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[607047] = {
+		attack_power = 2,
+		name = "世界boss专用战斗机T1",
+		type = 1,
+		accuracy = 23,
+		model_ID = "F4F",
+		ACC_growth = 0,
+		crash_DMG = 39,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 1,
+		id = 607047,
+		icon = "F4F",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 2686,
+		speed = 33,
+		max_hp = 39,
+		scale = 0.75,
+		weapon_ID = {
+			607050,
+			607051
 		},
 		position_offset = {
 			0,
@@ -371,27 +223,27 @@ pg.aircraft_template_349 = {
 			}
 		}
 	},
-	[670212] = {
+	[607048] = {
 		attack_power = 2,
-		name = "【2020埃塞克斯世界BOSS H难度】 鱼雷机*10",
+		name = "世界boss专用鱼雷机T1",
 		type = 2,
 		accuracy = 23,
-		model_ID = "tbf",
+		model_ID = "F6F",
 		ACC_growth = 0,
-		crash_DMG = 86,
+		crash_DMG = 57,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 1,
-		id = 670212,
-		icon = "tbf",
+		id = 607048,
+		icon = "F6F",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 2950,
+		hp_growth = 3136,
 		speed = 30,
-		max_hp = 160,
+		max_hp = 42,
 		scale = 0.75,
 		weapon_ID = {
-			670215
+			607052
 		},
 		position_offset = {
 			0,
@@ -445,27 +297,27 @@ pg.aircraft_template_349 = {
 			}
 		}
 	},
-	[670213] = {
+	[607049] = {
 		attack_power = 2,
-		name = "【2020埃塞克斯世界BOSS H难度】 轰炸机*10",
+		name = "世界boss专用轰炸机T1",
 		type = 3,
 		accuracy = 23,
-		model_ID = "BTD",
+		model_ID = "tbd",
 		ACC_growth = 0,
-		crash_DMG = 119,
+		crash_DMG = 78,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 1,
-		id = 670213,
-		icon = "BTD",
+		id = 607049,
+		icon = "tbd",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3360,
+		hp_growth = 3632,
 		speed = 30,
-		max_hp = 205,
+		max_hp = 50,
 		scale = 0.75,
 		weapon_ID = {
-			670216
+			607053
 		},
 		position_offset = {
 			0,
@@ -519,28 +371,28 @@ pg.aircraft_template_349 = {
 			}
 		}
 	},
-	[670214] = {
+	[607067] = {
 		attack_power = 2,
-		name = "【2020埃塞克斯世界BOSS H难度】 战斗机*7",
+		name = "世界boss专用战斗机T1",
 		type = 1,
 		accuracy = 23,
-		model_ID = "F6F",
+		model_ID = "F4F",
 		ACC_growth = 0,
-		crash_DMG = 68,
+		crash_DMG = 39,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 1,
-		id = 670214,
-		icon = "F6F",
+		id = 607067,
+		icon = "F4F",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 2550,
+		hp_growth = 2686,
 		speed = 33,
-		max_hp = 145,
+		max_hp = 39,
 		scale = 0.75,
 		weapon_ID = {
-			670217,
-			670218
+			607070,
+			607071
 		},
 		position_offset = {
 			0,
@@ -594,27 +446,27 @@ pg.aircraft_template_349 = {
 			}
 		}
 	},
-	[670312] = {
+	[607068] = {
 		attack_power = 2,
-		name = "【2020埃塞克斯世界BOSS EX难度】 鱼雷机*10",
+		name = "世界boss专用鱼雷机T1",
 		type = 2,
 		accuracy = 23,
-		model_ID = "tbf",
+		model_ID = "F6F",
 		ACC_growth = 0,
-		crash_DMG = 256,
+		crash_DMG = 57,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 1,
-		id = 670312,
-		icon = "tbf",
+		id = 607068,
+		icon = "F6F",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3600,
+		hp_growth = 3136,
 		speed = 30,
-		max_hp = 336,
+		max_hp = 42,
 		scale = 0.75,
 		weapon_ID = {
-			670315
+			607072
 		},
 		position_offset = {
 			0,
@@ -668,27 +520,27 @@ pg.aircraft_template_349 = {
 			}
 		}
 	},
-	[670313] = {
+	[607069] = {
 		attack_power = 2,
-		name = "【2020埃塞克斯世界BOSS EX难度】 轰炸机*7",
+		name = "世界boss专用轰炸机T1",
 		type = 3,
 		accuracy = 23,
-		model_ID = "BTD",
+		model_ID = "tbd",
 		ACC_growth = 0,
-		crash_DMG = 296,
+		crash_DMG = 78,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 1,
-		id = 670313,
-		icon = "BTD",
+		id = 607069,
+		icon = "tbd",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3900,
+		hp_growth = 3632,
 		speed = 30,
-		max_hp = 365,
+		max_hp = 50,
 		scale = 0.75,
 		weapon_ID = {
-			670316
+			607073
 		},
 		position_offset = {
 			0,
@@ -733,6 +585,155 @@ pg.aircraft_template_349 = {
 			{
 				0.72,
 				-0.15,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[607087] = {
+		attack_power = 2,
+		name = "世界boss专用战斗机T1",
+		type = 1,
+		accuracy = 23,
+		model_ID = "F4F",
+		ACC_growth = 0,
+		crash_DMG = 39,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 1,
+		id = 607087,
+		icon = "F4F",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 2686,
+		speed = 33,
+		max_hp = 39,
+		scale = 0.75,
+		weapon_ID = {
+			607090,
+			607091
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.68,
+					-0.667,
+					0
+				},
+				{
+					0.97,
+					0.584,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0.32,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[607088] = {
+		attack_power = 2,
+		name = "世界boss专用鱼雷机T1",
+		type = 2,
+		accuracy = 23,
+		model_ID = "F6F",
+		ACC_growth = 0,
+		crash_DMG = 57,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 1,
+		id = 607088,
+		icon = "F6F",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 3136,
+		speed = 30,
+		max_hp = 42,
+		scale = 0.75,
+		weapon_ID = {
+			607092
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					1.24,
+					-1.34,
+					0
+				},
+				{
+					1.43,
+					1.6,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
 				0
 			},
 			{

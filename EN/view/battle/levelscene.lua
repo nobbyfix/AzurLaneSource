@@ -995,6 +995,10 @@ function slot0.updateChapterVO(slot0, slot1, slot2)
 			slot0.grid:UpdateItemCells()
 		end
 
+		if slot2 < 0 or bit.band(slot2, ChapterConst.DirtyStrategyComboPanel) > 0 then
+			slot0.levelStageView:UpdateDOALinkFeverPanel()
+		end
+
 		if slot6 then
 			slot0.levelStageView:updateFleetBuff()
 		end
@@ -1721,7 +1725,7 @@ end
 
 function slot0.updateFleetSelect(slot0)
 	if slot0.levelFleetView:isShowing() then
-		slot0.levelFleetView:ActionInvoke("set", slot0.levelFleetView.chapter, slot0.fleets, slot0.levelFleetView.selects)
+		slot0.levelFleetView:ActionInvoke("set", slot0.levelFleetView.chapter, slot0.fleets, slot0.levelFleetView:getSelectIds())
 
 		if slot0.levelCMDFormationView:isShowing() and slot0.fleets[slot0.levelCMDFormationView.fleet.id] then
 			slot0.levelCMDFormationView:ActionInvoke("updateFleet", slot2)
@@ -2000,11 +2004,11 @@ function slot0.switchToChapter(slot0, slot1, slot2)
 			function (slot0)
 				slot1 = getProxy(ChapterProxy)
 
-				uv1.levelStageView:UpdateComboPanel(slot1:GetComboHistory(uv0.id))
-				slot1:RecordComboHistory(uv0.id, nil)
-				uv1.levelStageView:UpdateDOALinkFeverPanel(slot1:GetLastDefeatedEnemy(uv0.id))
-				slot1:RecordLastDefeatedEnemy(uv0.id, nil)
-				uv1.levelStageView:tryAutoAction(slot0)
+				uv0.levelStageView:UpdateComboPanel()
+				slot1:RecordComboHistory(uv1.id, nil)
+				uv0.levelStageView:UpdateDOALinkFeverPanel()
+				slot1:RecordLastDefeatedEnemy(uv1.id, nil)
+				uv0.levelStageView:tryAutoAction(slot0)
 			end,
 			function (slot0)
 				if uv0.exited then
@@ -2803,6 +2807,7 @@ function slot0.doPlayStrikeAnim(slot0, slot1, slot2, slot3)
 		slot1:SetAsLastSibling()
 
 		slot5 = slot1:GetComponent("DftAniEvent")
+		slot6 = uv3:GetComponent("SpineAnimUI")
 
 		slot5:SetStartEvent(function (slot0)
 			uv0:SetAction("attack", 0)
@@ -2828,8 +2833,9 @@ function slot0.doPlayStrikeAnim(slot0, slot1, slot2, slot3)
 		onButton(uv0, slot1, uv4, SFX_CANCEL)
 		coroutine.yield()
 		retPaintingPrefab(slot3, uv5:getPainting())
+		slot6:SetActionCallBack(nil)
 
-		uv3:GetComponent("SpineAnimUI"):GetComponent("SkeletonGraphic").freeze = false
+		slot6:GetComponent("SkeletonGraphic").freeze = false
 
 		PoolMgr.GetInstance():ReturnSpineChar(uv5:getPrefab(), uv3)
 		setActive(slot0, false)
@@ -2911,6 +2917,7 @@ function slot0.doPlayEnemyAnim(slot0, slot1, slot2, slot3)
 		slot1:SetAsLastSibling()
 
 		slot4 = slot1:GetComponent("DftAniEvent")
+		slot5 = uv2:GetComponent("SpineAnimUI")
 
 		slot4:SetStartEvent(function (slot0)
 			uv0:SetAction("attack", 0)
@@ -2935,8 +2942,9 @@ function slot0.doPlayEnemyAnim(slot0, slot1, slot2, slot3)
 		end)
 		onButton(uv0, slot1, uv3, SFX_CANCEL)
 		coroutine.yield()
+		slot5:SetActionCallBack(nil)
 
-		uv2:GetComponent("SpineAnimUI"):GetComponent("SkeletonGraphic").freeze = false
+		slot5:GetComponent("SkeletonGraphic").freeze = false
 
 		PoolMgr.GetInstance():ReturnSpineChar(uv4:getPrefab(), uv2)
 		setActive(slot0, false)

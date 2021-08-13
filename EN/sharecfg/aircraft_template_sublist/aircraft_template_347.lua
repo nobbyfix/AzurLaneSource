@@ -1,29 +1,26 @@
 pg = pg or {}
 pg.aircraft_template_347 = {
-	[620309] = {
+	[604053] = {
 		attack_power = 2,
-		name = "【2020美系活动D2】塞壬执棋者III型 浮游炮1",
-		type = 1,
+		name = "【传颂联动SP4BOSS】芙米露露轰炸机",
+		type = 3,
 		accuracy = 23,
-		model_ID = "fuyoupao2",
+		model_ID = "shenhaifeiji",
 		ACC_growth = 0,
-		crash_DMG = 210,
+		crash_DMG = 175,
 		dodge = 1,
+		funnel_behavior = "",
 		nationality = 3,
-		id = 620309,
-		icon = "fuyoupao2",
+		id = 604053,
+		icon = "shenhaifeiji",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3680,
-		speed = 70,
-		max_hp = 750,
+		hp_growth = 3800,
+		speed = 30,
+		max_hp = 205,
 		scale = 0.75,
-		funnel_behavior = {
-			exist = 20,
-			stay = 2
-		},
 		weapon_ID = {
-			620313
+			604055
 		},
 		position_offset = {
 			0,
@@ -43,13 +40,13 @@ pg.aircraft_template_347 = {
 		bound_bone = {
 			weapon = {
 				{
-					2.72,
-					-0.21,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					3.2,
-					-0.14,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -77,30 +74,27 @@ pg.aircraft_template_347 = {
 			}
 		}
 	},
-	[620310] = {
+	[604054] = {
 		attack_power = 2,
-		name = "【2020美系活动D2】塞壬执棋者III型 浮游炮2",
-		type = 1,
+		name = "【传颂联动SP4BOSS】芙米露露鱼雷机",
+		type = 2,
 		accuracy = 23,
-		model_ID = "fuyoupao2",
+		model_ID = "shenhaifeiji",
 		ACC_growth = 0,
-		crash_DMG = 210,
+		crash_DMG = 144,
 		dodge = 1,
+		funnel_behavior = "",
 		nationality = 3,
-		id = 620310,
-		icon = "fuyoupao2",
+		id = 604054,
+		icon = "shenhaifeiji",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3680,
-		speed = 70,
-		max_hp = 750,
+		hp_growth = 3400,
+		speed = 33,
+		max_hp = 164,
 		scale = 0.75,
-		funnel_behavior = {
-			exist = 20,
-			stay = 2
-		},
 		weapon_ID = {
-			620314
+			604056
 		},
 		position_offset = {
 			0,
@@ -120,13 +114,13 @@ pg.aircraft_template_347 = {
 		bound_bone = {
 			weapon = {
 				{
-					2.72,
-					-0.21,
+					0.56,
+					-0.76,
 					0
 				},
 				{
-					3.2,
-					-0.14,
+					0.48,
+					0.99,
 					0
 				}
 			}
@@ -154,30 +148,27 @@ pg.aircraft_template_347 = {
 			}
 		}
 	},
-	[620318] = {
+	[604083] = {
 		attack_power = 2,
-		name = "【2020美系活动D3】塞壬构建者 第一波浮游炮",
-		type = 1,
+		name = "【传颂联动SP4BOSS】乌璐露轰炸机",
+		type = 3,
 		accuracy = 23,
-		model_ID = "fuyoupao2",
+		model_ID = "shenhaifeiji",
 		ACC_growth = 0,
-		crash_DMG = 240,
+		crash_DMG = 175,
 		dodge = 1,
+		funnel_behavior = "",
 		nationality = 3,
-		id = 620318,
-		icon = "fuyoupao2",
+		id = 604083,
+		icon = "shenhaifeiji",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3680,
-		speed = 120,
-		max_hp = 8000,
+		hp_growth = 3800,
+		speed = 30,
+		max_hp = 205,
 		scale = 0.75,
-		funnel_behavior = {
-			AI = 70078
-		},
 		weapon_ID = {
-			620322,
-			620323
+			604085
 		},
 		position_offset = {
 			0,
@@ -197,13 +188,13 @@ pg.aircraft_template_347 = {
 		bound_bone = {
 			weapon = {
 				{
-					2.72,
-					-0.21,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					3.2,
-					-0.14,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -231,30 +222,27 @@ pg.aircraft_template_347 = {
 			}
 		}
 	},
-	[620319] = {
+	[604084] = {
 		attack_power = 2,
-		name = "【2020美系活动D3】塞壬构建者 第一波浮游炮",
-		type = 1,
+		name = "【传颂联动SP4BOSS】乌璐露鱼雷机",
+		type = 2,
 		accuracy = 23,
-		model_ID = "fuyoupao2",
+		model_ID = "shenhaifeiji",
 		ACC_growth = 0,
-		crash_DMG = 240,
+		crash_DMG = 144,
 		dodge = 1,
+		funnel_behavior = "",
 		nationality = 3,
-		id = 620319,
-		icon = "fuyoupao2",
+		id = 604084,
+		icon = "shenhaifeiji",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3680,
-		speed = 120,
-		max_hp = 8000,
+		hp_growth = 3400,
+		speed = 33,
+		max_hp = 164,
 		scale = 0.75,
-		funnel_behavior = {
-			AI = 70079
-		},
 		weapon_ID = {
-			620322,
-			620323
+			604086
 		},
 		position_offset = {
 			0,
@@ -274,13 +262,13 @@ pg.aircraft_template_347 = {
 		bound_bone = {
 			weapon = {
 				{
-					2.72,
-					-0.21,
+					0.56,
+					-0.76,
 					0
 				},
 				{
-					3.2,
-					-0.14,
+					0.48,
+					0.99,
 					0
 				}
 			}
@@ -308,30 +296,27 @@ pg.aircraft_template_347 = {
 			}
 		}
 	},
-	[620320] = {
+	[604093] = {
 		attack_power = 2,
-		name = "【2020美系活动D3】塞壬构建者 第一波浮游炮",
-		type = 1,
+		name = "【传颂联动SP4BOSS】萨拉娜轰炸机",
+		type = 3,
 		accuracy = 23,
-		model_ID = "fuyoupao2",
+		model_ID = "shenhaifeiji",
 		ACC_growth = 0,
-		crash_DMG = 240,
+		crash_DMG = 175,
 		dodge = 1,
+		funnel_behavior = "",
 		nationality = 3,
-		id = 620320,
-		icon = "fuyoupao2",
+		id = 604093,
+		icon = "shenhaifeiji",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3680,
-		speed = 120,
-		max_hp = 8000,
+		hp_growth = 3800,
+		speed = 30,
+		max_hp = 205,
 		scale = 0.75,
-		funnel_behavior = {
-			AI = 70080
-		},
 		weapon_ID = {
-			620322,
-			620323
+			604095
 		},
 		position_offset = {
 			0,
@@ -351,13 +336,13 @@ pg.aircraft_template_347 = {
 		bound_bone = {
 			weapon = {
 				{
-					2.72,
-					-0.21,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					3.2,
-					-0.14,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -385,30 +370,27 @@ pg.aircraft_template_347 = {
 			}
 		}
 	},
-	[620321] = {
+	[604094] = {
 		attack_power = 2,
-		name = "【2020美系活动D3】塞壬构建者 第一波浮游炮",
-		type = 1,
+		name = "【传颂联动SP4BOSS】萨拉娜鱼雷机",
+		type = 2,
 		accuracy = 23,
-		model_ID = "fuyoupao2",
+		model_ID = "shenhaifeiji",
 		ACC_growth = 0,
-		crash_DMG = 240,
+		crash_DMG = 144,
 		dodge = 1,
+		funnel_behavior = "",
 		nationality = 3,
-		id = 620321,
-		icon = "fuyoupao2",
+		id = 604094,
+		icon = "shenhaifeiji",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3680,
-		speed = 120,
-		max_hp = 8000,
+		hp_growth = 3400,
+		speed = 33,
+		max_hp = 164,
 		scale = 0.75,
-		funnel_behavior = {
-			AI = 70081
-		},
 		weapon_ID = {
-			620322,
-			620323
+			604096
 		},
 		position_offset = {
 			0,
@@ -428,13 +410,13 @@ pg.aircraft_template_347 = {
 		bound_bone = {
 			weapon = {
 				{
-					2.72,
-					-0.21,
+					0.56,
+					-0.76,
 					0
 				},
 				{
-					3.2,
-					-0.14,
+					0.48,
+					0.99,
 					0
 				}
 			}
@@ -462,29 +444,27 @@ pg.aircraft_template_347 = {
 			}
 		}
 	},
-	[620325] = {
+	[604115] = {
 		attack_power = 2,
-		name = "【2020美系活动D3】塞壬构建者 第二波浮游炮",
-		type = 1,
+		name = "【传颂联动SPEX】芙米露露轰炸机",
+		type = 3,
 		accuracy = 23,
-		model_ID = "fuyoupao2",
+		model_ID = "shenhaifeiji",
 		ACC_growth = 0,
-		crash_DMG = 340,
+		crash_DMG = 1050,
 		dodge = 1,
+		funnel_behavior = "",
 		nationality = 3,
-		id = 620325,
-		icon = "fuyoupao2",
+		id = 604115,
+		icon = "shenhaifeiji",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3680,
-		speed = 120,
-		max_hp = 8000,
+		hp_growth = 3800,
+		speed = 30,
+		max_hp = 800,
 		scale = 0.75,
-		funnel_behavior = {
-			AI = 70082
-		},
 		weapon_ID = {
-			620329
+			604117
 		},
 		position_offset = {
 			0,
@@ -504,13 +484,13 @@ pg.aircraft_template_347 = {
 		bound_bone = {
 			weapon = {
 				{
-					2.72,
-					-0.21,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					3.2,
-					-0.14,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -538,29 +518,27 @@ pg.aircraft_template_347 = {
 			}
 		}
 	},
-	[620326] = {
+	[604116] = {
 		attack_power = 2,
-		name = "【2020美系活动D3】塞壬构建者 第二波浮游炮",
-		type = 1,
+		name = "【传颂联动SPEX】芙米露露鱼雷机",
+		type = 2,
 		accuracy = 23,
-		model_ID = "fuyoupao2",
+		model_ID = "shenhaifeiji",
 		ACC_growth = 0,
-		crash_DMG = 340,
+		crash_DMG = 1050,
 		dodge = 1,
+		funnel_behavior = "",
 		nationality = 3,
-		id = 620326,
-		icon = "fuyoupao2",
+		id = 604116,
+		icon = "shenhaifeiji",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3680,
-		speed = 120,
-		max_hp = 8000,
+		hp_growth = 3400,
+		speed = 33,
+		max_hp = 800,
 		scale = 0.75,
-		funnel_behavior = {
-			AI = 70083
-		},
 		weapon_ID = {
-			620329
+			604118
 		},
 		position_offset = {
 			0,
@@ -580,13 +558,13 @@ pg.aircraft_template_347 = {
 		bound_bone = {
 			weapon = {
 				{
-					2.72,
-					-0.21,
+					0.56,
+					-0.76,
 					0
 				},
 				{
-					3.2,
-					-0.14,
+					0.48,
+					0.99,
 					0
 				}
 			}
@@ -614,29 +592,27 @@ pg.aircraft_template_347 = {
 			}
 		}
 	},
-	[620327] = {
+	[605037] = {
 		attack_power = 2,
-		name = "【2020美系活动D3】塞壬构建者 第二波浮游炮",
-		type = 1,
+		name = "【龙骧活动SP3】Boss-龙骧日系舰载轰炸机IV",
+		type = 3,
 		accuracy = 23,
-		model_ID = "fuyoupao2",
+		model_ID = "99shijianbao1",
 		ACC_growth = 0,
-		crash_DMG = 340,
+		crash_DMG = 78,
 		dodge = 1,
+		funnel_behavior = "",
 		nationality = 3,
-		id = 620327,
-		icon = "fuyoupao2",
+		id = 605037,
+		icon = "99shijianbao1",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3680,
-		speed = 120,
-		max_hp = 8000,
+		hp_growth = 3377,
+		speed = 30,
+		max_hp = 48,
 		scale = 0.75,
-		funnel_behavior = {
-			AI = 70084
-		},
 		weapon_ID = {
-			620330
+			605038
 		},
 		position_offset = {
 			0,
@@ -656,13 +632,13 @@ pg.aircraft_template_347 = {
 		bound_bone = {
 			weapon = {
 				{
-					2.72,
-					-0.21,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					3.2,
-					-0.14,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -690,29 +666,27 @@ pg.aircraft_template_347 = {
 			}
 		}
 	},
-	[620328] = {
+	[605039] = {
 		attack_power = 2,
-		name = "【2020美系活动D3】塞壬构建者 第二波浮游炮",
-		type = 1,
+		name = "【龙骧活动SP3】Boss-龙骧日系舰载鱼雷机IV",
+		type = 2,
 		accuracy = 23,
-		model_ID = "fuyoupao2",
+		model_ID = "97jiangong",
 		ACC_growth = 0,
-		crash_DMG = 340,
+		crash_DMG = 57,
 		dodge = 1,
+		funnel_behavior = "",
 		nationality = 3,
-		id = 620328,
-		icon = "fuyoupao2",
+		id = 605039,
+		icon = "97jiangong",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 3680,
-		speed = 120,
-		max_hp = 8000,
+		hp_growth = 3013,
+		speed = 30,
+		max_hp = 39,
 		scale = 0.75,
-		funnel_behavior = {
-			AI = 70085
-		},
 		weapon_ID = {
-			620330
+			605040
 		},
 		position_offset = {
 			0,
@@ -732,13 +706,13 @@ pg.aircraft_template_347 = {
 		bound_bone = {
 			weapon = {
 				{
-					2.72,
-					-0.21,
+					-1.13,
+					-1.29,
 					0
 				},
 				{
-					3.2,
-					-0.14,
+					-1.25,
+					1.47,
 					0
 				}
 			}
@@ -755,7 +729,7 @@ pg.aircraft_template_347 = {
 				0
 			},
 			{
-				0,
+				0.54,
 				0,
 				0
 			},

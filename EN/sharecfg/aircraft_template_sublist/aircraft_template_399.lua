@@ -1,18 +1,537 @@
 pg = pg or {}
 pg.aircraft_template_399 = {
-	[1100926] = {
+	[1003190] = {
 		attack_power = 2,
-		name = "法系舰载-战斗机II",
+		name = "【精英】梦境执棋者 轰炸机T3 V",
+		type = 3,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 180,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003190,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 3800,
+		speed = 30,
+		max_hp = 210,
+		scale = 0.75,
+		weapon_ID = {
+			1003225
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.71,
+					-1.73,
+					0
+				},
+				{
+					0.82,
+					2.04,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003191] = {
+		attack_power = 2,
+		name = "【精英】梦境执棋者 鱼雷机T3 I",
+		type = 2,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 57,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003191,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 2040,
+		speed = 33,
+		max_hp = 82,
+		scale = 0.75,
+		weapon_ID = {
+			1003226
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.56,
+					-0.76,
+					0
+				},
+				{
+					0.48,
+					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003192] = {
+		attack_power = 2,
+		name = "【精英】梦境执棋者 鱼雷机T3 II",
+		type = 2,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 75,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003192,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 2380,
+		speed = 33,
+		max_hp = 109,
+		scale = 0.75,
+		weapon_ID = {
+			1003227
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.56,
+					-0.76,
+					0
+				},
+				{
+					0.48,
+					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003193] = {
+		attack_power = 2,
+		name = "【精英】梦境执棋者 鱼雷机T3 III",
+		type = 2,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 95,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003193,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 2720,
+		speed = 33,
+		max_hp = 136,
+		scale = 0.75,
+		weapon_ID = {
+			1003228
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.56,
+					-0.76,
+					0
+				},
+				{
+					0.48,
+					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003194] = {
+		attack_power = 2,
+		name = "【精英】梦境执棋者 鱼雷机T3 IV",
+		type = 2,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 117,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003194,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 3060,
+		speed = 33,
+		max_hp = 163,
+		scale = 0.75,
+		weapon_ID = {
+			1003229
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.56,
+					-0.76,
+					0
+				},
+				{
+					0.48,
+					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1003195] = {
+		attack_power = 2,
+		name = "【精英】梦境执棋者 鱼雷机T3 V",
+		type = 2,
+		accuracy = 23,
+		model_ID = "shenhaifeiji",
+		ACC_growth = 0,
+		crash_DMG = 141,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1003195,
+		icon = "shenhaifeiji",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 3400,
+		speed = 33,
+		max_hp = 190,
+		scale = 0.75,
+		weapon_ID = {
+			1003230
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.56,
+					-0.76,
+					0
+				},
+				{
+					0.48,
+					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1100765] = {
+		attack_power = 2,
+		name = "美系舰载-战斗机I（大世界通用飞机）",
 		type = 1,
 		accuracy = 23,
-		model_ID = "GL2",
+		model_ID = "F4F",
+		ACC_growth = 0,
+		crash_DMG = 36,
+		dodge = 1,
+		funnel_behavior = "",
+		nationality = 3,
+		id = 1100765,
+		icon = "F4F",
+		AP_growth = 2000,
+		dodge_limit = 0,
+		hp_growth = 1680,
+		speed = 33,
+		max_hp = 64,
+		scale = 0.75,
+		weapon_ID = {
+			1100745,
+			1100750
+		},
+		position_offset = {
+			0,
+			5,
+			0
+		},
+		cld_box = {
+			1,
+			1,
+			1
+		},
+		cld_offset = {
+			0,
+			0,
+			0
+		},
+		bound_bone = {
+			weapon = {
+				{
+					0.56,
+					-0.76,
+					0
+				},
+				{
+					0.48,
+					0.99,
+					0
+				}
+			}
+		},
+		fx_container = {
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			},
+			{
+				0,
+				0,
+				0
+			}
+		}
+	},
+	[1100766] = {
+		attack_power = 2,
+		name = "美系舰载-战斗机II",
+		type = 1,
+		accuracy = 23,
+		model_ID = "F4F",
 		ACC_growth = 0,
 		crash_DMG = 48,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 3,
-		id = 1100926,
-		icon = "GL2",
+		id = 1100766,
+		icon = "F4F",
 		AP_growth = 2000,
 		dodge_limit = 0,
 		hp_growth = 1960,
@@ -20,7 +539,7 @@ pg.aircraft_template_399 = {
 		max_hp = 88,
 		scale = 0.75,
 		weapon_ID = {
-			1100951,
+			1100746,
 			1100751
 		},
 		position_offset = {
@@ -75,19 +594,19 @@ pg.aircraft_template_399 = {
 			}
 		}
 	},
-	[1100927] = {
+	[1100767] = {
 		attack_power = 2,
-		name = "法系舰载-战斗机III",
+		name = "美系舰载-战斗机III",
 		type = 1,
 		accuracy = 23,
-		model_ID = "GL2",
+		model_ID = "F4F",
 		ACC_growth = 0,
 		crash_DMG = 62,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 3,
-		id = 1100927,
-		icon = "GL2",
+		id = 1100767,
+		icon = "F4F",
 		AP_growth = 2000,
 		dodge_limit = 0,
 		hp_growth = 2240,
@@ -95,7 +614,7 @@ pg.aircraft_template_399 = {
 		max_hp = 112,
 		scale = 0.75,
 		weapon_ID = {
-			1100952,
+			1100747,
 			1100752
 		},
 		position_offset = {
@@ -150,19 +669,19 @@ pg.aircraft_template_399 = {
 			}
 		}
 	},
-	[1100928] = {
+	[1100768] = {
 		attack_power = 2,
-		name = "法系舰载-战斗机IV",
+		name = "美系舰载-战斗机IV",
 		type = 1,
 		accuracy = 23,
-		model_ID = "GL2",
+		model_ID = "F4F",
 		ACC_growth = 0,
 		crash_DMG = 78,
 		dodge = 1,
 		funnel_behavior = "",
 		nationality = 3,
-		id = 1100928,
-		icon = "GL2",
+		id = 1100768,
+		icon = "F4F",
 		AP_growth = 2000,
 		dodge_limit = 0,
 		hp_growth = 2520,
@@ -170,7 +689,7 @@ pg.aircraft_template_399 = {
 		max_hp = 136,
 		scale = 0.75,
 		weapon_ID = {
-			1100953,
+			1100748,
 			1100753
 		},
 		position_offset = {
@@ -198,525 +717,6 @@ pg.aircraft_template_399 = {
 				{
 					0.48,
 					0.99,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100929] = {
-		attack_power = 2,
-		name = "法系舰载-战斗机V",
-		type = 1,
-		accuracy = 23,
-		model_ID = "GL2",
-		ACC_growth = 0,
-		crash_DMG = 98,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100929,
-		icon = "GL2",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2800,
-		speed = 33,
-		max_hp = 160,
-		scale = 0.75,
-		weapon_ID = {
-			1100954,
-			1100754
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.56,
-					-0.76,
-					0
-				},
-				{
-					0.48,
-					0.99,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100930] = {
-		attack_power = 2,
-		name = "法系舰载-鱼雷机I",
-		type = 2,
-		accuracy = 23,
-		model_ID = "PL7",
-		ACC_growth = 0,
-		crash_DMG = 52,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100930,
-		icon = "PL7",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2040,
-		speed = 30,
-		max_hp = 72,
-		scale = 0.75,
-		weapon_ID = {
-			1100945
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100931] = {
-		attack_power = 2,
-		name = "法系舰载-鱼雷机II",
-		type = 2,
-		accuracy = 23,
-		model_ID = "PL7",
-		ACC_growth = 0,
-		crash_DMG = 70,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100931,
-		icon = "PL7",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2380,
-		speed = 30,
-		max_hp = 99,
-		scale = 0.75,
-		weapon_ID = {
-			1100946
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100932] = {
-		attack_power = 2,
-		name = "法系舰载-鱼雷机III",
-		type = 2,
-		accuracy = 23,
-		model_ID = "PL7",
-		ACC_growth = 0,
-		crash_DMG = 90,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100932,
-		icon = "PL7",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2720,
-		speed = 30,
-		max_hp = 126,
-		scale = 0.75,
-		weapon_ID = {
-			1100947
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100933] = {
-		attack_power = 2,
-		name = "法系舰载-鱼雷机IV",
-		type = 2,
-		accuracy = 23,
-		model_ID = "PL7",
-		ACC_growth = 0,
-		crash_DMG = 112,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100933,
-		icon = "PL7",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3060,
-		speed = 30,
-		max_hp = 153,
-		scale = 0.75,
-		weapon_ID = {
-			1100948
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100934] = {
-		attack_power = 2,
-		name = "法系舰载-鱼雷机V",
-		type = 2,
-		accuracy = 23,
-		model_ID = "PL7",
-		ACC_growth = 0,
-		crash_DMG = 136,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100934,
-		icon = "PL7",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 3400,
-		speed = 30,
-		max_hp = 180,
-		scale = 0.75,
-		weapon_ID = {
-			1100949
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					-1.13,
-					-1.29,
-					0
-				},
-				{
-					-1.25,
-					1.47,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.54,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[1100935] = {
-		attack_power = 2,
-		name = "法系舰载-轰炸机I",
-		type = 3,
-		accuracy = 23,
-		model_ID = "v156f",
-		ACC_growth = 0,
-		crash_DMG = 65,
-		dodge = 1,
-		funnel_behavior = "",
-		nationality = 3,
-		id = 1100935,
-		icon = "v156f",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2280,
-		speed = 30,
-		max_hp = 80,
-		scale = 0.75,
-		weapon_ID = {
-			1100940
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.71,
-					-1.73,
-					0
-				},
-				{
-					0.82,
-					2.04,
 					0
 				}
 			}

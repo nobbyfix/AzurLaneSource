@@ -1,15 +1,23 @@
 pg = pg or {}
 pg.equip_data_statistics_333 = {
-	[60351] = {
+	[60173] = {
+		id = 60173,
+		name = "0",
+		base = 60171,
+		weapon_id = {
+			60173
+		}
+	},
+	[60181] = {
 		type = 99,
-		name = "航空攻击展示-乌璐露I",
+		name = "0",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "航母空袭展示用",
-		id = 60351,
+		descrip = "Aircraft Carrier Airstrike",
+		id = 60181,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -20,7 +28,7 @@ pg.equip_data_statistics_333 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60351
+			60181
 		},
 		skill_id = {},
 		part_main = {},
@@ -28,32 +36,32 @@ pg.equip_data_statistics_333 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[60352] = {
-		id = 60352,
-		name = "航空攻击展示-乌璐露II",
-		base = 60351,
+	[60182] = {
+		id = 60182,
+		name = "0",
+		base = 60181,
 		weapon_id = {
-			60352
+			60182
 		}
 	},
-	[60353] = {
-		id = 60353,
-		name = "航空攻击展示-乌璐露III",
-		base = 60351,
+	[60183] = {
+		id = 60183,
+		name = "0",
+		base = 60181,
 		weapon_id = {
-			60353
+			60183
 		}
 	},
-	[60361] = {
+	[60191] = {
 		type = 99,
-		name = "航空攻击展示-萨拉娜I",
+		name = "0",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "航母空袭展示用",
-		id = 60361,
+		descrip = "Aircraft Carrier Airstrike",
+		id = 60191,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -64,7 +72,7 @@ pg.equip_data_statistics_333 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60361
+			60191
 		},
 		skill_id = {},
 		part_main = {},
@@ -72,32 +80,32 @@ pg.equip_data_statistics_333 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[60362] = {
-		id = 60362,
-		name = "航空攻击展示-萨拉娜II",
-		base = 60361,
+	[60192] = {
+		id = 60192,
+		name = "0",
+		base = 60191,
 		weapon_id = {
-			60362
+			60192
 		}
 	},
-	[60363] = {
-		id = 60363,
-		name = "航空攻击展示-萨拉娜III",
-		base = 60361,
+	[60193] = {
+		id = 60193,
+		name = "0",
+		base = 60191,
 		weapon_id = {
-			60363
+			60193
 		}
 	},
-	[60371] = {
+	[60201] = {
 		type = 99,
-		name = "航空攻击展示-龙骧I",
+		name = "0",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "航母空袭展示用",
-		id = 60371,
+		descrip = "Aircraft Carrier Airstrike",
+		id = 60201,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -108,7 +116,7 @@ pg.equip_data_statistics_333 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60371
+			60201
 		},
 		skill_id = {},
 		part_main = {},
@@ -116,32 +124,32 @@ pg.equip_data_statistics_333 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[60372] = {
-		id = 60372,
-		name = "航空攻击展示-龙骧II",
-		base = 60371,
+	[60202] = {
+		id = 60202,
+		name = "0",
+		base = 60201,
 		weapon_id = {
-			60372
+			60202
 		}
 	},
-	[60373] = {
-		id = 60373,
-		name = "航空攻击展示-龙骧III",
-		base = 60371,
+	[60203] = {
+		id = 60203,
+		name = "0",
+		base = 60201,
 		weapon_id = {
-			60373
+			60203
 		}
 	},
-	[60381] = {
+	[60211] = {
 		type = 99,
-		name = "航空攻击展示-追赶者I",
+		name = "0",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "航母空袭展示用",
-		id = 60381,
+		descrip = "Aircraft Carrier Airstrike",
+		id = 60211,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -152,7 +160,7 @@ pg.equip_data_statistics_333 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60381
+			60211
 		},
 		skill_id = {},
 		part_main = {},
@@ -160,32 +168,32 @@ pg.equip_data_statistics_333 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[60382] = {
-		id = 60382,
-		name = "航空攻击展示-追赶者II",
-		base = 60381,
+	[60212] = {
+		id = 60212,
+		name = "0",
+		base = 60211,
 		weapon_id = {
-			60382
+			60212
 		}
 	},
-	[60383] = {
-		id = 60383,
-		name = "航空攻击展示-追赶者III",
-		base = 60381,
+	[60213] = {
+		id = 60213,
+		name = "0",
+		base = 60211,
 		weapon_id = {
-			60383
+			60213
 		}
 	},
-	[60391] = {
+	[60221] = {
 		type = 99,
-		name = "航空攻击展示-独立I",
+		name = "0",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "航母空袭展示用",
-		id = 60391,
+		descrip = "Aircraft Carrier Airstrike",
+		id = 60221,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -196,7 +204,7 @@ pg.equip_data_statistics_333 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60391
+			60221
 		},
 		skill_id = {},
 		part_main = {},
@@ -204,32 +212,32 @@ pg.equip_data_statistics_333 = {
 		equip_parameters = {},
 		label = {}
 	},
-	[60392] = {
-		id = 60392,
-		name = "航空攻击展示-独立II",
-		base = 60391,
+	[60222] = {
+		id = 60222,
+		name = "0",
+		base = 60221,
 		weapon_id = {
-			60392
+			60222
 		}
 	},
-	[60393] = {
-		id = 60393,
-		name = "航空攻击展示-独立III",
-		base = 60391,
+	[60223] = {
+		id = 60223,
+		name = "0",
+		base = 60221,
 		weapon_id = {
-			60393
+			60223
 		}
 	},
-	[60401] = {
-		type = 99,
-		name = "航空攻击展示-爱酱I",
+	[60231] = {
+		type = 1,
+		name = "烈焰崩袭",
 		speciality = "N/A",
 		tech = 1,
 		rarity = 1,
 		ammo = 10,
 		nationality = 0,
-		descrip = "航母空袭展示用",
-		id = 60401,
+		descrip = "Shown when using Barrage",
+		id = 60231,
 		value_3 = 0,
 		value_2 = 0,
 		icon = "1",
@@ -240,20 +248,23 @@ pg.equip_data_statistics_333 = {
 		ammo_info = {},
 		equip_info = {},
 		weapon_id = {
-			60401
+			60231
 		},
 		skill_id = {},
-		part_main = {},
-		part_sub = {},
+		part_main = {
+			1,
+			19
+		},
+		part_sub = {
+			2,
+			3,
+			4,
+			5,
+			8,
+			13,
+			18
+		},
 		equip_parameters = {},
 		label = {}
-	},
-	[60402] = {
-		id = 60402,
-		name = "航空攻击展示-爱酱II",
-		base = 60401,
-		weapon_id = {
-			60402
-		}
 	}
 }

@@ -1,144 +1,44 @@
 pg = pg or {}
 pg.equip_data_statistics_293 = {
-	[42350] = {
-		id = 42350,
-		damage = "15 x 3",
-		base = 42340,
+	[42224] = {
+		id = 42224,
+		damage = "12 x 4",
+		base = 42220,
 		weapon_id = {
-			42350
+			42224
 		}
 	},
-	[42351] = {
-		id = 42351,
-		anti_siren = 100,
-		damage = "15 x 3",
-		base = 42340,
+	[42225] = {
+		id = 42225,
+		damage = "13 x 4",
+		base = 42220,
 		weapon_id = {
-			42351
+			42225
 		}
 	},
-	[43000] = {
-		tech = 1,
-		name = "Twin 203mm (SK C/34)",
+	[42226] = {
+		id = 42226,
+		damage = "14 x 4",
+		base = 42220,
+		weapon_id = {
+			42226
+		}
+	},
+	[42240] = {
+		tech = 3,
+		name = "Twin 150mm TbtsK C/36 Main Gun Mount",
 		speciality = "Lock",
-		type = 3,
-		value_2 = 12,
-		ammo = 1,
-		damage = "25 x 6",
-		nationality = 4,
-		rarity = 3,
-		id = 43000,
-		value_3 = 0,
-		torpedo_ammo = 0,
-		descrip = "The Twin 203mm (SK C/34) is the main gun of Admiral Hipper class cruisers. May be used by heavy cruisers.",
-		icon = "43000",
-		attribute_2 = "cannon",
-		property_rate = {},
-		ammo_icon = {
-			2
-		},
-		ammo_info = {
-			{
-				1,
-				1401
-			}
-		},
-		equip_info = {
-			1,
-			2,
-			{
-				3,
-				1401
-			},
-			{
-				4,
-				1206
-			},
-			6,
-			10,
-			11,
-			12
-		},
-		weapon_id = {
-			43000
-		},
-		skill_id = {},
-		part_main = {
-			3,
-			18
-		},
-		part_sub = {},
-		equip_parameters = {},
-		label = {
-			"KMS",
-			"CA",
-			"MG",
-			"AP"
-		}
-	},
-	[43001] = {
-		id = 43001,
-		damage = "27 x 6",
-		base = 43000,
-		weapon_id = {
-			43001
-		}
-	},
-	[43002] = {
-		id = 43002,
-		damage = "29 x 6",
-		base = 43000,
-		weapon_id = {
-			43002
-		}
-	},
-	[43003] = {
-		id = 43003,
-		damage = "31 x 6",
-		base = 43000,
-		weapon_id = {
-			43003
-		}
-	},
-	[43004] = {
-		id = 43004,
-		damage = "33 x 6",
-		base = 43000,
-		weapon_id = {
-			43004
-		}
-	},
-	[43005] = {
-		id = 43005,
-		damage = "35 x 6",
-		base = 43000,
-		weapon_id = {
-			43005
-		}
-	},
-	[43006] = {
-		id = 43006,
-		damage = "37 x 6",
-		base = 43000,
-		weapon_id = {
-			43006
-		}
-	},
-	[43020] = {
-		tech = 2,
-		name = "Twin 203mm (SK C/34)",
-		speciality = "Lock",
-		type = 3,
+		type = 2,
 		value_2 = 25,
 		ammo = 1,
-		damage = "27 x 6",
+		damage = "9 x 4",
 		nationality = 4,
 		rarity = 4,
-		id = 43020,
+		id = 42240,
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "The Twin 203mm (SK C/34) is the main gun of Admiral Hipper class cruisers. May be used by heavy cruisers.",
-		icon = "43000",
+		descrip = "The Twin 150mm TbtsK C/36 Main Gun Mount is a 1936A type destroyer gun which may be used by light carriers and most destroyers.",
+		icon = "42200",
 		attribute_2 = "cannon",
 		property_rate = {},
 		ammo_icon = {
@@ -147,7 +47,7 @@ pg.equip_data_statistics_293 = {
 		ammo_info = {
 			{
 				1,
-				1401
+				1304
 			}
 		},
 		equip_info = {
@@ -155,11 +55,11 @@ pg.equip_data_statistics_293 = {
 			2,
 			{
 				3,
-				1401
+				1304
 			},
 			{
 				4,
-				1206
+				1001
 			},
 			6,
 			10,
@@ -167,76 +67,178 @@ pg.equip_data_statistics_293 = {
 			12
 		},
 		weapon_id = {
-			43020
+			42240
 		},
 		skill_id = {},
 		part_main = {
-			3,
-			18
+			2
 		},
-		part_sub = {},
+		part_sub = {
+			5
+		},
 		equip_parameters = {},
 		label = {
 			"KMS",
-			"CA",
+			"CL",
 			"MG",
 			"AP"
 		}
 	},
-	[43021] = {
-		id = 43021,
-		damage = "29 x 6",
-		base = 43020,
+	[42241] = {
+		id = 42241,
+		damage = "10 x 4",
+		base = 42240,
 		weapon_id = {
-			43021
+			42241
 		}
 	},
-	[43022] = {
-		id = 43022,
-		damage = "31 x 6",
-		base = 43020,
+	[42242] = {
+		id = 42242,
+		damage = "11 x 4",
+		base = 42240,
 		weapon_id = {
-			43022
+			42242
 		}
 	},
-	[43023] = {
-		id = 43023,
-		damage = "33 x 6",
-		base = 43020,
+	[42243] = {
+		id = 42243,
+		damage = "12 x 4",
+		base = 42240,
 		weapon_id = {
-			43023
+			42243
 		}
 	},
-	[43024] = {
-		id = 43024,
-		damage = "35 x 6",
-		base = 43020,
+	[42244] = {
+		id = 42244,
+		damage = "13 x 4",
+		base = 42240,
 		weapon_id = {
-			43024
+			42244
 		}
 	},
-	[43025] = {
-		id = 43025,
-		damage = "37 x 6",
-		base = 43020,
+	[42245] = {
+		id = 42245,
+		damage = "14 x 4",
+		base = 42240,
 		weapon_id = {
-			43025
+			42245
 		}
 	},
-	[43026] = {
-		id = 43026,
-		damage = "39 x 6",
-		base = 43020,
+	[42246] = {
+		id = 42246,
+		damage = "15 x 4",
+		base = 42240,
 		weapon_id = {
-			43026
+			42246
 		}
 	},
-	[43027] = {
-		id = 43027,
-		damage = "41 x 6",
-		base = 43020,
+	[42247] = {
+		id = 42247,
+		damage = "16 x 4",
+		base = 42240,
 		weapon_id = {
-			43027
+			42247
+		}
+	},
+	[42248] = {
+		id = 42248,
+		damage = "17 x 4",
+		base = 42240,
+		weapon_id = {
+			42248
+		}
+	},
+	[42249] = {
+		id = 42249,
+		damage = "19 x 4",
+		base = 42240,
+		weapon_id = {
+			42249
+		}
+	},
+	[42250] = {
+		id = 42250,
+		damage = "21 x 4",
+		base = 42240,
+		weapon_id = {
+			42250
+		}
+	},
+	[42251] = {
+		id = 42251,
+		anti_siren = 100,
+		damage = "21 x 4",
+		base = 42240,
+		weapon_id = {
+			42251
+		}
+	},
+	[42300] = {
+		tech = 1,
+		name = "Single 150mm TbtsK C/36 Main Gun Mount ",
+		speciality = "Lock",
+		type = 2,
+		value_2 = 5,
+		ammo = 1,
+		damage = "7 x 3",
+		nationality = 4,
+		rarity = 2,
+		id = 42300,
+		value_3 = 0,
+		torpedo_ammo = 0,
+		descrip = "Single-barreled 150mm gun that was used on the Type 1936A destroyer class. Can be equipped by CLs and some DDs. ",
+		icon = "42300",
+		attribute_2 = "cannon",
+		property_rate = {},
+		ammo_icon = {
+			2
+		},
+		ammo_info = {
+			{
+				1,
+				1304
+			}
+		},
+		equip_info = {
+			1,
+			2,
+			{
+				3,
+				1304
+			},
+			{
+				4,
+				1003
+			},
+			6,
+			10,
+			11,
+			12
+		},
+		weapon_id = {
+			42300
+		},
+		skill_id = {},
+		part_main = {
+			2
+		},
+		part_sub = {
+			5
+		},
+		equip_parameters = {},
+		label = {
+			"KMS",
+			"CL",
+			"MG",
+			"AP"
+		}
+	},
+	[42301] = {
+		id = 42301,
+		damage = "8 x 3",
+		base = 42300,
+		weapon_id = {
+			42301
 		}
 	}
 }

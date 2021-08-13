@@ -148,24 +148,31 @@ function slot0.execute(slot0, slot1)
 			elseif slot8.type == LevelUIConst.COMMANDER_OP_USE_PREFAB then
 				slot13 = {}
 				slot14 = slot7:getActivityFleets()[slot12]
+				slot16 = pg.activity_template[slot12] and slot15.type or 0
 
-				for slot19 = 1, 2 do
-					if slot10:getCommanderByPos(slot19) then
-						slot21, slot22 = function (slot0)
+				for slot21 = 1, 2 do
+					if slot10:getCommanderByPos(slot21) then
+						slot23, slot24 = function (slot0)
 							for slot4, slot5 in pairs(uv0) do
-								if uv1 ~= slot4 then
-									for slot10, slot11 in pairs(slot5:getCommanders()) do
-										if slot0 == slot11.id then
-											return slot4, slot10
+								slot6 = uv1 ~= slot4
+
+								if uv2 == ActivityConst.ACTIVITY_TYPE_BOSS_BATTLE_MARK_2 then
+									slot6 = slot4 == ActivityBossMediatorTemplate.GetPairedFleetIndex(uv1)
+								end
+
+								if slot6 then
+									for slot11, slot12 in pairs(slot5:getCommanders()) do
+										if slot0 == slot12.id then
+											return slot4, slot11
 										end
 									end
 								end
 							end
 
 							return nil
-						end(slot20.id)
+						end(slot22.id)
 
-						if slot21 and slot22 then
+						if slot23 and slot24 then
 							table.insert(slot13, function (slot0)
 								pg.MsgboxMgr.GetInstance():ShowMsgBox({
 									content = i18n("comander_repalce_tip", Fleet.DEFAULT_NAME[uv1], uv0 == 1 and i18n("commander_main_pos") or i18n("commander_assistant_pos")),
@@ -177,9 +184,9 @@ function slot0.execute(slot0, slot1)
 
 										slot1 = uv0[uv5]
 
-										slot1:updateCommanderByPos(uv2, uv6)
+										slot1:updateCommanderByPos(uv6, uv7)
 										uv3:updateActivityFleet(uv4, uv5, slot1)
-										uv7()
+										uv8()
 									end,
 									onNo = slot0
 								})

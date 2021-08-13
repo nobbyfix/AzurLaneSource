@@ -872,37 +872,42 @@ function slot0.DisplayWinConditionPanel(slot0)
 	slot0.winCondPanel:ActionInvoke("Enter", slot0.contextData.chapterVO)
 end
 
-function slot0.UpdateComboPanel(slot0, slot1)
-	if pg.chapter_pop_template[slot0.contextData.chapterVO.id] and slot3.combo_on then
-		slot4, slot5 = slot0:GetSubView("LevelStageComboPanel")
+function slot0.UpdateComboPanel(slot0)
+	if pg.chapter_pop_template[slot0.contextData.chapterVO.id] and slot2.combo_on then
+		slot3, slot4 = slot0:GetSubView("LevelStageComboPanel")
 
-		if slot5 then
-			slot4:Load()
-			slot4.buffer:SetParent(slot0.leftStage, false)
+		if slot4 then
+			slot3:Load()
+			slot3.buffer:SetParent(slot0.leftStage, false)
 		end
 
-		slot4.buffer:UpdateView(slot1 or slot2)
-		slot4.buffer:UpdateViewAnimated(slot2)
+		slot3.buffer:UpdateView(getProxy(ChapterProxy):GetComboHistory(slot1.id) or slot1)
+		slot3.buffer:UpdateViewAnimated(slot1)
 	end
 end
 
-function slot0.UpdateDOALinkFeverPanel(slot0, slot1)
+slot2 = {
+	[777.0] = "LevelStageDOAFeverPanel",
+	[4050.0] = "LevelStageIMasFeverPanel"
+}
+
+function slot0.UpdateDOALinkFeverPanel(slot0)
 	if slot0.contextData.chapterVO:getPlayType() ~= ChapterConst.TypeDOALink then
 		return
 	end
 
-	slot3, slot4 = slot0:GetSubView("LevelStageDOAFeverPanel")
+	slot4, slot5 = slot0:GetSubView(uv0[slot1:getConfig("act_id")])
 
-	if slot4 then
-		slot3:Load()
-		slot3.buffer:SetParent(slot0._tf, false)
+	if slot5 then
+		slot4:Load()
+		slot4.buffer:SetParent(slot0._tf, false)
 	end
 
-	slot3.buffer:UpdateView(slot2, slot1)
+	slot4.buffer:UpdateView(slot1, getProxy(ChapterProxy):GetLastDefeatedEnemy(slot1.id))
 end
 
-slot2 = Vector2(396, 128)
-slot3 = Vector2(128, 128)
+slot3 = Vector2(396, 128)
+slot4 = Vector2(128, 128)
 
 function slot0.updateStageStrategy(slot0)
 	slot4 = findTF(findTF(slot0.rightStage, "event"), "detail")
@@ -1486,7 +1491,7 @@ function slot0.TryEnterChapterStoryStage(slot0)
 	})
 end
 
-slot4 = {
+slot5 = {
 	[ChapterConst.KizunaJammingDodge] = "kizunaOperationSafe",
 	[ChapterConst.KizunaJammingEngage] = "kizunaOperationDanger",
 	[ChapterConst.StatusDay] = "HololiveDayBar",

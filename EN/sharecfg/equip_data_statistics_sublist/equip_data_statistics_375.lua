@@ -1,91 +1,60 @@
 pg = pg or {}
 pg.equip_data_statistics_375 = {
-	[89163] = {
-		id = 89163,
-		value_2 = 18,
-		value_1 = "20",
-		base = 89160
+	[89068] = {
+		id = 89068,
+		value_2 = 23,
+		value_1 = "13",
+		base = 89060
 	},
-	[89164] = {
-		id = 89164,
-		value_2 = 19,
-		value_1 = "22",
-		base = 89160
-	},
-	[89165] = {
-		id = 89165,
-		value_2 = 20,
-		value_1 = "24",
-		base = 89160
-	},
-	[89166] = {
-		id = 89166,
-		value_2 = 22,
-		value_1 = "26",
-		base = 89160
-	},
-	[89167] = {
-		id = 89167,
+	[89069] = {
+		id = 89069,
 		value_2 = 24,
-		value_1 = "28",
-		base = 89160
+		value_1 = "14",
+		base = 89060
 	},
-	[89168] = {
-		id = 89168,
+	[89070] = {
+		id = 89070,
+		value_2 = 25,
+		value_1 = "15",
+		base = 89060
+	},
+	[89071] = {
 		value_2 = 26,
-		value_1 = "30",
-		base = 89160
-	},
-	[89169] = {
-		id = 89169,
-		value_2 = 28,
-		value_1 = "32",
-		base = 89160
-	},
-	[89170] = {
-		id = 89170,
-		value_2 = 30,
-		value_1 = "35",
-		base = 89160
-	},
-	[89171] = {
-		value_2 = 32,
 		anti_siren = 100,
-		base = 89160,
-		id = 89171,
-		value_1 = "38"
+		base = 89060,
+		id = 89071,
+		value_1 = "16"
 	},
-	[89172] = {
-		value_2 = 34,
+	[89072] = {
+		value_2 = 27,
 		anti_siren = 200,
-		base = 89160,
-		id = 89172,
-		value_1 = "41"
+		base = 89060,
+		id = 89072,
+		value_1 = "17"
 	},
-	[89173] = {
-		value_2 = 36,
+	[89073] = {
+		value_2 = 28,
 		anti_siren = 300,
-		base = 89160,
-		id = 89173,
-		value_1 = "44"
+		base = 89060,
+		id = 89073,
+		value_1 = "18"
 	},
-	[89180] = {
+	[89080] = {
 		type = 10,
-		name = "Resplendent Astrum",
+		name = "Gamers Mark",
 		speciality = "N/A",
 		tech = 0,
-		value_2 = 15,
+		value_2 = 0,
 		ammo = 10,
-		descrip = "\"May our songs spread the light of love and peace.\" ",
-		nationality = 0,
 		rarity = 5,
-		attribute_1 = "antiaircraft",
+		nationality = 105,
+		descrip = "A badge that proves its wearer is one of the Hololive Gamers.",
+		id = 89080,
 		value_3 = 0,
+		attribute_1 = "durability",
+		icon = "89080",
+		value_1 = "245",
 		torpedo_ammo = 0,
-		id = 89180,
-		icon = "89180",
-		value_1 = "14",
-		attribute_2 = "hit",
 		property_rate = {},
 		ammo_icon = {},
 		ammo_info = {},
@@ -94,7 +63,7 @@ pg.equip_data_statistics_375 = {
 		},
 		weapon_id = {},
 		skill_id = {
-			6712
+			6500
 		},
 		part_main = {},
 		part_sub = {},
@@ -103,34 +72,54 @@ pg.equip_data_statistics_375 = {
 			"DEV"
 		}
 	},
-	[89181] = {
-		id = 89181,
-		value_2 = 16,
-		value_1 = "16",
-		base = 89180
+	[89081] = {
+		id = 89081,
+		value_1 = "280",
+		base = 89080
 	},
-	[89182] = {
-		id = 89182,
-		value_2 = 17,
-		value_1 = "18",
-		base = 89180
+	[89082] = {
+		id = 89082,
+		value_1 = "310",
+		base = 89080
 	},
-	[89183] = {
-		id = 89183,
-		value_2 = 18,
-		value_1 = "20",
-		base = 89180
+	[89083] = {
+		id = 89083,
+		value_1 = "340",
+		base = 89080
 	},
-	[89184] = {
-		id = 89184,
-		value_2 = 19,
-		value_1 = "22",
-		base = 89180
+	[89084] = {
+		id = 89084,
+		value_1 = "370",
+		base = 89080
 	},
-	[89185] = {
-		id = 89185,
-		value_2 = 20,
-		value_1 = "24",
-		base = 89180
+	[89085] = {
+		id = 89085,
+		value_1 = "400",
+		base = 89080
+	},
+	[89086] = {
+		id = 89086,
+		value_1 = "430",
+		base = 89080
+	},
+	[89087] = {
+		id = 89087,
+		value_1 = "460",
+		base = 89080
+	},
+	[89088] = {
+		id = 89088,
+		value_1 = "490",
+		base = 89080
+	},
+	[89089] = {
+		id = 89089,
+		value_1 = "520",
+		base = 89080
+	},
+	[89090] = {
+		id = 89090,
+		value_1 = "550",
+		base = 89080
 	}
 }

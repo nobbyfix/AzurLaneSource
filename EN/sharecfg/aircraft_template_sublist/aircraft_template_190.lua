@@ -1,81 +1,37 @@
 pg = pg or {}
 pg.aircraft_template_190 = {
-	[69696] = {
-		id = 69696,
-		name = "英仙座技能海黄蜂Lv6",
-		base = 69691,
-		max_hp = 73,
-		hp_growth = 2796,
+	[68660] = {
+		id = 68660,
+		name = "可畏技能鱼雷机Lv10",
+		base = 68651,
+		max_hp = 91,
+		hp_growth = 3511,
 		weapon_ID = {
-			50666,
-			69726
+			68670
 		}
 	},
-	[69697] = {
-		id = 69697,
-		name = "英仙座技能海黄蜂Lv7",
-		base = 69691,
-		max_hp = 79,
-		hp_growth = 3016,
-		weapon_ID = {
-			50667,
-			69727
-		}
-	},
-	[69698] = {
-		id = 69698,
-		name = "英仙座技能海黄蜂Lv8",
-		base = 69691,
-		max_hp = 86,
-		hp_growth = 3237,
-		weapon_ID = {
-			50668,
-			69728
-		}
-	},
-	[69699] = {
-		id = 69699,
-		name = "英仙座技能海黄蜂Lv9",
-		base = 69691,
-		max_hp = 92,
-		hp_growth = 3458,
-		weapon_ID = {
-			50669,
-			69729
-		}
-	},
-	[69700] = {
-		id = 69700,
-		name = "英仙座技能海黄蜂Lv10",
-		base = 69691,
-		max_hp = 98,
-		hp_growth = 3678,
-		weapon_ID = {
-			50670,
-			69730
-		}
-	},
-	[69701] = {
+	[68771] = {
 		attack_power = 2,
-		name = "英仙座技能TBFLv1",
+		name = "赤城μ技能舰爆Lv1",
 		type = 3,
 		accuracy = 23,
-		model_ID = "tbf",
+		model_ID = "99shijianbao1",
 		ACC_growth = 0,
-		crash_DMG = 300,
-		dodge = 1.05,
+		crash_DMG = 180,
+		dodge = 1,
 		funnel_behavior = "",
-		nationality = 2,
-		id = 69701,
-		icon = "tbf",
+		nationality = 3,
+		id = 68771,
+		icon = "99shijianbao1",
 		AP_growth = 2000,
-		dodge_limit = 6,
-		hp_growth = 1674,
+		dodge_limit = 0,
+		hp_growth = 1692,
 		speed = 48,
-		max_hp = 44,
+		max_hp = 42,
 		scale = 1,
 		weapon_ID = {
-			69731
+			68781,
+			68791
 		},
 		position_offset = {
 			0,
@@ -95,13 +51,13 @@ pg.aircraft_template_190 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -118,8 +74,8 @@ pg.aircraft_template_190 = {
 				0
 			},
 			{
-				0.15,
-				-0.08,
+				0,
+				0,
 				0
 			},
 			{
@@ -129,44 +85,92 @@ pg.aircraft_template_190 = {
 			}
 		}
 	},
-	[69702] = {
-		id = 69702,
-		name = "英仙座技能TBFLv2",
-		base = 69701,
-		max_hp = 49,
-		hp_growth = 1892,
+	[68772] = {
+		id = 68772,
+		name = "赤城μ技能舰爆Lv2",
+		base = 68771,
+		max_hp = 48,
+		hp_growth = 1913,
 		weapon_ID = {
-			69732
+			68782,
+			68792
 		}
 	},
-	[69703] = {
-		id = 69703,
-		name = "英仙座技能TBFLv3",
-		base = 69701,
-		max_hp = 55,
-		hp_growth = 2111,
+	[68773] = {
+		id = 68773,
+		name = "赤城μ技能舰爆Lv3",
+		base = 68771,
+		max_hp = 54,
+		hp_growth = 2133,
 		weapon_ID = {
-			69733
+			68783,
+			68793
 		}
 	},
-	[69704] = {
-		id = 69704,
-		name = "英仙座技能TBFLv4",
-		base = 69701,
+	[68774] = {
+		id = 68774,
+		name = "赤城μ技能舰爆Lv4",
+		base = 68771,
 		max_hp = 61,
-		hp_growth = 2329,
+		hp_growth = 2354,
 		weapon_ID = {
-			69734
+			68784,
+			68794
 		}
 	},
-	[69705] = {
-		id = 69705,
-		name = "英仙座技能TBFLv5",
-		base = 69701,
-		max_hp = 66,
-		hp_growth = 2547,
+	[68775] = {
+		id = 68775,
+		name = "赤城μ技能舰爆Lv5",
+		base = 68771,
+		max_hp = 67,
+		hp_growth = 2575,
 		weapon_ID = {
-			69735
+			68785,
+			68795
+		}
+	},
+	[68776] = {
+		id = 68776,
+		name = "赤城μ技能舰爆Lv6",
+		base = 68771,
+		max_hp = 73,
+		hp_growth = 2796,
+		weapon_ID = {
+			68786,
+			68796
+		}
+	},
+	[68777] = {
+		id = 68777,
+		name = "赤城μ技能舰爆Lv7",
+		base = 68771,
+		max_hp = 79,
+		hp_growth = 3016,
+		weapon_ID = {
+			68787,
+			68797
+		}
+	},
+	[68778] = {
+		id = 68778,
+		name = "赤城μ技能舰爆Lv8",
+		base = 68771,
+		max_hp = 86,
+		hp_growth = 3237,
+		weapon_ID = {
+			68788,
+			68798
+		}
+	},
+	[68779] = {
+		id = 68779,
+		name = "赤城μ技能舰爆Lv9",
+		base = 68771,
+		max_hp = 92,
+		hp_growth = 3458,
+		weapon_ID = {
+			68789,
+			68799
 		}
 	}
 }

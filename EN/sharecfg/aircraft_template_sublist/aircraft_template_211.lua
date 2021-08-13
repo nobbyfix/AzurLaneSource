@@ -1,93 +1,93 @@
 pg = pg or {}
 pg.aircraft_template_211 = {
-	[81361] = {
-		id = 81361,
-		max_hp = 61,
-		hp_growth = 2337,
-		base = 81360,
+	[81063] = {
+		id = 81063,
+		max_hp = 59,
+		hp_growth = 2251,
+		base = 81060,
 		weapon_ID = {
-			50661
+			50363
 		}
 	},
-	[81362] = {
-		id = 81362,
-		max_hp = 69,
-		hp_growth = 2642,
-		base = 81360,
+	[81064] = {
+		id = 81064,
+		max_hp = 65,
+		hp_growth = 2484,
+		base = 81060,
 		weapon_ID = {
-			50662
+			50364
 		}
 	},
-	[81363] = {
-		id = 81363,
+	[81065] = {
+		id = 81065,
+		max_hp = 71,
+		hp_growth = 2717,
+		base = 81060,
+		weapon_ID = {
+			50365
+		}
+	},
+	[81066] = {
+		id = 81066,
 		max_hp = 77,
-		hp_growth = 2947,
-		base = 81360,
+		hp_growth = 2949,
+		base = 81060,
 		weapon_ID = {
-			50663
+			50366
 		}
 	},
-	[81364] = {
-		id = 81364,
-		max_hp = 85,
-		hp_growth = 3251,
-		base = 81360,
+	[81067] = {
+		id = 81067,
+		max_hp = 83,
+		hp_growth = 3182,
+		base = 81060,
 		weapon_ID = {
-			50664
+			50367
 		}
 	},
-	[81365] = {
-		id = 81365,
-		max_hp = 92,
-		hp_growth = 3556,
-		base = 81360,
+	[81068] = {
+		id = 81068,
+		max_hp = 89,
+		hp_growth = 3415,
+		base = 81060,
 		weapon_ID = {
-			50665
+			50368
 		}
 	},
-	[81366] = {
-		id = 81366,
-		max_hp = 100,
-		hp_growth = 3861,
-		base = 81360,
+	[81069] = {
+		id = 81069,
+		max_hp = 95,
+		hp_growth = 3648,
+		base = 81060,
 		weapon_ID = {
-			50666
+			50369
 		}
 	},
-	[81367] = {
-		id = 81367,
-		max_hp = 108,
-		hp_growth = 4166,
-		base = 81360,
+	[81070] = {
+		id = 81070,
+		max_hp = 101,
+		hp_growth = 3881,
+		base = 81060,
 		weapon_ID = {
-			50667
+			50370
 		}
 	},
-	[81368] = {
-		id = 81368,
-		max_hp = 116,
-		hp_growth = 4471,
-		base = 81360,
+	[81071] = {
+		id = 81071,
+		max_hp = 107,
+		hp_growth = 4114,
+		base = 81060,
 		weapon_ID = {
-			50668
+			50371
 		}
 	},
-	[81369] = {
-		id = 81369,
-		max_hp = 124,
-		hp_growth = 4776,
-		base = 81360,
+	[81072] = {
+		id = 81072,
+		max_hp = 113,
+		hp_growth = 4346,
+		base = 81060,
 		weapon_ID = {
-			50669
-		}
-	},
-	[81370] = {
-		id = 81370,
-		max_hp = 132,
-		hp_growth = 5080,
-		base = 81360,
-		weapon_ID = {
-			50670
+			50372
 		}
 	}
 }

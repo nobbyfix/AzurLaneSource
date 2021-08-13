@@ -1,5 +1,42 @@
 pg = pg or {}
 pg.equip_data_statistics_7 = {
+	[438] = {
+		tech = 1,
+		name = "埃吉尔自带强化型副炮",
+		speciality = "Lock",
+		type = 2,
+		rarity = 1,
+		ammo = 1,
+		damage = "23 x 4",
+		nationality = 4,
+		value_2 = 0,
+		id = 438,
+		value_3 = 0,
+		descrip = "Default gear",
+		icon = "1",
+		torpedo_ammo = 0,
+		property_rate = {},
+		ammo_icon = {
+			2
+		},
+		ammo_info = {},
+		equip_info = {},
+		weapon_id = {
+			438
+		},
+		skill_id = {},
+		part_main = {
+			3
+		},
+		part_sub = {},
+		equip_parameters = {},
+		label = {
+			"KMS",
+			"DD",
+			"MG",
+			"AP"
+		}
+	},
 	[500] = {
 		type = 10,
 		name = "Beaver Squad Tag",
@@ -153,11 +190,6 @@ pg.equip_data_statistics_7 = {
 	[521] = {
 		id = 521,
 		value_1 = "230",
-		base = 520
-	},
-	[522] = {
-		id = 522,
-		value_1 = "260",
 		base = 520
 	}
 }

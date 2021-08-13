@@ -31,7 +31,10 @@ pg.activity_const = {
 		act_id = 270
 	},
 	ACTIVITY_PRAY_POOL = {
-		act_id = 4000
+		act_id = 30828
+	},
+	ACTIVITY_BOSS_PT_ID = {
+		act_id = 4031
 	},
 	DAY7_LOGIN_ACTIVITY_ID = {
 		act_id = 3
@@ -232,7 +235,7 @@ pg.activity_const = {
 		act_id = 30472
 	},
 	ACTIVITY_TYPE_RETURN_AWARD_ID4 = {
-		act_id = 990
+		act_id = 30827
 	},
 	BISMARCK_CHAPTER_ID = {
 		act_id = 30146
@@ -362,9 +365,6 @@ pg.activity_const = {
 	},
 	ACTIVITY_ID_ATRE_FURNITURE = {
 		act_id = 30244
-	},
-	ACTIVITY_BOSS_PT_ID = {
-		act_id = 30224
 	},
 	ACTIVITY_JAMAICA_SKIN_PAGE = {
 		act_id = 30228
@@ -601,10 +601,10 @@ pg.activity_const = {
 		act_id = 30360
 	},
 	OUTPOST_PT = {
-		act_id = 30364
+		act_id = 534
 	},
 	OUTPOST_TASK = {
-		act_id = 30366
+		act_id = 4073
 	},
 	APRILFOOL_DISCOVERY = {
 		act_id = 30378
@@ -776,5 +776,20 @@ pg.activity_const = {
 	},
 	MINIGAME_DANGAOBAOWEIZHAN = {
 		act_id = 987
+	},
+	IDOL_MASTER_PT_ID = {
+		act_id = 4052
+	},
+	IDOL_MASTER_MEDAL_ID = {
+		act_id = 4058
+	},
+	IDOL_MASTER_CHAPTER_ID = {
+		act_id = 4050
+	},
+	TIANHOU_SKIN_ACT_ID = {
+		act_id = 4067
+	},
+	ROP_COW_ID = {
+		act_id = 4078
 	}
 }

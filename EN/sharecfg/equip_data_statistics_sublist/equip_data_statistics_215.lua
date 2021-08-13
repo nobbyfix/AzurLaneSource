@@ -1,5 +1,14 @@
 pg = pg or {}
 pg.equip_data_statistics_215 = {
+	[31053] = {
+		id = 31053,
+		anti_siren = 300,
+		damage = "12 x 4",
+		base = 31040,
+		weapon_id = {
+			31053
+		}
+	},
 	[31060] = {
 		tech = 0,
 		name = "Single 100mm Type 88 Naval Gun Mount",
@@ -240,72 +249,6 @@ pg.equip_data_statistics_215 = {
 		base = 31100,
 		weapon_id = {
 			31103
-		}
-	},
-	[31120] = {
-		tech = 2,
-		name = "Single 120mm Type 3 Naval Gun",
-		speciality = "Lock",
-		type = 1,
-		value_2 = 5,
-		ammo = 3,
-		damage = "3 x 1",
-		nationality = 3,
-		rarity = 2,
-		id = 31120,
-		value_3 = 0,
-		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "31100",
-		attribute_2 = "cannon",
-		property_rate = {},
-		ammo_icon = {
-			1
-		},
-		ammo_info = {
-			{
-				1,
-				1200
-			}
-		},
-		equip_info = {
-			1,
-			2,
-			{
-				3,
-				1200
-			},
-			{
-				4,
-				1000
-			},
-			6,
-			10,
-			11,
-			12
-		},
-		weapon_id = {
-			31120
-		},
-		skill_id = {},
-		part_main = {
-			1,
-			19
-		},
-		part_sub = {
-			2,
-			3,
-			4,
-			5,
-			8,
-			13,
-			18
-		},
-		equip_parameters = {},
-		label = {
-			"IJN",
-			"DD",
-			"MG"
 		}
 	}
 }

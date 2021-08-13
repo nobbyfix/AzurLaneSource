@@ -1,279 +1,135 @@
 pg = pg or {}
 pg.equip_data_statistics_383 = {
-	[90223] = {
-		id = 90223,
-		damage = "11 x 6",
-		base = 90220,
-		weapon_id = {
-			90223
-		}
+	[89264] = {
+		id = 89264,
+		value_2 = 19,
+		value_1 = "22",
+		base = 89260
 	},
-	[90240] = {
-		tech = 3,
-		name = "Triple 152mm Mle 1930 Main Gun Mount",
-		speciality = "Scatter",
-		type = 2,
-		value_2 = 12,
-		ammo = 1,
-		damage = "9 x 6",
-		nationality = 8,
-		rarity = 3,
-		id = 90240,
+	[89265] = {
+		id = 89265,
+		value_2 = 20,
+		value_1 = "24",
+		base = 89260
+	},
+	[89266] = {
+		id = 89266,
+		value_2 = 22,
+		value_1 = "26",
+		base = 89260
+	},
+	[89267] = {
+		id = 89267,
+		value_2 = 24,
+		value_1 = "28",
+		base = 89260
+	},
+	[89268] = {
+		id = 89268,
+		value_2 = 26,
+		value_1 = "30",
+		base = 89260
+	},
+	[89269] = {
+		id = 89269,
+		value_2 = 28,
+		value_1 = "32",
+		base = 89260
+	},
+	[89270] = {
+		id = 89270,
+		value_2 = 30,
+		value_1 = "35",
+		base = 89260
+	},
+	[89271] = {
+		value_2 = 32,
+		anti_siren = 100,
+		base = 89260,
+		id = 89271,
+		value_1 = "38"
+	},
+	[89272] = {
+		value_2 = 34,
+		anti_siren = 200,
+		base = 89260,
+		id = 89272,
+		value_1 = "41"
+	},
+	[89273] = {
+		value_2 = 36,
+		anti_siren = 300,
+		base = 89260,
+		id = 89273,
+		value_1 = "44"
+	},
+	[89280] = {
+		type = 10,
+		name = "Shining Bracelet ",
+		speciality = "N/A",
+		tech = 0,
+		value_2 = 16,
+		ammo = 10,
+		descrip = "No description",
+		nationality = 107,
+		rarity = 5,
+		attribute_1 = "dodge",
 		value_3 = 0,
 		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "50200",
-		attribute_2 = "cannon",
+		id = 89280,
+		icon = "89280",
+		value_1 = "6",
+		attribute_2 = "hit",
 		property_rate = {},
-		ammo_icon = {
-			2
-		},
-		ammo_info = {
-			{
-				1,
-				2204
-			}
-		},
+		ammo_icon = {},
+		ammo_info = {},
 		equip_info = {
-			1,
-			2,
-			{
-				3,
-				2204
-			},
-			{
-				4,
-				1102
-			},
-			6,
-			10,
-			11,
-			12
+			6
 		},
-		weapon_id = {
-			90240
+		weapon_id = {},
+		skill_id = {
+			6880
 		},
-		skill_id = {},
-		part_main = {
-			2
-		},
-		part_sub = {
-			5
-		},
-		equip_parameters = {},
-		label = {
-			"FFNF",
-			"CL",
-			"MG",
-			"AP"
-		}
-	},
-	[90241] = {
-		id = 90241,
-		damage = "10 x 6",
-		base = 90240,
-		weapon_id = {
-			90241
-		}
-	},
-	[90242] = {
-		id = 90242,
-		damage = "11 x 6",
-		base = 90240,
-		weapon_id = {
-			90242
-		}
-	},
-	[90243] = {
-		id = 90243,
-		damage = "12 x 6",
-		base = 90240,
-		weapon_id = {
-			90243
-		}
-	},
-	[90244] = {
-		id = 90244,
-		damage = "13 x 6",
-		base = 90240,
-		weapon_id = {
-			90244
-		}
-	},
-	[90245] = {
-		id = 90245,
-		damage = "14 x 6",
-		base = 90240,
-		weapon_id = {
-			90245
-		}
-	},
-	[90246] = {
-		id = 90246,
-		damage = "15 x 6",
-		base = 90240,
-		weapon_id = {
-			90246
-		}
-	},
-	[90247] = {
-		id = 90247,
-		damage = "15 x 6",
-		base = 90240,
-		weapon_id = {
-			90247
-		}
-	},
-	[90300] = {
-		tech = 1,
-		name = "Quadruple 330mm Mle 1931 Main Gun Mount",
-		speciality = "Volley",
-		type = 4,
-		value_2 = 5,
-		ammo = 3,
-		damage = "34 x 4",
-		nationality = 8,
-		rarity = 2,
-		id = 90300,
-		value_3 = 0,
-		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "50300",
-		attribute_2 = "cannon",
-		property_rate = {},
-		ammo_icon = {
-			1
-		},
-		ammo_info = {
-			{
-				2,
-				1550
-			}
-		},
-		equip_info = {
-			1,
-			2,
-			6,
-			10,
-			11,
-			12
-		},
-		weapon_id = {
-			90300
-		},
-		skill_id = {},
-		part_main = {
-			4,
-			5,
-			10,
-			13
-		},
+		part_main = {},
 		part_sub = {},
 		equip_parameters = {},
 		label = {
-			"FFNF",
-			"BB",
-			"MG"
+			"DEV"
 		}
 	},
-	[90301] = {
-		id = 90301,
-		damage = "39 x 4",
-		base = 90300,
-		weapon_id = {
-			90301
-		}
+	[89281] = {
+		id = 89281,
+		value_1 = "7",
+		base = 89280
 	},
-	[90302] = {
-		id = 90302,
-		damage = "44 x 4",
-		base = 90300,
-		weapon_id = {
-			90302
-		}
+	[89282] = {
+		id = 89282,
+		value_2 = 17,
+		value_1 = "7",
+		base = 89280
 	},
-	[90303] = {
-		id = 90303,
-		damage = "49 x 4",
-		base = 90300,
-		weapon_id = {
-			90303
-		}
+	[89283] = {
+		id = 89283,
+		value_2 = 18,
+		value_1 = "8",
+		base = 89280
 	},
-	[90320] = {
-		tech = 2,
-		name = "Quadruple 330mm Mle 1931 Main Gun Mount",
-		speciality = "Volley",
-		type = 4,
-		value_2 = 12,
-		ammo = 3,
-		damage = "37 x 4",
-		nationality = 8,
-		rarity = 3,
-		id = 90320,
-		value_3 = 0,
-		torpedo_ammo = 0,
-		descrip = "No description",
-		icon = "50300",
-		attribute_2 = "cannon",
-		property_rate = {},
-		ammo_icon = {
-			1
-		},
-		ammo_info = {
-			{
-				2,
-				1550
-			}
-		},
-		equip_info = {
-			1,
-			2,
-			6,
-			10,
-			11,
-			12
-		},
-		weapon_id = {
-			90320
-		},
-		skill_id = {},
-		part_main = {
-			4,
-			5,
-			10,
-			13
-		},
-		part_sub = {},
-		equip_parameters = {},
-		label = {
-			"FFNF",
-			"BB",
-			"MG"
-		}
+	[89284] = {
+		id = 89284,
+		value_2 = 19,
+		value_1 = "9",
+		base = 89280
 	},
-	[90321] = {
-		id = 90321,
-		damage = "42 x 4",
-		base = 90320,
-		weapon_id = {
-			90321
-		}
+	[89285] = {
+		id = 89285,
+		value_2 = 20,
+		value_1 = "10",
+		base = 89280
 	},
-	[90322] = {
-		id = 90322,
-		damage = "47 x 4",
-		base = 90320,
-		weapon_id = {
-			90322
-		}
-	},
-	[90323] = {
-		id = 90323,
-		damage = "52 x 4",
-		base = 90320,
-		weapon_id = {
-			90323
-		}
+	[89286] = {
+		id = 89286,
+		value_2 = 21,
+		value_1 = "11",
+		base = 89280
 	}
 }

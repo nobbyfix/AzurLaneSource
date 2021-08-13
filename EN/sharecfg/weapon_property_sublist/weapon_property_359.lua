@@ -2,6 +2,16 @@ pg = pg or {}
 pg.weapon_property_359 = {}
 
 function ()
+	uv0.weapon_property_359[1001248] = {
+		id = 1001248,
+		name = "【精英】潜伏者II型 开幕雷击 III",
+		base = 1000897
+	}
+	uv0.weapon_property_359[1001249] = {
+		id = 1001249,
+		name = "【精英】潜伏者II型 开幕雷击 IV",
+		base = 1000898
+	}
 	uv0.weapon_property_359[1001250] = {
 		id = 1001250,
 		name = "【精英】潜伏者II型 开幕雷击 V",

@@ -1,134 +1,71 @@
 pg = pg or {}
 pg.aircraft_template_146 = {
-	[65912] = {
-		id = 65912,
-		name = "天鹰技能G.50Lv2",
-		base = 65911,
-		max_hp = 52,
-		hp_growth = 2018,
+	[64606] = {
+		id = 64606,
+		max_hp = 61,
+		hp_growth = 2341,
+		base = 64601,
 		weapon_ID = {
-			50042,
-			50542,
-			65922
+			64616
 		}
 	},
-	[65913] = {
-		id = 65913,
-		name = "天鹰技能G.50Lv3",
-		base = 65911,
-		max_hp = 59,
-		hp_growth = 2251,
+	[64607] = {
+		id = 64607,
+		max_hp = 66,
+		hp_growth = 2541,
+		base = 64601,
 		weapon_ID = {
-			50043,
-			50543,
-			65923
+			64617
 		}
 	},
-	[65914] = {
-		id = 65914,
-		name = "天鹰技能G.50Lv4",
-		base = 65911,
-		max_hp = 65,
-		hp_growth = 2484,
-		weapon_ID = {
-			50044,
-			50544,
-			65924
-		}
-	},
-	[65915] = {
-		id = 65915,
-		name = "天鹰技能G.50Lv5",
-		base = 65911,
+	[64608] = {
+		id = 64608,
 		max_hp = 71,
-		hp_growth = 2717,
+		hp_growth = 2742,
+		base = 64601,
 		weapon_ID = {
-			50045,
-			50545,
-			65925
+			64618
 		}
 	},
-	[65916] = {
-		id = 65916,
-		name = "天鹰技能G.50Lv6",
-		base = 65911,
+	[64609] = {
+		id = 64609,
 		max_hp = 77,
-		hp_growth = 2949,
+		hp_growth = 2943,
+		base = 64601,
 		weapon_ID = {
-			50046,
-			50546,
-			65926
+			64619
 		}
 	},
-	[65917] = {
-		id = 65917,
-		name = "天鹰技能G.50Lv7",
-		base = 65911,
-		max_hp = 83,
-		hp_growth = 3182,
+	[64610] = {
+		id = 64610,
+		max_hp = 82,
+		hp_growth = 3143,
+		base = 64601,
 		weapon_ID = {
-			50047,
-			50547,
-			65927
+			64620
 		}
 	},
-	[65918] = {
-		id = 65918,
-		name = "天鹰技能G.50Lv8",
-		base = 65911,
-		max_hp = 89,
-		hp_growth = 3415,
-		weapon_ID = {
-			50048,
-			50548,
-			65928
-		}
-	},
-	[65919] = {
-		id = 65919,
-		name = "天鹰技能G.50Lv9",
-		base = 65911,
-		max_hp = 95,
-		hp_growth = 3648,
-		weapon_ID = {
-			50049,
-			50549,
-			65929
-		}
-	},
-	[65920] = {
-		id = 65920,
-		name = "天鹰技能G.50Lv10",
-		base = 65911,
-		max_hp = 101,
-		hp_growth = 3881,
-		weapon_ID = {
-			50050,
-			50550,
-			65930
-		}
-	},
-	[65931] = {
+	[65061] = {
 		attack_power = 2,
-		name = "天鹰技能Re.2001舰载鱼雷机Lv1",
+		name = "普林斯顿技能鱼雷机Lv1",
 		type = 2,
 		accuracy = 23,
-		model_ID = "re2001",
+		model_ID = "tbf",
 		ACC_growth = 0,
-		crash_DMG = 148,
-		dodge = 0.315,
+		crash_DMG = 406,
+		dodge = 1,
 		funnel_behavior = "",
-		nationality = 6,
-		id = 65931,
-		icon = "re2001",
+		nationality = 1,
+		id = 65061,
+		icon = "tbf",
 		AP_growth = 2000,
-		dodge_limit = 9,
-		hp_growth = 1404,
-		speed = 46,
-		max_hp = 37,
+		dodge_limit = 0,
+		hp_growth = 1615,
+		speed = 48,
+		max_hp = 42,
 		scale = 1,
 		weapon_ID = {
-			65941
+			65071
 		},
 		position_offset = {
 			0,
@@ -171,7 +108,7 @@ pg.aircraft_template_146 = {
 				0
 			},
 			{
-				0.27,
+				0.52,
 				0,
 				0
 			},
@@ -180,6 +117,46 @@ pg.aircraft_template_146 = {
 				0,
 				0
 			}
+		}
+	},
+	[65062] = {
+		id = 65062,
+		name = "普林斯顿技能鱼雷机Lv2",
+		base = 65061,
+		max_hp = 47,
+		hp_growth = 1826,
+		weapon_ID = {
+			65072
+		}
+	},
+	[65063] = {
+		id = 65063,
+		name = "普林斯顿技能鱼雷机Lv3",
+		base = 65061,
+		max_hp = 53,
+		hp_growth = 2036,
+		weapon_ID = {
+			65073
+		}
+	},
+	[65064] = {
+		id = 65064,
+		name = "普林斯顿技能鱼雷机Lv4",
+		base = 65061,
+		max_hp = 58,
+		hp_growth = 2247,
+		weapon_ID = {
+			65074
+		}
+	},
+	[65065] = {
+		id = 65065,
+		name = "普林斯顿技能鱼雷机Lv5",
+		base = 65061,
+		max_hp = 64,
+		hp_growth = 2458,
+		weapon_ID = {
+			65075
 		}
 	}
 }

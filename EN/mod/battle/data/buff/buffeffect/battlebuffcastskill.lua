@@ -7,6 +7,9 @@ slot1.FX_TYPE = slot0.Battle.BattleBuffEffect.FX_TYPE_CASTER
 
 function slot1.Ctor(slot0, slot1)
 	uv0.super.Ctor(slot0, slot1)
+
+	slot0._castCount = 0
+	slot0._fireSkillDMGSum = 0
 end
 
 function slot1.GetEffectType(slot0)
@@ -35,6 +38,7 @@ function slot1.SetArgs(slot0, slot1, slot2)
 	slot0._dungeonTypeList = slot3.dungeonTypeList
 	slot0._effectAttachData = slot3.effectAttachData
 	slot0._group = slot3.group
+	slot0._srcBuff = slot2
 end
 
 function slot1.onBulletCreate(slot0, slot1, slot2, slot3)
@@ -64,25 +68,25 @@ function slot1.castSkill(slot0, slot1, slot2, slot3)
 
 	if slot0._check_target then
 		if not slot0:getTargetList(slot1, slot0._check_target, slot0._tempData.arg_list) then
-			return "check"
+			return "check target none"
 		end
 
 		if #slot5 < slot0._minTargetNumber then
-			return "check"
+			return "check target min"
 		end
 
 		if slot0._maxTargetNumber < slot6 then
-			return "check"
+			return "check target max"
 		end
 	end
 
 	if slot0._check_weapon then
 		if #uv1.GetEquipmentList(slot1, slot0._tempData.arg_list) < slot0._minWeaponNumber then
-			return "check"
+			return "check weapon min"
 		end
 
 		if slot0._maxWeaponNumber < slot6 then
-			return "check"
+			return "check weapon max"
 		end
 	end
 
@@ -90,24 +94,24 @@ function slot1.castSkill(slot0, slot1, slot2, slot3)
 		slot5 = nil
 
 		if not slot0:hpIntervalRequire((slot2 and slot2.unit or slot1:GetHPRate()) and slot2.unit:GetHPRate()) then
-			return "check"
+			return "check hp"
 		end
 	end
 
 	if slot0._attrInterval and not slot0:attrIntervalRequire(uv0.Battle.BattleAttr.GetBase(slot1, slot0._attrInterval)) then
-		return "check"
+		return "check interval"
 	end
 
 	if slot0._streak and not uv1.GetWinningStreak(slot0._streak) then
-		return "check"
+		return "check winning streak"
 	end
 
 	if slot0._dungeonTypeList and not uv1.GetDungeonType(slot0._dungeonTypeList) then
-		return "check"
+		return "check dungeon"
 	end
 
 	if slot0._effectAttachData and not slot0:BuffAttachDataCondition(slot3) then
-		return "check"
+		return "check attach data"
 	end
 
 	slot9 = slot0._tempData.arg_list
@@ -151,6 +155,8 @@ function slot1.spell(slot0, slot1)
 	end
 
 	slot0._skill:Cast(slot1, slot0._commander)
+
+	slot0._castCount = slot0._castCount + 1
 end
 
 function slot1.enterCoolDown(slot0, slot1)
@@ -259,4 +265,14 @@ function slot1.GetEquipmentList(slot0, slot1)
 	end
 
 	return slot3
+end
+
+function slot1.GetCastCount(slot0)
+	return slot0._castCount
+end
+
+function slot1.GetSkillFireDamageSum(slot0)
+	slot0._fireSkillDMGSum = math.max(slot0._skill and slot0._skill:GetDamageSum() or 0, slot0._fireSkillDMGSum)
+
+	return slot0._fireSkillDMGSum
 end

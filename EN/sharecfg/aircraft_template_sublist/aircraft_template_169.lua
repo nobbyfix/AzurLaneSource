@@ -1,142 +1,70 @@
 pg = pg or {}
 pg.aircraft_template_169 = {
-	[67938] = {
-		id = 67938,
-		name = "独立技能鱼雷机Lv8",
-		base = 67931,
-		max_hp = 80,
-		hp_growth = 3090,
-		weapon_ID = {
-			67958
-		}
-	},
-	[67939] = {
-		id = 67939,
-		name = "独立技能鱼雷机Lv9",
-		base = 67931,
+	[67247] = {
+		id = 67247,
+		name = "伊势技能轰炸机Lv7",
+		base = 67240,
 		max_hp = 86,
-		hp_growth = 3301,
+		hp_growth = 3290,
 		weapon_ID = {
-			67959
+			67267,
+			67287
 		}
 	},
-	[67940] = {
-		id = 67940,
-		name = "独立技能鱼雷机Lv10",
-		base = 67931,
-		max_hp = 91,
-		hp_growth = 3511,
+	[67248] = {
+		id = 67248,
+		name = "伊势技能轰炸机Lv8",
+		base = 67240,
+		max_hp = 92,
+		hp_growth = 3531,
 		weapon_ID = {
-			67960
+			67268,
+			67288
 		}
 	},
-	[67981] = {
+	[67249] = {
+		id = 67249,
+		name = "伊势技能轰炸机Lv9",
+		base = 67240,
+		max_hp = 98,
+		hp_growth = 3772,
+		weapon_ID = {
+			67269,
+			67289
+		}
+	},
+	[67250] = {
+		id = 67250,
+		name = "伊势技能轰炸机Lv10",
+		base = 67240,
+		max_hp = 104,
+		hp_growth = 4013,
+		weapon_ID = {
+			67270,
+			67290
+		}
+	},
+	[67300] = {
 		attack_power = 2,
-		name = "香格里拉技能飞机-PVE",
-		type = 1,
+		name = "大凤技能轰炸机Lv0",
+		type = 3,
 		accuracy = 23,
-		model_ID = "F6F",
+		model_ID = "huixing",
 		ACC_growth = 0,
-		crash_DMG = 406,
-		dodge = 1,
-		nationality = 1,
-		id = 67981,
-		icon = "F6F",
-		AP_growth = 2000,
-		dodge_limit = 0,
-		hp_growth = 2282,
-		speed = 48,
-		max_hp = 69,
-		scale = 1,
-		funnel_behavior = {
-			offsetZ = -26,
-			hover_range = 18,
-			offsetX = 22
-		},
-		weapon_ID = {},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.68,
-					-0.667,
-					0
-				},
-				{
-					0.97,
-					0.584,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.52,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[67982] = {
-		id = 67982,
-		name = "香格里拉技能飞机-PVP",
-		base = 67981,
-		funnel_behavior = {
-			offsetZ = -14,
-			hover_range = 18,
-			offsetX = 4
-		}
-	},
-	[68001] = {
-		attack_power = 2,
-		name = "邦克山技能鱼雷机Lv1",
-		type = 2,
-		accuracy = 23,
-		model_ID = "tbf",
-		ACC_growth = 0,
-		crash_DMG = 406,
+		crash_DMG = 208,
 		dodge = 1,
 		funnel_behavior = "",
-		nationality = 1,
-		id = 68001,
-		icon = "tbf",
+		nationality = 3,
+		id = 67300,
+		icon = "huixing",
 		AP_growth = 2000,
 		dodge_limit = 0,
-		hp_growth = 1404,
-		speed = 48,
-		max_hp = 37,
+		hp_growth = 1605,
+		speed = 60,
+		max_hp = 42,
 		scale = 1,
 		weapon_ID = {
-			68011
+			67380
 		},
 		position_offset = {
 			0,
@@ -156,13 +84,13 @@ pg.aircraft_template_169 = {
 		bound_bone = {
 			weapon = {
 				{
-					0.68,
-					-0.667,
+					0.71,
+					-1.73,
 					0
 				},
 				{
-					0.97,
-					0.584,
+					0.82,
+					2.04,
 					0
 				}
 			}
@@ -179,8 +107,8 @@ pg.aircraft_template_169 = {
 				0
 			},
 			{
-				0.15,
-				-0.08,
+				0.64,
+				0,
 				0
 			},
 			{
@@ -190,44 +118,54 @@ pg.aircraft_template_169 = {
 			}
 		}
 	},
-	[68002] = {
-		id = 68002,
-		name = "邦克山技能鱼雷机Lv2",
-		base = 68001,
-		max_hp = 42,
-		hp_growth = 1615,
+	[67301] = {
+		id = 67301,
+		name = "大凤技能轰炸机Lv1",
+		base = 67300,
+		max_hp = 48,
+		hp_growth = 1846,
 		weapon_ID = {
-			68012
+			67381
 		}
 	},
-	[68003] = {
-		id = 68003,
-		name = "邦克山技能鱼雷机Lv3",
-		base = 68001,
-		max_hp = 47,
-		hp_growth = 1826,
+	[67302] = {
+		id = 67302,
+		name = "大凤技能轰炸机Lv2",
+		base = 67300,
+		max_hp = 54,
+		hp_growth = 2087,
 		weapon_ID = {
-			68013
+			67382
 		}
 	},
-	[68004] = {
-		id = 68004,
-		name = "邦克山技能鱼雷机Lv4",
-		base = 68001,
-		max_hp = 53,
-		hp_growth = 2036,
+	[67303] = {
+		id = 67303,
+		name = "大凤技能轰炸机Lv3",
+		base = 67300,
+		max_hp = 61,
+		hp_growth = 2327,
 		weapon_ID = {
-			68014
+			67383
 		}
 	},
-	[68005] = {
-		id = 68005,
-		name = "邦克山技能鱼雷机Lv5",
-		base = 68001,
-		max_hp = 58,
-		hp_growth = 2247,
+	[67304] = {
+		id = 67304,
+		name = "大凤技能轰炸机Lv4",
+		base = 67300,
+		max_hp = 67,
+		hp_growth = 2568,
 		weapon_ID = {
-			68015
+			67384
+		}
+	},
+	[67305] = {
+		id = 67305,
+		name = "大凤技能轰炸机Lv5",
+		base = 67300,
+		max_hp = 73,
+		hp_growth = 2809,
+		weapon_ID = {
+			67385
 		}
 	}
 }

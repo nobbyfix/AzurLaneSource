@@ -1,192 +1,57 @@
 pg = pg or {}
 pg.aircraft_template_260 = {
-	[95767] = {
-		id = 95767,
-		max_hp = 83,
-		hp_growth = 3182,
-		base = 95760,
+	[84104] = {
+		id = 84104,
+		max_hp = 56,
+		hp_growth = 2150,
+		base = 84100,
 		weapon_ID = {
-			50047,
-			50547,
-			52147
+			59104,
+			59204
 		}
 	},
-	[95768] = {
-		id = 95768,
-		max_hp = 89,
-		hp_growth = 3415,
-		base = 95760,
+	[84105] = {
+		id = 84105,
+		max_hp = 61,
+		hp_growth = 2352,
+		base = 84100,
 		weapon_ID = {
-			50048,
-			50548,
-			52148
+			59105,
+			59205
 		}
 	},
-	[95769] = {
-		id = 95769,
-		max_hp = 95,
-		hp_growth = 3648,
-		base = 95760,
+	[84106] = {
+		id = 84106,
+		max_hp = 66,
+		hp_growth = 2554,
+		base = 84100,
 		weapon_ID = {
-			50049,
-			50549,
-			52149
+			59106,
+			59206
 		}
 	},
-	[95770] = {
-		id = 95770,
-		max_hp = 101,
-		hp_growth = 3881,
-		base = 95760,
-		weapon_ID = {
-			50050,
-			50550,
-			52150
-		}
-	},
-	[95771] = {
-		id = 95771,
-		max_hp = 107,
-		hp_growth = 4114,
-		base = 95760,
-		weapon_ID = {
-			50051,
-			50551,
-			52151
-		}
-	},
-	[95800] = {
+	[84120] = {
 		attack_power = 2,
-		name = "Re.2001公羊T1",
+		name = "Me-155A舰载战斗机T2",
 		type = 1,
 		accuracy = 23,
-		model_ID = "re2001",
+		model_ID = "Me155A",
 		ACC_growth = 0,
-		crash_DMG = 148,
-		dodge = 0.339,
-		funnel_behavior = "",
-		nationality = 6,
-		id = 95800,
-		icon = "re2001",
-		AP_growth = 2000,
-		dodge_limit = 8,
-		hp_growth = 1149,
-		speed = 46,
-		max_hp = 30,
-		scale = 1,
-		weapon_ID = {
-			50000,
-			50700,
-			52200
-		},
-		position_offset = {
-			0,
-			5,
-			0
-		},
-		cld_box = {
-			1,
-			1,
-			1
-		},
-		cld_offset = {
-			0,
-			0,
-			0
-		},
-		bound_bone = {
-			weapon = {
-				{
-					0.68,
-					-0.667,
-					0
-				},
-				{
-					0.97,
-					0.584,
-					0
-				}
-			}
-		},
-		fx_container = {
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			},
-			{
-				0.27,
-				0,
-				0
-			},
-			{
-				0,
-				0,
-				0
-			}
-		}
-	},
-	[95801] = {
-		id = 95801,
-		max_hp = 34,
-		hp_growth = 1321,
-		base = 95800,
-		weapon_ID = {
-			50001,
-			50701,
-			52201
-		}
-	},
-	[95802] = {
-		id = 95802,
-		max_hp = 39,
-		hp_growth = 1494,
-		base = 95800,
-		weapon_ID = {
-			50002,
-			50702,
-			52202
-		}
-	},
-	[95803] = {
-		id = 95803,
-		max_hp = 43,
-		hp_growth = 1666,
-		base = 95800,
-		weapon_ID = {
-			50003,
-			50703,
-			52203
-		}
-	},
-	[95820] = {
-		attack_power = 2,
-		name = "Re.2001公羊T2",
-		type = 1,
-		accuracy = 23,
-		model_ID = "re2001",
-		ACC_growth = 0,
-		crash_DMG = 148,
+		crash_DMG = 65,
 		dodge = 0.327,
 		funnel_behavior = "",
-		nationality = 6,
-		id = 95820,
-		icon = "re2001",
+		nationality = 4,
+		id = 84120,
+		icon = "Me155A",
 		AP_growth = 2000,
-		dodge_limit = 8.5,
-		hp_growth = 1277,
-		speed = 46,
-		max_hp = 33,
+		dodge_limit = 9.5,
+		hp_growth = 1478,
+		speed = 50,
+		max_hp = 38,
 		scale = 1,
 		weapon_ID = {
-			50020,
-			50720,
-			52220
+			59120,
+			59220
 		},
 		position_offset = {
 			0,
@@ -229,7 +94,7 @@ pg.aircraft_template_260 = {
 				0
 			},
 			{
-				0.27,
+				0.51,
 				0,
 				0
 			},
@@ -238,6 +103,66 @@ pg.aircraft_template_260 = {
 				0,
 				0
 			}
+		}
+	},
+	[84121] = {
+		id = 84121,
+		max_hp = 44,
+		hp_growth = 1700,
+		base = 84120,
+		weapon_ID = {
+			59121,
+			59221
+		}
+	},
+	[84122] = {
+		id = 84122,
+		max_hp = 50,
+		hp_growth = 1922,
+		base = 84120,
+		weapon_ID = {
+			59122,
+			59222
+		}
+	},
+	[84123] = {
+		id = 84123,
+		max_hp = 56,
+		hp_growth = 2144,
+		base = 84120,
+		weapon_ID = {
+			59123,
+			59223
+		}
+	},
+	[84124] = {
+		id = 84124,
+		max_hp = 62,
+		hp_growth = 2365,
+		base = 84120,
+		weapon_ID = {
+			59124,
+			59224
+		}
+	},
+	[84125] = {
+		id = 84125,
+		max_hp = 67,
+		hp_growth = 2587,
+		base = 84120,
+		weapon_ID = {
+			59125,
+			59225
+		}
+	},
+	[84126] = {
+		id = 84126,
+		max_hp = 73,
+		hp_growth = 2809,
+		base = 84120,
+		weapon_ID = {
+			59126,
+			59226
 		}
 	}
 }

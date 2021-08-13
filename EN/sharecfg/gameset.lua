@@ -338,7 +338,7 @@ pg.gameset = {
 	},
 	activity_res_id = {
 		description = "PT",
-		key_value = 208
+		key_value = 215
 	},
 	chapter_move_speed_1 = {
 		description = "",
@@ -1514,9 +1514,9 @@ pg.gameset = {
 		key_value = 1,
 		description = {
 			{
-				20010,
-				20011,
-				20012
+				20013,
+				20014,
+				20015
 			}
 		}
 	},
@@ -1626,7 +1626,7 @@ pg.gameset = {
 	},
 	skin_ticket = {
 		description = "",
-		key_value = 209
+		key_value = 218
 	},
 	order_pt_max = {
 		key_value = 0,
@@ -1682,6 +1682,10 @@ pg.gameset = {
 			{
 				20101,
 				10000
+			},
+			{
+				20102,
+				10000
 			}
 		}
 	},
@@ -1697,16 +1701,24 @@ pg.gameset = {
 		key_value = 4
 	},
 	doa_fever_buff = {
-		description = "",
-		key_value = 8761
+		key_value = 8761,
+		description = {
+			8765,
+			8767,
+			8769
+		}
 	},
 	doa_fever_recover = {
 		description = "",
 		key_value = 0
 	},
 	doa_fever_strategy = {
-		description = "",
-		key_value = 10021
+		key_value = 10021,
+		description = {
+			10031,
+			10032,
+			10033
+		}
 	},
 	meta_skill_exp_double = {
 		description = "",
@@ -2122,7 +2134,88 @@ pg.gameset = {
 		key_value = 0
 	},
 	permanent_mark = {
-		description = "20210610",
+		description = "20210715",
 		key_value = 0
+	},
+	vow_prop_conversion = {
+		key_value = 0,
+		description = {
+			15006,
+			15011
+		}
+	},
+	blueprint_pursue_discount_ssr = {
+		key_value = 0,
+		description = {
+			{
+				1,
+				0
+			},
+			{
+				3,
+				10
+			},
+			{
+				5,
+				20
+			},
+			{
+				8,
+				40
+			},
+			{
+				11,
+				70
+			},
+			{
+				16,
+				100
+			}
+		}
+	},
+	dayandnight_bgm = {
+		key_value = 4050,
+		description = {
+			{
+				{
+					0,
+					5
+				},
+				"bg_main_night",
+				"idom-Tender"
+			},
+			{
+				{
+					5,
+					8
+				},
+				"bg_main_twilight",
+				"idom-MainBGM"
+			},
+			{
+				{
+					8,
+					16
+				},
+				"bg_main_day",
+				"idom-MainBGM"
+			},
+			{
+				{
+					16,
+					19
+				},
+				"bg_main_twilight",
+				"idom-MainBGM"
+			},
+			{
+				{
+					19,
+					24
+				},
+				"bg_main_night",
+				"idom-Tender"
+			}
+		}
 	}
 }
