@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.05
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.061,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.061
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.072
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.083,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.083
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.094,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.094
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.105,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.105
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.116,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.116
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.127,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.127
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.138,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.138
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.15
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "前线侦查",
 	init_effect = "jinengchufared",
-	id = 1070,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "伤害提高",
 	stack = 1,
-	color = "yellow",
+	id = 1070,
 	icon = 1070,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.05
 			}
 		}
 	}

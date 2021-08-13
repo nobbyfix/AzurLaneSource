@@ -4,9 +4,9 @@ pg.expedition_daily_template = {
 		tips = "Escort Mission available on every Monday, Thursday and Sunday",
 		limit_type = 1,
 		limit_time = 3,
-		pic = "daily1",
-		title = "商船护送",
 		id = 201,
+		title = "商船护送",
+		pic = "daily1",
 		des = "Our Cargo ship is damaged by enemy torpedoes! Escort it to get a large number of Equipment Materials",
 		weekday = {
 			1,
@@ -57,12 +57,12 @@ pg.expedition_daily_template = {
 		}
 	},
 	[301] = {
-		tips = "Maritime Attack available on every Tuesday, Friday and Sunday",
+		tips = "Advance Mission available on every Tuesday, Friday and Sunday",
 		limit_type = 1,
 		limit_time = 3,
-		pic = "daily2",
-		title = "海域突进",
 		id = 301,
+		title = "海域突进",
+		pic = "daily2",
 		des = "Enemy self-destruction boats are zerging around! Clear them will have a chance to get Tactical Materials",
 		weekday = {
 			2,
@@ -93,12 +93,12 @@ pg.expedition_daily_template = {
 		}
 	},
 	[401] = {
-		tips = "Beheading Operation available on every Wednesday, Saturday and Sunday",
+		tips = "Fierce Assault available on every Wednesday, Saturday and Sunday",
 		limit_type = 1,
 		limit_time = 3,
-		pic = "daily3",
-		title = "斩首行动",
 		id = 401,
+		title = "斩首行动",
+		pic = "daily3",
 		des = "Warning! Enemy Bosses on sight! Destroy them will have a chance to get Mystery Tech Packs",
 		weekday = {
 			3,
@@ -132,9 +132,9 @@ pg.expedition_daily_template = {
 		tips = "Supply Line Disruption is open every day, and can be played a maximum of 2 times weekly. ",
 		limit_type = 2,
 		limit_time = 2,
-		pic = "daily5",
-		title = "Supply Line Disruption ",
 		id = 501,
+		title = "Supply Line Disruption ",
+		pic = "daily5",
 		des = "Launch an operation to disrupt enemy supply lines with your Submarine Fleet! Success will grant you various Submarine gear blueprints! ",
 		weekday = {
 			1,
@@ -172,9 +172,9 @@ pg.expedition_daily_template = {
 		tips = "战术研修每天开启",
 		limit_type = 1,
 		limit_time = 3,
-		pic = "daily6",
-		title = "战术研修",
 		id = 601,
+		title = "战术研修",
+		pic = "daily6",
 		des = "强大的特战敌人出现了！击破有几率获得战术升级材料",
 		weekday = {
 			1,
@@ -208,5 +208,3 @@ pg.expedition_daily_template = {
 		601
 	}
 }
-
-return

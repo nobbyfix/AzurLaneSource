@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YANZHAN7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"The Royal Knight\n\n<size=45>Chapter 7: The Guardian Sword</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "Ah!!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,8 +50,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 2.15,
 					dur = 0.15,
 					x = 0,
@@ -124,15 +124,15 @@ return {
 			}
 		},
 		{
+			say = "Port - Near the Office",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-2",
-			say = "Port - Near the Office",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -221,15 +221,15 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "... Commander...?",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -414,17 +414,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 205020,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "……",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -449,15 +449,15 @@ return {
 			}
 		},
 		{
+			actor = 204010,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 204010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Y-you're having a laugh! It can't have been our Warspite!",
 			flashout = {
-				dur = 0.2,
 				black = true,
+				dur = 0.2,
 				alpha = {
 					0,
 					1
@@ -482,11 +482,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "We speak the truth! We saw it with our very own royal eyes. Warspite laid up with the Commander in the executive office!",
 			typewriter = {
 				speed = 0.05,
@@ -498,8 +498,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,
@@ -524,11 +524,11 @@ return {
 			}
 		},
 		{
+			actor = 205010,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 205010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "As our personal royal guard, she will of course deliver a satisfactory explanation!",
 			typewriter = {
 				speed = 0.05,
@@ -540,8 +540,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,

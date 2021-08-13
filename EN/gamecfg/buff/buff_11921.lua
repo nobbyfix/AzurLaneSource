@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 350,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 350
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 400,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 400
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 450,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 450
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 550,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 550
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 600
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 650,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 650
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 700
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 750,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 750
 				}
 			}
 		}
@@ -133,15 +133,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 800
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "天之骑士对克利夫兰增益",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "炮击提升",
 	stack = 1,
@@ -162,8 +162,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 350,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 350
 			}
 		}
 	}

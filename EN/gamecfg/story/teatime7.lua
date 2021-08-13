@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TEATIME7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -185,10 +185,10 @@ return {
 			}
 		},
 		{
-			actorShadow = true,
-			side = 1,
-			actorName = "{namecode:13}&{namecode:14}",
 			actor = 301121,
+			actorShadow = true,
+			actorName = "{namecode:13}&{namecode:14}",
+			side = 1,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "……",
@@ -225,12 +225,12 @@ return {
 			}
 		},
 		{
-			say = "Sorry, please excuse, I never want to be——",
+			actor = 301111,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = -1,
-			actor = 301111,
 			actorName = "{namecode:13}",
+			dir = -1,
+			say = "Sorry, please excuse, I never want to be——",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -245,14 +245,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 207020,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Ah, those sister destroyer ships have returned back to port. Sorry, I must take my leave~",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -277,12 +277,12 @@ return {
 			}
 		},
 		{
-			say = "And just like that she disappeared, those carriers from the Royal Navy are really unfathomable.",
+			actor = 301111,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 301111,
 			actorName = "{namecode:13}",
+			dir = 1,
+			say = "And just like that she disappeared, those carriers from the Royal Navy are really unfathomable.",
 			paintingFadeOut = {
 				time = 0,
 				side = 0
@@ -315,8 +315,8 @@ return {
 			actor = 301121,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:14}",
+			dir = -1,
 			say = "After all this is an unfathomable place...",
 			typewriter = {
 				speed = 0.05,
@@ -406,8 +406,8 @@ return {
 			actor = 301121,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:14}",
+			dir = -1,
 			say = "{namecode:14} am looking forward to the next tea party~",
 			typewriter = {
 				speed = 0.05,
@@ -422,8 +422,8 @@ return {
 			actor = 301111,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actorName = "{namecode:13}",
+			dir = -1,
 			say = "For next time, let’s organize a video game party. We'll bring along Long Island——",
 			typewriter = {
 				speed = 0.05,
@@ -438,8 +438,8 @@ return {
 			actor = 301121,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "{namecode:14}",
+			dir = -1,
 			say = "Absolutely—— not!",
 			typewriter = {
 				speed = 0.05,
@@ -451,11 +451,11 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "At the same time, {namecode:11}...",
+			blackBg = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -480,8 +480,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "[South Latitude 71°31′34″ East Longitude 24°08′17″]",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -492,12 +492,12 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "{namecode:11}",
 			dir = 1,
 			blackBg = true,
-			actor = 301090,
-			actorName = "{namecode:11}",
 			say = "There’s no trace of {namecode:12}’s lifesign. Hmm… oh look, there’s a note? Antarctic Bird Survey Station, Queen Maud Land——",
 			typewriter = {
 				speed = 0.05,

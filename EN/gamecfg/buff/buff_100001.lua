@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "阶段触发器",
 	init_effect = "",
-	id = 100001,
+	name = "阶段触发器",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "获得新武器",
 	stack = 1,
-	color = "yellow",
+	id = 100001,
 	icon = 100001,
 	last_effect = "",
 	effect_list = {
@@ -26,8 +26,8 @@ return {
 			},
 			arg_list = {
 				hpUpperBound = 0.8,
-				skill_id = 100003,
 				target = "TargetSelf",
+				skill_id = 100003,
 				quota = 1
 			}
 		},
@@ -38,8 +38,8 @@ return {
 			},
 			arg_list = {
 				hpUpperBound = 0.5,
-				skill_id = 100004,
 				target = "TargetSelf",
+				skill_id = 100004,
 				quota = 1
 			}
 		},
@@ -50,8 +50,8 @@ return {
 			},
 			arg_list = {
 				hpUpperBound = 0.2,
-				skill_id = 100005,
 				target = "TargetSelf",
+				skill_id = 100005,
 				quota = 1
 			}
 		}

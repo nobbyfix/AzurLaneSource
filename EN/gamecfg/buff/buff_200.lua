@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "弹药充足",
 	init_effect = "",
-	id = 200,
+	name = "弹药充足",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "舰队伤害提高10%",
 	stack = 1,
-	color = "yellow",
+	id = 200,
 	icon = 200,
 	last_effect = "",
 	effect_list = {

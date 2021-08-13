@@ -1,18 +1,18 @@
 return {
-	mode = 2,
-	once = true,
 	id = "BSMXU1",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			blackBg = true,
-			bgm = "echo-loop",
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "Hrmm... we've been out this long and still not a single target...",
+			bgm = "echo-loop",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -25,11 +25,11 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
-			say = "othing but icebergs. Not even a whale. I'm guessing faulty intelligence?",
+			dir = 1,
+			blackBg = true,
+			say = "nothing but icebergs. Not even a whale. I'm guessing faulty intelligence?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -40,12 +40,12 @@ return {
 			}
 		},
 		{
-			say = "Even an ace submarine comes back empty-handed every once in a while",
+			actor = 408030,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 408030,
-			nameColor = "#a9f548",
+			say = "Even an ace submarine comes back empty-handed every once in a while",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -62,10 +62,10 @@ return {
 		{
 			expression = 1,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "Then am I just unlucky? Everybody at the port's been saying I'm such a lucky girl.",
 			typewriter = {
 				speed = 0.05,
@@ -79,10 +79,10 @@ return {
 		{
 			expression = 3,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "What happens when I come back from my first sortie with nothing to show for it? I couldn't face Lord Bismarck like that!",
 			typewriter = {
 				speed = 0.05,
@@ -110,11 +110,11 @@ return {
 			}
 		},
 		{
+			actor = 900180,
 			side = 0,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 900180,
-			nameColor = "#a9f548",
 			say = "Where?!",
 			typewriter = {
 				speed = 0.05,
@@ -126,8 +126,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -168,11 +168,11 @@ return {
 			}
 		},
 		{
+			actor = 900180,
 			side = 0,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 900180,
-			nameColor = "#a9f548",
 			say = "Witness... the first majestic battle of Unterseeritter U-556!",
 			effects = {
 				{
@@ -190,8 +190,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -202,10 +202,10 @@ return {
 		{
 			expression = 2,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "Ooohh! Such an invigorating feeling... coursing through my entire body!! I feel fantastic!!!",
 			typewriter = {
 				speed = 0.05,
@@ -217,11 +217,11 @@ return {
 			}
 		},
 		{
+			actor = 408030,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 408030,
-			nameColor = "#a9f548",
 			say = "Shhhh! Quiet down... We need to dive before they see us.",
 			effects = {
 				{
@@ -241,10 +241,10 @@ return {
 		{
 			expression = 2,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "(Whispering) Understood! Unterseeritter U-556, commencing operation.",
 			typewriter = {
 				speed = 0.05,
@@ -256,8 +256,8 @@ return {
 			},
 			action = {
 				{
-					y = -1000,
 					type = "move",
+					y = -1000,
 					delay = 0,
 					dur = 2.5,
 					x = 0

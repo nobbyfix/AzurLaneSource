@@ -119,14 +119,14 @@ return {
 			}
 		}
 	},
-	time = 0,
-	name = "",
 	init_effect = "",
-	id = 12570,
+	name = "",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12570,
 	icon = 12570,
 	last_effect = "",
 	effect_list = {
@@ -136,8 +136,8 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				minWeaponNumber = 1,
 				skill_id = 12570,
+				minWeaponNumber = 1,
 				check_weapon = true,
 				label = {
 					"Albacore"

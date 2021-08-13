@@ -1,9 +1,9 @@
 return {
 	fadeOut = 2,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "YINGHUA8",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -84,12 +84,12 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato3",
 			stopbgm = true,
+			bgName = "bg_story_nagato3",
 			say = "At the base of the Sacred Sakura, encircled by countless pillars and holy ropes to ward off evil spirits, sat a large, translucent crystal.",
 			flashout = {
-				dur = 1,
 				black = false,
+				dur = 1,
 				alpha = {
 					0,
 					1

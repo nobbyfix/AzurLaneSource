@@ -27,11 +27,11 @@ slot0.INDEX_CONVERT = {
 	1
 }
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "AssignedShipUI3"
 end
 
-slot0.init = function (slot0)
+function slot0.init(slot0)
 	slot0.backBtn = slot0:findTF("layer/back", slot0._tf)
 	slot0.confirmBtn = slot0:findTF("layer/confirm", slot0._tf)
 	slot0.print = slot0:findTF("layer/print", slot0._tf)
@@ -45,25 +45,28 @@ slot0.init = function (slot0)
 	slot0.afterAnima = {}
 end
 
-slot0.didEnter = function (slot0)
+function slot0.didEnter(slot0)
 	onButton(slot0, slot0.backBtn, function ()
-		slot0:emit(slot1.ON_BACK)
+		uv0:emit(uv1.ON_BACK)
 	end, SOUND_BACK)
+
+	slot5 = SFX_PANEL
+
 	onButton(slot0, slot0.confirmBtn, function ()
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
-			content = i18n("seven_choose_one", pg.ship_data_statistics[slot0.selectedShipNumber].name),
+			content = i18n("seven_choose_one", pg.ship_data_statistics[uv0.selectedShipNumber].name),
 			onYes = function ()
-				slot0:emit(AssignedShipMediator.ON_USE_ITEM, slot0.itemVO.id, slot0.count, slot0.selectedVO)
+				uv0:emit(AssignedShipMediator.ON_USE_ITEM, uv0.itemVO.id, uv0.count, uv0.selectedVO)
 			end
 		})
-	end, SFX_PANEL)
+	end, slot5)
 
-	for slot5 = 1, slot0.selectPanel.childCount, 1 do
+	for slot5 = 1, slot0.selectPanel.childCount do
 		onToggle(slot0, slot0.selectPanel:GetChild(slot5 - 1), function (slot0)
-			if slot0 and slot0.selectTarget ~=  then
-				LeanTween.cancel(slot0.print)
-				LeanTween.cancel(slot0.name)
-				slot0:setSelectTarget(slot0.setSelectTarget)
+			if slot0 and uv0.selectTarget ~= uv1 then
+				LeanTween.cancel(uv0.print)
+				LeanTween.cancel(uv0.name)
+				uv0:setSelectTarget(uv1)
 			end
 		end, SFX_PANEL)
 	end
@@ -71,7 +74,7 @@ slot0.didEnter = function (slot0)
 	triggerToggle(slot0.selectPanel:GetChild(0), true)
 end
 
-slot0.checkAndSetSprite = function (slot0, slot1, slot2)
+function slot0.checkAndSetSprite(slot0, slot1, slot2)
 	if slot0.spList[slot1] and slot0.afterAnima[slot1] then
 		setImageSprite(slot2, slot0.spList[slot1], true)
 
@@ -83,13 +86,13 @@ slot0.checkAndSetSprite = function (slot0, slot1, slot2)
 	end
 end
 
-slot0.changeShowCharacter = function (slot0, slot1, slot2, slot3)
+function slot0.changeShowCharacter(slot0, slot1, slot2, slot3)
 	if slot3 then
 		LeanTween.alpha(rtf(slot2), 0, 0.3):setOnComplete(System.Action(function ()
-			slot0:GetComponent(typeof(Image)).enabled = false
-			slot1.afterAnima[typeof] = true
+			uv0:GetComponent(typeof(Image)).enabled = false
+			uv1.afterAnima[uv2] = true
 
-			typeof:checkAndSetSprite(true, typeof.checkAndSetSprite)
+			uv1:checkAndSetSprite(uv2, uv0)
 		end))
 	else
 		slot2:GetComponent(typeof(Image)).enabled = false
@@ -97,27 +100,26 @@ slot0.changeShowCharacter = function (slot0, slot1, slot2, slot3)
 	end
 
 	GetSpriteFromAtlasAsync("extra_page/shrine_year/" .. string.lower(slot1), "", function (slot0)
-		slot0.spList[] = slot0
+		uv0.spList[uv1] = slot0
 
-		slot0:checkAndSetSprite(slot0.checkAndSetSprite, slot0)
+		uv0:checkAndSetSprite(uv1, uv2)
 	end)
 end
 
-slot0.setSelectTarget = function (slot0, slot1)
+function slot0.setSelectTarget(slot0, slot1)
 	slot0:changeShowCharacter(slot0.list[slot1] .. "P", slot0.print, slot0.selectTarget)
 	slot0:changeShowCharacter(slot0.list[slot1] .. "N", slot0.name, slot0.selectTarget)
 
 	slot0.selectTarget = slot1
-	slot0.selectedVO = slot0.itemVO:getTempCfgTable().usage_arg[slot0.INDEX_CONVERT[slot1]]
-	slot0.selectedShipNumber = slot0.shiplist[slot1]
+	slot0.selectedVO = slot0.itemVO:getTempCfgTable().usage_arg[uv0.INDEX_CONVERT[slot1]]
+	slot0.selectedShipNumber = uv0.shiplist[slot1]
 end
 
-slot0.setItemVO = function (slot0, slot1)
+function slot0.setItemVO(slot0, slot1)
 	slot0.itemVO = slot1
 end
 
-slot0.willExit = function (slot0)
-	return
+function slot0.willExit(slot0)
 end
 
 return slot0

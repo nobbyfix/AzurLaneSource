@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "尽职守护",
 	init_effect = "",
-	id = 12200,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12200,
 	icon = 12200,
 	last_effect = "",
 	effect_list = {
@@ -31,7 +31,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 12201,
@@ -40,7 +40,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 12201,

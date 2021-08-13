@@ -1,37 +1,39 @@
 ys = ys or {}
-ys.Battle.IOxyState = class("IOxyState")
-ys.Battle.IOxyState.__name = "IOxyState"
+slot0 = ys
+slot0.Battle.IOxyState = class("IOxyState")
+slot0.Battle.IOxyState.__name = "IOxyState"
+slot1 = slot0.Battle.IOxyState
 
-ys.Battle.IOxyState.Ctor = function (slot0)
-	return
+function slot1.Ctor(slot0)
 end
 
-ys.Battle.IOxyState.GetWeaponUseableList = function (slot0)
+function slot1.GetWeaponUseableList(slot0)
 	return nil
 end
 
-ys.Battle.IOxyState.GetDiveState = function (slot0)
+function slot1.GetDiveState(slot0)
 	return nil
 end
 
-ys.Battle.IOxyState.GetBubbleFlag = function (slot0)
+function slot1.GetBubbleFlag(slot0)
 	return nil
 end
 
-ys.Battle.IOxyState.IsVisible = function (slot0)
+function slot1.IsVisible(slot0)
 	return true
 end
 
-ys.Battle.IOxyState.DoUpdateOxy = function (slot0)
-	return
+function slot1.DoUpdateOxy(slot0)
 end
 
-ys.Battle.IOxyState.GetBarVisible = function (slot0)
+function slot1.GetBarVisible(slot0)
 	return nil
 end
 
-ys.Battle.IOxyState.RunMode = function (slot0)
+function slot1.RunMode(slot0)
 	return nil
 end
 
-return
+function slot1.UpdateDive(slot0)
+	return nil
+end

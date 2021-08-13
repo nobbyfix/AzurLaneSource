@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "保护",
 	init_effect = "",
-	id = 8661,
+	name = "保护",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8661,
 	icon = 8661,
 	last_effect = "jiejie_dunpai",
 	effect_list = {
@@ -17,8 +17,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.25,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.25
 			}
 		}
 	}

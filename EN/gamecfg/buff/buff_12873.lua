@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.01,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.01
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.012,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.012
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.014,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.014
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.016,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.016
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.018,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.018
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.021,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.021
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.024,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.024
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.027,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.027
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.031,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.031
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.035,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.035
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "属性变更",
 	init_effect = "jinengchufablue",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 6,
@@ -173,8 +173,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = 0.01,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.01
 			}
 		}
 	}

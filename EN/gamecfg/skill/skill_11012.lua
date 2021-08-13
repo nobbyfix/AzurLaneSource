@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "铁底湾之夜",
 	cd = 0,
-	picture = "0",
-	desc = "",
 	painting = 0,
 	id = 11012,
+	picture = "0",
 	castCV = "",
+	desc = "",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,33 +17,17 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
-			target_choise = "TargetAllHelp",
+			casterAniEffect = "",
+			targetAniEffect = "",
+			target_choise = {
+				"TargetAllHelp",
+				"TargetShipTag"
+			},
 			arg_list = {
 				buff_id = 11011,
-				effectFilter = {
-					{
-						"TargetID",
-						"=",
-						105141
-					},
-					{
-						"TargetID",
-						"=",
-						105142
-					},
-					{
-						"TargetID",
-						"=",
-						105143
-					},
-					{
-						"TargetID",
-						"=",
-						105144
-					}
+				ship_tag_list = {
+					"South Dakota"
 				}
 			}
 		}

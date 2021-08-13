@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "",
 	init_effect = "",
-	id = 12521,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12521,
 	icon = 12520,
 	last_effect = "",
 	blink = {
@@ -34,8 +34,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 3,
-				attr = "igniteShorten"
+				attr = "igniteShorten",
+				number = 3
 			}
 		}
 	}

@@ -16,7 +16,7 @@ pg.skin_page_template = {
 		id = 3,
 		name = "春之旗袍",
 		res = "chunzhiqipao",
-		english_name = "QI PAO"
+		english_name = "Spring Festival "
 	},
 	{
 		id = 4,
@@ -54,6 +54,42 @@ pg.skin_page_template = {
 		res = "jidianxilie",
 		english_name = "SUMMER FEST"
 	},
+	[11] = {
+		id = 11,
+		name = "Live",
+		res = "live",
+		english_name = "Shining Stars "
+	},
+	[12] = {
+		id = 12,
+		name = "特别演习 ",
+		res = "laoyuyanxi",
+		english_name = "Special Exercise "
+	},
+	[13] = {
+		id = 13,
+		name = "运动时间",
+		res = "yundongshijian",
+		english_name = "SPORT TIME"
+	},
+	[14] = {
+		id = 14,
+		name = "疾速狂热",
+		res = "jisukuangre",
+		english_name = "Race Queen"
+	},
+	[15] = {
+		id = 15,
+		name = "医院系列",
+		res = "yiyuanxilie",
+		english_name = "Hospital Series "
+	},
+	[16] = {
+		id = 16,
+		name = "Carnival",
+		res = "jianianhua",
+		english_name = "Bunny Girl"
+	},
 	[9999] = {
 		id = 9999,
 		name = "其他",
@@ -70,8 +106,12 @@ pg.skin_page_template = {
 		8,
 		9,
 		10,
+		11,
+		12,
+		13,
+		14,
+		15,
+		16,
 		9999
 	}
 }
-
-return

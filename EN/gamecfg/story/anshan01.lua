@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ANSHAN01",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"An Shan's Coloring Book\n\n<size=45>Chapter 1 - Treasure in the Old Warehouse</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-china",
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Hi! Welcome to...",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -82,12 +82,12 @@ return {
 			}
 		},
 		{
-			say = "Well, let's say we'll \"paint you a picture.\"",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Well, let's say we'll \"paint you a picture.\"",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -262,11 +262,11 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Alright, then we'll go find some!",
 			typewriter = {
 				speed = 0.05,

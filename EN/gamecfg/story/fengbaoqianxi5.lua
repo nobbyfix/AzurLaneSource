@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FENGBAOQIANXI5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 107060,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "level02",
 			dir = 1,
 			say = "This is Enterprise. Fleet has arrived safely at the rendezvous point. Good work, everyone.",
-			bgm = "level02",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -38,8 +38,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -183,13 +183,13 @@ return {
 			}
 		},
 		{
-			say = "Hooyah!",
+			actor = 102100,
 			side = 2,
 			nameColor = "#a9f548",
-			actor = 102100,
-			dir = 1,
 			hideOther = true,
+			dir = 1,
 			actorName = "Everyone",
+			say = "Hooyah!",
 			actorPosition = {
 				x = -500,
 				y = 0

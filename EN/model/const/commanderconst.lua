@@ -25,10 +25,10 @@ slot0.PROPERTIES = {
 }
 slot0.DESTROY_ATTR_ID = 202
 
-slot0.getBoxComsume = function (slot0)
+function slot0.getBoxComsume(slot0)
 	slot1 = nil
 
-	for slot5, slot6 in ipairs(slot0) do
+	for slot5, slot6 in ipairs(uv0) do
 		if slot0 < slot6[3] then
 			slot1 = slot6[1]
 
@@ -36,12 +36,16 @@ slot0.getBoxComsume = function (slot0)
 		end
 	end
 
-	return slot1 or slot0[#slot0][1]
+	if getProxy(GuildProxy):GetAdditionGuild() then
+		slot1 = (slot1 or uv0[#uv0][1]) - slot2:getCatBoxGoldAddition()
+	end
+
+	return math.max(slot1, 0)
 end
 
 slot0.MAX_GETBOX_CNT = 0
 
-for slot5, slot6 in ipairs(slot1) do
+for slot5, slot6 in ipairs(pg.gameset.commander_get_cost.description) do
 	slot0.MAX_GETBOX_CNT = slot0.MAX_GETBOX_CNT + slot6[3]
 end
 

@@ -12,8 +12,8 @@ return {
 			style = {
 				text = "Looks like our port has Submarines too, now!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -66,8 +66,8 @@ return {
 			style = {
 				text = "This is our first Submarine! Let's start assembling a Submarine Fleet right away!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -95,8 +95,8 @@ return {
 			ui = {
 				path = "/UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships/308031",
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				}
@@ -104,7 +104,7 @@ return {
 		},
 		{
 			ui = {
-				path = "/UICamera/Canvas/UIMain/DockyardUI(Clone)/select_panel/confirm_button"
+				path = "/OverlayCamera/Overlay/UIMain/blur_panel/select_panel/confirm_button"
 			}
 		},
 		{
@@ -112,8 +112,8 @@ return {
 			style = {
 				text = "Now we've created our first Submarine Fleet!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -122,8 +122,8 @@ return {
 			style = {
 				text = "Be prepared to face enemy Submarines, and don't forget to equip Anti-Sub gear!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -139,11 +139,11 @@ return {
 		},
 		{
 			ui = {
-				pathIndex = 0,
 				path = "/UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships",
+				pathIndex = 0,
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				}
@@ -154,8 +154,8 @@ return {
 			style = {
 				text = "You can tap the Help button for more details on Anti-Sub gear!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},

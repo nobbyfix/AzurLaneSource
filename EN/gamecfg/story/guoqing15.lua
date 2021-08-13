@@ -27,11 +27,11 @@ return {
 			}
 		},
 		{
-			side = 0,
-			say = "Sis! Thank god you're o...",
-			actorName = "{namecode:96}",
 			actor = 307060,
+			side = 0,
+			actorName = "{namecode:96}",
 			nameColor = "#a9f548",
+			say = "Sis! Thank god you're o...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -73,7 +73,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "……",
+			say = "Not you too...",
 			shake = {
 				speed = 1,
 				number = 3
@@ -107,11 +107,11 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 1,
 			actorName = "{namecode:91}",
-			dir = -1,
-			actor = 307010,
 			nameColor = "#ff0000",
+			dir = -1,
 			say = "An exquisite sacrifice is needed so that the Creator will continue gracing us with his blessings.",
 			shake = {
 				speed = 1,
@@ -151,6 +151,25 @@ return {
 			side = 0,
 			nameColor = "#a9f548",
 			say = "... \"The Sakura Empire's future\"... How many times do you think you can fool people with those words?!",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307060,
+			actorName = "{namecode:96}",
+			side = 0,
+			nameColor = "#a9f548",
+			say = "And it doesn't stop at lying! Now you've dragged our people in your twisted experiments!",
 			shake = {
 				speed = 1,
 				number = 3
@@ -222,11 +241,11 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 1,
 			actorName = "{namecode:91}",
-			dir = -1,
-			actor = 307010,
 			nameColor = "#ff0000",
+			dir = -1,
 			say = "*Giggle*~ Have you thought about how you're going to defeat the enemy in front of you?",
 			shake = {
 				speed = 1,
@@ -242,11 +261,11 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 1,
 			actorName = "{namecode:91}",
-			dir = -1,
-			actor = 307010,
 			nameColor = "#ff0000",
+			dir = -1,
 			say = "We've already offered her soul to the Creator. And now we will turn you into an empty husk as well!",
 			shake = {
 				speed = 1,

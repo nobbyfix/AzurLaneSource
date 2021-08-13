@@ -1,31 +1,31 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "OUXIANGRICHANG3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
-					"某日的polaris\n\n<size=45>三 某日的成果展示</size>",
+					"One day, with Polaris...\n\n<size=45>One day, at a dress rehearsal...</size>",
 					1
 				}
 			}
 		},
 		{
+			say = "One day, on the port's temporary stage...",
 			side = 2,
 			bgName = "star_level_bg_121",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "某日，港区临时舞台",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,12 +50,12 @@ return {
 			}
 		},
 		{
+			actor = 102150,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 102150,
 			nameColor = "#a9f548",
-			say = "哦哦…舞台上的克利夫兰姐姐也很有气概呀～",
+			dir = 1,
+			say = "Wow... Cleveland looks so cool up there onstage!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -66,8 +66,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -81,7 +81,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "大姐头…好棒…！",
+			say = "Big sis... is incredible...!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -97,7 +97,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "谢菲尔德…看起来并不会丢了皇家女仆队的脸呢～",
+			say = "Sheffield... You have brought honour to the Royal Maids.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -113,7 +113,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "真好啊～我也想偷懒、不对，参加其他活动为女仆队增光呢！",
+			say = "Aww, I want to get out of work too! Err, I mean, I want to do something to bring honour to the Royal Maids too!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -129,7 +129,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "哦…？不错嘛，期待你在台上的表现呢，姐·姐～",
+			say = "Oh...? Well done. I can't wait to see the real thing, \"Dear Sister.\" Hehe♪",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -145,7 +145,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "舞台亦是另一个“战场”，姐姐，你的战斗，我会全部看着的…！",
+			say = "The stage is yet another battlefield, Akagi. And I will watch your battle with great interest...!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -159,10 +159,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900205,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "哈哈…没想到来了这么多观众，总觉得突然有点紧张起来了呢",
+			say = "Hah... I never thought we'd draw a crowd like this. I'm actually getting a little nervous.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -176,10 +176,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900207,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "贝尔法斯特…竟然也是喜欢凑这种热闹的人……",
+			say = "And I never thought Belfast would come to this kind of show...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -195,7 +195,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呵呵呵…就当作是为指挥官的专属演出做的预演好了～",
+			say = "Hehehe... If I treat it as a special performance, just for my Commander, I can do great things~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -209,10 +209,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900206,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "呼…",
+			say = "Phew...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -223,12 +223,12 @@ return {
 			}
 		},
 		{
+			actor = 900206,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 900206,
 			nameColor = "#a9f548",
-			say = "练习也就算了…为什么连真正的上台演出也要搞啦！",
+			dir = 1,
+			say = "All that practicing was enough... Why do we have to get up on stage and do it again?!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -239,8 +239,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -252,10 +252,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900203,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "初次的登台…加斯科涅，感觉身体参数略微异常，这是…“高扬感”？",
+			say = "Initial performance... Gascogne: physical parameters abnormal. Is this... \"excitement?\"",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -269,10 +269,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900205,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "紧张和高扬并存，这就是“舞台表演”的乐趣吧～",
+			say = "Stage fright and excitement go hand in hand. That's the thrill of a live performance!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -286,10 +286,10 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900207,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "克利夫兰，很熟练的感觉",
+			say = "You seem quite knowledgeable, Cleveland.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -300,12 +300,12 @@ return {
 			}
 		},
 		{
+			actor = 900206,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 900206,
 			nameColor = "#a9f548",
-			say = "啊啊啊！没办法了！上了啊！",
+			dir = 1,
+			say = "Aaagh! Fine! Here we go!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -316,8 +316,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -331,7 +331,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "第一首歌——《cœur》",
+			say = "Executing song number one: \"cœur.\"",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -342,10 +342,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			say = "歌声、乐器声、欢呼声，响彻港区的临时舞台——",
+			say = "And so began Polaris's first onstage performance...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

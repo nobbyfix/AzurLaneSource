@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIEXUEYUYINFU14",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Sixth Movement\n\n<size=45>Of Science and Learning</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
-			bgm = "battle-boss-4",
-			actor = 900011,
 			actorName = "Tester",
+			dir = 1,
 			say = "Miss Bismarck... You almost lost your life, and yet you still refuse to use \"that?\"",
+			bgm = "battle-boss-4",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -37,8 +37,8 @@ return {
 			expression = 3,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "I don't need help from the likes of you...",
 			typewriter = {
 				speed = 0.05,
@@ -53,8 +53,8 @@ return {
 			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "Tester",
+			dir = 1,
 			say = "Still acting tough even in this condition? You could have sent your enemies to the bottom of the sea so easily. All you needed was a little bit of... determination.",
 			typewriter = {
 				speed = 0.05,
@@ -84,8 +84,8 @@ return {
 			expression = 1,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "Winning with such an unfair advantage would not bring us glory at all...",
 			typewriter = {
 				speed = 0.05,
@@ -100,8 +100,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "I knew nothing then, except that I had allowed the abyss to gaze back into me.",
 			typewriter = {
 				speed = 0.05,
@@ -116,8 +116,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "Even now, that heart of darkness eats away at my Wisdom Cube...",
 			typewriter = {
 				speed = 0.05,
@@ -132,8 +132,8 @@ return {
 			expression = 1,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "It plays an endless scherzo, constantly jeering at me from within my own mind.",
 			typewriter = {
 				speed = 0.05,
@@ -148,8 +148,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "It beckons me to give in to its violence.",
 			typewriter = {
 				speed = 0.05,
@@ -164,8 +164,8 @@ return {
 			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "Tester",
+			dir = 1,
 			say = "... ...",
 			typewriter = {
 				speed = 0.05,
@@ -180,8 +180,8 @@ return {
 			actor = 405010,
 			side = 2,
 			expression = 3,
-			dir = 1,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "I had Eugen leave because there is no telling what will become of me.",
 			typewriter = {
 				speed = 0.05,
@@ -196,8 +196,8 @@ return {
 			actor = 405010,
 			side = 2,
 			expression = 2,
-			dir = 1,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "But I now know that it is time to end this farce.",
 			typewriter = {
 				speed = 0.05,
@@ -212,8 +212,8 @@ return {
 			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "Tester",
+			dir = 1,
 			say = "Uploading Report: Results of Experiment No. 151 - Negative. Status: Statistically Insignificant. Requesting further directives.",
 			typewriter = {
 				speed = 0.05,
@@ -225,8 +225,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			nameColor = "#ff5c5c",
 			dir = 1,
 			say = "Received. Recommendation: Execute Reconversion Agreement.",
@@ -240,11 +240,11 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			side = 2,
+			stopbgm = true,
+			say = "Kaboom!",
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
-			say = "Kaboom!",
 			flashN = {
 				color = {
 					1,
@@ -292,10 +292,10 @@ return {
 			}
 		},
 		{
-			say = "(Bismarck turned her last remaining battery and aimed at Tester, who was still transmitting her message.)",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "bsm-1",
+			say = "(Bismarck turned her last remaining battery and aimed at Tester, who was still transmitting her message.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -309,8 +309,8 @@ return {
 			expression = 1,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "My loyalties are not to some weapon, but to the people of the Iron Blood.",
 			typewriter = {
 				speed = 0.05,
@@ -324,9 +324,9 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "For the glory of the Iron Blood!!",
 			effects = {
 				{
@@ -344,11 +344,11 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			actor = 900011,
-			dir = 1,
 			actorName = "Tester",
+			dir = 1,
 			say = "...",
 			effects = {
 				{
@@ -369,8 +369,8 @@ return {
 			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "Tester",
+			dir = 1,
 			say = "Issuing Errata to Experiment No. 151 - Test subject has opened fire upon Self.",
 			typewriter = {
 				speed = 0.05,
@@ -382,8 +382,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			nameColor = "#ff5c5c",
 			dir = 1,
 			say = "Finally, some excitement! I was starting to get bored here! Next, Execute Awakening Protocol.",
@@ -400,8 +400,8 @@ return {
 			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "Tester",
+			dir = 1,
 			say = "Understood. Regarding the Agreement–",
 			typewriter = {
 				speed = 0.05,
@@ -446,8 +446,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "Excellent. We won't let our enemies get away from us, Siren or Iron Blood.",
 			typewriter = {
 				speed = 0.05,

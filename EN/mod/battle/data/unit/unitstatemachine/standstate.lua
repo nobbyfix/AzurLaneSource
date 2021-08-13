@@ -1,81 +1,67 @@
 ys = ys or {}
-ys.Battle.StandState = class("StandState", ys.Battle.IUnitState)
-ys.Battle.StandState.__name = "StandState"
+slot0 = ys
+slot0.Battle.StandState = class("StandState", slot0.Battle.IUnitState)
+slot0.Battle.StandState.__name = "StandState"
+slot1 = slot0.Battle.StandState
 
-ys.Battle.StandState.Ctor = function (slot0)
-	slot0.super.Ctor()
+function slot1.Ctor(slot0)
+	uv0.super.Ctor()
 end
 
-ys.Battle.StandState.AddIdleState = function (slot0, slot1, slot2)
-	return
+function slot1.AddIdleState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddMoveState = function (slot0, slot1, slot2)
-	return
+function slot1.AddMoveState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddMoveLeftState = function (slot0, slot1, slot2)
-	return
+function slot1.AddMoveLeftState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddAttackState = function (slot0, slot1, slot2)
-	return
+function slot1.AddAttackState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddDeadState = function (slot0, slot1, slot2)
-	return
+function slot1.AddDeadState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddSkillState = function (slot0, slot1, slot2)
-	return
+function slot1.AddSkillState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddSpellState = function (slot0, slot1, slot2)
-	return
+function slot1.AddSpellState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddVictoryState = function (slot0, slot1, slot2)
-	return
+function slot1.AddVictoryState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddVictorySwimState = function (slot0, slot1, slot2)
-	return
+function slot1.AddVictorySwimState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddStandState = function (slot0, slot1, slot2)
-	return
+function slot1.AddStandState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddDiveState = function (slot0, slot1, slot2)
-	return
+function slot1.AddDiveState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddDiveLeftState = function (slot0, slot1, slot2)
-	return
+function slot1.AddDiveLeftState(slot0, slot1, slot2)
 end
 
-ys.Battle.StandState.AddInterruptState = function (slot0, slot1, slot2)
+function slot1.AddInterruptState(slot0, slot1, slot2)
 	slot1:OnInterruptState()
 end
 
-ys.Battle.StandState.AddDivingState = function (slot0, slot1, slot2)
+function slot1.AddDivingState(slot0, slot1, slot2)
 	slot1:OnDivingState()
 end
 
-ys.Battle.StandState.OnTrigger = function (slot0, slot1)
-	return
+function slot1.OnTrigger(slot0, slot1)
 end
 
-ys.Battle.StandState.OnStart = function (slot0, slot1)
-	return
+function slot1.OnStart(slot0, slot1)
 end
 
-ys.Battle.StandState.OnEnd = function (slot0, slot1)
+function slot1.OnEnd(slot0, slot1)
 	slot1:OnVictoryState()
 end
 
-ys.Battle.StandState.CacheWeapon = function (slot0)
+function slot1.CacheWeapon(slot0)
 	return true
 end
-
-return

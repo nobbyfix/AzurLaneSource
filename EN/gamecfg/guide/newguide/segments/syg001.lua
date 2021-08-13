@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "Let's go to <color=#ff7d36>HQ</color>",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/toTop/frame/bottomPanel/btm/buttons_container/liveButton",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -27,13 +27,13 @@ return {
 			style = {
 				text = "You can visit our <color=#ff7d36>Dorm</color> from here",
 				mode = 2,
-				dir = 1,
 				posY = 319,
+				dir = 1,
 				posX = -361
 			},
 			ui = {
+				path = "/OverlayCamera/Overlay/UIMain/MainUISecondaryPanel/frame/bg/backyard_btn",
 				pathIndex = -1,
-				path = "/OverlayCamera/Overlay/UIMain/secondary_panel/frame/bg/backyard_btn",
 				triggerType = {
 					1
 				},
@@ -49,8 +49,8 @@ return {
 			style = {
 				text = "Commander, this is your <color=#ff7d36>dorm</color>~! It looks a bit... rough around the edges.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -59,8 +59,8 @@ return {
 			style = {
 				text = "The dorm is where your girls can <color=#ff7d36>get some rest</color>, <color=#ff7d36>have their moods restored</color>, and earn <color=#ff7d36>EXP</color>. You'll need to have the required <color=#ff7d36>supplies</color>, however!",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -69,8 +69,8 @@ return {
 			style = {
 				text = "Decorations will <color=#ff7d36>increase the comfort level</color> of your dorm.",
 				mode = 2,
-				dir = 1,
 				posY = 204.32,
+				dir = 1,
 				posX = 172.14,
 				ui = {
 					path = "/UICamera/Canvas/UIMain/BackYardUI(Clone)/main/topPanel/comfortable"
@@ -82,8 +82,8 @@ return {
 			style = {
 				text = "You may <color=#ff7d36>purchase decorations with Decor Tokens</color> in the furniture shop.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 354.67,
 				ui = {
 					path = "/UICamera/Canvas/UIMain/BackYardUI(Clone)/main/bottomPanel/shop_btn"
@@ -95,8 +95,8 @@ return {
 			style = {
 				text = "<color=#ff7d36>Use manage to rearrange decorations and furniture within the dorm.</color>",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 232.9,
 				ui = {
 					path = "/UICamera/Canvas/UIMain/BackYardUI(Clone)/backyardmainui/decorateBtn"
@@ -108,13 +108,13 @@ return {
 			style = {
 				text = "Let's <color=#ff7d36>get some supplies</color>~!",
 				mode = 2,
-				dir = -1,
 				posY = -56.21,
+				dir = -1,
 				posX = -26.28
 			},
 			ui = {
-				pathIndex = -1,
 				path = "UICamera/Canvas/UIMain/BackYardUI(Clone)/main/bottomPanel/stock_bg",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -130,8 +130,8 @@ return {
 			style = {
 				text = "You can choose from a wide variety of <color=#ff7d36>high level snacks with EXP buff effects</color>.",
 				mode = 2,
-				dir = -1,
 				posY = 253.3,
+				dir = -1,
 				posX = 264.7
 			}
 		},
@@ -140,8 +140,8 @@ return {
 			style = {
 				text = "How about some Oxy-cola?",
 				mode = 2,
-				dir = -1,
 				posY = 55.05,
+				dir = -1,
 				posX = -3.45
 			},
 			ui = {
@@ -157,13 +157,13 @@ return {
 			style = {
 				text = "Close the supplies menu.",
 				mode = 2,
-				dir = -1,
 				posY = 142.1,
+				dir = -1,
 				posX = 91.71
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/foodPanel/bg",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -178,13 +178,13 @@ return {
 			style = {
 				text = "Now we need to find someone that needs some rest. <color=#ff7d36>Moods usually improve in the dorm</color>!",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "UICamera/Canvas/UIMain/BackYardUI(Clone)/main/leftPanel/train_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -200,8 +200,8 @@ return {
 			style = {
 				text = "Tap <color=#ff7d36>an empty slot to begin adding a character</color>, then select someone to put in the dorm.",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
@@ -222,16 +222,16 @@ return {
 			style = {
 				text = "Select someone that needs rest.",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = 0,
 				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships/",
+				pathIndex = 0,
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				},
@@ -250,13 +250,13 @@ return {
 			style = {
 				text = "Tap confirm.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 10.6
 			},
 			ui = {
+				path = "OverlayCamera/Overlay/UIMain/blur_panel/select_panel/confirm_button",
 				pathIndex = -1,
-				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/select_panel/confirm_button",
 				triggerType = {
 					1
 				},
@@ -272,8 +272,8 @@ return {
 			style = {
 				text = "Don't try anything funny in the dorm, Commander!",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		}

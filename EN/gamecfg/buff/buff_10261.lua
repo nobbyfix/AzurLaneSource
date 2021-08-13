@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2000
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2220,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2220
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2440,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2440
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2660,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2660
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2880,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2880
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 3100
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3320,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 3320
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3540,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 3540
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3760,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 3760
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 4000
 				}
 			}
 		}
 	},
+	time = 8,
 	name = "魔炮-Armageddon！",
 	init_effect = "jinengchufared",
-	time = 8,
 	picture = "",
 	desc = "自身炮击提高",
 	stack = 1,
@@ -173,8 +173,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 2000,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 2000
 			}
 		}
 	}

@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "For this event, we have a new feature for you! You can read more details by tapping the Help button!",
 				mode = 1,
-				dir = -1,
 				posY = 172,
+				dir = -1,
 				posX = -337
 			}
 		},

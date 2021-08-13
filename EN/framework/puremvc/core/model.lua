@@ -1,34 +1,33 @@
 slot0 = class("Model")
 
-slot0.Ctor = function (slot0, slot1)
-	if slot0.instanceMap[slot1] then
-		error(slot0.MULTITON_MSG)
+function slot0.Ctor(slot0, slot1)
+	if uv0.instanceMap[slot1] then
+		error(uv0.MULTITON_MSG)
 	end
 
 	slot0.multitonKey = slot1
-	slot0.instanceMap[slot1] = slot0
+	uv0.instanceMap[slot1] = slot0
 	slot0.proxyMap = {}
 
 	slot0:initializeModel()
 end
 
-slot0.initializeModel = function (slot0)
-	return
+function slot0.initializeModel(slot0)
 end
 
-slot0.getInstance = function (slot0)
+function slot0.getInstance(slot0)
 	if slot0 == nil then
 		return nil
 	end
 
-	if slot0.instanceMap[slot0] == nil then
-		return slot0:New()
+	if uv0.instanceMap[slot0] == nil then
+		return uv0.New(slot0)
 	else
-		return slot0.instanceMap[slot0]
+		return uv0.instanceMap[slot0]
 	end
 end
 
-slot0.registerProxy = function (slot0, slot1)
+function slot0.registerProxy(slot0, slot1)
 	slot1:initializeNotifier(slot0.multitonKey)
 
 	slot0.proxyMap[slot1:getProxyName()] = slot1
@@ -36,15 +35,15 @@ slot0.registerProxy = function (slot0, slot1)
 	slot1:onRegister()
 end
 
-slot0.retrieveProxy = function (slot0, slot1)
+function slot0.retrieveProxy(slot0, slot1)
 	return slot0.proxyMap[slot1]
 end
 
-slot0.hasProxy = function (slot0, slot1)
+function slot0.hasProxy(slot0, slot1)
 	return slot0.proxyMap[slot1] ~= nil
 end
 
-slot0.removeProxy = function (slot0, slot1)
+function slot0.removeProxy(slot0, slot1)
 	if slot0.proxyMap[slot1] ~= nil then
 		slot0.proxyMap[slot1] = nil
 
@@ -54,8 +53,8 @@ slot0.removeProxy = function (slot0, slot1)
 	return slot2
 end
 
-slot0.removeModel = function (slot0)
-	slot0.instanceMap[slot0] = nil
+function slot0.removeModel(slot0)
+	uv0.instanceMap[slot0] = nil
 end
 
 slot0.instanceMap = {}

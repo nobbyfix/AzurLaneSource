@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AISAIKESI6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Enterprise Troubles\n\n<size=45>Chapter 6: Knots of the Heart, Pt. 2</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_105",
+			actor = 107060,
 			side = 2,
+			bgName = "star_level_bg_105",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 107060,
-			nameColor = "#a9f548",
 			say = "When you have these kinds of thoughts, you've already let your doubts get the better of you.",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -55,8 +55,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "W-why are you here, Enterprise?",
 			typewriter = {
@@ -69,8 +69,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -82,8 +82,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Commander... is this your doing?!",
 			typewriter = {
@@ -96,12 +96,12 @@ return {
 			}
 		},
 		{
-			say = "Indeed. Commander was concerned about the way you were behaving, so we came together.",
+			actor = 107060,
 			side = 1,
 			bgName = "star_level_bg_105",
-			dir = 1,
-			actor = 107060,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Indeed. Commander was concerned about the way you were behaving, so we came together.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -119,8 +119,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Ugh...",
 			typewriter = {
@@ -184,8 +184,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "B-but...!",
 			typewriter = {
@@ -230,11 +230,11 @@ return {
 			}
 		},
 		{
+			actor = 107090,
 			side = 0,
 			bgName = "star_level_bg_105",
-			dir = 1,
-			actor = 107090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Of course not!",
 			typewriter = {
 				speed = 0.05,
@@ -246,8 +246,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -275,8 +275,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "For my own sake...",
 			typewriter = {
@@ -337,11 +337,11 @@ return {
 			}
 		},
 		{
+			actor = 107060,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
-			actor = 107060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Wouldn't you agree, Commander?",
 			typewriter = {
 				speed = 0.05,
@@ -362,8 +362,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Commander...",
 			typewriter = {
@@ -395,8 +395,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Commander, thank you as well.",
 			typewriter = {
@@ -412,8 +412,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 107090,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "However, I still haven't given up on my goal of beating you, Enterprise!",
 			typewriter = {

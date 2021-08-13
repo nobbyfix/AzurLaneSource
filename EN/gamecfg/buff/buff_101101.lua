@@ -8,8 +8,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.006,
-					attr = "cri"
+					attr = "cri",
+					number = 0.006
 				}
 			},
 			{
@@ -42,8 +42,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.007,
-					attr = "cri"
+					attr = "cri",
+					number = 0.007
 				}
 			},
 			{
@@ -76,8 +76,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.008,
-					attr = "cri"
+					attr = "cri",
+					number = 0.008
 				}
 			},
 			{
@@ -110,8 +110,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.009,
-					attr = "cri"
+					attr = "cri",
+					number = 0.009
 				}
 			},
 			{
@@ -144,8 +144,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.01,
-					attr = "cri"
+					attr = "cri",
+					number = 0.01
 				}
 			},
 			{
@@ -178,8 +178,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.011,
-					attr = "cri"
+					attr = "cri",
+					number = 0.011
 				}
 			},
 			{
@@ -212,8 +212,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.012,
-					attr = "cri"
+					attr = "cri",
+					number = 0.012
 				}
 			},
 			{
@@ -246,8 +246,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.013,
-					attr = "cri"
+					attr = "cri",
+					number = 0.013
 				}
 			},
 			{
@@ -280,8 +280,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.014,
-					attr = "cri"
+					attr = "cri",
+					number = 0.014
 				}
 			},
 			{
@@ -314,8 +314,8 @@ return {
 					"onTorpedoWeaponBulletCreate"
 				},
 				arg_list = {
-					number = 0.015,
-					attr = "cri"
+					attr = "cri",
+					number = 0.015
 				}
 			},
 			{
@@ -339,9 +339,9 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "幻影刃舞·风暴",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 20,
@@ -363,8 +363,8 @@ return {
 				"onTorpedoWeaponBulletCreate"
 			},
 			arg_list = {
-				number = 0.015,
-				attr = "cri"
+				attr = "cri",
+				number = 0.015
 			}
 		},
 		{

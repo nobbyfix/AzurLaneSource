@@ -1,10 +1,10 @@
 slot0 = class("Summary", import(".BaseVO"))
 
-slot0.Ctor = function (slot0, slot1)
+function slot0.Ctor(slot0, slot1)
 	slot0.name = getProxy(PlayerProxy):getData().name
-	slot0.registerTime = pg.TimeMgr.GetInstance().STimeDescC(slot2, slot1.register_date, "%Y/%m/%d")
-	slot0.days = math.ceil((getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_SUMMARY).getStartTime(slot3) - slot1.register_date) / 86400) + 1
-	slot0.serverName = (getProxy(ServerProxy):getRawData()[(getProxy(UserProxy):getRawData() and slot5.server) or 0] and getProxy(ServerProxy).getRawData().name) or ""
+	slot0.registerTime = pg.TimeMgr.GetInstance():STimeDescC(slot1.register_date, "%Y.%m.%d")
+	slot0.days = math.ceil((getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_SUMMARY):getStartTime() - slot1.register_date) / 86400) + 1
+	slot0.serverName = getProxy(ServerProxy):getRawData()[getProxy(UserProxy):getRawData() and slot5.server or 0] and slot6.name or ""
 	slot8 = pg.chapter_template[math.max(slot1.chapter_id, 101)]
 
 	if PLATFORM_CODE == PLATFORM_US and slot8.model == ChapterConst.TypeMainSub then
@@ -40,11 +40,11 @@ slot0.Ctor = function (slot0, slot1)
 	slot0.furnitures = getProxy(DormProxy):getFurnitrues()
 end
 
-slot0.hasGuild = function (slot0)
+function slot0.hasGuild(slot0)
 	return slot0.guildName and slot0.guildName ~= ""
 end
 
-slot0.hasMedal = function (slot0)
+function slot0.hasMedal(slot0)
 	return slot0.medalCount > 0
 end
 

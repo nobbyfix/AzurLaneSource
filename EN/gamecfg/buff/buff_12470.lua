@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "棘鳍弹幕",
 	init_effect = "",
-	id = 12470,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12470,
 	icon = 12470,
 	last_effect = "",
 	effect_list = {
@@ -39,8 +39,8 @@ return {
 			arg_list = {
 				check_target = "TargetShipTag",
 				buff_id = 12472,
-				maxTargetNumber = 0,
 				target = "TargetSelf",
+				maxTargetNumber = 0,
 				ship_tag_list = {
 					"Albacore"
 				}
@@ -54,8 +54,8 @@ return {
 			arg_list = {
 				check_target = "TargetShipTag",
 				minTargetNumber = 1,
-				buff_id = 12473,
 				target = "TargetSelf",
+				buff_id = 12473,
 				ship_tag_list = {
 					"Albacore"
 				}

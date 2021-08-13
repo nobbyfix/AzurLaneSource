@@ -1,16 +1,16 @@
 return {
 	lose_condition = 1,
 	win_condition = 1,
-	map_id = 10001,
-	type = 1,
 	id = 601230,
+	type = 1,
+	map_id = 10001,
 	stages = {
 		{
 			stageIndex = 1,
 			failCondition = 1,
 			timeCount = 180,
-			backGroundStageID = 1,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -102,9 +102,9 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 293002,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								0,
 								0,

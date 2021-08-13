@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG14",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "港区·休息区域",
-			side = 2,
-			bgName = "star_level_bg_121",
-			dir = 1,
 			bgm = "azumaster-ins",
+			side = 2,
+			bgName = "star_level_bg_121",
+			dir = 1,
+			say = "Rest Area",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -25,10 +25,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 801030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "加斯科涅！欢迎回来~今天的Live也辛苦啦！",
+			say = "Good work, Gascogne! Your performance today was magnificent!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -39,8 +39,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -52,10 +52,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "没问题，加斯科涅现在各项指标状况良好",
+			say = "Gascogne's functions are stable. Further combat is possible.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -69,10 +69,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 801030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "加斯科涅一直都是这样呢，一直这么绷着早晚身体会吃不消啦！",
+			say = "Err, that's not it, didn't you hear from Richelieu? She's worried that you're pushing yourself too hard, and wanted to make sure that you're getting enough rest!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -86,10 +86,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "……？",
+			say = "...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -103,10 +103,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 801030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "算啦~来，这是敦刻尔克今天份的甜点补给，给你留了一份哦",
+			say = "Hwuh? Did I say something I wasn't supposed to...? Well, here, Dunkerque made some refreshments for you!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -117,8 +117,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -130,10 +130,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "感谢支援",
+			say = "Receiving refreshments with gratitude.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -147,10 +147,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 801040,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "虽然现在这样也没什么问题，不过，还是想让鸢尾的大家也听听看加斯科涅充满感情地唱歌呢",
+			say = "Even though everything is fine right now, everyone back home is looking forward to hearing your emotion-filled singing.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -164,10 +164,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "检讨提案可行性——",
+			say = "Reviewing feasibility of proposal.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -181,10 +181,10 @@ return {
 			expression = 6,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 801040,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "啊，并不是说加斯科涅现在的歌毫无感情哦？只是，嗯…怎么说呢~~",
+			say = "That's not to say that your singing right now is lacking in emotion, though. However, how do I put it...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -198,10 +198,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "判定，舰装试验中“感情”与任务目标有相当的关联性",
+			say = "Assessment: Relevance of \"emotion\" in armament testing cannot be determined.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -215,10 +215,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "测试时应当激活感情模块、还是对其进行抑制、我……",
+			say = "As for the determination of whether or not to activate the emotion module during the test...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -232,10 +232,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 801030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "啊，确实单纯战斗的话，只要保持现在这样就可以了",
+			say = "Um, I think it's fine not to worry about that right now. You're doing fine just the way you are.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -249,10 +249,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 801030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "不过像现在的Live活动时这样，享受其中的快乐不是更好吗？嗯，大家也是这么觉得的哦，加斯科涅还是多露出点笑容更好！",
+			say = "Isn't it better to just take everything in and enjoy yourself? I'm sure everyone else feels the same way, so you should try to show it!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -266,10 +266,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "……",
+			say = "...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -283,10 +283,10 @@ return {
 			expression = 9,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 801040,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "鲁莽？别太欺负加斯科涅哦…？",
+			say = "Come on, Le Téméraire, let's not bother Gascogne...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -300,10 +300,10 @@ return {
 			expression = 7,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 801030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "欸？对、对不起！",
+			say = "Hwuh? S-sorry!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -314,8 +314,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -327,10 +327,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "判定，鲁莽没有谢罪的必要",
+			say = "Cannot determine necessity of apology.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -344,10 +344,10 @@ return {
 			expression = 9,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "……",
+			say = "...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -361,10 +361,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "…加斯科涅，多乐在其中一点…更好？",
+			say = "It's better to... enjoy myself...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

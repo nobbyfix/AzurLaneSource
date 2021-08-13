@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANGYING5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"Flower Festival\n\n<size=45>Chapter 5 - Cherry Flowers and Cheery Folks</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 306030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "There really is nothing that embodies spring better than the cherry tree.",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -66,12 +66,12 @@ return {
 			}
 		},
 		{
-			say = "Yes, but seeing everyone enjoying themselves makes it all worth it... Hm? Do we have more guests coming?",
+			actor = 306030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Yes, but seeing everyone enjoying themselves makes it all worth it... Hm? Do we have more guests coming?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -86,15 +86,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
-			dir = 1,
 			actor = 401230,
+			side = 2,
+			bgName = "bg_story_school",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Looks like this is the place. And looks like everyone's having a good time!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -119,12 +119,12 @@ return {
 			}
 		},
 		{
-			say = "Not to mention all the yummy food they've got~",
+			actor = 201210,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201210,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Not to mention all the yummy food they've got~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -219,15 +219,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
-			dir = 1,
 			actor = 306030,
+			side = 2,
+			bgName = "bg_story_school",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Ahaha, how pleasant to see more people join us.",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

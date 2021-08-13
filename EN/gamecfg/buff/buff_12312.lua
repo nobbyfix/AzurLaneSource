@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.04,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = -0.04
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.046,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = -0.046
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.052,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = -0.052
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.06,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = -0.06
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.066,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = -0.066
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.072,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = -0.072
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.08,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = -0.08
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.086,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = -0.086
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.092,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = -0.092
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.1,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = -0.1
 				}
 			}
 		}
 	},
-	time = 6,
-	name = "确捷2",
 	init_effect = "",
+	name = "确捷2",
+	time = 6,
 	picture = "",
 	desc = "回避率下降",
 	stack = 1,

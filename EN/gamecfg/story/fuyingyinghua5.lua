@@ -1,15 +1,15 @@
 return {
-	fadeType = 1,
+	id = "FUYINGYINGHUA5",
 	mode = 2,
 	once = true,
-	id = "FUYINGYINGHUA5",
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "Diadem of Light - Surrounding Waters",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "nagato-map",
+			say = "Diadem of Light - Surrounding Waters",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -144,8 +144,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.15,
 					x = 20,
@@ -349,8 +349,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

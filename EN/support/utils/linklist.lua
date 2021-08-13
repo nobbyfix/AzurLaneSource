@@ -1,30 +1,31 @@
 ys = ys or {}
-ys.LinkList = class("LinkList")
-ys.LinkList.Head = nil
-ys.LinkList.Tail = nil
-ys.LinkList.Count = 0
+slot0 = ys
+slot0.LinkList = class("LinkList")
+slot1 = slot0.LinkList
+slot1.Head = nil
+slot1.Tail = nil
+slot1.Count = 0
 
-ys.LinkList.Ctor = function (slot0)
-	return
+function slot1.Ctor(slot0)
 end
 
-ys.LinkList.Clear = function (slot0)
+function slot1.Clear(slot0)
 	slot0.Head = nil
 	slot0.Tail = nil
 	slot0.Count = 0
 end
 
-ys.LinkList.NewNode = function (slot0, slot1)
+function slot1.NewNode(slot0, slot1)
 	return {
 		Data = slot1
 	}
 end
 
-ys.LinkList.IsEmpty = function (slot0)
+function slot1.IsEmpty(slot0)
 	return slot0.Count == 0
 end
 
-ys.LinkList.AddBefore = function (slot0, slot1, slot2)
+function slot1.AddBefore(slot0, slot1, slot2)
 	if slot1 == nil then
 		return nil
 	end
@@ -48,7 +49,7 @@ ys.LinkList.AddBefore = function (slot0, slot1, slot2)
 	return slot3
 end
 
-ys.LinkList.AddAfter = function (slot0, slot1, slot2)
+function slot1.AddAfter(slot0, slot1, slot2)
 	if slot1 == nil then
 		return nil
 	end
@@ -72,11 +73,11 @@ ys.LinkList.AddAfter = function (slot0, slot1, slot2)
 	return slot3
 end
 
-ys.LinkList.AddFirst = function (slot0, slot1)
+function slot1.AddFirst(slot0, slot1)
 	return slot0:AddNodeFirst(slot0:NewNode(slot1))
 end
 
-ys.LinkList.AddNodeFirst = function (slot0, slot1)
+function slot1.AddNodeFirst(slot0, slot1)
 	if slot0.Head ~= nil then
 		slot0.Head.Before = slot1
 	end
@@ -94,11 +95,11 @@ ys.LinkList.AddNodeFirst = function (slot0, slot1)
 	return slot1
 end
 
-ys.LinkList.AddLast = function (slot0, slot1)
+function slot1.AddLast(slot0, slot1)
 	return slot0:AddNodeLast(slot0:NewNode(slot1))
 end
 
-ys.LinkList.AddNodeLast = function (slot0, slot1)
+function slot1.AddNodeLast(slot0, slot1)
 	if slot0.Tail ~= nil then
 		slot0.Tail.Next = slot1
 	end
@@ -116,7 +117,7 @@ ys.LinkList.AddNodeLast = function (slot0, slot1)
 	return slot1
 end
 
-ys.LinkList.CopyTo = function (slot0, slot1, slot2)
+function slot1.CopyTo(slot0, slot1, slot2)
 	if slot1 == nil then
 		return
 	end
@@ -127,7 +128,7 @@ ys.LinkList.CopyTo = function (slot0, slot1, slot2)
 
 	slot3 = slot0.Head
 
-	for slot7 = 1, slot0.Count, 1 do
+	for slot7 = 1, slot0.Count do
 		table.insert(slot1, slot2, slot3.Data)
 
 		slot3 = slot3.Next
@@ -135,10 +136,10 @@ ys.LinkList.CopyTo = function (slot0, slot1, slot2)
 	end
 end
 
-ys.LinkList.Find = function (slot0, slot1)
+function slot1.Find(slot0, slot1)
 	slot2 = slot0.Head
 
-	for slot6 = 1, slot0.Count, 1 do
+	for slot6 = 1, slot0.Count do
 		if slot2.Data == slot1 then
 			return slot2
 		end
@@ -149,10 +150,10 @@ ys.LinkList.Find = function (slot0, slot1)
 	return nil
 end
 
-ys.LinkList.FindLast = function (slot0, slot1)
+function slot1.FindLast(slot0, slot1)
 	slot2 = slot0.Tail
 
-	for slot6 = 1, slot0.Count, 1 do
+	for slot6 = 1, slot0.Count do
 		if slot2.Data == slot1 then
 			return slot2
 		end
@@ -163,15 +164,15 @@ ys.LinkList.FindLast = function (slot0, slot1)
 	return nil
 end
 
-ys.LinkList.RemoveFirst = function (slot0)
+function slot1.RemoveFirst(slot0)
 	slot0:Remove(slot0.Head)
 end
 
-ys.LinkList.RemoveLast = function (slot0)
+function slot1.RemoveLast(slot0)
 	slot0:Remove(slot0.Tail)
 end
 
-ys.LinkList.Remove = function (slot0, slot1)
+function slot1.Remove(slot0, slot1)
 	if slot1 == nil then
 		return
 	end
@@ -195,10 +196,12 @@ ys.LinkList.Remove = function (slot0, slot1)
 	slot0.Count = slot0.Count - 1
 end
 
-ys.LinkList.RemoveData = function (slot0, slot1)
-	slot0:Remove(slot0:Find(slot1))
+function slot1.RemoveData(slot0, slot1)
+	slot2 = slot0:Find(slot1)
 
-	return slot0.Find(slot1)
+	slot0:Remove(slot2)
+
+	return slot2
 end
 
 function slot2(slot0, slot1)
@@ -209,11 +212,11 @@ function slot2(slot0, slot1)
 	end
 end
 
-ys.LinkList.Iterator = function (slot0)
-	return slot0, slot0
+function slot1.Iterator(slot0)
+	return uv0, slot0
 end
 
-ys.LinkList.Show = function (slot0)
+function slot1.Show(slot0)
 	print("-------- list ++ begin --------")
 
 	for slot4 in slot0:Iterator() do
@@ -222,5 +225,3 @@ ys.LinkList.Show = function (slot0)
 
 	print("-------- list -- end ----------")
 end
-
-return

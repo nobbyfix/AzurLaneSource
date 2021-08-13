@@ -1,19 +1,20 @@
-class("ChargeCommand", pm.SimpleCommand).execute = function (slot0, slot1)
+slot0 = class("ChargeCommand", pm.SimpleCommand)
+
+function slot0.execute(slot0, slot1)
 	if (PLATFORM_CODE == PLATFORM_US or PLATFORM_CODE == PLATFORM_JP) and not pg.SdkMgr.GetInstance():CheckAiriCanBuy() then
 		print("wait for a second, Do not click quickly~")
 
 		return
 	end
 
-	slot3 = slot1:getBody().shopId
 	slot5 = getProxy(ShopsProxy):getFirstChargeList() or {}
 
-	if not slot3 then
+	if not slot1:getBody().shopId then
 		return
 	end
 
 	slot6 = not table.contains(slot5, slot3)
-	slot7 = Goods.New({
+	slot7 = Goods.Create({
 		shop_id = slot3
 	}, Goods.TYPE_CHARGE)
 
@@ -22,35 +23,44 @@ class("ChargeCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		shop_id = slot3
 	}, 11502, function (slot0)
 		if slot0.result == 0 then
-			if (PLATFORM_CODE == PLATFORM_JP or PLATFORM_CODE == PLATFORM_US) and pg.SdkMgr.GetInstance():GetIsPlatform() then
-				if pg.SdkMgr.GetInstance():CheckAudit() then
-					print("serverTag:audit 请求购买物品")
-					pg.SdkMgr.GetInstance():AiriBuy(slot0:getConfig("airijp_id"), "audit", slot0.pay_id)
-				elseif pg.SdkMgr.GetInstance():CheckPreAudit() then
-					print("serverTag:preAudit 请求购买物品")
-					pg.SdkMgr.GetInstance():AiriBuy(slot0:getConfig("airijp_id"), "preAudit", slot0.pay_id)
-				elseif pg.SdkMgr.GetInstance():CheckPretest() then
-					print("serverTag:pretest 请求购买物品")
-					AiriBuy(slot0:getConfig("airijp_id"), "pretest", slot0.pay_id)
+			if uv0.tradeNoPrev ~= slot0.pay_id then
+				if (PLATFORM_CODE == PLATFORM_JP or PLATFORM_CODE == PLATFORM_US) and pg.SdkMgr.GetInstance():GetIsPlatform() then
+					if pg.SdkMgr.GetInstance():CheckAudit() then
+						print("serverTag:audit 请求购买物品")
+						pg.SdkMgr.GetInstance():AiriBuy(uv1:getConfig("airijp_id"), "audit", slot0.pay_id)
+					elseif pg.SdkMgr.GetInstance():CheckPreAudit() then
+						print("serverTag:preAudit 请求购买物品")
+						pg.SdkMgr.GetInstance():AiriBuy(uv1:getConfig("airijp_id"), "preAudit", slot0.pay_id)
+					elseif pg.SdkMgr.GetInstance():CheckPretest() then
+						print("serverTag:preTest 请求购买物品")
+						pg.SdkMgr.GetInstance():AiriBuy(uv1:getConfig("airijp_id"), "preAudit", slot0.pay_id)
+					else
+						print("serverTag:production 请求购买物品")
+						pg.SdkMgr.GetInstance():AiriBuy(uv1:getConfig("airijp_id"), "production", slot0.pay_id)
+					end
+
+					print("请求购买的airijp_id为：" .. uv1:getConfig("airijp_id"))
+					print("请求购买的id为：" .. slot0.pay_id)
 				else
-					print("serverTag:production 请求购买物品")
-					pg.SdkMgr.GetInstance():AiriBuy(slot0:getConfig("airijp_id"), "production", slot0.pay_id)
+					slot3 = getProxy(PlayerProxy):getData()
+					slot7 = 0
+
+					pg.SdkMgr.GetInstance():SdkPay(uv1:getConfig("id_str"), uv1:getConfig("money") * 100, uv1:getConfig("name"), uv1:firstPayDouble() and uv2 and uv1:getConfig("gem") * 2 or uv1:getConfig("gem") + uv1:getConfig("extra_gem"), slot8, uv1:getConfig("subject"), "-" .. slot3.id .. "-" .. slot0.pay_id, slot3.name, slot0.url or "", slot0.order_sign or "")
 				end
 
-				print("请求购买的airijp_id为：" .. slot0:getConfig("airijp_id"))
-				print("请求购买的id为：" .. slot0.pay_id)
+				uv0.tradeNoPrev = slot0.pay_id
+
+				pg.TrackerMgr.GetInstance():Tracking(TRACKING_PURCHASE, uv3)
+				getProxy(ShopsProxy):addWaitTimer()
 			else
-				slot7 = 0
-
-				pg.SdkMgr.GetInstance():SdkPay(slot0:getConfig("id_str"), slot0:getConfig("money") * 100, slot0:getConfig("name"), (slot0:firstPayDouble() and slot1 and slot0:getConfig("gem") * 2) or slot0:getConfig("gem") + slot0:getConfig("extra_gem"), slot8, slot0:getConfig("subject"), "-" .. getProxy(PlayerProxy).getData(slot2).id .. "-" .. slot0.pay_id, getProxy(PlayerProxy).getData(slot2).name, slot0.url or "", slot0.order_sign or "")
+				pg.TipsMgr.GetInstance():ShowTips(i18n("charge_trade_no_error"))
 			end
-
-			pg.TrackerMgr.GetInstance():Tracking(TRACKING_PURCHASE, pg.TrackerMgr.GetInstance())
-			getProxy(ShopsProxy):addWaitTimer()
+		elseif slot0.result == 6 then
+			pg.TipsMgr.GetInstance():ShowTips(i18n("charge_error_count_limit"))
 		else
-			pg.TipsMgr.GetInstance():ShowTips(errorTip("charge_erro", slot0.result))
+			pg.TipsMgr.GetInstance():ShowTips(errorTip("charge", slot0.result))
 		end
 	end)
 end
 
-return class("ChargeCommand", pm.SimpleCommand)
+return slot0

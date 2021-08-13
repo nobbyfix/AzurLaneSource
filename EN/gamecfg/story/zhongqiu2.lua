@@ -1,11 +1,11 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHONGQIU2",
-	updateOnBegin = 1,
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
+	updateOnBegin = 1,
 	scripts = {
 		{
 			actor = 107030,
@@ -166,7 +166,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "Is this a bit like “Memorial Day” celebrated in my country?",
+			say = "Isn't this a bit like Memorial Day in the Eagle Union?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

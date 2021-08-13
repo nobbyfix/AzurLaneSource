@@ -8,9 +8,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.2,
+					attr = "injureRatio",
 					target = "TargetSelf",
-					attr = "injureRatio"
+					number = -0.2
 				}
 			},
 			{
@@ -33,9 +33,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.224,
+					attr = "injureRatio",
 					target = "TargetSelf",
-					attr = "injureRatio"
+					number = -0.224
 				}
 			},
 			{
@@ -58,9 +58,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.248,
+					attr = "injureRatio",
 					target = "TargetSelf",
-					attr = "injureRatio"
+					number = -0.248
 				}
 			},
 			{
@@ -83,9 +83,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.28,
+					attr = "injureRatio",
 					target = "TargetSelf",
-					attr = "injureRatio"
+					number = -0.28
 				}
 			},
 			{
@@ -108,9 +108,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.31,
+					attr = "injureRatio",
 					target = "TargetSelf",
-					attr = "injureRatio"
+					number = -0.31
 				}
 			},
 			{
@@ -133,9 +133,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.34,
+					attr = "injureRatio",
 					target = "TargetSelf",
-					attr = "injureRatio"
+					number = -0.34
 				}
 			},
 			{
@@ -158,9 +158,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.38,
+					attr = "injureRatio",
 					target = "TargetSelf",
-					attr = "injureRatio"
+					number = -0.38
 				}
 			},
 			{
@@ -183,9 +183,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.416,
+					attr = "injureRatio",
 					target = "TargetSelf",
-					attr = "injureRatio"
+					number = -0.416
 				}
 			},
 			{
@@ -208,9 +208,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.452,
+					attr = "injureRatio",
 					target = "TargetSelf",
-					attr = "injureRatio"
+					number = -0.452
 				}
 			},
 			{
@@ -233,9 +233,9 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.5,
+					attr = "injureRatio",
 					target = "TargetSelf",
-					attr = "injureRatio"
+					number = -0.5
 				}
 			},
 			{
@@ -249,14 +249,14 @@ return {
 			}
 		}
 	},
-	time = 0,
-	name = "减伤",
 	init_effect = "",
-	id = 11142,
+	name = "减伤",
+	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "受到伤害降低",
 	stack = 1,
-	color = "blue",
+	id = 11142,
 	icon = 11140,
 	last_effect = "",
 	effect_list = {
@@ -267,9 +267,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.2,
+				attr = "injureRatio",
 				target = "TargetSelf",
-				attr = "injureRatio"
+				number = -0.2
 			}
 		},
 		{

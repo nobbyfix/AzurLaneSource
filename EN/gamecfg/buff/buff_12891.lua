@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "",
 	init_effect = "",
-	id = 12891,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12891,
 	icon = 12890,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 2,
-				target = "TargetSelf",
 				skill_id = 12892,
+				target = "TargetSelf",
 				check_target = {
 					"TargetPlayerVanguardFleet"
 				}

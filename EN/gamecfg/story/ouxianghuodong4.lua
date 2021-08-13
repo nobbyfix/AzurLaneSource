@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG4",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 1,
 			side = 2,
+			actor = 101176,
+			nameColor = "#a9f548",
 			dir = 1,
+			say = "Laffey... is shleepy... I wanna go home...",
 			bgm = "azumaster-ins",
-			actor = 101176,
-			nameColor = "#a9f548",
-			say = "呼...可以回去休息了么？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -26,10 +26,10 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
 			actor = 201216,
 			nameColor = "#a9f548",
-			say = "哎？！现在才要正式开始，要打起精神来啊，拉菲！",
+			dir = 1,
+			say = "Ehh?! But we're only getting started! Get your act together, Laffey!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -40,8 +40,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -54,7 +54,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "快看，我们今天的对手登场了！",
+			say = "Ah! Look, our opponents are over there!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -68,9 +68,9 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 502023,
-			say = "μ兵装，意外的厉害啊……",
+			dir = 1,
+			say = "The Muse System... packs a bigger punch than I expected...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -84,9 +84,9 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 502033,
-			say = "姐姐，没事吧！",
+			dir = 1,
+			say = "Hang in there, sis...!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -100,9 +100,9 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 201216,
-			say = "额，看来传说中的新兵装很厉害啊……",
+			dir = 1,
+			say = "Ugh... that new experimental rigging seems really powerful...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -115,10 +115,10 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			actor = 201216,
 			nameColor = "#a9f548",
-			say = "但是标枪也是不会输的！不管是在舞台上还是战场上！",
+			dir = 1,
+			say = "But, Javelin didn't come here to lose! I'll always shine the brightest, no matter on the battlefield or on stage!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -129,8 +129,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -142,9 +142,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 502023,
-			say = "哇哦，好耀眼",
+			dir = 1,
+			say = "Well said, Javelin!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -159,7 +159,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嘿嘿~谢谢夸奖。拉菲也是，快点自我介绍哦",
+			say = "Ehehe, thanks for the support~! Come on, Laffey, you too!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -173,9 +173,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 101176,
-			say = "好困...拉菲，是来自兔兔星的偶像…本森姐姐教的那些，忘记了……",
+			dir = 1,
+			say = "Fine... I'll say the line...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -189,9 +189,9 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 101176,
-			say = "唔，总而言之，请大家多多支持…或者稍微支持一下就好了",
+			dir = 1,
+			say = "Laffey came from Usamin... Everyone, please give me lots of support... Actually, just a little support is fine...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -205,9 +205,9 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102240,
-			say = "哈哈哈，拉菲，打招呼的时候，应该再精神一点哦~",
+			dir = 1,
+			say = "Laffey, you're supposed to speak up when giving your self-introduction! Commander will be watching us as well~!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -222,7 +222,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "欸，打招呼还要再精神点吗？",
+			say = "Laffey... will do her best...! Let's get motivated...!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -236,9 +236,9 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 202250,
-			say = "这种懒洋洋的氛围，对观众来说意外有杀伤力也说不定",
+			dir = 1,
+			say = "I do think there's something charming about a complete inability to get motivated though.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -251,10 +251,10 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
 			actor = 502033,
 			nameColor = "#a9f548",
-			say = "平海也会给大家加油的！",
+			dir = 1,
+			say = "Ning Hai and I will be cheering for all of you!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -265,8 +265,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -278,9 +278,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 201216,
-			say = "大家一起在舞台上闪耀，一起精神满满地度过这美好的一天吧！",
+			dir = 1,
+			say = "Polaris, let's dazzle the crowd!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -294,9 +294,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102240,
-			say = "乐器调整ok，声音状态ok，今天的对决Live，start！",
+			dir = 1,
+			say = "All righty! Hehe, let's not hold anything back!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

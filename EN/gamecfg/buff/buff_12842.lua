@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 500
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 660,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 660
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 820,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 820
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 1000
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 1160
 				}
 			}
 		}
@@ -77,33 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1320,
-					attr = "torpedoPower"
-				}
-			}
-		}
-	},
-	{
-		effect_list = {
-			{
-				type = "BattleBuffAddBulletAttr",
-				trigger = {
-					"onBulletCreate",
-					"onRemove"
-				},
-				arg_list = {
-					number = 0.03,
-					attr = "cri"
-				}
-			},
-			{
-				type = "BattleBuffAddAttrRatio",
-				trigger = {
-					"onAttach"
-				},
-				arg_list = {
-					number = 1500,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 1320
 				}
 			}
 		}
@@ -117,8 +92,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.06,
-					attr = "cri"
+					attr = "cri",
+					number = 0.03
 				}
 			},
 			{
@@ -127,8 +102,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 1500
 				}
 			}
 		}
@@ -142,8 +117,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.09,
-					attr = "cri"
+					attr = "cri",
+					number = 0.06
 				}
 			},
 			{
@@ -152,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1820,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 1660
 				}
 			}
 		}
@@ -167,8 +142,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.12,
-					attr = "cri"
+					attr = "cri",
+					number = 0.09
 				}
 			},
 			{
@@ -177,20 +152,45 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 1820
 				}
 			}
 		}
 	},
+	{
+		effect_list = {
+			{
+				type = "BattleBuffAddBulletAttr",
+				trigger = {
+					"onBulletCreate",
+					"onRemove"
+				},
+				arg_list = {
+					attr = "cri",
+					number = 0.12
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach"
+				},
+				arg_list = {
+					attr = "torpedoPower",
+					number = 2000
+				}
+			}
+		}
+	},
+	time = 0,
 	name = "",
 	init_effect = "jinengchufared",
-	id = 12842,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "雷击属性上升",
 	stack = 1,
-	color = "yellow",
+	id = 12842,
 	icon = 12840,
 	last_effect = "",
 	blink = {
@@ -207,8 +207,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 500,
-				attr = "torpedoPower"
+				attr = "torpedoPower",
+				number = 500
 			}
 		}
 	}

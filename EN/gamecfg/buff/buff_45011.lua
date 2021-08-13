@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "指挥喵天赋-一发入魂",
 	init_effect = "jinengchufared",
+	name = "指挥喵天赋-一发入魂",
+	time = 0,
 	picture = "",
 	desc = "舰种属于主力舰队，则主炮的子弹暴击率提高3%",
 	stack = 2,
@@ -16,8 +16,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = 0.03,
 				attr = "cri",
+				number = 0.03,
 				index = {
 					1
 				}

@@ -2,14 +2,14 @@ return {
 	{
 		desc = "主炮每进行15次攻击，触发全弹发射-鞍山级I"
 	},
-	time = 0,
-	name = "全弹发射",
 	init_effect = "",
-	id = 24011,
+	name = "全弹发射",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主炮每进行15次攻击，触发全弹发射-鞍山级I",
 	stack = 1,
-	color = "red",
+	id = 24011,
 	icon = 20000,
 	last_effect = "",
 	effect_list = {

@@ -7,13 +7,14 @@ return {
 			style = {
 				text = "Close Reward Menu",
 				mode = 2,
-				dir = -1,
 				posY = -341,
+				dir = -1,
 				posX = 431
 			},
 			ui = {
-				pathIndex = -1,
+				delay = 1,
 				path = "OverlayCamera/Overlay/UIMain/AwardInfoUI(Clone)",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,13 +29,13 @@ return {
 			style = {
 				text = "Head back to the main screen.",
 				mode = 2,
-				dir = -1,
 				posY = 223.26,
+				dir = -1,
 				posX = -136.21
 			},
 			ui = {
-				pathIndex = -1,
 				path = "UICamera/Canvas/UIMain/TaskScene(Clone)/blur_panel/adapt/top/back_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

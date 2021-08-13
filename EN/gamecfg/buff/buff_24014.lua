@@ -1,13 +1,13 @@
 return {
 	{},
-	time = 3,
-	name = "",
 	init_effect = "",
-	id = 24014,
+	name = "",
+	time = 3,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 2,
-	color = "red",
+	id = 24014,
 	icon = 12680,
 	last_effect = "",
 	effect_list = {
@@ -19,8 +19,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 1,
-				target = "TargetSelf",
 				skill_id = 24022,
+				target = "TargetSelf",
 				check_target = {
 					"TargetSelf",
 					"TargetShipTag"
@@ -38,8 +38,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 1,
-				target = "TargetSelf",
 				skill_id = 24032,
+				target = "TargetSelf",
 				check_target = {
 					"TargetSelf",
 					"TargetShipTag"
@@ -57,8 +57,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 1,
-				target = "TargetSelf",
 				skill_id = 24042,
+				target = "TargetSelf",
 				check_target = {
 					"TargetSelf",
 					"TargetShipTag"
@@ -76,8 +76,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 1,
-				target = "TargetSelf",
 				skill_id = 24052,
+				target = "TargetSelf",
 				check_target = {
 					"TargetSelf",
 					"TargetShipTag"

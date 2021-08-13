@@ -2,20 +2,20 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 79281,
 					emitter = "BattleBulletEmitter"
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetNil",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 79283,
 					emitter = "BattleBulletEmitter"
@@ -26,10 +26,10 @@ return {
 	uiEffect = "",
 	name = "专属弹幕-江风",
 	cd = 0,
-	picture = "0",
-	desc = "专属弹幕-江风",
 	painting = 1,
 	id = 29281,
+	picture = "0",
+	desc = "专属弹幕-江风",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -40,20 +40,20 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 79281,
 				emitter = "BattleBulletEmitter"
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 79283,
 				emitter = "BattleBulletEmitter"

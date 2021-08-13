@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "演唱结束",
+			bgm = "azumaster-ins",
 			side = 2,
 			bgName = "star_level_bg_120",
 			dir = 1,
-			bgm = "azumaster-ins",
+			say = "Meanwhile, in the stands...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -27,7 +27,7 @@ return {
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
-			say = "优美的舞蹈和动人的歌声，再加上震耳欲聋的欢呼声，我不是在做梦吧！",
+			say = "Woah, Ning Hai and Ping Hai totally blew my mind~ I've never seen such an exciting concert before! Am I dreaming? Someone pinch me~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -43,7 +43,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "平海和宁海就像仙女下凡一样，牢牢抓住了所有观众的目光...",
+			say = "Who knows, but that's a fairly normal reaction to a concert~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -59,7 +59,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "虽然她们嘴上说得轻松，其实为了今天的亮相，宁海和平海在暗地里下了很多苦功夫呢",
+			say = "They might not have said much, but you can tell how hard those two worked to get up on stage today.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -70,12 +70,12 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
-			say = "应该先准备一些签名...等她们成为国际巨星之后，嘿嘿嘿",
+			dir = 1,
+			say = "Chang Chun, should I grab the signing boards? They're gonna be worth good money after those two get rich and famous, hehe!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -86,8 +86,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -101,7 +101,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "抚顺姐姐...那个，其实这里的掌声是送给演出的所有人的哦，并不是只有平海和宁海",
+			say = "I don't think you should count your chickens before they hatch...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -117,7 +117,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "而且要想成为国际巨星，那个...",
+			say = "Besides, getting signatures just so you can scalp them is kind of scummy...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -133,7 +133,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "没事没事，麻烦事等以后再想，先拿几个签名板去……",
+			say = "Fine, I'll shelf the idea until they actually get famous! Besides, I know Ning Hai wouldn't pass up an opportunity to sell these things!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -149,7 +149,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "真没想到东煌有一天会以这样的形式活跃在世界舞台上...",
+			say = "I never thought I'd see the day when the Dragon Empery stands on the same stage as all the other global powers...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -165,7 +165,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "逸仙姐...？",
+			say = "Yat Sen...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -181,7 +181,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "不是依靠战争中的飞机大炮，而是凭借和平时的歌声舞蹈赢得的尊重...",
+			say = "Rather than fighting as warships, they're standing on stage as brightly-shining idols, capturing everyone's hearts...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -197,7 +197,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "这样的时代，好像也不错呢",
+			say = "It's like a dream come true...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -208,15 +208,15 @@ return {
 			}
 		},
 		{
-			side = 2,
-			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 905030,
+			side = 2,
+			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
-			say = "兵装测试及歌唱行动结束",
+			dir = 1,
+			say = "Concluding joint armament and singing testing protocols.",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -246,7 +246,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嘿嘿，气氛炒的很火热啊！但是对决可是这边赢了哦！",
+			say = "Hehe, that felt great! However, we're the ones who will be taking home the gold!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -262,7 +262,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "刚第一场就如此的火热了！",
+			say = "The first round was full of excitement from the get-go, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -278,7 +278,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "感觉现场的气氛都要通过大海传过来了！",
+			say = "I could feel the entire ocean sizzling with your passion, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -294,7 +294,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "虽然输了，但是能在大家和指挥官面前表演感觉很值呢！",
+			say = "Even though we lost, at least we got to show Commander and the others how hard we worked!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -308,10 +308,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 101176,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "实际胜利的pose……",
+			say = "Tactical victory pose...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -325,10 +325,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 502033,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "姐姐，鞍山她们也来了！",
+			say = "Look, sis, An Shan and the others came out to see us!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -342,10 +342,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 502023,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "大家……！",
+			say = "They really did...!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -356,10 +356,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			say = "在第一场比赛后，{namecode:91}静静地看着自己的新舰装",
+			say = "Meanwhile, after the first test concert, Akagi stood alone, silently looking at her Muse System.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -375,7 +375,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "（感情的力量……这就是“兵装”……）",
+			say = "(\"The power of ideals...\" So, this is the Muse System...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -389,10 +389,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "{namecode:91}？怎么了？",
+			say = "Akagi? Did something happen?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -408,7 +408,7 @@ return {
 			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "没什么，我们赶快准备下一场Live吧",
+			say = "Nothing in particular. Let's head to the next venue.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -424,7 +424,7 @@ return {
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
-			say = "………………",
+			say = "...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -438,10 +438,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "…………大家的，“感情”……",
+			say = "\"Ideals\"... Everyone's \"emotions\"...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

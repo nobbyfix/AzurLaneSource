@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA8",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 301120,
@@ -38,8 +38,8 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#ff5c5c",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			actorName = "Kizuna AI clone",
 			say = "... ... ...!?",
 			typewriter = {
@@ -52,11 +52,11 @@ return {
 			}
 		},
 		{
+			actor = 301120,
 			side = 0,
 			nameColor = "#a9f548",
-			actor = 301120,
-			dir = 1,
 			hideOther = true,
+			dir = 1,
 			actorName = "Ikazuchi & Inazuma",
 			say = "“Secret Technique: Raiden Overload!”",
 			effects = {
@@ -85,11 +85,11 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			withoutActorName = true,
-			soundeffect = "event:/battle/boom2",
 			actor = 10400010,
+			dir = 1,
 			say = "KABOOOM!!",
+			soundeffect = "event:/battle/boom2",
 			effects = {
 				{
 					active = false,
@@ -138,8 +138,8 @@ return {
 			},
 			action = {
 				{
-					y = -2250,
 					type = "move",
+					y = -2250,
 					delay = 0,
 					dur = 1,
 					x = 0
@@ -180,8 +180,8 @@ return {
 			expression = 3,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "Waaaahh... Th-thanks... Urghhh...",
 			typewriter = {
@@ -194,8 +194,8 @@ return {
 			},
 			action = {
 				{
-					y = 22.5,
 					type = "shake",
+					y = 22.5,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -222,8 +222,8 @@ return {
 			expression = 3,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "Waaah... Sho... sorry...",
 			typewriter = {
@@ -236,8 +236,8 @@ return {
 			},
 			action = {
 				{
-					y = 22.5,
 					type = "shake",
+					y = 22.5,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

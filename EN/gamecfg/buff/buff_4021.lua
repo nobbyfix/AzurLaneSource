@@ -12,8 +12,8 @@ return {
 				},
 				arg_list = {
 					rant = 350,
-					target = "TargetSelf",
 					skill_id = 4021,
+					target = "TargetSelf",
 					time = 0
 				}
 			}
@@ -32,8 +32,8 @@ return {
 				},
 				arg_list = {
 					rant = 400,
-					target = "TargetSelf",
 					skill_id = 4021,
+					target = "TargetSelf",
 					time = 0
 				}
 			}
@@ -52,8 +52,8 @@ return {
 				},
 				arg_list = {
 					rant = 450,
-					target = "TargetSelf",
 					skill_id = 4021,
+					target = "TargetSelf",
 					time = 0
 				}
 			}
@@ -72,8 +72,8 @@ return {
 				},
 				arg_list = {
 					rant = 500,
-					target = "TargetSelf",
 					skill_id = 4021,
+					target = "TargetSelf",
 					time = 0
 				}
 			}
@@ -92,8 +92,8 @@ return {
 				},
 				arg_list = {
 					rant = 550,
-					target = "TargetSelf",
 					skill_id = 4021,
+					target = "TargetSelf",
 					time = 0
 				}
 			}
@@ -112,8 +112,8 @@ return {
 				},
 				arg_list = {
 					rant = 600,
-					target = "TargetSelf",
 					skill_id = 4021,
+					target = "TargetSelf",
 					time = 0
 				}
 			}
@@ -132,8 +132,8 @@ return {
 				},
 				arg_list = {
 					rant = 650,
-					target = "TargetSelf",
 					skill_id = 4021,
+					target = "TargetSelf",
 					time = 0
 				}
 			}
@@ -152,8 +152,8 @@ return {
 				},
 				arg_list = {
 					rant = 700,
-					target = "TargetSelf",
 					skill_id = 4021,
+					target = "TargetSelf",
 					time = 0
 				}
 			}
@@ -172,8 +172,8 @@ return {
 				},
 				arg_list = {
 					rant = 750,
-					target = "TargetSelf",
 					skill_id = 4021,
+					target = "TargetSelf",
 					time = 0
 				}
 			}
@@ -192,8 +192,8 @@ return {
 				},
 				arg_list = {
 					rant = 800,
-					target = "TargetSelf",
 					skill_id = 4021,
+					target = "TargetSelf",
 					time = 0
 				}
 			}
@@ -202,12 +202,12 @@ return {
 	desc_get = "受到攻击时有3.5%(满级8.0%)的概率减少50%伤害",
 	name = "重点防护",
 	init_effect = "jinengchufablue",
-	id = 4021,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "受到攻击时有$1的概率减少50%伤害",
 	stack = 1,
-	color = "blue",
+	id = 4021,
 	icon = 4020,
 	last_effect = "",
 	blink = {
@@ -225,8 +225,8 @@ return {
 			},
 			arg_list = {
 				rant = 350,
-				target = "TargetSelf",
 				skill_id = 4021,
+				target = "TargetSelf",
 				time = 0
 			}
 		}

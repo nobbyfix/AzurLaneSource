@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SANLICHUANMO4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Mikasa's Model Museum\n\n<size=45>Chapter 4: The Model Museum Reopens!</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 307060,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 307060,
-			nameColor = "#a9f548",
 			say = "Wow... So this is the legendary...",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,8 +52,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 2,
 					dur = 0.2,
 					x = 0,
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
-			say = "Mikasa's model collection (reborn)!",
+			actor = 307050,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Mikasa's model collection (reborn)!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -82,8 +82,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -92,8 +92,8 @@ return {
 			}
 		},
 		{
-			actorName = "Mikasa",
 			side = 2,
+			actorName = "Mikasa",
 			bgName = "bg_sanli_cg_1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -108,12 +108,12 @@ return {
 			}
 		},
 		{
-			actorName = "Hiei",
 			side = 0,
+			actorName = "Hiei",
 			bgName = "bg_sanli_cg_1",
-			say = "I can't believe how quickly it all came together... I think we should scale up tonight's celebration too!",
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "I can't believe how quickly it all came together... I think we should scale up tonight's celebration too!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -128,8 +128,8 @@ return {
 			}
 		},
 		{
-			actorName = "Shoukaku",
 			side = 2,
+			actorName = "Shoukaku",
 			bgName = "bg_sanli_cg_1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -144,8 +144,8 @@ return {
 			}
 		},
 		{
-			actorName = "Mikasa",
 			side = 2,
+			actorName = "Mikasa",
 			bgName = "bg_sanli_cg_1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -176,12 +176,12 @@ return {
 			}
 		},
 		{
-			say = "Tears of joy, little one.",
+			actor = 305110,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 305110,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Tears of joy, little one.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -244,12 +244,12 @@ return {
 			}
 		},
 		{
-			say = "All right, listen up! The glory days of the past are behind us, but today is about striving together for a glorious future!",
+			actor = 305110,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 305110,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "All right, listen up! The glory days of the past are behind us, but today is about striving together for a glorious future!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -276,11 +276,11 @@ return {
 			}
 		},
 		{
+			actor = 305110,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 305110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Now to officially unveil the new museum... Here goes!",
 			effects = {
 				{
@@ -298,11 +298,11 @@ return {
 			}
 		},
 		{
+			soundeffect = "event:/battle/boom1",
 			side = 2,
 			bgName = "bg_story_task",
-			say = "Rumble rumble rumble...",
 			dir = 1,
-			soundeffect = "event:/battle/boom1",
+			say = "Rumble rumble rumble...",
 			effects = {
 				{
 					active = false,
@@ -320,11 +320,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Um... why did the room start shaking when you pushed that button?",
 			typewriter = {
 				speed = 0.05,
@@ -336,8 +336,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -346,12 +346,12 @@ return {
 			}
 		},
 		{
-			say = "Oh no... is everything going to break again?",
+			actor = 301320,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 301320,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "Oh no... is everything going to break again?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -398,12 +398,12 @@ return {
 			}
 		},
 		{
-			say = "It's... a new display case?",
+			actor = 307050,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "It's... a new display case?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -418,9 +418,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "Sitting proudly inside the brand new display case was...",
 			typewriter = {
 				speed = 0.05,
@@ -428,11 +428,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "That's... a model ship? Oh! That's a model of Mikasa!",
 			typewriter = {
 				speed = 0.05,
@@ -444,8 +444,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.7,
 					dur = 0.2,
 					x = 0,
@@ -454,11 +454,11 @@ return {
 			}
 		},
 		{
+			actor = 305110,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 305110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Huh? Turns out it was my secret collectible button?!",
 			typewriter = {
 				speed = 0.05,
@@ -470,8 +470,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -512,11 +512,11 @@ return {
 			}
 		},
 		{
+			actor = 305110,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 305110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "I can't believe I've embarrassed myself like this in front of the kids... is this what they call \"exhibitionism\"?!",
 			typewriter = {
 				speed = 0.05,
@@ -528,8 +528,8 @@ return {
 			},
 			action = {
 				{
-					y = -75,
 					type = "move",
+					y = -75,
 					delay = 1.2,
 					dur = 0.3,
 					x = 0
@@ -553,12 +553,12 @@ return {
 			}
 		},
 		{
-			say = "Wooooowww! Mikasa's model is so coooool!",
+			actor = 301320,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301320,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Wooooowww! Mikasa's model is so coooool!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

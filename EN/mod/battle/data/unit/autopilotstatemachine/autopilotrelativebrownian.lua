@@ -1,14 +1,15 @@
 ys = ys or {}
-slot1 = class("AutoPilotRelativeBrownian", ys.Battle.IPilot)
-ys.Battle.AutoPilotRelativeBrownian = slot1
+slot0 = ys
+slot1 = class("AutoPilotRelativeBrownian", slot0.Battle.IPilot)
+slot0.Battle.AutoPilotRelativeBrownian = slot1
 slot1.__name = "AutoPilotRelativeBrownian"
 
-slot1.Ctor = function (slot0, ...)
-	slot0.super.Ctor(slot0, ...)
+function slot1.Ctor(slot0, ...)
+	uv0.super.Ctor(slot0, ...)
 end
 
-slot1.SetParameter = function (slot0, slot1, slot2)
-	slot0.super.SetParameter(slot0, slot1, slot2)
+function slot1.SetParameter(slot0, slot1, slot2)
+	uv0.super.SetParameter(slot0, slot1, slot2)
 
 	slot0._randomPoint = {
 		X1 = slot1.X1,
@@ -19,10 +20,9 @@ slot1.SetParameter = function (slot0, slot1, slot2)
 	slot0._stop = slot1.stopCount
 	slot0._move = slot1.moveCount
 	slot0._random = slot1.randomCount or 30
-	slot0._duration = slot1.duration
 end
 
-slot1.Active = function (slot0, slot1)
+function slot1.Active(slot0, slot1)
 	slot0._stopCount = slot0._stop
 	slot0._moveCount = 0
 	slot0._randomCount = 0
@@ -33,13 +33,13 @@ slot1.Active = function (slot0, slot1)
 		Z1 = slot0._randomPoint.Z1 + slot2.z,
 		Z2 = slot0._randomPoint.Z2 + slot2.z
 	}
-	slot0._referencePoint = slot0.Battle.BattleFormulas.RandomPos(slot0._relativePoint)
+	slot0._referencePoint = uv0.Battle.BattleFormulas.RandomPos(slot0._relativePoint)
 
-	slot1.super.Active(slot0, slot1)
+	uv1.super.Active(slot0, slot1)
 end
 
-slot1.GetDirection = function (slot0, slot1)
-	if slot0._duration > 0 and slot0._duration < pg.TimeMgr.GetInstance():GetCombatTime() - slot0._startTime then
+function slot1.GetDirection(slot0, slot1)
+	if slot0:IsExpired() then
 		slot0:Finish()
 
 		return Vector3.zero
@@ -53,17 +53,16 @@ slot1.GetDirection = function (slot0, slot1)
 		return Vector3.zero
 	end
 
-	if slot0._referencePoint - slot1.magnitude < 0.4 or slot0._random < slot0._randomCount then
+	if (slot0._referencePoint - slot1).magnitude < 0.4 or slot0._random < slot0._randomCount then
 		if slot0._move < slot0._moveCount then
 			slot0._stopCount = 0
 			slot0._moveCount = 0
 		else
 			slot0._randomCount = 0
-			slot3 = slot0.Battle.BattleFormulas.RandomPos(slot0._relativePoint)
 			slot4 = 0
 
-			while Vector3.SqrDistance(slot3, slot1) < 5 do
-				slot3 = slot0.Battle.BattleFormulas.RandomPos(slot0._relativePoint)
+			while Vector3.SqrDistance(uv0.Battle.BattleFormulas.RandomPos(slot0._relativePoint), slot1) < 5 do
+				slot3 = uv0.Battle.BattleFormulas.RandomPos(slot0._relativePoint)
 				slot4 = slot4 + 1
 			end
 
@@ -78,5 +77,3 @@ slot1.GetDirection = function (slot0, slot1)
 		return slot2.normalized
 	end
 end
-
-return

@@ -2,10 +2,10 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetHelpLeastHPRatio",
+				targetAniEffect = "",
 				arg_list = {
 					number = 15
 				}
@@ -15,17 +15,17 @@ return {
 	uiEffect = "",
 	name = "维修Lv3",
 	cd = 0,
+	painting = 0,
+	id = 32,
 	picture = "0",
 	aniEffect = "",
 	desc = "维修Lv3",
-	painting = 0,
-	id = 32,
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillHeal",
+			casterAniEffect = "",
 			target_choise = "TargetHelpLeastHPRatio",
+			targetAniEffect = "",
 			arg_list = {
 				number = 15
 			}

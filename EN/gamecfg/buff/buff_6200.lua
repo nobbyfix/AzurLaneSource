@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "一式穿甲弹",
 	init_effect = "",
-	id = 6200,
+	name = "一式穿甲弹",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "提高暴击伤害",
 	stack = 1,
-	color = "yellow",
+	id = 6200,
 	icon = 6200,
 	last_effect = "",
 	effect_list = {

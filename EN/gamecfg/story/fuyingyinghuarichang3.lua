@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "FUYINGYINGHUARICHANG3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Blessings and Tidings\n\n<size=45>Chapter 3: New Year's Challenge!</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_101",
+			actor = 401351,
 			side = 2,
+			bgName = "star_level_bg_101",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "newyear2",
-			actor = 401351,
-			nameColor = "#a9f548",
 			say = "Do your best, Cleveland~!",
+			bgm = "newyear2",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,8 +52,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -65,8 +65,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_101",
-			dir = 1,
 			actor = 102094,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Let's see if you can handle my Golden Smash! Yah!",
 			dialogShake = {
@@ -87,8 +87,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "star_level_bg_101",
-			dir = 1,
 			actor = 301101,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Too naive, Eagle Union girl! Take this!",
 			typewriter = {
@@ -104,8 +104,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_101",
-			dir = 1,
 			actor = 102094,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Woahh!",
 			typewriter = {
@@ -118,8 +118,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -163,8 +163,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "star_level_bg_101",
-			dir = 1,
 			actor = 301101,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Well, y'know, this is a traditional game here, so I have the home court advantage. Besides, Cleveland, weren't you the one who asked for me to go all out?",
 			typewriter = {
@@ -177,8 +177,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -190,8 +190,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_101",
-			dir = 1,
 			actor = 302211,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Strategic shortsightedness on your part, Cleveland.",
 			typewriter = {
@@ -207,8 +207,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_101",
-			dir = 1,
 			actor = 401351,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Boo...! I thought this game would be a walk in the park for an athletic idol like me!",
 			typewriter = {
@@ -224,8 +224,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_101",
-			dir = 1,
 			actor = 102094,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "All right, all right, I admit defeat. Gotta say though, this game is a lot of fun! Seriously!",
 			typewriter = {
@@ -257,8 +257,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_101",
-			dir = 1,
 			actor = 302211,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Thank you very much. Now then... Oh, Hibiki, did you tell our guests about the punishment for losing a hanetsuki match?",
 			typewriter = {
@@ -274,8 +274,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_101",
-			dir = 1,
 			actor = 301101,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Of course I did~? Nihihi, this is going to be so much fun!",
 			typewriter = {
@@ -288,8 +288,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -298,10 +298,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "star_level_bg_101",
 			actor = 102094,
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_101",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "Both",
@@ -340,14 +340,14 @@ return {
 			}
 		},
 		{
-			actorName = "Both",
+			actor = 102094,
 			side = 0,
 			bgName = "star_level_bg_101",
-			hideOther = true,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 102094,
-			nameColor = "#a9f548",
+			hideOther = true,
+			actorName = "Both",
 			say = "Ahhhhh!!",
 			dialogShake = {
 				speed = 0.09,

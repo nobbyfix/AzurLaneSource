@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "NEPU_DAILY5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"<size=45>Chapter 5 - Keep Quiet In The Library</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 10100030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-nepu1",
-			actor = 10100030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "...This must be the academy's library... It's huge. This many books is something worth getting excited about.",
+			bgm = "story-nepu1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "What do you think of the library, Blanc? Do you find it to be to your liking?",
+			actor = 401230,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "What do you think of the library, Blanc? Do you find it to be to your liking?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -278,12 +278,12 @@ return {
 			}
 		},
 		{
-			say = "Good day, Miss Ranger. I should be the one asking you! What are you doing here?",
+			actor = 401230,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Good day, Miss Ranger. I should be the one asking you! What are you doing here?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -314,9 +314,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "BA-THUMP, THUMP, THUMP!",
 			typewriter = {
 				speed = 0.05,
@@ -596,11 +596,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 307030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:93}",
 			say = "Why, for being a library, it's awfully lively in here... What did I miss?",
 			typewriter = {
@@ -661,11 +661,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 307030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:93}",
 			say = "I am. I was thinking that I probably have to study a bit.",
 			typewriter = {
@@ -710,11 +710,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 307030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:93}",
 			say = "What are you saying now, Ranger? ...Sigh, at this rate I'm actually going to become established as a teacher character...",
 			typewriter = {

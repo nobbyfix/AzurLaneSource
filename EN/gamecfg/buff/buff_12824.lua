@@ -8,9 +8,9 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					rant = 3000,
-					skill_id = 12820,
-					target = "TargetSelf"
+					rant = 4000,
+					target = "TargetSelf",
+					skill_id = 12820
 				}
 			}
 		}
@@ -24,9 +24,9 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					rant = 3330,
-					skill_id = 12820,
-					target = "TargetSelf"
+					rant = 4330,
+					target = "TargetSelf",
+					skill_id = 12820
 				}
 			}
 		}
@@ -40,9 +40,9 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					rant = 3660,
-					skill_id = 12820,
-					target = "TargetSelf"
+					rant = 4660,
+					target = "TargetSelf",
+					skill_id = 12820
 				}
 			}
 		}
@@ -56,9 +56,9 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					rant = 3990,
-					skill_id = 12820,
-					target = "TargetSelf"
+					rant = 4990,
+					target = "TargetSelf",
+					skill_id = 12820
 				}
 			}
 		}
@@ -72,9 +72,9 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					rant = 4320,
-					skill_id = 12820,
-					target = "TargetSelf"
+					rant = 5320,
+					target = "TargetSelf",
+					skill_id = 12820
 				}
 			}
 		}
@@ -88,9 +88,9 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					rant = 4650,
-					skill_id = 12820,
-					target = "TargetSelf"
+					rant = 5650,
+					target = "TargetSelf",
+					skill_id = 12820
 				}
 			}
 		}
@@ -104,9 +104,9 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					rant = 4980,
-					skill_id = 12820,
-					target = "TargetSelf"
+					rant = 5980,
+					target = "TargetSelf",
+					skill_id = 12820
 				}
 			}
 		}
@@ -120,9 +120,9 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					rant = 5310,
-					skill_id = 12820,
-					target = "TargetSelf"
+					rant = 6310,
+					target = "TargetSelf",
+					skill_id = 12820
 				}
 			}
 		}
@@ -136,9 +136,9 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					rant = 5640,
-					skill_id = 12820,
-					target = "TargetSelf"
+					rant = 6640,
+					target = "TargetSelf",
+					skill_id = 12820
 				}
 			}
 		}
@@ -152,9 +152,9 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					rant = 6000,
-					skill_id = 12820,
-					target = "TargetSelf"
+					rant = 7000,
+					target = "TargetSelf",
+					skill_id = 12820
 				}
 			}
 		}
@@ -162,12 +162,12 @@ return {
 	desc_get = "",
 	name = "",
 	init_effect = "",
-	id = 12821,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12821,
 	icon = 12820,
 	last_effect = "",
 	effect_list = {
@@ -178,9 +178,9 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				rant = 3000,
-				skill_id = 12820,
-				target = "TargetSelf"
+				rant = 4000,
+				target = "TargetSelf",
+				skill_id = 12820
 			}
 		}
 	}

@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 150,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 150
 				}
 			},
 			{
@@ -19,8 +19,19 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 150,
-					attr = "loadSpeed"
+					attr = "attackRating",
+					number = 150
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					attr = "loadSpeed",
+					number = 150
 				}
 			}
 		}
@@ -34,8 +45,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 200,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 200
 				}
 			},
 			{
@@ -45,8 +56,19 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 200,
-					attr = "loadSpeed"
+					attr = "attackRating",
+					number = 200
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					attr = "loadSpeed",
+					number = 200
 				}
 			}
 		}
@@ -60,8 +82,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 250,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 250
 				}
 			},
 			{
@@ -71,8 +93,19 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 250,
-					attr = "loadSpeed"
+					attr = "attackRating",
+					number = 250
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					attr = "loadSpeed",
+					number = 250
 				}
 			}
 		}
@@ -86,8 +119,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 300,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 300
 				}
 			},
 			{
@@ -97,8 +130,19 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 300,
-					attr = "loadSpeed"
+					attr = "attackRating",
+					number = 300
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					attr = "loadSpeed",
+					number = 300
 				}
 			}
 		}
@@ -112,8 +156,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 350,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 350
 				}
 			},
 			{
@@ -123,8 +167,19 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 350,
-					attr = "loadSpeed"
+					attr = "attackRating",
+					number = 350
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					attr = "loadSpeed",
+					number = 350
 				}
 			}
 		}
@@ -138,8 +193,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 400,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 400
 				}
 			},
 			{
@@ -149,8 +204,19 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 400,
-					attr = "loadSpeed"
+					attr = "attackRating",
+					number = 400
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					attr = "loadSpeed",
+					number = 400
 				}
 			}
 		}
@@ -164,8 +230,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 450,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 450
 				}
 			},
 			{
@@ -175,8 +241,19 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 450,
-					attr = "loadSpeed"
+					attr = "attackRating",
+					number = 450
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					attr = "loadSpeed",
+					number = 450
 				}
 			}
 		}
@@ -190,8 +267,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 500,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 500
 				}
 			},
 			{
@@ -201,8 +278,19 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 500,
-					attr = "loadSpeed"
+					attr = "attackRating",
+					number = 500
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					attr = "loadSpeed",
+					number = 500
 				}
 			}
 		}
@@ -216,8 +304,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 550,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 550
 				}
 			},
 			{
@@ -227,8 +315,19 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 550,
-					attr = "loadSpeed"
+					attr = "attackRating",
+					number = 550
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					attr = "loadSpeed",
+					number = 550
 				}
 			}
 		}
@@ -242,8 +341,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 600,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = 600
 				}
 			},
 			{
@@ -253,15 +352,26 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 600,
-					attr = "loadSpeed"
+					attr = "attackRating",
+					number = 600
+				}
+			},
+			{
+				type = "BattleBuffAddAttrRatio",
+				trigger = {
+					"onAttach",
+					"onStack"
+				},
+				arg_list = {
+					attr = "loadSpeed",
+					number = 600
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "狼群战术",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 3,
@@ -283,8 +393,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = 150,
-				attr = "torpedoPower"
+				attr = "torpedoPower",
+				number = 150
 			}
 		},
 		{
@@ -294,8 +404,19 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = 150,
-				attr = "loadSpeed"
+				attr = "attackRating",
+				number = 150
+			}
+		},
+		{
+			type = "BattleBuffAddAttrRatio",
+			trigger = {
+				"onAttach",
+				"onStack"
+			},
+			arg_list = {
+				attr = "loadSpeed",
+				number = 150
 			}
 		}
 	}

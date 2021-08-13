@@ -20,8 +20,8 @@ return {
 		{
 			actor = 103090,
 			side = 0,
-			say = "Those two came from the south, so that must mean...",
 			nameColor = "#a9f548",
+			say = "Those two came from the south, so that must mean...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

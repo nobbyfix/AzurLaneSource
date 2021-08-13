@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIAOTIANEXINNIAN4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"New Year's Blessings\n\n<size=45>Chapter 4 The Sakura Empire's New Year</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
+			actor = 205060,
 			side = 2,
+			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "main-newyear",
-			actor = 205060,
-			nameColor = "#a9f548",
 			say = "I've long heard the Sakura Empire's new year celebrations are lively... but are they really that fun?",
+			bgm = "main-newyear",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,12 +52,12 @@ return {
 			}
 		},
 		{
-			say = "I'm curious about that \"sobaean muchy\" thing Yuudachi mentioned! Man, I'm starving after throwing so many snowballs.",
+			actor = 102090,
 			side = 1,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "I'm curious about that \"sobaean muchy\" thing Yuudachi mentioned! Man, I'm starving after throwing so many snowballs.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -152,11 +152,11 @@ return {
 			}
 		},
 		{
+			actor = 201100,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "Umm... there's also the way Eugen drinks... Oh, I guess it's pretty hard to imagine how that looks...",
 			typewriter = {
 				speed = 0.05,
@@ -168,8 +168,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -258,12 +258,12 @@ return {
 			}
 		},
 		{
-			say = "Since the snow on your clothes is starting to melt, perhaps we should head for the dormitory soon?",
+			actor = 399010,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 399010,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "Since the snow on your clothes is starting to melt, perhaps we should head for the dormitory soon?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -310,15 +310,15 @@ return {
 			}
 		},
 		{
+			actor = 312011,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 312011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Whew~ My zouni is finally done nya! Who wants to be the first to...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -343,8 +343,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0,

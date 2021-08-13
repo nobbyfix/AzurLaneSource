@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIERBICI5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"「Schmelzen」\n\n<size=45>Chapter 5: Everyone's Secretary Ship</size>",
@@ -17,16 +17,16 @@ return {
 			}
 		},
 		{
-			bgmDelay = 2,
-			side = 2,
-			dir = 1,
 			blackBg = true,
+			side = 2,
 			bgName = "bg_story_task",
-			bgm = "story-1",
 			say = "Port - Office",
+			dir = 1,
+			bgmDelay = 2,
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -47,9 +47,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "As usual, Tirpitz was easily and efficiently handling her secretary duties.",
 			typewriter = {
 				speed = 0.05,
@@ -73,9 +73,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "(Knock knock)",
 			typewriter = {
 				speed = 0.05,
@@ -99,12 +99,12 @@ return {
 			}
 		},
 		{
-			say = "Thanks for your work.",
+			actor = 405020,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Thanks for your work.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -135,15 +135,15 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
-			say = "If you could update the route that to be patrolled next time based on the predictions of enemy appearances in the various sea zones...",
+			dir = 1,
+			say = "If you could update the route that is to be patrolled next time based on the predictions of enemy appearances in the various sea zones...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -168,9 +168,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "(Knock knock)",
 			typewriter = {
 				speed = 0.05,
@@ -178,11 +178,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 302010,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:37}",
 			say = "Hello there. Tirpitz, you really saved me last time. Thanks.",
 			typewriter = {
@@ -195,11 +195,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 302010,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:37}",
 			say = "Here, the newest model air purifier. Umm, it's a model that raises work efficiency and promotes good health. I'll leave it here.",
 			typewriter = {
@@ -212,12 +212,12 @@ return {
 			}
 		},
 		{
-			say = "Ah, thank you.",
+			actor = 405020,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Ah, thank you.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -232,11 +232,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 302010,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:37}",
 			say = "There are still things left unfinished at the Research Department, so I'll be heading out.",
 			typewriter = {
@@ -249,15 +249,15 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "With this, the patrol route should be... and for the personnel...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -282,9 +282,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "(Knock knock)",
 			typewriter = {
 				speed = 0.05,
@@ -324,12 +324,12 @@ return {
 			}
 		},
 		{
-			say = "Sure, that place works.",
+			actor = 405020,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Sure, that place works.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -360,15 +360,15 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -409,9 +409,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "Tirpitz didn't seem to know that she was the reason why more people had been visiting.",
 			typewriter = {
 				speed = 0.05,

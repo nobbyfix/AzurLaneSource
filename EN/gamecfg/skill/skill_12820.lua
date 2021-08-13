@@ -10,9 +10,9 @@ return {
 	castCV = "",
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
+			targetAniEffect = "",
 			target_choise = {
 				"TargetAllHelp",
 				"TargetShipTag"
@@ -20,7 +20,7 @@ return {
 			arg_list = {
 				buff_id = 12822,
 				ship_tag_list = {
-					"suruga"
+					"Suruga"
 				}
 			}
 		}

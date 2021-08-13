@@ -7,9 +7,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
+					attr = "cannonPower",
 					target = "TargetSelf",
-					attr = "cannonPower"
+					number = 800
 				}
 			},
 			{
@@ -18,9 +18,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
+					attr = "torpedoPower",
 					target = "TargetSelf",
-					attr = "torpedoPower"
+					number = 800
 				}
 			},
 			{
@@ -29,8 +29,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.2,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -46,9 +46,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 920,
+					attr = "cannonPower",
 					target = "TargetSelf",
-					attr = "cannonPower"
+					number = 920
 				}
 			},
 			{
@@ -57,9 +57,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 920,
+					attr = "torpedoPower",
 					target = "TargetSelf",
-					attr = "torpedoPower"
+					number = 920
 				}
 			},
 			{
@@ -68,8 +68,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.222,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -85,9 +85,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1040,
+					attr = "cannonPower",
 					target = "TargetSelf",
-					attr = "cannonPower"
+					number = 1040
 				}
 			},
 			{
@@ -96,9 +96,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1040,
+					attr = "torpedoPower",
 					target = "TargetSelf",
-					attr = "torpedoPower"
+					number = 1040
 				}
 			},
 			{
@@ -107,8 +107,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.244,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -124,9 +124,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1200,
+					attr = "cannonPower",
 					target = "TargetSelf",
-					attr = "cannonPower"
+					number = 1200
 				}
 			},
 			{
@@ -135,9 +135,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1200,
+					attr = "torpedoPower",
 					target = "TargetSelf",
-					attr = "torpedoPower"
+					number = 1200
 				}
 			},
 			{
@@ -146,8 +146,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.266,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -163,9 +163,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1320,
+					attr = "cannonPower",
 					target = "TargetSelf",
-					attr = "cannonPower"
+					number = 1320
 				}
 			},
 			{
@@ -174,9 +174,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1320,
+					attr = "torpedoPower",
 					target = "TargetSelf",
-					attr = "torpedoPower"
+					number = 1320
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.288,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -202,9 +202,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1440,
+					attr = "cannonPower",
 					target = "TargetSelf",
-					attr = "cannonPower"
+					number = 1440
 				}
 			},
 			{
@@ -213,9 +213,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1440,
+					attr = "torpedoPower",
 					target = "TargetSelf",
-					attr = "torpedoPower"
+					number = 1440
 				}
 			},
 			{
@@ -224,8 +224,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.31,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -241,9 +241,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1600,
+					attr = "cannonPower",
 					target = "TargetSelf",
-					attr = "cannonPower"
+					number = 1600
 				}
 			},
 			{
@@ -252,9 +252,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1600,
+					attr = "torpedoPower",
 					target = "TargetSelf",
-					attr = "torpedoPower"
+					number = 1600
 				}
 			},
 			{
@@ -263,8 +263,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.332,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -280,9 +280,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1720,
+					attr = "cannonPower",
 					target = "TargetSelf",
-					attr = "cannonPower"
+					number = 1720
 				}
 			},
 			{
@@ -291,9 +291,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1720,
+					attr = "torpedoPower",
 					target = "TargetSelf",
-					attr = "torpedoPower"
+					number = 1720
 				}
 			},
 			{
@@ -302,8 +302,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.354,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -319,9 +319,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1840,
+					attr = "cannonPower",
 					target = "TargetSelf",
-					attr = "cannonPower"
+					number = 1840
 				}
 			},
 			{
@@ -330,9 +330,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1840,
+					attr = "torpedoPower",
 					target = "TargetSelf",
-					attr = "torpedoPower"
+					number = 1840
 				}
 			},
 			{
@@ -341,8 +341,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.376,
-					attr = "cri",
 					index = {
 						1
 					}
@@ -358,9 +358,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2000,
+					attr = "cannonPower",
 					target = "TargetSelf",
-					attr = "cannonPower"
+					number = 2000
 				}
 			},
 			{
@@ -369,9 +369,9 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2000,
+					attr = "torpedoPower",
 					target = "TargetSelf",
-					attr = "torpedoPower"
+					number = 2000
 				}
 			},
 			{
@@ -380,8 +380,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.4,
 					attr = "cri",
+					number = 0.4,
 					index = {
 						1
 					}
@@ -389,14 +389,14 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "长弓",
 	init_effect = "jinengchufared",
-	id = 12551,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12551,
 	icon = 12550,
 	last_effect = "",
 	blink = {

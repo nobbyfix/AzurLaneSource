@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "Start by going to the Buy menu to purchase a Cat Box from Akashi!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			}
 		},

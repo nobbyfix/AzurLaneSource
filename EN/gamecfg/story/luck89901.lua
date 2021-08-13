@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "LUCK89901",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 899010,

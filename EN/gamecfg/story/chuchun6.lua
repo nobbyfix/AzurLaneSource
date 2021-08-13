@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CHUCHUN6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"The Timid Black Cat\n\n<size=45>Hatsuharu's Determination</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			actor = 301210,
 			side = 2,
+			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 301210,
-			nameColor = "#a9f548",
 			say = "C-Commander, why are you here...?",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -90,11 +90,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "I can't even overcome my social anxiety...",
 			typewriter = {
 				speed = 0.05,
@@ -160,11 +160,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Then I became your secretary, you helped me become better at talking, and I somehow managed to hold a conversation with strangers...",
 			typewriter = {
 				speed = 0.05,
@@ -176,8 +176,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 45,
@@ -266,11 +266,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "I... I'm...",
 			typewriter = {
 				speed = 0.05,
@@ -282,8 +282,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 45,
@@ -298,11 +298,11 @@ return {
 			}
 		},
 		{
+			actor = 301210,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301210,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "O-okay! That sounds good!",
 			typewriter = {
 				speed = 0.05,
@@ -314,8 +314,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -360,7 +360,7 @@ return {
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			blackBg = true,
-			say = "Hatsushimo's eyes were twinkling with determination.",
+			say = "Hatsuharu's eyes were twinkling with determination.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

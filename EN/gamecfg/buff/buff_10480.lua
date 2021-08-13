@@ -62,12 +62,12 @@ return {
 	desc_get = "与平海同在一个舰队时，炮击性能提高15.0%(满级35.0%)",
 	name = "姐妹同心",
 	init_effect = "",
-	id = 10480,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "与平海同在一个舰队时，炮击性能提高$1",
 	stack = 1,
-	color = "yellow",
+	id = 10480,
 	icon = 10480,
 	last_effect = "",
 	effect_list = {
@@ -77,15 +77,15 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				check_target = "TargetTemplate",
 				minTargetNumber = 1,
-				skill_id = 10480,
 				target = "TargetSelf",
-				targetTemplateIDList = {
-					502031,
-					502032,
-					502033,
-					502034
+				skill_id = 10480,
+				check_target = {
+					"TargetAllHelp",
+					"TargetShipTag"
+				},
+				ship_tag_list = {
+					"Ping Hai"
 				}
 			}
 		}

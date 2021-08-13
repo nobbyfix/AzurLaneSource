@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "霞1",
 	init_effect = "",
-	id = 12890,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12890,
 	icon = 12890,
 	last_effect = "",
 	effect_list = {
@@ -34,7 +34,7 @@ return {
 					"TargetShipTag"
 				},
 				ship_tag_list = {
-					"shiranui"
+					"Shiranui"
 				}
 			}
 		},
@@ -51,7 +51,7 @@ return {
 					"TargetShipTag"
 				},
 				ship_tag_list = {
-					"shiranui"
+					"Shiranui"
 				}
 			}
 		}

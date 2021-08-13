@@ -1,20 +1,20 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG13",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 5,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
-			bgm = "azumaster-ins",
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "啊哈哈，果然输了呢……",
+			say = "Ahaha, turns out I'm no match for you...",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -30,7 +30,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "说实话没想到斯佩会来的",
+			say = "To be honest, I never thought you'd come back after everything that happened.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -44,10 +44,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "你这么一说我挺开心的。不过我也没想到加斯科涅能这样参与到Polaris里来呢",
+			say = "I'll take that as a compliment. You know what surprised me? I never would have expected Gascogne to participate in Polaris...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -61,10 +61,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "……？",
+			say = "...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -80,7 +80,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "嗯…怎么说呢，其实我一直觉得…加斯科涅很像我",
+			say = "Um, well, I always thought that Gascogne and I had a lot in common.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -96,7 +96,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "刚来到港区时不苟言笑的，脑子里只想着战斗与出击",
+			say = "When I first arrived at port, I was prickly and on edge, always looking for a fight.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -110,10 +110,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "我们舰船存在的意义就是战斗…这点我当然知道",
+			say = "Of course, the purpose of us Kansen is to fight, and I knew that very well.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -127,10 +127,10 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "但是当时的我，只知道“不带感情”的战斗，完全体会不到与大家一起时的快乐",
+			say = "But there's more to life than fighting. If I never realized that, and kept being my old emotionless self, I wouldn't have been able to enjoy this event with everyone else.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -144,10 +144,10 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "所以…看到加斯科涅能像这样与Polaris的各位一起享受，我真的觉得很棒",
+			say = "That's why it was a huge relief to see Gascogne enjoying herself alongside the rest of Polaris.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -158,8 +158,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -171,10 +171,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "……",
+			say = "...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -188,10 +188,10 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403054,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "也因为如此，我也觉得自己能够更加努力了。战斗也好，Live也好，都会加油的",
+			say = "Thanks to you, I was able to fight and sing harder than I ever thought was possible.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -207,7 +207,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "我也能够…见识到「μ兵装」更加极限的力量的吧？",
+			say = "I wonder if I was able to push the limits of your new rigging, even by just a little...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -221,13 +221,13 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "哈哈，确实是这样。今天与其说是战斗，不如说是大家一起“享受快乐”呢",
+			say = "That's true. The one thing that everyone has had in common today... is that they all had a good time.",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -255,10 +255,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "毕竟是“Live”呢，心境上不太一样也是自然的吧",
+			say = "We hold exercises like these every day, and the fighting isn't really much different, but there's something about these concerts that changes the whole experience.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -274,7 +274,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "算了，都到这步了，就尽全力努力到最后吧。你们也没问题吧！",
+			say = "Anyway, we've already come this far. Let's see things through to the end. Everyone's fine with that, I hope!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -288,10 +288,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "请求验证“直接”的感情表现",
+			say = "Requesting directives on how to \"be more honest.\"",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -305,10 +305,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "论对主人的直接感情表现，在这Polaris里，恐怕没人能赢得过她呢",
+			say = "If you're trying to express your emotions to the Master in the most straightforward manner possible, there is someone here who is exceptionally adept at that.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -319,12 +319,12 @@ return {
 			}
 		},
 		{
+			actor = 307100,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
-			actor = 307100,
 			nameColor = "#a9f548",
-			say = "呵呵，说的是谁呢~？",
+			dir = 1,
+			say = "Did I hear something?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -335,8 +335,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -348,10 +348,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "啊哈哈……",
+			say = "Ahaha...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

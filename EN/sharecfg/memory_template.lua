@@ -1,9 +1,9 @@
 pg = pg or {}
 pg.memory_template = {
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Enemies and Popsicles",
 		condition = "Prologue",
 		story = "S001",
@@ -12,9 +12,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Encounter",
 		condition = "Prologue",
 		story = "S002",
@@ -23,9 +23,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Royal Navy's Glory",
 		condition = "Prologue",
 		story = "S007",
@@ -34,9 +34,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Conflict",
 		condition = "Prologue",
 		story = "S006",
@@ -45,9 +45,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Rhine Drill",
 		condition = "Prologue",
 		story = "S003",
@@ -56,9 +56,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An End and a Beginning",
 		condition = "Prologue",
 		story = "S004",
@@ -67,9 +67,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prologue: Hornet",
 		condition = "Fight the boss from main mission 1-1",
 		story = "T10101",
@@ -78,9 +78,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prologue: Alert",
 		condition = "Clear Main 1-1",
 		story = "T10102",
@@ -89,9 +89,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 1: The Burning Sea",
 		condition = "Begin main mission 1-2",
 		story = "UI10201",
@@ -100,9 +100,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 1: Breaking the Blockade",
 		condition = "Begin main mission 1-2",
 		story = "UI10202",
@@ -111,9 +111,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 1: Attack",
 		condition = "Fight the boss from main mission 1-2",
 		story = "T10201",
@@ -122,9 +122,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 1: First Victory",
 		condition = "Clear Main 1-2",
 		story = "T10202",
@@ -133,9 +133,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 1: Invasion",
 		condition = "Fight the boss from main mission 1-3",
 		story = "T10301",
@@ -144,9 +144,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 1: In-depth Investigation",
 		condition = "Clear Main 1-3",
 		story = "T10302",
@@ -155,9 +155,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter: Sakura Rising",
 		condition = "Fight the boss from main mission 1-4",
 		story = "T10401",
@@ -166,9 +166,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 1: Crimson Axis",
 		condition = "Clear Main 1-4",
 		story = "T10402",
@@ -177,9 +177,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 2: The Coral Sea",
 		condition = "Reach chapter 2",
 		story = "UI20101",
@@ -188,9 +188,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 2: Counterattack's Overture",
 		condition = "Clear Main 2-2",
 		story = "T20201",
@@ -199,9 +199,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 2: The Next City",
 		condition = "Clear Main 2-3",
 		story = "T20301",
@@ -210,9 +210,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 3: Five Minutes of Fate",
 		condition = "Reach chapter 3",
 		story = "UI30101",
@@ -221,9 +221,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 3: Enemy Encounter",
 		condition = "Begin main mission 3-1",
 		story = "T30101",
@@ -232,9 +232,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 3: Combat",
 		condition = "Fight the boss from main mission 3-1",
 		story = "T30102",
@@ -243,9 +243,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 3: Victory",
 		condition = "Clear Main 3-1",
 		story = "T30103",
@@ -254,9 +254,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 3: Enemy Aircraft",
 		condition = "Fight the boss from main mission 3-2",
 		story = "T30201",
@@ -265,9 +265,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 3: Destiny",
 		condition = "Clear Main 3-2",
 		story = "T30202",
@@ -276,9 +276,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 3: Final Words",
 		condition = "Clear Main 3-3",
 		story = "T30301",
@@ -287,9 +287,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 3: Final Counter",
 		condition = "Fight the boss from main mission 3-4",
 		story = "T30401",
@@ -298,9 +298,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 3: Continued Willpower",
 		condition = "Clear Main 3-4",
 		story = "T30402",
@@ -309,75 +309,75 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
-		title = "Power, Hope and Plans",
-		condition = "Enter Power, Hope and Plans",
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Strive, Wish and Strategize",
+		condition = "Enter Strive, Wish and Strategize",
 		story = "UIACT10000",
 		id = 29,
 		icon = "activity",
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ominous Suspicions",
-		condition = "Enter Power, Hope and Plans SP. 1",
+		condition = "Enter Strive, Wish and Strategize SP. 1",
 		story = "TACT10001",
 		id = 30,
 		icon = "activity",
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Z Fleet's Counterattack",
-		condition = "Enter Power, Hope and Plans SP. 2",
+		condition = "Enter Strive, Wish and Strategize SP. 2",
 		story = "TACT10002",
 		id = 31,
 		icon = "activity",
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Outcome 1",
-		condition = "Clear Power, Hope and Plans SP. 2",
+		condition = "Clear Strive, Wish and Strategize SP. 2",
 		story = "TACT10003",
 		id = 32,
 		icon = "activity",
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Cannon's Elegy",
-		condition = "Enter Power, Hope and Plans SP. 3",
+		condition = "Enter Strive, Wish and Strategize SP. 3",
 		story = "TACT10004",
 		id = 33,
 		icon = "activity",
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Outcome 2",
-		condition = "Clear Power, Hope and Plans SP. 3",
+		condition = "Clear Strive, Wish and Strategize SP. 3",
 		story = "TACT10005",
 		id = 34,
 		icon = "activity",
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Divergent Chessboard - Prequel",
 		condition = "Enter Divergent Chessboard - Prequel",
 		story = "UIACT20000",
@@ -386,9 +386,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Development 1",
 		condition = "Clear Divergent Chessboard - A1/C1",
 		story = "TACT20001",
@@ -397,9 +397,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Development 2",
 		condition = "Clear Divergent Chessboard - A2/C2",
 		story = "TACT20002",
@@ -408,9 +408,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Initiative 1",
 		condition = "Fight the Boss in Divergent Chessboard - A3/C3",
 		story = "TACT20003",
@@ -419,9 +419,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Initiative 2",
 		condition = "Clear Divergent Chessboard - A3/C3",
 		story = "TACT20004",
@@ -430,9 +430,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Promotion 1",
 		condition = "Fight the Boss in Divergent Chessboard - A4/C4",
 		story = "TACT20011",
@@ -441,9 +441,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Promotion 2",
 		condition = "Clear Divergent Chessboard - A4/C4",
 		story = "TACT20005",
@@ -452,9 +452,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Divergent Chessboard - Sequel",
 		condition = "Enter Divergent Chessboard - Sequel",
 		story = "UIACT20001",
@@ -463,9 +463,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Transposition 1",
 		condition = "Fight the Boss in Divergent Chessboard - B1/D1",
 		story = "TACT20006",
@@ -474,9 +474,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Transposition 2",
 		condition = "Clear Divergent Chessboard - B1/D1",
 		story = "TACT20007",
@@ -485,9 +485,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Deflection 1",
 		condition = "Fight the Boss in Divergent Chessboard - B2/D2",
 		story = "TACT20008",
@@ -496,9 +496,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Deflection 2",
 		condition = "Clear Divergent Chessboard - B2/D2",
 		story = "TACT20009",
@@ -507,9 +507,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Overloading 1",
 		condition = "Fight the Boss in Divergent Chessboard - B3/D3",
 		story = "TACT20010",
@@ -518,9 +518,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Overloading 2",
 		condition = "Clear Divergent Chessboard - B3/D3",
 		story = "TACT20012",
@@ -529,9 +529,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Checkmate 2",
 		condition = "Fight the Boss in Divergent Chessboard - B4/D4",
 		story = "TACT20013",
@@ -540,9 +540,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Checkmate 3",
 		condition = "Clear Divergent Chessboard - B4/D4",
 		story = "TACT20014",
@@ -551,9 +551,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[4001] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Flank 1",
 		condition = "Enter Divergent Chessboard - A2/C2",
 		story = "TACT20016",
@@ -562,9 +562,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[4000] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Checkmate 1",
 		condition = "Enter Divergent Chessboard - B4/D4",
 		story = "TACT20015",
@@ -573,9 +573,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[4002] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Flank 2",
 		condition = "Clear Divergent Chessboard - B4/D4",
 		story = "TACT20017",
@@ -584,9 +584,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[62] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 1",
 		condition = "Accept {namecode:98} mission 1",
 		story = "AKASHI1",
@@ -595,9 +595,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[63] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 2",
 		condition = "Accept {namecode:98} mission 2",
 		story = "AKASHI2",
@@ -606,9 +606,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[64] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 3",
 		condition = "Accept {namecode:98} mission 3",
 		story = "AKASHI3",
@@ -617,9 +617,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[65] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 4",
 		condition = "Accept {namecode:98} mission 4",
 		story = "AKASHI4",
@@ -628,9 +628,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[66] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 5",
 		condition = "Accept {namecode:98} mission 5-1",
 		story = "AKASHI5",
@@ -639,9 +639,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[67] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 5-1",
 		condition = "Accept {namecode:98} mission 5-2",
 		story = "AKASHI51",
@@ -650,9 +650,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[68] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 6-1",
 		condition = "Accept {namecode:98} mission 6 I",
 		story = "AKASHI6",
@@ -661,9 +661,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[69] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 6-2",
 		condition = "Accept {namecode:98} mission 6-2",
 		story = "AKASHI62",
@@ -672,9 +672,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[70] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 6-3",
 		condition = "Accept {namecode:98} mission 6-3",
 		story = "AKASHI63",
@@ -683,9 +683,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[71] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 6-4",
 		condition = "Accept {namecode:98} mission 6-4",
 		story = "AKASHI64",
@@ -694,9 +694,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[72] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 7-1",
 		condition = "Accept {namecode:98} mission 7-1",
 		story = "AKASHI7",
@@ -705,9 +705,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[73] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 7-2",
 		condition = "Accept {namecode:98} mission 7-2",
 		story = "AKASHI72",
@@ -716,9 +716,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[74] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 8-1",
 		condition = "Accept {namecode:98} mission 8-1",
 		story = "AKASHI8",
@@ -727,9 +727,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[75] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 8-2",
 		condition = "Accept {namecode:98} mission 8-2",
 		story = "AKASHI82",
@@ -738,9 +738,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[76] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 8-3",
 		condition = "Accept {namecode:98} mission 8-3",
 		story = "AKASHI83",
@@ -749,9 +749,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[77] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 8-4",
 		condition = "Accept {namecode:98} mission 8-4",
 		story = "AKASHI84",
@@ -760,9 +760,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[78] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 8-5",
 		condition = "Accept {namecode:98} mission 8-5",
 		story = "AKASHI85",
@@ -771,9 +771,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[79] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 8-6",
 		condition = "Accept {namecode:98} mission 8-6",
 		story = "AKASHI86",
@@ -782,9 +782,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[80] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 9",
 		condition = "Accept {namecode:98} mission 9",
 		story = "AKASHI9",
@@ -793,9 +793,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[81] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commission: {namecode:98} 10",
 		condition = "Accept {namecode:98} mission 10",
 		story = "AKASHI10",
@@ -804,9 +804,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[107] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Mid-Autumn Festival 1",
 		condition = "Join the Mid-Autumn event 1 time",
 		story = "ZHONGQIU1",
@@ -815,9 +815,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[108] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Mid-Autumn Festival 2",
 		condition = "Join the Mid-Autumn event 2 times",
 		story = "ZHONGQIU2",
@@ -826,9 +826,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[109] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Mid-Autumn Festival 3",
 		condition = "Join the Mid-Autumn event 3 times",
 		story = "ZHONGQIU3",
@@ -837,9 +837,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[110] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Mid-Autumn Festival 4",
 		condition = "Join the Mid-Autumn event 4 times",
 		story = "ZHONGQIU4",
@@ -848,9 +848,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[111] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Mid-Autumn Festival 5",
 		condition = "Join the Mid-Autumn event 5 times",
 		story = "ZHONGQIU5",
@@ -859,9 +859,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[112] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Mid-Autumn Festival 6",
 		condition = "Join the Mid-Autumn event 6 times",
 		story = "ZHONGQIU6",
@@ -870,9 +870,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[113] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Mid-Autumn Festival 7",
 		condition = "Join the Mid-Autumn event 7 times",
 		story = "ZHONGQIU7",
@@ -881,9 +881,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[114] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Order",
 		condition = "Start Visitors Dyed in Red Pt. 1",
 		story = "GUOQING1",
@@ -892,9 +892,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[115] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Storm's End Pt. 1",
 		condition = "Enter Visitors Dyed in Red A1/C1",
 		story = "GUOQING3",
@@ -903,9 +903,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[116] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Storm's End Pt. 2",
 		condition = "Find the boss from Visitors Dyed in Red A1/C1",
 		story = "GUOQING4",
@@ -914,9 +914,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[117] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "In Between",
 		condition = "Clear Visitors Dyed in Red A1/C1",
 		story = "GUOQING5",
@@ -925,9 +925,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[118] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Other Side of Distress Pt. 1",
 		condition = "Enter Visitors Dyed in Red A2/C2",
 		story = "GUOQING6",
@@ -936,9 +936,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[119] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Other Side of Distress Pt. 2",
 		condition = "Find the boss from Visitors Dyed in Red A2/C2",
 		story = "GUOQING7",
@@ -947,9 +947,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[120] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Recall",
 		condition = "Enter Visitors Dyed in Red A3/C3",
 		story = "GUOQING8",
@@ -958,9 +958,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[121] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Holy Protectors Pt. 1",
 		condition = "Find the boss from Visitors Dyed in Red A3/C3",
 		story = "GUOQING9",
@@ -969,9 +969,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[122] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Holy Protectors Pt. 2",
 		condition = "Clear Visitors Dyed in Red A3/C3",
 		story = "GUOQING10",
@@ -980,9 +980,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[123] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "In Between 2",
 		condition = "Start Visitors Dyed in Red Pt. 2",
 		story = "GUOQING11",
@@ -991,9 +991,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[124] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Lucky Ship Pt. 1",
 		condition = "Find the boss from Visitors Dyed in Red B1/D1",
 		story = "GUOQING12",
@@ -1002,9 +1002,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[125] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Lucky Ship:Pt. 2",
 		condition = "Clear Visitors Dyed in Red B1/D1",
 		story = "GUOQING13",
@@ -1013,9 +1013,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[126] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sister's Chain's Pt. 1",
 		condition = "Enter Visitors Dyed in Red B2/D2",
 		story = "GUOQING14",
@@ -1024,9 +1024,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[127] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sister's Chain's Pt. 2",
 		condition = "Find the boss from Visitors Dyed in Red B2/D2",
 		story = "GUOQING15",
@@ -1035,9 +1035,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[128] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sister's Chain's Pt. 3",
 		condition = "Clear Visitors Dyed in Red B2/D2",
 		story = "GUOQING16",
@@ -1046,9 +1046,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[129] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Crimson Protectors Pt. 1",
 		condition = "Enter Visitors Dyed in Red B3/D3",
 		story = "GUOQING17",
@@ -1057,9 +1057,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[130] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Crimson Protectors Pt. 2",
 		condition = "Find the boss from Visitors Dyed in Red B3/D3",
 		story = "GUOQING18",
@@ -1068,9 +1068,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[131] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Crimson Protectors Pt. 3",
 		condition = "Clear Visitors Dyed in Red B3/D3",
 		story = "GUOQING19",
@@ -1079,9 +1079,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[132] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prologue",
 		condition = "Enter War for Glory",
 		story = "ZHUNUO1",
@@ -1090,9 +1090,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[133] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ideas and Attacks Pt. 1",
 		condition = "Enter SP. 1",
 		story = "ZHUNUO2",
@@ -1101,9 +1101,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[134] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ideas and Attacks Pt. 2",
 		condition = "Challenge the boss of SP. 1",
 		story = "ZHUNUO3",
@@ -1112,9 +1112,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[135] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ideas and Attacks Pt. 3",
 		condition = "Clear SP. 1",
 		story = "ZHUNUO4",
@@ -1123,9 +1123,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[136] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Pursuit and Escape Pt. 1",
 		condition = "Enter SP. 2",
 		story = "ZHUNUO5",
@@ -1134,9 +1134,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[137] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Pursuit and Escape Pt. 2",
 		condition = "Challenge the boss of SP. 2",
 		story = "ZHUNUO6",
@@ -1145,9 +1145,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[138] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Pursuit and Escape Pt. 3",
 		condition = "Clear SP. 2",
 		story = "ZHUNUO7",
@@ -1156,9 +1156,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[139] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ironblood Sisters",
 		condition = "Enter SP. 3",
 		story = "ZHUNUO8",
@@ -1167,9 +1167,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[140] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "War for Glory",
 		condition = "Challenge the boss of SP. 3",
 		story = "ZHUNUO9",
@@ -1178,9 +1178,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[141] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Glory's Curtain Call",
 		condition = "Clear SP. 3",
 		story = "ZHUNUO10",
@@ -1189,9 +1189,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[142] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Witches and Innocence",
 		condition = "Unlock Halloween mission 1",
 		story = "WANSHENGJIE1",
@@ -1200,9 +1200,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[143] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Get Moving for Gold",
 		condition = "Unlock Halloween mission 2",
 		story = "WANSHENGJIE2",
@@ -1211,9 +1211,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[144] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Late Night Mischief",
 		condition = "Unlock Halloween mission 3",
 		story = "WANSHENGJIE3",
@@ -1222,9 +1222,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[145] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Disappearing Pumpkin Pie",
 		condition = "Unlock Halloween mission 4",
 		story = "WANSHENGJIE4",
@@ -1233,9 +1233,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[146] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Trick or treat!",
 		condition = "Unlock Halloween mission 5",
 		story = "WANSHENGJIE5",
@@ -1244,9 +1244,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[147] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Phantom's Reveal",
 		condition = "Unlock Halloween mission 6",
 		story = "WANSHENGJIE6",
@@ -1255,9 +1255,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[148] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Pumpkin Fleet, Attack!",
 		condition = "Unlock Halloween mission 7",
 		story = "WANSHENGJIE7",
@@ -1266,9 +1266,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[149] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Concert Ticket",
 		condition = "Unlock Bits of Courage mission 1",
 		story = "XINGCHEN1",
@@ -1277,9 +1277,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[150] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Four Parallel Worlds",
 		condition = "Unlock Bits of Courage mission 2",
 		story = "XINGCHEN2",
@@ -1288,9 +1288,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[151] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Unicorn's Annoyances",
 		condition = "Unlock Bits of Courage mission 3",
 		story = "XINGCHEN3",
@@ -1299,9 +1299,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[152] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Letter to Stardust",
 		condition = "Unlock Bits of Courage mission 4",
 		story = "XINGCHEN4",
@@ -1310,9 +1310,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[153] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Echo of Stardust",
 		condition = "Unlock Bits of Courage mission 5",
 		story = "XINGCHEN5",
@@ -1321,9 +1321,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[154] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Change In Courage",
 		condition = "Unlock Bits of Courage mission 6",
 		story = "XINGCHEN6",
@@ -1332,9 +1332,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[155] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Little Magic",
 		condition = "Unlock Bits of Courage mission 7",
 		story = "XINGCHEN7",
@@ -1343,9 +1343,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[156] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Three O'Clock Ladies",
 		condition = "Unlock Tea Time mission 1",
 		story = "TEATIME1",
@@ -1354,9 +1354,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[157] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Lonely Queen",
 		condition = "Unlock Tea Time mission 2",
 		story = "TEATIME2",
@@ -1365,9 +1365,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[158] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Morning Rays of Sun",
 		condition = "Unlock Tea Time mission 3",
 		story = "TEATIME3",
@@ -1376,9 +1376,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[159] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Belfast for Brunch?!",
 		condition = "Unlock Tea Time mission 4",
 		story = "TEATIME4",
@@ -1387,9 +1387,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[160] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Naptime Stalker",
 		condition = "Unlock Tea Time mission 5",
 		story = "TEATIME5",
@@ -1398,9 +1398,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[161] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Feigned Grace",
 		condition = "Unlock Tea Time mission 6",
 		story = "TEATIME6",
@@ -1409,9 +1409,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[162] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An Electric Tea Party?!",
 		condition = "Unlock Tea Time mission 7",
 		story = "TEATIME7",
@@ -1420,9 +1420,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[163] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Photo Time!",
 		condition = "Unlock Christmas mission 1",
 		story = "SHENGDAN01",
@@ -1431,9 +1431,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[164] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Christmas Diego!",
 		condition = "Unlock Christmas mission 2",
 		story = "SHENGDAN02",
@@ -1442,9 +1442,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[165] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sakura Christmas Pt 1",
 		condition = "Unlock Christmas mission 3",
 		story = "SHENGDAN03",
@@ -1453,9 +1453,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[166] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sakura Christmas Pt 2",
 		condition = "Unlock Christmas mission 4",
 		story = "SHENGDAN04",
@@ -1464,9 +1464,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[167] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Everyone's Santa Claus",
 		condition = "Unlock Christmas mission 5",
 		story = "SHENGDAN05",
@@ -1475,9 +1475,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[168] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Christmas Eve Dinner",
 		condition = "Unlock Christmas mission 6",
 		story = "SHENGDAN06",
@@ -1486,9 +1486,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[169] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Holy Night Embrace",
 		condition = "Unlock Christmas mission 7",
 		story = "SHENGDAN07",
@@ -1497,9 +1497,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[170] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Merry Christmas",
 		condition = "Unlock Christmas mission 8",
 		story = "SHENGDAN08",
@@ -1508,9 +1508,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[171] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Preparations for the Wonderful New Year!",
 		condition = "Start the 1st Lunar New Year Celebration mission",
 		story = "XINNIAN1",
@@ -1519,9 +1519,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[172] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Great Spring \"Cleaning!\"",
 		condition = "Start the 2nd Lunar New Year Celebration mission",
 		story = "XINNIAN2",
@@ -1530,9 +1530,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[173] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Reach Toward the Unknown",
 		condition = "Start the 3rd Lunar New Year Celebration mission",
 		story = "XINNIAN3",
@@ -1541,9 +1541,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[174] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Friendship, Hard Work, and Victory!",
 		condition = "Start the 4th Lunar New Year Celebration mission",
 		story = "XINNIAN4",
@@ -1552,9 +1552,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[175] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "New Year's Cards",
 		condition = "Start the 5th Lunar New Year Celebration mission",
 		story = "XINNIAN5",
@@ -1563,9 +1563,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[176] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "New Year's Banquet?",
 		condition = "Start the 6th Lunar New Year Celebration mission",
 		story = "XINNIAN6",
@@ -1574,9 +1574,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[177] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "New Year’s Wish",
 		condition = "Start the 7th Lunar New Year Celebration mission",
 		story = "XINNIAN7",
@@ -1585,9 +1585,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[178] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prologue",
 		condition = "Start “Fallen Wings - Prologue”",
 		story = "DONGHUO01",
@@ -1596,9 +1596,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[179] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Inburst",
 		condition = "Defeat “Fallen Wings” A1 / C1 BOSS",
 		story = "DONGHUO03",
@@ -1607,9 +1607,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[180] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Preparation",
 		condition = "Enter “Fallen Wings” A2 / C2",
 		story = "DONGHUO04",
@@ -1618,9 +1618,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[181] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Scene I",
 		condition = "Clear “Fallen Wings” A2/C2",
 		story = "DONGHUO05",
@@ -1629,9 +1629,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[182] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Exploration",
 		condition = "Enter “Fallen Wings” A3 / C3",
 		story = "DONGHUO06",
@@ -1640,9 +1640,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[183] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Scene II",
 		condition = "Clear “Fallen Wings” A3/C3",
 		story = "DONGHUO07",
@@ -1651,9 +1651,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[184] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Scene III",
 		condition = "Start “Fallen Wings - Epilogue”",
 		story = "DONGHUO08",
@@ -1662,9 +1662,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[185] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Uncertainty",
 		condition = "Enter “Fallen Wings” B1/D1",
 		story = "DONGHUO09",
@@ -1673,9 +1673,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[186] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Cutscene IV",
 		condition = "Enter “Fallen Wings” B2 / D2",
 		story = "DONGHUO10",
@@ -1684,9 +1684,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[187] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 2,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Crisis",
 		condition = "Defeat “Fallen Wings” B3 / D3 BOSS",
 		story = "1060600",
@@ -1695,9 +1695,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[188] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Abyss",
 		condition = "Clear “Fallen Wings” B3 / D3",
 		story = "DONGHUO12",
@@ -1706,9 +1706,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[189] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Winter and Kotatsu",
 		condition = "Encounter Special Target",
 		story = "SHANCHENG01",
@@ -1717,75 +1717,75 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[190] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Winter Swimming Competition?",
-		condition = "Unlock 'June (?) Attack' mission 2",
+		condition = "Unlock \"Winter Offensive\" mission 2",
 		story = "SHANCHENG02",
 		id = 190,
 		icon = "memory_shancheng",
 		is_open = 0
 	},
 	[191] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Lost gift Pt. 1",
-		condition = "Unlock 'June (?) Attack' mission 3",
+		condition = "Unlock \"Winter Offensive\" mission 3",
 		story = "SHANCHENG03",
 		id = 191,
 		icon = "memory_shancheng",
 		is_open = 0
 	},
 	[192] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Lost gift Pt. 2",
-		condition = "Unlock 'June (?) Attack' mission 4",
+		condition = "Unlock \"Winter Offensive\" mission 4",
 		story = "SHANCHENG04",
 		id = 192,
 		icon = "memory_shancheng",
 		is_open = 0
 	},
 	[193] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Invite",
-		condition = "Unlock 'June (?) Attack' mission 5",
+		condition = "Unlock \"Winter Offensive\" mission 5",
 		story = "SHANCHENG05",
 		id = 193,
 		icon = "memory_shancheng",
 		is_open = 0
 	},
 	[194] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Cold Endurance Competiton?",
-		condition = "Unlock 'June (?) Attack' mission 6",
+		condition = "Unlock \"Winter Offensive\" mission 6",
 		story = "SHANCHENG06",
 		id = 194,
 		icon = "memory_shancheng",
 		is_open = 0
 	},
 	[195] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Hot Spring attack!",
-		condition = "Unlock 'June (?) Attack' mission 7",
+		condition = "Unlock \"Winter Offensive\" mission 7",
 		story = "SHANCHENG07",
 		id = 195,
 		icon = "memory_shancheng",
 		is_open = 0
 	},
 	[196] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prelude",
 		condition = "Unlock SP1",
 		story = "WEIJIAO01",
@@ -1794,9 +1794,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[197] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Skirmish - 1",
 		condition = "Defeat the Boss at SP1",
 		story = "WEIJIAO02",
@@ -1805,9 +1805,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[198] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Skirmish - 2",
 		condition = "Clear SP1",
 		story = "WEIJIAO03",
@@ -1816,9 +1816,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[199] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Tactical Evaluation",
 		condition = "Unlock SP2",
 		story = "WEIJIAO04",
@@ -1827,9 +1827,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[200] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Engagement - 1",
 		condition = "Encounter the Boss at SP2",
 		story = "WEIJIAO05",
@@ -1838,9 +1838,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[201] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Engagement - 2",
 		condition = "Defeat the Boss at SP2",
 		story = "WEIJIAO06",
@@ -1849,9 +1849,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[202] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Status Evaluation",
 		condition = "Unlock SP3",
 		story = "WEIJIAO07",
@@ -1860,9 +1860,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[203] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Showdown - 1",
 		condition = "Encounter the Boss at SP3",
 		story = "WEIJIAO08",
@@ -1871,9 +1871,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[204] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Showdown - 2",
 		condition = "Defeat the Boss at SP3",
 		story = "WEIJIAO09",
@@ -1882,9 +1882,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[205] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Treasure in the Old Warehouse",
 		condition = "Begin \"An Shan's Coloring Book\" Page 2",
 		story = "ANSHAN01",
@@ -1893,9 +1893,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[206] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "One of the Base's 7 Wonders",
 		condition = "Begin \"An Shan's Coloring Book\" Page 3",
 		story = "ANSHAN02",
@@ -1904,9 +1904,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[207] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Time for a (Lunch) Break",
 		condition = "Begin \"An Shan's Coloring Book\" Page 5",
 		story = "ANSHAN03",
@@ -1915,9 +1915,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[208] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Drawing Together",
 		condition = "Begin \"An Shan's Coloring Book\" Page 7",
 		story = "ANSHAN04",
@@ -1926,9 +1926,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[209] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An Shan's Drawing Book",
 		condition = "Complete \"An Shan's Coloring Book\"",
 		story = "ANSHAN05",
@@ -1937,9 +1937,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[210] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Old Warehouse Treasure Hunt",
 		condition = "Begin \"Fu Shun's Great Adventure\"",
 		story = "FUSHUN01",
@@ -1948,9 +1948,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[211] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Can You Fix It?",
 		condition = "Get the Nian's health to 70%",
 		story = "FUSHUN02",
@@ -1959,9 +1959,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[212] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Hero's Journey Begins",
 		condition = "Get the Nian's health to 40%",
 		story = "FUSHUN03",
@@ -1970,9 +1970,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[213] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Then the World was at Peace...",
 		condition = "Defeat Nian!",
 		story = "FUSHUN04",
@@ -1981,9 +1981,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[214] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Morning Incident",
 		condition = "Unlock Sea Star on Shore Day 1",
 		story = "XIAOTIANE1",
@@ -1992,9 +1992,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[215] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Missing Clues",
 		condition = "Unlock Sea Star on Shore Day 2",
 		story = "XIAOTIANE2",
@@ -2003,9 +2003,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[216] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Suspicion and Inquiry",
 		condition = "Unlock Sea Star on Shore Day 3",
 		story = "XIAOTIANE3",
@@ -2014,9 +2014,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[217] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Caught Red-Handed?",
 		condition = "Unlock Sea Star on Shore Day 5",
 		story = "XIAOTIANE4",
@@ -2025,9 +2025,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[218] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Justification",
 		condition = "Unlock Sea Star on Shore Day 7",
 		story = "XIAOTIANE5",
@@ -2036,9 +2036,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[219] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Witness",
 		condition = "Unlock Sea Star on Shore Day 9",
 		story = "XIAOTIANE6",
@@ -2047,9 +2047,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[220] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Case Closed",
 		condition = "Unlock Sea Star on Shore Day 10",
 		story = "XIAOTIANE7",
@@ -2058,9 +2058,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[221] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Opening",
 		condition = "Begin \"Winter's Crown\"",
 		story = "LINGDONG01",
@@ -2069,9 +2069,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[222] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Home Voyage",
 		condition = "Begin A1 or C1",
 		story = "LINGDONG02",
@@ -2080,9 +2080,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[223] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Emergency",
 		condition = "Defeat the Boss Node on A1 or C1",
 		story = "LINGDONG03",
@@ -2091,9 +2091,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[224] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Hunting Grounds",
 		condition = "Begin A2 orC2",
 		story = "LINGDONG04",
@@ -2102,9 +2102,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[225] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Interception",
 		condition = "Engage the Boss Node on A2 or C2",
 		story = "LINGDONG05",
@@ -2113,9 +2113,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[226] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commence Pursuit",
 		condition = "Defeat the Boss Node on A2 or C2",
 		story = "LINGDONG06",
@@ -2124,9 +2124,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[227] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Final Blow",
 		condition = "Begin A3 or C3",
 		story = "LINGDONG07",
@@ -2135,9 +2135,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[228] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Reinforcements",
 		condition = "Engage the Boss Node on A3 or C3",
 		story = "LINGDONG08",
@@ -2146,9 +2146,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[229] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Destruction",
 		condition = "Defeat the Boss Node on A3 or C3",
 		story = "LINGDONG09",
@@ -2157,9 +2157,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[230] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Interlude",
 		condition = "Clear A3 or C3",
 		story = "LINGDONG10",
@@ -2168,9 +2168,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[231] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "To The North",
 		condition = "Begin Part 2 of \"Winter's Crown\"",
 		story = "LINGDONG11",
@@ -2179,9 +2179,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[232] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "No Line Through",
 		condition = "Defeat the Boss Node on B1 or D1",
 		story = "LINGDONG12",
@@ -2190,9 +2190,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[233] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Operation Tungsten",
 		condition = "Begin B2 or D2",
 		story = "LINGDONG13",
@@ -2201,9 +2201,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[234] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Queen of The North",
 		condition = "Engage the Boss Node on B2 or D2",
 		story = "LINGDONG14",
@@ -2212,9 +2212,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[235] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Frustration",
 		condition = "Defeat the Boss Node on B2 or D2",
 		story = "LINGDONG15",
@@ -2223,9 +2223,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[236] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Change Targets",
 		condition = "Clear B2 or D2",
 		story = "LINGDONG16",
@@ -2234,9 +2234,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[237] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Code G",
 		condition = "Begin B3 or D3",
 		story = "LINGDONG17",
@@ -2245,9 +2245,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[238] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Epilogue",
 		condition = "Defeat the Boss Node on B3 or D3",
 		story = "LINGDONG18",
@@ -2256,9 +2256,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[239] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Spring Springs Forth",
 		condition = "Acquire 1 Memory Card",
 		story = "SHANGYING1",
@@ -2267,9 +2267,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[240] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Blooming Beckoning",
 		condition = "Acquire 2 Memory Cards",
 		story = "SHANGYING2",
@@ -2278,9 +2278,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[241] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Preparing for the Party",
 		condition = "Acquire 3 Memory Cards",
 		story = "SHANGYING3",
@@ -2289,9 +2289,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[242] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Banquet Begins",
 		condition = "Acquire 4 Memory Cards",
 		story = "SHANGYING4",
@@ -2300,9 +2300,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[243] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Cherry Flowers and Cheery Folks",
 		condition = "Acquire 5 Memory Cards",
 		story = "SHANGYING5",
@@ -2311,9 +2311,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[244] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sakura Sake",
 		condition = "Acquire 6 Memory Cards",
 		story = "SHANGYING6",
@@ -2322,9 +2322,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[245] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Private Time",
 		condition = "Acquire 7 Memory Cards",
 		story = "SHANGYING7",
@@ -2333,9 +2333,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[246] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Zuikaku In The Morning",
 		condition = "Begin \"The Lucky Crane\" Chapter 1.",
 		story = "RUIHE1",
@@ -2344,9 +2344,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[247] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Zuikaku & Her Friends",
 		condition = "Begin \"The Lucky Crane\" Chapter 2.",
 		story = "RUIHE2",
@@ -2355,9 +2355,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[248] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Zuikaku & The Foxes",
 		condition = "Begin \"The Lucky Crane\" Chapter 3.",
 		story = "RUIHE3",
@@ -2366,9 +2366,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[249] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Zuikaku & Master Mikasa",
 		condition = "Begin \"The Lucky Crane\" Chapter 4.",
 		story = "RUIHE4",
@@ -2377,9 +2377,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[250] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Today, I'm Your Chef!",
 		condition = "Begin \"The Lucky Crane\" Chapter 5.",
 		story = "RUIHE5",
@@ -2388,9 +2388,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[251] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Someone Like Me...",
 		condition = "Begin \"The Lucky Crane\" Chapter 6.",
 		story = "RUIHE6",
@@ -2399,9 +2399,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[252] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Indomitable Crane",
 		condition = "Begin \"The Lucky Crane\" Chapter 7.",
 		story = "RUIHE7",
@@ -2410,9 +2410,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[253] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "I'm Running Late!",
 		condition = "Unlock School Festival Day 1",
 		story = "KAIXUE01",
@@ -2421,9 +2421,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[254] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Playground Troublemakers",
 		condition = "Unlock School Festival Day 2",
 		story = "KAIXUE02",
@@ -2432,9 +2432,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[255] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Secret Lunch",
 		condition = "Unlock School Festival Day 3",
 		story = "KAIXUE03",
@@ -2443,9 +2443,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[256] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Spirit in the Library",
 		condition = "Unlock School Festival Day 5",
 		story = "KAIXUE04",
@@ -2454,9 +2454,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[257] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Magic in an Empty Classroom",
 		condition = "Unlock School Festival Day 7",
 		story = "KAIXUE05",
@@ -2465,9 +2465,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[258] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Special Afterschool Tutoring",
 		condition = "Unlock School Festival Day 9",
 		story = "KAIXUE06",
@@ -2476,9 +2476,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[259] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A New School Year",
 		condition = "Unlock School Festival Day 10",
 		story = "KAIXUE07",
@@ -2487,9 +2487,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[260] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Lucky Star of Sasebo Arrives!",
 		condition = "Begin \"Call Me Yukikaze the Great!\" Chapter 1",
 		story = "XUEFENG1",
@@ -2498,9 +2498,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[261] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Yukikaze, the Genius",
 		condition = "Begin \"Call Me Yukikaze the Great!\" Chapter 2",
 		story = "XUEFENG2",
@@ -2509,9 +2509,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[262] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Shigure, Nemesis!?",
 		condition = "Begin \"Call Me Yukikaze the Great!\" Chapter 3",
 		story = "XUEFENG3",
@@ -2520,9 +2520,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[263] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Yukikaze's Fan Club?",
 		condition = "Begin \"Call Me Yukikaze the Great!\" Chapter 4",
 		story = "XUEFENG4",
@@ -2531,9 +2531,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[264] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Yukikaze and the Amusement Park (Part 1)",
 		condition = "Begin \"Call Me Yukikaze the Great!\" Chapter 5",
 		story = "XUEFENG5",
@@ -2542,9 +2542,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[265] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Yukikaze and the Amusement Park (Part 2)",
 		condition = "Begin \"Call Me Yukikaze the Great!\" Chapter 6",
 		story = "XUEFENG6",
@@ -2553,9 +2553,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[266] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Yukikaze, Great as Always?",
 		condition = "Begin \"Call Me Yukikaze the Great!\" Chapter 7",
 		story = "XUEFENG7",
@@ -2564,9 +2564,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[267] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Small Luncheon",
 		condition = "Begin \"My Fond Memories\" Chapter 1.",
 		story = "AJIAKESI1",
@@ -2575,9 +2575,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[268] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Meaning of Glory",
 		condition = "Begin \"My Fond Memories\" Chapter 2.",
 		story = "AJIAKESI2",
@@ -2586,9 +2586,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[269] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Secretary Ship's Responsibilities",
 		condition = "Begin \"My Fond Memories\" Chapter 3.",
 		story = "AJIAKESI3",
@@ -2597,9 +2597,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[270] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Friend or Foe?",
 		condition = "Begin \"My Fond Memories\" Chapter 4.",
 		story = "AJIAKESI4",
@@ -2608,9 +2608,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[271] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Cute Little Piggy",
 		condition = "Begin \"My Fond Memories\" Chapter 5.",
 		story = "AJIAKESI5",
@@ -2619,9 +2619,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[272] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Stubbornness and Sincerity, Part 1",
 		condition = "Begin \"My Fond Memories\" Chapter 6.",
 		story = "AJIAKESI6",
@@ -2630,9 +2630,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[273] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Stubbornness and Sincerity, Part 2",
 		condition = "Begin \"My Fond Memories\" Chapter 7.",
 		story = "AJIAKESI7",
@@ -2641,9 +2641,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[274] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Ill-Tempered Secretary",
 		condition = "Begin \"Hammann Observation Diary\" Chapter 1.",
 		story = "HAMAN1",
@@ -2652,9 +2652,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[275] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Unhappiness, Part 1",
 		condition = "Begin \"Hammann Observation Diary\" Chapter 2.",
 		story = "HAMAN2",
@@ -2663,9 +2663,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[276] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Unhappiness, Part 2",
 		condition = "Begin \"Hammann Observation Diary\" Chapter 3.",
 		story = "HAMAN3",
@@ -2674,9 +2674,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[277] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Unhappiness, Part 3",
 		condition = "Begin \"Hammann Observation Diary\" Chapter 4.",
 		story = "HAMAN4",
@@ -2685,9 +2685,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[278] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Hammann and Yorktown",
 		condition = "Begin \"Hammann Observation Diary\" Chapter 5.",
 		story = "HAMAN5",
@@ -2696,9 +2696,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[279] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Hello, Military Police?",
 		condition = "Begin \"Hammann Observation Diary\" Chapter 6.",
 		story = "HAMAN6",
@@ -2707,9 +2707,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[280] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Honest... For Just a Moment!",
 		condition = "Begin \"Hammann Observation Diary\" Chapter 7.",
 		story = "HAMAN7",
@@ -2718,9 +2718,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[281] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Secretary in Red",
 		condition = "Begin \"Red Spider Lily's Love\" Chapter 1.",
 		story = "CHICHENG1",
@@ -2729,9 +2729,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[282] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Unrivaled Legends",
 		condition = "Begin \"Red Spider Lily's Love\" Chapter 2.",
 		story = "CHICHENG2",
@@ -2740,9 +2740,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[283] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Love Rivals and... Exceptions?",
 		condition = "Begin \"Red Spider Lily's Love\" Chapter 3.",
 		story = "CHICHENG3",
@@ -2751,9 +2751,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[284] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Allies and Days of Old",
 		condition = "Begin \"Red Spider Lily's Love\" Chapter 4.",
 		story = "CHICHENG4",
@@ -2762,9 +2762,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[285] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Small Scar",
 		condition = "Begin \"Red Spider Lily's Love\" Chapter 5.",
 		story = "CHICHENG5",
@@ -2773,9 +2773,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[286] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Confession in The Dark",
 		condition = "Begin \"Red Spider Lily's Love\" Chapter 6.",
 		story = "CHICHENG6",
@@ -2784,9 +2784,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[287] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "My Soulmate",
 		condition = "Begin \"Red Spider Lily's Love\" Chapter 7.",
 		story = "CHICHENG7",
@@ -2795,9 +2795,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[288] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sudden Invitation",
 		condition = "Begin \"Knights & Awards\" Chapter 1.",
 		story = "KELIFULAN1",
@@ -2806,9 +2806,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[289] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Knights, Group Up!",
 		condition = "Begin \"Knights & Awards\" Chapter 2.",
 		story = "KELIFULAN2",
@@ -2817,9 +2817,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[290] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Make It Grain!",
 		condition = "Begin \"Knights & Awards\" Chapter 3.",
 		story = "KELIFULAN3",
@@ -2828,9 +2828,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[291] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Game Day",
 		condition = "Begin \"Knights & Awards\" Chapter 4.",
 		story = "KELIFULAN4",
@@ -2839,9 +2839,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[292] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Tough Team",
 		condition = "Begin \"Knights & Awards\" Chapter 5.",
 		story = "KELIFULAN5",
@@ -2850,9 +2850,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[293] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "From The Brink",
 		condition = "Begin \"Knights & Awards\" Chapter 6.",
 		story = "KELIFULAN6",
@@ -2861,9 +2861,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[294] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Best Prize",
 		condition = "Begin \"Knights & Awards\" Chapter 7.",
 		story = "KELIFULAN7",
@@ -2872,9 +2872,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[295] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Little Visitor",
 		condition = "Accumulate 100 Manjuu (Get Reward)",
 		story = "BEIFA1",
@@ -2883,9 +2883,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[296] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Accidents Have Consequences",
 		condition = "Accumulate 5000 Manjuu (Get Reward)",
 		story = "BEIFA2",
@@ -2894,9 +2894,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[297] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sisters?",
 		condition = "Accumulate 7000 Manjuu (Get Reward)",
 		story = "BEIFA3",
@@ -2905,9 +2905,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[298] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An Adorable New Cadet",
 		condition = "Acquire Character: Little Bel",
 		story = "BEIFA4",
@@ -2916,9 +2916,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[299] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Akashi Explains Things, Nya",
 		condition = "Unlock the new feature by getting to Commander Level 30.",
 		story = "FANGAN1",
@@ -2927,9 +2927,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[300] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Akashi Explains Things, Nya (Part 2)",
 		condition = "Finish the development of a PR ship.",
 		story = "FANGAN2",
@@ -2938,9 +2938,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[301] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Tomorrow's Weather is...",
 		condition = "Unlock Yamashiro's story mission 1",
 		story = "SHANCHENGP1",
@@ -2949,9 +2949,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[302] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "High Pressure? Low Pressure?",
 		condition = "Unlock Yamashiro's story mission 2",
 		story = "SHANCHENGP2",
@@ -2960,9 +2960,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[303] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Light Breeze",
 		condition = "Unlock Yamashiro's story mission 3",
 		story = "SHANCHENGP3",
@@ -2971,9 +2971,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[304] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Low Pressure Approaches",
 		condition = "Unlock Yamashiro's story mission 4",
 		story = "SHANCHENGP4",
@@ -2982,9 +2982,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[305] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "After the Clouds Part",
 		condition = "Unlock Yamashiro's story mission 5",
 		story = "SHANCHENGP5",
@@ -2993,9 +2993,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[306] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Rain Shower",
 		condition = "Unlock Yamashiro's story mission 6",
 		story = "SHANCHENGP6",
@@ -3004,9 +3004,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[307] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Blue Skies",
 		condition = "Unlock Yamashiro's story mission 7",
 		story = "SHANCHENGP7",
@@ -3015,9 +3015,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[308] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Her Name is Glorious",
 		condition = "Begin \"A Glorious Interlude\" Chapter 1.",
 		story = "GUANGRONG1",
@@ -3026,9 +3026,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[309] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Maritime Exercises",
 		condition = "Begin \"A Glorious Interlude\" Chapter 2.",
 		story = "GUANGRONG2",
@@ -3037,9 +3037,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[310] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Queen Incident Pt. 1",
 		condition = "Begin \"A Glorious Interlude\" Chapter 3.",
 		story = "GUANGRONG3",
@@ -3048,9 +3048,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[311] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Queen Incident Pt. 2",
 		condition = "Begin \"A Glorious Interlude\" Chapter 4.",
 		story = "GUANGRONG4",
@@ -3059,9 +3059,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[312] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Destroyers",
 		condition = "Begin \"A Glorious Interlude\" Chapter 5.",
 		story = "GUANGRONG5",
@@ -3070,9 +3070,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[313] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Glory She's Named For Pt. 1",
 		condition = "Begin \"A Glorious Interlude\" Chapter 6.",
 		story = "GUANGRONG6",
@@ -3081,9 +3081,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[314] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Glory She's Named For Pt. 2",
 		condition = "Begin \"A Glorious Interlude\" Chapter 7.",
 		story = "GUANGRONG7",
@@ -3092,9 +3092,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[322] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Lights, Camera, Sara!",
 		condition = "Begin \"Best Pictures!\" Chapter 1.",
 		story = "SALATUOJIA1",
@@ -3103,9 +3103,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[323] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sara's Work Never Ends!",
 		condition = "Begin \"Best Pictures!\" Chapter 2.",
 		story = "SALATUOJIA2",
@@ -3114,9 +3114,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[324] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sara's Day Off!",
 		condition = "Begin \"Best Pictures!\" Chapter 3.",
 		story = "SALATUOJIA3",
@@ -3125,9 +3125,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[325] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sister Sara and Lady Lex!",
 		condition = "Begin \"Best Pictures!\" Chapter 4.",
 		story = "SALATUOJIA4",
@@ -3136,9 +3136,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[326] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Paparazzi Problems! (Part 1)",
 		condition = "Begin \"Best Pictures!\" Chapter 5.",
 		story = "SALATUOJIA5",
@@ -3147,9 +3147,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[327] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Paparazzi Problems! (Part 2)",
 		condition = "Begin \"Best Pictures!\" Chapter 6.",
 		story = "SALATUOJIA6",
@@ -3158,9 +3158,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[328] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "What I Treasure Most",
 		condition = "Begin \"Best Pictures!\" Chapter 7.",
 		story = "SALATUOJIA7",
@@ -3169,9 +3169,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[329] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Date Invitation",
 		condition = "Begin \"A Date With Atago\" Chapter 1",
 		story = "AIDANG1",
@@ -3180,9 +3180,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[330] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Let's Go!",
 		condition = "Begin \"A Date With Atago\" Chapter 2",
 		story = "AIDANG2",
@@ -3191,9 +3191,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[331] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Shopping Situation",
 		condition = "Begin \"A Date With Atago\" Chapter 3",
 		story = "AIDANG3",
@@ -3202,9 +3202,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[332] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Rest Break, and then...",
 		condition = "Begin \"A Date With Atago\" Chapter 4",
 		story = "AIDANG4",
@@ -3213,9 +3213,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[333] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Engulfed by Darkness",
 		condition = "Begin \"A Date With Atago\" Chapter 5",
 		story = "AIDANG5",
@@ -3224,9 +3224,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[334] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An Evening Present",
 		condition = "Begin \"A Date With Atago\" Chapter 6",
 		story = "AIDANG6",
@@ -3235,9 +3235,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[335] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Advance Bravely!",
 		condition = "Begin \"A Date With Atago\" Chapter 7",
 		story = "AIDANG7",
@@ -3246,9 +3246,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[336] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Birth",
 		condition = "Unlock Z46 Character Story Mission 1",
 		story = "Z461",
@@ -3257,9 +3257,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[337] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Trajectory",
 		condition = "Unlock Z46 Character Story Mission 2",
 		story = "Z462",
@@ -3268,9 +3268,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[338] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Interlude I",
 		condition = "Unlock Z46 Character Story Mission 3",
 		story = "Z463",
@@ -3279,9 +3279,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[339] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Thought",
 		condition = "Unlock Z46 Character Story Mission 4",
 		story = "Z464",
@@ -3290,9 +3290,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[340] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Interlude II",
 		condition = "Unlock Z46 Character Story Mission 5",
 		story = "Z465",
@@ -3301,9 +3301,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[341] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Fetters",
 		condition = "Unlock Z46 Character Story Mission 6",
 		story = "Z466",
@@ -3312,9 +3312,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[342] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Pure White",
 		condition = "Unlock Z46 Character Story Mission 7",
 		story = "Z467",
@@ -3323,9 +3323,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[350] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Teatime Visitor",
 		condition = "Begin \"The Melancholy of a Princess Chevalier\" Chapter 1.",
 		story = "KAIXUAN1",
@@ -3334,9 +3334,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[351] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Do Your Best, Le Triomphant!",
 		condition = "Begin \"The Melancholy of a Princess Chevalier\" Chapter 2.",
 		story = "KAIXUAN2",
@@ -3345,9 +3345,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[352] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Le Triomphant, Sortie!",
 		condition = "Begin \"The Melancholy of a Princess Chevalier\" Chapter 3.",
 		story = "KAIXUAN3",
@@ -3356,9 +3356,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[353] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Cheer Up, Le Triomphant!",
 		condition = "Begin \"The Melancholy of a Princess Chevalier\" Chapter 4.",
 		story = "KAIXUAN4",
@@ -3367,9 +3367,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[354] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Listen to Your Heart",
 		condition = "Begin \"The Melancholy of a Princess Chevalier\" Chapter 5.",
 		story = "KAIXUAN5",
@@ -3378,9 +3378,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[355] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Feuding Sisters",
 		condition = "Begin \"The Melancholy of a Princess Chevalier\" Chapter 6.",
 		story = "KAIXUAN6",
@@ -3389,9 +3389,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[356] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Le Triomphant of Iris Libre",
 		condition = "Begin \"The Melancholy of a Princess Chevalier\" Chapter 7.",
 		story = "KAIXUAN7",
@@ -3400,9 +3400,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[357] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Popular Dancer",
 		condition = "Begin \"Émile, the Dancing Angel\" Chapter 1.",
 		story = "AIMIER1",
@@ -3411,9 +3411,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[358] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Fellowship of Gold?",
 		condition = "Begin \"Émile, the Dancing Angel\" Chapter 2.",
 		story = "AIMIER2",
@@ -3422,9 +3422,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[359] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Hidden Talent",
 		condition = "Begin \"Émile, the Dancing Angel\" Chapter 3.",
 		story = "AIMIER3",
@@ -3433,9 +3433,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[360] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Be Strong, Émile!",
 		condition = "Begin \"Émile, the Dancing Angel\" Chapter 4.",
 		story = "AIMIER4",
@@ -3444,9 +3444,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[361] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Émile's Romance Theory Pt. 1",
 		condition = "Begin \"Émile, the Dancing Angel\" Chapter 5.",
 		story = "AIMIER5",
@@ -3455,9 +3455,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[362] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Romantic Date?",
 		condition = "Begin \"Émile, the Dancing Angel\" Chapter 6.",
 		story = "AIMIER6",
@@ -3466,9 +3466,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[363] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Émile's Romance Theory Pt. 2",
 		condition = "Begin \"Émile, the Dancing Angel\" Chapter 7.",
 		story = "AIMIER7",
@@ -3477,9 +3477,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[364] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Surcouf at Sunrise",
 		condition = "Begin \"Journé Surcouf!\" Chapter 1.",
 		story = "XUKUFU1",
@@ -3488,9 +3488,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[365] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Surcouf in the Morning",
 		condition = "Begin \"Journé Surcouf!\" Chapter 2.",
 		story = "XUKUFU2",
@@ -3499,9 +3499,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[366] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Surcouf at Work",
 		condition = "Begin \"Journé Surcouf!\" Chapter 3.",
 		story = "XUKUFU3",
@@ -3510,9 +3510,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[367] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Surcouf in the Noon",
 		condition = "Begin \"Journé Surcouf!\" Chapter 4.",
 		story = "XUKUFU4",
@@ -3521,9 +3521,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[368] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Surcouf in the Afternoon Pt. 1",
 		condition = "Begin \"Journé Surcouf!\" Chapter 5.",
 		story = "XUKUFU5",
@@ -3532,9 +3532,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[369] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Surcouf in the Afternoon Pt. 2",
 		condition = "Begin \"Journé Surcouf!\" Chapter 6.",
 		story = "XUKUFU6",
@@ -3543,9 +3543,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[370] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Surcouf in My Arms",
 		condition = "Begin \"Journé Surcouf!\" Chapter 7.",
 		story = "XUKUFU7",
@@ -3554,9 +3554,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[371] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "To the Light and Dark Sea",
 		condition = "Begin \"Iris of Light and Dark.\"",
 		story = "FAXI01",
@@ -3565,9 +3565,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[372] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Breakthrough",
 		condition = "Begin A2 or C2.",
 		story = "FAXI02",
@@ -3576,9 +3576,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[373] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Operation Catapult",
 		condition = "Begin A3 or C3.",
 		story = "FAXI03",
@@ -3587,9 +3587,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[374] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Resurrection",
 		condition = "Clear A3 or C3.",
 		story = "FAXI04",
@@ -3598,9 +3598,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[375] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Reminiscence",
 		condition = "Begin Pt. 2 of \"Iris of Light and Dark.\"",
 		story = "FAXI05",
@@ -3609,9 +3609,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[376] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Rendezvous",
 		condition = "Begin B1 or D1.",
 		story = "FAXI06",
@@ -3620,9 +3620,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[377] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Dark Scarlet Knights",
 		condition = "Begin B2 or D2.",
 		story = "FAXI07",
@@ -3631,9 +3631,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[378] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Operation Torch",
 		condition = "Begin B3 or D3.",
 		story = "FAXI08",
@@ -3642,9 +3642,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[379] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Clash of Swords",
 		condition = "Encounter the Boss of B3 or D3.",
 		story = "FAXI09",
@@ -3653,9 +3653,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[380] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Light and Dark",
 		condition = "Clear B3 or D3.",
 		story = "FAXI10",
@@ -3664,9 +3664,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[381] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Saint's Declaration",
 		condition = "???",
 		story = "FAXI11",
@@ -3675,9 +3675,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[382] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Resupply Surprise?",
 		condition = "Begin \"Angel or Devl in White?\" Mission 1",
 		story = "XIXUEGUI1",
@@ -3686,9 +3686,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[383] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Vampire's Allure",
 		condition = "Begin \"Angel or Devl in White?\" Mission 2",
 		story = "XIXUEGUI2",
@@ -3697,9 +3697,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[384] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Vampire, New Nurse?",
 		condition = "Begin \"Angel or Devl in White?\" Mission 3",
 		story = "XIXUEGUI3",
@@ -3708,9 +3708,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[385] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Emergency?",
 		condition = "Begin \"Angel or Devl in White?\" Mission 5",
 		story = "XIXUEGUI4",
@@ -3719,9 +3719,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[386] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Vampire, Pro Nurse!",
 		condition = "Begin \"Angel or Devl in White?\" Mission 7",
 		story = "XIXUEGUI5",
@@ -3730,9 +3730,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[387] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Secretary Ship",
 		condition = "Begin \"Schmelzen\" Chapter 1.",
 		story = "TIERBICI1",
@@ -3741,9 +3741,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[388] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Mission",
 		condition = "Begin \"Schmelzen\" Chapter 2.",
 		story = "TIERBICI2",
@@ -3752,9 +3752,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[389] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Practice Exercise",
 		condition = "Begin \"Schmelzen\" Chapter 3.",
 		story = "TIERBICI3",
@@ -3763,9 +3763,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[390] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sortie",
 		condition = "Begin \"Schmelzen\" Chapter 4.",
 		story = "TIERBICI4",
@@ -3774,9 +3774,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[391] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Everyone's Secretary Ship",
 		condition = "Begin \"Schmelzen\" Chapter 5.",
 		story = "TIERBICI5",
@@ -3785,9 +3785,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[392] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Queen's Smile",
 		condition = "Begin \"Schmelzen\" Chapter 6.",
 		story = "TIERBICI6",
@@ -3796,9 +3796,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[393] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Warmth",
 		condition = "Begin \"Schmelzen\" Chapter 7.",
 		story = "TIERBICI7",
@@ -3807,9 +3807,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[394] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Venerated Elder",
 		condition = "Start \"Centaur and the Port 'Elders'\" Chapter 1",
 		story = "BANRENMA1",
@@ -3818,9 +3818,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[395] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Centaur Pushes It",
 		condition = "Start \"Centaur and the Port 'Elders'\" Chapter 2",
 		story = "BANRENMA2",
@@ -3829,9 +3829,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[396] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Meaning of Respect",
 		condition = "Start \"Centaur and the Port 'Elders'\" Chapter 3",
 		story = "BANRENMA3",
@@ -3840,9 +3840,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[397] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Unexpected Developments",
 		condition = "Start \"Centaur and the Port 'Elders'\" Chapter 4",
 		story = "BANRENMA4",
@@ -3851,9 +3851,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[398] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Centaur's Image",
 		condition = "Start \"Centaur and the Port 'Elders'\" Chapter 5",
 		story = "BANRENMA5",
@@ -3862,9 +3862,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[399] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Childe of the Fleet",
 		condition = "Start \"Centaur and the Port 'Elders'\" Chapter 6",
 		story = "BANRENMA6",
@@ -3873,9 +3873,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[400] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "True Equals",
 		condition = "Start \"Centaur and the Port 'Elders'\" Chapter 7",
 		story = "BANRENMA7",
@@ -3884,9 +3884,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[401] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Regular Ol' Summer",
 		condition = "Begin \"Midsummer Sagittarius\" Chapter 1.",
 		story = "BANRENMAFEIJI1",
@@ -3895,9 +3895,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[402] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Summer's Secret Weapon?",
 		condition = "Begin \"Midsummer Sagittarius\" Chapter 2.",
 		story = "BANRENMAFEIJI2",
@@ -3906,9 +3906,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[403] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Coast Watcher's Vacation",
 		condition = "Begin \"Midsummer Sagittarius\" Chapter 3.",
 		story = "BANRENMAFEIJI3",
@@ -3917,9 +3917,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[404] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Beachside Sweets",
 		condition = "Begin \"Midsummer Sagittarius\" Chapter 4.",
 		story = "BANRENMAFEIJI4",
@@ -3928,9 +3928,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[405] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Iron Blood Front",
 		condition = "Begin \"Midsummer Sagittarius\" Chapter 5.",
 		story = "BANRENMAFEIJI5",
@@ -3939,9 +3939,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[406] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "In the Evening's Glow",
 		condition = "Begin \"Midsummer Sagittarius\" Chapter 6.",
 		story = "BANRENMAFEIJI6",
@@ -3950,9 +3950,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[407] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Collection Destroyed",
 		condition = "Begin \"Mikasa's Model Museum\" Chapter 1.",
 		story = "SANLICHUANMO1",
@@ -3961,9 +3961,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[408] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Patient Veteran",
 		condition = "Begin \"Mikasa's Model Museum\" Chapter 2.",
 		story = "SANLICHUANMO2",
@@ -3972,9 +3972,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[409] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Hardworking Kids",
 		condition = "Begin \"Mikasa's Model Museum\" Chapter 3.",
 		story = "SANLICHUANMO3",
@@ -3983,9 +3983,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[410] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Model Museum Reopens!",
 		condition = "Begin \"Mikasa's Model Museum\" Chapter 4.",
 		story = "SANLICHUANMO4",
@@ -3994,9 +3994,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[411] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Spirited Secretary",
 		condition = "Begin \"Hiei's Banquet\" Chapter 1.",
 		story = "BIRUI1",
@@ -4005,9 +4005,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[412] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Formal Invitation",
 		condition = "Begin \"Hiei's Banquet\" Chapter 2.",
 		story = "BIRUI2",
@@ -4016,9 +4016,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[413] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Reasons",
 		condition = "Begin \"Hiei's Banquet\" Chapter 3.",
 		story = "BIRUI3",
@@ -4027,9 +4027,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[414] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Preparations",
 		condition = "Begin \"Hiei's Banquet\" Chapter 4.",
 		story = "BIRUI4",
@@ -4038,9 +4038,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[415] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Different Strokes for Different Folks",
 		condition = "Begin \"Hiei's Banquet\" Chapter 5.",
 		story = "BIRUI5",
@@ -4049,9 +4049,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[416] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Table for Two",
 		condition = "Begin \"Hiei's Banquet\" Chapter 6.",
 		story = "BIRUI6",
@@ -4060,9 +4060,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[417] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Moonlit Appassionata",
 		condition = "Begin \"Hiei's Banquet\" Chapter 7.",
 		story = "BIRUI7",
@@ -4071,9 +4071,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[418] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Outset",
 		condition = "Begin \"The Cloudy Mask\" Chapter 1.",
 		story = "DEYIZHI1",
@@ -4082,9 +4082,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[419] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "True Nobility",
 		condition = "Begin \"The Cloudy Mask\" Chapter 2.",
 		story = "DEYIZHI2",
@@ -4093,9 +4093,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[420] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Dissonance",
 		condition = "Begin \"The Cloudy Mask\" Chapter 3.",
 		story = "DEYIZHI3",
@@ -4104,9 +4104,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[421] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Devastated",
 		condition = "Begin \"The Cloudy Mask\" Chapter 4.",
 		story = "DEYIZHI4",
@@ -4115,9 +4115,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[422] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Truth, Pt. 1",
 		condition = "Begin \"The Cloudy Mask\" Chapter 5.",
 		story = "DEYIZHI5",
@@ -4126,9 +4126,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[423] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Truth, Pt. 2",
 		condition = "Begin \"The Cloudy Mask\" Chapter 6.",
 		story = "DEYIZHI6",
@@ -4137,9 +4137,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[424] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Some Things Never Change",
 		condition = "Begin \"The Cloudy Mask\" Chapter 7.",
 		story = "DEYIZHI7",
@@ -4148,9 +4148,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[425] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Morning Surprise",
 		condition = "Begin \"Submarine Subterfuge!\" Chapter 1.",
 		story = "DAQINGHUAYU1",
@@ -4159,9 +4159,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[426] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Gato Do Your Stretches!",
 		condition = "Begin \"Submarine Subterfuge!\" Chapter 2.",
 		story = "DAQINGHUAYU2",
@@ -4170,9 +4170,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[427] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Dorm Gaming Session",
 		condition = "Begin \"Submarine Subterfuge!\" Chapter 3.",
 		story = "DAQINGHUAYU3",
@@ -4181,9 +4181,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[428] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Deal With The Devil",
 		condition = "Begin \"Submarine Subterfuge!\" Chapter 4.",
 		story = "DAQINGHUAYU4",
@@ -4192,9 +4192,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[429] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sea for Two Pt. 1",
 		condition = "Begin \"Submarine Subterfuge!\" Chapter 5.",
 		story = "DAQINGHUAYU5",
@@ -4203,9 +4203,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[430] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sea for Two Pt. 2",
 		condition = "Begin \"Submarine Subterfuge!\" Chapter 6.",
 		story = "DAQINGHUAYU6",
@@ -4214,9 +4214,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[431] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Good Night! Good Morning!",
 		condition = "Begin \"Submarine Subterfuge!\" Chapter 7.",
 		story = "DAQINGHUAYU7",
@@ -4225,9 +4225,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[432] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Essex's Troubles",
 		condition = "Begin \"Ceremonial Gala\" Chapter 1.",
 		story = "HUIHUA1",
@@ -4236,9 +4236,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[433] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Albacore's Stroll",
 		condition = "Begin \"Ceremonial Gala\" Chapter 2.",
 		story = "HUIHUA2",
@@ -4247,9 +4247,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[434] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Taihou and Albacore",
 		condition = "Begin \"Ceremonial Gala\" Chapter 3.",
 		story = "HUIHUA3",
@@ -4258,9 +4258,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[435] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Festival",
 		condition = "Begin \"Ceremonial Gala\" Chapter 4.",
 		story = "HUIHUA4",
@@ -4269,9 +4269,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[436] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Essex and Enterprise",
 		condition = "Begin \"Ceremonial Gala\" Chapter 5.",
 		story = "HUIHUA5",
@@ -4280,9 +4280,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[437] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Preparations Done, Nya!",
 		condition = "Clear \"The Special Banquet\" Mission 1.",
 		story = "SHANCHENGLIFU1",
@@ -4291,9 +4291,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[438] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Little Chat Outside the Office",
 		condition = "Clear \"The Special Banquet\" Mission 2.",
 		story = "SHANCHENGLIFU2",
@@ -4302,9 +4302,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[439] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Cleveland Enters!",
 		condition = "Clear \"The Special Banquet\" Mission 3.",
 		story = "SHANCHENGLIFU3",
@@ -4313,9 +4313,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[440] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Queen at the Banquet",
 		condition = "Clear \"The Special Banquet\" Mission 4.",
 		story = "SHANCHENGLIFU4",
@@ -4324,9 +4324,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[441] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Pianist of the Banquet Hall",
 		condition = "Clear \"The Special Banquet\" Mission 5.",
 		story = "SHANCHENGLIFU5",
@@ -4335,9 +4335,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[442] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Anniversary Orchestra",
 		condition = "Clear \"The Special Banquet\" Mission 6.",
 		story = "SHANCHENGLIFU6",
@@ -4346,9 +4346,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[443] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Secretary Ship's Duty (?), Pt. 1",
 		condition = "Begin \"Taihou, Body and Soul\" Chapter 1.",
 		story = "DAFENG1",
@@ -4357,9 +4357,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[444] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Secretary Ship's Duty (?), Pt. 2",
 		condition = "Begin \"Taihou, Body and Soul\" Chapter 2.",
 		story = "DAFENG2",
@@ -4368,9 +4368,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[445] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Taihou's Nemesis (?)",
 		condition = "Begin \"Taihou, Body and Soul\" Chapter 3.",
 		story = "DAFENG3",
@@ -4379,9 +4379,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[446] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A New Alliance (?)",
 		condition = "Begin \"Taihou, Body and Soul\" Chapter 4.",
 		story = "DAFENG4",
@@ -4390,9 +4390,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[447] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Mighty (?) Clash",
 		condition = "Begin \"Taihou, Body and Soul\" Chapter 5.",
 		story = "DAFENG5",
@@ -4401,9 +4401,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[448] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Taihou's Disappearance (?), Pt. 1",
 		condition = "Begin \"Taihou, Body and Soul\" Chapter 6.",
 		story = "DAFENG6",
@@ -4412,9 +4412,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[449] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Taihou's Disappearance (?), Pt. 2",
 		condition = "Begin \"Taihou, Body and Soul\" Chapter 7.",
 		story = "DAFENG7",
@@ -4423,9 +4423,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[450] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Strict Secretary",
 		condition = "Begin \"Enterprise Troubles\" Chapter 1.",
 		story = "AISAIKESI1",
@@ -4434,9 +4434,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[451] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Gathering of Juniors",
 		condition = "Begin \"Enterprise Troubles\" Chapter 2.",
 		story = "AISAIKESI2",
@@ -4445,9 +4445,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[452] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Enterprise",
 		condition = "Begin \"Enterprise Troubles\" Chapter 3.",
 		story = "AISAIKESI3",
@@ -4456,9 +4456,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[453] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Essex Versus Enterprise",
 		condition = "Begin \"Enterprise Troubles\" Chapter 4.",
 		story = "AISAIKESI4",
@@ -4467,9 +4467,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[454] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Knots of the Heart, Pt 1",
 		condition = "Begin \"Enterprise Troubles\" Chapter 5.",
 		story = "AISAIKESI5",
@@ -4478,9 +4478,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[455] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Knots of the Heart, Pt 2",
 		condition = "Begin \"Enterprise Troubles\" Chapter 6.",
 		story = "AISAIKESI6",
@@ -4489,9 +4489,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[456] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "When We're Together",
 		condition = "Begin \"Enterprise Troubles\" Chapter 7.",
 		story = "AISAIKESI7",
@@ -4500,9 +4500,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[457] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Enter the Meowfficers",
 		condition = "Unlock the Meowfficer feature (reach Commander Level 40.)",
 		story = "ZHIHUIMIAO1",
@@ -4511,9 +4511,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[458] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Meowfficer Introduction",
 		condition = "Unlock the Meowfficer feature (reach Commander Level 40.)",
 		story = "ZHIHUIMIAO2",
@@ -4522,9 +4522,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[459] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Meowfficer Training",
 		condition = "Unlock the Meowfficer feature (reach Commander Level 40.)",
 		story = "ZHIHUIMIAO3",
@@ -4533,9 +4533,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[460] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Housing Situation...",
 		condition = "Unlock the Meowfficer feature (reach Commander Level 40.)",
 		story = "ZHIHUIMIAO4",
@@ -4544,9 +4544,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[461] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Seed is Sown",
 		condition = "Begin \"Sparkling Battle Star!\"",
 		story = "SHENGDIYAGEGAI1",
@@ -4555,9 +4555,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[462] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Quest for Knowledge",
 		condition = "Collect the 2nd San Diego Star from the \"Sparkling Battle Star!\" event.",
 		story = "SHENGDIYAGEGAI2",
@@ -4566,9 +4566,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[463] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "When In Doubt, Ask a Friend",
 		condition = "Collect the 4th San Diego Star from the \"Sparkling Battle Star!\" event.",
 		story = "SHENGDIYAGEGAI3",
@@ -4577,9 +4577,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[464] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "One Battle Star to Another",
 		condition = "Collect the final San Diego Stars from the \"Sparkling Battle Star!\" event.",
 		story = "SHENGDIYAGEGAI4",
@@ -4587,65 +4587,10 @@ pg.memory_template = {
 		icon = "memory_shengdiyagegai",
 		is_open = 0
 	},
-	[466] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
-		type = 1,
-		title = "Begin the Operation!",
-		condition = "Begin \"Fight On, Royal Maids!\"",
-		story = "NIUKASIERBOSS1",
-		id = 466,
-		icon = "memory_niukasierboss",
-		is_open = 0
-	},
-	[467] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
-		type = 1,
-		title = "Secret Stratagem",
-		condition = "Reach 25% Progress in \"Fight On, Royal Maids!\"",
-		story = "NIUKASIERBOSS2",
-		id = 467,
-		icon = "memory_niukasierboss",
-		is_open = 0
-	},
-	[468] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
-		type = 1,
-		title = "Sororal Defensive Line",
-		condition = "Reach 50% Progress in \"Fight On, Royal Maids!\"",
-		story = "NIUKASIERBOSS3",
-		id = 468,
-		icon = "memory_niukasierboss",
-		is_open = 0
-	},
-	[469] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
-		type = 1,
-		title = "The Instructor's Tactics",
-		condition = "Reach 75% Progress in \"Fight On, Royal Maids!\"",
-		story = "NIUKASIERBOSS4",
-		id = 469,
-		icon = "memory_niukasierboss",
-		is_open = 0
-	},
-	[470] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
-		type = 1,
-		title = "Her Reward",
-		condition = "Reach 100% Progress in \"Fight On, Royal Maids!\"",
-		story = "NIUKASIERBOSS5",
-		id = 470,
-		icon = "memory_niukasierboss",
-		is_open = 0
-	},
 	[471] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Bad Sense of Direction",
 		condition = "Begin \"Enter: Akatsuki, The Ninja!\" Chapter 1.",
 		story = "XIAO1",
@@ -4654,9 +4599,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[472] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ninja Training",
 		condition = "Begin \"Enter: Akatsuki, The Ninja!\" Chapter 2.",
 		story = "XIAO2",
@@ -4665,9 +4610,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[473] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Friendly Gathering (Part 1)",
 		condition = "Begin \"Enter: Akatsuki, The Ninja!\" Chapter 3.",
 		story = "XIAO3",
@@ -4676,9 +4621,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[474] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Friendly Gathering (Part 2)",
 		condition = "Begin \"Enter: Akatsuki, The Ninja!\" Chapter 4.",
 		story = "XIAO4",
@@ -4687,9 +4632,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[475] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Sudden Darkness",
 		condition = "Begin \"Enter: Akatsuki, The Ninja!\" Chapter 5.",
 		story = "XIAO5",
@@ -4698,9 +4643,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[476] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "In The Dark",
 		condition = "Begin \"Enter: Akatsuki, The Ninja!\" Chapter 6.",
 		story = "XIAO6",
@@ -4709,9 +4654,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[477] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Promise and Hope",
 		condition = "Begin \"Enter: Akatsuki, The Ninja!\" Chapter 7.",
 		story = "XIAO7",
@@ -4720,9 +4665,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[478] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Interim Head Maid ",
 		condition = "Clear \"A Paean for Peace\" Mission 1.",
 		story = "NIUKASIER1",
@@ -4731,9 +4676,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[479] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Perfection and Peace ",
 		condition = "Clear \"A Paean for Peace\" Mission 2.",
 		story = "NIUKASIER2",
@@ -4742,9 +4687,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[480] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Lunch Break ",
 		condition = "Clear \"A Paean for Peace\" Mission 3.",
 		story = "NIUKASIER3",
@@ -4753,9 +4698,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[481] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prank Time? ",
 		condition = "Clear \"A Paean for Peace\" Mission 4.",
 		story = "NIUKASIER4",
@@ -4764,9 +4709,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[482] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Outing ",
 		condition = "Clear \"A Paean for Peace\" Mission 5.",
 		story = "NIUKASIER5",
@@ -4775,9 +4720,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[483] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sunset ",
 		condition = "Clear \"A Paean for Peace\" Mission 6.",
 		story = "NIUKASIER6",
@@ -4786,9 +4731,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[484] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Her Desires ",
 		condition = "Clear \"A Paean for Peace\" Mission 7.",
 		story = "NIUKASIER7",
@@ -4797,9 +4742,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[485] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An Easily Flustered Girl's Day",
 		condition = "Begin \"An Easily Flustered Girl's Story\" Chapter 1.",
 		story = "HUONULULU1",
@@ -4808,9 +4753,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[486] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "She Doesn't Have Many Friends?",
 		condition = "Begin \"An Easily Flustered Girl's Story\" Chapter 2.",
 		story = "HUONULULU2",
@@ -4819,9 +4764,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[487] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "You've Got a Friend in Me!",
 		condition = "Begin \"An Easily Flustered Girl's Story\" Chapter 3.",
 		story = "HUONULULU3",
@@ -4830,9 +4775,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[488] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Honolulu's Concerned?",
 		condition = "Begin \"An Easily Flustered Girl's Story\" Chapter 4.",
 		story = "HUONULULU4",
@@ -4841,9 +4786,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[489] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Honolulu's Bothered",
 		condition = "Begin \"An Easily Flustered Girl's Story\" Chapter 5.",
 		story = "HUONULULU5",
@@ -4852,9 +4797,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[490] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Date With Honolulu (Part 1)",
 		condition = "Begin \"An Easily Flustered Girl's Story\" Chapter 6.",
 		story = "HUONULULU6",
@@ -4863,9 +4808,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[491] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Date With Honolulu (Part 2)",
 		condition = "Begin \"An Easily Flustered Girl's Story\" Chapter 7.",
 		story = "HUONULULU7",
@@ -4874,9 +4819,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[492] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Unknown Encounter ",
 		condition = "Encounter Special Target ",
 		story = "DONGHUO13",
@@ -4885,9 +4830,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[493] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "EXTRA",
 		condition = "？？？",
 		story = "DONGHUO17",
@@ -4896,9 +4841,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[494] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "In Search of Lost Ghosts!",
 		condition = "Unlock \"Trick or Treat Halloween Night!\" Mission 1.",
 		story = "BEILIWANSHENGJIE1",
@@ -4907,9 +4852,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[495] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Curious Witch",
 		condition = "Unlock \"Trick or Treat Halloween Night!\" Mission 2.",
 		story = "BEILIWANSHENGJIE2",
@@ -4918,9 +4863,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[496] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Witch Scared of Ghosts",
 		condition = "Unlock \"Trick or Treat Halloween Night!\" Mission 3.",
 		story = "BEILIWANSHENGJIE3",
@@ -4929,9 +4874,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[497] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Witch Afraid of Troubles",
 		condition = "Unlock \"Trick or Treat Halloween Night!\" Mission 4.",
 		story = "BEILIWANSHENGJIE4",
@@ -4940,9 +4885,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[498] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Helper From A Coffin?",
 		condition = "Unlock \"Trick or Treat Halloween Night!\" Mission 5.",
 		story = "BEILIWANSHENGJIE5",
@@ -4951,9 +4896,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[499] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chasing Ghosts!",
 		condition = "Unlock \"Trick or Treat Halloween Night!\" Mission 6.",
 		story = "BEILIWANSHENGJIE6",
@@ -4962,9 +4907,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[500] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Happy Halloween!",
 		condition = "Unlock \"Trick or Treat Halloween Night!\" Mission 7.",
 		story = "BEILIWANSHENGJIE7",
@@ -4973,9 +4918,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[501] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "What is the Rabbit Planet?",
 		condition = "Unlock \"Mysterious Rabbit Alien?!\" Mission 1.",
 		story = "BEILI1",
@@ -4984,9 +4929,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[502] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Rabbit Alien Characteristics—— \"Rabbit Ears\"!",
 		condition = "Unlock \"Mysterious Rabbit Alien?!\" Mission 2.",
 		story = "BEILI2",
@@ -4995,9 +4940,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[503] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Rabbit Alien Characteristics—— \"Effort\"!",
 		condition = "Unlock \"Mysterious Rabbit Alien?!\" Mission 3.",
 		story = "BEILI3",
@@ -5006,9 +4951,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[504] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Rabbit Alien Characteristics—— \"Idol\"?",
 		condition = "Unlock \"Mysterious Rabbit Alien?!\" Mission 4.",
 		story = "BEILI4",
@@ -5017,9 +4962,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[505] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Rabbit Alien Characteristics—— \"Love\"!",
 		condition = "Unlock \"Mysterious Rabbit Alien?!\" Mission 5.",
 		story = "BEILI5",
@@ -5028,9 +4973,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[506] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Rabbit Alien Has Arrived?!",
 		condition = "Unlock \"Mysterious Rabbit Alien?!\" Mission 6.",
 		story = "BEILI6",
@@ -5039,9 +4984,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[507] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Real Rabbit Alien",
 		condition = "Unlock \"Mysterious Rabbit Alien?!\" Mission 7.",
 		story = "BEILI7",
@@ -5050,9 +4995,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[508] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ice-Cold Shiranui",
 		condition = "Unlock \"Shiranui, the Do-It-All Shopkeeper\" Mission 1",
 		story = "BUZHIHUO1",
@@ -5061,9 +5006,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[509] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Daily Life of a Shopkeeper",
 		condition = "Unlock \"Shiranui, the Do-It-All Shopkeeper\" Mission 2",
 		story = "BUZHIHUO2",
@@ -5072,9 +5017,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[510] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Shopkeeper's Little Buddies",
 		condition = "Unlock \"Shiranui, the Do-It-All Shopkeeper\" Mission 3",
 		story = "BUZHIHUO3",
@@ -5083,9 +5028,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[511] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An Encounter at the Store?",
 		condition = "Unlock \"Shiranui, the Do-It-All Shopkeeper\" Mission 4",
 		story = "BUZHIHUO4",
@@ -5094,9 +5039,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[512] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Shopkeeper's Abnormality",
 		condition = "Unlock \"Shiranui, the Do-It-All Shopkeeper\" Mission 5",
 		story = "BUZHIHUO5",
@@ -5105,9 +5050,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[513] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Shopkeeper's True Feelings (Pt 1)",
 		condition = "Unlock \"Shiranui, the Do-It-All Shopkeeper\" Mission 6",
 		story = "BUZHIHUO6",
@@ -5116,9 +5061,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[514] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Shopkeeper's True Feelings (Pt 2)",
 		condition = "Unlock \"Shiranui, the Do-It-All Shopkeeper\" Mission 7",
 		story = "BUZHIHUO7",
@@ -5127,9 +5072,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[515] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Sweet Girl?",
 		condition = "Unlock \"Sugary Concord\" Mission 1",
 		story = "KANGKEDE1",
@@ -5138,9 +5083,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[516] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "It's Buffet Time!",
 		condition = "Unlock \"Sugary Concord\" Mission 2",
 		story = "KANGKEDE2",
@@ -5149,9 +5094,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[517] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Concert",
 		condition = "Unlock \"Sugary Concord\" Mission 3",
 		story = "KANGKEDE3",
@@ -5160,9 +5105,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[518] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Sugar Alliance?",
 		condition = "Unlock \"Sugary Concord\" Mission 4",
 		story = "KANGKEDE4",
@@ -5171,9 +5116,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[519] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Determination",
 		condition = "Unlock \"Sugary Concord\" Mission 5",
 		story = "KANGKEDE5",
@@ -5182,9 +5127,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[520] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Taste Tester?",
 		condition = "Unlock \"Sugary Concord\" Mission 6",
 		story = "KANGKEDE6",
@@ -5193,9 +5138,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[521] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "From Concord, with Sugar",
 		condition = "Unlock \"Sugary Concord\" Mission 7",
 		story = "KANGKEDE7",
@@ -5204,9 +5149,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[567] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Debut! Light Carrier from the Land of the Rising Sun",
 		condition = "Begin \"Light Carrier Ryuujou, Moving Out!\" Chapter 1",
 		story = "LONGXIANG1",
@@ -5215,9 +5160,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[568] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Training! Hard work is the tenet of the Sakura Empire!",
 		condition = "Begin \"Light Carrier Ryuujou, Moving Out!\" Chapter 2",
 		story = "LONGXIANG2",
@@ -5226,9 +5171,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[569] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = " Focus! Don't stop until you've reached your goal!",
 		condition = "Begin \"Light Carrier Ryuujou, Moving Out!\" Chapter 3",
 		story = "LONGXIANG3",
@@ -5237,9 +5182,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[570] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Danger! A Girl's Mysterious Appeal!",
 		condition = "Begin \"Light Carrier Ryuujou, Moving Out!\" Chapter 4",
 		story = "LONGXIANG4",
@@ -5248,9 +5193,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[571] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Worries! What's going on with me lately?",
 		condition = "Begin \"Light Carrier Ryuujou, Moving Out!\" Chapter 5",
 		story = "LONGXIANG5",
@@ -5259,9 +5204,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[572] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Enemies! The identity of the legendary idol is...?!",
 		condition = "Begin \"Light Carrier Ryuujou, Moving Out!\" Chapter 6",
 		story = "LONGXIANG6",
@@ -5270,9 +5215,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[573] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = " Bravery! Commander, I love you!",
 		condition = "Begin \"Light Carrier Ryuujou, Moving Out!\" Chapter 7",
 		story = "LONGXIANG7",
@@ -5281,9 +5226,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[574] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Carriers of the Eagle Union",
 		condition = "Begin \"The Solomon Ranger\" SP1",
 		story = "LONGXIANGHUODONG1",
@@ -5292,9 +5237,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[575] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Enemy Aircraft Sighted!",
 		condition = "After starting \"The Solomon Ranger\" SP1",
 		story = "LONGXIANGHUODONG2",
@@ -5303,9 +5248,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[576] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Versus the Fast Battleship Fleet",
 		condition = "Fight the boss of \"The Solomon Ranger\" SP1",
 		story = "LONGXIANGHUODONG3",
@@ -5314,9 +5259,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[577] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Battle Analysis",
 		condition = "Clear \"The Solomon Ranger\" SP1",
 		story = "LONGXIANGHUODONG4",
@@ -5325,9 +5270,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[578] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sisterly Seminar",
 		condition = "Begin \"The Solomon Ranger\" SP2",
 		story = "LONGXIANGHUODONG5",
@@ -5336,9 +5281,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[579] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Versus the Virtuous Sister!?",
 		condition = "Fight the boss of \"The Solomon Ranger\" SP2",
 		story = "LONGXIANGHUODONG6",
@@ -5347,9 +5292,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[580] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Saratoga's Secret Stratagem",
 		condition = "Clear \"The Solomon Ranger\" SP2",
 		story = "LONGXIANGHUODONG7",
@@ -5358,9 +5303,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[581] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sisterly Seminar II",
 		condition = "Begin \"The Solomon Ranger\" SP3",
 		story = "LONGXIANGHUODONG8",
@@ -5369,9 +5314,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[582] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Versus Light Carrier Ryuujou",
 		condition = "Fight the boss of \"The Solomon Ranger\" SP3",
 		story = "LONGXIANGHUODONG9",
@@ -5380,9 +5325,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[583] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Raging Battle Ensues, and then...",
 		condition = "Defeat the boss of \"The Solomon Ranger\" SP3",
 		story = "LONGXIANGHUODONG10",
@@ -5391,9 +5336,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[584] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Onward to the Next Battle",
 		condition = "Clear \"The Solomon Ranger\" SP3",
 		story = "LONGXIANGHUODONG11",
@@ -5402,9 +5347,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[585] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Secretary Ooshio",
 		condition = "Unlock \"Gentle and Sweet Ooshio! - 1\"",
 		story = "DACHAO1",
@@ -5413,9 +5358,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[586] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Do Ya Like Girls?",
 		condition = "Unlock \"Gentle and Sweet Ooshio! - 2\"",
 		story = "DACHAO2",
@@ -5424,9 +5369,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[587] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Fate or Miracle?",
 		condition = "Unlock \"Gentle and Sweet Ooshio! - 3\"",
 		story = "DACHAO3",
@@ -5435,9 +5380,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[588] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Trusted Press Corps",
 		condition = "Unlock \"Gentle and Sweet Ooshio! - 4\"",
 		story = "DACHAO4",
@@ -5446,9 +5391,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[589] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Time for Overtime!",
 		condition = "Unlock \"Gentle and Sweet Ooshio! - 5\"",
 		story = "DACHAO5",
@@ -5457,9 +5402,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[590] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Catgirl Tea Party",
 		condition = "Unlock \"Gentle and Sweet Ooshio! - 6\"",
 		story = "DACHAO6",
@@ -5468,9 +5413,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[591] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "See Ya Next Time~",
 		condition = "Unlock \"Gentle and Sweet Ooshio! - 7\"",
 		story = "DACHAO7",
@@ -5479,9 +5424,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[592] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Christmas Conundrum ",
 		condition = "Unlock \"Operation: Christmas! - 1\"",
 		story = "DACHAOSHENGDAN1",
@@ -5490,9 +5435,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[593] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Gift for Everyone ",
 		condition = "Unlock \"Operation: Christmas! - 2\"",
 		story = "DACHAOSHENGDAN2",
@@ -5501,9 +5446,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[594] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Shadow over Christmas, Pt. 1 ",
 		condition = "Unlock \"Operation: Christmas! - 3\"",
 		story = "DACHAOSHENGDAN3",
@@ -5512,9 +5457,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[595] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Shadow over Christmas, Pt. 2 ",
 		condition = "Unlock \"Operation: Christmas! - 4\"",
 		story = "DACHAOSHENGDAN4",
@@ -5523,9 +5468,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[596] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Warspite's Wish ",
 		condition = "Unlock \"Operation: Christmas! - 5\"",
 		story = "DACHAOSHENGDAN5",
@@ -5534,9 +5479,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[597] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Onwards, To Christmas Day! ",
 		condition = "Unlock \"Operation: Christmas! - 6\"",
 		story = "DACHAOSHENGDAN6",
@@ -5545,9 +5490,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[598] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commence Operation: Christmas! ",
 		condition = "Unlock \"Operation: Christmas! - 7\"",
 		story = "DACHAOSHENGDAN7",
@@ -5556,9 +5501,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[599] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ashigara, Fight!",
 		condition = "Begin \"Ashigara, Advance! - 1\"",
 		story = "ZUBING1",
@@ -5567,9 +5512,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[600] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ashigara, Work!",
 		condition = "Begin \"Ashigara, Advance! - 2\"",
 		story = "ZUBING2",
@@ -5578,9 +5523,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[601] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ashigara, Strike!",
 		condition = "Begin \"Ashigara, Advance! - 3\"",
 		story = "ZUBING3",
@@ -5589,9 +5534,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[602] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ashigara, Why do you Fight?",
 		condition = "Begin \"Ashigara, Advance! - 4\"",
 		story = "ZUBING4",
@@ -5600,9 +5545,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[603] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ashigara, Confused!",
 		condition = "Begin \"Ashigara, Advance! - 5\"",
 		story = "ZUBING5",
@@ -5611,9 +5556,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[604] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ashigara, (Love) Stricken!",
 		condition = "Begin \"Ashigara, Advance! - 6\"",
 		story = "ZUBING6",
@@ -5622,9 +5567,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[605] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ashigara, Go Out!",
 		condition = "Begin \"Ashigara, Advance! - 7\"",
 		story = "ZUBING7",
@@ -5633,9 +5578,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[606] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Be Careful What You Wish For",
 		condition = "Begin \"Together with Souryuu\" Chapter 1.",
 		story = "CANGLONG1",
@@ -5644,9 +5589,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[607] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Instruct Me, Souryuu!",
 		condition = "Begin \"Together with Souryuu\" Chapter 2.",
 		story = "CANGLONG2",
@@ -5655,9 +5600,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[608] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "What are Friends?",
 		condition = "Begin \"Together with Souryuu\" Chapter 3.",
 		story = "CANGLONG3",
@@ -5666,9 +5611,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[609] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Unnecessary Things...?",
 		condition = "Begin \"Together with Souryuu\" Chapter 4.",
 		story = "CANGLONG4",
@@ -5677,9 +5622,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[610] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Change (Pt. 1)",
 		condition = "Begin \"Together with Souryuu\" Chapter 5.",
 		story = "CANGLONG5",
@@ -5688,9 +5633,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[611] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Change (Pt. 2)",
 		condition = "Begin \"Together with Souryuu\" Chapter 6.",
 		story = "CANGLONG6",
@@ -5699,9 +5644,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[612] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Change (Pt. 3)",
 		condition = "Begin \"Together with Souryuu\" Chapter 7.",
 		story = "CANGLONG7",
@@ -5710,9 +5655,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[613] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Kitchen Commotion",
 		condition = "Unlock \"New Year's Blessings\" Mission 1",
 		story = "XIAOTIANEXINNIAN1",
@@ -5721,9 +5666,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[614] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "New Year's Snow",
 		condition = "Unlock \"New Year's Blessings\" Mission 2",
 		story = "XIAOTIANEXINNIAN2",
@@ -5732,9 +5677,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[615] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Great Snowball Brawl",
 		condition = "Unlock \"New Year's Blessings\" Mission 3",
 		story = "XIAOTIANEXINNIAN3",
@@ -5743,9 +5688,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[616] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Sakura Empire's New Year",
 		condition = "Unlock \"New Year's Blessings\" Mission 4",
 		story = "XIAOTIANEXINNIAN4",
@@ -5754,9 +5699,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[617] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Gift From Akashi",
 		condition = "Unlock \"New Year's Blessings\" Mission 5",
 		story = "XIAOTIANEXINNIAN5",
@@ -5765,9 +5710,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[618] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Dinner Takes An Exciting Turn",
 		condition = "Unlock \"New Year's Blessings\" Mission 6",
 		story = "XIAOTIANEXINNIAN6",
@@ -5776,9 +5721,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[619] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "New Year's Blessings",
 		condition = "Unlock \"New Year's Blessings\" Mission 7",
 		story = "XIAOTIANEXINNIAN7",
@@ -5787,9 +5732,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[620] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Sequence ",
 		condition = "Enter Battle \"Crimson Echoes - Previous Chapter\"",
 		story = "TIANCHENGHUODONG1",
@@ -5798,9 +5743,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[621] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Reminescence I",
 		condition = "Enter A1/C1",
 		story = "TIANCHENGHUODONG2",
@@ -5809,9 +5754,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[622] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Reminescence II",
 		condition = "Battle the boss in A1/C1",
 		story = "TIANCHENGHUODONG3",
@@ -5820,9 +5765,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[623] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Reminescence III",
 		condition = "Defeat the boss in A1/C1",
 		story = "TIANCHENGHUODONG4",
@@ -5831,9 +5776,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[624] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Reminescence IV",
 		condition = "Battle the boss in A2/C2",
 		story = "TIANCHENGHUODONG5",
@@ -5842,9 +5787,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[625] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Reminescence V",
 		condition = "Defeat the boss in A2/C2",
 		story = "TIANCHENGHUODONG6",
@@ -5853,9 +5798,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[626] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Reminescence VI",
 		condition = "Begin A3/C3",
 		story = "TIANCHENGHUODONG7",
@@ -5864,9 +5809,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[627] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Reminscence VII",
 		condition = "Battle the boss in A3/C3",
 		story = "TIANCHENGHUODONG8",
@@ -5875,9 +5820,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[628] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Reminscence VIII",
 		condition = "Clear A3/C3",
 		story = "TIANCHENGHUODONG9",
@@ -5886,9 +5831,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[629] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Reminescence IX",
 		condition = "Clear A3/C3",
 		story = "TIANCHENGHUODONG9-2",
@@ -5897,9 +5842,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[630] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes I",
 		condition = "Begin \"Crimson Echoes - Part 2\"",
 		story = "TIANCHENGHUODONG10",
@@ -5908,9 +5853,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[631] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes II",
 		condition = "Begin B1/D1",
 		story = "TIANCHENGHUODONG11",
@@ -5919,9 +5864,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[632] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes III",
 		condition = "Defeat the boss in B1/D1",
 		story = "TIANCHENGHUODONG12",
@@ -5930,9 +5875,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[633] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes IV",
 		condition = "Begin B2/D2",
 		story = "TIANCHENGHUODONG13",
@@ -5941,9 +5886,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[634] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes V",
 		condition = "Battle the boss in B2/D2",
 		story = "TIANCHENGHUODONG14",
@@ -5952,9 +5897,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[635] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes VI",
 		condition = "Defeat the boss in B2/D2",
 		story = "TIANCHENGHUODONG15",
@@ -5963,9 +5908,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[636] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes VII",
 		condition = "Begin B3/D3",
 		story = "TIANCHENGHUODONG16",
@@ -5974,9 +5919,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[637] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes VIII",
 		condition = "Battle the boss in B3/D3",
 		story = "TIANCHENGHUODONG17",
@@ -5985,9 +5930,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[638] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes IX",
 		condition = "Defeat the boss in B3/D3",
 		story = "TIANCHENGHUODONG18",
@@ -5996,9 +5941,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[639] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Present",
 		condition = "Clear B3/D3",
 		story = "TIANCHENGHUODONG19",
@@ -6007,9 +5952,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[640] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes X",
 		condition = "???",
 		story = "TIANCHENGHUODONG20",
@@ -6018,9 +5963,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[641] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "Echoes XI",
 		condition = "???",
 		story = "TIANCHENGHUODONG21",
@@ -6029,9 +5974,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[642] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Nervous Black Cat",
 		condition = "Begin \"The Timid Black Cat\" Chapter 1.",
 		story = "CHUCHUN1",
@@ -6040,9 +5985,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[643] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Advice From a Friend",
 		condition = "Begin \"The Timid Black Cat\" Chapter 2.",
 		story = "CHUCHUN2",
@@ -6051,9 +5996,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[644] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "You Can Do It, Hatsuharu!",
 		condition = "Begin \"The Timid Black Cat\" Chapter 3.",
 		story = "CHUCHUN3",
@@ -6062,9 +6007,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[645] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Hatsuharu, The Secretary!",
 		condition = "Begin \"The Timid Black Cat\" Chapter 4.",
 		story = "CHUCHUN4",
@@ -6073,9 +6018,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[646] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Fruitless Efforts?",
 		condition = "Begin \"The Timid Black Cat\" Chapter 5.",
 		story = "CHUCHUN5",
@@ -6084,9 +6029,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[647] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Hatsuharu's Determination",
 		condition = "Begin \"The Timid Black Cat\" Chapter 6.",
 		story = "CHUCHUN6",
@@ -6095,9 +6040,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[648] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Black Cat's Daily Life",
 		condition = "Begin \"The Timid Black Cat\" Chapter 7.",
 		story = "CHUCHUN7",
@@ -6106,9 +6051,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[649] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "My Sister's Daily Routine",
 		condition = "Begin \"My Sister's Growth Spurt?\" Chapter 1.",
 		story = "WENSENSI1",
@@ -6117,9 +6062,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[650] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "My Sister's Troubles",
 		condition = "Begin \"My Sister's Growth Spurt?\" Chapter 2.",
 		story = "WENSENSI2",
@@ -6128,9 +6073,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[651] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "My Sister's Thoughts",
 		condition = "Begin \"My Sister's Growth Spurt?\" Chapter 3.",
 		story = "WENSENSI3",
@@ -6139,9 +6084,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[652] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "My Sister's Sadness",
 		condition = "Begin \"My Sister's Growth Spurt?\" Chapter 4.",
 		story = "WENSENSI4",
@@ -6150,9 +6095,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[653] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "My Sister's Determination",
 		condition = "Begin \"My Sister's Growth Spurt?\" Chapter 5.",
 		story = "WENSENSI5",
@@ -6161,9 +6106,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[654] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "My Sister's Hard Work",
 		condition = "Begin \"My Sister's Growth Spurt?\" Chapter 6.",
 		story = "WENSENSI6",
@@ -6172,9 +6117,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[655] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "My Sister's Smile",
 		condition = "Begin \"My Sister's Growth Spurt?\" Chapter 7.",
 		story = "WENSENSI7",
@@ -6183,9 +6128,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[656] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Cleaning Crew",
 		condition = "Begin \"Loaded with Lead and Love - 1\"",
 		story = "XIEFEIERDE1",
@@ -6194,9 +6139,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[657] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "For the Sake of \"Cleaning\"",
 		condition = "Begin \"Loaded with Lead and Love - 2\"",
 		story = "XIEFEIERDE2",
@@ -6205,9 +6150,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[658] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Maid's Hobby",
 		condition = "Begin \"Loaded with Lead and Love - 3\"",
 		story = "XIEFEIERDE3",
@@ -6216,9 +6161,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[659] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Motivation?",
 		condition = "Begin \"Loaded with Lead and Love - 4\"",
 		story = "XIEFEIERDE4",
@@ -6227,9 +6172,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[660] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Weekend Rendezvous",
 		condition = "Begin \"Loaded with Lead and Love - 5\"",
 		story = "XIEFEIERDE5",
@@ -6238,9 +6183,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[661] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Maid's Feelings (Part 1)",
 		condition = "Begin \"Loaded with Lead and Love - 6\"",
 		story = "XIEFEIERDE6",
@@ -6249,9 +6194,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[662] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Maid's Feelings (Part 2)",
 		condition = "Begin \"Loaded with Lead and Love - 7\"",
 		story = "XIEFEIERDE7",
@@ -6260,9 +6205,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[663] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Maid Must...",
 		condition = "Begin \"Sirius' Improvement Plan - 1\"",
 		story = "TIANLANGXING1",
@@ -6271,9 +6216,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[664] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Her Majesty's Orders",
 		condition = "Begin \"Sirius' Improvement Plan - 2\"",
 		story = "TIANLANGXING2",
@@ -6282,9 +6227,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[665] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Maids' Aid",
 		condition = "Begin \"Sirius' Improvement Plan - 3\"",
 		story = "TIANLANGXING3",
@@ -6293,9 +6238,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[666] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Big Seven Advice",
 		condition = "Begin \"Sirius' Improvement Plan - 4\"",
 		story = "TIANLANGXING4",
@@ -6304,9 +6249,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[667] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Take My Hand",
 		condition = "Begin \"Sirius' Improvement Plan - 5\"",
 		story = "TIANLANGXING5",
@@ -6315,9 +6260,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[668] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Banquet Panic",
 		condition = "Begin \"Sirius' Improvement Plan - 6\"",
 		story = "TIANLANGXING6",
@@ -6326,9 +6271,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[669] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Like The Brightest Star",
 		condition = "Begin \"Sirius' Improvement Plan - 7\"",
 		story = "TIANLANGXING7",
@@ -6337,9 +6282,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[670] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Wake Up, Your Majesty!",
 		condition = "Begin \"The Royal Knight\" Chapter 1.",
 		story = "YANZHAN1",
@@ -6348,9 +6293,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[671] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Secretary Ship's Work",
 		condition = "Begin \"The Royal Knight\" Chapter 2.",
 		story = "YANZHAN2",
@@ -6359,9 +6304,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[672] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Speed of the Grand Old Lady",
 		condition = "Begin \"The Royal Knight\" Chapter 3.",
 		story = "YANZHAN3",
@@ -6370,9 +6315,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[673] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "After the Exercise...",
 		condition = "Begin \"The Royal Knight\" Chapter 4.",
 		story = "YANZHAN4",
@@ -6381,9 +6326,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[674] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Small Things",
 		condition = "Begin \"The Royal Knight\" Chapter 5.",
 		story = "YANZHAN5",
@@ -6392,9 +6337,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[675] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Her Majesty's Attentions",
 		condition = "Begin \"The Royal Knight\" Chapter 6.",
 		story = "YANZHAN6",
@@ -6403,9 +6348,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[676] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Guardian Sword",
 		condition = "Begin \"The Royal Knight\" Chapter 7.",
 		story = "YANZHAN7",
@@ -6414,9 +6359,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[677] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Start of a New Adventure!",
 		condition = "Unlock \"Lunar New Yay-Yay-Year!\" Mission 1",
 		story = "DONGHUANGCHUNJIE1",
@@ -6425,9 +6370,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[678] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Old Warehouse, New Discovery",
 		condition = "Unlock \"Lunar New Yay-Yay-Year!\" Mission 2",
 		story = "DONGHUANGCHUNJIE2",
@@ -6436,9 +6381,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[679] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An Explosive New Year!",
 		condition = "Unlock \"Lunar New Yay-Yay-Year!\" Mission 3",
 		story = "DONGHUANGCHUNJIE3",
@@ -6447,9 +6392,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[680] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Peaceful Game",
 		condition = "Unlock \"Lunar New Yay-Yay-Year!\" Mission 4",
 		story = "DONGHUANGCHUNJIE4",
@@ -6458,9 +6403,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[681] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Celebrating Together (Part 1)",
 		condition = "Unlock \"Lunar New Yay-Yay-Year!\" Mission 5",
 		story = "DONGHUANGCHUNJIE5",
@@ -6469,9 +6414,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[682] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Celebrating Together (Part 2)",
 		condition = "Unlock \"Lunar New Yay-Yay-Year!\" Mission 6",
 		story = "DONGHUANGCHUNJIE6",
@@ -6480,9 +6425,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[683] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Lively, Happy New Year",
 		condition = "Unlock \"Lunar New Yay-Yay-Year!\" Mission 7",
 		story = "DONGHUANGCHUNJIE7",
@@ -6490,10 +6435,274 @@ pg.memory_template = {
 		icon = "memory_donghuangchunjie",
 		is_open = 0
 	},
-	[716] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
+	[684] = {
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Special Exercises, Commence!",
+		condition = "Start the \"Air Raid Drills with Essex\" Event.",
+		story = "AISAIKESIBOSS1",
+		id = 684,
+		icon = "memory_aisaikesiboss",
+		is_open = 0
+	},
+	[685] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Independence's Battle",
+		condition = "Reach 25% Progress in \"Air Raid Drills with Essex.\"",
+		story = "AISAIKESIBOSS2",
+		id = 685,
+		icon = "memory_aisaikesiboss",
+		is_open = 0
+	},
+	[686] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Listener's Interlude",
+		condition = "Reach 50% Progress in \"Air Raid Drills with Essex.\"",
+		story = "AISAIKESIBOSS3",
+		id = 686,
+		icon = "memory_aisaikesiboss",
+		is_open = 0
+	},
+	[687] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Goals and Hard Work",
+		condition = "Reach 75% Progress in \"Air Raid Drills with Essex.\"",
+		story = "AISAIKESIBOSS4",
+		id = 687,
+		icon = "memory_aisaikesiboss",
+		is_open = 0
+	},
+	[688] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Best Memories",
+		condition = "Reach 100% Progress in \"Air Raid Drills with Essex.\"",
+		story = "AISAIKESIBOSS5",
+		id = 688,
+		icon = "memory_aisaikesiboss",
+		is_open = 0
+	},
+	[689] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Fond Memory",
+		condition = "Begin \"Saffron Travelogue\" Chapter 1.",
+		story = "XIANGGELILA1",
+		id = 689,
+		icon = "memory_xianggelila",
+		is_open = 0
+	},
+	[690] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Concerns of a Friend",
+		condition = "Begin \"Saffron Travelogue\" Chapter 2.",
+		story = "XIANGGELILA2",
+		id = 690,
+		icon = "memory_xianggelila",
+		is_open = 0
+	},
+	[691] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Clash of Minds",
+		condition = "Begin \"Saffron Travelogue\" Chapter 3.",
+		story = "XIANGGELILA3",
+		id = 691,
+		icon = "memory_xianggelila",
+		is_open = 0
+	},
+	[692] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Know Your Enemy",
+		condition = "Begin \"Saffron Travelogue\" Chapter 4.",
+		story = "XIANGGELILA4",
+		id = 692,
+		icon = "memory_xianggelila",
+		is_open = 0
+	},
+	[693] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Enemy of My Enemy",
+		condition = "Begin \"Saffron Travelogue\" Chapter 5.",
+		story = "XIANGGELILA5",
+		id = 693,
+		icon = "memory_xianggelila",
+		is_open = 0
+	},
+	[694] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Ace Up Her Sleeve",
+		condition = "Begin \"Saffron Travelogue\" Chapter 6.",
+		story = "XIANGGELILA6",
+		id = 694,
+		icon = "memory_xianggelila",
+		is_open = 0
+	},
+	[695] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "After the Battle",
+		condition = "Begin \"Saffron Travelogue\" Chapter 7.",
+		story = "XIANGGELILA7",
+		id = 695,
+		icon = "memory_xianggelila",
+		is_open = 0
+	},
+	[696] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Iron Blood's March",
+		condition = "Start the prelude to \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE1",
+		id = 696,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[697] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Iron Blood's Advance",
+		condition = "Complete the \"Stars of the Shimmering Fjord\" prelude.",
+		story = "NAERWEIKE2",
+		id = 697,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[698] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Royal Navy Strikes Back",
+		condition = "Start SP1 of \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE3",
+		id = 698,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[699] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Commence the Ambush",
+		condition = "Fight the boss of SP1 in \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE4",
+		id = 699,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[700] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Contact",
+		condition = "Defeat the boss of SP1 in \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE5",
+		id = 700,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[701] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Hardy and Hunter",
+		condition = "Start SP2 of \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE6",
+		id = 701,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[702] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Assault on the Unfrozen Port",
+		condition = "Fight the boss of SP2 in \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE7",
+		id = 702,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[703] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Change of Plans",
+		condition = "Defeat the boss of SP2 in \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE8",
+		id = 703,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[704] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Evacuation Mission",
+		condition = "Start SP3 in \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE9",
+		id = 704,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[705] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Hunted",
+		condition = "Fight the boss of SP3 in \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE10",
+		id = 705,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[706] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Star of the Shimmering Fjord - Pt. 1",
+		condition = "Defeat the boss of SP3 in \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE11",
+		id = 706,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[707] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Star of the Shimmering Fjord - Pt. 2",
+		condition = "Clear SP3 in \"Stars of the Shimmering Fjord.\"",
+		story = "NAERWEIKE12",
+		id = 707,
+		icon = "memory_naerweike",
+		is_open = 0
+	},
+	[716] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Neptune's New Journey",
 		condition = "Get Neptune to Dev. Level 30.",
 		story = "LUCK29901",
@@ -6502,9 +6711,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[717] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Monarch's New Journey",
 		condition = "Get Monarch to Dev. Level 30.",
 		story = "LUCK29902",
@@ -6513,9 +6722,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[718] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ibuki's New Journey",
 		condition = "Get Ibuki to Dev. Level 30.",
 		story = "LUCK39901",
@@ -6524,9 +6733,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[719] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Izumo's New Journey",
 		condition = "Get Izumo to Dev. Level 30.",
 		story = "LUCK39902",
@@ -6535,9 +6744,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[720] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Roon's New Journey",
 		condition = "Get Roon to Dev. Level 30.",
 		story = "LUCK49901",
@@ -6546,9 +6755,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[721] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Saint Louis' New Journey",
 		condition = "Get Saint Louis to Dev. Level 30.",
 		story = "LUCK89901",
@@ -6556,10 +6765,54 @@ pg.memory_template = {
 		icon = "memory_jhluyijiushi",
 		is_open = 0
 	},
-	[728] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
+	[722] = {
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Kitakaze's New Journey ",
+		condition = "Get Kitakaze to Dev. Level 30.",
+		story = "LUCK39903",
+		id = 722,
+		icon = "memory_jhbeifeng",
+		is_open = 0
+	},
+	[725] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Gascogne's New Journey",
+		condition = "Get Gascogne to Dev. Level 30.",
+		story = "LUCK99901",
+		id = 725,
+		icon = "memory_jhjiasikenie",
+		is_open = 0
+	},
+	[726] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Georgia's New Journey",
+		condition = "Get Georgia to Dev. Level 30.",
+		story = "LUCK19902",
+		id = 726,
+		icon = "memory_jhzuozhiya",
+		is_open = 0
+	},
+	[727] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Seattle's New Journey",
+		condition = "Get Seattle to Dev. Level 30.",
+		story = "LUCK19901",
+		id = 727,
+		icon = "memory_jhxiyatu",
+		is_open = 0
+	},
+	[728] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Kizuna AI Daily Memorabilia 1",
 		condition = "Unlocked \"Virtual Connection Synchronicity - Daily Memorabilia\" Day 1",
 		story = "AIRICHANG1",
@@ -6568,9 +6821,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[729] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Kizuna AI Daily Memorabilia 2",
 		condition = "Unlocked \"Virtual Connection Synchronicity - Daily Memorabilia\" Day 2",
 		story = "AIRICHANG2",
@@ -6579,9 +6832,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[730] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Kizuna AI Daily Memorabilia 3",
 		condition = "Unlocked \"Virtual Connection Synchronicity - Daily Memorabilia\" Day 3",
 		story = "AIRICHANG3",
@@ -6590,9 +6843,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[731] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Kizuna AI Daily Memorabilia 4",
 		condition = "Unlocked \"Virtual Connection Synchronicity - Daily Memorabilia\" Day 4",
 		story = "AIRICHANG4",
@@ -6601,9 +6854,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[732] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Kizuna AI Daily Memorabilia 5",
 		condition = "Unlocked \"Virtual Connection Synchronicity - Daily Memorabilia\" Day 5",
 		story = "AIRICHANG5",
@@ -6612,9 +6865,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[733] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Kizuna AI Daily Memorabilia 6",
 		condition = "Unlocked \"Virtual Connection Synchronicity - Daily Memorabilia\" Day 6",
 		story = "AIRICHANG6",
@@ -6623,9 +6876,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[734] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Kizuna AI Daily Memorabilia 7",
 		condition = "Unlocked \"Virtual Connection Synchronicity - Daily Memorabilia\" Day 7",
 		story = "AIRICHANG7",
@@ -6634,9 +6887,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[735] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Random Word Generator",
 		condition = "Complete \"Purification Space\" NO.01",
 		story = "AIJINGHUA1",
@@ -6645,9 +6898,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[736] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "The Fine Line Between Moron and Genius",
 		condition = "Complete \"Purification Space\" NO.02",
 		story = "AIJINGHUA2",
@@ -6656,9 +6909,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[737] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Red Alert!?",
 		condition = "Complete \"Purification Space\" NO.03",
 		story = "AIJINGHUA3",
@@ -6667,9 +6920,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[738] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Until We Meet Again",
 		condition = "Complete \"Purification Space\" NO.04",
 		story = "AIJINGHUA4",
@@ -6678,9 +6931,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[739] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "The Visitor From Virtual Space",
 		condition = "Event Limited Login Game",
 		story = "AIGUANQIA1",
@@ -6689,9 +6942,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[740] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "A Chance Meeting?",
 		condition = "Begin \"Virtual Connection Synchronicity\" Campaign",
 		story = "AIGUANQIA2",
@@ -6700,9 +6953,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[741] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Forward, to the Virtual Mirror Sea!",
 		condition = "Embark On \"Virtual Connection Synchronicity\" Campaign SP1",
 		story = "AIGUANQIA3",
@@ -6711,9 +6964,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[742] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Lost Data?",
 		condition = "Engage \"Virtual Connection Synchronicity\" Campaign SP1 Boss Fleet",
 		story = "AIGUANQIA4",
@@ -6722,9 +6975,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[743] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Hacking Battle!",
 		condition = "Defeat \"Virtual Connection Synchronicity\" Campaign SP1 Boss Fleet",
 		story = "AIGUANQIA5",
@@ -6733,9 +6986,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[744] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Data Recovery",
 		condition = "Clear \"Virtual Connection Synchronicity\" Campaign SP1",
 		story = "AIGUANQIA6",
@@ -6744,9 +6997,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[745] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "It's Showtime!",
 		condition = "Embark On \"Virtual Connection Synchronicity\" Campaign SP2",
 		story = "AIGUANQIA7",
@@ -6755,9 +7008,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[746] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Kizuna AI, Abducted!",
 		condition = "Rescue Kizuna AI from \"Virtual Connection Synchronicity\" SP2",
 		story = "AIGUANQIA8",
@@ -6766,9 +7019,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[747] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Found: Kizuna AI Clone!",
 		condition = "Engage \"Virtual Connection Synchronicity\" Campaign SP2 Boss Fleet",
 		story = "AIGUANQIA9",
@@ -6777,9 +7030,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[748] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Someday, a Real Concert",
 		condition = "Clear \"Virtual Connection Synchronicity\" Campaign SP2",
 		story = "AIGUANQIA10",
@@ -6788,9 +7041,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[749] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Unaided Bungee Jumping!",
 		condition = "Embark On \"Virtual Connection Synchronicity\" Campaign SP3",
 		story = "AIGUANQIA11",
@@ -6799,9 +7052,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[750] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Caution: Highly Explosive!",
 		condition = "Successfully Destroy SP3 Obstacles",
 		story = "AIGUANQIA12",
@@ -6810,9 +7063,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[751] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Start Looting!",
 		condition = "Recover Supplementary Coins in SP3",
 		story = "AIGUANQIA13",
@@ -6821,9 +7074,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[752] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Watch Out!",
 		condition = "Engage \"Virtual Connection Synchronicity\" Campaign SP3 Boss Fleet",
 		story = "AIGUANQIA14",
@@ -6832,9 +7085,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[753] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Bang! Victory!",
 		condition = "Clear \"Virtual Connection Synchronicity\" Campaign SP3",
 		story = "AIGUANQIA15",
@@ -6843,9 +7096,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[754] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Virus Infection?!",
 		condition = "Embark On \"Virtual Connection Synchronicity\" Campaign SP4",
 		story = "AIGUANQIA16",
@@ -6854,9 +7107,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[755] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Kizuna AI's Fleet",
 		condition = "In SP4, Engage an AI Fleet",
 		story = "AIGUANQIA17",
@@ -6865,9 +7118,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[756] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Hear Our Voices!",
 		condition = "In SP4, Defeat All AI Fleets",
 		story = "AIGUANQIA18",
@@ -6876,9 +7129,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[757] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Power Outage!",
 		condition = "In SP4, Destroy All Power Stations",
 		story = "AIGUANQIA19",
@@ -6887,9 +7140,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[758] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Absolute Despair?!",
 		condition = "Engage \"Virtual Connection Synchronicity\" Campaign SP4 Boss Fleet",
 		story = "AIGUANQIA20",
@@ -6898,9 +7151,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[759] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Collapse",
 		condition = "Clear \"Virtual Connection Synchronicity\" Campaign SP4",
 		story = "AIGUANQIA21",
@@ -6909,9 +7162,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[760] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "The Return from Virtual Space",
 		condition = "Complete \"Virtual Connection Synchronicity\" Campaign",
 		story = "AIGUANQIA22",
@@ -6920,9 +7173,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[761] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Sequel!",
 		condition = "???",
 		story = "AIGUANQIA23",
@@ -6931,9 +7184,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[762] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "What's this black screen...?",
 		condition = "???",
 		story = "AIGUANQIA24",
@@ -6942,9 +7195,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[763] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 1 - Where Are We?",
 		condition = "Unlock \"Operation: Escape from Port!\" Day 1",
 		story = "GANGQUTAOLI1",
@@ -6953,9 +7206,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[764] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 2 - Spy Operation!",
 		condition = "Unlock \"Operation: Escape from Port!\" Day 2",
 		story = "GANGQUTAOLI2",
@@ -6964,9 +7217,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[765] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 3 - An Angel's Aid?!",
 		condition = "Unlock \"Operation: Escape from Port!\" Day 3",
 		story = "GANGQUTAOLI3",
@@ -6975,9 +7228,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[766] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 4 - Final Destination!",
 		condition = "Unlock \"Operation: Escape from Port!\" Day 4",
 		story = "GANGQUTAOLI4",
@@ -6986,9 +7239,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[767] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chapter 5 - Mission Failed...?",
 		condition = "Unlock \"Operation: Escape from Port!\" Day 5",
 		story = "GANGQUTAOLI5",
@@ -6996,10 +7249,87 @@ pg.memory_template = {
 		icon = "memory_gangqutaoli",
 		is_open = 0
 	},
-	[775] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
+	[768] = {
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Her Wish",
+		condition = "Begin \"One Little Incident\" Chapter 1.",
+		story = "SIPEIBOJUE1",
+		id = 768,
+		icon = "memory_sipei",
+		is_open = 0
+	},
+	[769] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A Chance Encounter",
+		condition = "Begin \"One Little Incident\" Chapter 2.",
+		story = "SIPEIBOJUE2",
+		id = 769,
+		icon = "memory_sipei",
+		is_open = 0
+	},
+	[770] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Comrades in Arms",
+		condition = "Begin \"One Little Incident\" Chapter 3.",
+		story = "SIPEIBOJUE3",
+		id = 770,
+		icon = "memory_sipei",
+		is_open = 0
+	},
+	[771] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Allies",
+		condition = "Begin \"One Little Incident\" Chapter 4.",
+		story = "SIPEIBOJUE4",
+		id = 771,
+		icon = "memory_sipei",
+		is_open = 0
+	},
+	[772] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Loneliness",
+		condition = "Begin \"One Little Incident\" Chapter 5.",
+		story = "SIPEIBOJUE5",
+		id = 772,
+		icon = "memory_sipei",
+		is_open = 0
+	},
+	[773] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Weight",
+		condition = "Begin \"One Little Incident\" Chapter 6.",
+		story = "SIPEIBOJUE6",
+		id = 773,
+		icon = "memory_sipei",
+		is_open = 0
+	},
+	[774] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Warmth",
+		condition = "Begin \"One Little Incident\" Chapter 7.",
+		story = "SIPEIBOJUE7",
+		id = 774,
+		icon = "memory_sipei",
+		is_open = 0
+	},
+	[775] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Sortie Begins",
 		condition = "Begin mission \"One Small Promise\"",
 		story = "BSMXU1",
@@ -7008,9 +7338,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[776] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "After the First Fight",
 		condition = "Proceed with mission \"One Small Promise\"",
 		story = "BSMXU2",
@@ -7019,9 +7349,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[777] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "When the Dust Settles",
 		condition = "Complete mission \"One Small Promise\"",
 		story = "BSMXU3",
@@ -7030,9 +7360,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[778] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An Unexpected Savior",
 		condition = "Unlock \"Another Leader?\" Chapter 1",
 		story = "QIAOZHIWUSHI1",
@@ -7041,9 +7371,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[779] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An Affable Personality...?",
 		condition = "Unlock \"Another Leader?\" Chapter 2",
 		story = "QIAOZHIWUSHI2",
@@ -7052,9 +7382,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[780] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Her Majesty",
 		condition = "Unlock \"Another Leader?\" Chapter 3",
 		story = "QIAOZHIWUSHI3",
@@ -7063,9 +7393,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[781] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Knight Commander's Leadership",
 		condition = "Unlock \"Another Leader?\" Chapter 4",
 		story = "QIAOZHIWUSHI4",
@@ -7074,9 +7404,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[782] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "To be a Leader",
 		condition = "Unlock \"Another Leader?\" Chapter 5",
 		story = "QIAOZHIWUSHI5",
@@ -7085,9 +7415,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[783] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Tonight's Supper",
 		condition = "Unlock \"Another Leader?\" Chapter 6",
 		story = "QIAOZHIWUSHI6",
@@ -7096,9 +7426,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[784] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Heart's Desire",
 		condition = "Unlock \"Another Leader?\" Chapter 7",
 		story = "QIAOZHIWUSHI7",
@@ -7107,9 +7437,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[785] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Good Morning, Commander!",
 		condition = "Unlock \"A Knight's Promise\" Chapter 1",
 		story = "U556STORY1",
@@ -7118,9 +7448,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[786] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Are You Busy, Commander?",
 		condition = "Unlock \"A Knight's Promise\" Chapter 2",
 		story = "U556STORY2",
@@ -7129,9 +7459,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[787] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "I Found You, Commander!",
 		condition = "Unlock \"A Knight's Promise\" Chapter 3",
 		story = "U556STORY3",
@@ -7140,9 +7470,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[788] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "It's a Date!",
 		condition = "Unlock \"A Knight's Promise\" Chapter 4",
 		story = "U556STORY4",
@@ -7151,9 +7481,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[789] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Mountain from a Molehill?",
 		condition = "Unlock \"A Knight's Promise\" Chapter 5",
 		story = "U556STORY5",
@@ -7162,9 +7492,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[790] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Vow of Pride",
 		condition = "Unlock \"A Knight's Promise\" Chapter 6",
 		story = "U556STORY6",
@@ -7173,9 +7503,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[791] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "It's a Promise!",
 		condition = "Unlock \"A Knight's Promise\" Chapter 7",
 		story = "U556STORY7",
@@ -7184,9 +7514,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[792] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "An Afternoon, One Day",
 		condition = "Unlock \"Science Rules!\" Day 1",
 		story = "U73HUOYUE1",
@@ -7195,9 +7525,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[793] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Big Experiment",
 		condition = "Unlock \"Science Rules!\" Day 3",
 		story = "U73HUOYUE2",
@@ -7206,9 +7536,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[794] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "I Dream Big!",
 		condition = "Unlock \"Science Rules!\" Day 5",
 		story = "U73HUOYUE3",
@@ -7217,9 +7547,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[795] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Real Experiment?",
 		condition = "Unlock \"Science Rules!\" Day 7",
 		story = "U73HUOYUE4",
@@ -7228,9 +7558,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[796] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Science Is Never Done",
 		condition = "Unlock \"Science Rules!\" Day 9",
 		story = "U73HUOYUE5",
@@ -7239,9 +7569,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[797] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "First Movement - Sunrise",
 		condition = "Begin \"Scherzo of Iron and Blood,\"",
 		story = "TIEXUEYUYINFU1",
@@ -7250,9 +7580,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[798] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Second Movement - Backworldsmen",
 		condition = "Begin A1 or C1.",
 		story = "TIEXUEYUYINFU2",
@@ -7261,9 +7591,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[799] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Tailing",
 		condition = "Discover the boss in A1 or C1.",
 		story = "TIEXUEYUYINFU3",
@@ -7272,9 +7602,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[800] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "A Race Against Time",
 		condition = "Clear A1 or C1.",
 		story = "TIEXUEYUYINFU4",
@@ -7283,9 +7613,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[801] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Third Movement - Great Longing",
 		condition = "Begin A2 or C2.",
 		story = "TIEXUEYUYINFU5",
@@ -7294,9 +7624,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[802] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Cornered",
 		condition = "Encounter the Boss of A2 or C2.",
 		story = "TIEXUEYUYINFU6",
@@ -7305,9 +7635,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[803] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Battle Status",
 		condition = "Defeat the Boss of A2 or C2.",
 		story = "TIEXUEYUYINFU7",
@@ -7316,9 +7646,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[804] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Fourth Movement - Passion, Joy, and Suffering",
 		condition = "Begin A3 or C3.",
 		story = "TIEXUEYUYINFU8",
@@ -7327,9 +7657,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[805] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Resolution",
 		condition = "Defeat the Boss of A3 or C3.",
 		story = "TIEXUEYUYINFU9",
@@ -7338,9 +7668,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[806] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Elegy",
 		condition = "Begin Part 2 of \"Scherzo of Iron and Blood.\"",
 		story = "TIEXUEYUYINFU10",
@@ -7349,9 +7679,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[807] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Fifth Movement - Songs of the Grave",
 		condition = "Begin B1 or D1.",
 		story = "TIEXUEYUYINFU11",
@@ -7360,9 +7690,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[808] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Reinforcements",
 		condition = "Discover the boss in B1 or D1.",
 		story = "TIEXUEYUYINFU12",
@@ -7371,9 +7701,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[809] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Foray",
 		condition = "Clear B1 or D1.",
 		story = "TIEXUEYUYINFU13",
@@ -7382,9 +7712,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[810] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Sixth Movement - Of Science and Learning",
 		condition = "Begin B2 or D2.",
 		story = "TIEXUEYUYINFU14",
@@ -7393,9 +7723,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[811] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Awakening",
 		condition = "Clear B2 or D2.",
 		story = "TIEXUEYUYINFU15",
@@ -7404,9 +7734,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[812] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Seventh Movement - The Convalescent",
 		condition = "Begin B3 or D3.",
 		story = "TIEXUEYUYINFU16",
@@ -7415,9 +7745,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[813] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Final Battle",
 		condition = "Enounter the Boss of B3 or D3.",
 		story = "TIEXUEYUYINFU17",
@@ -7426,9 +7756,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[814] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Finale",
 		condition = "Defeat the Boss of B3 or D3.",
 		story = "TIEXUEYUYINFU18",
@@ -7437,9 +7767,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[815] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "An Unfulfilled Promise",
 		condition = "Clear B3 or D3.",
 		story = "TIEXUEYUYINFU19",
@@ -7448,9 +7778,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[816] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "Eighth Movement - Song of Dance",
 		condition = "? ? ?",
 		story = "TIEXUEYUYINFU20",
@@ -7459,9 +7789,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[817] = {
-		mask = "bg/bg_story_bsmlevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_bsmlevel",
 		title = "？？？",
 		condition = "? ? ?",
 		story = "TIEXUEYUYINFU21",
@@ -7470,9 +7800,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[818] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Invitation to the Banquet",
 		condition = "Unlock \"A Prayer for Peace\" Day 1",
 		story = "XIMULIFU1",
@@ -7481,9 +7811,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[819] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Toast to our Gathering",
 		condition = "Unlock \"A Prayer for Peace\" Day 2",
 		story = "XIMULIFU2",
@@ -7492,9 +7822,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[820] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "May I Have This Dance?",
 		condition = "Unlock \"A Prayer for Peace\" Day 3",
 		story = "XIMULIFU3",
@@ -7503,9 +7833,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[821] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Novel Anniversary",
 		condition = "Unlock \"A Prayer for Peace\" Day 4",
 		story = "XIMULIFU4",
@@ -7514,9 +7844,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[822] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "How to Enjoy a Banquet",
 		condition = "Unlock \"A Prayer for Peace\" Day 5",
 		story = "XIMULIFU5",
@@ -7525,9 +7855,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[823] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Brief Interlude",
 		condition = "Unlock \"A Prayer for Peace\" Day 6",
 		story = "XIMULIFU6",
@@ -7536,9 +7866,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[824] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Fireworks",
 		condition = "Unlock \"A Prayer for Peace\" Day 7",
 		story = "XIMULIFU7",
@@ -7547,9 +7877,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[825] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Good Morning, Javelin!",
 		condition = "Unlock \"Javelin's Monthly Manga\" Day 1.",
 		story = "BIAOQIANGMANHUA1",
@@ -7558,9 +7888,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[826] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Mystery Within the Drawer",
 		condition = "Unlock \"Javelin's Monthly Manga\" Day 3.",
 		story = "BIAOQIANGMANHUA2",
@@ -7569,9 +7899,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[827] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Strange Letter...?",
 		condition = "Unlock \"Javelin's Monthly Manga\" Day 5.",
 		story = "BIAOQIANGMANHUA3",
@@ -7580,9 +7910,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[828] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Javelin, to the Final Battle!",
 		condition = "Unlock \"Javelin's Monthly Manga\" Day 7.",
 		story = "BIAOQIANGMANHUA4",
@@ -7591,9 +7921,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[829] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "What the Heck is This...",
 		condition = "Unlock \"Javelin's Monthly Manga\" Day 9.",
 		story = "BIAOQIANGMANHUA5",
@@ -7602,9 +7932,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[830] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Departure",
 		condition = "Begin \"Approaching Storm.\"",
 		story = "FENGBAOQIANXI0",
@@ -7613,9 +7943,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[831] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 2,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Joint Exercise",
 		condition = "Begin \"Approaching Storm\" P1.",
 		story = "1242017",
@@ -7624,9 +7954,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[832] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Convoy",
 		condition = "Begin \"Approaching Storm\" P2.",
 		story = "FENGBAOQIANXI2",
@@ -7635,9 +7965,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[833] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Mission",
 		condition = "Begin \"Approaching Storm\" P3.",
 		story = "FENGBAOQIANXI3",
@@ -7646,9 +7976,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[834] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Advance",
 		condition = "Begin \"Approaching Storm\" P4.",
 		story = "FENGBAOQIANXI4",
@@ -7657,9 +7987,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[835] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Grouping Up",
 		condition = "Clear \"Approaching Storm\" P4.",
 		story = "FENGBAOQIANXI5",
@@ -7668,9 +7998,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[836] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Area Sweep",
 		condition = "Clear \"Approaching Storm\" P5.",
 		story = "FENGBAOQIANXI6",
@@ -7679,9 +8009,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[837] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Interference",
 		condition = "Begin \"Approaching Storm\" P6.",
 		story = "FENGBAOQIANXI7",
@@ -7690,9 +8020,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[838] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Withdrawing",
 		condition = "Begin \"Approaching Storm\" P7.",
 		story = "FENGBAOQIANXI8",
@@ -7701,9 +8031,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[839] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Contact Reestablished",
 		condition = "Clear \"Approaching Storm\" P7.",
 		story = "FENGBAOQIANXI9",
@@ -7712,9 +8042,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[840] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Fateful Encounter",
 		condition = "Unlock \"Wallflower in the Corner\" Day 1.",
 		story = "I56XIAOFU1",
@@ -7723,9 +8053,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[841] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Misunderstandings and Making Friends",
 		condition = "Unlock \"Wallflower in the Corner\" Day 3.",
 		story = "I56XIAOFU2",
@@ -7734,9 +8064,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[842] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A New Friend?",
 		condition = "Unlock \"Wallflower in the Corner\" Day 5.",
 		story = "I56XIAOFU3",
@@ -7745,9 +8075,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[843] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Let's Go!",
 		condition = "Unlock \"Wallflower in the Corner\" Day 7.",
 		story = "I56XIAOFU4",
@@ -7756,9 +8086,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[844] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Getting Work Done!",
 		condition = "Unlock \"I'm Not A Baby!\" Day 1.",
 		story = "JIQI1",
@@ -7767,9 +8097,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[845] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Justice Is Served!",
 		condition = "Unlock \"I'm Not A Baby!\" Day 2.",
 		story = "JIQI2",
@@ -7778,9 +8108,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[846] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prepare To Strike!",
 		condition = "Unlock \"I'm Not A Baby!\" Day 3.",
 		story = "JIQI3",
@@ -7789,9 +8119,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[847] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Mistakes Were Made!",
 		condition = "Unlock \"I'm Not A Baby!\" Day 4.",
 		story = "JIQI4",
@@ -7800,9 +8130,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[848] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Tell Me A Story!",
 		condition = "Unlock \"I'm Not A Baby!\" Day 5.",
 		story = "JIQI5",
@@ -7811,9 +8141,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[849] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "I'm A Grownup!",
 		condition = "Unlock \"I'm Not A Baby!\" Day 6.",
 		story = "JIQI6",
@@ -7822,9 +8152,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[850] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Date Time!",
 		condition = "Unlock \"I'm Not A Baby!\" Day 7.",
 		story = "JIQI7",
@@ -7833,9 +8163,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[851] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Arrival",
 		condition = "Begin Pt. 1 of \"Ashen Simulacrum.\"",
 		story = "XIANGTINGLIAOFA1",
@@ -7844,9 +8174,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[852] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Counterattack",
 		condition = "Begin A1 or C1.",
 		story = "XIANGTINGLIAOFA2",
@@ -7855,9 +8185,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[853] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Rescue",
 		condition = "Locate the Boss in A1 or C1.",
 		story = "XIANGTINGLIAOFA3",
@@ -7866,9 +8196,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[854] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Engagement",
 		condition = "Encounter the Boss of A1 or C1.",
 		story = "XIANGTINGLIAOFA4",
@@ -7877,9 +8207,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[855] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Signal",
 		condition = "Clear A1 or C1.",
 		story = "XIANGTINGLIAOFA5",
@@ -7888,9 +8218,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[856] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Long Island Line - Part 1",
 		condition = "Begin AS1 or CS1.",
 		story = "XIANGTINGLIAOFA6",
@@ -7899,9 +8229,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[857] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Long Island Line - Part 2",
 		condition = "Clear AS1 or CS1.",
 		story = "XIANGTINGLIAOFA7",
@@ -7910,9 +8240,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[858] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "The Burning of the Line",
 		condition = "Begin A2 or C2.",
 		story = "XIANGTINGLIAOFA8",
@@ -7921,9 +8251,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[859] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Convergence",
 		condition = "Locate the Boss in A2 or C2.",
 		story = "XIANGTINGLIAOFA9",
@@ -7932,9 +8262,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[860] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Delay",
 		condition = "Encounter the Boss of A2 or C2.",
 		story = "XIANGTINGLIAOFA10",
@@ -7943,9 +8273,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[861] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Purifier Defeated",
 		condition = "Clear A2 or C2.",
 		story = "XIANGTINGLIAOFA11",
@@ -7954,9 +8284,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[862] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "NY HQ - Part 1",
 		condition = "Begin AS2 or CS2.",
 		story = "XIANGTINGLIAOFA12",
@@ -7965,9 +8295,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[863] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "NY HQ - Part 2",
 		condition = "Clear AS2 or CS2.",
 		story = "XIANGTINGLIAOFA13",
@@ -7976,9 +8306,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[864] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Test",
 		condition = "Begin A3 or C3.",
 		story = "XIANGTINGLIAOFA14",
@@ -7987,9 +8317,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[865] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "Stage",
 		condition = "Clear A3 or C3.",
 		story = "XIANGTINGLIAOFA15",
@@ -7998,9 +8328,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[866] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "Assembly",
 		condition = "Begin Pt. 2 of \"Ashen Simulacrum.\"",
 		story = "XIANGTINGLIAOFA16",
@@ -8009,9 +8339,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[867] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "Front Lines",
 		condition = "Begin B1 or D1.",
 		story = "XIANGTINGLIAOFA17",
@@ -8020,9 +8350,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[868] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "Puppet",
 		condition = "Locate the Boss in B1 or D1.",
 		story = "XIANGTINGLIAOFA18",
@@ -8031,9 +8361,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[869] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "Song?",
 		condition = "Clear B1 or D1.",
 		story = "XIANGTINGLIAOFA19",
@@ -8042,9 +8372,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[870] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "The Third Fleet - Part 1",
 		condition = "Begin BS1.",
 		story = "XIANGTINGLIAOFA20",
@@ -8053,9 +8383,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[871] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "The Third Fleet - Part 2",
 		condition = "Clear BS1.",
 		story = "XIANGTINGLIAOFA21",
@@ -8064,9 +8394,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[872] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "Clandestine Mission",
 		condition = "Begin B2 or D2.",
 		story = "XIANGTINGLIAOFA22",
@@ -8075,9 +8405,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[873] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "The Enemy",
 		condition = "Encounter the Boss of B2 or D2.",
 		story = "XIANGTINGLIAOFA23",
@@ -8086,9 +8416,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[874] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "Déjà Vu",
 		condition = "Clear B2 or D2.",
 		story = "XIANGTINGLIAOFA24",
@@ -8097,9 +8427,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[875] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "The Fourth Fleet - Part 1",
 		condition = "Begin BS2 or DS2.",
 		story = "XIANGTINGLIAOFA25",
@@ -8108,9 +8438,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[876] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "The Fourth Fleet - Part 2",
 		condition = "Clear BS2 or DS2..",
 		story = "XIANGTINGLIAOFA26",
@@ -8119,9 +8449,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[877] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "The Eye of the Storm",
 		condition = "Begin B3 or D3.",
 		story = "XIANGTINGLIAOFA27",
@@ -8130,9 +8460,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[878] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "The Mysterious One",
 		condition = "Locate the Boss in B3 or D3.",
 		story = "XIANGTINGLIAOFA28",
@@ -8141,9 +8471,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[879] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "Ember",
 		condition = "Encounter the Boss of B3 or D3.",
 		story = "XIANGTINGLIAOFA29",
@@ -8152,9 +8482,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[880] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "Triumph?",
 		condition = "Clear B3 or D3.",
 		story = "XIANGTINGLIAOFA30",
@@ -8163,9 +8493,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[881] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "The Journey Home",
 		condition = "???",
 		story = "XIANGTINGLIAOFA31",
@@ -8174,9 +8504,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[882] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "Sandbox",
 		condition = "???",
 		story = "XIANGTINGLIAOFA32",
@@ -8185,9 +8515,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[883] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "\"Moby Dick\"",
 		condition = "???",
 		story = "XIANGTINGLIAOFA33",
@@ -8196,9 +8526,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[884] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Marine Idol!",
 		condition = "Begin \"Superstar of the Blue Seas.\"",
 		story = "SALATUOJIAHAIBAO1",
@@ -8207,9 +8537,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[885] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Charity Race?",
 		condition = "Collect 1,000 event points.",
 		story = "SALATUOJIAHAIBAO2",
@@ -8218,9 +8548,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[886] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Protectors of the Seal",
 		condition = "Collect 2,000 event points.",
 		story = "SALATUOJIAHAIBAO3",
@@ -8229,9 +8559,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[887] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Seal Located!",
 		condition = "Collect 3,000 event points.",
 		story = "SALATUOJIAHAIBAO4",
@@ -8240,9 +8570,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[888] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Mythical Seal",
 		condition = "Collect 4,000 event points.",
 		story = "SALATUOJIAHAIBAO5",
@@ -8251,9 +8581,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[889] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prepare for the Festival! ",
 		condition = "Begin Summer Festival",
 		story = "TIANHOUYUYI1",
@@ -8262,9 +8592,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[890] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Enjoy for the Festival! ",
 		condition = "Obtain Juno's festival skin. ",
 		story = "TIANHOUYUYI2",
@@ -8273,9 +8603,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[900] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Good Morning",
 		condition = "Begin \"Storia di Rosa\" Chapter 1.",
 		story = "ZHALA1",
@@ -8284,9 +8614,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[901] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Caring Big Sister?",
 		condition = "Begin \"Storia di Rosa\" Chapter 2.",
 		story = "ZHALA2",
@@ -8295,9 +8625,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[902] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Caring for the Commander",
 		condition = "Begin \"Storia di Rosa\" Chapter 3.",
 		story = "ZHALA3",
@@ -8306,9 +8636,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[903] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Afternoon Chat",
 		condition = "Begin \"Storia di Rosa\" Chapter 4.",
 		story = "ZHALA4",
@@ -8317,9 +8647,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[904] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Devil's Whispers",
 		condition = "Begin \"Storia di Rosa\" Chapter 5.",
 		story = "ZHALA5",
@@ -8328,9 +8658,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[905] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Commander's Ordeal",
 		condition = "Begin \"Storia di Rosa\" Chapter 6.",
 		story = "ZHALA6",
@@ -8339,9 +8669,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[906] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Starry Night",
 		condition = "Begin \"Storia di Rosa\" Chapter 7.",
 		story = "ZHALA7",
@@ -8350,9 +8680,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[907] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "Vestibule of Hell",
 		condition = "Begin Pt. 1 of \"Empyreal Tragicomedy.\" ",
 		story = "SHENSHENGDEBEIXIJU1",
@@ -8361,9 +8691,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[908] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "The Menace",
 		condition = "Begin A1 or C1.",
 		story = "SHENSHENGDEBEIXIJU2",
@@ -8372,9 +8702,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[909] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "Brief Respite",
 		condition = "Clear A1 or C1.",
 		story = "SHENSHENGDEBEIXIJU3",
@@ -8383,9 +8713,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[910] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "Misgivings",
 		condition = "Begin AS1 or CS1.",
 		story = "SHENSHENGDEBEIXIJU4",
@@ -8394,9 +8724,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[911] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "Negotiations",
 		condition = "Clear AS1 or CS1.",
 		story = "SHENSHENGDEBEIXIJU5",
@@ -8405,9 +8735,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[912] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "The Battle",
 		condition = "Begin A2 or C2.",
 		story = "SHENSHENGDEBEIXIJU6",
@@ -8416,9 +8746,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[913] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "Divine Cannons",
 		condition = "Encounter the Boss of A2 or C2.",
 		story = "SHENSHENGDEBEIXIJU7",
@@ -8427,9 +8757,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[914] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "The Second Operation",
 		condition = "Begin AS2 or CS2.",
 		story = "SHENSHENGDEBEIXIJU8",
@@ -8438,9 +8768,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[915] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "Battle Preparations",
 		condition = "Clear AS2 or CS2.",
 		story = "SHENSHENGDEBEIXIJU9",
@@ -8449,9 +8779,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[916] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "Lacrimosa of the Sea",
 		condition = "Begin A3 or C3.",
 		story = "SHENSHENGDEBEIXIJU10",
@@ -8460,9 +8790,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[917] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "The Light of Night",
 		condition = "Encounter the Boss of A3 or C3.",
 		story = "SHENSHENGDEBEIXIJU11",
@@ -8471,9 +8801,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[918] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "Out of Time",
 		condition = "Clear A3 or C3.",
 		story = "SHENSHENGDEBEIXIJU12",
@@ -8482,9 +8812,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[919] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "The Invitation",
 		condition = "Begin Pt. 2 of \"Empyreal Tragicomedy.\" ",
 		story = "SHENSHENGDEBEIXIJU13",
@@ -8493,9 +8823,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[920] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "The Choice",
 		condition = "Begin B1 or D1.",
 		story = "SHENSHENGDEBEIXIJU14",
@@ -8504,9 +8834,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[921] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "Imperial Welcome",
 		condition = "Encounter the Boss of B1 or D1.",
 		story = "SHENSHENGDEBEIXIJU15",
@@ -8515,9 +8845,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[922] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "The Destination",
 		condition = "Defeat the Boss of B1 or D1.",
 		story = "SHENSHENGDEBEIXIJU16",
@@ -8526,9 +8856,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[923] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "The Descent",
 		condition = "Begin B2 or D2.",
 		story = "SHENSHENGDEBEIXIJU17",
@@ -8537,9 +8867,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[924] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "Passione",
 		condition = "Defeat the Boss of B2 or D2.",
 		story = "SHENSHENGDEBEIXIJU18",
@@ -8548,9 +8878,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[925] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "Lamentation's End",
 		condition = "Begin B3 or D3.",
 		story = "SHENSHENGDEBEIXIJU19",
@@ -8559,9 +8889,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[926] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "Jewel of Calabria",
 		condition = "Encounter the Boss of B3 or D3.",
 		story = "SHENSHENGDEBEIXIJU20",
@@ -8570,9 +8900,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[927] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "Secret Tea Party",
 		condition = "Defeat the Boss of B3 or D3.",
 		story = "SHENSHENGDEBEIXIJU21",
@@ -8581,9 +8911,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[928] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "Journey's End",
 		condition = "Clear B3 or D3.",
 		story = "SHENSHENGDEBEIXIJU22",
@@ -8592,9 +8922,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[929] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "Denouement",
 		condition = "???",
 		story = "SHENSHENGDEBEIXIJU23",
@@ -8603,9 +8933,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[930] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Ready, Ladies!",
 		condition = "Start \"Woozy Party\" Day 1.",
 		story = "DACHAOLIFU1",
@@ -8614,9 +8944,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[931] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prost!",
 		condition = "Start \"Woozy Party\" Day 3.",
 		story = "DACHAOLIFU2",
@@ -8625,9 +8955,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[932] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Other Ways to Have Fun",
 		condition = "Start \"Woozy Party\" Day 5.",
 		story = "DACHAOLIFU3",
@@ -8636,9 +8966,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[933] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Classic Conclusion",
 		condition = "Start \"Woozy Party\" Day 7.",
 		story = "DACHAOLIFU4",
@@ -8647,9 +8977,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[934] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Suruga, Sally Forth!",
 		condition = "Begin the \"Crosswave\" event.",
 		story = "JUNHEBOSS1",
@@ -8658,9 +8988,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[935] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Lucky Ship's Initiative",
 		condition = "Reach the 25% Milestone in the \"Crosswave\" event.",
 		story = "JUNHEBOSS2",
@@ -8669,9 +8999,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[936] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Leader's Prowess",
 		condition = "Reach the 50% Milestone in the \"Crosswave\" event.",
 		story = "JUNHEBOSS3",
@@ -8680,9 +9010,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[937] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Crossing New Waves",
 		condition = "Reach the 75% Milestone in the \"Crosswave\" event.",
 		story = "JUNHEBOSS4",
@@ -8691,9 +9021,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[938] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Suruga's Saga",
 		condition = "Reach the 100% Milestone in the \"Crosswave\" event.",
 		story = "JUNHEBOSS5",
@@ -8702,9 +9032,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[940] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Shark, Embark",
 		condition = "Begin the \"The Enigma and the Shark\" event.",
 		story = "ZUIZHENGUIDEBAOWU1",
@@ -8713,9 +9043,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[941] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Enigma",
 		condition = "Clear SP1 of \"The Enigma and the Shark.\"",
 		story = "ZUIZHENGUIDEBAOWU2",
@@ -8724,9 +9054,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[942] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Respected Job",
 		condition = "Begin SP2 of \"The Enigma and the Shark.\"",
 		story = "ZUIZHENGUIDEBAOWU3",
@@ -8735,9 +9065,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[943] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Predator's Jaws?",
 		condition = "Encounter the Boss of SP2 in \"The Enigma and the Shark.\"",
 		story = "ZUIZHENGUIDEBAOWU4",
@@ -8746,9 +9076,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[944] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Words Beat Swords?",
 		condition = "Defeat the Boss of SP2 in \"The Enigma and the Shark.\"",
 		story = "ZUIZHENGUIDEBAOWU5",
@@ -8757,9 +9087,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[945] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "U-110, Prized",
 		condition = "Begin SP3 of \"The Enigma and the Shark.\"",
 		story = "ZUIZHENGUIDEBAOWU6",
@@ -8768,9 +9098,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[946] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Counteroffensive?",
 		condition = "Encounter the Boss of SP3 in \"The Enigma and the Shark.\"",
 		story = "ZUIZHENGUIDEBAOWU7",
@@ -8779,9 +9109,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[947] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Surprising Spoils",
 		condition = "Defeat the Boss of SP3 in \"The Enigma and the Shark.\"",
 		story = "ZUIZHENGUIDEBAOWU8",
@@ -8790,9 +9120,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[948] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Lost Treasure",
 		condition = "Clear SP3 of \"The Enigma and the Shark.\"",
 		story = "ZUIZHENGUIDEBAOWU9",
@@ -8801,9 +9131,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[949] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Enigma's New Owner",
 		condition = "???",
 		story = "ZUIZHENGUIDEBAOWU10",
@@ -8812,9 +9142,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[950] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Everything According to Plan",
 		condition = "Unlock Halloween Chaos! Day 1",
 		story = "MENGFEISIWANSHENG1",
@@ -8823,9 +9153,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[951] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Smalley's Delivery Service",
 		condition = "Unlock Halloween Chaos! Day 2",
 		story = "MENGFEISIWANSHENG2",
@@ -8834,9 +9164,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[952] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Same Old Prank",
 		condition = "Unlock Halloween Chaos! Day 4",
 		story = "MENGFEISIWANSHENG3",
@@ -8845,9 +9175,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[953] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Suiting Up",
 		condition = "Unlock Halloween Chaos! Day 6",
 		story = "MENGFEISIWANSHENG4",
@@ -8856,9 +9186,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[954] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Party Chaos",
 		condition = "Unlock Halloween Chaos! Day 7",
 		story = "MENGFEISIWANSHENG5",
@@ -8866,10 +9196,307 @@ pg.memory_template = {
 		icon = "memory_mengfeisiwansheng",
 		is_open = 0
 	},
-	[995] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
+	[960] = {
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Lights",
+		condition = "Login during the event.",
+		story = "OUXIANGHUODONG1",
+		id = 960,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[961] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "The Test Begins!",
+		condition = "Begin Passionate Polaris SP1.",
+		story = "OUXIANGHUODONG2",
+		id = 961,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[962] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Debut of the Dragon Sisters!",
+		condition = "Continue Passionate Polaris SP1.",
+		story = "OUXIANGHUODONG3",
+		id = 962,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[963] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "120% Motivation!",
+		condition = "Encounter the Boss of Passionate Polaris SP1.",
+		story = "OUXIANGHUODONG4",
+		id = 963,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[964] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Polaris I",
+		condition = "Defeat the Boss of Passionate Polaris SP1.",
+		story = "OUXIANGHUODONG5",
+		id = 964,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[965] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "The Magical Girl Idol Arrives!",
+		condition = "Begin Passionate Polaris SP2.",
+		story = "OUXIANGHUODONG6",
+		id = 965,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[966] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Polaris II",
+		condition = "Get the Boss Node of Passionate Polaris SP2 to appear.",
+		story = "OUXIANGHUODONG7",
+		id = 966,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[967] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "The Slightly Confused Rival?",
+		condition = "Encounter the Boss of Passionate Polaris SP2.",
+		story = "OUXIANGHUODONG8",
+		id = 967,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[968] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Polaris III",
+		condition = "Defeat the Boss of Passionate Polaris SP2.",
+		story = "OUXIANGHUODONG9",
+		id = 968,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[969] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "The Girl Who Awakened Her Emotions",
+		condition = "Begin Passionate Polaris SP3.",
+		story = "OUXIANGHUODONG10",
+		id = 969,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[970] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Polaris IV",
+		condition = "Get the Boss Node of Passionate Polaris SP3 to appear.",
+		story = "OUXIANGHUODONG11",
+		id = 970,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[971] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "World's♡Cutest",
+		condition = "Encounter the Boss of Passionate Polaris SP3.",
+		story = "OUXIANGHUODONG12",
+		id = 971,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[972] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "The Girl's Smile",
+		condition = "Defeat the Boss of Passionate Polaris SP3.",
+		story = "OUXIANGHUODONG13",
+		id = 972,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[973] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Emotion Module",
+		condition = "Clear Passionate Polaris SP3.",
+		story = "OUXIANGHUODONG14",
+		id = 973,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[974] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "The Final Stretch?!",
+		condition = "Begin Passionate Polaris SP4.",
+		story = "OUXIANGHUODONG15",
+		id = 974,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[975] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Polaris V",
+		condition = "Get the Boss Node of Passionate Polaris SP4 to appear.",
+		story = "OUXIANGHUODONG16",
+		id = 975,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[976] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Lightning and Ice!",
+		condition = "Encounter the Boss of Passionate Polaris SP4.",
+		story = "OUXIANGHUODONG17",
+		id = 976,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[977] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "MAXIMUM OUTPUT",
+		condition = "Defeat the Boss of Passionate Polaris SP4.",
+		story = "OUXIANGHUODONG18",
+		id = 977,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[978] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "The Final Battle",
+		condition = "Begin Passionate Polaris SP5.",
+		story = "OUXIANGHUODONG19",
+		id = 978,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[979] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Muse System",
+		condition = "Get the Boss Node of Passionate Polaris SP5 to appear.",
+		story = "OUXIANGHUODONG20",
+		id = 979,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[980] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Make or Break",
+		condition = "Encounter the Boss of Passionate Polaris SP5.",
+		story = "OUXIANGHUODONG21",
+		id = 980,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[981] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Passionate Encore",
+		condition = "Defeat the Boss of Passionate Polaris SP5.",
+		story = "OUXIANGHUODONG22",
+		id = 981,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[982] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "fin",
+		condition = "Clear Passionate Polaris SP5.",
+		story = "OUXIANGHUODONG23",
+		id = 982,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[983] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_ouxianglevel",
+		title = "Observation",
+		condition = "???",
+		story = "OUXIANGHUODONG24",
+		id = 983,
+		icon = "memory_ouxianghuodong",
+		is_open = 0
+	},
+	[990] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "One day, at rehearsal...",
+		condition = "Complete the 1st phase of Passion Fes.",
+		story = "OUXIANGRICHANG1",
+		id = 990,
+		icon = "memory_ouxiangrichang",
+		is_open = 0
+	},
+	[991] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "One day, during a break...",
+		condition = "Complete the 4th phase of Passion Fes.",
+		story = "OUXIANGRICHANG2",
+		id = 991,
+		icon = "memory_ouxiangrichang",
+		is_open = 0
+	},
+	[992] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "One day, at a dress rehearsal...",
+		condition = "Complete the 7th phase of Passion Fes.",
+		story = "OUXIANGRICHANG3",
+		id = 992,
+		icon = "memory_ouxiangrichang",
+		is_open = 0
+	},
+	[995] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "An Interdimensional Encounter",
 		condition = "Login during the event.",
 		story = "HOLOGUANQIA1",
@@ -8878,9 +9505,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[996] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "The Tale Begins",
 		condition = "Begin \"Looking Glass of Fact and Fiction.\"",
 		story = "HOLOGUANQIA2",
@@ -8889,9 +9516,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[997] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "The Dense Fog",
 		condition = "Begin TS1.",
 		story = "HOLOGUANQIA3",
@@ -8900,9 +9527,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[998] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "The Call for Help",
 		condition = "Get the Boss Node of TS1 to appear.",
 		story = "HOLOGUANQIA4",
@@ -8911,9 +9538,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[999] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Fubuki and Kawakaze",
 		condition = "Encounter the Boss of TS1.",
 		story = "HOLOGUANQIA5",
@@ -8922,9 +9549,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1000] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Visitors from Another World",
 		condition = "Defeat the Boss of TS1.",
 		story = "HOLOGUANQIA6",
@@ -8933,9 +9560,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1001] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "The Guide",
 		condition = "Begin T1.",
 		story = "HOLOGUANQIA7",
@@ -8944,9 +9571,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1002] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Vestiges of Battle",
 		condition = "Get the Boss Node of T1 to appear.",
 		story = "HOLOGUANQIA8",
@@ -8955,9 +9582,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1003] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Natsuiro Matsuri, the Flirt",
 		condition = "Encounter the Boss of T1.",
 		story = "HOLOGUANQIA9",
@@ -8966,9 +9593,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1004] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Vestiges of Battle",
 		condition = "Defeat the Boss of T1.",
 		story = "HOLOGUANQIA10",
@@ -8977,9 +9604,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1005] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "The Resistance Base",
 		condition = "Clear T1.",
 		story = "HOLOGUANQIA11",
@@ -8988,9 +9615,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1006] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Purity?!",
 		condition = "Begin TS2.",
 		story = "HOLOGUANQIA12",
@@ -8999,9 +9626,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1007] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Matsuri, The Ordinary Girl",
 		condition = "Get the Boss Node of TS2 to appear.",
 		story = "HOLOGUANQIA13",
@@ -9010,9 +9637,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1008] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "TNT?!",
 		condition = "Encounter the Boss of TS2.",
 		story = "HOLOGUANQIA14",
@@ -9021,9 +9648,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1009] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Request for Support",
 		condition = "Clear TS2.",
 		story = "HOLOGUANQIA15",
@@ -9032,9 +9659,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1010] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Nakiri Castle",
 		condition = "Begin T2.",
 		story = "HOLOGUANQIA16",
@@ -9043,9 +9670,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1011] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Reinforcements",
 		condition = "Encounter the Boss of T2.",
 		story = "HOLOGUANQIA17",
@@ -9054,9 +9681,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1012] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Grouping Up",
 		condition = "Defeat the Boss of T2.",
 		story = "HOLOGUANQIA18",
@@ -9065,9 +9692,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1013] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "The Plot Thickens",
 		condition = "Begin TS3.",
 		story = "HOLOGUANQIA19",
@@ -9076,9 +9703,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1014] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Two Aquas?",
 		condition = "Get the Boss Node of TS3 to appear.",
 		story = "HOLOGUANQIA20",
@@ -9087,9 +9714,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1015] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Yamada Hermione",
 		condition = "Encounter the Boss of TS3.",
 		story = "HOLOGUANQIA21",
@@ -9098,9 +9725,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1016] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "First Victory",
 		condition = "Defeat the Boss of TS3.",
 		story = "HOLOGUANQIA22",
@@ -9109,9 +9736,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1017] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "At Nighttime",
 		condition = "Begin T3.",
 		story = "HOLOGUANQIA23",
@@ -9120,9 +9747,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1018] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Forming the Team",
 		condition = "Continue T3.",
 		story = "HOLOGUANQIA24",
@@ -9131,9 +9758,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1019] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "The Chaotic Labyrinth",
 		condition = "Finish battling on T3.",
 		story = "HOLOGUANQIA25",
@@ -9142,9 +9769,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1020] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Matryoshka",
 		condition = "Get the Boss Node of T3 to appear.",
 		story = "HOLOGUANQIA26",
@@ -9153,9 +9780,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1021] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Game Characters",
 		condition = "Encounter the Boss of T3.",
 		story = "HOLOGUANQIA27",
@@ -9164,9 +9791,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1022] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "Conquerors of the Labyrinth",
 		condition = "Clear T3.",
 		story = "HOLOGUANQIA28",
@@ -9175,9 +9802,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1023] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Matsuri's Plan",
 		condition = "Begin Pt. 2 of\"Looking Glass of Fact and Fiction.\"",
 		story = "HOLOGUANQIA29",
@@ -9186,9 +9813,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1024] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Dark Hololive",
 		condition = "Begin T4.",
 		story = "HOLOGUANQIA30",
@@ -9197,9 +9824,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1025] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Test of a Soul's Worth",
 		condition = "Encounter the Boss of T4.",
 		story = "HOLOGUANQIA31",
@@ -9208,9 +9835,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1026] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Unusual Friendship",
 		condition = "Clear T4.",
 		story = "HOLOGUANQIA32",
@@ -9219,9 +9846,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1027] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Haunted Mansion",
 		condition = "Begin TS4.",
 		story = "HOLOGUANQIA33",
@@ -9230,9 +9857,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1028] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Lava Zone?!",
 		condition = "Continue TS4.",
 		story = "HOLOGUANQIA34",
@@ -9241,9 +9868,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1029] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Enemy Sora",
 		condition = "Encounter the Boss of TS4.",
 		story = "HOLOGUANQIA35",
@@ -9252,9 +9879,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1030] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Combat Guidance?",
 		condition = "Defeat the Boss of TS4.",
 		story = "HOLOGUANQIA36",
@@ -9263,9 +9890,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1031] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Roller Coaster",
 		condition = "Begin T5.",
 		story = "HOLOGUANQIA37",
@@ -9274,9 +9901,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1032] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "The Broken Entrance",
 		condition = "Get the Boss Node of T5 to appear.",
 		story = "HOLOGUANQIA38",
@@ -9285,9 +9912,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1033] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "A Normal Shion?",
 		condition = "Encounter the Boss of T5.",
 		story = "HOLOGUANQIA39",
@@ -9296,9 +9923,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1034] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "0 MP",
 		condition = "Defeat the Boss of T5.",
 		story = "HOLOGUANQIA40",
@@ -9307,9 +9934,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1035] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "The MioShio Coaster",
 		condition = "Begin TS5.",
 		story = "HOLOGUANQIA41",
@@ -9318,9 +9945,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1036] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Disaster",
 		condition = "Continue TS5.",
 		story = "HOLOGUANQIA42",
@@ -9329,9 +9956,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1037] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "It's Time to Duel!",
 		condition = "Encounter the Boss of TS5.",
 		story = "HOLOGUANQIA43",
@@ -9340,9 +9967,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1038] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Shadow Duel",
 		condition = "Defeat the Boss of TS5.",
 		story = "HOLOGUANQIA44",
@@ -9351,9 +9978,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1039] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "New Holo Island",
 		condition = "Begin T6.",
 		story = "HOLOGUANQIA45",
@@ -9362,9 +9989,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1040] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "The Bonds that Connect",
 		condition = "Get the Boss Node of T6 to appear.",
 		story = "HOLOGUANQIA46",
@@ -9373,9 +10000,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1041] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Shadow Eye Blizzard Fox",
 		condition = "Encounter the Boss of T6.",
 		story = "HOLOGUANQIA47",
@@ -9384,9 +10011,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1042] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "End of Battle",
 		condition = "Defeat the Boss of T6.",
 		story = "HOLOGUANQIA48",
@@ -9395,9 +10022,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1043] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Blowing Up the Headquarters",
 		condition = "？？？",
 		story = "HOLOGUANQIA49",
@@ -9406,9 +10033,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1044] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "Treating Oneself with Care",
 		condition = "？？？",
 		story = "HOLOGUANQIA50",
@@ -9417,9 +10044,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1045] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "The Road Home",
 		condition = "？？？",
 		story = "HOLOGUANQIA51",
@@ -9428,9 +10055,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1046] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Same Face",
 		condition = "Unlock day 2 of Good Morning Azur Lane.",
 		story = "HOLORICHANG1",
@@ -9439,9 +10066,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1047] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Same Energy",
 		condition = "Unlock day 4 of Good Morning Azur Lane.",
 		story = "HOLORICHANG2",
@@ -9450,9 +10077,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1048] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Similar Traits",
 		condition = "Unlock day 6 of Good Morning Azur Lane.",
 		story = "HOLORICHANG3",
@@ -9461,9 +10088,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1049] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Peaceful World",
 		condition = "Clear S2 of Rally the Resistance.",
 		story = "HOLORICHANG4",
@@ -9472,9 +10099,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1050] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Attitudes",
 		condition = "Clear S4 of Rally the Resistance.",
 		story = "HOLORICHANG5",
@@ -9483,9 +10110,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1051] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Gaming",
 		condition = "Clear S6 of Rally the Resistance.",
 		story = "HOLORICHANG6",
@@ -9494,9 +10121,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1052] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Kagura Dance",
 		condition = "Unlock day 3 of Mio's Divination Hall.",
 		story = "HOLORICHANG7",
@@ -9505,9 +10132,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1053] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sakura War Dance",
 		condition = "Unlock day 5 of Mio's Divination Hall.",
 		story = "HOLORICHANG8",
@@ -9516,9 +10143,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1054] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Great Castle",
 		condition = "Unlock day 7 of Mio's Divination Hall.",
 		story = "HOLORICHANG9",
@@ -9527,9 +10154,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1055] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A New Beginning",
 		condition = "Obtain the commemorative event medal.",
 		story = "HOLORICHANG10",
@@ -9538,9 +10165,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1056] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "How to Craft a Cookie ",
 		condition = "Unlock Christmas Party! Day 1",
 		story = "RUOYESHENGDAN1",
@@ -9549,9 +10176,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1057] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Queen's Profile ",
 		condition = "Unlock Christmas Party! Day 2",
 		story = "RUOYESHENGDAN2",
@@ -9560,9 +10187,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1058] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Hearth's Warmth ",
 		condition = "Unlock Christmas Party! Day 4",
 		story = "RUOYESHENGDAN3",
@@ -9571,9 +10198,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1059] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Speaking of Sweets ",
 		condition = "Unlock Christmas Party! Day 6",
 		story = "RUOYESHENGDAN4",
@@ -9582,9 +10209,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1060] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Christmas Party ",
 		condition = "Unlock Christmas Party! Day 7",
 		story = "RUOYESHENGDAN5",
@@ -9593,9 +10220,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1061] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "The Sound of Sapphires",
 		condition = "Begin \"Swirling Cherry Blossoms\" Part 1.",
 		story = "FUYINGYINGHUA1",
@@ -9604,9 +10231,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1062] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "Undercurrent",
 		condition = "Begin A1 or C1.",
 		story = "FUYINGYINGHUA2",
@@ -9615,9 +10242,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1063] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "The First Host",
 		condition = "Defeat the Boss of A1 or C1.",
 		story = "FUYINGYINGHUA3",
@@ -9626,9 +10253,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1064] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "Advancing Waves",
 		condition = "Clear A1 or C1.",
 		story = "FUYINGYINGHUA4",
@@ -9637,9 +10264,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1065] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "Another Battlefield",
 		condition = "Begin A2 or C2.",
 		story = "FUYINGYINGHUA5",
@@ -9648,9 +10275,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1066] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "The Second Host",
 		condition = "Defeat the Boss of A2 or C2.",
 		story = "FUYINGYINGHUA6",
@@ -9659,9 +10286,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1067] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "Suruga's Tactics",
 		condition = "Clear A2 or C2.",
 		story = "FUYINGYINGHUA7",
@@ -9670,9 +10297,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1068] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "Joint Operation",
 		condition = "Clear A2 or C2.",
 		story = "FUYINGYINGHUA8",
@@ -9681,9 +10308,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1069] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "Plan B",
 		condition = "Begin A3 or C3.",
 		story = "FUYINGYINGHUA9",
@@ -9692,9 +10319,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1070] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "The Third Host",
 		condition = "Defeat the Boss of A3 or C3.",
 		story = "FUYINGYINGHUA10",
@@ -9703,9 +10330,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1071] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "Inciters",
 		condition = "Clear A3 or C3.",
 		story = "FUYINGYINGHUA11",
@@ -9714,9 +10341,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1072] = {
-		mask = "bg/bg_xinnong_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
 		title = "Trickery",
 		condition = "Clear A3 or C3.",
 		story = "FUYINGYINGHUA12",
@@ -9725,9 +10352,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1073] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Dark Clouds",
 		condition = "Begin \"Swirling Cherry Blossoms\" Part 2.",
 		story = "FUYINGYINGHUA13",
@@ -9736,9 +10363,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1074] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Banquet",
 		condition = "Begin B1 or D1.",
 		story = "FUYINGYINGHUA14",
@@ -9747,9 +10374,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1075] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Enemy Attack",
 		condition = "Begin B1 or D1.",
 		story = "FUYINGYINGHUA15",
@@ -9758,9 +10385,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1076] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "The Siren Menace",
 		condition = "Make the Boss of B1 or D1 appear.",
 		story = "FUYINGYINGHUA16",
@@ -9769,9 +10396,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1077] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Pawns",
 		condition = "Defeat the Boss of B1 or D1.",
 		story = "FUYINGYINGHUA17",
@@ -9780,9 +10407,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1078] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Mirror Sea",
 		condition = "Clear B1 or D1",
 		story = "FUYINGYINGHUA18",
@@ -9791,9 +10418,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1079] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "The Great Fox",
 		condition = "Begin B2 or D2.",
 		story = "FUYINGYINGHUA19",
@@ -9802,9 +10429,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1080] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Reunion",
 		condition = "Defeat the Boss of B2 or D2.",
 		story = "FUYINGYINGHUA20",
@@ -9813,9 +10440,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1081] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Encroaching Suspicions",
 		condition = "Clear B2 or D2",
 		story = "FUYINGYINGHUA21",
@@ -9824,9 +10451,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1082] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Watatsumi",
 		condition = "Begin B3 or D3",
 		story = "FUYINGYINGHUA22",
@@ -9835,9 +10462,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1083] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Ember's Assault",
 		condition = "Make the Boss of B3 or D3 appear.",
 		story = "FUYINGYINGHUA23",
@@ -9846,9 +10473,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1084] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Showdown",
 		condition = "Defeat the Boss of B3 or D3.",
 		story = "FUYINGYINGHUA24",
@@ -9857,9 +10484,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1085] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Cut Time",
 		condition = "Clear B3 or D3.",
 		story = "FUYINGYINGHUA25",
@@ -9868,9 +10495,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1086] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Flash of Shadow",
 		condition = "Clear B3 or D3.",
 		story = "FUYINGYINGHUA26",
@@ -9879,9 +10506,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1087] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Ending",
 		condition = "???",
 		story = "FUYINGYINGHUA27",
@@ -9890,9 +10517,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1088] = {
-		mask = "bg/bg_xinnong_cg2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
 		title = "Ceremony's Dusk",
 		condition = "???",
 		story = "FUYINGYINGHUA28",
@@ -9901,9 +10528,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1091] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Greetings and Meetings?",
 		condition = "Complete \"Blessings and Tidings\" Day 2.",
 		story = "FUYINGYINGHUARICHANG1",
@@ -9912,9 +10539,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1092] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sleepy Shougatsu",
 		condition = "Complete \"Blessings and Tidings\" Day 4.",
 		story = "FUYINGYINGHUARICHANG2",
@@ -9923,9 +10550,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1093] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "New Year's Challenge",
 		condition = "Complete \"Blessings and Tidings\" Day 5.",
 		story = "FUYINGYINGHUARICHANG3",
@@ -9934,9 +10561,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1094] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "New Year's Training?",
 		condition = "Complete \"Blessings and Tidings\" Day 6.",
 		story = "FUYINGYINGHUARICHANG4",
@@ -9945,9 +10572,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1095] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Happy New Year!",
 		condition = "Complete \"Blessings and Tidings\" Day 7.",
 		story = "FUYINGYINGHUARICHANG5",
@@ -9956,9 +10583,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1096] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Begin the Operation!",
 		condition = "Begin \"Fight On, Royal Maids!\"",
 		story = "DAIDUOBOSS1",
@@ -9967,9 +10594,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1097] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Secret Stratagem",
 		condition = "Reach 25% Progress in \"Fight On, Royal Maids!\"",
 		story = "DAIDUOBOSS2",
@@ -9978,9 +10605,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1098] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sororal Defensive Line",
 		condition = "Reach 50% Progress in \"Fight On, Royal Maids!\"",
 		story = "DAIDUOBOSS3",
@@ -9989,9 +10616,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1099] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Instructor's Tactics",
 		condition = "Reach 75% Progress in \"Fight On, Royal Maids!\"",
 		story = "DAIDUOBOSS4",
@@ -10000,9 +10627,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1100] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Her Reward",
 		condition = "Reach 100% Progress in \"Fight On, Royal Maids!\"",
 		story = "DAIDUOBOSS5",
@@ -10011,9 +10638,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1101] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Mother of All Firecrackers",
 		condition = "Open 1 Red Envelope in the Manjuu Resort.",
 		story = "HONGBAORICHANG1",
@@ -10022,9 +10649,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1102] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Redecorating the Office",
 		condition = "Open 5 Red Envelopes in the Manjuu Resort.",
 		story = "HONGBAORICHANG2",
@@ -10033,9 +10660,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1103] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Full Swing",
 		condition = "Open 10 Red Envelopes in the Manjuu Resort.",
 		story = "HONGBAORICHANG3",
@@ -10044,9 +10671,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1104] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Spring Festival Banquet",
 		condition = "Open 15 Red Envelopes in the Manjuu Resort.",
 		story = "HONGBAORICHANG4",
@@ -10054,10 +10681,5752 @@ pg.memory_template = {
 		icon = "memory_hongbaorichang",
 		is_open = 0
 	},
-	[10011] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
+	[1110] = {
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Overture",
+		condition = "Begin \"Northern Overture.\"",
+		story = "MAOZIHUODONG1",
+		id = 1110,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1111] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Joint Operation",
+		condition = "Begin A1 or C1.",
+		story = "MAOZIHUODONG2",
+		id = 1111,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1112] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Gathering",
+		condition = "Start A1 or C1.",
+		story = "MAOZIHUODONG3",
+		id = 1112,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1113] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Surveillance",
+		condition = "Get the boss of A1 or C1 to appear.",
+		story = "MAOZIHUODONG4",
+		id = 1113,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1114] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Perimeter Sweep",
+		condition = "Clear A1 or C1.",
+		story = "MAOZIHUODONG5",
+		id = 1114,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1115] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Incursion",
+		condition = "Begin A2 or C2.",
+		story = "MAOZIHUODONG6",
+		id = 1115,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1116] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "A New Foe",
+		condition = "Get the boss of A2 or C2 to appear.",
+		story = "MAOZIHUODONG7",
+		id = 1116,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1117] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Breakthrough",
+		condition = "Clear A2 or C2.",
+		story = "MAOZIHUODONG8",
+		id = 1117,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1118] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Ad Infinitum",
+		condition = "Begin A3 or C3.",
+		story = "MAOZIHUODONG9",
+		id = 1118,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1119] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Leadership",
+		condition = "Obtain victory once in A3 or C3.",
+		story = "MAOZIHUODONG10",
+		id = 1119,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1120] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Aegis",
+		condition = "Get the boss of A3 or C3 to appear.",
+		story = "MAOZIHUODONG11",
+		id = 1120,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1121] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Countermeasures",
+		condition = "Defeat the boss of A3 or C3 one time.",
+		story = "MAOZIHUODONG12",
+		id = 1121,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1122] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Isolated by Ice",
+		condition = "Defeat the boss of A3 or C3 two times.",
+		story = "MAOZIHUODONG13",
+		id = 1122,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1123] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "The Arctic Fleet",
+		condition = "Clear A3 or C3.",
+		story = "MAOZIHUODONG14",
+		id = 1123,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1124] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Waves of Cold Steel",
+		condition = "Begin \"Northern Overture,\" Part 2.",
+		story = "MAOZIHUODONG15",
+		id = 1124,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1125] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Storm of the Revolution",
+		condition = "Get the boss of B1 or D1 to appear.",
+		story = "MAOZIHUODONG16",
+		id = 1125,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1126] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Northern Battle",
+		condition = "Clear B1 or D1.",
+		story = "MAOZIHUODONG17",
+		id = 1126,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1127] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Taste of the North",
+		condition = "Begin B2 or D2.",
+		story = "MAOZIHUODONG18",
+		id = 1127,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1128] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Hot and Cold",
+		condition = "Obtain victory once in B2 or D2.",
+		story = "MAOZIHUODONG19",
+		id = 1128,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1129] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Breach",
+		condition = "Get the boss of B2 or D2 to appear.",
+		story = "MAOZIHUODONG20",
+		id = 1129,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1130] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Reunion",
+		condition = "Fight the boss of B2 or D2.",
+		story = "MAOZIHUODONG21",
+		id = 1130,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1131] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Coordinates Confirmed",
+		condition = "Clear B2 or D2.",
+		story = "MAOZIHUODONG22",
+		id = 1131,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1132] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Stronghold Siege",
+		condition = "Begin B3 or D3.",
+		story = "MAOZIHUODONG23",
+		id = 1132,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1133] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Spawn of Evil",
+		condition = "Obtain victory once in B3 or D3.",
+		story = "MAOZIHUODONG24",
+		id = 1133,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1134] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Interception",
+		condition = "Get the boss of B3 or D3 to appear.",
+		story = "MAOZIHUODONG25",
+		id = 1134,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1135] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Omitter",
+		condition = "Fight the boss of B3 or D3.",
+		story = "MAOZIHUODONG26",
+		id = 1135,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1136] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Full Assault",
+		condition = "Defeat the boss of B3 or D3.",
+		story = "MAOZIHUODONG27",
+		id = 1136,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1137] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Collapse",
+		condition = "Clear B3 or D3.",
+		story = "MAOZIHUODONG28",
+		id = 1137,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1138] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "For a Brighter Future",
+		condition = "???",
+		story = "MAOZIHUODONG29",
+		id = 1138,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1139] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Unbreakable Bonds",
+		condition = "???",
+		story = "MAOZIHUODONG30",
+		id = 1139,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1140] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Final Overture",
+		condition = "???",
+		story = "MAOZIHUODONG31",
+		id = 1140,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1141] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "Decryption",
+		condition = "Enter the Decryption minigame for the first time.",
+		story = "MAOZIPT",
+		id = 1141,
+		icon = "memory_maozipt",
+		is_open = 0
+	},
+	[1142] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Dawn of Victory",
+		condition = "Begin \"Avrora and Her Jovial Friends\" Chapter 1.",
+		story = "AFULEER1",
+		id = 1142,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1143] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Nostalgia",
+		condition = "Begin \"Avrora and Her Jovial Friends\" Chapter 2.",
+		story = "AFULEER2",
+		id = 1143,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1144] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Welcoming Party",
+		condition = "Begin \"Avrora and Her Jovial Friends\" Chapter 3.",
+		story = "AFULEER3",
+		id = 1144,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1145] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Old Soldiers",
+		condition = "Begin \"Avrora and Her Jovial Friends\" Chapter 4.",
+		story = "AFULEER4",
+		id = 1145,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1146] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Arresting Wire",
+		condition = "Begin \"Avrora and Her Jovial Friends\" Chapter 5.",
+		story = "AFULEER5",
+		id = 1146,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1147] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "True Power",
+		condition = "Begin \"Avrora and Her Jovial Friends\" Chapter 6.",
+		story = "AFULEER6",
+		id = 1147,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1148] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Light of Dawn",
+		condition = "Begin \"Avrora and Her Jovial Friends\" Chapter 7.",
+		story = "AFULEER7",
+		id = 1148,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1149] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Redeployment",
+		condition = "Complete \"Under the Mist\" Mission 1.",
+		story = "MIWUZHIXIA1",
+		id = 1149,
+		icon = "memory_miwuzhixia",
+		is_open = 0
+	},
+	[1150] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Mist",
+		condition = "Complete \"Under the Mist\" Mission 2.",
+		story = "MIWUZHIXIA2",
+		id = 1150,
+		icon = "memory_miwuzhixia",
+		is_open = 0
+	},
+	[1151] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Misdirection",
+		condition = "Complete \"Under the Mist\" Mission 3.",
+		story = "MIWUZHIXIA3",
+		id = 1151,
+		icon = "memory_miwuzhixia",
+		is_open = 0
+	},
+	[1152] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Lost at Sea",
+		condition = "Complete \"Under the Mist\" Mission 4.",
+		story = "MIWUZHIXIA4",
+		id = 1152,
+		icon = "memory_miwuzhixia",
+		is_open = 0
+	},
+	[1153] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Bridge",
+		condition = "Begin \"Microlayer Medley.\"",
+		story = "WEICENGHUNHE1",
+		id = 1153,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1154] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Rescue Fleet",
+		condition = "Begin A1 or C1.",
+		story = "WEICENGHUNHE2",
+		id = 1154,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1155] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Stronghold",
+		condition = "Continue A1 or C1.",
+		story = "WEICENGHUNHE3",
+		id = 1155,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1156] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Deep in Thought",
+		condition = "Obtain victory once in A1 or C1.",
+		story = "WEICENGHUNHE4",
+		id = 1156,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1157] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Disappearance",
+		condition = "Get the Boss of A1 or C1 to appear.",
+		story = "WEICENGHUNHE5",
+		id = 1157,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1158] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Ambush",
+		condition = "Fight the Boss of A1 or C1.",
+		story = "WEICENGHUNHE6",
+		id = 1158,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1159] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Creeping Mist",
+		condition = "Clear A1 or C1.",
+		story = "WEICENGHUNHE7",
+		id = 1159,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1160] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Fragments I",
+		condition = "Begin A2 or C2.",
+		story = "WEICENGHUNHE8",
+		id = 1160,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1161] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Teamwork",
+		condition = "Get the Boss of A2 or C2 to appear.",
+		story = "WEICENGHUNHE9",
+		id = 1161,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1162] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Mission",
+		condition = "Defeat the Boss of A2 or C2.",
+		story = "WEICENGHUNHE10",
+		id = 1162,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1163] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Duties",
+		condition = "Clear A2 or C2.",
+		story = "WEICENGHUNHE11",
+		id = 1163,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1164] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Fragments II",
+		condition = "Begin A3 or C3.",
+		story = "WEICENGHUNHE12",
+		id = 1164,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1165] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Engagement",
+		condition = "Continue A3 or C3.",
+		story = "WEICENGHUNHE13",
+		id = 1165,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1166] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "The Prize",
+		condition = "Get the Boss of A3 or C3 to appear.",
+		story = "WEICENGHUNHE14",
+		id = 1166,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1167] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Pulled Under",
+		condition = "Fight the boss of A3 or C3.",
+		story = "WEICENGHUNHE15",
+		id = 1167,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1168] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "Bluegill?!",
+		condition = "Clear A3 or C3.",
+		story = "WEICENGHUNHE16",
+		id = 1168,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1169] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Respite",
+		condition = "Begin Pt. 2 of \"Microlayer Medley.\"",
+		story = "WEICENGHUNHE17",
+		id = 1169,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1170] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Fragments III",
+		condition = "Begin B1 or D1.",
+		story = "WEICENGHUNHE18",
+		id = 1170,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1171] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Breakthrough",
+		condition = "Continue B1 or D1.",
+		story = "WEICENGHUNHE19",
+		id = 1171,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1172] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Return",
+		condition = "Get the Boss of B1 or D1 to appear.",
+		story = "WEICENGHUNHE20",
+		id = 1172,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1173] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Sidekick",
+		condition = "Fight the Boss of B1 or D1.",
+		story = "WEICENGHUNHE21",
+		id = 1173,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1174] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Disaster",
+		condition = "Clear B1 or D1.",
+		story = "WEICENGHUNHE22",
+		id = 1174,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1175] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Fragments IV",
+		condition = "Begin B2 or D2.",
+		story = "WEICENGHUNHE23",
+		id = 1175,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1176] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Rendezvous",
+		condition = "Continue B2 or D2.",
+		story = "WEICENGHUNHE24",
+		id = 1176,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1177] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Defense Mechanism",
+		condition = "Get the Boss of B2 or D2 to appear.",
+		story = "WEICENGHUNHE25",
+		id = 1177,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1178] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Hero's Party",
+		condition = "Defeat the Boss of B2 or D2.",
+		story = "WEICENGHUNHE26",
+		id = 1178,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1179] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Sister Ships",
+		condition = "Clear B2 or D2.",
+		story = "WEICENGHUNHE27",
+		id = 1179,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1180] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Fragments V",
+		condition = "Begin B3 or D3.",
+		story = "WEICENGHUNHE28",
+		id = 1180,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1181] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "The Might of the Essex Class",
+		condition = "Get the Boss of B3 or D3 to appear.",
+		story = "WEICENGHUNHE29",
+		id = 1181,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1182] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Compiler",
+		condition = "Fight the Boss of B3 or D3.",
+		story = "WEICENGHUNHE30",
+		id = 1182,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1183] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Transformation",
+		condition = "Defeat the Boss of B3 or D3.",
+		story = "WEICENGHUNHE31",
+		id = 1183,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1184] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "The Mist Clears",
+		condition = "Clear B3 or D3.",
+		story = "WEICENGHUNHE32",
+		id = 1184,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1185] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Third Party",
+		condition = "???",
+		story = "WEICENGHUNHE33",
+		id = 1185,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1186] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Stars in the Firmament",
+		condition = "???",
+		story = "WEICENGHUNHE34",
+		id = 1186,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1187] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "Microlayer Medley",
+		condition = "???",
+		story = "WEICENGHUNHE35",
+		id = 1187,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1188] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Golden Doubulin, Part I",
+		condition = "Log in to the game",
+		story = "HUANGJINDEMIBAO1",
+		id = 1188,
+		icon = "memory_huangjindemibao",
+		is_open = 0
+	},
+	[1189] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Golden Doubulin, Part II",
+		condition = "Fight the boss in \"The Golden Doubulin\"",
+		story = "HUANGJINDEMIBAO2",
+		id = 1189,
+		icon = "memory_huangjindemibao",
+		is_open = 0
+	},
+	[1190] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Golden Doubulin, Part III",
+		condition = "Clear \"The Golden Doubulin\"",
+		story = "HUANGJINDEMIBAO3",
+		id = 1190,
+		icon = "memory_huangjindemibao",
+		is_open = 0
+	},
+	[1204] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Not Feeling So Well?",
+		condition = "Begin \"A Beaming Smile!\" Chapter 1.",
+		story = "JUANBO1",
+		id = 1204,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1205] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Makinami to the Rescue!",
+		condition = "Begin \"A Beaming Smile!\" Chapter 2.",
+		story = "JUANBO2",
+		id = 1205,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1206] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Happy to Help!",
+		condition = "Begin \"A Beaming Smile!\" Chapter 3.",
+		story = "JUANBO3",
+		id = 1206,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1207] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A Smile Goes a Mile!",
+		condition = "Begin \"A Beaming Smile!\" Chapter 4.",
+		story = "JUANBO4",
+		id = 1207,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1208] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Third Time's The Charm!",
+		condition = "Begin \"A Beaming Smile!\" Chapter 5.",
+		story = "JUANBO5",
+		id = 1208,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1209] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Come Play With Me!",
+		condition = "Begin \"A Beaming Smile!\" Chapter 6.",
+		story = "JUANBO6",
+		id = 1209,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1210] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Now, Give Me a Smile!",
+		condition = "Begin \"A Beaming Smile!\" Chapter 7.",
+		story = "JUANBO7",
+		id = 1210,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1211] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Night March",
+		condition = "Start \"The Way Home in the Dark\" SP1.",
+		story = "YESEXIADEGUITU1",
+		id = 1211,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1212] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Breakthrough",
+		condition = "Fight the boss in \"The Way Home in the Dark\" SP1.",
+		story = "YESEXIADEGUITU2",
+		id = 1212,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1213] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Nature of War?",
+		condition = "Clear \"The Way Home in the Dark\" SP1.",
+		story = "YESEXIADEGUITU3",
+		id = 1213,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1214] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Winter on the Méditerranée",
+		condition = "Start \"The Way Home in the Dark\" SP2.",
+		story = "YESEXIADEGUITU4",
+		id = 1214,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1215] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Arethusa",
+		condition = "Fight the boss in \"The Way Home in the Dark\" SP2.",
+		story = "YESEXIADEGUITU5",
+		id = 1215,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1216] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Opposition",
+		condition = "Clear \"The Way Home in the Dark\" SP2.",
+		story = "YESEXIADEGUITU6",
+		id = 1216,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1217] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Snack Time",
+		condition = "Start \"The Way Home in the Dark\" SP3.",
+		story = "YESEXIADEGUITU7",
+		id = 1217,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1218] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Nelson",
+		condition = "Fight the boss in \"The Way Home in the Dark\" SP3.",
+		story = "YESEXIADEGUITU8",
+		id = 1218,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1219] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Darkened Path Home",
+		condition = "Clear \"The Way Home in the Dark\" SP3.",
+		story = "YESEXIADEGUITU9",
+		id = 1219,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1231] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "Phantasmal Labyrinth",
+		condition = "Begin \"Skybound Oratorio.\"",
+		story = "SHENGYONGQU1",
+		id = 1231,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1232] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "A New Dawn",
+		condition = "Begin A1 or C1.",
+		story = "SHENGYONGQU2",
+		id = 1232,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1233] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "Information Exchange",
+		condition = "Continue A1 or C1.",
+		story = "SHENGYONGQU3",
+		id = 1233,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1234] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "Foes and Friends",
+		condition = "Get the Boss of A1 or C1 to appear.",
+		story = "SHENGYONGQU4",
+		id = 1234,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1235] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "Friends and Foes",
+		condition = "Fight the Boss of A1 or C1.",
+		story = "SHENGYONGQU5",
+		id = 1235,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1236] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "Secret Weapon",
+		condition = "Begin A2 or C2.",
+		story = "SHENGYONGQU6",
+		id = 1236,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1237] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "Hesitation",
+		condition = "Win 1 battle on A2 or C2.",
+		story = "SHENGYONGQU7",
+		id = 1237,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1238] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "Autonomy",
+		condition = "Win 2 battles on A2 or C2.",
+		story = "SHENGYONGQU8",
+		id = 1238,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1239] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "Negotiation",
+		condition = "Get the Boss of A2 or C2 to appear.",
+		story = "SHENGYONGQU9",
+		id = 1239,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1240] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "Speculation",
+		condition = "Fight the Boss of A2 or C2.",
+		story = "SHENGYONGQU10",
+		id = 1240,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1241] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "The Chosen Road",
+		condition = "Begin A3 or C3.",
+		story = "SHENGYONGQU11",
+		id = 1241,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1242] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "True Intentions?",
+		condition = "Get the Boss of A3 or C3 to appear.",
+		story = "SHENGYONGQU12",
+		id = 1242,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1243] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "The Cardinal and the Knight",
+		condition = "Fight the Boss of A3 or C3.",
+		story = "SHENGYONGQU13",
+		id = 1243,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1244] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "The First Wave",
+		condition = "Defeat the Boss of A3 or C3.",
+		story = "SHENGYONGQU14",
+		id = 1244,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1245] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "Momentary Victory?",
+		condition = "Clear A3 or C3.",
+		story = "SHENGYONGQU15",
+		id = 1245,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1246] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Secrets",
+		condition = "Begin Pt. 2 of \"Skybound Oratorio.\"",
+		story = "SHENGYONGQU16",
+		id = 1246,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1247] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Doors of the Basilica",
+		condition = "Get the Boss of B1 or D1 to appear.",
+		story = "SHENGYONGQU17",
+		id = 1247,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1248] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Persuasion",
+		condition = "Fight the Boss of B1 or D1.",
+		story = "SHENGYONGQU18",
+		id = 1248,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1249] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Trusted Friends",
+		condition = "Defeat the Boss of B1 or D1.",
+		story = "SHENGYONGQU19",
+		id = 1249,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1250] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Fortune",
+		condition = "Clear B1 or D1.",
+		story = "SHENGYONGQU20",
+		id = 1250,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1251] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Skybound Wall",
+		condition = "Begin B2 or D2.",
+		story = "SHENGYONGQU21",
+		id = 1251,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1252] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Search for Truth",
+		condition = "Get the Boss of B2 or D2 to appear.",
+		story = "SHENGYONGQU22",
+		id = 1252,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1253] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Blinding Light",
+		condition = "Fight the Boss of B2 or D2.",
+		story = "SHENGYONGQU23",
+		id = 1253,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1254] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Onslaught",
+		condition = "Defeat the Boss of B2 or D2.",
+		story = "SHENGYONGQU24",
+		id = 1254,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1255] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Retreat",
+		condition = "Clear B2 or D2.",
+		story = "SHENGYONGQU25",
+		id = 1255,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1256] = {
+		type = 2,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Decisive Battle",
+		condition = "Begin B3 or D3.",
+		story = "1393214",
+		id = 1256,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1257] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Prayer of Light",
+		condition = "Get the Boss of B3 or D3 to appear.",
+		story = "SHENGYONGQU27",
+		id = 1257,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1258] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Under God's Banner",
+		condition = "Fight the Boss of B3 or D3.",
+		story = "SHENGYONGQU28",
+		id = 1258,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1259] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Lever du jour",
+		condition = "Defeat the Boss of B3 or D3.",
+		story = "SHENGYONGQU29",
+		id = 1259,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1260] = {
+		type = 2,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Machina",
+		condition = "Clear B3 or D3.",
+		story = "1393215",
+		id = 1260,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1261] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Distant Gaze",
+		condition = "???",
+		story = "SHENGYONGQU31",
+		id = 1261,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1262] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Contract",
+		condition = "???",
+		story = "SHENGYONGQU32",
+		id = 1262,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1263] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Another Plan",
+		condition = "???",
+		story = "SHENGYONGQU33",
+		id = 1263,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1264] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "Skybound Fantaisie",
+		condition = "???",
+		story = "SHENGYONGQU34",
+		id = 1264,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1265] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Retreat",
+		condition = "Start SP1.",
+		story = "XIAWANJIANDEFANJI1",
+		id = 1265,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1266] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Separation",
+		condition = "Get the boss of SP1 to appear.",
+		story = "XIAWANJIANDEFANJI2",
+		id = 1266,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1267] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Pursuit",
+		condition = "Fight the boss of SP1.",
+		story = "XIAWANJIANDEFANJI3",
+		id = 1267,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1268] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Escape",
+		condition = "Defeat the boss of SP1.",
+		story = "XIAWANJIANDEFANJI4",
+		id = 1268,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1269] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Starry Fjord",
+		condition = "Start SP2.",
+		story = "XIAWANJIANDEFANJI5",
+		id = 1269,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1270] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Reunion",
+		condition = "Get the boss of SP2 to appear.",
+		story = "XIAWANJIANDEFANJI6",
+		id = 1270,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1271] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Encounter",
+		condition = "Fight the boss of SP2.",
+		story = "XIAWANJIANDEFANJI7",
+		id = 1271,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1272] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Reinforcements",
+		condition = "Defeat the boss of SP2.",
+		story = "XIAWANJIANDEFANJI8",
+		id = 1272,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1273] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Onwards",
+		condition = "Start SP3.",
+		story = "XIAWANJIANDEFANJI9",
+		id = 1273,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1274] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Strategy",
+		condition = "Get the boss of SP3 to appear.",
+		story = "XIAWANJIANDEFANJI10",
+		id = 1274,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1275] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Battle",
+		condition = "Fight the boss of SP3.",
+		story = "XIAWANJIANDEFANJI11",
+		id = 1275,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1276] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Reinforcements",
+		condition = "Defeat the boss of SP3.",
+		story = "XIAWANJIANDEFANJI12",
+		id = 1276,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1277] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Epilogue",
+		condition = "Clear SP3.",
+		story = "XIAWANJIANDEFANJI13",
+		id = 1277,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1281] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "An Urgent Request",
+		condition = "Begin \"Aurora Noctis.\"",
+		story = "YONGYEHUANGUANG1",
+		id = 1281,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1282] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "The Fleet Embarks",
+		condition = "Start A1 or C1.",
+		story = "YONGYEHUANGUANG2",
+		id = 1282,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1283] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "A Change in Plans",
+		condition = "After starting A1 or C1.",
+		story = "YONGYEHUANGUANG3",
+		id = 1283,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1284] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Aurora",
+		condition = "Get the boss of A1 or C1 to appear.",
+		story = "YONGYEHUANGUANG4",
+		id = 1284,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1285] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Ambush",
+		condition = "Fight the boss of A1 or C1.",
+		story = "YONGYEHUANGUANG5",
+		id = 1285,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1286] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Analysis",
+		condition = "Defeat the boss of A1 or C1.",
+		story = "YONGYEHUANGUANG6",
+		id = 1286,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1287] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Orders to Turn Back",
+		condition = "Clear A1 or C1.",
+		story = "YONGYEHUANGUANG7",
+		id = 1287,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1288] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Operation Nordlicht",
+		condition = "Start A2 or C2.",
+		story = "YONGYEHUANGUANG8",
+		id = 1288,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1289] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Underneath the Aurora",
+		condition = "After starting A2 or C2.",
+		story = "YONGYEHUANGUANG9",
+		id = 1289,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1290] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Leaked Information",
+		condition = "Win a battle in A2 or C2.",
+		story = "YONGYEHUANGUANG10",
+		id = 1290,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1291] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Stratagem",
+		condition = "Get the boss of A2 or C2 to appear.",
+		story = "YONGYEHUANGUANG11",
+		id = 1291,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1292] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Iron Blood Vanguard",
+		condition = "Fight the boss of A1 or C1.",
+		story = "YONGYEHUANGUANG12",
+		id = 1292,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1293] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "The Devil and the Vampire",
+		condition = "Defeat the boss of A2 or C2.",
+		story = "YONGYEHUANGUANG13",
+		id = 1293,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1294] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Suspicion",
+		condition = "Clear A2 or C2.",
+		story = "YONGYEHUANGUANG14",
+		id = 1294,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1295] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "According to Plan?",
+		condition = "Start A3 or C3.",
+		story = "YONGYEHUANGUANG15",
+		id = 1295,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1296] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Interception",
+		condition = "Get the boss of A3 or C3 to appear.",
+		story = "YONGYEHUANGUANG16",
+		id = 1296,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1297] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "Uninvited Guests",
+		condition = "Fight the boss of A3 or C3.",
+		story = "YONGYEHUANGUANG17",
+		id = 1297,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1298] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "All-Out Assault",
+		condition = "Defeat the boss of A3 or C3.",
+		story = "YONGYEHUANGUANG18",
+		id = 1298,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1299] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "The Crucial Decision",
+		condition = "Clear A3 or C3.",
+		story = "YONGYEHUANGUANG19",
+		id = 1299,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1300] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Interlude",
+		condition = "Begin \"Aurora Noctis,\" Part 2.",
+		story = "YONGYEHUANGUANG20",
+		id = 1300,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1301] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "The Third Order",
+		condition = "Start B1 or D1.",
+		story = "YONGYEHUANGUANG21",
+		id = 1301,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1302] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Before the Raid",
+		condition = "Win a battle in B1 or D1.",
+		story = "YONGYEHUANGUANG22",
+		id = 1302,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1303] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "The Escort Fleet",
+		condition = "Get the boss of B1 or D1 to appear.",
+		story = "YONGYEHUANGUANG23",
+		id = 1303,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1304] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Wolfpack",
+		condition = "Fight the boss of B1 or D1.",
+		story = "YONGYEHUANGUANG24",
+		id = 1304,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1305] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Threat Neutralized",
+		condition = "Clear B1 or D1.",
+		story = "YONGYEHUANGUANG25",
+		id = 1305,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1306] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "The Phantom Fleet",
+		condition = "Start B2 or D2.",
+		story = "YONGYEHUANGUANG26",
+		id = 1306,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1307] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "According to Plan",
+		condition = "Win a battle in B2 or D2.",
+		story = "YONGYEHUANGUANG27",
+		id = 1307,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1308] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Uninvited Guests II",
+		condition = "Get the boss of B2 or D2 to appear.",
+		story = "YONGYEHUANGUANG28",
+		id = 1308,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1309] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Siren Outbreak",
+		condition = "Fight the boss of B2 or D2.",
+		story = "YONGYEHUANGUANG29",
+		id = 1309,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1310] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Set Sail Once More",
+		condition = "Clear B2 or D2.",
+		story = "YONGYEHUANGUANG30",
+		id = 1310,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1311] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Overwhelming Firepower",
+		condition = "Start B3 or D3.",
+		story = "YONGYEHUANGUANG31",
+		id = 1311,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1312] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Omitter",
+		condition = "Get the boss of B3 or D3 to appear.",
+		story = "YONGYEHUANGUANG32",
+		id = 1312,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1313] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Royal Etiquette",
+		condition = "Fight the boss of B3 or D3.",
+		story = "YONGYEHUANGUANG33",
+		id = 1313,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1314] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Countermeasures",
+		condition = "Defeat the boss of B3 or D3.",
+		story = "YONGYEHUANGUANG34",
+		id = 1314,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1315] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Once More",
+		condition = "Clear B3 or D3.",
+		story = "YONGYEHUANGUANG35",
+		id = 1315,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1316] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Iron Blood Intentions",
+		condition = "After clearing B3 or D3.",
+		story = "YONGYEHUANGUANG36",
+		id = 1316,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1317] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "The Northern Front",
+		condition = "???",
+		story = "YONGYEHUANGUANG37",
+		id = 1317,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1318] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Scapa Flow",
+		condition = "???",
+		story = "YONGYEHUANGUANG38",
+		id = 1318,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1319] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "Call to Arms",
+		condition = "???",
+		story = "YONGYEHUANGUANG39",
+		id = 1319,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1320] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "A New Phase",
+		condition = "???",
+		story = "YONGYEHUANGUANG40",
+		id = 1320,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1321] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Let's Have a Week of Indy!",
+		condition = "Begin \"Anything and Everything for Indy!\" Chapter 1.",
+		story = "BOTELAN1",
+		id = 1321,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1322] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Clash of Sisters",
+		condition = "Begin \"Anything and Everything for Indy!\" Chapter 2.",
+		story = "BOTELAN2",
+		id = 1322,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1323] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Like Two Peas in a Pod",
+		condition = "Begin \"Anything and Everything for Indy!\" Chapter 3.",
+		story = "BOTELAN3",
+		id = 1323,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1324] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Distance Felt",
+		condition = "Begin \"Anything and Everything for Indy!\" Chapter 4.",
+		story = "BOTELAN4",
+		id = 1324,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1325] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Change of Plans",
+		condition = "Begin \"Anything and Everything for Indy!\" Chapter 5.",
+		story = "BOTELAN5",
+		id = 1325,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1326] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "More Layers Than One",
+		condition = "Begin \"Anything and Everything for Indy!\" Chapter 6.",
+		story = "BOTELAN6",
+		id = 1326,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1327] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Happiness is Best When Shared",
+		condition = "Begin \"Anything and Everything for Indy!\" Chapter 7.",
+		story = "BOTELAN7",
+		id = 1327,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1331] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Secret Spot",
+		condition = "Begin \"A Lady's Modest Proposal\" Chapter 1.",
+		story = "GUANGHUI1",
+		id = 1331,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1332] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Consultation",
+		condition = "Begin \"A Lady's Modest Proposal\" Chapter 2.",
+		story = "GUANGHUI2",
+		id = 1332,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1333] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "An Unexpected Disaster?",
+		condition = "Begin \"A Lady's Modest Proposal\" Chapter 3.",
+		story = "GUANGHUI3",
+		id = 1333,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1334] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Heart-pounding Intimacy?!",
+		condition = "Begin \"A Lady's Modest Proposal\" Chapter 4.",
+		story = "GUANGHUI4",
+		id = 1334,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1335] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Little Sister's Opinion",
+		condition = "Begin \"A Lady's Modest Proposal\" Chapter 5.",
+		story = "GUANGHUI5",
+		id = 1335,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1336] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Holding Hands, Once More",
+		condition = "Begin \"A Lady's Modest Proposal\" Chapter 6.",
+		story = "GUANGHUI6",
+		id = 1336,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1337] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Our Special Spot",
+		condition = "Begin \"A Lady's Modest Proposal\" Chapter 7.",
+		story = "GUANGHUI7",
+		id = 1337,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1341] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Dreams of the Beginning - Ephemeral Butterfly",
+		condition = "Begin \"Dreamwaker's Butterfly.\"",
+		story = "DIEHAIMENGHUA1",
+		id = 1341,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1342] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Transient Reality - I",
+		condition = "Start TS1 or HTS1.",
+		story = "DIEHAIMENGHUA2",
+		id = 1342,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1343] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Transient Reality - II",
+		condition = "After starting TS1 or HTS1.",
+		story = "DIEHAIMENGHUA3",
+		id = 1343,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1344] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Transient Reality - III",
+		condition = "Get the boss of TS1 or HTS1 to appear.",
+		story = "DIEHAIMENGHUA4",
+		id = 1344,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1345] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "First Transformation - I",
+		condition = "Clear TS1 or HTS1.",
+		story = "DIEHAIMENGHUA5",
+		id = 1345,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1346] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "First Transformation - II",
+		condition = "Start T1 or HT1.",
+		story = "DIEHAIMENGHUA6",
+		id = 1346,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1347] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "First Transformation - III",
+		condition = "Get the boss of T1 or HT1 to appear.",
+		story = "DIEHAIMENGHUA7",
+		id = 1347,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1348] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "First Transformation - IV",
+		condition = "Fight the boss of T1 or HT1.",
+		story = "DIEHAIMENGHUA8",
+		id = 1348,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1349] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "First Transformation - V",
+		condition = "Clear T1 or HT1.",
+		story = "DIEHAIMENGHUA9",
+		id = 1349,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1350] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Second Transformation - I",
+		condition = "Start T2 or HT2.",
+		story = "DIEHAIMENGHUA10",
+		id = 1350,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1351] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Second Transformation - II",
+		condition = "After starting T2 or HT2.",
+		story = "DIEHAIMENGHUA11",
+		id = 1351,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1352] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Second Transformation - III",
+		condition = "Get the boss of T2 or HT2 to appear.",
+		story = "DIEHAIMENGHUA12",
+		id = 1352,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1353] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Second Transformation - IV",
+		condition = "Defeat the boss of T2 or HT2.",
+		story = "DIEHAIMENGHUA13",
+		id = 1353,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1354] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Second Transformation - V",
+		condition = "Clear T2 or HT2.",
+		story = "DIEHAIMENGHUA14",
+		id = 1354,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1355] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Third Transformation - I",
+		condition = "Start T3 or HT3.",
+		story = "DIEHAIMENGHUA15",
+		id = 1355,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1356] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Third Transformation - II",
+		condition = "After starting T3 or HT3.",
+		story = "DIEHAIMENGHUA16",
+		id = 1356,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1357] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Third Transformation - III",
+		condition = "Get the boss of T3 or HT3 to appear.",
+		story = "DIEHAIMENGHUA17",
+		id = 1357,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1358] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Third Transformation - IV",
+		condition = "Fight the boss of T3 or HT3.",
+		story = "DIEHAIMENGHUA18",
+		id = 1358,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1359] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Third Transformation - V",
+		condition = "Defeat the boss of T3 or HT3.",
+		story = "DIEHAIMENGHUA19",
+		id = 1359,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1360] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Third Transformation - VI",
+		condition = "Clear T3 or HT3.",
+		story = "DIEHAIMENGHUA20",
+		id = 1360,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1361] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fourth Transformation - I",
+		condition = "Start T4 or HT4.",
+		story = "DIEHAIMENGHUA21",
+		id = 1361,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1362] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fourth Transformation - II",
+		condition = "After starting T4 or HT4.",
+		story = "DIEHAIMENGHUA22",
+		id = 1362,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1363] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fourth Transformation - III",
+		condition = "Get the boss of T4 or HT4 to appear.",
+		story = "DIEHAIMENGHUA23",
+		id = 1363,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1364] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fourth Transformation - IV",
+		condition = "Fight the boss of T4 or HT4.",
+		story = "DIEHAIMENGHUA24",
+		id = 1364,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1365] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fourth Transformation - V",
+		condition = "Clear T4 or HT4.",
+		story = "DIEHAIMENGHUA25",
+		id = 1365,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1366] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fifth Transformation - I",
+		condition = "Start TS2 or HTS2.",
+		story = "DIEHAIMENGHUA26",
+		id = 1366,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1367] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fifth Transformation - II",
+		condition = "Move to a special tile on TS2 or HTS2.",
+		story = "DIEHAIMENGHUA27",
+		id = 1367,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1368] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fifth Transformation - III",
+		condition = "Move to a special tile on TS2 or HTS2.",
+		story = "DIEHAIMENGHUA28",
+		id = 1368,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1369] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fifth Transformation - IV",
+		condition = "Move to a special tile on TS2 or HTS2.",
+		story = "DIEHAIMENGHUA29",
+		id = 1369,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1370] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fifth Transformation - V",
+		condition = "Clear TS2 or HTS2.",
+		story = "DIEHAIMENGHUA30",
+		id = 1370,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1371] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fifth Transformation - VI",
+		condition = "Start T5 or HT5.",
+		story = "DIEHAIMENGHUA31",
+		id = 1371,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1372] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fifth Transformation - VII",
+		condition = "Get the boss of T5 or HT5 to appear.",
+		story = "DIEHAIMENGHUA32",
+		id = 1372,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1373] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fifth Transformation - VIII",
+		condition = "Fight the boss of T5 or HT5.",
+		story = "DIEHAIMENGHUA33",
+		id = 1373,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1374] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "Fifth Transformation - IX",
+		condition = "Clear T5 or HT5.",
+		story = "DIEHAIMENGHUA34",
+		id = 1374,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1375] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Dreamwaker's Opus - I",
+		condition = "Start T6 or HT6.",
+		story = "DIEHAIMENGHUA35",
+		id = 1375,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1376] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Dreamwaker's Opus - II",
+		condition = "After starting T6 or HT6.",
+		story = "DIEHAIMENGHUA36",
+		id = 1376,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1377] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Dreamwaker's Opus - III",
+		condition = "Get the boss of T6 or HT6 to appear.",
+		story = "DIEHAIMENGHUA37",
+		id = 1377,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1378] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Dreamwaker's Opus - IV",
+		condition = "Fight the boss of T6 or HT6.",
+		story = "DIEHAIMENGHUA38",
+		id = 1378,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1379] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Dreamwaker's Opus - V",
+		condition = "Defeat the boss of T6 or HT6.",
+		story = "DIEHAIMENGHUA39",
+		id = 1379,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1380] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Dreamwaker's Opus - VI",
+		condition = "Clear T6 or HT6.",
+		story = "DIEHAIMENGHUA40",
+		id = 1380,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1381] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Divine Relic",
+		condition = "???",
+		story = "DIEHAIMENGHUA41",
+		id = 1381,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1382] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "Descent",
+		condition = "???",
+		story = "DIEHAIMENGHUA42",
+		id = 1382,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1386] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Making an Entrance",
+		condition = "Start SP1.",
+		story = "HUAPOHAIKONGZHIYI1",
+		id = 1386,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1387] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A Minor Investigation",
+		condition = "Get the boss of SP1 to appear.",
+		story = "HUAPOHAIKONGZHIYI2",
+		id = 1387,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1388] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Person I Admire - Pt. 1",
+		condition = "Clear SP1.",
+		story = "HUAPOHAIKONGZHIYI3",
+		id = 1388,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1389] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Sunder the Blue Skies",
+		condition = "Start SP2.",
+		story = "HUAPOHAIKONGZHIYI4",
+		id = 1389,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1390] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Intercepting the Enemy",
+		condition = "Fight the boss of SP2.",
+		story = "HUAPOHAIKONGZHIYI5",
+		id = 1390,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1391] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Tradeoffs",
+		condition = "Clear SP2.",
+		story = "HUAPOHAIKONGZHIYI6",
+		id = 1391,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1392] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Person I Admire - Pt. 2",
+		condition = "Start SP3.",
+		story = "HUAPOHAIKONGZHIYI7",
+		id = 1392,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1393] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Second Strike",
+		condition = "Get the boss of SP3 to appear.",
+		story = "HUAPOHAIKONGZHIYI8",
+		id = 1393,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1394] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Reinforcements",
+		condition = "Fight the boss of SP3.",
+		story = "HUAPOHAIKONGZHIYI9",
+		id = 1394,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1395] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Clear Skies",
+		condition = "Clear SP3.",
+		story = "HUAPOHAIKONGZHIYI10",
+		id = 1395,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1401] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Bright and Cheery Secretary Ship",
+		condition = "Begin \"The Heart Beneath the Smile\" Chapter 1.",
+		story = "FANJI1",
+		id = 1401,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1402] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Sisters and the Commander",
+		condition = "Begin \"The Heart Beneath the Smile\" Chapter 2.",
+		story = "FANJI2",
+		id = 1402,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1403] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A \"Sharp\" Friend",
+		condition = "Begin \"The Heart Beneath the Smile\" Chapter 3.",
+		story = "FANJI3",
+		id = 1403,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1404] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Hesitation",
+		condition = "Begin \"The Heart Beneath the Smile\" Chapter 4.",
+		story = "FANJI4",
+		id = 1404,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1405] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Chance Encounter",
+		condition = "Begin \"The Heart Beneath the Smile\" Chapter 5.",
+		story = "FANJI5",
+		id = 1405,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1406] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Dazzling Smile",
+		condition = "Begin \"The Heart Beneath the Smile\" Chapter 6.",
+		story = "FANJI6",
+		id = 1406,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1407] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Why I Chose You",
+		condition = "Begin \"The Heart Beneath the Smile\" Chapter 7.",
+		story = "FANJI7",
+		id = 1407,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1411] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Prologue",
+		condition = "Begin \"Universe in Unison.\"",
+		story = "JICHANG1",
+		id = 1411,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1412] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "A New Muse",
+		condition = "Start SP1.",
+		story = "JICHANG2",
+		id = 1412,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1413] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Brand New Form",
+		condition = "Get the boss of SP1 to appear.",
+		story = "JICHANG3",
+		id = 1413,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1414] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Warship? Or Idol?",
+		condition = "Defeat the boss of SP1.",
+		story = "JICHANG4",
+		id = 1414,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1415] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Lesson Goals",
+		condition = "Clear SP1.",
+		story = "JICHANG5",
+		id = 1415,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1416] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Survey on Idols",
+		condition = "Start SP2.",
+		story = "JICHANG6",
+		id = 1416,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1417] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "A New Mystery",
+		condition = "Get the boss of SP2 to appear.",
+		story = "JICHANG7",
+		id = 1417,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1418] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Setting the Stage",
+		condition = "Defeat the boss of SP2.",
+		story = "JICHANG8",
+		id = 1418,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1419] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "The Mysterious Rivals",
+		condition = "Clear SP2.",
+		story = "JICHANG9",
+		id = 1419,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1420] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Competition, Commence!",
+		condition = "Start SP3.",
+		story = "JICHANG10",
+		id = 1420,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1421] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "The Entrance of a Saint",
+		condition = "Get the boss of SP3 to appear.",
+		story = "JICHANG11",
+		id = 1421,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1422] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Tiebreaking Encore",
+		condition = "Defeat the boss of SP3.",
+		story = "JICHANG12",
+		id = 1422,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1423] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Sentimental Power",
+		condition = "Clear SP3.",
+		story = "JICHANG13",
+		id = 1423,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1424] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Guidance from Polaris",
+		condition = "Start SP4.",
+		story = "JICHANG14",
+		id = 1424,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1425] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "That Which Connects Us",
+		condition = "Get the boss of SP4 to appear.",
+		story = "JICHANG15",
+		id = 1425,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1426] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Emotions Unleashed",
+		condition = "Defeat the boss of SP4.",
+		story = "JICHANG16",
+		id = 1426,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1427] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Towards the Crescendo",
+		condition = "Clear SP4.",
+		story = "JICHANG17",
+		id = 1427,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1428] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Madly in Love",
+		condition = "Start SP5.",
+		story = "JICHANG18",
+		id = 1428,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1429] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "The Final Countdown?",
+		condition = "Get the boss of SP5 to appear.",
+		story = "JICHANG19",
+		id = 1429,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1430] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "The Final Stage",
+		condition = "Defeat the boss of SP5.",
+		story = "JICHANG20",
+		id = 1430,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1431] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Universe in Unison",
+		condition = "Clear SP5.",
+		story = "JICHANG21",
+		id = 1431,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1432] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Azure Legacy",
+		condition = "???",
+		story = "JICHANG22",
+		id = 1432,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1436] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "A Mysterious Invitation",
+		condition = "Login during the event.",
+		story = "JIARIHANGXIAN1",
+		id = 1436,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1437] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "The Preordained Encounter",
+		condition = "Begin \"Vacation Lane.\"",
+		story = "JIARIHANGXIAN2",
+		id = 1437,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1438] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "The Venuses' Visitation",
+		condition = "Begin SP1.",
+		story = "JIARIHANGXIAN3",
+		id = 1438,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1439] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "A Special Power",
+		condition = "After starting SP1.",
+		story = "JIARIHANGXIAN4",
+		id = 1439,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1440] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "A Grand Opening",
+		condition = "Encounter the Boss of SP1.",
+		story = "JIARIHANGXIAN5",
+		id = 1440,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1441] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "Dancing Blades",
+		condition = "Defeat the Boss of SP1.",
+		story = "JIARIHANGXIAN6",
+		id = 1441,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1442] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "Intermission",
+		condition = "Begin SP2.",
+		story = "JIARIHANGXIAN7",
+		id = 1442,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1443] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "The Story of Several Sisters",
+		condition = "Encounter the Boss of SP2.",
+		story = "JIARIHANGXIAN8",
+		id = 1443,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1444] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "Sisters in Battle",
+		condition = "Defeat the Boss of SP2.",
+		story = "JIARIHANGXIAN9",
+		id = 1444,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1445] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "A Matter of Size?",
+		condition = "Begin SP3.",
+		story = "JIARIHANGXIAN10",
+		id = 1445,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1446] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "Featured Fight",
+		condition = "Defeat the Boss of SP3.",
+		story = "JIARIHANGXIAN11",
+		id = 1446,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1447] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "Before the Decisive Battle",
+		condition = "Begin SP4.",
+		story = "JIARIHANGXIAN12",
+		id = 1447,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1448] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "Mikasa's Bright Stars",
+		condition = "Encounter the Boss of SP4.",
+		story = "JIARIHANGXIAN13",
+		id = 1448,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1449] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "Living Up to Expectations",
+		condition = "Defeat the Boss of SP4.",
+		story = "JIARIHANGXIAN14",
+		id = 1449,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1450] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "Linked Worlds",
+		condition = "Clear SP4.",
+		story = "JIARIHANGXIAN15",
+		id = 1450,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1451] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "One-way Observation",
+		condition = "???",
+		story = "JIARIHANGXIAN16",
+		id = 1451,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1452] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Care for a Crepe?",
+		condition = "Unlock day 1 of \"Vacation Lane - Cozy Days.\"",
+		story = "JIARIHANGXIANRICHANG1",
+		id = 1452,
+		icon = "memory_jiarihangxianrichang",
+		is_open = 0
+	},
+	[1453] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Sandcastle Showdown",
+		condition = "Unlock day 3 of \"Vacation Lane - Cozy Days.\"",
+		story = "JIARIHANGXIANRICHANG2",
+		id = 1453,
+		icon = "memory_jiarihangxianrichang",
+		is_open = 0
+	},
+	[1454] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Luck of the Draw",
+		condition = "Unlock day 5 of \"Vacation Lane - Cozy Days.\"",
+		story = "JIARIHANGXIANRICHANG3",
+		id = 1454,
+		icon = "memory_jiarihangxianrichang",
+		is_open = 0
+	},
+	[1455] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Tales from the Sakura Empire",
+		condition = "Unlock day 7 of \"Vacation Lane - Cozy Days.\"",
+		story = "JIARIHANGXIANRICHANG4",
+		id = 1455,
+		icon = "memory_jiarihangxianrichang",
+		is_open = 0
+	},
+	[1461] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Moreso than Usual...",
+		condition = "Begin \"Paradigm of Happiness\" Chapter 1.",
+		story = "XIPEIER1",
+		id = 1461,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1462] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Hipper Wants to Calm Down",
+		condition = "Begin \"Paradigm of Happiness\" Chapter 2.",
+		story = "XIPEIER2",
+		id = 1462,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1463] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Getting A Clue",
+		condition = "Begin \"Paradigm of Happiness\" Chapter 3.",
+		story = "XIPEIER3",
+		id = 1463,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1464] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Seaside Ride",
+		condition = "Begin \"Paradigm of Happiness\" Chapter 4.",
+		story = "XIPEIER4",
+		id = 1464,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1465] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Strategy Meeting?",
+		condition = "Begin \"Paradigm of Happiness\" Chapter 5.",
+		story = "XIPEIER5",
+		id = 1465,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1466] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Courageous Charge",
+		condition = "Begin \"Paradigm of Happiness\" Chapter 6.",
+		story = "XIPEIER6",
+		id = 1466,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1467] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A Lifelong Vow",
+		condition = "Begin \"Paradigm of Happiness\" Chapter 7.",
+		story = "XIPEIER7",
+		id = 1467,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1471] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Charge, Kent!",
+		condition = "Begin \"Unbridled Positivity\" Chapter 1.",
+		story = "KENTE1",
+		id = 1471,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1472] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Kent the Unbeatable!",
+		condition = "Begin \"Unbridled Positivity\" Chapter 2.",
+		story = "KENTE2",
+		id = 1472,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1473] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Feelings of Gratitude!",
+		condition = "Begin \"Unbridled Positivity\" Chapter 3.",
+		story = "KENTE3",
+		id = 1473,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1474] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Just Happened To!",
+		condition = "Begin \"Unbridled Positivity\" Chapter 4.",
+		story = "KENTE4",
+		id = 1474,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1475] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Kent's Secret!",
+		condition = "Begin \"Unbridled Positivity\" Chapter 5.",
+		story = "KENTE5",
+		id = 1475,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1476] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A Light in the Darkness!",
+		condition = "Begin \"Unbridled Positivity\" Chapter 6.",
+		story = "KENTE6",
+		id = 1476,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1477] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Forever Together!",
+		condition = "Begin \"Unbridled Positivity\" Chapter 7.",
+		story = "KENTE7",
+		id = 1477,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1481] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "Invitation",
+		condition = "Begin \"Inverted Orthant.\"",
+		story = "FUXIANGXIANZUOZHAN1",
+		id = 1481,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1482] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "The Floating Fortress",
+		condition = "Start A1 or C1.",
+		story = "FUXIANGXIANZUOZHAN2",
+		id = 1482,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1483] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "Routine",
+		condition = "After starting A1 or C1.",
+		story = "FUXIANGXIANZUOZHAN3",
+		id = 1483,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1484] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "Storming the Stronghold",
+		condition = "Get the boss of A1 or C1 to appear.",
+		story = "FUXIANGXIANZUOZHAN4",
+		id = 1484,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1485] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "Conductor",
+		condition = "Fight the boss of A1 or C1.",
+		story = "FUXIANGXIANZUOZHAN5",
+		id = 1485,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1486] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "The Fruits of Training",
+		condition = "Clear A1 or C1.",
+		story = "FUXIANGXIANZUOZHAN6",
+		id = 1486,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1487] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "Strasser's Whims",
+		condition = "Start A2 or C2.",
+		story = "FUXIANGXIANZUOZHAN7",
+		id = 1487,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1488] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "Mirror Sea",
+		condition = "Get the boss of A2 or C2 to appear.",
+		story = "FUXIANGXIANZUOZHAN8",
+		id = 1488,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1489] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "A Cause for Concern",
+		condition = "Clear A2 or C2.",
+		story = "FUXIANGXIANZUOZHAN9",
+		id = 1489,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1490] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "Sudden Visitors",
+		condition = "Start A3 or C3.",
+		story = "FUXIANGXIANZUOZHAN10",
+		id = 1490,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1491] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "On Guard",
+		condition = "After starting A3 or C3.",
+		story = "FUXIANGXIANZUOZHAN11",
+		id = 1491,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1492] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "Out of Control",
+		condition = "Fight the boss of A3 or C3.",
+		story = "FUXIANGXIANZUOZHAN12",
+		id = 1492,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1493] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "Unexpected Retreat?",
+		condition = "Defeat the boss of A3 or C3.",
+		story = "FUXIANGXIANZUOZHAN13",
+		id = 1493,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1494] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "Takeover",
+		condition = "Clear A3 or C3.",
+		story = "FUXIANGXIANZUOZHAN14",
+		id = 1494,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1495] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Sudden Visitors II",
+		condition = "Begin \"Inverted Orthant,\" Part 2.",
+		story = "FUXIANGXIANZUOZHAN15",
+		id = 1495,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1496] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "According to Plan",
+		condition = "Start B1 or D1.",
+		story = "FUXIANGXIANZUOZHAN16",
+		id = 1496,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1497] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "The Equipment Issue",
+		condition = "Get the boss of B1 or D1 to appear.",
+		story = "FUXIANGXIANZUOZHAN17",
+		id = 1497,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1498] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Going Back",
+		condition = "Fight the boss of B1 or D1.",
+		story = "FUXIANGXIANZUOZHAN18",
+		id = 1498,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1499] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Guidance",
+		condition = "Defeat the boss of B1 or D1.",
+		story = "FUXIANGXIANZUOZHAN19",
+		id = 1499,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1500] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "A Misunderstanding",
+		condition = "Clear B1 or D1.",
+		story = "FUXIANGXIANZUOZHAN20",
+		id = 1500,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1501] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Some Adjustment",
+		condition = "Start B2 or D2.",
+		story = "FUXIANGXIANZUOZHAN21",
+		id = 1501,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1502] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "The Trap",
+		condition = "Get the boss of B2 or D2 to appear.",
+		story = "FUXIANGXIANZUOZHAN22",
+		id = 1502,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1503] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Wave After Wave",
+		condition = "Fight the boss of B2 or D2.",
+		story = "FUXIANGXIANZUOZHAN23",
+		id = 1503,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1504] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Critical Moment",
+		condition = "Defeat the boss of B2 or D2.",
+		story = "FUXIANGXIANZUOZHAN24",
+		id = 1504,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1505] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Breach of Trust",
+		condition = "Clear B2 or D2.",
+		story = "FUXIANGXIANZUOZHAN25",
+		id = 1505,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1506] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Coming to Light",
+		condition = "Start B3 or D3.",
+		story = "FUXIANGXIANZUOZHAN26",
+		id = 1506,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1507] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "A Warning",
+		condition = "Get the boss of B3 or D3 to appear.",
+		story = "FUXIANGXIANZUOZHAN27",
+		id = 1507,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1508] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Leading the Charge",
+		condition = "Fight the boss of B3 or D3.",
+		story = "FUXIANGXIANZUOZHAN28",
+		id = 1508,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1509] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Night Battle",
+		condition = "1st time defeating the boss of B3 or D3.",
+		story = "FUXIANGXIANZUOZHAN29",
+		id = 1509,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1510] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Cooperation",
+		condition = "2nd time defeating the boss of B3 or D3.",
+		story = "FUXIANGXIANZUOZHAN30",
+		id = 1510,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1511] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Breaking Through",
+		condition = "Clear B3 or D3.",
+		story = "FUXIANGXIANZUOZHAN31",
+		id = 1511,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1512] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Epilogue",
+		condition = "???",
+		story = "FUXIANGXIANZUOZHAN32",
+		id = 1512,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1513] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "Shaky Return",
+		condition = "???",
+		story = "FUXIANGXIANZUOZHAN33",
+		id = 1513,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1514] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "What Really Happened",
+		condition = "???",
+		story = "FUXIANGXIANZUOZHAN34",
+		id = 1514,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1515] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "The Inverted Orthant",
+		condition = "???",
+		story = "FUXIANGXIANZUOZHAN35",
+		id = 1515,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1521] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The First Sound Under the Sky ",
+		condition = "Begin \"Moments with the Young Miss\" Chapter 1",
+		story = "ZHUIGANZHE1",
+		id = 1521,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1522] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Novel Tea Novelty ",
+		condition = "Begin \"Moments with the Young Miss\" Chapter 2",
+		story = "ZHUIGANZHE2",
+		id = 1522,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1523] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Curiosity and Cake ",
+		condition = "Begin \"Moments with the Young Miss\" Chapter 3",
+		story = "ZHUIGANZHE3",
+		id = 1523,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1524] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "When in Rome ",
+		condition = "Begin \"Moments with the Young Miss\" Chapter 4",
+		story = "ZHUIGANZHE4",
+		id = 1524,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1525] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A Passion for the Exotic ",
+		condition = "Begin \"Moments with the Young Miss\" Chapter 5",
+		story = "ZHUIGANZHE5",
+		id = 1525,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1526] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "An Ungraceful Attempt? ",
+		condition = "Begin \"Moments with the Young Miss\" Chapter 6",
+		story = "ZHUIGANZHE6",
+		id = 1526,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1527] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Excitement and Curiosity ",
+		condition = "Begin \"Moments with the Young Miss\" Chapter 7",
+		story = "ZHUIGANZHE7",
+		id = 1527,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1530] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Arcana Sanctum",
+		condition = "Begin \"Khorovod of Dawn's Rime.\"",
+		story = "POXIAOBINGHUA1",
+		id = 1530,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1531] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Two-Pronged Operation",
+		condition = "Start A1 or C1.",
+		story = "POXIAOBINGHUA2",
+		id = 1531,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1532] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "History",
+		condition = "Get the boss of A1 or C1 to appear.",
+		story = "POXIAOBINGHUA3",
+		id = 1532,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1533] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Guardian",
+		condition = "Defeat the Boss of A1 or C1.",
+		story = "POXIAOBINGHUA4",
+		id = 1533,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1534] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Cooperation",
+		condition = "Start A2 or C2.",
+		story = "POXIAOBINGHUA5",
+		id = 1534,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1535] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Disguise",
+		condition = "Get the boss of A2 or C2 to appear.",
+		story = "POXIAOBINGHUA6",
+		id = 1535,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1536] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Unexpected Results",
+		condition = "Defeat the Boss of A2 or C2.",
+		story = "POXIAOBINGHUA7",
+		id = 1536,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1537] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Icebreaker Submarine",
+		condition = "Clear A2 or C2.",
+		story = "POXIAOBINGHUA8",
+		id = 1537,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1538] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Air Chamber",
+		condition = "Start A3 or C3.",
+		story = "POXIAOBINGHUA9",
+		id = 1538,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1539] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Sanctuary",
+		condition = "Get the Boss of A3 or C3 to appear.",
+		story = "POXIAOBINGHUA10",
+		id = 1539,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1540] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Obsolete",
+		condition = "Fight the boss of A3 or C3.",
+		story = "POXIAOBINGHUA11",
+		id = 1540,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1541] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Vortex",
+		condition = "Defeat the boss of A3 or C3 one time.",
+		story = "POXIAOBINGHUA12",
+		id = 1541,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1542] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "Control Room",
+		condition = "Defeat the boss of A3 or C3 two time.",
+		story = "POXIAOBINGHUA13",
+		id = 1542,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1543] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "City of Light",
+		condition = "Clear A3 or C3.",
+		story = "POXIAOBINGHUA14",
+		id = 1543,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1544] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Strings I",
+		condition = "Begin \"Khorovod of Dawn's Rime.\" Part 2.",
+		story = "POXIAOBINGHUA15",
+		id = 1544,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1545] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Phase ",
+		condition = "Start B1 or D1.",
+		story = "POXIAOBINGHUA16",
+		id = 1545,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1546] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Swarms of Light",
+		condition = "Defeat the Boss of B1 or D1.",
+		story = "POXIAOBINGHUA17",
+		id = 1546,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1547] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Strings II",
+		condition = "Start B2 or D2.",
+		story = "POXIAOBINGHUA18",
+		id = 1547,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1548] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Line of Sight",
+		condition = "Continue B2 or D2.",
+		story = "POXIAOBINGHUA19",
+		id = 1548,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1549] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Blueprint Ships",
+		condition = "Get the boss of B2 or D2 to appear.",
+		story = "POXIAOBINGHUA20",
+		id = 1549,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1550] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Pick",
+		condition = "Defeat the Boss of B2 or D2.",
+		story = "POXIAOBINGHUA21",
+		id = 1550,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1551] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Strings III",
+		condition = "Start B3 or D3.",
+		story = "POXIAOBINGHUA22",
+		id = 1551,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1552] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Alarm",
+		condition = "Continue B3 or D3.",
+		story = "POXIAOBINGHUA23",
+		id = 1552,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1553] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Vox ex Machina",
+		condition = "Get the boss of B3 or D3 to appear.",
+		story = "POXIAOBINGHUA24",
+		id = 1553,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1554] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Radiance",
+		condition = "Fight the boss of B3 or D3.",
+		story = "POXIAOBINGHUA25",
+		id = 1554,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1555] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Afterglow",
+		condition = "Defeat the Boss of B3 or D3.",
+		story = "POXIAOBINGHUA26",
+		id = 1555,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1556] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Project Dawn",
+		condition = "Clear B3 or D3.",
+		story = "POXIAOBINGHUA27",
+		id = 1556,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1557] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Exchange of Opinions",
+		condition = "？？？",
+		story = "POXIAOBINGHUA28",
+		id = 1557,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1558] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Awakening",
+		condition = "？？？",
+		story = "POXIAOBINGHUA29",
+		id = 1558,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1559] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Priority",
+		condition = "？？？",
+		story = "POXIAOBINGHUA30",
+		id = 1559,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1560] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "Convergence",
+		condition = "？？？",
+		story = "POXIAOBINGHUA31",
+		id = 1560,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1561] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Season of Love is Here!",
+		condition = "Begin \"Tis the Season of Love!\" Chapter 1",
+		story = "GELASIGE1",
+		id = 1561,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1562] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "We’re Not Like That!",
+		condition = "Begin \"Tis the Season of Love!\" Chapter 2",
+		story = "GELASIGE2",
+		id = 1562,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1563] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Mandarin Ducks?!",
+		condition = "Begin \"Tis the Season of Love!\" Chapter 3",
+		story = "GELASIGE3",
+		id = 1563,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1564] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Your Face is Too Close!",
+		condition = "Begin \"Tis the Season of Love!\" Chapter 4",
+		story = "GELASIGE4",
+		id = 1564,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1565] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Name... Is Glasgow",
+		condition = "Begin \"Tis the Season of Love!\" Chapter 5",
+		story = "GELASIGE5",
+		id = 1565,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1566] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Would You Still... Love Me?",
+		condition = "Begin \"Tis the Season of Love!\" Chapter 6",
+		story = "GELASIGE6",
+		id = 1566,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1567] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "That Scared Me Half to Death!",
+		condition = "Begin \"Tis the Season of Love!\" Chapter 7",
+		story = "GELASIGE7",
+		id = 1567,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1571] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Earliest Bird",
+		condition = "Begin \"White Gallantry\" Chapter 1",
+		story = "BEILALUOSI1",
+		id = 1571,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1572] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Eyes on the Prize",
+		condition = "Begin \"White Gallantry\" Chapter 2",
+		story = "BEILALUOSI2",
+		id = 1572,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1573] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Luck of the Draw",
+		condition = "Begin \"White Gallantry\" Chapter 3",
+		story = "BEILALUOSI3",
+		id = 1573,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1574] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Belorussiya, As a Person",
+		condition = "Begin \"White Gallantry\" Chapter 4",
+		story = "BEILALUOSI4",
+		id = 1574,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1575] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Drunken Stupor",
+		condition = "Begin \"White Gallantry\" Chapter 5",
+		story = "BEILALUOSI5",
+		id = 1575,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1576] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A Refreshing Morning",
+		condition = "Begin \"White Gallantry\" Chapter 6",
+		story = "BEILALUOSI6",
+		id = 1576,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1577] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Back in Office",
+		condition = "Begin \"White Gallantry\" Chapter 7",
+		story = "BEILALUOSI7",
+		id = 1577,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1581] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Quest Accepted!",
+		condition = "Begin \"Denver's Quest!\" Chapter 1",
+		story = "DANFO1",
+		id = 1581,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1582] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "First Quest, First Party",
+		condition = "Begin \"Denver's Quest!\" Chapter 2",
+		story = "DANFO2",
+		id = 1582,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1583] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Knights Need Advice",
+		condition = "Begin \"Denver's Quest!\" Chapter 3",
+		story = "DANFO3",
+		id = 1583,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1584] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Knight's Sisters",
+		condition = "Begin \"Denver's Quest!\" Chapter 4",
+		story = "DANFO4",
+		id = 1584,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1585] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A Rival's Quest",
+		condition = "Begin \"Denver's Quest!\" Chapter 5",
+		story = "DANFO5",
+		id = 1585,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1586] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Leveling Up!",
+		condition = "Begin \"Denver's Quest!\" Chapter 6",
+		story = "DANFO6",
+		id = 1586,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1587] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Chivalric Oath",
+		condition = "Begin \"Denver's Quest!\" Chapter 7",
+		story = "DANFO7",
+		id = 1587,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1588] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_outdoor",
+		title = "The Golden Doubulin, Part IV",
+		condition = "???",
+		story = "HUANGJINDEMIBAO4",
+		id = 1588,
+		icon = "memory_huangjindemibao",
+		is_open = 0
+	},
+	[1591] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Easily Distracted",
+		condition = "Begin \"Three-Star Luxury Romance\" Chapter 1",
+		story = "AILUNSAMUNA1",
+		id = 1591,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1592] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Sticker Star",
+		condition = "Begin \"Three-Star Luxury Romance\" Chapter 2",
+		story = "AILUNSAMUNA2",
+		id = 1592,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1593] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Work Hard, Play Hard",
+		condition = "Begin \"Three-Star Luxury Romance\" Chapter 3",
+		story = "AILUNSAMUNA3",
+		id = 1593,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1594] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Shopping in the Daylight",
+		condition = "Begin \"Three-Star Luxury Romance\" Chapter 4",
+		story = "AILUNSAMUNA4",
+		id = 1594,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1595] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Dinner in the Sunset",
+		condition = "Begin \"Three-Star Luxury Romance\" Chapter 5",
+		story = "AILUNSAMUNA5",
+		id = 1595,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1596] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A Surprise Gift",
+		condition = "Begin \"Three-Star Luxury Romance\" Chapter 6",
+		story = "AILUNSAMUNA6",
+		id = 1596,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1597] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "What Allen Wanted",
+		condition = "Begin \"Three-Star Luxury Romance\" Chapter 7",
+		story = "AILUNSAMUNA7",
+		id = 1597,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1601] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Maestrale's Report",
+		condition = "Begin \"Daedalian Hymn.\" Part 1.",
+		story = "FUXINGDEZANMEISHI1",
+		id = 1601,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1602] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Littorio's Departure",
+		condition = "Start A1 or C1.",
+		story = "FUXINGDEZANMEISHI2",
+		id = 1602,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1603] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Strolling Through the Garden",
+		condition = "After starting A1 or C1.",
+		story = "FUXINGDEZANMEISHI3",
+		id = 1603,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1604] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "History Lesson",
+		condition = "Get the boss of A1 or C1 to appear.",
+		story = "FUXINGDEZANMEISHI4",
+		id = 1604,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1605] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "A Paltry Invasion",
+		condition = "Fight the boss of A1 or C1.",
+		story = "FUXINGDEZANMEISHI5",
+		id = 1605,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1606] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Mysterious Island",
+		condition = "Defeat the Boss of A1 or C1.",
+		story = "FUXINGDEZANMEISHI6",
+		id = 1606,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1607] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Aquila Takes Wing",
+		condition = "Start A2 or C2.",
+		story = "FUXINGDEZANMEISHI7",
+		id = 1607,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1608] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Veneto's Stratagem",
+		condition = "Get the boss of A2 or C2 to appear.",
+		story = "FUXINGDEZANMEISHI8",
+		id = 1608,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1609] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Mirror Sea of the Mediterranean",
+		condition = "Defeat the Boss of A2 or C2.",
+		story = "FUXINGDEZANMEISHI9",
+		id = 1609,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1610] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "The Great Labyrinth Appears",
+		condition = "Start A3 or C3.",
+		story = "FUXINGDEZANMEISHI10",
+		id = 1610,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1611] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Rhythm of Trust",
+		condition = "After starting A3 or C3.",
+		story = "FUXINGDEZANMEISHI11",
+		id = 1611,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1612] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Torricelli's Guidance ",
+		condition = "Get the Boss of A3 or C3 to appear.",
+		story = "FUXINGDEZANMEISHI12",
+		id = 1612,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1613] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Tea Party in the Labyrinth",
+		condition = "Defeat the Boss of A3 or C3.",
+		story = "FUXINGDEZANMEISHI13",
+		id = 1613,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1614] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "Field Report",
+		condition = "Clear A3 or C3.",
+		story = "FUXINGDEZANMEISHI14",
+		id = 1614,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1615] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Origin Myths ",
+		condition = "Begin \"Daedalian Hymn.\" Part 2.",
+		story = "FUXINGDEZANMEISHI15",
+		id = 1615,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1616] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Colors of the Empire ",
+		condition = "Start B1 or D1.",
+		story = "FUXINGDEZANMEISHI16",
+		id = 1616,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1617] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Imitations ",
+		condition = "Fight the boss of B1 or D1.",
+		story = "FUXINGDEZANMEISHI17",
+		id = 1617,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1618] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Shifting Labyrinth ",
+		condition = "Defeat the Boss of B1 or D1.",
+		story = "FUXINGDEZANMEISHI18",
+		id = 1618,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1619] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Twists and Turns ",
+		condition = "Start B2 or D2.",
+		story = "FUXINGDEZANMEISHI19",
+		id = 1619,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1620] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Suspicions and Exchanges ",
+		condition = "Continue B2 or D2.",
+		story = "FUXINGDEZANMEISHI20",
+		id = 1620,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1621] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Song of the Pawns ",
+		condition = "Get the boss of B2 or D2 to appear.",
+		story = "FUXINGDEZANMEISHI21",
+		id = 1621,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1622] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "A Bad Premonition ",
+		condition = "Fight the boss of B2 or D2.",
+		story = "FUXINGDEZANMEISHI22",
+		id = 1622,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1623] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Dangerous Allure ",
+		condition = "1st time defeating the boss of B2 or D2.",
+		story = "FUXINGDEZANMEISHI23",
+		id = 1623,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1624] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Littorio and Veneto ",
+		condition = "2nd time defeating the boss of B2 or D2.",
+		story = "FUXINGDEZANMEISHI24",
+		id = 1624,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1625] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Reset ",
+		condition = "Clear B2 or D2.",
+		story = "FUXINGDEZANMEISHI25",
+		id = 1625,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1626] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Daedalus ",
+		condition = "Start B3 or D3.",
+		story = "FUXINGDEZANMEISHI26",
+		id = 1626,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1627] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "The Path Forward ",
+		condition = "Continue B3 or D3.",
+		story = "FUXINGDEZANMEISHI27",
+		id = 1627,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1628] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Visitors ",
+		condition = "Get the boss of B3 or D3 to appear.",
+		story = "FUXINGDEZANMEISHI28",
+		id = 1628,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1629] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Minotauros ",
+		condition = "Fight the boss of B3 or D3.",
+		story = "FUXINGDEZANMEISHI29",
+		id = 1629,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1630] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Unity Amidst Chaos ",
+		condition = "1st time defeating the boss of B3 or D3.",
+		story = "FUXINGDEZANMEISHI30",
+		id = 1630,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1631] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Leading the Way ",
+		condition = "2nd time defeating the boss of B3 or D3.",
+		story = "FUXINGDEZANMEISHI31",
+		id = 1631,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1632] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Triumph? ",
+		condition = "Clear B3 or D3.",
+		story = "FUXINGDEZANMEISHI32",
+		id = 1632,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1633] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Stremitelny's Departure ",
+		condition = "？？？",
+		story = "FUXINGDEZANMEISHI33",
+		id = 1633,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1634] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Vacation in Roma ",
+		condition = "？？？",
+		story = "FUXINGDEZANMEISHI34",
+		id = 1634,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1635] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "The Letter ",
+		condition = "？？？",
+		story = "FUXINGDEZANMEISHI35",
+		id = 1635,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1641] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Day After the Storm",
+		condition = "Begin \"Heart in the Right Place\" Chapter 1",
+		story = "SHIYU1",
+		id = 1641,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1642] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "To Yamashiro's Aid",
+		condition = "Begin \"Heart in the Right Place\" Chapter 2",
+		story = "SHIYU2",
+		id = 1642,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1643] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Sweep 'n' Skip",
+		condition = "Begin \"Heart in the Right Place\" Chapter 3",
+		story = "SHIYU3",
+		id = 1643,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1644] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Be Mindful Around the Green",
+		condition = "Begin \"Heart in the Right Place\" Chapter 4",
+		story = "SHIYU4",
+		id = 1644,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1645] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Inside Shigure's Mind",
+		condition = "Begin \"Heart in the Right Place\" Chapter 5",
+		story = "SHIYU5",
+		id = 1645,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1646] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Surprise Behind the Door",
+		condition = "Begin \"Heart in the Right Place\" Chapter 6",
+		story = "SHIYU6",
+		id = 1646,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1647] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Moving Forward with Shigure",
+		condition = "Begin \"Heart in the Right Place\" Chapter 7",
+		story = "SHIYU7",
+		id = 1647,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1651] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Help Me, My Commander!",
+		condition = "Begin \"The Growth of a Courtly Lady\" Chapter 1",
+		story = "TIANYING1",
+		id = 1651,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1652] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "A Study in Elegance",
+		condition = "Begin \"The Growth of a Courtly Lady\" Chapter 2",
+		story = "TIANYING2",
+		id = 1652,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1653] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Making Things Work",
+		condition = "Begin \"The Growth of a Courtly Lady\" Chapter 3",
+		story = "TIANYING3",
+		id = 1653,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1654] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Exercises and Combat Training",
+		condition = "Begin \"The Growth of a Courtly Lady\" Chapter 4",
+		story = "TIANYING4",
+		id = 1654,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1655] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Try, Try Again",
+		condition = "Begin \"The Growth of a Courtly Lady\" Chapter 5",
+		story = "TIANYING5",
+		id = 1655,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1656] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Missing \"Something\"",
+		condition = "Begin \"The Growth of a Courtly Lady\" Chapter 6",
+		story = "TIANYING6",
+		id = 1656,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1657] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "My Commander",
+		condition = "Begin \"The Growth of a Courtly Lady\" Chapter 7",
+		story = "TIANYING7",
+		id = 1657,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1661] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Archive Log I",
+		condition = "Clear \"Silver Archives\" P2",
+		story = "YINSEDANGAN1",
+		id = 1661,
+		icon = "memory_yinsedangan",
+		is_open = 0
+	},
+	[1662] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Archive Log II",
+		condition = "Clear \"Silver Archives\" P6",
+		story = "YINSEDANGAN2",
+		id = 1662,
+		icon = "memory_yinsedangan",
+		is_open = 0
+	},
+	[1663] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Archive Log III",
+		condition = "Clear \"Silver Archives\" P10",
+		story = "YINSEDANGAN3",
+		id = 1663,
+		icon = "memory_yinsedangan",
+		is_open = 0
+	},
+	[1664] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Silver Archives IV",
+		condition = "Clear \"Silver Archives\" P14",
+		story = "YINSEDANGAN4",
+		id = 1664,
+		icon = "memory_yinsedangan",
+		is_open = 0
+	},
+	[1671] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Sound of the Waves",
+		condition = "Begin \"Days of Tranquility\" Chapter 1",
+		story = "U471",
+		id = 1671,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1672] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Quiet Visitor",
+		condition = "Begin \"Days of Tranquility\" Chapter 2",
+		story = "U472",
+		id = 1672,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1673] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Milky Goodness",
+		condition = "Begin \"Days of Tranquility\" Chapter 3",
+		story = "U473",
+		id = 1673,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1674] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Loudmouthed Visitor",
+		condition = "Begin \"Days of Tranquility\" Chapter 4",
+		story = "U474",
+		id = 1674,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1675] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Breaking the Silence",
+		condition = "Begin \"Days of Tranquility\" Chapter 5",
+		story = "U475",
+		id = 1675,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1676] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Free Rein",
+		condition = "Begin \"Days of Tranquility\" Chapter 6",
+		story = "U476",
+		id = 1676,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1677] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Tacit Communication",
+		condition = "Begin \"Days of Tranquility\" Chapter 7",
+		story = "U477",
+		id = 1677,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1681] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Welcome Back, Commander",
+		condition = "Begin \"Mirror Involution.\" Part 1.",
+		story = "JINGWEILUOXUAN1",
+		id = 1681,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1682] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "The Black Dragon Awakens",
+		condition = "Start A1 or C1.",
+		story = "JINGWEILUOXUAN2",
+		id = 1682,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1683] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Unforgettable",
+		condition = "After starting A1 or C1.",
+		story = "JINGWEILUOXUAN3",
+		id = 1683,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1684] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Enemy Intel",
+		condition = "Get the boss of A1 or C1 to appear.",
+		story = "JINGWEILUOXUAN4",
+		id = 1684,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1685] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Reverse Course",
+		condition = "Fight the boss of A1 or C1.",
+		story = "JINGWEILUOXUAN5",
+		id = 1685,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1686] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Intelligence and Mobilization",
+		condition = "Defeat the Boss of A1 or C1.",
+		story = "JINGWEILUOXUAN6",
+		id = 1686,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1687] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Trapped?",
+		condition = "Clear A1 or C1.",
+		story = "JINGWEILUOXUAN7",
+		id = 1687,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1688] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "AF Base",
+		condition = "Start A2 or C2.",
+		story = "JINGWEILUOXUAN8",
+		id = 1688,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1689] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Morrison and Mr. Bear",
+		condition = "After starting A2 or C2.",
+		story = "JINGWEILUOXUAN9",
+		id = 1689,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1690] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Reenactment",
+		condition = "Get the boss of A2 or C2 to appear.",
+		story = "JINGWEILUOXUAN10",
+		id = 1690,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1691] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Incomplete Reenactment",
+		condition = "Defeat the Boss of A2 or C2.",
+		story = "JINGWEILUOXUAN11",
+		id = 1691,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1692] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Memories of AF",
+		condition = "Clear A2 or C2.",
+		story = "JINGWEILUOXUAN12",
+		id = 1692,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1693] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Reinforcements?",
+		condition = "Start A3 or C3.",
+		story = "JINGWEILUOXUAN13",
+		id = 1693,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1694] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Silver Wings",
+		condition = "Get the Boss of A3 or C3 to appear.",
+		story = "JINGWEILUOXUAN14",
+		id = 1694,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1695] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Visitor From a Distant Dream",
+		condition = "Defeat the Boss of A3 or C3.",
+		story = "JINGWEILUOXUAN15",
+		id = 1695,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1696] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "Fated Memories",
+		condition = "Clear A3 or C3.",
+		story = "JINGWEILUOXUAN16",
+		id = 1696,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1697] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Shadows in the Sea Fog",
+		condition = "Begin \"Mirror Involution.\" Part 2.",
+		story = "JINGWEILUOXUAN17",
+		id = 1697,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1698] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Silent Dolls",
+		condition = "Start B1 or D1.",
+		story = "JINGWEILUOXUAN18",
+		id = 1698,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1699] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Mindless",
+		condition = "Fight the boss of B1 or D1.",
+		story = "JINGWEILUOXUAN19",
+		id = 1699,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1700] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Cogs of Fate",
+		condition = "Defeat the Boss of B1 or D1.",
+		story = "JINGWEILUOXUAN20",
+		id = 1700,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1701] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Helena's Shadow",
+		condition = "Clear B1 or D1.",
+		story = "JINGWEILUOXUAN21",
+		id = 1701,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1702] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Combat",
+		condition = "Start B2 or D2.",
+		story = "JINGWEILUOXUAN22",
+		id = 1702,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1703] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Imperceptible",
+		condition = "Get the boss of B2 or D2 to appear.",
+		story = "JINGWEILUOXUAN23",
+		id = 1703,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1704] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Clockwork World",
+		condition = "Defeat the Boss of B2 or D2.",
+		story = "JINGWEILUOXUAN24",
+		id = 1704,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1705] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Through the Rift",
+		condition = "Clear B2 or D2.",
+		story = "JINGWEILUOXUAN25",
+		id = 1705,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1706] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Reboot",
+		condition = "Start B3 or D3.",
+		story = "JINGWEILUOXUAN26",
+		id = 1706,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1707] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Final Battle",
+		condition = "Get the boss of B3 or D3 to appear.",
+		story = "JINGWEILUOXUAN27",
+		id = 1707,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1708] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "META",
+		condition = "Fight the boss of B3 or D3.",
+		story = "JINGWEILUOXUAN28",
+		id = 1708,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1709] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Old Friend",
+		condition = "1st time defeating the boss of B3 or D3.",
+		story = "JINGWEILUOXUAN29",
+		id = 1709,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1710] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "A Path to the Future",
+		condition = "2nd time defeating the boss of B3 or D3.",
+		story = "JINGWEILUOXUAN30",
+		id = 1710,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1711] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "Retreat",
+		condition = "Clear B3 or D3.",
+		story = "JINGWEILUOXUAN31",
+		id = 1711,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1712] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "A New Investigation",
+		condition = "???",
+		story = "JINGWEILUOXUAN32",
+		id = 1712,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1713] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "Rewritten Rules",
+		condition = "???",
+		story = "JINGWEILUOXUAN33",
+		id = 1713,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1716] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Because I Expect Great Things From You!",
+		condition = "Begin \"The Virtue of Being Earnest\" Chapter 1",
+		story = "NAERXUN1",
+		id = 1716,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1717] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Stop Seeing Right Through Me!",
+		condition = "Begin \"The Virtue of Being Earnest\" Chapter 2",
+		story = "NAERXUN2",
+		id = 1717,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1718] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Don't Make Me Repeat Myself!",
+		condition = "Begin \"The Virtue of Being Earnest\" Chapter 3",
+		story = "NAERXUN3",
+		id = 1718,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1719] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "We're Done Talking Here!",
+		condition = "Begin \"The Virtue of Being Earnest\" Chapter 4",
+		story = "NAERXUN4",
+		id = 1719,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1720] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Say Something Already!",
+		condition = "Begin \"The Virtue of Being Earnest\" Chapter 5",
+		story = "NAERXUN5",
+		id = 1720,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1721] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "There's Something I Wanted to Tell You",
+		condition = "Begin \"The Virtue of Being Earnest\" Chapter 6",
+		story = "NAERXUN6",
+		id = 1721,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1722] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "I've Always Expected Great Things From You!",
+		condition = "Begin \"The Virtue of Being Earnest\" Chapter 7",
+		story = "NAERXUN7",
+		id = 1722,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1725] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Mermaid?",
+		condition = "Begin \"Me and the Boise\" Chapter 1",
+		story = "BOYIXI1",
+		id = 1725,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1726] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Rookie Secretary",
+		condition = "Begin \"Me and the Boise\" Chapter 2",
+		story = "BOYIXI2",
+		id = 1726,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1727] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Shopping",
+		condition = "Begin \"Me and the Boise\" Chapter 3",
+		story = "BOYIXI3",
+		id = 1727,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1728] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "Defeat?",
+		condition = "Begin \"Me and the Boise\" Chapter 4",
+		story = "BOYIXI4",
+		id = 1728,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1729] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "An Invisible Smile",
+		condition = "Begin \"Me and the Boise\" Chapter 5",
+		story = "BOYIXI5",
+		id = 1729,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1730] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "As Promised",
+		condition = "Begin \"Me and the Boise\" Chapter 6",
+		story = "BOYIXI6",
+		id = 1730,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1731] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "The Sweetness of Tiramisu",
+		condition = "Begin \"Me and the Boise\" Chapter 7",
+		story = "BOYIXI7",
+		id = 1731,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[10011] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Vacation Encounter",
 		condition = "Complete Long Island mission 1",
 		story = "CHANGDAO1",
@@ -10066,9 +16435,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10012] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "No more sports!",
 		condition = "Complete Long Island mission 2",
 		story = "CHANGDAO2",
@@ -10077,9 +16446,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10013] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "No more exercise!",
 		condition = "Complete Long Island mission 3",
 		story = "CHANGDAO3",
@@ -10088,9 +16457,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10014] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Perfect Vacation",
 		condition = "Complete Long Island mission 4",
 		story = "CHANGDAO4",
@@ -10099,9 +16468,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10015] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Eat my ultimate skill!",
 		condition = "Complete Long Island mission 5",
 		story = "CHANGDAO5",
@@ -10110,9 +16479,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10016] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Hard Defeat",
 		condition = "Complete Long Island mission 6",
 		story = "CHANGDAO6",
@@ -10121,9 +16490,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10017] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Dream Vacation",
 		condition = "Complete Long Island mission 7",
 		story = "CHANGDAO7",
@@ -10132,9 +16501,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10018] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 2,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The War God's Return",
 		condition = "Complete the event battle of \"The War God's Return.\" ",
 		story = "1060000",
@@ -10143,9 +16512,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10019] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Upheaval",
 		condition = "Complete the 2nd mission of \"The War God's Return.\"",
 		story = "SANLI07",
@@ -10154,9 +16523,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10020] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Celebratory Banquet",
 		condition = "Complete the 3rd mission of \"The War God's Return.\"",
 		story = "SANLI08",
@@ -10165,9 +16534,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10021] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Conviction",
 		condition = "Complete the 4th mission of \"The War God's Return.\"",
 		story = "SANLI09",
@@ -10176,9 +16545,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10029] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Problem Kids",
 		condition = "Unlock Z23-Sensei Day 1",
 		story = "TEACHER1",
@@ -10187,9 +16556,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10030] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "NEET's Last Dignity",
 		condition = "Unlock Z23-Sensei Day 2",
 		story = "TEACHER2",
@@ -10198,9 +16567,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10031] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Who is this? Where am I?",
 		condition = "Unlock Z23-Sensei Day 3",
 		story = "TEACHER3",
@@ -10209,9 +16578,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10032] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Taboo - Double Mischief!",
 		condition = "Unlock Z23-Sensei Day 5",
 		story = "TEACHER4",
@@ -10220,9 +16589,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10033] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "The Worries of Z23",
 		condition = "Unlock Z23-Sensei Day 7",
 		story = "TEACHER5",
@@ -10231,9 +16600,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10034] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Run, Z23!",
 		condition = "Unlock Z23-Sensei Day 9",
 		story = "TEACHER6",
@@ -10242,9 +16611,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10035] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Teach Me, Z23-Sensei!",
 		condition = "Unlock Z23-Sensei Day 10",
 		story = "TEACHER7",
@@ -10253,9 +16622,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10036] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Wormhole To Another Dimension",
 		condition = "Unlocked on day 1 of the collaboration",
 		story = "NEPU_DAILY1",
@@ -10264,9 +16633,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10037] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "What You Need Is A CPU!",
 		condition = "Unlocked on day 2 of the collaboration",
 		story = "NEPU_DAILY2",
@@ -10275,9 +16644,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10038] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Cross-Cultural Contact",
 		condition = "Unlocked on day 3 of the collaboration",
 		story = "NEPU_DAILY3",
@@ -10286,9 +16655,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10039] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "A Room, Two Gamers, And I",
 		condition = "Unlocked on day 4 of the collaboration",
 		story = "NEPU_DAILY4",
@@ -10297,9 +16666,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10040] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Keep Quiet In The Library",
 		condition = "Unlocked on day 5 of the collaboration",
 		story = "NEPU_DAILY5",
@@ -10308,9 +16677,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10041] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Game Night With The Girls!",
 		condition = "Unlocked on day 6 of the collaboration",
 		story = "NEPU_DAILY6",
@@ -10319,9 +16688,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10042] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Well Then, Buh-Bye!",
 		condition = "Unlocked on day 7 of the collaboration",
 		story = "NEPU_DAILY7",
@@ -10330,9 +16699,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10043] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Odd-Colored Seas - BLACK",
 		condition = "Begin \"Visitors From Another Dimension\" SP. 1",
 		story = "NEPU_STAGE101",
@@ -10341,9 +16710,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10044] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Jet Black Finale",
 		condition = "Clear \"Visitors From Another Dimension\" SP. 1",
 		story = "NEPU_STAGE102",
@@ -10352,9 +16721,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10045] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Odd-Colored Seas - GREEN",
 		condition = "Begin \"Visitors From Another Dimension\" SP. 2",
 		story = "NEPU_STAGE201",
@@ -10363,9 +16732,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10046] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Verdant Green Finale",
 		condition = "Clear \"Visitors From Another Dimension\" SP. 2",
 		story = "NEPU_STAGE202",
@@ -10374,9 +16743,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10047] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Odd-Colored Seas - WHITE",
 		condition = "Begin \"Visitors From Another Dimension\" SP. 3",
 		story = "NEPU_STAGE301",
@@ -10385,9 +16754,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10048] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Pure White Finale",
 		condition = "Clear \"Visitors From Another Dimension\" SP. 3",
 		story = "NEPU_STAGE302",
@@ -10396,9 +16765,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10049] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Odd-Colored Seas - PURPLE",
 		condition = "Begin \"Visitors From Another Dimension\" SP. 4",
 		story = "NEPU_STAGE401",
@@ -10407,9 +16776,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10050] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Deep Purple Conclusion",
 		condition = "Clear \"Visitors From Another Dimension\" SP. 4",
 		story = "NEPU_STAGE402",
@@ -10418,9 +16787,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10051] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Opening",
 		condition = "Begin \"Ink-Stained Steel Sakura.\"",
 		story = "YINGHUA1",
@@ -10429,9 +16798,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10052] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Return",
 		condition = "Begin A1 or C1.",
 		story = "YINGHUA2",
@@ -10440,9 +16809,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10053] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Objective",
 		condition = "Clear A1 or C1.",
 		story = "YINGHUA3",
@@ -10451,9 +16820,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10054] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Chance",
 		condition = "Begin A2 or C2.",
 		story = "YINGHUA4",
@@ -10462,9 +16831,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10055] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sisters",
 		condition = "Begin A3 or C3.",
 		story = "YINGHUA5",
@@ -10473,9 +16842,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10056] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Confinement",
 		condition = "Begin A4 or C4.",
 		story = "YINGHUA6",
@@ -10484,9 +16853,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10057] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Convoy",
 		condition = "Defeat the Boss of A4 or C4.",
 		story = "YINGHUA7",
@@ -10495,9 +16864,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10058] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Boundary",
 		condition = "Clear A4 or C4.",
 		story = "YINGHUA8",
@@ -10506,9 +16875,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10059] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prayer",
 		condition = "Begin Part 2 of \"Ink-Stained Steel Sakura.\"",
 		story = "YINGHUA9",
@@ -10517,9 +16886,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10060] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Little Sister",
 		condition = "Begin B1 or D1.",
 		story = "YINGHUA10",
@@ -10528,31 +16897,31 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10061] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Waking Up",
-		condition = "Encounter the Boss of B1 or D1.",
+		condition = "Get the Boss Node of  B1 or D1.",
 		story = "YINGHUA11",
 		id = 10061,
 		icon = "memory_yinghua3",
 		is_open = 0
 	},
 	[10062] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Final Battle",
-		condition = "Defeat the Boss of B1 or D1.",
+		condition = "Encounter the Boss of B1 or D1.",
 		story = "YINGHUA12",
 		id = 10062,
 		icon = "memory_yinghua4",
 		is_open = 0
 	},
 	[10063] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Powerful Enemy",
 		condition = "Begin B2 or D2.",
 		story = "YINGHUA13",
@@ -10561,9 +16930,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10064] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Repelling Strike",
 		condition = "Clear B2 or D2.",
 		story = "YINGHUA14",
@@ -10572,9 +16941,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10065] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "装甲骑兵1",
 		condition = "解锁装甲骑兵任务1",
 		story = "ZHUANGJIA1",
@@ -10583,9 +16952,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10072] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Moonlit Overture",
 		condition = "Begin SP1.",
 		story = "TACT50000",
@@ -10594,9 +16963,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10073] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Encounter",
 		condition = "Encounter the Boss of SP1.",
 		story = "TACT50001",
@@ -10605,9 +16974,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10074] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Retreat",
 		condition = "Clear SP1.",
 		story = "TACT50002",
@@ -10616,9 +16985,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10075] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Sisters",
 		condition = "Begin SP2.",
 		story = "TACT50003",
@@ -10627,9 +16996,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10076] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Mayhem",
 		condition = "Encounter the Boss of SP2.",
 		story = "TACT50004",
@@ -10638,9 +17007,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10077] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Backup",
 		condition = "Clear SP2.",
 		story = "TACT50005",
@@ -10649,9 +17018,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10078] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Struggle",
 		condition = "Begin SP3.",
 		story = "TACT50006",
@@ -10660,9 +17029,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10079] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Evenly Matched",
 		condition = "Encounter the Boss of SP3.",
 		story = "TACT50007",
@@ -10671,9 +17040,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10080] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Overture",
 		condition = "Clear SP3.",
 		story = "TACT50008",
@@ -11099,11 +17468,6 @@ pg.memory_template = {
 		462,
 		463,
 		464,
-		466,
-		467,
-		468,
-		469,
-		470,
 		471,
 		472,
 		473,
@@ -11272,12 +17636,40 @@ pg.memory_template = {
 		681,
 		682,
 		683,
+		684,
+		685,
+		686,
+		687,
+		688,
+		689,
+		690,
+		691,
+		692,
+		693,
+		694,
+		695,
+		696,
+		697,
+		698,
+		699,
+		700,
+		701,
+		702,
+		703,
+		704,
+		705,
+		706,
+		707,
 		716,
 		717,
 		718,
 		719,
 		720,
 		721,
+		722,
+		725,
+		726,
+		727,
 		728,
 		729,
 		730,
@@ -11318,6 +17710,13 @@ pg.memory_template = {
 		765,
 		766,
 		767,
+		768,
+		769,
+		770,
+		771,
+		772,
+		773,
+		774,
 		775,
 		776,
 		777,
@@ -11488,6 +17887,33 @@ pg.memory_template = {
 		952,
 		953,
 		954,
+		960,
+		961,
+		962,
+		963,
+		964,
+		965,
+		966,
+		967,
+		968,
+		969,
+		970,
+		971,
+		972,
+		973,
+		974,
+		975,
+		976,
+		977,
+		978,
+		979,
+		980,
+		981,
+		982,
+		983,
+		990,
+		991,
+		992,
 		995,
 		996,
 		997,
@@ -11596,6 +18022,528 @@ pg.memory_template = {
 		1102,
 		1103,
 		1104,
+		1110,
+		1111,
+		1112,
+		1113,
+		1114,
+		1115,
+		1116,
+		1117,
+		1118,
+		1119,
+		1120,
+		1121,
+		1122,
+		1123,
+		1124,
+		1125,
+		1126,
+		1127,
+		1128,
+		1129,
+		1130,
+		1131,
+		1132,
+		1133,
+		1134,
+		1135,
+		1136,
+		1137,
+		1138,
+		1139,
+		1140,
+		1141,
+		1142,
+		1143,
+		1144,
+		1145,
+		1146,
+		1147,
+		1148,
+		1149,
+		1150,
+		1151,
+		1152,
+		1153,
+		1154,
+		1155,
+		1156,
+		1157,
+		1158,
+		1159,
+		1160,
+		1161,
+		1162,
+		1163,
+		1164,
+		1165,
+		1166,
+		1167,
+		1168,
+		1169,
+		1170,
+		1171,
+		1172,
+		1173,
+		1174,
+		1175,
+		1176,
+		1177,
+		1178,
+		1179,
+		1180,
+		1181,
+		1182,
+		1183,
+		1184,
+		1185,
+		1186,
+		1187,
+		1188,
+		1189,
+		1190,
+		1204,
+		1205,
+		1206,
+		1207,
+		1208,
+		1209,
+		1210,
+		1211,
+		1212,
+		1213,
+		1214,
+		1215,
+		1216,
+		1217,
+		1218,
+		1219,
+		1231,
+		1232,
+		1233,
+		1234,
+		1235,
+		1236,
+		1237,
+		1238,
+		1239,
+		1240,
+		1241,
+		1242,
+		1243,
+		1244,
+		1245,
+		1246,
+		1247,
+		1248,
+		1249,
+		1250,
+		1251,
+		1252,
+		1253,
+		1254,
+		1255,
+		1256,
+		1257,
+		1258,
+		1259,
+		1260,
+		1261,
+		1262,
+		1263,
+		1264,
+		1265,
+		1266,
+		1267,
+		1268,
+		1269,
+		1270,
+		1271,
+		1272,
+		1273,
+		1274,
+		1275,
+		1276,
+		1277,
+		1281,
+		1282,
+		1283,
+		1284,
+		1285,
+		1286,
+		1287,
+		1288,
+		1289,
+		1290,
+		1291,
+		1292,
+		1293,
+		1294,
+		1295,
+		1296,
+		1297,
+		1298,
+		1299,
+		1300,
+		1301,
+		1302,
+		1303,
+		1304,
+		1305,
+		1306,
+		1307,
+		1308,
+		1309,
+		1310,
+		1311,
+		1312,
+		1313,
+		1314,
+		1315,
+		1316,
+		1317,
+		1318,
+		1319,
+		1320,
+		1321,
+		1322,
+		1323,
+		1324,
+		1325,
+		1326,
+		1327,
+		1331,
+		1332,
+		1333,
+		1334,
+		1335,
+		1336,
+		1337,
+		1341,
+		1342,
+		1343,
+		1344,
+		1345,
+		1346,
+		1347,
+		1348,
+		1349,
+		1350,
+		1351,
+		1352,
+		1353,
+		1354,
+		1355,
+		1356,
+		1357,
+		1358,
+		1359,
+		1360,
+		1361,
+		1362,
+		1363,
+		1364,
+		1365,
+		1366,
+		1367,
+		1368,
+		1369,
+		1370,
+		1371,
+		1372,
+		1373,
+		1374,
+		1375,
+		1376,
+		1377,
+		1378,
+		1379,
+		1380,
+		1381,
+		1382,
+		1386,
+		1387,
+		1388,
+		1389,
+		1390,
+		1391,
+		1392,
+		1393,
+		1394,
+		1395,
+		1401,
+		1402,
+		1403,
+		1404,
+		1405,
+		1406,
+		1407,
+		1411,
+		1412,
+		1413,
+		1414,
+		1415,
+		1416,
+		1417,
+		1418,
+		1419,
+		1420,
+		1421,
+		1422,
+		1423,
+		1424,
+		1425,
+		1426,
+		1427,
+		1428,
+		1429,
+		1430,
+		1431,
+		1432,
+		1436,
+		1437,
+		1438,
+		1439,
+		1440,
+		1441,
+		1442,
+		1443,
+		1444,
+		1445,
+		1446,
+		1447,
+		1448,
+		1449,
+		1450,
+		1451,
+		1452,
+		1453,
+		1454,
+		1455,
+		1461,
+		1462,
+		1463,
+		1464,
+		1465,
+		1466,
+		1467,
+		1471,
+		1472,
+		1473,
+		1474,
+		1475,
+		1476,
+		1477,
+		1481,
+		1482,
+		1483,
+		1484,
+		1485,
+		1486,
+		1487,
+		1488,
+		1489,
+		1490,
+		1491,
+		1492,
+		1493,
+		1494,
+		1495,
+		1496,
+		1497,
+		1498,
+		1499,
+		1500,
+		1501,
+		1502,
+		1503,
+		1504,
+		1505,
+		1506,
+		1507,
+		1508,
+		1509,
+		1510,
+		1511,
+		1512,
+		1513,
+		1514,
+		1515,
+		1521,
+		1522,
+		1523,
+		1524,
+		1525,
+		1526,
+		1527,
+		1530,
+		1531,
+		1532,
+		1533,
+		1534,
+		1535,
+		1536,
+		1537,
+		1538,
+		1539,
+		1540,
+		1541,
+		1542,
+		1543,
+		1544,
+		1545,
+		1546,
+		1547,
+		1548,
+		1549,
+		1550,
+		1551,
+		1552,
+		1553,
+		1554,
+		1555,
+		1556,
+		1557,
+		1558,
+		1559,
+		1560,
+		1561,
+		1562,
+		1563,
+		1564,
+		1565,
+		1566,
+		1567,
+		1571,
+		1572,
+		1573,
+		1574,
+		1575,
+		1576,
+		1577,
+		1581,
+		1582,
+		1583,
+		1584,
+		1585,
+		1586,
+		1587,
+		1588,
+		1591,
+		1592,
+		1593,
+		1594,
+		1595,
+		1596,
+		1597,
+		1601,
+		1602,
+		1603,
+		1604,
+		1605,
+		1606,
+		1607,
+		1608,
+		1609,
+		1610,
+		1611,
+		1612,
+		1613,
+		1614,
+		1615,
+		1616,
+		1617,
+		1618,
+		1619,
+		1620,
+		1621,
+		1622,
+		1623,
+		1624,
+		1625,
+		1626,
+		1627,
+		1628,
+		1629,
+		1630,
+		1631,
+		1632,
+		1633,
+		1634,
+		1635,
+		1641,
+		1642,
+		1643,
+		1644,
+		1645,
+		1646,
+		1647,
+		1651,
+		1652,
+		1653,
+		1654,
+		1655,
+		1656,
+		1657,
+		1661,
+		1662,
+		1663,
+		1664,
+		1671,
+		1672,
+		1673,
+		1674,
+		1675,
+		1676,
+		1677,
+		1681,
+		1682,
+		1683,
+		1684,
+		1685,
+		1686,
+		1687,
+		1688,
+		1689,
+		1690,
+		1691,
+		1692,
+		1693,
+		1694,
+		1695,
+		1696,
+		1697,
+		1698,
+		1699,
+		1700,
+		1701,
+		1702,
+		1703,
+		1704,
+		1705,
+		1706,
+		1707,
+		1708,
+		1709,
+		1710,
+		1711,
+		1712,
+		1713,
+		1716,
+		1717,
+		1718,
+		1719,
+		1720,
+		1721,
+		1722,
+		1725,
+		1726,
+		1727,
+		1728,
+		1729,
+		1730,
+		1731,
 		10011,
 		10012,
 		10013,
@@ -11655,5 +18603,3 @@ pg.memory_template = {
 		10080
 	}
 }
-
-return

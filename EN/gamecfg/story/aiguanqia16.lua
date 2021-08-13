@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA16",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 301050,
@@ -53,8 +53,8 @@ return {
 			actor = 10400040,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "Kizuna AI",
+			dir = 1,
 			say = "Understood!",
 			typewriter = {
 				speed = 0.05,
@@ -66,14 +66,14 @@ return {
 			}
 		},
 		{
-			side = 1,
-			dir = 1,
 			actor = 301050,
+			side = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Look over there. There's a very conspicuous random word generator just sitting there...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -176,8 +176,8 @@ return {
 			expression = 3,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "Yaaay! I didn't think I'd find my random word generator in a place like this~!!",
 			typewriter = {
@@ -205,8 +205,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -215,8 +215,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "MENACING!!",
 			dialogShake = {
 				speed = 0.09,
@@ -236,8 +236,8 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "Eh? What's going on? Wait! Get away! Stay away from me! No, no, no, no, no!",
 			typewriter = {
@@ -250,8 +250,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -263,8 +263,8 @@ return {
 			expression = 2,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "AAAAAaaaaaaaAAAAAAAAaaaAAAAAHHHHH...",
 			typewriter = {
@@ -279,15 +279,15 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			withoutActorName = true,
 			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			withoutActorName = true,
 			nameColor = "#a9f548",
+			actorScale = 3.5,
 			say = "   ",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -308,8 +308,8 @@ return {
 			},
 			action = {
 				{
-					y = -1650,
 					type = "move",
+					y = -1650,
 					delay = 1.5,
 					dur = 2.5,
 					x = 0
@@ -373,10 +373,10 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			actorName = "Kizuna AI Titan",
+			actorScale = 3.5,
 			say = "………",
 			actorPosition = {
 				x = 150,
@@ -395,10 +395,10 @@ return {
 			expression = 2,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			actorName = "Kizuna AI Titan",
+			actorScale = 3.5,
 			say = "Haah... so tired, so damn tired... Why am I fighting in a place like this anyway... Come to think of it, I was just minding my own business, shooting a video... Isn't it strange that I've turned into this?",
 			actorPosition = {
 				x = 150,
@@ -417,10 +417,10 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#ff5c5c",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			actorName = "Kizuna AI Titan",
+			actorScale = 3.5,
 			say = "And now, my body's turned into this monstrosity... Maybe it's better to just completely destroy this world. Maybe that's how I can get back home...?",
 			actorPosition = {
 				x = 150,
@@ -438,12 +438,12 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			say = "Ahh... what a pain in the ass... I'll just let my clones run rampant and call it a day...",
 			actorName = "Kizuna AI Titan",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#ff5c5c",
+			actorScale = 3.5,
+			say = "Ahh... what a pain in the ass... I'll just let my clones run rampant and call it a day...",
 			actorPosition = {
 				x = 150,
 				y = -900
@@ -458,8 +458,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "KABOOOOM!!",
 			effects = {
 				{
@@ -492,10 +492,10 @@ return {
 			}
 		},
 		{
+			actor = 301050,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
-			actor = 301050,
 			say = "We can't break through to her... She can't hear us at all...",
 			effects = {
 				{
@@ -603,8 +603,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

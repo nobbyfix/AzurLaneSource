@@ -7,13 +7,13 @@ return {
 			style = {
 				text = "Our next mission is to support the Eagles' aviation fleet combat drills. Tap <color=#ff7d36>Attack</color> to get started.",
 				mode = 2,
-				dir = 1,
 				posY = 61.61,
+				dir = 1,
 				posX = 261.62
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,8 +28,8 @@ return {
 			style = {
 				text = "Hornet must be hiding somewhere here. If you can crush her then the sea is yours!",
 				mode = 2,
-				dir = 1,
 				posY = -351,
+				dir = 1,
 				posX = -257
 			}
 		},
@@ -38,14 +38,14 @@ return {
 			style = {
 				text = "Commander, we must first test your skills in defeating the enemy vanguard.",
 				mode = 2,
-				dir = 1,
 				posY = -351,
+				dir = 1,
 				posX = -257
 			},
 			baseui = {
 				delay = 0.2,
-				pathIndex = 0,
-				path = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/cells/chapter_cell_4_6/attachment"
+				path = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/cells/chapter_cell_4_6/attachment",
+				pathIndex = 0
 			}
 		},
 		{
@@ -53,20 +53,17 @@ return {
 			style = {
 				text = "We've located Hornet! Let's move towards the target.~",
 				mode = 2,
-				dir = 1,
 				posY = -351,
+				dir = 1,
 				posX = -257
 			},
 			ui = {
-				scale = 1.8,
-				eventPath = "/LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_6",
-				delay = 1,
-				pathIndex = -1,
 				path = "/LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/cells/chapter_cell_4_6/attachment",
-				pos = {
-					x = 63.1,
-					y = 67.7
-				},
+				eventPath = "/LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_6",
+				isLevelPoint = true,
+				delay = 1,
+				scale = 1.8,
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

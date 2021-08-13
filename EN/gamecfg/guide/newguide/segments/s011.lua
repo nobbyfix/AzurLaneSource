@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "Why not open up your <color=#ff7d36>Mission Log</color>?",
 				mode = 2,
-				dir = 1,
 				posY = -123,
+				dir = 1,
 				posX = 87.7
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/bottomPanel/btm/buttons_container/taskButton",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -26,8 +26,8 @@ return {
 			alpha = 0.375,
 			waitScene = "TaskScene",
 			ui = {
-				pathIndex = -1,
 				path = "/UICamera/Canvas/UIMain/TaskScene(Clone)/blur_panel/adapt/left_length/frame/tagRoot/scenario",
+				pathIndex = -1,
 				triggerType = {
 					2
 				},
@@ -43,14 +43,14 @@ return {
 			style = {
 				text = "Collect your <color=#ff7d36>mission rewards.</color>.",
 				mode = 2,
-				dir = 1,
 				posY = 183,
+				dir = 1,
 				posX = 474
 			},
 			ui = {
-				pathIndex = -1,
 				delay = 1,
-				path = "/UICamera/Canvas/UIMain/TaskScene(Clone)/taskBGCenter/right_panel/content/0/frame/get_btn",
+				path = "/UICamera/Canvas/UIMain/TaskScene(Clone)/pages/TaskListPage(Clone)/right_panel/mask/content/0/frame/get_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

@@ -1,13 +1,13 @@
 return {
 	{},
-	time = 0,
-	name = "专属弹幕",
 	init_effect = "",
-	id = 29491,
+	name = "专属弹幕",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主炮每进行15次攻击，触发专属弹幕-黛朵I",
 	stack = 1,
-	color = "red",
+	id = 29491,
 	icon = 29490,
 	last_effect = "",
 	effect_list = {
@@ -30,8 +30,8 @@ return {
 				"onBattleBuffCount"
 			},
 			arg_list = {
-				skill_id = 29491,
 				target = "TargetSelf",
+				skill_id = 29491,
 				countType = 29490
 			}
 		}

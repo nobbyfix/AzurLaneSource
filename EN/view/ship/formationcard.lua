@@ -3,7 +3,7 @@ slot1 = 0
 slot2 = 1
 slot3 = 2
 
-slot0.Ctor = function (slot0, slot1)
+function slot0.Ctor(slot0, slot1)
 	slot0.go = slot1
 	slot0.tr = slot1.transform
 	slot0.content = slot0.tr:Find("content")
@@ -14,7 +14,7 @@ slot0.Ctor = function (slot0, slot1)
 	slot0.shipType = slot0.detailTF:Find("top/type")
 	slot0.propsTr = slot0.detailTF:Find("info")
 	slot0.propsTr1 = slot0.detailTF:Find("info1")
-	slot0.nameTxt = ScrollTxt.New(findTF(slot0.detailTF, "name_mask"), findTF(slot0.detailTF, "name_mask/name"))
+	slot0.nameTxt = slot0.detailTF:Find("name_mask/name")
 	slot0.frame = slot0.content:Find("front/frame")
 	slot0.UIlist = UIItemList.New(slot0.content:Find("front/stars"), slot0.content:Find("front/stars/star_tpl"))
 	slot0.shipState = slot0.content:Find("front/flag")
@@ -24,7 +24,7 @@ slot0.Ctor = function (slot0, slot1)
 	setActive(slot0.shipState, false)
 end
 
-slot0.update = function (slot0, slot1)
+function slot0.update(slot0, slot1)
 	if slot1 then
 		setActive(slot0.content, true)
 
@@ -36,58 +36,64 @@ slot0.update = function (slot0, slot1)
 	end
 end
 
-slot0.flush = function (slot0)
-	setAnchoredPosition(slot0.lvTxt.gameObject, {
-		x = (slot0.shipVO:isBluePrintShip() and -18) or -7.5
-	})
-
+function slot0.flush(slot0)
+	slot1 = slot0.shipVO
 	slot0.lvTxt.text = "Lv." .. slot1.level
 	slot3 = slot1:getStar()
 
 	slot0.UIlist:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			setActive(slot2:Find("star"), slot1 < slot0)
+			setActive(slot2:Find("star"), slot1 < uv0)
 		end
 	end)
-	slot0.UIlist:align(setAnchoredPosition)
-	slot0.nameTxt:setText(slot1:getName())
+	slot0.UIlist:align(slot1:getMaxStar())
+	setScrollText(slot0.nameTxt, slot1:getName())
 	slot0:updateProps({})
 	setPaintingPrefabAsync(slot0.paintingTr, slot1:getPainting(), "biandui")
-	setRectShipCardFrame(slot0.frame, slot0.shipVO:rarity2bgPrint(), (slot1.propose and "prop" .. ((slot1:isBluePrintShip() and ) or "")) or nil)
-	GetSpriteFromAtlasAsync("bg/star_level_card_" .. , "", function (slot0)
-		slot0.bgImage.sprite = slot0
+
+	slot4 = slot0.shipVO:rarity2bgPrint()
+	slot5 = nil
+
+	setRectShipCardFrame(slot0.frame, slot4, slot1.propose and "prop" .. ((slot1:isBluePrintShip() or slot1:isMetaShip()) and slot4 or "") or nil)
+	GetSpriteFromAtlasAsync("bg/star_level_card_" .. slot4, "", function (slot0)
+		uv0.bgImage.sprite = slot0
 	end)
 	setImageSprite(slot0.shipType, GetSpriteFromAtlas("shiptype", shipType2print(slot0.shipVO:getShipType())))
 
-	slot6 = nil
-	slot7 = false
+	slot7 = nil
+	slot8 = false
 
 	if slot1.propose then
-		slot6 = "duang_6_jiehun" .. ((slot1:isBluePrintShip() and "_tuzhi") or "") .. "_1"
+		if slot1:isMetaShip() then
+			slot7 = "duang_meta_jiehun_1"
+		else
+			slot7 = "duang_6_jiehun" .. (slot1:isBluePrintShip() and "_tuzhi" or "") .. "_1"
+		end
+	elseif slot1:isMetaShip() then
+		slot7 = "duang_meta_1"
 	elseif slot1:getRarity() == 6 then
-		slot6 = "duang_6_1"
+		slot7 = "duang_6_1"
 	end
 
-	if slot6 then
+	if slot7 then
 		eachChild(slot0.otherBg, function (slot0)
-			setActive(slot0, slot0.name == slot0 .. "(Clone)")
+			setActive(slot0, slot0.name == uv0 .. "(Clone)")
 
-			slot1 = setActive or slot0.name == slot0 .. "(Clone)"
-			slot1 = slot1
+			uv1 = uv1 or slot0.name == uv0 .. "(Clone)"
 		end)
 
-		if not slot7 then
-			PoolMgr.GetInstance():GetPrefab("effect/" .. slot6, "", true, function (slot0)
-				setParent(slot0, slot0.otherBg)
+		if not slot8 then
+			PoolMgr.GetInstance():GetPrefab("effect/" .. slot7, "", true, function (slot0)
+				setParent(slot0, uv0.otherBg)
 			end)
 		end
 	end
 
-	setActive(slot0.otherBg, slot6)
+	setActive(slot0.otherBg, slot7)
 end
 
-slot0.updateProps = function (slot0, slot1)
-	for slot5 = 0, 2, 1 do
+function slot0.updateProps(slot0, slot1)
+	for slot5 = 0, 2 do
 		slot6 = slot0.propsTr:GetChild(slot5)
 
 		if slot5 < #slot1 then
@@ -101,8 +107,8 @@ slot0.updateProps = function (slot0, slot1)
 	end
 end
 
-slot0.updateProps1 = function (slot0, slot1)
-	for slot5 = 0, 2, 1 do
+function slot0.updateProps1(slot0, slot1)
+	for slot5 = 0, 2 do
 		slot6 = slot0.propsTr1:GetChild(slot5)
 
 		if slot5 < #slot1 then
@@ -116,15 +122,9 @@ slot0.updateProps1 = function (slot0, slot1)
 	end
 end
 
-slot0.clear = function (slot0)
+function slot0.clear(slot0)
 	if slot0.shipVO then
 		retPaintingPrefab(slot0.paintingTr, slot1:getPainting())
-	end
-
-	if slot0.nameTxt then
-		slot0.nameTxt:destroy()
-
-		slot0.nameTxt = nil
 	end
 end
 

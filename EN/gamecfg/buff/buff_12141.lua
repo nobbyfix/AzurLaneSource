@@ -7,8 +7,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.04,
-					attr = "cri",
 					index = {
 						1,
 						2,
@@ -22,8 +22,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 450,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 450
 				}
 			}
 		}
@@ -36,8 +36,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.056,
-					attr = "cri",
 					index = {
 						1,
 						2,
@@ -51,8 +51,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 520,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 520
 				}
 			}
 		}
@@ -65,8 +65,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.072,
-					attr = "cri",
 					index = {
 						1,
 						2,
@@ -80,8 +80,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 600
 				}
 			}
 		}
@@ -94,8 +94,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.088,
-					attr = "cri",
 					index = {
 						1,
 						2,
@@ -109,8 +109,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 700
 				}
 			}
 		}
@@ -123,8 +123,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.104,
-					attr = "cri",
 					index = {
 						1,
 						2,
@@ -138,8 +138,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 770,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 770
 				}
 			}
 		}
@@ -152,8 +152,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.12,
-					attr = "cri",
 					index = {
 						1,
 						2,
@@ -167,8 +167,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 850,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 850
 				}
 			}
 		}
@@ -181,8 +181,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.14,
-					attr = "cri",
 					index = {
 						1,
 						2,
@@ -196,8 +196,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 950,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 950
 				}
 			}
 		}
@@ -210,8 +210,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.16,
-					attr = "cri",
 					index = {
 						1,
 						2,
@@ -225,8 +225,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1020,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1020
 				}
 			}
 		}
@@ -239,8 +239,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
+					attr = "cri",
 					number = 0.18,
-					attr = "cri",
 					index = {
 						1,
 						2,
@@ -254,8 +254,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1100,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1100
 				}
 			}
 		}
@@ -268,8 +268,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.2,
 					attr = "cri",
+					number = 0.2,
 					index = {
 						1,
 						2,
@@ -283,20 +283,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1200,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1200
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "铁血领主",
 	init_effect = "jinengchufared",
-	id = 12141,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "提高装填、123槽暴击率",
 	stack = 1,
-	color = "yellow",
+	id = 12141,
 	icon = 12140,
 	last_effect = "",
 	blink = {

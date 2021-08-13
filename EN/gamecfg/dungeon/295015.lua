@@ -1,13 +1,13 @@
 return {
 	map_id = 10001,
-	id = 1060400,
+	id = 295015,
 	stages = {
 		{
 			stageIndex = 1,
 			failCondition = 1,
-			timeCount = 180,
-			backGroundStageID = 1,
+			timeCount = 90,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -62,272 +62,74 @@ return {
 					triggerParam = {},
 					spawn = {
 						{
-							monsterTemplateID = 209402,
+							monsterTemplateID = 294055,
 							score = 0,
 							delay = 0,
 							moveCast = true,
-							corrdinate = {
-								0,
-								0,
-								75
-							},
-							buffList = {
-								8001,
-								8007
-							}
-						},
-						{
-							monsterTemplateID = 209401,
-							score = 0,
-							delay = 0,
-							moveCast = true,
+							affix = true,
 							corrdinate = {
 								-10,
 								0,
 								55
 							},
-							buffList = {
-								8001,
-								8007
-							}
-						},
-						{
-							monsterTemplateID = 209401,
-							score = 0,
-							delay = 0,
-							moveCast = true,
-							corrdinate = {
-								0,
-								0,
-								35
+							bossData = {
+								hpBarNum = 100,
+								icon = "sairenhangmu"
 							},
-							buffList = {
-								8001,
-								8007
-							}
-						}
-					}
-				},
-				{
-					triggerType = 0,
-					key = true,
-					waveIndex = 102,
-					conditionType = 1,
-					preWaves = {
-						101
-					},
-					triggerParam = {},
-					spawn = {
-						{
-							monsterTemplateID = 209202,
-							score = 0,
-							delay = 0,
-							moveCast = true,
-							reinforceDelay = 4,
-							corrdinate = {
-								0,
-								0,
-								65
-							},
-							buffList = {
-								8001,
-								8007
-							}
-						},
-						{
-							monsterTemplateID = 209202,
-							score = 0,
-							delay = 0,
-							moveCast = true,
-							reinforceDelay = 4,
-							corrdinate = {
-								0,
-								0,
-								45
-							},
-							buffList = {
-								8001,
-								8007
-							}
-						}
-					},
-					reinforcement = {
-						{
-							monsterTemplateID = 209502,
-							score = 0,
-							delay = 0,
-							moveCast = true,
-							corrdinate = {
-								30,
-								0,
-								80
-							},
-							buffList = {
-								8001,
-								8002
-							}
-						},
-						{
-							monsterTemplateID = 209502,
-							score = 0,
-							delay = 0,
-							moveCast = true,
-							corrdinate = {
-								30,
-								0,
-								30
-							},
-							buffList = {
-								8001,
-								8002
-							}
-						}
-					}
-				},
-				{
-					key = true,
-					triggerType = 0,
-					waveIndex = 103,
-					conditionType = 1,
-					preWaves = {
-						102
-					},
-					triggerParam = {},
-					spawn = {
-						{
-							monsterTemplateID = 209402,
-							score = 0,
-							reinforceDelay = 2,
-							delay = 0,
-							moveCast = true,
-							corrdinate = {
-								-10,
-								0,
-								55
-							}
-						}
-					},
-					reinforcement = {
-						{
-							monsterTemplateID = 209401,
-							score = 0,
-							delay = 2,
-							moveCast = true,
-							corrdinate = {
-								20,
-								0,
-								75
-							},
-							buffList = {
-								8001,
-								8007
-							}
-						},
-						{
-							monsterTemplateID = 209401,
-							score = 0,
-							delay = 2,
-							moveCast = true,
-							corrdinate = {
-								20,
-								0,
-								35
-							},
-							buffList = {
-								8001,
-								8007
-							}
-						}
-					},
-					airFighter = {
-						{
-							interval = 10,
-							onceNumber = 3,
-							formation = 10006,
-							templateID = 1000900,
-							delay = 0,
-							totalNumber = 6,
-							weaponID = {
-								531204
-							},
-							attr = {
-								airPower = 40,
-								maxHP = 15,
-								attackRating = 23
-							}
-						}
-					}
-				},
-				{
-					key = true,
-					triggerType = 0,
-					waveIndex = 104,
-					conditionType = 1,
-					preWaves = {
-						103
-					},
-					triggerParam = {},
-					spawn = {
-						{
-							monsterTemplateID = 209403,
-							score = 0,
-							reinforceDelay = 2,
-							delay = 0,
-							moveCast = true,
-							corrdinate = {
-								-10,
-								0,
-								55
-							}
-						}
-					},
-					reinforcement = {
-						{
-							monsterTemplateID = 209401,
-							score = 0,
-							delay = 2,
-							moveCast = true,
-							corrdinate = {
-								20,
-								0,
-								75
-							},
-							buffList = {
-								8001,
-								8007
-							}
-						},
-						{
-							monsterTemplateID = 209401,
-							score = 0,
-							delay = 2,
-							moveCast = true,
-							corrdinate = {
-								20,
-								0,
-								35
-							},
-							buffList = {
-								8001,
-								8007
-							}
-						}
-					},
-					airFighter = {
-						{
-							interval = 10,
-							onceNumber = 3,
-							formation = 10006,
-							templateID = 1000900,
-							delay = 0,
-							totalNumber = 6,
-							weaponID = {
-								531204
-							},
-							attr = {
-								airPower = 40,
-								maxHP = 15,
-								attackRating = 23
+							phase = {
+								{
+									switchParam = 45,
+									switchTo = 1,
+									index = 0,
+									switchType = 1,
+									setAI = 10001,
+									addWeapon = {
+										2009000,
+										2009001,
+										2009002,
+										2009016,
+										2009100
+									},
+									addRandomWeapon = {
+										{
+											2009010
+										},
+										{
+											2009012
+										},
+										{
+											2009014
+										}
+									}
+								},
+								{
+									switchType = 1,
+									switchTo = 2,
+									index = 1,
+									switchParam = 2,
+									setAI = 100000,
+									removeWeapon = {
+										2009000,
+										2009001,
+										2009002,
+										2009100
+									}
+								},
+								{
+									switchType = 1,
+									switchTo = 2,
+									index = 2,
+									switchParam = 120,
+									setAI = 10001,
+									removeWeapon = {
+										2009230
+									},
+									addWeapon = {
+										2009420,
+										2009400,
+										2009430
+									}
+								}
 							}
 						}
 					}
@@ -336,7 +138,7 @@ return {
 					triggerType = 8,
 					waveIndex = 900,
 					preWaves = {
-						104
+						101
 					},
 					triggerParams = {}
 				}

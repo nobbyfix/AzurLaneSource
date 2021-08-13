@@ -1,12 +1,12 @@
 return {
 	fadeOut = 1.5,
-	once = true,
-	fadeType = 1,
-	fadein = 1.5,
 	mode = 2,
 	noWaitFade = true,
+	once = true,
+	fadeType = 1,
 	id = "ZHONGQIU4",
 	updateOnBegin = 1,
+	fadein = 1.5,
 	scripts = {
 		{
 			actor = 107030,
@@ -107,7 +107,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "Just so happens that fate has brought you two here, it's getting late now so if you both don't mind, how about staying for dinner. Today we're celebrating a festival from my country --- the Mid-Autumn Festival.",
+			say = "Since you're already here, how about staying for dinner since it's already getting late? Today we're celebrating a festival from the Dragon Empery — the Mid-Autumn Festival!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -193,14 +193,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 107030,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "Sis, let's make them together! Let's see who can make them better!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -310,13 +310,13 @@ return {
 		{
 			actor = 107030,
 			side = 2,
-			dir = -1,
 			hideOther = true,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "Yeah! I'm done at last - yay, was I the slowest? With help from others, I thought could've at least finished in the middle...",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "Tap here for details on the Harbor Defense mechanic!",
 				mode = 1,
-				dir = -1,
 				posY = 172,
+				dir = -1,
 				posX = -337
 			},
 			ui = {

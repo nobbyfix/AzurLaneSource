@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 10,
-	name = "小齐柏林1",
 	init_effect = "",
-	id = 12094,
+	name = "小齐柏林1",
+	time = 10,
+	color = "red",
 	picture = "",
 	desc = "重置",
 	stack = 1,
-	color = "red",
+	id = 12094,
 	icon = 12090,
 	last_effect = "",
 	effect_list = {
@@ -49,8 +49,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 12091,
-				target = "TargetSelf",
 				time = 4,
+				target = "TargetSelf",
 				quota = 1
 			}
 		}

@@ -1,74 +1,83 @@
 ys = ys or {}
-slot1 = ys.Battle.BattleConst
-slot2 = ys.Battle.BattleConfig
-slot3 = class("BattleEnvironmentUnit")
-ys.Battle.BattleEnvironmentUnit = slot3
-slot3.__name = "BattleEnvironmentUnit"
+slot0 = ys
+slot1 = slot0.Battle.BattleConst
+slot2 = slot0.Battle.BattleConfig
+slot3 = slot0.Battle.BattleDataFunction
+slot4 = class("BattleEnvironmentUnit")
+slot0.Battle.BattleEnvironmentUnit = slot4
+slot4.__name = "BattleEnvironmentUnit"
 
-slot3.Ctor = function (slot0, slot1, slot2)
-	slot0.EventDispatcher.AttachEventDispatcher(slot0)
+function slot4.Ctor(slot0, slot1, slot2)
+	uv0.EventDispatcher.AttachEventDispatcher(slot0)
 
 	slot0._uid = slot1
 end
 
-slot3.GetUniqueID = function (slot0)
+function slot4.ConfigCallback(slot0, slot1)
+	slot0._callback = slot1
+end
+
+function slot4.GetUniqueID(slot0)
 	return slot0._uid
 end
 
-slot3.SetTemplate = function (slot0, slot1)
+function slot4.SetTemplate(slot0, slot1)
 	slot0._template = slot1
 
 	slot0:initBehaviours()
 end
 
-slot3.SetAOEData = function (slot0, slot1)
+function slot4.SetAOEData(slot0, slot1)
 	slot0._expireTimeStamp = pg.TimeMgr.GetInstance():GetCombatTime() + slot0._template.life_time
 	slot0._aoeData = slot1
 end
 
-slot3.GetAOEData = function (slot0)
+function slot4.GetAOEData(slot0)
 	return slot0._aoeData
 end
 
-slot3.GetBehaviours = function (slot0)
+function slot4.GetBehaviours(slot0)
 	return slot0._behaviours
 end
 
-slot3.GetTemplate = function (slot0)
+function slot4.GetTemplate(slot0)
 	return slot0._template
 end
 
-slot3.UpdateFrequentlyCollide = function (slot0, slot1)
+function slot4.UpdateFrequentlyCollide(slot0, slot1)
 	for slot5, slot6 in ipairs(slot0._behaviours) do
 		slot6:UpdateCollideUnitList(slot1)
 	end
 end
 
-slot3.Update = function (slot0)
+function slot4.Update(slot0)
 	for slot4, slot5 in ipairs(slot0._behaviours) do
 		slot5:OnUpdate()
 	end
 end
 
-slot3.IsExpire = function (slot0, slot1)
+function slot4.IsExpire(slot0, slot1)
 	return slot0._expireTimeStamp < slot1
 end
 
-slot3.Dispose = function (slot0)
+function slot4.Dispose(slot0)
+	if slot0._callback then
+		slot0._callback()
+	end
+
 	for slot4, slot5 in ipairs(slot0._behaviours) do
 		slot5:Dispose()
 	end
 end
 
-slot3.initBehaviours = function (slot0)
+function slot4.initBehaviours(slot0)
 	slot0._behaviours = {}
 
-	for slot5, slot6 in ipairs(slot1) do
-		slot7 = slot0.Battle.BattleEnvironmentBehaviour.CreateBehaviour(slot6)
+	for slot6, slot7 in ipairs(uv0.GetEnvironmentBehaviour(slot0._template.behaviours).behaviour_list) do
+		slot8 = uv1.Battle.BattleEnvironmentBehaviour.CreateBehaviour(slot7)
 
-		slot7:SetTemplate(slot6)
-		table.insert(slot0._behaviours, slot7)
+		slot8:SetUnitRef(slot0)
+		slot8:SetTemplate(slot7)
+		table.insert(slot0._behaviours, slot8)
 	end
 end
-
-return

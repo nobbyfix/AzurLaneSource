@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "指挥喵天赋-不动如山",
 	init_effect = "jinengchufared",
+	name = "指挥喵天赋-不动如山",
+	time = 0,
 	picture = "",
 	desc = "舰队成员受到伤害降低3%",
 	stack = 2,
@@ -16,8 +16,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = -0.03,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.03
 			}
 		}
 	}

@@ -1,20 +1,20 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "DONGHUO17",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 1,
 			side = 2,
-			stopbgm = true,
 			actorName = "Dearmweaver",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
 			actor = 900136,
-			nameColor = "#a9f548",
+			stopbgm = true,
 			say = "“The Creator said to them, I recently saw Calamity fall from the sky, like a flash of lightning.”",
 			typewriter = {
 				speed = 0.05,
@@ -29,9 +29,9 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
+			actor = 900136,
 			dir = 1,
 			blackBg = true,
-			actor = 900136,
 			actorName = "Dearmweaver",
 			say = "“All those who followed its rebellion turned into the ugliest of images, but they all still retained their glowing wings.”",
 			typewriter = {
@@ -47,9 +47,9 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
+			actor = 900136,
 			dir = 1,
 			blackBg = true,
-			actor = 900136,
 			actorName = "Dearmweaver",
 			say = "“The Creator cannot bear to see his most beloved work being sullied, to allow them to even glow from the depths of the Underworld.”",
 			typewriter = {
@@ -65,9 +65,9 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
+			actor = 900136,
 			dir = 1,
 			blackBg = true,
-			actor = 900136,
 			actorName = "Dearmweaver",
 			say = "Humanity really likes to make things interesting...",
 			typewriter = {
@@ -80,12 +80,12 @@ return {
 			}
 		},
 		{
+			actor = 900136,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "Dearmweaver",
 			dir = 1,
 			blackBg = true,
-			actor = 900136,
-			actorName = "Dearmweaver",
 			say = "But, the terminal currently does not possess the capability of fighting her...",
 			typewriter = {
 				speed = 0.05,
@@ -97,12 +97,12 @@ return {
 			}
 		},
 		{
+			actor = 900136,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "Dearmweaver",
 			dir = 1,
 			blackBg = true,
-			actor = 900136,
-			actorName = "Dearmweaver",
 			say = "Fine... next I will ask you all to take a trip to the “Underworld”...",
 			typewriter = {
 				speed = 0.05,
@@ -114,12 +114,12 @@ return {
 			}
 		},
 		{
+			actor = 900136,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "Dearmweaver",
 			dir = 1,
 			blackBg = true,
-			actor = 900136,
-			actorName = "Dearmweaver",
 			say = "The Tribunal",
 			typewriter = {
 				speed = 0.05,

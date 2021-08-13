@@ -3,7 +3,7 @@ slot1 = import("Mgr/Pool/PoolUtil")
 slot2 = import(".BundlePackage")
 slot3 = import(".BundlePrefabPlural")
 
-slot0.Ctor = function (slot0, slot1)
+function slot0.Ctor(slot0, slot1)
 	slot0.root = slot1 or GameObject.Find("__Pool__").transform
 	slot0.pools_plural = {}
 	slot0.pools_pack = {}
@@ -12,15 +12,15 @@ slot0.Ctor = function (slot0, slot1)
 	slot0.refCount = 0
 end
 
-slot0.FromPack = function (slot0, slot1, slot2, slot3, slot4, slot5)
+function slot0.FromPack(slot0, slot1, slot2, slot3, slot4, slot5)
 	if not slot0.pools_pack[slot1] then
-		slot0.pools_pack[slot1] = slot0.New(slot1)
+		slot0.pools_pack[slot1] = uv0.New(slot1)
 	end
 
 	slot0.pools_pack[slot1]:Add(slot2, slot3, slot4, slot5)
 end
 
-slot0.DecreasPack = function (slot0, slot1, slot2)
+function slot0.DecreasPack(slot0, slot1, slot2)
 	if slot0.pools_pack[slot1] then
 		slot3 = slot0.pools_pack[slot1]:Remove(slot2)
 
@@ -32,7 +32,7 @@ slot0.DecreasPack = function (slot0, slot1, slot2)
 	end
 end
 
-slot0.DestroyPack = function (slot0, slot1)
+function slot0.DestroyPack(slot0, slot1)
 	if slot0.pools_pack[slot1] then
 		slot0.pools_pack[slot1]:Clear()
 
@@ -40,32 +40,29 @@ slot0.DestroyPack = function (slot0, slot1)
 	end
 end
 
-slot0.FromPlural = function (slot0, slot1, slot2, slot3, slot4, slot5)
+function slot0.FromPlural(slot0, slot1, slot2, slot3, slot4, slot5)
 	function slot7()
-		slot0.pools_plural[slot1].index = slot0.pluralIndex
-		slot0.pluralIndex = 
-		-- Decompilation error in this vicinity:
-		slot0.pluralIndex + 1
+		slot0 = uv0.pools_plural[uv1]
+		slot0.index = uv0.pluralIndex
+		uv0.pluralIndex = uv0.pluralIndex + 1
 
-
-		-- Decompilation error in this vicinity:
-		slot0.pluralIndex + 1(slot0.pools_plural[slot1]:Dequeue())
+		uv2(slot0:Dequeue())
 	end
 
 	if not slot0.pools_plural[slot1 .. "/" .. slot2] then
 		slot0:FromPack(slot1, slot2, slot3, typeof(Object), function (slot0)
-			if not slot0.pools_plural[] then
-				slot0.pools_plural[] = slot2.New(slot0, slot2.New, false, , )
+			if not uv0.pools_plural[uv1] then
+				uv0.pools_plural[uv1] = uv2.New(slot0, uv3, false, uv4, uv5)
 			end
 
-			slot6()
+			uv6()
 		end)
 	else
 		slot7()
 	end
 end
 
-slot0.ReturnPlural = function (slot0, slot1, slot2, slot3, slot4)
+function slot0.ReturnPlural(slot0, slot1, slot2, slot3, slot4)
 	slot5 = slot1 .. "/" .. slot2
 
 	if IsNil(slot3) then
@@ -79,11 +76,11 @@ slot0.ReturnPlural = function (slot0, slot1, slot2, slot3, slot4)
 			slot0:DestroyPlural(slot1, slot2)
 		end
 	else
-		slot0.Destroy(slot3)
+		uv0.Destroy(slot3)
 	end
 end
 
-slot0.DestroyPlural = function (slot0, slot1, slot2)
+function slot0.DestroyPlural(slot0, slot1, slot2)
 	if slot0.pools_plural[slot1 .. "/" .. slot2] then
 		slot5, slot6 = slot4:GetPathName()
 
@@ -99,70 +96,68 @@ end
 
 slot4 = 64
 
-slot0.GetPrefab = function (slot0, slot1, slot2, slot3, slot4, slot5)
-	slot6 = slot4
+function slot0.GetPrefab(slot0, slot1, slot2, slot3, slot4, slot5)
+	slot0:FromPlural(slot1, slot2, slot3, slot5 or uv0, function (slot0)
+		uv0 = nil
 
-	slot0:FromPlural(slot1, slot2, slot3, slot5 or slot0, function (slot0)
-		slot0 = nil
-
-		if slot1 then
+		if uv1 then
 			slot0:SetActive(true)
-			slot0:SetActive()
+			uv1(slot0)
 		else
-			slot2:ReturnPrefab(slot3, slot4, slot0, false)
+			uv2:ReturnPrefab(uv3, uv4, slot0, false)
 		end
 	end)
 
 	return function ()
-		slot0 = nil
+		uv0 = nil
 	end
 end
 
-slot0.ReturnPrefab = function (slot0, slot1, slot2, slot3, slot4)
+function slot0.ReturnPrefab(slot0, slot1, slot2, slot3, slot4)
 	slot0:ReturnPlural(slot1, slot2, slot3, slot4)
 end
 
-slot0.GetSpineChar = function (slot0, slot1, slot2, slot3)
-	slot5 = slot3
-
-	function slot6()
-		slot0 = nil
+function slot0.GetSpineChar(slot0, slot1, slot2, slot3)
+	function slot5()
+		uv0 = nil
 	end
 
-	function slot8()
-		slot0.pools_plural[slot1].index = slot0.pluralIndex
-		slot0.pluralIndex = slot0.pluralIndex + 1
-		slot2 = nil
+	function slot7()
+		uv0.pools_plural[uv1].index = uv0.pluralIndex
+		uv0.pluralIndex = uv0.pluralIndex + 1
+		uv2 = nil
 
-		if slot3 then
+		if uv3 then
 			slot1 = slot0:Dequeue()
 
 			slot1:SetActive(true)
-			slot1(slot1)
+			uv3(slot1)
 		else
-			slot0:ExcessSpineChar()
+			uv0:ExcessSpineChar()
 		end
 	end
 
 	if not slot0.pools_plural["char/" .. slot1] then
 		slot0:FromPack(slot4, slot1 .. "_SkeletonData", slot2, nil, function (slot0)
-			if not slot0.pools_plural[] then
-				SpineAnimUI.AnimChar(slot2, slot0).SetActive(slot0, false)
+			if not uv0.pools_plural[uv1] then
+				slot0 = SpineAnimUI.AnimChar(uv2, slot0)
 
-				slot0.pools_plural[] = false.New(SpineAnimUI.AnimChar(slot2, slot0), 1, true, , slot0.pools_plural)
+				slot0:SetActive(false)
+
+				uv0.pools_plural[uv1] = uv3.New(slot0, 1, true, uv4, uv2)
 			end
 
-			slot5()
+			uv5()
 		end)
 	else
-		slot8()
+		slot7()
 	end
 
-	return slot6
+	return slot5
 end
 
-slot0.ReturnSpineChar = function (slot0, slot1, slot2)
-	slot4 = slot3 .. "/" .. slot1
+function slot0.ReturnSpineChar(slot0, slot1, slot2)
+	slot4 = "char/" .. slot1 .. "/" .. slot1
 
 	if IsNil(slot2) then
 		Debugger.LogError("empty go: " .. slot1)
@@ -178,11 +173,11 @@ slot0.ReturnSpineChar = function (slot0, slot1, slot2)
 		slot0.pools_plural[slot4]:Enqueue(slot2)
 		slot0:ExcessSpineChar()
 	else
-		slot0.Destroy(slot2)
+		uv0.Destroy(slot2)
 	end
 end
 
-slot0.ExcessSpineChar = function (slot0)
+function slot0.ExcessSpineChar(slot0)
 	slot1 = 0
 	slot2 = 6
 	slot3 = {}
@@ -195,15 +190,16 @@ slot0.ExcessSpineChar = function (slot0)
 
 	if slot2 < #slot3 then
 		table.sort(slot3, function (slot0, slot1)
-			return slot0.pools_plural[slot1].index < slot0.pools_plural[slot0].index
+			return uv0.pools_plural[slot1].index < uv0.pools_plural[slot0].index
 		end)
 
-		for slot7 = slot2 + 1, #slot3, 1 do
-			slot9, slot10 = slot0.pools_plural[slot3[slot7]]:GetPathName()
+		for slot7 = slot2 + 1, #slot3 do
+			slot8 = slot3[slot7]
+			slot9, slot10 = slot0.pools_plural[slot8]:GetPathName()
 
-			slot0.pools_plural[slot3[slot7]]:Clear()
+			slot0.pools_plural[slot8]:Clear()
 
-			slot0.pools_plural[slot3[slot7]] = nil
+			slot0.pools_plural[slot8] = nil
 
 			if slot9 then
 				slot0:DecreasPack(slot9, slot10)
@@ -212,34 +208,34 @@ slot0.ExcessSpineChar = function (slot0)
 	end
 end
 
-slot0.IsSpineSkelCached = function (slot0, slot1)
+function slot0.IsSpineSkelCached(slot0, slot1)
 	return slot0.pools_pack["char/" .. slot1] and slot0.pools_pack[slot2]:Get(slot1 .. "_SkeletonData")
 end
 
-slot0.GetPainting = function (slot0, slot1, slot2, slot3)
-	slot5 = slot3
-
+function slot0.GetPainting(slot0, slot1, slot2, slot3)
 	slot0:FromPlural("painting/" .. slot1, slot1, slot2, 1, function (slot0)
-		nil.SetActive(slot0, true)
+		uv0 = nil
 
-		if Ship.DefaultFaceless(Ship.DefaultFaceless) then
+		slot0:SetActive(true)
+
+		if ShipExpressionHelper.DefaultFaceless(uv1) then
 			setActive(tf(slot0):Find("face"), true)
 		end
 
-		if slot2 then
-			slot2(slot0)
+		if uv2 then
+			uv2(slot0)
 		else
-			slot3:ReturnPainting(slot1, slot0)
+			uv3:ReturnPainting(uv1, slot0)
 		end
 	end)
 
 	return function ()
-		slot0 = nil
+		uv0 = nil
 	end
 end
 
-slot0.ReturnPainting = function (slot0, slot1, slot2)
-	slot4 = slot3 .. "/" .. slot1
+function slot0.ReturnPainting(slot0, slot1, slot2)
+	slot4 = "painting/" .. slot1 .. "/" .. slot1
 
 	if IsNil(slot2) then
 		Debugger.LogError("empty go: " .. slot1)
@@ -252,11 +248,11 @@ slot0.ReturnPainting = function (slot0, slot1, slot2)
 		slot0.pools_plural[slot4]:Enqueue(slot2)
 		slot0:ExcessPainting()
 	else
-		slot0.Destroy(slot2, true)
+		uv0.Destroy(slot2, true)
 	end
 end
 
-slot0.ExcessPainting = function (slot0)
+function slot0.ExcessPainting(slot0)
 	slot1 = 0
 	slot2 = 4
 	slot3 = {}
@@ -269,15 +265,16 @@ slot0.ExcessPainting = function (slot0)
 
 	if slot2 < #slot3 then
 		table.sort(slot3, function (slot0, slot1)
-			return slot0.pools_plural[slot1].index < slot0.pools_plural[slot0].index
+			return uv0.pools_plural[slot1].index < uv0.pools_plural[slot0].index
 		end)
 
-		for slot7 = slot2 + 1, #slot3, 1 do
-			slot9, slot10 = slot0.pools_plural[slot3[slot7]]:GetPathName()
+		for slot7 = slot2 + 1, #slot3 do
+			slot8 = slot3[slot7]
+			slot9, slot10 = slot0.pools_plural[slot8]:GetPathName()
 
-			slot0.pools_plural[slot3[slot7]]:Clear(true)
+			slot0.pools_plural[slot8]:Clear(true)
 
-			slot0.pools_plural[slot3[slot7]] = nil
+			slot0.pools_plural[slot8] = nil
 
 			if slot9 then
 				slot0:DecreasPack(slot9, slot10)
@@ -296,33 +293,31 @@ slot0.ExcessPainting = function (slot0)
 	end
 end
 
-slot0.GetSprite = function (slot0, slot1, slot2, slot3, slot4)
-	slot5 = slot4
-
+function slot0.GetSprite(slot0, slot1, slot2, slot3, slot4)
 	slot0:FromPack(slot1, slot2, slot3, typeof(Sprite), function (slot0)
-		slot0 = nil
+		uv0 = nil
 
-		if slot1 then
-			slot1(slot0)
+		if uv1 then
+			uv1(slot0)
 		else
-			slot2:DecreasPack(slot3, slot4)
+			uv2:DecreasPack(uv3, uv4)
 		end
 	end)
 
 	return function ()
-		slot0 = nil
+		uv0 = nil
 	end
 end
 
-slot0.DestroyAtlas = function (slot0, slot1)
+function slot0.DestroyAtlas(slot0, slot1)
 	slot0:DestroyPack(slot1)
 end
 
-slot0.Bind = function (slot0)
+function slot0.Bind(slot0)
 	slot0.refCount = slot0.refCount + 1
 end
 
-slot0.UnBind = function (slot0)
+function slot0.UnBind(slot0)
 	slot0.refCount = slot0.refCount - 1
 
 	if slot0.refCount <= 0 then
@@ -330,7 +325,7 @@ slot0.UnBind = function (slot0)
 	end
 end
 
-slot0.Clear = function (slot0)
+function slot0.Clear(slot0)
 	for slot4, slot5 in pairs(slot0.pools_pack) do
 		slot5:Clear()
 	end

@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "You'll have to train the Meowfficer to get it out of its little box!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -23,8 +23,8 @@ return {
 			style = {
 				text = "Give the Training button a little tap!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -36,15 +36,15 @@ return {
 			style = {
 				text = "You can queue up to <color=#A9F548>10</color> Cat Boxes, but only <color=#A9F548>4</color> can be trained at a time!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			}
 		},
 		{
 			ui = {
-				customSize = true,
 				scale = 1,
+				customSize = true,
 				path = "/OverlayCamera/Overlay/UIMain/CommanderBoxesUI(Clone)/buildpool_panel/frame/bg/content/list/2/icon",
 				triggerType = {
 					3

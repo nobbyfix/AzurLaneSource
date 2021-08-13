@@ -3,28 +3,28 @@ return {
 	events = {
 		{
 			delay = 0,
-			waitScene = "MainUI",
-			alpha = 0.4,
 			code = 2,
+			alpha = 0.4,
+			waitScene = "MainUI",
 			style = {
-				text = "指挥官，军部为港区派遣了能够在水下作战的舰娘协助我们，快去迎接一下新的伙伴吧",
+				text = "Commander, the Naval HQ has dispatched a shipgirl who will be able to fight underwater. Let's go meet her!",
 				mode = 1,
-				dir = 1,
 				scene = "BIANDUI",
 				posY = -110,
+				dir = 1,
 				posX = 200,
 				ui = {
-					pathIndex = 0,
-					path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button"
+					path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button",
+					pathIndex = 0
 				}
 			},
 			ui = {
+				pathIndex = 0,
 				eventPath = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button",
 				delay = 0,
-				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button",
 				eventIndex = 1,
 				scale = 1,
-				pathIndex = 0,
+				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button",
 				triggerType = {
 					2,
 					true
@@ -48,8 +48,8 @@ return {
 				}
 			},
 			baseui = {
-				pathIndex = 0,
-				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button"
+				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button",
+				pathIndex = 0
 			},
 			hideui = {
 				{

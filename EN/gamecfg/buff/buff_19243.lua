@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.1,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.1
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.111,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.111
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.122,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.122
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.133,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.133
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.144,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.144
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.155,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.155
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.166,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.166
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.177,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.177
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.188,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.188
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.2,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.2
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "鲜血诗篇-P3",
 	init_effect = "",
-	id = 19243,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "鲜血诗篇-P3",
 	stack = 1,
-	color = "yellow",
+	id = 19243,
 	icon = 19240,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.1,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.1
 			}
 		}
 	}

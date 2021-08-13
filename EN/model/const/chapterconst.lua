@@ -1,9 +1,6 @@
 slot0 = class("ChapterConst")
 slot0.ExitFromChapter = 0
 slot0.ExitFromMap = 1
-slot0.TypeNone = 0
-slot0.TypeSham = 1
-slot0.TypeGuild = 2
 slot0.TypeLagacy = 1
 slot0.TypeRange = 2
 slot0.TypeTransport = 3
@@ -12,6 +9,7 @@ slot0.TypeExtra = 5
 slot0.TypeSpHunt = 7
 slot0.TypeSpBomb = 8
 slot0.TypeDefence = 10
+slot0.TypeDOALink = 11
 slot0.SubjectPlayer = 1
 slot0.SubjectChampion = 2
 slot0.MaxRow = 10
@@ -27,7 +25,6 @@ slot0.AttachEnemy = 6
 slot0.AttachTorpedo_Enemy = 7
 slot0.AttachBoss = 8
 slot0.AttachStory = 9
-slot0.AttachRival = 10
 slot0.AttachAreaBoss = 11
 slot0.AttachChampion = 12
 slot0.AttachTorpedo_Fleet = 14
@@ -47,14 +44,15 @@ slot0.AttachStaticEnemys = {
 	slot0.AttachAmbush,
 	slot0.AttachElite,
 	slot0.AttachBoss,
-	slot0.AttachRival,
 	slot0.AttachAreaBoss,
 	slot0.AttachBomb_Enemy
 }
 slot0.Story = 1
 slot0.StoryObstacle = 2
 slot0.StoryTrigger = 3
+slot0.EventTeleport = 4
 slot0.EvtType_Poison = 1
+slot0.EvtType_AdditionalFloor = 2
 slot0.FlagBanaiAirStrike = 4
 slot0.FlagPoison = 5
 slot0.FlagLava = 10
@@ -70,13 +68,12 @@ slot0.BoxSupply = 6
 slot0.BoxTorpedo = 7
 slot0.BoxBanaiDamage = 8
 slot0.BoxLavaDamage = 9
+slot0.LBIdle = 0
 slot0.LBCoastalGun = 1
 slot0.LBHarbor = 2
 slot0.LBDock = 3
 slot0.LBAntiAir = 4
-slot0.LBIDHarbor = 10
-slot0.LBIDDock = 11
-slot0.LBIDAntiAir = 12
+slot0.LBIDAirport = 13
 slot0.RoundPlayer = 0
 slot0.RoundEnemy = 1
 slot0.AIEasy = 1
@@ -100,12 +97,6 @@ slot0.StrategyRepair = 4
 slot0.StrategyPresents = {
 	4
 }
-slot0.Status2StgBuff = {
-	90,
-	91,
-	93,
-	92
-}
 slot0.StgDtRepair = "healthy"
 slot0.StgDtAirPrepare = "air"
 slot0.StgDtAirStrike = "strike"
@@ -124,58 +115,60 @@ slot0.CellTargetColor = Color.green
 slot0.ChildItem = "item"
 slot0.ChildAttachment = "attachment"
 
-slot0.NeedSelectTarget = function (slot0)
-	return pg.strategy_data_template[slot0].arg[1] == slot0.StgDtAirStrike or slot1.arg[1] == slot0.StgDtCannon
+function slot0.NeedSelectTarget(slot0)
+	return pg.strategy_data_template[slot0].arg[1] == uv0.StgDtAirStrike or slot1.arg[1] == uv0.StgDtCannon
 end
 
 slot0.TraitNone = 0
 slot0.TraitLurk = 1
 slot0.TraitVirgin = 2
 
-slot0.NeedMarkAsLurk = function (slot0)
-	if slot0.attachment == slot0.AttachBox then
-		return slot0.flag == 0 and (pg.box_data_template[slot0.attachmentId].type == slot0.BoxDrop or pg.box_data_template[slot0.attachmentId].type == slot0.BoxStrategy or pg.box_data_template[slot0.attachmentId].type == slot0.BoxSupply or pg.box_data_template[slot0.attachmentId].type == slot0.BoxEnemy)
+function slot0.NeedMarkAsLurk(slot0)
+	if slot0.attachment == uv0.AttachBox then
+		slot1 = pg.box_data_template[slot0.attachmentId]
+
+		return slot0.flag == 0 and (slot1.type == uv0.BoxDrop or slot1.type == uv0.BoxStrategy or slot1.type == uv0.BoxSupply or slot1.type == uv0.BoxEnemy)
 	else
-		return slot0.flag == 0 and (slot0.attachment == slot0.AttachEnemy or slot0.attachment == slot0.AttachElite or slot0.attachment == slot0.AttachBoss or slot0.attachment == slot0.AttachStory or slot0.attachment == slot0.AttachRival or slot0.attachment == slot0.AttachBomb_Enemy)
+		return slot0.flag == 0 and (slot0.attachment == uv0.AttachEnemy or slot0.attachment == uv0.AttachElite or slot0.attachment == uv0.AttachBoss or slot0.attachment == uv0.AttachStory or slot0.attachment == uv0.AttachBomb_Enemy)
 	end
 end
 
-slot0.NeedEasePathCell = function (slot0)
-	if slot0.attachment == slot0.AttachNone then
+function slot0.NeedEasePathCell(slot0)
+	if slot0.attachment == uv0.AttachNone then
 		return true
-	elseif slot0.attachment == slot0.AttachAmbush then
+	elseif slot0.attachment == uv0.AttachAmbush then
 		if slot0.flag ~= 0 then
 			return true
 		end
-	elseif slot0.attachment == slot0.AttachRival or slot0.attachment == slot0.AttachEnemy or slot0.attachment == slot0.AttachElite then
+	elseif slot0.attachment == uv0.AttachEnemy or slot0.attachment == uv0.AttachElite then
 		if slot0.flag == 1 then
 			return true
 		end
-	elseif slot0.attachment == slot0.AttachSupply and slot0.attachmentId <= 0 then
+	elseif slot0.attachment == uv0.AttachSupply and slot0.attachmentId <= 0 then
 		return true
-	elseif slot0.attachment == slot0.AttachBox then
-		if pg.box_data_template[slot0.attachmentId].type == slot0.BoxAirStrike or slot1.type == slot0.BoxTorpedo then
+	elseif slot0.attachment == uv0.AttachBox then
+		if pg.box_data_template[slot0.attachmentId].type == uv0.BoxAirStrike or slot1.type == uv0.BoxTorpedo then
 			return true
-		elseif (slot1.type == slot0.BoxDrop or slot1.type == slot0.BoxStrategy or slot1.type == slot0.BoxEnemy or slot1.type == slot0.BoxSupply) and slot0.flag == 1 then
-			return true
-		end
-	elseif slot0.attachment == slot0.AttachStory then
-		if slot0.flag ~= 0 and (slot0.flag ~= 3 or slot0.data ~= slot0.StoryObstacle) then
+		elseif (slot1.type == uv0.BoxDrop or slot1.type == uv0.BoxStrategy or slot1.type == uv0.BoxEnemy or slot1.type == uv0.BoxSupply) and slot0.flag == 1 then
 			return true
 		end
-	elseif slot0.attachment == slot0.AttachBarrier then
+	elseif slot0.attachment == uv0.AttachStory then
+		if slot0.flag ~= 0 and (slot0.flag ~= 3 or slot0.data ~= uv0.StoryObstacle) then
+			return true
+		end
+	elseif slot0.attachment == uv0.AttachBarrier then
 		return true
 	end
 
 	return false
 end
 
-slot0.NeedClearStep = function (slot0)
-	if slot0.attachment == slot0.AttachAmbush and slot0.flag == 2 then
+function slot0.NeedClearStep(slot0)
+	if slot0.attachment == uv0.AttachAmbush and slot0.flag == 2 then
 		return true
 	end
 
-	if slot0.attachment == slot0.AttachBox and pg.box_data_template[slot0.attachmentId].type == slot0.BoxAirStrike then
+	if slot0.attachment == uv0.AttachBox and pg.box_data_template[slot0.attachmentId].type == uv0.BoxAirStrike then
 		return true
 	end
 
@@ -189,33 +182,29 @@ slot0.AchieveType4 = 4
 slot0.AchieveType5 = 5
 slot0.AchieveType6 = 6
 
-slot0.IsAchieved = function (slot0)
+function slot0.IsAchieved(slot0)
 	slot1 = false
 
-	if slot0.type == slot0.AchieveType4 or slot0.type == slot0.AchieveType5 then
-		slot1 = slot0.count >= 1
-	else
-		return slot0.config <= slot0.count
-	end
+	return (slot0.type == uv0.AchieveType4 or slot0.type == uv0.AchieveType5) and slot0.count >= 1 or slot0.config <= slot0.count
 end
 
-slot0.GetAchieveDesc = function (slot0, slot1)
+function slot0.GetAchieveDesc(slot0, slot1)
 	slot2 = false
 
 	if _.detect(slot1.achieves, function (slot0)
-		return slot0.type == slot0
-	end).type == slot0.AchieveType1 then
+		return slot0.type == uv0
+	end).type == uv0.AchieveType1 then
 		return "Defeat flagship"
-	elseif slot3.type == slot0.AchieveType2 then
+	elseif slot3.type == uv0.AchieveType2 then
 		return string.format("Defeat escort fleet（%d/%d）", math.min(slot3.count, slot3.config), slot3.config)
-	elseif slot3.type == slot0.AchieveType3 then
+	elseif slot3.type == uv0.AchieveType3 then
 		return "Defeat all enemies"
-	elseif slot3.type == slot0.AchieveType4 then
+	elseif slot3.type == uv0.AchieveType4 then
 		return string.format("Deployed ships≤ %d", slot3.config)
-	elseif slot3.type == slot0.AchieveType5 then
+	elseif slot3.type == uv0.AchieveType5 then
 		return string.format("XX not deployed", ShipType.Type2Name(slot3.config))
-	elseif slot3.type == slot0.AchieveType6 then
-		return "Full Combo完成关卡"
+	elseif slot3.type == uv0.AchieveType6 then
+		return "Clear with a Full Combo"
 	end
 
 	return slot2
@@ -224,13 +213,13 @@ end
 slot0.OpRetreat = 0
 slot0.OpMove = 1
 slot0.OpBox = 2
-slot0.OpStory = 3
 slot0.OpAmbush = 4
 slot0.OpStrategy = 5
 slot0.OpRepair = 6
 slot0.OpSupply = 7
 slot0.OpEnemyRound = 8
 slot0.OpSubState = 9
+slot0.OpStory = 10
 slot0.OpBarrier = 16
 slot0.OpSubTeleport = 19
 slot0.OpRequest = 49
@@ -245,13 +234,32 @@ slot0.DirtyAutoAction = 32
 slot0.DirtyCellFlag = 64
 slot0.DirtyBase = 128
 slot0.DirtyChampionPosition = 256
+slot0.DirtyFloatItems = 512
+slot0.DirtyMapItems = 1024
 slot0.KizunaJammingEngage = 1
 slot0.KizunaJammingDodge = 2
 slot0.StatusDay = 3
 slot0.StatusNight = 4
+slot0.StatusAirportOutControl = 5
+slot0.StatusAirportUnderControl = 6
+slot0.StatusSunrise = 7
+slot0.StatusSunset = 8
+slot0.StatusMaze1 = 9
+slot0.StatusMaze2 = 10
+slot0.StatusMaze3 = 11
+slot0.Status2StgBuff = {
+	[slot0.KizunaJammingEngage] = 90,
+	[slot0.KizunaJammingDodge] = 91,
+	[slot0.StatusDay] = 93,
+	[slot0.StatusNight] = 92,
+	[slot0.StatusAirportOutControl] = 8801,
+	[slot0.StatusAirportUnderControl] = 8802,
+	[slot0.StatusSunrise] = 8841,
+	[slot0.StatusSunset] = 8842
+}
 slot0.HpGreen = 3000
 
-slot0.GetAmbushDisplay = function (slot0)
+function slot0.GetAmbushDisplay(slot0)
 	slot1, slot2 = nil
 
 	if not slot0 then
@@ -288,11 +296,11 @@ slot0.ShipStepDuration = 0.5
 slot0.ShipStepQuickPlayScale = 0.5
 slot0.ShipMoveTailLength = 2
 
-slot0.GetRepairParams = function ()
+function slot0.GetRepairParams()
 	return 1, 3, 100
 end
 
-slot0.GetShamRepairParams = function ()
+function slot0.GetShamRepairParams()
 	return 1, 3, 100
 end
 
@@ -312,19 +320,29 @@ slot0.EnemySize = {
 	2,
 	3,
 	3,
+	[97.0] = 100,
+	[98.0] = 98,
 	[99.0] = 99
 }
-slot0.ActivateMirror = false
-slot0.MirrorShamId = 0
-slot0.ShamResetCountLimit = 1
-slot0.ShamShipLimit = 15
-slot0.ShamTeamShipLimit = 8
-slot0.ShamEnemyLimit = 10
-slot0.ShamShipLevelLimit = 10
-slot0.ShamMyAssisShipLevelLimit = 10
-slot0.MirrorShamId = 90000
+slot0.EnemyPreference = {
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	[97.0] = 100,
+	[98.0] = 8,
+	[99.0] = 99
+}
 slot0.ShamMoneyItem = 59900
-slot0.EscortMoneyItem = 59900
 slot0.MarkHuntingRange = 1
 slot0.MarkBomb = 2
 slot0.MarkCoastalGun = 3
@@ -339,11 +357,29 @@ slot0.ReasonDefeat = 2
 slot0.ReasonVictoryOni = 3
 slot0.ReasonDefeatOni = 4
 slot0.ReasonDefeatBomb = 5
-slot0.ReasonVictorySham = 6
-slot0.ReasonDefeatSham = 7
 slot0.ReasonOutTime = 8
 slot0.ReasonActivityOutTime = 9
 slot0.ReasonDefeatDefense = 10
+slot0.ForbiddenNone = 0
+slot0.ForbiddenRight = 1
+slot0.ForbiddenLeft = 2
+slot0.ForbiddenDown = 4
+slot0.ForbiddenUp = 8
+slot0.ForbiddenRow = 3
+slot0.ForbiddenColumn = 12
+slot0.ForbiddenAll = 15
+slot0.PriorityPerRow = 100
+slot0.PriorityMin = -10000
+slot0.CellPriorityNone = 0 + slot0.PriorityMin
+slot0.CellPriorityAttachment = 1 + slot0.PriorityMin
+slot0.CellPriorityLittle = 2 + slot0.PriorityMin
+slot0.CellPriorityEnemy = 3 + slot0.PriorityMin
+slot0.CellPriorityFleet = 3 + slot0.PriorityMin
+slot0.CellPriorityUpperEffect = 5 + slot0.PriorityMin
+slot0.CellPriorityTopMark = 6 + slot0.PriorityMin
+slot0.PriorityMax = 10000 + slot0.PriorityMin
+slot0.LayerWeightMap = -1000
+slot0.LayerWeightMapAnimation = slot0.LayerWeightMap + 1
 slot0.AirDominance = {
 	[0] = {
 		name = pg.gametip.no_airspace_competition.tip,
@@ -375,5 +411,14 @@ slot0.AirDominance = {
 		color = Color.New(0.615686274509804, 0.9215686274509803, 0.14901960784313725)
 	}
 }
+chapter_skip_battle = PlayerPrefs.GetInt("chapter_skip_battle") or 0
+
+function switch_chapter_skip_battle()
+	chapter_skip_battle = 1 - chapter_skip_battle
+
+	PlayerPrefs.SetInt("chapter_skip_battle", chapter_skip_battle)
+	PlayerPrefs.Save()
+	pg.TipsMgr.GetInstance():ShowTips(chapter_skip_battle == 1 and "已开启战斗跳略" or "已关闭战斗跳略")
+end
 
 return slot0

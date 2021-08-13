@@ -1,31 +1,31 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIANGGELILA6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
-					"纪行的藏红花\n\n<size=45>六　战术与直觉的对抗</size>",
+					"Saffron Travelogue\n\n<size=45>The Ace Up Her Sleeve</size>",
 					1
 				}
 			}
 		},
 		{
+			say = "Day of the mock battle, at the Exercise Area...",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "演习当日·演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -51,7 +51,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "准备好了吗，香格里拉？",
+			say = "Are you ready?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -67,7 +67,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯，对大黄蜂的针对性战术已经准备完毕，剩下就是应用在实战中了。",
+			say = "I'm all set. All there is to do now is put my plan into practice.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -83,7 +83,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "哼～就让大黄蜂大人来好好挫挫你的锐气吧！",
+			say = "That plan's not gonna do you any good if someone throws a wrench into it!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -99,7 +99,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "真巧呢，这边也想说，就请你切身体会一下战术的重要性吧！",
+			say = "Perhaps, but wrenches can be dodged if you know their trajectory. Especially if the wrench is slow and predictable.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -110,12 +110,12 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
-			say = "哇哦，燃起来了燃起来了！",
+			dir = 1,
+			say = "Hahah! They sure sound fired up!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -126,8 +126,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -141,7 +141,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "会是怎么样一场战斗呢，真是令人期待啊.",
+			say = "I'm curious to see how this will go.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -157,7 +157,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "大黄蜂，要加油哦",
+			say = "We're rooting for you, Hornet!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -171,10 +171,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "前辈…还有大家，都来了啊",
+			say = "I'm quite surprised by how many people came here to spectate...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -185,12 +185,12 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 107070,
 			nameColor = "#a9f548",
-			say = "啊哈哈，意外的成了一场热闹比赛啊！",
+			dir = -1,
+			say = "Heheh, yeah. By the way, just so you know: mock battle or not, I'm not gonna go easy on you!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -201,8 +201,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -214,10 +214,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "那么…开始的信号，就拜托指挥官了。",
+			say = "Neither will I. Now, if you're ready, let us begin!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -228,13 +228,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
-			side = 2,
 			dir = 1,
-			say = "伴随着开始的信号，双方立即开始了行动——",
+			side = 2,
+			bgName = "bg_story_nepu1",
+			say = "The two were evenly matched and the battle could go either way.",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -259,13 +259,13 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			soundeffect = "event:/battle/plane",
-			actor = 107070,
 			nameColor = "#a9f548",
-			say = "去吧，舰载机们！",
+			dir = -1,
+			say = "Give 'em hell, planes!",
+			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -279,10 +279,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "根据以往的数据分析，这里是佯攻的概率有90%——",
+			say = "There's a 90% probability that's a feint... I won't fall for that!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -293,13 +293,13 @@ return {
 			}
 		},
 		{
-			side = 2,
-			bgName = "bg_story_nepu1",
-			dir = -1,
-			soundeffect = "event:/battle/plane",
 			actor = 107070,
+			side = 2,
+			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
-			say = "嘁，没有上当么…那就…这样如何！",
+			dir = -1,
+			say = "Tsk! Then how about THIS!",
+			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -310,12 +310,12 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
-			say = "这也在…预料之内！",
+			nameColor = "#a9f548",
+			bgName = "bg_story_nepu1",
+			side = 2,
+			dir = 1,
+			say = "I expected you'd try that!",
 			flashN = {
 				color = {
 					1,
@@ -363,7 +363,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "陷入苦战的，看起来是大黄蜂啊",
+			say = "Looks like the pressure's mounting on Hornet.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -379,7 +379,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呵呵…看来这次会是战术的胜利了",
+			say = "Gathering intel on Hornet seems to be paying off for her. Hehehe~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -395,7 +395,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "没到最后，什么都不好说呢～",
+			say = "The match isn't over yet. Hornet can still turn the tables on her.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -406,17 +406,17 @@ return {
 			}
 		},
 		{
-			say = "这下就…结束了！",
+			actor = 107380,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_nepu1",
 			soundeffect = "event:/battle/plane",
-			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			seDelay = 1,
+			say = "Shangri-La will forever be out of reach if this is the best you can do!",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -441,13 +441,13 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			soundeffect = "event:/battle/plane",
-			actor = 107070,
 			nameColor = "#a9f548",
-			say = "嘁！别小看了…大黄蜂大人啊！！",
+			dir = -1,
+			say = "Heh, really? I beg to differ! Poke the hornets' nest and you end up with an angry swarm above your head!",
+			soundeffect = "event:/battle/plane",
 			effects = {
 				{
 					active = true,
@@ -464,8 +464,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -474,12 +474,12 @@ return {
 			}
 		},
 		{
+			actor = 107380,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
-			say = "居然还藏有攻击编队？！糟了！！",
+			dir = 1,
+			say = "Wha–?! She's launched every bomber at her disposal?!",
 			effects = {
 				{
 					active = false,
@@ -496,11 +496,11 @@ return {
 			}
 		},
 		{
+			soundeffect = "event:/battle/boom2",
 			side = 2,
 			bgName = "bg_story_nepu1",
-			say = "轰隆隆——",
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
+			say = "The surrounding area became enveloped in the white smoke of the dummy shells.",
 			flashN = {
 				color = {
 					1,
@@ -548,7 +548,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "这是……？！",
+			say = "Well, I'll be damned...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -564,7 +564,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "在最后被命中之前，大黄蜂放出了一直隐藏着的舰载机编队吗…",
+			say = "They both achieved hits on each other at the same time.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -575,13 +575,13 @@ return {
 			}
 		},
 		{
+			actor = 107090,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 107090,
-			nameColor = "#a9f548",
-			say = "这算是……平局？",
+			say = "So... it's a draw...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

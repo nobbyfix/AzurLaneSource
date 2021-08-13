@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 100,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 100
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 130,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 130
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 160,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 160
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 200,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 200
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 230,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 230
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 260,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 260
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 300,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 300
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 330,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 330
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 360,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 360
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 400,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 400
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "Enigma—信号—机动",
 	init_effect = "jinengchufablue",
-	id = 12696,
-	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "本场机动上升1-4%",
 	stack = 1,
-	color = "blue",
+	id = 12696,
 	icon = 12690,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 100,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 100
 			}
 		}
 	}

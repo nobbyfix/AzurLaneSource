@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "能代2",
 	init_effect = "",
-	id = 12840,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 12840,
 	icon = 12840,
 	last_effect = "",
 	effect_list = {
@@ -32,7 +32,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 12842,

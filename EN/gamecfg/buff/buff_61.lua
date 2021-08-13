@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "驱逐竞技场加成",
 	init_effect = "",
+	name = "驱逐竞技场加成",
+	time = 0,
 	picture = "",
 	desc = "额外提升闪避5%",
 	stack = 1,
@@ -19,8 +19,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "dodgeRateExtra"
+				attr = "dodgeRateExtra",
+				number = 0.05
 			}
 		},
 		{
@@ -29,8 +29,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.25,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.25
 			}
 		}
 	}

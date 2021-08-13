@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 500
 				}
 			},
 			{
@@ -30,8 +30,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 500
 				}
 			}
 		}
@@ -45,8 +45,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 610,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 610
 				}
 			},
 			{
@@ -56,8 +56,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 610,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 610
 				}
 			},
 			{
@@ -67,8 +67,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 660,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 660
 				}
 			}
 		}
@@ -82,8 +82,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 720
 				}
 			},
 			{
@@ -93,8 +93,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 720
 				}
 			},
 			{
@@ -104,8 +104,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 820,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 820
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 830,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 830
 				}
 			},
 			{
@@ -130,8 +130,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 830,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 830
 				}
 			},
 			{
@@ -141,8 +141,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1000
 				}
 			}
 		}
@@ -156,8 +156,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 940,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 940
 				}
 			},
 			{
@@ -167,8 +167,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 940,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 940
 				}
 			},
 			{
@@ -178,8 +178,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1160
 				}
 			}
 		}
@@ -193,8 +193,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1050,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1050
 				}
 			},
 			{
@@ -204,8 +204,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1050,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1050
 				}
 			},
 			{
@@ -215,8 +215,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1320,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1320
 				}
 			}
 		}
@@ -230,8 +230,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1160
 				}
 			},
 			{
@@ -241,8 +241,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1160
 				}
 			},
 			{
@@ -252,8 +252,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1500
 				}
 			}
 		}
@@ -267,8 +267,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1270,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1270
 				}
 			},
 			{
@@ -278,8 +278,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1270,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1270
 				}
 			},
 			{
@@ -289,8 +289,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1660
 				}
 			}
 		}
@@ -304,8 +304,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1380
 				}
 			},
 			{
@@ -315,8 +315,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1380
 				}
 			},
 			{
@@ -326,8 +326,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1820,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1820
 				}
 			}
 		}
@@ -341,8 +341,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1500
 				}
 			},
 			{
@@ -352,8 +352,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1500
 				}
 			},
 			{
@@ -363,20 +363,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "荣光",
 	init_effect = "jinengchufared",
-	id = 11321,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 11321,
 	icon = 11320,
 	last_effect = "",
 	blink = {
@@ -394,8 +394,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 500
 			}
 		},
 		{
@@ -405,8 +405,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = 500
 			}
 		},
 		{
@@ -416,8 +416,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 500
 			}
 		}
 	}

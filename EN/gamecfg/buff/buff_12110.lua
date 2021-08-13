@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "destiny draw",
 	init_effect = "",
-	id = 12110,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12110,
 	icon = 12110,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 12111,
-				time = 20,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				time = 20
 			}
 		}
 	}

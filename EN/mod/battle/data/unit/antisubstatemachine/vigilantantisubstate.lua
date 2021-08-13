@@ -1,49 +1,46 @@
 ys = ys or {}
-ys.Battle.VigilantAntiSubState = class("VigilantAntiSubState", ys.Battle.IAntiSubState)
-ys.Battle.VigilantAntiSubState.__name = "VigilantAntiSubState"
+slot0 = ys
+slot0.Battle.VigilantAntiSubState = class("VigilantAntiSubState", slot0.Battle.IAntiSubState)
+slot0.Battle.VigilantAntiSubState.__name = "VigilantAntiSubState"
+slot1 = slot0.Battle.VigilantAntiSubState
 
-ys.Battle.VigilantAntiSubState.Ctor = function (slot0)
-	slot0.super.Ctor(slot0)
+function slot1.Ctor(slot0)
+	uv0.super.Ctor(slot0)
 end
 
-ys.Battle.VigilantAntiSubState.OnVigilantEngage = function (slot0, slot1)
-	return
+function slot1.OnVigilantEngage(slot0, slot1)
 end
 
-ys.Battle.VigilantAntiSubState.OnMineExplode = function (slot0, slot1)
-	return
+function slot1.OnMineExplode(slot0, slot1)
 end
 
-ys.Battle.VigilantAntiSubState.OnSubmarinFloat = function (slot0, slot1)
-	return
+function slot1.OnSubmarinFloat(slot0, slot1)
 end
 
-ys.Battle.VigilantAntiSubState.OnHateChain = function (slot0, slot1)
+function slot1.OnHateChain(slot0, slot1)
 	slot1:OnEngageState(true)
 end
 
-ys.Battle.VigilantAntiSubState.ToPreLevel = function (slot0, slot1)
+function slot1.ToPreLevel(slot0, slot1)
 	slot1:OnSuspiciousState()
 end
 
-ys.Battle.VigilantAntiSubState.GetWeaponUseable = function (slot0)
+function slot1.GetWeaponUseable(slot0)
 	return {}
 end
 
-ys.Battle.VigilantAntiSubState.CanDecay = function (slot0)
+function slot1.CanDecay(slot0)
 	return true
 end
 
-ys.Battle.VigilantAntiSubState.GetWarnMark = function (slot0)
+function slot1.GetWarnMark(slot0)
 	return 2
 end
 
-ys.Battle.VigilantAntiSubState.GetMeterSpeed = function (slot0)
+function slot1.GetMeterSpeed(slot0)
 	return 1.3
 end
 
-ys.Battle.VigilantAntiSubState.DecayDuration = function (slot0)
-	return 3
+function slot1.DecayDuration(slot0)
+	return 2
 end
-
-return

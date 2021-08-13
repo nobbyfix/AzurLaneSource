@@ -68,6 +68,14 @@ pg.enemy_data_by_type = {
 		type_name = "Flagship",
 		type = 17
 	},
+	{
+		type_name = "Large Cruiser ",
+		type = 18
+	},
+	{
+		type_name = "Munition Ship ",
+		type = 19
+	},
 	all = {
 		1,
 		2,
@@ -85,8 +93,8 @@ pg.enemy_data_by_type = {
 		14,
 		15,
 		16,
-		17
+		17,
+		18,
+		19
 	}
 }
-
-return

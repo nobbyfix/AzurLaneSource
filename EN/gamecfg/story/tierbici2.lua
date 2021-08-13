@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIERBICI2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"「Schmelzen」\n\n<size=45>Chapter 2: Mission</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "Tirpitz was planning to deliver old equipment to Yuubari at the Research Department.",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "Tirpitz was planning to deliver old equipment to Yuubari at the Research Department.",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,13 +62,13 @@ return {
 			}
 		},
 		{
-			say = "You seem troubled! Fear not, for Justice is here! The Little Beavers are here to save the day!",
+			side = 2,
 			actorName = "???",
 			bgName = "bg_story_task",
-			side = 2,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			bgm = "story-1",
+			say = "You seem troubled! Fear not, for Justice is here! The Little Beavers are here to save the day!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -91,13 +91,13 @@ return {
 			}
 		},
 		{
-			say = "So you wanted to deliver these to Yuubari, right?",
+			actor = 101110,
 			side = 1,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 101110,
 			actorName = "???",
+			say = "So you wanted to deliver these to Yuubari, right?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -128,11 +128,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 101110,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 1,
+			dir = 1,
 			actorName = "???",
 			say = "I am Charles Ausburne, ally of justice and Captain of the Little Beavers! Wait here for a second, I'll go and gather everyone!",
 			typewriter = {
@@ -145,12 +145,12 @@ return {
 			}
 		},
 		{
-			say = "Little Beavers, assemble-!",
+			actor = 101110,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101110,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Little Beavers, assemble-!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -165,8 +165,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -175,12 +175,12 @@ return {
 			}
 		},
 		{
-			say = "Kaay, I'm here~",
+			actor = 101130,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101130,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Kaay, I'm here~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -195,8 +195,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -205,11 +205,11 @@ return {
 			}
 		},
 		{
+			actor = 101150,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101150,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "D-Did something happen?!",
 			typewriter = {
 				speed = 0.05,
@@ -221,8 +221,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -231,11 +231,11 @@ return {
 			}
 		},
 		{
+			actor = 101140,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101140,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "What a pain...",
 			typewriter = {
 				speed = 0.05,
@@ -247,8 +247,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -273,11 +273,11 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Wait, this is the secretary ship's duty. I'm fine doing this on my-",
 			typewriter = {
 				speed = 0.05,
@@ -289,8 +289,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.05,
 					x = 0,
@@ -299,9 +299,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "As if to cut Tirpitz off, the members of the Little Beavers quickly lifted the equipment onto a trolley and departed.",
 			typewriter = {
 				speed = 0.05,
@@ -309,9 +309,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "Tirpitz, who was carrying equipment alongside them, seemed to be thinking about something.",
 			typewriter = {
 				speed = 0.05,
@@ -319,13 +319,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "Port - Research Department",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -362,12 +362,12 @@ return {
 			}
 		},
 		{
-			say = "I give you my thanks. I shall let the Commander know of your help.",
+			actor = 405020,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "I give you my thanks. I shall let the Commander know of your help.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -414,12 +414,12 @@ return {
 			}
 		},
 		{
-			say = "Well, I'll be leaving then! More Justice awaits!",
+			actor = 101110,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101110,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Well, I'll be leaving then! More Justice awaits!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 2
@@ -434,12 +434,12 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 405020,
-			nameColor = "#a9f548",
 			say = "I'm... a comrade... Alright, I get it.",
 			typewriter = {
 				speed = 0.05,
@@ -451,14 +451,14 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
 			side = 2,
+			bgName = "bg_story_task",
 			dir = 1,
 			blackBg = true,
 			say = "Watching the Little Beavers until they disappeared, Tirpitz began walking.",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

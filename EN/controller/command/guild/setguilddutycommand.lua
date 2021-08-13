@@ -1,7 +1,10 @@
-class("SetGuildDutyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
-	slot3 = slot1:getBody().playerId
+slot0 = class("SetGuildDutyCommand", pm.SimpleCommand)
 
-	if not slot1.getBody().dutyId then
+function slot0.execute(slot0, slot1)
+	slot2 = slot1:getBody()
+	slot3 = slot2.playerId
+
+	if not slot2.dutyId then
 		pg.TipsMgr.GetInstance():ShowTips(i18n("guild_duty_id_is_null"))
 
 		return
@@ -13,9 +16,9 @@ class("SetGuildDutyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		return
 	end
 
-	slot6 = getProxy(GuildProxy).getData(slot5)
+	slot6 = getProxy(GuildProxy):getData()
 
-	if slot4 == GuildMember.DUTY_DEPUTY_COMMANDER and slot6:getAssistantCount() == slot6:getAssistantMaxCount() then
+	if slot4 == GuildConst.DUTY_DEPUTY_COMMANDER and slot6:getAssistantCount() == slot6:getAssistantMaxCount() then
 		pg.TipsMgr.GetInstance():ShowTips(i18n("guild_duty_commder_max_count"))
 
 		return
@@ -26,10 +29,14 @@ class("SetGuildDutyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 		duty_id = slot4
 	}, 60013, function (slot0)
 		if slot0.result == 0 then
-			slot1 = slot0:getMemberById(slot0.getMemberById)
+			getProxy(GuildProxy):getData():getMemberById(uv0):setDuty(uv1)
 
-			slot1:setDuty(slot1.setDuty)
-			slot1:sendNotification(GAME.SET_GUILD_DUTY_DONE, slot1)
+			if uv1 == GuildConst.DUTY_COMMANDER then
+				slot2:getMemberById(getProxy(PlayerProxy):getRawData().id):setDuty(GuildConst.DUTY_ORDINARY)
+			end
+
+			slot1:updateGuild(slot2)
+			uv2:sendNotification(GAME.SET_GUILD_DUTY_DONE, slot3)
 			pg.TipsMgr.GetInstance():ShowTips(i18n("guild_set_duty_sucess"))
 		else
 			pg.TipsMgr.GetInstance():ShowTips(errorTip("guild_setduty_erro", slot0.result))
@@ -37,4 +44,4 @@ class("SetGuildDutyCommand", pm.SimpleCommand).execute = function (slot0, slot1)
 	end)
 end
 
-return class("SetGuildDutyCommand", pm.SimpleCommand)
+return slot0

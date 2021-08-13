@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BEILIWANSHENGJIE1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Trick or Treat, Halloween!\n\n<size=45>I 「In Search of Lost Ghosts!」</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 102091,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = -1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 102091,
-			nameColor = "#a9f548",
 			say = "Heya!",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,13 +52,13 @@ return {
 			}
 		},
 		{
-			say = "Wow~ It’s so big!",
+			actor = 306051,
 			side = 1,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 306051,
 			actorName = "{namecode:87}",
+			say = "Wow~ It’s so big!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -73,8 +73,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0,
@@ -83,11 +83,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 301051,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "Is this the “Super Pumpkin Lantern” that we’re showing off today?",
 			typewriter = {
@@ -116,11 +116,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 301171,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:19}",
 			say = "By the way, I've made delicious pies stuffed with pumpkin filling inside!",
 			typewriter = {
@@ -165,10 +165,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_task",
 			actor = 301051,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "{namecode:6}&{namecode:87}",
@@ -192,11 +192,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 306051,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:87}",
 			say = "Oh...this seems troublesome, the party will start shortly tonight...",
 			typewriter = {
@@ -209,11 +209,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 301051,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 0,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "There seems to be something inside...the pumpkin’s mouth...",
 			typewriter = {
@@ -242,11 +242,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 306051,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:87}",
 			say = "“We have lost a ghost mingling amongst us at this Halloween party, only the combined power of three virtuous witches can send it home.”",
 			typewriter = {
@@ -259,11 +259,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 306051,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			actorName = "{namecode:87}",
 			say = "What does this mean?",
 			typewriter = {
@@ -276,10 +276,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_task",
 			actor = 301051,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "{namecode:6}&{namecode:19}",
@@ -303,11 +303,11 @@ return {
 			}
 		},
 		{
+			actor = 101271,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 101271,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Hehe, it’s time! Here comes the witch from the Rabbit Planet!",
 			effects = {
 				{
@@ -325,11 +325,11 @@ return {
 			}
 		},
 		{
+			actor = 102091,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = -1,
-			actor = 102091,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "Wow, a witch really did appear!",
 			effects = {
 				{
@@ -347,8 +347,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -360,8 +360,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 101271,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Let the rabbit witch help out Bailey!",
 			typewriter = {
@@ -374,14 +374,14 @@ return {
 			}
 		},
 		{
-			actorName = "{namecode:6}&{namecode:19}&Cleveland",
+			actor = 301051,
 			side = 0,
 			bgName = "bg_story_task",
-			hideOther = true,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 301051,
-			nameColor = "#a9f548",
+			hideOther = true,
+			actorName = "{namecode:6}&{namecode:19}&Cleveland",
 			say = "Ooo-ahhh~",
 			subActors = {
 				{

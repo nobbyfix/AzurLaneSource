@@ -1,26 +1,26 @@
 slot0 = class("PrayPoolScene", import("..base.BaseUI"))
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "PrayPool"
 end
 
-slot0.init = function (slot0)
+function slot0.init(slot0)
 	slot0:findUI()
 	slot0:initData()
 	slot0:initEvents()
 end
 
-slot0.didEnter = function (slot0)
+function slot0.didEnter(slot0)
 	slot0:switchPage(slot0.prayProxy:getPageState())
 end
 
-slot0.willExit = function (slot0)
+function slot0.willExit(slot0)
 	for slot4, slot5 in ipairs(slot0.subViewList) do
 		slot5:Destroy()
 	end
 end
 
-slot0.onBackPressed = function (slot0)
+function slot0.onBackPressed(slot0)
 	slot1 = nil
 
 	for slot5, slot6 in ipairs(slot0.subViewList) do
@@ -28,11 +28,11 @@ slot0.onBackPressed = function (slot0)
 	end
 
 	if not slot1 then
-		slot0:emit(slot0.ON_BACK)
+		slot0:emit(uv0.ON_BACK)
 	end
 end
 
-slot0.findUI = function (slot0)
+function slot0.findUI(slot0)
 	slot0.subViewContainer = slot0:findTF("BG/SubViewContainer")
 	slot0.helpBtn = slot0:findTF("BG/HelpBtn")
 
@@ -47,7 +47,7 @@ slot0.findUI = function (slot0)
 	end)
 end
 
-slot0.initData = function (slot0)
+function slot0.initData(slot0)
 	slot0.prayProxy = getProxy(PrayProxy)
 	slot0.prayPoolHomeView = PrayPoolHomeView.New(slot0.subViewContainer, slot0.event, slot0.contextData)
 	slot0.prayPoolSelectPoolView = PrayPoolSelectPoolView.New(slot0.subViewContainer, slot0.event, slot0.contextData)
@@ -62,19 +62,19 @@ slot0.initData = function (slot0)
 	}
 end
 
-slot0.initEvents = function (slot0)
+function slot0.initEvents(slot0)
 	slot0:bind(PrayPoolConst.SWITCH_TO_SELECT_POOL_PAGE, function (slot0, slot1)
-		slot0:switchPage(slot1)
+		uv0:switchPage(slot1)
 	end)
 	slot0:bind(PrayPoolConst.SWITCH_TO_SELECT_SHIP_PAGE, function (slot0, slot1)
-		slot0:switchPage(slot1)
+		uv0:switchPage(slot1)
 	end)
 	slot0:bind(PrayPoolConst.SWITCH_TO_HOME_PAGE, function (slot0, slot1)
-		slot0:switchPage(slot1)
+		uv0:switchPage(slot1)
 	end)
 end
 
-slot0.switchPage = function (slot0, slot1)
+function slot0.switchPage(slot0, slot1)
 	slot0.subViewList[slot1]:Reset()
 	slot0.subViewList[slot1]:Load()
 

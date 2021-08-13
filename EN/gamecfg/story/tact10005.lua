@@ -42,11 +42,11 @@ return {
 			}
 		},
 		{
-			side = 1,
-			say = "Well, at this point, the sisters of the First, Second, and Fifth fleets should have started their attack on the other side of the ocean.",
-			actorName = "{namecode:70}",
 			actor = 900017,
+			side = 1,
+			actorName = "{namecode:70}",
 			nameColor = "#ff0000",
+			say = "Well, at this point, the sisters of the First, Second, and Fifth fleets should have started their attack on the other side of the ocean.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

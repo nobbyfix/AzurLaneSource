@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "特混分队旗舰",
 	init_effect = "",
-	id = 11980,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 11980,
 	icon = 11980,
 	last_effect = "",
 	effect_list = {
@@ -34,7 +34,8 @@ return {
 		{
 			type = "BattleBuffCastSkill",
 			trigger = {
-				"onConsort"
+				"onUpperConsort",
+				"onLowerConsort"
 			},
 			arg_list = {
 				skill_id = 11981,

@@ -1,12 +1,12 @@
 return {
-	time = 15,
-	name = "防御号令",
 	init_effect = "",
-	id = 4012,
+	name = "防御号令",
+	time = 15,
+	color = "blue",
 	picture = "",
 	desc = "15%的概率发动",
 	stack = 1,
-	color = "blue",
+	id = 4012,
 	icon = 4010,
 	last_effect = "",
 	effect_list = {
@@ -17,8 +17,8 @@ return {
 			},
 			arg_list = {
 				rant = 2500,
-				target = "TargetSelf",
-				skill_id = 4011
+				skill_id = 4011,
+				target = "TargetSelf"
 			}
 		}
 	}

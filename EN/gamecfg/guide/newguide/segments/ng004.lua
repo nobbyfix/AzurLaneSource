@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "Commander, welcome to Azur Lane! Let’s report to boot camp, now!",
 				mode = 1,
-				dir = -1,
 				posY = 172,
+				dir = -1,
 				posX = -337
 			}
 		},

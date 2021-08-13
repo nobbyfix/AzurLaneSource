@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU20",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 207050,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "battle-boss-italy",
 			dir = 1,
 			say = "The Jewel of Calabria... is this beautiful sea itself?",
-			bgm = "battle-boss-italy",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -23,8 +23,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "The sea, illuminated by the glow of the pale moonlight, glimmered like a blue gemstone.",
 			typewriter = {
 				speed = 0.05,
@@ -36,8 +36,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "The ruins of ancient civilizations swaying like mirages along the shore, and the lifegiving waters that birthed a home for so many people... The breathtaking scenery was almost a spiritual experience.",
 			typewriter = {
 				speed = 0.05,
@@ -52,8 +52,8 @@ return {
 			expression = 2,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actor = 605020,
+			dir = 1,
 			say = "\"The Coast of the Gods,\" they call it, as well as the Jewel of Calabria. This is Sardegna's national treasure.",
 			typewriter = {
 				speed = 0.05,
@@ -96,8 +96,9 @@ return {
 		},
 		{
 			actor = 900198,
-			side = 2,
 			nameColor = "#ff5c5c",
+			side = 2,
+			hidePaintObj = true,
 			dir = 1,
 			say = "(Uhh... that last line didn't seem necessary...)",
 			typewriter = {
@@ -113,8 +114,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 207050,
+			dir = 1,
 			say = "Would you two mind telling me why you came here?",
 			typewriter = {
 				speed = 0.05,
@@ -126,8 +127,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -142,8 +143,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -158,8 +159,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -174,8 +175,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -190,8 +191,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -206,8 +207,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -222,8 +223,8 @@ return {
 			}
 		},
 		{
-			actorName = "Formidable",
 			side = 2,
+			actorName = "Formidable",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -238,8 +239,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -254,8 +255,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -270,8 +271,8 @@ return {
 			}
 		},
 		{
-			actorName = "Warspite",
 			side = 2,
+			actorName = "Warspite",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -286,9 +287,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_italy_cg5",
-			dir = 1,
 			say = "Star-crossed ships bound by fate to battle... The lamentations of a sea ablaze... The girls dancing like puppets across countless \"Reenactments...\" But at last...",
 			typewriter = {
 				speed = 0.05,
@@ -300,8 +301,8 @@ return {
 			}
 		},
 		{
-			actorName = "Warspite",
 			side = 2,
+			actorName = "Warspite",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -316,8 +317,8 @@ return {
 			}
 		},
 		{
-			actorName = "Warspite",
 			side = 2,
+			actorName = "Warspite",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -332,8 +333,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -348,8 +349,8 @@ return {
 			}
 		},
 		{
-			actorName = "Warspite",
 			side = 2,
+			actorName = "Warspite",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -364,8 +365,8 @@ return {
 			}
 		},
 		{
-			actorName = "Warspite",
 			side = 2,
+			actorName = "Warspite",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -380,8 +381,8 @@ return {
 			}
 		},
 		{
-			actorName = "Formidable",
 			side = 2,
+			actorName = "Formidable",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -396,8 +397,8 @@ return {
 			}
 		},
 		{
-			actorName = "Littorio",
 			side = 2,
+			actorName = "Littorio",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -412,8 +413,8 @@ return {
 			}
 		},
 		{
-			actorName = "Formidable",
 			side = 2,
+			actorName = "Formidable",
 			bgName = "bg_italy_cg5",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -428,8 +429,8 @@ return {
 			}
 		},
 		{
-			actorName = "Littorio",
 			side = 2,
+			actorName = "Littorio",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -444,8 +445,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -460,8 +461,8 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -476,12 +477,12 @@ return {
 			}
 		},
 		{
-			actorName = "Vittorio Veneto",
 			side = 2,
+			actorName = "Vittorio Veneto",
 			bgName = "bg_italy_cg5",
+			nameColor = "#ff5c5c",
 			dir = 1,
 			blackBg = true,
-			nameColor = "#ff5c5c",
 			say = "Lunga vita all'Impero！",
 			typewriter = {
 				speed = 0.05,

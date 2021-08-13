@@ -1,7 +1,7 @@
 return {
-	time = 3,
-	name = "无敌3秒",
 	init_effect = "",
+	name = "无敌3秒",
+	time = 3,
 	picture = "",
 	desc = "无敌3秒",
 	stack = 1,
@@ -16,8 +16,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "isInvincible"
+				group = 8506,
+				attr = "isInvincible",
+				number = 1
 			}
 		}
 	}

@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIEXUEYUYINFU3",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			soundeffect = "event:/battle/scan",
-			side = 2,
-			dir = 1,
-			bgm = "bsm-1",
 			actor = 403030,
+			side = 2,
+			bgm = "bsm-1",
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "Oh, what's this? Were you rats looking for cheese, but found us instead?",
+			soundeffect = "event:/battle/scan",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -54,8 +54,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -81,10 +81,10 @@ return {
 		{
 			expression = 3,
 			side = 0,
-			say = "Permission granted. Send them scampering.",
-			dir = -1,
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = -1,
+			say = "Permission granted. Send them scampering.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -102,8 +102,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "... But don't overextend yourself. They know where we are.",
 			typewriter = {
 				speed = 0.05,

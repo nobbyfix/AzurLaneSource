@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.01,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.01
 				}
 			}
 		}
@@ -34,8 +34,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			},
 			{
@@ -45,8 +45,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.0109,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.0109
 				}
 			}
 		}
@@ -60,8 +60,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			},
 			{
@@ -71,8 +71,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.0118,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.0118
 				}
 			}
 		}
@@ -86,8 +86,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			},
 			{
@@ -97,8 +97,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.013,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.013
 				}
 			}
 		}
@@ -112,8 +112,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.0139,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.0139
 				}
 			}
 		}
@@ -138,8 +138,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			},
 			{
@@ -149,8 +149,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.0148,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.0148
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.016,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.016
 				}
 			}
 		}
@@ -190,8 +190,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			},
 			{
@@ -201,8 +201,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.0172,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.0172
 				}
 			}
 		}
@@ -216,8 +216,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			},
 			{
@@ -227,8 +227,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.0184,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.0184
 				}
 			}
 		}
@@ -242,8 +242,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.01
 				}
 			},
 			{
@@ -253,15 +253,15 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.02,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.02
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "主人公补正",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 5,
@@ -283,8 +283,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = -0.01,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.01
 			}
 		},
 		{
@@ -294,8 +294,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = 0.01,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.01
 			}
 		}
 	}

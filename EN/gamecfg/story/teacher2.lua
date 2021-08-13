@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TEACHER2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"Class Z II\n\n<size=45>Social Reject And Proud Of It</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "First you do the thingy here... Then the next thingy!",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,15 +34,15 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Crap! I'm gonna die!",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1
@@ -67,15 +67,15 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Oh nooo! Game over... I guess I gotta practice more if I want to beat this on the hardest difficulty.",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1
@@ -100,12 +100,12 @@ return {
 			}
 		},
 		{
-			say = "Oh dear... How on earth can you live in a room as cluttered as this...",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Oh dear... How on earth can you live in a room as cluttered as this...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -125,7 +125,7 @@ return {
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "Hello? Hang on, I remember you... You're Z23, from Ironblood, right?",
+			say = "Hello? Hang on, I remember you... You're Z23, from Iron blood, right?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

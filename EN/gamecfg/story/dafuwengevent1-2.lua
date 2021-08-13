@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "DAFUWENGEVENT1-2",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			say = "You found treasure buried in the sea around the port! Collect 1000 Coins!",

@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "双影无双",
 	init_effect = "",
-	id = 103080,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 103080,
 	icon = 103080,
 	last_effect = "",
 	effect_list = {
@@ -27,15 +27,15 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				check_target = "TargetTemplate",
 				minTargetNumber = 1,
 				buff_id = 103082,
 				target = "TargetSelf",
-				targetTemplateIDList = {
-					10300051,
-					10300052,
-					10300053,
-					10300054
+				check_target = {
+					"TargetAllHelp",
+					"TargetShipTag"
+				},
+				ship_tag_list = {
+					"Saraana"
 				}
 			}
 		},
@@ -45,8 +45,8 @@ return {
 				"onBulletCreate"
 			},
 			arg_list = {
-				number = 1,
 				attr = "cri",
+				number = 1,
 				index = {
 					-1
 				}

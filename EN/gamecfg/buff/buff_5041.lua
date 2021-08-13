@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "照明弹",
 	init_effect = "",
-	id = 5041,
+	name = "照明弹",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 5041,
 	icon = 5040,
 	last_effect = "",
 	effect_list = {
@@ -26,9 +26,9 @@ return {
 				"onUpdate"
 			},
 			arg_list = {
-				skill_id = 5041,
 				target = "TargetSelf",
-				time = 10
+				time = 10,
+				skill_id = 5041
 			}
 		},
 		{

@@ -1,24 +1,24 @@
 slot0 = class("GetSpriteRequestPackage", import(".RequestPackage"))
 
-slot0.__call = function (slot0)
+function slot0.__call(slot0)
 	if slot0.stopped then
 		return
 	end
 
 	PoolMgr.GetInstance():GetSprite(slot0.path, slot0.name, true, function (slot0)
-		if not slot0.stopped then
-			if slot0.onLoaded then
-				slot0:onLoaded()
+		if not uv0.stopped then
+			if uv0.onLoaded then
+				uv0.onLoaded(slot0)
 			end
 		else
-			PoolMgr.GetInstance():DecreasSprite(PoolMgr.GetInstance().DecreasSprite, PoolMgr.GetInstance())
+			PoolMgr.GetInstance():DecreasSprite(uv1, uv2)
 		end
 	end)
 
 	return slot0
 end
 
-slot0.Ctor = function (slot0, slot1, slot2, slot3)
+function slot0.Ctor(slot0, slot1, slot2, slot3)
 	slot0.path = slot1
 	slot0.name = slot2
 	slot0.onLoaded = slot3

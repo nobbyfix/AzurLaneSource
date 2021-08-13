@@ -139,9 +139,9 @@ return {
 			}
 		}
 	},
-	time = 1,
-	name = "",
 	init_effect = "",
+	name = "",
+	time = 1,
 	picture = "",
 	desc = "特效触发器",
 	stack = 6,

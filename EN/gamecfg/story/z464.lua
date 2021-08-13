@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "Z464",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"White Poem\n\n<size=45>IV Thought</size>",
@@ -38,13 +38,13 @@ return {
 			}
 		},
 		{
-			say = "Port - Pier",
-			bgName = "bg_story_outdoor",
-			bgmDelay = 2,
 			bgm = "story-1",
+			bgmDelay = 2,
+			bgName = "bg_story_outdoor",
+			say = "Port - Pier",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -196,7 +196,7 @@ return {
 		},
 		{
 			bgName = "bg_story_outdoor",
-			say = "I heard many harrowing stories too. Of the demise of the past Iron Blood, of the \"other her\" from the Mirror Seas, of comrades trapped in eternal warfare, and of uncertain towards things to come.",
+			say = "I heard many harrowing stories too. Of the demise of the past Iron Blood, of the \"other her\" from the Mirror Seas, of comrades trapped in eternal warfare, and of uncertainty towards things to come.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -259,8 +259,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
 			blackBg = true,
+			bgName = "bg_story_outdoor",
 			say = "What... color am I?",
 			typewriter = {
 				speed = 0.05,

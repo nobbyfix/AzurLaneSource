@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG9",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			bgm = "azumaster-ins",
 			actor = 301057,
 			nameColor = "#a9f548",
-			say = "输了。但是很开心",
+			dir = 1,
+			say = "We lost, but... it was still fun.",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -28,7 +28,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "先不提μ兵装，这样能一边考虑到表演一边战斗感觉很新鲜呢！",
+			say = "Even if we ignore the Muse System, fighting while taking the stage performance aspect into consideration a departure from what we're used to.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -43,7 +43,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "比起作为舰船战斗，想的更多地是大家一起开心活动，感觉比平时更能发挥实力了",
+			say = "I felt like we were actually having fun with each other rather than battling as warships. As a result, I was able to push my limits further than usual.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -58,7 +58,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "哼哼，那是因为萨拉托加妹妹的特训吧！",
+			say = "Heheh! You have Sister Sara's special training to thank for that!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -69,8 +69,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -83,7 +83,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯，两艘驱逐舰能坚持这么久很意外的说",
+			say = "Yes. Considering we were just two destroyers, we put up a very good fight.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -98,7 +98,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "{namecode:6}，我们快去找标枪他们吧",
+			say = "Ayanami, let's go join up with Javelin and the others?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -113,7 +113,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "Polaris的各位，不用顾忌我们请继续前进吧",
+			say = "Ah, everyone in Polaris, don't worry about us! Keep moving on to your next test!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -124,8 +124,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -134,14 +134,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 905030,
+			side = 2,
 			nameColor = "#a9f548",
-			say = "确认在战斗中，μ兵装的性能发挥和标准性能存在差异",
+			dir = 1,
+			say = "Observation: In live combat, the performance of Muse System differs from default specifications.",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -169,9 +169,9 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102240,
-			say = "和平常自己装备的舰装有点不一样这个还真是。怎么说呢，微妙的用得顺手的感觉…",
+			dir = 1,
+			say = "Yeah, there's no doubt that fighting with the Muse System feels different. I'd say that it's a bit easier to use...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -185,9 +185,9 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 202250,
-			say = "同感。我们作为舰船，各种舰装之间理应没有性能差距才对",
+			dir = 1,
+			say = "Agreed. There should be virtually no substantial differences in how our equipment handles.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -200,10 +200,10 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			actor = 905030,
 			nameColor = "#a9f548",
-			say = "加斯科涅自身的战斗行动规范和测试时没有变化",
+			dir = 1,
+			say = "Gascogne's combat operation patterns do not differ from specifications in trials and simulations.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -214,8 +214,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -227,9 +227,9 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102240,
-			say = "嗯…也就是说加斯科涅的战斗方式明明没有变化，但是舰装用起来感觉还是有点不一样？",
+			dir = 1,
+			say = "Hmm, in other words, you haven't changed the way you fight, but you can still tell that the equipment handles differently?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -243,9 +243,9 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
-			say = "是的",
+			dir = 1,
+			say = "Affirmative.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -260,7 +260,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "加斯科涅这么说就很有说服力了…这个“μ兵装”和我们平时舰装看来有点不大一样",
+			say = "What Gascogne said is convincing... This Muse System is fundamentally different from the regular equipment we use.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -275,7 +275,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "………………",
+			say = "...……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -290,7 +290,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "（果然如此…舰装对我们“舰船”来说，因为要适应同样的龙骨，所以性能理应不会发生大的变化）",
+			say = "(As I expected... As Kansen, our equipment does not vary significantly as long as it's constrained by our hull and core structure.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -305,7 +305,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "（这些“μ兵装”直到昨天前性能都和平时的舰装没有多少浮动）",
+			say = "(Until today, the Muse System did not perform much differently from our normal equipment...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -320,7 +320,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "（也就是说刚才的现象之前是不存在的）",
+			say = "(That means that whatever phenomenon triggered this was not present before.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -335,7 +335,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "（到底是为什么呢……）",
+			say = "(In that case, what is the reason behind this phenomenon...? What was different about today?)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -350,7 +350,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "以下信息可能不大值得参考",
+			say = "The following information is highly speculative and may not be worthy of reference:",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -365,7 +365,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "加斯科涅平时在和塞壬作战时，为了稳定舰装性能，一般会尽可能的抑制感情模块",
+			say = "When carrying out anti-Siren combat protocols, Gascogne's emotion module is often suppressed as much as possible in order to stabilize combat efficacy.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -379,9 +379,9 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
-			say = "在刚才的战斗中，尽管对感情模块同样实施了抑制",
+			dir = 1,
+			say = "In the previous test battle, the emotion module was suppressed as part of normal combat protocol.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -395,9 +395,9 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
-			say = "但是感情模块的活性化程度还是较通常时微高",
+			dir = 1,
+			say = "However, activity in emotion module was still significantly higher than normal.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -412,7 +412,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "………………",
+			say = "...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -426,9 +426,9 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102240,
-			say = "额，有点晕了……",
+			dir = 1,
+			say = "Sorry, but I didn't catch any of that...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -442,9 +442,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 202250,
-			say = "也就是说加斯科涅自己感觉“很开心”对吧",
+			dir = 1,
+			say = "In other words, you were having fun, right?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -459,7 +459,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "话说的太复杂了……",
+			say = "You're way too roundabout with how you talk...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -473,9 +473,9 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
-			say = "对我说明的方法表示道歉。对不起",
+			dir = 1,
+			say = "Offering apologies for my explanation method. \"I'm sorry.\"",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -489,9 +489,9 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
-			say = "如果在兵装实验中需要加斯科涅开放感情模块的话",
+			dir = 1,
+			say = "However, in the event that activation of Gascogne's emotion module is necessary for the equipment testing...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -505,9 +505,9 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
-			say = "请对加斯科涅下指示",
+			dir = 1,
+			say = "Please issue the command.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -2,10 +2,10 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.1
@@ -16,10 +16,10 @@ return {
 	uiEffect = "",
 	name = "珍珠之泪",
 	cd = 0,
-	picture = "0",
-	desc = "珍珠之泪",
 	painting = 1,
 	id = 6130,
+	picture = "0",
+	desc = "珍珠之泪",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -30,10 +30,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillHeal",
+			casterAniEffect = "",
 			target_choise = "TargetAllHelp",
+			targetAniEffect = "",
 			arg_list = {
 				exceptCaster = true,
 				maxHPRatio = 0.1

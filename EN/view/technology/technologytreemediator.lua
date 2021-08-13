@@ -1,8 +1,8 @@
 slot0 = class("TechnologyTreeMediator", import("..base.ContextMediator"))
 
-slot0.register = function (slot0)
+function slot0.register(slot0)
 	slot0:bind(TechnologyConst.OPEN_SHIP_BUFF_DETAIL, function (slot0, slot1, slot2, slot3)
-		slot0:addSubLayers(Context.New({
+		uv0:addSubLayers(Context.New({
 			mediator = SingleBuffDetailMediator,
 			viewComponent = SingleBuffDetailLayer,
 			data = {
@@ -13,17 +13,17 @@ slot0.register = function (slot0)
 		}))
 	end)
 	slot0:bind(TechnologyConst.CLOSE_TECHNOLOGY_NATION_LAYER, function (slot0)
-		slot0:sendNotification(TechnologyConst.CLOSE_TECHNOLOGY_NATION_LAYER_NOTIFICATION)
+		uv0:sendNotification(TechnologyConst.CLOSE_TECHNOLOGY_NATION_LAYER_NOTIFICATION)
 	end)
 	slot0:bind(TechnologyConst.OPEN_TECHNOLOGY_NATION_LAYER, function (slot0)
-		slot0:addSubLayers(Context.New({
+		uv0:addSubLayers(Context.New({
 			mediator = TechnologyTreeNationMediator,
 			viewComponent = TechnologyTreeNationScene,
 			data = {}
 		}))
 	end)
 	slot0:bind(TechnologyConst.OPEN_ALL_BUFF_DETAIL, function (slot0)
-		slot0:addSubLayers(Context.New({
+		uv0:addSubLayers(Context.New({
 			mediator = AllBuffDetailMediator,
 			viewComponent = AllBuffDetailLayer,
 			data = {
@@ -33,13 +33,13 @@ slot0.register = function (slot0)
 	end)
 end
 
-slot0.listNotificationInterests = function (slot0)
+function slot0.listNotificationInterests(slot0)
 	return {
 		TechnologyConst.UPDATE_REDPOINT_ON_TOP
 	}
 end
 
-slot0.handleNotification = function (slot0, slot1)
+function slot0.handleNotification(slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == TechnologyConst.UPDATE_REDPOINT_ON_TOP then

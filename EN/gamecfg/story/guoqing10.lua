@@ -27,11 +27,11 @@ return {
 			}
 		},
 		{
-			side = 0,
-			say = "... You were holding back, weren't you?",
-			actorName = "{namecode:96}",
 			actor = 307060,
+			side = 0,
+			actorName = "{namecode:96}",
 			nameColor = "#a9f548",
+			say = "... You were holding back, weren't you?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -149,7 +149,7 @@ return {
 			actorName = "{namecode:96}",
 			side = 0,
 			nameColor = "#a9f548",
-			say = "……",
+			say = "......",
 			shake = {
 				speed = 1,
 				number = 3

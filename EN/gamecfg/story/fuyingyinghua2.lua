@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FUYINGYINGHUA2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "Sakura Empire - Diadem of Light",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "xinnong-1",
+			say = "Sakura Empire - Diadem of Light",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -21,8 +21,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "The Sakura Empire. It consists of many numerous islands and is a superpower with a distinctive culture.",
 			typewriter = {
 				speed = 0.05,
@@ -34,8 +34,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "Away from its mainland there are six remote islands, collectively known as the Diadem of Light. The islands are connected by suspension bridges, forming the shape of a bright sun, or perhaps a snow crystal.",
 			typewriter = {
 				speed = 0.05,
@@ -47,8 +47,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "Due to their isolation from the main islands, the Diadem of Light is believed to be the resting grounds of an immense spiritual power. Many conduct pilgrimages to these distant islands in order to hold their rituals and ceremonies.",
 			typewriter = {
 				speed = 0.05,
@@ -105,8 +105,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -149,7 +149,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "From what I've hard, she's far from useless! They say that she can see everything that is happening, and can even conduct a ritual from within her slumber! Although, they're just rumors...",
+			say = "From what I've heard, she's far from useless! They say that she can see everything that is happening, and can even conduct a ritual from within her slumber! Although, they're just rumors...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -175,8 +175,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -230,8 +230,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -330,8 +330,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -374,7 +374,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "Besides, if all that's truly is to recite some fancy ritual verses, then anyone could do that. Please tell me you don't believe that absurd gossip, Kaga.",
+			say = "Besides, if all that's truly is to recite some fancy ritual verses, then anyone could do that.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -415,8 +415,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -444,7 +444,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "I'm sorry for butting in, but... I'm not entirely sure what you're talking about, but isn't that a dangerous to say, Akagi? What if somebody overhears you?",
+			say = "I'm sorry for butting in, but... I'm not entirely sure what you're talking about, but isn't that dangerous to say, Akagi? What if somebody overhears you?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -455,8 +455,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

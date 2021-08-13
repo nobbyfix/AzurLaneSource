@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "驱逐-指挥-雷击III",
 	init_effect = "",
-	id = 40151,
+	name = "驱逐-指挥-雷击III",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "该入口提供战外挂载到战内",
 	stack = 1,
-	color = "yellow",
+	id = 40151,
 	icon = 40150,
 	last_effect = "",
 	effect_list = {

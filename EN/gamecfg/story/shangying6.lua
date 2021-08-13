@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANGYING6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"Flower Festival\n\n<size=45>Chapter 6 - Sakura Sake</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 305030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 305030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "*Glug glug*... Ahh, can't have a Flower Festival without something to drink!",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "Going straight for the sake, like always, eh... I think I'll have some, too...",
+			actor = 305040,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 305040,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Going straight for the sake, like always, eh... I think I'll have some, too...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -70,12 +70,12 @@ return {
 			}
 		},
 		{
-			say = "I suppose this is part of the tradition... Can't say I dislike it.",
+			actor = 403030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 403030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "I suppose this is part of the tradition... Can't say I dislike it.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -122,15 +122,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
-			dir = 1,
 			actor = 306030,
+			side = 2,
+			bgName = "bg_story_school",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Oh dear, it seems they're getting busy with their beverages~",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

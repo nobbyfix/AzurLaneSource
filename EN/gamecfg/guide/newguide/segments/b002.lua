@@ -15,8 +15,8 @@ return {
 			style = {
 				text = "我方旗舰的<color=#ff7d36>航空支援</color>已准备完毕 ",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -28,8 +28,8 @@ return {
 			style = {
 				text = "Clear the battlefield! Get ready for <color=#ff7d36>air support</color>!",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -47,8 +47,8 @@ return {
 			style = {
 				text = "Witness the power of our fighters! Use them when you need a leg up. They can also <color=#ff7d36>destroy enemy barrages</color>!",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		}

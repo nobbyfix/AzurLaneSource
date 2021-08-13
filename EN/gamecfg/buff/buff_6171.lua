@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "喵喵治愈",
 	init_effect = "",
-	id = 6171,
+	name = "喵喵治愈",
+	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "治疗效果提高",
 	stack = 1,
-	color = "blue",
+	id = 6171,
 	icon = 6171,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.2,
-				attr = "healingEnhancement"
+				attr = "healingEnhancement",
+				number = 0.2
 			}
 		}
 	}

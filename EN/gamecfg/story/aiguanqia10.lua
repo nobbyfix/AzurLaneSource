@@ -1,15 +1,15 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA10",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 10400020,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "Kizuna AI",
+			dir = 1,
 			say = "Phew, we managed to make it through without taking much damage!",
 			typewriter = {
 				speed = 0.05,
@@ -69,8 +69,8 @@ return {
 			expression = 4,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "Of course! I have a lot of songs ready~♪",
 			typewriter = {
@@ -173,8 +173,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -186,8 +186,8 @@ return {
 			expression = 6,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "Ahh, this is what youth is all about... how nice!",
 			typewriter = {
@@ -215,8 +215,8 @@ return {
 			}
 		},
 		{
-			actorName = "Everyone",
 			side = 2,
+			actorName = "Everyone",
 			nameColor = "#a9f548",
 			dir = 1,
 			say = "Aye aye!",

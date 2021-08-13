@@ -1,31 +1,31 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIANGGELILA2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
-					"纪行的藏红花\n\n<size=45>二　同伴的烦恼</size>",
+					"Saffron Travelogue\n\n<size=45>The Concerns of a Friend</size>",
 					1
 				}
 			}
 		},
 		{
+			say = "One day, at the Exercise Area...",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "某日·演习海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -55,7 +55,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "今天的常规演习科目差不多就到这里了，指挥官。接下来就回到指挥室继续剩下的总结——",
+			say = "That concludes all the exercises for today. Commander, it's time to return to the office and review our–",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -71,7 +71,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "早安，指挥官，香格里拉。视察常规演习辛苦了。嗯……",
+			say = "Oh. Good morning, Commander and Shangri-La...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -82,12 +82,12 @@ return {
 			}
 		},
 		{
-			say = "是埃塞克斯啊，早安。",
+			actor = 107380,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Likewise. Good morning, Essex.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -102,13 +102,13 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 107380,
 			side = 0,
 			bgName = "bg_story_nepu1",
 			withoutActorName = true,
-			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "看到埃塞克斯一副欲言又止的模样，香格里拉率先打开了话匣子",
+			say = "Shangri-La switched gears before I could even get a word in.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -124,7 +124,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "埃塞克斯…有什么烦恼吗？",
+			say = "If I may ask... Is there something bothering you, Essex?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -138,10 +138,10 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
-			say = "！你、你怎么知道",
+			say = "Huh? Why do you ask?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -152,8 +152,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -162,13 +162,13 @@ return {
 			}
 		},
 		{
-			dir = -1,
+			actor = 107090,
 			side = 1,
 			bgName = "bg_story_nepu1",
 			withoutActorName = true,
-			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
-			say = "说起来刚才埃塞克斯的反应却是有点让人好奇。",
+			say = "Now that she pointed it out, Essex's tone did seem a little concerning.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -182,10 +182,10 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "呵呵，让我猜猜看…是不是关于下次白鹰大型演习的事情呢？",
+			say = "Does it have to do with how the Eagle Union's anti-sub exercise went, by any chance?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -199,10 +199,10 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
-			say = "（小声）哇？难道你会读心术吗，香格里拉？",
+			say = "You never fail to impress with your ability to read my mind...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -216,10 +216,10 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "（小声）看这反应，你的烦恼八成还跟我们那位“前辈”脱不开关系吧~？",
+			say = "All I need is one glance at that gloomy look of yours to know Enterprise is the cause of it. Heheh~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -233,10 +233,10 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
-			say = "呜…还、还是让我自己来说吧，事情是这样的——",
+			say = "Ahem! Anyway, it's nothing important. Basically: I'm tired of living in her shadow, and blah blah blah...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -247,8 +247,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 45,
@@ -257,15 +257,15 @@ return {
 			}
 		},
 		{
+			actor = 107380,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
-			say = "嗯…想要在下次大型演习前寻找到能确切战胜企业前辈的方法，实在不行，至少也要让前辈大吃一惊…吗",
+			dir = 1,
+			say = "So... You need a strategy to beat – or at the very least, surprise – Enterprise in the next exercise?",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -293,10 +293,10 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "不介意的话，就让我来给你提供一点小小的帮助如何~？",
+			say = "Would you like me to help come up with a plan?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -307,12 +307,12 @@ return {
 			}
 		},
 		{
+			actor = 107090,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 107090,
 			nameColor = "#a9f548",
-			say = "真的吗！？……咳咳！",
+			dir = -1,
+			say = "You'd help?! I-I mean... Sure.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -323,8 +323,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -338,7 +338,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "正好我也想验证一下自己基于记录总结的部分战斗理论，也算是麻烦埃塞克斯你来帮一次忙呢",
+			say = "Absolutely. I first and foremost want to be of assistance to you, but I also want to verify how accurate my behavioral analysis of Enterprise is.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -354,7 +354,7 @@ return {
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "那就…拜托了！",
+			say = "I really appreciate the help. Thank you!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -367,14 +367,14 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_task",
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "东煌有句古话，叫做“知己知彼，百战不殆”。",
+			say = "As someone once said, \"if you know the enemy and know yourself, you need not fear the result of a hundred battles.\"",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -402,10 +402,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "虽然是古典理论，但是面对企业前辈，信息和经验的重要性自然是不用多说",
+			say = "So it's been since ancient times, but it rings doubly true when one is up against Enterprise.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -421,7 +421,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "先把至今为止的作战记录和我的“记录”总结归纳之后……",
+			say = "We should combine your combat experience with my records of her in order to come up with a solid strategy.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -437,7 +437,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "确实如此…",
+			say = "Good point...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -451,10 +451,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "嗯，之后再按照记录，针对企业前辈的战斗风格来给埃塞克斯你定制一个特训吧",
+			say = "Let's put together a special training regime for you. We'll need to use everything at our disposal to maximize your chances of winning.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -468,10 +468,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "啊，指挥官也可以来观摩一下。毕竟不是什么秘密的东西",
+			say = "Ah, Commander, you could observe us if you'd like. This is nothing top-secret, strictly speaking.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -486,7 +486,7 @@ return {
 			bgName = "bg_story_task",
 			dir = 1,
 			blackBg = true,
-			say = "既然香格里拉都这么说了，就找个时间去看一下吧。",
+			say = "Since she offered me, I figured \"why not?\" and decided to come along.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

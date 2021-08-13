@@ -1,10 +1,10 @@
 slot0 = class("ShipChangeNameView", import("...base.BaseSubView"))
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "ShipChangeNameView"
 end
 
-slot0.OnInit = function (slot0)
+function slot0.OnInit(slot0)
 	slot0._renamePanel = slot0._tf
 	slot0._renameConfirmBtn = slot0._renamePanel:Find("frame/queren")
 	slot0._renameCancelBtn = slot0._renamePanel:Find("frame/cancel")
@@ -12,26 +12,24 @@ slot0.OnInit = function (slot0)
 	slot0._renameCloseBtn = slot0._renamePanel:Find("frame/close_btn")
 
 	onButton(slot0, slot0._renameConfirmBtn, function ()
-		slot0 = getInputText(findTF(slot0._renamePanel, "frame/name_field"))
-
-		slot0:emit(ShipMainMediator.RENAME_SHIP, slot0:GetShipVO().id, slot0)
+		uv0:emit(ShipMainMediator.RENAME_SHIP, uv0:GetShipVO().id, getInputText(findTF(uv0._renamePanel, "frame/name_field")))
 	end, SFX_CONFIRM)
 	onButton(slot0, slot0._renameRevert, function ()
-		setInputText(findTF((slot0:GetShipVO():isRemoulded() and HXSet.hxLan(pg.ship_skin_template[slot0:GetShipVO():getRemouldSkinId()].name)) or pg.ship_data_statistics[slot0:GetShipVO().configId].name._renamePanel, "frame/name_field"), (slot0.GetShipVO().isRemoulded() and HXSet.hxLan(pg.ship_skin_template[slot0.GetShipVO().getRemouldSkinId()].name)) or pg.ship_data_statistics[slot0.GetShipVO().configId].name)
+		setInputText(findTF(uv0._renamePanel, "frame/name_field"), uv0:GetShipVO():isRemoulded() and HXSet.hxLan(pg.ship_skin_template[uv0:GetShipVO():getRemouldSkinId()].name) or pg.ship_data_statistics[uv0:GetShipVO().configId].name)
 	end, SFX_PANEL)
 	onButton(slot0, slot0._renameCloseBtn, function ()
-		slot0:DisplayRenamePanel(false)
+		uv0:DisplayRenamePanel(false)
 	end, SFX_PANEL)
 	onButton(slot0, slot0._renameCancelBtn, function ()
-		slot0:DisplayRenamePanel(false)
+		uv0:DisplayRenamePanel(false)
 	end, SFX_CANCEL)
 end
 
-slot0.SetShareData = function (slot0, slot1)
+function slot0.SetShareData(slot0, slot1)
 	slot0.shareData = slot1
 end
 
-slot0.GetShipVO = function (slot0)
+function slot0.GetShipVO(slot0)
 	if slot0.shareData and slot0.shareData.shipVO then
 		return slot0.shareData.shipVO
 	end
@@ -39,7 +37,7 @@ slot0.GetShipVO = function (slot0)
 	return nil
 end
 
-slot0.DisplayRenamePanel = function (slot0, slot1)
+function slot0.DisplayRenamePanel(slot0, slot1)
 	slot0.isOpenRenamePanel = slot1
 
 	SetActive(slot0._renamePanel, slot1)
@@ -52,7 +50,7 @@ slot0.DisplayRenamePanel = function (slot0, slot1)
 	end
 end
 
-slot0.OnDestroy = function (slot0)
+function slot0.OnDestroy(slot0)
 	slot0.shareData = nil
 end
 

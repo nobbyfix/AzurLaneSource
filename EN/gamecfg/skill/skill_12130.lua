@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "不屈的力量",
 	cd = 0,
-	picture = "0",
-	desc = "",
 	painting = 1,
 	id = 12130,
+	picture = "0",
 	castCV = "skill",
+	desc = "",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,9 +17,9 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
+			targetAniEffect = "",
 			target_choise = {
 				"TargetAllHelp",
 				"TargetNationality",
@@ -35,10 +35,10 @@ return {
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetSelf",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 12132
 			}

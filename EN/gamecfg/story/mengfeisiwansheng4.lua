@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "MENGFEISIWANSHENG4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Halloween Chaos!\n\n<size=45>Chapter 4: Suiting Up</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 213021,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 213021,
-			nameColor = "#a9f548",
 			say = "I finished getting dressed... Erebus...?",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -103,8 +103,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Please...? I really want to go with you, Erebus...",
 			typewriter = {
@@ -133,13 +133,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "......",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -167,8 +167,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213012,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "How do I look?",
 			typewriter = {
@@ -184,8 +184,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Ooh... Erebus, you make a great witch...",
 			typewriter = {
@@ -201,8 +201,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "I'm so happy I get to go to the party with you, Erebus...",
 			typewriter = {
@@ -218,8 +218,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213012,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "If you're happy, Terror, that's good enough for me.",
 			typewriter = {
@@ -234,14 +234,14 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
 			bgName = "bg_night",
 			actor = 404021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "You really won't go with me?",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -285,8 +285,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 404021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "... Of course.",
 			typewriter = {
@@ -315,15 +315,15 @@ return {
 			}
 		},
 		{
+			actor = 301411,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 301411,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Hip~ Hop~ The Halloween party should be...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -348,8 +348,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 1,
 					dur = 0.15,
 					x = 0,
@@ -374,15 +374,15 @@ return {
 			}
 		},
 		{
+			actor = 213041,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 213041,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Heeheehee! It's almost time! Time for me to be crowned this year's Queen of Pranks!",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -423,11 +423,11 @@ return {
 			}
 		},
 		{
+			actor = 213041,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 213041,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Auntie Hood?! ... Phew, she's not here. I almost had a heart attack...",
 			typewriter = {
 				speed = 0.05,
@@ -439,8 +439,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

@@ -1,31 +1,31 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AISAIKESIBOSS4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
-					"特别演习·埃塞克斯级\n\n<size=45>四　努力的目标</size>",
+					"Air Raid Drills With Essex\n\n<size=45>4: Goals and Hard Work</size>",
 					1
 				}
 			}
 		},
 		{
+			say = "During the climax of the exercise...",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "今天的演习也落下了帷幕",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -55,7 +55,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "埃塞克斯小姐，我能占用你一点时间吗？",
+			say = "Essex, do you have a moment?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -71,7 +71,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "有什么事吗？",
+			say = "Sure, what is it?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -85,10 +85,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "就是……埃塞克斯是怎样看待“变强”这件事情的呢？",
+			say = "Um, Essex... What do you think it means to \"become stronger?\"",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -102,10 +102,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "这次的演习，我觉得自己发挥得还不够好，实力上还有所欠缺。因为参与进攻的大家都在夸赞埃塞克斯小姐，所以我想问下……这方面的事情。",
+			say = "I've always struggled with how to overcome my own weaknesses. You've been universally praised by everyone here for your role as the enemy, so I'd like to hear from you.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -119,27 +119,27 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
+			actor = 107090,
 			dir = -1,
+			nameColor = "#a9f548",
+			say = "I-is that so...",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			expression = 3,
+			side = 2,
 			actor = 107090,
 			nameColor = "#a9f548",
-			say = "真，真的吗？",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			expression = 3,
-			side = 2,
 			dir = -1,
 			blackBg = true,
-			actor = 107090,
-			nameColor = "#a9f548",
-			say = "（被人倾慕的感觉，意外地还不错…呢…）",
+			say = "(...Normally, I'm always being compared to Enterprise, so... it's also nice to stand alone like this.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -152,14 +152,14 @@ return {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_outdoor",
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "好，这张照片就叫着“因为被夸奖而藏不住高兴心情的埃塞克斯”吧",
+			say = "Mm, and I'll title this photograph: \"The cute little Essex who cannot wipe that goofy grin off her face after getting complimented.\"",
 			flashout = {
-				dur = 0.1,
 				black = false,
+				dur = 0.1,
 				alpha = {
 					0,
 					1
@@ -187,10 +187,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
-			say = "香、香格里拉！什么时候出现的，不对，话说这种让人害羞的照片就不要拍了啦！",
+			say = "Shangri-La? When'd you get here?!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -201,8 +201,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.5,
 					dur = 0.15,
 					x = 0,
@@ -214,10 +214,10 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			say = "这些也是珍贵的“记录”呀。比起这个，是不是应该先给有问题的“学生”一点解答呢，埃塞克斯“老师”？",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "Ahaha... I think it's my duty to record moments like these for posterity. Besides, aren't you going to answer Independence's question, \"teacher?\"",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -235,10 +235,10 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
-			say = "咳、咳咳…我想，不妨给自己设定一个“目标”吧",
+			say = "Ahem! ...Anyway, I think it's important to set a goal first.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -249,8 +249,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -264,7 +264,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "“目标”？",
+			say = "A goal?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -280,7 +280,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "是的。我觉得如果能有个明确的目标的话，应该对提升自己能有更多的帮助",
+			say = "That's right. If you have a clear goal in mind, it'll help you be more efficient in your efforts.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -294,10 +294,10 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "原来如此……不过，要以什么为目标才好呢……",
+			say = "I see, but what kind of goal should I have...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -311,10 +311,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "比如…埃塞克斯最尊敬的前辈也是最大的目标，企业小姐如何？",
+			say = "For example... Essex's greatest aspiration of surpassing Enterprise, the person she respects most... something like that?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -328,10 +328,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
-			say = "哇哇？！——咳咳咳，嗯…她是我最尊敬的前辈，也是我一直以来想要超越的对象。",
+			say = "Ehh?! I-I guess... It's true that I look up to Enterprise, and at the same time want to catch up to her, but...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -342,8 +342,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -357,7 +357,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "但是，港区里面也不乏其它厉害的人哦。那个自称前辈是她的宿敌的重樱的航空母舰实力也非常的强，总有一天也要和她分个胜负…",
+			say = "But, there are many others here at this port who are not to be underestimated either. For example, the Sakura Empire's Zuikaku, who is worthy of being Enterprise's rival, and the Royal Navy's Ark Royal, who I've heard is also quite formidable.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -371,10 +371,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 107090,
+			dir = -1,
 			nameColor = "#a9f548",
-			say = "当我像这样把目光放开的时候，就会发现，其实除了前辈，向其他人学习，也能够得到许多进步",
+			say = "When I stopped only walking in Enterprise's shadows, I realized that there is so much progress to be made by learning from other people, not just from Enterprise.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -390,7 +390,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "当然了，我最终的目标还是让前辈能够完全认同自己…正是因为有这样的“目标”，我才能不断地提升自己",
+			say = "Well, in the end, what I want most is for Enterprise to recognize me as her equal, but...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -404,10 +404,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "真是充满埃塞克斯风格的一番发言呢～不过就独立小姐的情况来说，其实你已经知道答案了不是吗？",
+			say = "That's just like you, Essex. Hehe~ But if you ask me, I think Independence has known the answer to \"how to become stronger\" all along.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -423,7 +423,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "认识到自身的不足，并且积极向他人请教学习，一点一滴地令自己得到成长——",
+			say = "The idea of recognizing one's weaknesses and compensating for them, asking for guidance from others, and valuing their own growth...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -437,10 +437,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "就像之前说过的那样，独立小姐，你是不是太心急了一些呢？",
+			say = "As long as you don't get impatient, Independence, I'm sure you'll see great results.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -456,7 +456,7 @@ return {
 			bgName = "bg_story_outdoor",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "嗯…一开始想借着这次演习让大家看到我的实力，但是…看来是我把事情想得太简单了",
+			say = "I understand. Thank you for your advice.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -470,10 +470,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "（要走的路…似乎还很长啊）",
+			say = "Essex, Shangri-La, I'm looking forward to tomorrow's exercise.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -487,10 +487,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 107220,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "谢谢你们，埃塞克斯，香格里拉。我想我现在有点明白了……",
+			say = "(Finally the answer I wanted... I'm glad I got to talk to them.)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -504,11 +504,11 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_outdoor",
+			actor = 107220,
 			dir = 1,
 			blackBg = true,
-			actor = 107220,
 			nameColor = "#a9f548",
-			say = "（果然就像丹佛说的那样，多和同伴们交流一下比较好吧…）",
+			say = "(It's just as Denver said. I guess I needed to talk to some more people.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

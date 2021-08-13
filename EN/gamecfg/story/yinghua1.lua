@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA1",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"",
@@ -25,14 +25,14 @@ return {
 			}
 		},
 		{
+			actor = 305060,
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
-			actor = 305060,
 			say = "Nagato! I just took a look outside and saw tons of people have gathered! You should see it, it's amazing!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -57,8 +57,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 1.3,
 					dur = 0.1,
 					x = 0,
@@ -187,9 +187,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "The young girl took several deep breaths, slowly and elegantly walked up to the shrine doors, then she turned around.",
 			typewriter = {
 				speed = 0.05,
@@ -216,15 +216,15 @@ return {
 			}
 		},
 		{
-			actorName = "The People",
 			side = 0,
+			actorName = "The People",
+			mode = 2,
 			dir = 1,
 			blackBg = true,
-			mode = 2,
 			say = "The shrine maiden is here!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -249,8 +249,8 @@ return {
 			}
 		},
 		{
-			actorName = "The People",
 			side = 0,
+			actorName = "The People",
 			mode = 2,
 			dir = 1,
 			blackBg = true,
@@ -261,12 +261,12 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "There lied a shrine at the base of the Sacred Sakura, from which the Sakura Empire got its name. Countless people, both citizens of the Sakura Empire and visitors from abroad, had gathered on this day.",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -287,8 +287,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "A young girl, clad in red and white, emerged from the shrine, taking graceful steps down the shrine's steps.",
 			typewriter = {
 				speed = 0.05,
@@ -296,8 +296,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "She wore a shrine maiden's traditional clothing, many gorgeous ornaments, and most important of all: two golden hairpins.",
 			typewriter = {
 				speed = 0.05,
@@ -309,8 +309,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "These golden hairpins were the definitive sign that this girl was the keeper of the Sacred Sakura.",
 			typewriter = {
 				speed = 0.05,
@@ -322,8 +322,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "The young girl stopped in the center of a podium resting outside the shrine, then faced her people, bearing a magnificent expression.",
 			typewriter = {
 				speed = 0.05,
@@ -335,10 +335,10 @@ return {
 			}
 		},
 		{
-			actorName = "Nagato",
 			mode = 2,
-			side = 0,
+			actorName = "Nagato",
 			bgName = "bg_story_nagato1",
+			side = 0,
 			say = "I am Nagato. Protector of the Sakura Empire and flagship of her Combined Fleet! Let us offer our humblest prayers to the Gods!",
 			typewriter = {
 				speed = 0.05,
@@ -350,8 +350,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "The young girl, with a dignified voice unbefitting of her small stature, made an appeal to the Sakura Empire's people.",
 			typewriter = {
 				speed = 0.05,
@@ -363,10 +363,10 @@ return {
 			}
 		},
 		{
-			actorName = "Nagato",
 			mode = 2,
-			side = 0,
+			actorName = "Nagato",
 			bgName = "bg_story_nagato1",
+			side = 0,
 			say = "People of the Sakura Empire, pray with me, so that we may ensure our nation prospers for many long years to come.",
 			typewriter = {
 				speed = 0.05,
@@ -378,10 +378,10 @@ return {
 			}
 		},
 		{
-			actorName = "Nagato",
 			mode = 2,
-			side = 0,
+			actorName = "Nagato",
 			bgName = "bg_story_nagato1",
+			side = 0,
 			say = "... O Sacred Sakura, in exchange for thy blessings, I offer a prayer to thee...",
 			typewriter = {
 				speed = 0.05,
@@ -393,10 +393,10 @@ return {
 			}
 		},
 		{
-			actorName = "The People",
 			mode = 2,
-			side = 0,
+			actorName = "The People",
 			bgName = "bg_story_nagato1",
+			side = 0,
 			say = "Just and pure of heart I shall be, so that thy flowers may bloometh for eternity...",
 			typewriter = {
 				speed = 0.05,
@@ -408,13 +408,13 @@ return {
 			}
 		},
 		{
+			say = "It was a miracle. The Sacred Sakura had taken in their prayers, and its petals began to glow with a faint light.",
+			mode = 2,
 			bgName = "bg_story_nagato1",
 			bgm = "nagato-map",
-			mode = 2,
-			say = "It was a miracle. The Sacred Sakura had taken in their prayers, and its petals began to glow with a faint light.",
 			flashout = {
-				dur = 1,
 				black = false,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -445,8 +445,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "Then, the shrine and everything around it became enveloped in a gentle downpour of sakura petals.",
 			typewriter = {
 				speed = 0.05,
@@ -458,10 +458,10 @@ return {
 			}
 		},
 		{
-			actorName = "The People",
 			mode = 2,
-			side = 0,
+			actorName = "The People",
 			bgName = "bg_story_nagato1",
+			side = 0,
 			say = "The shrine maiden has brought us a miracle! The Sacred Sakura graces us with its light!",
 			typewriter = {
 				speed = 0.05,
@@ -473,10 +473,10 @@ return {
 			}
 		},
 		{
-			actorName = "The People",
 			mode = 2,
-			side = 0,
+			actorName = "The People",
 			bgName = "bg_story_nagato1",
+			side = 0,
 			say = "All hail Nagato! All hail Nagato!",
 			typewriter = {
 				speed = 0.05,
@@ -488,8 +488,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "In response to the voices of the people, the sakura petals turned into tiny globes of light.",
 			typewriter = {
 				speed = 0.05,
@@ -501,8 +501,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "They converged at a single point above the Sacred Sakura before splitting apart, flying away and spreading out evenly through all of the Sakura Empire.",
 			typewriter = {
 				speed = 0.05,
@@ -514,8 +514,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "Then, after a short while, the young girl turned to the crowd and began to speak.",
 			typewriter = {
 				speed = 0.05,
@@ -527,10 +527,10 @@ return {
 			}
 		},
 		{
-			actorName = "Nagato",
 			mode = 2,
-			side = 0,
+			actorName = "Nagato",
 			bgName = "bg_story_nagato1",
+			side = 0,
 			say = "I am Nagato. Protector of the Sakura Empire and flagship of her Combined Fleet! Hear my words! For as long as you believe in the Gods, the Sakura Empire's prosperity is guaranteed!",
 			typewriter = {
 				speed = 0.05,
@@ -542,10 +542,10 @@ return {
 			}
 		},
 		{
-			actorName = "The People",
 			mode = 2,
-			side = 0,
+			actorName = "The People",
 			bgName = "bg_story_nagato1",
+			side = 0,
 			say = "May the Sakura Empire prosper for all eternity!",
 			typewriter = {
 				speed = 0.05,
@@ -557,8 +557,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nagato1",
 			mode = 2,
+			bgName = "bg_story_nagato1",
 			say = "Amidst the cheers of her people, Nagato turned around and proceeded to walk back to the shrine's interior.",
 			typewriter = {
 				speed = 0.05,
@@ -570,10 +570,10 @@ return {
 			}
 		},
 		{
-			actorName = "Nagato",
 			mode = 2,
-			side = 0,
+			actorName = "Nagato",
 			bgName = "bg_story_nagato1",
+			side = 0,
 			say = "So, how did I fare...? Am I behaving as I should...?",
 			typewriter = {
 				speed = 0.05,
@@ -585,10 +585,10 @@ return {
 			}
 		},
 		{
-			actorName = "Nagato",
 			mode = 2,
-			side = 0,
+			actorName = "Nagato",
 			bgName = "bg_story_nagato1",
+			side = 0,
 			say = "Yes... As you say, the Protector of the Sacred Sakura must be magnificent... I shall do everything to be magnificent!",
 			typewriter = {
 				speed = 0.05,
@@ -600,11 +600,11 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			blackBg = true,
+			mode = 1,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

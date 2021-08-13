@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1000
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 590,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 590
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1110,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1110
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 680,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 680
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1220
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 800
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1330,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1330
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 890,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 890
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1440,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1440
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 980,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 980
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1550,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1550
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1100
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1660
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1220
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1770,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1770
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1340,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1340
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1880,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1880
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1500
 				}
 			},
 			{
@@ -233,20 +233,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "防空支援",
 	init_effect = "jinengchufablue",
-	id = 19132,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 19132,
 	icon = 19130,
 	last_effect = "",
 	blink = {
@@ -263,8 +263,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 500,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 500
 			}
 		},
 		{
@@ -273,8 +273,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 1000
 			}
 		}
 	}

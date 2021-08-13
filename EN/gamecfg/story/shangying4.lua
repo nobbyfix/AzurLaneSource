@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANGYING4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"Flower Festival\n\n<size=45>Chapter 4 - The Banquet Begins</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 306030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Now then, let the Flower Festival begin!",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,14 +34,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "Everyone",
 			say = "Woohoo!",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -68,15 +68,15 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Mmm! Sis, you have to try this tempura, it's amazing!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -101,12 +101,12 @@ return {
 			}
 		},
 		{
-			say = "I'm sure it is...",
+			actor = 307050,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "I'm sure it is...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -121,15 +121,15 @@ return {
 			}
 		},
 		{
+			actor = 301110,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 301110,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "I see! So this \"Flower Festival\" thing is all about stuffing your face with food!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -154,12 +154,12 @@ return {
 			}
 		},
 		{
-			say = "I'm pretty sure it isn't...",
+			actor = 301130,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301130,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "I'm pretty sure it isn't...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -254,14 +254,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "Everyone",
 			say = "...",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

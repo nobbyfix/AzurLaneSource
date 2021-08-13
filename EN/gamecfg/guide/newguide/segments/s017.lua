@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "Let's head to the <color=#ff7d36>Dock</color>.",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/bottomPanel/btm/buttons_container/dockBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,16 +28,16 @@ return {
 			style = {
 				text = "Select one of your girls and tap to view her details.",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = 0,
 				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships",
+				pathIndex = 0,
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				},
@@ -56,13 +56,13 @@ return {
 			style = {
 				text = "Tap <color=#ff7d36>gear</color> to see what gear she currently has equipped.",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = -366.9
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/blur_panel/adapt/left_length/frame/root/equpiment_toggle",
+				pathIndex = -1,
 				triggerType = {
 					2
 				},
@@ -77,8 +77,8 @@ return {
 			style = {
 				text = "Here's where you can see all of the gear a ship has equipped!！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -87,13 +87,13 @@ return {
 			style = {
 				text = "Tap <color=#ff7d36>a gear slot</color> to add gear.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 13.5
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/equipment_r_container(Adapt)/equipment_r_container/equipment_r/equipment/equipment_r2",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -109,13 +109,13 @@ return {
 			style = {
 				text = "Select the gear that we just made.",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0.37
 			},
 			ui = {
-				pathIndex = 0,
 				path = "UICamera/Canvas/UIMain/StoreHouseUI(Clone)/equipment_scrollview/equipment_grid",
+				pathIndex = 0,
 				triggerType = {
 					1
 				},
@@ -131,13 +131,13 @@ return {
 			style = {
 				text = "Now tap equip.",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/EquipmentInfoUI(Clone)/replace/actions/action_button_2",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

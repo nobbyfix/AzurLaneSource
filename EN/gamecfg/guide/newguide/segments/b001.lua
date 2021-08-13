@@ -29,8 +29,8 @@ return {
 			style = {
 				text = "Commander! Let me show you how to control your fleet.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -42,8 +42,8 @@ return {
 			style = {
 				text = "First, <color=#ff7d36>move the joystick</color> to get the fleet moving!",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -61,8 +61,8 @@ return {
 			style = {
 				text = "Characters will <color=#ff7d36>fire their weapons automatically</color>, but you also have more firepower available at your disposal.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -86,8 +86,8 @@ return {
 			style = {
 				text = "Tap the button below to <color=#ff7d36>unleash a barrage for torpedoes</color>!",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -105,8 +105,8 @@ return {
 			style = {
 				text = "When you confront a defensive enemy force, use your main ship's <color=#ff7d36>volley</color>!",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -130,8 +130,8 @@ return {
 			style = {
 				text = "Tap on the main gun icon. <color=#ff7d36>Press, hold, and move the joystick</color> to control your aim.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {

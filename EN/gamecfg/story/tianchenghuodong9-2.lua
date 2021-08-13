@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIANCHENGHUODONG9-2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "......",
-			side = 1,
 			dir = 1,
+			side = 1,
 			bgm = "nagato-map",
+			say = "......",
 			flashin = {
 				delay = 1,
 				dur = 1,
@@ -155,9 +155,9 @@ return {
 			}
 		},
 		{
+			dir = -1,
 			actorName = "{namecode:91}",
 			side = 2,
-			dir = -1,
 			say = "Nee-sama... will be the Combined Fleet's next flagship...!",
 			typewriter = {
 				speed = 0.05,
@@ -206,9 +206,9 @@ return {
 		{
 			actor = 305050,
 			nameColor = "#a9f548",
-			dir = -1,
 			withoutActorName = true,
 			side = 2,
+			dir = -1,
 			say = "In an instant, Nagato's tone of voice became heavy.",
 			typewriter = {
 				speed = 0.05,
@@ -269,7 +269,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "The Eagle Union, Royal Navy, Sakura Empire, Iris, and Sardinia have already signed it... In fact, most of the admiralty of all major powers that were in the great war have.",
+			say = "The Eagle Union, Royal Navy, Sakura Empire, Iris, and Sardegnia have already signed it... In fact, most of the admiralty of all major powers that were in the great war have.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

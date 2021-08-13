@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "Jolly Rogers",
 	init_effect = "",
-	id = 6250,
+	name = "Jolly Rogers",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "空中支援时，队伍全员防空提高5.0%",
 	stack = 1,
-	color = "yellow",
+	id = 6250,
 	icon = 6250,
 	last_effect = "",
 	effect_list = {

@@ -1,17 +1,17 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG15",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "舰装实验海域",
-			side = 2,
-			bgName = "bg_ouxianglevel",
-			dir = 1,
 			bgm = "azumaster-ins",
+			side = 2,
+			bgName = "bg_ouxianglevel",
+			dir = 1,
+			say = "Experimental Armament Testing Grounds",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -27,7 +27,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "Live终于来到终盘了喵！「μ兵装」试验项目也终于快要结束了喵！",
+			say = "Come, come! Our concert-battles are about to come to an explosive finale, nya! We will soon be finished with the test runs for the Muse System, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -43,7 +43,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "中场休息的时候，该买的东西都买好了喵？水分补充完毕了喵？好好呼吸一下新鲜空气了喵？",
+			say = "Did everyone have a chance to pick up some merchandise during the downtime, nya? How about refilling your supplies, nya? If you want to step out for some fresh air, this would be the time do it, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -54,12 +54,12 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 2,
+			nameColor = "#a9f548",
 			bgName = "bg_ouxianglevel",
+			actorName = "Everyone",
 			dir = 1,
-			actorName = "大家",
-			say = "哦哦哦哦！",
+			say = "We're ready!!",
 			dialogShake = {
 				speed = 0.09,
 				x = 8.5,
@@ -80,7 +80,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "那就进入后半场喵！首先从对手的介绍开始喵！",
+			say = "All right, let's get on with the latter part of the show! Next, I'll be introducing your rival for this round, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -91,12 +91,12 @@ return {
 			}
 		},
 		{
+			actor = 301014,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
-			actor = 301014,
 			nameColor = "#a9f548",
-			say = "让世界都感到震撼的特型偶像，{namecode:2}，登场！元气满满的{namecode:2}是不会输给任何人的！",
+			dir = 1,
+			say = "I'm the Special-Type Idol that's taking the world by snowstorm - Fubuki! My energetic performances will ring out more brilliantly than anyone else's!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -107,8 +107,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -120,10 +120,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 301014,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "啊，特型驱逐舰的各位也来加油了吗！喂~{namecode:6}~！{namecode:13}、{namecode:14}~！我会加油的~！",
+			say = "Wow, look at all the Special-type destroyers who've come out to cheer for me! Heyyy, Ayanami~! Inazuma, Ikazuchi~! I'll do my best~!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -139,7 +139,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "还有{namecode:11}，叫{namecode:12}多买一张我的明信片啊！",
+			say = "By the way, Akatsuki! Remind Hibiki to buy an extra copy of my photo portrait for me~!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -155,7 +155,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "感谢帮忙宣传{namecode:98}的周边店喵！不过自我介绍还是要好好做的喵！",
+			say = "Thanks for promoting my services, but you still need to finish your introduction, nya! But we're out of time! Next up is...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -171,7 +171,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "埃尔德里奇和喵喵们的、偶像模式…",
+			say = "Eldridge and the kitties... are in Idol Mode...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -187,7 +187,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "喵！？看起来这边也蓄势待发了喵！接下来的Live Battle，敬请期待喵！",
+			say = "Nya?! This is going to be the most exciting match yet! I can't wait for the next round to start, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -201,13 +201,13 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "埃尔德里奇…！看起来又是名强敌啊！",
+			say = "Eldridge...! Looks like we'll be facing another formidable opponent!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -235,10 +235,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "剩下两场战斗，再坚持一下就好",
+			say = "There are only two battles left. All we have to do is hold out a bit longer.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -254,7 +254,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "新兵装，也差不多该到极限了呢",
+			say = "Indeed. I expect that our equipment will be nearing its limit soon.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -265,12 +265,12 @@ return {
 			}
 		},
 		{
+			actor = 403070,
 			side = 2,
 			bgName = "bg_ouxianglevel",
-			dir = 1,
-			actor = 403070,
 			nameColor = "#a9f548",
-			say = "哼，不是挺好的吗！上吧！",
+			dir = 1,
+			say = "Hmph. That's exactly what we want!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -281,8 +281,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -296,7 +296,7 @@ return {
 			bgName = "bg_ouxianglevel",
 			side = 2,
 			dir = 1,
-			say = "是！",
+			say = "Affirmative!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

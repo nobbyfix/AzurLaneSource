@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "98式延迟射击装置",
 	init_effect = "",
-	id = 6360,
+	name = "98式延迟射击装置",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "提高精度",
 	stack = 1,
-	color = "yellow",
+	id = 6360,
 	icon = 6360,
 	last_effect = "",
 	effect_list = {

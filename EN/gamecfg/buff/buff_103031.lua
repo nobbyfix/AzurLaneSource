@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 350,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 350
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 400,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 400
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 450,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 450
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 500
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 550,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 550
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 600
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 650,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 650
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 700
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 750,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 750
 				}
 			}
 		}
@@ -133,15 +133,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 800
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "白虹-机动上升",
 	init_effect = "jinengchufablue",
-	time = 0,
 	picture = "",
 	desc = "机动上升",
 	stack = 1,
@@ -162,8 +162,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 350,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 350
 			}
 		}
 	}

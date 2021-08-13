@@ -1,29 +1,29 @@
 ys = ys or {}
-slot1 = ys.Battle.BattleConst
-ys.Battle.AttackOxyState = class("AttackOxyState", ys.Battle.IOxyState)
-ys.Battle.AttackOxyState.__name = "AttackOxyState"
+slot0 = ys
+slot1 = slot0.Battle.BattleConst
+slot0.Battle.AttackOxyState = class("AttackOxyState", slot0.Battle.IOxyState)
+slot0.Battle.AttackOxyState.__name = "AttackOxyState"
+slot2 = slot0.Battle.AttackOxyState
 
-ys.Battle.AttackOxyState.Ctor = function (slot0)
-	slot0.super.Ctor(slot0)
+function slot2.Ctor(slot0)
+	uv0.super.Ctor(slot0)
 end
 
-ys.Battle.AttackOxyState.GetWeaponUseableList = function (slot0)
+function slot2.GetWeaponUseableList(slot0)
 	return {
-		slot0.OXY_STATE.DIVE,
-		slot0.OXY_STATE.FLOAT
+		uv0.OXY_STATE.DIVE,
+		uv0.OXY_STATE.FLOAT
 	}
 end
 
-ys.Battle.AttackOxyState.GetDiveState = function (slot0)
-	return slot0.OXY_STATE.FLOAT
+function slot2.GetDiveState(slot0)
+	return uv0.OXY_STATE.FLOAT
 end
 
-ys.Battle.AttackOxyState.GetBubbleFlag = function (slot0)
+function slot2.GetBubbleFlag(slot0)
 	return false
 end
 
-ys.Battle.AttackOxyState.IsVisible = function (slot0)
+function slot2.IsVisible(slot0)
 	return true
 end
-
-return

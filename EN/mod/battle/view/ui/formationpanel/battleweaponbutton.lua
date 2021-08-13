@@ -3,28 +3,30 @@ slot1 = class("BattleWeaponButton")
 ys.Battle.BattleWeaponButton = slot1
 slot1.__name = "BattleWeaponButton"
 
-slot1.Ctor = function (slot0)
-	slot0.EventListener.AttachEventListener(slot0)
+function slot1.Ctor(slot0)
+	uv0.EventListener.AttachEventListener(slot0)
 
 	slot0.eventTriggers = {}
 end
 
-slot1.ConfigCallback = function (slot0, slot1, slot2, slot3, slot4)
+function slot1.ConfigCallback(slot0, slot1, slot2, slot3, slot4)
 	slot0._downFunc = slot1
 	slot0._upFunc = slot2
 	slot0._cancelFunc = slot3
 	slot0._emptyFunc = slot4
 end
 
-slot1.SetActive = function (slot0, slot1)
+function slot1.SetActive(slot0, slot1)
 	SetActive(slot0._skin, slot1)
 end
 
-slot1.SetHide = function (slot0, slot1)
-	GetOrAddComponent(slot0._skin, typeof(Canvas)).enabled = not slot1
+function slot1.SetJam(slot0, slot1)
+	SetActive(slot0._jam, slot1)
+	SetActive(slot0._icon, not slot1)
+	SetActive(slot0._progress, not slot1)
 end
 
-slot1.ConfigSkin = function (slot0, slot1)
+function slot1.ConfigSkin(slot0, slot1)
 	slot0._skin = slot1
 	slot0._btn = slot1:Find("ActCtl")
 	slot0._block = slot1:Find("ActCtl/block").gameObject
@@ -37,30 +39,36 @@ slot1.ConfigSkin = function (slot0, slot1)
 	slot0._filledEffect = slot1:Find("ActCtl/filledEffect")
 	slot0._filled = slot0._icon:Find("filled")
 	slot0._unfill = slot0._icon:Find("unfill")
+	slot0._jam = slot1:Find("ActCtl/jam")
 	slot0._countTxt = slot0._text:GetComponent(typeof(Text))
 
 	slot1.gameObject:SetActive(true)
 	slot0._block:SetActive(false)
 	slot0._progress.gameObject:SetActive(true)
 	slot0._text.gameObject:SetActive(false)
-	slot0._filledEffect.gameObject.SetActive(slot2, false)
-	slot0._filledEffect.gameObject.GetComponent(slot2, "DftAniEvent"):SetEndEvent(function (slot0)
-		SetActive(slot0._filledEffect, false)
+
+	slot2 = slot0._filledEffect.gameObject
+
+	slot2:SetActive(false)
+	slot2:GetComponent("DftAniEvent"):SetEndEvent(function (slot0)
+		SetActive(uv0._filledEffect, false)
 	end)
 end
 
-slot1.GetSkin = function (slot0)
+function slot1.GetSkin(slot0)
 	return slot0._skin
 end
 
-slot1.Enabled = function (slot0, slot1)
-	slot0.eventTriggers[GetComponent(slot0._btn, "EventTriggerListener")] = true
-	slot0.eventTriggers[GetComponent(slot0._block, "EventTriggerListener")] = true
-	GetComponent(slot0._btn, "EventTriggerListener").enabled = slot1
-	GetComponent(slot0._block, "EventTriggerListener").enabled = slot1
+function slot1.Enabled(slot0, slot1)
+	slot2 = GetComponent(slot0._btn, "EventTriggerListener")
+	slot3 = GetComponent(slot0._block, "EventTriggerListener")
+	slot0.eventTriggers[slot2] = true
+	slot0.eventTriggers[slot3] = true
+	slot2.enabled = slot1
+	slot3.enabled = slot1
 end
 
-slot1.Disable = function (slot0)
+function slot1.Disable(slot0)
 	if slot0._cancelFunc then
 		slot0._cancelFunc()
 	end
@@ -71,26 +79,26 @@ slot1.Disable = function (slot0)
 	GetComponent(slot0._block, "EventTriggerListener").enabled = false
 end
 
-slot1.OnSelected = function (slot0)
+function slot1.OnSelected(slot0)
 	SetActive(slot0._unSelect, false)
 	SetActive(slot0._selected, true)
 end
 
-slot1.OnUnSelect = function (slot0)
+function slot1.OnUnSelect(slot0)
 	SetActive(slot0._selected, false)
 	SetActive(slot0._unSelect, true)
 end
 
-slot1.OnFilled = function (slot0)
+function slot1.OnFilled(slot0)
 	SetActive(slot0._filled, true)
 	SetActive(slot0._unfill, false)
 end
 
-slot1.OnfilledEffect = function (slot0)
+function slot1.OnfilledEffect(slot0)
 	SetActive(slot0._filledEffect, true)
 end
 
-slot1.OnOverLoadChange = function (slot0)
+function slot1.OnOverLoadChange(slot0)
 	if slot0._progressInfo:IsOverLoad() then
 		slot0._block:SetActive(true)
 		slot0:OnUnfill()
@@ -102,35 +110,35 @@ slot1.OnOverLoadChange = function (slot0)
 	slot0:updateProgressBar()
 end
 
-slot1.OnUnfill = function (slot0)
+function slot1.OnUnfill(slot0)
 	SetActive(slot0._filled, false)
 	SetActive(slot0._unfill, true)
 end
 
-slot1.SetProgressActive = function (slot0, slot1)
+function slot1.SetProgressActive(slot0, slot1)
 	slot0._progress.gameObject:SetActive(slot1)
 end
 
-slot1.SetTextActive = function (slot0, slot1)
+function slot1.SetTextActive(slot0, slot1)
 	slot0._text.gameObject:SetActive(slot1)
 end
 
-slot1.SetProgressInfo = function (slot0, slot1)
+function slot1.SetProgressInfo(slot0, slot1)
 	slot0._progressInfo = slot1
 
-	slot0._progressInfo:RegisterEventListener(slot0, slot0.Battle.BattleEvent.WEAPON_TOTAL_CHANGE, slot0.OnTotalChange)
-	slot0._progressInfo:RegisterEventListener(slot0, slot0.Battle.BattleEvent.WEAPON_COUNT_PLUS, slot0.OnfilledEffect)
-	slot0._progressInfo:RegisterEventListener(slot0, slot0.Battle.BattleEvent.OVER_LOAD_CHANGE, slot0.OnOverLoadChange)
-	slot0._progressInfo:RegisterEventListener(slot0, slot0.Battle.BattleEvent.COUNT_CHANGE, slot0.OnCountChange)
+	slot0._progressInfo:RegisterEventListener(slot0, uv0.Battle.BattleEvent.WEAPON_TOTAL_CHANGE, slot0.OnTotalChange)
+	slot0._progressInfo:RegisterEventListener(slot0, uv0.Battle.BattleEvent.WEAPON_COUNT_PLUS, slot0.OnfilledEffect)
+	slot0._progressInfo:RegisterEventListener(slot0, uv0.Battle.BattleEvent.OVER_LOAD_CHANGE, slot0.OnOverLoadChange)
+	slot0._progressInfo:RegisterEventListener(slot0, uv0.Battle.BattleEvent.COUNT_CHANGE, slot0.OnCountChange)
 	slot0:OnOverLoadChange()
 	slot0:OnTotalChange()
 end
 
-slot1.OnCountChange = function (slot0)
+function slot1.OnCountChange(slot0)
 	slot0._countTxt.text = string.format("%d/%d", slot0._progressInfo:GetCount(), slot0._progressInfo:GetTotal())
 end
 
-slot1.OnTotalChange = function (slot0, slot1)
+function slot1.OnTotalChange(slot0, slot1)
 	if slot0._progressInfo:GetTotal() <= 0 then
 		slot0._block:SetActive(true)
 
@@ -150,7 +158,7 @@ slot1.OnTotalChange = function (slot0, slot1)
 	end
 end
 
-slot1.SetControllerActive = function (slot0, slot1)
+function slot1.SetControllerActive(slot0, slot1)
 	if slot0._isActive == slot1 then
 		return
 	end
@@ -164,31 +172,31 @@ slot1.SetControllerActive = function (slot0, slot1)
 
 		if slot0._downFunc ~= nil then
 			slot2:AddPointDownFunc(function ()
-				slot0 = true
+				uv0 = true
 
-				slot1._downFunc()
-				slot1:OnSelected()
+				uv1._downFunc()
+				uv1:OnSelected()
 			end)
 		end
 
 		if slot0._upFunc ~= nil then
 			slot2:AddPointUpFunc(function ()
-				if slot0 then
-					slot0 = false
+				if uv0 then
+					uv0 = false
 
-					slot1._upFunc()
-					slot1:OnUnSelect()
+					uv1._upFunc()
+					uv1:OnUnSelect()
 				end
 			end)
 		end
 
 		if slot0._cancelFunc ~= nil then
 			slot2:AddPointExitFunc(function ()
-				if slot0 then
-					slot0 = false
+				if uv0 then
+					uv0 = false
 
-					slot1._cancelFunc()
-					slot1:OnUnSelect()
+					uv1._cancelFunc()
+					uv1:OnUnSelect()
 				end
 			end)
 		end
@@ -204,20 +212,17 @@ slot1.SetControllerActive = function (slot0, slot1)
 	slot2:RemovePointExitFunc()
 end
 
-slot1.Update = function (slot0)
-	slot1 = slot0._progressInfo:GetCurrent()
-	slot2 = slot0._progressInfo:GetMax()
-
-	if slot0._progressInfo:GetTotal() > 0 and slot1 < slot2 then
+function slot1.Update(slot0)
+	if slot0._progressInfo:GetTotal() > 0 and slot0._progressInfo:GetCurrent() < slot0._progressInfo:GetMax() then
 		slot0:updateProgressBar()
 	end
 end
 
-slot1.updateProgressBar = function (slot0)
+function slot1.updateProgressBar(slot0)
 	slot0._progressBar.fillAmount = slot0._progressInfo:GetCurrent() / slot0._progressInfo:GetMax()
 end
 
-slot1.Dispose = function (slot0)
+function slot1.Dispose(slot0)
 	if slot0.eventTriggers then
 		for slot4, slot5 in pairs(slot0.eventTriggers) do
 			ClearEventTrigger(slot4)
@@ -229,11 +234,9 @@ slot1.Dispose = function (slot0)
 	slot0._progress = nil
 	slot0._progressBar = nil
 
-	slot0._progressInfo:UnregisterEventListener(slot0, slot0.Battle.BattleEvent.OVER_LOAD_CHANGE)
-	slot0._progressInfo:UnregisterEventListener(slot0, slot0.Battle.BattleEvent.WEAPON_TOTAL_CHANGE)
-	slot0._progressInfo:UnregisterEventListener(slot0, slot0.Battle.BattleEvent.WEAPON_COUNT_PLUS)
-	slot0._progressInfo:UnregisterEventListener(slot0, slot0.Battle.BattleEvent.COUNT_CHANGE)
-	slot0.EventListener.DetachEventListener(slot0)
+	slot0._progressInfo:UnregisterEventListener(slot0, uv0.Battle.BattleEvent.OVER_LOAD_CHANGE)
+	slot0._progressInfo:UnregisterEventListener(slot0, uv0.Battle.BattleEvent.WEAPON_TOTAL_CHANGE)
+	slot0._progressInfo:UnregisterEventListener(slot0, uv0.Battle.BattleEvent.WEAPON_COUNT_PLUS)
+	slot0._progressInfo:UnregisterEventListener(slot0, uv0.Battle.BattleEvent.COUNT_CHANGE)
+	uv0.EventListener.DetachEventListener(slot0)
 end
-
-return

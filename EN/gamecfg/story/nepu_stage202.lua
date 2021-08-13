@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "NEPU_STAGE202",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -31,13 +31,13 @@ return {
 			}
 		},
 		{
-			say = "Ah... testing, testing. Everyone, can you hear me?",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "Histoire",
+			dir = 1,
 			withoutPainting = true,
+			say = "Ah... testing, testing. Everyone, can you hear me?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -63,13 +63,13 @@ return {
 			}
 		},
 		{
-			say = "Who are you calling air? It's me, Histoire!",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "Histoire",
+			dir = 1,
 			withoutPainting = true,
+			say = "Who are you calling air? It's me, Histoire!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -95,13 +95,13 @@ return {
 			}
 		},
 		{
-			say = "Yes, I somehow managed to get through. I should be able to establish a way back to Gamindustri soon.",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "Histoire",
+			dir = 1,
 			withoutPainting = true,
+			say = "Yes, I somehow managed to get through. I should be able to establish a way back to Gamindustri soon.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -127,13 +127,13 @@ return {
 			}
 		},
 		{
-			say = "It's too difficult to do right now... I'm going to need quite a bit of time. Everyone, please wait a while longer.",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "Histoire",
+			dir = 1,
 			withoutPainting = true,
+			say = "It's too difficult to do right now... I'm going to need quite a bit of time. Everyone, please wait a while longer.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -159,13 +159,13 @@ return {
 			}
 		},
 		{
-			say = "Ah... so those things appeared after all? They may be related to this...",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "Histoire",
+			dir = 1,
 			withoutPainting = true,
+			say = "Ah... so those things appeared after all? They may be related to this...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -191,13 +191,13 @@ return {
 			}
 		},
 		{
-			say = "Actually, your data was probably collected when you all passed through that wormhole.",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "Histoire",
+			dir = 1,
 			withoutPainting = true,
+			say = "Actually, your data was probably collected when you all passed through that wormhole.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -242,13 +242,13 @@ return {
 			}
 		},
 		{
-			say = "In any case, I will do my best to re-open the wormhole. Everyone, make sure to be careful.",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "Histoire",
+			dir = 1,
 			withoutPainting = true,
+			say = "In any case, I will do my best to re-open the wormhole. Everyone, make sure to be careful.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -274,12 +274,12 @@ return {
 			}
 		},
 		{
-			say = "Surely... it's the work of the Sirens...",
+			actor = 301050,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 301050,
 			actorName = "{namecode:6}",
+			dir = 1,
+			say = "Surely... it's the work of the Sirens...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -357,8 +357,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "Ohh, what amazing, baseless confidence!",
 			typewriter = {
 				speed = 0.05,

@@ -159,14 +159,14 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "好斗的玛丽",
 	init_effect = "jinengchufared",
-	id = 10971,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "增伤效果",
 	stack = 1,
-	color = "red",
+	id = 10971,
 	icon = 10971,
 	last_effect = "",
 	blink = {

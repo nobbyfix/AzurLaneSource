@@ -9,8 +9,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -90,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -90
 				}
 			},
 			{
@@ -21,8 +21,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -90,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -90
 				}
 			}
 		}
@@ -37,8 +37,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -105,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -105
 				}
 			},
 			{
@@ -49,8 +49,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -105,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -105
 				}
 			}
 		}
@@ -65,8 +65,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -120,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -120
 				}
 			},
 			{
@@ -77,8 +77,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -120,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -120
 				}
 			}
 		}
@@ -93,8 +93,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -135,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -135
 				}
 			},
 			{
@@ -105,8 +105,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -135,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -135
 				}
 			}
 		}
@@ -121,8 +121,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -150,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -150
 				}
 			},
 			{
@@ -133,8 +133,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -150,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -150
 				}
 			}
 		}
@@ -149,8 +149,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -165,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -165
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -165,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -165
 				}
 			}
 		}
@@ -177,8 +177,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -180,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -180
 				}
 			},
 			{
@@ -189,8 +189,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -180,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -180
 				}
 			}
 		}
@@ -205,8 +205,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -195,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -195
 				}
 			},
 			{
@@ -217,8 +217,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -195,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -195
 				}
 			}
 		}
@@ -233,8 +233,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -210,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -210
 				}
 			},
 			{
@@ -245,8 +245,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -210,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -210
 				}
 			}
 		}
@@ -261,8 +261,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -240,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = -240
 				}
 			},
 			{
@@ -273,15 +273,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -240,
-					attr = "torpedoPower"
+					attr = "torpedoPower",
+					number = -240
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "",
 	init_effect = "",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 10,
@@ -304,8 +304,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -90,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = -90
 			}
 		},
 		{
@@ -316,8 +316,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -90,
-				attr = "torpedoPower"
+				attr = "torpedoPower",
+				number = -90
 			}
 		}
 	}

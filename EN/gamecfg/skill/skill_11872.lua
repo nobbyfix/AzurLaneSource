@@ -2,10 +2,10 @@ return {
 	uiEffect = "",
 	name = "神射手·改",
 	cd = 0,
-	picture = "0",
-	desc = "神射手·改",
 	painting = 0,
 	id = 11872,
+	picture = "0",
+	desc = "神射手·改",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -16,9 +16,9 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
+			targetAniEffect = "",
 			target_choise = {
 				"TargetPlayerMainFleet",
 				"TargetNationality",

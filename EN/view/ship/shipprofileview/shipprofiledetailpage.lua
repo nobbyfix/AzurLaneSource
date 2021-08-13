@@ -1,10 +1,10 @@
 slot0 = class("ShipProfileDetailPage", import("...base.BaseSubView"))
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "ShipProfileDetailPage"
 end
 
-slot0.OnLoaded = function (slot0)
+function slot0.OnLoaded(slot0)
 	slot0.detailRightBlurRect = slot0:findTF("bg")
 	slot0.propertyTF = slot0:findTF("bg/property_panel/frame")
 	slot0.skillRect = slot0:findTF("bg/skill_panel/frame/skills_rect")
@@ -14,33 +14,28 @@ slot0.OnLoaded = function (slot0)
 	slot0.skillArrRight = slot0:findTF("bg/skill_panel/frame/arrow2")
 end
 
-slot0.OnInit = function (slot0)
-	return
+function slot0.OnInit(slot0)
 end
 
-slot0.EnterAnim = function (slot0, slot1, slot2)
+function slot0.EnterAnim(slot0, slot1, slot2)
 	LeanTween.moveX(rtf(slot0._tf), 0, slot1):setEase(LeanTweenType.easeInOutSine):setOnComplete(System.Action(function ()
-		if slot0 then
-			slot0()
+		if uv0 then
+			uv0()
 		end
 	end))
 end
 
-slot0.ExistAnim = function (slot0, slot1, slot2)
+function slot0.ExistAnim(slot0, slot1, slot2)
 	LeanTween.moveX(rtf(slot0._tf), 1000, slot1):setEase(LeanTweenType.easeInOutSine):setOnComplete(System.Action(function ()
-		if slot0 then
-			slot0()
+		if uv0 then
+			uv0()
 		end
 
-		slot1:Hide()
+		uv1:Hide()
 	end))
 end
 
-slot0.Update = function (slot0, slot1, slot2, slot3)
-	if slot3 then
-		slot3()
-	end
-
+function slot0.Update(slot0, slot1, slot2, slot3)
 	slot0:Show()
 
 	slot0.shipGroup = slot1
@@ -48,9 +43,13 @@ slot0.Update = function (slot0, slot1, slot2, slot3)
 
 	slot0:InitSkills()
 	slot0:InitProperty()
+
+	if slot3 then
+		slot3()
+	end
 end
 
-slot0.InitProperty = function (slot0)
+function slot0.InitProperty(slot0)
 	slot0.propertyPanel = PropertyPanel.New(slot0.propertyTF)
 
 	slot0.propertyPanel:initProperty(slot0.shipGroup.shipConfig.id)
@@ -60,28 +59,23 @@ slot0.InitProperty = function (slot0)
 	end
 end
 
-slot0.InitSkills = function (slot0)
+function slot0.InitSkills(slot0)
 	slot2 = 0
 	slot3 = Clone(pg.ship_data_template[slot0.shipGroup:getShipConfigId(slot0.showTrans)].buff_list_display)
 
 	if not slot0.showTrans then
 		_.each(slot0.shipGroup.groupConfig.trans_skill, function (slot0)
-			table.removebyvalue(slot0, slot0)
+			table.removebyvalue(uv0, slot0)
 		end)
 	end
 
-	slot4 = slot0.skillPanel.childCount
-	slot5 = (#slot3 < 3 and 3) or #slot3
-
-	for slot9 = slot4 + 1, slot5, 1 do
+	for slot9 = slot0.skillPanel.childCount + 1, #slot3 < 3 and 3 or #slot3 do
 		cloneTplTo(slot0.skillTpl, slot0.skillPanel)
 	end
 
-	for slot9 = 1, slot0.skillPanel.childCount, 1 do
-		slot10 = slot0.skillPanel:GetChild(slot9 - 1)
-
+	for slot9 = 1, slot0.skillPanel.childCount do
 		if slot9 <= #slot3 then
-			slot0:UpdateSkill(slot10, slot3[slot9])
+			slot0:UpdateSkill(slot0.skillPanel:GetChild(slot9 - 1), slot3[slot9])
 		else
 			setActive(slot0:findTF("icon", slot10), false)
 			setActive(slot0:findTF("add", slot10), true)
@@ -95,8 +89,8 @@ slot0.InitSkills = function (slot0)
 
 	if #slot3 > 3 then
 		onScroll(slot0, slot0.skillRect, function (slot0)
-			setActive(slot0.skillArrLeft, slot0.x > 0.01)
-			setActive(slot0.skillArrRight, slot0.x < 0.99)
+			setActive(uv0.skillArrLeft, slot0.x > 0.01)
+			setActive(uv0.skillArrRight, slot0.x < 0.99)
 		end)
 	else
 		GetComponent(slot0.skillRect, typeof(ScrollRect)).onValueChanged:RemoveAllListeners()
@@ -107,7 +101,7 @@ slot0.InitSkills = function (slot0)
 	})
 end
 
-slot0.UpdateSkill = function (slot0, slot1, slot2)
+function slot0.UpdateSkill(slot0, slot1, slot2)
 	if slot0.shipGroup:isBluePrintGroup() then
 		for slot6, slot7 in ipairs(slot0.shipGroup:getBluePrintChangeSkillList()) do
 			if slot7[1] == slot2 then
@@ -118,19 +112,18 @@ slot0.UpdateSkill = function (slot0, slot1, slot2)
 		end
 	end
 
-	LoadImageSpriteAsync("skillicon/" .. getSkillConfig(slot2).icon, slot3)
+	LoadImageSpriteAsync("skillicon/" .. getSkillConfig(slot2).icon, findTF(slot1, "icon"))
 	setActive(slot0:findTF("icon", slot1), true)
 	setActive(slot0:findTF("add", slot1), false)
 	onButton(slot0, slot1, function ()
-		slot0:emit(ShipProfileScene.SHOW_SKILL_INFO, slot1.id, {
-			id = slot1.id,
-			level = pg.skill_data_template[slot1.id].max_level
+		uv0:emit(ShipProfileScene.SHOW_SKILL_INFO, uv1.id, {
+			id = uv1.id,
+			level = pg.skill_data_template[uv1.id].max_level
 		})
 	end, SFX_PANEL)
 end
 
-slot0.OnDestroy = function (slot0)
-	return
+function slot0.OnDestroy(slot0)
 end
 
 return slot0

@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "Commander, please Tap <color=#ff7d36>Attack</color>",
 				mode = 2,
-				dir = 1,
 				posY = -42,
+				dir = 1,
 				posX = 243
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -33,25 +33,22 @@ return {
 			style = {
 				text = "Enemy flagship ahead! Tap the target to continue moving!",
 				mode = 2,
-				dir = 1,
 				posY = 218.62,
+				dir = 1,
 				posX = 20.04
 			},
 			ui = {
-				scale = 1.8,
-				pathIndex = -1,
-				eventPath = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_7",
-				delay = 0.8,
 				path = "/LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/cells/chapter_cell_4_7/attachment",
-				pos = {
-					x = 0,
-					y = 2.4
-				}
+				eventPath = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_7",
+				isLevelPoint = true,
+				delay = 0.8,
+				scale = 1.8,
+				pathIndex = -1
 			},
 			baseui = {
-				pathIndex = -1,
 				delay = 1,
-				path = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_7",
+				path = "/LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/cells/chapter_cell_4_7/attachment",
+				pathIndex = 0,
 				pos = {
 					x = 348.5,
 					y = 45.52
@@ -74,25 +71,22 @@ return {
 			style = {
 				text = "Enemy flagship ahead! Tap the target to continue moving!",
 				mode = 2,
-				dir = 1,
 				posY = 218.62,
+				dir = 1,
 				posX = 20.04
 			},
 			ui = {
-				scale = 1.8,
-				pathIndex = -1,
-				eventPath = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_7",
-				delay = 0.2,
 				path = "/LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/cells/chapter_cell_4_7/attachment",
-				pos = {
-					x = 0,
-					y = 2.4
-				}
+				eventPath = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_7",
+				isLevelPoint = true,
+				delay = 0.2,
+				scale = 1.8,
+				pathIndex = -1
 			},
 			baseui = {
-				pathIndex = -1,
 				delay = 1,
-				path = "LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/quads/chapter_cell_quad_4_7",
+				path = "/LevelCamera/Canvas/UIMain/LevelGrid/DragLayer/plane/cells/chapter_cell_4_7/attachment",
+				pathIndex = 0,
 				pos = {
 					x = 348.5,
 					y = 45.52

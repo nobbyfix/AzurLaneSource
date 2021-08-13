@@ -7,9 +7,9 @@ return {
 					"onFoeAircraftDying"
 				},
 				arg_list = {
-					skill_id = 2131,
+					target = "TargetSelf",
 					inside = 1,
-					target = "TargetSelf"
+					skill_id = 2131
 				}
 			}
 		}
@@ -22,9 +22,9 @@ return {
 					"onFoeAircraftDying"
 				},
 				arg_list = {
-					skill_id = 2131,
+					target = "TargetSelf",
 					inside = 1,
-					target = "TargetSelf"
+					skill_id = 2131
 				}
 			}
 		}
@@ -37,9 +37,9 @@ return {
 					"onFoeAircraftDying"
 				},
 				arg_list = {
-					skill_id = 2131,
+					target = "TargetSelf",
 					inside = 1,
-					target = "TargetSelf"
+					skill_id = 2131
 				}
 			}
 		}
@@ -52,9 +52,9 @@ return {
 					"onFoeAircraftDying"
 				},
 				arg_list = {
-					skill_id = 2131,
+					target = "TargetSelf",
 					inside = 1,
-					target = "TargetSelf"
+					skill_id = 2131
 				}
 			}
 		}
@@ -67,9 +67,9 @@ return {
 					"onFoeAircraftDying"
 				},
 				arg_list = {
-					skill_id = 2131,
+					target = "TargetSelf",
 					inside = 1,
-					target = "TargetSelf"
+					skill_id = 2131
 				}
 			}
 		}
@@ -82,9 +82,9 @@ return {
 					"onFoeAircraftDying"
 				},
 				arg_list = {
-					skill_id = 2131,
+					target = "TargetSelf",
 					inside = 1,
-					target = "TargetSelf"
+					skill_id = 2131
 				}
 			}
 		}
@@ -97,9 +97,9 @@ return {
 					"onFoeAircraftDying"
 				},
 				arg_list = {
-					skill_id = 2131,
+					target = "TargetSelf",
 					inside = 1,
-					target = "TargetSelf"
+					skill_id = 2131
 				}
 			}
 		}
@@ -112,9 +112,9 @@ return {
 					"onFoeAircraftDying"
 				},
 				arg_list = {
-					skill_id = 2131,
+					target = "TargetSelf",
 					inside = 1,
-					target = "TargetSelf"
+					skill_id = 2131
 				}
 			}
 		}
@@ -127,9 +127,9 @@ return {
 					"onFoeAircraftDying"
 				},
 				arg_list = {
-					skill_id = 2131,
+					target = "TargetSelf",
 					inside = 1,
-					target = "TargetSelf"
+					skill_id = 2131
 				}
 			}
 		}
@@ -142,9 +142,9 @@ return {
 					"onFoeAircraftDying"
 				},
 				arg_list = {
-					skill_id = 2131,
+					target = "TargetSelf",
 					inside = 1,
-					target = "TargetSelf"
+					skill_id = 2131
 				}
 			}
 		}
@@ -152,12 +152,12 @@ return {
 	desc_get = "防空圈内，敌方飞机被击落时，自身炮击、防空提高$1，持续8秒，不可叠加",
 	name = "防空支援",
 	init_effect = "",
-	id = 2131,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "防空圈内，敌方飞机被击落时，自身炮击、防空提高$1，持续8秒，不可叠加",
 	stack = 1,
-	color = "red",
+	id = 2131,
 	icon = 2130,
 	last_effect = "",
 	effect_list = {
@@ -167,9 +167,9 @@ return {
 				"onFoeAircraftDying"
 			},
 			arg_list = {
-				skill_id = 2131,
+				target = "TargetSelf",
 				inside = 1,
-				target = "TargetSelf"
+				skill_id = 2131
 			}
 		}
 	}

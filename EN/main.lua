@@ -1,9 +1,15 @@
 ys = {}
-pg = {
-	_weak = setmetatable({}, {
-		__mode = "k"
-	})
-}
+pg = {}
+cs = {}
+pg._weak = setmetatable({}, {
+	__mode = "k"
+})
+PLATFORM_CH = 1
+PLATFORM_JP = 2
+PLATFORM_KR = 3
+PLATFORM_US = 4
+PLATFORM_CHT = 5
+PLATFORM_CODE = PLATFORM_US
 
 require("Include")
 require("tolua.reflection")
@@ -12,21 +18,15 @@ math.randomseed(os.time())
 
 CSharpVersion = NetConst.GatewayState
 
-print("C# Ver. " .. CSharpVersion)
+print("C# Ver.... " .. CSharpVersion)
 
 PLATFORM = LuaHelper.GetPlatformInt()
-PLATFORM_CH = 1
-PLATFORM_JP = 2
-PLATFORM_KR = 3
-PLATFORM_US = 4
-PLATFORM_CHT = 5
-PLATFORM_CODE = PLATFORM_US
 SDK_EXIT_CODE = 99
 
+ReflectionHelp.RefSetField(typeof("ResourceMgr"), "_asyncMax", ResourceMgr.Inst, 30)
+
 function luaIdeDebugFunc()
-	breakInfoFun = 
-	-- Decompilation error in this vicinity:
-	require("LuaDebugjit")("localhost", 7003)
+	breakInfoFun = require("LuaDebugjit")("localhost", 7003)
 	time = Timer.New(breakInfoFun, 0.5, -1, 1)
 
 	time:Start()
@@ -35,6 +35,21 @@ end
 
 if (PLATFORM_CODE == PLATFORM_CH or PLATFORM_CODE == PLATFORM_CHT) and PLATFORM == 8 then
 	pg.SdkMgr.GetInstance():InitSDK()
+end
+
+if PLATFORM_CODE == PLATFORM_JP then
+	slot0 = tf(GameObject.Find("LevelCamera/Canvas/UIMain/LevelGrid"))
+
+	RemoveComponent(slot0, typeof(Image))
+
+	slot0.offsetMin = Vector2(-200, -200)
+	slot0.offsetMax = Vector2(200, 200)
+
+	setActive(slot0:Find("DragLayer"), true)
+end
+
+if PLATFORM_CODE == PLATFORM_US then
+	setActive(tf(GameObject.Find("LevelCamera/Canvas/UIMain/LevelGrid")):Find("DragLayer"), true)
 end
 
 GetComponent(tf(GameObject.Find("OverlayCamera/Overlay/UIDebug/logs")), "Text").supportRichText = false
@@ -77,9 +92,9 @@ function OnApplicationExit()
 
 	slot3 = pg.MsgboxMgr.GetInstance() and slot2:getMsgBoxOb()
 
-	if pg.StoryMgr.GetInstance() and slot4.storyId then
+	if pg.NewStoryMgr.GetInstance() and slot4:IsRunning() then
 		if slot3 and slot3.activeSelf then
-			playSoundEffect(SFX_CANCEL)
+			pg.CriMgr.GetInstance():PlaySoundEffect_V3(SFX_CANCEL)
 			triggerButton(slot2._closeBtn)
 		end
 
@@ -99,7 +114,7 @@ function OnApplicationExit()
 	end
 
 	if pg.ShareMgr.GetInstance() and slot8.panel and slot9.gameObject.activeSelf then
-		playSoundEffect(SFX_CANCEL)
+		pg.CriMgr.GetInstance():PlaySoundEffect_V3(SFX_CANCEL)
 		triggerButton(slot9:Find("main/top/btnBack"))
 
 		return
@@ -109,8 +124,9 @@ function OnApplicationExit()
 		return
 	end
 
-	slot12 = slot10.viewComponent._tf.parent
-	slot13 = slot10.viewComponent._tf:GetSiblingIndex()
+	slot11 = slot10.viewComponent
+	slot12 = slot11._tf.parent
+	slot13 = slot11._tf:GetSiblingIndex()
 	slot14 = -1
 	slot15 = nil
 
@@ -126,8 +142,14 @@ function OnApplicationExit()
 	end
 
 	if slot3 and slot3.activeSelf then
-		playSoundEffect(SFX_CANCEL)
+		pg.CriMgr.GetInstance():PlaySoundEffect_V3(SFX_CANCEL)
 		triggerButton(slot2._closeBtn)
+
+		return
+	end
+
+	if nowWorld and nowWorld.staminaMgr:IsShowing() then
+		nowWorld.staminaMgr:Hide()
 
 		return
 	end
@@ -136,7 +158,6 @@ function OnApplicationExit()
 end
 
 function OnReceiveMemoryWarning()
-	return
 end
 
 function PressBack()
@@ -154,8 +175,17 @@ slot2 = os.clock()
 
 seriesAsync({
 	function (slot0)
-		pg.LayerWeightMgr.GetInstance():Init()
-		pg.UIMgr.GetInstance():Init(slot0)
+		parallelAsync({
+			function (slot0)
+				pg.LayerWeightMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
+				pg.UIMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
+				pg.CriMgr.GetInstance():Init(slot0)
+			end
+		}, slot0)
 	end,
 	function (slot0)
 		parallelAsync({
@@ -166,9 +196,6 @@ seriesAsync({
 				pg.ShaderMgr.GetInstance():Init(slot0)
 			end,
 			function (slot0)
-				pg.CriMgr.GetInstance():Init(slot0)
-			end,
-			function (slot0)
 				pg.PoolMgr.GetInstance():Init(slot0)
 			end,
 			function (slot0)
@@ -176,9 +203,6 @@ seriesAsync({
 			end,
 			function (slot0)
 				pg.MsgboxMgr.GetInstance():Init(slot0)
-			end,
-			function (slot0)
-				pg.StoryMgr.GetInstance():Init(slot0)
 			end,
 			function (slot0)
 				pg.SystemOpenMgr.GetInstance():Init(slot0)
@@ -196,13 +220,31 @@ seriesAsync({
 				pg.ToastMgr.GetInstance():Init(slot0)
 			end,
 			function (slot0)
+				pg.WorldToastMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
 				pg.SecondaryPWDMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
+				pg.ShipFlagMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
+				pg.NewStoryMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
+				pg.RedDotMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
+				pg.UserAgreementMgr.GetInstance():Init(slot0)
+			end,
+			function (slot0)
+				pg.BrightnessMgr.GetInstance():Init(slot0)
 			end
 		}, slot0)
 	end
 }, function (slot0)
 	pg.SdkMgr.GetInstance():QueryWithProduct()
-	print("loading cost: " .. os.clock() - slot0)
+	print("loading cost: " .. os.clock() - uv0)
 	CameraUtil.SetOnlyAdaptMainCam(true)
 	VersionMgr.Inst:DestroyUI()
 
@@ -235,6 +277,8 @@ seriesAsync({
 			DebugMgr.Inst:Switch2QATool()
 		end)
 	end
-end)
 
-return
+	pg.UIMgr.GetInstance():AddDebugButton("Print", function ()
+		getProxy(TechnologyNationProxy):printNationPointLog()
+	end)
+end)

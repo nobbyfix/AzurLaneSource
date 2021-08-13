@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "不停出怪1",
 	init_effect = "",
+	name = "不停出怪1",
+	time = 0,
 	picture = "",
 	desc = "不停出怪1",
 	stack = 1,
@@ -15,9 +15,9 @@ return {
 				"onUpdate"
 			},
 			arg_list = {
-				time = 5,
 				skill_id = 7020,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				time = 5
 			}
 		}
 	}

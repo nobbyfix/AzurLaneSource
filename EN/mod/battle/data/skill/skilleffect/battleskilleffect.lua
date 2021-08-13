@@ -1,11 +1,12 @@
 ys = ys or {}
-slot1 = ys.Battle.BattleUnitEvent
-ys.Battle.BattleSkillEffect = class("BattleSkillEffect")
-ys.Battle.BattleSkillEffect.__name = "BattleSkillEffect"
+slot0 = ys
+slot1 = slot0.Battle.BattleFormulas
+slot2 = slot0.Battle.BattleUnitEvent
+slot0.Battle.BattleSkillEffect = class("BattleSkillEffect")
+slot0.Battle.BattleSkillEffect.__name = "BattleSkillEffect"
+slot3 = slot0.Battle.BattleSkillEffect
 
-ys.Battle.BattleSkillEffect.Ctor = function (slot0, slot1, slot2)
-	slot0.EventDispatcher.AttachEventDispatcher(slot0)
-
+function slot3.Ctor(slot0, slot1, slot2)
 	slot0._tempData = slot1
 	slot0._type = slot0._tempData.type
 	slot0._targetChoise = slot0._tempData.target_choise or "TargetNull"
@@ -18,11 +19,11 @@ ys.Battle.BattleSkillEffect.Ctor = function (slot0, slot1, slot2)
 	slot0._level = slot2
 end
 
-ys.Battle.BattleSkillEffect.SetCommander = function (slot0, slot1)
+function slot3.SetCommander(slot0, slot1)
 	slot0._commander = slot1
 end
 
-ys.Battle.BattleSkillEffect.Effect = function (slot0, slot1, slot2, slot3)
+function slot3.Effect(slot0, slot1, slot2, slot3)
 	if slot2 and #slot2 > 0 then
 		for slot7, slot8 in ipairs(slot2) do
 			slot0:AniEffect(slot1, slot8)
@@ -33,7 +34,7 @@ ys.Battle.BattleSkillEffect.Effect = function (slot0, slot1, slot2, slot3)
 	end
 end
 
-ys.Battle.BattleSkillEffect.AniEffect = function (slot0, slot1, slot2)
+function slot3.AniEffect(slot0, slot1, slot2)
 	slot3 = slot2:GetPosition()
 	slot4 = slot1:GetPosition()
 
@@ -42,11 +43,11 @@ ys.Battle.BattleSkillEffect.AniEffect = function (slot0, slot1, slot2)
 
 		if slot0._casterAniEffect.posFun then
 			function slot6(slot0)
-				return slot0.posFun(slot0.posFun, , slot0)
+				return uv0.posFun(uv1, uv2, slot0)
 			end
 		end
 
-		slot1:DispatchEvent(slot0.Event.New(slot1.ADD_EFFECT, {
+		slot1:DispatchEvent(uv0.Event.New(uv1.ADD_EFFECT, {
 			effect = slot5.effect,
 			offset = slot5.offset,
 			posFun = slot6
@@ -58,11 +59,11 @@ ys.Battle.BattleSkillEffect.AniEffect = function (slot0, slot1, slot2)
 
 		if slot0._targetAniEffect.posFun then
 			function slot6(slot0)
-				return slot0.posFun(slot0.posFun, , slot0)
+				return uv0.posFun(uv1, uv2, slot0)
 			end
 		end
 
-		slot2:DispatchEvent(slot0.Event.New(slot1.ADD_EFFECT, {
+		slot2:DispatchEvent(uv0.Event.New(uv1.ADD_EFFECT, {
 			effect = slot5.effect,
 			offset = slot5.offset,
 			posFun = slot6
@@ -70,18 +71,19 @@ ys.Battle.BattleSkillEffect.AniEffect = function (slot0, slot1, slot2)
 	end
 end
 
-ys.Battle.BattleSkillEffect.DataEffect = function (slot0, slot1, slot2, slot3)
+function slot3.DataEffect(slot0, slot1, slot2, slot3)
 	if slot0._delay > 0 then
 		slot4 = nil
-		slot0._timerIndex = slot0._timerIndex + 1
-		slot0._timerList[slot0._timerIndex + 1] = pg.TimeMgr.GetInstance():AddBattleTimer("BattleSkill", -1, slot0._delay, function ()
-			if slot0 and slot0:IsAlive() then
-				slot1:DoDataEffect(slot1.DoDataEffect, , )
+		slot5 = slot0._timerIndex + 1
+		slot0._timerIndex = slot5
+		slot0._timerList[slot5] = pg.TimeMgr.GetInstance():AddBattleTimer("BattleSkill", -1, slot0._delay, function ()
+			if uv0 and uv0:IsAlive() then
+				uv1:DoDataEffect(uv0, uv2, uv3)
 			end
 
-			pg.TimeMgr.GetInstance():RemoveBattleTimer(slot4)
+			pg.TimeMgr.GetInstance():RemoveBattleTimer(uv4)
 
-			slot1._timerList[slot5] = nil
+			uv1._timerList[uv5] = nil
 		end, true)
 
 		return
@@ -90,22 +92,22 @@ ys.Battle.BattleSkillEffect.DataEffect = function (slot0, slot1, slot2, slot3)
 	slot0:DoDataEffect(slot1, slot2, slot3)
 end
 
-ys.Battle.BattleSkillEffect.DoDataEffect = function (slot0, slot1, slot2, slot3)
-	return
+function slot3.DoDataEffect(slot0, slot1, slot2, slot3)
 end
 
-ys.Battle.BattleSkillEffect.DataEffectWithoutTarget = function (slot0, slot1, slot2)
+function slot3.DataEffectWithoutTarget(slot0, slot1, slot2)
 	if slot0._delay > 0 then
 		slot3 = nil
-		slot0._timerIndex = slot0._timerIndex + 1
-		slot0._timerList[slot0._timerIndex + 1] = pg.TimeMgr.GetInstance():AddBattleTimer("BattleSkill", -1, slot0._delay, function ()
-			if slot0 and slot0:IsAlive() then
-				slot1:DoDataEffectWithoutTarget(slot1.DoDataEffectWithoutTarget, )
+		slot4 = slot0._timerIndex + 1
+		slot0._timerIndex = slot4
+		slot0._timerList[slot4] = pg.TimeMgr.GetInstance():AddBattleTimer("BattleSkill", -1, slot0._delay, function ()
+			if uv0 and uv0:IsAlive() then
+				uv1:DoDataEffectWithoutTarget(uv0, uv2)
 			end
 
-			pg.TimeMgr.GetInstance():RemoveBattleTimer(slot3)
+			pg.TimeMgr.GetInstance():RemoveBattleTimer(uv3)
 
-			slot1._timerList[slot4] = nil
+			uv1._timerList[uv4] = nil
 		end, true)
 
 		return
@@ -114,20 +116,16 @@ ys.Battle.BattleSkillEffect.DataEffectWithoutTarget = function (slot0, slot1, sl
 	slot0:DoDataEffectWithoutTarget(slot1, slot2)
 end
 
-ys.Battle.BattleSkillEffect.DoDataEffectWithoutTarget = function (slot0, slot1, slot2)
-	return
+function slot3.DoDataEffectWithoutTarget(slot0, slot1, slot2)
 end
 
-ys.Battle.BattleSkillEffect.IsFilterTarget = function (slot0, slot1, slot2)
-	slot3 = slot0._tempData.arg_list.effectFilter or {}
+function slot3.IsFilterTarget(slot0, slot1, slot2)
 	slot4 = true
 
-	for slot8, slot9 in ipairs(slot3) do
+	for slot8, slot9 in ipairs(slot0._tempData.arg_list.effectFilter or {}) do
 		if slot9[1] == "TargetID" then
-			slot10 = slot2:GetTemplateID()
-
 			if slot9[2] == "=" then
-				if slot9[3] == slot10 then
+				if slot9[3] == slot2:GetTemplateID() then
 					return true
 				else
 					slot4 = false
@@ -145,25 +143,26 @@ ys.Battle.BattleSkillEffect.IsFilterTarget = function (slot0, slot1, slot2)
 	return slot4
 end
 
-ys.Battle.BattleSkillEffect.GetTarget = function (slot0, slot1, slot2)
+function slot3.GetTarget(slot0, slot1, slot2)
 	if type(slot0._targetChoise) == "string" then
 		if slot0._targetChoise == "TargetSameToLastEffect" then
 			return slot2._lastEffectTarget
 		else
-			return slot0.Battle.BattleTargetChoise[slot0._targetChoise](slot1, slot0._tempData.arg_list)
+			return uv0.Battle.BattleTargetChoise[slot0._targetChoise](slot1, slot0._tempData.arg_list)
 		end
 	elseif type(slot0._targetChoise) == "table" then
-		slot3 = nil
-
 		for slot7, slot8 in ipairs(slot0._targetChoise) do
-			slot3 = slot0.Battle.BattleTargetChoise[slot8](slot1, slot0._tempData.arg_list, slot3)
+			slot3 = uv0.Battle.BattleTargetChoise[slot8](slot1, slot0._tempData.arg_list, nil)
 		end
 
 		return slot3
 	end
 end
 
-ys.Battle.BattleSkillEffect.Clear = function (slot0)
+function slot3.Interrupt(slot0)
+end
+
+function slot3.Clear(slot0)
 	for slot4, slot5 in pairs(slot0._timerList) do
 		pg.TimeMgr.GetInstance():RemoveBattleTimer(slot5)
 
@@ -173,8 +172,42 @@ ys.Battle.BattleSkillEffect.Clear = function (slot0)
 	slot0._commander = nil
 end
 
-ys.Battle.BattleSkillEffect.Dispose = function (slot0)
-	slot0.EventDispatcher.DetachEventDispatcher(slot0)
-end
+function slot3.calcCorrdinate(slot0, slot1, slot2)
+	slot3 = nil
 
-return
+	if slot0.absoulteCorrdinate then
+		slot3 = Vector3(slot0.absoulteCorrdinate.x, 0, slot0.absoulteCorrdinate.z)
+	elseif slot0.absoulteRandom then
+		slot3 = uv0.RandomPos(slot0.absoulteRandom)
+	elseif slot0.casterRelativeCorrdinate then
+		slot4 = slot1:GetIFF()
+		slot5 = slot1:GetPosition()
+		slot3 = Vector3(slot4 * slot0.casterRelativeCorrdinate.hrz + slot5.x, 0, slot4 * slot0.casterRelativeCorrdinate.vrt + slot5.z)
+	elseif slot0.casterRelativeRandom then
+		slot4 = slot1:GetIFF()
+		slot5 = slot1:GetPosition()
+		slot3 = uv0.RandomPos({
+			X1 = slot4 * slot0.casterRelativeRandom.front + slot5.x,
+			X2 = slot4 * slot0.casterRelativeRandom.rear + slot5.x,
+			Z1 = slot0.casterRelativeRandom.upper + slot5.z,
+			Z2 = slot0.casterRelativeRandom.lower + slot5.z
+		})
+	elseif slot0.targetRelativeCorrdinate then
+		if slot2 then
+			slot4 = slot2:GetIFF()
+			slot5 = slot2:GetPosition()
+			slot3 = Vector3(slot4 * slot0.targetRelativeCorrdinate.hrz + slot5.x, 0, slot4 * slot0.targetRelativeCorrdinate.vrt + slot5.z)
+		end
+	elseif slot0.targetRelativeRandom and slot2 then
+		slot4 = slot2:GetIFF()
+		slot5 = slot2:GetPosition()
+		slot3 = uv0.RandomPos({
+			X1 = slot4 * slot0.targetRelativeRandom.front + slot5.x,
+			X2 = slot4 * slot0.targetRelativeRandom.rear + slot5.x,
+			Z1 = slot0.targetRelativeRandom.upper + slot5.z,
+			Z2 = slot0.targetRelativeRandom.lower + slot5.z
+		})
+	end
+
+	return slot3
+end

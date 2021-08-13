@@ -1,17 +1,16 @@
 slot0 = class("RedPacketMediator", import("...base.ContextMediator"))
 
-slot0.register = function (slot0)
-	return
+function slot0.register(slot0)
 end
 
-slot0.listNotificationInterests = function (slot0)
+function slot0.listNotificationInterests(slot0)
 	return {
 		ActivityProxy.ACTIVITY_SHOW_RED_PACKET_AWARDS,
 		ActivityProxy.ACTIVITY_UPDATED
 	}
 end
 
-slot0.handleNotification = function (slot0, slot1)
+function slot0.handleNotification(slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == ActivityProxy.ACTIVITY_SHOW_RED_PACKET_AWARDS then

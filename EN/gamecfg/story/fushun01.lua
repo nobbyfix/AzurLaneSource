@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FUSHUN01",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Fu Shun's Great Adventure\n\n<size=45>Chapter 1 - Old Warehouse Treasure Hunt</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
+			nameColor = "#a9f548",
+			say = "So this is the place you were talking about? Hehehe, I'm sure there's plenty of nice stuff in here!",
 			dir = 1,
 			blackBg = true,
 			bgm = "story-china",
-			actor = 501020,
-			nameColor = "#a9f548",
-			say = "So this is the place you were talking about? Hehehe, I'm sure there's plenty of nice stuff in here!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "Umm... Should we really go inside without the commander's permission...?",
+			actor = 501040,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			actor = 501040,
-			nameColor = "#a9f548",
+			say = "Umm... Should we really go inside without the commander's permission...?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -166,15 +166,15 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 501020,
-			nameColor = "#a9f548",
 			say = "*Cough, cough!* ...It's so dusty in here...",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -199,12 +199,12 @@ return {
 			}
 		},
 		{
-			say = "*Cough, cough!* ...I found a bunch of hard-to-read books...",
+			actor = 501040,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = -1,
 			blackBg = true,
-			actor = 501040,
-			nameColor = "#a9f548",
+			say = "*Cough, cough!* ...I found a bunch of hard-to-read books...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

@@ -62,12 +62,12 @@ return {
 	desc_get = "与印第安纳波利斯同时出击时，炮击、防空、装填提升5.0%(满级15.0%)",
 	name = "妹妹真是太棒了！",
 	init_effect = "",
-	id = 10110,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "与印第安纳波利斯同时出击时，炮击、防空、装填提升$1",
 	stack = 1,
-	color = "red",
+	id = 10110,
 	icon = 10110,
 	last_effect = "",
 	effect_list = {
@@ -77,15 +77,15 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				check_target = "TargetTemplate",
 				minTargetNumber = 1,
-				skill_id = 10110,
 				target = "TargetSelf",
-				targetTemplateIDList = {
-					103071,
-					103072,
-					103073,
-					103074
+				skill_id = 10110,
+				check_target = {
+					"TargetAllHelp",
+					"TargetShipTag"
+				},
+				ship_tag_list = {
+					"Indianapolis"
 				}
 			}
 		}

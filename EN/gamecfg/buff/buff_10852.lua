@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.08,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.08
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.092,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.092
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.104,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.104
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.12,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.12
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.132,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.132
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.144,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.144
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.16,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.16
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.172,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.172
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.184,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.184
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.2,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.2
 				}
 			}
 		}
 	},
-	time = 0,
-	name = "命运的阴暗面",
 	init_effect = "",
-	id = 10852,
+	name = "命运的阴暗面",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "增伤",
 	stack = 1,
-	color = "yellow",
+	id = 10852,
 	icon = 10852,
 	last_effect = "Darkness",
 	effect_list = {
@@ -156,8 +156,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.08,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = 0.08
 			}
 		}
 	}

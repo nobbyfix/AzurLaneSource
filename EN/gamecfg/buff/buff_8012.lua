@@ -1,7 +1,7 @@
 return {
-	time = 10,
-	name = "运输船直线离场",
 	init_effect = "",
+	name = "运输船直线离场",
+	time = 10,
 	picture = "",
 	desc = "运输船直线离场",
 	stack = 1,
@@ -45,8 +45,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1,
-				attr = "immuneMaxAreaLimit"
+				attr = "immuneMaxAreaLimit",
+				number = 1
 			}
 		}
 	}

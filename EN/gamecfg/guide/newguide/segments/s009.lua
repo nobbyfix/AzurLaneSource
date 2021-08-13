@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "Our next mission is to support the Eagles' aviation fleet combat drills. Tap <color=#ff7d36>Attack</color> to get started.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -31,8 +31,8 @@ return {
 			style = {
 				text = "Feeling like you need more firepower? Let's <color=#ff7d36>retreat for now</color> and head back to port!",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			}
 		},
@@ -41,13 +41,13 @@ return {
 			style = {
 				text = "Tap <color=#ff7d36>retreat</color>.",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/normal/retreat_button",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -62,13 +62,13 @@ return {
 			style = {
 				text = "Yes, yes... This is just a tactical retreat!",
 				mode = 2,
-				dir = -1,
 				posY = 104.45,
+				dir = -1,
 				posX = 203.04
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/Msgbox(Clone)/window/button_container/custom_button_1(Clone)",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ANSHAN03",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"An Shan's Coloring Book\n\n<size=45>Chapter 3 - Time For a (Lunch) Break</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = -1,
-			bgm = "story-china",
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "I'm back, guys! I couldn't get a hold of the Bulins... but I brought some other people with me!",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "Oh! Why, if it isn't Ning Hai and Ping Hai!",
+			actor = 501040,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501040,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Oh! Why, if it isn't Ning Hai and Ping Hai!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -102,12 +102,12 @@ return {
 			}
 		},
 		{
-			say = "Ahahahah... You're as dead-serious as usual, An Shan.",
+			actor = 502020,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 502020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Ahahahah... You're as dead-serious as usual, An Shan.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -138,10 +138,10 @@ return {
 			}
 		},
 		{
-			actorName = "Tai Yuan & Chang Chun & An Shan",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 501040,
+			actorName = "Tai Yuan & Chang Chun & An Shan",
+			bgName = "bg_story_school",
+			side = 0,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "Of course!",
@@ -217,12 +217,12 @@ return {
 			}
 		},
 		{
-			say = "Heheheh, thanks~",
+			actor = 502030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 502030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Heheheh, thanks~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

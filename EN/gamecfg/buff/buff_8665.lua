@@ -1,12 +1,12 @@
 return {
+	time = 10,
 	name = "黛朵",
 	init_effect = "jinengchufablue",
-	id = 8664,
-	time = 10,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8664,
 	icon = 8664,
 	last_effect = "",
 	blink = {
@@ -24,8 +24,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "dodgeRateExtra"
+				attr = "dodgeRateExtra",
+				number = 0.1
 			}
 		}
 	}

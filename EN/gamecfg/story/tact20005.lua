@@ -46,12 +46,12 @@ return {
 			}
 		},
 		{
-			side = 1,
-			say = "Is that you?",
-			nameColor = "#a9f548",
-			blackBg = true,
 			actor = 900010,
+			side = 1,
+			nameColor = "#a9f548",
 			actorName = "???",
+			blackBg = true,
+			say = "Is that you?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -70,11 +70,11 @@ return {
 			}
 		},
 		{
+			actor = 900010,
 			side = 1,
 			nameColor = "#a9f548",
-			blackBg = true,
-			actor = 900010,
 			actorName = "???",
+			blackBg = true,
 			say = "You're Tirpitz... You're my sister...",
 			shake = {
 				speed = 1,
@@ -109,11 +109,11 @@ return {
 			}
 		},
 		{
+			actor = 900010,
 			side = 1,
 			nameColor = "#a9f548",
-			blackBg = true,
-			actor = 900010,
 			actorName = "???",
+			blackBg = true,
 			say = "...I'm sorry... Please forgive me...",
 			shake = {
 				speed = 1,
@@ -148,12 +148,12 @@ return {
 			}
 		},
 		{
+			actor = 900010,
 			side = 1,
 			nameColor = "#a9f548",
-			blackBg = true,
-			actor = 900010,
 			actorName = "???",
-			say = "I'm sorry... I did what I had to for the sake of Ironblood... I just want you to understand that...",
+			blackBg = true,
+			say = "I'm sorry... I did what I had to for the sake of Iron blood... I just want you to understand that...",
 			shake = {
 				speed = 1,
 				number = 3
@@ -187,8 +187,8 @@ return {
 			}
 		},
 		{
-			sequenceSpd = 2,
 			mode = 1,
+			sequenceSpd = 2,
 			bgFade = true,
 			sequence = {
 				{
@@ -198,8 +198,8 @@ return {
 			}
 		},
 		{
-			sequenceSpd = 2,
 			mode = 1,
+			sequenceSpd = 2,
 			bgFade = true,
 			sequence = {
 				{

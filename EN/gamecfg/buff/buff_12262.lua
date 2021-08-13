@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.015,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.015
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.02,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.02
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.025,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.025
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.03,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.03
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.035,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.035
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.04,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.04
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.045,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.045
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.05,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.05
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.055,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.055
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.06,
-					attr = "injureRatioByAir"
+					attr = "injureRatioByAir",
+					number = -0.06
 				}
 			}
 		}
 	},
+	time = 30,
 	name = "",
 	init_effect = "",
-	time = 30,
 	picture = "",
 	desc = "",
 	stack = 1,

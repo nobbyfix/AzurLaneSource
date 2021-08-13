@@ -65,12 +65,12 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			nameColor = "#a9f548",
-			soundeffect = "event:/battle/boom2",
-			actor = 307060,
 			actorName = "{namecode:96}",
 			say = "What...?! Sho... Shoukaku?!",
+			soundeffect = "event:/battle/boom2",
 			flashout = {
 				dur = 0.3,
 				alpha = {
@@ -100,14 +100,23 @@ return {
 			}
 		},
 		{
-			side = 1,
-			say = "I promised... I would always... protect you...!",
-			actorName = "{namecode:95}",
 			actor = 307050,
+			side = 1,
 			nameColor = "#a9f548",
+			actorName = "{namecode:95}",
+			say = "I promised... I would always... protect you...!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
+			},
+			action = {
+				{
+					type = "move",
+					y = -2500,
+					delay = 1.2,
+					dur = 1,
+					x = 0
+				}
 			},
 			shake = {
 				speed = 1,
@@ -142,11 +151,71 @@ return {
 			}
 		},
 		{
+			actor = 307020,
 			side = 0,
 			actorName = "{namecode:92}",
-			dir = -1,
-			actor = 307020,
 			nameColor = "#ff0000",
+			dir = -1,
+			say = "The Pawn defied us? How?!",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307010,
+			side = 0,
+			actorName = "{namecode:91}",
+			nameColor = "#ff0000",
+			dir = -1,
+			say = "She saved her sister from danger. Interesting...",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307010,
+			side = 0,
+			actorName = "{namecode:91}",
+			nameColor = "#ff0000",
+			dir = -1,
+			say = "(So even a Pawn will rush to protect those they love...)",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307020,
+			side = 0,
+			actorName = "{namecode:92}",
+			nameColor = "#ff0000",
+			dir = -1,
 			say = "This must be an Awakening Response... Brought on by remembering something important from the depths of her mind at just the right time...",
 			shake = {
 				speed = 1,
@@ -162,11 +231,11 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 1,
 			actorName = "{namecode:91}",
-			dir = -1,
-			actor = 307010,
 			nameColor = "#ff0000",
+			dir = -1,
 			say = "Kaga, let's retreat. Our priority right now is to report to the Creator that a Pawn has Awakened.",
 			shake = {
 				speed = 1,
@@ -182,12 +251,126 @@ return {
 			}
 		},
 		{
+			actor = 307020,
 			side = 0,
 			actorName = "{namecode:92}",
-			dir = -1,
-			actor = 307020,
 			nameColor = "#ff0000",
+			dir = -1,
 			say = "Understood.",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307060,
+			actorName = "{namecode:96}",
+			side = 0,
+			nameColor = "#a9f548",
+			say = "Hey, wait!",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307050,
+			actorName = "{namecode:95}",
+			side = 0,
+			nameColor = "#a9f548",
+			say = "Argh... is that you... Zuikaku?",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307060,
+			actorName = "{namecode:96}",
+			side = 0,
+			nameColor = "#a9f548",
+			say = "Sis?! Yeah, it's me! But more importantly, what did Akagi do to you?",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307050,
+			actorName = "{namecode:95}",
+			side = 0,
+			nameColor = "#a9f548",
+			say = "I don't know... It... it feels like I just woke up from a long dream.",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307050,
+			actorName = "{namecode:95}",
+			side = 0,
+			nameColor = "#a9f548",
+			say = "And don't worry, I feel fine.",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307050,
+			actorName = "{namecode:95}",
+			side = 0,
+			nameColor = "#a9f548",
+			say = "In fact, I should apologize. For making you worry about your fool of a big sister.",
 			shake = {
 				speed = 1,
 				number = 3

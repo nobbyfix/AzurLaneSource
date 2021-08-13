@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "定身",
 	init_effect = "",
+	name = "定身",
+	time = 0,
 	picture = "",
 	desc = "",
 	stack = 1,
@@ -15,10 +15,7 @@ return {
 				"onAttach",
 				"onRemove"
 			},
-			arg_list = {
-				check_target = "TargetAllHarm",
-				checkTargetMaxDistance = 300
-			}
+			arg_list = {}
 		},
 		{
 			type = "BattleBuffAddBuff",

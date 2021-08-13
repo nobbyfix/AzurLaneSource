@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 100,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 100
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 130,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 130
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 160,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 160
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 200,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 200
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 230,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 230
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 260,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 260
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 300,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 300
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 330,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 330
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 360,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 360
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 400,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 400
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "Enigma—信号—防空",
 	init_effect = "jinengchufablue",
-	id = 12695,
-	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "本场防空上升1-4%",
 	stack = 1,
-	color = "blue",
+	id = 12695,
 	icon = 12690,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 100,
-				attr = "antiAirPower"
+				attr = "antiAirPower",
+				number = 100
 			}
 		}
 	}

@@ -1,12 +1,12 @@
 return {
-	time = 30,
-	name = "",
 	init_effect = "",
-	id = 40251,
+	name = "",
+	time = 30,
+	color = "yellow",
 	picture = "",
 	desc = "先锋受到的伤害降低,依据后勤属性,持续30秒",
 	stack = 1,
-	color = "yellow",
+	id = 40251,
 	icon = 40250,
 	last_effect = "",
 	effect_list = {

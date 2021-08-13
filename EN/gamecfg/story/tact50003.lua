@@ -4,8 +4,8 @@ return {
 	once = true,
 	scripts = {
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "Apart from Chicago's South Group, the three sisters Astoria, Quincy, and Vincennes were assigned to the Eagle Union's North Fleet.",
 			typewriter = {
@@ -86,8 +86,8 @@ return {
 		{
 			actor = 103100,
 			side = 1,
-			say = "Also, going on patrol is tiring and boring... Why do we have to run around when Enterprise and the others could handle it?",
 			nameColor = "#a9f548",
+			say = "Also, going on patrol is tiring and boring... Why do we have to run around when Enterprise and the others could handle it?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -270,12 +270,12 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "Suddenly, all three sisters were illuminated by searchlights.",
 			flashout = {
-				dur = 1,
 				black = false,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -312,8 +312,8 @@ return {
 		{
 			actor = 103080,
 			side = 0,
-			say = "Wait, no! These are... enemies! Quincy, Vincennes, prepare for battle!",
 			nameColor = "#a9f548",
+			say = "Wait, no! These are... enemies! Quincy, Vincennes, prepare for battle!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

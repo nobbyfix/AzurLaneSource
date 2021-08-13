@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.2,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.2
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.222,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.222
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.244,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.244
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.266,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.266
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.288,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.288
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.31,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.31
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.332,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.332
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.354,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.354
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.376,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.376
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.4,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.4
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "俾斯麦-提尔比兹连携伤害上升",
 	init_effect = "jinengchufared",
-	id = 12142,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "伤害提高",
 	stack = 1,
-	color = "red",
+	id = 12142,
 	icon = 12140,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.2,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.2
 			}
 		}
 	}

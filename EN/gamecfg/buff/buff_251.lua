@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "制空权劣势",
 	init_effect = "",
-	id = 251,
+	name = "制空权劣势",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 251,
 	icon = 251,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.12,
-				attr = "damageRatioByAir"
+				attr = "damageRatioByAir",
+				number = -0.12
 			}
 		},
 		{
@@ -26,8 +26,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.06,
-				attr = "injureRatioByAir"
+				attr = "injureRatioByAir",
+				number = 0.06
 			}
 		},
 		{
@@ -36,8 +36,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -300,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = -300
 			}
 		},
 		{
@@ -46,8 +46,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -300,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = -300
 			}
 		}
 	}

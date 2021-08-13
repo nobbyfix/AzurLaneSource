@@ -1,7 +1,7 @@
 return {
 	{
-		style = 1,
 		share_btn = true,
+		style = 1,
 		page = 1,
 		text = {
 			{
@@ -38,8 +38,8 @@ return {
 		}
 	},
 	{
-		style = 1,
 		page = 2,
+		style = 1,
 		condition = {
 			"isProPose",
 			true
@@ -57,8 +57,8 @@ return {
 		}
 	},
 	{
-		style = 1,
 		page = 2.1,
+		style = 1,
 		condition = {
 			"isProPose",
 			false
@@ -73,8 +73,8 @@ return {
 		}
 	},
 	{
-		title = "获得的特殊勋章",
 		style = 2,
+		title = "获得的特殊勋章",
 		page = 3
 	}
 }

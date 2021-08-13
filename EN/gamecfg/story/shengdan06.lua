@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENGDAN06",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -16,8 +16,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "Port - Royal Navy Dormitory",
 			typewriter = {
 				speed = 0.05,
@@ -78,14 +78,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "C-Christmas dinner... With turkey... Christmas pudding... and prawns to start... L-let's dig in!",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -110,14 +110,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Ah, it's so delicious!",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -142,14 +142,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "This is really good, too!",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -174,14 +174,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Ahh~ I'm so glad I was born to experience this~",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -206,14 +206,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201080,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Seeing how Cygnet eats always makes me jealous for some reason...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -396,14 +396,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 204030,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Now it's time to exchange presents with each other. You may all choose one present from this box. Oh, and you cannot return it once you've chosen.",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -492,14 +492,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201102,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "H-how does it look...?",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

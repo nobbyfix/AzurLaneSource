@@ -1,7 +1,7 @@
 return {
-	time = 99999,
-	name = "序章欧根旋转盾",
 	init_effect = "",
+	name = "序章欧根旋转盾",
+	time = 99999,
 	picture = "",
 	desc = "序章欧根旋转盾",
 	stack = 1,
@@ -15,6 +15,7 @@ return {
 				"onShieldBroken"
 			},
 			arg_list = {
+				shieldBuffID = 7033,
 				countTarget = 3,
 				countType = 7037
 			}

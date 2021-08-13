@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.01
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.014,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.014
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.018,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.018
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.022,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.022
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.026,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.026
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.03,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.03
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.035,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.035
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.04,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.04
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.045,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.045
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.05,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.05
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "",
 	init_effect = "",
-	id = 105092,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 105092,
 	icon = 105090,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.01,
-				attr = "injureRatioByCannon"
+				attr = "injureRatioByCannon",
+				number = -0.01
 			}
 		}
 	}

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIXUEGUI2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Angel or Devil in White?\n\n<size=45>Chapter 2 - Vampire's Allure</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
+			say = "Port - Dorms",
 			side = 2,
+			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "Port - Dorms",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,13 +62,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_room",
 			say = "One hour later...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -105,13 +105,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "Port - Office, a few days later...",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -135,8 +135,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "... And, thy temperature is fine, too~♪ Commander, thou art quite the healthy one~♪ ",
 			typewriter = {
@@ -149,8 +149,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -162,8 +162,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Do you notice something different about me today~?",
 			typewriter = {
@@ -243,8 +243,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Hmph... Just when I was getting to the fun part...",
 			typewriter = {
@@ -257,8 +257,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -267,12 +267,12 @@ return {
 			}
 		},
 		{
-			say = "Miss Vampire... I won't judge your hobbies, but perhaps it would be wise to keep the time and place in mind?",
+			actor = 203010,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 203010,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Miss Vampire... I won't judge your hobbies, but perhaps it would be wise to keep the time and place in mind?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -338,8 +338,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "What dost thou think, Commander? Thou trusts me, right?",
 			typewriter = {
@@ -361,8 +361,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 201232,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Hmph! Fine, since you both don't believe me, I'll prove that I wasn't just wearing this to try to seduce Commander!",
 			typewriter = {
@@ -375,8 +375,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -385,8 +385,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "Vampire stormed out of the office.",
 			typewriter = {
@@ -411,12 +411,12 @@ return {
 			}
 		},
 		{
+			actor = 203010,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 203010,
-			nameColor = "#a9f548",
 			say = "But maybe I did go a bit overboard... Sorry, Your Excellency. I'll make sure to apologize to Vampire later.",
 			typewriter = {
 				speed = 0.05,

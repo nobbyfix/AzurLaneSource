@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "鬼怒",
 	init_effect = "",
-	id = 12850,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 12850,
 	icon = 12850,
 	last_effect = "",
 	effect_list = {
@@ -32,7 +32,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 12852,
@@ -41,7 +41,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 12852,

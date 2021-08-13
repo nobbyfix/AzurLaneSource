@@ -1,19 +1,19 @@
 return {
-	time = 0,
-	name = "13章翔鹤死亡",
 	init_effect = "",
-	id = 8617,
+	name = "13章翔鹤死亡",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8617,
 	icon = 2120,
 	last_effect = "",
 	effect_list = {
 		{
 			type = "BattleBuffAddBuff",
 			trigger = {
-				"onDying"
+				"onBeforeFatalDamage"
 			},
 			arg_list = {
 				buff_id = 8616,

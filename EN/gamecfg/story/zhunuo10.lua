@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHUNUO10",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -67,14 +67,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 403010,
+			side = 2,
 			nameColor = "#D6341D",
+			dir = 1,
 			say = "Hey, you okay? You look pretty messed up, but I thought I'd be polite and ask.",
 			flashout = {
-				dur = 0.75,
 				black = true,
+				dur = 0.75,
 				alpha = {
 					0,
 					1

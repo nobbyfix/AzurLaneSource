@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "伊丽莎白buff",
 	init_effect = "",
-	id = 8637,
+	name = "伊丽莎白buff",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8637,
 	icon = 8637,
 	last_effect = "yilishabaidanchuan_buff_01",
 	effect_list = {}

@@ -159,14 +159,14 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "底力爆发 +",
 	init_effect = "jinengchufared",
-	id = 18043,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "装填提高",
 	stack = 1,
-	color = "red",
+	id = 18043,
 	icon = 18040,
 	last_effect = "",
 	blink = {

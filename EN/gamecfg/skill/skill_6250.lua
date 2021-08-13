@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "Jolly Rogers",
 	cd = 0,
-	picture = "0",
-	desc = "Jolly Rogers",
 	painting = 0,
 	id = 6250,
+	picture = "0",
 	castCV = "skill",
+	desc = "Jolly Rogers",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,10 +17,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetAllHelp",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 6251
 			}

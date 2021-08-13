@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENGDAN07",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -16,8 +16,8 @@ return {
 			}
 		},
 		{
-			side = 0,
 			dir = 1,
+			side = 0,
 			say = "Port - Commander's Office",
 			typewriter = {
 				speed = 0.05,
@@ -31,10 +31,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "......",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -45,12 +45,12 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 0,
 			say = "......?",
-			dir = 1,
-			actor = 0,
 			nameColor = "#a9f548",
+			dir = 1,
+			withoutPainting = true,
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -97,10 +97,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "......",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -158,10 +158,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "!!!",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -189,10 +189,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "(Nod)",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -218,8 +218,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "The commander's quiet time together with Eldridge passed slowly. He felt like it had healed his soul...",
 			typewriter = {
 				speed = 0.05,
@@ -231,14 +231,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101051,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Christmas Reporter Gridley, here to deliver her mission report! Here you are, Commander!",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -265,10 +265,10 @@ return {
 		{
 			actor = 0,
 			side = 0,
-			withoutPainting = true,
-			dir = 1,
 			nameColor = "#a9f548",
 			say = "......!",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -294,14 +294,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101051,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Whew... This is a good one! I call it \"Holy Night's Embrace\"! Heck, this is Pulitzer Prize material!",
 			flashout = {
-				dur = 0.35,
 				black = false,
+				dur = 0.35,
 				alpha = {
 					0,
 					1

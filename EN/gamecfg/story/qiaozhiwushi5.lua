@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "QIAOZHIWUSHI5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Another Leader?\n\n<size=45>Chapter 5 - Let's get this shipment over to Warehouse.</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_107",
+			actor = 204030,
 			side = 2,
+			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 204030,
-			nameColor = "#a9f548",
 			say = "Don't you agree, George? If you shine too brightly, you may find yourself eclipsing Her Majesty.",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -68,12 +68,12 @@ return {
 			}
 		},
 		{
-			say = "Being strong in both body and personality is a good thing indeed.",
+			actor = 205050,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 205050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Being strong in both body and personality is a good thing indeed.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -107,8 +107,8 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			actor = 205050,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Are you trying to say that I'd cause...",
 			typewriter = {
@@ -153,8 +153,8 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			side = 2,
+			stopbgm = true,
 			bgName = "star_level_bg_107",
 			dir = 1,
 			say = "The temperature in the room seemed to drop by a few degrees.",
@@ -232,9 +232,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "(Wow, I didn't even think it was that serious...)",
 			typewriter = {
 				speed = 0.05,
@@ -246,13 +246,13 @@ return {
 			}
 		},
 		{
+			actor = 204030,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			bgm = "story-1",
-			actor = 204030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Haha, I merely jest. However, the problem that the Commander posed is very real, and in order to resolve that–",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -263,9 +263,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "Hood stood from her seat and walked between King George V and myself, pointing us towards each other before giving an elegant curtsy.",
 			typewriter = {
 				speed = 0.05,
@@ -293,11 +293,11 @@ return {
 			}
 		},
 		{
+			actor = 204030,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
-			actor = 204030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "But not as friends, nor as commander and secretary. What you two need is a much deeper bond.",
 			typewriter = {
 				speed = 0.05,
@@ -363,9 +363,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_107",
-			dir = 1,
 			say = "Huh? King George V has a \"soft side?\"",
 			typewriter = {
 				speed = 0.05,
@@ -377,12 +377,12 @@ return {
 			}
 		},
 		{
+			actor = 204030,
 			side = 2,
 			bgName = "star_level_bg_107",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 204030,
-			nameColor = "#a9f548",
 			say = "Commander, why don't you try cooking for her?",
 			typewriter = {
 				speed = 0.05,

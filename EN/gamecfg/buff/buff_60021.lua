@@ -1,7 +1,7 @@
 return {
-	time = 1,
-	name = "测试-反击-光环特效",
 	init_effect = "",
+	name = "测试-反击-光环特效",
+	time = 1,
 	picture = "",
 	desc = "5%移动加速",
 	stack = 20,
@@ -18,8 +18,8 @@ return {
 			},
 			arg_list = {
 				group = 60021,
-				add = 0,
-				mul = 500
+				mul = 500,
+				add = 0
 			}
 		}
 	}

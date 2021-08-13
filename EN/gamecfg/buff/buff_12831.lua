@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = 0.05
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.061,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = 0.061
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = 0.072
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.083,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = 0.083
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.094,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = 0.094
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.105,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = 0.105
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.116,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = 0.116
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.127,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = 0.127
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.138,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = 0.138
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "dodgeRateExtra"
+					attr = "dodgeRateExtra",
+					number = 0.15
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "",
 	init_effect = "jinengchufablue",
-	id = 12831,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "回避率上升",
 	stack = 1,
-	color = "yellow",
+	id = 12831,
 	icon = 12830,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "dodgeRateExtra"
+				attr = "dodgeRateExtra",
+				number = 0.05
 			}
 		}
 	}

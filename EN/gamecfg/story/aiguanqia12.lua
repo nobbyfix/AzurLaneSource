@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA12",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 301050,
@@ -53,8 +53,8 @@ return {
 			actor = 10400030,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "Kizuna AI",
+			dir = 1,
 			say = "Everyone, look what I found! Umm, this is... some kind of switch?",
 			typewriter = {
 				speed = 0.05,
@@ -96,10 +96,10 @@ return {
 			}
 		},
 		{
-			say = "*ka-chunk*",
-			side = 2,
 			dir = 1,
+			side = 2,
 			soundeffect = "event:/ui/boat_drag",
+			say = "*ka-chunk*",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -113,8 +113,8 @@ return {
 			expression = 5,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "UWOOAHH! I accidently bumped into it!!",
 			typewriter = {
@@ -127,8 +127,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -137,11 +137,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			nameColor = "#a9f548",
 			side = 0,
-			actor = 201210,
-			dir = 1,
 			hideOther = true,
+			dir = 1,
 			actorName = "Everyone",
 			say = "……………",
 			subActors = {
@@ -168,8 +168,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "(A huge explosion... didn't happen at all)",
 			typewriter = {
 				speed = 0.05,
@@ -226,8 +226,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -239,8 +239,8 @@ return {
 			expression = 4,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "Woot! Now we can keep going!",
 			typewriter = {
@@ -253,11 +253,11 @@ return {
 			}
 		},
 		{
+			actor = 301120,
 			nameColor = "#a9f548",
 			side = 0,
-			actor = 301120,
-			dir = 1,
 			hideOther = true,
+			dir = 1,
 			actorName = "Everyone",
 			say = "*staaaaaaaares*",
 			subActors = {
@@ -287,8 +287,8 @@ return {
 			expression = 6,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "I-I'm sorry! Please forgive me~!",
 			typewriter = {
@@ -301,8 +301,8 @@ return {
 			},
 			action = {
 				{
-					y = 22.5,
 					type = "shake",
+					y = 22.5,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

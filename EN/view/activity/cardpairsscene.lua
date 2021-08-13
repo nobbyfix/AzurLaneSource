@@ -5,15 +5,15 @@ slot0.GAME_STATE_GAMING = 1
 slot0.GAME_STATE_END = 2
 slot0.config_init = false
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "CardPairsUI"
 end
 
-slot0.setPlayerData = function (slot0, slot1)
+function slot0.setPlayerData(slot0, slot1)
 	slot0.playerData = slot1
 end
 
-slot0.setActivityData = function (slot0, slot1)
+function slot0.setActivityData(slot0, slot1)
 	slot0.activityData = slot1
 
 	if not slot0.config_init then
@@ -42,11 +42,10 @@ slot0.setActivityData = function (slot0, slot1)
 	end
 end
 
-slot0.checkActivityEnd = function (slot0)
-	return
+function slot0.checkActivityEnd(slot0)
 end
 
-slot0.init = function (slot0)
+function slot0.init(slot0)
 	slot0.backBtn = slot0:findTF("top/back", slot0._tf)
 	slot0.cardTpl = slot0:findTF("res/card", slot0._tf)
 	slot0.cardCon = slot0:findTF("card_con/layout", slot0._tf)
@@ -61,9 +60,9 @@ slot0.init = function (slot0)
 	slot0:hideChild(slot0:findTF("res", slot0._tf))
 end
 
-slot0.didEnter = function (slot0)
+function slot0.didEnter(slot0)
 	onButton(slot0, slot0.backBtn, function ()
-		slot0:emit(slot1.ON_BACK)
+		uv0:emit(uv1.ON_BACK)
 	end, SOUND_BACK)
 	onButton(slot0, slot0.helpBtn, function ()
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
@@ -72,20 +71,20 @@ slot0.didEnter = function (slot0)
 		})
 	end, SFX_PANEL)
 	onButton(slot0, slot0.maskBtn, function ()
-		if slot0.lastTimes > 0 then
-			slot0:gameInit()
+		if uv0.lastTimes > 0 then
+			uv0:gameInit()
 		else
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
 				content = i18n("card_pairs_tips"),
 				onYes = function ()
-					slot0:gameInit()
+					uv0:gameInit()
 				end
 			})
 		end
 	end, SFX_PANEL)
 
 	slot0.updateTimer = Timer.New(function ()
-		slot0:updateTimes()
+		uv0:updateTimes()
 	end, 10, -1)
 
 	slot0.updateTimer:Start()
@@ -97,70 +96,73 @@ slot0.didEnter = function (slot0)
 
 	slot0.cardUIList:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			if slot0.cardList[slot1 + 1] ~= nil then
-				slot3:initCard(slot0.cardIndexList[slot1 + 1][1])
+			if uv0.cardList[slot1 + 1] ~= nil then
+				slot3:initCard(uv0.cardIndexList[slot1 + 1][1])
 			else
-				table.insert(slot0.cardList, slot1 + 1, CardPairsCard.New(slot2, slot0.pics, slot0.cardIndexList[slot1 + 1][1], function (slot0)
-					if slot0.gameState == slot0.GAME_STATE_GAMING then
-						if slot0.isFrist then
-							slot0.isFrist = false
-							slot0.beginTime = Time.realtimeSinceStartup
-							slot0.countTimer = Timer.New(function ()
-								slot0:setTimeTxt(math.floor((Time.realtimeSinceStartup - slot0.beginTime) * 1000))
+				table.insert(uv0.cardList, slot1 + 1, CardPairsCard.New(slot2, uv0.pics, uv0.cardIndexList[slot1 + 1][1], function (slot0)
+					if uv0.gameState == uv0.GAME_STATE_GAMING then
+						if uv0.isFrist then
+							uv0.isFrist = false
+							uv0.beginTime = Time.realtimeSinceStartup
+							uv0.countTimer = Timer.New(function ()
+								uv0:setTimeTxt(math.floor((Time.realtimeSinceStartup - uv0.beginTime) * 1000))
 							end, 0.12, -1)
 
-							slot0.countTimer:Start()
+							uv0.countTimer:Start()
 						end
 
-						if slot0.canClick and slot0.enable and #slot0.showCards < 2 then
+						if slot0.canClick and slot0.enable and #uv0.showCards < 2 then
 							slot0:aniShowBack(slot0.cardState == CardPairsCard.CARD_STATE_BACK)
 						end
 					end
 				end, function (slot0, slot1)
-					if slot0.gameState == slot0.GAME_STATE_GAMING then
+					if uv0.gameState == uv0.GAME_STATE_GAMING then
 						slot0:setEnable(false)
 
 						if slot1 then
-							table.insert(slot0.showCards, #slot0.showCards + 1, slot0)
+							table.insert(uv0.showCards, #uv0.showCards + 1, slot0)
 
-							if #slot0.showCards == 2 then
-								slot0:setAllCardEnale(false)
+							if #uv0.showCards == 2 then
+								uv0:setAllCardEnale(false)
 							end
 						end
 					end
 				end, function (slot0, slot1)
-					if slot0.gameState == slot0.GAME_STATE_GAMING then
+					if uv0.gameState == uv0.GAME_STATE_GAMING then
 						if slot1 then
 							slot0:setOutline(true)
-							table.insert(slot0.showingCards, #slot0.showingCards + 1, slot0)
+							table.insert(uv0.showingCards, #uv0.showingCards + 1, slot0)
 
-							if #slot0.showingCards % 2 == 0 then
-								table.remove(slot0.showingCards, slot2)
-								table.remove(slot0.showingCards, slot3)
+							if #uv0.showingCards % 2 == 0 then
+								slot2 = #uv0.showingCards
+								slot3 = #uv0.showingCards - 1
 
-								if slot0.showingCards[#slot0.showingCards - 1].getCardIndex(slot4) == slot0.showingCards[#slot0.showingCards]:getCardIndex() then
+								table.remove(uv0.showingCards, slot2)
+								table.remove(uv0.showingCards, slot3)
+
+								if uv0.showingCards[slot3]:getCardIndex() == uv0.showingCards[slot2]:getCardIndex() then
 									slot4:setClear(true)
 									slot5:setClear(true)
 
-									slot0.curValue = slot0.curValue + 2
+									uv0.curValue = uv0.curValue + 2
 
-									if slot0.CARD_NUM <= slot0.curValue then
-										slot0:gameEndHandler()
+									if uv0.CARD_NUM <= uv0.curValue then
+										uv0:gameEndHandler()
 									else
-										for slot9 = #slot0.showCards, 0, -1 do
-											table.remove(slot0.showCards, slot9)
+										for slot9 = #uv0.showCards, 0, -1 do
+											table.remove(uv0.showCards, slot9)
 										end
 
-										slot0:setAllCardEnale(true)
+										uv0:setAllCardEnale(true)
 									end
 								else
-									slot4:aniShowBack(false, false, slot0.showingTime)
-									slot5:aniShowBack(false, false, slot0.showingTime)
+									slot4:aniShowBack(false, false, uv0.showingTime)
+									slot5:aniShowBack(false, false, uv0.showingTime)
 								end
 							end
 						else
-							table.remove(slot0.showCards, #slot0.showCards)
-							slot0:setAllCardEnale(#slot0.showingCards == 0)
+							table.remove(uv0.showCards, #uv0.showCards)
+							uv0:setAllCardEnale(#uv0.showingCards == 0)
 						end
 					end
 				end))
@@ -173,35 +175,35 @@ slot0.didEnter = function (slot0)
 	end
 end
 
-slot0.setAllCardEnale = function (slot0, slot1)
+function slot0.setAllCardEnale(slot0, slot1)
 	for slot5, slot6 in pairs(slot0.cardList) do
 		slot6:setEnable(slot1)
 	end
 end
 
-slot0.setTimeTxt = function (slot0, slot1)
+function slot0.setTimeTxt(slot0, slot1)
 	setText(slot0.timeTxt, slot0:getTimeFormat(slot1))
 end
 
-slot0.getTimeFormat = function (slot0, slot1)
-	return ((math.floor(slot1 / 60000) >= 10 and slot2) or "0" .. slot2) .. "'" .. ((math.floor(slot1 % 60000 / 1000) >= 10 and slot3) or "0" .. slot3) .. "'" .. ((math.floor(slot1 % 1000 / 10) >= 10 and slot4) or "0" .. slot4)
+function slot0.getTimeFormat(slot0, slot1)
+	return (math.floor(slot1 / 60000) >= 10 and slot2 or "0" .. slot2) .. "'" .. (math.floor(slot1 % 60000 / 1000) >= 10 and slot3 or "0" .. slot3) .. "'" .. (math.floor(slot1 % 1000 / 10) >= 10 and slot4 or "0" .. slot4)
 end
 
-slot0.updateTimes = function (slot0)
+function slot0.updateTimes(slot0)
 	if math.ceil(os.difftime(pg.TimeMgr.GetInstance():GetServerTime(), slot0.activityData.data3) / 86400) < 0 then
 		slot2 = 0
 	end
 
 	if slot0.cardEffectTimesMax < slot2 then
-		slot0.lastTimes = (slot0.cardEffectTimesMax or slot2) - slot0.activityData.data2
-
-		setText(slot0.timesTxt, (slot0.lastTimes >= 0 and slot0.lastTimes) or 0)
-
-		return
+		slot2 = slot0.cardEffectTimesMax or slot2
 	end
+
+	slot0.lastTimes = slot2 - slot0.activityData.data2
+
+	setText(slot0.timesTxt, slot0.lastTimes >= 0 and slot0.lastTimes or 0)
 end
 
-slot0.gameInit = function (slot0)
+function slot0.gameInit(slot0)
 	setActive(slot0.maskBtn, false)
 	setActive(slot0.endTips, false)
 
@@ -211,7 +213,7 @@ slot0.gameInit = function (slot0)
 	slot0.showingCards = {}
 	slot0.cardIndexList = {}
 
-	for slot4 = 1, slot0.CARD_NUM / 2, 1 do
+	for slot4 = 1, slot0.CARD_NUM / 2 do
 		table.insert(slot0.cardIndexList, #slot0.cardIndexList + 1, {
 			slot4,
 			math.random(0, 100)
@@ -239,26 +241,29 @@ slot0.gameInit = function (slot0)
 	slot0:checkGameState()
 end
 
-slot0.checkGameState = function (slot0)
+function slot0.checkGameState(slot0)
 	if slot0.gameState == slot0.GAME_STATE_BEGIN then
 		slot0:showAllCard()
 	elseif slot0.gameState == slot0.GAME_STATE_GAMING then
+		-- Nothing
 	elseif slot0.gameState == slot0.GAME_STATE_END then
 		slot0:clearCountTimer()
 	end
 end
 
-slot0.gameEndHandler = function (slot0)
+function slot0.gameEndHandler(slot0)
 	slot0.gameState = slot0.GAME_STATE_END
 
 	slot0:checkGameState()
 	setActive(slot0.maskBtn, true)
 
 	if math.floor((Time.realtimeSinceStartup - slot0.beginTime) * 1000) < 0 then
-		slot0:setTimeTxt(9 * slot0.aniTime or slot1)
+		slot1 = 9 * slot0.aniTime or slot1
 	end
 
-	if slot0.cardEffectTimesMax < ((slot0.lastTimes > 0 and slot0.activityData.data2 + 1) or slot0.activityData.data2) then
+	slot0:setTimeTxt(slot1)
+
+	if slot0.cardEffectTimesMax < (slot0.lastTimes > 0 and slot0.activityData.data2 + 1 or slot0.activityData.data2) then
 		slot2 = slot0.cardEffectTimesMax or slot2
 	end
 
@@ -274,36 +279,36 @@ slot0.gameEndHandler = function (slot0)
 	setActive(slot0.endTips, true)
 end
 
-slot0.showAllCard = function (slot0)
+function slot0.showAllCard(slot0)
 	slot0:setAllCardEnale(false)
 
 	slot0.timer = Timer.New(function ()
-		for slot3, slot4 in pairs(slot0.cardList) do
+		for slot3, slot4 in pairs(uv0.cardList) do
 			slot4:aniShowBack(true)
 		end
 
-		slot0.timer = Timer.New(function ()
-			for slot3, slot4 in pairs(slot0.cardList) do
+		uv0.timer = Timer.New(function ()
+			for slot3, slot4 in pairs(uv0.cardList) do
 				slot4:aniShowBack()
 			end
 
-			slot0.timer = Timer.New(function ()
-				slot0.gameState = slot0.GAME_STATE_GAMING
+			uv0.timer = Timer.New(function ()
+				uv0.gameState = uv0.GAME_STATE_GAMING
 
-				slot0:checkGameState()
-				slot0.checkGameState:setAllCardEnale(true)
-			end, slot0.aniTime, 1)
+				uv0:checkGameState()
+				uv0:setAllCardEnale(true)
+			end, uv0.aniTime, 1)
 
-			slot0.timer:Start()
-		end, slot0.firstShowingTime, 1)
+			uv0.timer:Start()
+		end, uv0.firstShowingTime, 1)
 
-		slot0.timer:Start()
+		uv0.timer:Start()
 	end, 0.5, 1)
 
 	slot0.timer:Start()
 end
 
-slot0.clearAllCard = function (slot0, slot1)
+function slot0.clearAllCard(slot0, slot1)
 	if slot0.timer ~= nil then
 		slot0.timer:Stop()
 
@@ -323,17 +328,17 @@ slot0.clearAllCard = function (slot0, slot1)
 	end
 end
 
-slot0.hideChild = function (slot0, slot1)
-	for slot6 = 0, slot1.childCount - 1, 1 do
+function slot0.hideChild(slot0, slot1)
+	for slot6 = 0, slot1.childCount - 1 do
 		setActive(slot1:GetChild(slot6), false)
 	end
 end
 
-slot0.tryFirstPlayStory = function (slot0)
+function slot0.tryFirstPlayStory(slot0)
 	if slot0.activityData:getConfig("config_client")[1] then
-		if slot0.activityData:getConfig("config_client")[1][1] ~= nil and not slot0.playerData:IsPlayed(slot1) then
-			pg.StoryMgr.GetInstance():Play(slot1, function ()
-				triggerButton(slot0.maskBtn)
+		if slot0.activityData:getConfig("config_client")[1][1] ~= nil and not pg.NewStoryMgr.GetInstance():IsPlayed(slot1) then
+			pg.NewStoryMgr.GetInstance():Play(slot1, function ()
+				triggerButton(uv0.maskBtn)
 			end)
 
 			return true
@@ -345,7 +350,7 @@ slot0.tryFirstPlayStory = function (slot0)
 	end
 end
 
-slot0.clearCountTimer = function (slot0)
+function slot0.clearCountTimer(slot0)
 	if slot0.countTimer ~= nil then
 		slot0.countTimer:Stop()
 
@@ -353,7 +358,7 @@ slot0.clearCountTimer = function (slot0)
 	end
 end
 
-slot0.willExit = function (slot0)
+function slot0.willExit(slot0)
 	slot0:clearAllCard(true)
 	slot0:clearCountTimer()
 

@@ -62,12 +62,12 @@ return {
 	desc_get = "在队伍中(存活)时增加战巡、战列、重炮攻击造成的伤害5.0%(满级15.0%)，同技能效果不叠加",
 	name = "前线侦查",
 	init_effect = "",
-	id = 1071,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "在队伍中(存活)时增加战巡、战列、重炮攻击造成的伤害$1，同技能效果不叠加",
 	stack = 1,
-	color = "yellow",
+	id = 1071,
 	icon = 1070,
 	last_effect = "",
 	effect_list = {
@@ -81,7 +81,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 1070,
@@ -90,7 +90,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 1070,
@@ -99,7 +99,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 1070,

@@ -1,8 +1,8 @@
 pg = pg or {}
 pg.activity_random_award_template = {
 	[9] = {
-		activity = 30022,
 		resource_category = 1,
+		activity = 30022,
 		resource_type = 114,
 		id = 9,
 		resource_num = 15,
@@ -118,8 +118,8 @@ pg.activity_random_award_template = {
 		}
 	},
 	[10] = {
-		activity = 30022,
 		resource_category = 1,
+		activity = 30022,
 		resource_type = 114,
 		id = 10,
 		resource_num = 15,
@@ -335,8 +335,8 @@ pg.activity_random_award_template = {
 		}
 	},
 	[11] = {
-		activity = 30022,
 		resource_category = 1,
+		activity = 30022,
 		resource_type = 114,
 		id = 11,
 		resource_num = 15,
@@ -508,8 +508,8 @@ pg.activity_random_award_template = {
 		}
 	},
 	[12] = {
-		activity = 30022,
 		resource_category = 1,
+		activity = 30022,
 		resource_type = 114,
 		id = 12,
 		resource_num = 15,
@@ -705,8 +705,8 @@ pg.activity_random_award_template = {
 		}
 	},
 	[13] = {
-		activity = 30087,
 		resource_category = 1,
+		activity = 30087,
 		resource_type = 119,
 		id = 13,
 		resource_num = 15,
@@ -822,8 +822,8 @@ pg.activity_random_award_template = {
 		}
 	},
 	[14] = {
-		activity = 30087,
 		resource_category = 1,
+		activity = 30087,
 		resource_type = 119,
 		id = 14,
 		resource_num = 15,
@@ -1015,8 +1015,8 @@ pg.activity_random_award_template = {
 		}
 	},
 	[15] = {
-		activity = 30087,
 		resource_category = 1,
+		activity = 30087,
 		resource_type = 119,
 		id = 15,
 		resource_num = 15,
@@ -1192,8 +1192,8 @@ pg.activity_random_award_template = {
 		}
 	},
 	[16] = {
-		activity = 30087,
 		resource_category = 1,
+		activity = 30087,
 		resource_type = 119,
 		id = 16,
 		resource_num = 15,
@@ -1419,5 +1419,3 @@ pg.activity_random_award_template = {
 		16
 	}
 }
-
-return

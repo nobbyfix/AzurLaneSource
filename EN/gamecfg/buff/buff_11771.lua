@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.2,
-					attr = "DMG_FROM_TAG_2_T_16"
+					attr = "DMG_FROM_TAG_2_T_16",
+					number = -0.2
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 2000
 				}
 			},
 			{
@@ -30,8 +30,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.05
 				}
 			},
 			{
@@ -53,8 +53,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.4,
 					attr = "cri",
+					number = 0.4,
 					index = {
 						4
 					}
@@ -71,8 +71,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.222,
-					attr = "DMG_FROM_TAG_2_T_16"
+					attr = "DMG_FROM_TAG_2_T_16",
+					number = -0.222
 				}
 			},
 			{
@@ -82,8 +82,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2220,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 2220
 				}
 			},
 			{
@@ -93,8 +93,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.061,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.061
 				}
 			},
 			{
@@ -116,8 +116,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.433,
 					attr = "cri",
+					number = 0.433,
 					index = {
 						4
 					}
@@ -134,8 +134,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.244,
-					attr = "DMG_FROM_TAG_2_T_16"
+					attr = "DMG_FROM_TAG_2_T_16",
+					number = -0.244
 				}
 			},
 			{
@@ -145,8 +145,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2440,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 2440
 				}
 			},
 			{
@@ -156,8 +156,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.072
 				}
 			},
 			{
@@ -179,8 +179,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.466,
 					attr = "cri",
+					number = 0.466,
 					index = {
 						4
 					}
@@ -197,8 +197,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.266,
-					attr = "DMG_FROM_TAG_2_T_16"
+					attr = "DMG_FROM_TAG_2_T_16",
+					number = -0.266
 				}
 			},
 			{
@@ -208,8 +208,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2660,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 2660
 				}
 			},
 			{
@@ -219,8 +219,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.083,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.083
 				}
 			},
 			{
@@ -242,8 +242,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.499,
 					attr = "cri",
+					number = 0.499,
 					index = {
 						4
 					}
@@ -260,8 +260,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.288,
-					attr = "DMG_FROM_TAG_2_T_16"
+					attr = "DMG_FROM_TAG_2_T_16",
+					number = -0.288
 				}
 			},
 			{
@@ -271,8 +271,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2880,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 2880
 				}
 			},
 			{
@@ -282,8 +282,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.094,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.094
 				}
 			},
 			{
@@ -305,8 +305,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.532,
 					attr = "cri",
+					number = 0.532,
 					index = {
 						4
 					}
@@ -323,8 +323,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.31,
-					attr = "DMG_FROM_TAG_2_T_16"
+					attr = "DMG_FROM_TAG_2_T_16",
+					number = -0.31
 				}
 			},
 			{
@@ -334,8 +334,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3100,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 3100
 				}
 			},
 			{
@@ -345,8 +345,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.105,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.105
 				}
 			},
 			{
@@ -368,8 +368,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.565,
 					attr = "cri",
+					number = 0.565,
 					index = {
 						4
 					}
@@ -386,8 +386,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.332,
-					attr = "DMG_FROM_TAG_2_T_16"
+					attr = "DMG_FROM_TAG_2_T_16",
+					number = -0.332
 				}
 			},
 			{
@@ -397,8 +397,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3320,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 3320
 				}
 			},
 			{
@@ -408,8 +408,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.116,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.116
 				}
 			},
 			{
@@ -431,8 +431,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.598,
 					attr = "cri",
+					number = 0.598,
 					index = {
 						4
 					}
@@ -449,8 +449,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.354,
-					attr = "DMG_FROM_TAG_2_T_16"
+					attr = "DMG_FROM_TAG_2_T_16",
+					number = -0.354
 				}
 			},
 			{
@@ -460,8 +460,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3540,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 3540
 				}
 			},
 			{
@@ -471,8 +471,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.127,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.127
 				}
 			},
 			{
@@ -494,8 +494,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.631,
 					attr = "cri",
+					number = 0.631,
 					index = {
 						4
 					}
@@ -512,8 +512,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.376,
-					attr = "DMG_FROM_TAG_2_T_16"
+					attr = "DMG_FROM_TAG_2_T_16",
+					number = -0.376
 				}
 			},
 			{
@@ -523,8 +523,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3760,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 3760
 				}
 			},
 			{
@@ -534,8 +534,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.138,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.138
 				}
 			},
 			{
@@ -557,8 +557,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.664,
 					attr = "cri",
+					number = 0.664,
 					index = {
 						4
 					}
@@ -575,8 +575,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.4,
-					attr = "DMG_FROM_TAG_2_T_16"
+					attr = "DMG_FROM_TAG_2_T_16",
+					number = -0.4
 				}
 			},
 			{
@@ -586,8 +586,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4000,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 4000
 				}
 			},
 			{
@@ -597,8 +597,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.15
 				}
 			},
 			{
@@ -620,8 +620,8 @@ return {
 					"onBulletCreate"
 				},
 				arg_list = {
-					number = 0.7,
 					attr = "cri",
+					number = 0.7,
 					index = {
 						4
 					}
@@ -629,14 +629,14 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "Terror Field",
 	init_effect = "jinengchufared",
-	id = 11771,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "自爆点燃高爆减伤 副炮强化",
 	stack = 1,
-	color = "yellow",
+	id = 11771,
 	icon = 11770,
 	last_effect = "",
 	blink = {

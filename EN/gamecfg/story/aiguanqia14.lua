@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA14",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 201210,
@@ -83,8 +83,8 @@ return {
 			actor = 10400030,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "Kizuna AI",
+			dir = 1,
 			say = "It's fine, it's fine~ this outfit is designed for singing and dancing, so moving around is no problem!",
 			typewriter = {
 				speed = 0.05,
@@ -114,8 +114,8 @@ return {
 			expression = 6,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "Oops, we've been chatting away for too long. Let's focus our attention - the boss might appear any moment now!",
 			typewriter = {
@@ -143,8 +143,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "THUNK!",
 			dialogShake = {
 				speed = 0.09,
@@ -164,8 +164,8 @@ return {
 			expression = 2,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = -1,
 			actor = 10400030,
+			dir = -1,
 			actorName = "Kizuna AI",
 			say = "Ooooowwwww!!",
 			typewriter = {
@@ -178,8 +178,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -191,8 +191,8 @@ return {
 			expression = 6,
 			side = 1,
 			nameColor = "#ff5c5c",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "Kizuna AI clone",
 			say = "………",
 			typewriter = {
@@ -208,8 +208,8 @@ return {
 			actor = 10400030,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "Kizuna AI",
+			dir = -1,
 			say = "………",
 			typewriter = {
 				speed = 0.05,
@@ -224,8 +224,8 @@ return {
 			expression = 2,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = -1,
 			actor = 10400030,
+			dir = -1,
 			actorName = "Kizuna AI",
 			say = "AAAAAAAAAAAAAAAAAAAAAaaaaaaaaahhhh!",
 			typewriter = {
@@ -238,8 +238,8 @@ return {
 			},
 			action = {
 				{
-					y = 22.5,
 					type = "shake",
+					y = 22.5,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -281,8 +281,8 @@ return {
 			expression = 3,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = -1,
 			actor = 10400030,
+			dir = -1,
 			actorName = "Kizuna AI",
 			say = "Don't say that, Laffey-chan... Saaave meeee~~~",
 			typewriter = {
@@ -295,8 +295,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 45,
@@ -323,8 +323,8 @@ return {
 			expression = 6,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = -1,
 			actor = 10400030,
+			dir = -1,
 			actorName = "Kizuna AI",
 			say = "Jeez! Why is there another clone of me?! I know that my 3D model is open source and all, but there simply some lines that you shouldn't cross!! ",
 			typewriter = {
@@ -337,8 +337,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

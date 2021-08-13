@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "Let's check out your <color=#ff7d36>storage</color>.",
 				mode = 2,
-				dir = -1,
 				posY = -50.56,
+				dir = -1,
 				posX = -163.2
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/bottomPanel/btm/buttons_container/equipButton",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,19 +28,20 @@ return {
 			style = {
 				text = "Tap <color=#ff7d36>to select tech pack</color>.",
 				mode = 2,
-				dir = 1,
 				posY = 191.3,
+				dir = 1,
 				posX = -93.8
 			},
 			ui = {
-				pathIndex = "#",
+				delay = 1,
 				path = "UICamera/Canvas/UIMain/StoreHouseUI(Clone)/item_scrollview/item_grid",
+				pathIndex = "#",
 				triggerType = {
 					1
 				},
 				image = {
-					source = "bg/icon_bg/icon",
 					isChild = true,
+					source = "bg/icon_bg/icon",
 					target = "bg/icon_bg/icon",
 					isRelative = true
 				},
@@ -55,13 +56,13 @@ return {
 			style = {
 				text = "Tap <color=#ff7d36>use</color> to open the tech pack.",
 				mode = 2,
-				dir = 1,
 				posY = -252,
+				dir = 1,
 				posX = -393
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/ItemInfoUI(Clone)/window/actions/use_button",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

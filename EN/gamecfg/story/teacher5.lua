@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TEACHER5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"Class Z V\n\n<size=45>The Melancholy of Z23</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Uuugh... why won't things ever work out?",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -50,12 +50,12 @@ return {
 			}
 		},
 		{
-			say = "Oh my... it seems that I've come across a child who needs some illustrious guidance~",
+			actor = 207030,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Oh my... it seems that I've come across a child who needs some illustrious guidance~",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -118,15 +118,15 @@ return {
 			}
 		},
 		{
+			actor = 207030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "So that's what's going on. Ahh, all the kids are so energetic~",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -151,12 +151,12 @@ return {
 			}
 		},
 		{
-			say = "Ener... getic...",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Ener... getic...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

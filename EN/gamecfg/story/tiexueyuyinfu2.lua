@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIEXUEYUYINFU2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Second Movement\n\n<size=45>Backworldsmen</size>",
@@ -17,14 +17,14 @@ return {
 			}
 		},
 		{
+			say = "Mission area, location undisclosed - Early dawn",
 			side = 2,
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "bsm-1",
-			say = "Mission area, location undisclosed - Early dawn",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -96,10 +96,10 @@ return {
 		{
 			expression = 2,
 			side = 0,
-			say = "Don't underestimate them. I doubt the Royal Navy would stand on the sidelines and wait around after what happened.",
-			dir = -1,
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = -1,
+			say = "Don't underestimate them. I doubt the Royal Navy would stand on the sidelines and wait around after what happened.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -177,8 +177,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "Eugen, stay in formation.",
 			typewriter = {
 				speed = 0.05,
@@ -208,8 +208,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "Eugen, you...!",
 			typewriter = {
 				speed = 0.05,
@@ -239,8 +239,8 @@ return {
 			expression = 1,
 			nameColor = "#ffde38",
 			side = 0,
-			dir = -1,
 			actor = 405010,
+			dir = -1,
 			say = "... I must say, nobody interjects better than you at times like this, Eugen.",
 			typewriter = {
 				speed = 0.05,

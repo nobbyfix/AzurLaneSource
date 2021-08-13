@@ -12,8 +12,8 @@ return {
 				},
 				arg_list = {
 					rant = 1500,
-					skill_id = 2051,
 					target = "TargetSelf",
+					skill_id = 2051,
 					time = 10
 				}
 			}
@@ -32,8 +32,8 @@ return {
 				},
 				arg_list = {
 					rant = 1660,
-					skill_id = 2051,
 					target = "TargetSelf",
+					skill_id = 2051,
 					time = 10
 				}
 			}
@@ -52,8 +52,8 @@ return {
 				},
 				arg_list = {
 					rant = 1820,
-					skill_id = 2051,
 					target = "TargetSelf",
+					skill_id = 2051,
 					time = 10
 				}
 			}
@@ -72,8 +72,8 @@ return {
 				},
 				arg_list = {
 					rant = 1980,
-					skill_id = 2051,
 					target = "TargetSelf",
+					skill_id = 2051,
 					time = 10
 				}
 			}
@@ -92,8 +92,8 @@ return {
 				},
 				arg_list = {
 					rant = 2140,
-					skill_id = 2051,
 					target = "TargetSelf",
+					skill_id = 2051,
 					time = 10
 				}
 			}
@@ -112,8 +112,8 @@ return {
 				},
 				arg_list = {
 					rant = 2300,
-					skill_id = 2051,
 					target = "TargetSelf",
+					skill_id = 2051,
 					time = 10
 				}
 			}
@@ -132,8 +132,8 @@ return {
 				},
 				arg_list = {
 					rant = 2460,
-					skill_id = 2051,
 					target = "TargetSelf",
+					skill_id = 2051,
 					time = 10
 				}
 			}
@@ -152,8 +152,8 @@ return {
 				},
 				arg_list = {
 					rant = 2640,
-					skill_id = 2051,
 					target = "TargetSelf",
+					skill_id = 2051,
 					time = 10
 				}
 			}
@@ -172,8 +172,8 @@ return {
 				},
 				arg_list = {
 					rant = 2820,
-					skill_id = 2051,
 					target = "TargetSelf",
+					skill_id = 2051,
 					time = 10
 				}
 			}
@@ -192,8 +192,8 @@ return {
 				},
 				arg_list = {
 					rant = 3000,
-					skill_id = 2051,
 					target = "TargetSelf",
+					skill_id = 2051,
 					time = 10
 				}
 			}
@@ -202,12 +202,12 @@ return {
 	desc_get = "每次使用鱼雷时有15.0%(满级30.0%)的概率再次发射一轮",
 	name = "鱼雷连射",
 	init_effect = "",
-	id = 2051,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "每次使用鱼雷时有$1的概率再次发射一轮",
 	stack = 1,
-	color = "red",
+	id = 2051,
 	icon = 2050,
 	last_effect = "",
 	effect_list = {
@@ -218,8 +218,8 @@ return {
 			},
 			arg_list = {
 				rant = 1500,
-				skill_id = 2051,
 				target = "TargetSelf",
+				skill_id = 2051,
 				time = 10
 			}
 		}

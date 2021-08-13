@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "U556STORY4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"A Knight's Promise\n\n<size=45>Chapter 4 - It's a Date!</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "Port - Office",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "Port - Office",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "Under my tireless tutelage, she had managed to get her playful impulses under control, at least long enough to finish out a day's work.",
 			typewriter = {
 				speed = 0.05,
@@ -60,9 +60,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "Under my tireless tutelage, she had managed to get her playful impulses under control, at least long enough to finish out a day's work.",
 			typewriter = {
 				speed = 0.05,
@@ -74,9 +74,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "But there was so much more to being a secretary ship. I still had much to teach her.",
 			typewriter = {
 				speed = 0.05,
@@ -104,9 +104,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "U-556 seemed... rather blue?",
 			typewriter = {
 				speed = 0.05,
@@ -121,8 +121,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Oh, I was just spacing out a bit, sorry... What's on the agenda for today?",
 			typewriter = {
@@ -160,8 +160,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_guild_red",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Lord Bismarck! Let's play!",
 			effects = {
@@ -180,12 +180,12 @@ return {
 			}
 		},
 		{
-			say = "Oh? Is that U-556?",
+			actor = 405010,
 			side = 1,
 			bgName = "bg_guild_red",
-			dir = 1,
-			actor = 405010,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Oh? Is that U-556?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -203,8 +203,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_guild_red",
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Forgive me, I have some matters to discuss with the Royal Navy. It will have to wait.",
 			typewriter = {
@@ -217,15 +217,15 @@ return {
 			}
 		},
 		{
+			actor = 408040,
 			side = 2,
 			bgName = "bg_guild_red",
-			dir = 1,
-			actor = 408040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Lord Bismarck, are you busy?",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -253,10 +253,10 @@ return {
 			expression = 2,
 			side = 1,
 			bgName = "bg_guild_red",
-			say = "Oh...",
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			nameColor = "#a9f548",
+			say = "Oh...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -290,8 +290,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "I guess she's just been really busy lately...",
 			effects = {
@@ -326,9 +326,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "It was all becoming clear to me.",
 			typewriter = {
 				speed = 0.05,
@@ -340,9 +340,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "The solution to this predicament was quite simple, actually.",
 			typewriter = {
 				speed = 0.05,
@@ -357,8 +357,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Huh? Commander... you'll spend your next day off with me?",
 			typewriter = {
@@ -371,8 +371,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -381,11 +381,11 @@ return {
 			}
 		},
 		{
+			actor = 408040,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 408040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Really!?",
 			typewriter = {
 				speed = 0.05,
@@ -406,8 +406,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 408040,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Okay, it's a date! No takebacks allowed!",
 			typewriter = {

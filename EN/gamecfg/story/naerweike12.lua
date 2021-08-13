@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "NAERWEIKE12",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 201200,
+			dir = 1,
 			stopbgm = true,
-			say = "…这里是？",
+			say = "...Where am I?",
 			flashin = {
 				delay = 1.5,
 				dur = 0.5,
@@ -35,10 +35,10 @@ return {
 		{
 			expression = 2,
 			side = 1,
-			say = "太好了，猎人，你终于醒了！",
-			dir = -1,
 			actor = 201160,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "Thank goodness, Hunter, you're finally awake!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -53,8 +53,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -67,7 +67,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "这里是奥福克峡湾外的海滩……我的燃料也耗尽了，只能把你拖到这里……",
+			say = "We're on a beach outside Ofotfjord. I burned all my fuel dragging you here.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -81,9 +81,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
-			say = "这样啊。",
+			dir = 1,
+			say = "Oh.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -98,7 +98,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "抱歉，猎人，都是我不够谨慎，才害你为了保护我受了这么重的伤……",
+			say = "Sorry, Hunter. I wasn't careful enough. You got hurt so badly trying to protect me.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -112,9 +112,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
-			say = "没事的……",
+			dir = 1,
+			say = "It's fine.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -129,7 +129,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "我已经向后方发送了求救信号，她们马上就会来救我们了，所以……",
+			say = "I've sent a distress signal to the rear. They're on their way to rescue us, so...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -143,9 +143,9 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
-			say = "勇敢……",
+			dir = 1,
+			say = "Hardy...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -158,10 +158,10 @@ return {
 		{
 			expression = 2,
 			side = 1,
-			dir = -1,
 			actor = 201160,
 			nameColor = "#a9f548",
-			say = "怎、怎么了？",
+			dir = -1,
+			say = "Wh-What?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -172,8 +172,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -185,9 +185,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
-			say = "看，雪……",
+			dir = 1,
+			say = "The snow.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -202,7 +202,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "雪……",
+			say = "The snow...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -216,9 +216,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
-			say = "你觉得，漂亮吗？",
+			dir = 1,
+			say = "Isn't it... pretty?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -233,7 +233,7 @@ return {
 			side = 1,
 			nameColor = "#a9f548",
 			dir = -1,
-			say = "……我，不知道，但是……一片白茫茫的，什么都没有，总觉得，好像……平静了下来。",
+			say = "I-I'm not sure, but... it's like a white void. Totally empty. It looks... serene.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -247,9 +247,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 201200,
-			say = "对吧？以后，有机会的话，和大家一起来看极光吧？",
+			dir = 1,
+			say = "Doesn't it? If we get a chance sometime, let's get everyone to come here and see the aurora, eh?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -263,9 +263,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = -1,
 			actor = 201160,
-			say = "……嗯，就这么约好了。",
+			dir = -1,
+			say = "Yes. It's a date.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -276,12 +276,12 @@ return {
 			}
 		},
 		{
-			actorName = "猎人",
 			nameColor = "#a9f548",
+			actorName = "Hunter",
 			side = 0,
 			dir = 1,
 			blackBg = true,
-			say = "那……我先睡一会儿哦？",
+			say = "Then... could I take a quick nap?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -292,12 +292,12 @@ return {
 			}
 		},
 		{
-			actorName = "勇敢",
 			nameColor = "#a9f548",
+			actorName = "Hardy",
 			side = 1,
 			dir = 1,
 			blackBg = true,
-			say = "嗯，我会在你身边的，安心睡吧。",
+			say = "Yes. I'll watch over you. Sleep well.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

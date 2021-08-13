@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "免疫阵营移动限制",
 	init_effect = "",
+	name = "免疫阵营移动限制",
+	time = 0,
 	picture = "",
 	desc = "免疫阵营移动限制",
 	stack = 1,
@@ -17,8 +17,8 @@ return {
 			},
 			arg_list = {
 				group = 1,
-				number = 1,
-				attr = "immuneAreaLimit"
+				attr = "immuneAreaLimit",
+				number = 1
 			}
 		}
 	}

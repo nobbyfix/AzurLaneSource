@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "鱼雷连射",
 	init_effect = "",
+	name = "鱼雷连射",
+	time = 0,
 	picture = "",
 	desc = "第二章敌人鱼雷连射2轮-4发鱼雷",
 	stack = 1,
@@ -16,8 +16,8 @@ return {
 			},
 			arg_list = {
 				rant = 10000,
-				skill_id = 7029,
 				target = "TargetSelf",
+				skill_id = 7029,
 				time = 20
 			}
 		}

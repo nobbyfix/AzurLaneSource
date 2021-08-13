@@ -29,12 +29,17 @@ LOG_GUIDE2 = false
 LOG_CONNECTION = false
 BATTLE_AUTO_ENABLED = 1000001
 GAME_RESTOREVIEW_ALREADY = 1000002
+ALLOW_FIREND_VISIT_BACKYARD_FLAG = 1000003
+SHOW_FIREND_BACKYARD_SHIP_FLAG = 1000004
+SHOW_MY_BACKYARD_SHIP_FLAG = 1000005
+SHOW_DONT_KEEP_FATE_ITEM = 1000006
 PROLOGUE_DUNGEON = 100000
 EPILOGUE_STORY = "S008"
 CURTAIN_STORY = "S999"
 BG_RANDOM_RANGE = 12
 GUIDE_PROLOGUE_INDEX = 1
 ENABLE_GUIDE = true
+ENABLE_TEST_OSS = false
 SOUND_BACK = "event:/ui/cancel"
 SFX_MAIN = "event:/ui/main"
 SFX_PANEL = "event:/ui/panel"
@@ -49,6 +54,10 @@ SFX_AUTO_BATTLE = "event:/ui/auto_battle"
 SFX_STEP_MONOPOLY = "event:/ui/step"
 SFX_STEP_PILE_COUNTDOWN = "event:/ui/ddldaoshu2"
 SFX_STEP_PILE_SUCCESS = "event:/ui/ddlpengzhuang"
+SFX_FIGHTER_SWITCH = "event:/ui/fighterplane_click"
+SFX_FIGHTER_BATTLE = "event:/ui/fighterplane_start"
+PIXEL_PER_UNIT = 100
+WHITE_DOT_SIZE = 4
 ITEM_ID_CUBE = 20001
 ITEM_ID_SILVER_HOOK = 15001
 ITEM_ID_GOLD_HOOK = 15002
@@ -60,6 +69,9 @@ BACKYARD_AREA_EXTEND_ITEM_SHOPID = 50001
 QUICK_ENERGY_ITEM_SHOPID = 50003
 ITEN_EQUIPMENT_FRAGMENT_TYPE = 9
 ITEM_ID_FUDAIS = {
+	40012,
+	40013,
+	40014,
 	40901,
 	40902,
 	40903,
@@ -69,6 +81,11 @@ ITEM_ID_FUDAIS = {
 	40907,
 	40908,
 	40909,
+	40910,
+	40911,
+	40912,
+	40913,
+	40914,
 	40951,
 	40952,
 	40953,
@@ -83,7 +100,19 @@ ITEM_ID_FUDAIS = {
 	40962,
 	40963,
 	40964,
-	40965
+	40965,
+	40966,
+	40967,
+	40968,
+	40969,
+	40970,
+	40971,
+	40972,
+	40973,
+	40974
+}
+ITEM_ID_MULTI_NORMAL = {
+	70051
 }
 QRJ_ITEM_ID_RANGE = {
 	41001,
@@ -104,32 +133,14 @@ DROP_TYPE_VITEM = 8
 DROP_TYPE_EQUIPMENT_SKIN = 9
 DROP_TYPE_NPC_SHIP = 10
 DROP_TYPE_WORLD_ITEM = 12
-DROP_TYPE_SIREN_EQUIP = 13
+DROP_TYPE_WORLD_COLLECTION = 13
 DROP_TYPE_ICON_FRAME = 14
 DROP_TYPE_CHAT_FRAME = 15
 DROP_TYPE_EMOJI = 17
-BACKYARD_BUFF = "dorm_exp"
-BACKYARD_SHIPINFO_ADDEXP = 1
-BACKYARD_SHIPINFO_ADDENERGY = 2
-BACKYARD_RECOVERENERGY = 2
-BACKYARD_ADDEXP = 5
-FLOOR_MAT_TYPE = 5
-WALL_PAPER_TYPE = 1
-FLOOR_PAPER_TYPE = 4
-ADDITION_TYPE_MONEY = 1
-ADDITION_TYPE_INTIMACY = 2
-ADDITION_TYPE_EXP = 3
-BACKYARD_WALL_DIR_LEFT = 1
-BACKYARD_WALL_DIR_RIGHT = 2
-BACKYARD_RED = Color.New(1, 0.294, 0.08)
-BACKYARD_GREEN = Color.New(0.48, 1, 0.03)
-BACKYARD_BLUE = Color.New(0.3, 0.63, 0.95)
 SHOP_STREET_UPGRADE_SHOPID = 9
 BUY_TYPE_RES = 1
 BUY_TYPE_ITEM = 2
 BUY_TYPE_EQUIPMENT = 3
-EXTEND_DORM_EXP_POS = 4
-EXTEND_DORM_FIX_POS = 3
 SHIP_MOD_PREVIEW = 1
 SHIP_MOD_UPGRADE = 2
 CHAT_POP_STR_LEN = 69
@@ -164,6 +175,8 @@ SYSTEM_SIMULATION = 97
 SYSTEM_SUBMARINE_RUN = 96
 SYSTEM_DEBUG = 99
 SYSTEM_BOSS_EXPERIMENT = 95
+SYSTEM_REWARD_PERFORM = 94
+SYSTEM_AIRFIGHT = 93
 CHALLENGE_ACTIVITY_ID = 99999
 AUTO_ENABLE_CHAPTER = 103
 COLOR_RED = "#FF5C5CFF"
@@ -193,6 +206,13 @@ RARE_SHIP_VIBRATE = "rare_ship_vibrate"
 DISPLAY_SHIP_GET_EFFECT = "display_ship_get_effect"
 SHOW_TOUCH_EFFECT = "show_touch_effect"
 BG_FIT_MODE = "bgFitMode"
+BATTLE_HIDE_BG = "battleHideBg"
+BATTLE_EXPOSE_LINE = "battleExposeLine"
+ALLOW_FIREND_VISIT_BACKYARD = "allow_friend_visit_backyard"
+SHOW_FIREND_BACKYARD_SHIP = "show_friend_backyard_ship"
+SHOW_MY_BACKYARD_SHIP = "show_my_backyard_ship"
+AUTOFIGHT_BATTERY_SAVEMODE = "AUTOFIGHT_BATTERY_SAVEMODE"
+AUTOFIGHT_DOWN_FRAME = "AUTOFIGHT_DOWN_FRAME"
 DISCONNECT_TIME_OUT = "time_out"
 LOCK_PROPOSE = false
 LOCK_CLASSROOM = false
@@ -213,96 +233,67 @@ LOCK_ILLUSTRATOR = true
 LOCK_SKIN_SORT = false
 LOCK_COMMANDER = false
 LOCK_CLEAR_ACCOUNT = true
+LOCK_COMMANDER_TALENT_TIP = false
+LOCK_GUILD_SHOP = false
+LOCK_DESTROY_GUIDE = true
+LOCK_BACKYARD_TEMPLATE = true
+LOCK_TOWERCLIMBING_AWARD = true
+LOCK_UR_SHIP = false
+LOCK_GUILD_BATTLE = false
 DEFAULT_CVVOLUME = 0.8
 DEFAULT_BGMVOLUME = 0.8
 DEFAULT_SEVOLUME = 0.8
 HIDE_CHAT_FLAG = "HideChat"
-ERROR_MESSAGE = {
-	"Invalid Input",
-	"Not Enough Configuration",
-	"Time Out",
-	"Not Ready Yet",
-	"Already Reached Max Level",
-	"Already Reached Limit",
-	"Completed",
-	"Undefined Parameter",
-	"Error Parameter",
-	"Not Enough Slots",
-	"Database Error",
-	"System Error",
-	"Disabled Login",
-	nil,
-	"Registration has reached limit, thank you for your support",
-	nil,
-	nil,
-	nil,
-	"无效的重复操作",
-	"Data Does Not Exist",
-	"Player Does Not Exist",
-	"Shipgirl Does Not Exist",
-	"Item Does Not Exist",
-	"Equipment Does Not Exist",
-	"Mission Does Not Exist",
-	"Combat Info Does Not Exist",
-	"Collect Point Does Not Exist",
-	"Friend Does Not Exist",
-	"Mail Does Not Exist",
-	"Not Enough Targets",
-	"Not Enough Suplies",
-	"Not Enough Coins",
-	"Not Enough Oil",
-	"Not Enough Silver Dust",
-	"Not Enough Gems",
-	"Not Enough Decor Tokens",
-	"Not Enough Items",
-	"Not Enough Snacks",
-	"Not Enough Vitality",
-	"Illegal Restriction",
-	"Level Does Not Match",
-	"Type Does Not Match",
-	[2015.0] = "Your name is taken",
-	[2011.0] = "Your name is too long",
-	[1010.0] = "Incorrect Account",
-	[2014.0] = "Your name contains illegal character",
-	[2013.0] = "Your name contains restricted words",
-	[2010.0] = "Name Check Error",
-	[1011.0] = "The Account Already Exist",
-	[1040.0] = "Server Closed",
-	[1030.0] = "md5 Verification Error",
-	[2012.0] = "Your name is too short",
-	[1031.0] = "md5 Length Error",
-	[4020.0] = "Shipgirls are not ring girls",
-	[4030.0] = "Shipgirl already in your fleet",
-	[4201.0] = "Gift code has already expired",
-	[4010.0] = "Shipgirl Unavailable",
-	[4203.0] = "Gift code does not exist",
-	[9999.0] = "Unknown Error",
-	[4205.0] = "An error has occured; please try again",
-	[4206.0] = "This gift has already been claimed",
-	[3010.0] = "Shipgirl cannot ",
-	[3020.0] = "Previous Stage Incomplete",
-	[4207.0] = "No gift redemption URL",
-	[4204.0] = "Gift code has already been used",
-	[4050.0] = "Identical Shipgirls",
-	[4040.0] = "Shipgirl not in your fleet",
-	[1020.0] = "Incorrect Password",
-	[4202.0] = "Unsupported channel",
-	[1012.0] = "Pure Digital Account"
-}
-SPECIAL_DATE = {}
 SPECIAL_PROPOSE = {}
-CRI_BG_FLAG = false
 OPEN_ESCORT = false
 OPEN_REMASTER = true
+OPEN_AIR_DOMINANCE = true
 AUTO_LINKLINK = false
-PLAY_OPENING = true
-OP_VERSION = "20200121"
+PLAY_OPENING = false
+OP_VERSION = "20210603"
 OPEN_TEC_TREE_SYSTEM = true
 SECRETARY_POS = true
 OPEN_AIR_DOMINANCE = true
 ADAPT_MIN = 1.8
 ADAPT_TARGET = 2
 ADAPT_NOTICE = 1.8
-LOCK_FRAGMENT_SHOP = true
-
-return
+LOCK_FRAGMENT_SHOP = false
+COLORING_ACTIVITY_CUSTOMIZED_BANNED = false
+LOGOUT_NEW_VERSION = 3
+CC_TYPE_0 = 0
+CC_TYPE_1 = 1
+CC_TYPE_2 = 2
+CC_TYPE_3 = 3
+CC_TYPE_4 = 4
+CC_TYPE_5 = 5
+CC_TYPE_6 = 6
+CC_TYPE_7 = 7
+CC_TYPE_8 = 8
+CC_TYPE_9 = 9
+CC_TYPE_10 = 10
+CC_TYPE_99 = 99
+isOpenNewCheck = false
+CAMERA_MOVE_OPEN = false
+WORLD_ENTER_LOCK = false
+LOCK_META = false
+LOCK_WORLD_COLLECTION = false
+LOCK_EQUIPMENT_TRANSFORM = false
+LOCK_COLLECTION = false
+LOCK_PERMANENT_ENTER = false
+LOCK_CATTERY = true
+GAMEUI_BANNER_1 = 1
+GAMEUI_BANNER_2 = 2
+GAMEUI_BANNER_3 = 3
+GAMEUI_BANNER_4 = 4
+GAMEUI_BANNER_5 = 5
+GAMEUI_BANNER_6 = 6
+GAMEUI_BANNER_7 = 7
+GAMEUI_BANNER_8 = 8
+GAMEUI_BANNER_9 = 9
+USER_AGREEMENT_FLAG_TW = 1
+USER_AGREEMENT_FLAG_DEFAULT = 1
+SHIP_FLAG_L2D = "l2d"
+SHIP_FLAG_BG = "bg"
+SHIP_FLAG_BGM = "bgm"
+SHIP_FLAG_SP = "sp"
+NEW_META_EXP = false

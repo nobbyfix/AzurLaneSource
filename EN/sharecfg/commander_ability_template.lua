@@ -3,12 +3,12 @@ pg.commander_ability_template = {
 	[101] = {
 		cost = 0,
 		name = "Artillery Rookie - Destroyers",
-		group_id = 10,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 3 FP.",
 		next = 102,
+		worth = 1,
 		id = 101,
+		group_id = 10,
 		icon = "quzhu_paoji_1",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 3 FP.",
 		add = {
 			{
 				1,
@@ -30,12 +30,12 @@ pg.commander_ability_template = {
 	[102] = {
 		cost = 0,
 		name = "Artillery Adept - Destroyers",
-		group_id = 10,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 4 FP.",
 		next = 103,
+		worth = 2,
 		id = 102,
+		group_id = 10,
 		icon = "quzhu_paoji_2",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 4 FP.",
 		add = {
 			{
 				1,
@@ -57,12 +57,12 @@ pg.commander_ability_template = {
 	[103] = {
 		cost = 0,
 		name = "Artillery Ace - Destroyers",
-		group_id = 10,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 6 FP.",
 		next = 0,
+		worth = 3,
 		id = 103,
+		group_id = 10,
 		icon = "quzhu_paoji_3",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 6 FP.",
 		add = {
 			{
 				1,
@@ -84,12 +84,12 @@ pg.commander_ability_template = {
 	[111] = {
 		cost = 0,
 		name = "Artillery Rookie - Cruisers",
-		group_id = 11,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 5 FP.",
 		next = 112,
+		worth = 1,
 		id = 111,
+		group_id = 11,
 		icon = "xunyang_paoji_1",
+		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 5 FP.",
 		add = {
 			{
 				1,
@@ -121,12 +121,12 @@ pg.commander_ability_template = {
 	[112] = {
 		cost = 0,
 		name = "Artillery Adept - Cruisers",
-		group_id = 11,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 7 FP.",
 		next = 113,
+		worth = 2,
 		id = 112,
+		group_id = 11,
 		icon = "xunyang_paoji_2",
+		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 7 FP.",
 		add = {
 			{
 				1,
@@ -158,12 +158,12 @@ pg.commander_ability_template = {
 	[113] = {
 		cost = 0,
 		name = "Artillery Ace - Cruisers",
-		group_id = 11,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 10 FP.",
 		next = 0,
+		worth = 3,
 		id = 113,
+		group_id = 11,
 		icon = "xunyang_paoji_3",
+		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 10 FP.",
 		add = {
 			{
 				1,
@@ -195,12 +195,12 @@ pg.commander_ability_template = {
 	[121] = {
 		cost = 0,
 		name = "Artillery Rookie - Main",
-		group_id = 12,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>BBs, BCs, BBVs, and BMs</color> gain 8 FP.",
 		next = 122,
+		worth = 1,
 		id = 121,
+		group_id = 12,
 		icon = "zhanlie_paoji_1",
+		desc = "Your <color=#3dc6ff>BBs, BCs, BBVs, and BMs</color> gain 8 FP.",
 		add = {
 			{
 				1,
@@ -237,12 +237,12 @@ pg.commander_ability_template = {
 	[122] = {
 		cost = 0,
 		name = "Artillery Adept - Main",
-		group_id = 12,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>BBs, BCs, BBVs, and BMs</color> gain 11 FP.",
 		next = 123,
+		worth = 2,
 		id = 122,
+		group_id = 12,
 		icon = "zhanlie_paoji_2",
+		desc = "Your <color=#3dc6ff>BBs, BCs, BBVs, and BMs</color> gain 11 FP.",
 		add = {
 			{
 				1,
@@ -279,12 +279,12 @@ pg.commander_ability_template = {
 	[123] = {
 		cost = 0,
 		name = "Artillery Ace - Main",
-		group_id = 12,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>BBs, BCs, BBVs, and BMs</color> gain 16 FP.",
 		next = 0,
+		worth = 3,
 		id = 123,
+		group_id = 12,
 		icon = "zhanlie_paoji_3",
+		desc = "Your <color=#3dc6ff>BBs, BCs, BBVs, and BMs</color> gain 16 FP.",
 		add = {
 			{
 				1,
@@ -321,12 +321,12 @@ pg.commander_ability_template = {
 	[201] = {
 		cost = 0,
 		name = "Torpedo Rookie - Submarines",
-		group_id = 20,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 10 TRP.",
 		next = 202,
+		worth = 1,
 		id = 201,
+		group_id = 20,
 		icon = "qianting_leiji_1",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 10 TRP.",
 		add = {
 			{
 				1,
@@ -349,12 +349,12 @@ pg.commander_ability_template = {
 	[202] = {
 		cost = 0,
 		name = "Torpedo Adept - Submarines",
-		group_id = 20,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 14 TRP.",
 		next = 203,
+		worth = 2,
 		id = 202,
+		group_id = 20,
 		icon = "qianting_leiji_2",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 14 TRP.",
 		add = {
 			{
 				1,
@@ -377,12 +377,12 @@ pg.commander_ability_template = {
 	[203] = {
 		cost = 0,
 		name = "Torpedo Ace - Submarines",
-		group_id = 20,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 20 TRP.",
 		next = 0,
+		worth = 3,
 		id = 203,
+		group_id = 20,
 		icon = "qianting_leiji_3",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 20 TRP.",
 		add = {
 			{
 				1,
@@ -405,12 +405,12 @@ pg.commander_ability_template = {
 	[211] = {
 		cost = 0,
 		name = "Torpedo Rookie - Destroyers",
-		group_id = 21,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 10 TRP.",
 		next = 212,
+		worth = 1,
 		id = 211,
+		group_id = 21,
 		icon = "quzhu_leiji_1",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 10 TRP.",
 		add = {
 			{
 				1,
@@ -432,12 +432,12 @@ pg.commander_ability_template = {
 	[212] = {
 		cost = 0,
 		name = "Torpedo Adept - Destroyers",
-		group_id = 21,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 14 TRP.",
 		next = 213,
+		worth = 2,
 		id = 212,
+		group_id = 21,
 		icon = "quzhu_leiji_2",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 14 TRP.",
 		add = {
 			{
 				1,
@@ -459,12 +459,12 @@ pg.commander_ability_template = {
 	[213] = {
 		cost = 0,
 		name = "Torpedo Ace - Destroyers",
-		group_id = 21,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 20 TRP.",
 		next = 0,
+		worth = 3,
 		id = 213,
+		group_id = 21,
 		icon = "quzhu_leiji_3",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 20 TRP.",
 		add = {
 			{
 				1,
@@ -486,12 +486,12 @@ pg.commander_ability_template = {
 	[221] = {
 		cost = 0,
 		name = "Torpedo Rookie - Cruisers",
-		group_id = 22,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 6 TRP.",
 		next = 222,
+		worth = 1,
 		id = 221,
+		group_id = 22,
 		icon = "xunyang_leiji_1",
+		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 6 TRP.",
 		add = {
 			{
 				1,
@@ -518,12 +518,12 @@ pg.commander_ability_template = {
 	[222] = {
 		cost = 0,
 		name = "Torpedo Adept - Cruisers",
-		group_id = 22,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 8 TRP.",
 		next = 223,
+		worth = 2,
 		id = 222,
+		group_id = 22,
 		icon = "xunyang_leiji_2",
+		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 8 TRP.",
 		add = {
 			{
 				1,
@@ -550,12 +550,12 @@ pg.commander_ability_template = {
 	[223] = {
 		cost = 0,
 		name = "Torpedo Ace - Cruisers",
-		group_id = 22,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 12 TRP.",
 		next = 0,
+		worth = 3,
 		id = 223,
+		group_id = 22,
 		icon = "xunyang_leiji_3",
+		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 12 TRP.",
 		add = {
 			{
 				1,
@@ -582,12 +582,12 @@ pg.commander_ability_template = {
 	[301] = {
 		cost = 0,
 		name = "Aviation Rookie - Carriers",
-		group_id = 30,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 10 AVI.",
 		next = 302,
+		worth = 1,
 		id = 301,
+		group_id = 30,
 		icon = "hangmu_hangkong_1",
+		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 10 AVI.",
 		add = {
 			{
 				1,
@@ -614,12 +614,12 @@ pg.commander_ability_template = {
 	[302] = {
 		cost = 0,
 		name = "Aviation Adept - Carriers",
-		group_id = 30,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 14 AVI.",
 		next = 303,
+		worth = 2,
 		id = 302,
+		group_id = 30,
 		icon = "hangmu_hangkong_2",
+		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 14 AVI.",
 		add = {
 			{
 				1,
@@ -646,12 +646,12 @@ pg.commander_ability_template = {
 	[303] = {
 		cost = 0,
 		name = "Aviation Ace - Carriers",
-		group_id = 30,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 20 AVI.",
 		next = 0,
+		worth = 3,
 		id = 303,
+		group_id = 30,
 		icon = "hangmu_hangkong_3",
+		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 20 AVI.",
 		add = {
 			{
 				1,
@@ -678,12 +678,12 @@ pg.commander_ability_template = {
 	[311] = {
 		cost = 0,
 		name = "Aviation Rookie - Special",
-		group_id = 31,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>BBVs</color> gain 5 AVI.",
 		next = 312,
+		worth = 1,
 		id = 311,
+		group_id = 31,
 		icon = "teshu_hangkong_1",
+		desc = "Your <color=#3dc6ff>BBVs</color> gain 5 AVI.",
 		add = {
 			{
 				1,
@@ -705,12 +705,12 @@ pg.commander_ability_template = {
 	[312] = {
 		cost = 0,
 		name = "Aviation Adept - Special",
-		group_id = 31,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>BBVs</color> gain 7 AVI.",
 		next = 313,
+		worth = 2,
 		id = 312,
+		group_id = 31,
 		icon = "teshu_hangkong_2",
+		desc = "Your <color=#3dc6ff>BBVs</color> gain 7 AVI.",
 		add = {
 			{
 				1,
@@ -732,12 +732,12 @@ pg.commander_ability_template = {
 	[313] = {
 		cost = 0,
 		name = "Aviation Ace - Special",
-		group_id = 31,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>BBVs</color> gain 10 AVI.",
 		next = 0,
+		worth = 3,
 		id = 313,
+		group_id = 31,
 		icon = "teshu_hangkong_3",
+		desc = "Your <color=#3dc6ff>BBVs</color> gain 10 AVI.",
 		add = {
 			{
 				1,
@@ -759,12 +759,12 @@ pg.commander_ability_template = {
 	[401] = {
 		cost = 0,
 		name = "Anti-Air Rookie - Vanguard",
-		group_id = 40,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Vanguard</color> gains 8 AA.",
 		next = 402,
+		worth = 1,
 		id = 401,
+		group_id = 40,
 		icon = "quzhu_fangkong_1",
+		desc = "Your <color=#3dc6ff>Vanguard</color> gains 8 AA.",
 		add = {
 			{
 				1,
@@ -789,12 +789,12 @@ pg.commander_ability_template = {
 	[402] = {
 		cost = 0,
 		name = "Anti-Air Adept - Vanguard",
-		group_id = 40,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Vanguard</color> gains 11 AA.",
 		next = 403,
+		worth = 2,
 		id = 402,
+		group_id = 40,
 		icon = "quzhu_fangkong_2",
+		desc = "Your <color=#3dc6ff>Vanguard</color> gains 11 AA.",
 		add = {
 			{
 				1,
@@ -819,12 +819,12 @@ pg.commander_ability_template = {
 	[403] = {
 		cost = 0,
 		name = "Anti-Air Ace - Vanguard",
-		group_id = 40,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Vanguard</color> gains 16 AA.",
 		next = 0,
+		worth = 3,
 		id = 403,
+		group_id = 40,
 		icon = "quzhu_fangkong_3",
+		desc = "Your <color=#3dc6ff>Vanguard</color> gains 16 AA.",
 		add = {
 			{
 				1,
@@ -849,12 +849,12 @@ pg.commander_ability_template = {
 	[411] = {
 		cost = 0,
 		name = "Anti-Air Rookie - Main",
-		group_id = 41,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 10 AA.",
 		next = 412,
+		worth = 1,
 		id = 411,
+		group_id = 41,
 		icon = "zhanlie_fangkong_1",
+		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 10 AA.",
 		add = {
 			{
 				1,
@@ -882,12 +882,12 @@ pg.commander_ability_template = {
 	[412] = {
 		cost = 0,
 		name = "Anti-Air Adept - Main",
-		group_id = 41,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 14 AA.",
 		next = 413,
+		worth = 2,
 		id = 412,
+		group_id = 41,
 		icon = "zhanlie_fangkong_2",
+		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 14 AA.",
 		add = {
 			{
 				1,
@@ -915,12 +915,12 @@ pg.commander_ability_template = {
 	[413] = {
 		cost = 0,
 		name = "Anti-Air Ace - Main",
-		group_id = 41,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 20 AA.",
 		next = 0,
+		worth = 3,
 		id = 413,
+		group_id = 41,
 		icon = "zhanlie_fangkong_3",
+		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 20 AA.",
 		add = {
 			{
 				1,
@@ -948,12 +948,12 @@ pg.commander_ability_template = {
 	[501] = {
 		cost = 0,
 		name = "Sonar Rookie - Vanguard",
-		group_id = 50,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Vanguard</color> gains 4 ASW.",
 		next = 502,
+		worth = 1,
 		id = 501,
+		group_id = 50,
 		icon = "quzhu_fanqian_1",
+		desc = "Your <color=#3dc6ff>Vanguard</color> gains 4 ASW.",
 		add = {
 			{
 				1,
@@ -978,12 +978,12 @@ pg.commander_ability_template = {
 	[502] = {
 		cost = 0,
 		name = "Sonar Adept - Vanguard",
-		group_id = 50,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Vanguard</color> gains 5 ASW.",
 		next = 503,
+		worth = 2,
 		id = 502,
+		group_id = 50,
 		icon = "quzhu_fanqian_2",
+		desc = "Your <color=#3dc6ff>Vanguard</color> gains 5 ASW.",
 		add = {
 			{
 				1,
@@ -1008,12 +1008,12 @@ pg.commander_ability_template = {
 	[503] = {
 		cost = 0,
 		name = "Sonar Ace - Vanguard",
-		group_id = 50,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Vanguard</color> gains 8 ASW.",
 		next = 0,
+		worth = 3,
 		id = 503,
+		group_id = 50,
 		icon = "quzhu_fanqian_3",
+		desc = "Your <color=#3dc6ff>Vanguard</color> gains 8 ASW.",
 		add = {
 			{
 				1,
@@ -1038,12 +1038,12 @@ pg.commander_ability_template = {
 	[511] = {
 		cost = 0,
 		name = "Sonar Rookie - Main",
-		group_id = 51,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 3 ASW.",
 		next = 512,
+		worth = 1,
 		id = 511,
+		group_id = 51,
 		icon = "qingmu_fanqian_1",
+		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 3 ASW.",
 		add = {
 			{
 				1,
@@ -1071,12 +1071,12 @@ pg.commander_ability_template = {
 	[512] = {
 		cost = 0,
 		name = "Sonar Adept - Main",
-		group_id = 51,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 4 ASW.",
 		next = 513,
+		worth = 2,
 		id = 512,
+		group_id = 51,
 		icon = "qingmu_fanqian_2",
+		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 4 ASW.",
 		add = {
 			{
 				1,
@@ -1104,12 +1104,12 @@ pg.commander_ability_template = {
 	[513] = {
 		cost = 0,
 		name = "Sonar Ace - Main",
-		group_id = 51,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 6 ASW.",
 		next = 0,
+		worth = 3,
 		id = 513,
+		group_id = 51,
 		icon = "qingmu_fanqian_3",
+		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 6 ASW.",
 		add = {
 			{
 				1,
@@ -1137,12 +1137,12 @@ pg.commander_ability_template = {
 	[601] = {
 		cost = 0,
 		name = "Loading Rookie - Submarines",
-		group_id = 60,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 3 RLD.",
 		next = 602,
+		worth = 1,
 		id = 601,
+		group_id = 60,
 		icon = "qianting_one_1",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 3 RLD.",
 		add = {
 			{
 				1,
@@ -1165,12 +1165,12 @@ pg.commander_ability_template = {
 	[602] = {
 		cost = 0,
 		name = "Loading Adept - Submarines",
-		group_id = 60,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 4 RLD.",
 		next = 603,
+		worth = 2,
 		id = 602,
+		group_id = 60,
 		icon = "qianting_one_2",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 4 RLD.",
 		add = {
 			{
 				1,
@@ -1193,12 +1193,12 @@ pg.commander_ability_template = {
 	[603] = {
 		cost = 0,
 		name = "Loading Ace - Submarines",
-		group_id = 60,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 6 RLD.",
 		next = 0,
+		worth = 3,
 		id = 603,
+		group_id = 60,
 		icon = "qianting_one_3",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 6 RLD.",
 		add = {
 			{
 				1,
@@ -1221,12 +1221,12 @@ pg.commander_ability_template = {
 	[611] = {
 		cost = 0,
 		name = "Loading Rookie - Destroyers",
-		group_id = 61,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 5 RLD.",
 		next = 612,
+		worth = 1,
 		id = 611,
+		group_id = 61,
 		icon = "quzhu_one_1",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 5 RLD.",
 		add = {
 			{
 				1,
@@ -1248,12 +1248,12 @@ pg.commander_ability_template = {
 	[612] = {
 		cost = 0,
 		name = "Loading Adept - Destroyers",
-		group_id = 61,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 7 RLD.",
 		next = 613,
+		worth = 2,
 		id = 612,
+		group_id = 61,
 		icon = "quzhu_one_2",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 7 RLD.",
 		add = {
 			{
 				1,
@@ -1275,12 +1275,12 @@ pg.commander_ability_template = {
 	[613] = {
 		cost = 0,
 		name = "Loading Ace - Destroyers",
-		group_id = 61,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 10 RLD.",
 		next = 0,
+		worth = 3,
 		id = 613,
+		group_id = 61,
 		icon = "quzhu_one_3",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 10 RLD.",
 		add = {
 			{
 				1,
@@ -1302,12 +1302,12 @@ pg.commander_ability_template = {
 	[621] = {
 		cost = 0,
 		name = "Loading Rookie - Cruisers",
-		group_id = 62,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 4 RLD.",
 		next = 622,
+		worth = 1,
 		id = 621,
+		group_id = 62,
 		icon = "xunyang_one_1",
+		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 4 RLD.",
 		add = {
 			{
 				1,
@@ -1339,12 +1339,12 @@ pg.commander_ability_template = {
 	[622] = {
 		cost = 0,
 		name = "Loading Adept - Cruisers",
-		group_id = 62,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 5 RLD.",
 		next = 623,
+		worth = 2,
 		id = 622,
+		group_id = 62,
 		icon = "xunyang_one_2",
+		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 5 RLD.",
 		add = {
 			{
 				1,
@@ -1376,12 +1376,12 @@ pg.commander_ability_template = {
 	[623] = {
 		cost = 0,
 		name = "Loading Ace - Cruisers",
-		group_id = 62,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 8 RLD.",
 		next = 0,
+		worth = 3,
 		id = 623,
+		group_id = 62,
 		icon = "xunyang_one_3",
+		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 8 RLD.",
 		add = {
 			{
 				1,
@@ -1413,12 +1413,12 @@ pg.commander_ability_template = {
 	[631] = {
 		cost = 0,
 		name = "Loading Rookie - Battleships",
-		group_id = 63,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 3 RLD.",
 		next = 632,
+		worth = 1,
 		id = 631,
+		group_id = 63,
 		icon = "zhanlie_one_1",
+		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 3 RLD.",
 		add = {
 			{
 				1,
@@ -1450,12 +1450,12 @@ pg.commander_ability_template = {
 	[632] = {
 		cost = 0,
 		name = "Loading Adept - Battleships",
-		group_id = 63,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 4 RLD.",
 		next = 633,
+		worth = 2,
 		id = 632,
+		group_id = 63,
 		icon = "zhanlie_one_2",
+		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 4 RLD.",
 		add = {
 			{
 				1,
@@ -1487,12 +1487,12 @@ pg.commander_ability_template = {
 	[633] = {
 		cost = 0,
 		name = "Loading Ace - Battleships",
-		group_id = 63,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 6 RLD.",
 		next = 0,
+		worth = 3,
 		id = 633,
+		group_id = 63,
 		icon = "zhanlie_one_3",
+		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 6 RLD.",
 		add = {
 			{
 				1,
@@ -1524,12 +1524,12 @@ pg.commander_ability_template = {
 	[641] = {
 		cost = 0,
 		name = "Rookie Mechanic",
-		group_id = 64,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 3 RLD.",
 		next = 642,
+		worth = 1,
 		id = 641,
+		group_id = 64,
 		icon = "hangmu_one_1",
+		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 3 RLD.",
 		add = {
 			{
 				1,
@@ -1556,12 +1556,12 @@ pg.commander_ability_template = {
 	[642] = {
 		cost = 0,
 		name = "Adept Mechanic",
-		group_id = 64,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 4 RLD.",
 		next = 643,
+		worth = 2,
 		id = 642,
+		group_id = 64,
 		icon = "hangmu_one_2",
+		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 4 RLD.",
 		add = {
 			{
 				1,
@@ -1588,12 +1588,12 @@ pg.commander_ability_template = {
 	[643] = {
 		cost = 0,
 		name = "Ace Mechanic",
-		group_id = 64,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 6 RLD.",
 		next = 0,
+		worth = 3,
 		id = 643,
+		group_id = 64,
 		icon = "hangmu_one_3",
+		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 6 RLD.",
 		add = {
 			{
 				1,
@@ -1620,19 +1620,20 @@ pg.commander_ability_template = {
 	[651] = {
 		cost = 0,
 		name = "Loading Ace - Special",
-		group_id = 65,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>BMs and ARs</color> gain 3 RLD.",
 		next = 652,
+		worth = 1,
 		id = 651,
+		group_id = 65,
 		icon = "teshu_one_1",
+		desc = "Your <color=#3dc6ff>BMs, ARs, and AEs</color> gain 3 RLD.",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				6,
 				3
@@ -1645,6 +1646,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"ARs: RLD",
+				3
+			},
+			{
+				"AEs: RLD",
 				3
 			}
 		}
@@ -1652,19 +1657,20 @@ pg.commander_ability_template = {
 	[652] = {
 		cost = 0,
 		name = "Loading Rookie - Special",
-		group_id = 65,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>BMs and ARs</color> gain 4 RLD.",
 		next = 653,
+		worth = 2,
 		id = 652,
+		group_id = 65,
 		icon = "teshu_one_2",
+		desc = "Your <color=#3dc6ff>BMs, ARs, and AEs</color> gain 4 RLD.",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				6,
 				4
@@ -1677,6 +1683,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"ARs: RLD",
+				4
+			},
+			{
+				"AEs: RLD",
 				4
 			}
 		}
@@ -1684,19 +1694,20 @@ pg.commander_ability_template = {
 	[653] = {
 		cost = 0,
 		name = "Loading Adept - Special",
-		group_id = 65,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>BMs and ARs</color> gain 6 RLD.",
 		next = 0,
+		worth = 3,
 		id = 653,
+		group_id = 65,
 		icon = "teshu_one_3",
+		desc = "Your <color=#3dc6ff>BMs, ARs, and AEs</color> gain 6 RLD.",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				6,
 				6
@@ -1710,18 +1721,22 @@ pg.commander_ability_template = {
 			{
 				"ARs: RLD",
 				6
+			},
+			{
+				"AEs: RLD",
+				6
 			}
 		}
 	},
 	[701] = {
 		cost = 0,
 		name = "Rookie Engineer - Submarines",
-		group_id = 70,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 25 HP.",
 		next = 702,
+		worth = 1,
 		id = 701,
+		group_id = 70,
 		icon = "qianting_naijiu_1",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 25 HP.",
 		add = {
 			{
 				1,
@@ -1744,12 +1759,12 @@ pg.commander_ability_template = {
 	[702] = {
 		cost = 0,
 		name = "Adept Engineer - Submarines",
-		group_id = 70,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 35 HP.",
 		next = 703,
+		worth = 2,
 		id = 702,
+		group_id = 70,
 		icon = "qianting_naijiu_2",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 35 HP.",
 		add = {
 			{
 				1,
@@ -1772,12 +1787,12 @@ pg.commander_ability_template = {
 	[703] = {
 		cost = 0,
 		name = "Ace Engineer - Submarines",
-		group_id = 70,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 50 HP.",
 		next = 0,
+		worth = 3,
 		id = 703,
+		group_id = 70,
 		icon = "qianting_naijiu_3",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 50 HP.",
 		add = {
 			{
 				1,
@@ -1800,12 +1815,12 @@ pg.commander_ability_template = {
 	[711] = {
 		cost = 0,
 		name = "Rookie Engineer - Destroyers",
-		group_id = 71,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 30 HP.",
 		next = 712,
+		worth = 1,
 		id = 711,
+		group_id = 71,
 		icon = "quzhu_naijiu_1",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 30 HP.",
 		add = {
 			{
 				1,
@@ -1827,12 +1842,12 @@ pg.commander_ability_template = {
 	[712] = {
 		cost = 0,
 		name = "Adept Engineer - Destroyers",
-		group_id = 71,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 42 HP.",
 		next = 713,
+		worth = 2,
 		id = 712,
+		group_id = 71,
 		icon = "quzhu_naijiu_2",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 42 HP.",
 		add = {
 			{
 				1,
@@ -1854,12 +1869,12 @@ pg.commander_ability_template = {
 	[713] = {
 		cost = 0,
 		name = "Ace Engineer - Destroyers",
-		group_id = 71,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 60 HP.",
 		next = 0,
+		worth = 3,
 		id = 713,
+		group_id = 71,
 		icon = "quzhu_naijiu_3",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 60 HP.",
 		add = {
 			{
 				1,
@@ -1881,12 +1896,12 @@ pg.commander_ability_template = {
 	[721] = {
 		cost = 0,
 		name = "Rookie Engineer - Cruisers",
-		group_id = 72,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 50 HP.",
 		next = 722,
+		worth = 1,
 		id = 721,
+		group_id = 72,
 		icon = "xunyang_naijiu_1",
+		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 50 HP.",
 		add = {
 			{
 				1,
@@ -1918,12 +1933,12 @@ pg.commander_ability_template = {
 	[722] = {
 		cost = 0,
 		name = "Adept Engineer - Cruisers",
-		group_id = 72,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 70 HP.",
 		next = 723,
+		worth = 2,
 		id = 722,
+		group_id = 72,
 		icon = "xunyang_naijiu_2",
+		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 70 HP.",
 		add = {
 			{
 				1,
@@ -1955,12 +1970,12 @@ pg.commander_ability_template = {
 	[723] = {
 		cost = 0,
 		name = "Ace Engineer - Cruisers",
-		group_id = 72,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 100 HP.",
 		next = 0,
+		worth = 3,
 		id = 723,
+		group_id = 72,
 		icon = "xunyang_naijiu_3",
+		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 100 HP.",
 		add = {
 			{
 				1,
@@ -1992,12 +2007,12 @@ pg.commander_ability_template = {
 	[731] = {
 		cost = 0,
 		name = "Rookie Engineer - Battleships",
-		group_id = 73,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 60 HP.",
 		next = 732,
+		worth = 1,
 		id = 731,
+		group_id = 73,
 		icon = "zhanlie_naijiu_1",
+		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 60 HP.",
 		add = {
 			{
 				1,
@@ -2029,12 +2044,12 @@ pg.commander_ability_template = {
 	[732] = {
 		cost = 0,
 		name = "Adept Engineer - Battleships",
-		group_id = 73,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 84 HP.",
 		next = 733,
+		worth = 2,
 		id = 732,
+		group_id = 73,
 		icon = "zhanlie_naijiu_2",
+		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 84 HP.",
 		add = {
 			{
 				1,
@@ -2066,12 +2081,12 @@ pg.commander_ability_template = {
 	[733] = {
 		cost = 0,
 		name = "Ace Engineer - Battleships",
-		group_id = 73,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 120 HP.",
 		next = 0,
+		worth = 3,
 		id = 733,
+		group_id = 73,
 		icon = "zhanlie_naijiu_3",
+		desc = "Your <color=#3dc6ff>BBs, BCs, and BBVs</color> gain 120 HP.",
 		add = {
 			{
 				1,
@@ -2103,12 +2118,12 @@ pg.commander_ability_template = {
 	[741] = {
 		cost = 0,
 		name = "Rookie Engineer - Carriers",
-		group_id = 74,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 50 HP.",
 		next = 742,
+		worth = 1,
 		id = 741,
+		group_id = 74,
 		icon = "hangmu_naijiu_1",
+		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 50 HP.",
 		add = {
 			{
 				1,
@@ -2135,12 +2150,12 @@ pg.commander_ability_template = {
 	[742] = {
 		cost = 0,
 		name = "Adept Engineer - Carriers",
-		group_id = 74,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 70 HP.",
 		next = 743,
+		worth = 2,
 		id = 742,
+		group_id = 74,
 		icon = "hangmu_naijiu_2",
+		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 70 HP.",
 		add = {
 			{
 				1,
@@ -2167,12 +2182,12 @@ pg.commander_ability_template = {
 	[743] = {
 		cost = 0,
 		name = "Ace Engineer - Carriers",
-		group_id = 74,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 100 HP.",
 		next = 0,
+		worth = 3,
 		id = 743,
+		group_id = 74,
 		icon = "hangmu_naijiu_3",
+		desc = "Your <color=#3dc6ff>CVs and CVLs</color> gain 100 HP.",
 		add = {
 			{
 				1,
@@ -2199,19 +2214,20 @@ pg.commander_ability_template = {
 	[751] = {
 		cost = 0,
 		name = "Rookie Engineer - Special",
-		group_id = 75,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>BMs and ARs</color> gain 40 HP.",
 		next = 752,
+		worth = 1,
 		id = 751,
+		group_id = 75,
 		icon = "teshu_naijiu_1",
+		desc = "Your <color=#3dc6ff>BMs, ARs, and AEs</color> gain 40 HP.",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				1,
 				40
@@ -2224,6 +2240,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"ARs: HP",
+				40
+			},
+			{
+				"AEs: HP",
 				40
 			}
 		}
@@ -2231,19 +2251,20 @@ pg.commander_ability_template = {
 	[752] = {
 		cost = 0,
 		name = "Adept Engineer - Special",
-		group_id = 75,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>BMs and ARs</color> gain 56 HP.",
 		next = 753,
+		worth = 2,
 		id = 752,
+		group_id = 75,
 		icon = "teshu_naijiu_2",
+		desc = "Your <color=#3dc6ff>BMs, ARs, and AEs</color> gain 56 HP.",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				1,
 				56
@@ -2256,6 +2277,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"ARs: HP",
+				56
+			},
+			{
+				"AEs: HP",
 				56
 			}
 		}
@@ -2263,19 +2288,20 @@ pg.commander_ability_template = {
 	[753] = {
 		cost = 0,
 		name = "Ace Engineer - Special",
-		group_id = 75,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>BMs and ARs</color> gain 80 HP.",
 		next = 0,
+		worth = 3,
 		id = 753,
+		group_id = 75,
 		icon = "teshu_naijiu_3",
+		desc = "Your <color=#3dc6ff>BMs, ARs, and AEs</color> gain 80 HP.",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				1,
 				80
@@ -2289,18 +2315,22 @@ pg.commander_ability_template = {
 			{
 				"ARs: HP",
 				80
+			},
+			{
+				"AEs: HP",
+				80
 			}
 		}
 	},
 	[801] = {
 		cost = 0,
 		name = "Rookie Lookout - Submarines",
-		group_id = 80,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 2 Accuracy.",
 		next = 802,
+		worth = 1,
 		id = 801,
+		group_id = 80,
 		icon = "qianting_one_1",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 2 Accuracy.",
 		add = {
 			{
 				1,
@@ -2323,12 +2353,12 @@ pg.commander_ability_template = {
 	[802] = {
 		cost = 0,
 		name = "Adept Lookout - Submarines",
-		group_id = 80,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 3 Accuracy.",
 		next = 803,
+		worth = 2,
 		id = 802,
+		group_id = 80,
 		icon = "qianting_one_2",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 3 Accuracy.",
 		add = {
 			{
 				1,
@@ -2351,12 +2381,12 @@ pg.commander_ability_template = {
 	[803] = {
 		cost = 0,
 		name = "Ace Lookout - Submarines",
-		group_id = 80,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 5 Accuracy.",
 		next = 0,
+		worth = 3,
 		id = 803,
+		group_id = 80,
 		icon = "qianting_one_3",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 5 Accuracy.",
 		add = {
 			{
 				1,
@@ -2379,12 +2409,12 @@ pg.commander_ability_template = {
 	[811] = {
 		cost = 0,
 		name = "Rookie Lookout - Vanguard",
-		group_id = 81,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Vanguard</color> gains 3 Accuracy.",
 		next = 812,
+		worth = 1,
 		id = 811,
+		group_id = 81,
 		icon = "quzhu_one_1",
+		desc = "Your <color=#3dc6ff>Vanguard</color> gains 3 Accuracy.",
 		add = {
 			{
 				1,
@@ -2409,12 +2439,12 @@ pg.commander_ability_template = {
 	[812] = {
 		cost = 0,
 		name = "Adept Lookout - Vanguard",
-		group_id = 81,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Vanguard</color> gains 4 Accuracy.",
 		next = 813,
+		worth = 2,
 		id = 812,
+		group_id = 81,
 		icon = "quzhu_one_2",
+		desc = "Your <color=#3dc6ff>Vanguard</color> gains 4 Accuracy.",
 		add = {
 			{
 				1,
@@ -2439,12 +2469,12 @@ pg.commander_ability_template = {
 	[813] = {
 		cost = 0,
 		name = "Ace Lookout - Vanguard",
-		group_id = 81,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Vanguard</color> gains 6 Accuracy.",
 		next = 0,
+		worth = 3,
 		id = 813,
+		group_id = 81,
 		icon = "quzhu_one_3",
+		desc = "Your <color=#3dc6ff>Vanguard</color> gains 6 Accuracy.",
 		add = {
 			{
 				1,
@@ -2469,12 +2499,12 @@ pg.commander_ability_template = {
 	[821] = {
 		cost = 0,
 		name = "Rookie Lookout - Main",
-		group_id = 82,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 1 Accuracy.",
 		next = 822,
+		worth = 1,
 		id = 821,
+		group_id = 82,
 		icon = "zhanlie_one_1",
+		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 1 Accuracy.",
 		add = {
 			{
 				1,
@@ -2502,12 +2532,12 @@ pg.commander_ability_template = {
 	[822] = {
 		cost = 0,
 		name = "Adept Lookout - Main",
-		group_id = 82,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 2 Accuracy.",
 		next = 823,
+		worth = 2,
 		id = 822,
+		group_id = 82,
 		icon = "zhanlie_one_2",
+		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 2 Accuracy.",
 		add = {
 			{
 				1,
@@ -2535,12 +2565,12 @@ pg.commander_ability_template = {
 	[823] = {
 		cost = 0,
 		name = "Ace Lookout - Main",
-		group_id = 82,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 3 Accuracy.",
 		next = 0,
+		worth = 3,
 		id = 823,
+		group_id = 82,
 		icon = "zhanlie_one_3",
+		desc = "Your <color=#3dc6ff>Main Fleet</color> gains 3 Accuracy.",
 		add = {
 			{
 				1,
@@ -2568,12 +2598,12 @@ pg.commander_ability_template = {
 	[901] = {
 		cost = 0,
 		name = "Rookie Helmsman - Small Ships",
-		group_id = 90,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>SSs, SSVs, and DDs</color> gain 5 EVA.",
 		next = 902,
+		worth = 1,
 		id = 901,
+		group_id = 90,
 		icon = "quzhu_one_1",
+		desc = "Your <color=#3dc6ff>SSs, SSVs, and DDs</color> gain 5 EVA.",
 		add = {
 			{
 				1,
@@ -2601,12 +2631,12 @@ pg.commander_ability_template = {
 	[902] = {
 		cost = 0,
 		name = "Adept Helmsman - Small Ships",
-		group_id = 90,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>SSs, SSVs, and DDs</color> gain 7 EVA.",
 		next = 903,
+		worth = 2,
 		id = 902,
+		group_id = 90,
 		icon = "quzhu_one_2",
+		desc = "Your <color=#3dc6ff>SSs, SSVs, and DDs</color> gain 7 EVA.",
 		add = {
 			{
 				1,
@@ -2634,12 +2664,12 @@ pg.commander_ability_template = {
 	[903] = {
 		cost = 0,
 		name = "Ace Helmsman - Small Ships",
-		group_id = 90,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>SSs, SSVs, and DDs</color> gain 10 EVA.",
 		next = 0,
+		worth = 3,
 		id = 903,
+		group_id = 90,
 		icon = "quzhu_one_3",
+		desc = "Your <color=#3dc6ff>SSs, SSVs, and DDs</color> gain 10 EVA.",
 		add = {
 			{
 				1,
@@ -2667,12 +2697,12 @@ pg.commander_ability_template = {
 	[911] = {
 		cost = 0,
 		name = "Rookie Helmsman - Medium Ships",
-		group_id = 91,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CLs, CAs, CVLs, BMs, and ARs</color> gain 3 EVA.",
 		next = 912,
+		worth = 1,
 		id = 911,
+		group_id = 91,
 		icon = "xunyang_one_1",
+		desc = "Your <color=#3dc6ff>CLs, CAs, CVLs, BMs, ARs, and AEs</color> gain 3 EVA.",
 		add = {
 			{
 				1,
@@ -2682,7 +2712,8 @@ pg.commander_ability_template = {
 					3,
 					6,
 					12,
-					13
+					13,
+					19
 				},
 				9,
 				3
@@ -2707,6 +2738,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"ARs: EVA",
+				3
+			},
+			{
+				"AEs: EVA",
 				3
 			}
 		}
@@ -2714,12 +2749,12 @@ pg.commander_ability_template = {
 	[912] = {
 		cost = 0,
 		name = "Adept Helmsman - Medium Ships",
-		group_id = 91,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>CLs, CAs, CVLs, BMs, and ARs</color> gain 4 EVA.",
 		next = 913,
+		worth = 2,
 		id = 912,
+		group_id = 91,
 		icon = "xunyang_one_2",
+		desc = "Your <color=#3dc6ff>CLs, CAs, CVLs, BMs, ARs, and AEs</color> gain 4 EVA.",
 		add = {
 			{
 				1,
@@ -2729,7 +2764,8 @@ pg.commander_ability_template = {
 					3,
 					6,
 					12,
-					13
+					13,
+					19
 				},
 				9,
 				4
@@ -2754,6 +2790,10 @@ pg.commander_ability_template = {
 			},
 			{
 				"ARs: EVA",
+				4
+			},
+			{
+				"AEs: EVA",
 				4
 			}
 		}
@@ -2761,12 +2801,12 @@ pg.commander_ability_template = {
 	[913] = {
 		cost = 0,
 		name = "Ace Helmsman - Medium Ships",
-		group_id = 91,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>CLs, CAs, CVLs, BMs, and ARs</color> gain 6 EVA.",
 		next = 0,
+		worth = 3,
 		id = 913,
+		group_id = 91,
 		icon = "xunyang_one_3",
+		desc = "Your <color=#3dc6ff>CLs, CAs, CVLs, BMs, ARs, and AEs</color> gain 6 EVA.",
 		add = {
 			{
 				1,
@@ -2776,7 +2816,8 @@ pg.commander_ability_template = {
 					3,
 					6,
 					12,
-					13
+					13,
+					19
 				},
 				9,
 				6
@@ -2802,18 +2843,22 @@ pg.commander_ability_template = {
 			{
 				"ARs: EVA",
 				6
+			},
+			{
+				"AEs: EVA",
+				6
 			}
 		}
 	},
 	[921] = {
 		cost = 0,
 		name = "Rookie Helmsman - Large Ships",
-		group_id = 92,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>BBs, BCs, CVs, BBVs, and CBs</color> gain 1 EVA.",
 		next = 922,
+		worth = 1,
 		id = 921,
+		group_id = 92,
 		icon = "xunyang_one_1",
+		desc = "Your <color=#3dc6ff>BBs, BCs, CVs, BBVs, and CBs</color> gain 1 EVA.",
 		add = {
 			{
 				1,
@@ -2855,12 +2900,12 @@ pg.commander_ability_template = {
 	[922] = {
 		cost = 0,
 		name = "Adept Helmsman - Large Ships",
-		group_id = 92,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>BBs, BCs, CVs, BBVs, and CBs</color> gain 2 EVA.",
 		next = 923,
+		worth = 2,
 		id = 922,
+		group_id = 92,
 		icon = "xunyang_one_2",
+		desc = "Your <color=#3dc6ff>BBs, BCs, CVs, BBVs, and CBs</color> gain 2 EVA.",
 		add = {
 			{
 				1,
@@ -2902,12 +2947,12 @@ pg.commander_ability_template = {
 	[923] = {
 		cost = 0,
 		name = "Ace Helmsman - Large Ships",
-		group_id = 92,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>BBs, BCs, CVs, BBVs, and CBs</color> gain 3 EVA.",
 		next = 0,
+		worth = 3,
 		id = 923,
+		group_id = 92,
 		icon = "xunyang_one_3",
+		desc = "Your <color=#3dc6ff>BBs, BCs, CVs, BBVs, and CBs</color> gain 3 EVA.",
 		add = {
 			{
 				1,
@@ -2949,12 +2994,12 @@ pg.commander_ability_template = {
 	[2001] = {
 		cost = 0,
 		name = "Rookie Officer - Destroyers",
-		group_id = 200,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 8 TRP and 4 RLD.",
 		next = 2002,
+		worth = 1,
 		id = 2001,
+		group_id = 200,
 		icon = "quzhu_one_1",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 8 TRP and 4 RLD.",
 		add = {
 			{
 				1,
@@ -2989,12 +3034,12 @@ pg.commander_ability_template = {
 	[2002] = {
 		cost = 0,
 		name = "Elite Officer - Destroyers",
-		group_id = 200,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 11 TRP and 5 RLD.",
 		next = 2003,
+		worth = 2,
 		id = 2002,
+		group_id = 200,
 		icon = "quzhu_one_2",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 11 TRP and 5 RLD.",
 		add = {
 			{
 				1,
@@ -3029,12 +3074,12 @@ pg.commander_ability_template = {
 	[2003] = {
 		cost = 0,
 		name = "Chief of Staff - Destroyers",
-		group_id = 200,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>DDs</color> gain 16 TRP and 8 RLD.",
 		next = 0,
+		worth = 3,
 		id = 2003,
+		group_id = 200,
 		icon = "quzhu_one_3",
+		desc = "Your <color=#3dc6ff>DDs</color> gain 16 TRP and 8 RLD.",
 		add = {
 			{
 				1,
@@ -3069,12 +3114,12 @@ pg.commander_ability_template = {
 	[2011] = {
 		cost = 0,
 		name = "Rookie Officer - Cruisers",
-		group_id = 201,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 5 FP and 5 TRP and your <color=#3dc6ff>CBs</color> gain 5 FP.",
 		next = 2012,
+		worth = 1,
 		id = 2011,
+		group_id = 201,
 		icon = "xunyang_one_1",
+		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 5 FP and 5 TRP and your <color=#3dc6ff>CBs</color> gain 5 FP.",
 		add = {
 			{
 				1,
@@ -3125,12 +3170,12 @@ pg.commander_ability_template = {
 	[2012] = {
 		cost = 0,
 		name = "Elite Officer - Cruisers",
-		group_id = 201,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 7 FP and 7 TRP and your <color=#3dc6ff>CBs</color> gain 7 FP.",
 		next = 2013,
+		worth = 2,
 		id = 2012,
+		group_id = 201,
 		icon = "xunyang_one_2",
+		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 7 FP and 7 TRP and your <color=#3dc6ff>CBs</color> gain 7 FP.",
 		add = {
 			{
 				1,
@@ -3181,12 +3226,12 @@ pg.commander_ability_template = {
 	[2013] = {
 		cost = 0,
 		name = "Chief of Staff - Cruisers",
-		group_id = 201,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 10 FP and 10 TRP and your <color=#3dc6ff>CBs</color> gain 10 FP.",
 		next = 0,
+		worth = 3,
 		id = 2013,
+		group_id = 201,
 		icon = "xunyang_one_3",
+		desc = "Your <color=#3dc6ff>CLs and CAs</color> gain 10 FP and 10 TRP and your <color=#3dc6ff>CBs</color> gain 10 FP.",
 		add = {
 			{
 				1,
@@ -3237,12 +3282,12 @@ pg.commander_ability_template = {
 	[2021] = {
 		cost = 0,
 		name = "Rookie Officer - Battleships",
-		group_id = 202,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>BBs and BCs</color> gain 50 HP and 8 FP.",
 		next = 2022,
+		worth = 1,
 		id = 2021,
+		group_id = 202,
 		icon = "zhanlie_one_1",
+		desc = "Your <color=#3dc6ff>BBs and BCs</color> gain 50 HP and 8 FP.",
 		add = {
 			{
 				1,
@@ -3287,12 +3332,12 @@ pg.commander_ability_template = {
 	[2022] = {
 		cost = 0,
 		name = "Elite Officer - Battleships",
-		group_id = 202,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>BBs and BCs</color> gain 70 HP and 11 FP.",
 		next = 2023,
+		worth = 2,
 		id = 2022,
+		group_id = 202,
 		icon = "zhanlie_one_2",
+		desc = "Your <color=#3dc6ff>BBs and BCs</color> gain 70 HP and 11 FP.",
 		add = {
 			{
 				1,
@@ -3337,12 +3382,12 @@ pg.commander_ability_template = {
 	[2023] = {
 		cost = 0,
 		name = "Chief of Staff - Battleships",
-		group_id = 202,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>BBs and BCs</color> gain 100 HP and 16 FP.",
 		next = 0,
+		worth = 3,
 		id = 2023,
+		group_id = 202,
 		icon = "zhanlie_one_3",
+		desc = "Your <color=#3dc6ff>BBs and BCs</color> gain 100 HP and 16 FP.",
 		add = {
 			{
 				1,
@@ -3387,12 +3432,12 @@ pg.commander_ability_template = {
 	[2031] = {
 		cost = 0,
 		name = "Rookie Officer - Carriers",
-		group_id = 203,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CVs</color> gain 10 AVI and 3 RLD.",
 		next = 2032,
+		worth = 1,
 		id = 2031,
+		group_id = 203,
 		icon = "hangmu_one_1",
+		desc = "Your <color=#3dc6ff>CVs</color> gain 10 AVI and 3 RLD.",
 		add = {
 			{
 				1,
@@ -3427,12 +3472,12 @@ pg.commander_ability_template = {
 	[2032] = {
 		cost = 0,
 		name = "Elite Officer - Carriers",
-		group_id = 203,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>CVs</color> gain 14 AVI and 4 RLD.",
 		next = 2033,
+		worth = 2,
 		id = 2032,
+		group_id = 203,
 		icon = "hangmu_one_2",
+		desc = "Your <color=#3dc6ff>CVs</color> gain 14 AVI and 4 RLD.",
 		add = {
 			{
 				1,
@@ -3467,12 +3512,12 @@ pg.commander_ability_template = {
 	[2033] = {
 		cost = 0,
 		name = "Chief of Staff - Carriers",
-		group_id = 203,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>CVs</color> gain 20 AVI and 6 RLD.",
 		next = 0,
+		worth = 3,
 		id = 2033,
+		group_id = 203,
 		icon = "hangmu_one_3",
+		desc = "Your <color=#3dc6ff>CVs</color> gain 20 AVI and 6 RLD.",
 		add = {
 			{
 				1,
@@ -3507,12 +3552,12 @@ pg.commander_ability_template = {
 	[2041] = {
 		cost = 0,
 		name = "Rookie Officer - Submarines",
-		group_id = 204,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 10 TRP and 3 RLD.",
 		next = 2042,
+		worth = 1,
 		id = 2041,
+		group_id = 204,
 		icon = "qianting_one_1",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 10 TRP and 3 RLD.",
 		add = {
 			{
 				1,
@@ -3549,12 +3594,12 @@ pg.commander_ability_template = {
 	[2042] = {
 		cost = 0,
 		name = "Elite Officer - Submarines",
-		group_id = 204,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 14 TRP and 4 RLD.",
 		next = 2043,
+		worth = 2,
 		id = 2042,
+		group_id = 204,
 		icon = "qianting_one_2",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 14 TRP and 4 RLD.",
 		add = {
 			{
 				1,
@@ -3591,12 +3636,12 @@ pg.commander_ability_template = {
 	[2043] = {
 		cost = 0,
 		name = "Chief of Staff - Submarines",
-		group_id = 204,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 20 TRP and 6 RLD.",
 		next = 0,
+		worth = 3,
 		id = 2043,
+		group_id = 204,
 		icon = "qianting_one_3",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 20 TRP and 6 RLD.",
 		add = {
 			{
 				1,
@@ -3633,12 +3678,12 @@ pg.commander_ability_template = {
 	[2111] = {
 		cost = 0,
 		name = "Rookie Officer - Union",
-		group_id = 211,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Eagle Union ships</color> gain 8 AA, 8 AVI, and 3 RLD.",
 		next = 2112,
+		worth = 1,
 		id = 2111,
+		group_id = 211,
 		icon = "baiying_two_1",
+		desc = "Your <color=#3dc6ff>Eagle Union ships</color> gain 8 AA, 8 AVI, and 3 RLD.",
 		add = {
 			{
 				1,
@@ -3686,12 +3731,12 @@ pg.commander_ability_template = {
 	[2112] = {
 		cost = 0,
 		name = "Elite Officer - Union",
-		group_id = 211,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Eagle Union ships</color> gain 11 AA, 11 AVI, and 4 RLD.",
 		next = 2113,
+		worth = 2,
 		id = 2112,
+		group_id = 211,
 		icon = "baiying_two_2",
+		desc = "Your <color=#3dc6ff>Eagle Union ships</color> gain 11 AA, 11 AVI, and 4 RLD.",
 		add = {
 			{
 				1,
@@ -3739,12 +3784,12 @@ pg.commander_ability_template = {
 	[2113] = {
 		cost = 0,
 		name = "Chief of Staff - Union",
-		group_id = 211,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Eagle Union ships</color> gain 16 AA, 16 AVI, and 6 RLD.",
 		next = 0,
+		worth = 3,
 		id = 2113,
+		group_id = 211,
 		icon = "baiying_two_3",
+		desc = "Your <color=#3dc6ff>Eagle Union ships</color> gain 16 AA, 16 AVI, and 6 RLD.",
 		add = {
 			{
 				1,
@@ -3792,12 +3837,12 @@ pg.commander_ability_template = {
 	[2121] = {
 		cost = 0,
 		name = "Rookie Officer - Royal",
-		group_id = 212,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Royal Navy ships</color> gain 7 FP, 8 AA, and 1 EVA.",
 		next = 2122,
+		worth = 1,
 		id = 2121,
+		group_id = 212,
 		icon = "huangjia_two_1",
+		desc = "Your <color=#3dc6ff>Royal Navy ships</color> gain 7 FP, 8 AA, and 1 EVA.",
 		add = {
 			{
 				1,
@@ -3845,12 +3890,12 @@ pg.commander_ability_template = {
 	[2122] = {
 		cost = 0,
 		name = "Elite Officer - Royal",
-		group_id = 212,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Royal Navy ships</color> gain 10 FP, 11 AA, and 2 EVA.",
 		next = 2123,
+		worth = 2,
 		id = 2122,
+		group_id = 212,
 		icon = "huangjia_two_2",
+		desc = "Your <color=#3dc6ff>Royal Navy ships</color> gain 10 FP, 11 AA, and 2 EVA.",
 		add = {
 			{
 				1,
@@ -3898,12 +3943,12 @@ pg.commander_ability_template = {
 	[2123] = {
 		cost = 0,
 		name = "Chief of Staff - Royal",
-		group_id = 212,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Royal Navy ships</color> gain 14 FP, 16 AA, and 3 EVA.",
 		next = 0,
+		worth = 3,
 		id = 2123,
+		group_id = 212,
 		icon = "huangjia_two_3",
+		desc = "Your <color=#3dc6ff>Royal Navy ships</color> gain 14 FP, 16 AA, and 3 EVA.",
 		add = {
 			{
 				1,
@@ -3951,12 +3996,12 @@ pg.commander_ability_template = {
 	[2131] = {
 		cost = 0,
 		name = "Rookie Officer - Sakura",
-		group_id = 213,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Sakura Empire ships</color> gain 8 TRP, 6 AVI, and 1 EVA.",
 		next = 2132,
+		worth = 1,
 		id = 2131,
+		group_id = 213,
 		icon = "chongying_two_1",
+		desc = "Your <color=#3dc6ff>Sakura Empire ships</color> gain 8 TRP, 6 AVI, and 1 EVA.",
 		add = {
 			{
 				1,
@@ -4004,12 +4049,12 @@ pg.commander_ability_template = {
 	[2132] = {
 		cost = 0,
 		name = "Elite Officer - Sakura",
-		group_id = 213,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Sakura Empire ships</color> gain 11 TRP, 8 AVI, and 2 EVA.",
 		next = 2133,
+		worth = 2,
 		id = 2132,
+		group_id = 213,
 		icon = "chongying_two_2",
+		desc = "Your <color=#3dc6ff>Sakura Empire ships</color> gain 11 TRP, 8 AVI, and 2 EVA.",
 		add = {
 			{
 				1,
@@ -4057,12 +4102,12 @@ pg.commander_ability_template = {
 	[2133] = {
 		cost = 0,
 		name = "Chief of Staff - Sakura",
-		group_id = 213,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Sakura Empire ships</color> gain 16 TRP, 12 AVI, and 3 EVA.",
 		next = 0,
+		worth = 3,
 		id = 2133,
+		group_id = 213,
 		icon = "chongying_two_3",
+		desc = "Your <color=#3dc6ff>Sakura Empire ships</color> gain 16 TRP, 12 AVI, and 3 EVA.",
 		add = {
 			{
 				1,
@@ -4110,12 +4155,12 @@ pg.commander_ability_template = {
 	[2141] = {
 		cost = 0,
 		name = "Rookie Officer - Iron Blood",
-		group_id = 214,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Iron Blood ships</color> gain 6 FP, 7 TRP, and 1 Accuracy.",
 		next = 2142,
+		worth = 1,
 		id = 2141,
+		group_id = 214,
 		icon = "tiexue_two_1",
+		desc = "Your <color=#3dc6ff>Iron Blood ships</color> gain 6 FP, 7 TRP, and 1 Accuracy.",
 		add = {
 			{
 				1,
@@ -4161,12 +4206,12 @@ pg.commander_ability_template = {
 	[2142] = {
 		cost = 0,
 		name = "Elite Officer - Iron Blood",
-		group_id = 214,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Iron Blood ships</color> gain 8 FP, 10 TRP, and 2 Accuracy.",
 		next = 2143,
+		worth = 2,
 		id = 2142,
+		group_id = 214,
 		icon = "tiexue_two_2",
+		desc = "Your <color=#3dc6ff>Iron Blood ships</color> gain 8 FP, 10 TRP, and 2 Accuracy.",
 		add = {
 			{
 				1,
@@ -4212,12 +4257,12 @@ pg.commander_ability_template = {
 	[2143] = {
 		cost = 0,
 		name = "Chief of Staff - Iron Blood",
-		group_id = 214,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Iron Blood ships</color> gain 12 FP, 14 TRP, and 3 Accuracy.",
 		next = 0,
+		worth = 3,
 		id = 2143,
+		group_id = 214,
 		icon = "tiexue_two_3",
+		desc = "Your <color=#3dc6ff>Iron Blood ships</color> gain 12 FP, 14 TRP, and 3 Accuracy.",
 		add = {
 			{
 				1,
@@ -4263,12 +4308,12 @@ pg.commander_ability_template = {
 	[2151] = {
 		cost = 0,
 		name = "Rookie Officer - Empery",
-		group_id = 215,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Dragon Empery ships</color> gain 7 FP, 8 AA, and 3 RLD.",
 		next = 2152,
+		worth = 1,
 		id = 2151,
+		group_id = 215,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Dragon Empery ships</color> gain 7 FP, 8 AA, and 3 RLD.",
 		add = {
 			{
 				1,
@@ -4316,12 +4361,12 @@ pg.commander_ability_template = {
 	[2152] = {
 		cost = 0,
 		name = "Elite Officer - Empery",
-		group_id = 215,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Dragon Empery ships</color> gain 10 FP, 11 AA, and 4 RLD.",
 		next = 2153,
+		worth = 2,
 		id = 2152,
+		group_id = 215,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Dragon Empery ships</color> gain 10 FP, 11 AA, and 4 RLD.",
 		add = {
 			{
 				1,
@@ -4369,12 +4414,12 @@ pg.commander_ability_template = {
 	[2153] = {
 		cost = 0,
 		name = "Chief of Staff - Empery",
-		group_id = 215,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Dragon Empery ships</color> gain 14 FP, 16 AA, and 6 RLD.",
 		next = 0,
+		worth = 3,
 		id = 2153,
+		group_id = 215,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Dragon Empery ships</color> gain 14 FP, 16 AA, and 6 RLD.",
 		add = {
 			{
 				1,
@@ -4422,12 +4467,12 @@ pg.commander_ability_template = {
 	[2171] = {
 		cost = 0,
 		name = "Rookie Officer - Parliament",
-		group_id = 217,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Northern Parliament ships</color> gain 8 FP, 3 RLD, and 1 Accuracy.",
 		next = 2172,
+		worth = 1,
 		id = 2171,
+		group_id = 217,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Northern Parliament ships</color> gain 8 FP, 3 RLD, and 1 Accuracy.",
 		add = {
 			{
 				1,
@@ -4475,12 +4520,12 @@ pg.commander_ability_template = {
 	[2172] = {
 		cost = 0,
 		name = "Elite Officer - Parliament",
-		group_id = 217,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Northern Parliament ships</color> gain 11 FP, 4 RLD, and 2 Accuracy.",
 		next = 2173,
+		worth = 2,
 		id = 2172,
+		group_id = 217,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Northern Parliament ships</color> gain 11 FP, 4 RLD, and 2 Accuracy.",
 		add = {
 			{
 				1,
@@ -4528,12 +4573,12 @@ pg.commander_ability_template = {
 	[2173] = {
 		cost = 0,
 		name = "Chief of Staff - Parliament",
-		group_id = 217,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Northern Parliament ships</color> gain 16 FP, 6 RLD, and 3 Accuracy.",
 		next = 0,
+		worth = 3,
 		id = 2173,
+		group_id = 217,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Northern Parliament ships</color> gain 16 FP, 6 RLD, and 3 Accuracy.",
 		add = {
 			{
 				1,
@@ -4581,12 +4626,12 @@ pg.commander_ability_template = {
 	[2181] = {
 		cost = 0,
 		name = "Rookie Officer - Iris",
-		group_id = 218,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Iris Libre ships</color> gain 8 FP, 3 RLD, and 2 EVA.",
 		next = 2182,
+		worth = 1,
 		id = 2181,
+		group_id = 218,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Iris Libre ships</color> gain 8 FP, 3 RLD, and 2 EVA.",
 		add = {
 			{
 				1,
@@ -4634,12 +4679,12 @@ pg.commander_ability_template = {
 	[2182] = {
 		cost = 0,
 		name = "Elite Officer - Iris",
-		group_id = 218,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Iris Libre ships</color> gain 11 FP, 4 RLD, and 3 EVA.",
 		next = 2183,
+		worth = 2,
 		id = 2182,
+		group_id = 218,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Iris Libre ships</color> gain 11 FP, 4 RLD, and 3 EVA.",
 		add = {
 			{
 				1,
@@ -4687,12 +4732,12 @@ pg.commander_ability_template = {
 	[2183] = {
 		cost = 0,
 		name = "Chief of Staff - Iris",
-		group_id = 218,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Iris Libre ships</color> gain 16 FP, 6 RLD, and 5 EVA.",
 		next = 0,
+		worth = 3,
 		id = 2183,
+		group_id = 218,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Iris Libre ships</color> gain 16 FP, 6 RLD, and 5 EVA.",
 		add = {
 			{
 				1,
@@ -4740,12 +4785,12 @@ pg.commander_ability_template = {
 	[2191] = {
 		cost = 0,
 		name = "Rookie Officer - Vichya",
-		group_id = 219,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>Vichiya Dominion ships</color> gain 8 FP, 3 RLD, and 2 Accuracy.",
 		next = 2192,
+		worth = 1,
 		id = 2191,
+		group_id = 219,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Vichiya Dominion ships</color> gain 8 FP, 3 RLD, and 2 Accuracy.",
 		add = {
 			{
 				1,
@@ -4793,12 +4838,12 @@ pg.commander_ability_template = {
 	[2192] = {
 		cost = 0,
 		name = "Elite Officer - Vichya",
-		group_id = 219,
-		worth = 2,
-		desc = "Your <color=#3dc6ff>Vichiya Dominion ships</color> gain 11 FP, 4 RLD, and 3 Accuracy.",
 		next = 2193,
+		worth = 2,
 		id = 2192,
+		group_id = 219,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Vichiya Dominion ships</color> gain 11 FP, 4 RLD, and 3 Accuracy.",
 		add = {
 			{
 				1,
@@ -4846,12 +4891,12 @@ pg.commander_ability_template = {
 	[2193] = {
 		cost = 0,
 		name = "Chief of Staff - Vichya",
-		group_id = 219,
-		worth = 3,
-		desc = "Your <color=#3dc6ff>Vichiya Dominion ships</color> gain 16 FP, 6 RLD, and 5 Accuracy.",
 		next = 0,
+		worth = 3,
 		id = 2193,
+		group_id = 219,
 		icon = "",
+		desc = "Your <color=#3dc6ff>Vichiya Dominion ships</color> gain 16 FP, 6 RLD, and 5 Accuracy.",
 		add = {
 			{
 				1,
@@ -4899,12 +4944,12 @@ pg.commander_ability_template = {
 	[5011] = {
 		cost = 0,
 		name = "Tireless Warrior",
-		group_id = 501,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 10 FP and 12 RLD.",
 		next = 0,
+		worth = 1,
 		id = 5011,
+		group_id = 501,
 		icon = "jiandibizhan",
+		desc = "Your <color=#3dc6ff>CLs, CAs, and CBs</color> gain 10 FP and 12 RLD.",
 		add = {
 			{
 				1,
@@ -4959,12 +5004,12 @@ pg.commander_ability_template = {
 	[5021] = {
 		cost = 0,
 		name = "Soulful Warrior",
-		group_id = 502,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>BBs and BCs</color> gain 15 FP and 3.0% Main Gun Crit Rate.",
 		next = 0,
+		worth = 1,
 		id = 5021,
+		group_id = 502,
 		icon = "yifaruhun",
+		desc = "Your <color=#3dc6ff>BBs and BCs</color> gain 15 FP and 3.0% Main Gun Crit Rate.",
 		add = {
 			{
 				1,
@@ -5008,12 +5053,12 @@ pg.commander_ability_template = {
 	[5031] = {
 		cost = 0,
 		name = "Heart of the Torpedo",
-		group_id = 503,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>DDs and CLs</color> gain 15 TRP and 3.0% Torpedo Crit Rate.",
 		next = 0,
+		worth = 1,
 		id = 5031,
+		group_id = 503,
 		icon = "shuileihun",
+		desc = "Your <color=#3dc6ff>DDs and CLs</color> gain 15 TRP and 3.0% Torpedo Crit Rate.",
 		add = {
 			{
 				1,
@@ -5057,12 +5102,12 @@ pg.commander_ability_template = {
 	[5041] = {
 		cost = 0,
 		name = "Ace Pilot",
-		group_id = 504,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>CVs</color> gain 15 AVI and 8 RLD.",
 		next = 0,
+		worth = 1,
 		id = 5041,
+		group_id = 504,
 		icon = "wangpaijishi",
+		desc = "Your <color=#3dc6ff>CVs</color> gain 15 AVI and 8 RLD.",
 		add = {
 			{
 				1,
@@ -5097,12 +5142,12 @@ pg.commander_ability_template = {
 	[5051] = {
 		cost = 0,
 		name = "Alpha Wolf",
-		group_id = 505,
-		worth = 1,
-		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 15 TRP and 8 RLD.",
 		next = 0,
+		worth = 1,
 		id = 5051,
+		group_id = 505,
 		icon = "langqunzhishou",
+		desc = "Your <color=#3dc6ff>SSs and SSVs</color> gain 15 TRP and 8 RLD.",
 		add = {
 			{
 				1,
@@ -5139,12 +5184,12 @@ pg.commander_ability_template = {
 	[5061] = {
 		cost = 0,
 		name = "Rising Star",
-		group_id = 506,
-		worth = 1,
-		desc = "This Meowfficer gains 10.0% more EXP.",
 		next = 0,
+		worth = 1,
 		id = 5061,
+		group_id = 506,
 		icon = "special_exp",
+		desc = "This Meowfficer gains 10.0% more EXP from battles.",
 		add = {
 			{
 				2,
@@ -5159,12 +5204,12 @@ pg.commander_ability_template = {
 	[5071] = {
 		cost = 0,
 		name = "Best Friend",
-		group_id = 507,
-		worth = 1,
-		desc = "This Meowfficer gives 10.0% more EXP when used as Enhancement Material.",
 		next = 0,
+		worth = 1,
 		id = 5071,
+		group_id = 507,
 		icon = "special_exp",
+		desc = "This Meowfficer gives 10.0% more EXP when used as Enhancement Material.",
 		add = {
 			{
 				2,
@@ -5179,12 +5224,12 @@ pg.commander_ability_template = {
 	[5081] = {
 		cost = 0,
 		name = "Wind's Alacrity",
-		group_id = 508,
-		worth = 1,
-		desc = "Your whole fleet gains 3 Speed.",
 		next = 0,
+		worth = 1,
 		id = 5081,
+		group_id = 508,
 		icon = "special_one",
+		desc = "Your whole fleet gains 3 Speed.",
 		add = {
 			{
 				1,
@@ -5204,12 +5249,12 @@ pg.commander_ability_template = {
 	[5091] = {
 		cost = 0,
 		name = "Forest's Serenity",
-		group_id = 509,
-		worth = 1,
-		desc = "Your whole fleet gains 15 AA and ASW as well as 3 Accuracy and EVA.",
 		next = 0,
+		worth = 1,
 		id = 5091,
+		group_id = 509,
 		icon = "special_one",
+		desc = "Your whole fleet gains 15 AA and ASW as well as 3 Accuracy and EVA.",
 		add = {
 			{
 				1,
@@ -5262,12 +5307,12 @@ pg.commander_ability_template = {
 	[5101] = {
 		cost = 0,
 		name = "Flame's Aggression",
-		group_id = 510,
-		worth = 1,
-		desc = "Your whole fleet deals 3.0% more DMG.",
 		next = 0,
+		worth = 1,
 		id = 5101,
+		group_id = 510,
 		icon = "special_one",
+		desc = "Your whole fleet deals 3.0% more DMG.",
 		add = {
 			{
 				3,
@@ -5288,12 +5333,12 @@ pg.commander_ability_template = {
 	[5111] = {
 		cost = 0,
 		name = "Mountain's Tenacity",
-		group_id = 511,
-		worth = 1,
-		desc = "Your whole fleet takes 3.0% less DMG.",
 		next = 0,
+		worth = 1,
 		id = 5111,
+		group_id = 511,
 		icon = "special_one",
+		desc = "Your whole fleet takes 3.0% less DMG.",
 		add = {
 			{
 				3,
@@ -5314,12 +5359,12 @@ pg.commander_ability_template = {
 	[5121] = {
 		cost = 0,
 		name = "Miracle",
-		group_id = 512,
-		worth = 1,
-		desc = "Your whole fleet gains 5 LCK.",
 		next = 0,
+		worth = 1,
 		id = 5121,
+		group_id = 512,
 		icon = "special_one",
+		desc = "Your whole fleet gains 5 LCK.",
 		add = {
 			{
 				1,
@@ -5339,12 +5384,12 @@ pg.commander_ability_template = {
 	[5131] = {
 		cost = 0,
 		name = "Destiny",
-		group_id = 513,
-		worth = 1,
-		desc = "Your whole fleet gains 10 FP, TRP, and AVI, but loses 3 LCK.",
 		next = 0,
+		worth = 1,
 		id = 5131,
+		group_id = 513,
 		icon = "special_one",
+		desc = "Your whole fleet gains 10 FP, TRP, and AVI, but loses 3 LCK.",
 		add = {
 			{
 				1,
@@ -5539,5 +5584,3 @@ pg.commander_ability_template = {
 		5131
 	}
 }
-
-return

@@ -2,10 +2,10 @@ return {
 	uiEffect = "",
 	name = "鱼雷连射",
 	cd = 20,
-	picture = "0",
-	desc = "第三章敌人鱼雷连射2轮-4发鱼雷",
 	painting = 1,
 	id = 7030,
+	picture = "0",
+	desc = "第三章敌人鱼雷连射2轮-4发鱼雷",
 	aniEffect = {
 		effect = "jinengenemy",
 		offset = {
@@ -16,20 +16,20 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 313012,
 				delay = 1
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 313012,
 				delay = 1

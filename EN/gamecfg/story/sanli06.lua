@@ -1,24 +1,24 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	continueBgm = true,
 	id = "SANLI06",
+	continueBgm = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			actorName = "？？？",
-			side = 0,
-			dir = 1,
-			blackBg = true,
 			stopbgm = true,
-			withoutPainting = true,
-			actor = 303110,
+			side = 0,
 			nameColor = "#a9f548",
 			say = "So it seems our old friend has returned.",
+			dir = 1,
+			blackBg = true,
+			actor = 303110,
+			actorName = "？？？",
+			withoutPainting = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -39,42 +39,42 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 303120,
 			side = 1,
 			nameColor = "#a9f548",
+			actorName = "？？？",
 			dir = 1,
 			blackBg = true,
-			actor = 303120,
-			actorName = "？？？",
 			say = "The... War God of the Combined Fleet? Her persistence knows no bounds.",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 303110,
 			side = 0,
 			nameColor = "#a9f548",
+			actorName = "？？？",
 			dir = 1,
 			blackBg = true,
-			actor = 303110,
-			actorName = "？？？",
 			say = "But regardless... we can't allow them to have the Creator.",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 303110,
 			side = 0,
 			nameColor = "#a9f548",
+			actorName = "？？？",
 			dir = 1,
 			blackBg = true,
-			actor = 303110,
-			actorName = "？？？",
 			say = "If the Sakura Empire manages to get their hands on that power...",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

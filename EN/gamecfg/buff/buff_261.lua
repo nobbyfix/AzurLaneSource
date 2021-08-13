@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "制空权丧失",
 	init_effect = "",
-	id = 221,
+	name = "制空权丧失",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 221,
 	icon = 221,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.2,
-				attr = "damageRatioByAir"
+				attr = "damageRatioByAir",
+				number = -0.2
 			}
 		},
 		{
@@ -26,8 +26,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "injureRatioByAir"
+				attr = "injureRatioByAir",
+				number = 0.1
 			}
 		},
 		{
@@ -36,8 +36,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -800,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = -800
 			}
 		},
 		{
@@ -46,8 +46,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -800,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = -800
 			}
 		}
 	}

@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.05
 				}
 			}
 		}
@@ -45,8 +45,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.072
 				}
 			}
 		}
@@ -71,8 +71,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.094,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.094
 				}
 			}
 		}
@@ -97,8 +97,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.116,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.116
 				}
 			}
 		}
@@ -123,8 +123,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.138,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.138
 				}
 			}
 		}
@@ -149,8 +149,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.16,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.16
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.182,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.182
 				}
 			}
 		}
@@ -201,8 +201,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.204,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.204
 				}
 			}
 		}
@@ -227,8 +227,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.226,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.226
 				}
 			}
 		}
@@ -253,27 +253,27 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.25,
-					attr = "hammerDamagePrevent"
+					attr = "hammerDamagePrevent",
+					number = 0.25
 				}
 			}
 		}
 	},
 	desc_get = "",
 	name = "安全第一！",
-	init_effect = "jinengchufared",
-	id = 12291,
+	init_effect = "jinengchufablue",
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12291,
 	icon = 12290,
 	last_effect = "",
 	blink = {
+		0,
+		0.7,
 		1,
-		0,
-		0,
 		0.3,
 		0.3
 	},
@@ -296,8 +296,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "hammerDamagePrevent"
+				attr = "hammerDamagePrevent",
+				number = 0.05
 			}
 		}
 	}

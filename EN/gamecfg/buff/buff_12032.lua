@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "划破夜空之火",
 	init_effect = "",
-	id = 12032,
+	name = "划破夜空之火",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 12032,
 	icon = 12030,
 	last_effect = "",
 	effect_list = {

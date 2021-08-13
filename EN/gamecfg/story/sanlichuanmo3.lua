@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SANLICHUANMO3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Mikasa's Model Museum\n\n<size=45>Chapter 3: The Hardworking Kids</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
-			bgmDelay = 2,
-			side = 2,
-			dir = 1,
 			blackBg = true,
-			bgm = "story-1",
+			side = 2,
 			say = "With everyone pitching in, little by little, the room was starting to come together. Even Mikasa's model ships were slowly being rebuilt.",
+			dir = 1,
+			bgmDelay = 2,
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,8 +46,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "At the same time, more volunteers from the Sakura Empire were showing up to help out.",
 			typewriter = {
@@ -72,12 +72,12 @@ return {
 			}
 		},
 		{
-			say = "The situation is clear... we should offer our assistance.",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "The situation is clear... we should offer our assistance.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -140,12 +140,12 @@ return {
 			}
 		},
 		{
-			say = "Oh... Okay!",
+			actor = 301330,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Oh... Okay!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -160,8 +160,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.8,
 					dur = 0.2,
 					x = 0,
@@ -186,15 +186,15 @@ return {
 			}
 		},
 		{
+			actor = 301010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "We're here to help too!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -219,8 +219,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 2.2,
 					dur = 0.2,
 					x = 0,
@@ -229,12 +229,12 @@ return {
 			}
 		},
 		{
-			say = "I learned a little bit about model building from L.I... It's time to put those skills to use...",
+			actor = 301050,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "I learned a little bit about model building from L.I... It's time to put those skills to use...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -265,15 +265,15 @@ return {
 			}
 		},
 		{
+			actor = 305010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 305010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "We're here! I hope we're not too late?",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -298,12 +298,12 @@ return {
 			}
 		},
 		{
-			say = "We made lunch for everyone~ Tada~! Come and help yourselves~!",
+			actor = 305020,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 305020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "We made lunch for everyone~ Tada~! Come and help yourselves~!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -318,11 +318,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Oh! Right on time. I was just getting hungry.",
 			typewriter = {
 				speed = 0.05,
@@ -334,8 +334,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -344,12 +344,12 @@ return {
 			}
 		},
 		{
-			say = "Now now, Zuikaku, let's not be greedy.",
+			actor = 307050,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Now now, Zuikaku, let's not be greedy.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -396,12 +396,12 @@ return {
 			}
 		},
 		{
-			say = "Mutsuki, you can't eat candy for lunch...",
+			actor = 301330,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Mutsuki, you can't eat candy for lunch...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -416,13 +416,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_school",
 			say = "Not far off, Mikasa watched the youngsters working hard on the ruins of her collection with a proud smile on her face...",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -459,12 +459,12 @@ return {
 			}
 		},
 		{
+			actor = 305110,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 305110,
-			nameColor = "#a9f548",
 			say = "All that work I put in certainly didn't go to waste. Thanks to these kids...",
 			typewriter = {
 				speed = 0.05,

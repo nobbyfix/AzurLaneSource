@@ -1,32 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG1",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			blackBg = true,
+			side = 2,
 			stopbgm = true,
-			side = 2,
-			dir = 1,
 			bgmDelay = 2,
-			say = "古老的传承中，有一种会用歌声引诱船员，令船触礁的怪物",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "这种名为“塞壬”怪物，无疑是一种威胁航线的安全，将人类拉入大海的存在",
+			say = "Ancient legends spoke of sea monsters that sang enchanting songs to lure ships to their watery graves.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -37,24 +23,10 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
-			blackBg = true,
-			say = "为了对抗“塞壬”以及大海中存在的各种危险，人类想出了无数种方法",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
 			side = 2,
-			dir = 1,
 			blackBg = true,
-			say = "阿尔戈英雄中的俄耳甫斯弹奏起竖琴，用音乐抵消了塞壬的歌声",
+			say = "They were named \"Sirens,\" and they threatened the safety of the seas by dragging people to their demise.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -65,10 +37,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
-			dir = 1,
 			blackBg = true,
-			say = "大航海时代里，人们在船首像前放声高歌，消除心中的恐惧并祈祷航行的安全",
+			say = "A number of people developed countermeasures in order to deal with these monsters.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -79,10 +51,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
-			dir = 1,
 			blackBg = true,
-			say = "这些装饰在船头的塑像，在鸢尾和萨丁帝国的文化中逐渐生化成了“偶像”，时而作为艺术，时而作为信仰的象征",
+			say = "Orpheus, companion of the Argonauts, offset the Sirens' song with the melodies of his lyre.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -93,10 +65,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
-			dir = 1,
 			blackBg = true,
-			say = "人类的传承在历史长河中逐渐演化，被各个势力所继承",
+			say = "During the Great Era of Discovery, sailors sang to the figurehead of their ship to quell the fear within their hearts and pray for a safe voyage.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -107,10 +79,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
-			dir = 1,
 			blackBg = true,
-			say = "“音乐”作为皇家海军的传统发扬光大，和铁血及白鹰的船上军乐队一起至今为人传颂",
+			say = "These decorative figureheads, or idols, were so important to the peoples who would later become Iris Libre and the Sardegna Empire, that they were seen as pieces of art or even symbols of faith.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -121,10 +93,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
-			dir = 1,
 			blackBg = true,
-			say = "“偶像”的概念在大海彼岸的重樱的魔改造下，和“忍者”“动画”一起反攻西方，风靡世界",
+			say = "These traditions have evolved and taken many different forms as they were passed down the ages...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -135,10 +107,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
-			dir = 1,
 			blackBg = true,
-			say = "……于是，作为对抗“塞壬”的兵器研究的一环，人类将塞壬与音乐的传承与舰装结合，开发出了全新的兵器",
+			say = "Indeed, the connection between music and sailing has remained strong in modernity, as evidenced by the naval bands of the Royal Navy, Iron Blood, and Eagle Union.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -149,10 +121,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
-			dir = 1,
 			blackBg = true,
-			say = "对抗来自深海的威胁的新兵器，其名为——",
+			say = "When these idols made their way from West to East, they took on a completely different form within the unique culture of the Sakura Empire - a combination of mystery and glamor that would take the world by storm.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -163,10 +135,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
-			dir = 1,
 			blackBg = true,
-			say = "“μ兵装”",
+			say = "And now, the fight against the Sirens continues to evolve, in the form of an experimental rigging that reflects the time-hallowed tethers between music and sailing...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -177,10 +149,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
-			dir = 1,
 			blackBg = true,
-			say = "现在，“μ兵装”的最终性能实验，即将展开",
+			say = "Azur Lane's new weapon to counter the encroaching Siren threat. Its name is...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -191,12 +163,40 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
+			dir = 1,
+			side = 2,
+			blackBg = true,
+			say = "The µ-rigging, also known as the \"Muse System.\"",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			dir = 1,
+			side = 2,
+			blackBg = true,
+			say = "The experimental Muse System is about to enter its final stage of testing...",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
 			nameColor = "#a9f548",
+			actorName = "？？？",
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			say = "……感觉开头这样就行了喵",
+			say = "...So, that's a pretty convincing backstory, nya. Right?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -207,14 +207,14 @@ return {
 			}
 		},
 		{
+			say = "Experimental Testing Facility (?)",
 			side = 2,
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "azumaster-ins",
-			say = "兵器实验设施（？）",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -244,7 +244,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "喵～喵～Mic test，Mic test",
+			say = "Nya nya, testing, one... two...!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -255,12 +255,12 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
-			say = "各位港区的朋友们，大家久等了喵！",
+			dir = 1,
+			say = "Thanks to everyone who could make it to the our experimental armament final trial concert, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -271,8 +271,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -286,7 +286,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "我是本次“μ兵装性能测试模拟战及偶像Live演唱会”的承办方兼主持人{namecode:98}喵--！",
+			say = "Here to guide you through this final data-collection live concert will be me, your master of ceremonies, Akashi nya! Thank you, thank you, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -297,12 +297,12 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
-			say = "“μ兵装”到底是什么？{namecode:98}先再给你解释一次喵！",
+			dir = 1,
+			say = "First, some of you might be wondering what the Muse System is, nya! Akashi will kindly explain the details, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -313,8 +313,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -328,7 +328,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "其实就是上层部提供设计思想，科学部实际开发的新型舰装喵！",
+			say = "In short, the Muse System began as a proposal from the higher-ups to incorporate the power of music into our armaments, nya.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -344,7 +344,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "虽然不知道为什么是“音乐”要素，但是实际开发出来了发现意外的可行喵！所以就这样开始试验了喵！",
+			say = "I'm not sure why music was chosen as the theme to develop equipment around, but today's trial concert is aimed at gauging its performance, nya.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -360,7 +360,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "……于是为什么要搞live喵？？",
+			say = "What's the point of a concert, you say? Well, how should I put it, nya...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -371,12 +371,12 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
-			say = "因为是音乐喵！女孩子喵！所以就搞live了喵！指挥官也同意了喵！",
+			dir = 1,
+			say = "You have music, nya! You have a bunch of cute girls, nya! There's only one logical thing to do, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -387,8 +387,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -402,7 +402,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "更何况大家都非常热心准备了，导致除了“μ兵装”以外的偶像也多了一大堆喵！但是，没事喵！",
+			say = "And what you'll be seeing today are the results of everyone's enthusiasm, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -418,7 +418,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "“一边打仗一边唱歌的动画也是有的所以没事”你看{namecode:37}也说了喵！",
+			say = "Also, Yuubari said that she's \"seen this concept plenty of times in anime so it probably works,\" nya.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -429,12 +429,12 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
-			say = "绝对没有打算“趁机大捞一笔”的喵！真的喵！",
+			dir = 1,
+			say = "You might think that this was simply an idea to capitalize on a popular, successful genre, but you'd be wrong, nya! I'm not lying, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -445,8 +445,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -455,15 +455,15 @@ return {
 			}
 		},
 		{
-			side = 2,
-			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 107060,
+			side = 2,
+			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
-			say = "于是，这回的任务是装备了新兵器的“Polaris”和各个阵营一边进行实战演习",
+			dir = 1,
+			say = "So, in other words, \"Polaris\" is a randomly selected group of girls who are equipped with the Muse System, and you'd like them to conduct test battles against the rest of the fleet?",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -493,7 +493,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "然后一边来Live Battle吧！",
+			say = "I'm finally going to have some competition! I'm getting all fired up!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -509,7 +509,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "Live Battle是什么我不大清楚，不过看起来除了“Polaris”之外也有很多孩子都穿了偶像服装呢…",
+			say = "I'm not sure how you go about mixing music and fighting... but it seems like idol culture is already quite popular around here.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -525,7 +525,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "对呢，大家一听是偶像活动，有live，就都鼓起干劲了～",
+			say = "That's right~ You could feel everyone's excitement when we announced that there would be an idol concert event...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -541,7 +541,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "哈……到底要变成什么样呢……",
+			say = "Good grief... What's going to happen here?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -552,15 +552,15 @@ return {
 			}
 		},
 		{
+			actor = 102240,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 102240,
 			nameColor = "#a9f548",
-			say = "好！“μ兵装实验组合・Polaris”——我们也要加油啊！",
+			dir = 1,
+			say = "All right! Experimental Muse System testing unit, \"Polaris,\" let's make sure to do our best!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -585,8 +585,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -600,7 +600,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "兵器实验进程启动。开始进行μ兵装性能测试",
+			say = "Activating experimental armament testing protocol. Running directives to test the combat performance of Muse System.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -614,10 +614,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "哈……早点结束就好…",
+			say = "*sigh*... I hope this doesn't take long...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -633,7 +633,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "呵呵呵……过一会就能让指挥官见到{namecode:91}新的形象了…",
+			say = "(So this is the final trial run... I wonder if all the effort that's been put into this project will prove worthwhile...)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -647,10 +647,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "这个组合一开始就前途多舛呢。大家练习的时候好不容易能和谐一点的",
+			say = "This unit did not look very promising at first. It took a lot of practice to even muster a semblance of team unity.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -666,7 +666,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "毕、毕竟大家都是第一次live啦……加斯科涅，作战开始的号子就拜托了！",
+			say = "W-well... None of us have done something like this before... Anyway, Gascogne, we'll follow your lead!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -682,7 +682,7 @@ return {
 			bgName = "star_level_bg_121",
 			side = 2,
 			dir = 1,
-			say = "指令确认。——作战开始",
+			say = "Acknowledged. Operation, begin.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

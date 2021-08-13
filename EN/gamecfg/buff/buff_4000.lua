@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.1,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.1
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.122,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.122
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.144,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.144
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.166,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.166
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.188,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.188
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.21,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.21
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.232,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.232
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.254,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.254
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.276,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.276
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.3,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.3
 				}
 			}
 		}
 	},
+	time = 8,
 	name = "防御姿态",
 	init_effect = "jinengchufablue",
-	id = 4000,
-	time = 8,
+	color = "blue",
 	picture = "",
 	desc = "受到伤害降低",
 	stack = 1,
-	color = "blue",
+	id = 4000,
 	icon = 4000,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.1,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.1
 			}
 		}
 	}

@@ -1,13 +1,14 @@
 ys = ys or {}
-slot1 = class("BattleBuffHP", ys.Battle.BattleBuffEffect)
-ys.Battle.BattleBuffHP = slot1
+slot0 = ys
+slot1 = class("BattleBuffHP", slot0.Battle.BattleBuffEffect)
+slot0.Battle.BattleBuffHP = slot1
 slot1.__name = "BattleBuffHP"
 
-slot1.Ctor = function (slot0, slot1)
-	slot0.super.Ctor(slot0, slot1)
+function slot1.Ctor(slot0, slot1)
+	uv0.super.Ctor(slot0, slot1)
 end
 
-slot1.SetArgs = function (slot0, slot1, slot2)
+function slot1.SetArgs(slot0, slot1, slot2)
 	slot0._number = slot0._tempData.arg_list.number or 0
 	slot0._numberBase = slot0._number
 	slot0._currentHPRatio = 0
@@ -34,17 +35,25 @@ slot1.SetArgs = function (slot0, slot1, slot2)
 	end
 end
 
-slot1.onBulletHit = function (slot0, slot1, slot2, slot3)
-	slot4 = slot3.target
+function slot1.onBulletHit(slot0, slot1, slot2, slot3)
+	if not slot0:equipIndexRequire(slot3.equipIndex) then
+		return
+	end
+
+	slot5 = slot3.target
 
 	if not slot0._weaponType then
-		slot4:UpdateHP(slot0._number, {
+		if slot0._number > 0 then
+			slot6 = math.floor(slot6 * slot1:GetAttrByName("healingRate"))
+		end
+
+		slot5:UpdateHP(slot6, {
 			isMiss = false,
 			isCri = false,
-			isHeal = slot0._number > 0
+			isHeal = slot7
 		})
 	elseif slot3.weaponType == slot0._weaponType then
-		slot1:UpdateHP(math.floor(slot3.damage * slot0._damageConvert), {
+		slot1:UpdateHP(math.floor(slot3.damage * slot0._damageConvert * slot4), {
 			isMiss = false,
 			isCri = false,
 			isHeal = true
@@ -52,16 +61,18 @@ slot1.onBulletHit = function (slot0, slot1, slot2, slot3)
 	end
 end
 
-slot1.onTrigger = function (slot0, slot1, slot2)
+function slot1.onTrigger(slot0, slot1, slot2)
+	if slot0:CalcNumber(slot1) > 0 then
+		slot3 = math.floor(slot3 * slot1:GetAttrByName("healingRate"))
+	end
+
 	slot1:UpdateHP(slot3, {
 		isMiss = false,
 		isCri = false,
-		isHeal = slot0:CalcNumber(slot1) > 0
+		isHeal = slot4
 	})
 end
 
-slot1.CalcNumber = function (slot0, slot1)
+function slot1.CalcNumber(slot0, slot1)
 	return math.floor((slot1:GetHP() * slot0._currentHPRatio + slot0._maxHPNumber + slot0._number + slot0._castMaxHPNumber) * (slot0._caster:GetAttrByName("healingEnhancement") + 1))
 end
-
-return

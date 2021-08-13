@@ -1,20 +1,20 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_120",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
+			say = "Let's kick off the first day of Passion Fes, nya!",
 			bgm = "azumaster-ins",
-			actor = 312010,
-			nameColor = "#a9f548",
-			say = "终于，激动人心的首日比赛要开始了喵！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -25,8 +25,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -40,7 +40,7 @@ return {
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
-			say = "说起来，实战测试好像是“和各个阵营报名参加的舰船交战，测试舰装性能”的内容喵",
+			say = "Um, while the main goal of this event is to benchmark the performance of the Muse System compared to the other factions...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -51,12 +51,12 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
-			say = "除了μ兵装的通常战斗性能之外，还有2个实验的新要素喵！",
+			dir = 1,
+			say = "There are two other data points that we are interested in collecting, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -67,8 +67,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -82,7 +82,7 @@ return {
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
-			say = "第一个，在战斗中每次击破敌舰队，舰装就会更加活性化，希望能够测试这个活性化的上限喵！",
+			say = "First, the equipment amplifies in power depending on the number of enemies defeated during a sortie. Hopefully we'll see how far we are able to push this functionality, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -98,7 +98,7 @@ return {
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
-			say = "名字就叫 COMBO系统 好了喵！",
+			say = "I've dubbed this the \"Combo System,\" nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -114,7 +114,7 @@ return {
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
-			say = "也就是说连续胜利次数越多COMBO就越多了喵！",
+			say = "In other words, the more victories you rack up in a row, the higher combo you'll be able to achieve, nya.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -128,10 +128,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "反过来说，中间只要失败一次COMBO就归0了吧！",
+			say = "Conversely, if we're defeated even once, our combo count will reset, right?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -142,12 +142,12 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
-			say = "就是这样喵！还有一个就是“边唱歌边战斗”喵！",
+			dir = 1,
+			say = "That's exactly right, nya! The next thing is fighting through song, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -158,8 +158,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -173,7 +173,7 @@ return {
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
-			say = "μ兵装有一个特性，就是主唱角色会给整个海域赋予一定影响喵！",
+			say = "The Muse System is equipped with a special module that uses a lead's vocal feedback to affect a broad area, nya!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -187,10 +187,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 403070,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "主场角色？",
+			say = "A what? Lead's vocals?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -206,7 +206,7 @@ return {
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
-			say = "刚才说过了喵。一边唱歌一边战斗喵！所以才叫主唱喵",
+			say = "I was just talking about it, nya. You'll be singing while you fight. That's why it's the lead role, nya.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -220,10 +220,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 307100,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "对，其实我本想说所有的海域都是我来主唱的，不过没办法了呢",
+			say = "Indeed. Although it is my wish that the spotlight shines only upon me, no matter where the stage is, there are some things that I cannot control.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -239,7 +239,7 @@ return {
 			bgName = "star_level_bg_120",
 			side = 2,
 			dir = 1,
-			say = "这也是为了我们碧蓝航线。在整个实验结束前我忍一下吧",
+			say = "Since this is for also for the sake of our alliance, I'll wait until the end of this experiment.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -250,12 +250,12 @@ return {
 			}
 		},
 		{
-			side = 2,
-			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 403070,
+			side = 2,
+			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
-			say = "哈？你想唱自己来不就好了",
+			dir = 1,
+			say = "Huh? If you wanted the role so badly, why not just go for it?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -266,8 +266,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -279,10 +279,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 202250,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "这样就没法测试舰装性能了吧",
+			say = "That would not be productive for testing the Muse System's functionalities.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -296,10 +296,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 905030,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "这也是对主人展示的表演。我理解",
+			say = "Analysis: This event is also an opportunity to perform in front of Master.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -313,10 +313,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 102240,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "总、总之！每个海域都选一个主唱出来就是了吧！",
+			say = "In any case... Let's resolve this by selecting a different lead for different areas!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -327,8 +327,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -340,10 +340,42 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_120",
+			actor = 102240,
 			dir = 1,
+			nameColor = "#a9f548",
+			say = "Who's up first?",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actorNAME = "Everyone",
+			nameColor = "#a9f548",
+			bgName = "star_level_bg_120",
+			side = 2,
+			dir = 1,
+			say = "...",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
 			actor = 102240,
 			nameColor = "#a9f548",
-			say = "有人愿意来吗！",
+			bgName = "star_level_bg_120",
+			side = 2,
+			dir = 1,
+			say = "Fine, fine! In that case, I'll volunteer for it! Akashi, is that fine with you?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -354,44 +386,12 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			actorNAME = "大家",
-			bgName = "star_level_bg_120",
-			side = 2,
-			dir = 1,
-			say = "…………",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			actor = 102240,
-			nameColor = "#a9f548",
-			bgName = "star_level_bg_120",
-			side = 2,
-			dir = 1,
-			say = "好吧，那就我第一个来！{namecode:98}，没问题吧！",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			side = 2,
-			bgName = "star_level_bg_120",
-			dir = 1,
 			actor = 312010,
+			side = 2,
+			bgName = "star_level_bg_120",
 			nameColor = "#a9f548",
-			say = "谁都行喵！那就快开始兵装测试吧喵！",
+			dir = 1,
+			say = "Anyone will do, nya! Anyway, let's begin testing the rigging's performance right meow!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -402,8 +402,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

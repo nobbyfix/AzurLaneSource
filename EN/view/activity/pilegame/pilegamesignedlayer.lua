@@ -1,16 +1,16 @@
 slot0 = class("PileGameSignedLayer", import("...base.BaseUI"))
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "PileSignedUI"
 end
 
-slot0.SetData = function (slot0, slot1)
+function slot0.SetData(slot0, slot1)
 	slot0.data = slot1
 	slot0.ultimate = slot1.ultimate
 	slot0.usedtime = slot1.usedtime
 end
 
-slot0.init = function (slot0)
+function slot0.init(slot0)
 	slot0.icons = {
 		slot0:findTF("bg/icon/npc1"),
 		slot0:findTF("bg/icon/npc2"),
@@ -28,9 +28,9 @@ slot0.init = function (slot0)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf)
 end
 
-slot0.didEnter = function (slot0)
+function slot0.didEnter(slot0)
 	onButton(slot0, slot0._tf, function ()
-		slot0:emit(slot1.ON_CLOSE)
+		uv0:emit(uv1.ON_CLOSE)
 	end, SFX_PANEL)
 	onButton(slot0, slot0.helpBtn, function ()
 		pg.MsgboxMgr.GetInstance():ShowMsgBox({
@@ -39,37 +39,39 @@ slot0.didEnter = function (slot0)
 		})
 	end, SFX_PANEL)
 	onButton(slot0, slot0.getBtn, function ()
-		if slot0.usedtime < slot0.data:getConfig("reward_need") then
+		if uv0.usedtime < uv0.data:getConfig("reward_need") then
 			return
 		end
 
-		slot0:emit(PileGameSignedMediator.ON_GET_AWARD)
+		uv0:emit(PileGameSignedMediator.ON_GET_AWARD)
 	end, SFX_PANEL)
 	slot0:UpdateIconDesc()
 	slot0:UpdateSigned()
 end
 
-slot0.UpdateIconDesc = function (slot0)
+function slot0.UpdateIconDesc(slot0)
 	for slot4, slot5 in ipairs(slot0.icons) do
 		onButton(slot0, slot5, function ()
 			pg.MsgboxMgr.GetInstance():ShowMsgBox({
-				content = i18n("special_animal" .. pg.MsgboxMgr.GetInstance().ShowMsgBox)
+				content = i18n("special_animal" .. uv0)
 			})
 		end, SFX_PANEL)
 	end
 end
 
-slot0.UpdateSigned = function (slot0)
-	setActive(slot0.getBtn, slot0.ultimate == 0)
-	setActive(slot0.gotBtn, not (slot0.ultimate == 0))
-	setGray(slot0.getBtn, slot0.ultimate == 0 and slot0.usedtime < slot0.data:getConfig("reward_need"), true)
+function slot0.UpdateSigned(slot0)
+	slot3 = slot0.ultimate == 0
+
+	setActive(slot0.getBtn, slot3)
+	setActive(slot0.gotBtn, not slot3)
+	setGray(slot0.getBtn, slot3 and slot0.usedtime < slot0.data:getConfig("reward_need"), true)
 
 	for slot7, slot8 in ipairs(slot0.icons) do
-		slot8:GetComponent(typeof(Image)).color = (slot7 <= slot2 and Color.New(1, 1, 1, 1)) or Color.New(1, 1, 1, 0.1)
+		slot8:GetComponent(typeof(Image)).color = slot7 <= slot2 and Color.New(1, 1, 1, 1) or Color.New(1, 1, 1, 0.1)
 	end
 end
 
-slot0.willExit = function (slot0)
+function slot0.willExit(slot0)
 	slot0.icons = nil
 
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf, slot0.parent)

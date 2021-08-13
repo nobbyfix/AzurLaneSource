@@ -6,9 +6,9 @@ return {
 				return getProxy(TaskProxy):getTaskById(10302) and slot0:isFinish() and not slot0:isReceive() and getProxy(FleetProxy):getFleetById(11):isEmpty()
 			end,
 			args = function ()
-				return (_.any(getProxy(BayProxy):getShips(), function (slot0)
+				return _.any(getProxy(BayProxy):getShips(), function (slot0)
 					return slot0 and slot0.configId == 308031
-				end) and {}) or {
+				end) and {} or {
 					1
 				}
 			end
@@ -19,8 +19,10 @@ return {
 				slot2 = false
 
 				if getProxy(ActivityProxy):getActivityByType(ActivityConst.ACTIVITY_TYPE_GUIDE_TASKS) and not slot0:isEnd() then
-					return slot1 and getProxy(ChapterProxy):getChapterById(slot0:getConfig("config_data")[1]) and slot4:isClear()
+					slot2 = getProxy(ChapterProxy):getChapterById(slot0:getConfig("config_data")[1]) and slot4:isClear()
 				end
+
+				return slot1 and slot2
 			end,
 			args = function (slot0)
 				return {}
@@ -29,7 +31,25 @@ return {
 		{
 			id = "NG005",
 			condition = function ()
-				return getProxy(PlayerProxy):getData().level >= 40
+				return pg.SystemOpenMgr.GetInstance():isOpenSystem(getProxy(PlayerProxy):getData().level, "CommandRoomMediator")
+			end,
+			args = function (slot0)
+				return {}
+			end
+		},
+		{
+			id = "NG0022",
+			condition = function ()
+				return pg.SystemOpenMgr.GetInstance():isOpenSystem(getProxy(PlayerProxy):getData().level, "EquipmentTransformTreeMediator")
+			end,
+			args = function (slot0)
+				return {}
+			end
+		},
+		{
+			id = "NG0023",
+			condition = function ()
+				return pg.NewStoryMgr.GetInstance():IsPlayed("WorldG192")
 			end,
 			args = function (slot0)
 				return {}
@@ -51,11 +71,15 @@ return {
 					})
 				end
 
-				if slot0.contextData.map:isActivity() then
+				if slot0.contextData.map and slot0.contextData.map:isActivity() then
 					slot0:emit(LevelMediator2.ON_SWITCH_NORMAL_MAP)
 				end
 
-				return {}
+				return slot0.contextData.entranceStatus and {
+					2
+				} or {
+					1
+				}
 			end
 		},
 		{
@@ -68,11 +92,11 @@ return {
 					slot0:switchToMap()
 				end
 
-				return (_.any(getProxy(BayProxy):getShips(), function (slot0)
+				return _.any(getProxy(BayProxy):getShips(), function (slot0)
 					return slot0 and slot0.configId == 308031
 				end) and {
 					2
-				}) or {
+				} or {
 					2,
 					1
 				}
@@ -95,6 +119,17 @@ return {
 			id = "NG0018",
 			condition = function ()
 				return true
+			end,
+			args = function ()
+				return {}
+			end
+		}
+	},
+	DockyardScene = {
+		{
+			id = "NG0019",
+			condition = function (slot0)
+				return slot0.contextData.mode == DockyardScene.MODE_DESTROY
 			end,
 			args = function ()
 				return {}

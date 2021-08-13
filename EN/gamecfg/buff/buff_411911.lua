@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "驱逐-指挥-机动I具体效果",
 	init_effect = "",
-	id = 411911,
+	name = "驱逐-指挥-机动I具体效果",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "驱逐-指挥-机动I",
 	stack = 1,
-	color = "yellow",
+	id = 411911,
 	icon = 411911,
 	last_effect = "",
 	effect_list = {

@@ -2,17 +2,17 @@ pg = pg or {}
 pg.activity_event_worldboss = {
 	{
 		group_num = 1,
-		ticket = 0,
+		damage_resource = 2001,
 		time = "stop",
 		stage_hp = "",
-		submarine_num = 1,
-		normal_expedition_drop_num = "",
-		normal_expedition = "",
-		damage_resource = 2001,
 		id = 1,
 		ex_expedition = 0,
 		expedition_buff = "",
 		expedition_both_buff = "",
+		normal_expedition = "",
+		normal_expedition_drop_num = "",
+		ticket = 0,
+		submarine_num = 1,
 		boss_id = {
 			2
 		},
@@ -137,10 +137,10 @@ pg.activity_event_worldboss = {
 	},
 	{
 		group_num = 1,
-		ticket = 2003,
-		time = "stop",
-		submarine_num = 1,
 		damage_resource = 2002,
+		time = "stop",
+		ticket = 2003,
+		submarine_num = 1,
 		id = 2,
 		ex_expedition = 1260004,
 		boss_id = {
@@ -221,10 +221,10 @@ pg.activity_event_worldboss = {
 	},
 	{
 		group_num = 1,
-		ticket = 2005,
-		time = "stop",
-		submarine_num = 1,
 		damage_resource = 2004,
+		time = "stop",
+		ticket = 2005,
+		submarine_num = 1,
 		id = 3,
 		ex_expedition = 1320401,
 		boss_id = {
@@ -303,11 +303,94 @@ pg.activity_event_worldboss = {
 		expedition_buff = {},
 		expedition_both_buff = {}
 	},
+	{
+		group_num = 1,
+		damage_resource = 2006,
+		time = "stop",
+		ticket = 2007,
+		submarine_num = 1,
+		id = 4,
+		ex_expedition = 1410004,
+		boss_id = {
+			5
+		},
+		reward_pt = {
+			9500,
+			9500,
+			9500,
+			9000,
+			8500,
+			8000,
+			7500,
+			7000,
+			6500,
+			6000,
+			5500,
+			5000,
+			4500,
+			4000,
+			3500,
+			3000,
+			2500,
+			2000,
+			1500,
+			1000,
+			500,
+			0,
+			0
+		},
+		formula = {
+			10,
+			5,
+			2,
+			60,
+			0.026,
+			0.68,
+			1.3,
+			11.7,
+			0.1
+		},
+		ex_expedition_enemy = {
+			{
+				1410004,
+				{
+					13800301
+				}
+			}
+		},
+		normal_expedition = {
+			1410001,
+			1410002,
+			1410003
+		},
+		normal_expedition_drop_num = {
+			{
+				{
+					1410001
+				},
+				15
+			},
+			{
+				{
+					1410002
+				},
+				15
+			},
+			{
+				{
+					1410003
+				},
+				15
+			}
+		},
+		stage_hp = {},
+		expedition_buff = {},
+		expedition_both_buff = {}
+	},
 	all = {
 		1,
 		2,
-		3
+		3,
+		4
 	}
 }
-
-return

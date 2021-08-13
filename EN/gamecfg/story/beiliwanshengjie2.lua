@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "BEILIWANSHENGJIE2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Trick or Treat, Halloween!\n\n<size=45>II 「A Curious Witch」</size>",
@@ -19,16 +19,16 @@ return {
 		{
 			expression = 2,
 			side = 2,
+			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
-			bgName = "bg_story_task",
 			bgm = "story-1",
 			actor = 101271,
 			nameColor = "#a9f548",
 			say = "If Miss ghost can’t find her way home, then that’s so pitiful...",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -69,15 +69,15 @@ return {
 			}
 		},
 		{
+			actor = 101271,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 101271,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Hmm…saying is one thing, but where exactly is Miss ghost hiding?",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -105,8 +105,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 101271,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Also ghosts can fly, right? But Rabbit Alien cannot fly...",
 			typewriter = {
@@ -135,8 +135,8 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 0,
+			actorName = "???",
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -147,8 +147,8 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 1,
+			actorName = "???",
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -159,8 +159,8 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 0,
+			actorName = "???",
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -174,8 +174,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 101271,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "(Warehouse? Ghosts? Could it be…)",
 			typewriter = {
@@ -191,8 +191,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 101271,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = " “Pretty”, “Lucky”, let’s head over there!",
 			typewriter = {
@@ -205,8 +205,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -233,14 +233,14 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			bgName = "star_level_bg_103",
 			actor = 101271,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "Although, “Three virtuous witches”...if you count Bailey as one of them, then who are the other two...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -283,8 +283,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -293,11 +293,11 @@ return {
 			}
 		},
 		{
+			actor = 101271,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101271,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Ah! I found a new Witch!",
 			typewriter = {
 				speed = 0.05,
@@ -309,8 +309,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -319,16 +319,16 @@ return {
 			}
 		},
 		{
-			stopbgm = true,
 			side = 0,
-			dir = 1,
-			blackBg = true,
+			stopbgm = true,
 			actorName = "???",
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "It’s tiresome to impersonate voices of multiple people...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -349,8 +349,8 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 0,
+			actorName = "???",
 			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,

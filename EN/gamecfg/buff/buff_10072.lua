@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.2,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.2
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.222,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.222
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.244,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.244
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.266,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.266
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.288,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.288
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.31,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.31
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.332,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.332
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.354,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.354
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.376,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.376
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.4,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.4
 				}
 			}
 		}
 	},
-	time = 10,
-	name = "雷达支援",
 	init_effect = "",
+	name = "雷达支援",
+	time = 10,
 	picture = "",
 	desc = "受到伤害提高",
 	stack = 1,
@@ -166,8 +166,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.2,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = 0.2
 			}
 		}
 	}

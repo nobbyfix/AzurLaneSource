@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TEATIME6",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -348,8 +348,8 @@ return {
 		{
 			say = "Back to the tea party——",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -558,11 +558,11 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "At the same time, {namecode:11}...",
+			blackBg = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -587,8 +587,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "[South Latitude 71° West Longitude 100°]",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -599,12 +599,12 @@ return {
 			}
 		},
 		{
+			actor = 301090,
 			nameColor = "#a9f548",
 			side = 2,
+			actorName = "{namecode:11}",
 			dir = 1,
 			blackBg = true,
-			actor = 301090,
-			actorName = "{namecode:11}",
 			say = "A continent covered in snow… The map is reliable as expected. This is the North Union! {namecode:12}, rest assured, I am here to get you!",
 			typewriter = {
 				speed = 0.05,

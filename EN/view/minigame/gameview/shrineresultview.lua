@@ -1,16 +1,16 @@
 slot0 = class("ShrineResultView", import("...base.BaseSubView"))
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "ShrineResult"
 end
 
-slot0.OnInit = function (slot0)
+function slot0.OnInit(slot0)
 	slot0:Show()
 	slot0:initData()
 	slot0:initUI()
 end
 
-slot0.OnDestroy = function (slot0)
+function slot0.OnDestroy(slot0)
 	if slot0.closeFunc then
 		slot0.closeFunc()
 
@@ -18,12 +18,12 @@ slot0.OnDestroy = function (slot0)
 	end
 end
 
-slot0.initData = function (slot0)
-	return
+function slot0.initData(slot0)
 end
 
-slot0.initUI = function (slot0)
+function slot0.initUI(slot0)
 	slot0.bg = slot0:findTF("BGImg")
+	slot0.dft = GetComponent(slot0._tf, "DftAniEvent")
 	slot0.text_buff = slot0:findTF("Main/MainBox/Text_Buff")
 	slot0.text_nobuff = slot0:findTF("Main/MainBox/Text_NoBuff")
 	slot0.buffImg_1 = slot0:findTF("Main/MainBox/Buff_1")
@@ -31,11 +31,17 @@ slot0.initUI = function (slot0)
 	slot0.buffImg_3 = slot0:findTF("Main/MainBox/Buff_3")
 
 	onButton(slot0, slot0.bg, function ()
-		slot0:Destroy()
+		uv0:Destroy()
 	end, SFX_CANCEL)
+	slot0.dft:SetStartEvent(function ()
+		setButtonEnabled(uv0.bg, false)
+	end)
+	slot0.dft:SetEndEvent(function ()
+		setButtonEnabled(uv0.bg, true)
+	end)
 end
 
-slot0.updateView = function (slot0, slot1, slot2)
+function slot0.updateView(slot0, slot1, slot2)
 	if slot2 then
 		setText(slot0.text_buff, slot1)
 	else
@@ -49,7 +55,7 @@ slot0.updateView = function (slot0, slot1, slot2)
 	setActive(slot0.buffImg_3, slot2 == 3)
 end
 
-slot0.setCloseFunc = function (slot0, slot1)
+function slot0.setCloseFunc(slot0, slot1)
 	slot0.closeFunc = slot1
 end
 

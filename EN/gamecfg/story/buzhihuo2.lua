@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BUZHIHUO2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Shiranui, the Do-It-All Shopkeeper\n\n<size=45>Chapter 2: Daily Life of a Shopkeeper</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "Port - Supply Shop",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "Port - Supply Shop",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "On my day off, I decided to hide in the bushes next to the shop to see just what was going on.",
 			typewriter = {
 				speed = 0.05,
@@ -72,12 +72,12 @@ return {
 			}
 		},
 		{
-			say = "Not yet, but I will deliver it to you myself once I get it.",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Not yet, but I will deliver it to you myself once I get it.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -156,9 +156,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "... ...",
 			typewriter = {
 				speed = 0.05,
@@ -166,15 +166,15 @@ return {
 			}
 		},
 		{
+			actor = 301240,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301240,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Shiranui, I see you're still holding down this shabby fort like always.",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -199,12 +199,12 @@ return {
 			}
 		},
 		{
-			say = "I see you're still running your mouth like always.",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "I see you're still running your mouth like always.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -299,9 +299,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "... ... ... ...",
 			typewriter = {
 				speed = 0.05,
@@ -309,15 +309,15 @@ return {
 			}
 		},
 		{
+			actor = 301180,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Phew, after that... let me check on the status of Kuroshio's ninja equipment and Oyashio's doll supplies.",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

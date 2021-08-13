@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHUNUO2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 201020,
 			side = 2,
-			dir = -1,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "*Yaaaawn*...",
 			shake = {
 				speed = 1,
@@ -93,8 +93,8 @@ return {
 			hideOther = true,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actor = 201030,
+			dir = 1,
 			say = "Thanks, Glorious! In any event, we must still do our jobs. And Acasta, since we don't have radar with us, you should move to the front so we can spot enemies quicker.",
 			typewriter = {
 				speed = 0.05,
@@ -121,14 +121,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201030,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "All right. Glorious is moving at 17 knots; wind force is around 2 or 3, moving southeast... We've got good visibility... And I think we're behind schedule, but we're making good progress...",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -190,8 +190,8 @@ return {
 			actor = 201020,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "Ardent & Acasta",
+			dir = -1,
 			say = "Aye-aye, ma'am!",
 			typewriter = {
 				speed = 0.05,

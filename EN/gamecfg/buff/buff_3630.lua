@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2,
-					attr = "oxyMax"
+					attr = "oxyMax",
+					number = 2
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 4,
-					attr = "oxyMax"
+					attr = "oxyMax",
+					number = 4
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 6,
-					attr = "oxyMax"
+					attr = "oxyMax",
+					number = 6
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 8,
-					attr = "oxyMax"
+					attr = "oxyMax",
+					number = 8
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 10,
-					attr = "oxyMax"
+					attr = "oxyMax",
+					number = 10
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 12,
-					attr = "oxyMax"
+					attr = "oxyMax",
+					number = 12
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 14,
-					attr = "oxyMax"
+					attr = "oxyMax",
+					number = 14
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 16,
-					attr = "oxyMax"
+					attr = "oxyMax",
+					number = 16
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 18,
-					attr = "oxyMax"
+					attr = "oxyMax",
+					number = 18
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 20,
-					attr = "oxyMax"
+					attr = "oxyMax",
+					number = 20
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "远洋",
 	init_effect = "jinengchufablue",
-	id = 3630,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 3630,
 	icon = 3630,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 2,
-				attr = "oxyMax"
+				attr = "oxyMax",
+				number = 2
 			}
 		}
 	}

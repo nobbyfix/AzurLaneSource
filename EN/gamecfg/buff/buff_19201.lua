@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1000
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2000
 				}
 			}
 		}
@@ -34,8 +34,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1110,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1110
 				}
 			},
 			{
@@ -45,8 +45,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2330,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2330
 				}
 			}
 		}
@@ -60,8 +60,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1220
 				}
 			},
 			{
@@ -71,8 +71,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2660,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2660
 				}
 			}
 		}
@@ -86,8 +86,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1330,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1330
 				}
 			},
 			{
@@ -97,8 +97,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2990,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2990
 				}
 			}
 		}
@@ -112,8 +112,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1440,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1440
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3320,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 3320
 				}
 			}
 		}
@@ -138,8 +138,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1550,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1550
 				}
 			},
 			{
@@ -149,8 +149,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3650,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 3650
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1660
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3980,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 3980
 				}
 			}
 		}
@@ -190,8 +190,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1770,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1770
 				}
 			},
 			{
@@ -201,8 +201,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4310,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 4310
 				}
 			}
 		}
@@ -216,8 +216,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1880,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1880
 				}
 			},
 			{
@@ -227,8 +227,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4640,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 4640
 				}
 			}
 		}
@@ -242,8 +242,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2000
 				}
 			},
 			{
@@ -253,15 +253,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 5000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 5000
 				}
 			}
 		}
 	},
+	time = 12,
 	name = "吾妻",
 	init_effect = "jinengchufablue",
-	time = 12,
 	picture = "",
 	desc = "机动、命中提高",
 	stack = 1,
@@ -283,8 +283,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 1000
 			}
 		},
 		{
@@ -294,8 +294,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 2000,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = 2000
 			}
 		}
 	}

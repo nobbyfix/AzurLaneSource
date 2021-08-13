@@ -1,81 +1,71 @@
 ys = ys or {}
-ys.Battle.RaidLeftState = class("RaidLeftState", ys.Battle.IUnitState)
-ys.Battle.RaidLeftState.__name = "RaidLeftState"
+slot0 = ys
+slot0.Battle.RaidLeftState = class("RaidLeftState", slot0.Battle.IUnitState)
+slot0.Battle.RaidLeftState.__name = "RaidLeftState"
+slot1 = slot0.Battle.RaidLeftState
 
-ys.Battle.RaidLeftState.Ctor = function (slot0)
-	slot0.super.Ctor()
+function slot1.Ctor(slot0)
+	uv0.super.Ctor()
 end
 
-ys.Battle.RaidLeftState.AddIdleState = function (slot0, slot1, slot2)
-	return
+function slot1.AddIdleState(slot0, slot1, slot2)
 end
 
-ys.Battle.RaidLeftState.AddMoveState = function (slot0, slot1, slot2)
-	return
+function slot1.AddMoveState(slot0, slot1, slot2)
 end
 
-ys.Battle.RaidLeftState.AddMoveLeftState = function (slot0, slot1, slot2)
-	return
+function slot1.AddMoveLeftState(slot0, slot1, slot2)
 end
 
-ys.Battle.RaidLeftState.AddAttackState = function (slot0, slot1, slot2)
-	return
+function slot1.AddAttackState(slot0, slot1, slot2)
 end
 
-ys.Battle.RaidLeftState.AddDeadState = function (slot0, slot1, slot2)
+function slot1.AddDeadState(slot0, slot1, slot2)
 	slot1:OnDeadState()
 end
 
-ys.Battle.RaidLeftState.AddSkillState = function (slot0, slot1, slot2)
-	return
+function slot1.AddSkillState(slot0, slot1, slot2)
 end
 
-ys.Battle.RaidLeftState.AddSpellState = function (slot0, slot1, slot2)
+function slot1.AddSpellState(slot0, slot1, slot2)
 	slot1:OnSpellState()
 end
 
-ys.Battle.RaidLeftState.AddVictoryState = function (slot0, slot1, slot2)
+function slot1.AddVictoryState(slot0, slot1, slot2)
 	slot1:OnVictoryState()
 end
 
-ys.Battle.RaidLeftState.AddVictorySwimState = function (slot0, slot1, slot2)
+function slot1.AddVictorySwimState(slot0, slot1, slot2)
 	slot1:OnVictorySwimState()
 end
 
-ys.Battle.RaidLeftState.AddStandState = function (slot0, slot1, slot2)
-	return
+function slot1.AddStandState(slot0, slot1, slot2)
 end
 
-ys.Battle.RaidLeftState.AddDiveState = function (slot0, slot1, slot2)
-	return
+function slot1.AddDiveState(slot0, slot1, slot2)
 end
 
-ys.Battle.RaidLeftState.AddDiveLeftState = function (slot0, slot1, slot2)
-	return
+function slot1.AddDiveLeftState(slot0, slot1, slot2)
 end
 
-ys.Battle.RaidLeftState.AddInterruptState = function (slot0, slot1, slot2)
+function slot1.AddInterruptState(slot0, slot1, slot2)
 	slot1:OnInterruptState()
 end
 
-ys.Battle.RaidLeftState.AddDivingState = function (slot0, slot1, slot2)
-	return
+function slot1.AddDivingState(slot0, slot1, slot2)
 end
 
-ys.Battle.RaidLeftState.OnTrigger = function (slot0, slot1)
+function slot1.OnTrigger(slot0, slot1)
 	slot1:GetTarget():SendAttackTrigger()
 end
 
-ys.Battle.RaidLeftState.OnStart = function (slot0, slot1)
-	return
+function slot1.OnStart(slot0, slot1)
 end
 
-ys.Battle.RaidLeftState.OnEnd = function (slot0, slot1)
+function slot1.OnEnd(slot0, slot1)
 	slot1:ChangeToMoveState()
 end
 
-ys.Battle.RaidLeftState.CacheWeapon = function (slot0)
+function slot1.CacheWeapon(slot0)
 	return false
 end
-
-return

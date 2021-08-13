@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "Z467",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"White Poem\n\n<size=45>VII Pure White</size>",
@@ -17,8 +17,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "\"That isn't true.\" Words rejecting my existence as a weapon. Words that rejected the gray I had become.",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -29,8 +29,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "\"Viersechs has her own thoughts and her desires, therefore she is human.\" I am not a pure being that lacks an ego. Therefore, I am not transparent.",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -41,20 +41,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "\"Viersechs should cherish herself more.\" Though my name is a borrowed one, \"I\" am still worth cherishing.",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
 			blackBg = true,
-			say = "Then... I must know...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -65,15 +53,27 @@ return {
 			}
 		},
 		{
+			say = "Then... I must know...",
+			blackBg = true,
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 401460,
 			side = 2,
 			bgName = "bg_story_task",
+			say = "Oh my beloved, what color am I?",
 			bgmDelay = 2,
 			bgm = "story-2",
-			actor = 401460,
-			say = "Oh my beloved, what color am I?",
 			flashout = {
-				dur = 1,
 				black = false,
+				dur = 1,
 				alpha = {
 					0,
 					1

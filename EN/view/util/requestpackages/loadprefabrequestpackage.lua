@@ -1,16 +1,14 @@
 slot0 = class("LoadPrefabRequestPackage", import(".RequestPackage"))
 
-slot0.__call = function (slot0)
+function slot0.__call(slot0)
 	if slot0.stopped then
 		return
 	end
 
 	ResourceMgr.Inst:getAssetAsync(slot0.path, slot0.name, UnityEngine.Events.UnityAction_UnityEngine_Object(function (slot0)
-		if not slot0.stopped then
-			slot1 = Object.Instantiate(slot0)
-
-			if slot0.onLoaded then
-				slot0.onLoaded(slot1)
+		if not uv0.stopped then
+			if uv0.onLoaded then
+				uv0.onLoaded(Object.Instantiate(slot0))
 			end
 		end
 	end), true, false)
@@ -18,7 +16,7 @@ slot0.__call = function (slot0)
 	return slot0
 end
 
-slot0.Ctor = function (slot0, slot1, slot2, slot3)
+function slot0.Ctor(slot0, slot1, slot2, slot3)
 	slot0.path = slot1
 	slot0.name = slot2
 	slot0.onLoaded = slot3

@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 100,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 100
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 100
 				}
 			}
 		}
@@ -34,8 +34,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 109,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 109
 				}
 			},
 			{
@@ -45,8 +45,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 109,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 109
 				}
 			}
 		}
@@ -60,8 +60,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 118,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 118
 				}
 			},
 			{
@@ -71,8 +71,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 118,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 118
 				}
 			}
 		}
@@ -86,8 +86,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 130,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 130
 				}
 			},
 			{
@@ -97,8 +97,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 130,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 130
 				}
 			}
 		}
@@ -112,8 +112,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 139,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 139
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 139,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 139
 				}
 			}
 		}
@@ -138,8 +138,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 148,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 148
 				}
 			},
 			{
@@ -149,8 +149,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 148,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 148
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 160,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 160
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 160,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 160
 				}
 			}
 		}
@@ -190,8 +190,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 172,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 172
 				}
 			},
 			{
@@ -201,8 +201,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 172,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 172
 				}
 			}
 		}
@@ -216,8 +216,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 184,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 184
 				}
 			},
 			{
@@ -227,8 +227,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 184,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 184
 				}
 			}
 		}
@@ -242,8 +242,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 200,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 200
 				}
 			},
 			{
@@ -253,15 +253,15 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 200,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 200
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "格罗斯特2",
 	init_effect = "",
-	time = 0,
 	picture = "",
 	desc = "炮击属性提升",
 	stack = 5,

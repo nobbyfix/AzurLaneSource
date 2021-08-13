@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "冷却时间缩短",
 	init_effect = "",
+	name = "冷却时间缩短",
+	time = 0,
 	picture = "",
 	desc = "装填提升",
 	stack = 1,
@@ -15,8 +15,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 30000,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 30000
 			}
 		},
 		{
@@ -25,8 +25,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 300,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 300
 			}
 		}
 	}

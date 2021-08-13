@@ -142,8 +142,8 @@ pg.name_code = {
 	},
 	{
 		id = 29,
-		name = "Kagetsu",
-		code = "Kagetsu"
+		name = "Hanazuki",
+		code = "Hanazuki"
 	},
 	{
 		id = 30,
@@ -482,8 +482,8 @@ pg.name_code = {
 	},
 	{
 		id = 97,
-		name = "Taiho",
-		code = "Taiho"
+		name = "Taihou",
+		code = "Taihou"
 	},
 	{
 		id = 98,
@@ -872,8 +872,8 @@ pg.name_code = {
 	},
 	{
 		id = 175,
-		name = "Suruga ",
-		code = "Suruga "
+		name = "Suruga",
+		code = "Suruga"
 	},
 	{
 		id = 176,
@@ -907,19 +907,182 @@ pg.name_code = {
 	},
 	{
 		id = 182,
-		name = "Shinano ",
-		code = "Shinano "
+		name = "Shinano",
+		code = "Shinano"
 	},
 	{
 		id = 183,
-		name = "大鲸",
-		code = "迖"
+		name = "Taigei",
+		code = "Taigei"
 	},
 	{
 		id = 184,
 		name = "Uranami",
 		code = "Uranami"
+	},
+	{
+		id = 185,
+		name = "Naganami",
+		code = "Naganami"
+	},
+	{
+		id = 186,
+		name = "Fuyutsuki",
+		code = "Fuyutsuki"
+	},
+	{
+		id = 187,
+		name = "Michitsuki",
+		code = "Michitsuki"
+	},
+	{
+		id = 188,
+		name = "Kashino",
+		code = "Kashino"
+	},
+	{
+		id = 189,
+		name = "Hatsuzuki",
+		code = "Hatsuzuki"
+	},
+	{
+		id = 190,
+		name = "Taihou μ ",
+		code = "Taihou μ "
+	},
+	{
+		id = 191,
+		name = "Hiryuu META ",
+		code = "Hiryuu META "
+	},
+	{
+		id = 192,
+		name = "Oite",
+		code = "Oite"
+	},
+	{
+		id = 193,
+		name = "Little Amagi ",
+		code = "Little Amagi "
+	},
+	{
+		id = 194,
+		name = "Ticonderoga ",
+		code = "Ticonderoga "
+	},
+	{
+		id = 195,
+		name = "San Francisco ",
+		code = "San Francisco "
+	},
+	{
+		id = 196,
+		name = "Archerfish ",
+		code = "Archerfish "
+	},
+	{
+		id = 197,
+		name = "Boise ",
+		code = "Boise "
+	},
+	{
+		id = 198,
+		name = "Morrison ",
+		code = "Morrison "
+	},
+	{
+		id = 199,
+		name = "New Jersey ",
+		code = "New Jersey "
+	},
+	{
+		id = 200,
+		name = "Ticonderoga ",
+		code = "Ticonderoga "
+	},
+	{
+		id = 201,
+		name = "iowa ",
+		code = "iowa "
+	},
+	{
+		id = 202,
+		name = "balao ",
+		code = "balao "
+	},
+	{
+		id = 203,
+		name = "Kazagumo ",
+		code = "Kazagumo "
+	},
+	[250] = {
+		id = 250,
+		name = "I-9",
+		code = "I-9"
+	},
+	[251] = {
+		id = 251,
+		name = "I-16",
+		code = "I-16"
+	},
+	[252] = {
+		id = 252,
+		name = "I-25",
+		code = "I-25"
+	},
+	[253] = {
+		id = 253,
+		name = "I-54",
+		code = "I-54"
+	},
+	[254] = {
+		id = 254,
+		name = "I-56",
+		code = "I-56"
+	},
+	[255] = {
+		id = 255,
+		name = "I-60",
+		code = "I-60"
+	},
+	[256] = {
+		id = 256,
+		name = "I-168",
+		code = "I-168"
+	},
+	[257] = {
+		id = 257,
+		name = "I-490",
+		code = "I-490"
+	},
+	[280] = {
+		id = 280,
+		name = "Type B1",
+		code = "Type B1"
+	},
+	[281] = {
+		id = 281,
+		name = "Kaidai Type ",
+		code = "Kaidai Type "
+	},
+	[282] = {
+		id = 282,
+		name = "Type A Mod. 2",
+		code = "Type A Mod. 2"
+	},
+	[283] = {
+		id = 283,
+		name = "Type B Mod. 2",
+		code = "Type B Mod. 2"
+	},
+	[284] = {
+		id = 284,
+		name = "Kaidai Type VIa",
+		code = "Kaidai Type VIa"
+	},
+	[285] = {
+		id = 285,
+		name = "I-Type",
+		code = "I-Type"
 	}
 }
-
-return

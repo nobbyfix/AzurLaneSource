@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 3000
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3220,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 3220
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3440,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 3440
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3660,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 3660
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3880,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 3880
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4100,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 4100
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4320,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 4320
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4540,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 4540
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4760,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 4760
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 5000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 5000
 				}
 			}
 		}
 	},
+	time = 8,
 	name = "属性变更",
 	init_effect = "jinengchufared",
-	time = 8,
 	picture = "",
 	desc = "装填提升",
 	stack = 1,
@@ -173,8 +173,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 3000,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 3000
 			}
 		}
 	}

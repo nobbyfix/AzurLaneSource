@@ -1,14 +1,14 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "DONGHUO01",
+	once = true,
+	fadeType = 1,
 	occlusion = 2,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>“...I thought... by defeating all of my enemies... I’d finally get some peace.”</size>",
@@ -45,21 +45,21 @@ return {
 			}
 		},
 		{
-			say = "Is this the area indicated by that mysterious signal... It appears that we were still too late.",
+			side = 0,
 			actorName = "Helena",
 			bgName = "bg_story_wing1",
-			side = 0,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			bgm = "story-6",
+			say = "Is this the area indicated by that mysterious signal... It appears that we were still too late.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			actorName = "North Carolina",
 			side = 0,
+			actorName = "North Carolina",
 			bgName = "bg_story_wing1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -70,8 +70,8 @@ return {
 			}
 		},
 		{
-			actorName = "Helena",
 			side = 0,
+			actorName = "Helena",
 			bgName = "bg_story_wing1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -82,8 +82,8 @@ return {
 			}
 		},
 		{
-			actorName = "Washington",
 			side = 0,
+			actorName = "Washington",
 			bgName = "bg_story_wing1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -94,8 +94,8 @@ return {
 			}
 		},
 		{
-			actorName = "North Carolina",
 			side = 0,
+			actorName = "North Carolina",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -106,8 +106,8 @@ return {
 			}
 		},
 		{
-			actorName = "Washington",
 			side = 0,
+			actorName = "Washington",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -118,8 +118,8 @@ return {
 			}
 		},
 		{
-			actorName = "Washington",
 			side = 0,
+			actorName = "Washington",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -130,8 +130,8 @@ return {
 			}
 		},
 		{
-			actorName = "Washington",
 			side = 0,
+			actorName = "Washington",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,

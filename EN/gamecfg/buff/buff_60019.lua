@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "测试-印第安纳波利斯-技能触发被动",
 	init_effect = "",
+	name = "测试-印第安纳波利斯-技能触发被动",
+	time = 0,
 	picture = "",
 	desc = "死亡原子弹",
 	stack = 1,
@@ -12,7 +12,7 @@ return {
 		{
 			type = "BattleBuffCastSkill",
 			trigger = {
-				"onDying"
+				"onBeforeFatalDamage"
 			},
 			arg_list = {
 				skill_id = 60011,
@@ -22,7 +22,7 @@ return {
 		{
 			type = "BattleBuffCancelBuff",
 			trigger = {
-				"onDying"
+				"onBeforeFatalDamage"
 			},
 			arg_list = {
 				count = 1

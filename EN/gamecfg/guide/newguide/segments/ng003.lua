@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "You can tap the Help button for info on Anti-Sub combat!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			}
 		},

@@ -15,9 +15,9 @@ return {
 			}
 		}
 	},
-	time = 60,
-	name = "测试目标选择-航母飞机后排优先",
 	init_effect = "",
+	name = "测试目标选择-航母飞机后排优先",
+	time = 60,
 	picture = "",
 	desc = "测试目标选择-航母飞机后排优先",
 	stack = 1,

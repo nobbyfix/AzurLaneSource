@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "Let's check out your <color=#ff7d36>storage</color>.",
 				mode = 2,
-				dir = -1,
 				posY = -102.56,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/bottomPanel/btm/buttons_container/equipButton",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -27,13 +27,13 @@ return {
 			style = {
 				text = "Let's see what <color=#ff7d36>designs</color> you currently have!",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/topItems/bottom_back/types/design",
+				pathIndex = -1,
 				triggerType = {
 					2
 				},
@@ -49,13 +49,13 @@ return {
 			style = {
 				text = "Tap here to start <color=#ff7d36>making gear</color>!",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 210.07
 			},
 			ui = {
-				pathIndex = -1,
 				path = "UICamera/Canvas/UIMain/StoreHouseUI(Clone)/EquipmentDesignUI(Clone)/equipment_scrollview/equipment_grid/0/info/make_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -70,13 +70,13 @@ return {
 			style = {
 				text = "I knew it'd be you! Tap here to confirm.",
 				mode = 2,
-				dir = -1,
 				posY = -2.69,
+				dir = -1,
 				posX = 202.1
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/msg_panel/bg/confirm_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "骏河不灭之盾",
 	init_effect = "",
-	id = 12820,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 12820,
 	icon = 12820,
 	last_effect = "",
 	effect_list = {
@@ -38,8 +38,8 @@ return {
 			},
 			arg_list = {
 				hpUpperBound = 0.2,
-				skill_id = 12822,
 				target = "TargetSelf",
+				skill_id = 12822,
 				quota = 1
 			}
 		}

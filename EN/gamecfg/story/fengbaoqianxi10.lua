@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FENGBAOQIANXI10",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 205060,
 			nameColor = "#a9f548",
 			side = 1,
+			bgm = "level",
 			dir = -1,
 			say = "Now THAT was a battle! We admit defeat.",
-			bgm = "level",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -173,15 +173,15 @@ return {
 			}
 		},
 		{
+			actor = 205060,
 			stopbgm = true,
 			side = 2,
-			dir = -1,
-			actor = 205060,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "... I know this ill-boding feeling all too well...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 500
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 620,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 620
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 740,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 740
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 900,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 900
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1050,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1050
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1200,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1200
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1400,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1400
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1580,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1580
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1760,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1760
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2000
 				}
 			}
 		}
 	},
+	time = 20,
 	name = "侦查支援",
 	init_effect = "jinengchufared",
-	id = 11571,
-	time = 20,
+	color = "yellow",
 	picture = "",
 	desc = "提高伤害",
 	stack = 1,
-	color = "yellow",
+	id = 11571,
 	icon = 11570,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = 500
 			}
 		}
 	}

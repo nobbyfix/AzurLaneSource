@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG21",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
-			bgm = "azumaster-ins",
 			actor = 502023,
 			nameColor = "#a9f548",
-			say = "“东煌姐妹”再登场！经过学习大家的Live，我们已经不是当初登场时的新人了！",
+			dir = 1,
+			say = "The Dragon Sisters are back! After studying everyone's battles, we're no longer amateurs to the scene!",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,8 +24,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -37,9 +37,9 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 502033,
-			say = "在后台吃了很多大家送的点心，平海现在体力充沛！一定比之前发挥的更好！",
+			dir = 1,
+			say = "I'm supercharged with the food that our fans gave us! I feel like I can do anything!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -54,7 +54,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "宁海，平海，加油啊！",
+			say = "Do your best, Ning Hai, Ping Hai~!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -69,7 +69,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "不管赢了还是输了记得都签几份名啊！",
+			say = "Win or lose, remember to give me your autographs~!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -82,13 +82,13 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			actor = 101176,
 			nameColor = "#a9f548",
-			say = "Polaris…虽然很厉害……",
+			dir = 1,
+			say = "Polaris... is crazy strong, but...",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -117,7 +117,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "但是{namecode:6}和大家也变得更厉害了得说",
+			say = "We've also become stronger.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -130,10 +130,10 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			actor = 201216,
 			nameColor = "#a9f548",
-			say = "没错！大家一起努力的话一定不会输给Polaris的！",
+			dir = 1,
+			say = "Yeah! If we all stick together, there's no way Polaris can beat all of us!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -144,8 +144,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -158,7 +158,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "小加加和35酱也教了我们很多，压轴的表演一定不会让大家失望！",
+			say = "Saratoga and Funf also took the time to offer me their guidance. I won't let their efforts go to waste during the finale!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -173,7 +173,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "说的好！真正的偶像到Live结束前都是不会懈怠的哦！",
+			say = "You go, girl! Professionals never stop giving it their all 'til the curtains fall!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -184,8 +184,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -194,14 +194,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 403040,
+			side = 2,
 			nameColor = "#a9f548",
-			say = "要是欺负我家斯佩我是不会饶过你们的！",
+			dir = 1,
+			say = "I won't permit anyone to bully my precious Spee!!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -226,8 +226,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -240,7 +240,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "姐姐……不过是个Live啦……",
+			say = "Deutschland... it's just a concert...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -253,10 +253,10 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
 			actor = 301014,
 			nameColor = "#a9f548",
-			say = "德意志的心情我能理解！我也希望我家特型驱逐舰能在舞台上最闪耀呢！",
+			dir = 1,
+			say = "I can relate with her though. I want all the other Special-Type destroyers to win as well!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -267,8 +267,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -281,7 +281,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "{namecode:2}……自己来不就好了……？",
+			say = "Fubuki... you're the only one participating though...?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -292,14 +292,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 403070,
+			side = 2,
 			nameColor = "#a9f548",
-			say = "哼！一起来也无妨！",
+			dir = 1,
+			say = "Hmph! We're not scared of you at all just because you have the numbers advantage!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -328,7 +328,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "胆敢阻挡{namecode:91}在舞台上闪耀的人……呼呼呼",
+			say = "All those who would dare interrupt my performance... Ahahahaha~!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -341,10 +341,10 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
 			actor = 102240,
 			nameColor = "#a9f548",
-			say = "这回是真正的最后一战了！加斯科涅，准备好了吗？",
+			dir = 1,
+			say = "Wow, this is really shaping up to be a proper final battle! Gascogne, are you ready to go?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -355,8 +355,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -368,9 +368,9 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
-			say = "指令确认！加斯科涅，唱响最美的歌声——",
+			dir = 1,
+			say = "Directives confirmed! Optimizing singing output...!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

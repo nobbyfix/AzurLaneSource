@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "Let's add your new ship to your <color=#ff7d36>formation</color>.",
 				mode = 2,
-				dir = 1,
 				posY = 104.87,
+				dir = 1,
 				posX = 4.77
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/formationButton",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,8 +28,8 @@ return {
 			style = {
 				text = "Commander, do you remember what to do?",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			}
 		},
@@ -38,13 +38,13 @@ return {
 			style = {
 				text = "Tap the empty slot in your team to <color=#ff7d36>add</color> another ship.",
 				mode = 2,
-				dir = 1,
 				posY = 240,
+				dir = 1,
 				posX = -88.52
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/UICamera/Canvas/UIMain/FormationUI(Clone)/GridFrame/vanguard_3/tip",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -59,16 +59,16 @@ return {
 			style = {
 				text = "Select a ship to deploy.",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = "#",
 				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships",
+				pathIndex = "#",
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				},
@@ -86,13 +86,13 @@ return {
 			style = {
 				text = "Next, tap <color=#ff7d36>confirm</color>.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 239.42
 			},
 			ui = {
+				path = "OverlayCamera/Overlay/UIMain/blur_panel/select_panel/confirm_button",
 				pathIndex = -1,
-				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/select_panel/confirm_button",
 				triggerType = {
 					1
 				},
@@ -108,8 +108,8 @@ return {
 			style = {
 				text = "The vanguard is full! Our power shouldn't be underestimated!",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			}
 		},
@@ -118,13 +118,13 @@ return {
 			style = {
 				text = "Let's head back to the main screen!",
 				mode = 2,
-				dir = -1,
 				posY = 226.21,
+				dir = -1,
 				posX = -130.49
 			},
 			ui = {
-				pathIndex = -1,
 				path = "UICamera/Canvas/UIMain/FormationUI(Clone)/blur_panel/top/back_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

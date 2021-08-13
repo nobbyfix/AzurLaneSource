@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "",
 	init_effect = "",
-	id = 12630,
+	name = "",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12630,
 	icon = 12630,
 	last_effect = "",
 	effect_list = {
@@ -26,8 +26,8 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				minWeaponNumber = 1,
 				skill_id = 12630,
+				minWeaponNumber = 1,
 				check_weapon = true,
 				label = {
 					"CA",
@@ -42,8 +42,8 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				minWeaponNumber = 1,
 				skill_id = 12630,
+				minWeaponNumber = 1,
 				check_weapon = true,
 				label = {
 					"CA",
@@ -58,8 +58,8 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				minWeaponNumber = 1,
 				skill_id = 12631,
+				minWeaponNumber = 1,
 				check_weapon = true,
 				label = {
 					"CA",

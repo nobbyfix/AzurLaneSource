@@ -1,18 +1,19 @@
 ys.Battle.BattleConst = ys.Battle.BattleConst or {}
-ys.Battle.BattleConst.BATTLE_GLOBAL_BUFF = "battle_buff"
-ys.Battle.BattleConst.NORMALIZE_FLEET_SPEED = Vector3.right
-ys.Battle.BattleConst.SUMMONING_SICKNESS_DURATION = 1.5
-ys.Battle.BattleConst.NON_QUEUE_WEAPON = 0
-ys.Battle.BattleConst.SMOKING_HP_RATE = 0.3
-ys.Battle.BattleConst.NORMAL_TEXT_SCALE = 1
-ys.Battle.BattleConst.SMALL_TEXT_SCALE = 0.8
-ys.Battle.BattleConst.TEXT_MOVE_TIME = 0.4
-ys.Battle.BattleConst.TEXT_FADEOUT_TIME = 0.6
-ys.Battle.BattleConst.TEXT_SCALE_TIME = 0.4
-ys.Battle.BattleConst.CRI_TEXT_OFFSET = 1
-ys.Battle.BattleConst.MAX_EQUIPMENT_COUNT = 6
-ys.Battle.BattleConst.DEAD_FLAG = "flagDead"
-ys.Battle.BattleConst.WaveTriggerType = {
+slot0 = ys.Battle.BattleConst
+slot0.BATTLE_GLOBAL_BUFF = "battle_buff"
+slot0.NORMALIZE_FLEET_SPEED = Vector3.right
+slot0.SUMMONING_SICKNESS_DURATION = 1.5
+slot0.NON_QUEUE_WEAPON = 0
+slot0.SMOKING_HP_RATE = 0.3
+slot0.NORMAL_TEXT_SCALE = 1
+slot0.SMALL_TEXT_SCALE = 0.8
+slot0.TEXT_MOVE_TIME = 0.4
+slot0.TEXT_FADEOUT_TIME = 0.6
+slot0.TEXT_SCALE_TIME = 0.4
+slot0.CRI_TEXT_OFFSET = 1
+slot0.MAX_EQUIPMENT_COUNT = 6
+slot0.DEAD_FLAG = "flagDead"
+slot0.WaveTriggerType = {
 	NORMAL = 0,
 	TIMER = 1,
 	RANGE = 2,
@@ -25,7 +26,7 @@ ys.Battle.BattleConst.WaveTriggerType = {
 	JAMMING = 9,
 	ENVIRONMENT = 10
 }
-ys.Battle.BattleConst.UnitType = {
+slot0.UnitType = {
 	PLAYER_UNIT = 1,
 	ENEMY_UNIT = 2,
 	BOSS_UNIT = 3,
@@ -35,9 +36,10 @@ ys.Battle.BattleConst.UnitType = {
 	MAIN_UNIT = 7,
 	FUNNEL_UNIT = 8,
 	UAV_UNIT = 9,
-	SUB_UNIT = 10
+	SUB_UNIT = 10,
+	CONST_UNIT = 11
 }
-ys.Battle.BattleConst.EquipmentType = {
+slot0.EquipmentType = {
 	MAIN_CANNON = 1,
 	SUB_CANNON = 2,
 	TORPEDO = 3,
@@ -62,15 +64,18 @@ ys.Battle.BattleConst.EquipmentType = {
 	BEAM = 24,
 	DEPTH_CHARGE = 25,
 	REPEATER_ANTI_AIR = 26,
+	MANUAL_AAMISSILE = 28,
 	DISPOSABLE_TORPEDO = 27,
+	SPACE_LASER = 28,
+	MISSILE = 29,
 	PREVIEW_ARICRAFT = 99,
 	AIR_ASSIST = "airAssist"
 }
-ys.Battle.BattleConst.OXY_STATE = {
+slot0.OXY_STATE = {
 	FLOAT = 1,
 	DIVE = 2
 }
-ys.Battle.BattleConst.ActionName = {
+slot0.ActionName = {
 	ATTACK = "attack",
 	ATTACKLEFT = "attack_left",
 	DEFAULT_ATTACK = "attack",
@@ -92,7 +97,7 @@ ys.Battle.BattleConst.ActionName = {
 	INTERRUPT = "break",
 	DIVING = "xiaqian"
 }
-ys.Battle.BattleConst.ActionLoop = {
+slot0.ActionLoop = {
 	attack = false,
 	attack_left = false,
 	fire = false,
@@ -114,44 +119,44 @@ ys.Battle.BattleConst.ActionLoop = {
 	swim_attack_left = false,
 	xiaqian = false
 }
-ys.Battle.BattleConst.CldType = {
+slot0.CldType = {
 	BULLET = "bullet",
 	SHIP = "ship",
 	AIRCRAFT = "aircraft",
 	AOE = "AOE",
 	WALL = "Wall"
 }
-ys.Battle.BattleConst.CldMass = {
+slot0.CldMass = {
 	L1 = 1,
 	L2 = 2,
 	L3 = 3,
 	L4 = 4
 }
-ys.Battle.BattleConst.UnitDir = {
+slot0.UnitDir = {
 	RIGHT = 1,
 	LEFT = -1,
 	MIDDLE = 0
 }
-ys.Battle.BattleConst.WeaponSearchType = {
+slot0.WeaponSearchType = {
 	SECTOR = 1,
 	SQUARE = 2
 }
-ys.Battle.BattleConst.WeaponAimType = {
+slot0.WeaponAimType = {
 	FORWARD = 0,
 	AIM = 1
 }
-ys.Battle.BattleConst.WeaponSuppressType = {
+slot0.WeaponSuppressType = {
 	NONE = 1,
 	SUPPRESSION = 0
 }
-ys.Battle.BattleConst.WeaponDamageAttr = {
+slot0.WeaponDamageAttr = {
 	CANNON = 1,
 	TORPEDO = 2,
 	ANTI_AIR = 3,
 	AIR = 4,
 	ANIT_SUB = 5
 }
-ys.Battle.BattleConst.BulletType = {
+slot0.BulletType = {
 	CANNON = 1,
 	BOMB = 2,
 	TORPEDO = 3,
@@ -162,45 +167,63 @@ ys.Battle.BattleConst.BulletType = {
 	STRAY = 8,
 	EFFECT = 9,
 	BEAM = 10,
-	G_BULLET = 11
+	G_BULLET = 11,
+	ELECTRIC_ARC = 12,
+	MISSILE = 13,
+	SPACE_LASER = 14,
+	SCALE = 15,
+	TRIGGER_BOMB = 16,
+	AAMissile = 17
 }
-ys.Battle.BattleConst.BulletDamageType = {
+slot0.BulletDamageType = {
 	NORMAL = 1,
 	BOMBER = 2,
 	REAL = 3
 }
-ys.Battle.BattleConst.BulletField = {
+slot0.BulletField = {
 	SURFACE = 1,
 	UNDER_WATER = 2,
 	AIR = 3
 }
-ys.Battle.BattleConst.AOEField = {
+slot0.BulletOutBound = {
+	COMMON = 0,
+	EXIST = 1,
+	RANDOM = 2
+}
+slot0.AOEField = {
 	SURFACE = 1,
 	UNDER_WATER = 2,
 	AIR = 3
 }
-ys.Battle.BattleConst.AreaType = {
+slot0.AreaType = {
 	CUBE = 1,
 	COLUMN = 2
 }
-ys.Battle.BattleConst.ShakeType = {
+slot0.ShakeType = {
 	HIT = 301,
 	FIRE = 302,
 	UNIT_DIE = 302
 }
-ys.Battle.BattleConst.BuffEffectType = {
+slot0.BuffEffectType = {
 	ON_INIT_GAME = "onInitGame",
 	ON_START_GAME = "onStartGame",
+	ON_MANUAL = "onManual",
+	ON_AUTOBOT = "onAutoBot",
 	ON_FLAG_SHIP = "onFlagShip",
-	ON_CONSORT = "onConsort",
+	ON_UPPER_CONSORT = "onUpperConsort",
+	ON_LOWER_CONSORT = "onLowerConsort",
 	ON_LEADER = "onLeader",
+	ON_CENTER = "onCenter",
 	ON_REAR = "onRear",
 	ON_SUB_LEADER = "onSubLeader",
-	ON_SUB_CONSORT = "onSubConsort",
+	ON_UPPER_SUB_CONSORT = "onUpperSubConsort",
+	ON_LOWER_SUB_CONSORT = "onLowerSubConsort",
 	ON_ATTACH = "onAttach",
 	ON_REMOVE = "onRemove",
 	ON_STACK = "onStack",
 	ON_UPDATE = "onUpdate",
+	ON_BUFF_ADDED = "onBuffAdded",
+	ON_BUFF_REMOVED = "onBuffRemoved",
 	ON_BULLET_CREATE = "onBulletCreate",
 	ON_CHARGE_BULLET_CREATE = "onChargeWeaponBulletCreate",
 	ON_TORPEDO_BULLET_CREATE = "onTorpedoWeaponBulletCreate",
@@ -227,9 +250,10 @@ ys.Battle.BattleConst.BuffEffectType = {
 	ON_CHARGE_READY = "onChargeWeaponReady",
 	ON_MANUAL_TORPEDO_READY = "onManualTorpedoReady",
 	ON_AIR_ASSIST_READY = "onAirAssistReady",
-	ON_DYING = "onDying",
+	ON_BEFORE_FATAL_DAMAGE = "onBeforeFatalDamage",
 	ON_FRIENDLY_AIRCRAFT_DYING = "onFriendlyAircraftDying",
 	ON_FRIENDLY_SHIP_DYING = "onFriendlyShipDying",
+	ON_SINK = "onSink",
 	ON_FOE_DYING = "onFoeDying",
 	ON_FOE_AIRCRAFT_DYING = "onFoeAircraftDying",
 	ON_RETREAT = "onRetreat",
@@ -237,7 +261,6 @@ ys.Battle.BattleConst.BuffEffectType = {
 	ON_TEAMMATE_HP_RATIO_UPDATE = "onTeammateHpRatioUpdate",
 	ON_HP_RATIO_UPDATE = "onHPRatioUpdate",
 	ON_BATTLE_BUFF_COUNT = "onBattleBuffCount",
-	ON_DAMAGE_PREVENT = "onDamagePrevent",
 	ON_SHIELD_BROKEN = "onShieldBroken",
 	ON_SUBMARINE_AID = "onSubmarineAid",
 	ON_SUBMARINE_FREE_DIVE = "onSubmarinFreeDive",
@@ -247,67 +270,89 @@ ys.Battle.BattleConst.BuffEffectType = {
 	ON_SUBMARINE_RAID = "onSubmarineRaid",
 	ON_SUBMARINE_FLOAT = "onSubmarineFloat",
 	ON_SUBMARINE_RETREAT = "onSubmarineRetreat",
+	ON_SUB_DETECTED = "onSubDetected",
+	ON_SUB_UNDETECTED = "onSubUnDetected",
 	ON_ANTI_SUB_HATE_CHAIN = "onAntiSubHateChain",
 	ON_RECORD = "onRecord"
 }
-ys.Battle.BattleConst.FXContainerIndex = {
+slot0.FXContainerIndex = {
 	"center",
 	"top",
 	"bottom",
 	"auradown"
 }
-ys.Battle.BattleConst.UnitDeathReason = {
+slot0.UnitDeathReason = {
 	KILLED = 1,
 	LEAVE = 2,
 	DESTRUCT = 3,
 	TOUCHDOWN = 4,
-	CRUSH = 5
+	CRUSH = 5,
+	CLS = 6
 }
-ys.Battle.BattleConst.BattleScore = {
+slot0.BattleScore = {
 	D = 0,
 	C = 1,
 	B = 2,
 	A = 3,
 	S = 4
 }
-ys.Battle.BattleConst.CPChatType = {
+slot0.CPChatType = {
 	GROUP_ID = 0,
 	SHIP_TYPE = 1,
 	RARE = 2,
 	NATIONALITY = 3,
 	ILLUSTRATOR = 4
 }
-ys.Battle.BattleConst.AIStepType = {
+slot0.AIStepType = {
 	STAY = 0,
 	MOVE_TO = 1,
 	MOVE = 2,
 	BROWNIAN = 3,
 	CIRCLE = 4,
-	RELATIVE_BROWNIAN = 5
+	RELATIVE_BROWNIAN = 5,
+	HIVE_STAY = 6,
+	HIVE_CIRCLE = 7,
+	RELATIVE_FLEET_MOVE_TO = 8
 }
-ys.Battle.BattleConst.BossPhaseSwitchType = {
+slot0.BossPhaseSwitchType = {
 	NONE = 0,
 	DURATION = 1,
 	HP = 2,
 	POSITION_X_GREATER = 3,
 	POSITION_X_LESS = 4
 }
-ys.Battle.BattleConst.SubAidFlag = {
+slot0.SubAidFlag = {
 	AMMO_EMPTY = 0,
 	AID_EMPTY = -1,
 	OIL_EMPTY = -2
 }
-ys.Battle.BattleConst.ManualWeaponIndex = {
+slot0.ManualWeaponIndex = {
 	CALIBRATION = 1,
 	TORPEDO = 2,
 	AIR_ASSIST = 3
 }
-ys.Battle.BattleConst.EnviroumentBehaviour = {
+slot0.EnviroumentBehaviour = {
 	PLAY_FX = 1,
 	DAMAGE = 2,
 	BUFF = 3,
 	MOVEMENT = 4,
-	FORCE = 5
+	FORCE = 5,
+	SPAWN = 6,
+	PLAY_SFX = 7,
+	SHAKE_SCREEN = 8,
+	SPAWN = 6
 }
-
-return
+slot0.Difficulty = {
+	CASUAL = 1,
+	ELITE = 2,
+	RANDOM = 3,
+	WORLD = 4
+}
+slot0.FIRE_FX_TYPE = {
+	COMMON = 1,
+	LASTING = 2
+}
+slot0.DEATH_MARK_SKILL = {
+	IGNORE = 0,
+	DEACTIVE = 1
+}

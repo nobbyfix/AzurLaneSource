@@ -1,31 +1,31 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "OUXIANGRICHANG2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
-					"某日的polaris\n\n<size=45>二 某日的休息时间</size>",
+					"One day, with Polaris...\n\n<size=45>One day, during a break...</size>",
 					1
 				}
 			}
 		},
 		{
+			say = "One day, after rehearsal...",
 			side = 2,
 			bgName = "star_level_bg_121",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "某日，练习结束后",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -53,10 +53,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900205,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "呼…今天就先到这里吧？",
+			say = "Phew... what do you say we call it a day?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -70,10 +70,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900207,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "嗯，时间也好耐力也好都要到极限了…",
+			say = "Yes, there are limits to both time and stamina...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -84,12 +84,12 @@ return {
 			}
 		},
 		{
+			actor = 900206,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 900206,
 			nameColor = "#a9f548",
-			say = "既然你们都这么说了，那就差不多休息好了…我、我可没有觉得累哦？",
+			dir = 1,
+			say = "If that's how you feel, then I suppose we can take a break... But it's not like I'm tired or anything.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -100,8 +100,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -113,10 +113,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900203,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "监测到希佩尔的非正常状况，希佩尔，现在正处于“疲惫”状态。",
+			say = "Observation: Hipper is in an abnormal state. Current Condition: Exhausted.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -130,10 +130,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900206,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "哈啊？才、才没有疲惫呢！只是出了点汗而已！",
+			say = "Haah?! Wh- who's exhausted?! I barely even broke a sweat!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -144,8 +144,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -159,7 +159,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "今天也努力了一天～回头要好好找指挥官补充一点奖·励·呢～",
+			say = "Hehe, another day of hard work complete~ I think it's time to visit my Commander for a well-earned reward!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -173,10 +173,10 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900206,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "虽然很好奇{namecode:91}所想的奖励是什么…不过还是不问比较好吧……",
+			say = "I'm a little curious what exactly you think that reward will be... Actually, I'd rather not hear the details...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -192,7 +192,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "既然练习结束了，我去给大家弄点喝的吧～大家都想喝点什么呢？酸素可乐？还是冷却水？",
+			say = "Since we're done for the day, I'll go get us some drinks. Who wants what? Oxy-Colas? Coolant?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -206,10 +206,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900203,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "加斯科涅，请求提供冷却水。",
+			say = "Gascogne requires coolant.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -223,10 +223,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900207,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "红茶…谢菲尔德和你一起去吧，为大家准备饮料姑且也算是女仆的工作之一",
+			say = "Tea... Actually, let me accompany you. Serving drinks is in fact a maid's duty.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -240,10 +240,10 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900206,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "皇家女仆队吗…那位女仆长从各方面来说都挺难以对付的呢…算了，我要咖啡，谢谢啦",
+			say = "I've heard you Royal Maids struggle under the yoke of a very strict Head Maid, eh...? In any case, I'll have a coffee.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -259,7 +259,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "竟然能面不改色的把那种泥水倒入口中，铁血的口味还真是…呵呵，我要红茶，皇家女仆的红茶，还是值得期待的呢",
+			say = "I can't believe you Iron Bloods actually pour that filthy swill into your mouths... Hehe, I'd like tea. One of your splendid Royal Maids' teas.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -270,12 +270,12 @@ return {
 			}
 		},
 		{
+			actor = 900206,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 900206,
 			nameColor = "#a9f548",
-			say = "哈啊？咖啡才是有品位的人士应有的选择吧！",
+			dir = 1,
+			say = "Haah?! Coffee is the choice of a refined lady!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -286,8 +286,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -301,7 +301,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "啊，开始了。",
+			say = "Here we go again.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -315,10 +315,10 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900205,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "啊哈哈…希佩尔和{namecode:91}，越来越要好了呢",
+			say = "Ahahaha... it's nice to see Hipper and Akagi getting along.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -329,12 +329,12 @@ return {
 			}
 		},
 		{
+			actor = 900206,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
-			actor = 900206,
 			nameColor = "#a9f548",
-			say = "哈啊？从哪里看出要好了啊！？",
+			dir = 1,
+			say = "Haah?! Who the hell would get along with HER?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -345,8 +345,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -360,7 +360,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呵呵…在无关指挥官的事情上就姑且让你一步吧，别让我看到你的咖啡就行了～",
+			say = "Hehe... Since it has nothing to do with my Commander, I suppose I can let you have it. Just don't let me see you slurping down your coffee and we won't have a problem~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -376,7 +376,7 @@ return {
 			bgName = "star_level_bg_121",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "姑且会帮你们都准备的，稍等片刻…敬请期待吧",
+			say = "I will fetch your beverages then. Kindly wait a moment.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -390,10 +390,10 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "star_level_bg_121",
-			dir = 1,
 			actor = 900205,
+			dir = 1,
 			nameColor = "#a9f548",
-			say = "啊，我也来了！顺道一提我要酸素可乐～",
+			say = "Hey, I'm coming too! Gotta get me an Oxy-Cola on the way~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -408,7 +408,7 @@ return {
 			bgName = "star_level_bg_121",
 			dir = 1,
 			blackBg = true,
-			say = "polaris的诸位今天依旧相亲相爱，可喜可贺可喜可贺——",
+			say = "And so, the Polaris girls grew another day closer after a long practice session...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

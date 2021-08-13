@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 400,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 400
 				}
 			},
 			{
@@ -18,8 +18,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.04,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.04
 				}
 			},
 			{
@@ -43,8 +43,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 460,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 460
 				}
 			},
 			{
@@ -53,8 +53,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.046,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.046
 				}
 			},
 			{
@@ -78,8 +78,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 520,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 520
 				}
 			},
 			{
@@ -88,8 +88,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.052,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.052
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 600
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.06,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.06
 				}
 			},
 			{
@@ -148,8 +148,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 660,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 660
 				}
 			},
 			{
@@ -158,8 +158,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.066,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.066
 				}
 			},
 			{
@@ -183,8 +183,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 720
 				}
 			},
 			{
@@ -193,8 +193,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.072,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.072
 				}
 			},
 			{
@@ -218,8 +218,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 800,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 800
 				}
 			},
 			{
@@ -228,8 +228,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.08,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.08
 				}
 			},
 			{
@@ -253,8 +253,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 860,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 860
 				}
 			},
 			{
@@ -263,8 +263,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.086,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.086
 				}
 			},
 			{
@@ -288,8 +288,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 820,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 820
 				}
 			},
 			{
@@ -298,8 +298,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.092,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.092
 				}
 			},
 			{
@@ -323,8 +323,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1000
 				}
 			},
 			{
@@ -333,8 +333,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.1,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.1
 				}
 			},
 			{
@@ -349,14 +349,14 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "鲜血诗篇-P2",
 	init_effect = "",
-	id = 19242,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "鲜血诗篇-P2",
 	stack = 1,
-	color = "yellow",
+	id = 19242,
 	icon = 19240,
 	last_effect = "",
 	blink = {
@@ -374,8 +374,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 400,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 400
 			}
 		},
 		{
@@ -385,8 +385,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.04,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.04
 			}
 		},
 		{

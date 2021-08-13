@@ -1,12 +1,12 @@
 slot0 = class("ChatConst")
 slot0.CODE_BANED = 100
-slot0.CODE_GUILDBOSS_OPEN = 200
 slot0.CODE_ACTOBSS_MSG_WORD = 1000
 slot0.ChannelAll = 1
 slot0.ChannelWorld = 2
 slot0.ChannelPublic = 3
 slot0.ChannelFriend = 4
 slot0.ChannelGuild = 5
+slot0.ChannelWorldBoss = 6
 slot0.SendChannels = {
 	slot0.ChannelWorld,
 	slot0.ChannelGuild
@@ -16,24 +16,27 @@ slot0.RecvChannels = {
 	slot0.ChannelWorld,
 	slot0.ChannelPublic,
 	slot0.ChannelFriend,
-	slot0.ChannelGuild
+	slot0.ChannelGuild,
+	slot0.ChannelWorldBoss
 }
 
-slot0.GetChannelName = function (slot0)
+function slot0.GetChannelName(slot0)
 	return i18n("channel_name_" .. slot0)
 end
 
-slot0.GetChannelSprite = function (slot0)
-	if slot0 == slot0.ChannelWorld then
+function slot0.GetChannelSprite(slot0)
+	if slot0 == uv0.ChannelWorld then
 		return "world"
-	elseif slot0 == slot0.ChannelPublic then
+	elseif slot0 == uv0.ChannelPublic then
 		return "public"
-	elseif slot0 == slot0.ChannelFriend then
+	elseif slot0 == uv0.ChannelFriend then
 		return "friend"
-	elseif slot0 == slot0.ChannelGuild then
+	elseif slot0 == uv0.ChannelGuild then
 		return "guild"
-	elseif slot0 == slot0.ChannelAll then
+	elseif slot0 == uv0.ChannelAll then
 		return "total"
+	elseif slot0 == uv0.ChannelWorldBoss then
+		return "worldboss"
 	end
 end
 
@@ -50,14 +53,14 @@ slot0.EmojiTypes = {
 	slot0.EmojiIcon
 }
 
-slot0.GetEmojiSprite = function (slot0)
-	if slot0 == slot0.EmojiCommon then
+function slot0.GetEmojiSprite(slot0)
+	if slot0 == uv0.EmojiCommon then
 		return "tab_casual"
-	elseif slot0 == slot0.EmojiDefault then
+	elseif slot0 == uv0.EmojiDefault then
 		return "tab_default"
-	elseif slot0 == slot0.EmojiAnimate then
+	elseif slot0 == uv0.EmojiAnimate then
 		return "tab_motive"
-	elseif slot0 == slot0.EmojiPixel then
+	elseif slot0 == uv0.EmojiPixel then
 		return "tab_pixel"
 	end
 end

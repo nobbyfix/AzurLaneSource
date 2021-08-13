@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "Tap the help button to check the detailed information of Grand Capture",
 				mode = 1,
-				dir = -1,
 				posY = 172,
+				dir = -1,
 				posX = -337
 			}
 		},

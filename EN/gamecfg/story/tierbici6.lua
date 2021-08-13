@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIERBICI6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"「Schmelzen」\n\n<size=45>Chapter 6: The Queen's Smile</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "Port - Office",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "Port - Office",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "After being stuck with more work than usual, Tirpitz ended up working until midnight.",
 			typewriter = {
 				speed = 0.05,
@@ -77,7 +77,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "Commander, thank you for your hard work. Sorry for having had you stick with me for so long.",
+			say = "Commander, thank you for your hard work. Sorry for making you stick with me for so long.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -88,11 +88,11 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "If you're tired, please go ahead and rest. I'll take care of the rest.",
 			typewriter = {
 				speed = 0.05,
@@ -147,7 +147,7 @@ return {
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "That I've worried about you - I was only focusing on the improving efficiency as the secretary...",
+			say = "That I've worried about you - I was only focusing on improving efficiency as the secretary...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -158,11 +158,11 @@ return {
 			}
 		},
 		{
+			actor = 405020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 405020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "That I've become able to work well with everyone else in the fleet - That is...",
 			typewriter = {
 				speed = 0.05,
@@ -180,11 +180,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_task",
-			dir = 1,
 			actor = 405020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_task",
+			side = 2,
+			dir = 1,
 			stopbgm = true,
 			say = "!!",
 			typewriter = {
@@ -197,15 +197,15 @@ return {
 			}
 		},
 		{
+			say = "Tirpitz displayed a rare moment of surprise on her face, and then she said...",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-2",
-			say = "Tirpitz displayed a rare moment of surprise on her face, and then she said...",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -322,9 +322,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "Tirpitz smiled warmly.",
 			typewriter = {
 				speed = 0.05,

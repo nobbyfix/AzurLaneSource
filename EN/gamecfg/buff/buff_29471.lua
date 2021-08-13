@@ -1,13 +1,13 @@
 return {
 	{},
-	time = 0,
-	name = "专属弹幕",
 	init_effect = "",
-	id = 29471,
+	name = "专属弹幕",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主武器每进行9次攻击，触发专属弹幕-希佩尔海军上将μI",
 	stack = 1,
-	color = "red",
+	id = 29471,
 	icon = 29470,
 	last_effect = "",
 	effect_list = {
@@ -30,8 +30,8 @@ return {
 				"onBattleBuffCount"
 			},
 			arg_list = {
-				skill_id = 29471,
 				target = "TargetSelf",
+				skill_id = 29471,
 				countType = 29470
 			}
 		}

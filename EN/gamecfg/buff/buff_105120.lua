@@ -8,8 +8,8 @@ return {
 				},
 				arg_list = {
 					rant = 7000,
-					skill_id = 105120,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 105120
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 				},
 				arg_list = {
 					rant = 7330,
-					skill_id = 105120,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 105120
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 				},
 				arg_list = {
 					rant = 7660,
-					skill_id = 105120,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 105120
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 				},
 				arg_list = {
 					rant = 7990,
-					skill_id = 105120,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 105120
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 				},
 				arg_list = {
 					rant = 8320,
-					skill_id = 105120,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 105120
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 				},
 				arg_list = {
 					rant = 8650,
-					skill_id = 105120,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 105120
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 				},
 				arg_list = {
 					rant = 8980,
-					skill_id = 105120,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 105120
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 				},
 				arg_list = {
 					rant = 9310,
-					skill_id = 105120,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 105120
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 				},
 				arg_list = {
 					rant = 9640,
-					skill_id = 105120,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 105120
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 				},
 				arg_list = {
 					rant = 10000,
-					skill_id = 105120,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 105120
 				}
 			}
 		}
 	},
-	time = 0,
-	name = "梦见好梦的「WAVE」",
 	init_effect = "",
-	id = 105120,
+	name = "梦见好梦的「WAVE」",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 105120,
 	icon = 105120,
 	last_effect = "",
 	effect_list = {
@@ -167,8 +167,8 @@ return {
 			},
 			arg_list = {
 				rant = 7000,
-				skill_id = 105120,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 105120
 			}
 		}
 	}

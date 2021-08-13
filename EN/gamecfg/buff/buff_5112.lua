@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 500
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 610,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 610
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 720
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 830,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 830
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 940,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 940
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1050,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1050
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1160
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1270,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1270
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1380
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1500
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "航空辅助",
 	init_effect = "jinengchufared",
-	id = 5112,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "提高装填属性",
 	stack = 1,
-	color = "yellow",
+	id = 5112,
 	icon = 5110,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 500
 			}
 		}
 	}

@@ -9,29 +9,29 @@ slot0.STATE_CLEAR = "state_clear"
 slot0.STATE_CONTINUE = "state_continue"
 slot0.STATE_QUIT = "state_quit"
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "BattleResultUI"
 end
 
-slot0.setChallengeInfo = function (slot0, slot1, slot2)
+function slot0.setChallengeInfo(slot0, slot1, slot2)
 	slot0.challenge = slot1
 	slot0.challengeExpire = slot2
 end
 
-slot0.setShips = function (slot0, slot1)
+function slot0.setShips(slot0, slot1)
 	slot0.shipVOs = slot1
 end
 
-slot0.isTotalClear = function (slot0)
-	return (slot0.challenge:getMode() == ChallengeProxy.MODE_CASUAL and slot0.challenge:IsFinish()) or slot0:isFail()
+function slot0.isTotalClear(slot0)
+	return slot0.challenge:getMode() == ChallengeProxy.MODE_CASUAL and slot0.challenge:IsFinish() or slot0:isFail()
 end
 
-slot0.isFail = function (slot0)
+function slot0.isFail(slot0)
 	return slot0.contextData.score < ys.Battle.BattleConst.BattleScore.S
 end
 
-slot0.init = function (slot0)
-	slot0.super.init(slot0)
+function slot0.init(slot0)
+	uv0.super.init(slot0)
 
 	slot0._challengeBottomPanel = slot0:findTF("challenge_confirm", slot0._blurConatiner)
 	slot0._shareBtn = slot0:findTF("share_btn", slot0._challengeBottomPanel)
@@ -41,14 +41,14 @@ slot0.init = function (slot0)
 	slot0._expireTxt = slot0:findTF("text", slot0._expire)
 end
 
-slot0.didEnter = function (slot0)
-	slot0.super.didEnter(slot0)
+function slot0.didEnter(slot0)
+	uv0.super.didEnter(slot0)
 	onButton(slot0, slot0._skipBtn, function ()
-		slot0:skip()
+		uv0:skip()
 	end, SFX_CONFIRM)
 end
 
-slot0.setStageName = function (slot0)
+function slot0.setStageName(slot0)
 	if slot0.contextData.system and slot0.contextData.system == SYSTEM_DUEL then
 		setText(slot0._levelText, slot0.rivalVO.name)
 	else
@@ -58,40 +58,36 @@ slot0.setStageName = function (slot0)
 	if slot0.challenge:getMode() == ChallengeProxy.MODE_INFINITE then
 		setText(slot0._levelText, pg.expedition_data_template[slot0.contextData.stageId].name .. " - ROUND " .. slot0.challenge:getLevel())
 	else
-		slot0.super.setStageName(slot0)
+		uv0.super.setStageName(slot0)
 	end
 end
 
-slot0.rankAnimaFinish = function (slot0)
-	slot1 = slot0:findTF("main/conditions")
-
+function slot0.rankAnimaFinish(slot0)
 	if slot0.challenge:getMode() == ChallengeProxy.MODE_INFINITE then
-		SetActive(slot1, false)
+		SetActive(slot0:findTF("main/conditions"), false)
 
-		slot0._stateFlag = slot0.STATE_REPORTED
+		slot0._stateFlag = uv0.STATE_REPORTED
 	else
 		SetActive(slot1, true)
 		slot0:setCondition(i18n("challenge_combat_score", slot0.challenge:getLastScore()), true)
 		slot0:setCondition(i18n("challenge_current_score", slot0.challenge:getScore()), true)
 		table.insert(slot0._delayLeanList, LeanTween.delayedCall(1, System.Action(function ()
-			slot0._stateFlag = slot1.STATE_REPORTED
+			uv0._stateFlag = uv1.STATE_REPORTED
 
-			SetActive(slot0:findTF("jieuan01/tips", slot0._bg), true)
+			SetActive(uv0:findTF("jieuan01/tips", uv0._bg), true)
 		end)).id)
 
-		slot0._stateFlag = slot0.STATE_REPORT
+		slot0._stateFlag = uv0.STATE_REPORT
 	end
 end
 
-slot0.displayDefeat = function (slot0)
-	function slot1()
-		slot0:skip()
-	end
-
+function slot0.displayDefeat(slot0)
 	if slot0:isFail() then
-		slot0._stateFlag = slot0.STATE_QUIT
+		slot0._stateFlag = uv0.STATE_QUIT
 
-		slot1()
+		function ()
+			uv0:skip()
+		end()
 	else
 		slot0:emit(BattleResultMediator.ON_CHALLENGE_DEFEAT_SCENE, {
 			callback = slot1
@@ -99,7 +95,7 @@ slot0.displayDefeat = function (slot0)
 	end
 end
 
-slot0.showRightBottomPanel = function (slot0)
+function slot0.showRightBottomPanel(slot0)
 	SetActive(slot0._expire, slot0.challengeExpire)
 	setText(slot0._expireTxt, i18n("challenge_expire_warn"))
 	SetActive(slot0._skipBtn, false)
@@ -115,43 +111,44 @@ slot0.showRightBottomPanel = function (slot0)
 		SetActive(slot0._quitBtn, false)
 		SetActive(slot0._shareBtn, true)
 		onButton(slot0, slot0._shareBtn, function ()
-			slot0:emit(BattleResultMediator.ON_CHALLENGE_SHARE)
+			uv0:emit(BattleResultMediator.ON_CHALLENGE_SHARE)
 		end, SFX_CONFIRM)
 		onButton(slot0, slot0._bg, function ()
-			slot0:skip()
+			uv0:skip()
 
-			slot0.skip._stateFlag = slot0.STATE_CLEAR
+			uv0._stateFlag = uv1.STATE_CLEAR
 		end)
 	else
 		SetActive(slot0._continueBtn, true)
 		SetActive(slot0._quitBtn, true)
 		SetActive(slot0._shareBtn, false)
 		onButton(slot0, slot0._continueBtn, function ()
-			slot0:skip()
+			uv0:skip()
 
-			slot0.skip._stateFlag = slot0.STATE_CONTINUE
+			uv0._stateFlag = uv1.STATE_CONTINUE
 		end, SFX_CONFIRM)
 		onButton(slot0, slot0._quitBtn, function ()
-			slot0:skip()
+			uv0:skip()
 
-			slot0.skip._stateFlag = slot0.STATE_QUIT
+			uv0._stateFlag = uv1.STATE_QUIT
 		end, SFX_CONFIRM)
 	end
 
-	slot0._stateFlag = slot0.STATE_DEFEAT
+	slot0._stateFlag = uv0.STATE_DEFEAT
 end
 
-slot0.onBackPressed = function (slot0)
+function slot0.onBackPressed(slot0)
 	slot0:skip()
 end
 
-slot0.skip = function (slot0)
+function slot0.skip(slot0)
 	for slot4, slot5 in ipairs(slot0._delayLeanList) do
 		LeanTween.cancel(slot5)
 	end
 
-	if slot0._stateFlag == slot0.STATE_RANK_ANIMA then
-	elseif slot0._stateFlag == slot0.STATE_REPORT then
+	if slot0._stateFlag == uv0.STATE_RANK_ANIMA then
+		-- Nothing
+	elseif slot0._stateFlag == uv0.STATE_REPORT then
 		slot1 = slot0._conditionContainer.childCount
 
 		while slot1 > 0 do
@@ -162,10 +159,10 @@ slot0.skip = function (slot0)
 
 		SetActive(slot0:findTF("jieuan01/tips", slot0._bg), true)
 
-		slot0._stateFlag = slot0.STATE_REPORTED
-	elseif slot0._stateFlag == slot0.STATE_REPORTED then
+		slot0._stateFlag = uv0.STATE_REPORTED
+	elseif slot0._stateFlag == uv0.STATE_REPORTED then
 		slot0:showRightBottomPanel()
-	elseif slot0._stateFlag == slot0.STATE_DEFEAT then
+	elseif slot0._stateFlag == uv0.STATE_DEFEAT then
 		if slot0:isTotalClear() then
 			slot0:emit(BattleResultMediator.ON_BACK_TO_LEVEL_SCENE, {
 				goToNext = false
@@ -173,18 +170,18 @@ slot0.skip = function (slot0)
 		else
 			slot0:displayDefeat()
 		end
-	elseif slot0._stateFlag == slot0.STATE_CONTINUE then
+	elseif slot0._stateFlag == uv0.STATE_CONTINUE then
 		slot0:emit(BattleResultMediator.ON_BACK_TO_LEVEL_SCENE, {
 			goToNext = true
 		})
-	elseif slot0._stateFlag == slot0.STATE_QUIT or slot0._stateFlag == slot0.STATE_CLEAR then
+	elseif slot0._stateFlag == uv0.STATE_QUIT or slot0._stateFlag == uv0.STATE_CLEAR then
 		slot0:emit(BattleResultMediator.ON_BACK_TO_LEVEL_SCENE, {
 			goToNext = false
 		})
 	end
 end
 
-slot0.willExit = function (slot0)
+function slot0.willExit(slot0)
 	LeanTween.cancel(go(slot0._tf))
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf)
 end

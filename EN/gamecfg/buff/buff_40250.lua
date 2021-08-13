@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "庞德喵：英系数量",
 	init_effect = "",
-	id = 40250,
+	name = "庞德喵：英系数量",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "该入口提供战外挂载到战内",
 	stack = 1,
-	color = "yellow",
+	id = 40250,
 	icon = 40250,
 	last_effect = "",
 	effect_list = {

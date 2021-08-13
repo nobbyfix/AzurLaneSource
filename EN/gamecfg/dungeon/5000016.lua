@@ -6,8 +6,8 @@ return {
 			stageIndex = 1,
 			failCondition = 1,
 			timeCount = 180,
-			backGroundStageID = 1,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -92,8 +92,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 50000002,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								10,
 								0,
@@ -106,8 +106,8 @@ return {
 						},
 						{
 							monsterTemplateID = 50000002,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								10,
 								0,
@@ -124,8 +124,8 @@ return {
 							interval = 10,
 							onceNumber = 3,
 							formation = 10006,
-							templateID = 750002,
 							delay = 0,
+							templateID = 750002,
 							totalNumber = 3,
 							weaponID = {
 								750075
@@ -158,27 +158,27 @@ return {
 							},
 							phase = {
 								{
-									switchType = 4,
+									switchParam = -30,
 									dive = "STATE_DIVE",
 									switchTo = 1,
 									index = 0,
-									switchParam = -30,
+									switchType = 4,
 									setAI = 10002
 								},
 								{
-									switchType = 1,
+									switchParam = 10,
 									dive = "STATE_RAID",
 									switchTo = 2,
 									index = 1,
-									switchParam = 10,
+									switchType = 1,
 									setAI = 10003
 								},
 								{
-									switchType = 4,
+									switchParam = -100,
 									dive = "STATE_DIVE",
 									switchTo = 4,
 									index = 2,
-									switchParam = -100,
+									switchType = 4,
 									setAI = 90002
 								}
 							}
@@ -197,8 +197,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 50000003,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								11,
 								0,
@@ -219,27 +219,27 @@ return {
 							},
 							phase = {
 								{
-									switchType = 4,
+									switchParam = -30,
 									dive = "STATE_DIVE",
 									switchTo = 1,
 									index = 0,
-									switchParam = -30,
+									switchType = 4,
 									setAI = 10002
 								},
 								{
-									switchType = 1,
+									switchParam = 10,
 									dive = "STATE_RAID",
 									switchTo = 2,
 									index = 1,
-									switchParam = 10,
+									switchType = 1,
 									setAI = 10003
 								},
 								{
-									switchType = 4,
+									switchParam = -100,
 									dive = "STATE_DIVE",
 									switchTo = 4,
 									index = 2,
-									switchParam = -100,
+									switchType = 4,
 									setAI = 90002
 								}
 							}
@@ -254,27 +254,27 @@ return {
 							},
 							phase = {
 								{
-									switchType = 4,
+									switchParam = -30,
 									dive = "STATE_DIVE",
 									switchTo = 1,
 									index = 0,
-									switchParam = -30,
+									switchType = 4,
 									setAI = 10002
 								},
 								{
-									switchType = 1,
+									switchParam = 10,
 									dive = "STATE_RAID",
 									switchTo = 2,
 									index = 1,
-									switchParam = 10,
+									switchType = 1,
 									setAI = 10003
 								},
 								{
-									switchType = 4,
+									switchParam = -100,
 									dive = "STATE_DIVE",
 									switchTo = 4,
 									index = 2,
-									switchParam = -100,
+									switchType = 4,
 									setAI = 90002
 								}
 							}

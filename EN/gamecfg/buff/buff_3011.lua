@@ -12,8 +12,8 @@ return {
 				},
 				arg_list = {
 					rant = 1500,
-					skill_id = 3011,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 3011
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 				},
 				arg_list = {
 					rant = 1610,
-					skill_id = 3011,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 3011
 				}
 			}
 		}
@@ -50,8 +50,8 @@ return {
 				},
 				arg_list = {
 					rant = 1720,
-					skill_id = 3011,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 3011
 				}
 			}
 		}
@@ -69,8 +69,8 @@ return {
 				},
 				arg_list = {
 					rant = 1830,
-					skill_id = 3011,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 3011
 				}
 			}
 		}
@@ -88,8 +88,8 @@ return {
 				},
 				arg_list = {
 					rant = 1940,
-					skill_id = 3011,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 3011
 				}
 			}
 		}
@@ -107,8 +107,8 @@ return {
 				},
 				arg_list = {
 					rant = 2050,
-					skill_id = 3011,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 3011
 				}
 			}
 		}
@@ -126,8 +126,8 @@ return {
 				},
 				arg_list = {
 					rant = 2160,
-					skill_id = 3011,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 3011
 				}
 			}
 		}
@@ -145,8 +145,8 @@ return {
 				},
 				arg_list = {
 					rant = 2270,
-					skill_id = 3011,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 3011
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 				},
 				arg_list = {
 					rant = 2380,
-					skill_id = 3011,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 3011
 				}
 			}
 		}
@@ -183,8 +183,8 @@ return {
 				},
 				arg_list = {
 					rant = 2500,
-					skill_id = 3011,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 3011
 				}
 			}
 		}
@@ -192,12 +192,12 @@ return {
 	desc_get = "空中支援时有15.0%(满级25.0%)概率造成2倍伤害",
 	name = "强袭空母",
 	init_effect = "",
-	id = 3011,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "空中支援时有$1概率造成2倍伤害",
 	stack = 1,
-	color = "red",
+	id = 3011,
 	icon = 3010,
 	last_effect = "",
 	effect_list = {
@@ -208,8 +208,8 @@ return {
 			},
 			arg_list = {
 				rant = 1500,
-				skill_id = 3011,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 3011
 			}
 		}
 	}

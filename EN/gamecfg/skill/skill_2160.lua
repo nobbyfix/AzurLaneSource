@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "预备鱼雷",
 	cd = 0,
-	picture = "0",
-	desc = "鱼雷额外1轮",
 	painting = 1,
 	id = 2160,
+	picture = "0",
 	castCV = "skill",
+	desc = "鱼雷额外1轮",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,10 +17,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillWeaponFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weaponType = "TorpedoWeapon"
 			}

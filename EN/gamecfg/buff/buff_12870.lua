@@ -12,17 +12,17 @@ return {
 	desc_get = "",
 	name = "龙凤2",
 	init_effect = "",
-	id = 12870,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 12870,
 	icon = 12870,
 	last_effect = "",
 	effect_list = {
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 12871,
@@ -37,7 +37,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 12875,

@@ -1,12 +1,12 @@
 return {
+	time = 15,
 	name = "真红の不死鸟",
 	init_effect = "jinengchufared",
-	id = 10061,
-	time = 15,
+	color = "red",
 	picture = "",
 	desc = "提高炮击属性",
 	stack = 1,
-	color = "red",
+	id = 10061,
 	icon = 10061,
 	last_effect = "",
 	blink = {
@@ -24,8 +24,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 3000,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 3000
 			}
 		}
 	}

@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "Commander, we've received a Distress Signal! Something terrible might've happened...",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -16,14 +16,21 @@ return {
 			style = {
 				text = "Tap the Distress Signal button and search for the Signal's source!",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
 		{
+			code = 1,
 			ui = {
 				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/main/right_chapter/btn_signal"
+			}
+		},
+		{
+			code = 2,
+			ui = {
+				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/entrance/enters/right_panel/btn_signal"
 			}
 		},
 		{
@@ -31,8 +38,8 @@ return {
 			style = {
 				text = "Also, I've heard that increasing your Signal Sensitivity lets you locate Signals in later Chapters...",
 				mode = 1,
-				dir = 1,
 				posY = -70,
+				dir = 1,
 				posX = -190
 			}
 		},
@@ -41,8 +48,8 @@ return {
 			style = {
 				text = "But that comes later! For now, just search for the source of that Distress Signal!",
 				mode = 1,
-				dir = 1,
 				posY = -70,
+				dir = 1,
 				posX = -190
 			}
 		},
@@ -62,8 +69,8 @@ return {
 			style = {
 				text = "You found the source! Now, initiate a Rescue Mission immediately! If you dilly-dally, the Signal will disappear!",
 				mode = 1,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -80,9 +87,9 @@ return {
 			style = {
 				text = "You will run into enemy Submarines during Rescue Missions! Make sure you bring ships with the gear and stats needed to fight them!",
 				mode = 1,
-				dir = 1,
 				alpha = 0.4,
 				posY = -65,
+				dir = 1,
 				posX = -135
 			}
 		}

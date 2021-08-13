@@ -1,45 +1,46 @@
 ys = ys or {}
-slot1 = ys.Battle.BattleVariable
+slot0 = ys
+slot1 = slot0.Battle.BattleVariable
 slot2 = class("BattleInkView")
-ys.Battle.BattleInkView = slot2
+slot0.Battle.BattleInkView = slot2
 slot2.__name = "BattleInkView"
 slot2.ANIMATION_STATE_INITIAL = "intial"
 slot2.ANIMATION_STATE_IDLE = "idle"
 slot2.ANIMATION_STATE_FINALE = "int"
 
-slot2.Ctor = function (slot0, slot1)
+function slot2.Ctor(slot0, slot1)
 	slot0._go = slot1
 
 	slot0:init()
 end
 
-slot2.init = function (slot0)
+function slot2.init(slot0)
 	slot0._tf = slot0._go.transform
 	slot0._hollowTpl = slot0._tf:Find("ink_tpl")
 	slot0._hollowContainer = slot0._tf:Find("container")
 	slot0._unitHollowList = {}
-	slot0._state = slot0.ANIMATION_STATE_IDLE
+	slot0._state = uv0.ANIMATION_STATE_IDLE
 end
 
-slot2.IsActive = function (slot0)
+function slot2.IsActive(slot0)
 	return slot0._isActive
 end
 
-slot2.Update = function (slot0)
+function slot2.Update(slot0)
 	for slot4, slot5 in pairs(slot0._unitHollowList) do
 		if slot4:IsAlive() then
-			slot5.hollow.position = slot0.CameraPosToUICamera(slot5.pos.Copy(slot6, slot4:GetPosition()) + Vector3(0, 0, 0))
+			slot5.hollow.position = uv0.CameraPosToUICamera(slot5.pos:Copy(slot4:GetPosition()) + Vector3(0, 0, 0))
 		else
 			slot0:RemoveHollow(slot4)
 		end
 	end
 end
 
-slot2.SetActive = function (slot0, slot1, slot2)
+function slot2.SetActive(slot0, slot1, slot2)
 	slot0._isActive = slot1
 
 	if slot1 then
-		slot0._state = slot0.ANIMATION_STATE_INITIAL
+		slot0._state = uv0.ANIMATION_STATE_INITIAL
 
 		for slot6, slot7 in ipairs(slot2) do
 			slot0:AddHollow(slot7)
@@ -47,22 +48,20 @@ slot2.SetActive = function (slot0, slot1, slot2)
 
 		setActive(slot0._go, true)
 	else
-		slot3 = true
-
 		for slot7, slot8 in pairs(slot0._unitHollowList) do
-			slot0.doHollowScaleAnima(slot8.hollow, 125, 0.3, (slot3 and function ()
-				slot0:RemoveHollow(slot0)
-				setActive(slot0._go, false)
+			slot0.doHollowScaleAnima(slot8.hollow, 125, 0.3, true and function ()
+				uv0:RemoveHollow(uv1)
+				setActive(uv0._go, false)
 
-				setActive._state = slot2.ANIMATION_STATE_IDLE
-			end) or nil)
+				uv0._state = uv2.ANIMATION_STATE_IDLE
+			end or nil)
 
 			slot3 = false
 		end
 	end
 end
 
-slot2.AddHollow = function (slot0, slot1)
+function slot2.AddHollow(slot0, slot1)
 	slot2 = slot1:GetAttrByName("blindedHorizon")
 
 	if slot0._unitHollowList[slot1] then
@@ -81,51 +80,54 @@ slot2.AddHollow = function (slot0, slot1)
 	slot4.localScale = Vector3(125, 125, 0)
 
 	slot0.doHollowScaleAnima(slot4, slot2)
-	Vector3.zero:Copy(slot1:GetPosition())
+
+	slot5 = Vector3.zero
+
+	slot5:Copy(slot1:GetPosition())
 
 	slot0._unitHollowList[slot1] = {
 		range = slot2,
 		hollow = slot4,
-		pos = Vector3.zero
+		pos = slot5
 	}
 end
 
-slot2.RemoveHollow = function (slot0, slot1, slot2)
+function slot2.RemoveHollow(slot0, slot1, slot2)
+	slot4 = slot0._unitHollowList[slot1].hollow.gameObject
+
 	LeanTween.cancel(slot4)
 	Destroy(slot4)
 
 	slot0._unitHollowList[slot1] = nil
 end
 
-slot2.UpdateHollow = function (slot0, slot1)
+function slot2.UpdateHollow(slot0, slot1)
 	for slot5, slot6 in ipairs(slot1) do
 		slot0:AddHollow(slot6)
 	end
 end
 
-slot2.doHollowScaleAnima = function (slot0, slot1, slot2, slot3)
+function slot2.doHollowScaleAnima(slot0, slot1, slot2, slot3)
 	LeanTween.cancel(go(slot0))
 
-	slot5 = LeanTween.scale(slot0, Vector3(slot1, slot1, 0), slot2 or 0.5)
-
 	if slot3 then
-		slot5:setOnComplete(System.Action(function ()
-			slot0()
+		LeanTween.scale(slot0, Vector3(slot1, slot1, 0), slot2 or 0.5):setOnComplete(System.Action(function ()
+			uv0()
 		end))
 	end
 end
 
-slot2.Dispose = function (slot0)
+function slot2.Dispose(slot0)
 	slot0:SetActive(false)
 
 	for slot4, slot5 in pairs(slot0._unitHollowList) do
+		slot6 = slot5.hollow.gameObject
+
 		LeanTween.cancel(slot6)
-		Destroy(slot5.hollow.gameObject)
+		Destroy(slot6)
 	end
 
 	slot0._go = nil
 	slot0._tf = nil
 	slot0._unitHollowList = nil
 end
-
-return

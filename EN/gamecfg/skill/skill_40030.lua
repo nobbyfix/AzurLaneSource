@@ -2,16 +2,16 @@ return {
 	uiEffect = "",
 	name = "对战列增伤",
 	cd = 0,
+	painting = 1,
+	id = 40040,
 	picture = "0",
 	aniEffect = "",
 	desc = "对战列增伤",
-	painting = 1,
-	id = 40040,
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
+			targetAniEffect = "",
 			target_choise = {
 				"TargetAllHelp"
 			},

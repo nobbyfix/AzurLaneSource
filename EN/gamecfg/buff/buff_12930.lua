@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "黛朵1",
 	init_effect = "",
-	id = 12930,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 12930,
 	icon = 12930,
 	last_effect = "",
 	effect_list = {
@@ -43,7 +43,7 @@ return {
 					"TargetShipTag"
 				},
 				ship_tag_list = {
-					"Dido_class"
+					"Dido-Class"
 				}
 			}
 		}

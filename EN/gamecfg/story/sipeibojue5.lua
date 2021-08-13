@@ -1,55 +1,55 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SIPEIBOJUE5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
-					"<size=51>一直陪伴身边的人，离开了</size>",
+					"<size=51>Those who stay by my side.</size>",
 					1.5
 				},
 				{
-					"<size=51>一直并肩战斗的人，离开了</size>",
+					"<size=51>Those who fight together with me.</size>",
 					3
 				},
 				{
-					"<size=51>一直推心置腹的人，离开了</size>",
+					"<size=51>Those who understand what I'm thinking.</size>",
 					4.5
 				},
 				{
-					"<size=51>现在，我又变成孤身一人了</size> ",
+					"<size=51>If I were to lose those people...</size> ",
 					6
 				},
 				{
-					"<size=51>这些都不属于我，我其实什么都没有——</size>",
+					"<size=51>Would I still be myself...?</size>",
 					8
 				}
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
-					"港湾\n\n<size=45>五　孤独</size>",
+					"One Little Incident\n\n<size=45>Chapter 5: Loneliness</size>",
 					1
 				}
 			}
 		},
 		{
-			bgName = "bg_story_room",
-			side = 2,
 			dir = 1,
-			say = "宿舍",
+			side = 2,
+			bgName = "bg_story_room",
+			say = "Port - Dormitory",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -70,10 +70,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "做了个很不好的梦。",
+			say = "I had a nightmare.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -84,10 +84,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "回望周边，宿舍里只剩下了自己一个人。",
+			say = "When I woke up, there was nobody around me...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -98,13 +98,13 @@ return {
 			}
 		},
 		{
+			actor = 403050,
 			side = 2,
 			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
+			say = "Mm... It's already this late...?",
 			bgm = "story-1",
-			actor = 403050,
-			nameColor = "#a9f548",
-			say = "唔…已经快到中午了吗",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -115,10 +115,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "这个时间，也难怪身边一个人都没有了吧。",
+			say = "Since it's our day off and it's late at night, it makes sense nobody would be here.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -134,7 +134,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "……",
+			say = "...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -145,10 +145,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "拿出了最近刚学会使用的智能手机",
+			say = "Let's laze around in bed and check that smartphone which I recently learned to use.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -159,10 +159,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "有了这个的话，即使不在旁边，也能够和同伴交流。要不先看看大家的动态好了。",
+			say = "With this, I'll be able to tell how everyone else is doing even if they're not by my side.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -173,10 +173,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "“今天标枪也在练习制作便当哦！”",
+			say = "\"Javelin's gonna go make another boxed lunch today!\"",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -187,10 +187,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "标枪小姐……我记得是一位充满活力的人呢。",
+			say = "Javelin... She's quite the lively one.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -201,10 +201,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "““炫目的初夏阳光，美好得让人忍不住想看到日蚀……””",
+			say = "\"The dazzling early summer sun rises, but is it not a pearlescent solar eclipse?\"",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -215,10 +215,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "齐柏林的动态，有些挺普通的，有些比较难懂……",
+			say = "Viersechs... I wish she would just talk like normal...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -229,10 +229,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "“希望今天神明大人也能庇佑大家。”",
+			say = "May everyone at port be blessed with the gods' protection.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -243,10 +243,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "{namecode:78}小姐，真是一位温柔的人呢。",
+			say = "Fusou's so nice and caring...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -273,10 +273,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "我学会了使用手机，学会了使用社交网络，我能看到大家毫无保留的一面……",
+			say = "I feel like I've gotten to know people better ever since I learned how to use this device.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -292,7 +292,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "我是属于这里的一份子。",
+			say = "Looks like... I can stay in touch with people this way too.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -303,10 +303,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "我明明知道这一点。",
+			say = "Of course, I already get along well with everyone just fine, even without relying on this, but...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -317,26 +317,10 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			say = "但我却还是惴惴不安。",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			actor = 403050,
-			side = 2,
-			bgName = "bg_story_room",
-			nameColor = "#a9f548",
-			dir = 1,
-			say = "嗯？有新的消息……是指挥官发来的？",
+			say = "It felt like I was the only one not hanging out online.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -352,7 +336,7 @@ return {
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "要我去办公室，有重要的事情要和我说？",
+			say = "Let's see, this message is from... Deutschland?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -363,10 +347,12 @@ return {
 			}
 		},
 		{
+			actor = 403050,
 			side = 2,
 			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
-			say = "难道是很紧急的任务，赶紧过去看一看吧。",
+			say = "It says to come to the office... Is there something important to talk about?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -377,10 +363,24 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
+			say = "No, it might be a combat mission...",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
 			dir = 1,
-			say = "在想到是任务时，不知为何，我反而感到雀跃起来。",
+			side = 2,
+			bgName = "bg_story_room",
+			say = "For some reason, thinking that it might be a mission gets me all excited.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -395,7 +395,7 @@ return {
 			bgName = "bg_story_room",
 			dir = 1,
 			blackBg = true,
-			say = "果然，适合我的地方，只有战场吗？",
+			say = "Maybe the battlefield is what suits me best...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

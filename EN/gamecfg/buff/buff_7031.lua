@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "序章欧根旋转盾",
 	init_effect = "",
+	name = "序章欧根旋转盾",
+	time = 0,
 	picture = "",
 	desc = "10秒后触发永久盾",
 	stack = 1,
@@ -16,8 +16,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 7033,
-				time = 10,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				time = 10
 			}
 		}
 	}

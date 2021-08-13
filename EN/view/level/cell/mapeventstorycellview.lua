@@ -1,50 +1,49 @@
 slot0 = class("MapEventStoryCellView", import("view.level.cell.StaticCellView"))
 
-slot0.Ctor = function (slot0, slot1)
-	slot0.super.Ctor(slot0, slot1)
+function slot0.Ctor(slot0, slot1)
+	uv0.super.Ctor(slot0, slot1)
 
 	slot0.attachTw = nil
 end
 
-slot0.Update = function (slot0)
-	slot4 = slot0.info.data
-	slot6 = pg.map_event_template[slot0.info.attachmentId].icon
-	slot7 = "story_" .. slot2 .. "_" .. slot0.info.column .. "_" .. slot0.info.attachmentId
+function slot0.GetOrder(slot0)
+	return ChapterConst.CellPriorityAttachment
+end
+
+function slot0.Update(slot0)
+	slot1 = slot0.info
 
 	if IsNil(slot0.go) then
-		slot0.go = GameObject.New(slot7)
+		slot4 = slot1.data
+		slot6 = pg.map_event_template[slot1.attachmentId].icon
 
-		slot0.go.transform:SetParent(slot0.parent)
+		slot0:PrepareBase("story_" .. slot1.row .. "_" .. slot1.column .. "_" .. slot1.attachmentId)
+		setAnchoredPosition(slot0.tf, Vector2(0, 30))
 
-		slot0.tf = slot0.go.transform
-		slot0.tf.sizeDelta = slot0.parent.sizeDelta
-		cloneTplTo(slot0.Tpl, slot0.parent, slot6).anchoredPosition = Vector2(0, 30)
+		slot0.attachTw = LeanTween.moveY(rtf(slot0.go), 40, 1.5):setEase(LeanTweenType.easeInOutSine):setLoopPingPong()
 
-		slot0:GetPrefab("boxprefab/mapevent1", "mapevent1", function (slot0)
-			slot0.transform:SetParent(slot0:Find("icon"), false)
-		end)
+		slot0:GetLoader():GetPrefab("leveluiview/tpl_box", "tpl_box", function (slot0)
+			slot0.name = uv0
 
-		if slot6 ~= "mapevent1" then
-			slot0:GetPrefab("ui/" .. slot6 .. "_2", slot6 .. "_2", function (slot0)
-				slot0.transform:SetParent(slot0.tf, false)
-				SetActive(slot0.transform:Find("Xyz/F"), false)
+			setParent(slot0, uv1.tf)
+			setAnchoredPosition(slot0, Vector2.zero)
+			uv1:GetLoader():GetPrefab("boxprefab/" .. uv0, uv0, function (slot0)
+				setParent(slot0, tf(uv0):Find("icon"))
 			end)
-		end
-
-		slot0.attachTw = LeanTween.moveY(slot0.go, 40, 1.5):setEase(LeanTweenType.easeInOutSine):setLoopPingPong()
+		end)
 	end
 
 	setActive(slot0.tf, slot1.flag == 0)
 end
 
-slot0.DestroyGO = function (slot0)
+function slot0.DestroyGO(slot0)
 	if slot0.attachTw then
 		LeanTween.cancel(slot0.attachTw.uniqueId)
 
 		slot0.attachTw = nil
 	end
 
-	slot0.super.DestroyGO(slot0)
+	uv0.super.DestroyGO(slot0)
 end
 
 return slot0

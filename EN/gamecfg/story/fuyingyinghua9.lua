@@ -1,15 +1,15 @@
 return {
-	fadeType = 1,
+	id = "FUYINGYINGHUA9",
 	mode = 2,
 	once = true,
-	id = "FUYINGYINGHUA9",
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "Diadem of Light - Surrounding Waters",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "xinnong-1",
+			say = "Diadem of Light - Surrounding Waters",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

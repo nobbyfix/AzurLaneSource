@@ -1,15 +1,72 @@
 pg = pg or {}
-pg.word_legal_template = {
-	E = {
-		S = {
-			S = {
-				E = {
-					X = {
+slot0 = pg
+slot0.word_legal_template = {}
+slot1 = slot0.word_legal_template
+
+function temp()
+	uv0["合"] = {
+		["法"] = {
+			["词"] = {
+				this = true
+			}
+		}
+	}
+end
+
+temp()
+
+function temp()
+	uv0["サ"] = {
+		["セ"] = {
+			["ッ"] = {
+				["ク"] = {
+					["ス"] = {
 						this = true
 					}
 				}
 			}
-		},
+		}
+	}
+end
+
+temp()
+
+function temp()
+	uv0.T = {
+		o = {
+			r = {
+				p = {
+					e = {
+						d = {
+							o = {
+								this = true
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+end
+
+temp()
+
+function temp()
+	uv0.K = {
+		["ö"] = {
+			l = {
+				n = {
+					this = true
+				}
+			}
+		}
+	}
+end
+
+temp()
+
+function temp()
+	uv0.e = {
 		s = {
 			s = {
 				e = {
@@ -19,17 +76,95 @@ pg.word_legal_template = {
 				}
 			}
 		}
-	},
-	K = {
-		ö = {
-			l = {
-				n = {
-					this = true
+	}
+end
+
+temp()
+
+function temp()
+	uv0.m = {
+		a = {
+			s = {
+				s = {
+					a = {
+						c = {
+							h = {
+								u = {
+									s = {
+										e = {
+											t = {
+												t = {
+													s = {
+														this = true
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
-	},
-	M = {
+	}
+end
+
+temp()
+
+function temp()
+	uv0.E = {
+		s = {
+			s = {
+				e = {
+					x = {
+						this = true
+					}
+				}
+			}
+		},
+		S = {
+			S = {
+				E = {
+					X = {
+						this = true
+					}
+				}
+			}
+		}
+	}
+end
+
+temp()
+
+function temp()
+	uv0.M = {
+		a = {
+			s = {
+				s = {
+					a = {
+						c = {
+							h = {
+								u = {
+									s = {
+										e = {
+											t = {
+												t = {
+													s = {
+														this = true
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
 		A = {
 			S = {
 				S = {
@@ -54,97 +189,8 @@ pg.word_legal_template = {
 					}
 				}
 			}
-		},
-		a = {
-			s = {
-				s = {
-					a = {
-						c = {
-							h = {
-								u = {
-									s = {
-										e = {
-											t = {
-												t = {
-													s = {
-														this = true
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	},
-	T = {
-		o = {
-			r = {
-				p = {
-					e = {
-						d = {
-							o = {
-								this = true
-							}
-						}
-					}
-				}
-			}
-		}
-	},
-	e = {
-		s = {
-			s = {
-				e = {
-					x = {
-						this = true
-					}
-				}
-			}
-		}
-	},
-	m = {
-		a = {
-			s = {
-				s = {
-					a = {
-						c = {
-							h = {
-								u = {
-									s = {
-										e = {
-											t = {
-												t = {
-													s = {
-														this = true
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	},
-	サ = {
-		セ = {
-			ッ = {
-				ク = {
-					ス = {
-						this = true
-					}
-				}
-			}
 		}
 	}
-}
+end
 
-return
+temp()

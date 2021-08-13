@@ -1,10 +1,10 @@
 return {
-	time = 0,
-	name = "恶毒",
 	init_effect = "",
+	name = "恶毒",
+	time = 0,
 	picture = "",
 	desc = "",
-	stack = 1,
+	stack = 10,
 	id = 12321,
 	icon = 12321,
 	last_effect = "",

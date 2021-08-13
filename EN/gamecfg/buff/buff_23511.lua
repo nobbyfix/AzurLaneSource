@@ -1,13 +1,13 @@
 return {
 	{},
-	time = 0,
-	name = "全弹发射",
 	init_effect = "",
-	id = 23511,
+	name = "全弹发射",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "进入战斗后，触发全弹发射-Type IXC型I",
 	stack = 1,
-	color = "red",
+	id = 23511,
 	icon = 20300,
 	last_effect = "",
 	effect_list = {
@@ -19,8 +19,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				skill_id = 23511,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 23511
 			}
 		}
 	}

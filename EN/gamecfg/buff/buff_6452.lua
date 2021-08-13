@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "",
 	init_effect = "",
-	id = 6452,
+	name = "",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 6452,
 	icon = 6450,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.3,
-				type = 23
+				type = 23,
+				number = 0.3
 			}
 		},
 		{
@@ -39,8 +39,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				skill_id = 6452,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 6452
 			}
 		}
 	}

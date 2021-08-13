@@ -2,10 +2,10 @@ return {
 	uiEffect = "",
 	name = "13章指挥舰技能",
 	cd = 0,
-	picture = "0",
-	desc = "",
 	painting = 0,
 	id = 8631,
+	picture = "0",
+	desc = "",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -16,37 +16,37 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetAllHelp",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 8632
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetSelf",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 8633
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 340306
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 340308
 			}

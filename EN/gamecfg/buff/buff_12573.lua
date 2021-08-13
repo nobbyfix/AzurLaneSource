@@ -9,8 +9,8 @@ return {
 				},
 				arg_list = {
 					rant = 7000,
-					skill_id = 12571,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 12571
 				}
 			}
 		}
@@ -25,8 +25,8 @@ return {
 				},
 				arg_list = {
 					rant = 7330,
-					skill_id = 12571,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 12571
 				}
 			}
 		}
@@ -41,8 +41,8 @@ return {
 				},
 				arg_list = {
 					rant = 7660,
-					skill_id = 12571,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 12571
 				}
 			}
 		}
@@ -57,8 +57,8 @@ return {
 				},
 				arg_list = {
 					rant = 7990,
-					skill_id = 12571,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 12571
 				}
 			}
 		}
@@ -73,8 +73,8 @@ return {
 				},
 				arg_list = {
 					rant = 8320,
-					skill_id = 12571,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 12571
 				}
 			}
 		}
@@ -89,8 +89,8 @@ return {
 				},
 				arg_list = {
 					rant = 8650,
-					skill_id = 12571,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 12571
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 				},
 				arg_list = {
 					rant = 8980,
-					skill_id = 12571,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 12571
 				}
 			}
 		}
@@ -121,8 +121,8 @@ return {
 				},
 				arg_list = {
 					rant = 9310,
-					skill_id = 12571,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 12571
 				}
 			}
 		}
@@ -137,8 +137,8 @@ return {
 				},
 				arg_list = {
 					rant = 9640,
-					skill_id = 12571,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 12571
 				}
 			}
 		}
@@ -153,20 +153,20 @@ return {
 				},
 				arg_list = {
 					rant = 10000,
-					skill_id = 12571,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 12571
 				}
 			}
 		}
 	},
-	time = 3,
-	name = "",
 	init_effect = "",
-	id = 12573,
+	name = "",
+	time = 3,
+	color = "red",
 	picture = "",
 	desc = "概率触发器",
 	stack = 2,
-	color = "red",
+	id = 12573,
 	icon = 12570,
 	last_effect = "",
 	effect_list = {}

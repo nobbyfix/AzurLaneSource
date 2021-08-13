@@ -5,12 +5,12 @@ return {
 	desc_get = "主炮每进行10次攻击，触发专属弹幕-22II",
 	name = "专属弹幕-22II",
 	init_effect = "",
-	id = 29292,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主炮每进行10次攻击，触发专属弹幕-22II",
 	stack = 1,
-	color = "red",
+	id = 29292,
 	icon = 29290,
 	last_effect = "",
 	effect_list = {
@@ -33,8 +33,8 @@ return {
 				"onBattleBuffCount"
 			},
 			arg_list = {
-				skill_id = 29292,
 				target = "TargetSelf",
+				skill_id = 29292,
 				countType = 29290
 			}
 		}

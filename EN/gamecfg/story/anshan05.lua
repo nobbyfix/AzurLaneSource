@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ANSHAN05",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"An Shan's Coloring Book\n\n<size=45>Chapter 5 - An Shan's Drawing Book</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-china",
-			actor = 501010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Let's see... Let's color this part with...",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,11 +34,11 @@ return {
 			}
 		},
 		{
+			actor = 501040,
 			actorShadow = true,
-			side = 0,
 			bgName = "bg_story_school",
 			actorName = "Fu Shun & Chang Chun & Tai Yuan",
-			actor = 501040,
+			side = 0,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "The last drawing is finished!",
@@ -66,10 +66,10 @@ return {
 			}
 		},
 		{
-			actorName = "Ning Hai & Ping Hai",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 502030,
+			actorName = "Ning Hai & Ping Hai",
+			bgName = "bg_story_school",
+			side = 0,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "Hooray!",
@@ -123,12 +123,12 @@ return {
 			}
 		},
 		{
-			say = "...I think An Shan got more into it than anyone else in the end...",
+			actor = 501030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 501030,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "...I think An Shan got more into it than anyone else in the end...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -239,12 +239,12 @@ return {
 			}
 		},
 		{
-			say = "Yat Sen?! Why are you here?",
+			actor = 502020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 502020,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "Yat Sen?! Why are you here?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -499,14 +499,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "Everyone",
 			say = "Heck yeah!",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

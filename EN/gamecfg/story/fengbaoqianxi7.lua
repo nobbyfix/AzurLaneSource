@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FENGBAOQIANXI7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "Hostile territory perimeter \n\tSiren Threat Assessment Rating: 4",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "battle-boss-4",
+			say = "Hostile territory perimeter \n\tSiren Threat Assessment Rating: 4",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -96,8 +96,8 @@ return {
 			}
 		},
 		{
-			actorName = "Transceiver",
 			side = 2,
+			actorName = "Transceiver",
 			nameColor = "#a9f548",
 			dir = 1,
 			say = "KRRRRRRRRRHHHHHHH...",
@@ -156,8 +156,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

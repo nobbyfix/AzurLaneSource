@@ -9,18 +9,18 @@ slot0.MAX_WORK_COUNT = 4
 slot0.MAX_SLOT = 10
 slot0.MAX_PREFAB_FLEET = 3
 
-slot0.register = function (slot0)
+function slot0.register(slot0)
 	slot0.data = {}
 	slot0.boxes = {}
 	slot0.prefabFleet = {}
 
-	for slot4 = 1, slot0.MAX_PREFAB_FLEET, 1 do
+	for slot4 = 1, uv0.MAX_PREFAB_FLEET do
 		slot0.prefabFleet[slot4] = CommnaderFleet.New({
 			id = slot4
 		})
 	end
 
-	for slot5 = 1, pg.gameset.commander_box_count.key_value, 1 do
+	for slot5 = 1, pg.gameset.commander_box_count.key_value do
 		slot0:addBox(CommanderBox.New({
 			id = slot5
 		}))
@@ -38,95 +38,98 @@ slot0.register = function (slot0)
 
 	slot0:on(25001, function (slot0)
 		for slot4, slot5 in ipairs(slot0.commanders) do
-			slot0:addCommander(Commander.New(slot5))
+			uv0:addCommander(Commander.New(slot5))
 		end
 
 		for slot4, slot5 in ipairs(slot0.box) do
-			slot0:updateBox(CommanderBox.New(slot5))
+			uv0:updateBox(CommanderBox.New(slot5))
 		end
 
 		for slot4, slot5 in ipairs(slot0.presets) do
 			slot6 = slot5.id
-			slot8 = {}
 
-			for slot12, slot13 in ipairs(slot7) do
-				if slot0:getCommanderById(slot13.id) then
-					slot8[slot13.pos] = slot14
+			for slot12, slot13 in ipairs(slot5.commandersid) do
+				if uv0:getCommanderById(slot13.id) then
+					-- Nothing
 				end
 			end
 
-			slot0.prefabFleet[slot6]:Update({
+			uv0.prefabFleet[slot6]:Update({
 				id = slot6,
 				name = slot0.name,
-				commanders = slot8
+				commanders = {
+					[slot13.pos] = slot14
+				}
 			})
 		end
 
-		slot0.boxUsageCount = slot0.usage_count or 0
-		slot0._mainUITimer = pg.TimeMgr.GetInstance():AddTimer("CommanderProxy", 0, 10, function ()
-			slot0:notification()
+		uv0.boxUsageCount = slot0.usage_count or 0
+		uv0._mainUITimer = pg.TimeMgr.GetInstance():AddTimer("CommanderProxy", 0, 10, function ()
+			uv0:notification()
 		end)
+
+		uv0:sendNotification(GAME.GET_COMMANDER_HOME)
 	end)
 end
 
-slot0.getPrefabFleetById = function (slot0, slot1)
+function slot0.getPrefabFleetById(slot0, slot1)
 	return slot0.prefabFleet[slot1]
 end
 
-slot0.getPrefabFleet = function (slot0)
+function slot0.getPrefabFleet(slot0)
 	return Clone(slot0.prefabFleet)
 end
 
-slot0.updatePrefabFleet = function (slot0, slot1)
+function slot0.updatePrefabFleet(slot0, slot1)
 	slot0.prefabFleet[slot1.id] = slot1
 
-	slot0:sendNotification(slot0.PREFAB_FLEET_UPDATE)
+	slot0:sendNotification(uv0.PREFAB_FLEET_UPDATE)
 end
 
-slot0.updatePrefabFleetName = function (slot0, slot1, slot2)
-	slot0.prefabFleet[slot1].updateName(slot3, slot2)
-	slot0:sendNotification(slot0.PREFAB_FLEET_UPDATE)
+function slot0.updatePrefabFleetName(slot0, slot1, slot2)
+	slot0.prefabFleet[slot1]:updateName(slot2)
+	slot0:sendNotification(uv0.PREFAB_FLEET_UPDATE)
 end
 
-slot0.getCommanderCnt = function (slot0)
+function slot0.getCommanderCnt(slot0)
 	return table.getCount(slot0.data)
 end
 
-slot0.getPoolById = function (slot0, slot1)
+function slot0.getPoolById(slot0, slot1)
 	return _.detect(slot0:getPools(), function (slot0)
-		return slot0.id == slot0
+		return slot0.id == uv0
 	end)
 end
 
-slot0.getPools = function (slot0)
+function slot0.getPools(slot0)
 	return slot0.pools
 end
 
-slot0.getBoxUseCnt = function (slot0)
+function slot0.getBoxUseCnt(slot0)
 	return slot0.boxUsageCount
 end
 
-slot0.updateBoxUseCnt = function (slot0, slot1)
+function slot0.updateBoxUseCnt(slot0, slot1)
 	slot0.boxUsageCount = slot0.boxUsageCount + slot1
 
-	slot0:sendNotification(slot0.RESERVE_CNT_UPDATED, slot0.boxUsageCount)
+	slot0:sendNotification(uv0.RESERVE_CNT_UPDATED, slot0.boxUsageCount)
 end
 
-slot0.resetBoxUseCnt = function (slot0)
+function slot0.resetBoxUseCnt(slot0)
 	slot0.boxUsageCount = 0
 
-	slot0:sendNotification(slot0.RESERVE_CNT_UPDATED, 0)
+	slot0:sendNotification(uv0.RESERVE_CNT_UPDATED, 0)
 end
 
-slot0.updateBox = function (slot0, slot1)
+function slot0.updateBox(slot0, slot1)
 	slot0.boxes[slot1.id] = slot1
 end
 
-slot0.addBox = function (slot0, slot1)
+function slot0.addBox(slot0, slot1)
 	slot0.boxes[slot1.id] = slot1
 end
 
-slot0.getBoxes = function (slot0)
+function slot0.getBoxes(slot0)
 	slot1 = {}
 
 	for slot5, slot6 in ipairs(slot0.boxes) do
@@ -136,37 +139,37 @@ slot0.getBoxes = function (slot0)
 	return slot1
 end
 
-slot0.getBoxById = function (slot0, slot1)
+function slot0.getBoxById(slot0, slot1)
 	return slot0.boxes[slot1]
 end
 
-slot0.getCommanderById = function (slot0, slot1)
+function slot0.getCommanderById(slot0, slot1)
 	if slot0.data[slot1] then
 		return slot2:clone()
 	end
 end
 
-slot0.addCommander = function (slot0, slot1)
+function slot0.addCommander(slot0, slot1)
 	slot0.data[slot1.id] = slot1
 
-	slot0:sendNotification(slot0.COMMANDER_ADDED, slot1:clone())
+	slot0:sendNotification(uv0.COMMANDER_ADDED, slot1:clone())
 end
 
-slot0.updateCommander = function (slot0, slot1)
+function slot0.updateCommander(slot0, slot1)
 	slot0.data[slot1.id] = slot1
 
-	slot0:sendNotification(slot0.COMMANDER_UPDATED, slot1:clone())
+	slot0:sendNotification(uv0.COMMANDER_UPDATED, slot1:clone())
 end
 
-slot0.removeCommanderById = function (slot0, slot1)
+function slot0.removeCommanderById(slot0, slot1)
 	slot0:checkPrefabFleet(slot1)
 
 	slot0.data[slot1] = nil
 
-	slot0:sendNotification(slot0.COMMANDER_DELETED, slot1)
+	slot0:sendNotification(uv0.COMMANDER_DELETED, slot1)
 end
 
-slot0.checkPrefabFleet = function (slot0, slot1)
+function slot0.checkPrefabFleet(slot0, slot1)
 	for slot5, slot6 in pairs(slot0.prefabFleet) do
 		if slot6:contains(slot1) then
 			slot6:removeCommander(slot1)
@@ -174,13 +177,13 @@ slot0.checkPrefabFleet = function (slot0, slot1)
 	end
 end
 
-slot0.notification = function (slot0)
+function slot0.notification(slot0)
 	if slot0:haveFinishedBox() then
-		slot0:sendNotification(slot0.COMMANDER_BOX_FINISHED)
+		slot0:sendNotification(uv0.COMMANDER_BOX_FINISHED)
 	end
 end
 
-slot0.haveFinishedBox = function (slot0)
+function slot0.haveFinishedBox(slot0)
 	for slot4, slot5 in pairs(slot0.boxes) do
 		if slot5:getState() == CommanderBox.STATE_FINISHED then
 			return true
@@ -190,12 +193,69 @@ slot0.haveFinishedBox = function (slot0)
 	return false
 end
 
-slot0.onRemove = function (slot0)
+function slot0.onRemove(slot0)
 	if slot0._mainUITimer then
 		pg.TimeMgr.GetInstance():RemoveTimer(slot0._mainUITimer)
 	end
 
-	slot0.super.onRemove(slot0)
+	slot0:RemoveCalcExpTimer()
+	uv0.super.onRemove(slot0)
+end
+
+function slot0.AddCommanderHome(slot0, slot1)
+	slot0.commanderHome = slot1
+
+	slot0:StartCalcExpTimer(GetNextHour(1) - pg.TimeMgr.GetInstance():GetServerTime())
+end
+
+function slot0.GetCommanderHome(slot0)
+	return slot0.commanderHome
+end
+
+function slot0.StartCalcExpTimer(slot0, slot1)
+	slot0:RemoveCalcExpTimer()
+
+	slot0.calcExpTimer = Timer.New(function ()
+		uv0:RemoveCalcExpTimer()
+		uv0:sendNotification(GAME.CALC_CATTERY_EXP, {
+			isPeriod = uv1 == 3600
+		})
+		uv0:StartCalcExpTimer(3600)
+	end, slot1, 1)
+
+	slot0.calcExpTimer:Start()
+end
+
+function slot0.RemoveCalcExpTimer(slot0)
+	if slot0.calcExpTimer then
+		slot0.calcExpTimer:Stop()
+
+		slot0.calcExpTimer = nil
+	end
+end
+
+function slot0.AnyCatteryExistOP(slot0)
+	if slot0:GetCommanderHome() then
+		return slot1:AnyCatteryExistOP()
+	end
+
+	return false
+end
+
+function slot0.AnyCatteryCanUse(slot0)
+	if slot0:GetCommanderHome() then
+		return slot1:AnyCatteryCanUse()
+	end
+
+	return false
+end
+
+function slot0.IsHome(slot0, slot1)
+	if slot0:GetCommanderHome() then
+		return slot2:CommanderInHome(slot1)
+	end
+
+	return false
 end
 
 return slot0

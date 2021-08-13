@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AIRICHANG6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"\"Virtual Connection Synchronicity\" - Daily Memorabilia\n\n<size=45>Chapter 6 - Judge Kizuna AI</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 10400010,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 10400010,
-			nameColor = "#a9f548",
 			say = "Virtual You- Wait! No! Judge Kizuna AI here! While I've never touched on the law before, sometimes you just gotta wing it, right?",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -532,16 +532,16 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 201210,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 201210,
-			nameColor = "#a9f548",
 			say = "*shudder* I just got the strangest feeling that somebody somewhere was doing something really stupid but... I'm just gonna let it go....",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

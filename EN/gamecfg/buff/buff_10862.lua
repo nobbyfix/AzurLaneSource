@@ -1,12 +1,12 @@
 return {
+	time = 8,
 	name = "强袭模式·EX",
 	init_effect = "jinengchufared",
-	id = 10862,
-	time = 5,
+	color = "red",
 	picture = "",
 	desc = "提高雷击属性",
 	stack = 1,
-	color = "red",
+	id = 10862,
 	icon = 10862,
 	last_effect = "",
 	blink = {
@@ -24,8 +24,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 3000,
-				attr = "torpedoPower"
+				attr = "torpedoPower",
+				number = 3000
 			}
 		}
 	}

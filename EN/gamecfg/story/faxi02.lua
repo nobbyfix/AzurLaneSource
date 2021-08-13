@@ -1,17 +1,17 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FAXI02",
+	once = true,
+	fadeType = 1,
 	occlusion = 2,
 	scripts = {
 		{
 			actor = 207020,
 			side = 0,
-			say = "According to the scouting report, there are four battleships, one light carrier, and six destroyers stationed at port, but none of them seem to be operational.",
-			dir = 2,
 			bgm = "level03",
+			dir = 1,
+			say = "According to the scouting report, there are four battleships, one light carrier, and six destroyers stationed at port, but none of them seem to be operational.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,7 +24,7 @@ return {
 		{
 			actor = 207020,
 			side = 0,
-			dir = 2,
+			dir = 1,
 			say = "However, it appears that the Siren forces are blockading them. If we are to enter the port, we have to break through their lines first.",
 			typewriter = {
 				speed = 0.05,
@@ -38,8 +38,8 @@ return {
 		{
 			actor = 204030,
 			side = 1,
-			say = "The Templar Knights have fallen in with the Sirens...? 'tis a sad day indeed...",
 			dir = 1,
+			say = "The Templar Knights have fallen in with the Sirens...? 'tis a sad day indeed...",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

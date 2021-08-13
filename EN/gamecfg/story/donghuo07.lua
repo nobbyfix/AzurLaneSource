@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "DONGHUO07",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "Log_AtX15.00252.5.142——Start Recording",
 			effects = {
@@ -29,12 +29,12 @@ return {
 			}
 		},
 		{
+			actor = 900071,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "Observer α",
 			dir = 1,
 			blackBg = true,
-			actor = 900071,
-			actorName = "Observer α",
 			say = "Congratulations, you have eliminated all of your opponents, you have achieved victory for this round~~",
 			typewriter = {
 				speed = 0.05,
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
+			actor = 900071,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "Observer α",
 			dir = 1,
 			blackBg = true,
-			actor = 900071,
-			actorName = "Observer α",
 			say = "After all, this was “Key Point G” we’re dealing with. They “saved the world”, again~ Hehehe.",
 			typewriter = {
 				speed = 0.05,
@@ -95,12 +95,12 @@ return {
 			}
 		},
 		{
+			actor = 900071,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "Observer α",
 			dir = 1,
 			blackBg = true,
-			actor = 900071,
-			actorName = "Observer α",
 			say = "We would not dare, after all, you are the “key” to our Creator.",
 			typewriter = {
 				speed = 0.05,
@@ -112,12 +112,12 @@ return {
 			}
 		},
 		{
+			actor = 900071,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "Observer α",
 			dir = 1,
 			blackBg = true,
-			actor = 900071,
-			actorName = "Observer α",
 			say = "After all, we have been molded to your reflect you, \"Flawless\"... more or less... hehehe.",
 			typewriter = {
 				speed = 0.05,
@@ -145,12 +145,12 @@ return {
 			}
 		},
 		{
+			actor = 900071,
 			nameColor = "#D6341DFF",
 			side = 2,
+			actorName = "Observer α",
 			dir = 1,
 			blackBg = true,
-			actor = 900071,
-			actorName = "Observer α",
 			say = "So, as per our agreement, will you allow us to conduct another round of “game”, what is your choice?",
 			typewriter = {
 				speed = 0.05,

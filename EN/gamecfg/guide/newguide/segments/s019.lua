@@ -6,14 +6,14 @@ return {
 			style = {
 				text = "Weapons enhanced! Firepower increased!！！",
 				mode = 2,
-				dir = -1,
 				posY = -301,
+				dir = -1,
 				posX = 422
 			},
 			ui = {
 				hideChildEvent = true,
+				path = "/OverlayCamera/Overlay/UIMain/EquipUpgradeUI(Clone)/finish_panel/bg",
 				pathIndex = -1,
-				path = "/OverlayCamera/Overlay/UIMain/EquipUpgradeUI(Clone)/finish_panel",
 				triggerType = {
 					1
 				},
@@ -27,9 +27,9 @@ return {
 			alpha = 0,
 			ui = {
 				hideChildEvent = true,
-				pathIndex = -1,
 				delay = 0.5,
-				path = "/OverlayCamera/Overlay/UIMain/EquipUpgradeUI(Clone)",
+				path = "/OverlayCamera/Overlay/UIMain/EquipUpgradeUI(Clone)/bg",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -44,13 +44,13 @@ return {
 			style = {
 				text = "Tap back to stop viewing character details.",
 				mode = 2,
-				dir = -1,
 				posY = 211.84,
+				dir = -1,
 				posX = -105.86
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/blur_panel/adapt/top/back_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -66,13 +66,13 @@ return {
 			style = {
 				text = "Tap back to leave the dock.",
 				mode = 2,
-				dir = -1,
 				posY = 230.33,
+				dir = -1,
 				posX = -231.7
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/blur_panel/adapt/top/back",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

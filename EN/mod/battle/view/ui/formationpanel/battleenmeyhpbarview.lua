@@ -3,7 +3,7 @@ slot1 = class("BattleEnmeyHpBarView")
 ys.Battle.BattleEnmeyHpBarView = slot1
 slot1.__name = "BattleEnmeyHpBarView"
 
-slot1.Ctor = function (slot0, slot1)
+function slot1.Ctor(slot0, slot1)
 	slot0._monsterTF = slot1
 	slot0.orgPos = slot1.anchoredPosition
 	slot0.HidePos = slot0.orgPos + Vector2(0, 100)
@@ -23,11 +23,11 @@ slot1.Ctor = function (slot0, slot1)
 	slot0:Show(false)
 end
 
-slot1.GetCurrentTarget = function (slot0)
+function slot1.GetCurrentTarget(slot0)
 	return slot0._targetUnit
 end
 
-slot1.Show = function (slot0, slot1)
+function slot1.Show(slot0, slot1)
 	if slot0._curActive ~= slot1 then
 		slot0._curActive = slot1
 
@@ -39,7 +39,7 @@ slot1.Show = function (slot0, slot1)
 	end
 end
 
-slot1.SetIconType = function (slot0, slot1)
+function slot1.SetIconType(slot0, slot1)
 	if slot0._eliteType == slot1 then
 		return
 	end
@@ -50,7 +50,7 @@ slot1.SetIconType = function (slot0, slot1)
 	setActive(slot0._eliteLabel, slot1)
 end
 
-slot1.SwitchTarget = function (slot0, slot1, slot2)
+function slot1.SwitchTarget(slot0, slot1, slot2)
 	for slot6, slot7 in pairs(slot2) do
 		if slot7:IsBoss() then
 			slot0._isExistBoos = true
@@ -74,25 +74,20 @@ slot1.SwitchTarget = function (slot0, slot1, slot2)
 	slot0:UpdateHpText(slot1)
 	slot0:SetIconType(slot1:GetTemplate().icon_type ~= 0)
 
-	slot0._typeIcon.sprite = GetSpriteFromAtlas("shiptype", shipType2Battleprint(slot0.Battle.BattleDataFunction.GetEnemyTypeDataByType(slot1:GetTemplate().type).type))
+	slot0._typeIcon.sprite = GetSpriteFromAtlas("shiptype", shipType2Battleprint(uv0.Battle.BattleDataFunction.GetEnemyTypeDataByType(slot1:GetTemplate().type).type))
 
 	slot0._typeIcon:SetNativeSize()
-
-	if not slot0._scrollNameText then
-		slot0._scrollNameText = ScrollTxt:changeToScroll(slot0._nameTF)
-	end
-
-	slot0._scrollNameText:setText(slot1._tmpData.name)
+	changeToScrollText(slot0._nameTF, slot1._tmpData.name)
 
 	slot0._lvText.text = " Lv." .. slot1:GetLevel()
 end
 
-slot1.UpdateHpText = function (slot0)
-	slot6, slot8 = slot0._targetUnit:GetHP()
+function slot1.UpdateHpText(slot0)
+	slot1, slot2 = slot0._targetUnit:GetHP()
 	slot0._hpBarText.text = tostring(math.floor(slot1) .. "/" .. math.floor(slot2))
 end
 
-slot1.UpdateHpBar = function (slot0)
+function slot1.UpdateHpBar(slot0)
 	if slot0._flag == false or slot0._isExistBoos == true then
 		return
 	end
@@ -102,7 +97,7 @@ slot1.UpdateHpBar = function (slot0)
 
 	if slot0._targetUnit:GetHPRate() < slot0._hpBarProgress.fillAmount then
 		LeanTween.value(slot0._hpBar, slot2, slot1, 0.5):setOnUpdate(System.Action_float(function (slot0)
-			slot0._hpBarProgress.fillAmount = slot0
+			uv0._hpBarProgress.fillAmount = slot0
 		end))
 	else
 		slot0._hpBarProgress.fillAmount = slot1
@@ -113,27 +108,27 @@ slot1.UpdateHpBar = function (slot0)
 	end
 end
 
-slot1.RemoveUnit = function (slot0, slot1)
+function slot1.RemoveUnit(slot0, slot1)
 	slot0._targetUnit = nil
 	slot0._flag = false
 
 	function slot2()
-		slot0._flag = true
+		uv0._flag = true
 
-		slot0:Show(false)
+		uv0:Show(false)
 	end
 
 	if slot1 then
 		slot0._deathTimer = pg.TimeMgr.GetInstance():AddBattleTimer("death", 0, 1, function ()
-			slot0()
-			pg.TimeMgr.GetInstance():RemoveBattleTimer(slot1._deathTimer)
+			uv0()
+			pg.TimeMgr.GetInstance():RemoveBattleTimer(uv1._deathTimer)
 		end)
 	else
 		slot2()
 	end
 end
 
-slot1.Dispose = function (slot0)
+function slot1.Dispose(slot0)
 	slot0:Show(false)
 	pg.TimeMgr.GetInstance():RemoveBattleTimer(slot0._deathTimer)
 	LeanTween.cancel(slot0._hpBar)
@@ -143,12 +138,4 @@ slot1.Dispose = function (slot0)
 	slot0._hpBarTF = nil
 	slot0._monsterTF = nil
 	slot0._monster = nil
-
-	if slot0._scrollNameText then
-		slot0._scrollNameText:destroy()
-
-		slot0._scrollNameText = nil
-	end
 end
-
-return

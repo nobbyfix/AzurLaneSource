@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "模拟战敌方后排激活buff",
 	init_effect = "",
+	name = "模拟战敌方后排激活buff",
+	time = 0,
 	picture = "",
 	desc = "模拟战敌方后排激活buff",
 	stack = 1,

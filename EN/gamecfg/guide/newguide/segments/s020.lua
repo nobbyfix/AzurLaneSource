@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "Use your mission rewards to <color=#ff7d36>build a new ship</color>.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/bottomPanel/btm/buttons_container/buildButton",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,13 +28,13 @@ return {
 			style = {
 				text = "This time, try building a <color=#ff7d36>heavy ship</color>!",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "UICamera/Canvas/UIMain/BuildShipUI(Clone)/bg/main/gallery/toggle_bg/toggles/heavy/frame",
+				pathIndex = -1,
 				triggerType = {
 					2
 				},
@@ -49,13 +49,13 @@ return {
 			style = {
 				text = "You've got enough resources! Tap <color=#ff7d36>build</color> to get started.",
 				mode = 1,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 205.91
 			},
 			ui = {
-				pathIndex = -1,
 				path = "UICamera/Canvas/UIMain/BuildShipUI(Clone)/bg/main/gallery/start_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -70,13 +70,13 @@ return {
 			style = {
 				text = "Now tap <color=#ff7d36>confirm</color> to build your new ship.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/build_msg/window/btns/confirm_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

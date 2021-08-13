@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "防鱼雷隔舱T2",
 	init_effect = "",
-	id = 6021,
+	name = "防鱼雷隔舱T2",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "受到鱼雷伤害减少20%",
 	stack = 1,
-	color = "yellow",
+	id = 6021,
 	icon = 6021,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.2,
-				attr = "injureRatioByBulletTorpedo"
+				attr = "injureRatioByBulletTorpedo",
+				number = -0.2
 			}
 		}
 	}

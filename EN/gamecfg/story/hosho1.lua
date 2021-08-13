@@ -258,8 +258,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequenceSpd = 2,
 			BgFade = true,
 			sequence = {

@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "受到空弹影响降低",
 	cd = 0,
-	picture = "0",
-	desc = "受到空弹影响降低",
 	painting = 1,
 	id = 2190,
+	picture = "0",
 	castCV = "skill",
+	desc = "受到空弹影响降低",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,10 +17,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetAllHelp",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 2192
 			}

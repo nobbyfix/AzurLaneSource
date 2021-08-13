@@ -1,13 +1,13 @@
 slot0 = class("RankCard")
 slot0.TYPE_SELF = 1
 slot0.TYPE_OTHER = 2
-slot1 = {
+slot0.COLORS = {
 	"#ffde5c",
 	"#95b0f9",
 	"#cfc1ba",
 	"#797d81"
 }
-slot2 = {
+slot1 = {
 	{
 		1,
 		0.8705882352941177,
@@ -30,7 +30,7 @@ slot2 = {
 	}
 }
 
-slot0.Ctor = function (slot0, slot1, slot2)
+function slot0.Ctor(slot0, slot1, slot2)
 	slot0._go = go(slot1)
 	slot0._tf = slot1
 	slot0._type = slot2
@@ -45,36 +45,47 @@ slot0.Ctor = function (slot0, slot1, slot2)
 	slot0.scoreIconTF = findTF(slot0._tf, "frame/score_icon"):GetComponent(typeof(Image))
 	slot0.iconTF = findTF(slot0._tf, "icon")
 	slot0.levelTxt = findTF(slot0.iconTF, "level_bg/Text"):GetComponent(typeof(Text))
+
+	ClearTweenItemAlphaAndWhite(slot0._go)
 end
 
-slot0.update = function (slot0, slot1)
+function slot0.update(slot0, slot1, slot2)
 	slot0.rankVO = slot1
 	slot0.nameTF.text = slot1.name
-	slot0.numberTF.text = slot1.rank
-	slot4 = (slot1.rank > 0 and slot2) or 4
+	slot3 = slot1.rank
+	slot0.numberTF.text = slot3
 	slot0.levelTxt.text = "Lv." .. slot1.lv
 
-	setActive(slot0.NumImgTF, math.min(setActive, 4) < 4)
-	setImageSprite(slot0.frameTF, GetSpriteFromAtlas("billboardframe", "bg" .. math.min))
-	setImageSprite(slot0.NumImgTF, GetSpriteFromAtlas("billboardframe", "bgn" .. math.min), true)
+	setActive(slot0.NumImgTF, math.min(slot3 > 0 and slot3 or 4, 4) < 4)
+	setImageSprite(slot0.frameTF, GetSpriteFromAtlas("billboardframe", "bg" .. slot4))
+	setImageSprite(slot0.NumImgTF, GetSpriteFromAtlas("billboardframe", "bgn" .. slot4), true)
 
-	slot0.frameBgTF.color = Color.New(slot0[math.min][1], slot0[math.min][2], slot0[math.min][3])
+	slot5 = uv0[slot4]
+	slot0.frameBgTF.color = Color.New(slot5[1], slot5[2], slot5[3])
 
-	if slot0._type == slot1.TYPE_OTHER then
-		setActive(slot0.numberTF, slot3 >= 4)
+	if slot0._type == uv1.TYPE_OTHER then
+		setActive(slot0.numberTF, slot4 >= 4)
 
-		slot0.scoreTF.text = setColorStr(slot1:getPowerTxt(), slot2[slot3])
-	elseif slot0._type == slot1.TYPE_SELF then
-		setActive(slot0.numberTF, slot2 ~= 0 and slot3 >= 4)
-		setActive(slot0.notonlistTF, slot2 == 0)
+		slot0.scoreTF.text = setColorStr(slot1:getPowerTxt(), uv1.COLORS[slot4])
+	elseif slot0._type == uv1.TYPE_SELF then
+		setActive(slot0.numberTF, slot3 ~= 0 and slot4 >= 4)
+		setActive(slot0.notonlistTF, slot3 == 0)
 
 		slot0.scoreTF.text = slot1:getPowerTxt()
 	end
 
-	setActive(slot0.scoreIconTF, PowerRank:getScoreIcon(slot1.type))
+	slot6 = PowerRank:getScoreIcon(slot1.type)
 
-	if PowerRank.getScoreIcon(slot1.type) then
-		setImageSprite(slot0.scoreIconTF, GetSpriteFromAtlas(slot5[1], slot5[2]), true)
+	setActive(slot0.scoreIconTF, slot6)
+
+	if slot6 then
+		if slot1.type == PowerRank.TYPE_PT then
+			if slot2 then
+				setImageSprite(slot0.scoreIconTF, LoadSprite(pg.item_data_statistics[id2ItemId(getProxy(ActivityProxy):getActivityById(slot2):getConfig("config_id"))].icon))
+			end
+		else
+			setImageSprite(slot0.scoreIconTF, GetSpriteFromAtlas(slot6[1], slot6[2]), true)
+		end
 	end
 
 	LoadImageSpriteAsync("emblem/" .. slot1.arenaRank, slot0.emblemTF)
@@ -102,15 +113,18 @@ slot0.update = function (slot0, slot1)
 	TweenItemAlphaAndWhite(slot0._go)
 end
 
-slot0.clear = function (slot0)
-	setActive(slot0.notonlistTF, false)
+function slot0.clear(slot0)
+	ClearTweenItemAlphaAndWhite(slot0._go)
+
+	if not IsNil(slot0.notonlistTF) then
+		setActive(slot0.notonlistTF, false)
+	end
 
 	slot0.scoreTF.text = 0
 	slot0.numberTF.text = 0
 end
 
-slot0.dispose = function (slot0, ...)
-	return
+function slot0.dispose(slot0, ...)
 end
 
 return slot0

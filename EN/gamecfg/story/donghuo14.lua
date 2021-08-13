@@ -1,13 +1,13 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
 	id = "DONGHUO14",
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			actorName = "Helena",
 			side = 2,
+			actorName = "Helena",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -18,8 +18,8 @@ return {
 			}
 		},
 		{
-			actorName = "Helena",
 			side = 2,
+			actorName = "Helena",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -30,8 +30,8 @@ return {
 			}
 		},
 		{
-			actorName = "North Carolina",
 			side = 0,
+			actorName = "North Carolina",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -42,8 +42,8 @@ return {
 			}
 		},
 		{
-			actorName = "Washington",
 			side = 0,
+			actorName = "Washington",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -54,8 +54,8 @@ return {
 			}
 		},
 		{
-			actorName = "Washington",
 			side = 0,
+			actorName = "Washington",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -66,8 +66,8 @@ return {
 			}
 		},
 		{
-			actorName = "Washington",
 			side = 0,
+			actorName = "Washington",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "HAMAN2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Hammann Observation Diary\n\n<size=45>Chapter 2: Unhappiness, Part 1</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			say = "A minute after Hammann chased me out of the office...",
+			bgm = "story-1",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			bgm = "story-1",
+			say = "A minute after Hammann chased me out of the office...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -38,14 +38,14 @@ return {
 			}
 		},
 		{
+			actor = 101250,
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			actor = 101250,
 			say = "That big idiot! Even though I offered to help, \"it's not good to push yourself too hard\"...? What's with that attitude?!",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -70,10 +70,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.2,
 					number = 1,
-					type = "shake"
+					dur = 0.2,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
@@ -108,14 +108,14 @@ return {
 			},
 			action = {
 				{
-					y = -15,
-					dur = 0.6,
 					number = 1,
-					type = "shake"
+					dur = 0.6,
+					type = "shake",
+					y = -15
 				},
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 1.2,
 					dur = 0.1,
 					number = 3
@@ -159,10 +159,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.1,
 					number = 2,
-					type = "shake"
+					dur = 0.1,
+					type = "shake",
+					y = 30
 				}
 			}
 		},
@@ -182,14 +182,14 @@ return {
 			},
 			action = {
 				{
-					y = -15,
-					dur = 0.6,
 					number = 1,
-					type = "shake"
+					dur = 0.6,
+					type = "shake",
+					y = -15
 				},
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 1.2,
 					dur = 0.1,
 					number = 3
@@ -212,14 +212,14 @@ return {
 			},
 			action = {
 				{
-					y = -15,
-					dur = 0.6,
 					number = 1,
-					type = "shake"
+					dur = 0.6,
+					type = "shake",
+					y = -15
 				},
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 1.2,
 					dur = 0.1,
 					number = 3
@@ -242,10 +242,10 @@ return {
 			},
 			action = {
 				{
-					y = -30,
-					dur = 1,
 					number = 1,
-					type = "shake"
+					dur = 1,
+					type = "shake",
+					y = -30
 				}
 			}
 		},
@@ -316,8 +316,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.6,
 					x = 15,
 					number = 1
@@ -340,11 +340,11 @@ return {
 			}
 		},
 		{
+			actor = 101250,
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			blackBg = true,
-			actor = 101250,
 			say = "Why'd I chase Commander out of the office?!",
 			typewriter = {
 				speed = 0.05,
@@ -356,10 +356,10 @@ return {
 			},
 			action = {
 				{
-					y = 30,
-					dur = 0.15,
 					number = 3,
-					type = "shake"
+					dur = 0.15,
+					type = "shake",
+					y = 30
 				}
 			}
 		}

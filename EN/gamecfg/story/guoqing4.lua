@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1,
 	mode = 2,
-	id = "GUOQING4",
-	once = true,
 	fadeType = 1,
+	once = true,
+	id = "GUOQING4",
 	scripts = {
 		{
 			actor = 307060,
@@ -28,8 +28,8 @@ return {
 			actor = 301090,
 			actorName = "？？？",
 			nameColor = "#ff0000",
-			say = "…",
 			side = 1,
+			say = "…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -98,12 +98,12 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 0,
 			actorName = "{namecode:96}",
-			soundeffect = "event:/battle/boom2",
-			actor = 307060,
 			nameColor = "#a9f548",
 			say = "What the hell?! Watch where you're shooting! Hey, friendly fire! I'm not an enemy!",
+			soundeffect = "event:/battle/boom2",
 			shake = {
 				speed = 1,
 				number = 3
@@ -143,6 +143,25 @@ return {
 			nameColor = "#ff0000",
 			side = 1,
 			say = "EXTERMINATE... EXTERMINATE...",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307060,
+			actorName = "{namecode:96}",
+			side = 0,
+			nameColor = "#a9f548",
+			say = "Son of a... They've made a Pawn out of Akatsuki...",
+			shake = {
+				speed = 1,
+				number = 3
+			},
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "偶像灯光特效",
 	init_effect = "",
-	id = 8651,
+	name = "偶像灯光特效",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8651,
 	icon = 8650,
 	last_effect = "juguangdeng_STG",
 	effect_list = {}

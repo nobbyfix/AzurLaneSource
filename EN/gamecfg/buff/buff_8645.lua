@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "光辉buff",
 	init_effect = "",
-	id = 8645,
+	name = "光辉buff",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8645,
 	icon = 8645,
 	last_effect = "music_huanraoyinfu_yangyandanchuan",
 	effect_list = {}

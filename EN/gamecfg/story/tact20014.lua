@@ -1,37 +1,16 @@
 return {
-	once = true,
+	id = "TACT20014",
 	mode = 2,
 	continueBgm = true,
-	id = "TACT20014",
+	once = true,
 	scripts = {
 		{
+			soundeffect = "event:/ui/alarm",
 			side = 0,
-			withoutPainting = true,
-			actorName = "SYSTEM",
+			nameColor = "#ff0000",
+			say = "GAMBIT SEQUENCE INITIATED. COMMENCE IMMEDIATE DISPOSAL OF THE BACKUP OF THE ORIGINAL.",
 			dir = 0,
 			bgm = "story-5",
-			soundeffect = "event:/ui/alarm",
-			actor = 900011,
-			nameColor = "#ff0000",
-			say = "GAMBIT SEQUENCE INITIATED. COMMENCE IMMEDIATE DISPOSAL OF THE BACKUP OF THE ORIGINAL.",
-			shake = {
-				speed = 1,
-				number = 3
-			},
-			typewriter = {
-				speed = 0.02,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			side = 0,
-			say = "GAMBIT SEQUENCE INITIATED. COMMENCE IMMEDIATE DISPOSAL OF THE BACKUP OF THE ORIGINAL.",
-			nameColor = "#ff0000",
-			dir = 0,
 			actor = 900011,
 			actorName = "SYSTEM",
 			withoutPainting = true,
@@ -49,13 +28,34 @@ return {
 			}
 		},
 		{
-			side = 0,
-			say = "GAMBIT SEQUENCE INITIATED. COMMENCE IMMEDIATE DISPOSAL OF THE BACKUP OF THE ORIGINAL.",
-			nameColor = "#ff0000",
-			dir = 0,
 			actor = 900011,
+			side = 0,
+			nameColor = "#ff0000",
 			actorName = "SYSTEM",
+			dir = 0,
 			withoutPainting = true,
+			say = "GAMBIT SEQUENCE INITIATED. COMMENCE IMMEDIATE DISPOSAL OF THE BACKUP OF THE ORIGINAL.",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.02,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 900011,
+			side = 0,
+			nameColor = "#ff0000",
+			actorName = "SYSTEM",
+			dir = 0,
+			withoutPainting = true,
+			say = "GAMBIT SEQUENCE INITIATED. COMMENCE IMMEDIATE DISPOSAL OF THE BACKUP OF THE ORIGINAL.",
 			shake = {
 				speed = 1,
 				number = 3
@@ -150,7 +150,7 @@ return {
 			side = 2,
 			nameColor = "#ff0000",
 			actorName = "Tester β",
-			say = "Now go! Continue down the paTH you beLIEeve in to ITs final DESTINatIon! ",
+			say = "Now go! Continue down the paTH you beLIEve in to ITs final DESTINatIon! ",
 			shake = {
 				speed = 1,
 				number = 3
@@ -165,8 +165,8 @@ return {
 			}
 		},
 		{
-			sequenceSpd = 2,
 			mode = 1,
+			sequenceSpd = 2,
 			bgFade = true,
 			sequence = {
 				{

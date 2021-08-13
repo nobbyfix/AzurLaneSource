@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "龙凤2",
 	init_effect = "",
-	id = 12871,
+	name = "龙凤2",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 12871,
 	icon = 12870,
 	last_effect = "",
 	effect_list = {
@@ -29,7 +29,7 @@ return {
 				buff_id = 12874,
 				target = "TargetShipTag",
 				ship_tag_list = {
-					"ryuhou"
+					"Ryuho"
 				}
 			}
 		},
@@ -49,11 +49,11 @@ return {
 				"onFoeDying"
 			},
 			arg_list = {
-				skill_id = 12872,
 				target = "TargetShipTag",
 				killer = "self",
+				skill_id = 12872,
 				ship_tag_list = {
-					"ryuhou"
+					"Ryuho"
 				}
 			}
 		}

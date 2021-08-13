@@ -1,20 +1,20 @@
 pg = pg or {}
 pg.technology_data_template = {
 	{
+		name = "C-153-MI",
+		rarity = 1,
+		time = 21600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_c",
+		blueprint_version = 1,
 		id = 1,
-		rarity = 1,
-		time = 21600,
-		type = 1,
-		name = "C-153-MI",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
-		condition = 0,
-		bg = "1",
-		blueprint_version = 1,
-		sub_name = "Medium Project",
-		label = "tag_red",
 		bg_icon = "item_1",
-		label_color = "tag_c",
 		consume = {},
 		drop_client = {
 			{
@@ -40,20 +40,20 @@ pg.technology_data_template = {
 		}
 	},
 	{
+		name = "C-153-MI",
+		rarity = 1,
+		time = 21600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_c",
+		blueprint_version = 1,
 		id = 2,
-		rarity = 1,
-		time = 21600,
-		type = 1,
-		name = "C-153-MI",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
-		condition = 0,
-		bg = "1",
-		blueprint_version = 1,
-		sub_name = "Medium Project",
-		label = "tag_red",
 		bg_icon = "item_1",
-		label_color = "tag_c",
 		consume = {},
 		drop_client = {
 			{
@@ -79,20 +79,20 @@ pg.technology_data_template = {
 		}
 	},
 	{
-		id = 3,
+		name = "C-185-MI",
 		rarity = 2,
 		time = 28800,
 		type = 1,
-		name = "C-185-MI",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "item_2",
 		label_color = "tag_c",
+		blueprint_version = 1,
+		id = 3,
+		bg_icon = "item_2",
 		consume = {},
 		drop_client = {
 			{
@@ -118,20 +118,20 @@ pg.technology_data_template = {
 		}
 	},
 	{
-		id = 4,
+		name = "C-185-MI",
 		rarity = 2,
 		time = 28800,
 		type = 1,
-		name = "C-185-MI",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "item_2",
 		label_color = "tag_c",
+		blueprint_version = 1,
+		id = 4,
+		bg_icon = "item_2",
 		consume = {},
 		drop_client = {
 			{
@@ -157,20 +157,20 @@ pg.technology_data_template = {
 		}
 	},
 	[11] = {
-		id = 11,
+		name = "B-622-MI",
 		rarity = 1,
 		time = 14400,
 		type = 1,
-		name = "B-622-MI",
-		lv_limit = 30,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52001,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_1",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 11,
+		bg_icon = "battle_1",
 		consume = {},
 		drop_client = {
 			{
@@ -191,20 +191,20 @@ pg.technology_data_template = {
 		}
 	},
 	[12] = {
-		id = 12,
+		name = "B-636-MI",
 		rarity = 1,
 		time = 14400,
 		type = 1,
-		name = "B-636-MI",
-		lv_limit = 30,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52002,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_1",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 12,
+		bg_icon = "battle_1",
 		consume = {},
 		drop_client = {
 			{
@@ -225,20 +225,20 @@ pg.technology_data_template = {
 		}
 	},
 	[13] = {
-		id = 13,
+		name = "B-654-MI",
 		rarity = 1,
 		time = 14400,
 		type = 1,
-		name = "B-654-MI",
-		lv_limit = 30,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52003,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_1",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 13,
+		bg_icon = "battle_1",
 		consume = {},
 		drop_client = {
 			{
@@ -259,20 +259,20 @@ pg.technology_data_template = {
 		}
 	},
 	[14] = {
-		id = 14,
+		name = "B-682-MI",
 		rarity = 1,
 		time = 14400,
 		type = 1,
-		name = "B-682-MI",
-		lv_limit = 40,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52004,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 40,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_1",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 14,
+		bg_icon = "battle_1",
 		consume = {},
 		drop_client = {
 			{
@@ -293,20 +293,20 @@ pg.technology_data_template = {
 		}
 	},
 	[15] = {
-		id = 15,
+		name = "B-235-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "B-235-MI",
-		lv_limit = 50,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52005,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 50,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_2",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 15,
+		bg_icon = "battle_2",
 		consume = {},
 		drop_client = {
 			{
@@ -327,20 +327,20 @@ pg.technology_data_template = {
 		}
 	},
 	[16] = {
-		id = 16,
+		name = "B-268-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "B-268-MI",
-		lv_limit = 60,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52006,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 60,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_2",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 16,
+		bg_icon = "battle_2",
 		consume = {},
 		drop_client = {
 			{
@@ -361,20 +361,20 @@ pg.technology_data_template = {
 		}
 	},
 	[17] = {
-		id = 17,
+		name = "B-128-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "B-128-MI",
-		lv_limit = 65,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52007,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 65,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_2",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 17,
+		bg_icon = "battle_2",
 		consume = {},
 		drop_client = {
 			{
@@ -395,20 +395,20 @@ pg.technology_data_template = {
 		}
 	},
 	[18] = {
-		id = 18,
+		name = "B-164-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "B-164-MI",
-		lv_limit = 70,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52008,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 70,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_2",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 18,
+		bg_icon = "battle_2",
 		consume = {},
 		drop_client = {
 			{
@@ -429,20 +429,20 @@ pg.technology_data_template = {
 		}
 	},
 	[21] = {
-		id = 21,
+		name = "T-018-MI",
 		rarity = 1,
 		time = 10800,
 		type = 1,
-		name = "T-018-MI",
-		lv_limit = 30,
-		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		condition = 52021,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "item_1",
 		label_color = "tag_t",
+		blueprint_version = 1,
+		id = 21,
+		bg_icon = "item_1",
 		consume = {},
 		drop_client = {
 			{
@@ -463,20 +463,20 @@ pg.technology_data_template = {
 		}
 	},
 	[22] = {
-		id = 22,
+		name = "T-384-MI",
 		rarity = 1,
 		time = 14400,
 		type = 1,
-		name = "T-384-MI",
-		lv_limit = 30,
-		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		condition = 52022,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "item_1",
 		label_color = "tag_t",
+		blueprint_version = 1,
+		id = 22,
+		bg_icon = "item_1",
 		consume = {},
 		drop_client = {
 			{
@@ -497,20 +497,20 @@ pg.technology_data_template = {
 		}
 	},
 	[23] = {
-		id = 23,
+		name = "T-249-MI",
 		rarity = 2,
 		time = 21600,
 		type = 1,
-		name = "T-249-MI",
-		lv_limit = 30,
-		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		condition = 52023,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "item_2",
 		label_color = "tag_t",
+		blueprint_version = 1,
+		id = 23,
+		bg_icon = "item_2",
 		consume = {},
 		drop_client = {
 			{
@@ -531,20 +531,20 @@ pg.technology_data_template = {
 		}
 	},
 	[31] = {
-		id = 31,
+		name = "E-031-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "E-031-MI",
-		lv_limit = 30,
-		desc = "Attempting to determine the relationship between the Wisdom Cube and shipgirls' rigging requires a large body of experimental evidence. Provide unused rigging to serve as experimental specimens.",
 		condition = 52031,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Attempting to determine the relationship between the Wisdom Cube and shipgirls' rigging requires a large body of experimental evidence. Provide unused rigging to serve as experimental specimens.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "item_1",
 		label_color = "tag_e",
+		blueprint_version = 1,
+		id = 31,
+		bg_icon = "item_1",
 		consume = {},
 		drop_client = {
 			{
@@ -565,20 +565,20 @@ pg.technology_data_template = {
 		}
 	},
 	[32] = {
-		id = 32,
+		name = "E-315-MI",
 		rarity = 2,
 		time = 7200,
 		type = 1,
-		name = "E-315-MI",
-		lv_limit = 30,
-		desc = "Attempting to determine the relationship between the Wisdom Cube and shipgirls' rigging requires a large body of experimental evidence. Provide unused rigging to serve as experimental specimens.",
 		condition = 52032,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Attempting to determine the relationship between the Wisdom Cube and shipgirls' rigging requires a large body of experimental evidence. Provide unused rigging to serve as experimental specimens.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "item_2",
 		label_color = "tag_e",
+		blueprint_version = 1,
+		id = 32,
+		bg_icon = "item_2",
 		consume = {},
 		drop_client = {
 			{
@@ -599,20 +599,20 @@ pg.technology_data_template = {
 		}
 	},
 	[33] = {
-		id = 33,
+		name = "E-131-MI",
 		rarity = 2,
 		time = 21600,
 		type = 1,
-		name = "E-131-MI",
-		lv_limit = 50,
-		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "item_2",
 		label_color = "tag_e",
+		blueprint_version = 1,
+		id = 33,
+		bg_icon = "item_2",
 		consume = {
 			{
 				2,
@@ -644,20 +644,20 @@ pg.technology_data_template = {
 		}
 	},
 	[34] = {
-		id = 34,
+		name = "E-159-MI",
 		rarity = 2,
 		time = 21600,
 		type = 1,
-		name = "E-159-MI",
-		lv_limit = 50,
-		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "item_2",
 		label_color = "tag_e",
+		blueprint_version = 1,
+		id = 34,
+		bg_icon = "item_2",
 		consume = {
 			{
 				2,
@@ -689,20 +689,20 @@ pg.technology_data_template = {
 		}
 	},
 	[35] = {
-		id = 35,
+		name = "E-174-MI",
 		rarity = 2,
 		time = 21600,
 		type = 1,
-		name = "E-174-MI",
-		lv_limit = 50,
-		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "item_2",
 		label_color = "tag_e",
+		blueprint_version = 1,
+		id = 35,
+		bg_icon = "item_2",
 		consume = {
 			{
 				2,
@@ -734,20 +734,20 @@ pg.technology_data_template = {
 		}
 	},
 	[36] = {
-		id = 36,
+		name = "E-192-MI",
 		rarity = 2,
 		time = 21600,
 		type = 1,
-		name = "E-192-MI",
-		lv_limit = 50,
-		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "item_2",
 		label_color = "tag_e",
+		blueprint_version = 1,
+		id = 36,
+		bg_icon = "item_2",
 		consume = {
 			{
 				2,
@@ -779,20 +779,20 @@ pg.technology_data_template = {
 		}
 	},
 	[37] = {
-		id = 37,
+		name = "E-118-MI",
 		rarity = 2,
 		time = 21600,
 		type = 1,
-		name = "E-118-MI",
-		lv_limit = 50,
-		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "item_2",
 		label_color = "tag_e",
+		blueprint_version = 1,
+		id = 37,
+		bg_icon = "item_2",
 		consume = {
 			{
 				2,
@@ -824,20 +824,20 @@ pg.technology_data_template = {
 		}
 	},
 	[38] = {
-		id = 38,
+		name = "E-144-MI",
 		rarity = 2,
 		time = 21600,
 		type = 1,
-		name = "E-144-MI",
-		lv_limit = 50,
-		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "item_2",
 		label_color = "tag_e",
+		blueprint_version = 1,
+		id = 38,
+		bg_icon = "item_2",
 		consume = {
 			{
 				2,
@@ -869,20 +869,20 @@ pg.technology_data_template = {
 		}
 	},
 	[41] = {
-		id = 41,
+		name = "G-412-MI",
 		rarity = 1,
 		time = 5400,
 		type = 1,
-		name = "G-412-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_g",
+		blueprint_version = 1,
+		id = 41,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				1,
@@ -909,20 +909,20 @@ pg.technology_data_template = {
 		}
 	},
 	[42] = {
-		id = 42,
+		name = "G-412-MI",
 		rarity = 1,
 		time = 5400,
 		type = 1,
-		name = "G-412-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_g",
+		blueprint_version = 1,
+		id = 42,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				1,
@@ -949,20 +949,20 @@ pg.technology_data_template = {
 		}
 	},
 	[43] = {
-		id = 43,
+		name = "G-236-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "G-236-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_g",
+		blueprint_version = 1,
+		id = 43,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				1,
@@ -989,20 +989,20 @@ pg.technology_data_template = {
 		}
 	},
 	[44] = {
-		id = 44,
+		name = "G-236-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "G-236-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_g",
+		blueprint_version = 1,
+		id = 44,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				1,
@@ -1029,20 +1029,20 @@ pg.technology_data_template = {
 		}
 	},
 	[45] = {
-		id = 45,
+		name = "G-531-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "G-531-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "gold_2",
 		label_color = "tag_g",
+		blueprint_version = 1,
+		id = 45,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				1,
@@ -1069,20 +1069,20 @@ pg.technology_data_template = {
 		}
 	},
 	[46] = {
-		id = 46,
+		name = "G-531-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "G-531-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "gold_2",
 		label_color = "tag_g",
+		blueprint_version = 1,
+		id = 46,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				1,
@@ -1109,20 +1109,20 @@ pg.technology_data_template = {
 		}
 	},
 	[51] = {
-		id = 51,
+		name = "D-718-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-718-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_haiwangxing",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 51,
+		bg_icon = "chara_haiwangxing",
 		consume = {
 			{
 				1,
@@ -1154,20 +1154,20 @@ pg.technology_data_template = {
 		}
 	},
 	[52] = {
-		id = 52,
+		name = "D-731-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-731-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_junzhu",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 52,
+		bg_icon = "chara_junzhu",
 		consume = {
 			{
 				1,
@@ -1199,20 +1199,20 @@ pg.technology_data_template = {
 		}
 	},
 	[53] = {
-		id = 53,
+		name = "D-744-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-744-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_yichui",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 53,
+		bg_icon = "chara_yichui",
 		consume = {
 			{
 				1,
@@ -1244,20 +1244,20 @@ pg.technology_data_template = {
 		}
 	},
 	[54] = {
-		id = 54,
+		name = "D-759-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-759-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_chuyun",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 54,
+		bg_icon = "chara_chuyun",
 		consume = {
 			{
 				1,
@@ -1289,20 +1289,20 @@ pg.technology_data_template = {
 		}
 	},
 	[55] = {
-		id = 55,
+		name = "D-774-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-774-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_luoen",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 55,
+		bg_icon = "chara_luoen",
 		consume = {
 			{
 				1,
@@ -1334,20 +1334,20 @@ pg.technology_data_template = {
 		}
 	},
 	[56] = {
-		id = 56,
+		name = "D-792-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-792-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_luyijiushi",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 56,
+		bg_icon = "chara_luyijiushi",
 		consume = {
 			{
 				1,
@@ -1379,20 +1379,20 @@ pg.technology_data_template = {
 		}
 	},
 	[61] = {
-		id = 61,
+		name = "D-318-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-318-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_haiwangxing",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 61,
+		bg_icon = "chara_haiwangxing",
 		consume = {
 			{
 				1,
@@ -1424,20 +1424,20 @@ pg.technology_data_template = {
 		}
 	},
 	[62] = {
-		id = 62,
+		name = "D-331-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-331-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_junzhu",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 62,
+		bg_icon = "chara_junzhu",
 		consume = {
 			{
 				1,
@@ -1469,20 +1469,20 @@ pg.technology_data_template = {
 		}
 	},
 	[63] = {
-		id = 63,
+		name = "D-344-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-344-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_yichui",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 63,
+		bg_icon = "chara_yichui",
 		consume = {
 			{
 				1,
@@ -1514,20 +1514,20 @@ pg.technology_data_template = {
 		}
 	},
 	[64] = {
-		id = 64,
+		name = "D-359-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-359-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_chuyun",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 64,
+		bg_icon = "chara_chuyun",
 		consume = {
 			{
 				1,
@@ -1559,20 +1559,20 @@ pg.technology_data_template = {
 		}
 	},
 	[65] = {
-		id = 65,
+		name = "D-374-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-374-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_luoen",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 65,
+		bg_icon = "chara_luoen",
 		consume = {
 			{
 				1,
@@ -1604,20 +1604,20 @@ pg.technology_data_template = {
 		}
 	},
 	[66] = {
-		id = 66,
+		name = "D-392-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-392-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_luyijiushi",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 66,
+		bg_icon = "chara_luyijiushi",
 		consume = {
 			{
 				1,
@@ -1649,20 +1649,20 @@ pg.technology_data_template = {
 		}
 	},
 	[71] = {
-		id = 71,
+		name = "Q-302-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "Q-302-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 71,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -1689,20 +1689,20 @@ pg.technology_data_template = {
 		}
 	},
 	[72] = {
-		id = 72,
+		name = "Q-310-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "Q-310-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 72,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -1729,20 +1729,20 @@ pg.technology_data_template = {
 		}
 	},
 	[73] = {
-		id = 73,
+		name = "Q-351-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "Q-351-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 73,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -1769,20 +1769,20 @@ pg.technology_data_template = {
 		}
 	},
 	[74] = {
-		id = 74,
+		name = "Q-368-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "Q-368-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 74,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -1809,20 +1809,20 @@ pg.technology_data_template = {
 		}
 	},
 	[75] = {
-		id = 75,
+		name = "Q-389-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "Q-389-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 75,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -1849,20 +1849,20 @@ pg.technology_data_template = {
 		}
 	},
 	[76] = {
-		id = 76,
+		name = "Q-202-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "Q-202-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 76,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -1889,20 +1889,20 @@ pg.technology_data_template = {
 		}
 	},
 	[77] = {
-		id = 77,
+		name = "Q-210-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "Q-210-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 77,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -1929,20 +1929,20 @@ pg.technology_data_template = {
 		}
 	},
 	[78] = {
-		id = 78,
+		name = "Q-251-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "Q-251-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 78,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -1969,20 +1969,20 @@ pg.technology_data_template = {
 		}
 	},
 	[79] = {
-		id = 79,
+		name = "Q-268-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "Q-268-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 79,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -2009,20 +2009,20 @@ pg.technology_data_template = {
 		}
 	},
 	[80] = {
-		id = 80,
+		name = "Q-289-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "Q-289-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 80,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -2049,20 +2049,20 @@ pg.technology_data_template = {
 		}
 	},
 	[81] = {
-		id = 81,
+		name = "Q-002-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "Q-002-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "gold_2",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 81,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -2089,20 +2089,20 @@ pg.technology_data_template = {
 		}
 	},
 	[82] = {
-		id = 82,
+		name = "Q-010-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "Q-010-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "gold_2",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 82,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -2129,20 +2129,20 @@ pg.technology_data_template = {
 		}
 	},
 	[83] = {
-		id = 83,
+		name = "Q-051-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "Q-051-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "gold_2",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 83,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -2169,20 +2169,20 @@ pg.technology_data_template = {
 		}
 	},
 	[84] = {
-		id = 84,
+		name = "Q-068-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "Q-068-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "gold_2",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 84,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -2209,20 +2209,20 @@ pg.technology_data_template = {
 		}
 	},
 	[85] = {
-		id = 85,
+		name = "Q-089-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "Q-089-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "gold_2",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 85,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -2249,20 +2249,20 @@ pg.technology_data_template = {
 		}
 	},
 	[91] = {
-		id = 91,
+		name = "H-387-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "H-387-MI",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_h",
+		blueprint_version = 1,
+		id = 91,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -2289,20 +2289,20 @@ pg.technology_data_template = {
 		}
 	},
 	[92] = {
-		id = 92,
+		name = "H-387-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "H-387-MI",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_h",
+		blueprint_version = 1,
+		id = 92,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -2329,20 +2329,20 @@ pg.technology_data_template = {
 		}
 	},
 	[93] = {
-		id = 93,
+		name = "H-339-MI",
 		rarity = 2,
 		time = 7200,
 		type = 1,
-		name = "H-339-MI",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_2",
 		label_color = "tag_h",
+		blueprint_version = 1,
+		id = 93,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -2369,20 +2369,20 @@ pg.technology_data_template = {
 		}
 	},
 	[94] = {
-		id = 94,
+		name = "H-339-MI",
 		rarity = 2,
 		time = 7200,
 		type = 1,
-		name = "H-339-MI",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_2",
 		label_color = "tag_h",
+		blueprint_version = 1,
+		id = 94,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -2409,20 +2409,20 @@ pg.technology_data_template = {
 		}
 	},
 	[101] = {
-		id = 101,
+		name = "C-153-MI",
 		rarity = 1,
 		time = 21600,
 		type = 1,
-		name = "C-153-MI",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "item_1",
 		label_color = "tag_c",
+		blueprint_version = 2,
+		id = 101,
+		bg_icon = "item_1",
 		consume = {},
 		drop_client = {
 			{
@@ -2443,20 +2443,20 @@ pg.technology_data_template = {
 		}
 	},
 	[102] = {
-		id = 102,
+		name = "C-153-MI",
 		rarity = 1,
 		time = 21600,
 		type = 1,
-		name = "C-153-MI",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "item_1",
 		label_color = "tag_c",
+		blueprint_version = 2,
+		id = 102,
+		bg_icon = "item_1",
 		consume = {},
 		drop_client = {
 			{
@@ -2477,20 +2477,20 @@ pg.technology_data_template = {
 		}
 	},
 	[103] = {
-		id = 103,
+		name = "C-185-MI",
 		rarity = 2,
 		time = 28800,
 		type = 1,
-		name = "C-185-MI",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "item_2",
 		label_color = "tag_c",
+		blueprint_version = 2,
+		id = 103,
+		bg_icon = "item_2",
 		consume = {},
 		drop_client = {
 			{
@@ -2516,20 +2516,20 @@ pg.technology_data_template = {
 		}
 	},
 	[104] = {
-		id = 104,
+		name = "C-185-MI",
 		rarity = 2,
 		time = 28800,
 		type = 1,
-		name = "C-185-MI",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "item_2",
 		label_color = "tag_c",
+		blueprint_version = 2,
+		id = 104,
+		bg_icon = "item_2",
 		consume = {},
 		drop_client = {
 			{
@@ -2555,20 +2555,20 @@ pg.technology_data_template = {
 		}
 	},
 	[111] = {
-		id = 111,
+		name = "B-622-MI",
 		rarity = 1,
 		time = 14400,
 		type = 1,
-		name = "B-622-MI",
-		lv_limit = 30,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52001,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_1",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 111,
+		bg_icon = "battle_1",
 		consume = {},
 		drop_client = {
 			{
@@ -2589,20 +2589,20 @@ pg.technology_data_template = {
 		}
 	},
 	[112] = {
-		id = 112,
+		name = "B-636-MI",
 		rarity = 1,
 		time = 14400,
 		type = 1,
-		name = "B-636-MI",
-		lv_limit = 30,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52002,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_1",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 112,
+		bg_icon = "battle_1",
 		consume = {},
 		drop_client = {
 			{
@@ -2623,20 +2623,20 @@ pg.technology_data_template = {
 		}
 	},
 	[113] = {
-		id = 113,
+		name = "B-654-MI",
 		rarity = 1,
 		time = 14400,
 		type = 1,
-		name = "B-654-MI",
-		lv_limit = 30,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52003,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_1",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 113,
+		bg_icon = "battle_1",
 		consume = {},
 		drop_client = {
 			{
@@ -2657,20 +2657,20 @@ pg.technology_data_template = {
 		}
 	},
 	[114] = {
-		id = 114,
+		name = "B-682-MI",
 		rarity = 1,
 		time = 14400,
 		type = 1,
-		name = "B-682-MI",
-		lv_limit = 40,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52004,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 40,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_1",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 114,
+		bg_icon = "battle_1",
 		consume = {},
 		drop_client = {
 			{
@@ -2691,20 +2691,20 @@ pg.technology_data_template = {
 		}
 	},
 	[115] = {
-		id = 115,
+		name = "B-235-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "B-235-MI",
-		lv_limit = 50,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52005,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 50,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_2",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 115,
+		bg_icon = "battle_2",
 		consume = {},
 		drop_client = {
 			{
@@ -2725,20 +2725,20 @@ pg.technology_data_template = {
 		}
 	},
 	[116] = {
-		id = 116,
+		name = "B-268-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "B-268-MI",
-		lv_limit = 60,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52006,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 60,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_2",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 116,
+		bg_icon = "battle_2",
 		consume = {},
 		drop_client = {
 			{
@@ -2759,20 +2759,20 @@ pg.technology_data_template = {
 		}
 	},
 	[117] = {
-		id = 117,
+		name = "B-128-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "B-128-MI",
-		lv_limit = 65,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52007,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 65,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_2",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 117,
+		bg_icon = "battle_2",
 		consume = {},
 		drop_client = {
 			{
@@ -2793,20 +2793,20 @@ pg.technology_data_template = {
 		}
 	},
 	[118] = {
-		id = 118,
+		name = "B-164-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "B-164-MI",
-		lv_limit = 70,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52008,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 70,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_2",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 118,
+		bg_icon = "battle_2",
 		consume = {},
 		drop_client = {
 			{
@@ -2827,20 +2827,20 @@ pg.technology_data_template = {
 		}
 	},
 	[121] = {
-		id = 121,
+		name = "T-018-MI",
 		rarity = 1,
 		time = 10800,
 		type = 1,
-		name = "T-018-MI",
-		lv_limit = 30,
-		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		condition = 52021,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "item_1",
 		label_color = "tag_t",
+		blueprint_version = 2,
+		id = 121,
+		bg_icon = "item_1",
 		consume = {},
 		drop_client = {
 			{
@@ -2861,20 +2861,20 @@ pg.technology_data_template = {
 		}
 	},
 	[122] = {
-		id = 122,
+		name = "T-384-MI",
 		rarity = 1,
 		time = 14400,
 		type = 1,
-		name = "T-384-MI",
-		lv_limit = 30,
-		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		condition = 52022,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "item_1",
 		label_color = "tag_t",
+		blueprint_version = 2,
+		id = 122,
+		bg_icon = "item_1",
 		consume = {},
 		drop_client = {
 			{
@@ -2895,20 +2895,20 @@ pg.technology_data_template = {
 		}
 	},
 	[123] = {
-		id = 123,
+		name = "T-249-MI",
 		rarity = 2,
 		time = 21600,
 		type = 1,
-		name = "T-249-MI",
-		lv_limit = 30,
-		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		condition = 52023,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "item_2",
 		label_color = "tag_t",
+		blueprint_version = 2,
+		id = 123,
+		bg_icon = "item_2",
 		consume = {},
 		drop_client = {
 			{
@@ -2929,20 +2929,20 @@ pg.technology_data_template = {
 		}
 	},
 	[131] = {
-		id = 131,
+		name = "E-031-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "E-031-MI",
-		lv_limit = 30,
-		desc = "Attempting to determine the relationship between the Wisdom Cube and shipgirls' rigging requires a large body of experimental evidence. Provide unused rigging to serve as experimental specimens.",
 		condition = 52031,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Attempting to determine the relationship between the Wisdom Cube and shipgirls' rigging requires a large body of experimental evidence. Provide unused rigging to serve as experimental specimens.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "item_1",
 		label_color = "tag_e",
+		blueprint_version = 2,
+		id = 131,
+		bg_icon = "item_1",
 		consume = {},
 		drop_client = {
 			{
@@ -2963,20 +2963,20 @@ pg.technology_data_template = {
 		}
 	},
 	[132] = {
-		id = 132,
+		name = "E-315-MI",
 		rarity = 2,
 		time = 7200,
 		type = 1,
-		name = "E-315-MI",
-		lv_limit = 30,
-		desc = "Attempting to determine the relationship between the Wisdom Cube and shipgirls' rigging requires a large body of experimental evidence. Provide unused rigging to serve as experimental specimens.",
 		condition = 52032,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Attempting to determine the relationship between the Wisdom Cube and shipgirls' rigging requires a large body of experimental evidence. Provide unused rigging to serve as experimental specimens.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "item_2",
 		label_color = "tag_e",
+		blueprint_version = 2,
+		id = 132,
+		bg_icon = "item_2",
 		consume = {},
 		drop_client = {
 			{
@@ -2996,21 +2996,246 @@ pg.technology_data_template = {
 			}
 		}
 	},
+	[133] = {
+		name = "E-179-MI",
+		rarity = 2,
+		time = 21600,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
+		sub_name = "Medium Project",
+		label = "tag_blue",
+		label_color = "tag_e",
+		blueprint_version = 2,
+		id = 133,
+		bg_icon = "item_2",
+		consume = {
+			{
+				2,
+				10075,
+				45
+			}
+		},
+		drop_client = {
+			{
+				2,
+				13013,
+				1
+			},
+			{
+				2,
+				52012,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[134] = {
+		name = "E-105-MI",
+		rarity = 2,
+		time = 21600,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
+		sub_name = "Medium Project",
+		label = "tag_blue",
+		label_color = "tag_e",
+		blueprint_version = 2,
+		id = 134,
+		bg_icon = "item_2",
+		consume = {
+			{
+				2,
+				10018,
+				45
+			}
+		},
+		drop_client = {
+			{
+				2,
+				13014,
+				1
+			},
+			{
+				2,
+				52012,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[135] = {
+		name = "E-146-MI",
+		rarity = 2,
+		time = 21600,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
+		sub_name = "Medium Project",
+		label = "tag_blue",
+		label_color = "tag_e",
+		blueprint_version = 2,
+		id = 135,
+		bg_icon = "item_2",
+		consume = {
+			{
+				2,
+				10026,
+				45
+			}
+		},
+		drop_client = {
+			{
+				2,
+				13015,
+				1
+			},
+			{
+				2,
+				52012,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[136] = {
+		name = "E-157-MI",
+		rarity = 2,
+		time = 21600,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
+		sub_name = "Medium Project",
+		label = "tag_blue",
+		label_color = "tag_e",
+		blueprint_version = 2,
+		id = 136,
+		bg_icon = "item_2",
+		consume = {
+			{
+				2,
+				10056,
+				45
+			}
+		},
+		drop_client = {
+			{
+				2,
+				13016,
+				1
+			},
+			{
+				2,
+				52012,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[137] = {
+		name = "E-118-MI",
+		rarity = 2,
+		time = 21600,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 50,
+		desc = "Disassemble currently issued gear to re-examine their components and conduct research that will lead to the development of new gear.",
+		sub_name = "Medium Project",
+		label = "tag_blue",
+		label_color = "tag_e",
+		blueprint_version = 2,
+		id = 137,
+		bg_icon = "item_2",
+		consume = {
+			{
+				2,
+				10077,
+				45
+			}
+		},
+		drop_client = {
+			{
+				2,
+				13017,
+				1
+			},
+			{
+				2,
+				52012,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
 	[141] = {
-		id = 141,
+		name = "G-412-MI",
 		rarity = 1,
 		time = 5400,
 		type = 1,
-		name = "G-412-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_g",
+		blueprint_version = 2,
+		id = 141,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				1,
@@ -3037,20 +3262,20 @@ pg.technology_data_template = {
 		}
 	},
 	[142] = {
-		id = 142,
+		name = "G-412-MI",
 		rarity = 1,
 		time = 5400,
 		type = 1,
-		name = "G-412-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_g",
+		blueprint_version = 2,
+		id = 142,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				1,
@@ -3077,20 +3302,20 @@ pg.technology_data_template = {
 		}
 	},
 	[143] = {
-		id = 143,
+		name = "G-236-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "G-236-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_g",
+		blueprint_version = 2,
+		id = 143,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				1,
@@ -3117,20 +3342,20 @@ pg.technology_data_template = {
 		}
 	},
 	[144] = {
-		id = 144,
+		name = "G-236-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "G-236-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_g",
+		blueprint_version = 2,
+		id = 144,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				1,
@@ -3157,20 +3382,20 @@ pg.technology_data_template = {
 		}
 	},
 	[145] = {
-		id = 145,
+		name = "G-531-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "G-531-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "gold_2",
 		label_color = "tag_g",
+		blueprint_version = 2,
+		id = 145,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				1,
@@ -3197,20 +3422,20 @@ pg.technology_data_template = {
 		}
 	},
 	[146] = {
-		id = 146,
+		name = "G-531-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "G-531-MI",
-		lv_limit = 30,
-		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "gold_2",
 		label_color = "tag_g",
+		blueprint_version = 2,
+		id = 146,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				1,
@@ -3237,20 +3462,20 @@ pg.technology_data_template = {
 		}
 	},
 	[151] = {
-		id = 151,
+		name = "D-705-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-705-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_xiyatu",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 151,
+		bg_icon = "chara_xiyatu",
 		consume = {
 			{
 				1,
@@ -3282,20 +3507,20 @@ pg.technology_data_template = {
 		}
 	},
 	[152] = {
-		id = 152,
+		name = "D-712-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-712-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_zuozhiya",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 152,
+		bg_icon = "chara_zuozhiya",
 		consume = {
 			{
 				1,
@@ -3327,20 +3552,20 @@ pg.technology_data_template = {
 		}
 	},
 	[153] = {
-		id = 153,
+		name = "D-746-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-746-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_beifeng",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 153,
+		bg_icon = "chara_beifeng",
 		consume = {
 			{
 				1,
@@ -3372,20 +3597,20 @@ pg.technology_data_template = {
 		}
 	},
 	[154] = {
-		id = 154,
+		name = "D-757-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-757-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_wuqi",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 154,
+		bg_icon = "chara_wuqi",
 		consume = {
 			{
 				1,
@@ -3417,20 +3642,20 @@ pg.technology_data_template = {
 		}
 	},
 	[155] = {
-		id = 155,
+		name = "D-779-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-779-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_feiteliedadi",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 155,
+		bg_icon = "chara_feiteliedadi",
 		consume = {
 			{
 				1,
@@ -3462,20 +3687,20 @@ pg.technology_data_template = {
 		}
 	},
 	[156] = {
-		id = 156,
+		name = "D-794-MI",
 		rarity = 1,
 		time = 9000,
 		type = 1,
-		name = "D-794-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_jiasikenie",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 156,
+		bg_icon = "chara_jiasikenie",
 		consume = {
 			{
 				1,
@@ -3507,20 +3732,20 @@ pg.technology_data_template = {
 		}
 	},
 	[161] = {
-		id = 161,
+		name = "D-305-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-305-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_xiyatu",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 161,
+		bg_icon = "chara_xiyatu",
 		consume = {
 			{
 				1,
@@ -3552,20 +3777,20 @@ pg.technology_data_template = {
 		}
 	},
 	[162] = {
-		id = 162,
+		name = "D-312-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-312-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_zuozhiya",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 162,
+		bg_icon = "chara_zuozhiya",
 		consume = {
 			{
 				1,
@@ -3597,20 +3822,20 @@ pg.technology_data_template = {
 		}
 	},
 	[163] = {
-		id = 163,
+		name = "D-346-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-346-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_beifeng",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 163,
+		bg_icon = "chara_beifeng",
 		consume = {
 			{
 				1,
@@ -3642,20 +3867,20 @@ pg.technology_data_template = {
 		}
 	},
 	[164] = {
-		id = 164,
+		name = "D-357-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-357-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_wuqi",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 164,
+		bg_icon = "chara_wuqi",
 		consume = {
 			{
 				1,
@@ -3687,20 +3912,20 @@ pg.technology_data_template = {
 		}
 	},
 	[165] = {
-		id = 165,
+		name = "D-379-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-379-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_feiteliedadi",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 165,
+		bg_icon = "chara_feiteliedadi",
 		consume = {
 			{
 				1,
@@ -3732,20 +3957,20 @@ pg.technology_data_template = {
 		}
 	},
 	[166] = {
-		id = 166,
+		name = "D-394-MI",
 		rarity = 2,
 		time = 18000,
 		type = 1,
-		name = "D-394-MI",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "chara_jiasikenie",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 166,
+		bg_icon = "chara_jiasikenie",
 		consume = {
 			{
 				1,
@@ -3777,20 +4002,20 @@ pg.technology_data_template = {
 		}
 	},
 	[171] = {
-		id = 171,
+		name = "Q-302-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "Q-302-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 171,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -3817,20 +4042,20 @@ pg.technology_data_template = {
 		}
 	},
 	[172] = {
-		id = 172,
+		name = "Q-310-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "Q-310-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 172,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -3857,20 +4082,20 @@ pg.technology_data_template = {
 		}
 	},
 	[173] = {
-		id = 173,
+		name = "Q-351-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "Q-351-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 173,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -3897,20 +4122,20 @@ pg.technology_data_template = {
 		}
 	},
 	[174] = {
-		id = 174,
+		name = "Q-368-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "Q-368-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 174,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -3937,20 +4162,20 @@ pg.technology_data_template = {
 		}
 	},
 	[175] = {
-		id = 175,
+		name = "Q-389-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "Q-389-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 175,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -3977,20 +4202,20 @@ pg.technology_data_template = {
 		}
 	},
 	[176] = {
-		id = 176,
+		name = "Q-202-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "Q-202-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 176,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -4017,20 +4242,20 @@ pg.technology_data_template = {
 		}
 	},
 	[177] = {
-		id = 177,
+		name = "Q-210-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "Q-210-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 177,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -4057,20 +4282,20 @@ pg.technology_data_template = {
 		}
 	},
 	[178] = {
-		id = 178,
+		name = "Q-251-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "Q-251-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 178,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -4097,20 +4322,20 @@ pg.technology_data_template = {
 		}
 	},
 	[179] = {
-		id = 179,
+		name = "Q-268-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "Q-268-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 179,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -4137,20 +4362,20 @@ pg.technology_data_template = {
 		}
 	},
 	[180] = {
-		id = 180,
+		name = "Q-289-MI",
 		rarity = 1,
 		time = 7200,
 		type = 1,
-		name = "Q-289-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_1",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 180,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -4177,20 +4402,20 @@ pg.technology_data_template = {
 		}
 	},
 	[181] = {
-		id = 181,
+		name = "Q-002-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "Q-002-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "gold_2",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 181,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -4217,20 +4442,20 @@ pg.technology_data_template = {
 		}
 	},
 	[182] = {
-		id = 182,
+		name = "Q-010-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "Q-010-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "gold_2",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 182,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -4257,20 +4482,20 @@ pg.technology_data_template = {
 		}
 	},
 	[183] = {
-		id = 183,
+		name = "Q-051-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "Q-051-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "gold_2",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 183,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -4297,20 +4522,20 @@ pg.technology_data_template = {
 		}
 	},
 	[184] = {
-		id = 184,
+		name = "Q-068-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "Q-068-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "gold_2",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 184,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -4337,20 +4562,20 @@ pg.technology_data_template = {
 		}
 	},
 	[185] = {
-		id = 185,
+		name = "Q-089-MI",
 		rarity = 2,
 		time = 14400,
 		type = 1,
-		name = "Q-089-MI",
-		lv_limit = 30,
-		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
 		sub_name = "Medium Project",
 		label = "tag_blue",
-		bg_icon = "gold_2",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 185,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -4377,20 +4602,20 @@ pg.technology_data_template = {
 		}
 	},
 	[191] = {
-		id = 191,
+		name = "H-387-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "H-387-MI",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_h",
+		blueprint_version = 2,
+		id = 191,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -4417,20 +4642,20 @@ pg.technology_data_template = {
 		}
 	},
 	[192] = {
-		id = 192,
+		name = "H-387-MI",
 		rarity = 1,
 		time = 3600,
 		type = 1,
-		name = "H-387-MI",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "1",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_1",
 		label_color = "tag_h",
+		blueprint_version = 2,
+		id = 192,
+		bg_icon = "gold_1",
 		consume = {
 			{
 				2,
@@ -4457,20 +4682,20 @@ pg.technology_data_template = {
 		}
 	},
 	[193] = {
-		id = 193,
+		name = "H-339-MI",
 		rarity = 2,
 		time = 7200,
 		type = 1,
-		name = "H-339-MI",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_2",
 		label_color = "tag_h",
+		blueprint_version = 2,
+		id = 193,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -4497,20 +4722,20 @@ pg.technology_data_template = {
 		}
 	},
 	[194] = {
-		id = 194,
+		name = "H-339-MI",
 		rarity = 2,
 		time = 7200,
 		type = 1,
-		name = "H-339-MI",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "2",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "gold_2",
 		label_color = "tag_h",
+		blueprint_version = 2,
+		id = 194,
+		bg_icon = "gold_2",
 		consume = {
 			{
 				2,
@@ -4536,21 +4761,2059 @@ pg.technology_data_template = {
 			}
 		}
 	},
+	[201] = {
+		name = "C-153-MI",
+		rarity = 1,
+		time = 21600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_c",
+		blueprint_version = 3,
+		id = 201,
+		bg_icon = "item_1",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[202] = {
+		name = "C-153-MI",
+		rarity = 1,
+		time = 21600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_c",
+		blueprint_version = 3,
+		id = 202,
+		bg_icon = "item_1",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[203] = {
+		name = "C-185-MI",
+		rarity = 2,
+		time = 28800,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
+		sub_name = "Large Project",
+		label = "tag_red",
+		label_color = "tag_c",
+		blueprint_version = 3,
+		id = 203,
+		bg_icon = "item_2",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[204] = {
+		name = "C-185-MI",
+		rarity = 2,
+		time = 28800,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
+		sub_name = "Large Project",
+		label = "tag_red",
+		label_color = "tag_c",
+		blueprint_version = 3,
+		id = 204,
+		bg_icon = "item_2",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[211] = {
+		name = "B-622-MI",
+		rarity = 1,
+		time = 14400,
+		type = 1,
+		condition = 52001,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 211,
+		bg_icon = "battle_1",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[212] = {
+		name = "B-636-MI",
+		rarity = 1,
+		time = 14400,
+		type = 1,
+		condition = 52002,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 212,
+		bg_icon = "battle_1",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[213] = {
+		name = "B-654-MI",
+		rarity = 1,
+		time = 14400,
+		type = 1,
+		condition = 52003,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 213,
+		bg_icon = "battle_1",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[214] = {
+		name = "B-682-MI",
+		rarity = 1,
+		time = 14400,
+		type = 1,
+		condition = 52004,
+		bg = "1",
+		lv_limit = 40,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 214,
+		bg_icon = "battle_1",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[215] = {
+		name = "B-235-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 52005,
+		bg = "2",
+		lv_limit = 50,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 215,
+		bg_icon = "battle_2",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[216] = {
+		name = "B-268-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 52006,
+		bg = "2",
+		lv_limit = 60,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 216,
+		bg_icon = "battle_2",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[217] = {
+		name = "B-128-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 52007,
+		bg = "2",
+		lv_limit = 65,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 217,
+		bg_icon = "battle_2",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[218] = {
+		name = "B-164-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 52008,
+		bg = "2",
+		lv_limit = 70,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 218,
+		bg_icon = "battle_2",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[221] = {
+		name = "T-018-MI",
+		rarity = 1,
+		time = 10800,
+		type = 1,
+		condition = 52021,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_t",
+		blueprint_version = 3,
+		id = 221,
+		bg_icon = "item_1",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[222] = {
+		name = "T-384-MI",
+		rarity = 1,
+		time = 14400,
+		type = 1,
+		condition = 52022,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_t",
+		blueprint_version = 3,
+		id = 222,
+		bg_icon = "item_1",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[223] = {
+		name = "T-249-MI",
+		rarity = 2,
+		time = 21600,
+		type = 1,
+		condition = 52023,
+		bg = "2",
+		lv_limit = 30,
+		desc = "Research is also being conducted to determine if Wisdom Cubes can be harnessed for purposes outside of construction. This research project strives to find a way to use Wisdom Cubes to improve everyday life.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_t",
+		blueprint_version = 3,
+		id = 223,
+		bg_icon = "item_2",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[231] = {
+		name = "E-031-MI",
+		rarity = 1,
+		time = 7200,
+		type = 1,
+		condition = 52031,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Attempting to determine the relationship between the Wisdom Cube and shipgirls' rigging requires a large body of experimental evidence. Provide unused rigging to serve as experimental specimens.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_e",
+		blueprint_version = 3,
+		id = 231,
+		bg_icon = "item_1",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[232] = {
+		name = "E-315-MI",
+		rarity = 2,
+		time = 7200,
+		type = 1,
+		condition = 52032,
+		bg = "2",
+		lv_limit = 30,
+		desc = "Attempting to determine the relationship between the Wisdom Cube and shipgirls' rigging requires a large body of experimental evidence. Provide unused rigging to serve as experimental specimens.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_e",
+		blueprint_version = 3,
+		id = 232,
+		bg_icon = "item_2",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[241] = {
+		name = "G-412-MI",
+		rarity = 1,
+		time = 5400,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_g",
+		blueprint_version = 3,
+		id = 241,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				1,
+				1,
+				1500
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[242] = {
+		name = "G-412-MI",
+		rarity = 1,
+		time = 5400,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_g",
+		blueprint_version = 3,
+		id = 242,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				1,
+				1,
+				1500
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[243] = {
+		name = "G-236-MI",
+		rarity = 1,
+		time = 9000,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_g",
+		blueprint_version = 3,
+		id = 243,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				1,
+				1,
+				3000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[244] = {
+		name = "G-236-MI",
+		rarity = 1,
+		time = 9000,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_g",
+		blueprint_version = 3,
+		id = 244,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				1,
+				1,
+				3000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[245] = {
+		name = "G-531-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_g",
+		blueprint_version = 3,
+		id = 245,
+		bg_icon = "gold_2",
+		consume = {
+			{
+				1,
+				1,
+				6000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[246] = {
+		name = "G-531-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "Substantial progress in scientific research cannot be made without adequate funding to back it up. Provide grants in order to fuel further research and development.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_g",
+		blueprint_version = 3,
+		id = 246,
+		bg_icon = "gold_2",
+		consume = {
+			{
+				1,
+				1,
+				6000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[251] = {
+		name = "D-721-MI",
+		rarity = 1,
+		time = 9000,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 251,
+		bg_icon = "chara_chaijun",
+		consume = {
+			{
+				1,
+				1,
+				3000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42021,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[252] = {
+		name = "D-722-MI",
+		rarity = 1,
+		time = 9000,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 252,
+		bg_icon = "chara_deleike",
+		consume = {
+			{
+				1,
+				1,
+				3000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42022,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[253] = {
+		name = "D-772-MI",
+		rarity = 1,
+		time = 9000,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 253,
+		bg_icon = "chara_meiyinci",
+		consume = {
+			{
+				1,
+				1,
+				3000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42023,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[254] = {
+		name = "D-777-MI",
+		rarity = 1,
+		time = 9000,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 254,
+		bg_icon = "chara_aoding",
+		consume = {
+			{
+				1,
+				1,
+				3000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42024,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[255] = {
+		name = "D-795-MI",
+		rarity = 1,
+		time = 9000,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 255,
+		bg_icon = "chara_xiangbin",
+		consume = {
+			{
+				1,
+				1,
+				3000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42025,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			}
+		}
+	},
+	[261] = {
+		name = "D-321-MI",
+		rarity = 2,
+		time = 18000,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 261,
+		bg_icon = "chara_chaijun",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42021,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[262] = {
+		name = "D-322-MI",
+		rarity = 2,
+		time = 18000,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 262,
+		bg_icon = "chara_deleike",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42022,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[263] = {
+		name = "D-372-MI",
+		rarity = 2,
+		time = 18000,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 263,
+		bg_icon = "chara_meiyinci",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42023,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[264] = {
+		name = "D-377-MI",
+		rarity = 2,
+		time = 18000,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 264,
+		bg_icon = "chara_aoding",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42024,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[265] = {
+		name = "D-395-MI",
+		rarity = 2,
+		time = 18000,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 265,
+		bg_icon = "chara_xiangbin",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42025,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[271] = {
+		name = "Q-302-MI",
+		rarity = 1,
+		time = 3600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 271,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				17001,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[272] = {
+		name = "Q-310-MI",
+		rarity = 1,
+		time = 3600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 272,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				17011,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[273] = {
+		name = "Q-351-MI",
+		rarity = 1,
+		time = 3600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 273,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				17021,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[274] = {
+		name = "Q-368-MI",
+		rarity = 1,
+		time = 3600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 274,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				17031,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[275] = {
+		name = "Q-389-MI",
+		rarity = 1,
+		time = 3600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 275,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				17041,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[276] = {
+		name = "Q-202-MI",
+		rarity = 1,
+		time = 7200,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 276,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				17002,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[277] = {
+		name = "Q-210-MI",
+		rarity = 1,
+		time = 7200,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 277,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				17012,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[278] = {
+		name = "Q-251-MI",
+		rarity = 1,
+		time = 7200,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 278,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				17022,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[279] = {
+		name = "Q-268-MI",
+		rarity = 1,
+		time = 7200,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 279,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				17032,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[280] = {
+		name = "Q-289-MI",
+		rarity = 1,
+		time = 7200,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 280,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				17042,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52004,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[281] = {
+		name = "Q-002-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Medium Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 281,
+		bg_icon = "gold_2",
+		consume = {
+			{
+				2,
+				17003,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[282] = {
+		name = "Q-010-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Medium Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 282,
+		bg_icon = "gold_2",
+		consume = {
+			{
+				2,
+				17013,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[283] = {
+		name = "Q-051-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Medium Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 283,
+		bg_icon = "gold_2",
+		consume = {
+			{
+				2,
+				17023,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[284] = {
+		name = "Q-068-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Medium Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 284,
+		bg_icon = "gold_2",
+		consume = {
+			{
+				2,
+				17033,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[285] = {
+		name = "Q-089-MI",
+		rarity = 2,
+		time = 14400,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "A resonance phenomenon has been observed between Wisdom Cubes and ship rigging. Conduct tests to recreate this phenomenon and determine the best way to utilize it practically.",
+		sub_name = "Medium Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 285,
+		bg_icon = "gold_2",
+		consume = {
+			{
+				2,
+				17043,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[291] = {
+		name = "H-387-MI",
+		rarity = 1,
+		time = 3600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_h",
+		blueprint_version = 3,
+		id = 291,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				20001,
+				3
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				54049,
+				1
+			},
+			{
+				2,
+				15008,
+				1
+			}
+		}
+	},
+	[292] = {
+		name = "H-387-MI",
+		rarity = 1,
+		time = 3600,
+		type = 1,
+		condition = 0,
+		bg = "1",
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_h",
+		blueprint_version = 3,
+		id = 292,
+		bg_icon = "gold_1",
+		consume = {
+			{
+				2,
+				20001,
+				3
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				54049,
+				1
+			},
+			{
+				2,
+				15008,
+				1
+			}
+		}
+	},
+	[293] = {
+		name = "H-339-MI",
+		rarity = 2,
+		time = 7200,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_h",
+		blueprint_version = 3,
+		id = 293,
+		bg_icon = "gold_2",
+		consume = {
+			{
+				2,
+				20001,
+				6
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				54050,
+				1
+			},
+			{
+				2,
+				15008,
+				1
+			}
+		}
+	},
+	[294] = {
+		name = "H-339-MI",
+		rarity = 2,
+		time = 7200,
+		type = 1,
+		condition = 0,
+		bg = "2",
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_h",
+		blueprint_version = 3,
+		id = 294,
+		bg_icon = "gold_2",
+		consume = {
+			{
+				2,
+				20001,
+				6
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				54050,
+				1
+			},
+			{
+				2,
+				15008,
+				1
+			}
+		}
+	},
 	[1001] = {
-		id = 1001,
+		name = "C-038-RF",
 		rarity = 3,
 		time = 43200,
 		type = 2,
-		name = "C-038-RF",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "item_3",
 		label_color = "tag_c",
+		blueprint_version = 1,
+		id = 1001,
+		bg_icon = "item_3",
 		consume = {},
 		drop_client = {
 			{
@@ -4576,20 +6839,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1002] = {
-		id = 1002,
+		name = "C-038-RF",
 		rarity = 3,
 		time = 43200,
 		type = 2,
-		name = "C-038-RF",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "item_3",
 		label_color = "tag_c",
+		blueprint_version = 1,
+		id = 1002,
+		bg_icon = "item_3",
 		consume = {},
 		drop_client = {
 			{
@@ -4615,20 +6878,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1003] = {
-		id = 1003,
+		name = "B-351-RF",
 		rarity = 3,
 		time = 14400,
 		type = 2,
-		name = "B-351-RF",
-		lv_limit = 75,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52009,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 75,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_3",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 1003,
+		bg_icon = "battle_3",
 		consume = {},
 		drop_client = {
 			{
@@ -4649,20 +6912,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1004] = {
-		id = 1004,
+		name = "B-397-RF",
 		rarity = 3,
 		time = 14400,
 		type = 2,
-		name = "B-397-RF",
-		lv_limit = 80,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52010,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 80,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_3",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 1004,
+		bg_icon = "battle_3",
 		consume = {},
 		drop_client = {
 			{
@@ -4683,20 +6946,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1005] = {
-		id = 1005,
+		name = "D-418-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-418-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_haiwangxing",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1005,
+		bg_icon = "chara_haiwangxing",
 		consume = {
 			{
 				1,
@@ -4728,20 +6991,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1006] = {
-		id = 1006,
+		name = "D-431-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-431-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_junzhu",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1006,
+		bg_icon = "chara_junzhu",
 		consume = {
 			{
 				1,
@@ -4773,20 +7036,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1007] = {
-		id = 1007,
+		name = "D-444-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-444-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_yichui",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1007,
+		bg_icon = "chara_yichui",
 		consume = {
 			{
 				1,
@@ -4818,20 +7081,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1008] = {
-		id = 1008,
+		name = "D-459-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-459-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_chuyun",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1008,
+		bg_icon = "chara_chuyun",
 		consume = {
 			{
 				1,
@@ -4863,20 +7126,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1009] = {
-		id = 1009,
+		name = "D-474-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-474-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_luoen",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1009,
+		bg_icon = "chara_luoen",
 		consume = {
 			{
 				1,
@@ -4908,20 +7171,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1010] = {
-		id = 1010,
+		name = "D-492-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-492-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_luyijiushi",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1010,
+		bg_icon = "chara_luyijiushi",
 		consume = {
 			{
 				1,
@@ -4953,20 +7216,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1011] = {
-		id = 1011,
+		name = "H-207-RF",
 		rarity = 3,
 		time = 14400,
 		type = 2,
-		name = "H-207-RF",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "gold_3",
 		label_color = "tag_h",
+		blueprint_version = 1,
+		id = 1011,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				2,
@@ -4993,20 +7256,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1012] = {
-		id = 1012,
+		name = "H-207-RF",
 		rarity = 3,
 		time = 14400,
 		type = 2,
-		name = "H-207-RF",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "gold_3",
 		label_color = "tag_h",
+		blueprint_version = 1,
+		id = 1012,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				2,
@@ -5033,20 +7296,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1013] = {
-		id = 1013,
+		name = "D-018-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "D-018-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_haiwangxing",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1013,
+		bg_icon = "chara_haiwangxing",
 		consume = {
 			{
 				1,
@@ -5078,20 +7341,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1014] = {
-		id = 1014,
+		name = "D-031-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "D-031-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_junzhu",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1014,
+		bg_icon = "chara_junzhu",
 		consume = {
 			{
 				1,
@@ -5123,20 +7386,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1015] = {
-		id = 1015,
+		name = "D-044-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "D-044-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_yichui",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1015,
+		bg_icon = "chara_yichui",
 		consume = {
 			{
 				1,
@@ -5168,20 +7431,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1016] = {
-		id = 1016,
+		name = "D-059-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "D-059-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_chuyun",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1016,
+		bg_icon = "chara_chuyun",
 		consume = {
 			{
 				1,
@@ -5213,20 +7476,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1017] = {
-		id = 1017,
+		name = "D-074-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "D-074-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_luoen",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1017,
+		bg_icon = "chara_luoen",
 		consume = {
 			{
 				1,
@@ -5258,20 +7521,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1018] = {
-		id = 1018,
+		name = "D-092-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "D-092-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_luyijiushi",
 		label_color = "tag_sp",
+		blueprint_version = 1,
+		id = 1018,
+		bg_icon = "chara_luyijiushi",
 		consume = {
 			{
 				1,
@@ -5303,20 +7566,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1019] = {
-		id = 1019,
+		name = "Q-002-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "Q-002-UL",
-		lv_limit = 30,
-		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 1019,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -5343,20 +7606,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1020] = {
-		id = 1020,
+		name = "Q-010-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "Q-010-UL",
-		lv_limit = 30,
-		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 1020,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -5383,20 +7646,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1021] = {
-		id = 1021,
+		name = "Q-051-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "Q-051-UL",
-		lv_limit = 30,
-		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 1021,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -5423,20 +7686,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1022] = {
-		id = 1022,
+		name = "Q-068-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "Q-068-UL",
-		lv_limit = 30,
-		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 1022,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -5463,20 +7726,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1023] = {
-		id = 1023,
+		name = "Q-089-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "Q-089-UL",
-		lv_limit = 30,
-		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_q",
+		blueprint_version = 1,
+		id = 1023,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -5503,20 +7766,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1024] = {
-		id = 1024,
+		name = "H-085-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "H-085-UL",
-		lv_limit = 30,
-		desc = "The highest-ranking engineers have branded this Project as top-secret. The results may have a tremendous effect not just on humankind, but the very ecosystem of the entire world.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "The highest-ranking engineers have branded this Project as top-secret. The results may have a tremendous effect not just on humankind, but the very ecosystem of the entire world.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_sh",
+		blueprint_version = 1,
+		id = 1024,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -5548,20 +7811,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1025] = {
-		id = 1025,
+		name = "H-085-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "H-085-UL",
-		lv_limit = 30,
-		desc = "The highest-ranking engineers have branded this Project as top-secret. The results may have a tremendous effect not just on humankind, but the very ecosystem of the entire world.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 30,
+		desc = "The highest-ranking engineers have branded this Project as top-secret. The results may have a tremendous effect not just on humankind, but the very ecosystem of the entire world.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_sh",
+		blueprint_version = 1,
+		id = 1025,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -5593,20 +7856,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1026] = {
-		id = 1026,
+		name = "B-397-RF",
 		rarity = 3,
 		time = 14400,
 		type = 2,
-		name = "B-397-RF",
-		lv_limit = 85,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52011,
 		bg = "3",
-		blueprint_version = 1,
+		lv_limit = 85,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_3",
 		label_color = "tag_b",
+		blueprint_version = 1,
+		id = 1026,
+		bg_icon = "battle_3",
 		consume = {},
 		drop_client = {
 			{
@@ -5627,20 +7890,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1101] = {
-		id = 1101,
+		name = "C-038-RF",
 		rarity = 3,
 		time = 43200,
 		type = 2,
-		name = "C-038-RF",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "item_3",
 		label_color = "tag_c",
+		blueprint_version = 2,
+		id = 1101,
+		bg_icon = "item_3",
 		consume = {},
 		drop_client = {
 			{
@@ -5666,20 +7929,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1102] = {
-		id = 1102,
+		name = "C-038-RF",
 		rarity = 3,
 		time = 43200,
 		type = 2,
-		name = "C-038-RF",
-		lv_limit = 30,
-		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "item_3",
 		label_color = "tag_c",
+		blueprint_version = 2,
+		id = 1102,
+		bg_icon = "item_3",
 		consume = {},
 		drop_client = {
 			{
@@ -5705,20 +7968,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1103] = {
-		id = 1103,
+		name = "B-351-RF",
 		rarity = 3,
 		time = 14400,
 		type = 2,
-		name = "B-351-RF",
-		lv_limit = 75,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52009,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 75,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_3",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 1103,
+		bg_icon = "battle_3",
 		consume = {},
 		drop_client = {
 			{
@@ -5739,20 +8002,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1104] = {
-		id = 1104,
+		name = "B-397-RF",
 		rarity = 3,
 		time = 14400,
 		type = 2,
-		name = "B-397-RF",
-		lv_limit = 80,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52010,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 80,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_3",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 1104,
+		bg_icon = "battle_3",
 		consume = {},
 		drop_client = {
 			{
@@ -5773,20 +8036,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1105] = {
-		id = 1105,
+		name = "D-405-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-405-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_xiyatu",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1105,
+		bg_icon = "chara_xiyatu",
 		consume = {
 			{
 				1,
@@ -5818,20 +8081,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1106] = {
-		id = 1106,
+		name = "D-412-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-412-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_zuozhiya",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1106,
+		bg_icon = "chara_zuozhiya",
 		consume = {
 			{
 				1,
@@ -5863,20 +8126,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1107] = {
-		id = 1107,
+		name = "D-446-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-446-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_beifeng",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1107,
+		bg_icon = "chara_beifeng",
 		consume = {
 			{
 				1,
@@ -5908,20 +8171,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1108] = {
-		id = 1108,
+		name = "D-457-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-457-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_wuqi",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1108,
+		bg_icon = "chara_wuqi",
 		consume = {
 			{
 				1,
@@ -5953,20 +8216,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1109] = {
-		id = 1109,
+		name = "D-479-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-479-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_feiteliedadi",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1109,
+		bg_icon = "chara_feiteliedadi",
 		consume = {
 			{
 				1,
@@ -5998,20 +8261,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1110] = {
-		id = 1110,
+		name = "D-494-RF",
 		rarity = 3,
 		time = 28800,
 		type = 2,
-		name = "D-494-RF",
-		lv_limit = 30,
-		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
 		sub_name = "Large Project",
 		label = "tag_red",
-		bg_icon = "chara_jiasikenie",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1110,
+		bg_icon = "chara_jiasikenie",
 		consume = {
 			{
 				1,
@@ -6043,20 +8306,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1111] = {
-		id = 1111,
+		name = "H-207-RF",
 		rarity = 3,
 		time = 14400,
 		type = 2,
-		name = "H-207-RF",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "gold_3",
 		label_color = "tag_h",
+		blueprint_version = 2,
+		id = 1111,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				2,
@@ -6083,20 +8346,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1112] = {
-		id = 1112,
+		name = "H-207-RF",
 		rarity = 3,
 		time = 14400,
 		type = 2,
-		name = "H-207-RF",
-		lv_limit = 30,
-		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "gold_3",
 		label_color = "tag_h",
+		blueprint_version = 2,
+		id = 1112,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				2,
@@ -6123,20 +8386,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1113] = {
-		id = 1113,
+		name = "D-005-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "D-005-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_xiyatu",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1113,
+		bg_icon = "chara_xiyatu",
 		consume = {
 			{
 				1,
@@ -6168,20 +8431,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1114] = {
-		id = 1114,
+		name = "D-012-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "D-012-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_zuozhiya",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1114,
+		bg_icon = "chara_zuozhiya",
 		consume = {
 			{
 				1,
@@ -6213,20 +8476,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1115] = {
-		id = 1115,
+		name = "D-046-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "D-046-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_beifeng",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1115,
+		bg_icon = "chara_beifeng",
 		consume = {
 			{
 				1,
@@ -6258,20 +8521,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1116] = {
-		id = 1116,
+		name = "D-057-UL",
 		rarity = 4,
 		time = 1800,
 		type = 2,
-		name = "D-057-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "4",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_wuqi",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1116,
+		bg_icon = "chara_wuqi",
 		consume = {
 			{
 				1,
@@ -6303,20 +8566,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1117] = {
-		id = 1117,
+		name = "D-079-UL",
 		rarity = 4,
 		time = 1800,
 		type = 2,
-		name = "D-079-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "4",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_feiteliedadi",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1117,
+		bg_icon = "chara_feiteliedadi",
 		consume = {
 			{
 				1,
@@ -6348,20 +8611,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1118] = {
-		id = 1118,
+		name = "D-094-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "D-094-UL",
-		lv_limit = 30,
-		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
 		sub_name = "Small Project",
 		label = "tag_red",
-		bg_icon = "chara_jiasikenie",
 		label_color = "tag_sp",
+		blueprint_version = 2,
+		id = 1118,
+		bg_icon = "chara_jiasikenie",
 		consume = {
 			{
 				1,
@@ -6393,20 +8656,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1119] = {
-		id = 1119,
+		name = "Q-002-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "Q-002-UL",
-		lv_limit = 30,
-		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 1119,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -6433,20 +8696,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1120] = {
-		id = 1120,
+		name = "Q-010-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "Q-010-UL",
-		lv_limit = 30,
-		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 1120,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -6473,20 +8736,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1121] = {
-		id = 1121,
+		name = "Q-051-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "Q-051-UL",
-		lv_limit = 30,
-		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 1121,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -6513,20 +8776,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1122] = {
-		id = 1122,
+		name = "Q-068-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "Q-068-UL",
-		lv_limit = 30,
-		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 1122,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -6553,20 +8816,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1123] = {
-		id = 1123,
+		name = "Q-089-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "Q-089-UL",
-		lv_limit = 30,
-		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_q",
+		blueprint_version = 2,
+		id = 1123,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -6593,20 +8856,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1124] = {
-		id = 1124,
+		name = "H-022-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "H-022-UL",
-		lv_limit = 30,
-		desc = "The highest-ranking engineers have branded this Project as top-secret. The results may have a tremendous effect not just on humankind, but the very ecosystem of the entire world.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "The highest-ranking engineers have branded this Project as top-secret. The results may have a tremendous effect not just on humankind, but the very ecosystem of the entire world.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_sh",
+		blueprint_version = 2,
+		id = 1124,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -6638,20 +8901,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1125] = {
-		id = 1125,
+		name = "H-022-UL",
 		rarity = 3,
 		time = 1800,
 		type = 2,
-		name = "H-022-UL",
-		lv_limit = 30,
-		desc = "The highest-ranking engineers have branded this Project as top-secret. The results may have a tremendous effect not just on humankind, but the very ecosystem of the entire world.",
 		condition = 0,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 30,
+		desc = "The highest-ranking engineers have branded this Project as top-secret. The results may have a tremendous effect not just on humankind, but the very ecosystem of the entire world.",
 		sub_name = "Small Project",
 		label = "tag_blue",
-		bg_icon = "gold_3",
 		label_color = "tag_sh",
+		blueprint_version = 2,
+		id = 1125,
+		bg_icon = "gold_3",
 		consume = {
 			{
 				1,
@@ -6683,20 +8946,20 @@ pg.technology_data_template = {
 		}
 	},
 	[1126] = {
-		id = 1126,
+		name = "B-397-RF",
 		rarity = 3,
 		time = 14400,
 		type = 2,
-		name = "B-397-RF",
-		lv_limit = 85,
-		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		condition = 52011,
 		bg = "3",
-		blueprint_version = 2,
+		lv_limit = 85,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
 		sub_name = "Medium Project",
 		label = "tag_red",
-		bg_icon = "battle_3",
 		label_color = "tag_b",
+		blueprint_version = 2,
+		id = 1126,
+		bg_icon = "battle_3",
 		consume = {},
 		drop_client = {
 			{
@@ -6707,6 +8970,1006 @@ pg.technology_data_template = {
 			{
 				2,
 				52012,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1201] = {
+		name = "C-038-RF",
+		rarity = 3,
+		time = 43200,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
+		sub_name = "Large Project",
+		label = "tag_red",
+		label_color = "tag_c",
+		blueprint_version = 3,
+		id = 1201,
+		bg_icon = "item_3",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[1202] = {
+		name = "C-038-RF",
+		rarity = 3,
+		time = 43200,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "As of this point, all fundamental theories about the Wisdom Cubes are derived from the level of understanding of their basic structure. Engineers are working around the clock to further elucidate this structure.",
+		sub_name = "Large Project",
+		label = "tag_red",
+		label_color = "tag_c",
+		blueprint_version = 3,
+		id = 1202,
+		bg_icon = "item_3",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			},
+			{
+				2,
+				59001,
+				1
+			}
+		}
+	},
+	[1203] = {
+		name = "B-351-RF",
+		rarity = 3,
+		time = 14400,
+		type = 2,
+		condition = 52009,
+		bg = "3",
+		lv_limit = 75,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 1203,
+		bg_icon = "battle_3",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1204] = {
+		name = "B-397-RF",
+		rarity = 3,
+		time = 14400,
+		type = 2,
+		condition = 52010,
+		bg = "3",
+		lv_limit = 80,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 1204,
+		bg_icon = "battle_3",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1205] = {
+		name = "D-421-RF",
+		rarity = 3,
+		time = 28800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Large Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 1205,
+		bg_icon = "chara_chaijun",
+		consume = {
+			{
+				1,
+				1,
+				8000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42021,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1206] = {
+		name = "D-422-RF",
+		rarity = 3,
+		time = 28800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Large Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 1206,
+		bg_icon = "chara_deleike",
+		consume = {
+			{
+				1,
+				1,
+				8000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42022,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1207] = {
+		name = "D-472-RF",
+		rarity = 3,
+		time = 28800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Large Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 1207,
+		bg_icon = "chara_meiyinci",
+		consume = {
+			{
+				1,
+				1,
+				8000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42023,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1208] = {
+		name = "D-477-RF",
+		rarity = 3,
+		time = 28800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Large Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 1208,
+		bg_icon = "chara_aoding",
+		consume = {
+			{
+				1,
+				1,
+				8000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42024,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1209] = {
+		name = "D-495-RF",
+		rarity = 3,
+		time = 28800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "Wisdom Cubes are able to manifest humanity's collective consciousness. If it was possible to \"orient\" Wisdom Cubes to manifest a specific subset, what would be the outcome?",
+		sub_name = "Large Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 1209,
+		bg_icon = "chara_xiangbin",
+		consume = {
+			{
+				1,
+				1,
+				8000
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42025,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1211] = {
+		name = "H-207-RF",
+		rarity = 3,
+		time = 14400,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_h",
+		blueprint_version = 3,
+		id = 1211,
+		bg_icon = "gold_3",
+		consume = {
+			{
+				2,
+				20001,
+				10
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				54051,
+				1
+			},
+			{
+				2,
+				15008,
+				1
+			}
+		}
+	},
+	[1212] = {
+		name = "H-207-RF",
+		rarity = 3,
+		time = 14400,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "The simplest and crudest way to analyze the structure of a Wisdom Cube is to deconstruct it. Though there have been no recorded successes so far, it is still important to carry out this valuable research.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_h",
+		blueprint_version = 3,
+		id = 1212,
+		bg_icon = "gold_3",
+		consume = {
+			{
+				2,
+				20001,
+				10
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				54051,
+				1
+			},
+			{
+				2,
+				15008,
+				1
+			}
+		}
+	},
+	[1213] = {
+		name = "D-021-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 1213,
+		bg_icon = "chara_chaijun",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			},
+			{
+				2,
+				20001,
+				5
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42021,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1214] = {
+		name = "D-022-UL",
+		rarity = 4,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "4",
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 1214,
+		bg_icon = "chara_deleike",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			},
+			{
+				2,
+				20001,
+				5
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42022,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1215] = {
+		name = "D-072-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 1215,
+		bg_icon = "chara_meiyinci",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			},
+			{
+				2,
+				20001,
+				5
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42023,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1216] = {
+		name = "D-077-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 1216,
+		bg_icon = "chara_aoding",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			},
+			{
+				2,
+				20001,
+				5
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42024,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1217] = {
+		name = "D-095-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "During an experiment in Wisdom Cube consciousness creation, a strange phenomenon that caused a Thought Dissipation Rate spike occurred. If we can identify its cause, it should lead to a great leap for our understanding of the Wisdom Cubes' construction.",
+		sub_name = "Small Project",
+		label = "tag_red",
+		label_color = "tag_sp",
+		blueprint_version = 3,
+		id = 1217,
+		bg_icon = "chara_xiangbin",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			},
+			{
+				2,
+				20001,
+				5
+			}
+		},
+		drop_client = {
+			{
+				2,
+				42025,
+				1
+			},
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1219] = {
+		name = "Q-002-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls' rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 1219,
+		bg_icon = "gold_3",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			},
+			{
+				2,
+				17003,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1220] = {
+		name = "Q-010-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 1220,
+		bg_icon = "gold_3",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			},
+			{
+				2,
+				17013,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1221] = {
+		name = "Q-051-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 1221,
+		bg_icon = "gold_3",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			},
+			{
+				2,
+				17023,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1222] = {
+		name = "Q-068-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 1222,
+		bg_icon = "gold_3",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			},
+			{
+				2,
+				17033,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1223] = {
+		name = "Q-089-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "In a resonance experiment with Wisdom Cubes and shipgirls. rigging, certain Parts demonstrated an extremely high synchronization rate. It is thought they are likely comprised of as-of-yet unidentified technology.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_q",
+		blueprint_version = 3,
+		id = 1223,
+		bg_icon = "gold_3",
+		consume = {
+			{
+				1,
+				1,
+				5000
+			},
+			{
+				2,
+				17043,
+				20
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52022,
+				1
+			},
+			{
+				2,
+				52003,
+				1
+			}
+		}
+	},
+	[1224] = {
+		name = "H-060-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "The highest-ranking engineers have branded this Project as top-secret. The results may have a tremendous effect not just on humankind, but the very ecosystem of the entire world.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_sh",
+		blueprint_version = 3,
+		id = 1224,
+		bg_icon = "gold_3",
+		consume = {
+			{
+				1,
+				1,
+				8000
+			},
+			{
+				2,
+				20001,
+				3
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				54051,
+				1
+			},
+			{
+				2,
+				15008,
+				1
+			}
+		}
+	},
+	[1225] = {
+		name = "H-060-UL",
+		rarity = 3,
+		time = 1800,
+		type = 2,
+		condition = 0,
+		bg = "3",
+		lv_limit = 30,
+		desc = "The highest-ranking engineers have branded this Project as top-secret. The results may have a tremendous effect not just on humankind, but the very ecosystem of the entire world.",
+		sub_name = "Small Project",
+		label = "tag_blue",
+		label_color = "tag_sh",
+		blueprint_version = 3,
+		id = 1225,
+		bg_icon = "gold_3",
+		consume = {
+			{
+				1,
+				1,
+				8000
+			},
+			{
+				2,
+				20001,
+				3
+			}
+		},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				54051,
+				1
+			},
+			{
+				2,
+				15008,
+				1
+			}
+		}
+	},
+	[1226] = {
+		name = "B-397-RF",
+		rarity = 3,
+		time = 14400,
+		type = 2,
+		condition = 52011,
+		bg = "3",
+		lv_limit = 85,
+		desc = "A large number of hypotheses have been generated during the process of researching the Wisdom Cube. This research project is aimed at collecting empirical evidence to test these hypotheses through practical methods.",
+		sub_name = "Medium Project",
+		label = "tag_red",
+		label_color = "tag_b",
+		blueprint_version = 3,
+		id = 1226,
+		bg_icon = "battle_3",
+		consume = {},
+		drop_client = {
+			{
+				2,
+				52021,
+				1
+			},
+			{
+				2,
+				52022,
 				1
 			},
 			{
@@ -6794,6 +10057,11 @@ pg.technology_data_template = {
 		123,
 		131,
 		132,
+		133,
+		134,
+		135,
+		136,
+		137,
 		141,
 		142,
 		143,
@@ -6831,6 +10099,58 @@ pg.technology_data_template = {
 		192,
 		193,
 		194,
+		201,
+		202,
+		203,
+		204,
+		211,
+		212,
+		213,
+		214,
+		215,
+		216,
+		217,
+		218,
+		221,
+		222,
+		223,
+		231,
+		232,
+		241,
+		242,
+		243,
+		244,
+		245,
+		246,
+		251,
+		252,
+		253,
+		254,
+		255,
+		261,
+		262,
+		263,
+		264,
+		265,
+		271,
+		272,
+		273,
+		274,
+		275,
+		276,
+		277,
+		278,
+		279,
+		280,
+		281,
+		282,
+		283,
+		284,
+		285,
+		291,
+		292,
+		293,
+		294,
 		1001,
 		1002,
 		1003,
@@ -6882,8 +10202,30 @@ pg.technology_data_template = {
 		1123,
 		1124,
 		1125,
-		1126
+		1126,
+		1201,
+		1202,
+		1203,
+		1204,
+		1205,
+		1206,
+		1207,
+		1208,
+		1209,
+		1211,
+		1212,
+		1213,
+		1214,
+		1215,
+		1216,
+		1217,
+		1219,
+		1220,
+		1221,
+		1222,
+		1223,
+		1224,
+		1225,
+		1226
 	}
 }
-
-return

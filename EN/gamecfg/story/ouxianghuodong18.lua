@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "OUXIANGHUODONG18",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 6,
 			side = 2,
-			dir = 1,
-			bgm = "azumaster-ins",
 			actor = 301014,
 			nameColor = "#a9f548",
-			say = "被~干~掉~啦~！",
+			dir = 1,
+			say = "You got me good...!",
+			bgm = "azumaster-ins",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,8 +24,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -37,9 +37,9 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 101264,
-			say = "……（埃尔德里奇的呆毛卷出了GoodJob的形状）",
+			dir = 1,
+			say = "... (Eldridge's antenna-hair seemed to curl into a thumbs-up shape)",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -53,9 +53,9 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102240,
-			say = "哈啊…哈啊……赢、赢了！",
+			dir = 1,
+			say = "Phew... We managed to squeeze out another win!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -69,9 +69,9 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 202250,
-			say = "「μ兵装」的性能，也差不多到极限了呢",
+			dir = 1,
+			say = "By the looks of things, we've pushed our Muse System to their limits.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -86,7 +86,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "{namecode:2}，作为重樱的代表干得不错。特型的孩子们也会很高兴的吧",
+			say = "Fubuki, the Sakura Empire is proud of your effort today. I'm sure the other Special-Type girls will be overjoyed.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -101,7 +101,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "欸嘿嘿！虽然输了，不过被这么夸奖还是有些不好意思呢~",
+			say = "Ehehe! Even though I lost, it doesn't feel half bad~",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -112,8 +112,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -125,9 +125,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 101264,
-			say = "加斯科涅…开心吗？",
+			dir = 1,
+			say = "Gascogne... did you have fun?",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -140,10 +140,10 @@ return {
 		{
 			expression = 5,
 			side = 2,
-			dir = 1,
 			actor = 905030,
 			nameColor = "#a9f548",
-			say = "是！加斯科涅…非常开心！",
+			dir = 1,
+			say = "Affirmative! I mean, yes... I did!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -154,8 +154,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -167,9 +167,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 905030,
-			say = "不仅仅是作为“舰船”进行战斗…还和大家一起做了Live的准备，然后——",
+			dir = 1,
+			say = "I don't feel like just another warship setting off for battle. Being able to prepare for this performance with everyone, and then...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -182,10 +182,10 @@ return {
 		{
 			expression = 5,
 			side = 2,
-			dir = 1,
 			actor = 905030,
 			nameColor = "#a9f548",
-			say = "像这样与大家一起在舞台上演出，看到了港区大家的笑容…我真的觉得很开心！",
+			dir = 1,
+			say = "Being able to bring smiles to everyone's faces through our songs and dances... makes me really happy as well!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -196,8 +196,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -210,7 +210,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "…加斯科涅也改变了呢。算了，这样也挺好的？「μ兵装」的实验看起来也马上就要完成了",
+			say = "...Gascogne, you seem a bit different. Well, nothing wrong with that, right? We're about done with our testing as well.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -224,9 +224,9 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102240,
-			say = "换句话说，下次要遇上的就是最强的对手了吧！",
+			dir = 1,
+			say = "Looking at it from another angle, that must mean that our final opponent must be the toughest of them all!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -241,7 +241,7 @@ return {
 			side = 2,
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "呵呵呵，要坚持到最后才行呢，无论是「μ兵装」也好，还是Polaris也好——",
+			say = "Yes, but we will see things through to the end. With our Muse System, as Polaris...",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

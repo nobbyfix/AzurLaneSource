@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "最后的炮火",
 	init_effect = "",
-	id = 11540,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 11540,
 	icon = 11540,
 	last_effect = "",
 	effect_list = {
@@ -27,8 +27,8 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				minWeaponNumber = 1,
 				skill_id = 11540,
+				minWeaponNumber = 1,
 				check_weapon = true,
 				weapon_group = {
 					90400,

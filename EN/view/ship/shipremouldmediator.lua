@@ -2,52 +2,47 @@ slot0 = class("ShipRemouldMediator", import("..base.ContextMediator"))
 slot0.REMOULD_SHIP = "ShipRemouldMediator:REMOULD_SHIP"
 slot0.ON_SELECTE_SHIP = "ShipRemouldMediator:ON_SELECTE_SHIP"
 
-slot0.register = function (slot0)
+function slot0.register(slot0)
 	slot1 = getProxy(BayProxy)
 
-	slot0.viewComponent:setShipVO(slot2)
-	slot0.viewComponent:setShips(slot3)
-	slot0.viewComponent:setPlayer(slot5)
+	slot0.viewComponent:setShipVO(slot1:getShipById(slot0.contextData.shipId))
+	slot0.viewComponent:setShips(slot1:getRawData())
+	slot0.viewComponent:setPlayer(getProxy(PlayerProxy):getData())
 
 	slot0.bagProxy = getProxy(BagProxy)
 
 	slot0.viewComponent:setItems(slot0.bagProxy:getData())
-	slot0:bind(slot0.REMOULD_SHIP, function (slot0, slot1, slot2, slot3)
-		if slot0.contextData.materialShipIds and table.getCount(slot0.contextData.materialShipIds) > 1 then
+	slot0:bind(uv0.REMOULD_SHIP, function (slot0, slot1, slot2, slot3)
+		if uv0.contextData.materialShipIds and table.getCount(uv0.contextData.materialShipIds) > 1 then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("remould_ship_count_more"))
 
 			return
 		end
 
-		slot0:sendNotification(GAME.REMOULD_SHIP, {
+		uv0:sendNotification(GAME.REMOULD_SHIP, {
 			shipId = slot1,
 			remouldId = slot2,
-			materialIds = slot0.contextData.materialShipIds or {}
+			materialIds = uv0.contextData.materialShipIds or {}
 		})
 	end)
-	slot0:bind(slot0.ON_SELECTE_SHIP, function (slot0, slot1)
+	slot0:bind(uv0.ON_SELECTE_SHIP, function (slot0, slot1)
 		slot2 = {}
 		slot3 = pg.ship_data_template
-		slot4 = slot1:getConfig("rarity")
 
-		for slot8, slot9 in pairs(slot0) do
-			if (slot3[slot9.configId].group_type ~= slot3[slot1.configId].group_type and not slot9:isTestShip()) or slot1.id == slot9.id or (slot9:isTestShip() and not slot9:canUseTestShip(slot4)) then
+		for slot8, slot9 in pairs(uv0) do
+			if slot3[slot9.configId].group_type ~= slot3[slot1.configId].group_type and not slot9:isTestShip() or slot1.id == slot9.id or slot9:isTestShip() and not slot9:canUseTestShip(slot1:getConfig("rarity")) then
 				table.insert(slot2, slot9.id)
 			end
 		end
 
-		slot1:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
+		uv1:sendNotification(GAME.GO_SCENE, SCENE.DOCKYARD, {
+			selectedMax = 1,
 			selectedMin = 1,
 			skipSelect = true,
-			selectedMax = 1,
-			flags = {
-				inSham = true,
-				inActivity = true
-			},
 			ignoredIds = slot2,
-			selectedIds = slot1.contextData.materialShipIds or {},
+			selectedIds = uv1.contextData.materialShipIds or {},
 			onShip = function (slot0, slot1)
-				if slot0.inAdmiral then
+				if slot0:getFlag("inAdmiral") then
 					return false, i18n("confirm_unlock_ship_main")
 				elseif slot0:GetLockState() == Ship.LOCK_STATE_LOCK then
 					pg.MsgboxMgr.GetInstance():ShowMsgBox({
@@ -56,7 +51,7 @@ slot0.register = function (slot0)
 						onYes = function ()
 							pg.m02:sendNotification(GAME.UPDATE_LOCK, {
 								ship_id_list = {
-									slot0.id
+									uv0.id
 								},
 								is_locked = Ship.LOCK_STATE_UNLOCK
 							})
@@ -66,30 +61,27 @@ slot0.register = function (slot0)
 
 					return false, nil
 				else
-					return Ship.canDestroyShip(slot0, slot1)
+					return ShipStatus.canDestroyShip(slot0, slot1)
 				end
 			end,
 			onSelected = function (slot0)
-				slot0.contextData.materialShipIds = slot0
+				uv0.contextData.materialShipIds = slot0
 			end,
 			mode = DockyardScene.MODE_REMOULD,
-			confirmSelect = function (slot0, slot1, slot2)
-				if not _.all(slot3(slot0, slot0), function (slot0)
-					return slot0 == ""
-				end) then
-					pg.MsgboxMgr.GetInstance():ShowMsgBox({
-						content = i18n("destroy_eliteship_tip", string.gsub(table.concat(slot4, ""), "$1", (slot4[1] == "" and "") or ",")),
-						onYes = slot1
-					})
-				else
+			confirmSelect = function (slot0, slot1, slot2, slot3)
+				slot4, slot5 = ShipCalcHelper.GetEliteAndHightLevelShipsById(slot0, uv0)
+
+				if #slot4 == 0 and #slot5 == 0 then
 					slot1()
+				else
+					slot3.destroyConfirmWindow:ExecuteAction("Show", slot4, slot5, false, slot1)
 				end
 			end
 		})
 	end)
 end
 
-slot0.listNotificationInterests = function (slot0)
+function slot0.listNotificationInterests(slot0)
 	return {
 		GAME.REMOULD_SHIP_DONE,
 		PlayerProxy.UPDATED,
@@ -97,7 +89,7 @@ slot0.listNotificationInterests = function (slot0)
 	}
 end
 
-slot0.handleNotification = function (slot0, slot1)
+function slot0.handleNotification(slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == GAME.REMOULD_SHIP_DONE then

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIXUEGUI1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"Angel or Devil in White?\n\n<size=45>Chapter 1 - Resupply Surprise?!</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "Port - Plaza",
 			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "Port - Plaza",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -62,12 +62,12 @@ return {
 			}
 		},
 		{
-			say = "Isn't that obvious...? What kind of war effort would be too stingy to deliver supplies to its front lines...?",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "Isn't that obvious...? What kind of war effort would be too stingy to deliver supplies to its front lines...?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -114,11 +114,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "Nya?! A compliment, from Shiranui? Ahh, big trouble, nya! Is the world coming to an end, nya?",
 			typewriter = {
 				speed = 0.05,
@@ -130,8 +130,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -220,11 +220,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "Uunya?! Where'd you come from, Vampire?! You surprised me, nya!",
 			typewriter = {
 				speed = 0.05,
@@ -236,8 +236,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.05,
 					x = 0,
@@ -262,12 +262,12 @@ return {
 			}
 		},
 		{
-			say = "If that's the case, could you stop trying to compare that outfit to your own size...?",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "If that's the case, could you stop trying to compare that outfit to your own size...?",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -314,11 +314,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "Nya?! If I have to wear that, count me out, nya!",
 			typewriter = {
 				speed = 0.05,
@@ -330,8 +330,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -372,11 +372,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "Really, nya?!",
 			typewriter = {
 				speed = 0.05,
@@ -388,8 +388,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -414,15 +414,15 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "... And there she goes, nya...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -447,13 +447,13 @@ return {
 			}
 		},
 		{
-			say = "Well, since it's just an outfit, we can just ask Commander to deduct it from her paycheck. Let's continue checking the supplies and worry about that later.",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 301180,
-			nameColor = "#a9f548",
+			say = "Well, since it's just an outfit, we can just ask Commander to deduct it from her paycheck. Let's continue checking the supplies and worry about that later.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

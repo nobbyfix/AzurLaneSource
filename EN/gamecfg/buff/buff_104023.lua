@@ -9,9 +9,9 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "危机回避！",
 	init_effect = "",
+	name = "危机回避！",
+	time = 0,
 	picture = "",
 	desc = "发射鱼雷",
 	stack = 3,
@@ -27,8 +27,8 @@ return {
 			},
 			arg_list = {
 				quota = 3,
-				skill_id = 104021,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 104021
 			}
 		}
 	}

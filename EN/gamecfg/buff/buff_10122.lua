@@ -29,9 +29,9 @@ return {
 	{
 		time = 15
 	},
-	time = 5,
-	name = "监听器",
 	init_effect = "",
+	name = "监听器",
+	time = 5,
 	picture = "",
 	desc = "监听器",
 	stack = 1,
@@ -45,7 +45,8 @@ return {
 				"onShieldBroken"
 			},
 			arg_list = {
-				skill_id = 10121
+				skill_id = 10121,
+				shieldBuffID = 10121
 			}
 		}
 	}

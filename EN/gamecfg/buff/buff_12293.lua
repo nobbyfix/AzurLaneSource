@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.05
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.061,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.061
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.072
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.083,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.083
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.094,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.094
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.105,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.105
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.116,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.116
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.127,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.127
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.138,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.138
 				}
 			}
 		}
@@ -133,26 +133,26 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.15
 				}
 			}
 		}
 	},
-	name = "安全第一！",
-	init_effect = "",
-	id = 12293,
 	time = 0,
+	name = "安全第一！",
+	init_effect = "jinengchufared",
+	color = "blue",
 	picture = "",
 	desc = "安全第一！",
 	stack = 1,
-	color = "blue",
+	id = 12293,
 	icon = 12290,
 	last_effect = "",
 	blink = {
-		0,
-		0.7,
 		1,
+		0,
+		0,
 		0.3,
 		0.3
 	},
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.05
 			}
 		}
 	}

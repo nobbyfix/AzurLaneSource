@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "Nasty Asty",
 	cd = 0,
-	picture = "0",
-	desc = "Nasty Asty",
 	painting = 1,
 	id = 11470,
+	picture = "0",
 	castCV = "skill",
+	desc = "Nasty Asty",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,10 +17,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetShipTag",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 11471,
 				ship_tag_list = {

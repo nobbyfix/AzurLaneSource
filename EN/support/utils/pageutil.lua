@@ -1,6 +1,7 @@
 PageUtil = class("PageUtil")
+slot0 = PageUtil
 
-PageUtil.Ctor = function (slot0, slot1, slot2, slot3, slot4)
+function slot0.Ctor(slot0, slot1, slot2, slot3, slot4)
 	pg.DelegateInfo.New(slot0)
 
 	slot0._leftBtn = slot1
@@ -9,23 +10,26 @@ PageUtil.Ctor = function (slot0, slot1, slot2, slot3, slot4)
 	slot0._numTxt = slot4
 
 	onButton(slot0, slot0._leftBtn, function ()
-		if slot0._curNum - slot0._addNum <= 0 then
-			slot0._curNum or slot0:setCurNum(slot0._curNum or slot0)
-
-			return
+		if uv0._curNum - uv0._addNum <= 0 then
+			slot0 = uv0._curNum or slot0
 		end
+
+		uv0:setCurNum(slot0)
 	end)
 	onButton(slot0, slot0._rightBtn, function ()
-		if slot0._maxNum < 0 then
-			slot0:setCurNum(slot0)
-		elseif slot0._maxNum < slot0 then
-			slot0._maxNum or slot0:setCurNum(slot0._maxNum or slot0)
+		if uv0._maxNum < 0 then
+			uv0:setCurNum(uv0._curNum + uv0._addNum)
+		else
+			if uv0._maxNum < slot0 then
+				slot0 = uv0._maxNum or slot0
+			end
+
+			uv0:setCurNum(slot0)
 		end
 	end)
 	onButton(slot0, slot0._maxBtn, function ()
-		if slot0._maxNum < 0 then
-		else
-			slot0:setCurNum(slot0._maxNum)
+		if uv0._maxNum >= 0 then
+			uv0:setCurNum(uv0._maxNum)
 		end
 	end)
 	slot0:setAddNum(1)
@@ -33,23 +37,23 @@ PageUtil.Ctor = function (slot0, slot1, slot2, slot3, slot4)
 	slot0:setMaxNum(-1)
 end
 
-PageUtil.setAddNum = function (slot0, slot1)
+function slot0.setAddNum(slot0, slot1)
 	slot0._addNum = slot1
 end
 
-PageUtil.setDefaultNum = function (slot0, slot1)
+function slot0.setDefaultNum(slot0, slot1)
 	slot0._defaultNum = slot1
 
 	slot0:setCurNum(slot0._defaultNum)
 end
 
-PageUtil.setMaxNum = function (slot0, slot1)
+function slot0.setMaxNum(slot0, slot1)
 	slot0._maxNum = slot1
 
 	setActive(slot0._maxBtn, slot0._maxNum > 0)
 end
 
-PageUtil.setCurNum = function (slot0, slot1)
+function slot0.setCurNum(slot0, slot1)
 	slot0._curNum = slot1
 
 	setText(slot0._numTxt, slot0._curNum)
@@ -59,12 +63,12 @@ PageUtil.setCurNum = function (slot0, slot1)
 	end
 end
 
-PageUtil.setNumUpdate = function (slot0, slot1)
+function slot0.setNumUpdate(slot0, slot1)
 	slot0._numUpdate = slot1
 end
 
-PageUtil.getCurNum = function (slot0)
+function slot0.getCurNum(slot0)
 	return slot0._curNum
 end
 
-return PageUtil
+return slot0

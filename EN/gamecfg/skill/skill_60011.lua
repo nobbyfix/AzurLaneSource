@@ -2,10 +2,10 @@ return {
 	uiEffect = "",
 	name = "印第安纳波利斯-原子弹",
 	cd = 0,
-	picture = "0",
-	desc = "原子弹",
 	painting = 1,
 	id = 60011,
+	picture = "0",
+	desc = "原子弹",
 	aniEffect = {
 		effect = "bigbang",
 		offset = {
@@ -16,10 +16,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetSelf",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 61003
 			}

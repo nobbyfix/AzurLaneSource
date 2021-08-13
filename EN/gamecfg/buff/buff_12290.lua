@@ -12,17 +12,17 @@ return {
 	desc_get = "",
 	name = "安全第一！",
 	init_effect = "",
-	id = 12290,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12290,
 	icon = 12290,
 	last_effect = "",
 	effect_list = {
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 12291,
@@ -45,8 +45,8 @@ return {
 			},
 			arg_list = {
 				hpUpperBound = 0.3,
-				skill_id = 12290,
 				target = "TargetSelf",
+				skill_id = 12290,
 				quota = 1
 			}
 		}

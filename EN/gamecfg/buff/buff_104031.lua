@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "连接着的羁绊",
 	init_effect = "",
-	id = 104031,
+	name = "连接着的羁绊",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "连接着的羁绊-检测TAG",
 	stack = 1,
-	color = "yellow",
+	id = 104031,
 	icon = 104030,
 	last_effect = "",
 	effect_list = {
@@ -43,8 +43,8 @@ return {
 			},
 			arg_list = {
 				check_target = "TargetShipTag",
-				skill_id = 104031,
 				maxTargetNumber = 1,
+				skill_id = 104031,
 				target = "TargetSelf",
 				ship_tag_list = {
 					"KizunaAI"

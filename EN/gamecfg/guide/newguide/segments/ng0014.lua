@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "Tap the Help button for details on Challenge Mode!",
 				mode = 1,
-				dir = -1,
 				posY = -63.794,
+				dir = -1,
 				posX = -663
 			},
 			ui = {

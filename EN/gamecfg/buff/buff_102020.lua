@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "22领队技能",
 	init_effect = "",
-	id = 102020,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 102020,
 	icon = 102020,
 	last_effect = "",
 	effect_list = {
@@ -27,15 +27,15 @@ return {
 				"onLeader"
 			},
 			arg_list = {
-				check_target = "TargetTemplate",
-				minTargetNumber = 1,
-				skill_id = 102020,
+				minTargetNumber = 2,
 				target = "TargetSelf",
-				targetTemplateIDList = {
-					10200021,
-					10200022,
-					10200023,
-					10200024
+				skill_id = 102020,
+				check_target = {
+					"TargetAllHelp",
+					"TargetShipTag"
+				},
+				ship_tag_list = {
+					"Bilibili"
 				}
 			}
 		}

@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3000,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 3000
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3330,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 3330
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3660,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 3660
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3990,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 3990
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4320,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 4320
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4650,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 4650
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4980,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 4980
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 5310,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 5310
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 5640,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 5640
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 6000,
-					attr = "igniteReduce"
+					attr = "igniteReduce",
+					number = 6000
 				}
 			}
 		}
 	},
+	time = 8,
 	name = "小比叡2",
 	init_effect = "",
-	id = 12061,
-	time = 8,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12061,
 	icon = 12060,
 	last_effect = "",
 	blink = {

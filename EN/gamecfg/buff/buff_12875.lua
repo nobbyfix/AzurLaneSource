@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.045,
-					attr = "DMG_FROM_TAG_2_T_8"
+					attr = "DMG_FROM_TAG_2_T_8",
+					number = -0.045
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.045,
-					attr = "DMG_FROM_TAG_2_T_17"
+					attr = "DMG_FROM_TAG_2_T_17",
+					number = -0.045
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.052,
-					attr = "DMG_FROM_TAG_2_T_8"
+					attr = "DMG_FROM_TAG_2_T_8",
+					number = -0.052
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.052,
-					attr = "DMG_FROM_TAG_2_T_17"
+					attr = "DMG_FROM_TAG_2_T_17",
+					number = -0.052
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.06,
-					attr = "DMG_FROM_TAG_2_T_8"
+					attr = "DMG_FROM_TAG_2_T_8",
+					number = -0.06
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.06,
-					attr = "DMG_FROM_TAG_2_T_17"
+					attr = "DMG_FROM_TAG_2_T_17",
+					number = -0.06
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.07,
-					attr = "DMG_FROM_TAG_2_T_8"
+					attr = "DMG_FROM_TAG_2_T_8",
+					number = -0.07
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.07,
-					attr = "DMG_FROM_TAG_2_T_17"
+					attr = "DMG_FROM_TAG_2_T_17",
+					number = -0.07
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.077,
-					attr = "DMG_FROM_TAG_2_T_8"
+					attr = "DMG_FROM_TAG_2_T_8",
+					number = -0.077
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.077,
-					attr = "DMG_FROM_TAG_2_T_17"
+					attr = "DMG_FROM_TAG_2_T_17",
+					number = -0.077
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.085,
-					attr = "DMG_FROM_TAG_2_T_8"
+					attr = "DMG_FROM_TAG_2_T_8",
+					number = -0.085
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.085,
-					attr = "DMG_FROM_TAG_2_T_17"
+					attr = "DMG_FROM_TAG_2_T_17",
+					number = -0.085
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.095,
-					attr = "DMG_FROM_TAG_2_T_8"
+					attr = "DMG_FROM_TAG_2_T_8",
+					number = -0.095
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.095,
-					attr = "DMG_FROM_TAG_2_T_17"
+					attr = "DMG_FROM_TAG_2_T_17",
+					number = -0.095
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.102,
-					attr = "DMG_FROM_TAG_2_T_8"
+					attr = "DMG_FROM_TAG_2_T_8",
+					number = -0.102
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.102,
-					attr = "DMG_FROM_TAG_2_T_17"
+					attr = "DMG_FROM_TAG_2_T_17",
+					number = -0.102
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.11,
-					attr = "DMG_FROM_TAG_2_T_8"
+					attr = "DMG_FROM_TAG_2_T_8",
+					number = -0.11
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.11,
-					attr = "DMG_FROM_TAG_2_T_17"
+					attr = "DMG_FROM_TAG_2_T_17",
+					number = -0.11
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.12,
-					attr = "DMG_FROM_TAG_2_T_8"
+					attr = "DMG_FROM_TAG_2_T_8",
+					number = -0.12
 				}
 			},
 			{
@@ -233,15 +233,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.12,
-					attr = "DMG_FROM_TAG_2_T_17"
+					attr = "DMG_FROM_TAG_2_T_17",
+					number = -0.12
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "",
 	init_effect = "",
-	time = 0,
 	picture = "",
 	desc = "",
 	stack = 1,

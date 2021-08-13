@@ -10,13 +10,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 75,
-					moveCount = 240,
 					Z1 = 35,
+					Z2 = 75,
+					X2 = -5,
+					moveCount = 240,
 					duration = -1,
 					X1 = -20,
-					X2 = -5
+					stopCount = 90
 				}
 			}
 		}
@@ -79,8 +79,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = 9,
 					x = -30
@@ -99,8 +99,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = 9,
 					x = -30
@@ -126,8 +126,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = 9,
 					x = -30
@@ -146,8 +146,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = 9,
 					x = -30
@@ -165,13 +165,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 5,
 				param = {
-					stopCount = 90,
-					Z2 = -10,
-					moveCount = 240,
 					Z1 = 10,
+					Z2 = -10,
+					X2 = 10,
+					moveCount = 240,
 					duration = -1,
 					X1 = -10,
-					X2 = 10
+					stopCount = 90
 				}
 			}
 		}
@@ -186,13 +186,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 77,
-					moveCount = 360,
 					Z1 = 37,
+					Z2 = 77,
+					X2 = -22,
+					moveCount = 360,
 					duration = -1,
 					X1 = -38,
-					X2 = -22
+					stopCount = 90
 				}
 			}
 		}
@@ -216,13 +216,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 5,
 				param = {
-					stopCount = 90,
-					Z2 = -10,
-					moveCount = 240,
 					Z1 = 10,
+					Z2 = -10,
+					X2 = 10,
+					moveCount = 240,
 					duration = -1,
 					X1 = -10,
-					X2 = 10
+					stopCount = 90
 				}
 			}
 		}
@@ -246,13 +246,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 5,
 				param = {
-					stopCount = 90,
-					Z2 = -10,
-					moveCount = 240,
 					Z1 = 10,
+					Z2 = -10,
+					X2 = 10,
+					moveCount = 240,
 					duration = -1,
 					X1 = -10,
-					X2 = 10
+					stopCount = 90
 				}
 			}
 		}
@@ -450,13 +450,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 80,
-					moveCount = 240,
 					Z1 = 55,
+					Z2 = 80,
+					X2 = 0,
+					moveCount = 240,
 					duration = -1,
 					X1 = -30,
-					X2 = 0
+					stopCount = 90
 				}
 			}
 		}
@@ -471,13 +471,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 55,
-					moveCount = 240,
 					Z1 = 30,
+					Z2 = 55,
+					X2 = 0,
+					moveCount = 240,
 					duration = -1,
 					X1 = -30,
-					X2 = 0
+					stopCount = 90
 				}
 			}
 		}
@@ -492,13 +492,121 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 80,
-					moveCount = 240,
 					Z1 = 30,
+					Z2 = 80,
+					X2 = 0,
+					moveCount = 240,
 					duration = -1,
 					X1 = -30,
-					X2 = 0
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[20013] = {
+		id = 20013,
+		name = "上半部分随机移动-靠中",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 55,
+					Z2 = 80,
+					X2 = 0,
+					moveCount = 240,
+					duration = -1,
+					X1 = -20,
+					stopCount = 30
+				}
+			}
+		}
+	},
+	[20014] = {
+		id = 20014,
+		name = "下半部分随机移动-靠中",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 30,
+					Z2 = 55,
+					X2 = 0,
+					moveCount = 240,
+					duration = -1,
+					X1 = -20,
+					stopCount = 30
+				}
+			}
+		}
+	},
+	[20015] = {
+		id = 20015,
+		name = "潜艇AI-4 移动到屏幕中部停留10秒后继续前进",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -35,
+					z = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 10
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 2,
+				param = {
+					x = -150,
+					z = 0
+				}
+			}
+		}
+	},
+	[20016] = {
+		id = 20016,
+		name = "潜艇AI-5 移动到屏幕中部停留5秒后继续前进",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -35,
+					z = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 2,
+				param = {
+					x = -150,
+					z = 0
 				}
 			}
 		}
@@ -513,8 +621,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 13,
 					z = 55,
+					radius = 13,
 					antiClockWise = true,
 					duration = -1,
 					x = -15
@@ -532,8 +640,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 13,
 					z = 55,
+					radius = 13,
 					antiClockWise = false,
 					duration = -1,
 					x = -15
@@ -551,8 +659,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = -1,
 					x = -10
@@ -570,8 +678,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = -1,
 					x = -10
@@ -589,13 +697,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 73,
-					moveCount = 240,
 					Z1 = 43,
+					Z2 = 73,
+					X2 = -1,
+					moveCount = 240,
 					duration = -1,
 					X1 = -22,
-					X2 = -1
+					stopCount = 90
 				}
 			}
 		}
@@ -610,8 +718,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 55,
+					valve = 1,
 					x = -70
 				}
 			},
@@ -620,8 +728,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 65,
+					valve = 1,
 					x = -67.5
 				}
 			},
@@ -630,8 +738,8 @@ pg.auto_pilot_template = {
 				to = 4,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 75,
+					valve = 1,
 					x = -62.5
 				}
 			},
@@ -640,8 +748,8 @@ pg.auto_pilot_template = {
 				to = 5,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 80,
+					valve = 1,
 					x = -57.5
 				}
 			},
@@ -650,8 +758,8 @@ pg.auto_pilot_template = {
 				to = 6,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 75,
+					valve = 1,
 					x = -52.5
 				}
 			},
@@ -660,8 +768,8 @@ pg.auto_pilot_template = {
 				to = 7,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 65,
+					valve = 1,
 					x = -47.5
 				}
 			},
@@ -670,8 +778,8 @@ pg.auto_pilot_template = {
 				to = 8,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 55,
+					valve = 1,
 					x = -45
 				}
 			},
@@ -680,8 +788,8 @@ pg.auto_pilot_template = {
 				to = 9,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 45,
+					valve = 1,
 					x = -47.5
 				}
 			},
@@ -690,8 +798,8 @@ pg.auto_pilot_template = {
 				to = 10,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 35,
+					valve = 1,
 					x = -52.5
 				}
 			},
@@ -700,8 +808,8 @@ pg.auto_pilot_template = {
 				to = 11,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 30,
+					valve = 1,
 					x = -57.5
 				}
 			},
@@ -710,8 +818,8 @@ pg.auto_pilot_template = {
 				to = 12,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 35,
+					valve = 1,
 					x = -62.5
 				}
 			},
@@ -720,8 +828,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 1,
 				param = {
-					valve = 1,
 					z = 45,
+					valve = 1,
 					x = -67.5
 				}
 			}
@@ -1296,8 +1404,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = 3,
 					x = -15
@@ -1326,8 +1434,8 @@ pg.auto_pilot_template = {
 				to = 6,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = 3,
 					x = -15
@@ -1363,8 +1471,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 75,
+					radius = 20,
 					antiClockWise = false,
 					duration = 6,
 					x = 0
@@ -1384,8 +1492,8 @@ pg.auto_pilot_template = {
 				to = 5,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 35,
+					radius = 20,
 					antiClockWise = true,
 					duration = 6,
 					x = 0
@@ -1421,8 +1529,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 35,
+					radius = 20,
 					antiClockWise = true,
 					duration = 6,
 					x = 0
@@ -1442,8 +1550,8 @@ pg.auto_pilot_template = {
 				to = 5,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 75,
+					radius = 20,
 					antiClockWise = false,
 					duration = 6,
 					x = 0
@@ -1479,8 +1587,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 15,
 					z = 55,
+					radius = 15,
 					antiClockWise = true,
 					duration = 8,
 					x = -10
@@ -1543,8 +1651,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 30,
 					z = 55,
+					radius = 30,
 					antiClockWise = false,
 					duration = 4.5,
 					x = 10
@@ -1571,8 +1679,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = 5,
 					x = 0
@@ -1771,8 +1879,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 10,
 					z = 65,
+					radius = 10,
 					antiClockWise = true,
 					duration = 2,
 					x = -5
@@ -1783,8 +1891,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 10,
 					z = 45,
+					radius = 10,
 					antiClockWise = false,
 					duration = 4,
 					x = -5
@@ -1795,8 +1903,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 10,
 					z = 65,
+					radius = 10,
 					antiClockWise = true,
 					duration = 2,
 					x = -5
@@ -1814,8 +1922,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 10,
 					z = 45,
+					radius = 10,
 					antiClockWise = false,
 					duration = 2,
 					x = -5
@@ -1826,8 +1934,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 10,
 					z = 65,
+					radius = 10,
 					antiClockWise = true,
 					duration = 4,
 					x = -5
@@ -1838,8 +1946,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 10,
 					z = 45,
+					radius = 10,
 					antiClockWise = false,
 					duration = 2,
 					x = -5
@@ -1891,8 +1999,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 15,
 					z = 55,
+					radius = 15,
 					antiClockWise = false,
 					duration = 2,
 					x = -5
@@ -1903,8 +2011,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 15,
 					z = 55,
+					radius = 15,
 					antiClockWise = true,
 					duration = 2,
 					x = -5
@@ -1922,8 +2030,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 15,
 					z = 55,
+					radius = 15,
 					antiClockWise = true,
 					duration = 2,
 					x = -5
@@ -1934,8 +2042,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 15,
 					z = 55,
+					radius = 15,
 					antiClockWise = false,
 					duration = 2,
 					x = -5
@@ -1953,8 +2061,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = 1.5,
 					x = 7
@@ -1965,8 +2073,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = 1.5,
 					x = 7
@@ -2188,8 +2296,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 25,
 					z = 55,
+					radius = 25,
 					antiClockWise = false,
 					duration = 2,
 					x = 15
@@ -2208,8 +2316,8 @@ pg.auto_pilot_template = {
 				to = 4,
 				type = 4,
 				param = {
-					radius = 25,
 					z = 55,
+					radius = 25,
 					antiClockWise = true,
 					duration = 2,
 					x = 15
@@ -2235,8 +2343,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 25,
 					z = 55,
+					radius = 25,
 					antiClockWise = true,
 					duration = 2,
 					x = 15
@@ -2255,8 +2363,8 @@ pg.auto_pilot_template = {
 				to = 4,
 				type = 4,
 				param = {
-					radius = 25,
 					z = 55,
+					radius = 25,
 					antiClockWise = false,
 					duration = 2,
 					x = 15
@@ -2575,8 +2683,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = 5,
 					x = 0
@@ -2596,8 +2704,8 @@ pg.auto_pilot_template = {
 				to = 4,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = 5,
 					x = 0
@@ -2624,8 +2732,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = 5,
 					x = 0
@@ -2645,8 +2753,8 @@ pg.auto_pilot_template = {
 				to = 4,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = 5,
 					x = 0
@@ -3235,8 +3343,8 @@ pg.auto_pilot_template = {
 				to = 8,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = 3,
 					x = -18
@@ -3351,8 +3459,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 30,
 					z = 55,
+					radius = 30,
 					antiClockWise = true,
 					duration = 6,
 					x = -5
@@ -3372,8 +3480,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 15,
 					z = 55,
+					radius = 15,
 					antiClockWise = false,
 					duration = 4,
 					x = -5
@@ -3400,8 +3508,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = 3.8,
 					x = -15
@@ -3429,8 +3537,8 @@ pg.auto_pilot_template = {
 				to = 6,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = 3.8,
 					x = -15
@@ -3585,8 +3693,8 @@ pg.auto_pilot_template = {
 				to = 6,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = 2.6,
 					x = 0
@@ -3760,8 +3868,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 30,
 					z = 55,
+					radius = 30,
 					antiClockWise = false,
 					duration = 4.5,
 					x = 10
@@ -3931,8 +4039,8 @@ pg.auto_pilot_template = {
 				to = 2,
 				type = 4,
 				param = {
-					radius = 25,
 					z = 55,
+					radius = 25,
 					antiClockWise = false,
 					duration = 2,
 					x = 15
@@ -3951,8 +4059,8 @@ pg.auto_pilot_template = {
 				to = 4,
 				type = 4,
 				param = {
-					radius = 25,
 					z = 55,
+					radius = 25,
 					antiClockWise = true,
 					duration = 2,
 					x = 15
@@ -4291,8 +4399,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 75,
+					radius = 20,
 					antiClockWise = false,
 					duration = 6,
 					x = 0
@@ -4312,8 +4420,8 @@ pg.auto_pilot_template = {
 				to = 5,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 35,
+					radius = 20,
 					antiClockWise = true,
 					duration = 6,
 					x = 0
@@ -4349,8 +4457,8 @@ pg.auto_pilot_template = {
 				to = 3,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 35,
+					radius = 20,
 					antiClockWise = true,
 					duration = 6,
 					x = 0
@@ -4370,8 +4478,8 @@ pg.auto_pilot_template = {
 				to = 5,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 75,
+					radius = 20,
 					antiClockWise = false,
 					duration = 6,
 					x = 0
@@ -4587,8 +4695,8 @@ pg.auto_pilot_template = {
 				to = 4,
 				type = 4,
 				param = {
-					radius = 30,
 					z = 55,
+					radius = 30,
 					antiClockWise = false,
 					duration = 30,
 					x = -10
@@ -4762,8 +4870,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 30,
 					z = 55,
+					radius = 30,
 					antiClockWise = false,
 					duration = -1,
 					x = -15
@@ -4962,8 +5070,8 @@ pg.auto_pilot_template = {
 				to = 5,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = 5,
 					x = 0
@@ -5001,8 +5109,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = 5,
 					x = 0
@@ -5020,13 +5128,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 75,
-					moveCount = 240,
 					Z1 = 35,
+					Z2 = 75,
+					X2 = 0,
+					moveCount = 240,
 					duration = -1,
 					X1 = -3,
-					X2 = 0
+					stopCount = 90
 				}
 			}
 		}
@@ -5051,6 +5159,2469 @@ pg.auto_pilot_template = {
 				type = 0,
 				param = {
 					duration = -1
+				}
+			}
+		}
+	},
+	[70078] = {
+		id = 70078,
+		name = "构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -50,
+					duration = 3,
+					x = 2
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 3
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 5
+				}
+			}
+		}
+	},
+	[70079] = {
+		id = 70079,
+		name = "构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -30,
+					duration = 3,
+					x = 2
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 3
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 25
+				}
+			}
+		}
+	},
+	[70080] = {
+		id = 70080,
+		name = "构建者第一波浮游炮3",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -10,
+					duration = 3,
+					x = 2
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 3
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 45
+				}
+			}
+		}
+	},
+	[70081] = {
+		id = 70081,
+		name = "构建者第一波浮游炮4",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = 10,
+					duration = 3,
+					x = 2
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 3
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 65
+				}
+			}
+		}
+	},
+	[70082] = {
+		id = 70082,
+		name = "构建者第二波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -30,
+					duration = 3,
+					x = -7
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 1,
+				param = {
+					x = -5,
+					z = 65
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 1,
+				param = {
+					x = -5,
+					z = 5
+				}
+			},
+			{
+				index = 4,
+				to = 5,
+				type = 1,
+				param = {
+					x = -5,
+					z = 65
+				}
+			},
+			{
+				index = 5,
+				to = 6,
+				type = 1,
+				param = {
+					x = -5,
+					z = 5
+				}
+			},
+			{
+				index = 6,
+				to = 7,
+				type = 1,
+				param = {
+					x = -5,
+					z = 65
+				}
+			},
+			{
+				index = 7,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 65
+				}
+			}
+		}
+	},
+	[70083] = {
+		id = 70083,
+		name = "构建者第二波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -10,
+					duration = 3,
+					x = -7
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 1,
+				param = {
+					x = -5,
+					z = 5
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 1,
+				param = {
+					x = -5,
+					z = 65
+				}
+			},
+			{
+				index = 4,
+				to = 5,
+				type = 1,
+				param = {
+					x = -5,
+					z = 5
+				}
+			},
+			{
+				index = 5,
+				to = 6,
+				type = 1,
+				param = {
+					x = -5,
+					z = 65
+				}
+			},
+			{
+				index = 6,
+				to = 7,
+				type = 1,
+				param = {
+					x = -5,
+					z = 5
+				}
+			},
+			{
+				index = 7,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 5
+				}
+			}
+		}
+	},
+	[70084] = {
+		id = 70084,
+		name = "构建者第二波浮游炮3",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -50,
+					duration = 3,
+					x = -17
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 1,
+				param = {
+					x = -70,
+					z = 5
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 1,
+				param = {
+					x = 2,
+					z = 5
+				}
+			},
+			{
+				index = 4,
+				to = 5,
+				type = 1,
+				param = {
+					x = -70,
+					z = 5
+				}
+			},
+			{
+				index = 5,
+				to = 6,
+				type = 1,
+				param = {
+					x = 2,
+					z = 5
+				}
+			},
+			{
+				index = 6,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 5
+				}
+			}
+		}
+	},
+	[70085] = {
+		id = 70085,
+		name = "构建者第二波浮游炮4",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = 10,
+					duration = 3,
+					x = -8
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 1,
+				param = {
+					x = -70,
+					z = 65
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 1,
+				param = {
+					x = 2,
+					z = 65
+				}
+			},
+			{
+				index = 4,
+				to = 5,
+				type = 1,
+				param = {
+					x = -70,
+					z = 65
+				}
+			},
+			{
+				index = 5,
+				to = 6,
+				type = 1,
+				param = {
+					x = 2,
+					z = 65
+				}
+			},
+			{
+				index = 6,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 65
+				}
+			}
+		}
+	},
+	[70086] = {
+		id = 70086,
+		name = "常规BOSS返回中间",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -15,
+					z = 55
+				}
+			}
+		}
+	},
+	[70087] = {
+		id = 70087,
+		name = "EX构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -5,
+					duration = 2,
+					x = 5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 4,
+				param = {
+					z = 35,
+					radius = 25,
+					antiClockWise = false,
+					duration = 9,
+					x = -10
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70088] = {
+		id = 70088,
+		name = "EX构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -35,
+					duration = 2,
+					x = 5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 4,
+				param = {
+					z = 35,
+					radius = 25,
+					antiClockWise = false,
+					duration = 9,
+					x = -10
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -45
+				}
+			}
+		}
+	},
+	[70089] = {
+		id = 70089,
+		name = "EX构建者第四波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 1,
+				param = {
+					x = -30,
+					z = 5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 1,
+				param = {
+					x = 0,
+					z = 5
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 1,
+				param = {
+					x = 0,
+					z = 65
+				}
+			},
+			{
+				index = 4,
+				to = 5,
+				type = 1,
+				param = {
+					x = -78,
+					z = 65
+				}
+			},
+			{
+				index = 5,
+				to = 6,
+				type = 1,
+				param = {
+					x = -78,
+					z = 5
+				}
+			},
+			{
+				index = 6,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 5
+				}
+			}
+		}
+	},
+	[70090] = {
+		id = 70090,
+		name = "EX构建者第四波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 1,
+				param = {
+					x = -30,
+					z = 65
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 1,
+				param = {
+					x = 0,
+					z = 65
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 1,
+				param = {
+					x = 0,
+					z = 5
+				}
+			},
+			{
+				index = 4,
+				to = 5,
+				type = 1,
+				param = {
+					x = -78,
+					z = 5
+				}
+			},
+			{
+				index = 5,
+				to = 6,
+				type = 1,
+				param = {
+					x = -78,
+					z = 65
+				}
+			},
+			{
+				index = 6,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 65
+				}
+			}
+		}
+	},
+	[70091] = {
+		id = 70091,
+		name = "2020法系沃克兰回中心",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = 0,
+					z = 58
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70092] = {
+		id = 70092,
+		name = "沃克兰人形有节奏的随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = -5,
+					moveCount = 5000,
+					duration = 2.9,
+					X1 = -20,
+					stopCount = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 1.6
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = -5,
+					moveCount = 5000,
+					duration = 5.1,
+					X1 = -20,
+					stopCount = 0
+				}
+			}
+		}
+	},
+	[70093] = {
+		id = 70093,
+		name = "2020法系阿尔及利亚回中心",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 55
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70094] = {
+		id = 70094,
+		name = "2020法系阿尔及利亚随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = 0,
+					moveCount = 240,
+					duration = -1,
+					X1 = -15,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[70095] = {
+		id = 70095,
+		name = "2020英系希佩尔有节奏随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = -5,
+					moveCount = 40,
+					duration = -1,
+					X1 = -20,
+					stopCount = 20
+				}
+			}
+		}
+	},
+	[70096] = {
+		id = 70096,
+		name = "2020英系清除者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = 0,
+					duration = 2,
+					x = 5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 4,
+				param = {
+					z = 40,
+					radius = 25,
+					antiClockWise = false,
+					duration = 5,
+					x = -2
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70097] = {
+		id = 70097,
+		name = "2020英系清除者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -30,
+					duration = 2,
+					x = 5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 4,
+				param = {
+					z = 40,
+					radius = 25,
+					antiClockWise = false,
+					duration = 5,
+					x = -2
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -45
+				}
+			}
+		}
+	},
+	[70098] = {
+		id = 70098,
+		name = "2020英系清除者水平追踪移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 8,
+				param = {
+					X = 0,
+					duration = 300,
+					offsetZ = -5
+				}
+			}
+		}
+	},
+	[70099] = {
+		id = 70099,
+		name = "2020英系EX清除者移动到屏幕中央",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -53,
+					z = 55
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70100] = {
+		id = 70100,
+		name = "2020信浓活动T6测试者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = 5,
+					duration = 8,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70101] = {
+		id = 70101,
+		name = "2020信浓活动T6测试者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -35,
+					duration = 8,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70102] = {
+		id = 70102,
+		name = "2020信浓活动T6测试者 辅助航母行动轨迹",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -25,
+					z = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70103] = {
+		id = 70103,
+		name = "2020信浓活动T6测试者 辅助航母飞机行动轨迹",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -8,
+					z = -13
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					x = -150,
+					z = -13
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70104] = {
+		id = 70104,
+		name = "2020信浓活动T6测试者 辅助航母飞机行动轨迹",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -8,
+					z = -5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					x = -150,
+					z = -5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70105] = {
+		id = 70105,
+		name = "2020信浓活动T6测试者 辅助航母飞机行动轨迹",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -8,
+					z = 3
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					x = -150,
+					z = 3
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70106] = {
+		id = 70106,
+		name = "2020信浓活动T1测试者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -10,
+					duration = 2,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 1,
+				param = {
+					x = -180,
+					z = 125
+				}
+			}
+		}
+	},
+	[70107] = {
+		id = 70107,
+		name = "2020信浓活动T1测试者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -20,
+					duration = 2,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 1,
+				param = {
+					x = -180,
+					z = -40
+				}
+			}
+		}
+	},
+	[70108] = {
+		id = 70108,
+		name = "2020信浓活动拉菲随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = 0,
+					moveCount = 40,
+					duration = -1,
+					X1 = -15,
+					stopCount = 20
+				}
+			}
+		}
+	},
+	[70109] = {
+		id = 70109,
+		name = "潜艇在屏幕分割线靠左随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = -25,
+					moveCount = 240,
+					duration = -1,
+					X1 = -40,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[70110] = {
+		id = 70110,
+		name = "2020信浓活动信浓第一波移动到下方",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -20,
+					z = -35
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 2
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 2,
+				param = {
+					x = 5,
+					z = 70
+				}
+			},
+			{
+				index = 4,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70111] = {
+		id = 70111,
+		name = "2020信浓活动信浓第二波小范围随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = 0,
+					moveCount = 500,
+					duration = -1,
+					X1 = -15,
+					stopCount = 1
+				}
+			}
+		}
+	},
+	[70112] = {
+		id = 70112,
+		name = "2020信浓活动信浓第三波移动到上方",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					x = -20,
+					z = 32
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 2
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 2,
+				param = {
+					x = 5,
+					z = -65
+				}
+			},
+			{
+				index = 4,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70113] = {
+		id = 70113,
+		name = "2020普林斯顿活动双鹤中心偏左移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 40,
+					Z2 = 70,
+					X2 = -5,
+					moveCount = 240,
+					duration = -1,
+					X1 = -20,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[70114] = {
+		id = 70114,
+		name = "2020普林斯顿活动双鹤中心偏右移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 40,
+					Z2 = 70,
+					X2 = 5,
+					moveCount = 240,
+					duration = -1,
+					X1 = -10,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[70115] = {
+		id = 70115,
+		name = "回正上方",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 70
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70116] = {
+		id = 70116,
+		name = "回正下方",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 40
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70117] = {
+		id = 70117,
+		name = "回Z轴58绝对中心点",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 58
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70118] = {
+		id = 70118,
+		name = "中心点偏左站位",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -10,
+					z = 58
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70119] = {
+		id = 70119,
+		name = "中心点偏右站位",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = 0,
+					z = 58
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70120] = {
+		id = 70120,
+		name = "DOA联动VSP莫妮卡有节奏的随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = -5,
+					moveCount = 5000,
+					duration = 1.5,
+					X1 = -20,
+					stopCount = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = 1
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = -5,
+					moveCount = 5000,
+					duration = 5.1,
+					X1 = -20,
+					stopCount = 0
+				}
+			}
+		}
+	},
+	[70121] = {
+		id = 70121,
+		name = "DOA联动EX女天狗第二波飞机",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 1,
+				param = {
+					x = -100,
+					z = 65
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70122] = {
+		id = 70122,
+		name = "DOA联动EX女天狗第二波飞机",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 1,
+				param = {
+					x = -100,
+					z = 35
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70123] = {
+		id = 70123,
+		name = "DOA联动EX女天狗第二波飞机",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 1,
+				param = {
+					x = -100,
+					z = 5
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70124] = {
+		id = 70124,
+		name = "DOA联动EX女天狗第三波上下移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 0,
+				param = {
+					duration = 0.5
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					x = 0,
+					z = 16
+				}
+			},
+			{
+				index = 3,
+				to = 2,
+				type = 2,
+				param = {
+					x = 0,
+					z = -16
+				}
+			}
+		}
+	},
+	[70125] = {
+		id = 70125,
+		name = "回中心点偏下位置",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 50
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70126] = {
+		id = 70126,
+		name = "回中心点偏下位置",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -5,
+					z = 45
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70127] = {
+		id = 70127,
+		name = "2020德系活动构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = 15,
+					duration = 3,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 13
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70128] = {
+		id = 70128,
+		name = "2020德系活动构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -25,
+					duration = 3,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 13
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70129] = {
+		id = 70129,
+		name = "2020德系活动EX构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = 15,
+					duration = 3,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 12
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70130] = {
+		id = 70130,
+		name = "2020德系活动EX构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -25,
+					duration = 3,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 12
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70131] = {
+		id = 70131,
+		name = "2020德系活动EX构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = 25,
+					duration = 10,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70132] = {
+		id = 70132,
+		name = "2020德系活动EX构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = 11,
+					duration = 10,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70133] = {
+		id = 70133,
+		name = "2020德系活动EX构建者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -3,
+					duration = 10,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 155
+				}
+			}
+		}
+	},
+	[70134] = {
+		id = 70134,
+		name = "2020德系活动EX构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -17,
+					duration = 10,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70135] = {
+		id = 70135,
+		name = "2020德系活动EX构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -31,
+					duration = 10,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70136] = {
+		id = 70136,
+		name = "2020德系活动EX构建者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -45,
+					duration = 10,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 5
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = -120
+				}
+			}
+		}
+	},
+	[70137] = {
+		id = 70137,
+		name = "2020毛系活动D3代行者第一波浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					z = 25,
+					valve = 1,
+					x = -5
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70138] = {
+		id = 70138,
+		name = "2020毛系活动D3代行者第一波浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					z = -25,
+					valve = 1,
+					x = -5
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[70139] = {
+		id = 70139,
+		name = "2021毛系活动D3代行者水平追踪移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 8,
+				param = {
+					X = -5,
+					duration = 300,
+					offsetZ = 2
+				}
+			}
+		}
+	},
+	[70140] = {
+		id = 70140,
+		name = "2021毛系活动道中代行者浮游炮移动1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					z = 0,
+					duration = 5,
+					x = -30,
+					valve = 1
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					z = -15,
+					duration = 3,
+					x = -5,
+					valve = 1
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 2,
+				param = {
+					z = 30,
+					duration = 3,
+					x = 0,
+					valve = 1
+				}
+			},
+			{
+				index = 4,
+				to = 2,
+				type = 2,
+				param = {
+					z = -15,
+					duration = 5,
+					x = 5,
+					valve = 1
+				}
+			}
+		}
+	},
+	[70141] = {
+		id = 70141,
+		name = "2021毛系活动道中代行者浮游炮移动2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					z = 0,
+					duration = 6,
+					x = -30,
+					valve = 1
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					z = -50,
+					duration = 9,
+					x = 0,
+					valve = 1
+				}
+			},
+			{
+				index = 3,
+				to = 2,
+				type = 2,
+				param = {
+					z = 50,
+					duration = 9,
+					x = 0,
+					valve = 1
+				}
+			}
+		}
+	},
+	[70142] = {
+		id = 70142,
+		name = "2021毛系活动道中代行者浮游炮移动3",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					z = 0,
+					duration = 6,
+					x = -30,
+					valve = 1
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					z = 50,
+					duration = 9,
+					x = 0,
+					valve = 1
+				}
+			},
+			{
+				index = 3,
+				to = 2,
+				type = 2,
+				param = {
+					z = -50,
+					duration = 9,
+					x = 0,
+					valve = 1
+				}
+			}
+		}
+	},
+	[70143] = {
+		id = 70143,
+		name = "2021毛系活动道中代行者浮游炮移动4",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 2,
+				param = {
+					z = 0,
+					duration = 5,
+					x = -30,
+					valve = 1
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 2,
+				param = {
+					z = 15,
+					duration = 3,
+					x = -5,
+					valve = 1
+				}
+			},
+			{
+				index = 3,
+				to = 4,
+				type = 2,
+				param = {
+					z = -30,
+					duration = 3,
+					x = 0,
+					valve = 1
+				}
+			},
+			{
+				index = 4,
+				to = 2,
+				type = 2,
+				param = {
+					z = 15,
+					duration = 5,
+					x = 5,
+					valve = 1
+				}
+			}
+		}
+	},
+	[70144] = {
+		id = 70144,
+		name = "2020毛系活动EX代行者浮游炮1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 3,
+				param = {
+					Z1 = 20,
+					Z2 = 55,
+					X2 = -15,
+					moveCount = 5000,
+					duration = 1,
+					X1 = -40,
+					stopCount = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = 3
+				}
+			}
+		}
+	},
+	[70145] = {
+		id = 70145,
+		name = "2020毛系活动EX代行者浮游炮2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 3,
+				param = {
+					Z1 = 55,
+					Z2 = 90,
+					X2 = -15,
+					moveCount = 5000,
+					duration = 1,
+					X1 = -40,
+					stopCount = 0
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = 3
+				}
+			}
+		}
+	},
+	[70146] = {
+		id = 70146,
+		name = "黑方舟有节奏地随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 0,
+				param = {
+					duration = 2
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = 10,
+					moveCount = 5000,
+					duration = 0.7,
+					X1 = -10,
+					stopCount = 0
+				}
+			}
+		}
+	},
+	[70147] = {
+		id = 70147,
+		name = "黑方舟水平追踪移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 8,
+				param = {
+					X = -5,
+					duration = 300,
+					offsetZ = -3
+				}
+			}
+		}
+	},
+	[70148] = {
+		id = 70148,
+		name = "向屏幕中心移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 0,
+				param = {
+					duration = 2
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 1,
+				param = {
+					x = 0,
+					z = 55
+				}
+			}
+		}
+	},
+	[70149] = {
+		id = 70149,
+		name = "上方随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 55,
+					Z2 = 85,
+					X2 = -5,
+					moveCount = 240,
+					duration = -1,
+					X1 = -20,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[70150] = {
+		id = 70150,
+		name = "下方随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 25,
+					Z2 = 55,
+					X2 = -5,
+					moveCount = 240,
+					duration = -1,
+					X1 = -20,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[70151] = {
+		id = 70151,
+		name = "高速转圈顺时针",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 4,
+				param = {
+					z = 55,
+					radius = 13,
+					duration = -1,
+					antiClockWise = false,
+					valve = 1,
+					x = -15
+				}
+			}
+		}
+	},
+	[70152] = {
+		id = 70152,
+		name = "高速转圈逆时针",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 4,
+				param = {
+					z = 55,
+					radius = 13,
+					duration = -1,
+					antiClockWise = true,
+					valve = 1,
+					x = -15
+				}
+			}
+		}
+	},
+	[70153] = {
+		id = 70153,
+		name = "黑海伦娜 十字锁定激光",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 0,
+				param = {
+					duration = 1
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 8,
+				param = {
+					X = -82,
+					duration = 1.5,
+					offsetZ = 4,
+					valve = 2
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 0,
+				param = {
+					duration = 300
+				}
+			}
+		}
+	},
+	[70154] = {
+		id = 70154,
+		name = "黑海伦娜 十字锁定激光",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 0,
+				param = {
+					duration = 1
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 8,
+				param = {
+					Z = 25,
+					duration = 1.5,
+					offsetX = 1,
+					valve = 2
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 0,
+				param = {
+					duration = 300
 				}
 			}
 		}
@@ -5387,8 +7958,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 10,
 					z = 55,
+					radius = 10,
 					antiClockWise = true,
 					duration = -1,
 					x = -20
@@ -5695,8 +8266,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 15,
 					z = 55,
+					radius = 15,
 					antiClockWise = true,
 					duration = -1,
 					x = -20
@@ -5714,8 +8285,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 15,
 					z = 70,
+					radius = 15,
 					antiClockWise = true,
 					duration = -1,
 					x = -20
@@ -5733,8 +8304,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 15,
 					z = 55,
+					radius = 15,
 					antiClockWise = false,
 					duration = -1,
 					x = -20
@@ -5752,8 +8323,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 15,
 					z = 40,
+					radius = 15,
 					antiClockWise = false,
 					duration = -1,
 					x = -20
@@ -5771,8 +8342,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = true,
 					duration = -1,
 					x = -10
@@ -5790,8 +8361,8 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 4,
 				param = {
-					radius = 20,
 					z = 55,
+					radius = 20,
 					antiClockWise = false,
 					duration = -1,
 					x = -10
@@ -5809,13 +8380,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 80,
-					moveCount = 240,
 					Z1 = 30,
+					Z2 = 80,
+					X2 = -10,
+					moveCount = 240,
 					duration = -1,
 					X1 = -30,
-					X2 = -10
+					stopCount = 90
 				}
 			}
 		}
@@ -5930,13 +8501,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 80,
-					moveCount = 240,
 					Z1 = 30,
+					Z2 = 80,
+					X2 = -10,
+					moveCount = 240,
 					duration = -1,
 					X1 = -10,
-					X2 = -10
+					stopCount = 90
 				}
 			}
 		}
@@ -5999,13 +8570,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 80,
-					moveCount = 240,
 					Z1 = 30,
+					Z2 = 80,
+					X2 = -10,
+					moveCount = 240,
 					duration = -1,
 					X1 = 10,
-					X2 = -10
+					stopCount = 90
 				}
 			}
 		}
@@ -6020,13 +8591,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 80,
-					moveCount = 240,
 					Z1 = 35,
+					Z2 = 80,
+					X2 = 5,
+					moveCount = 240,
 					duration = -1,
 					X1 = 0,
-					X2 = 5
+					stopCount = 90
 				}
 			}
 		}
@@ -6041,13 +8612,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 90,
-					Z2 = 75,
-					moveCount = 240,
 					Z1 = 35,
+					Z2 = 75,
+					X2 = 5,
+					moveCount = 240,
 					duration = -1,
 					X1 = -5,
-					X2 = 5
+					stopCount = 90
 				}
 			}
 		}
@@ -6103,13 +8674,13 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 80,
-					Z2 = 85,
-					moveCount = 240,
 					Z1 = 55,
+					Z2 = 85,
+					X2 = 0,
+					moveCount = 240,
 					duration = -1,
 					X1 = -30,
-					X2 = 0
+					stopCount = 80
 				}
 			}
 		}
@@ -6124,17 +8695,819 @@ pg.auto_pilot_template = {
 				to = 1,
 				type = 3,
 				param = {
-					stopCount = 100,
-					Z2 = 55,
-					moveCount = 240,
 					Z1 = 25,
+					Z2 = 55,
+					X2 = 0,
+					moveCount = 240,
 					duration = -1,
 					X1 = -30,
-					X2 = 0
+					stopCount = 100
+				}
+			}
+		}
+	},
+	[100000] = {
+		id = 100000,
+		name = "大世界通用_回到中点",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -10,
+					z = 55
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[100010] = {
+		id = 100010,
+		name = "仲裁者天帕岚斯_回到中点",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = -3,
+					z = 55
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[100011] = {
+		id = 100011,
+		name = "仲裁者天帕岚斯_大水母随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 40,
+					Z2 = 70,
+					X2 = -15,
+					moveCount = 240,
+					duration = -1,
+					X1 = -32,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[100012] = {
+		id = 100012,
+		name = "仲裁者天帕岚斯_二阶段随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = 0,
+					moveCount = 240,
+					duration = -1,
+					X1 = -15,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[100020] = {
+		id = 100020,
+		name = "仲裁者赫米忒_入场接随机移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 1,
+				param = {
+					x = -5,
+					z = 55
+				}
+			},
+			{
+				index = 2,
+				to = 2,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = -5,
+					moveCount = 240,
+					duration = -1,
+					X1 = -20,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[100100] = {
+		id = 100100,
+		name = "游弋者后半场移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = 5,
+					moveCount = 240,
+					duration = -1,
+					X1 = -10,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[100101] = {
+		id = 100101,
+		name = "游弋者中场移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = -10,
+					moveCount = 240,
+					duration = -1,
+					X1 = -35,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[100110] = {
+		id = 100110,
+		name = "破坏者靠下方移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 25,
+					Z2 = 45,
+					X2 = 5,
+					moveCount = 240,
+					duration = -1,
+					X1 = -15,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[100120] = {
+		id = 100120,
+		name = "防卫者回到后方",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 1,
+				param = {
+					x = 0,
+					z = 57
+				}
+			},
+			{
+				index = 2,
+				to = 1,
+				type = 0,
+				param = {
+					duration = -1
+				}
+			}
+		}
+	},
+	[100121] = {
+		id = 100121,
+		name = "防卫者后半场移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = 5,
+					moveCount = 240,
+					duration = -1,
+					X1 = -10,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[100130] = {
+		id = 100130,
+		name = "控制者后半场移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 35,
+					Z2 = 75,
+					X2 = 5,
+					moveCount = 240,
+					duration = -1,
+					X1 = -10,
+					stopCount = 90
+				}
+			}
+		}
+	},
+	[100135] = {
+		id = 100135,
+		name = "控制者浮游炮_环绕移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 50,
+					duration = 120
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 3
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 5
+				}
+			}
+		}
+	},
+	[100136] = {
+		id = 100136,
+		name = "控制者浮游炮_固定位置1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = -20,
+					duration = 180,
+					x = 2
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 3
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 5
+				}
+			}
+		}
+	},
+	[100137] = {
+		id = 100137,
+		name = "控制者浮游炮_固定位置2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 2,
+				type = 6,
+				param = {
+					z = 20,
+					duration = 180,
+					x = 2
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 0,
+				param = {
+					duration = 3
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 5
+				}
+			}
+		}
+	},
+	[100140] = {
+		id = 100140,
+		name = "控制者浮游炮p2_固定位置1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = -13,
+					duration = 16,
+					x = 22
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100141] = {
+		id = 100141,
+		name = "控制者浮游炮p2_固定位置2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = 13,
+					duration = 16,
+					x = 22
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100142] = {
+		id = 100142,
+		name = "控制者浮游炮p2_固定位置3",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = 25,
+					duration = 16,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100143] = {
+		id = 100143,
+		name = "控制者浮游炮p2_固定位置4",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = 13,
+					duration = 16,
+					x = -22
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100144] = {
+		id = 100144,
+		name = "控制者浮游炮p2_固定位置5",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = -13,
+					duration = 16,
+					x = -22
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100145] = {
+		id = 100145,
+		name = "控制者浮游炮p2_固定位置6",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = -25,
+					duration = 16,
+					x = 0
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100150] = {
+		id = 100150,
+		name = "控制者浮游炮p3_固定位置1",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = 12,
+					duration = 20,
+					x = -20
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100151] = {
+		id = 100151,
+		name = "控制者浮游炮p3_固定位置2",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = 8,
+					duration = 20,
+					x = -14
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100152] = {
+		id = 100152,
+		name = "控制者浮游炮p3_固定位置3",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = 16,
+					duration = 20,
+					x = -14
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100153] = {
+		id = 100153,
+		name = "控制者浮游炮p3_固定位置4",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = -20,
+					duration = 20,
+					x = -20
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100154] = {
+		id = 100154,
+		name = "控制者浮游炮p3_固定位置5",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = -16,
+					duration = 20,
+					x = -14
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100155] = {
+		id = 100155,
+		name = "控制者浮游炮p3_固定位置6",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 3,
+				type = 6,
+				param = {
+					z = -24,
+					duration = 20,
+					x = -14
+				}
+			},
+			{
+				index = 2,
+				to = 3,
+				type = 7,
+				param = {
+					antiClockWise = false,
+					radius = 25,
+					duration = 15
+				}
+			},
+			{
+				index = 3,
+				to = 1,
+				type = 1,
+				param = {
+					x = -100,
+					z = 55
+				}
+			}
+		}
+	},
+	[100160] = {
+		id = 100160,
+		name = "控制者后半场中央移动",
+		default = 1,
+		list = {
+			{
+				index = 1,
+				to = 1,
+				type = 3,
+				param = {
+					Z1 = 45,
+					Z2 = 65,
+					X2 = 5,
+					moveCount = 240,
+					duration = -1,
+					X1 = -10,
+					stopCount = 90
 				}
 			}
 		}
 	}
 }
-
-return

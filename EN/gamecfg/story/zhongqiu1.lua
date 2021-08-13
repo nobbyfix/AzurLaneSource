@@ -1,11 +1,11 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHONGQIU1",
-	updateOnBegin = 1,
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
+	updateOnBegin = 1,
 	scripts = {
 		{
 			actor = 107030,
@@ -38,14 +38,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 502020,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "It's finally the day for sister Yat Sen to unseal her secret osmanthus wine! Oh wow... this aroma is really hypnotizing~",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -137,8 +137,8 @@ return {
 			actor = 502020,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actorName = "Ning Hai&Ping Hai",
+			dir = -1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -304,14 +304,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 502010,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -340,7 +340,7 @@ return {
 			nameColor = "#a9f548",
 			side = 0,
 			dir = -1,
-			say = "I understand! So it seems that the Mid-Autumn Festival is one that “celebrates the reunion with friends and family”, but…how come it seems like such a downer right now? Where I'm from, all festivals should be very lively!",
+			say = "I understand! So it seems that the Mid-Autumn Festival is one that “celebrates the reunion with friends and family”, but…how come it seems like such a downer right now? In the Dragon Empery, all festivals should be very lively!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

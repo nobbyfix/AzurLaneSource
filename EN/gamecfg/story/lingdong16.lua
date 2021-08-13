@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG16",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 205070,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "story-5",
 			dir = 1,
 			say = "Members of Special Task Force One, we have inflicted devastating damage upon Tirpitz. Our combat objectives have nearly been accomplished.",
-			bgm = "story-5",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -87,15 +87,15 @@ return {
 			}
 		},
 		{
-			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom1",
+			side = 2,
+			dir = 1,
+			blackBg = true,
+			say = "……————",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,

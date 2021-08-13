@@ -62,19 +62,19 @@ return {
 	desc_get = "受到致命伤害时不会阵亡，5秒(满级15秒)内回避所有伤害，同时立刻发动一轮空袭，每场战斗只能触发1次",
 	name = "最后的反击",
 	init_effect = "",
-	id = 10450,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "受到致命伤害时不会阵亡，$1秒内回避所有伤害，同时立刻发动一轮空袭，每场战斗只能触发1次",
 	stack = 1,
-	color = "blue",
+	id = 10450,
 	icon = 10450,
 	last_effect = "",
 	effect_list = {
 		{
 			type = "BattleBuffCastSkill",
 			trigger = {
-				"onDying"
+				"onBeforeFatalDamage"
 			},
 			arg_list = {
 				skill_id = 10450,
@@ -84,7 +84,7 @@ return {
 		{
 			type = "BattleBuffCancelBuff",
 			trigger = {
-				"onDying"
+				"onBeforeFatalDamage"
 			},
 			arg_list = {
 				count = 1

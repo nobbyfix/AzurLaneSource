@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "",
 	cd = 0,
-	picture = "1",
-	desc = "光作战",
 	painting = 1,
 	id = 12010,
+	picture = "1",
 	castCV = "skill",
+	desc = "光作战",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,19 +17,19 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 61023
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetPlayerMainFleet",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 12011
 			}

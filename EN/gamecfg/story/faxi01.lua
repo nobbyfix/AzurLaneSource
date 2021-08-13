@@ -1,14 +1,14 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FAXI01",
+	once = true,
+	fadeType = 1,
 	occlusion = 2,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>Every Light Must Cast a Shadow</size>",
@@ -39,8 +39,8 @@ return {
 		{
 			mode = 1,
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -85,8 +85,8 @@ return {
 		{
 			mode = 1,
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -109,10 +109,10 @@ return {
 			}
 		},
 		{
-			say = "\"Méditerranée.\" the world's largest land-bound sea, boasts a particular climate not frequently found elsewhere in the world - a scorching, dry summer and a warm, rainy winter.",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "level03",
+			say = "\"Méditerranée.\" the world's largest land-bound sea, boasts a particular climate not frequently found elsewhere in the world - a scorching, dry summer and a warm, rainy winter.",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -185,8 +185,8 @@ return {
 		{
 			actor = 204030,
 			side = 1,
-			say = "I'm sure Headquarters has their reasons. Once a country has been taken over by the Iron Blood, they can no longer be considered our allies.",
 			dir = 1,
+			say = "I'm sure Headquarters has their reasons. Once a country has been taken over by the Iron Blood, they can no longer be considered our allies.",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -287,9 +287,9 @@ return {
 		{
 			actor = 202130,
 			side = 0,
-			say = "I've detected Siren signals! I believe they belong to the new Executor-class!",
-			dir = 1,
 			soundeffect = "event:/ui/alarm",
+			dir = 1,
+			say = "I've detected Siren signals! I believe they belong to the new Executor-class!",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

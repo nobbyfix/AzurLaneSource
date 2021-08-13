@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "Let's add your new ship to your <color=#ff7d36>formation</color>.",
 				mode = 2,
-				dir = -1,
 				posY = -275,
+				dir = -1,
 				posX = 348
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/formationButton",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,8 +28,8 @@ return {
 			style = {
 				text = "Keep in mind that <color=#ffde38>destroyers, light cruisers, and heavy cruisers</color> may only be deployed to your team's vanguard!",
 				mode = 1,
-				dir = 1,
 				posY = -100,
+				dir = 1,
 				posX = 300
 			}
 		},
@@ -38,8 +38,8 @@ return {
 			style = {
 				text = "<color=#ffde38>Carriers and battleships</color> must be placed towards the back in the main fleet.",
 				mode = 1,
-				dir = -1,
 				posY = 200,
+				dir = -1,
 				posX = 0
 			}
 		},
@@ -48,13 +48,13 @@ return {
 			style = {
 				text = "Tap <color=#ff7d36>add</color> to select a new ship.",
 				mode = 2,
-				dir = -1,
 				posY = 122.82,
+				dir = -1,
 				posX = 243.5
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/UICamera/Canvas/UIMain/FormationUI(Clone)/GridFrame/vanguard_2/tip",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -70,16 +70,16 @@ return {
 			style = {
 				text = "Select a ship to deploy.",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = 1,
 				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships",
+				pathIndex = 1,
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				},
@@ -97,13 +97,13 @@ return {
 			style = {
 				text = "Next, tap <color=#ff7d36>confirm</color>.",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
+				path = "OverlayCamera/Overlay/UIMain/blur_panel/select_panel/confirm_button",
 				pathIndex = -1,
-				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/select_panel/confirm_button",
 				triggerType = {
 					1
 				},
@@ -120,8 +120,8 @@ return {
 			style = {
 				text = "Look! Your new ship is in formation! Fleet firepower has been greatly improved!",
 				mode = 1,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			}
 		},
@@ -130,13 +130,13 @@ return {
 			style = {
 				text = "Let's head back to the main screen!",
 				mode = 2,
-				dir = -1,
 				posY = 215.7,
+				dir = -1,
 				posX = -95.62
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/UICamera/Canvas/UIMain/FormationUI(Clone)/blur_panel/top/back_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

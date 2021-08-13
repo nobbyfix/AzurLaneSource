@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG17",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
-			bgm = "story-8",
-			actor = 900021,
 			actorName = "Purifier",
+			dir = 1,
 			say = "Aha, I knew from the very beginning that this is where you'd be~!",
+			bgm = "story-8",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -27,8 +27,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "Purifier",
+			dir = 1,
 			say = "You've caused a lot of trouble for us, you know~ What are even you hoping to achieve, Ms. Prototype? ...Or should I say \"Code G\"?",
 			typewriter = {
 				speed = 0.05,
@@ -55,12 +55,12 @@ return {
 			}
 		},
 		{
-			say = "Now now, don't go anywhere! I just did the calculations, and if this massive singularity were to collapse, half of the entire Northern Union would go poof!",
+			actor = 900021,
 			side = 1,
 			nameColor = "#ff0000",
-			dir = 1,
-			actor = 900021,
 			actorName = "Purifier",
+			dir = 1,
+			say = "Now now, don't go anywhere! I just did the calculations, and if this massive singularity were to collapse, half of the entire Northern Union would go poof!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -78,8 +78,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 1,
-			dir = 1,
 			actorName = "Purifier",
+			dir = 1,
 			say = "And should that happen, it'd REALLY throw a wrench into our plans for this time period! So... could you be nice and just stop?",
 			typewriter = {
 				speed = 0.05,
@@ -109,8 +109,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 1,
-			dir = 1,
 			actorName = "Purifier",
+			dir = 1,
 			say = "If you insist on continuing anyway... then I will use all the tools I have available to me as a subprogram to stop you!",
 			typewriter = {
 				speed = 0.05,
@@ -122,15 +122,15 @@ return {
 			}
 		},
 		{
-			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom1",
+			side = 2,
+			dir = 1,
+			blackBg = true,
+			say = "……————",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,
@@ -162,8 +162,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "Purifier",
+			dir = 1,
 			say = "Ahahaha! I knew you'd come here!",
 			typewriter = {
 				speed = 0.05,
@@ -235,15 +235,15 @@ return {
 			}
 		},
 		{
-			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom1",
+			side = 2,
+			dir = 1,
+			blackBg = true,
+			say = "……————",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,
@@ -351,12 +351,12 @@ return {
 			}
 		},
 		{
-			say = "Wow, that was easy~ I should've just called on these guys to stop you instead of trying it myself!",
+			actor = 900021,
 			side = 1,
 			nameColor = "#ff0000",
-			dir = -1,
-			actor = 900021,
 			actorName = "Purifier",
+			dir = -1,
+			say = "Wow, that was easy~ I should've just called on these guys to stop you instead of trying it myself!",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -468,8 +468,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "Purifier",
+			dir = 1,
 			say = "Ahaha~ Calm down, lady. There's no point chasing after her anyway. And in case you forgot: I'm your opponent here!",
 			typewriter = {
 				speed = 0.05,
@@ -484,8 +484,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "Purifier",
+			dir = 1,
 			say = "Still, I have you guys to thank for fixing that little problem for me~",
 			typewriter = {
 				speed = 0.05,
@@ -500,8 +500,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "Purifier",
+			dir = 1,
 			say = "To reward you, I'll beam you full of energy with my little toy here!",
 			typewriter = {
 				speed = 0.05,

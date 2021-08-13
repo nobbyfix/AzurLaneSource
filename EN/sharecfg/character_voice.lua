@@ -1,9 +1,9 @@
 pg = pg or {}
 pg.character_voice = {
 	unlock = {
-		voice_name = "Receive",
-		key = "unlock",
 		resource_key = "get",
+		key = "unlock",
+		voice_name = "Receive",
 		spine_action = "stand",
 		profile_index = 1,
 		l2d_action = "",
@@ -13,9 +13,9 @@ pg.character_voice = {
 		}
 	},
 	login = {
-		voice_name = "Log in",
-		key = "login",
 		resource_key = "login",
+		key = "login",
+		voice_name = "Log in",
 		spine_action = "stand2",
 		profile_index = 2,
 		l2d_action = "login",
@@ -25,9 +25,9 @@ pg.character_voice = {
 		}
 	},
 	detail = {
-		voice_name = "View details",
-		key = "detail",
 		resource_key = "detail",
+		key = "detail",
+		voice_name = "View details",
 		spine_action = "normal",
 		profile_index = 3,
 		l2d_action = "",
@@ -37,9 +37,9 @@ pg.character_voice = {
 		}
 	},
 	main1 = {
-		voice_name = "Main screen 1",
-		key = "main1",
 		resource_key = "main_1",
+		key = "main1",
+		voice_name = "Main screen 1",
 		spine_action = "normal",
 		profile_index = 4,
 		l2d_action = "main_1",
@@ -49,9 +49,9 @@ pg.character_voice = {
 		}
 	},
 	main2 = {
-		voice_name = "Main screen 2",
-		key = "main2",
 		resource_key = "main_2",
+		key = "main2",
+		voice_name = "Main screen 2",
 		spine_action = "normal",
 		profile_index = 5,
 		l2d_action = "main_2",
@@ -61,9 +61,9 @@ pg.character_voice = {
 		}
 	},
 	main3 = {
-		voice_name = "Main screen 3",
-		key = "main3",
 		resource_key = "main_3",
+		key = "main3",
+		voice_name = "Main screen 3",
 		spine_action = "normal",
 		profile_index = 6,
 		l2d_action = "main_3",
@@ -73,9 +73,9 @@ pg.character_voice = {
 		}
 	},
 	main4 = {
-		voice_name = "Main screen 4",
-		key = "main4",
 		resource_key = "main_4",
+		key = "main4",
+		voice_name = "Main screen 4",
 		spine_action = "normal",
 		profile_index = 7,
 		l2d_action = "main_3",
@@ -85,9 +85,9 @@ pg.character_voice = {
 		}
 	},
 	main5 = {
-		voice_name = "Main screen 5",
-		key = "main5",
 		resource_key = "main_5",
+		key = "main5",
+		voice_name = "Main screen 5",
 		spine_action = "normal",
 		profile_index = 8,
 		l2d_action = "main_3",
@@ -97,9 +97,9 @@ pg.character_voice = {
 		}
 	},
 	main6 = {
-		voice_name = "Main screen 6",
-		key = "main6",
 		resource_key = "main_6",
+		key = "main6",
+		voice_name = "Main screen 6",
 		spine_action = "normal",
 		profile_index = 9,
 		l2d_action = "main_3",
@@ -109,9 +109,9 @@ pg.character_voice = {
 		}
 	},
 	touch = {
-		voice_name = "Normal touch",
-		key = "touch",
 		resource_key = "touch_1",
+		key = "touch",
+		voice_name = "Normal touch",
 		spine_action = "touch",
 		profile_index = 10,
 		l2d_action = "touch_body",
@@ -121,9 +121,9 @@ pg.character_voice = {
 		}
 	},
 	touch2 = {
-		voice_name = "Special touch",
-		key = "touch2",
 		resource_key = "touch_2",
+		key = "touch2",
+		voice_name = "Special touch",
 		spine_action = "tuozhuai",
 		profile_index = 11,
 		l2d_action = "touch_special",
@@ -133,9 +133,9 @@ pg.character_voice = {
 		}
 	},
 	headtouch = {
-		voice_name = "Rub",
-		key = "headtouch",
 		resource_key = "touch_head",
+		key = "headtouch",
+		voice_name = "Rub",
 		spine_action = "tuozhuai2",
 		profile_index = 12,
 		l2d_action = "touch_head",
@@ -145,9 +145,9 @@ pg.character_voice = {
 		}
 	},
 	mission = {
-		voice_name = "Mission reminder",
-		key = "mission",
 		resource_key = "task",
+		key = "mission",
+		voice_name = "Mission reminder",
 		spine_action = "move",
 		profile_index = 13,
 		l2d_action = "mission",
@@ -157,9 +157,9 @@ pg.character_voice = {
 		}
 	},
 	mission_complete = {
-		voice_name = "Mission complete",
-		key = "mission_complete",
 		resource_key = "mission_complete",
+		key = "mission_complete",
+		voice_name = "Mission complete",
 		spine_action = "victory",
 		profile_index = 14,
 		l2d_action = "mission_complete",
@@ -169,9 +169,9 @@ pg.character_voice = {
 		}
 	},
 	mail = {
-		voice_name = "Mail reminder",
-		key = "mail",
 		resource_key = "mail",
+		key = "mail",
+		voice_name = "Mail reminder",
 		spine_action = "victory",
 		profile_index = 15,
 		l2d_action = "mail",
@@ -181,9 +181,9 @@ pg.character_voice = {
 		}
 	},
 	home = {
-		voice_name = "Return to port",
-		key = "home",
 		resource_key = "home",
+		key = "home",
+		voice_name = "Return to port",
 		spine_action = "walk",
 		profile_index = 16,
 		l2d_action = "home",
@@ -193,9 +193,9 @@ pg.character_voice = {
 		}
 	},
 	feeling1 = {
-		voice_name = "Upset",
-		key = "feeling1",
 		resource_key = "feeling1",
+		key = "feeling1",
+		voice_name = "Upset",
 		spine_action = "normal",
 		profile_index = 17,
 		l2d_action = "",
@@ -205,9 +205,9 @@ pg.character_voice = {
 		}
 	},
 	feeling2 = {
-		voice_name = "Stranger",
-		key = "feeling2",
 		resource_key = "feeling2",
+		key = "feeling2",
+		voice_name = "Stranger",
 		spine_action = "normal",
 		profile_index = 18,
 		l2d_action = "",
@@ -217,9 +217,9 @@ pg.character_voice = {
 		}
 	},
 	feeling3 = {
-		voice_name = "Friendly",
-		key = "feeling3",
 		resource_key = "feeling3",
+		key = "feeling3",
+		voice_name = "Friendly",
 		spine_action = "normal",
 		profile_index = 19,
 		l2d_action = "",
@@ -229,9 +229,9 @@ pg.character_voice = {
 		}
 	},
 	feeling4 = {
-		voice_name = "Crush",
-		key = "feeling4",
 		resource_key = "feeling4",
+		key = "feeling4",
+		voice_name = "Crush",
 		spine_action = "normal",
 		profile_index = 20,
 		l2d_action = "",
@@ -241,9 +241,9 @@ pg.character_voice = {
 		}
 	},
 	feeling5 = {
-		voice_name = "Love",
-		key = "feeling5",
 		resource_key = "feeling5",
+		key = "feeling5",
+		voice_name = "Love",
 		spine_action = "normal",
 		profile_index = 21,
 		l2d_action = "",
@@ -253,9 +253,9 @@ pg.character_voice = {
 		}
 	},
 	propose = {
-		voice_name = "Promise",
-		key = "propose",
 		resource_key = "propose",
+		key = "propose",
+		voice_name = "Promise",
 		spine_action = "normal",
 		profile_index = 22,
 		l2d_action = "wedding",
@@ -265,9 +265,9 @@ pg.character_voice = {
 		}
 	},
 	expedition = {
-		voice_name = "Commission complete",
-		key = "expedition",
 		resource_key = "expedition",
+		key = "expedition",
+		voice_name = "Commission complete",
 		spine_action = "victory",
 		profile_index = 23,
 		l2d_action = "complete",
@@ -277,9 +277,9 @@ pg.character_voice = {
 		}
 	},
 	upgrade = {
-		voice_name = "Enhancing complete",
-		key = "upgrade",
 		resource_key = "upgrade",
+		key = "upgrade",
+		voice_name = "Enhancing complete",
 		spine_action = "victory",
 		profile_index = 24,
 		l2d_action = "",
@@ -289,9 +289,9 @@ pg.character_voice = {
 		}
 	},
 	battle = {
-		voice_name = "Flagship fight",
-		key = "battle",
 		resource_key = "warcry",
+		key = "battle",
+		voice_name = "Flagship fight",
 		spine_action = "attack",
 		profile_index = 25,
 		l2d_action = "",
@@ -301,9 +301,9 @@ pg.character_voice = {
 		}
 	},
 	win_mvp = {
-		voice_name = "Victory",
-		key = "win_mvp",
 		resource_key = "mvp",
+		key = "win_mvp",
+		voice_name = "Victory",
 		spine_action = "victory",
 		profile_index = 26,
 		l2d_action = "",
@@ -313,9 +313,9 @@ pg.character_voice = {
 		}
 	},
 	lose = {
-		voice_name = "Defeat",
-		key = "lose",
 		resource_key = "lose",
+		key = "lose",
+		voice_name = "Defeat",
 		spine_action = "dead",
 		profile_index = 27,
 		l2d_action = "",
@@ -325,9 +325,9 @@ pg.character_voice = {
 		}
 	},
 	skill = {
-		voice_name = "Skills",
-		key = "skill",
 		resource_key = "skill",
+		key = "skill",
+		voice_name = "Skills",
 		spine_action = "skill",
 		profile_index = 28,
 		l2d_action = "",
@@ -337,9 +337,9 @@ pg.character_voice = {
 		}
 	},
 	hp_warning = {
-		voice_name = "Low HP",
-		key = "hp_warning",
 		resource_key = "hp",
+		key = "hp_warning",
+		voice_name = "Low HP",
 		spine_action = "dead",
 		profile_index = 29,
 		l2d_action = "",
@@ -349,9 +349,9 @@ pg.character_voice = {
 		}
 	},
 	link1 = {
-		voice_name = "Battle 1",
-		key = "link1",
 		resource_key = "link1",
+		key = "link1",
+		voice_name = "Battle 1",
 		spine_action = "attcak",
 		profile_index = 30,
 		l2d_action = "",
@@ -361,9 +361,9 @@ pg.character_voice = {
 		}
 	},
 	link2 = {
-		voice_name = "Battle 2",
-		key = "link2",
 		resource_key = "link2",
+		key = "link2",
+		voice_name = "Battle 2",
 		spine_action = "attcak",
 		profile_index = 31,
 		l2d_action = "",
@@ -373,9 +373,9 @@ pg.character_voice = {
 		}
 	},
 	link3 = {
-		voice_name = "Battle 3",
-		key = "link3",
 		resource_key = "link3",
+		key = "link3",
+		voice_name = "Battle 3",
 		spine_action = "attcak",
 		profile_index = 32,
 		l2d_action = "",
@@ -385,9 +385,9 @@ pg.character_voice = {
 		}
 	},
 	link4 = {
-		voice_name = "Battle 4",
-		key = "link4",
 		resource_key = "link4",
+		key = "link4",
+		voice_name = "Battle 4",
 		spine_action = "attcak",
 		profile_index = 33,
 		l2d_action = "",
@@ -397,9 +397,9 @@ pg.character_voice = {
 		}
 	},
 	link5 = {
-		voice_name = "Battle 5",
-		key = "link5",
 		resource_key = "link5",
+		key = "link5",
+		voice_name = "Battle 5",
 		spine_action = "attcak",
 		profile_index = 34,
 		l2d_action = "",
@@ -409,9 +409,9 @@ pg.character_voice = {
 		}
 	},
 	link6 = {
-		voice_name = "Battle 6",
-		key = "link6",
 		resource_key = "link6",
+		key = "link6",
+		voice_name = "Battle 6",
 		spine_action = "attcak",
 		profile_index = 35,
 		l2d_action = "",
@@ -421,9 +421,9 @@ pg.character_voice = {
 		}
 	},
 	profile = {
-		voice_name = "Details",
-		key = "profile",
 		resource_key = "profile",
+		key = "profile",
+		voice_name = "Details",
 		spine_action = "stand2",
 		profile_index = 36,
 		l2d_action = "",
@@ -433,5 +433,3 @@ pg.character_voice = {
 		}
 	}
 }
-
-return

@@ -6,8 +6,8 @@ return {
 			stageIndex = 1,
 			failCondition = 1,
 			timeCount = 180,
-			backGroundStageID = 1,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -83,8 +83,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 13002,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -97,8 +97,8 @@ return {
 						},
 						{
 							monsterTemplateID = 13024,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-15,
 								0,
@@ -111,8 +111,8 @@ return {
 						},
 						{
 							monsterTemplateID = 13002,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -125,8 +125,8 @@ return {
 						},
 						{
 							monsterTemplateID = 13034,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -143,8 +143,8 @@ return {
 							interval = 10,
 							onceNumber = 3,
 							formation = 10006,
-							templateID = 340010,
 							delay = 0,
+							templateID = 340010,
 							totalNumber = 3,
 							weaponID = {
 								340008
@@ -170,8 +170,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 13032,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-15,
 								0,
@@ -180,9 +180,9 @@ return {
 						},
 						{
 							monsterTemplateID = 13033,
-							delay = 2,
-							chance = 0.5,
 							reinforceDelay = 7,
+							chance = 0.5,
+							delay = 2,
 							corrdinate = {
 								-10,
 								0,
@@ -197,8 +197,8 @@ return {
 					reinforcement = {
 						{
 							monsterTemplateID = 13004,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								11,
 								0,
@@ -211,8 +211,8 @@ return {
 						},
 						{
 							monsterTemplateID = 13004,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								11,
 								0,
@@ -238,8 +238,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 13004,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-15,
 								0,
@@ -252,9 +252,9 @@ return {
 						},
 						{
 							monsterTemplateID = 13034,
-							delay = 1,
-							chance = 0.5,
 							moveCast = true,
+							chance = 0.5,
+							delay = 1,
 							corrdinate = {
 								20,
 								0,
@@ -267,9 +267,9 @@ return {
 						},
 						{
 							monsterTemplateID = 13034,
-							delay = 1,
-							chance = 0.5,
 							moveCast = true,
+							chance = 0.5,
+							delay = 1,
 							corrdinate = {
 								20,
 								0,
@@ -282,8 +282,8 @@ return {
 						},
 						{
 							monsterTemplateID = 13004,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-15,
 								0,
@@ -300,8 +300,8 @@ return {
 							interval = 10,
 							onceNumber = 3,
 							formation = 10006,
-							templateID = 340020,
 							delay = 0,
+							templateID = 340020,
 							totalNumber = 3,
 							weaponID = {
 								340009
@@ -328,8 +328,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 13034,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								20,
 								0,
@@ -342,8 +342,8 @@ return {
 						},
 						{
 							monsterTemplateID = 13029,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-15,
 								0,
@@ -352,8 +352,8 @@ return {
 						},
 						{
 							monsterTemplateID = 13036,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								30,
 								0,
@@ -366,8 +366,8 @@ return {
 						},
 						{
 							monsterTemplateID = 13027,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-15,
 								0,
@@ -376,8 +376,8 @@ return {
 						},
 						{
 							monsterTemplateID = 13034,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								20,
 								0,

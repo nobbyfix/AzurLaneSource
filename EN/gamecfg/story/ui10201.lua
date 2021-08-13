@@ -1,17 +1,17 @@
 return {
+	id = "UI10201",
 	mode = 3,
 	noWaitFade = true,
 	once = true,
-	id = "UI10201",
 	scripts = {
 		{
-			withoutPainting = true,
+			actor = 105040,
 			nameColor = "#a9f548",
 			stopbgm = true,
-			blackBg = true,
-			actor = 105040,
 			mode = 2,
 			say = "Sister...",
+			blackBg = true,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,10 +24,10 @@ return {
 		{
 			actor = 105040,
 			nameColor = "#a9f548",
-			withoutPainting = true,
 			mode = 2,
-			blackBg = true,
 			say = "Sister… where are you?",
+			blackBg = true,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -40,10 +40,10 @@ return {
 		{
 			actor = 105040,
 			nameColor = "#a9f548",
-			withoutPainting = true,
 			mode = 2,
-			blackBg = true,
 			say = "Sister… the sea… it's burning…",
+			blackBg = true,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -56,10 +56,10 @@ return {
 		{
 			actor = 105040,
 			nameColor = "#a9f548",
-			withoutPainting = true,
 			mode = 2,
-			blackBg = true,
 			say = "Sister… I'm sorry… I couldn't protect them...",
+			blackBg = true,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -73,11 +73,11 @@ return {
 			actor = 105030,
 			side = 0,
 			bgName = "bg_story_4",
+			nameColor = "#a9f548",
 			bgspeed = 2,
 			blackBg = true,
-			bgm = "story-5",
-			nameColor = "#a9f548",
 			say = "If Hell exists, this must be what it feels like.",
+			bgm = "story-5",
 			effects = {
 				{
 					active = true,
@@ -123,8 +123,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			sequenceSpd = 2,
+			mode = 1,
 			bgFade = true,
 			effects = {
 				{

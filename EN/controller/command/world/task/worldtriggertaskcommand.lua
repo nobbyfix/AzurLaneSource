@@ -1,50 +1,47 @@
-class("WorldTriggerTaskCommand", pm.SimpleCommand).execute = function (slot0, slot1)
+slot0 = class("WorldTriggerTaskCommand", pm.SimpleCommand)
+
+function slot0.execute(slot0, slot1)
 	slot2 = slot1:getBody()
-	slot3 = slot2.fleetId
-	slot5 = slot2.callback
+	slot4 = slot2.portId
+	slot6 = nowWorld:GetTaskProxy()
+	slot7, slot8 = WorldTask.canTrigger(slot2.taskId)
 
-	if getProxy(WorldProxy).GetWorld(slot6).getTaskProxy(slot7):getTaskById(slot2.taskId) then
-		pg.TipsMgr.GetInstance():ShowTips(i18n1("该任务已存在" .. slot4))
-
-		return
-	end
-
-	print("trigger task ", slot4, " - fleetid ", slot4)
-
-	slot10, slot11 = WorldTask.canTrigger(slot4)
-
-	if not slot10 then
-		pg.TipsMgr.GetInstance():ShowTips(slot11)
+	if not slot7 then
+		pg.TipsMgr.GetInstance():ShowTips(slot8)
 
 		return
 	end
 
 	pg.ConnectionMgr.GetInstance():Send(33205, {
-		fleet_id = slot3,
-		taskId = slot4
+		taskId = slot3
 	}, 33206, function (slot0)
 		if slot0.result == 0 then
+			if uv0 then
+				slot1 = nowWorld:GetActiveMap():GetPort()
+				slot2 = underscore.rest(slot1.taskIds, 1)
+
+				table.removebyvalue(slot2, uv1)
+				slot1:UpdateTaskIds(slot2)
+			end
+
 			slot1 = WorldTask.New(slot0.task)
 			slot1.new = 1
 
-			slot0:addTask(slot1)
-			pg.TipsMgr.GetInstance():ShowTips("接取任务：" .. slot1.id)
+			uv2:addTask(slot1)
 
 			if #slot1.config.task_op > 0 then
-				pg.StoryMgr.GetInstance():Play(slot1.config.task_op)
+				pg.NewStoryMgr.GetInstance():Play(slot1.config.task_op, nil, true)
 			end
 
-			if slot1 then
-				slot1()
-			end
-
-			slot2:AddLog(WorldLog.TypeTask, {
-				task = slot1.id
+			uv3:sendNotification(GAME.WORLD_TRIGGER_TASK_DONE, {
+				task = slot1
 			})
+		elseif slot0.result == 6 then
+			pg.TipsMgr.GetInstance():ShowTips(i18n("world_task_refuse1"))
 		else
-			pg.TipsMgr.GetInstance():ShowTips(i18n1("触发任务失败" .. slot0.result))
+			pg.TipsMgr.GetInstance():ShowTips("trigger task fail" .. slot0.result)
 		end
 	end)
 end
 
-return class("WorldTriggerTaskCommand", pm.SimpleCommand)
+return slot0

@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FENGBAOQIANXI3",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 102150,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "level02",
 			dir = 1,
 			say = "Phew... We all made it in one piece...",
-			bgm = "level02",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -26,8 +26,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 102160,
+			dir = 1,
 			say = "That you did. Job well done getting those ships back to port.",
 			typewriter = {
 				speed = 0.05,
@@ -61,8 +61,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102160,
+			dir = 1,
 			say = "Among other things... I've got goods to relocate, strategic documents to draft, and messages to relay... Basically, up to my neck in paperwork.",
 			typewriter = {
 				speed = 0.05,
@@ -76,9 +76,9 @@ return {
 		{
 			expression = 1,
 			side = 0,
-			dir = 1,
 			actor = 102160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Note to self: never tempt fate again by telling people about your weekend vacation plans... Oh, did I say that out loud?",
 			typewriter = {
 				speed = 0.05,
@@ -90,8 +90,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -118,8 +118,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102160,
+			dir = 1,
 			say = "Have to get through it somehow. Anyway, you three are going to group up with Cleveland's fleet and head out on a mission, right?",
 			typewriter = {
 				speed = 0.05,
@@ -146,8 +146,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -204,8 +204,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102160,
+			dir = 1,
 			say = "I've already informed the Commander about it, so consider that done.",
 			typewriter = {
 				speed = 0.05,
@@ -220,8 +220,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102160,
+			dir = 1,
 			say = "Here, this mission briefing outlines your orders. Read it later when you have time.",
 			typewriter = {
 				speed = 0.05,
@@ -236,8 +236,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102160,
+			dir = 1,
 			say = "The mission is in Siren-occupied waters, so prepare yourselves accordingly. If you need to, contact me by radio...",
 			typewriter = {
 				speed = 0.05,
@@ -282,8 +282,8 @@ return {
 			expression = 4,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102160,
+			dir = 1,
 			say = "Either that, or all this paperwork is driving me crazy and I'm just ecstatic to catch a break from it. Dunno really.",
 			typewriter = {
 				speed = 0.05,
@@ -298,8 +298,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102160,
+			dir = 1,
 			say = "Anyway... that should be everything you need to know. Now, if you'll excuse me, I need to move on to the next task at hand.",
 			typewriter = {
 				speed = 0.05,
@@ -326,14 +326,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 107060,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "Let's see... Recon mission in an AO with a STAR rating of 4... Interesting...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -403,14 +403,14 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
-			dir = 1,
+			actorName = "？？？",
 			stopbgm = true,
+			dir = 1,
 			say = "Heh heh heh... Let's hope you have a \"pleasant\" voyage...",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

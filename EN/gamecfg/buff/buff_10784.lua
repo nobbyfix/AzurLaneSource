@@ -1,7 +1,7 @@
 return {
-	time = 1,
-	name = "随机buff触发器",
 	init_effect = "",
+	name = "随机buff触发器",
+	time = 1,
 	picture = "",
 	desc = "随机buff触发器",
 	stack = 1,

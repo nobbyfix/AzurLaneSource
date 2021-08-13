@@ -115,8 +115,12 @@ HScrollSnap = UnityEngine.UI.Extensions.HScrollSnap
 CanvasScaler = UnityEngine.UI.CanvasScaler
 SleepTimeout = UnityEngine.SleepTimeout
 GraphicRaycaster = UnityEngine.UI.GraphicRaycaster
+LoadSceneMode = UnityEngine.SceneManagement.LoadSceneMode
+SceneManager = UnityEngine.SceneManagement.SceneManager
+Physics2D = UnityEngine.Physics2D
+BoxCollider2D = UnityEngine.BoxCollider2D
 SocketError = System.Net.Sockets.SocketError
 GCHandle = System.Runtime.InteropServices.GCHandle
 GCHandleType = System.Runtime.InteropServices.GCHandleType
-
-return
+BundleWizard = YongShi.BundleWizardRuntime.BundleWizard
+DownloadState = YongShi.BundleWizardRuntime.DownloadState

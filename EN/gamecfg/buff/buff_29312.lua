@@ -1,13 +1,13 @@
 return {
 	{},
-	time = 0,
-	name = "全弹发射",
 	init_effect = "",
-	id = 29312,
+	name = "全弹发射",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "进入战斗后，触发专属弹幕-U47II",
 	stack = 1,
-	color = "red",
+	id = 29312,
 	icon = 29310,
 	last_effect = "",
 	effect_list = {
@@ -19,8 +19,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				skill_id = 29312,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 29312
 			}
 		}
 	}

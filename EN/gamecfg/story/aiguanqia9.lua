@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA9",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 201210,
@@ -22,11 +22,11 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			withoutActorName = true,
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			actor = 10400010,
+			withoutActorName = true,
 			say = "KABOOM---!",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -69,8 +69,8 @@ return {
 			},
 			action = {
 				{
-					y = -2250,
 					type = "move",
+					y = -2250,
 					delay = 0,
 					dur = 1,
 					x = 0
@@ -111,8 +111,8 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#ff5c5c",
-			dir = 1,
 			actor = 10400030,
+			dir = 1,
 			actorName = "Kizuna AI clone",
 			say = "... ... ...",
 			typewriter = {
@@ -143,8 +143,8 @@ return {
 			expression = 4,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "At this rate, we'll be out of here in no time. I might even be able to solo this boss?",
 			typewriter = {
@@ -175,8 +175,8 @@ return {
 			expression = 2,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "I-I won't do anything reckless like last time! I won't make the same mistake twice!",
 			typewriter = {
@@ -189,8 +189,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -202,8 +202,8 @@ return {
 			expression = 5,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400020,
+			dir = 1,
 			actorName = "Kizuna AI",
 			say = "...But it's probably ideal that we do this as a team. Everyone, let's go!",
 			typewriter = {

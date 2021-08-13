@@ -1,7 +1,7 @@
 return {
-	time = 99999,
-	name = "第11章重巡使用盾buff",
 	init_effect = "",
+	name = "第11章重巡使用盾buff",
+	time = 99999,
 	picture = "",
 	desc = "第11章重巡使用盾buff",
 	stack = 1,
@@ -15,6 +15,7 @@ return {
 				"onShieldBroken"
 			},
 			arg_list = {
+				shieldBuffID = 8050,
 				countTarget = 3,
 				countType = 8052
 			}

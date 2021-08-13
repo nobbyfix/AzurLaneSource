@@ -7,13 +7,13 @@ return {
 			style = {
 				text = "Commander, please Tap <color=#ff7d36>Attack</color>",
 				mode = 2,
-				dir = 1,
 				posY = -42,
+				dir = 1,
 				posX = 243
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -24,19 +24,19 @@ return {
 			}
 		},
 		{
+			alpha = 0.277,
 			code = 2,
 			waitScene = "LevelScene",
-			alpha = 0.277,
 			style = {
 				text = "Our fleet is even more perfect now~! We can definitely take down Hornet!",
 				mode = 2,
-				dir = 1,
 				posY = -200,
+				dir = 1,
 				posX = -190
 			},
 			ui = {
+				path = "/OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/normal/func_button",
 				pathIndex = -1,
-				path = "OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/func_button",
 				triggerType = {
 					1
 				},
@@ -55,8 +55,8 @@ return {
 			style = {
 				text = "Damn, we've been stopped by enemy ships again. Our <color=#ff7d36>total Evasion has improved</color> though, so we can just skirt around unnecessary battles like this one.",
 				mode = 2,
-				dir = 1,
 				posY = -304,
+				dir = 1,
 				posX = -190
 			}
 		},
@@ -66,16 +66,16 @@ return {
 			style = {
 				text = "Tap <color=#ff7d36>evade</color> to avoid interception!",
 				mode = 2,
-				dir = 1,
 				posY = 167.08,
+				dir = 1,
 				posX = 23.41
 			}
 		},
 		{
 			alpha = 0.303,
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/top/LevelAmbushView(Clone)/window/dodge_button",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

@@ -1,11 +1,11 @@
 pg = pg or {}
 pg.activity_nianshou = {
 	{
-		first_extra_count = 5,
 		daily_count = 5,
+		max_harm = 2,
 		hp = 65,
 		id = 1,
-		max_harm = 2,
+		first_extra_count = 5,
 		min_harm = 1,
 		story = {
 			{
@@ -30,5 +30,3 @@ pg.activity_nianshou = {
 		1
 	}
 }
-
-return

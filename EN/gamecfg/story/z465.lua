@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "Z465",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"White Poem\n\n<size=45>V Interlude II</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
-			say = "Port - Academy",
-			bgName = "bg_story_school",
-			bgmDelay = 2,
 			bgm = "story-1",
+			bgmDelay = 2,
+			bgName = "bg_story_school",
+			say = "Port - Academy",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -285,8 +285,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
 			blackBg = true,
+			bgName = "bg_story_school",
 			say = "I reached my spoon forth into Graf's lunchbox, and brought back her sauerkraut risotto. The food soon disappeared into my mouth.",
 			typewriter = {
 				speed = 0.05,

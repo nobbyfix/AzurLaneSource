@@ -1,6 +1,6 @@
 slot0 = class("FurnitureDescWindow")
 
-slot0.Ctor = function (slot0, slot1)
+function slot0.Ctor(slot0, slot1)
 	pg.DelegateInfo.New(slot0)
 
 	slot0._go = slot1
@@ -17,51 +17,101 @@ slot0.Ctor = function (slot0, slot1)
 	slot0.descPanelParent = slot0.descPanel.parent
 	slot0.descPanelVoiceBtn = findTF(slot0.maxPanel, "desc/container/frame/voice")
 	slot0.descPanelBgVoiceBtn = findTF(slot0.maxPanel, "desc/container/frame/bg_voice")
+	slot0.descPanelBgVoiceMark = findTF(slot0.maxPanel, "desc/container/frame/bg_voice/mark")
 
 	slot0:Init()
 end
 
-slot0.Init = function (slot0)
+function slot0.Init(slot0)
 	onButton(slot0, slot0.descPanel, function ()
-		slot0:Close()
+		uv0:Close()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.maxFrame, function ()
-		slot0:Close()
+		uv0:Close()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.maxPanel:Find("ok_btn"), function ()
-		slot0:Close()
+		uv0:Close()
+	end, SFX_PANEL)
+	onButton(slot0, slot0.descPanelVoiceBtn, function ()
+		slot0, slot1 = uv0.furnitureVO:getVoice()
+
+		pg.CriMgr.GetInstance():PlaySoundEffect_V3(slot0)
+
+		uv0.curVoiceKey = slot0
+
+		print(slot0, slot1.action)
+
+		if uv0.onPlaySound then
+			uv0.onPlaySound(uv0.furnitureVO.id, true, slot1)
+		end
+	end, SFX_PANEL)
+	onButton(slot0, slot0.descPanelBgVoiceBtn, function ()
+		function slot0()
+			slot0, slot1 = uv0.furnitureVO:getVoice()
+
+			playBGM(slot0)
+
+			if uv0.onPlaySound then
+				uv0.onPlaySound(uv0.furnitureVO.id, true, slot1)
+			end
+
+			uv0.playData = {
+				id = uv0.furnitureVO.id,
+				effect = slot1.effect
+			}
+
+			setActive(uv0.descPanelBgVoiceMark, true)
+		end
+
+		if uv0.playData and uv0.playData.id == uv0.furnitureVO.id then
+			playBGM("backyard")
+
+			if uv0.onPlaySound then
+				uv0.onPlaySound(uv0.furnitureVO.id, false, {
+					action = "normal",
+					effect = uv0.playData.effect
+				})
+			end
+
+			setActive(uv0.descPanelBgVoiceMark, false)
+
+			uv0.playData = nil
+		elseif uv0.playData and uv0.playData.id ~= uv0.furnitureVO.id then
+			if uv0.onPlaySound then
+				uv0.onPlaySound(uv0.playData.id, false, {
+					action = "normal",
+					effect = uv0.playData.effect
+				})
+			end
+
+			uv0.playData = nil
+
+			slot0()
+		else
+			slot0()
+		end
 	end, SFX_PANEL)
 end
 
-slot0.Show = function (slot0, slot1, slot2)
+function slot0.SetUp(slot0, slot1)
+	slot0.onPlaySound = slot1
+end
+
+function slot0.Show(slot0, slot1)
 	slot0.furnitureVO = slot1
 
-	setActive(slot0.descPanelVoiceBtn, slot1:existVoice() and slot1:descVoiceType() == BackYardConst.SOUND_TYPE_EFFECT)
-	setActive(slot0.descPanelBgVoiceBtn, slot3 and slot1.descVoiceType() == BackYardConst.SOUND_TYPE_BG)
+	print(slot1.id)
+
+	slot3 = slot1:descVoiceType()
+
+	setActive(slot0.descPanelVoiceBtn, slot1:existVoice() and slot3 == BackYardConst.SOUND_TYPE_EFFECT)
+	setActive(slot0.descPanelBgVoiceBtn, slot2 and slot3 == BackYardConst.SOUND_TYPE_BG)
 	setActive(slot0.descPanel, true)
 	SetActive(slot0.maxFrame, false)
-
-	if slot3 and slot4 == BackYardConst.SOUND_TYPE_EFFECT then
-		onButton(slot0, slot0.descPanelVoiceBtn, function ()
-			slot0:playFurnitureVoice(slot0)
-
-			if slot0 then
-				slot2(true)
-			end
-		end, SFX_PANEL)
-	elseif slot3 and slot4 == BackYardConst.SOUND_TYPE_BG then
-		onToggle(slot0, slot0.descPanelBgVoiceBtn, function (slot0)
-			playBGM((slot0 and slot0:getVoice()) or "backyard")
-
-			if (slot0 and slot0.getVoice()) or "backyard" then
-				slot1(slot0)
-			end
-		end, SFX_PANEL)
-	end
-
+	setActive(slot0.descPanelBgVoiceMark, slot0.playData and slot0.playData.id == slot1.id)
 	LoadSpriteAsync("FurnitureIcon/" .. slot1:getConfig("icon"), function (slot0)
-		if not slot0.exited then
-			slot0.maxIcon.sprite = slot0
+		if not uv0.exited then
+			uv0.maxIcon.sprite = slot0
 		end
 	end)
 	setActive(slot0.maxFrame, true)
@@ -76,49 +126,22 @@ slot0.Show = function (slot0, slot1, slot2)
 	pg.UIMgr.GetInstance():BlurPanel(slot0.maxFrame)
 end
 
-slot0.Close = function (slot0)
+function slot0.Close(slot0)
 	slot0:stopCV()
 	setActive(slot0.descPanel, false)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0.maxFrame, slot0.descPanel)
 end
 
-slot0.playFurnitureVoice = function (slot0)
-	slot2 = slot0.furnitureVO.getVoice(slot1)
+function slot0.stopCV(slot0)
+	if slot0.curVoiceKey then
+		pg.CriMgr.GetInstance():UnloadSoundEffect_V3(slot0.curVoiceKey)
 
-	function slot3()
-		slot0:stopCV()
-
-		slot0.stopCV.currVoice = playSoundEffect(playSoundEffect)
-	end
-
-	if slot0.loadedBank then
-		slot3()
-	else
-		pg.CriMgr.GetInstance():LoadCV("furniture", function ()
-			slot0 = pg.CriMgr.GetCVBankName(pg.CriMgr.GetCVBankName)
-
-			if pg.CriMgr.GetCVBankName.exited then
-				pg.CriMgr.UnloadCVBank(slot0)
-			else
-				slot2()
-
-				if slot2.currVoice then
-					slot1.loadedBank = slot0
-				end
-			end
-		end)
+		slot0.curVoiceKey = nil
 	end
 end
 
-slot0.stopCV = function (slot0)
-	if slot0.currVoice then
-		slot0.currVoice:Stop(true)
-	end
-
-	slot0.currVoice = nil
-end
-
-slot0.Destroy = function (slot0)
+function slot0.Destroy(slot0)
+	slot0.playData = nil
 	slot0.exited = true
 
 	slot0:Close()

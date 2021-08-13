@@ -1,26 +1,20 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIEXUEYUYINFU13",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 4,
 			side = 1,
-			seDelay = 1.3,
-			dir = 1,
 			soundeffect = "event:/battle/boom2",
 			bgm = "bsm-3",
+			dir = 1,
 			nameColor = "#ffde38",
+			seDelay = 1.3,
 			say = "Booomm————",
-			effects = {
-				{
-					active = true,
-					name = "paoji_bisimai"
-				}
-			},
 			flashN = {
 				color = {
 					1,
@@ -69,18 +63,11 @@ return {
 		},
 		{
 			expression = 4,
-			side = 1,
-			dir = 1,
-			actor = 405010,
 			nameColor = "#ffde38",
+			side = 1,
+			actor = 405010,
+			dir = 1,
 			say = "This is...",
-			effects = {
-				{
-					name = "paoji_bisimai",
-					active = false,
-					destory = true
-				}
-			},
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -93,17 +80,11 @@ return {
 		{
 			expression = 4,
 			side = 1,
-			seDelay = 1.3,
-			dir = 1,
 			soundeffect = "event:/battle/boom2",
 			nameColor = "#ffde38",
+			dir = 1,
+			seDelay = 1.3,
 			say = "Booomm————",
-			effects = {
-				{
-					active = true,
-					name = "paoji_bisimai"
-				}
-			},
 			flashN = {
 				color = {
 					1,
@@ -151,19 +132,12 @@ return {
 			}
 		},
 		{
-			expression = 4,
-			side = 1,
-			dir = 1,
 			actor = 405010,
+			side = 1,
+			expression = 4,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "a once-in-a-lifetime battle...",
-			effects = {
-				{
-					name = "paoji_bisimai",
-					active = false,
-					destory = true
-				}
-			},
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -176,16 +150,10 @@ return {
 		{
 			expression = 4,
 			side = 1,
+			soundeffect = "event:/battle/boom2",
 			seDelay = 1.3,
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			say = "Booomm————",
-			effects = {
-				{
-					active = true,
-					name = "paoji_bisimai"
-				}
-			},
 			flashN = {
 				color = {
 					1,
@@ -233,19 +201,12 @@ return {
 			}
 		},
 		{
-			expression = 4,
-			side = 1,
-			dir = 1,
 			actor = 405010,
+			side = 1,
+			expression = 4,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "the greatest thrill...",
-			effects = {
-				{
-					name = "paoji_bisimai",
-					active = false,
-					destory = true
-				}
-			},
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -258,16 +219,10 @@ return {
 		{
 			expression = 4,
 			side = 1,
+			soundeffect = "event:/battle/boom2",
 			seDelay = 1.3,
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			say = "Booomm————",
-			effects = {
-				{
-					active = true,
-					name = "paoji_bisimai"
-				}
-			},
 			flashN = {
 				color = {
 					1,
@@ -315,19 +270,12 @@ return {
 			}
 		},
 		{
-			expression = 4,
-			side = 1,
-			dir = 1,
 			actor = 405010,
+			side = 1,
+			expression = 4,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "for an Iron Blood battleship!",
-			effects = {
-				{
-					name = "paoji_bisimai",
-					active = false,
-					destory = true
-				}
-			},
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -340,16 +288,10 @@ return {
 		{
 			expression = 4,
 			side = 1,
+			soundeffect = "event:/battle/boom2",
 			seDelay = 1.3,
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			say = "Booomm————",
-			effects = {
-				{
-					active = true,
-					name = "paoji_bisimai"
-				}
-			},
 			flashN = {
 				color = {
 					1,
@@ -397,19 +339,12 @@ return {
 			}
 		},
 		{
-			expression = 2,
-			side = 1,
-			dir = 1,
 			actor = 405010,
+			side = 1,
+			expression = 2,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "Curses... they took out my precious Dora?!",
-			effects = {
-				{
-					name = "paoji_bisimai",
-					active = false,
-					destory = true
-				}
-			},
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -450,11 +385,11 @@ return {
 			}
 		},
 		{
+			stopbgm = true,
 			side = 2,
+			say = "Booomm————",
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
-			stopbgm = true,
-			say = "Booomm————",
 			flashN = {
 				color = {
 					1,
@@ -547,13 +482,13 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
-			bgm = "battle-boss-4",
-			actor = 900011,
 			actorName = "Tester",
+			dir = 1,
 			say = "You've had your fun, Royal Navy girls.",
+			bgm = "battle-boss-4",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -567,8 +502,8 @@ return {
 			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "Tester",
+			dir = 1,
 			say = "How terribly inconvenient it would be if you were to break our valuable specimen.",
 			typewriter = {
 				speed = 0.05,

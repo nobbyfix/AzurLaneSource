@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 500
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 610,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 610
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 720
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 830,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 830
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 940,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 940
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1050,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1050
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1160
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1270,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1270
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1380
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1500
 				}
 			}
 		}
 	},
+	time = 12,
 	name = "比洛克西自身防空UP",
 	init_effect = "jinengchufablue",
-	id = 12962,
-	time = 12,
+	color = "blue",
 	picture = "",
 	desc = "提高防空属性",
 	stack = 1,
-	color = "blue",
+	id = 12962,
 	icon = 12960,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "antiAirPower"
+				attr = "antiAirPower",
+				number = 500
 			}
 		}
 	}
