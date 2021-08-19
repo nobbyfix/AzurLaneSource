@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "",
 	init_effect = "",
-	id = 6471,
+	name = "",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 6471,
 	icon = 6470,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.02,
 				attr = "damageReduceFromAmmoType_1",
+				number = 0.02,
 				group = {
 					id = 6461,
 					level = 4
@@ -30,8 +30,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.04,
 				attr = "damageReduceFromAmmoType_2",
+				number = 0.04,
 				group = {
 					id = 6462,
 					level = 4
@@ -44,8 +44,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.02,
 				attr = "damageReduceFromAmmoType_3",
+				number = 0.02,
 				group = {
 					id = 6462,
 					level = 4

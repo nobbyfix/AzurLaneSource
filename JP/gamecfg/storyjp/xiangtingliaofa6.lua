@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA6",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "ユニオン、NYシティ周辺海域",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "airRaidAlarm",
+			say = "ユニオン、NYシティ周辺海域",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -21,12 +21,12 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			actor = 102070,
+			side = 2,
 			nameColor = "#a9f548",
 			say = "そ、そんな…ユニオン本土はどうして……",
+			dir = 1,
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -89,8 +89,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,
@@ -102,8 +102,8 @@ return {
 			actor = 102230,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "ここにいたか",
 			typewriter = {
 				speed = 0.05,
@@ -130,8 +130,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -177,8 +177,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102230,
+			dir = 1,
 			say = "大丈夫だ。NYシティの防衛線は強固だ。簡単には抜けられないよ",
 			typewriter = {
 				speed = 0.05,
@@ -208,8 +208,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102230,
+			dir = 1,
 			say = "そういう時もある。私もセイレーン艦隊がいきなり現れるとは思わなかったな",
 			typewriter = {
 				speed = 0.05,
@@ -251,8 +251,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -279,8 +279,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102230,
+			dir = 1,
 			say = "クリーブランド姉貴……ううん、いつまでも姉の背中に隠れてはダメよ",
 			typewriter = {
 				speed = 0.05,
@@ -337,8 +337,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -350,8 +350,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actor = 102230,
+			dir = 1,
 			say = "ああ、落ち着けた？",
 			typewriter = {
 				speed = 0.05,

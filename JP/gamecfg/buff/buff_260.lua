@@ -1,19 +1,19 @@
 return {
-	time = 0,
-	name = "制空权buff-3",
 	init_effect = "",
-	id = 260,
+	name = "制空权buff-3",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 260,
 	icon = 260,
 	last_effect = "",
 	effect_list = {
 		{
 			type = "BattleBuffCastSkill",
 			trigger = {
-				"onStartGame"
+				"onAttach"
 			},
 			arg_list = {
 				skill_id = 260

@@ -62,12 +62,12 @@ return {
 	desc_get = "与{namecode:93}同在一个舰队时，航空性能提高15.0%(满级35.0%)",
 	name = "{namecode:101}",
 	init_effect = "",
-	id = 10470,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "与{namecode:93}同在一个舰队时，航空性能提高$1",
 	stack = 1,
-	color = "yellow",
+	id = 10470,
 	icon = 10470,
 	last_effect = "",
 	effect_list = {
@@ -77,15 +77,15 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				check_target = "TargetTemplate",
 				minTargetNumber = 1,
-				skill_id = 10470,
 				target = "TargetSelf",
-				targetTemplateIDList = {
-					307031,
-					307032,
-					307033,
-					307034
+				skill_id = 10470,
+				check_target = {
+					"TargetAllHelp",
+					"TargetShipTag"
+				},
+				ship_tag_list = {
+					"Souryu"
 				}
 			}
 		}

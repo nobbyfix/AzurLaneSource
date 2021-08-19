@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.045,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.045
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.052,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.052
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.06,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.06
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.07,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.07
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.077,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.077
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.085,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.085
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.095,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.095
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.102,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.102
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.11,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.11
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.12,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.12
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "加斯科涅μ2",
 	init_effect = "jinengchufared",
-	id = 12791,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "伤害提高",
 	stack = 1,
-	color = "red",
+	id = 12791,
 	icon = 12790,
 	last_effect = "",
 	blink = {

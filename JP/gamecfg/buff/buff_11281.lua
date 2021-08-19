@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1300,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1300
 				}
 			},
 			{
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1380
 				}
 			},
 			{
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1460,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1460
 				}
 			},
 			{
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1560,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1560
 				}
 			},
 			{
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1680,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1680
 				}
 			},
 			{
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1800,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1800
 				}
 			},
 			{
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1950,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1950
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2100,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2100
 				}
 			},
 			{
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2300,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2300
 				}
 			},
 			{
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2500
 				}
 			},
 			{
@@ -239,14 +239,14 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "完美的娇小女仆",
 	init_effect = "jinengchufablue",
-	id = 11281,
-	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "航速、机动提高",
 	stack = 1,
-	color = "blue",
+	id = 11281,
 	icon = 11280,
 	last_effect = "",
 	blink = {
@@ -263,8 +263,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1300,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 1300
 			}
 		},
 		{

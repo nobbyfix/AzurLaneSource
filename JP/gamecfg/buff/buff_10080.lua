@@ -62,19 +62,19 @@ return {
 	desc_get = "被击沉时恢复全队其他角色耐久15.0%(满级25.0%)",
 	name = "战争之殇",
 	init_effect = "",
-	id = 10080,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "被击沉时恢复全队其他角色耐久$1",
 	stack = 1,
-	color = "blue",
+	id = 10080,
 	icon = 10080,
 	last_effect = "Health",
 	effect_list = {
 		{
 			type = "BattleBuffCastSkill",
 			trigger = {
-				"onDying"
+				"onSink"
 			},
 			arg_list = {
 				skill_id = 10080,
@@ -84,7 +84,7 @@ return {
 		{
 			type = "BattleBuffCancelBuff",
 			trigger = {
-				"onDying"
+				"onSink"
 			},
 			arg_list = {
 				count = 1

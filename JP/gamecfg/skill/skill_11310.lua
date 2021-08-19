@@ -1,12 +1,12 @@
 return {
 	uiEffect = "",
-	name = "���Ͻ����콢-����",
+	name = "联合舰队旗舰-长门",
 	cd = 0,
-	picture = "0",
-	desc = "",
 	painting = 1,
 	id = 11310,
+	picture = "0",
 	castCV = "skill",
+	desc = "",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,19 +17,19 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetNationalityFriendly",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 11311,
 				nationality = 3
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
+			targetAniEffect = "",
 			target_choise = {
 				"TargetAllHelp",
 				"TargetNationality",

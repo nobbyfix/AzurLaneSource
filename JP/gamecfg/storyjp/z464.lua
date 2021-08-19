@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "Z464",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"白き詩\n\n<size=45>四　思索</size>",
@@ -38,13 +38,13 @@ return {
 			}
 		},
 		{
-			say = "母港・埠頭",
-			bgName = "bg_story_outdoor",
-			bgmDelay = 2,
 			bgm = "story-1",
+			bgmDelay = 2,
+			bgName = "bg_story_outdoor",
+			say = "母港・埠頭",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -259,8 +259,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
 			blackBg = true,
+			bgName = "bg_story_outdoor",
 			say = "私の色は――なに？",
 			typewriter = {
 				speed = 0.05,

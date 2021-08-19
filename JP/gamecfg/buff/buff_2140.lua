@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "accuracyToShipType_1"
+					attr = "accuracyToShipType_1",
+					number = 0.05
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.05,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.05
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.066,
-					attr = "accuracyToShipType_1"
+					attr = "accuracyToShipType_1",
+					number = 0.066
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.066,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.066
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.082,
-					attr = "accuracyToShipType_1"
+					attr = "accuracyToShipType_1",
+					number = 0.082
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.082,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.082
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "accuracyToShipType_1"
+					attr = "accuracyToShipType_1",
+					number = 0.1
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.1,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.1
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.116,
-					attr = "accuracyToShipType_1"
+					attr = "accuracyToShipType_1",
+					number = 0.116
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.116,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.116
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.132,
-					attr = "accuracyToShipType_1"
+					attr = "accuracyToShipType_1",
+					number = 0.132
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.132,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.132
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "accuracyToShipType_1"
+					attr = "accuracyToShipType_1",
+					number = 0.15
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.15,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.15
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.166,
-					attr = "accuracyToShipType_1"
+					attr = "accuracyToShipType_1",
+					number = 0.166
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.166,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.166
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.182,
-					attr = "accuracyToShipType_1"
+					attr = "accuracyToShipType_1",
+					number = 0.182
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.182,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.182
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.2,
-					attr = "accuracyToShipType_1"
+					attr = "accuracyToShipType_1",
+					number = 0.2
 				}
 			},
 			{
@@ -233,20 +233,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.2,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.2
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "驱逐战强化",
 	init_effect = "jinengchufablue",
-	id = 2140,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 2140,
 	icon = 2140,
 	last_effect = "",
 	blink = {
@@ -263,8 +263,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "accuracyToShipType_1"
+				attr = "accuracyToShipType_1",
+				number = 0.05
 			}
 		},
 		{
@@ -273,8 +273,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.05,
-				attr = "injureRatioByBulletTorpedo"
+				attr = "injureRatioByBulletTorpedo",
+				number = -0.05
 			}
 		}
 	}

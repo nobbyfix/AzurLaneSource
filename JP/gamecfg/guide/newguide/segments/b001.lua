@@ -29,8 +29,8 @@ return {
 			style = {
 				text = "新兵、今からこのアマゾンが艦隊運動を教えてやるわ！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -42,8 +42,8 @@ return {
 			style = {
 				text = "まずは<color=#ff7d36>スティックを引っ張って</color>艦を動かしなさい！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -61,8 +61,8 @@ return {
 			style = {
 				text = "前列の<color=#ff7d36>前衛艦隊</color>は艦砲を使って<color=#ff7d36>自動で攻撃</color>してくれるわ！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -86,8 +86,8 @@ return {
 			style = {
 				text = "次はボタンをタップして<color=#ff7d36>魚雷発射</color>よ！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -105,8 +105,8 @@ return {
 			style = {
 				text = "硬い敵相手には後列の主力艦隊の<color=#ff7d36>主砲砲撃</color>が有効よ！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -130,8 +130,8 @@ return {
 			style = {
 				text = "ボタンをタップすると主砲発射よ！<color=#ff7d36>ボタンを押し続ける</color>と手動照準もできるわ！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {

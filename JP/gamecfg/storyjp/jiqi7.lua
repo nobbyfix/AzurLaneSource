@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "JIQI7",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"コドモじゃないもん！\n\n<size=45>七 デート！</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 108030,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 108030,
-			nameColor = "#a9f548",
 			say = "指揮官、待ってたよ！",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -55,8 +55,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "早速、レッツゴー！",
 			typewriter = {
@@ -72,8 +72,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……んー、どこに行くの？？",
 			typewriter = {
@@ -108,15 +108,15 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "star_level_bg_104",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "毎度ありだにゃ～",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -157,15 +157,15 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指揮官！指揮官！カモメさんだー！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -190,8 +190,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -203,8 +203,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_105",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "おーい！カモメさーん！こっちー！",
 			typewriter = {
@@ -217,15 +217,15 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "カメラは…ええと……あった！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -253,8 +253,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "star_level_bg_106",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "指揮官、笑って！チーズ！",
 			typewriter = {
@@ -267,15 +267,15 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ふぅ…………",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -303,8 +303,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "って違ーう！完全に子供扱いしてたでしょー！",
 			typewriter = {
@@ -320,8 +320,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "……翔鶴さん、あたしに嘘ついたのかな……",
 			typewriter = {
@@ -334,8 +334,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -353,8 +353,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "うん！楽しかった！……楽しかったけど……",
 			typewriter = {
@@ -370,8 +370,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "やっぱり、指揮官ってあたしを子供扱いしてるよね……",
 			typewriter = {
@@ -387,8 +387,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "………………",
 			typewriter = {
@@ -401,11 +401,11 @@ return {
 			}
 		},
 		{
+			actor = 108030,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 108030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ああ！もうわからない！考えるのやめた！",
 			typewriter = {
 				speed = 0.05,
@@ -417,8 +417,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -430,8 +430,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "いくら子供扱いしても結局あたしのことを頼ってくれるし！",
 			typewriter = {
@@ -444,8 +444,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -457,8 +457,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 108030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "指揮官！今日は楽しかったから、これからも「デート」しよ！いいよね！えへへ！",
 			typewriter = {

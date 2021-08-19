@@ -8,13 +8,6 @@ LayerWeightConst = {
 	SECOND_LAYER = 200,
 	THIRD_LAYER = 300,
 	TOP_LAYER = 9999,
-	WEIGHT_LIST = {
-		()["LOWER_LAYER"],
-		()["BASE_LAYER"],
-		()["SECOND_LAYER"],
-		()["THIRD_LAYER"],
-		()["TOP_LAYER"]
-	},
 	GROUP_CHATROOM = "group_ChatRoomUI",
 	GROUP_NOTIFICATION = "group_NotificationUI",
 	GROUP_EQUIPMENTSCENE = "group_EquipmentUI_top",
@@ -22,7 +15,8 @@ LayerWeightConst = {
 	GROUP_SHIPINFOUI = "group_ShipInfoUI_top",
 	GROUP_LEVELUI = "group_LevelUI",
 	GROUP_SHIP_PROFILE = "group_ShipProfileScene",
-	GROUP_FORMATION_PAGE = "group_FormationPage"
+	GROUP_FORMATION_PAGE = "group_FormationPage",
+	GROUP_BOSSINFORMATION = "group_bossInformation",
+	GROUP_COLLECTION = "group_collection",
+	GROUP_META = "group_meta"
 }
-
-return

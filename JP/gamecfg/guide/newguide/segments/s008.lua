@@ -7,13 +7,13 @@ return {
 			style = {
 				text = "今度の任務はユニオン空母艦隊の作戦演習を支援することね    <color=#ff7d36>出撃</color>をタップするわ",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,13 +28,13 @@ return {
 			style = {
 				text = "ホーネットの出現位置を特定したわ！目標地点まで全速前進よ！",
 				mode = 2,
-				dir = 1,
 				posY = -351,
+				dir = 1,
 				posX = -257
 			},
 			ui = {
+				path = "/OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/normal/func_button",
 				pathIndex = -1,
-				path = "OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/func_button",
 				triggerType = {
 					1
 				},
@@ -54,8 +54,8 @@ return {
 			style = {
 				text = "失敗しちゃった…やるしかないわ！",
 				mode = 2,
-				dir = 1,
 				posY = -295,
+				dir = 1,
 				posX = -297
 			}
 		},
@@ -65,8 +65,8 @@ return {
 			style = {
 				text = "<color=#ff7d36>迂回の成功率は艦隊の合計回避力によって決まるのよ</color>。回避力が足りなければ失敗することもあるわ",
 				mode = 2,
-				dir = 1,
 				posY = -295,
+				dir = 1,
 				posX = -297
 			}
 		},
@@ -75,13 +75,13 @@ return {
 			style = {
 				text = "<color=#ff7d36>出撃</color>をタップして戦闘開始！    戦闘は<color=#ff7d36>艦ごとに燃料を消費する</color>のよ",
 				mode = 2,
-				dir = 1,
 				posY = -68.93,
+				dir = 1,
 				posX = 241.87
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/ChapterPreCombatUI(Clone)/right/start",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

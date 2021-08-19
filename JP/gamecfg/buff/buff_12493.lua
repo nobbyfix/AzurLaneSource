@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 500
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 450,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 450
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 610,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 610
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 520,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 520
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 720,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 720
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 600
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 830,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 830
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 700
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 940,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 940
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 770,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 770
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1050,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1050
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 850,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 850
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1160
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 950,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 950
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1270,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1270
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1020,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1020
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1380
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1100
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1500
 				}
 			},
 			{
@@ -233,20 +233,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1200,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1200
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "巴尔的摩攻击模式",
 	init_effect = "jinengchufared",
-	id = 12493,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "提高炮击、装填属性",
 	stack = 1,
-	color = "yellow",
+	id = 12493,
 	icon = 12490,
 	last_effect = "",
 	blink = {
@@ -263,8 +263,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 500,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 500
 			}
 		},
 		{
@@ -273,8 +273,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 450,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 450
 			}
 		}
 	}

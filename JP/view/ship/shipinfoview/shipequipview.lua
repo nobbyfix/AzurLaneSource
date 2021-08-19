@@ -1,23 +1,23 @@
 slot0 = class("ShipEquipView", import("...base.BaseSubView"))
-slot0.UNLOCK_EQUPMENT_SKIN_POS = {
+slot0.UNLOCK_EQUIPMENT_SKIN_POS = {
 	1,
 	2,
 	3
 }
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "ShipEquipView"
 end
 
-slot0.OnInit = function (slot0)
+function slot0.OnInit(slot0)
 	slot0:InitEquipment()
 end
 
-slot0.SetShareData = function (slot0, slot1)
+function slot0.SetShareData(slot0, slot1)
 	slot0.shareData = slot1
 end
 
-slot0.GetShipVO = function (slot0)
+function slot0.GetShipVO(slot0)
 	if slot0.shareData and slot0.shareData.shipVO then
 		return slot0.shareData.shipVO
 	end
@@ -25,11 +25,11 @@ slot0.GetShipVO = function (slot0)
 	return nil
 end
 
-slot0.UpdateUI = function (slot0)
+function slot0.UpdateUI(slot0)
 	slot0:UpdateEquipments(slot0:GetShipVO())
 end
 
-slot0.InitEquipment = function (slot0)
+function slot0.InitEquipment(slot0)
 	slot0.mainPanel = slot0._parentTf.parent
 	slot0.equipRCon = slot0._parentTf:Find("equipment_r_container")
 	slot0.equipLCon = slot0._parentTf:Find("equipment_l_container")
@@ -53,8 +53,6 @@ slot0.InitEquipment = function (slot0)
 	setActive(slot0.equipmentL, true)
 	setActive(slot0.equipSkinBtn, true)
 
-	slot0.infoTplR = slot0.equipmentR1:Find("info")
-	slot0.infoTplL = slot0.equipmentL1:Find("info")
 	slot0.equipmentPanels = {
 		slot0.equipmentR1,
 		slot0.equipmentR2,
@@ -62,22 +60,12 @@ slot0.InitEquipment = function (slot0)
 		slot0.equipmentL1,
 		slot0.equipmentL2
 	}
-	slot0.equipmentNames = {}
-
-	for slot4, slot5 in ipairs(slot0.equipmentPanels) do
-		if IsNil(slot5:Find("info")) then
-			cloneTplTo((slot4 <= Ship.WEAPON_COUNT and slot0.infoTplR) or slot0.infoTplL, slot5, "info")
-		end
-
-		table.insert(slot0.equipmentNames, ScrollTxt.New(slot5:Find("info/cont/name_mask"), slot5:Find("info/cont/name_mask/name")))
-	end
-
 	slot0.onSelected = false
 end
 
-slot0.InitEvent = function (slot0)
+function slot0.InitEvent(slot0)
 	onButton(slot0, slot0.equipSkinBtn, function ()
-		slot0, slot1 = Ship.canModifyShip(slot0:GetShipVO())
+		slot0, slot1 = ShipStatus.ShipStatusCheck("onModify", uv0:GetShipVO())
 
 		if not slot0 then
 			pg.TipsMgr.GetInstance():ShowTips(slot1)
@@ -85,17 +73,7 @@ slot0.InitEvent = function (slot0)
 			return
 		end
 
-		slot2 = slot0:GetShipVO().equipments
-
-		if _.all(slot1.UNLOCK_EQUPMENT_SKIN_POS, function (slot0)
-			return not slot0[slot0]
-		end) and not slot0.contextData.isInEquipmentSkinPage then
-			pg.TipsMgr.GetInstance():ShowTips(i18n("equipment_skin_no_equipment_tip"))
-
-			return
-		end
-
-		slot0:switch2EquipmentSkinPage()
+		uv0:switch2EquipmentSkinPage()
 	end)
 
 	if slot0.contextData.isInEquipmentSkinPage then
@@ -105,13 +83,16 @@ slot0.InitEvent = function (slot0)
 	end
 end
 
-slot0.OnSelected = function (slot0, slot1)
+function slot0.OnSelected(slot0, slot1)
 	slot2 = pg.UIMgr.GetInstance()
 
 	if slot1 then
-		local function slot5(slot0, slot1)
+		slot3 = {}
+		slot4 = {}
+
+		function slot5(slot0, slot1)
 			eachChild(slot0, function (slot0)
-				table.insert(slot0, slot0)
+				table.insert(uv0, slot0)
 			end)
 		end
 
@@ -121,13 +102,13 @@ slot0.OnSelected = function (slot0, slot1)
 		slot5(slot0.equipmentL:Find("equipment"), slot3)
 		table.insert(slot3, slot0.equipmentL:Find("equipment/equipment_l1"))
 		slot2:OverlayPanelPB(slot0.equipRCon, {
-			pbList = {},
+			pbList = slot4,
 			groupName = LayerWeightConst.GROUP_SHIPINFOUI,
 			overlayType = LayerWeightConst.OVERLAY_UI_ADAPT,
 			weight = LayerWeightConst.LOWER_LAYER
 		})
 		slot2:OverlayPanelPB(slot0.equipLCon, {
-			pbList = {},
+			pbList = slot3,
 			groupName = LayerWeightConst.GROUP_SHIPINFOUI,
 			overlayType = LayerWeightConst.OVERLAY_UI_ADAPT,
 			weight = LayerWeightConst.LOWER_LAYER
@@ -140,61 +121,79 @@ slot0.OnSelected = function (slot0, slot1)
 	slot0.onSelected = slot1
 end
 
-slot0.UpdateEquipments = function (slot0, slot1)
-	slot2 = slot1:getActiveEquipments()
-
+function slot0.UpdateEquipments(slot0, slot1)
 	for slot6, slot7 in ipairs(slot1.equipments) do
-		slot0:UpdateEquipmentPanel(slot6, slot7, slot2[slot6])
+		slot0:UpdateEquipmentPanel(slot6, slot7, slot1:getActiveEquipments()[slot6])
 	end
 
 	if slot0.equipSkinLogicPanel then
 		slot0.equipSkinLogicPanel:updateAll(slot1)
 	end
+
+	if slot0.contextData.openEquipUpgrade == true then
+		slot0.contextData.openEquipUpgrade = false
+
+		for slot9, slot10 in ipairs(slot0:GetShipVO().equipments) do
+			if slot10 then
+				slot3 = 0 + 1
+			end
+		end
+
+		if slot3 > 0 then
+			slot0:emit(ShipMainMediator.OPEN_EQUIP_UPGRADE, slot0:GetShipVO().id)
+		else
+			pg.TipsMgr.GetInstance():ShowTips(i18n("fightfail_noequip"))
+		end
+	end
 end
 
-slot0.UpdateEquipmentPanel = function (slot0, slot1, slot2, slot3)
+function slot0.UpdateEquipmentPanel(slot0, slot1, slot2, slot3)
+	slot4 = slot0.equipmentPanels[slot1]
+	slot5 = findTF(slot4, "info")
 	slot7 = findTF(slot5, "efficiency")
 
 	setActive(slot5, slot2)
-	setActive(slot6, not slot2)
+	setActive(findTF(slot4, "empty"), not slot2)
 
-	slot8 = nil
+	slot9 = nil
 
-	for slot12, slot13 in pairs(slot0:GetShipVO().skills) do
-		if ys.Battle.BattleDataFunction.GetBuffTemplate(slot13.id, slot13.level).shipInfoScene and slot14.shipInfoScene.equip then
-			slot8 = slot14.shipInfoScene.equip
+	for slot13, slot14 in pairs(slot0:GetShipVO().skills) do
+		if ys.Battle.BattleDataFunction.GetBuffTemplate(slot14.id, slot14.level).shipInfoScene and slot15.shipInfoScene.equip then
+			slot9 = slot15.shipInfoScene.equip
 		end
 	end
 
-	slot9 = findTF(slot4, "panel_title/type")
+	slot10 = findTF(slot4, "panel_title/type")
 
 	if findTF(slot4, "skin_icon") then
-		setActive(slot10, slot2 and slot2:hasSkin())
+		setActive(slot11, slot2 and slot2:hasSkin())
 	end
 
-	slot9:GetComponent(typeof(Text)).text = EquipType.LabelToName(slot11)
+	slot10:GetComponent(typeof(Text)).text = EquipType.LabelToName(EquipType.Types2Title(slot1, slot8.configId))
 
 	if slot2 then
-		setActive(slot7, not EquipType.isDevice(slot2.configId) and slot2.config.type ~= EquipType.AntiSubAircraft)
+		setActive(slot7, not slot2:isDevice())
 
-		if not EquipType.isDevice(slot2.configId) then
-			slot13 = pg.ship_data_statistics[slot0:GetShipVO().configId]
-			slot15 = (slot0:GetShipVO():getEquipProficiencyByPos(slot1) and slot14 * 100) or 0
+		if not slot2:isDevice() then
+			slot14 = pg.ship_data_statistics[slot8.configId]
+			slot16 = slot8:getEquipProficiencyByPos(slot1) and slot15 * 100 or 0
+			slot17 = false
 
-			if slot8 then
-				for slot19, slot20 in ipairs(slot8) do
-					if slot0:equipmentCheck(slot20) and slot0.equipmentEnhance(slot20, slot2) then
-						slot15 = slot15 + slot20.number
+			if not (slot8:getFlag("inWorld") and slot0.contextData.fromMediatorName == WorldMediator.__cname and WorldConst.FetchWorldShip(slot8.id):IsBroken()) and slot9 then
+				for slot22, slot23 in ipairs(slot9) do
+					if slot0:equipmentCheck(slot23) and slot0.equipmentEnhance(slot23, slot2) then
+						slot16 = slot16 + slot23.number
+						slot17 = true
 					end
 				end
 			end
 
-			setButtonText(slot7, slot15 .. "%")
+			setButtonText(slot7, slot17 and setColorStr(slot16 .. "%", COLOR_GREEN) or slot16 .. "%")
 		end
 
-		updateEquipment(slot13, slot2)
+		updateEquipment(slot0:findTF("IconTpl", slot5), slot2)
 
-		slot14 = slot2.config.name
+		slot15 = slot2.config.name
 
 		if slot2.config.ammo_icon[1] then
 			setActive(findTF(slot5, "cont/icon_ammo"), true)
@@ -203,84 +202,71 @@ slot0.UpdateEquipmentPanel = function (slot0, slot1, slot2, slot3)
 			setActive(findTF(slot5, "cont/icon_ammo"), false)
 		end
 
-		function slot15(slot0, slot1)
-			slot2 = slot0:GetSkill()
+		setScrollText(slot0.equipmentPanels[slot1]:Find("info/cont/name_mask/name"), slot15)
+		eachChild(slot5:Find("attrs"), function (slot0)
+			setActive(slot0, false)
+		end)
 
-			setActive(slot0, slot2)
-			setActive(slot1, not slot2)
+		slot17 = underscore.filter(slot2:GetPropertiesInfo().attrs, function (slot0)
+			return not slot0.type or slot0.type ~= AttributeType.AntiSiren
+		end)
 
-			if slot2 then
-				setText(findTF(slot0, "values/value_1"), slot2.name)
-				setText(findTF(slot0, "values/value"), "")
-			end
-		end
+		for slot23, slot24 in ipairs(slot2.config.skill_id[1] and slot2:isDevice() and {
+			1,
+			2,
+			5
+		} or {
+			1,
+			4,
+			2,
+			3
+		}) do
+			slot25 = slot16:Find("attr_" .. slot24)
+			slot26 = findTF(slot25, "panel")
 
-		if findTF(slot5, "attrs/attr_3_1") then
-			setActive(slot16, EquipType.isDevice(slot2.configId) and slot1 <= 3)
-		end
+			setActive(slot25, true)
 
-		slot0.equipmentNames[slot1]:setText(slot14)
-
-		slot17 = slot2:GetProperties()
-		slot18 = false
-
-		for slot22 = 1, 4, 1 do
-			if findTF(slot5, "attrs/attr_" .. slot22) then
-				slot24 = findTF(slot23, "panel")
-				slot25 = findTF(slot23, "lock")
-
-				if EquipType.isDevice(slot2.configId) and slot1 <= 3 and slot22 == 3 then
-					slot18 = true
-
-					setActive(slot16, true)
-					SetActive(slot23, false)
-					slot15(findTF(slot16, "panel"), findTF(slot16, "lock"))
-				elseif EquipType.isDevice(slot2.configId) and slot22 == 3 then
-					SetActive(slot23, true)
-					slot15(slot24, slot25)
-				elseif slot18 == true and slot22 == 4 then
-					SetActive(slot23, false)
-				else
-					SetActive(slot23, true)
-					setActive(slot24, slot26)
-					setActive(slot25, not slot17[slot22])
-
-					if slot17[slot22] then
-						slot27 = findTF(slot24, "tag")
-						slot28 = findTF(slot24, "values/value")
-						slot29 = findTF(slot24, "values/value_1")
-
-						if not EquipType.isDevice(slot2.configId) and slot26.type == AttributeType.Reload and slot22 == 4 then
-							setText(slot27, AttributeType.Type2Name(AttributeType.CD))
-							setText(slot28, slot31)
-							setText(slot29, i18n("word_secondseach"))
-						else
-							setText(slot27, AttributeType.Type2Name(slot26.type))
-
-							if #string.split(tostring(slot26.value), "/") >= 2 then
-								setText(slot28, slot30[1] .. "/")
-								setText(slot29, slot30[2])
-							else
-								setText(slot28, slot26.value)
-								setText(slot29, "")
-							end
-						end
-					end
+			if slot24 == 5 then
+				setText(slot26:Find("values/value"), "")
+				setText(slot26:Find("values/value_1"), getSkillName(slot18))
+				setActive(findTF(slot25, "lock"), false)
+			elseif #slot17 > 0 then
+				if slot2:isAircraft() and table.remove(slot17, 1).type == AttributeType.CD then
+					slot28 = slot8:getAircraftReloadCD()
 				end
+
+				slot29, slot30 = Equipment.GetInfoTrans(slot28, slot8)
+
+				setText(slot26:Find("tag"), slot29)
+
+				if #string.split(tostring(slot30), "/") >= 2 then
+					setText(slot26:Find("values/value"), slot31[1] .. "/")
+					setText(slot26:Find("values/value_1"), slot31[2])
+				else
+					setText(slot26:Find("values/value"), slot30)
+					setText(slot26:Find("values/value_1"), "")
+				end
+
+				setActive(slot27, false)
+			else
+				setText(slot26:Find("tag"), "")
+				setText(slot26:Find("values/value"), "")
+				setText(slot26:Find("values/value_1"), "")
+				setActive(slot27, true)
 			end
 		end
 
 		onButton(slot0, slot4, function ()
-			slot0:emit(BaseUI.ON_EQUIPMENT, {
+			uv0:emit(BaseUI.ON_EQUIPMENT, {
 				type = EquipmentInfoMediator.TYPE_SHIP,
-				shipId = slot0:GetShipVO().id,
-				pos = slot0
+				shipId = uv1.id,
+				pos = uv2
 			})
 		end, SFX_UI_DOCKYARD_EQUIPADD)
 	else
 		onButton(slot0, slot4, function ()
-			if slot0:GetShipVO() then
-				slot0, slot1 = Ship.canModifyShip(slot0:GetShipVO())
+			if uv0 then
+				slot0, slot1 = ShipStatus.ShipStatusCheck("onModify", uv0)
 
 				if not slot0 then
 					pg.TipsMgr.GetInstance():ShowTips(slot1)
@@ -288,55 +274,76 @@ slot0.UpdateEquipmentPanel = function (slot0, slot1, slot2, slot3)
 					return
 				end
 
-				slot0:emit(ShipMainMediator.ON_SELECT_EQUIPMENT, slot1)
+				uv1:emit(ShipMainMediator.ON_SELECT_EQUIPMENT, uv2)
 			end
 		end, SFX_UI_DOCKYARD_EQUIPADD)
 	end
 end
 
-slot0.equipmentCheck = function (slot0, slot1)
+function slot0.equipmentCheck(slot0, slot1)
 	if not slot0:GetShipVO() then
 		return false
 	end
 
 	slot3 = slot1.check_indexList
 
-	if not slot1.check_type and not slot3 then
+	if not slot1.check_type and not slot3 and not slot1.check_label then
 		return true
 	end
 
-	slot4 = false
-	slot5 = {}
-	slot6 = Clone(slot0:GetShipVO().equipments)
+	slot5 = false
+	slot6 = {}
 
 	if slot3 then
-		slot7 = #slot6
+		slot8 = #Clone(slot0:GetShipVO().equipments)
 
-		while slot7 > 0 do
-			if not table.contains(slot3, slot7) then
-				table.remove(slot6, slot7)
+		while slot8 > 0 do
+			if not table.contains(slot3, slot8) then
+				table.remove(slot7, slot8)
 			end
 
-			slot7 = slot7 - 1
+			slot8 = slot8 - 1
 		end
 	end
 
 	if slot2 then
-		slot7 = #slot6
+		slot8 = #slot7
 
-		while slot7 > 0 do
-			if not slot6[slot7] or not table.contains(slot2, slot8.config.type) then
-				table.remove(slot6, slot7)
+		while slot8 > 0 do
+			if not slot7[slot8] or not table.contains(slot2, slot9.config.type) then
+				table.remove(slot7, slot8)
 			end
 
-			slot7 = slot7 - 1
+			slot8 = slot8 - 1
 		end
 	end
 
-	return #slot6 > 0
+	if slot4 then
+		slot8 = #slot7
+
+		while slot8 > 0 do
+			if slot7[slot8] then
+				for slot14, slot15 in ipairs(slot4) do
+					if not table.contains(slot9.config.label, slot15) then
+						slot10 = 1 * 0
+					end
+				end
+
+				if slot10 == 0 then
+					table.remove(slot7, slot8)
+				end
+			else
+				table.remove(slot7, slot8)
+			end
+
+			slot8 = slot8 - 1
+		end
+	end
+
+	return #slot7 > 0
 end
 
-slot0.equipmentEnhance = function (slot0, slot1)
+function slot0.equipmentEnhance(slot0, slot1)
 	slot2 = 1
 	slot3 = slot1.config.label
 
@@ -355,7 +362,7 @@ slot0.equipmentEnhance = function (slot0, slot1)
 	return slot2 == 1
 end
 
-slot0.switch2EquipmentSkinPage = function (slot0)
+function slot0.switch2EquipmentSkinPage(slot0)
 	if slot0.equipSkinLogicPanel:isTweening() then
 		return
 	end
@@ -369,13 +376,7 @@ slot0.switch2EquipmentSkinPage = function (slot0)
 	slot0.equipSkinLogicPanel:updateAll(slot0:GetShipVO())
 end
 
-slot0.OnDestroy = function (slot0)
-	for slot4, slot5 in ipairs(slot0.equipmentNames) do
-		slot5:destroy()
-	end
-
-	slot0.equipmentNames = nil
-
+function slot0.OnDestroy(slot0)
 	setParent(slot0.equipmentR, slot0._tf)
 	setParent(slot0.equipmentL, slot0._tf)
 

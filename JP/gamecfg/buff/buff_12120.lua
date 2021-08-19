@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "命运一击",
 	init_effect = "",
-	id = 12120,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12120,
 	icon = 12120,
 	last_effect = "",
 	effect_list = {
@@ -37,10 +37,10 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				skill_id = 12121,
 				minWeaponNumber = 1,
-				check_weapon = true,
 				target = "TargetSelf",
+				skill_id = 12121,
+				check_weapon = true,
 				index = {
 					2
 				},

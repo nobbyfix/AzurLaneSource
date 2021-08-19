@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZHUANGJIA7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"『装甲騎兵ボトムズ』コラボシナリオ\n\n<size=45>最終話  方舟</size>",
@@ -17,14 +17,14 @@ return {
 			}
 		},
 		{
+			actor = 403030,
 			side = 0,
 			bgName = "bg_night",
+			hideOther = true,
 			dir = 1,
 			bgmDelay = 1,
-			bgm = "story-8",
-			actor = 403030,
-			hideOther = true,
 			say = "高出力レーザーを撃つつもりよ！",
+			bgm = "story-8",
 			effects = {
 				{
 					active = true,
@@ -32,8 +32,8 @@ return {
 				}
 			},
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -119,17 +119,17 @@ return {
 			}
 		},
 		{
+			actor = 900021,
 			actorName = "ピュリファイアー",
-			side = 2,
 			bgName = "bg_night",
 			stopbgm = true,
-			soundeffect = "event:/battle/boom1",
-			actor = 900021,
+			side = 2,
 			nameColor = "#D6341DFF",
 			say = "そんな……なんで、この私が……！！",
+			soundeffect = "event:/battle/boom1",
 			flashout = {
-				dur = 1,
 				black = false,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -157,8 +157,8 @@ return {
 			actor = 301160,
 			side = 0,
 			bgName = "bg_night",
-			dir = 1,
 			hideOther = true,
+			dir = 1,
 			say = "ピュリファイアーが爆発した？",
 			typewriter = {
 				speed = 0.05,
@@ -170,8 +170,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -300,17 +300,17 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 0,
 			bgName = "bg_story_room",
+			hideOther = true,
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-2",
-			actor = 307060,
-			hideOther = true,
 			say = "ハッ…。",
+			bgm = "story-2",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -536,17 +536,17 @@ return {
 			}
 		},
 		{
+			hideOther = true,
 			side = 1,
 			bgName = "bg_story_school",
+			actor = 107060,
 			dir = 1,
 			bgmDelay = 1,
-			hideOther = true,
-			bgm = "story-1",
-			actor = 107060,
 			say = "こっ…これは！",
+			bgm = "story-1",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -691,8 +691,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0.5,
 					dur = 0.1,
 					x = 0,
@@ -716,16 +716,16 @@ return {
 			}
 		},
 		{
+			actor = 900021,
 			stopbgm = true,
 			side = 2,
+			actorName = "ピュリファイアー",
 			dir = 1,
 			blackBg = true,
-			actor = 900021,
-			actorName = "ピュリファイアー",
 			say = "あんなことしてまで観測したけど、データはまあまあ取れたんじゃない？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -878,11 +878,11 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "（目が覚めた時、俺はかがり火の側にいた。）",
+			blackBg = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -909,8 +909,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "（追う者、追われし者、そして巻き込まれる者。あの青き星での幻覚は一瞬にして終わった。）",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -923,24 +923,24 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "（あの少女たちの目に写っていたのは、絶望ではなく希望だった。互いの名前さえ分からずとも、共に戦っていた。）",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			blackBg = true,
 			say = "（俺の旅はこれからも永遠に続く。）",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			blackBg = true,
 			say = "（それが夢だろうと、現実だろうと……。）",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XIANGTINGLIAOFA25",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "バミューダ・ボルチモア隊交戦海域",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "story-6",
+			say = "バミューダ・ボルチモア隊交戦海域",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -276,8 +276,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -319,8 +319,8 @@ return {
 			actor = 103160,
 			side = 2,
 			expression = 1,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "私もクリーブランドも、モントピリアも、正義を口にしない時があるけど、みんなオースバーンと同じく正義の味方さ",
 			typewriter = {
 				speed = 0.05,
@@ -362,8 +362,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

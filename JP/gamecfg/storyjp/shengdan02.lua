@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENGDAN02",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -201,15 +201,15 @@ return {
 			}
 		},
 		{
+			actor = 101051,
 			side = 2,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 101051,
-			nameColor = "#a9f548",
 			say = "——",
 			flashout = {
-				dur = 0.3,
 				black = true,
+				dur = 0.3,
 				alpha = {
 					0,
 					1
@@ -226,9 +226,9 @@ return {
 			},
 			shake = {
 				speed = 10,
-				y = 0,
+				number = 5,
 				x = 10,
-				number = 5
+				y = 0
 			},
 			typewriter = {
 				speed = 0.05,
@@ -240,14 +240,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 102081,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "うん？まちがったかな……グリッドレイ？どうしたの急に倒れ――",
 			flashout = {
-				dur = 0.2,
 				black = true,
+				dur = 0.2,
 				alpha = {
 					0,
 					1
@@ -321,8 +321,8 @@ return {
 			}
 		},
 		{
-			side = 1,
 			dir = 1,
+			side = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -334,14 +334,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 101051,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "とにかくいい写真が撮れた！うん…名前は「メリクリディエゴ」にしちゃおう！へへへ、次のターゲットを探しちゃうぞー！",
 			flashout = {
-				dur = 0.3,
 				black = false,
+				dur = 0.3,
 				alpha = {
 					0,
 					1

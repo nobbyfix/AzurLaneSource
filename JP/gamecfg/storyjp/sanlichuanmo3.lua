@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SANLICHUANMO3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"三笠大先輩のプラモ博物館\n\n<size=45>三　頑張る　後輩たち</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
-			bgmDelay = 2,
-			side = 2,
-			dir = 1,
 			blackBg = true,
-			bgm = "story-1",
+			side = 2,
 			say = "ミニ博物館が再建され、展示品のモデルも組み上げられていく。",
+			dir = 1,
+			bgmDelay = 2,
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,8 +46,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "そして手伝いに来る人数もどんどん多くなっていき……",
 			typewriter = {
@@ -72,12 +72,12 @@ return {
 			}
 		},
 		{
-			say = "事の顛末はわかりました……妾たちも微力ながら手伝うのでございます…",
+			actor = 301180,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301180,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "事の顛末はわかりました……妾たちも微力ながら手伝うのでございます…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -140,12 +140,12 @@ return {
 			}
 		},
 		{
-			say = "は、はい！――えい！",
+			actor = 301330,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "は、はい！――えい！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -160,8 +160,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.8,
 					dur = 0.2,
 					x = 0,
@@ -186,15 +186,15 @@ return {
 			}
 		},
 		{
+			actor = 301010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "私達も手伝うよ！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -219,8 +219,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 2.2,
 					dur = 0.2,
 					x = 0,
@@ -229,12 +229,12 @@ return {
 			}
 		},
 		{
-			say = "「L．I．」から学んだプラモスキル……実戦です。",
+			actor = 301050,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "「L．I．」から学んだプラモスキル……実戦です。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -265,15 +265,15 @@ return {
 			}
 		},
 		{
+			actor = 305010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 305010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "今来ました！まだ大丈夫だよね…？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -298,12 +298,12 @@ return {
 			}
 		},
 		{
-			say = "お昼ご飯準備したよ～！じゃんじゃん持ってって～！",
+			actor = 305020,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 305020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "お昼ご飯準備したよ～！じゃんじゃん持ってって～！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -318,11 +318,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ナイスタイミング！ちょうど腹ペコだよ！",
 			typewriter = {
 				speed = 0.05,
@@ -334,8 +334,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -344,12 +344,12 @@ return {
 			}
 		},
 		{
-			say = "瑞鶴、そんなにまじまじと見ちゃだめよ",
+			actor = 307050,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "瑞鶴、そんなにまじまじと見ちゃだめよ",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -396,12 +396,12 @@ return {
 			}
 		},
 		{
-			say = "睦月ちゃん、アメさんはごはんじゃないよぉ……",
+			actor = 301330,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "睦月ちゃん、アメさんはごはんじゃないよぉ……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -416,13 +416,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_school",
 			say = "一方、ミニ博物館を俯瞰できる裏山で、活躍している皆の姿を見て微笑んだ人物がいた。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -459,12 +459,12 @@ return {
 			}
 		},
 		{
+			actor = 305110,
 			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 305110,
-			nameColor = "#a9f548",
 			say = "我も裏方で頑張ってきた甲斐があったというものだ。皆、感謝する！",
 			typewriter = {
 				speed = 0.05,

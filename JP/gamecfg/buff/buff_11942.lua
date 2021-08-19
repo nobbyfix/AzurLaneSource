@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.025,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.025
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 100,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 100
 				}
 			}
 		}
@@ -34,8 +34,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.03,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.03
 				}
 			},
 			{
@@ -45,8 +45,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 120,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 120
 				}
 			}
 		}
@@ -60,8 +60,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.035,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.035
 				}
 			},
 			{
@@ -71,8 +71,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 140,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 140
 				}
 			}
 		}
@@ -86,8 +86,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.04,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.04
 				}
 			},
 			{
@@ -97,8 +97,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 160,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 160
 				}
 			}
 		}
@@ -112,8 +112,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.045,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.045
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 180,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 180
 				}
 			}
 		}
@@ -138,8 +138,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.05
 				}
 			},
 			{
@@ -149,8 +149,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 200,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 200
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.055,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.055
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 220,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 220
 				}
 			}
 		}
@@ -190,8 +190,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.06,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.06
 				}
 			},
 			{
@@ -201,8 +201,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 240,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 240
 				}
 			}
 		}
@@ -216,8 +216,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.065,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.065
 				}
 			},
 			{
@@ -227,8 +227,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 270,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 270
 				}
 			}
 		}
@@ -242,8 +242,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.07,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.07
 				}
 			},
 			{
@@ -253,15 +253,15 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 300,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 300
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "天与海的观测者",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "伤害、命中提升",
 	stack = 5,

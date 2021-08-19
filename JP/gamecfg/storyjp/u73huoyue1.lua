@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "U73HUOYUE1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"理科実験タイム！\n\n<size=45>一　ある日の午後</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "ある晴れやかな午後……",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "ある晴れやかな午後……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -146,12 +146,12 @@ return {
 			}
 		},
 		{
+			stopbgm = true,
 			side = 2,
 			bgName = "bg_story_room",
+			say = "（ボン！）",
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
-			stopbgm = true,
-			say = "（ボン！）",
 			flashN = {
 				color = {
 					1,
@@ -215,11 +215,11 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ば、爆発！？",
 			typewriter = {
 				speed = 0.05,
@@ -231,8 +231,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -289,12 +289,12 @@ return {
 			}
 		},
 		{
-			actorName = "みんな",
 			side = 2,
+			actorName = "みんな",
 			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			nameColor = "#a9f548",
 			say = "おー！",
 			typewriter = {
 				speed = 0.05,

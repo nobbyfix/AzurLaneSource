@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "室内系女仆",
 	init_effect = "jinengchufared",
-	id = 105053,
+	name = "室内系女仆",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 105053,
 	icon = 105050,
 	last_effect = "",
 	effect_list = {

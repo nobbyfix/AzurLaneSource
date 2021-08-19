@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.05,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.05
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.061,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.061
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.072,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.072
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.083,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.083
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.094,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.094
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.105,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.105
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.116,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.116
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.127,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.127
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.138,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.138
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.15,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.15
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "加斯科涅μ2",
 	init_effect = "jinengchufablue",
-	id = 12792,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "减伤",
 	stack = 1,
-	color = "red",
+	id = 12792,
 	icon = 12790,
 	last_effect = "",
 	blink = {

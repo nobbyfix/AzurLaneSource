@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZUIZHENGUIDEBAOWU3",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 201010,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "level02",
 			dir = 1,
 			say = "――ソナー、レーダーともに反応なしっと……",
-			bgm = "level02",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -53,8 +53,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -153,8 +153,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -200,8 +200,8 @@ return {
 			say = "この嚮導駆逐艦アマゾンの力を以ってすれば潜水艦などあっという間に見つけられると思ったのに！",
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -293,8 +293,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,
@@ -318,10 +318,10 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201010,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "むむむむむ……",
 			dialogShake = {
 				speed = 0.09,
@@ -338,8 +338,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 30,
@@ -378,8 +378,8 @@ return {
 			},
 			action = {
 				{
-					y = -300,
 					type = "move",
+					y = -300,
 					delay = 0,
 					dur = 0.3,
 					x = 0
@@ -402,19 +402,19 @@ return {
 			}
 		},
 		{
-			say = "頭さわるなー！",
-			side = 2,
-			dir = 1,
 			actor = 201010,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "頭さわるなー！",
 			actorPosition = {
 				x = 0,
 				y = -300
 			},
 			action = {
 				{
-					y = 300,
 					type = "move",
+					y = 300,
 					delay = 0,
 					dur = 0.3,
 					x = 0
@@ -447,8 +447,8 @@ return {
 		{
 			actor = 201010,
 			nameColor = "#a9f548",
-			dir = 1,
 			side = 2,
+			dir = 1,
 			say = "私も同じだと思うんじゃない！",
 			dialogShake = {
 				speed = 0.09,

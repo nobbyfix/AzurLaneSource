@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "ZUIZHENGUIDEBAOWU6",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
-			bgm = "level02",
 			actor = 408080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ロイヤル、ひどい",
+			bgm = "level02",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -42,8 +42,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 408080,
+			dir = 1,
 			say = "U-110をイジメる",
 			typewriter = {
 				speed = 0.05,
@@ -117,12 +117,12 @@ return {
 		{
 			actor = 408080,
 			side = 2,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "カバンの中身？ひみつー",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -156,8 +156,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 408080,
+			dir = 1,
 			say = "エニグマ？うん、U-110はエニグマ大好き",
 			typewriter = {
 				speed = 0.05,
@@ -172,8 +172,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 408080,
+			dir = 1,
 			say = "暗号当てゲーム、面白いぞー",
 			typewriter = {
 				speed = 0.05,
@@ -202,12 +202,12 @@ return {
 		{
 			actor = 201070,
 			side = 2,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "結局わからずじまいですね",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -275,8 +275,8 @@ return {
 			say = "エニグマと暗号書の手がかりを教えたらな～どうだ～？",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.2,
 					x = 30,
@@ -341,8 +341,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 408080,
+			dir = 1,
 			say = "うん。本当だよ―",
 			typewriter = {
 				speed = 0.05,

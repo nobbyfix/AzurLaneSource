@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "水雷自爆",
 	init_effect = "",
+	name = "水雷自爆",
+	time = 0,
 	picture = "",
 	desc = "水雷自爆",
 	stack = 0,
@@ -12,7 +12,7 @@ return {
 		{
 			type = "BattleBuffCastSkill",
 			trigger = {
-				"onDying"
+				"onBeforeFatalDamage"
 			},
 			arg_list = {
 				skill_id = 7041,

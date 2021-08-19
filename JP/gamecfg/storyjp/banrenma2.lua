@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "BANRENMA2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"セントーと先輩たち\n\n<size=45>二　真面目すぎる系？</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "母港・広場",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "母港・広場",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,9 +46,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "秘書艦のセントーと一緒に母港を巡視する。",
 			typewriter = {
 				speed = 0.05,
@@ -75,10 +75,10 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_school",
-			say = "フッド先輩、おはようございます！仰る通り、今指揮官と一緒に巡視中です。",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
+			say = "フッド先輩、おはようございます！仰る通り、今指揮官と一緒に巡視中です。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -160,8 +160,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "はい、フッド先輩！ぜひ参加させてください！",
 			typewriter = {
@@ -174,8 +174,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -184,9 +184,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "セントーはロイヤルの先輩たちと上手くやっているようだ。",
 			typewriter = {
 				speed = 0.05,
@@ -194,15 +194,15 @@ return {
 			}
 		},
 		{
+			actor = 301320,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301320,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "しゅきかん、ええと、だれだっけ……アメさんあげる～",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -227,12 +227,12 @@ return {
 			}
 		},
 		{
-			say = "睦月ちゃん、かんたいにはいったばかりのセントーさんだよ…",
+			actor = 301330,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "睦月ちゃん、かんたいにはいったばかりのセントーさんだよ…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -263,9 +263,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "セントーは二人に深くお辞儀をした。",
 			typewriter = {
 				speed = 0.05,
@@ -279,11 +279,11 @@ return {
 			}
 		},
 		{
+			actor = 301330,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "えええ！？如月たちがせ、センパイ……？",
 			typewriter = {
 				speed = 0.05,
@@ -295,8 +295,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -305,12 +305,12 @@ return {
 			}
 		},
 		{
-			say = "はい！私にとって二人は尊敬すべき先輩です！",
+			actor = 206040,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = -1,
-			actor = 206040,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "はい！私にとって二人は尊敬すべき先輩です！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -376,8 +376,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = -1,
 			actor = 206040,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "ええ、お気になさらず！",
 			typewriter = {
@@ -390,12 +390,12 @@ return {
 			}
 		},
 		{
-			say = "うぅ……やっぱりヘンだよぉ……",
+			actor = 301330,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 301330,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "うぅ……やっぱりヘンだよぉ……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

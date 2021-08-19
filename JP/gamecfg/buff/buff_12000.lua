@@ -12,17 +12,17 @@ return {
 	desc_get = "在队伍中(存活)时降低轻母、航母受到的伤害",
 	name = "远东的羁绊",
 	init_effect = "",
-	id = 12000,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "队伍中(存活)时降低轻母、航母受到的伤害$1",
 	stack = 1,
-	color = "yellow",
+	id = 12000,
 	icon = 12000,
 	last_effect = "",
 	effect_list = {
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 12001,
@@ -31,7 +31,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 12001,
@@ -54,15 +54,15 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				check_target = "TargetTemplate",
 				minTargetNumber = 1,
-				skill_id = 12001,
 				target = "TargetSelf",
-				targetTemplateIDList = {
-					101051,
-					101052,
-					101053,
-					101054
+				skill_id = 12001,
+				check_target = {
+					"TargetAllHelp",
+					"TargetShipTag"
+				},
+				ship_tag_list = {
+					"Gridley"
 				}
 			}
 		}

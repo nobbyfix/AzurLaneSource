@@ -1,7 +1,7 @@
 return {
-	time = 2,
-	name = "损害管制-回血HOT",
 	init_effect = "",
+	name = "损害管制-回血HOT",
+	time = 2,
 	picture = "",
 	desc = "HOT",
 	stack = 1,

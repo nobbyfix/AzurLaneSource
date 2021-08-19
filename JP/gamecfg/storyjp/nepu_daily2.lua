@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "NEPU_DAILY2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"<size=45>第二話　『持つべき者は女神！』</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-nepu1",
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……なるほど。つまり、あなた方は別の次元からやって来た、と？",
+			bgm = "story-nepu1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "そのとーり！わたしネプテューヌ、よろしくねー！ねぷねぷでもねぷ子でも好きに呼んでね♪",
+			actor = 10100010,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 10100010,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "そのとーり！わたしネプテューヌ、よろしくねー！ねぷねぷでもねぷ子でも好きに呼んでね♪",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -86,11 +86,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 301050,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "女神、ですか？全然そんな風に見えないです……証拠はあるですか？",
 			typewriter = {
@@ -119,11 +119,11 @@ return {
 			}
 		},
 		{
+			actor = 10100050,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 10100050,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……ふう、やっぱりシェアが少ないと、この姿を維持するのも辛いわね",
 			flashout = {
 				dur = 0.5,
@@ -150,11 +150,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 301050,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "おお！本当に変身した、です……！",
 			typewriter = {
@@ -215,11 +215,11 @@ return {
 			}
 		},
 		{
+			actor = 10100010,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 10100010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "……というわけで女神化解除！わたしたちもさっきの偽物と戦ったんだけど、こっちの世界じゃ【シェア】が足りなくて、思うように力が出せなくて撤退しちゃったんだよねー……どうにかなんないかな？",
 			flashout = {
 				dur = 0.5,
@@ -310,11 +310,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 301050,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "綾波、です…よろしくです",
 			typewriter = {
@@ -359,11 +359,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 301050,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "別の次元から来た、ですか……アニメでよく見たから知ってるです",
 			typewriter = {
@@ -440,11 +440,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 301050,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "……できれば、わたしたちも、お話を聞きたいです",
 			typewriter = {
@@ -521,11 +521,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 301050,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:6}",
 			say = "腹が減っては戦が出来ぬ、です。御飯の用意ができてるです",
 			typewriter = {
@@ -570,11 +570,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 900077,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 2,
+			dir = 1,
 			actorName = "？？？",
 			say = "あらあら、楽しそうですわね──わたくしもご一緒させてくださいまし♪",
 			typewriter = {
@@ -587,13 +587,13 @@ return {
 			}
 		},
 		{
-			say = "やっと見つけた……探す身にもなってほしい……",
+			actor = 900076,
 			side = 1,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 900076,
 			actorName = "？？？",
+			say = "やっと見つけた……探す身にもなってほしい……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -624,12 +624,12 @@ return {
 			}
 		},
 		{
-			say = "ベール？それにブラン？あなたたち、どうしてここに！？",
+			actor = 10100020,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 10100020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ベール？それにブラン？あなたたち、どうしてここに！？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -660,12 +660,12 @@ return {
 			}
 		},
 		{
-			say = "やっぱり、ブランとベールだー！もしかして学園がどこにあるかわかんなくて今まで海をさまよってたの？",
+			actor = 10100010,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 10100010,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "やっぱり、ブランとベールだー！もしかして学園がどこにあるかわかんなくて今まで海をさまよってたの？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -824,13 +824,13 @@ return {
 			}
 		},
 		{
-			say = "２人も４人も一緒、です……",
+			actor = 301050,
 			side = 0,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 301050,
 			actorName = "{namecode:6}",
+			say = "２人も４人も一緒、です……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

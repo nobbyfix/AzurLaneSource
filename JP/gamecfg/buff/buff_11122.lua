@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.1,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.1
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.111,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.111
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.122,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.122
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.133,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.133
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.144,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.144
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.155,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.155
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.166,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.166
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.177,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.177
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.188,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.188
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.2,
-					attr = "injureRatioByCannon"
+					attr = "injureRatioByCannon",
+					number = -0.2
 				}
 			}
 		}
 	},
-	time = 0.1,
-	name = "胜利之歌",
 	init_effect = "",
+	name = "胜利之歌",
+	time = 0.1,
 	picture = "",
 	desc = "属性提升",
 	stack = 1,
@@ -166,8 +166,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.1,
-				attr = "injureRatioByCannon"
+				attr = "injureRatioByCannon",
+				number = -0.1
 			}
 		}
 	}

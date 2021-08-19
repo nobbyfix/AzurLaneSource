@@ -1,7 +1,7 @@
 return {
-	time = 8,
-	name = "Jolly Rogers",
 	init_effect = "",
+	name = "Jolly Rogers",
+	time = 8,
 	picture = "",
 	desc = "提高防空",
 	stack = 1,
@@ -16,8 +16,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "antiAirPower"
+				attr = "antiAirPower",
+				number = 500
 			}
 		}
 	}

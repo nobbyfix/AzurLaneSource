@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "I56XIAOFU2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"隅っこのヒマワリ\n\n<size=45>二 なぞの誤解？</size>",
@@ -19,16 +19,16 @@ return {
 		{
 			expression = 3,
 			side = 2,
+			bgName = "star_level_bg_103",
 			dir = 1,
 			bgmDelay = 2,
-			bgName = "star_level_bg_103",
 			bgm = "story-1",
 			actor = 308051,
 			nameColor = "#a9f548",
 			say = "ひぃ！！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -53,8 +53,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 2,
 					dur = 0.1,
 					x = 0,
@@ -66,10 +66,10 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "star_level_bg_103",
-			say = "わ！？大丈夫ですか？？",
-			dir = -1,
 			actor = 308041,
+			dir = -1,
 			nameColor = "#a9f548",
+			say = "わ！？大丈夫ですか？？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -103,8 +103,8 @@ return {
 			expression = 1,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "だ、大丈夫よ…涼しいからちょっとここで休憩してるだけ……",
 			typewriter = {
@@ -120,8 +120,8 @@ return {
 			expression = 3,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = -1,
 			actor = 308041,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "いろはとハムマン今日も相変わらずね…",
 			typewriter = {
@@ -137,8 +137,8 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = -1,
 			actor = 308041,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "もしかして……伊56は二人の様子が気になりました？",
 			typewriter = {
@@ -154,8 +154,8 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "え？あ、うん……",
 			typewriter = {
@@ -168,11 +168,11 @@ return {
 			}
 		},
 		{
+			actor = 308041,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = -1,
-			actor = 308041,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "そうなんですね……伊56の気持ち、わかる気がします……",
 			typewriter = {
 				speed = 0.05,
@@ -184,8 +184,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -197,8 +197,8 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "え、えっ？",
 			typewriter = {
@@ -214,8 +214,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = -1,
 			actor = 308041,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "伊56はいつも一人で出かける任務ばかりを引き受けて、学園でもあまりみんなとしゃべらないですから……",
 			typewriter = {
@@ -231,8 +231,8 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "そ、それは……",
 			typewriter = {
@@ -280,8 +280,8 @@ return {
 			expression = 2,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = -1,
 			actor = 308041,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "恥ずかしがらなくていいですよ。わたしで良ければお友達になりましょう",
 			typewriter = {
@@ -297,8 +297,8 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 308051,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "え！？ち、違っ…いや、別に嫌じゃないけどわたしは別に……",
 			typewriter = {
@@ -311,8 +311,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -321,11 +321,11 @@ return {
 			}
 		},
 		{
+			actor = 308041,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = -1,
-			actor = 308041,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "よろしくおねがいします、伊56♪",
 			typewriter = {
 				speed = 0.05,
@@ -337,8 +337,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 1,
 					x = 900
@@ -346,11 +346,11 @@ return {
 			}
 		},
 		{
+			actor = 308051,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 308051,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "むぐぐぐ……",
 			typewriter = {
 				speed = 0.05,
@@ -362,8 +362,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -388,11 +388,11 @@ return {
 			}
 		},
 		{
+			actor = 308051,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 308051,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "むぐぐぐ……（こ、呼吸が…）",
 			typewriter = {
 				speed = 0.05,
@@ -404,8 +404,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -417,10 +417,10 @@ return {
 			expression = 1,
 			side = 0,
 			bgName = "star_level_bg_103",
-			say = "……ご、ごめんなさい！わたしってつい……",
-			dir = -1,
 			actor = 308041,
+			dir = -1,
 			nameColor = "#a9f548",
+			say = "……ご、ごめんなさい！わたしってつい……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -451,8 +451,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -467,11 +467,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 2,
+			nameColor = "#a9f548",
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actorName = "？？？",
+			dir = 1,
 			say = "あたしも混ぜて！ふん！",
 			dialogShake = {
 				speed = 0.09,
@@ -488,11 +488,11 @@ return {
 			}
 		},
 		{
+			actor = 308051,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 308051,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "わわ！？",
 			typewriter = {
 				speed = 0.05,
@@ -504,8 +504,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,

@@ -1,7 +1,7 @@
 return {
+	time = 2,
 	name = "机动回避",
 	init_effect = "jinengchufablue",
-	time = 2,
 	picture = "",
 	desc = "完全闪避",
 	stack = 1,
@@ -23,8 +23,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "perfectDodge"
+				group = 6272,
+				attr = "perfectDodge",
+				number = 1
 			}
 		},
 		{
@@ -34,8 +35,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "immuneDirectHit"
+				group = 6272,
+				attr = "immuneDirectHit",
+				number = 1
 			}
 		}
 	}

@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1000
 				}
 			},
 			{
@@ -33,8 +33,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1110,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1110
 				}
 			},
 			{
@@ -58,8 +58,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1220
 				}
 			},
 			{
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1330,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1330
 				}
 			},
 			{
@@ -108,8 +108,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1440,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1440
 				}
 			},
 			{
@@ -133,8 +133,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1550,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1550
 				}
 			},
 			{
@@ -158,8 +158,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1660
 				}
 			},
 			{
@@ -183,8 +183,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1770,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1770
 				}
 			},
 			{
@@ -208,8 +208,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1880,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1880
 				}
 			},
 			{
@@ -233,8 +233,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2000
 				}
 			},
 			{
@@ -249,14 +249,14 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "鲜血诗篇-P1",
 	init_effect = "",
-	id = 19241,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "鲜血诗篇-P1",
 	stack = 1,
-	color = "yellow",
+	id = 19241,
 	icon = 19240,
 	last_effect = "",
 	blink = {
@@ -274,8 +274,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 1000
 			}
 		},
 		{

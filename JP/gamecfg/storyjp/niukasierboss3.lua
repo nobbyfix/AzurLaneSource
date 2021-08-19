@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "NIUKASIERBOSS3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"戦え！ロイヤルメイド隊\n\n<size=45>三　輝くシェフィールド</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "演習海域・南の防衛線",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "演習海域・南の防衛線",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -94,14 +94,14 @@ return {
 			}
 		},
 		{
+			actor = 202190,
 			side = 0,
-			actorShadow = true,
 			bgName = "bg_story_nepu1",
 			nameColor = "#a9f548",
 			dir = 1,
-			say = "シェフィ、ひとりでちょっと寂しくなりました？",
-			actor = 202190,
+			actorShadow = true,
 			actorName = "？？？",
+			say = "シェフィ、ひとりでちょっと寂しくなりました？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -116,11 +116,11 @@ return {
 			}
 		},
 		{
+			actor = 202080,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 202080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "？！…ニューカッスルさん、久しぶりです",
 			typewriter = {
 				speed = 0.05,
@@ -132,8 +132,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.1,
 					dur = 0.2,
 					x = 0,
@@ -382,12 +382,12 @@ return {
 			}
 		},
 		{
+			actor = 202080,
 			side = 1,
 			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 202080,
-			nameColor = "#a9f548",
 			say = "うん……またあとでよろしくお願いします。ニューカッスルさん",
 			typewriter = {
 				speed = 0.05,

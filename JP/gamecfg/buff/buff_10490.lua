@@ -62,12 +62,12 @@ return {
 	desc_get = "与宁海同在一个舰队时，炮击性能提高15.0%(满级35.0%)",
 	name = "姐妹同心",
 	init_effect = "",
-	id = 10490,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "与宁海同在一个舰队时，炮击性能提高$1",
 	stack = 1,
-	color = "yellow",
+	id = 10490,
 	icon = 10490,
 	last_effect = "",
 	effect_list = {
@@ -77,15 +77,15 @@ return {
 				"onStartGame"
 			},
 			arg_list = {
-				check_target = "TargetTemplate",
 				minTargetNumber = 1,
-				skill_id = 10490,
 				target = "TargetSelf",
-				targetTemplateIDList = {
-					502021,
-					502022,
-					502023,
-					502024
+				skill_id = 10490,
+				check_target = {
+					"TargetAllHelp",
+					"TargetShipTag"
+				},
+				ship_tag_list = {
+					"Ning Hai"
 				}
 			}
 		}

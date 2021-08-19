@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "加斯科涅μ2",
 	init_effect = "",
-	id = 12790,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12790,
 	icon = 12790,
 	last_effect = "",
 	effect_list = {
@@ -38,8 +38,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 1,
-				target = "TargetSelf",
 				maxTargetNumber = 1,
+				target = "TargetSelf",
 				skill_id = 12791,
 				check_target = {
 					"TargetAllHelp",
@@ -57,8 +57,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 2,
-				target = "TargetSelf",
 				maxTargetNumber = 2,
+				target = "TargetSelf",
 				skill_id = 12792,
 				check_target = {
 					"TargetAllHelp",
@@ -76,8 +76,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 3,
-				target = "TargetSelf",
 				maxTargetNumber = 3,
+				target = "TargetSelf",
 				skill_id = 12791,
 				check_target = {
 					"TargetAllHelp",
@@ -95,8 +95,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 4,
-				target = "TargetSelf",
 				maxTargetNumber = 4,
+				target = "TargetSelf",
 				skill_id = 12792,
 				check_target = {
 					"TargetAllHelp",
@@ -114,8 +114,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 5,
-				target = "TargetSelf",
 				maxTargetNumber = 5,
+				target = "TargetSelf",
 				skill_id = 12791,
 				check_target = {
 					"TargetAllHelp",
@@ -133,8 +133,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 6,
-				target = "TargetSelf",
 				maxTargetNumber = 6,
+				target = "TargetSelf",
 				skill_id = 12792,
 				check_target = {
 					"TargetAllHelp",
@@ -152,8 +152,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 7,
-				target = "TargetSelf",
 				maxTargetNumber = 7,
+				target = "TargetSelf",
 				skill_id = 12791,
 				check_target = {
 					"TargetAllHelp",
@@ -171,8 +171,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 8,
-				target = "TargetSelf",
 				maxTargetNumber = 8,
+				target = "TargetSelf",
 				skill_id = 12792,
 				check_target = {
 					"TargetAllHelp",
@@ -190,8 +190,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 9,
-				target = "TargetSelf",
 				maxTargetNumber = 9,
+				target = "TargetSelf",
 				skill_id = 12791,
 				check_target = {
 					"TargetAllHelp",

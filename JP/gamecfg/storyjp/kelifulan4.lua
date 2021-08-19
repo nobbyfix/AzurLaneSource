@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "KELIFULAN4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"ナイト＆アワード\n\n<size=45>その四　試合開始！</size>",
@@ -17,22 +17,22 @@ return {
 			}
 		},
 		{
-			say = "バスケ大会当日・会場",
+			bgm = "story-1",
 			side = 2,
 			bgName = "star_level_bg_103",
 			dir = 1,
-			bgm = "story-1",
+			say = "バスケ大会当日・会場",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ついにこの日が来たのね……指揮官、こっちは準備ばっちりだ！試合中の指示も頼むぞ！",
 			typewriter = {
 				speed = 0.05,
@@ -70,12 +70,12 @@ return {
 			}
 		},
 		{
-			say = "ね、姉さん！！もう！",
+			actor = 102050,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ね、姉さん！！もう！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -106,13 +106,13 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_103",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "star_level_bg_103",
 			say = "一回戦の相手は『ジャスティスビーバーズ』チーム。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -133,11 +133,11 @@ return {
 			}
 		},
 		{
+			actor = 101110,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "さあ！私たちの正義を相手に見せつけるわよ！ビーバーズ隊！出撃！……あ、あれ？",
 			effects = {
 				{
@@ -155,12 +155,12 @@ return {
 			}
 		},
 		{
-			say = "面倒い…わたし補欠席でいいよー",
+			actor = 101140,
 			side = 1,
 			bgName = "star_level_bg_103",
-			actor = 101140,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "面倒い…わたし補欠席でいいよー",
 			effects = {
 				{
 					active = false,
@@ -181,16 +181,16 @@ return {
 			}
 		},
 		{
+			actor = 101120,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "あはははスペンスまた転げそうになっちゃった！…ってあああぶつかる！",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 1,
 					dur = 0.1,
 					x = 15,
@@ -239,9 +239,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			say = "監督のタウンズの努力も虚しく、クリーブランドたちが完勝した。",
 			typewriter = {
 				speed = 0.05,
@@ -249,15 +249,15 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102090,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "よし、いいスタートを切ったね！このまま優勝するぞ！…って、そううまくはいかないかな、えへへ♪",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -288,12 +288,12 @@ return {
 			}
 		},
 		{
+			actor = 102090,
 			side = 2,
 			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 102090,
-			nameColor = "#a9f548",
 			say = "おう！指揮官もちゃんと見とけよ！今日は最高に活躍するんだぜ♪",
 			typewriter = {
 				speed = 0.05,

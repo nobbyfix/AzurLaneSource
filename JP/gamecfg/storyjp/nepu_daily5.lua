@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "NEPU_DAILY5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"<size=45>第五話　『図書館ではお静かに』</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 10100030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-nepu1",
-			actor = 10100030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……ここが、学園の図書館…大きいし、蔵書数も期待できそう",
+			bgm = "story-nepu1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "いかがですかブランさん？お気に召していただけましたか？",
+			actor = 401230,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "いかがですかブランさん？お気に召していただけましたか？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -278,12 +278,12 @@ return {
 			}
 		},
 		{
-			say = "レンジャー先生、こんにちわ。先生こそどうしたんですか？",
+			actor = 401230,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "レンジャー先生、こんにちわ。先生こそどうしたんですか？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -314,9 +314,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			say = "──バサバサバサッ！",
 			typewriter = {
 				speed = 0.05,
@@ -596,11 +596,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 307030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:93}",
 			say = "あら、図書館なのに何だか賑やかね……みんな、どうしたの？",
 			typewriter = {
@@ -661,11 +661,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 307030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:93}",
 			say = "ええ、ちょっと勉強する必要があるかなー、と思ってね",
 			typewriter = {
@@ -710,11 +710,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 1,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 307030,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 1,
+			dir = 1,
 			actorName = "{namecode:93}",
 			say = "レンジャーさんまで何を言うの…はあ、このまま私、先生キャラを定着させられちゃうのかしら……？",
 			typewriter = {

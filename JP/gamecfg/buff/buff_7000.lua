@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "莱茵演习",
 	init_effect = "",
+	name = "莱茵演习",
+	time = 0,
 	picture = "",
 	desc = "序章俾斯麦秒杀技能",
 	stack = 1,
@@ -15,9 +15,9 @@ return {
 				"onUpdate"
 			},
 			arg_list = {
-				skill_id = 7000,
 				time = 40,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 7000
 			}
 		},
 		{
@@ -27,8 +27,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 7027,
-				time = 40,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				time = 40
 			}
 		}
 	}

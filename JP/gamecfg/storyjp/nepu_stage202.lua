@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "NEPU_STAGE202",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -31,13 +31,13 @@ return {
 			}
 		},
 		{
-			say = "あー、テステス──皆さん、聞こえますかー？",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "あー、テステス──皆さん、聞こえますかー？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -63,13 +63,13 @@ return {
 			}
 		},
 		{
-			say = "誰が空気ですか、わたしですよ。イストワールです ",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "誰が空気ですか、わたしですよ。イストワールです ",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -95,13 +95,13 @@ return {
 			}
 		},
 		{
-			say = "はい、なんとか通信だけ繋げられました。ゲイムギョウ界へ通じる道もどうにか確保できそうです",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "はい、なんとか通信だけ繋げられました。ゲイムギョウ界へ通じる道もどうにか確保できそうです",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -127,13 +127,13 @@ return {
 			}
 		},
 		{
-			say = "それが今すぐにというわけには行かなそうで……準備に時間がかかりそうです。もうしばらくお待ちください",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "それが今すぐにというわけには行かなそうで……準備に時間がかかりそうです。もうしばらくお待ちください",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -159,13 +159,13 @@ return {
 			}
 		},
 		{
-			say = "ああ、やはり出ましたか……あの形跡はそれのせいですね",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "ああ、やはり出ましたか……あの形跡はそれのせいですね",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -191,13 +191,13 @@ return {
 			}
 		},
 		{
-			say = "実は……皆さんが通った例のワームホール、あそこを通り抜けた際にデータが収集されたみたいなんです",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "実は……皆さんが通った例のワームホール、あそこを通り抜けた際にデータが収集されたみたいなんです",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -242,13 +242,13 @@ return {
 			}
 		},
 		{
-			say = "とにかく、こちらでもワームホールを再び開けるように全力を尽くします。皆さんも十分に気をつけてくださいね",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "とにかく、こちらでもワームホールを再び開けるように全力を尽くします。皆さんも十分に気をつけてくださいね",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -274,12 +274,12 @@ return {
 			}
 		},
 		{
-			say = "きっと、セイレーンの仕業……です",
+			actor = 301050,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 301050,
 			actorName = "{namecode:6}",
+			dir = 1,
+			say = "きっと、セイレーンの仕業……です",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -357,8 +357,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "おお、根拠もないのにすごい自信……！",
 			typewriter = {
 				speed = 0.05,

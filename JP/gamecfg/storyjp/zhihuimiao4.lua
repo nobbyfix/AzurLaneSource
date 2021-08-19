@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "ZHIHUIMIAO4",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 312010,
@@ -125,8 +125,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "「オフニャ」って一体何なんだろう……",
 			typewriter = {
 				speed = 0.05,

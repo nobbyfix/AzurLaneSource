@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.035,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.035
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.04,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.04
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.045,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.045
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.05,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.05
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.055,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.055
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.06,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.06
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.065,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.065
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.07,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.07
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.075,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.075
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.08,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.08
 				}
 			}
 		}
 	},
-	time = 6,
-	name = "达克里特的阴霾",
 	init_effect = "",
+	name = "达克里特的阴霾",
+	time = 6,
 	picture = "",
 	desc = "伤害降低",
 	stack = 1,
@@ -166,8 +166,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.035,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = -0.035
 			}
 		}
 	}

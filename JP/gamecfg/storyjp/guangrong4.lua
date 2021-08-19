@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "GUANGRONG4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"栄光なる間奏曲\n\n<size=45>その四　女王事案Ⅱ</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 207060,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "アーク・ロイヤルさんが無実である理由は3つあります。",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -82,16 +82,16 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "えっ。",
 			action = {
 				{
-					y = 7.5,
 					type = "shake",
+					y = 7.5,
 					delay = 0,
 					dur = 0.1,
 					X = 0,
@@ -108,42 +108,16 @@ return {
 			}
 		},
 		{
-			side = 2,
-			bgName = "bg_story_school",
-			dir = 1,
 			actor = 205010,
-			nameColor = "#a9f548",
-			say = "えっ。",
-			action = {
-				{
-					y = 7.5,
-					type = "shake",
-					delay = 0,
-					dur = 0.1,
-					X = 0,
-					number = 1
-				}
-			},
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 202120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "えっ。",
 			action = {
 				{
-					y = 7.5,
 					type = "shake",
+					y = 7.5,
 					delay = 0,
 					dur = 0.1,
 					X = 0,
@@ -160,10 +134,36 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
+			actor = 202120,
+			side = 2,
 			bgName = "bg_story_school",
+			nameColor = "#a9f548",
+			dir = 1,
+			say = "えっ。",
+			action = {
+				{
+					type = "shake",
+					y = 7.5,
+					delay = 0,
+					dur = 0.1,
+					X = 0,
+					number = 1
+				}
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
 			actor = 205020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "一同",
@@ -213,12 +213,12 @@ return {
 			}
 		},
 		{
-			say = "私にも可愛い妹のような――ううん、妹より大切な仲間がいます。",
+			actor = 207060,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "私にも可愛い妹のような――ううん、妹より大切な仲間がいます。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -281,10 +281,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 205020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "一同",
@@ -329,10 +329,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 205020,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "ベルファスト＆ウォースパイト",
@@ -372,12 +372,12 @@ return {
 			}
 		},
 		{
-			say = "いいえ！大したことではありません。……アーク・ロイヤルさんの無実が証明できてよかったです。",
+			actor = 207060,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207060,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "いいえ！大したことではありません。……アーク・ロイヤルさんの無実が証明できてよかったです。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

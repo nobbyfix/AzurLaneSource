@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AIRICHANG3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"「仮想繋げし共時性」-日常編\n\n<size=45>三 ハロー、サンディエゴだよっ♪♪</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_103",
+			actor = 102080,
 			side = 2,
+			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 102080,
-			nameColor = "#a9f548",
 			say = "ハロー、サンディエゴだよっ♪（ﾋﾟﾛﾘﾝ）",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -68,15 +68,15 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "――こんな感じでどう？",
 			flashout = {
-				dur = 0.2,
 				black = true,
+				dur = 0.2,
 				alpha = {
 					0,
 					1
@@ -104,8 +104,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "うんうん！かなりバーチャルユーチューバーっぽくなってきたね！実はずっと前から目を付けてたんだー、やっぱり私の目に狂いはなかったよ！",
 			typewriter = {
@@ -121,8 +121,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "まあでも、最初にサンディエゴちゃんからバーチャルユーチューバーになりたい！って言われたときはびっくりしたんだけどねー",
 			typewriter = {
@@ -247,11 +247,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "やったー！ヴェスタル～ありがとー！",
 			typewriter = {
 				speed = 0.05,
@@ -263,8 +263,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -340,8 +340,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "た、たしかに私は元の場所では親分なんて呼ばれてたけど……",
 			typewriter = {
@@ -389,8 +389,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "一富士二鷹サンディエゴでさーいこーー！！",
 			typewriter = {
@@ -403,8 +403,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -429,12 +429,12 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 102080,
-			nameColor = "#a9f548",
 			say = "ってそれサンディエゴのセリフだよ～～～！",
 			typewriter = {
 				speed = 0.05,

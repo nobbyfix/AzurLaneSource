@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -23,8 +23,8 @@ return {
 		{
 			actor = 307050,
 			side = 1,
-			say = "そうよね。開戦以来戻っていなかったから…懐かしいわね…",
 			dir = 1,
+			say = "そうよね。開戦以来戻っていなかったから…懐かしいわね…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -83,8 +83,8 @@ return {
 		{
 			actor = 307060,
 			side = 0,
-			say = "ごめんなさい！でも、三笠大先輩も弱音を吐く事があるのですね。へへへ",
 			dir = 1,
+			say = "ごめんなさい！でも、三笠大先輩も弱音を吐く事があるのですね。へへへ",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -134,12 +134,12 @@ return {
 			}
 		},
 		{
-			say = "（ドカーン！）",
 			soundeffect = "event:/battle/boom2",
+			say = "（ドカーン！）",
 			flash = {
-				wait = 0,
 				delay = 0,
 				dur = 0.5,
+				wait = 0,
 				number = 1,
 				alpha = {
 					0,

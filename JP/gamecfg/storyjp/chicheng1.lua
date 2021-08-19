@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "CHICHENG1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"ヒガンバナの恋\n\n<size=45>その一　紅の秘書艦</size>",
@@ -17,11 +17,11 @@ return {
 			}
 		},
 		{
-			say = "母港・執務室",
+			bgm = "story-1",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
-			bgm = "story-1",
+			say = "母港・執務室",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -76,9 +76,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（コンコン）",
 			typewriter = {
 				speed = 0.05,
@@ -102,11 +102,11 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 307010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "うっ！え、エンタープライズ………",
 			typewriter = {
 				speed = 0.05,
@@ -118,8 +118,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					dur = 0.1,
 					x = 0,
 					number = 1
@@ -127,12 +127,12 @@ return {
 			}
 		},
 		{
-			say = "むっ、赤城……",
+			actor = 107060,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 107060,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "むっ、赤城……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -147,9 +147,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "赤城が拳を軽く握りしめるのを見た。執務室の空気が重い……",
 			typewriter = {
 				speed = 0.05,
@@ -167,12 +167,12 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 307010,
-			nameColor = "#a9f548",
 			say = "指揮官様……ふんっ、今は敵同士ではなく味方ですもの。報告があるならやって頂戴。",
 			typewriter = {
 				speed = 0.05,
@@ -184,13 +184,13 @@ return {
 			}
 		},
 		{
-			say = "言われなくてもそうするが……",
+			actor = 107060,
 			side = 1,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 1,
-			actor = 107060,
-			nameColor = "#a9f548",
+			say = "言われなくてもそうするが……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -205,17 +205,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 307010,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			optionFlag = 2,
-			actor = 307010,
-			nameColor = "#a9f548",
 			say = "………（ぐぬぬぬぬぬぬ）",
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					dur = 0.15,
 					x = 15,
 					number = 4
@@ -242,15 +242,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
-			dir = 1,
 			actor = 107060,
+			side = 2,
+			bgName = "bg_story_task",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "報告は以上だ。……ここに長居するつもりはない。退散させてもらう。",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -275,9 +275,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "（パタン）",
 			typewriter = {
 				speed = 0.05,
@@ -301,12 +301,12 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 307010,
-			nameColor = "#a9f548",
 			say = "そうです！あんな害虫はあとで掃除して、指揮官様を赤城のものだけにするとしても……執務中は……ね？",
 			typewriter = {
 				speed = 0.05,

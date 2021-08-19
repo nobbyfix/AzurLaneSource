@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "驱逐-后勤-雷击I",
 	init_effect = "",
-	id = 413210,
+	name = "驱逐-后勤-雷击I",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "该入口提供战外挂载到战内",
 	stack = 1,
-	color = "yellow",
+	id = 413210,
 	icon = 413210,
 	last_effect = "",
 	effect_list = {

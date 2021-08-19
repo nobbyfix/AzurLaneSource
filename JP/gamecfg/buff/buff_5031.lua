@@ -62,12 +62,12 @@ return {
 	desc_get = "在队伍中(存活)时降低战巡、战列受到的伤害5.0%(满级15.0%)，同技能效果不叠加",
 	name = "战舰护航",
 	init_effect = "",
-	id = 5031,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "在队伍中(存活)时降低战巡、战列受到的伤害$1，同技能效果不叠加",
 	stack = 1,
-	color = "blue",
+	id = 5031,
 	icon = 5030,
 	last_effect = "",
 	effect_list = {
@@ -81,7 +81,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 5030,
@@ -90,7 +90,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 5030,

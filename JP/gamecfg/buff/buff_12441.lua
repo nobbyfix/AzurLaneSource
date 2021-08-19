@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 100
 				}
 			},
 			{
@@ -33,8 +33,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 110,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 110
 				}
 			},
 			{
@@ -58,8 +58,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 120,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 120
 				}
 			},
 			{
@@ -83,8 +83,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 130,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 130
 				}
 			},
 			{
@@ -108,8 +108,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 145,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 145
 				}
 			},
 			{
@@ -133,8 +133,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 160,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 160
 				}
 			},
 			{
@@ -158,8 +158,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 175,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 175
 				}
 			},
 			{
@@ -183,8 +183,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 195,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 195
 				}
 			},
 			{
@@ -208,8 +208,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 220,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 220
 				}
 			},
 			{
@@ -233,8 +233,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 250,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 250
 				}
 			},
 			{
@@ -249,9 +249,9 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 7,

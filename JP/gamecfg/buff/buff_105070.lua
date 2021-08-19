@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "向日葵的约定 ",
 	init_effect = "",
-	id = 105070,
+	name = "向日葵的约定 ",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 105070,
 	icon = 105070,
 	last_effect = "",
 	effect_list = {
@@ -26,9 +26,9 @@ return {
 				"onSubmarineRaid"
 			},
 			arg_list = {
-				skill_id = 105070,
 				maxTargetNumber = 2,
 				target = "TargetSelf",
+				skill_id = 105070,
 				check_target = {
 					"TargetAllHelp",
 					"TargetShipTag"
@@ -45,8 +45,8 @@ return {
 			},
 			arg_list = {
 				minTargetNumber = 3,
-				skill_id = 105071,
 				target = "TargetSelf",
+				skill_id = 105071,
 				check_target = {
 					"TargetAllHelp",
 					"TargetShipTag"

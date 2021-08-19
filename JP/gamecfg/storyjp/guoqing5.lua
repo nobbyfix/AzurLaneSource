@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1,
 	mode = 2,
-	id = "GUOQING5",
-	once = true,
 	fadeType = 1,
+	once = true,
+	id = "GUOQING5",
 	scripts = {
 		{
+			actor = 307020,
 			side = 0,
-			say = "虫がかかった。全システム、作動正常。",
 			nameColor = "#ff0000",
-			blackBg = true,
-			actor = 307060,
 			actorName = "？？？",
 			withoutPainting = true,
+			blackBg = true,
+			say = "五航戦か。追ってくるとは",
 			shake = {
 				speed = 1,
 				number = 3
@@ -27,47 +27,13 @@ return {
 			}
 		},
 		{
-			say = "また五航戦のあの子か。なんて愚かで嘆かわしい……",
-			side = 1,
-			actorName = "？？？",
-			blackBg = true,
-			actor = 301090,
-			nameColor = "#ff0000",
-			withoutPainting = true,
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			say = "カミに抗おうとする弱き者は、自らの愚行に代償を支払わされるのが運命。",
-			side = 1,
-			actorName = "？？？",
-			blackBg = true,
-			actor = 301090,
-			nameColor = "#ff0000",
-			withoutPainting = true,
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
+			actor = 307010,
 			side = 0,
-			say = "「アレ」を使いましょ。カミから預かった新兵器をテストするのにちょうど良いわ",
 			nameColor = "#ff0000",
-			blackBg = true,
-			actor = 307060,
 			actorName = "？？？",
 			withoutPainting = true,
+			blackBg = true,
+			say = "やっぱり、虫がたかってきたわね",
 			shake = {
 				speed = 1,
 				number = 3
@@ -82,13 +48,89 @@ return {
 			}
 		},
 		{
+			actor = 307010,
 			side = 0,
+			nameColor = "#ff0000",
+			actorName = "？？？",
+			withoutPainting = true,
+			blackBg = true,
+			say = "聖域の機能をチェック…正常に動いているわ。杞憂だったかしら",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307020,
+			side = 1,
+			actorName = "？？？",
+			nameColor = "#ff0000",
+			withoutPainting = true,
+			blackBg = true,
+			say = "流石「カミ」より預かった実験場。デタラメにもほどがある",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307020,
+			side = 1,
+			actorName = "？？？",
+			nameColor = "#ff0000",
+			withoutPainting = true,
+			blackBg = true,
+			say = "それに抗おうとする弱き者は、自らの愚行に代償を支払わされるのが運命…",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307010,
+			side = 0,
+			nameColor = "#ff0000",
+			actorName = "？？？",
+			withoutPainting = true,
+			blackBg = true,
+			say = "「アレ」を使いましょ。新兵器をテストするのにちょうど良いわ",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307010,
+			side = 0,
+			nameColor = "#ff0000",
+			actorName = "？？？",
+			withoutPainting = true,
+			blackBg = true,
 			say = "「あのお方」との出逢いを阻もうとする者には、罰を与えないとね…",
-			nameColor = "#ff0000",
-			blackBg = true,
-			actor = 307060,
-			actorName = "？？？",
-			withoutPainting = true,
 			shake = {
 				speed = 1,
 				number = 3

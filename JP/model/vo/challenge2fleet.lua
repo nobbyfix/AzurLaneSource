@@ -1,15 +1,13 @@
 slot0 = class("Challenge2Fleet", import(".Fleet"))
 
-slot0.Ctor = function (slot0, slot1)
+function slot0.Ctor(slot0, slot1)
 	slot0.id = slot1.id
 
 	slot0:updateShips(slot1.ships)
 
 	slot0.commanderList = {}
-	slot2 = ipairs
-	slot3 = slot1.commanders or {}
 
-	for slot5, slot6 in slot2(slot3) do
+	for slot5, slot6 in ipairs(slot1.commanders or {}) do
 		slot0.commanderList[slot6.pos] = Commander.New(slot6.commanderinfo)
 	end
 
@@ -18,7 +16,7 @@ slot0.Ctor = function (slot0, slot1)
 	slot0:updateCommanderSkills()
 end
 
-slot0.getShipsByTeam = function (slot0, slot1, slot2)
+function slot0.getShipsByTeam(slot0, slot1, slot2)
 	slot3 = {}
 
 	for slot7, slot8 in ipairs(slot0[slot1]) do
@@ -38,7 +36,7 @@ slot0.getShipsByTeam = function (slot0, slot1, slot2)
 	return slot3
 end
 
-slot0.getFleetType = function (slot0)
+function slot0.getFleetType(slot0)
 	for slot4, slot5 in pairs(slot0.ships) do
 		if slot5:getTeamType() == TeamType.Submarine then
 			return FleetType.Submarine
@@ -48,26 +46,26 @@ slot0.getFleetType = function (slot0)
 	return FleetType.Normal
 end
 
-slot0.getShips = function (slot0, slot1)
+function slot0.getShips(slot0, slot1)
 	slot2 = {}
 
 	if slot0:getFleetType() == FleetType.Normal then
 		_.each(slot0:getShipsByTeam(TeamType.Main, slot1), function (slot0)
-			table.insert(slot0, slot0)
+			table.insert(uv0, slot0)
 		end)
 		_.each(slot0:getShipsByTeam(TeamType.Vanguard, slot1), function (slot0)
-			table.insert(slot0, slot0)
+			table.insert(uv0, slot0)
 		end)
 	elseif slot3 == FleetType.Submarine then
 		_.each(slot0:getShipsByTeam(TeamType.Submarine, slot1), function (slot0)
-			table.insert(slot0, slot0)
+			table.insert(uv0, slot0)
 		end)
 	end
 
 	return slot2
 end
 
-slot0.updateShips = function (slot0, slot1)
+function slot0.updateShips(slot0, slot1)
 	slot0[TeamType.Vanguard] = {}
 	slot0[TeamType.Main] = {}
 	slot0[TeamType.Submarine] = {}
@@ -76,13 +74,13 @@ slot0.updateShips = function (slot0, slot1)
 	_.each(slot1 or {}, function (slot0)
 		slot1 = Ship.New(slot0.ship_info)
 		slot1.hpRant = slot0.hp_rant
-		slot0.ships[slot1.id] = slot1
+		uv0.ships[slot1.id] = slot1
 
-		table.insert(slot0[slot1:getTeamType()], slot1)
+		table.insert(uv0[slot1:getTeamType()], slot1)
 	end)
 end
 
-slot0.updateShipsHP = function (slot0, slot1, slot2)
+function slot0.updateShipsHP(slot0, slot1, slot2)
 	if slot0.ships[slot1] then
 		slot3.hpRant = slot2
 
@@ -92,11 +90,11 @@ slot0.updateShipsHP = function (slot0, slot1, slot2)
 	end
 end
 
-slot0.getCommanders = function (slot0)
+function slot0.getCommanders(slot0)
 	return slot0.commanderList
 end
 
-slot0.switchShip = function (slot0, slot1, slot2)
+function slot0.switchShip(slot0, slot1, slot2)
 	slot3, slot4, slot5, slot6 = nil
 
 	for slot10, slot11 in pairs(slot0.ships) do
@@ -115,7 +113,7 @@ slot0.switchShip = function (slot0, slot1, slot2)
 	end
 end
 
-slot0.buildBattleBuffList = function (slot0)
+function slot0.buildBattleBuffList(slot0)
 	slot1 = {}
 	slot2, slot3 = FleetSkill.triggerMirrorSkill(slot0, FleetSkill.TypeBattleBuff)
 
@@ -136,8 +134,8 @@ slot0.buildBattleBuffList = function (slot0)
 		end
 	end
 
-	for slot8, slot9 in pairs(slot4) do
-		for slot14, slot15 in ipairs(slot10) do
+	for slot8, slot9 in pairs(slot0:getCommanders()) do
+		for slot14, slot15 in ipairs(slot9:getTalents()) do
 			if #slot15:getBuffsAddition() > 0 then
 				slot17 = nil
 

@@ -1,16 +1,16 @@
 return {
-	fadeType = 1,
+	id = "TIEXUEYUYINFU11",
 	mode = 2,
 	once = true,
-	id = "TIEXUEYUYINFU11",
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "————",
-			side = 2,
-			dir = -1,
 			soundeffect = "event:/battle/boom2",
+			side = 2,
 			bgm = "bsm-1",
+			dir = -1,
+			say = "————",
 			flashN = {
 				color = {
 					1,
@@ -71,8 +71,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "抵抗をやめたまえ。陛下の名のもとに、あなたをロイヤルに連行し、アズールレーンを裏切った審判を受けてもらうぞ――",
 			typewriter = {
 				speed = 0.05,
@@ -86,10 +86,10 @@ return {
 		{
 			expression = 3,
 			side = 1,
-			say = "あなたたちアズールレーンに私を裁く権利などないわ",
-			dir = 1,
 			actor = 405010,
 			nameColor = "#ffde38",
+			dir = 1,
+			say = "あなたたちアズールレーンに私を裁く権利などないわ",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -107,8 +107,8 @@ return {
 			expression = 3,
 			nameColor = "#ffde38",
 			side = 1,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "それよりキングジョージ5世、あなたは本当は私と戦艦としての戦いをしたいのではなくて？フッドを傷つけたかどうかは関係なく",
 			typewriter = {
 				speed = 0.05,
@@ -123,8 +123,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 1,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "……優雅だの栄光だの、くだらない理想と信条のために自分の願望を抑え込むその偽善こそ、私が軽蔑する理由よ",
 			typewriter = {
 				speed = 0.05,
@@ -139,8 +139,8 @@ return {
 			expression = 3,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "ははは、さすがは鉄血のリーダー、よく言い当てたな",
 			typewriter = {
 				speed = 0.05,
@@ -185,8 +185,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "最後にもう一回だけ問うが――",
 			typewriter = {
 				speed = 0.05,
@@ -213,15 +213,9 @@ return {
 			}
 		},
 		{
-			seDelay = 1.3,
 			say = "————",
 			soundeffect = "event:/battle/boom2",
-			effects = {
-				{
-					active = true,
-					name = "paoji_bisimai"
-				}
-			},
+			seDelay = 1.3,
 			flashN = {
 				color = {
 					1,
@@ -262,18 +256,11 @@ return {
 		},
 		{
 			expression = 1,
-			side = 0,
-			dir = -1,
-			actor = 205050,
 			nameColor = "#a9f548",
+			side = 0,
+			actor = 205050,
+			dir = -1,
 			say = "至近弾か！？ふん、初撃からやってくれる…！",
-			effects = {
-				{
-					name = "paoji_bisimai",
-					active = false,
-					destory = true
-				}
-			},
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -287,8 +274,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "ならば望み通り――",
 			typewriter = {
 				speed = 0.05,
@@ -301,18 +288,11 @@ return {
 		},
 		{
 			expression = 3,
-			side = 0,
-			dir = -1,
-			actor = 205050,
 			nameColor = "#a9f548",
+			side = 0,
+			actor = 205050,
+			dir = -1,
 			say = "全艦隊、砲撃用意！ロイヤルネイビーの栄光のために撃ちまくれ！",
-			effects = {
-				{
-					name = "paoji_qiaozhiwushi",
-					active = false,
-					destory = true
-				}
-			},
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -323,15 +303,9 @@ return {
 			}
 		},
 		{
-			seDelay = 1.3,
 			say = "————",
 			soundeffect = "event:/battle/boom2",
-			effects = {
-				{
-					active = true,
-					name = "paoji_qiaozhiwushi"
-				}
-			},
+			seDelay = 1.3,
 			flashN = {
 				color = {
 					1,

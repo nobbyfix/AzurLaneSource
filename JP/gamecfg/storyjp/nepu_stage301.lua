@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "NEPU_STAGE301",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"<size=45>『異色海域WHITE』</size>",
@@ -20,9 +20,9 @@ return {
 			actor = 10100010,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "level-nep",
 			dir = -1,
 			say = "ステージ２も難なくクリアー！これはもう事件解決待ったなしじゃない？",
-			bgm = "level-nep",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -33,13 +33,13 @@ return {
 			}
 		},
 		{
-			say = "ところがどっこい、そうは問屋が卸しません",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "ところがどっこい、そうは問屋が卸しません",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -102,8 +102,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "あ、もしかして……まだ足りない、とかですか？",
 			typewriter = {
 				speed = 0.05,
@@ -115,13 +115,13 @@ return {
 			}
 		},
 		{
-			say = "はい、大正解です。データが全然足らないんです",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "はい、大正解です。データが全然足らないんです",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -147,13 +147,13 @@ return {
 			}
 		},
 		{
-			say = "それもありますが、皆さん……データをコピーされた偽女神たちの情報も、ワームホールを開くのに必要だということが判明しました",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "それもありますが、皆さん……データをコピーされた偽女神たちの情報も、ワームホールを開くのに必要だということが判明しました",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -179,13 +179,13 @@ return {
 			}
 		},
 		{
-			say = "そういうことです……なので、そのまま鏡面海域の調査の続行と、情報からコピーされた偽女神たちの討伐をお願いします。ではまた",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "そういうことです……なので、そのまま鏡面海域の調査の続行と、情報からコピーされた偽女神たちの討伐をお願いします。ではまた",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -248,8 +248,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "……少しだけ、ウチの指揮官に似てるです",
 			typewriter = {
 				speed = 0.05,
@@ -336,16 +336,16 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			actorName = "テスターα",
 			side = 2,
+			nameColor = "#ff0000",
 			dir = 1,
 			blackBg = true,
-			actor = 900011,
-			nameColor = "#ff0000",
 			say = "……あちら側の次元からも干渉してきた者がいるようね",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -370,12 +370,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "テスターα",
 			dir = 1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "テスターα",
 			say = "しかも、こちらの情報防壁《FireWall》をかいくぐり、実験のデータどころか鏡面海域についてまで調べ上げようとするなんて……",
 			typewriter = {
 				speed = 0.05,
@@ -387,12 +387,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "テスターα",
 			dir = 1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "テスターα",
 			say = "……油断ならない存在ね、私たちと同等……いや、それ以上かも……？",
 			typewriter = {
 				speed = 0.05,
@@ -404,12 +404,12 @@ return {
 			}
 		},
 		{
+			actor = 900011,
 			nameColor = "#ff0000",
 			side = 2,
+			actorName = "テスターα",
 			dir = 1,
 			blackBg = true,
-			actor = 900011,
-			actorName = "テスターα",
 			say = "フフッ……上等じゃない、相手になってあげようじゃないの……",
 			typewriter = {
 				speed = 0.05,

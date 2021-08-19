@@ -1,486 +1,164 @@
 pg = pg or {}
-slot0 = pg
-slot1 = singletonClass
-slot2 = "GuideMgr"
-slot1 = slot1(slot2)
-slot0.GuideMgr = slot1
-slot0 = pg
-slot0 = slot0.GuideMgr
-slot1 = true
-slot0.ENABLE_GUIDE = slot1
-slot1 = {
-	LOADING = 0,
-	BREAK = 4,
+pg.GuideMgr = singletonClass("GuideMgr")
+slot0 = pg.GuideMgr
+slot0.ENABLE_GUIDE = true
+slot0.MANAGER_STATE = {
 	IDLE = 1,
 	BUSY = 2,
+	LOADING = 0,
+	BREAK = 4,
 	STOP = 3
 }
-slot0.MANAGER_STATE = slot1
 slot1 = 1
 slot2 = 2
 slot3 = 3
 slot4 = 4
 slot5 = 5
 slot6 = {
-	MODE2 = 2,
-	MODE1 = 1
+	MODE1 = 1,
+	MODE2 = 2
 }
 
-function slot7(slot0, slot1)
-	slot2 = print
-	slot3 = "initializing guide manager..."
+function slot0.Init(slot0, slot1)
+	print("initializing guide manager...")
 
-	slot2(slot3)
+	slot0.managerState = uv0.MANAGER_STATE.LOADING
+	slot0.sceneStore = {}
 
-	slot2 = slot0
-	slot2 = slot2.MANAGER_STATE
-	slot2 = slot2.LOADING
-	slot0.managerState = slot2
-	slot2 = {}
-	slot0.sceneStore = slot2
-	slot2 = PoolMgr
-	slot2 = slot2.GetInstance
-	slot2 = slot2()
-	slot3 = slot2
-	slot2 = slot2.GetUI
-	slot4 = "GuideUI"
-	slot5 = true
+	PoolMgr.GetInstance():GetUI("GuideUI", true, function (slot0)
+		uv0._go = slot0
+		uv0._tf = uv0._go.transform
 
-	function slot6(slot0)
-		slot1 = slot0
-		slot1._go = slot0
-		slot1 = slot0
-		slot2 = slot0
-		slot2 = slot2._go
-		slot2 = slot2.transform
-		slot1._tf = slot2
-		slot1 = slot0
-		slot1 = slot1._go
-		slot2 = slot1
-		slot1 = slot1.SetActive
-		slot3 = false
+		uv0._go:SetActive(false)
 
-		slot1(slot2, slot3)
+		uv0.UIOverlay = tf(GameObject.Find("Overlay/UIOverlay"))
 
-		slot1 = slot0
-		slot2 = tf
-		slot3 = GameObject
-		slot3 = slot3.Find
-		slot4 = "Overlay/UIOverlay"
-		slot2 = slot2(slot3(slot4))
-		slot1.UIOverlay = slot2
-		slot1 = slot0
-		slot1 = slot1._go
-		slot1 = slot1.transform
-		slot2 = slot1
-		slot1 = slot1.SetParent
-		slot3 = slot0
-		slot3 = slot3.UIOverlay
-		slot4 = false
+		uv0._go.transform:SetParent(uv0.UIOverlay, false)
 
-		slot1(slot2, slot3, slot4)
+		uv0.guiderTF = findTF(uv0._go, "Guider")
+		uv0.styleTF1 = findTF(uv0.guiderTF, "mode1")
+		uv0.styleTF2 = findTF(uv0.guiderTF, "mode2")
+		uv0.initChatBgH = uv0.styleTF2.sizeDelta.y
 
-		slot1 = slot0
-		slot2 = findTF
-		slot3 = slot0
-		slot3 = slot3._go
-		slot4 = "Guider"
-		slot2 = slot2(slot3, slot4)
-		slot1.guiderTF = slot2
-		slot1 = slot0
-		slot2 = findTF
-		slot3 = slot0
-		slot3 = slot3.guiderTF
-		slot4 = "mode1"
-		slot2 = slot2(slot3, slot4)
-		slot1.styleTF1 = slot2
-		slot1 = slot0
-		slot2 = findTF
-		slot3 = slot0
-		slot3 = slot3.guiderTF
-		slot4 = "mode2"
-		slot2 = slot2(slot3, slot4)
-		slot1.styleTF2 = slot2
-		slot1 = slot0
-		slot2 = slot0
-		slot2 = slot2.styleTF2
-		slot2 = slot2.sizeDelta
-		slot2 = slot2.y
-		slot1.initChatBgH = slot2
-		slot1 = SetActive
-		slot2 = slot0
-		slot2 = slot2.guiderTF
-		slot3 = false
+		SetActive(uv0.guiderTF, false)
 
-		slot1(slot2, slot3)
+		uv0._bg = findTF(uv0._go, "BG")
+		uv0.bgAlpha = uv0._bg:GetComponent(typeof(CanvasGroup))
+		uv0.bgAlpha.alpha = 0.2
+		uv0._closeBtn = uv0._bg:Find("close_btn")
+		uv0.uiLongPress = GetOrAddComponent(uv0._closeBtn, typeof(UILongPressTrigger))
+		uv0.uiLongPress.longPressThreshold = 10
+		uv0.fingerTF = findTF(uv0._go, "finger")
 
-		slot1 = slot0
-		slot2 = findTF
-		slot3 = slot0
-		slot3 = slot3._go
-		slot4 = "BG"
-		slot2 = slot2(slot3, slot4)
-		slot1._bg = slot2
-		slot1 = slot0
-		slot2 = slot0
-		slot2 = slot2._bg
-		slot3 = slot2
-		slot2 = slot2.GetComponent
-		slot4 = typeof
-		slot5 = CanvasGroup
-		slot2 = slot2(slot3, slot4(slot5))
-		slot1.bgAlpha = slot2
-		slot1 = slot0
-		slot1 = slot1.bgAlpha
-		slot2 = 0.2
-		slot1.alpha = slot2
-		slot1 = slot0
-		slot2 = slot0
-		slot2 = slot2._bg
-		slot3 = slot2
-		slot2 = slot2.Find
-		slot4 = "close_btn"
-		slot2 = slot2(slot3, slot4)
-		slot1._closeBtn = slot2
-		slot1 = slot0
-		slot2 = GetOrAddComponent
-		slot3 = slot0
-		slot3 = slot3._closeBtn
-		slot4 = typeof
-		slot5 = UILongPressTrigger
-		slot2 = slot2(slot3, slot4(slot5))
-		slot1.uiLongPress = slot2
-		slot1 = slot0
-		slot1 = slot1.uiLongPress
-		slot2 = 10
-		slot1.longPressThreshold = slot2
-		slot1 = slot0
-		slot2 = findTF
-		slot3 = slot0
-		slot3 = slot3._go
-		slot4 = "finger"
-		slot2 = slot2(slot3, slot4)
-		slot1.fingerTF = slot2
-		slot1 = SetActive
-		slot2 = slot0
-		slot2 = slot2.fingerTF
-		slot3 = false
+		SetActive(uv0.fingerTF, false)
 
-		slot1(slot2, slot3)
+		uv0._signRes = findTF(uv0._go, "signRes")
+		uv0.signPool = {}
+		uv0.curSignList = {}
+		uv0.fingerSprites = {}
 
-		slot1 = slot0
-		slot2 = findTF
-		slot3 = slot0
-		slot3 = slot3._go
-		slot4 = "wTask"
-		slot2 = slot2(slot3, slot4)
-		slot1.wTask = slot2
-		slot1 = setActive
-		slot2 = slot0
-		slot2 = slot2.wTask
-		slot3 = false
+		eachChild(findTF(uv0._go, "resources"), function (slot0)
+			table.insert(uv0.fingerSprites, slot0:GetComponent(typeof(Image)).sprite)
+		end)
 
-		slot1(slot2, slot3)
+		uv0.sceneFunc = nil
+		uv0.inited = true
+		uv0.finder = uv0:Finder()
+		uv0.managerState = uv1.MANAGER_STATE.IDLE
+		uv0.chars = {
+			uv0.styleTF1:Find("char"):GetComponent(typeof(Image)).sprite,
+			GetSpriteFromAtlas("ui/guide_atlas", "guide1")
+		}
+		uv0.material = uv0._tf:Find("resources/material"):GetComponent(typeof(Image)).material
 
-		slot1 = slot0
-		slot2 = {}
-		slot1.fingerSprites = slot2
-		slot1 = eachChild
-		slot2 = findTF
-		slot3 = slot0
-		slot3 = slot3._go
-		slot4 = "resources"
-		slot2 = slot2(slot3, slot4)
-
-		function slot3(slot0)
-			slot2 = slot0
-			slot1 = slot0.GetComponent
-			slot3 = typeof
-			slot4 = Image
-			slot1 = slot1(slot2, slot3(slot4))
-			slot1 = slot1.sprite
-			slot2 = table
-			slot2 = slot2.insert
-			slot3 = slot0
-			slot3 = slot3.fingerSprites
-			slot4 = slot1
-
-			slot2(slot3, slot4)
-		end
-
-		slot1(slot2, slot3)
-
-		slot1 = slot0
-		slot2 = nil
-		slot1.sceneFunc = slot2
-		slot1 = slot0
-		slot2 = true
-		slot1.inited = slot2
-		slot1 = slot0
-		slot2 = slot0
-		slot3 = slot2
-		slot2 = slot2.Finder
-		slot2 = slot2(slot3)
-		slot1.finder = slot2
-		slot1 = slot0
-		slot2 = slot1
-		slot2 = slot2.MANAGER_STATE
-		slot2 = slot2.IDLE
-		slot1.managerState = slot2
-		slot1 = slot2
-
-		slot1()
-	end
-
-	slot2(slot3, slot4, slot5, slot6)
+		uv2()
+	end)
 end
 
-slot0.Init = slot7
-
-function slot7(slot0)
-	return slot0.managerState == slot0.MANAGER_STATE.BUSY
+function slot0.isRuning(slot0)
+	return slot0.managerState == uv0.MANAGER_STATE.BUSY
 end
 
-slot0.isRuning = slot7
-
-function slot7(slot0, slot1)
-	slot2 = tf
-	slot3 = slot0._go
-	slot2 = slot2(slot3)
-	slot3 = slot2
-	slot2 = slot2.InverseTransformPoint
-	slot4 = slot1
-
-	return slot2(slot3, slot4)
+function slot0.transformPos(slot0, slot1)
+	return tf(slot0._go):InverseTransformPoint(slot1)
 end
 
-slot0.transformPos = slot7
-
-function slot7(slot0)
-	slot1 = pg
-	slot1 = slot1.MsgboxMgr
-	slot1 = slot1.GetInstance
-	slot1 = slot1()
-	slot1 = slot1._go
-	slot1 = slot1.activeSelf
-
-	if slot1 then
-		slot1 = false
-		slot2 = 1
-
-		return slot1, slot2
+function slot0.canPlay(slot0)
+	if pg.MsgboxMgr.GetInstance()._go.activeSelf then
+		return false, 1
 	end
 
-	slot1 = pg
-	slot1 = slot1.StoryMgr
-	slot1 = slot1.GetInstance
-	slot1 = slot1()
-	slot2 = slot1
-	slot1 = slot1.isActive
-	slot1 = slot1(slot2)
-
-	if slot1 then
-		slot1 = false
-		slot2 = 2
-
-		return slot1, slot2
+	if pg.NewStoryMgr.GetInstance():IsRunning() then
+		return false, 2
 	end
 
-	slot1 = slot0.managerState
-	slot2 = slot0
-	slot2 = slot2.MANAGER_STATE
-	slot2 = slot2.BUSY
-
-	if slot1 == slot2 then
-		slot1 = false
-		slot2 = 3
-
-		return slot1, slot2
+	if slot0.managerState == uv0.MANAGER_STATE.BUSY then
+		return false, 3
 	end
 
-	slot1 = true
-
-	return slot1
+	return true
 end
 
-slot0.canPlay = slot7
-
-function slot7(slot0, slot1)
-	slot2 = slot0.inited
-
-	if not slot2 then
+function slot0.onSceneAnimDone(slot0, slot1)
+	if not slot0.inited then
 		return
 	end
 
-	slot2 = table
-	slot2 = slot2.contains
-	slot3 = slot0.sceneStore
-	slot4 = slot1.view
-	slot2 = slot2(slot3, slot4)
-
-	if not slot2 then
-		slot2 = table
-		slot2 = slot2.insert
-		slot3 = slot0.sceneStore
-		slot4 = slot1.view
-
-		slot2(slot3, slot4)
+	if not table.contains(slot0.sceneStore, slot1.view) then
+		table.insert(slot0.sceneStore, slot1.view)
 	end
 
-	slot2 = slot0.sceneFunc
-
-	if slot2 then
-		slot2 = slot0.sceneFunc
-		slot3 = slot1.view
-
-		slot2(slot3)
+	if slot0.sceneFunc then
+		slot0.sceneFunc(slot1.view)
 	end
 end
 
-slot0.onSceneAnimDone = slot7
-
-function slot7(slot0, slot1)
-	slot2 = slot0.inited
-
-	if not slot2 then
+function slot0.onSceneExit(slot0, slot1)
+	if not slot0.inited then
 		return
 	end
 
-	slot2 = table
-	slot2 = slot2.contains
-	slot3 = slot0.sceneStore
-	slot4 = slot1.view
-	slot2 = slot2(slot3, slot4)
-
-	if slot2 then
-		slot2 = table
-		slot2 = slot2.removebyvalue
-		slot3 = slot0.sceneStore
-		slot4 = slot1.view
-
-		slot2(slot3, slot4)
+	if table.contains(slot0.sceneStore, slot1.view) then
+		table.removebyvalue(slot0.sceneStore, slot1.view)
 	end
 end
 
-slot0.onSceneExit = slot7
-
-function slot7(slot0, slot1)
-	slot2 = table
-	slot2 = slot2.contains
-	slot3 = slot0.sceneStore
-	slot4 = slot1
-
-	return slot2(slot3, slot4)
+function slot0.checkModuleOpen(slot0, slot1)
+	return table.contains(slot0.sceneStore, slot1)
 end
 
-slot0.checkModuleOpen = slot7
-
-function slot7(slot0, slot1)
-	slot2 = getProxy
-	slot3 = PlayerProxy
-	slot2 = slot2(slot3)
-
-	if slot2 then
-		slot4 = slot2
-		slot3 = slot2.getData
-		slot3 = slot3(slot4)
-		slot4 = slot3
-		slot3 = slot3.IsPlayed
-		slot5 = slot1
-
-		return slot3(slot4, slot5)
-	end
-
-	slot3 = false
-
-	return slot3
+function slot0.isPlayed(slot0, slot1)
+	return pg.NewStoryMgr.GetInstance():IsPlayed(slot1)
 end
 
-slot0.isPlayed = slot7
-
-function slot7(slot0, slot1, slot2, slot3, slot4)
-	slot5 = slot0
-	slot5 = slot5.ENABLE_GUIDE
-
-	if not slot5 then
+function slot0.play(slot0, slot1, slot2, slot3, slot4)
+	if not uv0.ENABLE_GUIDE then
 		return
 	end
 
-	slot6 = slot0
-	slot5 = slot0.canPlay
-	slot5, slot6 = slot5(slot6)
-	slot7 = print
-	slot8 = "play guide >>"
-	slot9 = slot1
-	slot10 = slot5
+	slot5, slot6 = slot0:canPlay()
 
-	slot7(slot8, slot9, slot10)
+	print("play guide >>", slot1, slot5)
 
 	slot0.erroCallback = slot4
 
 	if slot5 then
-		slot7 = require
-		slot8 = "GameCfg.guide.newguide.segments."
-		slot9 = slot1
-		slot8 = slot8 .. slot9
-		slot7 = slot7(slot8)
-		slot0.currentGuide = slot7
-		slot8 = slot0
-		slot7 = slot0.addDelegateInfo
+		slot0.currentGuide = require("GameCfg.guide.newguide.segments." .. slot1)
 
-		slot7(slot8)
-
-		slot7 = Clone
-		slot8 = slot0.currentGuide
-		slot8 = slot8.events
-		slot7 = slot7(slot8)
+		slot0:addDelegateInfo()
 
 		if slot2 then
-			slot8 = _
-			slot8 = slot8.select
-			slot9 = slot7
-
-			function slot10(slot0)
-				slot1 = slot0.code
-
-				if not slot1 then
-					slot1 = true
-
-					return slot1
+			slot0.curEvents = _.select(Clone(slot0.currentGuide.events), function (slot0)
+				if not slot0.code then
+					return true
+				elseif type(slot0.code) == "table" then
+					return _.any(uv0, function (slot0)
+						return table.contains(uv0.code, slot0)
+					end)
 				else
-					slot1 = type
-					slot2 = slot0.code
-					slot1 = slot1(slot2)
-
-					if slot1 == "table" then
-						slot1 = _
-						slot1 = slot1.any
-						slot2 = slot0
-
-						function slot3(slot0)
-							slot1 = table
-							slot1 = slot1.contains
-							slot2 = slot0
-							slot2 = slot2.code
-							slot3 = slot0
-
-							return slot1(slot2, slot3)
-						end
-
-						return slot1(slot2, slot3)
-					else
-						slot1 = table
-						slot1 = slot1.contains
-						slot2 = slot0
-						slot3 = slot0.code
-
-						return slot1(slot2, slot3)
-					end
+					return table.contains(uv0, slot0.code)
 				end
-			end
-
-			slot8 = slot8(slot9, slot10)
-			slot0.curEvents = slot8
+			end)
 		else
 			slot0.curEvents = slot7
 		end
@@ -488,985 +166,575 @@ function slot7(slot0, slot1, slot2, slot3, slot4)
 		slot0:prepareGuider(slot3)
 
 		slot8 = {}
-		slot9, slot10, slot11 = ipairs(slot0.curEvents or {})
 
-		for slot12, slot13 in slot9, slot10, slot11 do
-			slot14 = table
-			slot14 = slot14.insert
-			slot15 = slot8
+		for slot12, slot13 in ipairs(slot0.curEvents or {}) do
+			table.insert(slot8, function (slot0)
+				uv0:doCurrEvent(uv2, function ()
+					if uv0.managerState ~= uv1.MANAGER_STATE.IDLE then
+						uv0.scenes = {}
 
-			function slot16(slot0)
-				function slot1()
-					slot0 = slot0
-					slot0 = slot0.managerState
-					slot1 = slot1
-					slot1 = slot1.MANAGER_STATE
-					slot1 = slot1.IDLE
-
-					if slot0 ~= slot1 then
-						slot0 = slot0
-						slot1 = {}
-						slot0.scenes = slot1
-						slot0 = slot2
-
-						slot0()
+						uv2()
 					else
-						slot0 = slot0
-						slot0 = slot0.erroCallback
+						uv0.erroCallback()
 
-						slot0()
-
-						slot0 = slot0
-						slot1 = nil
-						slot0.erroCallback = slot1
+						uv0.erroCallback = nil
 					end
-				end
-
-				slot2 = slot0
-				slot3 = slot2
-				slot2 = slot2.doCurrEvent
-				slot4 = slot2
-				slot5 = slot1
-
-				slot2(slot3, slot4, slot5)
-			end
-
-			slot14(slot15, slot16)
+				end)
+			end)
 		end
 
-		slot9 = slot0
-		slot9 = slot9.MANAGER_STATE
-		slot9 = slot9.BUSY
-		slot0.managerState = slot9
-		slot9 = seriesAsync
-		slot10 = slot8
+		slot0.managerState = uv0.MANAGER_STATE.BUSY
 
-		function slot11()
-			slot0 = slot0
-			slot1 = slot0
-			slot0 = slot0.endGuider
-			slot2 = slot1
-
-			slot0(slot1, slot2)
-		end
-
-		slot9(slot10, slot11)
+		seriesAsync(slot8, function ()
+			uv0:endGuider(uv1)
+		end)
 	elseif slot3 then
-		slot7 = slot3
-
-		slot7()
+		slot3()
 	end
 end
 
-slot0.play = slot7
+function slot0.prepareGuider(slot0, slot1)
+	pg.m02:sendNotification(GAME.START_GUIDE)
+	slot0._go.transform:SetAsLastSibling()
+	slot0._go:SetActive(true)
+	SetActive(slot0.fingerTF, false)
 
-function slot7(slot0, slot1)
-	slot2 = pg
-	slot2 = slot2.m02
-	slot3 = slot2
-	slot2 = slot2.sendNotification
-	slot4 = GAME
-	slot4 = slot4.START_GUIDE
+	slot0.bgAlpha.alpha = 0.2
 
-	slot2(slot3, slot4)
-
-	slot2 = slot0._go
-	slot2 = slot2.transform
-	slot3 = slot2
-	slot2 = slot2.SetAsLastSibling
-
-	slot2(slot3)
-
-	slot2 = slot0._go
-	slot3 = slot2
-	slot2 = slot2.SetActive
-	slot4 = true
-
-	slot2(slot3, slot4)
-
-	slot2 = SetActive
-	slot3 = slot0.fingerTF
-	slot4 = false
-
-	slot2(slot3, slot4)
-
-	slot2 = slot0.bgAlpha
-	slot3 = 0.2
-	slot2.alpha = slot3
-	slot2 = slot0.uiLongPress
-	slot2 = slot2.onLongPressed
-	slot3 = slot2
-	slot2 = slot2.AddListener
-
-	function slot4()
-		slot0 = slot0
-		slot1 = slot0
-		slot0 = slot0.endGuider
-		slot2 = slot1
-
-		slot0(slot1, slot2)
-	end
-
-	slot2(slot3, slot4)
+	slot0.uiLongPress.onLongPressed:AddListener(function ()
+		uv0:endGuider(uv1)
+	end)
 end
 
-slot0.prepareGuider = slot7
-
-function slot7(slot0, slot1, slot2)
+function slot0.doCurrEvent(slot0, slot1, slot2)
 	function slot3(slot0)
-		slot1 = slot0
-		slot1 = slot1.waitScene
+		if uv0.waitScene and uv0.waitScene ~= "" and not table.contains(uv1.scenes, uv0.waitScene) then
+			function uv1.sceneFunc(slot0)
+				if uv0.waitScene == slot0 or table.contains(uv1.sceneStore, uv0.waitScene) then
+					uv1.sceneFunc = nil
 
-		if slot1 then
-			slot1 = slot0
-			slot1 = slot1.waitScene
-
-			if slot1 ~= "" then
-				slot1 = table
-				slot1 = slot1.contains
-				slot2 = slot1
-				slot2 = slot2.scenes
-				slot3 = slot0
-				slot3 = slot3.waitScene
-				slot1 = slot1(slot2, slot3)
-
-				if not slot1 then
-					slot1 = slot1
-
-					function slot2(slot0)
-						slot1 = slot0
-						slot1 = slot1.waitScene
-
-						if slot1 ~= slot0 then
-							slot1 = table
-							slot1 = slot1.contains
-							slot2 = slot1
-							slot2 = slot2.sceneStore
-							slot3 = slot0
-							slot3 = slot3.waitScene
-							slot1 = slot1(slot2, slot3)
-
-							if slot1 then
-								slot1 = slot1
-								slot2 = nil
-								slot1.sceneFunc = slot2
-								slot1 = slot2
-
-								slot1()
-							end
-						end
-					end
-
-					slot1.sceneFunc = slot2
-					slot1 = slot1
-					slot1 = slot1.sceneFunc
-
-					slot1()
+					uv2()
 				end
 			end
+
+			uv1.sceneFunc()
 		else
-			slot1 = slot0
-
-			slot1()
-		end
-	end
-
-	function slot4()
-		slot0 = slot0
-		slot0 = slot0.hideui
-
-		if slot0 then
-			slot0 = slot1
-			slot1 = slot0
-			slot0 = slot0.hideUI
-			slot2 = slot0
-			slot3 = slot2
-
-			slot0(slot1, slot2, slot3)
-		else
-			slot0 = slot0
-			slot0 = slot0.stories
-
-			if slot0 then
-				slot0 = slot1
-				slot1 = slot0
-				slot0 = slot0.playStories
-				slot2 = slot0
-				slot3 = slot2
-
-				slot0(slot1, slot2, slot3)
-			else
-				slot0 = slot0
-				slot0 = slot0.notifies
-
-				if slot0 then
-					slot0 = slot1
-					slot1 = slot0
-					slot0 = slot0.sendNotifies
-					slot2 = slot0
-					slot3 = slot2
-
-					slot0(slot1, slot2, slot3)
-				else
-					slot0 = slot0
-					slot0 = slot0.showSign
-
-					if slot0 then
-						slot0 = slot1
-						slot1 = slot0
-						slot0 = slot0.showSign
-						slot2 = slot0
-						slot2 = slot2.showSign
-						slot3 = slot2
-
-						slot0(slot1, slot2, slot3)
-					else
-						slot0 = slot0
-						slot0 = slot0.doNothing
-
-						if slot0 then
-							slot0 = slot2
-
-							slot0()
-						else
-							slot0 = slot1
-							slot1 = slot0
-							slot0 = slot0.findUI
-							slot2 = slot0
-							slot3 = slot2
-
-							slot0(slot1, slot2, slot3)
-						end
-					end
-				end
-			end
-		end
-	end
-
-	slot5 = slot1.delay
-
-	if slot5 ~= nil then
-		slot5 = Timer
-		slot5 = slot5.New
-
-		function slot6()
-			slot0 = slot0
-			slot1 = slot1
-
-			slot0(slot1)
-		end
-
-		slot7 = slot1.delay
-		slot8 = 1
-		slot5 = slot5(slot6, slot7, slot8)
-		slot0.delayTimer = slot5
-		slot5 = slot0.delayTimer
-		slot6 = slot5
-		slot5 = slot5.Start
-
-		slot5(slot6)
-	else
-		slot5 = slot3
-		slot6 = slot4
-
-		slot5(slot6)
-	end
-end
-
-slot0.doCurrEvent = slot7
-
-function slot7(slot0, slot1, slot2)
-	function slot3()
-		slot0 = slot0
-		slot0 = slot0.duration
-		slot1 = slot0
-		slot1 = slot1.pos
-		slot2 = slot0
-		slot2 = slot2.signType
-		slot3 = nil
-
-		if slot2 == 1 then
-			slot4 = slot1
-			slot3 = slot4.wTask
-		end
-
-		slot4 = setActive
-		slot5 = slot3
-		slot6 = true
-
-		slot4(slot5, slot6)
-
-		slot4 = type
-		slot5 = slot1
-		slot4 = slot4(slot5)
-
-		if slot4 == "string" then
-			if slot1 == "compassPos" then
-				slot4 = WorldGuider
-				slot4 = slot4.GetInstance
-				slot4 = slot4()
-				slot1 = slot4.tempGridPos
-			end
-		else
-			slot4 = type
-			slot5 = slot1
-			slot4 = slot4(slot5)
-
-			if slot4 == "table" then
-				slot4 = Vector3
-				slot4 = slot4.New
-				slot5 = slot1[1]
-				slot6 = slot1[2]
-				slot7 = slot1[3]
-				slot4 = slot4(slot5, slot6, slot7)
-				slot1 = slot4
-			end
-		end
-
-		slot4 = setLocalPosition
-		slot5 = slot3
-		slot6 = slot1
-
-		slot4(slot5, slot6)
-
-		slot4 = slot1
-		slot5 = Timer
-		slot5 = slot5.New
-
-		function slot6()
-			slot0 = setActive
-			slot1 = slot0
-			slot2 = false
-
-			slot0(slot1, slot2)
-
-			slot0 = slot1
-
 			slot0()
 		end
-
-		slot7 = slot0
-		slot8 = slot0
-		slot9 = 1
-		slot5 = slot5(slot6, slot7, slot8, slot9)
-		slot4.signTimer = slot5
-		slot4 = slot1
-		slot4 = slot4.signTimer
-		slot5 = slot4
-		slot4 = slot4.Start
-
-		slot4(slot5)
 	end
 
-	slot4 = slot3
-
-	slot4()
-end
-
-slot0.showSign = slot7
-
-function slot7(slot0, slot1, slot2)
-	slot3 = {}
-	slot4 = ipairs
-	slot5 = slot1.notifies
-	slot4, slot5, slot6 = slot4(slot5)
-
-	for slot7, slot8 in slot4, slot5, slot6 do
-		slot9 = table
-		slot9 = slot9.insert
-		slot10 = slot3
-
-		function slot11(slot0)
-			slot1 = pg
-			slot1 = slot1.m02
-			slot2 = slot1
-			slot1 = slot1.sendNotification
-			slot3 = slot0
-			slot3 = slot3.notify
-			slot4 = slot0
-			slot4 = slot4.body
-
-			slot1(slot2, slot3, slot4)
-
-			slot1 = slot0
-
-			slot1()
+	function slot4()
+		if uv0.hideui then
+			uv1:hideUI(uv0, uv2)
+		elseif uv0.stories then
+			uv1:playStories(uv0, uv2)
+		elseif uv0.notifies then
+			uv1:sendNotifies(uv0, uv2)
+		elseif uv0.showSign then
+			uv1:showSign(uv0, uv2)
+		elseif uv0.doFunc then
+			uv0.doFunc()
+			uv2()
+		elseif uv0.doNothing then
+			uv2()
+		else
+			uv1:findUI(uv0, uv2)
 		end
-
-		slot9(slot10, slot11)
 	end
 
-	slot4 = seriesAsync
-	slot5 = slot3
+	if slot1.delay ~= nil then
+		slot0.delayTimer = Timer.New(function ()
+			uv0(uv1)
+		end, slot1.delay, 1)
 
-	function slot6()
-		slot0 = slot0
-		slot1 = slot0
-		slot0 = slot0.finishCurrEvent
-		slot2 = slot1
-		slot3 = slot2
-
-		slot0(slot1, slot2, slot3)
+		slot0.delayTimer:Start()
+	else
+		slot3(slot4)
 	end
-
-	slot4(slot5, slot6)
 end
 
-slot0.sendNotifies = slot7
+function slot0.showSign(slot0, slot1, slot2)
+	slot3 = slot1.showSign
 
-function slot7(slot0, slot1, slot2)
-	slot3 = {}
-	slot4 = ipairs
-	slot5 = slot1.stories
-	slot4, slot5, slot6 = slot4(slot5)
+	function ()
+		slot0 = uv0.type
+		slot1 = uv0.duration
+		slot2 = uv0.simultaneously
+		slot3 = uv0.clickUI
+		slot4 = uv0.clickArea
+		slot5 = uv0.longPress
+		slot7 = {}
 
-	for slot7, slot8 in slot4, slot5, slot6 do
-		slot9 = table
-		slot9 = slot9.insert
-		slot10 = slot3
+		for slot11, slot12 in ipairs(uv0.signList) do
+			slot13 = slot12.signType
+			uv1.curSignList[#uv1.curSignList + 1] = {
+				signType = slot13,
+				sign = uv1:getSign(slot13, slot12)
+			}
 
-		function slot11(slot0)
-			slot1 = pg
-			slot1 = slot1.StoryMgr
-			slot1 = slot1.GetInstance
-			slot1 = slot1()
-			slot2 = slot1
-			slot1 = slot1.Play
-			slot3 = slot0
-			slot4 = slot0
-			slot5 = true
-
-			slot1(slot2, slot3, slot4, slot5)
-		end
-
-		slot9(slot10, slot11)
-	end
-
-	slot4 = seriesAsync
-	slot5 = slot3
-
-	function slot6()
-		slot0 = slot0
-		slot1 = slot0
-		slot0 = slot0.finishCurrEvent
-		slot2 = slot1
-		slot3 = slot2
-
-		slot0(slot1, slot2, slot3)
-	end
-
-	slot4(slot5, slot6)
-end
-
-slot0.playStories = slot7
-
-function slot7(slot0, slot1, slot2)
-	slot3 = {}
-	slot4 = ipairs
-	slot5 = slot1.hideui
-	slot4, slot5, slot6 = slot4(slot5)
-
-	for slot7, slot8 in slot4, slot5, slot6 do
-		slot9 = table
-		slot9 = slot9.insert
-		slot10 = slot3
-
-		function slot11(slot0)
-			slot1 = slot0
-			slot1 = slot1.finder
-			slot2 = slot1
-			slot1 = slot1.SearchTimely
-			slot3 = {}
-			slot4 = slot1
-			slot4 = slot4.path
-			slot3.path = slot4
-			slot4 = slot1
-			slot4 = slot4.delay
-			slot3.delay = slot4
-			slot4 = slot1
-			slot4 = slot4.pathIndex
-			slot3.pathIndex = slot4
-
-			function slot4(slot0)
-				slot1 = SetActive
-				slot2 = slot0
-				slot3 = slot0
-				slot3 = slot3.ishide
-				slot3 = not slot3
-
-				slot1(slot2, slot3)
-
-				slot1 = slot1
-
-				slot1()
+			if type(slot12.pos) == "string" then
+				if slot14 == "useCachePos" then
+					slot14 = WorldGuider.GetInstance():GetTempGridPos(slot12.cachedIndex)
+				end
+			elseif type(slot14) == "table" then
+				slot14 = Vector3.New(slot14[1], slot14[2], slot14[3])
 			end
 
-			slot3.found = slot4
-
-			function slot4()
-				slot0 = slot0
-				slot1 = slot0
-				slot0 = slot0.endGuider
-				slot2 = slot1
-
-				slot0(slot1, slot2)
+			if slot14 then
+				setLocalPosition(slot16, slot14)
 			end
 
-			slot3.notFound = slot4
-
-			slot1(slot2, slot3)
+			slot7[#slot7 + 1] = slot17
 		end
 
-		slot9(slot10, slot11)
-	end
+		function recycle_handler()
+			for slot3, slot4 in ipairs(uv0) do
+				slot5 = uv1.curSignList[slot4]
 
-	slot4 = parallelAsync
-	slot5 = slot3
+				uv1:recycleSign(slot5.signType, slot5.sign)
 
-	function slot6()
-		slot0 = slot0
-		slot1 = slot0
-		slot0 = slot0.finishCurrEvent
-		slot2 = slot1
-		slot3 = slot2
+				uv1.curSignList[slot4] = nil
+			end
 
-		slot0(slot1, slot2, slot3)
-	end
-
-	slot4(slot5, slot6)
-end
-
-slot0.hideUI = slot7
-
-function slot7(slot0, slot1, slot2)
-	slot3 = true
-	slot4 = {}
-
-	function slot5(slot0)
-		slot1 = slot0
-		slot1 = slot1.baseui
-
-		if not slot1 then
-			slot1 = slot0
-
-			slot1()
-
-			return
+			if not uv2 then
+				uv1:finishCurrEvent(uv3, uv4)
+			end
 		end
 
-		slot1 = slot1
-		slot1 = slot1.finder
-		slot2 = slot1
-		slot1 = slot1.Search
-		slot3 = {}
-		slot4 = slot0
-		slot4 = slot4.baseui
-		slot4 = slot4.path
-		slot3.path = slot4
-		slot4 = slot0
-		slot4 = slot4.baseui
-		slot4 = slot4.delay
-		slot3.delay = slot4
-		slot4 = slot0
-		slot4 = slot4.baseui
-		slot4 = slot4.pathIndex
-		slot3.pathIndex = slot4
-		slot4 = slot0
-		slot4 = slot4.baseui
-		slot4 = slot4.conditionData
-		slot3.conditionData = slot4
-		slot3.found = slot0
+		slot9 = uv1.curSignList[slot7[1]].sign
 
-		function slot4()
-			slot0 = slot0
-			slot1 = slot0
-			slot0 = slot0.endGuider
-			slot2 = slot1
+		if slot0 == 2 then
+			uv1:updateUIStyle(uv2, false, nil)
 
-			slot0(slot1, slot2)
-		end
+			slot10 = findTF(slot9, "btn")
 
-		slot3.notFound = slot4
+			if slot3 then
+				setActive(slot9, false)
+				uv1.finder:Search({
+					path = slot3.path,
+					delay = slot3.delay,
+					pathIndex = slot3.pathIndex,
+					conditionData = slot3.conditionData,
+					found = function (slot0)
+						uv0.cloneTarget = uv0:cloneGO(go(slot0), uv0._tf, uv1)
 
-		slot1(slot2, slot3)
-	end
+						setActive(uv0.cloneTarget, false)
 
-	slot4[1] = slot5
+						uv2.localPosition = uv0.cloneTarget.localPosition - Vector3(uv0.cloneTarget.sizeDelta.x * (uv0.cloneTarget.pivot.x - 0.5), uv0.cloneTarget.sizeDelta.y * (uv0.cloneTarget.pivot.y - 0.5), 0)
 
-	function slot5(slot0)
-		slot1 = slot0
-		slot1 = slot1.ui
+						if uv1.sizeDeltaPlus then
+							uv3.sizeDelta = uv0.cloneTarget.sizeDelta + Vector2(uv1.sizeDeltaPlus[1], uv1.sizeDeltaPlus[2])
+						else
+							uv3.sizeDelta = uv0.cloneTarget.sizeDelta
+						end
 
-		if not slot1 then
-			slot1 = slot0
+						setActive(uv2, true)
+					end,
+					notFound = function ()
+						uv0:endGuider(uv1)
+					end
+				})
+			elseif slot4 then
+				slot10.sizeDelta = Vector2.New(slot4[1], slot4[2])
+			end
 
-			slot1()
+			slot11 = GetOrAddComponent(slot10, typeof(UILongPressTrigger))
 
-			return
-		end
+			slot11.onLongPressed:RemoveAllListeners()
+			slot11.onReleased:RemoveAllListeners()
 
-		slot1 = false
-		slot1 = slot2
-		slot1 = slot1.finder
-		slot2 = slot1
-		slot1 = slot1.Search
-		slot3 = {}
-		slot4 = slot0
-		slot4 = slot4.ui
-		slot4 = slot4.path
-		slot3.path = slot4
-		slot4 = slot0
-		slot4 = slot4.ui
-		slot4 = slot4.delay
-		slot3.delay = slot4
-		slot4 = slot0
-		slot4 = slot4.ui
-		slot4 = slot4.pathIndex
-		slot3.pathIndex = slot4
-		slot4 = slot0
-		slot4 = slot4.ui
-		slot4 = slot4.conditionData
-		slot3.conditionData = slot4
-
-		function slot4(slot0)
-			slot1 = Canvas
-			slot1 = slot1.ForceUpdateCanvases
-
-			slot1()
-
-			slot1 = slot0
-			slot2 = slot0
-			slot3 = slot2
-			slot2 = slot2.cloneGO
-			slot4 = slot0.gameObject
-			slot5 = slot0
-			slot5 = slot5._go
-			slot5 = slot5.transform
-			slot6 = slot1
-			slot6 = slot6.ui
-			slot2 = slot2(slot3, slot4, slot5, slot6)
-			slot1.cloneTarget = slot2
-			slot1 = slot0
-			slot2 = slot1
-			slot1 = slot1.addUIEventTrigger
-			slot3 = slot0
-			slot4 = slot1
-			slot5 = slot2
-
-			slot1(slot2, slot3, slot4, slot5)
-
-			slot1 = slot0
-			slot2 = slot1
-			slot1 = slot1.setFinger
-			slot3 = slot0
-			slot4 = slot1
-			slot4 = slot4.ui
-
-			slot1(slot2, slot3, slot4)
-
-			slot1 = slot3
-
-			slot1()
-		end
-
-		slot3.found = slot4
-
-		function slot4()
-			slot0 = slot0
-			slot0 = slot0.ui
-			slot0 = slot0.notfoundSkip
-
-			if slot0 then
-				slot0 = slot1
-				slot1 = slot0
-				slot0 = slot0.finishCurrEvent
-				slot2 = slot0
-				slot3 = slot2
-
-				slot0(slot1, slot2, slot3)
+			if slot5 == 1 then
+				slot11.onLongPressed:AddListener(function ()
+					recycle_handler()
+				end)
 			else
-				slot0 = slot1
-				slot1 = slot0
-				slot0 = slot0.endGuider
-				slot2 = slot2
-
-				slot0(slot1, slot2)
+				slot11.onReleased:AddListener(function ()
+					recycle_handler()
+				end)
 			end
+
+			return
 		end
 
-		slot3.notFound = slot4
+		if slot0 == 3 then
+			slot9.sizeDelta = Vector2.New(slot4[1], slot4[2])
 
-		slot1(slot2, slot3)
-	end
+			uv1:updateUIStyle(uv2, true, uv3)
+		else
+			if slot2 then
+				uv1:finishCurrEvent(uv2, uv3)
+			end
 
-	slot4[2] = slot5
-	slot5 = seriesAsync
-	slot6 = slot4
+			if slot1 ~= nil then
+				uv1.curSignList[slot8].signTimer = Timer.New(function ()
+					recycle_handler()
+				end, slot1, 1)
 
-	function slot7()
-		slot0 = slot0
-		slot1 = slot0
-		slot0 = slot0.updateUIStyle
-		slot2 = slot1
-		slot3 = slot2
-		slot4 = slot3
-
-		slot0(slot1, slot2, slot3, slot4)
-	end
-
-	slot5(slot6, slot7)
+				uv1.curSignList[slot8].signTimer:Start()
+			end
+		end
+	end()
 end
 
-slot0.findUI = slot7
+function slot0.getSign(slot0, slot1, slot2)
+	slot3, slot4 = nil
+	slot5 = slot2.atlasName
+	slot6 = slot2.fileName
 
-function slot7(slot0, slot1, slot2, slot3)
-	slot0.bgAlpha.alpha = slot1.alpha or 0.2
-	slot4 = SetActive
-	slot5 = slot0.guiderTF
-	slot6 = slot1.style
-
-	slot4(slot5, slot6)
-
-	slot4 = slot1.style
-
-	if slot4 then
-		slot5 = slot0
-		slot4 = slot0.updateContent
-		slot6 = slot1
-
-		slot4(slot5, slot6)
-
-		slot4 = slot1.style
-		slot4 = slot4.ui
-
-		if slot4 then
-			slot4 = slot0.finder
-			slot5 = slot4
-			slot4 = slot4.Search
-			slot6 = {}
-			slot7 = slot1.style
-			slot7 = slot7.ui
-			slot7 = slot7.path
-			slot6.path = slot7
-			slot7 = slot1.style
-			slot7 = slot7.ui
-			slot7 = slot7.delay
-			slot6.delay = slot7
-			slot7 = slot1.style
-			slot7 = slot7.ui
-			slot7 = slot7.pathIndex
-			slot6.pathIndex = slot7
-
-			function slot7(slot0)
-				slot1 = slot0
-				slot2 = slot0
-				slot3 = slot2
-				slot2 = slot2.cloneGO
-				slot4 = go
-				slot5 = slot0
-				slot4 = slot4(slot5)
-				slot5 = slot0
-				slot5 = slot5._tf
-				slot6 = slot1
-				slot6 = slot6.style
-				slot6 = slot6.ui
-				slot2 = slot2(slot3, slot4, slot5, slot6)
-				slot1.cloneTarget = slot2
-			end
-
-			slot6.found = slot7
-
-			function slot7()
-				slot0 = slot0
-				slot1 = slot0
-				slot0 = slot0.endGuider
-
-				slot0(slot1)
-			end
-
-			slot6.notFound = slot7
-
-			slot4(slot5, slot6)
+	if slot0.signPool[slot1] ~= nil and #slot0.signPool[slot1] > 0 then
+		slot3 = table.remove(slot0.signPool[slot1], #slot0.signPool[slot1])
+	else
+		if slot1 == 1 or slot1 == 6 then
+			slot4 = findTF(slot0._signRes, "wTask")
+		elseif slot1 == 2 then
+			slot4 = findTF(slot0._signRes, "wDanger")
+		elseif slot1 == 3 then
+			slot4 = findTF(slot0._signRes, "wForbidden")
+		elseif slot1 == 4 then
+			slot4 = findTF(slot0._signRes, "wClickArea")
+		elseif slot1 == 5 then
+			slot4 = findTF(slot0._signRes, "wShowArea")
 		end
+
+		slot3 = tf(Instantiate(slot4))
 	end
 
-	slot4 = onButton
-	slot5 = slot0
-	slot6 = slot0._go
-
-	function slot7()
-		slot0 = slot0
-		slot1 = slot0
-		slot0 = slot0.finishCurrEvent
-		slot2 = slot1
-		slot3 = slot2
-
-		slot0(slot1, slot2, slot3)
-
-		slot0 = slot1
-		slot0 = slot0.style
-
-		if slot0 then
-			slot0 = slot1
-			slot0 = slot0.style
-			slot0 = slot0.scene
-
-			if slot0 then
-				slot0 = pg
-				slot0 = slot0.m02
-				slot1 = slot0
-				slot0 = slot0.sendNotification
-				slot2 = GAME
-				slot2 = slot2.GO_SCENE
-				slot3 = SCENE
-				slot4 = slot1
-				slot4 = slot4.style
-				slot4 = slot4.scene
-				slot3 = slot3[slot4]
-
-				slot0(slot1, slot2, slot3)
-			end
-		end
+	if slot1 == 6 then
+		setImageSprite(findTF(slot3, "shadow"), LoadSprite(slot5, slot6), true)
 	end
 
-	slot8 = SFX_PANEL
+	setActive(slot3, true)
+	setParent(slot3, slot0._go.transform)
 
-	slot4(slot5, slot6, slot7, slot8)
+	slot3.eulerAngles = Vector3(0, 0, 0)
+	slot3.localScale = Vector3.one
 
-	slot4 = setButtonEnabled
-	slot5 = slot0._go
-	slot6 = slot2
-
-	slot4(slot5, slot6)
+	return slot3
 end
 
-slot0.updateUIStyle = slot7
+function slot0.recycleSign(slot0, slot1, slot2)
+	if slot0.signPool[slot1] == nil then
+		slot0.signPool[slot1] = {}
+	end
 
-function slot7(slot0, slot1)
-	slot3 = slot1.style or {}.dir or 1
-	slot5 = slot1.style or .posX or 0
-	slot6 = slot1.style or .posY or 0
-
-	SetActive(slot0.styleTF1, (slot1.style or .mode or 1) == slot0.MODE1)
-	SetActive(slot0.styleTF2, (slot1.style or .mode or 1) == slot0.MODE2)
-
-	slot7 = nil
-	slot8 = slot0.MODE1
-
-	if slot4 == slot8 then
-		slot7 = slot0.styleTF1
+	if #slot0.signPool[slot1] > 3 or slot1 == 6 then
+		Destroy(slot2)
 	else
-		slot8 = slot0
-		slot8 = slot8.MODE2
-
-		if slot4 == slot8 then
-			slot7 = slot0.styleTF2
-		end
+		table.insert(slot3, slot2)
+		setParent(slot2, slot0._signRes)
+		setActive(slot2, false)
 	end
-
-	if slot3 == 1 then
-		slot8 = Vector3
-		slot9 = 1
-		slot10 = 1
-		slot11 = 1
-		slot8 = slot8(slot9, slot10, slot11)
-
-		if not slot8 then
-			slot8 = Vector3
-			slot9 = -1
-			slot10 = 1
-			slot11 = 1
-			slot8 = slot8(slot9, slot10, slot11)
-		end
-	end
-
-	slot7.localScale = slot8
-	slot9 = slot7:Find("content")
-	slot9.localScale = slot8
-
-	setText(slot9, HXSet.hxLan(slot10))
-
-	slot12 = #slot9:GetComponent(typeof(Text)).text
-	slot13 = CHAT_POP_STR_LEN_MIDDLE
-
-	if slot13 < slot12 then
-		slot12 = TextAnchor
-		slot12 = slot12.MiddleLeft
-		slot11.alignment = slot12
-	else
-		slot12 = TextAnchor
-		slot12 = slot12.MiddleCenter
-		slot11.alignment = slot12
-	end
-
-	slot12 = slot11.preferredHeight
-	slot12 = slot12 + 120
-	slot13 = slot0
-	slot13 = slot13.MODE2
-
-	if slot4 == slot13 then
-		slot13 = slot0.initChatBgH
-
-		if slot13 < slot12 then
-			slot13 = Vector2
-			slot13 = slot13.New
-			slot14 = slot7.sizeDelta
-			slot14 = slot14.x
-			slot15 = slot12
-			slot13 = slot13(slot14, slot15)
-			slot7.sizeDelta = slot13
-		end
-	else
-		slot13 = Vector2
-		slot13 = slot13.New
-		slot14 = slot7.sizeDelta
-		slot14 = slot14.x
-		slot15 = slot0.initChatBgH
-		slot13 = slot13(slot14, slot15)
-		slot7.sizeDelta = slot13
-	end
-
-	slot13 = setAnchoredPosition
-	slot14 = slot0.guiderTF
-	slot15 = Vector2
-	slot16 = slot5
-	slot17 = slot6
-
-	slot13(slot14, slot15(slot16, slot17))
 end
 
-slot0.updateContent = slot7
+function slot0.destroyAllSign(slot0)
+	for slot4, slot5 in ipairs(slot0.curSignList) do
+		if slot5.signTimer ~= nil then
+			slot5.signTimer:Stop()
 
-function slot7(slot0)
-	slot1 = {}
+			slot5.signTimer = nil
+		end
 
-	function slot2(slot0, slot1)
-		slot2 = -1
-		slot3 = 1
-		slot4 = slot0.childCount
-		slot5 = 1
+		slot0:recycleSign(slot5.signType, slot5.sign)
 
-		for slot6 = slot3, slot4, slot5 do
-			slot8 = slot0
-			slot7 = slot0.GetChild
-			slot9 = slot6 - 1
-			slot7 = slot7(slot8, slot9)
-			slot9 = slot7
-			slot8 = slot7.GetComponent
-			slot10 = typeof
-			slot11 = LayoutElement
-			slot8 = slot8(slot9, slot10(slot11))
+		slot0.curSignList[slot4] = nil
+	end
+end
 
-			if slot8 then
-				slot9 = slot8.ignoreLayout
+function slot0.sendNotifies(slot0, slot1, slot2)
+	slot3 = {}
 
-				if not slot9 then
-					slot2 = slot2 + 1
+	for slot7, slot8 in ipairs(slot1.notifies) do
+		table.insert(slot3, function (slot0)
+			pg.m02:sendNotification(uv0.notify, uv0.body)
+			slot0()
+		end)
+	end
 
-					if slot2 == slot1 then
-						break
+	seriesAsync(slot3, function ()
+		uv0:finishCurrEvent(uv1, uv2)
+	end)
+end
+
+function slot0.playStories(slot0, slot1, slot2)
+	slot3 = {}
+
+	for slot7, slot8 in ipairs(slot1.stories) do
+		table.insert(slot3, function (slot0)
+			pg.NewStoryMgr.GetInstance():Play(uv0, slot0, true)
+		end)
+	end
+
+	seriesAsync(slot3, function ()
+		uv0:finishCurrEvent(uv1, uv2)
+		pg.m02:sendNotification(GAME.START_GUIDE)
+	end)
+end
+
+function slot0.hideUI(slot0, slot1, slot2)
+	slot3 = {}
+
+	for slot7, slot8 in ipairs(slot1.hideui) do
+		table.insert(slot3, function (slot0)
+			uv0.finder:SearchTimely({
+				path = uv1.path,
+				delay = uv1.delay,
+				pathIndex = uv1.pathIndex,
+				found = function (slot0)
+					SetActive(slot0, not uv0.ishide)
+					uv1()
+				end,
+				notFound = function ()
+					uv0:endGuider(uv1)
+				end
+			})
+		end)
+	end
+
+	parallelAsync(slot3, function ()
+		uv0:finishCurrEvent(uv1, uv2)
+	end)
+end
+
+function slot0.findUI(slot0, slot1, slot2)
+	slot3 = true
+
+	seriesAsync({
+		function (slot0)
+			if not uv0.baseui then
+				slot0()
+
+				return
+			end
+
+			uv1.finder:Search({
+				path = uv0.baseui.path,
+				delay = uv0.baseui.delay,
+				pathIndex = uv0.baseui.pathIndex,
+				conditionData = uv0.baseui.conditionData,
+				found = slot0,
+				notFound = function ()
+					uv0:endGuider(uv1)
+				end
+			})
+		end,
+		function (slot0)
+			if not uv0.spriteui then
+				slot0()
+
+				return
+			end
+
+			uv1:CheckSprite(uv0.spriteui, slot0, uv2)
+		end,
+		function (slot0)
+			if not uv0.ui then
+				slot0()
+
+				return
+			end
+
+			uv1 = false
+
+			uv2.finder:Search({
+				path = uv0.ui.path,
+				delay = uv0.ui.delay,
+				pathIndex = uv0.ui.pathIndex,
+				conditionData = uv0.ui.conditionData,
+				found = function (slot0)
+					Canvas.ForceUpdateCanvases()
+
+					uv0.cloneTarget = uv0:cloneGO(slot0.gameObject, uv0._go.transform, uv1.ui)
+
+					uv0:addUIEventTrigger(slot0, uv1, uv2)
+					uv0:setFinger(slot0, uv1.ui)
+					uv3()
+				end,
+				notFound = function ()
+					if uv0.ui.notfoundSkip then
+						uv1:finishCurrEvent(uv0, uv2)
+					else
+						uv1:endGuider(uv2)
 					end
 				end
+			})
+		end
+	}, function ()
+		uv0:updateUIStyle(uv1, uv2, uv3)
+	end)
+end
+
+function slot0.CheckSprite(slot0, slot1, slot2, slot3)
+	slot4, slot5 = nil
+	slot6 = 0
+	slot7 = 10
+
+	function slot4()
+		uv0 = uv0 + 1
+
+		uv1:RemoveCheckSpriteTimer()
+
+		if IsNil(uv2:GetComponent(typeof(Image)).sprite) or uv3.defaultName and slot0.sprite.name == uv3.defaultName then
+			if uv4 <= uv0 then
+				uv5()
+
+				return
+			end
+
+			uv1.srpiteTimer = Timer.New(uv6, 0.5, 1)
+
+			uv1.srpiteTimer:Start()
+		else
+			uv5()
+		end
+	end
+
+	slot0.finder:Search({
+		path = slot1.path,
+		delay = slot1.delay,
+		pathIndex = slot1.pathIndex,
+		conditionData = slot1.conditionData,
+		found = function (slot0)
+			if uv0.childPath then
+				uv1 = slot0:Find(uv0.childPath)
+			else
+				uv1 = slot0
+			end
+
+			uv2()
+		end,
+		notFound = function ()
+			uv0:endGuider(uv1)
+		end
+	})
+end
+
+function slot0.RemoveCheckSpriteTimer(slot0)
+	if slot0.srpiteTimer then
+		slot0.srpiteTimer:Stop()
+
+		slot0.srpiteTimer = nil
+	end
+end
+
+function slot0.SetHighLightLine(slot0, slot1)
+	slot2 = slot0._tf:InverseTransformPoint(slot1.position)
+	slot0.highLightLine = cloneTplTo(findTF(slot0._signRes, "wShowArea"), slot0._tf)
+	slot3 = 15
+	slot0.highLightLine.sizeDelta = Vector2(slot1.sizeDelta.x + slot3, slot1.sizeDelta.y + slot3)
+	slot0.highLightLine.pivot = slot1.pivot
+	slot0.highLightLine.localPosition = Vector3(slot2.x, slot2.y, 0) + Vector3((slot1.pivot.x - 0.5) * slot3, (slot1.pivot.y - 0.5) * slot3, 0)
+end
+
+function slot0.updateUIStyle(slot0, slot1, slot2, slot3)
+	slot0.bgAlpha.alpha = slot1.alpha or 0.2
+
+	SetActive(slot0.guiderTF, slot1.style)
+
+	if slot1.style then
+		slot0:updateContent(slot1)
+
+		if slot1.style.ui then
+			slot0.finder:Search({
+				path = slot1.style.ui.path,
+				delay = slot1.style.ui.delay,
+				pathIndex = slot1.style.ui.pathIndex,
+				found = function (slot0)
+					if uv0.style.ui.lineMode then
+						uv1:SetHighLightLine(slot0)
+					else
+						uv1.cloneTarget = uv1:cloneGO(go(slot0), uv1._tf, uv0.style.ui)
+					end
+				end,
+				notFound = function ()
+					uv0:endGuider()
+				end
+			})
+		end
+	end
+
+	onButton(slot0, slot0._go, function ()
+		uv0:finishCurrEvent(uv1, uv2)
+
+		if uv1.style and uv1.style.scene then
+			pg.m02:sendNotification(GAME.GO_SCENE, SCENE[uv1.style.scene])
+		end
+	end, SFX_PANEL)
+	setButtonEnabled(slot0._go, slot2)
+end
+
+function slot0.updateContent(slot0, slot1)
+	slot2 = slot1.style or {}
+	slot3 = slot2.dir or 1
+	slot4 = slot2.mode or 1
+	slot5 = slot2.posX or 0
+	slot6 = slot2.posY or 0
+
+	SetActive(slot0.styleTF1, slot4 == uv0.MODE1)
+	SetActive(slot0.styleTF2, slot4 == uv0.MODE2)
+
+	slot7, slot8 = nil
+
+	if slot4 == uv0.MODE1 then
+		slot7 = slot0.styleTF1
+		slot8 = Vector3(18, -31, 0)
+	elseif slot4 == uv0.MODE2 then
+		slot7 = slot0.styleTF2
+		slot8 = Vector3(-27, 143, 0)
+	end
+
+	slot9 = slot7:Find("char"):GetComponent(typeof(Image))
+	slot9.sprite = slot0.chars[slot2.char and slot2.char == "1" and 2 or 1]
+
+	slot9:SetNativeSize()
+
+	slot9.material = slot2.char and slot0.material
+	slot9.gameObject.transform.pivot = getSpritePivot(slot10)
+
+	setAnchoredPosition(slot9.gameObject.transform, {
+		x = slot8.x,
+		y = slot8.y
+	})
+
+	slot11 = slot3 == 1 and Vector3(1, 1, 1) or Vector3(-1, 1, 1)
+	slot7.localScale = slot11
+	slot7:Find("content").localScale = slot11
+
+	setText(slot12, HXSet.hxLan(slot2.text or ""))
+
+	if CHAT_POP_STR_LEN_MIDDLE < #slot12:GetComponent(typeof(Text)).text then
+		slot14.alignment = TextAnchor.MiddleLeft
+	else
+		slot14.alignment = TextAnchor.MiddleCenter
+	end
+
+	slot15 = slot14.preferredHeight + 120
+
+	if slot4 == uv0.MODE2 and slot0.initChatBgH < slot15 then
+		slot7.sizeDelta = Vector2.New(slot7.sizeDelta.x, slot15)
+	else
+		slot7.sizeDelta = Vector2.New(slot7.sizeDelta.x, slot0.initChatBgH)
+	end
+
+	if slot4 == uv0.MODE1 then
+		slot16 = slot2.hand or {
+			w = 0,
+			x = -267,
+			y = -96
+		}
+		slot7:Find("hand").localPosition = Vector3(slot16.x, slot16.y, 0)
+		slot7:Find("hand").eulerAngles = Vector3(0, 0, slot16.w)
+	end
+
+	setAnchoredPosition(slot0.guiderTF, Vector2(slot5, slot6))
+end
+
+function slot0.Finder(slot0)
+	function slot2(slot0, slot1)
+		slot2 = -1
+
+		for slot6 = 1, slot0.childCount do
+			if (not slot0:GetChild(slot6 - 1):GetComponent(typeof(LayoutElement)) or not slot8.ignoreLayout) and slot2 + 1 == slot1 then
+				break
 			end
 		end
 
@@ -1474,1150 +742,437 @@ function slot7(slot0)
 	end
 
 	function slot3(slot0, slot1)
-		slot2 = GameObject
-		slot2 = slot2.Find
-		slot3 = slot0
-		slot2 = slot2(slot3)
-		slot3 = IsNil
-		slot4 = slot2
-		slot3 = slot3(slot4)
-
-		if not slot3 then
-			if slot1 and slot1 ~= -1 then
-				slot3 = slot0
-				slot4 = tf
-				slot5 = slot2
-				slot4 = slot4(slot5)
-				slot5 = slot1
-				slot3 = slot3(slot4, slot5)
-				slot4 = 0
-
-				if slot3 >= slot4 then
-					slot4 = tf
-					slot5 = slot2
-					slot4 = slot4(slot5)
-					slot4 = slot4.childCount
-
-					if slot3 < slot4 then
-						slot4 = tf
-						slot5 = slot2
-						slot4 = slot4(slot5)
-						slot5 = slot4
-						slot4 = slot4.GetChild
-						slot6 = slot3
-						slot4 = slot4(slot5, slot6)
-						slot5 = IsNil
-						slot6 = slot4
-						slot5 = slot5(slot6)
-
-						if not slot5 then
-							return slot4
-						end
+		if not IsNil(GameObject.Find(slot0)) then
+			if slot1 and slot1 == -999 then
+				for slot7 = 0, tf(slot2).childCount do
+					if not IsNil(tf(slot2):GetChild(slot7)) and go(slot8).activeInHierarchy then
+						return slot8
 					end
 				end
+			elseif slot1 and slot1 ~= -1 then
+				if uv0(tf(slot2), slot1) >= 0 and slot3 < tf(slot2).childCount and not IsNil(tf(slot2):GetChild(slot3)) then
+					return slot4
+				end
 			else
-				slot3 = tf
-				slot4 = slot2
-
-				return slot3(slot4)
+				return tf(slot2)
 			end
 		end
 	end
 
 	function slot4(slot0, slot1)
-		slot2 = slot0
-		slot3 = slot0
-		slot4 = -1
-		slot2 = slot2(slot3, slot4)
-
-		if slot2 ~= nil then
-			slot3 = slot2.childCount
-			slot3 = slot3 - 1
-			slot4 = 0
-			slot5 = slot3
-			slot6 = 1
-
-			for slot7 = slot4, slot5, slot6 do
-				slot9 = slot2
-				slot8 = slot2.GetChild
-				slot10 = slot7
-				slot8 = slot8(slot9, slot10)
-				slot10 = slot8
-				slot9 = slot8.GetChild
-				slot11 = 0
-				slot9 = slot9(slot10, slot11)
-				slot10 = table
-				slot10 = slot10.contains
-				slot11 = slot1
-				slot12 = slot9.name
-				slot10 = slot10(slot11, slot12)
-
-				if slot10 then
+		if uv0(slot0, -1) ~= nil then
+			for slot6, slot7 in ipairs(slot1) do
+				if slot2:Find(slot7) then
 					return slot8
 				end
 			end
 		end
 	end
 
-	function slot5(slot0, slot1)
-		slot0:Clear()
+	return {
+		Search = function (slot0, slot1)
+			slot0:Clear()
 
-		slot3 = 20
-		slot4 = 0
-		slot5 = slot1.delay or 0
-		slot0.findUITimer = Timer.New(function ()
-			slot0 = slot0 + slot1
+			slot3 = 20
+			slot4 = 0
+			slot5 = slot1.delay or 0
+			slot0.findUITimer = Timer.New(function ()
+				uv0 = uv0 + uv1
 
-			if pg.UIMgr.GetInstance():OnLoading() then
-				return
-			end
-
-			if slot2 < slot0 then
-				if slot3 == 0 then
-					print("not found ui >>", slot4.path)
-					slot5:Clear()
-					slot4.notFound()
-
+				if pg.UIMgr.GetInstance():OnLoading() then
 					return
 				end
 
-				slot0 = nil
+				if uv2 < uv0 then
+					if uv3 == 0 then
+						print("not found ui >>", uv4.path)
+						uv5:Clear()
+						uv4.notFound()
 
-				if (slot4.conditionData == nil or slot6(slot4.path, slot4.conditionData)) and slot7(slot4.path, slot4.pathIndex) and go(slot0).activeInHierarchy then
-					slot5:Clear()
-					slot4.found(slot0)
+						return
+					end
 
-					return
+					slot0 = nil
+
+					if (uv4.conditionData == nil or uv6(uv4.path, uv4.conditionData)) and uv7(uv4.path, uv4.pathIndex) and go(slot0).activeInHierarchy then
+						uv5:Clear()
+						uv4.found(slot0)
+
+						return
+					end
+
+					uv3 = uv3 - 1
 				end
+			end, 0.5, -1)
 
-				slot3 = slot3 - 1
+			slot0.findUITimer:Start()
+			slot0.findUITimer.func()
+		end,
+		SearchTimely = function (slot0, slot1)
+			slot0:Clear()
+
+			if uv0(slot1.path, slot1.pathIndex) then
+				slot1.found(slot2)
+			else
+				slot1.notFound()
 			end
-		end, 0.5, -1)
+		end,
+		Clear = function (slot0)
+			if slot0.findUITimer then
+				slot0.findUITimer:Stop()
 
-		slot0.findUITimer:Start()
-		slot0.findUITimer.func()
-	end
-
-	slot1.Search = slot5
-
-	function slot5(slot0, slot1)
-		slot3 = slot0
-		slot2 = slot0.Clear
-
-		slot2(slot3)
-
-		slot2 = slot0
-		slot3 = slot1.path
-		slot4 = slot1.pathIndex
-		slot2 = slot2(slot3, slot4)
-
-		if slot2 then
-			slot3 = slot1.found
-			slot4 = slot2
-
-			slot3(slot4)
-		else
-			slot3 = slot1.notFound
-
-			slot3()
+				slot0.findUITimer = nil
+			end
 		end
-	end
-
-	slot1.SearchTimely = slot5
-
-	function slot5(slot0)
-		slot1 = slot0.findUITimer
-
-		if slot1 then
-			slot1 = slot0.findUITimer
-			slot2 = slot1
-			slot1 = slot1.Stop
-
-			slot1(slot2)
-
-			slot1 = nil
-			slot0.findUITimer = slot1
-		end
-	end
-
-	slot1.Clear = slot5
-
-	return slot1
+	}
 end
 
-slot0.Finder = slot7
+function slot0.cloneGO(slot0, slot1, slot2, slot3)
+	slot4 = tf(Instantiate(slot1))
+	slot4.sizeDelta = tf(slot1).sizeDelta
 
-function slot7(slot0, slot1, slot2, slot3)
-	slot4 = tf
-	slot5 = Instantiate
-	slot6 = slot1
-	slot4 = slot4(slot5(slot6))
-	slot5 = tf
-	slot6 = slot1
-	slot5 = slot5(slot6)
-	slot5 = slot5.sizeDelta
-	slot4.sizeDelta = slot5
-	slot5 = SetActive
-	slot6 = slot4
-	slot7 = true
+	SetActive(slot4, true)
+	slot4:SetParent(slot2, false)
 
-	slot5(slot6, slot7)
+	if slot3.hideChildEvent then
+		eachChild(slot4, function (slot0)
+			if slot0:GetComponent(typeof(Button)) then
+				slot1.enabled = false
+			end
+		end)
+	end
 
-	slot6 = slot4
-	slot5 = slot4.SetParent
-	slot7 = slot2
-	slot8 = false
+	if slot3.hideAnimtor and slot4:GetComponent(typeof(Animator)) then
+		slot5.enabled = false
+	end
 
-	slot5(slot6, slot7, slot8)
+	if slot3.childAdjust then
+		for slot8, slot9 in ipairs(slot3.childAdjust) do
+			if LeanTween.isTweening(slot4:Find(slot9[1]).gameObject) then
+				LeanTween.cancel(slot10.gameObject)
+			end
 
-	slot5 = slot3.hideChildEvent
-
-	if slot5 then
-		slot5 = eachChild
-		slot6 = slot4
-
-		function slot7(slot0)
-			slot2 = slot0
-			slot1 = slot0.GetComponent
-			slot3 = typeof
-			slot4 = Button
-			slot1 = slot1(slot2, slot3(slot4))
-
-			if slot1 then
-				slot2 = false
-				slot1.enabled = slot2
+			if slot10 and slot9[2] == "scale" then
+				slot10.localScale = Vector3(slot9[3][1], slot9[3][2], slot9[3][3])
+			elseif slot10 and slot9[2] == "position" then
+				slot10.anchoredPosition = Vector3(slot9[3][1], slot9[3][2], slot9[3][3])
 			end
 		end
-
-		slot5(slot6, slot7)
 	end
 
-	slot5 = slot3.hideAnimtor
+	if slot0.targetTimer then
+		slot0.targetTimer:Stop()
 
-	if slot5 then
-		slot6 = slot4
-		slot5 = slot4.GetComponent
-		slot7 = typeof
-		slot8 = Animator
-		slot5 = slot5(slot6, slot7(slot8))
-
-		if slot5 then
-			slot6 = false
-			slot5.enabled = slot6
-		end
+		slot0.targetTimer = nil
 	end
 
-	slot5 = slot0.targetTimer
+	if not slot3.pos and not slot3.scale and not slot3.eulerAngles then
+		slot0.targetTimer = Timer.New(function ()
+			if not IsNil(uv0) and not IsNil(uv1) then
+				uv1.position = uv0.transform.position
+				slot0 = uv1.localPosition
+				uv1.localPosition = Vector3(slot0.x, slot0.y, 0)
+				slot1 = uv0.transform.localScale
+				uv1.localScale = Vector3(slot1.x, slot1.y, slot1.z)
 
-	if slot5 then
-		slot5 = slot0.targetTimer
-		slot6 = slot5
-		slot5 = slot5.Stop
+				if uv2.image and type(uv2.image) == "table" then
+					slot2 = nil
+					slot4 = nil
+					slot4 = (not uv2.image.isRelative or uv2.image.target == "" and uv1 or tf(uv1):Find(uv2.image.target)) and GameObject.Find(uv2.image.target)
 
-		slot5(slot6)
+					if not IsNil((not uv2.image.isChild or tf(uv0):Find(uv2.image.source)) and GameObject.Find(uv2.image.source)) and not IsNil(slot4) then
+						slot6 = slot4:GetComponent(typeof(Image))
 
-		slot5 = nil
-		slot0.targetTimer = slot5
-	end
+						if slot2:GetComponent(typeof(Image)) and slot6 then
+							slot8 = slot6.sprite
 
-	slot5 = slot3.pos
+							if slot5.sprite and slot8 and slot7 ~= slot8 then
+								slot6.enabled = slot5.enabled
 
-	if not slot5 then
-		slot5 = slot3.scale
-
-		if not slot5 then
-			slot5 = slot3.eulerAngles
-
-			if not slot5 then
-				slot5 = Timer
-				slot5 = slot5.New
-
-				function slot6()
-					slot0 = IsNil
-					slot1 = slot0
-					slot0 = slot0(slot1)
-
-					if not slot0 then
-						slot0 = IsNil
-						slot1 = slot1
-						slot0 = slot0(slot1)
-
-						if not slot0 then
-							slot0 = slot1
-							slot1 = slot0
-							slot1 = slot1.transform
-							slot1 = slot1.position
-							slot0.position = slot1
-							slot0 = slot1
-							slot0 = slot0.localPosition
-							slot1 = slot1
-							slot2 = Vector3
-							slot3 = slot0.x
-							slot4 = slot0.y
-							slot5 = 0
-							slot2 = slot2(slot3, slot4, slot5)
-							slot1.localPosition = slot2
-							slot1 = slot0
-							slot1 = slot1.transform
-							slot1 = slot1.localScale
-							slot2 = slot1
-							slot3 = Vector3
-							slot4 = slot1.x
-							slot5 = slot1.y
-							slot6 = slot1.z
-							slot3 = slot3(slot4, slot5, slot6)
-							slot2.localScale = slot3
-							slot2 = slot2
-							slot2 = slot2.image
-
-							if slot2 then
-								slot2 = type
-								slot3 = slot2
-								slot3 = slot3.image
-								slot2 = slot2(slot3)
-
-								if slot2 == "table" then
-									slot2 = nil
-									slot3 = slot2
-									slot3 = slot3.image
-									slot3 = slot3.isChild
-
-									if slot3 then
-										slot3 = tf
-										slot4 = slot0
-										slot3 = slot3(slot4)
-										slot4 = slot3
-										slot3 = slot3.Find
-										slot5 = slot2
-										slot5 = slot5.image
-										slot5 = slot5.source
-										slot3 = slot3(slot4, slot5)
-										slot2 = slot3
-									else
-										slot3 = GameObject
-										slot3 = slot3.Find
-										slot4 = slot2
-										slot4 = slot4.image
-										slot4 = slot4.source
-										slot3 = slot3(slot4)
-										slot2 = slot3
-									end
-
-									slot3 = slot2
-									slot3 = slot3.image
-									slot3 = slot3.isRelative
-									slot4 = nil
-
-									if slot3 then
-										slot5 = slot2
-										slot5 = slot5.image
-										slot5 = slot5.target
-
-										if slot5 == "" then
-											slot4 = slot1
-										else
-											slot5 = tf
-											slot6 = slot1
-											slot5 = slot5(slot6)
-											slot6 = slot5
-											slot5 = slot5.Find
-											slot7 = slot2
-											slot7 = slot7.image
-											slot7 = slot7.target
-											slot5 = slot5(slot6, slot7)
-											slot4 = slot5
-										end
-									else
-										slot5 = GameObject
-										slot5 = slot5.Find
-										slot6 = slot2
-										slot6 = slot6.image
-										slot6 = slot6.target
-										slot5 = slot5(slot6)
-										slot4 = slot5
-									end
-
-									slot5 = IsNil
-									slot6 = slot2
-									slot5 = slot5(slot6)
-
-									if not slot5 then
-										slot5 = IsNil
-										slot6 = slot4
-										slot5 = slot5(slot6)
-
-										if not slot5 then
-											slot6 = slot2
-											slot5 = slot2.GetComponent
-											slot7 = typeof
-											slot8 = Image
-											slot5 = slot5(slot6, slot7(slot8))
-											slot7 = slot4
-											slot6 = slot4.GetComponent
-											slot8 = typeof
-											slot9 = Image
-											slot6 = slot6(slot7, slot8(slot9))
-
-											if slot5 and slot6 then
-												slot7 = slot5.sprite
-												slot8 = slot6.sprite
-
-												if slot7 and slot8 and slot7 ~= slot8 then
-													slot9 = slot5.enabled
-													slot6.enabled = slot9
-													slot9 = setImageSprite
-													slot10 = slot4
-													slot11 = slot7
-
-													slot9(slot10, slot11)
-												end
-											end
-										end
-									end
-								end
+								setImageSprite(slot4, slot7)
 							end
 						end
 					end
 				end
-
-				slot7 = 0.01
-				slot8 = -1
-				slot5 = slot5(slot6, slot7, slot8)
-				slot0.targetTimer = slot5
-				slot5 = slot0.targetTimer
-				slot6 = slot5
-				slot5 = slot5.Start
-
-				slot5(slot6)
-
-				slot5 = slot0.targetTimer
-				slot5 = slot5.func
-
-				slot5()
 			end
-		end
+		end, 0.01, -1)
+
+		slot0.targetTimer:Start()
+		slot0.targetTimer.func()
 	else
-		slot5 = slot3.pos
-
-		if slot5 then
+		if slot3.pos then
 			slot4.localPosition = Vector3(slot3.pos.x, slot3.pos.y, slot3.pos.z or 0)
+		elseif slot3.isLevelPoint then
+			slot4.localPosition = LuaHelper.ScreenToLocal(slot2, GameObject.Find("LevelCamera"):GetComponent(typeof(Camera)):WorldToScreenPoint(slot1.transform.parent:TransformPoint(slot1.transform.localPosition)), GameObject.Find("OverlayCamera"):GetComponent(typeof(Camera)))
 		else
-			slot5 = slot1.transform
-			slot5 = slot5.position
-			slot4.position = slot5
+			slot4.position = slot1.transform.position
 			slot5 = slot4.localPosition
-			slot6 = Vector3
-			slot7 = slot5.x
-			slot8 = slot5.y
-			slot9 = 0
-			slot6 = slot6(slot7, slot8, slot9)
-			slot4.localPosition = slot6
+			slot4.localPosition = Vector3(slot5.x, slot5.y, 0)
 		end
 
-		slot4.localScale = Vector3(slot3.scale or 1, , )
-		slot6 = slot3.eulerAngles
+		slot5 = slot3.scale or 1
+		slot4.localScale = Vector3(slot5, slot5, slot5)
 
-		if slot6 then
-			slot6 = Vector3
-			slot7 = slot3.eulerAngles
-			slot7 = slot7[1]
-			slot8 = slot3.eulerAngles
-			slot8 = slot8[2]
-			slot9 = slot3.eulerAngles
-			slot9 = slot9[3]
-			slot6 = slot6(slot7, slot8, slot9)
-			slot4.eulerAngles = slot6
+		if slot3.eulerAngles then
+			slot4.eulerAngles = Vector3(slot3.eulerAngles[1], slot3.eulerAngles[2], slot3.eulerAngles[3])
 		else
-			slot6 = Vector3
-			slot7 = 0
-			slot8 = 0
-			slot9 = 0
-			slot6 = slot6(slot7, slot8, slot9)
-			slot4.eulerAngles = slot6
+			slot4.eulerAngles = Vector3(0, 0, 0)
 		end
 	end
 
 	return slot4
 end
 
-slot0.cloneGO = slot7
+function slot0.setFinger(slot0, slot1, slot2)
+	SetActive(slot0.fingerTF, true)
 
-function slot7(slot0, slot1, slot2)
-	slot3 = SetActive
-	slot4 = slot0.fingerTF
-	slot5 = true
+	slot5 = slot2.scale and 1 / slot2.scale or 1
+	slot0.fingerTF.localScale = Vector3(slot5, slot5, 1)
+	slot6 = slot2.fingerPos and Vector3(slot2.fingerPos.posX, slot2.fingerPos.posY, 0) or Vector3(slot1.sizeDelta.x / 2, -(slot1.sizeDelta.y / 2), 0)
+	slot7 = Vector3(0, 0, 0)
 
-	slot3(slot4, slot5)
-
-	slot3 = slot1.sizeDelta
-	slot3 = slot3.x
-	slot3 = slot3 / 2
-	slot4 = slot1.sizeDelta
-	slot4 = slot4.y
-	slot4 = slot4 / 2
-	slot5 = slot2.scale
-
-	if slot5 then
-		slot0.fingerTF.localScale = Vector3(1 / slot2.scale or 1, , 1)
-		slot6 = slot2.fingerPos
-
-		if slot6 then
-			slot6 = Vector3
-			slot7 = slot2.fingerPos
-			slot7 = slot7.posX
-			slot8 = slot2.fingerPos
-			slot8 = slot8.posY
-			slot9 = 0
-			slot6 = slot6(slot7, slot8, slot9)
-
-			if not slot6 then
-				slot6 = Vector3
-				slot7 = slot3
-				slot8 = -slot4
-				slot9 = 0
-				slot6 = slot6(slot7, slot8, slot9)
-			end
-		end
+	if slot2.fingerPos then
+		slot7 = Vector3(slot2.fingerPos.rotateX or 0, slot2.fingerPos.rotateY or 0, slot2.fingerPos.rotateZ or 0)
 	end
 
-	slot7 = slot0.cloneTarget
-
-	if slot7 then
-		slot7 = slot0.fingerTF
-		slot8 = slot7
-		slot7 = slot7.SetParent
-		slot9 = slot0.cloneTarget
-		slot10 = false
-
-		slot7(slot8, slot9, slot10)
+	if slot0.cloneTarget then
+		slot0.fingerTF:SetParent(slot0.cloneTarget, false)
 	end
 
-	slot7 = setAnchoredPosition
-	slot8 = slot0.fingerTF
-	slot9 = slot6
+	setAnchoredPosition(slot0.fingerTF, slot6)
 
-	slot7(slot8, slot9)
+	slot0.fingerTF.localEulerAngles = slot7
 end
 
-slot0.setFinger = slot7
-
-function slot7(slot0, slot1, slot2, slot3)
+function slot0.addUIEventTrigger(slot0, slot1, slot2, slot3)
 	slot4 = slot2.ui
 	slot5 = slot1
-	slot6 = slot0.cloneTarget
-	slot8 = slot6
-	slot7 = slot6.GetComponent
-	slot9 = typeof
-	slot10 = CanvasGroup
-	slot7 = slot7(slot8, slot9(slot10))
 
-	if slot7 then
-		slot8 = 1
-		slot7.alpha = slot8
+	if slot0.cloneTarget:GetComponent(typeof(CanvasGroup)) then
+		slot7.alpha = 1
 	end
 
-	slot8 = slot4.eventIndex
+	if slot4.eventIndex then
+		slot5 = slot1:GetChild(slot4.eventIndex)
+		slot6 = slot0.cloneTarget:GetChild(slot4.eventIndex)
+	elseif slot4.eventPath then
+		if IsNil(GameObject.Find(slot4.eventPath)) then
+			slot5 = slot1
+		end
 
-	if slot8 then
-		slot9 = slot1
-		slot8 = slot1.GetChild
-		slot10 = slot4.eventIndex
-		slot8 = slot8(slot9, slot10)
-		slot5 = slot8
-		slot8 = slot0.cloneTarget
-		slot9 = slot8
-		slot8 = slot8.GetChild
-		slot10 = slot4.eventIndex
-		slot8 = slot8(slot9, slot10)
-		slot6 = slot8
-	else
-		slot8 = slot4.eventPath
-
-		if slot8 then
-			slot8 = GameObject
-			slot8 = slot8.Find
-			slot9 = slot4.eventPath
-			slot8 = slot8(slot9)
-			slot5 = slot8
-			slot8 = IsNil
-			slot9 = slot5
-			slot8 = slot8(slot9)
-
-			if slot8 then
-				slot5 = slot1
-			end
-
-			slot8 = slot0.cloneTarget
-			slot9 = slot8
-			slot8 = slot8.GetComponent
-			slot10 = typeof
-			slot11 = Image
-			slot8 = slot8(slot9, slot10(slot11))
-
-			if slot8 == nil then
-				slot8 = GetOrAddComponent
-				slot9 = slot0.cloneTarget
-				slot10 = typeof
-				slot11 = Image
-				slot8 = slot8(slot9, slot10(slot11))
-				slot9 = Color
-				slot10 = 1
-				slot11 = 1
-				slot12 = 1
-				slot13 = 0
-				slot9 = slot9(slot10, slot11, slot12, slot13)
-				slot8.color = slot9
-			end
+		if slot0.cloneTarget:GetComponent(typeof(Image)) == nil then
+			GetOrAddComponent(slot0.cloneTarget, typeof(Image)).color = Color(1, 1, 1, 0)
 		end
 	end
 
-	slot8 = slot4.triggerType
+	if (slot4.triggerType and slot4.triggerType[1] or uv0) == uv0 then
+		onButton(slot0, slot6, function ()
+			if not IsNil(uv0) then
+				uv1:finishCurrEvent(uv2, uv3)
 
-	if slot8 and (slot4.triggerType[1] or slot0) == slot0 then
-		slot9 = onButton
-		slot10 = slot0
-		slot11 = slot6
-
-		function slot12()
-			slot0 = IsNil
-			slot1 = slot0
-			slot0 = slot0(slot1)
-
-			if not slot0 then
-				slot0 = slot1
-				slot1 = slot0
-				slot0 = slot0.finishCurrEvent
-				slot2 = slot2
-				slot3 = slot3
-
-				slot0(slot1, slot2, slot3)
-
-				slot0 = triggerButton
-				slot1 = slot0
-
-				slot0(slot1)
-			end
-		end
-
-		slot13 = SFX_PANEL
-
-		slot9(slot10, slot11, slot12, slot13)
-
-		slot9 = setButtonEnabled
-		slot10 = slot6
-		slot11 = true
-
-		slot9(slot10, slot11)
-	else
-		slot9 = slot1
-
-		if slot8 == slot9 then
-			slot9 = onToggle
-			slot10 = slot0
-			slot11 = slot6
-
-			function slot12(slot0)
-				if slot0 then
-					slot1 = IsNil
-					slot2 = slot0
-					slot1 = slot1(slot2)
-
-					if not slot1 then
-						slot1:finishCurrEvent(slot1, )
-						triggerToggle(slot0, slot4.triggerType[2] or true)
-					end
+				if uv4.onClick then
+					uv4.onClick()
+				else
+					triggerButton(uv0)
 				end
 			end
-
-			slot13 = SFX_PANEL
-
-			slot9(slot10, slot11, slot12, slot13)
-
-			slot9 = setToggleEnabled
-			slot10 = slot6
-			slot11 = true
-
-			slot9(slot10, slot11)
-		else
-			slot9 = slot2
-
-			if slot8 == slot9 then
-				slot10 = slot5
-				slot9 = slot5.GetComponent
-				slot11 = typeof
-				slot12 = EventTriggerListener
-				slot9 = slot9(slot10, slot11(slot12))
-				slot11 = slot6
-				slot10 = slot6.GetComponent
-				slot12 = typeof
-				slot13 = EventTriggerListener
-				slot10 = slot10(slot11, slot12(slot13))
-				slot12 = slot10
-				slot11 = slot10.AddPointDownFunc
-
-				function slot13(slot0, slot1)
-					slot2 = IsNil
-					slot3 = slot0
-					slot2 = slot2(slot3)
-
-					if not slot2 then
-						slot2 = slot1
-						slot3 = slot2
-						slot2 = slot2.OnPointerDown
-						slot4 = slot1
-
-						slot2(slot3, slot4)
-					end
-				end
-
-				slot11(slot12, slot13)
-
-				slot12 = slot10
-				slot11 = slot10.AddPointUpFunc
-
-				function slot13(slot0, slot1)
-					slot2 = slot0
-					slot3 = slot2
-					slot2 = slot2.finishCurrEvent
-					slot4 = slot1
-					slot5 = slot2
-
-					slot2(slot3, slot4, slot5)
-
-					slot2 = IsNil
-					slot3 = slot3
-					slot2 = slot2(slot3)
-
-					if not slot2 then
-						slot2 = slot4
-						slot3 = slot2
-						slot2 = slot2.OnPointerUp
-						slot4 = slot1
-
-						slot2(slot3, slot4)
-					end
-				end
-
-				slot11(slot12, slot13)
-
+		end, SFX_PANEL)
+		setButtonEnabled(slot6, true)
+	elseif slot8 == uv1 then
+		onToggle(slot0, slot6, function (slot0)
+			if IsNil(uv0) then
 				return
 			end
 
-			slot9 = slot3
+			uv1:finishCurrEvent(uv2, uv3)
 
-			if slot8 == slot9 then
-				slot10 = slot6
-				slot9 = slot6.GetComponent
-				slot11 = typeof
-				slot12 = EventTriggerListener
-				slot9 = slot9(slot10, slot11(slot12))
-
-				if slot9 == nil then
-					slot10 = go
-					slot11 = slot6
-					slot10 = slot10(slot11)
-					slot11 = slot10
-					slot10 = slot10.AddComponent
-					slot12 = typeof
-					slot13 = EventTriggerListener
-					slot10 = slot10(slot11, slot12(slot13))
-					slot9 = slot10
-				end
-
-				slot11 = slot9
-				slot10 = slot9.AddPointDownFunc
-
-				function slot12(slot0, slot1)
-					slot2 = IsNil
-					slot3 = slot0
-					slot2 = slot2(slot3)
-
-					if not slot2 then
-						slot2 = slot1
-						slot3 = slot2
-						slot2 = slot2.finishCurrEvent
-						slot4 = slot2
-						slot5 = slot3
-
-						slot2(slot3, slot4, slot5)
-					end
-				end
-
-				slot10(slot11, slot12)
+			if uv4.triggerType[2] ~= nil then
+				triggerToggle(uv0, uv4.triggerType[2])
 			else
-				slot9 = slot4
-
-				if slot8 == slot9 then
-					slot10 = slot6
-					slot9 = slot6.GetComponent
-					slot11 = typeof
-					slot12 = EventTriggerListener
-					slot9 = slot9(slot10, slot11(slot12))
-
-					if slot9 == nil then
-						slot10 = go
-						slot11 = slot6
-						slot10 = slot10(slot11)
-						slot11 = slot10
-						slot10 = slot10.AddComponent
-						slot12 = typeof
-						slot13 = EventTriggerListener
-						slot10 = slot10(slot11, slot12(slot13))
-						slot9 = slot10
-					end
-
-					slot11 = slot9
-					slot10 = slot9.AddPointUpFunc
-
-					function slot12(slot0, slot1)
-						slot2 = slot0
-						slot3 = slot2
-						slot2 = slot2.finishCurrEvent
-						slot4 = slot1
-						slot5 = slot2
-
-						slot2(slot3, slot4, slot5)
-					end
-
-					slot10(slot11, slot12)
-				end
+				triggerToggle(uv0, true)
 			end
+		end, SFX_PANEL)
+		setToggleEnabled(slot6, true)
+	else
+		if slot8 == uv2 then
+			slot9 = slot5:GetComponent(typeof(EventTriggerListener))
+			slot10 = slot6:GetComponent(typeof(EventTriggerListener))
+
+			slot10:AddPointDownFunc(function (slot0, slot1)
+				if not IsNil(uv0) then
+					uv1:OnPointerDown(slot1)
+				end
+			end)
+			slot10:AddPointUpFunc(function (slot0, slot1)
+				uv0:finishCurrEvent(uv1, uv2)
+
+				if not IsNil(uv3) then
+					uv4:OnPointerUp(slot1)
+				end
+			end)
+
+			return
+		end
+
+		if slot8 == uv3 then
+			if slot6:GetComponent(typeof(EventTriggerListener)) == nil then
+				slot9 = go(slot6):AddComponent(typeof(EventTriggerListener))
+			end
+
+			slot9:AddPointDownFunc(function (slot0, slot1)
+				if not IsNil(uv0) then
+					uv1:finishCurrEvent(uv2, uv3)
+				end
+			end)
+		elseif slot8 == uv4 then
+			if slot6:GetComponent(typeof(EventTriggerListener)) == nil then
+				slot9 = go(slot6):AddComponent(typeof(EventTriggerListener))
+			end
+
+			slot9:AddPointUpFunc(function (slot0, slot1)
+				uv0:finishCurrEvent(uv1, uv2)
+			end)
 		end
 	end
 end
 
-slot0.addUIEventTrigger = slot7
+function slot0.finishCurrEvent(slot0, slot1, slot2)
+	slot0.bgAlpha.alpha = 0.2
 
-function slot7(slot0, slot1, slot2)
-	slot3 = slot0.bgAlpha
-	slot4 = 0.2
-	slot3.alpha = slot4
-	slot3 = removeOnButton
-	slot4 = slot0._go
+	removeOnButton(slot0._go)
+	slot0:destroyAllSign()
+	SetParent(slot0.fingerTF, tf(slot0._go), false)
+	SetActive(slot0.fingerTF, false)
+	SetActive(slot0.guiderTF, false)
 
-	slot3(slot4)
+	slot0.fingerTF.localScale = Vector3(1, 1, 1)
 
-	slot3 = SetParent
-	slot4 = slot0.fingerTF
-	slot5 = tf
-	slot6 = slot0._go
-	slot5 = slot5(slot6)
-	slot6 = false
+	if slot0.cloneTarget then
+		SetActive(slot0.cloneTarget, false)
+		Destroy(slot0.cloneTarget)
 
-	slot3(slot4, slot5, slot6)
-
-	slot3 = SetActive
-	slot4 = slot0.fingerTF
-	slot5 = false
-
-	slot3(slot4, slot5)
-
-	slot3 = SetActive
-	slot4 = slot0.guiderTF
-	slot5 = false
-
-	slot3(slot4, slot5)
-
-	slot3 = slot0.fingerTF
-	slot4 = Vector3
-	slot5 = 1
-	slot6 = 1
-	slot7 = 1
-	slot4 = slot4(slot5, slot6, slot7)
-	slot3.localScale = slot4
-	slot3 = slot0.cloneTarget
-
-	if slot3 then
-		slot3 = SetActive
-		slot4 = slot0.cloneTarget
-		slot5 = false
-
-		slot3(slot4, slot5)
-
-		slot3 = Destroy
-		slot4 = slot0.cloneTarget
-
-		slot3(slot4)
-
-		slot3 = nil
-		slot0.cloneTarget = slot3
+		slot0.cloneTarget = nil
 	end
 
-	slot3 = slot0.targetTimer
+	if slot0.targetTimer then
+		slot0.targetTimer:Stop()
 
-	if slot3 then
-		slot3 = slot0.targetTimer
-		slot4 = slot3
-		slot3 = slot3.Stop
-
-		slot3(slot4)
-
-		slot3 = nil
-		slot0.targetTimer = slot3
+		slot0.targetTimer = nil
 	end
 
-	slot3 = slot0.findUITimer
+	if slot0.findUITimer then
+		slot0.findUITimer:Stop()
 
-	if slot3 then
-		slot3 = slot0.findUITimer
-		slot4 = slot3
-		slot3 = slot3.Stop
+		slot0.findUITimer = nil
+	end
 
-		slot3(slot4)
+	if slot0.highLightLine then
+		Destroy(slot0.highLightLine)
 
-		slot3 = nil
-		slot0.findUITimer = slot3
+		slot0.highLightLine = nil
 	end
 
 	if slot2 then
-		slot3 = slot2
-
-		slot3()
-	end
-end
-
-slot0.finishCurrEvent = slot7
-
-function slot7(slot0)
-	slot2 = slot0
-	slot1 = slot0.clearDelegateInfo
-
-	slot1(slot2)
-
-	slot1 = slot0.delayTimer
-
-	if slot1 then
-		slot1 = slot0.delayTimer
-		slot2 = slot1
-		slot1 = slot1.Stop
-
-		slot1(slot2)
-
-		slot1 = nil
-		slot0.delayTimer = slot1
-	end
-
-	slot1 = slot0.targetTimer
-
-	if slot1 then
-		slot1 = slot0.targetTimer
-		slot2 = slot1
-		slot1 = slot1.Stop
-
-		slot1(slot2)
-
-		slot1 = nil
-		slot0.targetTimer = slot1
-	end
-
-	slot1 = slot0.signTimer
-
-	if slot1 then
-		slot1 = slot0.signTimer
-		slot2 = slot1
-		slot1 = slot1.Stop
-
-		slot1(slot2)
-
-		slot1 = nil
-		slot0.signTimer = slot1
-	end
-
-	slot1 = slot0.finder
-	slot2 = slot1
-	slot1 = slot1.Clear
-
-	slot1(slot2)
-
-	slot1 = slot0.cloneTarget
-
-	if slot1 then
-		slot1 = SetParent
-		slot2 = slot0.fingerTF
-		slot3 = slot0._go
-
-		slot1(slot2, slot3)
-
-		slot1 = Destroy
-		slot2 = slot0.cloneTarget
-
-		slot1(slot2)
-
-		slot1 = nil
-		slot0.cloneTarget = slot1
-	end
-
-	slot1 = slot0._go
-	slot2 = slot1
-	slot1 = slot1.SetActive
-	slot3 = false
-
-	slot1(slot2, slot3)
-
-	slot1 = removeOnButton
-	slot2 = slot0._go
-
-	slot1(slot2)
-
-	slot1 = slot0.curEvents
-
-	if slot1 then
-		slot1 = nil
-		slot0.curEvents = slot1
-	end
-
-	slot1 = slot0.currentGuide
-
-	if slot1 then
-		slot1 = nil
-		slot0.currentGuide = slot1
-	end
-
-	slot1 = slot0.uiLongPress
-	slot1 = slot1.onLongPressed
-	slot2 = slot1
-	slot1 = slot1.RemoveAllListeners
-
-	slot1(slot2)
-end
-
-function slot8(slot0)
-	slot1 = pg
-	slot1 = slot1.DelegateInfo
-	slot1 = slot1.New
-	slot2 = slot0
-
-	slot1(slot2)
-
-	slot1 = true
-	slot0.isAddDelegateInfo = slot1
-end
-
-slot0.addDelegateInfo = slot8
-
-function slot8(slot0)
-	slot1 = slot0.isAddDelegateInfo
-
-	if slot1 then
-		slot1 = pg
-		slot1 = slot1.DelegateInfo
-		slot1 = slot1.Dispose
-		slot2 = slot0
-
-		slot1(slot2)
-
-		slot1 = nil
-		slot0.isAddDelegateInfo = slot1
-	end
-end
-
-slot0.clearDelegateInfo = slot8
-
-function slot8(slot0)
-	slot1 = SetActive
-	slot2 = slot0._go
-	slot3 = true
-
-	slot1(slot2, slot3)
-end
-
-slot0.mask = slot8
-
-function slot8(slot0)
-	slot1 = SetActive
-	slot2 = slot0._go
-	slot3 = false
-
-	slot1(slot2, slot3)
-end
-
-slot0.unMask = slot8
-
-function slot8(slot0, slot1)
-	slot2 = slot0
-	slot3 = slot0
-
-	slot2(slot3)
-
-	slot2 = slot1
-	slot2 = slot2.MANAGER_STATE
-	slot2 = slot2.IDLE
-	slot0.managerState = slot2
-	slot2 = pg
-	slot2 = slot2.m02
-	slot3 = slot2
-	slot2 = slot2.sendNotification
-	slot4 = GAME
-	slot4 = slot4.END_GUIDE
-
-	slot2(slot3, slot4)
-
-	if slot1 then
-		slot2 = slot1
-
 		slot2()
 	end
 end
 
-slot0.endGuider = slot8
+function slot7(slot0)
+	slot0:clearDelegateInfo()
+	slot0:RemoveCheckSpriteTimer()
 
-function slot8(slot0)
-	slot1 = slot0._go
-	slot1 = slot1.activeSelf
+	if slot0.delayTimer then
+		slot0.delayTimer:Stop()
+
+		slot0.delayTimer = nil
+	end
+
+	if slot0.targetTimer then
+		slot0.targetTimer:Stop()
+
+		slot0.targetTimer = nil
+	end
+
+	slot0:destroyAllSign()
+	slot0.finder:Clear()
+
+	if slot0.cloneTarget then
+		SetParent(slot0.fingerTF, slot0._go)
+		Destroy(slot0.cloneTarget)
+
+		slot0.cloneTarget = nil
+	end
+
+	slot0._go:SetActive(false)
+	removeOnButton(slot0._go)
+
+	if slot0.curEvents then
+		slot0.curEvents = nil
+	end
+
+	if slot0.currentGuide then
+		slot0.currentGuide = nil
+	end
+
+	slot0.uiLongPress.onLongPressed:RemoveAllListeners()
+end
+
+function slot0.addDelegateInfo(slot0)
+	pg.DelegateInfo.New(slot0)
+
+	slot0.isAddDelegateInfo = true
+end
+
+function slot0.clearDelegateInfo(slot0)
+	if slot0.isAddDelegateInfo then
+		pg.DelegateInfo.Dispose(slot0)
+
+		slot0.isAddDelegateInfo = nil
+	end
+end
+
+function slot0.mask(slot0)
+	SetActive(slot0._go, true)
+end
+
+function slot0.unMask(slot0)
+	SetActive(slot0._go, false)
+end
+
+function slot0.endGuider(slot0, slot1)
+	uv0(slot0)
+
+	slot0.managerState = uv1.MANAGER_STATE.IDLE
+
+	pg.m02:sendNotification(GAME.END_GUIDE)
 
 	if slot1 then
-		slot1 = slot0.managerState
-		slot0.prevState = slot1
-		slot1 = slot0
-		slot1 = slot1.MANAGER_STATE
-		slot1 = slot1.BREAK
-		slot0.managerState = slot1
-		slot1 = SetActive
-		slot2 = slot0._go
-		slot3 = false
+		slot1()
+	end
+end
 
-		slot1(slot2, slot3)
+function slot0.onDisconnected(slot0)
+	if slot0._go.activeSelf then
+		slot0.prevState = slot0.managerState
+		slot0.managerState = uv0.MANAGER_STATE.BREAK
 
-		slot1 = slot0.cloneTarget
+		SetActive(slot0._go, false)
 
-		if slot1 then
-			slot1 = SetActive
-			slot2 = slot0.cloneTarget
-			slot3 = false
-
-			slot1(slot2, slot3)
+		if slot0.cloneTarget then
+			SetActive(slot0.cloneTarget, false)
 		end
 	end
 end
 
-slot0.onDisconnected = slot8
+function slot0.onReconneceted(slot0)
+	if slot0.prevState then
+		slot0.managerState = slot0.prevState
+		slot0.prevState = nil
 
-function slot8(slot0)
-	slot1 = slot0.prevState
+		SetActive(slot0._go, true)
 
-	if slot1 then
-		slot1 = slot0.prevState
-		slot0.managerState = slot1
-		slot1 = nil
-		slot0.prevState = slot1
-		slot1 = SetActive
-		slot2 = slot0._go
-		slot3 = true
-
-		slot1(slot2, slot3)
-
-		slot1 = slot0.cloneTarget
-
-		if slot1 then
-			slot1 = SetActive
-			slot2 = slot0.cloneTarget
-			slot3 = true
-
-			slot1(slot2, slot3)
+		if slot0.cloneTarget then
+			SetActive(slot0.cloneTarget, true)
 		end
 	end
 end
-
-slot0.onReconneceted = slot8
-
-return

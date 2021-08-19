@@ -1,24 +1,24 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	continueBgm = true,
 	id = "SANLI06",
+	continueBgm = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			actorName = "？？？",
-			side = 0,
-			dir = 1,
-			blackBg = true,
 			stopbgm = true,
-			withoutPainting = true,
-			actor = 303110,
+			side = 0,
 			nameColor = "#a9f548",
 			say = "そうか、あのお方が戻ってきたというのか",
+			dir = 1,
+			blackBg = true,
+			actor = 303110,
+			actorName = "？？？",
+			withoutPainting = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -39,42 +39,42 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 303120,
 			side = 1,
 			nameColor = "#a9f548",
+			actorName = "？？？",
 			dir = 1,
 			blackBg = true,
-			actor = 303120,
-			actorName = "？？？",
 			say = "連合艦隊の…軍神？まったく頼もしいかぎりね",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 303110,
 			side = 0,
 			nameColor = "#a9f548",
+			actorName = "？？？",
 			dir = 1,
 			blackBg = true,
-			actor = 303110,
-			actorName = "？？？",
 			say = "いずれにしても…「あのお方」を渡すわけにはいかない…",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 303110,
 			side = 0,
 			nameColor = "#a9f548",
+			actorName = "？？？",
 			dir = 1,
 			blackBg = true,
-			actor = 303110,
-			actorName = "？？？",
 			say = "重桜は…カミの力さえあれば…",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

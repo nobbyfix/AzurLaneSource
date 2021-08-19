@@ -1,10 +1,10 @@
 slot0 = class("VoteDiaplayPage", import("...base.BaseSubView"))
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	return "VoteDisplay"
 end
 
-slot0.OnInit = function (slot0)
+function slot0.OnInit(slot0)
 	slot0.paitingTF = findTF(slot0._tf, "painting")
 	slot0.numberTxt = findTF(slot0._tf, "filter_bg/Text"):GetComponent(typeof(Text))
 	slot0.nameTxt = findTF(slot0._tf, "frame/bg/name"):GetComponent(typeof(Text))
@@ -23,7 +23,7 @@ slot0.OnInit = function (slot0)
 	slot0.bg2 = findTF(slot0._tf, "frame/bg/bg2")
 end
 
-slot0.Open = function (slot0, slot1, slot2, slot3, slot4, slot5)
+function slot0.Open(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot0.callback = slot5
 	slot0.maxValue = slot3
 	slot0.rank = slot2
@@ -45,24 +45,24 @@ slot0.Open = function (slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 	onInputEndEdit(slot0, go(slot0.valueInput), function ()
-		if tonumber(slot0) < 1 then
-			slot0.value = 1
-		elseif slot0.maxValue < slot1 then
-			slot0.value = math.max(1, slot0.maxValue)
+		if tonumber(getInputText(go(uv0.valueInput))) < 1 then
+			uv0.value = 1
+		elseif uv0.maxValue < slot1 then
+			uv0.value = math.max(1, uv0.maxValue)
 		else
-			slot0.value = slot1
+			uv0.value = slot1
 		end
 
-		slot0:UpdateCnt()
+		uv0:UpdateCnt()
 	end)
 	pg.UIMgr.GetInstance():BlurPanel(slot0._tf)
 end
 
-slot0.UpdateCnt = function (slot0)
+function slot0.UpdateCnt(slot0)
 	slot0.valueInput.text = slot0.value
 end
 
-slot0.Update = function (slot0, slot1)
+function slot0.Update(slot0, slot1)
 	slot0.nameTxt.text = slot1:getShipName()
 	slot0.enNameTxt.text = slot1:getEnName()
 	slot0.descTxt.text = slot1:GetDesc()
@@ -73,38 +73,38 @@ slot0.Update = function (slot0, slot1)
 
 	slot0:UpdateCnt()
 	onButton(slot0, slot0._tf, function ()
-		slot0:Close()
+		uv0:Close()
 	end)
 	onButton(slot0, slot0.addBtn, function ()
-		if slot0.maxValue <= slot0.value then
+		if uv0.maxValue <= uv0.value then
 			return
 		end
 
-		slot0.value = slot0.value + 1
+		uv0.value = uv0.value + 1
 
-		slot0:UpdateCnt()
+		uv0:UpdateCnt()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.miunsBtn, function ()
-		if slot0.value == 1 then
+		if uv0.value == 1 then
 			return
 		end
 
-		slot0.value = slot0.value - 1
+		uv0.value = uv0.value - 1
 
-		slot0:UpdateCnt()
+		uv0:UpdateCnt()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.maxBtn, function ()
-		if slot0.maxValue == 0 then
+		if uv0.maxValue == 0 then
 			return
 		end
 
-		slot0.value = slot0.maxValue
+		uv0.value = uv0.maxValue
 
-		slot0:UpdateCnt()
+		uv0:UpdateCnt()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.submitBtn, function ()
-		slot0.callback(slot0.value)
-		slot0.callback:Close()
+		uv0.callback(uv0.value)
+		uv0:Close()
 	end, SFX_PANEL)
 
 	slot0.paintingName = slot1:getPainting()
@@ -112,7 +112,7 @@ slot0.Update = function (slot0, slot1)
 	setPaintingPrefab(slot0.paitingTF, slot1:getPainting(), "jiesuan")
 end
 
-slot0.Close = function (slot0)
+function slot0.Close(slot0)
 	pg.UIMgr.GetInstance():UnblurPanel(slot0._tf, slot0._parent)
 	setActive(slot0._tf, false)
 	retPaintingPrefab(slot0.paitingTF, slot0.paintingName)
@@ -124,7 +124,7 @@ slot0.Close = function (slot0)
 	slot0.voteShip = nil
 end
 
-slot0.OnDestroy = function (slot0)
+function slot0.OnDestroy(slot0)
 	slot0:Close()
 end
 

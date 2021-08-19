@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.05
 				}
 			},
 			{
@@ -18,8 +18,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			}
 		}
@@ -33,8 +33,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.061,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.061
 				}
 			},
 			{
@@ -43,8 +43,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			}
 		}
@@ -58,8 +58,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.072
 				}
 			},
 			{
@@ -68,8 +68,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.083,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.083
 				}
 			},
 			{
@@ -93,8 +93,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			}
 		}
@@ -108,8 +108,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.094,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.094
 				}
 			},
 			{
@@ -118,8 +118,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			}
 		}
@@ -133,8 +133,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.105,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.105
 				}
 			},
 			{
@@ -143,8 +143,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			}
 		}
@@ -158,8 +158,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.116,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.116
 				}
 			},
 			{
@@ -168,8 +168,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			}
 		}
@@ -183,8 +183,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.127,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.127
 				}
 			},
 			{
@@ -193,8 +193,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			}
 		}
@@ -208,8 +208,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.138,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.138
 				}
 			},
 			{
@@ -218,8 +218,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			}
 		}
@@ -233,8 +233,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "damageReduceFromAmmoType_3"
+					attr = "damageReduceFromAmmoType_3",
+					number = 0.15
 				}
 			},
 			{
@@ -243,20 +243,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "igniteShorten"
+					attr = "igniteShorten",
+					number = 3
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "清楚的新装",
 	init_effect = "jinengchufablue",
-	id = 104041,
-	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "高爆减伤",
 	stack = 1,
-	color = "blue",
+	id = 104041,
 	icon = 104040,
 	last_effect = "",
 	blink = {
@@ -274,8 +274,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "damageReduceFromAmmoType_3"
+				attr = "damageReduceFromAmmoType_3",
+				number = 0.05
 			}
 		},
 		{
@@ -284,8 +284,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 3,
-				attr = "igniteShorten"
+				attr = "igniteShorten",
+				number = 3
 			}
 		}
 	}

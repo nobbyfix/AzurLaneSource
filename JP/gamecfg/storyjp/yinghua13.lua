@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA13",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 305060,
 			side = 0,
-			dir = 1,
-			bgm = "nagato-map",
 			hideOther = true,
 			actorName = "{namecode:74}&{namecode:75}",
+			dir = 1,
 			say = "うぅ…やっぱり負けた…",
+			bgm = "nagato-map",
 			subActors = {
 				{
 					actor = 305050,
@@ -162,9 +162,9 @@ return {
 			actor = 0,
 			side = 2,
 			actorName = "みんな",
-			withoutPainting = true,
-			dir = 1,
 			say = "！！いつから！？",
+			dir = 1,
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "弹药充足",
 	init_effect = "",
-	id = 201,
+	name = "弹药充足",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "舰队伤害提高10%",
 	stack = 1,
-	color = "yellow",
+	id = 201,
 	icon = 201,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.1
 			}
 		}
 	}

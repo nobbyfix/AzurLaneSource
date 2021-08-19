@@ -1,10 +1,6 @@
 slot0 = class("CommanderTalentPanel", import("...base.BasePanel"))
-slot1 = 1
-slot2 = 2
-slot3 = 3
-slot4 = 4
 
-slot0.init = function (slot0)
+function slot0.init(slot0)
 	slot0.resetTimeTF = slot0:findTF("frame/point/reset_frame/reset_time")
 	slot0.resetTimeTxt = slot0:findTF("frame/point/reset_frame/reset_time/Text"):GetComponent(typeof(Text))
 	slot0.resetTimeBtn = slot0:findTF("frame/point/reset_frame/reset_btn")
@@ -47,14 +43,13 @@ slot0.init = function (slot0)
 
 	slot0.uilist = UIItemList.New(slot0:findTF("frame/talents/content"), slot0:findTF("frame/talents/content/talent_tpl"))
 	slot0.resetPoint = false
-	slot0.scrollTxts = {}
 end
 
-slot0.inChapter = function (slot0, slot1)
+function slot0.inChapter(slot0, slot1)
 	if getProxy(ChapterProxy):getActiveChapter() then
-		for slot7, slot8 in pairs(slot3) do
-			if _.any(_.values(slot9), function (slot0)
-				return slot0.id == slot0.id
+		for slot7, slot8 in pairs(slot2.fleets) do
+			if _.any(_.values(slot8:getCommanders()), function (slot0)
+				return slot0.id == uv0.id
 			end) then
 				return true
 			end
@@ -64,21 +59,21 @@ slot0.inChapter = function (slot0, slot1)
 	return false
 end
 
-slot0.attach = function (slot0, slot1)
-	slot0.super.attach(slot0, slot1)
+function slot0.attach(slot0, slot1)
+	uv0.super.attach(slot0, slot1)
 	onButton(slot0, slot0.replaceCloseBtn, function ()
-		slot0:closeReplacePanel()
+		uv0:closeReplacePanel()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.replaceCancelBtn, function ()
-		slot0:closeReplacePanel()
+		uv0:closeReplacePanel()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.replacePanel, function ()
-		slot0:closeReplacePanel()
+		uv0:closeReplacePanel()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.resetTimeBtn, function ()
-		if #slot0.commanderVO:getTalentOrigins() == #slot0.commanderVO:getTalents() and _.all(slot0, function (slot0)
-			return _.any(slot0, function (slot0)
-				return slot0.id == slot0.id
+		if #uv0.commanderVO:getTalentOrigins() == #uv0.commanderVO:getTalents() and _.all(slot0, function (slot0)
+			return _.any(uv0, function (slot0)
+				return slot0.id == uv0.id
 			end)
 		end) then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("commander_reset_talent_is_not_need"))
@@ -86,82 +81,86 @@ slot0.attach = function (slot0, slot1)
 			return
 		end
 
-		if slot0:inChapter(slot0.commanderVO) then
+		if uv0:inChapter(uv0.commanderVO) then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("commander_is_in_battle"))
 
 			return
 		end
 
-		if slot0.resetPoint and slot0.commanderVO then
-			slot0:openResetPanel()
+		if uv0.resetPoint and uv0.commanderVO then
+			uv0:openResetPanel()
 		else
 			pg.TipsMgr.GetInstance():ShowTips(i18n("commander_reset_talent_time_no_rearch"))
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.resetPanel, function ()
-		slot0:closeResetPanel()
+		uv0:closeResetPanel()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.resetCloseBtn, function ()
-		slot0:closeResetPanel()
+		uv0:closeResetPanel()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.resetCancelBtn, function ()
-		slot0:closeResetPanel()
+		uv0:closeResetPanel()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.resetConfirmBtn, function ()
-		if slot0.commanderVO then
-			if slot0.parent.playerVO.gold < slot0.total then
+		if uv0.commanderVO then
+			if uv0.parent.playerVO.gold < uv0.total then
 				GoShoppingMsgBox(i18n("switch_to_shop_tip_2", i18n("word_gold")), ChargeScene.TYPE_ITEM, {
 					{
 						59001,
-						slot0.total - slot0.gold,
-						slot0.total
+						uv0.total - slot0.gold,
+						uv0.total
 					}
 				})
 
 				return
 			end
 
-			slot0.parent:openMsgBox({
+			uv0.parent:openMsgBox({
 				content = i18n("commander_reset_talent_tip"),
 				onYes = function ()
-					slot0.parent:emit(CommanderInfoMediator.RESET_TALENTS, slot0.commanderVO.id)
-					slot0.parent.emit:closeResetPanel()
+					uv0.parent:emit(CommanderInfoMediator.RESET_TALENTS, uv0.commanderVO.id)
+					uv0:closeResetPanel()
 				end
 			})
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.useBtn, function ()
-		if slot0:inChapter(slot0.commanderVO) then
+		if uv0:inChapter(uv0.commanderVO) then
 			pg.TipsMgr.GetInstance():ShowTips(i18n("commander_is_in_battle"))
 
 			return
 		end
 
-		if slot0.commanderVO:getTalentPoint() > 0 then
-			slot0:openUseagePanel()
+		if uv0.commanderVO:getTalentPoint() > 0 then
+			uv0:openUseagePanel()
 		else
 			pg.TipsMgr.GetInstance():ShowTips(i18n("commander_skill_point_noengough"))
 		end
 	end, SFX_PANEL)
 	onButton(slot0, slot0.usagePanel, function ()
-		slot0:closeUsagePanel()
+		uv0:closeUsagePanel()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.usageCancelBtn, function ()
-		slot0:closeUsagePanel()
+		uv0:closeUsagePanel()
 	end, SFX_PANEL)
 	onButton(slot0, slot0.usageCloseBtn, function ()
-		slot0:closeUsagePanel()
+		uv0:closeUsagePanel()
 	end, SFX_PANEL)
 end
 
-slot0.update = function (slot0, slot1)
+function slot0.update(slot0, slot1)
 	slot0.resetPoint = false
 	slot0.commanderVO = slot1
 	slot0.pointTxt.text = slot1:getTalentPoint()
 
 	slot0:removeTimer()
-	setActive(slot0.resetTimeBtn, slot0.commanderVO:getPt() > 0 or pg.TimeMgr.GetInstance():GetServerTime() < slot1.abilityTime + CommanderConst.RESET_TALENT_WAIT_TIME)
-	setActive(slot0.resetTimeTF, slot0.commanderVO:getPt() > 0 or pg.TimeMgr.GetInstance().GetServerTime() < slot1.abilityTime + CommanderConst.RESET_TALENT_WAIT_TIME)
+
+	slot2 = slot1.abilityTime + CommanderConst.RESET_TALENT_WAIT_TIME
+	slot3 = pg.TimeMgr.GetInstance():GetServerTime()
+
+	setActive(slot0.resetTimeBtn, slot0.commanderVO:getPt() > 0 or slot3 < slot2)
+	setActive(slot0.resetTimeTF, slot0.commanderVO:getPt() > 0 or slot3 < slot2)
 
 	if slot2 <= slot3 then
 		slot0.resetPoint = true
@@ -170,16 +169,16 @@ slot0.update = function (slot0, slot1)
 		setActive(slot0.resetTimeTF, false)
 	else
 		slot0.timer = Timer.New(function ()
-			slot0 = pg.TimeMgr.GetInstance():GetServerTime()
+			uv0 = pg.TimeMgr.GetInstance():GetServerTime()
 
-			if pg.TimeMgr.GetInstance() -  > 0 then
-				slot2.resetTimeTxt.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
+			if uv1 - uv0 > 0 then
+				uv2.resetTimeTxt.text = pg.TimeMgr.GetInstance():DescCDTime(slot0)
 			else
-				slot2.resetTimeTxt.text = i18n("commander_reset_talent")
+				uv2.resetTimeTxt.text = i18n("commander_reset_talent")
 
-				setActive(i18n("commander_reset_talent").resetTimeTF, false)
+				setActive(uv2.resetTimeTF, false)
 
-				i18n("commander_reset_talent").resetTimeTF.resetPoint = true
+				uv2.resetPoint = true
 			end
 		end, 1, -1)
 
@@ -190,90 +189,73 @@ slot0.update = function (slot0, slot1)
 	slot0:updateTalents()
 end
 
-slot0.updateTalents = function (slot0)
-	slot0:clearScrollTxts(slot0)
-
-	slot2 = slot0.commanderVO.getTalents(slot1)
+function slot0.updateTalents(slot0)
+	slot2 = slot0.commanderVO:getTalents()
 
 	slot0.uilist:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			slot0:updateTalentCard(slot2, slot1[slot1 + 1], slot2)
+			uv0:updateTalentCard(slot2, uv1[slot1 + 1])
 		end
 	end)
 	slot0.uilist:align(CommanderConst.MAX_TELENT_COUNT)
 end
 
-slot0.updateTalentCard = function (slot0, slot1, slot2, slot3)
-	slot4 = slot1:Find("unlock")
-	slot5 = slot1:Find("lock")
-	slot0.scrollTxts[slot3] = {}
+function slot0.updateTalentCard(slot0, slot1, slot2)
+	slot3 = slot1:Find("unlock")
+	slot4 = slot1:Find("lock")
 
 	if slot2 then
-		GetImageSpriteFromAtlasAsync("CommanderTalentIcon/" .. slot2:getConfig("icon"), "", slot4:Find("icon"))
+		GetImageSpriteFromAtlasAsync("CommanderTalentIcon/" .. slot2:getConfig("icon"), "", slot3:Find("icon"))
 
-		if slot4:Find("tree_btn") then
-			onButton(slot0, slot4:Find("tree_btn"), function ()
-				slot0.parent:openTreePanel(slot0.parent)
+		if slot3:Find("tree_btn") then
+			onButton(slot0, slot3:Find("tree_btn"), function ()
+				uv0.parent:openTreePanel(uv1)
 			end, SFX_PANEL)
 		end
 
-		setText(slot4:Find("name_bg/Text"), slot2:getConfig("name"))
-
-		slot6 = ScrollTxt.New(slot4:Find("desc"), slot4:Find("desc/Text"))
-
-		slot6:setText(slot2:getConfig("desc"))
-		table.insert(slot0.scrollTxts[slot3], slot6)
+		setText(slot3:Find("name_bg/Text"), slot2:getConfig("name"))
+		setScrollText(slot3:Find("desc/Text"), slot2:getConfig("desc"))
 	end
 
-	setActive(slot4, slot2)
+	setActive(slot3, slot2)
 
-	if slot5 then
-		setActive(slot5, not slot2)
+	if slot4 then
+		setActive(slot4, not slot2)
 	end
 end
 
-slot0.clearScrollTxts = function (slot0, slot1)
-	slot2 = ipairs
-	slot3 = slot0.scrollTxts[slot1] or {}
-
-	for slot5, slot6 in slot2(slot3) do
-		slot6:clear()
-	end
-
-	slot0.scrollTxts = {}
-end
-
-slot0.openUseagePanel = function (slot0)
-	slot0:clearScrollTxts(slot0)
+function slot0.openUseagePanel(slot0)
 	setActive(slot0.usagePanel, true)
 	slot0.usagePanel:SetAsLastSibling()
 	removeOnButton(slot0.usageConfirmBtn)
 	setActive(slot0.usageCostIconTF, false)
 	setActive(slot0.usageCostTxtTF, false)
 
-	if not slot0.commanderVO.getNotLearnedList(slot1) or #slot2 == 0 then
+	if not slot0.commanderVO:getNotLearnedList() or #slot2 == 0 then
 		slot0.parent:emit(CommanderInfoMediator.FETCH_NOT_LEARNED_TALENT, slot1.id)
 	else
 		slot3 = nil
 
 		slot0.usageList:make(function (slot0, slot1, slot2)
 			if slot0 == UIItemList.EventUpdate then
-				onToggle(slot1, slot2, function (slot0)
-					if slot0 and (not slot0 or slot0.id ~= slot1.id) then
-						slot0 = slot1
+				slot3 = uv0[slot1 + 1]
 
-						slot2:updateTalentCard(slot2.usageTalent, slot2.updateTalentCard, )
-						slot2(slot2.usageCostIconTF, slot2.updateTalentCard:getConfig("cost") > 0)
-						slot2(slot2.usageCostTxtTF, slot1 > 0)
+				onToggle(uv1, slot2, function (slot0)
+					if slot0 and (not uv0 or uv0.id ~= uv1.id) then
+						uv0 = uv1
 
-						slot2.usageCostTxt.text = slot1
+						uv2:updateTalentCard(uv2.usageTalent, uv1)
+						setActive(uv2.usageCostIconTF, uv1:getConfig("cost") > 0)
+						setActive(uv2.usageCostTxtTF, slot1 > 0)
 
-						setActive(slot2.usageConfirmUpgrade, slot1 > 0:hasTalent(slot1))
-						setActive(slot2.usageConfirmILearned, not slot1 > 0.hasTalent:hasTalent(slot1))
+						uv2.usageCostTxt.text = slot1
+
+						setActive(uv2.usageConfirmUpgrade, uv3:hasTalent(uv1))
+						setActive(uv2.usageConfirmILearned, not uv3:hasTalent(uv1))
 					end
 				end, SFX_PANEL)
-				setActive(slot2:Find("up"), slot4)
-				GetImageSpriteFromAtlasAsync("CommanderTalentIcon/" .. slot0[slot1 + 1].getConfig(slot3, "icon"), "", slot2)
+				setActive(slot2:Find("up"), uv3:hasTalent(slot3))
+				GetImageSpriteFromAtlasAsync("CommanderTalentIcon/" .. slot3:getConfig("icon"), "", slot2)
 
 				if slot1 == 0 then
 					triggerToggle(slot2, true)
@@ -282,67 +264,86 @@ slot0.openUseagePanel = function (slot0)
 		end)
 		slot0.usageList:align(#slot2)
 		onButton(slot0, slot0.usageConfirmBtn, function ()
-			if slot0 and slot1:fullTalentCnt() and not slot1:hasTalent(slot1.hasTalent) then
-				slot2:openReplacePanel(slot2.openReplacePanel)
-			elseif slot0 then
-				slot2:emit(CommanderInfoMediator.ON_LEARN_TALENT, slot1.id, slot0.id, 0)
+			if uv0 and uv1:fullTalentCnt() and not uv1:hasTalent(uv0) then
+				uv2:openReplacePanel(uv0)
+			elseif uv0 then
+				uv2:emit(CommanderInfoMediator.ON_LEARN_TALENT, uv1.id, uv0.id, 0)
 			end
 		end, SFX_PANEL)
 	end
 end
 
-slot0.closeUsagePanel = function (slot0)
+function slot0.closeUsagePanel(slot0)
 	setActive(slot0.usagePanel, false)
 end
 
-slot0.openResetPanel = function (slot0)
-	slot0:clearScrollTxts(slot0)
+function slot0.openResetPanel(slot0)
+	slot1 = slot0.commanderVO
+
 	setActive(slot0.resetPanel, true)
 	slot0.resetPanel:SetAsLastSibling()
 	slot0.resetList:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			slot0:updateTalentCard(slot2, slot1[slot1 + 1], slot2)
+			uv0:updateTalentCard(slot2, uv1[slot1 + 1])
 		end
 	end)
-	slot0.resetList:align(#slot0.commanderVO.getTalentOrigins(slot1))
+	slot0.resetList:align(#slot1:getTalentOrigins())
 
-	slot0.total = slot0.commanderVO.getResetTalentConsume(slot1)
-	slot0.resetGoldTxt.text = (slot0.parent.playerVO.gold < slot0.total and "<color=" .. COLOR_RED .. ">" .. slot0.total .. "</color>") or slot0.total
+	slot0.total = slot1:getResetTalentConsume()
+	slot0.resetGoldTxt.text = slot0.parent.playerVO.gold < slot0.total and "<color=" .. COLOR_RED .. ">" .. slot0.total .. "</color>" or slot0.total
 	slot0.resetPointTxt.text = slot1:getTotalPoint()
 	GetComponent(slot0.resetGoldTxt, typeof(Outline)).enabled = slot0.total <= slot3.gold
 end
 
-slot0.closeResetPanel = function (slot0)
+function slot0.closeResetPanel(slot0)
 	setActive(slot0.resetPanel, false)
 end
 
-slot0.openReplacePanel = function (slot0, slot1)
-	slot0:clearScrollTxts(slot0)
+function slot0.openReplacePanel(slot0, slot1)
 	setActive(slot0.replacePanel, true)
 	slot0.replacePanel:SetAsLastSibling()
 	slot0.replaceList:make(function (slot0, slot1, slot2)
 		if slot0 == UIItemList.EventUpdate then
-			onButton(slot1, slot2, function ()
-				if slot0.repalceToggle ~= slot1 then
-					slot2(slot3, slot4)
+			onButton(uv1, slot2, function ()
+				if uv0.repalceToggle ~= uv1 then
+					uv2(uv3, uv4)
 
-					if slot2.repalceToggle then
-						setActive(slot0.repalceToggle:Find("mark"), false)
+					if uv0.repalceToggle then
+						setActive(uv0.repalceToggle:Find("mark"), false)
 					end
 
-					slot0.repalceToggle = slot1
+					uv0.repalceToggle = uv1
 
-					setActive(slot1:Find("mark"), true)
+					setActive(uv1:Find("mark"), true)
 				end
 			end, SFX_PANEL)
-			GetImageSpriteFromAtlasAsync("CommanderTalentIcon/" .. slot0[slot1 + 1].getConfig(slot3, "icon"), "", slot2)
+			GetImageSpriteFromAtlasAsync("CommanderTalentIcon/" .. uv0[slot1 + 1]:getConfig("icon"), "", slot2)
 		end
 	end)
-	slot3(slot1, nil)
-	slot0.replaceList:align(#slot0.commanderVO.getTalents(slot2))
+	function (slot0, slot1)
+		uv0:updateTalentCard(uv0.replaceTargetTF, slot0)
+		uv0:updateTalentCard(uv0.replaceTalent, slot1)
+		onButton(uv0, uv0.replaceconfirmBtn, function ()
+			if uv0 and uv1 and uv2 then
+				if uv0:getConfig("worth") > 1 then
+					pg.MsgboxMgr.GetInstance():ShowMsgBox({
+						content = i18n("commander_ability_replace_warning"),
+						onYes = function ()
+							uv0:emit(CommanderInfoMediator.ON_LEARN_TALENT, uv1.id, uv2.id, uv3.id)
+							uv0:closeReplacePanel()
+						end
+					})
+				else
+					uv3:emit(CommanderInfoMediator.ON_LEARN_TALENT, uv2.id, uv1.id, uv0.id)
+					uv3:closeReplacePanel()
+				end
+			end
+		end, SFX_PANEL)
+	end(slot1, nil)
+	slot0.replaceList:align(#slot0.commanderVO:getTalents())
 end
 
-slot0.closeReplacePanel = function (slot0)
+function slot0.closeReplacePanel(slot0)
 	setActive(slot0.replacePanel, false)
 
 	if slot0.repalceToggle then
@@ -352,7 +353,7 @@ slot0.closeReplacePanel = function (slot0)
 	end
 end
 
-slot0.removeTimer = function (slot0)
+function slot0.removeTimer(slot0)
 	if slot0.timer then
 		slot0.timer:Stop()
 
@@ -360,12 +361,8 @@ slot0.removeTimer = function (slot0)
 	end
 end
 
-slot0.exit = function (slot0)
+function slot0.exit(slot0)
 	slot0:removeTimer()
-	slot0:clearScrollTxts(slot0)
-	slot0:clearScrollTxts(slot0.clearScrollTxts)
-	slot0:clearScrollTxts(slot0)
-	slot0:clearScrollTxts(slot0)
 end
 
 return slot0

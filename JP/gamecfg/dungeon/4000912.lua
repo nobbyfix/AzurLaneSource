@@ -7,8 +7,8 @@ return {
 			stageIndex = 1,
 			failCondition = 1,
 			timeCount = 180,
-			backGroundStageID = 1,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -72,8 +72,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 10116301,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -86,8 +86,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116301,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -100,8 +100,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116302,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								20,
 								0,
@@ -114,8 +114,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116302,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								20,
 								0,
@@ -141,8 +141,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 10116311,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -155,8 +155,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116302,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -169,8 +169,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116302,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -187,8 +187,8 @@ return {
 							interval = 10,
 							onceNumber = 3,
 							formation = 10006,
-							templateID = 593901,
 							delay = 0,
+							templateID = 593901,
 							totalNumber = 3,
 							weaponID = {
 								593901
@@ -214,9 +214,9 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 10116311,
-							delay = 0,
-							chance = 0.5,
 							moveCast = true,
+							chance = 0.5,
+							delay = 0,
 							corrdinate = {
 								20,
 								0,
@@ -229,9 +229,9 @@ return {
 						},
 						{
 							monsterTemplateID = 10116311,
-							delay = 0,
-							chance = 0.5,
 							moveCast = true,
+							chance = 0.5,
+							delay = 0,
 							corrdinate = {
 								20,
 								0,
@@ -244,8 +244,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116302,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -258,8 +258,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116301,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								10,
 								0,
@@ -272,8 +272,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116301,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								10,
 								0,
@@ -300,8 +300,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 10116306,
-							score = 0,
 							reinforceDelay = 6,
+							score = 0,
 							delay = 0,
 							moveCast = true,
 							corrdinate = {
@@ -312,8 +312,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116311,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								20,
 								0,
@@ -326,8 +326,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116311,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								20,
 								0,
@@ -342,8 +342,8 @@ return {
 					reinforcement = {
 						{
 							monsterTemplateID = 10116301,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -356,8 +356,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116302,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -370,8 +370,8 @@ return {
 						},
 						{
 							monsterTemplateID = 10116301,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,

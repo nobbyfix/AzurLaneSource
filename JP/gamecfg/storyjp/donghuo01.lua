@@ -1,14 +1,14 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "DONGHUO01",
+	once = true,
+	fadeType = 1,
 	occlusion = 2,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>「現れたすべての敵を破壊すれば、平穏が戻ってくると思っていた」</size>",
@@ -45,21 +45,21 @@ return {
 			}
 		},
 		{
-			say = "ここが「謎の信号」が示した海域……どうやら私たちは遅かったみたい",
+			side = 0,
 			actorName = "ヘレナ",
 			bgName = "bg_story_wing1",
-			side = 0,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			bgm = "story-6",
+			say = "ここが「謎の信号」が示した海域……どうやら私たちは遅かったみたい",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			actorName = "ノースカロライナ",
 			side = 0,
+			actorName = "ノースカロライナ",
 			bgName = "bg_story_wing1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -70,8 +70,8 @@ return {
 			}
 		},
 		{
-			actorName = "ヘレナ",
 			side = 0,
+			actorName = "ヘレナ",
 			bgName = "bg_story_wing1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -82,8 +82,8 @@ return {
 			}
 		},
 		{
-			actorName = "ワシントン",
 			side = 0,
+			actorName = "ワシントン",
 			bgName = "bg_story_wing1",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -94,8 +94,8 @@ return {
 			}
 		},
 		{
-			actorName = "ノースカロライナ",
 			side = 0,
+			actorName = "ノースカロライナ",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -106,8 +106,8 @@ return {
 			}
 		},
 		{
-			actorName = "ワシントン",
 			side = 0,
+			actorName = "ワシントン",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -118,8 +118,8 @@ return {
 			}
 		},
 		{
-			actorName = "ワシントン",
 			side = 0,
+			actorName = "ワシントン",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -130,8 +130,8 @@ return {
 			}
 		},
 		{
-			actorName = "ワシントン",
 			side = 0,
+			actorName = "ワシントン",
 			bgName = "bg_story_wing2",
 			nameColor = "#a9f548",
 			dir = 1,

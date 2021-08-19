@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "FUSHUN02",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"四天王の大冒険・撫順編\n\n<size=45>その二　お使いはゲーム機修理？</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-china",
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "長春！これ見て！",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "うわぁ…撫順姉さん、本当にあの古倉庫に行ったの……",
+			actor = 501030,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "うわぁ…撫順姉さん、本当にあの古倉庫に行ったの……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -214,15 +214,15 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "これは…携帯ゲーム機？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -247,12 +247,12 @@ return {
 			}
 		},
 		{
-			say = "ロングアイランドに聞けばいいって長春が言ってたよ！",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ロングアイランドに聞けばいいって長春が言ってたよ！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

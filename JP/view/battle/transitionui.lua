@@ -1,6 +1,6 @@
 slot0 = class("Transition", import("..base.BaseUI"))
 
-slot0.getUIName = function (slot0)
+function slot0.getUIName(slot0)
 	if not slot0.UIName then
 		slot0.UIName = slot0.contextData.loadUI
 	end
@@ -8,16 +8,13 @@ slot0.getUIName = function (slot0)
 	return slot1
 end
 
-slot0.init = function (slot0)
-	return
+function slot0.init(slot0)
 end
 
-slot0.didEnter = function (slot0)
-	return
+function slot0.didEnter(slot0)
 end
 
-slot0.onBackPressed = function (slot0)
-	return
+function slot0.onBackPressed(slot0)
 end
 
 return slot0

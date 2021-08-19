@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "航空辅助",
 	init_effect = "",
-	id = 5110,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 5110,
 	icon = 5110,
 	last_effect = "",
 	effect_list = {
@@ -32,14 +32,14 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {
 				""
 			},
 			arg_list = {
 				buff_id = 5112,
-				target = "TargetShipTypeFriendly",
 				exceptCaster = true,
+				target = "TargetShipTypeFriendly",
 				ship_type_list = {
 					6,
 					7
@@ -47,7 +47,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {
 				""
 			},

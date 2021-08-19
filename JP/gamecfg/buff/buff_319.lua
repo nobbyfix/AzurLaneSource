@@ -1,7 +1,7 @@
 return {
-	time = 15,
-	name = "进水",
 	init_effect = "",
+	name = "进水",
+	time = 15.1,
 	picture = "",
 	desc = "埃塞进水持续伤害",
 	stack = 1,
@@ -15,11 +15,11 @@ return {
 				"onUpdate"
 			},
 			arg_list = {
-				k = 0.3,
 				attr = "airPower",
+				number = 10,
 				time = 3,
 				dotType = 2,
-				number = 10
+				k = 0.3
 			}
 		}
 	}

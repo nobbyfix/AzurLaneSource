@@ -2,29 +2,29 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					maxHPRatio = 0.035
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.012
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 10902
 				}
@@ -34,29 +34,29 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					maxHPRatio = 0.04
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.014
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 10902
 				}
@@ -66,29 +66,29 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					maxHPRatio = 0.045
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.016
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 10902
 				}
@@ -98,29 +98,29 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					maxHPRatio = 0.05
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.018
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 10902
 				}
@@ -130,29 +130,29 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					maxHPRatio = 0.055
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.02
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 10902
 				}
@@ -162,29 +162,29 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					maxHPRatio = 0.06
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.022
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 10902
 				}
@@ -194,29 +194,29 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					maxHPRatio = 0.065
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.024
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 10902
 				}
@@ -226,29 +226,29 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					maxHPRatio = 0.07
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.026
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 10902
 				}
@@ -258,29 +258,29 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					maxHPRatio = 0.075
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.028
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 10902
 				}
@@ -290,29 +290,29 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetSelf",
+				targetAniEffect = "",
 				arg_list = {
 					maxHPRatio = 0.08
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillHeal",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					exceptCaster = true,
 					maxHPRatio = 0.03
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillAddBuff",
+				casterAniEffect = "",
 				target_choise = "TargetAllHelp",
+				targetAniEffect = "",
 				arg_list = {
 					buff_id = 10902
 				}
@@ -322,11 +322,11 @@ return {
 	uiEffect = "",
 	name = "救援组",
 	cd = 0,
-	picture = "0",
-	desc = "自身耐久回复3.5%（8.0%）",
 	painting = 1,
 	id = 10900,
+	picture = "0",
 	castCV = "skill",
+	desc = "自身耐久回复3.5%（8.0%）",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -337,29 +337,29 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillHeal",
+			casterAniEffect = "",
 			target_choise = "TargetSelf",
+			targetAniEffect = "",
 			arg_list = {
 				maxHPRatio = 0.035
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillHeal",
+			casterAniEffect = "",
 			target_choise = "TargetAllHelp",
+			targetAniEffect = "",
 			arg_list = {
 				exceptCaster = true,
 				maxHPRatio = 0.012
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetAllHelp",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 10902
 			}

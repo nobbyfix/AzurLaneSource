@@ -8,8 +8,8 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"春風の十字星\n\n<size=45>その二  ぼくにおまかせ！</size>",
@@ -19,13 +19,13 @@ return {
 			}
 		},
 		{
+			actor = 201110,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 201110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ふふん、こういうのはぼくに任せてよ！",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -36,10 +36,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 201101,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "三人",
@@ -84,12 +84,12 @@ return {
 			}
 		},
 		{
-			say = "フォックスハウンドちゃん、ワンワンみたい……",
+			actor = 201101,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201101,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "フォックスハウンドちゃん、ワンワンみたい……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -120,10 +120,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 201080,
+			nameColor = "#a9f548",
+			bgName = "bg_story_school",
+			side = 0,
 			dir = 1,
 			hideOther = true,
 			actorName = "コメット&クレセント",
@@ -162,15 +162,15 @@ return {
 			}
 		},
 		{
+			actor = 201110,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ここで途切れちゃったよ……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -195,12 +195,12 @@ return {
 			}
 		},
 		{
-			say = "ここは…！",
+			actor = 201101,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201101,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ここは…！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

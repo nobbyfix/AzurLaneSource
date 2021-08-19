@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AIDANG6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"お姉さんと一日デート\n\n<size=45>六　夕日の贈り物</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
+			say = "母港近くの高台",
 			side = 2,
+			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "母港近くの高台",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -78,11 +78,11 @@ return {
 			}
 		},
 		{
+			actor = 303120,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 303120,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指揮官はお姉さんとのデート、どうだった？楽しかった？",
 			typewriter = {
 				speed = 0.05,
@@ -212,8 +212,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			nameColor = "#a9f548",
+			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			say = "確かに、時々自分も目的を見失っている。",
@@ -223,8 +223,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			nameColor = "#a9f548",
+			side = 2,
 			bgName = "bg_story_outdoor",
 			dir = 1,
 			say = "様々な勢力の垣根を乗り越えたこの母港に集まるみんなの想いは、果たして……",
@@ -282,12 +282,12 @@ return {
 			}
 		},
 		{
+			actor = 303120,
 			side = 2,
 			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 303120,
-			nameColor = "#a9f548",
 			say = "私が今、一番欲しいもの――それをプレゼントしてくれないかな？",
 			typewriter = {
 				speed = 0.05,

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANGYING3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"お花見大会\n\n<size=45>その三  お花見の準備</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 306030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "は～い、こちらの準備もお願いしますね～",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,15 +34,15 @@ return {
 			}
 		},
 		{
+			actor = 307040,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "一人ではさすがに大変ですね…すみません！手伝ってくれる人を連れてきました！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -67,12 +67,12 @@ return {
 			}
 		},
 		{
-			say = "あらら、これは…",
+			actor = 306030,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "あらら、これは…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -151,12 +151,12 @@ return {
 			}
 		},
 		{
-			say = "うふふ、賑やかになってきましたね。",
+			actor = 306030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "うふふ、賑やかになってきましたね。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0

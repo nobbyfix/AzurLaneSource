@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "小竹丸2",
 	init_effect = "",
-	id = 40280,
+	name = "小竹丸2",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "旗舰减伤",
 	stack = 1,
-	color = "yellow",
+	id = 40280,
 	icon = 40280,
 	last_effect = "",
 	effect_list = {

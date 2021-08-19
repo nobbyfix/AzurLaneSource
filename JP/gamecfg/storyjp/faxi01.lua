@@ -1,14 +1,14 @@
 return {
 	fadeOut = 0.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FAXI01",
+	once = true,
+	fadeType = 1,
 	occlusion = 2,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>ーー光のあるところに影あり</size>",
@@ -39,8 +39,8 @@ return {
 		{
 			mode = 1,
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -85,8 +85,8 @@ return {
 		{
 			mode = 1,
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -109,10 +109,10 @@ return {
 			}
 		},
 		{
-			say = "「Méditerranée」――世界最大の地中海にして、夏は熱く乾燥し、冬は暖かく多雨という、世界全体から見ても独特な気候を有する。",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "level03",
+			say = "「Méditerranée」――世界最大の地中海にして、夏は熱く乾燥し、冬は暖かく多雨という、世界全体から見ても独特な気候を有する。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -185,8 +185,8 @@ return {
 		{
 			actor = 204030,
 			side = 1,
-			say = "本部にも考えがあるのでしょう。なにより、鉄血に占拠されたこの国は、もはや共に戦える味方とは言えませんことよ？",
 			dir = 1,
+			say = "本部にも考えがあるのでしょう。なにより、鉄血に占拠されたこの国は、もはや共に戦える味方とは言えませんことよ？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -287,9 +287,9 @@ return {
 		{
 			actor = 202130,
 			side = 0,
-			say = "セイレーンの信号を探知！エクセキュータ―型の新型艦だと推定！",
-			dir = 1,
 			soundeffect = "event:/ui/alarm",
+			dir = 1,
+			say = "セイレーンの信号を探知！エクセキュータ―型の新型艦だと推定！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

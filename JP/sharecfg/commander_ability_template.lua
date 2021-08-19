@@ -3,12 +3,12 @@ pg.commander_ability_template = {
 	[101] = {
 		cost = 0,
 		name = "新人砲術士·駆逐",
-		group_id = 10,
-		worth = 1,
-		desc = "<color=#3dc6ff>駆逐</color>の火力が3アップ",
 		next = 102,
+		worth = 1,
 		id = 101,
+		group_id = 10,
 		icon = "quzhu_paoji_1",
+		desc = "<color=#3dc6ff>駆逐</color>の火力が3アップ",
 		add = {
 			{
 				1,
@@ -30,12 +30,12 @@ pg.commander_ability_template = {
 	[102] = {
 		cost = 0,
 		name = "熟練砲術士·駆逐",
-		group_id = 10,
-		worth = 2,
-		desc = "<color=#3dc6ff>駆逐</color>の火力が4アップ",
 		next = 103,
+		worth = 2,
 		id = 102,
+		group_id = 10,
 		icon = "quzhu_paoji_2",
+		desc = "<color=#3dc6ff>駆逐</color>の火力が4アップ",
 		add = {
 			{
 				1,
@@ -57,12 +57,12 @@ pg.commander_ability_template = {
 	[103] = {
 		cost = 0,
 		name = "砲術長·駆逐",
-		group_id = 10,
-		worth = 3,
-		desc = "<color=#3dc6ff>駆逐</color>の火力が6アップ",
 		next = 0,
+		worth = 3,
 		id = 103,
+		group_id = 10,
 		icon = "quzhu_paoji_3",
+		desc = "<color=#3dc6ff>駆逐</color>の火力が6アップ",
 		add = {
 			{
 				1,
@@ -84,12 +84,12 @@ pg.commander_ability_template = {
 	[111] = {
 		cost = 0,
 		name = "新人砲術士·巡洋",
-		group_id = 11,
-		worth = 1,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が5アップ",
 		next = 112,
+		worth = 1,
 		id = 111,
+		group_id = 11,
 		icon = "xunyang_paoji_1",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が5アップ",
 		add = {
 			{
 				1,
@@ -121,12 +121,12 @@ pg.commander_ability_template = {
 	[112] = {
 		cost = 0,
 		name = "熟練砲術士·巡洋",
-		group_id = 11,
-		worth = 2,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が7アップ",
 		next = 113,
+		worth = 2,
 		id = 112,
+		group_id = 11,
 		icon = "xunyang_paoji_2",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が7アップ",
 		add = {
 			{
 				1,
@@ -158,12 +158,12 @@ pg.commander_ability_template = {
 	[113] = {
 		cost = 0,
 		name = "砲術長·巡洋",
-		group_id = 11,
-		worth = 3,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が10アップ",
 		next = 0,
+		worth = 3,
 		id = 113,
+		group_id = 11,
 		icon = "xunyang_paoji_3",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が10アップ",
 		add = {
 			{
 				1,
@@ -195,12 +195,12 @@ pg.commander_ability_template = {
 	[121] = {
 		cost = 0,
 		name = "新人砲術士·主力",
-		group_id = 12,
-		worth = 1,
-		desc = "<color=#3dc6ff>巡戦、戦艦、航戦、モニター</color>の火力が8アップ",
 		next = 122,
+		worth = 1,
 		id = 121,
+		group_id = 12,
 		icon = "zhanlie_paoji_1",
+		desc = "<color=#3dc6ff>巡戦、戦艦、航戦、モニター</color>の火力が8アップ",
 		add = {
 			{
 				1,
@@ -237,12 +237,12 @@ pg.commander_ability_template = {
 	[122] = {
 		cost = 0,
 		name = "熟練砲術士·主力",
-		group_id = 12,
-		worth = 2,
-		desc = "<color=#3dc6ff>巡戦、戦艦、航戦、モニター</color>の火力が11アップ",
 		next = 123,
+		worth = 2,
 		id = 122,
+		group_id = 12,
 		icon = "zhanlie_paoji_2",
+		desc = "<color=#3dc6ff>巡戦、戦艦、航戦、モニター</color>の火力が11アップ",
 		add = {
 			{
 				1,
@@ -279,12 +279,12 @@ pg.commander_ability_template = {
 	[123] = {
 		cost = 0,
 		name = "砲術長·主力",
-		group_id = 12,
-		worth = 3,
-		desc = "<color=#3dc6ff>巡戦、戦艦、航戦、モニター</color>の火力が16アップ",
 		next = 0,
+		worth = 3,
 		id = 123,
+		group_id = 12,
 		icon = "zhanlie_paoji_3",
+		desc = "<color=#3dc6ff>巡戦、戦艦、航戦、モニター</color>の火力が16アップ",
 		add = {
 			{
 				1,
@@ -321,12 +321,12 @@ pg.commander_ability_template = {
 	[201] = {
 		cost = 0,
 		name = "新人水雷士·潜水",
-		group_id = 20,
-		worth = 1,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が10アップ",
 		next = 202,
+		worth = 1,
 		id = 201,
+		group_id = 20,
 		icon = "qianting_leiji_1",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が10アップ",
 		add = {
 			{
 				1,
@@ -349,12 +349,12 @@ pg.commander_ability_template = {
 	[202] = {
 		cost = 0,
 		name = "熟練水雷士·潜水",
-		group_id = 20,
-		worth = 2,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が14アップ",
 		next = 203,
+		worth = 2,
 		id = 202,
+		group_id = 20,
 		icon = "qianting_leiji_2",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が14アップ",
 		add = {
 			{
 				1,
@@ -377,12 +377,12 @@ pg.commander_ability_template = {
 	[203] = {
 		cost = 0,
 		name = "水雷長·潜水",
-		group_id = 20,
-		worth = 3,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が20アップ",
 		next = 0,
+		worth = 3,
 		id = 203,
+		group_id = 20,
 		icon = "qianting_leiji_3",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が20アップ",
 		add = {
 			{
 				1,
@@ -405,12 +405,12 @@ pg.commander_ability_template = {
 	[211] = {
 		cost = 0,
 		name = "新人水雷士·駆逐",
-		group_id = 21,
-		worth = 1,
-		desc = "<color=#3dc6ff>駆逐</color>の雷装が10アップ",
 		next = 212,
+		worth = 1,
 		id = 211,
+		group_id = 21,
 		icon = "quzhu_leiji_1",
+		desc = "<color=#3dc6ff>駆逐</color>の雷装が10アップ",
 		add = {
 			{
 				1,
@@ -432,12 +432,12 @@ pg.commander_ability_template = {
 	[212] = {
 		cost = 0,
 		name = "熟練水雷士·駆逐",
-		group_id = 21,
-		worth = 2,
-		desc = "<color=#3dc6ff>駆逐</color>の雷装が14アップ",
 		next = 213,
+		worth = 2,
 		id = 212,
+		group_id = 21,
 		icon = "quzhu_leiji_2",
+		desc = "<color=#3dc6ff>駆逐</color>の雷装が14アップ",
 		add = {
 			{
 				1,
@@ -459,12 +459,12 @@ pg.commander_ability_template = {
 	[213] = {
 		cost = 0,
 		name = "水雷長·駆逐",
-		group_id = 21,
-		worth = 3,
-		desc = "<color=#3dc6ff>駆逐</color>の雷装が20アップ",
 		next = 0,
+		worth = 3,
 		id = 213,
+		group_id = 21,
 		icon = "quzhu_leiji_3",
+		desc = "<color=#3dc6ff>駆逐</color>の雷装が20アップ",
 		add = {
 			{
 				1,
@@ -486,12 +486,12 @@ pg.commander_ability_template = {
 	[221] = {
 		cost = 0,
 		name = "新人水雷士·巡洋",
-		group_id = 22,
-		worth = 1,
-		desc = "<color=#3dc6ff>軽巡、重巡</color>の雷装が6アップ",
 		next = 222,
+		worth = 1,
 		id = 221,
+		group_id = 22,
 		icon = "xunyang_leiji_1",
+		desc = "<color=#3dc6ff>軽巡、重巡</color>の雷装が6アップ",
 		add = {
 			{
 				1,
@@ -518,12 +518,12 @@ pg.commander_ability_template = {
 	[222] = {
 		cost = 0,
 		name = "熟練水雷士·巡洋",
-		group_id = 22,
-		worth = 2,
-		desc = "<color=#3dc6ff>軽巡、重巡</color>の雷装が8アップ",
 		next = 223,
+		worth = 2,
 		id = 222,
+		group_id = 22,
 		icon = "xunyang_leiji_2",
+		desc = "<color=#3dc6ff>軽巡、重巡</color>の雷装が8アップ",
 		add = {
 			{
 				1,
@@ -550,12 +550,12 @@ pg.commander_ability_template = {
 	[223] = {
 		cost = 0,
 		name = "水雷長·巡洋",
-		group_id = 22,
-		worth = 3,
-		desc = "<color=#3dc6ff>軽巡、重巡</color>の雷装が12アップ",
 		next = 0,
+		worth = 3,
 		id = 223,
+		group_id = 22,
 		icon = "xunyang_leiji_3",
+		desc = "<color=#3dc6ff>軽巡、重巡</color>の雷装が12アップ",
 		add = {
 			{
 				1,
@@ -582,12 +582,12 @@ pg.commander_ability_template = {
 	[301] = {
 		cost = 0,
 		name = "ルーキーP·空母",
-		group_id = 30,
-		worth = 1,
-		desc = "<color=#3dc6ff>軽母、空母</color>の航空が10アップ",
 		next = 302,
+		worth = 1,
 		id = 301,
+		group_id = 30,
 		icon = "hangmu_hangkong_1",
+		desc = "<color=#3dc6ff>軽母、空母</color>の航空が10アップ",
 		add = {
 			{
 				1,
@@ -614,12 +614,12 @@ pg.commander_ability_template = {
 	[302] = {
 		cost = 0,
 		name = "ベテランP·空母",
-		group_id = 30,
-		worth = 2,
-		desc = "<color=#3dc6ff>軽母、空母</color>の航空が14アップ",
 		next = 303,
+		worth = 2,
 		id = 302,
+		group_id = 30,
 		icon = "hangmu_hangkong_2",
+		desc = "<color=#3dc6ff>軽母、空母</color>の航空が14アップ",
 		add = {
 			{
 				1,
@@ -646,12 +646,12 @@ pg.commander_ability_template = {
 	[303] = {
 		cost = 0,
 		name = "エースP·空母",
-		group_id = 30,
-		worth = 3,
-		desc = "<color=#3dc6ff>軽母、空母</color>の航空が20アップ",
 		next = 0,
+		worth = 3,
 		id = 303,
+		group_id = 30,
 		icon = "hangmu_hangkong_3",
+		desc = "<color=#3dc6ff>軽母、空母</color>の航空が20アップ",
 		add = {
 			{
 				1,
@@ -678,12 +678,12 @@ pg.commander_ability_template = {
 	[311] = {
 		cost = 0,
 		name = "ルーキーP·特殊",
-		group_id = 31,
-		worth = 1,
-		desc = "<color=#3dc6ff>航戦</color>の航空が5アップ",
 		next = 312,
+		worth = 1,
 		id = 311,
+		group_id = 31,
 		icon = "teshu_hangkong_1",
+		desc = "<color=#3dc6ff>航戦</color>の航空が5アップ",
 		add = {
 			{
 				1,
@@ -705,12 +705,12 @@ pg.commander_ability_template = {
 	[312] = {
 		cost = 0,
 		name = "ベテランP·特殊",
-		group_id = 31,
-		worth = 2,
-		desc = "<color=#3dc6ff>航戦</color>の航空が7アップ",
 		next = 313,
+		worth = 2,
 		id = 312,
+		group_id = 31,
 		icon = "teshu_hangkong_2",
+		desc = "<color=#3dc6ff>航戦</color>の航空が7アップ",
 		add = {
 			{
 				1,
@@ -732,12 +732,12 @@ pg.commander_ability_template = {
 	[313] = {
 		cost = 0,
 		name = "エースP·特殊",
-		group_id = 31,
-		worth = 3,
-		desc = "<color=#3dc6ff>航戦</color>の航空が10アップ",
 		next = 0,
+		worth = 3,
 		id = 313,
+		group_id = 31,
 		icon = "teshu_hangkong_3",
+		desc = "<color=#3dc6ff>航戦</color>の航空が10アップ",
 		add = {
 			{
 				1,
@@ -759,12 +759,12 @@ pg.commander_ability_template = {
 	[401] = {
 		cost = 0,
 		name = "対空砲手·前衛",
-		group_id = 40,
-		worth = 1,
-		desc = "<color=#3dc6ff>前衛</color>の対空が8アップ",
 		next = 402,
+		worth = 1,
 		id = 401,
+		group_id = 40,
 		icon = "quzhu_fangkong_1",
+		desc = "<color=#3dc6ff>前衛</color>の対空が8アップ",
 		add = {
 			{
 				1,
@@ -789,12 +789,12 @@ pg.commander_ability_template = {
 	[402] = {
 		cost = 0,
 		name = "熟練対空砲手·前衛",
-		group_id = 40,
-		worth = 2,
-		desc = "<color=#3dc6ff>前衛</color>の対空が11アップ",
 		next = 403,
+		worth = 2,
 		id = 402,
+		group_id = 40,
 		icon = "quzhu_fangkong_2",
+		desc = "<color=#3dc6ff>前衛</color>の対空が11アップ",
 		add = {
 			{
 				1,
@@ -819,12 +819,12 @@ pg.commander_ability_template = {
 	[403] = {
 		cost = 0,
 		name = "対空砲達人·前衛",
-		group_id = 40,
-		worth = 3,
-		desc = "<color=#3dc6ff>前衛</color>の対空が16アップ",
 		next = 0,
+		worth = 3,
 		id = 403,
+		group_id = 40,
 		icon = "quzhu_fangkong_3",
+		desc = "<color=#3dc6ff>前衛</color>の対空が16アップ",
 		add = {
 			{
 				1,
@@ -849,12 +849,12 @@ pg.commander_ability_template = {
 	[411] = {
 		cost = 0,
 		name = "対空砲手·主力",
-		group_id = 41,
-		worth = 1,
-		desc = "<color=#3dc6ff>主力</color>の対空が10アップ",
 		next = 412,
+		worth = 1,
 		id = 411,
+		group_id = 41,
 		icon = "zhanlie_fangkong_1",
+		desc = "<color=#3dc6ff>主力</color>の対空が10アップ",
 		add = {
 			{
 				1,
@@ -882,12 +882,12 @@ pg.commander_ability_template = {
 	[412] = {
 		cost = 0,
 		name = "熟練対空砲手·主力",
-		group_id = 41,
-		worth = 2,
-		desc = "<color=#3dc6ff>主力</color>の対空が14アップ",
 		next = 413,
+		worth = 2,
 		id = 412,
+		group_id = 41,
 		icon = "zhanlie_fangkong_2",
+		desc = "<color=#3dc6ff>主力</color>の対空が14アップ",
 		add = {
 			{
 				1,
@@ -915,12 +915,12 @@ pg.commander_ability_template = {
 	[413] = {
 		cost = 0,
 		name = "対空砲達人·主力",
-		group_id = 41,
-		worth = 3,
-		desc = "<color=#3dc6ff>主力</color>の対空が20アップ",
 		next = 0,
+		worth = 3,
 		id = 413,
+		group_id = 41,
 		icon = "zhanlie_fangkong_3",
+		desc = "<color=#3dc6ff>主力</color>の対空が20アップ",
 		add = {
 			{
 				1,
@@ -948,12 +948,12 @@ pg.commander_ability_template = {
 	[501] = {
 		cost = 0,
 		name = "新人聴音手·前衛",
-		group_id = 50,
-		worth = 1,
-		desc = "<color=#3dc6ff>前衛</color>の対潜が4アップ",
 		next = 502,
+		worth = 1,
 		id = 501,
+		group_id = 50,
 		icon = "quzhu_fanqian_1",
+		desc = "<color=#3dc6ff>前衛</color>の対潜が4アップ",
 		add = {
 			{
 				1,
@@ -978,12 +978,12 @@ pg.commander_ability_template = {
 	[502] = {
 		cost = 0,
 		name = "熟練聴音手·前衛",
-		group_id = 50,
-		worth = 2,
-		desc = "<color=#3dc6ff>前衛</color>の対潜が5アップ",
 		next = 503,
+		worth = 2,
 		id = 502,
+		group_id = 50,
 		icon = "quzhu_fanqian_2",
+		desc = "<color=#3dc6ff>前衛</color>の対潜が5アップ",
 		add = {
 			{
 				1,
@@ -1008,12 +1008,12 @@ pg.commander_ability_template = {
 	[503] = {
 		cost = 0,
 		name = "達人聴音手·前衛",
-		group_id = 50,
-		worth = 3,
-		desc = "<color=#3dc6ff>前衛</color>の対潜が8アップ",
 		next = 0,
+		worth = 3,
 		id = 503,
+		group_id = 50,
 		icon = "quzhu_fanqian_3",
+		desc = "<color=#3dc6ff>前衛</color>の対潜が8アップ",
 		add = {
 			{
 				1,
@@ -1038,12 +1038,12 @@ pg.commander_ability_template = {
 	[511] = {
 		cost = 0,
 		name = "新人聴音手·主力",
-		group_id = 51,
-		worth = 1,
-		desc = "<color=#3dc6ff>主力</color>の対潜が3アップ",
 		next = 512,
+		worth = 1,
 		id = 511,
+		group_id = 51,
 		icon = "qingmu_fanqian_1",
+		desc = "<color=#3dc6ff>主力</color>の対潜が3アップ",
 		add = {
 			{
 				1,
@@ -1071,12 +1071,12 @@ pg.commander_ability_template = {
 	[512] = {
 		cost = 0,
 		name = "熟練聴音手·主力",
-		group_id = 51,
-		worth = 2,
-		desc = "<color=#3dc6ff>主力</color>の対潜が4アップ",
 		next = 513,
+		worth = 2,
 		id = 512,
+		group_id = 51,
 		icon = "qingmu_fanqian_2",
+		desc = "<color=#3dc6ff>主力</color>の対潜が4アップ",
 		add = {
 			{
 				1,
@@ -1104,12 +1104,12 @@ pg.commander_ability_template = {
 	[513] = {
 		cost = 0,
 		name = "達人聴音手·主力",
-		group_id = 51,
-		worth = 3,
-		desc = "<color=#3dc6ff>主力</color>の対潜が6アップ",
 		next = 0,
+		worth = 3,
 		id = 513,
+		group_id = 51,
 		icon = "qingmu_fanqian_3",
+		desc = "<color=#3dc6ff>主力</color>の対潜が6アップ",
 		add = {
 			{
 				1,
@@ -1137,12 +1137,12 @@ pg.commander_ability_template = {
 	[601] = {
 		cost = 0,
 		name = "新人装填手·潜水",
-		group_id = 60,
-		worth = 1,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の装填が3アップ",
 		next = 602,
+		worth = 1,
 		id = 601,
+		group_id = 60,
 		icon = "qianting_one_1",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の装填が3アップ",
 		add = {
 			{
 				1,
@@ -1165,12 +1165,12 @@ pg.commander_ability_template = {
 	[602] = {
 		cost = 0,
 		name = "熟練装填手·潜水",
-		group_id = 60,
-		worth = 2,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の装填が4アップ",
 		next = 603,
+		worth = 2,
 		id = 602,
+		group_id = 60,
 		icon = "qianting_one_2",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の装填が4アップ",
 		add = {
 			{
 				1,
@@ -1193,12 +1193,12 @@ pg.commander_ability_template = {
 	[603] = {
 		cost = 0,
 		name = "高速装填手·潜水",
-		group_id = 60,
-		worth = 3,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の装填が6アップ",
 		next = 0,
+		worth = 3,
 		id = 603,
+		group_id = 60,
 		icon = "qianting_one_3",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の装填が6アップ",
 		add = {
 			{
 				1,
@@ -1221,12 +1221,12 @@ pg.commander_ability_template = {
 	[611] = {
 		cost = 0,
 		name = "新人装填手·駆逐",
-		group_id = 61,
-		worth = 1,
-		desc = "<color=#3dc6ff>駆逐</color>の装填が5アップ",
 		next = 612,
+		worth = 1,
 		id = 611,
+		group_id = 61,
 		icon = "quzhu_one_1",
+		desc = "<color=#3dc6ff>駆逐</color>の装填が5アップ",
 		add = {
 			{
 				1,
@@ -1248,12 +1248,12 @@ pg.commander_ability_template = {
 	[612] = {
 		cost = 0,
 		name = "熟練装填手·駆逐",
-		group_id = 61,
-		worth = 2,
-		desc = "<color=#3dc6ff>駆逐</color>の装填が7アップ",
 		next = 613,
+		worth = 2,
 		id = 612,
+		group_id = 61,
 		icon = "quzhu_one_2",
+		desc = "<color=#3dc6ff>駆逐</color>の装填が7アップ",
 		add = {
 			{
 				1,
@@ -1275,12 +1275,12 @@ pg.commander_ability_template = {
 	[613] = {
 		cost = 0,
 		name = "高速装填手·駆逐",
-		group_id = 61,
-		worth = 3,
-		desc = "<color=#3dc6ff>駆逐</color>の装填が10アップ",
 		next = 0,
+		worth = 3,
 		id = 613,
+		group_id = 61,
 		icon = "quzhu_one_3",
+		desc = "<color=#3dc6ff>駆逐</color>の装填が10アップ",
 		add = {
 			{
 				1,
@@ -1302,12 +1302,12 @@ pg.commander_ability_template = {
 	[621] = {
 		cost = 0,
 		name = "新人装填手·巡洋",
-		group_id = 62,
-		worth = 1,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の装填が4アップ",
 		next = 622,
+		worth = 1,
 		id = 621,
+		group_id = 62,
 		icon = "xunyang_one_1",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の装填が4アップ",
 		add = {
 			{
 				1,
@@ -1339,12 +1339,12 @@ pg.commander_ability_template = {
 	[622] = {
 		cost = 0,
 		name = "熟練装填手·巡洋",
-		group_id = 62,
-		worth = 2,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の装填が5アップ",
 		next = 623,
+		worth = 2,
 		id = 622,
+		group_id = 62,
 		icon = "xunyang_one_2",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の装填が5アップ",
 		add = {
 			{
 				1,
@@ -1376,12 +1376,12 @@ pg.commander_ability_template = {
 	[623] = {
 		cost = 0,
 		name = "高速装填手·巡洋",
-		group_id = 62,
-		worth = 3,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の装填が8アップ",
 		next = 0,
+		worth = 3,
 		id = 623,
+		group_id = 62,
 		icon = "xunyang_one_3",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の装填が8アップ",
 		add = {
 			{
 				1,
@@ -1413,12 +1413,12 @@ pg.commander_ability_template = {
 	[631] = {
 		cost = 0,
 		name = "新人装填手·戦艦",
-		group_id = 63,
-		worth = 1,
-		desc = "<color=#3dc6ff>戦艦、巡戦、航戦</color>の装填が3アップ",
 		next = 632,
+		worth = 1,
 		id = 631,
+		group_id = 63,
 		icon = "zhanlie_one_1",
+		desc = "<color=#3dc6ff>戦艦、巡戦、航戦</color>の装填が3アップ",
 		add = {
 			{
 				1,
@@ -1450,12 +1450,12 @@ pg.commander_ability_template = {
 	[632] = {
 		cost = 0,
 		name = "熟練装填手·戦艦",
-		group_id = 63,
-		worth = 2,
-		desc = "<color=#3dc6ff>戦艦、巡戦、航戦</color>の装填が4アップ",
 		next = 633,
+		worth = 2,
 		id = 632,
+		group_id = 63,
 		icon = "zhanlie_one_2",
+		desc = "<color=#3dc6ff>戦艦、巡戦、航戦</color>の装填が4アップ",
 		add = {
 			{
 				1,
@@ -1487,12 +1487,12 @@ pg.commander_ability_template = {
 	[633] = {
 		cost = 0,
 		name = "高速装填手·戦艦",
-		group_id = 63,
-		worth = 3,
-		desc = "<color=#3dc6ff>戦艦、巡戦、航戦</color>の装填が6アップ",
 		next = 0,
+		worth = 3,
 		id = 633,
+		group_id = 63,
 		icon = "zhanlie_one_3",
+		desc = "<color=#3dc6ff>戦艦、巡戦、航戦</color>の装填が6アップ",
 		add = {
 			{
 				1,
@@ -1524,12 +1524,12 @@ pg.commander_ability_template = {
 	[641] = {
 		cost = 0,
 		name = "新人整備士",
-		group_id = 64,
-		worth = 1,
-		desc = "<color=#3dc6ff>軽母、空母</color>の装填が3アップ",
 		next = 642,
+		worth = 1,
 		id = 641,
+		group_id = 64,
 		icon = "hangmu_one_1",
+		desc = "<color=#3dc6ff>軽母、空母</color>の装填が3アップ",
 		add = {
 			{
 				1,
@@ -1556,12 +1556,12 @@ pg.commander_ability_template = {
 	[642] = {
 		cost = 0,
 		name = "熟練整備士",
-		group_id = 64,
-		worth = 2,
-		desc = "<color=#3dc6ff>軽母、空母</color>の装填が4アップ",
 		next = 643,
+		worth = 2,
 		id = 642,
+		group_id = 64,
 		icon = "hangmu_one_2",
+		desc = "<color=#3dc6ff>軽母、空母</color>の装填が4アップ",
 		add = {
 			{
 				1,
@@ -1588,12 +1588,12 @@ pg.commander_ability_template = {
 	[643] = {
 		cost = 0,
 		name = "達人整備士",
-		group_id = 64,
-		worth = 3,
-		desc = "<color=#3dc6ff>軽母、空母</color>の装填が6アップ",
 		next = 0,
+		worth = 3,
 		id = 643,
+		group_id = 64,
 		icon = "hangmu_one_3",
+		desc = "<color=#3dc6ff>軽母、空母</color>の装填が6アップ",
 		add = {
 			{
 				1,
@@ -1620,19 +1620,20 @@ pg.commander_ability_template = {
 	[651] = {
 		cost = 0,
 		name = "新人装填手·特殊",
-		group_id = 65,
-		worth = 1,
-		desc = "<color=#3dc6ff>モニター、工作艦</color>の装填が3アップ",
 		next = 652,
+		worth = 1,
 		id = 651,
+		group_id = 65,
 		icon = "teshu_one_1",
+		desc = "<color=#3dc6ff>モニター、工作艦</color>の装填が3アップ",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				6,
 				3
@@ -1652,19 +1653,20 @@ pg.commander_ability_template = {
 	[652] = {
 		cost = 0,
 		name = "熟練装填手·特殊",
-		group_id = 65,
-		worth = 2,
-		desc = "<color=#3dc6ff>モニター、工作艦</color>の装填が4アップ",
 		next = 653,
+		worth = 2,
 		id = 652,
+		group_id = 65,
 		icon = "teshu_one_2",
+		desc = "<color=#3dc6ff>モニター、工作艦</color>の装填が4アップ",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				6,
 				4
@@ -1684,19 +1686,20 @@ pg.commander_ability_template = {
 	[653] = {
 		cost = 0,
 		name = "達人装填手·特殊",
-		group_id = 65,
-		worth = 3,
-		desc = "<color=#3dc6ff>モニター、工作艦</color>の装填が6アップ",
 		next = 0,
+		worth = 3,
 		id = 653,
+		group_id = 65,
 		icon = "teshu_one_3",
+		desc = "<color=#3dc6ff>モニター、工作艦</color>の装填が6アップ",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				6,
 				6
@@ -1716,12 +1719,12 @@ pg.commander_ability_template = {
 	[701] = {
 		cost = 0,
 		name = "新人機関士·潜水",
-		group_id = 70,
-		worth = 1,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の耐久が25アップ",
 		next = 702,
+		worth = 1,
 		id = 701,
+		group_id = 70,
 		icon = "qianting_naijiu_1",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の耐久が25アップ",
 		add = {
 			{
 				1,
@@ -1744,12 +1747,12 @@ pg.commander_ability_template = {
 	[702] = {
 		cost = 0,
 		name = "熟練機関士·潜水",
-		group_id = 70,
-		worth = 2,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の耐久が35アップ",
 		next = 703,
+		worth = 2,
 		id = 702,
+		group_id = 70,
 		icon = "qianting_naijiu_2",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の耐久が35アップ",
 		add = {
 			{
 				1,
@@ -1772,12 +1775,12 @@ pg.commander_ability_template = {
 	[703] = {
 		cost = 0,
 		name = "機関長·潜水",
-		group_id = 70,
-		worth = 3,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の耐久が50アップ",
 		next = 0,
+		worth = 3,
 		id = 703,
+		group_id = 70,
 		icon = "qianting_naijiu_3",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の耐久が50アップ",
 		add = {
 			{
 				1,
@@ -1800,12 +1803,12 @@ pg.commander_ability_template = {
 	[711] = {
 		cost = 0,
 		name = "新人機関士·駆逐",
-		group_id = 71,
-		worth = 1,
-		desc = "<color=#3dc6ff>駆逐</color>の耐久が30アップ",
 		next = 712,
+		worth = 1,
 		id = 711,
+		group_id = 71,
 		icon = "quzhu_naijiu_1",
+		desc = "<color=#3dc6ff>駆逐</color>の耐久が30アップ",
 		add = {
 			{
 				1,
@@ -1827,12 +1830,12 @@ pg.commander_ability_template = {
 	[712] = {
 		cost = 0,
 		name = "熟練機関士·駆逐",
-		group_id = 71,
-		worth = 2,
-		desc = "<color=#3dc6ff>駆逐</color>の耐久が42アップ",
 		next = 713,
+		worth = 2,
 		id = 712,
+		group_id = 71,
 		icon = "quzhu_naijiu_2",
+		desc = "<color=#3dc6ff>駆逐</color>の耐久が42アップ",
 		add = {
 			{
 				1,
@@ -1854,12 +1857,12 @@ pg.commander_ability_template = {
 	[713] = {
 		cost = 0,
 		name = "機関長·駆逐",
-		group_id = 71,
-		worth = 3,
-		desc = "<color=#3dc6ff>駆逐</color>の耐久が60アップ",
 		next = 0,
+		worth = 3,
 		id = 713,
+		group_id = 71,
 		icon = "quzhu_naijiu_3",
+		desc = "<color=#3dc6ff>駆逐</color>の耐久が60アップ",
 		add = {
 			{
 				1,
@@ -1881,12 +1884,12 @@ pg.commander_ability_template = {
 	[721] = {
 		cost = 0,
 		name = "新人機関士·巡洋",
-		group_id = 72,
-		worth = 1,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の耐久が50アップ",
 		next = 722,
+		worth = 1,
 		id = 721,
+		group_id = 72,
 		icon = "xunyang_naijiu_1",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の耐久が50アップ",
 		add = {
 			{
 				1,
@@ -1918,12 +1921,12 @@ pg.commander_ability_template = {
 	[722] = {
 		cost = 0,
 		name = "熟練機関士·巡洋",
-		group_id = 72,
-		worth = 2,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の耐久が70アップ",
 		next = 723,
+		worth = 2,
 		id = 722,
+		group_id = 72,
 		icon = "xunyang_naijiu_2",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の耐久が70アップ",
 		add = {
 			{
 				1,
@@ -1955,12 +1958,12 @@ pg.commander_ability_template = {
 	[723] = {
 		cost = 0,
 		name = "機関長·巡洋",
-		group_id = 72,
-		worth = 3,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の耐久が100アップ",
 		next = 0,
+		worth = 3,
 		id = 723,
+		group_id = 72,
 		icon = "xunyang_naijiu_3",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の耐久が100アップ",
 		add = {
 			{
 				1,
@@ -1992,12 +1995,12 @@ pg.commander_ability_template = {
 	[731] = {
 		cost = 0,
 		name = "新人機関士·戦艦",
-		group_id = 73,
-		worth = 1,
-		desc = "<color=#3dc6ff>巡戦、戦艦、航戦</color>の耐久が60アップ",
 		next = 732,
+		worth = 1,
 		id = 731,
+		group_id = 73,
 		icon = "zhanlie_naijiu_1",
+		desc = "<color=#3dc6ff>巡戦、戦艦、航戦</color>の耐久が60アップ",
 		add = {
 			{
 				1,
@@ -2029,12 +2032,12 @@ pg.commander_ability_template = {
 	[732] = {
 		cost = 0,
 		name = "熟練機関士·戦艦",
-		group_id = 73,
-		worth = 2,
-		desc = "<color=#3dc6ff>巡戦、戦艦、航戦</color>の耐久が84アップ",
 		next = 733,
+		worth = 2,
 		id = 732,
+		group_id = 73,
 		icon = "zhanlie_naijiu_2",
+		desc = "<color=#3dc6ff>巡戦、戦艦、航戦</color>の耐久が84アップ",
 		add = {
 			{
 				1,
@@ -2066,12 +2069,12 @@ pg.commander_ability_template = {
 	[733] = {
 		cost = 0,
 		name = "機関長·戦艦",
-		group_id = 73,
-		worth = 3,
-		desc = "<color=#3dc6ff>巡戦、戦艦、航戦</color>の耐久が120アップ",
 		next = 0,
+		worth = 3,
 		id = 733,
+		group_id = 73,
 		icon = "zhanlie_naijiu_3",
+		desc = "<color=#3dc6ff>巡戦、戦艦、航戦</color>の耐久が120アップ",
 		add = {
 			{
 				1,
@@ -2103,12 +2106,12 @@ pg.commander_ability_template = {
 	[741] = {
 		cost = 0,
 		name = "新人機関士·空母",
-		group_id = 74,
-		worth = 1,
-		desc = "<color=#3dc6ff>軽母、空母</color>の耐久が50アップ",
 		next = 742,
+		worth = 1,
 		id = 741,
+		group_id = 74,
 		icon = "hangmu_naijiu_1",
+		desc = "<color=#3dc6ff>軽母、空母</color>の耐久が50アップ",
 		add = {
 			{
 				1,
@@ -2135,12 +2138,12 @@ pg.commander_ability_template = {
 	[742] = {
 		cost = 0,
 		name = "熟練機関士·空母",
-		group_id = 74,
-		worth = 2,
-		desc = "<color=#3dc6ff>軽母、空母</color>の耐久が70アップ",
 		next = 743,
+		worth = 2,
 		id = 742,
+		group_id = 74,
 		icon = "hangmu_naijiu_2",
+		desc = "<color=#3dc6ff>軽母、空母</color>の耐久が70アップ",
 		add = {
 			{
 				1,
@@ -2167,12 +2170,12 @@ pg.commander_ability_template = {
 	[743] = {
 		cost = 0,
 		name = "機関長·空母",
-		group_id = 74,
-		worth = 3,
-		desc = "<color=#3dc6ff>軽母、空母</color>の耐久が100アップ",
 		next = 0,
+		worth = 3,
 		id = 743,
+		group_id = 74,
 		icon = "hangmu_naijiu_3",
+		desc = "<color=#3dc6ff>軽母、空母</color>の耐久が100アップ",
 		add = {
 			{
 				1,
@@ -2199,19 +2202,20 @@ pg.commander_ability_template = {
 	[751] = {
 		cost = 0,
 		name = "新人機関士·特殊",
-		group_id = 75,
-		worth = 1,
-		desc = "<color=#3dc6ff>モニター、工作艦</color>の耐久が40アップ",
 		next = 752,
+		worth = 1,
 		id = 751,
+		group_id = 75,
 		icon = "teshu_naijiu_1",
+		desc = "<color=#3dc6ff>モニター、工作艦</color>の耐久が40アップ",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				1,
 				40
@@ -2231,19 +2235,20 @@ pg.commander_ability_template = {
 	[752] = {
 		cost = 0,
 		name = "熟練機関士·特殊",
-		group_id = 75,
-		worth = 2,
-		desc = "<color=#3dc6ff>モニター、工作艦</color>の耐久が56アップ",
 		next = 753,
+		worth = 2,
 		id = 752,
+		group_id = 75,
 		icon = "teshu_naijiu_2",
+		desc = "<color=#3dc6ff>モニター、工作艦</color>の耐久が56アップ",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				1,
 				56
@@ -2263,19 +2268,20 @@ pg.commander_ability_template = {
 	[753] = {
 		cost = 0,
 		name = "機関長·特殊",
-		group_id = 75,
-		worth = 3,
-		desc = "<color=#3dc6ff>モニター、工作艦</color>の耐久が80アップ",
 		next = 0,
+		worth = 3,
 		id = 753,
+		group_id = 75,
 		icon = "teshu_naijiu_3",
+		desc = "<color=#3dc6ff>モニター、工作艦</color>の耐久が80アップ",
 		add = {
 			{
 				1,
 				{},
 				{
 					12,
-					13
+					13,
+					19
 				},
 				1,
 				80
@@ -2295,12 +2301,12 @@ pg.commander_ability_template = {
 	[801] = {
 		cost = 0,
 		name = "新人見張員·潜水",
-		group_id = 80,
-		worth = 1,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の命中が2アップ",
 		next = 802,
+		worth = 1,
 		id = 801,
+		group_id = 80,
 		icon = "qianting_one_1",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の命中が2アップ",
 		add = {
 			{
 				1,
@@ -2323,12 +2329,12 @@ pg.commander_ability_template = {
 	[802] = {
 		cost = 0,
 		name = "熟練見張員·潜水",
-		group_id = 80,
-		worth = 2,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の命中が3アップ",
 		next = 803,
+		worth = 2,
 		id = 802,
+		group_id = 80,
 		icon = "qianting_one_2",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の命中が3アップ",
 		add = {
 			{
 				1,
@@ -2351,12 +2357,12 @@ pg.commander_ability_template = {
 	[803] = {
 		cost = 0,
 		name = "達人見張員·潜水",
-		group_id = 80,
-		worth = 3,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の命中が5アップ",
 		next = 0,
+		worth = 3,
 		id = 803,
+		group_id = 80,
 		icon = "qianting_one_3",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の命中が5アップ",
 		add = {
 			{
 				1,
@@ -2379,12 +2385,12 @@ pg.commander_ability_template = {
 	[811] = {
 		cost = 0,
 		name = "新人見張員·前衛",
-		group_id = 81,
-		worth = 1,
-		desc = "<color=#3dc6ff>前衛</color>の命中が3アップ",
 		next = 812,
+		worth = 1,
 		id = 811,
+		group_id = 81,
 		icon = "quzhu_one_1",
+		desc = "<color=#3dc6ff>前衛</color>の命中が3アップ",
 		add = {
 			{
 				1,
@@ -2409,12 +2415,12 @@ pg.commander_ability_template = {
 	[812] = {
 		cost = 0,
 		name = "熟練見張員·前衛",
-		group_id = 81,
-		worth = 2,
-		desc = "<color=#3dc6ff>前衛</color>の命中が4アップ",
 		next = 813,
+		worth = 2,
 		id = 812,
+		group_id = 81,
 		icon = "quzhu_one_2",
+		desc = "<color=#3dc6ff>前衛</color>の命中が4アップ",
 		add = {
 			{
 				1,
@@ -2439,12 +2445,12 @@ pg.commander_ability_template = {
 	[813] = {
 		cost = 0,
 		name = "達人見張員·前衛",
-		group_id = 81,
-		worth = 3,
-		desc = "<color=#3dc6ff>前衛</color>の命中が6アップ",
 		next = 0,
+		worth = 3,
 		id = 813,
+		group_id = 81,
 		icon = "quzhu_one_3",
+		desc = "<color=#3dc6ff>前衛</color>の命中が6アップ",
 		add = {
 			{
 				1,
@@ -2469,12 +2475,12 @@ pg.commander_ability_template = {
 	[821] = {
 		cost = 0,
 		name = "新人見張員·主力",
-		group_id = 82,
-		worth = 1,
-		desc = "<color=#3dc6ff>主力</color>の命中が1アップ",
 		next = 822,
+		worth = 1,
 		id = 821,
+		group_id = 82,
 		icon = "zhanlie_one_1",
+		desc = "<color=#3dc6ff>主力</color>の命中が1アップ",
 		add = {
 			{
 				1,
@@ -2502,12 +2508,12 @@ pg.commander_ability_template = {
 	[822] = {
 		cost = 0,
 		name = "熟練見張員·主力",
-		group_id = 82,
-		worth = 2,
-		desc = "<color=#3dc6ff>主力</color>の命中が2アップ",
 		next = 823,
+		worth = 2,
 		id = 822,
+		group_id = 82,
 		icon = "zhanlie_one_2",
+		desc = "<color=#3dc6ff>主力</color>の命中が2アップ",
 		add = {
 			{
 				1,
@@ -2535,12 +2541,12 @@ pg.commander_ability_template = {
 	[823] = {
 		cost = 0,
 		name = "達人見張員·主力",
-		group_id = 82,
-		worth = 3,
-		desc = "<color=#3dc6ff>主力</color>の命中が3アップ",
 		next = 0,
+		worth = 3,
 		id = 823,
+		group_id = 82,
 		icon = "zhanlie_one_3",
+		desc = "<color=#3dc6ff>主力</color>の命中が3アップ",
 		add = {
 			{
 				1,
@@ -2568,12 +2574,12 @@ pg.commander_ability_template = {
 	[901] = {
 		cost = 0,
 		name = "操舵手·小型艦",
-		group_id = 90,
-		worth = 1,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母、駆逐</color>の回避が5アップ",
 		next = 902,
+		worth = 1,
 		id = 901,
+		group_id = 90,
 		icon = "quzhu_one_1",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母、駆逐</color>の回避が5アップ",
 		add = {
 			{
 				1,
@@ -2601,12 +2607,12 @@ pg.commander_ability_template = {
 	[902] = {
 		cost = 0,
 		name = "熟練操舵手·小型艦",
-		group_id = 90,
-		worth = 2,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母、駆逐</color>の回避が7アップ",
 		next = 903,
+		worth = 2,
 		id = 902,
+		group_id = 90,
 		icon = "quzhu_one_2",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母、駆逐</color>の回避が7アップ",
 		add = {
 			{
 				1,
@@ -2634,12 +2640,12 @@ pg.commander_ability_template = {
 	[903] = {
 		cost = 0,
 		name = "航海長·小型艦",
-		group_id = 90,
-		worth = 3,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母、駆逐</color>の回避が10アップ",
 		next = 0,
+		worth = 3,
 		id = 903,
+		group_id = 90,
 		icon = "quzhu_one_3",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母、駆逐</color>の回避が10アップ",
 		add = {
 			{
 				1,
@@ -2667,12 +2673,12 @@ pg.commander_ability_template = {
 	[911] = {
 		cost = 0,
 		name = "操舵手·中型艦",
-		group_id = 91,
-		worth = 1,
-		desc = "<color=#3dc6ff>軽巡、重巡、軽母、モニター、工作艦</color>の回避が3アップ",
 		next = 912,
+		worth = 1,
 		id = 911,
+		group_id = 91,
 		icon = "xunyang_one_1",
+		desc = "<color=#3dc6ff>軽巡、重巡、軽母、モニター、工作艦</color>の回避が3アップ",
 		add = {
 			{
 				1,
@@ -2682,7 +2688,8 @@ pg.commander_ability_template = {
 					3,
 					6,
 					12,
-					13
+					13,
+					19
 				},
 				9,
 				3
@@ -2714,12 +2721,12 @@ pg.commander_ability_template = {
 	[912] = {
 		cost = 0,
 		name = "熟練操舵手·中型艦",
-		group_id = 91,
-		worth = 2,
-		desc = "<color=#3dc6ff>軽巡、重巡、軽母、モニター、工作艦</color>の回避が4アップ",
 		next = 913,
+		worth = 2,
 		id = 912,
+		group_id = 91,
 		icon = "xunyang_one_2",
+		desc = "<color=#3dc6ff>軽巡、重巡、軽母、モニター、工作艦</color>の回避が4アップ",
 		add = {
 			{
 				1,
@@ -2729,7 +2736,8 @@ pg.commander_ability_template = {
 					3,
 					6,
 					12,
-					13
+					13,
+					19
 				},
 				9,
 				4
@@ -2761,12 +2769,12 @@ pg.commander_ability_template = {
 	[913] = {
 		cost = 0,
 		name = "航海長·中型艦",
-		group_id = 91,
-		worth = 3,
-		desc = "<color=#3dc6ff>軽巡、重巡、軽母、モニター、工作艦</color>の回避が6アップ",
 		next = 0,
+		worth = 3,
 		id = 913,
+		group_id = 91,
 		icon = "xunyang_one_3",
+		desc = "<color=#3dc6ff>軽巡、重巡、軽母、モニター、工作艦</color>の回避が6アップ",
 		add = {
 			{
 				1,
@@ -2776,7 +2784,8 @@ pg.commander_ability_template = {
 					3,
 					6,
 					12,
-					13
+					13,
+					19
 				},
 				9,
 				6
@@ -2808,12 +2817,12 @@ pg.commander_ability_template = {
 	[921] = {
 		cost = 0,
 		name = "操舵手·大型艦",
-		group_id = 92,
-		worth = 1,
-		desc = "<color=#3dc6ff>戦艦、巡戦、空母、航戦、超巡</color>の回避が1アップ",
 		next = 922,
+		worth = 1,
 		id = 921,
+		group_id = 92,
 		icon = "xunyang_one_1",
+		desc = "<color=#3dc6ff>戦艦、巡戦、空母、航戦、超巡</color>の回避が1アップ",
 		add = {
 			{
 				1,
@@ -2855,12 +2864,12 @@ pg.commander_ability_template = {
 	[922] = {
 		cost = 0,
 		name = "熟練操舵手·大型艦",
-		group_id = 92,
-		worth = 2,
-		desc = "<color=#3dc6ff>戦艦、巡戦、空母、航戦、超巡</color>の回避が2アップ",
 		next = 923,
+		worth = 2,
 		id = 922,
+		group_id = 92,
 		icon = "xunyang_one_2",
+		desc = "<color=#3dc6ff>戦艦、巡戦、空母、航戦、超巡</color>の回避が2アップ",
 		add = {
 			{
 				1,
@@ -2902,12 +2911,12 @@ pg.commander_ability_template = {
 	[923] = {
 		cost = 0,
 		name = "航海長·大型艦",
-		group_id = 92,
-		worth = 3,
-		desc = "<color=#3dc6ff>戦艦、巡戦、空母、航戦、超巡</color>の回避が3アップ",
 		next = 0,
+		worth = 3,
 		id = 923,
+		group_id = 92,
 		icon = "xunyang_one_3",
+		desc = "<color=#3dc6ff>戦艦、巡戦、空母、航戦、超巡</color>の回避が3アップ",
 		add = {
 			{
 				1,
@@ -2949,12 +2958,12 @@ pg.commander_ability_template = {
 	[2001] = {
 		cost = 0,
 		name = "新人参謀·駆逐",
-		group_id = 200,
-		worth = 1,
-		desc = "<color=#3dc6ff>駆逐</color>の雷装が8アップ、装填が4アップ",
 		next = 2002,
+		worth = 1,
 		id = 2001,
+		group_id = 200,
 		icon = "quzhu_one_1",
+		desc = "<color=#3dc6ff>駆逐</color>の雷装が8アップ、装填が4アップ",
 		add = {
 			{
 				1,
@@ -2989,12 +2998,12 @@ pg.commander_ability_template = {
 	[2002] = {
 		cost = 0,
 		name = "熟練参謀·駆逐",
-		group_id = 200,
-		worth = 2,
-		desc = "<color=#3dc6ff>駆逐</color>の雷装が11アップ、装填が5アップ",
 		next = 2003,
+		worth = 2,
 		id = 2002,
+		group_id = 200,
 		icon = "quzhu_one_2",
+		desc = "<color=#3dc6ff>駆逐</color>の雷装が11アップ、装填が5アップ",
 		add = {
 			{
 				1,
@@ -3029,12 +3038,12 @@ pg.commander_ability_template = {
 	[2003] = {
 		cost = 0,
 		name = "歴戦参謀·駆逐",
-		group_id = 200,
-		worth = 3,
-		desc = "<color=#3dc6ff>駆逐</color>の雷装が16アップ、装填が8アップ",
 		next = 0,
+		worth = 3,
 		id = 2003,
+		group_id = 200,
 		icon = "quzhu_one_3",
+		desc = "<color=#3dc6ff>駆逐</color>の雷装が16アップ、装填が8アップ",
 		add = {
 			{
 				1,
@@ -3069,12 +3078,12 @@ pg.commander_ability_template = {
 	[2011] = {
 		cost = 0,
 		name = "新人参謀·巡洋",
-		group_id = 201,
-		worth = 1,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が5アップ、<color=#3dc6ff>軽巡、重巡</color>の雷装が5アップ",
 		next = 2012,
+		worth = 1,
 		id = 2011,
+		group_id = 201,
 		icon = "xunyang_one_1",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が5アップ、<color=#3dc6ff>軽巡、重巡</color>の雷装が5アップ",
 		add = {
 			{
 				1,
@@ -3125,12 +3134,12 @@ pg.commander_ability_template = {
 	[2012] = {
 		cost = 0,
 		name = "熟練参謀·巡洋",
-		group_id = 201,
-		worth = 2,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が7アップ、<color=#3dc6ff>軽巡、重巡</color>の雷装が7アップ",
 		next = 2013,
+		worth = 2,
 		id = 2012,
+		group_id = 201,
 		icon = "xunyang_one_2",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が7アップ、<color=#3dc6ff>軽巡、重巡</color>の雷装が7アップ",
 		add = {
 			{
 				1,
@@ -3181,12 +3190,12 @@ pg.commander_ability_template = {
 	[2013] = {
 		cost = 0,
 		name = "歴戦参謀·巡洋",
-		group_id = 201,
-		worth = 3,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が10アップ、<color=#3dc6ff>軽巡、重巡</color>の雷装が10アップ",
 		next = 0,
+		worth = 3,
 		id = 2013,
+		group_id = 201,
 		icon = "xunyang_one_3",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が10アップ、<color=#3dc6ff>軽巡、重巡</color>の雷装が10アップ",
 		add = {
 			{
 				1,
@@ -3237,12 +3246,12 @@ pg.commander_ability_template = {
 	[2021] = {
 		cost = 0,
 		name = "新人参謀·戦艦",
-		group_id = 202,
-		worth = 1,
-		desc = "<color=#3dc6ff>巡戦、戦艦</color>の耐久が50アップ、火力が8アップ",
 		next = 2022,
+		worth = 1,
 		id = 2021,
+		group_id = 202,
 		icon = "zhanlie_one_1",
+		desc = "<color=#3dc6ff>巡戦、戦艦</color>の耐久が50アップ、火力が8アップ",
 		add = {
 			{
 				1,
@@ -3287,12 +3296,12 @@ pg.commander_ability_template = {
 	[2022] = {
 		cost = 0,
 		name = "熟練参謀·戦艦",
-		group_id = 202,
-		worth = 2,
-		desc = "<color=#3dc6ff>巡戦、戦艦</color>の耐久が70アップ、火力が11アップ",
 		next = 2023,
+		worth = 2,
 		id = 2022,
+		group_id = 202,
 		icon = "zhanlie_one_2",
+		desc = "<color=#3dc6ff>巡戦、戦艦</color>の耐久が70アップ、火力が11アップ",
 		add = {
 			{
 				1,
@@ -3337,12 +3346,12 @@ pg.commander_ability_template = {
 	[2023] = {
 		cost = 0,
 		name = "歴戦参謀·戦艦",
-		group_id = 202,
-		worth = 3,
-		desc = "<color=#3dc6ff>巡戦、戦艦</color>の耐久が100アップ、火力が16アップ",
 		next = 0,
+		worth = 3,
 		id = 2023,
+		group_id = 202,
 		icon = "zhanlie_one_3",
+		desc = "<color=#3dc6ff>巡戦、戦艦</color>の耐久が100アップ、火力が16アップ",
 		add = {
 			{
 				1,
@@ -3387,12 +3396,12 @@ pg.commander_ability_template = {
 	[2031] = {
 		cost = 0,
 		name = "新人参謀·空母",
-		group_id = 203,
-		worth = 1,
-		desc = "<color=#3dc6ff>空母</color>の航空が10アップ、装填が3アップ",
 		next = 2032,
+		worth = 1,
 		id = 2031,
+		group_id = 203,
 		icon = "hangmu_one_1",
+		desc = "<color=#3dc6ff>空母</color>の航空が10アップ、装填が3アップ",
 		add = {
 			{
 				1,
@@ -3427,12 +3436,12 @@ pg.commander_ability_template = {
 	[2032] = {
 		cost = 0,
 		name = "熟練参謀·空母",
-		group_id = 203,
-		worth = 2,
-		desc = "<color=#3dc6ff>空母</color>の航空が14アップ、装填が4アップ",
 		next = 2033,
+		worth = 2,
 		id = 2032,
+		group_id = 203,
 		icon = "hangmu_one_2",
+		desc = "<color=#3dc6ff>空母</color>の航空が14アップ、装填が4アップ",
 		add = {
 			{
 				1,
@@ -3467,12 +3476,12 @@ pg.commander_ability_template = {
 	[2033] = {
 		cost = 0,
 		name = "歴戦参謀·空母",
-		group_id = 203,
-		worth = 3,
-		desc = "<color=#3dc6ff>空母</color>の航空が20アップ、装填が6アップ",
 		next = 0,
+		worth = 3,
 		id = 2033,
+		group_id = 203,
 		icon = "hangmu_one_3",
+		desc = "<color=#3dc6ff>空母</color>の航空が20アップ、装填が6アップ",
 		add = {
 			{
 				1,
@@ -3507,12 +3516,12 @@ pg.commander_ability_template = {
 	[2041] = {
 		cost = 0,
 		name = "新人参謀·潜水",
-		group_id = 204,
-		worth = 1,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が10アップ、装填が3アップ",
 		next = 2042,
+		worth = 1,
 		id = 2041,
+		group_id = 204,
 		icon = "qianting_one_1",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が10アップ、装填が3アップ",
 		add = {
 			{
 				1,
@@ -3549,12 +3558,12 @@ pg.commander_ability_template = {
 	[2042] = {
 		cost = 0,
 		name = "熟練参謀·潜水",
-		group_id = 204,
-		worth = 2,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が14アップ、装填が4アップ",
 		next = 2043,
+		worth = 2,
 		id = 2042,
+		group_id = 204,
 		icon = "qianting_one_2",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が14アップ、装填が4アップ",
 		add = {
 			{
 				1,
@@ -3591,12 +3600,12 @@ pg.commander_ability_template = {
 	[2043] = {
 		cost = 0,
 		name = "歴戦参謀·潜水",
-		group_id = 204,
-		worth = 3,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が20アップ、装填が6アップ",
 		next = 0,
+		worth = 3,
 		id = 2043,
+		group_id = 204,
 		icon = "qianting_one_3",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が20アップ、装填が6アップ",
 		add = {
 			{
 				1,
@@ -3633,12 +3642,12 @@ pg.commander_ability_template = {
 	[2111] = {
 		cost = 0,
 		name = "新人参謀·ユニオン",
-		group_id = 211,
-		worth = 1,
-		desc = "<color=#ffde38>ユニオン</color>の対空が8アップ、航空が8アップ、装填が3アップ",
 		next = 2112,
+		worth = 1,
 		id = 2111,
+		group_id = 211,
 		icon = "baiying_two_1",
+		desc = "<color=#3dc6ff>ユニオン</color>の対空が8アップ、航空が8アップ、装填が3アップ",
 		add = {
 			{
 				1,
@@ -3686,12 +3695,12 @@ pg.commander_ability_template = {
 	[2112] = {
 		cost = 0,
 		name = "熟練参謀·ユニオン",
-		group_id = 211,
-		worth = 2,
-		desc = "<color=#ffde38>ユニオン</color>の対空が11アップ、航空が11アップ、装填が4アップ",
 		next = 2113,
+		worth = 2,
 		id = 2112,
+		group_id = 211,
 		icon = "baiying_two_2",
+		desc = "<color=#3dc6ff>ユニオン</color>の対空が11アップ、航空が11アップ、装填が4アップ",
 		add = {
 			{
 				1,
@@ -3739,12 +3748,12 @@ pg.commander_ability_template = {
 	[2113] = {
 		cost = 0,
 		name = "歴戦参謀·ユニオン",
-		group_id = 211,
-		worth = 3,
-		desc = "<color=#ffde38>ユニオン</color>の対空が16アップ、航空が16アップ、装填が6アップ",
 		next = 0,
+		worth = 3,
 		id = 2113,
+		group_id = 211,
 		icon = "baiying_two_3",
+		desc = "<color=#3dc6ff>ユニオン</color>の対空が16アップ、航空が16アップ、装填が6アップ",
 		add = {
 			{
 				1,
@@ -3792,12 +3801,12 @@ pg.commander_ability_template = {
 	[2121] = {
 		cost = 0,
 		name = "新人参謀·ロイヤル",
-		group_id = 212,
-		worth = 1,
-		desc = "<color=#ffde38>ロイヤル</color>の火力が7アップ、対空が8アップ、回避が1アップ",
 		next = 2122,
+		worth = 1,
 		id = 2121,
+		group_id = 212,
 		icon = "huangjia_two_1",
+		desc = "<color=#3dc6ff>ロイヤル</color>の火力が7アップ、対空が8アップ、回避が1アップ",
 		add = {
 			{
 				1,
@@ -3845,12 +3854,12 @@ pg.commander_ability_template = {
 	[2122] = {
 		cost = 0,
 		name = "熟練参謀·ロイヤル",
-		group_id = 212,
-		worth = 2,
-		desc = "<color=#ffde38>ロイヤル</color>の火力が10アップ、対空が11アップ、回避が2アップ",
 		next = 2123,
+		worth = 2,
 		id = 2122,
+		group_id = 212,
 		icon = "huangjia_two_2",
+		desc = "<color=#3dc6ff>ロイヤル</color>の火力が10アップ、対空が11アップ、回避が2アップ",
 		add = {
 			{
 				1,
@@ -3898,12 +3907,12 @@ pg.commander_ability_template = {
 	[2123] = {
 		cost = 0,
 		name = "歴戦参謀·ロイヤル",
-		group_id = 212,
-		worth = 3,
-		desc = "<color=#ffde38>ロイヤル</color>の火力が14アップ、対空が16アップ、回避が3アップ",
 		next = 0,
+		worth = 3,
 		id = 2123,
+		group_id = 212,
 		icon = "huangjia_two_3",
+		desc = "<color=#3dc6ff>ロイヤル</color>の火力が14アップ、対空が16アップ、回避が3アップ",
 		add = {
 			{
 				1,
@@ -3951,12 +3960,12 @@ pg.commander_ability_template = {
 	[2131] = {
 		cost = 0,
 		name = "新人参謀·重桜",
-		group_id = 213,
-		worth = 1,
-		desc = "<color=#ffde38>重桜</color>の雷装が8アップ、航空が6アップ、回避が1アップ",
 		next = 2132,
+		worth = 1,
 		id = 2131,
+		group_id = 213,
 		icon = "chongying_two_1",
+		desc = "<color=#3dc6ff>重桜</color>の雷装が8アップ、航空が6アップ、回避が1アップ",
 		add = {
 			{
 				1,
@@ -4004,12 +4013,12 @@ pg.commander_ability_template = {
 	[2132] = {
 		cost = 0,
 		name = "熟練参謀·重桜",
-		group_id = 213,
-		worth = 2,
-		desc = "<color=#ffde38>重桜</color>の雷装が11アップ、航空が8アップ、回避が2アップ",
 		next = 2133,
+		worth = 2,
 		id = 2132,
+		group_id = 213,
 		icon = "chongying_two_2",
+		desc = "<color=#3dc6ff>重桜</color>の雷装が11アップ、航空が8アップ、回避が2アップ",
 		add = {
 			{
 				1,
@@ -4057,12 +4066,12 @@ pg.commander_ability_template = {
 	[2133] = {
 		cost = 0,
 		name = "歴戦参謀·重桜",
-		group_id = 213,
-		worth = 3,
-		desc = "<color=#ffde38>重桜</color>の雷装が16アップ、航空が12アップ、回避が3アップ",
 		next = 0,
+		worth = 3,
 		id = 2133,
+		group_id = 213,
 		icon = "chongying_two_3",
+		desc = "<color=#3dc6ff>重桜</color>の雷装が16アップ、航空が12アップ、回避が3アップ",
 		add = {
 			{
 				1,
@@ -4110,12 +4119,12 @@ pg.commander_ability_template = {
 	[2141] = {
 		cost = 0,
 		name = "新人参謀·鉄血",
-		group_id = 214,
-		worth = 1,
-		desc = "<color=#ffde38>鉄血</color>の火力が6アップ、雷装が7アップ、命中が1アップ",
 		next = 2142,
+		worth = 1,
 		id = 2141,
+		group_id = 214,
 		icon = "tiexue_two_1",
+		desc = "<color=#3dc6ff>鉄血</color>の火力が6アップ、雷装が7アップ、命中が1アップ",
 		add = {
 			{
 				1,
@@ -4161,12 +4170,12 @@ pg.commander_ability_template = {
 	[2142] = {
 		cost = 0,
 		name = "熟練参謀·鉄血",
-		group_id = 214,
-		worth = 2,
-		desc = "<color=#ffde38>鉄血</color>の火力が8アップ、雷装が10アップ、命中が2アップ",
 		next = 2143,
+		worth = 2,
 		id = 2142,
+		group_id = 214,
 		icon = "tiexue_two_2",
+		desc = "<color=#3dc6ff>鉄血</color>の火力が8アップ、雷装が10アップ、命中が2アップ",
 		add = {
 			{
 				1,
@@ -4212,12 +4221,12 @@ pg.commander_ability_template = {
 	[2143] = {
 		cost = 0,
 		name = "歴戦参謀·鉄血",
-		group_id = 214,
-		worth = 3,
-		desc = "<color=#ffde38>鉄血</color>の火力が12アップ、雷装が14アップ、命中が3アップ",
 		next = 0,
+		worth = 3,
 		id = 2143,
+		group_id = 214,
 		icon = "tiexue_two_3",
+		desc = "<color=#3dc6ff>鉄血</color>の火力が12アップ、雷装が14アップ、命中が3アップ",
 		add = {
 			{
 				1,
@@ -4263,12 +4272,12 @@ pg.commander_ability_template = {
 	[2151] = {
 		cost = 0,
 		name = "新人参謀·東煌",
-		group_id = 215,
-		worth = 1,
-		desc = "<color=#ffde38>東煌</color>の火力が7アップ、対空が8アップ、装填が3アップ",
 		next = 2152,
+		worth = 1,
 		id = 2151,
+		group_id = 215,
 		icon = "",
+		desc = "<color=#3dc6ff>東煌</color>の火力が7アップ、対空が8アップ、装填が3アップ",
 		add = {
 			{
 				1,
@@ -4316,12 +4325,12 @@ pg.commander_ability_template = {
 	[2152] = {
 		cost = 0,
 		name = "熟練参謀·東煌",
-		group_id = 215,
-		worth = 2,
-		desc = "<color=#ffde38>東煌</color>の火力が10アップ、対空が11アップ、装填が4アップ",
 		next = 2153,
+		worth = 2,
 		id = 2152,
+		group_id = 215,
 		icon = "",
+		desc = "<color=#3dc6ff>東煌</color>の火力が10アップ、対空が11アップ、装填が4アップ",
 		add = {
 			{
 				1,
@@ -4369,12 +4378,12 @@ pg.commander_ability_template = {
 	[2153] = {
 		cost = 0,
 		name = "歴戦参謀·東煌",
-		group_id = 215,
-		worth = 3,
-		desc = "<color=#ffde38>東煌</color>の火力が14アップ、対空が16アップ、装填が6アップ",
 		next = 0,
+		worth = 3,
 		id = 2153,
+		group_id = 215,
 		icon = "",
+		desc = "<color=#3dc6ff>東煌</color>の火力が14アップ、対空が16アップ、装填が6アップ",
 		add = {
 			{
 				1,
@@ -4422,12 +4431,12 @@ pg.commander_ability_template = {
 	[2171] = {
 		cost = 0,
 		name = "新人参謀·北連",
-		group_id = 217,
-		worth = 1,
-		desc = "<color=#ffde38>北方連合</color>の火力が8アップ、装填が3アップ、命中が1アップ",
 		next = 2172,
+		worth = 1,
 		id = 2171,
+		group_id = 217,
 		icon = "",
+		desc = "<color=#3dc6ff>北方連合</color>の火力が8アップ、装填が3アップ、命中が1アップ",
 		add = {
 			{
 				1,
@@ -4475,12 +4484,12 @@ pg.commander_ability_template = {
 	[2172] = {
 		cost = 0,
 		name = "熟練参謀·北連",
-		group_id = 217,
-		worth = 2,
-		desc = "<color=#ffde38>北方連合</color>の火力が11アップ、装填が4アップ、命中が2アップ",
 		next = 2173,
+		worth = 2,
 		id = 2172,
+		group_id = 217,
 		icon = "",
+		desc = "<color=#3dc6ff>北方連合</color>の火力が11アップ、装填が4アップ、命中が2アップ",
 		add = {
 			{
 				1,
@@ -4528,12 +4537,12 @@ pg.commander_ability_template = {
 	[2173] = {
 		cost = 0,
 		name = "歴戦参謀·北連",
-		group_id = 217,
-		worth = 3,
-		desc = "<color=#ffde38>北方連合</color>の火力が16アップ、装填が6アップ、命中が3アップ",
 		next = 0,
+		worth = 3,
 		id = 2173,
+		group_id = 217,
 		icon = "",
+		desc = "<color=#3dc6ff>北方連合</color>の火力が16アップ、装填が6アップ、命中が3アップ",
 		add = {
 			{
 				1,
@@ -4581,12 +4590,12 @@ pg.commander_ability_template = {
 	[2181] = {
 		cost = 0,
 		name = "新人参謀·アイリス",
-		group_id = 218,
-		worth = 1,
-		desc = "<color=#ffde38>アイリス</color>の火力が8アップ、装填が3アップ、回避が2アップ",
 		next = 2182,
+		worth = 1,
 		id = 2181,
+		group_id = 218,
 		icon = "",
+		desc = "<color=#3dc6ff>アイリス</color>の火力が8アップ、装填が3アップ、回避が2アップ",
 		add = {
 			{
 				1,
@@ -4634,12 +4643,12 @@ pg.commander_ability_template = {
 	[2182] = {
 		cost = 0,
 		name = "熟練参謀·アイリス",
-		group_id = 218,
-		worth = 2,
-		desc = "<color=#ffde38>アイリス</color>の火力が11アップ、装填が4アップ、回避が3アップ",
 		next = 2183,
+		worth = 2,
 		id = 2182,
+		group_id = 218,
 		icon = "",
+		desc = "<color=#3dc6ff>アイリス</color>の火力が11アップ、装填が4アップ、回避が3アップ",
 		add = {
 			{
 				1,
@@ -4687,12 +4696,12 @@ pg.commander_ability_template = {
 	[2183] = {
 		cost = 0,
 		name = "歴戦参謀·アイリス",
-		group_id = 218,
-		worth = 3,
-		desc = "<color=#ffde38>アイリス</color>の火力が16アップ、装填が6アップ、回避が5アップ",
 		next = 0,
+		worth = 3,
 		id = 2183,
+		group_id = 218,
 		icon = "",
+		desc = "<color=#3dc6ff>アイリス</color>の火力が16アップ、装填が6アップ、回避が5アップ",
 		add = {
 			{
 				1,
@@ -4740,12 +4749,12 @@ pg.commander_ability_template = {
 	[2191] = {
 		cost = 0,
 		name = "新人参謀·ヴィシア",
-		group_id = 219,
-		worth = 1,
-		desc = "<color=#ffde38>ヴィシア</color>の火力が8アップ、装填が3アップ、命中が2アップ",
 		next = 2192,
+		worth = 1,
 		id = 2191,
+		group_id = 219,
 		icon = "",
+		desc = "<color=#3dc6ff>ヴィシア</color>の火力が8アップ、装填が3アップ、命中が2アップ",
 		add = {
 			{
 				1,
@@ -4793,12 +4802,12 @@ pg.commander_ability_template = {
 	[2192] = {
 		cost = 0,
 		name = "熟練参謀·ヴィシア",
-		group_id = 219,
-		worth = 2,
-		desc = "<color=#ffde38>ヴィシア</color>の火力が11アップ、装填が4アップ、命中が3アップ",
 		next = 2193,
+		worth = 2,
 		id = 2192,
+		group_id = 219,
 		icon = "",
+		desc = "<color=#3dc6ff>ヴィシア</color>の火力が11アップ、装填が4アップ、命中が3アップ",
 		add = {
 			{
 				1,
@@ -4846,12 +4855,12 @@ pg.commander_ability_template = {
 	[2193] = {
 		cost = 0,
 		name = "歴戦参謀·ヴィシア",
-		group_id = 219,
-		worth = 3,
-		desc = "<color=#ffde38>ヴィシア</color>の火力が16アップ、装填が6アップ、命中が5アップ",
 		next = 0,
+		worth = 3,
 		id = 2193,
+		group_id = 219,
 		icon = "",
+		desc = "<color=#3dc6ff>ヴィシア</color>の火力が16アップ、装填が6アップ、命中が5アップ",
 		add = {
 			{
 				1,
@@ -4899,12 +4908,12 @@ pg.commander_ability_template = {
 	[5011] = {
 		cost = 0,
 		name = "見敵必戦",
-		group_id = 501,
-		worth = 1,
-		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が10アップ，装填が12アップ",
 		next = 0,
+		worth = 1,
 		id = 5011,
+		group_id = 501,
 		icon = "jiandibizhan",
+		desc = "<color=#3dc6ff>軽巡、重巡、超巡</color>の火力が10アップ，装填が12アップ",
 		add = {
 			{
 				1,
@@ -4959,12 +4968,12 @@ pg.commander_ability_template = {
 	[5021] = {
 		cost = 0,
 		name = "一発入魂",
-		group_id = 502,
-		worth = 1,
-		desc = "<color=#3dc6ff>巡戦、戦艦</color>の火力が15アップ，主砲クリティカル率が3%",
 		next = 0,
+		worth = 1,
 		id = 5021,
+		group_id = 502,
 		icon = "yifaruhun",
+		desc = "<color=#3dc6ff>巡戦、戦艦</color>の火力が15アップ，主砲クリティカル率が3%",
 		add = {
 			{
 				1,
@@ -5008,12 +5017,12 @@ pg.commander_ability_template = {
 	[5031] = {
 		cost = 0,
 		name = "水雷魂",
-		group_id = 503,
-		worth = 1,
-		desc = "<color=#3dc6ff>駆逐、軽巡</color>の雷装が15アップ，魚雷クリティカル率が3%",
 		next = 0,
+		worth = 1,
 		id = 5031,
+		group_id = 503,
 		icon = "shuileihun",
+		desc = "<color=#3dc6ff>駆逐、軽巡</color>の雷装が15アップ，魚雷クリティカル率が3%",
 		add = {
 			{
 				1,
@@ -5057,12 +5066,12 @@ pg.commander_ability_template = {
 	[5041] = {
 		cost = 0,
 		name = "エースパイロット",
-		group_id = 504,
-		worth = 1,
-		desc = "<color=#3dc6ff>空母</color>の航空が15アップ，装填が8アップ",
 		next = 0,
+		worth = 1,
 		id = 5041,
+		group_id = 504,
 		icon = "wangpaijishi",
+		desc = "<color=#3dc6ff>空母</color>の航空が15アップ，装填が8アップ",
 		add = {
 			{
 				1,
@@ -5097,12 +5106,12 @@ pg.commander_ability_template = {
 	[5051] = {
 		cost = 0,
 		name = "ウルフハウンド",
-		group_id = 505,
-		worth = 1,
-		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が15アップ，装填が8アップ",
 		next = 0,
+		worth = 1,
 		id = 5051,
+		group_id = 505,
 		icon = "langqunzhishou",
+		desc = "<color=#3dc6ff>潜水艦、潜水空母</color>の雷装が15アップ，装填が8アップ",
 		add = {
 			{
 				1,
@@ -5139,12 +5148,12 @@ pg.commander_ability_template = {
 	[5061] = {
 		cost = 0,
 		name = "ニュースター",
-		group_id = 506,
-		worth = 1,
-		desc = "自分（オフニャ）が入手する経験値＋10%",
 		next = 0,
+		worth = 1,
 		id = 5061,
+		group_id = 506,
 		icon = "special_exp",
+		desc = "自分（オフニャ）が入手する経験値＋10%",
 		add = {
 			{
 				2,
@@ -5159,12 +5168,12 @@ pg.commander_ability_template = {
 	[5071] = {
 		cost = 0,
 		name = "ベストフレンド",
-		group_id = 507,
-		worth = 1,
-		desc = "オフニャ強化素材として使われる時に獲得する経験値+10%",
 		next = 0,
+		worth = 1,
 		id = 5071,
+		group_id = 507,
 		icon = "special_exp",
+		desc = "オフニャ強化素材として使われる時に獲得する経験値+10%",
 		add = {
 			{
 				2,
@@ -5179,12 +5188,12 @@ pg.commander_ability_template = {
 	[5081] = {
 		cost = 0,
 		name = "疾きこと風の如く",
-		group_id = 508,
-		worth = 1,
-		desc = "艦隊の速力が3アップ",
 		next = 0,
+		worth = 1,
 		id = 5081,
+		group_id = 508,
 		icon = "special_one",
+		desc = "艦隊の速力が3アップ",
 		add = {
 			{
 				1,
@@ -5204,12 +5213,12 @@ pg.commander_ability_template = {
 	[5091] = {
 		cost = 0,
 		name = "徐かなること林の如く",
-		group_id = 509,
-		worth = 1,
-		desc = "艦隊全員の対空・対潜が15アップ。命中・回避が3アップ",
 		next = 0,
+		worth = 1,
 		id = 5091,
+		group_id = 509,
 		icon = "special_one",
+		desc = "艦隊全員の対空・対潜が15アップ。命中・回避が3アップ",
 		add = {
 			{
 				1,
@@ -5262,12 +5271,12 @@ pg.commander_ability_template = {
 	[5101] = {
 		cost = 0,
 		name = "侵掠すること火の如く",
-		group_id = 510,
-		worth = 1,
-		desc = "艦隊全員の与えるダメージが3%アップ",
 		next = 0,
+		worth = 1,
 		id = 5101,
+		group_id = 510,
 		icon = "special_one",
+		desc = "艦隊全員の与えるダメージが3%アップ",
 		add = {
 			{
 				3,
@@ -5288,12 +5297,12 @@ pg.commander_ability_template = {
 	[5111] = {
 		cost = 0,
 		name = "動かざること山の如し",
-		group_id = 511,
-		worth = 1,
-		desc = "艦隊全員の受けるダメージが3%ダウン",
 		next = 0,
+		worth = 1,
 		id = 5111,
+		group_id = 511,
 		icon = "special_one",
+		desc = "艦隊全員の受けるダメージが3%ダウン",
 		add = {
 			{
 				3,
@@ -5314,12 +5323,12 @@ pg.commander_ability_template = {
 	[5121] = {
 		cost = 0,
 		name = "ミラクル",
-		group_id = 512,
-		worth = 1,
-		desc = "艦隊全員の運が5アップ",
 		next = 0,
+		worth = 1,
 		id = 5121,
+		group_id = 512,
 		icon = "special_one",
+		desc = "艦隊全員の運が5アップ",
 		add = {
 			{
 				1,
@@ -5339,12 +5348,12 @@ pg.commander_ability_template = {
 	[5131] = {
 		cost = 0,
 		name = "デスティニー",
-		group_id = 513,
-		worth = 1,
-		desc = "艦隊全員の火力・雷装・航空が10アップ。運が3ダウン",
 		next = 0,
+		worth = 1,
 		id = 5131,
+		group_id = 513,
 		icon = "special_one",
+		desc = "艦隊全員の火力・雷装・航空が10アップ。運が3ダウン",
 		add = {
 			{
 				1,
@@ -5539,5 +5548,3 @@ pg.commander_ability_template = {
 		5131
 	}
 }
-
-return

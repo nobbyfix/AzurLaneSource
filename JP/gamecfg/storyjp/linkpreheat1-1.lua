@@ -1,16 +1,16 @@
 return {
-	mode = 2,
-	once = true,
 	id = "LINKPREHEAT1-1",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
-			side = 2,
-			dir = 1,
-			bgm = "level-uta",
 			actor = 10300060,
+			side = 2,
 			nameColor = "#a9f548",
 			say = "クーちゃ～ん！ネコちゃ～ん！ルルティエさま～！おりませんか～！？",
+			dir = 1,
+			bgm = "level-uta",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -21,8 +21,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -110,11 +110,11 @@ return {
 			}
 		},
 		{
-			say = "──……ドォン！",
-			stopbgm = true,
 			side = 2,
-			dir = 1,
+			stopbgm = true,
 			soundeffect = "event:/battle/boom2",
+			dir = 1,
+			say = "──……ドォン！",
 			flashN = {
 				color = {
 					1,

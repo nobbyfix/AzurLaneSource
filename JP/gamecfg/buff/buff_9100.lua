@@ -1,12 +1,12 @@
 return {
+	time = 8,
 	name = "强袭号令-LV9",
 	init_effect = "jinengchufared",
-	id = 9100,
-	time = 8,
+	color = "red",
 	picture = "",
 	desc = "伤害提高",
 	stack = 1,
-	color = "red",
+	id = 9100,
 	icon = 9100,
 	last_effect = "",
 	blink = {
@@ -24,8 +24,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.226,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.226
 			}
 		}
 	}

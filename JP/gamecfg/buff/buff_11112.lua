@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.03,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.03
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.038,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.038
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.046,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.046
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.055,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.055
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.064,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.064
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.074,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.074
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.085,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.085
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.096,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.096
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.108,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.108
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.12,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.12
 				}
 			}
 		}
 	},
-	time = 8,
-	name = "约克公爵2技能",
 	init_effect = "",
-	id = 11112,
+	name = "约克公爵2技能",
+	time = 8,
+	color = "red",
 	picture = "",
 	desc = "约克公爵2技能",
 	stack = 1,
-	color = "red",
+	id = 11112,
 	icon = 11110,
 	last_effect = "Darkness",
 	effect_list = {
@@ -167,8 +167,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.03,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = 0.03
 			}
 		}
 	}

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DACHAOSHENGDAN6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"オペレーション・クリスマス！\n\n<size=45>六　クリスマスへ進め！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "夜・母港",
 			side = 2,
 			bgName = "bg_night",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "main-christmas",
-			say = "夜・母港",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -69,8 +69,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_night",
-			dir = -1,
 			actor = 205021,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "あとは陛下への特別なプレゼントだけ…！",
 			typewriter = {
@@ -83,12 +83,12 @@ return {
 			}
 		},
 		{
-			say = "エンタープライズさんは「相手に合わせることにこだわってもしょうがない」って言ってたよね……",
+			actor = 201102,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 201102,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "エンタープライズさんは「相手に合わせることにこだわってもしょうがない」って言ってたよね……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -119,11 +119,11 @@ return {
 			}
 		},
 		{
+			actor = 201102,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 201102,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "それなら…女王さまもきっと喜んでくれるよね！",
 			typewriter = {
 				speed = 0.05,
@@ -135,8 +135,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -145,15 +145,15 @@ return {
 			}
 		},
 		{
+			actor = 205021,
 			side = 2,
 			bgName = "bg_night",
-			dir = -1,
-			actor = 205021,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "ぬかった……これだけのプレゼント…どうやって運べば……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -178,12 +178,12 @@ return {
 			}
 		},
 		{
-			say = "ごめんなさい……うちまた食べ物をたくさん買っちゃった……",
+			actor = 201102,
 			side = 1,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 201102,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ごめんなさい……うちまた食べ物をたくさん買っちゃった……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -201,8 +201,8 @@ return {
 			expression = 4,
 			side = 0,
 			bgName = "bg_night",
-			dir = -1,
 			actor = 205021,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "くっ…！もはやここまでか……！",
 			typewriter = {
@@ -215,8 +215,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			bgName = "bg_night",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -227,11 +227,11 @@ return {
 			}
 		},
 		{
+			actor = 205021,
 			side = 2,
 			bgName = "bg_night",
-			dir = -1,
-			actor = 205021,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "エンタープライズ！……後ろにいるのはニコラスか？",
 			typewriter = {
 				speed = 0.05,
@@ -243,8 +243,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -301,12 +301,12 @@ return {
 			}
 		},
 		{
+			actor = 201102,
 			side = 2,
 			bgName = "bg_night",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 201102,
-			nameColor = "#a9f548",
 			say = "助かった……これでプレゼントをロイヤル寮まで運べるよね！",
 			typewriter = {
 				speed = 0.05,

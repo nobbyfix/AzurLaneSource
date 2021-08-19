@@ -7,13 +7,13 @@ return {
 			style = {
 				text = "今度の任務はユニオン空母艦隊の作戦演習を支援することね    <color=#ff7d36>出撃</color>をタップするわ",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -24,19 +24,19 @@ return {
 			}
 		},
 		{
+			alpha = 0.277,
 			code = 2,
 			waitScene = "LevelScene",
-			alpha = 0.277,
 			style = {
 				text = "ホーネットの出現位置を特定したわ！目標地点まで全速前進よ！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
+				path = "/OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/normal/func_button",
 				pathIndex = -1,
-				path = "OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/func_button",
 				triggerType = {
 					1
 				},
@@ -52,8 +52,8 @@ return {
 			style = {
 				text = "迂回して戦闘の<color=#ff7d36>回避</color>を試してちょうだい",
 				mode = 2,
-				dir = 1,
 				posY = -295,
+				dir = 1,
 				posX = -297
 			},
 			baseui = {
@@ -63,8 +63,8 @@ return {
 		{
 			alpha = 0.303,
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/top/LevelAmbushView(Clone)/window/dodge_button",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

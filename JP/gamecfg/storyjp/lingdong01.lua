@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG01",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -18,8 +18,8 @@ return {
 				"――極北。ムルマンスク・『北方連合』領内",
 				0.2,
 				{
-					967,
-					-685
+					600,
+					-480
 				}
 			}
 		},
@@ -103,14 +103,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 203050,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ふぅ…物資輸送の船団護衛はこれで終わりですね…ようやくおうちに帰れますぅ…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

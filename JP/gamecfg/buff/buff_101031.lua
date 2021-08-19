@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.1
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.1
 				}
 			}
 		}
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.104,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.104
 				}
 			},
 			{
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.112,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.112
 				}
 			}
 		}
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.108,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.108
 				}
 			},
 			{
@@ -65,8 +65,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.124,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.124
 				}
 			}
 		}
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.115,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.115
 				}
 			},
 			{
@@ -89,8 +89,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.145,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.145
 				}
 			}
 		}
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.119,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.119
 				}
 			},
 			{
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.157,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.157
 				}
 			}
 		}
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.123,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.123
 				}
 			},
 			{
@@ -137,8 +137,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.169,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.169
 				}
 			}
 		}
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.13,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.13
 				}
 			},
 			{
@@ -161,8 +161,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.19,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.19
 				}
 			}
 		}
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.136,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.136
 				}
 			},
 			{
@@ -185,8 +185,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.208,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.208
 				}
 			}
 		}
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.142,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.142
 				}
 			},
 			{
@@ -209,8 +209,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.226,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.226
 				}
 			}
 		}
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = 0.15
 				}
 			},
 			{
@@ -233,15 +233,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.25,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.25
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "限阻破坏",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 1,
@@ -262,8 +262,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = 0.1
 			}
 		},
 		{
@@ -272,8 +272,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.1
 			}
 		}
 	}

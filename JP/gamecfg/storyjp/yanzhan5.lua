@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "YANZHAN5",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"ナイト・オブ・ロイヤル\n\n<size=45>五 ささやかな悩み</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 205020,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 205020,
-			nameColor = "#a9f548",
 			say = "今日も秘書艦の仕事に励もうか！早く執務室へ――",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -68,8 +68,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -100,8 +100,8 @@ return {
 			}
 		},
 		{
-			actorName = "イラストリアス",
 			side = 2,
+			actorName = "イラストリアス",
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -116,11 +116,11 @@ return {
 			}
 		},
 		{
+			actor = 207030,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 207030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "あら、ウォースパイトさま、おはようございます",
 			typewriter = {
 				speed = 0.05,
@@ -136,8 +136,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 0.6,
 					x = -2250
@@ -145,12 +145,12 @@ return {
 			}
 		},
 		{
-			say = "お、おはよう",
+			actor = 205020,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "お、おはよう",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -165,11 +165,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 205020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（すらりっ）",
 			typewriter = {
@@ -182,11 +182,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 207030,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 207030,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "（ぼいんっ）",
 			typewriter = {
@@ -215,12 +215,12 @@ return {
 			}
 		},
 		{
-			say = "ウォースパイトさま、お顔色が悪いようですが……昨夜はよく眠れなかったのですか？",
+			actor = 207030,
 			side = 1,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 207030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ウォースパイトさま、お顔色が悪いようですが……昨夜はよく眠れなかったのですか？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -235,11 +235,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 0,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "そ、そうね……でも心配ないわ。この程度の疲労など仕事に障らないわよ",
 			typewriter = {
 				speed = 0.05,
@@ -251,8 +251,8 @@ return {
 			},
 			action = {
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 0,
 					dur = 0.4,
 					x = 22.5,
@@ -309,15 +309,15 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "委託のレポートは確か……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -358,12 +358,12 @@ return {
 			}
 		},
 		{
-			withoutActorName = true,
+			actor = 205030,
 			side = 2,
 			dir = 1,
-			blackBg = true,
-			actor = 205030,
 			nameColor = "#a9f548",
+			withoutActorName = true,
+			blackBg = true,
 			say = "……",
 			effects = {
 				{
@@ -381,29 +381,12 @@ return {
 			}
 		},
 		{
-			dir = 1,
-			side = 2,
-			withoutActorName = true,
-			blackBg = true,
 			actor = 207030,
-			nameColor = "#a9f548",
-			say = "……",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			dir = 1,
 			side = 2,
 			withoutActorName = true,
-			blackBg = true,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -415,11 +398,28 @@ return {
 			}
 		},
 		{
+			actor = 201100,
 			side = 2,
+			withoutActorName = true,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
+			say = "……",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
 			actor = 205020,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "（だ、ダメだ…相手にならない……）",
 			effects = {
 				{
@@ -437,11 +437,11 @@ return {
 			}
 		},
 		{
+			actor = 205020,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 205020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "はい？",
 			typewriter = {
 				speed = 0.05,
@@ -453,8 +453,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0.15,
 					dur = 0.15,
 					x = 0,

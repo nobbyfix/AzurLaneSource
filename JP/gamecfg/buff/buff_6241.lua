@@ -1,7 +1,7 @@
 return {
-	time = 8,
-	name = "密集轰炸",
 	init_effect = "",
+	name = "密集轰炸",
+	time = 8,
 	picture = "",
 	desc = "8s增伤",
 	stack = 1,
@@ -16,8 +16,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "DMG_TAG_EHC_T_6"
+				attr = "DMG_TAG_EHC_T_6",
+				number = 0.05
 			}
 		},
 		{
@@ -27,8 +27,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "DMG_TAG_EHC_T_7"
+				attr = "DMG_TAG_EHC_T_7",
+				number = 0.05
 			}
 		}
 	}

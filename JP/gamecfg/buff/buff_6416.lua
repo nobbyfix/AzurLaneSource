@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "",
 	init_effect = "",
-	id = 6416,
+	name = "",
+	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 6416,
 	icon = 6410,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.15,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.15
 			}
 		}
 	}

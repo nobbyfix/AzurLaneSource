@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "北风2",
 	init_effect = "",
-	id = 19181,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 19181,
 	icon = 19180,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				time = 10,
 				target = "TargetSelf",
+				time = 10,
 				skill_id = 19181
 			}
 		}

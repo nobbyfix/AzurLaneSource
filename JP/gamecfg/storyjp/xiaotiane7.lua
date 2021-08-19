@@ -8,8 +8,8 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"春風の十字星\n\n<size=45>その七  事件解決！</size>",
@@ -18,13 +18,13 @@ return {
 			}
 		},
 		{
+			actor = 201080,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 201080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "アークロイヤルさん、すみません。うち、勝手に容疑者だと疑ってしまって……",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,12 +35,12 @@ return {
 			}
 		},
 		{
-			say = "ぼくも最初そう思ってた……ごめん……",
+			actor = 201110,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201110,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ぼくも最初そう思ってた……ごめん……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -247,12 +247,12 @@ return {
 			}
 		},
 		{
-			say = "ああ！服も無事に見つかって結果オーライだ！かなり探し回ったようだし、そろそろご飯でも食べにいかないか？せっかくだからこの私がおごってもいいぞ？",
+			actor = 207020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ああ！服も無事に見つかって結果オーライだ！かなり探し回ったようだし、そろそろご飯でも食べにいかないか？せっかくだからこの私がおごってもいいぞ？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -267,14 +267,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "みんな",
 			say = "おお！",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -301,12 +301,12 @@ return {
 			}
 		},
 		{
-			say = "ぐへっ、駆逐艦の妹たちと一緒にご飯を食べられるぞ…！（もちろんだ！先に着替えてきてくれ！）",
+			actor = 207020,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 207020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ぐへっ、駆逐艦の妹たちと一緒にご飯を食べられるぞ…！（もちろんだ！先に着替えてきてくれ！）",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -321,14 +321,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "みんな",
 			say = "ジ――。（やっぱりこの人、何かやらかすんじゃあ…）",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

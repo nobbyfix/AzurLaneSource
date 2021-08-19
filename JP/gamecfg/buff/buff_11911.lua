@@ -169,14 +169,14 @@ return {
 			}
 		}
 	},
-	time = 0,
-	name = "鹰击长空",
 	init_effect = "",
-	id = 11911,
+	name = "鹰击长空",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "克洛希德装备效率提高",
 	stack = 1,
-	color = "red",
+	id = 11911,
 	icon = 11910,
 	last_effect = "",
 	effect_list = {

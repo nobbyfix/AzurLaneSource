@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "U556关卡敌方易伤",
 	init_effect = "",
-	id = 8634,
+	name = "U556关卡敌方易伤",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8634,
 	icon = 8634,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 4,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = 4
 			}
 		}
 	}

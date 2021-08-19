@@ -1,47 +1,42 @@
 slot0 = class("NpcShip", import(".Ship"))
 
-slot0.Ctor = function (slot0, slot1)
-	slot0.super.Ctor(slot0, slot1)
+function slot0.Ctor(slot0, slot1)
+	uv0.super.Ctor(slot0, slot1)
 
-	slot2 = pg.ship_data_template[slot0.configId]
-
-	for slot6 = 1, 3, 1 do
+	for slot6 = 1, 3 do
 		if not slot0.equipments[slot6] then
-			slot0.equipments[slot6] = (slot2["equip_id_" .. slot6] > 0 and Equipment.New({
+			slot0.equipments[slot6] = pg.ship_data_template[slot0.configId]["equip_id_" .. slot6] > 0 and Equipment.New({
 				id = slot7
-			})) or false
+			}) or false
 		end
 	end
 
 	slot0.isNpc = true
 end
 
-slot0.getExp = function (slot0)
+function slot0.getExp(slot0)
 	return 0
 end
 
-slot0.addExp = function (slot0, slot1, slot2)
-	return
+function slot0.addExp(slot0, slot1, slot2)
 end
 
-slot0.getIntimacy = function (slot0)
+function slot0.getIntimacy(slot0)
 	return pg.intimacy_template[slot0:getIntimacyLevel()].lower_bound
 end
 
-slot0.getIntimacyLevel = function (slot0)
+function slot0.getIntimacyLevel(slot0)
 	return 2
 end
 
-slot0.setIntimacy = function (slot0, slot1)
-	return
+function slot0.setIntimacy(slot0, slot1)
 end
 
-slot0.getEnergy = function (slot0)
+function slot0.getEnergy(slot0)
 	return pg.ship_data_template[slot0.configId].energy
 end
 
-slot0.setEnergy = function (slot0, slot1)
-	return
+function slot0.setEnergy(slot0, slot1)
 end
 
 return slot0

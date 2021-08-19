@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1000
 				}
 			},
 			{
@@ -29,9 +29,9 @@ return {
 					"onFoeDying"
 				},
 				arg_list = {
-					skill_id = 11691,
 					killer = "self",
 					target = "TargetSelf",
+					skill_id = 11691,
 					time = 1
 				}
 			},
@@ -56,8 +56,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 610,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 610
 				}
 			},
 			{
@@ -67,8 +67,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1220
 				}
 			},
 			{
@@ -77,9 +77,9 @@ return {
 					"onFoeDying"
 				},
 				arg_list = {
-					skill_id = 11691,
 					killer = "self",
 					target = "TargetSelf",
+					skill_id = 11691,
 					time = 1
 				}
 			},
@@ -104,8 +104,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 720
 				}
 			},
 			{
@@ -115,8 +115,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1440,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1440
 				}
 			},
 			{
@@ -125,9 +125,9 @@ return {
 					"onFoeDying"
 				},
 				arg_list = {
-					skill_id = 11691,
 					killer = "self",
 					target = "TargetSelf",
+					skill_id = 11691,
 					time = 1
 				}
 			},
@@ -152,8 +152,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 830,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 830
 				}
 			},
 			{
@@ -163,8 +163,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1660
 				}
 			},
 			{
@@ -173,9 +173,9 @@ return {
 					"onFoeDying"
 				},
 				arg_list = {
-					skill_id = 11691,
 					killer = "self",
 					target = "TargetSelf",
+					skill_id = 11691,
 					time = 1
 				}
 			},
@@ -200,8 +200,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 940,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 940
 				}
 			},
 			{
@@ -211,8 +211,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1880,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1880
 				}
 			},
 			{
@@ -221,9 +221,9 @@ return {
 					"onFoeDying"
 				},
 				arg_list = {
-					skill_id = 11691,
 					killer = "self",
 					target = "TargetSelf",
+					skill_id = 11691,
 					time = 1
 				}
 			},
@@ -248,8 +248,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1050,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1050
 				}
 			},
 			{
@@ -259,8 +259,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2100,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2100
 				}
 			},
 			{
@@ -269,9 +269,9 @@ return {
 					"onFoeDying"
 				},
 				arg_list = {
-					skill_id = 11691,
 					killer = "self",
 					target = "TargetSelf",
+					skill_id = 11691,
 					time = 1
 				}
 			},
@@ -296,8 +296,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1160
 				}
 			},
 			{
@@ -307,8 +307,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2320,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2320
 				}
 			},
 			{
@@ -317,9 +317,9 @@ return {
 					"onFoeDying"
 				},
 				arg_list = {
-					skill_id = 11691,
 					killer = "self",
 					target = "TargetSelf",
+					skill_id = 11691,
 					time = 1
 				}
 			},
@@ -344,8 +344,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1270,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1270
 				}
 			},
 			{
@@ -355,8 +355,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2540,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2540
 				}
 			},
 			{
@@ -365,9 +365,9 @@ return {
 					"onFoeDying"
 				},
 				arg_list = {
-					skill_id = 11691,
 					killer = "self",
 					target = "TargetSelf",
+					skill_id = 11691,
 					time = 1
 				}
 			},
@@ -392,8 +392,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1380
 				}
 			},
 			{
@@ -403,8 +403,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2760,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2760
 				}
 			},
 			{
@@ -413,9 +413,9 @@ return {
 					"onFoeDying"
 				},
 				arg_list = {
-					skill_id = 11691,
 					killer = "self",
 					target = "TargetSelf",
+					skill_id = 11691,
 					time = 1
 				}
 			},
@@ -440,8 +440,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1500
 				}
 			},
 			{
@@ -451,8 +451,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 3000
 				}
 			},
 			{
@@ -461,9 +461,9 @@ return {
 					"onFoeDying"
 				},
 				arg_list = {
-					skill_id = 11691,
 					killer = "self",
 					target = "TargetSelf",
+					skill_id = 11691,
 					time = 1
 				}
 			},
@@ -479,14 +479,14 @@ return {
 			}
 		}
 	},
+	time = 12,
 	name = "湖之都的蛮牛",
 	init_effect = "jinengchufared",
-	id = 11691,
-	time = 12,
+	color = "red",
 	picture = "",
 	desc = "提升炮击，装填",
 	stack = 1,
-	color = "red",
+	id = 11691,
 	icon = 11690,
 	last_effect = "",
 	blink = {
@@ -504,8 +504,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 500,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 500
 			}
 		},
 		{
@@ -515,8 +515,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 1000
 			}
 		},
 		{
@@ -525,9 +525,9 @@ return {
 				"onFoeDying"
 			},
 			arg_list = {
-				skill_id = 11691,
 				killer = "self",
 				target = "TargetSelf",
+				skill_id = 11691,
 				time = 1
 			}
 		},

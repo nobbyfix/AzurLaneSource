@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "竞技场我方加成",
 	init_effect = "",
+	name = "竞技场我方加成",
+	time = 0,
 	picture = "",
 	desc = "减少20%受到伤害",
 	stack = 1,
@@ -20,9 +20,9 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.2,
+				attr = "injureRatio",
 				target = "TargetSelf",
-				attr = "injureRatio"
+				number = -0.2
 			}
 		},
 		{
@@ -31,9 +31,9 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.2,
+				attr = "injureRatioByAir",
 				target = "TargetSelf",
-				attr = "injureRatioByAir"
+				number = -0.2
 			}
 		}
 	}

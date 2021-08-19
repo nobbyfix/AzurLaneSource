@@ -5,12 +5,12 @@ return {
 	desc_get = "主炮每进行10次攻击，触发专属弹幕-Z46II",
 	name = "专属弹幕-Z46II",
 	init_effect = "",
-	id = 29212,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主炮每进行10次攻击，触发专属弹幕-Z46II",
 	stack = 1,
-	color = "red",
+	id = 29212,
 	icon = 29210,
 	last_effect = "",
 	effect_list = {
@@ -33,8 +33,8 @@ return {
 				"onBattleBuffCount"
 			},
 			arg_list = {
-				skill_id = 29212,
 				target = "TargetSelf",
+				skill_id = 29212,
 				countType = 29210
 			}
 		}

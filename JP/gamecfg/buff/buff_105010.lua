@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "2.25马赫之华",
 	init_effect = "",
-	id = 105010,
+	name = "2.25马赫之华",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 105010,
 	icon = 105010,
 	last_effect = "",
 	effect_list = {
@@ -33,24 +33,14 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAddReloadRequirement",
-			trigger = {
-				"onAttach"
-			},
-			arg_list = {
-				number = 1,
-				type = "airAssist"
-			}
-		},
-		{
 			type = "BattleBuffCastSkill",
 			trigger = {
 				"onUpdate"
 			},
 			arg_list = {
-				skill_id = 105010,
 				time = 20,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 105010
 			}
 		}
 	}

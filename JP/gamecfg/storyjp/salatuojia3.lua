@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SALATUOJIA3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"ベストピクチャーズ！\n\n<size=45>その三　サラトガちゃんのオフ</size>",
@@ -17,9 +17,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "四枚目には休日にアイドル活動（？）をしているサラトガちゃんの姿が――",
 			typewriter = {
 				speed = 0.05,
@@ -27,17 +27,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_school",
+			actor = 107030,
 			side = 2,
+			bgName = "bg_story_school",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 107030,
-			nameColor = "#a9f548",
 			say = "うんうん！今日の宣材写真撮影もいい感じね！",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -78,12 +78,12 @@ return {
 			}
 		},
 		{
-			say = "サラトガさん、う……コホン！私達は本当に出てもいいのでしょうか……",
+			actor = 201080,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 201080,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "サラトガさん、う……コホン！私達は本当に出てもいいのでしょうか……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -162,15 +162,15 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "かんぱーい！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -195,8 +195,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 2,
 					dur = 0.1,
 					number = 1
@@ -204,12 +204,12 @@ return {
 			}
 		},
 		{
-			say = "かんぱーい！……げほっげほっ！サラトガさん、もしかして……",
+			actor = 201100,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 201100,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "かんぱーい！……げほっげほっ！サラトガさん、もしかして……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -224,15 +224,15 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0.5,
 					dur = 0.1,
 					number = 1
 				},
 				{
-					y = -30,
 					type = "shake",
+					y = -30,
 					delay = 1.5,
 					dur = 0.1,
 					number = 3
@@ -240,11 +240,11 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "へっへっへー、ちょこーっとジンジャーを入れちゃった♪いたずら大成功！",
 			typewriter = {
 				speed = 0.05,
@@ -256,8 +256,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.1,
 					number = 3
@@ -345,13 +345,13 @@ return {
 			}
 		},
 		{
-			say = "……え。",
+			actor = 0,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 0,
 			nameColor = "#a9f548",
+			dir = 1,
 			withoutPainting = true,
+			say = "……え。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -362,16 +362,16 @@ return {
 			}
 		},
 		{
-			say = "そう言えば、あの日の翌日の朝は大変だったな……",
-			side = 2,
-			dir = 1,
-			bgName = "bg_story_room",
 			actor = 0,
+			side = 2,
+			bgName = "bg_story_room",
 			nameColor = "#a9f548",
+			dir = 1,
 			withoutPainting = true,
+			say = "そう言えば、あの日の翌日の朝は大変だったな……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "防衛戦の説明はここで確認できるわ！",
 				mode = 1,
-				dir = -1,
 				posY = 172,
+				dir = -1,
 				posX = -337
 			},
 			ui = {

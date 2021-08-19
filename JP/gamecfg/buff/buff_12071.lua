@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "小赤城1",
 	init_effect = "",
-	id = 12071,
+	name = "小赤城1",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "小赤城1",
 	stack = 1,
-	color = "red",
+	id = 12071,
 	icon = 12070,
 	last_effect = "",
 	effect_list = {
@@ -27,8 +27,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				skill_id = 12070,
-				time = 12
+				time = 12,
+				skill_id = 12070
 			}
 		}
 	}

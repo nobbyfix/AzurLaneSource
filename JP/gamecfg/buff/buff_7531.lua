@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "传颂之物前排雷伤2%",
 	init_effect = "",
-	id = 7531,
+	name = "传颂之物前排雷伤2%",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "传颂之物前排雷伤2%",
 	stack = 1,
-	color = "yellow",
+	id = 7531,
 	icon = 7530,
 	last_effect = "",
 	effect_list = {

@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "ヘルプボタンをタップし、「通商破壊」の説明をチェック！",
 				mode = 1,
-				dir = -1,
 				posY = -63.794,
+				dir = -1,
 				posX = -663
 			},
 			ui = {

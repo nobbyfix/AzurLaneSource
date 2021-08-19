@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "AIDANG2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"お姉さんと一日デート\n\n<size=45>二　レッツゴー！</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
+			say = "翌日・朝",
 			side = 2,
+			bgName = "bg_story_outdoor",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "翌日・朝",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -94,15 +94,15 @@ return {
 			}
 		},
 		{
+			actor = 303110,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 303110,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "愛宕？それと…指揮官殿？そなたらも朝練か？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -143,9 +143,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "愛宕は一本のスポーツドリンクを取り出し、高雄に渡した。",
 			typewriter = {
 				speed = 0.05,
@@ -233,9 +233,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "愛宕が高雄に耳打ちでなにか話した。",
 			typewriter = {
 				speed = 0.05,
@@ -291,9 +291,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "なぜかプンプンした高雄は刀を抱えながら走り去っていった。",
 			typewriter = {
 				speed = 0.05,
@@ -301,9 +301,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "一体何を話されたのやら……",
 			typewriter = {
 				speed = 0.05,

@@ -8,8 +8,8 @@ return {
 				},
 				arg_list = {
 					rant = 2000,
-					target = "TargetSelf",
-					skill_id = 4102
+					skill_id = 4102,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 				},
 				arg_list = {
 					rant = 2000,
-					target = "TargetSelf",
-					skill_id = 4102
+					skill_id = 4102,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 				},
 				arg_list = {
 					rant = 2000,
-					target = "TargetSelf",
-					skill_id = 4102
+					skill_id = 4102,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 				},
 				arg_list = {
 					rant = 2000,
-					target = "TargetSelf",
-					skill_id = 4102
+					skill_id = 4102,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 				},
 				arg_list = {
 					rant = 2000,
-					target = "TargetSelf",
-					skill_id = 4102
+					skill_id = 4102,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 				},
 				arg_list = {
 					rant = 2000,
-					target = "TargetSelf",
-					skill_id = 4102
+					skill_id = 4102,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 				},
 				arg_list = {
 					rant = 2000,
-					target = "TargetSelf",
-					skill_id = 4102
+					skill_id = 4102,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 				},
 				arg_list = {
 					rant = 2000,
-					target = "TargetSelf",
-					skill_id = 4102
+					skill_id = 4102,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 				},
 				arg_list = {
 					rant = 2000,
-					target = "TargetSelf",
-					skill_id = 4102
+					skill_id = 4102,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 				},
 				arg_list = {
 					rant = 2000,
-					target = "TargetSelf",
-					skill_id = 4102
+					skill_id = 4102,
+					target = "TargetSelf"
 				}
 			}
 		}
 	},
-	time = 1,
-	name = "烟雾弹",
 	init_effect = "",
-	id = 4103,
+	name = "烟雾弹",
+	time = 1,
+	color = "blue",
 	picture = "",
 	desc = "概率发动",
 	stack = 1,
-	color = "blue",
+	id = 4103,
 	icon = 4100,
 	last_effect = "",
 	effect_list = {
@@ -167,8 +167,8 @@ return {
 			},
 			arg_list = {
 				rant = 2000,
-				target = "TargetSelf",
-				skill_id = 4102
+				skill_id = 4102,
+				target = "TargetSelf"
 			}
 		}
 	}

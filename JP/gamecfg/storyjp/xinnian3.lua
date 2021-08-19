@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "XINNIAN3",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -70,12 +70,12 @@ return {
 			}
 		},
 		{
-			say = "にゃ！オイゲンにゃ！どうしたにゃ？なんか元気ないにゃ…？",
+			actor = 312010,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 312010,
 			actorName = "{namecode:98}",
+			dir = 1,
+			say = "にゃ！オイゲンにゃ！どうしたにゃ？なんか元気ないにゃ…？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -108,8 +108,8 @@ return {
 			actor = 312010,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:98}",
+			dir = 1,
 			say = "明石は重桜のみんなと一緒にお正月の準備をしているにゃ！色々忙しすぎて売店の売上も落としそうだにゃ……",
 			typewriter = {
 				speed = 0.05,
@@ -139,8 +139,8 @@ return {
 			actor = 312010,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:98}",
+			dir = 1,
 			say = "ありすぎて超忙しいにゃ！重桜のみんなにとってお正月は大切な祝日だにゃ！",
 			typewriter = {
 				speed = 0.05,
@@ -167,12 +167,12 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "重桜寮",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -196,8 +196,8 @@ return {
 			actor = 307030,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actorName = "{namecode:93}",
+			dir = 1,
 			say = "あ、じゃあこの飾をそこに置くのを手伝って。これ全部お正月用だから今日中に全部飾ってしまいたいの。こっちも人手不足で…",
 			typewriter = {
 				speed = 0.05,
@@ -231,8 +231,8 @@ return {
 			actor = 307030,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:93}",
+			dir = 1,
 			say = "これは門松っていうの。あ、これ2つでワンセットだから門の両側に置いて。由来は“豊作をもたらす神様が家に来るための目印”という所かしら。",
 			typewriter = {
 				speed = 0.05,
@@ -262,8 +262,8 @@ return {
 			actor = 307030,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:93}",
+			dir = 1,
 			say = "あ、あれはえっと、神様を迎えられるように神聖な場所を作るものよ。玄関に飾るものだから、玄関と窓の上につけといて。キッチンにも。",
 			typewriter = {
 				speed = 0.05,
@@ -308,8 +308,8 @@ return {
 			actor = 312010,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:98}",
+			dir = 1,
 			say = "あれは鏡餅だにゃ。食べ物だけど今はまだ食べられないにゃ。……ちゃんとお供えして、正月が終わったら食べるにゃ。",
 			typewriter = {
 				speed = 0.05,
@@ -339,8 +339,8 @@ return {
 			actor = 312010,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:98}",
+			dir = 1,
 			say = "我慢にゃ！年越しパーティーではいっぱい食べられるにゃ！",
 			typewriter = {
 				speed = 0.05,
@@ -370,8 +370,8 @@ return {
 			actor = 312010,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "{namecode:98}",
+			dir = 1,
 			say = "母港のみんなは仲間だからウェルカムにゃ～",
 			typewriter = {
 				speed = 0.05,

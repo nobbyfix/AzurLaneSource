@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "HOLOGUANQIA2",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>真実に向かう努力</size>",
@@ -49,8 +49,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			blackBg = true,
 			effects = {
 				{
@@ -59,8 +59,8 @@ return {
 				}
 			},
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -84,15 +84,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
+			say = "正午・航路護衛艦隊",
 			side = 2,
+			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level02",
-			say = "正午・航路護衛艦隊",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -155,12 +155,12 @@ return {
 			}
 		},
 		{
-			say = "…………",
+			actor = 301490,
 			side = 1,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 301490,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "…………",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -255,11 +255,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "…………これは……？！",
 			effects = {
 				{
@@ -309,11 +309,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 0,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "言うまでもなく鏡面海域ね。セイレーンめ、人がのんびり帰還している最中に！",
 			typewriter = {
 				speed = 0.05,
@@ -325,8 +325,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

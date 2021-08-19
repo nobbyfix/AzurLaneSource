@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "伯明翰防空",
 	init_effect = "",
-	id = 12520,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12520,
 	icon = 12520,
 	last_effect = "",
 	effect_list = {
@@ -57,9 +57,9 @@ return {
 				"onFoeAircraftDying"
 			},
 			arg_list = {
-				skill_id = 12521,
-				inside = 1,
 				target = "TargetSelf",
+				inside = 1,
+				skill_id = 12521,
 				time = 1
 			}
 		}

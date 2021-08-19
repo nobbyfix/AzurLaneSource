@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "活动buff-祭典祈愿效果-战斗伤害提高",
 	init_effect = "",
-	id = 501,
+	name = "活动buff-祭典祈愿效果-战斗伤害提高",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "舰队伤害提高",
 	stack = 1,
-	color = "yellow",
+	id = 501,
 	icon = 501,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.03,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.01
 			}
 		}
 	}

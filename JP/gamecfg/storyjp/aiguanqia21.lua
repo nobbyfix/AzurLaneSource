@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA21",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 401230,
@@ -22,12 +22,12 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			say = "あぅっ…ぐっ…",
 			actorName = "巨大化キズナアイ",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#ff5c5c",
+			actorScale = 3.5,
+			say = "あぅっ…ぐっ…",
 			actorPosition = {
 				x = 150,
 				y = -900
@@ -59,12 +59,12 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			say = "痛いよぉ…っ",
 			actorName = "巨大化キズナアイ",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#ff5c5c",
+			actorScale = 3.5,
+			say = "痛いよぉ…っ",
 			actorPosition = {
 				x = 150,
 				y = -900
@@ -96,12 +96,12 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			say = "うぅっ！ぐやぁ！",
 			actorName = "巨大化キズナアイ",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#ff5c5c",
+			actorScale = 3.5,
+			say = "うぅっ！ぐやぁ！",
 			actorPosition = {
 				x = 150,
 				y = -900
@@ -133,12 +133,12 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			dir = 1,
-			say = "うわぁあぁぁあぁあぁぁぁあぁぁああぁぁあぁぁぁぁぁぅぅ！！！",
-			actorScale = 3.5,
 			actorName = "巨大化キズナアイ",
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#ff5c5c",
+			actorScale = 3.5,
+			say = "うわぁあぁぁあぁあぁぁぁあぁぁああぁぁあぁぁぁぁぁぅぅ！！！",
 			flashN = {
 				color = {
 					1,
@@ -177,8 +177,8 @@ return {
 			},
 			action = {
 				{
-					y = 1650,
 					type = "move",
+					y = 1650,
 					delay = 0,
 					dur = 2,
 					x = 0
@@ -197,8 +197,8 @@ return {
 			expression = 5,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			say = "みんな…ありがとう……迷惑かけちゃって、ごめんね……！",
 			flashN = {
 				color = {
@@ -290,8 +290,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "ゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴ………！！！",
 			dialogShake = {
 				speed = 0.09,
@@ -356,8 +356,8 @@ return {
 			expression = 1,
 			side = 0,
 			nameColor = "#ff5c5c",
-			dir = 1,
 			hideOther = true,
+			dir = 1,
 			actor = 10400010,
 			actorName = "ニセキズナアイ達",
 			say = "………",
@@ -503,8 +503,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			say = "（えええ！？めっちゃ久しぶりなんだけどいけるかなー！？）で、できるかわかんないけど、やってみるよ！んー、ぐぬぬぬぬぬ……えい！！！",
 			typewriter = {
 				speed = 0.05,
@@ -519,8 +519,8 @@ return {
 			expression = 1,
 			side = 0,
 			hideOther = true,
-			dir = 1,
 			nameColor = "#ff5c5c",
+			dir = 1,
 			actor = 10400010,
 			actorName = "ニセキズナアイ達",
 			say = "！！！",
@@ -568,8 +568,8 @@ return {
 			},
 			action = {
 				{
-					y = 22.5,
 					type = "shake",
+					y = 22.5,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -596,8 +596,8 @@ return {
 			expression = 6,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			say = "な、なんかできたーーーーーー！！！",
 			typewriter = {
 				speed = 0.05,
@@ -627,8 +627,8 @@ return {
 			expression = 6,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			say = "！このエラーは…",
 			typewriter = {
 				speed = 0.05,
@@ -640,8 +640,8 @@ return {
 			}
 		},
 		{
-			actorName = "システムメッセージ",
 			side = 2,
+			actorName = "システムメッセージ",
 			nameColor = "#a9f548",
 			dir = 1,
 			say = "プレイヤーを母港まで転送します。安全な位置まで移動し転送に備えてください。",
@@ -655,8 +655,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "……まばゆい光が少女たちを優しく包んだ。",
 			flashN = {
 				color = {
@@ -688,8 +688,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "――ただ一人、キズナアイを除いて",
 			typewriter = {
 				speed = 0.05,
@@ -716,8 +716,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -729,8 +729,8 @@ return {
 			actor = 10400010,
 			side = 2,
 			expression = 5,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ごめんね、このバーチャル鏡面海域を制御してみんなを転送するには私がここに残らないといけないみたいなんだ",
 			typewriter = {
 				speed = 0.05,
@@ -760,8 +760,8 @@ return {
 			actor = 10400010,
 			side = 2,
 			expression = 3,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ここまで付き合ってくれて、本当にありがとう。みんなとの時間一生忘れないよ。",
 			typewriter = {
 				speed = 0.05,
@@ -806,8 +806,8 @@ return {
 			actor = 10400010,
 			side = 2,
 			expression = 3,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "みんなは絶対に元の場所に帰すからね",
 			typewriter = {
 				speed = 0.05,
@@ -837,8 +837,8 @@ return {
 			actor = 10400010,
 			side = 2,
 			expression = 4,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "スーパーAIですから！",
 			typewriter = {
 				speed = 0.05,
@@ -850,8 +850,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "――「さよなら」",
 			typewriter = {
@@ -864,11 +864,11 @@ return {
 			}
 		},
 		{
+			actor = 201210,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			actor = 201210,
 			say = "アイちゃああああああああああああああん！！！",
 			flashN = {
 				color = {

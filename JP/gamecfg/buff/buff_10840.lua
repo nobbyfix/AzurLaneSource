@@ -32,12 +32,12 @@ return {
 	desc_get = "当由于战斗减员导致自身成为先锋仅存的角色时，自身伤害提高50.0%，受到伤害提高20.0%",
 	name = "决死突袭",
 	init_effect = "",
-	id = 10840,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "当由于战斗减员导致自身成为先锋仅存的角色时，自身伤害提高50.0%，受到伤害提高20.0%",
 	stack = 1,
-	color = "red",
+	id = 10840,
 	icon = 10840,
 	last_effect = "",
 	effect_list = {
@@ -47,17 +47,12 @@ return {
 				"onFriendlyShipDying"
 			},
 			arg_list = {
-				check_target = "TargetShipTypeFriendly",
-				quota = 1,
 				maxTargetNumber = 1,
+				quota = 1,
 				skill_id = 10840,
-				ship_type_list = {
-					1,
-					2,
-					3,
-					9,
-					11,
-					18
+				check_target = {
+					"TargetAllHelp",
+					"TargetPlayerVanguardFleet"
 				}
 			}
 		}

@@ -9,8 +9,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 20,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 20
 				}
 			}
 		}
@@ -25,8 +25,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 26,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 26
 				}
 			}
 		}
@@ -41,8 +41,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 32,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 32
 				}
 			}
 		}
@@ -57,8 +57,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 40,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 40
 				}
 			}
 		}
@@ -73,8 +73,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 46,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 46
 				}
 			}
 		}
@@ -89,8 +89,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 52,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 52
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 60,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 60
 				}
 			}
 		}
@@ -121,8 +121,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 66,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 66
 				}
 			}
 		}
@@ -137,8 +137,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 72,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 72
 				}
 			}
 		}
@@ -153,20 +153,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 80,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 80
 				}
 			}
 		}
 	},
-	time = 0,
-	name = "小齐柏林1",
 	init_effect = "",
-	id = 12091,
+	name = "小齐柏林1",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 3,
-	color = "red",
+	id = 12091,
 	icon = 12090,
 	last_effect = "",
 	effect_list = {}

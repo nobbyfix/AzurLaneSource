@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 3,
-	id = "TACT20009",
-	once = true,
 	fadeType = 1,
+	once = true,
+	id = "TACT20009",
 	scripts = {
 		{
 			actor = 407010,
@@ -63,8 +63,8 @@ return {
 			}
 		},
 		{
-			sequenceSpd = 2,
 			mode = 1,
+			sequenceSpd = 2,
 			bgFade = true,
 			sequence = {
 				{

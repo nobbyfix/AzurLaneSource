@@ -1,18 +1,18 @@
 return {
-	mode = 2,
-	once = true,
 	id = "BSMXU1",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			blackBg = true,
-			bgm = "echo-loop",
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "ふぅ…出撃してだいぶ経ったのに、なーんにも襲撃目標が見つからないなんて",
+			bgm = "echo-loop",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -25,10 +25,10 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "流氷以外はクジラさんすら見てないし、やっぱり情報がちょっと間違ってるんじゃないかな",
 			typewriter = {
 				speed = 0.05,
@@ -40,12 +40,12 @@ return {
 			}
 		},
 		{
-			say = "エースでも手ぶらで帰ってくる時があるよ。目標が見つかるかどうかは……運だよね",
+			actor = 408030,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 408030,
-			nameColor = "#a9f548",
+			say = "エースでも手ぶらで帰ってくる時があるよ。目標が見つかるかどうかは……運だよね",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -62,10 +62,10 @@ return {
 		{
 			expression = 1,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "えーじゃああたしの運が悪いってこと？鉄血のみんながあたしは運がいいっていつも褒めてくれるのに",
 			typewriter = {
 				speed = 0.05,
@@ -79,10 +79,10 @@ return {
 		{
 			expression = 3,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "初出撃で戦果がないと、ビスマルクのアネキに見せる顔がないよ！…むぅ…",
 			typewriter = {
 				speed = 0.05,
@@ -110,11 +110,11 @@ return {
 			}
 		},
 		{
+			actor = 900180,
 			side = 0,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 900180,
-			nameColor = "#a9f548",
 			say = "どこどこ！？",
 			typewriter = {
 				speed = 0.05,
@@ -126,8 +126,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -168,11 +168,11 @@ return {
 			}
 		},
 		{
+			actor = 900180,
 			side = 0,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 900180,
-			nameColor = "#a9f548",
 			say = "これは…華麗なる海底のリッター、U-556の初戦！",
 			effects = {
 				{
@@ -190,8 +190,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -202,10 +202,10 @@ return {
 		{
 			expression = 2,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "おおお！なんか盛り上がってきたよ！",
 			typewriter = {
 				speed = 0.05,
@@ -217,11 +217,11 @@ return {
 			}
 		},
 		{
+			actor = 408030,
 			side = 1,
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 408030,
-			nameColor = "#a9f548",
 			say = "声が大きい……そろそろ潜らないと見つかっちゃうよ",
 			effects = {
 				{
@@ -241,10 +241,10 @@ return {
 		{
 			expression = 2,
 			side = 0,
-			dir = 1,
-			blackBg = true,
 			actor = 900180,
 			nameColor = "#a9f548",
+			dir = 1,
+			blackBg = true,
 			say = "うん！（小声）U-556、潜航かいしー！",
 			typewriter = {
 				speed = 0.05,
@@ -256,8 +256,8 @@ return {
 			},
 			action = {
 				{
-					y = -1000,
 					type = "move",
+					y = -1000,
 					delay = 0,
 					dur = 2.5,
 					x = 0

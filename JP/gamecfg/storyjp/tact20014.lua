@@ -1,37 +1,16 @@
 return {
-	once = true,
+	id = "TACT20014",
 	mode = 2,
 	continueBgm = true,
-	id = "TACT20014",
+	once = true,
 	scripts = {
 		{
+			soundeffect = "event:/ui/alarm",
 			side = 0,
-			withoutPainting = true,
-			actorName = "システム",
+			nameColor = "#ff0000",
+			say = "――Gambit　シーケンスキドウ――「ソタイ」ノバックアップヲスミヤカ二ハイキセヨ――",
 			dir = 0,
 			bgm = "story-5",
-			soundeffect = "event:/ui/alarm",
-			actor = 900011,
-			nameColor = "#ff0000",
-			say = "――Gambit　シーケンスキドウ――「ソタイ」ノバックアップヲスミヤカ二ハイキセヨ――",
-			shake = {
-				speed = 1,
-				number = 3
-			},
-			typewriter = {
-				speed = 0.02,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			side = 0,
-			say = "――Gambit　シーケンスキドウ――「ソタイ」ノバックアップヲスミヤカ二ハイキセヨ――",
-			nameColor = "#ff0000",
-			dir = 0,
 			actor = 900011,
 			actorName = "システム",
 			withoutPainting = true,
@@ -49,13 +28,34 @@ return {
 			}
 		},
 		{
-			side = 0,
-			say = "――Gambit　シーケンスキドウ――「ソタイ」ノバックアップヲスミヤカ二ハイキセヨ――",
-			nameColor = "#ff0000",
-			dir = 0,
 			actor = 900011,
+			side = 0,
+			nameColor = "#ff0000",
 			actorName = "システム",
+			dir = 0,
 			withoutPainting = true,
+			say = "――Gambit　シーケンスキドウ――「ソタイ」ノバックアップヲスミヤカ二ハイキセヨ――",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.02,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 900011,
+			side = 0,
+			nameColor = "#ff0000",
+			actorName = "システム",
+			dir = 0,
+			withoutPainting = true,
+			say = "――Gambit　シーケンスキドウ――「ソタイ」ノバックアップヲスミヤカ二ハイキセヨ――",
 			shake = {
 				speed = 1,
 				number = 3
@@ -165,8 +165,8 @@ return {
 			}
 		},
 		{
-			sequenceSpd = 2,
 			mode = 1,
+			sequenceSpd = 2,
 			bgFade = true,
 			sequence = {
 				{

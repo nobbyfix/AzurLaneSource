@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "ホーネットを倒せたなんて、流石私が見込んだ逸材ね！",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			}
 		},
@@ -16,8 +16,8 @@ return {
 			style = {
 				text = "でもこの状況じゃ私も原隊に戻らないと…あとは指揮官自身で乗り越えるのよ！",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			}
 		}

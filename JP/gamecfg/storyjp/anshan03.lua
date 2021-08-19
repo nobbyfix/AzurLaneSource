@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ANSHAN03",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"四天王の大冒険・鞍山編\n\n<size=45>その三　東煌の（バオズ）ススメ</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501020,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = -1,
-			bgm = "story-china",
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "たっだいまーブリちゃんたちは捕まえられなかったけど…ほかの人を連れてきたよ！",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "あ！平海さんと寧海さん！",
+			actor = 501040,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501040,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "あ！平海さんと寧海さん！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -102,12 +102,12 @@ return {
 			}
 		},
 		{
-			say = "あははは…鞍山（アンシャン）は相変わらず真面目ね。",
+			actor = 502020,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 502020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "あははは…鞍山（アンシャン）は相変わらず真面目ね。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -138,10 +138,10 @@ return {
 			}
 		},
 		{
-			actorName = "太原&長春&鞍山",
-			side = 0,
-			bgName = "bg_story_school",
 			actor = 501040,
+			actorName = "太原&長春&鞍山",
+			bgName = "bg_story_school",
+			side = 0,
 			hideOther = true,
 			nameColor = "#a9f548",
 			say = "おおお！",
@@ -217,12 +217,12 @@ return {
 			}
 		},
 		{
-			say = "へへへ～",
+			actor = 502030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 502030,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "へへへ～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "近距离作战",
 	init_effect = "",
-	id = 12400,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 12400,
 	icon = 12400,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				skill_id = 12400,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 12400
 			}
 		}
 	}

@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.05,
-					type = "airAssist"
+					type = "airAssist",
+					number = -0.05
 				}
 			},
 			{
@@ -52,8 +52,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.072,
-					type = "airAssist"
+					type = "airAssist",
+					number = -0.072
 				}
 			},
 			{
@@ -96,8 +96,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.094,
-					type = "airAssist"
+					type = "airAssist",
+					number = -0.094
 				}
 			},
 			{
@@ -140,8 +140,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.116,
-					type = "airAssist"
+					type = "airAssist",
+					number = -0.116
 				}
 			},
 			{
@@ -184,8 +184,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.138,
-					type = "airAssist"
+					type = "airAssist",
+					number = -0.138
 				}
 			},
 			{
@@ -228,8 +228,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.16,
-					type = "airAssist"
+					type = "airAssist",
+					number = -0.16
 				}
 			},
 			{
@@ -272,8 +272,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.182,
-					type = "airAssist"
+					type = "airAssist",
+					number = -0.182
 				}
 			},
 			{
@@ -316,8 +316,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.204,
-					type = "airAssist"
+					type = "airAssist",
+					number = -0.204
 				}
 			},
 			{
@@ -360,8 +360,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.226,
-					type = "airAssist"
+					type = "airAssist",
+					number = -0.226
 				}
 			},
 			{
@@ -404,8 +404,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.25,
-					type = "airAssist"
+					type = "airAssist",
+					number = -0.25
 				}
 			},
 			{
@@ -439,9 +439,9 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "航空战队",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "初始装填上升",
 	stack = 1,
@@ -463,8 +463,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.05,
-				type = "airAssist"
+				type = "airAssist",
+				number = -0.05
 			}
 		},
 		{

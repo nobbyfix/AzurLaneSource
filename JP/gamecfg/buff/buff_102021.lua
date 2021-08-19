@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1000
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1000
 				}
 			},
 			{
@@ -27,8 +27,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1500
 				}
 			}
 		}
@@ -41,8 +41,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1220
 				}
 			},
 			{
@@ -51,8 +51,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1220,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1220
 				}
 			},
 			{
@@ -61,8 +61,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1720,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1720
 				}
 			}
 		}
@@ -75,8 +75,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1440,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1440
 				}
 			},
 			{
@@ -85,8 +85,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1440,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1440
 				}
 			},
 			{
@@ -95,8 +95,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1940,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1940
 				}
 			}
 		}
@@ -109,8 +109,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1660
 				}
 			},
 			{
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1660,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1660
 				}
 			},
 			{
@@ -129,8 +129,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2160,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2160
 				}
 			}
 		}
@@ -143,8 +143,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1880,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1880
 				}
 			},
 			{
@@ -153,8 +153,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1880,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 1880
 				}
 			},
 			{
@@ -163,8 +163,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2380,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2380
 				}
 			}
 		}
@@ -177,8 +177,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2100,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2100
 				}
 			},
 			{
@@ -187,8 +187,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2100,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2100
 				}
 			},
 			{
@@ -197,8 +197,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2600,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2600
 				}
 			}
 		}
@@ -211,8 +211,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2320,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2320
 				}
 			},
 			{
@@ -221,8 +221,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2320,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2320
 				}
 			},
 			{
@@ -231,8 +231,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2820,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2820
 				}
 			}
 		}
@@ -245,8 +245,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2540,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2540
 				}
 			},
 			{
@@ -255,8 +255,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2540,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2540
 				}
 			},
 			{
@@ -265,8 +265,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3040,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 3040
 				}
 			}
 		}
@@ -279,8 +279,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2760,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2760
 				}
 			},
 			{
@@ -289,8 +289,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2760,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 2760
 				}
 			},
 			{
@@ -299,8 +299,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3260,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 3260
 				}
 			}
 		}
@@ -313,8 +313,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3000,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 3000
 				}
 			},
 			{
@@ -323,8 +323,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3000,
-					attr = "loadSpeed"
+					attr = "loadSpeed",
+					number = 3000
 				}
 			},
 			{
@@ -333,15 +333,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 3500
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "22领队技能",
 	init_effect = "jinengchufablue",
-	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 1,
@@ -362,8 +362,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 1000
 			}
 		},
 		{
@@ -372,8 +372,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1000,
-				attr = "loadSpeed"
+				attr = "loadSpeed",
+				number = 1000
 			}
 		},
 		{
@@ -382,8 +382,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1500,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 1500
 			}
 		}
 	}

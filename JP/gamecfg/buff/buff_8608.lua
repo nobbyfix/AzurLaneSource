@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "2019年2月世界BOSS开场碰撞免疫",
 	init_effect = "",
-	id = 8608,
+	name = "2019年2月世界BOSS开场碰撞免疫",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "碰撞免疫",
 	stack = 1,
-	color = "yellow",
+	id = 8608,
 	icon = 2120,
 	last_effect = "",
 	effect_list = {
@@ -17,8 +17,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "hammerDamagePrevent"
+				attr = "hammerDamagePrevent",
+				number = 1
 			}
 		}
 	}

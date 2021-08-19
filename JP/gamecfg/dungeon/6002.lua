@@ -6,8 +6,8 @@ return {
 			stageIndex = 1,
 			failCondition = 1,
 			timeCount = 90,
-			backGroundStageID = 1,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -57,11 +57,11 @@ return {
 					triggerParam = {},
 					spawn = {
 						{
+							monsterTemplateID = 557,
 							reinforceDelay = 10,
+							pilotAITemplateID = 10001,
 							delay = 1,
 							moveCast = true,
-							monsterTemplateID = 557,
-							pilotAITemplateID = 10001,
 							corrdinate = {
 								-12,
 								0,
@@ -78,17 +78,17 @@ return {
 							},
 							phase = {
 								{
-									switchType = 1,
+									switchParam = 5,
 									switchTo = 1,
 									index = 0,
-									switchParam = 5,
+									switchType = 1,
 									setAI = 10001
 								},
 								{
-									switchType = 1,
+									switchParam = 3,
 									switchTo = 0,
 									index = 1,
-									switchParam = 3,
+									switchType = 1,
 									setAI = 20003
 								}
 							}
@@ -97,9 +97,9 @@ return {
 					reinforcement = {
 						{
 							monsterTemplateID = 558,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								10,
 								0,
@@ -108,9 +108,9 @@ return {
 						},
 						{
 							monsterTemplateID = 558,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								14,
 								0,
@@ -119,9 +119,9 @@ return {
 						},
 						{
 							monsterTemplateID = 558,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								10,
 								0,
@@ -130,9 +130,9 @@ return {
 						},
 						{
 							monsterTemplateID = 560,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								35,
 								0,
@@ -145,9 +145,9 @@ return {
 						},
 						{
 							monsterTemplateID = 560,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								35,
 								0,

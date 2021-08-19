@@ -12,8 +12,8 @@ return {
 			style = {
 				text = "水面下で戦闘できる艦船が新たに転属してきました。新しい仲間を迎えに行きましょう",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -37,6 +37,7 @@ return {
 			}
 		},
 		{
+			delay = 1,
 			ui = {
 				path = "/OverlayCamera/Overlay/UIMain/AwardInfoUI(Clone)",
 				fingerPos = {
@@ -65,8 +66,8 @@ return {
 			style = {
 				text = "潜水艦が母港に配属されました！早速艦隊に編成しましょう！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -94,8 +95,8 @@ return {
 			ui = {
 				path = "/UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships/308031",
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				}
@@ -103,7 +104,7 @@ return {
 		},
 		{
 			ui = {
-				path = "/UICamera/Canvas/UIMain/DockyardUI(Clone)/select_panel/confirm_button"
+				path = "/OverlayCamera/Overlay/UIMain/blur_panel/select_panel/confirm_button"
 			}
 		},
 		{
@@ -111,8 +112,8 @@ return {
 			style = {
 				text = "潜水艦隊が編成されました！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -121,8 +122,8 @@ return {
 			style = {
 				text = "敵の潜水艦が出現するステージでは、潜水艦対策に駆逐艦や軽巡洋艦に対潜兵装を装備する必要があります",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},
@@ -138,11 +139,11 @@ return {
 		},
 		{
 			ui = {
-				pathIndex = 0,
 				path = "/UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships",
+				pathIndex = 0,
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				}
@@ -153,8 +154,8 @@ return {
 			style = {
 				text = "対潜戦闘についての詳細はヘルプボタンで確認してください",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 200
 			}
 		},

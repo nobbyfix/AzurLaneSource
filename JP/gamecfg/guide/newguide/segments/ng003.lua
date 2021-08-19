@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "対潜戦闘に関するシステムはヘルプボタンで詳細を確認できます",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			}
 		},

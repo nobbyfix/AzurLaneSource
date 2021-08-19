@@ -6,8 +6,8 @@ return {
 			stageIndex = 1,
 			failCondition = 1,
 			timeCount = 180,
-			backGroundStageID = 1,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -66,8 +66,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 844,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-12,
 								0,
@@ -80,8 +80,8 @@ return {
 						},
 						{
 							monsterTemplateID = 841,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-12,
 								0,
@@ -95,8 +95,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								-12,
 								0,
@@ -109,8 +109,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 3,
 							moveCast = true,
+							delay = 3,
 							corrdinate = {
 								-12,
 								0,
@@ -124,8 +124,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 3,
 							moveCast = true,
+							delay = 3,
 							corrdinate = {
 								-12,
 								0,
@@ -139,8 +139,8 @@ return {
 						},
 						{
 							monsterTemplateID = 840,
-							delay = 5,
 							moveCast = true,
+							delay = 5,
 							corrdinate = {
 								-6,
 								0,
@@ -154,8 +154,8 @@ return {
 						},
 						{
 							monsterTemplateID = 840,
-							delay = 8,
 							moveCast = true,
+							delay = 8,
 							corrdinate = {
 								-6,
 								0,
@@ -169,8 +169,8 @@ return {
 						},
 						{
 							monsterTemplateID = 842,
-							delay = 10,
 							moveCast = true,
+							delay = 10,
 							corrdinate = {
 								-6,
 								0,
@@ -184,8 +184,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 13,
 							moveCast = true,
+							delay = 13,
 							corrdinate = {
 								0,
 								0,
@@ -198,8 +198,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 14,
 							moveCast = true,
+							delay = 14,
 							corrdinate = {
 								0,
 								0,
@@ -213,8 +213,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 15,
 							moveCast = true,
+							delay = 15,
 							corrdinate = {
 								0,
 								0,
@@ -227,8 +227,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 15,
 							moveCast = true,
+							delay = 15,
 							corrdinate = {
 								0,
 								0,
@@ -242,8 +242,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 16,
 							moveCast = true,
+							delay = 16,
 							corrdinate = {
 								0,
 								0,
@@ -256,8 +256,8 @@ return {
 						},
 						{
 							monsterTemplateID = 841,
-							delay = 16,
 							moveCast = true,
+							delay = 16,
 							corrdinate = {
 								0,
 								0,
@@ -271,8 +271,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 17,
 							moveCast = true,
+							delay = 17,
 							corrdinate = {
 								0,
 								0,
@@ -286,8 +286,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 17,
 							moveCast = true,
+							delay = 17,
 							corrdinate = {
 								0,
 								0,
@@ -300,8 +300,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 18,
 							moveCast = true,
+							delay = 18,
 							corrdinate = {
 								0,
 								0,
@@ -315,8 +315,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 19,
 							moveCast = true,
+							delay = 19,
 							corrdinate = {
 								0,
 								0,
@@ -330,8 +330,8 @@ return {
 						},
 						{
 							monsterTemplateID = 840,
-							delay = 22,
 							moveCast = true,
+							delay = 22,
 							corrdinate = {
 								6,
 								0,
@@ -345,8 +345,8 @@ return {
 						},
 						{
 							monsterTemplateID = 840,
-							delay = 22,
 							moveCast = true,
+							delay = 22,
 							corrdinate = {
 								6,
 								0,
@@ -360,8 +360,8 @@ return {
 						},
 						{
 							monsterTemplateID = 842,
-							delay = 25,
 							moveCast = true,
+							delay = 25,
 							corrdinate = {
 								6,
 								0,
@@ -375,8 +375,8 @@ return {
 						},
 						{
 							monsterTemplateID = 842,
-							delay = 25,
 							moveCast = true,
+							delay = 25,
 							corrdinate = {
 								6,
 								0,
@@ -390,8 +390,8 @@ return {
 						},
 						{
 							monsterTemplateID = 840,
-							delay = 28,
 							moveCast = true,
+							delay = 28,
 							corrdinate = {
 								9,
 								0,
@@ -405,8 +405,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 31,
 							moveCast = true,
+							delay = 31,
 							corrdinate = {
 								12,
 								0,
@@ -419,8 +419,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 31,
 							moveCast = true,
+							delay = 31,
 							corrdinate = {
 								12,
 								0,
@@ -433,8 +433,8 @@ return {
 						},
 						{
 							monsterTemplateID = 841,
-							delay = 31,
 							moveCast = true,
+							delay = 31,
 							corrdinate = {
 								15,
 								0,
@@ -448,8 +448,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 31,
 							moveCast = true,
+							delay = 31,
 							corrdinate = {
 								12,
 								0,
@@ -462,8 +462,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 31,
 							moveCast = true,
+							delay = 31,
 							corrdinate = {
 								12,
 								0,
@@ -476,8 +476,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 33,
 							moveCast = true,
+							delay = 33,
 							corrdinate = {
 								12,
 								0,
@@ -491,8 +491,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 33,
 							moveCast = true,
+							delay = 33,
 							corrdinate = {
 								12,
 								0,
@@ -506,8 +506,8 @@ return {
 						},
 						{
 							monsterTemplateID = 840,
-							delay = 36,
 							moveCast = true,
+							delay = 36,
 							corrdinate = {
 								18,
 								0,
@@ -521,8 +521,8 @@ return {
 						},
 						{
 							monsterTemplateID = 840,
-							delay = 36,
 							moveCast = true,
+							delay = 36,
 							corrdinate = {
 								18,
 								0,
@@ -536,8 +536,8 @@ return {
 						},
 						{
 							monsterTemplateID = 842,
-							delay = 41,
 							moveCast = true,
+							delay = 41,
 							corrdinate = {
 								18,
 								0,
@@ -551,8 +551,8 @@ return {
 						},
 						{
 							monsterTemplateID = 842,
-							delay = 41,
 							moveCast = true,
+							delay = 41,
 							corrdinate = {
 								18,
 								0,
@@ -566,8 +566,8 @@ return {
 						},
 						{
 							monsterTemplateID = 840,
-							delay = 43,
 							moveCast = true,
+							delay = 43,
 							corrdinate = {
 								18,
 								0,
@@ -581,8 +581,8 @@ return {
 						},
 						{
 							monsterTemplateID = 840,
-							delay = 43,
 							moveCast = true,
+							delay = 43,
 							corrdinate = {
 								18,
 								0,
@@ -596,8 +596,8 @@ return {
 						},
 						{
 							monsterTemplateID = 842,
-							delay = 45,
 							moveCast = true,
+							delay = 45,
 							corrdinate = {
 								18,
 								0,
@@ -611,8 +611,8 @@ return {
 						},
 						{
 							monsterTemplateID = 840,
-							delay = 50,
 							moveCast = true,
+							delay = 50,
 							corrdinate = {
 								18,
 								0,
@@ -626,8 +626,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 53,
 							moveCast = true,
+							delay = 53,
 							corrdinate = {
 								24,
 								0,
@@ -641,8 +641,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 53,
 							moveCast = true,
+							delay = 53,
 							corrdinate = {
 								24,
 								0,
@@ -656,8 +656,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 53,
 							moveCast = true,
+							delay = 53,
 							corrdinate = {
 								24,
 								0,
@@ -671,8 +671,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 53,
 							moveCast = true,
+							delay = 53,
 							corrdinate = {
 								24,
 								0,
@@ -686,8 +686,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 53,
 							moveCast = true,
+							delay = 53,
 							corrdinate = {
 								24,
 								0,
@@ -701,8 +701,8 @@ return {
 						},
 						{
 							monsterTemplateID = 841,
-							delay = 55,
 							moveCast = true,
+							delay = 55,
 							corrdinate = {
 								24,
 								0,
@@ -716,8 +716,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 58,
 							moveCast = true,
+							delay = 58,
 							corrdinate = {
 								24,
 								0,
@@ -730,8 +730,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 58,
 							moveCast = true,
+							delay = 58,
 							corrdinate = {
 								24,
 								0,
@@ -744,8 +744,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 58,
 							moveCast = true,
+							delay = 58,
 							corrdinate = {
 								24,
 								0,
@@ -758,8 +758,8 @@ return {
 						},
 						{
 							monsterTemplateID = 844,
-							delay = 58,
 							moveCast = true,
+							delay = 58,
 							corrdinate = {
 								24,
 								0,
@@ -784,8 +784,8 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 843,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							reinforceDelay = 15,
 							corrdinate = {
 								6,
@@ -801,12 +801,22 @@ return {
 								8007
 							}
 						}
+					}
+				},
+				{
+					triggerType = 0,
+					waveIndex = 202,
+					conditionType = 1,
+					preWaves = {
+						200
 					},
+					triggerParam = {},
+					spawn = {},
 					reinforcement = {
 						{
 							monsterTemplateID = 845,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								18,
 								0,
@@ -820,8 +830,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								18,
 								0,
@@ -835,8 +845,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								18,
 								0,
@@ -850,8 +860,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 3,
 							moveCast = true,
+							delay = 3,
 							corrdinate = {
 								18,
 								0,
@@ -865,8 +875,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 3,
 							moveCast = true,
+							delay = 3,
 							corrdinate = {
 								18,
 								0,
@@ -880,8 +890,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 6,
 							moveCast = true,
+							delay = 6,
 							corrdinate = {
 								18,
 								0,
@@ -895,8 +905,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 6,
 							moveCast = true,
+							delay = 6,
 							corrdinate = {
 								18,
 								0,
@@ -910,8 +920,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 8,
 							moveCast = true,
+							delay = 8,
 							corrdinate = {
 								18,
 								0,
@@ -925,8 +935,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 8,
 							moveCast = true,
+							delay = 8,
 							corrdinate = {
 								18,
 								0,
@@ -940,8 +950,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 10,
 							moveCast = true,
+							delay = 10,
 							corrdinate = {
 								18,
 								0,
@@ -955,8 +965,8 @@ return {
 						},
 						{
 							monsterTemplateID = 845,
-							delay = 10,
 							moveCast = true,
+							delay = 10,
 							corrdinate = {
 								18,
 								0,
@@ -967,7 +977,9 @@ return {
 								8007,
 								8102
 							}
-						}
+						},
+						reinforceDelay = 15,
+						reinforceDuration = 180
 					}
 				},
 				{

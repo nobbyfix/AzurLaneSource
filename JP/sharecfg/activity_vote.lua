@@ -1,16 +1,16 @@
 pg = pg or {}
 pg.activity_vote = {
 	[5] = {
+		same_rank_by_id = 0,
 		name = "予選",
 		help_text = "",
 		type = 1,
-		banner = 0,
-		same_rank_by_id = 0,
-		desc = "上位150人が【グループ戦】に進出します",
 		is_in_game = 1,
-		is_on_web = 0,
-		id = 5,
+		banner = 0,
 		activity_bg = 0,
+		desc = "上位150人が【グループ戦】に進出します",
+		id = 5,
+		is_on_web = 0,
 		time_vote = {
 			{
 				{
@@ -603,16 +603,16 @@ pg.activity_vote = {
 		}
 	},
 	[6] = {
+		same_rank_by_id = 5,
 		name = "网络复活",
 		help_text = "",
 		type = 2,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "",
 		is_in_game = 0,
-		is_on_web = 1,
-		id = 6,
+		banner = 0,
 		activity_bg = 0,
+		desc = "",
+		id = 6,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -661,16 +661,16 @@ pg.activity_vote = {
 		}
 	},
 	[7] = {
+		same_rank_by_id = 5,
 		name = "グループA",
 		help_text = "",
 		type = 3,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "1-3位は【決勝戦】に進出、4-10位は【決勝復活戦】に進出",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 7,
+		banner = 0,
 		activity_bg = 0,
+		desc = "1-3位は【決勝戦】に進出、4-10位は【決勝復活戦】に進出",
+		id = 7,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -774,16 +774,16 @@ pg.activity_vote = {
 		}
 	},
 	[8] = {
+		same_rank_by_id = 5,
 		name = "グループB",
 		help_text = "",
 		type = 3,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "1-3位は【決勝戦】に進出、4-10位は【決勝復活戦】に進出",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 8,
+		banner = 0,
 		activity_bg = 0,
+		desc = "1-3位は【決勝戦】に進出、4-10位は【決勝復活戦】に進出",
+		id = 8,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -887,16 +887,16 @@ pg.activity_vote = {
 		}
 	},
 	[9] = {
+		same_rank_by_id = 5,
 		name = "グループC",
 		help_text = "",
 		type = 3,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "1-3位は【決勝戦】に進出、4-10位は【決勝復活戦】に進出",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 9,
+		banner = 0,
 		activity_bg = 0,
+		desc = "1-3位は【決勝戦】に進出、4-10位は【決勝復活戦】に進出",
+		id = 9,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -1000,16 +1000,16 @@ pg.activity_vote = {
 		}
 	},
 	[10] = {
+		same_rank_by_id = 5,
 		name = "グループD",
 		help_text = "",
 		type = 3,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "1-3位は【決勝戦】に進出、4-10位は【決勝復活戦】に進出",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 10,
+		banner = 0,
 		activity_bg = 0,
+		desc = "1-3位は【決勝戦】に進出、4-10位は【決勝復活戦】に進出",
+		id = 10,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -1113,16 +1113,16 @@ pg.activity_vote = {
 		}
 	},
 	[11] = {
+		same_rank_by_id = 5,
 		name = "グループE",
 		help_text = "",
 		type = 3,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "1-3位は【決勝戦】に進出、4-10位は【決勝復活戦】に進出",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 11,
+		banner = 0,
 		activity_bg = 0,
+		desc = "1-3位は【決勝戦】に進出、4-10位は【決勝復活戦】に進出",
+		id = 11,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -1226,16 +1226,16 @@ pg.activity_vote = {
 		}
 	},
 	[12] = {
+		same_rank_by_id = 5,
 		name = "決勝復活戦",
 		help_text = "",
 		type = 4,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "1－9位は【決勝戦】に進出",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 12,
+		banner = 0,
 		activity_bg = 0,
+		desc = "1－9位は【決勝戦】に進出",
+		id = 12,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -1333,16 +1333,16 @@ pg.activity_vote = {
 		}
 	},
 	[13] = {
+		same_rank_by_id = 5,
 		name = "決勝戦",
 		help_text = "",
 		type = 5,
-		banner = 0,
-		same_rank_by_id = 5,
-		desc = "【グループ戦】から15名、【決勝復活戦】から9名が参加！",
 		is_in_game = 1,
-		is_on_web = 1,
-		id = 13,
+		banner = 0,
 		activity_bg = 0,
+		desc = "【グループ戦】から15名、【決勝復活戦】から9名が参加！",
+		id = 13,
+		is_on_web = 1,
 		time_vote = {
 			{
 				{
@@ -1466,5 +1466,3 @@ pg.activity_vote = {
 		13
 	}
 }
-
-return

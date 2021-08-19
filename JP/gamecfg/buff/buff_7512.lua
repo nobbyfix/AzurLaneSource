@@ -1,12 +1,12 @@
 return {
+	time = 0,
 	name = "传颂之物前排减伤3%",
 	init_effect = "jinengchufablue",
-	id = 7512,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "传颂之物前排减伤3%",
 	stack = 1,
-	color = "yellow",
+	id = 7512,
 	icon = 7510,
 	last_effect = "",
 	blink = {
@@ -23,8 +23,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.03,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.03
 			}
 		}
 	}

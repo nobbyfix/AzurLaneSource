@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "测试-大黄蜂-技能触发被动",
 	init_effect = "",
+	name = "测试-大黄蜂-技能触发被动",
+	time = 0,
 	picture = "",
 	desc = "轰炸",
 	stack = 1,
@@ -16,8 +16,8 @@ return {
 			},
 			arg_list = {
 				rant = 2000,
-				skill_id = 60010,
 				time = 15,
+				skill_id = 60010,
 				target = "TargetSelf"
 			}
 		}

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 2,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "YINGHUA5",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"人間に触れてはならぬ。神子の神格を損ねるがゆえに。",
@@ -25,8 +25,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "……",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -35,10 +35,10 @@ return {
 		{
 			actor = 305050,
 			side = 2,
-			say = "陸奥、見てくれ。次の神儀はこの身構えで良いのだろうか？",
+			bgm = "story-2",
 			dir = 1,
 			blackBg = true,
-			bgm = "story-2",
+			say = "陸奥、見てくれ。次の神儀はこの身構えで良いのだろうか？",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -51,9 +51,9 @@ return {
 		{
 			actor = 305060,
 			side = 0,
-			say = "ん？少しそのままでいてね～うーん、少しバカっぽい？手を真っ直ぐ伸ばしてみたらどうかな？",
 			dir = 1,
 			blackBg = true,
+			say = "ん？少しそのままでいてね～うーん、少しバカっぽい？手を真っ直ぐ伸ばしてみたらどうかな？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -128,8 +128,8 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			say = "真似してみたが、凄くぎこちない笑い顔だったような気がした。",
+			blackBg = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

@@ -6,8 +6,8 @@ return {
 	occlusion = 0.8,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"星の歌姫と小さな勇気\n\n<size=45>その四  星の歌姫さまへ</size>",
@@ -19,8 +19,8 @@ return {
 			bgName = "bg_story_star2",
 			blackBg = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

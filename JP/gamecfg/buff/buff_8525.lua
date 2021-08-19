@@ -1,7 +1,7 @@
 return {
-	time = 11,
-	name = "自爆特效无效果",
 	init_effect = "",
+	name = "自爆特效无效果",
+	time = 11,
 	picture = "",
 	desc = "自爆特效无效果",
 	stack = 1,
@@ -17,8 +17,8 @@ return {
 			},
 			arg_list = {
 				group = 1,
-				number = 1,
-				attr = "immuneAreaLimit"
+				attr = "immuneAreaLimit",
+				number = 1
 			}
 		}
 	}

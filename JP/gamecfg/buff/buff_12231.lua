@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 500,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 500
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 720,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 720
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 940,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 940
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1160,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1160
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1380,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1380
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1600,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1600
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1820,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 1820
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2040,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 2040
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2260,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 2260
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "antiAirPower"
+					attr = "antiAirPower",
+					number = 2500
 				}
 			}
 		}
 	},
+	time = 3,
 	name = "天真烂漫的少女",
 	init_effect = "jinengchufablue",
-	id = 12231,
-	time = 3,
+	color = "yellow",
 	picture = "",
 	desc = "自身防空提高",
 	stack = 1,
-	color = "yellow",
+	id = 12231,
 	icon = 12231,
 	last_effect = "",
 	blink = {

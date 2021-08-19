@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "潜艇run专用反潜状态--巡逻舰",
 	init_effect = "",
+	name = "潜艇run专用反潜状态--巡逻舰",
+	time = 0,
 	picture = "",
 	desc = "潜艇run专用反潜状态",
 	stack = 1,

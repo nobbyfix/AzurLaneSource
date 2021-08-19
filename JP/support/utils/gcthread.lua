@@ -1,7 +1,8 @@
 GCThread = singletonClass("GCThread")
-GCThread.R1024 = 0.00097656
+slot0 = GCThread
+slot0.R1024 = 0.00097656
 
-GCThread.Ctor = function (slot0)
+function slot0.Ctor(slot0)
 	slot0.step = 1
 	slot0.gctick = 0
 	slot0.gccost = 0
@@ -10,7 +11,7 @@ GCThread.Ctor = function (slot0)
 	slot0.checkHandle = UpdateBeat:CreateListener(slot0.WatchStep, slot0)
 end
 
-GCThread.GC = function (slot0, slot1)
+function slot0.GC(slot0, slot1)
 	if slot1 then
 		collectgarbage("collect")
 		slot0:GCFinal()
@@ -26,13 +27,17 @@ GCThread.GC = function (slot0, slot1)
 	end
 end
 
-GCThread.GCFinal = function (slot0)
+function slot0.GCFinal(slot0)
 	slot0.running = false
 
 	UpdateBeat:RemoveListener(slot0.gcHandle)
-	print("cached sprite size: " .. math.ceil(PoolMgr.GetInstance().SpriteMemUsage(slot1) * 10) / 10 .. "/" .. 24 .. "MB")
 
-	if 24 < PoolMgr.GetInstance().SpriteMemUsage(slot1) then
+	slot2 = PoolMgr.GetInstance():SpriteMemUsage()
+	slot3 = 24
+
+	print("cached sprite size: " .. math.ceil(slot2 * 10) / 10 .. "/" .. slot3 .. "MB")
+
+	if slot3 < slot2 then
 		slot1:DestroyAllSprite()
 	end
 
@@ -40,19 +45,21 @@ GCThread.GCFinal = function (slot0)
 	Resources.UnloadUnusedAssets()
 
 	if Application.isEditor then
-		print("lua mem: " .. collectgarbage("count") * slot0.R1024 .. "MB")
+		print("lua mem: " .. collectgarbage("count") * uv0.R1024 .. "MB")
 	end
 end
 
-GCThread.GCStep = function (slot0)
+function slot0.GCStep(slot0)
 	slot1 = os.clock()
 
 	if not slot0.running then
+		-- Nothing
 	elseif collectgarbage("step", slot0.step) then
 		slot0:GCFinal()
 	else
-		slot0.gccost = (slot0.gccost <= 0 and os.clock() * 1000 - slot1 * 1000) or slot0.gccost
-		slot0.gccost = (slot0.gccost + os.clock() * 1000 - slot1 * 1000) * 0.5
+		slot2 = os.clock() * 1000 - slot1 * 1000
+		slot0.gccost = slot0.gccost <= 0 and slot2 or slot0.gccost
+		slot0.gccost = (slot0.gccost + slot2) * 0.5
 		slot0.gctick = slot0.gctick + 1
 
 		if slot0.gctick > 300 and slot0.gctick % 30 == 0 then
@@ -61,36 +68,36 @@ GCThread.GCStep = function (slot0)
 	end
 end
 
-GCThread.CalcStep = function (slot0)
+function slot0.CalcStep(slot0)
 	slot0.step = math.max(slot0.gctick - 60, 30) / 30 * 500 * math.max(1 - math.max(slot0.gccost - 3, 0) * 0.1, 0.1)
 end
 
-GCThread.StartWatch = function (slot0, slot1)
+function slot0.StartWatch(slot0, slot1)
 	print("overhead: start watch")
 
-	if slot1 < collectgarbage("count") * slot0.R1024 + 12 then
+	if slot1 < collectgarbage("count") * uv0.R1024 + 12 then
 		slot1 = slot2 + 12
 	end
 
 	slot0.watcher = Timer.New(function ()
-		if not slot0.running and slot2 < collectgarbage("count") * "count".R1024 then
+		if not uv0.running and uv2 < collectgarbage("count") * uv1.R1024 then
 			print("overhead: start gc " .. slot0 .. "MB")
 
-			slot0.running = true
+			uv0.running = true
 
-			slot0:CalcStep()
+			uv0:CalcStep()
 
-			slot0.gctick = 0
-			slot0.gccost = 0
+			uv0.gctick = 0
+			uv0.gccost = 0
 
-			UpdateBeat:AddListener(slot0.checkHandle)
+			UpdateBeat:AddListener(uv0.checkHandle)
 		end
 	end, 5, -1)
 
 	slot0.watcher:Start()
 end
 
-GCThread.StopWatch = function (slot0)
+function slot0.StopWatch(slot0)
 	print("overhead: stop watch")
 
 	if slot0.watcher then
@@ -100,22 +107,23 @@ GCThread.StopWatch = function (slot0)
 	end
 end
 
-GCThread.WatchStep = function (slot0)
+function slot0.WatchStep(slot0)
 	slot1 = os.clock()
 
 	if collectgarbage("step", slot0.step) then
 		print("overhead: gc complete")
 
 		if Application.isEditor then
-			print("lua mem: " .. collectgarbage("count") * slot0.R1024 .. "MB")
+			print("lua mem: " .. collectgarbage("count") * uv0.R1024 .. "MB")
 		end
 
 		slot0.running = false
 
 		UpdateBeat:RemoveListener(slot0.checkHandle)
 	else
-		slot0.gccost = (slot0.gccost <= 0 and os.clock() * 1000 - slot1 * 1000) or slot0.gccost
-		slot0.gccost = (slot0.gccost + os.clock() * 1000 - slot1 * 1000) * 0.5
+		slot2 = os.clock() * 1000 - slot1 * 1000
+		slot0.gccost = slot0.gccost <= 0 and slot2 or slot0.gccost
+		slot0.gccost = (slot0.gccost + slot2) * 0.5
 		slot0.gctick = slot0.gctick + 1
 
 		if slot0.gctick > 300 and slot0.gctick % 30 == 0 then
@@ -124,12 +132,4 @@ GCThread.WatchStep = function (slot0)
 	end
 end
 
-GCThread.MarkMemory = function (slot0, slot1)
-	slot2 = collectgarbage("count")
-
-	warning(slot1 or "MemoryMark", slot2, slot2 - (slot0.lastMem or 0))
-
-	slot0.lastMem = slot2
-end
-
-return GCThread
+return slot0

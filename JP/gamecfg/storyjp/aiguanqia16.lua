@@ -1,8 +1,8 @@
 return {
-	mode = 2,
-	once = true,
 	id = "AIGUANQIA16",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
 			actor = 301050,
@@ -53,8 +53,8 @@ return {
 			actor = 10400040,
 			nameColor = "#a9f548",
 			side = 1,
-			dir = 1,
 			actorName = "キズナアイ",
+			dir = 1,
 			say = "了解！",
 			typewriter = {
 				speed = 0.05,
@@ -66,14 +66,14 @@ return {
 			}
 		},
 		{
-			side = 1,
-			dir = 1,
 			actor = 301050,
+			side = 1,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "あれを見るです。あんなところにあからさまにランダムワード生成器があるです",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -176,8 +176,8 @@ return {
 			expression = 3,
 			side = 1,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "キズナアイ",
 			say = "わーい、こんなところにランダムワード生成器がー！！",
 			typewriter = {
@@ -205,8 +205,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -215,8 +215,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "（ゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴ）",
 			dialogShake = {
 				speed = 0.09,
@@ -236,8 +236,8 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "キズナアイ",
 			say = "え！？なにこれ！？ちょっと！あっちいけ！近づくなー！やだやだやだやだやだやだ！",
 			typewriter = {
@@ -250,8 +250,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -263,8 +263,8 @@ return {
 			expression = 2,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
 			actor = 10400040,
+			dir = 1,
 			actorName = "キズナアイ",
 			say = "ぁぁあ゛あ゛あｱｱ゛ああ゛ｱｱｱ゛ｱああｱｱ゛ああｱｱ゛ｱ゛ｱｧｧ…",
 			typewriter = {
@@ -279,15 +279,15 @@ return {
 		{
 			expression = 1,
 			side = 2,
-			withoutActorName = true,
 			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			withoutActorName = true,
 			nameColor = "#a9f548",
+			actorScale = 3.5,
 			say = "   ",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -308,8 +308,8 @@ return {
 			},
 			action = {
 				{
-					y = -1650,
 					type = "move",
+					y = -1650,
 					delay = 1.5,
 					dur = 2.5,
 					x = 0
@@ -373,10 +373,10 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			actorName = "巨大化キズナアイ",
+			actorScale = 3.5,
 			say = "………",
 			actorPosition = {
 				x = 150,
@@ -395,10 +395,10 @@ return {
 			expression = 2,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			actorName = "巨大化キズナアイ",
+			actorScale = 3.5,
 			say = "はぁ……だりぃ、マジでだりぃ～、私なんでこんなところで戦ってるんだろ……、そもそも私いつもどおり収録してただけなのに、こんなことになるなんておかしくない？",
 			actorPosition = {
 				x = 150,
@@ -417,10 +417,10 @@ return {
 			expression = 1,
 			side = 2,
 			nameColor = "#ff5c5c",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			actorName = "巨大化キズナアイ",
+			actorScale = 3.5,
 			say = "なんか急に体も大きくなっちゃってるしさぁ……ていうかこのまま、この世界を破壊しちゃえば元の世界にも戻れるんじゃない？",
 			actorPosition = {
 				x = 150,
@@ -438,12 +438,12 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			say = "あー、もうめんどくさー、あたしの分身が勝手にやっといてくれないかなー",
 			actorName = "巨大化キズナアイ",
-			dir = 1,
-			actorScale = 3.5,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#ff5c5c",
+			actorScale = 3.5,
+			say = "あー、もうめんどくさー、あたしの分身が勝手にやっといてくれないかなー",
 			actorPosition = {
 				x = 150,
 				y = -900
@@ -458,8 +458,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "（ドカーン！！）",
 			effects = {
 				{
@@ -492,10 +492,10 @@ return {
 			}
 		},
 		{
+			actor = 301050,
 			nameColor = "#a9f548",
 			side = 2,
 			dir = 1,
-			actor = 301050,
 			say = "ダメです。綾波達の声も全く届いてないです…",
 			effects = {
 				{
@@ -603,8 +603,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

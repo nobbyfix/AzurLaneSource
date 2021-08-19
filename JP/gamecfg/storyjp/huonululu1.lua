@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "HUONULULU1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"拗ねやすい彼女の小さなお話\n\n<size=45>一　拗ねやすい彼女の日常</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "母港・執務室",
 			side = 2,
 			bgName = "bg_story_task",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "母港・執務室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,11 +46,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 102120,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "秘書艦のホノルルは本棚の前で書類の整理をしている。",
 			typewriter = {
@@ -63,11 +63,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 102120,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………",
 			typewriter = {
@@ -96,11 +96,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 102120,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………（無言で視線を外す）",
 			typewriter = {
@@ -129,11 +129,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 102120,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………（無言でうなずく）",
 			typewriter = {
@@ -162,11 +162,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 102120,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………（無言で席から立つ）",
 			typewriter = {
@@ -195,11 +195,11 @@ return {
 			}
 		},
 		{
-			dir = 1,
+			actor = 102120,
 			side = 2,
 			bgName = "bg_story_task",
 			withoutActorName = true,
-			actor = 102120,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………（無言で確認）",
 			typewriter = {
@@ -212,13 +212,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "ホノルルが秘書艦を務め始めてからしばらく経って、お互いのやり方をある程度把握はできたが……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -239,9 +239,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "彼女は仕事を普通にこなしてくれはするものの、なぜかいつも不機嫌で――会話が続かない気がする。",
 			typewriter = {
 				speed = 0.05,
@@ -331,9 +331,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "別にホノルルはこっちに怒っているわけではないようだ。",
 			typewriter = {
 				speed = 0.05,
@@ -341,9 +341,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "強いて言えば、ただコミュニケーションが上手く取れないタイプなだけ……？",
 			typewriter = {
 				speed = 0.05,

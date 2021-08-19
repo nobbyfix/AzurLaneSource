@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.04,
-					attr = "DMG_TAG_EHC_T_5"
+					attr = "DMG_TAG_EHC_T_5",
+					number = 0.04
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.046,
-					attr = "DMG_TAG_EHC_T_5"
+					attr = "DMG_TAG_EHC_T_5",
+					number = 0.046
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.052,
-					attr = "DMG_TAG_EHC_T_5"
+					attr = "DMG_TAG_EHC_T_5",
+					number = 0.052
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.06,
-					attr = "DMG_TAG_EHC_T_5"
+					attr = "DMG_TAG_EHC_T_5",
+					number = 0.06
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.066,
-					attr = "DMG_TAG_EHC_T_5"
+					attr = "DMG_TAG_EHC_T_5",
+					number = 0.066
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "DMG_TAG_EHC_T_5"
+					attr = "DMG_TAG_EHC_T_5",
+					number = 0.072
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.08,
-					attr = "DMG_TAG_EHC_T_5"
+					attr = "DMG_TAG_EHC_T_5",
+					number = 0.08
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.086,
-					attr = "DMG_TAG_EHC_T_5"
+					attr = "DMG_TAG_EHC_T_5",
+					number = 0.086
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.092,
-					attr = "DMG_TAG_EHC_T_5"
+					attr = "DMG_TAG_EHC_T_5",
+					number = 0.092
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "DMG_TAG_EHC_T_5"
+					attr = "DMG_TAG_EHC_T_5",
+					number = 0.1
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "善战之舰",
 	init_effect = "jinengchufared",
-	id = 11641,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "对航母伤害提高",
 	stack = 1,
-	color = "red",
+	id = 11641,
 	icon = 11640,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.04,
-				attr = "DMG_TAG_EHC_T_5"
+				attr = "DMG_TAG_EHC_T_5",
+				number = 0.04
 			}
 		}
 	}

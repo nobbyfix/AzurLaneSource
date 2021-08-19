@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "<color=#ff7d36>編成</color>をタップして、艦隊を編成するわ",
 				mode = 2,
-				dir = -1,
 				posY = -275,
+				dir = -1,
 				posX = 348
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/formationButton",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,8 +28,8 @@ return {
 			style = {
 				text = "<color=#ff7d36>駆逐艦、軽巡洋艦、重巡洋艦</color>は前衛艦隊にしか編成できないの",
 				mode = 1,
-				dir = 1,
 				posY = -100,
+				dir = 1,
 				posX = 300
 			}
 		},
@@ -38,8 +38,8 @@ return {
 			style = {
 				text = "<color=#ffde38>空母、戦艦</color>は主力艦隊にしか編成できないわ",
 				mode = 1,
-				dir = -1,
 				posY = 200,
+				dir = -1,
 				posX = 0
 			}
 		},
@@ -48,13 +48,13 @@ return {
 			style = {
 				text = "<color=#ff7d36>追加</color>で別の艦を追加しよう",
 				mode = 2,
-				dir = -1,
 				posY = 122.82,
+				dir = -1,
 				posX = 243.5
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/UICamera/Canvas/UIMain/FormationUI(Clone)/GridFrame/vanguard_2/tip",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -70,16 +70,16 @@ return {
 			style = {
 				text = "まずは艦隊に編入する艦を選んで",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = 1,
 				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships",
+				pathIndex = 1,
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				},
@@ -97,13 +97,13 @@ return {
 			style = {
 				text = "次は<color=#ff7d36>確定</color>ボタンをタップしてね",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
+				path = "OverlayCamera/Overlay/UIMain/blur_panel/select_panel/confirm_button",
 				pathIndex = -1,
-				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/select_panel/confirm_button",
 				triggerType = {
 					1
 				},
@@ -120,8 +120,8 @@ return {
 			style = {
 				text = "艦隊に新しいメンバーが編成されたわ！これで戦力増強よ！",
 				mode = 1,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			}
 		},
@@ -130,13 +130,13 @@ return {
 			style = {
 				text = "メイン画面に一回戻ってね",
 				mode = 2,
-				dir = -1,
 				posY = 215.7,
+				dir = -1,
 				posX = -95.62
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/UICamera/Canvas/UIMain/FormationUI(Clone)/blur_panel/top/back_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

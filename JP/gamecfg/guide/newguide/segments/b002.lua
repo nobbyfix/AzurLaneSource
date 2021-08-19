@@ -15,8 +15,8 @@ return {
 			style = {
 				text = "主力艦隊の<color=#ff7d36>航空攻撃</color>は準備OKよ！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -28,8 +28,8 @@ return {
 			style = {
 				text = "敵を一掃するわ！<color=#ff7d36>航空攻撃</color>ボタンをタップしてみて！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -47,8 +47,8 @@ return {
 			style = {
 				text = "航空攻撃のちからを見たか！緊急時に使用すると、<color=#ff7d36>敵の弾幕</color>を消す効果もあるわ！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			}
 		}

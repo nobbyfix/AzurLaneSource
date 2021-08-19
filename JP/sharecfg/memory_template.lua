@@ -1,9 +1,9 @@
 pg = pg or {}
 pg.memory_template = {
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "凍海戦域",
 		condition = "序章",
 		story = "S001",
@@ -12,9 +12,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "遭遇",
 		condition = "序章",
 		story = "S002",
@@ -23,9 +23,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "「王家の栄光」",
 		condition = "序章",
 		story = "S007",
@@ -34,9 +34,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "激突",
 		condition = "序章",
 		story = "S006",
@@ -45,9 +45,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "「ライン演習」",
 		condition = "序章",
 		story = "S003",
@@ -56,9 +56,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "終わりと始まり",
 		condition = "序章",
 		story = "S004",
@@ -67,9 +67,9 @@ pg.memory_template = {
 		is_open = 1
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "序章-ホーネット",
 		condition = "1-1ボスと交戦",
 		story = "T10101",
@@ -78,9 +78,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "序章-警報",
 		condition = "1-1クリア",
 		story = "T10102",
@@ -89,9 +89,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "一章-燃ゆる海",
 		condition = "1-2開始",
 		story = "UI10201",
@@ -100,9 +100,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "一章-封鎖突破",
 		condition = "1-2クリア",
 		story = "UI10202",
@@ -111,9 +111,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "一章-迎撃",
 		condition = "1-2ボスと交戦",
 		story = "T10201",
@@ -122,9 +122,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "一章-勝利",
 		condition = "1-2クリア",
 		story = "T10202",
@@ -133,9 +133,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "一章-謎の声",
 		condition = "1-3ボスと交戦",
 		story = "T10301",
@@ -144,9 +144,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "一章-調査指令",
 		condition = "1-3クリア",
 		story = "T10302",
@@ -155,9 +155,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "一章-重桜艦隊",
 		condition = "1-4ボスと交戦",
 		story = "T10401",
@@ -166,9 +166,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "一章-赤き胎動",
 		condition = "1-4クリア",
 		story = "T10402",
@@ -177,9 +177,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "二章-珊瑚海",
 		condition = "第二章到達",
 		story = "UI20101",
@@ -188,9 +188,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "二章-反撃の序曲",
 		condition = "2-2クリア",
 		story = "T20201",
@@ -199,9 +199,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "二章-次へ",
 		condition = "2-3クリア",
 		story = "T20301",
@@ -210,9 +210,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "三章-運命の五分間",
 		condition = "第三章到達",
 		story = "UI30101",
@@ -221,9 +221,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "三章-攻勢",
 		condition = "3-1開始",
 		story = "T30101",
@@ -232,9 +232,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "三章-交戦",
 		condition = "3-1ボスと交戦",
 		story = "T30102",
@@ -243,9 +243,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "三章-運命再帰",
 		condition = "3-1クリア",
 		story = "T30103",
@@ -254,9 +254,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "三章-進撃",
 		condition = "3-2ボスと交戦",
 		story = "T30201",
@@ -265,9 +265,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "三章-宿命の因子",
 		condition = "3-2クリア",
 		story = "T30202",
@@ -276,9 +276,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "三章-絶筆",
 		condition = "3-3クリア",
 		story = "T30301",
@@ -287,9 +287,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "三章-最後の反撃",
 		condition = "3-4ボスと交戦",
 		story = "T30401",
@@ -298,9 +298,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	{
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "三章-引継がれる意志",
 		condition = "3-4クリア",
 		story = "T30402",
@@ -309,9 +309,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[35] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鏡写されし異色-前編",
 		condition = "鏡写されし異色-前編開始",
 		story = "UIACT20000",
@@ -320,9 +320,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[36] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "始動",
 		condition = "鏡写されし異色A1/C1クリア",
 		story = "TACT20001",
@@ -331,9 +331,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[4001] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "側面Ⅰ",
 		condition = "鏡写されし異色A2/C2開始",
 		story = "TACT20016",
@@ -342,9 +342,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[37] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "支配",
 		condition = "鏡写されし異色A2/C2クリア",
 		story = "TACT20002",
@@ -353,9 +353,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[38] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "主導権Ⅰ",
 		condition = "鏡写されし異色A3/C3ボスと交戦",
 		story = "TACT20003",
@@ -364,9 +364,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[39] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "主導権Ⅱ",
 		condition = "鏡写されし異色A3/C3クリア",
 		story = "TACT20004",
@@ -375,9 +375,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[40] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "昇格Ⅰ",
 		condition = "鏡写されし異色A4/C4ボスと交戦",
 		story = "TACT20011",
@@ -386,9 +386,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[41] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "昇格Ⅱ",
 		condition = "鏡写されし異色A4/C4クリア",
 		story = "TACT20005",
@@ -397,9 +397,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[42] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鏡写されし異色-後編",
 		condition = "鏡写されし異色-後編開始",
 		story = "UIACT20001",
@@ -408,9 +408,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[43] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "転位Ⅰ",
 		condition = "鏡写されし異色B1/D1ボスと交戦",
 		story = "TACT20006",
@@ -419,9 +419,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[44] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "転位Ⅱ",
 		condition = "鏡写されし異色B1/D1クリア",
 		story = "TACT20007",
@@ -430,9 +430,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[45] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "誘導Ⅰ",
 		condition = "鏡写されし異色B2/D2ボスと交戦",
 		story = "TACT20008",
@@ -441,9 +441,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[46] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "誘導Ⅱ",
 		condition = "鏡写されし異色B2/D2クリア",
 		story = "TACT20009",
@@ -452,9 +452,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[47] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "過負荷Ⅰ",
 		condition = "鏡写されし異色B3/D3ボスと交戦",
 		story = "TACT20010",
@@ -463,9 +463,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[48] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "過負荷Ⅱ",
 		condition = "鏡写されし異色B3/D3クリア",
 		story = "TACT20012",
@@ -474,9 +474,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[4000] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "終局Ⅰ",
 		condition = "鏡写されし異色B4/D4開始",
 		story = "TACT20015",
@@ -485,9 +485,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[49] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "終局Ⅱ",
 		condition = "鏡写されし異色B4/D4ボスと交戦",
 		story = "TACT20013",
@@ -496,9 +496,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[4002] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "側面Ⅱ",
 		condition = "鏡写されし異色B4/D4ボスを撃破",
 		story = "TACT20017",
@@ -507,9 +507,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[50] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "終局Ⅲ",
 		condition = "鏡写されし異色B4/D4クリア",
 		story = "TACT20014",
@@ -518,9 +518,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[62] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い1",
 		condition = "「明石のお願い」任務1解放",
 		story = "AKASHI1",
@@ -529,9 +529,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[63] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い2",
 		condition = "「明石のお願い」任務2解放",
 		story = "AKASHI2",
@@ -540,9 +540,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[64] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い3",
 		condition = "「明石のお願い」任務3解放",
 		story = "AKASHI3",
@@ -551,9 +551,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[65] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い4",
 		condition = "「明石のお願い」任務4解放",
 		story = "AKASHI4",
@@ -562,9 +562,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[66] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い5Ⅰ",
 		condition = "「明石のお願い」任務5-1解放",
 		story = "AKASHI5",
@@ -573,9 +573,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[67] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い5Ⅱ",
 		condition = "「明石のお願い」任務5-2解放",
 		story = "AKASHI51",
@@ -584,9 +584,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[68] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い6Ⅰ",
 		condition = "「明石のお願い」任務6-1解放",
 		story = "AKASHI6",
@@ -595,9 +595,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[69] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い6Ⅱ",
 		condition = "「明石のお願い」任務6-2解放",
 		story = "AKASHI62",
@@ -606,9 +606,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[70] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い6Ⅲ",
 		condition = "「明石のお願い」任務6-3解放",
 		story = "AKASHI63",
@@ -617,9 +617,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[71] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い6Ⅳ",
 		condition = "「明石のお願い」任務6-4解放",
 		story = "AKASHI64",
@@ -628,9 +628,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[72] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い7Ⅰ",
 		condition = "「明石のお願い」任務7-1解放",
 		story = "AKASHI7",
@@ -639,9 +639,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[73] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い7Ⅱ",
 		condition = "「明石のお願い」任務7-2解放",
 		story = "AKASHI72",
@@ -650,9 +650,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[74] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い8Ⅰ",
 		condition = "「明石のお願い」任務8-1解放",
 		story = "AKASHI8",
@@ -661,9 +661,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[75] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い8Ⅱ",
 		condition = "「明石のお願い」任務8-2解放",
 		story = "AKASHI82",
@@ -672,9 +672,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[76] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い8Ⅲ",
 		condition = "「明石のお願い」任務8-3解放",
 		story = "AKASHI83",
@@ -683,9 +683,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[77] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い8Ⅳ",
 		condition = "「明石のお願い」任務8-4解放",
 		story = "AKASHI84",
@@ -694,9 +694,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[78] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い8Ⅴ",
 		condition = "「明石のお願い」任務8-5解放",
 		story = "AKASHI85",
@@ -705,9 +705,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[79] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い8Ⅵ",
 		condition = "「明石のお願い」任務8-6解放",
 		story = "AKASHI86",
@@ -716,9 +716,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[80] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い9",
 		condition = "「明石のお願い」任務9解放",
 		story = "AKASHI9",
@@ -727,9 +727,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[81] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石のお願い10",
 		condition = "「明石のお願い」任務10解放",
 		story = "AKASHI10",
@@ -738,9 +738,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[107] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "玉兎・月夜に酔うⅠ",
 		condition = "「イベント」で福引きを2回行う",
 		story = "ZHONGQIU1",
@@ -749,9 +749,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[108] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "玉兎・月夜に酔うⅡ",
 		condition = "「イベント」で福引きを4回行う",
 		story = "ZHONGQIU2",
@@ -760,9 +760,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[109] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "玉兎・月夜に酔うⅢ",
 		condition = "「イベント」で福引きを6回行う",
 		story = "ZHONGQIU3",
@@ -771,9 +771,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[110] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "玉兎・月夜に酔うⅣ",
 		condition = "「イベント」で福引きを8回行う",
 		story = "ZHONGQIU4",
@@ -782,9 +782,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[111] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "玉兎・月夜に酔うⅤ",
 		condition = "「イベント」で福引きを10回行う",
 		story = "ZHONGQIU5",
@@ -793,9 +793,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[112] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "玉兎・月夜に酔うⅥ",
 		condition = "「イベント」で福引きを12回行う",
 		story = "ZHONGQIU6",
@@ -804,9 +804,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[113] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "玉兎・月夜に酔うⅦ",
 		condition = "「イベント」で福引きを14回行う",
 		story = "ZHONGQIU7",
@@ -815,9 +815,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[114] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "序",
 		condition = "『紅染の来訪者・上』開始",
 		story = "GUOQING1",
@@ -826,9 +826,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[115] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "嵐の果て・上",
 		condition = "『紅染の来訪者』A1/C1開始",
 		story = "GUOQING3",
@@ -837,9 +837,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[116] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "嵐の果て・下",
 		condition = "『紅染の来訪者』A1/C1ボス発見",
 		story = "GUOQING4",
@@ -848,9 +848,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[117] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "断章",
 		condition = "『紅染の来訪者』A1/C1クリア",
 		story = "GUOQING5",
@@ -859,9 +859,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[118] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "救難信号の向こう・上",
 		condition = "『紅染の来訪者』A2/C2開始",
 		story = "GUOQING6",
@@ -870,9 +870,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[119] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "救難信号の向こう・下",
 		condition = "『紅染の来訪者』A2/C2ボス発見",
 		story = "GUOQING7",
@@ -881,9 +881,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[120] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "回想",
 		condition = "『紅染の来訪者』A3/C3開始",
 		story = "GUOQING8",
@@ -892,9 +892,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[121] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "聖域の守り人・上",
 		condition = "『紅染の来訪者』A3/C3ボス発見",
 		story = "GUOQING9",
@@ -903,9 +903,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[122] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "聖域の守り人・下",
 		condition = "『紅染の来訪者』A3/C3クリア",
 		story = "GUOQING10",
@@ -914,9 +914,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[123] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "断章-2",
 		condition = "『紅染の来訪者・下』開始",
 		story = "GUOQING11",
@@ -925,9 +925,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[124] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "「幸運艦」・上",
 		condition = "『紅染の来訪者』B1/D1ボス発見",
 		story = "GUOQING12",
@@ -936,9 +936,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[125] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "「幸運艦」・下",
 		condition = "『紅染の来訪者』B1/D1クリア",
 		story = "GUOQING13",
@@ -947,9 +947,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[126] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "「姉妹」の絆・上",
 		condition = "『紅染の来訪者』B2/D2開始",
 		story = "GUOQING14",
@@ -958,9 +958,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[127] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "「姉妹」の絆・中",
 		condition = "『紅染の来訪者』B2/D2ボス発見",
 		story = "GUOQING15",
@@ -969,9 +969,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[128] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "「姉妹」の絆・下",
 		condition = "『紅染の来訪者』B2/D2クリア",
 		story = "GUOQING16",
@@ -980,9 +980,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[129] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "紅染の守護者・上",
 		condition = "『紅染の来訪者』B3/D3開始",
 		story = "GUOQING17",
@@ -991,9 +991,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[130] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "紅染の守護者・中",
 		condition = "『紅染の来訪者』B3/D3ボス発見",
 		story = "GUOQING18",
@@ -1002,9 +1002,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[131] = {
-		mask = "bg/bg_memory_shuanghe",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory_shuanghe",
 		title = "紅染の守護者・下",
 		condition = "『紅染の来訪者』B3/D3クリア",
 		story = "GUOQING19",
@@ -1013,9 +1013,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[132] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "開幕",
 		condition = "『栄光なる最終戦』開始",
 		story = "ZHUNUO1",
@@ -1024,9 +1024,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[133] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "油断と奇襲・上",
 		condition = "『栄光なる最終戦』SP1開始",
 		story = "ZHUNUO2",
@@ -1035,9 +1035,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[134] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "油断と奇襲・中",
 		condition = "『栄光なる最終戦』SP1ボス発見",
 		story = "ZHUNUO3",
@@ -1046,9 +1046,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[135] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "油断と奇襲・下",
 		condition = "『栄光なる最終戦』SP1クリア",
 		story = "ZHUNUO4",
@@ -1057,9 +1057,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[136] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "追撃と撤退・上",
 		condition = "『栄光なる最終戦』SP2開始",
 		story = "ZHUNUO5",
@@ -1068,9 +1068,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[137] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "追撃と撤退・中",
 		condition = "『栄光なる最終戦』SP2ボス発見",
 		story = "ZHUNUO6",
@@ -1079,9 +1079,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[138] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "追撃と撤退・下",
 		condition = "『栄光なる最終戦』SP2クリア",
 		story = "ZHUNUO7",
@@ -1090,9 +1090,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[139] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鉄血の戦艦姉妹",
 		condition = "『栄光なる最終戦』SP3開始",
 		story = "ZHUNUO8",
@@ -1101,9 +1101,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[140] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "栄光なる最終戦",
 		condition = "『栄光なる最終戦』SP3ボス発見",
 		story = "ZHUNUO9",
@@ -1112,9 +1112,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[141] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "終幕",
 		condition = "『栄光なる最終戦』SP3クリア",
 		story = "ZHUNUO10",
@@ -1123,9 +1123,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[142] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "カボチャ事変！？",
 		condition = "ハロウィン任務1解放",
 		story = "WANSHENGJIE1",
@@ -1134,9 +1134,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[143] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "行動開始！",
 		condition = "ハロウィン任務2解放",
 		story = "WANSHENGJIE2",
@@ -1145,9 +1145,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[144] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "深夜のイタズラ？",
 		condition = "ハロウィン任務3解放",
 		story = "WANSHENGJIE3",
@@ -1156,9 +1156,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[145] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "消えたカボチャ",
 		condition = "ハロウィン任務4解放",
 		story = "WANSHENGJIE4",
@@ -1167,9 +1167,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[146] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Trick or treat！",
 		condition = "ハロウィン任務5解放",
 		story = "WANSHENGJIE5",
@@ -1178,9 +1178,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[147] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お化け、正体現る",
 		condition = "ハロウィン任務6解放",
 		story = "WANSHENGJIE6",
@@ -1189,9 +1189,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[148] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "カボチャ艦隊、出撃！",
 		condition = "ハロウィン任務7解放",
 		story = "WANSHENGJIE7",
@@ -1200,9 +1200,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[149] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "星へ通ずる切符",
 		condition = "「星の歌姫」任務1解放",
 		story = "XINGCHEN1",
@@ -1211,9 +1211,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[150] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Quadimension",
 		condition = "「星の歌姫」任務2解放",
 		story = "XINGCHEN2",
@@ -1222,9 +1222,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[151] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ユニコーンの悩み",
 		condition = "「星の歌姫」任務3解放",
 		story = "XINGCHEN3",
@@ -1233,9 +1233,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[152] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "星の歌姫さまへ",
 		condition = "「星の歌姫」任務4解放",
 		story = "XINGCHEN4",
@@ -1244,9 +1244,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[153] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ユニコーンへ",
 		condition = "「星の歌姫」任務5解放",
 		story = "XINGCHEN5",
@@ -1255,9 +1255,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[154] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "変わる勇気",
 		condition = "「星の歌姫」任務6解放",
 		story = "XINGCHEN6",
@@ -1266,9 +1266,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[155] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "小さくて、最強の魔法",
 		condition = "「星の歌姫」任務7解放",
 		story = "XINGCHEN7",
@@ -1277,9 +1277,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[156] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "午後3時のレディたち",
 		condition = "「ワイワイお茶会」任務1解放",
 		story = "TEATIME1",
@@ -1288,9 +1288,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[157] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "寂しがり屋の女王さま",
 		condition = "「ワイワイお茶会」任務2解放",
 		story = "TEATIME2",
@@ -1299,9 +1299,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[158] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "朝寝坊は高貴のシルシ",
 		condition = "「ワイワイお茶会」任務3解放",
 		story = "TEATIME3",
@@ -1310,9 +1310,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[159] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "大好きベルちゃん",
 		condition = "「ワイワイお茶会」任務4解放",
 		story = "TEATIME4",
@@ -1321,9 +1321,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[160] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "突撃！隣の昼寝部",
 		condition = "「ワイワイお茶会」任務5解放",
 		story = "TEATIME5",
@@ -1332,9 +1332,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[161] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "真の優雅はこれからよ！",
 		condition = "「ワイワイお茶会」任務6解放",
 		story = "TEATIME6",
@@ -1343,9 +1343,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[162] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "次はゲーム大会！？",
 		condition = "「ワイワイお茶会」任務7解放",
 		story = "TEATIME7",
@@ -1354,9 +1354,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[163] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "聖夜の撮影会！",
 		condition = "「聖夜祭」任務1解放",
 		story = "SHENGDAN01",
@@ -1365,9 +1365,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[164] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "メリクリディエゴ！",
 		condition = "「聖夜祭」任務2解放",
 		story = "SHENGDAN02",
@@ -1376,9 +1376,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[165] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "重桜的クリスマス・上",
 		condition = "「聖夜祭」任務3解放",
 		story = "SHENGDAN03",
@@ -1387,9 +1387,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[166] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "重桜的クリスマス・下",
 		condition = "「聖夜祭」任務4解放",
 		story = "SHENGDAN04",
@@ -1398,9 +1398,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[167] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "みんなのサンタさん",
 		condition = "「聖夜祭」任務5解放",
 		story = "SHENGDAN05",
@@ -1409,9 +1409,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[168] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "聖夜のディナー",
 		condition = "「聖夜祭」任務6解放",
 		story = "SHENGDAN06",
@@ -1420,9 +1420,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[169] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "聖夜の抱っこ",
 		condition = "「聖夜祭」任務7解放",
 		story = "SHENGDAN07",
@@ -1431,9 +1431,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[170] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "メリークリスマス！",
 		condition = "「聖夜祭」任務8解放",
 		story = "SHENGDAN08",
@@ -1442,9 +1442,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[171] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "この素晴らしい正月に準備を!",
 		condition = "「謹賀新年」任務1解放",
 		story = "XINNIAN1",
@@ -1453,9 +1453,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[172] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "年末の大ソウジ",
 		condition = "「謹賀新年」任務2解放",
 		story = "XINNIAN2",
@@ -1464,9 +1464,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[173] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "未知に手を伸ばして",
 		condition = "「謹賀新年」任務3解放",
 		story = "XINNIAN3",
@@ -1475,9 +1475,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[174] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "友情、努力、ビクトリー！",
 		condition = "「謹賀新年」任務4解放",
 		story = "XINNIAN4",
@@ -1486,9 +1486,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[175] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "年賀状",
 		condition = "「謹賀新年」任務5解放",
 		story = "XINNIAN5",
@@ -1497,9 +1497,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[176] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新年の狂宴？",
 		condition = "「謹賀新年」任務6解放",
 		story = "XINNIAN6",
@@ -1508,9 +1508,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[177] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新年の願い",
 		condition = "「謹賀新年」任務7解放",
 		story = "XINNIAN7",
@@ -1519,9 +1519,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[178] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "忘却された記憶",
 		condition = "「闇に堕ちた青き翼」開始",
 		story = "DONGHUO01",
@@ -1530,9 +1530,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[179] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "突入",
 		condition = "A1/C1撃破",
 		story = "DONGHUO03",
@@ -1541,9 +1541,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[180] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "準備",
 		condition = "A2/C2開始",
 		story = "DONGHUO04",
@@ -1552,9 +1552,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[181] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幕間Ⅰ",
 		condition = "A2/C2クリア",
 		story = "DONGHUO05",
@@ -1563,9 +1563,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[182] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "探索",
 		condition = "A3/C3開始",
 		story = "DONGHUO06",
@@ -1574,9 +1574,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[183] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幕間Ⅱ",
 		condition = "A3/C3クリア",
 		story = "DONGHUO07",
@@ -1585,9 +1585,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[184] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幕間Ⅲ",
 		condition = "「闇に堕ちた青き翼·後編」開始",
 		story = "DONGHUO08",
@@ -1596,9 +1596,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[185] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "信号",
 		condition = "B1/D1開始",
 		story = "DONGHUO09",
@@ -1607,9 +1607,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[186] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幕間Ⅳ",
 		condition = "B2/D2開始",
 		story = "DONGHUO10",
@@ -1618,9 +1618,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[187] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 2,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "危機",
 		condition = "B3/D3撃破",
 		story = "1060600",
@@ -1629,9 +1629,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[188] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "黒幕",
 		condition = "B3/D3クリア",
 		story = "DONGHUO12",
@@ -1640,9 +1640,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[189] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "冬とコタツ",
 		condition = "「夏(?)の大作戦」任務1解放",
 		story = "SHANCHENG01",
@@ -1651,9 +1651,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[190] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "冬季水泳大会？",
 		condition = "「夏(?)の大作戦」任務2解放",
 		story = "SHANCHENG02",
@@ -1662,9 +1662,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[191] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "忘れた贈物・上",
 		condition = "「夏(?)の大作戦」任務3解放",
 		story = "SHANCHENG03",
@@ -1673,9 +1673,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[192] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "忘れた贈物・下",
 		condition = "「夏(?)の大作戦」任務4解放",
 		story = "SHANCHENG04",
@@ -1684,9 +1684,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[193] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お誘い",
 		condition = "「夏(?)の大作戦」任務5解放",
 		story = "SHANCHENG05",
@@ -1695,9 +1695,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[194] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "気合で！",
 		condition = "「夏(?)の大作戦」任務6解放",
 		story = "SHANCHENG06",
@@ -1706,9 +1706,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[195] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "温泉大作戦！",
 		condition = "「夏(?)の大作戦」任務7解放",
 		story = "SHANCHENG07",
@@ -1717,9 +1717,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[196] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "開幕",
 		condition = "SP1開始",
 		story = "WEIJIAO01",
@@ -1728,9 +1728,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[197] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "前哨戦・上",
 		condition = "SP1ボスを撃破",
 		story = "WEIJIAO02",
@@ -1739,9 +1739,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[198] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "前哨戦・下",
 		condition = "SP1をクリア",
 		story = "WEIJIAO03",
@@ -1750,9 +1750,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[199] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "戦術分析",
 		condition = "SP2開始",
 		story = "WEIJIAO04",
@@ -1761,9 +1761,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[200] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "遭遇戦・上",
 		condition = "SP2ボスに遭遇",
 		story = "WEIJIAO05",
@@ -1772,9 +1772,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[201] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "遭遇戦・下",
 		condition = "SP2ボスを撃破",
 		story = "WEIJIAO06",
@@ -1783,9 +1783,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[202] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "現状分析",
 		condition = "SP3開始",
 		story = "WEIJIAO07",
@@ -1794,9 +1794,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[203] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "対決・上",
 		condition = "SP3ボスに遭遇",
 		story = "WEIJIAO08",
@@ -1805,9 +1805,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[204] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "対決・下",
 		condition = "SP3ボスを撃破",
 		story = "WEIJIAO09",
@@ -1816,9 +1816,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[205] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "古倉庫の掘り出し物",
 		condition = "「おえかき」を始める",
 		story = "ANSHAN01",
@@ -1827,53 +1827,53 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[206] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "母港の不思議",
-		condition = "「おえかき」No.3を始める",
+		condition = "「おえかき」No.2を始める",
 		story = "ANSHAN02",
 		id = 206,
 		icon = "memory_anshan",
 		is_open = 0
 	},
 	[207] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "東煌の（バオズ）ススメ",
-		condition = "「おえかき」No.5を始める",
+		condition = "「おえかき」No.3を始める",
 		story = "ANSHAN03",
 		id = 207,
 		icon = "memory_anshan",
 		is_open = 0
 	},
 	[208] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "みんなのおえかき帳",
-		condition = "「おえかき」No.7を始める",
+		condition = "「おえかき」No.5を始める",
 		story = "ANSHAN04",
 		id = 208,
 		icon = "memory_anshan",
 		is_open = 0
 	},
 	[209] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鞍山のおえかき帳",
-		condition = "「おえかき」No.8を完成",
+		condition = "「おえかき」No.7を始める",
 		story = "ANSHAN05",
 		id = 209,
 		icon = "memory_anshan",
 		is_open = 0
 	},
 	[210] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "古倉庫でお宝探し",
 		condition = "「撫順の大冒険」を始める",
 		story = "FUSHUN01",
@@ -1882,9 +1882,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[211] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お使いはゲーム機修理？",
 		condition = "「年獣」のHPを70%以下にする",
 		story = "FUSHUN02",
@@ -1893,9 +1893,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[212] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "勇者、旅立つ",
 		condition = "「年獣」のHPを40%以下にする",
 		story = "FUSHUN03",
@@ -1904,9 +1904,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[213] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "そして世界が平和に…",
 		condition = "「年獣」のHPを0にする",
 		story = "FUSHUN04",
@@ -1915,9 +1915,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[214] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "とある朝のアクシデント",
 		condition = "「春風の十字星」DAY1解放",
 		story = "XIAOTIANE1",
@@ -1926,9 +1926,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[215] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ぼくにおまかせ！",
 		condition = "「春風の十字星」DAY2解放",
 		story = "XIAOTIANE2",
@@ -1937,9 +1937,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[216] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "状況調査！",
 		condition = "「春風の十字星」DAY3解放",
 		story = "XIAOTIANE3",
@@ -1948,9 +1948,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[217] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "現行犯？",
 		condition = "「春風の十字星」DAY5解放",
 		story = "XIAOTIANE4",
@@ -1959,9 +1959,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[218] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "弁解",
 		condition = "「春風の十字星」DAY7解放",
 		story = "XIAOTIANE5",
@@ -1970,9 +1970,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[219] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "証人",
 		condition = "「春風の十字星」DAY9解放",
 		story = "XIAOTIANE6",
@@ -1981,9 +1981,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[220] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "事件解決！",
 		condition = "「春風の十字星」DAY10解放",
 		story = "XIAOTIANE7",
@@ -1992,9 +1992,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[221] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "開幕",
 		condition = "凛冽なりし冬の王冠を開始",
 		story = "LINGDONG01",
@@ -2003,9 +2003,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[222] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "北の帰路",
 		condition = "A1/C1開始",
 		story = "LINGDONG02",
@@ -2014,9 +2014,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[223] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "緊急事態",
 		condition = "A1/C1の中枢艦隊を撃破",
 		story = "LINGDONG03",
@@ -2025,9 +2025,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[224] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "狩場",
 		condition = "A2/C2開始",
 		story = "LINGDONG04",
@@ -2036,9 +2036,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[225] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "迎撃",
 		condition = "A2/C2の中枢艦隊と戦闘",
 		story = "LINGDONG05",
@@ -2047,9 +2047,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[226] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "追跡開始",
 		condition = "A2/C2の中枢艦隊を撃破",
 		story = "LINGDONG06",
@@ -2058,9 +2058,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[227] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "詰めの一撃",
 		condition = "A3/C3開始",
 		story = "LINGDONG07",
@@ -2069,9 +2069,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[228] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "援軍",
 		condition = "A3/C3の中枢艦隊と戦闘",
 		story = "LINGDONG08",
@@ -2080,9 +2080,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[229] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "撃破",
 		condition = "A3/C3の中枢艦隊を撃破",
 		story = "LINGDONG09",
@@ -2091,9 +2091,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[230] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幕間",
 		condition = "A3/C3をクリア",
 		story = "LINGDONG10",
@@ -2102,9 +2102,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[231] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "北の海へ",
 		condition = "凛冽なりし冬の王冠・後編を開始",
 		story = "LINGDONG11",
@@ -2113,9 +2113,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[232] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "連絡途絶",
 		condition = "B1/D1の中枢艦隊を撃破",
 		story = "LINGDONG12",
@@ -2124,9 +2124,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[233] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "タングステン作戦",
 		condition = "B2/D2開始",
 		story = "LINGDONG13",
@@ -2135,9 +2135,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[234] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "孤独なる北の女王",
 		condition = "B2/D2の中枢艦隊と戦闘",
 		story = "LINGDONG14",
@@ -2146,9 +2146,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[235] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "むかつく",
 		condition = "B2/D2の中枢艦隊を撃破",
 		story = "LINGDONG15",
@@ -2157,9 +2157,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[236] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "目標変更",
 		condition = "B2/D2クリア",
 		story = "LINGDONG16",
@@ -2168,9 +2168,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[237] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "コードG",
 		condition = "B3/D3開始",
 		story = "LINGDONG17",
@@ -2179,9 +2179,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[238] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "エピローグ",
 		condition = "B3/D3の中枢艦隊を撃破",
 		story = "LINGDONG18",
@@ -2190,9 +2190,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[239] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "早春日和",
 		condition = "「記憶の札」1枚入手",
 		story = "SHANGYING1",
@@ -2201,9 +2201,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[240] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "花見の誘い",
 		condition = "「記憶の札」2枚入手",
 		story = "SHANGYING2",
@@ -2212,9 +2212,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[241] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お花見の準備",
 		condition = "「記憶の札」3枚入手",
 		story = "SHANGYING3",
@@ -2223,9 +2223,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[242] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "宴の始まり",
 		condition = "「記憶の札」4枚入手",
 		story = "SHANGYING4",
@@ -2234,9 +2234,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[243] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "桜に幕",
 		condition = "「記憶の札」5枚入手",
 		story = "SHANGYING5",
@@ -2245,9 +2245,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[244] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "花見で一杯",
 		condition = "「記憶の札」6枚入手",
 		story = "SHANGYING6",
@@ -2256,9 +2256,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[245] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "二人の後夜祭",
 		condition = "「記憶の札」7枚入手",
 		story = "SHANGYING7",
@@ -2267,9 +2267,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[246] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "瑞鶴の朝",
 		condition = "「瑞鶴任務1」開始",
 		story = "RUIHE1",
@@ -2278,9 +2278,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[247] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "瑞鶴と仲間たち",
 		condition = "「瑞鶴任務2」開始",
 		story = "RUIHE2",
@@ -2289,9 +2289,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[248] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "瑞鶴と先輩たち",
 		condition = "「瑞鶴任務3」開始",
 		story = "RUIHE3",
@@ -2300,9 +2300,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[249] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "瑞鶴と大先輩",
 		condition = "「瑞鶴任務4」開始",
 		story = "RUIHE4",
@@ -2311,9 +2311,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[250] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "今日は料理担当！",
 		condition = "「瑞鶴任務5」開始",
 		story = "RUIHE5",
@@ -2322,9 +2322,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[251] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "私なんて……",
 		condition = "「瑞鶴任務6」開始",
 		story = "RUIHE6",
@@ -2333,9 +2333,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[252] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "不屈の鶴",
 		condition = "「瑞鶴任務7」開始",
 		story = "RUIHE7",
@@ -2344,9 +2344,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[253] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "遅刻5分前",
 		condition = "「新学期」DAY1解放",
 		story = "KAIXUE01",
@@ -2355,9 +2355,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[254] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "運動場の問題児たち",
 		condition = "「新学期」DAY2解放",
 		story = "KAIXUE02",
@@ -2366,9 +2366,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[255] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ヒミツの昼休憩",
 		condition = "「新学期」DAY3解放",
 		story = "KAIXUE03",
@@ -2377,9 +2377,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[256] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "図書室の妖精さん",
 		condition = "「新学期」DAY5解放",
 		story = "KAIXUE04",
@@ -2388,9 +2388,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[257] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "空き教室の不思議",
 		condition = "「新学期」DAY7解放",
 		story = "KAIXUE05",
@@ -2399,9 +2399,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[258] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "放課後のHRタイム",
 		condition = "「新学期」DAY9解放",
 		story = "KAIXUE06",
@@ -2410,9 +2410,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[259] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "本当の新学期",
 		condition = "「新学期」DAY10解放",
 		story = "KAIXUE07",
@@ -2421,9 +2421,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[260] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "雪風様登場",
 		condition = "「雪風任務1」開始",
 		story = "XUEFENG1",
@@ -2432,9 +2432,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[261] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "天才の雪風様",
 		condition = "「雪風任務2」開始",
 		story = "XUEFENG2",
@@ -2443,9 +2443,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[262] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "VS時雨！？",
 		condition = "「雪風任務3」開始",
 		story = "XUEFENG3",
@@ -2454,9 +2454,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[263] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "雪風追っかけ隊？",
 		condition = "「雪風任務4」開始",
 		story = "XUEFENG4",
@@ -2465,9 +2465,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[264] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "雪風と遊園地（上）",
 		condition = "「雪風任務5」開始",
 		story = "XUEFENG5",
@@ -2476,9 +2476,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[265] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "雪風と遊園地（下）",
 		condition = "「雪風任務6」開始",
 		story = "XUEFENG6",
@@ -2487,9 +2487,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[266] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "いつもの雪風様",
 		condition = "「雪風任務7」開始",
 		story = "XUEFENG7",
@@ -2498,9 +2498,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[267] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "小さな昼食会",
 		condition = "「エイジャックス任務1」開始",
 		story = "AJIAKESI1",
@@ -2509,9 +2509,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[268] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "栄光の意味",
 		condition = "「エイジャックス任務2」開始",
 		story = "AJIAKESI2",
@@ -2520,9 +2520,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[269] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "秘書艦の責任",
 		condition = "「エイジャックス任務3」開始",
 		story = "AJIAKESI3",
@@ -2531,9 +2531,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[270] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "友？敵？",
 		condition = "「エイジャックス任務4」開始",
 		story = "AJIAKESI4",
@@ -2542,9 +2542,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[271] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "可愛い子豚ちゃん",
 		condition = "「エイジャックス任務5」開始",
 		story = "AJIAKESI5",
@@ -2553,9 +2553,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[272] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "強がりと本音・上",
 		condition = "「エイジャックス任務6」開始",
 		story = "AJIAKESI6",
@@ -2564,9 +2564,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[273] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "強がりと本音・下",
 		condition = "「エイジャックス任務7」開始",
 		story = "AJIAKESI7",
@@ -2575,9 +2575,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[274] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "怒りん坊の秘書艦",
 		condition = "「ハムマン任務1」開始",
 		story = "HAMAN1",
@@ -2586,9 +2586,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[275] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "不機嫌の理由・上",
 		condition = "「ハムマン任務2」開始",
 		story = "HAMAN2",
@@ -2597,9 +2597,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[276] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "不機嫌の理由・中",
 		condition = "「ハムマン任務3」開始",
 		story = "HAMAN3",
@@ -2608,9 +2608,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[277] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "不機嫌の理由・下",
 		condition = "「ハムマン任務4」開始",
 		story = "HAMAN4",
@@ -2619,9 +2619,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[278] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ハムマンとヨークタウン",
 		condition = "「ハムマン任務5」開始",
 		story = "HAMAN5",
@@ -2630,9 +2630,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[279] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "もしもし海軍部！？",
 		condition = "「ハムマン任務6」開始",
 		story = "HAMAN6",
@@ -2641,9 +2641,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[280] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "素直は…一瞬だけよ！",
 		condition = "「ハムマン任務7」開始",
 		story = "HAMAN7",
@@ -2652,9 +2652,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[281] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "紅の秘書艦",
 		condition = "「{namecode:91}任務1」開始",
 		story = "CHICHENG1",
@@ -2663,9 +2663,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[282] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "無双の伝承",
 		condition = "「{namecode:91}任務2」開始",
 		story = "CHICHENG2",
@@ -2674,9 +2674,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[283] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "恋敵と…例外？",
 		condition = "「{namecode:91}任務3」開始",
 		story = "CHICHENG3",
@@ -2685,9 +2685,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[284] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "味方と過去",
 		condition = "「{namecode:91}任務4」開始",
 		story = "CHICHENG4",
@@ -2696,9 +2696,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[285] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ササイなキズアト",
 		condition = "「{namecode:91}任務5」開始",
 		story = "CHICHENG5",
@@ -2707,9 +2707,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[286] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "闇の中の告白",
 		condition = "「{namecode:91}任務6」開始",
 		story = "CHICHENG6",
@@ -2718,9 +2718,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[287] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "運命の人",
 		condition = "「{namecode:91}任務7」開始",
 		story = "CHICHENG7",
@@ -2729,9 +2729,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[288] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "突然のお誘い",
 		condition = "「クリーブランド任務1」開始",
 		story = "KELIFULAN1",
@@ -2740,9 +2740,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[289] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "騎士団結成！",
 		condition = "「クリーブランド任務2」開始",
 		story = "KELIFULAN2",
@@ -2751,9 +2751,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[290] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "集中訓練！",
 		condition = "「クリーブランド任務3」開始",
 		story = "KELIFULAN3",
@@ -2762,9 +2762,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[291] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "試合開始！",
 		condition = "「クリーブランド任務4」開始",
 		story = "KELIFULAN4",
@@ -2773,9 +2773,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[292] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "強敵登場！？",
 		condition = "「クリーブランド任務5」開始",
 		story = "KELIFULAN5",
@@ -2784,9 +2784,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[293] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "奮発激励！",
 		condition = "「クリーブランド任務6」開始",
 		story = "KELIFULAN6",
@@ -2795,9 +2795,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[294] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "最高の優勝賞",
 		condition = "「クリーブランド任務7」開始",
 		story = "KELIFULAN7",
@@ -2806,9 +2806,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[295] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "小さな来訪者？",
 		condition = "累計報酬（100）",
 		story = "BEIFA1",
@@ -2817,9 +2817,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[296] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "意外の成果",
 		condition = "累計報酬（5000）",
 		story = "BEIFA2",
@@ -2828,9 +2828,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[297] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "姉妹？",
 		condition = "累計報酬（7000）",
 		story = "BEIFA3",
@@ -2839,9 +2839,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[298] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幼い新参者",
 		condition = "累計報酬（10000）",
 		story = "BEIFA4",
@@ -2850,9 +2850,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[299] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石の説明だにゃ",
 		condition = "新機能開放(指揮官レベル30達成)",
 		story = "FANGAN1",
@@ -2861,9 +2861,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[300] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石の説明だにゃⅡ",
 		condition = "「開発ドック」で艦を建造完了する",
 		story = "FANGAN2",
@@ -2872,9 +2872,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[301] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明日の天気は…",
 		condition = "「{namecode:79}任務1」開始",
 		story = "SHANCHENGP1",
@@ -2883,9 +2883,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[302] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "高気圧？低気圧？",
 		condition = "「{namecode:79}任務2」開始",
 		story = "SHANCHENGP2",
@@ -2894,9 +2894,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[303] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "風そよぐ",
 		condition = "「{namecode:79}任務3」開始",
 		story = "SHANCHENGP3",
@@ -2905,9 +2905,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[304] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "低気圧接近中",
 		condition = "「{namecode:79}任務4」開始",
 		story = "SHANCHENGP4",
@@ -2916,9 +2916,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[305] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "曇り、そして――",
 		condition = "「{namecode:79}任務5」開始",
 		story = "SHANCHENGP5",
@@ -2927,9 +2927,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[306] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "雨やどり",
 		condition = "「{namecode:79}任務6」開始",
 		story = "SHANCHENGP6",
@@ -2938,9 +2938,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[307] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "晴れ日和",
 		condition = "「{namecode:79}任務7」開始",
 		story = "SHANCHENGP7",
@@ -2949,9 +2949,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[308] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "その名はグロリアス",
 		condition = "「グロリアス任務1」開始",
 		story = "GUANGRONG1",
@@ -2960,9 +2960,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[309] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "演習海域にて",
 		condition = "「グロリアス任務2」開始",
 		story = "GUANGRONG2",
@@ -2971,9 +2971,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[310] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "女王事案Ⅰ",
 		condition = "「グロリアス任務3」開始",
 		story = "GUANGRONG3",
@@ -2982,9 +2982,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[311] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "女王事案Ⅱ",
 		condition = "「グロリアス任務4」開始",
 		story = "GUANGRONG4",
@@ -2993,9 +2993,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[312] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "駆逐艦たちと",
 		condition = "「グロリアス任務5」開始",
 		story = "GUANGRONG5",
@@ -3004,9 +3004,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[313] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "彼女にとっての栄光・上",
 		condition = "「グロリアス任務6」開始",
 		story = "GUANGRONG6",
@@ -3015,9 +3015,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[314] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "彼女にとっての栄光・下",
 		condition = "「グロリアス任務7」開始",
 		story = "GUANGRONG7",
@@ -3026,9 +3026,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[315] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鍋大会にゃ！",
 		condition = "「{namecode:34}任務1」開始",
 		story = "ACTRUYUE01",
@@ -3037,9 +3037,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[316] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "夏なのに！？",
 		condition = "「{namecode:34}任務2」開始",
 		story = "ACTRUYUE02",
@@ -3048,9 +3048,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[317] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "オフシーズン！？",
 		condition = "「{namecode:34}任務3」開始",
 		story = "ACTRUYUE03",
@@ -3059,9 +3059,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[318] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ナベにも衣装！？",
 		condition = "「{namecode:34}任務4」開始",
 		story = "ACTRUYUE04",
@@ -3070,9 +3070,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[319] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "隠し味は…！",
 		condition = "「{namecode:34}任務5」開始",
 		story = "ACTRUYUE05",
@@ -3081,9 +3081,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[320] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "でも美味しい！",
 		condition = "「{namecode:34}任務6」開始",
 		story = "ACTRUYUE06",
@@ -3092,9 +3092,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[322] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "隣のサラトガちゃん",
 		condition = "「サラトガ任務1」開始",
 		story = "SALATUOJIA1",
@@ -3103,9 +3103,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[323] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "サラトガちゃんのお仕事",
 		condition = "「サラトガ任務2」開始",
 		story = "SALATUOJIA2",
@@ -3114,9 +3114,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[324] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "サラトガちゃんのオフ",
 		condition = "「サラトガ任務3」開始",
 		story = "SALATUOJIA3",
@@ -3125,9 +3125,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[325] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お姉ちゃん！",
 		condition = "「サラトガ任務4」開始",
 		story = "SALATUOJIA4",
@@ -3136,9 +3136,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[326] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "取材はつらいよ・上",
 		condition = "「サラトガ任務5」開始",
 		story = "SALATUOJIA5",
@@ -3147,9 +3147,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[327] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "取材はつらいよ・下",
 		condition = "「サラトガ任務6」開始",
 		story = "SALATUOJIA6",
@@ -3158,9 +3158,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[328] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "大切な宝物",
 		condition = "「サラトガ任務7」開始",
 		story = "SALATUOJIA7",
@@ -3169,9 +3169,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[329] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "デートのお誘い",
 		condition = "「{namecode:67}任務1」開始",
 		story = "AIDANG1",
@@ -3180,9 +3180,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[330] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "レッツゴー！",
 		condition = "「{namecode:67}任務2」開始",
 		story = "AIDANG2",
@@ -3191,9 +3191,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[331] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "買い物アクシデント",
 		condition = "「{namecode:67}任務3」開始",
 		story = "AIDANG3",
@@ -3202,9 +3202,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[332] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "休憩時間、そして――",
 		condition = "「{namecode:67}任務4」開始",
 		story = "AIDANG4",
@@ -3213,9 +3213,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[333] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "暗闇の中で",
 		condition = "「{namecode:67}任務5」開始",
 		story = "AIDANG5",
@@ -3224,9 +3224,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[334] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "夕日の贈り物",
 		condition = "「{namecode:67}任務6」開始",
 		story = "AIDANG6",
@@ -3235,9 +3235,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[335] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "顧みず",
 		condition = "「{namecode:67}任務7」開始",
 		story = "AIDANG7",
@@ -3246,9 +3246,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[336] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "生誕",
 		condition = "「Z46任務1」開始",
 		story = "Z461",
@@ -3257,9 +3257,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[337] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "軌跡",
 		condition = "「Z46任務2」開始",
 		story = "Z462",
@@ -3268,9 +3268,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[338] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幕間Ⅰ",
 		condition = "「Z46任務3」開始",
 		story = "Z463",
@@ -3279,9 +3279,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[339] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "思索",
 		condition = "「Z46任務4」開始",
 		story = "Z464",
@@ -3290,9 +3290,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[340] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幕間Ⅱ",
 		condition = "「Z46任務5」開始",
 		story = "Z465",
@@ -3301,9 +3301,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[341] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "羈絆",
 		condition = "「Z46任務6」開始",
 		story = "Z466",
@@ -3312,9 +3312,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[342] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "純白",
 		condition = "「Z46任務7」開始",
 		story = "Z467",
@@ -3323,9 +3323,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[350] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お茶会の来訪者",
 		condition = "「ル・トリオンファン1」開始",
 		story = "KAIXUAN1",
@@ -3334,9 +3334,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[351] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "頑張るトリオンファン",
 		condition = "「ル・トリオンファン2」開始",
 		story = "KAIXUAN2",
@@ -3345,9 +3345,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[352] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "トリオンファン出撃",
 		condition = "「ル・トリオンファン3」開始",
 		story = "KAIXUAN3",
@@ -3356,9 +3356,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[353] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "落ち込むトリオンファン",
 		condition = "「ル・トリオンファン4」開始",
 		story = "KAIXUAN4",
@@ -3367,9 +3367,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[354] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "本音",
 		condition = "「ル・トリオンファン5」開始",
 		story = "KAIXUAN5",
@@ -3378,9 +3378,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[355] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "「対立」の姉妹",
 		condition = "「ル・トリオンファン6」開始",
 		story = "KAIXUAN6",
@@ -3389,9 +3389,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[356] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "アイリスの凱旋",
 		condition = "「ル・トリオンファン7」開始",
 		story = "KAIXUAN7",
@@ -3400,9 +3400,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[357] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "人気者の踊り子",
 		condition = "「エミール・ベルタン1」開始",
 		story = "AIMIER1",
@@ -3411,9 +3411,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[358] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "黄金の友情？",
 		condition = "「エミール・ベルタン2」開始",
 		story = "AIMIER2",
@@ -3422,9 +3422,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[359] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "意外な得意技",
 		condition = "「エミール・ベルタン3」開始",
 		story = "AIMIER3",
@@ -3433,9 +3433,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[360] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "我慢我慢！",
 		condition = "「エミール・ベルタン4」開始",
 		story = "AIMIER4",
@@ -3444,9 +3444,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[361] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "エミールのロマン論・上",
 		condition = "「エミール・ベルタン5」開始",
 		story = "AIMIER5",
@@ -3455,9 +3455,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[362] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ロマンス・デート？",
 		condition = "「エミール・ベルタン6」開始",
 		story = "AIMIER6",
@@ -3466,9 +3466,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[363] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "エミールのロマン論・下",
 		condition = "「エミール・ベルタン7」開始",
 		story = "AIMIER7",
@@ -3477,9 +3477,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[364] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "シュルクーフの朝",
 		condition = "「シュルクーフ任務1」開始",
 		story = "XUKUFU1",
@@ -3488,9 +3488,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[365] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "午前中のシュルクーフ",
 		condition = "「シュルクーフ任務2」開始",
 		story = "XUKUFU2",
@@ -3499,9 +3499,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[366] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "働くシュルクーフ",
 		condition = "「シュルクーフ任務3」開始",
 		story = "XUKUFU3",
@@ -3510,9 +3510,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[367] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "シュルクーフのお昼",
 		condition = "「シュルクーフ任務4」開始",
 		story = "XUKUFU4",
@@ -3521,9 +3521,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[368] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "シュルクーフの午後・上",
 		condition = "「シュルクーフ任務5」開始",
 		story = "XUKUFU5",
@@ -3532,9 +3532,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[369] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "シュルクーフの午後・下",
 		condition = "「シュルクーフ任務6」開始",
 		story = "XUKUFU6",
@@ -3543,9 +3543,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[370] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "指揮官のシュルクーフ",
 		condition = "「シュルクーフ任務7」開始",
 		story = "XUKUFU7",
@@ -3554,9 +3554,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[371] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "光と影の海へ",
 		condition = "「光と影のアイリス」開始",
 		story = "FAXI01",
@@ -3565,9 +3565,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[372] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "突破口",
 		condition = "A2/C2開始",
 		story = "FAXI02",
@@ -3576,9 +3576,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[373] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "カタパルト作戦",
 		condition = "A3/C3開始",
 		story = "FAXI03",
@@ -3587,9 +3587,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[374] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "教国再誕",
 		condition = "A3/C3クリア",
 		story = "FAXI04",
@@ -3598,9 +3598,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[375] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "追想",
 		condition = "「光と影のアイリス·後編」開始",
 		story = "FAXI05",
@@ -3609,9 +3609,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[376] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "連合艦隊",
 		condition = "B1/D1開始",
 		story = "FAXI06",
@@ -3620,9 +3620,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[377] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "闇朱の騎士たち",
 		condition = "B2/D2開始",
 		story = "FAXI07",
@@ -3631,9 +3631,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[378] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "真打ち出撃",
 		condition = "B3/D3開始",
 		story = "FAXI08",
@@ -3642,9 +3642,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[379] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "好敵手・相まみえる",
 		condition = "B3/D3 ボスと交戦",
 		story = "FAXI09",
@@ -3653,9 +3653,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[380] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "光と影",
 		condition = "B3/D3 クリア",
 		story = "FAXI10",
@@ -3664,9 +3664,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[381] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "聖女の進撃",
 		condition = "？？？",
 		story = "FAXI11",
@@ -3675,9 +3675,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[382] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "補給物資のサプライズ！？",
 		condition = "「白衣の天使or悪魔？任務1」開始",
 		story = "XIXUEGUI1",
@@ -3686,9 +3686,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[383] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ヴァンパイアの誘惑",
 		condition = "「白衣の天使or悪魔？任務2」開始",
 		story = "XIXUEGUI2",
@@ -3697,9 +3697,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[384] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新人ナース・ヴァンパイア？",
 		condition = "「白衣の天使or悪魔？任務3」開始",
 		story = "XIXUEGUI3",
@@ -3708,9 +3708,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[385] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "緊急状況？",
 		condition = "「白衣の天使or悪魔？任務5」開始",
 		story = "XIXUEGUI4",
@@ -3719,9 +3719,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[386] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "プロナース・ヴァンパイア！",
 		condition = "「白衣の天使or悪魔？任務7」開始",
 		story = "XIXUEGUI5",
@@ -3730,9 +3730,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[387] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "秘書艦",
 		condition = "「ティルピッツ任務1」開始",
 		story = "TIERBICI1",
@@ -3741,9 +3741,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[388] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "任務",
 		condition = "「ティルピッツ任務2」開始",
 		story = "TIERBICI2",
@@ -3752,9 +3752,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[389] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "演習",
 		condition = "「ティルピッツ任務3」開始",
 		story = "TIERBICI3",
@@ -3763,9 +3763,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[390] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "出撃",
 		condition = "「ティルピッツ任務4」開始",
 		story = "TIERBICI4",
@@ -3774,9 +3774,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[391] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "みんなの秘書艦",
 		condition = "「ティルピッツ任務5」開始",
 		story = "TIERBICI5",
@@ -3785,9 +3785,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[392] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "女王の微笑み",
 		condition = "「ティルピッツ任務6」開始",
 		story = "TIERBICI6",
@@ -3796,9 +3796,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[393] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "温もり",
 		condition = "「ティルピッツ任務7」開始",
 		story = "TIERBICI7",
@@ -3807,9 +3807,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[394] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "憧れの先輩へ",
 		condition = "「セントー任務1」開始",
 		story = "BANRENMA1",
@@ -3818,9 +3818,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[395] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "真面目すぎる系？",
 		condition = "「セントー任務2」開始",
 		story = "BANRENMA2",
@@ -3829,9 +3829,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[396] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "尊敬とは",
 		condition = "「セントー任務3」開始",
 		story = "BANRENMA3",
@@ -3840,9 +3840,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[397] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "意外な展開",
 		condition = "「セントー任務4」開始",
 		story = "BANRENMA4",
@@ -3851,9 +3851,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[398] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "映画の中にいたような…",
 		condition = "「セントー任務5」開始",
 		story = "BANRENMA5",
@@ -3862,9 +3862,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[399] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "みんなの後輩",
 		condition = "「セントー任務6」開始",
 		story = "BANRENMA6",
@@ -3873,9 +3873,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[400] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "真の仲間",
 		condition = "「セントー任務7」開始",
 		story = "BANRENMA7",
@@ -3884,9 +3884,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[401] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "夏はいつもどおり？",
 		condition = "「盛夏の射手座任務1」開始",
 		story = "BANRENMAFEIJI1",
@@ -3895,9 +3895,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[402] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "夏の秘密兵器？",
 		condition = "「盛夏の射手座任務2」開始",
 		story = "BANRENMAFEIJI2",
@@ -3906,9 +3906,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[403] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "海岸監視員の夏",
 		condition = "「盛夏の射手座任務3」開始",
 		story = "BANRENMAFEIJI3",
@@ -3917,9 +3917,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[404] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "スイーツ・ド・アイリス",
 		condition = "「盛夏の射手座任務4」開始",
 		story = "BANRENMAFEIJI4",
@@ -3928,9 +3928,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[405] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鉄血戦線",
 		condition = "「盛夏の射手座任務5」開始",
 		story = "BANRENMAFEIJI5",
@@ -3939,9 +3939,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[406] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "一日の終りに",
 		condition = "「盛夏の射手座任務6」開始",
 		story = "BANRENMAFEIJI6",
@@ -3950,9 +3950,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[407] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "博物館、崩壊",
 		condition = "「三笠大先輩のミニ博物館任務1」開始",
 		story = "SANLICHUANMO1",
@@ -3961,9 +3961,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[408] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "睦月、立つ",
 		condition = "「三笠大先輩のミニ博物館任務2」開始",
 		story = "SANLICHUANMO2",
@@ -3972,9 +3972,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[409] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "頑張る　後輩たち",
 		condition = "「三笠大先輩のミニ博物館任務3」開始",
 		story = "SANLICHUANMO3",
@@ -3983,9 +3983,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[410] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ミニ博物館、新生！",
 		condition = "「三笠大先輩のミニ博物館任務4」開始",
 		story = "SANLICHUANMO4",
@@ -3994,9 +3994,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[411] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "本日、好天につき",
 		condition = "「御召艦の宴任務1」開始",
 		story = "BIRUI1",
@@ -4005,9 +4005,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[412] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お誘いは格式正しく",
 		condition = "「御召艦の宴任務2」開始",
 		story = "BIRUI2",
@@ -4016,9 +4016,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[413] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "きっかけは良しなに",
 		condition = "「御召艦の宴任務3」開始",
 		story = "BIRUI3",
@@ -4027,9 +4027,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[414] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "準備は入念に",
 		condition = "「御召艦の宴任務4」開始",
 		story = "BIRUI4",
@@ -4038,9 +4038,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[415] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "楽しみは十人十色",
 		condition = "「御召艦の宴任務5」開始",
 		story = "BIRUI5",
@@ -4049,9 +4049,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[416] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "主賓は二人っきり",
 		condition = "「御召艦の宴任務6」開始",
 		story = "BIRUI6",
@@ -4060,9 +4060,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[417] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "余興は月華の夜にて",
 		condition = "「御召艦の宴任務7」開始",
 		story = "BIRUI7",
@@ -4071,9 +4071,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[418] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "発端",
 		condition = "「曇りの仮面1」開始",
 		story = "DEYIZHI1",
@@ -4082,9 +4082,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[419] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "真なる高貴",
 		condition = "「曇りの仮面2」開始",
 		story = "DEYIZHI2",
@@ -4093,9 +4093,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[420] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "不協和音",
 		condition = "「曇りの仮面3」開始",
 		story = "DEYIZHI3",
@@ -4104,9 +4104,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[421] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "喪失感",
 		condition = "「曇りの仮面4」開始",
 		story = "DEYIZHI4",
@@ -4115,9 +4115,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[422] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "真実・上",
 		condition = "「曇りの仮面5」開始",
 		story = "DEYIZHI5",
@@ -4126,9 +4126,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[423] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "真実・下",
 		condition = "「曇りの仮面6」開始",
 		story = "DEYIZHI6",
@@ -4137,9 +4137,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[424] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "変わらない日々",
 		condition = "「曇りの仮面7」開始",
 		story = "DEYIZHI7",
@@ -4148,9 +4148,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[425] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "執務室の罠",
 		condition = "「サブマリン・トラップ！1」開始",
 		story = "DAQINGHUAYU1",
@@ -4159,9 +4159,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[426] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "潜水体操！",
 		condition = "「サブマリン・トラップ！2」開始",
 		story = "DAQINGHUAYU2",
@@ -4170,9 +4170,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[427] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "寮舎のアルバコア ",
 		condition = "「サブマリン・トラップ！3」開始",
 		story = "DAQINGHUAYU3",
@@ -4181,9 +4181,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[428] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "「悪魔」との契約 ",
 		condition = "「サブマリン・トラップ！4」開始",
 		story = "DAQINGHUAYU4",
@@ -4192,9 +4192,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[429] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "二人の海辺・上",
 		condition = "「サブマリン・トラップ！5」開始",
 		story = "DAQINGHUAYU5",
@@ -4203,9 +4203,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[430] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "二人の海辺・下",
 		condition = "「サブマリン・トラップ！6」開始",
 		story = "DAQINGHUAYU6",
@@ -4214,9 +4214,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[431] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "おやすみ、そして……おはよう！",
 		condition = "「サブマリン・トラップ！7」開始",
 		story = "DAQINGHUAYU7",
@@ -4225,9 +4225,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[432] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "エセックスの悩み",
 		condition = "「特別パーティー、開幕！1」開始",
 		story = "HUIHUA1",
@@ -4236,9 +4236,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[433] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "アルバコアのお祭り",
 		condition = "「特別パーティー、開幕！2」開始",
 		story = "HUIHUA2",
@@ -4247,9 +4247,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[434] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "大鳳とアルバコア",
 		condition = "「特別パーティー、開幕！3」開始",
 		story = "HUIHUA3",
@@ -4258,9 +4258,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[435] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お祭りにて",
 		condition = "「特別パーティー、開幕！4」開始",
 		story = "HUIHUA4",
@@ -4269,9 +4269,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[436] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お祭りはこれから",
 		condition = "「特別パーティー、開幕！5」開始",
 		story = "HUIHUA5",
@@ -4280,9 +4280,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[437] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "準備完了にゃ！",
 		condition = "「一周年記念イベント・下」任務1クリア",
 		story = "SHANCHENGLIFU1",
@@ -4291,9 +4291,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[438] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "執務室外の小話",
 		condition = "「一周年記念イベント・下」任務2クリア",
 		story = "SHANCHENGLIFU2",
@@ -4302,9 +4302,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[439] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "クリーブランド・エンターズ！",
 		condition = "「一周年記念イベント・下」任務3",
 		story = "SHANCHENGLIFU3",
@@ -4313,9 +4313,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[440] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "女王陛下登場",
 		condition = "「一周年記念イベント・下」任務4",
 		story = "SHANCHENGLIFU4",
@@ -4324,9 +4324,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[441] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "宴会のピアニスト",
 		condition = "「一周年記念イベント・下」任務5",
 		story = "SHANCHENGLIFU5",
@@ -4335,9 +4335,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[442] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "一周年のオーケストラ",
 		condition = "「一周年記念イベント・下」任務6",
 		story = "SHANCHENGLIFU6",
@@ -4346,9 +4346,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[443] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "秘書艦のお仕事？上",
 		condition = "「その女、賢妻につき1」開始",
 		story = "DAFENG1",
@@ -4357,9 +4357,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[444] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "秘書艦のお仕事？下",
 		condition = "「その女、賢妻につき2」開始",
 		story = "DAFENG2",
@@ -4368,9 +4368,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[445] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "天敵登場！？",
 		condition = "「その女、賢妻につき3」開始",
 		story = "DAFENG3",
@@ -4379,9 +4379,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[446] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "同盟結成？",
 		condition = "「その女、賢妻につき4」開始",
 		story = "DAFENG4",
@@ -4390,9 +4390,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[447] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "バーサス！",
 		condition = "「その女、賢妻につき5」開始",
 		story = "DAFENG5",
@@ -4401,9 +4401,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[448] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "大鳳の消失・上",
 		condition = "「その女、賢妻につき6」開始",
 		story = "DAFENG6",
@@ -4412,9 +4412,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[449] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "大鳳の消失・下",
 		condition = "「その女、賢妻につき7」開始",
 		story = "DAFENG7",
@@ -4423,9 +4423,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[450] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "厳格なる秘書艦",
 		condition = "「先輩とわだかまり1」開始",
 		story = "AISAIKESI1",
@@ -4434,9 +4434,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[451] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "後輩たちの集い",
 		condition = "「先輩とわだかまり2」開始",
 		story = "AISAIKESI2",
@@ -4445,9 +4445,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[452] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "先輩と",
 		condition = "「先輩とわだかまり3」開始",
 		story = "AISAIKESI3",
@@ -4456,9 +4456,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[453] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "VSエンタープライズ",
 		condition = "「先輩とわだかまり4」開始",
 		story = "AISAIKESI4",
@@ -4467,9 +4467,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[454] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "わだかまり・上",
 		condition = "「先輩とわだかまり5」開始",
 		story = "AISAIKESI5",
@@ -4478,9 +4478,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[455] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "わだかまり・下",
 		condition = "「先輩とわだかまり6」開始",
 		story = "AISAIKESI6",
@@ -4489,9 +4489,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[456] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "あなたとの日常",
 		condition = "「先輩とわだかまり7」開始",
 		story = "AISAIKESI7",
@@ -4500,9 +4500,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[457] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "オフニャ登場！",
 		condition = "新機能開放(指揮官レベル40達成)",
 		story = "ZHIHUIMIAO1",
@@ -4511,9 +4511,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[458] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "オフニャ紹介",
 		condition = "新機能開放(指揮官レベル40達成)",
 		story = "ZHIHUIMIAO2",
@@ -4522,9 +4522,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[459] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "訓練にゃ",
 		condition = "新機能開放(指揮官レベル40達成)",
 		story = "ZHIHUIMIAO3",
@@ -4533,9 +4533,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[460] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お家事情が…",
 		condition = "新機能開放(指揮官レベル40達成)",
 		story = "ZHIHUIMIAO4",
@@ -4544,9 +4544,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[461] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "サンディエゴ、改造へ",
 		condition = "「輝く☆バトルスター」イベント開始",
 		story = "SHENGDIYAGEGAI1",
@@ -4555,9 +4555,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[462] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "サンディエゴ、特訓へ",
 		condition = "「輝く☆バトルスター」イベントバトルスター2回目取得",
 		story = "SHENGDIYAGEGAI2",
@@ -4566,9 +4566,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[463] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "サンディエゴ、悩む",
 		condition = "「輝く☆バトルスター」イベントバトルスター4回目取得",
 		story = "SHENGDIYAGEGAI3",
@@ -4577,9 +4577,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[464] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "サンディエゴ、未来へ",
 		condition = "「輝く☆バトルスター」イベントバトルスター7回目取得",
 		story = "SHENGDIYAGEGAI4",
@@ -4588,9 +4588,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[466] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "作戦開始",
 		condition = "「戦え！ロイヤルメイド隊」イベント開始",
 		story = "NIUKASIERBOSS1",
@@ -4599,9 +4599,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[467] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "側面の二人",
 		condition = "「戦え！ロイヤルメイド隊」作戦進捗25%",
 		story = "NIUKASIERBOSS2",
@@ -4610,9 +4610,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[468] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "輝くシェフィールド",
 		condition = "「戦え！ロイヤルメイド隊」作戦進捗50%",
 		story = "NIUKASIERBOSS3",
@@ -4621,9 +4621,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[469] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "正面防衛線",
 		condition = "「戦え！ロイヤルメイド隊」作戦進捗75%",
 		story = "NIUKASIERBOSS4",
@@ -4632,9 +4632,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[470] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "演習完了",
 		condition = "「戦え！ロイヤルメイド隊」作戦進捗100%",
 		story = "NIUKASIERBOSS5",
@@ -4643,9 +4643,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[471] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "まさかの方向音痴？",
 		condition = "「ニンジャ暁参上！1」開始",
 		story = "XIAO1",
@@ -4654,9 +4654,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[472] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ニンジャ修行？",
 		condition = "「ニンジャ暁参上！2」開始",
 		story = "XIAO2",
@@ -4665,9 +4665,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[473] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "みんなでワイワイ？・上",
 		condition = "「ニンジャ暁参上！3」開始",
 		story = "XIAO3",
@@ -4676,9 +4676,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[474] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "みんなでワイワイ？・下",
 		condition = "「ニンジャ暁参上！4」開始",
 		story = "XIAO4",
@@ -4687,9 +4687,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[475] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "突然の暗闇",
 		condition = "「ニンジャ暁参上！5」開始",
 		story = "XIAO5",
@@ -4698,9 +4698,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[476] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "暗闇の中",
 		condition = "「ニンジャ暁参上！6」開始",
 		story = "XIAO6",
@@ -4709,9 +4709,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[477] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "約束、そして希望",
 		condition = "「ニンジャ暁参上！7」開始",
 		story = "XIAO7",
@@ -4720,9 +4720,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[478] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "臨時メイド長",
 		condition = "「平穏を讃えて1」開始",
 		story = "NIUKASIER1",
@@ -4731,9 +4731,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[479] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "完璧と平穏",
 		condition = "「平穏を讃えて2」開始",
 		story = "NIUKASIER2",
@@ -4742,9 +4742,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[480] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "昼休み",
 		condition = "「平穏を讃えて3」開始",
 		story = "NIUKASIER3",
@@ -4753,9 +4753,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[481] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "悪戯タイム？",
 		condition = "「平穏を讃えて4」開始",
 		story = "NIUKASIER4",
@@ -4764,9 +4764,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[482] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "外出日",
 		condition = "「平穏を讃えて5」開始",
 		story = "NIUKASIER5",
@@ -4775,9 +4775,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[483] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "夕焼けの風景",
 		condition = "「平穏を讃えて6」開始",
 		story = "NIUKASIER6",
@@ -4786,9 +4786,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[484] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "彼女の望み",
 		condition = "「平穏を讃えて7」開始",
 		story = "NIUKASIER7",
@@ -4797,9 +4797,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[485] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "拗ねやすい彼女の日常",
 		condition = "「拗ねやすい彼女の小さなお話1」開始",
 		story = "HUONULULU1",
@@ -4808,9 +4808,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[486] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ホノルルは友達が少ない？",
 		condition = "「拗ねやすい彼女の小さなお話2」開始",
 		story = "HUONULULU2",
@@ -4819,9 +4819,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[487] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "仲良し作戦！",
 		condition = "「拗ねやすい彼女の小さなお話3」開始",
 		story = "HUONULULU3",
@@ -4830,9 +4830,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[488] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ホノルルは心配性？",
 		condition = "「拗ねやすい彼女の小さなお話4」開始",
 		story = "HUONULULU4",
@@ -4841,9 +4841,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[489] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ホノルルの悩み",
 		condition = "「拗ねやすい彼女の小さなお話5」開始",
 		story = "HUONULULU5",
@@ -4852,9 +4852,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[490] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ホノルルとデート・上",
 		condition = "「拗ねやすい彼女の小さなお話6」開始",
 		story = "HUONULULU6",
@@ -4863,9 +4863,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[491] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ホノルルとデート・下",
 		condition = "「拗ねやすい彼女の小さなお話7」開始",
 		story = "HUONULULU7",
@@ -4874,9 +4874,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[492] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "特殊目標を拿捕せよ！",
 		condition = "特殊目標と遭遇",
 		story = "DONGHUO13",
@@ -4885,9 +4885,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[493] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "夢を織りなす者",
 		condition = "？？？",
 		story = "DONGHUO17",
@@ -4896,9 +4896,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[494] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "迷子お化けを探し出そう！",
 		condition = "「悪戯ハロウィン1」開始",
 		story = "BEILIWANSHENGJIE1",
@@ -4907,9 +4907,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[495] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "好奇心の魔女",
 		condition = "「悪戯ハロウィン2」開始",
 		story = "BEILIWANSHENGJIE2",
@@ -4918,9 +4918,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[496] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お化けが怖い魔女",
 		condition = "「悪戯ハロウィン3」開始",
 		story = "BEILIWANSHENGJIE3",
@@ -4929,9 +4929,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[497] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "面倒くさがりの魔女",
 		condition = "「悪戯ハロウィン4」開始",
 		story = "BEILIWANSHENGJIE4",
@@ -4940,9 +4940,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[498] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "棺より出でし助っ人",
 		condition = "「悪戯ハロウィン5」開始",
 		story = "BEILIWANSHENGJIE5",
@@ -4951,9 +4951,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[499] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お化けさんバスターズ！",
 		condition = "「悪戯ハロウィン6」開始",
 		story = "BEILIWANSHENGJIE6",
@@ -4962,9 +4962,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[500] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ハッピーハロウィン！",
 		condition = "「悪戯ハロウィン7」開始",
 		story = "BEILIWANSHENGJIE7",
@@ -4973,9 +4973,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[501] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ウサウサ星ってなに？",
 		condition = "「ウサウサ星人の謎？1」開始",
 		story = "BEILI1",
@@ -4984,9 +4984,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[502] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ウサウサ星人は「ウサウサ」！",
 		condition = "「ウサウサ星人の謎？2」開始",
 		story = "BEILI2",
@@ -4995,9 +4995,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[503] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ウサウサ星人は「頑張る」！",
 		condition = "「ウサウサ星人の謎？3」開始",
 		story = "BEILI3",
@@ -5006,9 +5006,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[504] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ウサウサ星人は「アイドル」！",
 		condition = "「ウサウサ星人の謎？4」開始",
 		story = "BEILI4",
@@ -5017,9 +5017,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[505] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ウサウサ星人は「やさしい」！",
 		condition = "「ウサウサ星人の謎？5」開始",
 		story = "BEILI5",
@@ -5028,9 +5028,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[506] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ウサウサ星より訪れるもの",
 		condition = "「ウサウサ星人の謎？6」開始",
 		story = "BEILI6",
@@ -5039,9 +5039,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[507] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ウサウサ星人とは！",
 		condition = "「ウサウサ星人の謎？7」開始",
 		story = "BEILI7",
@@ -5050,9 +5050,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[508] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "クール店員シラヌイ",
 		condition = "「万能店員シラヌイ1」開始",
 		story = "BUZHIHUO1",
@@ -5061,9 +5061,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[509] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "店員不知火の日常",
 		condition = "「万能店員シラヌイ2」開始",
 		story = "BUZHIHUO2",
@@ -5072,9 +5072,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[510] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "突撃取材！隣の購買部",
 		condition = "「万能店員シラヌイ3」開始",
 		story = "BUZHIHUO3",
@@ -5083,9 +5083,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[511] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ビジネス会議？",
 		condition = "「万能店員シラヌイ4」開始",
 		story = "BUZHIHUO4",
@@ -5094,9 +5094,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[512] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "店員の異状",
 		condition = "「万能店員シラヌイ5」開始",
 		story = "BUZHIHUO5",
@@ -5105,9 +5105,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[513] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "店員の真心・上",
 		condition = "「万能店員シラヌイ6」開始",
 		story = "BUZHIHUO6",
@@ -5116,9 +5116,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[514] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "店員の真心・下",
 		condition = "「万能店員シラヌイ7」開始",
 		story = "BUZHIHUO7",
@@ -5127,9 +5127,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[515] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "糖分系ガール？",
 		condition = "「シュガリーコンコード1」開始",
 		story = "KANGKEDE1",
@@ -5138,9 +5138,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[516] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Let's buffet！",
 		condition = "「シュガリーコンコード2」開始",
 		story = "KANGKEDE2",
@@ -5149,9 +5149,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[517] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "隠し趣味？",
 		condition = "「シュガリーコンコード3」開始",
 		story = "KANGKEDE3",
@@ -5160,9 +5160,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[518] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "糖分補給連合？",
 		condition = "「シュガリーコンコード4」開始",
 		story = "KANGKEDE4",
@@ -5171,9 +5171,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[519] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "決心",
 		condition = "「シュガリーコンコード5」開始",
 		story = "KANGKEDE5",
@@ -5182,9 +5182,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[520] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "試食スタッフ？",
 		condition = "「シュガリーコンコード6」開始",
 		story = "KANGKEDE6",
@@ -5193,9 +5193,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[521] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "スイーツオブコンコード",
 		condition = "「シュガリーコンコード7」開始",
 		story = "KANGKEDE7",
@@ -5204,9 +5204,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[522] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "騒がしい海域",
 		condition = "イベント期間中ログイン",
 		story = "LINKPREHEAT",
@@ -5215,9 +5215,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[523] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "異邦の迷い人・上",
 		condition = "「夢幻の邂逅」SP1開始",
 		story = "LINKPREHEAT1-1",
@@ -5226,9 +5226,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[524] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "異邦の迷い人・下",
 		condition = "「夢幻の邂逅」SP1ボスに遭遇",
 		story = "LINKPREHEAT1-2",
@@ -5237,9 +5237,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[525] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "猫神さま？",
 		condition = "「夢幻の邂逅」SP1クリア",
 		story = "LINKPREHEAT2",
@@ -5248,9 +5248,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[526] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "新たな艤装",
 		condition = "「夢幻の邂逅」SP2開始",
 		story = "LINKPREHEAT3",
@@ -5259,9 +5259,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[527] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "仲間たちの危機",
 		condition = "「夢幻の邂逅」SP2クリア",
 		story = "LINKPREHEAT4",
@@ -5270,9 +5270,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[528] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "救出作戦開始！・上",
 		condition = "「夢幻の邂逅」SP3開始",
 		story = "LINKPREHEAT5-1",
@@ -5281,9 +5281,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[529] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "救出作戦開始！・下",
 		condition = "「夢幻の邂逅」SP3開始",
 		story = "LINKPREHEAT5-2",
@@ -5292,9 +5292,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[530] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "ネコネ救出",
 		condition = "「夢幻の邂逅」SP3ネコネ救出",
 		story = "LINKPREHEAT6",
@@ -5303,9 +5303,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[531] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "ルルティエ救出",
 		condition = "「夢幻の邂逅」SP3ルルティエ救出",
 		story = "LINKPREHEAT7",
@@ -5314,9 +5314,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[532] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "海域深部へ",
 		condition = "「夢幻の邂逅」SP3クリア",
 		story = "LINKPREHEAT8",
@@ -5325,9 +5325,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[533] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "夢幻の海での戦い・上",
 		condition = "「夢幻の邂逅」SP4開始",
 		story = "LINKPREHEAT9-1",
@@ -5336,9 +5336,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[534] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "夢幻の海での戦い・下",
 		condition = "「夢幻の邂逅」SP4開始",
 		story = "LINKPREHEAT9-2",
@@ -5347,9 +5347,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[535] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・クオン・上",
 		condition = "「夢幻の邂逅」SP4クオン選択",
 		story = "LINKPREHEAT10-1",
@@ -5358,9 +5358,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[536] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・クオン・下",
 		condition = "「夢幻の邂逅」SP4クオン選択",
 		story = "LINKPREHEAT10-2",
@@ -5369,9 +5369,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[537] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・ルルティエ・上",
 		condition = "「夢幻の邂逅」SP4ルルティエ選択",
 		story = "LINKPREHEAT11-1",
@@ -5380,9 +5380,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[538] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・ルルティエ・下",
 		condition = "「夢幻の邂逅」SP4ルルティエ選択",
 		story = "LINKPREHEAT11-2",
@@ -5391,9 +5391,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[539] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・ネコネ・上",
 		condition = "「夢幻の邂逅」SP4ネコネ選択",
 		story = "LINKPREHEAT12-1",
@@ -5402,9 +5402,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[540] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・ネコネ・下",
 		condition = "「夢幻の邂逅」SP4ネコネ選択",
 		story = "LINKPREHEAT12-2",
@@ -5413,9 +5413,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[541] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・ウルゥル・上",
 		condition = "「夢幻の邂逅」SP4ウルゥル選択",
 		story = "LINKPREHEAT13-1",
@@ -5424,9 +5424,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[542] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・ウルゥル・下",
 		condition = "「夢幻の邂逅」SP4ウルゥル選択",
 		story = "LINKPREHEAT13-2",
@@ -5435,9 +5435,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[543] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・サラァナ・上",
 		condition = "「夢幻の邂逅」SP4サラァナ選択",
 		story = "LINKPREHEAT14-1",
@@ -5446,9 +5446,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[544] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・サラァナ・下",
 		condition = "「夢幻の邂逅」SP4サラァナ選択",
 		story = "LINKPREHEAT14-2",
@@ -5457,9 +5457,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[545] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・フミルィル・上",
 		condition = "「夢幻の邂逅」SP4フミルィル選択",
 		story = "LINKPREHEAT15-1",
@@ -5468,9 +5468,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[546] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "分岐・フミルィル・下",
 		condition = "「夢幻の邂逅」SP4フミルィル選択",
 		story = "LINKPREHEAT15-2",
@@ -5479,9 +5479,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[547] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "演武の終わり・上",
 		condition = "「夢幻の邂逅」SP4クリア",
 		story = "LINKPREHEAT16-1",
@@ -5490,9 +5490,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[548] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "演武の終わり・下",
 		condition = "「夢幻の邂逅」SP4クリア",
 		story = "LINKPREHEAT16-2",
@@ -5501,9 +5501,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[549] = {
-		mask = "bg/bg_story_chuansong",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_chuansong",
 		title = "願いを叶える「カミ」",
 		condition = "？？？",
 		story = "LINKPREHEAT17",
@@ -5512,9 +5512,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[550] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "指揮官のお弁当？",
 		condition = "「夢幻の邂逅-日常編1」開始",
 		story = "LINKPREHEAT18",
@@ -5523,9 +5523,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[551] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "淑女たちのお茶会",
 		condition = "「夢幻の邂逅-日常編2」開始",
 		story = "LINKPREHEAT19",
@@ -5534,9 +5534,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[552] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "いい湯だな！",
 		condition = "「夢幻の邂逅-日常編3」開始",
 		story = "LINKPREHEAT20",
@@ -5545,9 +5545,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[553] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "おねえさまへ…",
 		condition = "「夢幻の邂逅-日常編4」開始",
 		story = "LINKPREHEAT21",
@@ -5556,9 +5556,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[554] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "誰がために君は戦う",
 		condition = "「夢幻の邂逅-日常編5」開始",
 		story = "LINKPREHEAT22",
@@ -5567,9 +5567,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[555] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "負けず嫌いの宴",
 		condition = "「夢幻の邂逅-日常編6」開始",
 		story = "LINKPREHEAT23",
@@ -5578,9 +5578,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[556] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お世話様",
 		condition = "「夢幻の邂逅-日常編7」開始",
 		story = "LINKPREHEAT24",
@@ -5589,9 +5589,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[557] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お風呂という文化",
 		condition = "SP4クリア後、SP1で特定の条件を達成",
 		story = "LINKPREHEAT25",
@@ -5600,9 +5600,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[558] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "温かい手料理",
 		condition = "SP4クリア後、SP2で特定の条件を達成",
 		story = "LINKPREHEAT26",
@@ -5611,9 +5611,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[559] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幼き才媛",
 		condition = "SP4クリア後、SP4で特定の条件を達成",
 		story = "LINKPREHEAT27",
@@ -5622,9 +5622,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[560] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "自分の影と向き合う",
 		condition = "SP4クリア後、SP4で特定の条件を達成",
 		story = "LINKPREHEAT28",
@@ -5633,9 +5633,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[561] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お姉ちゃんは心配性",
 		condition = "SP4クリア後、SP4で特定の条件を達成",
 		story = "LINKPREHEAT29",
@@ -5644,9 +5644,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[562] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "無口でごめん",
 		condition = "SP4クリア後、SP1で特定の条件を達成",
 		story = "LINKPREHEAT30",
@@ -5655,9 +5655,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[563] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "至高の１冊を求めて",
 		condition = "SP4クリア後、SP2で特定の条件を達成",
 		story = "LINKPREHEAT32",
@@ -5666,9 +5666,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[564] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "わたしはだぁれ？",
 		condition = "SP4クリア後、SP3で特定の条件を達成",
 		story = "LINKPREHEAT33",
@@ -5677,9 +5677,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[565] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "結ばれた世界",
 		condition = "SP4クリア後、SP3で特定の条件を達成",
 		story = "LINKPREHEAT34",
@@ -5688,9 +5688,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[566] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "血よりも濃い絆",
 		condition = "SP4クリア後、SP2で特定の条件を達成",
 		story = "LINKPREHEAT36",
@@ -5699,9 +5699,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[567] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "登場！日の出ずる国の軽空母",
 		condition = "「軽空母龍驤ここにあり1」開始",
 		story = "LONGXIANG1",
@@ -5710,9 +5710,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[568] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "特訓！一所懸命は重桜の掟",
 		condition = "「軽空母龍驤ここにあり2」開始",
 		story = "LONGXIANG2",
@@ -5721,9 +5721,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[569] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "専心！されど彼女は歩みを止めず",
 		condition = "「軽空母龍驤ここにあり3」開始",
 		story = "LONGXIANG3",
@@ -5732,9 +5732,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[570] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "危険！少女を誘惑する謎の味覚",
 		condition = "「軽空母龍驤ここにあり4」開始",
 		story = "LONGXIANG4",
@@ -5743,9 +5743,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[571] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "不安！最近はどうして……？",
 		condition = "「軽空母龍驤ここにあり5」開始",
 		story = "LONGXIANG5",
@@ -5754,9 +5754,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[572] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "宿敵！？伝説のアイドルとは",
 		condition = "「軽空母龍驤ここにあり6」開始",
 		story = "LONGXIANG6",
@@ -5765,9 +5765,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[573] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "勇気！やはり指揮官が大好き",
 		condition = "「軽空母龍驤ここにあり7」開始",
 		story = "LONGXIANG7",
@@ -5776,9 +5776,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[574] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ユニオンの空母たち",
 		condition = "「南洋に靡く硝煙」SP1開始",
 		story = "LONGXIANGHUODONG1",
@@ -5787,9 +5787,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[575] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "敵機発見！",
 		condition = "「南洋に靡く硝煙」SP1開始後 ",
 		story = "LONGXIANGHUODONG2",
@@ -5798,31 +5798,31 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[576] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "VS高速戦艦隊",
-		condition = "「南洋に靡く硝煙」SP1ボスに遭遇",
+		condition = "「南洋に靡く硝煙」SP1敵中枢艦隊出現時",
 		story = "LONGXIANGHUODONG3",
 		id = 576,
 		icon = "memory_longxianghuodong",
 		is_open = 0
 	},
 	[577] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "作戦分析",
-		condition = "「南洋に靡く硝煙」SP1クリア",
+		condition = "「南洋に靡く硝煙」SP1ボス撃破",
 		story = "LONGXIANGHUODONG4",
 		id = 577,
 		icon = "memory_longxianghuodong",
 		is_open = 0
 	},
 	[578] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お姉さん談義",
 		condition = "「南洋に靡く硝煙」SP2開始",
 		story = "LONGXIANGHUODONG5",
@@ -5831,31 +5831,31 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[579] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "VS優秀な妹！？",
-		condition = "「南洋に靡く硝煙」SP2ボスに遭遇",
+		condition = "「南洋に靡く硝煙」SP2敵中枢艦隊出現時",
 		story = "LONGXIANGHUODONG6",
 		id = 579,
 		icon = "memory_longxianghuodong",
 		is_open = 0
 	},
 	[580] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "サラトガの秘策",
-		condition = "「南洋に靡く硝煙」SP2クリア",
+		condition = "「南洋に靡く硝煙」SP2ボス撃破",
 		story = "LONGXIANGHUODONG7",
 		id = 580,
 		icon = "memory_longxianghuodong",
 		is_open = 0
 	},
 	[581] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お姉さん談義・Ⅱ",
 		condition = "「南洋に靡く硝煙」SP3開始",
 		story = "LONGXIANGHUODONG8",
@@ -5864,9 +5864,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[582] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "VS軽空母・龍驤",
 		condition = "「南洋に靡く硝煙」SP3ボスに遭遇",
 		story = "LONGXIANGHUODONG9",
@@ -5875,31 +5875,31 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[583] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "戦闘、そして……",
-		condition = "「南洋に靡く硝煙」SP3撃破",
+		condition = "「南洋に靡く硝煙」SP3ボス撃破",
 		story = "LONGXIANGHUODONG10",
 		id = 583,
 		icon = "memory_longxianghuodong",
 		is_open = 0
 	},
 	[584] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "次の戦いへと",
-		condition = "「南洋に靡く硝煙」SP3クリア",
+		condition = "「南洋に靡く硝煙」SP3ボス撃破後",
 		story = "LONGXIANGHUODONG11",
 		id = 584,
 		icon = "memory_longxianghuodong",
 		is_open = 0
 	},
 	[585] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "秘書艦大潮",
 		condition = "「大潮よりお届け♪1」開始",
 		story = "DACHAO1",
@@ -5908,9 +5908,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[586] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "女の子が好き？",
 		condition = "「大潮よりお届け♪2」開始",
 		story = "DACHAO2",
@@ -5919,9 +5919,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[587] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ご縁かご利益か",
 		condition = "「大潮よりお届け♪3」開始",
 		story = "DACHAO3",
@@ -5930,9 +5930,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[588] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "信頼の取材陣",
 		condition = "「大潮よりお届け♪4」開始",
 		story = "DACHAO4",
@@ -5941,9 +5941,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[589] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "残業デー！",
 		condition = "「大潮よりお届け♪5」開始",
 		story = "DACHAO5",
@@ -5952,9 +5952,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[590] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ミミっ子たちのお茶会",
 		condition = "「大潮よりお届け♪6」開始",
 		story = "DACHAO6",
@@ -5963,9 +5963,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[591] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "これからもよろしゅうな～",
 		condition = "「大潮よりお届け♪7」開始",
 		story = "DACHAO7",
@@ -5974,9 +5974,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[592] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "学友の悩み？",
 		condition = "「オペレーション・クリスマス！任務1」開始",
 		story = "DACHAOSHENGDAN1",
@@ -5985,9 +5985,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[593] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お土産は地元らしく",
 		condition = "「オペレーション・クリスマス！任務2」開始",
 		story = "DACHAOSHENGDAN2",
@@ -5996,9 +5996,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[594] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "クリスマスを覆う影・上",
 		condition = "「オペレーション・クリスマス！任務3」開始",
 		story = "DACHAOSHENGDAN3",
@@ -6007,9 +6007,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[595] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "クリスマスを覆う影・下",
 		condition = "「オペレーション・クリスマス！任務4」開始",
 		story = "DACHAOSHENGDAN4",
@@ -6018,9 +6018,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[596] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ウォースパイトの想い",
 		condition = "「オペレーション・クリスマス！任務5」開始",
 		story = "DACHAOSHENGDAN5",
@@ -6029,9 +6029,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[597] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "クリスマスへ進め！",
 		condition = "「オペレーション・クリスマス！任務6」開始",
 		story = "DACHAOSHENGDAN6",
@@ -6040,9 +6040,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[598] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "オペレーション・クリスマス！",
 		condition = "「オペレーション・クリスマス！任務7」開始",
 		story = "DACHAOSHENGDAN7",
@@ -6051,9 +6051,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[599] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "足柄、戦え！",
 		condition = "「足柄、すゝめ！1」開始",
 		story = "ZUBING1",
@@ -6062,9 +6062,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[600] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "足柄、励め！",
 		condition = "「足柄、すゝめ！2」開始",
 		story = "ZUBING2",
@@ -6073,9 +6073,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[601] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "足柄、閃け！",
 		condition = "「足柄、すゝめ！3」開始",
 		story = "ZUBING3",
@@ -6084,9 +6084,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[602] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "足柄、何のために戦う？",
 		condition = "「足柄、すゝめ！4」開始",
 		story = "ZUBING4",
@@ -6095,9 +6095,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[603] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "足柄、（青春に）悩め！",
 		condition = "「足柄、すゝめ！5」開始",
 		story = "ZUBING5",
@@ -6106,9 +6106,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[604] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "足柄、（恋に）悩め！",
 		condition = "「足柄、すゝめ！6」開始",
 		story = "ZUBING6",
@@ -6117,9 +6117,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[605] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "足柄、踏み出せ！",
 		condition = "「足柄、すゝめ！7」開始",
 		story = "ZUBING7",
@@ -6128,9 +6128,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[606] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "自業自得？",
 		condition = "「蒼龍さんと一緒1」開始",
 		story = "CANGLONG1",
@@ -6139,9 +6139,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[607] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "教えて、蒼龍先生！",
 		condition = "「蒼龍さんと一緒2」開始",
 		story = "CANGLONG2",
@@ -6150,9 +6150,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[608] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "友達とは？",
 		condition = "「蒼龍さんと一緒3」開始",
 		story = "CANGLONG3",
@@ -6161,9 +6161,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[609] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "いらないもの……？",
 		condition = "「蒼龍さんと一緒4」開始",
 		story = "CANGLONG4",
@@ -6172,9 +6172,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[610] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "変化・上",
 		condition = "「蒼龍さんと一緒5」開始",
 		story = "CANGLONG5",
@@ -6183,9 +6183,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[611] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "変化・中",
 		condition = "「蒼龍さんと一緒6」開始",
 		story = "CANGLONG6",
@@ -6194,9 +6194,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[612] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "変化・下",
 		condition = "「蒼龍さんと一緒7」開始",
 		story = "CANGLONG7",
@@ -6205,9 +6205,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[613] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "キッチンのドタバタ騒ぎ",
 		condition = "「正月の祝福任務1」開始",
 		story = "XIAOTIANEXINNIAN1",
@@ -6216,9 +6216,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[614] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "正月の雪",
 		condition = "「正月の祝福任務2」開始",
 		story = "XIAOTIANEXINNIAN2",
@@ -6227,9 +6227,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[615] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "雪の大乱闘",
 		condition = "「正月の祝福任務3」開始",
 		story = "XIAOTIANEXINNIAN3",
@@ -6238,9 +6238,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[616] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "重桜の正月",
 		condition = "「正月の祝福任務4」開始",
 		story = "XIAOTIANEXINNIAN4",
@@ -6249,9 +6249,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[617] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石からの贈り物",
 		condition = "「正月の祝福任務5」開始",
 		story = "XIAOTIANEXINNIAN5",
@@ -6260,9 +6260,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[618] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "夕餉は盛り上がる方向で",
 		condition = "「正月の祝福任務6」開始",
 		story = "XIAOTIANEXINNIAN6",
@@ -6271,9 +6271,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[619] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "正月の祝福",
 		condition = "「正月の祝福任務7」開始",
 		story = "XIAOTIANEXINNIAN7",
@@ -6282,9 +6282,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[620] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "追憶",
 		condition = "「縹映る深緋の残響·上」開始",
 		story = "TIANCHENGHUODONG1",
@@ -6293,9 +6293,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[621] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "記憶Ⅰ",
 		condition = "A1/C1開始",
 		story = "TIANCHENGHUODONG2",
@@ -6304,20 +6304,20 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[622] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "記憶Ⅱ",
-		condition = "A1/C1ボスと交戦",
+		condition = "A1/C1ボスに遭遇",
 		story = "TIANCHENGHUODONG3",
 		id = 622,
 		icon = "memory_tianchenghuodong",
 		is_open = 0
 	},
 	[623] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "記憶Ⅲ",
 		condition = "A1/C1ボスを撃破",
 		story = "TIANCHENGHUODONG4",
@@ -6326,20 +6326,20 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[624] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "記憶Ⅳ",
-		condition = "A2/C2ボスと交戦",
+		condition = "A2/C2ボスに遭遇",
 		story = "TIANCHENGHUODONG5",
 		id = 624,
 		icon = "memory_tianchenghuodong",
 		is_open = 0
 	},
 	[625] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "記憶Ⅴ",
 		condition = "A2/C2ボスを撃破",
 		story = "TIANCHENGHUODONG6",
@@ -6348,9 +6348,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[626] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "記憶Ⅵ",
 		condition = "A3/C3開始",
 		story = "TIANCHENGHUODONG7",
@@ -6359,20 +6359,20 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[627] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "記憶Ⅶ",
-		condition = "A3/C3ボスと交戦",
+		condition = "A3/C3ボスに遭遇",
 		story = "TIANCHENGHUODONG8",
 		id = 627,
 		icon = "memory_tianchenghuodong",
 		is_open = 0
 	},
 	[628] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "記憶Ⅷ",
 		condition = "A3/C3クリア",
 		story = "TIANCHENGHUODONG9",
@@ -6381,20 +6381,20 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[629] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "記憶IX",
-		condition = "A3/C3クリア",
+		condition = "A3/C3クリア後",
 		story = "TIANCHENGHUODONG9-2",
 		id = 629,
 		icon = "memory_tianchenghuodong",
 		is_open = 0
 	},
 	[630] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響Ⅰ",
 		condition = "「縹映る深緋の残響·下」開始",
 		story = "TIANCHENGHUODONG10",
@@ -6403,9 +6403,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[631] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響Ⅱ",
 		condition = "B1/D1開始",
 		story = "TIANCHENGHUODONG11",
@@ -6414,9 +6414,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[632] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響Ⅲ",
 		condition = "B1/D1ボスを撃破",
 		story = "TIANCHENGHUODONG12",
@@ -6425,9 +6425,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[633] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響Ⅳ",
 		condition = "B2/D2開始",
 		story = "TIANCHENGHUODONG13",
@@ -6436,20 +6436,20 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[634] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響Ⅴ",
-		condition = "B2/D2ボスと交戦",
+		condition = "B2/D2ボスに遭遇",
 		story = "TIANCHENGHUODONG14",
 		id = 634,
 		icon = "memory_tianchenghuodong",
 		is_open = 0
 	},
 	[635] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響Ⅵ",
 		condition = "B2/D2ボスを撃破",
 		story = "TIANCHENGHUODONG15",
@@ -6458,9 +6458,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[636] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響Ⅶ",
 		condition = "B3/D3開始",
 		story = "TIANCHENGHUODONG16",
@@ -6469,20 +6469,20 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[637] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響Ⅷ",
-		condition = "B3/D3ボスと交戦",
+		condition = "B3/D3ボスに遭遇",
 		story = "TIANCHENGHUODONG17",
 		id = 637,
 		icon = "memory_tianchenghuodong",
 		is_open = 0
 	},
 	[638] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響IX",
 		condition = "B3/D3ボスを撃破",
 		story = "TIANCHENGHUODONG18",
@@ -6491,9 +6491,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[639] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "現実",
 		condition = "B3/D3クリア",
 		story = "TIANCHENGHUODONG19",
@@ -6502,9 +6502,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[640] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響X",
 		condition = "？？？",
 		story = "TIANCHENGHUODONG20",
@@ -6513,9 +6513,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[641] = {
-		mask = "bg/bg_map_tiancheng",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_tiancheng",
 		title = "残響XI",
 		condition = "？？？",
 		story = "TIANCHENGHUODONG21",
@@ -6524,9 +6524,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[642] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "恥じらいの黒猫",
 		condition = "「人見知りの黒猫1」開始",
 		story = "CHUCHUN1",
@@ -6535,9 +6535,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[643] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "仲間のアドバイス",
 		condition = "「人見知りの黒猫2」開始",
 		story = "CHUCHUN2",
@@ -6546,9 +6546,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[644] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "初春、頑張って！",
 		condition = "「人見知りの黒猫3」開始",
 		story = "CHUCHUN3",
@@ -6557,9 +6557,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[645] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "秘書艦初春・着任！",
 		condition = "「人見知りの黒猫4」開始",
 		story = "CHUCHUN4",
@@ -6568,9 +6568,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[646] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "報われない努力？",
 		condition = "「人見知りの黒猫5」開始",
 		story = "CHUCHUN5",
@@ -6579,9 +6579,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[647] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "決意の初春",
 		condition = "「人見知りの黒猫6」開始",
 		story = "CHUCHUN6",
@@ -6590,9 +6590,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[648] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "黒猫の日常",
 		condition = "「人見知りの黒猫7」開始",
 		story = "CHUCHUN7",
@@ -6601,9 +6601,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[649] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "妹の日常",
 		condition = "「妹の成長期？！1」開始",
 		story = "WENSENSI1",
@@ -6612,9 +6612,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[650] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "妹の憂鬱",
 		condition = "「妹の成長期？！2」開始",
 		story = "WENSENSI2",
@@ -6623,9 +6623,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[651] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "妹の思い",
 		condition = "「妹の成長期？！3」開始",
 		story = "WENSENSI3",
@@ -6634,9 +6634,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[652] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "妹の寂しさ",
 		condition = "「妹の成長期？！4」開始",
 		story = "WENSENSI4",
@@ -6645,9 +6645,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[653] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "妹の決意",
 		condition = "「妹の成長期？！5」開始",
 		story = "WENSENSI5",
@@ -6656,9 +6656,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[654] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "妹の努力",
 		condition = "「妹の成長期？！6」開始",
 		story = "WENSENSI6",
@@ -6667,9 +6667,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[655] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "妹の笑顔",
 		condition = "「妹の成長期？！7」開始",
 		story = "WENSENSI7",
@@ -6678,9 +6678,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[656] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "只今掃除中",
 		condition = "「銃弾と、愛を込めて1」開始",
 		story = "XIEFEIERDE1",
@@ -6689,9 +6689,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[657] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "思わぬ新兵器",
 		condition = "「銃弾と、愛を込めて2」開始",
 		story = "XIEFEIERDE2",
@@ -6700,9 +6700,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[658] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "メイドの休日",
 		condition = "「銃弾と、愛を込めて3」開始",
 		story = "XIEFEIERDE3",
@@ -6711,9 +6711,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[659] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "モチベーション？",
 		condition = "「銃弾と、愛を込めて4」開始",
 		story = "XIEFEIERDE4",
@@ -6722,9 +6722,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[660] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お掃除代行",
 		condition = "「銃弾と、愛を込めて5」開始",
 		story = "XIEFEIERDE5",
@@ -6733,9 +6733,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[661] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "メイドの気持ち・上",
 		condition = "「銃弾と、愛を込めて6」開始",
 		story = "XIEFEIERDE6",
@@ -6744,9 +6744,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[662] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "メイドの気持ち・下",
 		condition = "「銃弾と、愛を込めて7」開始",
 		story = "XIEFEIERDE7",
@@ -6755,9 +6755,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[663] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "メイドとしては……",
 		condition = "「シリアス改造計画1」開始",
 		story = "TIANLANGXING1",
@@ -6766,9 +6766,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[664] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "陛下からの最高指令",
 		condition = "「シリアス改造計画2」開始",
 		story = "TIANLANGXING2",
@@ -6777,9 +6777,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[665] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "メイド隊の支援",
 		condition = "「シリアス改造計画3」開始",
 		story = "TIANLANGXING3",
@@ -6788,9 +6788,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[666] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ビッグセブンのアドバイス",
 		condition = "「シリアス改造計画4」開始",
 		story = "TIANLANGXING4",
@@ -6799,9 +6799,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[667] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "手を取らせて",
 		condition = "「シリアス改造計画5」開始",
 		story = "TIANLANGXING5",
@@ -6810,9 +6810,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[668] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "アクシデント",
 		condition = "「シリアス改造計画6」開始",
 		story = "TIANLANGXING6",
@@ -6821,9 +6821,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[669] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "夜空を照らす青星の輝き",
 		condition = "「シリアス改造計画7」開始",
 		story = "TIANLANGXING7",
@@ -6832,9 +6832,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[670] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "陛下との朝",
 		condition = "「ナイト・オブ・ロイヤル1」開始",
 		story = "YANZHAN1",
@@ -6843,9 +6843,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[671] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "秘書艦のお仕事",
 		condition = "「ナイト・オブ・ロイヤル2」開始",
 		story = "YANZHAN2",
@@ -6854,9 +6854,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[672] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "疾風のオールドレディ",
 		condition = "「ナイト・オブ・ロイヤル3」開始",
 		story = "YANZHAN3",
@@ -6865,9 +6865,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[673] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "惹かれ合う勇者たち",
 		condition = "「ナイト・オブ・ロイヤル4」開始",
 		story = "YANZHAN4",
@@ -6876,9 +6876,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[674] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ささやかな悩み",
 		condition = "「ナイト・オブ・ロイヤル5」開始",
 		story = "YANZHAN5",
@@ -6887,9 +6887,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[675] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "陛下の気配り？",
 		condition = "「ナイト・オブ・ロイヤル6」開始",
 		story = "YANZHAN6",
@@ -6898,9 +6898,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[676] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "守るための剣",
 		condition = "「ナイト・オブ・ロイヤル7」開始",
 		story = "YANZHAN7",
@@ -6909,9 +6909,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[677] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新しい冒険の始まり！",
 		condition = "「ワイワイ旧正月！1」開始",
 		story = "DONGHUANGCHUNJIE1",
@@ -6920,9 +6920,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[678] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "旧倉庫の新発見",
 		condition = "「ワイワイ旧正月！2」開始",
 		story = "DONGHUANGCHUNJIE2",
@@ -6931,9 +6931,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[679] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "轟く新春！？",
 		condition = "「ワイワイ旧正月！3」開始",
 		story = "DONGHUANGCHUNJIE3",
@@ -6942,9 +6942,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[680] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ピース・ゲーム",
 		condition = "「ワイワイ旧正月！4」開始",
 		story = "DONGHUANGCHUNJIE4",
@@ -6953,9 +6953,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[681] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "みんな一緒に・上",
 		condition = "「ワイワイ旧正月！5」開始",
 		story = "DONGHUANGCHUNJIE5",
@@ -6964,9 +6964,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[682] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "みんな一緒に・下",
 		condition = "「ワイワイ旧正月！6」開始",
 		story = "DONGHUANGCHUNJIE6",
@@ -6975,9 +6975,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[683] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新春は騒がしく賑やかに",
 		condition = "「ワイワイ旧正月！7」開始",
 		story = "DONGHUANGCHUNJIE7",
@@ -6986,9 +6986,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[684] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "エセックス、試練の海へ",
 		condition = "「特別演習・超空強襲波」イベント開始",
 		story = "AISAIKESIBOSS1",
@@ -6997,9 +6997,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[685] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "出撃インディペンデンス",
 		condition = "「特別演習・超空強襲波」作戦進捗25%",
 		story = "AISAIKESIBOSS2",
@@ -7008,9 +7008,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[686] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幕間の傾聴者",
 		condition = "「特別演習・超空強襲波」作戦進捗50%",
 		story = "AISAIKESIBOSS3",
@@ -7019,9 +7019,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[687] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "目標、そして努力",
 		condition = "「特別演習・超空強襲波」作戦進捗75%",
 		story = "AISAIKESIBOSS4",
@@ -7030,9 +7030,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[688] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ベストメモリーズ",
 		condition = "「特別演習・超空強襲波」作戦進捗100%",
 		story = "AISAIKESIBOSS5",
@@ -7041,9 +7041,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[689] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "思い出",
 		condition = "「紀行のサフラン1」開始",
 		story = "XIANGGELILA1",
@@ -7052,9 +7052,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[690] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "仲間の悩み",
 		condition = "「紀行のサフラン2」開始",
 		story = "XIANGGELILA2",
@@ -7063,9 +7063,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[691] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "相性…バツグン？",
 		condition = "「紀行のサフラン3」開始",
 		story = "XIANGGELILA3",
@@ -7074,9 +7074,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[692] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "聞き込み？·上",
 		condition = "「紀行のサフラン4」開始",
 		story = "XIANGGELILA4",
@@ -7085,9 +7085,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[693] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "聞き込み？·下",
 		condition = "「紀行のサフラン5」開始",
 		story = "XIANGGELILA5",
@@ -7096,9 +7096,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[694] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "切り札は…",
 		condition = "「紀行のサフラン6」開始",
 		story = "XIANGGELILA6",
@@ -7107,9 +7107,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[695] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "戦いの後",
 		condition = "「紀行のサフラン7」開始",
 		story = "XIANGGELILA7",
@@ -7118,9 +7118,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[696] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鉄血の行進",
 		condition = "「輝ける峡湾の星」序開始",
 		story = "NAERWEIKE1",
@@ -7129,9 +7129,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[697] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鉄血の進撃",
 		condition = "「輝ける峡湾の星」序クリア",
 		story = "NAERWEIKE2",
@@ -7140,9 +7140,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[698] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ロイヤル・アタック！",
 		condition = "「輝ける峡湾の星」SP1開始",
 		story = "NAERWEIKE3",
@@ -7151,9 +7151,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[699] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "奇襲開始",
 		condition = "「輝ける峡湾の星」SP1ボスに遭遇",
 		story = "NAERWEIKE4",
@@ -7162,9 +7162,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[700] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "接敵、そして",
 		condition = "「輝ける峡湾の星」SP1撃破",
 		story = "NAERWEIKE5",
@@ -7173,9 +7173,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[701] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ハーディとハンター",
 		condition = "「輝ける峡湾の星」SP2開始",
 		story = "NAERWEIKE6",
@@ -7184,9 +7184,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[702] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "不凍港強襲",
 		condition = "「輝ける峡湾の星」SP2ボスに遭遇",
 		story = "NAERWEIKE7",
@@ -7195,9 +7195,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[703] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "目標変更",
 		condition = "「輝ける峡湾の星」SP2撃破",
 		story = "NAERWEIKE8",
@@ -7206,9 +7206,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[704] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "撤退戦",
 		condition = "「輝ける峡湾の星」SP3開始",
 		story = "NAERWEIKE9",
@@ -7217,9 +7217,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[705] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "追われるもの",
 		condition = "「輝ける峡湾の星」SP3ボスに遭遇",
 		story = "NAERWEIKE10",
@@ -7228,9 +7228,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[706] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "輝ける峡湾の星・上",
 		condition = "「輝ける峡湾の星」SP3撃破",
 		story = "NAERWEIKE11",
@@ -7239,9 +7239,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[707] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "輝ける峡湾の星・下",
 		condition = "「輝ける峡湾の星」SP3クリア",
 		story = "NAERWEIKE12",
@@ -7250,9 +7250,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[715] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "明石の説明だにゃIII",
 		condition = "特別計画艦2期を確認 ",
 		story = "FANGAN3",
@@ -7261,9 +7261,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[716] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新しい旅-ネプチューン",
 		condition = "特別計画艦強化レベル30達成",
 		story = "LUCK29901",
@@ -7272,9 +7272,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[717] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新しい旅-モナーク",
 		condition = "特別計画艦強化レベル30達成",
 		story = "LUCK29902",
@@ -7283,9 +7283,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[718] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新しい旅-伊吹",
 		condition = "特別計画艦強化レベル30達成",
 		story = "LUCK39901",
@@ -7294,9 +7294,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[719] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新しい旅-出雲",
 		condition = "特別計画艦強化レベル30達成",
 		story = "LUCK39902",
@@ -7305,9 +7305,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[720] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新しい旅-ローン",
 		condition = "特別計画艦強化レベル30達成",
 		story = "LUCK49901",
@@ -7316,9 +7316,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[721] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新しい旅-サン・ルイ",
 		condition = "特別計画艦強化レベル30達成",
 		story = "LUCK89901",
@@ -7326,10 +7326,54 @@ pg.memory_template = {
 		icon = "memory_jhluyijiushi",
 		is_open = 0
 	},
-	[728] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
+	[722] = {
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "新しい旅-北風",
+		condition = "特別計画艦強化レベル30達成",
+		story = "LUCK39903",
+		id = 722,
+		icon = "memory_jhbeifeng",
+		is_open = 0
+	},
+	[725] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "新しい旅-ガスコーニュ",
+		condition = "特別計画艦強化レベル30達成",
+		story = "LUCK99901",
+		id = 725,
+		icon = "memory_jhjiasikenie",
+		is_open = 0
+	},
+	[726] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "新しい旅-ジョージア",
+		condition = "特別計画艦強化レベル30達成",
+		story = "LUCK19902",
+		id = 726,
+		icon = "memory_jhzuozhiya",
+		is_open = 0
+	},
+	[727] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "新しい旅-シアトル",
+		condition = "特別計画艦強化レベル30達成",
+		story = "LUCK19901",
+		id = 727,
+		icon = "memory_jhxiyatu",
+		is_open = 0
+	},
+	[728] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "ポンコツという名の天才AI",
 		condition = "「仮想繋げし共時性 -日常編1」DAY1解放",
 		story = "AIRICHANG1",
@@ -7338,9 +7382,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[729] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "人工知能は電脳海豚の夢を見るか？",
 		condition = "「仮想繋げし共時性 -日常編1」DAY2解放",
 		story = "AIRICHANG2",
@@ -7349,9 +7393,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[730] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "ハロー、サンディエゴだよっ♪",
 		condition = "「仮想繋げし共時性 -日常編1」DAY3解放",
 		story = "AIRICHANG3",
@@ -7360,9 +7404,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[731] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "世知辛かったらスナック愛へ！",
 		condition = "「仮想繋げし共時性 -日常編1」DAY4解放",
 		story = "AIRICHANG4",
@@ -7371,9 +7415,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[732] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "おはよう、こんにちは、おやすみ",
 		condition = "「仮想繋げし共時性 -日常編1」DAY5解放",
 		story = "AIRICHANG5",
@@ -7382,9 +7426,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[733] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "裁判長キズナアイ",
 		condition = "「仮想繋げし共時性 -日常編1」DAY6解放",
 		story = "AIRICHANG6",
@@ -7393,9 +7437,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[734] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "みんなとの繋がり、キズナを求めて",
 		condition = "「仮想繋げし共時性 -日常編1」DAY7解放",
 		story = "AIRICHANG7",
@@ -7404,9 +7448,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[735] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "ランダムワード生成器",
 		condition = "「スッキリ！バーチャル空間」NO.01クリア",
 		story = "AIJINGHUA1",
@@ -7415,9 +7459,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[736] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "バカと天才は紙一重",
 		condition = "「スッキリ！バーチャル空間」NO.02クリア",
 		story = "AIJINGHUA2",
@@ -7426,9 +7470,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[737] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "危機発生！？",
 		condition = "「スッキリ！バーチャル空間」NO.03クリア",
 		story = "AIJINGHUA3",
@@ -7437,9 +7481,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[738] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "いつか会えるその日まで",
 		condition = "「スッキリ！バーチャル空間」NO.04クリア",
 		story = "AIJINGHUA4",
@@ -7448,9 +7492,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[739] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "仮想空間の来訪者",
 		condition = "イベント期間中ログイン",
 		story = "AIGUANQIA1",
@@ -7459,9 +7503,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[740] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "偶然の再会？",
 		condition = "「仮想繋げし共時性」開始",
 		story = "AIGUANQIA2",
@@ -7470,9 +7514,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[741] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "いざ、バーチャル鏡面海域へ",
 		condition = "「仮想繋げし共時性」SP1開始",
 		story = "AIGUANQIA3",
@@ -7481,9 +7525,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[742] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "データ紛失？",
 		condition = "「仮想繋げし共時性」SP1ボスに遭遇",
 		story = "AIGUANQIA4",
@@ -7492,9 +7536,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[743] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "Hacking to the battle",
 		condition = "「仮想繋げし共時性」SP1ボス撃破",
 		story = "AIGUANQIA5",
@@ -7503,9 +7547,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[744] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "データ奪還",
 		condition = "「仮想繋げし共時性」SP1クリア",
 		story = "AIGUANQIA6",
@@ -7514,9 +7558,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[745] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "レッツライブ！",
 		condition = "「仮想繋げし共時性」SP2開始",
 		story = "AIGUANQIA7",
@@ -7525,9 +7569,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[746] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "捕らわれのキズナアイ",
 		condition = "「仮想繋げし共時性」SP2キズナアイ救出",
 		story = "AIGUANQIA8",
@@ -7536,9 +7580,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[747] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "発見！ニセキズナアイ",
 		condition = "「仮想繋げし共時性」SP2ボスに遭遇",
 		story = "AIGUANQIA9",
@@ -7547,9 +7591,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[748] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "いつか本物のライブを",
 		condition = "「仮想繋げし共時性」SP2クリア",
 		story = "AIGUANQIA10",
@@ -7558,9 +7602,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[749] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "紐無しバンジージャンプ！",
 		condition = "「仮想繋げし共時性」SP3開始",
 		story = "AIGUANQIA11",
@@ -7569,9 +7613,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[750] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "爆薬の取り扱いは慎重に！",
 		condition = "SP3障害物破壊",
 		story = "AIGUANQIA12",
@@ -7580,9 +7624,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[751] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "棚から牡丹餅",
 		condition = "SP3補給物資入手",
 		story = "AIGUANQIA13",
@@ -7591,9 +7635,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[752] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "前方注意！",
 		condition = "「仮想繋げし共時性」SP3ボスに遭遇",
 		story = "AIGUANQIA14",
@@ -7602,9 +7646,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[753] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "どーん！勝利！",
 		condition = "「仮想繋げし共時性」SP3クリア",
 		story = "AIGUANQIA15",
@@ -7613,9 +7657,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[754] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "ウィルス感染！？",
 		condition = "「仮想繋げし共時性」SP4開始",
 		story = "AIGUANQIA16",
@@ -7624,9 +7668,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[755] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "キズナアイ艦隊",
 		condition = "SP4キズナアイ艦隊出現",
 		story = "AIGUANQIA17",
@@ -7635,9 +7679,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[756] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "想いを受け継いで",
 		condition = "SP4キズナアイ艦隊全撃破",
 		story = "AIGUANQIA18",
@@ -7646,9 +7690,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[757] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "電力遮断",
 		condition = "SP4電力供給装置全てOFF",
 		story = "AIGUANQIA19",
@@ -7657,9 +7701,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[758] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "絶体絶命！？",
 		condition = "「仮想繋げし共時性」SP4ボスに遭遇",
 		story = "AIGUANQIA20",
@@ -7668,9 +7712,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[759] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "崩壊",
 		condition = "「仮想繋げし共時性」SP4クリア",
 		story = "AIGUANQIA21",
@@ -7679,9 +7723,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[760] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "仮想空間からの帰還",
 		condition = "「仮想繋げし共時性」クリア",
 		story = "AIGUANQIA22",
@@ -7690,9 +7734,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[761] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "ごじつだん",
 		condition = "？？？",
 		story = "AIGUANQIA23",
@@ -7701,9 +7745,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[762] = {
-		mask = "bg/bg_story_ailevel",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_ailevel",
 		title = "黒幕は…？",
 		condition = "？？？",
 		story = "AIGUANQIA24",
@@ -7712,9 +7756,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[763] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ここはどこ？",
 		condition = "「母港脱出作戦！」DAY1解放",
 		story = "GANGQUTAOLI1",
@@ -7723,9 +7767,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[764] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "諜報戦！",
 		condition = "「母港脱出作戦！」DAY2解放",
 		story = "GANGQUTAOLI2",
@@ -7734,9 +7778,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[765] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "天の助け！",
 		condition = "「母港脱出作戦！」DAY3解放",
 		story = "GANGQUTAOLI3",
@@ -7745,9 +7789,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[766] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ついに終点！",
 		condition = "「母港脱出作戦！」DAY4解放",
 		story = "GANGQUTAOLI4",
@@ -7756,9 +7800,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[767] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "作戦失敗…？",
 		condition = "「母港脱出作戦！」DAY5解放",
 		story = "GANGQUTAOLI5",
@@ -7767,9 +7811,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[768] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "彼女の願い",
 		condition = "「小さな出来事1」開始",
 		story = "SIPEIBOJUE1",
@@ -7778,9 +7822,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[769] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "偶然の出逢い",
 		condition = "「小さな出来事2」開始",
 		story = "SIPEIBOJUE2",
@@ -7789,9 +7833,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[770] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "戦友たち",
 		condition = "「小さな出来事3」開始",
 		story = "SIPEIBOJUE3",
@@ -7800,9 +7844,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[771] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "仲間、そして……",
 		condition = "「小さな出来事4」開始",
 		story = "SIPEIBOJUE4",
@@ -7811,9 +7855,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[772] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "孤独感",
 		condition = "「小さな出来事5」開始",
 		story = "SIPEIBOJUE5",
@@ -7822,9 +7866,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[773] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "重量",
 		condition = "「小さな出来事6」開始",
 		story = "SIPEIBOJUE6",
@@ -7833,9 +7877,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[774] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "暖かさ",
 		condition = "「小さな出来事7」開始",
 		story = "SIPEIBOJUE7",
@@ -7844,9 +7888,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[775] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "とある出撃にて",
 		condition = "「小さな約束」作戦開始",
 		story = "BSMXU1",
@@ -7855,9 +7899,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[776] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "初戦果",
 		condition = "「小さな約束」作戦進捗順調",
 		story = "BSMXU2",
@@ -7866,9 +7910,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[777] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "闇雲",
 		condition = "「小さな約束」作戦終了",
 		story = "BSMXU3",
@@ -7877,9 +7921,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[778] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "意外な救世主",
 		condition = "「もうひとりのカリスマ？1」開始",
 		story = "QIAOZHIWUSHI1",
@@ -7888,9 +7932,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[779] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "愛すべき個性とは…？",
 		condition = "「もうひとりのカリスマ？2」開始",
 		story = "QIAOZHIWUSHI2",
@@ -7899,9 +7943,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[780] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "女王陛下と",
 		condition = "「もうひとりのカリスマ？3」開始",
 		story = "QIAOZHIWUSHI3",
@@ -7910,9 +7954,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[781] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "騎士長の指揮",
 		condition = "「もうひとりのカリスマ？4」開始",
 		story = "QIAOZHIWUSHI4",
@@ -7921,9 +7965,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[782] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "カリスマ談義",
 		condition = "「もうひとりのカリスマ？5」開始",
 		story = "QIAOZHIWUSHI5",
@@ -7932,9 +7976,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[783] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "今日の晩ごはん！",
 		condition = "「もうひとりのカリスマ？6」開始",
 		story = "QIAOZHIWUSHI6",
@@ -7943,9 +7987,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[784] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "かけた願いは",
 		condition = "「もうひとりのカリスマ？7」開始",
 		story = "QIAOZHIWUSHI7",
@@ -7954,9 +7998,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[785] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "指揮官、おはよう！",
 		condition = "「誓ってナイト！1」開始",
 		story = "U556STORY1",
@@ -7965,9 +8009,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[786] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "指揮官は忙しい？",
 		condition = "「誓ってナイト！2」開始",
 		story = "U556STORY2",
@@ -7976,9 +8020,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[787] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "指揮官、見つけた！",
 		condition = "「誓ってナイト！3」開始",
 		story = "U556STORY3",
@@ -7987,9 +8031,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[788] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "約束したよ！",
 		condition = "「誓ってナイト！4」開始",
 		story = "U556STORY4",
@@ -7998,9 +8042,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[789] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ハッとなった？",
 		condition = "「誓ってナイト！5」開始",
 		story = "U556STORY5",
@@ -8009,9 +8053,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[790] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "誇るべき誓い",
 		condition = "「誓ってナイト！6」開始",
 		story = "U556STORY6",
@@ -8020,9 +8064,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[791] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "約束だよ！",
 		condition = "「誓ってナイト！7」開始",
 		story = "U556STORY7",
@@ -8031,64 +8075,64 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[792] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ある日の午後",
-		condition = "「理科実験タイム！1」開始",
+		condition = "「理科実験タイム！」DAY1解放",
 		story = "U73HUOYUE1",
 		id = 792,
 		icon = "memory_u73huoyue",
 		is_open = 0
 	},
 	[793] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "偉大なる実験",
-		condition = "「理科実験タイム！2」開始",
+		condition = "「理科実験タイム！」DAY3解放",
 		story = "U73HUOYUE2",
 		id = 793,
 		icon = "memory_u73huoyue",
 		is_open = 0
 	},
 	[794] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "夢はひろがりんぐ！",
-		condition = "「理科実験タイム！3」開始",
+		condition = "「理科実験タイム！」DAY5解放",
 		story = "U73HUOYUE3",
 		id = 794,
 		icon = "memory_u73huoyue",
 		is_open = 0
 	},
 	[795] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "本当の実験？",
-		condition = "「理科実験タイム！4」開始",
+		condition = "「理科実験タイム！」DAY7解放",
 		story = "U73HUOYUE4",
 		id = 795,
 		icon = "memory_u73huoyue",
 		is_open = 0
 	},
 	[796] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "科学は終わらない",
-		condition = "「理科実験タイム！5」開始",
+		condition = "「理科実験タイム！」DAY9解放",
 		story = "U73HUOYUE5",
 		id = 796,
 		icon = "memory_u73huoyue",
 		is_open = 0
 	},
 	[797] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "かく語りき",
 		condition = "「黒鉄の楽章、誓いの海·上」開始",
 		story = "TIEXUEYUYINFU1",
@@ -8097,9 +8141,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[798] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "序章から",
 		condition = "A1/C1開始",
 		story = "TIEXUEYUYINFU2",
@@ -8108,9 +8152,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[799] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "尾行",
 		condition = "A1/C1 敵中枢艦隊出現時",
 		story = "TIEXUEYUYINFU3",
@@ -8119,9 +8163,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[800] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "時を追いかけて",
 		condition = "A1/C1クリア",
 		story = "TIEXUEYUYINFU4",
@@ -8130,9 +8174,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[801] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "対話",
 		condition = "A2/C2開始",
 		story = "TIEXUEYUYINFU5",
@@ -8141,9 +8185,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[802] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "底力",
 		condition = "A2/C2ボスに遭遇",
 		story = "TIEXUEYUYINFU6",
@@ -8152,9 +8196,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[803] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "戦局",
 		condition = "A2/C2ボス撃破",
 		story = "TIEXUEYUYINFU7",
@@ -8163,9 +8207,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[804] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "小さな友人",
 		condition = "A3/C3開始",
 		story = "TIEXUEYUYINFU8",
@@ -8174,9 +8218,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[805] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "決意",
 		condition = "A3/C3ボス撃破",
 		story = "TIEXUEYUYINFU9",
@@ -8185,9 +8229,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[806] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "語り手、変われり",
 		condition = "「黒鉄の楽章、誓いの海·下」開始",
 		story = "TIEXUEYUYINFU10",
@@ -8196,9 +8240,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[807] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "白熱",
 		condition = "B1/D1開始",
 		story = "TIEXUEYUYINFU11",
@@ -8207,9 +8251,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[808] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "援軍",
 		condition = "B1/D1 敵中枢艦隊出現時",
 		story = "TIEXUEYUYINFU12",
@@ -8218,9 +8262,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[809] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "来襲",
 		condition = "B1/D1クリア",
 		story = "TIEXUEYUYINFU13",
@@ -8229,9 +8273,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[810] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "均衡",
 		condition = "B2/D2開始",
 		story = "TIEXUEYUYINFU14",
@@ -8240,9 +8284,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[811] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "覚醒",
 		condition = "B2/D2クリア",
 		story = "TIEXUEYUYINFU15",
@@ -8251,9 +8295,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[812] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "忌むべき力",
 		condition = "B3/D3開始",
 		story = "TIEXUEYUYINFU16",
@@ -8262,9 +8306,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[813] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "決戦",
 		condition = "B3/D3ボスに遭遇",
 		story = "TIEXUEYUYINFU17",
@@ -8273,9 +8317,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[814] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "終局",
 		condition = "B3/D3ボス撃破",
 		story = "TIEXUEYUYINFU18",
@@ -8284,9 +8328,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[815] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "果たされた約束",
 		condition = "B3/D3クリア",
 		story = "TIEXUEYUYINFU19",
@@ -8295,9 +8339,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[816] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "いつの日か",
 		condition = "？？？",
 		story = "TIEXUEYUYINFU20",
@@ -8306,9 +8350,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[817] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鏡面海域",
 		condition = "？？？",
 		story = "TIEXUEYUYINFU21",
@@ -8317,9 +8361,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[818] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "パーティーへの招待",
 		condition = "「平和に祈りを」DAY1解放",
 		story = "XIMULIFU1",
@@ -8328,9 +8372,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[819] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "出逢いを祝おう",
 		condition = "「平和に祈りを」DAY2解放",
 		story = "XIMULIFU2",
@@ -8339,9 +8383,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[820] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "君と踊りを",
 		condition = "「平和に祈りを」DAY3解放",
 		story = "XIMULIFU3",
@@ -8350,9 +8394,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[821] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "未知の記念日",
 		condition = "「平和に祈りを」DAY4解放",
 		story = "XIMULIFU4",
@@ -8361,9 +8405,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[822] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "パーティーの楽しみ方",
 		condition = "「平和に祈りを」DAY5解放",
 		story = "XIMULIFU5",
@@ -8372,9 +8416,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[823] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "休息",
 		condition = "「平和に祈りを」DAY6解放",
 		story = "XIMULIFU6",
@@ -8383,9 +8427,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[824] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "花火を打ち上げて",
 		condition = "「平和に祈りを」DAY7解放",
 		story = "XIMULIFU7",
@@ -8394,64 +8438,64 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[825] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ジャベリン、おはよう！",
-		condition = "「月刊マンガJavelin」DAY1解放",
+		condition = "「月刊マンガJavelin」\nDAY1解放",
 		story = "BIAOQIANGMANHUA1",
 		id = 825,
 		icon = "memory_biaoqiangmanhua",
 		is_open = 0
 	},
 	[826] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "引き出しの謎",
-		condition = "「月刊マンガJavelin」DAY3解放",
+		condition = "「月刊マンガJavelin」\nDAY3解放",
 		story = "BIAOQIANGMANHUA2",
 		id = 826,
 		icon = "memory_biaoqiangmanhua",
 		is_open = 0
 	},
 	[827] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "……怪文書？",
-		condition = "「月刊マンガJavelin」DAY5解放",
+		condition = "「月刊マンガJavelin」\nDAY5解放",
 		story = "BIAOQIANGMANHUA3",
 		id = 827,
 		icon = "memory_biaoqiangmanhua",
 		is_open = 0
 	},
 	[828] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ジャベリン、最後の戦いへ",
-		condition = "「月刊マンガJavelin」DAY7解放",
+		condition = "「月刊マンガJavelin」\nDAY7解放",
 		story = "BIAOQIANGMANHUA4",
 		id = 828,
 		icon = "memory_biaoqiangmanhua",
 		is_open = 0
 	},
 	[829] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "なにこれ！",
-		condition = "「月刊マンガJavelin」DAY9解放",
+		condition = "「月刊マンガJavelin」\nDAY9解放",
 		story = "BIAOQIANGMANHUA5",
 		id = 829,
 		icon = "memory_biaoqiangmanhua",
 		is_open = 0
 	},
 	[830] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "出航",
 		condition = "「迫りくる嵐」作戦開始",
 		story = "FENGBAOQIANXI0",
@@ -8460,9 +8504,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[831] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 2,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "演習 ",
 		condition = "「迫りくる嵐」P1開始",
 		story = "1242017",
@@ -8471,9 +8515,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[832] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "護衛",
 		condition = "「迫りくる嵐」P2開始",
 		story = "FENGBAOQIANXI2",
@@ -8482,9 +8526,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[833] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "任務",
 		condition = "「迫りくる嵐」P3開始",
 		story = "FENGBAOQIANXI3",
@@ -8493,9 +8537,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[834] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "前進",
 		condition = "「迫りくる嵐」P4開始",
 		story = "FENGBAOQIANXI4",
@@ -8504,9 +8548,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[835] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "合流",
 		condition = "「迫りくる嵐」P4クリア",
 		story = "FENGBAOQIANXI5",
@@ -8515,9 +8559,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[836] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "掃討戦",
 		condition = "「迫りくる嵐」P5クリア",
 		story = "FENGBAOQIANXI6",
@@ -8526,9 +8570,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[837] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "かく乱",
 		condition = "「迫りくる嵐」P6開始",
 		story = "FENGBAOQIANXI7",
@@ -8537,9 +8581,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[838] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "離脱",
 		condition = "「迫りくる嵐」P7開始",
 		story = "FENGBAOQIANXI8",
@@ -8548,9 +8592,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[839] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "連絡",
 		condition = "「迫りくる嵐」P7クリア",
 		story = "FENGBAOQIANXI9",
@@ -8559,9 +8603,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[840] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "対決…？",
 		condition = "「隅っこのヒマワリ」DAY1解放",
 		story = "I56XIAOFU1",
@@ -8570,9 +8614,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[841] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "なぞの誤解？",
 		condition = "「隅っこのヒマワリ」DAY3解放",
 		story = "I56XIAOFU2",
@@ -8581,9 +8625,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[842] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新しい仲間?",
 		condition = "「隅っこのヒマワリ」DAY5解放",
 		story = "I56XIAOFU3",
@@ -8592,9 +8636,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[843] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "lasst uns gehen！",
 		condition = "「隅っこのヒマワリ」DAY7解放",
 		story = "I56XIAOFU4",
@@ -8603,9 +8647,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[844] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お疲れ様！",
 		condition = "「コドモじゃないもん！1」開始",
 		story = "JIQI1",
@@ -8614,9 +8658,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[845] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ジャスティス！",
 		condition = "「コドモじゃないもん！2」開始",
 		story = "JIQI2",
@@ -8625,9 +8669,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[846] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "アタック！",
 		condition = "「コドモじゃないもん！3」開始",
 		story = "JIQI3",
@@ -8636,9 +8680,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[847] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "意外",
 		condition = "「コドモじゃないもん！4」開始",
 		story = "JIQI4",
@@ -8647,9 +8691,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[848] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ものがたり？",
 		condition = "「コドモじゃないもん！5」開始",
 		story = "JIQI5",
@@ -8658,9 +8702,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[849] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "オトナ！",
 		condition = "「コドモじゃないもん！6」開始",
 		story = "JIQI6",
@@ -8669,9 +8713,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[850] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "デート！",
 		condition = "「コドモじゃないもん！7」開始",
 		story = "JIQI7",
@@ -8680,9 +8724,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[851] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "到着・NPシティ",
 		condition = "「開かれし紺碧の砂箱·上」開始",
 		story = "XIANGTINGLIAOFA1",
@@ -8691,9 +8735,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[852] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "反撃命令・NPシティ",
 		condition = "A1/C1開始",
 		story = "XIANGTINGLIAOFA2",
@@ -8702,9 +8746,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[853] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "ホーネット救援・NPシティ",
 		condition = "A1/C1 敵中枢艦隊出現時",
 		story = "XIANGTINGLIAOFA3",
@@ -8713,9 +8757,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[854] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "交戦・NPシティ",
 		condition = "A1/C1ボスに遭遇",
 		story = "XIANGTINGLIAOFA4",
@@ -8724,9 +8768,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[855] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "救援信号・NPシティ",
 		condition = "A1/C1クリア",
 		story = "XIANGTINGLIAOFA5",
@@ -8735,9 +8779,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[856] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "幕間（上）・NYシティ",
 		condition = "AS1/CS1開始",
 		story = "XIANGTINGLIAOFA6",
@@ -8746,9 +8790,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[857] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "幕間（下）・NYシティ",
 		condition = "AS1/CS1クリア",
 		story = "XIANGTINGLIAOFA7",
@@ -8757,9 +8801,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[858] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "戦況・NYシティ",
 		condition = "A2/C2開始",
 		story = "XIANGTINGLIAOFA8",
@@ -8768,9 +8812,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[859] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "合流・NYシティ",
 		condition = "A2/C2 敵中枢艦隊出現時",
 		story = "XIANGTINGLIAOFA9",
@@ -8779,9 +8823,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[860] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "強敵・NYシティ",
 		condition = "A2/C2ボスに遭遇",
 		story = "XIANGTINGLIAOFA10",
@@ -8790,9 +8834,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[861] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "強敵・NYシティ",
 		condition = "A2/C2クリア",
 		story = "XIANGTINGLIAOFA11",
@@ -8801,9 +8845,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[862] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "陣地・NYシティ",
 		condition = "AS2/CS2開始",
 		story = "XIANGTINGLIAOFA12",
@@ -8812,9 +8856,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[863] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "急襲・NYシティ",
 		condition = "AS2/CS2クリア",
 		story = "XIANGTINGLIAOFA13",
@@ -8823,9 +8867,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[864] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "実験・NYシティ",
 		condition = "A3/C3開始",
 		story = "XIANGTINGLIAOFA14",
@@ -8834,9 +8878,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[865] = {
-		mask = "bg/bg_xiangting_1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_1",
 		title = "戦果、そして・NYシティ",
 		condition = "A3/C3クリア",
 		story = "XIANGTINGLIAOFA15",
@@ -8845,9 +8889,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[866] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "作戦動員・NYシティ",
 		condition = "「開かれし紺碧の砂箱·下」開始",
 		story = "XIANGTINGLIAOFA16",
@@ -8856,9 +8900,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[867] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "前哨戦・BM作戦海域",
 		condition = "B1/D1開始",
 		story = "XIANGTINGLIAOFA17",
@@ -8867,9 +8911,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[868] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "作戦進捗・BM作戦海域",
 		condition = "B1/D1ボスに遭遇",
 		story = "XIANGTINGLIAOFA18",
@@ -8878,9 +8922,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[869] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "謎の音・BM作戦海域",
 		condition = "B1/D1クリア",
 		story = "XIANGTINGLIAOFA19",
@@ -8889,9 +8933,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[870] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "エセックス隊（上）・BM作戦海域",
 		condition = "BS1/DS1開始",
 		story = "XIANGTINGLIAOFA20",
@@ -8900,9 +8944,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[871] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "エセックス隊（下）・BM作戦海域",
 		condition = "BS1/DS1クリア",
 		story = "XIANGTINGLIAOFA21",
@@ -8911,9 +8955,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[872] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "中心へ・BM作戦海域",
 		condition = "B2/D2開始",
 		story = "XIANGTINGLIAOFA22",
@@ -8922,9 +8966,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[873] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "虚像・BM作戦海域",
 		condition = "B2/D2ボスに遭遇",
 		story = "XIANGTINGLIAOFA23",
@@ -8933,9 +8977,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[874] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "フラッシュバック・BM作戦海域",
 		condition = "B2/D2クリア",
 		story = "XIANGTINGLIAOFA24",
@@ -8944,9 +8988,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[875] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "ボルチモア（上）・BM作戦海域",
 		condition = "BS2/DS2開始",
 		story = "XIANGTINGLIAOFA25",
@@ -8955,9 +8999,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[876] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "ボルチモア（下）・BM作戦海域",
 		condition = "BS2/DS2クリア",
 		story = "XIANGTINGLIAOFA26",
@@ -8966,9 +9010,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[877] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "嵐の中へ・BM作戦海域",
 		condition = "B3/D3開始",
 		story = "XIANGTINGLIAOFA27",
@@ -8977,9 +9021,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[878] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "遭遇・バミューダ中心",
 		condition = "B3/D3 敵中枢艦隊出現時",
 		story = "XIANGTINGLIAOFA28",
@@ -8988,9 +9032,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[879] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "灰より出でしもの・バミューダ中心",
 		condition = "B3/D3ボスに遭遇",
 		story = "XIANGTINGLIAOFA29",
@@ -8999,9 +9043,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[880] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "決戦・バミューダ中心",
 		condition = "B3/D3クリア",
 		story = "XIANGTINGLIAOFA30",
@@ -9010,9 +9054,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[881] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "帰還・NYシティ周辺海域",
 		condition = "？？？",
 		story = "XIANGTINGLIAOFA31",
@@ -9021,9 +9065,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[882] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "決戦・バミューダ海域",
 		condition = "？？？",
 		story = "XIANGTINGLIAOFA32",
@@ -9032,9 +9076,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[883] = {
-		mask = "bg/bg_xiangting_3",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xiangting_3",
 		title = "燃ゆる灰・記憶",
 		condition = "？？？",
 		story = "XIANGTINGLIAOFA33",
@@ -9043,9 +9087,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[884] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "青き海のアイドル！",
 		condition = "「青い海のアイドル」開始",
 		story = "SALATUOJIAHAIBAO1",
@@ -9054,9 +9098,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[885] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "チャリティーレース？！",
 		condition = "アザラシちゃん出現情報1000収集",
 		story = "SALATUOJIAHAIBAO2",
@@ -9065,9 +9109,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[886] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "アザラシちゃんを守るもの",
 		condition = "アザラシちゃん出現情報2000収集",
 		story = "SALATUOJIAHAIBAO3",
@@ -9076,9 +9120,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[887] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "アザラシちゃん発見！",
 		condition = "アザラシちゃん出現情報3000収集",
 		story = "SALATUOJIAHAIBAO4",
@@ -9087,9 +9131,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[888] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "伝説のアザラシちゃん",
 		condition = "アザラシちゃん出現情報4000収集",
 		story = "SALATUOJIAHAIBAO5",
@@ -9098,9 +9142,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[889] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "今年はお祭り！",
 		condition = "「母港夏祭り」開始",
 		story = "TIANHOUYUYI1",
@@ -9109,9 +9153,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[890] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Enjoy夏祭り！",
 		condition = "ジュノーの浴衣を入手",
 		story = "TIANHOUYUYI2",
@@ -9120,9 +9164,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[891] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "碧き海",
 		condition = "人気投票2019「殿堂入り」ページ",
 		story = "RENQIQIYE",
@@ -9131,9 +9175,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[892] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "完璧なる従者",
 		condition = "人気投票2019「殿堂入り」ページ",
 		story = "RENQIBEIERFASITE",
@@ -9142,9 +9186,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[894] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "綾波、お家デートです",
 		condition = "人気投票2019「殿堂入り」ページ",
 		story = "RENQILINGBO",
@@ -9153,9 +9197,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[900] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "早朝の挨拶",
 		condition = "「ローザ・ストーリア1」開始",
 		story = "ZHALA1",
@@ -9164,9 +9208,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[901] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "世話焼きのお姉さん？",
 		condition = "「ローザ・ストーリア2」開始",
 		story = "ZHALA2",
@@ -9175,9 +9219,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[902] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "世話焼かれる指揮官",
 		condition = "「ローザ・ストーリア3」開始",
 		story = "ZHALA3",
@@ -9186,9 +9230,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[903] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "雑談",
 		condition = "「ローザ・ストーリア4」開始",
 		story = "ZHALA4",
@@ -9197,9 +9241,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[904] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "悪魔？の囁き",
 		condition = "「ローザ・ストーリア5」開始",
 		story = "ZHALA5",
@@ -9208,9 +9252,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[905] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "受難日？",
 		condition = "「ローザ・ストーリア6」開始",
 		story = "ZHALA6",
@@ -9219,9 +9263,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[906] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "夜のデート",
 		condition = "「ローザ・ストーリア7」開始",
 		story = "ZHALA7",
@@ -9230,9 +9274,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[907] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "焔海の扉",
 		condition = "「悲歎せし焔海の詩·上」開始",
 		story = "SHENSHENGDEBEIXIJU1",
@@ -9241,9 +9285,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[908] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "脅威",
 		condition = "A1/C1開始",
 		story = "SHENSHENGDEBEIXIJU2",
@@ -9252,9 +9296,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[909] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "小休止",
 		condition = "A1/C1クリア",
 		story = "SHENSHENGDEBEIXIJU3",
@@ -9263,9 +9307,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[910] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "疑念",
 		condition = "AS1/CS1開始",
 		story = "SHENSHENGDEBEIXIJU4",
@@ -9274,9 +9318,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[911] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "交渉",
 		condition = "AS1/CS1クリア",
 		story = "SHENSHENGDEBEIXIJU5",
@@ -9285,9 +9329,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[912] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "戦闘",
 		condition = "A2/C2開始",
 		story = "SHENSHENGDEBEIXIJU6",
@@ -9296,9 +9340,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[913] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "魔砲の重巡洋艦",
 		condition = "A2/C2ボスに遭遇",
 		story = "SHENSHENGDEBEIXIJU7",
@@ -9307,9 +9351,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[914] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "セカンドオペレーション",
 		condition = "AS2/CS2開始",
 		story = "SHENSHENGDEBEIXIJU8",
@@ -9318,9 +9362,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[915] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "作戦準備",
 		condition = "AS2/CS2クリア",
 		story = "SHENSHENGDEBEIXIJU9",
@@ -9329,9 +9373,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[916] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "悲嘆の焔海",
 		condition = "A3/C3開始",
 		story = "SHENSHENGDEBEIXIJU10",
@@ -9340,9 +9384,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[917] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "悲しき光",
 		condition = "A3/C3ボスに遭遇",
 		story = "SHENSHENGDEBEIXIJU11",
@@ -9351,9 +9395,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[918] = {
-		mask = "bg/bg_italy_cg1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg1",
 		title = "時既に遅し",
 		condition = "A3/C3クリア",
 		story = "SHENSHENGDEBEIXIJU12",
@@ -9362,9 +9406,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[919] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "地中海への招待",
 		condition = "「悲歎せし焔海の詩·下」開始",
 		story = "SHENSHENGDEBEIXIJU13",
@@ -9373,9 +9417,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[920] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "選択肢",
 		condition = "B1/D1開始",
 		story = "SHENSHENGDEBEIXIJU14",
@@ -9384,9 +9428,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[921] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "帝国の歓迎",
 		condition = "B1/D1 BOSSボスに遭遇",
 		story = "SHENSHENGDEBEIXIJU15",
@@ -9395,9 +9439,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[922] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "旅の目的地",
 		condition = "B1/D1ボス撃破",
 		story = "SHENSHENGDEBEIXIJU16",
@@ -9406,9 +9450,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[923] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "更に奥へと",
 		condition = "B2/D2開始",
 		story = "SHENSHENGDEBEIXIJU17",
@@ -9417,9 +9461,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[924] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "情熱燃ゆる海",
 		condition = "B2/D2ボス撃破",
 		story = "SHENSHENGDEBEIXIJU18",
@@ -9428,9 +9472,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[925] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "嘆きの詩の終わり",
 		condition = "B3/D3開始",
 		story = "SHENSHENGDEBEIXIJU19",
@@ -9439,9 +9483,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[926] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "サディアの宝石",
 		condition = "B3/D3ボスに遭遇",
 		story = "SHENSHENGDEBEIXIJU20",
@@ -9450,9 +9494,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[927] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "旅の後",
 		condition = "B3/D3ボス撃破",
 		story = "SHENSHENGDEBEIXIJU21",
@@ -9461,9 +9505,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[928] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "鉄血",
 		condition = "B3/D3クリア",
 		story = "SHENSHENGDEBEIXIJU22",
@@ -9472,9 +9516,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[929] = {
-		mask = "bg/bg_italy_cg6",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italy_cg6",
 		title = "結末",
 		condition = "？？？",
 		story = "SHENSHENGDEBEIXIJU23",
@@ -9483,9 +9527,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[930] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "レディ、スタート！",
 		condition = "「微酔の夜宴」DAY1解放",
 		story = "DACHAOLIFU1",
@@ -9494,9 +9538,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[931] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Prost!",
 		condition = "「微酔の夜宴」DAY3解放",
 		story = "DACHAOLIFU2",
@@ -9505,9 +9549,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[932] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "それぞれの楽しみ方",
 		condition = "「微酔の夜宴」DAY5解放",
 		story = "DACHAOLIFU3",
@@ -9516,9 +9560,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[933] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "エンディングは定番の？",
 		condition = "「微酔の夜宴」DAY7解放",
 		story = "DACHAOLIFU4",
@@ -9527,9 +9571,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[934] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "最終演習するが",
 		condition = "「交錯する新たな波」イベント開始",
 		story = "JUNHEBOSS1",
@@ -9538,9 +9582,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[935] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "幸運艦の激励",
 		condition = "「交錯する新たな波」作戦進捗25%",
 		story = "JUNHEBOSS2",
@@ -9549,9 +9593,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[936] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "指揮艦のカリスマ",
 		condition = "「交錯する新たな波」作戦進捗50%",
 		story = "JUNHEBOSS3",
@@ -9560,9 +9604,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[937] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "交錯する新たな波",
 		condition = "「交錯する新たな波」作戦進捗75%",
 		story = "JUNHEBOSS4",
@@ -9571,9 +9615,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[938] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "駿河SIDE",
 		condition = "「交錯する新たな波」作戦進捗100%",
 		story = "JUNHEBOSS5",
@@ -9582,9 +9626,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[940] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鉄血鮫、出撃",
 		condition = "「鉄血鮫とエニグマ」開始",
 		story = "ZUIZHENGUIDEBAOWU1",
@@ -9593,9 +9637,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[941] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "エニグマ",
 		condition = "「鉄血鮫とエニグマ」SP1クリア",
 		story = "ZUIZHENGUIDEBAOWU2",
@@ -9604,9 +9648,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[942] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "感謝されるお仕事",
 		condition = "「鉄血鮫とエニグマ」SP2開始",
 		story = "ZUIZHENGUIDEBAOWU3",
@@ -9615,9 +9659,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[943] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "捕食者？",
 		condition = "「鉄血鮫とエニグマ」SP2敵中枢艦隊出現時",
 		story = "ZUIZHENGUIDEBAOWU4",
@@ -9626,9 +9670,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[944] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "激戦？",
 		condition = "「鉄血鮫とエニグマ」SP2ボス撃破",
 		story = "ZUIZHENGUIDEBAOWU5",
@@ -9637,9 +9681,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[945] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "拿捕",
 		condition = "「鉄血鮫とエニグマ」SP3開始",
 		story = "ZUIZHENGUIDEBAOWU6",
@@ -9648,9 +9692,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[946] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "反撃開始？",
 		condition = "「鉄血鮫とエニグマ」SP3ボスに遭遇",
 		story = "ZUIZHENGUIDEBAOWU7",
@@ -9659,9 +9703,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[947] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "予想外の戦果",
 		condition = "「鉄血鮫とエニグマ」SP3ボス撃破",
 		story = "ZUIZHENGUIDEBAOWU8",
@@ -9670,9 +9714,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[948] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "落とし物",
 		condition = "「鉄血鮫とエニグマ」SP3クリア",
 		story = "ZUIZHENGUIDEBAOWU9",
@@ -9681,9 +9725,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[949] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "エニグマの行方",
 		condition = "？？？",
 		story = "ZUIZHENGUIDEBAOWU10",
@@ -9692,9 +9736,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[950] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "まだ混沌にならなかった頃",
 		condition = "「カオティック・ハロウィンナイト」DAY1解放",
 		story = "MENGFEISIWANSHENG1",
@@ -9703,9 +9747,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[951] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ウィッチ・エクスプレス？",
 		condition = "「カオティック・ハロウィンナイト」DAY2解放",
 		story = "MENGFEISIWANSHENG2",
@@ -9714,9 +9758,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[952] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "三段構え？",
 		condition = "「カオティック・ハロウィンナイト」DAY4解放",
 		story = "MENGFEISIWANSHENG3",
@@ -9725,9 +9769,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[953] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "仮装大会",
 		condition = "「カオティック・ハロウィンナイト」DAY6解放",
 		story = "MENGFEISIWANSHENG4",
@@ -9736,9 +9780,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[954] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "カオティックナイト",
 		condition = "「カオティック・ハロウィンナイト」DAY7解放",
 		story = "MENGFEISIWANSHENG5",
@@ -9747,9 +9791,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[960] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "開演",
 		condition = "イベント期間中ログイン",
 		story = "OUXIANGHUODONG1",
@@ -9758,9 +9802,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[961] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "実験開始！",
 		condition = "「激奏のポラリス」SP1開始",
 		story = "OUXIANGHUODONG2",
@@ -9769,9 +9813,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[962] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "東煌シスターズ登場！",
 		condition = "「激奏のポラリス」SP1開始後 ",
 		story = "OUXIANGHUODONG3",
@@ -9780,9 +9824,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[963] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "てきとー120％！",
 		condition = "「激奏のポラリス」SP1ボスに遭遇",
 		story = "OUXIANGHUODONG4",
@@ -9791,9 +9835,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[964] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ポラリス①",
 		condition = "「激奏のポラリス」SP1ボス撃破",
 		story = "OUXIANGHUODONG5",
@@ -9802,9 +9846,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[965] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "魔女っ子アイドル登場！",
 		condition = "「激奏のポラリス」SP2開始",
 		story = "OUXIANGHUODONG6",
@@ -9813,9 +9857,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[966] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ポラリス②",
 		condition = "「激奏のポラリス」SP2敵中枢艦隊出現時",
 		story = "OUXIANGHUODONG7",
@@ -9824,9 +9868,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[967] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "困惑気味のライバル？",
 		condition = "「激奏のポラリス」SP2ボスに遭遇",
 		story = "OUXIANGHUODONG8",
@@ -9835,9 +9879,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[968] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ポラリス③",
 		condition = "「激奏のポラリス」SP2ボス撃破",
 		story = "OUXIANGHUODONG9",
@@ -9846,9 +9890,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[969] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "感情を覚えた「彼女」",
 		condition = "「激奏のポラリス」SP3開始",
 		story = "OUXIANGHUODONG10",
@@ -9857,9 +9901,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[970] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ポラリス④",
 		condition = "「激奏のポラリス」SP3敵中枢艦隊出現時",
 		story = "OUXIANGHUODONG11",
@@ -9868,9 +9912,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[971] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "鉄血♡カワイイ",
 		condition = "「激奏のポラリス」SP3ボスに遭遇",
 		story = "OUXIANGHUODONG12",
@@ -9879,9 +9923,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[972] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "笑顔の少女",
 		condition = "「激奏のポラリス」SP3ボス撃破",
 		story = "OUXIANGHUODONG13",
@@ -9890,9 +9934,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[973] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "感情モジュール",
 		condition = "「激奏のポラリス」SP3クリア",
 		story = "OUXIANGHUODONG14",
@@ -9901,9 +9945,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[974] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "残りわずか？！",
 		condition = "「激奏のポラリス」SP4開始",
 		story = "OUXIANGHUODONG15",
@@ -9912,9 +9956,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[975] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ポラリス⑤",
 		condition = "「激奏のポラリス」SP4敵中枢艦隊出現時",
 		story = "OUXIANGHUODONG16",
@@ -9923,9 +9967,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[976] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "エレキストーム！",
 		condition = "「激奏のポラリス」SP4ボスに遭遇",
 		story = "OUXIANGHUODONG17",
@@ -9934,9 +9978,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[977] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "POWER　MAX",
 		condition = "「激奏のポラリス」SP4ボス撃破",
 		story = "OUXIANGHUODONG18",
@@ -9945,9 +9989,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[978] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "最後の戦い",
 		condition = "「激奏のポラリス」SP5開始",
 		story = "OUXIANGHUODONG19",
@@ -9956,9 +10000,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[979] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "「μ兵装」",
 		condition = "「激奏のポラリス」SP5敵中枢艦隊出現時",
 		story = "OUXIANGHUODONG20",
@@ -9967,9 +10011,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[980] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "決戦ポラリス",
 		condition = "「激奏のポラリス」SP5ボスに遭遇",
 		story = "OUXIANGHUODONG21",
@@ -9978,9 +10022,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[981] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "激奏のアンコール",
 		condition = "「激奏のポラリス」SP5ボス撃破",
 		story = "OUXIANGHUODONG22",
@@ -9989,9 +10033,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[982] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "終わりに",
 		condition = "「激奏のポラリス」SP5クリア",
 		story = "OUXIANGHUODONG23",
@@ -10000,9 +10044,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[983] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "観察",
 		condition = "？？？",
 		story = "OUXIANGHUODONG24",
@@ -10011,9 +10055,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[990] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ある日の練習",
 		condition = "激奏舞台のゲージを1段目に前進させる",
 		story = "OUXIANGRICHANG1",
@@ -10022,9 +10066,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[991] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ある日の休憩時間",
 		condition = "激奏舞台のゲージを4段目に前進させる ",
 		story = "OUXIANGRICHANG2",
@@ -10033,9 +10077,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[992] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ある日のリハーサル",
 		condition = "激奏舞台のゲージを7段目に前進させる",
 		story = "OUXIANGRICHANG3",
@@ -10044,9 +10088,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[995] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "異世界との出会い",
 		condition = "イベント期間中ログイン",
 		story = "HOLOGUANQIA1",
@@ -10055,9 +10099,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[996] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "物語の始まり",
 		condition = "「幻想と真実の二重奏·上」開始",
 		story = "HOLOGUANQIA2",
@@ -10066,9 +10110,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[997] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "濃霧",
 		condition = "TS1開始",
 		story = "HOLOGUANQIA3",
@@ -10077,9 +10121,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[998] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "助けを呼ぶ声",
 		condition = "TS1 敵中枢艦隊出現時",
 		story = "HOLOGUANQIA4",
@@ -10088,9 +10132,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[999] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "フブキと江風",
 		condition = "TS1ボスに遭遇",
 		story = "HOLOGUANQIA5",
@@ -10099,9 +10143,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1000] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "異世界からの来客",
 		condition = "TS1ボス撃破",
 		story = "HOLOGUANQIA6",
@@ -10110,9 +10154,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1001] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "ガイドさん",
 		condition = "T1開始",
 		story = "HOLOGUANQIA7",
@@ -10121,9 +10165,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1002] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "戦いの痕跡",
 		condition = "T1 敵中枢艦隊出現時",
 		story = "HOLOGUANQIA8",
@@ -10132,9 +10176,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1003] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "夏色まつり浮気中",
 		condition = "T1ボスに遭遇",
 		story = "HOLOGUANQIA9",
@@ -10143,9 +10187,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1004] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "戦いの痕跡",
 		condition = "T1ボス撃破",
 		story = "HOLOGUANQIA10",
@@ -10154,9 +10198,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1005] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "レジスタンス基地",
 		condition = "T1クリア",
 		story = "HOLOGUANQIA11",
@@ -10165,9 +10209,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1006] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "ピュリっち！？",
 		condition = "TS2開始",
 		story = "HOLOGUANQIA12",
@@ -10176,9 +10220,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1007] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "一般女子まつり",
 		condition = "TS2 敵中枢艦隊出現時",
 		story = "HOLOGUANQIA13",
@@ -10187,9 +10231,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1008] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "TNT！？",
 		condition = "TS2ボスに遭遇",
 		story = "HOLOGUANQIA14",
@@ -10198,9 +10242,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1009] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "応援要請",
 		condition = "TS2クリア",
 		story = "HOLOGUANQIA15",
@@ -10209,9 +10253,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1010] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "百鬼城",
 		condition = "T2開始",
 		story = "HOLOGUANQIA16",
@@ -10220,9 +10264,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1011] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "救援",
 		condition = "T2ボスに遭遇",
 		story = "HOLOGUANQIA17",
@@ -10231,9 +10275,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1012] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "合流",
 		condition = "T2ボス撃破",
 		story = "HOLOGUANQIA18",
@@ -10242,9 +10286,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1013] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "三角関係",
 		condition = "TS3開始",
 		story = "HOLOGUANQIA19",
@@ -10253,9 +10297,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1014] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "二人の湊あくあ？",
 		condition = "TS3 敵中枢艦隊出現時",
 		story = "HOLOGUANQIA20",
@@ -10264,9 +10308,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1015] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "山田・ハーマイオニー",
 		condition = "TS3ボスに遭遇",
 		story = "HOLOGUANQIA21",
@@ -10275,9 +10319,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1016] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "初勝利",
 		condition = "TS3ボス撃破",
 		story = "HOLOGUANQIA22",
@@ -10286,9 +10330,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1017] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "夜に",
 		condition = "T3開始",
 		story = "HOLOGUANQIA23",
@@ -10297,9 +10341,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1018] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "部隊編成",
 		condition = "T3開始後 ",
 		story = "HOLOGUANQIA24",
@@ -10308,9 +10352,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1019] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "波乱万丈迷宮",
 		condition = "T3で戦闘勝利",
 		story = "HOLOGUANQIA25",
@@ -10319,9 +10363,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1020] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "マトリョーシカ",
 		condition = "T3敵中枢艦隊出現時",
 		story = "HOLOGUANQIA26",
@@ -10330,9 +10374,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1021] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "キャラカード",
 		condition = "T3ボスに遭遇",
 		story = "HOLOGUANQIA27",
@@ -10341,9 +10385,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1022] = {
-		mask = "bg/bg_story_holosaba1",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba1",
 		title = "迷宮の征服者",
 		condition = "T3クリア",
 		story = "HOLOGUANQIA28",
@@ -10352,9 +10396,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1023] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "まつりの作戦",
 		condition = "「幻想と真実の二重奏·下」開始",
 		story = "HOLOGUANQIA29",
@@ -10363,9 +10407,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1024] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "ホロライブの闇",
 		condition = "T4開始",
 		story = "HOLOGUANQIA30",
@@ -10374,9 +10418,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1025] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "魂の質問",
 		condition = "T4ボスに遭遇",
 		story = "HOLOGUANQIA31",
@@ -10385,9 +10429,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1026] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "尋常じゃない友情",
 		condition = "T4クリア",
 		story = "HOLOGUANQIA32",
@@ -10396,9 +10440,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1027] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "お化け屋敷",
 		condition = "TS4開始",
 		story = "HOLOGUANQIA33",
@@ -10407,9 +10451,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1028] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "溶岩地帯！？",
 		condition = "TS4開始後",
 		story = "HOLOGUANQIA34",
@@ -10418,9 +10462,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1029] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "強敵そらさん",
 		condition = "TS4ボスに遭遇",
 		story = "HOLOGUANQIA35",
@@ -10429,9 +10473,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1030] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "戦闘指導？",
 		condition = "TS4ボス撃破",
 		story = "HOLOGUANQIA36",
@@ -10440,9 +10484,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1031] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "ジェットコースター",
 		condition = "T5開始",
 		story = "HOLOGUANQIA37",
@@ -10451,9 +10495,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1032] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "破壊された入口",
 		condition = "T5敵中枢艦隊出現時",
 		story = "HOLOGUANQIA38",
@@ -10462,9 +10506,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1033] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "普通のシオンちゃん？",
 		condition = "T5ボスに遭遇",
 		story = "HOLOGUANQIA39",
@@ -10473,9 +10517,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1034] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "MP0",
 		condition = "T5ボス撃破",
 		story = "HOLOGUANQIA40",
@@ -10484,9 +10528,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1035] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "ミオシオコースター",
 		condition = "TS5開始",
 		story = "HOLOGUANQIA41",
@@ -10495,9 +10539,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1036] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "遭難",
 		condition = "TS5敵中枢艦隊出現時",
 		story = "HOLOGUANQIA42",
@@ -10506,9 +10550,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1037] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "決闘だッ！",
 		condition = "TS5ボスに遭遇",
 		story = "HOLOGUANQIA43",
@@ -10517,9 +10561,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1038] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "闇のデュエル",
 		condition = "TS5ボス撃破",
 		story = "HOLOGUANQIA44",
@@ -10528,9 +10572,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1039] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "新ホロ島",
 		condition = "T6開始",
 		story = "HOLOGUANQIA45",
@@ -10539,9 +10583,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1040] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "繋がる絆",
 		condition = "T6敵中枢艦隊出現時",
 		story = "HOLOGUANQIA46",
@@ -10550,9 +10594,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1041] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "ダークフォックスブリザード",
 		condition = "T6ボスに遭遇",
 		story = "HOLOGUANQIA47",
@@ -10561,9 +10605,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1042] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "戦闘終了",
 		condition = "T6ボス撃破",
 		story = "HOLOGUANQIA48",
@@ -10572,9 +10616,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1043] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "本社爆破",
 		condition = "？？？",
 		story = "HOLOGUANQIA49",
@@ -10583,9 +10627,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1044] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "自分を大事に",
 		condition = "？？？",
 		story = "HOLOGUANQIA50",
@@ -10594,9 +10638,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1045] = {
-		mask = "bg/bg_story_holosaba2",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_holosaba2",
 		title = "帰り道",
 		condition = "？？？",
 		story = "HOLOGUANQIA51",
@@ -10605,9 +10649,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1046] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "雰囲気の類似について",
 		condition = "「おはようアズールレーン」DAY2解放",
 		story = "HOLORICHANG1",
@@ -10616,9 +10660,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1047] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "魂の類似？について",
 		condition = "「おはようアズールレーン」DAY4解放",
 		story = "HOLORICHANG2",
@@ -10627,9 +10671,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1048] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "属性の類似について",
 		condition = "「おはようアズールレーン」DAY6解放",
 		story = "HOLORICHANG3",
@@ -10638,9 +10682,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1049] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "平和の世界について　",
 		condition = "「集まれ！ホロライブレジスタンス」S2クリア",
 		story = "HOLORICHANG4",
@@ -10649,9 +10693,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1050] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ツンデレについて",
 		condition = "「集まれ！ホロライブレジスタンス」S4クリア",
 		story = "HOLORICHANG5",
@@ -10660,9 +10704,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1051] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ゲームについて",
 		condition = "「集まれ！ホロライブレジスタンス」S6クリア",
 		story = "HOLORICHANG6",
@@ -10671,9 +10715,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1052] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "神楽の舞について",
 		condition = "「ミオの母港占い館」DAY3解放",
 		story = "HOLORICHANG7",
@@ -10682,9 +10726,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1053] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "演武について",
 		condition = "「ミオの母港占い館」DAY5解放",
 		story = "HOLORICHANG8",
@@ -10693,9 +10737,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1054] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "お城について",
 		condition = "「ミオの母港占い館」DAY7解放",
 		story = "HOLORICHANG9",
@@ -10704,9 +10748,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[1055] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "新しいスタート",
 		condition = "イベント記念エンブレムを入手",
 		story = "HOLORICHANG10",
@@ -10714,10 +10758,6907 @@ pg.memory_template = {
 		icon = "memory_holorichang",
 		is_open = 0
 	},
-	[10000] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
+	[1056] = {
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "クッキーの作り方",
+		condition = "「聖夜ナッツ！」DAY1解放",
+		story = "RUOYESHENGDAN1",
+		id = 1056,
+		icon = "memory_ruoyeshengdan",
+		is_open = 0
+	},
+	[1057] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "クイーンズプロファイル",
+		condition = "「聖夜ナッツ！」DAY2解放",
+		story = "RUOYESHENGDAN2",
+		id = 1057,
+		icon = "memory_ruoyeshengdan",
+		is_open = 0
+	},
+	[1058] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ホカホカ囲炉裏",
+		condition = "「聖夜ナッツ！」DAY4解放",
+		story = "RUOYESHENGDAN3",
+		id = 1058,
+		icon = "memory_ruoyeshengdan",
+		is_open = 0
+	},
+	[1059] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "甘いお菓子と言えば",
+		condition = "「聖夜ナッツ！」DAY6解放",
+		story = "RUOYESHENGDAN4",
+		id = 1059,
+		icon = "memory_ruoyeshengdan",
+		is_open = 0
+	},
+	[1060] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "クリスマスパーティー",
+		condition = "「聖夜ナッツ！」DAY7解放",
+		story = "RUOYESHENGDAN5",
+		id = 1060,
+		icon = "memory_ruoyeshengdan",
+		is_open = 0
+	},
+	[1061] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "響く青玉の音",
+		condition = "「翳りし満ちる影の華·上」開始",
+		story = "FUYINGYINGHUA1",
+		id = 1061,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1062] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "動く絡繰の糸",
+		condition = "A1/C1開始",
+		story = "FUYINGYINGHUA2",
+		id = 1062,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1063] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "案内役①",
+		condition = "A1/C1ボスに遭遇",
+		story = "FUYINGYINGHUA3",
+		id = 1063,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1064] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "押し寄せる波",
+		condition = "A1/C1ボス撃破",
+		story = "FUYINGYINGHUA4",
+		id = 1064,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1065] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "もう一つの戦場",
+		condition = "A2/C2開始",
+		story = "FUYINGYINGHUA5",
+		id = 1065,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1066] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "案内人②",
+		condition = "A2/C2ボスに遭遇",
+		story = "FUYINGYINGHUA6",
+		id = 1066,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1067] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "駿河の戦法",
+		condition = "A2/C2ボス撃破",
+		story = "FUYINGYINGHUA7",
+		id = 1067,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1068] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "共同作戦",
+		condition = "A2/C2クリア",
+		story = "FUYINGYINGHUA8",
+		id = 1068,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1069] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "スペアプラン",
+		condition = "A3/C3開始",
+		story = "FUYINGYINGHUA9",
+		id = 1069,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1070] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "案内人③",
+		condition = "A3/C3ボスに遭遇",
+		story = "FUYINGYINGHUA10",
+		id = 1070,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1071] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "煽動者",
+		condition = "A3/C3ボス撃破",
+		story = "FUYINGYINGHUA11",
+		id = 1071,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1072] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "権謀術数",
+		condition = "A3/C3クリア",
+		story = "FUYINGYINGHUA12",
+		id = 1072,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1073] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "暗躍する影",
+		condition = "「翳りし満ちる影の華·下」開始",
+		story = "FUYINGYINGHUA13",
+		id = 1073,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1074] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "宴会",
+		condition = "B1/D1開始",
+		story = "FUYINGYINGHUA14",
+		id = 1074,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1075] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "敵襲",
+		condition = "B1/D1開始後",
+		story = "FUYINGYINGHUA15",
+		id = 1075,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1076] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "セイレーンの脅威",
+		condition = "B1/D1敵中枢艦隊出現時",
+		story = "FUYINGYINGHUA16",
+		id = 1076,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1077] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "「駒」",
+		condition = "B1/D1ボスに遭遇",
+		story = "FUYINGYINGHUA17",
+		id = 1077,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1078] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "鏡面海域",
+		condition = "B1/D1クリア",
+		story = "FUYINGYINGHUA18",
+		id = 1078,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1079] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "重桜の御狐",
+		condition = "B2/D2開始",
+		story = "FUYINGYINGHUA19",
+		id = 1079,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1080] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "再会",
+		condition = "B2/D2ボスに遭遇",
+		story = "FUYINGYINGHUA20",
+		id = 1080,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1081] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "疑心暗鬼",
+		condition = "B2/D2クリア",
+		story = "FUYINGYINGHUA21",
+		id = 1081,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1082] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "争奪戦",
+		condition = "B3/D3開始",
+		story = "FUYINGYINGHUA22",
+		id = 1082,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1083] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "余燼の襲来",
+		condition = "B3/D3敵中枢艦隊出現時",
+		story = "FUYINGYINGHUA23",
+		id = 1083,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1084] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "対決",
+		condition = "B3/D3ボスに遭遇",
+		story = "FUYINGYINGHUA24",
+		id = 1084,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1085] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "時間切れ",
+		condition = "B3/D3ボス撃破",
+		story = "FUYINGYINGHUA25",
+		id = 1085,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1086] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg2",
+		title = "影の一閃",
+		condition = "B3/D3クリア",
+		story = "FUYINGYINGHUA26",
+		id = 1086,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1087] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "エンディング",
+		condition = "？？？",
+		story = "FUYINGYINGHUA27",
+		id = 1087,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1088] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong_cg1",
+		title = "祭儀の終わり",
+		condition = "？？？",
+		story = "FUYINGYINGHUA28",
+		id = 1088,
+		icon = "memory_fuyingyinghuaguanqia",
+		is_open = 0
+	},
+	[1091] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "新年の出会い",
+		condition = "「お正月キャンペーン」DAY2クリア",
+		story = "FUYINGYINGHUARICHANG1",
+		id = 1091,
+		icon = "memory_fuyingyinghuarichang",
+		is_open = 0
+	},
+	[1092] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "寝正月",
+		condition = "「お正月キャンペーン」DAY4クリア",
+		story = "FUYINGYINGHUARICHANG2",
+		id = 1092,
+		icon = "memory_fuyingyinghuarichang",
+		is_open = 0
+	},
+	[1093] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "お正月バーサス",
+		condition = "「お正月キャンペーン」DAY5クリア",
+		story = "FUYINGYINGHUARICHANG3",
+		id = 1093,
+		icon = "memory_fuyingyinghuarichang",
+		is_open = 0
+	},
+	[1094] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "お正月特訓？",
+		condition = "「お正月キャンペーン」DAY6クリア",
+		story = "FUYINGYINGHUARICHANG4",
+		id = 1094,
+		icon = "memory_fuyingyinghuarichang",
+		is_open = 0
+	},
+	[1095] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "あけおめ！",
+		condition = "「お正月キャンペーン」DAY7クリア",
+		story = "FUYINGYINGHUARICHANG5",
+		id = 1095,
+		icon = "memory_fuyingyinghuarichang",
+		is_open = 0
+	},
+	[1096] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "作戦開始2nd",
+		condition = "「戦え！ロイヤルメイド2nd」イベント開始",
+		story = "DAIDUOBOSS1",
+		id = 1096,
+		icon = "memory_daiduoshijieboss",
+		is_open = 0
+	},
+	[1097] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "元統括の秘策",
+		condition = "「戦え！ロイヤルメイド2nd」作戦進捗25%",
+		story = "DAIDUOBOSS2",
+		id = 1097,
+		icon = "memory_daiduoshijieboss",
+		is_open = 0
+	},
+	[1098] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "姉妹の防衛線",
+		condition = "「戦え！ロイヤルメイド2nd」作戦進捗50%",
+		story = "DAIDUOBOSS3",
+		id = 1098,
+		icon = "memory_daiduoshijieboss",
+		is_open = 0
+	},
+	[1099] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "指導役の辣腕",
+		condition = "「戦え！ロイヤルメイド2nd」作戦進捗75%",
+		story = "DAIDUOBOSS4",
+		id = 1099,
+		icon = "memory_daiduoshijieboss",
+		is_open = 0
+	},
+	[1100] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "彼女へのご褒美",
+		condition = "「戦え！ロイヤルメイド2nd」作戦進捗100%",
+		story = "DAIDUOBOSS5",
+		id = 1100,
+		icon = "memory_daiduoshijieboss",
+		is_open = 0
+	},
+	[1101] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "除夜のダイナミッククラッカー",
+		condition = "「饅頭の年玉」で年玉を1個開封する",
+		story = "HONGBAORICHANG1",
+		id = 1101,
+		icon = "memory_hongbaorichang",
+		is_open = 0
+	},
+	[1102] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "執務室、模様替えの巻",
+		condition = "「饅頭の年玉」で年玉を5個開封する",
+		story = "HONGBAORICHANG2",
+		id = 1102,
+		icon = "memory_hongbaorichang",
+		is_open = 0
+	},
+	[1103] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "旧正月ムード",
+		condition = "「饅頭の年玉」で年玉を10個開封する",
+		story = "HONGBAORICHANG3",
+		id = 1103,
+		icon = "memory_hongbaorichang",
+		is_open = 0
+	},
+	[1104] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "旧正月パーティー",
+		condition = "「饅頭の年玉」で年玉を15個開封する",
+		story = "HONGBAORICHANG4",
+		id = 1104,
+		icon = "memory_hongbaorichang",
+		is_open = 0
+	},
+	[1110] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "オーバーチュア",
+		condition = "「凍絶の北海·上」開始",
+		story = "MAOZIHUODONG1",
+		id = 1110,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1111] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "合同作戦",
+		condition = "A1/C1開始",
+		story = "MAOZIHUODONG2",
+		id = 1111,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1112] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "仲間合流",
+		condition = "A1/C1開始後",
+		story = "MAOZIHUODONG3",
+		id = 1112,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1113] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "要塞外周",
+		condition = "A1/C1ボスに遭遇",
+		story = "MAOZIHUODONG4",
+		id = 1113,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1114] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "外周掃討",
+		condition = "A1/C1クリア",
+		story = "MAOZIHUODONG5",
+		id = 1114,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1115] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "侵攻経路",
+		condition = "A2/C2開始",
+		story = "MAOZIHUODONG6",
+		id = 1115,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1116] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "新型出現",
+		condition = "A2/C2ボスに遭遇",
+		story = "MAOZIHUODONG7",
+		id = 1116,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1117] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "障害突破",
+		condition = "A2/C2クリア",
+		story = "MAOZIHUODONG8",
+		id = 1117,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1118] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "大量出現",
+		condition = "A3/C3開始",
+		story = "MAOZIHUODONG9",
+		id = 1118,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1119] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "カリスマ",
+		condition = "A3/C3で戦闘勝利",
+		story = "MAOZIHUODONG10",
+		id = 1119,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1120] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "守護の盾",
+		condition = "A3/C3ボスに遭遇",
+		story = "MAOZIHUODONG11",
+		id = 1120,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1121] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "兵装対策",
+		condition = "A3/C3ボス撃破1回",
+		story = "MAOZIHUODONG12",
+		id = 1121,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1122] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "氷壁隔絶",
+		condition = "A3/C3ボス撃破2回",
+		story = "MAOZIHUODONG13",
+		id = 1122,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1123] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "北極艦隊",
+		condition = "A3/C3クリア",
+		story = "MAOZIHUODONG14",
+		id = 1123,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1124] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "鋼鉄津波",
+		condition = "「凍絶の北海·下」開始",
+		story = "MAOZIHUODONG15",
+		id = 1124,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1125] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "革命烈嵐",
+		condition = "B1/D1ボスに遭遇",
+		story = "MAOZIHUODONG16",
+		id = 1125,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1126] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "北海熱戦",
+		condition = "B1/D1クリア",
+		story = "MAOZIHUODONG17",
+		id = 1126,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1127] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "行進休憩",
+		condition = "B2/D2開始",
+		story = "MAOZIHUODONG18",
+		id = 1127,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1128] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "機嫌反転",
+		condition = "B2/D2で戦闘勝利",
+		story = "MAOZIHUODONG19",
+		id = 1128,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1129] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "防御突破",
+		condition = "B2/D2敵中枢艦隊出現時",
+		story = "MAOZIHUODONG20",
+		id = 1129,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1130] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "合流成功",
+		condition = "B2/D2ボスに遭遇",
+		story = "MAOZIHUODONG21",
+		id = 1130,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1131] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "座標確定",
+		condition = "B2/D2クリア",
+		story = "MAOZIHUODONG22",
+		id = 1131,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1132] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "要塞突入",
+		condition = "B3/D3開始",
+		story = "MAOZIHUODONG23",
+		id = 1132,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1133] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "悪辣登場",
+		condition = "B3/D3で戦闘勝利",
+		story = "MAOZIHUODONG24",
+		id = 1133,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1134] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "総力迎撃",
+		condition = "B3/D3敵中枢艦隊出現時",
+		story = "MAOZIHUODONG25",
+		id = 1134,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1135] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "オミッター",
+		condition = "B3/D3ボスに遭遇",
+		story = "MAOZIHUODONG26",
+		id = 1135,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1136] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "全力出撃",
+		condition = "B3/D3ボス撃破",
+		story = "MAOZIHUODONG27",
+		id = 1136,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1137] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "要塞崩壊",
+		condition = "B3/D3クリア",
+		story = "MAOZIHUODONG28",
+		id = 1137,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1138] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "オリジン",
+		condition = "？？？",
+		story = "MAOZIHUODONG29",
+		id = 1138,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1139] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "北方連合",
+		condition = "？？？",
+		story = "MAOZIHUODONG30",
+		id = 1139,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1140] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "序曲奏響",
+		condition = "？？？",
+		story = "MAOZIHUODONG31",
+		id = 1140,
+		icon = "memory_maozihuodong",
+		is_open = 0
+	},
+	[1141] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccp_6",
+		title = "情報解読",
+		condition = "情報解読を最初にプレイする",
+		story = "MAOZIPT",
+		id = 1141,
+		icon = "memory_maozipt",
+		is_open = 0
+	},
+	[1142] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "勝利の暁",
+		condition = "「アヴローラと愉快な仲間たち1」開始",
+		story = "AFULEER1",
+		id = 1142,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1143] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ノスタルジック",
+		condition = "「アヴローラと愉快な仲間たち2」開始",
+		story = "AFULEER2",
+		id = 1143,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1144] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "歓迎会",
+		condition = "「アヴローラと愉快な仲間たち3」開始",
+		story = "AFULEER3",
+		id = 1144,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1145] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "老兵として",
+		condition = "「アヴローラと愉快な仲間たち4」開始",
+		story = "AFULEER4",
+		id = 1145,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1146] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "アレスティング・ワイヤー",
+		condition = "「アヴローラと愉快な仲間たち5」開始",
+		story = "AFULEER5",
+		id = 1146,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1147] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "本当の力",
+		condition = "「アヴローラと愉快な仲間たち6」開始",
+		story = "AFULEER6",
+		id = 1147,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1148] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "暁の光",
+		condition = "「アヴローラと愉快な仲間たち7」開始",
+		story = "AFULEER7",
+		id = 1148,
+		icon = "memory_afuleer",
+		is_open = 0
+	},
+	[1149] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "配置変更",
+		condition = "「闇靄接近」任務1クリア",
+		story = "MIWUZHIXIA1",
+		id = 1149,
+		icon = "memory_miwuzhixia",
+		is_open = 0
+	},
+	[1150] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "闇靄",
+		condition = "「闇靄接近」任務2クリア",
+		story = "MIWUZHIXIA2",
+		id = 1150,
+		icon = "memory_miwuzhixia",
+		is_open = 0
+	},
+	[1151] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "逆行",
+		condition = "「闇靄接近」任務3クリア",
+		story = "MIWUZHIXIA3",
+		id = 1151,
+		icon = "memory_miwuzhixia",
+		is_open = 0
+	},
+	[1152] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "迷い込む",
+		condition = "「闇靄接近」任務4クリア",
+		story = "MIWUZHIXIA4",
+		id = 1152,
+		icon = "memory_miwuzhixia",
+		is_open = 0
+	},
+	[1153] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "「渡り橋」",
+		condition = "「闇靄払う銀翼·上」開始",
+		story = "WEICENGHUNHE1",
+		id = 1153,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1154] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "救援部隊",
+		condition = "A1/C1開始",
+		story = "WEICENGHUNHE2",
+		id = 1154,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1155] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "運河要塞にて",
+		condition = "A1/C1開始後",
+		story = "WEICENGHUNHE3",
+		id = 1155,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1156] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "海霧襲来",
+		condition = "A1/C1で戦闘勝利",
+		story = "WEICENGHUNHE4",
+		id = 1156,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1157] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "消失",
+		condition = "A1/C1敵中枢艦隊出現時",
+		story = "WEICENGHUNHE5",
+		id = 1157,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1158] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "応戦",
+		condition = "A1/C1ボスに遭遇",
+		story = "WEICENGHUNHE6",
+		id = 1158,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1159] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "海霧再臨",
+		condition = "A1/C1クリア",
+		story = "WEICENGHUNHE7",
+		id = 1159,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1160] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "「キオク」の断片Ⅰ",
+		condition = "A2/C2開始",
+		story = "WEICENGHUNHE8",
+		id = 1160,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1161] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "協同",
+		condition = "A2/C2敵中枢艦隊出現時",
+		story = "WEICENGHUNHE9",
+		id = 1161,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1162] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "突破任務",
+		condition = "A2/C2ボス撃破",
+		story = "WEICENGHUNHE10",
+		id = 1162,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1163] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "霧の中",
+		condition = "A2/C2クリア",
+		story = "WEICENGHUNHE11",
+		id = 1163,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1164] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "「キオク」の断片Ⅱ",
+		condition = "A3/C3開始",
+		story = "WEICENGHUNHE12",
+		id = 1164,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1165] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "接敵",
+		condition = "A3/C3開始後",
+		story = "WEICENGHUNHE13",
+		id = 1165,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1166] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "新型出現",
+		condition = "A3/C3敵中枢艦隊出現時",
+		story = "WEICENGHUNHE14",
+		id = 1166,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1167] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "水面下の敵",
+		condition = "A3/C3ボスに遭遇",
+		story = "WEICENGHUNHE15",
+		id = 1167,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1168] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_1",
+		title = "ブルーデビュー！",
+		condition = "A3/C3クリア",
+		story = "WEICENGHUNHE16",
+		id = 1168,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1169] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "幕間",
+		condition = "「闇靄払う銀翼·下」開始",
+		story = "WEICENGHUNHE17",
+		id = 1169,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1170] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "「キオク」の断片Ⅲ",
+		condition = "B1/D1開始",
+		story = "WEICENGHUNHE18",
+		id = 1170,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1171] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "進撃",
+		condition = "B1/D1開始後",
+		story = "WEICENGHUNHE19",
+		id = 1171,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1172] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "復活",
+		condition = "B1/D1敵中枢艦隊出現時",
+		story = "WEICENGHUNHE20",
+		id = 1172,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1173] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "ヒーローに乾杯を",
+		condition = "B1/D1ボスに遭遇",
+		story = "WEICENGHUNHE21",
+		id = 1173,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1174] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "災害",
+		condition = "B1/D1クリア",
+		story = "WEICENGHUNHE22",
+		id = 1174,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1175] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "「キオク」の断片Ⅳ",
+		condition = "B2/D2開始",
+		story = "WEICENGHUNHE23",
+		id = 1175,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1176] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "合流",
+		condition = "B2/D2開始後",
+		story = "WEICENGHUNHE24",
+		id = 1176,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1177] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "転移機構",
+		condition = "B2/D2敵中枢艦隊出現時",
+		story = "WEICENGHUNHE25",
+		id = 1177,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1178] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "ヒーローチーム",
+		condition = "B2/D2ボス撃破",
+		story = "WEICENGHUNHE26",
+		id = 1178,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1179] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "姉妹艦",
+		condition = "B2/D2クリア",
+		story = "WEICENGHUNHE27",
+		id = 1179,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1180] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "「キオク」の断片Ⅴ",
+		condition = "B3/D3開始",
+		story = "WEICENGHUNHE28",
+		id = 1180,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1181] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "全力出撃",
+		condition = "B3/D3敵中枢艦隊出現時",
+		story = "WEICENGHUNHE29",
+		id = 1181,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1182] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "コンパイラー",
+		condition = "B3/D3ボスに遭遇",
+		story = "WEICENGHUNHE30",
+		id = 1182,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1183] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "モードチェンジ",
+		condition = "B3/D3ボス撃破",
+		story = "WEICENGHUNHE31",
+		id = 1183,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1184] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "霧晴れ",
+		condition = "B3/D3クリア",
+		story = "WEICENGHUNHE32",
+		id = 1184,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1185] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "第三勢力",
+		condition = "？？？",
+		story = "WEICENGHUNHE33",
+		id = 1185,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1186] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "「キオク」見上げる星空の夢",
+		condition = "？？？",
+		story = "WEICENGHUNHE34",
+		id = 1186,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1187] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_banama_2",
+		title = "闇靄",
+		condition = "？？？",
+		story = "WEICENGHUNHE35",
+		id = 1187,
+		icon = "memory_weicenghunhe",
+		is_open = 0
+	},
+	[1188] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ブリと黄金の秘宝・上",
+		condition = "イベント期間中ログイン",
+		story = "HUANGJINDEMIBAO1",
+		id = 1188,
+		icon = "memory_huangjindemibao",
+		is_open = 0
+	},
+	[1189] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_outdoor",
+		title = "ブリと黄金の秘宝・中",
+		condition = "ボスに遭遇",
+		story = "HUANGJINDEMIBAO2",
+		id = 1189,
+		icon = "memory_huangjindemibao",
+		is_open = 0
+	},
+	[1190] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_outdoor",
+		title = "ブリと黄金の秘宝・下",
+		condition = "ボス撃破",
+		story = "HUANGJINDEMIBAO3",
+		id = 1190,
+		icon = "memory_huangjindemibao",
+		is_open = 0
+	},
+	[1191] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-破壊の戦場",
+		condition = "4-1開始",
+		story = "ZHUXIAN040101",
+		id = 1191,
+		icon = "default",
+		is_open = 0
+	},
+	[1192] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-応答せず",
+		condition = "4-1ボスに遭遇",
+		story = "ZHUXIAN040102",
+		id = 1192,
+		icon = "default",
+		is_open = 0
+	},
+	[1193] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-撃退",
+		condition = "4-1クリア",
+		story = "ZHUXIAN040103",
+		id = 1193,
+		icon = "default",
+		is_open = 0
+	},
+	[1194] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-夜間戦闘",
+		condition = "4-2開始",
+		story = "ZHUXIAN040201",
+		id = 1194,
+		icon = "default",
+		is_open = 0
+	},
+	[1195] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-夜戦にて",
+		condition = "4-2ボスに遭遇",
+		story = "ZHUXIAN040202",
+		id = 1195,
+		icon = "default",
+		is_open = 0
+	},
+	[1196] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-激戦の後",
+		condition = "4-2クリア",
+		story = "ZHUXIAN040203",
+		id = 1196,
+		icon = "default",
+		is_open = 0
+	},
+	[1197] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-一方、向こうでは――",
+		condition = "4-3開始",
+		story = "ZHUXIAN040301",
+		id = 1197,
+		icon = "default",
+		is_open = 0
+	},
+	[1198] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-仮想戦場",
+		condition = "4-3ボスに遭遇",
+		story = "ZHUXIAN040302",
+		id = 1198,
+		icon = "default",
+		is_open = 0
+	},
+	[1199] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-強者遭遇",
+		condition = "4-3クリア",
+		story = "ZHUXIAN040303",
+		id = 1199,
+		icon = "default",
+		is_open = 0
+	},
+	[1200] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-状況整理",
+		condition = "4-4開始",
+		story = "ZHUXIAN040401",
+		id = 1200,
+		icon = "default",
+		is_open = 0
+	},
+	[1201] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-ナビゲーション",
+		condition = "4-4ボスに遭遇",
+		story = "ZHUXIAN040402",
+		id = 1201,
+		icon = "memorybg_7",
+		is_open = 0
+	},
+	[1202] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-特異個体",
+		condition = "4-4ボス撃破",
+		story = "ZHUXIAN040403",
+		id = 1202,
+		icon = "memorybg_8",
+		is_open = 0
+	},
+	[1203] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "四章-裏目",
+		condition = "4-4クリア",
+		story = "ZHUXIAN040404",
+		id = 1203,
+		icon = "default",
+		is_open = 0
+	},
+	[1204] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "調子が悪いの？",
+		condition = "「笑顔オーバーフロー！1」開始",
+		story = "JUANBO1",
+		id = 1204,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1205] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "助けるよ！",
+		condition = "「笑顔オーバーフロー！2」開始",
+		story = "JUANBO2",
+		id = 1205,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1206] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "応援要請！",
+		condition = "「笑顔オーバーフロー！3」開始",
+		story = "JUANBO3",
+		id = 1206,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1207] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "笑わせるよ！",
+		condition = "「笑顔オーバーフロー！4」開始",
+		story = "JUANBO4",
+		id = 1207,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1208] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ゆっくりしていってね！",
+		condition = "「笑顔オーバーフロー！5」開始",
+		story = "JUANBO5",
+		id = 1208,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1209] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "一緒にあそぼー！",
+		condition = "「笑顔オーバーフロー！6」開始",
+		story = "JUANBO6",
+		id = 1209,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1210] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "はい、笑ってー！",
+		condition = "「笑顔オーバーフロー！7」開始",
+		story = "JUANBO7",
+		id = 1210,
+		icon = "memory_juanbo",
+		is_open = 0
+	},
+	[1211] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "夜の行軍",
+		condition = "「帰路は海色の陰りへと」SP1開始",
+		story = "YESEXIADEGUITU1",
+		id = 1211,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1212] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "障害を越えて",
+		condition = "「帰路は海色の陰りへと」SP1ボスに遭遇",
+		story = "YESEXIADEGUITU2",
+		id = 1212,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1213] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "戦争のこと？",
+		condition = "「帰路は海色の陰りへと」SP1ボス撃破",
+		story = "YESEXIADEGUITU3",
+		id = 1213,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1214] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "地中海の冬",
+		condition = "「帰路は海色の陰りへとマ」SP2開始",
+		story = "YESEXIADEGUITU4",
+		id = 1214,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1215] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "アリシューザ",
+		condition = "「帰路は海色の陰りへと」SP2ボスに遭遇",
+		story = "YESEXIADEGUITU5",
+		id = 1215,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1216] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "撃退",
+		condition = "「帰路は海色の陰りへと」SP2ボス撃破",
+		story = "YESEXIADEGUITU6",
+		id = 1216,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1217] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "お菓子タイム",
+		condition = "「帰路は海色の陰りへと」SP3開始",
+		story = "YESEXIADEGUITU7",
+		id = 1217,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1218] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "強敵出現",
+		condition = "「帰路は海色の陰りへと」SP3ボスに遭遇",
+		story = "YESEXIADEGUITU8",
+		id = 1218,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1219] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "陰りの帰路",
+		condition = "「帰路は海色の陰りへと」SP3ボス撃破",
+		story = "YESEXIADEGUITU9",
+		id = 1219,
+		icon = "memory_yesexiadeguitu",
+		is_open = 0
+	},
+	[1231] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "邯鄲の幻像",
+		condition = "「神穹を衝く聖歌·上」開始",
+		story = "SHENGYONGQU1",
+		id = 1231,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1232] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "礼拝日",
+		condition = "A1/C1開始",
+		story = "SHENGYONGQU2",
+		id = 1232,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1233] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "情報共有",
+		condition = "A1/C1開始後",
+		story = "SHENGYONGQU3",
+		id = 1233,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1234] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "敵と仲間",
+		condition = "A1/C1敵中枢艦隊出現時",
+		story = "SHENGYONGQU4",
+		id = 1234,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1235] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "仲間と敵",
+		condition = "A1/C1ボスに遭遇",
+		story = "SHENGYONGQU5",
+		id = 1235,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1236] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "秘蹟兵器",
+		condition = "A2/C2開始",
+		story = "SHENGYONGQU6",
+		id = 1236,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1237] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "躊躇",
+		condition = "A2/C2で戦闘勝利",
+		story = "SHENGYONGQU7",
+		id = 1237,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1238] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "自主権",
+		condition = "A2/C2で戦闘2回勝利",
+		story = "SHENGYONGQU8",
+		id = 1238,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1239] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "交渉要請",
+		condition = "A2/C2敵中枢艦隊出現時",
+		story = "SHENGYONGQU9",
+		id = 1239,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1240] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "思惑",
+		condition = "A2/C2ボスに遭遇",
+		story = "SHENGYONGQU10",
+		id = 1240,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1241] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "選ばれた道",
+		condition = "A3/C3開始",
+		story = "SHENGYONGQU11",
+		id = 1241,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1242] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "真意？",
+		condition = "A3/C3敵中枢艦隊出現時",
+		story = "SHENGYONGQU12",
+		id = 1242,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1243] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "枢機卿と騎士",
+		condition = "A3/C3ボスに遭遇",
+		story = "SHENGYONGQU13",
+		id = 1243,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1244] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "初戦",
+		condition = "A3/C3ボス撃破",
+		story = "SHENGYONGQU14",
+		id = 1244,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1245] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_6",
+		title = "一時の勝利？",
+		condition = "A3/C3クリア",
+		story = "SHENGYONGQU15",
+		id = 1245,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1246] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "秘密",
+		condition = "「神穹を衝く聖歌·下」開始",
+		story = "SHENGYONGQU16",
+		id = 1246,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1247] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "聖堂の扉",
+		condition = "B1/D1敵中枢艦隊出現時",
+		story = "SHENGYONGQU17",
+		id = 1247,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1248] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "説得",
+		condition = "B1/D1ボスに遭遇",
+		story = "SHENGYONGQU18",
+		id = 1248,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1249] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "信頼できる仲間たち",
+		condition = "B1/D1ボス撃破",
+		story = "SHENGYONGQU19",
+		id = 1249,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1250] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "フォーチュン",
+		condition = "B1/D1クリア",
+		story = "SHENGYONGQU20",
+		id = 1250,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1251] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "神穹の壁",
+		condition = "B2/D2開始",
+		story = "SHENGYONGQU21",
+		id = 1251,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1252] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "秘蹟探索",
+		condition = "B2/D2敵中枢艦隊出現時",
+		story = "SHENGYONGQU22",
+		id = 1252,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1253] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "光の目隠し",
+		condition = "B2/D2ボスに遭遇",
+		story = "SHENGYONGQU23",
+		id = 1253,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1254] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "撃退",
+		condition = "B2/D2ボス撃破",
+		story = "SHENGYONGQU24",
+		id = 1254,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1255] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "退却",
+		condition = "B2/D2クリア",
+		story = "SHENGYONGQU25",
+		id = 1255,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1256] = {
+		type = 2,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "決意",
+		condition = "B3/D3開始",
+		story = "1393214",
+		id = 1256,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1257] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "光の祈祷",
+		condition = "B3/D3敵中枢艦隊出現時",
+		story = "SHENGYONGQU27",
+		id = 1257,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1258] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "神の御旗の元に",
+		condition = "B3/D3ボスに遭遇",
+		story = "SHENGYONGQU28",
+		id = 1258,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1259] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "光の先に",
+		condition = "B3/D3ボス撃破",
+		story = "SHENGYONGQU29",
+		id = 1259,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1260] = {
+		type = 2,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "機鋼戦艦",
+		condition = "B3/D3クリア",
+		story = "1393215",
+		id = 1260,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1261] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "彼方の眼差し",
+		condition = "？？？",
+		story = "SHENGYONGQU31",
+		id = 1261,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1262] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "契約",
+		condition = "？？？",
+		story = "SHENGYONGQU32",
+		id = 1262,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1263] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "もう一つの計画",
+		condition = "？？？",
+		story = "SHENGYONGQU33",
+		id = 1263,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1264] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_qiongding_5",
+		title = "神穹を衝く空想",
+		condition = "？？？",
+		story = "SHENGYONGQU34",
+		id = 1264,
+		icon = "memory_shengyongqu",
+		is_open = 0
+	},
+	[1265] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "撤退",
+		condition = "「峡湾間の反撃」SP1開始",
+		story = "XIAWANJIANDEFANJI1",
+		id = 1265,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1266] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "逸れること",
+		condition = "「峡湾間の反撃」SP1ボス発見",
+		story = "XIAWANJIANDEFANJI2",
+		id = 1266,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1267] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "追撃",
+		condition = "「峡湾間の反撃」SP1ボスに遭遇",
+		story = "XIAWANJIANDEFANJI3",
+		id = 1267,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1268] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "逃げられた…",
+		condition = "「峡湾間の反撃」SP1撃破",
+		story = "XIAWANJIANDEFANJI4",
+		id = 1268,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1269] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "峡湾の星",
+		condition = "「峡湾間の反撃」SP2開始",
+		story = "XIAWANJIANDEFANJI5",
+		id = 1269,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1270] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "合流",
+		condition = "「峡湾間の反撃」SP2ボス発見",
+		story = "XIAWANJIANDEFANJI6",
+		id = 1270,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1271] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "遭遇",
+		condition = "「峡湾間の反撃」SP2ボスに遭遇",
+		story = "XIAWANJIANDEFANJI7",
+		id = 1271,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1272] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "増援到着",
+		condition = "「峡湾間の反撃」SP2撃破",
+		story = "XIAWANJIANDEFANJI8",
+		id = 1272,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1273] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "進軍",
+		condition = "「峡湾間の反撃」SP3開始",
+		story = "XIAWANJIANDEFANJI9",
+		id = 1273,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1274] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "一計を案じて",
+		condition = "「峡湾間の反撃」SP3ボス発見",
+		story = "XIAWANJIANDEFANJI10",
+		id = 1274,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1275] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "戦闘",
+		condition = "「峡湾間の反撃」SP3ボスに遭遇",
+		story = "XIAWANJIANDEFANJI11",
+		id = 1275,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1276] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "峡湾間の反撃",
+		condition = "「峡湾間の反撃」SP3撃破",
+		story = "XIAWANJIANDEFANJI12",
+		id = 1276,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1277] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "エピローグ",
+		condition = "「峡湾間の反撃」SP3クリア",
+		story = "XIAWANJIANDEFANJI13",
+		id = 1277,
+		icon = "memory_xiawanjiandefanji",
+		is_open = 0
+	},
+	[1281] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "援助要請",
+		condition = "「極夜照らす幻光·上」開始",
+		story = "YONGYEHUANGUANG1",
+		id = 1281,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1282] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "船団出航",
+		condition = "A1/C1開始",
+		story = "YONGYEHUANGUANG2",
+		id = 1282,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1283] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "計画調整",
+		condition = "A1/C1開始後",
+		story = "YONGYEHUANGUANG3",
+		id = 1283,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1284] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "ポールライト",
+		condition = "A1/C1敵中枢艦隊出現時",
+		story = "YONGYEHUANGUANG4",
+		id = 1284,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1285] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "待ち伏せ",
+		condition = "A1/C1ボスに遭遇",
+		story = "YONGYEHUANGUANG5",
+		id = 1285,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1286] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "分析",
+		condition = "A1/C1ボス撃破",
+		story = "YONGYEHUANGUANG6",
+		id = 1286,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1287] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "帰還命令",
+		condition = "A1/C1クリア",
+		story = "YONGYEHUANGUANG7",
+		id = 1287,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1288] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "極光作戦",
+		condition = "A2/C2開始",
+		story = "YONGYEHUANGUANG8",
+		id = 1288,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1289] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "オーロラを背に",
+		condition = "A2/C2開始後",
+		story = "YONGYEHUANGUANG9",
+		id = 1289,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1290] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "情報露呈",
+		condition = "A2/C2で戦闘勝利",
+		story = "YONGYEHUANGUANG10",
+		id = 1290,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1291] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "謀略",
+		condition = "A2/C2敵中枢艦隊出現時",
+		story = "YONGYEHUANGUANG11",
+		id = 1291,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1292] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "鉄血先兵",
+		condition = "A2/C2敵中枢艦隊と遭遇",
+		story = "YONGYEHUANGUANG12",
+		id = 1292,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1293] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "魔眼大戦",
+		condition = "A2/C2ボス撃破",
+		story = "YONGYEHUANGUANG13",
+		id = 1293,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1294] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "疑惑",
+		condition = "A2/C2クリア",
+		story = "YONGYEHUANGUANG14",
+		id = 1294,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1295] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "予定通り？",
+		condition = "A3/C3開始",
+		story = "YONGYEHUANGUANG15",
+		id = 1295,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1296] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "出迎え",
+		condition = "A3/C3敵中枢艦隊出現時",
+		story = "YONGYEHUANGUANG16",
+		id = 1296,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1297] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "招かれざる客",
+		condition = "A3/C3敵中枢艦隊と遭遇",
+		story = "YONGYEHUANGUANG17",
+		id = 1297,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1298] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "火力全開",
+		condition = "A3/C3ボス撃破",
+		story = "YONGYEHUANGUANG18",
+		id = 1298,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1299] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_7",
+		title = "最重要選択",
+		condition = "A3/C3クリア",
+		story = "YONGYEHUANGUANG19",
+		id = 1299,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1300] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "幕間",
+		condition = "「極夜照らす幻光·下」開始",
+		story = "YONGYEHUANGUANG20",
+		id = 1300,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1301] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "艦隊指示No.3",
+		condition = "B1/D1開始",
+		story = "YONGYEHUANGUANG21",
+		id = 1301,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1302] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "襲撃準備",
+		condition = "B1/D1で戦闘勝利",
+		story = "YONGYEHUANGUANG22",
+		id = 1302,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1303] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "護衛艦隊",
+		condition = "B1/D1敵中枢艦隊出現時",
+		story = "YONGYEHUANGUANG23",
+		id = 1303,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1304] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "ウルフパック",
+		condition = "B1/D1ボスに遭遇",
+		story = "YONGYEHUANGUANG24",
+		id = 1304,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1305] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "危機解除",
+		condition = "B1/D1クリア",
+		story = "YONGYEHUANGUANG25",
+		id = 1305,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1306] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "偽りの主力艦たち",
+		condition = "B2/D2開始",
+		story = "YONGYEHUANGUANG26",
+		id = 1306,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1307] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "計画通り",
+		condition = "B2/D2で戦闘勝利",
+		story = "YONGYEHUANGUANG27",
+		id = 1307,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1308] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "招かれざる客・真",
+		condition = "B2/D2敵中枢艦隊出現時",
+		story = "YONGYEHUANGUANG28",
+		id = 1308,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1309] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "セイレーン増勢",
+		condition = "B2/D2ボスに遭遇",
+		story = "YONGYEHUANGUANG29",
+		id = 1309,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1310] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "再出発",
+		condition = "B2/D2クリア",
+		story = "YONGYEHUANGUANG30",
+		id = 1310,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1311] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "火力全開",
+		condition = "B3/D3開始",
+		story = "YONGYEHUANGUANG31",
+		id = 1311,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1312] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "オミッター",
+		condition = "B3/D3敵中枢艦隊出現時",
+		story = "YONGYEHUANGUANG32",
+		id = 1312,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1313] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "ロイヤルの流儀",
+		condition = "B3/D3ボスに遭遇",
+		story = "YONGYEHUANGUANG33",
+		id = 1313,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1314] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "対策",
+		condition = "B3/D3ボス撃破",
+		story = "YONGYEHUANGUANG34",
+		id = 1314,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1315] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "そして再び",
+		condition = "B3/D3クリア",
+		story = "YONGYEHUANGUANG35",
+		id = 1315,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1316] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "鉄血の意図",
+		condition = "B3/D3クリア後",
+		story = "YONGYEHUANGUANG36",
+		id = 1316,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1317] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "北方戦線",
+		condition = "？？？",
+		story = "YONGYEHUANGUANG37",
+		id = 1317,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1318] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "スカパ・フロー",
+		condition = "？？？",
+		story = "YONGYEHUANGUANG38",
+		id = 1318,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1319] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "軍事連絡",
+		condition = "？？？",
+		story = "YONGYEHUANGUANG39",
+		id = 1319,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1320] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_hms_8",
+		title = "新段階",
+		condition = "？？？",
+		story = "YONGYEHUANGUANG40",
+		id = 1320,
+		icon = "memory_yongyehuanguang",
+		is_open = 0
+	},
+	[1321] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "インディちゃん強化週間の始まり！　　",
+		condition = "「インディちゃんの笑顔のために！1」開始",
+		story = "BOTELAN1",
+		id = 1321,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1322] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "難攻不落！推し変を迫れ！",
+		condition = "「インディちゃんの笑顔のために！2」開始",
+		story = "BOTELAN2",
+		id = 1322,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1323] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "姉妹談義は止まらない",
+		condition = "「インディちゃんの笑顔のために！3」開始",
+		story = "BOTELAN3",
+		id = 1323,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1324] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "なんだか気まずい関係",
+		condition = "「インディちゃんの笑顔のために！4」開始",
+		story = "BOTELAN4",
+		id = 1324,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1325] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "運命の出撃",
+		condition = "「インディちゃんの笑顔のために！5」開始",
+		story = "BOTELAN5",
+		id = 1325,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1326] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "本当に大切なこととは",
+		condition = "「インディちゃんの笑顔のために！6」開始",
+		story = "BOTELAN6",
+		id = 1326,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1327] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "求められていた幸せの形",
+		condition = "「インディちゃんの笑顔のために！7」開始",
+		story = "BOTELAN7",
+		id = 1327,
+		icon = "memory_botelan",
+		is_open = 0
+	},
+	[1331] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "とっておきの場所",
+		condition = "「ご令嬢の小さな提案1」開始",
+		story = "GUANGHUI1",
+		id = 1331,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1332] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "お悩み相談",
+		condition = "「ご令嬢の小さな提案2」開始",
+		story = "GUANGHUI2",
+		id = 1332,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1333] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "あわや大惨事！？",
+		condition = "「ご令嬢の小さな提案3」開始",
+		story = "GUANGHUI3",
+		id = 1333,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1334] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ドキドキ!?スキンシップ",
+		condition = "「ご令嬢の小さな提案4」開始",
+		story = "GUANGHUI4",
+		id = 1334,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1335] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "妹からの鶴の一声？",
+		condition = "「ご令嬢の小さな提案5」開始",
+		story = "GUANGHUI5",
+		id = 1335,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1336] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ふたたび手を取り合って",
+		condition = "「ご令嬢の小さな提案6」開始",
+		story = "GUANGHUI6",
+		id = 1336,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1337] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "とっておきの二人の場所",
+		condition = "「ご令嬢の小さな提案7」開始",
+		story = "GUANGHUI7",
+		id = 1337,
+		icon = "memory_guanghui",
+		is_open = 0
+	},
+	[1341] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "序の夢-胡蝶の刹那",
+		condition = "「刹那觀る胡蝶の夢」開始",
+		story = "DIEHAIMENGHUA1",
+		id = 1341,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1342] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "ウツシヨの風景・Ⅰ",
+		condition = "TS1/HTS1開始",
+		story = "DIEHAIMENGHUA2",
+		id = 1342,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1343] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "ウツシヨの風景・Ⅱ",
+		condition = "TS1/HTS1開始後",
+		story = "DIEHAIMENGHUA3",
+		id = 1343,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1344] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "ウツシヨの風景・Ⅲ",
+		condition = "TS1/HTS1敵中枢艦隊出現時",
+		story = "DIEHAIMENGHUA4",
+		id = 1344,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1345] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "一ノ夢・Ⅰ",
+		condition = "TS1/HTS1クリア",
+		story = "DIEHAIMENGHUA5",
+		id = 1345,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1346] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "一ノ夢・Ⅱ",
+		condition = "T1/HT1開始",
+		story = "DIEHAIMENGHUA6",
+		id = 1346,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1347] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "一ノ夢・Ⅲ",
+		condition = "T1/HT1敵中枢艦隊出現時",
+		story = "DIEHAIMENGHUA7",
+		id = 1347,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1348] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "一ノ夢・Ⅳ",
+		condition = "T1/HT1敵中枢艦隊と遭遇",
+		story = "DIEHAIMENGHUA8",
+		id = 1348,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1349] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "一ノ夢・Ⅴ",
+		condition = "T1/HT1クリア",
+		story = "DIEHAIMENGHUA9",
+		id = 1349,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1350] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "二ノ夢・Ⅰ",
+		condition = "T2/HT2開始",
+		story = "DIEHAIMENGHUA10",
+		id = 1350,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1351] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "二ノ夢・Ⅱ",
+		condition = "T2/HT2開始後",
+		story = "DIEHAIMENGHUA11",
+		id = 1351,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1352] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "二ノ夢・Ⅲ",
+		condition = "T2/HT2敵中枢艦隊と遭遇",
+		story = "DIEHAIMENGHUA12",
+		id = 1352,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1353] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "二ノ夢・Ⅳ",
+		condition = "T2/HT2ボス撃破",
+		story = "DIEHAIMENGHUA13",
+		id = 1353,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1354] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "二ノ夢・Ⅴ",
+		condition = "T2/HT2クリア",
+		story = "DIEHAIMENGHUA14",
+		id = 1354,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1355] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "三ノ夢・Ⅰ",
+		condition = "T3/HT3開始",
+		story = "DIEHAIMENGHUA15",
+		id = 1355,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1356] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "三ノ夢・Ⅱ",
+		condition = "T3/HT3開始後",
+		story = "DIEHAIMENGHUA16",
+		id = 1356,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1357] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "三ノ夢・Ⅲ",
+		condition = "T3/HT3敵中枢艦隊出現時",
+		story = "DIEHAIMENGHUA17",
+		id = 1357,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1358] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "三ノ夢・Ⅳ",
+		condition = "T3/HT3敵中枢艦隊と遭遇",
+		story = "DIEHAIMENGHUA18",
+		id = 1358,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1359] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "三ノ夢・Ⅴ",
+		condition = "T3/HT3ボス撃破",
+		story = "DIEHAIMENGHUA19",
+		id = 1359,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1360] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "三ノ夢・Ⅵ",
+		condition = "T3/HT3クリア",
+		story = "DIEHAIMENGHUA20",
+		id = 1360,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1361] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "四の夢・Ⅰ",
+		condition = "T4/HT4開始",
+		story = "DIEHAIMENGHUA21",
+		id = 1361,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1362] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "四の夢・Ⅱ",
+		condition = "T4/HT4開始後",
+		story = "DIEHAIMENGHUA22",
+		id = 1362,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1363] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "四の夢・Ⅲ",
+		condition = "T4/HT4敵中枢艦隊出現時",
+		story = "DIEHAIMENGHUA23",
+		id = 1363,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1364] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "四の夢・Ⅳ",
+		condition = "T4/HT4敵中枢艦隊と遭遇",
+		story = "DIEHAIMENGHUA24",
+		id = 1364,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1365] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "四の夢・Ⅴ",
+		condition = "T4/HT4クリア",
+		story = "DIEHAIMENGHUA25",
+		id = 1365,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1366] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "五の夢・Ⅰ",
+		condition = "TS2/HTS2開始",
+		story = "DIEHAIMENGHUA26",
+		id = 1366,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1367] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "五の夢・Ⅱ",
+		condition = "TS2/HTS2のイベントマスを踏む",
+		story = "DIEHAIMENGHUA27",
+		id = 1367,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1368] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "五の夢・Ⅲ",
+		condition = "TS2/HTS2のイベントマスを踏む",
+		story = "DIEHAIMENGHUA28",
+		id = 1368,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1369] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "五の夢・Ⅳ",
+		condition = "TS2/HTS2のイベントマスを踏む",
+		story = "DIEHAIMENGHUA29",
+		id = 1369,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1370] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "五の夢・Ⅴ",
+		condition = "TS2/HTS2クリア",
+		story = "DIEHAIMENGHUA30",
+		id = 1370,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1371] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "五の夢・Ⅵ",
+		condition = "T5/HT5開始",
+		story = "DIEHAIMENGHUA31",
+		id = 1371,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1372] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "五の夢・Ⅶ",
+		condition = "T5/HT5敵中枢艦隊出現時",
+		story = "DIEHAIMENGHUA32",
+		id = 1372,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1373] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "五の夢・Ⅷ",
+		condition = "T5/HT5敵中枢艦隊と遭遇",
+		story = "DIEHAIMENGHUA33",
+		id = 1373,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1374] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_2",
+		title = "五の夢・Ⅸ",
+		condition = "T5/HT5クリア",
+		story = "DIEHAIMENGHUA34",
+		id = 1374,
+		icon = "memory_diehaimenghua2",
+		is_open = 0
+	},
+	[1375] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "夢見る未来へ・Ⅰ",
+		condition = "T6/HT6開始",
+		story = "DIEHAIMENGHUA35",
+		id = 1375,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1376] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "夢見る未来へ・Ⅱ",
+		condition = "T6/HT6開始後",
+		story = "DIEHAIMENGHUA36",
+		id = 1376,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1377] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "夢見る未来へ・Ⅲ",
+		condition = "T6/HT6敵中枢艦隊出現時",
+		story = "DIEHAIMENGHUA37",
+		id = 1377,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1378] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "夢見る未来へ・Ⅳ",
+		condition = "T6/HT6敵中枢艦隊と遭遇",
+		story = "DIEHAIMENGHUA38",
+		id = 1378,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1379] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "夢見る未来へ・V",
+		condition = "T6/HT6ボス撃破",
+		story = "DIEHAIMENGHUA39",
+		id = 1379,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1380] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "夢見る未来へ・Ⅵ",
+		condition = "T6/HT6クリア",
+		story = "DIEHAIMENGHUA40",
+		id = 1380,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1381] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "宝器",
+		condition = "？？？",
+		story = "DIEHAIMENGHUA41",
+		id = 1381,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1382] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_xinnong2_1",
+		title = "降臨",
+		condition = "？？？",
+		story = "DIEHAIMENGHUA42",
+		id = 1382,
+		icon = "memory_diehaimenghua1",
+		is_open = 0
+	},
+	[1386] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "打って出る",
+		condition = "「奔る彩帆の青」SP1開始",
+		story = "HUAPOHAIKONGZHIYI1",
+		id = 1386,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1387] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "小手調べ",
+		condition = "「奔る彩帆の青」SP1ボス発見",
+		story = "HUAPOHAIKONGZHIYI2",
+		id = 1387,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1388] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "憧れの人１",
+		condition = "「奔る彩帆の青」SP1クリア",
+		story = "HUAPOHAIKONGZHIYI3",
+		id = 1388,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1389] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "海空を切裂く",
+		condition = "「奔る彩帆の青」SP2開始",
+		story = "HUAPOHAIKONGZHIYI4",
+		id = 1389,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1390] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "迎え撃つ",
+		condition = "「奔る彩帆の青」SP2ボスに遭遇",
+		story = "HUAPOHAIKONGZHIYI5",
+		id = 1390,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1391] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "トレードオフ",
+		condition = "「奔る彩帆の青」SP2クリア",
+		story = "HUAPOHAIKONGZHIYI6",
+		id = 1391,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1392] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "憧れの人２",
+		condition = "「奔る彩帆の青」SP3開始",
+		story = "HUAPOHAIKONGZHIYI7",
+		id = 1392,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1393] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "敵、再び",
+		condition = "「奔る彩帆の青」SP3ボス発見",
+		story = "HUAPOHAIKONGZHIYI8",
+		id = 1393,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1394] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "援軍",
+		condition = "「奔る彩帆の青」SP3ボスに遭遇",
+		story = "HUAPOHAIKONGZHIYI9",
+		id = 1394,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1395] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "晴空",
+		condition = "「奔る彩帆の青」SP3クリア",
+		story = "HUAPOHAIKONGZHIYI10",
+		id = 1395,
+		icon = "memory_huapohaikongzhiyi",
+		is_open = 0
+	},
+	[1401] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "明るく元気な秘書艦",
+		condition = "「笑顔なあの子の胸のウチ1」開始",
+		story = "FANJI1",
+		id = 1401,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1402] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "姉と妹と指揮官と",
+		condition = "「笑顔なあの子の胸のウチ2」開始",
+		story = "FANJI2",
+		id = 1402,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1403] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "お見通しの友人",
+		condition = "「笑顔なあの子の胸のウチ3」開始",
+		story = "FANJI3",
+		id = 1403,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1404] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "私よりも",
+		condition = "「笑顔なあの子の胸のウチ4」開始",
+		story = "FANJI4",
+		id = 1404,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1405] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "すれ違い",
+		condition = "「笑顔なあの子の胸のウチ5」開始",
+		story = "FANJI5",
+		id = 1405,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1406] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "笑顔の裏側を教えて",
+		condition = "「笑顔なあの子の胸のウチ6」開始",
+		story = "FANJI6",
+		id = 1406,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1407] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "あなたを選んだ理由",
+		condition = "「笑顔なあの子の胸のウチ7」開始",
+		story = "FANJI7",
+		id = 1407,
+		icon = "memory_fanji",
+		is_open = 0
+	},
+	[1411] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "Prologue",
+		condition = "「激唱のユニバース」開始",
+		story = "JICHANG1",
+		id = 1411,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1412] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "新たな「μ」",
+		condition = "「激唱のユニバース」SP1開始",
+		story = "JICHANG2",
+		id = 1412,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1413] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "姿を新しく",
+		condition = "「激唱のユニバース」SP1ボス発見",
+		story = "JICHANG3",
+		id = 1413,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1414] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "艦船？それともアイドル？",
+		condition = "「激唱のユニバース」SP1ボス撃破",
+		story = "JICHANG4",
+		id = 1414,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1415] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "レッスン目標",
+		condition = "「激唱のユニバース」SP1クリア",
+		story = "JICHANG5",
+		id = 1415,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1416] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "アイドル調査",
+		condition = "「激唱のユニバース」SP2開始",
+		story = "JICHANG6",
+		id = 1416,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1417] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "新たな謎",
+		condition = "「激唱のユニバース」SP2ボス発見",
+		story = "JICHANG7",
+		id = 1417,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1418] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "パフォーマンス・ステージ",
+		condition = "「激唱のユニバース」SP2ボス撃破",
+		story = "JICHANG8",
+		id = 1418,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1419] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "ライバルの影",
+		condition = "「激唱のユニバース」SP2クリア",
+		story = "JICHANG9",
+		id = 1419,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1420] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "大会開始ッ！",
+		condition = "「激唱のユニバース」SP3開始",
+		story = "JICHANG10",
+		id = 1420,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1421] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "聖女登場",
+		condition = "「激唱のユニバース」SP3ボス発見",
+		story = "JICHANG11",
+		id = 1421,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1422] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "苦戦のアンコール",
+		condition = "「激唱のユニバース」SP3ボス撃破",
+		story = "JICHANG12",
+		id = 1422,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1423] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "想いの力",
+		condition = "「激唱のユニバース」SP3クリア",
+		story = "JICHANG13",
+		id = 1423,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1424] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "北極星の導き",
+		condition = "「激唱のユニバース」SP4開始",
+		story = "JICHANG14",
+		id = 1424,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1425] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "絆、伝えたい気持ち",
+		condition = "「激唱のユニバース」SP4ボス発見",
+		story = "JICHANG15",
+		id = 1425,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1426] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "解き放たれる感情",
+		condition = "「激唱のユニバース」SP4ボス撃破",
+		story = "JICHANG16",
+		id = 1426,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1427] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "最高潮へ",
+		condition = "「激唱のユニバース」SP4クリア",
+		story = "JICHANG17",
+		id = 1427,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1428] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "狂愛Verheerender",
+		condition = "「激唱のユニバース」SP5開始",
+		story = "JICHANG18",
+		id = 1428,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1429] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "決戦…？",
+		condition = "「激唱のユニバース」SP5ボス発見",
+		story = "JICHANG19",
+		id = 1429,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1430] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "ファイナルステージ",
+		condition = "「激唱のユニバース」SP5ボス撃破",
+		story = "JICHANG20",
+		id = 1430,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1431] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "激唱のユニバース",
+		condition = "「激唱のユニバース」SP5クリア",
+		story = "JICHANG21",
+		id = 1431,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1432] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_jichang_1",
+		title = "青のレガシー",
+		condition = "？？？",
+		story = "JICHANG22",
+		id = 1432,
+		icon = "memory_jichang",
+		is_open = 0
+	},
+	[1436] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "謎の招待状",
+		condition = "イベント期間中ログイン",
+		story = "JIARIHANGXIAN1",
+		id = 1436,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1437] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "予期された出会い",
+		condition = "「バケーションレーン」開始",
+		story = "JIARIHANGXIAN2",
+		id = 1437,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1438] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "訪れる「ヴィーナス」",
+		condition = "「バケーションレーン」SP1開始",
+		story = "JIARIHANGXIAN3",
+		id = 1438,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1439] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "特別な「力」",
+		condition = "「バケーションレーン」SP1開始後",
+		story = "JIARIHANGXIAN4",
+		id = 1439,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1440] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "華麗なる開幕",
+		condition = "「バケーションレーン」SP1ボスに遭遇",
+		story = "JIARIHANGXIAN5",
+		id = 1440,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1441] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "刀剣共舞",
+		condition = "「バケーションレーン」SP1ボス撃破",
+		story = "JIARIHANGXIAN6",
+		id = 1441,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1442] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "間幕",
+		condition = "「バケーションレーン」SP2開始",
+		story = "JIARIHANGXIAN7",
+		id = 1442,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1443] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "それぞれの姉妹談",
+		condition = "「バケーションレーン」SP2ボスに遭遇",
+		story = "JIARIHANGXIAN8",
+		id = 1443,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1444] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "姉妹共闘",
+		condition = "「バケーションレーン」SP2ボス撃破",
+		story = "JIARIHANGXIAN9",
+		id = 1444,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1445] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "大きさの問題？",
+		condition = "「バケーションレーン」SP3開始",
+		story = "JIARIHANGXIAN10",
+		id = 1445,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1446] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "注目の戦い",
+		condition = "「バケーションレーン」SP3ボス撃破",
+		story = "JIARIHANGXIAN11",
+		id = 1446,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1447] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "決戦の前",
+		condition = "「バケーションレーン」SP4開始",
+		story = "JIARIHANGXIAN12",
+		id = 1447,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1448] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "先輩の期待",
+		condition = "「バケーションレーン」SP4ボスに遭遇",
+		story = "JIARIHANGXIAN13",
+		id = 1448,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1449] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "期待に応え",
+		condition = "「バケーションレーン」SP4ボス撃破",
+		story = "JIARIHANGXIAN14",
+		id = 1449,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1450] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "繋がる世界",
+		condition = "「バケーションレーン」SP4クリア",
+		story = "JIARIHANGXIAN15",
+		id = 1450,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1451] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_doa",
+		title = "観測の一方",
+		condition = "？？？",
+		story = "JIARIHANGXIAN16",
+		id = 1451,
+		icon = "memory_jiarihangxian",
+		is_open = 0
+	},
+	[1452] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "「クレープはいかが？」",
+		condition = "「Venus練習試合」DAY1解放",
+		story = "JIARIHANGXIANRICHANG1",
+		id = 1452,
+		icon = "memory_jiarihangxianrichang",
+		is_open = 0
+	},
+	[1453] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "いきなり砂城作り大会",
+		condition = "「Venus練習試合」DAY3解放",
+		story = "JIARIHANGXIANRICHANG2",
+		id = 1453,
+		icon = "memory_jiarihangxianrichang",
+		is_open = 0
+	},
+	[1454] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "魅惑のポーカーレッスン",
+		condition = "「Venus練習試合」DAY5解放",
+		story = "JIARIHANGXIANRICHANG3",
+		id = 1454,
+		icon = "memory_jiarihangxianrichang",
+		is_open = 0
+	},
+	[1455] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "重桜世間話",
+		condition = "「Venus練習試合」DAY7解放",
+		story = "JIARIHANGXIANRICHANG4",
+		id = 1455,
+		icon = "memory_jiarihangxianrichang",
+		is_open = 0
+	},
+	[1461] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "なんだかいつもより……",
+		condition = "「幸せテンプレート1」開始",
+		story = "XIPEIER1",
+		id = 1461,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1462] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ヒッパーは落ち着きたい　",
+		condition = "「幸せテンプレート2」開始",
+		story = "XIPEIER2",
+		id = 1462,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1463] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "心当たりがあるのは",
+		condition = "「幸せテンプレート3」開始",
+		story = "XIPEIER3",
+		id = 1463,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1464] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "潮風香るツーリング",
+		condition = "「幸せテンプレート4」開始",
+		story = "XIPEIER4",
+		id = 1464,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1465] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "振り回されてしまうのは",
+		condition = "「幸せテンプレート5」開始",
+		story = "XIPEIER5",
+		id = 1465,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1466] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "勇気の突撃",
+		condition = "「幸せテンプレート6」開始",
+		story = "XIPEIER6",
+		id = 1466,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1467] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "あんたは一生私のもの",
+		condition = "「幸せテンプレート7」開始",
+		story = "XIPEIER7",
+		id = 1467,
+		icon = "memory_xipeier",
+		is_open = 0
+	},
+	[1471] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "猪突猛進！",
+		condition = "「GO！ポジティブ・メイド！1」開始",
+		story = "KENTE1",
+		id = 1471,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1472] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "無防備メイド！",
+		condition = "「GO！ポジティブ・メイド！2」開始",
+		story = "KENTE2",
+		id = 1472,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1473] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "感謝のキモチ！",
+		condition = "「GO！ポジティブ・メイド！3」開始",
+		story = "KENTE3",
+		id = 1473,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1474] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "意外な遭遇！",
+		condition = "「GO！ポジティブ・メイド！4」開始",
+		story = "KENTE4",
+		id = 1474,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1475] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ケント選手の秘密",
+		condition = "「GO！ポジティブ・メイド！5」開始",
+		story = "KENTE5",
+		id = 1475,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1476] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "闇夜に光る！",
+		condition = "「GO！ポジティブ・メイド！6」開始",
+		story = "KENTE6",
+		id = 1476,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1477] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ずっと一緒！",
+		condition = "「GO！ポジティブ・メイド！7」開始",
+		story = "KENTE7",
+		id = 1477,
+		icon = "memory_kente",
+		is_open = 0
+	},
+	[1481] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "デモンストレーション",
+		condition = "「虚畳なりし限象·上」開始",
+		story = "FUXIANGXIANZUOZHAN1",
+		id = 1481,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1482] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "浮島要塞",
+		condition = "A1/C1開始",
+		story = "FUXIANGXIANZUOZHAN2",
+		id = 1482,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1483] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "日常",
+		condition = "A1/C1開始後",
+		story = "FUXIANGXIANZUOZHAN3",
+		id = 1483,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1484] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "要塞制圧",
+		condition = "A1/C1敵中枢艦隊出現時",
+		story = "FUXIANGXIANZUOZHAN4",
+		id = 1484,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1485] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "コンダクター",
+		condition = "A1/C1ボスに遭遇",
+		story = "FUXIANGXIANZUOZHAN5",
+		id = 1485,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1486] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "戦果判定",
+		condition = "A1/C1クリア",
+		story = "FUXIANGXIANZUOZHAN6",
+		id = 1486,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1487] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "ノリノリペーター？",
+		condition = "A2/C2開始",
+		story = "FUXIANGXIANZUOZHAN7",
+		id = 1487,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1488] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "鏡面海域",
+		condition = "A2/C2敵中枢艦隊出現時",
+		story = "FUXIANGXIANZUOZHAN8",
+		id = 1488,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1489] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "心配",
+		condition = "A2/C2クリア",
+		story = "FUXIANGXIANZUOZHAN9",
+		id = 1489,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1490] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "来訪者",
+		condition = "A3/C3開始",
+		story = "FUXIANGXIANZUOZHAN10",
+		id = 1490,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1491] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "警戒心",
+		condition = "A3/C3開始後",
+		story = "FUXIANGXIANZUOZHAN11",
+		id = 1491,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1492] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "暴走",
+		condition = "A3/C3敵中枢艦隊と遭遇",
+		story = "FUXIANGXIANZUOZHAN12",
+		id = 1492,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1493] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "思わぬ撤退？",
+		condition = "A3/C3ボス撃破",
+		story = "FUXIANGXIANZUOZHAN13",
+		id = 1493,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1494] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_1",
+		title = "転向",
+		condition = "A3/C3クリア",
+		story = "FUXIANGXIANZUOZHAN14",
+		id = 1494,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1495] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "来訪者Ⅱ",
+		condition = "「虚畳なりし限象·下」開始",
+		story = "FUXIANGXIANZUOZHAN15",
+		id = 1495,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1496] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "計画通り",
+		condition = "B1/D1開始",
+		story = "FUXIANGXIANZUOZHAN16",
+		id = 1496,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1497] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "機材の話",
+		condition = "B1/D1敵中枢艦隊出現時",
+		story = "FUXIANGXIANZUOZHAN17",
+		id = 1497,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1498] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "折返し",
+		condition = "B1/D1ボスに遭遇",
+		story = "FUXIANGXIANZUOZHAN18",
+		id = 1498,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1499] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "誘導",
+		condition = "B1/D1ボス撃破",
+		story = "FUXIANGXIANZUOZHAN19",
+		id = 1499,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1500] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "誤解",
+		condition = "B1/D1クリア",
+		story = "FUXIANGXIANZUOZHAN20",
+		id = 1500,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1501] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "調整",
+		condition = "B2/D2開始",
+		story = "FUXIANGXIANZUOZHAN21",
+		id = 1501,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1502] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "罠",
+		condition = "B2/D2敵中枢艦隊出現時",
+		story = "FUXIANGXIANZUOZHAN22",
+		id = 1502,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1503] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "波状攻撃",
+		condition = "B2/D2ボスに遭遇",
+		story = "FUXIANGXIANZUOZHAN23",
+		id = 1503,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1504] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "決断",
+		condition = "B2/D2ボス撃破",
+		story = "FUXIANGXIANZUOZHAN24",
+		id = 1504,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1505] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "契約違反",
+		condition = "B2/D2クリア",
+		story = "FUXIANGXIANZUOZHAN25",
+		id = 1505,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1506] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "浮上",
+		condition = "B3/D3開始",
+		story = "FUXIANGXIANZUOZHAN26",
+		id = 1506,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1507] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "忠告",
+		condition = "B3/D3敵中枢艦隊出現時",
+		story = "FUXIANGXIANZUOZHAN27",
+		id = 1507,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1508] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "一番槍",
+		condition = "B3/D3ボスに遭遇",
+		story = "FUXIANGXIANZUOZHAN28",
+		id = 1508,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1509] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "夜戦",
+		condition = "B3/D3ボス撃破1回",
+		story = "FUXIANGXIANZUOZHAN29",
+		id = 1509,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1510] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "連携",
+		condition = "B3/D3ボス撃破2回",
+		story = "FUXIANGXIANZUOZHAN30",
+		id = 1510,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1511] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "突破",
+		condition = "B3/D3クリア",
+		story = "FUXIANGXIANZUOZHAN31",
+		id = 1511,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1512] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "後日談",
+		condition = "？？？",
+		story = "FUXIANGXIANZUOZHAN32",
+		id = 1512,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1513] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "揺れ戻し",
+		condition = "？？？",
+		story = "FUXIANGXIANZUOZHAN33",
+		id = 1513,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1514] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "戦闘中の出来事",
+		condition = "？？？",
+		story = "FUXIANGXIANZUOZHAN34",
+		id = 1514,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1515] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_fuxiangxian_3",
+		title = "「虚畳なりし限象」",
+		condition = "？？？",
+		story = "FUXIANGXIANZUOZHAN35",
+		id = 1515,
+		icon = "memory_fuxiangxianzuozhan",
+		is_open = 0
+	},
+	[1521] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "青空と始まりの音",
+		condition = "「お嬢様とめぐるひとときを1」開始",
+		story = "ZHUIGANZHE1",
+		id = 1521,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1522] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "知らないお茶の新発見",
+		condition = "「お嬢様とめぐるひとときを2」開始",
+		story = "ZHUIGANZHE2",
+		id = 1522,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1523] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "好奇心と甘いケーキ",
+		condition = "「お嬢様とめぐるひとときを3」開始",
+		story = "ZHUIGANZHE3",
+		id = 1523,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1524] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "郷に入っては",
+		condition = "「お嬢様とめぐるひとときを4」開始",
+		story = "ZHUIGANZHE4",
+		id = 1524,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1525] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "エキゾチックに憧れて",
+		condition = "「お嬢様とめぐるひとときを5」開始",
+		story = "ZHUIGANZHE5",
+		id = 1525,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1526] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "優雅じゃない試み？",
+		condition = "「お嬢様とめぐるひとときを6」開始",
+		story = "ZHUIGANZHE6",
+		id = 1526,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1527] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "興味と好奇心と",
+		condition = "「お嬢様とめぐるひとときを7」開始",
+		story = "ZHUIGANZHE7",
+		id = 1527,
+		icon = "memory_zhuiganzhe",
+		is_open = 0
+	},
+	[1530] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "秘密領域",
+		condition = "「暁射す氷華の嵐·上」開始",
+		story = "POXIAOBINGHUA1",
+		id = 1530,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1531] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "別行動",
+		condition = "A1/C1開始",
+		story = "POXIAOBINGHUA2",
+		id = 1531,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1532] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "歴史",
+		condition = "A1/C1敵中枢艦隊出現時",
+		story = "POXIAOBINGHUA3",
+		id = 1532,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1533] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "護衛たち",
+		condition = "A1/C1ボス撃破",
+		story = "POXIAOBINGHUA4",
+		id = 1533,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1534] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "共同",
+		condition = "A2/C2開始",
+		story = "POXIAOBINGHUA5",
+		id = 1534,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1535] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "偽装",
+		condition = "A2/C2敵中枢艦隊出現時",
+		story = "POXIAOBINGHUA6",
+		id = 1535,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1536] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "意外な収穫",
+		condition = "A2/C2ボス撃破",
+		story = "POXIAOBINGHUA7",
+		id = 1536,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1537] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "潜水指揮艦",
+		condition = "A2/C2クリア",
+		story = "POXIAOBINGHUA8",
+		id = 1537,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1538] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "ミラー・アンダー・シー",
+		condition = "A3/C3開始",
+		story = "POXIAOBINGHUA9",
+		id = 1538,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1539] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "避難所",
+		condition = "A3/C3敵中枢艦隊出現時",
+		story = "POXIAOBINGHUA10",
+		id = 1539,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1540] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "防衛施設",
+		condition = "A3/C3ボスに遭遇",
+		story = "POXIAOBINGHUA11",
+		id = 1540,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1541] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "渦巻",
+		condition = "A3/C3ボス撃破1回",
+		story = "POXIAOBINGHUA12",
+		id = 1541,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1542] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "制御室",
+		condition = "A3/C3ボス撃破2回",
+		story = "POXIAOBINGHUA13",
+		id = 1542,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1543] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_2",
+		title = "秘密都市",
+		condition = "A3/C3クリア",
+		story = "POXIAOBINGHUA14",
+		id = 1543,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1544] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "ストリング・Ⅰ",
+		condition = "「暁射す氷華の嵐·下」開始",
+		story = "POXIAOBINGHUA15",
+		id = 1544,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1545] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "光の城",
+		condition = "B1/D1開始",
+		story = "POXIAOBINGHUA16",
+		id = 1545,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1546] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "フォトン、スプリーム",
+		condition = "B1/D1ボス撃破",
+		story = "POXIAOBINGHUA17",
+		id = 1546,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1547] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "ストリング・ⅱ",
+		condition = "B2/D2開始",
+		story = "POXIAOBINGHUA18",
+		id = 1547,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1548] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "視線",
+		condition = "B2/D2開始後",
+		story = "POXIAOBINGHUA19",
+		id = 1548,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1549] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "計画艦",
+		condition = "B2/D2敵中枢艦隊出現時",
+		story = "POXIAOBINGHUA20",
+		id = 1549,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1550] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "ピック",
+		condition = "B2/D2ボス撃破",
+		story = "POXIAOBINGHUA21",
+		id = 1550,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1551] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "ストリング・ⅲ",
+		condition = "B3/D3開始",
+		story = "POXIAOBINGHUA22",
+		id = 1551,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1552] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "警報",
+		condition = "B3/D3開始後",
+		story = "POXIAOBINGHUA23",
+		id = 1552,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1553] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "記録機構",
+		condition = "B3/D3 BOSS出现",
+		story = "POXIAOBINGHUA24",
+		id = 1553,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1554] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "再現の光",
+		condition = "B3/D3ボスに遭遇",
+		story = "POXIAOBINGHUA25",
+		id = 1554,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1555] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "残光",
+		condition = "B3/D3ボス撃破1回",
+		story = "POXIAOBINGHUA26",
+		id = 1555,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1556] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "戦果",
+		condition = "B3/D3クリア",
+		story = "POXIAOBINGHUA27",
+		id = 1556,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1557] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "意見交換",
+		condition = "？？？",
+		story = "POXIAOBINGHUA28",
+		id = 1557,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1558] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "「覚醒」",
+		condition = "？？？",
+		story = "POXIAOBINGHUA29",
+		id = 1558,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1559] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "未来",
+		condition = "？？？",
+		story = "POXIAOBINGHUA30",
+		id = 1559,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1560] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_cccpv2_10",
+		title = "観察",
+		condition = "？？？",
+		story = "POXIAOBINGHUA31",
+		id = 1560,
+		icon = "memory_poxiaobinghua",
+		is_open = 0
+	},
+	[1561] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "それは恋を呼ぶ季節",
+		condition = "「それは恋を呼ぶ季節1」開始",
+		story = "GELASIGE1",
+		id = 1561,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1562] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "そういう関係じゃないんだからね",
+		condition = "「それは恋を呼ぶ季節2」開始",
+		story = "GELASIGE2",
+		id = 1562,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1563] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "誰がおしどりですか！",
+		condition = "「それは恋を呼ぶ季節3」開始",
+		story = "GELASIGE3",
+		id = 1563,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1564] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "顔が近いですよっ！",
+		condition = "「それは恋を呼ぶ季節4」開始",
+		story = "GELASIGE4",
+		id = 1564,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1565] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "グラスゴーさんっていうんですね",
+		condition = "「それは恋を呼ぶ季節5」開始",
+		story = "GELASIGE5",
+		id = 1565,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1566] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "好きで……いてくれるんですか？",
+		condition = "「それは恋を呼ぶ季節6」開始",
+		story = "GELASIGE6",
+		id = 1566,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1567] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "あぁ、びっくりした！",
+		condition = "「それは恋を呼ぶ季節7」開始",
+		story = "GELASIGE7",
+		id = 1567,
+		icon = "memory_gelasige",
+		is_open = 0
+	},
+	[1571] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "執務室の先客",
+		condition = "「颯爽の「白」1」開始",
+		story = "BEILALUOSI1",
+		id = 1571,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1572] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "狙いを定めて",
+		condition = "「颯爽の「白」2」開始",
+		story = "BEILALUOSI2",
+		id = 1572,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1573] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ウェルカムトゥ母港！",
+		condition = "「颯爽の「白」3」開始",
+		story = "BEILALUOSI3",
+		id = 1573,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1574] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ベラルーシアという艦船",
+		condition = "「颯爽の「白」4」開始",
+		story = "BEILALUOSI4",
+		id = 1574,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1575] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "朦朧の中",
+		condition = "「颯爽の「白」5」開始",
+		story = "BEILALUOSI5",
+		id = 1575,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1576] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "清々しい朝",
+		condition = "「颯爽の「白」6」開始",
+		story = "BEILALUOSI6",
+		id = 1576,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1577] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "執務室にて",
+		condition = "「颯爽の「白」7」開始",
+		story = "BEILALUOSI7",
+		id = 1577,
+		icon = "memory_beilaluosi",
+		is_open = 0
+	},
+	[1581] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "作業依頼（クエスト）お受けします",
+		condition = "「デンバーの母港クエスト！1」開始",
+		story = "DANFO1",
+		id = 1581,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1582] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "初のクエスト、初のパーティ",
+		condition = "「デンバーの母港クエスト！2」開始",
+		story = "DANFO2",
+		id = 1582,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1583] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "騎士は助言が必要",
+		condition = "「デンバーの母港クエスト！3」開始",
+		story = "DANFO3",
+		id = 1583,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1584] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "騎士の姉と妹",
+		condition = "「デンバーの母港クエスト！4」開始",
+		story = "DANFO4",
+		id = 1584,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1585] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ライバルの依頼",
+		condition = "「デンバーの母港クエスト！5」開始",
+		story = "DANFO5",
+		id = 1585,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1586] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "いざ激突",
+		condition = "「デンバーの母港クエスト！6」開始",
+		story = "DANFO6",
+		id = 1586,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1587] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "まっすぐな誓い",
+		condition = "「デンバーの母港クエスト！7」開始",
+		story = "DANFO7",
+		id = 1587,
+		icon = "memory_danfo",
+		is_open = 0
+	},
+	[1588] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_story_outdoor",
+		title = "ブリと黄金の秘宝・sp",
+		condition = "？？？",
+		story = "HUANGJINDEMIBAO4",
+		id = 1588,
+		icon = "memory_huangjindemibao",
+		is_open = 0
+	},
+	[1591] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "みつめてパワー",
+		condition = "「3つ星プレミアム恋物語1」開始",
+		story = "AILUNSAMUNA1",
+		id = 1591,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1592] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "中身より特典？",
+		condition = "「3つ星プレミアム恋物語2」開始",
+		story = "AILUNSAMUNA2",
+		id = 1592,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1593] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "趣味に関して",
+		condition = "「3つ星プレミアム恋物語3」開始",
+		story = "AILUNSAMUNA3",
+		id = 1593,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1594] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ガラスに映されたデート",
+		condition = "「3つ星プレミアム恋物語4」開始",
+		story = "AILUNSAMUNA4",
+		id = 1594,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1595] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "夕日に照らされたディナー",
+		condition = "「3つ星プレミアム恋物語5」開始",
+		story = "AILUNSAMUNA5",
+		id = 1595,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1596] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ご褒美？へのお礼について",
+		condition = "「3つ星プレミアム恋物語6」開始",
+		story = "AILUNSAMUNA6",
+		id = 1596,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1597] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "本当にほしいものは",
+		condition = "「3つ星プレミアム恋物語7」開始",
+		story = "AILUNSAMUNA7",
+		id = 1597,
+		icon = "memory_ailunsamuna",
+		is_open = 0
+	},
+	[1601] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "マエストラーレのおさらい",
+		condition = "「讃える復興の迷路·上」開始",
+		story = "FUXINGDEZANMEISHI1",
+		id = 1601,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1602] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "リットリオの出航",
+		condition = "A1/C1開始",
+		story = "FUXINGDEZANMEISHI2",
+		id = 1602,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1603] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "アブルッツィの巡視",
+		condition = "A1/C1開始後",
+		story = "FUXINGDEZANMEISHI3",
+		id = 1603,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1604] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "レッコの歴史勉強",
+		condition = "A1/C1敵中枢艦隊出現時",
+		story = "FUXINGDEZANMEISHI4",
+		id = 1604,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1605] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "弱敵の襲来",
+		condition = "A1/C1ボスに遭遇",
+		story = "FUXINGDEZANMEISHI5",
+		id = 1605,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1606] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "トリチェリが見つけた島",
+		condition = "A1/C1ボス撃破",
+		story = "FUXINGDEZANMEISHI6",
+		id = 1606,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1607] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "アクィラの発進",
+		condition = "A2/C2開始",
+		story = "FUXINGDEZANMEISHI7",
+		id = 1607,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1608] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "ヴェネトの方針",
+		condition = "A2/C2敵中枢艦隊出現時",
+		story = "FUXINGDEZANMEISHI8",
+		id = 1608,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1609] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "地中海の鏡面海域",
+		condition = "A2/C2ボス撃破",
+		story = "FUXINGDEZANMEISHI9",
+		id = 1609,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1610] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "大迷宮顕現",
+		condition = "A3/C3開始",
+		story = "FUXINGDEZANMEISHI10",
+		id = 1610,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1611] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "信頼の鼓動",
+		condition = "A3/C3開始後",
+		story = "FUXINGDEZANMEISHI11",
+		id = 1611,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1612] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "トリチェリの案内",
+		condition = "A3/C3敵中枢艦隊と遭遇",
+		story = "FUXINGDEZANMEISHI12",
+		id = 1612,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1613] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "迷宮でのお茶会",
+		condition = "A3/C3ボス撃破",
+		story = "FUXINGDEZANMEISHI13",
+		id = 1613,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1614] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_1",
+		title = "迷宮探索ブリーフィング",
+		condition = "A3/C3クリア",
+		story = "FUXINGDEZANMEISHI14",
+		id = 1614,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1615] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "レッコ船長の芸術談義？",
+		condition = "「讃える復興の迷路·下」開始",
+		story = "FUXINGDEZANMEISHI15",
+		id = 1615,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1616] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "栄光は塗装にあり？",
+		condition = "B1/D1開始",
+		story = "FUXINGDEZANMEISHI16",
+		id = 1616,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1617] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "航路はサディアに通ず",
+		condition = "B1/D1ボスに遭遇",
+		story = "FUXINGDEZANMEISHI17",
+		id = 1617,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1618] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "迷路変化",
+		condition = "B1/D1ボス撃破",
+		story = "FUXINGDEZANMEISHI18",
+		id = 1618,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1619] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "トリチェリの名推理？",
+		condition = "B2/D2開始",
+		story = "FUXINGDEZANMEISHI19",
+		id = 1619,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1620] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "ヴェネトと連絡会議",
+		condition = "B2/D2開始後",
+		story = "FUXINGDEZANMEISHI20",
+		id = 1620,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1621] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "「駒」の歌の始まり",
+		condition = "B2/D2敵中枢艦隊出現時",
+		story = "FUXINGDEZANMEISHI21",
+		id = 1621,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1622] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "経験値稼ぎ？",
+		condition = "B2/D2ボスに遭遇",
+		story = "FUXINGDEZANMEISHI22",
+		id = 1622,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1623] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "誘いのギミック",
+		condition = "B2/D2ボス撃破1回",
+		story = "FUXINGDEZANMEISHI23",
+		id = 1623,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1624] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "リットリオとヴェネト",
+		condition = "B2/D2ボス撃破2回",
+		story = "FUXINGDEZANMEISHI24",
+		id = 1624,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1625] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "狙いはやっぱり！",
+		condition = "B2/D2クリア",
+		story = "FUXINGDEZANMEISHI25",
+		id = 1625,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1626] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "アクィラの翼",
+		condition = "B3/D3開始",
+		story = "FUXINGDEZANMEISHI26",
+		id = 1626,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1627] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "意外と難しい？",
+		condition = "B3/D3開始後",
+		story = "FUXINGDEZANMEISHI27",
+		id = 1627,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1628] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "予告：雪玉ちゃん",
+		condition = "B3/D3敵中枢艦隊出現時",
+		story = "FUXINGDEZANMEISHI28",
+		id = 1628,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1629] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "テスターの実験",
+		condition = "B3/D3敵中枢艦隊と遭遇",
+		story = "FUXINGDEZANMEISHI29",
+		id = 1629,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1630] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "ジャミング砲撃",
+		condition = "B3/D3ボス撃破1回",
+		story = "FUXINGDEZANMEISHI30",
+		id = 1630,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1631] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "援軍",
+		condition = "B3/D3ボス撃破2回",
+		story = "FUXINGDEZANMEISHI31",
+		id = 1631,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1632] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "凱旋、そして――",
+		condition = "B3/D3クリア",
+		story = "FUXINGDEZANMEISHI32",
+		id = 1632,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1633] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "神速の出立",
+		condition = "？？？",
+		story = "FUXINGDEZANMEISHI33",
+		id = 1633,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1634] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "来襲？",
+		condition = "？？？",
+		story = "FUXINGDEZANMEISHI34",
+		id = 1634,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1635] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "連絡",
+		condition = "？？？",
+		story = "FUXINGDEZANMEISHI35",
+		id = 1635,
+		icon = "memory_fuxingdezanmeishi",
+		is_open = 0
+	},
+	[1641] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "嵐の起こった翌日に",
+		condition = "「世話焼き娘はダテじゃない1」開始",
+		story = "SHIYU1",
+		id = 1641,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1642] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "山城姉さんのためなら",
+		condition = "「世話焼き娘はダテじゃない2」開始",
+		story = "SHIYU2",
+		id = 1642,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1643] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "お掃除開始！",
+		condition = "「世話焼き娘はダテじゃない3」開始",
+		story = "SHIYU3",
+		id = 1643,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1644] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "緑に気をつけなさい",
+		condition = "「世話焼き娘はダテじゃない4」開始",
+		story = "SHIYU4",
+		id = 1644,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1645] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "世話焼きの理由",
+		condition = "「世話焼き娘はダテじゃない5」開始",
+		story = "SHIYU5",
+		id = 1645,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1646] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "扉向こうの不穏",
+		condition = "「世話焼き娘はダテじゃない6」開始",
+		story = "SHIYU6",
+		id = 1646,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1647] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "時雨様と末永く",
+		condition = "「世話焼き娘はダテじゃない7」開始",
+		story = "SHIYU7",
+		id = 1647,
+		icon = "memory_shiyu",
+		is_open = 0
+	},
+	[1651] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "助けて！アクィラの指揮官さま！",
+		condition = "「お嬢様学習帳1」開始",
+		story = "TIANYING1",
+		id = 1651,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1652] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "威光輝かしく優雅レッスン",
+		condition = "「お嬢様学習帳2」開始",
+		story = "TIANYING2",
+		id = 1652,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1653] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "こなす？こなさせる？",
+		condition = "「お嬢様学習帳3」開始",
+		story = "TIANYING3",
+		id = 1653,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1654] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "演習と戦闘訓練",
+		condition = "「お嬢様学習帳4」開始",
+		story = "TIANYING4",
+		id = 1654,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1655] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "再チャレンジ",
+		condition = "「お嬢様学習帳5」開始",
+		story = "TIANYING5",
+		id = 1655,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1656] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "足りなかったもの",
+		condition = "「お嬢様学習帳6」開始",
+		story = "TIANYING6",
+		id = 1656,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1657] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "アクィラの指揮官さま",
+		condition = "「お嬢様学習帳7」開始",
+		story = "TIANYING7",
+		id = 1657,
+		icon = "memory_tianying",
+		is_open = 0
+	},
+	[1661] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "「再現」の記録・Ⅰ",
+		condition = "「再現記録」1日目解放限定任務クリア",
+		story = "YINSEDANGAN1",
+		id = 1661,
+		icon = "memory_yinsedangan",
+		is_open = 0
+	},
+	[1662] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "「再現」の記録・Ⅱ",
+		condition = "「再現記録」3日目解放限定任務クリア",
+		story = "YINSEDANGAN2",
+		id = 1662,
+		icon = "memory_yinsedangan",
+		is_open = 0
+	},
+	[1663] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "「再現」の記録・Ⅲ",
+		condition = "「再現記録」5日目解放限定任務クリア",
+		story = "YINSEDANGAN3",
+		id = 1663,
+		icon = "memory_yinsedangan",
+		is_open = 0
+	},
+	[1664] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "「再現」の記録・Ⅳ",
+		condition = "「再現記録」7日目解放限定任務クリア",
+		story = "YINSEDANGAN4",
+		id = 1664,
+		icon = "memory_yinsedangan",
+		is_open = 0
+	},
+	[1671] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "波の音",
+		condition = "「やさしくて静かであたたかくて1」開始",
+		story = "U471",
+		id = 1671,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1672] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "静かな来訪者",
+		condition = "「やさしくて静かであたたかくて2」開始",
+		story = "U472",
+		id = 1672,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1673] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "プレゼント",
+		condition = "「やさしくて静かであたたかくて3」開始",
+		story = "U473",
+		id = 1673,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1674] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "大きな声の来訪者",
+		condition = "「やさしくて静かであたたかくて4」開始",
+		story = "U474",
+		id = 1674,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1675] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "落ち着かない場所",
+		condition = "「やさしくて静かであたたかくて5」開始",
+		story = "U475",
+		id = 1675,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1676] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "一匹狼として",
+		condition = "「やさしくて静かであたたかくて6」開始",
+		story = "U476",
+		id = 1676,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1677] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "言葉にしなくても……",
+		condition = "「やさしくて静かであたたかくて7」開始",
+		story = "U477",
+		id = 1677,
+		icon = "memory_u47",
+		is_open = 0
+	},
+	[1681] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "指揮官、帰還",
+		condition = "「讃える復興の迷路·上」開始",
+		story = "JINGWEILUOXUAN1",
+		id = 1681,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1682] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "黒き竜の目覚め",
+		condition = "A1/C1開始",
+		story = "JINGWEILUOXUAN2",
+		id = 1682,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1683] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "ポジショニング",
+		condition = "A1/C1開始後",
+		story = "JINGWEILUOXUAN3",
+		id = 1683,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1684] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "敵情あり",
+		condition = "A1/C1敵中枢艦隊出現時",
+		story = "JINGWEILUOXUAN4",
+		id = 1684,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1685] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "反転",
+		condition = "A1/C1ボスに遭遇",
+		story = "JINGWEILUOXUAN5",
+		id = 1685,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1686] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "情報と動向",
+		condition = "A1/C1ボス撃破",
+		story = "JINGWEILUOXUAN6",
+		id = 1686,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1687] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "異界？",
+		condition = "A1/C1クリア",
+		story = "JINGWEILUOXUAN7",
+		id = 1687,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1688] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "AF基地",
+		condition = "A2/C2開始",
+		story = "JINGWEILUOXUAN8",
+		id = 1688,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1689] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "モリソンとクマちゃん",
+		condition = "A2/C2開始後",
+		story = "JINGWEILUOXUAN9",
+		id = 1689,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1690] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "再現の駒",
+		condition = "A2/C2敵中枢艦隊出現時",
+		story = "JINGWEILUOXUAN10",
+		id = 1690,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1691] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "不完全の「再現」",
+		condition = "A2/C2ボス撃破",
+		story = "JINGWEILUOXUAN11",
+		id = 1691,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1692] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "思い出すこと",
+		condition = "A2/C2クリア",
+		story = "JINGWEILUOXUAN12",
+		id = 1692,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1693] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "役割定理",
+		condition = "A3/C3開始",
+		story = "JINGWEILUOXUAN13",
+		id = 1693,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1694] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "もう片方",
+		condition = "A3/C3敵中枢艦隊出現時",
+		story = "JINGWEILUOXUAN14",
+		id = 1694,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1695] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "夢の介入",
+		condition = "A3/C3ボス撃破",
+		story = "JINGWEILUOXUAN15",
+		id = 1695,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1696] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_1",
+		title = "定められた記憶",
+		condition = "A3/C3クリア",
+		story = "JINGWEILUOXUAN16",
+		id = 1696,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1697] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "海霧の影",
+		condition = "「讃える復興の迷路·下」開始",
+		story = "JINGWEILUOXUAN17",
+		id = 1697,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1698] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "無言の人形たち",
+		condition = "B1/D1開始",
+		story = "JINGWEILUOXUAN18",
+		id = 1698,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1699] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "応答なし",
+		condition = "B1/D1ボスに遭遇",
+		story = "JINGWEILUOXUAN19",
+		id = 1699,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1700] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "動き出す運命",
+		condition = "B1/D1ボス撃破",
+		story = "JINGWEILUOXUAN20",
+		id = 1700,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1701] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "影のヘレナ",
+		condition = "B1/D1クリア",
+		story = "JINGWEILUOXUAN21",
+		id = 1701,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1702] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "急行",
+		condition = "B2/D2開始",
+		story = "JINGWEILUOXUAN22",
+		id = 1702,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1703] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "不可視の敵",
+		condition = "B2/D2敵中枢艦隊出現時",
+		story = "JINGWEILUOXUAN23",
+		id = 1703,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1704] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "時計仕掛けの世界",
+		condition = "B2/D2ボスに遭遇",
+		story = "JINGWEILUOXUAN24",
+		id = 1704,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1705] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "転送装置",
+		condition = "B2/D2クリア",
+		story = "JINGWEILUOXUAN25",
+		id = 1705,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1706] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "再開",
+		condition = "B3/D3開始",
+		story = "JINGWEILUOXUAN26",
+		id = 1706,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1707] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "最終決戦",
+		condition = "B3/D3ボスに遭遇",
+		story = "JINGWEILUOXUAN27",
+		id = 1707,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1708] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "META",
+		condition = "遭遇B3/D3 BOSS",
+		story = "JINGWEILUOXUAN28",
+		id = 1708,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1709] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "暴走",
+		condition = "B3/D3ボス撃破1回",
+		story = "JINGWEILUOXUAN29",
+		id = 1709,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1710] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "来る日の支援",
+		condition = "B3/D3ボス撃破2回",
+		story = "JINGWEILUOXUAN30",
+		id = 1710,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1711] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "撃退",
+		condition = "B3/D3クリア",
+		story = "JINGWEILUOXUAN31",
+		id = 1711,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1712] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg_luoxuan_5",
+		title = "書類調査",
+		condition = "？？？",
+		story = "JINGWEILUOXUAN32",
+		id = 1712,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1713] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_italyv2_3",
+		title = "設定向上",
+		condition = "？？？",
+		story = "JINGWEILUOXUAN33",
+		id = 1713,
+		icon = "memory_jingweiluoxuan",
+		is_open = 0
+	},
+	[1716] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "期待してるからね！",
+		condition = "「素直になれないキモチ1」開始",
+		story = "NAERXUN1",
+		id = 1716,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1717] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "見透かさないでよ！",
+		condition = "「素直になれないキモチ2」開始",
+		story = "NAERXUN2",
+		id = 1717,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1718] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "聞き返してるんじゃないわよ！",
+		condition = "「素直になれないキモチ3」開始",
+		story = "NAERXUN3",
+		id = 1718,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1719] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "この話は終わりっ！",
+		condition = "「素直になれないキモチ4」開始",
+		story = "NAERXUN4",
+		id = 1719,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1720] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "反応しなさいよ！",
+		condition = "「素直になれないキモチ5」開始",
+		story = "NAERXUN5",
+		id = 1720,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1721] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "言いたかったことが一つだけ",
+		condition = "「素直になれないキモチ6」開始",
+		story = "NAERXUN6",
+		id = 1721,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1722] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "私はいつだって期待してるんだから！",
+		condition = "「素直になれないキモチ7」開始",
+		story = "NAERXUN7",
+		id = 1722,
+		icon = "memory_naerxun",
+		is_open = 0
+	},
+	[1725] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "マーメイド？",
+		condition = "「ティラミス・マーマレード1」開始",
+		story = "BOYIXI1",
+		id = 1725,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1726] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ルーキー秘書官艦",
+		condition = "「ティラミス・マーマレード2」開始",
+		story = "BOYIXI2",
+		id = 1726,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1727] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "買い物",
+		condition = "「ティラミス・マーマレード3」開始",
+		story = "BOYIXI3",
+		id = 1727,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1728] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "負けそう？",
+		condition = "「ティラミス・マーマレード4」開始",
+		story = "BOYIXI4",
+		id = 1728,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1729] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "見えない笑顔",
+		condition = "「ティラミス・マーマレード5」開始",
+		story = "BOYIXI5",
+		id = 1729,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1730] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "約束通り",
+		condition = "「ティラミス・マーマレード6」開始",
+		story = "BOYIXI6",
+		id = 1730,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1731] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ティラミスの甘さと",
+		condition = "「ティラミス・マーマレード7」開始",
+		story = "BOYIXI7",
+		id = 1731,
+		icon = "memory_boyixi",
+		is_open = 0
+	},
+	[1732] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "新しい旅-チェシャー",
+		condition = "特別計画艦強化レベル30達成",
+		story = "LUCK29903",
+		id = 1732,
+		icon = "memory_chaijun",
+		is_open = 0
+	},
+	[1733] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "新しい旅-シャンパーニュ",
+		condition = "特別計画艦強化レベル30達成",
+		story = "LUCK89902",
+		id = 1733,
+		icon = "memory_xiangbin",
+		is_open = 0
+	},
+	[1734] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "新しい旅-オーディン",
+		condition = "特別計画艦強化レベル30達成",
+		story = "LUCK49904",
+		id = 1734,
+		icon = "memory_aoding",
+		is_open = 0
+	},
+	[1735] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "新しい旅-マインツ",
+		condition = "特別計画艦強化レベル30達成",
+		story = "LUCK49903",
+		id = 1735,
+		icon = "memory_meiyinci",
+		is_open = 0
+	},
+	[1736] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "探し物はなんですか",
+		condition = "「桜流しの日のあとで1」開始",
+		story = "FUSANG1",
+		id = 1736,
+		icon = "memory_fusang",
+		is_open = 0
+	},
+	[1737] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "あまいお買い物",
+		condition = "「桜流しの日のあとで2」開始",
+		story = "FUSANG2",
+		id = 1737,
+		icon = "memory_fusang",
+		is_open = 0
+	},
+	[1738] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "メールは苦手？",
+		condition = "「桜流しの日のあとで3」開始",
+		story = "FUSANG3",
+		id = 1738,
+		icon = "memory_fusang",
+		is_open = 0
+	},
+	[1739] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "約束",
+		condition = "「桜流しの日のあとで4」開始",
+		story = "FUSANG4",
+		id = 1739,
+		icon = "memory_fusang",
+		is_open = 0
+	},
+	[1740] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "笑顔でいてね",
+		condition = "「桜流しの日のあとで5」開始",
+		story = "FUSANG5",
+		id = 1740,
+		icon = "memory_fusang",
+		is_open = 0
+	},
+	[1741] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "失意の雨",
+		condition = "「桜流しの日のあとで6」開始",
+		story = "FUSANG6",
+		id = 1741,
+		icon = "memory_fusang",
+		is_open = 0
+	},
+	[1742] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "小さな幸せ",
+		condition = "「桜流しの日のあとで7」開始",
+		story = "FUSANG7",
+		id = 1742,
+		icon = "memory_fusang",
+		is_open = 0
+	},
+	[1746] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "①アイドルについて",
+		condition = "饅頭渡し会を1回プレイ",
+		story = "OUXIANGDASHIRICHANG1",
+		id = 1746,
+		icon = "memory_ouxiangdashirichang",
+		is_open = 0
+	},
+	[1747] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "②母港について",
+		condition = "饅頭渡し会を3回プレイ",
+		story = "OUXIANGDASHIRICHANG2",
+		id = 1747,
+		icon = "memory_ouxiangdashirichang",
+		is_open = 0
+	},
+	[1748] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "③レッスンについて",
+		condition = "饅頭渡し会を5回プレイ",
+		story = "OUXIANGDASHIRICHANG3",
+		id = 1748,
+		icon = "memory_ouxiangdashirichang",
+		is_open = 0
+	},
+	[1749] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "④オフとゲームについて",
+		condition = "饅頭渡し会を7回プレイ",
+		story = "OUXIANGDASHIRICHANG4",
+		id = 1749,
+		icon = "memory_ouxiangdashirichang",
+		is_open = 0
+	},
+	[1751] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "架ける、海色のディスティネーション",
+		condition = "「海に響くアイドルの歌」開始",
+		story = "OUXIANGDASHIGUANQIA1",
+		id = 1751,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1752] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "マジで…！？",
+		condition = "「海に響くアイドルの歌」SP1開始",
+		story = "OUXIANGDASHIGUANQIA2",
+		id = 1752,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1753] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "鏡海のアプローチ",
+		condition = "「海に響くアイドルの歌」SP1ボスに遭遇",
+		story = "OUXIANGDASHIGUANQIA3",
+		id = 1753,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1754] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "絶険",
+		condition = "「海に響くアイドルの歌」SP1クリア",
+		story = "OUXIANGDASHIGUANQIA4",
+		id = 1754,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1755] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "体操、レッスン、スマイルで！",
+		condition = "「海に響くアイドルの歌」SP2開始",
+		story = "OUXIANGDASHIGUANQIA5",
+		id = 1755,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1756] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "準備完了！",
+		condition = "「海に響くアイドルの歌」SP2ボスに遭遇",
+		story = "OUXIANGDASHIGUANQIA6",
+		id = 1756,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1757] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "ビジョナリー・エネミー",
+		condition = "「海に響くアイドルの歌」SP2ボス撃破",
+		story = "OUXIANGDASHIGUANQIA7",
+		id = 1757,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1758] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "勇往邁進！",
+		condition = "「海に響くアイドルの歌」SP2クリア",
+		story = "OUXIANGDASHIGUANQIA8",
+		id = 1758,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1759] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "まだまだ旅の途中で",
+		condition = "「海に響くアイドルの歌」SP3開始",
+		story = "OUXIANGDASHIGUANQIA9",
+		id = 1759,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1760] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "天と海とライブの港",
+		condition = "「海に響くアイドルの歌」SP3戦闘勝利",
+		story = "OUXIANGDASHIGUANQIA10",
+		id = 1760,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1761] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "勇気の星を輝かせて",
+		condition = "「海に響くアイドルの歌」SP3ボスに遭遇",
+		story = "OUXIANGDASHIGUANQIA11",
+		id = 1761,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1762] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "運命への第一歩",
+		condition = "「海に響くアイドルの歌」SP3クリア",
+		story = "OUXIANGDASHIGUANQIA12",
+		id = 1762,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1763] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "奇跡のライブへ",
+		condition = "「海に響くアイドルの歌」SP4開始",
+		story = "OUXIANGDASHIGUANQIA13",
+		id = 1763,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1764] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "全力、KAN-SEN＆アイドル",
+		condition = "「海に響くアイドルの歌」SP4ボスに遭遇",
+		story = "OUXIANGDASHIGUANQIA14",
+		id = 1764,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1765] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "私達の道、私達の歌①",
+		condition = "「海に響くアイドルの歌」SP4ボス撃破",
+		story = "OUXIANGDASHIGUANQIA15",
+		id = 1765,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1766] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_map_idom",
+		title = "私達の道、私達の歌②",
+		condition = "「海に響くアイドルの歌」SP4クリア",
+		story = "OUXIANGDASHIGUANQIA16",
+		id = 1766,
+		icon = "memory_ouxiangdashiguanqia",
+		is_open = 0
+	},
+	[1771] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "非常事態！？",
+		condition = "「凛として鬼の如く1」開始",
+		story = "GUINU1",
+		id = 1771,
+		icon = "memory_guinu",
+		is_open = 0
+	},
+	[1772] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "実力差",
+		condition = "「凛として鬼の如く2」開始",
+		story = "GUINU2",
+		id = 1772,
+		icon = "memory_guinu",
+		is_open = 0
+	},
+	[1773] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "鬼に非ず",
+		condition = "「凛として鬼の如く3」開始",
+		story = "GUINU3",
+		id = 1773,
+		icon = "memory_guinu",
+		is_open = 0
+	},
+	[1774] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "唯一無二のもの",
+		condition = "「凛として鬼の如く4」開始",
+		story = "GUINU4",
+		id = 1774,
+		icon = "memory_guinu",
+		is_open = 0
+	},
+	[1775] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "身を挺して",
+		condition = "「凛として鬼の如く5」開始",
+		story = "GUINU5",
+		id = 1775,
+		icon = "memory_guinu",
+		is_open = 0
+	},
+	[1776] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ポーカーフェイス",
+		condition = "「凛として鬼の如く6」開始",
+		story = "GUINU6",
+		id = 1776,
+		icon = "memory_guinu",
+		is_open = 0
+	},
+	[1777] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "不意の一本",
+		condition = "「凛として鬼の如く7」開始",
+		story = "GUINU7",
+		id = 1777,
+		icon = "memory_guinu",
+		is_open = 0
+	},
+	[1781] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "元気ハツラツ",
+		condition = "「サンシャイン・デュエル！1」開始",
+		story = "DAHUANGFENG1",
+		id = 1781,
+		icon = "memory_dahuangfeng",
+		is_open = 0
+	},
+	[1782] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "無口な友達",
+		condition = "「サンシャイン・デュエル！2」開始",
+		story = "DAHUANGFENG2",
+		id = 1782,
+		icon = "memory_dahuangfeng",
+		is_open = 0
+	},
+	[1783] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "姉妹艦の話題",
+		condition = "「サンシャイン・デュエル！3」開始",
+		story = "DAHUANGFENG3",
+		id = 1783,
+		icon = "memory_dahuangfeng",
+		is_open = 0
+	},
+	[1784] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "ライバル登場？",
+		condition = "「サンシャイン・デュエル！4」開始",
+		story = "DAHUANGFENG4",
+		id = 1784,
+		icon = "memory_dahuangfeng",
+		is_open = 0
+	},
+	[1785] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "エンプラ姉の妹",
+		condition = "「サンシャイン・デュエル！5」開始",
+		story = "DAHUANGFENG5",
+		id = 1785,
+		icon = "memory_dahuangfeng",
+		is_open = 0
+	},
+	[1786] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "私が私であること",
+		condition = "「サンシャイン・デュエル！6」開始",
+		story = "DAHUANGFENG6",
+		id = 1786,
+		icon = "memory_dahuangfeng",
+		is_open = 0
+	},
+	[1787] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
+		title = "大好きって言うよ！",
+		condition = "「サンシャイン・デュエル！7」開始",
+		story = "DAHUANGFENG7",
+		id = 1787,
+		icon = "memory_dahuangfeng",
+		is_open = 0
+	},
+	[10000] = {
+		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "プロローグ",
 		condition = "「努力、希望と計画」開始",
 		story = "UIACT10000",
@@ -10726,9 +17667,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10001] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "立ち込める暗雲・上",
 		condition = "SP.1 開始",
 		story = "TACT10001",
@@ -10737,9 +17678,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10002] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "立ち込める暗雲・中",
 		condition = "SP.1 クリア",
 		story = "TACT10002",
@@ -10748,9 +17689,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10003] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "立ち込める暗雲・下",
 		condition = "SP.1 クリア",
 		story = "TACT10003",
@@ -10759,9 +17700,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10004] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "「Z」の反撃・上",
 		condition = "SP.2 開始",
 		story = "TACT10004",
@@ -10770,9 +17711,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10005] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "「Z」の反撃・中",
 		condition = "SP.2 ボス発見",
 		story = "TACT10005",
@@ -10781,9 +17722,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10006] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "「Z」の反撃・下",
 		condition = "SP.2 ボスと交戦",
 		story = "TACT10006",
@@ -10792,9 +17733,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10007] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "大艦巨砲の挽歌・上",
 		condition = "SP.3 開始",
 		story = "TACT10007",
@@ -10803,9 +17744,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10008] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "大艦巨砲の挽歌・中",
 		condition = "SP.3 ボスと交戦",
 		story = "TACT10008",
@@ -10814,9 +17755,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10009] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "大艦巨砲の挽歌・下",
 		condition = "SP.3 クリア",
 		story = "TACT10009",
@@ -10825,9 +17766,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10010] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "黒幕",
 		condition = "「努力、希望と計画」クリア",
 		story = "TACT10010",
@@ -10836,9 +17777,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10011] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "休暇中にて ",
 		condition = "「ロングアイランド任務1」開始",
 		story = "CHANGDAO1",
@@ -10847,9 +17788,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10012] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ノーモア・運動！ ",
 		condition = "「ロングアイランド任務2」開始",
 		story = "CHANGDAO2",
@@ -10858,9 +17799,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10013] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ノーモア・訓練！",
 		condition = "「ロングアイランド任務3」開始",
 		story = "CHANGDAO3",
@@ -10869,9 +17810,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10014] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "休暇の正しい過ごし方 ",
 		condition = "「ロングアイランド任務4」開始",
 		story = "CHANGDAO4",
@@ -10880,9 +17821,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10015] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "必殺技を喰らえ！ ",
 		condition = "「ロングアイランド任務5」開始",
 		story = "CHANGDAO5",
@@ -10891,9 +17832,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10016] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "大失敗！ ",
 		condition = "「ロングアイランド任務6」開始",
 		story = "CHANGDAO6",
@@ -10902,9 +17843,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10017] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "さらば休暇よ",
 		condition = "「ロングアイランド任務7」開始",
 		story = "CHANGDAO7",
@@ -10913,9 +17854,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10018] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 2,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "軍神の帰還",
 		condition = "三笠イベント戦クリア",
 		story = "1060000",
@@ -10924,9 +17865,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10019] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "戸惑い",
 		condition = "三笠任務2解放",
 		story = "SANLI07",
@@ -10935,9 +17876,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10020] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "祝宴会",
 		condition = "三笠任務3解放",
 		story = "SANLI08",
@@ -10946,9 +17887,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10021] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "信念",
 		condition = "三笠任務4解放",
 		story = "SANLI09",
@@ -10957,9 +17898,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10022] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ある日の綾波",
 		condition = "「最近、綾波の様子が…？」任務1解放",
 		story = "NICONICO1",
@@ -10968,9 +17909,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10023] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "弾幕が薄い！？",
 		condition = "「最近、綾波の様子が…？」任務2解放",
 		story = "NICONICO2",
@@ -10979,9 +17920,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10024] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "干物同盟！？",
 		condition = "「最近、綾波の様子が…？」任務3解放",
 		story = "NICONICO3",
@@ -10990,9 +17931,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10025] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "綾波更生計画・上",
 		condition = "「最近、綾波の様子が…？」任務4解放",
 		story = "NICONICO4",
@@ -11001,9 +17942,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10026] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "綾波更生計画・中",
 		condition = "「最近、綾波の様子が…？」任務5解放",
 		story = "NICONICO5",
@@ -11012,9 +17953,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10027] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "綾波更生計画・下",
 		condition = "「最近、綾波の様子が…？」任務6解放",
 		story = "NICONICO6",
@@ -11023,9 +17964,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10028] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "アヤナミ、出撃です！",
 		condition = "「最近、綾波の様子が…？」任務7解放",
 		story = "NICONICO7",
@@ -11034,86 +17975,86 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10029] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "問題児は港から",
-		condition = "「36年Z組ニーミ先生」任務1解放",
+		condition = "「36年Z組ニーミ先生」DAY1解放",
 		story = "TEACHER1",
 		id = 10029,
 		icon = "z23",
 		is_open = 0
 	},
 	[10030] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "プライドオブヒモノ",
-		condition = "「36年Z組ニーミ先生」任務2解放",
+		condition = "「36年Z組ニーミ先生」DAY2解放",
 		story = "TEACHER2",
 		id = 10030,
 		icon = "z23",
 		is_open = 0
 	},
 	[10031] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ここは誰ぇ？",
-		condition = "「36年Z組ニーミ先生」任務3解放",
+		condition = "「36年Z組ニーミ先生」DAY3解放",
 		story = "TEACHER3",
 		id = 10031,
 		icon = "z23",
 		is_open = 0
 	},
 	[10032] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "禁断のダブルイタズラ",
-		condition = "「36年Z組ニーミ先生」任務4解放",
+		condition = "「36年Z組ニーミ先生」DAY5解放",
 		story = "TEACHER4",
 		id = 10032,
 		icon = "z23",
 		is_open = 0
 	},
 	[10033] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "Z23の悩み",
-		condition = "「36年Z組ニーミ先生」任務5解放",
+		condition = "「36年Z組ニーミ先生」DAY7解放",
 		story = "TEACHER5",
 		id = 10033,
 		icon = "z23",
 		is_open = 0
 	},
 	[10034] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "走れニーミちゃん！",
-		condition = "「36年Z組ニーミ先生」任務6解放",
+		condition = "「36年Z組ニーミ先生」DAY9解放",
 		story = "TEACHER6",
 		id = 10034,
 		icon = "z23",
 		is_open = 0
 	},
 	[10035] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "教えてニーミ先生！",
-		condition = "「36年Z組ニーミ先生」任務7解放",
+		condition = "「36年Z組ニーミ先生」DAY10解放",
 		story = "TEACHER7",
 		id = 10035,
 		icon = "z23",
 		is_open = 0
 	},
 	[10036] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "別次元のワームホール",
 		condition = "コラボ日常編任務１解放",
 		story = "NEPU_DAILY1",
@@ -11122,9 +18063,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10037] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "持つべき者は女神！",
 		condition = "コラボ日常編任務２解放",
 		story = "NEPU_DAILY2",
@@ -11133,9 +18074,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10038] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "異文化のふれあい？",
 		condition = "コラボ日常編任務3解放",
 		story = "NEPU_DAILY3",
@@ -11144,9 +18085,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10039] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "部屋とゲーマーと私",
 		condition = "コラボ日常編任務4解放",
 		story = "NEPU_DAILY4",
@@ -11155,9 +18096,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10040] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "図書館ではお静かに",
 		condition = "コラボ日常編任務5解放",
 		story = "NEPU_DAILY5",
@@ -11166,9 +18107,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10041] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "ゲームパーティー！",
 		condition = "コラボ日常編任務6解放",
 		story = "NEPU_DAILY6",
@@ -11177,9 +18118,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10042] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "それじゃ、またねー♪",
 		condition = "コラボ日常編任務7解放",
 		story = "NEPU_DAILY7",
@@ -11188,9 +18129,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10043] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "異色海域BLACK",
 		condition = "「別次元からの来訪者」SP.1開始",
 		story = "NEPU_STAGE101",
@@ -11199,9 +18140,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10044] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "漆黒の終焉",
 		condition = "「別次元からの来訪者」SP.1クリア",
 		story = "NEPU_STAGE102",
@@ -11210,9 +18151,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10045] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "異色海域GREEN",
 		condition = "「別次元からの来訪者」SP.2開始",
 		story = "NEPU_STAGE201",
@@ -11221,9 +18162,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10046] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "深緑の終局",
 		condition = "「別次元からの来訪者」SP.2クリア",
 		story = "NEPU_STAGE202",
@@ -11232,9 +18173,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10047] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "異色海域WHITE",
 		condition = "「別次元からの来訪者」SP.3開始",
 		story = "NEPU_STAGE301",
@@ -11243,9 +18184,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10048] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "白亜の終結",
 		condition = "「別次元からの来訪者」SP.3クリア",
 		story = "NEPU_STAGE302",
@@ -11254,9 +18195,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10049] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "異色海域PURPLE",
 		condition = "「別次元からの来訪者」SP.4開始",
 		story = "NEPU_STAGE401",
@@ -11265,9 +18206,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10050] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "滅紫の終極",
 		condition = "「別次元からの来訪者」SP.4クリア",
 		story = "NEPU_STAGE402",
@@ -11276,9 +18217,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10051] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "序",
 		condition = "「墨染まりし鋼の桜」開始",
 		story = "YINGHUA1",
@@ -11287,9 +18228,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10052] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "帰還",
 		condition = "A1/C1開始",
 		story = "YINGHUA2",
@@ -11298,9 +18239,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10053] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "目的",
 		condition = "A1/C1クリア",
 		story = "YINGHUA3",
@@ -11309,9 +18250,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10054] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "契機",
 		condition = "A2/C2開始",
 		story = "YINGHUA4",
@@ -11320,9 +18261,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10055] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "姉妹",
 		condition = "A3/C3開始",
 		story = "YINGHUA5",
@@ -11331,9 +18272,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10056] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "封印",
 		condition = "A4/C4開始",
 		story = "YINGHUA6",
@@ -11342,20 +18283,20 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10057] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "護衛",
-		condition = "A4/C4ボスと交戦",
+		condition = "A4/C4ボスに遭遇",
 		story = "YINGHUA7",
 		id = 10057,
 		icon = "memory_yinghua",
 		is_open = 0
 	},
 	[10058] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "結界",
 		condition = "A4/C4クリア",
 		story = "YINGHUA8",
@@ -11364,9 +18305,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10059] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "願い",
 		condition = "「墨染まりし鋼の桜・下」開始",
 		story = "YINGHUA9",
@@ -11375,9 +18316,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10060] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "妹",
 		condition = "B1/D1開始",
 		story = "YINGHUA10",
@@ -11386,31 +18327,31 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10061] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "覚醒",
-		condition = "B1/D1ボス発見",
+		condition = "B1/D1敵中枢艦隊出現時",
 		story = "YINGHUA11",
 		id = 10061,
 		icon = "memory_yinghua3",
 		is_open = 0
 	},
 	[10062] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "奮発",
-		condition = "B1/D1ボスを撃破",
+		condition = "B1/D1ボスに遭遇",
 		story = "YINGHUA12",
 		id = 10062,
 		icon = "memory_yinghua4",
 		is_open = 0
 	},
 	[10063] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "強敵",
 		condition = "B2/D2開始",
 		story = "YINGHUA13",
@@ -11419,9 +18360,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10064] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "撃退",
 		condition = "B2/D2ボスを撃破",
 		story = "YINGHUA14",
@@ -11430,9 +18371,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10065] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "邂逅",
 		condition = "コラボ任務1解放",
 		story = "ZHUANGJIA1",
@@ -11441,9 +18382,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10066] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "急襲",
 		condition = "コラボ任務2解放",
 		story = "ZHUANGJIA2",
@@ -11452,9 +18393,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10067] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "自責",
 		condition = "コラボ任務3解放",
 		story = "ZHUANGJIA3",
@@ -11463,9 +18404,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10068] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "反抗",
 		condition = "コラボ任務4解放",
 		story = "ZHUANGJIA4",
@@ -11474,9 +18415,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10069] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "絶望",
 		condition = "コラボ任務5解放",
 		story = "ZHUANGJIA5",
@@ -11485,9 +18426,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10070] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "交錯",
 		condition = "コラボ任務6解放",
 		story = "ZHUANGJIA6",
@@ -11496,9 +18437,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10071] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "方舟",
 		condition = "コラボ任務7解放",
 		story = "ZHUANGJIA7",
@@ -11507,9 +18448,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10072] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "月夜の開幕曲 ",
 		condition = "SP1開始",
 		story = "TACT50000",
@@ -11518,9 +18459,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10073] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "遭遇",
 		condition = "SP1ボスと交戦",
 		story = "TACT50001",
@@ -11529,20 +18470,20 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10074] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "撤退",
-		condition = "通关SP1クリア",
+		condition = "SP1クリア",
 		story = "TACT50002",
 		id = 10074,
 		icon = "memory_asituoliya",
 		is_open = 0
 	},
 	[10075] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "姉妹",
 		condition = "SP2開始",
 		story = "TACT50003",
@@ -11551,9 +18492,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10076] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "混乱",
 		condition = "SP2ボスと交戦",
 		story = "TACT50004",
@@ -11562,9 +18503,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10077] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "增援",
 		condition = "SP2クリア",
 		story = "TACT50005",
@@ -11573,9 +18514,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10078] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "足掻き",
 		condition = "SP3開始",
 		story = "TACT50006",
@@ -11584,9 +18525,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10079] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "苦戦",
 		condition = "SP3ボスと交戦",
 		story = "TACT50007",
@@ -11595,9 +18536,9 @@ pg.memory_template = {
 		is_open = 0
 	},
 	[10080] = {
-		mask = "bg/bg_memory",
-		subtitle = "",
 		type = 1,
+		subtitle = "",
+		mask = "bg/bg_memory",
 		title = "開幕曲",
 		condition = "SP3クリア",
 		story = "TACT50008",
@@ -12272,6 +19213,10 @@ pg.memory_template = {
 		719,
 		720,
 		721,
+		722,
+		725,
+		726,
+		727,
 		728,
 		729,
 		730,
@@ -12580,6 +19525,633 @@ pg.memory_template = {
 		1053,
 		1054,
 		1055,
+		1056,
+		1057,
+		1058,
+		1059,
+		1060,
+		1061,
+		1062,
+		1063,
+		1064,
+		1065,
+		1066,
+		1067,
+		1068,
+		1069,
+		1070,
+		1071,
+		1072,
+		1073,
+		1074,
+		1075,
+		1076,
+		1077,
+		1078,
+		1079,
+		1080,
+		1081,
+		1082,
+		1083,
+		1084,
+		1085,
+		1086,
+		1087,
+		1088,
+		1091,
+		1092,
+		1093,
+		1094,
+		1095,
+		1096,
+		1097,
+		1098,
+		1099,
+		1100,
+		1101,
+		1102,
+		1103,
+		1104,
+		1110,
+		1111,
+		1112,
+		1113,
+		1114,
+		1115,
+		1116,
+		1117,
+		1118,
+		1119,
+		1120,
+		1121,
+		1122,
+		1123,
+		1124,
+		1125,
+		1126,
+		1127,
+		1128,
+		1129,
+		1130,
+		1131,
+		1132,
+		1133,
+		1134,
+		1135,
+		1136,
+		1137,
+		1138,
+		1139,
+		1140,
+		1141,
+		1142,
+		1143,
+		1144,
+		1145,
+		1146,
+		1147,
+		1148,
+		1149,
+		1150,
+		1151,
+		1152,
+		1153,
+		1154,
+		1155,
+		1156,
+		1157,
+		1158,
+		1159,
+		1160,
+		1161,
+		1162,
+		1163,
+		1164,
+		1165,
+		1166,
+		1167,
+		1168,
+		1169,
+		1170,
+		1171,
+		1172,
+		1173,
+		1174,
+		1175,
+		1176,
+		1177,
+		1178,
+		1179,
+		1180,
+		1181,
+		1182,
+		1183,
+		1184,
+		1185,
+		1186,
+		1187,
+		1188,
+		1189,
+		1190,
+		1191,
+		1192,
+		1193,
+		1194,
+		1195,
+		1196,
+		1197,
+		1198,
+		1199,
+		1200,
+		1201,
+		1202,
+		1203,
+		1204,
+		1205,
+		1206,
+		1207,
+		1208,
+		1209,
+		1210,
+		1211,
+		1212,
+		1213,
+		1214,
+		1215,
+		1216,
+		1217,
+		1218,
+		1219,
+		1231,
+		1232,
+		1233,
+		1234,
+		1235,
+		1236,
+		1237,
+		1238,
+		1239,
+		1240,
+		1241,
+		1242,
+		1243,
+		1244,
+		1245,
+		1246,
+		1247,
+		1248,
+		1249,
+		1250,
+		1251,
+		1252,
+		1253,
+		1254,
+		1255,
+		1256,
+		1257,
+		1258,
+		1259,
+		1260,
+		1261,
+		1262,
+		1263,
+		1264,
+		1265,
+		1266,
+		1267,
+		1268,
+		1269,
+		1270,
+		1271,
+		1272,
+		1273,
+		1274,
+		1275,
+		1276,
+		1277,
+		1281,
+		1282,
+		1283,
+		1284,
+		1285,
+		1286,
+		1287,
+		1288,
+		1289,
+		1290,
+		1291,
+		1292,
+		1293,
+		1294,
+		1295,
+		1296,
+		1297,
+		1298,
+		1299,
+		1300,
+		1301,
+		1302,
+		1303,
+		1304,
+		1305,
+		1306,
+		1307,
+		1308,
+		1309,
+		1310,
+		1311,
+		1312,
+		1313,
+		1314,
+		1315,
+		1316,
+		1317,
+		1318,
+		1319,
+		1320,
+		1321,
+		1322,
+		1323,
+		1324,
+		1325,
+		1326,
+		1327,
+		1331,
+		1332,
+		1333,
+		1334,
+		1335,
+		1336,
+		1337,
+		1341,
+		1342,
+		1343,
+		1344,
+		1345,
+		1346,
+		1347,
+		1348,
+		1349,
+		1350,
+		1351,
+		1352,
+		1353,
+		1354,
+		1355,
+		1356,
+		1357,
+		1358,
+		1359,
+		1360,
+		1361,
+		1362,
+		1363,
+		1364,
+		1365,
+		1366,
+		1367,
+		1368,
+		1369,
+		1370,
+		1371,
+		1372,
+		1373,
+		1374,
+		1375,
+		1376,
+		1377,
+		1378,
+		1379,
+		1380,
+		1381,
+		1382,
+		1386,
+		1387,
+		1388,
+		1389,
+		1390,
+		1391,
+		1392,
+		1393,
+		1394,
+		1395,
+		1401,
+		1402,
+		1403,
+		1404,
+		1405,
+		1406,
+		1407,
+		1411,
+		1412,
+		1413,
+		1414,
+		1415,
+		1416,
+		1417,
+		1418,
+		1419,
+		1420,
+		1421,
+		1422,
+		1423,
+		1424,
+		1425,
+		1426,
+		1427,
+		1428,
+		1429,
+		1430,
+		1431,
+		1432,
+		1436,
+		1437,
+		1438,
+		1439,
+		1440,
+		1441,
+		1442,
+		1443,
+		1444,
+		1445,
+		1446,
+		1447,
+		1448,
+		1449,
+		1450,
+		1451,
+		1452,
+		1453,
+		1454,
+		1455,
+		1461,
+		1462,
+		1463,
+		1464,
+		1465,
+		1466,
+		1467,
+		1471,
+		1472,
+		1473,
+		1474,
+		1475,
+		1476,
+		1477,
+		1481,
+		1482,
+		1483,
+		1484,
+		1485,
+		1486,
+		1487,
+		1488,
+		1489,
+		1490,
+		1491,
+		1492,
+		1493,
+		1494,
+		1495,
+		1496,
+		1497,
+		1498,
+		1499,
+		1500,
+		1501,
+		1502,
+		1503,
+		1504,
+		1505,
+		1506,
+		1507,
+		1508,
+		1509,
+		1510,
+		1511,
+		1512,
+		1513,
+		1514,
+		1515,
+		1521,
+		1522,
+		1523,
+		1524,
+		1525,
+		1526,
+		1527,
+		1530,
+		1531,
+		1532,
+		1533,
+		1534,
+		1535,
+		1536,
+		1537,
+		1538,
+		1539,
+		1540,
+		1541,
+		1542,
+		1543,
+		1544,
+		1545,
+		1546,
+		1547,
+		1548,
+		1549,
+		1550,
+		1551,
+		1552,
+		1553,
+		1554,
+		1555,
+		1556,
+		1557,
+		1558,
+		1559,
+		1560,
+		1561,
+		1562,
+		1563,
+		1564,
+		1565,
+		1566,
+		1567,
+		1571,
+		1572,
+		1573,
+		1574,
+		1575,
+		1576,
+		1577,
+		1581,
+		1582,
+		1583,
+		1584,
+		1585,
+		1586,
+		1587,
+		1588,
+		1591,
+		1592,
+		1593,
+		1594,
+		1595,
+		1596,
+		1597,
+		1601,
+		1602,
+		1603,
+		1604,
+		1605,
+		1606,
+		1607,
+		1608,
+		1609,
+		1610,
+		1611,
+		1612,
+		1613,
+		1614,
+		1615,
+		1616,
+		1617,
+		1618,
+		1619,
+		1620,
+		1621,
+		1622,
+		1623,
+		1624,
+		1625,
+		1626,
+		1627,
+		1628,
+		1629,
+		1630,
+		1631,
+		1632,
+		1633,
+		1634,
+		1635,
+		1641,
+		1642,
+		1643,
+		1644,
+		1645,
+		1646,
+		1647,
+		1651,
+		1652,
+		1653,
+		1654,
+		1655,
+		1656,
+		1657,
+		1661,
+		1662,
+		1663,
+		1664,
+		1671,
+		1672,
+		1673,
+		1674,
+		1675,
+		1676,
+		1677,
+		1681,
+		1682,
+		1683,
+		1684,
+		1685,
+		1686,
+		1687,
+		1688,
+		1689,
+		1690,
+		1691,
+		1692,
+		1693,
+		1694,
+		1695,
+		1696,
+		1697,
+		1698,
+		1699,
+		1700,
+		1701,
+		1702,
+		1703,
+		1704,
+		1705,
+		1706,
+		1707,
+		1708,
+		1709,
+		1710,
+		1711,
+		1712,
+		1713,
+		1716,
+		1717,
+		1718,
+		1719,
+		1720,
+		1721,
+		1722,
+		1725,
+		1726,
+		1727,
+		1728,
+		1729,
+		1730,
+		1731,
+		1732,
+		1733,
+		1734,
+		1735,
+		1736,
+		1737,
+		1738,
+		1739,
+		1740,
+		1741,
+		1742,
+		1746,
+		1747,
+		1748,
+		1749,
+		1751,
+		1752,
+		1753,
+		1754,
+		1755,
+		1756,
+		1757,
+		1758,
+		1759,
+		1760,
+		1761,
+		1762,
+		1763,
+		1764,
+		1765,
+		1766,
+		1771,
+		1772,
+		1773,
+		1774,
+		1775,
+		1776,
+		1777,
+		1781,
+		1782,
+		1783,
+		1784,
+		1785,
+		1786,
+		1787,
 		10000,
 		10001,
 		10002,
@@ -12663,5 +20235,3 @@ pg.memory_template = {
 		10080
 	}
 }
-
-return

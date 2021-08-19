@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "特混分队旗舰",
 	cd = 0,
-	picture = "0",
-	desc = "",
 	painting = 1,
 	id = 11981,
+	picture = "0",
 	castCV = "skill",
+	desc = "",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,9 +17,9 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
+			targetAniEffect = "",
 			target_choise = {
 				"TargetAllHelp",
 				"TargetNationality",
@@ -34,9 +34,9 @@ return {
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
+			targetAniEffect = "",
 			target_choise = {
 				"TargetSelf"
 			},

@@ -2,19 +2,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66941
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66961
 				}
@@ -24,19 +24,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66942
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66962
 				}
@@ -46,19 +46,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66943
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66963
 				}
@@ -68,19 +68,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66944
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66964
 				}
@@ -90,19 +90,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66945
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66965
 				}
@@ -112,19 +112,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66946
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66966
 				}
@@ -134,19 +134,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66947
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66967
 				}
@@ -156,19 +156,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66948
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66968
 				}
@@ -178,19 +178,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66949
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66969
 				}
@@ -200,19 +200,19 @@ return {
 	{
 		effect_list = {
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66950
 				}
 			},
 			{
-				targetAniEffect = "",
-				casterAniEffect = "",
 				type = "BattleSkillFire",
+				casterAniEffect = "",
 				target_choise = "TargetHarmRandom",
+				targetAniEffect = "",
 				arg_list = {
 					weapon_id = 66970
 				}
@@ -222,11 +222,11 @@ return {
 	uiEffect = "",
 	name = "",
 	cd = 0,
-	picture = "1",
-	desc = "轰炸",
 	painting = 1,
 	id = 11400,
+	picture = "1",
 	castCV = "skill",
+	desc = "轰炸",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -237,19 +237,19 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetHarmRandom",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 66940
 			}
 		},
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetHarmRandom",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 66960
 			}

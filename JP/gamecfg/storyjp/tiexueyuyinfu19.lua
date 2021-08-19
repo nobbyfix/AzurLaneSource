@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TIEXUEYUYINFU19",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
+			actor = 408040,
 			side = 2,
+			nameColor = "#ffde38",
+			say = "救援信号が近い……この残骸ってもしかして……",
 			dir = 1,
 			blackBg = true,
 			bgm = "echo-loop",
-			actor = 408040,
-			nameColor = "#ffde38",
-			say = "救援信号が近い……この残骸ってもしかして……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -26,10 +26,10 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 408040,
 			nameColor = "#ffde38",
+			dir = 1,
+			blackBg = true,
 			say = "ビスマルクのアネキがピンチよ！！",
 			typewriter = {
 				speed = 0.05,
@@ -59,10 +59,10 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 408040,
 			nameColor = "#ffde38",
+			dir = 1,
+			blackBg = true,
 			say = "はあああああ――！",
 			typewriter = {
 				speed = 0.05,
@@ -74,8 +74,8 @@ return {
 			},
 			action = {
 				{
-					y = 15,
 					type = "shake",
+					y = 15,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -86,10 +86,10 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 408040,
 			nameColor = "#ffde38",
+			dir = 1,
+			blackBg = true,
 			say = "ビスマルクのアネキ、待ってて！",
 			typewriter = {
 				speed = 0.05,
@@ -103,10 +103,10 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
-			blackBg = true,
 			actor = 408040,
 			nameColor = "#ffde38",
+			dir = 1,
+			blackBg = true,
 			say = "あたしがきっと守ってみせるから！！",
 			typewriter = {
 				speed = 0.05,
@@ -118,12 +118,12 @@ return {
 			}
 		},
 		{
-			bgName = "bg_bsm_6",
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
+			bgName = "bg_bsm_6",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIANGGELILA6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"紀行のサフラン\n\n<size=45>六　切り札は…</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "模擬戦当日・演習海域",
 			side = 2,
 			bgName = "bg_story_nepu1",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "level",
-			say = "模擬戦当日・演習海域",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -110,11 +110,11 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "おお！なんかすごく盛り上がってる！",
 			typewriter = {
 				speed = 0.05,
@@ -126,8 +126,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -171,8 +171,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "意外と多くの人たちが観戦しに来てますね…",
 			typewriter = {
@@ -185,11 +185,11 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "あははは…まあ、模擬戦だからって手を抜かないわよ！",
 			typewriter = {
 				speed = 0.05,
@@ -201,8 +201,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -214,8 +214,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "そこはお互い様ですね。よろしくお願いします！ホーネットさん！",
 			typewriter = {
@@ -228,13 +228,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_nepu1",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_nepu1",
 			say = "戦いは五分五分の様相を呈していた。",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -259,13 +259,13 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			soundeffect = "event:/battle/plane",
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "艦載機たち、やっちゃえ！",
+			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -279,8 +279,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "囮の確率が90％……これぐらい読めていますよ…！",
 			typewriter = {
@@ -293,13 +293,13 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			soundeffect = "event:/battle/plane",
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "ちっ、これでどうだ！",
+			soundeffect = "event:/battle/plane",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -310,11 +310,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 2,
-			bgName = "bg_story_nepu1",
-			dir = 1,
 			actor = 107380,
+			nameColor = "#a9f548",
+			bgName = "bg_story_nepu1",
+			side = 2,
+			dir = 1,
 			say = "この程度…！",
 			flashN = {
 				color = {
@@ -406,17 +406,17 @@ return {
 			}
 		},
 		{
-			say = "この程度ではシャングリラにたどり着くことは叶いませんよ…！",
+			actor = 107380,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_nepu1",
 			soundeffect = "event:/battle/plane",
-			actor = 107380,
+			dir = 1,
 			nameColor = "#a9f548",
 			seDelay = 1,
+			say = "この程度ではシャングリラにたどり着くことは叶いませんよ…！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -441,13 +441,13 @@ return {
 			}
 		},
 		{
+			actor = 107070,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = -1,
-			soundeffect = "event:/battle/plane",
-			actor = 107070,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "悪いけど、こっちは「シャングリラから発進した」ほうなんてね！",
+			soundeffect = "event:/battle/plane",
 			effects = {
 				{
 					active = true,
@@ -464,8 +464,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -474,11 +474,11 @@ return {
 			}
 		},
 		{
+			actor = 107380,
 			side = 2,
 			bgName = "bg_story_nepu1",
-			dir = 1,
-			actor = 107380,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "なっ！？捨て身の爆撃攻撃か…！",
 			effects = {
 				{
@@ -496,11 +496,11 @@ return {
 			}
 		},
 		{
+			soundeffect = "event:/battle/boom2",
 			side = 2,
 			bgName = "bg_story_nepu1",
-			say = "模擬弾が起こした白煙が海域を覆った。",
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
+			say = "模擬弾が起こした白煙が海域を覆った。",
 			flashN = {
 				color = {
 					1,
@@ -575,12 +575,12 @@ return {
 			}
 		},
 		{
+			actor = 107090,
 			side = 2,
 			bgName = "bg_story_nepu1",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 107090,
-			nameColor = "#a9f548",
 			say = "引き分け……ですか……",
 			typewriter = {
 				speed = 0.05,

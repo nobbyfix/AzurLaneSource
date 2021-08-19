@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "Z461",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"白き詩\n\n<size=45>一 生誕</size>",
@@ -42,13 +42,13 @@ return {
 			}
 		},
 		{
-			say = "母港・執務室",
-			bgName = "bg_story_task",
-			bgmDelay = 2,
 			bgm = "story-1",
+			bgmDelay = 2,
+			bgName = "bg_story_task",
+			say = "母港・執務室",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -265,8 +265,8 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
 			blackBg = true,
+			bgName = "bg_story_task",
 			say = "せめてこの名で呼んでもらえる間だけでも、透明な私に世界の色を見せておくれ。",
 			typewriter = {
 				speed = 0.05,

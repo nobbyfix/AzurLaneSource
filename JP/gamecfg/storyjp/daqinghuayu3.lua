@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DAQINGHUAYU3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"サブマリン・トラップ！\n\n<size=45>三　寮舎のアルバコア</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "母港・寮舎",
 			side = 2,
 			bgName = "bg_story_room",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "母港・寮舎",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -46,11 +46,11 @@ return {
 			}
 		},
 		{
+			actor = 101170,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 101170,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "スキル発動……",
 			typewriter = {
 				speed = 0.05,
@@ -62,8 +62,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -75,8 +75,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "ラフィー、危ない！",
 			typewriter = {
@@ -89,13 +89,13 @@ return {
 			}
 		},
 		{
+			actor = 101170,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = -1,
-			soundeffect = "event:/battle/boom2",
-			actor = 101170,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "…うん？",
+			soundeffect = "event:/battle/boom2",
 			dialogShake = {
 				speed = 0.09,
 				x = 12.75,
@@ -159,9 +159,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "寮舎でゲーム機を囲んでゲームをやっているらしい。",
 			typewriter = {
 				speed = 0.05,
@@ -204,8 +204,8 @@ return {
 			expression = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…………",
 			typewriter = {
@@ -221,8 +221,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "諦めるのはまだ早いよ。",
 			effects = {
@@ -257,11 +257,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "今回はあたしが指示を出すからもう一回やってみて！",
 			typewriter = {
 				speed = 0.05,
@@ -273,8 +273,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -283,11 +283,11 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "おおお…アルバコアが頼もしく見える！これぞリーダーのカリスマってやつ！？",
 			effects = {
 				{
@@ -337,11 +337,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "じゃあもう一回……クエストスタート！",
 			typewriter = {
 				speed = 0.05,
@@ -353,8 +353,8 @@ return {
 			},
 			action = {
 				{
-					y = 60,
 					type = "shake",
+					y = 60,
 					delay = 0.4,
 					dur = 0.2,
 					x = 0,
@@ -363,13 +363,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_room",
 			say = "(30分後)",
 			flashout = {
-				dur = 0.7,
 				black = true,
+				dur = 0.7,
 				alpha = {
 					0,
 					1
@@ -390,11 +390,11 @@ return {
 			}
 		},
 		{
+			actor = 108020,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 108020,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "これで最後だ！くらえ、合体奥義――「エターナルフォースクラッシャー（ボスは死ぬ）」！！",
 			typewriter = {
 				speed = 0.05,
@@ -406,8 +406,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -416,10 +416,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
-			side = 0,
-			bgName = "bg_story_room",
 			hideOther = true,
+			nameColor = "#a9f548",
+			bgName = "bg_story_room",
+			side = 0,
 			dir = 1,
 			actor = 106011,
 			actorName = "みんな",
@@ -457,10 +457,10 @@ return {
 			actor = 101170,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			soundeffect = "event:/battle/cannon-356mm",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ボスが……倒れた……",
+			soundeffect = "event:/battle/cannon-356mm",
 			effects = {
 				{
 					active = false,
@@ -477,11 +477,11 @@ return {
 			}
 		},
 		{
+			actor = 101160,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 101160,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "うおおおおやったああああああああ！！",
 			typewriter = {
 				speed = 0.05,
@@ -493,8 +493,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -522,8 +522,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 108020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "がははははは！楽勝楽勝！このアルバコアに攻略できないボスはなーい！",
 			typewriter = {
@@ -536,8 +536,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -546,9 +546,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "アルバコアはすごく楽しそうだ。",
 			typewriter = {
 				speed = 0.05,

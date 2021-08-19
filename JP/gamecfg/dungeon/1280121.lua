@@ -7,8 +7,8 @@ return {
 			stageIndex = 1,
 			failCondition = 1,
 			timeCount = 180,
-			backGroundStageID = 1,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -64,9 +64,9 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 12700501,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								10,
 								0,
@@ -80,9 +80,9 @@ return {
 						},
 						{
 							monsterTemplateID = 12700501,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								0,
 								0,
@@ -96,9 +96,9 @@ return {
 						},
 						{
 							monsterTemplateID = 12700501,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								10,
 								0,
@@ -125,9 +125,9 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 12700501,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								15,
 								0,
@@ -141,9 +141,9 @@ return {
 						},
 						{
 							monsterTemplateID = 12700501,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								0,
 								0,
@@ -157,9 +157,9 @@ return {
 						},
 						{
 							monsterTemplateID = 12700501,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								0,
 								0,
@@ -173,9 +173,9 @@ return {
 						},
 						{
 							monsterTemplateID = 12700501,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								15,
 								0,
@@ -202,9 +202,9 @@ return {
 					spawn = {
 						{
 							monsterTemplateID = 12700501,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								15,
 								0,
@@ -218,9 +218,9 @@ return {
 						},
 						{
 							monsterTemplateID = 12700506,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								0,
 								0,
@@ -233,9 +233,9 @@ return {
 						},
 						{
 							monsterTemplateID = 12700501,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								15,
 								0,
@@ -249,9 +249,9 @@ return {
 						},
 						{
 							monsterTemplateID = 12700501,
-							score = 0,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
+							score = 0,
 							corrdinate = {
 								20,
 								0,

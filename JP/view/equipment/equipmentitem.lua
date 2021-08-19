@@ -1,7 +1,7 @@
 slot0 = class("EquipmentItem")
 slot1 = 0.5
 
-slot0.Ctor = function (slot0, slot1)
+function slot0.Ctor(slot0, slot1)
 	slot0.go = slot1
 	slot0.bg = findTF(slot1, "frame/bg")
 	slot0.mask = findTF(slot1, "frame/bg/mask")
@@ -18,9 +18,17 @@ slot0.Ctor = function (slot0, slot1)
 	slot0.equiped = findTF(slot0.tr, "frame/bg/equip_flag")
 
 	setActive(slot0.equiped, false)
+
+	slot0.selectedMask = findTF(slot0.tr, "frame/bg/selected_transform")
+
+	if slot0.selectedMask then
+		setActive(slot0.selectedMask, false)
+	end
+
+	ClearTweenItemAlphaAndWhite(slot0.go)
 end
 
-slot0.update = function (slot0, slot1, slot2)
+function slot0.update(slot0, slot1, slot2)
 	setActive(slot0.equiped, false)
 	setActive(slot0.unloadBtn, not slot1)
 	setActive(slot0.bg, slot1)
@@ -54,10 +62,12 @@ slot0.update = function (slot0, slot1, slot2)
 	end
 end
 
-slot0.updateSkin = function (slot0)
-	setActive(slot0.equiped, slot0.equipmentVO.shipId)
+function slot0.updateSkin(slot0)
+	slot1 = slot0.equipmentVO
 
-	if slot0.equipmentVO.shipId then
+	setActive(slot0.equiped, slot1.shipId)
+
+	if slot1.shipId then
 		setImageSprite(findTF(slot0.equiped, "Image"), LoadSprite("qicon/" .. getProxy(BayProxy):getShipById(slot1.shipId):getPainting()))
 	end
 
@@ -66,24 +76,29 @@ slot0.updateSkin = function (slot0)
 		type = DROP_TYPE_EQUIPMENT_SKIN,
 		count = slot1.count
 	})
+	setActive(slot0.nameTF, true)
 
 	slot0.nameTF.text = shortenString(getText(slot0.nameTF), 5)
 end
 
-slot0.dispose = function (slot0)
-	return
+function slot0.clear(slot0)
+	ClearTweenItemAlphaAndWhite(slot0.go)
 end
 
-slot0.updateSelected = function (slot0, slot1, slot2)
-	setText(slot0.selectCount, slot2)
+function slot0.dispose(slot0)
+end
 
+function slot0.updateSelected(slot0, slot1, slot2, slot3)
 	slot0.selected = slot1
+	slot4 = slot0.selected
 
-	slot0.selectedGo:SetActive(slot0.selected)
+	slot0.selectedGo:SetActive(slot4)
 
-	if slot0.selected then
+	if slot4 then
+		setText(slot0.selectCount, slot2)
+
 		if not slot0.selectedTwId then
-			slot0.selectedTwId = LeanTween.alpha(slot0.selectedGo.transform, 1, slot0):setFrom(0):setEase(LeanTweenType.easeInOutSine):setLoopPingPong().uniqueId
+			slot0.selectedTwId = LeanTween.alpha(slot0.selectedGo.transform, 1, uv0):setFrom(0):setEase(LeanTweenType.easeInOutSine):setLoopPingPong().uniqueId
 		end
 	elseif slot0.selectedTwId then
 		LeanTween.cancel(slot0.selectedTwId)

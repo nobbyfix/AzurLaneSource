@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "距离60以内的单位回血",
 	init_effect = "",
+	name = "距离60以内的单位回血",
+	time = 0,
 	picture = "",
 	desc = "距离60以内的单位回血",
 	stack = 1,
@@ -10,7 +10,7 @@ return {
 	last_effect = "",
 	effect_list = {
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {
 				"onUpdate"
 			},

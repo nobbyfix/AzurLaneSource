@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "集火",
 	init_effect = "",
+	name = "集火",
+	time = 0,
 	picture = "",
 	desc = "集火",
 	stack = 1,

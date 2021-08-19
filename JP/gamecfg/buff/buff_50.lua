@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "挑战后排永久无敌",
 	init_effect = "",
+	name = "挑战后排永久无敌",
+	time = 0,
 	picture = "",
 	desc = "挑战后排永久无敌",
 	stack = 1,
@@ -22,8 +22,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "isInvincible"
+				group = 50,
+				attr = "isInvincible",
+				number = 1
 			}
 		}
 	}

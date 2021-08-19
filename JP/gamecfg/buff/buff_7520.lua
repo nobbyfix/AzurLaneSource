@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "传颂之物开场加血2%",
 	init_effect = "",
-	id = 7520,
+	name = "传颂之物开场加血2%",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "该入口提供战外挂载到战内",
 	stack = 1,
-	color = "yellow",
+	id = 7520,
 	icon = 7520,
 	last_effect = "",
 	effect_list = {

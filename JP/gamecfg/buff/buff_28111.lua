@@ -2,14 +2,14 @@ return {
 	{
 		desc = "主炮每进行12次攻击，触发全弹发射-埃米尔·贝尔汀I"
 	},
-	time = 0,
-	name = "全弹发射",
 	init_effect = "",
-	id = 28111,
+	name = "全弹发射",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主炮每进行12次攻击，触发全弹发射-埃米尔·贝尔汀I",
 	stack = 1,
-	color = "red",
+	id = 28111,
 	icon = 20100,
 	last_effect = "",
 	effect_list = {
@@ -32,8 +32,8 @@ return {
 				"onBattleBuffCount"
 			},
 			arg_list = {
-				skill_id = 28111,
 				target = "TargetSelf",
+				skill_id = 28111,
 				countType = 28110
 			}
 		}

@@ -26,11 +26,11 @@ return {
 			}
 		},
 		{
-			side = 1,
-			say = "見ての通りよ。そもそもここはカミより授かった「聖域」、ここでは私たちは無限の力を発揮できるわ。",
-			dir = -1,
 			actor = 307010,
+			side = 1,
 			nameColor = "#ff0000",
+			dir = -1,
+			say = "見ての通りよ。そもそもここはカミより授かった「聖域」、ここでは私たちは無限の力を発揮できるわ。",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -51,9 +51,9 @@ return {
 		{
 			actor = 307010,
 			nameColor = "#ff0000",
-			dir = -1,
 			side = 1,
-			say = "優れた魂を捧げ続ける限り…うふふ",
+			dir = -1,
+			say = "優れた魂を捧げ続ければ、いつか「あの方」がもう一度…うふふ",
 			shake = {
 				speed = 1,
 				number = 3
@@ -71,7 +71,25 @@ return {
 			actor = 307060,
 			side = 0,
 			nameColor = "#a9f548",
-			say = "仲間を犠牲にしてこんなことしたって、あの子…「ゴースト」には勝てないわ！",
+			say = "「カミ」はそんな供物を求めていないわ！",
+			shake = {
+				speed = 1,
+				number = 3
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307060,
+			side = 0,
+			nameColor = "#a9f548",
+			say = "仲間を犠牲にしてこんなことしたって、「グレイゴースト」には勝てないわ！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -88,9 +106,9 @@ return {
 		{
 			actor = 307010,
 			nameColor = "#ff0000",
-			dir = -1,
 			side = 1,
-			say = "黙れ！！！やつの名を口にするな！",
+			dir = -1,
+			say = "……黙りなさい！やつの名を口にするんじゃないわ！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -125,9 +143,9 @@ return {
 		{
 			actor = 307010,
 			nameColor = "#ff0000",
-			dir = -1,
 			side = 1,
-			say = "どいつもこいつもあの忌まわしい名を！！この私が！あんなやつにしずめ……あああアアア！！",
+			dir = -1,
+			say = "どいつもこいつもあの忌まわしい名を！！この私が！あんなやつに……加賀！",
 			shake = {
 				speed = 1,
 				number = 3
@@ -145,7 +163,7 @@ return {
 			actor = 307020,
 			side = 1,
 			nameColor = "#ff0000",
-			say = "赤城！！！…瑞鶴、言葉は無用だ！お前が強き者かどうか、戦いで証明して見せろ！",
+			say = "瑞鶴、お前には赤城の心がわかるまい！…知りたければお前が強き者かどうか、戦いで証明して見せろ！",
 			shake = {
 				speed = 1,
 				number = 3

@@ -159,14 +159,14 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "",
 	init_effect = "jinengchufared",
-	id = 2150,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "对护甲伤害倍率提高",
 	stack = 1,
-	color = "red",
+	id = 2150,
 	icon = 2150,
 	last_effect = "",
 	blink = {

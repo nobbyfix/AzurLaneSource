@@ -1,19 +1,19 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "TIEXUEYUYINFU18",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			expression = 4,
 			side = 2,
-			dir = 1,
-			bgm = "bsm-9",
 			actor = 405010,
 			nameColor = "#ff5c5c",
+			dir = 1,
 			say = "はあ……はあ……はああああああ！！",
+			bgm = "bsm-9",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -24,24 +24,24 @@ return {
 			},
 			action = {
 				{
-					y = -20,
 					type = "shake",
+					y = -20,
 					delay = 0,
 					dur = 0.5,
 					x = 0,
 					number = 1
 				},
 				{
-					y = -20,
 					type = "shake",
+					y = -20,
 					delay = 2,
 					dur = 0.5,
 					x = 0,
 					number = 1
 				},
 				{
-					y = 0,
 					type = "shake",
+					y = 0,
 					delay = 4,
 					dur = 0.1,
 					x = 50,
@@ -73,8 +73,8 @@ return {
 			}
 		},
 		{
-			side = 0,
 			dir = 1,
+			side = 0,
 			say = "制御を失った力の奔流が近くのセイレーンの量産型をブラックホールのように吸い込み、その姿を跡形もなく消し去っていく",
 			typewriter = {
 				speed = 0.05,
@@ -89,8 +89,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "セイレーンの艦船が…吸い込まれている…！？",
 			typewriter = {
 				speed = 0.05,
@@ -135,8 +135,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "くっ……！",
 			typewriter = {
 				speed = 0.05,
@@ -148,10 +148,10 @@ return {
 			}
 		},
 		{
-			side = 0,
-			say = "——",
 			dir = 1,
+			side = 0,
 			soundeffect = "event:/battle/boom2",
+			say = "——",
 			flashN = {
 				color = {
 					1,
@@ -185,10 +185,10 @@ return {
 			expression = 1,
 			side = 0,
 			nameColor = "#a9f548",
-			dir = -1,
-			soundeffect = "event:/battle/boom2",
 			actor = 205050,
+			dir = -1,
 			say = "………………",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -261,8 +261,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "セイレーンの艦船も、破壊の力を振るう光も、戦場を覆っていた霧もまるで最初からなかったかのように消えた。",
 			typewriter = {
 				speed = 0.05,
@@ -274,8 +274,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "ロイヤル艦隊から遠く離れた場所に、艤装の大半が破壊され、重傷を負っているビスマルク、そしてテスターだけがそこで佇んでいた。",
 			typewriter = {
 				speed = 0.05,
@@ -290,8 +290,8 @@ return {
 			actor = 405010,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			expression = 2,
+			dir = 1,
 			say = "はあ…はあ……はあ…………",
 			typewriter = {
 				speed = 0.05,
@@ -306,8 +306,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "これが……限界、か",
 			typewriter = {
 				speed = 0.05,
@@ -322,8 +322,8 @@ return {
 			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "テスター",
+			dir = 1,
 			say = "自分で接続を切ったとは……キューブとの融合がやっぱり十分ではなかったか",
 			typewriter = {
 				speed = 0.05,
@@ -338,8 +338,8 @@ return {
 			expression = 3,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "ふふ、悔しいわ……「あの力」を使わないよう必死に抑えていても",
 			typewriter = {
 				speed = 0.05,
@@ -354,8 +354,8 @@ return {
 			expression = 3,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "結局、一瞬の心の弱みをつかれて……",
 			typewriter = {
 				speed = 0.05,
@@ -370,8 +370,8 @@ return {
 			expression = 1,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "あの力に飲み込まれかけていたのね………",
 			typewriter = {
 				speed = 0.05,
@@ -386,8 +386,8 @@ return {
 			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "テスター",
+			dir = 1,
 			say = "……",
 			typewriter = {
 				speed = 0.05,
@@ -402,8 +402,8 @@ return {
 			actor = 900011,
 			nameColor = "#ff5c5c",
 			side = 2,
-			dir = 1,
 			actorName = "テスター",
+			dir = 1,
 			say = "報告：No.151、キューブの活性化の影響を単独で脱したことから、特異点となる素質が高レベルと推定。全体的なデータは目標値に未達…",
 			typewriter = {
 				speed = 0.05,
@@ -418,8 +418,8 @@ return {
 			expression = 2,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "セイレーン、あなたたちの本当の狙いは今でもわからないが……",
 			typewriter = {
 				speed = 0.05,
@@ -434,8 +434,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "私たちの誇り…人類の誇りを、あなたたちに踏みにじらせはしない！!",
 			typewriter = {
 				speed = 0.05,
@@ -465,8 +465,8 @@ return {
 			expression = 3,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "この戦い 、私は負けるべくして負けるか、それとも勝つか……",
 			typewriter = {
 				speed = 0.05,
@@ -481,8 +481,8 @@ return {
 			expression = 3,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "私がここで沈むか、それとも生き残って、仲間たちの元に帰れるかは……",
 			typewriter = {
 				speed = 0.05,
@@ -497,8 +497,8 @@ return {
 			expression = 4,
 			nameColor = "#ffde38",
 			side = 2,
-			dir = 1,
 			actor = 405010,
+			dir = 1,
 			say = "その運命は、私たち自身の力で決める……！",
 			typewriter = {
 				speed = 0.05,
@@ -513,8 +513,8 @@ return {
 			actor = 405010,
 			side = 2,
 			expression = 4,
-			dir = 1,
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "――鉄血に輝かしき未来を！",
 			typewriter = {
 				speed = 0.05,
@@ -526,10 +526,10 @@ return {
 			}
 		},
 		{
-			say = "ロイヤル艦隊のいる方向に向けて、ビスマルクの最後の主砲が鳴り響く。",
 			dir = 1,
 			side = 2,
 			soundeffect = "event:/battle/boom2",
+			say = "ロイヤル艦隊のいる方向に向けて、ビスマルクの最後の主砲が鳴り響く。",
 			flashN = {
 				color = {
 					1,
@@ -577,8 +577,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "測距装置も照準装置もほぼ完全に破壊されたためか、砲弾はロイヤルの艦船から大きくハズレた。",
 			typewriter = {
 				speed = 0.05,
@@ -623,8 +623,8 @@ return {
 			expression = 2,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "ビスマルク……やはりこの結末を選んだのか",
 			typewriter = {
 				speed = 0.05,
@@ -639,8 +639,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "潔いとはこういうものだ。敬意を込めて最後の攻撃をくれてやろう",
 			typewriter = {
 				speed = 0.05,
@@ -655,8 +655,8 @@ return {
 			expression = 1,
 			nameColor = "#a9f548",
 			side = 2,
-			dir = -1,
 			actor = 205050,
+			dir = -1,
 			say = "全艦、ビスマルクに火力を集中せよ！",
 			typewriter = {
 				speed = 0.05,
@@ -668,83 +668,12 @@ return {
 			}
 		},
 		{
+			side = 2,
 			stopbgm = true,
-			side = 2,
 			bgName = "bg_bsm_3",
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			say = "——",
-			flashN = {
-				color = {
-					1,
-					1,
-					1
-				},
-				alpha = {
-					{
-						0,
-						1,
-						0.2
-					},
-					{
-						1,
-						0,
-						0.2,
-						0.2
-					},
-					{
-						0,
-						1,
-						0.2,
-						0.4
-					},
-					{
-						1,
-						0,
-						0.2,
-						0.6
-					}
-				}
-			},
-			dialogShake = {
-				speed = 0.09,
-				x = 12,
-				number = 2
-			},
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			actorName = "ビスマルク",
-			side = 2,
-			bgName = "bg_bsm_3",
-			dir = 1,
-			bgm = "bsm-6",
-			nameColor = "#ffde38",
-			say = "（そうか……）",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
-			side = 2,
-			bgName = "bg_bsm_3",
-			actorName = "ビスマルク",
 			dir = 1,
 			soundeffect = "event:/battle/boom2",
-			nameColor = "#ffde38",
-			say = "（まだ……無理のようね……）",
 			flashN = {
 				color = {
 					1,
@@ -792,8 +721,79 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
+			side = 2,
 			actorName = "ビスマルク",
+			bgName = "bg_bsm_3",
+			nameColor = "#ffde38",
+			dir = 1,
+			say = "（そうか……）",
+			bgm = "bsm-6",
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actorName = "ビスマルク",
+			side = 2,
+			bgName = "bg_bsm_3",
+			nameColor = "#ffde38",
+			dir = 1,
+			say = "（まだ……無理のようね……）",
+			soundeffect = "event:/battle/boom2",
+			flashN = {
+				color = {
+					1,
+					1,
+					1
+				},
+				alpha = {
+					{
+						0,
+						1,
+						0.2
+					},
+					{
+						1,
+						0,
+						0.2,
+						0.2
+					},
+					{
+						0,
+						1,
+						0.2,
+						0.4
+					},
+					{
+						1,
+						0,
+						0.2,
+						0.6
+					}
+				}
+			},
+			dialogShake = {
+				speed = 0.09,
+				x = 12,
+				number = 2
+			},
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_3",
 			side = 2,
 			dir = 1,
@@ -808,8 +808,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_3",
 			side = 2,
 			dir = 1,
@@ -824,15 +824,15 @@ return {
 			}
 		},
 		{
+			actorName = "ビスマルク",
 			side = 2,
 			bgName = "bg_bsm_5",
-			dir = 1,
-			actorName = "ビスマルク",
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "待ちなさい！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -864,8 +864,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -880,8 +880,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_5",
 			side = 2,
 			dir = 1,
@@ -896,8 +896,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -912,8 +912,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_5",
 			side = 2,
 			dir = 1,
@@ -928,8 +928,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -944,8 +944,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -960,8 +960,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -976,8 +976,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -992,8 +992,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_5",
 			side = 2,
 			dir = 1,
@@ -1008,8 +1008,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_5",
 			side = 2,
 			dir = 1,
@@ -1024,8 +1024,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_5",
 			side = 2,
 			dir = 1,
@@ -1040,8 +1040,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_5",
 			side = 2,
 			dir = 1,
@@ -1056,8 +1056,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -1072,8 +1072,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -1088,8 +1088,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -1104,8 +1104,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_5",
 			side = 2,
 			dir = 1,
@@ -1120,8 +1120,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_5",
 			side = 2,
 			dir = 1,
@@ -1136,8 +1136,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_5",
 			side = 2,
 			dir = 1,
@@ -1152,8 +1152,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -1168,8 +1168,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -1184,8 +1184,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -1200,8 +1200,8 @@ return {
 			}
 		},
 		{
-			actorName = "オブザーバー",
 			side = 2,
+			actorName = "オブザーバー",
 			bgName = "bg_bsm_5",
 			nameColor = "#ff5c5c",
 			dir = 1,
@@ -1216,13 +1216,13 @@ return {
 			}
 		},
 		{
-			actorName = "ビスマルク",
 			side = 2,
-			dir = 1,
+			actorName = "ビスマルク",
 			bgName = "bg_bsm_3",
-			soundeffect = "event:/battle/boom2",
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "鉄の規律と…血の栄誉……",
+			soundeffect = "event:/battle/boom2",
 			flashout = {
 				dur = 1,
 				alpha = {
@@ -1259,8 +1259,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_3",
 			side = 2,
 			dir = 1,
@@ -1275,13 +1275,13 @@ return {
 			}
 		},
 		{
+			actorName = "ビスマルク",
 			side = 2,
 			bgName = "bg_bsm_3",
-			actorName = "ビスマルク",
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "………確かそういう話があったわね",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -1329,8 +1329,8 @@ return {
 			}
 		},
 		{
-			nameColor = "#ffde38",
 			actorName = "ビスマルク",
+			nameColor = "#ffde38",
 			bgName = "bg_bsm_3",
 			side = 2,
 			dir = 1,
@@ -1345,13 +1345,13 @@ return {
 			}
 		},
 		{
+			actorName = "ビスマルク",
 			side = 2,
 			bgName = "bg_bsm_3",
-			actorName = "ビスマルク",
-			dir = 1,
-			soundeffect = "event:/battle/boom2",
 			nameColor = "#ffde38",
+			dir = 1,
 			say = "今は、少し静かに音楽を聞きたいわ……",
+			soundeffect = "event:/battle/boom2",
 			flashN = {
 				color = {
 					1,
@@ -1399,11 +1399,11 @@ return {
 			}
 		},
 		{
+			soundeffect = "event:/battle/boom2",
 			side = 2,
 			bgName = "bg_bsm_3",
-			say = "もしかしたら私、少し疲れたのかしら……",
 			dir = 1,
-			soundeffect = "event:/battle/boom2",
+			say = "もしかしたら私、少し疲れたのかしら……",
 			flashN = {
 				color = {
 					1,
@@ -1446,8 +1446,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			blackBg = true,
+			mode = 1,
 			sequence = {
 				{
 					"<size=60>（ティルピッツ……会いたいわ……）</size>",
@@ -1456,14 +1456,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 205040,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "これで…終わり、ですよね……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -1623,10 +1623,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
+			nameColor = "#a9f548",
 			actorName = "みんな",
+			dir = 1,
 			say = "陛下に栄光を――",
 			effects = {
 				{
@@ -1651,9 +1651,9 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = -1,
 			actor = 205050,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "（願わくば、ビスマルク、あなたともう一度手合わせできれば…）",
 			effects = {
 				{

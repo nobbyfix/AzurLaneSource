@@ -41,7 +41,61 @@ pg.ship_spine_shift = {
 			15,
 			-75
 		}
+	},
+	U96_2 = {
+		spine = "U96_2",
+		mainui_shift = {
+			-22,
+			20
+		}
+	},
+	U110_4 = {
+		spine = "U110_4",
+		mainui_shift = {
+			-25,
+			0
+		}
+	},
+	buli_super = {
+		spine = "buli_super",
+		mainui_shift = {
+			0,
+			13
+		}
+	},
+	U37 = {
+		spine = "U37",
+		mainui_shift = {
+			-30,
+			-20
+		}
+	},
+	U110_5 = {
+		spine = "U110_5",
+		mainui_shift = {
+			-6,
+			10
+		}
+	},
+	leiming_2 = {
+		spine = "leiming_2",
+		mainui_shift = {
+			32,
+			0
+		}
+	},
+	tuolichaili_2 = {
+		spine = "tuolichaili_2",
+		mainui_shift = {
+			-5,
+			10
+		}
+	},
+	yingwuluo_2 = {
+		spine = "yingwuluo_2",
+		mainui_shift = {
+			-36,
+			24
+		}
 	}
 }
-
-return

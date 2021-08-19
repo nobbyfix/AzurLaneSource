@@ -4,7 +4,7 @@ slot0.SHIP_EXCHANGE = "ExchangeShipMediator SHIP_EXCHANGE"
 slot0.GET_EXCHANGE_ITEMS = "ExchangeShipMediator GET_EXCHANGE_ITEMS"
 slot0.ITEM_EXCHANGE = "ExchangeShipMediator ITEM_EXCHANGE"
 
-slot0.register = function (slot0)
+function slot0.register(slot0)
 	slot1 = getProxy(BuildShipProxy)
 	slot3 = slot1:getExchangeFlashTime()
 	slot4 = slot1:getFlagShipFlashTime()
@@ -19,30 +19,30 @@ slot0.register = function (slot0)
 		slot0.viewComponent:setExchangeItemList(slot6, slot5)
 	end
 
-	slot0.viewComponent:setItemVOs(slot8)
-	slot0:bind(slot0.GET_EXCHANGE_SHIPS, function (slot0, slot1)
-		slot0:sendNotification(GAME.GET_EXCHANGE_SHIPS, {
+	slot0.viewComponent:setItemVOs(getProxy(BagProxy):getItemById(ITEM_ID_SILVER_HOOK))
+	slot0:bind(uv0.GET_EXCHANGE_SHIPS, function (slot0, slot1)
+		uv0:sendNotification(GAME.GET_EXCHANGE_SHIPS, {
 			time = slot1
 		})
 	end)
-	slot0:bind(slot0.SHIP_EXCHANGE, function (slot0, slot1)
-		slot0:sendNotification(GAME.EXCHANGE_SHIP, {
+	slot0:bind(uv0.SHIP_EXCHANGE, function (slot0, slot1)
+		uv0:sendNotification(GAME.EXCHANGE_SHIP, {
 			index = slot1
 		})
 	end)
-	slot0:bind(slot0.GET_EXCHANGE_ITEMS, function (slot0)
-		slot0:sendNotification(GAME.GET_EXCHANGE_ITEMS, {
+	slot0:bind(uv0.GET_EXCHANGE_ITEMS, function (slot0)
+		uv0:sendNotification(GAME.GET_EXCHANGE_ITEMS, {
 			type = 0
 		})
 	end)
-	slot0:bind(slot0.ITEM_EXCHANGE, function (slot0, slot1)
-		slot0:sendNotification(GAME.EXCHANGE_ITEM, {
+	slot0:bind(uv0.ITEM_EXCHANGE, function (slot0, slot1)
+		uv0:sendNotification(GAME.EXCHANGE_ITEM, {
 			index = slot1
 		})
 	end)
 end
 
-slot0.listNotificationInterests = function (slot0)
+function slot0.listNotificationInterests(slot0)
 	return {
 		BuildShipProxy.EXCHANGE_LIST_UPDATED,
 		BuildShipProxy.EXCHANGE_SHIP_UPDATED,
@@ -52,7 +52,7 @@ slot0.listNotificationInterests = function (slot0)
 	}
 end
 
-slot0.handleNotification = function (slot0, slot1)
+function slot0.handleNotification(slot0, slot1)
 	slot3 = slot1:getBody()
 
 	if slot1:getName() == BuildShipProxy.EXCHANGE_LIST_UPDATED then

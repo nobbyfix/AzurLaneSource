@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "まずは「購入」で明石のお店からネコハコを入手するわ！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			}
 		},
@@ -27,6 +27,7 @@ return {
 			}
 		},
 		{
+			delay = 1,
 			waitScene = "AwardInfoLayer",
 			ui = {
 				path = "/OverlayCamera/Overlay/UIMain/AwardInfoUI(Clone)",

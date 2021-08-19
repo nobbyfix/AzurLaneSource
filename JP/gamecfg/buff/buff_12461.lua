@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.1,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.1
 				}
 			},
 			{
@@ -31,8 +31,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.104,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.104
 				}
 			},
 			{
@@ -55,8 +55,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.108,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.108
 				}
 			},
 			{
@@ -79,8 +79,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.115,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.115
 				}
 			},
 			{
@@ -103,8 +103,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.119,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.119
 				}
 			},
 			{
@@ -127,8 +127,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.123,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.123
 				}
 			},
 			{
@@ -151,8 +151,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.13,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.13
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.136,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.136
 				}
 			},
 			{
@@ -199,8 +199,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.142,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.142
 				}
 			},
 			{
@@ -223,8 +223,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.15,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.15
 				}
 			},
 			{
@@ -242,12 +242,12 @@ return {
 	desc_get = "",
 	name = "棘鳍回血",
 	init_effect = "",
-	id = 12461,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 12461,
 	icon = 12460,
 	last_effect = "",
 	effect_list = {
@@ -257,8 +257,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.1,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.1
 			}
 		},
 		{

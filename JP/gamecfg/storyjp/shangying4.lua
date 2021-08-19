@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANGYING4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"お花見大会\n\n<size=45>その四  宴の始まり</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 306030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 306030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "では、春のお花見を始めましょう！",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,14 +34,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "みんな",
 			say = "おー！",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -68,15 +68,15 @@ return {
 			}
 		},
 		{
+			actor = 307060,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307060,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "翔鶴姉～このテンプラ、美味しぃ～",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -101,12 +101,12 @@ return {
 			}
 		},
 		{
-			say = "はいはい…",
+			actor = 307050,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 307050,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "はいはい…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -121,15 +121,15 @@ return {
 			}
 		},
 		{
+			actor = 301110,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 301110,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "なるほどね！みんなが一緒にドカ食いするのが「オハナミ」ね！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -154,12 +154,12 @@ return {
 			}
 		},
 		{
-			say = "そうじゃないと思うんだけど…",
+			actor = 301130,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 301130,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "そうじゃないと思うんだけど…",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -254,14 +254,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
+			actor = 0,
 			side = 2,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
 			dir = 1,
-			actor = 0,
 			actorName = "みんな",
 			say = "……",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

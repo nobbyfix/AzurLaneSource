@@ -2,17 +2,17 @@ return {
 	uiEffect = "",
 	name = "竞技场BUFF触发器",
 	cd = 0,
+	painting = 0,
+	id = 57,
 	picture = "0",
 	aniEffect = "",
 	desc = "竞技场BUFF",
-	painting = 0,
-	id = 57,
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetSelf",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 67
 			}

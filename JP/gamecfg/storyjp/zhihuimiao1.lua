@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ZHIHUIMIAO1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -21,11 +21,11 @@ return {
 			}
 		},
 		{
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "にゃにゃ！勝手に走っちゃダメだにゃ！",
 			typewriter = {
 				speed = 0.05,
@@ -41,10 +41,10 @@ return {
 			},
 			action = {
 				{
-					y = 0,
+					type = "move",
 					dur = 0.5,
 					x = 750,
-					type = "move"
+					y = 0
 				}
 			}
 		},
@@ -67,13 +67,13 @@ return {
 		{
 			actor = 312010,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_task",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指揮官、助かったにゃ……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -120,13 +120,13 @@ return {
 			}
 		},
 		{
-			say = "名付けて、「オフニャ」、だにゃ！",
+			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
-			actor = 312010,
 			nameColor = "#a9f548",
+			dir = 1,
 			withoutPainting = true,
+			say = "名付けて、「オフニャ」、だにゃ！",
 			effects = {
 				{
 					active = true,
@@ -146,9 +146,9 @@ return {
 			actor = 312010,
 			side = 2,
 			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			nameColor = "#a9f548",
 			say = "明石が紹介してあげるにゃ！",
 			effects = {
 				{

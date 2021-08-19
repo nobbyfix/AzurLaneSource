@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "序章欧根撤退",
 	init_effect = "",
+	name = "序章欧根撤退",
+	time = 0,
 	picture = "",
 	desc = "序章欧根撤退",
 	stack = 1,

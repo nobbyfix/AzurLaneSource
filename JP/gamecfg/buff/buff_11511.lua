@@ -279,14 +279,14 @@ return {
 			}
 		}
 	},
+	time = 0,
 	name = "攻防转换",
 	init_effect = "jinengchufared",
-	id = 11511,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "装备效率提高",
 	stack = 1,
-	color = "red",
+	id = 11511,
 	icon = 11511,
 	last_effect = "",
 	blink = {

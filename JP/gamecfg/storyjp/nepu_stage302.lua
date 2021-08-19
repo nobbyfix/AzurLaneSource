@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "NEPU_STAGE302",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -89,8 +89,8 @@ return {
 			actor = 301050,
 			nameColor = "#a9f548",
 			side = 0,
-			dir = 1,
 			actorName = "{namecode:6}",
+			dir = 1,
 			say = "それ……なんとなくわかるです",
 			typewriter = {
 				speed = 0.05,
@@ -147,13 +147,13 @@ return {
 			}
 		},
 		{
-			say = "皆さん、お疲れさまでした──新しい情報の入手、完了です",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "皆さん、お疲れさまでした──新しい情報の入手、完了です",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -164,13 +164,13 @@ return {
 			}
 		},
 		{
-			say = "……ですが、まだ少し足りないようです。もう少し、鏡面海域についてのデータ収集をお願いします",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "……ですが、まだ少し足りないようです。もう少し、鏡面海域についてのデータ収集をお願いします",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -196,13 +196,13 @@ return {
 			}
 		},
 		{
-			say = "もうちょっと、あとちょっと必要なんです！具体的に言えばもう１ステージ分くらい？それでコンプリートになるはずですから",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "もうちょっと、あとちょっと必要なんです！具体的に言えばもう１ステージ分くらい？それでコンプリートになるはずですから",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -213,13 +213,13 @@ return {
 			}
 		},
 		{
-			say = "そんなわけでよろしくお願いしまーす",
+			actor = 0,
 			side = 2,
 			nameColor = "#a9f548",
-			dir = 1,
-			actor = 0,
 			actorName = "イストワール",
+			dir = 1,
 			withoutPainting = true,
+			say = "そんなわけでよろしくお願いしまーす",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01

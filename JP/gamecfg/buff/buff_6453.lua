@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "",
 	init_effect = "",
-	id = 6453,
+	name = "",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "伤害上升",
 	stack = 1,
-	color = "red",
+	id = 6453,
 	icon = 6453,
 	last_effect = "",
 	effect_list = {
@@ -16,8 +16,8 @@ return {
 				"onBulletCreate"
 			},
 			arg_list = {
-				number = 0.1,
 				attr = "damageRatioBullet",
+				number = 0.1,
 				index = {
 					1
 				}

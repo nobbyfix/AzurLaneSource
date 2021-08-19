@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "TEACHER6",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"36年Z組 ニーミ先生\n\n<size=45>その六 走れニーミちゃん！</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-1",
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "本気で触れ合って…理解してあげる…ね…！よし！まずは――",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,15 +34,15 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ロング・アイランドさん！勝負してください！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -67,12 +67,12 @@ return {
 			}
 		},
 		{
-			say = "え？",
+			actor = 106011,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "え？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -151,15 +151,15 @@ return {
 			}
 		},
 		{
+			actor = 106011,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 106011,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ま、負けた……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -184,12 +184,12 @@ return {
 			}
 		},
 		{
-			say = "ふっふん、大人し約束を守ってもらいますよ！",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ふっふん、大人し約束を守ってもらいますよ！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -236,15 +236,15 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "なになに～？面白いの～？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -269,12 +269,12 @@ return {
 			}
 		},
 		{
-			say = "すみません、この前は難しすぎました…サンディエゴさんなら、このレベルの問題から解いたほうが良いと思います！",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "すみません、この前は難しすぎました…サンディエゴさんなら、このレベルの問題から解いたほうが良いと思います！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -321,15 +321,15 @@ return {
 			}
 		},
 		{
+			actor = 107030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 107030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ニーミちゃんごめんね、先のイタズラはわざとじゃなかったの…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -354,12 +354,12 @@ return {
 			}
 		},
 		{
-			say = "ううん、大丈夫ですよ。でも…「禁断のダブルイタズラ」…さすがはサラトガさんですね！",
+			actor = 401230,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ううん、大丈夫ですよ。でも…「禁断のダブルイタズラ」…さすがはサラトガさんですね！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -502,15 +502,15 @@ return {
 			}
 		},
 		{
+			actor = 401230,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 401230,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "よし！上手く行った！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

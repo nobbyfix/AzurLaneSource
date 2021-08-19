@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "百合根",
 	init_effect = "",
-	id = 103060,
 	time = 90,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 103060,
 	icon = 103060,
 	last_effect = "",
 	effect_list = {
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				time = 22,
 				target = "TargetSelf",
+				time = 22,
 				skill_id = 103060
 			}
 		},
@@ -40,8 +40,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				time = 44,
 				target = "TargetSelf",
+				time = 44,
 				skill_id = 103061
 			}
 		},
@@ -52,8 +52,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				time = 66,
 				target = "TargetSelf",
+				time = 66,
 				skill_id = 103062
 			}
 		},
@@ -64,8 +64,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				time = 88,
 				target = "TargetSelf",
+				time = 88,
 				skill_id = 103063
 			}
 		},

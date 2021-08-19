@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "XIAOTIANEXINNIAN2",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"正月の祝福\n\n<size=45>二 正月の雪</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_room",
+			actor = 301141,
 			side = 2,
+			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = -1,
 			bgmDelay = 2,
-			bgm = "main-newyear",
-			actor = 301141,
-			nameColor = "#a9f548",
 			say = "ふぅ～コタツは最高だぜ～",
+			bgm = "main-newyear",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -52,12 +52,12 @@ return {
 			}
 		},
 		{
-			say = "はぁ、さすがは夕立といったところね。コタツからぜんっぜん出てこないわ……",
+			actor = 301150,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301150,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "はぁ、さすがは夕立といったところね。コタツからぜんっぜん出てこないわ……",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -88,11 +88,11 @@ return {
 			}
 		},
 		{
+			actor = 301141,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 301141,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "おおお！雪だ！雪が降ってるぜ！！時雨、雪合戦しようぜ！",
 			typewriter = {
 				speed = 0.05,
@@ -104,8 +104,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -114,11 +114,11 @@ return {
 			}
 		},
 		{
+			actor = 301150,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301150,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "うわっ、ちょっと、引っ張らないでよ！",
 			typewriter = {
 				speed = 0.05,
@@ -130,8 +130,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -142,14 +142,14 @@ return {
 		{
 			expression = 2,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_room",
 			actor = 301601,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "わぁ、すごい雪！もうこんなに積もっているぞ！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -174,12 +174,12 @@ return {
 			}
 		},
 		{
-			say = "ふん、雪が降ったぐらいでこんなにはしゃいじゃって",
+			actor = 301590,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301590,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ふん、雪が降ったぐらいでこんなにはしゃいじゃって",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -197,8 +197,8 @@ return {
 			expression = 3,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 301601,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "浦風さま、しっぽがプルプルしてるぞ？あ！もしかして、これは伝説の「ムシャブルイ」！？",
 			typewriter = {
@@ -211,11 +211,11 @@ return {
 			}
 		},
 		{
+			actor = 301590,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 301590,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "違う！べ、別に雪で浮かれていたりなんかしてないんだからね！",
 			typewriter = {
 				speed = 0.05,
@@ -227,8 +227,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.15,
 					x = 0,
@@ -237,15 +237,15 @@ return {
 			}
 		},
 		{
+			actor = 307012,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307012,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指揮官様へのプレゼントはこうして、ああして……ふふふふ……ああ…指揮官様の喜ぶ姿が見たくて堪りませんわ……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -286,12 +286,12 @@ return {
 			}
 		},
 		{
-			say = "そうだな…雪が降っているから、駆逐艦の子たちが雪合戦で騒いでいるのか",
+			actor = 307022,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307022,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "そうだな…雪が降っているから、駆逐艦の子たちが雪合戦で騒いでいるのか",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -370,8 +370,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -382,8 +382,8 @@ return {
 			}
 		},
 		{
-			actorName = "？？？",
 			side = 2,
+			actorName = "？？？",
 			bgName = "bg_story_room",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -410,12 +410,12 @@ return {
 			}
 		},
 		{
-			say = "なに、成すべきことだ。苦労のうちに入らん",
+			actor = 399020,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 399020,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "なに、成すべきことだ。苦労のうちに入らん",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -462,11 +462,11 @@ return {
 			}
 		},
 		{
+			actor = 399010,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 399010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "え、えええ！雪合戦でですか！？",
 			typewriter = {
 				speed = 0.05,
@@ -478,8 +478,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.3,
 					dur = 0.2,
 					x = 0,
@@ -600,12 +600,12 @@ return {
 			}
 		},
 		{
+			actor = 307031,
 			side = 2,
 			bgName = "bg_story_room",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			actor = 307031,
-			nameColor = "#a9f548",
 			say = "お正月になるとみんな浮かれて……何かやらかさなければいいのだけれど……はあ、もう胃が痛くなってきました…",
 			typewriter = {
 				speed = 0.05,

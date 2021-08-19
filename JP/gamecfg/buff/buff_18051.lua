@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 450,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 450
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 520,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 520
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 600,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 600
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 700,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 700
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 770,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 770
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 850,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 850
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 950,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 950
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1020,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1020
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1100,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1100
 				}
 			}
 		}
@@ -143,8 +143,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1200,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1200
 				}
 			}
 		}
@@ -152,12 +152,12 @@ return {
 	desc_get = "",
 	name = "心神合一 +",
 	init_effect = "jinengchufablue",
-	id = 18051,
 	time = 6,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 18051,
 	icon = 18050,
 	last_effect = "",
 	blink = {
@@ -175,8 +175,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 450,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 450
 			}
 		}
 	}

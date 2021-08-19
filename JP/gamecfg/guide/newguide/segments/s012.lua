@@ -7,13 +7,19 @@ return {
 			style = {
 				text = "前の画面に戻るわ",
 				mode = 2,
-				dir = -1,
 				posY = -341,
+				dir = -1,
 				posX = 431
 			},
+			spriteui = {
+				defaultName = "white_dot",
+				path = "/OverlayCamera/Overlay/UIMain/AwardInfoUI(Clone)/items/items",
+				childPath = "bg/icon_bg/icon",
+				pathIndex = "#"
+			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/AwardInfoUI(Clone)",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -28,13 +34,13 @@ return {
 			style = {
 				text = "メイン画面に戻るわ",
 				mode = 2,
-				dir = -1,
 				posY = 223.26,
+				dir = -1,
 				posX = -136.21
 			},
 			ui = {
-				pathIndex = -1,
 				path = "UICamera/Canvas/UIMain/TaskScene(Clone)/blur_panel/adapt/top/back_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

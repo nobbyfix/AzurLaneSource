@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "作戦失敗……確定をタップして前の画面に戻るわ",
 				mode = 1,
-				dir = 1,
 				posY = 147.8,
+				dir = 1,
 				posX = 328.7
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/Msgbox(Clone)/window/button_container/custom_button_1(Clone)",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -30,13 +30,38 @@ return {
 			style = {
 				text = "今度の任務はユニオン空母艦隊の作戦演習を支援することね    <color=#ffde38>出撃</color>をタップするわ",
 				mode = 1,
-				dir = 1,
 				posY = -50,
+				dir = 1,
 				posX = 250
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
+				triggerType = {
+					1
+				},
+				fingerPos = {
+					posY = -28.32,
+					posX = 43.74
+				}
+			},
+			code = {
+				1,
+				2
+			}
+		},
+		{
+			alpha = 0.276,
+			style = {
+				text = "メイン海域を選択するわ",
+				mode = 1,
+				posY = -50,
+				dir = -1,
+				posX = 250
+			},
+			ui = {
+				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/entrance/enters/enter_main",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -55,14 +80,14 @@ return {
 			style = {
 				text = "<color=#ff7d36>近海演習</color>を選んでちょうだい",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				delay = 1.8,
 				path = "UICamera/Canvas/UIMain/LevelMainScene(Clone)/float/levels/items/Chapter_101/main",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -77,13 +102,13 @@ return {
 			style = {
 				text = "ステージの詳細は表示されているわ",
 				mode = 2,
-				dir = 1,
 				posY = -410,
+				dir = 1,
 				posX = -446
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/LevelStageInfoView(Clone)/panel/start_button",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -98,13 +123,13 @@ return {
 			style = {
 				text = "<color=#ff7d36>出撃</color>をタップして作戦海域に出撃よ！",
 				mode = 2,
-				dir = 1,
 				posY = -164,
+				dir = 1,
 				posX = 270
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/LevelFleetSelectView(Clone)/panel/start_button",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

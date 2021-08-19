@@ -6,8 +6,8 @@ return {
 			stageIndex = 1,
 			failCondition = 1,
 			timeCount = 180,
-			backGroundStageID = 1,
 			passCondition = 1,
+			backGroundStageID = 1,
 			totalArea = {
 				-70,
 				20,
@@ -64,8 +64,8 @@ return {
 					}
 				},
 				{
-					key = true,
 					triggerType = 0,
+					key = true,
 					waveIndex = 101,
 					conditionType = 1,
 					preWaves = {
@@ -120,8 +120,8 @@ return {
 					reinforcement = {
 						{
 							monsterTemplateID = 105034,
-							delay = 1,
 							moveCast = true,
+							delay = 1,
 							corrdinate = {
 								30,
 								0,
@@ -134,8 +134,8 @@ return {
 						},
 						{
 							monsterTemplateID = 105034,
-							delay = 2,
 							moveCast = true,
+							delay = 2,
 							corrdinate = {
 								30,
 								0,
@@ -195,8 +195,8 @@ return {
 						},
 						{
 							monsterTemplateID = 105036,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								0,
 								0,
@@ -205,8 +205,8 @@ return {
 						},
 						{
 							monsterTemplateID = 105021,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								10,
 								0,
@@ -221,8 +221,8 @@ return {
 					reinforcement = {
 						{
 							monsterTemplateID = 105034,
-							delay = 0,
 							moveCast = true,
+							delay = 0,
 							corrdinate = {
 								30,
 								0,

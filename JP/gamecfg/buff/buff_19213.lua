@@ -179,14 +179,14 @@ return {
 			}
 		}
 	},
-	time = 0,
-	name = "吾妻",
 	init_effect = "",
-	id = 19213,
+	name = "吾妻",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "主炮装备效率提高",
 	stack = 1,
-	color = "red",
+	id = 19213,
 	icon = 19213,
 	last_effect = "",
 	effect_list = {

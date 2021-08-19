@@ -7,13 +7,13 @@ return {
 			style = {
 				text = "<color=#ff7d36>出撃</color>をタップしてね",
 				mode = 2,
-				dir = 1,
 				posY = -42,
+				dir = 1,
 				posX = 243
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -24,18 +24,18 @@ return {
 			}
 		},
 		{
-			waitScene = "LevelScene",
 			alpha = 0.406,
+			waitScene = "LevelScene",
 			style = {
 				text = "今の艦隊ならきっとホーネットを倒せる！",
 				mode = 2,
-				dir = 1,
 				posY = -200,
+				dir = 1,
 				posX = -190
 			},
 			ui = {
+				path = "/OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/normal/func_button",
 				pathIndex = -1,
-				path = "OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/func_button",
 				triggerType = {
 					1
 				},
@@ -54,13 +54,13 @@ return {
 			style = {
 				text = "<color=#ff7d36>出撃</color>をタップして戦闘準備！",
 				mode = 2,
-				dir = 1,
 				posY = -68.93,
+				dir = 1,
 				posX = 241.87
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/ChapterPreCombatUI(Clone)/right/start",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ANSHAN04",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"四天王の大冒険・鞍山編\n\n<size=45>その四　みんなのおえかき帳</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = -1,
-			bgm = "story-china",
-			actor = 501010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "なんか…騒がしくなってきたのね。",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -34,12 +34,12 @@ return {
 			}
 		},
 		{
-			say = "いいよいいよ、人が多いほうが楽しいじゃん～",
+			actor = 501020,
 			side = 1,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "いいよいいよ、人が多いほうが楽しいじゃん～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -54,11 +54,11 @@ return {
 			}
 		},
 		{
+			actor = 502030,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 502030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "平海がここを塗るよ～",
 			shake = {
 				speed = 5,

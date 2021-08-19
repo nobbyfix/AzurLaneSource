@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.04,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.04
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.044,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.044
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.048,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.048
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.055,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.055
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.061,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.061
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.067,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.067
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.075,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.075
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.082,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.082
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.089,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.089
 				}
 			}
 		}
@@ -133,15 +133,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = -0.1,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.1
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "防空火力",
 	init_effect = "jinengchufablue",
-	time = 0,
 	picture = "",
 	desc = "受到伤害降低",
 	stack = 1,
@@ -162,8 +162,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.04,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.04
 			}
 		}
 	}

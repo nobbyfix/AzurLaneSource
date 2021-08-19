@@ -1,12 +1,12 @@
 return {
+	time = 0,
 	name = "13章瑞鹤狂暴",
 	init_effect = "jinengchufared",
-	id = 8616,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 8616,
 	icon = 2120,
 	last_effect = "",
 	blink = {
@@ -24,8 +24,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.35,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.35
 			}
 		},
 		{
@@ -35,8 +35,8 @@ return {
 			},
 			arg_list = {
 				quota = 1,
-				skill_id = 8616,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				skill_id = 8616
 			}
 		}
 	}

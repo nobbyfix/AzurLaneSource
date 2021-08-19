@@ -4,7 +4,7 @@ slot1 = {
 	[ChapterConst.AttachChampion] = ChapterChampionNormal
 }
 
-slot0.Ctor = function (slot0, slot1)
+function slot0.Ctor(slot0, slot1)
 	slot0.package = slot0:RebuildData(slot1)
 	slot0.idList = {}
 
@@ -14,35 +14,34 @@ slot0.Ctor = function (slot0, slot1)
 		end
 	end
 
-	slot0.currentChampion = slot0[slot1.item_type].New(Clone(slot0.package))
+	slot0.currentChampion = uv0[slot1.item_type].New(Clone(slot0.package))
 	slot0.trait = ChapterConst.TraitNone
 	slot0.rotation = Quaternion.identity
 end
 
-slot0.RebuildData = function (slot0, slot1)
-	({
-		pos = {},
-		id = slot1.item_id,
-		attachment = slot1.item_type,
-		flag = slot1.item_flag,
-		data = slot1.item_data
-	})["pos"].row = slot1.pos.row
-	()["pos"].column = slot1.pos.column
+function slot0.RebuildData(slot0, slot1)
+	slot2 = {
+		pos = {}
+	}
+	slot2.pos.row = slot1.pos.row
+	slot2.pos.column = slot1.pos.column
+	slot2.id = slot1.item_id
+	slot2.attachment = slot1.item_type
+	slot2.flag = slot1.item_flag
+	slot2.data = slot1.item_data
 
-	return 
+	return slot2
 end
 
-slot0.__index = function (slot0, slot1)
-	value = slot0[slot1]
-
-	if not value and rawget(slot0, "currentChampion") then
-		value = slot2[slot1]
+function slot0.__index(slot0, slot1)
+	if not uv0[slot1] and rawget(slot0, "currentChampion") then
+		slot2 = slot3[slot1]
 	end
 
-	return value
+	return slot2
 end
 
-slot0.Iter = function (slot0)
+function slot0.Iter(slot0)
 	if #slot0.idList <= 0 then
 		slot0.flag = 1
 
@@ -50,10 +49,13 @@ slot0.Iter = function (slot0)
 	end
 
 	slot0.package.id = table.remove(slot0.idList, 1)
-	slot0.currentChampion = slot0[slot0.attachment].New(Clone(slot0.package))
+	slot0.package.pos.row = slot0.currentChampion.row
+	slot0.package.pos.column = slot0.currentChampion.column
+	slot0.package.data = 0
+	slot0.currentChampion = uv0[slot0.attachment].New(Clone(slot0.package))
 end
 
-slot0.GetLastID = function (slot0)
+function slot0.GetLastID(slot0)
 	if #slot0.idList > 0 then
 		return slot0.idList[#slot0.idList]
 	else

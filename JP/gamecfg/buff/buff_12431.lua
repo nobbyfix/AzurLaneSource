@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 3,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 3
 				}
 			},
 			{
@@ -18,8 +18,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.05,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.05
 				}
 			}
 		}
@@ -32,8 +32,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 4,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 4
 				}
 			},
 			{
@@ -43,8 +43,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.062,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.062
 				}
 			}
 		}
@@ -57,8 +57,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 5
 				}
 			},
 			{
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.074,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.074
 				}
 			}
 		}
@@ -82,8 +82,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 6,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 6
 				}
 			},
 			{
@@ -93,8 +93,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.09,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.09
 				}
 			}
 		}
@@ -107,8 +107,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 7,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 7
 				}
 			},
 			{
@@ -118,8 +118,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.105,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.105
 				}
 			}
 		}
@@ -132,8 +132,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 8,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 8
 				}
 			},
 			{
@@ -143,8 +143,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.12,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.12
 				}
 			}
 		}
@@ -157,8 +157,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 9,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 9
 				}
 			},
 			{
@@ -168,8 +168,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.14,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.14
 				}
 			}
 		}
@@ -182,8 +182,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 10,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 10
 				}
 			},
 			{
@@ -193,8 +193,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.158,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.158
 				}
 			}
 		}
@@ -207,8 +207,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 11,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 11
 				}
 			},
 			{
@@ -218,8 +218,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.176,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.176
 				}
 			}
 		}
@@ -232,8 +232,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 12,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 12
 				}
 			},
 			{
@@ -243,20 +243,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.2,
-					attr = "injureRatioByBulletTorpedo"
+					attr = "injureRatioByBulletTorpedo",
+					number = -0.2
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "Lucky A",
 	init_effect = "jinengchufared",
-	id = 12431,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "属性提升",
 	stack = 1,
-	color = "red",
+	id = 12431,
 	icon = 12430,
 	last_effect = "",
 	blink = {

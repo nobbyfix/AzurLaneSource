@@ -62,12 +62,12 @@ return {
 	desc_get = "在队伍中(存活)时降低主力舰队受到的伤害5.0%(满级15.0%)，同技能效果不叠加",
 	name = "侧翼掩护",
 	init_effect = "",
-	id = 1061,
 	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "在队伍中(存活)时降低主力舰队受到的伤害$1，同技能效果不叠加",
 	stack = 1,
-	color = "blue",
+	id = 1061,
 	icon = 1060,
 	last_effect = "",
 	effect_list = {
@@ -81,7 +81,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 1060,

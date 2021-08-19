@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "MENGFEISIWANSHENG4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"カオティック・ハロウィンナイト\n\n<size=45>四 仮装大会</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
+			actor = 213021,
 			side = 2,
+			bgName = "bg_story_task",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 213021,
-			nameColor = "#a9f548",
 			say = "テラー、着替えた…姉さんは…？",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -103,8 +103,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "うん…テラー、エレバス姉さんと一緒にハロウィンパーティーに出たい…",
 			typewriter = {
@@ -133,13 +133,13 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_task",
-			side = 2,
 			dir = 1,
+			side = 2,
+			bgName = "bg_story_task",
 			say = "……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -167,8 +167,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213012,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "これでいいかな",
 			typewriter = {
@@ -184,8 +184,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "姉さん、似合ってる…",
 			typewriter = {
@@ -201,8 +201,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "一緒にハロウィンパーティー、嬉しい…",
 			typewriter = {
@@ -218,8 +218,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			actor = 213012,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "テラーがいいならそれでいいわ",
 			typewriter = {
@@ -234,14 +234,14 @@ return {
 		{
 			expression = 3,
 			side = 2,
-			dir = 1,
 			bgName = "bg_night",
 			actor = 404021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "本当に参加しないんですか？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -285,8 +285,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
 			actor = 404021,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "…はい",
 			typewriter = {
@@ -315,15 +315,15 @@ return {
 			}
 		},
 		{
+			actor = 301411,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 301411,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ハロウィンパーティーのかいじょうは……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -348,8 +348,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 1,
 					dur = 0.15,
 					x = 0,
@@ -374,15 +374,15 @@ return {
 			}
 		},
 		{
+			actor = 213041,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 213041,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "イッヒッヒー、そろそろだな～今年一番のイタズラっ子はこのあたしで決まりね！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -423,11 +423,11 @@ return {
 			}
 		},
 		{
+			actor = 213041,
 			side = 2,
 			bgName = "bg_night",
-			dir = 1,
-			actor = 213041,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "フッドおばさん！？……いないいない…ふぅ…",
 			typewriter = {
 				speed = 0.05,
@@ -439,8 +439,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

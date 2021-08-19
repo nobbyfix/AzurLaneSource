@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 500
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 550,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 550
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 600
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 650,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 650
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 700
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 750,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 750
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 800
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 850,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 850
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 900,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 900
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 1000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "I25",
 	init_effect = "jinengchufared",
-	id = 12371,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "命中提高",
 	stack = 1,
-	color = "red",
+	id = 12371,
 	icon = 12370,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 500,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = 500
 			}
 		}
 	}

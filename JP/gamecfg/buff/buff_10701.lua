@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1500
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1610,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1610
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1720,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1720
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1830,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1830
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 1940,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 1940
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2050,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2050
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2160,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2160
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2270,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2270
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2380,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2380
 				}
 			}
 		}
@@ -133,15 +133,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 2500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 2500
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "破交作战",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "炮击提高",
 	stack = 1,
@@ -162,8 +162,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 1500,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 1500
 			}
 		}
 	}

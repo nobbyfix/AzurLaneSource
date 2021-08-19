@@ -1,7 +1,7 @@
 return {
-	time = 0,
-	name = "指挥喵天赋-水雷魂",
 	init_effect = "jinengchufared",
+	name = "指挥喵天赋-水雷魂",
+	time = 0,
 	picture = "",
 	desc = "舰种属于先锋舰队，则鱼雷暴击率提高3%",
 	stack = 2,
@@ -16,8 +16,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = 0.03,
 				attr = "cri",
+				number = 0.03,
 				index = {
 					2
 				}

@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.15
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.172,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.172
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.194,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.194
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.216,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.216
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.238,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.238
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.26,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.26
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.282,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.282
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.304,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.304
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.326,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.326
 				}
 			}
 		}
@@ -133,15 +133,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.35,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.35
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "改变时代的炮声",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "伤害上升",
 	stack = 1,
@@ -162,8 +162,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.15,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.15
 			}
 		}
 	}

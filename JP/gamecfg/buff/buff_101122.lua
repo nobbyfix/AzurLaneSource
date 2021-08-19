@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.06,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.06
 				}
 			},
 			{
@@ -33,8 +33,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.072,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.072
 				}
 			},
 			{
@@ -58,8 +58,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.084,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.084
 				}
 			},
 			{
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.1,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.1
 				}
 			},
 			{
@@ -108,8 +108,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.112,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.112
 				}
 			},
 			{
@@ -133,8 +133,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.124,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.124
 				}
 			},
 			{
@@ -158,8 +158,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.14,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.14
 				}
 			},
 			{
@@ -183,8 +183,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.156,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.156
 				}
 			},
 			{
@@ -208,8 +208,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.172,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.172
 				}
 			},
 			{
@@ -233,8 +233,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.2,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.2
 				}
 			},
 			{
@@ -249,9 +249,9 @@ return {
 			}
 		}
 	},
+	time = 15,
 	name = "怒旋·大吉岭",
 	init_effect = "jinengchufablue",
-	time = 15,
 	picture = "",
 	desc = "属性提升",
 	stack = 1,
@@ -273,8 +273,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.06,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.06
 			}
 		},
 		{

@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "指挥喵触发特殊弹幕",
 	cd = 0,
-	picture = "0",
-	desc = "",
 	painting = 1,
 	id = 40000,
+	picture = "0",
 	castCV = "skill",
+	desc = "",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,10 +17,10 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillFire",
+			casterAniEffect = "",
 			target_choise = "TargetNil",
+			targetAniEffect = "",
 			arg_list = {
 				weapon_id = 65000
 			}

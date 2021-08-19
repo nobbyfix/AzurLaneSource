@@ -1,17 +1,17 @@
 return {
-	fadeType = 1,
+	id = "HOLOGUANQIA4",
 	mode = 2,
 	once = true,
-	id = "HOLOGUANQIA4",
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			nameColor = "#a9f548",
 			side = 2,
-			dir = 1,
-			bgm = "holo-fff-inst",
+			nameColor = "#a9f548",
 			actorName = "？？？",
 			say = "あああああああ！！",
+			dir = 1,
+			bgm = "holo-fff-inst",
 			dialogShake = {
 				speed = 0.09,
 				x = 8.5,
@@ -27,10 +27,10 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			actorName = "？？？",
-			dir = 1,
+			nameColor = "#a9f548",
 			side = 2,
+			dir = 1,
 			say = "た…助けて！",
 			dialogShake = {
 				speed = 0.09,
@@ -77,8 +77,8 @@ return {
 			},
 			action = {
 				{
-					y = 30,
 					type = "shake",
+					y = 30,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

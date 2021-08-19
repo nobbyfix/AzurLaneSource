@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "ヘルプをタップして、チャレンジモードの詳細を確認してね！",
 				mode = 1,
-				dir = -1,
 				posY = -63.794,
+				dir = -1,
 				posX = -663
 			},
 			ui = {

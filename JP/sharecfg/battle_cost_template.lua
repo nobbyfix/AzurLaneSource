@@ -2,190 +2,234 @@ pg = pg or {}
 pg.battle_cost_template = {
 	[0] = {
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 0,
-		oil_cost = 0
+		attack_count = 0
 	},
 	{
 		end_sink_cost = 1,
-		user_exp_award = 1,
-		attack_count = 1,
+		ship_exp_award = 1,
+		oil_cost = 1,
 		enter_energy_cost = 1,
 		global_buff_effected = 1,
-		ship_exp_award = 1,
+		user_exp_award = 1,
 		cat_exp_award = 1,
 		id = 1,
-		oil_cost = 1
+		attack_count = 1
 	},
 	{
 		end_sink_cost = 1,
-		user_exp_award = 1,
-		attack_count = 1,
+		ship_exp_award = 1,
+		oil_cost = 1,
 		enter_energy_cost = 1,
 		global_buff_effected = 0,
-		ship_exp_award = 1,
+		user_exp_award = 1,
 		cat_exp_award = 1,
 		id = 2,
-		oil_cost = 1
+		attack_count = 1
 	},
 	{
 		end_sink_cost = 0,
-		user_exp_award = 1,
-		attack_count = 2,
+		ship_exp_award = 1,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 1,
+		user_exp_award = 1,
 		cat_exp_award = 1,
 		id = 3,
-		oil_cost = 0
+		attack_count = 2
 	},
 	{
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 4,
-		oil_cost = 0
+		attack_count = 0
 	},
 	{
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 5,
-		oil_cost = 0
+		attack_count = 0
 	},
 	{
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 6,
-		oil_cost = 0
+		attack_count = 0
 	},
 	{
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 7,
-		oil_cost = 0
+		attack_count = 0
 	},
 	{
 		end_sink_cost = 0,
-		user_exp_award = 1,
-		attack_count = 1,
+		ship_exp_award = 1,
+		oil_cost = 1,
 		enter_energy_cost = 1,
 		global_buff_effected = 0,
-		ship_exp_award = 1,
+		user_exp_award = 1,
 		cat_exp_award = 1,
 		id = 8,
-		oil_cost = 1
+		attack_count = 1
 	},
 	{
 		end_sink_cost = 0,
-		user_exp_award = 1,
-		attack_count = 1,
+		ship_exp_award = 1,
+		oil_cost = 1,
 		enter_energy_cost = 1,
 		global_buff_effected = 0,
-		ship_exp_award = 1,
+		user_exp_award = 1,
 		cat_exp_award = 1,
 		id = 9,
-		oil_cost = 1
+		attack_count = 1
 	},
 	{
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 10,
-		oil_cost = 0
+		attack_count = 0
 	},
 	{
 		end_sink_cost = 1,
-		user_exp_award = 1,
-		attack_count = 1,
+		ship_exp_award = 1,
+		oil_cost = 1,
 		enter_energy_cost = 1,
 		global_buff_effected = 0,
-		ship_exp_award = 1,
+		user_exp_award = 1,
 		cat_exp_award = 1,
 		id = 11,
-		oil_cost = 1
+		attack_count = 1
+	},
+	[50] = {
+		end_sink_cost = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
+		enter_energy_cost = 0,
+		global_buff_effected = 0,
+		user_exp_award = 0,
+		cat_exp_award = 0,
+		id = 50,
+		attack_count = 0
+	},
+	[51] = {
+		end_sink_cost = 0,
+		ship_exp_award = 1,
+		oil_cost = 0,
+		enter_energy_cost = 0,
+		global_buff_effected = 0,
+		user_exp_award = 1,
+		cat_exp_award = 1,
+		id = 51,
+		attack_count = 0
+	},
+	[93] = {
+		end_sink_cost = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
+		enter_energy_cost = 0,
+		global_buff_effected = 0,
+		user_exp_award = 0,
+		cat_exp_award = 0,
+		id = 93,
+		attack_count = 0
+	},
+	[94] = {
+		end_sink_cost = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
+		enter_energy_cost = 0,
+		global_buff_effected = 0,
+		user_exp_award = 0,
+		cat_exp_award = 0,
+		id = 94,
+		attack_count = 0
 	},
 	[95] = {
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 95,
-		oil_cost = 0
+		attack_count = 0
 	},
 	[96] = {
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 96,
-		oil_cost = 0
+		attack_count = 0
 	},
 	[97] = {
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 97,
-		oil_cost = 0
+		attack_count = 0
 	},
 	[98] = {
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 98,
-		oil_cost = 0
+		attack_count = 0
 	},
 	[99] = {
 		end_sink_cost = 0,
-		user_exp_award = 0,
-		attack_count = 0,
+		ship_exp_award = 0,
+		oil_cost = 0,
 		enter_energy_cost = 0,
 		global_buff_effected = 0,
-		ship_exp_award = 0,
+		user_exp_award = 0,
 		cat_exp_award = 0,
 		id = 99,
-		oil_cost = 0
+		attack_count = 0
 	},
 	all = {
 		0,
@@ -200,6 +244,10 @@ pg.battle_cost_template = {
 		9,
 		10,
 		11,
+		50,
+		51,
+		93,
+		94,
 		95,
 		96,
 		97,
@@ -207,5 +255,3 @@ pg.battle_cost_template = {
 		99
 	}
 }
-
-return

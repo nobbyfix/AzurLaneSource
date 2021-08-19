@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "GANGQUTAOLI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"母港脱出作戦！\n\n<size=45>四　ついに終点！</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "bg_story_outdoor",
+			actor = 202180,
 			side = 2,
+			bgName = "bg_story_outdoor",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 202180,
-			nameColor = "#a9f548",
 			say = "ここが埠頭です。出撃や軍事委託のときは皆ここから海に出ますよ",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -71,8 +71,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "こ、コホン！ベルちゃんとやら、ご苦労だった！感謝しよう",
 			typewriter = {
@@ -85,11 +85,11 @@ return {
 			}
 		},
 		{
+			actor = 202180,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
-			actor = 202180,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ほかにご用命がありましたら、いつでもお申し付けください（ペコリ",
 			typewriter = {
 				speed = 0.05,
@@ -101,8 +101,8 @@ return {
 			},
 			action = {
 				{
-					y = -22.5,
 					type = "shake",
+					y = -22.5,
 					delay = 0.5,
 					dur = 0.2,
 					x = 0,
@@ -114,8 +114,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = -1,
 			actor = 304060,
+			dir = -1,
 			nameColor = "#a9f548",
 			say = "あの、ええと、ベルちゃん？",
 			typewriter = {
@@ -179,8 +179,8 @@ return {
 			expression = 2,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "我らと共にやつの魔の手から、蒼き海に脱出しようではないか！",
 			typewriter = {
@@ -260,8 +260,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "そ、そんな……………",
 			typewriter = {
@@ -309,8 +309,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			actor = 407020,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "あっ………",
 			typewriter = {
@@ -323,9 +323,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_outdoor",
-			dir = 1,
 			say = "ヒュー――――と、風が吹いた。",
 			typewriter = {
 				speed = 0.05,
@@ -401,14 +401,14 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
+			actor = 304060,
 			side = 0,
 			bgName = "bg_story_outdoor",
-			hideOther = true,
+			actorName = "ツェッペリンちゃん＆比叡ちゃん",
 			dir = 1,
 			blackBg = true,
-			actor = 304060,
-			actorName = "ツェッペリンちゃん＆比叡ちゃん",
+			hideOther = true,
+			nameColor = "#a9f548",
 			say = "あの人たちは――！？",
 			subActors = {
 				{
@@ -428,8 +428,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

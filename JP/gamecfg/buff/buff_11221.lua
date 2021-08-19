@@ -8,8 +8,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 350,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 350
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 400,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 400
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 450,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 450
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 500
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 550,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 550
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 600
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 650,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 650
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 700
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 750,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 750
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 800,
-					attr = "cannonPower"
+					attr = "cannonPower",
+					number = 800
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "持续打击",
 	init_effect = "jinengchufared",
-	id = 11221,
-	time = 0,
+	color = "red",
 	picture = "",
 	desc = "炮击、雷击提高",
 	stack = 3,
-	color = "red",
+	id = 11221,
 	icon = 11220,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 350,
-				attr = "cannonPower"
+				attr = "cannonPower",
+				number = 350
 			}
 		}
 	}

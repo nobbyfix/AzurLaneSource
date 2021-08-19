@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LINGDONG11",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 207040,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "story-6",
 			dir = 1,
 			say = "特別作戦艦隊第一群、目標海域に到着。合流完了！",
-			bgm = "story-6",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -72,15 +72,15 @@ return {
 			}
 		},
 		{
+			actor = 207040,
 			nameColor = "#a9f548",
 			side = 0,
 			dir = 1,
-			actor = 207040,
 			say = "…そうそう！今回はユニオンからの艦載機を持ってきたわ！",
 			shake = {
 				speed = 5,
-				y = 20,
-				number = 3
+				number = 3,
+				y = 20
 			},
 			typewriter = {
 				speed = 0.05,
@@ -257,38 +257,16 @@ return {
 			}
 		},
 		{
-			say = "……————",
+			side = 2,
 			stopbgm = true,
-			side = 2,
-			blackBg = true,
-			dir = 1,
 			soundeffect = "event:/battle/boom1",
-			flash = {
-				wait = 0.5,
-				delay = 0.3,
-				dur = 0.5,
-				number = 1,
-				alpha = {
-					0,
-					1
-				}
-			},
-			dialogShake = {
-				speed = 0.09,
-				x = 8.5,
-				number = 2
-			}
-		},
-		{
+			dir = 1,
+			blackBg = true,
 			say = "……————",
-			side = 2,
-			blackBg = true,
-			dir = 1,
-			soundeffect = "event:/battle/boom1",
 			flash = {
-				wait = 0.5,
 				delay = 0.3,
 				dur = 0.5,
+				wait = 0.5,
 				number = 1,
 				alpha = {
 					0,
@@ -302,12 +280,34 @@ return {
 			}
 		},
 		{
+			soundeffect = "event:/battle/boom1",
 			side = 2,
 			dir = 1,
-			bgm = "story-6",
+			blackBg = true,
+			say = "……————",
+			flash = {
+				delay = 0.3,
+				dur = 0.5,
+				wait = 0.5,
+				number = 1,
+				alpha = {
+					0,
+					1
+				}
+			},
+			dialogShake = {
+				speed = 0.09,
+				x = 8.5,
+				number = 2
+			}
+		},
+		{
 			actor = 205070,
+			side = 2,
 			nameColor = "#a9f548",
 			say = "！！！なにっ！？新手からの攻撃だと！？損傷報告、急ぎなさい！",
+			dir = 1,
+			bgm = "story-6",
 			dialogShake = {
 				speed = 0.09,
 				x = 15,
@@ -375,8 +375,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "ピュリファイアー",
+			dir = 1,
 			say = "ヒヒヒ、まさかここを「特異点」にするなんて、本当に驚いた――",
 			typewriter = {
 				speed = 0.05,
@@ -406,8 +406,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "ピュリファイアー",
+			dir = 1,
 			say = "？こんなに大きいの、私ができるはずがないじゃん？",
 			typewriter = {
 				speed = 0.05,
@@ -452,8 +452,8 @@ return {
 			actor = 900021,
 			nameColor = "#ff0000",
 			side = 2,
-			dir = 1,
 			actorName = "ピュリファイアー",
+			dir = 1,
 			say = "こら！人の話を聞けってば！まったく頭の固い連中ね……仕方ないなぁ、遊んでやるよ！！！！",
 			typewriter = {
 				speed = 0.05,

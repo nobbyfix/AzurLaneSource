@@ -8,8 +8,18 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					restoreRatio = 2000,
-					number = 0.5
+					number = 0.5,
+					restoreRatio = 2000
+				}
+			},
+			{
+				type = "BattleBuffAddBuff",
+				trigger = {
+					"onRemove"
+				},
+				arg_list = {
+					buff_id = 10163,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -23,8 +33,18 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					restoreRatio = 2330,
-					number = 0.5
+					number = 0.5,
+					restoreRatio = 2330
+				}
+			},
+			{
+				type = "BattleBuffAddBuff",
+				trigger = {
+					"onRemove"
+				},
+				arg_list = {
+					buff_id = 10163,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -38,8 +58,18 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					restoreRatio = 2660,
-					number = 0.5
+					number = 0.5,
+					restoreRatio = 2660
+				}
+			},
+			{
+				type = "BattleBuffAddBuff",
+				trigger = {
+					"onRemove"
+				},
+				arg_list = {
+					buff_id = 10163,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -53,8 +83,18 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					restoreRatio = 2990,
-					number = 0.5
+					number = 0.5,
+					restoreRatio = 2990
+				}
+			},
+			{
+				type = "BattleBuffAddBuff",
+				trigger = {
+					"onRemove"
+				},
+				arg_list = {
+					buff_id = 10163,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -68,8 +108,18 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					restoreRatio = 3320,
-					number = 0.5
+					number = 0.5,
+					restoreRatio = 3320
+				}
+			},
+			{
+				type = "BattleBuffAddBuff",
+				trigger = {
+					"onRemove"
+				},
+				arg_list = {
+					buff_id = 10163,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -83,8 +133,18 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					restoreRatio = 3650,
-					number = 0.5
+					number = 0.5,
+					restoreRatio = 3650
+				}
+			},
+			{
+				type = "BattleBuffAddBuff",
+				trigger = {
+					"onRemove"
+				},
+				arg_list = {
+					buff_id = 10163,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -98,8 +158,18 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					restoreRatio = 3980,
-					number = 0.5
+					number = 0.5,
+					restoreRatio = 3980
+				}
+			},
+			{
+				type = "BattleBuffAddBuff",
+				trigger = {
+					"onRemove"
+				},
+				arg_list = {
+					buff_id = 10163,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -113,8 +183,18 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					restoreRatio = 4310,
-					number = 0.5
+					number = 0.5,
+					restoreRatio = 4310
+				}
+			},
+			{
+				type = "BattleBuffAddBuff",
+				trigger = {
+					"onRemove"
+				},
+				arg_list = {
+					buff_id = 10163,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -128,8 +208,18 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					restoreRatio = 4640,
-					number = 0.5
+					number = 0.5,
+					restoreRatio = 4640
+				}
+			},
+			{
+				type = "BattleBuffAddBuff",
+				trigger = {
+					"onRemove"
+				},
+				arg_list = {
+					buff_id = 10163,
+					target = "TargetSelf"
 				}
 			}
 		}
@@ -143,15 +233,25 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					restoreRatio = 5000,
-					number = 0.5
+					number = 0.5,
+					restoreRatio = 5000
+				}
+			},
+			{
+				type = "BattleBuffAddBuff",
+				trigger = {
+					"onRemove"
+				},
+				arg_list = {
+					buff_id = 10163,
+					target = "TargetSelf"
 				}
 			}
 		}
 	},
+	time = 10,
 	name = "最强之盾",
 	init_effect = "jinengchufablue",
-	time = 8,
 	picture = "",
 	desc = "承受全体主力舰队受到的50%伤害",
 	stack = 1,
@@ -173,8 +273,18 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				restoreRatio = 2000,
-				number = 0.5
+				number = 0.5,
+				restoreRatio = 2000
+			}
+		},
+		{
+			type = "BattleBuffAddBuff",
+			trigger = {
+				"onRemove"
+			},
+			arg_list = {
+				buff_id = 10163,
+				target = "TargetSelf"
 			}
 		}
 	}

@@ -1,7 +1,7 @@
 return {
+	time = 8,
 	name = "LuckyE",
 	init_effect = "jinengchufared",
-	time = 8,
 	picture = "",
 	desc = "无敌",
 	stack = 1,
@@ -23,8 +23,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "perfectDodge"
+				group = 10203,
+				attr = "perfectDodge",
+				number = 1
 			}
 		},
 		{
@@ -34,8 +35,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "immuneDirectHit"
+				group = 10203,
+				attr = "immuneDirectHit",
+				number = 1
 			}
 		}
 	}

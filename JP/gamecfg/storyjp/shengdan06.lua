@@ -1,9 +1,9 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "SHENGDAN06",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
@@ -16,8 +16,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "母港・ロイヤル寮",
 			typewriter = {
 				speed = 0.05,
@@ -78,14 +78,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "く、クリスマスディナー……ターキー……プリン……サーモン……い、頂きます！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -110,14 +110,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "お、美味しい！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -142,14 +142,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "これも美味しい！！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -174,14 +174,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201100,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "はぁ～生きててよかったぁ～",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -206,14 +206,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201080,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "シグニットの食べっぷりを見るたびに、うち、なんだか羨ましく思っちゃうな……",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -396,14 +396,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 204030,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "次はプレゼント交換の時間ですわ。皆さん、ここに置いてあるプレゼントの箱から一つを選んでちょうだい。あ、戻すのは禁止ですことよ？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -492,14 +492,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 201102,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ど、どぉ…？",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

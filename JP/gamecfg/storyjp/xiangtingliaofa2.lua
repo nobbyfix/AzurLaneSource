@@ -1,15 +1,15 @@
 return {
-	mode = 2,
-	once = true,
 	id = "XIANGTINGLIAOFA2",
+	mode = 2,
 	fadein = 1.5,
+	once = true,
 	scripts = {
 		{
-			say = "ボルチモアとヴィクトリアスの声で起こされた。",
+			bgm = "bsm-1",
 			side = 2,
 			dir = 1,
 			blackBg = true,
-			bgm = "bsm-1",
+			say = "ボルチモアとヴィクトリアスの声で起こされた。",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -20,8 +20,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			blackBg = true,
 			say = "……どうやらNPシティに到着した時にセイレーンに奇襲され、それから混乱で気を失っていたようだ",
 			typewriter = {
@@ -34,14 +34,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 103160,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指揮官、すまない。ユニオンの防衛レーダーがどうやら機能していなかったようだ",
 			flashout = {
-				dur = 0.25,
 				black = true,
+				dur = 0.25,
 				alpha = {
 					0,
 					1

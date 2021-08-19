@@ -8,10 +8,10 @@ return {
 	desc = "上盾",
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
 			target_choise = "TargetShipTag",
+			targetAniEffect = "",
 			arg_list = {
 				buff_id = 50411,
 				ship_tag_list = {

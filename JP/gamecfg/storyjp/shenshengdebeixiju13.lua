@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHENSHENGDEBEIXIJU13",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"<size=51>「詩人は昏き森に迷い込み、3つの獣に行路を阻まれた」</size>",
@@ -53,8 +53,8 @@ return {
 			}
 		},
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			blackBg = true,
 			effects = {
 				{
@@ -64,8 +64,8 @@ return {
 				}
 			},
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -89,15 +89,15 @@ return {
 			}
 		},
 		{
-			bgName = "bg_italy_cg4",
+			say = "ロイヤル本島",
 			side = 2,
+			bgName = "bg_italy_cg4",
 			dir = 1,
 			bgmDelay = 1,
 			bgm = "story-2",
-			say = "ロイヤル本島",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -128,8 +128,8 @@ return {
 			}
 		},
 		{
-			actorName = "イラストリアス",
 			side = 2,
+			actorName = "イラストリアス",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -144,8 +144,8 @@ return {
 			}
 		},
 		{
-			actorName = "ヴィクトリアス",
 			side = 2,
+			actorName = "ヴィクトリアス",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -160,8 +160,8 @@ return {
 			}
 		},
 		{
-			actorName = "フォーミダブル",
 			side = 2,
+			actorName = "フォーミダブル",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -176,11 +176,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 2,
+			nameColor = "#a9f548",
 			bgName = "bg_italy_cg4",
-			dir = 1,
 			actorName = "ヴィクトリアス",
+			dir = 1,
 			say = "フォーミダブル、今のは余計だわ！",
 			dialogShake = {
 				speed = 0.09,
@@ -197,8 +197,8 @@ return {
 			}
 		},
 		{
-			actorName = "イラストリアス",
 			side = 2,
+			actorName = "イラストリアス",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -213,8 +213,8 @@ return {
 			}
 		},
 		{
-			actorName = "イラストリアス",
 			side = 2,
+			actorName = "イラストリアス",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -229,8 +229,8 @@ return {
 			}
 		},
 		{
-			actorName = "ヴィクトリアス",
 			side = 2,
+			actorName = "ヴィクトリアス",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -245,8 +245,8 @@ return {
 			}
 		},
 		{
-			actorName = "イラストリアス",
 			side = 2,
+			actorName = "イラストリアス",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -261,8 +261,8 @@ return {
 			}
 		},
 		{
-			actorName = "ヴィクトリアス",
 			side = 2,
+			actorName = "ヴィクトリアス",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -277,8 +277,8 @@ return {
 			}
 		},
 		{
-			actorName = "イラストリアス",
 			side = 2,
+			actorName = "イラストリアス",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -293,8 +293,8 @@ return {
 			}
 		},
 		{
-			actorName = "フォーミダブル",
 			side = 2,
+			actorName = "フォーミダブル",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -309,11 +309,11 @@ return {
 			}
 		},
 		{
-			nameColor = "#a9f548",
 			side = 2,
+			nameColor = "#a9f548",
 			bgName = "bg_italy_cg4",
-			dir = 1,
 			actorName = "イラストリアス",
+			dir = 1,
 			say = "フォーミダブル、違いますよ！",
 			dialogShake = {
 				speed = 0.09,
@@ -330,9 +330,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_italy_cg4",
-			dir = 1,
 			say = "イラストリアスはちょっと取り乱した。",
 			typewriter = {
 				speed = 0.05,
@@ -344,8 +344,8 @@ return {
 			}
 		},
 		{
-			actorName = "フォーミダブル",
 			side = 2,
+			actorName = "フォーミダブル",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -360,8 +360,8 @@ return {
 			}
 		},
 		{
-			actorName = "イラストリアス",
 			side = 2,
+			actorName = "イラストリアス",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -376,8 +376,8 @@ return {
 			}
 		},
 		{
-			actorName = "イラストリアス",
 			side = 2,
+			actorName = "イラストリアス",
 			bgName = "bg_italy_cg4",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -392,12 +392,12 @@ return {
 			}
 		},
 		{
-			actorName = "イラストリアス",
 			side = 2,
+			actorName = "イラストリアス",
 			bgName = "bg_italy_cg4",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
-			nameColor = "#a9f548",
 			say = "――地中海に、行ってきてくださらないかしら？",
 			typewriter = {
 				speed = 0.05,

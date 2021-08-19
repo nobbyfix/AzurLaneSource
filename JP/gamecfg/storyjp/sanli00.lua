@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	continueBgm = true,
 	id = "SANLI00",
+	continueBgm = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			bgm = "story-6",
+			mode = 1,
 			sequence = {
 				{
 					"",
@@ -19,8 +19,8 @@ return {
 				"座標 35.0????,17?.0????95――「鏡面海域」",
 				0.2,
 				{
-					967,
-					-685
+					600,
+					-480
 				}
 			}
 		}

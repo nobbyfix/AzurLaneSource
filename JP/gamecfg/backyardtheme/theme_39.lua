@@ -2,704 +2,704 @@ return {
 	id = 39,
 	furnitures_1 = {
 		{
-			dir = 1,
+			id = 39302,
 			parent = 0,
 			y = 24,
-			id = 39302,
+			dir = 1,
 			x = 18,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39110,
 			parent = 0,
 			y = 22,
-			id = 39110,
+			dir = 1,
 			x = 16,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39111,
 			parent = 0,
 			y = 17,
-			id = 39111,
+			dir = 1,
 			x = 13,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39104,
 			parent = 0,
 			y = 18,
-			id = 39104,
+			dir = 1,
 			x = 18,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39305,
 			parent = 0,
 			y = 24,
-			id = 39305,
+			dir = 1,
 			x = 14,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39306,
 			parent = 0,
 			y = 20,
-			id = 39306,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39001,
 			parent = 0,
 			y = 0,
-			id = 39001,
+			dir = 1,
 			x = 0,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39307,
 			parent = 0,
 			y = 12,
-			id = 39307,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39002,
 			parent = 0,
 			y = 0,
-			id = 39002,
+			dir = 1,
 			x = 0,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39105,
 			parent = 0,
 			y = 13,
-			id = 39105,
+			dir = 1,
 			x = 13,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39101,
 			parent = 0,
 			y = 22,
-			id = 39101,
+			dir = 1,
 			x = 14,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39108,
 			parent = 0,
 			y = 13,
-			id = 39108,
+			dir = 1,
 			x = 20,
 			child = {}
 		},
 		{
-			dir = 2,
+			id = 39114,
 			parent = 0,
 			y = 16,
-			id = 39114,
+			dir = 2,
 			x = 17,
 			child = {}
 		}
 	},
 	furnitures_2 = {
 		{
-			dir = 1,
+			id = 39120,
 			parent = 0,
 			y = 14,
-			id = 39120,
+			dir = 1,
 			x = 10,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39105,
 			parent = 0,
 			y = 18,
-			id = 39105,
+			dir = 1,
 			x = 12,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39122,
 			parent = 0,
 			y = 10,
-			id = 39122,
+			dir = 1,
 			x = 9,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39107,
 			parent = 0,
 			y = 8,
-			id = 39107,
+			dir = 1,
 			x = 8,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39301,
 			parent = 0,
 			y = 24,
-			id = 39301,
+			dir = 1,
 			x = 18,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39302,
 			parent = 0,
 			y = 24,
-			id = 39302,
+			dir = 1,
 			x = 8,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39303,
 			parent = 0,
 			y = 14,
-			id = 39303,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 2,
+			id = 39110,
 			parent = 0,
 			y = 16,
-			id = 39110,
+			dir = 2,
 			x = 22,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39304,
 			parent = 0,
 			y = 8,
-			id = 39304,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39124,
 			parent = 0,
 			y = 21,
-			id = 39124,
+			dir = 1,
 			x = 21,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39305,
 			parent = 0,
 			y = 24,
-			id = 39305,
+			dir = 1,
 			x = 14,
 			child = {}
 		},
 		{
-			dir = 2,
+			id = 39109,
 			parent = 0,
 			y = 23,
-			id = 39109,
+			dir = 2,
 			x = 12,
 			child = {}
 		},
 		{
-			dir = 2,
+			id = 39104,
 			parent = 0,
 			y = 10,
-			id = 39104,
+			dir = 2,
 			x = 18,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39001,
 			parent = 0,
 			y = 0,
-			id = 39001,
+			dir = 1,
 			x = 0,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39114,
 			parent = 0,
 			y = 9,
-			id = 39114,
+			dir = 1,
 			x = 16,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39002,
 			parent = 0,
 			y = 0,
-			id = 39002,
+			dir = 1,
 			x = 0,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39115,
 			parent = 0,
 			y = 19,
-			id = 39115,
+			dir = 1,
 			x = 18,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39108,
 			parent = 0,
 			y = 16,
-			id = 39108,
+			dir = 1,
 			x = 15,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39116,
 			parent = 0,
 			y = 19,
-			id = 39116,
+			dir = 1,
 			x = 8,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39307,
 			parent = 0,
 			y = 18,
-			id = 39307,
+			dir = 1,
 			x = 24,
 			child = {}
 		}
 	},
 	furnitures_3 = {
 		{
-			dir = 1,
+			id = 39101,
 			parent = 0,
 			y = 22,
-			id = 39101,
+			dir = 1,
 			x = 22,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39102,
 			parent = 0,
 			y = 15,
-			id = 39102,
+			dir = 1,
 			x = 13,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39103,
 			parent = 0,
 			y = 18,
-			id = 39103,
+			dir = 1,
 			x = 19,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39104,
 			parent = 0,
 			y = 18,
-			id = 39104,
+			dir = 1,
 			x = 7,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39122,
 			parent = 0,
 			y = 6,
-			id = 39122,
+			dir = 1,
 			x = 18,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39108,
 			parent = 0,
 			y = 16,
-			id = 39108,
+			dir = 1,
 			x = 5,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39110,
 			parent = 0,
 			y = 22,
-			id = 39110,
+			dir = 1,
 			x = 5,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39109,
 			parent = 0,
 			y = 14,
-			id = 39109,
+			dir = 1,
 			x = 21,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39305,
 			parent = 0,
 			y = 24,
-			id = 39305,
+			dir = 1,
 			x = 12,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39303,
 			parent = 0,
 			y = 12,
-			id = 39303,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39304,
 			parent = 0,
 			y = 4,
-			id = 39304,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39111,
 			parent = 0,
 			y = 20,
-			id = 39111,
+			dir = 1,
 			x = 14,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39106,
 			parent = 0,
 			y = 17,
-			id = 39106,
+			dir = 1,
 			x = 18,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39112,
 			parent = 0,
 			y = 9,
-			id = 39112,
+			dir = 1,
 			x = 5,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39301,
 			parent = 0,
 			y = 24,
-			id = 39301,
+			dir = 1,
 			x = 16,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39306,
 			parent = 0,
 			y = 16,
-			id = 39306,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39001,
 			parent = 0,
 			y = 0,
-			id = 39001,
+			dir = 1,
 			x = 0,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39307,
 			parent = 0,
 			y = 6,
-			id = 39307,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39002,
 			parent = 0,
 			y = 0,
-			id = 39002,
+			dir = 1,
 			x = 0,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39302,
 			parent = 0,
 			y = 24,
-			id = 39302,
+			dir = 1,
 			x = 6,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39120,
 			parent = 0,
 			y = 10,
-			id = 39120,
+			dir = 1,
 			x = 19,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39116,
 			parent = 0,
 			y = 5,
-			id = 39116,
+			dir = 1,
 			x = 9,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39114,
 			parent = 0,
 			y = 6,
-			id = 39114,
+			dir = 1,
 			x = 14,
 			child = {}
 		}
 	},
 	furnitures_4 = {
 		{
-			dir = 1,
+			id = 39101,
 			parent = 0,
 			y = 22,
-			id = 39101,
+			dir = 1,
 			x = 22,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39102,
 			parent = 0,
 			y = 11,
-			id = 39102,
+			dir = 1,
 			x = 8,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39120,
 			parent = 0,
 			y = 7,
-			id = 39120,
+			dir = 1,
 			x = 20,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39103,
 			parent = 0,
 			y = 17,
-			id = 39103,
+			dir = 1,
 			x = 18,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39106,
 			parent = 0,
 			y = 16,
-			id = 39106,
+			dir = 1,
 			x = 17,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39104,
 			parent = 0,
 			y = 17,
-			id = 39104,
+			dir = 1,
 			x = 3,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39110,
 			parent = 0,
 			y = 21,
-			id = 39110,
+			dir = 1,
 			x = 1,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39105,
 			parent = 0,
 			y = 12,
-			id = 39105,
+			dir = 1,
 			x = 4,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39118,
 			parent = 0,
 			y = 12,
-			id = 39118,
+			dir = 1,
 			x = 15,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39122,
 			parent = 0,
 			y = 3,
-			id = 39122,
+			dir = 1,
 			x = 19,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39109,
 			parent = 0,
 			y = 12,
-			id = 39109,
+			dir = 1,
 			x = 21,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39107,
 			parent = 0,
 			y = 14,
-			id = 39107,
+			dir = 1,
 			x = 2,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39123,
 			parent = 0,
 			y = 8,
-			id = 39123,
+			dir = 1,
 			x = 12,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39108,
 			parent = 0,
 			y = 14,
-			id = 39108,
+			dir = 1,
 			x = 0,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39112,
 			parent = 0,
 			y = 8,
-			id = 39112,
+			dir = 1,
 			x = 4,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39302,
 			parent = 0,
 			y = 24,
-			id = 39302,
+			dir = 1,
 			x = 4,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39307,
 			parent = 0,
 			y = 2,
-			id = 39307,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39303,
 			parent = 0,
 			y = 8,
-			id = 39303,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39301,
 			parent = 0,
 			y = 24,
-			id = 39301,
+			dir = 1,
 			x = 16,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39304,
 			parent = 0,
 			y = 0,
-			id = 39304,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39124,
 			parent = 0,
 			y = 4,
-			id = 39124,
+			dir = 1,
 			x = 6,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39305,
 			parent = 0,
 			y = 24,
-			id = 39305,
+			dir = 1,
 			x = 0,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39111,
 			parent = 0,
 			y = 18,
-			id = 39111,
+			dir = 1,
 			x = 11,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39306,
 			parent = 0,
 			y = 18,
-			id = 39306,
+			dir = 1,
 			x = 24,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39001,
 			parent = 0,
 			y = 0,
-			id = 39001,
+			dir = 1,
 			x = 0,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39114,
 			parent = 0,
 			y = 2,
-			id = 39114,
+			dir = 1,
 			x = 16,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39002,
 			parent = 0,
 			y = 0,
-			id = 39002,
+			dir = 1,
 			x = 0,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39115,
 			parent = 0,
 			y = 2,
-			id = 39115,
+			dir = 1,
 			x = 2,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39119,
 			parent = 0,
 			y = 16,
-			id = 39119,
+			dir = 1,
 			x = 21,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39116,
 			parent = 0,
 			y = 0,
-			id = 39116,
+			dir = 1,
 			x = 9,
 			child = {}
 		},
 		{
-			dir = 1,
+			id = 39117,
 			parent = 0,
 			y = 22,
-			id = 39117,
+			dir = 1,
 			x = 17,
 			child = {}
 		}

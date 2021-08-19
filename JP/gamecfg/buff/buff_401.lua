@@ -1,7 +1,7 @@
 return {
-	time = 6,
-	name = "破甲debuff",
 	init_effect = "",
+	name = "破甲debuff",
+	time = 6,
 	picture = "",
 	desc = "",
 	stack = 1,
@@ -16,8 +16,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.08,
-				attr = "injureRatioByCannon"
+				attr = "injureRatioByCannon",
+				number = 0.08
 			}
 		}
 	}

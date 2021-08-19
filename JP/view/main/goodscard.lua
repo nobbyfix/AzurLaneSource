@@ -1,6 +1,6 @@
 slot0 = class("GoodsCard")
 
-slot0.Ctor = function (slot0, slot1)
+function slot0.Ctor(slot0, slot1)
 	pg.DelegateInfo.New(slot0)
 
 	slot0.go = slot1
@@ -21,11 +21,11 @@ slot0.Ctor = function (slot0, slot1)
 	slot0.maskTip = i18n("buy_countLimit")
 
 	onButton(slot0, slot0.mask, function ()
-		pg.TipsMgr.GetInstance():ShowTips(slot0.maskTip)
+		pg.TipsMgr.GetInstance():ShowTips(uv0.maskTip)
 	end, SFX_PANEL)
 end
 
-slot0.setGroupMask = function (slot0, slot1)
+function slot0.setGroupMask(slot0, slot1)
 	slot3 = slot0.goodsVO:getConfig("group_limit") > 0 and slot2 <= slot1
 
 	if isActive(slot0.mask) then
@@ -40,7 +40,7 @@ slot0.setGroupMask = function (slot0, slot1)
 	end
 end
 
-slot0.setLevelMask = function (slot0, slot1)
+function slot0.setLevelMask(slot0, slot1)
 	slot2 = slot0.goodsVO:getLevelLimit(slot1)
 	slot3 = slot0.goodsVO:isLevelLimit(slot1)
 
@@ -59,73 +59,38 @@ slot0.setLevelMask = function (slot0, slot1)
 	end
 end
 
-slot0.update = function (slot0, slot1)
+function slot0.update(slot0, slot1)
 	slot0.goodsVO = slot1
-	slot2, slot3 = slot0.goodsVO:canPurchase()
 
-	setActive(slot0.mask, not slot2)
-
-	slot4 = slot1:getConfig("type")
-
+	setActive(slot0.mask, not slot0.goodsVO:canPurchase())
 	setActive(slot0.stars, false)
 
-	slot6 = ""
+	slot3 = slot1:getDropInfo()
 
-	if slot1:getConfig("effect_args") == "ship_bag_size" then
-		updateDrop(slot0.itemTF, {
-			count = 1,
-			type = DROP_TYPE_ITEM,
-			id = Goods.SHIP_BAG_SIZE_ITEM
-		})
+	updateDrop(slot0.itemTF, slot3)
+	setText(slot0.nameTxt, shortenString(slot3.cfg.name or "", 6))
 
-		slot6 = pg.item_data_statistics[Goods.SHIP_BAG_SIZE_ITEM].name or "??"
-	elseif slot5 == "equip_bag_size" then
-		updateDrop(slot0.itemTF, {
-			count = 1,
-			type = DROP_TYPE_ITEM,
-			id = Goods.EQUIP_BAG_SIZE_ITEM
-		})
-
-		slot6 = pg.item_data_statistics[Goods.EQUIP_BAG_SIZE_ITEM].name or "??"
-	elseif slot5 == "commander_bag_size" then
-		updateDrop(slot0.itemTF, {
-			count = 1,
-			type = DROP_TYPE_ITEM,
-			id = Goods.COMMANDER_BAG_SIZE_ITEM
-		})
-
-		slot6 = pg.item_data_statistics[Goods.COMMANDER_BAG_SIZE_ITEM].name or "??"
-	else
-		updateDrop(slot0.itemTF, {
-			type = slot1:getConfig("type"),
-			id = slot5[1],
-			count = slot1:getConfig("num")
-		})
-		setText(slot0.nameTxt, shortenString(()["cfg"].name or "??", 6))
-
-		slot7 = ""
-		slot8 = slot1:getConfig("resource_num")
-	end
+	slot5 = ""
 
 	if slot1:getConfig("genre") == ShopArgs.ShoppingStreetLimit then
-		slot7 = 100 - slot1.discount .. "%OFF"
-		slot8 = slot8 * slot1.discount / 100
+		slot5 = 100 - slot1.discount .. "%OFF"
+		slot6 = slot1:getConfig("resource_num") * slot1.discount / 100
 	end
 
 	setActive(slot0.discountTF, false)
 
-	slot0.discountTF = (slot1.activityDiscount and findTF(slot0.tr, "item/discount_activity")) or findTF(slot0.tr, "item/discount")
+	slot0.discountTF = slot1.activityDiscount and findTF(slot0.tr, "item/discount_activity") or findTF(slot0.tr, "item/discount")
 	slot0.discountTextTF = findTF(slot0.discountTF, "Text"):GetComponent(typeof(Text))
 
 	setActive(slot0.discountTF, slot1:hasDiscount())
 
-	slot0.discountTextTF.text = slot7
-	slot0.countTF.text = math.ceil(slot8)
+	slot0.discountTextTF.text = slot5
+	slot0.countTF.text = math.ceil(slot6)
 
 	GetImageSpriteFromAtlasAsync(pg.item_data_statistics[id2ItemId(slot1:getConfig("resource_type"))].icon, "", tf(slot0.resIconTF))
 end
 
-slot0.dispose = function (slot0)
+function slot0.dispose(slot0)
 	pg.DelegateInfo.Dispose(slot0)
 end
 

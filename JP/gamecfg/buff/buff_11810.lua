@@ -8,8 +8,8 @@ return {
 				},
 				arg_list = {
 					rant = 3000,
-					skill_id = 11811,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 11811
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 				},
 				arg_list = {
 					rant = 3220,
-					skill_id = 11811,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 11811
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 				},
 				arg_list = {
 					rant = 3440,
-					skill_id = 11811,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 11811
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 				},
 				arg_list = {
 					rant = 3660,
-					skill_id = 11811,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 11811
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 				},
 				arg_list = {
 					rant = 3880,
-					skill_id = 11811,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 11811
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 				},
 				arg_list = {
 					rant = 4100,
-					skill_id = 11811,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 11811
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 				},
 				arg_list = {
 					rant = 4320,
-					skill_id = 11811,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 11811
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 				},
 				arg_list = {
 					rant = 4540,
-					skill_id = 11811,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 11811
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 				},
 				arg_list = {
 					rant = 4760,
-					skill_id = 11811,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 11811
 				}
 			}
 		}
@@ -143,8 +143,8 @@ return {
 				},
 				arg_list = {
 					rant = 5000,
-					skill_id = 11811,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					skill_id = 11811
 				}
 			}
 		}
@@ -152,12 +152,12 @@ return {
 	desc_get = "",
 	name = "战无不胜",
 	init_effect = "",
-	id = 11810,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 11810,
 	icon = 11810,
 	last_effect = "",
 	effect_list = {}

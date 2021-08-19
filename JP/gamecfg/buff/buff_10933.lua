@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "威光",
 	init_effect = "",
-	id = 10933,
+	name = "威光",
+	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "每隔20秒触发",
 	stack = 1,
-	color = "blue",
+	id = 10933,
 	icon = 10933,
 	last_effect = "",
 	effect_list = {
@@ -17,8 +17,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 10934,
-				target = "TargetSelf",
-				time = 20
+				time = 20,
+				target = "TargetSelf"
 			}
 		}
 	}

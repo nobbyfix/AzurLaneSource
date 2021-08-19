@@ -7,13 +7,13 @@ return {
 			style = {
 				text = "<color=#ff7d36>出撃</color>をタップしてね",
 				mode = 2,
-				dir = 1,
 				posY = -42,
+				dir = 1,
 				posX = 243
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/rightPanel/eventPanel/combatBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -24,19 +24,19 @@ return {
 			}
 		},
 		{
+			alpha = 0.277,
 			code = 2,
 			waitScene = "LevelScene",
-			alpha = 0.277,
 			style = {
 				text = "今の艦隊ならきっとホーネットを倒せる！",
 				mode = 2,
-				dir = 1,
 				posY = -200,
+				dir = 1,
 				posX = -190
 			},
 			ui = {
+				path = "/OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/normal/func_button",
 				pathIndex = -1,
-				path = "OverlayCamera/Overlay/UIMain/top/LevelStageView(Clone)/bottom_stage/func_button",
 				triggerType = {
 					1
 				},
@@ -55,8 +55,8 @@ return {
 			style = {
 				text = "また待ち伏せ！でも私たちの艦隊の<color=#ff7d36>回避値が上がってるわ</color>！無駄な戦闘を回避するのよ！",
 				mode = 2,
-				dir = 1,
 				posY = -304,
+				dir = 1,
 				posX = -190
 			}
 		},
@@ -66,16 +66,16 @@ return {
 			style = {
 				text = "<color=#ff7d36>回避</color>で待ち伏せから迂回して！",
 				mode = 2,
-				dir = 1,
 				posY = 167.08,
+				dir = 1,
 				posX = 23.41
 			}
 		},
 		{
 			alpha = 0.303,
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/top/LevelAmbushView(Clone)/window/dodge_button",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

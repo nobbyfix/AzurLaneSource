@@ -1,15 +1,15 @@
 return {
-	fadeType = 1,
+	id = "HOLOGUANQIA3",
 	mode = 2,
 	once = true,
-	id = "HOLOGUANQIA3",
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			side = 2,
-			say = "いくつかの小規模な戦闘が終わり、セイレーンの増援も止み、海域はまた静かになった",
 			dir = 1,
+			side = 2,
 			bgm = "holo-tokiwa",
+			say = "いくつかの小規模な戦闘が終わり、セイレーンの増援も止み、海域はまた静かになった",
 			effects = {
 				{
 					active = true,
@@ -26,8 +26,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "そして、鏡面海域から離脱するルートを探している二人の前に、発生したときと同じぐらいの勢いで急に霧が晴れた",
 			typewriter = {
 				speed = 0.05,
@@ -39,8 +39,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "――まるで霧が晴れること自体も鏡面海域の異常気象の一部であるかのように",
 			effects = {
 				{
@@ -88,8 +88,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "目の前には無数の島々、そして遠方には巨大な人工建造物がそびえ立っていた。",
 			typewriter = {
 				speed = 0.05,
@@ -101,8 +101,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "よく見ると、島の自然も建造物も、まるで色のついた無数のブロックでできているようだ。",
 			typewriter = {
 				speed = 0.05,
@@ -114,8 +114,8 @@ return {
 			}
 		},
 		{
-			side = 2,
 			dir = 1,
+			side = 2,
 			say = "現実世界の下手なレプリカ――見る者皆にそのような印象をもたせた",
 			typewriter = {
 				speed = 0.05,

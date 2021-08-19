@@ -7,8 +7,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 4.5,
-					attr = "oxyAtkDuration"
+					attr = "oxyAtkDuration",
+					number = 4.5
 				}
 			}
 		}
@@ -21,8 +21,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 5.2,
-					attr = "oxyAtkDuration"
+					attr = "oxyAtkDuration",
+					number = 5.2
 				}
 			}
 		}
@@ -35,8 +35,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 6,
-					attr = "oxyAtkDuration"
+					attr = "oxyAtkDuration",
+					number = 6
 				}
 			}
 		}
@@ -49,8 +49,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 7,
-					attr = "oxyAtkDuration"
+					attr = "oxyAtkDuration",
+					number = 7
 				}
 			}
 		}
@@ -63,8 +63,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 7.7,
-					attr = "oxyAtkDuration"
+					attr = "oxyAtkDuration",
+					number = 7.7
 				}
 			}
 		}
@@ -77,8 +77,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 8.5,
-					attr = "oxyAtkDuration"
+					attr = "oxyAtkDuration",
+					number = 8.5
 				}
 			}
 		}
@@ -91,8 +91,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 9.5,
-					attr = "oxyAtkDuration"
+					attr = "oxyAtkDuration",
+					number = 9.5
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 10.2,
-					attr = "oxyAtkDuration"
+					attr = "oxyAtkDuration",
+					number = 10.2
 				}
 			}
 		}
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 11,
-					attr = "oxyAtkDuration"
+					attr = "oxyAtkDuration",
+					number = 11
 				}
 			}
 		}
@@ -133,20 +133,20 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 12,
-					attr = "oxyAtkDuration"
+					attr = "oxyAtkDuration",
+					number = 12
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "水面作战",
 	init_effect = "jinengchufablue",
-	id = 3520,
-	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "blue",
+	id = 3520,
 	icon = 3520,
 	last_effect = "",
 	blink = {
@@ -163,8 +163,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 4.5,
-				attr = "oxyAtkDuration"
+				attr = "oxyAtkDuration",
+				number = 4.5
 			}
 		}
 	}

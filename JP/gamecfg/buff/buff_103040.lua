@@ -8,8 +8,8 @@ return {
 				},
 				arg_list = {
 					buff_id = 103041,
-					time = 10,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					time = 10
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 				},
 				arg_list = {
 					buff_id = 103041,
-					time = 10,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					time = 10
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 				},
 				arg_list = {
 					buff_id = 103041,
-					time = 10,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					time = 10
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 				},
 				arg_list = {
 					buff_id = 103041,
-					time = 10,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					time = 10
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 				},
 				arg_list = {
 					buff_id = 103041,
-					time = 10,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					time = 10
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 				},
 				arg_list = {
 					buff_id = 103041,
-					time = 10,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					time = 10
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 				},
 				arg_list = {
 					buff_id = 103041,
-					time = 10,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					time = 10
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 				},
 				arg_list = {
 					buff_id = 103041,
-					time = 10,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					time = 10
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 				},
 				arg_list = {
 					buff_id = 103041,
-					time = 10,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					time = 10
 				}
 			}
 		}
@@ -143,8 +143,8 @@ return {
 				},
 				arg_list = {
 					buff_id = 103041,
-					time = 10,
-					target = "TargetSelf"
+					target = "TargetSelf",
+					time = 10
 				}
 			}
 		}
@@ -152,12 +152,12 @@ return {
 	desc_get = "",
 	name = "夕星",
 	init_effect = "",
-	id = 103040,
 	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 103040,
 	icon = 103040,
 	last_effect = "",
 	effect_list = {
@@ -168,8 +168,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 103041,
-				time = 10,
-				target = "TargetSelf"
+				target = "TargetSelf",
+				time = 10
 			}
 		}
 	}

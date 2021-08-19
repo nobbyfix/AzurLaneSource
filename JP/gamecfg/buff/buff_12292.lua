@@ -29,14 +29,14 @@ return {
 	{
 		time = 5
 	},
+	time = 1,
 	name = "安全第一！",
 	init_effect = "jinengchufablue",
-	id = 12292,
-	time = 1,
+	color = "blue",
 	picture = "",
 	desc = "安全第一！",
 	stack = 1,
-	color = "blue",
+	id = 12292,
 	icon = 12290,
 	last_effect = "",
 	blink = {
@@ -54,8 +54,9 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1,
-				attr = "perfectDodge"
+				group = 12292,
+				attr = "perfectDodge",
+				number = 1
 			}
 		}
 	}

@@ -26,15 +26,17 @@ slot0.guildShop = "guild_store"
 slot0.guildShopFlash = "guild_shop_flash"
 slot0.skillRoomUpgrade = "skill_room_upgrade"
 slot0.SkinShopTimeLimit = "skin_shop_timelimit"
+slot0.WorldShop = "world"
 slot0.ShopStreet = 1
 slot0.MilitaryShop = 2
 slot0.ShopActivity = 3
 slot0.ShopGUILD = 4
 slot0.ShopShamBattle = 5
 slot0.ShopEscort = 6
+slot0.ShopFragment = 7
 slot0.DORM_FLOOR_ID = 19
 
-slot0.getOilByLevel = function (slot0)
+function slot0.getOilByLevel(slot0)
 	return 500 + slot0 * 3
 end
 

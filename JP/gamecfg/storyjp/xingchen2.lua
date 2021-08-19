@@ -8,8 +8,8 @@ return {
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"星の歌姫と小さな勇気\n\n<size=45>その二  Quadimension</size>",
@@ -18,23 +18,23 @@ return {
 			}
 		},
 		{
-			blackBg = true,
 			mode = 2,
+			blackBg = true,
 			say = "ライブ当日"
 		},
 		{
+			nameColor = "#a9f548",
 			side = 0,
 			bgName = "bg_story_star1",
-			mode = 2,
-			nameColor = "#a9f548",
+			actorName = "ファンA",
+			withoutPainting = true,
 			bgm = "star",
 			actor = 0,
-			actorName = "ファンA",
+			mode = 2,
 			say = "うおおおおおおおおおお！！サイコォォォォォォ！！",
-			withoutPainting = true,
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -65,14 +65,14 @@ return {
 			}
 		},
 		{
-			say = "愛してるぞォォォォォォ！！！",
+			actor = 0,
 			side = 1,
 			bgName = "bg_story_star1",
+			mode = 2,
 			actorName = "ファンB",
-			mode = 2,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			say = "愛してるぞォォォォォォ！！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -83,14 +83,14 @@ return {
 			}
 		},
 		{
-			say = "ﾊｧ……ﾊｧ……",
+			actor = 0,
 			side = 0,
 			bgName = "bg_story_star1",
+			mode = 2,
 			actorName = "ファンC",
-			mode = 2,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			say = "ﾊｧ……ﾊｧ……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -101,28 +101,28 @@ return {
 			}
 		},
 		{
-			actorName = "星の歌姫",
+			nameColor = "#a9f548",
 			side = 0,
 			bgName = "bg_story_star1",
-			withoutPainting = true,
+			say = "応援ありがとー！もっと盛り上がっていきましょー！！",
 			bgspeed = 2,
 			blackBg = true,
 			actor = 0,
-			nameColor = "#a9f548",
-			say = "応援ありがとー！もっと盛り上がっていきましょー！！",
+			actorName = "星の歌姫",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
 			}
 		},
 		{
-			say = "うおおおお！L・O・V・E！L・O・V・E！！",
+			actor = 0,
 			side = 1,
 			actorName = "ファン達",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "うおおおお！L・O・V・E！L・O・V・E！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -150,10 +150,10 @@ return {
 		{
 			actor = 0,
 			nameColor = "#a9f548",
-			say = "！！！",
 			side = 1,
-			blackBg = true,
 			withoutPainting = true,
+			blackBg = true,
+			say = "！！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -194,16 +194,16 @@ return {
 			}
 		},
 		{
+			actor = 0,
 			actorName = "星の歌姫",
 			side = 0,
-			say = "みんなありがとー！私の歌、みんなに伝わったかな～？次回のライブでまた会いましょう！！",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "みんなありがとー！私の歌、みんなに伝わったかな～？次回のライブでまた会いましょう！！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -228,13 +228,13 @@ return {
 			}
 		},
 		{
-			say = "うおおおおおおおお！！！！",
+			actor = 0,
 			side = 1,
 			actorName = "ファン達",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "うおおおおおおおお！！！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -245,13 +245,13 @@ return {
 			}
 		},
 		{
-			say = "ふぅ……やっぱ最高っすわ……",
+			actor = 0,
 			side = 1,
 			actorName = "ファンA",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "ふぅ……やっぱ最高っすわ……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -262,13 +262,13 @@ return {
 			}
 		},
 		{
-			say = "オイラ……もう死んでもいい……",
+			actor = 0,
 			side = 1,
 			actorName = "ファンB",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "オイラ……もう死んでもいい……",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -279,13 +279,13 @@ return {
 			}
 		},
 		{
-			say = "次のライブまで生きろ！ワイ頑張るぞ！",
+			actor = 0,
 			side = 1,
 			actorName = "ファンC",
-			blackBg = true,
-			actor = 0,
 			nameColor = "#a9f548",
 			withoutPainting = true,
+			blackBg = true,
+			say = "次のライブまで生きろ！ワイ頑張るぞ！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -302,15 +302,15 @@ return {
 			}
 		},
 		{
+			actor = 206030,
 			mode = 2,
 			side = 2,
-			blackBg = true,
-			actor = 206030,
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "これが……歌の力……すごい……",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1

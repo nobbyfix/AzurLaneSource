@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "SG雷达T2",
 	init_effect = "",
-	id = 6051,
+	name = "SG雷达T2",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "命中和机动提高6%",
 	stack = 1,
-	color = "yellow",
+	id = 6051,
 	icon = 6051,
 	last_effect = "",
 	effect_list = {
@@ -17,8 +17,8 @@ return {
 			},
 			arg_list = {
 				group = 6040,
-				number = 600,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = 600
 			}
 		},
 		{
@@ -28,8 +28,8 @@ return {
 			},
 			arg_list = {
 				group = 6040,
-				number = 600,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 600
 			}
 		}
 	}

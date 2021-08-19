@@ -1,16 +1,16 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "FENGBAOQIANXI7",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
-			say = "作戦前・周辺海域　警戒海域境界線　Risk.3",
-			side = 2,
 			dir = 1,
+			side = 2,
 			bgm = "battle-boss-4",
+			say = "作戦前・周辺海域　警戒海域境界線　Risk.3",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -96,8 +96,8 @@ return {
 			}
 		},
 		{
-			actorName = "通信機",
 			side = 2,
+			actorName = "通信機",
 			nameColor = "#a9f548",
 			dir = 1,
 			say = "（ザザザザザザザ―――）",
@@ -156,8 +156,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,

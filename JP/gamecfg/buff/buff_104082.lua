@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2000
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2220,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2220
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2440,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2440
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2660,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2660
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2880,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 2880
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3100,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 3100
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3320,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 3320
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3540,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 3540
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3760,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 3760
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 4000,
-					attr = "attackRating"
+					attr = "attackRating",
+					number = 4000
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "智能寻路自身命中",
 	init_effect = "jinengchufablue",
-	time = 0,
 	picture = "",
 	desc = "自身命中上升",
 	stack = 1,
@@ -173,8 +173,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 2000,
-				attr = "attackRating"
+				attr = "attackRating",
+				number = 2000
 			}
 		}
 	}

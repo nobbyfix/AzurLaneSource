@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "特殊目標の拿捕についてはヘルプボタンで説明を確認できます",
 				mode = 1,
-				dir = -1,
 				posY = 172,
+				dir = -1,
 				posX = -337
 			}
 		},

@@ -1,7 +1,7 @@
 return {
+	time = 0,
 	name = "属性变更",
 	init_effect = "jinengchufared",
-	time = 0,
 	picture = "",
 	desc = "免伤、回避率提升",
 	stack = 1,
@@ -22,8 +22,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = 0.3,
-				attr = "dodgeRateExtra"
+				attr = "dodgeRateExtra",
+				number = 0.3
 			}
 		},
 		{
@@ -32,8 +32,8 @@ return {
 				"onAttach"
 			},
 			arg_list = {
-				number = -0.2,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.2
 			}
 		}
 	}

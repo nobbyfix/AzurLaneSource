@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHANGYING1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			stopbgm = true,
 			mode = 1,
+			stopbgm = true,
 			sequence = {
 				{
 					"お花見大会\n\n<size=45>その一  早春日和</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 307030,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			bgm = "story-1",
-			actor = 307030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "はあ……知らないうちになんだか暖かくなってきてますね……",
+			bgm = "story-1",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -98,12 +98,12 @@ return {
 			}
 		},
 		{
-			say = "わっ！？鳳翔さん、気配を消すのは流石です！",
+			actor = 307040,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 307040,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "わっ！？鳳翔さん、気配を消すのは流石です！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

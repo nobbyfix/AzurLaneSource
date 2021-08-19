@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1500
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1720,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1720
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 1940,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 1940
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2160,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2160
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2380,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2380
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2600,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2600
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 2820,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 2820
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3040,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 3040
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3260,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 3260
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 3500,
-					attr = "dodgeRate"
+					attr = "dodgeRate",
+					number = 3500
 				}
 			}
 		}
 	},
+	time = 50,
 	name = "Engine boost +",
 	init_effect = "jinengchufablue",
-	id = 18122,
-	time = 50,
+	color = "blue",
 	picture = "",
 	desc = "机动提高",
 	stack = 1,
-	color = "blue",
+	id = 18122,
 	icon = 18120,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 1500,
-				attr = "dodgeRate"
+				attr = "dodgeRate",
+				number = 1500
 			}
 		}
 	}

@@ -1,18 +1,18 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 1,
-	once = true,
 	id = "LONGXIANGHUODONG6",
+	once = true,
+	fadeType = 1,
 	fadein = 1.5,
 	scripts = {
 		{
 			actor = 102060,
 			nameColor = "#a9f548",
 			side = 2,
+			bgm = "level",
 			dir = 1,
 			say = "あの子は……",
-			bgm = "level",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -23,14 +23,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = -1,
 			actor = 305060,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "どうして陸奥は同じ戦艦なのに比叡と霧島より足が遅いの？",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -85,14 +85,14 @@ return {
 			}
 		},
 		{
-			side = 2,
-			dir = 1,
 			actor = 103060,
+			side = 2,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "……インディちゃんほどではないけど優秀な妹と見た！",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1

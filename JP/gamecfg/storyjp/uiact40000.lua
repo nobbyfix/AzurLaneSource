@@ -1,9 +1,9 @@
 return {
 	fadeOut = 0.5,
 	mode = 1,
-	fadeType = 1,
-	once = true,
 	id = "UIACT40000",
+	once = true,
+	fadeType = 1,
 	occlusion = 2,
 	scripts = {
 		{

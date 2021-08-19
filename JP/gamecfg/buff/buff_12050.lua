@@ -7,9 +7,9 @@ return {
 					"onUpdate"
 				},
 				arg_list = {
-					skill_id = 12050,
 					target = "TargetSelf",
-					time = 35
+					time = 35,
+					skill_id = 12050
 				}
 			}
 		}
@@ -22,9 +22,9 @@ return {
 					"onUpdate"
 				},
 				arg_list = {
-					skill_id = 12050,
 					target = "TargetSelf",
-					time = 34
+					time = 34,
+					skill_id = 12050
 				}
 			}
 		}
@@ -37,9 +37,9 @@ return {
 					"onUpdate"
 				},
 				arg_list = {
-					skill_id = 12050,
 					target = "TargetSelf",
-					time = 33
+					time = 33,
+					skill_id = 12050
 				}
 			}
 		}
@@ -52,9 +52,9 @@ return {
 					"onUpdate"
 				},
 				arg_list = {
-					skill_id = 12050,
 					target = "TargetSelf",
-					time = 31
+					time = 31,
+					skill_id = 12050
 				}
 			}
 		}
@@ -67,9 +67,9 @@ return {
 					"onUpdate"
 				},
 				arg_list = {
-					skill_id = 12050,
 					target = "TargetSelf",
-					time = 30
+					time = 30,
+					skill_id = 12050
 				}
 			}
 		}
@@ -82,9 +82,9 @@ return {
 					"onUpdate"
 				},
 				arg_list = {
-					skill_id = 12050,
 					target = "TargetSelf",
-					time = 29
+					time = 29,
+					skill_id = 12050
 				}
 			}
 		}
@@ -97,9 +97,9 @@ return {
 					"onUpdate"
 				},
 				arg_list = {
-					skill_id = 12050,
 					target = "TargetSelf",
-					time = 26
+					time = 26,
+					skill_id = 12050
 				}
 			}
 		}
@@ -112,9 +112,9 @@ return {
 					"onUpdate"
 				},
 				arg_list = {
-					skill_id = 12050,
 					target = "TargetSelf",
-					time = 25
+					time = 25,
+					skill_id = 12050
 				}
 			}
 		}
@@ -127,9 +127,9 @@ return {
 					"onUpdate"
 				},
 				arg_list = {
-					skill_id = 12050,
 					target = "TargetSelf",
-					time = 23
+					time = 23,
+					skill_id = 12050
 				}
 			}
 		}
@@ -142,21 +142,21 @@ return {
 					"onUpdate"
 				},
 				arg_list = {
-					skill_id = 12050,
 					target = "TargetSelf",
-					time = 20
+					time = 20,
+					skill_id = 12050
 				}
 			}
 		}
 	},
-	time = 0,
-	name = "小比叡1",
 	init_effect = "",
-	id = 12050,
+	name = "小比叡1",
+	time = 0,
+	color = "red",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "red",
+	id = 12050,
 	icon = 12050,
 	last_effect = "",
 	effect_list = {
@@ -166,9 +166,9 @@ return {
 				"onUpdate"
 			},
 			arg_list = {
-				skill_id = 12050,
 				target = "TargetSelf",
-				time = 35
+				time = 35,
+				skill_id = 12050
 			}
 		}
 	}

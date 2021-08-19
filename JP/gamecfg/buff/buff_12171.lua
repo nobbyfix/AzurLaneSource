@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.55,
-					type = 23
+					type = 23,
+					number = -0.55
 				}
 			},
 			{
@@ -32,8 +32,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.572,
-					type = 23
+					type = 23,
+					number = -0.572
 				}
 			},
 			{
@@ -56,8 +56,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.594,
-					type = 23
+					type = 23,
+					number = -0.594
 				}
 			},
 			{
@@ -80,8 +80,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.616,
-					type = 23
+					type = 23,
+					number = -0.616
 				}
 			},
 			{
@@ -104,8 +104,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.638,
-					type = 23
+					type = 23,
+					number = -0.638
 				}
 			},
 			{
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.66,
-					type = 23
+					type = 23,
+					number = -0.66
 				}
 			},
 			{
@@ -152,8 +152,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.682,
-					type = 23
+					type = 23,
+					number = -0.682
 				}
 			},
 			{
@@ -176,8 +176,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.704,
-					type = 23
+					type = 23,
+					number = -0.704
 				}
 			},
 			{
@@ -200,8 +200,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.726,
-					type = 23
+					type = 23,
+					number = -0.726
 				}
 			},
 			{
@@ -224,8 +224,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.75,
-					type = 23
+					type = 23,
+					number = -0.75
 				}
 			},
 			{
@@ -239,9 +239,9 @@ return {
 			}
 		}
 	},
-	time = 50,
-	name = "最适化武装",
 	init_effect = "",
+	name = "最适化武装",
+	time = 50,
 	picture = "",
 	desc = "准备速度提高",
 	stack = 1,

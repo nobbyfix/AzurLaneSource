@@ -2,13 +2,13 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttrRatio",
+				type = "BattleBuffAddAttr",
 				trigger = {
 					"onAttach"
 				},
 				arg_list = {
-					number = 250,
-					attr = "dodgeRate"
+					attr = "dodgeRateExtra",
+					number = 0.025
 				}
 			},
 			{
@@ -17,8 +17,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.025,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.025
 				}
 			},
 			{
@@ -27,8 +27,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.025,
-					attr = "DMG_TAG_EHC_T_2"
+					attr = "DMG_TAG_EHC_T_2",
+					number = 0.025
 				}
 			}
 		}
@@ -36,13 +36,13 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttrRatio",
+				type = "BattleBuffAddAttr",
 				trigger = {
 					"onAttach"
 				},
 				arg_list = {
-					number = 300,
-					attr = "dodgeRate"
+					attr = "dodgeRateExtra",
+					number = 0.03
 				}
 			},
 			{
@@ -51,8 +51,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.03,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.03
 				}
 			},
 			{
@@ -61,8 +61,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.03,
-					attr = "DMG_TAG_EHC_T_2"
+					attr = "DMG_TAG_EHC_T_2",
+					number = 0.03
 				}
 			}
 		}
@@ -70,13 +70,13 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttrRatio",
+				type = "BattleBuffAddAttr",
 				trigger = {
 					"onAttach"
 				},
 				arg_list = {
-					number = 350,
-					attr = "dodgeRate"
+					attr = "dodgeRateExtra",
+					number = 0.035
 				}
 			},
 			{
@@ -85,8 +85,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.035,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.035
 				}
 			},
 			{
@@ -95,8 +95,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.035,
-					attr = "DMG_TAG_EHC_T_2"
+					attr = "DMG_TAG_EHC_T_2",
+					number = 0.035
 				}
 			}
 		}
@@ -104,13 +104,13 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttrRatio",
+				type = "BattleBuffAddAttr",
 				trigger = {
 					"onAttach"
 				},
 				arg_list = {
-					number = 400,
-					attr = "dodgeRate"
+					attr = "dodgeRateExtra",
+					number = 0.04
 				}
 			},
 			{
@@ -119,8 +119,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.04,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.04
 				}
 			},
 			{
@@ -129,8 +129,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.04,
-					attr = "DMG_TAG_EHC_T_2"
+					attr = "DMG_TAG_EHC_T_2",
+					number = 0.04
 				}
 			}
 		}
@@ -138,13 +138,13 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttrRatio",
+				type = "BattleBuffAddAttr",
 				trigger = {
 					"onAttach"
 				},
 				arg_list = {
-					number = 450,
-					attr = "dodgeRate"
+					attr = "dodgeRateExtra",
+					number = 0.045
 				}
 			},
 			{
@@ -153,8 +153,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.045,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.045
 				}
 			},
 			{
@@ -163,8 +163,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.045,
-					attr = "DMG_TAG_EHC_T_2"
+					attr = "DMG_TAG_EHC_T_2",
+					number = 0.045
 				}
 			}
 		}
@@ -172,13 +172,13 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttrRatio",
+				type = "BattleBuffAddAttr",
 				trigger = {
 					"onAttach"
 				},
 				arg_list = {
-					number = 500,
-					attr = "dodgeRate"
+					attr = "dodgeRateExtra",
+					number = 0.05
 				}
 			},
 			{
@@ -187,8 +187,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.05
 				}
 			},
 			{
@@ -197,8 +197,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "DMG_TAG_EHC_T_2"
+					attr = "DMG_TAG_EHC_T_2",
+					number = 0.05
 				}
 			}
 		}
@@ -206,13 +206,13 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttrRatio",
+				type = "BattleBuffAddAttr",
 				trigger = {
 					"onAttach"
 				},
 				arg_list = {
-					number = 550,
-					attr = "dodgeRate"
+					attr = "dodgeRateExtra",
+					number = 0.055
 				}
 			},
 			{
@@ -221,8 +221,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.055,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.055
 				}
 			},
 			{
@@ -231,8 +231,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.055,
-					attr = "DMG_TAG_EHC_T_2"
+					attr = "DMG_TAG_EHC_T_2",
+					number = 0.055
 				}
 			}
 		}
@@ -240,13 +240,13 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttrRatio",
+				type = "BattleBuffAddAttr",
 				trigger = {
 					"onAttach"
 				},
 				arg_list = {
-					number = 600,
-					attr = "dodgeRate"
+					attr = "dodgeRateExtra",
+					number = 0.06
 				}
 			},
 			{
@@ -255,8 +255,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.06,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.06
 				}
 			},
 			{
@@ -265,8 +265,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.06,
-					attr = "DMG_TAG_EHC_T_2"
+					attr = "DMG_TAG_EHC_T_2",
+					number = 0.06
 				}
 			}
 		}
@@ -274,13 +274,13 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttrRatio",
+				type = "BattleBuffAddAttr",
 				trigger = {
 					"onAttach"
 				},
 				arg_list = {
-					number = 650,
-					attr = "dodgeRate"
+					attr = "dodgeRateExtra",
+					number = 0.065
 				}
 			},
 			{
@@ -289,8 +289,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.065,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.065
 				}
 			},
 			{
@@ -299,8 +299,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.065,
-					attr = "DMG_TAG_EHC_T_2"
+					attr = "DMG_TAG_EHC_T_2",
+					number = 0.065
 				}
 			}
 		}
@@ -308,13 +308,13 @@ return {
 	{
 		effect_list = {
 			{
-				type = "BattleBuffAddAttrRatio",
+				type = "BattleBuffAddAttr",
 				trigger = {
 					"onAttach"
 				},
 				arg_list = {
-					number = 700,
-					attr = "dodgeRate"
+					attr = "dodgeRateExtra",
+					number = 0.07
 				}
 			},
 			{
@@ -323,8 +323,8 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.07,
-					attr = "DMG_TAG_EHC_T_1"
+					attr = "DMG_TAG_EHC_T_1",
+					number = 0.07
 				}
 			},
 			{
@@ -333,15 +333,15 @@ return {
 					"onAttach"
 				},
 				arg_list = {
-					number = 0.07,
-					attr = "DMG_TAG_EHC_T_2"
+					attr = "DMG_TAG_EHC_T_2",
+					number = 0.07
 				}
 			}
 		}
 	},
-	time = 0,
-	name = "狼群战术-U101",
 	init_effect = "",
+	name = "狼群战术-U101",
+	time = 0,
 	picture = "",
 	desc = "属性提升",
 	stack = 5,

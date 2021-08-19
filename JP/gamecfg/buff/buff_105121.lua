@@ -9,8 +9,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.01,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.01
 				}
 			}
 		}
@@ -25,8 +25,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.014,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.014
 				}
 			}
 		}
@@ -41,8 +41,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.018,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.018
 				}
 			}
 		}
@@ -57,8 +57,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.022,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.022
 				}
 			}
 		}
@@ -73,8 +73,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.026,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.026
 				}
 			}
 		}
@@ -89,8 +89,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.03,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.03
 				}
 			}
 		}
@@ -105,8 +105,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.035,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.035
 				}
 			}
 		}
@@ -121,8 +121,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.04,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.04
 				}
 			}
 		}
@@ -137,8 +137,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.045,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.045
 				}
 			}
 		}
@@ -153,15 +153,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.05,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = -0.05
 				}
 			}
 		}
 	},
-	time = 0,
-	name = "梦见好梦的「WAVE」",
 	init_effect = "",
+	name = "梦见好梦的「WAVE」",
+	time = 0,
 	picture = "",
 	desc = "",
 	stack = 1,
@@ -177,8 +177,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.01,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = -0.01
 			}
 		}
 	}

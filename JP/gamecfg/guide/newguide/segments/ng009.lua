@@ -5,8 +5,8 @@ return {
 			style = {
 				text = "ここをタップするとオフニャのスキルとアビリティを確認できるわ！",
 				mode = 1,
-				dir = -1,
 				posY = -200,
+				dir = -1,
 				posX = 200
 			},
 			ui = {
@@ -20,8 +20,8 @@ return {
 			style = {
 				text = "ここをタップするとオフニャの強化効果を確認できるわ！",
 				mode = 1,
-				dir = -1,
 				posY = -200,
+				dir = -1,
 				posX = 100
 			},
 			ui = {
@@ -35,25 +35,9 @@ return {
 			style = {
 				text = "オフニャは「強化」「アビリティ」などで育成できるわ！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = -500
-			}
-		},
-		{
-			style = {
-				text = "わからないことがあったら、ヘルプで確認してね！~",
-				mode = 1,
-				dir = -1,
-				posY = -200,
-				posX = -500
-			},
-			ui = {
-				path = "/OverlayCamera/Overlay/UIMain/blur_panel/main/left_panel/help_btn",
-				fingerPos = {
-					posY = -45,
-					posX = 45
-				}
 			}
 		}
 	}

@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.05,
-					attr = "DMG_FROM_TAG_1_Zara"
+					attr = "DMG_FROM_TAG_1_Zara",
+					number = 0.05
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.059,
-					attr = "DMG_FROM_TAG_1_Zara"
+					attr = "DMG_FROM_TAG_1_Zara",
+					number = 0.059
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.068,
-					attr = "DMG_FROM_TAG_1_Zara"
+					attr = "DMG_FROM_TAG_1_Zara",
+					number = 0.068
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.08,
-					attr = "DMG_FROM_TAG_1_Zara"
+					attr = "DMG_FROM_TAG_1_Zara",
+					number = 0.08
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.089,
-					attr = "DMG_FROM_TAG_1_Zara"
+					attr = "DMG_FROM_TAG_1_Zara",
+					number = 0.089
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.098,
-					attr = "DMG_FROM_TAG_1_Zara"
+					attr = "DMG_FROM_TAG_1_Zara",
+					number = 0.098
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.11,
-					attr = "DMG_FROM_TAG_1_Zara"
+					attr = "DMG_FROM_TAG_1_Zara",
+					number = 0.11
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.122,
-					attr = "DMG_FROM_TAG_1_Zara"
+					attr = "DMG_FROM_TAG_1_Zara",
+					number = 0.122
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.134,
-					attr = "DMG_FROM_TAG_1_Zara"
+					attr = "DMG_FROM_TAG_1_Zara",
+					number = 0.134
 				}
 			}
 		}
@@ -143,15 +143,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.15,
-					attr = "DMG_FROM_TAG_1_Zara"
+					attr = "DMG_FROM_TAG_1_Zara",
+					number = 0.15
 				}
 			}
 		}
 	},
-	time = 8,
-	name = "扎拉弹药特性技能",
 	init_effect = "",
+	name = "扎拉弹药特性技能",
+	time = 10,
 	picture = "",
 	desc = "受扎拉TAG炮击伤害上升",
 	stack = 1,
@@ -166,8 +166,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.05,
-				attr = "DMG_FROM_TAG_1_Zara"
+				attr = "DMG_FROM_TAG_1_Zara",
+				number = 0.05
 			}
 		}
 	}

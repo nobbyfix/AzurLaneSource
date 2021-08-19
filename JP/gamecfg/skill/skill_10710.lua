@@ -2,11 +2,11 @@ return {
 	uiEffect = "",
 	name = "巨兽猎手",
 	cd = 0,
-	picture = "0",
-	desc = "巨兽猎手",
 	painting = 1,
 	id = 10710,
+	picture = "0",
 	castCV = "skill",
+	desc = "巨兽猎手",
 	aniEffect = {
 		effect = "jineng",
 		offset = {
@@ -17,12 +17,29 @@ return {
 	},
 	effect_list = {
 		{
-			targetAniEffect = "",
-			casterAniEffect = "",
 			type = "BattleSkillAddBuff",
-			target_choise = "TargetSelf",
+			casterAniEffect = "",
+			targetAniEffect = "",
+			target_choise = {
+				"TargetSelf",
+				"TargetShipType"
+			},
 			arg_list = {
-				buff_id = 10711
+				buff_id = 10711,
+				ship_type_list = {
+					3
+				}
+			}
+		},
+		{
+			type = "BattleSkillAddBuff",
+			casterAniEffect = "",
+			targetAniEffect = "",
+			target_choise = {
+				"TargetSelf"
+			},
+			arg_list = {
+				buff_id = 10714
 			}
 		}
 	}

@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "イベントの新規ギミックはヘルプで確認できます",
 				mode = 1,
-				dir = -1,
 				posY = 172,
+				dir = -1,
 				posX = -337
 			}
 		},

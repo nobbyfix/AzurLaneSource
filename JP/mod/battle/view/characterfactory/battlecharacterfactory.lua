@@ -1,38 +1,43 @@
-ys = ys or {}
 slot0 = ys
-slot1 = singletonClass
-slot2 = "BattleCharacterFactory"
-slot1 = slot1(slot2)
-slot2 = slot0.Battle
-slot2.BattleCharacterFactory = slot1
-slot2 = "BattleCharacterFactory"
-slot1.__name = slot2
-slot2 = ""
-slot1.HP_BAR_NAME = slot2
-slot2 = "popup"
-slot1.POPUP_NAME = slot2
-slot2 = "ChargeAreaContainer/LockTag"
-slot1.TAG_NAME = slot2
-slot2 = Vector3
-slot3 = 0
-slot4 = -2.3
-slot5 = -1.5
-slot2 = slot2(slot3, slot4, slot5)
-slot1.MOVE_WAVE_FX_POS = slot2
-slot2 = "movewave"
-slot1.MOVE_WAVE_FX_NAME = slot2
-slot2 = "smoke"
-slot1.SMOKE_FX_NAME = slot2
-slot2 = "Bomb"
-slot1.BOMB_FX_NAME = slot2
+slot0 = slot0 or {}
+ys = slot0
+slot0 = ys
+slot1 = slot0.Battle
+slot1 = slot1.BattleConfig
+slot2 = singletonClass
+slot3 = "BattleCharacterFactory"
+slot2 = slot2(slot3)
+slot3 = slot0.Battle
+slot3.BattleCharacterFactory = slot2
+slot3 = "BattleCharacterFactory"
+slot2.__name = slot3
+slot3 = ""
+slot2.HP_BAR_NAME = slot3
+slot3 = "popup"
+slot2.POPUP_NAME = slot3
+slot3 = "ChargeAreaContainer/LockTag"
+slot2.TAG_NAME = slot3
+slot3 = Vector3
+slot4 = 0
+slot5 = -2.3
+slot6 = -1.5
+slot3 = slot3(slot4, slot5, slot6)
+slot2.MOVE_WAVE_FX_POS = slot3
+slot3 = "movewave"
+slot2.MOVE_WAVE_FX_NAME = slot3
+slot3 = "smoke"
+slot2.SMOKE_FX_NAME = slot3
+slot3 = "Bomb"
+slot2.BOMB_FX_NAME = slot3
+slot3 = "danchuanlanghuazhong2"
+slot2.DANCHUAN_MOVE_WAVE_FX_NAME = slot3
 
-function slot2(slot0)
-	return
+function slot3(slot0)
 end
 
-slot1.Ctor = slot2
+slot2.Ctor = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot2 = slot1.unit
 	slot4 = slot0
 	slot3 = slot0.MakeCharacter
@@ -58,17 +63,17 @@ function slot2(slot0, slot1)
 	return slot3
 end
 
-slot1.CreateCharacter = slot2
+slot2.CreateCharacter = slot3
 
-function slot2(slot0)
-	slot1 = slot0
+function slot3(slot0)
+	slot1 = uv0
 	slot1 = slot1.Battle
 	slot1 = slot1.BattleState
 	slot1 = slot1.GetInstance
 	slot1 = slot1()
 	slot2 = slot1
 	slot1 = slot1.GetMediatorByName
-	slot3 = slot0
+	slot3 = uv0
 	slot3 = slot3.Battle
 	slot3 = slot3.BattleSceneMediator
 	slot3 = slot3.__name
@@ -76,10 +81,10 @@ function slot2(slot0)
 	return slot1(slot2, slot3)
 end
 
-slot1.GetSceneMediator = slot2
+slot2.GetSceneMediator = slot3
 
-function slot2(slot0)
-	slot1 = slot0
+function slot3(slot0)
+	slot1 = uv0
 	slot1 = slot1.Battle
 	slot1 = slot1.BattleFXPool
 	slot1 = slot1.GetInstance
@@ -87,10 +92,10 @@ function slot2(slot0)
 	return slot1()
 end
 
-slot1.GetFXPool = slot2
+slot2.GetFXPool = slot3
 
-function slot2(slot0)
-	slot1 = slot0
+function slot3(slot0)
+	slot1 = uv0
 	slot1 = slot1.Battle
 	slot1 = slot1.BattleResourceManager
 	slot1 = slot1.GetInstance
@@ -98,10 +103,10 @@ function slot2(slot0)
 	return slot1()
 end
 
-slot1.GetCharacterPool = slot2
+slot2.GetCharacterPool = slot3
 
-function slot2(slot0)
-	slot1 = slot0
+function slot3(slot0)
+	slot1 = uv0
 	slot1 = slot1.Battle
 	slot1 = slot1.BattleHPBarManager
 	slot1 = slot1.GetInstance
@@ -109,16 +114,16 @@ function slot2(slot0)
 	return slot1()
 end
 
-slot1.GetHPBarPool = slot2
+slot2.GetHPBarPool = slot3
 
-function slot2(slot0)
-	slot1 = slot0
+function slot3(slot0)
+	slot1 = uv0
 	slot1 = slot1.Battle
 	slot1 = slot1.BattleDataProxy
 	slot1 = slot1.GetInstance
 	slot1 = slot1()
 	slot1 = slot1._mapId
-	slot2 = slot0
+	slot2 = uv0
 	slot2 = slot2.Battle
 	slot2 = slot2.BattleDataFunction
 	slot2 = slot2.GetDivingFilter
@@ -135,10 +140,10 @@ function slot2(slot0)
 	return slot3
 end
 
-slot1.GetDivingFilterColor = slot2
+slot2.GetDivingFilterColor = slot3
 
-function slot2(slot0)
-	slot1 = slot0
+function slot3(slot0)
+	slot1 = uv0
 	slot1 = slot1.Battle
 	slot1 = slot1.BattleCharacterFXContainersPool
 	slot1 = slot1.GetInstance
@@ -146,49 +151,80 @@ function slot2(slot0)
 	return slot1()
 end
 
-slot1.GetFXContainerPool = slot2
+slot2.GetFXContainerPool = slot3
 
-function slot2(slot0)
+function slot3(slot0)
 	slot1 = nil
 
 	return slot1
 end
 
-slot1.MakeCharacter = slot2
+slot2.MakeCharacter = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot2 = nil
 
 	return slot2
 end
 
-slot1.MakeModel = slot2
+slot2.MakeModel = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot2 = nil
 
 	return slot2
 end
 
-slot1.MakeBloodBar = slot2
+slot2.MakeBloodBar = slot3
 
-function slot2(slot0, slot1, slot2, slot3)
-	slot2.transform.sizeDelta = Vector2(slot5, slot7)
-	slot2.transform.Find(slot6, "blood").transform.sizeDelta = Vector2(slot1:GetUnitData().GetTemplate(slot4).hp_bar[1] + slot3 or 0, slot2.transform.Find(slot6, "blood").transform.rect.height)
+function slot3(slot0, slot1, slot2, slot3)
+	slot5 = slot1
+	slot4 = slot1.GetUnitData
+	slot4 = slot4(slot5)
+	slot6 = slot4
+	slot5 = slot4.GetTemplate
+	slot5 = slot5(slot6)
+	slot5 = slot5.hp_bar
+	slot5 = slot5[1]
+	slot6 = slot2.transform
+	slot7 = slot6.rect
+	slot7 = slot7.height
+	slot8 = Vector2
+	slot9 = slot5
+	slot10 = slot7
+	slot8 = slot8(slot9, slot10)
+	slot6.sizeDelta = slot8
+	slot9 = slot6
+	slot8 = slot6.Find
+	slot10 = "blood"
+	slot8 = slot8(slot9, slot10)
+	slot8 = slot8.transform
+	slot9 = slot8.rect
+	slot7 = slot9.height
+	slot9 = Vector2
+	slot10 = slot5 + slot3
+
+	if not slot10 then
+		slot10 = 0
+	end
+
+	slot11 = slot7
+	slot9 = slot9(slot10, slot11)
+	slot8.sizeDelta = slot9
 end
 
-slot1.SetHPBarWidth = slot2
+slot2.SetHPBarWidth = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot3 = slot1
 	slot2 = slot1.AddUIComponentContainer
 
 	slot2(slot3)
 end
 
-slot1.MakeUIComponentContainer = slot2
+slot2.MakeUIComponentContainer = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot3 = slot1
 	slot2 = slot1.GetTf
 	slot2 = slot2(slot3)
@@ -232,7 +268,7 @@ function slot2(slot0, slot1)
 	slot6 = slot6.fx_container
 	slot7 = {}
 	slot8 = ipairs
-	slot9 = slot0
+	slot9 = uv0
 	slot9 = slot9.Battle
 	slot9 = slot9.BattleConst
 	slot9 = slot9.FXContainerIndex
@@ -256,17 +292,17 @@ function slot2(slot0, slot1)
 	slot8(slot9, slot10, slot11)
 end
 
-slot1.MakeFXContainer = slot2
+slot2.MakeFXContainer = slot3
 
-function slot2(slot0)
+function slot3(slot0)
 	slot1 = nil
 
 	return slot1
 end
 
-slot1.MakeShadow = slot2
+slot2.MakeShadow = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot3 = slot1
 	slot2 = slot1.GetUnitData
 	slot2 = slot2(slot3)
@@ -322,9 +358,9 @@ function slot2(slot0, slot1)
 	slot4(slot5, slot6)
 end
 
-slot1.MakeSmokeFX = slot2
+slot2.MakeSmokeFX = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot3 = slot1
 	slot2 = slot1.GetUnitData
 	slot2 = slot2(slot3)
@@ -347,9 +383,9 @@ function slot2(slot0, slot1)
 	end
 end
 
-slot1.MakeEquipSkinAttachment = slot2
+slot2.MakeEquipSkinAttachment = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot3 = slot1
 	slot2 = slot1.AddWaveFX
 	slot4 = slot0.MOVE_WAVE_FX_NAME
@@ -357,9 +393,9 @@ function slot2(slot0, slot1)
 	slot2(slot3, slot4)
 end
 
-slot1.MakeWaveFX = slot2
+slot2.MakeWaveFX = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot3 = slot1
 	slot2 = slot1.AddPopNumPool
 	slot5 = slot0
@@ -371,10 +407,10 @@ function slot2(slot0, slot1)
 	slot2(slot3, slot4(slot5))
 end
 
-slot1.MakePopNumPool = slot2
+slot2.MakePopNumPool = slot3
 
-function slot2(slot0, slot1)
-	slot2 = slot0
+function slot3(slot0, slot1)
+	slot2 = uv0
 	slot2 = slot2.Battle
 	slot2 = slot2.BattleLockTag
 	slot2 = slot2.New
@@ -391,9 +427,9 @@ function slot2(slot0, slot1)
 	return slot2
 end
 
-slot1.MakeTag = slot2
+slot2.MakeTag = slot3
 
-function slot2(slot0)
+function slot3(slot0)
 	slot2 = slot0
 	slot1 = slot0.GetSceneMediator
 	slot1 = slot1(slot2)
@@ -405,9 +441,9 @@ function slot2(slot0)
 	return slot1
 end
 
-slot1.MakePopup = slot2
+slot2.MakePopup = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot3 = slot0
 	slot2 = slot0.GetSceneMediator
 	slot2 = slot2(slot3)
@@ -425,9 +461,9 @@ function slot2(slot0, slot1)
 	slot3(slot4)
 end
 
-slot1.MakeArrowBar = slot2
+slot2.MakeArrowBar = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
 	slot3 = slot0
 	slot2 = slot0.GetSceneMediator
 	slot2 = slot2(slot3)
@@ -440,9 +476,24 @@ function slot2(slot0, slot1)
 	slot3(slot4, slot5(slot6, slot7))
 end
 
-slot1.MakeCastClock = slot2
+slot2.MakeCastClock = slot3
 
-function slot2(slot0, slot1)
+function slot3(slot0, slot1)
+	slot3 = slot0
+	slot2 = slot0.GetSceneMediator
+	slot2 = slot2(slot3)
+	slot4 = slot1
+	slot3 = slot1.AddBarrierClock
+	slot6 = slot2
+	slot5 = slot2.InstantiateCharacterComponent
+	slot7 = "CastClockContainer/shieldClock"
+
+	slot3(slot4, slot5(slot6, slot7))
+end
+
+slot2.MakeBarrierClock = slot3
+
+function slot3(slot0, slot1)
 	slot3 = slot0
 	slot2 = slot0.GetSceneMediator
 	slot2 = slot2(slot3)
@@ -460,59 +511,97 @@ function slot2(slot0, slot1)
 	slot3(slot4)
 end
 
-slot1.MakeVigilantBar = slot2
+slot2.MakeVigilantBar = slot3
 
-function slot2(slot0, slot1, slot2)
-	if slot2 then
-		slot3 = slot0
-		slot3 = slot3.Battle
-		slot3 = slot3.BattleConst
-		slot3 = slot3.UnitDeathReason
-		slot3 = slot3.KILLED
+function slot3(slot0, slot1)
+	slot3 = slot0
+	slot2 = slot0.GetSceneMediator
+	slot2 = slot2(slot3)
+	slot4 = slot1
+	slot3 = slot1.AddCloakBar
+	slot6 = slot2
+	slot5 = slot2.InstantiateCharacterComponent
+	slot7 = "CloakContainer/cloakMeter"
 
-		if slot2 ~= slot3 then
-		end
-	else
-		slot4 = slot0
-		slot3 = slot0.GetFXPool
-		slot3 = slot3(slot4)
-		slot4 = slot3
-		slot3 = slot3.GetFX
-		slot5 = slot0.BOMB_FX_NAME
-		slot3, slot4 = slot3(slot4, slot5)
-		slot5 = pg
-		slot5 = slot5.EffectMgr
-		slot5 = slot5.GetInstance
-		slot5 = slot5()
-		slot6 = slot5
-		slot5 = slot5.PlayBattleEffect
-		slot7 = slot3
-		slot9 = slot4
-		slot8 = slot4.Add
-		slot11 = slot1
-		slot10 = slot1.GetPosition
-		slot8 = slot8(slot9, slot10(slot11))
-		slot9 = true
-
-		slot5(slot6, slot7, slot8, slot9)
-	end
+	slot3(slot4, slot5(slot6, slot7))
 
 	slot4 = slot1
-	slot3 = slot1.Dispose
+	slot3 = slot1.UpdateCloakBarPosition
 
 	slot3(slot4)
-
-	slot4 = slot0
-	slot3 = slot0.GetFXPool
-	slot3 = slot3(slot4)
-	slot4 = slot3
-	slot3 = slot3.PushCharacterAttachPoint
-	slot6 = slot1
-	slot5 = slot1.GetAttachPoint
-
-	slot3(slot4, slot5(slot6))
 end
 
-slot1.RemoveCharacter = slot2
+slot2.MakeCloakBar = slot3
 
-return
+function slot3(slot0, slot1, slot2)
+	slot4 = slot1
+	slot3 = slot1.GetUnitData
+	slot3 = slot3(slot4)
+	slot4 = slot3
+	slot3 = slot3.GetTemplate
+	slot3 = slot3(slot4)
+	slot3 = slot3.nationality
+
+	if slot3 then
+		slot4 = table
+		slot4 = slot4.contains
+		slot5 = uv0
+		slot5 = slot5.SWEET_DEATH_NATIONALITY
+		slot6 = slot3
+		slot4 = slot4(slot5, slot6)
+
+		if slot4 then
+			-- Nothing
+		end
+	elseif slot2 then
+		slot4 = uv1
+		slot4 = slot4.Battle
+		slot4 = slot4.BattleConst
+		slot4 = slot4.UnitDeathReason
+		slot4 = slot4.KILLED
+
+		if slot2 ~= slot4 then
+			-- Nothing
+		end
+	else
+		slot5 = slot0
+		slot4 = slot0.GetFXPool
+		slot4 = slot4(slot5)
+		slot5 = slot4
+		slot4 = slot4.GetFX
+		slot6 = slot0.BOMB_FX_NAME
+		slot4, slot5 = slot4(slot5, slot6)
+		slot6 = pg
+		slot6 = slot6.EffectMgr
+		slot6 = slot6.GetInstance
+		slot6 = slot6()
+		slot7 = slot6
+		slot6 = slot6.PlayBattleEffect
+		slot8 = slot4
+		slot10 = slot5
+		slot9 = slot5.Add
+		slot12 = slot1
+		slot11 = slot1.GetPosition
+		slot9 = slot9(slot10, slot11(slot12))
+		slot10 = true
+
+		slot6(slot7, slot8, slot9, slot10)
+	end
+
+	slot5 = slot1
+	slot4 = slot1.Dispose
+
+	slot4(slot5)
+
+	slot5 = slot0
+	slot4 = slot0.GetFXPool
+	slot4 = slot4(slot5)
+	slot5 = slot4
+	slot4 = slot4.PushCharacterAttachPoint
+	slot7 = slot1
+	slot6 = slot1.GetAttachPoint
+
+	slot4(slot5, slot6(slot7))
+end
+
+slot2.RemoveCharacter = slot3

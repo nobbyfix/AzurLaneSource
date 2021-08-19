@@ -9,14 +9,14 @@ return {
 	{},
 	{},
 	{},
-	time = 0,
-	name = "小海伦娜",
 	init_effect = "",
-	id = 12220,
+	name = "小海伦娜",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "战斗中，每20秒启用效果",
 	stack = 1,
-	color = "yellow",
+	id = 12220,
 	icon = 12220,
 	last_effect = "",
 	effect_list = {
@@ -27,8 +27,8 @@ return {
 			},
 			arg_list = {
 				buff_id = 12221,
-				target = "TargetSelf",
-				time = 20
+				time = 20,
+				target = "TargetSelf"
 			}
 		}
 	}

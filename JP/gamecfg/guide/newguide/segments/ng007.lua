@@ -6,8 +6,8 @@ return {
 			style = {
 				text = "手に入れたネコは「訓練」で中身を取り出せるわ！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -23,8 +23,8 @@ return {
 			style = {
 				text = "訓練枠をタップしてね！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
@@ -36,15 +36,15 @@ return {
 			style = {
 				text = "訓練するネコハコは<color=#A9F548>10</color>個まで選択できるけど、同時に訓練できるのは<color=#A9F548>4</color>個までね！",
 				mode = 1,
-				dir = 1,
 				posY = -110,
+				dir = 1,
 				posX = 0
 			}
 		},
 		{
 			ui = {
-				customSize = true,
 				scale = 1,
+				customSize = true,
 				path = "/OverlayCamera/Overlay/UIMain/CommanderBoxesUI(Clone)/buildpool_panel/frame/bg/content/list/2/icon",
 				triggerType = {
 					3

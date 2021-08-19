@@ -12,12 +12,12 @@ return {
 	desc_get = "",
 	name = "荣光",
 	init_effect = "",
-	id = 11330,
 	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "",
 	stack = 1,
-	color = "yellow",
+	id = 11330,
 	icon = 11330,
 	last_effect = "",
 	effect_list = {
@@ -31,7 +31,7 @@ return {
 			}
 		},
 		{
-			type = "BattleBuffAura",
+			type = "BattleBuffField",
 			trigger = {},
 			arg_list = {
 				buff_id = 11331,

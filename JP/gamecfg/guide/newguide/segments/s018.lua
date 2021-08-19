@@ -6,13 +6,13 @@ return {
 			style = {
 				text = "<color=#ff7d36>ドック</color>をタップしてちょうだい",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/toTop/frame/bottomPanel/btm/buttons_container/dockBtn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -26,21 +26,21 @@ return {
 			}
 		},
 		{
-			waitScene = "DockyardScene",
 			alpha = 0.306,
+			waitScene = "DockyardScene",
 			style = {
 				text = "艦をタップして、詳細を確認してちょうだい",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = -5.18
 			},
 			ui = {
-				pathIndex = 0,
 				path = "UICamera/Canvas/UIMain/DockyardUI(Clone)/main/ship_container/ships/",
+				pathIndex = 0,
 				image = {
-					source = "content/ship_icon",
 					isChild = true,
+					source = "content/ship_icon",
 					target = "content/ship_icon",
 					isRelative = true
 				},
@@ -57,18 +57,18 @@ return {
 			}
 		},
 		{
-			waitScene = "ShipMainScene",
 			alpha = 0.294,
+			waitScene = "ShipMainScene",
 			style = {
 				text = "<color=#ff7d36>装備</color>ボタンをタップして、今装備中の兵装を確認するのよ",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "/OverlayCamera/Overlay/UIMain/blur_panel/adapt/left_length/frame/root/equpiment_toggle",
+				pathIndex = -1,
 				triggerType = {
 					2
 				},
@@ -86,13 +86,13 @@ return {
 			style = {
 				text = "<color=#ff7d36>装備強化</color>もやってみよう！",
 				mode = 2,
-				dir = 1,
 				posY = -140,
+				dir = 1,
 				posX = 6
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/equipment_r_container(Adapt)/equipment_r_container/equipment_r/equipment/equipment_r2",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -108,13 +108,13 @@ return {
 			style = {
 				text = "確定で強化を行うのよ",
 				mode = 2,
-				dir = -1,
 				posY = 0,
+				dir = -1,
 				posX = 265.7
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/EquipmentInfoUI(Clone)/default/actions/action_button_2",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},
@@ -129,8 +129,8 @@ return {
 			style = {
 				text = "ここには<color=#ff7d36>強化後の能力</color>が表示されるわ！",
 				mode = 2,
-				dir = -1,
 				posY = 226,
+				dir = -1,
 				posX = 479
 			}
 		},
@@ -139,13 +139,13 @@ return {
 			style = {
 				text = "<color=#ff7d36>強化</color>をタップしてやってみて！",
 				mode = 2,
-				dir = 1,
 				posY = 0,
+				dir = 1,
 				posX = 0
 			},
 			ui = {
-				pathIndex = -1,
 				path = "OverlayCamera/Overlay/UIMain/EquipUpgradeUI(Clone)/main/panel/material_panel/start_btn",
+				pathIndex = -1,
 				triggerType = {
 					1
 				},

@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "鱼雷易伤",
 	init_effect = "",
-	id = 8603,
+	name = "鱼雷易伤",
+	time = 0,
+	color = "blue",
 	picture = "",
 	desc = "鱼雷易伤",
 	stack = 1,
-	color = "blue",
+	id = 8603,
 	icon = 2120,
 	last_effect = "Darkness",
 	effect_list = {
@@ -17,8 +17,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 11,
-				attr = "injureRatioByBulletTorpedo"
+				attr = "injureRatioByBulletTorpedo",
+				number = 11
 			}
 		},
 		{
@@ -28,8 +28,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.5,
-				attr = "injureRatioByCannon"
+				attr = "injureRatioByCannon",
+				number = -0.5
 			}
 		},
 		{
@@ -39,8 +39,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.5,
-				attr = "injureRatioByAir"
+				attr = "injureRatioByAir",
+				number = -0.5
 			}
 		}
 	}

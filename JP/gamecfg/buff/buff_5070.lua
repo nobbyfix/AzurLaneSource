@@ -1,7 +1,7 @@
 return {
-	time = 3,
-	name = "骑士之盾",
 	init_effect = "",
+	name = "骑士之盾",
+	time = 3,
 	picture = "",
 	desc = "概率触发器",
 	stack = 1,
@@ -16,8 +16,8 @@ return {
 			},
 			arg_list = {
 				rant = 5000,
-				target = "TargetSelf",
-				skill_id = 5070
+				skill_id = 5070,
+				target = "TargetSelf"
 			}
 		}
 	}

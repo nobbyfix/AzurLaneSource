@@ -1,12 +1,12 @@
 return {
-	time = 0,
-	name = "航母-指挥-航空II具体效果",
 	init_effect = "",
-	id = 441321,
+	name = "航母-指挥-航空II具体效果",
+	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "航母-指挥-航空II",
 	stack = 1,
-	color = "yellow",
+	id = 441321,
 	icon = 441320,
 	last_effect = "",
 	effect_list = {

@@ -8,8 +8,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.04,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.04
 				}
 			},
 			{
@@ -19,8 +19,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.04,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.04
 				}
 			}
 		}
@@ -34,8 +34,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.046,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.046
 				}
 			},
 			{
@@ -45,8 +45,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.046,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.046
 				}
 			}
 		}
@@ -60,8 +60,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.052,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.052
 				}
 			},
 			{
@@ -71,8 +71,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.052,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.052
 				}
 			}
 		}
@@ -86,8 +86,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.06,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.06
 				}
 			},
 			{
@@ -97,8 +97,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.06,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.06
 				}
 			}
 		}
@@ -112,8 +112,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.066,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.066
 				}
 			},
 			{
@@ -123,8 +123,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.066,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.066
 				}
 			}
 		}
@@ -138,8 +138,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.072,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.072
 				}
 			},
 			{
@@ -149,8 +149,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.072,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.072
 				}
 			}
 		}
@@ -164,8 +164,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.08,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.08
 				}
 			},
 			{
@@ -175,8 +175,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.08,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.08
 				}
 			}
 		}
@@ -190,8 +190,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.086,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.086
 				}
 			},
 			{
@@ -201,8 +201,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.086,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.086
 				}
 			}
 		}
@@ -216,8 +216,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.092,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.092
 				}
 			},
 			{
@@ -227,8 +227,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.092,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.092
 				}
 			}
 		}
@@ -242,8 +242,8 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = -0.1,
-					attr = "injureRatio"
+					attr = "injureRatio",
+					number = -0.1
 				}
 			},
 			{
@@ -253,15 +253,15 @@ return {
 					"onRemove"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.1
 				}
 			}
 		}
 	},
+	time = 12,
 	name = "鹤之加护",
 	init_effect = "jinengchufared",
-	time = 12,
 	picture = "",
 	desc = "受到伤害降低，伤害提高",
 	stack = 1,
@@ -283,8 +283,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = -0.04,
-				attr = "injureRatio"
+				attr = "injureRatio",
+				number = -0.04
 			}
 		},
 		{
@@ -294,8 +294,8 @@ return {
 				"onRemove"
 			},
 			arg_list = {
-				number = 0.04,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.04
 			}
 		}
 	}

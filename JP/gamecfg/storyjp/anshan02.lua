@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "ANSHAN02",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"四天王の大冒険・鞍山編\n\n<size=45>その二　母港の不思議</size>",
@@ -17,13 +17,13 @@ return {
 			}
 		},
 		{
+			actor = 501010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			bgm = "story-china",
-			actor = 501010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ここはこう…",
+			bgm = "story-china",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -82,12 +82,12 @@ return {
 			}
 		},
 		{
-			say = "まあまあ、適当でいいじゃない～これぐらい問題ないって～",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "まあまあ、適当でいいじゃない～これぐらい問題ないって～",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -118,15 +118,15 @@ return {
 			}
 		},
 		{
+			actor = 100010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = -1,
-			actor = 100010,
 			nameColor = "#a9f548",
+			dir = -1,
 			say = "プリン！アダダダダダ！走り回るよ～母港戦線、今日も異常なし！",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -155,12 +155,12 @@ return {
 			}
 		},
 		{
+			actor = 100000,
 			side = 1,
 			bgName = "bg_story_school",
-			say = "プリン！今日も姉ちゃんが元気プリン！でもブリちゃんも負けないプリン！",
-			dir = 1,
-			actor = 100000,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "プリン！今日も姉ちゃんが元気プリン！でもブリちゃんも負けないプリン！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -195,12 +195,12 @@ return {
 			}
 		},
 		{
-			say = "「母港の不思議」のひとつ、ブリちゃん！？",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "「母港の不思議」のひとつ、ブリちゃん！？",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -247,15 +247,15 @@ return {
 			}
 		},
 		{
+			actor = 501030,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501030,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "絵の具、また足りなくなったよね…",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -280,12 +280,12 @@ return {
 			}
 		},
 		{
-			say = "よし！今度は私が補充しに行くよ！",
+			actor = 501020,
 			side = 0,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 501020,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "よし！今度は私が補充しに行くよ！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1

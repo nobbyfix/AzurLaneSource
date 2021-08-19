@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "DEYIZHI4",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"曇りの仮面\n\n<size=45>四　喪失感</size>",
@@ -17,9 +17,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_task",
-			dir = 1,
 			say = "……勤務時間になってもドイッチュラントが執務室に来なかったので、鉄血寮に行って探すことにした。",
 			typewriter = {
 				speed = 0.05,
@@ -27,14 +27,14 @@ return {
 			}
 		},
 		{
-			side = 2,
 			stopbgm = true,
-			dir = 1,
+			side = 2,
 			bgName = "bg_story_room",
+			dir = 1,
 			say = "鉄血寮",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -55,13 +55,13 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			bgm = "story-2",
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "下僕か。なにか用？",
+			bgm = "story-2",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -72,9 +72,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "部屋のドアを開けたら、そこには部屋の隅っこに縮こまっているドイッチュラントの姿があった。",
 			typewriter = {
 				speed = 0.05,
@@ -82,9 +82,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "ドイッチュラントのことが気になる…",
 			typewriter = {
 				speed = 0.05,
@@ -140,11 +140,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "ドイッチュラントは強いって言われて、本当に自分が強いと勘違いして、自分が誰よりも上だと思い込んで、誰が相手でも偉そうにして……",
 			typewriter = {
 				speed = 0.05,
@@ -165,8 +165,8 @@ return {
 			actor = 403040,
 			nameColor = "#a9f548",
 			bgName = "bg_story_room",
-			dir = 1,
 			withoutActorName = true,
+			dir = 1,
 			side = 2,
 			say = "……手が払いのけられた。",
 			typewriter = {
@@ -175,11 +175,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "触るな！",
 			typewriter = {
 				speed = 0.05,
@@ -191,8 +191,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -233,11 +233,11 @@ return {
 			}
 		},
 		{
+			actor = 403040,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
-			actor = 403040,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "指揮官もそうじゃない。役に立つからではなく、あくまでわたしがヘマをした時に馬鹿にするため秘書艦にしたんじゃない？",
 			typewriter = {
 				speed = 0.05,
@@ -271,9 +271,9 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "今の拗ねているドイッチュラントは何を言っても分かってくれない気がする。",
 			typewriter = {
 				speed = 0.05,

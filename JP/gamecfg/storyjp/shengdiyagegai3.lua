@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "SHENGDIYAGEGAI3",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"輝く☆バトルスター！\n\n<size=45>三　サンディエゴ、悩む</size>",
@@ -17,17 +17,17 @@ return {
 			}
 		},
 		{
-			bgName = "star_level_bg_103",
+			actor = 102080,
 			side = 2,
+			bgName = "star_level_bg_103",
+			nameColor = "#a9f548",
 			dir = 1,
 			bgmDelay = 2,
-			bgm = "story-1",
-			actor = 102080,
-			nameColor = "#a9f548",
 			say = "わかったようなわかんなかったような……",
+			bgm = "story-1",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -68,11 +68,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "でもサンディエゴは頭がいいから、いつか絶対わかるようになるはず！うんうん！",
 			typewriter = {
 				speed = 0.05,
@@ -84,8 +84,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -94,8 +94,8 @@ return {
 			}
 		},
 		{
-			actorName = "???",
 			side = 2,
+			actorName = "???",
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
 			dir = 1,
@@ -138,11 +138,11 @@ return {
 			}
 		},
 		{
+			actor = 101319,
 			side = 2,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101319,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "うええええええ！？敵襲地震台風津波それとも指揮官が人事考課でもしてきたのー！？？！？！",
 			typewriter = {
 				speed = 0.05,
@@ -154,8 +154,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -164,12 +164,12 @@ return {
 			}
 		},
 		{
-			say = "私だよ！サンディエゴだよ！",
+			actor = 102080,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "私だよ！サンディエゴだよ！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -232,11 +232,11 @@ return {
 			}
 		},
 		{
+			actor = 102080,
 			side = 1,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 102080,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "改造って寝ればできるの！？よぉしメモった！！",
 			typewriter = {
 				speed = 0.05,
@@ -248,8 +248,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0.2,
 					dur = 0.2,
 					x = 0,
@@ -274,20 +274,20 @@ return {
 			}
 		},
 		{
-			say = "ちがーーーーう！",
-			side = 2,
 			actor = 101259,
-			dir = 1,
+			side = 2,
 			bgName = "star_level_bg_103",
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "ちがーーーーう！",
 			actorPosition = {
 				x = 2250,
 				y = 0
 			},
 			action = {
 				{
-					y = 0,
 					type = "move",
+					y = 0,
 					delay = 0,
 					dur = 0.2,
 					x = -2250
@@ -309,12 +309,12 @@ return {
 			}
 		},
 		{
-			say = "やっほーハムマン！",
+			actor = 102080,
 			side = 1,
 			bgName = "star_level_bg_103",
-			actor = 102080,
-			dir = 1,
 			nameColor = "#a9f548",
+			dir = 1,
+			say = "やっほーハムマン！",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 0
@@ -335,11 +335,11 @@ return {
 			}
 		},
 		{
+			actor = 101259,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101259,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "こっちはさんざん苦労して、恥ずかし目を受けて、ようやく改造できたんだからぁ！",
 			typewriter = {
 				speed = 0.05,
@@ -351,8 +351,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.2,
 					x = 0,
@@ -393,11 +393,11 @@ return {
 			}
 		},
 		{
+			actor = 101259,
 			side = 0,
 			bgName = "star_level_bg_103",
-			dir = 1,
-			actor = 101259,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "な、なんでもないのだ！とにかく言いたいのは改造はそんなに簡単じゃないってことだ！心の準備は予めしておくんだぞ！",
 			typewriter = {
 				speed = 0.05,
@@ -409,8 +409,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,

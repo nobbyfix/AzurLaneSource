@@ -8,8 +8,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.1,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.1
 				}
 			}
 		}
@@ -23,8 +23,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.111,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.111
 				}
 			}
 		}
@@ -38,8 +38,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.122,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.122
 				}
 			}
 		}
@@ -53,8 +53,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.133,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.133
 				}
 			}
 		}
@@ -68,8 +68,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.144,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.144
 				}
 			}
 		}
@@ -83,8 +83,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.155,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.155
 				}
 			}
 		}
@@ -98,8 +98,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.166,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.166
 				}
 			}
 		}
@@ -113,8 +113,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.177,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.177
 				}
 			}
 		}
@@ -128,8 +128,8 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.188,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.188
 				}
 			}
 		}
@@ -143,20 +143,20 @@ return {
 					"onStack"
 				},
 				arg_list = {
-					number = 0.2,
-					attr = "damageRatioBullet"
+					attr = "damageRatioBullet",
+					number = 0.2
 				}
 			}
 		}
 	},
+	time = 0,
 	name = "不屈的力量",
 	init_effect = "jinengchufared",
-	id = 12131,
-	time = 0,
+	color = "yellow",
 	picture = "",
 	desc = "提高伤害",
 	stack = 1,
-	color = "yellow",
+	id = 12131,
 	icon = 12130,
 	last_effect = "",
 	blink = {
@@ -174,8 +174,8 @@ return {
 				"onStack"
 			},
 			arg_list = {
-				number = 0.1,
-				attr = "damageRatioBullet"
+				attr = "damageRatioBullet",
+				number = 0.1
 			}
 		}
 	}

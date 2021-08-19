@@ -1,9 +1,9 @@
 return {
 	fadeOut = 0.5,
 	mode = 1,
-	fadeType = 1,
-	once = true,
 	id = "GUOQING1",
+	once = true,
+	fadeType = 1,
 	occlusion = 2,
 	scripts = {
 		{
@@ -13,7 +13,7 @@ return {
 					2
 				},
 				{
-					"不確なる確率変動、偶然と必然の事象収束",
+					"不確定の確率変動、偶然と必然の事象収束",
 					3
 				},
 				{
@@ -21,7 +21,7 @@ return {
 					6
 				},
 				{
-					"……",
+					" ",
 					7
 				},
 				{
@@ -29,16 +29,20 @@ return {
 					8
 				},
 				{
-					"別のシュウマツがあるのダろうカ",
+					"別のシュウマツがあるのだろうか",
 					10
 				},
 				{
-					"……",
+					"あなたの目に映っていたのは",
 					12
 				},
 				{
-					"アナタデスカ？「ソウゾウシュ」サマ？",
-					13
+					"一体どういうものなのかしら？",
+					14
+				},
+				{
+					"「ソウゾウシュ」サマ？",
+					17
 				}
 			}
 		},
@@ -51,14 +55,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 0,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900011,
+			side = 0,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "嵐が激しいわ！このまま進んだら全滅よ！",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -69,14 +73,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 1,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900012,
+			side = 1,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "あんな代価を払ったのに、このまま諦めるわけにはいかないわ！私を信じて！もうすぐ嵐を突破できるわ！",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -87,14 +91,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 0,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900011,
+			side = 0,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "前方未確認反応！方角150！緊急回避……",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -105,14 +109,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 1,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900012,
+			side = 1,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "未確認反応？この嵐の中で？位置を教えて！",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -123,14 +127,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 0,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900011,
+			side = 0,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "…………",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -141,14 +145,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 1,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900012,
+			side = 1,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "翔鶴姉、早く位置を教えて！",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -159,14 +163,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 0,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900011,
+			side = 0,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "…………",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -177,14 +181,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 0,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900011,
+			side = 0,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "…………",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -195,14 +199,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 0,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900011,
+			side = 0,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "……ニゲ…テ…………",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -213,14 +217,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 1,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900012,
+			side = 1,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "無線封止エリアに入った！？今回は…やばいかも……",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -231,14 +235,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 1,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900012,
+			side = 1,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "あの人との勝負がまだついていないというのに…",
+			withoutPainting = true,
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -249,32 +253,14 @@ return {
 			}
 		},
 		{
-			withoutPainting = true,
-			side = 1,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
 			actor = 900012,
+			side = 1,
+			mode = 2,
+			actorName = "？？？",
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "！？この光は……？",
-			typewriter = {
-				speed = 0.05,
-				speedUp = 0.01
-			},
-			painting = {
-				alpha = 0.3,
-				time = 1
-			}
-		},
-		{
 			withoutPainting = true,
-			side = 1,
-			actorName = "？？？",
-			mode = 2,
-			blackBg = true,
-			actor = 900012,
-			nameColor = "#a9f548",
-			say = "！！！",
 			typewriter = {
 				speed = 0.05,
 				speedUp = 0.01
@@ -285,11 +271,29 @@ return {
 			}
 		},
 		{
+			actor = 900012,
+			side = 1,
+			mode = 2,
+			actorName = "？？？",
+			nameColor = "#a9f548",
+			blackBg = true,
+			say = "！！！",
+			withoutPainting = true,
+			typewriter = {
+				speed = 0.05,
+				speedUp = 0.01
+			},
+			painting = {
+				alpha = 0.3,
+				time = 1
+			}
+		},
+		{
+			actor = 307060,
 			mode = 2,
 			side = 2,
-			blackBg = true,
-			actor = 307060,
 			nameColor = "#a9f548",
+			blackBg = true,
 			say = "……",
 			flashout = {
 				dur = 1.5,

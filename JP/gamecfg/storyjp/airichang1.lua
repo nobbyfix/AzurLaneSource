@@ -1,14 +1,14 @@
 return {
 	fadeOut = 1.5,
 	mode = 2,
-	fadeType = 2,
-	once = true,
 	id = "AIRICHANG1",
+	once = true,
+	fadeType = 2,
 	fadein = 1.5,
 	scripts = {
 		{
-			mode = 1,
 			stopbgm = true,
+			mode = 1,
 			sequence = {
 				{
 					"「仮想繋げし共時性」-日常編\n\n<size=45>一 ポンコツという名の天才AI</size>",
@@ -17,15 +17,15 @@ return {
 			}
 		},
 		{
+			say = "母港・広場",
 			side = 2,
 			bgName = "bg_story_school",
 			dir = 1,
 			bgmDelay = 2,
 			bgm = "story-1",
-			say = "母港・広場",
 			flashout = {
-				dur = 1,
 				black = true,
+				dur = 1,
 				alpha = {
 					0,
 					1
@@ -50,11 +50,11 @@ return {
 			}
 		},
 		{
+			actor = 10400010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 10400010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "はいどうもー！キズナアイです！",
 			typewriter = {
 				speed = 0.05,
@@ -66,8 +66,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -79,8 +79,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "今日はなんと、異世界に来ちゃいました！",
 			typewriter = {
@@ -93,11 +93,11 @@ return {
 			}
 		},
 		{
+			actor = 10400010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 10400010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "というわけでさっそく、母港にいる女の子にインタビューしちゃいましょう！ジャベリンちゃん、よろしく！",
 			typewriter = {
 				speed = 0.05,
@@ -109,8 +109,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -135,11 +135,11 @@ return {
 			}
 		},
 		{
+			actor = 10400010,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
-			actor = 10400010,
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "大丈夫大丈夫！あとで科学の力でなんとかするから！",
 			typewriter = {
 				speed = 0.05,
@@ -151,8 +151,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -209,13 +209,13 @@ return {
 			}
 		},
 		{
+			dir = 1,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			say = "今から半時ほど前――",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -262,12 +262,12 @@ return {
 			}
 		},
 		{
-			say = "動画サイトでゲームの動画を見てるです",
+			actor = 301050,
 			side = 0,
 			bgName = "bg_story_room",
-			dir = -1,
-			actor = 301050,
 			nameColor = "#a9f548",
+			dir = -1,
+			say = "動画サイトでゲームの動画を見てるです",
 			paintingFadeOut = {
 				time = 0.5,
 				side = 1
@@ -301,8 +301,8 @@ return {
 			expression = 6,
 			side = 1,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "この世界にもそういうのがあったの！？もー、もっと早く教えてよー！",
 			typewriter = {
@@ -315,8 +315,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.15,
 					x = 0,
@@ -376,8 +376,8 @@ return {
 			expression = 3,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "ふふーん♪つまり私のチャンネルも検索すれば――",
 			typewriter = {
@@ -393,8 +393,8 @@ return {
 			expression = 6,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "で・て・こ・な・い！？",
 			effects = {
@@ -413,8 +413,8 @@ return {
 			},
 			action = {
 				{
-					y = 45,
 					type = "shake",
+					y = 45,
 					delay = 0,
 					dur = 0.1,
 					x = 0,
@@ -426,8 +426,8 @@ return {
 			expression = 5,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "うーん、さすがに別世界のチャンネルは見つからないかぁ",
 			effects = {
@@ -449,8 +449,8 @@ return {
 			expression = 6,
 			side = 2,
 			bgName = "bg_story_room",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "こうなったら、こっちの世界でも私のチャンネルを作って、みんなとつながるしかないね！",
 			typewriter = {
@@ -465,13 +465,13 @@ return {
 		{
 			actor = 101170,
 			side = 2,
-			dir = 1,
 			bgName = "bg_story_school",
 			nameColor = "#a9f548",
+			dir = 1,
 			say = "…ということがあった",
 			flashout = {
-				dur = 0.5,
 				black = true,
+				dur = 0.5,
 				alpha = {
 					0,
 					1
@@ -537,8 +537,8 @@ return {
 			expression = 4,
 			side = 2,
 			bgName = "bg_story_school",
-			dir = 1,
 			actor = 10400010,
+			dir = 1,
 			nameColor = "#a9f548",
 			say = "というわけで、みんな協力よろしくね！",
 			typewriter = {
@@ -551,15 +551,15 @@ return {
 			}
 		},
 		{
-			say = "えぇーーーー！？",
+			actor = 101170,
 			side = 2,
 			bgName = "bg_story_school",
-			actorName = "みんな",
+			nameColor = "#a9f548",
 			dir = 1,
 			blackBg = true,
 			hideOther = true,
-			actor = 101170,
-			nameColor = "#a9f548",
+			actorName = "みんな",
+			say = "えぇーーーー！？",
 			dialogShake = {
 				speed = 0.09,
 				x = 12.75,

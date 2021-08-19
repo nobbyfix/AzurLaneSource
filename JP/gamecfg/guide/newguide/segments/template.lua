@@ -3,28 +3,28 @@ return {
 	events = {
 		{
 			delay = 0,
-			waitScene = "MainUI",
-			alpha = 0.4,
 			code = 2,
+			alpha = 0.4,
+			waitScene = "MainUI",
 			style = {
 				text = "水面下で戦闘できる艦船が新たに転属してきました。新しい仲間を迎えに行きましょう",
 				mode = 1,
-				dir = 1,
 				scene = "BIANDUI",
 				posY = -110,
+				dir = 1,
 				posX = 200,
 				ui = {
-					pathIndex = 0,
-					path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button"
+					path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button",
+					pathIndex = 0
 				}
 			},
 			ui = {
+				pathIndex = 0,
 				eventPath = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button",
 				delay = 0,
-				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button",
 				eventIndex = 1,
 				scale = 1,
-				pathIndex = 0,
+				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button",
 				triggerType = {
 					2,
 					true
@@ -48,8 +48,8 @@ return {
 				}
 			},
 			baseui = {
-				pathIndex = 0,
-				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button"
+				path = "/UICamera/Canvas/UIMain/LevelMainScene(Clone)/top/top_chapter/back_button",
+				pathIndex = 0
 			},
 			hideui = {
 				{
